@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: ビジネス向けのMicrosoft 365に移行するための要件と考慮事項について説明します。
-ms.openlocfilehash: 9a8ca80a9559d4ecdb988c515c20add4676e602d
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a5f777a411f82de30c1d7dc69f07f92eadbbedce
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128894"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317474"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画
 
@@ -92,7 +92,7 @@ Microsoft 365を使用してビジネスをクラウドに移行するという�
 
 組織内の各ユーザーは、Office 2016 スイートのアプリ (Word、Excel、PowerPointなど) を最大 5 台の PC と Mac にインストールできます。 法人向け [Office 2016 スイート](https://go.microsoft.com/fwlink/?LinkId=534827)をインストールするためのオペレーティング システムおよびコンピューターの要件を参照してください。
   
-モバイル アプリは、iOS、Android、およびWindows デバイスにインストールできます。 モバイル デバイスとブラウザーのサポートについては、「[Office のシステム要件](https://go.microsoft.com/fwlink/?LinkId=534827)」を参照してください。
+モバイル アプリは、iOS、Android、Windows デバイスにインストールできます。 モバイル デバイスとブラウザーのサポートについては、「[Office のシステム要件](https://go.microsoft.com/fwlink/?LinkId=534827)」を参照してください。
   
 ## <a name="plan-for-email"></a>メールの計画
 
@@ -149,4 +149,4 @@ Microsoft Teamsを使用して、サブスクリプションに参加してい�
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../security-and-compliance/secure-your-business-data.md)

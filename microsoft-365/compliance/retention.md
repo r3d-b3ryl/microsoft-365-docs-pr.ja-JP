@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 6fd2f56d6876b6a3832e869767880890486551db
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c8ac850c77c97cbcc313108ffc74e05aa1735fde
+ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286926"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65302225"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -101,9 +101,11 @@ ms.locfileid: "65286926"
 
 - [トレーニング可能な分類子](classifier-learn-about.md)を使用して、ラベル付けするコンテンツを識別する。
 
-- SharePoint ドキュメントに既定のラベルを適用する。
+- SharePoint アイテムまたは Exchange メッセージに既定のラベルを適用します。
 
-- コンテンツを完全に削除する前にコンテンツを確認する[処理確認](./disposition.md)のサポート。
+- 保持期間の終了時にサポートされるアクション:
+    - コンテンツを完全に削除する前にコンテンツを確認する [［処理確認］](./disposition.md) 。
+    - 別の保持ラベルを自動的に適用する
 
 - ラベル設定の一部として、コンテンツを [[レコード]](records-management.md#records) としてマークし、保持期間の終了時にコンテンツが削除されるときに[廃棄の証明](disposition.md#disposition-of-records)を常に取得する。
 
@@ -219,14 +221,18 @@ Exchange パブリックフォルダー、Skype、Teams、Yammer メッセージ
 
 - コンテンツに既に保持ラベルが適用されている場合、既存のラベルが自動的に削除されたり、別の保持ラベルに置き換えられたりすることはありません。ただし、例外が 1 つあり、既存のラベルが既定のラベルとして適用されている場合です。 既定のラベルを使用する場合、別の既定のラベルに置き換えるか、自動的に削除できるシナリオがいくつかあります。
 
-  既定のラベルを使用して適用した場合のラベルの動作については、以下を参照してください。
-
-  - SharePoint の既定のラベル: [SharePoint の既定のラベルを使用した場合のラベルの動作](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
-  - Outlook の既定のラベル: [Outlook フォルダーに既定の保持ラベルを適用する](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
+- コンテンツに既に保持ラベルが適用されている場合、既存のラベルは自動的に削除されたり、別の保持ラベルに置き換えられたりすることはありません。ただし、次の 2 つの例外が考えられます。 
+    
+    - 既存のラベルは、保持期間の終了時に別の保持ラベルを自動的に適用するように構成されます。
+    - 既存のラベルが既定のラベルとして適用されました。既定のラベルを使用する場合、別の既定のラベルに置き換えたり、自動的に削除したりできるシナリオがいくつかあります。 
+        
+        既定のラベルを使用して適用した場合のラベルの動作については、以下を参照してください。
+        - SharePoint の既定のラベル: [SharePoint の既定のラベルを使用した場合のラベルの動作](create-apply-retention-labels.md#label-behavior-when-you-use-a-default-label-for-sharepoint)
+        - Outlook の既定のラベル: [Outlook フォルダーに既定の保持ラベルを適用する](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 
 - 保持ラベルを適用できる自動適用ラベル ポリシーが複数あり、コンテンツが複数のポリシーの条件を満たしている場合、(作成日を基準にして) 最も古い自動適用ラベル ポリシーの保持ラベルが適用されます。
 
-保持ラベルがアイテムをレコードまたは規制レコードとしてマークしている場合、これらのラベルが自動的に変更されることはありません。 コンテナーの管理者のみが、アイテムをレコードとしてマークする保持ラベルを手動で変更または削除することができますが、規制レコードについてはできません。 詳細については、「[許可またはブロックされているアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。
+保持ラベルがアイテムをレコードまたは規制レコードとしてマークする場合、これらのラベルは、構成された保持期間中に自動的に変更されることはありません。 コンテナーの管理者のみが、アイテムをレコードとしてマークする保持ラベルを手動で変更または削除することができますが、規制レコードについてはできません。 詳細については、「[許可またはブロックされているアクションの制限を比較する](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked)」を参照してください。
 
 #### <a name="monitoring-retention-labels"></a>保持ラベルの監視
 
@@ -254,6 +260,7 @@ Microsoft Purview コンプライアンス ポータルから、[**データの�
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
 |サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
 |保持の自動適用 | はい | はい |
+|保持期間の終了時に異なる保持設定を自動的に適用する | いいえ | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子、クラウド添付ファイル| いいえ | はい |
 |保持の手動適用 | いいえ | はい |
 |エンド ユーザーの操作 | いいえ | はい |

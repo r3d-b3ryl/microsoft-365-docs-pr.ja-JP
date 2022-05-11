@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -15,22 +15,22 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Microsoft Purview コンプライアンス ポータルで、ユーザーが電子情報開示アクセス許可を割り当ててコンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) タスクを実行したときに記録されるイベントについて説明します。
+description: ユーザーが電子情報開示アクセス許可を割り当てたときに、Microsoft Purview コンプライアンス ポータルでコンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) タスクを実行したときに記録されるイベントについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a11c8a939954b7319b88b45ea8f0d43b1b72442
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b94c53d497b5e300cdb0a08dbb5f02daec28c19
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090863"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317518"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview コンプライアンス ポータルまたは対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連のアクティビティ (Microsoft Purview 電子情報開示 (Standard) と Microsoft Purview 電子情報開示 (プレミアム)) は、監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) がコンプライアンス ポータルで次のコンテンツ検索および電子情報開示 (Standard) タスクを実行すると記録されます。
+Microsoft Purview コンプライアンス ポータルまたは対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連アクティビティ (Microsoft Purview電子情報開示 (Standard) およびMicrosoft Purview電子情報開示 (プレミアム)) は、監査に記録されますログ。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) がコンプライアンス ポータルで次のコンテンツ検索および電子情報開示 (Standard) タスクを実行すると記録されます。
   
-- Core ケースと電子情報開示 (プレミアム) ケースの作成と管理
+- 電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースの作成と管理
 
 - コンテンツ検索の作成、開始、編集
 

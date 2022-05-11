@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 351a403923df8e12d63051e30518b5c254abccb8
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188814"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319201"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -56,19 +56,23 @@ ms.locfileid: "65188814"
 
 他のオペレーティング システムでのMicrosoft Defender for Endpointの詳細については、次の手順を参照してください。
 
-- [macOS 上の Defender for Endpoint の新機能](mac-whatsnew.md)
-- [iOS 上の Defender for Endpoint の新機能](ios-whatsnew.md)
+- [Defender for Endpoint on macOSの新機能](mac-whatsnew.md)
+- [Defender for Endpoint on iOSの新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
+
+## <a name="may-2022"></a>2022 年 5 月
+- [macOSの改ざん防止 (プレビュー)](tamperprotection-macos.md)<br>改ざん防止は、macOSでのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。
+
 
 ## <a name="april-2022"></a>2022 年 4 月
 - [Windows Server 2012 R2 とWindows Server 2016) のオンボードと機能パリティを更新しました](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージが一般公開され、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になりました。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
-- Tunnelとの統合。 iOS のMicrosoft Defender for Endpointは、1 つのアプリでセキュリティと接続を有効にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できるようになりました。この機能は、以前は Android でのみ使用できます。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+- Tunnelとの統合。 iOSのMicrosoft Defender for Endpointは、1 つのアプリでセキュリティと接続を有効にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できるようになりました。この機能は、以前はAndroidでのみ使用できます。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>2022 年 1 月
 
 - 評価ラボの機能強化: Windows 11デバイスと Linux デバイスをラボに追加できるようになりました。 
 
-- Android と iOS の脅威と脆弱性の管理が一般公開されるようになりました。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) を参照してください。
+- AndroidとiOSの脅威と脆弱性の管理が一般公開されるようになりました。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) を参照してください。
 
 ## <a name="december-2021"></a>2021 年 12 月
 
@@ -123,9 +127,9 @@ ms.locfileid: "65188814"
 
 - [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intuneがモバイル アプリケーションの管理に使用されている場合に、マネージド アプリケーション内で組織のデータを保護Microsoft Defender for Endpointできます。 モバイル アプリケーション管理の詳細については、 [このドキュメントを参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
 
-- [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能が Android 用Microsoft Defender for Endpointアプリと統合されるようになりました。 この統合により、組織は 1 つのセキュリティ アプリでシンプルなエンド ユーザー エクスペリエンスを提供できます。モバイル脅威の防御とモバイル デバイスからオンプレミスのリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
+- [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能は、Android用のMicrosoft Defender for Endpoint アプリと統合されるようになりました。 この統合により、組織は 1 つのセキュリティ アプリでシンプルなエンド ユーザー エクスペリエンスを提供できます。モバイル脅威の防御とモバイル デバイスからオンプレミスのリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
 
-- [iOS での脱獄検出](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS でのMicrosoft Defender for Endpointでの脱獄検出機能が一般公開されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「 [デバイス リスク信号に基づいて条件付きアクセス ポリシーを設定する](/microsoft-365/security/defender-endpoint/ios-configure-features)」を参照してください。
+- [iOSでの脱獄検出](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> iOSのMicrosoft Defender for Endpointでの脱獄検出機能が一般公開されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「 [デバイス リスク信号に基づいて条件付きアクセス ポリシーを設定する](/microsoft-365/security/defender-endpoint/ios-configure-features)」を参照してください。
 
 
 ## <a name="march-2021"></a>2021 年 3 月

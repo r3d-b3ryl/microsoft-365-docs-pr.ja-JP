@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: db08623b323000cbdc8dcfd8748ea76cb7e7f0f7
-  ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+  ms.openlocfilehash: c5edae0b748e756e6e38634413976d645bac37e6
+  ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/03/2022
-  ms.locfileid: "65173181"
+  ms.lasthandoff: 05/11/2022
+  ms.locfileid: "65317896"
 title: Microsoft Defender for Businessトラブルシューティング
 summary: "この記事は、Microsoft Defender for Businessで発生する可能性がある問題を解決するためのガイドとして使用します。 \n"
 sections:
@@ -29,6 +29,8 @@ sections:
   questions:
   - question: セットアップと構成プロセスに失敗しました
     answer: "\nDefender for Business で簡略化された構成プロセスを使用していて、問題が発生した場合でも、セキュリティ設定とポリシーを手動で構成できます。\n\n[Microsoft Defender for Businessのセットアップと構成に関するページを](mdb-setup-configuration.md)参照してください。\n"
+  - question: Defender for Business にオンボードされていても、一部のデバイスが保護されていないという兆候が表示されます。
+    answer: "\nデバイスが Microsoft 以外のウイルス対策/マルウェア対策ソリューションを実行している場合、それらのデバイスが Defender for Business にオンボードされると、リアルタイム保護がオフになる可能性があります。 Defender for Business では既定でリアルタイム保護が有効になっていますが、Microsoft 以外のウイルス対策/マルウェア対策ソリューションが設定に影響を与える可能性があります。 リアルタイム保護がオフになっていると、一部のデバイスが保護されていないという通知がMicrosoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に表示されます。 このような場合は、リアルタイム保護が有効になっていることを確認します。\n\nリアルタイム保護が有効になっていることを確認するには、次世代の保護ポリシーを表示し、必要に応じて編集します。 [次世代の保護ポリシーを表示または編集する方法に関するページを参照してください](/microsoft-365/security/defender-business/mdb-configure-security-settings?view=o365-worldwide#view-or-edit-your-next-generation-protection-policies)。\n\nMicrosoft Defender ウイルス対策を Defender for Business と共に使用して、製品やサービス間で調整される保護を強化することをお勧めします。 詳細については、「[Microsoft Defender ウイルス対策とMicrosoft Defender for Endpoint」](/microsoft-365/security/defender-endpoint/why-use-microsoft-defender-antivirus)を参照してください。 \n"
   - question: ポリシーの競合を解決する必要がある
     answer: "\nポリシーの競合は、セキュリティ ポリシーが複数のツールまたはメソッドを使用して定義されている場合に発生する可能性があります。 次に例を示します。\n\nLee がデバイスとセキュリティ設定を管理するためにMicrosoft Intuneを使用しているとします。 Lee は最近、Microsoft Defender for Businessの使用を開始しました。 Lee は、Defender for Business で簡略化された構成プロセスを使用することを選択しました。 これで、Microsoft エンドポイント マネージャー管理センターとMicrosoft 365 Defender ポータルでポリシーの競合が表示されます。 \n\nさいわい、ポリシーの競合は、次の 1 つ以上のアクションを実行することで解決できます。\n\n- エンドポイント マネージャー管理センターで既存のポリシーを削除する\n- [Microsoft Intuneのポリシーのトラブルシューティングに関するページを](/troubleshoot/mem/intune/troubleshoot-policies-in-microsoft-intune)参照してください\n\nDefender for Business のセキュリティ ポリシーの詳細については、次の記事を参照してください。\n\n- [Microsoft Defender for Businessで次世代の構成設定を理解する](mdb-next-gen-configuration-settings.md)\n- [Microsoft Defender for Businessのファイアウォール設定](mdb-firewall.md)\n"
   - question: Defender for Business と Microsoft エンドポイント マネージャーの間に統合の問題があります

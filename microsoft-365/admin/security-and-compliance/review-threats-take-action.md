@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Windows 10 デバイス上のMicrosoft Defender ウイルス対策によって検出された脅威を確認して管理する方法について説明します。
-ms.openlocfilehash: c836554445f56a9a915885d55a4490c6bb5bd1a9
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 9b819edc21d6cfcac663c54e15b1a060b2b16fa2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64633218"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319311"
 ---
 # <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
 
@@ -117,6 +117,6 @@ Microsoft エンドポイント マネージャーを使用して、脅威の検
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../../admin/security-and-compliance/secure-your-business-data.md)
 
 [Microsoft Defender for Businessの概要](../../security/defender-business/mdb-overview.md) (Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premiumのお客様に展開されます)

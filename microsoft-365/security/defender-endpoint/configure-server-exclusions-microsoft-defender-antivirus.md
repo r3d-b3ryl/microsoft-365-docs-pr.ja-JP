@@ -14,14 +14,13 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 02/04/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 487c253adc422d69be5ce011ffef1fc1a014474b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 890be814be75c303aa42feb5cb7a16cb4f5c3bd9
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789780"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320642"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Windows サーバーでMicrosoft Defender ウイルス対策除外を構成する
 
@@ -42,12 +41,12 @@ Windows Server 2016およびWindows Server 2019 のMicrosoft Defender ウイル�
 
 ## <a name="a-few-points-to-keep-in-mind"></a>留意すべき点がいくつかあります
 
-次の重要な点に注意してください。
-
 - カスタム除外は、自動除外よりも優先されます。
-- 自動除外は、リアルタイム保護 (RTP) スキャンにのみ適用されます。 自動除外は、完全スキャン、クイック スキャン、またはオンデマンド スキャンでは適用されません。
+- 自動除外は、 [リアルタイム保護 (RTP)](configure-protection-features-microsoft-defender-antivirus.md) スキャンにのみ適用されます。 
+- 自動除外は [、完全スキャン、クイック スキャン、またはオンデマンド スキャン](schedule-antivirus-scans.md#quick-scan-full-scan-and-custom-scan)では適用されません。
 - カスタム除外と重複除外は、自動除外と競合しません。
 - Microsoft Defender ウイルス対策は、展開イメージサービスと管理 (DISM) ツールを使用して、コンピューターにインストールされているロールを決定します。
+- オペレーティング システムに含まれていないソフトウェアについては、適切な除外を設定する必要があります。
 - Windows Server 2012 R2 には、インストール可能な機能としてMicrosoft Defender ウイルス対策がありません。 これらのサーバーを Defender for Endpoint にオンボードすると、Windows Defender ウイルス対策がインストールされ、オペレーティング システム ファイルの既定の除外が適用されます。 ただし、サーバー ロールの除外 (以下で指定) は自動的には適用されないため、必要に応じてこれらの除外を構成する必要があります。 詳細については、「[Windows サーバーを Microsoft Defender for Endpoint にオンボードする](configure-server-endpoints.md)」を参照してください。
 
 この記事では、Windows Server 2016 以降のMicrosoft Defender ウイルス対策の除外の概要について説明します。
@@ -55,8 +54,6 @@ Windows Server 2016およびWindows Server 2019 のMicrosoft Defender ウイル�
 Microsoft Defender ウイルス対策はWindows Server 2016以降に組み込まれているため、オペレーティング システム ファイルとサーバー ロールの除外は自動的に行われます。 ただし、カスタム除外を定義できます。 必要に応じて、自動除外をオプトアウトすることもできます。
 
 この記事に含まれるセクションは次のとおりです。
-
-<br/><br/>
 
 |Section|説明|
 |---|---|
@@ -87,8 +84,9 @@ Microsoft Defender ウイルス対策が組み込まれているため、Windows
 
 このセクションでは、Windows Server 2016、Windows Server 2019、Windows Server 2022 のすべてのロールの既定の除外を一覧表示します。
 
-> [!NOTE]
-> 既定の場所は、この記事に記載されているものとは異なる場合があります。
+> [!IMPORTANT]
+> - 既定の場所は、この記事で説明する場所とは異なる場合があります。
+> - Windows機能またはサーバーロールとして含まれていないソフトウェアの除外を設定するには、ソフトウェアの製造元のドキュメントを参照してください。
 
 ##### <a name="windows-tempedb-files"></a>"temp.edb" ファイルをWindowsする
 
@@ -171,8 +169,6 @@ Microsoft Defender ウイルス対策が組み込まれているため、Windows
 ##### <a name="hyper-v-exclusions"></a>Hyper-V の除外
 
 次の表に、Hyper-V ロールをインストールするときに自動的に配信されるファイルの種類の除外、フォルダーの除外、およびプロセスの除外の一覧を示します。
-
-<br><br/>
 
 |除外の種類|詳細|
 |---|---|

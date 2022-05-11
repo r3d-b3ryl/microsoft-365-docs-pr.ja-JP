@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: AutoPilot プロファイルを作成してデバイスに適用する方法と、プロファイルを編集または削除したり、デバイスからプロファイルを削除したりする方法について説明します。
-ms.openlocfilehash: a0b90bdeb69f1baefb96a09c8d7f8f38a3fec9e8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 231f3f762e1266b5529f36e792d1b4e4a5f11f03
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100199"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320624"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>AutoPilot プロファイルを作成し編集する
 
@@ -90,4 +90,4 @@ ms.locfileid: "65100199"
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

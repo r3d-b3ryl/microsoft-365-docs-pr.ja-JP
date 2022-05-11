@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 電子情報開示 (Standard) ケースに関連する可能性があるコンテンツを検索します。
-ms.openlocfilehash: 372f8beba2567c24e8af75acf4d11e3fe6220f2c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d0c565e46860329c4dc6dac741fb0312ddccfd2c
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090409"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318926"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースでコンテンツを検索する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview 電子情報開示 (Standard) ケースが作成され、ケースに関心のあるユーザーが保留されたら、ケースに関連するコンテンツの 1 つ以上の検索を作成して実行できます。 電子情報開示 (Standard) ケースに関連付けられている検索は、Microsoft Purview コンプライアンス ポータルの **[コンテンツ検索** ] ページには表示されません。 これらの検索は、 **検索が関連付** けられている Core eDiscover ケースの [検索] ページに一覧表示されます。 これは、ケースに関連付けられた検索にケース メンバーのみがアクセスできることを意味します。
+Microsoft Purview電子情報開示 (Standard) ケースが作成され、ケースに関心のあるユーザーが保留されたら、ケースに関連するコンテンツの 1 つ以上の検索を作成して実行できます。 電子情報開示 (Standard) ケースに関連付けられている検索は、Microsoft Purview コンプライアンス ポータルの **[コンテンツ検索**] ページに一覧表示されません。 これらの検索は、 **検索が関連付** けられている電子情報開示 (Standard) ケースの [検索] ページに一覧表示されます。 これは、ケースに関連付けられた検索にケース メンバーのみがアクセスできることを意味します。
 
 電子情報開示 (Standard) 検索を作成するには:
   

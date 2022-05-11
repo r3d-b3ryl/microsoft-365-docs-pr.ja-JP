@@ -21,12 +21,12 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: b3ad71878f6d0c766cbcf5ba435bc61396f45ed6
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231766"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320608"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログを検索する
 
@@ -44,6 +44,7 @@ ms.locfileid: "65231766"
 | Azure Information Protection|AipDiscover、AipSensitivityLabelAction、AipProtectionAction、AipFileDeleted、AipHeartBeat |
 | コミュニケーション コンプライアンス|ComplianceSuperVisionExchange|
 | コンテンツ エクスプローラー|LabelContentExplorer|
+| データ コネクタ|ComplianceConnector|
 | データ損失防止 (DLP)|ComplianceDLPSharePoint、ComplianceDLPExchange、DLPEndpoint|
 | Dynamics 365|CRM|
 | 電子情報開示|検出、AeD|
@@ -67,7 +68,6 @@ ms.locfileid: "65231766"
 | 脅威インテリジェンス|ThreatIntelligence、ThreatIntelligenceUrl、ThreatFinder、ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
-|||
 
 前の表に示した、各サービスで監査される操作の詳細については、この記事の「[監査されたアクティビティ](#audited-activities)」セクションを参照してください。
 
@@ -454,7 +454,6 @@ ms.locfileid: "65231766"
 |(なし)|PageViewedExtended|これは、"ページの表示" (PageViewed) アクティビティに関連しています。同じユーザーが長時間 (最大 3 時間) にわたって、継続的に Web ページを表示すると、PageViewedExtended イベントがログに記録されます。 <br/><br/> PageViewedExtended イベントをログに記録する目的は、ページが継続的に表示されたときにログに記録される PageViewed イベントの数を減らすことにあります。これにより、本質的に同じユーザーのアクティビティであるページ表示に対する無意味な複数の PageViewed レコードが減り、初期 (のより重要な) PageViewed イベントに注目できます。|
 |クライアントが表示をシグナル|ClientViewSignaled|ユーザーのクライアント (Web サイトやモバイル アプリなど) が、示されるページをユーザーが表示したことをシグナルしました。 多くの場合、ページでの PagePrefetched イベントに続いてこのアクティビティがログに記録されます。 <br/><br/>**注**: ClientViewSignaled イベントはサーバーではなくクライアントによりシグナルされるため、イベントがサーバーによってログに記録されず、監査ログに表示されない場合があります。 また、監査レコードの情報の信頼性が低い可能性もあります。 ただし、ユーザーの ID はシグナルの作成に使用されたトークンによって検証されるため、対応する監査レコードに記載されているユーザーの ID は正確です。 システムは、同じユーザーのクライアントがページがユーザーによって再び表示されたことを通知するときに、同じイベントをログに記録するまで 5 分待機します。|
 |(なし)|PagePrefetched|示されるページにユーザーがアクセスした際のパフォーマンスを上げるため、ユーザーのクライアント (Web サイトやモバイル アプリなど) がそのページを要求しました。 このイベントは、ページの内容がユーザーのクライアントに配信されたことを示すため、ログに記録されます。 このイベントは、ユーザーがページに移動したことをはっきりと示します。 <br/><br/> (ユーザーの要求に従って) ページのコンテンツがクライアントによってレンダリングされると、ClientViewSignaled イベントが生成されます。 プレフェッチの指摘はすべてのクライアントでサポートされているわけではないため、プレフェッチされた一部のアクティビティは PageViewed イベントとしてログ記録される可能性があります。|
-||||
 
 #### <a name="frequently-asked-questions-about-fileaccessed-and-filepreviewed-events"></a>FileAccessed および FilePreviewed イベントに関するよくある質問
 
@@ -505,7 +504,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |フォルダーの移動|FolderMoved|ユーザーがフォルダーをサイトの別の場所に移動しました。|
 |フォルダーの名前変更|FolderRenamed|ユーザーがサイトのフォルダーの名前を変更しました。|
 |フォルダーの復元|FolderRestored|ユーザーがサイトのごみ箱から削除されたフォルダーを復元しました。|
-||||
 
 ### <a name="sharepoint-list-activities"></a>SharePoint リスト アクティビティ
 
@@ -535,7 +533,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |サイト列の更新|SiteColumnUpdated|ユーザーが 1 つ以上のプロパティを変更して SharePoint サイト列を更新しました。|
 |サイト コンテンツ タイプの更新|SiteContentTypeUpdated|ユーザーが 1 つ以上のプロパティを変更してサイト コンテンツ タイプを更新しました。|
 |リスト アイテムの表示|ListItemViewed|ユーザーが SharePoint リスト アイテムを表示しました。ユーザーがリスト アイテムを表示すると、同じユーザーの ListItemViewed イベントは、次の 5 分間、同じリスト アイテムに対して再度ログに記録されません。|
-||||
 
 ### <a name="sharing-and-access-request-activities"></a>共有アクティビティとアクセス要求アクティビティ
 
@@ -570,7 +567,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |セキュリティで保護されたリンクへのユーザーの追加|AddedToSecureLink|ユーザーが、セキュリティで保護された共有リンクを使用できるエンティティの一覧に追加されました。|
 |セキュリティで保護されたリンクからのユーザーの削除|RemovedFromSecureLink|ユーザーが、セキュリティで保護された共有リンクを使用できるエンティティの一覧から削除されました。|
 |共有への招待の取り消し|SharingInvitationRevoked|ユーザーが、リソースの共有への招待を取り消しました。|
-||||
 
 ### <a name="synchronization-activities"></a>同期アクティビティ
 
@@ -584,7 +580,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |コンピューターへのファイル変更のダウンロード|FileSyncDownloadedPartial|このイベントは、古い OneDrive for Business 同期アプリ (Groove.exe) とともに非推奨になりました。|
 |ファイルがドキュメント ライブラリにアップロードされました|FileSyncUploadedFull|ユーザーは、OneDrive 同期アプリ (OneDrive.exe) を使用して、SharePoint ドキュメント ライブラリまたは OneDrive for Business に新しいファイルまたはファイルへの変更をアップロードします。|
 |ドキュメント ライブラリへのファイル変更のアップロード|FileSyncUploadedPartial|このイベントは、古い OneDrive for Business 同期アプリ (Groove.exe) とともに非推奨になりました。|
-||||
 
 ### <a name="site-permissions-activities"></a>サイトの権限のアクティビティ
 
@@ -608,7 +603,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |サイト管理者アクセス許可の要求|SiteAdminChangeRequest|ユーザーが、サイト コレクションのサイト コレクション管理者として追加するように要求しました。サイト コレクション管理者には、サイト コレクションとすべてのサブサイトのフル コントロール権限があります。|
 |共有の継承の復元|SharingInheritanceReset|変更が加えられたので、共有アクセス許可が親から継承されなくなりました。|
 |グループの更新|GroupUpdated|サイトの管理者または所有者がサイトのグループの設定を変更しました。これには、グループ名の変更、グループのメンバーシップを表示または変更できるユーザーの変更、メンバーシップ要求の処理方法の変更などがあります。|
-||||
 
 ### <a name="site-administration-activities"></a>サイト管理アクティビティ
 
@@ -647,7 +641,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |地理的位置のストレージ クォータの構成|GeoQuotaAllocated|SharePoint 管理者またはグローバル管理者が、複数地域環境での地理的位置のストレージ クォータを構成しました。|
 |サイトのハブサイトへの結合解除|HubSiteUnjoined|サイト所有者が、ハブサイトへのサイトの関連付けを解除しました。|
 |ハブサイトの登録解除|HubSiteUnregistered|SharePoint またはグローバル管理者が、ハブサイトとしてのサイトの登録を解除しました。 ハブサイトが解除されると、そのサイトはハブサイトとして機能しなくなります。|
-||||
 
 ### <a name="exchange-mailbox-activities"></a>Exchange メールボックス アクティビティ
 
@@ -680,7 +673,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |メッセージの更新|Update|メッセージまたはそのプロパティが変更されました。|
 |メールボックスへのユーザーのサインイン|MailboxLogin|ユーザーが自分のメールボックスにサインインしました。|
 |メッセージをレコードとしてラベル付けする||ユーザーがメール メッセージに保持ラベルを適用しました。このラベルは、アイテムをレコードとしてマークするように構成されています。 |
-||||
 
 #### <a name="system-accounts-in-exchange-mailbox-audit-records"></a>Exchange メール ボックス監査レコードのシステム アカウント
 
@@ -705,7 +697,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |ユーザーへパスワードの変更を強制するプロパティの設定|ユーザー パスワードの強制変更を設定します。|管理者が、ユーザーが次に Microsoft 365 にサインインしたときにパスワードを強制的に変更させるプロパティを設定しました。|
 |Set license properties|ライセンス プロパティを設定する|管理者が、ユーザーに割り当てられたライセンスのプロパティを変更しました。|
 |ユーザーの更新|ユーザーを更新します。|管理者がユーザー アカウントの 1 つ以上のプロパティを変更しました。更新可能なユーザー プロパティの一覧については、「[Azure Active Directory 監査レポート イベント](/azure/active-directory/reports-monitoring/concept-audit-logs)」の「ユーザー属性の更新」セクションを参照してください。|
-||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure AD グループ管理アクティビティ
 
@@ -721,7 +712,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |グループの削除|グループを削除します。|グループが削除されました。|
 |グループからのメンバーの削除|グループからメンバーを削除します。|メンバーがグループから削除されました。|
 |グループの更新|グループを更新します。|グループのプロパティが変更されました。|
-||||
 
 ### <a name="application-administration-activities"></a>アプリケーション管理アクティビティ
 
@@ -739,7 +729,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |ディレクトリからのサービス プリンシパルの削除|サービス プリンシパルを削除します。|Azure AD からアプリケーションが削除/登録解除されました。Azure AD では、アプリケーションはサービス プリンシパルで表されます。|
 |サービス プリンシパルからの資格情報の削除|サービス プリンシパル資格情報を削除します。|Azure AD 内のサービス プリンシパルから資格情報が削除されました。Azure AD では、サービス プリンシパルはアプリケーションを表します。|
 |委任エントリの設定|委任エントリを設定します。|Azure AD 内のアプリケーションの認証アクセス許可が更新されました。|
-||||
 
 ### <a name="role-administration-activities"></a>役割管理アクティビティ
 
@@ -753,7 +742,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |役割にメンバーが追加されました|役割にメンバーを追加しました。|Microsoft 365 の管理者の役割にユーザーが追加されました。|
 |ディレクトリ ロールからのユーザーの削除|役割からメンバーを削除します。|Microsoft 365 の管理者の役割からユーザーが削除されました。|
 |会社の連絡先情報の設定|会社の連絡先情報を設定します。|組織の会社レベルの連絡先設定が更新されました。これには、Microsoft 365 によって送信されるサブスクリプション関連のメールのメール アドレスと、サービスに関する技術的な通知が含まれます。|
-||||
 
 ### <a name="directory-administration-activities"></a>ディレクトリ管理アクティビティ
 
@@ -776,7 +764,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |ドメインの更新|ドメインを更新します。|組織のドメインの設定が更新されました。|
 |ドメインの検証|ドメインを確認します。|組織がドメインの所有者であるかどうかが検証されました。|
 |メールで確認済みのドメインの検証|メールで確認されたドメインを確認します。|メールによる確認を使用して、組織がドメインの所有者であるかどうかが検証されました。|
-||||
 
 ### <a name="ediscovery-activities"></a>電子情報開示アクティビティ
 
@@ -825,7 +812,6 @@ Workplace Analytics では、組織において各グループが共同作業を
 |ユーザーが<sup>*</sup>にログインしました| UserLoggedIn |ユーザーが自分の Microsoft 365 ユーザー アカウントにサインインしました。|
 |ユーザーが<sup>*</sup>からログオフしました| UserLoggedOff |ユーザーが Microsoft 365 ユーザー アカウントからサインアウトしました。
 |参照の表示|ViewedExplore|アナリストは、1 つまたは複数の参照ページ タブで視覚エフェクトを表示しました。|
-||||
 
 > [!NOTE]
 > <sup>*</sup>これらは Azure Active Directory のサインインとサインオフ アクティビティです。 これらのアクティビティは、組織内で Workplace Analytics が有効になっていない場合でもログに記録されます。 ユーザー サインイン アクティビティの詳細については「[Azure Active Directory のサインイン ログ](/azure/active-directory/reports-monitoring/concept-sign-ins)」を参照してください。
@@ -880,7 +866,6 @@ Shifts アプリのアクティビティの説明については、「[Microsoft
 |メッセージの更新<sup>*</sup>|MessageUpdated|ユーザーがメッセージを更新しました。|
 |ファイルの表示|FileVisited|ユーザーがファイルを表示しました。|
 |メッセージの表示<sup>*</sup>|MessageViewed|ユーザーがメッセージを表示しました。|
-||||
 
 ### <a name="microsoft-power-automate-activities"></a>Microsoft Power Automate のアクティビティ
 
@@ -901,7 +886,6 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
 |項目がアクセスされました|LabelContentExplorerAccessedItem|管理者 (またはコンテンツ エクスプローラー コンテンツ ビューアー役割グループのメンバーであるユーザー) は、コンテンツ エクスプローラーを使用して電子メール メッセージまたは SharePoint/OneDrive ドキュメントを表示します。|
-||||
 
 ### <a name="quarantine-activities"></a>検疫アクティビティ
 
@@ -914,7 +898,6 @@ Power Apps では、アプリ関連のアクティビティの監査ログを検
 |プレビューされた検疫メッセージ|QuarantinePreview|ユーザーが有害と見なされたメール メッセージをプレビューしました。|
 |解放された検疫メッセージ|QuarantineRelease|ユーザーが有害と見なされたメール メッセージを検疫から解放しました。|
 |表示された検疫メッセージのヘッダー|QuarantineViewHeader|ユーザーが有害と見なされたメール メッセージのヘッダーを表示しました。|
-||||
 
 ### <a name="microsoft-forms-activities"></a>Microsoft Forms アクティビティ
 
@@ -973,7 +956,6 @@ Forms アクティビティが共同作成者または匿名のレスポンダ�
 |コレクションの名前の変更|CollectionRenamed|フォーム所有者がコレクションの名前を変更しました。|
 |フォームへのコレクションの移動|MovedFormIntoCollection|フォームの所有者がフォームをコレクションに移動しました。|
 |フォームをコレクションから移動しました|MovedFormOutofCollection|フォームの所有者がフォームをコレクションから移動しました。|
-||||
 
 #### <a name="forms-activities-performed-by-coauthors-and-anonymous-responders"></a>共同作成者および匿名のレスポンダーによって実行される Forms アクティビティ
 
@@ -989,7 +971,6 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 |回答アクティビティ|外部|UPN<br>|レスポンダーの組織<br>|レスポンダー|
 |回答アクティビティ|外部|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(ユーザー ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織|レスポンダー|
 |回答アクティビティ|匿名|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(ユーザー ID の 2 番目の部分はハッシュであり、ユーザーによって異なります)|フォームの所有者の組織|レスポンダー|
-||||
 
 ### <a name="sensitivity-label-activities"></a>機密ラベル アクティビティ
 
@@ -1003,7 +984,6 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 |ファイルに適用された機密ラベルの変更|FileSensitivityLabelChanged<br /><br>SensitivityLabelUpdated|異なる機密ラベルがドキュメントに適用されました。 <br /><br>このアクティビティの操作は、ラベルの変更方法によって異なります。<br /> - Office on the webまたは自動ラベル付けポリシー (FileSensitivityLabelChanged) <br /> - Microsoft 365 Apps (SensitivityLabelUpdated)|
 |サイトで変更された機密ラベル|SensitivityLabelChanged|異なる機密ラベルがSharePoint または Teams サイトに適用されました。|
 |ファイルから削除された機密ラベル|FileSensitivityLabelRemoved|Microsoft 365 Apps、Office on the web、自動ラベル付けポリシー、[または Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile)コマンドレットを使用して、ドキュメントから機密ラベルが削除されました。|
-||||
 
 ### <a name="retention-policy-and-retention-label-activities"></a>アイテム保持ポリシーと保持ラベルのアクティビティ
 
@@ -1025,7 +1005,6 @@ Forms は、フォームの設計時および回答の分析時の協同作業�
 | アイテム保持ポリシーの更新された設定 | SetRetentionComplianceRule | 管理者が既存のアイテム保持ポリシーの保持設定を変更しました。 保持設定には、アイテムを保持する期間、保持期間が終了した際のアイテムへの処理 （アイテムの削除、保持、またはアイテムの保持と削除など）が含まれます。 このアクティビティは、[Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule) コマンドレットの実行にも対応しています。 |
 | 更新された保持ラベル |SetComplianceTag  | 管理者が既存の保持ラベルを更新しました。|
 | 更新アイテム保持ポリシー |SetRetentionCompliancePolicy |管理者が既存のアイテム保持ポリシーを更新しました。このイベントをトリガーする更新には、アイテム保持ポリシーが適用されるコンテンツの場所の追加または除外が含まれます。|
-||||
 
 ### <a name="briefing-email-activities"></a>ブリーフィング メール アクティビティ
 
@@ -1039,7 +1018,6 @@ Microsoft 365 監査ログに記録されるブリーフィング メールの�
 |:----|:-----|:-----|
 |更新された組織のプライバシー設定|UpdatedOrganizationBriefingSettings|管理者が、ブリーフィング メールの組織のプライバシー設定を更新します。 |
 |更新されたユーザー プライバシーの設定|UpdatedUserBriefingSettings|管理者が、ブリーフィング メールのユーザー プライバシー設定を更新します。
-||||
 
 ### <a name="myanalytics-activities"></a>MyAnalytics アクティビティ
 
@@ -1049,7 +1027,6 @@ Microsoft 365 監査ログに記録されるMyAnalytics のアクティビティ
 |:-----|:-----|:-----|
 |更新された組織の MyAnalytics 設定|UpdatedOrganizationMyAnalyticsSettings|管理者は MyAnalytics の組織レベルの設定を更新します。 |
 |更新されたユーザーの MyAnalytics 設定|UpdatedUserMyAnalyticsSettings|管理者が MyAnalytics のユーザー設定を更新します。|
-||||
 
 ### <a name="information-barriers-activities"></a>情報バリア アクティビティ
 
@@ -1060,7 +1037,6 @@ Microsoft 365 監査ログに記録される情報バリアのアクティビテ
 | サイトに追加されたセグメント | SegmentsAdded | SharePoint、グローバル管理者、またはサイト所有者が、1 つ以上の情報バリア セグメントをサイトに追加しました。 |
 | サイトの変更されたセグメント | SegmentsChanged | SharePoint またはグローバル管理者が、サイトの 1 つ以上の情報バリア セグメントを変更しました。 |
 | サイトから削除されたセグメント | SegmentsRemoved | SharePoint またはグローバル管理者が、サイトから 1 つ以上の情報バリア セグメントを削除しました。 |
-||||
 
 ### <a name="disposition-review-activities"></a>処理確認アクティビティ
 
@@ -1072,7 +1048,6 @@ Microsoft 365 監査ログに記録される情報バリアのアクティビテ
 |延長保有期間|ExtendRetention|処理レビュー担当者は、アイテムの保持期間を延長しました。|
 |再ラベル付けされたアイテム|RelabelItem|処理レビュー担当者がアイテム保持ラベルにもう一度ラベルを付けました。|
 |追加されたレビュー担当者|AddReviewer|処理レビュー担当者は、現在の処理確認段階に 1 人以上の他のユーザーを追加しました。|
-||||
 
 ### <a name="communication-compliance-activities"></a>コミュニケーション コンプライアンス アクティビティ
 
@@ -1083,7 +1058,6 @@ Microsoft 365 監査ログに記録されるコミュニケーション コン�
 |ポリシーの更新|SupervisionPolicyCreated, SupervisionPolicyUpdated, SupervisionPolicyDeleted|コミュニケーション コンプライアンス管理者がポリシーの更新を実行しました。|
 |ポリシーとの一致|SupervisionRuleMatch|ユーザーがポリシーの条件に一致するメッセージを送信しました。|
 |メッセージに適用されるタグ|SupervisoryReviewTag|タグがメッセージに適用されるか、またはメッセージが解決されます。|
-||||
 
 ### <a name="report-activities"></a>アクティビティを報告する
 
@@ -1092,7 +1066,6 @@ Microsoft 365 監査ログに記録されるコミュニケーション コン�
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
 |使用状況レポートのプライバシー設定が更新されました|UpdateUsageReportsPrivacySetting|管理者が使用状況レポートのプライバシー設定を更新しました。 |
-||||
 
 ### <a name="exchange-admin-audit-log"></a>Exchange 管理者監査ログ
 

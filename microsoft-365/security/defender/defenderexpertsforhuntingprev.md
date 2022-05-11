@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c4b4e1310d56969b52de11ba51dd0f5f5ea62f9
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: be44a55774d1b201d2f1d99fe78994905d671e80
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302372"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320393"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting プレビュー
 
@@ -41,7 +41,7 @@ Microsoft Defender Experts for Hunting (Defender Experts for Hunting) は、セ�
 
 [この短いビデオでは](https://youtu.be/4t1JgE0X0jc) 、Microsoft Defender Experts for Hunting を使用して、環境内の最新の高度な脅威を追跡する方法について詳しく説明します。
 
-Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直接、ターゲットを絞った攻撃通知を提供します。 これらの通知は、組織のエンドポイント、電子メール、クラウド アプリ、ID を保護するのに役立ちます。 また、Microsoft 365 Defender ポータルのボタンをクリックして、組織が直面している脅威に関する専門家のアドバイスを受け取ることができるエキスパート オン デマンドへのアクセスも受け取ります。 専門家に相談し、組織が直面する脅威について支援を求めることができます。 このプレビューでは、無料でサービスを試し、次の機能を利用できます。
+Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直接、ターゲットを絞った攻撃通知を提供します。 これらの通知は、組織のエンドポイント、電子メール、クラウド アプリ、ID を保護するのに役立ちます。 また、Microsoft 365 Defender ポータルのボタンをクリックして、組織が直面している脅威に関する専門家のアドバイスを受け取ることができるエキスパート オンデマンドへのアクセスも受け取ります。 専門家に相談し、組織が直面する脅威について支援を求めることができます。 このプレビューでは、無料でサービスを試し、次の機能を利用できます。
 
 - **脅威の捜索と分析** – Defender Experts for Hunting は、高度な脅威を明らかにし、人間の敵対者やハンズオンキーボード攻撃に関連する悪意のあるアクティビティの範囲と影響を特定するために、より深く見えます。
 - **ターゲット攻撃通知** – 通知はMicrosoft 365 Defenderのインシデントとして表示され、スコープ、入力方法、修復手順に関する特定の情報を使用して、セキュリティ操作のインシデント対応を改善するのに役立ちます。
@@ -52,7 +52,7 @@ Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直�
 ## <a name="apply-for-microsoft-defender-experts-for-hunting-service-preview"></a>ハンティング サービス プレビュー用の Microsoft Defender エキスパートを申請する
 
 >[!IMPORTANT]
->申請する前に、Microsoft Technical Service プロバイダーとアカウント チームと Defender Experts for Hunting の資格要件について説明してください。 プレビューは高速でいっぱいになり、可用性は非常に限られています。 お客様を受け入れることができない場合は、Microsoft Defender Experts for Hunting サービスが一般公開される準備が整ったらすぐにお客様に連絡します。 
+>申請する前に、Microsoft Technical Service プロバイダーとアカウント チームと Defender Experts for Hunting の資格要件について説明してください。 プレビューは高速でいっぱいになり、可用性は非常に限られています。 お客様を受け入れることができない場合は、Microsoft Defender Experts for Hunting サービスが一般公開される準備が整ったら、すぐにお客様に連絡します。 
 
 まだ行っていない場合は、Defender Experts for Hunting に申請できます。
 

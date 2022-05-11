@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 0c8462333a3b3fd0c062c72fce0f673977c54b9b
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 9b9427fc736dfee3ea326b8c523d3f872ad98c70
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916251"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286102"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [秘密度ラベル](sensitivity-labels.md) を使用して、ドキュメントやメールを分類および保護するだけでなく、Microsoft Teams サイト、Microsoft 365 グループ ([以前は Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))、およびSharePoint サイトなどのコンテナーにあるコンテンツを保護するために、秘密度ラベルを使用することもできます。コンテナー レベルの分類と保護を設定するには、次のラベル設定を使用します。
 
@@ -181,7 +183,7 @@ SharePoint 設定はラベル構成とは別に構成できるため、秘密度
 
 ### <a name="configure-settings-for-the-default-sharing-link-type-for-a-site-by-using-powershell-advanced-settings"></a>PowerShell の詳細設定を使用してサイトの既定の共有依存タイプの設定を構成する
 
-コンプライアンスセンターから構成できるサイトおよびグループのラベル設定に加えて、サイトの既定の共有依存タイプを構成することもできます。 ドキュメントの秘密度ラベルは、既定の共有依存タイプに対して構成することもできます。 ユーザーが Office アプリで **[共有]** ボタンを選択すると、過剰な共有を防ぐのに役立つこれらの設定が自動的に選択されます。 
+Microsoft Purview コンプライアンス ポータルから構成できるサイトおよびグループのラベル設定に加えて、サイトの既定の共有依存タイプを構成することもできます。 ドキュメントの秘密度ラベルは、既定の共有依存タイプに対して構成することもできます。 ユーザーが Office アプリで **[共有]** ボタンを選択すると、過剰な共有を防ぐのに役立つこれらの設定が自動的に選択されます。 
 
 詳細と手順については、「[秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有依存タイプを構成する](sensitivity-labels-default-sharing-link.md)」を参照してください。
 
@@ -367,8 +369,7 @@ Azure Active Directory ポータルを除いて、秘密度ラベルをサポー
   - SharePoint 管理センター
   - Teams 管理センター
   - Microsoft 365 管理センター
-  - Microsoft 365 コンプライアンス センター
-  - Azure Active Directory ポータル
+  - Microsoft Purview コンプライアンス ポータル
 
 - ユーザーのアプリとサービス:
 

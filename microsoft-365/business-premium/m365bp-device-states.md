@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: ビジネス向け Microsoft 365 の管理ホームのデバイス アクションの一覧では、さまざまなデバイスの状態について説明します。
-ms.openlocfilehash: 72a923b366d73d0ceb708abfb6ab96e2562b6e49
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 00a2b86265c342d131c703b207682e2eeff26b79
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095196"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320802"
 ---
 # <a name="device-states"></a>デバイス状態
 
@@ -63,4 +63,4 @@ ms.locfileid: "65095196"
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: ee73b5a83a669653087bf787061e8ad59b23ed18
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2c218cd2b0f04201f46155a72a916cc7676aaddb
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095214"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320820"
 ---
 # <a name="device-groups-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のデバイス グループ
 
@@ -70,6 +70,8 @@ Microsoft 365 Business Premium には、Microsoft Defender for Business によ�
 9. **[構成設定]** ページで、必要に応じて設定を確認および編集し、**[次へ]** を選択します。 これらの設定の詳細については、「[Microsoft Defender for Business の次世代構成設定について理解する](../security/defender-business/mdb-next-gen-configuration-settings.md)」を参照してください。
 
 10. **[ポリシーの確認]** ステップで、すべての設定を確認し、必要な編集を行ってから、**[ポリシーの作成]** または **[ポリシーの更新]** を選択します。
+
+## <a name="next-steps"></a>次の手順
 
 これで主要なミッションが完了したので、[応答チーム](m365bp-security-incident-management.md)を設定し、[環境を維持します](m365bp-maintain-environment.md)。
 

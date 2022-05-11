@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
 description: ビジネス アプリ保護設定のMicrosoft 365がユーザーのWindows 10 デバイスに対して有効になっていることを確認する方法について説明します。
-ms.openlocfilehash: c107741d87c63472310352b58872ec0b6ecc1d4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cbb26461da9fcc73f57d219c36ef04d97e7fc209
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090665"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317555"
 ---
 # <a name="validate-device-protection-settings-for-windows-10-pcs"></a>Windows 10 PC のデバイス保護設定を検証する
 
@@ -67,5 +67,5 @@ ms.locfileid: "65090665"
 
 [ビジネス ドキュメントとリソースのMicrosoft 365](/admin)
 
-[Windows 10 PCTop](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)
- [10 のデバイス構成を設定して、ビジネス プランのMicrosoft 365をセキュリティで保護する](../../admin/security-and-compliance/secure-your-business-data.md)
+Windows 10 PC 
+ の[デバイス構成を設定](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)する[ビジネス プランのMicrosoft 365をセキュリティで保護する方法](../../admin/security-and-compliance/secure-your-business-data.md)

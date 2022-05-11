@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: 17a-4 BlackBerry DataParser コネクタを設定して使用して、Microsoft 365で BlackBerry データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 93b876a8091007d99584269c7d9b3114b72d18fe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c6dff24ecea12309363dce8469a148a2183493af
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098066"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317186"
 ---
 # <a name="set-up-a-connector-to-archive-blackberry-data"></a>BlackBerry データをアーカイブするコネクタを設定する
 
@@ -25,7 +25,7 @@ ms.locfileid: "65098066"
 
 17a-4 LLC の [BlackBerry DataParser](https://www.17a-4.com/BlackBerry-dataparser/) を使用して、blackBerry エンタープライズ データをインポートし、Microsoft 365組織内のユーザー メールボックスにアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された BlackBerry コネクタが含まれています。 BlackBerry DataParser コネクタは、BlackBerry データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
 
-BlackBerry データがユーザー メールボックスに格納された後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft Purview 機能を適用できます。 BlackBerry コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+BlackBerry データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどのMicrosoft Purview機能を適用できます。 BlackBerry コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-blackberry-data"></a>BlackBerry データのアーカイブの概要
 
@@ -37,7 +37,7 @@ BlackBerry データがユーザー メールボックスに格納された後�
 
 2. 定期的に、BlackBerry アイテムは DataParser によって収集されます。 DataParser では、メッセージの内容も電子メール メッセージ形式に変換されます。
 
-3. Microsoft Purview コンプライアンス ポータルで作成する BlackBerry DataParser コネクタは DataParser に接続し、メッセージを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
+3. Microsoft Purview コンプライアンス ポータルで作成する BlackBerry DataParser コネクタは、DataParser に接続され、Microsoft クラウド内の安全なAzure Storageの場所にメッセージを転送します。
 
 4. **BlackBerry DataParser** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、BlackBerry アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての BlackBerry アイテムには、すべての参加者の電子メール アドレスが設定されたこのプロパティが含まれています。
 
@@ -47,7 +47,7 @@ BlackBerry データがユーザー メールボックスに格納された後�
 
 - 手順 1 で BlackBerry DataParser コネクタを作成し、手順 3 で完了したユーザーには、データ コネクタ管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この 17a-4 データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この 17a-4 データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティ製のアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purviewおよびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="step-1-set-up-a-blackberry-dataparser-connector"></a>手順 1: BlackBerry DataParser コネクタを設定する
 
@@ -79,7 +79,7 @@ BlackBerry DataParser コネクタを作成した後、コンプライアンス 
 
 2. [ **コネクタ** ] タブをクリックし、作成した BlackBerry DataParser コネクタを選択して、コネクタに関するプロパティと情報を含むポップアップ ページを表示します。
 
-3. **[コネクタの状態とソース**] で、[**ログのダウンロード**] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータが含まれています。
+3. **[コネクタの状態とソース**] で、[**ログのダウンロード**] リンクをクリックして、コネクタの状態ログを開く (または保存) します。 このログには、Microsoft クラウドにインポートされたデータに関する情報が含まれています。
 
 ## <a name="known-issues"></a>既知の問題
 

@@ -22,12 +22,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b5752d0ebeb0095defe47f52529392e4b9c01212
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: c4e28c91cc7e7fe441d000553e9099ad39420991
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973731"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317052"
 ---
 # <a name="get-started-with-communication-compliance"></a>コミュニケーション コンプライアンスの使用を開始する
 
@@ -75,8 +75,8 @@ ms.locfileid: "64973731"
 
 - [*Azure Active Directory グローバル管理者*](/azure/active-directory/roles/permissions-reference#global-administrator)ロール
 - Azure Active Directory [*コンプライアンス管理者*](/azure/active-directory/roles/permissions-reference#compliance-administrator)ロール
-- Microsoft Purview コンプライアンス ポータル [*組織の管理*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) 役割グループ
-- Microsoft Purview コンプライアンス ポータル [*コンプライアンス管理者*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) の役割グループ
+- Microsoft Purview コンプライアンス ポータル [*組織管理*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)役割グループ
+- Microsoft Purview コンプライアンス ポータル [*コンプライアンス管理者*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)の役割グループ
 - *コミュニケーション コンプライアンス* の役割グループ
 - *コミュニケーション コンプライアンス管理者* の役割グループ
 
@@ -84,7 +84,7 @@ ms.locfileid: "64973731"
 
 - Azure Active Directory *グローバル管理者*
 - Azure Active Directory *コンプライアンス管理者*
-- Microsoft Purview コンプライアンス ポータル *組織の管理*
+- Microsoft Purview コンプライアンス ポータル *組織管理*
 - Microsoft Purview コンプライアンス ポータル *コンプライアンス管理者*
 
 > [!IMPORTANT]
@@ -122,7 +122,7 @@ ms.locfileid: "64973731"
 
 このオプションを使用して、ユーザーを特定のロール グループに割り当てて、組織内のさまざまなユーザー間のコミュニケーション コンプライアンス アクセスと責任をセグメント化します。
 
-1. Microsoft 365組織内の管理者アカウントの資格情報を使用して [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com)にサインインし、**アクセス許可**</a>に移動します。
+1. [Microsoft 365](https://compliance.microsoft.com)組織内の管理者アカウントの資格情報を使用してMicrosoft Purview コンプライアンス ポータルにサインインし、**アクセス許可**</a>に移動します。
 
 2. Office 365 でロールの表示と管理へのリンクを選択します。
 
@@ -216,9 +216,9 @@ Exchange オンプレミス展開または外部メール プロバイダーを�
 >[!TIP]  
 >新しい通信コンプライアンス ポリシーを設定し、アラートを修復する詳細なチュートリアルをご覧ください。 [この 15 分間のビデオ](communication-compliance-plan.md#creating-a-communication-compliance-policy-walkthrough)では、コミュニケーション コンプライアンス ポリシーが不適切なメッセージを検出し、潜在的な違反を調査し、コンプライアンスの問題を修復するのに役立つ方法のデモンストレーションを確認してください。
 
-1. Microsoft 365組織内の管理者アカウントの資格情報を使用して[、Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com)にサインインします。
+1. [Microsoft 365](https://compliance.microsoft.com)組織内の管理者アカウントの資格情報を使用して、Microsoft Purview コンプライアンス ポータルにサインインします。
 
-2. Microsoft Purview コンプライアンス ポータルで、[ **通信コンプライアンス**] を選択します。
+2. Microsoft Purview コンプライアンス ポータルで、[**通信コンプライアンス**] を選択します。
 
 3. **[ポリシー]** タブを選択します。
 
@@ -288,9 +288,9 @@ New-ComplianceSecurityFilter -FilterName "CC_mailbox" -Users <list your communic
 
 ポリシーの一致を調査し、メッセージに対してアクションを実行するときに、表示されるユーザー名の匿名化を有効にすることもできます。
 
-1. Microsoft 365組織内の管理者アカウントの資格情報を使用して[、Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com)にサインインします。
+1. [Microsoft 365](https://compliance.microsoft.com)組織内の管理者アカウントの資格情報を使用して、Microsoft Purview コンプライアンス ポータルにサインインします。
 
-2. Microsoft Purview コンプライアンス ポータルで、 **コミュニケーション コンプライアンス** に移動します。
+2. Microsoft Purview コンプライアンス ポータルで、**コミュニケーション コンプライアンス** に移動します。
 
 3. ユーザー名の匿名化を構成するには、**[プライバシー]** タブを選択します。
 
@@ -312,7 +312,7 @@ New-ComplianceSecurityFilter -FilterName "CC_mailbox" -Users <list your communic
 
 ## <a name="step-8-optional-test-your-communication-compliance-policy"></a>手順 8 (省略可能): 通信コンプライアンス ポリシーをテストする
 
-コミュニケーション コンプライアンス ポリシーを作成したら、定義した条件がポリシーによって適切に実施されていることを確認するためのテストの実施をお勧めします。 通信コンプライアンス ポリシーに機密情報の種類が含まれている場合は、 [Microsoft Purview データ損失防止 (DLP)](create-test-tune-dlp-policy.md) ポリシーをテストすることもできます。 テストするコミュニケーションがキャプチャされるように、ポリシーをアクティブ化する時間をかならず指定します。
+コミュニケーション コンプライアンス ポリシーを作成したら、定義した条件がポリシーによって適切に実施されていることを確認するためのテストの実施をお勧めします。 通信コンプライアンス ポリシーに機密情報の種類が含まれている場合は[、Microsoft Purview データ損失防止 (DLP)](create-test-tune-dlp-policy.md) ポリシーをテストすることもできます。 テストするコミュニケーションがキャプチャされるように、ポリシーをアクティブ化する時間をかならず指定します。
 
 以下の手順に従って、コミュニケーション コンプライアンス ポリシーをテストします。
 
@@ -321,7 +321,7 @@ New-ComplianceSecurityFilter -FilterName "CC_mailbox" -Users <list your communic
 2. コミュニケーション コンプライアンス ポリシーで定義した基準を満たすメール、Microsoft Teams チャット、または Yammer メッセージを送信します。 このテストは、キーワード、添付ファイルのサイズ、ドメインなどです。ポリシーで構成された条件設定が厳しすぎないか、または緩すぎないかを必ず確認してください。
 
     > [!NOTE]
-    > メール メッセージは、ポリシーで完全に処理されるまでに最大 24 時間かかる場合があります。 Microsoft Teams、Yammer、サードパーティ製プラットフォームでのコミュニケーションは、ポリシーで完全に処理されるには最大 48 時間かかる可能性があります。
+    > 電子メール メッセージは、ポリシーの完全な処理に約 24 時間かかる場合があります。 Microsoft Teams、Yammer、サード パーティのプラットフォームでの通信は、ポリシーの完全な処理に約 48 時間かかる場合があります。
 
 3. コミュニケーション コンプライアンス ポリシーで指定されたレビュー担当者として Microsoft 365 にサインインします。 **[コミュニケーション コンプライアンス]**  >  **[アラート]** の順に移動して、ポリシーのアラートを表示します。
 

@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Microsoft 365 for Business を使用して、ユーザーがデバイスまたは Windows PC に持っている会社のデータを削除する方法をご覧ください。
-ms.openlocfilehash: cda772b3d14b80f3836ef22c4fa941c1636ee0a2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f4f9971e65c65267ee9b4e4f8ee99196f5773355
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094181"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317444"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 
@@ -58,4 +58,4 @@ Microsoft 365 for Business を使って、ユーザーが Microsoft 365 で保�
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

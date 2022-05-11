@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: e7b9e757f15663338f2e12c645cc3cb0b63ef34b
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 958c58fab875ce86b0a3290450e2cf17c4b75a44
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302247"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320499"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング
 
@@ -53,10 +53,10 @@ Microsoft Defender for Endpointオンボード手順の Security Management に�
   - https://enterpriseregistration.windows.net
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
-- Azure AD接続は、コンピューター オブジェクトを同期するように構成されています。 既定では、コンピューター OU は同期スコープAzure AD接続します。 コンピューター オブジェクトが特定の組織単位 (OU) に属している場合は、Azure AD Connectで同期するように OU を構成します。 Azure AD Connectを使用してコンピューター オブジェクトを同期する方法の詳細については、「[組織単位ベースのフィルター処理](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering)」を参照してください。
+- Azure AD 接続は、コンピューター オブジェクトを同期するように構成されています。 既定では、コンピューター OU は Azure AD Connect 同期スコープ内にあります。 コンピューター オブジェクトが特定の組織単位 (OU) に属している場合は、Azure AD Connectで同期するように OU を構成します。 Azure AD Connectを使用してコンピューター オブジェクトを同期する方法の詳細については、「[組織単位ベースのフィルター処理](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering)」を参照してください。
 
 > [!IMPORTANT]
-> Azure AD接続では、R2 コンピューター オブジェクトWindows Server 2012同期されません。 Microsoft Defender for Endpoint用の Security Management のAzure ADに登録する必要がある場合は、それらのコンピューター オブジェクトを同期スコープに含めるために、同期規則を接続Azure ADカスタマイズする必要があります。 [Azure Active Directory Connectでコンピューター参加規則を適用する手順に関する記事を]()参照してください。
+> Azure AD connect では、R2 コンピューター オブジェクトWindows Server 2012同期されません。 Microsoft Defender for Endpoint用に Azure AD for Security Management に登録する必要がある場合は、同期スコープにそれらのコンピューター オブジェクトを含めるために Azure AD 接続同期規則をカスタマイズする必要があります。 [Azure Active Directory Connectでコンピューター参加規則を適用する手順に関する記事を]()参照してください。
 
 > [!NOTE]
 > オンボード フローを正常に完了し、デバイスのオペレーティング システムとは無関係に、デバイスの初期状態に基づいて、デバイスのAzure Active Directory状態を変更できます。
@@ -108,7 +108,7 @@ Client Analyzer 出力ファイル (MDE クライアント アナライザー Re
 
 ## <a name="general-troubleshooting"></a>一般的なトラブルシューティング
 
-AADまたは MEM でオンボードされたデバイスを識別できず、登録中にエラーが発生しなかった場合は、レジストリ キー`Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus`を確認すると、追加のトラブルシューティング情報を提供できます。
+AAD または MEM でオンボードされたデバイスを識別できず、登録中にエラーが発生しなかった場合は、レジストリ キー `Computer\\HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\SenseCM\\EnrollmentStatus` を確認すると、追加のトラブルシューティング情報が提供される可能性があります。
 
 :::image type="content" source="images/enrollment-status.png" alt-text="登録状態を表示するページ" lightbox="images/enrollment-status.png":::
 
@@ -120,14 +120,14 @@ AADまたは MEM でオンボードされたデバイスを識別できず、登
 
 |エラー コード|登録状態|管理者のアクション|
 |---|---|---|
-|`5-9`,`11-12`, `26-33`|一般的なエラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 これは、デバイスが[Microsoft Defender for Endpoint管理チャネルの前提条件を](security-config-management.md)満たしていない可能性があります。 デバイスで [クライアント アナライザー](https://aka.ms/BetaMDEAnalyzer) を実行すると、問題の根本原因を特定するのに役立ちます。 問題が解決しない場合は、サポートにお問い合わせください。|
+|`5-7`, `9`, `11-12`, `26-33`|一般的なエラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 これは、デバイスが[Microsoft Defender for Endpoint管理チャネルの前提条件を](security-config-management.md)満たしていない可能性があります。 デバイスで [クライアント アナライザー](https://aka.ms/BetaMDEAnalyzer) を実行すると、問題の根本原因を特定するのに役立ちます。 問題が解決しない場合は、サポートにお問い合わせください。|
+| `8`, `44` | Microsoft エンドポイント マネージャー構成の問題 | デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft エンドポイント マネージャーは、Microsoft Defender for Endpointセキュリティ構成を許可するように管理センターを介して構成されていません。 [Microsoft エンドポイント マネージャー テナントが構成され、機能がオン](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management)になっていることを確認します。|
 |`13-14`,`20`,`24`,`25`|接続の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、接続の問題が原因である可能性があるセキュリティ構成管理フローにエラーが発生しました。 [Azure Active DirectoryエンドポイントとMicrosoft エンドポイント マネージャー エンドポイント](security-config-management.md#connectivity-requirements)がファイアウォールで開かれていることを確認します。|
 |`10`,`42`|一般的なハイブリッド結合エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、OS でハイブリッド参加を実行できませんでした。 OS レベル[のハイブリッド参加エラーのトラブルシューティングには、ハイブリッド Azure Active Directory参加済みデバイス](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)のトラブルシューティングを使用します。|
 |`15`|テナントの不一致|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft Defender for Endpoint テナント ID がAzure Active Directoryテナント ID と一致しないため、セキュリティ構成管理フローでエラーが発生しました。 Defender for Endpoint テナントのAzure Active Directoryテナント ID が、ドメインの SCP エントリのテナント ID と一致していることを確認します。 詳細については、「[Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング」を参照](troubleshoot-security-config-mgt.md)してください。|
-|`16`,`17`|ハイブリッド エラー - サービス接続ポイント|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、サービス接続ポイント (SCP) レコードが正しく構成されていないため、デバイスをAzure ADに参加できませんでした。 これは、SCP が DRS Enterprise参加するように構成されていることが原因である可能性があります。 SCP レコードがAADを指していることを確認し、SCP が次のベスト プラクティスに従って構成されていることを確認します。 詳細については、「 [サービス接続ポイントの構成」を](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)参照してください。|
+|`16`,`17`|ハイブリッド エラー - サービス接続ポイント|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、サービス接続ポイント (SCP) レコードが正しく構成されておらず、デバイスを Azure AD に参加させることができませんでした。 これは、SCP が DRS Enterprise参加するように構成されていることが原因である可能性があります。 SCP レコードが AAD を指し示し、SCP が次のベスト プラクティスに従って構成されていることを確認します。 詳細については、「 [サービス接続ポイントの構成」を](/azure/active-directory/devices/hybrid-azuread-join-manual#configure-a-service-connection-point)参照してください。|
 |`18`|証明書エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、デバイス証明書エラーが原因で、セキュリティ構成管理フローにエラーが発生しました。 デバイス証明書は別のテナントに属しています。 [信頼された証明書プロファイル](/mem/intune/protect/certificates-trusted-root#create-trusted-certificate-profiles)を作成するときにベスト プラクティスに従っていることを確認します。|
-|`36`|LDAP API エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、AAD Connectの構成ミスにより、セキュリティ構成管理フローにエラーが発生しました。 デバイスがAADに登録できない原因を特定するには、[デバイス登録のトラブルシューティング ツール](/samples/azure-samples/dsregtool/dsregtool)の実行を検討してください。 Windows Server 2012 R2 の場合は、[専用のトラブルシューティング手順を実行します](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy)。  |
-|`37`|オンプレミス同期の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、AAD Connectの構成ミスにより、セキュリティ構成管理フローにエラーが発生しました。 デバイスがAADに登録できない原因を特定するには、[デバイス登録のトラブルシューティング ツール](/samples/azure-samples/dsregtool/dsregtool)の実行を検討してください。 Windows Server 2012 R2 の場合は、[専用のトラブルシューティング手順を実行します](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy)。 |
+|`36` , `37`| AAD Connect構成の誤り |デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、AAD Connectの構成ミスにより、セキュリティ構成管理フローにエラーが発生しました。 デバイスが AAD に登録できない原因を特定するには、 [デバイス登録のトラブルシューティング ツール](/samples/azure-samples/dsregtool/dsregtool)を実行することを検討してください。 Windows Server 2012 R2 の場合は、[専用のトラブルシューティング手順を実行します](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-legacy)。  |
 |`38`,`41`|DNS エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、DNS エラーが原因で、セキュリティ構成管理フローにエラーが発生しました。 デバイスのインターネット接続または DNS 設定を確認します。 無効な DNS 設定がワークステーション側にある可能性があります。 Active Directory では、ドメイン DNS を使用して適切に動作する必要があります (ルーターのアドレスは使用しません)。 詳細については、「[Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング」を](troubleshoot-security-config-mgt.md)参照してください。|
 |`40`|クロック同期の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 クロックが正しく設定され、エラーが発生したデバイスで同期されていることを確認します。|
 
@@ -141,11 +141,11 @@ AADRT ログの一般的なエラーとその読み方については、以下�
 
 :::image type="content" source="images/event-properties.png" alt-text="イベントのプロパティ ページ" lightbox="images/event-properties.png":::
 
-メッセージの情報から、ほとんどの場合、発生したエラー、Win32 API によってエラーが返された内容 (該当する場合)、使用された URL (該当する場合)、およびランタイム API エラーが発生したAADを把握できます。
+メッセージの情報から、ほとんどの場合、発生したエラー、Win32 API によってエラーが返された内容 (該当する場合)、使用された URL (該当する場合)、AAD ランタイム API エラーが発生した内容を把握できます。
 
 ## <a name="instructions-for-applying-computer-join-rule-in-aad-connect"></a>AAD Connectでコンピューター参加規則を適用する手順
 
-Windows Server 2012 R2 ドメインに参加しているコンピューター上のMicrosoft Defender for Endpointの Security Management では、同期規則 "In from AD-Computer Join" Azure AD Connect更新プログラムが必要です。 これは、元の "In from AD - Computer Join" ルールを無効にするルールを複製および変更することで実現できます。 Azure AD Connect既定では、組み込みのルールを変更するためのこのエクスペリエンスが提供されます。
+Windows Server 2012 R2 ドメインに参加しているコンピューターのMicrosoft Defender for Endpoint用の Security Management では、Azure AD Connect同期規則 "In from AD-Computer Join" を更新する必要があります。 これは、元の "In from AD - Computer Join" ルールを無効にするルールを複製および変更することで実現できます。 既定では、Azure AD Connectでは、組み込みのルールを変更するためのこのエクスペリエンスが提供されます。
 
 > [!NOTE]
 >これらの変更は、AAD Connectが実行されているサーバーに適用する必要があります。 AAD Connectのインスタンスが複数デプロイされている場合は、これらの変更をすべてのインスタンスに適用する必要があります。

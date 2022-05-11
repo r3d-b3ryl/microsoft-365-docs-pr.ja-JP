@@ -18,24 +18,24 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: Microsoft 365の電子情報開示 (Standard) ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。
-ms.openlocfilehash: fb142a735d30a59735bd4f9a6370543a92f3d926
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095842"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318660"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>電子情報開示 (Standard) のケースからのコンテンツのエクスポート
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview 電子情報開示 (Standard) ケースに関連付けられた検索が正常に実行されたら、検索結果をエクスポートできます。 検索結果をエクスポートすると、PST ファイルまたは個々のメッセージとしてメールボックス アイテムがダウンロードされます。 SharePoint サイトやOneDrive for Business サイトからコンテンツをエクスポートすると、ネイティブ Office ドキュメントやその他のドキュメントのコピーがエクスポートされます。 エクスポートされたすべてのアイテムに関する情報を含むResults.csv ファイルと、すべての検索結果に関する情報を含むマニフェスト ファイル (XML 形式) もエクスポートされます。
+Microsoft Purview電子情報開示 (Standard) ケースに関連付けられた検索が正常に実行されたら、検索結果をエクスポートできます。 検索結果をエクスポートすると、PST ファイルまたは個々のメッセージとしてメールボックス アイテムがダウンロードされます。 SharePoint サイトやOneDrive for Business サイトからコンテンツをエクスポートすると、ネイティブ Office ドキュメントやその他のドキュメントのコピーがエクスポートされます。 エクスポートされたすべてのアイテムに関する情報を含むResults.csv ファイルと、すべての検索結果に関する情報を含むマニフェスト ファイル (XML 形式) もエクスポートされます。
   
 ## <a name="export-search-results"></a>検索結果をエクスポートする
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、適切な電子情報開示アクセス許可が割り当てられているユーザー アカウントの資格情報を使用してサインインします。
 
-2. コンプライアンス ポータルの左側のナビゲーション ウィンドウで、[**すべて表示**] を選択し、**eDiscoveryCore** >  を選択します。<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+2. コンプライアンス ポータルの左側のナビゲーション ウィンドウで、[**すべて表示**] を選択し、**電子情報開示** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(Standard)**</a> を選択します。
 
 3. **[電子情報開示 (Standard)]** ページで、保留リストを作成するケースの名前をクリックします。
 

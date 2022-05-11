@@ -1,5 +1,5 @@
 ---
-title: Android または iOS デバイスでアプリ保護設定を検証する
+title: AndroidデバイスまたはiOS デバイスでアプリ保護設定を検証する
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,32 +23,32 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: f3433b6b-02f7-447f-9d62-306bf03638b0
-description: Android または iOS デバイスでMicrosoft 365 Business Premiumアプリ保護設定を検証する方法について説明します。
-ms.openlocfilehash: 98b3110516d074fe945e1bb68652b40e93fa7fb7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: AndroidまたはiOSデバイスでMicrosoft 365 Business Premiumアプリ保護設定を検証する方法について説明します。
+ms.openlocfilehash: 7e1355f71e9757e1055999e1951b4f093b0d21a0
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090687"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317918"
 ---
-# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>Android または iOS デバイスでアプリ保護設定を検証する
+# <a name="validate-app-protection-settings-on-android-or-ios-devices"></a>AndroidデバイスまたはiOS デバイスでアプリ保護設定を検証する
 
 > [!NOTE]
 > Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細を確認する](../../security/defender-business/mdb-overview.md)
 
-Android または iOS デバイスでアプリ保護設定を検証するには、次のセクションの手順に従います。
+次のセクションの手順に従って、AndroidデバイスまたはiOS デバイスのアプリ保護設定を検証します。
   
 ## <a name="android"></a>Android
   
 ### <a name="check-that-the-app-protection-settings-are-working-on-user-devices"></a>アプリ保護設定がユーザー デバイスで動作していることを確認する
 
-[Android または iOS デバイスのアプリ保護設定を設定](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md)してアプリを保護したら、次の手順に従って、選択した設定が機能することを検証できます。 
+[AndroidデバイスまたはiOS デバイスのアプリ保護設定を設定](../../business-premium/m365bp-app-protection-settings-for-android-and-ios.md)してアプリを保護したら、次の手順に従って、選択した設定が機能することを検証できます。 
   
 まず、ポリシーを検証するアプリにポリシーが適用されていることを確認します。
   
 1. Microsoft 365 Business Premium [管理センター](https://admin.microsoft.com)で、**ポリシー** \> **の編集ポリシー** に移動します。
     
-2. セットアップ時に作成した設定、または作成した別のポリシーに Android **のアプリケーション** ポリシーを選択し、Outlookに適用されていることを確認します。 
+2. セットアップ時に作成した設定や作成した別のポリシーに対して **Androidのアプリケーション** ポリシーを選択し、Outlookに適用されていることを確認します。 
     
     ![このポリシーがファイルを保護するすべてのアプリを示すスクリーンショット。](../../media/b3be3ddd-f683-4073-8d7a-9c639a636a2c.png)
   
@@ -56,11 +56,11 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 [ **ポリシーの編集**] ウィンドウで、[ **Office ドキュメントのアクセス制御**] の横の [ **編集**] を選び、[ **ユーザーによるモバイル デバイスの Office ファイルのアクセス方法を管理する**] を展開し、[ **Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある**] が **オン** に設定されていることを確認します。
   
-![[アプリにアクセスするには PIN または指紋を要求Office] が [オン] に設定されていることを確認します。](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![[アプリにアクセスするには PIN またはフィンガープリントが必須Office] が [オン] に設定されていることを確認します。](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. ユーザーの Android デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
+1. ユーザーのAndroid デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
     
-2. PIN を入力するか、指紋を使用するように求めるメッセージも表示されます。
+2. PIN の入力やフィンガープリントの使用を求めるメッセージも表示されます。
     
     ![Enter a PIN on your Android device to access Office apps.](../../media/9e8ecfee-8122-4a3a-8918-eece80344310.png)
   
@@ -68,7 +68,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 **[ポリシーの編集]** ウィンドウで、**ドキュメントのアクセス制御Office** 横にある **[編集]** を選択し、[**モバイル デバイス上のOffice ファイルにユーザーがアクセスする方法を管理** する] を展開し、**失敗した試行回数** が数に設定されていることを確認します。 これは既定で 5 です。 
   
-1. ユーザーの Android デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
+1. ユーザーのAndroid デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
     
 2. ポリシーで指定された回数だけ不正な PIN を入力します。 PIN をリセットするための **PIN 試行の制限に達** したことを示すプロンプトが表示されます。 
     
@@ -82,7 +82,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. ユーザーの Android デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーのAndroid デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
     
 2. 添付ファイルを含むメールを開き、添付ファイルの情報の横にある下矢印アイコンをタップします。
     
@@ -99,11 +99,11 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 **[ポリシーの編集]** ウィンドウで、[**Officeドキュメントのアクセス制御**] の横にある **[編集]** を選択し、[**モバイル デバイス上のOffice ファイルへのアクセス方法の管理**] を展開し、[アプリが **アイドル状態になった Office後にユーザーにもう一度サインインを要求する]** が [数分] に設定されていることを確認します。 これは既定で 30 分です。 
   
-1. ユーザーの Android デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーのAndroid デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
     
 2. Outlook の受信トレイが表示されます。Android デバイスを少なくとも 30 分間 (またはポリシーに設定した時間よりも長い時間) 触れずにアイドル状態にします。多くの場合、デバイスが暗くなります。
     
-3. Android デバイス上のOutlookに再度アクセスします。
+3. Android デバイスのOutlookに再度アクセスします。
     
 4. もう一度Outlookにアクセスする前に、PIN の入力を求めるメッセージが表示されます。
     
@@ -111,7 +111,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 [ **ポリシーの編集**] ウィンドウで、[ **デバイスの紛失または盗難に対する保護**] の横の [ **編集**] を選び、[ **デバイスの紛失または盗難時の作業ファイルの保護**] を展開し、[ **暗号化を使用して作業ファイルを保護する**] が **オン**、[ **OneDrive for Business へすべての作業ファイルを保存するようユーザーに強制する**] が **オフ** に設定されていることを確認します。
   
-1. ユーザーの Android デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーのAndroid デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
     
 2. いくつかの画像ファイルの添付ファイルを含む電子メールを開きます。
     
@@ -137,7 +137,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
   
 1. Microsoft 365 Business Premium [管理センター](https://admin.microsoft.com)で、**ポリシー** \> **の編集ポリシー** に移動します。
     
-2. セットアップ時に作成した設定、または作成した別のポリシーに対して **iOS のアプリケーション** ポリシーを選択し、たとえばOutlookに適用されていることを確認します。 
+2. セットアップ時に作成した設定、または作成した別のポリシーに対して **iOSのアプリケーション** ポリシーを選択し、たとえばOutlookに適用されていることを確認します。 
     
     ![このポリシーがファイルを保護するすべてのアプリを示すスクリーンショット。](../../media/842441b8-e7b1-4b86-9edd-d94d1f77b6f4.png)
   
@@ -145,11 +145,11 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 [ **ポリシーの編集**] ウィンドウで、[ **Office ドキュメントのアクセス制御**] の横の [ **編集**] を選び、[ **ユーザーによるモバイル デバイスの Office ファイルのアクセス方法を管理する**] を展開し、[ **Office アプリにアクセスするのに暗証番号 (PIN) または指紋認証を使用する必要がある**] が **オン** に設定されていることを確認します。
   
-![[アプリにアクセスするには PIN または指紋を要求Office] が [オン] に設定されていることを確認します。](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
+![[アプリにアクセスするには PIN またはフィンガープリントが必須Office] が [オン] に設定されていることを確認します。](../../media/f37eb5b2-7e26-49fb-9bd6-d955d196bacf.png)
   
-1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
+1. ユーザーのiOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
     
-2. PIN を入力するか、指紋を使用するように求めるメッセージも表示されます。
+2. PIN の入力やフィンガープリントの使用を求めるメッセージも表示されます。
     
     ![Enter a PIN on your IOS device to access Office apps.](../../media/06fc5cf3-9f19-4090-b23c-14bb59805b7a.png)
   
@@ -157,7 +157,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 **[ポリシーの編集]** ウィンドウで、**ドキュメントのアクセス制御Office** 横にある **[編集]** を選択し、[**モバイル デバイス上のOffice ファイルにユーザーがアクセスする方法を管理** する] を展開し、**失敗した試行回数** が数に設定されていることを確認します。 これは既定で 5 です。 
   
-1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
+1. ユーザーのiOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインします。
     
 2. ポリシーで指定された回数だけ不正な PIN を入力します。 PIN をリセットするための **PIN 試行の制限に達** したことを示すプロンプトが表示されます。 
     
@@ -171,7 +171,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
   
 ![Verify that Force users to save all work files to OneDrive for Business is set to On.](../../media/7140fa1d-966d-481c-829f-330c06abb5a5.png)
   
-1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーのiOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
     
 2. 添付ファイルを含むメールを開き、添付ファイルを開き、画面の下部で [ **保存**] を選びます。 
     
@@ -185,7 +185,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 **[ポリシーの編集]** ウィンドウで、[**Officeドキュメントのアクセス制御**] の横にある **[編集]** を選択し、[**モバイル デバイス上のOffice ファイルへのアクセス方法の管理**] を展開し、[アプリが **アイドル状態になった Office後にユーザーにもう一度サインインを要求する]** が [数分] に設定されていることを確認します。 これは既定で 30 分です。 
   
-1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーのiOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
     
 2. Outlook の受信トレイが表示されます。iOS デバイスを少なくとも 30 分間 (またはポリシーに設定した時間よりも長い時間) 触れずに放置します。多くの場合、デバイスが暗くなります。
     
@@ -197,7 +197,7 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 [ **ポリシーの編集**] ウィンドウで、[ **デバイスの紛失または盗難に対する保護**] の横の [ **編集**] を選び、[ **デバイスの紛失または盗難時の作業ファイルの保護**] を展開し、[ **暗号化を使用して作業ファイルを保護する**] が **オン**、[ **OneDrive for Business へすべての作業ファイルを保存するようユーザーに強制する**] が **オフ** に設定されていることを確認します。
   
-1. ユーザーの iOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
+1. ユーザーのiOS デバイスで、Outlookを開き、ユーザーのMicrosoft 365 Business Premium資格情報でサインインし、要求された場合は PIN を入力します。
     
 2. いくつかの画像ファイルの添付ファイルを含む電子メールを開きます。
     
@@ -208,4 +208,4 @@ Android または iOS デバイスでアプリ保護設定を検証するには�
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../security-and-compliance/secure-your-business-data.md)

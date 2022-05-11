@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
 description: AutoPilot プロファイルは、Windows をユーザー デバイスにインストールする方法を制御するのに役立ちます。 プロファイルには、Cortana のインストールをスキップするなどの既定の設定とオプションの設定が含まれています。
-ms.openlocfilehash: 9cfacb4ca69f8a674a50cfd5946e6a095433aed9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b4528e52c555f17c19f6548cbd9d7cabf4d9cbf5
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090647"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320326"
 ---
 # <a name="about-autopilot-profile-settings"></a>AutoPilot プロファイルの設定について
 
@@ -62,4 +62,4 @@ AutoPilot プロファイルを使用して、ユーザー デバイスに Windo
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

@@ -30,16 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
 description: Microsoft 365 Business Premium ユーザーに対してWindows 10 Proを実行するWindows デバイスを設定し、一元管理とセキュリティ制御を有効にします。
-ms.openlocfilehash: 57db37f73d2b9145f7c4fb9c1ee1005318c629d7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9c8a5eb724a74959983e86dcdcb8f2f8f96b540
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096228"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318582"
 ---
 # <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザーのWindows デバイスを設定する
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft 365 Business Premium ユーザー用にWindows デバイスを設定する前に、すべてのWindows デバイスがWindows 10 Proバージョン 1703 (Creators Update) またはWindows 11 Proを実行していることを確認します。 
 
@@ -56,9 +56,9 @@ Windows デバイスをアップグレードする方法の詳細については
 - [Windows ホームをWindows Proにアップグレードする](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
 - [Windows 10 Pro にアップグレードする](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
   
-アップグレードが完了したら、「[デバイスがAzure ADに接続されていることを確認する](#verify-the-device-is-connected-to-azure-ad)」を参照して、アップグレードが完了していることを確認するか、アップグレードが機能していることを確認します。
+アップグレードが完了したら、「 [デバイスが Azure AD に接続されていることを確認する](#verify-the-device-is-connected-to-azure-ad) 」を参照して、アップグレードがあることを確認するか、アップグレードが機能していることを確認します。
 
-## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Windowsデバイスを組織のAzure ADに参加させる
+## <a name="join-windows-devices-to-your-organizations-azure-ad"></a>Windowsデバイスを組織の Azure AD に参加させる
 
 会社のすべてのWindows デバイスがWindows 10 ProまたはWindows 11 Pro実行されている場合は、これらのデバイスを組織のAzure Active Directory (Azure AD) に参加させることができます。 
 
@@ -80,6 +80,6 @@ Windows デバイスをアップグレードする方法の詳細については
 
 モバイル デバイスを設定するには、「[Microsoft 365 Business Premium ユーザー向けのモバイル デバイスのセットアップ](set-up-mobile-devices.md)」を参照してください。 
 
-保護を強化するには、[ビジネス プランのMicrosoft 365をセキュリティで保護する上位 10 の方法に関するページを](../security-and-compliance/secure-your-business-data.md)参照してください。
+保護を強化するには、「[ビジネス プランのMicrosoft 365をセキュリティで保護するためのベスト プラクティス」を](../security-and-compliance/secure-your-business-data.md)参照してください。
   
 

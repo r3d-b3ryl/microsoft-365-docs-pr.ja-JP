@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Microsoft 365 for Business を使用して、管理している Windows 10 デバイスを工場出荷時にリセットし、購入時に元の設定に戻す方法について説明します。
-ms.openlocfilehash: ef91a761202989afabd0ac2478250d4311eae664
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a43ebd545ca16dc846e02b485a8c087c4cb87bac
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095184"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320258"
 ---
 # <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
 
@@ -52,4 +52,4 @@ ms.locfileid: "65095184"
   
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

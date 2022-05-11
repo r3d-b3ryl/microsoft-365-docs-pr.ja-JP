@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 9/11/2017
+ms.date: 05/10/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,18 +20,18 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべての保留に関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 1b36b134b8de490e5ca7d9e61044a3c7cac4904f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 25e201e1b8bef0a4ccc3724a6adab6c095f34d54
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097032"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318022"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースで保留に関するレポートを作成するスクリプトを使用する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Microsoft Purview コンプライアンス ポータルで、Core ケースと電子情報開示 (プレミアム) ケースに関連付けられているすべての保留に関する情報を含むレポートを生成できます。 レポートには、保留が関連付けられているケースの名前、保留に配置されるコンテンツの場所、ホールドがクエリ ベースかどうかなどの情報が含まれています。 保留がない場合は、保留のないケースの一覧を含む追加のレポートがスクリプトによって作成されます。
+この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Microsoft Purview コンプライアンス ポータルの電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースに関連付けられているすべての保留に関する情報を含むレポートを生成できます。 レポートには、保留が関連付けられているケースの名前、保留に配置されるコンテンツの場所、ホールドがクエリ ベースかどうかなどの情報が含まれています。 保留がない場合は、保留のないケースの一覧を含む追加のレポートがスクリプトによって作成されます。
 
 レポートに含まれる情報の詳細については、「 [詳細情報](#more-information) 」セクションを参照してください。
 
@@ -203,7 +203,7 @@ Security & Compliance Center PowerShell に接続したら、次の手順では�
 
 - 保留リストの名前と、保留リストが関連付けられている電子情報開示ケースの名前。
 
-- 保留が Core ケースまたは電子情報開示 (プレミアム) ケースに関連付けられているかどうか。
+- 保留が電子情報開示 (Standard) または電子情報開示 (プレミアム) ケースに関連付けられているかどうか。
 
 - 電子情報開示ケースがアクティブかクローズか。
 

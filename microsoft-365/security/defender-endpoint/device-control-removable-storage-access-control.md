@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 04/11/2022
-ms.openlocfilehash: b176f7a89c46e016f7eb25cdf4cd6b0d6beb3966
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.date: 05/09/2022
+ms.openlocfilehash: a472a2183d642ca8c3231e6ca5129fdf79cad8fd
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130607"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317628"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint デバイス コントロールリムーバブル Storage Access Control
 
@@ -38,10 +38,10 @@ Microsoft Defender for Endpoint Device Control リムーバブル Storage Access
 |---|---|
 |Access|読み取り、書き込み、実行|
 |アクション モード|監査、許可、禁止|
-|CSP サポート|はい|
-|GPO のサポート|はい|
-|ユーザー ベースのサポート|はい|
-|マシンベースのサポート|はい|
+|CSP サポート|必要|
+|GPO のサポート|必要|
+|ユーザー ベースのサポート|必要|
+|マシンベースのサポート|必要|
 
 |機能|説明|Intuneを使用してデプロイする|グループ ポリシーを使用してデプロイする|
 |---|---|---|---|
@@ -267,7 +267,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
 5. ファイルのコピーの場所を設定します。書き込みアクセスが行われるときにファイルのコピーを作成する場合は、システムがコピーを保存できる場所を設定する必要があります。
 
-    - OMA-URI: `./Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation;**username**;**password**`
+    - OMA-URI: './Vendor/MSFT/Defender/Configuration/DataDuplicationRemoteLocation
 
     - データ型 : String
 

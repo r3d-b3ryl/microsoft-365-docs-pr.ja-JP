@@ -19,12 +19,12 @@ description: 管理者は、フィッシングを防ぐために、Exchange Onli
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92b7072e3127da71f423648c83fc94c17bed7caa
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c8b9fb5c9e2b67a656948684838b61b4a9c33a8d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131066"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319552"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>EOP が From アドレスを検証してフィッシングを防ぐ方法
 
@@ -118,7 +118,7 @@ From アドレスは、複数の RFC (RFC 5322 セクション 3.2.3、3.4、3.4
 
 - このドメインの NULL MX レコードは、1 つの期間で構成されます。
 
-例:
+次に例を示します。
 
 ```text
 noreply.contoso.com IN MX .
@@ -136,4 +136,4 @@ Microsoft 365から送信する送信メールの差出人アドレス要件を�
 
 ## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Microsoft 365のサイバー犯罪を防止および保護するその他の方法
 
-フィッシング、スパム、データ侵害、その他の脅威から組織を強化する方法の詳細については、「[ビジネス プランのMicrosoft 365をセキュリティで保護する上位 10 の方法](../../admin/security-and-compliance/secure-your-business-data.md)」を参照してください。
+フィッシング、スパム、データ侵害、その他の脅威に対して組織を強化する方法の詳細については、「[ビジネス プランのMicrosoft 365をセキュリティで保護するためのベスト プラクティス](../../admin/security-and-compliance/secure-your-business-data.md)」を参照してください。

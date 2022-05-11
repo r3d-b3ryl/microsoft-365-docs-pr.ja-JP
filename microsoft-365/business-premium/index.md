@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 Business Premiumを使用して中小企業にサイバーセキュリティを実装する方法について説明します。 サイバーセキュリティの機能と機能は、サイバー攻撃やセキュリティ侵害を防ぐために最適化され、高度なサイバー防御を使用してデータ、デバイス、情報を保護するのに役立ちます。
-ms.openlocfilehash: ac152ca67e7bdf62931b64e008669ca60b0a8031
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d6ffd452e04c755fd60fcf7cad0d228005c5510
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100040"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320096"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>小規模ビジネス向けのサイバーセキュリティのMicrosoft 365 Business Premium &mdash;
 
@@ -52,7 +52,7 @@ ms.locfileid: "65100040"
 
 ## <a name="cybersecurity-playbook"></a>サイバーセキュリティプレイブック
 
-これらのミッションのガイダンスは、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
+これらのミッションのガイダンスは、信頼ゼロの手法に基づいており、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
 
 インフォグラフィックをクリックして、より大きなバージョンを表示するか、 [サイバーセキュリティプレイブックのポスターのコピーをダウンロードします](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
 
@@ -85,7 +85,7 @@ ms.locfileid: "65100040"
 
 ## <a name="cybersecurity-playbook"></a>サイバーセキュリティプレイブック
 
-これらのミッションのガイダンスは、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
+これらのミッションのガイダンスは、信頼ゼロの手法に基づいており、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
 
 インフォグラフィックをクリックして、より大きなバージョンを表示するか、 [サイバーセキュリティプレイブックのポスターのコピーをダウンロードします](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
 
@@ -114,7 +114,7 @@ ms.locfileid: "65100040"
 
 ## <a name="cybersecurity-playbook"></a>サイバーセキュリティプレイブック
 
-これらのミッションのガイダンスは、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
+これらのミッションのガイダンスは、信頼ゼロの手法に基づいており、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
 
 インフォグラフィックをクリックして、より大きなバージョンを表示するか、 [サイバーセキュリティプレイブックのポスターのコピーをダウンロードします](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
 

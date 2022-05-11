@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 組織に Microsoft Purview の情報保護を展開するための規範的なガイダンス。
-ms.openlocfilehash: 28d0af5bba237a9f2d120f67eb1e79dd74a69f2a
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d672e113e4f1bdaca155881afba6262878d0ecb3
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65284916"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294758"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Microsoft Purview を使用して情報保護ソリューションを展開する
 
@@ -43,7 +43,7 @@ Microsoft Purview の情報保護を使用すれば、機密情報がどこに�
 
 次の Ignite セッションを見て、これらの機能がどのように相互にサポートされ、構築されているかをご覧ください。[Microsoft の情報保護を使ってデータを把握し、データを保護し、データ損失を防ぎます](https://myignite.microsoft.com/archives/IG20-OD273)。
 
-データの管理については、「[Microsoft Purview を使用してデータを管理する](manage-Information-governance.md)」を参照してください。
+データ ガバナンスについては、「[Microsoft Purview を使用してデータ ガバナンス ソリューションを展開する](data-governance-solution.md)」を参照してください。
 
 ## <a name="licensing"></a>ライセンス
 
