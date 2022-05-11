@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Microsoft Purview Information Protection 機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: 97f5172479d889ec1914cfc46102a58a83165269
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b055e71ee6c22cc9804b82a36f339a73675ce914
+ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285480"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "65294649"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Microsoft Purview を使用して機密データを保護する
 
@@ -40,9 +40,9 @@ ms.locfileid: "65285480"
 
 ![Microsoft Purview Information Protection が機密データの検出、分類、および保護にどのように役立つかを示す画像。](../media/powered-by-intelligent-platform.png)
 
-組織に Microsoft Purview 情報保護ソリューションを展開するための規範的なガイダンスについては、「[Microsoft Purview の情報保護ソリューションを展開する](information-protection-solution.md)」を参照してください。
+次のセクションを使用して、使用可能な機能の詳細と、各機能の使用を開始する方法について説明します。 ただし、ガイド付きデプロイを探している場合は、「[Microsoft Purview による情報保護ソリューションの展開](information-protection-solution.md)」を参照してください。
 
-データの管理については、「[Microsoft Purview を使用してデータを管理する](manage-Information-governance.md)」を参照してください。
+コンプライアンス要件または規制要件に関するデータの管理については、「[Microsoft Purview を使用してデータを管理する](manage-data-governance.md)」を参照してください。
 
 ## <a name="know-your-data"></a>データを把握する
 
@@ -60,7 +60,7 @@ ms.locfileid: "65285480"
 
 |機能|解決される問題|作業の開始|
 |:------|:------------|---------------------|
-|[秘密度ラベル](sensitivity-labels.md)| 組織の内外を移動するデータをラベル付けして保護する、アプリ、サービス、デバイスにまたがる単一のソリューションです。 <br /><br /> サンプル シナリオ: <br />- [Office アプリの秘密度ラベルを管理する](sensitivity-labels-office-apps.md) <br />- [ドキュメントと電子メールの暗号化](encryption-sensitivity-labels.md) <br />-  [Power BIでラベルを適用および表示する](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 秘密度ラベルのシナリオの包括的なリストについては、"作業の開始" のドキュメントを参照してください。|[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md) |
+|[秘密度ラベル](sensitivity-labels.md)| 組織の内外を移動するデータを保護する、アプリ、サービス、デバイスにまたがる単一のラベル付けソリューションです。 <br /><br /> サンプル シナリオ: <br />- [Office アプリの秘密度ラベルを管理する](sensitivity-labels-office-apps.md) <br />- [ドキュメントと電子メールの暗号化](encryption-sensitivity-labels.md) <br />-  [Power BIでラベルを適用および表示する](/power-bi/admin/service-security-apply-data-sensitivity-labels) <br /><br /> 秘密度ラベルでサポートされているシナリオの包括的なリストについては、「作業の開始」のドキュメントを参照してください。|[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md) |
 |[Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)| Windows コンピューターの場合、ラベル付けを エクスプローラー と PowerShell に拡張し、必要に応じて Office アプリの追加機能を使用します| [Azure Information Protection 統合ラベル付けクライアント管理者ガイド](/azure/information-protection/rms-client/clientv2-admin-guide)|
 |[二重キー暗号化](double-key-encryption.md)| どのような状況においても、保護されたコンテンツを復号化できるのは自分の組織だけです。また、規制要件により、暗号化キーを地理的な境界内に保持する必要があります。 | [二重キー暗号化の展開](double-key-encryption.md#deploy-dke)|
 |[Office 365 Message Encryption (OME)](ome.md)| メール メッセージと添付ドキュメントはいずれのデバイス上のいずれのユーザーに送信される場合も暗号化されるため、承認された受信者のみがメールの情報を読むことができます。 <br /><br />  サンプル シナリオ: [Advanced Message Encryption を使用して暗号化されたメールを無効にする](revoke-ome-encrypted-mail.md) | [新しい Message Encryption 機能を設定する](set-up-new-message-encryption-capabilities.md)|

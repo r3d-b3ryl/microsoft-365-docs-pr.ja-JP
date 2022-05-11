@@ -1,5 +1,5 @@
 ---
-title: SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
+title: SharePoint または OneDrive でレコードのバージョン管理を使用する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,21 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 7fc4f9bb14e9e49c7894e864b8ff9e8f4337149a
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 9515622af6a6ddb5abe28d6fb920eed72f487f41
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64835889"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285064"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 > [!NOTE]
 > 規制レコードは編集をブロックしているため、規制レコードのレコードのバージョン管理は利用できません。
 >
-> 規制レコードを使用していない場合でも、テナントのレコードのバージョン管理を防止することもできます。Microsoft 365 コンプライアンス センター > **[レコード管理設定]** > **[保持ラベル]** > **[レコード バージョン管理の設定]** の **レコード管理** ノードに移動し、**[レコードのバージョン管理を有効にする]** の設定をオフにします。
+> 規制レコードを使用していない場合でも、テナントのレコードのバージョン管理を防止することもできます。Microsoft Purview コンプライアンス ポータル > **[レコード管理設定]** > **[保持ラベル]** > **[レコード バージョン管理の設定]** の **レコード管理** に移動し、**[レコードのバージョン管理を有効にする]** の設定をオフにします。
 
 ドキュメントを[[レコード]](records-management.md#records) としてマークし、レコードに対して実行できるアクションを制限する機能は、レコード管理ソリューションにとって不可欠な目標です。ただし、ユーザーが後続のバージョンを作成するためにコラボレーションが必要になる場合もあります。
 

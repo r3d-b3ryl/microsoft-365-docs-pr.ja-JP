@@ -1,5 +1,5 @@
 ---
-title: Microsoft Information Protection の既定のラベルとポリシーについて説明します
+title: データを保護するための既定のラベルとポリシーについて説明します
 f1.keywords:
 - CSH
 ms.author: cabailey
@@ -10,32 +10,34 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
-description: 機密性の高いコンテンツを分類および保護するための Microsoft Information Protection (MIP) の既定のラベルとポリシーについて説明します。
-ms.openlocfilehash: a0634a8f67e28d84334cfadd4be7d9694084af6c
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: 機密性の高いコンテンツを分類および保護するための Microsoft Purview の情報保護の既定のラベルとポリシーについて説明します。
+ms.openlocfilehash: 486286780eaa3a2deedb2c3df837a93814280f39
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938628"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286452"
 ---
-# <a name="default-labels-and-policies-for-microsoft-information-protection"></a>Microsoft Information Protection の既定のラベルとポリシー
+# <a name="default-labels-and-policies-to-protect-your-data"></a>データを保護するための既定のラベルとポリシー
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-対象となるお客様は、Microsoft Information Protection (MIP) の既定のラベルとポリシーをアクティブ化できます。 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+対象となるお客様は、Microsoft Purview の情報保護の既定のラベルとポリシーをアクティブ化できます。 
 
 - 秘密度ラベルと秘密度ラベル ポリシー
 - クライアント側の自動ラベル付け
 - サービス側の自動ラベル付け
 - Teams とデバイスのデータ損失防止 (DLP) ポリシー
 
-これらの既定の構成を使用すると、Microsoft 365 コンプライアンスから Microsoft Information Protection をすばやく起動して実行できます。 これらの変更は、現状通り使用したり、わずかに変更を加えたり、ビジネス要件に合わせて完全にカスタマイズしたりすることができます。 
+これらの既定の構成を使用すると、Microsoft 365 の Microsoft Purview の情報保護をすばやく起動して実行できます。 これらの変更は、現状通り使用したり、わずかに変更を加えたり、ビジネス要件に合わせて完全にカスタマイズしたりすることができます。 
 
-対象となるお客様には、[Microsoft 365 コンプライアンスの無料試用版](compliance-easy-trials.md)をお持ちのお客様と、Microsoft 365 E5 プランを既にお持ちのお客様が含まれます。
+対象となるお客様には、[Microsoft Purview の無料試用版](compliance-easy-trials.md)をお持ちのお客様と、Microsoft 365 E5 プランを既にお持ちのお客様が含まれます。
 
-- **新しいお客様**: Microsoft 365 コンプライアンスをsh得して 30 日未満の場合、テナントは表示されているすべての既定の構成をアクティブ化できます。 これらはいつでも無効、削除、または編集できます。
+- **新しいお客様**: Microsoft Purview を取得して 30 日未満の場合、テナントは表示されているすべての既定の構成をアクティブ化できます。 これらはいつでも無効、削除、または編集できます。
 
-- **既存のお客様**: Microsoft 365 コンプライアンスを取得して 30 日を超えている場合は、同等の構成をまだ構成していない場合は、既定の構成をアクティブ化できます。
+- **既存のお客様**: Microsoft Purview を取得して 30 日を超えている場合は、同等の構成をまだ構成していない場合は、既定の構成をアクティブ化できます。
 
     | 既定の構成| 値 |
     |:-----|:-----|
@@ -49,17 +51,17 @@ ms.locfileid: "61938628"
 
 これらの事前構成済みのラベルとポリシーを取得するには、次の手順を実行します: 
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/)から、**[ソリューション]** > **[Information Protection]** を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から [**ソリューション**]  >  [**Information protection**] を選択します。
     
     このオプションがすぐに表示されない場合は、まずナビゲーション ウィンドウから **[すべて 表示]** を選択します。 
     
-2. Microsoft Information Protection の既定のラベルとポリシーの対象である場合は、次の情報が表示されるので、既定のラベルとポリシーをアクティブ化できます。 例:
+2. Microsoft Purview の情報保護の既定のラベルとポリシーの対象である場合は、次の情報が表示されるので、既定のラベルとポリシーをアクティブ化できます。次に例を示します。
     
-    :::image type="content" alt-text="事前に構成されたラベルとポリシーの Microsoft Information Protection のアクティブ化" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
+    :::image type="content" alt-text="事前に構成されたラベルとポリシーの Microsoft Purview の情報保護のアクティブ化" source="../media/mip-preconfigured.png" lightbox="../media/mip-preconfigured.png":::
     
     ライセンス認証オプションでこの情報が表示されない場合は、現時点では秘密度ラベルと秘密度ポリシーの自動作成をご利用いただけません。 この状態が変更されたか、後でもう一度ご確認ください。または、次の設定情報を使用して手動で同じラベルとポリシーを作成することもできます。
 
-3. 次に、SharePoint と OneDrive の秘密度ラベルを有効にします。 この手順は、Office for the web で秘密度ラベルを使用し、SharePoint と OneDrive の自動ラベル付けポリシーを使用するための前提条件です。
+3. 次に、SharePoint と OneDrive の秘密度ラベルを有効にします。この手順は、Office for the Web で秘密度ラベルを使用し、SharePoint と OneDrive の自動ラベル付けポリシーを使用するための前提条件です。
    
     Information Protection の [**概要**] タブの上部にある次のバナーを使用して、[**今すぐ有効にする**] を選択します。 このバナーが表示されていない場合は、SharePoint と OneDrive の秘密度ラベルがテナントに対して既に有効になっています。
     
@@ -84,7 +86,7 @@ ms.locfileid: "61938628"
 |社外秘 <br /> \ すべての社員|すべての従業員に完全な権限を与える保護を必要とする機密データ。 データ所有者は、コンテンツを追跡したり、取り消したりできます。|このラベルは、[クライアント側の自動 ラベル付け](#client-side-auto-labeling)と[サービス側の自動ラベル付け](#service-side-auto-labeling)で選択されます。<br /><br /> **範囲**: ファイル、メール <br /><br />**暗号化**: 組織のすべてのユーザーとグループ: 共同作成者<br /><br />**コンテンツのマーキング**: フッター: 機密文書<br /><br />**自動ラベル付け**: ユーザーがラベルを適用することをお勧めします <br /><br />**グループ設定**: いいえ<br /><br />**サイト設定**: いいえ <br /><br />**データベース列の自動ラベル付け**: なし |
 |社外秘 <br /> \ 信頼できるユーザー|組織内外の信頼できるユーザーと共有できる機密データ。 これらのユーザーは、必要に応じてデータを再共有できます。|**範囲**: ファイル、メール <br /><br />**暗号化**: ユーザーがアクセス許可を割り当てることを許可します: <br /> - Outlook の暗号化のみ <br />- Word、PowerPoint、Excel でユーザーにメッセージを表示する<br /><br />**コンテンツのマーキング**: フッター: 機密文書<br /><br />**自動ラベル付け**: いいえ <br /><br />**グループ設定**: いいえ<br /><br />**サイト設定**: いいえ <br /><br />**データベース列の自動ラベル付け**: なし|
 |非常に機密性の高い社外秘|権限のないユーザーと共有すると、ビジネスに損害を与える可能性のある非常に機密性の高いビジネス データ。例としては、従業員情報と顧客情報、パスワード、ソース コード、発表前の財務レポートなどがあります。|**範囲**: ファイル、メール <br /><br />**コンテンツマーキング**: 透かし: 極秘<br /><br />**自動ラベル付け**: いいえ <br /><br />**グループ設定**: いいえ<br /><br />**サイト設定**: いいえ <br /><br />**データベース列の自動ラベル付け**: なし|
-|非常に機密性の高い社外秘 <br /> \ すべての社員|すべての従業員がこのコンテンツに対して表示、編集、返信のアクセス許可を与える非常に機密性の高いデータ。 データ所有者は、コンテンツを追跡したり、取り消したりできます。|**範囲**: ファイル、メール <br /><br />**暗号化**: 組織のすべてのユーザーとグループ: 共同作成者<br /><br />**コンテンツのマーキング**: フッター: 高機密<br /><br />**自動ラベル付け**: いいえ <br /><br />**グループ設定**: いいえ<br /><br />**サイト設定**: いいえ <br /><br />**データベース列の自動ラベル付け**: なし|
+|非常に機密性の高い社外秘 <br /> \ すべての社員|すべての従業員がこのコンテンツに対するアクセス許可を表示、編集、返信できるようにする非常に機密性の高いデータ。データ所有者は、コンテンツを追跡および取り消すことができます。|**範囲**: ファイル、メール <br /><br />**暗号化**: 組織のすべてのユーザーとグループ: 共同作成者<br /><br />**コンテンツのマーキング**: フッター: 高機密<br /><br />**自動ラベル付け**: いいえ <br /><br />**グループ設定**: いいえ<br /><br />**サイト設定**: いいえ <br /><br />**データベース列の自動ラベル付け**: なし|
 |非常に機密性の高い社外秘 <br /> \ 特定のユーザー |保護が必要で、指定したユーザーが選択したアクセス許可レベルでのみ表示できる、機密性の高いデータ。|**範囲**: ファイル、メール <br /><br />**暗号化**: ユーザーがアクセス許可を割り当てることを許可します: <br />- Outlook の転送不可 <br />- Word、PowerPoint、Excel でユーザーにメッセージを表示する<br /><br />**コンテンツのマーキング**: フッター: 高機密<br /><br />**自動ラベル付け**: いいえ <br /><br />**グループ設定**: いいえ<br /><br />**サイト設定**: いいえ <br /><br />**データベース列の自動ラベル付け**: なし|
 
 > [!NOTE]
@@ -98,7 +100,7 @@ ms.locfileid: "61938628"
 
 ## <a name="default-sensitivity-label-policy"></a>既定の秘密度ラベル ポリシー
 
-既定の秘密度ラベル ポリシーを使用すると、ユーザーは機密ラベルを使用してドキュメントやメールにラベルを付け始めることができます。 構成は次のとおりです:
+既定の秘密度ラベル ポリシーを使用すると、ユーザーは機密ラベルを使用してドキュメントやメールにラベルを付け始めることができます。次の構成になっています:
 
 - テナント内のすべてのユーザーに既定のラベルを発行
 - ラベル付けされていないドキュメントとメールの **全般** \ **すべての従業員 (無制限)** の既定のラベル
@@ -108,7 +110,7 @@ ms.locfileid: "61938628"
 
 これらの既定のポリシー設定を編集する必要がある場合は、「[ラベル ポリシーを作成して感度ラベルを発行する](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)」を参照してください。
 
-Windows、macOS、iOS、Android の Office アプリに組み込みのラベル付けを使用すると、ユーザーには 4 時間以内に新しいラベルが表示され、Web 上のWord、Excel、PowerPoint の場合は 1 時間以内に新しいラベルがブラウザー更新時に表示されます。 ただし、変更がすべてのアプリとサービスにレプリケートされるには、最大で 24 時間かかります。
+Windows、macOS、iOS、Android の Office アプリにこれらのラベル付けを使用すると、ユーザーには 4 時間以内に新しいラベルが表示されます。web 上のWord、Excel、PowerPoint の場合は更新を行ってから 1 時間以内に新しいラベルが表示されます。ただし、変更がすべてのアプリとサービスに複製されるまでに最大 24 時間かかる場合があります。
 
 ## <a name="client-side-auto-labeling"></a>クライアント側の自動ラベル付け
 
@@ -150,7 +152,7 @@ Windows、macOS、iOS、Android の Office アプリに組み込みのラベル�
 
 Teams の既定の DLP ポリシーは、すべての Teams チャットとチャネル メッセージにクレジット カード番号が存在するかどうかを検出します。 この機密情報が検出されると、管理者は重要度の低いアラート通知を受け取ります。
 
-このポリシーは、ユーザーから見ると目立たず、ポリシー ヒントが表示されるわけでもなければメッセージがブロックされるわけでもありませんが、管理者はこれらのメッセージで共有されている機密情報のレコードを保持することになります。 必要に応じて、設定を編集して、この既定の構成を変更できます。
+このポリシーは、ユーザーから見ると目立たず、ポリシー ヒントが表示されるわけでもなければメッセージがブロックされるわけでもありませんが、管理者はこれらのメッセージで共有されている機密情報のレコードを保持することになります。必要に応じて、設定を編集して、この既定の構成を変更できます。
 
 このポリシーの結果を表示するには、[DLP アクティビティ エクスプローラー](dlp-learn-about-dlp.md#dlp-activity-explorer)を使用します。
 
@@ -158,7 +160,7 @@ DLP ポリシーを編集する場合は、「[DLP ポリシーの作成、テ�
 
 ## <a name="dlp-for-devices"></a>デバイス用の DLP
 
-デバイスの既定の DLP ポリシーは、Microsoft 365 コンプライアンス センターにオンボードされている Windows 10 デバイスにクレジット カード番号が存在することを検出します。 次に、以下のアクションを監査 (ブロックしない) します: 
+デバイスの既定の DLP ポリシーは、Microsoft Purview にオンボードされている Windows 10 デバイスにクレジット カード番号が存在することを検出します。次に、以下のアクションを監査 (ブロックしない) します: 
 
 - クラウド サービス ドメインへのアップロードまたは許可されていないブラウザーによるアクセス
 
@@ -182,8 +184,8 @@ DLP ポリシーを編集する場合は、「[DLP ポリシーの作成、テ�
 
 ## <a name="additional-resources"></a>その他のリソース
 
-秘密度ラベル、データ損失防止、および Microsoft Information Protection で使用できるすべての機能の詳細については、次のリソースを参照してください:
+秘密度ラベル、データ損失防止、および Microsoft Purview の情報保護で使用できるすべての機能の詳細については、次のリソースを参照してください:
 
 - [機密ラベルについて詳しく見る](sensitivity-labels.md)
 - [データ損失防止について](dlp-learn-about-dlp.md)
-- [Microsoft 365 の Microsoft Information Protection](information-protection.md)
+- [Microsoft Purview を使用してデータを保護する](information-protection.md)

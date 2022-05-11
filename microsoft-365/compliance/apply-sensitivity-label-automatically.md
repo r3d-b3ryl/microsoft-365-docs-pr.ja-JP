@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 で秘密度ラベルをコンテンツに自動的に適用する
+title: 秘密度ラベルを Microsoft 365 に自動的に適用する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,19 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 21ee443ba9bab0ac7071377befee5d6e6143a398
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634627"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287224"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-> [!NOTE]
-> Azure Purview で秘密度ラベルを自動的に適用する方法については、「[Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label)」を参照してください。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+> [!TIP]
+> データ マップで秘密度ラベルを自動的に適用する方法については、「[Microsoft Purview データ マップでのラベル付け](/azure/purview/create-sensitivity-label)」を参照してください。
 
 秘密度ラベルを作成する場合、指定した条件に一致したときに、そのラベルをファイルやメールに自動的に割り当てることができます。
 
@@ -70,9 +72,9 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
     Exchange の自動ラベル付けに固有:
     
     - 手動でのラベル付けや Office アプリを使用した自動ラベル付けとは異なり、PDF の添付ファイルと Office の添付ファイルも自動ラベル付けポリシーで指定した条件に合わせてスキャンされます。一致するものがある場合、メールにはラベルが付けられますが、添付ファイルにはラベルが付けられません。
-        - PDF ファイルの場合、ラベルが暗号化を適用する場合、テナントで[ PDF 添付ファイルが有効になっている場合](ome-faq.yml#are-pdf-file-attachments-supported-)、これらのファイルは[Office 365 Message Encryption (OME)](ome.md)を使用して暗号化されます。
-        - Word、PowerPoint、Excel の Office ファイルがサポートされています。 ラベルが暗号化を適用する場合、[Office 365 Message Encryption (OME)](ome.md) を使用して、暗号化されます。
-    - IRM 暗号化を適用する Exchange メール フロー ルールまたはデータ損失防止 (DLP) ポリシーがある場合: これらのルールやポリシーおよび自動ラベル付けポリシーによってコンテンツが識別されると、ラベルが適用されます。 このラベルが暗号化を適用すると、Exchange メール フロー ルールまたは DLP ポリシーの IRM 設定は無視されます。 ただし、そのラベルが暗号化を適用しない場合、メール フロー ルールまたは DLP ポリシーの IRM 設定がラベルに加えて適用されます。
+        - PDF ファイルの場合、ラベルが暗号化を適用する場合、テナントで [PDF 添付ファイルが有効になっている場合](ome-faq.yml#are-pdf-file-attachments-supported-)、これらのファイルは [Message Encryption](ome.md) を使用して暗号化されます。
+        - Word、PowerPoint、Excel の Office ファイルがサポートされています。 ラベルが暗号化を適用する場合、[Message Encryption](ome.md) を使用して、暗号化されます。
+    - IRM 暗号化を適用する Exchange メール フロー ルールまたは Microsoft Purview データ損失防止 (DLP) ポリシーがある場合: これらのルールやポリシーおよび自動ラベル付けポリシーによってコンテンツが識別されると、ラベルが適用されます。 このラベルが暗号化を適用すると、Exchange メール フロー ルールまたは DLP ポリシーの IRM 設定は無視されます。 ただし、そのラベルが暗号化を適用しない場合、メール フロー ルールまたは DLP ポリシーの IRM 設定がラベルに加えて適用されます。
     - ラベルが表示されない IRM 暗号化を使用しているメールは、自動ラベル付けを使用すると一致する場合は、暗号化設定のあるラベルに置き換えられます。
     - 自動ラベル付け条件と一致すると、受信メールにラベルが付けられます。 このラベルが[暗号化](encryption-sensitivity-labels.md)用に構成されている場合、送信者が組織から送信されると、その暗号化は常に適用されます。 既定では、送信者が組織外の場合、その暗号化は適用されませんが、**電子メールの追加設定** を構成し、Rights Management 所有者を指定することで適用できます。
     - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)は、送信者が自分の組織から送信される際にメールを送信するユーザーです。 送信者が組織外の場合は、ポリシーによってラベル付けおよび暗号化された受信メールの Rights Management 所有者を指定できます。
@@ -98,7 +100,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 |別の組織から送信されたメールに Rights Management 所有者を割り当てる |不要 |はい|
 |メールの場合は、優先度が同じか低い既存のラベルを置き換えます |不要 |はい (構成可能)|
 
-\* 自動ラベル付けは現在バックエンドの Azure 依存関係にあるため、すべての地域でご利用できるわけではありません。 テナントがこの機能をサポートできない場合、**自動ラベル付け** タブはコンプライアンス センターに表示されません。 詳細については、[国別の Azure 依存関係の可用性](/troubleshoot/azure/general/dependency-availability-by-country) を参照してください。
+\* 自動ラベル付けは現在バックエンドの Azure 依存関係にあるため、すべての地域でご利用できるわけではありません。 テナントがこの機能をサポートできない場合、**[自動ラベル付け]** タブは Microsoft Purview コンプライアンス ポータルに表示されません。 詳細については、[国別の Azure 依存関係の可用性](/troubleshoot/azure/general/dependency-availability-by-country) を参照してください。
 
 ## <a name="how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label"></a>複数のラベルに適用するときの複数の条件の評価方法
 
@@ -124,7 +126,7 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
 - 自動ラベル付けは、自動的に適用された[低優先度の秘密度ラベル](sensitivity-labels.md#label-priority-order-matters)を置き換えますが、優先度の高いラベルは置き換えません。
     
     > [!TIP]
-    > たとえば、コンプライアンス センターのリストの上部にある秘密度ラベルには、注文番号 (優先順位) が 0 の **パブリック** という名前が付けられ、リストの下部にある秘密度ラベルは、注文番号 (優先度 4) **高機密** という名前が付けられます。**高機密** ラベルは、**パブリック** ラベルをオーバーライドできますが、その逆はできません。
+    > たとえば、Microsoft Purview コンプライアンス ポータルのリストの上部にある秘密度ラベルには、注文番号 (優先順位) が 0 の **パブリック** という名前が付けられ、リストの下部にある秘密度ラベルは、注文番号 (優先度 4) **高機密** という名前が付けられます。**高機密** ラベルは、**パブリック** ラベルをオーバーライドできますが、その逆はできません。
 
 メールの自動ラベル付けポリシーの場合のみ、適用方法に関係なく、既存の秘密度ラベルを常に上書きする設定を選択できます。
 
@@ -278,7 +280,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
 ### <a name="creating-an-auto-labeling-policy"></a>自動ラベル付けポリシーの作成
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>で、機密ラベルに移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>で、機密ラベルに移動します。
 
     - [**ソリューション**]  >  [**Information Protection**]
 

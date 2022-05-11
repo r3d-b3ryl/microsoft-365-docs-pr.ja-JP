@@ -1,5 +1,5 @@
 ---
-title: 秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
+title: 秘密度ラベルを使用して暗号化を適用する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,16 +16,18 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ec60e573d5c05c4a30e74f235ffae5983de03dc
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 7355ef75eb455ad7442052daf1df814eb9b3bf26
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705410"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285086"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 機密ラベルを作成するときに、そのラベルが適用されるコンテンツへのアクセスを制限できます。たとえば、機密ラベルに対応する暗号化の設定によって、次のようにコンテンツを保護できます。
 
@@ -45,7 +47,7 @@ ms.locfileid: "64705410"
 - **アクセス許可を割り当てます**。これにより、どのユーザーがそのラベルのコンテンツにどのアクセス許可を取得するかを正確に決定します。
 - ラベルをコンテンツに適用するときに、**ユーザーがアクセス許可を割り当てる** ことができます。 このようにして、組織内のユーザーに、共同作業を行って作業を完了するために必要な柔軟性を与えることができます。
 
-暗号化の設定は、Microsoft 365 コンプライアンス センターで[秘密度ラベルを作成](create-sensitivity-labels.md)するときに使用できます。 または以前のポータルであるセキュリティ/コンプライアンス センターを使用することもできます。
+暗号化の設定は、Microsoft Purview コンプライアンス ポータルで[秘密度ラベルを作成する](create-sensitivity-labels.md)ときに使用できます。
 
 ## <a name="understand-how-the-encryption-works"></a>暗号化のしくみを理解する
 
@@ -194,7 +196,7 @@ ms.locfileid: "64705410"
 
 - Azure AD で、特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([以前の Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))。 Microsoft 365 グループは、静的メンバーシップまたは[動的メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を持つことができます。 このグループの種類は Azure AD に同期されていないため、また、メールが有効になっていないセキュリティグループを使用できないため、[Exchange からの動的配布グループ](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) を使用することはできません。
     
-    組織外の複数のユーザーにアクセスを許可する便利な方法として、メールの連絡先を含むグループを指定できますが、現在、この構成には既知の問題があります。 詳細については、「[グループ内のメール連絡先が暗号化されたコンテンツに断続的にアクセスする](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content)」を参照してください。
+    組織外の複数のユーザーにアクセスを許可する便利な方法として、メールの連絡先を含むグループを指定できますが、現在、この構成には既知の問題があります。詳細については、「[グループ内のメール連絡先が暗号化されたコンテンツに断続的にアクセスする](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content)」を参照してください。
 
 - 任意のメール アドレスまたはドメイン。 この組織の任意のドメイン名を入力して、Azure AD を使用する別の組織のすべてのユーザーを指定するには、このオプションを使用します。 **gmail.com**、**hotmail.com**、**outlook.com** などのドメイン名を入力することにより、ソーシャル プロバイダーに対してこのオプションを使用することもできます。
 

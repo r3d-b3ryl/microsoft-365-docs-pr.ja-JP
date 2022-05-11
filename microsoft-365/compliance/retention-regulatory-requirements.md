@@ -1,5 +1,5 @@
 ---
-title: 情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース
+title: データ ライフサイクル管理およびレコード管理の規制要件を満たすために役立つリソース
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -14,19 +14,21 @@ ms.localizationpriority: high
 search.appverid:
 - MOE150
 - MET150
-description: 情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース。
-ms.openlocfilehash: d5f0c2d405d35147a7868635520521134d0ee8f0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: データ ライフサイクル管理およびレコード管理の規制要件を満たすために役立つリソース。
+ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759817"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286430"
 ---
-# <a name="regulatory-requirements-for-information-governance-and-records-management"></a>情報ガバナンスおよびレコード管理の規制要件
+# <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理の規制要件
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-このページのリソースは、Microsoft 365 の情報ガバナンスおよびレコード管理に関する特定の規制要件を満たすのに役立ちます。 このドキュメントの各セクションでは、1 つ以上の関連する規制に重点を置いています。また、各セクションには、概説した要件を満たすのに役立つ、Microsoft 365 を構成する方法に関する既存のガイダンスまたはサードパーティの評価が含まれています。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+このページのリソースは、Microsoft 365 のデータ ライフサイクル管理およびレコード管理に関する特定の規制要件を満たすのに役立ちます。 このドキュメントの各セクションでは、1 つ以上の関連する規制に重点を置いています。また、各セクションには、概説した要件を満たすのに役立つ、Microsoft 365 を構成する方法に関する既存のガイダンスまたはサードパーティの評価が含まれています。
 
 これらのリソースは、Service Trust Portal の「[データ保護のリソース、FAQ、およびホワイトペーパー](https://servicetrust.microsoft.com/ViewPage/TrustDocuments)」ページからダウンロードできます。
 

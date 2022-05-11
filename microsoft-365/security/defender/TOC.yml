@@ -328,6 +328,10 @@
               href: microsoft-threat-experts.md
             - name: Microsoft 脅威エキスパートの機能を構成および管理する
               href: configure-microsoft-threat-experts.md
+        - name: 追求のために Microsoft Defender エキスパートと共同作業する
+          items:
+            - name: 概要
+              href: defenderexpertsforhuntingprev.md
     - name: セキュリティ運用ガイド
       items:
         - name: 概要

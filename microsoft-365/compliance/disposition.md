@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: dbc713c665367bb973fb8faded24015ad6c2d5c3
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: c8a9db05367dd7007ad164bbfe95e4a190253f85
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64594820"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285130"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-Microsoft 365 コンプライアンス センターの **レコード管理** の [**処理**] タブを使用して、処理確認を管理し、保持期間の終了時に自動的に削除された [レコード](records-management.md#records)のメタデータを表示します。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview コンプライアンス ポータルの **レコード管理** の **[処理]** ページを使用して、処理確認を管理し、保持期間の終了時に自動的に削除された [レコード](records-management.md#records)のメタデータを表示します。
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>コンテンツの処理を表示するための前提条件
 
@@ -36,31 +38,31 @@ Microsoft 365 コンプライアンス センターの **レコード管理** �
 
 ### <a name="permissions-for-disposition"></a>処理のアクセス許可
 
-Microsoft 365 コンプライアンス センターの [**処理**] タブに正常にアクセスするには、ユーザーは **処理管理** の役割を持っている必要があります。 2020 年 12 月より、この役割は、**レコード管理** の既定の管理者の役割グループに含まれるようになりました。
+Microsoft Purview コンプライアンス ポータルの **[処理]** タブに正常にアクセスするには、ユーザーは **処理管理** の役割を持っている必要があります。 2020 年 12 月より、この役割は、**レコード管理** の既定の管理者の役割グループに含まれるようになりました。
 
 > [!NOTE]
 > 既定で、グローバル管理者には **処理管理** の役割は付与されません。 
 
 ユーザーに、保持およびレコード管理用の他の機能を表示および構成するためのアクセス許可を付与せずに、処理確認に必要なアクセス許可のみを付与するには、カスタムの役割グループ (たとえば、"処理確認" という名前) を作成して、このグループに **処理管理** の役割を付与します。
 
-ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft 365 コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
+ユーザーを既定の役割に追加する手順、または独自の役割グループを作成する手順については、「[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md)」を参照してください。
 
 さらに:
 
-- さらに、処理プロセス中にアイテムの内容を表示するには、**[コンテンツ エクスプローラーのコンテンツ閲覧者]** の役割グループにユーザーを追加します。ユーザーがこれらの役割グループのアクセス許可を持っていない場合でも、処理確認操作を選択して処理確認を完了することができますが、コンプライアンス センターのプレビュー ウィンドウからアイテムのコンテンツを表示することはできません。
+- さらに、処理プロセス中にアイテムの内容を表示するには、**コンテンツ エクスプローラーのコンテンツ閲覧者** の役割グループにユーザーを追加します。 ユーザーがこれらの役割グループのアクセス許可を持っていない場合でも、処理確認操作を選択して処理確認を完了することができますが、Microsoft Purview コンプライアンス ポータルのプレビュー ウィンドウからアイテムのコンテンツを表示することはできません。
 
 - 既定では、**[処理]** ページにアクセスするユーザーには、自分に確認が割り当てられているアイテムだけが表示されます。レコード管理者がすべてのユーザーに割り当てられているすべてのアイテム、また処理確認で構成されているすべての保持ラベルを表示するためには、**[レコード管理の設定]** > **[処理]** に移動し、管理者アカウントを含むメールが有効化されたセキュリティ グループを選択して有効にします。
     
     メールが有効になっていない Microsoft 365 グループとセキュリティ グループは、この機能をサポートしていないので、選択対象のリストには表示されません。 メールが有効な新しいセキュリティ グループを作成する必要がある場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>へのリンクを使用して新しいグループを作成します。 
     
     > [!IMPORTANT]
-    > グループの有効化後は、コンプライアンス センターでは変更できません。 PowerShell を使用して別のグループを有効にする方法については、次のセクションを参照してください。
+    > グループの有効化後は、Microsoft Purview コンプライアンス ポータルでは変更できません。 PowerShell を使用して別のグループを有効にする方法については、次のセクションを参照してください。
 
 - **[レコード管理の設定]** オプションは、レコード管理者にのみ表示されます。 
 
 #### <a name="enabling-another-security-group-for-disposition"></a>別のセキュリティ グループの処理を可能にする
 
-Microsoft 365 コンプライアンス センターの **[レコード管理の設定]** で処理用のセキュリティ グループを有効にした後は、そのグループのこのアクセス許可を無効にしたり、コンプライアンス センターで選択したグループを置き換えたりすることはできません。はできません。ただし、[Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) コマンドレットを使用して、別のメールが有効なセキュリティ グループを有効にすることができます。
+Microsoft Purview コンプライアンス ポータルの **[レコード管理の設定]** で処理用のセキュリティ グループを有効にした後は、そのグループのこのアクセス許可を無効にしたり、Microsoft Purview コンプライアンス ポータルで選択したグループを置き換えたりすることはできません。 ただし、別のメールが有効なセキュリティ グループを有効にするには、 [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) コマンドレット を使います。
 
 次に例を示します。 
 
@@ -70,7 +72,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 ### <a name="enable-auditing"></a>監査を有効にする
 
-最初の処理操作の少なくとも 1 日前に、監査が有効になっていることを確認してください。 詳細については、「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」を参照してください。 
+最初の処理操作の少なくとも 1 日前に、監査が有効になっていることを確認してください。 詳細については、「[Microsoft Purview コンプライアンス ポータルで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」を参照します。 
 
 ## <a name="disposition-reviews"></a>処理確認
 
@@ -86,7 +88,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 レビュー担当者が受け取る通知メールは、別の言語の手順も含めてカスタマイズできます。 複数言語のサポートを利用するには、翻訳を自分で指定する必要があります。このカスタム テキストは、ロケールに関係なく、すべての確認担当者に表示されます。
 
-ユーザーは、アイテムの保持期間の最後に、ラベルごとに最初のメール通知を受け取ります。ラベルごとのリマインダーは、自分に割り当てられているすべての処理確認について、週に 1 回行われます。 通知メールとリマインダー メール内のリンクをクリックして、Microsoft 365 コンプライアンス センターの **[レコード管理]** > **[処理]** ページに直接移動し、コンテンツを確認して対処します。 あるいは、確認担当者はコンプライアンス センターのこの **[処理]** ページに移動できます。 その後で以下の手順に従います。
+ユーザーは、アイテムの保持期間の最後に、ラベルごとに最初のメール通知を受け取ります。ラベルごとのリマインダーは、自分に割り当てられているすべての処理確認について、週に 1 回行われます。 通知メールとリマインダー メール内のリンクをクリックして、Microsoft Purview コンプライアンス ポータルの **[レコード管理]** > **[処理]** ページに直接移動し、コンテンツを確認して対処します。 あるいは、確認担当者は Microsoft Purview コンプライアンス ポータルのこの **[処理]** ページに移動できます。 その後で以下の手順に従います。
 
 - 確認担当者には、自分に割り当てられている処理確認だけが表示されます。一方、選択したレコード マネージャー向けのセキュリティ グループに追加された管理者には、すべての処理確認が表示されます。
 
@@ -107,7 +109,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 **[すべての保留中の処理を表示]** を選択すると、**[処理]** ページが表示されます。次に例を示します。
 
-![Microsoft 365 コンプライアンス センターの [処理] ページ。](../media/disposition-tab.png)
+![Microsoft Purview コンプライアンス ポータルの [処理] ページ。](../media/disposition-tab.png)
 
 
 ### <a name="workflow-for-a-disposition-review"></a>処理確認の流れ
@@ -155,7 +157,7 @@ Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionrevi
 
 最初の通知とその後のリマインダーのために処理確認者に送るメールをカスタマイズすることができます。
 
-コンプライアンス センターの [レコード管理] ページから、**[レコード管理の設定]** を選びます。  
+Microsoft Purview コンプライアンス ポータルの [レコード管理] ページから、**[レコード管理の設定]** を選びます。  
 
 ![レコード管理の設定。](../media/record-management-settings.png)
 
@@ -173,7 +175,7 @@ If you need additional information, visit the helpdesk website (https://support.
 
 ### <a name="viewing-and-disposing-of-content"></a>コンテンツの表示と処理
 
-確認担当者は、コンテンツを確認する準備ができたことをメールで通知されると、メールのリンクをクリックして、Microsoft365 コンプライアンス センターの **レコード管理** から [**処理**] に直接アクセスすることができます。 そこで、確認担当者は、**Type** で **保留中の処理** を表示して、保持ラベルごとに処理待ちのアイテムの数を表示することができます。 そこで、保持ラベルを選択し、[**新しいウィンドウで開く**] を選んで、そのラベルのコンテンツをすべて表示します。
+確認担当者は、コンテンツを確認する準備ができたことをメールで通知されると、メールのリンクをクリックして、Microsoft Purview コンプライアンス ポータルの **レコード管理** から **[処理]** ページに直接アクセスすることができます。 そこで、確認担当者は、**Type** で **保留中の処理** を表示して、保持ラベルごとに処理待ちのアイテムの数を表示することができます。 そこで、保持ラベルを選択し、[**新しいウィンドウで開く**] を選んで、そのラベルのコンテンツをすべて表示します。
 
 ![処理確認用の新しいウィンドウで開きます。](../media/open-in-new-window.png)
 

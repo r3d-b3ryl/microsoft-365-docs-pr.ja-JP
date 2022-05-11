@@ -1,5 +1,5 @@
 ---
-title: Microsoft の情報保護ソリューションの展開
+title: Microsoft Purview を使用して情報保護ソリューションを展開する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,41 +17,43 @@ ms.collection:
 - m365solution-overview
 - m365solution-mip
 - m365initiative-compliance
-description: 組織に Microsoft の情報保護 (MIP) を展開するための規範的なガイダンス。
-ms.openlocfilehash: d70f7356909b0aa0ec663a641e1bc76926db72f0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 組織に Microsoft Purview の情報保護を展開するための規範的なガイダンス。
+ms.openlocfilehash: 28d0af5bba237a9f2d120f67eb1e79dd74a69f2a
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328185"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65284916"
 ---
-# <a name="deploy-a-microsoft-information-protection-solution"></a>Microsoft の情報保護ソリューションの展開
+# <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Microsoft Purview を使用して情報保護ソリューションを展開する
 
 >*[Microsoft 365 セキュリティとコンプライアンスのライセンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 情報保護戦略は、ビジネス ニーズによって推進されます。 規制、法律、およびビジネス プラクティスに準拠する必要のある組織が多くあります。 さらに、組織は、特定のプロジェクトのデータなど、独自の情報を保護する必要があります。
 
-Microsoft の情報保護 (MIP) には、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能が用意されています。 
+Microsoft Purview の情報保護 (以前の Microsoft の情報保護) には、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能が用意されています。 
 
-## <a name="microsoft-information-protection-framework"></a>Microsoft の情報保護 (MIP) SDK
+## <a name="microsoft-purview-information-protection-framework"></a>Microsoft Purview の情報保護フレームワーク
 
-Microsoft の情報保護 (MIP) を使用すれば、機密情報がどこに保存されていても、どこに移動されても、それらの情報の検出、分類、保護が可能になります。
+Microsoft Purview の情報保護を使用すれば、機密情報がどこに保存されていても、どこに移動されても、それらの情報の検出、分類、保護が可能になります。
 
-![MIP ソリューションの概要](../media/mip-solution-overview-extended.png)
+![Microsoft Purview の情報保護ソリューションの概要](../media/mip-solution-overview-extended.png)
 
 次の Ignite セッションを見て、これらの機能がどのように相互にサポートされ、構築されているかをご覧ください。[Microsoft の情報保護を使ってデータを把握し、データを保護し、データ損失を防ぎます](https://myignite.microsoft.com/archives/IG20-OD273)。
 
-データの管理については、「[Microsoft 365 の Microsoft 情報ガバナンス](manage-Information-governance.md)」を参照してください。
+データの管理については、「[Microsoft Purview を使用してデータを管理する](manage-Information-governance.md)」を参照してください。
 
 ## <a name="licensing"></a>ライセンス
 
-MIP 機能は、Microsoft 365 コンプライアンスに含まれています。 ライセンス要件は、構成オプションによって機能内であっても異なる場合があります。 ライセンスの要件とオプションを特定するには、[Microsoft 365 のセキュリティとコンプライアンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+Microsoft Purview の情報保護機能は、Microsoft Purview に含まれています。 ライセンス要件は、構成オプションによって機能内であっても異なる場合があります。 ライセンスの要件とオプションを特定するには、[Microsoft 365 のセキュリティとコンプライアンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="know-your-data"></a>データを把握する
 
-![MIP ソリューションのデータを把握する](../media/knowyourdata-mipsolution.png)
+![Microsoft Purview の情報保護ソリューションの概要に関するデータを把握する](../media/knowyourdata-mipsolution.png)
 
-機密性の高いデータが存在する場所を把握することは、多くの組織にとって最大の課題です。 MIP データ分類は、組織の作成する増え続けるデータを検出し、正確に分類するのに役立ちます。 グラフィカル表現は、このデータに関する分析情報を得るのに役立ちます。これにより、ポリシーを設定および監視して保護および管理できます。
+機密性の高いデータが存在する場所を把握することは、多くの組織にとって最大の課題です。 Microsoft Purview の情報保護データ分類は、組織の作成する増え続けるデータを検出し、正確に分類するのに役立ちます。 グラフィカル表現は、このデータに関する分析情報を得るのに役立ちます。これにより、ポリシーを設定および監視して保護および管理できます。
 
 
 |手順|説明|詳細情報|
@@ -62,7 +64,7 @@ MIP 機能は、Microsoft 365 コンプライアンスに含まれています�
 
 ## <a name="protect-your-data"></a>データを保護する
 
-![MIP ソリューションのデータ保護の概要](../media/protect-mipsolution.png)
+![Microsoft Purview の情報保護ソリューションの概要に関するデータを保護する](../media/protect-mipsolution.png)
 
 機密データの場所を把握する情報を使用して、より効率的に保護します。 ただし、待機する必要はありません。手動、既定、自動のラベル付けを組み合わせてすぐにデータの保護を開始できます。 次に、前のセクションの[コンテンツ エクスプローラー](data-classification-content-explorer.md)と[アクティビティ エクスプローラー](data-classification-activity-explorer.md)を使用して、ラベル付けされる項目とラベルの使用方法を確認します。
 
@@ -72,21 +74,21 @@ MIP 機能は、Microsoft 365 コンプライアンスに含まれています�
 | 2|Microsoft 365 Apps とサービスのアイテムにラベルを付け、保護します。 <br /><br />秘密度ラベルは、Microsoft 365 Word、Excel、PowerPoint、Outlook、および SharePoint サイトと OneDrive サイト、およびMicrosoft 365 グループを含むコンテナーでサポートされています。 手動ラベル付け、自動ラベル付け、既定のラベル付け、必須ラベル付けなどのラベル付け方法の組み合わせを使用します。| [Office アプリの秘密度ラベルを管理する](sensitivity-labels-office-apps.md) <br /><br /> [SharePoint および OneDrive で Office ファイルの機密ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md) <br /><br /> [機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする](sensitivity-labels-coauthoring.md) <br /><br /> [秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /><br /> [Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md) <br /><br /> [秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有リンクを設定する](sensitivity-labels-default-sharing-link.md) <br /><br /> [Microsoft SharePoint Syntex のモデルに秘密度ラベルを適用する](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model) <br /><br /> [Power BI の秘密度ラベル](/power-bi/admin/service-security-sensitivity-label-overview) |
 |3|秘密度ラベルで [Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security) を使用して、クラウド内のデータ ストアに存在する機密アイテムを検出、ラベル付け、保護します。| [クラウドに保存されている規制対象および機密データを検出、分類、ラベル付け、保護する](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
 |4|[Azure Information Protection 統合ラベル付けスキャナー](/azure/information-protection/deploy-aip-scanner)を秘密度ラベルと共に展開することで、オンプレミスのデータ ストアに存在する機密アイテムを検出、ラベル付け、保護します。| [Azure Information Protection 統合ラベル付けスキャナーの構成とインストール](/azure/information-protection/deploy-aip-scanner-configure-install)|
-|5|[Azure Purview](/azure/purview/overview) を使用して機密ラベルを Azure に拡張し、Azure Blob Storage、Azure ファイル、Azure Data Lake Storage Gen1、Azure Data Lake Storage Gen12 のアイテムを検出してラベル付けします。 | [Azure Purview でのラベル付け](/azure/purview/create-sensitivity-label)|
+|5|[Microsoft Purview データ マップ](/azure/purview/overview)を使用して機密ラベルを Azure に拡張し、Azure Blob Storage、Azure ファイル、Azure Data Lake Storage Gen1、Azure Data Lake Storage Gen12 のアイテムを検出してラベル付けします。 | [Microsoft Purview データ マップでのラベル付け](/azure/purview/create-sensitivity-label)|
 
 基幹業務アプリまたはサードパーティの SaaS アプリに秘密度ラベルを拡張しようとしている開発者は、「[Microsoft の情報保護 (MIP) SDK のセットアップと構成](/information-protection/develop/setup-configure-mip)」を参照してください。 
 
 ### <a name="additional-protection-capabilities"></a>追加の保護機能
 
-Microsoft 365 には、データを保護するための次の機能が含まれています。 すべてのお客様にとってこれらの機能が必要というわけではありません。また、一部のものは最新のリリースに置き換えられる可能性があります。
+Microsoft Purview には、データを保護するための次の機能が含まれています。 すべてのお客様にとってこれらの機能が必要というわけではありません。また、一部のものは最新のリリースに置き換えられる可能性があります。
 
-保護機能の完全なリストについては、「[Microsoft 365 の Microsoft の情報保護](information-protection.md)」のページをご利用ください。
+保護機能の完全なリストについては、「[Microsoft Purview でデータを保護する](information-protection.md)」ページを使用してください。
 
 ## <a name="prevent-data-loss"></a>データの損失を防止する
 
-![MIP ソリューションのデータ損失の防止の概要](../media/dlp-mipsolution.png)
+![Microsoft Purview の情報保護ソリューションのデータ損失の防止の概要](../media/dlp-mipsolution.png)
 
-データ損失防止 (DLP) ポリシーを展開して、アプリやサービス間での機密データの不適切な共有、転送、または使用を管理および防止します。 これらのポリシーは、ユーザーが機密データを使用しているときに適切な意思決定を行い、適切なアクションを実行するのに役立ちます。
+Microsoft Purview データ損失防止 (DLP) ポリシーを展開して、アプリやサービス間での機密データの不適切な共有、転送、または使用を管理および防止します。 これらのポリシーは、ユーザーが機密データを使用しているときに適切な意思決定を行い、適切なアクションを実行するのに役立ちます。
 
 |手順|説明|詳細情報|
 |:---|:----------|:---------------|

@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: ad5fb2ef567525fa021acb0388ebc5cc98b1148c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 65a3c2088974398abb6ddbeb205cfb66541629e2
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63313301"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285108"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンテンツを保持する際、保持期間は多くの場合、コンテンツの経過日数に基づいています。たとえば、ドキュメントを作成してから 7 年間保持をし、それから削除することができます。ただし、[保持ラベル](retention.md#retention-labels) を構成することで、特定の種類のイベントの発生を保持期間の基準として設定することもできます。イベントによって保持期間の開始がトリガーされ、その種類のイベントに保持ラベルが適用されているすべてのコンテンツに、ラベルの保持アクションが適用されます。
   
@@ -89,7 +91,7 @@ ms.locfileid: "63313301"
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>手順 1: 保持期間がイベントに基づくラベルを作成する
 
-保持ラベルを作成して構成するには、「[レコード管理用の保持ラベルを作成する](file-plan-manager.md#create-retention-labels)」または「[情報ガバナンス用の保持ラベルを作成する方法](create-retention-labels-information-governance.md)」の手順を参照してください。 ただし、イベント ベースの保持に固有の保持ラベルを作成する場合は、**[保持設定の定義]** ページで、**[以下に基づき保持期間を開始する]** を選択し、ドロップダウンリストから既定のイベントの種類のいずれかを選択するか、**[新しいイベントの種類の作成]** を選択して独自のイベントを作成します:
+保持ラベルを作成して構成するには、「[レコード管理用の保持ラベルを作成する](file-plan-manager.md#create-retention-labels)」または「[データ ライフサイクル管理用の保持ラベルを作成する方法](create-retention-labels-data-lifecycle-management.md)」の手順を参照してください。 ただし、イベント ベースの保持に固有の保持ラベルを作成する場合は、**[保持設定の定義]** ページで、**[以下に基づき保持期間を開始する]** を選択し、ドロップダウンリストから既定のイベントの種類のいずれかを選択するか、**[新しいイベントの種類の作成]** を選択して独自のイベントを作成します:
 
 ![保持ラベルの新しいイベントの種類を作成します。](../media/SPRetention6.png)
 
@@ -139,7 +141,7 @@ ms.locfileid: "63313301"
   
 ### <a name="step-5-create-an-event"></a>手順 5: イベントを作成する
 
-製品が寿命に到達するなど、イベントの種類に関する特定のインスタンスが発生するときは、Microsoft 365 コンプライアンス センターで **[レコード管理]** > **[イベント]** ページに移動して **[+ 作成]** を選択してイベントを作成します。ここで、イベントを作成することによって、そのイベントをトリガーします。
+製品が寿命に到達するなど、イベントの種類に関する特定のインスタンスが発生するときは、Microsoft Purview コンプライアンス ポータルで **[レコード管理]** > **[イベント]** ページに移動して **[+ 作成]** を選択してイベントを作成します。ここで、イベントを作成することによって、そのイベントをトリガーします。
 
 ![イベント ベースの保持ラベルの保持の開始をトリガーするイベントを作成します。](../media/create-event-records-management.png)
 
@@ -220,7 +222,7 @@ https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentio
 
 応答コードを確認します。302 の場合は、応答ヘッダーの Location プロパティからリダイレクトされた URL を取得し、次の手順で `https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent` の代わりにその URL を使用します。
 
-自動作成されたイベントは、Microsoft 365 コンプライアンス センター > **レコード管理** >  **イベント** で表示することで確認できます。
+自動作成されたイベントは、Microsoft Purview コンプライアンス ポータル > **[レコード管理]** >  **[イベント]** で表示することで確認できます。
 
 ### <a name="use-microsoft-power-automate-to-create-the-event"></a>Microsoft Power Automate を使用してイベントを作成する
 

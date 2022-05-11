@@ -1,5 +1,5 @@
 ---
-title: 保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する
+title: 保管ロックを使用して保持ポリシーへの変更を制限する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,16 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベル ポリシーとともに保管ロックを使用して、規制要件を満たし、不正な管理者から保護します。
-ms.openlocfilehash: ac957475474e1d99dff541ac9a208ae5dc681217
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: cf72f0b2eed6328244bf78c9e365447c9f38edeb
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761729"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286014"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > 現在、[ アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention) で保持ロックはサポートされていません。
@@ -91,4 +93,4 @@ Get-RetentionCompliancePolicy -Identity "<Name of Policy>" |Fl
 
 ## <a name="see-also"></a>関連項目
 
-[情報ガバナンスおよびレコード管理の規制要件を満たすために役立つリソース](retention-regulatory-requirements.md)
+[データ ライフサイクル管理およびレコード管理の規制要件を満たすために役立つリソース](retention-regulatory-requirements.md)

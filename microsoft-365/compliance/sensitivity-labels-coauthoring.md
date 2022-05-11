@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 の秘密度ラベルで暗号化されたドキュメントの共同編集を有効にする
+title: 暗号化されたドキュメントの共同編集を有効にする
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -13,16 +13,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 0fee934af5e2dfb01c681c9b2e415ef538312367
-ms.sourcegitcommit: 5eff41a350a01e18d9cdd572c9d8ff99d6c9563a
+ms.openlocfilehash: 72935a58931c1458466f145c17a9e423e6b6d31c
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64836108"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286992"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Office デスクトップ アプリで [共同編集](https://support.office.com/article/ee1509b4-1f6e-401e-b04a-782d26f564a4) をサポートする設定を有効にして、ドキュメントが [秘密度レベル](sensitivity-labels.md) でラベル付け、暗号化されている場合、複数のユーザーがこれらのドキュメントを同時に編集できるようにします。
 
@@ -136,7 +138,7 @@ iOS と Android の共同編集のプレビューを試すには、前のセク�
 
 プレビュー期間中に既にこの設定を有効にしている場合は、それ以上の操作は必要ないので、この手順を省略できます。
 
-1. テナントのグローバル管理者として [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com) にサインインします。
+1. テナントのグローバル管理者として [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com)にサインインします。
 
 2. ナビゲーション ウィンドウで、**[設定]** > **[秘密度ファイルを含むファイルの共同編集]** の順に選択します。
 

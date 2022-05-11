@@ -18,19 +18,21 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: PowerShell を使用して、Microsoft 365 コンプライアンス センターとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
-ms.openlocfilehash: 3f64fc7aede06e512d735908b8f06b7a8cb3e032
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: PowerShell を使用して、Microsoft Purview コンプライアンス ポータルとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
+ms.openlocfilehash: 7d650c87aad92cdb65ed9a40c98c8fc3c94e01fb
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170897"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65287158"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを作成および発行する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-Microsoft 365 のドキュメントやメールを保持または削除するために[保持ラベル](retention.md)を使用することを決定した後で、非常に多くの、時には数百個もの保持ラベルを作成して発行することが必要であることが判明する場合があります。 大量に保持ラベルを作成する場合、Microsoft 365 コンプライアンス センターから[ファイル プラン](file-plan-manager.md)を使用して保持ラベルを作成することをお勧めします。 ただし、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) も使用できます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft 365 のドキュメントやメールを保持または削除するために[保持ラベル](retention.md)を使用することを決定した後で、非常に多くの、時には数百個もの保持ラベルを作成して発行することが必要であることが判明する場合があります。 大量に保持ラベルを作成する場合、Microsoft Purview コンプライアンス ポータルから[ファイル プラン](file-plan-manager.md)を使用して保持ラベルを作成することをお勧めします。 ただし、[PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) も使用できます。
   
 この記事の情報、テンプレート ファイルと例、およびスクリプトを参考にすると、保持ラベルを一括作成し、保持ラベル ポリシーでそれらを発行することができます。そうすると、それらの保持ラベルを[管理者とユーザーが適用](create-apply-retention-labels.md#how-to-apply-published-retention-labels)できるようになります。
 
