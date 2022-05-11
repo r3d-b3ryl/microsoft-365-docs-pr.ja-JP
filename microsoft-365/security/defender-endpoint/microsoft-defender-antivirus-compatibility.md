@@ -152,18 +152,18 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 | 保護 | Microsoft Defender ウイルス対策 <br/>(*アクティブ モード*) | Microsoft Defender ウイルス対策 <br/>(*パッシブ モード*) | Microsoft Defender ウイルス対策 <br/>(*無効またはアンインストール済み*) | [ブロック モードの EDR](edr-in-block-mode.md) | 
 |:---|:---|:---|:---|:---| 
 | [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md): | はい | メモ <sup>[[4](#fn4)]</sup> を参照してください | いいえ | 不要 | 
-| [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | 不要  | 不要 | 不要 | 
-| [ネットワーク保護](network-protection.md)  | はい | 不要 | 不要 | 不要 | 
-| [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | 不要 | 不要  | いいえ | 
-| [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | 不要 | はい | 不要 | 
+| [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | いいえ  | いいえ | 不要 | 
+| [ネットワーク保護](network-protection.md)  | はい | いいえ | いいえ | 不要 | 
+| [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | いいえ | いいえ  | いいえ | 
+| [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | いいえ | はい | 不要 | 
 | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい<sup>[[5](#fn5)]</sup> | 不要 | はい | 
 | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[6](#fn6)]</sup>を参照してください | 不要 | はい | 
 | [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい <sup>[[7](#fn7)]</sup> | 不要 | はい <sup>[[7](#fn7)]</sup> | 
-| [データ損失防止](../../compliance/endpoint-dlp-learn-about.md) | はい | はい | 不要 | 不要 |
-| [制御されたフォルダー アクセス](controlled-folders.md) | はい |不要 | 不要 | 不要 |
+| [データ損失防止](../../compliance/endpoint-dlp-learn-about.md) | はい | はい | いいえ | 不要 |
+| [制御されたフォルダー アクセス](controlled-folders.md) | はい |いいえ | いいえ | 不要 |
 | [Web コンテンツ フィルタリング](web-content-filtering.md) | はい | メモ <sup>[[8](#fn8)]</sup> を参照してください | 不要 | 不要 |
-| [デバイス コントロール](device-control-report.md) | はい | はい | 不要 | 不要 |
-| [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | 不要 | 不要 | 不要 |
+| [デバイス コントロール](device-control-report.md) | はい | はい | いいえ | 不要 |
+| [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | いいえ | いいえ | 不要 |
 
 (<a id="fn4">4</a>) 一般に、Microsoft Defender ウイルス対策がパッシブ モードの場合、リアルタイム保護では、有効でパッシブ モードであっても、ブロックや強制は提供されません。
 
@@ -193,7 +193,7 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
  | Windows セキュリティ アプリを開きます。 |  1. Windows デバイスで、Windows セキュリティ アプリを開きます。<br/>2. [**ウイルスと脅威の防止**] を選択します。<br/>3. "**自分を保護している人**" の下で [**プロバイダーの管理**] を選択します。<br/>4. [**セキュリティ プロバイダー**] ページの "**ウイルス対策**" で、 [**Microsoft Defender ウイルス対策が**] がオンになっているはずです。 | 
  | タスク マネージャー |  1. Windows デバイスで、タスク マネージャー アプリを開きます。<br/>2. [**詳細**] タブを選択します。<br/>3. リストで **MsMpEng.exe** を探します。 | 
  | Windows PowerShell <br/> (Microsoft Defender ウイルス対策が実行されていることを確認するには) |  1. Windows デバイスで、Windows PowerShell を開きます。 <br/>2. 次の PowerShell コマンドレットを実行します: `Get-Process`。<br/>3. 結果を確認します。Microsoft Defender ウイルス対策が有効になっている場合 **MsMpEng.exe** が表示されます。 | 
- | Windows PowerShell <br/>(ウイルス対策保護が実行されているのを確認するには) |  [Get-MpComputerStatus PowerShell コマンドレット](/powershell/module/defender/get-mpcomputerstatus)を使用できます。<br/>1. Windows デバイスで、Windows PowerShell を開きます。<br/>2. 次の PowerShell コマンドレットを実行します:<br/> Get-MpComputerStatus \| AMRunningMode の選択 <br/>3. 結果を確認します。 エンドポイントで Microsoft Defender ウイルス対策が有効になっている場合は **通常** または **パッシブ** または **EDR ブロック モード** が表示されます。  | 
+ | Windows PowerShell <br/>(ウイルス対策保護が実行されているのを確認するには) |  [Get-MpComputerStatus PowerShell コマンドレット](/powershell/module/defender/get-mpcomputerstatus)を使用できます。<br/>1. Windows デバイスで、Windows PowerShell を開きます。<br/>2. 次の PowerShell コマンドレットを実行します:<br/> Get-MpComputerStatus \| AMRunningMode の選択 <br/>3. 結果を確認します。エンドポイントで Microsoft Defender ウイルス対策が有効になっている場合は **通常** または **パッシブ** または **EDR ブロック モード** が表示されます。  | 
 
 ## <a name="more-details-about-microsoft-defender-antivirus-states"></a>Microsoft Defender ウイルス対策状態の詳細
 
