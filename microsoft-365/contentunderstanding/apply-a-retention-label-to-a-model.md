@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: SharePoint Syntexのモデルに保持ラベルを適用する方法について説明します。
-ms.openlocfilehash: 281ff940377f033690f1ed1e7146c8aefe645bf1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 362b370fa34193e66802e9b0d2c5788785ea92c5
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941811"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349789"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>SharePoint Syntex のモデルに保持ラベルを適用する
 
@@ -28,7 +28,6 @@ ms.locfileid: "64941811"
 
 </br>
 
-
 Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/retention.md)を簡単に適用できます。 これは、ドキュメント理解モデルとフォーム処理モデルの両方で実行できます。
 
 保持ラベルを使用すると、モデルが識別するドキュメントに保持設定を適用できます。  たとえば、モデルで、ドキュメント ライブラリにアップロードされた *保険通知* ドキュメントを識別するだけでなく、*ビジネス* 保持タグを適用して、これらのドキュメントを指定された期間 ( たとえば、次の5か月) ドキュメント ライブラリから削除できないようにする必要があります。
@@ -36,7 +35,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 モデルのホーム ページのモデル設定を使用して、既存の保持ラベルをモデルに適用できます。 
 
 > [!Important]
-> 保持ラベルをドキュメント理解モデルに適用できるようにするには、Microsoft Purview コンプライアンス ポータルで [作成](../compliance/file-plan-manager.md#create-retention-labels) して [発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) する必要があります。
+> 保持ラベルをドキュメント理解モデルに適用できるようにするには、Microsoft Purview コンプライアンス ポータルで[作成](../compliance/file-plan-manager.md#create-retention-labels)して[発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)する必要があります。
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>保持ラベルをドキュメント理解モデルに追加する
 
@@ -74,7 +73,7 @@ Microsoft SharePoint Syntex のモデルに[保持ラベル](../compliance/reten
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>保持ラベルをフォーム処理モデルに追加するには
 
 > [!Important]
-> 保持ラベルをフォーム処理モデルに適用できるようにするには、Microsoft Purview コンプライアンス ポータルで [作成](../compliance/file-plan-manager.md#create-retention-labels) して [発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels) する必要があります。
+> 保持ラベルをフォーム処理モデルに適用できるようにするには、そのラベルを[作成](../compliance/file-plan-manager.md#create-retention-labels)し、Microsoft Purview コンプライアンス ポータルで[発行](../compliance/create-apply-retention-labels.md#how-to-publish-retention-labels)する必要があります。
 
 モデルの作成時にフォーム処理モデルに保持ラベルを適用するか、既存のモデルに適用することができます。
 

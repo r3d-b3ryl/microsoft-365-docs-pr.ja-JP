@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c8ffab850302967b9e36e841bf035cef07ad2775
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 2fa64ee9822fe1f784788e2d1ead79e66eb200ef
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767239"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349746"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpoint用の別のモバイル デバイス管理 (MDM) システムを使用した展開
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>macOSでのMicrosoft Defender for Endpoint用の別のモバイル デバイス管理 (MDM) システムを使用したデプロイ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,21 +36,21 @@ ms.locfileid: "62767239"
  
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-作業を開始する前に、[macOS のメイン Microsoft Defender for Endpointページで](microsoft-defender-endpoint-mac.md)、現在のソフトウェア バージョンの前提条件とシステム要件の説明を参照してください。
+作業を開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、[macOS ページのメイン](microsoft-defender-endpoint-mac.md) Microsoft Defender for Endpointを参照してください。
 
 
 ## <a name="approach"></a>方法
 
 > [!CAUTION]
 
-> 現在、Microsoft では、macOS でのMicrosoft Defender for Endpointの展開と管理に関して、Intuneと JAMF のみが正式にサポートされています。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず、一切の保証を行いません。
+> 現在、Microsoft では、macOSでのMicrosoft Defender for Endpointの展開と管理に関して、Intuneと JAMF のみが正式にサポートされています。 Microsoft は、以下に示す情報に関して、明示または黙示を問わず、一切の保証を行いません。
 
-組織で公式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、macOS でMicrosoft Defender for Endpointを展開または実行できないという意味ではありません。
+組織で公式にサポートされていないモバイル デバイス管理 (MDM) ソリューションを使用している場合、これは、macOSにMicrosoft Defender for Endpointを展開または実行できないことを意味するものではありません。
 
-macOS でのMicrosoft Defender for Endpointは、ベンダー固有の機能には依存しません。 次の機能をサポートする任意の MDM ソリューションで使用できます。
+macOSのMicrosoft Defender for Endpointは、ベンダー固有の機能に依存しません。 次の機能をサポートする任意の MDM ソリューションで使用できます。
 
 - macOS .pkg をマネージド デバイスにデプロイします。
-- macOS システム構成プロファイルをマネージド デバイスに展開します。
+- macOSシステム構成プロファイルをマネージド デバイスに展開します。
 - 管理対象デバイスで任意の管理者が構成したツール/スクリプトを実行します。
 
 最新の MDM ソリューションには、これらの機能が含まれていますが、呼び出し方法が異なる場合があります。
@@ -74,7 +74,7 @@ macOS でのMicrosoft Defender for Endpointは、ベンダー固有の機能に�
 
 [システム構成プロファイルを設定します](mac-install-with-jamf.md)。 
 
-macOS のMicrosoft Defender for Endpointは macOS の一部ではないため、MDM ソリューションでは "カスタム 設定 プロファイル" と呼ばれることがあります。
+MDM ソリューションでは、macOSのMicrosoft Defender for EndpointがmacOSの一部ではないため、"カスタム 設定 プロファイル" と呼ばれることがあります。
 
 ポータルからダウンロードしたオンボード パッケージから抽出できるプロパティ リスト jamf/WindowsDefenderATPOnboarding.plist [Microsoft 365 Defender](mac-install-with-jamf.md)使用します。
 システムでは、XML 形式の任意のプロパティ リストがサポートされている場合があります。 その場合は、jamf/WindowsDefenderATPOnboarding.plist ファイルをそのままアップロードできます。
@@ -114,12 +114,12 @@ KEXT またはカーネル拡張ポリシーを設定します。 チーム識�
 
 ### <a name="network-extension-policy"></a>ネットワーク拡張ポリシー
 
-エンドポイントの検出と応答機能の一環として、macOS のMicrosoft Defender for Endpointはソケット トラフィックを検査し、この情報をMicrosoft 365 Defender ポータルに報告します。 次のポリシーを使用すると、ネットワーク拡張機能でこの機能を実行できます。
+エンドポイントの検出と応答の機能の一部として、macOSのMicrosoft Defender for Endpointはソケット トラフィックを検査し、この情報をMicrosoft 365 Defender ポータルに報告します。 次のポリシーを使用すると、ネットワーク拡張機能でこの機能を実行できます。
 
 - フィルターの種類: プラグイン
 - プラグイン バンドル識別子: `com.microsoft.wdav`
 - フィルター データ プロバイダーバンドル識別子: `com.microsoft.wdav.netext`
-- フィルター データ プロバイダー指定の要件: `identifier "com.microsoft.wdav.tunnelext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
+- フィルター データ プロバイダー指定の要件: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`
 - フィルター ソケット: `true`
 
 ## <a name="check-installation-status"></a>インストールの状態を確認する

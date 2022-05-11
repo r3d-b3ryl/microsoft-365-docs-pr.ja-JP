@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 104bc9f10838be782ea70e3efe567ddee714d0a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec545bb38456b778b627c41994a1eb18ae665a86
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100217"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349756"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac でのMicrosoft Defender for Endpointの新機能
 
@@ -31,6 +31,11 @@ ms.locfileid: "65100217"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1016654-20122041166540"></a>101.66.54 (20.122041.16654.0)
+
+- 場合によっては、正しいプロセス パスが印刷されない問題 `mdatp diagnostic real-time-protection-statistics` に対処しました。
+- バグ修正
 
 ## <a name="1016415-20122032164150"></a>101.64.15 (20.122032.16415.0)
 
@@ -49,9 +54,9 @@ ms.locfileid: "65100217"
 
 ## <a name="1015950-20122021159500"></a>101.59.50 (20.122021.15950.0)
 
-- このバージョンでは、macOS 12.3 のサポートが追加されます。 macOS 12.3 以降、 [Apple は Python 2.7 を削除しています](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes)。 既定では、macOS には Python バージョンがプレインストールされません。 **必要なアクション**: 
-  - ユーザーは、デバイスを macOS Marketplace 12.3 (またはそれ以降) に更新する前に、Mac のMicrosoft Defender for Endpointをバージョン 101.59.50 (またはそれ以降) に更新する必要があります。 この最小バージョン 101.59.50 は、macOS の弔弔上の Mac のMicrosoft Defender for Endpointに関する Python 関連の問題を解消するための前提条件です。
-  - リモート展開の場合は、既存の MDM セットアップを Mac バージョン 101.59.50 (またはそれ以降) のMicrosoft Defender for Endpointに更新する必要があります。 MDM 経由で Mac バージョン用の古いMicrosoft Defender for Endpointを macOS Marketplace 12.3 (またはそれ以降) にプッシュすると、インストールエラーが発生します。
+- このバージョンでは、macOS 12.3 のサポートが追加されます。 macOS 12.3 以降、[Apple は Python 2.7 を削除しています](https://developer.apple.com/documentation/macos-release-notes/macos-12_3-release-notes)。 既定では、macOSには Python バージョンがプレインストールされません。 **必要なアクション**: 
+  - ユーザーは、デバイスを MacOS の 12.3 (またはそれ以降) に更新する前に、Mac のMicrosoft Defender for Endpointをバージョン 101.59.50 (またはそれ以降) に更新する必要があります。 この最小バージョン 101.59.50 は、MacOSのMicrosoft Defender for Endpoint for Mac に関する Python 関連の問題を解消するための前提条件です。
+  - リモート展開の場合は、既存の MDM セットアップを Mac バージョン 101.59.50 (またはそれ以降) のMicrosoft Defender for Endpointに更新する必要があります。 MDM 経由で Mac バージョンの古いMicrosoft Defender for Endpointを MacOS MacOSの 12.3 (またはそれ以降) にプッシュすると、インストールエラーが発生します。
 
 ## <a name="1015910-20122012159100"></a>101.59.10 (20.122012.15910.0)
 
@@ -70,7 +75,7 @@ ms.locfileid: "65100217"
   - アプリケーションのインストール パスが変更`/Application/Microsoft Defender ATP.app``/Applications/Microsoft Defender.app`されました。
   - ユーザー エクスペリエンス内で、"Microsoft Defender ATP" の出現は "Microsoft Defender" に置き換えられています
 - Mac 用のMicrosoft Defender for Endpointで配布されているネットワーク コンテンツ フィルターが原因で、一部の VPN アプリケーションが接続できない問題を解決しました
-- 特定の特性を持つパッケージのインストールを妨げるオペレーティング システム (OS) の変更により、インストール パッケージを開けなかった macOS 12.2 ベータ 2 で検出された問題に対処しました。 この OS の変更は macOS 12.2 の最終リリースには含まれていないようですが、今後の macOS バージョンで再導入される可能性があります。 そのため、すべてのエンタープライズ管理者は、管理コンソールでMicrosoft Defender for Endpoint パッケージをこの製品バージョン (または新しいバージョン) に更新することをお勧めします。
+- macOS 12.2 ベータ 2 で、特定の特性を持つパッケージのインストールを妨げるオペレーティング システム (OS) の変更によりインストール パッケージを開けられなかった問題に対処しました。 この OS の変更はmacOS 12.2 の最終リリースには含まれていないようですが、今後のmacOS バージョンで再導入される可能性があります。 そのため、すべてのエンタープライズ管理者は、管理コンソールでMicrosoft Defender for Endpoint パッケージをこの製品バージョン (または新しいバージョン) に更新することをお勧めします。
 - 一部の M1 デバイスで、製品が無効なマルウェア対策定義でスタックし、ワーキング セットの定義に正常に更新できなかった問題に対処しました。
 - `mdatp health`出力は、Mac 用のMicrosoft Defender for Endpointのすべてのコンポーネントにフル ディスク アクセスが許可されているかどうかを判断するために使用できる追加の属性`full_disk_access_enabled`を使用して拡張されました。
 - バグ修正&パフォーマンスの向上
@@ -92,7 +97,7 @@ ms.locfileid: "65100217"
 
 ## <a name="1014384-20121082143840"></a>101.43.84 (20.121082.14384.0)
 
-- macOS 12 の候補ビルド (Parse)
+- macOS 12 の候補ビルド (12)
 - バグ修正
 
 ## <a name="1014110-20121072141100"></a>101.41.10 (20.121072.14110.0)
@@ -122,7 +127,7 @@ ms.locfileid: "65100217"
 
 ## <a name="1013420-20121051134200"></a>101.34.20 (20.121051.13420.0)
 
-- [macOS のデバイス制御](mac-device-control-overview.md) が一般公開されるようになりました
+- [macOSのデバイス制御](mac-device-control-overview.md)が一般公開されるようになりました
 - macOS 11 (Big Sur) の状態メニューからクイック スキャンを開始できない問題に対処しました
 - その他のバグ修正
 
@@ -136,15 +141,15 @@ ms.locfileid: "65100217"
 - `mdatp diagnostic real-time-protection-statistics` 次の 2 つの追加スイッチがサポートされるようになりました。
   - `--sort`: 出力を降順に並べ替え、スキャンされたファイルの合計数で並べ替えます。
   - `--top N`: 上位 N 個の結果が表示されます (指定されている場合 `--sort` にのみ機能します)
-- パフォーマンスの向上 (特に YARN を使用する場合) &バグ修正
+- パフォーマンスの向上 (特にYARNが使用される場合) &バグ修正
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 
-- macOS Catalina 以前の Apple 証明書の有効期限に対応するように修正しました。 この修正プログラムは、脅威&脆弱性管理 (TVM) 機能を復元します。
+- MacOS Catalina 以前の Apple 証明書の有効期限に対応するように修正しました。 この修正プログラムは、脅威&脆弱性管理 (TVM) 機能を復元します。
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- macOS のMicrosoft Defender for Endpointは、米国政府機関のお客様向けにプレビューで利用できるようになりました。 詳細については、「[米国政府機関のお客様向けのMicrosoft Defender for Endpoint」を参照してください](gov.md)。
+- macOSのMicrosoft Defender for Endpointは、米国政府機関のお客様向けのプレビューで利用できるようになりました。 詳細については、「[米国政府機関のお客様向けのMicrosoft Defender for Endpoint」を参照してください](gov.md)。
 - パフォーマンスの向上 (特に XCode シミュレーター アプリが使用されている場合) &バグ修正が行われました。
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -198,7 +203,7 @@ ms.locfileid: "65100217"
 
 - この製品バージョンは、macOS Big Sur 11 beta 9 で検証されています
 
-- コマンド ライン ツールの `mdatp` 新しい構文が既定の構文になりました。 新しい構文の詳細については、「[macOS でのMicrosoft Defender for Endpointのリソース](mac-resources.md#configuring-from-the-command-line)」を参照してください。
+- コマンド ライン ツールの `mdatp` 新しい構文が既定の構文になりました。 新しい構文の詳細については、「[macOSのMicrosoft Defender for Endpointのリソース」を](mac-resources.md#configuring-from-the-command-line)参照してください。
 
   > [!NOTE]
   > 古いコマンド ライン ツール構文は **、2021 年 1 月 1 日** に製品から削除されます。
@@ -257,13 +262,13 @@ ms.locfileid: "65100217"
 
 - [Intune ユーザー向けの製品オンボード エクスペリエンスの](/mem/intune/apps/apps-advanced-threat-protection-macos)向上
 - ウイルス対策 [の除外でワイルドカードがサポートされるようになりました](mac-exclusions.md#supported-exclusion-types)
-- macOS コンテキスト メニューからウイルス対策スキャンをトリガーする機能を追加しました。 Finder でファイルまたはフォルダーを右クリックし、[**スキャンと共にスキャン] を選択できるようになりましたMicrosoft Defender for Endpoint**
+- macOSコンテキスト メニューからウイルス対策スキャンをトリガーする機能を追加しました。 Finder でファイルまたはフォルダーを右クリックし、[**スキャンと共にスキャン] を選択できるようになりましたMicrosoft Defender for Endpoint**
 - インプレース製品のダウングレードは、インストーラーによって明示的に禁止されるようになりました。 ダウングレードする必要がある場合は、まず既存のバージョンをアンインストールし、デバイスを再構成します
 - バグ修正&その他のパフォーマンスの向上
 
 ## <a name="1009027"></a>100.90.27
 
-- macOS で、システム全体の[更新チャネル](mac-updates.md#set-the-channel-name)とは異なるMicrosoft Defender for Endpointの更新チャネルを設定できるようになりました
+- システム全体[の更新チャネル](mac-updates.md#set-the-channel-name)とは異なるmacOSで、Microsoft Defender for Endpointの更新チャネルを設定できるようになりました
 - 新しい製品アイコン
 - その他のユーザー エクスペリエンスの改善
 - バグ修正
@@ -278,9 +283,9 @@ ms.locfileid: "65100217"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> macOS デバイスの最も完全な保護を確保し、Apple が [current - 2] より古い OS バージョンへの macOS ネイティブ セキュリティ更新プログラムの配信を停止することに合わせて、Mac の展開と更新プログラムの MDATP は macOS Sierra [10.12] ではサポートされなくなります。 MDATP for Mac の更新と機能強化は、Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。
+> macOS デバイスの最も完全な保護を確保し、Apple が [current - 2] より古い OS バージョンへのmacOSネイティブ セキュリティ更新プログラムの配信を停止するために、MDATP for Mac の展開と更新プログラムはmacOS Sierra [10.12] ではサポートされなくなります。 MDATP for Mac の更新と機能強化は、Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。
 >
-> Sierra [10.12] デバイスに MDATP for Mac が既に展開されている場合は、保護を失うリスクを排除するために、最新の macOS バージョンにアップグレードしてください。
+> Sierra [10.12] デバイスに MDATP for Mac が既に展開されている場合は、保護を失うリスクを排除するために、最新のmacOS バージョンにアップグレードしてください。
 
 - バグ修正&パフォーマンスの向上
 

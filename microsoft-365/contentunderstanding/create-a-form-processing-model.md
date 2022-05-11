@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: admindeeplinkSPO
 ms.localizationpriority: medium
 description: SharePoint Syntex でフォーム処理モデルを作成する方法について説明します。
-ms.openlocfilehash: 3eb14a76bd597f1f382b87813c7e4bd2a4518e19
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+ms.openlocfilehash: bf0a15894e7b9bbc4905a0372d557e1880650e84
+ms.sourcegitcommit: 2d870e06e87b10d9e8ec7a7a8381353bc3bc59c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882354"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65349831"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でフォーム処理モデルを作成する
 
@@ -43,7 +43,7 @@ Microsoft PowerApps の機能である [AI ビルダー](/ai-builder/overview)�
 
 フォーム処理モデルの作成は、それが有効になっている SharePoint ドキュメント ライブラリでのみ実行できます。 フォーム処理が有効になっている場合は、ドキュメント ライブラリに **[自動化]** > **[AI ビルダー]** > **[フォームを処理するモデルの作成]** メニューが表示されます。 ドキュメント ライブラリで処理を有効にする必要がある場合は、SharePoint 管理者にお問い合わせください。
 
- ![AI ビルダー モデルを示すスクリーンショット。](../media/content-understanding/create-ai-builder-model2.png)
+![AI ビルダー モデルを示すスクリーンショット。](../media/content-understanding/create-ai-builder-model2.png)
 
 ## <a name="step-1-create-a-form-processing-model"></a>手順 1: フォーム処理モデルを作成する
 
@@ -114,11 +114,9 @@ Microsoft PowerApps の機能である [AI ビルダー](/ai-builder/overview)�
 
 2. モデルを発行したら、**[モデルを使用]**、**[フローを作成]** の順に選択します。 これにより、SharePoint ドキュメント ライブラリで実行し、モデルで識別されたフィールドを抽出できる Power Automate フローが作成されます。
 
-    ![[フローを作成] パネルを示す AI ビルダーのスクリーンショット。](../media/content-understanding/ai-builder-create-a-flow.png)
+    ![[フローを作成] パネルを示す AI ビルダーのスクリーンショット。](../media/content-understanding/ai-builder-create-a-flow-1.png)
  
 3. 完了すると、*"フローが正常に作成されました"* のメッセージが表示されます。
-
-    ![フローが正常に作成されたことを示す AI ビルダーのスクリーンショット。](../media/content-understanding/ai-builder-flow-created.png)
 
 4. **[SharePoint に移動]** ボタンを選択して、モデルで更新されたドキュメント ライブラリを表示します。
 
@@ -147,7 +145,7 @@ Microsoft PowerApps の機能である [AI ビルダー](/ai-builder/overview)�
 
     ![[抽出情報] が強調表示された [自動化] メニューを示すスクリーンショット。](../media/content-understanding/automate-extract-info.png)  
 
-- **フォーム処理モデルを使用してファイルから情報を抽出する - フォーム処理** モデルと共に使用して、ファイルのバッチから情報を読み取り、抽出します。 一度に最大 5,000 個のSharePoint ファイルを処理します。 このフローを実行すると、特定のパラメーターを設定できます。 次の操作を実行できます。
+- **フォーム処理モデルを使用してファイルから情報を抽出する - フォーム処理** モデルと共に使用して、ファイルのバッチから情報を読み取り、抽出します。 一度に最大 5,000 個のSharePoint ファイルを処理します。 このフローを実行すると、特定のパラメーターを設定できます。 次の操作を行うことができます:
 
     - 以前に処理されたファイルを含めるかどうかを選択します (既定では、以前に処理されたファイルは含まれません)。
     - 処理するファイルの数を選択します (既定値は 100 ファイルです)。
