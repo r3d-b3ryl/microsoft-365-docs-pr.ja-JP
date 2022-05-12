@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Bookings
-summary: Microsoft Bookings で予定をスケジュールおよび管理します。 通知と自動通知Outlook統合が含まれます。
+summary: Microsoft Bookingsを使用して予定をスケジュールおよび管理します。 Outlookおよび自動通知との統合が含まれます。
 metadata:
-  title: Microsoft の予約
-  description: Microsoft Bookings で予定をスケジュールおよび管理します。 通知と自動通知Outlook統合が含まれます。
+  title: Microsoft Bookings
+  description: Microsoft Bookingsを使用して予定をスケジュールおよび管理します。 Outlookおよび自動通知との統合が含まれます。
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -18,7 +18,7 @@ metadata:
   ms.lasthandoff: 08/05/2021
   ms.locfileid: "53867249"
 landingContent:
-- title: Microsoft Bookings について
+- title: Microsoft Bookingsについて
   linkLists:
   - linkListType: overview
     links:
@@ -44,7 +44,7 @@ landingContent:
       url: customize-booking-page.md
     - text: 予約の作成とスタッフの割り当て
       url: create-a-manual-booking.md
-- title: 予定を予約するユーザーを招待する
+- title: 予定を予約するようにユーザーを招待する
   linkLists:
   - linkListType: how-to-guide
     links:
