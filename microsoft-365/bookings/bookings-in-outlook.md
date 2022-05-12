@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: OutlookでBookingsを使用して、他のユーザーがOutlookで自分と一緒に会議をスケジュールできるようにします。
-ms.openlocfilehash: fb74b345a9c1985388ed4754b3f9913a46e5d9de
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 9f8e1c4428133dce6f6ec9e539464271abfd8ffd
+ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363044"
+ms.locfileid: "65364281"
 ---
 # <a name="bookings-in-outlook"></a>OutlookのBookings
 
@@ -25,7 +25,7 @@ OutlookのBookingsは、Outlook予定表の空き時間情報と統合された 
 
 OutlookのBookingsには、次の 2 つの異なるビューがあります。
 
-- **開催者ビュー** 他のユーザーが予約できる会議の種類を作成できる個人用の予約ページ。 カスタム会議の種類を使用すると、会議を行うタイミングや、その会議の種類を他のユーザーと共有する方法をカスタマイズできます。 各会議の種類をスケジュール 設定ページに公開するか、非公開にするかを制御し、選択したユーザー グループのみがアクセスできます。 また、Outlook ページでBookingsを通じて予約されたすべての会議にTeams会議を追加することもできます。 Outlook on the webまたはOutlookページでBookingsに[https://outlook.office.com/bookwithme/](https://outlook.office.com/bookwithme/)アクセスできます。 ページを設定して発行したら、他のユーザーと共有できます。 たとえば、Outlook署名に追加できます。
+- **開催者ビュー** 他のユーザーが予約できる会議の種類を作成できる個人用の予約ページ。 カスタム会議の種類を使用すると、会議を行うタイミングや、その会議の種類を他のユーザーと共有する方法をカスタマイズできます。 各会議の種類をスケジュール 設定ページに公開するか、非公開にするかを制御し、選択したユーザー グループのみがアクセスできます。 また、Outlook ページでBookingsを通じて予約されたすべての会議にTeams会議を追加することもできます。 Outlook on the webからOutlookページでBookingsにアクセスできます。 ページを設定して発行したら、他のユーザーと共有できます。 たとえば、Outlook署名に追加できます。
 
 - **[スケジュール] ビュー** Outlook ページでBookingsを他のユーザーと共有すると、スケジュール 設定ビューが表示されます。 スケジュール 設定ビューに表示される会議は、Outlook ページでBookingsへのリンクをパブリック会議と共有したか、個々の会議のプライベート リンクを共有したかによって異なります。
     - パブリック会議は、Outlook ページ リンクにBookingsがあるすべてのユーザーが表示およびスケジュール設定できます。 そのリンクを共有するユーザーを制御できます。 すべてのパブリック会議の種類は、Outlookページ リンクにBookingsがあるすべてのユーザーに表示されます。
