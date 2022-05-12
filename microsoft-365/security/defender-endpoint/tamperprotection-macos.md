@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d31c99ddc1f64f78fa62d28805b6c2f19af5a31f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 39e12aa910b4e01b93d428246d929d50eb121870
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320913"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363275"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止macOSセキュリティ設定を保護する 
 
@@ -80,8 +80,8 @@ macOSの改ざん防止は、セキュリティ設定に対する不要な変更
 
 **強くお勧めする設定:** 
 
-1. システム整合性保護 (SIP) が有効になっている
-1. モバイル デバイス管理 (MDM) ツールを使用してMicrosoft Defender for Endpointを構成する
+1. システム整合性保護 (SIP) が有効になっています。 詳細については、「 [システム整合性保護の無効化と有効化」を](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection)参照してください。
+1. モバイル デバイス管理 (MDM) ツールを使用してMicrosoft Defender for Endpointを構成します。
 
  
 

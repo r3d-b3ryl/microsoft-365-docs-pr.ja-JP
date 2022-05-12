@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 2f76a8ec53d6f7c809ed9f6612f2c8abf7388d1b
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294780"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363062"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -58,28 +58,30 @@ ms.locfileid: "65294780"
 >
 > Windows&nbsp; Server2012R2&nbsp;&nbsp; および Windows&nbsp; Server2016&nbsp; の攻撃面の縮小ルールは、最新の統合ソリューション パッケージを使用してオンボードされたデバイスで使用できます。 詳細については、「[Windows Server 2012 R2 および 2016 Preview の最新の統合ソリューションの新機能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)」を参照してください。
 
-| ルール名| &nbsp;Windows 11 <br>and<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>and<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <br> <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp; <br> <sup>[[1, 2](#fn1)]<sup></sup> |
+| ルール名| &nbsp;Windows 11 <br>and<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>and<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [悪用された脆弱な署名されたドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> バージョン 1803 (半期チャネル) 以降 | Y | Y |
-| [Adobe Reader による子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y バージョン 1809 以降 | Y | Y | Y | Y |
+| [Adobe Reader による子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y <br> バージョン 1809 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [すべてのOffice アプリケーションによる子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [Windowsローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> バージョン 1803 以降 | Y | Y | Y | Y |
+| [Windowsローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> バージョン 1803 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [電子メール クライアントと webmail から実行可能コンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) | Y | Y | Y | Y | Y |
-| [実行可能ファイルが有病率、年齢、または信頼されたリスト条件を満たしていない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> バージョン 1803 以降 | Y | Y | Y | Y |
+| [実行可能ファイルが有病率、年齢、または信頼されたリスト条件を満たしていない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) | Y <br> バージョン 1803 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [難読化される可能性があるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) | Y | Y | Y | Y | Y |
 | [ダウンロードした実行可能コンテンツの起動から JavaScript または VBScript をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | Y | Y | Y | N | N |
 | [アプリケーションOffice実行可能コンテンツの作成をブロックする](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
 | [アプリケーションOfficeコードを他のプロセスに挿入できないようにブロックする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
 | [通信アプリケーションOffice子プロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [WMI イベント サブスクリプションを使用して永続化をブロックする](#block-persistence-through-wmi-event-subscription) <br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y <br> バージョン 1903 (ビルド 18362) 以降 | Y | Y <br> バージョン 1903 (ビルド 18362) 以降 | N | N |
-| [PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> バージョン 1803 以降 | Y | Y | Y | Y |
+| [WMI イベント サブスクリプションを使用して永続化をブロックする](#block-persistence-through-wmi-event-subscription) <br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y <br> バージョン 1903 (ビルド 18362) 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> バージョン 1903 (ビルド 18362) 以降 | N | N |
+| [PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> バージョン 1803 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
 | [Office マクロからの Win32 API 呼び出しをブロックする](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
-| [ランサムウェアに対する高度な保護を使用する](#use-advanced-protection-against-ransomware) | Y <br> バージョン 1803 以降 | Y | Y | Y | Y |
+| [ランサムウェアに対する高度な保護を使用する](#use-advanced-protection-against-ransomware) | Y <br> バージョン 1803 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 
 (<a id="fn1">1</a>) Windows Server 2012と 2016 の最新の統合ソリューションを参照します。 詳細については、「[Windows サーバーを Defender for Endpoint サービスにオンボードする」を](configure-server-endpoints.md)参照してください。
 
 (<a id="fn1">2</a>) Windows&nbsp; Server 2016 および Windows&nbsp; Server 2012R2&nbsp; の場合、Microsoft Endpoint Configuration Managerの最小必須バージョンはバージョン 2111 です。
+
+(<a id="fn1">3</a>) バージョンとビルド番号は、Windows&nbsp; 10 にのみ適用されます。
 
 ## <a name="supported-configuration-management-systems"></a>サポートされている構成管理システム
 
@@ -172,7 +174,7 @@ _警告モード_ は、危険な可能性があるアクションについて�
 
 [許可] ボタンをクリックすると、ブロックは 24 時間非表示になります。 24 時間後、エンド ユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809 以降) デバイスでのみサポートされます。 バイパスが古いバージョンのデバイスの ASR ルールに割り当てられている場合、ルールはブロック モードになります。
 
-また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 例:
+また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 次に例を示します。
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 

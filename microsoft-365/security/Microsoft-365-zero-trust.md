@@ -18,16 +18,22 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: 3b943569485ffaa96b33208c1c4bf0a491c23a95
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939479"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363194"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
 この記事では、Microsoft 365を使用 **してゼロ トラストセキュリティを** 構築するための展開計画について説明します。 ゼロ トラストは、侵害を想定し、制御されていないネットワークから送信されたかのように各要求を検証する新しいセキュリティ モデルです。 要求の発信元やアクセスするリソースに関係なく、ゼロ トラスト モデルは"信頼せず、常に検証する" ことを教えています。
+
+この記事は、このポスターと共に使用してください。
+
+| アイテム | 説明 |
+|:-----|:-----|
+|[![Microsoft 365 ゼロ トラスト展開計画の図。](../media/solutions-architecture-center/m365-zero-trust-deployment-plan-thumb.png) ](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) <br/> [PDF](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.pdf) \| [Visio](https://download.microsoft.com/download/f/d/b/fdb6ab0c-34bb-4cb8-84e6-5de8f13298da/m365-zero-trust-deployment-plan.vsdx) <br/> 更新日:2022 年 3 月 | **関連するソリューション ガイド** <br/> <ul><li>[Microsoft 365用の ID インフラストラクチャをデプロイする](/microsoft-365/enterprise/deploy-identity-solution-overview)</li><li>[推奨される ID とデバイス アクセスの構成](../security/office-365-security/microsoft-365-policies-configurations.md)</li><li>[Intune でデバイスを管理する](../solutions/manage-devices-with-intune-overview.md)</li><li>[Microsoft 365 Defender の評価とパイロット](../security/defender/eval-overview.md)</li><li>[Microsoft の情報保護ソリューションの展開](../compliance/information-protection-solution.md)</li><li>[Microsoft 365を使用してデータプライバシー規制の情報保護を展開する](../solutions/information-protection-deploy.md)</li></ul>
 
 ## <a name="zero-trust-security-architecture"></a>ゼロ トラストセキュリティ アーキテクチャ
 
@@ -69,7 +75,7 @@ Microsoft 365は、環境へのゼロ トラストの構築に役立つ多くの
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-step-1b.png" alt-text="ゼロ トラスト ID とデバイス アクセス保護を構成するプロセス" lightbox="../media/zero-trust/m365-zero-trust-architecture-step-1b.png":::
 
-これを実現するための規範的なガイダンスについては、[**_id とデバイス アクセス保護のゼロ トラスト_**](office-365-security/microsoft-365-policies-configurations.md)に移動します。 この一連の記事では、ID とデバイス アクセスの前提条件構成のセットと、Microsoft 365へのアクセスをセキュリティで保護するための一連のAzure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、その他のポリシーについて説明します。 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、およびAzure AD アプリケーション プロキシで公開されたオンプレミス アプリケーションの場合。
+これを実現するための規範的なガイダンスについては、[**_id とデバイス アクセス保護のゼロ トラスト_**](office-365-security/microsoft-365-policies-configurations.md)に移動します。 この一連の記事では、一連の ID とデバイス アクセスの前提条件構成と、Azure Active Directory (Azure AD) 条件付きアクセス、Microsoft Intune、およびその他のポリシーのセットについて説明し、Microsoft 365 エンタープライズ クラウド アプリとサービス、その他の SaaS サービス、および Azure AD アプリケーション プロキシで公開されたオンプレミス アプリケーションの場合。
 
 |Includes|前提条件|含まれていない|
 |---------|---------|---------|
@@ -89,7 +95,7 @@ Microsoft 365は、環境へのゼロ トラストの構築に役立つ多くの
 
 |Includes|前提条件|含まれていない|
 |---------|---------|---------|
-|Intuneを使用してデバイスを登録します。 <ul><li>企業所有のデバイス。</li><li>Autopilot/automated</li><li>登録</li></ul> <br> ポリシーを構成します。 <ul><li>App Protection ポリシー</li><li>コンプライアンス ポリシー</li><li>デバイス プロファイル ポリシー</li></ul>|Azure ADでエンドポイントを登録する|次のような情報保護機能の構成: <ul><li>機密情報の種類</li><li>ラベル</li><li>DLP ポリシー</li></ul> <br> これらの機能については、 [手順 5. を参照してください。機密データを保護および管理します](#step-5-protect-and-govern-sensitive-data) (この記事の後半)。|
+|Intuneを使用してデバイスを登録します。 <ul><li>企業所有のデバイス。</li><li>Autopilot/automated</li><li>登録</li></ul> <br> ポリシーを構成します。 <ul><li>App Protection ポリシー</li><li>コンプライアンス ポリシー</li><li>デバイス プロファイル ポリシー</li></ul>|Azure AD にエンドポイントを登録する|次のような情報保護機能の構成: <ul><li>機密情報の種類</li><li>ラベル</li><li>DLP ポリシー</li></ul> <br> これらの機能については、 [手順 5. を参照してください。機密データを保護および管理します](#step-5-protect-and-govern-sensitive-data) (この記事の後半)。|
 
 ## <a name="step-3-add-zero-trust-identity-and-device-access-protection--enterprise-policies"></a>手順 3. ゼロ トラスト ID とデバイス アクセス保護を追加する — Enterprise ポリシー
 
@@ -111,22 +117,22 @@ Microsoft 365 Defender コンポーネントの [**_パイロットと_**](defen
 
 |Includes|前提条件|含まれていない|
 |---------|---------|---------|
-|すべてのコンポーネントの評価環境とパイロット環境を設定します。 <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> 脅威から保護する <br><br> 脅威の調査と対応|Microsoft 365 Defenderの各コンポーネントのアーキテクチャ要件については、ガイダンスを参照してください。| Azure AD Identity Protection はこのソリューション ガイドには含まれていません。 手順 1. に含まれています[。ゼロ トラスト ID とデバイス アクセス保護を構成](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies)します。|
+|すべてのコンポーネントの評価環境とパイロット環境を設定します。 <ul><li>Defender for Identity</li><li>Defender for Office 365</li><li>Defender for Endpoint</li><li>Microsoft Defender for Cloud Apps</li></ul> <br> 脅威から保護する <br><br> 脅威の調査と対応|Microsoft 365 Defenderの各コンポーネントのアーキテクチャ要件については、ガイダンスを参照してください。| このソリューション ガイドには Azure AD Identity Protection は含まれていません。 手順 1. に含まれています[。ゼロ トラスト ID とデバイス アクセス保護を構成](#step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies)します。|
 
 ## <a name="step-5-protect-and-govern-sensitive-data"></a>手順 5.  機密データの保護と管理
 
-Microsoft Purview Information Protectionを実装して、機密情報がどこに存在するか、移動する場所を問わず、検出、分類、および保護できるようにします。
+Microsoft Purview 情報保護を実装して、機密情報がどこに存在するか、移動する場所を問わず検出、分類、保護できるようにします。
 
-Microsoft Purview Information Protection機能は Microsoft Purview に含まれており、データを把握し、データを保護し、データの損失を防ぐためのツールを提供します。
+Microsoft Purview 情報保護機能はMicrosoft Purviewに含まれており、データを把握し、データを保護し、データの損失を防ぐためのツールを提供します。
 
 :::image type="content" source="../media/zero-trust/m365-zero-trust-architecture-info-protect.png" alt-text="ポリシーの適用を通じてデータを保護する情報保護機能" lightbox="../media/zero-trust/m365-zero-trust-architecture-info-protect.png":::
 
 この作業は、この記事の前に説明したデプロイ スタックの先頭に表示されますが、この作業はいつでも開始できます。
 
-Microsoft Purview Information Protectionには、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能が用意されています。
+Microsoft Purview 情報保護は、特定のビジネス目標を達成するために使用できるフレームワーク、プロセス、および機能を提供します。
 
 ![Microsoft Purview Information Protection](../media/zero-trust/mip-solution-overview.png)
 
-情報保護を計画および展開する方法の詳細については、「[**_Microsoft Purview Information Protection ソリューションのデプロイ_**](../compliance/information-protection-solution.md)」を参照してください。 
+情報保護を計画およびデプロイする方法の詳細については、「[**_Microsoft Purview 情報保護 ソリューションのデプロイ_**](../compliance/information-protection-solution.md)」を参照してください。 
 
 データ プライバシー規制の情報保護を展開する場合、このソリューション ガイドでは、プロセス全体に推奨されるフレームワークとして、Microsoft 365を使用して [**_データプライバシー規制の情報保護を展開_**](../solutions/information-protection-deploy.md)します。

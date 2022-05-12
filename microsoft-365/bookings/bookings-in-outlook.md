@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: OutlookでBookingsを使用して、他のユーザーがOutlookで自分と一緒に会議をスケジュールできるようにします。
-ms.openlocfilehash: f0cb984d1cae12c674eb518c61a1a83c6a0df06e
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: fb74b345a9c1985388ed4754b3f9913a46e5d9de
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217655"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363044"
 ---
 # <a name="bookings-in-outlook"></a>OutlookのBookings
 
@@ -31,7 +31,7 @@ OutlookのBookingsには、次の 2 つの異なるビューがあります。
     - パブリック会議は、Outlook ページ リンクにBookingsがあるすべてのユーザーが表示およびスケジュール設定できます。 そのリンクを共有するユーザーを制御できます。 すべてのパブリック会議の種類は、Outlookページ リンクにBookingsがあるすべてのユーザーに表示されます。
     - プライベート会議は、その会議の種類のリンクを持つユーザーのみが表示できます。 パブリック会議とプライベート会議の違いは、プライベート会議には異なるリンクを持つ可能性があり、リンクは 90 日後に期限切れになる場合があります。 プライベート リンクは、1 回限りの予約後に期限切れに設定することもできます。 プライベート会議のスケジュール設定ビューにアクセスすると、その会議の種類のみが表示されます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 OutlookのBookingsは、次のサブスクリプションで使用できます。
 
@@ -80,13 +80,13 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
     - 組織のOutlookでBookingsをオフにするには、次のコマンドを実行して **EwsAllowList** から **MicrosoftOWSPersonalBookings** (存在する場合) を削除します。  
 
    ```PowerShell
-   Set-OrganizationConfig - EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     - 組織のOutlookでBookingsを有効にするには、次のコマンドを実行して **、MicrosoftOWSPersonalBookings** を **EwsAllowList** に追加します。  
 
    ```PowerShell
-   Set-OrganizationConfig - EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-OrganizationConfig -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     **B**. **EwsApplicationAccessPolicy** の値が **EnforceBlockList** の場合、**EwsBlockList** に指定されているものを除くすべてのアプリケーションに EWS と REST へのアクセスが許可されます。
@@ -134,13 +134,13 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
     - このユーザーのOutlookでBookingsをオフにするには、次のコマンドを実行して **EwsAllowList** から **MicrosoftOWSPersonalBookings** が存在する場合は削除します。
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com - EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
     - このユーザーのOutlookでBookingsを有効にし、次のコマンドを実行して **、EwsAllowList** に **MicrosoftOWSPersonalBookings** を追加します。
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com - EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsAllowList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     **B**. **EwsApplicationAccessPolicy** の値が **EnforceBlockList** の場合、**EwsBlockList** に指定されているものを除くすべてのアプリケーションに EWS と REST へのアクセスが許可されます。  

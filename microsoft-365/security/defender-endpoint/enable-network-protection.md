@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: d37723e45c5c4049e913422b2500b74d36c701eb
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789714"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363267"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -38,7 +38,7 @@ ms.locfileid: "64789714"
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-[ネットワーク保護](network-protection.md) は、フィッシング詐欺、悪用、その他の悪意のあるコンテンツをインターネット上でホストする可能性のある危険なドメインに、従業員がアプリケーションを使用してアクセスできないようにするのに役立ちます。 テスト環境で [ネットワーク保護を監査](evaluate-network-protection.md) して、どのアプリを有効にする前にブロックされるかを確認できます。
+[ネットワーク保護](network-protection.md) は、フィッシング詐欺、悪用、その他の悪意のあるコンテンツをインターネット上でホストする可能性のある危険なドメインに、従業員がアプリケーションを使用してアクセスできないようにするのに役立ちます。 テスト環境で [ネットワーク保護を監査して、ネットワーク保護](evaluate-network-protection.md) を有効にする前にブロックされるアプリを確認できます。
 
 [ネットワーク フィルターの構成オプションの詳細について説明します。](/mem/intune/protect/endpoint-protection-windows-10#network-filtering)
 
@@ -140,27 +140,19 @@ ms.locfileid: "64789714"
    > [!IMPORTANT]
    > ネットワーク保護を完全に有効にするには、グループ ポリシー オプションを **[有効]** に設定し、[オプション] ドロップダウン メニューで **[ブロック**] を選択する必要があります。
 
-レジストリ エディターを使用して、ローカル コンピューターでネットワーク保護が有効になっていることを確認します。
-
-1. **[スタート] を** 選択し、「**regedit」** と入力して **レジストリ エディター** を開きます。
-
-2. **HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection\EnableNetworkProtection** に移動する
-
-3. **EnableNetworkProtection を** 選択し、値を確認します。
-   - 0=Off
-   - 1=オン
-   - 2=監査
+   > [!NOTE]
+   > オプション: [ネットワーク保護が有効になっているかどうかを確認](#check-if-network-protection-is-enabled)するの手順に従って、グループ ポリシーの設定が正しいことを確認します。
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
 1. Configuration Manager コンソールを開きます。
 
-2. **資産とコンプライアンス** > **Endpoint Protection Windows Defender** >  **Exploit Guard** に移動します。 
+2. **資産とコンプライアンス** > **Endpoint Protection Windows Defender** >  **Exploit Guard** に移動します。
 
 3. リボンから **[Exploit Guard Policy の作成** ] を選択して、新しいポリシーを作成します。
    - 既存のポリシーを編集するには、ポリシーを選択し、リボンまたは右クリック メニューから **[プロパティ** ] を選択します。 [ **ネットワーク保護** ] タブから [ **ネットワーク保護** の構成] オプションを編集します。  
 
-4. [ **全般** ] ページで、新しいポリシーの名前を指定し、 **ネットワーク保護** オプションが有効になっていることを確認します。 
+4. [ **全般** ] ページで、新しいポリシーの名前を指定し、 **ネットワーク保護** オプションが有効になっていることを確認します。
 
 5. [ **ネットワーク保護** ] ページで、[ **ネットワーク保護の構成** ] オプションで次のいずれかの設定を選択します。
    - **Block**

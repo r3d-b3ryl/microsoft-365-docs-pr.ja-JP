@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64b9c044a463e940b0d9862221ca854fe0eebfdc
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182652"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363316"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -90,7 +90,7 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
   > [!NOTE]
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 *および* Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ## <a name="configure-the-tenant-allowblock-list"></a>テナント許可/ブロック リストを構成する
 
@@ -248,7 +248,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - ワイルドカード (*) は、次のシナリオで使用できます。
 
-  - サブドメインを指定するには、左側のワイルドカードの後にピリオドが続く必要があります。
+  - サブドメインを指定するには、左側のワイルドカードの後にピリオドが続く必要があります。 (ブロックにのみ適用)
 
     たとえば、 `*.contoso.com` 許可されます。 `*contoso.com` 許可されません。
 
@@ -265,8 +265,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - 左側のチルダは、ドメインとすべてのサブドメインを意味します。
 
     たとえば`~contoso.com`、次のものが含まれます`contoso.com`。`*.contoso.com`
-
-- すべてのプロトコルに URL エントリが適用されるため、プロトコル (たとえば、 `http://`、、 `https://`、 `ftp://`) を含む URL エントリは失敗します。
 
 - ユーザー名またはパスワードはサポートされていないか、必須ではありません。
 
@@ -285,7 +283,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **一致を許可** する: contoso.com
 
 - **一致しない許可**:
-
   - abc-contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -295,7 +292,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
   - www.contoso.com/q=a@contoso.com
 
 - **ブロックの一致**:
-
   - contoso.com
   - contoso.com/a
   - payroll.contoso.com
@@ -308,15 +304,16 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 #### <a name="scenario-left-wildcard-subdomain"></a>シナリオ: 左ワイルドカード (サブドメイン)
 
+> [!NOTE]
+> このシナリオは、ブロックにのみ適用されます。
+
 **エントリ**: `*.contoso.com`
 
-- **一致** と **ブロックの一致** を許可する:
-
+- **ブロックの一致**:
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **[一致しない]** と [ **ブロックが一致しない]** を許可します。
-
+- **一致しないブロック**:
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
@@ -327,13 +324,11 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 **エントリ**: `contoso.com/a/*`
 
 - **一致** と **ブロックの一致** を許可する:
-
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
 - **[一致しない]** と [ **ブロックが一致しない]** を許可します。
-
   - contoso.com
   - contoso.com/a
   - www.contoso.com
@@ -344,13 +339,11 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 **エントリ**: `~contoso.com`
 
 - **一致** と **ブロックの一致** を許可する:
-
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
 - **[一致しない]** と [ **ブロックが一致しない]** を許可します。
-
   - 123contoso.com
   - contoso.com/abc
   - www.contoso.com/abc
@@ -360,7 +353,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 **エントリ**: `contoso.com/*`
 
 - **一致** と **ブロックの一致** を許可する:
-
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
   - contoso.com/a/b/c
@@ -373,17 +365,19 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>シナリオ: 左ワイルドカード サブドメインと右ワイルドカード サフィックス
 
+> [!NOTE]
+> このシナリオは、ブロックにのみ適用されます。
+
 **エントリ**: `*.contoso.com/*`
 
-- **一致** と **ブロックの一致** を許可する:
-
+- **ブロックの一致**:
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
   - www.contoso.com/a
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **一致しない許可** と **一致しないブロック**: contoso.com/b
+- **一致しないブロック**: contoso.com/b
 
 #### <a name="scenario-left-and-right-tilde"></a>シナリオ: 左右のチルダ
 

@@ -1,6 +1,6 @@
 ---
 title: 情報バリアについての詳細情報
-description: Microsoft Purview の情報バリアについて説明します。
+description: Microsoft Purviewの情報バリアについて説明します。
 keywords: Microsoft 365、Microsoft Purview、コンプライアンス、情報バリア
 ms.author: robmazz
 author: robmazz
@@ -17,46 +17,35 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72a53580222b315f86fd397e391b026937b8035b
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 214a2614b6ca7381bbded39ff5f5143236f6c001
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287180"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363120"
 ---
 # <a name="learn-about-information-barriers"></a>情報バリアについての詳細情報
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft クラウド サービスには、強力なコミュニケーションおよびコラボレーション機能が搭載されています。 ただし、組織内で競合が発生しないように、2 つのグループ間の通信とコラボレーションを制限するとします。 または、内部情報を保護するために、組織内の特定のユーザー間のコミュニケーションとコラボレーションを制限したい場合もあります。 Microsoft 365では、グループや組織間のコミュニケーションとコラボレーションが可能になるため、必要に応じて特定のユーザー グループ間の通信とコラボレーションを制限する方法はありますか? Microsoft Purview Information Barriers (IB) を使用すると、次のことができます。
+Microsoft Purview情報バリア (IB) は、Microsoft Teams、SharePoint Online、OneDrive for Businessのグループとユーザー間の双方向通信とコラボレーションを制限できるコンプライアンス ソリューションです。 規制の厳しい業界でよく使用される IB は、関心の対立を回避し、ユーザーと組織領域間の内部情報を保護するのに役立ちます。
 
-Microsoft Teams、SharePoint Online、およびOneDrive for Businessは、情報バリアをサポートします。 [サブスクリプション](#required-licenses-and-permissions)に情報バリア、コンプライアンス管理者、または情報バリアが含まれていると仮定すると、管理者は、Microsoft Teams内のユーザーグループ間の通信を許可または禁止するポリシーを定義できます。 情報バリア ポリシーは、次のような状況で使用できます。
+IB ポリシーが適用されている場合、他の特定のユーザーとファイルの通信や共有を行わないユーザーは、それらのユーザーを検索、選択、チャット、または呼び出すことはできません。 IB ポリシーでは、定義されたグループとユーザー間の不正な通信とコラボレーションを検出して防止するためのチェックが自動的に実施されます。 IB ポリシーは、電子情報開示マネージャーが検索できるユーザー コンテンツの場所を制御する電子情報開示調査の [コンプライアンス境界](/microsoft-365/compliance/set-up-compliance-boundaries) から独立しています。
 
-- その日のトレーダー グループのユーザーは、マーケティング チームとファイルを通信したり共有したりしないでください
+IB ポリシーでは、次のシナリオ例で、グループとユーザー間の通信とコラボレーションを許可または禁止できます。
+
+- *Day Trader* グループのユーザーは、*マーケティング チーム* とファイルを通信したり共有したりしないでください。
 - 会社の機密情報に取り組む財務担当者は、組織内の特定のグループとファイルを通信したり共有したりしないでください
 - 営業秘密資料を持つ内部チームは、組織内の特定のグループのユーザーとオンラインで通話したりチャットしたりしないでください。
 - リサーチ チームは、製品開発チームとオンラインでのみ通話またはチャットする必要があります
-- 日の取引グループのサイトは、その日の取引グループ以外のユーザーが共有したりアクセスしたりしないでください。
+- *Day Trader* グループのSharePoint サイトは、*Day* Trader グループ以外のユーザーが共有したりアクセスしたりしないでください。
 
 > [!IMPORTANT]
-> 情報バリア ***唯一のサポート** _ 双方向の制限。 マーケティングなどの一方向の制限では、日次業者と通信して共同作業できますが、日次業者はマーケティング _*と通信して共同作業 _することはできません_**。
+> 情報バリアでは、双方向の通信とコラボレーションの制限 **のみがサポート** されます。 たとえば、マーケティングが Day Traders と通信して共同作業できるが、Day Traders がマーケティングと通信して共同作業できないシナリオ **はサポートされていません**。
 
-これらのシナリオ例 (およびその他) のすべてについて、情報バリア ポリシーを定義して、Microsoft Teams、SharePoint Online、OneDriveでの通信とコラボレーションを防止または許可することができます。 このようなポリシーを使用すると、ユーザーが不要なユーザーと通話またはチャットしたり、Microsoft Teams内の特定のグループとのみ通信したりできなくなります。 情報バリア ポリシーが有効になっている場合、これらのポリシーの対象となるユーザーがMicrosoft Teamsで他のユーザーと通信および共同作業を行おうとするたびに、SharePoint Online またはOneDriveチェックが行われ、(情報バリア ポリシーによって定義される) 通信とコラボレーションが防止 (または許可) されます。
+## <a name="information-barriers-and-microsoft-teams"></a>情報バリアとMicrosoft Teams
 
-情報バリアに関するユーザー エクスペリエンスの詳細については、次を参照してください。
-
-- [Microsoft Teams の情報バリア](/MicrosoftTeams/information-barriers-in-teams)
-- [SharePoint Online の情報バリア](/sharepoint/information-barriers)
-- [OneDriveの情報バリア](/onedrive/information-barriers)
-
-> [!IMPORTANT]
-> 現時点では、情報バリアは電子メール通信には適用されません。 さらに、情報バリアは [コンプライアンスの境界](set-up-compliance-boundaries.md)から独立しています。<p> 情報バリア ポリシーを定義して適用する前に、組織に[Exchangeアドレス帳ポリシー](/exchange/address-books/address-book-policies/address-book-policies)が有効になっていないことを確認してください。 (情報バリアはアドレス帳ポリシーに基づいています。
-
-## <a name="what-happens-with-information-barriers"></a>情報バリアで何が起こるか
-
-情報バリア ポリシーが適用されている場合、他の特定のユーザーとファイルを通信したり共有したりすべきでないユーザーは、それらのユーザーを検索、選択、チャット、または呼び出すことはできません。 情報バリアにより、不正な通信とコラボレーションを防ぐためのチェックが行われます。
-
-情報バリアは、Microsoft Teams (チャットとチャネル)、SharePoint Online、OneDriveに適用されます。 Microsoft Teams では、情報バリア ポリシーは、次の種類の無許可の通信を決定し、防止します。
+Microsoft Teamsでは、IB ポリシーによって、次の種類の不正な通信とコラボレーションが決定され、防止されます。
 
 - ユーザーの検索
 - チームにメンバーを追加する
@@ -66,49 +55,33 @@ Microsoft Teams、SharePoint Online、およびOneDrive for Businessは、情報
 - 画面を共有する
 - 電話をかける
 - 別のユーザーとファイルを共有する
-- 共有リンクを使用したファイルへのアクセス
+- リンクを共有してファイルにアクセスする
 
-関係するユーザーが、活動を防止する情報バリア ポリシーに含まれている場合、続行できません。 さらに、情報バリア ポリシーに含まれているすべてのユーザーは、Microsoft Teams で他のユーザーと通信できないようにすることができます。 情報バリア ポリシーの影響を受けるユーザーが同じチームまたはグループ チャットの一部である場合、それらのユーザーがチャット セッションから削除され、グループとのそれ以上の通信が許可されないことがあります。
+Microsoft Teamsでこれらのアクティビティを実行しているユーザーが、アクティビティを防止するために IB ポリシーに含まれている場合、ユーザーは続行できません。 さらに、IB ポリシーに含まれるすべてのユーザーが、Microsoft Teamsの他のユーザーとの通信をブロックされる可能性があります。 IB ポリシーの影響を受けるユーザーが同じチームまたはグループ チャットの一部である場合は、それらのチャット セッションから削除され、グループとのそれ以上のコミュニケーションが許可されない場合があります。
 
-情報バリアに関するユーザー エクスペリエンスの詳細については、[Microsoft Teamsの情報バリアに関するページを](/MicrosoftTeams/information-barriers-in-teams)参照してください。
+詳細については、「[Microsoft Teamsの情報バリア](/MicrosoftTeams/information-barriers-in-teams)」を参照してください。
 
-SharePoint Online およびOneDriveでは、情報バリア ポリシーによって、次の種類の承認されていないコラボレーションが決定され、防止されます。
+## <a name="information-barriers-and-sharepoint-and-onedrive"></a>情報バリアとSharePointとOneDrive
+
+SharePoint Online とOneDriveでは、IB ポリシーによって、次の種類の承認されていないコラボレーションが検出され、防止されます。
 
 - サイトへのメンバーの追加
 - ユーザーによるサイトまたはコンテンツへのアクセス
 - 別のユーザーとサイトまたはコンテンツを共有する
 - サイトの検索
 
-情報バリアに関するユーザー エクスペリエンスの詳細については、「[SharePoint Online の情報バリア](/sharepoint/information-barriers)」を参照してください。
+詳細については、「[SharePointの情報バリア](/sharepoint/information-barriers)」と「[OneDriveの情報バリア」を](/onedrive/information-barriers)参照してください。
 
-## <a name="required-licenses-and-permissions"></a>必要なライセンスとアクセス許可
+## <a name="information-barriers-and-exchange-online"></a>情報バリアとExchange Online
 
-IB の使用を開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans)とアドオンを確認する必要があります。 IB にアクセスして使用するには、組織に次のいずれかのサブスクリプションまたはアドオンが必要です。
+IB ポリシーを使用して、電子メール メッセージ内のグループとユーザー間の通信とコラボレーションを制限することはできません。 IB ポリシーは、[Exchange Online アドレス帳ポリシー (ABP) に](/exchange/address-books/address-book-policies/address-book-policies)基づいています。 ABP を使用すると、組織は、組織のグローバル アドレス帳 (GAL) のカスタマイズされたビューを提供するために、ユーザーを特定のグループに仮想的に割り当てることができます。 IB ポリシーが作成されると、ポリシーの ABP が自動的に作成されます。 組織に IB ポリシーが追加されると、GAL の構造と動作は IB ポリシーに準拠するように変更されます。
 
-- Microsoft 365 E5/A5 サブスクリプション (有料または試用版)
-- Office 365 E5/A5/A3/A1 サブスクリプション (有料または試用版)
-- Office 365 Advanced Compliance アドオン (新しいサブスクリプションでは使用できなくなります)
-- Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 コンプライアンス アドオン
-- Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 Insider Risk Management アドオン
+IB ポリシーを定義して適用する前に、組織内のすべての既存のExchangeアドレス帳ポリシーを削除する必要があります。 IB ポリシーはアドレス帳ポリシーに基づいており、既存の ABPs ポリシーは IB によって作成された ABP と互換性がありません。 既存のアドレス帳ポリシーを削除するには、「[Exchange Onlineでアドレス帳ポリシーを削除する](/exchange/address-books/address-book-policies/remove-an-address-book-policy)」を参照してください。 IB ポリシーが有効になり、階層アドレス帳が有効になっている場合は、IB セグメントに含まれていないすべてのユーザーに、オンラインExchange[階層アドレス帳](/exchange/address-books/hierarchical-address-books/hierarchical-address-books)が表示されます。
 
-詳細については、[セキュリティ&コンプライアンスに関するMicrosoft 365ライセンスガイダンスに関するページを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)参照してください。
+現在、IB ポリシーでは、Exchange Onlineデプロイのみがサポートされています。 組織で電子メール通信を定義および制御する必要がある場合は、[Exchangeメール フロー ルールの](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)使用を検討してください。
 
-[情報バリア ポリシーを定義または編集](information-barriers-policies.md)するには、次のいずれかのロールを割り当てる必要があります。
+## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-- Microsoft 365 グローバル管理者
-- Office 365 グローバル管理者
-- コンプライアンス管理者
-- IB コンプライアンス管理
-
-(ロールとアクセス許可の詳細については、「[Office 365 セキュリティ & コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください)。
-
-情報バリア ポリシーを定義、検証、または編集するには、PowerShell コマンドレットに精通している必要があります。 方法に関する [記事](information-barriers-policies.md)では PowerShell コマンドレットの例をいくつか紹介していますが、組織のパラメーターなどのその他の詳細を把握しておく必要があります。
-
-## <a name="next-steps"></a>次の手順
-
-- [Microsoft Teamsの情報バリアの詳細を確認する](/MicrosoftTeams/information-barriers-in-teams)
-- [SharePoint Online の情報バリアの詳細](/sharepoint/information-barriers)
-- [OneDriveの情報バリアの詳細を確認する](/onedrive/information-barriers)
+- [情報バリアの使用を開始する](information-barriers-policies.md)
+- [情報バリア ポリシーを管理する](information-barriers-edit-segments-policies.md)
 - [情報バリア ポリシーに使用できる属性を確認する](information-barriers-attributes.md)
-- [情報バリアに対するポリシーを定義する](information-barriers-policies.md)
-- [情報バリア ポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)

@@ -15,21 +15,23 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: WindowsとOffice展開ラボ キットにアクセスする場所について説明します。
-ms.openlocfilehash: 70a7e5d1c44e0fb80860ce0a1932b00616dcfe94
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: cbcde8f0593adb54d3496156b1bf83dca1cd5064
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952690"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363084"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows と Office 365 展開ラボ キット
 
 WindowsとOffice 365の展開ラボ キットは、Windows 10 EnterpriseまたはWindows 11 Enterpriseを実行するデスクトップの展開と管理を計画、テスト、検証するのに役立ちます。Microsoft 365 Apps for enterprise。 キット内のラボでは、Microsoft Endpoint Configuration Manager、OneDrive、Windows Autopilot などを使用します。 このキットは、デスクトップ アップグレードの準備をしている組織に強くお勧めします。 分離された環境として、ラボは、デプロイ ツールの更新プログラムの探索や、デプロイ関連の自動化のテストにも最適です。
 
-**展開ラボ キットのWindows 10およびWindows 11バージョンは、Microsoft Evaluation Center で無料でダウンロードできるようになりました。**
+ラボには、次の 2 つのバージョンが無料でダウンロードできます。  
 
-[Office 365デプロイ ラボ キットを使用してWindows 11をダウンロードする](https://www.microsoft.com/evalcenter/evaluate-windows-11-office-365-lab-kit)<br>
-[Office 365デプロイ ラボ キットを使用してWindows 10をダウンロードする](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
+|Windows 10 ラボ|Windows 11 ラボ|
+|---|---|
+|[Win 10 ラボ環境](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Win 11 ラボ環境](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Win 10 ラボ ガイド](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab_guides.zip)|[Win 11 ラボ ガイド](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>完全なラボ環境
 
@@ -38,7 +40,7 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 |Windows 10 ラボ|Windows 11 ラボ|
 |---|---|
 |Windows 10 Enterpriseバージョン 21H1|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Manager、バージョン 2103|Microsoft Endpoint Configuration Manager Version 2111|
+|Microsoft Endpoint Configuration Managerバージョン 2203|Microsoft Endpoint Configuration Managerバージョン 2203|
 |Windows 10 用 Windows アセスメント & デプロイメント キット|Windows 11のWindows評価と展開キット|
 |Windows Server 2019|Windows Server 2022|
 
@@ -96,7 +98,7 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 - Windows Hello for Business
 
 > [!NOTE]
-> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 Windows 10 ラボの有効期限は 2022 年 5 月 16 日です。 Windows 11 ラボの有効期限は 2022 年 5 月 6 日です。 新しいバージョンは、有効期限が切れる前に発行されます。
+> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 Windows 10 ラボの有効期限は 2022 年 5 月 16 日です。 Windows 11 ラボの有効期限は 2022 年 8 月 7 日です。 新しいバージョンは、有効期限が切れる前に発行されます。
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

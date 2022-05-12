@@ -11,19 +11,21 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365の顧客キーを設定する方法について説明します。
-ms.openlocfilehash: 38b8a73a1c4654e1922f4f8e4600727a978af431
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: カスタマー キーを設定する方法について説明します。
+ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
+ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759968"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65363172"
 ---
 # <a name="set-up-customer-key"></a>カスタマー キーを設定する
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 Customer Key を使用すると、組織の暗号化キーを制御し、それらを使用して Microsoft のデータ センターで保存データを暗号化するようにMicrosoft 365を構成します。 つまり、カスタマー キーを使用すると、顧客は自分のキーを使用して、自分に属する暗号化レイヤーを追加できます。
 
-カスタマー キーをOffice 365に使用する前に、Azure を設定します。 この記事では、必要な Azure リソースを作成して構成するために従う必要がある手順について説明し、Office 365で Customer Key を設定する手順について説明します。 Azure を設定した後、組織内のさまざまなMicrosoft 365ワークロード間でデータを暗号化するために割り当てるポリシーとそのキーを決定します。 カスタマー キーの詳細、または一般的な概要については、[Office 365のカスタマー キーを使用したサービス暗号化に関する](customer-key-overview.md)ページを参照してください。
+カスタマー キーを使用する前に Azure を設定します。 この記事では、必要な Azure リソースを作成して構成するために従う必要がある手順について説明し、カスタマー キーを設定する手順について説明します。 Azure を設定した後、組織内のさまざまなMicrosoft 365ワークロード間でデータを暗号化するために割り当てるポリシーとそのキーを決定します。 カスタマー キーの詳細については、または一般的な概要については、「[カスタマー キーを使用したサービスの暗号化Microsoft Purview](customer-key-overview.md)参照してください。
   
 > [!IMPORTANT]
 > この記事のベスト プラクティスに従うことを強くお勧めします。 これらは **TIP** と **IMPORTANT** と呼ばれます。 Customer Key を使用すると、組織全体と同じ範囲のルート暗号化キーを制御できます。 つまり、これらのキーを使用したミスは広範な影響を及ぼし、サービスの中断やデータの取り消し不可能な損失につながる可能性があります。
@@ -43,7 +45,7 @@ Customer Key を使用すると、組織の暗号化キーを制御し、それ�
 
 既存のOffice 365 Advanced Compliance ライセンスは引き続きサポートされます。
 
-この記事の概念と手順については、[Azure Key Vault](/azure/key-vault/)のドキュメントを参照してください。 また、テナントなど、Azure で使用される用語[Azure AD理解します](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)。
+この記事の概念と手順については、[Azure Key Vault](/azure/key-vault/)のドキュメントを参照してください。 また、Azure [AD テナント](/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)など、Azure で使用される用語についても理解してください。
   
 ドキュメント以外のサポートが必要な場合は、Microsoft Consulting Services (MCS)、Premier Field Engineering (PFE)、または Microsoft パートナーにお問い合わせください。 ドキュメントを含む Customer Key に関するフィードバックを提供するには、アイデア、提案、およびパースペクティブを customerkeyfeedback@microsoft.com に送信します。
   
@@ -86,7 +88,7 @@ Azure Key Vaultでこれらのタスクを完了します。 Customer Key で使
   
 ### <a name="create-two-new-azure-subscriptions"></a>2 つの新しい Azure サブスクリプションを作成する
 
-カスタマー キーには、2 つの Azure サブスクリプションが必要です。 ベスト プラクティスとして、カスタマー キーで使用する新しい Azure サブスクリプションを作成することをお勧めします。 Azure Key Vault キーは、同じAzure Active Directory (Microsoft Azure Active Directory) テナント内のアプリケーションに対してのみ承認できます。DEP が割り当てられる組織で使用されるのと同じAzure AD テナントを使用して新しいサブスクリプションを作成する必要があります。 たとえば、組織内のグローバル管理者特権を持つ職場または学校アカウントを使用します。 詳細な手順については、「 [組織として Azure にサインアップする」を](/azure/active-directory/fundamentals/sign-up-organization)参照してください。
+カスタマー キーには、2 つの Azure サブスクリプションが必要です。 ベスト プラクティスとして、カスタマー キーで使用する新しい Azure サブスクリプションを作成することをお勧めします。 Azure Key Vault キーは、同じAzure Active Directory (Microsoft Azure Active Directory) テナント内のアプリケーションに対してのみ承認できます。DEP が割り当てられる組織で使用されるのと同じ Azure AD テナントを使用して新しいサブスクリプションを作成する必要があります。 たとえば、組織内のグローバル管理者特権を持つ職場または学校アカウントを使用します。 詳細な手順については、「 [組織として Azure にサインアップする」を](/azure/active-directory/fundamentals/sign-up-organization)参照してください。
   
 > [!IMPORTANT]
 > Customer Key には、データ暗号化ポリシー (DEP) ごとに 2 つのキーが必要です。 これを実現するには、2 つの Azure サブスクリプションを作成する必要があります。 ベスト プラクティスとして、組織の個別のメンバーが各サブスクリプションで 1 つのキーを構成することをお勧めします。 これらの Azure サブスクリプションは、Office 365の暗号化キーを管理するためにのみ使用する必要があります。 これにより、オペレーターの 1 人が誤って、意図的に、または悪意を持って削除したり、責任を負うキーを誤って管理したりする場合に、組織を保護します。
@@ -144,7 +146,7 @@ Azure Key Vaultでこれらのタスクを完了します。 Customer Key で使
 
 - すべてのテナント ユーザーに対して DEP を割り当てて SharePoint Online コンテンツとOneDrive for Businessコンテンツ (Teams ファイルを含む) を割り当てる場合は、[spock@microsoft.com](mailto:spock@microsoft.com) にお問い合わせください。
 
-- すべてのテナント ユーザーの複数のMicrosoft 365 ワークロード (Exchange Online、Teams、MIP EDM) 間でコンテンツを暗号化するために DEP を割り当てるカスタマー キーを有効にするには、[m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com) にお問い合わせください。
+- すべてのテナント ユーザーに対して複数のMicrosoft 365ワークロード (Exchange Online、Teams、Microsoft Purview 情報保護) 間でコンテンツを暗号化するために DEP を割り当てるカスタマー キーを有効にするには、[m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com) にお問い合わせください。
 
 - メールに次の情報を含めます。
 
@@ -212,13 +214,13 @@ Customer Key を使用するMicrosoft 365 サービスごとに、作成した 2
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   例:
+   次に例を示します。
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- Azure Key Vault自体に対するアクセス許可を変更できる **Key Vault 共同作成者**。 従業員がチームを離れるか、チームに参加するときに、これらのアクセス許可を変更する必要があります。 キー コンテナー管理者が正当にキーを削除または復元するためのアクセス許可を必要とすることはまれですが、アクセス許可を変更する必要もあります。 このキー コンテナー共同作成者のセットには、キー コンテナーの **共同作成者** ロールが付与されている必要があります。 このロールは、Azure Resource Managerを使用して割り当てることができます。 詳細な手順については、「[Role-Based Access Controlを使用して Azure サブスクリプション リソースへのアクセスを管理する](/azure/active-directory/role-based-access-control-configure)」を参照してください。 サブスクリプションを作成する管理者は、このアクセス権を暗黙的に持ち、他の管理者を共同作成者ロールに割り当てることができます。
+- Azure Key Vault自体に対するアクセス許可を変更できる **Key Vault 共同作成者**。 従業員がチームを離れるか、チームに参加するときに、これらのアクセス許可を変更する必要があります。 キー コンテナー管理者が正当にキーを削除または復元するためのアクセス許可を必要とすることはまれですが、アクセス許可を変更する必要もあります。 このキー コンテナー共同作成者のセットには、キー コンテナーの **共同作成者** ロールが付与されている必要があります。 このロールは、Azure Resource Manager を使用して割り当てることができます。 詳細な手順については、「[Role-Based Access Controlを使用して Azure サブスクリプション リソースへのアクセスを管理する](/azure/active-directory/role-based-access-control-configure)」を参照してください。 サブスクリプションを作成する管理者は、このアクセス権を暗黙的に持ち、他の管理者を共同作成者ロールに割り当てることができます。
 
 - Customer Key に使用するすべてのキー コンテナーに対して **アプリケーションをMicrosoft 365するアクセス許可** は、wrapKey、unwrapKey、および対応するMicrosoft 365 サービス プリンシパルに対するアクセス許可を付与する必要があります。
 
@@ -232,7 +234,7 @@ Customer Key を使用するMicrosoft 365 サービスごとに、作成した 2
    - *コンテナー名* は、作成したキー コンテナーの名前です。
    - Exchange OnlineとSkype for Businessの場合は、*Office 365 appID を*`00000002-0000-0ff1-ce00-000000000000`
    - SharePoint Online、OneDrive for Business、Teams ファイルの場合は、*Office 365 appID* を`00000003-0000-0ff1-ce00-000000000000`
-   - すべてのテナント ユーザーに適用されるマルチワークロード ポリシー (Exchange、Teams、Microsoft Information Protection) の場合は、*Office 365 appID* を`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - すべてのテナント ユーザーに適用されるマルチワークロード ポリシー (Exchange、Teams、Microsoft Purview 情報保護) の場合は、*Office 365 appID* を`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   例: Exchange OnlineとSkype for Businessのアクセス許可を設定します。
 
@@ -342,7 +344,7 @@ Microsoft 365では、Azure Key Vault サブスクリプションが [キャン�
 ### <a name="back-up-azure-key-vault"></a>Azure Key Vaultのバックアップ
 
 作成またはキーの変更の直後に、バックアップを実行し、オンラインとオフラインの両方でバックアップのコピーを保存します。
-Azure Key Vault キーのバックアップを作成するには、[Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) コマンドレットを実行します。
+Azure Key Vault キーのバックアップを作成するには、[Backup-AzKeyVaultKey コマンドレットを](/powershell/module/az.keyvault/backup-azkeyvaultkey)実行します。
 
 ### <a name="obtain-the-uri-for-each-azure-key-vault-key"></a>各 Azure Key Vault キーの URI を取得する
 
