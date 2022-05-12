@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cbfc82f56cc1922a663c31defe30dc61c2d3dd9b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: d97e8db205d066671b7c0d430e3dbf79f0dd6ebd
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664152"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368113"
 ---
 # <a name="exclude-devices"></a>デバイスを除外する
 
@@ -33,11 +33,11 @@ ms.locfileid: "64664152"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
-## <a name="exclude-devices-from-threat-and-vulnerability-management"></a>脅威と脆弱性の管理からデバイスを除外する
+## <a name="exclude-devices-from-vulnerability-management"></a>脆弱性の管理からデバイスを除外する
 
-非アクティブ、重複、または範囲外のデバイスを除外すると、アクティブなデバイスのリスクの検出と優先順位付けに集中できます。 このアクションは、除外されたデバイスが脅威と脆弱性の管理 レポートに表示されないため、より正確な脅威と脆弱性の管理露出スコアを反映するのにも役立ちます。
+非アクティブ、重複、または範囲外のデバイスを除外すると、アクティブなデバイスのリスクの検出と優先順位付けに集中できます。 このアクションは、除外されたデバイスが脆弱性の管理 レポートに表示されないため、より正確な脆弱性の管理露出スコアを反映するのにも役立ちます。
 
-デバイスが除外されると、これらのデバイスにインストールされている脆弱性やインストール済みソフトウェアに関する更新された情報や関連情報を表示できなくなります。 高度な捜索では、すべての脅威と脆弱性の管理ページ、レポート、および関連テーブルに影響します。
+デバイスが除外されると、これらのデバイスにインストールされている脆弱性やインストール済みソフトウェアに関する更新された情報や関連情報を表示できなくなります。 高度な捜索では、すべての脆弱性の管理ページ、レポート、および関連テーブルに影響します。
 
 デバイス除外機能は、脆弱性の管理 ページとレポートからデバイス データを削除しますが、デバイスはネットワークに接続されたままであり、組織のリスクになる可能性があります。 デバイスの除外はいつでもキャンセルできます。
 

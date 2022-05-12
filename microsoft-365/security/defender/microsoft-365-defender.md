@@ -26,12 +26,12 @@ ms.custom:
 - intro-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 99549ba8077d966c4d5649e144fa0259f9178629
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
-ms.translationtype: HT
+ms.openlocfilehash: 45e63c489093c147895c467c3471f16a8bb99918
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944351"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368333"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -47,6 +47,7 @@ Microsoft 365 Defender は、エンドポイント、ID、メール、および�
 
 <center><h2>Microsoft 365 Defender サービス</center></h2>
 <table><tr><td><center><b><a href="/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint"><b>Microsoft Defender for Endpoint</b></center></a></td>
+<td><center><b><a href="/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management"><b>Microsoft Defender 脆弱性の管理</b></center></a></td>
 <td><center><b><a href="/microsoft-365/security/office-365-security/overview"><b>Microsoft Defender for Office 365</b></center></a></td>
 <td><center><b><a href="/defender-for-identity/"><b>Microsoft Defender for Identity</b></a></center></td>
 <td><center><b><a href="/cloud-app-security/"><b>Microsoft Defender for Identity</b></a></center></td>
@@ -65,6 +66,7 @@ Microsoft 365 Defender は、エンドポイント、ID、メール、および�
 Microsoft 365 Defender サービスは次の保護を行います。
 
 - **Defender for Endpoint を使用するエンドポイント** - Defender for Endpointは、予防的保護、違反後の検出、自動調査、および対応のための統合エンドポイント プラットフォームです。
+- **Defender 脆弱性管理を使用した資産** - Microsoft Defender 脆弱性の管理は、継続的な資産の可視性、インテリジェントなリスクベースの評価、組み込みの修復ツールを提供し、セキュリティと IT チームが組織全体の重大な脆弱性や不適切な構成に優先順位を付けて対処するのに役立ちます。
 - **電子メールと Defender for Office 365 との協働** - Defender for Office 365 は、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによって引き起こされる悪意のある脅威から組織を保護します。
 - **Defender for Identity and Azure Active Directory (Azure AD) Identity Protection を使用した ID** - Defender for Identity は、オンプレミスの Active Directory Domain Services (AD DS) シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のある組織内部のアクションを識別、検出、調査します。Azure AD Identity Protection は、クラウドベースの Azure AD における ID ベースのリスクの検出と修復を自動化します。
 - **Microsoft Defender for Cloud Apps を搭載したアプリケーション** - Microsoft Defender for Cloud Apps は、高度な可視性、強力なデータ制御、強化された脅威からの保護をクラウドアプリに提供する包括的なクロス SaaS ソリューションです。

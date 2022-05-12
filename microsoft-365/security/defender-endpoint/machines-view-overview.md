@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 631a141ca6c898c6394bfd34839fd65d351fe8fc
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665538"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368179"
 ---
 # <a name="device-inventory"></a>デバイス一覧
 
@@ -30,13 +30,17 @@ ms.locfileid: "64665538"
 
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-machinesview-abovefoldlink)
 
-**デバイスの一覧** には、アラートが生成されたネットワーク内のデバイスの一覧が表示されます。 既定では、過去 30 日間に表示されたデバイスがキューに表示されます。
+**デバイス インベントリ** には、アラートが生成されたネットワーク内のデバイスの一覧が表示されます。 既定では、過去 30 日間に表示されたデバイスがキューに表示されます。
 
 一目で、ドメイン、リスク レベル、OS プラットフォームなどの情報が表示され、最も危険なデバイスを簡単に識別できます。
+
+> [!NOTE]
+> デバイス インベントリは、さまざまなMicrosoft 365 Defender サービスで使用できます。 使用できる情報は、ライセンスによって異なります。 プラン 2 を使用すると、最も完全な機能[セットMicrosoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)取得できます。
 
 デバイスリスト ビューをカスタマイズするには、いくつかのオプションを選択できます。 上部のナビゲーションでは、次の操作を行うことができます。
 

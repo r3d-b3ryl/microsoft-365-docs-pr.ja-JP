@@ -12,12 +12,12 @@ search.appverid: ''
 ms.localizationpriority: medium
 ROBOTS: ''
 description: SharePoint Syntexを使用してコントラクト ファイルを識別し、Microsoft 365 ソリューションを使用してデータを抽出する方法について説明します。
-ms.openlocfilehash: c654c72ef36bf86337b7564efc68e4523516f4f9
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7d2874260ce7a307aa42c67ba571104ed4c4da87
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60173513"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65368091"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>手順 1. SharePoint Syntexを使用してコントラクト ファイルを識別し、データを抽出する
 
@@ -44,7 +44,7 @@ ms.locfileid: "60173513"
 ## <a name="steps-to-create-and-train-your-model"></a>モデルを作成してトレーニングする手順
 
 > [!NOTE]
-> これらの手順では、 [Contracts Management Solution Assets リポジトリ](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)のサンプル ファイルを使用できます。 このリポジトリの例には、ドキュメントの理解モデル ファイルと、モデルのトレーニングに使用されるファイルの両方が含まれています。
+> これらの手順では、 [Contracts Management Solution Assets リポジトリ](https://github.com/pnp/syntex-samples/tree/main/scenario%20samples/Contracts%20Management)のサンプル ファイルを使用できます。 このリポジトリの例には、ドキュメントの理解モデル ファイルと、モデルのトレーニングに使用されるファイルの両方が含まれています。
 
 ### <a name="create-a-contract-model"></a>コントラクト モデルを作成する
 
