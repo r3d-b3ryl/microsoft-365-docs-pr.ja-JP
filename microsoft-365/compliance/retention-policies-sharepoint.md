@@ -17,16 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: ed9cc45218dde112baec8fbca997abc6e82b4d72
-ms.sourcegitcommit: 1d972f15a45204e89e268c5ff257021aced5e775
+ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/18/2022
-ms.locfileid: "64911492"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65285992"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、SharePoint と OneDrive に固有の情報が含まれています。
 
@@ -78,7 +80,7 @@ SharePoint と OneDrive では、保持する必要のあるコンテンツを�
 
 - ユーザーがラベル付きアイテムを削除できるレコード管理設定がオフになっています。
     
-    この設定を確認または変更するには、Microsoft 365 コンプライアンス センターで **[レコード管理]** ソリューションから **[レコード管理]**、 > **[レコード管理設定]**、 > **[保持ラベル]**、 > **[アイテムの削除]** の順に移動します。SharePoint と OneDrive の設定は別です。
+    この設定を確認または変更するには、Microsoft Purview コンプライアンス ポータルで、**[レコード管理]** ソリューションから **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[アイテムの削除]** の順に移動します。SharePoint と OneDrive の設定は別です。
     
     または、**[レコード管理]** ソリューションにアクセスできない場合は、[Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) および [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant) から *AllowFilesWithKeepLabelToBeDeletedSPO* と *AllowFilesWithKeepLabelToBeDeletedODB* を使用できます。
 
@@ -170,7 +172,7 @@ OneNote コンテンツを含む場所、または OneNote フォルダーに保
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
-Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-information-governance.md)」を参照してください。
+Microsoft 365 で初めてアイテム保持を構成する場合は、「[情報ガバナンスを開始する](get-started-with-data-lifecycle-management.md)」を参照してください。
 
 Exchange のアイテム保持ポリシーまたは保持ラベルを構成する準備ができたら、以下の手順をご覧ください。
 - [アイテム保持ポリシーを作成して構成する](create-retention-policies.md)

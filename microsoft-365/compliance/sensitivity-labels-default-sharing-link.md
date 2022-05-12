@@ -1,5 +1,5 @@
 ---
-title: 秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成する
+title: 秘密度ラベルを使用して既定の共有リンクの種類を構成する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -17,18 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成します。
-ms.openlocfilehash: 122a8846893b97146dc74d3a9d30ccbfe050525b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 132a526cc591f34722e4c0e8d4982859790558da
+ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319298"
+ms.lasthandoff: 05/09/2022
+ms.locfileid: "65286892"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-[秘密度ラベル](sensitivity-labels.md)の Microsoft 365 コンプライアンス センターに表示される設定の追加構成として、これらのラベルを使用して、SharePoint サイトまたは OneDrive アカウント、および個々のドキュメントの既定の共有リンクの種類の設定を構成できます。 これらの設定は自動的に選択されますが、Office アプリで **[共有]** ボタンを選択したユーザーにはあまり表示されません。 次に例を示します。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview コンプライアンス ポータルに表示される[秘密度ラベル](sensitivity-labels.md)の設定に対する追加構成として、これらのラベルは、SharePoint サイトまたは OneDrive アカウントと、個々のドキュメントに対応する既定の共有リンクの種類の設定を構成するために使用できます。 これらの設定は自動的に選択されますが、Office アプリで **[共有]** ボタンを選択したユーザーにはあまり表示されません。 次に例を示します。
 
 ![[既定の共有リンク] ダイアログ ボックスの例。](../media/default-sharing-link-example.png)
 
@@ -36,9 +38,9 @@ ms.locfileid: "63319298"
 
 サイト レベル (SharePoint サイトまたは OneDrive アカウント) では、秘密度ラベルは、SharePoint 管理センターのサイトに構成できる既定の共有リンクの種類を設定するための便利な代替手段を提供します。 詳細については、SharePoint のドキュメントから「[ サイトの既定のリンクの種類を変更する](/sharepoint/change-default-sharing-link)」を参照してください。
 
-このサイト レベルの構成は、すべて同じレベルの秘密度を持つドキュメントがある SharePoint サイトに適しています。 ただし、サイトに秘密度のレベルが高く、より制限的な設定が必要なドキュメントが含まれている場合は、デフォルトの共有リンクタイプに対して異なる設定で秘密度ラベルを構成してから、このラベルをドキュメントに適用できます。
+このサイト レベルの構成は、すべてのドキュメントの秘密度が同じレベルになっている SharePoint サイトでは適切に機能します。ただし、秘密度のレベルが高く、より制限的な設定が必要なドキュメントがサイトに含まれている場合は、既定の共有リンクの種類に異なる設定の秘密度ラベルを構成して、そのラベルをドキュメントに適用できます。
 
-サイトに既定のリンクの種類設定があり、そのサイトのドキュメントに異なる既定の共有リンクの種類があるこのシナリオでは、ユーザーがドキュメントの共有オプションを選択するときに、より制限の厳しい範囲設定が適用されます。 例:
+このシナリオのように、サイトに既定のリンクの種類が設定されていて、そのサイト内のドキュメントに別の既定の共有リンクの種類が設定されている場合は、そのドキュメントの共有オプションをユーザーが選択するときに、より制限の厳しい範囲設定が適用されます。次に例を示します。
 
 - 既定の共有リンクの種類は、組織内のすべてのユーザーを対象としています。 そのサイト内のドキュメントには、既定の共有リンクの種類が特定のユーザーに設定されたラベルが付けされます。 ユーザーがそのドキュメントを共有すると、選択された既定の共有リンクの種類が特定のユーザーを対象にします。
 
@@ -59,7 +61,7 @@ SharePoint および OneDrive のドキュメントに既定の共有リンク�
 PowerShel lセッションでは、「[Office 365 セキュリティ/コンプライアンス センター PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を行って、既定の共有リンクの種類の設定を構成する必要があります。
 
 > [!NOTE]
-> 必須ではありませんが、最初に [Microsoft 365 コンプライアンス センターで秘密度ラベルを作成および構成して](create-sensitivity-labels.md)から、既定の共有リンク タイプを構成する設定でこれらのラベルを変更するのが最も簡単です。
+> 必須ではありませんが、最初に [Microsoft Purview コンプライアンス ポータルで秘密度ラベルの作成と構成を実行して](create-sensitivity-labels.md)、既定の共有リンクの種類を構成する設定で、これらのラベルを変更することが最も簡単です。
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>既定の共有リンクの種類の設定を構成する方法
 
@@ -90,11 +92,11 @@ PowerShell の例、秘密度ラベル GUID は **8faca7b8-8d20-48a3-8ea2-0f9631
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
-サイトの既定の共有リンクの種類の設定を構成するには、Microsoft 365 コンプライアンス センターで秘密度ラベルを作成するときに、[秘密度ラベルの範囲](sensitivity-labels.md#label-scopes)に **[グループとサイト]** を含める必要があります。 作成後、**[ラベル]** ページの **[範囲]** 列に **サイト、UnifiedGroup** として表示され、PowerShell *ContentType* 設定にも同じ値が表示されます。 ドキュメントの場合、範囲には **[ファイルとメール]** が含まれている必要があります。これらは **[ファイル、メール]** として表示されます。 その後で以下の手順に従います。
+サイトの既定の共有リンクの種類の設定を構成するには、Microsoft Purview コンプライアンス ポータルで秘密度ラベルを作成するときに、[秘密度ラベルの範囲](sensitivity-labels.md#label-scopes)に **[グループとサイト]** を含める必要があります。 作成後、**[ラベル]** ページの **[範囲]** 列に **サイト、UnifiedGroup** として表示され、PowerShell *ContentType* 設定にも同じ値が表示されます。 ドキュメントの場合、範囲には **[ファイルとメール]** が含まれている必要があります。これらは **[ファイル、メール]** として表示されます。 その後で以下の手順に従います。
 
 - 範囲に **[グループとサイト]** が含まれている場合、そのサイトのデフォルトの共有リンクタイプを設定するラベルをサイトに適用できます。 サイトに秘密度ラベルを適用する方法については、「[コンテナーに秘密度ラベルを適用する](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers)」を参照してください。
 
-- 秘密度ラベルの範囲に **[ファイルとメール]** が含まれている場合、そのラベルをドキュメントに適用できます。これにより、そのドキュメントの既定の共有リンクタイプが設定されます。 [手動](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)で、または[自動的に](apply-sensitivity-label-automatically.md)適用することができます。
+- 秘密度ラベルの範囲に **[ファイルとメール]** が含まれている場合、そのラベルをドキュメントに適用できます。これにより、そのドキュメントの既定の共有リンクの種類が設定されます。ラベルは [手動](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)で適用することも、[自動的](apply-sensitivity-label-automatically.md)に適用することもできます。
 
 > [!TIP]
 > [ラベル ポリシー設定](sensitivity-labels.md#what-label-policies-can-do)として、ラベルが新しいサイトまたは新しいドキュメントに適用されるデフォルトの秘密度ラベルであることを指定することもできます。
