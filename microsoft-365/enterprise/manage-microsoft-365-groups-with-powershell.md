@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: この記事では、PowerShell でMicrosoft 365 グループに対して一般的な管理タスクを実行する方法について説明します。
-ms.openlocfilehash: 460444e1cb2f862f4d96ed6aad0178a146864658
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 407e242728bf37ebf8c11b8094bfa4931229e4ef
+ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806446"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65372205"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>PowerShell でMicrosoft 365 グループを管理する
 
@@ -157,15 +157,21 @@ Set-UnifiedGroup -Identity "mygroup@contoso.com" -DisplayName "My new group"
 
 OutlookのMicrosoft 365 グループは、既定でプライベートとして作成されます。 組織で既定でパブリックとして作成する (または Private に戻る) Microsoft 365 グループ必要がある場合は、次の PowerShell コマンドレット構文を使用します。
 
- `Set-OrganizationConfig -DefaultGroupAccessType Public`
+ ```powershell
+ Set-OrganizationConfig -DefaultGroupAccessType Public
+ ```
 
 非公開に設定するには:
 
- `Set-OrganizationConfig -DefaultGroupAccessType Private`
+ ```powershell
+ Set-OrganizationConfig -DefaultGroupAccessType Private
+ ```
 
 設定を確認するには:
 
- `Get-OrganizationConfig | ft DefaultGroupAccessType`
+ ```powershell
+ Get-OrganizationConfig | ft DefaultGroupAccessType
+ ```
 
 詳細については、「[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig)」および「[Get-OrganizationConfig](/powershell/module/exchange/get-organizationconfig)」を参照してください。
 

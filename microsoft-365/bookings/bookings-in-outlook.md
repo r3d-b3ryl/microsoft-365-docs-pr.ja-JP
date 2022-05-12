@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: OutlookでBookingsを使用して、他のユーザーがOutlookで自分と一緒に会議をスケジュールできるようにします。
-ms.openlocfilehash: 9f8e1c4428133dce6f6ec9e539464271abfd8ffd
-ms.sourcegitcommit: 35d0c891f3d927f3346044be61ab9f348e8da2b4
+ms.openlocfilehash: fe7a680ec5980ab1526d4ccb5f80514210bc3605
+ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/12/2022
-ms.locfileid: "65364281"
+ms.locfileid: "65372166"
 ---
 # <a name="bookings-in-outlook"></a>OutlookのBookings
 
@@ -31,7 +31,7 @@ OutlookのBookingsには、次の 2 つの異なるビューがあります。
     - パブリック会議は、Outlook ページ リンクにBookingsがあるすべてのユーザーが表示およびスケジュール設定できます。 そのリンクを共有するユーザーを制御できます。 すべてのパブリック会議の種類は、Outlookページ リンクにBookingsがあるすべてのユーザーに表示されます。
     - プライベート会議は、その会議の種類のリンクを持つユーザーのみが表示できます。 パブリック会議とプライベート会議の違いは、プライベート会議には異なるリンクを持つ可能性があり、リンクは 90 日後に期限切れになる場合があります。 プライベート リンクは、1 回限りの予約後に期限切れに設定することもできます。 プライベート会議のスケジュール設定ビューにアクセスすると、その会議の種類のみが表示されます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 OutlookのBookingsは、次のサブスクリプションで使用できます。
 
@@ -58,7 +58,7 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
 1. 次のコマンドを実行して EWS コントロールのアクセスを確認します。
 
    ```PowerShell
-   Get-Organizationconfig | Format-List EwsEnabled
+   Get-OrganizationConfig | Format-List EwsEnabled
    ```
 
     コマンドが "EwsEnabled: **$true**" を返す場合は、手順 2 に進みます。

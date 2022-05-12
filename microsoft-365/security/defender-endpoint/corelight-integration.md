@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a3d7548dc71c3a9d588d2a77fae5c4ed71f139f4
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 629d475c160d5836d155ca0374630ad64b0928b4
+ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302319"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65372023"
 ---
 # <a name="enable-corelight-data-integration"></a>Corelight データ統合
 
@@ -67,7 +67,7 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>手順 3: データをMicrosoft 365 Defenderに送信するように Corelight アプライアンスを構成する
 
 > [!NOTE]
-> この統合は、Corelight Sensor ソフトウェア v24 以降で利用できます。
+> この統合は、Corelight Sensor ソフトウェア v25 以降で利用できます。
 > 
 > ソリューションを機能させるには、センサーが Defender クラウド サービスと Corelight クラウド サービスの両方に到達するには、インターネット接続が必要です。
 
