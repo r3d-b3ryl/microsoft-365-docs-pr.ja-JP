@@ -11,18 +11,18 @@ ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: high
 ms.collection: M365-security-compliance
+ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
-ms.custom: seo-marvel-may2020
-ms.openlocfilehash: d025dc7637b9c7b494a5bff3447fe4429ba24701
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: d509d878b244054138e4e95329d00759719e131d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302203"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319049"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>ファイル計画を使用して保持ラベルを作成および管理する
 
@@ -52,9 +52,7 @@ ms.locfileid: "65302203"
 
 - 閲覧限定保持マネージャー
 
-Microsoft Purview コンプライアンス ポータルで、**[ソリューション]** > **[レコード管理]** > **[ファイル計画]** の順に移動します。
-
-![[ファイル計画] ページ](../media/compliance-file-plan.png). 
+[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)で、**[ソリューション]** > **[レコード管理]** > **[ファイル計画]** の順に移動します。
 
 **[レコード管理]** がナビゲーション ウィンドウに表示されない場合は、下にスクロールして **[すべて表示]** を選択します。
 
@@ -86,6 +84,9 @@ Microsoft Purview コンプライアンス ポータルの **[データ ライ�
 - **既定でロック解除** —現在ロール アウト中— は、ラベルの適用時にレコードとしてマークされたアイテムのロックが解除されるかどうかを識別します。有効な値は次のとおりです。
     - いいえ
     - はい
+
+- **再ラベル付け先** —現在ロールアウト中— は、保持期間の終了時に別のラベルを適用するようにラベルが構成されているかどうかを識別します。 有効な値:
+    - 空白または選択したラベル名
 
 - **保持期間** は、保持期間を識別します。有効な値は以下の通りです。
     - 日数
@@ -153,9 +154,7 @@ Microsoft Purview コンプライアンス ポータルの **[データ ライ�
 
 組織内のデータ ガバナンス関係者との定期的なコンプライアンス レビューを促進するように、ファイル計画マネージャーではすべての保持ラベルの詳細を .csv ファイルにエクスポートできます。
 
-すべての保持ラベルをエクスポートするには: [**ファイル計画**] ページで [**エクスポート**] をクリックします。
-
-![ファイル計画をエクスポートするオプション。](../media/compliance-file-plan-export-labels.png)
+すべての保持ラベルをエクスポートするには: **[ファイル計画]** ページで **[エクスポート]** をクリックします。
 
 A *.csv ファイルは既存の全ての保持ラベルを開く、を含みます。次に例を示します。
 
@@ -202,7 +201,7 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 |:-----|:-----|:-----|:-----|
 |LabelName|文字列|はい|このプロパティは、保持ラベルの名前を指定します。このプロパティは、テナント内で一意である必要があります。 インポートでサポートされる文字: a-z、A から Z、0 から 9、ハイフン (-)、およびスペース文字。|
 |コメント|文字列|いいえ|このプロパティを使用して、管理者の保持ラベルに関する説明を追加します。 この説明は、Microsoft Purview コンプライアンス ポータルで保持ラベルを管理する管理者にのみ表示されます。|
-|メモ|文字列|いいえ|このプロパティを使用して、ユーザーの保持ラベルに関する説明を追加します。 この説明は、ユーザーが Outlook、SharePoint、OneDrive などのアプリでラベルにカーソルを置いたときに表示されます。 このプロパティを空白のままにすると、ラベルの保持設定を説明する既定の説明が表示されます。 |
+|Notes|文字列|いいえ|このプロパティを使用して、ユーザーの保持ラベルに関する説明を追加します。 この説明は、ユーザーが Outlook、SharePoint、OneDrive などのアプリでラベルにカーソルを置いたときに表示されます。 このプロパティを空白のままにすると、ラベルの保持設定を説明する既定の説明が表示されます。 |
 |IsRecordLabel|文字列|いいえ、**Regulatory** が **TRUE** でない場合です|このプロパティでは、ラベルがコンテンツをレコードとしてマークするかどうかを指定します。有効な値は次のとおりです。</br>**TRUE**: ラベルはアイテムをレコードとしてマークし、その結果としてアイテムを削除できません。 </br>**FALSE**: ラベルはコンテンツをレコードとしてマークしません。これは既定値です。</br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction、 RetentionDuration、および RetentionType も指定される必要があります。|
 |RetentionAction|文字列|いいえ、**RetentionDuration**、**RetentionType**、または **ReviewerEmail** が指定されていない場合です|このプロパティは、RetentionDuration プロパティ (指定された場合) で指定された値の有効期限が切れた後に実行するアクションを指定します。有効な値は次のとおりです。</br>**Delete**: RetentionDuration プロパティで指定された値よりも古いアイテムが削除されます。</br>**Keep**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了しても何もしません。 </br>**KeepAndDelete**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了したらそれらを削除します。 </br> </br> グループの依存関係: このプロパティが指定された場合、RetentionDuration および RetentionType も指定される必要があります。 |
 |RetentionDuration|文字列|いいえ、**RetentionAction** または **RetentionType** が指定されていない場合です|このプロパティは、コンテンツを保持する日数を指定します。有効な値は次のとおりです。</br>**Unlimited**: アイテムは無期限に保持されます。 </br>**_n_*: 日付の正の整数です (例: _ **365**)。 サポート可能な最大数は 24,855 で、これは 68 年です。 この最大値よりも長い期間を必要とする場合は、代わりに Unlimited 版を使用します。</br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction および RetentionType も指定される必要があります。

@@ -1,5 +1,5 @@
 ---
-title: ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
+title: ステップ バイ ステップ ガイドを使用して、AutoPilot デバイスとプロファイルを追加する
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Windows AutoPilot を使用して、ビジネス用に新し いWindows 10 デバイスをセットアップし、従業員が使用できるようにする方法を学びます。
-ms.openlocfilehash: 6bedb478d0ef8f961c7b75eb7013b2b5e51ce2c9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: afbf793a107e286c28a589e0bbaa1a9d05ae229d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092609"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318852"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 

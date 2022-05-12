@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: モバイル デバイスの多要素認証を設定します。
-ms.openlocfilehash: 16f160eb3d489837cdd3588c3e8a68267da9ffc0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 63f5538882496ed67dacdb3428a6dd02696d21e7
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097494"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320276"
 ---
-# <a name="set-up-multi-factor-authentication-with-your-mobile-device"></a>モバイル デバイスで多要素認証を設定する
+# <a name="set-up-multifactor-authentication-with-your-mobile-device"></a>モバイル デバイスで多要素認証を設定する
 
-多要素認証では、パスワードまたはテキストを使用したコードのみを使用する代わりに、電話上の別のアプリを使用してアクセスを確認するため、セキュリティが強化されます。 これにより、ハッキングが困難になります。 MFA が必要な場合、組織のメンバーは Microsoft Authenticator アプリを使用してデバイスに安全にサインインできます。 <br/><br/>
+多要素認証 (MFA) では、パスワードまたはテキストを使用したコードのみを使用する代わりに、電話上の別のアプリを使用してアクセスを確認するため、セキュリティが強化されます。 これにより、ハッキングが困難になります。 MFA が必要な場合、組織のメンバーは Microsoft Authenticator アプリを使用してデバイスに安全にサインインできます。 <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
@@ -41,9 +41,10 @@ ms.locfileid: "65097494"
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>デバイスで Outlook アプリを使用する
 
-管理者が第一線のユーザーに MFA の使用を要求した後、認証アプリは認証の 2 番目の形式として機能します。 Outlook アプリをインストールして使用して、Microsoft 365 メールにアクセスすることをお勧めします。 スマートフォンに Outlook などの Office アプリをインストールする方法については、「[モバイル デバイスのセットアップ](../business/set-up-mobile-devices.md)」を参照してください。
+管理者が第一線のユーザーに MFA の使用を要求した後、認証アプリは認証の 2 番目の形式として機能します。 Outlook アプリをインストールして使用して、Microsoft 365 メールにアクセスすることをお勧めします。 スマートフォンに Outlook などの Office アプリをインストールする方法については、「[モバイル デバイスのセットアップ](../admin/setup/set-up-mobile-devices.md)」を参照してください。
 
 ## <a name="next-objective"></a>次の目標
 
 「[Office アプリのインストール](m365bp-install-office-apps.md)」のガイダンスに従ってください。
 
+ 

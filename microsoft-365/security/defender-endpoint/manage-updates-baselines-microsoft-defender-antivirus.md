@@ -18,17 +18,17 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6822f736cae73d7d4654f8b4310e0e397cffa677
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f427bcfbc5f8b6538c72cebea4adf6edc80a42ba
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077485"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320521"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
 > [!IMPORTANT]
-> 2022 年 3 月の Microsoft Defender エンジン更新プログラム (**1.1.19100.5**) を適用したお客様は、高いリソース使用率 (CPU またはメモリ) が発生した可能性があります。 Microsoft は、以前のバージョンで導入されたバグを解決する更新プログラム (**1.1.19200.5**) をリリースしました。 お客様は、ウイルス対策エンジン (**1.1.19200.5**) のこの新しいエンジン ビルドに更新することをお勧めします。 パフォーマンスの問題が完全に修正されるようにするには、更新プログラムを適用した後にマシンを再起動することをお勧めします。 [月次プラットフォームとエンジンのバージョン](#monthly-platform-and-engine-versions) (この記事の内容) を参照してください。
+> 2022 年 3 月の Microsoft Defender エンジン更新プログラム (**1.1.19100.5**) を適用されたお客様は、高いリソース使用率 (CPU またはメモリ) が発生した可能性があります。Microsoft では、以前のバージョンで導入されたバグを解決する更新プログラム (**1.1.19200.5**) をリリースしました。お客様は、ウイルス対策エンジン (**1.1.19200.5**) のこの新しいエンジン ビルドに更新することをお勧めします。パフォーマンスの問題が完全に修正されるようにするには、更新プログラムを適用した後にマシンを再起動することをお勧めします。この記事の、[月次プラットフォームとエンジンのバージョン](#monthly-platform-and-engine-versions)を参照してください。
 
 **適用対象:**
 - [Microsoft Defender for Endpoint プラン 1 と 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -721,6 +721,21 @@ Windows 10 リリース情報については、「[Windows ライフサイクル
 詳細については、「[Windows オペレーティング システムのインストール イメージ用の Microsoft Defender 更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)」を参照してください。
 
 <details>
+<summary>20220506.6</summary>
+
+&ensp;パッケージのバージョン: **20220506.6**<br/>
+&ensp;プラットフォームのバージョン: **4.18.2203.5**<br/>
+&ensp;エンジンのバージョン: **1.1.19200.5**<br/>
+&ensp;署名のバージョン: **1.363.1436.0**<br/>
+
+### <a name="fixes"></a>修正プログラム
+- なし
+
+### <a name="additional-information"></a>その他の情報
+- なし
+
+<br/>
+</details><details>
 <summary>20220321.1</summary>
 
 &ensp;パッケージのバージョン: **20220321.1**<br/>

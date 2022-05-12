@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
 description: Windows 10 デバイスをセキュリティで保護するために、ビジネス向けのMicrosoft 365で使用できる設定について説明します。
-ms.openlocfilehash: ef4df7b308c52275db8d43c1c0619a64594ed690
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: eb9ab2b1c1873695e6655aedf2edd64da9cf9ef2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096244"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317456"
 ---
 # <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Windows 10 PC のデバイス保護設定を編集または作成する
 
@@ -39,7 +39,7 @@ ms.locfileid: "65096244"
 > [!NOTE]
 > Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
 
-[セットアップ] ページで既定の Windows 保護設定を設定したら、すべてのユーザーまたは一連のユーザーに適用される新しい保護設定を追加できます。 作成した任意のファイルを編集することもできます。
+[セットアップ] ページで既定の Windows 保護設定を設定したら、すべてのユーザーまたは一連のユーザーに適用される新しい保護設定を追加できます。作成した任意のファイルを編集することもできます。
 
 ## <a name="watch-create-protection-settings-for-windows-10-devices"></a>Windows 10 デバイスのアプリケーション保護設定を設定する
 
@@ -98,4 +98,4 @@ Microsoft 365 Business で Windows 10 デバイスをセキュリティで保護
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md) 
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md) 

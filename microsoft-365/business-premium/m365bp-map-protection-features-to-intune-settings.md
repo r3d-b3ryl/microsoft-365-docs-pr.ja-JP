@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Microsoft 365 Business Premium の保護機能を Intune の設定に対応付ける方法について説明します。 サブスクリプションでは、Intune の設定を変更するためのライセンスが提供されます。
-ms.openlocfilehash: b5493199b7a2593097d3e4efbf1d4a405fc1ae4b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bf5b26a6ab8cbd64f9f9ef8235c194c6869c782d
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090635"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65320314"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 Business Premium の保護機能を Intune の設定に対応付ける方法
 
@@ -47,7 +47,7 @@ Intune 設定を見つけるには、Microsoft 365 Business Premium 管理者資
   
  > [!IMPORTANT]
  > 
- > Microsoft 365 Business Premium サブスクリプションでは、すべての Intune 設定を変更するためのライセンスが付与されます。 [作業を開始するには「Intune の概要](/intune/introduction-intune)」を参照してください。
+ > Microsoft 365 Business Premium サブスクリプションでは、すべての Intune 設定を変更するためのライセンスが付与されます。[作業を開始するには Intune の概要](/intune/introduction-intune)を参照してください。
   
 ポリシーの名前を選択し &mdash;(たとえば、Android のアプリケーション ポリシー)&mdash;、**[ポリシー設定]** を選びます。
   
@@ -111,4 +111,4 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

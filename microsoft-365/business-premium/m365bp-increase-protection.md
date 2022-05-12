@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium での保護レベルの向上に関するヘルプを表示する
-ms.openlocfilehash: c653e4f84ad3f4dd537ab82382e8a57da7d2876e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099909"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319135"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の脅威に対する保護を強化する
 
@@ -52,7 +52,7 @@ ms.locfileid: "65099909"
 
 ### <a name="what-are-preset-security-policies"></a>事前設定されたセキュリティ ポリシーとは?
 
-事前設定されたセキュリティ ポリシーにより、メールとコラボレーション コンテンツが保護されます。 これらのポリシーは、次の要素で構成されます:
+事前設定されたセキュリティ ポリシーにより、メールとコラボレーション コンテンツが保護されます。これらのポリシーは、次の要素で構成されます。
 
 - 保護のレベルを決定する *プロファイル*
 - *ポリシー* (スパム対策、マルウェア対策、フィッシング詐欺対策、スプーフィング設定、偽装、安全な添付ファイル、安全なリンクなど)
@@ -71,7 +71,7 @@ ms.locfileid: "65099909"
 
 ### <a name="policy-order-of-priority"></a>優先度のポリシーの順序
 
-ユーザーに複数のポリシーが割り当てられている場合は、優先度の順序を使用してポリシーを適用します。 優先度の順序は次のように機能します。
+ユーザーに複数のポリシーが割り当てられている場合は、優先度の順序を使用してポリシーを適用します。優先度の順序は次のように機能します。
 
 1. **厳密な保護** には、最も高い優先度があり、他のすべてのポリシーをオーバーライドします。
 
@@ -212,4 +212,6 @@ ms.locfileid: "65099909"
 
 ユーザーが予定表の共有を許可されている場合は、Outlook on the web から共有する方法について、[次の手順](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)を参照してください。
 
-それでは、 [**BYOD デバイスを設定**](m365bp-devices-overview.md)するミッションを開始します。
+## <a name="next-steps"></a>次の手順
+
+では、[**BYOD デバイスを設定**](m365bp-devices-overview.md)するミッションを開始しましょう。

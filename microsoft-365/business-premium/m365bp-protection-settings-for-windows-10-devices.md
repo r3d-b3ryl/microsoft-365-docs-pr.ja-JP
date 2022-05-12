@@ -1,5 +1,5 @@
 ---
-title: Windows 10 デバイスのアプリケーション保護設定を編集または設定する
+title: Windows デバイスのアプリケーション保護設定を編集または設定する
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
@@ -27,22 +27,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
-description: アプリ管理ポリシーを作成または編集し、ユーザーの個人用 Windows 10 デバイスで作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: f636c138d9364d9bc4739cc5ee11737707d32913
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: アプリ管理ポリシーを作成または編集し、ユーザーの個人用 Windows デバイスで作業ファイルを保護する方法について説明します。
+ms.openlocfilehash: e01cafb882e71537bffca3fefd2f84d57c112c7e
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096012"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318200"
 ---
-# <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Windows 10 デバイスのアプリケーション保護設定を設定または編集する
+# <a name="set-or-edit-application-protection-settings-for-windows-devices"></a>Windows デバイスのアプリケーション保護設定を設定または編集する
 
-この記事は Microsoft 365 Business Premium に適用されます。
+この記事では、会社の Windows デバイスにアプリケーション保護ポリシーを設定する方法について説明します。
 
-> [!NOTE]
-> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
-
-## <a name="edit-an-app-management-policy-for-windows-10"></a>Windows 10 のアプリ管理ポリシーを編集する
+## <a name="edit-an-app-management-policy-for-windows-devices"></a>Windows デバイスのアプリ管理ポリシーを編集する
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。     
 
@@ -52,11 +49,11 @@ ms.locfileid: "65096012"
 
 4. 変更する設定の横にある **[編集]** を選択してから、**[保存]** を選択します。
 
-## <a name="create-an-app-management-policy-for-windows-10"></a>Windows 10 用のアプリの管理ポリシーを作成する
+## <a name="create-an-app-management-policy-for-windows-devices"></a>Windows デバイスのアプリ管理ポリシーを作成する
 
-ユーザーが作業タスクを実行する個人の Windows 10 デバイスを持っている場合、それらのデバイスでもデータを保護することができます。
+ユーザーが作業タスクを実行する個人の Windows デバイスを持っている場合は、それらのデバイス上のデータを保護できます。
   
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の管理センターにアクセスします。 
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
 
 2. 左側のナビゲーションで、**[デバイス]** \> **[ポリシー]**\>**[追加]** を選択します。
 
@@ -86,4 +83,8 @@ ms.locfileid: "65096012"
 
 ## <a name="see-also"></a>関連項目
 
-[ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)
+
+## <a name="next-objective"></a>次の目標
+
+[Windows 10 デバイスをセキュリティで保護する](m365bp-secure-windows-devices.md)

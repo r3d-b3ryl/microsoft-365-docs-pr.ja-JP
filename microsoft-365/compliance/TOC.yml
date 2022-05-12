@@ -214,6 +214,8 @@
       href: work-with-partner-to-archive-third-party-data.md
     - name: サード パーティ データを検索する
       href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: データ コネクターの管理ログを表示する
+      href: data-connector-admin-logs.md
 - name: インサイダー リスクを管理する
   items:
     - name: Microsoft Purview インサイダー リスク ソリューション

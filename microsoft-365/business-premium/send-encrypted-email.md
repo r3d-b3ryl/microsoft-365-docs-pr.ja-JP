@@ -26,16 +26,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化されたメールを送信する方法について説明します。
-ms.openlocfilehash: 02dc3b7720f6aa46ffaf3cf4a04511c725798a24
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095168"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65316834"
 ---
 # <a name="encrypt-or-label-sensitive-email"></a>機密情報を暗号化またはラベル付けする
 
-データと情報は重要であり、多くの場合、機密です。 ここでの目的は、すべてのユーザーが秘密度ラベルを使用し、メール受信者が最大限の秘密度で情報を扱うようにすることで、この機密情報を保護できるようにすることです。
+データと情報は重要であり、多くの場合、機密です。ここでの目的は、すべてのユーザーが秘密度ラベルを使用し、メール受信者が最大限の秘密度で情報を扱うようにすることで、この機密情報を保護できるようにすることです。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
@@ -71,5 +71,6 @@ Microsoft Purview メッセージ暗号化を使用して、メール メッセ�
 
 ブランディングを適用して、メール メッセージの外観とテキストをカスタマイズすることもできます。 詳細については、「[暗号化されたメッセージに組織のブランドを追加する](../compliance/email-encryption.md)」を参照してください。
 
-ここまで進んだということは、新しいミッション正常に完了したということです。おめでとうございます。 でも、成功に浸っている時間はありません。チームが[安全に共同作業](m365bp-collaborate-share-securely.md)できる安全な環境をすぐに設定しましょう。 
+## <a name="next-mission"></a>次のミッション
 
+ここまで進んだということは、新しいミッション正常に完了したということです。おめでとうございます。 でも、成功に浸っている時間はありません。チームが[安全に共同作業](m365bp-collaborate-share-securely.md)できる安全な環境をすぐに設定しましょう。

@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: f888556ea32d9d59c53728b30b629169bc9db45d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093242"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65317986"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
-[Microsoft 365 Business Premium の試用版の使用を開始またはそれを購入したら](get-microsoft-365-business-premium.md)、次のステップとしてすべての設定を行います。 いくつかのオプションがあります。 次の操作を行うことができます:
+[Microsoft 365 Business Premium の試用版の使用を開始するか、購入したら](get-microsoft-365-business-premium.md)、次のステップはすべての設定を行うことです。使用できるオプションが複数あります。次のことを実行できます。
 
 - [最初はガイド付きセットアップ エクスペリエンス](#use-the-guided-process-for-basic-setup)を使用して基本的なセットアップと構成を行うか、
 - [Microsoft クラウド ソリューション プロバイダー (CSP) などのパートナーと連携します](#work-with-a-microsoft-partner)。
@@ -53,9 +53,9 @@ Microsoft 365 Business Premium には、基本セットアップのためのガ�
 - [ユーザーの追加とライセンスの割り当て](../admin/add-users/add-users.md)
 - [DNS レコードの更新](../admin/setup/setup-business-basic.md#connect-your-domain)
 
-次のビデオは Microsoft 365 Business Basic のガイド付きセットアップ手順を説明しており、Microsoft 365 Business Premium でも動作は同じです。<br/><br/>
+次のビデオは Microsoft 365 Business Standard のガイド付きセットアップ手順を説明しています。この操作は Microsoft 365 Business Premium でも同じです。<br/><br/>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vk3W]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > ユーザーを追加したら、「[従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md)」 へのリンクをユーザーに提供します。 このガイドでは、サインイン、Office アプリの取得、ファイルの保存、コピー、共有について説明します。
@@ -70,10 +70,15 @@ Microsoft 365 の入手と設定に Microsoft パートナーのサポートを�
 
 3. **[製品、サービス、スキル、業界の検索]** ボックスに `Microsoft 365` と入力し、**[Go]** を選択します。
 
-4. 結果の一覧を確認します。 プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。
+4. 結果の一覧を確認します。プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。
 
-「[パートナーまたは販売店を検索する](../admin/manage/find-your-partner-or-reseller.md)」もご覧ください。
+## <a name="see-also"></a>関連項目
 
+- [パートナーまたは販売店を検索する](../admin/manage/find-your-partner-or-reseller.md)
+
+- [セルフサービス パスワードを設定する](../admin/add-users/let-users-reset-passwords.md)
+
+- [セルフサービスによるグループ管理をセットアップする](/azure/active-directory/enterprise-users/groups-self-service-management)
 ## <a name="next-objectives"></a>次の目標
 
 初期セットアップの手順が完了したら、次の目標は、セキュリティとコンプライアンスの機能を設定することです。

@@ -26,20 +26,21 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 がローカル Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: 2c764f8f6eb32b1ecc2e3bbf8dab3e4ad170f8b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: de50fc8ac5ad3fe5d5f8cd5cfdfd781d94062358
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094622"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319096"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加している Windows 10 デバイスを Microsoft 365 Business Premium で管理できるようにする
 
+組織でオンプレミスの Windows Server Active Directory を使用している場合は、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持しながら、Windows 10 デバイスを保護する Microsoft 365 Business Premium を設定できます。
+
+この保護を設定するのに、**Hybrid Azure AD に参加しているデバイス** を実装できます。 これらのデバイスは、オンプレミスの Active Directory と Azure Active Directory の両方に参加しています。
+
 > [!NOTE]
 > Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
-
-組織でオンプレミスの Windows Server Active Directory を使用している場合は、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持しながら、Windows 10 デバイスを保護する Microsoft 365 Business Premium を設定できます。
-この保護を設定するのに、**Hybrid Azure AD に参加しているデバイス** を実装できます。 これらのデバイスは、オンプレミスの Active Directory と Azure Active Directory の両方に参加しています。
 
 ## <a name="watch-configure-hybrid-azure-active-directory-join"></a>視聴する: Hybrid Azure Active Directory 参加を構成する
 
@@ -124,7 +125,7 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="get-the-latest-administrative-templates"></a>最新の管理用テンプレート ツールをダウンロードします。
 
-"**既定の Azure AD 資格情報を使用して MDM の自動登録を有効にする**" ポリシーが表示されない場合は、Windows 10 バージョン 1803 以降用の ADMX がインストールされていない可能性があります。 この問題を解決するには、次の手順に従います (注: 最新の MDM.admx は下位互換性があります)。
+**既定の Azure AD 資格情報を使用して MDM の自動登録を有効にする** ポリシーが表示されない場合は、Windows 10 バージョン 1803 以降用の ADMX がインストールされていない可能性があります。この問題を解決するには、次の手順に従います (注: 最新の MDM.admx は下位互換性があります)。
 
 1. [Windows 10 October 2020 更新プログラム (20H2) 用の管理用テンプレート (.admx)](https://www.microsoft.com/download/102157) をダウンロードしてインストールします。
 
@@ -144,10 +145,18 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 ## <a name="related-content"></a>関連コンテンツ
 
-- [ドメイン ユーザーを Microsoft 365 に同期する](../admin/setup/manage-domain-users.md)(記事)\
+- [ドメイン ユーザーを Microsoft 365 に同期する](../admin/setup/manage-domain-users.md)
 
-- [Exchange 管理センターで役割グループを作成する](../admin/create-groups/create-groups.md) 
+- [Exchange 管理センターで役割グループを作成する](../admin/create-groups/create-groups.md)
 
-- [チュートリアル: マネージド ドメインの Hybrid Azure Active Directory 参加を構成する](/azure/active-directory/devices/hybrid-azuread-join-managed-domains) (記事)
+- [チュートリアル: マネージド ドメインの Hybrid Azure Active Directory 参加を構成する](/azure/active-directory/devices/hybrid-azuread-join-managed-domains)
 
-- [ビジネス プラン用に Microsoft 365 をセキュリティで保護する上位 10 の方法](../admin/security-and-compliance/secure-your-business-data.md)
+- [セルフサービス パスワードを設定する](../admin/add-users/let-users-reset-passwords.md)
+
+- [セルフサービスによるグループ管理をセットアップする](/azure/active-directory/enterprise-users/groups-self-service-management)
+
+- [ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)
+
+## <a name="next-objective"></a>次の目標
+
+[Office クライアントの展開の準備](m365bp-prepare-for-office-client-deployment.md)

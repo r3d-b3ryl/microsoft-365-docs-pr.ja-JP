@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 を使用して選挙運動やビジネスのための SharePoint コミュニケーション サイトを作成し、不適切なファイル共有によるマルウェアやその他の脅威からのサイバー攻撃や侵入からチームを保護する理由と方法について説明します。
-ms.openlocfilehash: 1e1e2792e4a667737118974b95ae5f77cb6ae224
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100183"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65319530"
 ---
 # <a name="create-a-communications-site-in-sharepoint"></a>SharePoint のコミュニケーション サイトを作成する
 
@@ -73,4 +73,6 @@ ms.locfileid: "65100183"
 
 **[+ サイトの作成]** が表示されない場合、Microsoft 365 でセルフサービス サイトの作成が利用できない状態になっている可能性があります。 チーム サイトを作成するには、組織内の Microsoft 365 の管理者に問い合わせてください。 Microsoft 365 管理者の場合、組織でセルフサービス サイト作成を有効にするには、「[SharePoint Online のサイト作成を管理する](/sharepoint/manage-site-creation)」を参照し、また、<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint 管理センター</a>からサイトを作成するには、「[新しい SharePoint 管理センターでサイトを管理する](/sharepoint/manage-sites-in-new-admin-center)」を参照してください。
 
-おめでとうございます &mdash; 以上で完了です。 次のトピックである、組織全体の「[管理対象デバイスの保護](m365bp-protect-devices.md)」にお進みください。
+## <a name="next-mission"></a>次のミッション
+
+おめでとうございます &mdash; 以上でミッションは完了です。今すぐ、組織全体の[管理対象デバイス](m365bp-protect-devices.md)の保護に集中してください。

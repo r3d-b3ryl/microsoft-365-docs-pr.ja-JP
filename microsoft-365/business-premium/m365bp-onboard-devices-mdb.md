@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 774c23a4da7d368f46607fd588a07ffb01e92f53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a03d79da004dab7a68e691c6c2a8ac21ac2b7501
+ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094199"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "65318184"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>デバイスを Microsoft Defender for Endpoint にオンボードする
 
@@ -82,7 +82,7 @@ Windows デバイスが既にエンドポイント マネージャーに登録�
 
 デバイスを登録するには、自分で登録するか、ユーザーにポータル サイトにサインインしてもらい、必要なアプリを登録してインストールしてもらいます。 
 
-エンドポイント マネージャー (Microsoft Intune とモバイル デバイス管理を含む) を既に使用していた場合は、Defender for Business を入手する前に、エンドポイント マネージャーを使用して組織のデバイスをオンボードし続けることができます。 エンドポイント マネージャーを使用すると、iOS や Android デバイスを含むコンピューター、タブレット、スマートフォンをオンボードできます。
+エンドポイント マネージャー (Microsoft Intune とモバイル デバイス管理を含む) を既に使用していた場合は、Defender for Business を入手する前に、エンドポイント マネージャーを使用して組織のデバイスをオンボードし続けることができます。エンドポイント マネージャーを使用すると、iOS や Android デバイスを含むコンピューター、タブレット、スマートフォンをオンボードできます。
 
 「[Microsoft Intune のデバイス登録に関する説明](/mem/intune/enrollment/device-enrollment)」を参照してください。 
 
@@ -100,7 +100,7 @@ Windowsデバイスを Defender for Business にオンボードしたら、Windo
    powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
-コマンドを実行すると、コマンド プロンプト ウィンドウが自動的に閉じます。 成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスの Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に約 10 分で新しいアラートが表示されます。
+コマンドを実行すると、コマンド プロンプト ウィンドウが自動的に閉じます。成功した場合、検出テストは完了としてマークされ、新しくオンボードされたデバイスの Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に約 10 分で新しいアラートが表示されます。
 
 ## <a name="onboard-devices-gradually"></a>デバイスを段階的にオンボードする
 
@@ -112,7 +112,7 @@ Windowsデバイスを Defender for Business にオンボードしたら、Windo
 
 3. ナビゲーション ウィンドウで [**設定**]  >  [**エンドポイント**] を選択し、[**デバイス管理**] で [**オンボード**] を選択します。
 
-4. オペレーティング システム (**Windows 10 や 11 など)** を選択し、オンボード方法 (**ローカル スクリプト** など) を選択します。 選択した方法に関して提供されているガイダンスに従います。
+4. オペレーティング システム (**Windows 10 や 11** など) を選択し、オンボード方法 (**ローカル スクリプト** など) を選択します。選択した方法に関して提供されているガイダンスに従います。
 
 5. オンボードするデバイスのセットごとに、このプロセスを繰り返します。 
 
@@ -131,7 +131,7 @@ Windowsデバイスを Defender for Business にオンボードしたら、Windo
 
 1. 確認画面で情報を確認し、[**ダウンロード**] を選択して続行します。
 
-1. [**ダウンロード パッケージ**] を選択します。 オフボード パッケージをリムーバブル ドライブに保存することをお勧めします。
+1. [**オフボード パッケージのダウンロード**] を選択します。オフボード パッケージをリムーバブル ドライブに保存することをお勧めします。
 
 1. オフボードする各デバイスでスクリプトを実行します。 このタスクに関するヘルプが必要ですか? 以下のリソースを参照してください。   
 
@@ -144,5 +144,4 @@ Windowsデバイスを Defender for Business にオンボードしたら、Windo
 
 ## <a name="next-objective"></a>次の目標
 
-[時間をかけて、ポリシーを確認して編集します](m365bp-view-edit-create-mdb-policies.md)。
-
+[Windows デバイスの保護を設定する](m365bp-protection-settings-for-windows-10-devices.md)。
