@@ -101,6 +101,7 @@
 ###### [除外を構成および検証する](mac-exclusions.md)
 ###### [環境設定](mac-preferences.md)
 ###### [望ましくない可能性のあるアプリケーションを検出してブロックする](mac-pua.md)
+###### [改ざん防止機能を使用してセキュリティ設定を保護する](tamperprotection-macos.md)
 ###### [デバイス コントロール]()
 ####### [デバイス コントロールの概要](mac-device-control-overview.md)
 ####### [JAMF の例](mac-device-control-jamf.md)
