@@ -17,12 +17,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 214a2614b6ca7381bbded39ff5f5143236f6c001
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: f5db5fbe81913666f052cbd664e8a7f813da6a7c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363120"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396203"
 ---
 # <a name="learn-about-information-barriers"></a>情報バリアについての詳細情報
 
@@ -83,5 +83,5 @@ IB ポリシーを定義して適用する前に、組織内のすべての既�
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
 - [情報バリアの使用を開始する](information-barriers-policies.md)
-- [情報バリア ポリシーを管理する](information-barriers-edit-segments-policies.md)
-- [情報バリア ポリシーに使用できる属性を確認する](information-barriers-attributes.md)
+- [IB ポリシーを管理する](information-barriers-edit-segments-policies.md)
+- [IB ポリシーに使用できる属性を確認する](information-barriers-attributes.md)
