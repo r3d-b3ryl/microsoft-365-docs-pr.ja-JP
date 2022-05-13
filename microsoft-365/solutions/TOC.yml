@@ -61,7 +61,7 @@
               href: configure-teams-sensitive-protection.md
             - name: 機密性の高い保護を構成する
               href: configure-teams-highly-sensitive-protection.md
-            - name: セキュリティの分離を使用してチームを構成する
+            - name: セキュリティ固有の秘密度ラベルを使用してチームを構成する
               href: secure-teams-security-isolation.md
         - name: 外部共有を構成する
           items:
