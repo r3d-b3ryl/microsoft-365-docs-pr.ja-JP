@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ce3c458013a96f845da528104997b63360879c56
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: ebe8f623842716ab53b4eae64d24ef85b9598099
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174060"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396159"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
@@ -78,7 +78,7 @@ Microsoft Defender for Businessを使用すると、会社のデバイスのオ�
 
 ### <a name="microsoft-intune-for-windows-clients"></a>Windows クライアントのMicrosoft Intune
 
-サブスクリプションにIntuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) でWindowsクライアントとその他のデバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてIntuneがあります。  
+サブスクリプションにIntuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) でWindowsクライアントとその他のデバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてIntune。  
 
 Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法から始めることをお勧めします。
 
@@ -153,14 +153,14 @@ Defender for Business にオンボードされているデバイスの一覧を�
 ## <a name="macos-computers"></a>macOS コンピューター
 
 > [!NOTE]
-> - ローカル スクリプトを使用して [macOS デバイスをオンボード](#local-script-for-macos)することをお勧めします。 [Intuneで macOS デバイスの登録を設定](/mem/intune/enrollment/macos-enroll)できますが、ローカル スクリプトは、MacOS デバイスを Defender for Business にオンボードするための最も簡単な方法です。 
+> - ローカル スクリプトを使用して[、macOS デバイスをオンボード](#local-script-for-macos)することをお勧めします。 [IntuneでmacOS デバイスの登録を設定](/mem/intune/enrollment/macos-enroll)できますが、ローカル スクリプトは、macOS デバイスを Defender for Business にオンボードするための最も簡単な方法です。 
 
-macOS デバイスをオンボードするには、次のいずれかのオプションを選択します。
+macOSデバイスをオンボードするには、次のいずれかのオプションを選択します。
 
-- [macOS 用のローカル スクリプト](#local-script-for-macos) (*推奨*)
-- [macOS のIntune](#microsoft-intune-for-macos)
+- [macOSのローカル スクリプト](#local-script-for-macos) (*推奨*)
+- [macOSのIntune](#microsoft-intune-for-macos)
 
-### <a name="local-script-for-macos"></a>macOS 用のローカル スクリプト
+### <a name="local-script-for-macos"></a>macOSのローカル スクリプト
 
 macOS デバイスでローカル スクリプトを実行すると、Azure Active Directoryを使用して信頼が作成され (その信頼がまだ存在しない場合)、Microsoft Intuneにデバイスが登録され (まだ登録されていない場合)、デバイスが Defender for Business にオンボードされます。 ローカル スクリプト メソッドは、現在Intuneがない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
 
@@ -172,7 +172,7 @@ macOS デバイスでローカル スクリプトを実行すると、Azure Acti
 
 4. [ **オンボード パッケージのダウンロード**] を選択し、リムーバブル ドライブに保存します。 [ **インストール パッケージのダウンロード**] も選択し、リムーバブル デバイスに保存します。
 
-5. macOS デバイスで、インストール パッケージ `wdav.pkg` をローカル ディレクトリに保存します。
+5. macOS デバイスで、インストール パッケージ`wdav.pkg`をローカル ディレクトリに保存します。
 
 6. オンボード パッケージを、インストール パッケージ `WindowsDefenderATPOnboardingPackage.zip` に使用したのと同じディレクトリに保存します。
 
@@ -186,26 +186,26 @@ macOS デバイスでローカル スクリプトを実行すると、Azure Acti
 
 11. デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
 
-### <a name="microsoft-intune-for-macos"></a>macOS のMicrosoft Intune
+### <a name="microsoft-intune-for-macos"></a>macOSのMicrosoft Intune
 
-サブスクリプションにMicrosoft Intuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で macOS デバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてIntuneがあります。  
+サブスクリプションにMicrosoft Intuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ()[https://endpoint.microsoft.com](https://endpoint.microsoft.com) でmacOSデバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部としてIntune。  
 
 Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法から始めることをお勧めします。
 
-- [会社所有の macOS デバイスのオプションを選択する](#options-for-company-owned-macos-devices)
-- [ユーザーに自分の macOS デバイスをIntuneに登録するように依頼する](#ask-users-to-enroll-their-own-macos-devices-in-intune)
+- [会社所有のmacOS デバイスのオプションを選択する](#options-for-company-owned-macos-devices)
+- [ユーザーに自分のmacOS デバイスをIntuneに登録するように依頼する](#ask-users-to-enroll-their-own-macos-devices-in-intune)
 
-#### <a name="options-for-company-owned-macos-devices"></a>会社所有の macOS デバイスのオプション
+#### <a name="options-for-company-owned-macos-devices"></a>会社所有のmacOS デバイスのオプション
 
-次の表のいずれかのオプションを選択して、会社が管理する macOS デバイスをIntuneに登録します。
+次の表のいずれかのオプションを選択して、会社が管理するmacOSデバイスをIntuneに登録します。
 
 | オプション  | 説明  |
 |---------|---------|
-| Apple 自動デバイス登録 |  この方法を使用して、Apple Business Manager または Apple School Manager を通じて購入したデバイスでの登録エクスペリエンスを自動化します。 自動デバイス登録では、登録プロファイルが OTA で登録されるため、デバイスに物理的にアクセスする必要はありません。 <br/><br/>[「Apple Business Manager または Apple School Manager で macOS デバイスを自動的に登録](/mem/intune/enrollment/device-enrollment-program-enroll-macos)する」を参照してください。 |
+| Apple 自動デバイス登録 |  この方法を使用して、Apple Business Manager または Apple School Manager を通じて購入したデバイスでの登録エクスペリエンスを自動化します。 自動デバイス登録では、登録プロファイルが OTA で登録されるため、デバイスに物理的にアクセスする必要はありません。 <br/><br/>[「Apple Business Manager または Apple School Manager でデバイスmacOS自動的に登録](/mem/intune/enrollment/device-enrollment-program-enroll-macos)する」を参照してください。 |
 | デバイス登録マネージャー (DEM)  |  大規模なデプロイや、組織内に登録のセットアップに役立つ複数のユーザーがいる場合は、この方法を使用します。 デバイス登録マネージャー (DEM) アカウントを使用して、1 つの Azure Active Directory アカウントで最大 1,000 台のデバイスを登録できます。 このメソッドは、ポータル サイトまたは Microsoft Intune を使用してデバイスを登録します。 自動デバイス登録を使用してデバイスを登録するには、DEM アカウントを使用できません。<br/><br/> デバイス[登録マネージャー アカウントを使用してデバイスをIntuneに登録する](/mem/intune/enrollment/device-enrollment-manager-enroll)方法に関する説明を参照してください。  |
-| 直接登録  | 直接登録では、ユーザー アフィニティのないデバイスが登録されるため、この方法は、1 人のユーザーに関連付けられていないデバイスに最適です。 このメソッドでは、登録する Mac に物理的にアクセスする必要があります。 <br/><br/>[macOS デバイスに直接登録を使用する方法に関する](/mem/intune/enrollment/device-enrollment-direct-enroll-macos)説明を参照してください。      |
+| 直接登録  | 直接登録では、ユーザー アフィニティのないデバイスが登録されるため、この方法は、1 人のユーザーに関連付けられていないデバイスに最適です。 このメソッドでは、登録する Mac に物理的にアクセスする必要があります。 <br/><br/>[「macOS デバイスに直接登録を使用する」を](/mem/intune/enrollment/device-enrollment-direct-enroll-macos)参照してください。      |
 
-#### <a name="ask-users-to-enroll-their-own-macos-devices-in-intune"></a>ユーザーに自分の macOS デバイスをIntuneに登録するように依頼する
+#### <a name="ask-users-to-enroll-their-own-macos-devices-in-intune"></a>ユーザーに自分のmacOS デバイスをIntuneに登録するように依頼する
 
 ビジネスでユーザーに自分のデバイスをIntuneに登録させる場合は、次の手順に従うようにユーザーに依頼します。
 
@@ -239,12 +239,12 @@ Defender for Business にオンボードされているデバイスの一覧を�
 
 ## <a name="mobile-devices"></a>モバイル デバイス
 
-Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business/index.yml)がある場合は、Intune。 
+AndroidやiOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business/index.yml)がある場合は、Intune。 
 
 これらのデバイスをIntuneに登録する方法については、次のリソースを参照してください。
 
 - [Android デバイスを登録する](/mem/intune/enrollment/android-enroll)
-- [iOS または iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)
+- [iOSまたは iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)
 
 デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
 

@@ -1,7 +1,7 @@
 ---
-title: データの情報Microsoft 365
-description: 情報バリアを構成する方法については、Microsoft 365。
-keywords: Microsoft 365、インサイダー リスク、コンプライアンス
+title: 情報バリア
+description: Microsoft Purviewで情報バリアを構成する方法について説明します。
+keywords: Microsoft 365、Microsoft Purview、コンプライアンス、情報バリア
 ms.localizationpriority: medium
 ms.service: O365-seccomp
 ms.topic: article
@@ -16,37 +16,39 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: e4116550336756fe9248a4a28dfa0f809c4012bb
-ms.sourcegitcommit: be074f57e33c811bb3857043152825209bc8af07
+ms.openlocfilehash: aaba1c642d4615d3eb5163736450f3f8f3c27062
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "60335856"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396181"
 ---
-# <a name="information-barriers-in-microsoft-365"></a>データの情報Microsoft 365
+# <a name="information-barriers"></a>情報バリア
 
-Microsoft 365グループや組織間のコミュニケーションとコラボレーションを可能にし、必要に応じて特定のユーザー グループ間の通信とコラボレーションを制限する方法をサポートします。 これには、組織内で利益相反が発生しないように、2 つのグループ間の通信とコラボレーションを制限する状況やシナリオが含まれる場合があります。 また、内部情報を保護するために組織内の特定のユーザー間の通信と共同作業を制限する必要がある場合も含まれます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-情報バリアは、オンライン、Microsoft Teams、SharePointでサポートOneDrive for Business。 コンプライアンス管理者または情報バリア管理者は、グループ内のユーザーグループ間の通信を許可または防止するポリシーを定義Microsoft Teams。 情報バリア ポリシーは、次のような状況で使用できます。
+Microsoft 365は、グループや組織間のコミュニケーションとコラボレーションを可能にし、必要に応じて特定のユーザー グループ間のコミュニケーションとコラボレーションを制限する方法をサポートします。 これには、2 つのグループ間の通信とコラボレーションを制限して、組織で競合が発生しないようにする状況やシナリオが含まれる場合があります。 これには、内部情報を保護するために組織内の特定のユーザー間のコミュニケーションとコラボレーションを制限する必要がある状況も含まれる場合があります。
 
-- 当日のトレーダー グループのユーザーは、マーケティング チームとファイルの通信や共有を行う必要があります。
-- 会社の機密情報に取り組む財務担当者は、組織内の特定のグループとファイルを通信したり共有したりしな
-- 営業秘密資料を持つ内部チームは、組織内の特定のグループのユーザーとオンラインで通話したりチャットしたりしな
-- リサーチ チームは、製品開発チームとオンラインでのみ通話またはチャットする必要があります。
+Microsoft Purview Information Barriers (IB) は、Microsoft Teams、SharePoint Online、およびOneDrive for Businessでサポートされています。 コンプライアンス管理者または IB 管理者は、Microsoft Teams内のユーザーグループ間の通信を許可または禁止するポリシーを定義できます。 IB ポリシーは、次のような状況で使用できます。
 
-## <a name="configure-information-barriers-for-microsoft-365"></a>ユーザーの情報バリアを構成Microsoft 365
+- その日のトレーダー グループのユーザーは、マーケティング チームとファイルを通信したり共有したりしないでください
+- 会社の機密情報に取り組む財務担当者は、組織内の特定のグループとファイルを通信したり共有したりしないでください
+- 営業秘密資料を持つ内部チームは、組織内の特定のグループのユーザーとオンラインで通話したりチャットしたりしないでください。
+- リサーチ チームは、製品開発チームとオンラインでのみ通話またはチャットする必要があります
 
-組織の情報バリアを構成するには、次の手順を使用します。
+## <a name="configure-information-barriers"></a>情報バリアを構成する
 
-![Insider リスク ソリューション情報の障壁の手順。](../media/ir-solution-ib-steps.png)
+組織の IB を構成するには、次の手順に従います。
 
-1. 情報バリアについて[詳しくは](information-barriers.md)、Microsoft 365
-2. 前提条件 [とアクセス許可を構成する](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)
-3. 組織内 [のユーザーをセグメント化する](information-barriers-policies.md#step-2-segment-users-in-your-organization)
-4. 情報バリア ポリシー [の作成と構成](information-barriers-policies.md#step-3-define-information-barrier-policies)
-5. 情報 [バリア ポリシーの適用](information-barriers-policies.md#step-4-apply-information-barrier-policies)
+![インサイダー リスク ソリューション情報バリアの手順。](../media/ir-solution-ib-steps.png)
+
+1. [情報バリア](information-barriers.md)について学習する
+2. [前提条件とアクセス許可を構成する](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)
+3. [組織内のユーザーをセグメント化する](information-barriers-policies.md#step-2-segment-users-in-your-organization)
+4. [IB ポリシー](information-barriers-policies.md#step-3-create-ib-policies)を作成して構成する
+5. [IB ポリシーを適用する](information-barriers-policies.md#step-4-apply-ib-policies)
 
 ## <a name="more-information-about-information-barriers"></a>情報バリアの詳細
 
-- [情報障壁ポリシーの属性](information-barriers-attributes.md)
-- [情報バリア ポリシーの編集または削除](information-barriers-edit-segments-policies.md)
+- [IB ポリシーの属性](information-barriers-attributes.md)
+- [IB ポリシーを編集または削除する](information-barriers-edit-segments-policies.md)

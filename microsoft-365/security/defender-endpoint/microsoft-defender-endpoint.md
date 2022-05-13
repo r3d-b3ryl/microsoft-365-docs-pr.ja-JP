@@ -17,19 +17,21 @@ ms.collection:
 ms.custom: intro-overview
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9211597ec8a0e25130b010a6049832ac151840fc
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c9fe313994e7468004e17df05b1ec4d7c3cf7a6b
+ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173690"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "65367960"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -37,10 +39,13 @@ ms.locfileid: "65173690"
 EndPoint 向け Microsoft Defender は、エンタープライズネットワークによる高度な脅威の防止、検出、調査、および応答を支援するために設計されたエンタープライズエンドポイントセキュリティプラットフォームです。
 
 > [!TIP]
-> Microsoft Defender for Endpoint は、Defender for Endpoint プラン 1 とプラン 2 の 2 つのプランで利用できます。 この記事では、それぞれのプランに含まれる機能について説明します。 [Microsoft Defender for Endpoint プラン 1 とプラン 2 についての詳細](defender-endpoint-plan-1-2.md)。
-> 
+> Microsoft Defender for Endpoint は、Defender for Endpoint プラン 1 とプラン 2 の 2 つのプランで利用できます。 プラン 2 で新しい Microsoft Defender 脆弱性の管理アドオンが利用可能になりました。
+>
+> 新しい Defender 脆弱性の管理アドオンなど、各プランに含まれる機能の詳細については、「[Microsoft Defender for Endpoint プランの比較](defender-endpoint-plan-1-2.md)」を参照してください。
 
 <p><p>
+
+Defender for Endpoint の詳細については、次のビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
@@ -55,7 +60,7 @@ EndPoint 向け Defender は、Windows 10 と Microsoft の堅牢なクラウド
 <center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>脅威と脆弱性の管理</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/logo-mdvm.png" alt="Vulnerability Management"> <br><b>コア Defender 脆弱性の管理</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="Attack surface reduction"><br><b>攻撃面の減少</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>次世代の保護</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>エンドポイントでの検出と対応</b></a></center></td>
@@ -86,9 +91,11 @@ EndPoint 向け Defender は、Windows 10 と Microsoft の堅牢なクラウド
 
 <a name="tvm"></a>
 
-**[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)**
+**[コア Defender 脆弱性の管理](../defender-vulnerability-management/defender-vulnerability-management.md)**
 
-この組み込み機能は、画期的なリスクベースのアプローチを使用してエンドポイントの脆弱性や構成ミスの検出、優先順位付け、および修復を行います。
+組み込みのコア脆弱性管理機能では、エンドポイントの脆弱性や構成ミスの検出、評価、優先順位付け、修復に対する最新のリスクベースのアプローチが使用されます。 セキュリティ態勢を評価してリスクを軽減する機能をさらに強化するために、プラン 2 用の新しい Defender 脆弱性の管理アドオンを利用できます。
+
+使用可能なさまざまな脆弱性の管理機能の詳細については、「[Microsoft Defender 脆弱性の管理サービスを比較する](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)」を参照してください。
 
 <a name="asr"></a>
 

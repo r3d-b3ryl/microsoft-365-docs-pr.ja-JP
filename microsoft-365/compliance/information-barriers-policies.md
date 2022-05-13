@@ -16,12 +16,12 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef2c8c5c4dfdbb1598c8f6edc5344da9351b6ad7
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 74da3ee1c2b3339a66ff205989dd978fdd00a530
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363294"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396247"
 ---
 # <a name="get-started-with-information-barriers"></a>情報バリアの使用を開始する
 
@@ -29,7 +29,7 @@ ms.locfileid: "65363294"
 
 この記事では、組織で情報バリア (IB) ポリシーを構成する方法について説明します。 いくつかの手順が関係しているため、IB ポリシーの構成を開始する前に、プロセス全体を確認してください。
 
-IB ポリシーを定義、検証、または編集するには、 [PowerShell コマンドレット](/powershell/exchange/scc-powershell) に精通している必要があります。 この記事では PowerShell コマンドレットの例をいくつか紹介しますが、組織のその他の詳細 (パラメーター値など) を把握しておく必要があります。
+Microsoft Purview コンプライアンス ポータルを使用するか、[Office 365](https://compliance.microsoft.com)[セキュリティとコンプライアンスの PowerShell を](/powershell/exchange/scc-powershell)使用して、組織内で IB を構成します。 IB を初めて構成する組織の場合は、コンプライアンス ポータルで **情報バリア** ソリューションを使用することをお勧めします。 既存の IB 構成を管理していて、PowerShell を使い慣れている場合でも、このオプションを使用できます。
 
 IB のシナリオと機能の詳細については、「 [情報バリアの詳細](information-barriers.md)」を参照してください。
 
@@ -59,30 +59,30 @@ IB の使用を開始する前に、Microsoft 365 サブスクリプションと
 
 ## <a name="configuration-concepts"></a>構成の概念
 
-IB のポリシーを定義する場合は、いくつかのオブジェクトと概念を使用します。
+IB を構成するときは、いくつかのオブジェクトと概念を操作します。
 
-- **ユーザー アカウント属性** は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、およびその他のジョブ プロファイルの詳細を含めることができます。
-- **セグメント** は、選択したユーザー **アカウント属性** を使用してMicrosoft Purview コンプライアンス ポータルで定義されるユーザーのセットです。 詳細については、 [IB でサポートされている属性](information-barriers-attributes.md) の一覧を参照してください。
-- **IB 以外のユーザーとグループの可視性**。 IB 以外のユーザーとグループは、IB セグメントとポリシーから除外されたユーザーとグループです。 IB ポリシーの種類 (ブロックまたは許可) によって、これらのユーザーとグループの動作は、Microsoft Teams、SharePoint、OneDrive、グローバル アドレス一覧で異なります。 許可ポリシーで定義 *された* ユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーには表示されません。 *ブロック* ポリシーで定義されたユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーに表示されます。
-- **グループのサポート**。 IB では現在、モダン グループのみがサポートされており、配布リスト/セキュリティ グループは IB 以外のグループとして扱われます。
-- **非表示/無効のユーザー アカウント**。 組織内の非表示/無効なアカウントの場合、ユーザー アカウントが非表示または無効になっている場合、 *HiddenFromAddressListEnabled* パラメーターは自動的に *True* に設定されます。 IB 対応組織では、これらのアカウントが他のすべてのユーザー アカウントと通信できなくなります。 Microsoft Teamsでは、これらのアカウントを含むすべてのチャットがロックされるか、ユーザーが会話から自動的に削除されます。
-- **IB ポリシーは、** 通信の制限または制限を決定します。 情報バリア ポリシーを定義する際は、次の 2 種類のポリシーから選択します。
+- **ユーザー アカウント属性** は、Azure Active Directory (または Exchange Online) で定義されます。 これらの属性には、部署、役職、場所、チーム名、およびその他のジョブ プロファイルの詳細を含めることができます。 これらの属性を持つセグメントにユーザーまたはグループを割り当てます。
+- **セグメント** は、コンプライアンス ポータルで定義されているグループまたはユーザーのセットです。また、選択したグループまたはユーザー アカウントの属性を使用する PowerShell を使用します。 詳細については、 [IB でサポートされている属性](information-barriers-attributes.md) の一覧を参照してください。
+- **IB ポリシーは、** 通信の制限または制限を決定します。 IB ポリシーを定義するときは、次の 2 種類のポリシーから選択します。
   - *禁止* ポリシーは、あるセグメントと別のセグメントとの通信を禁止します。
   - *許可* ポリシーは、あるセグメントが他の特定のセグメントとのみ通信することを許可します。
 
     > [!NOTE]
-    > **許可** ポリシーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーには表示されません。 IB 以外のグループとユーザーが IB セグメントとポリシーに含まれるユーザーに表示されるようにする必要がある場合は、 **ブロック** ポリシーを使用する必要があります。
+    > *許可* ポリシーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーには表示されません。 IB 以外のグループとユーザーが IB セグメントとポリシーに含まれるユーザーに表示されるようにする必要がある場合は、 *ブロック* ポリシーを使用する必要があります。
 
-- *ポリシー アプリケーション* は、すべての IB ポリシーが定義された後に実行され、組織で適用する準備が整いました。
+- **ポリシー アプリケーション** は、すべての IB ポリシーが定義された後に実行され、組織で適用する準備が整いました。
+- **IB 以外のユーザーとグループの可視性**。 IB 以外のユーザーとグループは、IB セグメントとポリシーから除外されたユーザーとグループです。 IB ポリシーの種類 (ブロックまたは許可) によって、これらのユーザーとグループの動作は、Microsoft Teams、SharePoint、OneDrive、グローバル アドレス一覧で異なります。 許可ポリシーで定義 *された* ユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーには表示されません。 *ブロック* ポリシーで定義されたユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーに表示されます。
+- **グループのサポート**。 IB では現在、モダン グループのみがサポートされており、配布リスト/セキュリティ グループは IB 以外のグループとして扱われます。
+- **非表示/無効のユーザー アカウント**。 組織内の非表示/無効なアカウントの場合、ユーザー アカウントが非表示または無効になっている場合、 *HiddenFromAddressListEnabled* パラメーターは自動的に *True* に設定されます。 IB 対応組織では、これらのアカウントが他のすべてのユーザー アカウントと通信できなくなります。 Microsoft Teamsでは、これらのアカウントを含むすべてのチャットがロックされるか、ユーザーが会話から自動的に削除されます。
 
-## <a name="configuration-at-a-glance"></a>構成の概要
+## <a name="configuration-overview"></a>構成の概要
 
 | **手順** | **内容** |
 |:------|:----------------|
-| **手順 1**: [前提条件が満たされていることを確認する](#step-1-make-sure-prerequisites-are-met) | - 必要なサブスクリプションとアクセス許可があることを確認する <br/>- ディレクトリにユーザーをセグメント化するためのデータが含まれていることを確認する<br/>- [Microsoft Teamsの名前で検索を](/microsoftteams/teams-scoped-directory-search)有効にする<br/>- 監査ログの記録をオンにしてあることを確認する<br/>- Exchange アドレス帳ポリシーが設定されていないことを確認する<br/>- PowerShell を使用する (例が提供されています)<br/>- Microsoft Teamsの管理者の同意を提供する (手順が含まれています) |
+| **手順 1**: [前提条件が満たされていることを確認する](#step-1-make-sure-prerequisites-are-met) | - 必要なサブスクリプションとアクセス許可があることを確認する <br/>- ディレクトリにユーザーをセグメント化するためのデータが含まれていることを確認する<br/>- [Microsoft Teamsの名前で検索を](/microsoftteams/teams-scoped-directory-search)有効にする<br/>- 監査ログの記録をオンにしてあることを確認する<br/>- Exchange アドレス帳ポリシーが設定されていないことを確認する <br/>- Microsoft Teamsの管理者の同意を提供する (手順が含まれています) |
 | **手順 2**: [組織内のユーザーをセグメント化する](#step-2-segment-users-in-your-organization) | - 必要なポリシーを決定する<br/>- 定義するセグメントのリストを作成する<br/>- 使用する属性を特定する<br/>- ポリシー フィルターの観点からセグメントを定義する |
-| **手順 3**: [情報バリア ポリシーを定義する](#step-3-define-information-barrier-policies) | - ポリシーを定義する (まだ適用しない)<br/>- 2 つの種類から選択します (ブロックまたは許可) |
-| **手順 4**: [情報バリア ポリシーを適用する](#step-4-apply-information-barrier-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
+| **手順 3**: [情報バリア ポリシーを作成する](#step-3-create-ib-policies) | - ポリシーを作成する (まだ適用しない)<br/>- 2 つの種類から選択します (ブロックまたは許可) |
+| **手順 4**: [情報バリア ポリシーを適用する](#step-4-apply-ib-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
 | **手順 5**: [SharePointとOneDriveに関する情報バリアの構成 (省略可能)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - SharePointとOneDrive用に IB を構成する |
 | **手順 6**: [情報バリア モード (省略可能)](#step-6-information-barriers-modes) | - 該当する場合は IB モードを更新する |
 
@@ -91,7 +91,7 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
 必要なサブスクリプションとアクセス許可に加えて、IB を構成する前に、次の要件が満たされていることを確認してください。
 
 - **ディレクトリ データ**: 組織の構造がディレクトリ データに反映されていることを確認してください。 この操作を実行するには、ユーザー アカウント属性 (グループ メンバーシップ、部署名など) がAzure Active Directory (またはExchange Online) に正しく設定されていることを確認します。 詳細については、次のリソースを参照してください。
-  - [情報障壁ポリシーの属性](information-barriers-attributes.md)
+  - [情報バリア ポリシーの属性](information-barriers-attributes.md)
   - [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Office 365 PowerShell でユーザー アカウント プロパティを構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
@@ -101,15 +101,15 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
 
 - **既存のExchange Onlineアドレス帳ポリシーを削除** する: IB ポリシーを定義して適用する前に、組織内のすべての既存のExchange Onlineアドレス帳ポリシーを削除する必要があります。 IB ポリシーはアドレス帳ポリシーに基づいており、既存の ABPs ポリシーは IB によって作成された ABP と互換性がありません。 既存のアドレス帳ポリシーを削除するには、「[Exchange Onlineでアドレス帳ポリシーを削除する](/exchange/address-books/address-book-policies/remove-an-address-book-policy)」を参照してください。 IB ポリシーとExchange Onlineの詳細については、「[情報バリアとExchange Online](information-barriers.md#information-barriers-and-exchange-online)」を参照してください。
 
-- **PowerShell を使用して管理** する: 現在、IB ポリシーは Security & Compliance Center PowerShell で定義および管理されています。 この記事ではいくつかの例を示していますが、PowerShell コマンドレットとパラメーターについて理解しておく必要があります。 Azure Active Directory PowerShell モジュールも必要です。
-  - [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
+- **PowerShell を使用して管理する (省略可能):** IB セグメントとポリシーは、Office 365 Security & Compliance PowerShell で定義および管理できます。 この記事ではいくつかの例を示していますが、PowerShell を使用して IB セグメントとポリシーを構成および管理する場合は、PowerShell コマンドレットとパラメーターについて理解しておく必要があります。 この構成オプションを選択した場合は、Azure Active Directory PowerShell モジュールも必要になります。
+  - [セキュリティ & コンプライアンス PowerShell へのConnect](/powershell/exchange/connect-to-scc-powershell)
   - [Graph用の PowerShell Azure Active Directoryインストールする](/powershell/azure/active-directory/install-adv2)
 
 - **Microsoft Teamsの IB に対する管理者の同意**: IB ポリシーが適用されると、グループ (グループに基づくTeams チャネルなど) から IB 以外のコンプライアンス ユーザーを削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順を使用して、MICROSOFT TEAMSで IB ポリシーが期待どおりに機能するようにします。
 
    1. 前提条件: [Graph用の PowerShell Azure Active Directoryインストール](/powershell/azure/active-directory/install-adv2)します。
 
-   1. Windows PowerShell コマンドレットを実行します。
+   2. Windows PowerShell コマンドレットを実行します。
 
       ```powershell
       Connect-AzureAD -Tenant "<yourtenantdomain.com>"  //for example: Connect-AzureAD -Tenant "Contoso.onmicrosoft.com"
@@ -119,18 +119,15 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
-   1. メッセージが表示されたら、Office 365 の職場または学校用のアカウントを使用してサインインします。
+   3. メッセージが表示されたら、Office 365 の職場または学校用のアカウントを使用してサインインします。
 
-   1. [ **要求されたアクセス許可** ] ダイアログ ボックスで、情報を確認し、[ **承諾**] を選択します。 アプリによって要求されるアクセス許可は次のとおりです。
-
-      > [!div class="mx-imgBorder"]
-      > ![イメージ。](https://user-images.githubusercontent.com/8932063/107690955-b1772300-6c5f-11eb-9527-4235de860b27.png)
+   4. [ **要求されたアクセス許可** ] ダイアログ ボックスで、情報を確認し、[ **承諾**] を選択します。
 
 すべての前提条件が満たされたら、次の手順に進みます。
 
 ## <a name="step-2-segment-users-in-your-organization"></a>手順 2: 組織内のユーザーをセグメント化する
 
-この手順では、必要な IB ポリシーを決定し、定義するセグメントの一覧を作成し、セグメントを定義します。
+この手順では、必要な IB ポリシーを決定し、セグメントを定義して定義するセグメントの一覧を作成します。 セグメントを定義してもユーザーには影響しません。IB ポリシーを定義して適用するステージを設定するだけです。
 
 ### <a name="determine-what-policies-are-needed"></a>必要なポリシーを決定する
 
@@ -159,15 +156,32 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
 > [!IMPORTANT]
 > **次のセクションに進む前に、セグメントの定義に使用できる属性の値がディレクトリ データにあることを確認します**。 ディレクトリ データに使用する属性の値がない場合は、IB の構成を続行する前に、その情報を含むようにユーザー アカウントを更新する必要があります。 これに関するヘルプを表示するには、次のリソースを参照してください。<br/>- [PowerShell を使用してユーザー アカウントのプロパティOffice 365構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Azure Active Directoryを使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
+### <a name="define-segments-using-the-compliance-portal"></a>コンプライアンス ポータルを使用してセグメントを定義する
+
+コンプライアンス ポータルでセグメントを定義するには、次の手順を実行します。
+
+1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
+2. コンプライアンス ポータルで、[**Information** **barriersSegments** > ] を選択します。
+3. [ **セグメント] ページで** 、[ **新しいセグメント** ] を選択して、新しいセグメントを作成して構成します。
+4. [ **名前]** ページで、セグメントの名前を入力します。 セグメントが作成されたら、セグメントの名前を変更することはできません。
+5. **[次へ]** を選択します。
+6. [ **ユーザー グループ フィルター** ] ページで、[ **追加]** を選択して、セグメントのグループ属性とユーザー属性を構成します。 使用可能な属性の一覧からセグメントの属性を選択します。
+7. 選択した属性に対して、[ *等しい* ] または *[等しくない* ] を選択し、属性の値を入力します。 たとえば、属性として *[部署]* と *[等号]* を選択した場合は、このセグメント条件に対して定義された部署として *「Marketing**」* と入力できます。 [条件の追加] を選択すると、属性の条件を **追加** できます。 属性または属性の条件を削除する必要がある場合は、属性または条件の削除アイコンを選択します。
+8. **[ユーザー グループ フィルター**] ページで必要に応じて属性を追加し、[**次へ**] を選択します。
+9. [ **設定の確認** ] ページで、セグメントに対して選択した設定と、選択した候補や警告を確認します。 [ **編集] を** 選択してセグメントの属性と条件を変更するか、[ **送信]** を選択してセグメントを作成します。
+
+    > [!IMPORTANT]
+    > **セグメントが重複していないことを確認します**。 IB ポリシーの影響を受ける各ユーザーは、1 つのセグメント (および 1 つだけ) に属している必要があります。 ユーザーが 2 つ以上のセグメントに属している必要はありません。 シナリオの例については、この記事の [Contoso の定義済みセグメントの例](#contosos-defined-segments) を参照してください。
+
 ### <a name="define-segments-using-powershell"></a>PowerShell を使用してセグメントを定義する
 
-次のタスクは、組織のセグメントを定義することです。 セグメントを定義してもユーザーには影響しません。IB ポリシーを定義して適用するステージを設定するだけです。
+PowerShell でセグメントを定義するには、次の手順を実行します。
 
 1. 使用する [属性](information-barriers-attributes.md)に対応する **UserGroupFilter** パラメーターを使用して **、New-OrganizationSegment** コマンドレットを使用します。
 
     | 構文 | 例 |
     |:---------|:----------|
-    | `New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"` |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>この例では、*HR* と呼ばれるセグメントは、*部門* 属性の値である *HR* を使用して定義されます。 コマンドレットの **-eq** 部分は "equals" を参照します。 (または、 **-ne** を使用して "not equals" を意味することもできます。 [「セグメント定義で "equals" と "not equals" を使用する」を](#using-equals-and-not-equals-in-segment-definitions)参照してください)。 |
+    | `New-OrganizationSegment -Name "segmentname" -UserGroupFilter "attribute -eq 'attributevalue'"` |`New-OrganizationSegment -Name "HR" -UserGroupFilter "Department -eq 'HR'"` <p>この例では、*HR* と呼ばれるセグメントは、*部門* 属性の値である *HR* を使用して定義されます。 コマンドレットの **-eq** 部分は "equals" を参照します。 (または、 **-ne** を使用して "not equals" を意味することもできます。 [「セグメント定義で "equals" と "not equals" を使用する」を](#using-equals-and-not-equals-in-powershell-segment-definitions)参照してください)。 |
 
     各コマンドレットを実行すると、新しいセグメントに関する詳細の一覧が表示されます。 詳細には、セグメントの種類、作成したユーザーや最後に変更したユーザーなどが含まれます。 
 
@@ -176,11 +190,11 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
     > [!IMPORTANT]
     > **セグメントが重複していないことを確認します**。 IB ポリシーの影響を受ける各ユーザーは、1 つのセグメント (および 1 つだけ) に属している必要があります。 ユーザーが 2 つ以上のセグメントに属している必要はありません。 シナリオの例については、この記事の [Contoso の定義済みセグメントの例](#contosos-defined-segments) を参照してください。
 
-セグメントを定義したら、「 [手順 3: 情報バリア ポリシーを定義する」](#step-3-define-information-barrier-policies)に進みます。
+セグメントを定義したら、 [手順 3: IB ポリシーの作成](#step-3-create-ib-policies)に進みます。
 
-### <a name="using-equals-and-not-equals-in-segment-definitions"></a>セグメント定義で "equals" と "not equals" を使用する
+### <a name="using-equals-and-not-equals-in-powershell-segment-definitions"></a>PowerShell セグメント定義で "equals" と "not equals" を使用する
 
-次の例では、"部門が人事に等しい" ようなセグメントを定義しています。 
+次の例では、PowerShell を使用して IB セグメントを構成し、"部門が HR に等しい" ようなセグメントを定義しています。
 
 | 例 | 注: |
 |:----------|:-------|
@@ -204,9 +218,9 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
 > [!TIP]
 > 可能であれば、"-eq" または "-ne" を含むセグメント定義を使用します。 複雑なセグメント定義を定義しないようにしてください。
 
-## <a name="step-3-define-information-barrier-policies"></a>手順 3: 情報バリア ポリシーを定義する
+## <a name="step-3-create-ib-policies"></a>手順 3: IB ポリシーを作成する
 
-特定のセグメント間の通信を防止するか、特定のセグメントへの通信を制限する必要があるかどうかを判断します。 組織が内部、法的、業界の要件に準拠していることを確認するために、IB ポリシーの最小数を使用するのが理想的です。
+IB ポリシーを作成するときに、特定のセグメント間の通信を禁止するか、特定のセグメントへの通信を制限する必要があるかを判断します。 組織が内部、法的、業界の要件に準拠していることを確認するために、IB ポリシーの最小数を使用するのが理想的です。 コンプライアンス ポータルまたは PowerShell を使用して、IB ポリシーを作成して適用できます。
 
 > [!TIP]
 > ユーザー エクスペリエンスの一貫性を確保するために、可能であれば、ほとんどのシナリオでブロック ポリシーを使用することをお勧めします。
@@ -217,13 +231,42 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
 - [シナリオ 2: セグメントが別のセグメント 1 つとだけ通信できるようにする](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)
 
 > [!IMPORTANT]
-> **ポリシーを定義するときに、セグメントに複数のポリシーを割り当てないように** してください。 たとえば、 *Sales* というセグメントに 1 つのポリシーを定義する場合は、 *Sales* に追加のポリシーを定義しないでください。<p> また、IB ポリシーを定義するときは、それらのポリシーを適用する準備が整うまで、それらのポリシーを非アクティブ状態に設定してください。 ポリシーを定義 (または編集) しても、それらのポリシーがアクティブな状態に設定されてから適用されるまで、ユーザーには影響しません。
+> **ポリシーを定義するときに、セグメントに複数のポリシーを割り当てないように** してください。 たとえば、 *Sales* というセグメントに 1 つのポリシーを定義する場合は、 *Sales* セグメントに追加のポリシーを定義しないでください。<br> また、IB ポリシーを定義するときは、それらのポリシーを適用する準備が整うまで、それらのポリシーを非アクティブ状態に設定してください。 ポリシーを定義 (または編集) しても、それらのポリシーがアクティブな状態に設定されてから適用されるまで、ユーザーには影響しません。
 
 ### <a name="scenario-1-block-communications-between-segments"></a>シナリオ 1: セグメント間の通信をブロックする
 
 セグメント間の通信をブロックする場合は、方向ごとに 1 つずつ、2 つのポリシーを定義します。 各ポリシーは、1 方向のみの通信をブロックします。
 
-たとえば、セグメント A とセグメント B の間の通信をブロックするとします。この場合、セグメント A がセグメント B と通信できないようにする 1 つのポリシーを定義し、セグメント B がセグメント A と通信できないようにする 2 番目のポリシーを定義します。
+たとえば、セグメント A とセグメント B の間の通信をブロックするとします。この場合は、次の 2 つのポリシーを定義します。
+
+- セグメント A がセグメント B と通信できないようにする 1 つのポリシー
+- セグメント B がセグメント A と通信できないようにする 2 番目のポリシー
+
+#### <a name="create-policies-using-the-compliance-portal-for-scenario-1"></a>シナリオ 1 のコンプライアンス ポータルを使用してポリシーを作成する
+
+コンプライアンス ポータルでポリシーを定義するには、次の手順を実行します。
+
+1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
+2. コンプライアンス ポータルで、[**Information** **barriersPolicies** > ] を選択します。
+3. [ **ポリシー** ] ページで、[ **ポリシーの作成** ] を選択し、新しい IB ポリシーを作成して構成します。
+4. [ **名前]** ページで、ポリシーの名前を入力し、[ **次へ**] を選択します。
+5. [ **割り当てられたセグメント** ] ページで、[セグメントの選択] を **選択します**。 検索ボックスを使用して、名前でセグメントを検索するか、スクロールして表示された一覧からセグメントを選択します。 [ **追加]** を選択して、選択したセグメントをポリシーに追加します。 セグメントは 1 つだけ選択できます。
+6. **[次へ]** を選択します。
+7. [ **通信とコラボレーション** ] ページで、[ **通信とコラボレーション** ] フィールドでポリシーの種類を選択します。 ポリシー オプションは *、[許可]* または *[ブロック] です*。 この例のシナリオでは、最初のポリシーに対して *[ブロック* ] が選択されます。
+
+    >[!IMPORTANT]
+    >セグメントの許可状態とブロック状態は、ポリシーの作成後に変更することはできません。 ポリシーの作成後に状態を変更するには、ポリシーを削除して新しいポリシーを作成する必要があります。
+
+8. [ **セグメントの選択] を選択** して、ターゲット セグメントのアクションを定義します。 この手順では、複数のセグメントを割り当てることができます。 たとえば、*Sales* というセグメントのユーザーが *Research* というセグメントのユーザーと通信できないようにする場合は、手順 5 で *Sales* セグメントを定義し、この手順の [**セグメントの選択**] オプションで *Research* を割り当てます。
+9. **[次へ]** を選択します。
+10. [ **ポリシーの状態** ] ページで、アクティブなポリシーの状態を **[オン]** に切り替えます。 [**次へ**] を選んで続行します。
+11. [ **設定の確認** ] ページで、ポリシーに対して選択した設定と、選択した候補や警告を確認します。 [ **編集] を** 選択していずれかのポリシー セグメントと状態を変更するか、[ **送信]** を選択してポリシーを作成します。
+
+この例では、前の手順を繰り返して 2 つ目の *ブロック* ポリシーを作成し、 *Research* というセグメントのユーザーが *Sales* というセグメントのユーザーと通信できないように制限します。 手順 5 で *リサーチ* セグメントを定義し、[セグメントの **選択]** オプションで *Sales* (または複数のセグメント) を割り当てます。
+
+#### <a name="create-policies-using-powershell-for-scenario-1"></a>シナリオ 1 の PowerShell を使用してポリシーを作成する
+
+PowerShell でポリシーを定義するには、次の手順を実行します。
 
 1. 最初のブロック ポリシーを定義するには、**SegmentsBlocked** パラメーターを使用して **New-InformationBarrierPolicy** コマンドレットを使用します。
 
@@ -240,11 +283,35 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
 3. 次のいずれかの操作に進みます。
 
    - (必要な場合)[セグメントが他の 1 つのセグメントとのみ通信できるようにするポリシーを定義](#scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment)する 
-   - (すべてのポリシーが定義された後) [情報バリア ポリシーを適用する](#step-4-apply-information-barrier-policies)
+   - (すべてのポリシーが定義された後) [IB ポリシーを適用する](#step-4-apply-ib-policies)
 
 ### <a name="scenario-2-allow-a-segment-to-communicate-only-with-one-other-segment"></a>シナリオ 2: セグメントが別のセグメント 1 つとだけ通信できるようにする
 
 セグメントが他の 1 つのセグメントとの通信を許可する場合は、そのセグメントに対して 1 つのポリシーのみを定義します。 通信するセグメントには、同様の方向ポリシーは必要ありません (既定では、すべてのユーザーと通信して共同作業できるため)。
+
+#### <a name="create-a-policy-using-the-compliance-portal-for-scenario-2"></a>シナリオ 2 のコンプライアンス ポータルを使用してポリシーを作成する
+
+コンプライアンス ポータルでポリシーを定義するには、次の手順を実行します。
+
+1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
+2. コンプライアンス ポータルで、[**Information** **barriersPolicies** > ] を選択します。
+3. [ **ポリシー** ] ページで、[ **ポリシーの作成** ] を選択し、新しい IB ポリシーを作成して構成します。
+4. [ **名前]** ページで、ポリシーの名前を入力し、[ **次へ**] を選択します。
+5. [ **割り当てられたセグメント** ] ページで、[セグメントの選択] を **選択します**。 検索ボックスを使用して、名前でセグメントを検索するか、スクロールして表示された一覧からセグメントを選択します。 [ **追加]** を選択して、選択したセグメントをポリシーに追加します。 セグメントは 1 つだけ選択できます。
+6. **[次へ]** を選択します。
+7. [ **通信とコラボレーション** ] ページで、[ **通信とコラボレーション** ] フィールドでポリシーの種類を選択します。 ポリシー オプションは *、[許可]* または *[ブロック] です*。 この例のシナリオでは、ポリシーに *[許可]* が選択されます。
+
+    >[!IMPORTANT]
+    >セグメントの許可状態とブロック状態は、ポリシーの作成後に変更することはできません。 ポリシーの作成後に状態を変更するには、ポリシーを削除して新しいポリシーを作成する必要があります。
+
+8. [ **セグメントの選択] を選択** して、ターゲット セグメントのアクションを定義します。 この手順では、複数のセグメントを割り当てることができます。 たとえば、*製造* と呼ばれるセグメントのユーザーが *人事* というセグメントのユーザーと通信できるようにする場合は、手順 5 で *製造* セグメントを定義し、この手順の **[セグメントの選択**] オプションで *人事* を割り当てます。
+9. **[次へ]** を選択します。
+10. [ **ポリシーの状態** ] ページで、アクティブなポリシーの状態を **[オン]** に切り替えます。 [**次へ**] を選んで続行します。
+11. [ **設定の確認** ] ページで、ポリシーに対して選択した設定と、選択した候補や警告を確認します。 [ **編集] を** 選択していずれかのポリシー セグメントと状態を変更するか、[ **送信]** を選択してポリシーを作成します。
+
+#### <a name="create-a-policy-using-powershell-for-scenario-2"></a>シナリオ 2 の PowerShell を使用してポリシーを作成する
+
+PowerShell でポリシーを定義するには、次の手順を実行します。
 
 1. 1 つのセグメントが他の 1 つのセグメントと通信できるようにするには、**SegmentsAllowed** パラメーターを使用して **New-InformationBarrierPolicy** コマンドレットを使用します。
 
@@ -263,11 +330,26 @@ IB のポリシーを定義する場合は、いくつかのオブジェクト�
 2. 次のいずれかの操作に進みます。
 
    - (必要な場合) [セグメント間の通信をブロックするポリシーを定義する](#scenario-1-block-communications-between-segments) 
-   - (すべてのポリシーが定義された後) [情報バリア ポリシーを適用する](#step-4-apply-information-barrier-policies)
+   - (すべてのポリシーが定義された後) [IB ポリシーを適用する](#step-4-apply-ib-policies)
 
-## <a name="step-4-apply-information-barrier-policies"></a>手順 4: 情報バリア ポリシーを適用する
+## <a name="step-4-apply-ib-policies"></a>手順 4: IB ポリシーを適用する
 
 IB ポリシーは、アクティブな状態に設定してポリシーを適用するまで有効になりません。
+
+### <a name="apply-policies-using-the-compliance-portal"></a>コンプライアンス ポータルを使用してポリシーを適用する
+
+コンプライアンス ポータルでポリシーを適用するには、次の手順を実行します。
+
+1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
+2. コンプライアンス ポータルで、**Information** **barriersPolicy** >  アプリケーションを選択します。
+3. [ **ポリシー] アプリケーション** ページで、[ **すべてのポリシーを適用]** を選択して、組織内のすべての IB ポリシーを適用します。
+
+    >[!NOTE]
+    >システムがポリシーの適用を開始するには、30 分かかります。 システムは、ユーザーごとにポリシーを適用します。 システムは、1 時間に約 5,000 のユーザー アカウントを処理します。
+
+### <a name="apply-policies-using-powershell"></a>PowerShell を使用してポリシーを適用する
+
+PowerShell を使用してポリシーを適用するには、次の手順を実行します。
 
 1. **Get-InformationBarrierPolicy** コマンドレットを使用して、定義されているポリシーの一覧を表示します。 各ポリシーの状態と ID (GUID) に注意してください。
 
@@ -281,7 +363,7 @@ IB ポリシーは、アクティブな状態に設定してポリシーを適�
 
     各ポリシーに応じて、この手順を繰り返します。
 
-3. IB ポリシーをアクティブな状態に設定し終えたら、Security & Compliance Center PowerShell の **Start-InformationBarrierPoliciesApplication** コマンドレットを使用します。
+3. IB ポリシーをアクティブな状態に設定し終えたら、Security & Compliance PowerShell の **Start-InformationBarrierPoliciesApplication** コマンドレットを使用します。
 
     構文： `Start-InformationBarrierPoliciesApplication`
 
@@ -293,11 +375,11 @@ PowerShell を使用すると、次の表に示すように、ユーザー ア�
 
 | この情報を表示するには | このアクションを実行する |
 |:---------------|:----------|
-| ユーザー アカウント | Id パラメーターで **Get-InformationBarrierRecipientStatus** コマンドレットを使用します。 <p> 構文： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p> 例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> この例では、Office 365の 2 つのユーザー アカウント (*meganb* for *Megan* と *alexw*) を参照します。 <p> (このコマンドレットは、1 人のユーザーに対して使用することもできます。 `Get-InformationBarrierRecipientStatus -Identity <value>` <p> このコマンドレットは、属性値や適用される情報バリア ポリシーなど、ユーザーに関する情報を返します。|
+| ユーザー アカウント | Id パラメーターで **Get-InformationBarrierRecipientStatus** コマンドレットを使用します。 <p> 構文： `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> 名前、エイリアス、識別名、正規ドメイン名、電子メール アドレス、GUID など、各ユーザーを一意に識別する任意の値を使用できます。 <p> 例: `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> この例では、Office 365の 2 つのユーザー アカウント (*meganb* for *Megan* と *alexw*) を参照します。 <p> (このコマンドレットは、1 人のユーザーに対して使用することもできます。 `Get-InformationBarrierRecipientStatus -Identity <value>` <p> このコマンドレットは、属性値や適用されるすべての IB ポリシーなど、ユーザーに関する情報を返します。|
 | セグメント | **Get-OrganizationSegment** コマンドレットを使用します。<p> 構文： `Get-OrganizationSegment` <p> このコマンドレットには、組織に定義されているすべてのセグメントの一覧が表示されます。 |
-| 情報バリア ポリシー | **Get-InformationBarrierPolicy** コマンドレットを使用します。 <p> 構文： `Get-InformationBarrierPolicy` <p> このコマンドレットは、定義された情報バリア ポリシーとその状態の一覧を表示します。 |
-| 最新の情報バリア ポリシー アプリケーション | **Get-InformationBarrierPoliciesApplicationStatus コマンドレットを** 使用します。 <p> 構文： `Get-InformationBarrierPoliciesApplicationStatus`<p> このコマンドレットは、ポリシー アプリケーションが完了したか、失敗したか、進行中であるかに関する情報を表示します。 |
-| すべての情報バリア ポリシー アプリケーション|`Get-InformationBarrierPoliciesApplicationStatus -All` を使う<p> このコマンドレットは、ポリシー アプリケーションが完了したか、失敗したか、進行中であるかに関する情報を表示します。|
+| IB ポリシー | **Get-InformationBarrierPolicy** コマンドレットを使用します。 <p> 構文： `Get-InformationBarrierPolicy` <p> このコマンドレットには、定義された IB ポリシーの一覧とその状態が表示されます。 |
+| 最新の IB ポリシー アプリケーション | **Get-InformationBarrierPoliciesApplicationStatus コマンドレットを** 使用します。 <p> 構文： `Get-InformationBarrierPoliciesApplicationStatus`<p> このコマンドレットは、ポリシー アプリケーションが完了したか、失敗したか、進行中であるかに関する情報を表示します。 |
+| すべての IB ポリシー アプリケーション|`Get-InformationBarrierPoliciesApplicationStatus -All` を使う<p> このコマンドレットは、ポリシー アプリケーションが完了したか、失敗したか、進行中であるかに関する情報を表示します。|
 
 ### <a name="what-if-i-need-to-remove-or-change-policies"></a>ポリシーを削除または変更する必要がある場合はどうすればよいですか?
 
@@ -322,7 +404,7 @@ Microsoft 365 リソースでは、次の IB モードがサポートされて�
 |:-----|:------------|:--------|
 | **開く** | Microsoft 365 リソースに関連付けられている IB ポリシーやセグメントはありません。 だれでもリソースのメンバーとして招待できます。 | 組織用に作成されたチーム サイト。 |
 | **所有者モデレート (プレビュー)** | Microsoft 365 リソースの IB ポリシーは、リソース所有者の IB ポリシーから決定されます。 リソース所有者は、IB ポリシーに基づいて任意のユーザーをリソースに招待できます。 このモードは、会社が所有者によってモデレートされている互換性のないセグメント ユーザー間のコラボレーションを許可する場合に便利です。 リソース所有者のみが、IB ポリシーに従って新しいメンバーを追加できます。 | 人事担当副社長は、営業およびリサーチの VM と共同作業したいと考えています。 IB モード *所有者モデレート* で設定された新しいSharePoint サイトで、Sales セグメントユーザーと Research セグメント ユーザーの両方を同じサイトに追加します。 適切なメンバーがリソースに追加されるようにするのは、所有者の責任です。 |
-| **暗黙的** | Microsoft 365 リソースの IB ポリシーまたはセグメントは、リソース メンバーの IB ポリシーから継承されます。 所有者は、リソースの既存のメンバーと互換性がある限り、メンバーを追加できます。 これは、Microsoft Teamsの既定の IB モードです。 | Sales セグメント ユーザーは、組織内の他の互換性のあるセグメントと共同作業するMicrosoft Teams チームを作成します。 |
+| **暗黙的** | Microsoft 365 リソースの IB ポリシーまたはセグメントは、リソース メンバーの IB ポリシーから継承されます。 所有者は、リソースの既存のメンバーと互換性がある限り、メンバーを追加できます。 このモードは、Microsoft Teamsの既定の IB モードです。 | Sales セグメント ユーザーは、組織内の他の互換性のあるセグメントと共同作業するMicrosoft Teams チームを作成します。 |
 | **Explicit** | Microsoft 365 リソースの IB ポリシーは、リソースに関連付けられているセグメントに従います。 リソース所有者またはSharePoint管理者は、リソースのセグメントを管理できます。  | Sales セグメントをサイトに関連付けて共同作業するために、Sales セグメント メンバー専用に作成されたサイト。   |
 
 IB モードとサービス間での構成方法の詳細については、次の記事を参照してください。
@@ -369,14 +451,14 @@ Contoso は、次のように、Azure Active Directoryの Department 属性を�
 
 セグメントが定義された状態で、Contoso は IB ポリシーの定義に進みます。
 
-### <a name="contosos-information-barrier-policies"></a>Contoso の情報バリアポリシー
+### <a name="contosos-ib-policies"></a>Contoso の IB ポリシー
 
 Contoso では、次の表に示すように、3 つの IB ポリシーを定義します。
 
 | ポリシー | ポリシー定義 |
 |:---------|:--------------------|
-| **ポリシー 1: 営業部門がリサーチ部門と通信できないようにする** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、情報バリアポリシーは、*営業-リサーチ* と呼ばれています。 このポリシーが適応されると、営業セグメント内のユーザーがリサーチセグメント内のユーザーと通信できなくなります。 このポリシーは一方向のポリシーです。リサーチが Sales と通信することを妨げることはありません。 そのため、ポリシー2が必要です。 |
-| **ポリシー 2: リサーチ部門が営業部門と通信できないようにする** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、情報バリアポリシーは、*リサーチ-営業* と呼ばれています。 このポリシーが適応されると、リサーチセグメント内のユーザーが、営業セグメント内のユーザーと通信できなくなります。 |
+| **ポリシー 1: 営業部門がリサーチ部門と通信できないようにする** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> この例では、IB ポリシーは *Sales-Research* と呼ばれます。 このポリシーが適応されると、営業セグメント内のユーザーがリサーチセグメント内のユーザーと通信できなくなります。 このポリシーは一方向のポリシーです。リサーチが Sales と通信することを妨げることはありません。 そのため、ポリシー2が必要です。 |
+| **ポリシー 2: リサーチ部門が営業部門と通信できないようにする** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> この例では、IB ポリシーは *Research-Sales* と呼ばれます。 このポリシーが適応されると、リサーチセグメント内のユーザーが、営業セグメント内のユーザーと通信できなくなります。 |
 | **ポリシー 3: 製造が人事およびマーケティングとの通信のみを許可する** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> この場合、IB ポリシーは *Manufacturing-HRMarketing* と呼ばれます。 このポリシーが適応されると、製造部門は人事およびマーケティング部門とだけ通信を行えます。 人事とマーケティングは、他のセグメントとの通信を制限されません。 |
 
 セグメントとポリシーが定義されている場合、Contoso は **Start-InformationBarrierPoliciesApplication** コマンドレットを実行してポリシーを適用します。

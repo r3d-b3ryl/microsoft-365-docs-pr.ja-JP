@@ -1,6 +1,7 @@
 ---
 title: 情報バリアの属性
-description: この記事は、情報バリア Azure Active Directory定義するために使用できるユーザー アカウント属性のリファレンスです。
+description: この記事は、情報バリア セグメントの定義に使用できるAzure Active Directoryユーザー アカウント属性のリファレンスです。
+keywords: Microsoft 365、Microsoft Purview、コンプライアンス、情報バリア
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,53 +14,55 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 33143e85bf17a707ade6dd0d6d0c66886fd85373
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e09331fb819d2b00764cd6dacd1687ade8ee116c
+ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60179153"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65396269"
 ---
 # <a name="information-barriers-attributes"></a>情報バリアの属性
 
-ユーザーをセグメント化Azure Active Directory特定の属性を使用できます。 セグメントを定義すると、これらのセグメントを情報バリア ポリシーのフィルターとして使用できます。 たとえば、部門を使用して組織内の部署別にユーザーのセグメントを定義できます (2 つの部門で同時に 1 人の従業員が働かされていないと仮定します)。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を提供します。 情報バリアの詳細については、次のリソースを参照してください。
+Azure Active Directoryの特定の属性は、情報バリア (IB) でユーザーをセグメント化するために使用できます。 セグメントが定義されると、これらのセグメントを IB ポリシーのフィルターとして使用できます。 たとえば、 **部門** を使用して、組織内の部門別にユーザーのセグメントを定義することができます (1 人の従業員が 2 つの部署で同時に働く場合を想定)。
+
+この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を示します。 情報バリアの詳細については、次のリソースを参照してください。
 
 - [情報障壁](information-barriers.md)
-- [情報バリアのポリシーを定義Microsoft Teams](information-barriers-policies.md)
-- [情報バリア ポリシーの編集 (または削除)](information-barriers-edit-segments-policies.md)
+- [Microsoft Teamsで情報バリアのポリシーを定義する](information-barriers-policies.md)
+- [IB ポリシーを編集 (または削除) する](information-barriers-edit-segments-policies.md)
 
-## <a name="how-to-use-attributes-in-information-barrier-policies"></a>情報バリア ポリシーで属性を使用する方法
+## <a name="how-to-use-attributes-in-ib-policies"></a>IB ポリシーで属性を使用する方法
 
-この記事に記載されている属性は、ユーザーのセグメントを定義または編集するために使用できます。 定義されたセグメントは、情報バリア ポリシーのパラメーター *(UserGroupFilter* 値と呼ばれる) [として機能します](information-barriers-policies.md)。
+この記事に記載されている属性は、ユーザーのセグメントを定義または編集するために使用できます。 定義されたセグメントは、[IB ポリシー](information-barriers-policies.md)のパラメーター (*UserGroupFilter* 値と呼ばれます) として機能します。
 
-1. セグメントの定義に使用する属性を決定します。 (この記事 [の「リファレンス](#reference) 」セクションを参照してください)。
+1. セグメントの定義に使用する属性を決定します。 (この記事の [「リファレンス」](#reference) セクションを参照してください)。
 
-2. 手順 1 で選択した属性の値がユーザー アカウントに入力されている必要があります。 ユーザー アカウントの詳細を表示し、必要に応じてユーザー アカウントを編集して属性値を含めます。 
+2. ユーザー アカウントに、手順 1 で選択した属性の値が入力されていることを確認します。 ユーザー アカウントの詳細を表示し、必要に応じてユーザー アカウントを編集して属性値を含めます。 
 
-    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) には、「PowerShell を使用してユーザー アカウントのプロパティを構成する[Office 365参照してください](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)。
+    - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) 場合は、「[powerShell でユーザー アカウントのプロパティを構成するOffice 365](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)」を参照してください。
 
-    - 1 つのアカウントを編集するには、「ユーザープロファイルを使用してユーザーのプロファイル情報を追加または更新する」[を参照](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)Azure Active Directory。
+    - 1 つのアカウントを編集するには、「[Azure Active Directoryを使用してユーザーのプロファイル情報を追加または更新](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)する」を参照してください。
 
-3. [次の例に似た PowerShell](information-barriers-policies.md#define-segments-using-powershell)を使用してセグメントを定義します。
+3. 次の例のように、[PowerShell を使用してセグメントを定義](information-barriers-policies.md#define-segments-using-powershell)します。
 
     |**例**|**コマンドレット**|
     |:----------|:---------|
     | Department 属性を使用して Segment1 というセグメントを定義する | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
     | MemberOf 属性を使用して SegmentA というセグメントを定義します (この属性に "BlueGroup" などのグループ名が含まれているとします)。 | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
-    | ExtensionAttribute1 を使用して DayTraders というセグメントを定義します (この属性に "DayTrader" などのジョブ タイトルが含まれているとします)。 | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+    | ExtensionAttribute1 を使用して DayTraders というセグメントを定義します (この属性に "DayTrader" などの役職が含まれているとします) | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > セグメントを定義する場合は、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用して一部のセグメントを定義する場合は *、Department* を使用してすべてのセグメントを *定義します*。 MemberOf を使用して、Department および *他のセグメントを使用* して一部のセグメント *を定義しない*。 セグメントが重ならないようにします。各ユーザーは、1 つのセグメントに割り当てる必要があります。
+    > セグメントを定義するときは、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用して一部のセグメントを定義する場合は、 *Department* を使用してすべてのセグメントを定義 *します*。 *Department* を使用して一部のセグメントを定義し、*MemberOf を* 使用するセグメントを定義しないでください。 セグメントが重複していないことを確認します。各ユーザーは、1 つのセグメントに割り当てる必要があります。
 
 ## <a name="reference"></a>参照
 
-次の表に、情報バリアで使用できる属性を示します。
+次の表に、情報バリアで使用できる属性の一覧を示します。
 
-|**Azure Active Directoryプロパティ名 <br/> (LDAP 表示名)**|**Exchangeプロパティ名**|
+|**Azure Active Directory プロパティ名<br/>(LDAP 表示名)**|**Exchange プロパティ名**|
 |:---------------------------------------------------------------|:-------------------------|
-| Co | Co |
+| 共同 | 共同 |
 | Company | Company |
 | Department | Department |
 | ExtensionAttribute1 | CustomAttribute1 |
@@ -85,17 +88,17 @@ ms.locfileid: "60179153"
 | MailNickname | Alias |
 | PhysicalDeliveryOfficeName | Office |
 | PostalCode | PostalCode |
-| ProxyAddresses | EmailAddresses |
+| Proxyaddresses | EmailAddresses |
 | StreetAddress | StreetAddress |
-| TargetAddress | ExternalEmailAddress |
+| Targetaddress | ExternalEmailAddress |
 | UsageLocation | UsageLocation |
 | UserPrincipalName | UserPrincipalName |
 | メール | WindowsEmailAddress |
 | 説明 | 説明 |
-| MemberOf | MemberOfGroup |
+| 一員 | MemberOfGroup |
 
 ## <a name="resources"></a>リソース
 
-- [情報バリアのポリシーを定義Microsoft Teams](information-barriers-policies.md)
+- [Microsoft Teamsで情報バリアのポリシーを定義する](information-barriers-policies.md)
 - [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [情報障壁](information-barriers.md)
