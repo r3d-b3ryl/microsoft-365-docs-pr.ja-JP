@@ -455,10 +455,10 @@
               href: ome-sensitive-info-types.md
             - name: メッセージの暗号化を管理する
               href: manage-office-365-message-encryption.md
-            - name: 暗号化されたメッセージ ポータル アクティビティ ログ
-              href: ome-message-access-logs.md
             - name: 高度なメッセージの暗号化
               href: ome-advanced-message-encryption.md
+            - name: 暗号化されたメッセージ ポータル アクティビティ ログ
+              href: ome-message-access-logs.md
             - name: Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールの有効期限を設定する
               href: ome-advanced-expiration.md
             - name: Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールを取り消す

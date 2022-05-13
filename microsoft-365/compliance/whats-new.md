@@ -16,11 +16,11 @@ search.appverid:
 ms.assetid: e3c6df61-8513-499d-ad8e-8a91770bff63
 ms.collection:
 - M365-security-compliance
-description: コンプライアンス センターに新しいソリューションを追加する場合でも、フィードバックに基づいて既存の機能を更新する場合でも、更新されたドキュメントを展開する場合でも、Microsoft 365は絶えず変化するコンプライアンス環境を把握するのに役立ちます。 今月までの内容を確認してください。
+description: コンプライアンス センターへの新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 今月起こったことついてご覧ください。
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 4af9cb3073e4fa150a2683c2dd2f125336ef01b8
 ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/12/2022
 ms.locfileid: "65363150"
@@ -29,269 +29,269 @@ ms.locfileid: "65363150"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-[Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)に新しいソリューションを追加する場合でも、フィードバックに基づいて既存の機能を更新する場合でも、新しいドキュメントや更新されたドキュメントを展開する場合でも、Microsoft 365は絶えず変化するコンプライアンス環境を把握するのに役立ちます。 以下を見て、現在のMicrosoft Purviewの新機能を確認してください。
+[Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)への新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 Microsoft Purview の新機能は以下のとおりです。
 
 > [!NOTE]
-> 一部のコンプライアンス機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、 [対象となるリリース](/office365/admin/manage/release-options-in-office-365)に自分を追加してみてください。
+> コンプライアンス機能の中には、顧客に提供するスピードが異なるものがあります。 まだ機能が表示されていない場合は、[対象リリース](/office365/admin/manage/release-options-in-office-365)に自分自身を追加してみてください。
 
 > [!TIP]
-> 他の管理センターで何が起こっているか興味がありますか? 次の記事を確認してください。
+> 他の管理センターで起こっていることに興味がありますか? 以下の記事をご覧ください。
 >
 > - [Microsoft 365 管理センターの新機能](/office365/admin/whats-new-in-preview)
 > - [SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)
 > - [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 >
-> Microsoft 365[ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)にアクセスして、起動、ロールアウト、開発中、取り消し済み、または以前にリリースされたMicrosoft 365機能について説明します。
+> [Microsoft 365 のロードマップ](https://www.microsoft.com/microsoft-365/roadmap)では、提供済み、ロールアウト中、開発中、キャンセル済み、以前にリリース済みの Microsoft 365 機能がわかります。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
-- [通信コンプライアンス ポリシーの作成と管理](communication-compliance-policies.md) - Microsoft Teams統合のための新しいユーザー報告メッセージ ポリシー機能に関するガイダンスが追加されて更新されました。
-- [通信コンプライアンスの概要](communication-compliance-configure.md) - F5 サブスクリプションとライセンスの明確化を追加するように更新されました。
+- [コミュニケーション コンプライアンス ポリシーを作成して管理する](communication-compliance-policies.md) - Microsoft Teams の統合に向けた新しいユーザー報告型メッセージ ポリシー機能に関するガイダンスを追加して更新しました。
+- [コミュニケーション コンプライアンスの使用を開始する](communication-compliance-configure.md) - F5 サブスクリプションとライセンスに関する説明を追加するために更新されました。
 
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
-- [Compliance Manager テンプレートの一覧](compliance-manager-templates-list.md) - ページに 6 つの新しいテンプレートとナビゲーション リンクを追加して、テンプレート カテゴリに簡単にジャンプできるようになりました。
-- [コンプライアンス マネージャーの概要](compliance-manager.md) - 更新された製品の概要ビデオ。
+- [コンプライアンスマネージャーテンプレートの一覧](compliance-manager-templates-list.md) - 6 つの新しいテンプレートと、より簡単にテンプレート カテゴリにジャンプするためのナビゲーション リンクがページに追加されました。
+- [コンプライアンス マネージャーの概要](compliance-manager.md) - 製品概要ビデオを更新しました。
 
-### <a name="compliance-offerings--service-assurance"></a>コンプライアンス オファリング&サービス アシュアランス
+### <a name="compliance-offerings--service-assurance"></a>コンプライアンス オファリングとサービス アシュアランス
 
-- [コンプライアンス オファリング](/compliance/regulatory/offering-home) - VPATS、SOC、ISO、FedRAMP オファリングのサービス カバレッジと監査レポートの更新。
+- [コンプライアンス オファリング](/compliance/regulatory/offering-home) - VPATS、SOC、ISO、FedRAMP オファリングのサービス カバレッジと監査レポートを更新します。
 
 ### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
 
-- 製品名が [変更](#changes-to-product-names)されると、 **情報ガバナンス** はコンプライアンス ポータルで **データ ライフサイクル管理** の名前が変更されます。
-- 現在ロールアウト中: 保持ラベル設定構成の新しい設計。
-- 現在ロールアウト中: プレビューの新しいラベル オプション、"既定でこのレコードのロックを解除する" 詳細については、「[保持ラベルを構成してレコードを宣言する」](declare-records.md#configuring-retention-labels-to-declare-records)と「[レコードのバージョン管理を使用して、SharePointまたはOneDriveに格納されているレコードを更新する](record-versioning.md)」を参照してください。
+- [製品名の変更](#changes-to-product-names)に伴い、コンプライアンス ポータルの **情報ガバナンス** は **データライフサイクル管理** に名称変更されました。
+- 現在展開中: 保持ラベル設定構成の新しいデザイン。
+- 現在展開中: "既定でこのレコードのロックを解除します"、というプレビューの新しいラベル オプション。 詳細については、「[保持ラベルを構成してレコードを宣言する](declare-records.md#configuring-retention-labels-to-declare-records)」および 「[SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する](record-versioning.md)」を参照してください。
 
 ### <a name="data-loss-prevention"></a>データ損失防止
 
-- macOSデバイスオンボード GA 用に更新された記事:
-  - [エンドポイント DLP について学習する](endpoint-dlp-learn-about.md)
+- macOS デバイスのオンボーディング GA に関する以下の記事を更新しました。
+  - [エンドポイント DLP に関する詳細](endpoint-dlp-learn-about.md)
   - [エンドポイント データ損失防止の設定を構成する](dlp-configure-endpoint-settings.md)
-  - [データ損失防止 (DLP) の計画](dlp-overview-plan-for-dlp.md)
-  - [データ損失防止ポリシーリファレンス](dlp-policy-reference.md)
+  - [データ損失防止ポリシー (DLP) のサポート](dlp-overview-plan-for-dlp.md)
+  - [データ損失防止ポリシー リファレンス](dlp-policy-reference.md)
   - [エンドポイント データ損失防止の使用を開始する](endpoint-dlp-getting-started.md)
-- [DLP ポリシーの条件、例外、アクション](dlp-conditions-and-exceptions.md) - 件名の変更アクションに関するガイダンスが追加されました。
-- [データ損失防止ポリシー リファレンス](dlp-policy-reference.md) - GA SPO/ODB 述語。エンドポイントでのルール処理に関する新しいガイダンスを使用して更新されました。
+- [DLP ポリシーの条件、例外、およびアクション](dlp-conditions-and-exceptions.md) - [件名の変更] アクションのガイダンスを追加しました。
+- [データ損失防止ポリシー リファレンス](dlp-policy-reference.md) - GA SPO/ODB 述語、エンドポイントでのルール処理に関する新しいガイダンスが更新されました。
 
-### <a name="device-onboarding"></a>デバイスオンボーディング
+### <a name="device-onboarding"></a>デバイスのオンボード
 
-- macOSデバイスオンボード GA 用に更新された記事:
-  - [Microsoft 365の概要にmacOSデバイスをオンボードする](device-onboarding-macos-overview.md)
+- macOS デバイスのオンボーディング GA に関する以下の記事を更新しました。
+  - [Microsoft 365 への macOS デバイスのオンボードに関する概要](device-onboarding-macos-overview.md)
   - [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune-mde.md)
   - [Intune を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune.md)
   - [Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-jamfpro-mde.md)
-  - [JAMF Proを使用して、macOS デバイスをMicrosoft Purview ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-jamfpro.md)
+  - [JAMF Pro を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-jamfpro.md)
 
 ### <a name="information-barriers"></a>情報バリア
 
-- [SharePointで情報バリアを使用する](/sharepoint/information-barriers) - SharePointで新しいプライベート チャネルのサポートに関するガイダンスを追加しました。
-- [情報バリア ポリシーを管理する](information-barriers-edit-segments-policies.md) - セグメントとポリシー/セグメントをまとめて削除するためのガイダンスを追加しました。
+- [SharePoint で情報バリアを使用する](/sharepoint/information-barriers) - SharePoint の新しいプライベート チャネル サポートのためのガイダンスが追加されました。
+- [情報バリア ポリシーを管理する](information-barriers-edit-segments-policies.md) - セグメントとポリシー/セグメントを一緒に削除するためのガイダンスが追加されました。
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
-- [プライバシー リスク管理ポリシー](/privacy/priva/risk-management) - 新しいページ、重要な更新プログラム、ポリシー コンテンツの再構築。以下の詳細:
-  - [プライバシー リスク管理ポリシー](/privacy/priva/risk-management-policies) - すべてのポリシーに適用されるポリシーのセットアップと管理に関する重要な詳細を追加しました。3 つのポリシーの種類ごとに新しいページへのリンクが追加されました。
-  - [データの露出過剰ポリシー - ポリシー](/privacy/priva/risk-management-policy-data-overexposure) の必要性と用途を明確にします。では、既定の作成の既定の設定と、設定をカスタマイズするための詳細な手順について説明します。
-  - [データ転送ポリシー](/privacy/priva/risk-management-policy-data-transfer) - ポリシーが組織外の転送を検出するための新しい条件を強調表示します。ポリシーの必要性と用途を明確にします。では、既定の作成の既定の設定と、設定をカスタマイズするための詳細な手順について説明します。
-  - [データ最小化ポリシー - ポリシー](/privacy/priva/risk-management-policy-data-minimization) の必要性と用途を明確にします。では、既定の作成の既定の設定と、設定をカスタマイズするための詳細な手順について説明します。
-  - [アラートを調査して修復](/privacy/priva/risk-management-alerts) する - 読みやすくするために詳細と書式設定の変更を明確にしました。
-  - [ユーザー通知](/privacy/priva/risk-management-notifications) - 電子メール通知コンテンツをプレビューおよびカスタマイズするための機能に関する情報を追加しました。
-- [サブジェクト権限要求を作成](/privacy/priva/subject-rights-requests-create) する - 機能を調べる既定の設定を使用して、最初の要求の開始に関するセクションを追加しました。
-- [サブジェクト権利要求のデータを確認](/privacy/priva/subject-rights-requests-data-review) する - 確認する優先度項目とその検索方法を説明する詳細と、この分析情報を取得するためにデータ一致を設定する必要性を追加しました。
-- [個人データを見つけて視覚化](/privacy/priva/priva-data-profile) する - "Key insights" の下にある "データ主体のコンテンツが最も多いアイテム" の分析情報を受け取るために、ユーザーがデータマッチングを設定する必要があることを明確にしました。
-- [サブジェクト権利要求のデータ照合](/privacy/priva/subject-rights-requests-data-match) - このプロセスのステップ進行を明確にし、機密情報の種類を作成する 2 番目の手順を追加しました。
+- [プライバシー リスク管理ポリシー](/privacy/priva/risk-management) - 新規ページ、大幅な更新、ポリシー内容の再構築を行いました。詳細は以下のとおりです。
+  - [プライバシー リスク管理ポリシー](/privacy/priva/risk-management-policies) - すべてのポリシーに適用されるポリシーの設定と管理に関する重要な詳細を追加し、3 つのポリシーの種類のそれぞれの新しいページへのリンクを追加しました。
+  - [過剰露出データ ポリシー](/privacy/priva/risk-management-policy-data-overexposure) - ポリシーの必要性と用途を明確にし、すぐに作成できる既定の設定と、設定のカスタマイズの詳細な手順について説明します。
+  - [データ転送ポリシー](/privacy/priva/risk-management-policy-data-transfer) - 組織外への転送を検出するポリシーの新しい条件を明確にし、ポリシーの必要性と用途を明確にし、すぐに作成できる既定の設定と、設定のカスタマイズの詳細な手順について説明します。
+  - [データ最小化ポリシー](/privacy/priva/risk-management-policy-data-minimization) - ポリシーの必要性と用途を明確にし、すぐに作成できる既定の設定と、設定のカスタマイズの詳細な手順について説明します。
+  - [アラートを調査して修復する](/privacy/priva/risk-management-alerts) - 読みやすさを向上させるために明確な詳細と書式の変更を追加しました。
+  - [ユーザー通知](/privacy/priva/risk-management-notifications) - メール通知の内容をプレビューしてカスタマイズするための機能に関する情報を追加しました。
+- [主体の権利を作成する](/privacy/priva/subject-rights-requests-create) - 機能を調べるために、既定の設定を使用して最初の要求を開始するセクションを追加しました。
+- [主体の権利要求のデータをレビューする](/privacy/priva/subject-rights-requests-data-review) - 確認が必要な優先アイテムとその検出方法、この分析情報を得るためにデータ照合を設定する必要性を説明する詳細を追加しました。
+- [個人用データの検索と可視化](/privacy/priva/priva-data-profile) - 「主な分析情報」の「データ主体のコンテンツが最も多いアイテム」に対する分析情報を受け取るために、ユーザーがデータ照合を設定する必要があることを明確にしました。
+- [主体の権利要求のためのデータ照合](/privacy/priva/subject-rights-requests-data-match) - このプロセスの手順の進行を明確にし、機密情報の種類を作成する 2 番目の手順を追加しました。
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-- [DLP ポリシーで名前付きエンティティ](named-entities-use.md) (名前付きエンティティ GA) を使用します。
-- [名前付きエンティティ - 名前付きエンティティ GA について説明](named-entities-learn.md) します。
-- [機密情報の種類エンティティ定義](sensitive-information-type-entity-definitions.md) - 名前付きエンティティ GA、およびパターンの更新。
-- [機密情報の種類 (](sensitive-information-type-learn-about.md) 名前付きエンティティ GA) について説明します。
+- [DLP ポリシーで名前付きエンティティを使用する](named-entities-use.md) - 名前付きエンティティ GA。
+- [名前付きエンティティの詳細](named-entities-learn.md) - 名前付きエンティティ GA。
+- [機密情報の種類のエンティティの定義](sensitive-information-type-entity-definitions.md) - 名前付きエンティティ GA とパターンの更新。
+- [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md)名前付きエンティティ GA。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- SharePoint サイトで新しくサポートされるシナリオ(プレビュー段階): [PowerShell の詳細設定を使用してサイト共有アクセス許可を構成する](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings)
-- [秘密度ラベルで暗号化されたファイルの共同編集](sensitivity-labels-coauthoring.md)が、Semi-Annual Enterprise チャネル (プレビュー) チャネルでテストできるようになりました。
-- 削除されたOneDriveアカウントが、自動ラベル付けポリシーのシミュレーション結果に正しく表示されるようになりました。
-- 暗号化用の秘密度ラベルを構成するときに [、グループ内のメール連絡先にアクセス許可を割り当てる](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content) 場合の既知の問題。
+- SharePoint サイトで新しくサポートされるシナリオのプレビューが開始されました: 「[PowerShell の詳細設定を使用してサイト共有のアクセス許可を構成する](sensitivity-labels-teams-groups-sites.md#configure-site-sharing-permissions-by-using-powershell-advanced-settings)」
+- [秘密度ラベルで暗号化されたファイルの共同編集](sensitivity-labels-coauthoring.md)が、半期エンタープライズ チャネル (プレビュー版) チャネルでテストできるようになりました。
+- 削除された OneDrive アカウントが、自動ラベル付けポリシーのシミュレーション結果に正しく表示されるようになりました。
+- 暗号化用の秘密度ラベルを構成するときに、[グループ内のメール連絡先にアクセス許可を割り当てる](/office365/troubleshoot/sensitivity-labels/mail-contacts-lose-access-encrypted-content)場合の既知の問題。
 
 ### <a name="changes-to-product-names"></a>製品名の変更
 
-今日の分散型のデータリッチな職場の課題に対応するために、データ資産全体の理解、管理、保護に役立つ包括的なソリューションのセットである[Microsoft Purview](https://aka.ms/microsoftpurview)を導入しています。 この新しいブランド ファミリは、以前のMicrosoft Purview データ マップの機能と、顧客が既に依存しているMicrosoft 365コンプライアンス ポートフォリオを組み合わせて、組織に統合されたデータ ガバナンスとリスク管理を提供します。
+今日の分散化されデータにあふれた職場の課題に対応するため、データ資産全体の把握、管理、保護をサポートする一連の包括的なソリューションである [Microsoft Purview](https://aka.ms/microsoftpurview) を紹介します。 この新しいブランド ファミリーは、旧称 Microsoft Purview Data Map の機能と、お客様がすでに信頼している Microsoft 365 コンプライアンス ポートフォリオを組み合わせ、お客様の組織に統一されたデータ ガバナンスとリスク管理を提供します。
 
-| **以前の名前** | **New Name/新しい名前** | **説明** |
+| **旧称** | **New Name/新しい名前** | **説明** |
 |:----------------|:-------------|:----------------|
-| 高度な監査のMicrosoft 365 <br><br> Microsoft 365基本監査 | Microsoft Purview 監査 (プレミアム) <br><br> Microsoft Purview監査 (Standard)| 監査ソリューションは、組織がセキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に効果的に対応するのに役立つ統合ソリューションを提供します。 詳細については、「[高度な監査 (プレミアム) Microsoft Purview](advanced-audit.md)」と[「高度な監査 (Standard) のMicrosoft Purview](set-up-basic-audit.md)」を参照してください。 |
-| Microsoft 365コミュニケーション コンプライアンス | Microsoft Purview でのコミュニケーション コンプライアンス | コミュニケーション コンプライアンスは、会社のコミュニケーション チャネルとポリシー違反の迅速な検出、キャプチャ、修復アクションの実行を支援することで、リスクを最小限に抑えるのに役立ちます。 詳細については、「[Microsoft Purview コミュニケーション コンプライアンス](communication-compliance-solution-overview.md)」を参照してください。 |
-| Microsoft コンプライアンス マネージャー | Microsoft Purview コンプライアンス マネージャー | コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。 詳細については、「[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)」を参照してください。 |
-| 顧客キーのMicrosoft 365 | 顧客キーのMicrosoft Purview | カスタマー キーは、承認されていないシステムまたは担当者によるデータの表示に対する保護を強化し、Microsoft データ センターでの BitLocker ディスク暗号化を補完します。 詳細については、「[カスタマー キーのMicrosoft Purview](customer-key-overview.md)」を参照してください。 |
-| Office 365 のカスタマー ロックボックス | Microsoft Purview カスタマー ロックボックス | カスタマー ロックボックスを使用すると、Microsoft が明示的な承認なしにサービス操作を行うためにコンテンツにアクセスできなくなります。 Customer Lockbox は、承認された要求のみがコンテンツへのアクセスを許可するように Microsoft が使用する承認ワークフロー プロセスに移行します。 詳細については、「[カスタマー ロックボックスのMicrosoft Purview](customer-lockbox-requests.md)」を参照してください。 |
-| データ損失防止 | Microsoft Purview データ損失防止 | DLP は、機密データを保護し、ユーザーがデータを持つべきでないユーザーと不適切に共有できないようにすることで、リスクを軽減するのに役立ちます。 詳細については、「[Microsoft Purview データ損失防止](dlp-learn-about-dlp.md)」を参照してください。 |
-| Microsoft 365のダブル キー暗号化 | Microsoft Purviewダブル キー暗号化 | Double Key Encryption (DKE) では、2 つのキーを一緒に使用して、保護されたコンテンツにアクセスします。 Microsoft は 1 つのキーをMicrosoft Azureに格納し、もう一方のキーを保持します。 詳細については、「[Microsoft Purview ダブル キー暗号化](double-key-encryption.md)」を参照してください。 |
-| Microsoft 365情報バリア | Microsoft Purview 情報バリア | 情報バリアは、内部情報を保護するために組織内の特定のユーザー間のコミュニケーションとコラボレーションを制限するソリューションです。 詳細については、「[Microsoft Purview情報バリア](information-barriers-solution-overview.md)」を参照してください。 |
-| Microsoft Information Protection | Microsoft Purview Information Protection | 情報保護は、機密情報がどこに存在するか、移動する場所を問わず、検出、分類、および保護するのに役立ちます。 詳細については、「[Microsoft Purview 情報保護](information-protection.md)」を参照してください。 |
-| Microsoft 情報ガバナンス | Microsoft Purview データ ライフサイクル管理 | データ ライフサイクル管理では、保持および削除する必要があるコンテンツを保持するためのツールと機能が提供されます。 詳細については、「[Microsoft Purview データ ライフサイクル管理](data-lifecycle-management.md)」を参照してください。 |
-| Microsoft 365 インサイダー リスク管理 | Microsoft Purview インサイダー リスク管理 | インサイダー リスク管理では、幅広いサービスとサードパーティの指標を使用して、リスクの高いユーザー アクティビティをすばやく特定、トリアージ、および対処するのに役立ちます。 詳細については、「[Microsoft Purview インサイダー リスク管理](insider-risk-management.md)」を参照してください。 |
-| Office 365 Message Encryption | Microsoft Purview のメッセージの暗号化 | Message Encryption を使用すると、組織は組織内外のユーザー間で暗号化された電子メール メッセージを送受信できます。 詳細については、「[Microsoft Purview Message Encryption](ome.md)」を参照してください。 |
-| Microsoft 365の特権アクセス管理 | Microsoft Purview Privileged Access Management | Privileged Access Management は、組織を侵害から保護し、機密データへの永続的なアクセスや重要な構成設定へのアクセスを制限することで、コンプライアンスのベスト プラクティスを満たすのに役立ちます。 詳細については、「[特権アクセス管理Microsoft Purview](privileged-access-management-solution-overview.md)」を参照してください。 |
-| Microsoft データ コネクタ | Microsoft Purview データ コネクタ | Microsoft 365管理者は、データ コネクタを使用して、Microsoft 以外のサード パーティのデータをソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームから、Microsoft 365組織内のメールボックスにインポートおよびアーカイブできます。 詳細については、「[Microsoft Purview データ コネクタ](compliance-extensibility.md)」を参照してください。 |
-| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core 電子情報開示 | Microsoft Purview 電子情報開示 (プレミアム) <br><br> Microsoft Purview 電子情報開示 (標準) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview電子情報開示 (プレミアム)](overview-ediscovery-20.md)」および[「Microsoft Purview電子情報開示 (Standard)」](get-started-core-ediscovery.md)を参照してください。 |
-| Microsoft 365 コンプライアンス センター | Microsoft Purview コンプライアンス ポータル | Microsoft 365 E5 Compliance スイート内のソリューションとソリューション カタログにアクセスするための管理ポータル。 詳細については、「[Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)」を参照してください。 |
+| Microsoft 365 の高度な監査 <br><br> Microsoft 365 基本的な監査 | Microsoft Purview 監査 (プレミアム) <br><br> Microsoft Purview 監査 (標準)| 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 詳細については、「[Microsoft Purview Advanced 監査 (プレミアム)](advanced-audit.md)」「[Microsoft Purview Advanced 監査 (標準)](set-up-basic-audit.md)」を参照してください。 |
+| Microsoft 365 でのコミュニケーション コンプライアンス | Microsoft Purview でのコミュニケーション コンプライアンス | コミュニケーション コンプライアンスは、企業のコミュニケーション チャネルやポリシー違反の迅速な検出、取得、是正措置をサポートすることで、リスクを最小化します。 詳細については、「[Microsoft Purview コミュニケーション コンプライアンス](communication-compliance-solution-overview.md)」を参照してください。 |
+| Microsoft コンプライアンス マネージャー | Microsoft Purview コンプライアンス マネージャー | コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。詳細については、「[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)」を参照してください。 |
+| Microsoft 365 カスタマー キー | Microsoft Purview カスタマー キー | カスタマー キーは、承認されていないシステムや個人によるデータの閲覧を防止するための追加の保護を提供し、Microsoft データセンターの Bitlocker ディスク暗号化を補完します。 詳細については、「[Microsoft Purview カスタマー キー](customer-key-overview.md)」を参照してください。 |
+| Office 365 のカスタマー ロックボックス | Microsoft Purview カスタマー ロックボックス | カスタマー ロックボックスを使用すると、明示的な承認なしにサービス操作を実行するために、Microsoft がコンテンツにアクセスできなくなります。 カスタマー ロックボックスは、Microsoft で使用する承認ワークフロー プロセスを導入し、承認された要求のみコンテンツにアクセスできるようにします。 詳細については、「[Microsoft Purview カスタマー ロックボックス](customer-lockbox-requests.md)」を参照してください。 |
+| データ損失防止 | Microsoft Purview データ損失防止 | DLP は、データを保持するべきでないユーザーと不適切に共有できないようにすることで、機密データを保護し、リスクを軽減するのに役立ちます。 詳細については、「[Microsoft Purview データ損失防止](dlp-learn-about-dlp.md)」を参照してください。 |
+| Microsoft 365 の二重キー暗号化 | Microsoft Purview 二重キー暗号化 | 二重キー暗号化 (DKE) は、保護されたコンテンツにアクセスするために 2 つの鍵を同時に使用します。 Microsoft は一方の鍵を Microsoft Azure に保管し、もう一方の鍵はユーザーが保持します。 詳細については、「[Microsoft Purview 二重キー暗号化](double-key-encryption.md)」を参照してください。 |
+| Microsoft 365 の情報バリア | Microsoft Purview 情報バリア | 情報バリアは、組織内の特定のユーザーとのコミュニケーションやコラボレーションを制限し、内部情報を保護するソリューションです。 詳細については、「[Microsoft Purview 情報バリア](information-barriers-solution-overview.md)」を参照してください。 |
+| Microsoft Information Protection | Microsoft Purview Information Protection | Information Protection を使用すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報の検出、分類、保護が可能になります。 詳細については、「[Microsoft Purview Information Protection](information-protection.md)」を参照してください。 |
+| Microsoft 情報ガバナンス | Microsoft Purview データ ライフサイクル管理 | データ ライフサイクル管理は、保持する必要があるコンテンツを保持し、保持しないコンテンツを削除するためのツールと機能を提供します。 詳細については、「[Microsoft Purview データ ライフサイクル管理](data-lifecycle-management.md)」を参照してください。 |
+| Microsoft 365 インサイダー リスク管理 | Microsoft Purview インサイダー リスク管理 | インサイダー リスク管理では、幅広いサービスとサードパーティの指標を使用して、リスクの高いユーザー アクティビティをすばやく特定、トリアージ、および対処するのに役立ちます。詳細については、「[Microsoft Purview インサイダー リスク管理](insider-risk-management.md)」を参照してください。 |
+| Office 365 Message Encryption | Microsoft Purview のメッセージの暗号化 | Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。詳細については、「[Microsoft Purview Message Encryption](ome.md)」を参照してください。 |
+| Microsoft 365 での特権アクセス管理 | Microsoft Purview Privileged Access Management | 特権アクセス管理は、機密データへの常時アクセスや重要な構成設定へのアクセスを制限することで、組織を情報漏えいから守り、コンプライアンスのベスト プラクティスに適合させるのに役立ちます。 詳細については、「[Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md)」を参照してください。 |
+| Microsoft データ コネクタ | Microsoft Purview データ コネクタ | Microsoft 365 を使用すると、管理者はソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからのサードパーティ データを、Microsoft 365 組織のメールボックスにインポートしてアーカイブすることができます。 詳細については、「[Microsoft Purview データ コネクタ](compliance-extensibility.md)」を参照してください。 |
+| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview 電子情報開示 (プレミアム) <br><br> Microsoft Purview 電子情報開示 (標準) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview eDiscovery (プレミアム)](overview-ediscovery-20.md)」「[Microsoft Purview eDiscovery (標準)](get-started-core-ediscovery.md)」を参照してください。 |
+| Microsoft 365 コンプライアンス センター | Microsoft Purview コンプライアンス ポータル | Microsoft 365 E5 Compliance スイート内のソリューションとソリューション カタログにアクセスするための管理者ポータル。 詳細については、「[Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)」を参照してください。 |
 
 ## <a name="march-2022"></a>2022 年 3 月
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
-- [通信コンプライアンス アラートを調査して修復](communication-compliance-investigate-remediate.md) する - 非推奨の注釈ビューのガイダンスが削除されました。
+- [コミュニケーション コンプライアンス警告の調査と修復](communication-compliance-investigate-remediate.md) - 非推奨の注釈ビューのガイダンスを削除しました。
 
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
-- [コンプライアンス マネージャーと概要](compliance-manager-setup.md)[改善アクションを操作](compliance-manager-improvement-actions.md)する - 自動的に監視およびテストできるより多くの改善アクション ("継続的なコンプライアンス評価") に関する情報を追加しました。これには、アクションのテスト状態を別のアクションのテスト状態を親にする新しい機能が含まれます。
+- [改善のための処置の操作](compliance-manager-improvement-actions.md)、[コンプライアンス マネージャーの使用を開始する](compliance-manager-setup.md) - 自動的に監視およびテストできる改善のための処置 (「継続的なコンプライアンス評価」) に関する情報を追加しました。これには、ある処置のテスト状態を別の処置のテスト状態に親和させる新しい機能が含まれます。
 
 ### <a name="data-classification"></a>データ分類
 
-- [コンテンツ エクスプローラーを使用したはじめに](data-classification-content-explorer.md) - Teamsガイダンスが追加されました。ライセンス セクションでは、サービスの説明が示されています。
+- [コンテンツ エクスプローラーを開始する](data-classification-content-explorer.md) - ライセンス セクションでサービスの説明を指摘する、チーム ガイダンスを追加しました。
 
 ### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
 
-- [Yammerのアイテム保持ポリシー](create-retention-policies.md#retention-policy-for-yammer-locations)が一般公開されました (GA)。
-- 現在プレビュー段階の共有チャネルのサポート。 Teams チャネル メッセージの場所に対してアイテム保持ポリシーを構成すると、共有チャネルは親チームから保持設定を継承します。
-- [コンテンツ処理のテナントごとの制限](retention-limits.md#maximum-number-of-items-for-disposition)。
+- [Yammerのアイテム保持ポリシー](create-retention-policies.md#retention-policy-for-yammer-locations)が一般公開 (GA) されました。
+- 共有チャネルのサポートは、現在プレビュー段階です。Teams チャネル メッセージの場所に対するアイテム保持ポリシーを構成すると、共有チャネルがある場合、それらはデータ保持設定を親チームから継承します。
+- [コンテンツ処理のテナント単位での制限](retention-limits.md#maximum-number-of-items-for-disposition)。
 
 ### <a name="data-loss-prevention"></a>データ損失防止
 
-- [データ損失防止とMicrosoft Teams](dlp-microsoft-teams.md) - Share Teams Channels コンテンツのパブリック プレビュー。
-- [Microsoft コンプライアンス拡張機能の概要](dlp-chrome-get-started.md) - 制限付きアプリ グループのパブリック プレビュー、レジストリ キーの手順の削除、既定での構成が有効になりました。
-- [エンドポイント データ損失防止設定を構成する](dlp-configure-endpoint-settings.md) - 制限付きアプリ グループのパブリック プレビュー用に新しく追加されました。
-- [データ損失防止ポリシー リファレンス](dlp-policy-reference.md) - 制限付きアプリ グループのパブリック プレビュー用に更新されました。
-- [Power BIのデータ損失防止に関する概要](dlp-powerbi-get-started.md) - パブリック プレビュー用の新機能。
+- [データ損失防止と Microsoft Teams](dlp-microsoft-teams.md) - Teams チャネル コンテンツの共有のパブリック プレビュー。
+- [Microsoft Compliance Extension を開始する](dlp-chrome-get-started.md) - 制限されたアプリ グループの公開プレビュー、レジストリ キーの手順の削除、構成が既定で有効になりました。
+- [エンドポイント データ損失防止の構成](dlp-configure-endpoint-settings.md) - 制限されたアプリ グループのパブリック プレビュー向け新機能。
+- [データ損失防止ポリシー参照](dlp-policy-reference.md) - 制限付きアプリ グループのパブリック プレビュー用に更新されました。
+- [Power BI のデータ損失防止の使用を開始する](dlp-powerbi-get-started.md) - パブリック プレビュー向け新機能。
 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
-- [インサイダー リスク管理の概要](insider-risk-management-configure.md) - 推奨されるアクション ガイダンスの新しいタスクが追加されました。
-- [インサイダー リスク管理設定を使用した概要](insider-risk-management-settings.md) - 通知と電子メール アラート機能の新しい更新プログラム、分析通知の新しい更新プログラム。
+- [インサイダー リスクの管理を開始する](insider-risk-management-configure.md) - おすすめの操作ガイダンスに新しいタスクが追加されました。
+- [インサイダー リスク管理設定の使用を開始する](insider-risk-management-settings.md) - 通知とメール アラート機能の新しい更新情報、分析通知の新しい更新情報。
 
 ### <a name="microsoft-information-protection"></a>Microsoft Information Protection
 
-- [2 バイト文字セットのリリース ノートのサポート](mip-dbcs-relnotes.md) - macOSのガイダンスが追加されました。
+- [2 バイト文字セットのリリース ノート向けサポート](mip-dbcs-relnotes.md) - macOS 向けのガイダンスが追加されました。
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
-- [Priva設定を構成](/privacy/priva/priva-settings)する - サブジェクト権限要求のデータ保持期間に関する情報を明確に更新しました。サブジェクト権限要求のデータ レビュー タグの管理と適用に関する詳細が追加されました。
-- [サブジェクト権限要求を作成](/privacy/priva/subject-rights-requests-create)する - 検索の絞り込みと条件と属性の選択に関する詳細を追加しました。ユーザーが検索でSharePointアイテムのすべてのバージョンを選択できるようにする新機能に関する情報が追加されました (既定の設定と、現在のバージョンのSharePoint項目のみを返します)。
-- [サブジェクト権利要求のデータを確認](/privacy/priva/subject-rights-requests-data-review) する - データレビュー ステージ中にアイテムを確認するための手順 3 の詳細が追加されました。これには、ファイルをインクルード/除外としてマークする、ファイルに注釈を付けてやり直しを適用する、タグを適用する、メモを入力するなどです。
-- [レポートを生成し、件名の権利要求を満たす](/privacy/priva/subject-rights-requests-reports) - レポートを理解する方法に関する詳細を追加しました。エクスポート パッケージがいつ生成されるか、およびその内容を操作する方法が明確になります。監査ログ、タグ付けされたファイル レポート、および SRR データとレポートの保持期間に関する情報が追加されました。
+- [Priva の設定を構成する](/privacy/priva/priva-settings) - データ主体の権利の要求のデータ保持期間に関する明確な情報を更新し、データ主体の権利の要求のデータ レビュー タグの管理および適用に関する詳細を追加しました。
+- [データ主体の権利の要求を作成する](/privacy/priva/subject-rights-requests-create) - 検索の絞り込み、条件と属性の選択に関する詳細を追加しました。ユーザーが検索ですべてのバージョンの SharePoint アイテムを選択できる新機能に関する情報を追加しました (既定の設定では、現在のバージョンの SharePoint アイテムのみが返されます)。
+- [データ主体の権利の要求用のデータのレビュー](/privacy/priva/subject-rights-requests-data-review) - 手順 3 で、ファイルを包含/除外としてマークする、ファイルに注釈を付けて冗長化を適用する、タグを適用する、メモを入力するなど、データ レビュー段階でアイテムをレビューするための詳細が追加されました。
+- [レポートを生成し、データ主体の権利の要求を満たす](/privacy/priva/subject-rights-requests-reports) - レポートの理解方法に関する詳細の追加、エクスポート パッケージの生成のタイミングとそのコンテンツの操作方法の明確化、監査ログ、タグ付けされたファイル レポート、SRR データとレポートの保持期間に関する情報が追加されました。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- [Teamsの秘密度ラベル](sensitivity-labels-teams-groups-sites.md):
-  - 現在プレビュー段階の共有チャネルのサポート。 チームに共有チャネルがある場合、そのチームは親チームから秘密度ラベル設定を自動的に継承し、そのラベルを削除したり、別のラベルに置き換えたりすることはできません。
-  - Teams Graph [API および PowerShell コマンドレットではサポートされていない]( /microsoftteams/sensitivity-labels#limitations)テンプレートのサポート。  
-- Word、Excel、およびPowerPoint on the webを監査するために、正当な理由テキストが完全にロールアウトされるようになりました。
-- Word、Excel、およびPowerPoint on the webの既存のドキュメントに既定のラベルを適用することが完全にロールアウトされました。
+- [Teams の機密度ラベル](sensitivity-labels-teams-groups-sites.md):
+  - 共有チャネルのサポートは、現在プレビュー中です。チームに共有チャネルがある場合、そのチームは親チームから秘密度ラベル設定を自動的に継承し、そのラベルを削除したり、別のラベルに置き換えたりすることはできません。
+  - 以前は [Teams Graph API と PowerShell コマンドレットでサポートされていない]( /microsoftteams/sensitivity-labels#limitations)と一覧表示されていたテンプレートのサポート。  
+- Web 上の Word、Excel、PowerPoint の監査の場合、理由テキストが完全に展開されるようになりました。
+- Web 上の Word、Excel、PowerPoint の既存のドキュメントに既定のラベルの適用が本格的に展開されました。
 
 ## <a name="february-2022"></a>2022 年 2 月
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [電子情報開示 (プレミアム) でカストディアン通信テンプレートを管理](advanced-ediscovery-communications-library.md)する - 電子情報開示マネージャーは、組織内の任意の電子情報開示 (プレミアム) ケースで使用できるカストディアン通信テンプレートを作成できるようになりました。
-- [電子情報開示 (プレミアム) で発行担当者を管理](advanced-ediscovery-issuing-officers.md)する - 電子情報開示マネージャーは、組織内の任意の電子情報開示 (プレミアム) ケースでカストディアン通信に割り当てることができる発行担当者の一覧を追加できます。
+- [eDiscovery(Premium) でカストディアンの通信テンプレートを管理する](advanced-ediscovery-communications-library.md) - eDiscovery マネージャーは、組織内のすべての eDiscovery (Premium) ケースで使用できるカストディアン通信テンプレートを作成できるようになりました。
+- [ eDiscovery (Premium) の発行責任者を管理する](advanced-ediscovery-issuing-officers.md) - eDiscovery 管理者は、組織内のあらゆる eDiscovery (Premium) ケースのカストディアンの通信に割り当てることができる発行責任者の一覧を追加できます。
 
 ### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
 
-- アイテム保持ポリシーとアイテム保持ラベル ポリシーの[アダプティブ スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)が一般公開されました (GA)。 [アダプティブ スコープを構成する](retention-settings.md#to-configure-an-adaptive-scope)手順には、SharePointサイト スコープの詳細が含まれるようになりました。カスタム サイト プロパティを使用するためのブログ投稿リファレンスと、サイト プロパティ SiteTemplate を使用して、高度なクエリ ビルダーで特定のサイトの種類を含めるか除外する方法について説明します。
-- データ ライフサイクル管理ソリューションの[ポリシー参照](retention.md#policy-lookup)が一般公開されました (GA。
-- ユーザーが AllowFilesWithKeepLabelToBeDeletedSPO と AllowFilesWithKeepLabelToBeDeletedODB を [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) および [Set-PnPTenant]( /powershell/module/sharepoint-pnp/set-pnptenant) から使用して、SharePointおよびOneDrive内のラベル付きアイテムを削除できるようにするレコード管理設定に代わる PowerShell。
+- アイテム保持ポリシーと保持ラベル ポリシーの[アダプティブ スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)が一般公開 (GA) されました。 [アダプティブ スコープの構成](retention-settings.md#to-configure-an-adaptive-scope)の手順には、SharePoint サイト スコープに関する詳細情報が含まれるようになりました。これは、カスタム サイト プロパティの使用に関するブログ記事の参照と、サイトプロパティ SiteTemplate を使用して、高度なクエリ ビルダーで特定のサイトの種類を対象にしたり除外したりする方法です。
+- データ ライフサイクル管理での[ポリシー検索](retention.md#policy-lookup)が一般公開 (GA) されました。
+- [Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) と [Set-PnPTenant]( /powershell/module/sharepoint-pnp/set-pnptenant) から AllowFilesWithKeepLabelToBeDeletedSPO および AllowFilesWithKeepLabelToBeDeletedODB を使用して、ユーザーが SharePoint および OneDrive のラベル付けされたアイテムを削除できるレコード管理設定に代わる PowerShell の設定。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- 新しいガイダンス:Windows コンピューターに Azure Information Protection (AIP) 統合ラベル付けクライアントを使用している場合に[、Office アプリの AIP アドインに対して組み込みの](sensitivity-labels-aip.md)ラベル付けを選択する理由。 このページには、Office アプリの新しいプライベート プレビューに関する情報が含まれています。
-- [自動ラベル付けポリシーの](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)新しい設定:
-  - 常に一致する秘密度ラベルの適用をサポートし、組織外から受信した電子メールに暗号化を適用するための電子メールの追加設定。
-  - 特定のインスタンス (ユーザー、グループ、サイト) の除外は、既定で **[すべて**] が [**含まれる**] に指定されている場合に、新しい **[除外]** オプションを使用してサポートされます。
-- プレビュー段階: モバイル デバイス (iOSとAndroid) は、最小バージョンがあり、このプレビューにオプトインするときに[共同編集](sensitivity-labels-coauthoring.md)をサポートします。
-- 既定の共有リンクの種類の設定のサポートは、SharePointおよびOneDrive内の個々のドキュメントに拡張されています。 詳細については、新しい記事「[秘密度ラベルを使用して、SharePointおよびOneDriveのサイトとドキュメントの既定の共有リンクの種類を構成]( sensitivity-labels-default-sharing-link.md)する」を参照してください。
-- 管理センター Teamsコンテナー ラベル (グループ & サイトのスコープを持つ秘密度ラベル) がサポートされるようになりました。
+- Windows コンピューター用の Azure Information Protection (AIP) 統合ラベリング クライアントを使用している場合、[Office アプリの AIP アドインに組み込みラベル付けを選択する理由](sensitivity-labels-aip.md)の新しいガイダンス。 このページでは、Office アプリの新しいプライベート プレビューに関する情報があります。
+- [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)向けの新しい設定
+  - メールに関する追加設定では、常に一致した秘密度ラベルを適用し、組織外から受信したメールに暗号化を適用することをサポートします。
+  - **[指定済]** に既定値の **[すべて]** を指定した場合、新しい **[除外]** オプションを使用して特定のインスタンス (ユーザー、グループ、サイト) の除外がサポートされます。
+- 現在プレビュー中です。モバイル デバイス (iOS および Android) には最小限のバージョンがあり、このプレビューにオプトインした場合に[共同編集](sensitivity-labels-coauthoring.md)をサポートします。
+- 既定の共有リンクの種類の設定に対するサポートが、SharePoint と OneDrive の個々のドキュメントに拡張されました。 詳細については、「[秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有依存タイプを構成する]( sensitivity-labels-default-sharing-link.md)」に関する新しい記事を参照してください。
+- Teams 管理センターがコンテナー ラベル (グループとサイトの範囲を含む秘密度ラベル) をサポートするようになりました。
 
 ## <a name="january-2022"></a>2022 年 1 月
 
 ### <a name="microsoft-purview-data-lifecycle-management"></a>Microsoft Purview データ ライフサイクル管理
 
-- 以前の Microsoft Information Governance のドキュメントは、データ コネクタ、データ ライフサイクル管理、およびレコード管理のMicrosoft Purview コンプライアンス ポータルで構成するソリューションに関連する情報をより簡単に見つけられるように大幅に改訂され、再構築されています。 このリビジョンの一環として、ドキュメントでは、データ ライフサイクル管理とレコード管理の保持シナリオの明確な違いを示します。
-- 再構築をサポートするために、[データ ライフサイクル管理について説明](data-lifecycle-management.md)します。新機能です。
-- [データ ライフサイクル管理の概要](get-started-with-data-lifecycle-management.md) - "概要をリテンション期間に置き換える" 新しい記事では、保持を含むすべてのデータ ライフサイクル管理機能の開始手順について説明します。
-- [アイテム保持ポリシーの例外の保持ラベルを作成する](create-retention-labels-data-lifecycle-management.md) - レコード管理ではなく、データ ライフサイクル管理に保持ラベルを使用するための新しい、識別されたシナリオ。
-- [アーカイブ メールボックスの詳細については、「アーカイブ メールボックス](archive-mailboxes.md) を有効にする」の記事に記載されていた概念的な情報を含む、再構築をサポートする新規のメールボックスについて説明します。
+- 旧称 Microsoft 情報ガバナンスのドキュメントが大幅に改訂され、データ コネクタ、データ ライフサイクル管理、レコード管理などの Microsoft Purview コンプライアンス ポータルで構成するソリューションに関連する情報をより簡単に見つけるられるように再構成されました。 この改訂の一環として、データ ライフサイクル管理とレコード管理の保持シナリオをより明確に区別するためのドキュメントが作成されました。
+- [データ ライフサイクル管理の詳細](data-lifecycle-management.md) - 新しく、再構成をサポートします。
+- [データ ライフサイクル管理の使用を開始する](get-started-with-data-lifecycle-management.md) - この記事では、「保持を開始する」代わりに、新しい保持を含むすべてのデータ ライフサイクル管理機能に関する開始手順を説明します。
+- [アイテム保持ポリシーの例外の保持ラベルを作成する](create-retention-labels-data-lifecycle-management.md) - レコード管理ではなく、データ ライフサイクル管理に保持ラベルを使用するための新しい、特定されたシナリオ。
+- [アーカイブ メールボックスの詳細](archive-mailboxes.md) - 新しい、再構築をサポートするために、以前「アーカイブメールボックスの有効化」の記事にあった概念的な情報が含まれます。
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
-- [プライバシー管理がMicrosoft Privaになりました](/privacy/priva/priva-overview)。製品とそのソリューション、Priva プライバシー リスク管理、Priva 主体の権利要求のブランドを変更するように更新されました。
+- [プライバシー管理は Microsoft Privaになりました](/privacy/priva/priva-overview) - 製品およびソリューションである Priva プライバシー リスク管理と Priva 主体の権利要求を最ブランド化するために更新されました。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- 新しい [ロール グループとロール](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)のサポートがプレビュー段階になりました。
-- 自動ラベル付けポリシーの新しい [監視機能](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy) 。
-- 今すぐロールアウトします。既存のドキュメントの既定のラベルと、Office on the webの理由テキスト。
-- バージョン 2202 以降の 7 月Semi-Annual Enterprise チャネルについて発表: Outlookの共同編集と監査。
+- 新しい[役割グループと役割](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)のサポートは、現在プレビュー中です。
+- 自動ラベル付け ポリシー向けの新たな[監視機能](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy)。
+- 現在、既存のドキュメントの既定のラベル、Office on the web の理由テキストを公開中です。
+- バージョン 2202 以降で 7 月の半期エンタープライズ チャネル向けに発表されました。Outlook の共同編集と監査。
 
 ## <a name="december-2021"></a>2021 年 12 月
 
-### <a name="compliance-and-service-assurance"></a>コンプライアンスとサービスの保証
+### <a name="compliance-and-service-assurance"></a>コンプライアンスとサービス アシュアランス
 
-- [GDPR に基づく Azure、Dynamics 365、Windows侵害通知](/compliance/regulatory/gdpr-breach-notification) - セキュリティやプライバシーに関する通知を受け取るために、お客様が有料サービス (Defender for Cloudなど) を使用する必要がないことを明確にするために更新されました
+- [GDRP に基づく Azure、Dynamics 365 および Windows の侵害通知](/compliance/regulatory/gdpr-breach-notification) - Defender for Cloud などの有料サービスを利用しなくても、セキュリティやプライバシーに関する通知を受信できることを明確にするために更新されました。
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [Microsoft Teamsのコンテンツの電子情報開示 (プレミアム) ワークフロー](teams-workflow-in-advanced-ediscovery.md#reference-guide) - 電子情報開示 (プレミアム) でTeamsコンテンツを管理するための新しいダウンロード可能なクイック リファレンス ガイドで更新されました
+- [eDiscovery (Premium) ワークフローで Microsoft Teams のコンテンツを管理する](teams-workflow-in-advanced-ediscovery.md#reference-guide) - eDiscovery (Premium) で Teams コンテンツを管理するための新しいダウンロード可能なクイック リファレンス ガイドが更新されました。
 
 ### <a name="data-lifecycle-management"></a>データ ライフサイクル管理
 
-- [コンプライアンス センターでアーカイブ メールボックスを有効にする](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - アーカイブ メールボックスの新しい診断ツールに関するセクションを追加しました
-- [ネットワーク アップロードを使用して組織の PST ファイルをMicrosoft 365にインポートする](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST インポートで AzCopy v10 がサポートされるようになりました
-- [非アクティブなメールボックスを復元する - 非アクティブなメールボックス](restore-an-inactive-mailbox.md) の LegacyExchangeDN をターゲット メールボックスに最初に追加して非アクティブなメールボックスを復元する手順を変更しました
+- [コンプライアンス センターでアーカイブ メールボックスを有効にする](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - アーカイブ メールボックスの新しい診断ツールについてのセクションが追加されました。
+- [ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST インポートは AzCopy v10 をサポートするようになりました
+- [非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md) - 非アクティブなメールボックスの LegacyExchangeDN を対象のメールボックスに最初に追加して復元する手順が改訂されました
 
 ### <a name="information-protection"></a>情報保護
 
-- [Microsoft Purviewを使用して情報保護ソリューションをデプロイ](information-protection-solution.md)する - Microsoft Purview 情報保護をデプロイするための規範的なロードマップを探しているお客様向けの新しいステップ バイ ステップ ガイダンス
+- [Microsoft Purview を使用した情報保護ソリューションの展開](information-protection-solution.md) - Microsoft Purview Information Protection を展開するための規範的なロードマップをお探しのお客様向けの新しい段階的なガイダンスです。
 
-### <a name="retention-and-records-management"></a>保持とレコードの管理
+### <a name="retention-and-records-management"></a>保持とレコード管理
 
-- [アイテム保持ポリシーが有効になるまでの時間に関する](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)新しいガイダンス
-- 新しいテナント設定のロールアウト: レコードとしてマークされ、ロックされているラベル付きSharePointアイテムのプロパティを編集できないようにするレコード管理設定と、ユーザーがレコードとしてマークされたアイテムのロックを解除できないようにするその他の設定
+- [アイテム保持ポリシーが有効になるまでの所要時間](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)に関する新しいガイダンス
+- 新しいテナント設定のロールアウトには、レコードとしてマークされロックされた、ラベル付けされた SharePoint アイテムのプロパティを編集できないようにするレコード管理設定と、レコードとしてマークされたアイテムのロックをユーザーが解除できないようにするその他の設定があります。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- 必須のラベル付けとPower BIの既定のラベルが一般公開されました (GA)
+- Power BI のラベル付けの義務化と既定のラベルが一般提供 (GA) されるようになりました
 
 ## <a name="november-2021"></a>2021 年 11 月
 
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
-新しいコンテンツ更新プログラムは、[コンプライアンス マネージャーの新機能Microsoft Purview](compliance-manager-whats-new.md)表示できます。
+新しいコンテンツの更新は、[Microsoft Purview コンプライアンス マネージャーの新機能](compliance-manager-whats-new.md)で確認できます。
 
-### <a name="device-onboarding"></a>デバイスオンボーディング
+### <a name="device-onboarding"></a>デバイスのオンボード
 
-デバイスオンボーディングのために次の記事が追加されました。
+デバイスのオンボード用に以下の記事が追加されました。
 
 - [Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)](device-onboarding-macos-overview.md)
-- [Intune (プレビュー) を使用して、macOS デバイスをMicrosoft Purview ソリューションにオンボードおよびオフボードする](device-onboarding-offboarding-macos-intune.md)
+- [Intune を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune.md)
 - [Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-intune-mde.md)
-- [JAMF Proを使用してmacOSデバイスをMicrosoft Purview ソリューションにオンボードおよびオフボードする (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md)
+- [JAMF Pro を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro.md)
 - [Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)](device-onboarding-offboarding-macos-jamfpro-mde.md)
 
 ### <a name="ediscovery"></a>電子情報開示
 
-- [電子情報開示で新しいケース形式を使用する (プレミアム)](advanced-ediscovery-new-case-format.md) 新しいケース形式が一般公開にリリースされ、"大きなケース形式" から名前が変更されました
+- [eDiscovery (Premium) で新しいケース形式を使用する](advanced-ediscovery-new-case-format.md)新ケース形式がリリースされ、「大容量ケース形式」から名前を変更しました。
 
-### <a name="retention-and-records-management"></a>保持とレコードの管理
-- ロールアウト: SharePointおよびOneDrive内のラベル付きアイテムをユーザーが削除できるかどうかを制御する新しいレコード管理設定。 以前は、コンテンツを保持するように構成され、アイテムをレコードとしてマークしなかった保持ラベルでは、OneDriveでこのアクションが許可されたときに、ユーザーがSharePointでラベル付けされたコンテンツを削除できませんでした。 詳細については、「[SharePointとOneDriveのリテンション期間](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)のしくみ」を参照してください。
+### <a name="retention-and-records-management"></a>保持とレコード管理
+- ロールアウト: SharePoint と OneDrive のラベル付けされたアイテムをユーザーが削除できるかどうかを制御する新しいレコード管理設定。 これまで、コンテンツを保持するように構成された保持ラベルで、アイテムをレコードとしてマークしない場合、OneDrive でこの操作が許可されていても、SharePoint ではユーザーがラベル付けされたコンテンツを削除できないことがありました。 詳細については、「[SharePoint と OneDrive の保持のしくみ](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive)」を参照してください。
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-次の新しい記事を追加しました。
+次の新しい記事が追加されました。
 
 - [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md)
 - [完全なデータ一致に基づく機密情報の種類の使用を開始する](sit-get-started-exact-data-match-based-sits-overview.md)
@@ -304,4 +304,4 @@ ms.locfileid: "65363150"
 - [機密情報のソース テーブル ファイルを更新する](sit-use-exact-data-refresh-data.md)
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
-- [Microsoft Purview データ マップ ラベル](/azure/purview/create-sensitivity-label)のスコープ名が "スキーマ化されたデータ資産" になりました。
+- [Microsoft Purview データ マップ ラベル](/azure/purview/create-sensitivity-label)のスコープ名が「スキーマ化されたデータ資産」に変更されました。

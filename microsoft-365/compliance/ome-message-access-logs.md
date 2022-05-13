@@ -9,21 +9,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 05/04/2022
+ms.date: 05/12/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: アクセス ログは、暗号化されたメッセージ ポータルから取得された暗号化されたメッセージに対して使用できます。
-ms.openlocfilehash: 778d4a72c505f9a5be453b740a2fab13d2674249
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 50656d1695d8fc3d6e81de6afc03b3f4e3c5ccee
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231677"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393226"
 ---
-# <a name="encrypted-message-portal-activity-log-preview"></a>暗号化されたメッセージ ポータルアクティビティ ログ (プレビュー)
+# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption-preview"></a>Microsoft Purview高度なメッセージ暗号化による暗号化されたメッセージ ポータルアクティビティ ログ (プレビュー)
 
 アクセス ログは、暗号化されたメッセージ ポータルを介して暗号化されたメッセージに対して使用できます。これにより、組織は、メッセージがいつ読み取られ、外部の受信者によって転送されたかを判断できます。 外部受信者がログを使用できるようにするには、ポータル エクスペリエンスを適用する外部受信者に組織から送信された保護された電子メールにカスタム ブランド テンプレートを適用する必要があります。 「[暗号化されたメッセージに組織のブランドを追加する](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
 
@@ -53,7 +53,7 @@ PowerShell を使用してアクセス ログExchange Online有効にするこ�
 
 メッセージ アクセス ログでキャプチャされたイベントを表示するには、
 
-1. Microsoft Purview コンプライアンス ポータルの **[ソリューション**] で、[ **監査**] を選択します。
+1. Microsoft Purview コンプライアンス ポータルの [**ソリューション**] で [監査] を選択 **します**。
 1. [ **検索**] で、[ **アクティビティ** ] のドロップダウンをクリックし、暗号化されたメッセージ ポータル アクティビティを入力します。
 1. 暗号化されたメッセージ ポータル アクティビティで、検索で使用するイベントの種類を選択します。 検索の日付範囲を設定します (既定値は前の週です)。必要に応じて、組織内の特定のユーザーを検索用に追加することもできます。 準備ができたら、[検索] を選択 **します**。
 1. 監査プロパティを表示するには、一覧からイベントを選択します。

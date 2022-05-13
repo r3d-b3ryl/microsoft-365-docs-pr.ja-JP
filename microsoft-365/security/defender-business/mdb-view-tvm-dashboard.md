@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 25085dc22fd2f939e10833c98bc4fb599dd5a11f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: a4df65d0364aff71c3d3bbfb261952859d6d8ecf
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172630"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393090"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを使用する
 
@@ -31,11 +31,11 @@ Microsoft Defender for Businessには、セキュリティ チームの時間と
 - デバイスとの通信の障害への対処、ファイアウォール保護のオン、Microsoft Defender ウイルス対策定義の更新など、セキュリティに関する推奨事項を確認する
 - 検疫に送信されたファイルや、デバイスで見つかった脆弱性など、修復アクティビティを表示する
 
-動作を確認しますか? このビデオでは、[Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)の脅威&脆弱性管理について説明します。
+動作を確認しますか? このビデオでは、[Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/defender-vulnerability-management.md)について説明します。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4r1nv]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Y1FX]
 
-脅威&脆弱性管理の詳細については、「Microsoft Defender for Endpoint[の脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)」を参照してください。
+[Microsoft Defender 脆弱性の管理の詳細については、こちらを参照してください](../defender-vulnerability-management/defender-vulnerability-management.md)。
 
 >
 > **少し時間ありますか?**
