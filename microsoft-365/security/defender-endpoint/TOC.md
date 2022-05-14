@@ -2,7 +2,7 @@
 
 ## [概要]()
 ### [Microsoft Defender for Endpoint とは](microsoft-defender-endpoint.md)
-### [Defender for Endpoint プラン 1 とプラン 2を比較する](defender-endpoint-plan-1-2.md)
+### [Defender for Endpoint プランの比較](defender-endpoint-plan-1-2.md)
 ### [最小要件](minimum-requirements.md)
 ### [Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-endpoint.md)
 ### [プレビュー機能](preview.md)
@@ -54,7 +54,6 @@
 
 ##### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 
-
 ##### [Windows デバイスと Windows サーバーのオンボード]()
 ###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022 をオンボードする](configure-server-endpoints.md)
 ###### [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
@@ -64,9 +63,6 @@
 ###### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 ###### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](onboard-windows-multi-session-device.md)
 
-
-
-
 #### [Microsoft Defender for Cloudとの統合](azure-server-integration.md) 
 
 #### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
@@ -74,8 +70,6 @@
 #### [デバイスに対してシミュレートされた攻撃を実行する](attack-simulations.md)
 #### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 #### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
-
-
 
 ### [他のオペレーティング システム上の Microsoft Defender for Endpoint]()
 #### [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
@@ -118,7 +112,6 @@
 ##### [プライバシー](mac-privacy.md)
 ##### [リソース](mac-resources.md)
 
-
 #### [Linux 用 Microsoft Defender for Endpoint]()
 ##### [Linux 用 Microsoft Defender for Endpoint の概要](microsoft-defender-endpoint-linux.md)
 ##### [新機能](linux-whatsnew.md)
@@ -137,7 +130,6 @@
 ###### [望ましくない可能性のあるアプリケーションを検出してブロックする](linux-pua.md)
 ###### [Linux 用 Microsoft Defender for Endpoint でスキャンをスケジュールする](linux-schedule-scan-mde.md)
 ###### [Microsoft Defender for Endpoint (Linux) の更新をスケジュールする](linux-update-MDE-Linux.md)
-
 
 ##### [トラブルシューティング]()
 ###### [インストールに関する問題のトラブルシューティング](linux-support-install.md)
@@ -184,17 +176,12 @@
 
 ###### [プライバシー](ios-privacy.md)
 
-
 ### [Microsoft エンドポイント マネージャーを使用してデバイス上の Microsoft Defender for Endpoint の構成設定を管理する](security-config-management.md)
 
 ### [オンボーディングに関する問題のトラブルシューティング]()
 #### [オンボーディング中の問題のトラブルシューティング](troubleshoot-onboarding.md)
 #### [サブスクリプションとポータル アクセスの問題のトラブルシューティング](troubleshoot-onboarding-error-messages.md)
 #### [セキュリティ構成管理のオンボーディングに関する問題のトラブルシューティング](troubleshoot-security-config-mgt.md)
-
-
-
-
 
 ### [ポータル設定を構成する]()
 #### [Defender for Endpoint の一般的な設定を構成する](preferences-setup.md)
@@ -230,30 +217,7 @@
 #### [Microsoft Defender セキュリティ センターのタイム ゾーン設定を構成する](time-settings.md)
 
 ## [脅威の検出とエンドポイントの保護]()
-### [脅威と脆弱性の管理]()
-#### [概要](next-gen-threat-and-vuln-mgt.md)
-#### [はじめに]()
-##### [アクセス許可と前提条件](tvm-prerequisites.md)
-##### [サポート対象オペレーティング システムのプラットフォームと機能](tvm-supported-os.md)
-##### [デバイス値の割り当て](tvm-assign-device-value.md)
-#### [セキュリティ体制にアクセス]()
-##### [ダッシュボード インサイト](tvm-dashboard-insights.md)
-##### [暴露スコア](tvm-exposure-score.md)
-##### [デバイス向けの Microsoft セキュア スコア](tvm-microsoft-secure-score-devices.md)
-#### [セキュリティの状態の改善とリスクの軽減]()
-##### [セキュリティ上の推奨事項に対処する](tvm-security-recommendation.md)
-##### [脆弱性を修復する](tvm-remediation.md)
-##### [セキュリティ上の推奨事項の例外](tvm-exception.md)
-##### [サポート終了ソフトウェアの計画](tvm-end-of-support-software.md)
-##### [ゼロデイ脆弱性を軽減する](tvm-zero-day-vulnerabilities.md)
-#### [デバイスの脆弱性を理解する]()
-##### [ソフトウェア インベントリ](tvm-software-inventory.md)
-##### [組織の脆弱性](tvm-weaknesses.md)
-##### [イベントのタイムライン](threat-and-vuln-mgt-event-timeline.md)
-##### [脆弱なデバイスのレポート](tvm-vulnerable-devices-report.md)
-##### [露出したデバイスの追求](tvm-hunt-exposed-devices.md)
-#### [アクティブな脅威とキャンペーンの開始ガイダンス]()
-##### [Log4Shell の脆弱性を管理する](tvm-manage-log4shell-guidance.md)
+### [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 ### [デバイス検出]()
 #### [デバイス検出の概要](device-discovery.md)
 #### [デバイス検出の構成](configure-device-discovery.md)
@@ -395,14 +359,15 @@
 ##### [クライアントの動作ブロック](client-behavioral-blocking.md)
 ##### [フィードバック ループのブロック](feedback-loop-blocking.md)
 
-
 ### [Microsoft Defender for Endpoint での誤検出/検出漏れに対処する](defender-endpoint-false-positives-negatives.md)
-
 
 ### [デバイス構成の管理]()
 
 #### [セキュリティ ベースラインへの準拠を強化する](configure-machines-security-baseline.md)
 #### [攻撃面の減少ルールの展開と検出を最適化する](configure-machines-asr.md)
+
+## [アクティブな脅威とキャンペーンの開始ガイダンス]()
+### [Log4Shell の脆弱性を管理する](tvm-manage-log4shell-guidance.md)
 
 ## [脅威の調査と対応]()
 ### [エンドポイントでの検出と対応]()
@@ -520,7 +485,6 @@
 ####### [アラート関連のデバイス情報を取得する](get-alert-related-machine-info.md)
 ####### [アラート関連のユーザー情報を取得する](get-alert-related-user-info.md)
 
-
 ###### [脆弱性と安全な構成の評価]()
 ####### [評価方法とプロパティのエクスポート](get-assessment-methods-properties.md)
 ####### [安全な構成評価のエクスポート](get-assessment-secure-config.md)
@@ -532,6 +496,9 @@
 ####### [調査の一覧表示](get-investigation-collection.md)
 ####### [調査の取得](get-investigation-object.md)
 ####### [調査の開始](initiate-autoir-investigation.md)
+
+###### [証明書インベントリ]()
+####### [証明書インベントリ評価のエクスポート](export-certificate-inventory-assessment.md)
 
 ###### [ドメイン]()
 ####### [ドメイン関連のアラートを取得する](get-domain-related-alerts.md)
@@ -562,7 +529,6 @@
 ####### [ライブ応答ライブラリにアップロードする](upload-library.md)
 ####### [ライブラリから削除する](delete-library.md)
 
-
 ###### [マシン]()
 ####### [マシン メソッドとプロパティ](machine.md)
 ####### [マシンの一覧表示](get-machines.md)
@@ -578,8 +544,6 @@
 ####### [不足している KB を取得する](get-missing-kbs-machine.md)
 ####### [デバイス値の設定](set-device-value.md)
 ####### [コンピューターの更新](update-machine-method.md)
-
-
 
 ###### [マシン アクション]()
 ####### [マシン アクション メソッドとプロパティ](machineaction.md)
@@ -617,6 +581,11 @@
 ####### [マシン グループごとの暴露スコアを一覧表示する](get-machine-group-exposure-score.md)
 ####### [暴露スコアを取得する](get-exposure-score.md)
 ####### [デバイスのセキュア スコアを取得する](get-device-secure-score.md)
+
+###### [セキュリティ基本計画]()
+####### [セキュリティ ベースライン評価のエクスポート](export-security-baseline-assessment.md)
+####### [セキュリティ ベースライン評価プロファイルを一覧表示する](get-security-baselines-assessment-profiles.md)
+####### [セキュリティ ベースライン評価構成を一覧表示する](get-security-baselines-assessment-configurations.md)
 
 ###### [ソフトウェア]()
 ####### [ソフトウェア メソッドとプロパティ](software.md)

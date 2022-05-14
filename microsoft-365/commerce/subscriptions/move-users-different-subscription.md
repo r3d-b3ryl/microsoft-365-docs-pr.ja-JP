@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: micurn, nicholak
+ms.reviewer: shegu, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,13 +19,13 @@ ms.custom:
 - manage_licenses
 search.appverid: MET150
 description: サブスクリプション間でユーザーを移動する方法について説明します。
-ms.date: 07/01/2020
-ms.openlocfilehash: f1aff383bb4e83b7cefae0f6d15c496ab3117919
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/12/2022
+ms.openlocfilehash: b790b708ba9095b40ab9f79a27f531a5267c9c08
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326273"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403296"
 ---
 # <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 

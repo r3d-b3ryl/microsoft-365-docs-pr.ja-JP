@@ -12,12 +12,12 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Moodle プラグインを設定して構成することで、Moodle とMicrosoft Teamsを統合する準備を整えます。
-ms.openlocfilehash: 5ab68a96eae8c4d0669fbde52bd547dae0b2c1b7
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: c6c022ee2f567dc917a0be164daf4f39a74996b1
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131258"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403212"
 ---
 # <a name="set-up-and-configure-the-moodle-plugin"></a>Moodle プラグインを設定して構成する
 
@@ -33,12 +33,12 @@ ms.locfileid: "65131258"
 Moodle をインストールするための前提条件を次に示します。
 
 * Moodle 管理者の資格情報。
-* 管理者の資格情報をAzure ADします。
+* Azure AD 管理者の資格情報。
 * 新しいリソースを作成できる Azure サブスクリプション。
 
 ## <a name="1-install-the-microsoft-365-moodle-plugins"></a>1. Microsoft 365 Moodle プラグインをインストールする
 
-Microsoft Teamsでの Moodle の統合は、[オープンソース Microsoft 365 Moodle プラグインセット](https://github.com/Microsoft/o365-moodle)によって強化されます。
+Microsoft Teamsでの Moodle の統合は、[オープンソース Microsoft 365 Moodle プラグインセット](https://moodle.org/plugins/browse.php?list=set&id=72)によって強化されます。
 
 ### <a name="requisite-applications-and-plugins"></a>必要なアプリケーションとプラグイン
 
@@ -56,12 +56,9 @@ Microsoft 365 Moodle プラグインのインストールに進む前に、次�
 
 #### <a name="install-plugins"></a>プラグインをインストールする
 
-1. Moodle サーバーにサインインし、 **サイト管理** に移動します。
-1. [プラグイン] タブ **を** 選択し、[ **プラグインのインストール**] を選択します。
-1. [ **ZIP ファイルからプラグインをインストールする** ] セクションで、[ **ファイルの選択**] を選択します。
-1. 左側のナビゲーション パネルから **ファイルアップロード** 選択し、ダウンロードしたファイルを参照して、**このファイルアップロード** 選択します。
-1. 左側のナビゲーション パネルから [ **サイト管理** ] を選択して、管理者ダッシュボードに戻ります。
-1. **ローカル プラグイン** まで下にスクロールし、**Microsoft 365統合** リンクを選択します。
+1. プラグインをダウンロードして抽出し、対応するフォルダーにアップロードします。 たとえば、OpenID Connect プラグイン (auth_oidc) を **oidc** という名前のフォルダーに抽出し、Moodle ドキュメント ルートの **認証** フォルダーにアップロードします。
+2. 管理者として Moodle サイトにサインインし、[ **サイト管理**] を選択します。
+3. インストールする新しいプラグインが検出されると、Moodle は新しいプラグインのインストール ページにリダイレクトする必要があります。 これが発生しない場合は、[**サイト管理**] ページの [**全般**] タブで **[通知**] を選択すると、プラグインのインストールがトリガーされます。
 
     > [!IMPORTANT]
     >
@@ -79,24 +76,21 @@ Microsoft 365 Moodle プラグインのインストールに進む前に、次�
         1. トークン エンドポイント: ``https://login.microsoftonline.com/common/oauth2/token``.
 1. 後で使用できるように **リダイレクト URI を** 記録します。
 
-## <a name="2-configure-the-connection-between-the-microsoft-365-plugins-and-azure-ad"></a>2. Microsoft 365 プラグインとAzure AD間の接続を構成する
+## <a name="2-configure-the-connection-between-the-microsoft-365-plugins-and-azure-ad"></a>2. Microsoft 365 プラグインと Azure AD 間の接続を構成する
 
-Microsoft 365 プラグインとAzure AD間の接続を構成する必要があります。
+Microsoft 365 プラグインと Azure AD 間の接続を構成する必要があります。
 
 ### <a name="requisites"></a>前提 条件
 
-PowerShell スクリプトを使用して、Azure ADで Moodle をアプリケーションとして登録します。 スクリプトでは、次の項目がプロビジョニングされます。
+PowerShell スクリプトを使用して、Azure AD で Moodle をアプリケーションとして登録します。 スクリプトでは、次の項目がプロビジョニングされます。
 
-* Microsoft 365 Moodle Plugins によって使用される、Microsoft 365 テナント用の新しいAzure AD アプリケーション。
+* Microsoft 365 Moodle プラグインによって使用される、Microsoft 365 テナント用の新しい Azure AD アプリケーション。
 * Microsoft 365 テナントのアプリは、プロビジョニングされたアプリに必要な応答 URL とアクセス許可を設定し、`AppID`次の値を`Key`返します。
 
-生成された `AppID` `Key` [Microsoft 365 Moodle Plugins] セットアップ ページを使用して、Azure ADを使用して Moodle サーバー サイトを構成します。
+生成された `AppID` `Key` [Microsoft 365 Moodle Plugins] セットアップ ページを使用して、Azure AD を使用して Moodle サーバー サイトを構成します。
 
 > [!IMPORTANT]
->
-> * PowerShell スクリプトは最新の構成項目では更新されないため、Moodle [3.10.6 および 3.11.3](https://docs.moodle.org/311/en/Microsoft_365) リリース ページで説明されている手順に従って手動で構成を完了する必要があります。
->
-> * Moodle インスタンスを手動で登録する方法の詳細については、「 [Moodle インスタンスをアプリケーションとして登録する」を参照してください](https://docs.moodle.org/311/en/Microsoft_365#Register_Application_in_Azure_manually)。
+> * Moodle インスタンスを手動で登録する方法の詳細については、「 [Moodle インスタンスをアプリケーションとして登録する」を参照してください](https://docs.moodle.org/400/en/Microsoft_365#Azure_App_Creation_and_Configuration)。
 
 ### <a name="the-teams-for-moodle-set-up-process"></a>Moodle のセットアップ プロセスのTeams
 
@@ -141,28 +135,28 @@ PowerShell スクリプトを使用して、Azure ADで Moodle をアプリケ�
 
 1. ページが更新されると、別の新しいセクション **管理者の同意&追加情報** が表示されます。
     1. [**管理者の同意の提供**] リンクを選択し、Microsoft 365グローバル管理者の資格情報を入力し、[**同意]** を選択してアクセス許可を付与します。
-    1. **[Azure AD テナント**] フィールドの横にある [**検出**] ボタンを選択します。
+    1. **Azure AD テナント** フィールドの横にある [**検出**] ボタンを選択します。
     1. **OneDrive for Business URL** の横にある [**検出**] ボタンを選択します。
     1. フィールドが設定されたら、もう一度 [ **変更の保存]** ボタンを選択します。
 
 1. [ **更新]** ボタンを選択してインストールを確認し、[ **変更の保存]** を選択します。
 
-1. Moodle サーバーとAzure ADの間でユーザーを同期します。 環境に応じて、この段階でさまざまなオプションを選択できます。 次の手順をお試しください。
+1. Moodle サーバーと Azure AD の間でユーザーを同期します。 環境に応じて、この段階でさまざまなオプションを選択できます。 次の手順をお試しください。
     1. **[同期設定] タブ** に切り替えます。
 
-    1. [**Azure ADユーザーの同期**] セクションで、環境に適用するチェック ボックスをオンにします。 次のオプションを選択する必要があります。  
+    1. [ **ユーザーと Azure AD の同期** ] セクションで、環境に適用するチェック ボックスをオンにします。 次のオプションを選択する必要があります。  
 
-        ✔ Azure ADのユーザーに対して Moodle でアカウントを作成します。
+        ✔ Azure AD でユーザーのアカウントを Moodle に作成します。
         
-        ✔ Azure ADのユーザーに対して Moodle のすべてのアカウントを更新します。
+        ✔ Azure AD のユーザーに対して、Moodle のすべてのアカウントを更新します。
         
 
-    1. [**ユーザー作成の制限**] セクションで、Moodle に同期されるAzure ADユーザーを制限するフィルターを設定できます。
+    1. [ **ユーザー作成の制限** ] セクションで、Moodle に同期される Azure AD ユーザーを制限するフィルターを設定できます。
     1. **[コース同期**] セクションで、[**コース同期のカスタマイズ**] オプションを選択して、既存の Moodle コースの一部または全部のグループとTeamsの自動作成を有効にすることができます。
 
-1. [cron](https://docs.moodle.org/310/en/Cron) タスクを検証し、初めて手動で実行するには、**Site** **administrationServerTasksScheduled** >  >  >  **タスクに** 移動します。
+1. [cron](https://docs.moodle.org/400/en/Cron) タスクを検証し、初めて手動で実行するには、**Site** **administrationServerTasksScheduled** >  >  >  **タスクに** 移動します。
 
-    1. 下にスクロールし、タスク [**ユーザーの同期] と [Azure AD**] を見つけて、[**今すぐ実行**] を選択します。
+    1. 下にスクロールし、 **タスク [ユーザーと Azure AD の同期** ] を見つけて、[ **今すぐ実行**] を選択します。
         1. これにより、AAD ユーザーが Moodle サイトに同期されます。
     1. 次に、タスクを **Microsoft Teamsする Sync Moodle コースを** 見つけて、[**今すぐ実行**] を選択します。
         1. このタスクはグループを作成し、所有者が見つかった場合はTeamsします。
@@ -171,38 +165,16 @@ PowerShell スクリプトを使用して、Azure ADで Moodle をアプリケ�
 
     > [!NOTE]
     >
-    > Moodle [Cron](https://docs.moodle.org/311/en/Scheduled_tasks) は、タスク スケジュールに従って実行されます。 既定のスケジュールは、サーバーのローカル タイム ゾーンの 1 日 1:00 AM に 1 回です。 ただし、すべての同期を維持するために cron をより頻繁に実行する必要があります。
+    > Moodle [Cron](https://docs.moodle.org/400/en/Scheduled_tasks) は、タスク スケジュールに従って実行されます。 既定のスケジュールは、サーバーのローカル タイム ゾーンの 1 日 1:00 AM に 1 回です。 ただし、すべての同期を維持するために cron をより頻繁に実行する必要があります。
 
-1. サイト管理ページに戻ります。
+1. **Site** **administrationPluginsLocal** >  >  **プラグイン** > **Microsoft 365統合** > **Teams 設定** タブに移動します。
 
-1. Teams アプリ統合を有効にするために必要な設定を構成します。
-
-    1. **OpenID Connect** を有効にするには、**サイト管理** > **PluginsManage** **認証** に移動します > 。
-        1. **OpenID Connect** を見つけ、灰色で表示されている場合は目のアイコンを選択します。変更を保存します。
-    1. フレームの埋め込みを有効にするには、[**サイト管理**] に移動し、[**セキュリティ**] セクションで **[HTTP セキュリティ**] を選択します。
-        1. [ **フレームの埋め込みを許可** する] の横にあるチェック ボックスをオンにします。 変更を保存します。
-    1. Moodle API 機能を有効にする Web サービスを有効にするには、 **サイト管理** > **Advanced 機能** に移動します。
-        1. [ **Web サービスを有効にする]** の横にあるチェック ボックスがオンになっていることを確認します。 変更を保存します。
-    1. Microsoft 365の外部サービスを有効にするには、**Site** **administrationPlugins** >  に移動し、[**Web サービス**] セクションで **[外部サービス]** を選択します。
-
-        ✔ [**組み込みサービス**] セクションで、**Moodle Microsoft 365 Web サービスを見つけます**。
-        
-        ✔ **[Moodle Microsoft 365 Webservices**] 行で **[編集] を** 選択します。
-        
-        ✔ 灰色で表示されている場合は、目のアイコンを選択します。変更を保存します。
-        
-
-    1. 認証されたユーザーのアクセス許可を編集して、Web サービス トークンを作成できるようにします。
-
-        ✔ **[サイト管理**]、[**ユーザー]** タブに移動し、[**アクセス許可**] セクションで **[ロールの定義**] を見つけます。
-        
-        ✔ [ **ユーザーの管理** ] タブで、[ **認証されたユーザー ロール]** を探し、編集アイコンを選択します。
-        
-        ✔ 下にスクロールし、[ **Web サービス トークンの作成** ] 機能を見つけて、[ **許可** ] チェック ボックスをオンにします。 変更を保存します。
+1. [**Check Moodle settings]** ボタンをクリックすると、Teams統合が機能するために必要なすべての構成が更新されます。
         
 
 プラグインのインストールと構成が完了したら、次のことができます。
 
+* [Moodle Assistant Bot を Azure にデプロイします](/microsoftteams/install-moodle-integration#step-3-deploy-the-moodle-assistant-bot-to-azure)。
 * [Teams クラスに Moodle タブを追加します](/microsoftteams/install-moodle-integration#step-4-deploy-your-microsoft-teams-app)。
 * [Teamsクラスと会議を Moodle LMS に追加します](teams-classes-meetings-with-moodle.md)。
 
@@ -210,5 +182,4 @@ PowerShell スクリプトを使用して、Azure ADで Moodle をアプリケ�
 
 Moodle のMicrosoft 365統合ガイドとリリース ノートを確認する場合は、次のリソースを参照してください。
 
-* [Moodle と Microsoft 365 3.10.6](https://docs.moodle.org/310/en/Microsoft_365)。
-* [Moodle と Microsoft 365 3.11.3](https://docs.moodle.org/310/en/Microsoft_365)。
+* [Moodle Docs の統合ドキュメントをMicrosoft 365します](https://docs.moodle.org/400/en/Microsoft_365)。

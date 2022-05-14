@@ -19,17 +19,17 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid: MET150
-ms.date: 08/27/2021
-ms.openlocfilehash: fd452cb52a1c65a59e478fb80438ac95a57e8bf6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/12/2022
+ms.openlocfilehash: 5603fd947abdfbc6bede01fe7545a5a0fa99a67d
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311789"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403274"
 ---
 # <a name="manage-licenses-for-devices"></a>デバイスのライセンスを管理する
 
-教育機関 (デバイス) のMicrosoft 365 Apps for enterprise (デバイス) またはMicrosoft 365 Appsがある場合は、Azure AD グループを使用して、デバイスにライセンスを割り当てることができます。 デバイスにライセンスがある場合、そのデバイスを使用するすべてのユーザーがMicrosoft 365 Apps for enterpriseを使用できます (以前の名前Office 365 ProPlus)。 たとえば、組織内のユーザーが使用するノート PC とタブレットが 20 個あるとします。 各デバイスにライセンスを割り当てると、いずれかのデバイスにログインする各ユーザーは、独自のライセンスを必要とせずにMicrosoft 365 Apps for enterpriseを使用します。
+Education (デバイス) のMicrosoft 365 Apps for enterprise (デバイス) またはMicrosoft 365 Appsがある場合は、Azure AD グループを使用して、デバイスにライセンスを割り当てることができます。 デバイスにライセンスがある場合、そのデバイスを使用するすべてのユーザーがMicrosoft 365 Apps for enterpriseを使用できます (以前の名前Office 365 ProPlus)。 たとえば、組織内のユーザーが使用するノート PC とタブレットが 20 個あるとします。 各デバイスにライセンスを割り当てると、いずれかのデバイスにログインする各ユーザーは、独自のライセンスを必要とせずにMicrosoft 365 Apps for enterpriseを使用します。
 
 > [!IMPORTANT]
 > Microsoft 365 Apps for enterpriseのデバイス ベースのライセンスは、一部の商用顧客および一部の教育機関のお客様向けのアドオン ライセンスとしてのみ使用できます。 商用顧客の場合、ライセンスは *Microsoft 365 Apps for enterprise (デバイス)* であり、Enterprise Agreement/Enterprise Agreement サブスクリプションでのみ使用できます。 教育機関のお客様の場合、このライセンスは *Education (デバイス) 用にMicrosoft 365 Apps* され、Education Solutions (EES) の登録でのみ使用できます。 詳細については、 [教育の可用性](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education)に関するブログ投稿を参照してください。 商用の可用性については、Microsoft アカウント担当者にお問い合わせください。

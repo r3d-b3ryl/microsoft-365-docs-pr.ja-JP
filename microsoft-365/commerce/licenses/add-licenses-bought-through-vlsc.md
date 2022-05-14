@@ -19,13 +19,13 @@ ms.custom:
 search.appverid: MET150
 ROBOTS: NOINDEX
 description: Microsoft が認識するサード パーティ パートナーを通じて購入したMicrosoft 365 サブスクリプションにライセンスを追加する方法について説明します。
-ms.date: 08/27/2021
-ms.openlocfilehash: 56779a263a42ef385b1d6cf4df608b2243495e9a
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.date: 05/12/2022
+ms.openlocfilehash: a9a449edb5d03a43e39338a9b52df2b40fa9ad7a
+ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713825"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65403252"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>ボリューム ライセンス サービス センター (VLSC) 経由で購入したサブスクリプションにライセンスを追加する
 
