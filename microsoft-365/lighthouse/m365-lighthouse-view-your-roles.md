@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) 技術者の場合は、組織が管理するさまざまな顧客テナントでAzure Active Directory (Azure AD) ロールを表示する方法について説明します。
-ms.openlocfilehash: b4d3e461d6af940181156a95aada86d59553b11b
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 501faef8aba711763ad9464085ce76221957ea80
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188903"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415490"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Microsoft 365 LighthouseでAzure Active Directory ロールを表示する
 
@@ -41,7 +41,7 @@ Microsoft 365 Lighthouse サービスにオンボードされているパート�
 
     顧客テナントで 1 つ以上のロールを保持している場合、そのテナントの **[有効]** 列に緑色のチェックマークと、保持しているロールの数が表示されます。 テナントにロールを保持していない場合は、赤い **X** が表示されます。
  
-4. 隣に緑色のチェックマークが付いた顧客テナントの場合は、テナントを展開して、そのテナントで保持しているロールの一覧を表示します。 Azure AD ロールと付与するアクセス許可の詳細については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください。
+4. 隣に緑色のチェックマークが付いた顧客テナントの場合は、テナントを展開して、そのテナントで保持しているロールの一覧を表示します。 Azure AD ロールと付与されるアクセス許可の詳細については、 [Azure AD の組み込みロールに](/azure/active-directory/roles/permissions-reference)関するページを参照してください。
 
     [ **ロール]** ページには、テナントに適用されているカスタム タグも表示されます。 割り当てられたロールまたはタグを使用して、ページ上のデータをフィルター処理できます。
 

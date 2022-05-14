@@ -15,12 +15,12 @@ ms.date: 10/22/2021
 manager: dansimp
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 744aaa887bfbfafd29b9e3bedb8dc49791b43137
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: d950e69a557ccc95fe40bf300dae05f64e51032e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790176"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416038"
 ---
 # <a name="enable-and-configure-microsoft-defender-antivirus-always-on-protection-in-group-policy"></a>グループ ポリシーで Microsoft Defender ウイルス対策を常時保護を有効にして構成する
 

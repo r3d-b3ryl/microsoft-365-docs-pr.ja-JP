@@ -14,18 +14,18 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 電子情報開示 (プレミアム) でMicrosoft Teamsからコンテンツを保持、収集、確認、エクスポートする方法について説明します。
-ms.openlocfilehash: 36bfcde1b2ee5ad9b088db008249cdeb1cf90eb4
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 46fe8491533f6d2fa6954eab76758213eaa7d30d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092273"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414868"
 ---
 # <a name="ediscovery-premium-workflow-for-content-in-microsoft-teams"></a>Microsoft Teams内のコンテンツの電子情報開示 (プレミアム) ワークフロー
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-この記事では、Microsoft Purview 電子情報開示 (プレミアム) を使用して、Microsoft Teamsからコンテンツを保持、収集、確認、エクスポートするための包括的な手順、ガイドライン、ベスト プラクティスについて説明します。 この記事の目的は、Teams コンテンツの電子情報開示ワークフローを最適化することです。
+この記事では、Microsoft Purview電子情報開示 (プレミアム) を使用して、Microsoft Teamsからコンテンツを保持、収集、確認、エクスポートするための包括的な手順、ガイドライン、ベスト プラクティスについて説明します。 この記事の目的は、Teams コンテンツの電子情報開示ワークフローを最適化することです。
 
 電子情報開示 (プレミアム) を使用して収集および処理できるTeams コンテンツには、次の 5 つのカテゴリがあります。
 
@@ -70,7 +70,7 @@ ms.locfileid: "65092273"
 
 1. <https://compliance.microsoft.com> に移動し、サインインします。
 
-2. Microsoft Purview コンプライアンス ポータルの左側のナビゲーション ウィンドウで、[ **電子情報開示>詳細設定**] をクリックします。
+2. Microsoft Purview コンプライアンス ポータルの左側のナビゲーション ウィンドウで、[**電子情報開示>詳細設定**] をクリックします。
 
 3. **[電子情報開示 (プレミアム)]** ページで、[**ケース**] タブをクリックし、[**ケースの作成**] をクリックします。
 

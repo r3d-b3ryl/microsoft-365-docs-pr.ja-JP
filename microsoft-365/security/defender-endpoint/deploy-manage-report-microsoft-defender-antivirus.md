@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4e0d249f7805c47be55ec42f3362ca1952c20ca3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 049c7a772c4c8dcf986efd310e4613423f33dcc9
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788504"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419134"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のデプロイ、管理、レポート
 
@@ -58,7 +58,7 @@ Microsoft エンドポイント マネージャー ([1](#fn1))|[Endpoint Protect
 グループ ポリシーと Active Directory (ドメイン参加済み)|グループ ポリシー オブジェクトを使用して構成変更をデプロイし、Microsoft Defender ウイルス対策が有効になっていることを確認します。|グループ ポリシー オブジェクト (GPO) を使用して [Microsoft Defender ウイルス対策の更新オプションを構成する][] と [Windows Defender機能の構成][]|エンドポイント レポートは、グループ ポリシーでは使用できません。 [グループ ポリシー] の一覧を生成して、設定またはポリシーが適用されていないかどうかを判断できます。][]
 PowerShell|グループ ポリシー、Microsoft Endpoint Configuration Manager、または個々のエンドポイントに手動でデプロイします。|Defender モジュールで使用できる [Set-MpPreference] コマンドレットと [Update-MpSignature] コマンドレットを使用します。|適切な [Defender モジュールで使用可能な Get- コマンドレット][] を使用する
 Windows Management Instrumentation|グループ ポリシー、Microsoft Endpoint Configuration Manager、または個々のエンドポイントに手動でデプロイします。|[MSFT_MpPreference クラスの Set メソッド][] と [MSFT_MpSignature クラスの Update メソッド][] を使用します。|[MSFT_MpComputerStatus][][] クラスと [Windows Defender WMIv2 Provider][] の関連クラスの get メソッドを使用します。
-Microsoft Azure|Visual Studio[仮想マシン構成を使用するか、Azure PowerShellコマンドレットを使用して、Azure portalに Azure のMicrosoft Antimalwareをデプロイします](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios)。 [Microsoft Defender for Cloud* にエンドポイント保護をインストールすることもできます。](/azure/security-center/security-center-install-endpoint-protection)|[Azure PowerShell コマンドレットを使用してVirtual MachinesとCloud ServicesのMicrosoft Antimalwareを](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)構成するか、[コード サンプルを使用](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)する|Azure PowerShell コマンドレットを使用して[Virtual MachinesとCloud ServicesにMicrosoft Antimalware](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)を使用して監視を有効にします。 また、Azure Active Directoryの使用状況レポートを確認して、[感染した可能性のあるデバイス][] レポートを含む疑わしいアクティビティを特定し、[Microsoft Defender ウイルス対策 イベント][] を報告し、そのツールをAADでアプリとして追加するように SIEM ツールを構成することもできます。
+Microsoft Azure|Visual Studio[仮想マシン構成を使用するか、Azure PowerShellコマンドレットを使用して、Azure portalに Azure のMicrosoft Antimalwareをデプロイします](/azure/security/azure-security-antimalware#antimalware-deployment-scenarios)。 [Microsoft Defender for Cloud* にエンドポイント保護をインストールすることもできます。](/azure/security-center/security-center-install-endpoint-protection)|[Azure PowerShell コマンドレットを使用して Virtual Machines と Cloud Services のMicrosoft Antimalwareを](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)構成するか、[コード サンプルを使用](https://gallery.technet.microsoft.com/Antimalware-For-Azure-5ce70efe)する|[Azure PowerShell コマンドレットを使用して、Virtual Machines と Cloud Services のMicrosoft Antimalware](/azure/security/azure-security-antimalware#enable-and-configure-antimalware-using-powershell-cmdlets)を使用して監視を有効にします。 また、Azure Active Directoryの使用状況レポートを確認して、[感染した可能性のあるデバイス][] レポートを含む不審なアクティビティを特定し、[Microsoft Defender ウイルス対策 イベント][] を報告し、そのツールを AAD のアプリとして追加するように SIEM ツールを構成することもできます。
 
 1. <span id="fn1" />一部の機能と機能の可用性 (特にクラウド配信保護に関連) は、Microsoft エンドポイント マネージャー (Current Branch) と System Center 2012 Configuration Managerによって異なります。 このライブラリでは、Windows 10、Windows 11、Windows Server 2016、Microsoft エンドポイント マネージャー (Current Branch) に重点を置きました。 主な違いを説明する表については、「[Microsoft Defender ウイルス対策で Microsoft クラウド提供の保護を使用](cloud-protection-microsoft-defender-antivirus.md)する」を参照してください。 [(テーブルに戻る)](#ref2)
 

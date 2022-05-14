@@ -13,12 +13,12 @@ ms.collection:
 description: レポート メッセージ機能を使用して、Outlookで誤検知と誤検知を報告する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8f52b4d085c13f2e1e1a48c2a8a12e6782f13960
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974105"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416974"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 
@@ -47,6 +47,9 @@ ms.locfileid: "64974105"
 - レポート メッセージまたはレポート フィッシング アドインを取得して有効にする方法の詳細については、「 [レポート メッセージまたはレポート フィッシング アドインを有効にする](enable-the-report-message-add-in.md)」を参照してください。
 
 - Microsoft にメッセージを報告する方法の詳細については、「メッセージ [とファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+
+この短いビデオでは、Microsoft Defender for Office 365を使用してユーザーの送信を簡単に調査してメッセージの内容を特定し、適切な修復アクションを適用して送信に応答する方法について説明します。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
 
 ### <a name="turn-off-the-built-in-reporting-experience"></a>組み込みのレポート エクスペリエンスを無効にする
 

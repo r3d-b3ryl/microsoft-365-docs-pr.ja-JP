@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Microsoft 365ストレージとMicrosoft 365ファイル共有にOneDriveとチーム サイトを使用する方法について説明します。
-ms.openlocfilehash: 2cc7354a5f22f170a097d7960d936e36999bde49
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e17f4cdb7abefdc7374e1ada073c154d0f006216
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60202323"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417240"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Microsoft 365でファイル ストレージと共有を設定する
 
@@ -198,9 +198,9 @@ Microsoft 365内のユーザーに対してサード パーティ製のストレ
 
 - [ファイルの保存と共有のためにチーム サイトをカスタマイズします](customize-team-site.md)。 このチュートリアルでは、ストレージとコラボレーションの機能をさらに活用する方法について説明します。
 
-- **タブレットとスマートフォンで Office アプリをセットアップします。** これは、OneDriveおよびチーム サイトに保存されているファイルをタブレットやスマートフォンから **編集** できるようにする必要があります。 タブレットまたはスマートフォン用のOffice アプリをインストールしない場合は、ファイルを表示することはできますが、編集することはできません。
+- **タブレットとスマートフォンで Office アプリをセットアップします。** Tablet PCや電話からOneDriveやチーム サイトに保存されているファイルを **編集** できるようにするには、これを行う必要があります。 Tablet PCまたはスマートフォン用のOffice アプリをインストールしない場合は、ファイルを表示することはできますが、編集することはできません。
 
-  - [Microsoft 365を使用して Android にOfficeをインストールして設定する](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
+  - [Microsoft 365を使用してAndroidにOfficeをインストールして設定する](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
 
   - [Microsoft 365を使用してiPhoneまたはiPadにOfficeをインストールして設定する](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 

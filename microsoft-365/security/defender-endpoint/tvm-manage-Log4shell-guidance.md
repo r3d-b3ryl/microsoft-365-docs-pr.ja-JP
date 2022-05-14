@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c6564d191b3d3302f818e20fe08e64b415c2b0bb
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 6e265490eb5afee275debcdd1eb073f11bb845e3
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131367"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416492"
 ---
 # <a name="learn-how-to-manage-the-log4shell-vulnerability-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointで Log4Shell の脆弱性を管理する方法について説明します
 
@@ -50,11 +50,11 @@ Log4Shell の脆弱性は、Apache Log4j 2 ログ ライブラリで見つかっ
 - **高度なハンティング:** 高度な捜索を使用して、ディスク上で識別された脆弱な log4j ファイルの詳細を返します。
 
 > [!NOTE]
-> これらの機能は、Windows 10 & Windows 11、Windows Server、Linux、macOS でサポートされています。
+> これらの機能は、Windows 10 & Windows 11、Windows サーバー、Linux、macOSでサポートされています。
 >
 > Linux でのサポートには Microsoft Defender for Endpoint、Linux クライアント バージョン 101.52.57 (30.121092.15257.0) 以降が必要です。
 >
-> macOS でのサポートには、macOS クライアント バージョン 20.121111.15416.0 以降Microsoft Defender for Endpoint必要があります。
+> macOSのサポートには、クライアント バージョン 20.121111.15416.0 以降Microsoft Defender for Endpoint macOS必要があります。
 >
 >サポートされているバージョンの詳細については、「 [サポートされているオペレーティング システムのプラットフォームと機能](tvm-supported-os.md)」を参照してください。
 
@@ -146,7 +146,7 @@ log4Shell の脆弱性は、既定の構成で Log4j バージョン 2.10 - 2.14
 | 適用される回避策 | _Windows_: LOG4J_FORMAT_MSG_NO_LOOKUPS環境変数は、最新のデバイスの再起動前に観察されました。 <br/><br/> _Linux + macOS_: 実行中のすべてのプロセスは、環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true を持ちます。 |
 | 再起動中の回避策 | LOG4J_FORMAT_MSG_NO_LOOKUPS環境変数は設定されていますが、次の再起動は検出されません。 |
 | 未適用 | _Windows_: LOG4J_FORMAT_MSG_NO_LOOKUPS環境変数は観察されませんでした。 <br/><br/> _Linux + macOS_: 実行中のプロセスの環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true というわけではありません。デバイスには軽減アクションが適用されませんでした。 |
-| 部分的に軽減 | _Linux + macOS_: 軽減アクションはデバイスに適用されましたが、実行中のプロセスの環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true というわけではありません。 |
+| 部分的に軽減 | _Linux + macOS_: 軽減策アクションはデバイスに適用されましたが、実行中のプロセスの環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true というわけではありません。 |
 |該当なし | 軽減策のバージョン範囲にない脆弱なファイルを持つデバイス。 |
 |不明 | 現時点では、軽減策の状態を特定できませんでした。 |
 
@@ -176,13 +176,13 @@ log4Shell の脆弱性は、既定の構成で Log4j バージョン 2.10 - 2.14
 
 この変更は、デバイスの再起動後に有効になります。
 
-**_macOS の場合:_**
+**_macOSの場合:_**
 
 ファイル setenv を削除します。LOG4JFORMATMSGNOLOOKUPS.plist\_\_\_\_ を次のフォルダーから取得します。
 
-  - */Library/LaunchDaemons/*
-  - */Library/LaunchAgents/*
-  - */Users/\[username\]/Library/LaunchAgents/ - すべてのユーザー*
+- */Library/LaunchDaemons/*
+- */Library/LaunchAgents/*
+- */Users/\[username\]/Library/LaunchAgents/ - すべてのユーザー*
 
 この変更は、デバイスの再起動後に有効になります。
 

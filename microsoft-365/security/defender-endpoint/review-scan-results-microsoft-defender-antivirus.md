@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9ffe10560bb36c8fc1311061510f35396934e3b8
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 3bbaa19401823eada5b1b9769c259e8296f75924
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790638"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417570"
 ---
 # <a name="review-microsoft-defender-antivirus-scan-results"></a>Microsoft Defender ウイルス対策スキャン結果を確認する
 

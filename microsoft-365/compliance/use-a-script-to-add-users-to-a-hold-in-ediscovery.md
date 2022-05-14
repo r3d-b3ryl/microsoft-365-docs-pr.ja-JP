@@ -21,19 +21,19 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Microsoft Purview コンプライアンス ポータルで、電子情報開示ケースに関連付けられた新しいホールドにメールボックス& OneDrive for Businessサイトを追加するスクリプトを実行する方法について説明します。
-ms.openlocfilehash: c652cd7d553faa5a7f85c59127e4aa2acfd7df4b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft Purview コンプライアンス ポータルの電子情報開示ケースに関連付けられた新しいホールドにメールボックス& OneDrive for Businessサイトを追加するスクリプトを実行する方法について説明します。
+ms.openlocfilehash: b828c9c1e6494ad4d0da4ca471feb7ace563d152
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097912"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416016"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースでユーザーをホールドに追加するスクリプトを使用する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Security & Compliance Center PowerShell には、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できるコマンドレットが用意されています。 現在、Microsoft Purview コンプライアンス ポータルで Microsoft Purview 電子情報開示 (Standard) ケースを使用して、多数のカストディアン コンテンツの場所を保持するには、時間と準備が必要です。 たとえば、保留リストを作成する前に、保留にするOneDrive for Businessサイトごとに URL を収集する必要があります。 次に、保留にするユーザーごとに、メールボックスとそのOneDrive for Business サイトを保留に追加する必要があります。 この記事のスクリプトを使用して、このプロセスを自動化できます。
+Security & Compliance Center PowerShell には、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できるコマンドレットが用意されています。 現在、Microsoft Purview コンプライアンス ポータルでMicrosoft Purview電子情報開示 (Standard) ケースを使用して、多数のカストディアン コンテンツの場所を保留にするには、時間と準備が必要です。 たとえば、保留リストを作成する前に、保留にするOneDrive for Businessサイトごとに URL を収集する必要があります。 次に、保留にするユーザーごとに、メールボックスとそのOneDrive for Business サイトを保留に追加する必要があります。 この記事のスクリプトを使用して、このプロセスを自動化できます。
   
 このスクリプトでは、組織の個人用サイト ドメインの名前 (URLhttps://contoso-my.sharepoint.com)、既存の電子情報開示ケースの名前、`contoso`ケースに関連付けられている新しいホールドの名前、保留にするユーザーの電子メール アドレスの一覧、クエリ ベースのホールドを作成する場合に使用する検索クエリなど) を求めるメッセージが表示されます。 スクリプトは、リスト内の各ユーザーのOneDrive for Business サイトの URL を取得し、新しい保留リストを作成し、リスト内の各ユーザーのメールボックスとOneDrive for Business サイトを保留リストに追加します。 このスクリプトでは、新しい保留に関する情報を含むログ ファイルも生成されます。
   
@@ -47,7 +47,7 @@ Security & Compliance Center PowerShell には、電子情報開示ケースの�
   
 ## <a name="before-you-add-users-to-a-hold"></a>ユーザーを保留に追加する前に
 
-- 手順 3 でスクリプトを実行するには、コンプライアンス ポータルの電子情報開示マネージャー役割グループのメンバーであり、SharePoint Online 管理者である必要があります。 詳細については、[Office 365 セキュリティ & コンプライアンス センターの電子情報開示アクセス許可の割り当て](assign-ediscovery-permissions.md)に関するページを参照してください。
+- 手順 3 でスクリプトを実行するには、コンプライアンス ポータルの電子情報開示マネージャー役割グループのメンバーであり、SharePoint Online 管理者である必要があります。 詳細については、「[Office 365 セキュリティ & コンプライアンス センターで電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。
 
 - コンプライアンス ポータルの電子情報開示ケースに関連付けられているホールドには、最大 1,000 個のメールボックスと 100 個のサイトを追加できます。 保留にするすべてのユーザーにOneDrive for Business サイトがあると仮定すると、この記事のスクリプトを使用して、ホールドに最大 100 人のユーザーを追加できます。
 

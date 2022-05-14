@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 14b6f6812e88a49220230e0e422d5c95f90fe187
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 52e83cf75385b36f87efbe72df9c865415f15452
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790594"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417350"
 ---
 # <a name="restore-quarantined-files-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で検疫済みファイルを復元する
 

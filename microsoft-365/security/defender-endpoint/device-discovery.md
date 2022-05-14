@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7b76fff060b46cbe13c11eb90f521af61e8900f5
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172937"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418250"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -113,7 +113,6 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="セキュリティに関する推奨事項ダッシュボード" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
 
-
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>検出されたデバイスで高度なハンティングを使用する
 
 高度なハンティング クエリを使用して、検出されたデバイスの可視性を得ることができます。 検出されたデバイスの詳細は DeviceInfo テーブルで確認するか、DeviceNetworkInfo テーブルでそれらのデバイスに関するネットワーク関連情報を確認します。
@@ -128,19 +127,19 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 DeviceInfo
 | summarize arg_max(Timestamp, *) by DeviceId  // Get latest known good per device Id
 | where isempty(MergedToDeviceId) // Remove invalidated/merged devices
-| where OnboardingStatus != "Onboarded" 
+| where OnboardingStatus != "Onboarded"
 ```
 
-**SeenBy** 関数を呼び出すと、高度なハンティング クエリで、検出されたデバイスがどのオンボードデバイスによって検出されたかの詳細を取得できます。この情報は、検出された各デバイスのネットワークの場所を特定するのに役立ち、その後、ネットワーク内のデバイスを識別するのに役立ちます。  
+**SeenBy** 関数を呼び出すと、高度なハンティング クエリで、検出されたデバイスがどのオンボードデバイスによって検出されたかの詳細を取得できます。 この情報は、検出された各デバイスのネットワークの場所を特定するのに役立ち、その後、ネットワーク内のデバイスを識別するのに役立ちます。
 
 ```query
 DeviceInfo
-| where OnboardingStatus != "Onboarded" 
-| summarize arg_max(Timestamp, *) by DeviceId  
-| where isempty(MergedToDeviceId)  
-| limit 100 
-| invoke SeenBy() 
-| project DeviceId, DeviceName, DeviceType, SeenBy  
+| where OnboardingStatus != "Onboarded"
+| summarize arg_max(Timestamp, *) by DeviceId 
+| where isempty(MergedToDeviceId) 
+| limit 100
+| invoke SeenBy()
+| project DeviceId, DeviceName, DeviceType, SeenBy
 ```
 
 詳細については、 [SeenBy()](/microsoft-365/security/defender/advanced-hunting-seenby-function) 関数を参照してください。

@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: b25e57ee28ae0ef3f219a9adda1ff3f860d063db
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 892ab423d09aae9c02135bc569f1321dbab7fa0d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789296"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419508"
 ---
 # <a name="use-microsoft-endpoint-manager-to-configure-and-manage-microsoft-defender-antivirus"></a>Microsoft エンドポイント マネージャーを使用してMicrosoft Defender ウイルス対策を構成および管理する
 

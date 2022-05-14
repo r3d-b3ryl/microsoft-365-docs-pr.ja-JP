@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 70360ac3b9ade0e6039239fe257d83c7ba3a2db0
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787606"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418634"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -67,7 +67,7 @@ Microsoft Defender ウイルス対策 クラウド サービスは、エンド�
 |セキュリティ インテリジェンス更新プログラム代替ダウンロード場所 (ADL)<p>これは、インストールされているセキュリティ インテリジェンスが古い場合 (7 日以上後) に、セキュリティ インテリジェンス更新プログラムをMicrosoft Defender ウイルス対策別の場所です。|`*.download.microsoft.com` <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 |マルウェア申請ストレージ <p>これは、提出フォームまたは自動サンプル送信を使用して Microsoft に送信されたファイルのアップロード場所です。|`ussus1eastprod.blob.core.windows.net` <p> `ussus2eastprod.blob.core.windows.net` <p> `ussus3eastprod.blob.core.windows.net` <p> `ussus4eastprod.blob.core.windows.net` <p> `wsus1eastprod.blob.core.windows.net` <p> `wsus2eastprod.blob.core.windows.net` <p> `ussus1westprod.blob.core.windows.net` <p> `ussus2westprod.blob.core.windows.net` <p> `ussus3westprod.blob.core.windows.net` <p> `ussus4westprod.blob.core.windows.net` <p> `wsus1westprod.blob.core.windows.net` <p> `wsus2westprod.blob.core.windows.net` <p> `usseu1northprod.blob.core.windows.net` <p> `wseu1northprod.blob.core.windows.net` <p> `usseu1westprod.blob.core.windows.net` <p> `wseu1westprod.blob.core.windows.net` <p> `ussuk1southprod.blob.core.windows.net` <p> `wsuk1southprod.blob.core.windows.net` <p> `ussuk1westprod.blob.core.windows.net` <p> `wsuk1westprod.blob.core.windows.net`|
 |証明書失効リスト (CRL) <p> CRL を更新するために MAPS への SSL 接続を作成するときに、この一覧を使用Windows。|`http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p> `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs`|
-|シンボル ストア <p>Microsoft Defender ウイルス対策シンボル ストアを使用して、修復フロー中に特定の重要なファイルを復元します。|`https://msdl.microsoft.com/download/symbols`|
+|シンボル Microsoft Store <p>Microsoft Defender ウイルス対策シンボル Microsoft Storeを使用して、修復フロー中に特定の重要なファイルを復元します。|`https://msdl.microsoft.com/download/symbols`|
 |ユニバーサル GDPR クライアント <p> Windowsこのクライアントを使用してクライアント診断データを送信します。 <p> Microsoft Defender ウイルス対策は、製品の品質と監視の目的で一般的なデータ保護規則を使用します。|この更新プログラムでは、SSL (TCP ポート 443) を使用してマニフェストをダウンロードし、次の DNS エンドポイントを使用する診断データを Microsoft にアップロードします。 <p> `vortex-win.data.microsoft.com` <p> `settings-win.data.microsoft.com`|
 
 

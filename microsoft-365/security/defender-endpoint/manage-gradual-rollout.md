@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8a500babf581cd70b92a39b32a3be0bb5d4acd3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8f1f2add8196afef6e8bd738586957d7fea15c84
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789384"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416334"
 ---
 # <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムの段階的ロールアウト プロセスを管理する
 
@@ -85,7 +85,7 @@ Windows Server Update Services (WSUS) や Microsoft Endpoint Configuration Manag
 
 |チャネル名|説明|アプリケーション|
 |---|---|---|
-|ベータ チャネル - プレリリース|他のユーザーより前に更新プログラムをテストする|このチャネルに設定されたデバイスは、毎月の新しい更新プログラムを受け取る最初のデバイスになります。 ベータ チャネルを選択して、Microsoft の問題の特定と報告に参加します。 Windows Insider Program のデバイスは、既定でこのチャネルにサブスクライブされます。 テスト環境でのみ使用できます。|
+|ベータ チャネル - プレリリース|他のユーザーより前に更新プログラムをテストする|このチャネルに設定されたデバイスは、毎月の新しい更新プログラムを受け取る最初のデバイスになります。 ベータ チャネルを選択して、Microsoft の問題の特定と報告に参加します。 Windows Insider Program内のデバイスは、既定でこのチャネルにサブスクライブされます。 テスト環境でのみ使用できます。|
 |最新機能提供チャネル (プレビュー)|段階的なリリース中に最新チャネルの更新プログラムを **前に** 取得する|このチャネルに設定されたデバイスには、段階的なリリース サイクルの最も早い段階で更新プログラムが提供されます。 運用前/検証前の環境に推奨されます。|
 |現在のチャネル (ステージング)|段階的なリリース中に後で現在のチャネルの更新プログラムを取得する|デバイスは、段階的なリリース サイクルの後半に更新プログラムが提供されます。 デバイスの母集団の小さな代表的な部分 (~10%)に適用することをお勧めします。|
 |現在のチャネル (Broad)|段階的なリリースの終了時に更新プログラムを入手する|デバイスには、段階的なリリース サイクルが完了した後にのみ更新プログラムが提供されます。 運用母集団内の広範なデバイス セット (~10 ~ 100%) に適用することをお勧めします。|

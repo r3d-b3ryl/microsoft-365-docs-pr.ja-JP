@@ -16,12 +16,12 @@ ms.custom: ''
 description: Microsoft 365 Defenderでブロックされたコネクタを削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7d248129c7dec83541c4b340fdac7e881344bbf0
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: d0797f0ec16b8f813cf7db9b2fd27468c141ea53
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131465"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417002"
 ---
 # <a name="remove-blocked-connectors-from-the-restricted-entities-portal"></a>制限付きエンティティ ポータルからブロックされたコネクタを削除する
 
@@ -33,22 +33,22 @@ ms.locfileid: "65131465"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-受信コネクタが侵害されている可能性があると検出された場合、リレー電子メールの送信は制限されます。 コネクタは、Microsoft 365 Defender ポータルの **[制限付きエンティティ**] ページに追加されます。 コネクタを使用して電子メールを送信すると、エラー コード 550;5.7.711 と次のテキストを含む配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) でメッセージが返されます。 
+受信コネクタが侵害されている可能性があると検出された場合、リレー電子メールの送信は制限されます。 コネクタは、Microsoft 365 Defender ポータルの **[制限付きエンティティ**] ページに追加されます。 コネクタを使用して電子メールを送信すると、エラー コード 550;5.7.711 と次のテキストを含む配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) でメッセージが返されます。
 
-> メッセージを配信できませんでした。 最も一般的な理由は、組織の電子メール コネクタがスパムやフィッシングを送信していると疑われ、電子メールの送信が許可されなくなったことです。 メール管理者にお問い合わせください。 
-> リモート サーバーから '550;5.7.711 アクセスが拒否されました。受信コネクタが正しくありません。 AS(2204)。' 
+> メッセージを配信できませんでした。 最も一般的な理由は、組織の電子メール コネクタがスパムやフィッシングを送信していると疑われ、電子メールの送信が許可されなくなったことです。 メール管理者にお問い合わせください。
+> リモート サーバーから '550;5.7.711 アクセスが拒否されました。受信コネクタが正しくありません。 AS(2204)。'
 
-管理者は、Microsoft 365 Defenderまたは PowerShell の [制限付きエンティティ] ページからコネクタExchange Online削除できます。 
+管理者は、Microsoft 365 Defenderまたは PowerShell の [制限付きエンティティ] ページからコネクタExchange Online削除できます。
 
 ## <a name="learn-more-on-restricted-entities"></a>制限付きエンティティの詳細を確認する
 
 制限付きエンティティとは、侵害された可能性があるか、送信制限を超えたために電子メールの送信がブロックされているエンティティです。
 
-制限付きエンティティには次の 2 種類があります: 
+制限付きエンティティには次の 2 種類があります:
 
-- **制限付きユーザー**: ユーザーを制限できる理由と制限付きユーザーを処理する方法の詳細については、「制限 [付きエンティティ ポータルからブロックされたユーザーを削除](removing-user-from-restricted-users-portal-after-spam.md)する」を参照してください。 
+- **制限付きユーザー**: ユーザーを制限できる理由と制限付きユーザーを処理する方法の詳細については、「制限 [付きエンティティ ポータルからブロックされたユーザーを削除](removing-user-from-restricted-users-portal-after-spam.md)する」を参照してください。
 
-- **制限付きコネクタ**: コネクタを制限できる理由と、制限付きコネクタを処理する方法について説明します (この記事)。  
+- **制限付きコネクタ**: コネクタを制限できる理由と、制限付きコネクタを処理する方法について説明します (この記事)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -66,7 +66,7 @@ ms.locfileid: "65131465"
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 制限付きエンティティ ポータルからコネクタを削除する前に、コネクタの制御を回復するために必要な手順に従ってください。 詳細については、「 [侵害されたコネクタに対応する」を](respond-compromised-connector.md)参照してください。
 
@@ -127,7 +127,7 @@ Get-BlockedConnector -ConnectorId <connectorId>
 Remove-BlockedConnector -ConnectorId <connectorId>
 ```
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [侵害されたコネクタに対応する](respond-compromised-connector.md)
 - [ブロックされたユーザーを削除する](removing-user-from-restricted-users-portal-after-spam.md)

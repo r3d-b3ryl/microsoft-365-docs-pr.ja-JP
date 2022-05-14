@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: 削除されたメールボックスの内容をMicrosoft 365に保持する非アクティブなメールボックスを作成および管理します。
-ms.openlocfilehash: 485352f292321ccfa56e59451cf017c01f3d7fdd
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: b7a33101135b43357b095af6864b54c618abd84d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393382"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417404"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
 
@@ -72,9 +72,11 @@ Microsoft 365リテンション期間を使用して、メールボックスに�
 
    ![データ ライフサイクル管理の [アイテム保持ポリシー] ページの [非アクティブなメールボックス] オプション。](../media/inactive-mailbox-option.png)
 
-4. **[非アクティブなメールボックス]** ページには、非アクティブなメールボックスの一覧が表示されます。 1 つを選択すると、その非アクティブなメールボックスに関する詳細が表示されます。 詳細には、非アクティブになった期間、Exchange識別子、保留されたユーザーが含まれます。
+4. **[非アクティブなメールボックス]** ページには、非アクティブなメールボックスの一覧が表示されます。 1 つを選択すると、その非アクティブなメールボックスに関する詳細が表示されます。 詳細には、メールボックスのExchange識別子と、メールボックスが[訴訟ホールド](create-a-litigation-hold.md)にあるかどうかが含まれます。
+    
+    詳細ウィンドウには、Microsoft 365アイテム保持ポリシーや電子情報開示ホールドなど、他の種類の保留は表示されません。 この情報を見つけるには、「[Exchange Online メールボックスに配置されている保留の種類を特定する方法](identify-a-hold-on-an-exchange-online-mailbox.md)」を参照してください。
 
-[ **非アクティブなメールボックス** ] ページで、[検索結果のエクスポート] アイコンを選択 ![します。](../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png) **エクスポート** して、組織内の非アクティブなメールボックスに関する追加情報を含む CSV ファイルを表示またはダウンロードします。
+非アクティブなメールボックスが多数ある場合は、[非アクティブなメールボックス **] ページの** [**エクスポート**] を選択:::image type="icon" source="../media/47205c65-babd-4b3a-bd7b-98dfd92883ba.png":::すると、一覧に表示される詳細について CSV ファイルを簡単に検索して並べ替えることができます。
 
 または、powerShell で次のコマンドExchange Online実行して、非アクティブなメールボックスの一覧を表示することもできます。
 

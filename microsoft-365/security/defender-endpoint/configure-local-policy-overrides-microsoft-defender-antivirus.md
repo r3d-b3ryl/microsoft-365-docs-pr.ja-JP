@@ -16,12 +16,12 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ae90694bab8191c2ad83fa1de7563bc2ba7643e8
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8de4450247d917f0e4d5023febf6d41c80f0688d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789758"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416642"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーがMicrosoft Defender ウイルス対策ポリシー設定をローカルで変更できないようにまたは許可する
 
@@ -63,7 +63,7 @@ ms.locfileid: "64789758"
 
 <br/><br/>
 
-| Location | Setting | 記事 |
+| 場所 | Setting | 記事 |
 |---|---|---|---|
 | マップ |Microsoft MAPS へのレポートのローカル設定のオーバーライドを構成する|[クラウドによる保護の有効化](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | 検疫する|検疫フォルダーからアイテムを削除するためのローカル設定のオーバーライドを構成する|[スキャンの修復を構成する](configure-remediation-microsoft-defender-antivirus.md) |

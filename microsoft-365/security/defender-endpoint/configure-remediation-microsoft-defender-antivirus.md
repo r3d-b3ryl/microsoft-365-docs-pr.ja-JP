@@ -16,12 +16,12 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 257a3bfc4fc9dcb6353bb158bc3cd4296891ae76
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: f07e62edd43098a493c80ca7f3155c148793578e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790154"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419178"
 ---
 # <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Microsoft Defender ウイルス対策検出の修復を構成する
 
@@ -55,7 +55,7 @@ PowerShell コマンドレットまたは [`MSFT_MpPreference` WMI クラス](/p
 
 <br/><br/>
 
-|Location|Setting|説明|既定の設定 (構成されていない場合)|
+|場所|Setting|説明|既定の設定 (構成されていない場合)|
 |---|---|---|---|
 |スキャン|システム復元ポイントを作成する|システム復元ポイントは、クリーニングまたはスキャンが試行される前に毎日作成されます|無効|
 |スキャン|スキャン履歴フォルダーからのアイテムの削除を有効にする|スキャン履歴にアイテムを保持する日数を指定する|30 日間|

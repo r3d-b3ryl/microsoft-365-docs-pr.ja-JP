@@ -16,12 +16,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8cda6f387814ed6ec613db8cb53ff030243a92b
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 53b24f0566b9b9d43ad725a832bb1e0fa8013923
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789422"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416378"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>グループ ポリシー設定を使用して Microsoft Defender ウイルス対策を管理する
 
@@ -66,7 +66,7 @@ ms.locfileid: "64789422"
 
 <br/><br/>
 
-|Location|Setting|記事|
+|場所|Setting|記事|
 |---|---|---|
 |クライアント インターフェイス|ヘッドレス UI モードを有効にする|[ユーザーがMicrosoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする](prevent-end-user-interaction-microsoft-defender-antivirus.md)|
 |クライアント インターフェイス|アクションを実行する必要がある場合にクライアントに追加のテキストを表示する|[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)|

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: OutlookでBookingsを使用して、他のユーザーがOutlookで自分と一緒に会議をスケジュールできるようにします。
-ms.openlocfilehash: fe7a680ec5980ab1526d4ccb5f80514210bc3605
-ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
+ms.openlocfilehash: abad0358fc0062774ebadb409dd1a8658fddd16e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65372166"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416756"
 ---
 # <a name="bookings-in-outlook"></a>OutlookのBookings
 
@@ -28,8 +28,8 @@ OutlookのBookingsには、次の 2 つの異なるビューがあります。
 - **開催者ビュー** 他のユーザーが予約できる会議の種類を作成できる個人用の予約ページ。 カスタム会議の種類を使用すると、会議を行うタイミングや、その会議の種類を他のユーザーと共有する方法をカスタマイズできます。 各会議の種類をスケジュール 設定ページに公開するか、非公開にするかを制御し、選択したユーザー グループのみがアクセスできます。 また、Outlook ページでBookingsを通じて予約されたすべての会議にTeams会議を追加することもできます。 Outlook on the webからOutlookページでBookingsにアクセスできます。 ページを設定して発行したら、他のユーザーと共有できます。 たとえば、Outlook署名に追加できます。
 
 - **[スケジュール] ビュー** Outlook ページでBookingsを他のユーザーと共有すると、スケジュール 設定ビューが表示されます。 スケジュール 設定ビューに表示される会議は、Outlook ページでBookingsへのリンクをパブリック会議と共有したか、個々の会議のプライベート リンクを共有したかによって異なります。
-    - パブリック会議は、Outlook ページ リンクにBookingsがあるすべてのユーザーが表示およびスケジュール設定できます。 そのリンクを共有するユーザーを制御できます。 すべてのパブリック会議の種類は、Outlookページ リンクにBookingsがあるすべてのユーザーに表示されます。
-    - プライベート会議は、その会議の種類のリンクを持つユーザーのみが表示できます。 パブリック会議とプライベート会議の違いは、プライベート会議には異なるリンクを持つ可能性があり、リンクは 90 日後に期限切れになる場合があります。 プライベート リンクは、1 回限りの予約後に期限切れに設定することもできます。 プライベート会議のスケジュール設定ビューにアクセスすると、その会議の種類のみが表示されます。
+  - パブリック会議は、Outlook ページ リンクにBookingsがあるすべてのユーザーが表示およびスケジュール設定できます。 そのリンクを共有するユーザーを制御できます。 すべてのパブリック会議の種類は、Outlookページ リンクにBookingsがあるすべてのユーザーに表示されます。
+  - プライベート会議は、その会議の種類のリンクを持つユーザーのみが表示できます。 パブリック会議とプライベート会議の違いは、プライベート会議には異なるリンクを持つ可能性があり、リンクは 90 日後に期限切れになる場合があります。 プライベート リンクは、1 回限りの予約後に期限切れに設定することもできます。 プライベート会議のスケジュール設定ビューにアクセスすると、その会議の種類のみが表示されます。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -103,7 +103,7 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
    Set-OrganizationConfig -EwsBlockList @{Remove="MicrosoftOWSPersonalBookings"}
    ```
 
-    **C**.  **値EwsApplicationAccessPolicyis**  が空の場合、すべてのアプリケーションは EWS と REST にアクセスできます。
+    **C**. **EwsApplicationAccessPolicy** の値が空の場合、すべてのアプリケーションは EWS と REST にアクセスできます。
 
     - 組織のOutlookでBookingsをオフにするには、次のコマンドを実行して **、EnforceBlockList** ポリシーを設定し、**MicrosoftOWSPersonalBookings** をブロック リストに追加します。
 
@@ -148,7 +148,7 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
     - このユーザーのOutlookでBookingsをオフにするには、次のコマンドを実行して **、MicrosoftOWSPersonalBookings** を **EnforceBlockList** に追加します。
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy  EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - このユーザーのOutlookでBookingsを有効にするには、次のコマンドを実行して、**EnforceBlockList から MicrosoftOWSPersonalBookings** が存在する場合は削除します。
@@ -159,8 +159,8 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
 
     **C**. EwsApplicationAccessPolicy の値が空の場合、すべてのアプリケーションは EWS と REST にアクセスできます。
 
-    - このユーザーのOutlookでBookingsをオフにするには、次のコマンドを実行して **、EnforceBlockList** ポリシーを設定し、 **addMicrosoftOWSPersonalBookingsto**  EWSBlockList を追加します。
+    - このユーザーのOutlookでBookingsをオフにするには、次のコマンドを実行して **、EnforceBlockList** ポリシーを設定し **、MICROSOFTOWSPersonalBookings** を EWSBlockList に追加します。
 
     ```PowerShell
-   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy  EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```

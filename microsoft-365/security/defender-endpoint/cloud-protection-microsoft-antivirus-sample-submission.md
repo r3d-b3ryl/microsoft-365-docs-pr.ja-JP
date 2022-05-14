@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: article
 ms.date: 02/24/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9192ecae72156531b0c5dccc360b2e2ea7bd343a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 08f8e0c861bfd19f11c5b011d0a8db41ce3e73bc
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789054"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419948"
 ---
 # <a name="cloud-protection-and-sample-submission-at-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策でのクラウド保護とサンプルの送信
 
@@ -71,12 +71,12 @@ Microsoft Defender ウイルス対策とクラウド保護は、次の方法を�
 
       2. **常にプロンプトを表示する**
          - 構成されている場合、ユーザーは常にファイルの送信前に同意を求められます
-         - この設定は、macOS クラウド保護では使用できません
+         - この設定は、クラウド保護macOSでは使用できません
 
       3. **すべてのサンプルを自動的に送信する**
          - 構成されている場合、すべてのサンプルが自動的に送信されます
          - サンプル提出に Word ドキュメントに埋め込まれたマクロを含める場合は、[すべてのサンプルを自動的に送信] を選択する必要があります。
-         - この設定は、macOS クラウド保護では使用できません
+         - この設定は、クラウド保護macOSでは使用できません
 
       4. **送信しない**
          - ファイル サンプル分析に基づいて "一目でブロック" を防止する
@@ -108,7 +108,7 @@ Intune、Configuration Manager、GPO、または PowerShell を使用した構�
 
 次の表に、クラウド保護によって分析のために送信されたメタデータの例を示します。
 
-| 種類 | 属性 |
+| Type | 属性 |
 |:---|:---|
 | マシン属性 | `OS version` <br/> `Processor` <br/> `Security settings` |
 | 動的属性とコンテキスト属性 | **プロセスとインストール** <br/> `ProcessName` <br/> `ParentProcess` <br/> `TriggeringSignature` <br/> `TriggeringFile` <br/> `Download IP and url` <br/> `HashedFullPath` <br/> `Vpath` <br/> `RealPath` <br/> `Parent/child relationships` <br/><br/>**動作** <br/> `Connection IPs` <br/> `System changes` <br/> `API calls` <br/> `Process injection` <br/><br/>**Locale** <br/> `Locale setting` <br/> `Geographical location` |

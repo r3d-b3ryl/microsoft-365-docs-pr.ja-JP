@@ -18,12 +18,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1690a100a2743d35bc85f116398d94325ad47fbc
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: e8bdeb114e4a3e6be8981f859d69e8c069517b8a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788460"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418786"
 ---
 # <a name="better-together-microsoft-defender-antivirus-and-office-365"></a>ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365
 
@@ -45,7 +45,7 @@ ms.locfileid: "64788460"
 
 - **Office 365には、改ざん、スパム対策、マルウェア対策の保護が含まれます**。 Office 365サブスクリプションを使用すると、すべてのデバイスで、Premium メールと予定表、Office アプリ、1 TB のクラウド ストレージ (OneDrive 経由)、高度なセキュリティが提供されます。 これは、家庭ユーザーとビジネス ユーザーに当てはまります。 また、ビジネス ユーザーであり、組織がOffice 365 E5を使用している場合は、Office 365による[脅威から保護](/microsoft-365/security/office-365-security/protect-against-threats)Microsoft Defender for Office 365通じて、さらに保護を強化できます。
 
-- **Office 365に含まれるOneDriveを使用すると、ファイルやフォルダーをオンラインで保存し、必要に応じて共有できます**。 OneDriveに格納されているユーザー (仕事や楽しみのために) と共同編集ファイルと連携できます。 すべてのデバイス (PC、スマートフォン、タブレット) でファイルにアクセスすることもできます。 [OneDriveで共有を管理します](/OneDrive/manage-sharing)。
+- **Office 365に含まれるOneDriveを使用すると、ファイルやフォルダーをオンラインで保存し、必要に応じて共有できます**。 OneDriveに格納されているユーザー (仕事や楽しみのために) と共同編集ファイルと連携できます。 すべてのデバイス (PC、電話、Tablet PC) でファイルにアクセスすることもできます。 [OneDriveで共有を管理します](/OneDrive/manage-sharing)。
 
 **しかし、Office 365と共にMicrosoft Defender ウイルス対策を使用する適切なセキュリティ上の理由があることをご存知でした** か? 2 つを以下に示します。
 

@@ -17,12 +17,12 @@ ms.technology: mde
 audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: a525deb526f61f8500f42cc918380fdfa9c52861
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8ef8355afe3019c2a179f59d83faddac4aa5792a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787638"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419004"
 ---
 # <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Windows管理インストルメンテーション (WMI) を使用してMicrosoft Defender ウイルス対策を構成および管理する
 

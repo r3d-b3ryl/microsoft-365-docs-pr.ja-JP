@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: ラーニング ツール相互運用性 (LTI) Microsoft アプリと、Microsoft アプリをラーニング管理システム (LMS) に統合する際の教育者に役立つ方法について説明します。
-ms.openlocfilehash: 8140b89b4bfeb26f64e8949f6d7835ca59645cbe
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64746763"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65414768"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft 製品とラーニング管理システム (LMS) の統合
 
@@ -32,7 +32,7 @@ LMS パートナーと協力して、microsoft のベストを LMS に直接取�
 - [Teams 会議 LTI](#teams-meetings-lti)
 - [Teams クラス LTI](#teams-classes-lti)
 
-Microsoft OneLTI ツールの管理の一般的な情報については、「 [Microsoft OneLTI for any LMS の管理」を](manage-microsoft-one-lti.md)参照してください。
+Microsoft LTI アプリの管理の一般的な情報については、「 [任意の LMS の Microsoft LTI アプリを管理する」を](manage-microsoft-one-lti.md)参照してください。
 
 ## <a name="onedrive-lti-apps"></a>LTI アプリのOneDrive
 

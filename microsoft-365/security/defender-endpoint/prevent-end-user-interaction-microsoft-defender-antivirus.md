@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fdd212efd50d55bbcdae80275f5d2ca8a97cdeb3
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: b00465fdeecddc803b52d98081689fd56fba7812
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787668"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419816"
 ---
 # <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがMicrosoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする
 

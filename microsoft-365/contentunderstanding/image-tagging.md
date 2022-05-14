@@ -14,12 +14,12 @@ ms.collection:
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: SharePoint Syntex での画像のタグ付けに関する詳細
-ms.openlocfilehash: 79df10f80dd02930dc49f56274b00664c6f1d3d2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: e0b9b1669efb069942b81aaad7fb5e7e3aa57c1c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60205931"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415884"
 ---
 # <a name="image-tagging-in-sharepoint-syntex"></a>SharePoint Syntex での画像のタグ付け
 
@@ -36,10 +36,9 @@ SharePoint Syntex での画像のタグ付けを使って、ユーザーは、�
 > [!NOTE]
 > システム生成のタグは、画像またはタグ技術の更新プログラムで変更される場合があります。
 
-
 ## <a name="configure-image-tagging"></a>画像のタグ付けを構成する
 
-[SharePoint Syntex の設定](set-up-content-understanding.md)をすると、Microsoft 365 管理センターで画像のタグ付けを構成できます。  
+[SharePoint Syntex の設定](set-up-content-understanding.md)をすると、Microsoft 365 管理センターで画像のタグ付けを構成できます。
 
 画像のタグ付けをオンまたはオフにするには
 

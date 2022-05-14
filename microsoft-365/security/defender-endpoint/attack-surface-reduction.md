@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: a93563b3758db8346af12978440c16d91f28bed5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: a1ae7d53ac69b4756417704b4938ff4fb41f9e41
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788064"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418808"
 ---
 # <a name="attack-surface-reduction-rules-overview"></a>攻撃面の縮小ルールの概要
 

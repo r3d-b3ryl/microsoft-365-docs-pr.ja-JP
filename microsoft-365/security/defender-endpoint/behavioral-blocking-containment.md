@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 1f598fd1463b6e08c73d7db9ac6d1540a51d6841
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: f6544a14891a98523d202c19634d0e70a3e839e2
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64790616"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416796"
 ---
 # <a name="behavioral-blocking-and-containment"></a>動作ブロックと封じ込め
 

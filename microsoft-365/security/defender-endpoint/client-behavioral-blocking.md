@@ -16,12 +16,12 @@ ms.custom:
 - edr
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: f19e354a23af03abd905591993197ff8f484ceff
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 95c138b6613d610520a4e6870ae7a59b46159f5d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788394"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418742"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 

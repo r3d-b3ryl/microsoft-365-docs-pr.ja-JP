@@ -14,13 +14,13 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
-description: この記事では、Microsoft Purview カスタマー キーでのサービス暗号化のしくみについて説明します。
-ms.openlocfilehash: efb82a38c2f3a2e07d695425f36a17eebdbdf5ec
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+description: この記事では、サービス暗号化がMicrosoft Purviewカスタマー キーでどのように機能するかについて説明します。
+ms.openlocfilehash: 3a0533b94cb70c9fc46d6246e99d3f9fdb5eb6e6
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145214"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415087"
 ---
 # <a name="service-encryption-with-microsoft-purview-customer-key"></a>Microsoft Purview カスタマー キーを使用したサービスの暗号化
 
@@ -30,7 +30,7 @@ Microsoft 365では、BitLocker と分散キー マネージャー (DKM) を使�
 
 ## <a name="how-service-encryption-bitlocker-and-customer-key-work-together"></a>サービスの暗号化、BitLocker、カスタマー キーの連携方法
 
-データは、BitLocker と DKM を使用してMicrosoft 365 サービスで保存時に常に暗号化されます。 詳細については、「Exchange Onlineが[電子メール シークレットをセキュリティで保護する方法」を参照してください](exchange-online-secures-email-secrets.md)。 カスタマー キーは、承認されていないシステムまたは担当者によるデータの表示に対する保護を強化し、Microsoft データ センターでの BitLocker ディスク暗号化を補完します。 サービスの暗号化は、Microsoft 担当者がデータにアクセスできないようにするためのものではありません。 代わりに、カスタマー キーは、ルート キーを制御するための規制またはコンプライアンスの義務を満たすのに役立ちます。 暗号化キーを使用して、電子情報開示、マルウェア対策、スパム対策、検索インデックス作成など、付加価値の高いクラウド サービスを提供するために、Microsoft 365 サービスを明示的に承認します。
+データは、BitLocker と DKM を使用してMicrosoft 365 サービスで保存時に常に暗号化されます。 詳細については、「Exchange Onlineが[電子メール シークレットをセキュリティで保護する方法」を参照してください](exchange-online-secures-email-secrets.md)。 カスタマー キーは、承認されていないシステムや個人によるデータの閲覧を防止するための追加の保護を提供し、Microsoft データセンターの Bitlocker ディスク暗号化を補完します。 サービスの暗号化は、Microsoft 担当者がデータにアクセスできないようにするためのものではありません。 代わりに、カスタマー キーは、ルート キーを制御するための規制またはコンプライアンスの義務を満たすのに役立ちます。 暗号化キーを使用して、電子情報開示、マルウェア対策、スパム対策、検索インデックス作成など、付加価値の高いクラウド サービスを提供するために、Microsoft 365 サービスを明示的に承認します。
 
 カスタマー キーはサービスの暗号化に基づいて構築されており、暗号化キーを提供および制御できます。 Microsoft 365これらのキーを使用して、[Online Services Terms (OST)](https://www.microsoft.com/licensing/product-licensing/products.aspx) の説明に従って保存データを暗号化します。 カスタマー キーは、データの暗号化と暗号化解除にMicrosoft 365使用する暗号化キーを制御するため、コンプライアンスの義務を満たすのに役立ちます。
   
@@ -55,7 +55,7 @@ Customer Key では、クラウド内の保存データのみが暗号化され�
 - Exchange Onlineのユーザーとシグナルの情報
 - メールボックス DEP によってまだ暗号化されていないメールボックスをExchange Onlineする
 - 統合監査ログ ストレージ
-- Microsoft Purview Information Protection:
+- Microsoft Purview 情報保護:
 
   - データ ファイル スキーマ、ルール パッケージ、機密データのハッシュに使用される塩分を含む、完全なデータ一致 (EDM) データ。 EDM とMicrosoft Teamsの場合、マルチワークロード DEP は、DEP をテナントに割り当てた時点から新しいデータを暗号化します。 Exchange Onlineの場合、Customer Key は既存のデータと新しいデータをすべて暗号化します。
 

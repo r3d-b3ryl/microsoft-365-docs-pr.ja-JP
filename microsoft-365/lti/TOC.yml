@@ -1,6 +1,6 @@
 - name: LTI のMicrosoft 365
   href: index.md
-- name: Microsoft OneLTI 管理
+- name: Microsoft LMS ゲートウェイ管理
   href: manage-microsoft-one-lti.md
 - name: LMS URL のブラウザー Cookie を許可する
   href: browser-cookies.md

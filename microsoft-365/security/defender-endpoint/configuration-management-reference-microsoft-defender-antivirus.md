@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 76f6f1cda9b2def0c18be8c368da15645994eece
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 760c3b7ca646b02813b5d14086f5d94fc9aec72c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787976"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418656"
 ---
 # <a name="manage-microsoft-defender-antivirus-in-your-business"></a>ビジネスのMicrosoft Defender ウイルス対策を管理する
 

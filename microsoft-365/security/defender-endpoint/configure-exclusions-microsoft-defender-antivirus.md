@@ -15,12 +15,12 @@ ms.technology: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c9796f4e5154fd46d1479f0cbfa25f2afaf4e9bb
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b796d2a3a8cdace765c3c0219466a42d9608763
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787514"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419882"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Microsoft Defender ウイルス対策 スキャンの除外を構成して検証する
 

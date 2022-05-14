@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6a9b346d4e423d46244eeedbb8136b91a165473a
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
-ms.translationtype: HT
+ms.openlocfilehash: 52105373f0bc6bb70f6433eba4dacb4580a0f804
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788570"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416718"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 

@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6e24be40b4ff9e57d896cf53769b578c482a2c6e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 1f71e5cc2a944ce409a19b6493bda1b40747a066
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787536"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417482"
 ---
 # <a name="specify-the-cloud-protection-level"></a>クラウド保護レベルを指定する
 

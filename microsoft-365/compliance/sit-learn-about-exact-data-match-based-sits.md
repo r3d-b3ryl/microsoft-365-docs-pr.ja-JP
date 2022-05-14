@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: 正確なデータ一致ベースの機密情報の種類について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7f883d2509961ee07045949530f8fbb50629212f
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759769"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415928"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類の詳細
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [機密情報の種類](sensitive-information-type-learn-about.md) は、機密情報の種類を使用して、機密情報が誤ってまたは不適切に共有されないようにしたり、電子情報開示で関連するデータを特定したり、特定の種類の情報にガバナンス アクションを適用したりするのに役立ちます。 次に基づいて、カスタムの機密情報の種類 (SIT) を定義します。
 
@@ -44,10 +46,10 @@ ms.locfileid: "64759769"
 
 ![EDM ベースの分類。](../media/EDMClassification.png)
 
-EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、EDM ベースの分類は、[データ損失防止ポリシー](dlp-learn-about-dlp.md)や [Microsoft Cloud App Security ファイル ポリシー](/cloud-app-security/data-protection-policies) などのポリシーと共に使用できます。
+EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、Microsoft Purview[データ損失防止](dlp-learn-about-dlp.md)ポリシーや[Microsoft Cloud App Security ファイル](/cloud-app-security/data-protection-policies) ポリシーなどのポリシーで EDM ベースの分類を使用できます。
 
 > [!NOTE]
-> Microsoft 365 Information Protection は、次のような場合に 2 バイト文字セットの言語をサポートします。
+> Microsoft Purview 情報保護では、次の 2 バイト文字セット言語がサポートされています。
 >
 > - 中国語 (簡体字)
 > - 中国語 (繁体字)
@@ -93,7 +95,7 @@ EDM SIT を使用する場合は、それらに固有のいくつかの概念を
 
 ### <a name="you-supply-your-own-schema-and-data"></a>独自のスキーマとデータを指定します
 
-Microsoft 365には、定義済みのスキーマ、正規表現パターン、キーワード、信頼レベルを備えた [200 を超える SIT が](sensitive-information-type-entity-definitions.md)付属しています。 EDM SIT を使用すると、機密項目を識別するプライマリ フィールドとセカンダリ フィールドだけでなく、スキーマを定義する必要があります。 スキーマとプライマリとセカンダリのデータ値は非常に機密性が高いため、ランダムに生成されたまたは自己提供の [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) 値を含む[ハッシュ](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)関数を使用して暗号化します。 その後、これらのハッシュされた値がサービスにアップロードされるため、機密データが開かれることはありません。
+Microsoft Purviewには、定義済みのスキーマ、正規表現パターン、キーワード、信頼度レベルを備えた [200 を超える SIT が](sensitive-information-type-entity-definitions.md)付属しています。 EDM SIT を使用すると、機密項目を識別するプライマリ フィールドとセカンダリ フィールドだけでなく、スキーマを定義する必要があります。 スキーマとプライマリとセカンダリのデータ値は非常に機密性が高いため、ランダムに生成されたまたは自己提供の [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) 値を含む[ハッシュ](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)関数を使用して暗号化します。 その後、これらのハッシュされた値がサービスにアップロードされるため、機密データが開かれることはありません。
 
 ### <a name="primary-and-secondary-support-elements"></a>プライマリとセカンダリのサポート要素
 
@@ -110,4 +112,3 @@ EDM は、定義した機密データのテーブルと見なされるコンテ�
 ## <a name="see-also"></a>関連項目
 
 - [完全なデータ一致に基づく機密情報の種類の使用を開始する](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
-   

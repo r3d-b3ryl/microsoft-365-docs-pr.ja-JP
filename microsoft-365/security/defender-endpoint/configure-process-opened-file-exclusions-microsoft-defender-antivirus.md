@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e8cf075c0a35095f72d847a17f1fb48d590ad385
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 6faca5dde477908010f4426ff9009f383b63c58c
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788988"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418612"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開かれたファイルの除外を構成する
 

@@ -18,12 +18,12 @@ ms.date: 10/22/2021
 ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6a0667e52474fe5e04f547d12b1f53ca47c6ea6e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 195e929c0de1be9ab05f2685ba60e56c13dd3629
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787580"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415230"
 ---
 # <a name="why-cloud-protection-should-be-enabled-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策に対してクラウド保護を有効にする必要がある理由
 

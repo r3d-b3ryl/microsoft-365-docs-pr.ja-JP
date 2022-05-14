@@ -21,12 +21,12 @@ ms.date: 04/07/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: bcdf933de412a8141f0abc208f06cc55609f12c5
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788944"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65416312"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -332,3 +332,5 @@ Intuneを使用して改ざん防止を柔軟に構成できます。 組織全�
 - [Microsoft Intune用のEndpoint Protectionを使用して PC Windowsをセキュリティで保護する](/intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
 - [Microsoft Defender for Endpoint の概要を確認する](/microsoft-365/security/defender-endpoint)
 - [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+- [トラブルシューティング モードを有効にする](enable-troubleshooting-mode.md)
+- [トラブルシューティング モードのシナリオ](troubleshooting-mode-scenarios.md)

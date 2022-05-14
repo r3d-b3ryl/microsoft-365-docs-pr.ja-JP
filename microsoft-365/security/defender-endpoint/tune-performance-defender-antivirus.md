@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3c517d9adcdc2181b43c430a92be3de9ac889dd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101119"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419596"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のパフォーマンス アナライザー
 
@@ -537,4 +537,4 @@ Accept wildcard characters: False
 - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-- [Android の機能で Defender for Endpoint を構成する](android-configure.md)- [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+- [Android features で Defender for Endpoint を構成するiOS](android-configure.md)- [機能のMicrosoft Defender for Endpointを構成](ios-configure-features.md)する

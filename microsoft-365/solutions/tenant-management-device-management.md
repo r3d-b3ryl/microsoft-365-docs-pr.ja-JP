@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Microsoft 365 テナントのデバイスとアプリの管理に適切なオプションをデプロイします。
-ms.openlocfilehash: 09fd96977fbde0f546049d24b1705d27b4c92080
-ms.sourcegitcommit: 22cae7ec541268d519d45518c32f22bf5811aec1
+ms.openlocfilehash: 3999d30aaeee9ebfc2af90b0aeeeaea1b46986fb
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/10/2022
-ms.locfileid: "62524167"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419464"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>手順 5.  エンタープライズ テナントのMicrosoft 365のデバイスとアプリの管理
 
-企業向けのMicrosoft 365には、デバイスの管理に役立つ機能と、モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を使用して組織内のデバイスでアプリを使用する機能が含まれています。 iOS、Android、macOS、Windows デバイスを管理して、データを含む組織のリソースへのアクセスを保護できます。 たとえば、メールが組織外のユーザーに送信されないようにしたり、従業員の個人用デバイス上の個人データから組織データを分離したりできます。
+企業向けのMicrosoft 365には、デバイスの管理に役立つ機能と、モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) を使用して組織内のデバイスでアプリを使用する機能が含まれています。 iOS、Android、macOS、Windowsデバイスを管理して、データを含む組織のリソースへのアクセスを保護できます。 たとえば、メールが組織外のユーザーに送信されないようにしたり、従業員の個人用デバイス上の個人データから組織データを分離したりできます。
 
 ユーザー、デバイス、およびローカルおよびクラウドの生産性アプリ (Microsoft Teamsなど) の使用の検証と管理の例を次に示します。
 

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c83213278c7f9bc3b63c141e4d964475d64599d1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: dcc04b1c06e5ca2900cca9f0a66fe5b041af734e
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286628"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417174"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
@@ -43,6 +43,9 @@ Microsoft 365 Defender ポータル<https://security.microsoft.com>にはさま�
 > **[電子メール & コラボレーション レポート**] ページのレポートの一部には、Microsoft Defender for Office 365が必要です。 これらのレポートの詳細については、[Microsoft 365 Defender ポータルでレポートDefender for Office 365表示する方法に関するページを参照してください](view-reports-for-mdo.md)。
 >
 > メール フローに関連するレポートが、Exchange管理センターに表示されるようになりました。 これらのレポートの詳細については、[新しいExchange管理センターのメール フロー レポートに関する](/exchange/monitoring/mail-flow-reports/mail-flow-reports)ページを参照してください。
+
+この短いビデオでは、レポートを使用して組織内のDefender for Office 365の有効性を理解する方法について説明します。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
 
 ## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでの電子メール セキュリティ レポートの変更
 
@@ -410,7 +413,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
-- **[名前]**
+- **名前**
 - **提出者**
 - **送信の理由**:
   - **迷惑ではない**
@@ -1063,7 +1066,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル閲覧者**
+- **グローバル リーダー**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
@@ -1155,7 +1158,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 2. **[ダウンロード用のレポート]** ページに、使用可能なレポートごとに次の情報が表示されます。
    - **開始日**
-   - **[名前]**
+   - **名前**
    - **レポートの種類**
    - **最後に送信された**
    - **方向**

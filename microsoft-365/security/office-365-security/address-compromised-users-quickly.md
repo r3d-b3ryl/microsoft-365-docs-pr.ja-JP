@@ -16,12 +16,12 @@ ms.date: 06/10/2021
 description: Microsoft Defender for Office 365プラン 2 の自動調査と対応機能を使用して、侵害されたユーザー アカウントを検出して対処するプロセスを高速化する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8c78847e36d4a4887c4f7a3c54904cc26a012e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 97466622a138a6604b9be51333148b472f7cd519
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131154"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418272"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>自動調査と応答を使用して侵害されたユーザー アカウントに対処する
 
@@ -62,6 +62,9 @@ ms.locfileid: "65131154"
 
 > [!IMPORTANT]
 > 次のタスクを実行するには、適切なアクセス許可が必要です。 [AIR 機能を使用するために必要なアクセス許可に関するページを](office-365-air.md#required-permissions-to-use-air-capabilities)参照してください。
+
+この短いビデオでは、自動調査と応答 (AIR) と侵害されたユーザー アラートを使用して、Microsoft Defender for Office 365のユーザー侵害を検出して対応する方法について説明します。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWAl83]
 
 ### <a name="view-and-investigate-restricted-users"></a>制限付きユーザーの表示と調査
 

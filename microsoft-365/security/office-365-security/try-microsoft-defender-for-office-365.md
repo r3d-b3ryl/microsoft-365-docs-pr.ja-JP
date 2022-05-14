@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 716a3a0255074a1180d01bbe0e3ef5067e7a31cf
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: 17c7dd9a7b92f4a540f16cd5768067dd52991f22
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145230"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415536"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365を試す
 
@@ -43,6 +43,9 @@ Microsoft 365 Defender ポータルの統合 **試用版** ポータルでは、
   これらの環境では、*監査* モードまたは *ブロック* モードでDefender for Office 365を試すことができます。
 
 Microsoft 365 Defender ポータル<https://security.microsoft.com>のさまざまなDefender for Office 365機能の場所で試用版を開始するよう招待されます。 試用版を開始するための一元的な場所は、[ **試用版** ] ページの [ <https://security.microsoft.com/atpEvaluation>.
+
+この短いビデオでは、Microsoft Defender for Office 365を使用して短時間でより多くの作業を行う方法について詳しく説明します。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMmIe]
 
 この記事の残りの部分では、監査モードのブロック モード、評価の構成方法、およびその他の詳細の違いについて説明します。
 
@@ -82,7 +85,7 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 
   既定の選択と推奨される選択は、組織内のすべてのユーザーに対してこれらのDefender for Office 365 ポリシーのスコープを設定することです。 ただし、セットアップ中またはセットアップ後に、ポリシーの割り当てを特定のユーザー、グループ、または電子メール ドメインに変更できます。
 
-**注意**:
+**注**:
 
 - セーフ リンクを使用すると、メール フロー内の URL が爆発します。 特定の URL がデトネーションされないようにするには、テナント許可/ブロック リストを使用します。 詳細については、「 [テナント許可/ブロック リストの管理」を参照してください](tenant-allow-block-list.md)。
 - セーフ リンクは、メール メッセージ本文の URL リンクをラップしません。
@@ -220,7 +223,7 @@ Defender for Microsoft 365 の評価を設定するために **Azure AD** で必
 - **評価の作成、変更、または削除:** セキュリティ管理者またはグローバル管理者。
 - **評価ポリシーとレポートを表示する**: セキュリティ管理者またはセキュリティ 閲覧者。
 
-Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細については、Microsoft 365 Defender [ポータルのAzure AD ロールに関するページを](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)参照してください。
+Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳細については、Microsoft 365 Defender [ポータルの Azure AD ロールに関するページを](permissions-microsoft-365-security-center.md#azure-ad-roles-in-the-microsoft-365-defender-portal)参照してください。
 
 ## <a name="evaluation-policy-settings"></a>評価ポリシーの設定
 
@@ -264,7 +267,7 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 |TargetedUserQuarantineTag|DefaultFullAccessPolicy|
 |||
 |AntiPhishPolicyLevelDataList|空白|
-|AntiSpoofEnforcementType|高|
+|AntiSpoofEnforcementType|高い|
 |AuthenticationSafetyTipText|空白|
 |AuthenticationSoftPassSafetyTipText|空白|
 |EnableAuthenticationSafetyTip|いいえ|
@@ -283,7 +286,7 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 
 |設定|値|
 |---|---|
-|アクション|許可|
+|操作|許可|
 |ActionOnError|はい|
 |AdminDisplayName|評価ポリシー|
 |ConfidenceLevelThreshold|80|
@@ -296,7 +299,7 @@ Microsoft 365 Defender ポータルでのAzure ADアクセス許可の詳細に�
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|評価|
-|Redirect|いいえ|
+|リダイレクト|いいえ|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 

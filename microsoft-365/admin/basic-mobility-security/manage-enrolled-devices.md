@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、組織のモバイル デバイスのセキュリティと管理に役立ちます。
-ms.openlocfilehash: cb724a4f7d5b4118bb50b0aeaf1138a4a1aebfb6
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 74d2a2d6034b1e893987e2ede47a96bc00658f47
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129136"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415153"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Microsoft 365のモバイル デバイス管理に登録されているデバイスを管理する
 
 Microsoft 365用の組み込みのモバイル デバイス管理は、iPhone、iPad、Android、Windowsスマートフォンなどのユーザーのモバイル デバイスをセキュリティで保護して管理するのに役立ちます。 最初の手順では、Microsoft 365にサインインし、基本的なモビリティとセキュリティを設定します。 詳細については、「 [基本的なモビリティとセキュリティの設定](set-up.md)」を参照してください。
 
-セットアップが完了したら、組織内のユーザーがサービスにデバイスを登録する必要があります。 詳細については、「 [Basic Mobility and Security を使用してモバイル デバイスを登録する」](enroll-your-mobile-device.md)を参照してください。その後、Basic Mobility and Security を使用して、組織内のデバイスを管理できます。 たとえば、デバイス セキュリティ ポリシーを使用して、電子メール アクセスやその他のサービスの制限、デバイス レポートの表示、デバイスのリモートワイプを支援できます。 通常は、セキュリティ & コンプライアンス センターに移動して、これらのタスクを実行します。 詳細については、 [Microsoft Purview コンプライアンス ポータル](../../compliance/microsoft-365-compliance-center.md)を参照してください。
+セットアップが完了したら、組織内のユーザーがサービスにデバイスを登録する必要があります。 詳細については、「 [Basic Mobility and Security を使用してモバイル デバイスを登録する」](enroll-your-mobile-device.md)を参照してください。 その後、Basic Mobility and Security を使用して、組織内のデバイスを管理できます。 たとえば、デバイス セキュリティ ポリシーを使用して、電子メール アクセスやその他のサービスの制限、デバイス レポートの表示、デバイスのリモートワイプを支援できます。 通常は、セキュリティ & コンプライアンス センターに移動して、これらのタスクを実行します。 詳細については、「[Microsoft Purview コンプライアンス ポータル](../../compliance/microsoft-365-compliance-center.md)」を参照してください。
 
 ## <a name="device-management-tasks"></a>デバイス管理タスク
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 05/13/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内のExchange、SharePoint、OneDrive for Businessから部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれます) を管理する方法について説明します。
-ms.openlocfilehash: 03d68a02765a85066e41ba2b4dee54441d971190
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: aa9071cfb99219bea6c5c0d640c9e6e4255e316d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077924"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419970"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが付けられたアイテムの調査
 
@@ -31,7 +31,7 @@ ms.locfileid: "65077924"
 
 Microsoft Purview コンプライアンス ポータルから実行する電子情報開示検索では、検索を実行すると、推定検索結果に部分的にインデックスが付けられたアイテムが自動的に含まれます。 部分的にインデックスが作成されたアイテムは、SharePoint サイトとOneDrive for Business サイト上のメールボックス アイテムとドキュメントExchangeであり、何らかの理由で検索用に完全にインデックスが作成されませんでした。 ほとんどの電子メール メッセージとサイト ドキュメントは、 [電子メール メッセージのインデックス作成の制限](limits-for-content-search.md#indexing-limits-for-email-messages)内にあるため、正常にインデックスが作成されます。 ただし、一部の項目はこれらのインデックス作成制限を超える可能性があり、部分的にインデックスが作成されます。 電子情報開示検索を実行すると、アイテムにインデックスを作成できず、部分的にインデックスが作成されたアイテムとして返されるその他の理由を次に示します。
   
-- 電子メール メッセージには、画像ファイルなど、開けない添付ファイルがあります。これは、部分的にインデックスが付けられた電子メール アイテムの最も一般的な原因です。
+- 電子メール メッセージには、開けない添付ファイルがあります。これは、部分的にインデックスが付けられた電子メール アイテムの最も一般的な原因です。
 
 - 電子メール メッセージに添付されているファイルが多すぎます。
 
@@ -111,7 +111,7 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
 | `parseroutputsize` <br/> |添付ファイルの解析からの出力が大きすぎて、切り捨てる必要がありました。  <br/> |
 | `parserunknowntype` <br/> |添付ファイルには、Microsoft 365検出できないファイルの種類がありました。  <br/> |
 | `parserunsupportedtype` <br/> |添付ファイルにはOffice 365検出できるファイルの種類がありましたが、そのファイルの種類の解析はサポートされていません。  <br/> |
-| `propertytoobig` <br/> |Exchange Store の電子メール プロパティの値が大きすぎて取得できず、メッセージを処理できませんでした。 これは通常、電子メール メッセージの body プロパティにのみ発生します。  <br/> |
+| `propertytoobig` <br/> |Exchange Microsoft Storeの電子メール プロパティの値が大きすぎて取得できず、メッセージを処理できませんでした。 これは通常、電子メール メッセージの body プロパティにのみ発生します。  <br/> |
 | `retrieverrms` <br/> |コンテンツリトリバーが RMS で保護されたメッセージをデコードできませんでした。  <br/> |
 | `wordbreakertruncated` <br/> |インデックス作成中にドキュメント内で識別された単語が多すぎます。 制限に達するとプロパティの処理が停止し、プロパティが切り捨てられます。  <br/> |
 
@@ -166,7 +166,7 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
      }
    ```
 
-2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
 
 3. Security & Compliance Center PowerShell で、手順 1. でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 

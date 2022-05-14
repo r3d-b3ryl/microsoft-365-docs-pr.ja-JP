@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 74843a71131ae8f10628dac96086e68e25acb2b0
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 24e43ac3e99f99061489e2719c76245270422c57
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788438"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65419662"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -104,7 +104,7 @@ DisableAntiSpyware|-
 GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
-アクション|Update
+操作|Update
 **Properties**|
 Hive|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender
