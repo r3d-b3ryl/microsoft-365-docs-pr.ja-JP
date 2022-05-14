@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Microsoft Defender for Office 365を持つ組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teamsで検疫されたファイルを管理することもできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 449886f6272c81f9947fd3e7ea869e565326578f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: df123916f5f15a8651ba8ad8dcbae95598afbfa8
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469649"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418064"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -45,6 +45,9 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
 
 検疫済みメッセージは、Microsoft 365 Defender ポータルまたは PowerShell で表示および管理します (Exchange Onlineのメールボックスを持つMicrosoft 365組織の PowerShell をExchange Onlineし、スタンドアロンの EOP PowerShell を使用しない組織向けExchange Online メールボックス)。
 
+検疫済みメッセージを管理者として管理する方法については、この短いビデオをご覧ください。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGGPF]
+
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Microsoft 365 Defender ポータルを開くには、<https://security.microsoft.com> にアクセスします。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
@@ -60,7 +63,7 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
   - <sup>\*</sup>Microsoft 365 Defender [ポータル](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)の **電子メール & コラボレーション** ロールの **検疫管理者** 役割グループのメンバーも、powerShell で検疫手順を実行するには [、Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **検疫管理** 役割グループのメンバー Exchange Online必要があります。
 
 - 検疫されたメッセージは、検疫された理由に基づいて既定の期間保持されます。 保持期間が経過すると、メッセージは自動的に削除され、回復できません。 詳細については、「[EOP とDefender for Office 365の検疫済み電子メール メッセージ](quarantine-email-messages.md)」を参照してください。

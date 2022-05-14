@@ -110,6 +110,8 @@
       href: adoption-getstarted.md
     - name: シナリオとユース ケース
       href: adoption-scenarios.md
+    - name: 環境の評価
+      href: adoption-assessment-tool.md
     - name: 試用版を実行する
       href: trial-syntex.md
     - name: Microsoft 365 で契約を管理する
@@ -120,7 +122,7 @@
           href: solution-manage-contracts-step1.md
         - name: 手順 2. Microsoft Teams を使う
           href: solution-manage-contracts-step2.md
-        - name: 手順 3. Power Automateを使用する
+        - name: 手順 3. Power Automate を使用する
           href: solution-manage-contracts-step3.md
     - name: 契約管理サイト テンプレート
       href: use-contracts-management-site.md

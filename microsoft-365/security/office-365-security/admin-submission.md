@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d16cae309a90b8ffe10c90fea8ca3a359ece33b
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144819"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417954"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
 
@@ -45,6 +45,9 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 > ペイロードの評価/デトネーションとグレーデラーの分析は、すべてのテナントで行われるわけではありません。 データがコンプライアンスのためにテナント境界から離れることが想定されていない場合、情報が組織外に出ないようにブロックされます。
 
 電子メール メッセージ、URL、添付ファイルを Microsoft に送信するその他の方法については、「 [メッセージとファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
+
+この短いビデオでは、Microsoft Defender for Office 365で管理者の提出を使用して評価のために Microsoft にメッセージを送信する方法について説明します。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -185,7 +188,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
      - **ネットワーク メッセージ ID**
      - **Sender**
      - **[受信者]**
-     - **[名前]**
+     - **名前**
      - **提出者**
      - **送信の理由**
      - **状態**

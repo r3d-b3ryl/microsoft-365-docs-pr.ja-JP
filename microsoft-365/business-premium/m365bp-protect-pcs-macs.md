@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium でアンマネージド Windows 10 PC と Mac を保護する
+title: Microsoft 365 Business Premium でアンマネージド Windows PC と Mac を保護する
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium を使用して、管理されていないデバイスまたは持ち込みデバイス (BYOD) をサイバー攻撃から保護します。 Windows PC と Mac のサイバーセキュリティを設定する方法。
-ms.openlocfilehash: 0b13c208fd2cdd0fcadf7f5bc820d41b3621eebd
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318836"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393244"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium でアンマネージド Windows 10 PC と Mac を保護する
+# <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium でアンマネージド Windows PC と Mac を保護する
 
 目標として、Microsoft Intune に登録されていないアンマネージド Windows 10 PC および Mac の保護を作成することに重点を置いて説明します。 中小企業やキャンペーンには、各自のデバイス (BYOD) を持ち込むスタッフがいる可能性があり、これらのデバイスは管理されていない可能性があります。 BYOD には、個人所有の電話、タブレット、PC が含まれます。 
 

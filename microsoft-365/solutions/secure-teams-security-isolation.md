@@ -1,5 +1,5 @@
 ---
-title: セキュリティの分離を使用してチームを構成する
+title: 一意の秘密度ラベルを使用してセキュリティ分離を使用してチームを構成する
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -18,14 +18,14 @@ ms.custom:
 - admindeeplinkSPO
 recommendations: false
 description: セキュリティ固有の秘密度ラベルを使用してチームを作成する方法について説明します。
-ms.openlocfilehash: cfea35dccd09e0eea361e56f1914700660b7fdd4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 15f155255518df38921288f68dcc9365703e4f2a
+ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64943131"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "65393112"
 ---
-# <a name="configure-a-team-with-security-isolation"></a>セキュリティの分離を使用してチームを構成する
+# <a name="configure-a-team-with-security-isolation-by-using-a-unique-sensitivity-label"></a>一意の秘密度ラベルを使用してセキュリティ分離を使用してチームを構成する
 
 この記事では、Microsoft Teams でプライベート チームを構成し、固有の秘密度ラベルを使用してファイルを暗号化して、チーム メンバーのみがファイルを復号化できるようにするための推奨事項と手順を説明します。
 

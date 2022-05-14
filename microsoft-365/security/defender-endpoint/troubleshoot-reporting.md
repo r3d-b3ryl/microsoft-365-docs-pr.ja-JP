@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8059668e5ac13b506f91a91a7088ffc6ffc0e63d
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: bf65bb13ab45d127bf2302464f1948437e1fe02d
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787558"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417976"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング
 

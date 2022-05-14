@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d8515ce2bccb90478f11fa4a1813c7cb4ab7fb7d
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: efeaf3fadfed0032da90db15a6bb57f5a1fc822a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973841"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65418020"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365用の脅威エクスプローラーでの脅威の検出
 
@@ -52,6 +52,9 @@ Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子
 - 悪意のあるメールなどを調査する
 
 詳細については、「 [脅威エクスプローラーを使用した電子メール セキュリティ](email-security-in-microsoft-defender.md)」を参照してください。
+
+この短いビデオでは、Microsoft Defender for Office 365を使用して電子メールやコラボレーションベースの脅威を検出して調査する方法について説明します。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyPRU]
 
 ## <a name="threat-explorer-walk-through"></a>脅威エクスプローラーのウォークスルー
 
@@ -244,7 +247,7 @@ URL のクリックポップアップにもタグ情報が表示されます。 
 エクスプローラーまたはリアルタイム検出を表示して使用するには、次のアクセス許可が必要です。
 
 - Microsoft 365 Defender ポータルで次の手順を実行します。
-  - 組織管理
+  - 組織の管理
   - セキュリティ管理者 (Azure Active Directory管理センターで割り当てることができます (<https://aad.portal.azure.com>)
   - セキュリティ閲覧者
 - Exchange Online:
@@ -259,7 +262,7 @@ URL のクリックポップアップにもタグ情報が表示されます。 
 - [Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)
 - [Exchange Online の PowerShell](/powershell/exchange/exchange-online-powershell)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)
 - [SharePoint Online、OneDrive、Microsoft Teamsで検出された悪意のあるファイルを表示する](mdo-for-spo-odb-and-teams.md)

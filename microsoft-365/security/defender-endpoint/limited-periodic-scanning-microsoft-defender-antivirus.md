@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 5201366ee003efab1edd5a0a536c45db4ec7aabc
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b9320c5d7086d41be363fd01b786c98ffbc52d5
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788900"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417910"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策で限定された定期的なスキャンを使用する
 
