@@ -15,18 +15,18 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: MTA-STS を使用してメール フローを強化する方法について説明します。
-ms.openlocfilehash: 4bcbe8cd64d4a2e3610b68480a39f697326ea65b
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 735cce96c61a2083b8f0785ace49a5b199790989
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131484"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65415191"
 ---
 # <a name="enhancing-mail-flow-with-mta-sts"></a>MTA-STS を使用したメール フローの強化
 
 [SMTP MTA Strict Transport Security](https://datatracker.ietf.org/doc/html/rfc8461) (MTA-STS) 標準のサポートが Exchange Online に追加されます。 この標準は、メール サーバー間の接続に TLS が常に使用されるようにするために開発されました。 また、受信側のサーバーに信頼できる証明書があることを検証するためにサーバーを送信する方法も提供されます。 TLS が提供されていないか、証明書が有効でない場合、送信者はメッセージの配信を拒否します。 これらの新しいチェックにより、SMTP の全体的なセキュリティが向上し、中間者攻撃から保護されます。
 
-MTA-STS は、受信保護と送信保護の 2 つのシナリオに分類できます。 受信は、Exchange Online でホストされているドメインの保護を MTA-STS と送信でカバーし、Exchange Online が MTA-STS で保護されたドメインにメールを送信する場合に実行される MTA-STS 検証を対象とします。
+MTA-STS は、受信保護と送信保護の 2 つのシナリオに分類できます。受信は、Exchange Online でホストされているドメインの保護を MTA-STS と送信でカバーし、Exchange Online が MTA-STS で保護されたドメインにメールを送信する場合に実行される MTA-STS 検証を対象とします。
 
 ## <a name="outbound-protection"></a>送信保護
 
@@ -44,11 +44,11 @@ MTA-STS を使用すると、ドメインで TLS のサポートを宣言し、�
 
 ドメインの MTA-STS TXT レコードは、送信者によってドメインの HTTPS ベースの MTA-STS ポリシーが取得された後で送信者に対する MTA-STS サポートを示します。 次の TXT レコードは、MTA-STS のサポートを宣言する例です。
 
-`_mta-sts.contoso.com. 3600 IN  TXT v=STSv1; id=20220101000000Z;`
+`_mta-sts.contoso.com. 3600 IN TXT v=STSv1; id=20220101000000Z;`
 
-ドメインの MTA-STS ポリシーは、ドメインの Web インフラストラクチャによってホストされている事前定義済みの URL に配置される必要があります。 URL 構文は `https://mta-sts.<domain name>/.well-known/mta-sts.txt` です。 たとえば、Microsoft.com のポリシーは https://mta-sts.microsoft.com/.well-known/mta-sts.txt で見つかります。
+ドメインの MTA-STS ポリシーは、ドメインの Web インフラストラクチャによってホストされている事前定義済みの URL に配置される必要があります。 URL 構文は `https://mta-sts.<domain name>/.well-known/mta-sts.txt` です。 たとえば、Microsoft.com のポリシーは <https://mta-sts.microsoft.com/.well-known/mta-sts.txt> で見つかります。
 
-```
+```text
 version: STSv1
 mode: enforce
 mx: *.mail.protection.outlook.com
@@ -59,4 +59,4 @@ MX レコードが直接 Exchange Online を指す顧客は、microsoft.com ポ�
 
 これらのポリシーは、顧客に代わって Exchange Online がホストできるものではなく、顧客は、使用する Web ホスティング サービスを利用する必要があります。 ポリシーは、サブドメイン `mta-sts.<domain name>` の証明書を使用して HTTPS で保護される必要があります。 代わりに、GitHub ページを使用してポリシーをホストする[このソリューション](https://github.com/jpawlowski/mta-sts.template)を含むポリシーをホストする方法もあります。
 
-DNS TXT ドメイン レコードが作成され、必要な HTTPS URL でポリシー ファイルが使用可能になると、ドメインは MTA-STS によって保護されます。 MTA-STS に関する詳細は、 [RFC 8461](https://datatracker.ietf.org/doc/html/rfc8461) で利用できます。
+DNS TXT ドメイン レコードが作成され、必要な HTTPS URL でポリシー ファイルが使用可能になると、ドメインは MTA-STS によって保護されます。MTA-STS の詳細は、[RFC8461](https://datatracker.ietf.org/doc/html/rfc8461) にあります。

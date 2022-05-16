@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium 用に事前構成済みのセキュリティ設定を提供することで、セキュリティの既定値が ID 関連の攻撃から組織を保護する方法について説明します。
-ms.openlocfilehash: af9b19dcf33f1b79d4057662cf759ace27aec38f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c1a63efc29154768a7d54d31f51c25a3c84fa30a
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095270"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417844"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>セキュリティの既定値と多要素認証
 
@@ -107,4 +107,3 @@ MFA は会社をセキュリティで保護するための重要な最初のス�
 ## <a name="next-objective"></a>次の目標
 
 [マルウェアやその他の脅威から保護する](m365bp-increase-protection.md)方法を設定します。
-

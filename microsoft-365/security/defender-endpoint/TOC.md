@@ -329,6 +329,10 @@
 ##### [Windows Server の除外](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [回避するべき一般的なミス](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 
+#### Microsoft Defender for Endpoint のトラブルシューティング
+##### [トラブルシューティング モードが開始されました](enable-troubleshooting-mode.md)
+##### [トラブルシューティング モードがオンです](troubleshooting-mode-scenarios.md)
+
 #### Microsoft Defender ウイルス対策用の診断とパフォーマンス
 ##### [デバイスの正常性とコンプライアンスのレポート](machine-reports.md)
 ##### [リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング](troubleshoot-performance-issues.md) 

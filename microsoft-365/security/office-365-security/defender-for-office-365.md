@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 には、安全な添付ファイル、安全なリンク、高度なフィッシング詐欺対策ツール、レポート ツール、および脅威インテリジェンス機能が含まれています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a181f8ef6bb7ca018fb9ddf0f0adc4fe565b73e1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 9be72102f9813394cb2d9eab1e4d163c6d87bd4b
+ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941547"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "65417822"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365
 
@@ -91,7 +91,11 @@ Microsoft Defender for Office 365 を初めて使用している場合、また�
 
 - 現在のサブスクリプションに Microsoft Defender for Office 365 が含まれていない場合に購入を希望する場合は、[営業担当者に問い合わせて試用版の使用を開始](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)し、お客様の組織にとって Microsoft Defender for Office 365 がどのようなメリットになるかを確認してください。
 
-- Microsoft Defender for Office 365 P2 をご利用のお客様は、**Microsoft 365 Defender 統合** にアクセスすると、インシデントやアラートを効率的に検出して確認しながら対応することができます。
+- Microsoft Defender for Office 365 P2 をご利用のお客様は、**Microsoft 365 Defender 統合** にアクセスすると、インシデントやアラートを効率的に検出して確認しながら対応することができます。 
+
+この短いビデオでは、Microsoft 365 Defender ポータルに移行した P2 Microsoft Defender for Office 365 機能の詳細を確認してください。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfx]
+
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Microsoft Defender for Office 365 のポリシーを構成する
 
