@@ -22,12 +22,12 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 140ed15b793b5d6b74b39a35b854b7432a658bc3
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 446b82d668041a476d748956008002c42a92a7f3
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475171"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435459"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
@@ -56,7 +56,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
 - **フィッシング詐欺対策ポリシー**: EOP と Microsoft Defender for Office 365 では、フィッシング詐欺対策ポリシーに以下のなりすまし対策の設定が含まれます。
   - スプーフィング インテリジェンスのオン/オフを切り替える。
-  - Outlook の認証されていない送信者の特定をオンまたはオフにする。
+  - Outlook で認証されていない送信者インジケーターをオンまたはオフにします。
   - なりすまし送信者をブロックするアクションを指定する。
 
   詳細については、「[フィッシング詐欺対策ポリシーでのなりすまし設定](set-up-anti-phishing-policies.md#spoof-settings)」を参照してください。

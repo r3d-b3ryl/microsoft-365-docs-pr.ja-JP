@@ -18,15 +18,15 @@ ms.custom:
 - intro-overview
 search.appverid:
 - MET150
-description: IT 部分をケアするサブスクリプション サービス、Microsoft 365 Business Premium について説明します。
+description: IT 部分を代行するサブスクリプション サービス Microsoft 365 Business Premium についてご紹介します。
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 48644f2b823c441ce6db8b10eac6213699792b9c
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 00763cd0438a28adbf98b60afed4a463086a2625
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64934183"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435813"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 

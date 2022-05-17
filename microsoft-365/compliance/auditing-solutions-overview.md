@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4dd26229e5ca29344524238903dd2e972ac09ad7
-ms.sourcegitcommit: e0f890f46ae0bde03cc9e1ce178a7c1b8fbe12db
+ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65145357"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65444247"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview での監査ソリューション
 
@@ -168,14 +168,16 @@ Microsoft Purview の監査ソリューションの使用を開始するには�
 
 詳しい説明は、「[監査 (プレミアム) の設定](set-up-advanced-audit.md)」をご覧ください。
 
-## <a name="encrypt-audit-records-using-customer-key"></a>カスタマー キーを使用して監査レコードを暗号化する
+<!--
+## Encrypt audit records using Customer Key
 
-監査レコードのカスタマー キー暗号化を有効にすることができます。 監査は、[カスタマー キーを使ったサービス暗号化](customer-key-overview.md)に基づいて構築され、組織の監査データ内の機密情報を暗号化します。 カスタマー キーを実装すると、承認されていないシステムや Microsoft データ センターの担当者が監査パイプラインや保存中に監査データを表示するのを防ぐことで、追加の保護が提供されます。 カスタマー キーを使用して監査データを暗号化すると、組織が暗号化キーを提供および制御するため、規制またはコンプライアンスの義務を満たすのにも役立ちます。
+You can enable Customer Key encryption for audit records. Auditing builds on the [Service encryption with Customer Key](customer-key-overview.md) to encrypt sensitive information in your organization's auditing data. Implementing Customer Key provides extra protection by preventing unauthorized systems or Microsoft data center personnel from viewing your auditing data in the auditing pipeline and at rest. Using Customer Key to encrypt your auditing data also helps you meet regulatory or compliance obligations because your organization provides and controls the encryption keys.
 
-監査用にカスタマー キーを実装するには、暗号化階層を定義するマルチワークロード データ暗号化ポリシー (DEP) を作成する必要があります。 詳細な手順については、「[カスタマー キーの設定](customer-key-set-up.md)」を参照してください。
+To implement Customer Key for auditing, you have to create a multi-workload Data Encryption Policy (DEP), which defines the encryption hierarchy. For detailed step-by-step instructions, see [Set up Customer Key](customer-key-set-up.md).
 
 > [!NOTE]
-> 組織内のすべての監査レコードが暗号化されているわけではありません。 そのサービス内のアクティビティの特定の監査レコードを生成する Microsoft Purview サービスは、監査レコードが暗号化されているかどうかを定義します。
+> Not all audit records in your organization are encrypted. The Microsoft Purview service that generates specific audit records for activity in that service defines whether the audit record is encrypted or not.
+-->
 
 ## <a name="training"></a>トレーニング
 

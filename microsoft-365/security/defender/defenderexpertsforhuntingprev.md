@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 78775b31833f16771d7010f3ea92c9695016463d
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 4fe0518c47ec5d2db96ec939ca62b25192440c54
+ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438121"
+ms.locfileid: "65444263"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting プレビュー
 
@@ -56,7 +56,7 @@ Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直�
 
 まだ行っていない場合は、Defender Experts for Hunting に申請できます。
 
-1. [ [**適用**](https://aka.ms/expandedMTEprev)] をクリックします。 アプリケーション プロセスを登録して完了できるのは、グローバル管理者のみです。 グローバル管理者でない場合は、グローバル管理者に問い合わせて、アプリケーション フォームに入力してください。
+1. [ [**適用**](https://aka.ms/expandedMTEprev)] をクリックします。 
 2. 会社の **メール ID を入力します**。
 3. **[送信]** を選択します。 アプリケーションが受信されたことを示す確認メッセージが表示されます。  
 

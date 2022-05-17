@@ -362,7 +362,7 @@
               href: sit-modify-keyword-dictionary.md
             - name: 正確なデータ一致スキーマを管理する
               href: sit-use-exact-data-manage-schema.md
-            - name: 機密情報のソース テーブル ファイルを更新する
+            - name: EDM 機密情報のソース テーブル ファイルを更新する
               href: sit-use-exact-data-refresh-data.md
             - name: データ損失防止ポリシーで名前付きエンティティを使用する
               href: named-entities-use.md

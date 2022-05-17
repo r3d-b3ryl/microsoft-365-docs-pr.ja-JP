@@ -16,13 +16,13 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
-description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 6ee5c8410b64bffe66ee69e5c4468a9eda601cd8
-ms.sourcegitcommit: 23e186b46b27a6a4863f507a52a11105afae9726
+description: Microsoft 365 管理センターを使用すると、一部の Microsoft Intune ロールを管理できます。このロールはビジネス機能にマップされ、特定のタスクを実行するためのアクセス許可を付与します。
+ms.openlocfilehash: efff2d426d40103369126c082fcb8d7be44e031c
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64882200"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436759"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 

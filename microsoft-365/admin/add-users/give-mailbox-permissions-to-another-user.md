@@ -24,15 +24,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: 他のユーザーのメールボックスにアクセスする権利をユーザーに与えます。このアクセス権を持つユーザーは、他のユーザーのメールボックスからメールを読んだり送信したりできます。
-ms.openlocfilehash: 82a254081eba2e9b6f4ef83f952b07c743dee2c1
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Microsoft 365 ユーザーに他のユーザーのメールボックスにアクセスする権利を与え、他のユーザーのメールボックスのメールを読んだり、送信したりすることができるようになります。
+ms.openlocfilehash: 80c316f0615c13d5f46410582abe2ec3516c8a8a
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765650"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436715"
 ---
-# <a name="give-mailbox-permissions-to-another-user---admin-help"></a>別のユーザーにメールボックス アクセス許可を付与する - 管理者ヘルプ
+# <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>別のMicrosoft 365 ユーザーにメールボックスのアクセス許可を付与する - 管理者ヘルプ
 
 管理者として、一部のユーザーに別のユーザーのメールボックスへのアクセスを許可する会社要件を設定することができます。たとえば、アシスタントが上司のメールボックスの内容を読み取ったり、そこからメールを送信したりできるようにすること、または特定のユーザーが別のユーザーの代理でメールを送信できるようにすることが必要な場合があります。このトピックでは、これを実現する方法を説明します。
   
