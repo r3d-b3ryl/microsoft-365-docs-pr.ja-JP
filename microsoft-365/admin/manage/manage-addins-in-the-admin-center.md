@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 一元化されたアドインを使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: dadb308d45b17d98c7bf6a5dd0c214691d264b5f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec972cd8ce837ae21384bc3b97513bd1263a7d84
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094286"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435437"
 ---
-# <a name="manage-add-ins-in-the-admin-center"></a>管理センターでアドインを管理する
+# <a name="manage-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでアドインを管理する
 
 Office アドインは、ドキュメントをカスタマイズし、Web 上の情報にアクセスする方法を合理化するのに役立ちます。 [「Office アドインの使用を開始](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)する」を参照してください。 
 
@@ -78,12 +78,12 @@ Office アドインは、ドキュメントをカスタマイズし、Web 上の
 
 4. 変更を保存します。
 
-## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>すべてのクライアントで Office ストアをオフにしてアドインのダウンロードを防止する (Outlookを除く)
+## <a name="prevent-add-in-downloads-by-turning-off-the-office-store-across-all-clients-except-outlook"></a>すべてのクライアントでOffice Microsoft Storeをオフにしてアドインのダウンロードを防止する (Outlookを除く)
 
 > [!NOTE]
 > アドインのインストールOutlookは、[別のプロセス](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/specify-who-can-install-and-manage-add-ins)によって管理されます。
 
-組織として、Office ストアからの新しいOffice アドインのダウンロードを禁止することができます。 これを一元展開と組み合わせて使用すると、組織内のユーザーに組織で承認されたアドインのみが確実に展開されます。
+組織として、Office Microsoft Storeからの新しいOffice アドインのダウンロードを禁止することができます。 これを一元展開と組み合わせて使用すると、組織内のユーザーに組織で承認されたアドインのみが確実に展開されます。
   
 **アドインの取得を無効にするには**
   
@@ -106,9 +106,9 @@ Office アドインは、ドキュメントをカスタマイズし、Web 上の
         
     - Microsoft 365 内のアドイン
         
-    ストアへのアクセスを試みるユーザーには **、Office ストア アドインの個別の取得を防ぐために、申し訳ありませんMicrosoft 365が構成されている** というメッセージが表示されます。
+    ストアへのアクセスを試みるユーザーには **、Office Microsoft Store アドインの個別の取得を防ぐために、申し訳ありませんMicrosoft 365が構成されているというメッセージが表示されます。**
   
-Office ストアをオフにするためのサポートは、次のバージョンで使用できます。
+Office Microsoft Storeを無効にするためのサポートは、次のバージョンで使用できます。
   
 - Windows: 16.0.9001 - 現在利用可能です。
     
@@ -118,10 +118,10 @@ Office ストアをオフにするためのサポートは、次のバージョ�
     
 - Web - 現在利用可能です。
     
-これにより、管理者が一元展開を使用して、Office ストアからアドインを割り当てることができなくなります。
+これにより、管理者が一元展開を使用してOffice Microsoft Storeからアドインを割り当てることができなくなります。
 
 > [!NOTE] 
-> Visio Data Visualizer、Bing地図、People Graphなどのアドインは、管理者がストアを無効にした場合でもリボンに表示されます。 これらのリンクを削除するには、管理者は、グループ ポリシー オブジェクト (GPO) を使用してストアを無効にする必要があります。
+> Visio データ ビジュアライザー、Bing地図、People Graphなどのアドインは、管理者がMicrosoft Storeを無効にした場合でもリボンに表示されます。 これらのリンクを削除するには、管理者は、グループ ポリシー オブジェクト (GPO) を使用してMicrosoft Storeを無効にする必要があります。
   
 ユーザーが Microsoft アカウントでサインインできないようにするには、組織アカウントのみを使用するようにログオンを制限できます。 詳細については、[Office 2016 の ID、認証、および承認に関するOffice参照してください](/DeployOffice/security/identity-authentication-and-authorization-in-office)。  
 
@@ -152,7 +152,7 @@ Office ストアをオフにするためのサポートは、次のバージョ�
 
 1. **[ホーム**] リボンで、[**アドインの取得**] を選択します。
 
-    ![Outlookの [ストア] ボタン。](../../media/getaddinsicon.png)
+    ![Outlookの [Microsoft Store] ボタンをクリックします。](../../media/getaddinsicon.png)
   
 2. 左側のナビゲーションで、**[管理者が管理]** を選びます。 
 

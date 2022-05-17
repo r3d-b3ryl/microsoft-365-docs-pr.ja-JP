@@ -17,29 +17,34 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: 3589b6a0a0cc7af9e2bcfcb11541309042871591
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: b247bf7d4fdc1935a0b971f4d4687afd10eb0787
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173287"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437659"
 ---
 # <a name="what-is-microsoft-defender-for-business"></a>Microsoft Defender for Businessとは
 
 Microsoft Defender for Businessは、特に中小規模のビジネス (最大 300 人の従業員) 向けに設計された新しいエンドポイント セキュリティ ソリューションです。 このエンドポイント セキュリティ ソリューションを使用すると、ランサムウェア、マルウェア、フィッシング、その他の脅威から会社のデバイスをより適切に保護できます。 
 
-Defender for Business の詳細については、次のビデオをご覧ください。 <br/><br/>
-
-> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
-
 この記事では、Defender for Business に含まれる内容と、これらの機能の詳細を確認するためのリンクについて説明します。
-
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business機能と機能。":::
 
 >
 > **少し時間ありますか?**
 > <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
 >
+
+## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>ビデオ: 中小企業向けのEnterpriseレベルの保護
+
+Defender for Business の詳細については、次のビデオをご覧ください。 <br/><br/>
+
+> [!VIDEO https://www.youtube.com/embed/umhUNzMqZto]
+
+
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Microsoft Defender for Business機能と機能。":::
+
+## <a name="whats-included-with-defender-for-business"></a>Defender for Business に含まれるもの
 
 Defender for Business を使用すると、ビジネスで使用するデバイスとデータを次のように保護できます。
 
@@ -75,5 +80,6 @@ Defender for Business を使用すると、ビジネスで使用するデバイ�
 
 ## <a name="next-steps"></a>次の手順
 
+- [対話型ガイドを試す:Defender for Business で概要する](https://aka.ms/MDB-GetStartedGuide)
 - [Microsoft Defender for Businessの簡略化された構成プロセスの詳細を確認する](mdb-simplified-configuration.md)
 - [Microsoft Defender for Businessを取得する方法を確認する](get-defender-business.md)

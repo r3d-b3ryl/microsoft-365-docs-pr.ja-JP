@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 元従業員のユーザー アカウントを削除するには、次の手順に従います。
-ms.openlocfilehash: 631405b66c777060463a4e98620ff3c8b06c7e77
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: 元従業員のすべてのユーザー データを保存してアクセスしたら、Microsoft 365 管理センターで元従業員のアカウントを削除できます。
+ms.openlocfilehash: d6e53dd8d14add9383e3eff9d3c1d90a5087ec45
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157244"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436275"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>手順 7 - 元従業員のユーザー アカウントを削除する
 

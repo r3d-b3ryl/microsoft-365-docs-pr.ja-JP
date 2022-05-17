@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを作成し、電子メール転送や自動返信など、ユーザーの設定を構成します。
-ms.openlocfilehash: 201291adddf588bde955cbba7e2c0075e5ca7c88
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: b3de51a8407c8f9786d6a1677137f2a564744ac0
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165114"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437153"
 ---
-# <a name="configure-shared-mailbox-settings"></a>共有メールボックスの設定を構成する
+# <a name="configure-microsoft-365-shared-mailbox-settings"></a>共有メールボックス設定Microsoft 365構成する
 
 [共有メールボックスを作成](create-a-shared-mailbox.md)したら、メール転送や自動返信など、メールボックス ユーザーに対していくつかの設定を構成する必要があります。 後で、メールボックス名、メンバー、メンバーのアクセス許可など、他の設定を変更することもできます。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "60165114"
 
 3. 新しい名前を入力するか、別のエイリアスを追加します。 プライマリ電子メール アドレスを変更する場合は、メールボックスに複数のメール エイリアスが必要です。
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>共有メールボックスに送信されたメールを転送する
 
@@ -53,7 +53,7 @@ ms.locfileid: "60165114"
     
 3. トグルを **[オン] に** 設定し、メッセージを転送するメール アドレスを 1 つ入力します。 任意の有効な電子メール アドレスを指定できます。 複数のアドレスに転送するには、アドレスの [配布グループを作成](/office365/admin/setup/create-distribution-lists) し、このボックスにグループの名前を入力する必要があります。
     
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>共有メールボックスから自動応答を送信する
 
@@ -67,7 +67,7 @@ ms.locfileid: "60165114"
 
 5. 組織外のユーザー *にも* 返信を送信する場合は、返信を受け取るユーザーのチェック ボックスをオンにし、テキストを入力します。 組織内のユーザーには送信せず、組織外のユーザーにのみ送信する方法はありません。
 
-6. **[保存]** を選択します。
+6. [**保存**] を選択します。
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>送信済みメール (返信) の表示を全員に許可する
 
@@ -84,7 +84,7 @@ ms.locfileid: "60165114"
 
 3. メンバーが共有メールボックスへのアクセスに使用できるようにするすべてのアプリについて、トグルを **[オン]** に設定します。 使用しないアプリの切り替えを **オフ** に設定します。 
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>訴訟ホールドに共有メールボックスを配置する
@@ -99,7 +99,7 @@ ms.locfileid: "60165114"
 
 4. 必要に応じて、期間、保留に関するメモ、および詳細情報を含む URL を入力します。  
 
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
 
 ## <a name="add-or-remove-members"></a>メンバーを追加または削除する
@@ -138,7 +138,7 @@ ms.locfileid: "60165114"
 
 3. トグルを **[オン]**  または **[オフ]** に設定します。 
 
-4. **[保存]** を選択します。
+4. [**保存**] を選択します。
 
 > [!NOTE]
 > アドレス一覧から共有メールボックスを非表示にすると、新しい共有メールボックス メンバーは、共有メールボックスがアドレス一覧に再び表示されるまで、非表示のメールボックスをOutlook プロファイルに追加できなくなります。 

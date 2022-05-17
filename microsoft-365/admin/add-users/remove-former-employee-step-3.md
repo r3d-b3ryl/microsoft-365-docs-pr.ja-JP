@@ -25,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 元従業員のモバイル デバイス へのアクセスをブロックするには、次の手順に従います。
-ms.openlocfilehash: 8d6423611b1bf228fbfd5bf13037ade4033013a0
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Exchange管理センターを使用して、元従業員のデバイスをワイプしてブロックし、すべての組織データが削除され、Microsoft 365に接続されなくなります。
+ms.openlocfilehash: 5ee94e9f9bfff2e4f257bf0ff3364806136e3f42
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765974"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436605"
 ---
 # <a name="step-3---wipe-and-block-a-former-employees-mobile-device"></a>手順 3 - 元従業員のモバイル デバイスをワイプしてブロックする
 
@@ -42,7 +42,7 @@ ms.locfileid: "62765974"
 1. Exchange管理センター>**受信者メールボックスに**\>移動 <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">します</a>。
 1. ユーザーを選択し、[ **モバイル デバイス**] で [ **詳細の表示**] を選択します。
 1. **[モバイル デバイスの詳細**] ページの [**モバイル デバイス**] で、モバイル デバイスを選択し、[**ワイプ DataWipe**![ デバイス]](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png)、[**ブロック**] の順に選択します。
-1. **[保存]** を選択します。
+1. [**保存**] を選択します。
    > [!TIP]
    > オンプレミスの Blackberry Enterprise サービスからユーザーを削除または無効にしてください。 さらに、そのユーザーのすべての Blackberry デバイスを無効にする必要もあります。 ユーザーを無効にする具体的な手順については、「Blackberry Business Cloud Services Administration Guide」 (Blackberry Business Cloud Services 管理ガイド) を参照してください。
 

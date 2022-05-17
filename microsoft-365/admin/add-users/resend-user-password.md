@@ -19,15 +19,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: パスワードをリセットし、新しいMicrosoft 365 ユーザーに電子メールを送信する方法について説明します。
-ms.openlocfilehash: 83b1dd5a82189947dae42a2c659032f97d17a256
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: '新しいパスワードで元の電子メールを取得しなかった場合は、ユーザーのパスワードをリセットして、Microsoft 365の新しいユーザーに通知メールを再送信します。 '
+ms.openlocfilehash: 540b419d3f6452d6ca93e9e9424a1a28c0ecdfea
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530177"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436297"
 ---
-# <a name="resend-a-users-password---admin-help"></a>ユーザーのパスワードを再送信する - 管理者向けヘルプ
+# <a name="resend-a-microsoft-365-users-password---admin-help"></a>Microsoft 365 ユーザーのパスワードを再送信する - 管理者ヘルプ
 
 この記事では、Office 365 で新しいユーザーに通知メールを再送信する方法について説明します。 これは、新しいユーザーを作成したときに、新しいパスワードを含む電子メールが届かない場合に発生する可能性があります。 これを行うには、ユーザーのパスワードをリセットします。
 

@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 元従業員のメールボックスのコンテンツを保存する方法について説明します。
-ms.openlocfilehash: 67664bfe7cdb62b772a441bf205d3e47b9986a58
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: ユーザーが組織にログインできないようにブロックしたら、元従業員のメールボックスの内容を保存する 2 つの方法について説明します。
+ms.openlocfilehash: 05d3ba3a4a6cc25758d3572af330231c41a24394
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161668"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436627"
 ---
 # <a name="step-2---save-the-contents-of-a-former-employees-mailbox"></a>手順 2 - 元従業員のメールボックスの内容を保存する
 

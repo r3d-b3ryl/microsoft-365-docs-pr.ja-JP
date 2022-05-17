@@ -14,18 +14,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: f8416d480731c133e93a0a6e22e5b5b32913ba57
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c82962640f992f892e21205dcfc0725a79001f10
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327617"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437876"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointで自動調査と修復機能を構成する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -44,7 +41,7 @@ ms.locfileid: "63327617"
 
 1. グローバル管理者またはセキュリティ管理者として、Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動してサインインします。
 2. ナビゲーション ウィンドウで、**設定** を選択します。
-3. [ **全般** ] セクションで、[ **高度な機能**] を選択します。
+3. **[エンドポイント]** を選択し、[**高度な機能**] を選択します。
 4. **自動調査** と **アラートの自動解決の両方を** 有効にします。
 
 ## <a name="set-up-device-groups"></a>デバイス グループを設定する

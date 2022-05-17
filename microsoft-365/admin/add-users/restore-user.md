@@ -24,14 +24,14 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: ユーザー アカウントを削除してから 30 日以内は、アカウントとすべてのデータを復元でき、ユーザーは同じアカウントでサインインできます。
-ms.openlocfilehash: fc011f9589d789a7eb2faa332a104ef670cf6590
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
-ms.translationtype: HT
+ms.openlocfilehash: 2f9a28e5000c1ba826b5458916f30c3e8a438253
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074488"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436209"
 ---
-# <a name="restore-a-user"></a>ユーザーを復元する
+# <a name="restore-a-user-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでユーザーを復元する
    
 ユーザー アカウントを削除してから 30 日以内に復元すると、そのアカウントと関連するすべてのデータが復元されます。ユーザーは同じ職場や学校のアカウントでサインインできます。ユーザーのメールボックスは完全に復元されます。特定のユーザー アカウントを復元できなくなるまでの残り時間を知るには、[サポートにお問い合わせください](../../business-video/get-help-support.md)。
   

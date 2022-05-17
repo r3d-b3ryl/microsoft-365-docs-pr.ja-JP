@@ -27,13 +27,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
-description: セルフサービスパスワード リセット ツールを使用して、ユーザーが自分のパスワードをリセットできるようにポリシーを設定する方法について説明します。
-ms.openlocfilehash: e72d4815be5486f8f7df362b5b93cae988b7df63
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: セルフサービスパスワード リセット ツールを使用してユーザーが自分のパスワードをリセットできるように、Microsoft 365 管理センターでポリシーを設定する方法について説明します。
+ms.openlocfilehash: 2ade056638db03a0a38b7fe2bdacfe3d6d2e4530
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765386"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436693"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
@@ -47,7 +47,7 @@ Microsoft 365管理者は、ユーザーが[セルフサービスパスワード
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
 1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウで、**設定** > **Org 設定**、および <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**セキュリティ &プライバシー**</a>を選択します。
-1. [**ユーザーが自分のパスワードをリセットできるようにする**] で、**管理センター Azure AD** 選択します。
+1. [ **ユーザーが自分のパスワードをリセットできるようにする**] で、[**Azure AD 管理センター**] を選択します。
 1. 左側のナビゲーション ウィンドウで [ **ユーザー**] を選択し、[ **ユーザー - すべてのユーザー** ] ページで [ **パスワードリセット**] を選択します。
 1. **[すべて**] を選択してセルフサービスのパスワード リセットを有効にし、[保存] を選択 **します**。
 

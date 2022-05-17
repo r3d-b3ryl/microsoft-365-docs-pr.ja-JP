@@ -24,14 +24,14 @@ search.appverid:
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
 description: 新しいMicrosoft 365 パートナーを見つける方法、または過去に作業したパートナーの連絡先情報を取得する方法について説明します。
-ms.openlocfilehash: d50c829281654842079a2124be4f8a8e16e993bf
-ms.sourcegitcommit: 166bf635c0905ae12c04b1865cb17aadef81e82a
+ms.openlocfilehash: 3fe7a2ded991bf8b3603ea992fcd64c6d7866c90
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "60245651"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437563"
 ---
-# <a name="find-your-partner-or-reseller"></a>パートナーまたは販売店を検索する
+# <a name="find-your-microsoft-365-subscriptions-partner-or-reseller"></a>Microsoft 365 サブスクリプション パートナーまたはリセラーを見つける
 
 管理者は、パートナーと協力して、Microsoft Open Volume ライセンス プログラムを通じてMicrosoft 365サブスクリプションを購入、ライセンス認証、更新できます。 
   

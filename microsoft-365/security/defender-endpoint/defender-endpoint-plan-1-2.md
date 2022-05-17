@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 02/07/2022
+ms.date: 05/16/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3fb31e985e0f6d2191e45c9e4350399e4bb7eb40
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 8b48a86a13a1b6798e1481b86b4fc8b4e342cf9f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368267"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438775"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Microsoft Defender for Endpointプランを比較する
 
@@ -46,3 +46,7 @@ EndPoint 向け Microsoft Defender は、エンタープライズネットワー
 - [Microsoft Defender for Endpoint プラン 1 の概要を確認する](defender-endpoint-plan-1.md)
 - [Defender for Endpoint プラン 1 の設定と構成](mde-p1-setup-configuration.md)
 - [Defender for Endpoint プラン 1 の使用を開始する](mde-plan1-getting-started.md)
+
+## <a name="see-also"></a>関連項目
+
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md) (中小企業向け)

@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の Microsoft Defender for Office 365
 description: セキュリティ & コンプライアンス センターからMicrosoft 365 Defenderへの変更について説明します。
-keywords: Microsoft 365セキュリティ, Microsoft 365 Defenderの概要, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, ガラスの単一ウィンドウ, 新しいセキュリティ ポータル, 新しい Defenderセキュリティ ポータル
+keywords: Microsoft 365セキュリティ, Microsoft 365 Defenderの概要, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, 新しい Defender セキュリティ ポータル
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 84fed53ec1f12ebe7e52d0b789dc9db57360cf4f
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4cd43c5f9e8ecad35ed574d5b60eaf1fa2e635d9
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945563"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438316"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 Defender の Microsoft Defender for Office 365
 
@@ -36,35 +36,32 @@ ms.locfileid: "64945563"
 
 次の表に、セキュリティ & コンプライアンス センターとMicrosoft 365 Defenderの間のナビゲーションの変更を示します。
 
-<br>
-
 ****
 
 |[セキュリティ/コンプライアンス センター](https://protection.office.com)|[Microsoft 365 Defender](https://security.microsoft.com)|[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)|[Exchange 管理センター](https://admin.exchange.microsoft.com)|
 |---|---|---|---|
 |アラート|<ul><li>[アラート ポリシー](https://security.microsoft.com/alertpolicies)</li><li>[インシデント&アラート](https://security.microsoft.com/alerts)</li></ul>|[[アラート] ページ](https://compliance.microsoft.com/homepage)||
-|分類||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
-|データ損失防止||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
-|レコード管理||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
-|情報ガバナンス||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
+|分類||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
+|データ損失防止||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
+|レコード管理||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
+|情報ガバナンス||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
 |脅威の管理|[電子メール & コラボレーション](https://security.microsoft.com/homepage)|||
-|アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
+|アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
 |メール フロー|||[管理センター Exchange](https://admin.exchange.microsoft.com/#/)参照してください|
-|データのプライバシー||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
+|データのプライバシー||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
 |検索|[監査](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
 |レポート|[Report](https://security.microsoft.com/emailandcollabreport)|||
-|サービス アシュアランス||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
-|監督||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
-|電子情報開示||[Microsoft Purview コンプライアンス ポータルを](https://compliance.microsoft.com/homepage)参照してください||
-|||||
+|サービス アシュアランス||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
+|監督||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
+|電子情報開示||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
 
 [Microsoft 365 Defender](./microsoft-365-defender.md)は<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"><https://security.microsoft.com></a>、セキュリティ & コンプライアンス センターなど、既存の Microsoft セキュリティ ポータルのセキュリティ機能を組み合わせたものです。 この強化されたセンターは、セキュリティ チームが脅威から組織を効果的かつ効率的に保護するのに役立ちます。
 
-セキュリティ & コンプライアンス センター (protection.office.com) について理解している場合は、Microsoft 365 Defenderの変更点と機能強化について説明します。
+セキュリティ & コンプライアンス センター (protection.office.com) について理解している場合は、この記事では、Microsoft 365 Defenderの変更点と機能強化の一部について説明します。
 
 利点の詳細を確認する: [Microsoft 365 Defenderの概要](microsoft-365-defender.md)
 
-コンプライアンス関連の項目をお探しの場合は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>にアクセスしてください。
+コンプライアンス関連の項目をお探しの場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>にアクセスしてください。
 
 ## <a name="new-and-improved-capabilities"></a>新機能と改善された機能
 
@@ -72,11 +69,11 @@ ms.locfileid: "64945563"
 
 統合されたMicrosoft 365 Defender ソリューションを使用すると、脅威シグナルを結合し、脅威の完全な範囲と影響、およびそれが組織にどのような影響を与えているかを判断できます。
 
-:::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Microsoft 365 Defenderコンバージド エクスペリエンス" lightbox="../../media/M365-defender-converge-experience.png":::
+![Microsoft 365 Defenderコンバージド エクスペリエンス。](../../media/mdo-m36d-nav-collapsed.png)
 
 Defender for Office 365は、電子メール メッセージ、リンク (URL)、およびコラボレーション ツールによってもたらされる悪意のある脅威から組織を保護します。
 
-:::image type="content" source="../../media/Defender-for-O365.png" alt-text="Defender for Office 365 ポータル" lightbox="../../media/Defender-for-O365.png":::
+![Defender for Office 365 ポータル。](../../media/mdo-m365d-nav.png)
 
 ### <a name="incidents-and-alerts"></a>インシデントと警告
 
@@ -85,7 +82,7 @@ Defender for Office 365は、電子メール メッセージ、リンク (URL)�
 - [調査の詳細](incidents-overview.md)
 - [通知の管理に関するその他の情報](/windows/security/threat-protection/microsoft-defender-atp/review-alerts)
 
-:::image type="content" source="../../media/converge-1-alerts-and-actions.png" alt-text="Microsoft 365 Defender ポータルのアラートとアクションのクイック起動バー" lightbox="../../media/converge-1-alerts-and-actions.png":::
+![Microsoft 365 Defender ポータルのアラートとアクションのクイック起動バー。](../../media/m365d-incident-nav.png)
 
 ### <a name="hunting"></a>検索
 
@@ -93,7 +90,7 @@ Defender for Office 365は、電子メール メッセージ、リンク (URL)�
 
 [カスタム検出ルール](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) は、高度なハンティング クエリから構築でき、侵害アクティビティや不適切な構成されたデバイスを示す可能性があるイベントを事前に監視するのに役立ちます。
 
-Microsoft Defender for Office 365[での高度なハンティングの例](advanced-hunting-example.md)を次に示します。
+Microsoft Defender for Office 365での[高度なハンティングの例](advanced-hunting-example.md)を次に示します。
 
 ### <a name="action-center"></a>アクション センター
 
@@ -117,8 +114,8 @@ Microsoft Defender for Office 365[での高度なハンティングの例](advan
 
 ユーザーのメールへの脅威を追跡および調査し、キャンペーンなどを追跡します。 セキュリティ & コンプライアンス センターを使用したことがある場合、これはよく知られています。
 
-:::image type="content" source="../../media/converge-3-email-and-collab-new.png" alt-text="Microsoft 365 Defender ポータルの左側のナビゲーション ウィンドウにある [Email & Collab (または MSDO)] のクイック起動メニュー" lightbox="../../media/converge-3-email-and-collab-new.png":::
-
+![Microsoft 365 Defender ポータルの左側のナビゲーション ウィンドウにある[電子メール &折りたたみ] のクイック起動メニュー。](../../media/mdo-m365d-nav.png)
+  
 #### <a name="email-entity-page"></a>[メール エンティティ] ページ
 
 [[電子メール エンティティ] ページ](../office-365-security/mdo-email-entity-page.md)では、過去に異なるページまたはビューに散在していた電子メール情報が *統合* されます。 脅威と傾向に関するメールの調査結果は、*1 か所に集中しています*。 ヘッダー情報とメールプレビューは、他の便利なメール関連情報と共に同じメール ページからアクセスできます。 同様に、悪意のある添付ファイルまたは URL に対するデトネーションの状態は、同じページのタブにあります。 [メール エンティティ] ページは、管理者やセキュリティ運用チームがメールの脅威とその状態をすばやく把握し、処理を迅速に決定するのに役立ちます。
@@ -127,8 +124,8 @@ Microsoft Defender for Office 365[での高度なハンティングの例](advan
 
 レポートの表示、設定の変更、およびユーザーの役割変更を行います。
 
-:::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Microsoft 365 Defender ポータルの左側のナビゲーション ウィンドウにある、Microsoft 365 Defenderアクセス許可とレポートのクイック起動メニュー" lightbox="../../media/converge-4-access-and-reporting-new.png":::
-
+![Microsoft 365 Defender ポータルの左側のナビゲーション ウィンドウにある、Microsoft 365 Defenderアクセス許可とレポートのクイック起動メニュー。](../../media/m365d-settings-nav.png)
+  
 > [!NOTE]
 > DomainKeys によって識別されたメール (DKIM) は、宛先電子メール システムがカスタム ドメインから送信されたメッセージを信頼することを保証します。
 > Defender for Office 365 ユーザーの場合は、Microsoft 365 Defender<https://security.microsoft.com/threatpolicy>を使用して DKIM キーを *管理およびローテーション* できるようになりました。または、[**ポリシー & ルール****脅威ポリシー** \> \> **ルール**\>] セクション \> **DKIM に** 移動できます。
@@ -139,8 +136,6 @@ Microsoft Defender for Office 365[での高度なハンティングの例](advan
 
 この表は、セキュリティ & コンプライアンス センターとMicrosoft 365 Defender ポータルの間で変更が発生した脅威管理のクイック リファレンスです。 これらの領域の詳細については、リンクをクリックしてください。
 
-<br>
-
 ****
 
 |分野|変更の説明|
@@ -148,7 +143,6 @@ Microsoft Defender for Office 365[での高度なハンティングの例](advan
 |[調査](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-microsoft-365-defender-portal)|[Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) および[Defender for Endpoint](../defender-endpoint/automated-investigations.md)の AIR 機能を 1 つにまとめます。 これらの更新プログラムと改善により、セキュリティ運用チームは、メール、共同作業のコンテンツ、ユーザー アカウント、デバイスに対する自動調査と修復処理に関する詳細を 1 か所で確認できます。|
 |[アラート キュー](../../compliance/alert-policies.md)|セキュリティ & コンプライアンス センターの [**アラートの表示**] ポップアップ ウィンドウに、Microsoft 365 Defenderへのリンクが含まれるようになりました。 [**アラート ページを開く**] リンクをクリックMicrosoft 365 Defender開きます。 通知キュー内の Office 365 をクリックすると、**[通知の表示]** ページにアクセスできます。|
 |[攻撃シミュレーション トレーニング](../office-365-security/attack-simulation-training-insights.md)|攻撃シミュレーション トレーニングを使用して、組織内で現実的な攻撃シナリオを実行します。 これらのシミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、従業員をトレーニングするのに役立ちます。 攻撃シミュレーション トレーニングには、より多くのオプション、強化されたレポート、および強化されたトレーニング フローおよび配信と管理がより容易になったトレーニングシナリオが含まれています。|
-|
 
 次の領域に変更はありません。
 

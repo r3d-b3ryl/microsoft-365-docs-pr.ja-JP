@@ -25,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: この記事の手順に従って、別の従業員に元従業員のOneDriveとOutlookデータへのアクセス権を付与します。
-ms.openlocfilehash: c710826d0403c6935127f14dade3dfe30a8b5c13
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: この記事の手順に従って、元従業員のOneDriveにアクセスし、データをOutlookし、バックアップし、別の従業員にアクセス権を付与するかどうかを選択します。
+ms.openlocfilehash: 2ec2b2418fd5ca287c51950c23e403168d09f48f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129202"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436561"
 ---
 # <a name="step-5---give-another-employee-access-to-onedrive-and-outlook-data"></a>手順 5 - 別の従業員にOneDriveとOutlookデータへのアクセス権を付与する
 
@@ -77,7 +77,7 @@ ms.locfileid: "65129202"
 
 9. **サイト コレクション管理者** にユーザーを追加し、[OK] を選択 **します**。
 
-10. これで、ユーザーはOneDrive URL を使用して元従業員のOneDriveにアクセスできるようになります。 詳細については、「[OneDrive URL について」を](/onedrive/list-onedrive-urls#about-onedrive-urls)参照してください。
+10. これで、ユーザーはOneDrive URL を使用して元従業員のOneDriveにアクセスできるようになります。 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>ユーザーのOneDriveへの管理者アクセスを取り消す
 
@@ -179,7 +179,7 @@ Outlook 2010で「[メール、連絡先、予定表を Outlook の .pst ファ�
 
 8. アイテムのインポートに関するオプションを設定します。通常、既定の設定を変更する必要はありません。
 
-9. **[完了]** を選択します。
+9. [**完了**] を選択します。
 
 > [!NOTE]
 > 既存のユーザーのOneDriveと電子メール データにアクセスする手順は変わりません。

@@ -13,23 +13,23 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Basic Mobility and Security で iOS デバイスを管理します。
-ms.openlocfilehash: 99aa909bf9adab1464ad3858cfac4a04cc541609
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Basic Mobility and Security で iPad や iPhone などのiOSデバイスを管理するには、まず APNs 証明書を作成します。
+ms.openlocfilehash: 8bcbcdeac9f1cadd945c3f7c44e9192d57db7c82
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781163"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435791"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>iOS デバイスの APN 証明書を作成する
 
-Basic Mobility and Security で iPad や iPhone などの iOS デバイスを管理するには、APN 証明書を作成します。
+Basic Mobility and Security で iPad や iPhone などのiOSデバイスを管理するには、APNs 証明書を作成します。
 
 1. グローバル管理者アカウントでMicrosoft 365にサインインします。
 
 2. ブラウザーで「.」と入力します <https://protection.office.com/>。
 
-3. **[データ損失防止** \> **デバイス管理]** を選択し、[**iOS デバイスの APNs 証明書] を選択します**。
+3. **[データ損失防止** \> **デバイス管理]** を選択し、**iOS デバイスの [APNs 証明書] を選択します**。
 
 4. [Apple プッシュ通知証明書設定] ページで、[**次へ**] を選択します。
 
@@ -57,6 +57,6 @@ Basic Mobility and Security で iPad や iPhone などの iOS デバイスを管
 
 8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
-9. **[完了]** を選択します。
+9. [**完了**] を選択します。
 
 セットアップを完了するには、Security & Compliance Center \> **セキュリティ ポリシー** \> **デバイス管理の** \> **管理設定** に戻ります。

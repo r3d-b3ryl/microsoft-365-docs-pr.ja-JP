@@ -29,14 +29,14 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: 管理者センターで特定のタスクを実行できるように、管理者ロールをユーザーまたはビジネス内の複数のユーザーに割り当てる方法について説明します。
-ms.openlocfilehash: fd38bb9ed378e6b3ffc20a79ca71eb2943599dcc
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 663a5fb60fa815eab079f4ab96e53e8b168105b7
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370622"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437022"
 ---
-# <a name="assign-admin-roles"></a>管理者ロールを割り当てる
+# <a name="assign-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで管理者ロールを割り当てる
 
 Microsoft ビジネス サブスクリプションを購入したユーザーは、グローバル管理者です。つまり、サブスクリプション内の製品を無制限に制御でき、ほとんどのデータにアクセスできます。
 
@@ -63,7 +63,7 @@ Microsoft ビジネス サブスクリプションを購入したユーザーは
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>ロールを使用して管理者ロールをユーザーに割り当てる
 
-1. 管理センターで、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**ロールの割り当て]**</a> に移動します。 **Azure AD** タブまたは **Intune** タブを選択すると、組織で使用できる管理者ロールが表示されます。
+1. 管理センターで、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2097861" target="_blank">**ロールの割り当て]**</a> に移動します。 **Azure AD** または **Intune** タブを選択して、組織で使用できる管理者ロールを表示します。
 2. ユーザーを割り当てる管理者ロールを選択します。
 3. [**割り当てられた adminsAdd** > ] を選択 **します**。
 4. ユーザーの **表示名** または **ユーザー名** を入力し、候補の一覧からユーザーを選択します。
@@ -106,6 +106,6 @@ PowerShell がわかっている場合は、「 [PowerShell を使用してユ�
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 管理者ロールについて](about-admin-roles.md) (記事)\
-[Azure AD組み込みのロール](/azure/active-directory/roles/permissions-reference) (記事)\
+[Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference) (記事)\
 [PowerShell を使用してユーザー アカウントにロールを割り当てる](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (記事)\
 [パートナー関係を承認または削除する](../misc/add-partner.md) (記事)

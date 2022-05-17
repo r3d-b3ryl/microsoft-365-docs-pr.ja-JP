@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6092800de89ebfdeed35230b1ade296e0396a85
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f5c2f1c7c73f150c02192fa7e275a07b12c64c79
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468779"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438380"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -114,6 +114,9 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 サインイン プロセスは、指定された評価デバイス自体または他のデバイス (個人用クライアント デバイスなど) で完了できます。
 
+> [!NOTE]
+> ユーザーがサインインするアカウントとサインイン プロセスの完了に使用するデバイスの両方が、デバイスがMicrosoft Defender for Endpointにオンボードされているのと同じテナント内にある必要があります。
+
 ネットワーク スキャナーの登録プロセスを完了するには、
 
 1. コマンド ラインに表示される URL をコピーして従い、指定されたインストール コードを使用して登録プロセスを完了します。
@@ -202,7 +205,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 デバイスのコマンド ライン設定を変更して、テキスト サイズのコピーと変更を許可します。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [デバイス一覧](machines-view-overview.md)
 - [高度な機能を構成する](advanced-features.md)

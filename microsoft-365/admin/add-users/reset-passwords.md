@@ -29,15 +29,15 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Microsoft 365管理者アカウントでサインインして、ビジネス サブスクリプションのMicrosoft 365のユーザーのパスワードをリセットします。
-ms.openlocfilehash: 476418d97d3ad0fcfce1684282f2f69b3d56e8fb
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Microsoft 365管理者アカウントでサインインして、ビジネス サブスクリプションのMicrosoft 365がある場合にユーザーのパスワードをリセットします。
+ms.openlocfilehash: 0ce656355b83077809c7082a1bf0d34e8a5439cd
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765854"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436253"
 ---
-# <a name="reset-passwords"></a>パスワードをリセットする
+# <a name="reset-passwords-in-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365のパスワードをリセットする
 
 この記事では、ビジネス サブスクリプションのMicrosoft 365がある場合に、自分とユーザーのパスワードをリセットする方法について説明します。
 

@@ -18,13 +18,13 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid:
 - MET150
-description: 基本的なモビリティとセキュリティは、組織のモバイル デバイスのセキュリティと管理に役立ちます。
-ms.openlocfilehash: 74d2a2d6034b1e893987e2ede47a96bc00658f47
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: Microsoft 365にサインインし、Basic Mobility and Security を設定して、組み込みのモバイル デバイス管理を使用してユーザーのモバイル デバイスをセキュリティで保護および管理します。
+ms.openlocfilehash: c24d36b1151b22fee228d1a85368bf26a381e4d2
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415153"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435725"
 ---
 # <a name="manage-devices-enrolled-in-mobile-device-management-in-microsoft-365"></a>Microsoft 365のモバイル デバイス管理に登録されているデバイスを管理する
 

@@ -6,8 +6,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
+ms.author: deniseb
+author: denisebmsft
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -15,50 +15,51 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 01000e08153e96042e6873dc45fcb0627ea82e47
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: caee6f216ad5006eb31750d2c5cbd0d9e47f21ce
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782987"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438929"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web コンテンツ のフィルター処理は、Microsoft Defender for Endpointの [Web 保護機能](web-protection-overview.md)の一部です。 これにより、組織は、コンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡し、規制することができます。 これらの Web サイトの多くは、悪意はありませんが、コンプライアンス規制、帯域幅の使用、またはその他の懸念のために問題が発生する可能性があります。
+## <a name="what-is-web-content-filtering"></a>Web コンテンツ フィルターとは何ですか?
+
+Web コンテンツ のフィルター処理は、Microsoft Defender for EndpointおよびMicrosoft Defender for Businessの [Web 保護機能](web-protection-overview.md)の一部です。 Web コンテンツ フィルターを使用すると、組織はコンテンツ カテゴリに基づいて Web サイトへのアクセスを追跡し、規制することができます。 これらの Web サイトの多く (悪意がない場合でも) は、コンプライアンス規制、帯域幅の使用、またはその他の懸念のために問題が発生する可能性があります。
 
 特定のカテゴリをブロックするように、デバイス グループ間でポリシーを構成します。 カテゴリをブロックすると、指定したデバイス グループ内のユーザーがカテゴリに関連付けられている URL にアクセスできなくなります。 ブロックされていないカテゴリの場合、URL は自動的に監査されます。 ユーザーは中断することなく URL にアクセスでき、アクセス統計を収集して、よりカスタム ポリシーの決定を作成するのに役立ちます。 表示しているページ上の要素がブロックされたリソースを呼び出している場合、ユーザーにブロック通知が表示されます。
 
-Web コンテンツ フィルターは、主要な Web ブラウザーで使用できます。Windows Defender SmartScreen (Microsoft Edge) と Network Protection (Chrome、Firefox、Brave、Opera) によって実行されるブロックがあります。 ブラウザーのサポートの詳細については、前提条件に関するセクションを参照してください。
+Web コンテンツ フィルターは、主要な Web ブラウザーで使用できます。Windows Defender SmartScreen (Microsoft Edge) と Network Protection (Chrome、Firefox、Brave、Opera) によって実行されるブロックがあります。 ブラウザーのサポートの詳細については、前提条件に関 [するセクションを参照してください](#prerequisites) 。
 
 ## <a name="benefits-of-web-content-filtering"></a>Web コンテンツ フィルター処理の利点
 
 - ユーザーは、オンプレミスでも離れた場所でも、ブロックされたカテゴリの Web サイトにアクセスできなくなります。
-
-- セキュリティ チームは、[ロールベースのアクセス制御設定](/microsoft-365/security/defender-endpoint/rbac)で定義されたデバイス グループを使用して、ユーザーのグループにポリシー Microsoft Defender for Endpoint簡単に展開できます。
-
 - セキュリティ チームは、同じ中央の場所にある Web レポートにアクセスでき、実際のブロックと Web の使用状況を把握できます。
+- Defender for Endpoint を使用している場合、セキュリティ チームは[、ロールベースのアクセス制御設定](/microsoft-365/security/defender-endpoint/rbac)で定義されたデバイス グループを使用して、ユーザーのグループにポリシー Microsoft Defender for Endpoint簡単に展開できます。
+- Defender for Business を使用している場合は、すべてのユーザーに適用される 1 つの Web コンテンツ フィルター ポリシーを定義できます。 
 
 ## <a name="prerequisites"></a>前提条件
 
-この機能を試す前に、次の要件を満たしていることを確認してください。
+この機能を試す前に、次の表に示す要件を満たしていることを確認してください。
 
-- サブスクリプションには、Windows 10 Enterprise E5、Microsoft 365 E5、Microsoft 365 E5 Security、Microsoft 365 E3、またはスタンドアロン ライセンスMicrosoft Defender for Endpoint。 
-
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>にアクセスできます。
-
-- 組織のデバイスは、anniversary Update (バージョン 1607) 以降Windows 10実行されているか、[最新のウイルス対策/マルウェア対策更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)をWindows 11しています。
-
-- Windows Defender SmartScreen と Network Protection は、組織のデバイスで有効になっています。
+| 要件 | 説明 |
+|:---|:---|
+| サブスクリプション | サブスクリプションには、次のいずれかを含める必要があります。<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint プラン 1 またはプラン 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md) |
+| ポータル へのアクセス | <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>にアクセスできる必要があります。 |
+| オペレーティング システム | 組織のデバイスは、 [最新のウイルス対策/マルウェア対策更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)を使用して、次のいずれかのオペレーティング システムを実行している必要があります。 <br/>- Windows 11<br/>- Windows 10 Anniversary Update (バージョン 1607) 以降 |
+| 関連する保護 | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) と[ネットワーク保護](network-protection.md)は、組織のデバイスで有効にする必要があります。 |
 
 ## <a name="data-handling"></a>データの処理
 
@@ -66,7 +67,13 @@ Web コンテンツ フィルターは、主要な Web ブラウザーで使用�
 
 ## <a name="turn-on-web-content-filtering"></a>Web コンテンツ フィルターを有効にする
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>の左側のナビゲーションで、**エンドポイント** \> **の一般的** \> **な高度な機能****設定**\>選択します。 **Web コンテンツ フィルター** のエントリが表示されるまで下にスクロールします。 トグルを **[オン]** と **[保存] の設定** に切り替えます。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。
+
+2. ナビゲーション ウィンドウで、**設定[Endpoints** General Advanced Features]\ **(**\>エンドポイント **の**\>一般的\>**な高度な機能\)** を選択します。 
+
+3. **Web コンテンツ のフィルター処理** が表示されるまで下にスクロールします。 
+
+4. トグルを **[オン]** に切り替え、[ **保存] 環境設定** を選択します。
 
 ### <a name="configure-web-content-filtering-policies"></a>Web コンテンツ フィルター ポリシーを構成する
 
@@ -169,13 +176,15 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 4. ポリシー スコープを指定します。 デバイス グループを選択して、ポリシーを適用する場所を指定します。 選択したデバイス グループ内のデバイスのみが、選択したカテゴリの Web サイトにアクセスできなくなります。
 
+   > [!IMPORTANT]
+   > Defender for Business を使用している場合、スコープは適用されません。 この手順をスキップし、手順 5 に進みます。
+
 5. 概要を確認し、ポリシーを保存します。 ポリシーの更新は、選択したデバイスに適用されるまでに最大 2 時間かかる場合があります。
 
 > [!NOTE]
->
 > - デバイス グループ上のカテゴリを選択せずにポリシーを展開できます。 このアクションは、ブロック ポリシーを作成する前にユーザーの動作を理解するのに役立つ監査のみのポリシーを作成します。
 > - ポリシーを削除する場合、またはデバイス グループを同時に変更する場合は、ポリシーの展開が遅れる可能性があります。
-> - "Uncategorized" カテゴリをブロックすると、予期しない予期しない結果が発生する可能性があります。
+> - "Uncategorized" カテゴリをブロックすると、予期しない望ましくない結果が発生する可能性があります。
 
 ## <a name="end-user-experience"></a>エンドユーザーのエクスペリエンス
 

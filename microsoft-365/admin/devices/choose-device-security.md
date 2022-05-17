@@ -18,14 +18,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: 異なる MDM メソッドと MAM メソッドの中から選択します。
-ms.openlocfilehash: 49c8fe8e61026e56b1698d7da2fdbac07896c858
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: cc2eef0fde261ed8ee6eace288d70c53235fc88e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317496"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435415"
 ---
-# <a name="options-for-protecting-your-devices-and-app-data"></a>デバイスとアプリ データを保護するためのオプション
+# <a name="options-for-protecting-your-devices-and-app-data-with-microsoft-365"></a>Microsoft 365を使用してデバイスとアプリ データを保護するためのオプション
 
 企業向けのMicrosoft 365を使用して組織のデバイスとデータをセキュリティで保護するには、いくつかの方法があります。 次のスタンドアロン プランを使用できます。
 

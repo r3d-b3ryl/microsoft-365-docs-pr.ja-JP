@@ -24,21 +24,21 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 管理 アプリを入手し、スマートフォンまたはタブレットからオンライン組織を管理する方法について説明します。
-ms.openlocfilehash: f3d42b899705988efd0beb320e73894a91494010
-ms.sourcegitcommit: 2ea2105d40b60a87fc9aa30f392a73a3a9db6d99
+description: web ベースのMicrosoft 365 管理センターのコンパニオンであるMicrosoft 365 管理 アプリを入手して、電話またはTablet PCからオンライン組織を管理します。
+ms.openlocfilehash: b4d3759002b7ad175a98a6619fc5cbcade16f7a7
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/20/2021
-ms.locfileid: "61128438"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436165"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365管理者モバイル アプリについて
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 管理 モバイル アプリについて
 
-あなたは通常外出先にいる管理者ですか? そうでない場合でも、スマートフォンやタブレットからMicrosoft 365を管理する必要がある場合があります。 Web ベースのMicrosoft 365 管理センターに最適な無料の[Microsoft 365 管理 アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)を確認してください。 [アプリは Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)から、[Google Play ストア](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)からダウンロードできます。
+あなたは通常外出先にいる管理者ですか? そうでない場合でも、スマートフォンやTablet PCからMicrosoft 365を管理する必要がある場合があります。 Web ベースのMicrosoft 365 管理センターに最適な無料の[Microsoft 365 管理 アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)を確認してください。 [アプリは Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)から、[Google Play ストア](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)からダウンロードできます。
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="スクリーンショット: 管理モバイル アプリのホーム ページ、検索、メッセージ センター、正常性、クイック リンクを表示する":::
 
-管理者アプリには、コンピューターにアクセスできない場合に、モバイルデバイスまたはタブレット デバイスからMicrosoft 365を管理できる機能が多数用意されています。 アプリから実行できるいくつかのタスクの一覧を次に示します。
+管理者アプリには、コンピューターにアクセスできない場合に、モバイルまたはTablet PC デバイスからMicrosoft 365を管理できる機能が多数用意されています。 アプリから実行できるいくつかのタスクの一覧を次に示します。
 
 - **ユーザーとデバイスを管理する** ユーザーの追加または編集、ユーザーのパスワードのリセット、ロールの割り当て、ユーザーのブロック、ユーザーの削除、エイリアスの管理、ライセンスの割り当て、デバイス データのワイプなどを行います。
 - **グループを管理する** グループの追加、グループへのユーザーの追加または削除を行います。
@@ -51,7 +51,7 @@ ms.locfileid: "61128438"
 管理者であり、複数のMicrosoft 365組織を担当している場合は、複数の組織にサインインし、それらの組織をすばやく切り替えることができます。 このアプリはダーク テーマをサポートしており、39 の言語で利用できます。
   
 > [!IMPORTANT]
-> iOS または Android で Admin モバイル アプリの使用に関する問題が発生した場合は、 [feedback365@microsoft.com](mailto:feedback365@microsoft.com) にお問い合わせください。
+> iOSまたはAndroidで Admin モバイル アプリの使用に関する問題が発生した場合は、[feedback365@microsoft.com](mailto:feedback365@microsoft.com) にお知らせください。
 
 ## <a name="watch-install-the-admin-mobile-app"></a>ウォッチ: 管理者モバイル アプリをインストールする
 
@@ -60,7 +60,7 @@ ms.locfileid: "61128438"
 1. Microsoft 365 管理モバイル アプリを取得するには、デバイスのアプリ ストアで **Microsoft 365 管理** を検索してインストールします。
 2. グローバル管理者のメール アドレスでサインインし、ダッシュボードを表示してサービスの正常性を確認し、ユーザー ライセンスを監視し、メッセージとサービス要求を表示します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 管理者モバイル アプリを使用するには、Microsoft 365組織内の管理者である必要があります。
   

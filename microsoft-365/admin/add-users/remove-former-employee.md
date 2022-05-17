@@ -26,13 +26,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: このソリューションの手順に従って、元従業員をMicrosoft 365から削除し、組織のデータをセキュリティで保護します。
-ms.openlocfilehash: 799a946c85da94fcc3d9e53a4015697d124192ce
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 元従業員がサインインできないようにMicrosoft 365へのアクセスをブロックし、組織データをセキュリティで保護し、他の従業員が自分の電子メールにアクセスしてデータをOneDriveできるようにします。
+ms.openlocfilehash: 3bff5812d1efd6b38f05303de7ec2c078b31cf01
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315177"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436319"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員を削除し、データをセキュリティで保護する
 
@@ -41,7 +41,7 @@ ms.locfileid: "63315177"
 > [!TIP]
 > このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このソリューションの手順を完了するには、グローバル管理者である必要があります。
 

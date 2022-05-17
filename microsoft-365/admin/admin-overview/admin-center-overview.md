@@ -22,13 +22,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 でシンプルなビューのいずれかを使用して、一般的なタスクやダッシュボード ビューの複雑な設定やタスクを管理します。
-ms.openlocfilehash: b75a4e63b313654be68d9569daa497a738520bbc
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+description: Microsoft 365 管理センターの簡略化されたビューを使用して、一般的なタスクを管理するか、より複雑な設定とタスクのダッシュボード ビューを管理します。
+ms.openlocfilehash: d553eff9a9ed78225200320bbadb5a7e28d517f0
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128829"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436143"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 

@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 次の手順に従って、元従業員のメールを別の従業員に転送するか、共有メールボックスに変換します。
-ms.openlocfilehash: 910fb8c30982cc02c4d71f1236fd54095eda96c7
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: 元従業員のメールを別の従業員に転送するか、複数のユーザーが 1 人ではなくアクセスできる共有メールボックスに変換します。
+ms.openlocfilehash: 302517ae44d9f263b293a6aa629a7bc58f8594ec
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765950"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436583"
 ---
 # <a name="step-4---forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>手順 4 - 元従業員のメールを別の従業員に転送するか、共有メールボックスに変換する
 
@@ -55,7 +55,7 @@ ms.locfileid: "62765950"
 2. ブロックする従業員の名前を選択し、[ **メール** ] タブを選択します。
 3. [ **電子メール転送]** で、[ **メール転送の管理**] を選択します。
 4. [ **このメールボックスに送信されたすべてのメールを転送する** ] をオンにします。 [ **転送先アドレス** ] ボックスに、メールを受け取る現在の従業員のメール アドレスを入力します。
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 6. 元従業員のアカウントを削除しないよう注意してください。
 
 ### <a name="cancel-outlook-meetings"></a>会議Outlookキャンセルする

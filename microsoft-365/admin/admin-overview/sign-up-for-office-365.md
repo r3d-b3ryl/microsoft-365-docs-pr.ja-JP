@@ -27,14 +27,14 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Office 365のサインアップ プロセスを実行する前に、知っておくべきことを理解します。
+description: Office 365のサインアップ プロセスを実行する前に、Office プログラムの最新バージョンについて知っておくべきことを理解してください。
 ms.date: 03/17/2021
-ms.openlocfilehash: 045540074b42b528c07d638d643f0d1b74e1f724
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 015f99a2f0b6f9fcd17592e399bccf044313f993
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315891"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436121"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
 

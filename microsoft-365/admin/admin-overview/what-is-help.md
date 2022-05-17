@@ -22,13 +22,13 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: Microsoft 365 管理センターを使用してヘルプを受けることができるすべての方法について説明します。
-ms.openlocfilehash: 0de98eab68dd848fd54ef60f7eb04ae18c517d82
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365全体に統合されたヘルプを使用して、Microsoft 365 サブスクリプションを最大限に活用します。
+ms.openlocfilehash: f5aca14ed8e397be58045d5599dbfc602f633fb9
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154052"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435879"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 

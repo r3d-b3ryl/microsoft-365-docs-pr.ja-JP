@@ -14,22 +14,20 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 30b2d2a7190ab8d79b4e80db389198026595cdd4
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: f290af2808db1aa56f39593ec4f9fac68c0f76d8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64862480"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438819"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Endpoint プラン 1 と 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
-
-> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-respondmachine-abovefoldlink)
 
 検出された攻撃に迅速に対応するには、デバイスを分離するか、調査パッケージを収集します。 デバイスでアクションを実行した後、アクション センターでアクティビティの詳細を確認できます。
 
@@ -48,13 +46,11 @@ ms.locfileid: "64862480"
 [![応答アクションの画像。](images/response-actions.png)](images/response-actions.png#lightbox)
 
 > [!IMPORTANT]
-> [Microsoft Defender for Business](../defender-business/mdb-overview.md)には、次の手動応答アクションが含まれます。
+> [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) と[Microsoft Defender for Business](../defender-business/mdb-overview.md)には、次の手動応答アクションのみが含まれます。
 > - ウイルス対策スキャンの実行
 > - デバイスの分離
 > - ファイルを停止して検疫する
-> - ファイルをブロックまたは許可するインジケーターを追加する
-
-> この記事で説明するすべての応答アクションを実行するには、サブスクリプションに Defender for Endpoint プラン 2 を含める必要があります。
+> - ファイルをブロックまたは許可するインジケーターを追加する サブスクリプションには、この記事で説明したすべての応答アクションを持つ Defender for Endpoint Plan 2 を含める必要があります。
 
  デバイス ページは、次のいずれかのビューから確認できます。
 
@@ -64,7 +60,6 @@ ms.locfileid: "64862480"
 - **検索ボックス** - ドロップダウン メニューから [デバイス] を選択し、デバイス名を入力します。
 
 > [!IMPORTANT]
->
 > - これらの応答アクションは、Windows 10 バージョン 1703 以降、Windows 11、Windows Server 2019、Windows Server 2022 のデバイスでのみ使用できます。
 > - Windows以外のプラットフォームの場合、応答機能 (デバイスの分離など) はサード パーティの機能に依存します。
 > - Microsoft ファースト パーティ エージェントの場合は、OS の最小要件については、各機能の下にある 「詳細情報」のリンクを参照してください。
@@ -95,12 +90,14 @@ ms.locfileid: "64862480"
 
 > [!IMPORTANT]
 >
->これらのアクションは、macOS と Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答[を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
+>これらのアクションは現在、macOSと Linux ではサポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答[を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
 
 パッケージ (Zip ファイル) をダウンロードし、デバイスで発生したイベントを調査するには
 
 1. デバイス ページの上部にある応答アクションの行から [ **調査パッケージの収集** ] を選択します。
+
 2. テキスト ボックスで、このアクションを実行する理由を指定します。 **[確認]** を選択します。
+
 3. zip ファイルがダウンロードされます
 
 別の方法:
@@ -115,15 +112,11 @@ ms.locfileid: "64862480"
 
 パッケージには、次のフォルダーが含まれています。
 
-<br>
-
-****
-
 |フォルダー|説明|
 |---|---|
 |Autoruns|既知の自動開始エントリ ポイント (ASEP) のレジストリの内容を表すファイルのセットが含まれています。デバイス上の攻撃者の持続性を識別するのに役立ちます。 <p> <div class="alert"><b>メモ：</b> レジストリ キーが見つからない場合、ファイルには次のメッセージが含まれます:"エラー: システムは、指定したレジストリ キーまたは値を見つけることができませんでした。<div>|
 |インストールされているプログラム|この.CSV ファイルには、デバイスに現在インストールされているものを識別するのに役立つインストール済みプログラムの一覧が含まれています。 詳細については、「 [Win32_Product クラス](https://go.microsoft.com/fwlink/?linkid=841509)」を参照してください。|
-|ネットワーク接続|このフォルダーには、疑わしい URL、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが含まれています。 <ul><li>ActiveNetConnections.txt: プロトコルの統計情報と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を検索する機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュは、内部攻撃の実行に使用された可能性のあるネットワーク上の侵害されたシステムまたは疑わしいシステムがネットワーク上の他のホストを明らかにすることができます。</il><li>DnsCache.txt: DNS クライアント リゾルバー キャッシュの内容を表示します。これには、ローカルホスト ファイルから事前に読み込まれたエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方が含まれます。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの完全な TCP/IP 構成を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表すことができます。</li><li>FirewallExecutionLog.txtと pfirewall.log</li></ul><p><div class="alert"><b>メモ：</b> 調査パッケージに含まれるように、pfirewall.log ファイルは %windir%\system32\logfiles\firewall\pfirewall.log に存在する必要があります。 ファイアウォール ログ ファイルの作成の詳細については、「[高度なセキュリティ ログを使用してWindows Defenderファイアウォールを構成](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)する」を参照してください。<div>|
+|ネットワーク接続|このフォルダーには、疑わしい URL、攻撃者のコマンドと制御 (C&C) インフラストラクチャ、横方向の移動、またはリモート接続への接続を識別するのに役立つ接続情報に関連する一連のデータ ポイントが含まれています。 <ul><li>ActiveNetConnections.txt: プロトコルの統計情報と現在の TCP/IP ネットワーク接続を表示します。 プロセスによって行われた疑わしい接続を検索する機能を提供します。</li><li>Arp.txt: すべてのインターフェイスの現在のアドレス解決プロトコル (ARP) キャッシュ テーブルを表示します。 ARP キャッシュは、内部攻撃の実行に使用された可能性のあるネットワーク上の侵害されたシステムまたは疑わしいシステムがネットワーク上の他のホストを明らかにすることができます。</il><li>DnsCache.txt: DNS クライアント リゾルバー キャッシュの内容を表示します。これには、ローカルホスト ファイルから事前に読み込まれたエントリと、コンピューターによって解決された名前クエリの最近取得したリソース レコードの両方が含まれます。 これは、疑わしい接続を識別するのに役立ちます。</li><li>IpConfig.txt: すべてのアダプターの完全な TCP/IP 構成を表示します。 アダプターは、インストールされているネットワーク アダプターなどの物理インターフェイス、またはダイヤルアップ接続などの論理インターフェイスを表すことができます。</li><li>FirewallExecutionLog.txtと pfirewall.log</li></ul><p><div class="alert"><b>メモ：</b> 調査パッケージに含まれるように、pfirewall.log ファイルは %windir%\system32\logfiles\firewall\pfirewall.log に存在する必要があります。 ファイアウォール ログ ファイルの作成の詳細については、「[高度なセキュリティ ログを使用してWindows Defender ファイアウォールを構成](/windows/security/threat-protection/windows-firewall/configure-the-windows-firewall-log)する」を参照してください。<div>|
 |プリフェッチ ファイル|Windowsプリフェッチ ファイルは、アプリケーションの起動プロセスを高速化するように設計されています。 これは、システムで最近使用されたすべてのファイルを追跡し、削除された可能性があるアプリケーションのトレースを検索するために使用できますが、プリフェッチ ファイルの一覧にはまだ見つかります。 <ul><li>プリフェッチ フォルダー: `%SystemRoot%\Prefetch`. 注: プリフェッチ ファイルを表示するには、プリフェッチ ファイル ビューアーをダウンロードすることをお勧めします。</li><li>PrefetchFilesList.txt: プリフェッチ フォルダーへのコピーエラーがあったかどうかを追跡するために使用できる、コピーされたすべてのファイルの一覧が含まれます。</li></ul>|
 |プロセス|実行中のプロセスを一覧表示する.CSV ファイルを含み、デバイスで実行されている現在のプロセスを識別する機能を提供します。 これは、疑わしいプロセスとその状態を識別するときに役立ちます。|
 |スケジュールされたタスク|スケジュールされたタスクを一覧表示する.CSV ファイルが含まれています。このファイルを使用すると、選択したデバイスで自動的に実行されるルーチンを識別し、自動的に実行するように設定された疑わしいコードを検索できます。|
@@ -141,9 +134,9 @@ ms.locfileid: "64862480"
 
 調査または応答プロセスの一環として、ウイルス対策スキャンをリモートで開始して、侵害されたデバイスに存在する可能性のあるマルウェアを特定して修復することができます。
 
->[!IMPORTANT]
->- このアクションは、macOS と Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答[を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
->- Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、Microsoft Defender AV がアクティブなウイルス対策ソリューションであるかどうかに関係なく、他のウイルス対策ソリューションと共に実行できます。 Microsoft Defender AV はパッシブ モードにすることができます。 詳細については、「[Microsoft Defender ウイルス対策の互換性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)」を参照してください。
+> [!IMPORTANT]
+> - このアクションは現在、macOSと Linux ではサポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答[を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
+> - Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、Microsoft Defender AV がアクティブなウイルス対策ソリューションであるかどうかに関係なく、他のウイルス対策ソリューションと共に実行できます。 Microsoft Defender AV はパッシブ モードにすることができます。 詳細については、「[Microsoft Defender ウイルス対策の互換性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)」を参照してください。
 
 **[ウイルス対策スキャンの実行**] を選択した後、実行するスキャンの種類 (クイックまたはフル) を選択し、スキャンを確認する前にコメントを追加します。
 
@@ -153,9 +146,7 @@ ms.locfileid: "64862480"
 
 > [!NOTE]
 > Defender for Endpoint 応答アクションを使用してスキャンをトリガーする場合、Microsoft Defender ウイルス対策 'ScanAvgCPULoadFactor' の値は引き続き適用され、スキャンの CPU への影響が制限されます。
->
 > ScanAvgCPULoadFactor が構成されていない場合、既定値はスキャン中の最大 CPU 負荷の 50% の制限です。
->
 > 詳細については、「 [configure-advanced-scan-types-microsoft-defender-antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus)」を参照してください。
 
 ## <a name="restrict-app-execution"></a>アプリの実行を制限する
@@ -189,11 +180,11 @@ ms.locfileid: "64862480"
 
 攻撃の重大度とデバイスの機密性に応じて、デバイスをネットワークから分離することもできます。 このアクションは、攻撃者が侵害されたデバイスを制御し、データ流出や横移動などのさらなるアクティビティを実行するのを防ぐのに役立ちます。
 
->[!IMPORTANT]
->- このアクションは、macOS と Linux では現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答[を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
->- Windows 10 バージョン 1703、Windows 11、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 上のデバイスでは、完全な分離を使用できます。
->- 選択的分離は、Windows 10、バージョン 1709 以降、およびWindows 11上のデバイスで使用できます。
->- デバイスを分離する場合は、特定のプロセスと宛先のみが許可されます。 そのため、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 クラウド ベースの保護関連トラフィックをMicrosoft Defender for EndpointおよびMicrosoft Defender ウイルス対策するために、分割トンネリング VPN を使用することをお勧めします。
+> [!IMPORTANT]
+> - ネットワークからのデバイスの分離は、現在、macOSおよび Linux ではサポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答 [を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
+> - Windows 10 バージョン 1703、Windows 11、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 上のデバイスでは、完全な分離を使用できます。
+> - 選択的分離は、Windows 10、バージョン 1709 以降、およびWindows 11上のデバイスで使用できます。
+> - デバイスを分離する場合は、特定のプロセスと宛先のみが許可されます。 そのため、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 クラウド ベースの保護関連トラフィックをMicrosoft Defender for EndpointおよびMicrosoft Defender ウイルス対策するために、分割トンネリング VPN を使用することをお勧めします。
 
 このデバイス分離機能は、侵害されたデバイスをネットワークから切断すると同時に、Defender for Endpoint サービスへの接続を保持します。デバイスの監視は続行されます。
 

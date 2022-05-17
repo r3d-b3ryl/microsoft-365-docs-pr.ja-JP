@@ -25,14 +25,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: 管理センターで一元展開を使用して、組織内のユーザーとグループにアドインを展開する方法について説明します。
-ms.openlocfilehash: 2dfd92e2dd38487a444362cdbb88ec217e62ca28
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a599023db47a46baa0318e026e70627320a6b1f8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093726"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437527"
 ---
-# <a name="deploy-add-ins-in-the-admin-center"></a>管理センターでアドインを展開する
+# <a name="deploy-add-ins-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにアドインをデプロイする
 
 Office アドインは、ドキュメントをカスタマイズし、Web 上の情報にアクセスする方法を合理化するのに役立ちます ([「Office アドインの使用を開始](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862)する」を参照)。 管理者は、Microsoft 365 管理センターの一元展開機能を使用して、組織内のユーザーにOffice<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">アドインを展開</a>できます。 一元展開は、ほとんどの管理者が組織内のユーザーとグループにアドインを展開するために推奨され、最も機能が豊富な方法です。
 
@@ -68,12 +68,12 @@ Office アドインは、ドキュメントをカスタマイズし、Web 上の
 
 3. オプションを選択し、指示に従います。
   
-4. Office ストアからアドインを追加するオプションを選択した場合は、アドインを選択します。 </br>
+4. Office Microsoft Storeからアドインを追加するオプションを選択した場合は、アドインを選択します。 </br>
 
-    使用可能なアドインは、カテゴリ別に表示できます。**推奨、****評価**、**または名前** です。 Office ストアから無料のアドインのみを使用できます。 現在、有料アドインはサポートされていません。 アドインを選択したら、使用条件に同意して続行します。 <br/> 
+    使用可能なアドインは、カテゴリ別に表示できます。**推奨、****評価**、**または名前** です。 Office Microsoft Storeから無料のアドインのみを使用できます。 現在、有料アドインはサポートされていません。 アドインを選択したら、使用条件に同意して続行します。 <br/> 
 
     > [!NOTE]
-    > [Office ストア] オプションを使用すると、更新プログラムと機能強化が自動的にユーザーに展開されます。
+    > Office Microsoft Store オプションを使用すると、更新プログラムと機能強化が自動的にユーザーに展開されます。
 
 5. 次のページで、**[すべてのユーザー]**、**[特定のユーザー/グループ]**、**[自分だけ]** 選択して、アドインの展開先を指定します。 [検索] ボックスを使用して、特定のユーザーまたはグループを検索します。 <br/>
 

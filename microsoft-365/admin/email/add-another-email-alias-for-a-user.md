@@ -24,14 +24,14 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: '一般法人向け Microsoft 365 アカウントにメール エイリアスと呼ばれる複数のメール アドレスを関連付ける方法を説明します。 '
-ms.openlocfilehash: 19303cb2c60455713595dbe23a23bae7e57efb71
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 2951b5eef21748ace22bee50afb24f86123fa46a
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780217"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437461"
 ---
-# <a name="add-another-email-alias-for-a-user"></a>ユーザーに別のメール エイリアスを追加する
+# <a name="add-another-email-alias-for-a-microsoft-365-business-subscription-user"></a>Microsoft 365 ビジネス サブスクリプション ユーザーの別の電子メール エイリアスを追加する
   
 この記事は、一般法人向けサブスクリプションを持っている Microsoft 365 管理者を対象としています。ホーム ユーザー向けではありません。
   

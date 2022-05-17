@@ -18,13 +18,13 @@ ms.technology: mde
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: 1/18/2022
-ms.openlocfilehash: 5c3724989db1bd8e6389b8a70ba591ce4e109390
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.date: 05/16/2022
+ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64787712"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438098"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃面の縮小機能を理解して使用する
 
@@ -32,9 +32,9 @@ ms.locfileid: "64787712"
 
 **適用対象:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender ウイルス対策
 
 **プラットフォーム**
@@ -69,9 +69,9 @@ ms.locfileid: "64787712"
 
 7. ネットワーク ファイアウォールを設定します。
 
-   1. [高度なセキュリティを備えたWindows Defenderファイアウォールの](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)概要を確認します。
+   1. [高度なセキュリティを備えたWindows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)の概要を確認します。
    2. [Windows Defender ファイアウォール設計ガイド](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)を使用して、ファイアウォール ポリシーを設計する方法を決定します。
-   3. [Windows Defender ファイアウォールの展開ガイド](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)を使用して、高度なセキュリティで組織のファイアウォールを設定します。
+   3. [Windows Defender ファイアウォール展開ガイド](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)を使用して、高度なセキュリティで組織のファイアウォールを設定します。
 
 > [!TIP]
 > ほとんどの場合、攻撃面の縮小機能を構成するときに、いくつかの方法から選択できます。
@@ -170,7 +170,7 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
    > [!div class="mx-imgBorder"]
    > ![イベント ビューアー ウィンドウでカスタム ビューの作成オプションを強調表示するアニメーション。](images/events-create.gif)
 
-3. [XML] タブに移動し、[ **クエリを手動で編集]** を選択します。 XML オプションを使用する場合、[ **フィルター** ] タブを使用してクエリを編集できないという警告が表示されます。 **[はい]** を選択します。
+3. [XML] タブに移動し、[ **クエリを手動で編集]** を選択します。 XML オプションを使用する場合、[ **フィルター** ] タブを使用してクエリを編集できないという警告が表示されます。 [**はい**] を選択します。
 
 4. イベントをフィルター処理する機能の XML コードを XML セクションに貼り付けます。
 
@@ -245,7 +245,7 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 
 ****
 
-|特徴|プロバイダー/ソース|イベント ID|説明|
+|機能|プロバイダー/ソース|イベント ID|説明|
 |---|---|:---:|---|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1|ACG の監査|
 |エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2|ACG の実施|

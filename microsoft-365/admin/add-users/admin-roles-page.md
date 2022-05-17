@@ -21,21 +21,21 @@ search.appverid:
 - MET150
 - MOE150
 description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するためのアクセス許可を提供します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 813cc178b572be5a6b1abc28d355ede020918c55
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 07a46d7dfa23838715364ab1ab36ced992265b29
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315247"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437087"
 ---
-# <a name="get-started-with-the-roles-page"></a>[ロール] ページで概要する
+# <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Microsoft 365管理者ロール ページでの概要
 
 [ロール] ページでは、管理者センターでタスクを実行するためのアクセス許可をユーザーに付与できます。 これにより、組織が適切なユーザーにタスクを分散し、データをセキュリティで保護するのに役立ちます。
 
 ![管理者ロールを示す図。](../../media/roles-main-page.png)
 
 > [!TIP]
-> 役割の詳細な説明をお探しですか ? [組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)と[管理者ロールについてを](/microsoft-365/admin/add-users/about-admin-roles)確認してください。
+> 役割の詳細な説明をお探しですか ? [Azure AD の組み込みロール](/azure/active-directory/roles/permissions-reference)と[管理者ロールについてを](/microsoft-365/admin/add-users/about-admin-roles)確認してください。
 
 ## <a name="about-the-admin-roles-page"></a>[管理者ロール] ページについて
 
@@ -65,7 +65,7 @@ ms.locfileid: "63315247"
 
 Microsoft オンライン サービス全体のほとんどの管理機能とデータへのグローバル アクセスが必要なユーザーにグローバル管理者ロールを割り当てます。 グローバルなアクセスを多くのユーザーに許可することはセキュリティ上のリスクであるため、2 〜 4 人のグローバル管理者を配置することをお勧めします。 グローバル管理者のみがすべてのユーザーのパスワードをリセットし、ドメインを追加および管理できます。 また、Microsoft サポートに対するサポート要求を開いて管理することもできます。 Microsoft オンライン サービスにサインアップしたユーザーが自動的にグローバル管理者になります。[詳細については、こちらを参照してください](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)。
 
-### <a name="global-reader"></a>グローバルリーダー
+### <a name="global-reader"></a>グローバル閲覧者
 
 グローバル管理者が表示できるすべての管理センターで管理者機能と設定を表示する必要があるユーザーに、グローバル リーダー管理者ロールを割り当てます。 グローバル リーダー管理者ロールは、設定を編集できません。 [詳細情報](/microsoft-365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 

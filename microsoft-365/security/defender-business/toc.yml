@@ -73,14 +73,14 @@
           href: mdb-offboard-devices.md
     - name: 参照情報
       items:
-        - name: API リファレンス情報
-          href: /microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners
         - name: ヘルプを入手する方法またはサポートに問い合わせる方法
           href: mdb-get-help.md
         - name: よく寄せられる質問
           href: mdb-faq.yml
         - name: トラブルシューティング
           href: mdb-troubleshooting.yml
+        - name: API リファレンス情報
+          href: ../defender-endpoint/exposed-apis-create-app-partners.md?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
         - name: Microsoft 365 Business Premium
           href: /microsoft-365/business-premium/
         - name: Microsoft 365 Lighthouse

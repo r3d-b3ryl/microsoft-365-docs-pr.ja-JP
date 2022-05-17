@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'PowerShell Exchangeを使用して、組織内のすべてのユーザーまたは特定のユーザーのクラッター機能を有効または無効にする方法について説明します。 '
-ms.openlocfilehash: 5037e7cb6518ca90f3d12c183fcff3c838c29907
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 64c11b2a8bbce3747727c458a4427f5c0e1b135b
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165089"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437197"
 ---
-# <a name="configure-clutter-for-your-organization"></a>組織での低優先メールの構成
+# <a name="configure-microsoft-365-clutter-for-your-organization"></a>組織のMicrosoft 365の整理を構成する
 
 > [!TIP]
 > [優先受信トレイ](../setup/configure-focused-inbox.md) が低優先メールに置き換わります。 詳細情報: [優先受信トレイとクラッターのプランに関する更新](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)

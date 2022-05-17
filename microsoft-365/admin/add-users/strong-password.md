@@ -20,19 +20,19 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Windows PowerShellを使用して、ユーザーに強力なパスワード要件を設定する方法について説明します。
-ms.openlocfilehash: 5932f01c2f17a72f4f6a20a6457d263bed7dd85e
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+description: ビジネス、学校、非営利団体のパスワード ポリシーを管理する管理者の場合は、Windows PowerShellを使用して強力なパスワード要件を設定できます。
+ms.openlocfilehash: 20bea953207a85b589bf1ae821f988a3cfe8e22c
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530489"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436187"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件を無効にする
 
 この記事では、ユーザーの強力なパスワード要件を無効にする方法について説明します。 ビジネス組織のMicrosoft 365では、強力なパスワード要件が既定で有効になっています。 組織には、強力なパスワードを無効にする必要がある場合があります。 強力なパスワード要件を無効にするには、次の手順に従います。 PowerShell を使用してこれらの手順を完了する必要があります。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 この記事は、ビジネス、学校、非営利団体のパスワード ポリシーを管理するユーザーを対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは何ですか?(Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md) これらの手順を実行するには、[グローバル管理者またはパスワード管理者](about-admin-roles.md)である必要があります。
 

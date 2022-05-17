@@ -24,13 +24,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 元従業員からMicrosoft 365ライセンスを削除するには、次の手順に従います。
-ms.openlocfilehash: b724e8d65c990396ad376544de86d4ffd0cb5fdc
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 元従業員のMicrosoft 365ライセンスを削除してから、サブスクリプションから削除するか、ライセンスを別のユーザーに割り当てることができます。
+ms.openlocfilehash: 95f95403a316e176f91c7f120ce5a26487a7a59f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315163"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436231"
 ---
 # <a name="step-6---remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>手順 6 - 元従業員のMicrosoft 365 ライセンスを削除して削除する
 
@@ -50,7 +50,7 @@ ms.locfileid: "63315163"
 2. ライセンスを削除するサブスクリプションを選択します。
 3. 詳細ページで、[ライセンスの **削除**] を選択します。
 4. [ **ライセンスの削除** ] ウィンドウの [新しい数量] の [ **ライセンスの合計** ] ボックスに、このサブスクリプションに必要なライセンスの合計数を入力します。 たとえば、25 個のライセンスがあり、そのうちの 1 つを削除する場合は、「24」と入力します。
-5. **[保存]** を選択します。
+5. [**保存**] を選択します。
 
 別の [ユーザー](add-users.md) をビジネスに追加すると、1 つの手順でライセンスを同時に購入するように求められます。
 

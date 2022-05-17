@@ -21,12 +21,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365のフィッシング対策保護機能について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81cd2870ff3471fbd535415229b3ced20bba1fbf
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 8d62d2a32342aa6d409e49d790af717b1ccf7d61
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61372158"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438753"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Microsoft 365でのフィッシング対策の保護
 
@@ -37,7 +37,7 @@ ms.locfileid: "61372158"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 例:
+*フィッシング* は、正当または信頼された送信者から送られたように見えるメッセージで、機密情報を盗もうとする電子メール攻撃です。 フィッシングには特定のカテゴリがあります。 次に例を示します。
 
 - **スピア フィッシングでは** 、対象となる受信者 (通常、攻撃者による受信者の偵察後) に特別に調整された、集中型のカスタマイズされたコンテンツが使用されます。
 
@@ -55,7 +55,7 @@ EOP (つまり、Microsoft Defender for Office 365のない組織Microsoft 365) 
 
 - **スプーフィング インテリジェンス**: スプーフィング インテリジェンス分析情報を使用して、検出されたスプーフィングされた送信者を外部および内部ドメインからのメッセージで確認し、検出された送信者を手動で許可またはブロックします。 詳細については、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
 
-- **EOP のフィッシング対策ポリシー**: スプーフィング インテリジェンスのオンとオフを切り替え、Outlookで認証されていない送信者の識別をオンまたはオフにし、ブロックされたスプーフィングされた送信者のアクションを指定します。 詳細については、「 [EOP でフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
+- **EOP のフィッシング対策ポリシー**: スプーフィング インテリジェンスをオンまたはオフにし、Outlookで認証されていない送信者インジケーターをオンまたはオフにし、スプーフィングされた送信者をブロックするアクションを指定します。 詳細については、「 [EOP でフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」を参照してください。
 
 - **テナント許可/ブロック リストでなりすましされた送信者を許可またはブロックする**: スプーフィング インテリジェンス分析の判定を上書きすると、なりすましされた送信者は、手動で許可またはブロックするエントリとなり、「テナント許可/ブロックリスト」の **[なりすまし]** タブにのみ表示されます。 また、スプーフィング インテリジェンスで検出される前に、手動でなりすまし送信者の許可またはブロック エントリを作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
 

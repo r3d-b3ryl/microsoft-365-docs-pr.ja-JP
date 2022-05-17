@@ -4,7 +4,7 @@
       href: m365-lighthouse-overview.md
     - name: Microsoft 365 Lighthouseの要件
       href: m365-lighthouse-requirements.md
-- name: 作業の開始
+- name: 概要
   items:
     - name: サインアップ
       href: m365-lighthouse-sign-up.md
@@ -26,7 +26,7 @@
   items:
     - name: '[テナント] ページの概要'
       href: m365-lighthouse-tenants-page-overview.md
-    - name: テナント間でAzure ADロールを表示する
+    - name: テナント間で Azure AD ロールを表示する
       href: m365-lighthouse-view-your-roles.md
     - name: テナント リストを管理する
       href: m365-lighthouse-manage-tenant-list.md
@@ -56,6 +56,8 @@
       href: m365-lighthouse-compare-compliance-policies.md
     - name: Windows 365 (クラウド PC) ページの概要
       href: m365-lighthouse-win365-page-overview.md
+    - name: Windows 365 クラウド PCを再プロビジョニングする
+      href: m365-lighthouse-reprovision-cloudpc.md
 - name: 脅威を管理する
   items:
     - name: 脅威管理ページの概要

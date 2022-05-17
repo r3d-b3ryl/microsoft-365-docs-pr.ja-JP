@@ -21,14 +21,14 @@ search.appverid:
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
 description: ドメイン Connectが有効なレジストラーを操作し、ドメインをMicrosoft 365に追加する方法について説明します。
-ms.openlocfilehash: 1691d86ebd459ee69faca8d3a21d99b0caa89fca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: e20588181a5e9ca55d11844e2f31c3504a2bbfa0
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316913"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437615"
 ---
-# <a name="using-domain-connect"></a>ドメイン Connectの使用
+# <a name="using-domain-connect-to-add-your-domain-to-microsoft-365"></a>ドメイン Connectを使用してドメインをMicrosoft 365に追加する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。
 
@@ -44,7 +44,7 @@ ms.locfileid: "63316913"
 - [1&amp;1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [Go Daddy](https://www.godaddy.com/)
-- [ワードプレス](https://wordpress.com/)
+- [WordPress](https://wordpress.com/)
 - [Plesk](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
 - SecureServer または WildWestDomains (SecureServer DNS ホスティングを使用する GoDaddy リセラー)

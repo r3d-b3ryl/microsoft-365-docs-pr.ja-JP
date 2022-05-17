@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: Basic Mobility と Security を使用して、デバイス のセキュリティ ポリシーとアクセス規則を設定します。
-ms.openlocfilehash: b4752a6f1b71c453b3d1b89adeb25f337a65c255
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Basic Mobility and Security を設定して使用することで、Microsoft 365組織に接続されているモバイル デバイスを管理し、セキュリティで保護します。
+ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780855"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435703"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365の基本的なモビリティとセキュリティの概要
 
@@ -34,7 +34,7 @@ ms.locfileid: "64780855"
 
 ## <a name="what-types-of-devices-can-you-manage"></a>管理できるデバイスの種類
 
-Basic Mobility and Security を使用すると、Windows Phone、Android、iPhone、iPadなどのさまざまな種類のモバイル デバイスを管理できます。 組織内のユーザーが使用するモバイル デバイスを管理するには、各ユーザーに適用可能なMicrosoft 365 ライセンスが必要であり、そのデバイスは Basic Mobility and Security に登録されている必要があります。
+Basic Mobility and Security を使用すると、Windows Phone、Android、iPhone、iPadなど、さまざまな種類のモバイル デバイスを管理できます。 組織内のユーザーが使用するモバイル デバイスを管理するには、各ユーザーに適用可能なMicrosoft 365 ライセンスが必要であり、そのデバイスは Basic Mobility and Security に登録されている必要があります。
 
 デバイスの種類ごとに Basic Mobility と Security がサポートする内容については、「 [基本的なモビリティとセキュリティの機能」を](capabilities.md)参照してください。
 

@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: フィルターを使用して、Microsoft 365でカスタム ユーザー ビューを作成、編集、または削除する方法について説明します。
-ms.openlocfilehash: cf3e286a7d8f0e9b5f9741541974b2125df505ad
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+description: ビジネス サブスクリプションのMicrosoft 365のグローバル管理者またはユーザー管理管理者の場合は、フィルターを使用してカスタム ユーザー ビューを作成、編集、または削除できます。
+ms.openlocfilehash: d90d324690d153fa708dbe7c36a9f41d349f8588
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499597"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436737"
 ---
 # <a name="create-edit-or-delete-a-custom-user-view"></a>カスタム ユーザー ビューを作成、編集、削除する
 

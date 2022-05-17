@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6e2b52c9dbde60dfb554dd92c8a0cae2ba05ced
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: c1248c7192c9bd085938ae6436589a4445dd8ee8
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302290"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437963"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -46,7 +46,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 > [!NOTE]
 > PowerShell 用の Office 365 Advanced Threat Protection 推奨構成アナライザー (ORCA) モジュールは、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には、 **Get-ORCAReport** コマンドレットは、スパム対策、フィッシング詐欺対策、およびその他のメッセージの検疫設定の評価を生成します。 ORCA モジュールは 、次の場所で <https://www.powershellgallery.com/packages/ORCA/>ダウンロードできます。
 >
-> Microsoft 365組織では、迷惑メール フィルターを [自動フィルターなし] に設定Outlook、EOP からのスパム **フィルター** の判定で不要な競合 (正と負の両方) を防ぐことをお勧めします。 詳細については、次の記事を参照してください。
+> Microsoft 365組織では、迷惑メール フィルターを [自動フィルターなし] に設定Outlook、EOP からのスパム **フィルター** の判定で不要な競合 (正と負の両方) を防ぐことをお勧めします。 詳細については、次の資料を参照してください。
 >
 > - [Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)
 > - [Outlookの迷惑メール設定について](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
@@ -154,10 +154,10 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**差出人アドレス** <br/><br/> _CustomFromAddress_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**内部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージが **マルウェアとして検疫されたときに内部送信者に通知** するか、 **内部送信者からの未配信メッセージについて管理者に通知** するが選択されている場合にのみ使用されます。|
 |**件名** <br/><br/> _CustomInternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
-|**Message** <br/><br/> _CustomInternalBody_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
+|**メッセージ** <br/><br/> _CustomInternalBody_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**外部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージが **マルウェアとして検疫されたときに外部送信者に通知** するか **、外部送信者からの配信不能メッセージを管理者に通知** するが選択されている場合にのみ使用されます。|
 |**件名** <br/><br/> _CustomExternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
-|**Message** <br/><br/> _CustomExternalBody_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
+|**メッセージ** <br/><br/> _CustomExternalBody_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP フィッシング対策ポリシー設定
 
@@ -172,8 +172,8 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**アクション**|||||
 |**メッセージがスプーフィングとして検出された場合** <br/><br/> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <br/><br/> `MoveToJmf`|**メッセージを検疫する** <br/><br/> `Quarantine`|この設定は、スプーフィング インテリジェンス分析情報に示すように自動的にブロックされたス [プーフィング](learn-about-spoof-intelligence.md) された送信者、または [テナント許可/ブロック リスト](tenant-allow-block-list.md)で手動でブロックされた送信者に適用されます。 <br/><br/> **[検疫] を** 選択した場合、[**検疫ポリシーの適用**] ボックスを使用して、スプーフィングとして検疫されたメッセージに対してユーザーが許可する操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、スプーフィングとして検疫されたメッセージの履歴機能を定義することを意味します (DefaultFullAccessPolicy)。 <br/><br/> 管理者は、ユーザーに対してより制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**最初の連絡先安全性のヒントを表示する** <br/><br/> _EnableFirstContactSafetyTips_|未選択 <br/><br/> `$false`|未選択 <br/><br/> `$false`|未選択 <br/><br/> `$false`|詳細については、「[First contact 安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)」を参照してください。|
-|**スプーフィングの認証されていない送信者の表示 (?)** <br/><br/> _EnableUnauthenticatedSender_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|Outlookの送信者の写真に疑問符 (?) を追加して、偽装された送信者を識別します。 詳細については、「 [認証されていない送信者](set-up-anti-phishing-policies.md#unauthenticated-sender)」を参照してください。|
-|**"via" タグを表示する** <br/><br/> _EnableViaTag_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|DKIM 署名または **MAIL FROM** アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で chris@contoso.com) を追加します。 <br/><br/> 詳細については、「 [認証されていない送信者](set-up-anti-phishing-policies.md#unauthenticated-sender)」を参照してください。|
+|**スプーフィングの認証されていない送信者の表示 (?)** <br/><br/> _EnableUnauthenticatedSender_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|Outlookの送信者の写真に疑問符 (?) を追加して、偽装された送信者を識別します。 詳細については、「 [認証されていない送信者インジケーター](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators)」を参照してください。|
+|**"via" タグを表示する** <br/><br/> _EnableViaTag_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|DKIM 署名または **MAIL FROM** アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で chris@contoso.com) を追加します。 <br/><br/> 詳細については、「 [認証されていない送信者インジケーター](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators)」を参照してください。|
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender for Office 365セキュリティ
 
@@ -288,7 +288,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 |セキュリティ機能名|既定値|組み込みの保護|コメント|
 |---|:---:|:---:|---|
 |**次の URL をブロックする** <br/><br/> _ExcludedUrls_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|この設定に関する具体的な推奨事項はありません。 <br/><br/> 詳細については、[セーフ リンクの「次の URL をブロックする」の一覧を](safe-links.md#block-the-following-urls-list-for-safe-links)参照してください。
-|**Office 365 アプリで セーフ リンクを使用する** <br/><br/> _EnableSafeLinksForO365Clients_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|サポートされているOffice 365デスクトップアプリとモバイルアプリ (iOS および Android) でセーフリンクを使用します。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。|
+|**Office 365 アプリで セーフ リンクを使用する** <br/><br/> _EnableSafeLinksForO365Clients_|オン <br/><br/> `$true`|オン <br/><br/> `$true`|サポートされているOffice 365デスクトップおよびモバイル (iOSおよびAndroid) アプリで セーフ リンクを使用します。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。|
 |**ユーザーがOffice 365 アプリで保護されたリンクをクリックしたときに追跡しない** <br/><br/> _TrackClicks_|オン <br/><br/> `$false`|オフ <br/><br/> `$true`|この設定をオフにする (_TrackClicks_ を設定) `$true`すると、サポートされているOffice 365 アプリでユーザーのクリックが追跡されます。|
 |**ユーザーがOffice 365 アプリの元の URL をクリックできないようにする** <br/><br/> _AllowClickThrough_|オン <br/><br/> `$false`|オン <br/><br/> `$false`|この設定をオンにする (_AllowClickThrough_ を設定) `$false`すると、サポートされているOffice 365 アプリの元の URL へのクリックが防止されます。|
 
@@ -322,7 +322,7 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 |**通知**||||||
 |**ユーザーに通知する方法**|**既定の通知テキストを使用する**|**既定の通知テキストを使用する**|**既定の通知テキストを使用する**|**既定の通知テキストを使用する**|この設定に関する具体的な推奨事項はありません。 <br/><br/> [ **カスタム通知テキストを使用する** ] (_CustomNotificationText_) を選択して、使用するカスタマイズされた通知テキストを入力できます。 **自動ローカライズにMicrosoft 翻訳ツールを使用** する (_UseTranslatedNotificationText_) を選択して、カスタム通知テキストをユーザーの言語に翻訳することもできます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - **Exchangeメール フロー ルール (トランスポート ルールとも呼ばれます**) のベスト プラクティスをお探しですか? [Exchange Onlineでメール フロー ルールを構成するためのベスト プラクティスに](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)関するページを参照してください。
 

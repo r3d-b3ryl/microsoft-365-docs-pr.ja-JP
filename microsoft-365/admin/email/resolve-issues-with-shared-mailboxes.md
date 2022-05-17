@@ -23,19 +23,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを設定すると、エラーが発生することがあります。 共有メールボックスで問題が発生した場合は、次の解決策を試してください。
-ms.openlocfilehash: 2be12810e6651da5b062afbd0a3437913b9a4d60
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: cf121504b53951e0aaaf248d43d045cfa937f4ed
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60164874"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437109"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>共有メールボックスの問題を解決する
 
 共有メールボックスの作成時または使用時にエラー メッセージが表示される場合は、次の解決策を試してください。 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>共有メールボックスを作成するときのエラー
-<a name="bkmk_Fix"> </a>
 
 エラー メッセージが表示された場合、 **プロキシ アドレス "smtp:<共有メールボックス名\>" は、プロキシ アドレスまたは LegacyExchangeDN の ""\<name> によって既に使用されています。別のプロキシ アドレスを選択してください**。これは、共有メールボックスに既に使用されている名前を付けようとしていることを意味します。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 このようにするには、次の 2 つの方法があります。
 
@@ -58,7 +57,3 @@ ms.locfileid: "60164874"
 [共有メールボックスを構成する](configure-a-shared-mailbox.md) (記事)\
 [ユーザー メールボックスを共有メールボックスに変換する](convert-user-mailbox-to-shared-mailbox.md) (記事)\
 [共有メールボックスからライセンスを削除する](remove-license-from-shared-mailbox.md) (記事)
-
-
-    
-

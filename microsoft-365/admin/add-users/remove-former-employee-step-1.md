@@ -25,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 元従業員のログインをブロックし、Microsoft 365 サービスへのアクセスをブロックします。
-ms.openlocfilehash: abd6a6f47952b5af190b08f1ecae337840eaa312
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: グローバル管理者は、元従業員のログインをブロックし、Microsoft 365 サービスへのアクセスをブロックできます。
+ms.openlocfilehash: eec436a182f5e065f445167dea38fe99390ca105
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315961"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436649"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>手順 1 - 元従業員がログインできないようにし、Microsoft 365 サービスへのアクセスをブロックする
 
@@ -69,7 +69,7 @@ Microsoft 365 サブスクリプションの一部としてメールがある場
   
 1. Exchange管理センター>**受信者メールボックスに**\>移動 <a href="https://go.microsoft.com/fwlink/?linkid=2183135" target="_blank">します</a>。
 1. 一覧からユーザー メールボックスを選択し、*詳細ウィンドウ* (右側) で [**電子メール** アプリ] の [**電子メール アプリの設定の管理**] を選択します。 すべてのオプションのスライダーを **オフ** にします。**モバイル (Exchange ActiveSync)**、**Outlook on the web**、**Outlook デスクトップ (MAPI)**、**Exchange Web サービス**、**POP3**、**IMAP**。
-1. **[保存]** を選択します。
+1. [**保存**] を選択します。
 
 ## <a name="related-content"></a>関連コンテンツ
 

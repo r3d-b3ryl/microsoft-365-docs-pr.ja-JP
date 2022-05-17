@@ -27,14 +27,14 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: ドメイン名を購入してMicrosoft 365に追加することで、メール アドレスを tom@fourthcoffee.com などのわかりやすいメール アドレスに変更します。
-ms.openlocfilehash: 4630b3df4719611440e92801235fde20d7bd95f4
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a71e92b48e7091ae243b62ec594cd2be5ce52406
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316423"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437285"
 ---
-# <a name="change-your-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使うように電子メール アドレスを変更する
+# <a name="change-your-microsoft-365-email-address-to-use-your-custom-domain"></a>カスタム ドメインを使用するようにMicrosoft 365メール アドレスを変更する
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   

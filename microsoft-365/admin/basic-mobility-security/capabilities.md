@@ -18,13 +18,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid:
 - MET150
-description: 基本的なモビリティとセキュリティは、モバイル デバイスのセキュリティと管理に役立ちます。
-ms.openlocfilehash: b0e303af27d731cf3dba3af13019b3b993e52bfe
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: 基本的なモビリティとセキュリティは、組織Microsoft 365電子メールやドキュメントへのアクセスを制御するポリシーを使用してモバイル デバイスをセキュリティで保護および管理するのに役立ちます。
+ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64937765"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435857"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
@@ -40,7 +40,7 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 - Android (Samsung Knox を含む)<sup>1</sup>
 - Windows <sup>2、3</sup>
 
-<sup>1</sup>2020 年 6 月以降、9 より後の Android バージョンでは、Samsung Knox デバイスを除き、パスワード設定を管理できません。
+<sup>1</sup>2020 年 6 月以降、Android バージョン 9 より前のバージョンでは、Samsung Knox デバイスを除き、パスワード設定を管理できません。
 
 <sup>2</sup>Windows 8.1 RT デバイスのアクセス制御は、Exchange ActiveSyncに制限されます。
 
@@ -63,7 +63,7 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 > [!NOTE]
 >
 > - iOS 10.0 以降のバージョンのサポートには、iPhone デバイスとiPad デバイスが含まれます。
-> - BlackBerry OS デバイスの管理は、Basic Security and Mobility ではサポートされていません。 BlackBerry の BlackBerry Business Cloud Services (BBCS) を使用して、BlackBerry OS デバイスを管理します。 Android OS を実行している Blackberry デバイスは、標準の Android デバイスとしてサポートされています
+> - BlackBerry OS デバイスの管理は、Basic Security and Mobility ではサポートされていません。 BlackBerry の BlackBerry Business Cloud Services (BBCS) を使用して、BlackBerry OS デバイスを管理します。 Android OS を実行している Blackberry デバイスは、標準のAndroid デバイスとしてサポートされています
 > - モバイル ブラウザーを使用してMicrosoft 365 SharePoint サイト、Office Online のドキュメント、またはOutlook Web Appの電子メールにアクセスする場合、ユーザーは登録を求められず、ポリシー違反でブロックまたは報告されることはありません。
 
 次の図は、新しいデバイスを持つユーザーが、Basic Mobility and Security によるアクセス制御をサポートするアプリにサインインした場合の動作を示しています。 ユーザーは、デバイスを登録するまでアプリ内のMicrosoft 365リソースへのアクセスをブロックされます。
@@ -98,8 +98,8 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
 |パスワードを要求|はい|はい|はい|
-|シンプルなパスワードを禁止|はい|いいえ|いいえ|
-|英数字のパスワードを要求|はい|いいえ|いいえ|
+|シンプルなパスワードを禁止|はい|不要|不要|
+|英数字のパスワードを要求|はい|不要|不要|
 |パスワードの最小文字数|はい|はい|はい|
 |デバイスがワイプされるまでのサインイン失敗回数|はい|はい|はい|
 |デバイスがロックされるまでのアイドル時間 (分)|はい|はい|はい|
@@ -110,7 +110,7 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|デバイスでデータ暗号化を要求<sup>する1</sup>|いいえ|はい|はい|
+|デバイスでデータ暗号化を要求<sup>する1</sup>|不要|はい|はい|
 
 <sup>1</sup>Samsung Knox では、ストレージ カードで暗号化を要求することもできます。
 
@@ -126,16 +126,16 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|電子メール プロファイルが管理されている|はい|いいえ|いいえ|
+|電子メール プロファイルが管理されている|はい|不要|不要|
 
 ## <a name="cloud-settings"></a>クラウドの設定
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|暗号化されたバックアップを要求|はい|いいえ|いいえ|
-|クラウド バックアップの禁止|はい|いいえ|いいえ|
-|ドキュメントの同期の禁止|はい|いいえ|いいえ|
-|写真の同期の禁止|はい|いいえ|いいえ|
+|暗号化されたバックアップを要求|はい|不要|不要|
+|クラウド バックアップの禁止|はい|不要|不要|
+|ドキュメントの同期の禁止|はい|不要|不要|
+|写真の同期の禁止|はい|不要|不要|
 |Google のバックアップを許可する|該当なし|いいえ|はい|
 |Google アカウントの自動同期を許可する|該当なし|いいえ|はい|
 
@@ -143,23 +143,23 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|画面キャプチャの禁止|はい|いいえ|はい|
-|デバイスからの診断データ送信の禁止|はい|いいえ|はい|
+|画面キャプチャの禁止|はい|不要|はい|
+|デバイスからの診断データ送信の禁止|はい|不要|はい|
 
 ## <a name="application-settings"></a>アプリケーションの設定
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|デバイスでのビデオ会議をブロックする|はい|いいえ|いいえ|
-|アプリケーション ストアへのアクセスをブロックする|はい|いいえ|はい|
-|アプリケーション ストアへアクセスする際にパスワードを要求する|いいえ|はい|はい|
+|デバイスでのビデオ会議をブロックする|はい|不要|不要|
+|アプリケーション ストアへのアクセスをブロックする|はい|不要|はい|
+|アプリケーション ストアへアクセスする際にパスワードを要求する|不要|はい|はい|
 
 ## <a name="device-capabilities-settings"></a>デバイスの機能の設定
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|リムーバブル記憶域との接続の禁止|はい|はい|いいえ|
-|Bluetooth 接続の禁止|はい|はい|いいえ|
+|リムーバブル記憶域との接続の禁止|はい|はい|不要|
+|Bluetooth 接続の禁止|はい|はい|不要|
 
 ## <a name="additional-settings"></a>その他の設定
 
@@ -168,22 +168,22 @@ Security & Compliance Center PowerShell コマンドレットを使用して、�
 |設定名|iOS|Android|
 |---|---|---|
 |CameraEnabled|はい|はい|
-|RegionRatings|はい|いいえ|
-|MoviesRatings|はい|いいえ|
-|TVShowsRating|はい|いいえ|
-|AppsRatings|はい|いいえ|
-|AllowVoiceDialing|はい|いいえ|
-|AllowVoiceAssistant|はい|いいえ|
-|AllowAssistantWhileLocked|はい|いいえ|
-|AllowPassbookWhileLocked|はい|いいえ|
-|MaxPasswordGracePeriod|はい|いいえ|
-|PasswordQuality|いいえ|はい|
-|SystemSecurityTLS|はい|いいえ|
-|WLANEnabled|いいえ|いいえ|
+|RegionRatings|はい|不要|
+|MoviesRatings|はい|不要|
+|TVShowsRating|はい|不要|
+|AppsRatings|はい|不要|
+|AllowVoiceDialing|はい|不要|
+|AllowVoiceAssistant|はい|不要|
+|AllowAssistantWhileLocked|はい|不要|
+|AllowPassbookWhileLocked|はい|不要|
+|MaxPasswordGracePeriod|はい|不要|
+|PasswordQuality|不要|はい|
+|SystemSecurityTLS|はい|不要|
+|WLANEnabled|不要|不要|
 
 ## <a name="settings-supported-by-windows"></a>Windowsでサポートされている設定
 
-Windows 10デバイスは、モバイル デバイスとして登録することで管理できます。 該当するポリシーを展開した後、Windows 10 デバイスを持つユーザーは、組み込みの電子メール アプリを初めて使用してMicrosoft 365メールにアクセスする (プレミアム サブスクリプションAzure AD必要) 場合、Basic Mobility と Security に登録する必要があります。
+Windows 10デバイスは、モバイル デバイスとして登録することで管理できます。 該当するポリシーをデプロイした後、Windows 10 デバイスを持つユーザーは、組み込みの電子メール アプリを初めて使用してMicrosoft 365メールにアクセスする (Azure AD Premium サブスクリプションが必要) 場合、Basic Mobility and Security に登録する必要があります。
 
 モバイル デバイスとして登録されているWindows 10 デバイスでは、次の設定がサポートされます。 これらの設定では、ユーザーがMicrosoft 365リソースにアクセスすることをブロックすることはありません。
 
@@ -230,7 +230,7 @@ PowerShell コマンドレットを使用して、次の追加のポリシー設
 
 ## <a name="remotely-wipe-a-mobile-device"></a>モバイル デバイスをリモートからワイプする
 
-デバイスが紛失または盗難にあった場合は、機密性の高い組織データを削除し、**Microsoft Purview コンプライアンス ポータル** > **データ損失防止** > **デバイス管理** からのワイプを実行して、Microsoft 365組織のリソースへのアクセスを防ぐことができます。 個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
+デバイスが紛失または盗難にあった場合は、機密組織データを削除し、Microsoft Purview コンプライアンス ポータル **Data 損失防止** > **デバイス管理** からのワイプを実行して **、Microsoft 365** 組織のリソースへのアクセスを > 防ぐことができます。 個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
 
 詳細については、「 [基本的なモビリティとセキュリティでモバイル デバイスをワイプする」を参照してください](wipe-mobile-device.md)。
 

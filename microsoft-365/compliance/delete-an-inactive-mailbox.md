@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365非アクティブなメールボックスの内容を保持する必要がなくなった場合は、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: 1e518bda3d11ff17c4ce5aa1ebb6997f8bc09c4d
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363135"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438453"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -38,7 +38,7 @@ ms.locfileid: "65363135"
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する前に
 
-- 非アクティブなメールボックスから訴訟ホールドを削除するには、Exchange Online PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+- 非アクティブなメールボックスから保留を削除するには、powerShell Exchange Onlineを使用する必要があります。 これらの手順では、Exchange管理センター (EAC) またはMicrosoft Purview コンプライアンス ポータルを使用することはできません。 Exchange Online PowerShell を使用する詳細な手順については、「PowerShell [をExchange OnlineするConnect」を](/powershell/exchange/connect-to-exchange-online-powershell)参照してください。
 
 - 非アクティブなメールボックスの内容は、ホールドを解除して、非アクティブなメールボックスを削除する前に別のメールボックスにコピーできます。 詳細については、「[Office 365で非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md)」を参照してください。
 
@@ -50,7 +50,7 @@ ms.locfileid: "65363135"
 
 前述のように、訴訟ホールド、In-Placeホールド、またはアイテム保持ポリシーは非アクティブなメールボックスに配置される可能性があります。 最初の手順として、非アクティブなメールボックスのホールドを識別します。
   
-組織内のすべての非アクティブなメールボックスの保留リストの情報を表示するために、次のコマンドを実行します。
+[PowerShell をExchange Online Connect](/powershell/exchange/connect-to-exchange-online-powershell)、次のコマンドを実行して、組織内のすべての非アクティブなメールボックスの保留情報を表示します。
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -83,7 +83,7 @@ InPlaceHolds          : {c0ba3ce811b6432a8751430937152491, mbxba6f4ba25b62490aaa
   
 ### <a name="remove-a-litigation-hold"></a>訴訟ホールドを削除する
 
-前述のように、非アクティブなメールボックスから訴訟ホールドを削除するには、Windows PowerShell を使用する必要があります。EAC は使用できません。次のコマンドを実行して、訴訟ホールドを削除します。
+次の PowerShell コマンドを実行して訴訟ホールドを削除します。
   
 ```powershell
 Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -LitigationHoldEnabled $false
@@ -102,7 +102,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
 
 #### <a name="remove-an-inactive-mailbox-from-an-organization-wide-retention-policy"></a>組織全体のアイテム保持ポリシーから非アクティブなメールボックスを削除する
 
-powerShell Exchange Online次のコマンドを実行して、組織全体のアイテム保持ポリシーから非アクティブなメールボックスを除外します。
+次の PowerShell コマンドを実行して、組織全体のアイテム保持ポリシーから非アクティブなメールボックスを除外します。
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention policy GUID without prefix or suffix>
@@ -110,7 +110,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromOrgHolds <retention polic
 
 非アクティブなメールボックスに適用される組織全体のアイテム保持ポリシーを特定し、アイテム保持ポリシーの GUID を取得する方法の詳細については、「 [メールボックスに配置された保留の種類を識別する方法」の](identify-a-hold-on-an-exchange-online-mailbox.md#get-organizationconfig)「Get-OrganizationConfig」セクションを参照してください。
 
-または、次のコマンドを実行して、組織全体のすべてのポリシーから非アクティブなメールボックスを削除することもできます。
+または、次の PowerShell コマンドを実行して、組織全体のすべてのポリシーから非アクティブなメールボックスを削除することもできます。
 
 ```powershell
 Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
@@ -118,13 +118,13 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>特定の場所のアイテム保持ポリシーから非アクティブなメールボックスを削除する
 
-[Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) で次のコマンドを実行して、非アクティブなメールボックスを明示的なアイテム保持ポリシーから削除します。
+[Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) を使用して、明示的なアイテム保持ポリシーから非アクティブなメールボックスを削除します。
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>
 ```
 
-非アクティブなメールボックスに適用されている特定の場所の保持ポリシーを特定し、アイテム保持ポリシーの GUID を取得する方法の詳細については、「メールボックス [に配置された保留の種類を識別する方法」の](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox)「Get-Mailbox」セクションを参照してください。
+非アクティブなメールボックスに適用される特定の場所の保持ポリシーを特定し、アイテム保持ポリシーの GUID を取得する方法の詳細については、「メールボックス [に配置された保留の種類を識別する方法」の](identify-a-hold-on-an-exchange-online-mailbox.md#get-mailbox)「Get-Mailbox」セクションを参照してください。
 
 ### <a name="remove-in-place-holds"></a>インプレース ホールドを削除する
 
@@ -206,7 +206,7 @@ Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or
    Get-MailboxSearch $InPlaceHold.Name | FL Sources
    ```
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - **非アクティブなメールボックスは、回復可能な削除によって削除されたメールボックスの一種です。** Exchange Onlineで、回復可能な削除によって削除されたメールボックスは、メールボックスが削除されてはいるものの、特定の保持期間内であれば回復することができます。 論理的に削除されたメールボックスが保留になっていない場合、メールボックスは 30 日以内に回復可能です。 非アクティブなメールボックス (削除される前の保留中のメールボックス) は、保留が削除されるまで、保留状態で論理的に削除されたままになります。 ホールドが非アクティブなメールボックスから削除されると、メールボックスは非アクティブ状態にならなくなります。 代わりに、論理的に削除され、保持が削除され、その間に回復可能になった日から 183 日間、Exchange Onlineのままになります。 183 日後、論理的に削除されたメールボックスは完全な削除としてマークされ、回復できません。
 

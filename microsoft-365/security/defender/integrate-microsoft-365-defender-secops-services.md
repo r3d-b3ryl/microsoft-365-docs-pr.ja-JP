@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 45497f74db9c68959d4b23e013c6ea483e86378a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f6cab6be7d41f1d71a6ccf69fbedfa616694ee78
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323963"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438490"
 ---
 # <a name="step-3-plan-for-microsoft-365-defender-integration-with-your-soc-catalog-of-services"></a>手順 3. MICROSOFT 365 DEFENDERサービスの SOC カタログとの統合を計画する
 
@@ -73,7 +73,7 @@ Microsoft 365 Defenderの機能を統合するには、SOC サービスを調整
 
 - [Microsoft Defender for Endpoint とは](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 - [Microsoft Defender for Identity とは?](/defender-for-identity/what-is)
-- [Defender for Office 365 とは](/office-365-security/defender-for-office-365)
+- [Defender for Office 365 とは](/microsoft-365/security/defender/microsoft-365-defender)
 - [Microsoft Defender for Cloud Apps とは](/cloud-app-security/what-is-cloud-app-security)
 
 ## <a name="next-step"></a>次の手順

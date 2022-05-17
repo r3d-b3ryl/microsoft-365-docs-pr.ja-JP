@@ -19,12 +19,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 6f916a77-301c-4be2-b407-6cec4d80df76
 description: このテスト ラボ ガイドを使用して、エンタープライズ向けのMicrosoft 365をテストするための軽量のテスト環境を作成します。
-ms.openlocfilehash: fa83bb7681752b40c924af9b8d085447cd7fe074
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da4a38ad951d30a536e653336571e7bad04a889
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100531"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65435305"
 ---
 # <a name="the-lightweight-base-configuration"></a>軽量な基本構成
 
@@ -56,22 +56,22 @@ ms.locfileid: "65100531"
 Microsoft 365 E5試用版サブスクリプションから始めてから、Microsoft 365 E5 サブスクリプションを追加します。
 
 >[!NOTE]
->テスト環境に、現在持っている有料サブスクリプションとは別のAzure AD テナントが存在するように、Office 365の試用版サブスクリプションを作成することをお勧めします。 この分離は、運用サブスクリプションに影響を与えることなく、テスト テナント内のユーザーとグループを追加および削除できることを意味します。
+>テスト環境に、現在持っている有料サブスクリプションとは別の Azure AD テナントが存在するように、Office 365の試用版サブスクリプションを作成することをお勧めします。 この分離は、運用サブスクリプションに影響を与えることなく、テスト テナント内のユーザーとグループを追加および削除できることを意味します。
 
 Microsoft 365 E5 試用版サブスクリプションを開始するには、最初に、架空の会社名と新しい Microsoft アカウントが必要になります。
   
 1. この会社名には、会社名 Contoso のバリエーションを使用するようお勧めします (必須ではありません)。Contoso は、Microsoft のサンプル コンテンツで使用される架空の会社名です。ここに架空の会社名を記録してください: ![直線](../media/Common-Images/TableLine.png)
-    
-2. 新しい Microsoft アカウントにサインアップするには、[https://outlook.com](https://outlook.com) に移動して、新しい電子メール アカウントとアドレスでアカウントを作成します。このアカウントを使用して、Office 365 にサインアップします。
-    
+
+2. 新しい Microsoft アカウントにサインアップするには、新しい電子メール アカウントとアドレスを使用してアカウントにアクセス [https://outlook.com](https://outlook.com) して作成します。 このアカウントを使用して、Office 365にサインアップします。
+
     - ここに新しいアカウントの姓名を記録してください: ![直線](../media/Common-Images/TableLine.png)
-    
+
     - 新しいメール アカウント アドレスをここに記録します。 ![直線](../media/Common-Images/TableLine.png)@outlook.com
-    
+
 ### <a name="sign-up-for-an-office-365-e5-trial-subscription"></a>Office 365 E5 試用版サブスクリプションにサインアップする
 
 1. ブラウザーで 、 [https://aka.ms/e5trial](https://aka.ms/e5trial).
-    
+
 2. [Office 365 E5 **選択していただきありがとうございます**] ページの手順 1 で、新しいメール アカウント のアドレスを入力します。
 3. 証跡サブスクリプション プロセスの手順 2 で、要求された情報を入力し、検証を実行します。
 4. 手順 3 で、組織名と、サブスクリプションのグローバル管理者となるアカウント名を入力します。
@@ -83,10 +83,10 @@ Microsoft 365 E5 試用版サブスクリプションを開始するには、最
 8. Office 365 E5セットアップで、**電子メールとサインインに組織の onmicrosoft.com *を* 使用して続行** を選択し、終了を選択 **して後で続行** します。
 
 Microsoft 365 管理センターが表示されます。
-    
+
 ## <a name="phase-2-configure-your-office-365-trial-subscription"></a>フェーズ 2: Office 365 試用版サブスクリプションを構成する
 
-このフェーズでは、サブスクリプションを構成してユーザーを追加し、Office 365 E5 ライセンスを割り当てます。
+このフェーズでは、他のユーザーとサブスクリプションを構成し、それらをライセンスOffice 365 E5割り当てます。
   
 コンピューターから Azure Active Directory PowerShell for Graph モジュールを使用してサブスクリプションに接続するには、Connectの手順[に従って PowerShell をMicrosoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)します。
     
@@ -113,6 +113,7 @@ for($i=2;$i -le 4; $i++) {
     Set-AzureADUserLicense -ObjectId $userObjectID -AssignedLicenses $LicensesToAssign
 }
 ```
+
 > [!NOTE]
 > ここで共通のパスワードを使用するのは、自動化およびテスト環境の構成を容易にするためです。 運用環境のサブスクリプションは避けるように強くお勧めします。 
 
@@ -121,29 +122,29 @@ for($i=2;$i -le 4; $i++) {
 これらの値をまだ記録していない場合は、次のように記録します。
   
 - グローバル管理者名: ![直線](../media/Common-Images/TableLine.png).onmicrosoft.com (フェーズ 1 のステップ 6 から)
-    
+
     このアカウントのパスワードも安全な場所に記録してください。
-    
+
 - 試用版サブスクリプションの組織名: ![直線](../media/Common-Images/TableLine.png) (フェーズ 1 のステップ 4 から)
-    
-- User 2、User 3、User 4、および User 5 のアカウントを一覧表示するには、次に示すコマンドを Windows PowerShell 用 Microsoft Azure Active Directory モジュールのプロンプトから実行します。
-    
+
+- ユーザー 2、ユーザー 3、ユーザー 4、およびユーザー 5 のアカウントを一覧表示するには、Azure Active Directory モジュールから次のコマンドを実行してWindows PowerShellプロンプトを表示します。
+
   ```powershell
   Get-AzureADUser | Sort UserPrincipalName | Select UserPrincipalName
   ```
 
     ここにアカウント名を記録してください:
-    
+
   - ユーザー 2 アカウント名: user2@![直線](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - ユーザー 3 アカウント名: user3@![直線](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - ユーザー 4 アカウント名: user4@![直線](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
   - ユーザー 5 アカウント名: user5@![直線](../media/Common-Images/TableLine.png).onmicrosoft.com
-    
+
     これらのアカウントの共通パスワードも安全な場所に記録してください。
-   
+
 ### <a name="using-an-office-365-test-environment"></a>Office 365 テスト環境を使用する
 
 Office 365テスト環境のみが必要な場合は、この記事の残りの部分を読む必要はありません。
@@ -198,15 +199,21 @@ Microsoft 365 E5を追加する結果の構成は次のようになります。
   
 ### <a name="physical-computer"></a>物理コンピューター
 
-パーソナル コンピューターで、Windows 10 Enterpriseをインストールします。 Windows 10 Enterprise試用版[は、ここで](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)ダウンロードできます。
-  
+パーソナル コンピューターで、Windows 10 Enterpriseをインストールします。 Windows 10 Enterpriseの評価版をダウンロードできます。
+
+> [!NOTE]
+> Microsoft Evaluation Center は一時的に使用できません。 このダウンロードにアクセスするには、「[Windowsの試用版とキットへのアクセス (Eval Center の回避策)」を](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125)参照してください。<!-- 6049663 -->
+
 ### <a name="virtual-machine"></a>仮想マシン
 
-任意のハイパーバイザーを使用して仮想マシンを作成し、その上にWindows 10 Enterpriseをインストールします。 Windows 10 Enterprise試用版[は、ここで](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)ダウンロードできます。
-  
+任意のハイパーバイザーを使用して仮想マシンを作成し、その上にWindows 10 Enterpriseをインストールします。 Windows 10 Enterpriseの評価版をダウンロードできます。
+
+> [!NOTE]
+> Microsoft Evaluation Center は一時的に使用できません。 このダウンロードにアクセスするには、「[Windowsの試用版とキットへのアクセス (Eval Center の回避策)」を](https://techcommunity.microsoft.com/t5/windows-11/accessing-trials-and-kits-for-windows-eval-center-workaround/m-p/3361125)参照してください。<!-- 6049663 -->
+
 ### <a name="virtual-machine-in-azure"></a>Azure での仮想マシン
 
-Microsoft Azure で Windows 10 の仮想マシンを作成するには、***Visual Studio ベースのサブスクリプションが必要*** です。このサブスクリプションにより、Windows 10 Enterprise のイメージにアクセスできます。試用版や有料のサブスクリプションなど、その他の種類の Azure サブスクリプションでは、このイメージにアクセスできません。最新情報については、「[Azure で Windows クライアントを開発/テスト シナリオに使用する](/azure/virtual-machines/windows/client-images)」を参照してください。
+Microsoft AzureでWindows 10仮想マシンを作成するには、Windows 10 EnterpriseのイメージにアクセスできるVisual Studio ***ベースのサブスクリプションが必要*** です。 試用版サブスクリプションや有料サブスクリプションなど、他の種類の Azure サブスクリプションでは、このイメージにアクセスできません。 最新の情報については、「[開発/テストのシナリオで Azure でクライアントWindows使用する」を](/azure/virtual-machines/windows/client-images)参照してください。
   
 > [!NOTE]
 > 次のコマンド セットは、Azure PowerShell の最新版を使用します。 「[Azure PowerShell の概要](/powershell/azureps-cmdlets-docs/)」を参照してください。 これらのコマンド セットは、WIN10 という名前のWindows 10 Enterprise仮想マシンとその必要なすべてのインフラストラクチャ (リソース グループ、ストレージ アカウント、仮想ネットワークなど) を構築します。 Azure インフラストラクチャ サービスに既に精通している場合は、現在デプロイされているインフラストラクチャに合わせてこれらの手順を調整します。
@@ -246,7 +253,7 @@ $locName="<location name, such as West US>"
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
-次に、次のコマンドを使用して、新しい仮想ネットワークと WIN10 仮想マシンを作成します。 ダイアログ ボックスが表示されたら、WIN10 の名前とローカル管理者アカウントのパスワードを指定し、これらを安全な場所に保存します。
+次に、次のコマンドを使用して、新しい仮想ネットワークと WIN10 仮想マシンを作成します。 メッセージが表示されたら、WIN10 のローカル管理者アカウントの名前とパスワードを入力し、この情報を安全な場所に格納します。
   
 ```powershell
 $corpnetSubnet=New-AzVirtualNetworkSubnetConfig -Name Corpnet -AddressPrefix 10.0.0.0/24
@@ -278,47 +285,46 @@ Windows 10 Enterprise の物理マシンまたは仮想マシンの作成後、�
 次に、WIN10 コンピューターを Microsoft 365 E5 サブスクリプションの Azure AD テナントに参加させます。
   
 1. WIN10 コンピューターのデスクトップで、[職場 **または学校の> Connectにアクセス>アカウント> 設定 >開始]** を選択します。
-    
+
 2. [**職場または学校アカウントのセットアップ**] ダイアログ ボックスで、[**このデバイスをAzure Active Directoryに参加** する] を選択します。
-    
+
 3. **職場または学校アカウント** で、Microsoft 365 E5 サブスクリプションのグローバル管理者アカウント名を入力し、[**次へ**] を選択します。
-    
+
 4. [ **パスワードの入力**] で、グローバル管理者アカウントのパスワードを入力し、[ **サインイン**] を選択します。
-    
-5. これが組織であることを確認するように求められたら、[ **参加**] を選択し、[完了] を選択 **します**。
-    
+
+5. この組織が自分の組織であることを確認するように求められたら、[ **参加**] を選択し、[ **完了**] を選択します。
+
 6. [設定] ウィンドウを閉じます。
-    
+
 次に、WIN10 コンピューターにMicrosoft 365 Apps for enterpriseをインストールします。
   
 1. Microsoft Edge ブラウザーを開き、グローバル管理者アカウントの資格情報を[使用してMicrosoft 365 管理センター](https://admin.microsoft.com)にサインインします。
-    
+
 2. **[Microsoft Office ホーム**] タブで、[**Officeのインストール**] を選択します。
-    
+
 3. 操作を求められたら、[**実行**] を選択し、[**ユーザー アカウント制御**] **で [はい**] を選択します。
-    
+
 4. Office のインストールが完了するまで待ちます。 [ **完了**] が表示されたら、[ **閉じる** ] を 2 回選択します。
-    
+
 結果の環境は次のようになります。
 
 ![Microsoft 3656 Enterpriseテスト環境のフェーズ 5。](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
 
-これには、以下を備えた WIN10 コンピューターが含まれます。
+この環境には、次を含む WIN10 コンピューターが含まれます。
 
 - Microsoft 365 E5 サブスクリプションの Azure AD テナントに参加している。
 - Microsoft Intune (EMS) で Azure AD デバイスとして登録されている。
 - Microsoft 365 Apps for enterpriseインストールされています。
   
-[これで、エンタープライズ向けのMicrosoft 365](https://www.microsoft.com/microsoft-365/enterprise)の追加機能を試す準備ができました。
+[これで、エンタープライズ向けのMicrosoft 365](https://www.microsoft.com/microsoft-365/enterprise)のより多くの機能を試す準備が整いました。
   
 ## <a name="next-steps"></a>次の手順
 
-こうした追加のテスト ラボ ガイドについて説明します。
+テスト ラボ ガイドの他のセットを確認します。
   
 - [ID](m365-enterprise-test-lab-guides.md#identity)
 - [モバイル デバイス管理](m365-enterprise-test-lab-guides.md#mobile-device-management)
 - [情報保護](m365-enterprise-test-lab-guides.md#information-protection)
-   
 
 ## <a name="see-also"></a>関連項目
 

@@ -19,13 +19,13 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: テンプレートを作成して使用すると、複数のユーザーを追加するときに時間を節約し、設定を標準化できます。
-ms.openlocfilehash: cacb3fc6ef2a145cbfe4c4131b2e5e38eca2c257
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: テンプレートを作成して使用すると、Microsoft 365 管理センターに複数のユーザーを追加するときに、時間を節約し、設定を標準化できます。
+ms.openlocfilehash: 0f0d737bcf600acb4084c5e2b85e5595c6387fee
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60161848"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65436993"
 ---
 # <a name="create-and-use-a-template-to-add-users"></a>テンプレートを作成して使用し、ユーザーを追加する
 
@@ -43,7 +43,7 @@ ms.locfileid: "60161848"
 - ライセンスの場所
 - ライセンスの選択
 - アプリケーションの選択肢
-- 役割
+- ロール
 - **ジョブ プロファイル**、**部署**、**Office**、**Office電話**、**住所** など、ほとんどのプロファイル情報 
 
 次の情報はユーザー固有であり、テンプレートには保存されません。
@@ -87,7 +87,7 @@ ms.locfileid: "60161848"
     - テンプレート名の右側にある 3 つのドットを選択し、[削除] を選択 **します**。
     - テンプレート名を選択します。 画面の右側にテンプレートの詳細が表示されたら、[ **テンプレートの削除**] を選択します。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 [ユーザーを追加して同時にライセンスを割り当てる](add-users.md)
 

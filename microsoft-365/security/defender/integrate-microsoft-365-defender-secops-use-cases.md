@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ae77d89a568f79e3369f9ded4cfb0a96aa0255d0
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 4c65943ac28315f54e6c2f4cc8b2314e810b291f
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782547"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438079"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  ユース ケースの開発とテスト
 
@@ -102,7 +102,7 @@ Runbook とプレイブックの作成プロセスを容易にするには、ユ
 
 |SOC チーム|要件|要件を満たすユーザー|要件を満たすプロセス|関連するテクノロジ|識別されたギャップ|ユース ケース変更ログ|除外 (Y/N)|
 |---|---|---|---|---|---|---|---|
-|SOC 監視|承認済みネットワークに接続されているすべての資産が識別され、分類されます|SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など。|リスクに基づいて資産のカテゴリと属性を検出して一覧表示する一元化された資産管理システム。|ServiceNow またはその他の資産。 <br><br>[デバイス インベントリのMicrosoft 365](/security/defender-endpoint/device-discovery)|検出された資産の割合は 70% のみです。 既知の資産に対してのみ有効な修復追跡Microsoft 365 Defender|Microsoft 365 Defenderに 100% のカバレッジを確保するための成熟した資産ライフサイクル管理サービス|N|
+|SOC 監視|承認済みネットワークに接続されているすべての資産が識別され、分類されます|SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など。|リスクに基づいて資産のカテゴリと属性を検出して一覧表示する一元化された資産管理システム。|ServiceNow またはその他の資産。 <br><br>[デバイス インベントリのMicrosoft 365](/microsoft-365/security/defender-endpoint/device-discovery)|検出された資産の割合は 70% のみです。 既知の資産に対してのみ有効な修復追跡Microsoft 365 Defender|Microsoft 365 Defenderに 100% のカバレッジを確保するための成熟した資産ライフサイクル管理サービス|N|
 |エンジニアリング & SecOps Teams|資産の高い影響と重大な脆弱性は、ポリシーに従って修復されます|SecOps エンジニア、SOC アナリスト: 脆弱性&コンプライアンス、セキュリティ エンジニアリング|高リスクおよび重大な脆弱性を分類するための定義済みプロセス|[脅威と脆弱性の管理ダッシュボード](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Defender for Endpoint は、Microsoft 推奨アクティビティの修復計画または実装なしで、影響が大きく、アラートが高いデバイスを特定しました|ポリシーごとに 30 日以内に修復アクティビティが必要な場合に、資産所有者に通知するワークフローを追加します。チケット発行システムを実装して、修復手順を資産所有者に通知します。|N|
 |監視Teams|脅威と脆弱性の状態は、会社のイントラネット ポータルを介して報告されます|階層 2 SOC アナリスト|資産の修復の進行状況を示すMicrosoft 365 Defenderから自動生成されたレポート|[セキュリティ & コンプライアンス センターのアラート](/microsoft-365/security/office-365-security/alerts) <br><br> セキュア スコアの監視|資産の脅威と脆弱性の状態に関して、ビューまたはダッシュボード レポートが資産所有者に伝達されません。|組織に対するリスクの高い重大な資産の脆弱性修復の状態を設定する自動化スクリプトを作成します。|N|
 

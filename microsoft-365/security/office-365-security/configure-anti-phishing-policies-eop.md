@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online メールボックスの有無にかかわらず、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f199cb3dbaddc47416c24a82b3066a2631641706
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 08523e98577f208858fb615911ef24aacf7bedc6
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847401"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438907"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -109,7 +109,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
-   同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) を使用します。
+   同じ条件の複数の値は、OR ロジックを使用します (たとえば _\<recipient1\>_ または _\<recipient2\>_)。異なる条件では AND ロジックを使用します (たとえば _\<recipient1\>_ および _\<member of group 1\>_)。
 
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
@@ -138,7 +138,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
 
      設定を有効にするには、チェック ボックスをオンにします。 オフにするには、チェック ボックスをオフにします。
 
-     <sup>\*</sup> この設定は、前のページで [ **スプーフィング インテリジェンスを有効にする]** を選択した場合にのみ使用できます。 詳細については、「 [認証されていない送信者](set-up-anti-phishing-policies.md#unauthenticated-sender)」を参照してください。
+     <sup>\*</sup> この設定は、前のページで [ **スプーフィング インテリジェンスを有効にする]** を選択した場合にのみ使用できます。 詳細については、「 [認証されていない送信者インジケーター](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators)」を参照してください。
 
    完了したら、**[次へ]** をクリックします。
 

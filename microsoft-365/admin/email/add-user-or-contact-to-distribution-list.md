@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
 description: 従業員、パートナー、ベンダーなどのMicrosoft 365ユーザーまたは連絡先を電子メール配布グループに追加する方法について説明します。
-ms.openlocfilehash: 1f70f56b26b35bae3509a9189ceb8b5fc222dfa5
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e4054d73707d77297ae4f5e9f6f2fb406a829d55
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370046"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65437219"
 ---
-# <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
+# <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Microsoft 365配布グループにユーザーまたは連絡先を追加する
 
 組織の管理者として、いずれかのユーザーまたは連絡先を配布グループに追加する必要がある場合があります ([「Microsoft 365で配布グループを作成](../setup/create-distribution-lists.md)する」を参照してください。 たとえば、従業員、外部パートナー、またはベンダーを電子メール配布グループに追加できます。
   
