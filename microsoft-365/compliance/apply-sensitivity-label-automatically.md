@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 69a36789e4143e3e8852976eb5e41c12ab6872f8
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: b1a364fc6053483a05d0ea055000b863b31a94cf
+ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287224"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "65438029"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -228,6 +228,23 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 - Outlook で推奨ラベル付けをサポートするには、最初に[詳細なポリシー設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook)を構成する必要があります。
 
 - ドキュメントやメール内の本文、およびヘッダーとフッターに含まれる機密情報が検出されますが、件名やメールの添付ファイルのものは検知されません。
+
+### <a name="convert-your-label-settings-into-an-auto-labeling-policy"></a>ラベル設定を自動ラベル付けポリシーに変換する
+
+> [!NOTE]
+> このオプションは、段階的にロールアウトされています。
+
+構成された条件の機密情報の種類がラベルに含まれている場合、ラベルの作成または編集プロセスの最後に、同じ自動ラベル付け設定に基づく自動ラベル付けポリシーを自動的に作成するオプションが表示されます。
+
+自動ラベル付けポリシーはトレーニング可能な分類子をサポートしていないためです。
+
+- ラベル条件にトレーニング可能な分類子のみが含まれている場合、自動ラベル付けポリシーを自動的に作成するオプションは表示されません。
+
+- ラベル条件にトレーニング可能な分類子と機密情報の種類が含まれている場合、機密情報の種類のみに対して自動ラベル付けポリシーが作成されます。 
+
+自動ラベル付けポリシーは、ポリシーを最初から作成する場合に手動で選択する必要がある値を自動入力することによって自動的に作成されますが、保存前に値を表示および編集できます。
+
+既定では、SharePoint、OneDrive、Exchange のすべての場所が自動ラベル ポリシーに含まれ、ポリシーが保存されると [シミュレーション モード](#learn-about-simulation-mode) で実行されます。 [SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md) をオンにしたかどうかは確認できません。有効にすることは、SharePoint および OneDrive のコンテンツに適用する自動ラベル付けの前提条件の 1 つです。
 
 ## <a name="how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange"></a>SharePoint、OneDrive、Exchange の自動ラベル付けポリシーを構成する方法
 

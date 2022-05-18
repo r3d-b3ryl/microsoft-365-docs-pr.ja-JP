@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: WindowsとOffice展開ラボ キットにアクセスする場所について説明します。
-ms.openlocfilehash: 5ce9ebcdd3a36b62f74292e2b8e261928ef12043
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435349"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463167"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows と Office 365 展開ラボ キット
 
@@ -114,4 +114,4 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 - [Microsoft 365 の概要](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
 - [Enterprise Mobility + Security の概要](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [ビジネス向けのWindows 11](https://www.microsoft.com/windows/business)
+- [ビジネス向けのWindows](https://www.microsoft.com/windows/business)

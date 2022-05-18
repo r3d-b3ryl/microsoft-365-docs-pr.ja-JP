@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4fe0518c47ec5d2db96ec939ca62b25192440c54
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 6a71e78735a22bc1fc2404fe4a2915c33ed5d866
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444263"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463227"
 ---
 # <a name="microsoft-defender-experts-for-hunting-preview"></a>Microsoft Defender Experts for Hunting プレビュー
 
@@ -56,7 +56,7 @@ Defender Experts for Hunting は、Microsoft 365 Defender ポータルから直�
 
 まだ行っていない場合は、Defender Experts for Hunting に申請できます。
 
-1. [ [**適用**](https://aka.ms/expandedMTEprev)] をクリックします。 
+1. [ [**適用**](https://aka.ms/expandedMTEprev)] をクリックします。 会社の誰でもプレビューへの参加を要求できますが、同意された場合は、グローバル管理者のみが法的契約に署名してプレビューを入力できます。 
 2. 会社の **メール ID を入力します**。
 3. **[送信]** を選択します。 アプリケーションが受信されたことを示す確認メッセージが表示されます。  
 
