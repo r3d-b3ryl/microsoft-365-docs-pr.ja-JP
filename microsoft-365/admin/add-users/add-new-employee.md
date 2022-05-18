@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
-description: メール、Skype、Office アプリのビジネス向けのMicrosoft 365に新しい従業員を追加します。
-ms.openlocfilehash: 2ff9b3dcd4843a4493e5f3bb3bb8e783c45ce1ab
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: 管理者は、新しい従業員をビジネス向けのMicrosoft 365に追加し、メール、Skype、Office アプリにアクセスできるようにする方法について説明します。
+ms.openlocfilehash: 5011ac563b5a1780b8d5f455ebb0de678bf2eadf
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315233"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466836"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>新しい従業員をMicrosoft 365に追加する
 

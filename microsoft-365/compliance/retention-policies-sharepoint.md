@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: cbcc8015b8b24309c882e5b8ca7a9c56fb6e344d
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 8515b84f21677644be821ca129ab02083121ab84
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285992"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468856"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -82,7 +82,7 @@ SharePoint と OneDrive では、保持する必要のあるコンテンツを�
     
     この設定を確認または変更するには、Microsoft Purview コンプライアンス ポータルで、**[レコード管理]** ソリューションから **[レコード管理]** > **[レコード管理設定]** > **[保持ラベル]** > **[アイテムの削除]** の順に移動します。SharePoint と OneDrive の設定は別です。
     
-    または、**[レコード管理]** ソリューションにアクセスできない場合は、[Get-PnPTenant](/powershell/module/sharepoint-pnp/get-pnptenant) および [Set-PnPTenant](/powershell/module/sharepoint-pnp/set-pnptenant) から *AllowFilesWithKeepLabelToBeDeletedSPO* と *AllowFilesWithKeepLabelToBeDeletedODB* を使用できます。
+    または、**[レコード管理]** ソリューションにアクセスできない場合は、[Get-PnPTenant](https://pnp.github.io/powershell/cmdlets/Get-PnPTenant.html) および [Set-PnPTenant](https://pnp.github.io/powershell/cmdlets/Set-PnPTenant.html) から *AllowFilesWithKeepLabelToBeDeletedSPO* と *AllowFilesWithKeepLabelToBeDeletedODB* を使用できます。
 
 - 保持ラベルはアイテムをレコードとしてマークし、それは[ロック済み](record-versioning.md)です。
     

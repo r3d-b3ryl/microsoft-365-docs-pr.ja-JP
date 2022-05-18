@@ -5,8 +5,7 @@ keywords: Microsoft Defender for Office 365、ga、一般公開、機能、利�
 search.appverid: met150
 ms.sitesec: library
 ms.pagetype: security
-f1.keywords:
-- NOCSH
+f1.keywords: NOCSH
 ms.author: tracyp
 author: msfttracyp
 ms.localizationpriority: medium
@@ -16,17 +15,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.topic: conceptual
-ms.date: 12/03/2021
 ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 557b81db3c211b294166af8e5f8aaa783fc563a6
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 8c2321ce8ed367db386fa97640564d07208db78b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65215795"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466264"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -50,8 +48,10 @@ ms.locfileid: "65215795"
 - [Microsoft Defender for Endpoint の新機能](../defender-endpoint/whats-new-in-microsoft-defender-endpoint.md)
 - [Microsoft Defender for Identityの新機能](/defender-for-identity/whats-new)
 - [Microsoft Cloud App Securityの新機能](/cloud-app-security/release-notes)
+
 ## <a name="april-2022"></a>2022 年 4 月
 
+- [Microsoft 365 Defender Advanced Hunting の URLClickEvents テーブルの概要](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Microsoft Defender for Office 365を使用した高度なハンティングの UrlClickEvents テーブルの概要。
 - [手動による電子メール修復の機能強化](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): 新しいアクションに焦点を当てた調査を使用して、Microsoft Defender for Office 365で実行された手動の電子メール消去アクションを、Microsoft 365 Defender (M365D) 統合アクション センターに取り込みます。
  
 ## <a name="march-2022"></a>2022 年 3 月
@@ -122,6 +122,5 @@ Microsoft Defender for Office 365が 2 つのプランで利用できること�
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft 365ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
-
-[Microsoft Defender for Office 365 サービスの説明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- [Microsoft 365ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
+- [Microsoft Defender for Office 365 サービスの説明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

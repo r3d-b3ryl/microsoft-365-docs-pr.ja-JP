@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-zerotrust
 - m365solution-overview
 - M365-security-compliance
-ms.openlocfilehash: bb452c74763e31be11a6431cc260667319d2582f
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 2f8fe053d0ffb6d453029ab3f7fee17846661b6d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363194"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469275"
 ---
 # <a name="microsoft-365-zero-trust-deployment-plan"></a>Microsoft 365 ゼロ トラスト展開プラン
 
@@ -49,11 +49,13 @@ ms.locfileid: "65363194"
 - ID、デバイス、データ、アプリ、ネットワーク、その他のインフラストラクチャ コンポーネントはすべて、適切なセキュリティで構成されます。 これらの各コンポーネントに対して構成されるポリシーは、全体的なゼロ トラスト戦略と調整されます。 たとえば、デバイス ポリシーは正常なデバイスの条件を決定し、条件付きアクセス ポリシーでは特定のアプリやデータへのアクセスに正常なデバイスが必要です。
 - 脅威の保護とインテリジェンスは、環境を監視し、現在のリスクを解決し、攻撃を修復するための自動アクションを実行します。
 
+ゼロ トラストの詳細については、Microsoft の [_**ゼロ トラスト ガイダンス センター**_](/security/zero-trust)を参照してください。
+
 <!---
 For more information about this architecture, including deployment objectives for your entire digital estate, see [Zero Trust Rapid Modernization Plan (RaMP)](https://review.docs.microsoft.com/security/zero-trust/zero-trust-ramp-overview?branch=zt-content-prototype).
 -->
 
-ゼロ トラストの詳細については、Microsoft の [_**ゼロ トラスト ガイダンス センター**_](/security/zero-trust)を参照してください。
+
 
 ## <a name="deploying-zero-trust-for-microsoft-365"></a>Microsoft 365のゼロ トラストのデプロイ
 
@@ -69,7 +71,10 @@ Microsoft 365は、環境へのゼロ トラストの構築に役立つ多くの
 - 脅威保護機能は、セキュリティ上の脅威をリアルタイムで監視および修復するために、この基盤の上に構築されています。
 - 情報保護とガバナンスは、特定の種類のデータを対象とした高度な制御を提供し、最も貴重な情報を保護し、個人情報の保護を含むコンプライアンス基準を遵守するのに役立ちます。
 
-## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>手順 1. ゼロ トラスト ID とデバイス アクセス保護の構成 - 開始点ポリシー
+
+この記事では、クラウド ID が既に構成されていることを前提としています。 この目的に関するガイダンスが必要な場合は、「[**Microsoft 365用の ID インフラストラクチャをデプロイする」を参照してください**](/microsoft-365/enterprise/deploy-identity-solution-overview)。
+
+## <a name="step-1-configure-zero-trust-identity-and-device-access-protection--starting-point-policies"></a>手順 1。 ゼロ トラスト ID とデバイス アクセス保護の構成 - 開始点ポリシー
 
 最初の手順は、ID とデバイス アクセス保護を構成してゼロ トラスト基盤を構築することです。
 

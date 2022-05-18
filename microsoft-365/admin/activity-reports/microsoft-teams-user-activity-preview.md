@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Teams ユーザー アクティビティ レポートを取得し、組織内のTeams アクティビティに関する分析情報を取得する方法について説明します。
-ms.openlocfilehash: a2bfa434d5a564307498f621cb5105f411daff4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 691c6999e97350184fbe72e28f2b380dcf7b41d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65087219"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467550"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>管理センターの Microsoft 365 レポート - Microsoft Teams ユーザー アクティビティ
 
@@ -84,8 +84,8 @@ Teams ユーザー アクティビティ レポートのデータを匿名にす
 
 3. **[変更の保存]** を選択します。
 
+## <a name="related-content"></a>関連コンテンツ
 
-## <a name="see-also"></a>関連項目
 [Microsoft Teams のデバイス使用状況レポート](../activity-reports/microsoft-teams-device-usage-preview.md)
 
 [Microsoft Teams利用状況レポート](../activity-reports/microsoft-teams-usage-activity.md) 

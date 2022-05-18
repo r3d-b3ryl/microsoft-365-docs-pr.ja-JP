@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: 管理者パスワードをリセットする場合は、管理センターで管理者の電話番号とメール アドレスを更新します。
-ms.openlocfilehash: 2ebd4dd17be376bc79f252055c8aeb50082f7f94
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 8e20aa49bc5d48ebf4e3434f2d5c294bfba5a08f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60174113"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468440"
 ---
-# <a name="update-your-admin-phone-number-and-email-address"></a>管理者の電話番号とメール アドレスを更新する
+# <a name="update-your-microsoft-365-admin-phone-number-and-email-address"></a>Microsoft 365管理者の電話番号とメール アドレスを更新する
 
 この記事では、管理者がMicrosoft 365でビジネス用の電話とメール アドレスを変更する方法について説明します。
   

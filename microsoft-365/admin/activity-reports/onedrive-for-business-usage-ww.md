@@ -21,13 +21,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: '組織全体で使用されているファイルとストレージの合計数を把握するために、OneDrive for Business使用状況レポートを取得します。 '
-ms.openlocfilehash: f212a29a5fb41aae9ecb0daeae0638d7af1e5dd1
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: OneDrive for Business使用状況レポートを入手して、組織全体で使用されるファイルとストレージの合計数の詳細を確認します。
+ms.openlocfilehash: d195a521fba9dc82867821e27414d125dca09c61
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781561"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467276"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---onedrive-for-business-usage"></a>管理センターでレポートをMicrosoft 365する - 使用状況OneDrive for Business
 

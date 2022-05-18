@@ -12,24 +12,30 @@ metadata:
   manager: serdars
   audience: Admin
   ms.date: 04/23/2021
+  ms.openlocfilehash: 1a0bacdaf7630c6385b1dbbf37fd5a4eb50d77aa
+  ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 05/18/2022
+  ms.locfileid: "65468352"
 additionalContent:
   sections:
-    - items:
-        - title: Scheduler for Microsoft 365 とは?
-          summary: Scheduler for Microsoft 365 とその機能、および誰にどのようなメリットがあるかについて説明します。
-          url: scheduler-overview.md
-        - title: 信頼とプライバシー
-          summary: Scheduler for Microsoft 365 によって信頼とプライバシーがどのように保護されるかについて説明します。
-          url: scheduler-trust-privacy.md
-        - title: Scheduler for Microsoft 365 を設定する
-          summary: Scheduler for Microsoft 365 を設定するために何が必要であるかについて説明します。
-          url: scheduler-setup.md
-        - title: Scheduler for Microsoft 365 を使用する
-          summary: Scheduler for Microsoft 365 の利用方法について説明します。
-          url: scheduler-using.md
-        - title: 動的に繰り返される会議をスケジュールする
-          summary: 動的に繰り返される会議をスケジュールする方法について説明します。
-          url: scheduler-recurring-meetings.md
-        - title: スケジューラに関する FAQ
-          summary: Scheduler for Microsoft 365 に関してよく寄せられる質問と回答。
-          url: scheduler-faqs.md
+  - items:
+    - title: Scheduler for Microsoft 365 とは?
+      summary: Scheduler for Microsoft 365 とその機能、および誰にどのようなメリットがあるかについて説明します。
+      url: scheduler-overview.md
+    - title: 信頼とプライバシー
+      summary: Scheduler for Microsoft 365 によって信頼とプライバシーがどのように保護されるかについて説明します。
+      url: scheduler-trust-privacy.md
+    - title: Scheduler for Microsoft 365 を設定する
+      summary: Scheduler for Microsoft 365 を設定するために何が必要であるかについて説明します。
+      url: scheduler-setup.md
+    - title: Scheduler for Microsoft 365 を使用する
+      summary: Scheduler for Microsoft 365 の利用方法について説明します。
+      url: scheduler-using.md
+    - title: 動的に繰り返される会議をスケジュールする
+      summary: 動的に繰り返される会議をスケジュールする方法について説明します。
+      url: scheduler-recurring-meetings.md
+    - title: スケジューラに関する FAQ
+      summary: Scheduler for Microsoft 365 に関してよく寄せられる質問と回答。
+      url: scheduler-faqs.md

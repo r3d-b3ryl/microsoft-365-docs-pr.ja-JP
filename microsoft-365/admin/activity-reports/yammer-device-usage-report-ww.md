@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Yammerデバイス使用状況レポートを取得して、ユーザーがYammerを使用しているデバイスを把握します。
-ms.openlocfilehash: 265cef494349daba8b7e526ad6b7c6abd61adcf7
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Yammerデバイス使用状況レポートを入手して、ユーザーがYammerを使用しているデバイス、デバイスの種類別の毎日のユーザー数、ユーザーごとの詳細について詳しく説明します。
+ms.openlocfilehash: faf5b364090fe4ed88e0a6dd977238e65f3e6c68
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781268"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467188"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>管理センターでレポートをMicrosoft 365する - デバイス使用状況レポートYammer
 
@@ -58,7 +58,7 @@ Yammer デバイスの使用状況レポートでは、ユーザーが Yammer �
 |最終アクティビティ日 (UTC)  <br/> |ユーザーがYammer アクティビティに参加した最後の日付 (UTC)。  <br/> |
 |Web  <br/> |ユーザーが Web でYammerを使用したかどうかを示します。  <br/> |
 |Windows電話  <br/> | ユーザーがWindows電話でYammerを使用したかどうかを示します。  <br/> |
-|Android スマートフォン  <br/> |ユーザーが Android スマートフォンでYammerを使用したかどうかを示します。 <br/>|
+|Android スマートフォン  <br/> |ユーザーがAndroid電話でYammerを使用したかどうかを示します。 <br/>|
 |Iphone <br/> | ユーザーがiPhoneでYammerを使用したかどうかを示します。  <br/> |
 |Ipad  <br/> |ユーザーがiPadでYammerを使用したかどうかを示します。 <br/>|
 |他  <br/> |ユーザーが別のデバイスでYammerを使用したかどうかを示します。前に示されていません。 <br/>|

@@ -18,13 +18,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: beffbe01-ce2d-4614-9ae5-7898868e2729
-description: メールボックスの使用状況レポートを取得して、ユーザー メールボックスを持つユーザーのアクティビティについて知る方法について説明します。
-ms.openlocfilehash: 6a28b6aed8721872a31af57d4c00cd82a89c06bc
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: メールボックスの使用状況レポートを取得して、ユーザー メールボックスを持つユーザーのアクティビティ レベルと、それぞれのストレージとクォータの情報について確認する方法について説明します。
+ms.openlocfilehash: d544ffffa36c679a1d86faf4e2106faa74321d24
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400896"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467582"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>管理センターでレポートをMicrosoft 365する - メールボックスの使用状況
 

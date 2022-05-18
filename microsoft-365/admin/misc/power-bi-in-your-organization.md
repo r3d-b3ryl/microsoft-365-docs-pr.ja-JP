@@ -19,14 +19,14 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Power BIと組織内のユーザーがこのビジネス分析サービスを使用する方法について説明します。
-ms.openlocfilehash: f89f03470561cd9c8dcddf4e0bbde60d4d9d4fa2
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: b4e1fd299caa4045a68770adc3a2d53dd4b11ec0
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370526"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469538"
 ---
-# <a name="power-bi-in-your-organization"></a>組織内の Power BI
+# <a name="using-power-bi-data-in-your-organization"></a>組織内でPower BI データを使用する
 
 このページでは、組織のユーザーが Power BI を使う方法と、組織でこのサービスを取得する手順を制御する方法について説明します。
 
@@ -152,7 +152,7 @@ To allow users to join your tenant, run the opposite command as described in the
 既存ユーザーに対してライセンスの自動配布を有効にする場合:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $true`
   
 > [!NOTE]
-> *AllowAdHocSubscriptions* フラグは、ユーザーが Azure Rights Management Service にサインアップする機能など、組織内のいくつかのユーザー機能を制御するために使用されます。 このフラグを変更すると、これらのすべての機能に影響が及びます。
+> *AllowAdHocSubscriptions* フラグは、ユーザーが Azure Rights Management サービスにサインアップする機能など、組織内のいくつかのユーザー機能を制御するために使用されます。 このフラグを変更すると、これらのすべての機能に影響が及びます。
   
 ## <a name="how-can-i-allow-my-existing-users-to-sign-up-for-power-bi"></a>既存のユーザーが Power BI にサインアップできるようにする方法
 

@@ -23,14 +23,14 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスの割り当てを解除する方法は、特定のユーザーから割り当て解除するのか、それとも特定の製品から割り当てを解除するのかによって異なります。
 ms.date: 04/22/2022
-ms.openlocfilehash: b5294bd6234c36e6040ff8cc7433c3e66b7d34b6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093704"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465802"
 ---
-# <a name="unassign-licenses-from-users"></a>ユーザーからライセンスの割り当てを解除する
+# <a name="unassign-microsoft-365-licenses-from-users"></a>ユーザーからMicrosoft 365ライセンスの割り当てを解除する
 
 **[アクティブなユーザー]** ページ、または **[ライセンス]** ページ上で、ユーザーからライセンスの割り当てを解除できます。 使用する方法は、特定のユーザーから製品ライセンスの割り当てを解除するのか、または特定の製品からユーザー ライセンスの割り当て解除するのかによって異なります。
 

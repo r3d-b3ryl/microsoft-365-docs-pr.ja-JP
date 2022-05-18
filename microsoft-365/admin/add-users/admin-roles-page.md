@@ -1,5 +1,5 @@
 ---
-title: 管理者ロールについて
+title: Microsoft 365の [管理者ロール] ページについて
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するためのアクセス許可を提供します。 たとえば、サービス管理者が Microsoft のサポート チケットを開きます。
-ms.openlocfilehash: 07a46d7dfa23838715364ab1ab36ced992265b29
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: ビジネス機能にマップされ、管理センターのタスクに対するアクセス許可を持つ、サポート チケットを開くサービス管理者などの管理者ロールについて説明します。
+ms.openlocfilehash: 58bbc4b15f3fd477b72c8dac3f0f624b1e152a2a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437087"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466770"
 ---
 # <a name="get-started-with-the-microsoft-365-admin-roles-page"></a>Microsoft 365管理者ロール ページでの概要
 

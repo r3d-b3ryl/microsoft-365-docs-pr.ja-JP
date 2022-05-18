@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Microsoft 365 管理センターのMicrosoft 365 レポート ダッシュボードを使用して、使用状況レポートのMicrosoft 365 Appsを取得する方法について説明します。
-ms.openlocfilehash: 229797921de2e24754203efc466f63661eb26bc8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Microsoft 365 Apps使用状況レポートを取得して、アプリ全体のライセンスユーザー アクティビティと、プラットフォーム間でのアプリの使用方法を確認する方法について説明します。
+ms.openlocfilehash: acb9d910ad8e08275dff3ed65e4b39bb4e867033
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781613"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467528"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>管理センターでレポートをMicrosoft 365する - 使用状況をMicrosoft 365 Appsする
 
@@ -49,7 +49,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 |アイテム|説明|
 |---|---|
 |1.|**Microsoft 365 Apps使用状況** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択した場合、テーブルには現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。|
-|2.|各レポートのデータは、通常、過去 2 日間まで対象となります。 6 日ごとに、データ品質を確保するために、レポートをマイナー更新で更新します。|
+|2。|各レポートのデータは、通常、過去 2 日間まで対象となります。 6 日ごとに、データ品質を確保するために、レポートをマイナー更新で更新します。|
 |3。|**[ユーザー]** ビューには、Outlook、Word、Excel、PowerPoint、OneNote、Teamsの各アプリのアクティブ ユーザー数の傾向が表示されます。 "アクティブ ユーザー" とは、これらのアプリ内で意図的な操作を実行するユーザーのことです。|
 |4.|**[プラットフォーム]** ビューには、Windows、Mac、Web、Mobile の各プラットフォームのすべてのアプリにわたるアクティブ ユーザーの傾向が表示されます。|
 |5.|**[ユーザー**] グラフの Y 軸は、それぞれのアプリの一意のアクティブなユーザーの数です。 **プラットフォーム** グラフの Y 軸は、それぞれのプラットフォームの一意のユーザーの数です。 両方のグラフの X 軸は、特定のプラットフォームでアプリが使用された日付です。|

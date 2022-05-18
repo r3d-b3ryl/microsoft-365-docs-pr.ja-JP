@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 従業員がMicrosoft 365 Business Premiumで取得Officeアプリを設定する方法を学習するのに役立ちます。
-ms.openlocfilehash: b776b7182422de0ed3dfa9dda3d8d8b39b957c2b
-ms.sourcegitcommit: b6ab10ba95e4b986065c51179ead3810cc1e2a85
+ms.openlocfilehash: f25b569218bae636b3c8edb1d46fc1b8bbcf6fe0
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61521446"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468878"
 ---
-# <a name="employee-quick-setup"></a>従業員のクイック セットアップ
+# <a name="employee-quick-setup-in-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365での従業員のクイック セットアップ
 
 ビジネス向けのMicrosoft 365を使うのは新しいですか? :::image type="icon" source="../../media/video-call-icon.png" border="false":::[このビデオをご覧ください:Microsoft 365とは何ですか?](../admin-overview/what-is-microsoft-365.md) 次に、次の手順に従います。
 
@@ -45,7 +45,7 @@ ms.locfileid: "61521446"
     - Chrome では、ページの下部にあるダウンロードに移動して、[ **開く**] を選びます。
     - Microsoft Edge/IE では、[ **保存**]、[ **実行**] の順に選びます。
     
-        アプリからの変更を許可するように求められた場合は、[ **はい**] を選びます。Office のセットアップを開始します。
+    アプリからの変更を許可するように求められた場合は、[ **はい**] を選びます。Office のセットアップを開始します。
     - Mac で Microsoft **Office_2016_Installer.pkg** を開く
 
 ## <a name="3-open-outlook-and-add-your-account"></a>3. Outlookを開き、アカウントを追加する
@@ -84,7 +84,7 @@ ms.locfileid: "61521446"
 
 ## <a name="6-get-outlook-on-your-phone"></a>6. スマートフォンでOutlookを取得する
 
-- App Store または Google Play ストアから電話で **Outlook** を取得します。 それを開き、**はじめに** を選択し、電子メールとパスワードを追加します。
+- アプリ ストアまたは **Google Play** ストアから電話でOutlookを取得します。 それを開き、**はじめに** を選択し、電子メールとパスワードを追加します。
 - または、iOS または Android デバイス上で Outlook を起動して、[ **設定**] に移動します。
 
     [ **アカウントの追加**]、[ **メール アカウントの追加**] の順に選んで、自分のメールとパスワードを入力します。

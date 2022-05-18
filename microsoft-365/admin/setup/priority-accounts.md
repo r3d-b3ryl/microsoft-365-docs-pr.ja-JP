@@ -16,14 +16,14 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: ビジネスに大きな影響を与えるアカウントとの間で送受信されたメール メッセージの失敗と遅延を監視します。
-ms.openlocfilehash: b8762885cc54859cf927653abb14858c0094ea12
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: edf2c2b1994e1647c4df9b639386cc43dc312c80
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60201351"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465868"
 ---
-# <a name="manage-and-monitor-priority-accounts"></a>優先アカウントを管理および監視する
+# <a name="manage-and-monitor-priority-accounts-in-microsoft-365"></a>Microsoft 365で優先度アカウントを管理および監視する
 
 すべてのMicrosoft 365組織には、機密性の高い、独自の、または優先度の高い情報にアクセスできる、エグゼクティブ、リーダー、マネージャー、その他のユーザーなど、不可欠なユーザーがいます。
 
@@ -40,7 +40,7 @@ ms.locfileid: "60201351"
 
 優先度アカウントのセキュリティのベスト プラクティスについては、「 [優先度アカウントのセキュリティに関する推奨事項」を](../../security/office-365-security/security-recommendations-for-priority-accounts.md)参照してください。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このトピックで説明する **優先度アカウント保護機能** は、次の要件を満たす組織でのみ使用できます。
 

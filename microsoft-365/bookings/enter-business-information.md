@@ -9,14 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 以下の手順に従って、会社名、住所、電話番号、Web サイトの URL、ロゴ、Microsoft Bookingsの営業時間など、About Us ページを作成します。
-ms.openlocfilehash: 5dc8fa157d6ce53231ece9d8d70eb772218ac5dd
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: e15379a414182672bd7a0372ea5c55ffbc482b62
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022517"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469605"
 ---
-# <a name="enter-your-business-information"></a>勤務先情報を入力する
+# <a name="enter-your-business-information-in-microsoft-bookings"></a>Microsoft Bookingsにビジネス情報を入力する
 
 > [!NOTE]
 > この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。

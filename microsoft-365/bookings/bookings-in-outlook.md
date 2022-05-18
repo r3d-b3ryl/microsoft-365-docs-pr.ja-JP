@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: OutlookでBookingsを使用して、他のユーザーがOutlookで自分と一緒に会議をスケジュールできるようにします。
-ms.openlocfilehash: abad0358fc0062774ebadb409dd1a8658fddd16e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 65e3e751e883ed498cdf5b4ccae2b1f2e587f756
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416756"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469213"
 ---
 # <a name="bookings-in-outlook"></a>OutlookのBookings
 
@@ -31,7 +31,7 @@ OutlookのBookingsには、次の 2 つの異なるビューがあります。
   - パブリック会議は、Outlook ページ リンクにBookingsがあるすべてのユーザーが表示およびスケジュール設定できます。 そのリンクを共有するユーザーを制御できます。 すべてのパブリック会議の種類は、Outlookページ リンクにBookingsがあるすべてのユーザーに表示されます。
   - プライベート会議は、その会議の種類のリンクを持つユーザーのみが表示できます。 パブリック会議とプライベート会議の違いは、プライベート会議には異なるリンクを持つ可能性があり、リンクは 90 日後に期限切れになる場合があります。 プライベート リンクは、1 回限りの予約後に期限切れに設定することもできます。 プライベート会議のスケジュール設定ビューにアクセスすると、その会議の種類のみが表示されます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 OutlookのBookingsは、次のサブスクリプションで使用できます。
 
@@ -39,6 +39,8 @@ OutlookのBookingsは、次のサブスクリプションで使用できます�
 - Microsoft 365: A3、A5、E1、E3、E5、F1、F3、Business Basic、Business Standard、Business プレミアム
 
 OutlookのBookingsは、これらのサブスクリプションを持つユーザーに対して既定でオンになっています。
+
+OutlookのBookingsには、**Bookings** にアクセスできるようにするために、ユーザーに割り当てられたMicrosoft Bookingsサービス プランが必要です。 このサービス プランは、テナント管理者が有効または無効にすることができます。 そのため、**Microsoft Bookings** が割り当てられていない場合、Bookingsアクセスは、前述の SKU のいずれかに属している場合でも、ユーザーに対して拒否されます。
 
 詳細については、「[Outlook Microsoft 365 ロードマップ」の項目のBookings](https://go.microsoft.com/fwlink/?linkid=328648)を参照してください。
 

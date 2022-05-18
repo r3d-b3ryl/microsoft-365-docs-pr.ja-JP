@@ -20,14 +20,14 @@ search.appverid:
 ms.assetid: 5785d21d-1abd-4571-a04a-8cc5a65ca9b5
 ROBOTS: NOINDEX
 description: 従業員が退職したときにMicrosoft 365へのアクセスをブロックする方法について説明します。
-ms.openlocfilehash: f883ed1a11b52b58b1a329c261e724e1d31008d7
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 75e824a73e6a7778952d4ab27f82c0b41251af32
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60180479"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467890"
 ---
-# <a name="compare-ways-to-block-access"></a>アクセスをブロックする方法を比較する
+# <a name="compare-ways-to-block-access-to-microsoft-365"></a>Microsoft 365へのアクセスをブロックする方法を比較する
 
 従業員が組織を離れた場合、良好な条件または悪い条件で、Microsoft 365へのアクセスをブロックする必要があります。 ここでは、いくつかの方法を紹介します。
   
@@ -37,7 +37,7 @@ ms.locfileid: "60180479"
 |ユーザー パスワードを再設定する  <br/> |ユーザーがMicrosoft 365にアクセスできないようにするもう 1 つの方法は、パスワードをリセットすることです。 これにより、以前にダウンロードまたは同期された電子メールやドキュメントを引き続き表示できますが、アカウントを使用できなくなります。 その後、サインインして、選択したパスワードに変更できます。  <br/> |従業員が突然組織を離れ、今後戻る様子がなく、ビジネス データに問題があると思われる場合に使用します。  <br/> |
 |割り当てられたすべてのライセンスを削除する  <br/> |もう 1 つのオプションは、ユーザーに割り当てられているMicrosoft 365 ライセンスをすべて削除することです。 これにより、Office スイート、Office Web、Yammer、SharePoint Online などのアプリケーションやサービスを使用できなくなります。 サインインすることはできますが、これらのサービスを使用することはできません。  <br/> |このユーザーがMicrosoft 365の特定の機能にアクセスする必要がなくなったと感じるときに使用します。  <br/> <br> **大事な：** ライセンスを削除すると、ユーザーのメールボックスは 30 日後に削除されます。
    
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 [Microsoft 365からユーザーをオフボードにする](../add-users/remove-former-employee.md)
     

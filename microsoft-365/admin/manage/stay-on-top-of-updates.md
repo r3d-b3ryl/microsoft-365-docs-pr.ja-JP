@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 719f4904-cbdd-4889-a0cf-fbd7837dfecd
 description: メッセージ センター、ターゲット リリース、ロードマップ、ブログ、およびCommunityを使用して、Microsoft 365更新プログラムを常に活用する方法について説明します。
-ms.openlocfilehash: f38805b3c09c3b40198930014a3083a3ebc03cf9
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: cf4adf2e603517dfb4db57811e291195a1536488
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129312"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468528"
 ---
-# <a name="stay-on-top-of-changes"></a>変更内容の最新情報を把握する
+# <a name="stay-on-top-of-microsoft-365-product-and-feature-changes"></a>Microsoft 365製品と機能の変更を常に確認する
 
 Microsoft 365では、数か月または数年離れたスケジュールされた更新プログラムの代わりに、新しい製品の更新プログラムと機能を利用できるようになります。 そのため、コストと時間がかかる全社的なアップグレードではなく、日常的に改善された新機能を仕事に利用できるようになります。 このようなモデルの課題は、変更と更新プログラムの最新情報を得ることです。 組織内のMicrosoft 365更新プログラムを常に活用する方法をいくつか示します。
 

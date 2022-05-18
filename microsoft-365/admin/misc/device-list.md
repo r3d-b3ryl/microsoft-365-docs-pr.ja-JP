@@ -23,14 +23,14 @@ search.appverid:
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
 description: ビジネス向けのMicrosoft 365で AutoPilot 用の CSV ファイルを作成する方法について説明します。
-ms.openlocfilehash: 62dbcddbdab1a08ab3b19c6616b814c421a57c04
-ms.sourcegitcommit: 2a4dddf7c655b44b17d4fd7f5e1e5d8a6e2b7aef
+ms.openlocfilehash: af695448e31ea93d36b36a8831702acb84a92410
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "61311760"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469560"
 ---
-# <a name="device-list-csv-file"></a>デバイスの一覧の CSV ファイル
+# <a name="windows-autopilot-device-list-csv-file"></a>autopilot デバイス リスト CSV-file をWindowsする
 
 ## <a name="device-list-csv-file-format"></a>デバイスの一覧 (CSV ファイル形式)
 

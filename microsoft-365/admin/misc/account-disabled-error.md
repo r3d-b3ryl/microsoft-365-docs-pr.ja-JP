@@ -1,5 +1,5 @@
 ---
-title: Outlook on the web で "アカウントが無効です" というエラーが表示される場合
+title: Outlook on the webでアカウントが無効になっているエラーを取得する
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: ライセンスのないユーザーにライセンスを追加して、アカウントが無効なエラーを修正する方法について説明します。
-ms.openlocfilehash: 314c58b3ca0f2b0ba949e99cd078c1311d29f5e3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ba5b34e6e086d574a6f1e879276d7405c1da8625
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60157196"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466682"
 ---
 # <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Outlook on the webでアカウントが無効になっているエラーを取得する
 

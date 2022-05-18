@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score - Teamwork
+title: Microsoft Productivity Score and teamwork insights
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: チームワークの詳細 - ユーザーは生産性スコアを体験します。
-ms.openlocfilehash: 0c06f968555e3d84944f2be9ba627a81aba746d3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: b7291ec2a4bf0e97c0bc8b3558c2cdc17d86a19a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323753"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466396"
 ---
 # <a name="teamwork--people-experiences"></a>チームワーク – People エクスペリエンス
 

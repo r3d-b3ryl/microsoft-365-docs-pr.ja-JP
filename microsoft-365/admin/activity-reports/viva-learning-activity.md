@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Microsoft 365 管理センターの [Microsoft 365 レポート] ダッシュボードを使用して、Microsoft 365 Viva ラーニング アクティビティ レポートを取得する方法について説明します。
-ms.openlocfilehash: 382513700f6008aa2b89f32f23f31b19cce63cab
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Microsoft 365 Viva ラーニング アクティビティ レポートを取得して、ユーザー操作や使用されている機能などのライセンスViva ラーニングユーザー アクティビティを把握します。
+ms.openlocfilehash: edc6aa40960fc1f3e15690a12677533e40cf62e0
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400393"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467166"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-learning-activity"></a>管理センターでレポートをMicrosoft 365する - Viva ラーニング アクティビティ
 

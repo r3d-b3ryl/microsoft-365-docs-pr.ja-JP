@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
 description: Microsoft 365の配布リストとして電子メールを送信し、メンバーがメッセージに返信したときに、配布リストから送信されているように見えるようにします。
-ms.openlocfilehash: d38a7cb2efe3ddd3a915030f6aff4acc1eba1aef
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: dd6e1f906481fe1c04bfa7cd275bd108ab558d59
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171833"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468462"
 ---
-# <a name="send-email-as-a-distribution-list"></a>配布リストとして電子メールを送信する
+# <a name="send-microsoft-365-email-as-a-distribution-list"></a>Microsoft 365電子メールを配布リストとして送信する
 
 Microsoft 365では、配布リストとして電子メールを送信できます。 配布リストのメンバーであるユーザーが配布リストに送信されたメッセージに返信すると、メールは個別のユーザーからではなく、配布リストからであることが表示されます。 このトピックでは、この操作を行う方法を示します。
   
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 これらの手順を実行する前に、Microsoft 365配布リストに追加され、その配布リストに対するアクセス許可として送信が付与されていることを確認します。
   

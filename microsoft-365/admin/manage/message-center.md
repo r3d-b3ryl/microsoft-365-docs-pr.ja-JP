@@ -1,5 +1,5 @@
 ---
-title: メッセージ センター
+title: Microsoft 365 管理センターのメッセージ センター
 f1.keywords:
 - CSH
 ms.author: kwekua
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Microsoft 365 メッセージ センターの概要と、新機能や変更された機能、その他の重要なお知らせを追跡する役割について説明します。
-ms.openlocfilehash: 687da2d7dec0ea913e629a4cf41740d4b664b346
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 498267d62dadef0ec9c0e8811708416dd138eb58
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437703"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466792"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Microsoft 365 メッセージ センターで新機能と変更された機能を追跡する
 

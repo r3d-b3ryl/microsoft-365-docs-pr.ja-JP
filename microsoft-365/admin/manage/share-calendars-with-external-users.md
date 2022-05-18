@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: ユーザーが組織内外のユーザーと予定表を共有できるように、Microsoft 365 管理センターで予定表共有を有効にします。
-ms.openlocfilehash: 00ae4b96c54ae6b1471a90f598b9f96821947db3
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 9179e79e27320df2b943a9342ee0c2a91c866448
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530453"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468560"
 ---
-# <a name="share-calendars-with-external-users"></a>予定表を外部ユーザーと共有する
+# <a name="share-microsoft-365-calendars-with-external-users"></a>外部ユーザーとMicrosoft 365予定表を共有する
 
 ユーザーが組織外のユーザーとの会議をスケジュールすることが必要な場合があります。 一般的な会議の時間を見つけるプロセスを簡略化するために、Microsoft 365これらのユーザーが予定表を利用できるようにします。 これらは、組織内のユーザーの空き時間と繁忙時間を表示する必要があるが、Microsoft 365組織のユーザー アカウントを持っていないユーザーです。
 

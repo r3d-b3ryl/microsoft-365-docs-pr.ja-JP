@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Windows 10 デバイス上のMicrosoft Defender ウイルス対策によって検出された脅威を確認して管理する方法について説明します。
-ms.openlocfilehash: 9b819edc21d6cfcac663c54e15b1a060b2b16fa2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d75149f8bcb4ea13e1e474acbb1dedfccb4ec50
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319311"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469472"
 ---
-# <a name="review-detected-threats-and-take-action"></a>検出された脅威を確認して対処する
+# <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Microsoft Defender ウイルス対策によって検出された脅威を確認し、アクションを実行する
 
 悪意のあるファイルまたはソフトウェアが検出されるとすぐに、Microsoft Defender ウイルス対策ブロックされ、実行されなくなります。 また、クラウド配信の保護が有効になっていると、新しく検出された脅威がウイルス対策エンジンとマルウェア対策エンジンに追加され、他のデバイスやユーザーも保護されます。
 

@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 管理センターでゲスト ユーザーの一覧が設定される方法について説明します。
-ms.openlocfilehash: 0de0187211b874f62ede6cfc8b9e1008adc88220
-ms.sourcegitcommit: 81533e5d3e1aee0823539a7c9bdc20dba6541a02
+description: ゲストが会議に出席したり、招待されたTeamsでドキュメントを表示したり、チャットしたりできるように、Microsoft 365 管理センターでゲスト ユーザーリストを設定する方法について説明します。
+ms.openlocfilehash: 5677492ca8607fd3034b62264897d397e1e65f32
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "60223405"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466880"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 管理センターのゲスト ユーザー
 
@@ -36,7 +36,7 @@ Microsoft Teams、SharePoint、またはAzure Active Directoryに追加したゲ
 
 ゲスト ユーザーを表示するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理センター</a>の左側のナビゲーションで [**ユーザー**] を展開し、[**ゲスト ユーザー**] を選択します。
 
-## <a name="before-you-begin"></a>開始する前に 
+## <a name="before-you-begin"></a>はじめに
 
 このタスクを実行するには、グローバル管理者である必要があります。
 
@@ -52,7 +52,7 @@ Microsoft Teams、SharePoint、またはAzure Active Directoryに追加したゲ
 
 Azure Active Directoryにゲストを追加するには、「[ゲスト ユーザーの追加](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal)」を参照してください。
 
-ユーザーを追加した後は、グループに割り当てたり、組織内のアプリへのアクセス権を付与したりすることもできます。 Azure AD ポータルでユーザーを追加すると、そのユーザーは <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理センター</a>の **[ゲスト ユーザー]** ページにも表示されます。
+ユーザーを追加した後は、グループに割り当てたり、組織内のアプリへのアクセス権を付与したりすることもできます。 Azure AD portal でユーザーを追加すると、そのユーザーは <a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理センター</a>の **[ゲスト ユーザー**] ページにも一覧表示されます。
 **ユーザーをゲスト ユーザー** の一覧に追加した後、<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">Microsoft 365 管理センター</a>の [グループに追加](../create-groups/manage-guest-access-in-groups.md#add-guests-to-a-microsoft-365-group-from-the-admin-center)できます。
 
 複数 [のゲストを](/azure/active-directory/b2b/tutorial-bulk-invite) 招待して組織との共同作業を行う場合は、ゲストを一括で追加する方法を参照してください。
@@ -64,7 +64,7 @@ Azure Active Directoryにゲストを追加するには、「[ゲスト ユー�
 1. Microsoft 365 管理センターで [**ユーザー**] を展開し、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**ゲスト ユーザー**</a>] を選択します。
 1. [ **ゲスト ユーザー** ] ページで、削除するユーザーを選択し、[ **ユーザーの削除**] を選択します。
 
-Azure AD ポータルでユーザーを削除するには、「[ゲスト ユーザーとリソースを削除する](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)」を参照してください。
+Azure AD ポータルでユーザーを削除するには、「 [ゲスト ユーザーとリソースを削除する](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

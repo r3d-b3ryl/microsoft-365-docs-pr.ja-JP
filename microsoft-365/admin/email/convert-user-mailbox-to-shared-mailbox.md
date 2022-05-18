@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'プライベート メールボックスを、1 人ではなく複数のユーザーがアクセスできる共有メールボックスに変換する方法について説明します。 '
-ms.openlocfilehash: 4838dc7bd4856c89448cb501fdd20066d1c97aa2
-ms.sourcegitcommit: e3bc6563037bd2cce2abf108b3d1bcc2ccf538f6
+ms.openlocfilehash: 07b36e5c8b2cb7b2e88dfedd80b31353cb8f7e32
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/15/2022
-ms.locfileid: "64861942"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466220"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>ユーザー メールボックスを共有メールボックスに変換する
 
@@ -38,7 +38,7 @@ ms.locfileid: "64861942"
 > [!TIP]
 > このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 知っておくべき **重要な点をいくつか次に示** します。
 
@@ -76,7 +76,7 @@ ms.locfileid: "64861942"
 
 2. **[受信者]** \> **[メールボックス]** の順に選択します。
 
-3. ユーザー メールボックスを選択します。 [ **メールボックス** ] タブの [ **その他の操作]** で、[ **共有メールボックスに変換**] を選択します。
+3. ユーザー メールボックスを選択します。 [ **その他** ] タブで、[ **共有メールボックスに変換**] を選択します。
 
 4. メールボックスが 50 GB 未満の場合は、 [ユーザーからライセンス](../manage/remove-licenses-from-users.md)を削除し、その支払いを停止できます。 ユーザーのアカウントを削除しないでください。 共有メールボックスではそれをアンカーとして必要としています。 組織を退職する従業員のメールボックスを変換する場合は、追加の手順を実行して、当該の従業員が以後ログインできないようにする必要があります。 「[元従業員をMicrosoft 365から削除する](../add-users/remove-former-employee.md)」を参照してください。
 

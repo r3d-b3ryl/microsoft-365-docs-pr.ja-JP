@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 757545231a7bbe544bfbacf082fc03d88fb2df2f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9d401c5be4fc0454ce1d895fe5ea49267e5c5f70
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174159"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469175"
 ---
 # <a name="view-and-edit-your-security-policies-and-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセキュリティ ポリシーと設定を表示および編集する
 
@@ -129,7 +129,7 @@ Defender for Business には、次世代の保護、ファイアウォール、W
 
 次の表では、高度な機能の設定について説明します。
 
-| Setting | 説明 |
+| 設定 | 説明 |
 |:---|:---|
 | **自動調査** <br/>(既定でオンになっています) | アラートが生成されると、自動調査が発生する可能性があります。 各自動調査では、検出された脅威にアクションが必要かどうかを判断し、修復アクション (ファイルの検疫への送信、プロセスの停止、デバイスの分離、URL のブロックなど) を実行 (または推奨) します。 調査の実行中にその他の関連する警告が発生した場合は、それらの警告は調査が完了するまで調査に追加され続けます。 影響を受けるエンティティが他の場所で見られる場合、自動調査はそのエンティティを含むようにその範囲を拡大し、調査プロセスが繰り返されます。<br/><br/>[ **インシデント]** ページで調査を表示できます。 インシデントを選択し、[調査] タブ **を** 選択します。<br/><br/>既定では、自動調査機能と応答機能がテナント全体で有効になっています。 **自動調査を有効にしておくことをお勧めします**。 オフにすると、Microsoft Defender ウイルス対策のリアルタイム保護が影響を受け、全体的な保護レベルが低下します。 <br/><br/>[自動調査の詳細については、こちらを参照してください](../defender-endpoint/automated-investigations.md)。   |
 | **ライブ応答**  | Defender for Business には、次の種類の手動応答アクションが含まれています。 <br/>- ウイルス対策スキャンの実行<br/>- デバイスの分離<br/>- ファイルを停止して検疫する<br/>- ファイルをブロックまたは許可するインジケーターの追加 <br/><br/>[応答アクションの詳細については、こちらを参照してください](../defender-endpoint/respond-machine-alerts.md)。 |
@@ -139,7 +139,7 @@ Defender for Business には、次世代の保護、ファイアウォール、W
 | **ファイルを許可またはブロックする** <br/>(既定でオンになっています) | インジケーターを使用してファイルを許可またはブロック [できるようにします](../defender-endpoint/indicator-file.md)。 この機能を有効にするには、Microsoft Defender ウイルス対策がアクティブ モードで、[クラウド保護](../defender-endpoint/cloud-protection-microsoft-defender-antivirus.md)を有効にする必要があります。<br/><br/>ファイルをブロックすると、組織内のデバイスで読み取り、書き込み、または実行できなくなります。 <br/><br/>[ファイルのインジケーターの詳細について説明します](../defender-endpoint/indicator-file.md)。  |
 | **カスタム ネットワーク インジケーター**<br/>(既定でオンになっています) | [ネットワーク インジケーター](../defender-endpoint/indicator-ip-domain.md)を使用して、IP アドレス、URL、またはドメインを許可またはブロックできるようにします。 この機能を有効にするには、Microsoft Defender ウイルス対策がアクティブ モードで[、ネットワーク保護](../defender-endpoint/enable-network-protection.md)を有効にする必要があります。<br/><br/>独自の脅威インテリジェンスに基づいて、IP、URL、またはドメインを許可またはブロックできます。 危険なアプリを開く場合は、プロンプトでユーザーに警告することもできます。 プロンプトではアプリの使用を停止しませんが、ユーザーに警告を提供できます。<br/><br/>[ネットワーク保護の詳細については、こちらを参照してください](../defender-endpoint/network-protection.md)。 |
 | **改ざん防止**<br/>(この設定をオンにすることをお勧めします) | 改ざん防止は、悪意のあるアプリが次のようなアクションを実行するのを防ぎます。<br/>- ウイルスと脅威の保護を無効にする<br/>- リアルタイム保護を無効にする<br/>- 動作の監視をオフにする<br/>- クラウド保護を無効にする<br/>- セキュリティ インテリジェンス更新プログラムの削除<br/>- 検出された脅威に対する自動アクションを無効にする<br/><br/>改ざん防止は、基本的にMicrosoft Defender ウイルス対策をセキュリティで保護された既定値にロックし、アプリや承認されていない方法によってセキュリティ設定が変更されないようにします。 <br/><br/>[改ざん防止の詳細については、こちらを参照してください](../defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection.md)。  |
-| **ユーザーの詳細を表示する**<br/>(既定でオンになっています) | 組織内のユーザーが、従業員の画像、名前、役職、部署などの詳細を表示できるようにします。 これらの詳細は、Azure Active Directory (Azure AD) に格納されます。<br/><br/>[Azure ADのユーザー プロファイルの詳細については、こちらを参照してください](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。  |
+| **ユーザーの詳細を表示する**<br/>(既定でオンになっています) | 組織内のユーザーが、従業員の画像、名前、役職、部署などの詳細を表示できるようにします。 これらの詳細は、Azure Active Directory (Azure AD) に格納されます。<br/><br/>[Azure AD のユーザー プロファイルの詳細について説明します](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。  |
 | **Skype for Business統合**<br/>(既定でオンになっています) | Skype for Businessは 2021 年 7 月に廃止されました。 Microsoft Teamsにまだ移行していない場合は、「[小規模ビジネスでMicrosoft Teamsを設定](/microsoftteams/deploy-small-business)する」を参照してください。 <br/><br/>Microsoft Teams (または以前のSkype for Business) と統合すると、ビジネス内のユーザー間のワンクリック通信が可能になります。   |
 | **Web コンテンツ フィルタリング**<br/>(既定でオンになっています) | 不要なコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 [Web コンテンツ フィルターの設定に関するページを](#set-up-web-content-filtering)参照してください。 |
 | **Microsoft Intune接続**<br/>(Intuneがある場合は、この設定をオンにすることをお勧めします) | 組織のサブスクリプションに Microsoft Intune ([Microsoft 365 Business Premium](../../business/index.yml)に含まれる) が含まれている場合、Defender for Business はデバイスに関する情報を Intune と共有できます。  |
@@ -157,7 +157,7 @@ Defender for Business には、次世代の保護、ファイアウォール、W
 
 次の表では、Defender for Business で表示 (および必要に応じて編集) する設定について説明します。
 
-| カテゴリ | Setting | 説明 |
+| カテゴリ | 設定 | 説明 |
 |:---|:---|:---|
 | **セキュリティ センター** | **タイム ゾーン** | インシデント、検出された脅威、および自動調査&修復に表示される日付と時刻に使用するタイム ゾーンを選択します。 UTC またはローカル タイム ゾーンを使用できます (*推奨*)。  |
 | **Microsoft 365 Defender** | **Account** | データの格納場所、テナント ID、組織 (組織) ID など、詳細を表示します。 |
@@ -181,6 +181,4 @@ Defender for Business には、次世代の保護、ファイアウォール、W
 - [Microsoft Defender for Businessを使用した概要](mdb-get-started.md)
 - [Microsoft Defender for Businessでデバイスを管理する](mdb-manage-devices.md)
 - [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-- [Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-policies.md)
-
 - [Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-policies.md)

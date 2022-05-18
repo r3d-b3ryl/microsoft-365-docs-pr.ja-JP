@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: 組織で作成および使用されているYammer グループの数とそのアクティビティについて知るために、Yammer グループ アクティビティ レポートを取得します。
-ms.openlocfilehash: 443129beaf39a2e46bd5fbcb18bdb9cd9b4770c3
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Yammer グループ アクティビティ レポートを取得して、組織で作成および使用されているYammer グループの数とそのアクティビティの詳細を確認します。
+ms.openlocfilehash: 27e2057bb743c7d25d3ebb848151f7a32e3de52a
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781259"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467144"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-groups-activity-report"></a>管理センターでレポートをMicrosoft 365する - Yammer グループ アクティビティ レポート
 

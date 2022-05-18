@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score - コンテンツ コラボレーション
+title: Microsoft Productivity Score コンテンツ コラボレーションの分析情報
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: コンテンツ コラボレーションの詳細 - ユーザーは生産性スコアを体験します。
-ms.openlocfilehash: 12ef0d1f56e8aa122942394e9214b501c85ababd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: db747819b4c6a6599d1d7919c2a36f34204779a1
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324929"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466440"
 ---
 # <a name="content-collaboration--people-experiences"></a>コンテンツ コラボレーション – ユーザー エクスペリエンス
 

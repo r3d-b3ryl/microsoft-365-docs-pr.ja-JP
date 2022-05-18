@@ -1,5 +1,5 @@
 ---
-title: Migration Manager を使用して Google ファイルをビジネス向けのMicrosoft 365に移行する
+title: Google ファイルをビジネス向けのMicrosoft 365に移行する
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint Migration Manager を使用して、Google ファイルをビジネス向けのMicrosoft 365に移行する方法について説明します。
-ms.openlocfilehash: d22056a090ae288b01419f0435adbf8bd38f59b1
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+ms.openlocfilehash: 1e2bf548aea8ff95ad49c5b6161fbd03e65786d9
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825698"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468988"
 ---
 # <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migration Manager を使用して Google ファイルをビジネス向けのMicrosoft 365に移行する
 
@@ -56,7 +56,7 @@ Google ワークスペース環境にMicrosoft 365移行アプリをインスト
 9. インストールが完了したら、[完了] を選択 **します**。
 10. **[移行アプリのインストール] ページに** 戻り、[**次へ**] を選択します。
 11. [ **Google ワークスペースへのサインイン**] を選択し、Google ワークスペース管理者の資格情報を入力します。
-12. **[完了]** を選択します。
+12. [**完了**] を選択します。
 
 
 ### <a name="select-and-scan-your-drives"></a>ドライブを選択してスキャンする

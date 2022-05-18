@@ -21,12 +21,12 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 585b3be2149b1e94dc27633bac20707a6b193c0f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320608"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465978"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログを検索する
 
@@ -532,7 +532,6 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 |リスト アイテムの更新|ListItemUpdated|ユーザーが 1 つ以上のプロパティを変更して SharePoint リスト アイテムを更新しました。|
 |サイト列の更新|SiteColumnUpdated|ユーザーが 1 つ以上のプロパティを変更して SharePoint サイト列を更新しました。|
 |サイト コンテンツ タイプの更新|SiteContentTypeUpdated|ユーザーが 1 つ以上のプロパティを変更してサイト コンテンツ タイプを更新しました。|
-|リスト アイテムの表示|ListItemViewed|ユーザーが SharePoint リスト アイテムを表示しました。ユーザーがリスト アイテムを表示すると、同じユーザーの ListItemViewed イベントは、次の 5 分間、同じリスト アイテムに対して再度ログに記録されません。|
 
 ### <a name="sharing-and-access-request-activities"></a>共有アクティビティとアクセス要求アクティビティ
 

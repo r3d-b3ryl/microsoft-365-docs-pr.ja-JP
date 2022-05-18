@@ -15,14 +15,14 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft Defender ウイルス対策Windows デバイスをソフトウェアの脅威 (ウイルス、マルウェア、スパイウェアなど) から保護する方法について説明します。
-ms.openlocfilehash: c11ce9a2f38f1ecb7f47cd5b74e710d92c8ffbe0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 47f6af2b91eed8096a685f8d3281f16fdc677331
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325657"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466308"
 ---
-# <a name="threats-detected-by-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策によって検出された脅威
+# <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策による脅威保護の概要
 
 Microsoft Defender ウイルス対策は、ウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からWindows デバイスを保護します。
 

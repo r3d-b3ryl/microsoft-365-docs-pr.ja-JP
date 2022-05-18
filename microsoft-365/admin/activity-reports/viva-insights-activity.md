@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 - MOE150
 - GEA150
-description: Microsoft 365 管理センターのMicrosoft 365 レポート ダッシュボードで、Viva インサイト アクティビティの使用状況レポートのMicrosoft 365 Appsを取得する方法について説明します。
-ms.openlocfilehash: c0b19871db61f37585384766d4e44ccb602a661b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: 利用状況レポートのMicrosoft 365 Appsを取得する方法について説明します。たとえば、アクティブ ユーザーによるViva インサイトのユーザー導入について詳しく説明します。
+ms.openlocfilehash: ae79a1c547c695d86289544159e3492ae8d9bf86
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781317"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467210"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---viva-insights-activity"></a>管理センターでレポートをMicrosoft 365する - Viva インサイト アクティビティ
 

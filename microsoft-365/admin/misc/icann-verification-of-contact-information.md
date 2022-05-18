@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 0413dcce-26be-4b8c-b3fa-73ac1ac4fb35
 ROBOTS: NOINDEX
 description: ICANN 規制に準拠するように連絡先情報を検証する方法について説明します。
-ms.openlocfilehash: a1ea60422ebd503ff1cfaac325a5a74433756831
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f3c35bd258800ef7edc0cd1f7fda0b2f319ded4c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324915"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467912"
 ---
 # <a name="icann-verification-of-contact-information"></a>連絡先情報の ICANN 検証
 

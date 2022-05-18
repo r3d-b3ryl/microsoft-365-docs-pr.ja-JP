@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity スコア - プライバシー
+title: Microsoft Productivity Score と privacy insights
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 生産性スコアを使用してプライバシーを保護する方法。
-ms.openlocfilehash: 94e0e1fb3190bc45fb0ad580cd823cb121fb60cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 823e2cc087d3f0e9c486d8c0c4eca92ba42aee21
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320733"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467934"
 ---
 # <a name="privacy-controls-for-productivity-score"></a>生産性スコアのプライバシー 制御
 

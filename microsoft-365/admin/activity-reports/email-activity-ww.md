@@ -18,13 +18,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1cbe2c00-ca65-4fb9-9663-1bbfa58ebe44
-description: Microsoft 365 管理センターの [Microsoft 365 レポート] ダッシュボードを使用して電子メール アクティビティ レポートを取得する方法について説明します。
-ms.openlocfilehash: e7441bc24661f279a43a655d17ef23047ed48a43
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: Microsoft 365 管理センターの [Microsoft 365 レポート] ダッシュボードを使用して、電子メール アクティビティ レポートを取得し、ユーザーの電子メールの傾向を理解する方法について説明します。
+ms.openlocfilehash: b84d8c3e6e85ab64b1ec70379e7c016374f28e78
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400952"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467670"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-activity"></a>管理センターでレポートをMicrosoft 365する - 電子メール アクティビティ
 

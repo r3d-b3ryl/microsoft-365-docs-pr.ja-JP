@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 利用状況分析
+title: 使用状況分析Microsoft 365について
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: 組織がMicrosoft 365サービスを採用してコミュニケーションと共同作業を行う方法の概要を確認します。
-ms.openlocfilehash: a3c77fe9a4e6d26e62525c6267ab32a81c78289b
-ms.sourcegitcommit: b1066b2a798568afdea9c09401d52fa38fe93546
+ms.openlocfilehash: 92a6b1437fa092b54df5e10a6593d130e0808164
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61422821"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467956"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Microsoft 365 利用状況分析
 

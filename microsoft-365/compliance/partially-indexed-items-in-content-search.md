@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Microsoft Purview コンプライアンス ポータルで実行する電子情報開示検索に含めることができるExchangeとSharePointのインデックスのないアイテムについて説明します。
-ms.openlocfilehash: 0efb96f8d36868f182476a0eb7b0087beb3134f9
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0f3d7d4b2e2a7d4c3c23d89ad6c2b8ba20fd6afb
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417042"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468834"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが作成されたアイテム
 
@@ -163,9 +163,6 @@ SharePoint ドキュメントのインデックス作成制限の一覧につい
 - ファイルの種類はインデックス作成でサポートされており、インデックスが作成されますが、インデックス付けエラーや検索エラーが発生し、部分的にインデックス付きアイテムとしてファイルが返される可能性があります。 たとえば、大きなExcel ファイルの検索は部分的に成功する可能性があります (最初の 4 MB はインデックスが作成されるため)、ファイル サイズの制限を超えたため失敗します。 この場合、検索結果と部分的にインデックスが付けられたアイテムとして同じファイルが返される可能性があります。
 
 - [Microsoft 暗号化テクノロジ](encryption.md)で暗号化され、検索の条件に一致する電子メール メッセージに添付されているファイルはプレビューでき、エクスポート時に暗号化が解除されます。 現時点では、Microsoft 暗号化テクノロジで暗号化され (SharePointまたはOneDrive for Businessに格納されている) ファイルには、部分的にインデックスが作成されます。 
-
-   > [!NOTE]
-   > 秘密度ラベルを使用して暗号化されたファイルは暗号化解除されません。
 
 - S/MIME で暗号化された電子メール メッセージは、部分的にインデックスが作成されます。 これには、添付ファイルの有無に関係なく、暗号化されたメッセージが含まれます。
 

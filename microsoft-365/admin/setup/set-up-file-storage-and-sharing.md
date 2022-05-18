@@ -1,5 +1,5 @@
 ---
-title: ファイル ストレージと共有をセットアップする
+title: ファイルストレージと共有OneDrive設定する
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -30,12 +30,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Microsoft 365ストレージとMicrosoft 365ファイル共有にOneDriveとチーム サイトを使用する方法について説明します。
-ms.openlocfilehash: e17f4cdb7abefdc7374e1ada073c154d0f006216
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8fa78b4acbba85932778194f1785bee3fd04315c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417240"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465934"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Microsoft 365でファイル ストレージと共有を設定する
 
@@ -60,7 +60,7 @@ OneDriveサイトとチーム サイトの両方で、自分と従業員にど�
 OneDriveサイトとチーム サイトを一緒に使用する場合に、各場所に格納する内容に関する推奨事項を次に示します。<br/>
 
   
-|ストレージの場所|目的は何ですか|保存するファイル|
+|保存場所|目的は何ですか|保存するファイル|
 |:-----|:-----|:-----|
 |**OneDrive** |OneDriveにコンテンツを格納することは、コンピューターにファイルを格納するようなものです。他のユーザーが簡単にアクセスすることはできません。<br/> 詳細については、「[OneDrive for Businessとは」](https://support.microsoft.com/office/187f90af-056f-47c0-9656-cc0ddca7fdc2)を参照してください。 <br/> |他のチーム メンバーが定期的に共同作業を行ったり、アクセスしたりする必要がないビジネス ファイル。<br/> |
 |**SharePoint チーム サイト** <br/> |コラボレーション。 Microsoft 365 グループを作成すると (Microsoft 365 管理センター、Outlook、Microsoft Teamsでチームを作成するなど)、そのグループに対してSharePoint チーム サイトが作成されます。 同様に、SharePoint ホーム ページまたは新しいSharePoint管理センターから新しいSharePoint チーム サイトを作成すると、Microsoft 365 グループも作成されます。 詳細については、「[SharePoint チーム サイトとは」](https://support.microsoft.com/office/75545757-36c3-46a7-beed-0aaa74f0401e)および「[SharePoint Online でのチーム サイトの作成](https://support.microsoft.com/office/ef10c1e7-15f3-42a3-98aa-b5972711777d)」を参照してください。  <br/> |共有所有権を持つファイル。 組織内の作業単位ごとに個別のチーム サイトをお勧めします。 たとえば、人員と財務ドキュメントを小規模なチームに非公開にするには、別のチーム サイトを作成します。  <br/> |

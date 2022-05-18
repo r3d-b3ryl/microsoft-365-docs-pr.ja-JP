@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: SharePoint アクティビティ使用状況レポートを取得して、すべてのSharePoint ユーザーのアクティビティ、共有されたファイルの数、ストレージ使用率について把握します。
-ms.openlocfilehash: 939dcf5c81d68a7a399c725d44687423670ed65a
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: SharePoint アクティビティ使用状況レポートを入手して、ライセンスを持つユーザー ファイルの操作SharePoint、共有されたファイルの数、ストレージ使用率について説明します。
+ms.openlocfilehash: ecd44aad4e2bc1236ade623ad2723945e6422e7b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781560"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467232"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>管理センターでレポートをMicrosoft 365する - SharePoint アクティビティ
 

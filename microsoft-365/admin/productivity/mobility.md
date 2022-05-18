@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score - Mobility
+title: Microsoft Productivity Score and mobility insights
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 - MOE150
 description: モビリティの詳細 - ユーザーは生産性スコアを経験します。
-ms.openlocfilehash: 13d3fb9be30def2d8308037890a501d624d09b49
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 737083a8f874f3c50d44af607cf624166157e4dc
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319785"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465956"
 ---
-# <a name="mobility--people-experiences"></a>モビリティ - ユーザー エクスペリエンス
+# <a name="mobility-insights-score--people-experiences"></a>モビリティ分析情報スコア – ユーザー エクスペリエンス
 
 生産性スコアは、Microsoft 365とそれをサポートするテクノロジ エクスペリエンスを使用することで、組織のデジタル変革の過程に関する分析情報を提供します。 組織のスコアは、ユーザーとテクノロジエクスペリエンスの測定値を反映し、自分に似た組織のベンチマークと比較できます。 モビリティ カテゴリは、ユーザーエクスペリエンスメジャーの一部です。 詳細については、 [生産性スコアの概要](productivity-score.md) を確認し、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
 

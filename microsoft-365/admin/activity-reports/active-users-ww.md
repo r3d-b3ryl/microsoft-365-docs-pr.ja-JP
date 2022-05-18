@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: fc1cf1d0-cd84-43fd-adb7-a4c4dfa8112d
-description: Microsoft 365 管理センターの [Microsoft 365 レポート] ダッシュボードを使用してアクティブ ユーザー レポートを取得し、使用されている製品ライセンスの数を確認する方法について説明します。
-ms.openlocfilehash: 65ea3f3624bda4f33a8c5680a53749595dc7aa15
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: 管理センターの [Microsoft 365 レポート] ダッシュボードを使用してアクティブ ユーザー レポートを取得し、使用されている製品ライセンスの数を確認する方法について説明します。
+ms.openlocfilehash: 88041c5821c95271723320fb2b4474a369723fbb
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781997"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467978"
 ---
 # <a name="assess-the-microsoft-365-active-users-report"></a>アクティブ ユーザー のMicrosoft 365 レポートを評価する
 

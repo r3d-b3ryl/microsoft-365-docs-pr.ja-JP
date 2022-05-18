@@ -18,13 +18,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: c2ce12a2-934f-4dd4-ba65-49b02be4703d
-description: 電子メール アプリの使用状況レポートを取得して、Exchange Onlineに接続しているメール アプリと、ユーザーが使用しているOutlookバージョンについて知る方法について説明します。
-ms.openlocfilehash: c2d68c5b151b236ee51d0a06b4e51f6e6b16ede5
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+description: 電子メール アプリの使用状況レポートを取得して、Exchange Onlineに接続している電子メール アプリの数と、ユーザーが使用しているOutlookのバージョンを確認する方法について説明します。
+ms.openlocfilehash: 8a9a416e533bd1e8b30f385ec8b15db182e593c6
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400921"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467692"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---email-apps-usage"></a>管理センターでレポートをMicrosoft 365する - 電子メール アプリの使用状況
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Standardにサインアップする
+title: Microsoft 365 Business Standard にサインアップする
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,12 +14,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Microsoft 365 Business Standardを購入し、組織を設定します。
-ms.openlocfilehash: 2f4f282f204926c37271a6720abe23fa60053a98
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
+ms.openlocfilehash: af69dee6db7300a229d4be7c2a2466d7603e849f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651391"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466242"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 
@@ -73,7 +73,7 @@ Microsoft 365 Business Standardにサインアップする場合は、2 つの�
 
 |&nbsp;|**オプション 1** – Outlook、Hotmail、Yahoo、Gmail、またはその他のメール アカウント [でサインインする (簡易サインアップ)](#terms-of-service-update-for-simplified-sign-up-mode)|**オプション 2** – ビジネス ドメインを追加し、新しいビジネス メール アカウントを作成する |
 |---|---|---|
-|使用可能なアプリとサービス|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 この一連のアプリは、ブランド化されたメールをすぐに必要としない、または既に別のプロバイダーからのブランド化されたメールを使用していて、Microsoft Exchangeの使用を切り替える予定がない小規模企業に最適です。 既存のメール アカウント (outlook.com、Hotmail、Yahoo、Gmail など) でOutlookを使用します。|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 オプション 2 のMicrosoft 365 Business Standardでは、Outlookを含む新しいブランド化されたビジネスメール アカウント、ビジネス内の共有予定表、Bookings予定のスケジュール設定、会議の記録など、さまざまな追加サービスにアクセスすることもできます。 共有ドキュメントストレージとSharePointサイト、Microsoft PlannerとMicrosoft Lists、Microsoft 365 Business StandardとMicrosoft 365 Apps for businessは追加機能を提供しますオプション 2 を使用したサービス。 ビジネス内でのドキュメント共有の容易化、業界のコンプライアンス ニーズのサポート、従業員によるサービスの使用に対するアクセスと制御、およびTeamsおよびOffice内で動作する Microsoft 以外のアプリ (Salesforce、Adobe など) の幅広い統合をサポートします。|
+|使用可能なアプリとサービス|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 この一連のアプリは、ブランド化されたメールをすぐに必要としない、または既に別のプロバイダーからのブランド化されたメールを使用していて、Microsoft Exchangeの使用を切り替える予定がない小規模企業に最適です。 既存のメール アカウント (outlook.com、Hotmail、Yahoo、Gmail など) でOutlookを使用します。|Word、Excel、PowerPoint、OneDrive、Teams、Access を使用します。 オプション 2 のMicrosoft 365 Business Standardでは、Outlookを含む新しいブランド化されたビジネスメール アカウント、ビジネス内の共有予定表、Bookings予定のスケジュール設定、会議の記録など、さまざまな追加サービスにアクセスすることもできます。 共有ドキュメントストレージとSharePointサイト、Microsoft PlannerとMicrosoft Lists、Microsoft 365 Business StandardとMicrosoft 365 Apps for businessは追加機能を提供しますオプション 2 を使用したサービス。 ビジネス内でのドキュメント共有の容易化、業界のコンプライアンス ニーズのサポート、従業員によるサービスの使用に対するアクセスと制御、およびTeamsおよびOffice内で動作する Microsoft 以外のアプリ (Salesforce、Adobe など) の幅広い統合を制御できます。|
 |必要な知識|技術的な知識を持たずに作業を開始しましょう。|ドメインを購入するか、ドメインを所有する必要があります。 ドメインの所有権を証明するために技術的な知識が必要な場合があります。|
 |データの処理|[Microsoft サービス契約](https://go.microsoft.com/fwlink/p/?linkid=2180702)の補足条項に基づき入手でき、一部のリモート作業ツールとコラボレーション ツールを必要とし、Microsoft [のプライバシーに関する声明](https://go.microsoft.com/fwlink/?LinkId=521839)に基づいてデータのコントローラーとして機能することに慣れている企業に最適です。 このオプションを使用するサービスのサブスクライバーは、ドメインがアタッチされるまで、個人のユーザー コンテンツまたはデータにアクセスできません。 サブスクライバーは、ニーズに基づいてデータの所有権と知的財産権に関する考慮事項を評価する必要があります。 たとえば、自分のアカウントに保存されているドキュメント上の他のユーザーと共同で作業している場合、それらのドキュメントにアクセスできないようにすることができます。 そのため、それに応じて、データの所有権と知的財産権に関する考慮事項を評価する必要があります。 これとは別に、簡略化されたSign-Up アカウント内のドキュメントをドメイン アカウント サブスクリプションに転送しないことを選択できます。ユーザーが招待した後でも、そのドキュメントをドメイン アカウント サブスクリプションに転送することはできません。 つまり、後でドメイン アカウントを追加した場合でも、ドキュメントにアクセスできない可能性があります。|[Microsoft Online サブスクリプション契約](https://go.microsoft.com/fwlink/p/?linkid=2180430)で利用可能であり、Microsoft の [Data Protection Addendum](https://go.microsoft.com/fwlink/p/?linkid=2180314) の下で Microsoft がデータのプロセッサとして機能する必要があり、リモート作業およびコラボレーション ツールの完全なスイートが必要な企業に最適です。 規制対象業界にいるサブスクライバー、または従業員によるサービスの使用と Microsoft による関連データの処理の両方について、より詳細な制御を求めるサブスクライバーは、オプション 2 を選択し、ドメインをアタッチし、ドメイン アカウント企業レベルの契約にサインアップする必要があります。|
 
@@ -152,7 +152,7 @@ Microsoft 365 Business Standardにサインアップする場合は、2 つの�
 
 ビジネス名の変更に役立つ小規模ビジネス サポートエキスパートにお問い合わせください。 詳細については、「 [サポートを受ける」を参照](../get-help-support.md)してください。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 [新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する](../setup/setup-business-standard.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score - Communication
+title: Microsoft Productivity Score and communication insights
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: コミュニケーション - ユーザーの生産性スコアの詳細。
-ms.openlocfilehash: 3755f3e8c0ab482a2726d1e132d6e2296df08dc7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7d0ac9312fcdf9604d2f63dff84c5c23ba901655
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325923"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468418"
 ---
-# <a name="communication--people-experiences"></a>コミュニケーション – ユーザー エクスペリエンス
+# <a name="communication-insights-score-people-experiences"></a>コミュニケーション分析情報スコア – People エクスペリエンス
 
-生産性スコアは、組織がMicrosoft 365を使用する方法とそれをサポートするテクノロジ エクスペリエンスに関する分析情報を使用して、デジタル変革への道のりをサポートします。 組織のスコアはユーザーと技術エクスペリエンスの測定を反映しており、同様の規模の別の組織によるベンチマークと比較できます。 コミュニケーション カテゴリは、ユーザーエクスペリエンスメジャーの一部です。 詳細については、 [生産性スコアの概要](productivity-score.md) を確認し、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
+生産性スコアは、組織での Microsoft 365 の使用方法に関する分析情報とそれをサポートする技術エクスペリエンスを提供することで、デジタル変革の行程をサポートします。 組織のスコアはユーザーと技術エクスペリエンスの測定を反映しており、同様の規模の別の組織によるベンチマークと比較できます。 コミュニケーション カテゴリは、ユーザーエクスペリエンスメジャーの一部です。 詳細については、 [生産性スコアの概要](productivity-score.md) を確認し、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
 
 ## <a name="prerequisites"></a>前提条件
 

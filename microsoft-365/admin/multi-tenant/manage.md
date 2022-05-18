@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: テナント スイッチャーとマルチテナント ビューを使用して、単一の場所からテナントを管理する機能を提供する方法について説明します。
-ms.openlocfilehash: 0058bdb45b42e2c67b96ff3e30ce1cd04e5658b2
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: 4a1168b1c2676bf25f0bb4ad7f3353a5e65f8caa
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64713957"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468088"
 ---
-# <a name="multi-tenant-management"></a>マルチテナント管理
+# <a name="multi-tenant-management-for-microsoft-365-partner-admins"></a>Microsoft 365 パートナー管理者向けのマルチテナント管理
 
 マルチテナント管理は、Microsoft 365 パートナー管理者が管理するすべてのテナントを 1 つの場所から管理できる統合された形式の管理を提供します。 代理管理者ロールを持ち、複数のテナントを管理するパートナーの場合は、次のことができます。
 

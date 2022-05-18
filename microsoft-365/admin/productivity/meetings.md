@@ -1,5 +1,5 @@
 ---
-title: Microsoft 生産性スコア - 会議
+title: Microsoft Productivity Score and meetings insights
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,14 +19,14 @@ search.appverid:
 - MET150
 - MOE150
 description: 会議の詳細 - ユーザーは生産性スコアを経験します。
-ms.openlocfilehash: 88aae1ac85e9e8f91592bdd17b6a14bb897d9051
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c680a54c2da2b1d49ecb7af234d85741f384fddc
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328569"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466418"
 ---
-# <a name="meetings--people-experiences"></a>会議 – ユーザーエクスペリエンス
+# <a name="meetings-insights-score--people-experiences"></a>Meetings insights score – People エクスペリエンス
 
 生産性スコアは、Microsoft 365とそれをサポートするテクノロジ エクスペリエンスを使用することで、組織のデジタル変革の過程に関する分析情報を提供します。 組織のスコアは、ユーザーとテクノロジエクスペリエンスの測定値を反映し、自分に似た組織のベンチマークと比較できます。 会議カテゴリは、ユーザーエクスペリエンスメジャーの一部です。 詳細については、 [生産性スコアの概要](productivity-score.md) を確認し、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
 

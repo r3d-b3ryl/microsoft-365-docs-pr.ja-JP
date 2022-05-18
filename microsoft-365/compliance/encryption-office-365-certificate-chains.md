@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Microsoft 365のルート証明書と証明機関 (CA) の完全な一覧を表示します。
-ms.openlocfilehash: 3222b22dc775f72ac1a9c4e878bd68b2f7dc7a04
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: a15c22218d481f62e1363e3ef4d521bd59283f10
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099237"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468000"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Microsoft 365 暗号化チェーン
 
@@ -285,7 +285,7 @@ Microsoft 365は、さまざまな証明書プロバイダーを利用します�
 | **拇印 (SHA-256)** | 6AC159B4C2BC8E729F3B84642EF1286BCC80D775FE278C740ADA468D59439025 |
 | **Pin (SHA-256)** | 9w0QP9HzLXkfs+4zENaUFq2XKcQON1oyksoJ+Gg2AZE= |
 | **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_2009.crl |
-| **OCSP URL** | http://root-c3-ca2-2009.ocsp.d-trust.net |
+| **OCSP URL** | `http://root-c3-ca2-2009.ocsp.d-trust.net` |
 
 ### <a name="d-trust-ssl-class-3-ca-1-ev-2009"></a>**D-TRUST SSL クラス 3 CA 1 EV 2009**
 
@@ -304,7 +304,7 @@ Microsoft 365は、さまざまな証明書プロバイダーを利用します�
 | **拇印 (SHA-256)** | B0935DC04B4E60C0C42DEF7EC57A1B1D8F958D17988E71CC80A8CF5E635BA5B4 |
 | **Pin (SHA-256)** | lv5BNZ5aWd27ooolUL-FTwIaaQwG4yyH3rss4X8= |
 | **CRL URL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
-| **OCSP URL** | http://root-c3-ca2-ev-2009.ocsp.d-trust.net |
+| **OCSP URL** | `http://root-c3-ca2-ev-2009.ocsp.d-trust.net` |
 
 ### <a name="digicert-basic-rsa-cn-ca-g2"></a>**DigiCert Basic RSA CN CA G2**
 
@@ -497,8 +497,8 @@ Microsoft 365は、さまざまな証明書プロバイダーを利用します�
 | **拇印 (SHA-1)** | 65BE102BE26928650E0EF54DC8F4F15AF5F98E8B |
 | **拇印 (SHA-256)** | 24F91C0705A0A5338641B365FB0D9D9709B56297CFF1857E73C02C1636D486AA |
 | **Pin (SHA-256)** | LvRiGEjRqfzurezaWuj8Wie2gyHMrW5Q06LspMnox7A= |
-| **CRL URL** | http://crl.globalsign.net/root-r2.crl |
-| **OCSP URL** | http://ocsp.globalsign.com/rootr2 |
+| **CRL URL** | `http://crl.globalsign.net/root-r2.crl` |
+| **OCSP URL** | `http://ocsp.globalsign.com/rootr2` |
 
 ### <a name="globalsign-extended-validation-ca---sha256---g3"></a>**GlobalSign 拡張検証 CA - SHA256 - G3**
 
@@ -853,7 +853,7 @@ Microsoft 365は、さまざまな証明書プロバイダーを利用します�
 | **拇印 (SHA-1)** | 6AD2B04E2196E48BF685752890E811CD2ED60606 |
 | **拇印 (SHA-256)** | 7373D219B42547E41BCB752BCBE93F592FF6F99C340CE57B73D38C3EC0BA98 |
 | **Pin (SHA-256)** | 8XFPrRr4VxmEIYKUu35QtR3oGbduX1AlrBzaBUHgp7c= |
-| **AIA URL** | https://cacert.omniroot.com/baltimoreroot.crt<br>https://cacert.omniroot.com/baltimoreroot.der |
+| **AIA URL** | `https://cacert.omniroot.com/baltimoreroot.crt`<br>`https://cacert.omniroot.com/baltimoreroot.der` |
 | **CRL URL** | http://cdp1.public-trust.com/CRL/Omniroot2025.crl |
 | **OCSP URL** | http://ocsp.omniroot.com/baltimoreroot |
 
@@ -931,8 +931,8 @@ aia.entrust.net/l1k-chain256.cer<br>
 apps.identrust.com/roots/dstrootcax3.p7c<br>
 <https://cacert.a.omniroot.com/vassg142.crt><br>
 <https://cacert.a.omniroot.com/vassg142.der><br>
-<https://cacert.omniroot.com/baltimoreroot.crt><br>
-<https://cacert.omniroot.com/baltimoreroot.der><br>
+https://cacert.omniroot.com/baltimoreroot.crt<br>
+https://cacert.omniroot.com/baltimoreroot.der<br>
 cacerts.digicert.com/DigiCertCloudServicesCA-1.crt<br>
 cacerts.digicert.com/DigiCertSHA2ExtendedValidationServerCA.crt<br>
 cacerts.digicert.com/DigiCertSHA2HighAssuranceServerCA.crt<br>

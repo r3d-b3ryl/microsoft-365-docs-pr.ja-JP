@@ -21,19 +21,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchangeオンライン管理者は、組織の電子メールとメールボックスを管理します。 たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
-ms.openlocfilehash: f046d9d85c677d0793d2b991736185b49f4174e9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Exchange Online管理者は、組織の電子メールとメールボックスを管理し、たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
+ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315331"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467100"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
 
 Microsoft 365を管理するために、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>から組織のメールとメールボックスを管理するためのアクセス許可をユーザーに[割り当てることができます](assign-admin-roles.md)。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
   
- **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、Exchange Online サービスの正常性や変更通知やリリース通知など、Microsoft 365 管理センターの重要な情報を確認できます。
+ **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、ユーザーは Microsoft 365 管理センター での重要な情報 (Exchange Online サービスの正常性など) の確認や、通知内容の変更および通知のリリースを行うことができます。
 
 Exchange 管理者の役割を割り当てられた場合にユーザーが実行できる重要なタスクのいくつかを次に説明します。
   

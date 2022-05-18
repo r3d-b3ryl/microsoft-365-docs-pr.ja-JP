@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a3d8caa02aa04412925b4d0648d166194df0548
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319201"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468802"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -125,7 +125,7 @@ ms.locfileid: "65319201"
 
 - [デバイス グループ定義に、](/microsoft-365/security/defender-endpoint/machine-groups) 条件ごとに複数の値を含めることができるようになりました。 複数のタグ、デバイス名、ドメインを 1 つのデバイス グループの定義に設定できます。
 
-- [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intuneがモバイル アプリケーションの管理に使用されている場合に、マネージド アプリケーション内で組織のデータを保護Microsoft Defender for Endpointできます。 モバイル アプリケーション管理の詳細については、 [このドキュメントを参照してください](/microsoft-365/mem/intune/apps/mam-faq)。
+- [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intuneがモバイル アプリケーションの管理に使用されている場合に、マネージド アプリケーション内で組織のデータを保護Microsoft Defender for Endpointできます。 モバイル アプリケーション管理の詳細については、 [このドキュメントを参照してください](/mem/intune/apps/mam-faq)。
 
 - [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能は、Android用のMicrosoft Defender for Endpoint アプリと統合されるようになりました。 この統合により、組織は 1 つのセキュリティ アプリでシンプルなエンド ユーザー エクスペリエンスを提供できます。モバイル脅威の防御とモバイル デバイスからオンプレミスのリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
 

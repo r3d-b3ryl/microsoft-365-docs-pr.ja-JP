@@ -10,17 +10,16 @@ ms.topic: article
 author: martyav
 ms.author: v-maave
 ms.custom: nextgen
-ms.date: 10/19/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 24e43ac3e99f99061489e2719c76245270422c57
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5e0db56306b1e56ee0ab21d2c3728f30a8c47ec8
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419662"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468242"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -29,7 +28,7 @@ ms.locfileid: "65419662"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Microsoft Defender ウイルス対策
+- [Microsoft Defender ウイルス対策](https://www.microsoft.com/windows/comprehensive-security)
 
 **プラットフォーム**
 - Windows
@@ -91,7 +90,7 @@ GPresult.exe /h gpresult.html
 
 GPResults レポートの見出しの下に、*コンポーネント/Windows Defender ウイルス対策Windows*、Microsoft Defender ウイルス対策がオフになっていることを示す次のエントリのようなものが表示されることがあります。
 
-ポリシー|Setting|GPO を獲得する
+ポリシー|設定|GPO を獲得する
 ---|---|---
 Windows Defender ウイルス対策をオフにする|Enabled|Win10-Workstations
 
@@ -104,7 +103,7 @@ DisableAntiSpyware|-
 GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
-操作|Update
+アクション|Update
 **Properties**|
 Hive|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender

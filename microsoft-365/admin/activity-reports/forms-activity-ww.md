@@ -19,13 +19,13 @@ search.appverid:
 - MST160
 - MET150
 - MOE150
-description: Microsoft 365 管理センターの [Microsoft 365 レポート] ダッシュボードを使用して、Microsoft Forms アクティビティ レポートを取得する方法について説明します。
-ms.openlocfilehash: c00c9e91d4b8e37021a30798088f46b786b3b4fc
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Microsoft 365 レポート ダッシュボードを使用してMicrosoft Forms アクティビティ レポートを取得する方法と、ライセンスを持つユーザーがフォームを操作する方法を確認する方法について説明します。
+ms.openlocfilehash: ccfacbfb7450aef7c1880e7022b374799ac8307b
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781931"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467648"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>管理センターでレポートをMicrosoft 365する - フォーム アクティビティ
 

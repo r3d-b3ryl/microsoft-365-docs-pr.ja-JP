@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score - Microsoft 365 アプリの正常性
+title: 生産性スコアとMicrosoft 365 アプリの正常性
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Apps正常性 - テクノロジエクスペリエンスの生産性スコアの詳細。
-ms.openlocfilehash: 2e8e44c954d8d1d6bacca766bd528c3897b7686b
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: a87bd49ace301eeb6f48edc31fba5a02d0386de6
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782151"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466374"
 ---
 # <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 アプリの正常性 – テクノロジ エクスペリエンス
 

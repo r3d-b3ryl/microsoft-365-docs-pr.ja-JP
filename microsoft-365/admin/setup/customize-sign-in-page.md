@@ -1,5 +1,5 @@
 ---
-title: サインイン ページに会社のブランドを追加する
+title: Microsoft 365 サインイン ページに会社のブランドを追加する
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -23,14 +23,14 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Azure Active Directoryを使用して、Microsoft 365サインイン ページをカスタマイズします。 サインイン ページにイラスト、ロゴ、テキストを追加できます。
-ms.openlocfilehash: 39bbda08e280c5bc1eb0eee321de9e8f4eeeabce
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: ec1fb413b8b8b3fa0100e0751a7971b6c5dd5441
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60171641"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466330"
 ---
-# <a name="add-your-company-branding-to-the-sign-in-page"></a>サインイン ページに会社のブランドを追加する
+# <a name="add-your-company-branding-to-the-microsoft-365-sign-in-page"></a>Microsoft 365 サインイン ページに会社のブランドを追加する
 
  これで、Microsoft 365 サブスクリプションに含まれるAzure Active Directory (AD) サブスクリプションを使用して、ユーザーに表示されるサインイン ページをカスタマイズできるようになりました。 
   

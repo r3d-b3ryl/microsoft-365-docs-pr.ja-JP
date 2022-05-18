@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: a27f1a99-3557-4f85-9560-a28e3d822a40
-description: グループとそのアクティビティについて知るためのMicrosoft 365 グループ レポートを取得します。
-ms.openlocfilehash: d4130d577341bbc8c4516234964ea9e805be81ee
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Microsoft 365 グループ レポートを取得して、組織内のグループのアクティビティに関する分析情報を取得し、作成および使用されているグループの数を確認します。
+ms.openlocfilehash: 1c51ddf997fb0c1c3e2416d979b83b339c414d93
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781679"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467374"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-groups"></a>管理センターでの Microsoft 365 レポート - Microsoft 365 グループ
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 管理 モバイル アプリについて
+title: Microsoft 365管理者モバイル アプリについて
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: web ベースのMicrosoft 365 管理センターのコンパニオンであるMicrosoft 365 管理 アプリを入手して、電話またはTablet PCからオンライン組織を管理します。
-ms.openlocfilehash: b4d3759002b7ad175a98a6619fc5cbcade16f7a7
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a6e267a06ea902638d9c5ef5a9c0c7aee44823d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436165"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466748"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 管理 モバイル アプリについて
 

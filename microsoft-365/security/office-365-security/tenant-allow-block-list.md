@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e112b6b386e0a2961119478aae7d4cb53138ccf
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363316"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468110"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -485,3 +485,10 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **インフラストラクチャ**: tms.mx.com
 
 スプーフィングを許可できるのは、そのドメインからのメッセージ *と* 送信インフラストラクチャ ペアからのメッセージだけです。 gmail.com をスプーフィングしようとしている他の送信者は許可されません。 tms.mx.com から発信された他のドメインの送信者からのメッセージは、スプーフィング インテリジェンスによってチェックされます。
+
+
+## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>許可エントリまたはブロック エントリを追加した後に必要なもの
+
+申請ポータルまたはテナント許可/ブロック リストのブロック エントリを使用して許可エントリを追加した後、エントリはすぐに動作を開始する必要があります。
+
+システムが許可またはブロックについて学習したかどうかを確認するために、エントリの有効期限を 30 日後に自動的に設定することをお勧めします。 そうでない場合は、システムに学習にさらに 30 日間を与えるために、別のエントリを作成する必要があります。
