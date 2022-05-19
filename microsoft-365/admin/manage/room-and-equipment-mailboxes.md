@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9f518a6d-1e2c-4d44-93f3-e19013a1552b
 description: '会議室メールボックスまたは備品用メールボックスを作成すると、組織の全ユーザーが Outlook を使用して会議やイベント用にそのメールボックスを予約できます。 '
-ms.openlocfilehash: afd24a2780478718cb74fdd6681d53a905f96b57
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 654bd8779d7d66db5324e62c1397c3251da11945
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64633263"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469153"
 ---
-# <a name="room-and-equipment-mailboxes"></a>会議室メールボックスと備品用メールボックス
+# <a name="create-microsoft-365-room-and-equipment-mailboxes"></a>Microsoft 365 のルームと備品メールボックスを作成
 
 全ユーザーが使用する必要のある会議室、社用車、備品がある場合、それらのリソースはすべてのユーザーが予約できるようにする必要があります。 このような場合、各リソースについて Microsoft 365 で会議室メールボックスまたは備品用メールボックスを作成することをお勧めします。 たとえば、1 階の会議室用、メディア機器用、移動台車用にメールボックスを作成することができます。
   
