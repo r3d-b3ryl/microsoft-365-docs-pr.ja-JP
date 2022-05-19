@@ -3,7 +3,7 @@ title: Office 365 IP Address と URL Web サービスに含まれない、その
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 01/31/2022
+ms.date: 05/18/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイント Web サービスには、特定のシナリオに対していくつかのエンドポイントが含まれていません。'
 hideEdit: true
-ms.openlocfilehash: 1592ea49cc33edf7e75998136975433bd764c432
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: bebffa1cb03a85ffd5ab7519095f38b7ae5cf985
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915887"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587350"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP Address と URL Web サービスに含まれない、その他のエンドポイント
 
@@ -51,15 +51,15 @@ DNS とは別に、これらのインスタンスは、説明されている特�
 |---|---|---|---|
 |1|**PST とファイル インジェスト用の [インポート サービス](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6)**|その他の要件については、 [Import Service](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) を参照してください。|特殊な送信シナリオ|
 |2|**[Office 365 用の Microsoft サポート/回復アシスタント](https://diagnostics.office.com/#/)**|<https://autodiscover.outlook.com> <br> <https://officecdn.microsoft.com> <br> <https://api.diagnostics.office.com> <br> <https://apibasic.diagnostics.office.com> <br> <https://autodiscover-s.outlook.com> <br> <https://cloudcheckenabler.azurewebsites.net> <br> <https://login.live.com> <br> <https://login.microsoftonline.com> <br> <https://login.windows.net> <br> <https://o365diagtelemetry.trafficmanager.net> <br> <https://odc.officeapps.live.com> <br> <https://offcatedge.azureedge.net> <br> <https://officeapps.live.com> <br> <https://outlook.office365.com> <br> <https://outlookdiagnostics.azureedge.net>|送信サーバー トラフィック|
-|3|**Azure AD Connect (SSO オプション付き)** <p> WinRM &リモート PowerShell|顧客の STS 環境 (AD FS サーバーおよび AD FS プロキシ) \| TCP ポート 80 と 443|受信サーバー トラフィック|
+|3|**Azure AD Connect (SSO オプションを使用)** <p> WinRM &リモート PowerShell|顧客の STS 環境 (AD FS サーバーおよび AD FS プロキシ) \| TCP ポート 80 と 443|受信サーバー トラフィック|
 |4|AD FS プロキシ サーバーなどの **STS** (フェデレーションのお客様のみ)|顧客の STS (AD FS プロキシなど)\|ポート TCP 443 または TCP 49443 (ClientTLS使用)|受信サーバー トラフィック|
 |5|**[Exchange Online ユニファイド メッセージング/SBC 統合](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)**|オンプレミス セッション ボーダー コントローラーと \*.um.outlook.com 間の双方向|送信サーバー専用トラフィック|
 |6 |**メールボックスの移行**<p>メールボックスの移行がオンプレミス [Exchange ハイブリッド](/exchange/exchange-deployment-assistant)からOffice 365に開始されると、Office 365は公開されたExchange Web サービス (EWS)/メールボックス レプリケーション サービス (MRS) サーバーに接続します。 Exchange Online サーバーが特定のソース IP 範囲からの受信接続を制限するために使用する NAT IP アドレスが必要な場合は、"Exchange Online" サービス領域の下の [OFFICE 365 URL & IP 範囲](urls-and-ip-address-ranges.md)に一覧表示されます。 <p> 特定のソース IP 範囲からの TCP 443 接続を制限する前に、MRS プロキシが個別の FQDN とパブリック IP アドレスに解決されるようにすることで、OWA などの発行済みの EWS エンドポイントへのアクセスが影響を受けないように注意する必要があります。|顧客のオンプレミス EWS/MRS プロキシ <br> TCP ポート 443|受信サーバー トラフィック|
 |7 |Exchange Free/Busy 共有などの **[ハイブリッド](/exchange/exchange-deployment-assistant)共存関数**。|顧客のオンプレミス Exchange サーバーのバージョン|受信サーバー トラフィック|
 |8 |**ハイブリッド プロキシ認証 [をExchange](/exchange/exchange-deployment-assistant)する**|顧客のオンプレミス STS|受信サーバー トラフィック|
 |9 |[Exchange ハイブリッド](/exchange/exchange-deployment-assistant)構成ウィザードを使用してハイブリッド **[Exchange構成](/exchange/hybrid-configuration-wizard)** するために使用します。 <p> 注: これらのエンドポイントは、Exchange ハイブリッドの構成にのみ必要です。|TCP ポート 80 と 443 の domains.live.com は、Exchange 2010 SP3 ハイブリッド構成ウィザードでのみ必要です <p> GCC High、DoD IP アドレス: 40.118.209.192/32、168.62.190.41/32 <p> Worldwide Commercial & GCC: \*.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net ; <br> aka.ms/hybridwizard; <br> \*shcwreleaseprod.blob.core.windows.net/shcw/;|送信サーバー専用トラフィック|
-|10|**AutoDetect サービス** は、iOS および Android 用 [のOutlook](/exchange/exchange-deployment-assistant)を使用した [ハイブリッドモダン認証を使用するExchangeハイブリッド シナリオで](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)使用されます <p> `*.acompli.net` <br> `*.outlookmobile.com` <br> `*.outlookmobile.us` <br> `52.125.128.0/20` <br> `52.127.96.0/23`|顧客の TCP 443 のオンプレミス Exchange サーバー|受信サーバー トラフィック|
-|11|**ハイブリッド Azure AD認証をExchangeする**|*.msappproxy.net|TCP 送信サーバー専用トラフィック|
+|10|**AutoDetect サービス** は、iOSと [Android](/exchange/exchange-deployment-assistant)[のOutlookを備えたハイブリッドモダン認証を使用するExchangeハイブリッド シナリオで](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)使用されます <p> `<email_domain>.outlookmobile.com` <br> `<email_domain>.outlookmobile.us` <br> `52.125.128.0/20` <br> `52.127.96.0/23`|顧客の TCP 443 のオンプレミス Exchange サーバー|受信サーバー トラフィック|
+|11|**ハイブリッド Azure AD 認証をExchangeする**|*.msappproxy.net|TCP 送信サーバー専用トラフィック|
 |12 |Office 2016 のSkype for Businessには、UDP ポートを使用する **ビデオ ベースの画面共有** が含まれています。 Office 2013 以前のSkype for Business クライアントでは、TCP ポート 443 経由で RDP が使用されました。|TCP ポート 443 が 52.112.0.0/14 に開きます|Office 2013 以前の Skype for Business の古いクライアント バージョン|
 |13|Skype for Business Online への **ハイブリッド オンプレミス サーバー接続** をSkype for Businessする|13.107.64.0/18, 52.112.0.0/14 <br> UDP ポート 50,000-59,999 <br> TCP ポート 50,000-59,999; 5061|Skype for Business オンプレミス サーバーの送信接続性|
 |14|オンプレミスハイブリッド接続を備えた **クラウド PSTN** では、オンプレミス ホストに対して開かれたネットワーク接続が必要です。 Skype for Business Online ハイブリッド構成の詳細については、|「[Skype for Business Server と Office 365 間のハイブリッド接続を計画する](/skypeforbusiness/hybrid/plan-hybrid-connectivity)」を参照してください。|Skype for Business オンプレミス ハイブリッド受信|
@@ -67,10 +67,10 @@ DNS とは別に、これらのインスタンスは、説明されている特�
 |16|**Microsoft Teams FQDN** <p> Internet Explorer または Microsoft Edge を使用している場合は、最初にサード パーティの cookie を有効にし、信頼済みサイトに (スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加え) Teams の FQDN を追加する必要があります。詳細については、「[Microsoft Teams の既知の問題](/microsoftteams/known-issues)」を参照してください。||信頼済みサイト|
 |17 |**Sharepoint Online と OneDrive for Business FQDN** <p> 「\<tenant\>」が入ったすべての FQDN (「.sharepoint.com」) を機能させるには、クライアントの IE または Edge の信頼済みサイト ゾーンに含める必要があります。スイート製品全体の FQDN、CDN、および 14 行目に記載されているテレメトリに加えて、これらのエンドポイントも追加する必要があります。||信頼済みサイト|
 |18 |**Yammer**  <br> Yammer はブラウザーでのみ利用でき、認証されたユーザーはプロキシを経由する必要があります。Yammer のすべての FQDN をさせるには、クライアントの IE またはエッジの信頼済みサイト ゾーンに含める必要があります。||信頼済みサイト|
-|19|**[Azure AD Connect](/azure/active-directory/hybrid/)** を使用して、オンプレミスのユーザー アカウントをAzure ADに同期します。|詳細については、「[ハイブリッド ID で必要なポートとプロトコル](/azure/active-directory/hybrid/reference-connect-ports)」、「[Azure AD の接続のトラブルシューティング](/azure/active-directory/hybrid/tshoot-connect-connectivity)」、および「[Azure AD Connect Health エージェントのインストール](/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)」を参照してください。|送信サーバー専用トラフィック|
-|20|**[中国](/azure/active-directory/hybrid/)** で 21 ViaNet とAzure AD Connectして、オンプレミスのユーザー アカウントをAzure ADに同期します。|\*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <br> secure.aadcdn.partner.microsoftonline-p.cn:443 <br> \*.partner.microsoftonline.cn:443 <p> 「[Azure AD の接続に関する問題のトラブルシューティング](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)」も参照してください。|送信サーバー専用トラフィック|
+|19|**[Azure AD Connect](/azure/active-directory/hybrid/)** を使用して、オンプレミスのユーザー アカウントを Azure AD に同期します。|詳細については、「[ハイブリッド ID で必要なポートとプロトコル](/azure/active-directory/hybrid/reference-connect-ports)」、「[Azure AD の接続のトラブルシューティング](/azure/active-directory/hybrid/tshoot-connect-connectivity)」、および「[Azure AD Connect Health エージェントのインストール](/azure/active-directory/hybrid/how-to-connect-health-agent-install#outbound-connectivity-to-the-azure-service-endpoints)」を参照してください。|送信サーバー専用トラフィック|
+|20|**[Azure AD Connect](/azure/active-directory/hybrid/)**、中国で 21 ViaNet を使用して、オンプレミスのユーザー アカウントを Azure AD に同期します。|\*.digicert.com:80 <BR> \*.entrust.net:80 <BR> \*.chinacloudapi.cn:443 <br> secure.aadcdn.partner.microsoftonline-p.cn:443 <br> \*.partner.microsoftonline.cn:443 <p> 「[Azure AD の接続に関する問題のトラブルシューティング](https://docs.azure.cn/zh-cn/active-directory/hybrid/tshoot-connect-connectivity)」も参照してください。|送信サーバー専用トラフィック|
 | 21|**Microsoft Stream** (Azure AD ユーザー トークンが必要)。 <br> Office 365 ワールドワイド (GCC を含む)|\*.cloudapp.net <br> \*.api.microsoftstream.com <br> \*.notification.api.microsoftstream.com <br> amp.azure.net <br> api.microsoftstream.com <br> az416426.vo.msecnd.net <br> s0.assets-yammer.com <br> vortex.data.microsoft.com <br> web.microsoftstream.com <br> TCP ポート 443|受信サーバー トラフィック|
-|22|多要素認証要求には **MFA サーバー** を使用します。これは、サーバーの新しいインストールと、Active Directory Domain Services (AD DS) での設定の両方です。|[Azure AD多要素認証サーバーの概要](/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)に関する説明を参照してください。|送信サーバー専用トラフィック|
+|22|多要素認証要求には **MFA サーバー** を使用します。これは、サーバーの新しいインストールと、Active Directory Domain Services (AD DS) での設定の両方です。|[Azure AD 多要素認証サーバーの概要に関する](/azure/active-directory/authentication/howto-mfaserver-deploy#plan-your-deployment)ページを参照してください。|送信サーバー専用トラフィック|
 |23|**Microsoft Graph変更通知** <p> 開発者は[、変更通知](/graph/webhooks?context=graph%2fapi%2f1.0&view=graph-rest-1.0)を使用して、Microsoft Graphのイベントをサブスクライブできます。|Public Cloud: 52.159.23.209, 52.159.17.84, 52.147.213.251, 52.147.213.181, 13.85.192.59, 13.85.192.123, 13.89.108.233, 13.89.104.147, 20.96.21.67, 20.69.245.215, 137.135.11.161, 137.135.11.116, 52.159.107.50, 52.159.107.4, 52.229.38.131, 52.183.67.212, 52.142.114.29, 52.142.115.31, 51.124.75.43, 51.124.73.177, 20.44.210.83, 20.44.210.146, 40.80.232.177, 40.80.232.118, 20.48.12.75, 20.48.11.201, 104.215.13.23, 104.215.6.169, 52.148.24.136, 52.148.27.39, 40.76.162.99, 40.76.162.42, 40.74.203.28, 40.74.203.27, 13.86.37.15, 52.154.246.238, 20.96.21.98, 20.96.21.115, 137.135.11.222, 137.135.11.250, 52.159.109.205, 52.159.102.72, 52.151.30.78, 52.191.173.85, 51.104.159.213, 51.104.159.181, 51.138.90.7, 51.138.90.52, 52.148.115.48, 52.148.114.238, 40.80.233.14, 40.80.239.196, 20.48.14.35, 20.48.15.147, 104.215.18.55, 104.215.12.254, 20.199.102.157, 20.199.102.73, 13.87.81.123, 13.87.81.35, 20.111.9.46, 20.111.9.77, 13.87.81.133, 13.87.81.141 <p> Microsoft Cloud for US Government: 52.244.33.45、52.244.35.174、52.243.157.104、 52.243.157.105、52.182.25.254、52.182.25.110、52.181.25.67、52.181.25.66、 52.244.111.156、52.244.111.170、52.243.147.249、52.243.148.1 9、52.182.32.51、52.182.32.143、52.181.24.199、52.181.24.220 <p> 21Vianet によって運用される Microsoft Cloud China: 42.159.72.35、42.159.72.47、 42.159.180.55、42.159.180.56、40.125.138.23、40.125.136.69、40.72.155.199、40.72.155.216 <br> TCP ポート 443 <p> 注: 開発者は、サブスクリプションの作成時にさまざまなポートを指定できます。|受信サーバー トラフィック|
 |24|**ネットワーク接続状態インジケーター**<p>コンピューターがインターネットに接続されているかどうかを判断するためにWindows 10と 11 によって使用されます (Windows 以外のクライアントには適用されません)。 この URL に到達できない場合、Windowsはインターネットに接続されていないと見なされ、Enterprise用の M365 Apps はアクティブ化の状態を確認しようとせず、Exchangeやその他のサービスへの接続が失敗します。|www.msftconnecttest.com <br> 13.107.4.52<p>Windows 11 Enterprise[の接続エンドポイントの管理と、Windows 10 Enterprise](/windows/privacy/manage-windows-11-endpoints)[バージョン 21H2 の接続エンドポイントの管理](/windows/privacy/manage-windows-21h2-endpoints)に関するページも参照してください。|送信サーバー専用トラフィック|
 |

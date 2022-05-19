@@ -3,6 +3,7 @@ title: Office 365 エンドポイントを管理する
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
+ms.date: 05/18/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -18,12 +19,12 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ組織のネットワーク アーキテクチャで動作するように Office 365 エンドポイントを管理する方法について説明します。
-ms.openlocfilehash: 6743ab1c3241b84b0eb1dd3e9f5e67e100e18b40
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 68b778ac695c0b37b55dfe84414f72551d10ce68
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090343"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587470"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
@@ -47,6 +48,9 @@ Microsoft は SD-WAN のプロバイダーと協力し、自動構成を可能�
 PAC または WPAD ファイルを使用して、Office 365 と関連付けられているが、IP アドレスを持たないネットワーク要求を管理します。プロキシまたは境界デバイスを介して送信される一般的なネットワーク要求は、待機時間を増大させます。SSL の中断と検査によって待機時間が最長になる一方、プロキシ認証や評価の検索などのその他のサービスは、パフォーマンスとユーザー エクスペリエンスを低下させます。また、これらの境界ネットワーク デバイスには、すべてのネットワーク接続要求を処理するために十分な容量が必要です。直接の Office 365 ネットワーク要求のために、プロキシまたは検査デバイスをバイパスすることをお勧めします。
   
 [PowerShell Gallery の Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) は、Office 365 IP アドレスと URL Web サービスから最新のネットワーク エンドポイントを読み取り、サンプル PAC ファイルを作成する PowerShell スクリプトです。このスクリプトを変更して、既存の PAC ファイル管理と統合させることができます。
+
+> [!NOTE]
+> Office 365 エンドポイントへの直接接続のセキュリティとパフォーマンスに関する考慮事項の詳細については、「[Office 365ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)」を参照してください。
 
 ![ファイアウォールとプロキシ経由で Office 365 に接続する。](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
@@ -212,7 +216,7 @@ Office 365 を使用しようとして、サードパーティ サービスに�
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>ファイアウォールには IP アドレスが必要で、URL を処理することはできません。 Office 365 に合わせて構成する方法
 
-Office 365 では、必要なすべてのネットワークエンド ポイント用 IP アドレスは提供されません。 一部は URL としてだけ提供され、既定に分類されます。 必要な既定のカテゴリの URL は、プロキシ サーバー経由で許可する必要があります。 プロキシ サーバーを所有していない場合は、ユーザーが Web ブラウザーのアドレス バーに入力する URL に対して Web 要求を構成している方法を確認してください。ユーザーが IP アドレスを提供することはありません。 Office 365 の既定のカテゴリ URL に IP アドレスがない場合でも、同じ方法で構成する必要があります。
+Office 365 では、必要なすべてのネットワークエンド ポイント用 IP アドレスは提供されません。 一部は URL としてだけ提供され、既定に分類されます。 必要な既定のカテゴリの URL は、プロキシ サーバー経由で許可する必要があります。 プロキシ サーバーがない場合は、ユーザーが Web ブラウザーのアドレス バーに入力する URL に対する Web 要求を構成した方法を確認します。ユーザーも IP アドレスを指定しません。 Office 365 の既定のカテゴリ URL に IP アドレスがない場合でも、同じ方法で構成する必要があります。
 
 ## <a name="related-topics"></a>関連項目
 

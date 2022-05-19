@@ -14,40 +14,40 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f2e4cc2db64a01605a0003561ceda27409b16cf5
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: fde5ce238a44b6722770338378ae33c54a38a450
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165512"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587492"
 ---
 # <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでアラート通知を構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-emailconfig-abovefoldlink)
 
 Defender for Endpoint を構成して、新しいアラートのために指定した受信者に電子メール通知を送信できます。 この機能を使用すると、すぐに通知を受け取り、重大度に基づいてアラートに基づいて行動できる個人のグループを特定できます。
+
+[Defender for Business を](../defender-business/mdb-overview.md)使用している場合は、(ロールやグループではなく) 特定のユーザーに対して電子メール通知を設定できます。
 
 > [!NOTE]
 > "セキュリティ設定の管理" アクセス許可を持つユーザーのみが電子メール通知を構成できます。 基本的なアクセス許可管理を使用するように選択した場合、セキュリティ管理者ロールまたはグローバル管理者ロールを持つユーザーは、電子メール通知を構成できます。
 
 通知をトリガーするアラート重大度レベルを設定できます。 電子メール通知の受信者を追加または削除することもできます。 新しい受信者は、追加後にトリガーされたアラートについて通知を受け取ります。 アラートの詳細については、「 [アラート キューの表示と整理」を](alerts-queue.md)参照してください。
 
-ロールベースのアクセス制御 (RBAC) を使用している場合、受信者は通知ルールで構成されたデバイス グループに基づく通知のみを受け取ります。
-適切なアクセス許可を持つユーザーは、デバイス グループ管理スコープに制限されている通知のみを作成、編集、または削除できます。
-グローバル管理者 ロールに割り当てられたユーザーのみが、すべてのデバイス グループに対して構成された通知ルールを管理できます。
+ロールベースのアクセス制御 (RBAC) を使用している場合、受信者は通知ルールで構成されたデバイス グループに基づく通知のみを受け取ります。 適切なアクセス許可を持つユーザーは、デバイス グループ管理スコープに制限されている通知のみを作成、編集、または削除できます。 グローバル管理者 ロールに割り当てられたユーザーのみが、すべてのデバイス グループに対して構成された通知ルールを管理できます。
 
 電子メール通知には、アラートに関する基本情報と、詳細な調査を行うことができるポータルへのリンクが含まれています。
 
 ## <a name="create-rules-for-alert-notifications"></a>アラート通知のルールを作成する
 デバイスとアラートの重大度を決定するルールを作成して、電子メール通知と通知受信者を送信できます。
-
 
 1. ナビゲーション ウィンドウで、[**エンドポイント** \> **の一般的な** \> **電子メール通知****設定**\>] を選択します。
 
@@ -60,12 +60,12 @@ Defender for Endpoint を構成して、新しいアラートのために指定�
     - **デバイス情報を含める** - 電子メール アラート本文にデバイス名を含めます。
 
         > [!NOTE]
-        > この情報は、Defender for Endpoint データ用に選択した地理的な場所にない受信者メール サーバーによって処理される場合があります。
+        > この情報は、Defender for Endpoint データ用に選択した地理的な場所にない受信者のメール サーバーによって処理される場合があります。
 
-    - **[デバイス]** - すべてのデバイス (グローバル管理者 ロールのみ) または選択したデバイス グループで、受信者にアラートを通知するかどうかを選択します。 詳細については、「 [デバイス グループの作成と管理](machine-groups.md)」を参照してください。
+    - **[デバイス]** - すべてのデバイス (グローバル管理者 ロールのみ) または選択したデバイス グループで、受信者にアラートを通知するかどうかを選択します。 詳細については、「 [デバイス グループの作成と管理](machine-groups.md)」を参照してください。 ( [Defender for Business を](../defender-business/mdb-overview.md)使用している場合、デバイス グループは適用されません)。
     - **アラートの重大度** - アラートの重大度レベルを選択します。
 
-4. **[次へ]** をクリックします。
+4. [**次へ**] をクリックします。
 
 5. 受信者のメール アドレスを入力し、[ **受信者の追加**] をクリックします。 複数のメール アドレスを追加することができます。
 
