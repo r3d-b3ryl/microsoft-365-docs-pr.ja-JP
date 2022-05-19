@@ -28,14 +28,14 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 1279220ceb8de5c5fdb4361a258e2c2bfc1f7061
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: c37e9126b7cf06929ca9c97533cddf19d1b71f6e
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767426"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468966"
 ---
-# <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
+# <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Microsoft 365 Business Premium の多要素認証を設定する
 
 多要素認証とは、Microsoft 365 にサインインするために、あなたとあなたの従業員が複数の方法を提供する必要があることを意味します。これは、ビジネスを保護する最も簡単な方法の 1 つです。 [多要素認証 (MFA) および Microsoft 365 のサポート](multi-factor-authentication-microsoft-365.md)を理解して、多要素認証を組織に設定し、展開します。 
 
@@ -100,7 +100,7 @@ Azure ポータル内の Azure Active Directory (Azure AD) の **プロパティ
 
 条件付きアクセスは、Azure AD Premium P1 を購入したお客様、またはこれを含むライセンス (Microsoft 365 Business Premium、Microsoft 365 E3 など) で利用できます。詳細については、「[条件付きアクセス ポリシーを作成する](/azure/active-directory/authentication/tutorial-enable-azure-mfa)」を参照してください。
 
-リスクベースの条件付きアクセスは、Azure AD Premium P2 ライセンスを通して、またはこの機能を含むライセンス (Microsoft 365 E5 など) を通じて利用できます。 詳細については、[「リスクベースの条件付きアクセス」](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk) を参照してください。
+リスクベースの条件付きアクセスは、Azure AD Premium P2 ライセンス、またはこれを含むライセンス (Microsoft 365 E5 など) を通じて利用できます。詳細については、「 [リスクベースの条件付きアクセス](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)」を参照してください。
 
 Azure AD P1 および P2 の詳細については、「[Azure Active Directory の料金](https://azure.microsoft.com/pricing/details/active-directory/)」をご覧ください。
 
