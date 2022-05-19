@@ -13,17 +13,17 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Microsoft 365 E5/A5 または Microsoft 365 E5/A5 セキュリティのドキュメントセーフについて説明します。
+description: Microsoft 365 A5または E5 セキュリティのドキュメントセーフについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3fa1c7e07c1e1cd117ee20f4712dbbadad3c2b5c
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 4e9e83ec902ec3beafff76e26fff3ce13d0a9b9a
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174145"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535528"
 ---
-# <a name="safe-documents-in-microsoft-365-e5a5"></a>Microsoft 365 E5/A5 でドキュメントをセーフする
+# <a name="safe-documents-in-microsoft-365-a5-or-e5-security"></a>Microsoft 365 A5または E5 セキュリティでドキュメントをセーフする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -62,7 +62,7 @@ ms.locfileid: "65174145"
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   >
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ### <a name="how-does-microsoft-handle-your-data"></a>Microsoft はデータをどのように処理しますか?
 
@@ -108,7 +108,7 @@ Set-AtpPolicyForO365 -EnableSafeDocs $true -AllowSafeDocsOpen $false
 セーフ ドキュメント機能へのアクセスを選択的に許可またはブロックする場合は、次の手順に従います。
 
 1. この記事で前述したように、Microsoft 365 Defender ポータルでドキュメントセーフを有効にするか、PowerShell をExchange Onlineします。
-2. Azure AD PowerShell を使用して、特定のユーザーのセーフドキュメントを無効にします。「特定の[ライセンス プランの特定のユーザーに対して特定のMicrosoft 365 サービスを無効にする」を](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)参照してください。
+2. Azure AD PowerShell を使用して、特定のユーザーのセーフドキュメントを無効にする方法については、「特定の[ライセンス プランの特定のユーザーに対して特定のMicrosoft 365 サービスを無効にする」を](/microsoft-365/enterprise/disable-access-to-services-with-microsoft-365-powershell#disable-specific-microsoft-365-services-for-specific-users-for-a-specific-licensing-plan)参照してください。
 
   PowerShell で無効にするサービス プランの名前は **SAFEDOCS** です。
 

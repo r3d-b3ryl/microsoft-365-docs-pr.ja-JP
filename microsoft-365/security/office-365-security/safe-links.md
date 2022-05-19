@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 悪意のある URL を使用するフィッシングやその他の攻撃から組織を保護するための Defender for Office 365 の安全なリンク保護について説明します。 Teams の安全なリンクを見つけ、安全なリンク メッセージのグラフィックを表示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 11c22239a34b731b57a8730ad1bf03d764ebb106
-ms.sourcegitcommit: bcbcbd4ddc72ad2fed629619d23fac5827d072bf
-ms.translationtype: HT
+ms.openlocfilehash: 0aef211b91ef406926720f8c50e4af457d07eaab
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/29/2022
-ms.locfileid: "64507211"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535110"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンク
 
@@ -46,7 +46,7 @@ ms.locfileid: "64507211"
 > [!IMPORTANT]
 > この記事は、[Microsoft Defender for Office 365](defender-for-office-365.md) をお持ちの法人のお客様を対象としています。Outlook.com、Microsoft 365 ファミリー、または Microsoft 365 Personal を使用していて、Outlook のセーフリンクに関する情報を探している場合は、「[高度な Outlook.com セキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」 を参照してください。
 
-安全なリンクは、[Defender for Office 365](defender-for-office-365.md) の機能で、メール フロー内の受信メール メッセージの URL スキャンと書き換え、メール メッセージなどに含まれる URL やリンクの Time-of-Click 検証を行います。 安全なリンクのスキャンは、Exchange Online Protection (EOP) の受信メール メッセージにおける通常の[スパム対策とマルウェア対策](anti-spam-and-anti-malware-protection.md)に追加して発生します。 安全なリンクのスキャンは、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護できます。
+安全なリンクは、[Defender for Office 365](defender-for-office-365.md) の機能で、メール フロー内の受信メール メッセージの URL スキャンと書き換え、メール メッセージなどに含まれる URL やリンクの Time-of-Click 検証を行います。 セーフ リンクスキャンは、Exchange Online Protection (EOP) の受信電子メール メッセージの通常の[スパム対策](anti-spam-protection.md)と[マルウェア対策](anti-malware-protection.md)に加えて発生します。 安全なリンクのスキャンは、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護できます。
 
 安全なリンクの保護機能は以下の場所で利用できます。
 

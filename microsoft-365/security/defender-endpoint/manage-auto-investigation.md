@@ -16,21 +16,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
-ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 952e5a057f893cfc11b928e40e2038255a93601c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 06e2c6c5269b32b29be87f44635d65b9c610c344
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329045"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535870"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションを確認する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 ## <a name="remediation-actions"></a>修復アクション
 
@@ -64,10 +62,15 @@ ms.locfileid: "63329045"
 ## <a name="review-pending-actions"></a>保留中のアクションを確認する
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。
+
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
+
 3. **[保留中]** タブの項目を確認します。
+
 4. ポップアップ ウィンドウを開くアクションを選択します。
+
 5. ポップアップ ウィンドウで情報を確認し、次のいずれかの手順を実行します。
+
    - [ **調査を開く] ページ** を選択して、調査の詳細を表示します。
    - [ **承認] を** 選択して保留中のアクションを開始します。
    - 保留中のアクションが実行されないようにするには、[ **拒否] を** 選択します。
@@ -76,46 +79,54 @@ ms.locfileid: "63329045"
 ## <a name="review-completed-actions"></a>完了した処理を確認する
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。
+
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
+
 3. [ **履歴** ] タブの項目を確認します。
+
 4. アイテムを選択すると、その修復アクションの詳細が表示されます。
 
 ## <a name="undo-completed-actions"></a>完了したアクションを元に戻す
 
 デバイスまたはファイルが脅威でないと判断した場合は、それらのアクションが自動的に実行されたか手動で実行されたかに関係なく、実行された修復アクションを元に戻すことができます。 アクション センターの [ **履歴** ] タブでは、次のいずれかの操作を元に戻すことができます。
 
-<br>
-
-****
-
 |アクション ソース|サポートされているアクション|
 |---|---|
-|<ul><li>自動調査</li><li>Microsoft Defender ウイルス対策</li><li>手動応答アクション</li></ul>|<ul><li>デバイスの分離</li><li>コードの実行制限</li><li>ファイルの検疫</li><li>レジストリ キーの削除</li><li>サービスの停止</li><li>ドライバーの無効化</li><li>スケジュールされたタスクの実行</li></ul>|
-|
+|<ul><li>自動調査</li><li>手動応答アクション (以下の注を参照)</li><li>Microsoft Defender ウイルス対策</li></ul>|<ul><li>ドライバーの無効化</li><li>デバイスの分離</li><li>ファイルの検疫</li><li>レジストリ キーの削除</li><li>スケジュールされたタスクの実行</li><li>コードの実行制限</li><li>サービスの停止</li></ul>|
+
+> [!NOTE]
+> [Defender for Endpoint Plan 1](defender-endpoint-plan-1.md) と[Microsoft Defender for Business](../defender-business/mdb-overview.md)には、次の手動応答アクションのみが含まれます。
+>
+> - ウイルス対策スキャンの実行
+> - デバイスの分離
+> - ファイルを停止して検疫する
+> - ファイルをブロックまたは許可するインジケーターを追加する
+>
+> 詳細については、「Microsoft Defender for Endpoint [プランを比較](defender-endpoint-plan-1-2.md)する」と「[中小企業向けのMicrosoft 365プランのセキュリティ機能の比較](../defender-business/compare-mdb-m365-plans.md)」を参照してください。
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>複数のアクションを一度に元に戻すには
 
 1. アクション センター ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) に移動し、サインインします。
+
 2. **[履歴]** タブで、元に戻す処理を選択します。 必ず、同じアクションの種類を持つ項目を選択してください。 ポップアップ ウィンドウが開きます。
+
 3. ポップアップ ウィンドウで **[元に戻す]** を選択します。
 
 ### <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>複数のデバイス間で検疫からファイルを削除するには
 
 1. アクション センター ([https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)) に移動し、サインインします。
+
 2. [ **履歴** ] タブで、[アクションの種類 **] 検疫ファイル** があるアイテムを選択します。
+
 3. ポップアップ ウィンドウで、[ **このファイルの X インスタンスに適用**] を選択し、[ **元に戻す**] を選択します。
 
 ## <a name="automation-levels-automated-investigation-results-and-resulting-actions"></a>自動化レベル、自動調査結果、および結果のアクション
 
 自動化レベルは、特定の修復アクションが自動的に実行されるか、承認時にのみ実行されるかに影響します。 セキュリティ運用チームには、自動調査の結果に応じて、より多くの手順を実行できる場合があります。 次の表は、自動化レベル、自動調査の結果、および各ケースで実行する操作をまとめたものです。
 
-<br>
-
-****
-
 |デバイス グループの設定|自動調査の結果|操作|
 |---|---|---|
-|**完全 - 脅威を自動的に修復** する (推奨される設定)|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> 適切な修復アクションが自動的に実行されます。|[完了した処理を確認する](#review-completed-actions)|
+|**完全 - 脅威を自動的に修復する**<br/>(推奨)|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> 適切な修復アクションが自動的に実行されます。|[完了した処理を確認する](#review-completed-actions)|
 |**完全 - 脅威を自動的に修復する**|証拠の一部については *、疑わしい* という判定に達します。 <p> 修復アクションは、続行するための承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
 |**半 - 修復の承認が必要**|一部の証拠に対して *、[悪意]* または *[疑わしい* ] の判定に達します。 <p> 修復アクションは、続行するための承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
 |**Semi - コア フォルダー修復の承認が必要**|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> 成果物がファイルまたは実行可能ファイルであり、オペレーティング システム ディレクトリ (Windows フォルダーや Program files フォルダーなど) にある場合、修復アクションは承認待ちです。 <p> アーティファクトがオペレーティング システム ディレクトリ *にない* 場合は、修復アクションが自動的に実行されます。|<ol><li>[保留中のアクションを承認 (または拒否) する](#review-pending-actions)</li><li>[完了した処理を確認する](#review-completed-actions)</li></ol>|
@@ -124,9 +135,11 @@ ms.locfileid: "63329045"
 |**Semi - 一時フォルダー以外の修復の承認が必要**|証拠の一部については *、疑わしい* という判定に達します。 <p> 修復アクションは承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
 |**すべての** オートメーション レベルまたは **半** オートメーション レベル|証拠の一部に対して、 *脅威が見つかりません* という判定に達します。 <p> 修復アクションは実行されません。また、承認待ちのアクションも実行されません。|[自動調査の詳細と結果を表示する](/microsoft-365/security/defender-endpoint/auto-investigation-action-center)|
 |**自動応答なし** (推奨されません)|自動調査は実行されないため、判定に達せず、修復アクションが実行されたり、承認を待ったりすることはありません。|[**フル** オートメーションまたは **半** オートメーションを使用するようにデバイス グループを設定または変更することを検討する](/microsoft-365/security/defender-endpoint/machine-groups)|
-|
 
-Microsoft Defender for Endpointでは、すべての判定が[アクション センター](auto-investigation-action-center.md#new-a-unified-action-center)で追跡されます。
+すべての判定は [、アクション センター](auto-investigation-action-center.md#the-unified-action-center)で追跡されます。
+
+> [!NOTE]
+> [Defender for Business](../defender-business/mdb-overview.md) では、**完全な脅威を自動的に修復** するために、自動調査と修復機能が事前に設定されています。 これらの機能は、既定ですべてのデバイスに適用されます。
 
 ## <a name="next-steps"></a>次の手順
 

@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: カスタマー キーを設定したら、AKV キーを復元し、アクセス許可を管理し、データ暗号化ポリシーを作成して割り当てることで、それを管理する方法について説明します。
-ms.openlocfilehash: 0ca6aa1e2cf725359d74477b486a4763a35ba681
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9d7a926018a23c62d2ea21283ad6852d979cc6bb
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465912"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535428"
 ---
 # <a name="manage-customer-key"></a>カスタマー キーを管理する
 

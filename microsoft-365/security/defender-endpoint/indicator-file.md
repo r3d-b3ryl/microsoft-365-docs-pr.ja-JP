@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f1d32c546fc270e044d391dd35f325afc98fe5a9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101449"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535594"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -28,9 +28,10 @@ ms.locfileid: "65101449"
 
 **適用対象:**
 
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
@@ -43,7 +44,7 @@ ms.locfileid: "65101449"
 - ファイルの詳細ページの [インジケーターの追加] ボタンを使用してコンテキスト インジケーターを作成する
 - [Indicator API](ti-indicator.md) を使用してインジケーターを作成する
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解しておくことが重要です。
 
@@ -54,11 +55,14 @@ ms.locfileid: "65101449"
 - Windows 10 バージョン 1703 以降、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 のデバイスでサポートされます。
     
    > [!NOTE]
-   > この機能を機能させるには、「オンボード Windows サーバー」の手順に従って[、Windows Server 2016とWindows Server 2012](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) R2 をオンボードする必要があります。 許可、ブロック、および修復アクションを含むカスタム ファイル インジケーターは、 [macOS と Linux の強化されたマルウェア対策エンジン機能のパブリック プレビュー](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)でも利用できるようになりました。
+   > この機能を機能させるには、「オンボード Windows サーバー」の手順に従って[、Windows Server 2016とWindows Server 2012](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) R2 をオンボードする必要があります。 許可、ブロック、および修復アクションを含むカスタム ファイル インジケーターは、[macOSと Linux の強化されたマルウェア対策エンジン機能のパブリック プレビュー](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)でも利用できるようになりました。
 
 - ファイルのブロックを開始するには、まず、設定で ["ブロックまたは許可" 機能を有効にする](advanced-features.md)必要があります。
 
 この機能は、疑わしいマルウェア (または悪意のあるファイル) が Web からダウンロードされないように設計されています。 現在、.exe ファイルや.dll ファイルを含むポータブル実行可能ファイル (PE) ファイルがサポートされています。 カバレッジは時間の経過と共に延長されます。
+
+> [!IMPORTANT]
+> Defender for Endpoint Plan 1 と Defender for Business では、ファイルをブロックまたは許可するインジケーターを作成できます。 Defender for Business では、インジケーターは環境全体に適用され、特定のデバイスにスコープを設定することはできません。
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 
@@ -71,7 +75,7 @@ ms.locfileid: "65101449"
 4. 次の詳細を指定します。
     - インジケーター - エンティティの詳細を指定し、インジケーターの有効期限を定義します。
     - アクション - 実行するアクションを指定し、説明を入力します。
-    - スコープ - デバイス グループのスコープを定義します。
+    - スコープ - デバイス グループのスコープを定義します ( [スコープは Defender for Business](../defender-business/mdb-overview.md) では使用できません)。
 
 5. [概要] タブで詳細を確認し、[保存] を選択 **します**。
 

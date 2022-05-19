@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスで機能を計画、移行、実装するためのステップ バイ ステップ ツールを入手します。 サービスまたは実行する必要があるアプリを設定するためのガイドを見つけます。
-ms.openlocfilehash: 61eccec443a939591e563daa5135239bf0e23a74
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 5ffb0652b145bba6ae4e834815c5cb51b7ad2b94
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188726"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535926"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -67,7 +67,7 @@ Gmail ユーザーのメールボックスをMicrosoft 365に移行すると、�
 
 [Microsoft 365セットアップ ガイド](https://aka.ms/microsoft365setupguide)では、生産性ツール、セキュリティ ポリシー、およびデバイス管理機能を設定する際のガイダンスを提供します。 Microsoft 365 Business Premium またはエンタープライズ サブスクリプション版 Microsoft 365 があれば、このアドバイザーを使用して組織のデバイスをセットアップし、構成できます。
 
-クラウド サービスを有効にしたり、サポートされている最新バージョンのWindows 10にデバイスを更新したり、デバイスを 1 か所でAzure Active Directory (Azure AD) に参加したりするためのガイダンスとリソースへのアクセスを受け取ります。
+クラウド サービスを有効にしたり、サポートされている最新バージョンのWindows 10にデバイスを更新したり、デバイスを 1 か所で Azure Active Directory (Azure AD) に参加したりするためのガイダンスとリソースへのアクセスを受け取ります。
 
 ### <a name="remote-work-setup-guide"></a>リモート ワーク セットアップ ガイド
 
@@ -95,7 +95,7 @@ Microsoft Searchは、組織が作業している作業を完了するために�
 
 ### <a name="configure-multi-factor-authentication-mfa"></a>多要素認証 (MFA) を構成する
 
-[多要素認証の構成 (MFA) ガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess)では、資格情報の紛失や盗難による侵害から組織を保護するための情報を提供します。 MFA は、ユーザーがアプリまたは他の会社のリソースにサインインするときにユーザーの ID を証明するために、複数の形式の検証を求めることで、アカウントのセキュリティを直ちに強化します。 このプロンプトは、ユーザーのモバイル デバイスにコードを入力するか、指紋スキャンを提供することです。 MFA は、条件付きアクセス、セキュリティの既定値、またはユーザーごとの MFA によって有効になります。 このガイドでは、ライセンスと既存の構成に基づいて、組織に推奨される MFA オプションを提供します。
+[多要素認証の構成 (MFA) ガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess)では、資格情報の紛失や盗難による侵害から組織を保護するための情報を提供します。 MFA は、ユーザーがアプリまたは他の会社のリソースにサインインするときにユーザーの ID を証明するために、複数の形式の検証を求めることで、アカウントのセキュリティを直ちに強化します。 このプロンプトは、ユーザーのモバイル デバイスにコードを入力するか、フィンガープリント スキャンを提供することです。 MFA は、条件付きアクセス、セキュリティの既定値、またはユーザーごとの MFA によって有効になります。 このガイドでは、ライセンスと既存の構成に基づいて、組織に推奨される MFA オプションを提供します。
 
 ### <a name="identity-security-for-teams"></a>Teamsの ID セキュリティ
 
@@ -103,11 +103,11 @@ Microsoft Searchは、組織が作業している作業を完了するために�
 
 ### <a name="add-or-sync-users-to-microsoft-365"></a>Microsoft 365にユーザーを追加または同期する
 
-[このガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard)は、**Microsoft 365** でユーザー アカウントを設定するプロセスを効率化するのに役立ちます。 環境とニーズに基づいて、ユーザーを個別に追加したり、クラウド同期またはAzure AD Connectを使用してオンプレミス ディレクトリAzure AD移行したり、必要に応じて既存の同期の問題をトラブルシューティングしたりできます。
+[このガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard)は、**Microsoft 365** でユーザー アカウントを設定するプロセスを効率化するのに役立ちます。 環境とニーズに基づいて、ユーザーを個別に追加するか、Azure AD クラウド同期または Azure AD Connectを使用してオンプレミス ディレクトリを移行するか、必要に応じて既存の同期の問題をトラブルシューティングするかを選択できます。
 
-### <a name="azure-ad-setup-guide"></a>Azure ADセットアップ ガイド
+### <a name="azure-ad-setup-guide"></a>Azure AD セットアップ ガイド
 
-[Azure AD セットアップ ガイド](https://aka.ms/aadpguidance)には、組織の強固なセキュリティ基盤を確保するための情報が記載されています。 このガイドでは、管理者向けの Azure ロールベースのアクセス制御 (Azure RBAC)、オンプレミス ディレクトリのAzure AD Connect、Azure AD Connect Health などの初期機能を設定して、自動同期中にハイブリッド ID の正常性を監視できるようにします。
+[Azure AD セットアップ ガイド](https://aka.ms/aadpguidance)には、組織の強固なセキュリティ基盤を確保するための情報が記載されています。 このガイドでは、管理者向けの Azure ロールベースのアクセス制御 (Azure RBAC)、オンプレミス ディレクトリの Azure AD Connect、Azure AD Connect Health などの初期機能を設定して、自動同期中にハイブリッド ID の正常性を監視できるようにします。
 
 また、オプションの高度な ID 保護とユーザー プロビジョニングの自動化を含む、セルフサービス パスワード リセット、条件付きアクセス、統合されたサード パーティのサインオンを有効にするための重要な情報も含まれています。
 
@@ -125,7 +125,7 @@ Microsoft Searchは、組織が作業している作業を完了するために�
 
 [パスワードレス展開を計画](https://aka.ms/passwordlesssetup)するガイドを使用して、パスワードレス認証方法を使用してデプロイする方法に関するガイダンスを受け取る方法を見つけます。
 
-### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>サード パーティのクラウド アプリと Azure ADを統合する
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>サード パーティのクラウド アプリと Azure AD を統合する
 
 [このガイドは](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/azureadappintegration) 、IT 管理者がアプリを選択して構成するのに役立ちます。
 
@@ -181,13 +181,13 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 * コミュニケーション コンプライアンス ソリューションを使用すると、職場での暴力、インサイダー取引、嫌がらせ、行動規範、規制コンプライアンス違反などの項目に対するコミュニケーション リスクを特定して対処できます。
 * インサイダー リスク管理ソリューションは、知的財産の盗難、機密データ漏えい、セキュリティ違反、データ流出、機密性違反のリスクを特定、調査、および実行するのに役立ちます。
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>Microsoft Purview Information Protection セットアップ ガイド
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Microsoft Purview 情報保護セットアップ ガイド
 
-機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft Purview Information Protection セットアップ ガイド](https://aka.ms/microsoftpurviewinformationprotectionsetupguide)では、これらの各ステージを完了するためのガイダンスを提供します。
+機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft Purview 情報保護セットアップ ガイド](https://aka.ms/microsoftpurviewinformationprotectionsetupguide)では、これらの各ステージを完了するためのガイダンスを提供します。
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Microsoft Purview データ ライフサイクル管理のセットアップ ガイド
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Microsoft Purview データ ライフサイクル管理セットアップ ガイド
 
-[Microsoft Purview Data ライフサイクル管理セットアップ ガイド](https://aka.ms/migsetupguide)では、組織のガバナンス戦略を設定および管理するために必要な情報を提供し、設定した特定のライフサイクル ガイドラインに従ってデータが確実に分類および管理されるようにします。 このガイドでは、組織のコンテンツとコンプライアンス レコードに適用される保持ラベル、アイテム保持ラベル ポリシー、およびアイテム保持ポリシーを作成、自動適用、または公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
+[Microsoft Purview データ ライフサイクル管理セットアップ ガイド](https://aka.ms/migsetupguide)では、組織のガバナンス戦略を設定および管理するために必要な情報を提供し、設定した特定のライフサイクル ガイドラインに従ってデータが確実に分類および管理されるようにします。 このガイドでは、組織のコンテンツとコンプライアンス レコードに適用される保持ラベル、アイテム保持ラベル ポリシー、およびアイテム保持ポリシーを作成、自動適用、または公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>Microsoft Defender for Cloud Appsセットアップ ガイド
 
@@ -205,11 +205,15 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 
 ### <a name="mobile-apps-setup-guide"></a>モバイル アプリのセットアップ ガイド
 
-[モバイル アプリのセットアップ ガイド](https://aka.ms/officeappguidance)では、Windows、iOS、Android モバイル デバイスにOffice アプリをダウンロードしてインストールする手順について説明します。 このガイドでは、Microsoft 365アプリとOffice 365 アプリをスマートフォンやタブレットデバイスにダウンロードしてインストールするための詳細な情報を提供します。
+[モバイル アプリのセットアップ ガイド](https://aka.ms/officeappguidance)では、Windows、iOS、およびモバイル デバイスへのOffice アプリのダウンロードとインストールAndroid手順について説明します。 このガイドでは、Microsoft 365アプリとOffice 365 アプリをスマートフォンおよびTablet PC デバイスにダウンロードしてインストールするための詳細な情報を提供します。
 
 ### <a name="microsoft-teams-setup-guide"></a>Microsoft Teamsセットアップ ガイド
 
 [Microsoft Teamsセットアップ ガイド](https://aka.ms/teamsguidance)では、チームとプライベートの両方のコミュニケーションのために、メッセージング、通話、音声またはビデオ会議を通じてリアルタイムの会話をホストするチーム ワークスペースを設定するためのガイダンスを組織に提供します。 このガイドのツールを使用して、PowerShell セッションを開く必要なく、ゲスト アクセスを構成したり、チームを作成できるユーザーを設定したり、.csv ファイルからチーム メンバーを追加したりできます。 また、組織のネットワーク要件を決定し、Teams展開を成功させるためのベスト プラクティスも得られます。
+
+### <a name="teams-phone-setup-guide"></a>Teams 電話セットアップ ガイド
+
+[Teams 電話セットアップ ガイド](https://aka.ms/teamsphonesetupguide)は、最新の通話ソリューションの使用に常に接続するのに役立ちます。 Teamsのテレフォニー ワークロードをサポートするクラウドベースの呼び出し制御システムを使用して、主要な機能を適用します。 使用可能な公衆交換電話網 (PSTN) 接続オプションから機能を選択して展開できます。 自動応答、通話キュー、電話会議、発信者番号、ライブ イベントなど、他の機能のサポートも提供されています。
 
 ### <a name="sharepoint-setup-guide"></a>SharePointセットアップ ガイド
 

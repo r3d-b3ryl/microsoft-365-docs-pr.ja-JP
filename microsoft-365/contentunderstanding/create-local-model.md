@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: SharePoint Syntexを使用してローカル SharePoint サイトにローカル モデルを作成する方法について説明します。
-ms.openlocfilehash: f6eab2d081dda379d8eb2c88d762661d374a1db6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bcd3f1f086af3982cb4a3ecc5fe754cf82f09a70
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319065"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535384"
 ---
 # <a name="create-a-model-on-a-local-sharepoint-site-with-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexを使用してローカル SharePoint サイトにモデルを作成する
 
@@ -44,6 +44,9 @@ SharePoint サイトでドキュメントの分類と抽出をアクティブ化
 2. この機能を初めて使用するときは、サイトでSharePoint Syntexをアクティブ化します。 次のメッセージが表示されます。
 
     ![[ドキュメントの分類と抽出情報のアクティブ化] ページのスクリーンショット。](../media/content-understanding/local-model-first-run-activate-message.png) 
+
+    > [!NOTE]
+    > 管理タスクを実行し、サイトのコンテンツを管理するには、Web サイトの管理アクセス許可が必要です。 これはサイト所有者になります。 機能がアクティブ化されると、リストの管理アクセス許可を持つすべてのユーザーがモデルを作成および管理できるようになります。
 
 3. [ **アクティブ化] を** 選択して続行します。 次のメッセージが表示されます。
 

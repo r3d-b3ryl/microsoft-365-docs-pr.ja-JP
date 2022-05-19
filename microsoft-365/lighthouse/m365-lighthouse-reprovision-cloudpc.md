@@ -16,16 +16,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 LighthouseでWindows 365 クラウド PCを再プロビジョニングする方法について説明します。
-ms.openlocfilehash: c896724a86241c19c6f44e4c59d7c2e927f100a7
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: c3ff7dac53798f26da212ac4790ba0cb1412c307
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438952"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535886"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Microsoft 365 LighthouseでWindows 365 クラウド PCを再プロビジョニングする
 
-Microsoft 365 Lighthouseは、プロビジョニング ポリシーを持つクラウド PC の再プロビジョニングをサポートします。 新しいユーザーのデバイスの再プロビジョニングが必要な場合や、デバイスが正常に動作していない場合があります。 再プロビジョニングがトリガーされると、クラウド PC は削除され、新しいクラウド PC として再作成されます。すべてのユーザー データ、アプリケーション、カスタマイズなどが削除されます。
+Microsoft 365 Lighthouseは、プロビジョニング ポリシーを持つクラウド PC の再プロビジョニングをサポートします。 新しいユーザーのデバイスの再プロビジョニングが必要な場合や、デバイスが正常に動作していない場合があります。 再プロビジョニングがトリガーされると、クラウド PC は削除され、新しいクラウド PC として再作成されます。 すべてのユーザー データ、アプリケーション、カスタマイズなどが削除されます。
 
 ## <a name="before-you-begin"></a>はじめに
 

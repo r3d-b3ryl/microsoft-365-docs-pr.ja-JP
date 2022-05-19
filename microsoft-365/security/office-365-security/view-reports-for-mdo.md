@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ed83064d1686d1cf556e0b2dcca5766556c5fa3
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970934"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535848"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでDefender for Office 365レポートを表示する
 
@@ -239,7 +239,7 @@ PowerShell レポート コマンドレット:
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル閲覧者**
+- **グローバル リーダー**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
@@ -247,10 +247,10 @@ PowerShell レポート コマンドレット:
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合はどうなりますか?
 
-Defender for Office 365 レポートにデータが表示されない場合は、ポリシーが正しく設定されていることを再確認してください。 Defender for Office 365保護を実施するには、組織に[セーフリンク ポリシー](set-up-safe-links-policies.md)と[セーフ添付ファイル ポリシー](set-up-safe-attachments-policies.md)が定義されている必要があります。 [スパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)も参照してください。
+Defender for Office 365 レポートにデータが表示されない場合は、ポリシーが正しく設定されていることを再確認してください。 Defender for Office 365保護を実施するには、組織に[セーフリンク ポリシー](set-up-safe-links-policies.md)と[セーフ添付ファイル ポリシー](set-up-safe-attachments-policies.md)が定義されている必要があります。 [スパム対策](anti-spam-protection.md)と[マルウェア対策の保護](anti-malware-protection.md)も参照してください。
 
 ## <a name="related-topics"></a>関連項目
 
 [Microsoft 365 Defender ポータルでのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
 
-[組み込みロールをAzure ADする](/azure/active-directory/roles/permissions-reference)
+[Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)

@@ -9,7 +9,6 @@ ms.sitesec: library
 ms.pagetype: security
 author: dansimp
 ms.author: dansimp
-ms.date: 11/24/2021
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
@@ -19,21 +18,21 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: eadf9fe7f6112d1219f085662686b2a930b3ff28
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: cfc3ebb1a32487bf2b32074059091c0d4d3517ec
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789802"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535782"
 ---
 # <a name="overview-of-automated-investigations"></a>自動調査の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Microsoft Defender ウイルス対策
+- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender for Business](../defender-business/mdb-overview.md)
 
 **プラットフォーム**
 - Windows
@@ -53,15 +52,10 @@ ms.locfileid: "64789802"
 
 自動調査は、アラートがトリガーされたとき、またはセキュリティオペレーターが調査を開始したときに開始できます。
 
-<br>
-
-****
-
 |状況|動作|
 |---|---|
 |アラートがトリガーされる|一般に、自動調査は [、アラート](review-alerts.md) がトリガーされ、 [インシデント](view-incidents-queue.md) が作成されたときに開始されます。 たとえば、悪意のあるファイルがデバイスに存在するとします。 そのファイルが検出されると、アラートがトリガーされ、インシデントが作成されます。 自動調査プロセスは、デバイスで開始されます。 他のデバイス上の同じファイルが原因で他のアラートが生成されるため、関連するインシデントと自動調査に追加されます。|
 |調査が手動で開始される|セキュリティ運用チームは、自動調査を手動で開始できます。 たとえば、セキュリティオペレーターがデバイスの一覧を確認していて、デバイスのリスク レベルが高いことを確認するとします。 セキュリティ オペレーターは、一覧でデバイスを選択してそのポップアップを開き、[ **自動調査の開始**] を選択できます。|
-|
 
 ## <a name="how-an-automated-investigation-expands-its-scope"></a>自動調査によってその範囲が拡大する方法
 
@@ -84,11 +78,11 @@ ms.locfileid: "64789802"
 保留中でも完了でも、すべての修復アクションは [、アクション センター](auto-investigation-action-center.md)で追跡されます。 必要に応じて、セキュリティ運用チームは修復アクションを元に戻すことができます。 詳細については、 [自動調査後の修復アクションの確認と承認に関するページを](/microsoft-365/security/defender-endpoint/manage-auto-investigation)参照してください。
 
 > [!TIP]
-> Microsoft 365 Defender ポータルの新しい統合調査ページを確認します。 詳細については、 [(NEW!) を参照してください。統合調査ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)。
+> Microsoft 365 Defender ポータルの新しい統合調査ページを確認します。 詳細については、「 [統合調査」ページ](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page)を参照してください。
 
 ## <a name="requirements-for-air"></a>AIR の要件
 
-組織には Defender for Endpoint が必要です ([「Microsoft Defender for Endpointの最小要件](minimum-requirements.md)」を参照)。
+サブスクリプションには [、Defender for Endpoint](microsoft-defender-endpoint.md) または [Defender for Business](../defender-business/mdb-overview.md) が含まれている必要があります。
 
 > [!NOTE]
 > 調査と応答を自動化するには、パッシブ モードまたはアクティブ モードで実行するためのMicrosoft Defender ウイルス対策が必要です。 Microsoft Defender ウイルス対策が無効またはアンインストールされている場合、自動調査と応答は正しく機能しません。

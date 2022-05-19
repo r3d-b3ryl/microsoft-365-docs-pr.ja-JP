@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 9287d61b95d635eccbbef64d307c0aa0e3d12357
-ms.sourcegitcommit: 46e796c6b76a01516c48977335bbf5076ca74a06
+ms.openlocfilehash: 431d2ae027e92c83d645a4b27ab515d17326c1b7
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64738560"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535804"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -41,8 +41,6 @@ Microsoft 365 グループと Microsoft Teams の使用が増えるにつれ、�
 - Yammer - Yammer コミュニティ内の投稿や、Outlookの対話型メールを表示します。
 - フォーム - フォームの表示、作成、編集、またはフォームへの応答の送信。 
 
-グループの自動更新をトリガーするYammerアクティビティは、コミュニティ内のSharePointへのドキュメントのアップロードのみです。
-
 > [!IMPORTANT]
 > 有効期限ポリシーを変更すると、サービスによって各グループの有効期限が再計算されます。常にグループの作成日からカウントされます。その後で新しい有効期限ポリシーが適用されます。
 
@@ -53,7 +51,7 @@ Microsoft 365 グループと Microsoft Teams の使用が増えるにつれ、�
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシーを構成して使用Who。
 
-|役割|可能な操作|
+|ロール|可能な操作|
 |---------|---------|
 |Office 365 グローバル管理者 (Azure では会社の管理者)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシー設定を作成、読み取り、更新、または削除します。|
 |User|所有しているMicrosoft 365 グループを更新または[復元](/azure/active-directory/users-groups-roles/groups-restore-deleted)する|

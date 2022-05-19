@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dcc04b1c06e5ca2900cca9f0a66fe5b041af734e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 476807a03954475470a976113a2faa926862c008
+ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417174"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65535948"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
@@ -413,7 +413,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
-- **名前**
+- **Name**
 - **提出者**
 - **送信の理由**:
   - **迷惑ではない**
@@ -819,7 +819,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 - **日付 (UTC)**
 - **添付ファイルの名前**
-- **Workload**
+- **ワークロード**
 - **検出テクノロジ**
 - **ファイルのサイズ**
 - **最終変更ユーザー**
@@ -1158,7 +1158,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 2. **[ダウンロード用のレポート]** ページに、使用可能なレポートごとに次の情報が表示されます。
    - **開始日**
-   - **名前**
+   - **Name**
    - **レポートの種類**
    - **最後に送信された**
    - **方向**
@@ -1180,7 +1180,9 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 ## <a name="related-topics"></a>関連項目
 
-[EOP でのスパム対策とマルウェア対策の保護](anti-spam-and-anti-malware-protection.md)
+[EOP のスパム対策保護](anti-spam-protection.md)
+
+[EOP のマルウェア対策保護](anti-malware-protection.md)
 
 [Microsoft 365 Defender ポータルでのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
 
