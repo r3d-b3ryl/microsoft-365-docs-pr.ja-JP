@@ -14,14 +14,13 @@ ms.reviewer: mimilone, julih
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 10/18/2021
 ms.collection: m365-security-compliance
-ms.openlocfilehash: c7307e7c690e9664f6a848fcd93ed27f1062455a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418360"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65468308"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -114,7 +113,7 @@ System Center 2012 Configuration Manager については、「[Configuration Man
 
 ### <a name="use-group-policy-to-configure-pua-protection"></a>グループ ポリシーを使用して PUA 保護を構成する
 
-1. [2020 年 10 月更新 (20H2) Windows 10 用の管理用テンプレート (.admx)](https://www.microsoft.com/download/details.aspx?id=102157) をダウンロードしてインストールする
+1. [2021 年更新 (21H2) Windows 11 用の管理用テンプレート (.admx)](https://www.microsoft.com/download/details.aspx?id=103507) をダウンロードしてインストールする
 
 2. グループ ポリシー管理コンピューターで、[グループ ポリシー管理コンソール](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))を開きます。
 

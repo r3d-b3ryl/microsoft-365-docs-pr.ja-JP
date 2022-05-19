@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版プレイブック。
-ms.openlocfilehash: 10dd4ac9447c920112fd85075c3bf6ae3093ee9c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415262"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466286"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
 
@@ -444,4 +444,4 @@ Microsoft Purview のレコード管理機能を使用して、組織の規制�
 
 **Microsoft Security Technical Content ライブラリ**: このライブラリを探索して、ユーザーのニーズに関連する対話型ガイドやその他の学習コンテンツを見つけます。[ライブラリに行く](/security)。
 
-**Microsoft Security リソース**: マルウェア対策からゼロ トラストまで、組織のセキュリティ ニーズに関連するすべてのリソースを入手します。[リソースに行く](/security/business/resources)。
+**Microsoft セキュリティ リソース**: マルウェア対策からゼロ トラストまで、組織のセキュリティ ニーズに関連するすべてのリソースを入手します。

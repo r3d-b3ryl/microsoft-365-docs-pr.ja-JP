@@ -22,14 +22,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for Business サブスクリプションのオンラインまたは電話によるサポートを受ける方法を説明します。 これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。
-ms.openlocfilehash: 54c25cd9b6a7fcca46bd434f4e195c088d8d0986
-ms.sourcegitcommit: 282f3a58b8e11615b3e53328e6b89a6ac52008e9
+ms.openlocfilehash: b0caf57ddc71f028cf913f29fa983ed1d7bcffc2
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "61560110"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465890"
 ---
-# <a name="get-support"></a>サポートを受ける
+# <a name="get-support-for-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 のサポートを受ける
 
 ::: moniker range="o365-worldwide"
 
@@ -48,7 +48,7 @@ ms.locfileid: "61560110"
 
 オンラインでのお問い合わせを開始すると、時間が節約されます。ここでは、解決策の検索やテクニカル サポートへの連絡をお手伝いします。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーは管理者ではありません。詳細については、「[社内の管理者アカウントをお持ちの場合](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business)」を参照してください。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">https://admin.microsoft.com</a> で管理センターにアクセスします。このページへのアクセスまたはこのアクションの実行が許可されていないというメッセージが表示される場合、ユーザーは管理者ではありません。詳細については、「[社内で管理者権限を持っているのは誰か?](../admin/admin-overview/admin-center-overview.md#who-has-admin-permissions-in-my-business)」 を参照してください。
 2. ページの右下で、**[ヘルプとサポート]** を選択します。
 3. テキスト ボックスに質問またはキーワードを入力します。ドロップダウン リストが表示された場合は、質問に最も近いものを選択するか、質問の入力を続けてから、**Enter** キーを押します。
 4. 結果に問題が生じなかった場合は、下部にある **[サポートに問い合わせ]** を選択します。

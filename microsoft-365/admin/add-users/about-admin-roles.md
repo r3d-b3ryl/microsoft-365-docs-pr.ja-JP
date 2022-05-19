@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: サービス管理者などの管理者ロールはビジネス機能にマップされ、管理センターで特定のタスクを実行するための権限を付与します。
-ms.openlocfilehash: 01659905becdbd599c9d597e4a7dac3533d1eeb9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: 特定のビジネス機能にマップし、管理センターで特定のタスクを実行するためのアクセス許可を付与するサービス管理者ロールなどの管理者ロールについて説明します。
+ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435327"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65467122"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの管理者ロールについて
 

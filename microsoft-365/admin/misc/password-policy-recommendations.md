@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化し、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にします。
-ms.openlocfilehash: 46e6c4ba163df0693630896b8db17b4eefe9828a
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 006e537c2e2d77a19b27f1c2d537269d69d07c1e
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312578"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469010"
 ---
-# <a name="password-policy-recommendations"></a>パスワード ポリシーの推奨事項
+# <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Microsoft 365 パスワードに関するパスワード ポリシーの推奨事項
 
 組織の管理者は、組織内のユーザー向けのパスワード ポリシーを設定する必要があります。パスワード ポリシーの設定は複雑でわかりにくい場合があります。この記事では、パスワード攻撃からの組織の保護を強化するための推奨事項を示します。
 

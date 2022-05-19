@@ -1,5 +1,5 @@
 ---
-title: ユーザーにライセンスを割り当てる
+title: Microsoft 365 管理センターでユーザーにライセンスを割り当てる
 f1.keywords:
 - CSH
 author: cmcatee-MSFT
@@ -26,12 +26,12 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスを特定のユーザーに割り当てるのか、またはユーザー ライセンスを特定の製品に割り当てるのかによって、ライセンスを割り当てます。
 ms.date: 04/22/2022
-ms.openlocfilehash: 71b6886ed8248f05339e135f96b24f2af2282e0b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5402a3f2b1f1e702b0d8f3e8b021206c9131710d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437562"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65465824"
 ---
 # <a name="assign-microsoft-365-licenses-to-users"></a>Microsoft 365 ライセンスをユーザーに割り当てる
 

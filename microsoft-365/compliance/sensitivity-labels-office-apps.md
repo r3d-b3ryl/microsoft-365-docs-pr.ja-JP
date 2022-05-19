@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cac0965ba9cd4b11280e1efd263f49137672399f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 71f704e8215265409e5cf0edbbb3324d8925b0e3
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286826"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463211"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -41,7 +41,7 @@ Windows コンピューター専用の Office のサブスクリプション バ
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>アプリでの秘密度ラベル機能のサポート
 
-次の表に、機能ごとに、組み込みのラベルを使用して秘密度ラベルをサポートするために必要な Office の最小バージョンを示します。 または、ラベル機能が公開プレビュー中または将来のリリースのためにレビュー中の場合。 将来のリリースで計画されている新機能に関する詳細に[Microsoft 365 ロードマップ](https://aka.ms/MIPC/Roadmap)を使用します。
+次の表に、Office アプリに組み込まれている秘密度ラベルの特定の機能を導入した Office の最小バージョンを示します。 または、ラベル機能が公開プレビュー中または将来のリリースのためにレビュー中の場合。 将来のリリースで計画されている新機能に関する詳細に[Microsoft 365 ロードマップ](https://aka.ms/MIPC/Roadmap)を使用します。
 
 Office アプリの新しいバージョンは、さまざまな更新チャネルでさまざまな時間に利用できるようになります。 Windows の場合、半期エンタープライズ チャネルよりも最新チャネルや月次エンタープライズ チャネルである場合に早期に取得できます。 最小バージョン番号も、ある更新チャネルと次の更新のものとで異なる場合があります。 詳細については、「[Microsoft 365 Apps 用更新プログラム チャネルの概要](/deployoffice/overview-update-channels)」および「[Microsoft 365 Apps の更新履歴](/officeupdates/update-history-microsoft365-apps-by-date)」を参照してください。
 
@@ -178,7 +178,7 @@ Azure Information Protection 統合ラベル付けクライアントは、Open X
 
 - 以下のように IRM 設定を無効化してユーザーが選択しないようにすることを検討します。
     - Outlook for Windows: 
-        - HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM からのレジストリ キー (DWORD:00000001) *DisableDNF* および *DisableEO*
+        - レジストリ キー`DWORD:00000001` *DisableDNF* および *DisableEO* `HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM` より
         - グループ ポリシー設定では、**[暗号化] ボタン向けに既定の暗号化オプションを構成する** は構成されないことを確認してください。
     - Outlook for Mac: 
         - キー *DisableEncryptOnly* および *DisableDoNotForward* セキュリティ設定は、[Outlook for Mac 向けの環境設定の設定](/DeployOffice/mac/preferences-outlook)で文書化されます

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7355ef75eb455ad7442052daf1df814eb9b3bf26
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 14be99abd0a31a8141f5f66a205a9cd0e17391af
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285086"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65469450"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -165,6 +165,9 @@ ms.locfileid: "65285086"
 ![管理者が定義したアクセス許可の設定。](../media/sensitivity-encryption-settings-for-admin-defined-permissions.png)
 
 ### <a name="rights-management-use-license-for-offline-access"></a>オフライン アクセスのための Rights Management 使用ライセンス
+
+> [!NOTE]
+> オフライン アクセスを許可するように暗号化設定を構成できますが、暗号化されたコンテンツのオフライン アクセスをサポートしていないアプリもあります。 たとえば、オフラインの場合、[Power BI Desktop](/power-bi/admin/service-security-sensitivity-label-overview) 内のラベル付きファイルと暗号化されたファイルは開きません。
 
 ユーザーが Azure Rights Management サービスからの暗号化によって保護されているドキュメントまたはメールを開くと、そのコンテンツの Azure Rights Management 使用ライセンスがユーザーに付与されます。 この使用ライセンスは、ドキュメントまたは電子メールに対するユーザーの使用権と、コンテンツの暗号化に使用された暗号化キーを含む証明書です。 使用ライセンスには、有効期限が設定されている場合はその有効期限と、使用ライセンスの有効期間も含まれています。
 

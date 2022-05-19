@@ -1,5 +1,5 @@
 ---
-title: ユーザーを追加してライセンスを割り当てる
+title: Microsoft 365 でユーザーを追加し、ライセンスを割り当てる
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -21,14 +21,14 @@ ms.custom:
 - business_assist
 search.appverid:
 - MET150
-description: 各チーム メンバーは、一般法人向け Microsoft 365 にサインインしてアクセスする前に、ユーザー アカウントが必要になります。ユーザーを追加して、ライセンスを割り当てる方法について説明します。
+description: 各チーム メンバーにユーザー アカウントを付与して、Microsoft 365 ライセンス、サインイン資格情報、および Microsoft 365 メールボックスを持つ方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 90ef6506d10c0f4c106dd18816ccd2f11803a079
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 8ebc4b99840f9987d115539d0039efa1950499d3
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765422"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466814"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
 

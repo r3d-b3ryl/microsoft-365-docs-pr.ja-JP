@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex の設定
-ms.openlocfilehash: 0d7cbe0f99747629bcac581bd080d88af27e8a06
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
+ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935371"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65463145"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -45,7 +45,13 @@ ms.locfileid: "64935371"
 
 管理者は、セットアップ後、および <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>のコンテンツの解釈管理設定全体を通じて、選択した設定に変更を加えることもできます。
 
-カスタム Power Platform 環境を使用する場合は、フォーム処理モデルを作成する前に、[この環境で *プロジェクト Cortex の AI ビルダー* アプリをインストールし、](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)そのアプリに [AI ビルダー クレジットを割り当てる](/power-platform/admin/capacity-add-on)必要があります。 カスタム環境を使用する場合、モデル作成者には環境メーカーのセキュリティ ロールを割り当て、モデル ユーザーには基本ユーザーのセキュリティ ロールを割り当てる必要があります。 詳細については、「[ユーザーへのセキュリティ ロールの割り当て](/power-platform/admin/assign-security-roles)」を参照してください。
+### <a name="custom-power-platform-environments"></a>Power Platform のカスタム環境
+
+Power Platform のカスタム環境を使用する場合は、この環境に *AI Builder for Project Cortanx* アプリをインストールする必要があります。 詳細については、「[Dynamics 365 アプリの管理](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view)」 を参照し、Dynamics 365 アプリの一覧で *AI Builder for Project Cortanx* アプリを探してください。
+
+フォーム処理モデルを作成する前に、カスタム環境に [AI Builder クレジットの割り当て](/power-platform/admin/capacity-add-on) を行う必要もあります。 
+
+カスタム環境を使用する場合は、モデル作成者に Environment Maker セキュリティ ロールを割り当て、モデル ユーザーに基本ユーザー セキュリティ ロールを割り当てる必要があります。詳細については、「[ユーザーにセキュリティ ロールを署名する](/power-platform/admin/assign-security-roles)」 を参照してください。
 
 [コンテンツ センター サイト](/microsoft-365/contentunderstanding/create-a-content-center)でモデルを作成するユーザーは、サイト メンバーである必要があります。 コンテンツ センターの外部でローカルにモデルを作成するユーザーは、それらのサイトのサイト所有者である必要があります。
 
