@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 48fbef36720d295dabbf640944e64900633f1fe2
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363062"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599571"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -332,6 +332,9 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 このルールは、難読化されたスクリプト内で疑わしいプロパティを検出します。
 
 スクリプトの難読化は、マルウェア作成者と正当なアプリケーションの両方が、知的財産を隠したり、スクリプトの読み込み時間を短縮したりするために使用する一般的な手法です。 また、マルウェアの作成者は難読化を使用して、悪意のあるコードの読み取りを困難にし、人間やセキュリティ ソフトウェアによる綿密な調査を防ぎます。
+
+> [!IMPORTANT]
+> 誤検知の数が多いため、このルールは現在 PowerShell スクリプトを検出しません。これは一時的な解決策です。 ルールが更新され、すぐに PowerShell スクリプトの再指定が開始されます。
 
 Intune名:`Obfuscated js/vbs/ps/macro code`
 

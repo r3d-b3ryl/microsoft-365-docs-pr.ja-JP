@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: a836865906de594436b27c44ebf65ba3ed99c96e
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 3da0554f55e25f765702fa0d0fbf169ba2e66438
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188240"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65601648"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -31,25 +31,28 @@ Microsoft Defender for Endpoint シナリオのセキュリティ管理の要件
 ドメインに参加しているデバイスがAzure Active Directoryとの信頼関係を作成すると、このシナリオは *ハイブリッド Azure Active Directory参加* シナリオと呼ばれます。 Microsoft Defender for Endpointの Security Management は、次の要件を満たすこのシナリオを完全にサポートしています。
 
 - Azure Active Directory Connect (AAD Connect) は、Microsoft Defender for Endpointから使用されるテナントに同期する必要があります
-- ハイブリッド Azure Active Directory参加は、環境内で構成する必要があります (フェデレーションまたはAAD Connect同期を使用)
+- ハイブリッド Azure Active Directory参加は、環境内で構成する必要があります (フェデレーションまたは AAD Connect同期を使用)
 - AAD Connect同期には、Azure Active Directoryと同期するために *スコープ内の* デバイス オブジェクトを含める必要があります (参加に必要な場合)
-- サーバー 2012 R2 の同期のAAD Connect規則を変更する必要があります (Server 2012 R2 のサポートが必要な場合)
+- サーバー 2012 R2 の同期に関する AAD Connect規則を変更する必要があります (Server 2012 R2 のサポートが必要な場合)
 - すべてのデバイスは、Microsoft Defender for EndpointをホストするテナントのAzure Active Directoryに登録する必要があります。 テナント間のシナリオはサポートされていません。 
 
 ### <a name="connectivity-requirements"></a>接続要件
 
 デバイスは、次のエンドポイントにアクセスできる必要があります。
 
-- `enterpriseregistration.windows.net`- Azure AD登録の場合。
-- `login.microsoftonline.com`- Azure AD登録の場合。
+- `enterpriseregistration.windows.net` - Azure AD 登録の場合。
+- `login.microsoftonline.com` - Azure AD 登録の場合。
 - `*.dm.microsoft.com` - ワイルドカードを使用すると、登録、チェックイン、レポートに使用されるクラウド サービス エンドポイントがサポートされ、サービスのスケーリングに応じて変更される可能性があります。
+
+> [!Note]
+> 組織のユーザーが Secure Socket Layer (SSL) 検査を行う場合は、エンドポイントを検査から除外する必要があります。
 
 ### <a name="supported-platforms"></a>サポートされるプラットフォーム
 
 Microsoft Defender for Endpointセキュリティ管理のポリシーは、次のデバイス プラットフォームでサポートされています。
 
-- Windows 10 Pro/Enterprise ([KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) を使用)
-- Windows 11 Pro/Enterprise
+- Windows 10 Professional/Enterprise ([KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) を使用)
+- Windows 11 Professional/Enterprise
 - [Microsoft Defender for Down-Level デバイスを使用した R2 のWindows Server 2012](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - [Microsoft Defender for Down-Level デバイスのWindows Server 2016](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)
 - Windows Server 2019 ([KB5006744](https://support.microsoft.com/topic/october-19-2021-kb5006744-os-build-17763-2268-preview-e043a8a3-901b-4190-bb6b-f5a4137411c0) を使用)
@@ -78,7 +81,7 @@ Microsoft Defender for Endpointにセキュリティ管理を使用するには�
 
 1. Microsoft Defender for Endpointにオンボードされるデバイス。
 
-2. 各デバイスとAzure ADの間に信頼が確立されます。 デバイスに既存の信頼がある場合は、それが使用されます。 デバイスが登録されていない場合は、新しい信頼が作成されます。
+2. 各デバイスと Azure AD の間に信頼が確立されます。 デバイスに既存の信頼がある場合は、それが使用されます。 デバイスが登録されていない場合は、新しい信頼が作成されます。
 
 3. デバイスは、Azure AD ID を使用してエンドポイント マネージャーと通信します。 この ID を使用すると、Microsoft エンドポイント マネージャーは、チェックイン時にデバイスを対象とするポリシーを配布できます。
 
@@ -90,19 +93,22 @@ Microsoft エンドポイント マネージャーには、デバイス上の De
 
 デバイス保護が Defender for Endpoint の管理を超える必要がある場合は、「[デバイス保護の概要](/mem/intune/protect/device-protect)」を参照して、デバイス *のコンプライアンス*、*マネージド アプリ*、*アプリ保護ポリシー*、サード パーティのコンプライアンスおよび *モバイル脅威防御* パートナーとの統合など、デバイスの保護に役立つMicrosoft エンドポイント マネージャーによって提供される追加機能について説明します。
 
-次の表は、さまざまなシナリオで管理されているデバイスで MDE 設定を構成できるポリシーを理解するのに役立ちます。 *MDE セキュリティ構成* とMicrosoft エンドポイント マネージャーの両方でサポートされているポリシーを展開する場合、MDE のみを実行するデバイスと *、Intune* またはConfiguration Managerによって管理されるデバイスによって、そのポリシーの 1 つのインスタンスを処理できます。
+次の表は、さまざまなシナリオで管理されているデバイスで MDE 設定を構成できるポリシーを理解するのに役立ちます。 *MDE セキュリティ構成* と *Microsoft エンドポイント マネージャー* の両方でサポートされているポリシーを展開する場合、そのポリシーの 1 つのインスタンスは、Microsoft Defender for Endpointのみを実行するデバイスと、IntuneまたはIntuneによって管理されるデバイスによって処理できます。Configuration Manager。
 
-| Microsoft エンドポイント マネージャー  | Workload | MDE セキュリティ構成  |  Microsoft エンドポイント マネージャー |
+| Microsoft エンドポイント マネージャー  | ワークロード |ポリシー| MDE セキュリティ構成  |  Microsoft エンドポイント マネージャー |
 |----------------|----------------|-------------------|------------|
-| エンドポイントのセキュリティ    | ウイルス対策                   | ![サポート](../media/green-check.png)  | ![サポート](../media/green-check.png)  |
-|                      | ディスク暗号化   |           | ![サポート](../media/green-check.png)  |
-|                      | ファイアウォール (プロファイルとルール)                | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
-|                      | エンドポイントの検出および応答        | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
-|                      | 攻撃面の縮小    |           | ![サポート](../media/green-check.png)  |
-|                      | アカウント保護       |       | ![サポート](../media/green-check.png)  |
-|                      | デバイス コンプライアンス     |   | ![サポート](../media/green-check.png)  |
-|                      | 条件付きアクセス    |   | ![サポート](../media/green-check.png)  |
-|                      | セキュリティ基本計画      |   | ![サポート](../media/green-check.png)  |
+| エンドポイントのセキュリティ    | ウイルス対策   |     ウイルス対策           | ![サポート](../media/green-check.png)  | ![サポート](../media/green-check.png)  |
+|                      | ウイルス対策   |   ウイルス対策の除外   | ![サポート](../media/green-check.png)  | ![サポート](../media/green-check.png)  |
+|                      | ウイルス対策   | Windows セキュリティ エクスペリエンス |                        | ![サポート](../media/green-check.png)  |
+|                      | ディスク暗号化   |     すべて |      | ![サポート](../media/green-check.png)  |
+|                      | ファイアウォール   | ファイアウォール              | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
+|                      | ファイアウォール | ファイアウォール規則                | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
+|                      | エンドポイントの検出および応答   | エンドポイントの検出および応答 | ![サポート](../media/green-check.png) | ![サポート](../media/green-check.png)  |
+|                      | 攻撃面の縮小    |   すべて |          | ![サポート](../media/green-check.png)  |
+|                      | アカウント保護       |    すべて |     | ![サポート](../media/green-check.png)  |
+|                      | デバイス コンプライアンス     |   すべて |  | ![サポート](../media/green-check.png)  |
+|                      | 条件付きアクセス    |   すべて |  | ![サポート](../media/green-check.png)  |
+|                      | セキュリティ基本計画      |  すべて |   | ![サポート](../media/green-check.png)  |
 
 **エンドポイント セキュリティ ポリシー** は、組織内のデバイスの保護に重点を置くセキュリティ管理者が使用することを目的とした個別の設定グループです。
 
@@ -120,24 +126,28 @@ Microsoft エンドポイント マネージャー管理センターを通じて
 1. [Microsoft 365 Defender ポータル](https://security.microsoft.com/)にサインインし **、設定** > **EndpointsConfiguration** >  **ManagementEnforcement** >  スコープに移動し、セキュリティ設定管理用のプラットフォームを有効にします。
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Defender コンソールでMicrosoft Defender for Endpoint設定管理を有効にします。":::
+    
+1. 組織のニーズに合わせてパイロット モードとConfiguration Manager機関の設定を構成します。
 
-    >[!NOTE]
-    >MDE 設定管理を使用して管理されるエンドポイントのスコープをきめ細かく制御するには、 **パイロット モード** の使用を検討してください。
+   :::image type="content" source="../media/pilot-CMAuthority-mde-settings-management-defender.png" alt-text="Microsoft 365 Defender ポータルでエンドポイント設定管理のパイロット モードを構成します。":::
+   
+  > [!TIP]
+  > パイロット モードと適切なデバイス タグを使用して、少数のデバイスでロールアウトをテストして検証します。 パイロット モードを使用しないと、構成されたスコープに該当するすべてのデバイスが自動的に登録されます。
 
-2. 関連するユーザーが、Microsoft エンドポイント マネージャーでエンドポイント セキュリティ設定を管理するアクセス許可を持っているか、Defender ポータルでロールを構成してそれらのアクセス許可を付与するアクセス許可を持っていることを確認します。 **設定** > **RolesAdd** >  **項目** に移動します。
+1. 関連するユーザーが、Microsoft エンドポイント マネージャーでエンドポイント セキュリティ設定を管理するアクセス許可を持っているか、Defender ポータルでロールを構成してそれらのアクセス許可を付与するアクセス許可を持っていることを確認します。 **設定** > **RolesAdd** >  **項目** に移動します。
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Defender ポータルで新しいロールを作成します。":::
 
    > [!TIP]
    > 既存のロールを変更し、必要なアクセス許可を追加したり、Microsoft Defender for Endpointで追加のロールを作成したりできます。
 
-3. ロールを構成するときは、ユーザーを追加し、**必ず [Microsoft エンドポイント マネージャーでエンドポイント セキュリティ設定の管理**] を選択します。
+1. ロールを構成するときは、ユーザーを追加し、**必ず [Microsoft エンドポイント マネージャーでエンドポイント セキュリティ設定の管理**] を選択します。
 
    :::image type="content" source="../media/add-role.png" alt-text="設定を管理するためのアクセス許可をユーザーに付与します。":::
 
-4. Microsoft エンドポイント マネージャー管理センター
+1. Microsoft エンドポイント マネージャー管理センター
 
-5. [**エンドポイント セキュリティ****]Microsoft Defender for Endpoint** を選択し、[**エンドポイント セキュリティ構成 (プレビュー) を適用するMicrosoft Defender for Endpointを許可する]** を **[オン]** に設定します。 > 
+1. [**エンドポイント セキュリティ****]Microsoft Defender for Endpoint** を選択し、[**エンドポイント セキュリティ構成 (プレビュー) を適用するMicrosoft Defender for Endpointを許可する]** を **[オン]** に設定します。 > 
 
    :::image type="content" source="../media/enable-mde-settings-management-mem.png" alt-text="Microsoft エンドポイント マネージャー管理センターでMicrosoft Defender for Endpoint設定管理を有効にします。":::
 
@@ -153,7 +163,9 @@ Microsoft Defender for Endpointでは、デバイスをオンボードするた�
 
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Managerとの共存
-一部の環境では、Configuration Managerと組み合わせて Microsoft Defender 用の Security Management を使用することが望ましい場合があります。 これは、[設定 **] ページ** ([エンドポイント>構成管理>適用スコープ設定 >) でConfiguration Managerトグルを **使用してセキュリティ** の管理設定を無効にすることで可能です。
+一部の環境では、[テナントがアタッチ](/mem/configmgr/tenant-attach/endpoint-security-get-started)Configuration Manager Microsoft Defender for Endpointに Security Management を使用することが望ましい場合があります。 両方を使用する場合は、複数のチャネルを使用すると競合や望ましくない結果の機会が生じるので、1 つのチャネルでポリシーを制御する必要があります。
+
+これをサポートするには、[セキュリティの *管理] 設定* を [オフ] に切り替Configuration Manager使用して構成 *します*。  [Microsoft 365 Defender ポータル](https://security.microsoft.com/)にサインインし、**設定** > **EndpointsConfiguration** >  **ManagementEnforcement** >  スコープに移動します。
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Configuration Manager設定を使用してセキュリティ設定を管理します。":::
 
@@ -161,7 +173,7 @@ Microsoft Defender for Endpointでは、デバイスをオンボードするた�
 >Configuration ManagerでMicrosoft Defender for Endpointに Security Management を使用する場合は、エンドポイント セキュリティ ポリシーを 1 つのコントロール プレーンに分離する必要があります。 両方のチャネルでポリシーを制御すると、競合や望ましくない結果が発生する可能性があります。
 
 
-## <a name="create-azure-ad-groups"></a>Azure AD グループの作成
+## <a name="create-azure-ad-groups"></a>Azure AD グループを作成する
 
 デバイスが Defender for Endpoint にオンボードされたら、Microsoft Defender for Endpointのポリシーの展開をサポートするデバイス グループを作成する必要があります。
 
@@ -178,11 +190,11 @@ Microsoft Defender for Endpointに登録されているが、IntuneまたはConf
    - **MDEJoined** - このシナリオの一環としてディレクトリに参加しているデバイスに追加されました。
    - **MDEManaged** - セキュリティ管理シナリオを積極的に使用しているデバイスに追加されます。 Defender for Endpoint がセキュリティ構成の管理を停止した場合、このタグはデバイスから削除されます。
 
-これらのデバイスのグループは[、Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)または[Microsoft エンドポイント マネージャー管理センター内から](/mem/intune/fundamentals/groups-add)作成できます。
+これらのデバイスのグループは[、Azure AD](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) または[Microsoft エンドポイント マネージャー管理センター内から](/mem/intune/fundamentals/groups-add)作成できます。
 
 ## <a name="deploy-policy"></a>ポリシーを展開する
 
-Microsoft Defender for Endpointによって管理されているデバイスを含む 1 つ以上のAzure AD グループを作成した後、それらのグループに対して Security Management for Microsoft Defender for Endpointの次のポリシーを作成して展開できます。
+Microsoft Defender for Endpointによって管理されているデバイスを含む 1 つ以上の Azure AD グループを作成した後、それらのグループにMicrosoft Defender for Endpoint用の Security Management の次のポリシーを作成してデプロイできます。
 
 - ウイルス対策
 - ファイアウォール
@@ -210,7 +222,7 @@ Microsoft Defender for Endpointによって管理されているデバイスを�
 
    - ファイアウォール規則ポリシーの場合は、次を選択します。
      - プラットフォーム: **Windows 10、Windows 11、Windows サーバー (プレビュー)**
-     - プロファイル: **Microsoft Defender ファイアウォール規則 (プレビュー)**
+     - プロファイル: **Microsoft Defender ファイアウォール ルール (プレビュー)**
 
    - [エンドポイントの検出と応答] ポリシーで、次を選択します。
      - プラットフォーム: **Windows 10、Windows 11、Windows サーバー (プレビュー)**
@@ -229,7 +241,7 @@ Microsoft Defender for Endpointによって管理されているデバイスを�
 
    設定の構成が完了したら、**[次へ]** を選択します。
 
-7. [**割り当て**] ページで、このプロファイルを受け取るAzure AD グループを選択します。 プロファイルの割り当ての詳細については、[ユーザーおよびデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign)に関するページを参照してください。
+7. [ **割り当て]** ページで、このプロファイルを受け取る Azure AD グループを選択します。 プロファイルの割り当ての詳細については、[ユーザーおよびデバイス プロファイルの割り当て](/mem/intune/configuration/device-profile-assign)に関するページを参照してください。
 
    [**次へ**] を選んで続行します。
 

@@ -3,7 +3,7 @@ title: Office 365 IP Address と URL Web サービスに含まれない、その
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 05/18/2022
+ms.date: 05/19/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: 新しいエンドポイント Web サービスには、特定のシナリオに対していくつかのエンドポイントが含まれていません。'
 hideEdit: true
-ms.openlocfilehash: bebffa1cb03a85ffd5ab7519095f38b7ae5cf985
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.openlocfilehash: 01fbd54ed5addb8552c59e2be8de76961e613968
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587350"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599169"
 ---
 # <a name="other-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Office 365 IP Address と URL Web サービスに含まれない、その他のエンドポイント
 
@@ -54,7 +54,7 @@ DNS とは別に、これらのインスタンスは、説明されている特�
 |3|**Azure AD Connect (SSO オプションを使用)** <p> WinRM &リモート PowerShell|顧客の STS 環境 (AD FS サーバーおよび AD FS プロキシ) \| TCP ポート 80 と 443|受信サーバー トラフィック|
 |4|AD FS プロキシ サーバーなどの **STS** (フェデレーションのお客様のみ)|顧客の STS (AD FS プロキシなど)\|ポート TCP 443 または TCP 49443 (ClientTLS使用)|受信サーバー トラフィック|
 |5|**[Exchange Online ユニファイド メッセージング/SBC 統合](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers)**|オンプレミス セッション ボーダー コントローラーと \*.um.outlook.com 間の双方向|送信サーバー専用トラフィック|
-|6 |**メールボックスの移行**<p>メールボックスの移行がオンプレミス [Exchange ハイブリッド](/exchange/exchange-deployment-assistant)からOffice 365に開始されると、Office 365は公開されたExchange Web サービス (EWS)/メールボックス レプリケーション サービス (MRS) サーバーに接続します。 Exchange Online サーバーが特定のソース IP 範囲からの受信接続を制限するために使用する NAT IP アドレスが必要な場合は、"Exchange Online" サービス領域の下の [OFFICE 365 URL & IP 範囲](urls-and-ip-address-ranges.md)に一覧表示されます。 <p> 特定のソース IP 範囲からの TCP 443 接続を制限する前に、MRS プロキシが個別の FQDN とパブリック IP アドレスに解決されるようにすることで、OWA などの発行済みの EWS エンドポイントへのアクセスが影響を受けないように注意する必要があります。|顧客のオンプレミス EWS/MRS プロキシ <br> TCP ポート 443|受信サーバー トラフィック|
+|6 |**メールボックスの移行**<p>メールボックスの移行がオンプレミス [Exchange ハイブリッド](/exchange/exchange-deployment-assistant)からOffice 365に開始されると、Office 365は公開されたExchange Web サービス (EWS)/メールボックス レプリケーション サービス (MRS) サーバーに接続します。 特定のソース IP 範囲からの受信接続のみを許可する必要がある場合は、OFFICE 365 URL & IP 範囲の **Exchange Online** テーブルに記載されている IP アドレスの [許可規則を作成します](urls-and-ip-address-ranges.md)。 <p> 発行された EWS エンドポイント (OWA など) への接続がブロックされないようにするには、接続を制限する前に、MRS プロキシが別の FQDN とパブリック IP アドレスに解決されていることを確認します。|顧客のオンプレミス EWS/MRS プロキシ <br> TCP ポート 443|受信サーバー トラフィック|
 |7 |Exchange Free/Busy 共有などの **[ハイブリッド](/exchange/exchange-deployment-assistant)共存関数**。|顧客のオンプレミス Exchange サーバーのバージョン|受信サーバー トラフィック|
 |8 |**ハイブリッド プロキシ認証 [をExchange](/exchange/exchange-deployment-assistant)する**|顧客のオンプレミス STS|受信サーバー トラフィック|
 |9 |[Exchange ハイブリッド](/exchange/exchange-deployment-assistant)構成ウィザードを使用してハイブリッド **[Exchange構成](/exchange/hybrid-configuration-wizard)** するために使用します。 <p> 注: これらのエンドポイントは、Exchange ハイブリッドの構成にのみ必要です。|TCP ポート 80 と 443 の domains.live.com は、Exchange 2010 SP3 ハイブリッド構成ウィザードでのみ必要です <p> GCC High、DoD IP アドレス: 40.118.209.192/32、168.62.190.41/32 <p> Worldwide Commercial & GCC: \*.store.core.windows.net; asl.configure.office.com; tds.configure.office.com; mshybridservice.trafficmanager.net ; <br> aka.ms/hybridwizard; <br> \*shcwreleaseprod.blob.core.windows.net/shcw/;|送信サーバー専用トラフィック|

@@ -11,21 +11,17 @@
         - name: Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
           href: protection-stack-microsoft-defender-for-office365.md
         - name: Defender for Office 365 を試す
-          href: try-microsoft-defender-for-office-365.md
+          items:
+            - name: Defender for Office 365 を試す
+              href: try-microsoft-defender-for-office-365.md
+            - name: Defender for Office 365 の試用版プレイブック
+              href: trial-playbook-defender-for-office-365.md
         - name: Defender for Office 365 の新機能
           href: whats-new-in-defender-for-office-365.md
         - name: Microsoft 365 Defender ポータルでの Defender for Office 365
           href: ../defender/microsoft-365-security-center-mdo.md
-        - name: Exchange Online Protection
-          items:
-            - name: Exchange Online Protection の概要
-              href: exchange-online-protection-overview.md
-            - name: EOP のメール フロー
-              href: mail-flow-in-eop.md
-            - name: 検疫する
-              href: quarantine-email-messages.md
-        - name: SPO、OneDrive、Teams 用の安全な添付ファイル機能
-          href: turn-on-mdo-for-spo-odb-and-teams.md
+        - name: Exchange Online Protection の概要
+          href: exchange-online-protection-overview.md
         - name: Microsoft 365 Defender ポータルの概要
           href: ../defender/microsoft-365-defender.md
         - name: メール エンティティ ページ
@@ -38,20 +34,6 @@
           href: email-analysis-investigations.md
         - name: 修復アクション
           href: air-remediation-actions.md
-        - name: マルウェア対策保護
-          href: anti-malware-protection.md
-        - name: スパム対策保護
-          href: anti-spam-protection.md
-        - name: フィッシング対策保護
-          href: anti-phishing-protection.md
-        - name: スプーフィング対策保護
-          href: anti-spoofing-protection.md
-        - name: Defender for Office 365 の安全な添付ファイル
-          href: safe-attachments.md
-        - name: Defender for Office 365 の安全なリンク
-          href: safe-links.md
-        - name: 送信スパム保護
-          href: outbound-spam-controls.md
         - name: セキュリティ ダッシュボードの概要
           href: security-dashboard.md
         - name: 脅威の調査および対応のしくみ
@@ -64,66 +46,130 @@
           href: protect-against-threats.md
         - name: Defender for Office 365 を Defender for Endpoint と統合する
           href: integrate-office-365-ti-with-mde.md
-        - name: Microsoft 365 Defender ポータルのアクセス許可
-          href: permissions-microsoft-365-security-center.md
-        - name: セキュリティ/コンプライアンス センターのアクセス許可
-          href: permissions-in-the-security-and-compliance-center.md
+        - name: アクセス許可
+          items:
+            - name: Microsoft 365 Defender ポータルのアクセス許可
+              href: permissions-microsoft-365-security-center.md
+            - name: セキュリティ/コンプライアンス センターのアクセス許可
+              href: permissions-in-the-security-and-compliance-center.md
+            - name: ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
+              href: grant-access-to-the-security-and-compliance-center.md
         - name: SIEM サーバーの統合
           href: siem-server-integration.md
         - name: SIEM と Defender for Office 365 の統合
           href: siem-integration-with-office-365-ti.md
         - name: 既定のセキュリティ保護
           href: secure-by-default.md
-        - name: 詳細については、「Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する」を参照してください。
-          href: configure-mdo-anti-phishing-policies.md
-        - name: EOP でのスパム対策ポリシーの構成
-          href: configure-anti-phishing-policies-eop.md
-        - name: マルウェア対策ポリシーを構成する
-          href: configure-anti-malware-policies.md
-        - name: スパム対策ポリシーの構成
+        - name: マルウェア対策保護
           items:
+            - name: マルウェア対策保護
+              href: anti-malware-protection.md
+            - name: マルウェア対策ポリシーを構成する
+              href: configure-anti-malware-policies.md
+            - name: SharePoint Online のウイルス検出
+              href: virus-detection-in-spo.md
+        - name: スパム対策保護
+          items:
+            - name: スパム対策保護
+              href: anti-spam-protection.md
             - name: スパム対策ポリシーの構成
               href: configure-your-spam-filter-policies.md
             - name: 高度なスパム フィルター (ASF) の設定
               href: advanced-spam-filtering-asf-options.md
-        - name: EOP を構成して、ハイブリッドの迷惑メール フォルダーにスパムを配信する
-          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
-        - name: Exchange Online メールボックスで迷惑メール設定を構成する
-          href: configure-junk-email-settings-on-exo-mailboxes.md
-        - name: 接続フィルターを構成する
-          href: configure-the-connection-filter-policy.md
-        - name: Defender for Office 365 の安全なリンクのグローバル設定を構成する
-          href: configure-global-settings-for-safe-links.md
-        - name: 送信スパム フィルターを構成する
-          href: configure-the-outbound-spam-policy.md
-        - name: 優先アカウントを構成して確認する
-          href: configure-review-priority-account.md
-        - name: 受信拒否リストの作成
-          href: Create-block-sender-lists-in-office-365.md
-        - name: 信頼できる差出人リストの作成
-          href: Create-safe-sender-lists-in-office-365.md
+            - name: 迷惑メールとバルク メールの違い
+              href: what-s-the-difference-between-junk-email-and-bulk-email.md
+            - name: スパム信頼度レベル (SCL)
+              href: spam-confidence-levels.md
+            - name: バルク苦情レベル (BCL)
+              href: bulk-complaint-level-values.md
+            - name: EOP のバックスキャッター
+              href: backscatter-messages-and-eop.md
+            - name: メール フロー ルール (トランスポート ルール)
+              items:
+                - name: メール フロー ルール (トランスポート ルール)
+                  href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
+                - name: メール フロー ルールを使用して実行可能な添付ファイルを含むメッセージをブロックする
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
+                - name: メール フロー ルールを使用してバルク メールをフィルタリングする
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
+                - name: メール フロー ルールを使用してメッセージの SCL を設定する
+                  href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
+            - name: Exchange Online メールボックスで迷惑メール設定を構成する
+              href: configure-junk-email-settings-on-exo-mailboxes.md
+            - name: 接続フィルターを構成する
+              href: configure-the-connection-filter-policy.md
+            - name: 送信スパム保護
+              items:
+                - name: 送信スパム保護
+                  href: outbound-spam-controls.md
+                - name: 送信スパム フィルターの構成
+                  href: configure-the-outbound-spam-policy.md
+                - name: 外部メールの自動転送を制御する
+                  href: external-email-forwarding.md
+                - name: 送信方向の配信のプール
+                  href: high-risk-delivery-pool-for-outbound-messages.md
+        - name: フィッシング対策保護
+          items:
+            - name: フィッシング対策保護
+              href: anti-phishing-protection.md
+            - name: スプーフィング対策保護
+              href: anti-spoofing-protection.md
+            - name: フィッシング対策ポリシー
+              href: set-up-anti-phishing-policies.md
+            - name: EOP でのスパム対策ポリシーの構成
+              href: configure-anti-phishing-policies-eop.md
+            - name: 詳細については、「Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する」を参照してください。
+              href: configure-mdo-anti-phishing-policies.md
+            - name: Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
+              href: how-office-365-validates-the-from-address.md
+        - name: ゼロアワー自動消去 (ZAP)
+          href: zero-hour-auto-purge.md
+        - name: ポリシーと保護を組み合わせる方法
+          href: how-policies-and-protections-are-combined.md
+        - name: Defender for Office 365 の安全な添付ファイル
+          items:
+            - name: Defender for Office 365 の安全な添付ファイル
+              href: safe-attachments.md
+            - name: Defender for Office 365 の安全な添付ファイル ポリシーを設定する
+              href: set-up-safe-attachments-policies.md
+            - name: SPO、OneDrive、Teams 用の安全な添付ファイル機能
+              href: mdo-for-spo-odb-and-teams.md
+            - name: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
+              href: turn-on-mdo-for-spo-odb-and-teams.md
+            - name: A5 または E5 セキュリティの安全なドキュメント
+              href: safe-docs.md
+        - name: Defender for Office 365 の安全なリンク
+          items:
+            - name: Defender for Office 365 の安全なリンク
+              href: safe-links.md
+            - name: Defender for Office 365 の安全なリンク ポリシーを設定する
+              href: set-up-safe-links-policies.md
+            - name: Defender for Office 365 の安全なリンクのグローバル設定を構成する
+              href: configure-global-settings-for-safe-links.md
+        - name: Defender for Office 365 のユーザー タグ
+          items:
+            - name: Defender for Office 365 のユーザー タグ
+              href: user-tags.md
+            - name: 優先アカウントを構成して確認する
+              href: configure-review-priority-account.md
         - name: メール認証
-          href: email-validation-and-authentication.md
-        - name: ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
-          href: grant-access-to-the-security-and-compliance-center.md
-        - name: Defender for Office 365 の安全なドキュメント
-          href: safe-docs.md
-        - name: Defender for Office 365 の安全なリンク ポリシーを設定する
-          href: set-up-safe-links-policies.md
-        - name: Defender for Office 365 の安全な添付ファイル ポリシーを設定する
-          href: set-up-safe-attachments-policies.md
-        - name: SPF を設定して、スプーフィングを防止する
-          href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+          items:
+            - name: メール認証
+              href: email-validation-and-authentication.md
+            - name: DKIM を使用して、送信電子メールを検証する
+              href: use-dkim-to-validate-outbound-email.md
+            - name: DKIM 署名付きメッセージの検証をサポートする
+              href: support-for-validation-of-dkim-signed-messages.md
+            - name: DMARC を使用してメールを検証する
+              href: use-dmarc-to-validate-email.md
+            - name: SPF を設定して、スプーフィングを防止する
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: Microsoft 365 で SPF を使用して、スプーフィングを防止する方法
+              href: how-office-365-uses-spf-to-prevent-spoofing.md
+        - name: EOP のメール フロー
+          href: mail-flow-in-eop.md
         - name: ユーザーからの報告ポリシー
           href: user-submission.md
-        - name: Defender for Office 365 のユーザー タグ
-          href: user-tags.md
-        - name: SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
-          href: turn-on-mdo-for-spo-odb-and-teams.md
-        - name: DKIM を使用して、送信メールを検証する
-          href: use-dkim-to-validate-outbound-email.md
-        - name: DMARC を使用してメールを検証する
-          href: use-dmarc-to-validate-email.md
         - name: IPv6 経由の匿名受信メールのサポートを追加する
           href: support-for-anonymous-inbound-email-messages-over-ipv6.md
         - name: Application Guard for Office をインストールする
@@ -184,18 +230,14 @@
               href: manage-tenant-allows.md
             - name: テナントの許可/禁止リストのエントリを変更および削除する
               href: modify-remove-entries-tenant-allow-block.md
+        - name: 受信拒否リストの作成
+          href: Create-block-sender-lists-in-office-365.md
+        - name: 信頼できる差出人リストの作成
+          href: Create-safe-sender-lists-in-office-365.md
         - name: メッセージの追跡
           href: message-trace-scc.md
-        - name: メール フロー ルールを使用して実行可能な添付ファイルを含むメッセージをブロックする
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-block-executable-attachments
-        - name: メール フロー ルールを使用してバルク メールをフィルタリングする
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-filter-bulk-mail
-        - name: メール フロー ルールを使用してメッセージの SCL を設定する
-          href: /exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl
-        - name: ゼロアワー自動消去 - スパムまたはマルウェアからの保護
-          href: zero-hour-auto-purge.md
-        - name: 外部メールの自動転送を制御する
-          href: external-email-forwarding.md
+        - name: 個人情報の漏えいを監視する
+          href: monitor-for-leaks-of-personal-data.md
     - name: 検出する
       items:
         - name: Defender for Office 365 用脅威エクスプローラー
@@ -210,10 +252,6 @@
           href: threat-trackers.md
         - name: ポリシーを通知する
           href: ../../compliance/alert-policies.md
-        - name: セキュリティ/コンプライアンス センターのスマート レポートと分析情報
-          href: reports-and-insights-in-security-and-compliance.md
-        - name: メール フロー ルール (トランスポート ルール)
-          href: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
         - name: 管理者の役割グループ レポートの実行
           href: /exchange/security-and-compliance/exchange-auditing-reports/search-role-group-changes
     - name: 調査
@@ -248,6 +286,8 @@
               href: view-reports-for-mdo.md
             - name: セキュリティ/コンプライアンス センターのメールフローレポートを表示
               href: view-mail-flow-reports.md
+            - name: セキュリティ/コンプライアンス センターのスマート レポートと分析情報
+              href: reports-and-insights-in-security-and-compliance.md
         - name: セキュリティ/コンプライアンス センター のメール フロー インサイト
           items:
             - name: セキュリティ/コンプライアンス センター のメール フロー インサイト
@@ -320,14 +360,20 @@
           href: air-review-approve-pending-completed-actions.md
         - name: フィッシング対策保護を調整する
           href: tuning-anti-phishing.md
-        - name: ユーザーとして検疫済みメッセージを検索して解放する
-          href: find-and-release-quarantined-messages-as-a-user.md
-        - name: 管理者として検疫済みメッセージとファイルを管理する
-          href: manage-quarantined-messages-and-files.md
-        - name: 検疫ポリシー
-          href: quarantine-policies.md
-        - name: 共有メールボックスから検疫済みメッセージを解放する
-          href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+        - name: 検疫する
+          items:
+            - name: 検疫する
+              href: quarantine-email-messages.md
+            - name: 管理者検疫
+              href: manage-quarantined-messages-and-files.md
+            - name: エンド ユーザー検疫
+              href: find-and-release-quarantined-messages-as-a-user.md
+            - name: 検疫ポリシー
+              href: quarantine-policies.md
+            - name: 共有メールボックスから検疫済みメッセージを解放する
+              href: view-and-release-quarantined-messages-from-shared-mailboxes.md
+            - name: 検疫通知
+              href: use-spam-notifications-to-release-and-report-quarantined-messages.md
         - name: 無効化ポータルを使って、受信拒否リストから自分自身を削除する
           href: use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md
     - name: FAQ
@@ -354,24 +400,8 @@
           href: help-and-support-for-eop.md
         - name: Microsoft 365 に送信されるメールのトラブルシューティング
           href: troubleshooting-mail-sent-to-office-365.md
-        - name: Microsoft 365 で SPF を使用して、スプーフィングを防止する方法
-          href: how-office-365-uses-spf-to-prevent-spoofing.md
-        - name: Office 365 がフィッシングを防ぐために差出人アドレスを検証する方法
-          href: how-office-365-validates-the-from-address.md
-        - name: ポリシーと保護を組み合わせる方法
-          href: how-policies-and-protections-are-combined.md
         - name: スパム対策メッセージ ヘッダー
           href: anti-spam-message-headers.md
-        - name: フィッシング対策ポリシー
-          href: set-up-anti-phishing-policies.md
-        - name: EOP のバックスキャッター
-          href: backscatter-messages-and-eop.md
-        - name: Bulk Complaint Level (BCL)
-          href: bulk-complaint-level-values.md
-        - name: 検疫通知
-          href: use-spam-notifications-to-release-and-report-quarantined-messages.md
-        - name: 送信方向の配信のプール
-          href: high-risk-delivery-pool-for-outbound-messages.md
         - name: EOP でのメール フロー インテリジェンス
           href: mail-flow-intelligence-in-office-365.md
         - name: 'リファレンス: ポリシー、プラクティス、ガイドライン'
@@ -380,14 +410,8 @@
           href: sending-mail-to-office-365.md
         - name: ユーザー以外へのサービス
           href: services-for-non-customers.md
-        - name: Spam Confidence Level (SCL)
-          href: spam-confidence-levels.md
-        - name: DKIM 署名付きメッセージの検証をサポートする
-          href: support-for-validation-of-dkim-signed-messages.md
-        - name: SharePoint Online のウイルス検出
-          href: virus-detection-in-spo.md
-        - name: 迷惑メールとバルク メールの違い
-          href: what-s-the-difference-between-junk-email-and-bulk-email.md
+        - name: EOP を構成して、ハイブリッドの迷惑メール フォルダーにスパムを配信する
+          href: /exchange/standalone-eop/configure-eop-spam-protection-hybrid
     - name: Microsoft 365 Defender ドキュメント
       items:
         - name: Microsoft 365 Defender

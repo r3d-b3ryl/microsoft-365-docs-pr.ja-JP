@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: bda0874ef829495b162beae09fde1c4efcb03c85
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 22e5ed11c97ed00449cb62439e105bd1e6dc78e7
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971563"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599549"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 
@@ -32,14 +32,16 @@ ms.locfileid: "64971563"
 
 組織で [コミュニケーション コンプライアンス](communication-compliance.md) を開始する前に、情報テクノロジとコンプライアンス管理チームが確認する必要がある重要な計画アクティビティと考慮事項があります。 次の領域での展開を十分に理解し、計画することで、通信コンプライアンス機能の実装と使用が円滑に進み、ソリューションのベスト プラクティスと一致することが保証されます。
 
+組織内のコンプライアンスと危険なアクティビティに対処するための計画プロセスの詳細と概要については、「 [インサイダー リスク管理プログラムの開始](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf)」を参照してください。
+
 > [!IMPORTANT]
 > 現在、通信コンプライアンスは、Azure サービスの依存関係でサポートされている地理的リージョンと国でホストされているテナントで利用できます。 組織で通信コンプライアンスがサポートされていることを確認するには、 [国/地域ごとの Azure 依存関係の可用性](/troubleshoot/azure/general/dependency-availability-by-country)に関するページを参照してください。
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Office 365での監督からの移行
 
-Office 365で監督ポリシーを使用している組織の場合は、Microsoft Purview の通信コンプライアンス ポリシーに移行することを直ちに計画し、次の重要な点を理解する必要があります。
+Office 365で監督ポリシーを使用している組織の場合は、Microsoft Purviewのコミュニケーション コンプライアンス ポリシーに移行することを直ちに計画し、次の重要な点を理解する必要があります。
 
-- Office 365の監督ソリューションは、Microsoft Purview の通信コンプライアンス ソリューションに完全に置き換えられました。 新しい調査と修復の改善を使用するために、既存の監督ポリシーと同じ設定を持つ通信コンプライアンスに新しいポリシーを作成することをお勧めします。
+- Office 365の監督ソリューションは、Microsoft Purviewの通信コンプライアンス ソリューションに完全に置き換えられました。 新しい調査と修復の改善を使用するために、既存の監督ポリシーと同じ設定を持つ通信コンプライアンスに新しいポリシーを作成することをお勧めします。
 - ポリシー一致Office 365監督で保存されたメッセージは、通信コンプライアンスに移動したり共有したりすることはできません。
 - 移行プロセス中に両方のソリューションが並んで使用される組織の場合、各ソリューションで使用されるポリシーには一意のポリシー名が必要です。 移行期間中は、グループとカスタム キーワード辞書をソリューション間で共有することができます。
 
@@ -60,7 +62,7 @@ Office 365の監督に関する退職情報については、詳細について�
 
 ### <a name="permissions"></a>アクセス許可
 
-[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)で定期的にアラートとケースを監視および確認する専用の関係者を選択します。 組織内のさまざまなコミュニケーション コンプライアンスの役割グループにユーザーと利害関係者を割り当てる方法を理解していることを確認します。
+Microsoft Purview コンプライアンス ポータルの定期的な周期でアラートとケースを監視および確認する専用の利害関係者を選択[します](https://compliance.microsoft.com/)。 組織内のさまざまなコミュニケーション コンプライアンスの役割グループにユーザーと利害関係者を割り当てる方法を理解していることを確認します。
 
 > [!IMPORTANT]
 > ロール グループを構成した後、ロール グループのアクセス許可が組織全体の割り当てられたユーザーに適用されるまでに最大 30 分かかる場合があります。
@@ -69,8 +71,8 @@ Office 365の監督に関する退職情報については、詳細について�
 
 - [*Azure Active Directory グローバル管理者*](/azure/active-directory/roles/permissions-reference#global-administrator)ロール
 - Azure Active Directory [*コンプライアンス管理者*](/azure/active-directory/roles/permissions-reference#compliance-administrator)ロール
-- Microsoft Purview コンプライアンス ポータル [*組織の管理*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) 役割グループ
-- Microsoft Purview コンプライアンス ポータル [*コンプライアンス管理者*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) の役割グループ
+- Microsoft Purview コンプライアンス ポータル [*組織管理*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)役割グループ
+- Microsoft Purview コンプライアンス ポータル [*コンプライアンス管理者*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)の役割グループ
 - *コミュニケーション コンプライアンス* の役割グループ
 - *コミュニケーション コンプライアンス管理者* の役割グループ
 
@@ -78,7 +80,7 @@ Office 365の監督に関する退職情報については、詳細について�
 
 - Azure Active Directory *グローバル管理者*
 - Azure Active Directory *コンプライアンス管理者*
-- Microsoft Purview コンプライアンス ポータル *組織の管理*
+- Microsoft Purview コンプライアンス ポータル *組織管理*
 - Microsoft Purview コンプライアンス ポータル *コンプライアンス管理者*
 
 > [!IMPORTANT]

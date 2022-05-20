@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f24592460daa4f476e969069d0c1b7636f6a23e
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285546"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599323"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -53,7 +53,7 @@ Exchange Online Protection (EOP) の検疫ポリシー (以前は _検疫タグ_
 次の表に、既定の検疫ポリシー、関連するアクセス許可グループ、および検疫通知を有効にするかどうかについてを説明します:
 
 |既定の検疫ポリシー|使用されるアクセス許可グループ|検疫通知が有効になっていますか?|
-|---|---|---|
+|---|:---:|:---:|
 |AdminOnlyAccessPolicy|アクセスなし|いいえ|
 |DefaultFullAccessPolicy|フル アクセス|いいえ|
 |NotificationEnabledPolicy<sup>\*</sup>|フル アクセス|はい|

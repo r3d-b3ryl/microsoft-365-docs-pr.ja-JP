@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用して SharePoint Syntex を管理する
+title: PowerShell を使用してSharePoint Syntexを管理する
 ms.author: jaeccles
 author: jameseccles
 ms.reviewer: ssquires
@@ -13,14 +13,14 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: medium
 description: PowerShell を使用してSharePoint Syntexを管理する方法について説明します。
-ms.openlocfilehash: 2c8383a3708d83738d201a4e638deb65462da47d
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 5a0efa3a67ad6366c6160dc58a46bb1559345b9d
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525682"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599191"
 ---
-# <a name="manage-sharepoint-syntex-with-powershell"></a>PowerShell を使用して SharePoint Syntex を管理する
+# <a name="manage-sharepoint-syntex-by-using-powershell"></a>PowerShell を使用してSharePoint Syntexを管理する
 
 > [!IMPORTANT]
 > SharePoint Syntex PowerShell コマンドレットとその他のすべての PnP コンポーネントは、アクティブなコミュニティによってサポートされるオープン ソース ツールです。 公式の Microsoft サポート チャネルのオープン ソース ツールのサポート用 SLA ではありません。

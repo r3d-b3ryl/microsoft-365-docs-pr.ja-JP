@@ -1,7 +1,7 @@
 ---
 title: キャンバスでMicrosoft Teams会議を使用する
-ms.author: v-cichur
-author: cichur
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: sovaish
 audience: admin
@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Teams会議を Canvas と統合する
-ms.openlocfilehash: 529cc27b6b63fca76d47487f26bd6deda7478640
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: a81b8c7da014ba4ded9e4a2e3cfd6b38509ae2db
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569581"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599615"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>キャンバスでMicrosoft Teams会議を使用する
 
@@ -27,11 +27,11 @@ Microsoft Teams会議は、教育者と学生がラーニング管理システ�
 ## <a name="prerequisites-before-deployment"></a>デプロイ前の前提条件
 
 > [!NOTE]
-> 現在のTeams会議 LTI では、限られたスコープ内のMicrosoft Azure Active Directory (AAD) と Canvas ユーザーの同期のみがサポートされています。
+> 現在のTeams会議 LTI では、限られたスコープ内でキャンバス ユーザーと Microsoft Azure Active Directory (AAD) の同期のみがサポートされています。
 >
 > - テナントには Microsoft Education ライセンスが必要です。
 > - Canvas と Microsoft の間でユーザーをマッピングするために使用できる Microsoft テナントは 1 つだけです。
-> - グループの重複を回避するには、クラス Teams LTI を使用する前に、学校データ同期 (SDS) をオフにする必要があります。
+> - グループの重複を回避するには、クラス Teams LTI を使用する前に学校データ同期 (SDS) をオフにする必要があります。
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
 
@@ -45,9 +45,9 @@ Instructure Canvas 内でMicrosoft Teams統合を管理する前に、Canvas 管
 
    ![Canvas Teams Sync Updated png。](https://user-images.githubusercontent.com/87142492/128552407-78cb28e9-47cf-4026-954d-12dc3553af6f.png)
 
-4. Microsoft テナント名、ログイン属性、ドメイン サフィックス、AAD参照属性を入力します。 これらのフィールドは、Canvas のユーザーとMicrosoft Azure Active Directoryのユーザーの照合に使用されます。
+4. Microsoft テナント名、ログイン属性、ドメイン サフィックス、および AAD ルックアップ属性を入力します。 これらのフィールドは、Canvas のユーザーとMicrosoft Azure Active Directoryのユーザーの照合に使用されます。
    - Login 属性は、照合に使用される Canvas ユーザー属性です。
-   - サフィックス フィールドは省略可能であり、Canvas 属性と Microsoft AAD フィールドの間に正確なマッピングがない場合にドメインを指定できます。 たとえば、Microsoft AADの UPN が "name" の間にキャンバス電子メールが "name@example.edu" の場合は、サフィックス フィールドに 「example.edu」と入力してユーザーと一致させることができます。
+   - サフィックス フィールドは省略可能であり、Canvas 属性と Microsoft AAD フィールドの間に正確なマッピングがない場合にドメインを指定できます。 たとえば、Microsoft AAD の UPN が "name" の間にキャンバス電子メールが "name@example.edu" の場合は、サフィックス フィールドに「example.edu」と入力してユーザーを照合できます。
    - Active Directory 参照属性は、Canvas 属性が一致する Microsoft 側のフィールドです。 UPN、プライマリ電子メール アドレス、または電子メール エイリアスの間で選択します。
 
 5. 完了したら **、[設定の更新]** を選択します。

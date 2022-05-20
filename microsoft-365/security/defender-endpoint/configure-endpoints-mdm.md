@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f3b13df5b9368609e888b92cbba49a58a0db3008
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 3e81470cb02742eb94e62118f77f1ae0e8c62f90
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634759"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599683"
 ---
 # <a name="onboard-windows-devices-using-mobile-device-management-tools"></a>モバイル デバイス管理ツールを使用した Windows デバイスのオンボード
 
@@ -48,7 +48,8 @@ Microsoft Intuneで MDM を有効にする方法の詳細については、「[�
 
 [PDF](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.pdf) または[Visio](https://download.microsoft.com/download/5/6/0/5609001f-b8ae-412f-89eb-643976f6b79c/mde-deployment-strategy.vsdx)を確認して、Defender for Endpoint のデプロイに関するさまざまなパスを確認してください。
 
-[Intune](/mem/intune/protect/advanced-threat-protection-configure)の指示に従います。
+[Intune](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)の指示に従います。
+
 
 Defender for Endpoint CSP の使用の詳細については、「 [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) と [WindowsAdvancedThreatProtection DDF ファイル](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx)」を参照してください。
 

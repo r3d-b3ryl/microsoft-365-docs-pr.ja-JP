@@ -2,7 +2,7 @@
 title: メール セキュリティ レポートを表示する
 f1.keywords:
 - NOCSH
-ms.author: chrisda
+ms.author: chrisdadrop
 author: chrisda
 manager: dansimp
 ms.date: ''
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 476807a03954475470a976113a2faa926862c008
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 8b4b520675c5c8a89324791e560e8176db1cb9b2
+ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535948"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65599345"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
@@ -60,7 +60,7 @@ Microsoft 365 Defender ポータル<https://security.microsoft.com>にはさま�
 |**セーフ 添付ファイル メッセージの処理レポート** <p> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|2021 年 6 月|
 |**電子メール レポートで検出されたマルウェア** <p> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|2021 年 6 月|
 |**スパム検出レポート** <p> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[脅威の保護状態レポート: 電子メール \> スパムでデータを表示する](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|2021 年 10 月|
-|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|未定|2022 年 5 月|
+|Get-AdvancedThreatProtectionDocumentReport <p> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <p> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|2022 年 5 月|
 |**Exchange トランスポート ルール レポート** <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[EAC でトランスポート ルール レポートをExchangeする](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <p> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|2022 年 4 月|
 |Get-MailTrafficTopReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <p> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <p> **注**: Get-MailTrafficTopReport では、暗号化レポート機能に代わる機能はありません。|MC315742|2022 年 4 月|
 
@@ -217,7 +217,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **メールの方向**: **受信** と **送信**。
 - **型**:
   - **良いメール**
-  - **マルウェア**
+  - **Malware**
   - **スパム**
   - **エッジ保護**
   - **ルール メッセージ**
@@ -249,7 +249,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **メールの方向**: **受信** と **送信**。
 - **型**:
   - **良いメール**
-  - **マルウェア**
+  - **Malware**
   - **スパム**
   - **エッジ保護**
   - **ルール メッセージ**
@@ -409,7 +409,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **提出の種類**:
   - **電子メール**
   - **URL**
-  - **ファイル**
+  - **File**
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
@@ -418,7 +418,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **送信の理由**:
   - **迷惑ではない**
   - **フィッシング**
-  - **マルウェア**
+  - **Malware**
   - **スパム**
 - **再スキャン状態**:
   - **Pending**
