@@ -17,16 +17,16 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 04/07/2022
+ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 6bd334802319b897de7a8fd8fbb61a490dddcffe
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416312"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65626967"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -54,7 +54,6 @@ ms.locfileid: "65416312"
 > [!NOTE]
 > Windows Server 2012 R2 の改ざん保護は、最新の統合ソリューション パッケージを使用してオンボードされたデバイスで使用できます。 詳細については、「[Windows サーバーをMicrosoft Defender for Endpoint サービスにオンボードする](/microsoft-365/security/defender-endpoint/configure-server-endpoints)」を参照してください。
 
-
 ## <a name="overview"></a>概要
 
 サイバー攻撃の種類によっては、悪いアクターがマシンでウイルス対策保護などのセキュリティ機能を無効にしようとします。 悪意のあるアクターは、データへのアクセスを容易にしたり、マルウェアをインストールしたり、データ、ID、デバイスを悪用したりするために、セキュリティ機能を無効にすることを好みます。 改ざん防止は、このようなことが発生するのを防ぐのに役立ちます。 改ざん防止により、悪意のあるアプリは次のようなアクションを実行できなくなります。
@@ -62,7 +61,7 @@ ms.locfileid: "65416312"
 - ウイルスおよび脅威の保護の無効化
 - リアルタイム保護の無効化
 - 動作の監視の無効化
-- ウイルス対策(IOfficeAntivirus (IOAV) など) の無効化
+- IOfficeAntivirus (IOAV) などのウイルス対策保護を無効にする
 - クラウド配信の保護の無効化
 - セキュリティ インテリジェンスの更新プログラムの削除
 - 検出された脅威に対する自動アクションを無効にする
@@ -99,7 +98,7 @@ ms.locfileid: "65416312"
 |---|---|
 |Microsoft Intune|いいえ|
 |テナントアタッチを使用したMicrosoft Endpoint Configuration Manager|いいえ|
-|Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|はい|
+|Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|必要|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用して組織の改ざん防止を管理する
 
@@ -236,15 +235,11 @@ Windows Server 2016では、改ざん防止が有効になっている場合、�
 
 改ざんの試行が検出されると、[Microsoft 365 Defender ポータル](/microsoft-365/security/defender-endpoint/portal-overview) ([https://security.microsoft.com](https://security.microsoft.com)) でアラートが発生します。
 
-:::image type="content" source="images/tamperattemptalert.png" alt-text="Microsoft 365 Defender ポータル" lightbox="images/tamperattemptalert.png":::
-
 [Microsoft Defender for Endpointでエンドポイントでの検出と対応](overview-endpoint-detection-response.md)と[高度なハンティング](advanced-hunting-overview.md)機能を使用して、セキュリティ運用チームはそのような試みを調査して対処できます。
 
 ## <a name="review-your-security-recommendations"></a>セキュリティに関する推奨事項を確認する
 
 改ざん防止は [、脅威&脆弱性管理機能](next-gen-threat-and-vuln-mgt.md) と統合されます。 [セキュリティに関する推奨事項には、](tvm-security-recommendation.md) 改ざん防止が有効になっていることを確認することが含まれます。 たとえば、 *改ざん* を検索できます。 結果で、[ **改ざん防止を有効にする]** を選択して詳細を確認し、有効にすることができます。
-
-:::image type="content" source="images/tamperprotectsecurityrecos.png" alt-text="Microsoft Defender セキュリティ センター ポータルで改ざん防止を有効にする" lightbox="images/tamperprotectsecurityrecos.png":::
 
 脅威&脆弱性管理の詳細については、「[ダッシュボードの分析情報 - 脅威と脆弱性の管理](tvm-dashboard-insights.md#dashboard-insights---threat-and-vulnerability-management)」を参照してください。
 
@@ -278,7 +273,9 @@ Microsoft Defender for Endpointにオンボードされたデバイスは、パ�
 
 ### <a name="how-does-configuring-tamper-protection-in-intune-affect-how-i-manage-microsoft-defender-antivirus-with-group-policy"></a>Intuneで改ざん防止を構成すると、グループ ポリシーでMicrosoft Defender ウイルス対策を管理する方法にどのような影響がありますか?
 
-グループ ポリシーは改ざん防止には適用されません。 Microsoft Defender ウイルス対策設定に加えられた変更は、改ざん防止がオンの場合は無視されます。
+現在Intuneを使用して改ざん防止を構成および管理している場合は、Intuneを引き続き使用する必要があります。 
+
+グループ ポリシーは改ざん防止には適用されません。 グループ ポリシーを使用してMicrosoft Defender ウイルス対策設定に加えられた変更は、改ざん防止が有効になっている場合、または改ざん防止がIntuneで構成されている場合は無視されます。
 
 ### <a name="if-we-use-microsoft-intune-to-configure-tamper-protection-does-it-apply-only-to-the-entire-organization"></a>改ざん防止を構成するためにMicrosoft Intuneを使用する場合、組織全体にのみ適用されますか?
 
@@ -294,10 +291,6 @@ Intuneを使用して改ざん防止を柔軟に構成できます。 組織全�
 ### <a name="i-have-the-windows-e3-enrollment-can-i-use-configuring-tamper-protection-in-intune"></a>Windows E3 登録があります。 Intuneで改ざん防止の構成を使用できますか?
 
 現在、Intuneでの改ざん保護の構成は、[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)をお持ちのお客様のみが使用できます。
-
-### <a name="what-happens-if-i-try-to-change-microsoft-defender-for-endpoint-settings-in-intune-microsoft-endpoint-configuration-manager-and-windows-management-instrumentation-when-tamper-protection-is-enabled-on-a-device"></a>デバイスで改ざん防止が有効になっているときに、Intune、Microsoft Endpoint Configuration Manager、Windows Management Instrumentation のMicrosoft Defender for Endpoint設定を変更しようとするとどうなりますか?
-
-改ざん防止によって保護されている機能を変更することはできません。このような変更要求は無視されます。
 
 ### <a name="im-an-enterprise-customer-can-local-admins-change-tamper-protection-on-their-devices"></a>私はエンタープライズ顧客です。 ローカル管理者は、デバイスの改ざん保護を変更できますか?
 
@@ -333,4 +326,4 @@ Intuneを使用して改ざん防止を柔軟に構成できます。 組織全�
 - [Microsoft Defender for Endpoint の概要を確認する](/microsoft-365/security/defender-endpoint)
 - [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 - [トラブルシューティング モードを有効にする](enable-troubleshooting-mode.md)
-- [トラブルシューティング モードのシナリオ](troubleshooting-mode-scenarios.md)
+- [トラブルシューティング モードがオンです](troubleshooting-mode-scenarios.md)
