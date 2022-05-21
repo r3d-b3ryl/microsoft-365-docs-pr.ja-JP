@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83e7bd2cc46469cb6a5a6bc8c29a8d21dba20b7f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c14447301cfa6abf83c231361c020d261eeb87a9
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466193"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623432"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-alerts"></a>Microsoft Defender for Endpointアラートを管理する
 
@@ -40,6 +40,9 @@ Defender for Endpoint は、アラートを通じて、悪意のあるイベン�
 いずれかの場所でアラートを選択すると、[ **アラート管理] ウィンドウが表示されます**。
 
 :::image type="content" source="images/atp-alerts-selected.png" alt-text="[アラート管理] ウィンドウと [アラート] キュー" lightbox="images/atp-alerts-selected.png":::
+
+このビデオでは、新しいMicrosoft Defender for Endpointアラート ページを使用する方法について説明します。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4yiO5]
 
 ## <a name="link-to-another-incident"></a>別のインシデントへのリンク
 

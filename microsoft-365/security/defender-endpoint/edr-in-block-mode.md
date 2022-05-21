@@ -18,12 +18,12 @@ ms.custom:
 ms.date: 04/04/2022
 ms.collection: m365-security-compliance
 ms.technology: mde
-ms.openlocfilehash: 5a9441a41db2dfbe53bfb280152c038e9dbc383e
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: c8b3016517393b473bcae664a6044098e04ebf6d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789846"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623590"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>ブロック モードのエンドポイントでの検出と対応 (EDR)
 
@@ -56,6 +56,9 @@ ms.locfileid: "64789846"
 
 > [!TIP]
 > 最適な保護を得るには、必ず **[Microsoft Defender for Endpointベースラインをデプロイ](configure-machines-security-baseline.md)** してください。
+
+このビデオでは、ブロック モードでエンドポイントでの検出と対応 (EDR) を有効にし、違反前から違反後までの各段階で動作ブロックを有効にし、包含する理由と方法について説明します。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HjW2]
 
 ## <a name="what-happens-when-something-is-detected"></a>何かが検出されるとどうなりますか?
 

@@ -354,12 +354,8 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: データ保護のための前提条件
           href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
-        - name: 驚異の保護を強化する
-          href: security-and-compliance/increase-threat-protection.md
         - name: Microsoft Defender ウイルス対策によって検出された脅威
           href: security-and-compliance/threats-detected-defender-av.md
-        - name: 検出された脅威を確認して対処する
-          href: security-and-compliance/review-threats-take-action.md
         - name: コンプライアンス機能をセットアップする
           href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
         - name: セキュア スコア
@@ -385,9 +381,6 @@
         - name: Windows 10 PC のアプリの保護設定
           href: devices/protection-settings-for-windows-10-devices.md
         - name: Android または iOS の設定を検証する
-          href: devices/validate-settings-on-android-or-ios.md
-        - name: Windows 10 PC の設定を検証する
-          href: devices/validate-settings-on-windows-10-pcs.md
         - name: Autopilot
           items:
             - name: AutoPilot プロファイルを作成し編集する

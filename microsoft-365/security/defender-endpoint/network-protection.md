@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 24a95c8ed6d7d1cdd15b15b53434414e44b7881f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 6bf97490d60740b47420d352f7fb537e675678ae
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417932"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621144"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -51,7 +51,10 @@ ms.locfileid: "65417932"
 > ネットワーク保護のしくみについては、[demo.wd.microsoft.com のMicrosoft Defender for Endpoint](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)のテストグラウンド サイトを参照してください。
 
 > [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
+
+このビデオでは、ネットワーク保護を使用して、フィッシング詐欺、悪用、その他の悪意のあるコンテンツからデバイスの攻撃面を軽減する方法について説明します。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yZ]
 
 ## <a name="requirements-for-network-protection"></a>ネットワーク保護の要件
 
@@ -148,7 +151,7 @@ Microsoft Defender for Endpointの Network Protection コンポーネントは�
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>ネットワーク保護: C2 の検出と修復
 
-最初の形式では、ランサムウェアは商品の脅威であり、事前にプログラムされ、限られた特定の結果 (コンピューターの暗号化など) に焦点を当てています。 しかし、ランサムウェアは、人間が駆動し、適応し、より大規模で広範な結果に焦点を当てた高度な脅威に進化してきました。は、組織全体の資産または身代金のデータを保持する場合などです。
+最初の形式では、ランサムウェアは商品の脅威であり、事前にプログラムされ、限られた特定の結果 (コンピューターの暗号化など) に焦点を当てています。 しかし、ランサムウェアは人間主導の高度な脅威に進化し、適応性があり、より大規模で広範な結果に焦点を当てています。は、組織全体の資産または身代金のデータを保持する場合などです。
 
 コマンドと制御 (C2) のサポートは、このランサムウェアの進化の重要な部分であり、これらの攻撃がターゲットとする環境に適応することを可能にします。 コマンドおよび制御インフラストラクチャへのリンクを解除することは、攻撃の次の段階への進行を停止することを意味します。
 
@@ -282,7 +285,7 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** を選択します。
+2. **[OK]** をクリックします。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するようにフィルター処理するカスタム ビューを作成します。
 

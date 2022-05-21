@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Microsoft Defender ウイルス対策Windows デバイスをソフトウェアの脅威 (ウイルス、マルウェア、スパイウェアなど) から保護する方法について説明します。
-ms.openlocfilehash: 47f6af2b91eed8096a685f8d3281f16fdc677331
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 796edb343745e19267f901b736ca19217b0e4f01
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466308"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620919"
 ---
 # <a name="overview-of-threat-protection-by-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策による脅威保護の概要
 
@@ -73,7 +73,7 @@ Microsoft Defender ウイルス対策によって脅威が検出されると、�
 
 ほとんどの場合、ユーザーはそれ以上のアクションを実行する必要はありません。 デバイスで悪意のあるファイルまたはプログラムが検出されるとすぐに、Microsoft Defender ウイルス対策ブロックされ、実行されなくなります。 さらに、新しく検出された脅威がウイルス対策エンジンとマルウェア対策エンジンに追加され、他のデバイスやユーザーも保護されます。  
 
-悪意のあるファイルの削除を承認するなど、ユーザーが実行する必要があるアクションがある場合は、受信した通知にそのアクションが表示されます。 Microsoft Defender ウイルス対策がユーザーの代わりに実行するアクション、またはユーザーが実行する必要があるアクションの詳細については、「[保護履歴](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708)」を参照してください。 IT プロフェッショナル/管理者として脅威検出を管理する方法については、「 [検出された脅威を確認してアクションを実行](review-threats-take-action.md)する」を参照してください。
+悪意のあるファイルの削除を承認するなど、ユーザーが実行する必要があるアクションがある場合は、受信した通知にそのアクションが表示されます。 Microsoft Defender ウイルス対策がユーザーの代わりに実行するアクション、またはユーザーが実行する必要があるアクションの詳細については、「[保護履歴](https://support.microsoft.com/office/f1e5fd95-09b4-46d1-b8c7-1059a1e09708)」を参照してください。 IT プロフェッショナル/管理者として脅威検出を管理する方法については、「 [検出された脅威を確認してアクションを実行](../../business-premium/m365bp-review-threats-take-action.md)する」を参照してください。
 
 さまざまな脅威の詳細については、<a href="https://www.microsoft.com/wdsi/threats" target="_blank">Microsoft セキュリティ インテリジェンス脅威サイト</a>を参照してください。ここで、次の操作を実行できます。 
 

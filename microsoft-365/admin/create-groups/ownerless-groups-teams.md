@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 - MOE150
 description: 所有者のないMicrosoft 365 グループまたはMicrosoft Teamsのチームの所有者になるようにメンバーを自動的に招待する方法について説明します。
-ms.openlocfilehash: 06b5b4ea125ef19e7197d4703f2a055331ab54ef
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5bd41e3312cd696d9e0a2d7e4159e152d9c9d979
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435685"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620976"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>所有者のないMicrosoft 365 グループとチームを管理する
 
 Microsoft TeamsまたはMicrosoft 365 グループのチームは、Microsoft 365で所有者のアカウントが削除または無効になっている場合、所有者を失う可能性があります。 グループとチームでは、所有者がメンバーを追加または削除し、グループ設定を変更する必要があります。
 
-最もアクティブなメンバーまたは所有者のないグループまたはチームが所有権を受け入れるかどうかを自動的に求めるポリシーを作成できます。 メンバーが招待を受け入れて所有者になると、アクションはコンプライアンス ポータルの監査ログに記録されます。 ゲストは所有者として招待されることはありません。
+グローバル管理者は、所有者のないグループまたはチームの最もアクティブなメンバーが所有権を受け入れるかどうかを自動的に要求するポリシーを作成できます。 メンバーが招待を受け入れて所有者になると、アクションはコンプライアンス ポータルの監査ログに記録されます。 ゲストは所有者として招待されることはありません。
 
 ポリシーを作成するときに、次の項目を指定できます。
 - セキュリティ グループを指定して、所有者として招待できるユーザーを制限する場合

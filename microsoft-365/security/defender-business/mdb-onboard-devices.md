@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: ebe8f623842716ab53b4eae64d24ef85b9598099
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: 8f716f692687276e5c1c4482429ab016f9574f2f
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396159"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621315"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
@@ -182,7 +182,7 @@ macOS デバイスでローカル スクリプトを実行すると、Azure Acti
 
 9. Microsoft のドライバーのインストールを許可するように求めるメッセージが表示されます ("システム拡張機能がブロックされました" または "インストールは保留中"、またはその両方です)。 ドライバーのインストールを許可する必要があります。 インストールを許可するには、[**セキュリティ環境設定を開く]** または [**Open System PreferencesSecurity** >  **& Privacy**] を選択し、[**許可**] を選択します。
 
-10. Bash で次の Python コマンドを使用して、オンボード パッケージを実行します。 `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.py`
+10. Bash で次の Python コマンドを使用して、オンボード パッケージを実行します。 `/usr/bin/python MicrosoftDefenderATPOnboardingMacOs.sh`
 
 11. デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Microsoft Defender for Businessのデバイス グループの詳細について説明](mdb-create-edit-device-groups.md)します。
 

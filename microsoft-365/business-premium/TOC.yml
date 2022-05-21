@@ -68,7 +68,7 @@
           href: create-communications-site.md
 - name: 管理対象デバイスを保護する
   items:
-    - name: マネージド デバイスを設定してセキュリティで保護する
+    - name: 管理対象デバイスの設定と保護
       items:
         - name: 概要
           href: m365bp-protect-devices.md
@@ -78,7 +78,7 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Windows デバイスを保護する
           items:
-            - name: Windows 10 デバイスの保護の設定
+            - name: Windows デバイスの保護設定
               href: m365bp-protection-settings-for-windows-10-devices.md
             - name: Windows 10 デバイスをセキュリティで保護する
               href: m365bp-secure-windows-devices.md
@@ -107,9 +107,9 @@
     - name: ユーザーの削除
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: デバイスからデータを削除する
-      href: ../business/remove-company-data.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-remove-company-data.md
     - name: デバイスを工場出荷時の設定にリセットする
-      href: ../business/reset-devices-to-factory-settings.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+      href: m365bp-reset-devices-to-factory-settings.md
 - name: 参照
   items:
     - name: 用語集
@@ -128,7 +128,7 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: Android および iOS のアプリ保護の設定
       href: m365bp-app-protection-settings-for-android-and-ios.md
-    - name: 保護機能を InTune 設定にマップする
+    - name: 保護機能を Intune の設定にマップする
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: コンプライアンス マネージャーを設定する
       href: m365bp-set-up-compliance.md

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365情報に基づいたネットワーク ルーティング
-ms.openlocfilehash: f35257520385f8d4287c9a0839cd1e4e0e6b0aa3
-ms.sourcegitcommit: 388279e10a160b85b345a8ad760f6816dda4e2ad
+ms.openlocfilehash: fc946b3a1de057605b89bcadeb4e5b7269aebcb0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "61327678"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622472"
 ---
 # <a name="microsoft-365-informed-network-routing"></a>Microsoft 365情報に基づいたネットワーク ルーティング
 
@@ -56,7 +56,7 @@ Microsoft は、さまざまなパートナーと協力して、Microsoft 365情
 
 ### <a name="application-usage"></a>アプリケーションの使用状況
 
-(ネットワーク品質メトリックを通じて反映される) アプリケーション エクスペリエンス データは、特定の Microsoft クライアント アプリケーションを使用して収集されます。 Exchangeメトリックには、Outlook クライアントの使用状況と、一部のOutlook Web App使用状況が反映されます。 SharePointメトリックとOneDrive メトリックは、クライアント アプリケーションに関係なく、テナント固有のSharePoint エンドポイントの使用状況を反映します。 Teamsメトリックは、Teams デスクトップ クライアントの使用状況を反映します。 ネットワーク回線の正常性を評価するときに、他のアプリケーション トラフィックは考慮されません。
+(ネットワーク品質メトリックを通じて反映される) アプリケーション エクスペリエンス データは、特定の Microsoft クライアント アプリケーションを使用して収集されます。 Exchangeメトリックには、Outlook クライアントの使用状況と、一部のOutlook Web App使用状況が反映されます。 SharePointメトリックとOneDrive メトリックは、クライアント アプリケーションに関係なく、テナント固有のSharePoint エンドポイントの使用状況を反映します。 Teamsメトリックは、Teams デスクトップ クライアントの使用状況を反映します。 ネットワーク回線の正常性を評価する場合、他のアプリケーション トラフィックは考慮されません。
 
 ## <a name="enabling-informed-network-routing"></a>情報に基づいたネットワーク ルーティングを有効にする
 
@@ -92,9 +92,9 @@ Microsoft と選択した SD-WAN ソリューション間でのデータの共�
 
 ### <a name="step-4-grant-permissions-to-the-sd-wan-solution"></a>手順 4: SD-WAN ソリューションにアクセス許可を付与する
 
-この手順では、Azure Active Directory (Azure AD) でアクセス許可付与要求を開始します。 選択した SD-WAN ソリューションが、情報に基づいたネットワーク ルーティング データ ストレージとテナントに関連付けられているサービス正常性情報にアクセスできるようにするテナント レベルのアクセス許可を付与するように要求されます。 この操作には **、DC 管理者** または **グローバル** 管理者ロールのアクセス許可Azure AD必要があります。
+この手順では、Azure Active Directory (Azure AD) でアクセス許可付与要求を開始します。 選択した SD-WAN ソリューションが、情報に基づいたネットワーク ルーティング データ ストレージとテナントに関連付けられているサービス正常性情報へのアクセスを許可するテナント レベルのアクセス許可を付与するように要求されます。 このアクションには **、Azure AD DC 管理者** または **グローバル管理者** ロールのアクセス許可が必要です。
 
-[**このアプリケーションにアクセス許可を付与する**] リンクを選択し、Azure AD要求に従います。
+[ **このアプリケーションにアクセス許可を付与する** ] リンクを選択し、Azure AD 要求に従います。
 
 アクセス許可の付与が完了したら、[ **次へ**] を選択します。
 

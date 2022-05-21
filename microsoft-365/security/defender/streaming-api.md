@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c6c3cedffb1b827d441d37cc8beb53b20f3521f2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d9f980656df636632c5903853c2784de81131d81
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60190403"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621433"
 ---
 # <a name="streaming-api"></a>ストリーミング API
 
@@ -46,6 +46,8 @@ Microsoft 365 Defenderでは[、Advanced Hunting](../defender/advanced-hunting-o
 [Azure ストレージ アカウントにイベントをストリーミングする](streaming-api-storage.md)| テナントでストリーミング API を有効にし、[Advanced Hunting](advanced-hunting-overview.md) を Azure ストレージ アカウントにストリーミングするようにMicrosoft 365 Defenderを構成する方法について説明します。
 [サポートされているイベントの種類](supported-event-types.md) | Streaming API でサポートされている高度なハンティング イベントの種類について説明します。
 
+この短いビデオでは、イベント情報を直接 Azure Event Hubs に送信して視覚化サービス、データ処理エンジン、または長期的なデータリテンションのために Azure Storage で使用するようにストリーミング API を設定する方法について説明します。  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 ## <a name="related-topics"></a>関連項目
 - [高度なハンティングの概要](../defender/advanced-hunting-overview.md)

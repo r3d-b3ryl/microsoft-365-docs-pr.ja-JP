@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 034a12d1f1354ac63778d142d1bc09848e2f9911
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419904"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623001"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -38,7 +38,7 @@ ms.locfileid: "65419904"
 - [プロセスによって開かれるファイルの除外](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策除外は、エンドポイントでの検出と対応 [(EDR)](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)、[攻撃表面縮小 (ASR) ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)、[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外したファイルは、引き続きEDRアラートやその他の検出をトリガーできます。
+> Microsoft Defender ウイルス対策除外は、[攻撃面縮小 (ASR) ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)や[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外したファイルは、引き続きEDRアラートやその他の検出をトリガーできます。
 > ファイルを広範に除外するには、それらをMicrosoft Defender for Endpoint[カスタム インジケーター](/microsoft-365/security/defender-endpoint/manage-indicators)に追加します。
 
 ## <a name="before-you-begin"></a>開始する前に
@@ -104,7 +104,7 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 
 1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
 
-2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
+2. [**グループ ポリシー管理エディター**] で、[**コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
 3. ツリーを展開して **、除外Windows Defender ウイルス対策コンポーネント** \> **をWindows** \> **します**。
 

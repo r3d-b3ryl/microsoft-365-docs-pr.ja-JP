@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを設定した後、Windows 10 PC をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 4800a5906fcb10f7debb5b627ffe81a1dd910d49
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d0f2842c69127893e512822a8d91dfd37a4a0e48
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095248"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622910"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
 
@@ -70,4 +70,4 @@ Microsoft 365 Business でデバイス保護を設定したら、次の手順に
 
 5. [ **設定の適用]** を選択します。
 
-    これらの設定は、組織内のすべてのユーザーに適用されます。 セキュリティ グループごとに異なるポリシーを設定するには、「[Windows 10 PC のデバイス保護設定を設定する」を参照してください](../../business-premium/m365bp-protection-settings-for-windows-10-pcs.md)。
+    これらの設定は、組織内のすべてのユーザーに適用されます。 セキュリティ グループごとに異なるポリシーを設定するには、「[Windows 10 PC のデバイス保護設定を設定する」を参照してください](../../business-premium/m365bp-protection-settings-for-windows-10-devices.md)。

@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 04/01/2022
+ms.date: 05/20/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 8334ce03bac5b7d4518433f83ab34d5f86e71339
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: 9a1a95c927c4f659510c587d2bbc81ad4b9c1264
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64634165"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621647"
 ---
 # <a name="troubleshooting-issues-when-switching-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointに切り替える際の問題のトラブルシューティング
 
@@ -75,7 +75,7 @@ Windows Server 2019、Windows Server、バージョン 1803 以降、Windows Ser
 > [!NOTE]
 > パッシブ モードを Windows Server 2016 および Windows Server 2012 R2 を実行するエンドポイントで動作するには、「[オンボード Windows サーバー](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」の手順に従ってこれらのエンドポイントをオンボードする必要があります。
 
-詳細については、「[Windows Server のMicrosoft Defender ウイルス対策」を参照してください](microsoft-defender-antivirus-on-windows-server.md)。
+詳細については、[WindowsのMicrosoft Defender ウイルス対策を](microsoft-defender-antivirus-windows.md)参照してください。
 
 ## <a name="microsoft-defender-antivirus-seems-to-be-stuck-in-passive-mode"></a>パッシブ モードでMicrosoft Defender ウイルス対策がスタックしているように見える
 

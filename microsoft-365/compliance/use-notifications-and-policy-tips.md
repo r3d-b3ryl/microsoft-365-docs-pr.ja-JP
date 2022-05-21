@@ -22,20 +22,22 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作していることをユーザーに通知する方法について説明します。
-ms.openlocfilehash: cab4332324ec8d83b201823c98b952995e12962d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ce6665227b62ea5937229696fa65b69e7cfb894a
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760495"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623209"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
-データ損失防止 (DLP) ポリシーを使用して、Office 365 全体の機密情報の識別、監視、保護を行うことができます。このような機密情報を扱う組織内のユーザーを DLP ポリシーに準拠させつつ、不必要にブロックしてユーザーの作業が完了できないような事態は避けたいでしょう。このような場合に、メール通知とポリシー ヒントが役立ちます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purviewデータ損失防止 (DLP) ポリシーを使用して、Office 365全体の機密情報を識別、監視、保護できます。 組織内でこの機密情報を操作するユーザーが DLP ポリシーに準拠し続けられるようにしたいが、不必要に作業を終わらせないようにしたい。 そのために、電子メール通知とポリシー ヒントが役立ちます。
 
 ![メッセージ バーに Excel 2016 のポリシー ヒントが表示される](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-コンプライアンス センターでは、DLP ポリシーを作成するときに、次のようにユーザー通知を構成できます。
+DLP ポリシーを作成するときに、ユーザー通知を次のように構成できます。
 
 - 選択したユーザーに、問題を説明するメール通知を送信します。
 
@@ -53,13 +55,13 @@ DLP ポリシーを作成するときに、 **ユーザー通知** を有効に�
 
 1. [https://(https://compliance.microsoft.com/permissions](https://(https://compliance.microsoft.com/permissions).
 
-2. 職場または学校のアカウントを使用してサインインします。 これで、セキュリティ &amp; コンプライアンス センターに入っています。
+2. 職場または学校のアカウントを使用してサインインします。
 
-3. セキュリティ/コンプライアンス センターの左側のナビゲーションで、**[データ損失防止]** \> **[ポリシー]** \> **[+ ポリシーの作成]** の順に移動します。
+3. 左側のナビゲーション\>Microsoft Purview コンプライアンス ポータル \> **データ損失防止** \> **ポリシー + ポリシー** \> **の作成**。
 
     ![ポリシー ボタンを作成します。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
 
-4. 必要な種類の機密情報を保護する DLP ポリシー テンプレートを選び、**[次へ]** を選択します。
+4. **次** に保護する機密情報の種類を保護する DLP ポリシー テンプレートを\>選択します。
 
     空のテンプレートから始めるには、**[カスタム]** \> **[カスタム ポリシー]** \> **[次へ]** の順に選びます。
 
@@ -135,7 +137,7 @@ DLP ポリシー内の各ルールに関して、次の事柄を行うポリシ�
 
 - ユーザーによる DLP ポリシーの上書きを許可します。必要に応じて、次のことも行えます。
 
-  - ポリシーを無効にするための業務上の正当な理由の入力をユーザーに求めることができます。この情報はログに記録され、セキュリティ/コンプライアンス センターの **[レポート]** セクションの DLP レポートで確認できます。
+  - ポリシーを上書きする業務上の理由をユーザーが入力することを求めます。 この情報はログに記録され、ポータルの [ **レポート]** セクションの DLP レポートで表示できます。
 
   - ユーザーが誤検知を報告し、DLP ポリシーを上書きできるようにします。この情報はレポート用にも記録されるので、誤検知を使用してルールを微調整できます。
 
@@ -173,7 +175,7 @@ DLP ポリシー内の各ルールに関して、次の事柄を行うポリシ�
 |通知 + AllowOverride + False positive + 両端揃え     |通知         |いいえ         |いいえ         |
 |通知 + ブロック     |ブロック         |いいえ         |いいえ         |
 |通知 + ブロック + AllowOverride     |ブロック         |必要         |いいえ         |
-|通知 + ブロック + AllowOverride + False positive     |ブロック         |必要         |いいえ         |
+|通知 + ブロック + AllowOverride + False positive     |ブロック         |はい         |いいえ         |
 |通知 + ブロック + AllowOverride + 理由付き     |ブロック         |はい         |必要         |
 |通知 + ブロック + AllowOverride + False positive + 理由なし     |ブロック         |必要         |いいえ         |
 |通知 + ブロック + AllowOverride + False positive + 両端揃え     |ブロック         |はい         |必要         |
@@ -229,7 +231,7 @@ Outlook on the web および Outlook 2013 以降で新しいメールを作成�
 
 ![ポリシー ヒント ダイアログ。ここで、ポリシー ヒントをオーバーライドできます。](../media/f97e836c-04bd-44b4-aec6-ed9526ea31f8.png)
 
-メールに機密情報を追加すると、機密情報を追加してからポリシー ヒントが表示されるまでに遅延が生じる場合があることに注意してください。 電子メールがOfficeメッセージ暗号化 (OME) で暗号化され、それらを検出するために使用されるポリシーで暗号化条件の検出ポリシーヒントが表示されない場合。
+メールに機密情報を追加すると、機密情報を追加してからポリシー ヒントが表示されるまでに遅延が生じる場合があることに注意してください。 電子メールがMicrosoft Purview Message Encryptionで暗号化され、それらを検出するために使用されるポリシーが暗号化の検出条件を使用している場合、ポリシーのヒントは表示されません。
 
 ### <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions"></a>Outlook 2013 以降では、一部の条件に対するポリシー ヒントのみが表示
 
@@ -240,13 +242,13 @@ Outlook on the web および Outlook 2013 以降で新しいメールを作成�
 
 例外は条件と見なされ、これらの条件はすべてOutlookで機能し、コンテンツと一致し、コンテンツに対して保護アクションが適用されることに注意してください。 ただし、ユーザーにポリシーのヒントを表示することは、まだサポートされていません。 また、Outlookでは、動的配布グループに適用される DLP ポリシーのポリシー ヒントの表示はサポートされていません。
 
-### <a name="policy-tips-in-the-exchange-admin-center-vs-the-security-amp-compliance-center"></a>Exchange管理センターとセキュリティ &amp; コンプライアンス センターのポリシーのヒント
+### <a name="policy-tips-in-the-exchange-admin-center-vs-the-microsoft-purview-compliance-portal"></a>Exchange管理センターとMicrosoft Purviewコンプライアンス ポータルのポリシーのヒント
 
-ポリシー ヒントは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>で作成された DLP ポリシーとメール フロー ルール、またはセキュリティ &amp; コンプライアンス センターで作成された DLP ポリシーを使用できますが、両方では機能しません。 これは、これらのポリシーは異なる場所に格納されますが、ポリシーヒントは 1 つの場所からのみ描画できるためです。
+ポリシー ヒントは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>で作成された DLP ポリシーとメール フロー ルール、またはコンプライアンス ポータルで作成された DLP ポリシーを使用できますが、両方では機能しません。 これは、これらのポリシーは異なる場所に格納されますが、ポリシーヒントは 1 つの場所からのみ描画できるためです。
 
-Exchange管理センターでポリシー ヒントを構成した場合、セキュリティ &amp; コンプライアンス センターで構成したポリシー ヒントは、Exchange管理センターでヒントをオフにするまで、2013 以降Outlook on the webおよびOutlookのユーザーには表示されません。 これにより、セキュリティ &amp; コンプライアンス センターに切り替えるまで、現在のExchangeメール フロー ルール (トランスポート ルールとも呼ばれます) が引き続き機能します。
+Exchange管理センターでポリシー ヒントを構成した場合、コンプライアンス ポータルで構成するすべてのポリシー ヒントは、Exchange管理センターでヒントをオフにするまで、Outlook on the webおよび Outlook 2013 以降のユーザーには表示されません。 これにより、コンプライアンス ポータルに切り替えるまで、現在のExchangeメール フロー ルール (トランスポート ルールとも呼ばれます) が引き続き機能します。
 
-ポリシーヒントは 1 つの場所からしか描画できませんが、セキュリティ &amp; コンプライアンス センターとExchange管理センターの両方で DLP ポリシーを使用している場合でも、常に電子メール通知が送信されることに注意してください。
+ポリシーヒントは 1 つの場所からしか描画できませんが、コンプライアンス ポータルとExchange管理センターの両方で DLP ポリシーを使用している場合でも、常に電子メール通知が送信されることに注意してください。
 
 ### <a name="default-text-for-policy-tips-in-email"></a>メールのポリシー ヒントの既定のテキスト
 
@@ -304,7 +306,7 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
 ## <a name="more-information"></a>詳細情報
 
 - [データ損失防止について](dlp-learn-about-dlp.md)
-- [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
+- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
 - [DLP ポリシーの条件、例外、アクション (プレビュー)](./dlp-microsoft-teams.md)
 - [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)

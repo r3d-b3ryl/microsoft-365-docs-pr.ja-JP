@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2f66106dd39b9cd1f590148addfdd2cae89748c6
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 72509f7480d54819fc29f40bab0e2bf65dcd8660
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61938482"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622033"
 ---
 # <a name="manage-indicators"></a>インジケーターの管理
 
@@ -68,20 +68,21 @@ indicatorType|列挙|インジケーターの種類。 指定できる値は、"
 indicatorValue|String|[インジケーター](ti-indicator.md) エンティティの ID。 **必須**
 action|列挙|インジケーターが組織内で検出された場合に実行されるアクション。 指定できる値は、"Alert"、"AlertAndBlock"、"Allowed" です。 **必須**
 title|String|インジケーター アラートのタイトル。 **必須**
-説明|String| インジケーターの説明。 **必須**
+description|String| インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|YYYY-MM-DDTHH:MM:SS.0Z 形式のインジケーターの有効期限。 このインジケーターは、有効期限が経過すると削除され、有効期限の時刻に何が起こるかは秒 (SS) の値で発生します。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions|String|TI インジケーター アラート推奨アクション。 **Optional**
 rbacGroupNames|String|インジケーターが適用される RBAC グループ名のコンマ区切りリスト。 **Optional**
 category|String|アラートのカテゴリ。 例として、実行と資格情報へのアクセスがあります。 **Optional**
 mitretechniques|String|MITRE 手法のコード/ID (コンマ区切り)。 詳細については、[Enterpriseの戦術に関する説明を](https://attack.mitre.org/tactics/enterprise/)参照してください。 **オプション** MITRE 手法の場合は、カテゴリに値を追加することをお勧めします。
-GenerateAlert|String|アラートを生成するかどうかを指定します。 指定できる値は True または False です。 **Optional**
-
-
+GenerateAlert|String|アラートを生成する必要があるかどうか。 指定できる値は True または False です。 **Optional**
 
 > [!NOTE]
 > IP アドレスのクラスレス Inter-Domain ルーティング (CIDR) 表記はサポートされていません。
 詳細については、「[MICROSOFT DEFENDER FOR ENDPOINTアラート カテゴリが MITRE ATT&CK!に揃った状態になった](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748)」を参照してください。
+
+このビデオでは、侵害のインジケーター (IoC) を追加および管理する複数の方法Microsoft Defender for Endpoint提供する方法について説明します。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVw]
 
 ## <a name="see-also"></a>関連項目
 

@@ -19,12 +19,12 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365のリンク ポリシーとグローバル セーフ リンク設定セーフ表示、作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 867d055c44ba0d0ae0b7b763bc556a06f16e5cd8
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847104"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623024"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 で安全なリンク ポリシーを設定する
 
@@ -47,7 +47,7 @@ Microsoft Defender for Office 365の[セーフ](defender-for-office-365.md) リ�
 >
 > セーフ リンク ポリシー **の外部** で、セーフ リンク保護のグローバル設定を構成します。 手順については、「[Microsoft Defender for Office 365の セーフ リンクのグローバル設定を構成](configure-global-settings-for-safe-links.md)する」を参照してください。
 >
-> 管理者は、セーフ リンクのさまざまな構成設定を検討する必要があります。 使用可能なオプションの 1 つは、セーフ リンクにユーザー識別可能な情報を含める方法です。 この機能により、セキュリティ運用 (SecOps) チームは潜在的なユーザー侵害を調査し、是正措置を講じ、コストのかかる侵害を制限できます。
+> 管理者は、セーフ リンクのさまざまな構成設定を検討する必要があります。 使用可能なオプションの 1 つは、セーフ リンクにユーザー識別可能な情報を含める方法です。 この機能により、セキュリティ運用 (SecOps) チームは潜在的なユーザー侵害を調査し、修正措置を講じ、コストのかかる侵害を制限できます。
 
 セーフ リンク ポリシーは、Microsoft 365 Defender ポータルまたは PowerShell で構成できます (Exchange Online にメールボックスがある適格な Microsoft 365 組織の場合は Exchange Online PowerShell で、Exchange Online メールボックスがないが、Microsoft Defender for Office 365アドオンがある組織の場合はスタンドアロンEOP PowerShell サブスクリプションです)。
 
@@ -113,7 +113,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
-   同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) を使用します。
+   同じ条件の複数の値は、OR ロジックを使用します (たとえば _\<recipient1\>_ または _\<recipient2\>_)。異なる条件では AND ロジックを使用します (たとえば _\<recipient1\>_ および _\<member of group 1\>_)。
 
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
@@ -125,6 +125,10 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
        - **メッセージを配信する前に URL スキャンが完了するまで待ちます:メッセージを配信する前** に、リアルタイムの URL スキャンが完了するまで待機するには、このオプションを選択します。
      - **組織内で送信された電子メール メッセージにセーフリンクを適用** する: このオプションを選択すると、内部送信者と内部受信者の間のメッセージに セーフ リンク ポリシーが適用されます。
    - **Microsoft Teams内の不明な URL または悪意のある可能性のある URL のアクションを選択** します。[**オン**] を選択して、Teams内のリンクに対セーフリンク保護を有効にします。 この設定を有効にするには、最大で 24 時間かかる場合があることに注意してください。
+
+     > [!NOTE]
+     > 現在、Microsoft Teamsのセーフリンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
+
    - **ユーザーのクリックを追跡する**: このオプションを選択したままにして、電子メール メッセージの URL を追跡ユーザーがクリックできるようにします。
    - **ユーザーが元の URL までクリック** できるようにする: [警告ページ](safe-links.md#warning-pages-from-safe-links)でユーザーが元の URL までクリックするのをブロックするには、このオプションをオフにします。
    - **次の URL を書き換えないでください**:セーフ リンクによってブロックされる指定された URL にアクセスできます。

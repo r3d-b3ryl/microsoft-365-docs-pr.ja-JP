@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e99ed2f93156cb92f031528e71d51cebafc3088f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: a75c56dd2844c563b1ee29ccb32acc263ffd3aed
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417014"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623577"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止macOSセキュリティ設定を保護する
 
@@ -340,7 +340,7 @@ Intune プロファイルに次の構成を追加します。
 コマンド `mdatp health` を実行すると、改ざん防止が無効であることが報告されます。オンボーディングから 1 時間以上が経過した場合でも、次のコマンドを実行して適切な構成があるかどうかを確認できます。
 
 ```console
-$ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoftmdatpmicrosoft_defender_core.log \| tail -n 1
+$ sudo grep -F '\[{tamperProtection}\]: Feature state:' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log | tail -n 1
 
 \[85246\]\[2021-12-08 15:45:34.184781 UTC\]\[info\]: \[{tamperProtection}\]: Feature state: enabledmode: "block"
 ```

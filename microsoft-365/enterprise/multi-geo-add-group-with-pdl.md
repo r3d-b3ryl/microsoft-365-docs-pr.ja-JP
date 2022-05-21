@@ -15,12 +15,12 @@ description: 複数地域環境で指定された優先データの場所を持�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: 7de00ad0d94cda0a47f4981d78ebc07cedab6ada
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 162f499a783c23ec45ec75610833c61978beaafb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318803"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623367"
 ---
 # <a name="create-a-microsoft-365-group-with-a-specific-preferred-data-location"></a>特定の優先データの場所を持つMicrosoft 365 グループを作成する
 
@@ -51,7 +51,8 @@ New-UnifiedGroup -DisplayName MultiGeoEUR -Alias "MultiGeoEUR" -AccessType Publi
 
 ![構文New-UnifiedGroup PowerShell コマンドレットのスクリーンショット。](../media/multi-geo-new-group-with-pdl-powershell.png)
 
-SharePoint グループのサイト プロビジョニングがオンデマンドであることに注意してください。 サイトは、グループの所有者またはメンバーが初めてアクセスを試みたときにプロビジョニングされます。
+> [!Note]
+> SharePoint グループ サイトのプロビジョニングはオンデマンドです。 サイトは、グループの所有者またはメンバーが初めてアクセスを試みたときにプロビジョニングされます。
 
 ## <a name="geo-location-codes"></a>地域の場所コード
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 82fbe21e4d18a741da4a098b8e24a303f4d47008
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: fb56ab7feb864a51c51b6f240e8376f989491857
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473961"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622706"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -38,6 +38,9 @@ ms.locfileid: "64473961"
 Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) に専門家レベルの監視と分析を提供するマネージド脅威ハンティング サービスです。これにより、固有の環境内の重大な脅威が見逃されないようにすることができます。
 
 この管理された脅威の追求サービスは、標的型攻撃通知とオンデマンドの専門家へのアクセスという 2 つの機能を通じて、エキスパート主導のインサイトとデータを提供します。
+
+このビデオでは、Microsoft 脅威エキスパートセキュリティ オペレーション センター (SOC) に専門家レベルの監視と分析を提供し、重大な脅威を見逃さないようにする方法について説明します。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qZ0B]
 
 ## <a name="before-you-begin"></a>開始する前に
 

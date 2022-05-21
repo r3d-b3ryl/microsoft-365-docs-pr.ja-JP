@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: 以下の手順に従って、会社名、住所、電話番号、Web サイトの URL、ロゴ、Microsoft Bookingsの営業時間など、About Us ページを作成します。
-ms.openlocfilehash: e15379a414182672bd7a0372ea5c55ffbc482b62
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: 以下の手順に従って、会社名、住所、電話番号、Web サイトの URL、ロゴ、営業時間をMicrosoft Bookingsで作成します。
+ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469605"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622529"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Microsoft Bookingsにビジネス情報を入力する
 
@@ -62,7 +62,7 @@ Microsoft Bookingsでは、Web アプリ内の [ビジネス情報] ページに
 
 たとえば、毎週木曜日の 1 時から 2 時 30 分までのスタッフ会議があり、すべてのスタッフが出席できるように、その時間をブロックする必要があります。 これを行うには、次の手順を実行します。
 
-1. [勤務先情報] ページの [勤務時間] で、木曜日の開始時間と終了時間を選びます。この例では、午前 8:00 から午後 1:00 を設定します。
+1. [ビジネス情報] ページの [営業時間] で、木曜日の開始時刻と終了時刻を選択します。 この例では、午前 8 時に設定します。 1:00 p.m.
 
 1. [ **+**] を選んで木曜日の新しい行を作成します。
 

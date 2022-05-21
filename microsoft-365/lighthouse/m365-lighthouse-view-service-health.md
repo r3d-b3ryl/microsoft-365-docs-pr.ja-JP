@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント サービスの正常性を表示する方法について説明します。
-ms.openlocfilehash: 8ad96c77f14148fefd6d00cd51af093cd081d857
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 3db5085ac4226b3f2800cd46f3542dcb79b311d2
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187824"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621009"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでテナント サービスの正常性を表示する
 
@@ -31,7 +31,7 @@ Lighthouse にサインインできない場合は、[Microsoft 365 サービス
 
 ## <a name="before-you-begin"></a>開始する前に
 
-サービスの正常性を表示するには、**microsoft.office365.serviceHealth/allEntities/allTasks** というプロパティセットを持つパートナー テナントのAzure AD ロールが必要です。 Azure AD ロールの一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください。
+サービスの正常性を表示するには、 **microsoft.office365.serviceHealth/allEntities/allTasks** というプロパティセットを持つパートナー テナントの Azure AD ロールが必要です。 Azure AD ロールの一覧については、 [Azure AD の組み込みロールに](/azure/active-directory/roles/permissions-reference)関するページを参照してください。
 
 ## <a name="view-service-health-status-for-all-tenants"></a>すべてのテナントのサービス正常性状態を表示する
 

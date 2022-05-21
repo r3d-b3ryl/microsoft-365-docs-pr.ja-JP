@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6caaddc208e6f73de0f49ff6d419c335848ae439
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 1e77f404b70ee770bd4d5c441362739cc7b2f13c
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466325"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622948"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointにオンボードされたデバイスを取得する
 
@@ -39,13 +39,16 @@ ms.locfileid: "64466325"
 - [デバイスをIntune管理に登録する](configure-machines.md#enroll-devices-to-intune-management)
 - [必要なアクセス許可があることを確認する](configure-machines.md#obtain-required-permissions)
 
+このビデオでは、Microsoft Defender for Endpointを使用してクライアントを簡単にオンボードする方法について説明します。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr?rel=0]
+
 ## <a name="discover-and-track-unprotected-devices"></a>保護されていないデバイスを検出して追跡する
 
 **オンボード** カードでは、Defender for Endpoint に実際にオンボードしたWindows デバイスの数と、Intuneで管理されているWindows デバイスの合計数を比較することで、オンボード率の概要を大まかに示します。
 
 :::image type="content" source="images/secconmgmt_onboarding_card.png" alt-text="デバイス構成管理オンボード カード" lightbox="images/secconmgmt_onboarding_card.png":::
 
-*オンボードされたデバイスの合計数とIntune管理されているWindowsデバイスの合計数を示すカード*
+*オンボードされたデバイスと、Intune管理対象のWindows デバイスの合計数を示すカード*
 
 > [!NOTE]
 > Configuration Manager、オンボード スクリプト、またはIntune プロファイルを使用しないその他のオンボード方法を使用した場合、データの不一致が発生する可能性があります。 これらの不一致を解決するには、Defender for Endpoint オンボードに対応するIntune構成プロファイルを作成し、そのプロファイルをデバイスに割り当てます。

@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなど、サイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 18de5e6f0d859095f38972b0fae66c1312bf4099
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 994223ff7f8f3da9d4d8b75056327214dfc310b0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093669"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622809"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365をセキュリティで保護するためのベスト プラクティス
 
@@ -54,7 +54,7 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 
 |タスク|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|
-[パスワードの紛失または盗難から保護する](#set-up-multifactor-authentication) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
+[パスワードの紛失または盗難から保護する](#set-up-multi-factor-authentication) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [ユーザーをトレーニングする](#train-your-users) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [専用の管理者アカウントを使用する](#use-dedicated-admin-accounts)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) | 
 [マルウェアから保護する](#protect-against-malware) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(電子メールの保護) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(電子メールとデバイスの保護の強化) |
@@ -72,7 +72,7 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 
 ![Microsoft セキュリティ スコアのスクリーンショット。](../../media/secure-score.png)
 
-## <a name="set-up-multifactor-authentication"></a>多要素認証を設定する
+## <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
 
 多要素認証 (MFA) を使用して、パスワードの紛失や盗難から保護します。 多要素認証が設定されている場合、ユーザーは携帯電話のコードを使用してMicrosoft 365にサインインする必要があります。 この追加の手順では、ハッカーがパスワードを知っている場合に引き継ぐのを防ぐことができます。 
 
@@ -85,7 +85,7 @@ MFA を設定する方法とユーザーがセットアップを完了する方�
 
 ほとんどの組織では、セキュリティの既定値により、適切なレベルのサインイン セキュリティが追加されます。 詳細については、「[セキュリティの既定値とは](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。 サブスクリプションが新しい場合は、セキュリティの既定値が自動的に有効になっている可能性があります。
 
-Azure portalのAzure Active Directory (Azure AD) の **[プロパティ**] ウィンドウで、セキュリティの既定値を有効または無効にします。
+Azure portalの Azure Active Directory (Azure AD) の **[プロパティ**] ウィンドウで、セキュリティの既定値を有効または無効にします。
 
 1. グローバル管理者の資格情報を使用して、[MIcrosoft 365 管理センター](https://admin.microsoft.com) にサインインします。
 
@@ -191,7 +191,7 @@ Microsoft 365でホストされている電子メールと、OneDriveに格納�
 
 6. **[保存]** を選択します。
 
-| Setting | Office ファイルの添付ファイルを開く前にユーザーに警告する | ランサムウェアやその他の悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
+| 設定 | Office ファイルの添付ファイルを開く前にユーザーに警告する | ランサムウェアやその他の悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
 |名前  <br/> |ランサムウェア対策ルール: ユーザーに警告する  <br/> |ランサムウェア対策ルール: ファイルの種類をブロックする  <br/> |
 |次の場合は、この規則を適用します。 . .  <br/> |任意の添付ファイル . . . ファイル拡張子が一致します。 . .  <br/> |任意の添付ファイル . . . ファイル拡張子が一致します。 . .  <br/> |

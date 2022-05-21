@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 悪意のある URL を使用するフィッシングやその他の攻撃から組織を保護するための Defender for Office 365 の安全なリンク保護について説明します。 Teams の安全なリンクを見つけ、安全なリンク メッセージのグラフィックを表示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aef211b91ef406926720f8c50e4af457d07eaab
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 46ea33c872782845a8d9697a9abbddcef22e94fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535110"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623474"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンク
 
@@ -62,6 +62,9 @@ ms.locfileid: "65535110"
 - **Microsoft Teams**: Teams の会話、グループ チャット、またはチャネルからのリンクに対する安全なリンク保護も、安全なリンク ポリシーで制御されます。
 
   Teams の安全なリンク保護の詳細については、この記事で後述する「[Microsoft Teams の安全なリンク設定](#safe-links-settings-for-microsoft-teams)」セクションを参照してください。
+
+  > [!NOTE]
+  > 現在、Microsoft Teamsのセーフリンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
 
 - **Office 365 アプリ**: Office 365 アプリの安全なリンク保護は、サポートされたデスクトップ、モバイル、および Web アプリで利用できます。 グローバル設定で、安全なリンク ポリシーの **対象外** である Office 365 アプリの安全なリンク保護を **構成** します。 手順については「[Microsoft Defender for Office 365 の安全なリンク設定のグローバル設定の構成](configure-global-settings-for-safe-links.md)」を参照してください。
 
@@ -163,6 +166,8 @@ ms.locfileid: "65535110"
 
 > [!NOTE]
 > Teams の安全なリンク保護をオンまたはオフにすると、変更が有効になるまでに最大 24 時間かかる場合があります。
+>
+> 現在、Microsoft Teamsのセーフリンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
 
 メール メッセージ内のリンクに適用される安全なリンク ポリシーの次の設定は、Teams のリンクにも適用されます。
 

@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 984df48edf4ba75569286618086d8be9ab684b60
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 73107fd82a77be730d894b057d1b9b1795fb242b
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243054"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621062"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックス移行 (プレビュー)
 
@@ -59,7 +59,7 @@ ms.locfileid: "65243054"
 
 ### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>移行アプリケーションとシークレットを作成してターゲット (移行先) テナントを準備する
 
-1. ターゲット テナント管理者の資格情報を使用して、Azure AD ポータル (<https://portal.azure.com>) にログインします
+1. ターゲット テナント管理者の資格情報を使用して Azure AD ポータル (<https://portal.azure.com>) にログインする
 
    ![Azure Logon](../media/tenant-to-tenant-mailbox-move/74f26681e12df3308c7823ee7d527587.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "65243054"
 
    ![新しいアプリケーション](../media/tenant-to-tenant-mailbox-move/b36698df128e705eacff4bff7231056a.png)
 
-5. [アプリケーションの登録] ページの [サポートされているアカウントの種類] で、任意の組織ディレクトリ ([任意のAzure AD ディレクトリ - マルチテナント)] を選択します。 次に、リダイレクト URI (省略可能) で Web を選択し、次のように入力 <https://office.com>します。 最後に、[登録] を選択します。
+5. [アプリケーションの登録] ページの [サポートされているアカウントの種類] で、任意の組織ディレクトリの [アカウント] ([任意の Azure AD ディレクトリ - マルチテナント] ) を選択します。 次に、リダイレクト URI (省略可能) で Web を選択し、次のように入力 <https://office.com>します。 最後に、[登録] を選択します。
 
    ![アプリケーションの登録](../media/tenant-to-tenant-mailbox-move/edcdf18b9f504c47284fe4afb982c433.png)
 
@@ -147,13 +147,10 @@ ms.locfileid: "65243054"
    ```powershell
 
    # Enable customization if tenant is dehydrated
-     $dehydrated=Get-OrganizationConfig | fl isdehydrated
-     if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
-
+   $dehydrated=Get-OrganizationConfig | fl isdehydrated
+   if ($dehydrated -eq $true) {Enable-OrganizationCustomization}
    $AppId = "[guid copied from the migrations app]"
-
    $Credential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $AppId, (ConvertTo-SecureString -String "[this is your secret password you saved in the previous steps]" -AsPlainText -Force)
-
    New-MigrationEndpoint -RemoteServer outlook.office.com -RemoteTenant "sourcetenant.onmicrosoft.com" -Credentials $Credential -ExchangeRemoteMove:$true -Name "[the name of your migration endpoint]" -ApplicationId $AppId
    ```
 
@@ -246,7 +243,7 @@ ms.locfileid: "65243054"
       - UserPrincipalName: UPN は、ユーザーの新しい ID またはターゲット企業 (user@northwindtraders.onmicrosoft.com など) に対応します。
       - プライマリ SMTPAddress: プライマリ SMTP アドレスは、ユーザーの新しい会社 (user@northwind.com など) に合わせて配置されます。
       - TargetAddress/ExternalEmailAddress: MailUser は、ソース テナントでホストされているユーザーの現在のメールボックス (user@contoso.onmicrosoft.com など) を参照します。 この値を割り当てるときに、PrimarySMTPAddress が割り当てられているか、またはこの値が PrimarySMTPAddress を設定することを確認します。これにより、移動エラーが発生します。
-      - 移行元メールボックスからターゲット MailUser に従来の SMTP プロキシ アドレスを追加することはできません。 たとえば、fabrikam.onmicrosoft.com テナント オブジェクト) 内の MEU の contoso.com を維持することはできません)。 ドメインは、1 つのAzure ADまたはExchange Onlineテナントにのみ関連付けられます。
+      - 移行元メールボックスからターゲット MailUser に従来の SMTP プロキシ アドレスを追加することはできません。 たとえば、fabrikam.onmicrosoft.com テナント オブジェクト) 内の MEU の contoso.com を維持することはできません)。 ドメインは、1 つの Azure AD またはExchange Online テナントにのみ関連付けられます。
 
      **ターゲット** MailUser オブジェクトの例:
 
@@ -540,7 +537,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 **移行元テナントと同じラベルを、組織間の配置に応じて移行されたユーザーの唯一の一連のラベルまたは追加のラベル セットとして、移行元テナントに持つことができます。**
 
-クロステナント移行ではラベルはエクスポートされず、テナント間でラベルを共有する方法がないため、これを実現できるのは、宛先テナント内のラベルを再作成することだけです。
+テナント間の移行ではラベルがエクスポートされず、テナント間でラベルを共有する方法がないため、これを実現できるのは、移行先テナント内のラベルを再作成することだけです。
 
 **Microsoft 365 グループの移動はサポートされていますか?**
 
@@ -558,7 +555,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 - **問題: 非所有の smtp proxyAddress ブロック MRS を持つ Cloud MailUsers はバックグラウンドで移動します。** ターゲット テナントの MailUser オブジェクトを作成するときは、すべての SMTP プロキシ アドレスがターゲット テナント組織に属していることを確認する必要があります。 ローカル テナントに属していないターゲット メール ユーザーに SMTP proxyAddress が存在する場合、MailUser からメールボックスへの変換は防止されます。 これは、メールボックス オブジェクトが、テナントが権限を持つドメイン (テナントによって要求されたドメイン) からのみメールを送信できることを保証しているためです。
 
-  - Azure AD Connectを使用してオンプレミスからユーザーを同期する場合は、メールボックスが存在するソース テナント (LaraN@contoso.onmicrosoft.com) を指す ExternalEmailAddress を使用してオンプレミスの MailUser オブジェクトをプロビジョニングし、PrimarySMTPAddress をターゲット テナント (Lara.Newton@northwind.com) に存在するドメインとしてスタンプします。 これらの値はテナントに同期され、適切なメール ユーザーがプロビジョニングされ、移行の準備が整います。 オブジェクトの例を次に示します。
+  - Azure AD Connectを使用してオンプレミスからユーザーを同期する場合は、ExternalEmailAddress でオンプレミスの MailUser オブジェクトをプロビジョニングし、メールボックスが存在するソース テナント (LaraN@contoso.onmicrosoft.com) を指し示し、PrimarySMTPAddress をターゲット テナント (Lara.Newton@northwind.com) に存在するドメインとしてスタンプします。 これらの値はテナントに同期され、適切なメール ユーザーがプロビジョニングされ、移行の準備が整います。 オブジェクトの例を次に示します。
 
     ```powershell
     Get-MailUser LaraN | select ExternalEmailAddress, EmailAddresses
@@ -575,7 +572,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
   MailUser オブジェクトは、ローカル以外のメールボックスへのポインターです。 テナント間メールボックスの移行の場合、MailUser オブジェクトを使用して(ターゲット組織の観点から) ソース メールボックスまたはターゲット メールボックス (ソース組織の観点から) を表します。 MailUsers には、ディレクトリ内のメールボックス ユーザーの表示された SMTP アドレスを表す実際のメールボックス (ProxyTest@fabrikam.onmicrosoft.com) と primarySMTP アドレスの SMTP アドレスを指す ExternalEmailAddress (targetAddress) があります。 一部の組織では、プライマリ SMTP アドレスを外部 SMTP アドレスとして表示することを選択します。これは、ローカル テナントによって所有または検証されるアドレスとしてではなく (contoso.com ではなく fabrikam.com など)。  ただし、ライセンス操作によって Exchangeサービス プラン オブジェクトが MailUser に適用されると、プライマリ SMTP アドレスが変更され、ローカル組織 (contoso.com) によって検証されたドメインとして表示されます。 次の 2 つの理由が考えられます。
 
-  - Exchangeサービス プランが MailUser に適用されると、ローカル組織が別のテナントからメールを送信したり、スプーフィングしたり、メールを送信したりできないようにするために、Azure AD プロセスによってプロキシ スクラブの適用が開始されます。 これらのサービス プランを持つ受信者オブジェクト上の SMTP アドレスは、アドレスがローカル組織によって検証されない場合は削除されます。 例の場合と同様に、Fabikam.com ドメインは contoso.onmicrosoft.com テナントによって検証されないため、スクラブによってその fabrikam.com ドメインが削除されます。 移行前または移行後に、これらの外部ドメインを MailUser に保持する場合は、移行が完了した後または移行前にライセンスを削除するように移行プロセスを変更して、ユーザーが想定される外部ブランドが適用されていることを確認する必要があります。 メール サービスに影響を与えないように、メールボックス オブジェクトに適切なライセンスが付与されていることを確認する必要があります。
+  - Exchangeサービス プランが MailUser に適用されると、Azure AD プロセスはプロキシ スクラブを適用し始め、ローカル組織が別のテナントからメールを送信したり、スプーフィングしたり、メールを送信したりできないようにします。 これらのサービス プランを持つ受信者オブジェクト上の SMTP アドレスは、アドレスがローカル組織によって検証されない場合は削除されます。 例の場合と同様に、Fabikam.com ドメインは contoso.onmicrosoft.com テナントによって検証されないため、スクラブによってその fabrikam.com ドメインが削除されます。 移行前または移行後に、これらの外部ドメインを MailUser に保持する場合は、移行が完了した後または移行前にライセンスを削除するように移行プロセスを変更して、ユーザーが想定される外部ブランドが適用されていることを確認する必要があります。 メール サービスに影響を与えないように、メールボックス オブジェクトに適切なライセンスが付与されていることを確認する必要があります。
   - contoso.onmicrosoft.com テナント内の MailUser 上のサービス プランを削除するスクリプトの例を次に示します。
 
     ```powershell

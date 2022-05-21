@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 53a23751fd53b05b51bf1125dcca98c23f4ba73c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418250"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623233"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -48,9 +48,8 @@ Microsoft Defender for Endpointは、余分なアプライアンスや煩雑な�
 - アンマネージド エンドポイントをサービスにオンボードし、セキュリティの可視性を高める。
 - 脆弱性を特定して評価し、構成のギャップを検出することで、攻撃対象を減らします。
 
-デバイスの検出方法の概要については、このビデオをご覧ください。
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWORdQ]
+検出されたアンマネージド デバイスを評価してオンボードする方法の概要については、このビデオMicrosoft Defender for Endpoint参照してください。
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
 この機能と組み合わせて、デバイスをMicrosoft Defender for Endpointにオンボードするためのセキュリティに関する推奨事項は、既存の脅威と脆弱性の管理 エクスペリエンスの一部として利用できます。
 
@@ -115,13 +114,13 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="use-advanced-hunting-on-discovered-devices"></a>検出されたデバイスで高度なハンティングを使用する
 
-高度なハンティング クエリを使用して、検出されたデバイスの可視性を得ることができます。 検出されたデバイスの詳細は DeviceInfo テーブルで確認するか、DeviceNetworkInfo テーブルでそれらのデバイスに関するネットワーク関連情報を確認します。
+高度なハンティング クエリを使用して、検出されたデバイスの可視性を得ることができます。 検出されたデバイスの詳細については、DeviceInfo テーブルまたはそれらのデバイスに関するネットワーク関連情報を DeviceNetworkInfo テーブルで確認します。
 
 :::image type="content" source="images/f48ba1779eddee9872f167453c24e5c9.png" alt-text="クエリを使用できる高度なハンティング ページ" lightbox="images/f48ba1779eddee9872f167453c24e5c9.png":::
 
 ### <a name="query-discovered-devices-details"></a>検出されたデバイスの詳細を照会する
 
-次のクエリを DeviceInfo テーブルで実行して、検出されたすべてのデバイスと、各デバイスの詳細までを返します。
+DeviceInfo テーブルで次のクエリを実行して、検出されたすべてのデバイスと、各デバイスの最新の詳細を返します。
 
 ```query
 DeviceInfo

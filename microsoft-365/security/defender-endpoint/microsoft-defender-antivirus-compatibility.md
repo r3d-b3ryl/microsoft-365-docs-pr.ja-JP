@@ -14,16 +14,15 @@ ms.custom: nextgen
 ms.reviewer: mkaminska, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 04/19/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 3bae6326fca5cefc921cb24b1a16180da2a2f52f
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a38ed6fbdcebf54dcd8bc34458733b5edefb850
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415131"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623163"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -34,8 +33,6 @@ ms.locfileid: "65415131"
 
 **プラットフォーム**
 - Windows
-
-[!include[Prerelease information](../../includes/prerelease.md)]
 
 Microsoft Defender ウイルス対策は、次のバージョンの Windows を実行しているエンドポイントに自動的にインストールされます:
 
@@ -159,10 +156,10 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい<sup>[[5](#fn5)]</sup> | 不要 | はい | 
 | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[6](#fn6)]</sup>を参照してください | 不要 | はい | 
 | [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい <sup>[[7](#fn7)]</sup> | 不要 | はい <sup>[[7](#fn7)]</sup> | 
-| [データ損失防止](../../compliance/endpoint-dlp-learn-about.md) | はい | はい | いいえ | 不要 |
+| [データ損失防止](../../compliance/endpoint-dlp-learn-about.md) | はい | 必要 | いいえ | 不要 |
 | [制御されたフォルダー アクセス](controlled-folders.md) | はい |いいえ | いいえ | 不要 |
 | [Web コンテンツ フィルタリング](web-content-filtering.md) | はい | メモ <sup>[[8](#fn8)]</sup> を参照してください | 不要 | 不要 |
-| [デバイス コントロール](device-control-report.md) | はい | はい | いいえ | 不要 |
+| [デバイス コントロール](device-control-report.md) | はい | 必要 | いいえ | 不要 |
 | [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | いいえ | いいえ | 不要 |
 
 (<a id="fn4">4</a>) 一般に、Microsoft Defender ウイルス対策がパッシブ モードの場合、リアルタイム保護では、有効でパッシブ モードであっても、ブロックや強制は提供されません。
@@ -218,6 +215,5 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 ## <a name="see-also"></a>関連項目
 
 - [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)
-- [Windows Server 上の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-on-windows-server.md)
 - [ブロック モードの EDR](edr-in-block-mode.md)
 - [エンドポイント データ損失防止について](/microsoft-365/compliance/endpoint-dlp-learn-about)

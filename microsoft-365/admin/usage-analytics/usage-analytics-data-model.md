@@ -21,18 +21,18 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: '利用状況分析が API に接続し、さまざまなMicrosoft 365 サービスの使用状況の毎月の傾向を提供する方法について説明します。  '
-ms.openlocfilehash: 013fdd75063ad8ad2489ebe43c9091f05f94c14c
-ms.sourcegitcommit: 57211e8082a3429017ad33fe0e6bd9af203bb7ab
+ms.openlocfilehash: 05b8a6d9a69cc6347b4d2cdcfbdeaa26bd479cbd
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62487277"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65620993"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Microsoft 365 利用状況分析データ モデル
 
 ## <a name="data-for-the-microsoft-365-usage-analytics-tables"></a>Microsoft 365利用状況分析テーブルのデータ
 
-Microsoft 365利用状況分析は、多次元データ モデルを公開する API に接続します。 利用状況分析Microsoft 365使用してデータを生成する API は、一般に利用可能なさまざまなGraph API から取得されます。 Microsoft 365利用状況分析 API の機能自体は一般公開されていません。
+Microsoft 365利用状況分析は、多次元データ モデルを公開する API に接続します。 利用状況分析Microsoft 365使用してデータを生成する API は、一般に利用可能なさまざまな API からGraphされます。 Microsoft 365利用状況分析 API の機能自体は一般提供されていません。
   
 > [!NOTE]
 > 詳細については、「[Microsoft GraphでのMicrosoft 365使用状況レポートの操作](/graph/api/resources/report)」を参照してください。 
@@ -51,7 +51,7 @@ Microsoft 365利用状況分析は、多次元データ モデルを公開する
 |Tenant SharePoint Online Usage (テナント SharePoint オンラインの利用状況)  <br/> |SharePoint サイト、サイトの合計数などの含まれるチームまたはグループ、サイトのドキュメントの数、アクティビティ タイプ別のファイル数、使用しているストレージに関するデータが含まれています。  <br/> |現在の部分的な月を含む、ローリング 12 か月の期間の月末状態データが含まれます。  <br/> |
 |Tenant OneDrive for Business Usage (テナントの OneDrive for Business の利用状況)  <br/> |アカウントの数、OneDrive 全体のドキュメントの数、使用されているストレージ、アクティビティの種類別のファイル数などの OneDrive アカウントに関するデータが含まれています。  <br/> |現在の部分的な月を含む、ローリング 12 か月の期間の月末状態データが含まれます。  <br/> |
 |テナントMicrosoft 365 グループ使用状況  <br/> |メールボックス、SharePoint、Yammerなど、Microsoft 365 グループ使用状況に関するデータが含まれます。  <br/> |現在の部分的な月を含む、ローリング 12 か月の期間の月末状態データが含まれます。  <br/> |
-|Tenant Office Activation (テナントの Office ライセンス認証)  <br/> |Officeサブスクリプションのアクティブ化の数、デバイスごとのアクティブ化の数 (Android/iOS/Mac/PC)、サービス プラン別のアクティブ化 (Microsoft 365 Apps for enterprise、Visio、Projectなど) に関するデータが含まれます。  <br/> |現在の部分的な月を含む、ローリング 12 か月の期間の月末状態データが含まれます。  <br/> |
+|Tenant Office Activation (テナントの Office ライセンス認証)  <br/> |Office サブスクリプションのアクティブ化の数、デバイスごとのアクティブ化の数 (Android/iOS/Mac/PC)、サービス プラン別のアクティブ化 (Microsoft 365 Apps for enterprise、Visio、Projectなど) に関するデータが含まれます。  <br/> |現在の部分的な月を含む、ローリング 12 か月の期間の月末状態データが含まれます。  <br/> |
 |User State (ユーザーの状態)  <br/> |ユーザーの表示名、割り当てられた製品、場所、部署、役職、会社など、ユーザーに関するメタデータが含まれます。 このデータは、過去 1 か月間にライセンスが割り当てられたユーザーに関するものです。 すべてのユーザーは、ユーザー ID によって一意に表されます。  <br/> |このデータは、完了した最後の月にライセンスを割り当てられたユーザーに関するものです。  <br/> |
 |User Activity (ユーザー アクティビティ)  <br/> |ライセンスを取得したユーザーが実行したアクティビティに関するユーザーごとの情報が含まれています。  <br/> このデータ表で返される、ある製品内のアクティビティに関する情報については、[アクティブ ユーザーの定義](active-user-in-usage-reports.md)に関するページを参照してください。  <br/> |このデータは、完了した最後の月の間、何らかのサービスでアクティビティを実行したユーザーに関するものです。  <br/> |
    
@@ -175,7 +175,7 @@ Microsoft 365利用状況分析は、多次元データ モデルを公開する
    
 ### <a name="data-table---tenant-mailbox-usage"></a>データ テーブル - Tenant Mailbox Usage (テナント メールボックスの利用状況)
 
-このテーブルは、ユーザー メールボックスを持つすべてのライセンスExchange Onlineユーザーの概要データで構成されます。 すべてのユーザーのメールボックスの間での月末の状態が含まれています。 このテーブルのデータは、複数の月の間で追加されることはありません。 このテーブルの最後の月のデータは、最新の状態を表します。
+このテーブルは、ユーザー メールボックスを持つすべてのライセンスExchange Onlineユーザーの概要データで構成されます。 すべてのユーザーのメールボックスの間での月末の状態が含まれています。 この表のデータは、複数の月にわたって加算されません。 このテーブルの最後の月のデータは、最新の状態を表します。
   
 |**列名**|**列の説明**|
 |:-----|:-----|
@@ -194,7 +194,7 @@ Microsoft 365利用状況分析は、多次元データ モデルを公開する
    
 ### <a name="data-table---tenant-client-usage"></a>データ テーブル - Tenant Client Usage (テナント クライアントの使用状況)
 
-この表では、ユーザーがExchange Online、Skype for Business、Yammerに接続するために使用しているクライアントに関する月単位の概要データを示します。 このテーブルには、SharePoint Online と OneDrive for Business のクライアントの使用状況データはまだありません。
+この表では、ユーザーがExchange Online、Skype for Business、Yammerに接続するために使用しているクライアントに関する月単位の概要データを示します。 この表では、クライアントが SharePoint Online とOneDrive for Businessのデータをまだ使用していません。
   
 |**列名**|**列の説明**|
 |:-----|:-----|

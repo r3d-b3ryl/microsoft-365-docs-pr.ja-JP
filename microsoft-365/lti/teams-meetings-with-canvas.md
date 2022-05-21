@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Teams会議を Canvas と統合する
-ms.openlocfilehash: a81b8c7da014ba4ded9e4a2e3cfd6b38509ae2db
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: cbb24972dba7fafe60cb460e514a0fede64a08fb
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599615"
+ms.locfileid: "65621478"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>キャンバスでMicrosoft Teams会議を使用する
 
@@ -35,7 +35,7 @@ Microsoft Teams会議は、教育者と学生がラーニング管理システ�
 
 ## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
 
-Instructure Canvas 内でMicrosoft Teams統合を管理する前に、Canvas 管理者のセットアップを完了する前に、Microsoft Azure テナントの教育機関のMicrosoft Office 365管理者によってキャンバスの **Microsoft-Teams-Sync-for-Canvas** Azure アプリが承認されていることが重要です。
+Instructure Canvas 内でMicrosoft Teams統合を管理する前に、Canvas 管理者のセットアップを完了する前に、Microsoft Azure テナントの教育機関のMicrosoft Office 365管理者によって Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリが承認されている必要があります。
 
 1. Canvas にサインインします。
 
@@ -95,6 +95,6 @@ Microsoft Teams LTI 1.3 統合を設定します。
 
 ## <a name="enable-for-canvas-courses"></a>Canvas コースを有効にする
 
-コース内で LTI を使用するには、Canvas コースのインストラクターが統合同期を有効にする必要があります。各コースは、対応するTeamsを作成するためにインストラクターが有効にする必要があります。Teams作成のためのグローバル メカニズムはありません。 これは、不要なTeamsが作成されないように注意して設計されています。
+コース内で LTI を使用するには、Canvas コースのインストラクターが統合同期を有効にする必要があります。各コースは、対応するTeamsを作成するためにインストラクターによって有効にする必要があります。Teams作成のためのグローバル メカニズムはありません。 これは、不要なTeamsが作成されないように注意して設計されています。
 
 各コースの LTI を有効にして統合セットアップを完了するには、教師向け [ドキュメント](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-preview-ac6a1e34-32f7-45e6-b83e-094185a1e78a#ID0EBD=Instructure_Canvas) を参照してください。
