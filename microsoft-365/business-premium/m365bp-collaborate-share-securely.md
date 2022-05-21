@@ -1,5 +1,5 @@
 ---
-title: セキュイティで保護された共同作業および共有を行う
+title: Microsoft 365 Business Premium で安全に共同作業と共有を行う
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,13 +23,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Teams を使用してファイルを共同作業および共有し、安全に通信する方法の概要。 Teams が提供するクローズド環境では、ファイルと通信にサイバー脅威やサイバー攻撃が発生しません。
-ms.openlocfilehash: 0cedb879218e883570cf3b1da859842eb45f0250
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 Business Premium で Teams を使用してファイルを共同作業および共有し、安全に通信する方法の概要。 Teams が提供するクローズド環境では、ファイルと通信にサイバー脅威やサイバー攻撃が発生しません。
+ms.openlocfilehash: 0fe52b116b1606d430c99844bf244c93afedba08
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101771"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65621054"
 ---
 # <a name="collaborate-and-share-securely"></a>セキュイティで保護された共同作業および共有を行う
 

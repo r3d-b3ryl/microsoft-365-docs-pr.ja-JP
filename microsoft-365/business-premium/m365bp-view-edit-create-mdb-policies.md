@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 05/10/2022
+ms.date: 05/20/2022
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 7cbb9c71e56242d15506c2c1e46f1120021928fa
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5a01c2f045ea797aa61f3028f2a0a4ef4e260fe6
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415972"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623204"
 ---
 # <a name="view-and-edit-device-protection-policies"></a>デバイス保護ポリシーを表示して編集する
 
@@ -30,7 +30,7 @@ Microsoft 365 Business Premium では、管理対象デバイスのセキュリ�
 **このガイドでは、次の内容を説明します:**
 
 - 既定のポリシーの概要を確認する
-- Defender セキュリティ センター、管理センター、InTune でデバイス ポリシーを操作します。
+- Defender セキュリティ センター、管理センター、Intune でデバイス ポリシーを操作します。
 
 ## <a name="about-the-default-device-protection-policies"></a>既定のデバイス保護ポリシーについて
 
@@ -40,7 +40,7 @@ Microsoft 365 Business Premium には、組織のデバイスを保護するた�
 
 - **ファイアウォール ポリシー**: 組織のデバイスとの間のフローが許可されるネットワーク トラフィックを決定します。
 
-これらのポリシーは、Microsoft 365 Business Premium サブスクリプションに含まれている Microsoft Defender for Business の一部です。 情報は、Microsoft Defender セキュリティ センターでポリシーを操作し、管理センターと InTune でポリシーを操作する方法に関する情報が提供されます。
+これらのポリシーは、Microsoft 365 Business Premium サブスクリプションに含まれている Microsoft Defender for Business の一部です。 情報は、Microsoft Defender セキュリティ センターでポリシーを操作し、管理センターと Intune でポリシーを操作する方法に関する情報が提供されます。
 
 ## <a name="working-with-device-polices-in-the-microsoft-defender-security-center"></a>Microsoft Defender セキュリティ センターでのデバイス ポリシーの操作
 
@@ -157,13 +157,13 @@ Microsoft 365 Business Premium には、組織のデバイスを保護するた�
   
    ![[デバイスの管理] ページ。](../media/devicesmanage.png)
 
-## <a name="working-with-device-policies-in-intune"></a>InTune でのデバイス ポリシーの操作
+## <a name="working-with-device-policies-in-intune"></a>Intune でのデバイス ポリシーの操作
 
-次の情報を使用して、Microsoft エンドポイント マネージャー管理センターのエンドポイント セキュリティ経由で実行される InTune でデバイス ポリシーを作成して管理します。
+次の情報を使用して、Microsoft エンドポイント マネージャー管理センターのエンドポイント セキュリティ経由で実行される Intune でデバイス ポリシーを作成して管理します。
 
 ### <a name="create-duplicate-and-edit-policies"></a>ポリシーを作成、複製、編集する
 
-InTune でポリシーを作成するには
+Intune でポリシーを作成するには
 
 1. Microsoft エンドポイント マネージャー管理センターにサインインします。
 
@@ -201,7 +201,7 @@ InTune でポリシーを作成するには
 
 1. [確認および作成] ページで、完了したら、**[作成]** を選択します。 作成したプロファイルのポリシーの種類を選択すると、新しいプロファイルが一覧に表示されます。
 
-InTune でポリシーを複製するには、以下の操作を行います。
+Intune でポリシーを複製するには、以下の操作を行います。
 
 1. Microsoft エンドポイント マネージャー管理センターにサインインします。
 
@@ -235,7 +235,7 @@ InTune でポリシーを複製するには、以下の操作を行います。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Intune でのエンドポイント セキュリティの管理](/mem/intune/protect/endpoint-security)
+[Microsoft Intune でエンドポイント セキュリティの管理](/mem/Intune/protect/endpoint-security)
 
 [ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)
 

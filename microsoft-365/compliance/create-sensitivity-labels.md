@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Purview Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: e35d6e317abc3fb32bb11a6bdf937f303212fc23
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 99b2b50ed00f470443956ff30ebb4940bbe1024d
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302356"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622371"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -43,9 +43,7 @@ ms.locfileid: "65302356"
 
 ## <a name="create-and-configure-sensitivity-labels"></a>秘密度ラベルを作成して構成する
 
-1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から [**ソリューション**]  >  [**Information protection**] を選択します。
-    
-    このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から **[ソリューション]** > **[Information protection]** > **[ラベル]** の順に選択します。
 
 2. **[ラベル]** ページで、**[+ ラベルの作成]** を選択して、新しい秘密度ラベルの構成を開始します。 
     
@@ -128,11 +126,9 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>ラベル ポリシーを作成して秘密度ラベルを発行する
 
-1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から [**ソリューション**]  >  [**Information protection**] を選択します。
-    
-    このオプションがすぐに表示されない場合は、まず [**すべてを表示**] を選択します。
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から **[ソリューション]** > **[Information protection]** > **[ラベル ポリシー]** の順に選択します。
 
-2. [**ラベル ポリシー**] タブ、[**ラベルの発行**] の順に選択して、[**ポリシーの作成**] 構成を開始してください。
+2. **[ラベル ポリシー]** ページで、**[ラベルの発行]** を選択して **[ポリシーの作成]** 構成を開始します。
     
     ![ラベルを発行。](../media/publish-sensitivity-labels-full.png)
     
@@ -205,7 +201,7 @@ Azure Information Protection の統合ラベル付けクライアントは、他
 
 - SharePoint または OneDrive に保存されていて、[Office ファイルの秘密度ラベルを有効化](sensitivity-labels-sharepoint-onedrive-files.md)したドキュメントの場合: Office for the web でドキュメントを開くと、アプリに適用されたラベルは確認できなくなり、そのラベル名は SharePoint の **[秘密度**] 列に表示されなくなります。 削除したラベルが暗号化を適用していて、サービスが暗号化されたコンテンツを処理できる場合、暗号化は解除されます。 こうしたサービスからのエグレス アクションは、同じ結果になります。 たとえば、Office デスクトップ アプリまたはモバイル アプリを使用して、ダウンロード、コピー、移動、オープンする場合です。 ラベル情報はファイルのメタデータに残っていますが、アプリはラベル ID を表示名にマップできなくなっているため、ユーザーはファイルにラベルが付いていないと見なすようになります。
 
-- SharePoint および OneDrive の外部に保存されているドキュメントや、Office ファイルおよびメールの秘密度ラベルを有効にしていない場合: コンテンツを開いたときにメタデータ内にラベル情報が残されていますが、ラベル ID から名前へのマッピングがないため、ユーザーには適用されたラベル名が表示されません (デスクトップ アプリのステータス バーなどに表示されなくなります)。 削除したラベルが暗号化を適用していた場合、暗号化は維持され、ユーザーは現時点でアーカイブされている保護テンプレートの名前と説明を引き続き確認できます。
+- SharePoint および OneDrive の外部に保存されているドキュメントや、Office ファイルおよびメールの秘密度ラベルを有効にしていない場合: コンテンツを開いたときにメタデータ内にラベル情報が残されていますが、ラベル ID から名前へのマッピングがないため、ユーザーには適用されたラベル名が表示されません (デスクトップ アプリのステータス バーなどに表示されなくなります)。削除されたラベルに暗号化が適用されている場合、暗号化は維持され、ユーザーにはアーカイブされた保護テンプレートの名前と説明が引き続き表示されます。
 
 - SharePoint や Teams のサイトなどのコンテナーの場合: ラベルは解除され、そのラベルで構成された設定は適用されなくなります。 通常、このアクションは SharePoint サイトでは 48 時間から 72 時間かかります。Teams と Microsoft 365 グループでは時間を短縮できます。
 

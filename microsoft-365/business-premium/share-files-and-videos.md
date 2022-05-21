@@ -1,5 +1,5 @@
 ---
-title: ファイルやビデオを共有する
+title: Microsoft Teams と Sharepoint でファイルとビデオを共有する
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -24,17 +24,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft Teams と SharePoint を使用して、キャンペーン内でファイルとビデオを共有します。
-ms.openlocfilehash: 5c371dea1c1e9d5768743072052825f0810938b9
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft Teams と SharePoint を使用して、キャンペーン内でファイルとビデオを共有します。 Microsoft 365 Business Premium には、ファイルやビデオを安全に共有するための優れた方法である Teams が含まれています。
+ms.openlocfilehash: b678bf1bf44b63e80ac4b8d0ea6dfc760eb510a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095124"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622360"
 ---
-# <a name="share-files-and-videos"></a>ファイルやビデオを共有する
+# <a name="share-files-and-videos-in-a-safe-environment"></a>安全な環境でファイルとビデオを共有する
 
-もう 1 つの注意すべき点は、組織のすべてのメンバーがファイルを表示および編集できるユーザーを制御し、適切なアクセス許可が適用された安全な場所に保存されるようにすることです。 ユーザーは Microsoft Teams を使用してファイルを保存し、Microsoft Teams を使用するか SharePoint リンクを送信して、会社、プラクティス、またはキャンペーンの内部または外部でファイルを共有できます。 メールの添付ファイルではなくリンクを送信すると、ファイルを表示および変更しているユーザーがわかっており、許可なく表示または変更することはできません。
+もう 1 つの注意すべき点は、組織のすべてのメンバーがファイルを表示および編集できるユーザーを制御し、適切なアクセス許可が適用された安全な場所に保存されるようにすることです。 Microsoft 365 Business Premium ユーザーは Microsoft Teams を使用してファイルを保存し、会社、プラクティス、またはキャンペーンの内部または外部でファイルを共有できます。 Sharepoint リンクを送信することもできます。 メールの添付ファイルではなくリンクを送信すると、ファイルを表示および変更しているユーザーがわかっており、許可なく表示または変更することはできません。
 
 ![メニューの [ファイル] タブと [取得] リンクを示す Microsoft Teams ウィンドウの図。](../media/m365-democracy-teams-sharefiles.png)
 

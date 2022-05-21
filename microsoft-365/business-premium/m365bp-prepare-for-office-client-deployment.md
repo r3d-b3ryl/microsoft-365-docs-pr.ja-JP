@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium による Office クライアントの展開を準備する
+title: Microsoft 365 Business Premium を使用した Office クライアントの展開を準備する
 f1.keywords:
 - CSH
 ms.author: efrene
@@ -22,25 +22,25 @@ search.appverid:
 - MET150
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
-description: 32 ビット Office アプリを Windows 10 コンピューターに自動的にインストールし、最新の状態に保つ方法を学びます。
-ms.openlocfilehash: b4df5152e5adfbd2391fd51c184bd4547be12011
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: 32 ビット Office アプリを Windows コンピューターに自動的にインストールし、Microsoft 365 Business Premium で最新の状態に保つ方法を学びます。
+ms.openlocfilehash: d4e9c16dea6697a428c5f7e51b7c8c1f819c75e4
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317878"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622040"
 ---
 # <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Office アプリをクライアント コンピューターに自動的にインストールするための準備
 
-Microsoft 365 Business Premium を使用して、32 ビット版の Office アプリを Windows 10 コンピューターに自動的にインストールし、更新プログラムで最新状態に維持します。
+Microsoft 365 Business Premium を使用して、32 ビット版の Office アプリを Windows コンピューターに自動的にインストールし、更新プログラムで最新状態に維持します。
   
 自動インストールは、次の場合のコンピューターで最適に動作します。 
 
-- Windows 10 Business である。
+- Windows for Business である。
   
 - 既存の Office デスクトップ アプリ (Word、Excel、PowerPoint、Outlook、OneNote、Publisher、Access、OneDrive) が存在していないか、既存のバージョンのクイック実行 Office がインストールされている。
 
-Office のクイック実行バージョンがあるかどうかを判断するには、任意の Office アプリで **[ファイル]** \> **[アカウント]** (Outlook では **[Office アカウント]**) の順に移動します。**Office の更新プログラム** が次の図のように示される場合は、クイック実行を使用してインストールされています。 
+Office のクイック実行バージョンがあるかどうかを判断するには、任意の Office アプリで **[ファイル]** \> **[アカウント]** (Outlook では **[Office アカウント]**) の順に移動します。**Office の更新プログラム** が次の図のように示される場合は、クイック実行を使用してインストールされています。
   
 ![Office アプリ アカウントでの Office 更新のスクリーンショット](./../media/e3439380-fa43-4ed6-ae5d-64851c297df5.png)
   
@@ -48,7 +48,7 @@ Office のクイック実行バージョンがあるかどうかを判断する�
   
 次の場合に動作します。
   
-- Windows 10 Business ユーザー ライセンス、アクティブな Microsoft 365 for Business ライセンス、Windows 10 Creators Update を所有していて、Azure Active Directory に参加しているユーザー。
+- Windows Business ユーザー ライセンス、アクティブな Microsoft 365 for Business ライセンス、Windows 10 Creators Update を所有していて、Azure Active Directory に参加しているユーザー。
 
 次の場合は動作しません。 
 

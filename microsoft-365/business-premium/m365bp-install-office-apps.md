@@ -1,5 +1,5 @@
 ---
-title: デバイスに Office アプリをインストールする
+title: Microsoft 365 Business Premium のすべてのデバイスに Office アプリをインストールする
 f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
@@ -23,17 +23,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: すべてのデバイスに Office をインストールする方法。
-ms.openlocfilehash: 81b9152b52a4ffa7b38f744f680e11a091a345e0
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 Business Premium のすべてのデバイスに Office をインストールする方法。
+ms.openlocfilehash: b05e0330d4119f8c03379a56f541e7a9ca0f8415
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101840"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623570"
 ---
-# <a name="install-office-apps-on-all-devices"></a>デバイスに Office アプリをインストールする
+# <a name="install-office-apps-on-all-devices"></a>すべてのデバイスに Office をインストールする
 
-これで、Microsoft 365 を設定し、ユーザーが Mac、PC、またはモバイル デバイスに個々の Office アプリケーションをインストールするように要求できるようになりました。 これは、ユーザーが最前線に参加し、攻撃から組織を保護するために行う必要がある作業です。
+これで、Microsoft 365 Business Premium を設定し、ユーザーが Mac、PC、またはモバイル デバイスに個々の Office アプリケーションをインストールするように要求できるようになりました。 これは、ユーザーが最前線に参加し、攻撃から組織を保護するために行う必要がある作業です。
   
 ## <a name="watch-install-office-apps"></a>視聴: Office アプリをインストールする
 
@@ -50,7 +50,7 @@ ms.locfileid: "65101840"
 5. Windows アプリを入手してから、**[実行]** を選択します。 インストールが完了すると、Teams のダイアログが表示されます。
 
 
-## <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>ビジネス ユーザー向け Microsoft 365 用のモバイル デバイスをセットアップする
+## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザーのモバイル デバイスをセットアップする
 
 タブの指示に従って、Office を iPhone または Android フォンにインストールします。これらの手順を実行すると、Office アプリで作成した作業ファイルは、Microsoft 365 Business で保護されるようになります。
 

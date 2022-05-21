@@ -19,18 +19,18 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: 0a3b036a60d3ec24533056b38ff1e68be9875aa0
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761375"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623295"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
-データ分類コンテンツ エクスプローラーにより、概要ページで要約されたアイテムをネイティブに表示することができます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-![折りたたみ済みのコンテンツ エクスプローラーのスクリーンショット。](../media/data-classification-content-explorer-1.png)
+コンテンツ エクスプローラーを使用すると、概要ページで要約されたアイテムをネイティブに表示することができます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -51,7 +51,7 @@ ms.locfileid: "64761375"
 > これらの役割グループのメンバーシップでは、コンテンツ エクスプローラーでアイテムの一覧を表示したり、コンテンツ エクスプローラーでアイテムの内容を表示したりすることができません。
 
 > [!IMPORTANT]
-> グローバル管理者のみが、コンプライアンス センターで他のユーザーに対してアクセス許可を管理または割り当てることができます。 詳細については、｢[セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+> グローバル管理者のみが、コンプライアンス ポータルで他のユーザーに対してアクセス許可を管理または割り当てることができます。 詳細については、「[Microsoft Purview コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」 を参照してください。
 > 
 ### <a name="required-permissions-to-access-items-in-content-explorer"></a>コンテンツ エクスプローラーでアイテムにアクセスするために必要なアクセス許可
 
@@ -60,7 +60,7 @@ ms.locfileid: "64761375"
 > [!IMPORTANT]
 > これらのアクセス許可は、アイテムにローカルに割り当てられるアクセス許可の代わりに、コンテンツの表示を許可します。 
 
-コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft 365 コンプライアンス センター</a>を使用して許可されます。
+コンテンツ エクスプローラーへのアクセスを許可する 2 つの役割があり、<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">Microsoft Purview コンプライアンス ポータル</a>を使用して許可されます。
 
 - **Content Explorer リスト ビューアー**: この役割グループのメンバーシップを使用すると、リスト ビューで各項目とその場所を表示できます。`data classification list viewer` のロールは、この役割グループに事前に割り当てられています。
 
@@ -76,14 +76,14 @@ ms.locfileid: "64761375"
 
 プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
 - Information Protection レベル
@@ -111,14 +111,14 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 
 ### <a name="how-to-use-content-explorer"></a>コンテンツ エクスプローラーの使用方法
 
-1. **Microsoft 365 コンプライアンス センター**  > **[データ分類]** > **[コンテンツ エクスプローラー]** の順に開きます。
+1. **Microsoft Purview コンプライアンス ポータル**  > **[データ分類]** > **[コンテンツ エクスプローラー]** の順に開きます。
 2. ラベルの名前または機密情報の種類が分かる場合は、それをフィルター ボックスに入力することができます。
 3. 交互に、ラベルの種類を展開してリストからラベルを選択し、アイテムを参照することができます。
 4. [**すべての場所**] の下で場所を選択して、アイテムのフォルダー構造をドリルダウンします。
 5. ダブルクリックして、コンテンツ エクスプローラーでネイティブにアイテムを開きます。
 
 ### <a name="export"></a>エクスポート
-**エクスポート** コントロールは、**[すべての場所]** ウィンドウで表示される内容の一覧を含む .csv ファイルを作成します。
+**エクスポート** コントロールは、ウィンドウのフォーカスの一覧を含む .csv ファイルを作成します。
 
 ![データ分類エクスポート コントロール。](../media/data_classification_export_control.png)
 
@@ -126,9 +126,9 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 > [!NOTE]
 > コンテンツ エクスプローラーでカウントが更新されるまで、最大 *7日* かかる場合があります。
 
-### <a name="search"></a>検索
+### <a name="filter"></a>Filter
 
-Exchange またはTeams フォルダー、SharePoint、OneDrive サイトなどの場所をドリルダウンするとき、**検索** ツールが表示されます。
+Exchange またはTeams フォルダー、SharePoint、OneDrive サイトなどの場所をドリルダウンするとき、**[フィルター]** ツールが表示されます。
 
 ![コンテンツ エクスプローラー検索ツール。](../media/data_classification_search_tool.png)
 
@@ -154,4 +154,4 @@ Exchange またはTeams フォルダー、SharePoint、OneDrive サイトなど�
 - [秘密度ラベルの詳細](sensitivity-labels.md)
 - [アイテム保持ポリシーと保持ラベルの詳細](retention.md)
 - [機密情報の種類のエンティティ定義.md](sensitive-information-type-entity-definitions.md)
-- [データ損失防止について](dlp-learn-about-dlp.md)
+- [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md)
