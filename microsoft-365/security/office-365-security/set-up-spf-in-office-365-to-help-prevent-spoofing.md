@@ -19,12 +19,12 @@ ms.custom:
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25efbce5b9f8141575a88baa3fdd85b099dfbd6
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: d29175c471e076b1f69e1edb6da3c005d3857f8f
+ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682969"
+ms.lasthandoff: 05/21/2022
+ms.locfileid: "65626043"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -34,7 +34,7 @@ ms.locfileid: "63682969"
 - [SPF のトラブルシューティング](#troubleshooting-spf)
 
 <!--
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **Applies to**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -105,7 +105,7 @@ Office 365 の SPF TXT レコードは、カスタム ドメインまたはサ�
 
    Office 365 で既に展開し、カスタム ドメインの SPF TXT レコードをセットアップしている状態で Office 365 Germany に移行する場合は、SPF TXT レコードを更新する必要があります。これを行うには、`include:spf.protection.outlook.com` を `include:spf.protection.outlook.de` に変更します。
 
-3. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。 **ドメインに配置できる SPF TXT レコードは 1 つのみです**。 SPF TXT レコードが存在する場合、新しいレコードを追加するのではなく、既存のレコードを更新しなければなりません。 「[Office 365 の DNS レコードを作成する](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)」に移動し、DNS ホストのリンクをクリックします。
+3. SPF TXT レコードを構成した後、DNS でレコードを更新する必要があります。**ドメインに配置できる SPF TXT レコードは 1 つのみです**。SPF TXT レコードが存在する場合、新しいレコードを追加するのではなく、既存のレコードを更新する必要があります。「[Office 365 の DNS レコードを作成する](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)」にアクセスし、お使いの DNS ホストへのリンクを選択します。
 
 4. SPF TXT レコードをテストします。
 

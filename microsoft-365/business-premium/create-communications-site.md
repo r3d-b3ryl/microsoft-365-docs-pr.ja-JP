@@ -1,5 +1,5 @@
 ---
-title: SharePoint​​ コミュニケーションサイトを作成する
+title: Teams for Microsoft 365 Business Premium で SharePoint コミュニケーション サイトを作成する
 f1.keywords:
 - NOCSH
 ms.author: samanro
@@ -23,15 +23,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 を使用して選挙運動やビジネスのための SharePoint コミュニケーション サイトを作成し、不適切なファイル共有によるマルウェアやその他の脅威からのサイバー攻撃や侵入からチームを保護する理由と方法について説明します。
-ms.openlocfilehash: 72794c9aac0f1409675af0e3fa40c8cd1881f73a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Microsoft 365 Business Premium を使用して選挙運動やビジネスのための SharePoint コミュニケーション サイトを作成し、不適切なファイル共有によるマルウェアやその他の脅威からのサイバー攻撃や侵入からチームを保護する理由と方法について説明します。
+ms.openlocfilehash: 4c8fa8a197a7fb6014833dc9701aa7f354c2e5a0
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319530"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623420"
 ---
-# <a name="create-a-communications-site-in-sharepoint"></a>SharePoint のコミュニケーション サイトを作成する
+# <a name="create-a-communications-site"></a>コミュニケーション サイトを作成する
 
 優先事項を伝達し、戦略ドキュメントを共有し、今後のイベントを紹介するには、SharePoint のコミュニケーション サイトを使用することが最適で、この記事ではその方法を説明します。 コミュニケーション サイトの目的は、ビジネスや選挙運動の全体で物事を広く共有すること &mdash; つまり、社内戦略立案室や戦術会議室として機能することであると言えます。 
 

@@ -1,5 +1,5 @@
 ---
-title: Windows 10 デバイスを出荷時の設定にリセットする
+title: Windows デバイスを出荷時の設定にリセットする
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -24,15 +24,15 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Microsoft 365 for Business を使用して、管理している Windows 10 デバイスを工場出荷時にリセットし、購入時に元の設定に戻す方法について説明します。
-ms.openlocfilehash: a43ebd545ca16dc846e02b485a8c087c4cb87bac
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Microsoft 365 Business Premium を使用して、管理している Windows デバイスを工場出荷時にリセットし、購入時に元の設定に戻す方法について説明します。
+ms.openlocfilehash: 960ee445757e2d53e552611e934d777fb5edaebc
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320258"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65623553"
 ---
-# <a name="reset-windows-10-devices-to-their-factory-settings"></a>Windows 10 デバイスを出荷時の設定にリセットする
+# <a name="reset-windows-devices-to-factory-settings"></a>Windows デバイスを出荷時の設定にリセットする
 
 この記事は Microsoft 365 Business Premium に適用されます。
 

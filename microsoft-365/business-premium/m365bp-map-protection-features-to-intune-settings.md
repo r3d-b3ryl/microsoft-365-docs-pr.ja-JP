@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: scotv
-ms.date: 04/21/2022
+ms.date: 05/20/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -27,12 +27,12 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Microsoft 365 Business Premium の保護機能を Intune の設定に対応付ける方法について説明します。 サブスクリプションでは、Intune の設定を変更するためのライセンスが提供されます。
-ms.openlocfilehash: bf5b26a6ab8cbd64f9f9ef8235c194c6869c782d
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e7a2909d158a550575c487e65e03e0f004e28a66
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320314"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622430"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 Business Premium の保護機能を Intune の設定に対応付ける方法
 
@@ -101,7 +101,7 @@ To find the Intune setting, sign in with your Microsoft 365 Business Premium adm
   
 |**Windows 10 のデバイス ポリシーの設定**|**Intune の設定**|
 |:-----|:-----|
-|Windows Defender ウイルス対策を使用してウイルスなどの脅威から PC を保護する  |リアルタイム監視を許可する: オン  <br/> クラウド保護を許可する: オン  <br/> ユーザーにサンプルの提出を指示する: 安全なサンプルを自動的に送信する (既定では PII は自動送信されません)  |
+|Microsoft Defender ウイルス対策を使用して PC をウイルスとその他の脅威から保護する  |リアルタイム監視を許可する: オン  <br/> クラウド保護を許可する: オン  <br/> ユーザーにサンプルの提出を指示する: 安全なサンプルを自動的に送信する (既定では PII は自動送信されません)  |
 |Microsoft Edge で Web ベースの脅威から PC を保護する  |[ **Microsoft Edge ブラウザーの設定**] の [ **SmartScreen**] が [ **必須**] に設定されます。  |
 |指定の時間アイドル状態が続いた場合にデバイスの画面をオフにする (分)  |画面がロックされるまでの非アクティブな最長時間 (分)  |
 |ユーザーが Microsoft Storeからアプリをダウンロードすることを許可する  |カスタム URI ポリシー  |

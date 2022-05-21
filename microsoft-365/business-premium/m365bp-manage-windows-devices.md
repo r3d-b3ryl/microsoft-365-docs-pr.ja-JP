@@ -26,18 +26,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 がローカル Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: de50fc8ac5ad3fe5d5f8cd5cfdfd781d94062358
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 2d29e7350be7ddfcdf22f031ea3c2c27439daeac
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319096"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622741"
 ---
-# <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>ドメインに参加している Windows 10 デバイスを Microsoft 365 Business Premium で管理できるようにする
+# <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium による Windows デバイスの管理
 
-組織でオンプレミスの Windows Server Active Directory を使用している場合は、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持しながら、Windows 10 デバイスを保護する Microsoft 365 Business Premium を設定できます。
+組織でオンプレミスの Windows Server Active Directory を使用している場合は、ローカル認証を必要とするオンプレミス リソースへのアクセスを維持しながら、Windows デバイスを保護する Microsoft 365 Business Premium を設定できます。
 
-この保護を設定するのに、**Hybrid Azure AD に参加しているデバイス** を実装できます。 これらのデバイスは、オンプレミスの Active Directory と Azure Active Directory の両方に参加しています。
+これを設定するには、**Hybrid Azure AD 参加済みデバイス** を実装します。 これらのデバイスは、オンプレミスの Active Directory と Azure Active Directory の両方に参加しています。
 
 > [!NOTE]
 > Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
@@ -52,9 +52,30 @@ ms.locfileid: "65319096"
 
 - Azure AD Connect を使用してユーザーを Azure AD に同期します。
 - 組織単位 (OU) 同期 Azure AD Connect 完了します。
-- 同期するすべてのドメイン ユーザーに、Microsoft 365 Business Premium へのライセンスがあることを確認します。
+- 同期するすべてのドメイン ユーザーに、Microsoft 365 Business Premium のライセンスがあることを確認します。
 
 手順については、「[ドメイン ユーザーを Microsoft 365 に同期する](../admin/setup/manage-domain-users.md)」を参照してください。
+
+## <a name="device-actions"></a>デバイス アクション
+  
+![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
+
+デバイスとそれに関連するアクションは、次の状態になります。
+  
+|**状態**|**説明**|
+|:-----|:-----|
+|Intune で管理  |Microsoft 365 Business Premium によって管理されます。  |
+|インベントリからの削除待ち  |Microsoft 365 Business はデバイスから会社データを削除する準備をしています。  |
+|回収を実行中です  |現在、Microsoft 365 Business はデバイスから会社データを削除しています。  |
+|インベントリからの削除失敗  | 会社データの削除アクションが失敗しました。  |
+|破棄がキャンセルされました。  |破棄アクションがキャンセルされました。  |
+|ワイプの保留中  |出荷時のリセットを開始するのを待っています。  |
+|ワイプを実行中です  |出荷時のリセットが発行されました。  |
+|ワイプ失敗  |出荷時の設定へのリセットを実行できませんでした。  |
+|ワイプが取り消されました  |出荷時のワイプがキャンセルされました。  |
+|異常  |アクションは保留中 (または進行中) ですが、デバイスは 30 日以上チェックインしていません。  |
+|削除の保留中  |削除アクションが保留中です。  |
+|検出  |Microsoft 365 Business がデバイスを検出しました。  |
 
 ## <a name="1-verify-mdm-authority-in-intune"></a>1. Intuneで MDM 機関を確認する
 

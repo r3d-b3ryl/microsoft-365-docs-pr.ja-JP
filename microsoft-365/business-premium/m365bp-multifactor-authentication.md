@@ -23,28 +23,26 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: モバイル デバイスの多要素認証を設定します。
-ms.openlocfilehash: 63f5538882496ed67dacdb3428a6dd02696d21e7
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Microsoft Business Premium で電話の多要素認証を設定します。 電話に Microsoft Business Premium の MFA 機能を使用して、セキュリティを強化します。
+ms.openlocfilehash: d92a1a651790626c8d8a8b70f334f907bcde7cdc
+ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320276"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "65622635"
 ---
-# <a name="set-up-multifactor-authentication-with-your-mobile-device"></a>モバイル デバイスで多要素認証を設定する
+# <a name="set-up-mfa"></a>MFA をセットアップする
 
 多要素認証 (MFA) では、パスワードまたはテキストを使用したコードのみを使用する代わりに、電話上の別のアプリを使用してアクセスを確認するため、セキュリティが強化されます。 これにより、ハッキングが困難になります。 MFA が必要な場合、組織のメンバーは Microsoft Authenticator アプリを使用してデバイスに安全にサインインできます。 <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-詳細については、「[Microsoft 365 Business で多要素認証を設定する](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)」を参照してください
+詳細については、「[Microsoft 365 Business Premium で多要素認証を設定する](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)」を参照してください
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>デバイスで Outlook アプリを使用する
 
-管理者が第一線のユーザーに MFA の使用を要求した後、認証アプリは認証の 2 番目の形式として機能します。 Outlook アプリをインストールして使用して、Microsoft 365 メールにアクセスすることをお勧めします。 スマートフォンに Outlook などの Office アプリをインストールする方法については、「[モバイル デバイスのセットアップ](../admin/setup/set-up-mobile-devices.md)」を参照してください。
+管理者が第一線のユーザーに MFA の使用を要求した後、認証アプリは認証の 2 番目の形式として機能します。 Outlook アプリをインストールして使用して、Microsoft 365 メールにアクセスすることをお勧めします。
 
 ## <a name="next-objective"></a>次の目標
 
-「[Office アプリのインストール](m365bp-install-office-apps.md)」のガイダンスに従ってください。
-
- 
+「[Office アプリケーションのインストール](m365bp-install-office-apps.md)」のガイダンスに従ってください。
