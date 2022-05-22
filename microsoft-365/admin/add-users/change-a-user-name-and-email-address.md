@@ -25,13 +25,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。 '
-ms.openlocfilehash: 3c3b83028ba2086cc167895075b9099795d988dc
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+description: Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。
+ms.openlocfilehash: f48cbf3428988ce50b9f8913dd4f6c4e47858b2d
+ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765506"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "65466726"
 ---
 # <a name="change-a-user-name-and-email-address"></a>ユーザー名とメール アドレスを変更する
 
@@ -65,7 +65,7 @@ ms.locfileid: "62765506"
 
 ::: moniker range="o365-21vianet"
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 ::: moniker-end
 
@@ -145,7 +145,7 @@ ms.locfileid: "62765506"
 
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"申し訳ございません。ユーザーを編集できませんでした。ユーザーの情報を確認して、もう一度やり直してください"
 
-" **申し訳ございません。ユーザーを編集できませんでした。情報を確認して、もう一度やり直してください**。 " というエラー メッセージが表示された場合、お客様はグローバル管理者ではなく、ユーザー名を変更するアクセス許可がないことを意味します。 会社の全体管理者に連絡をとり、変更するように依頼してください。
+" **申し訳ございません。ユーザーを編集できませんでした。情報を確認して、もう一度やり直してください。**" というエラー メッセージが表示された場合、お客様はグローバル管理者ではなく、ユーザー名を変更するアクセス許可がないことを意味します。会社のグローバル管理者を探して、変更するように依頼してください。
 
 ## <a name="what-to-do-with-old-email-addresses"></a>古いメール アドレスの使用方法
 
