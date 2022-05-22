@@ -22,18 +22,18 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 10/28/2021
-ms.openlocfilehash: fb6948c59505eaa3316dab73708658f7b31c43e7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/18/2022
+ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
+ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326301"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "65587426"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
 > [!IMPORTANT]
-> 2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。 これらの国のいずれかの既存のお客様である場合、既存の銀行口座で引き続きサブスクリプションの支払いを行い、新しいサブスクリプションを追加できますが、銀行口座が良好な状態である場合に限ります。
+> 2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。 これらの国の 1 つで既存のお客様である場合は、良好な状態にある既存の銀行口座でサブスクリプションの支払いを続けることができます。 ただし、銀行口座に新しいサブスクリプションを追加することはできません。
 
 クレジットカード、デビットカード、または銀行口座を使用して、サブスクリプションの支払いを行うことができます。 場合によっては、小切手または銀行口座振込 (EFT) を使用して、請求書で支払うこともできます。 課金プロファイルがある場合、オプションは少し異なります。 詳細については、「[課金プロファイルを使用してサブスクリプションの支払いをする方法](pay-for-subscription-billing-profile.md)」を参照してください。 アカウントに課金プロファイルがあるかどうかわからない場合は、「[課金プロファイルを理解する](manage-billing-profiles.md)」をご覧ください。
 
