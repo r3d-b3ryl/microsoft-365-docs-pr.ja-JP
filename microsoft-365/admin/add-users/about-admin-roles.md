@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 特定のビジネス機能にマップし、管理センターで特定のタスクを実行するためのアクセス許可を付与するサービス管理者ロールなどの管理者ロールについて説明します。
-ms.openlocfilehash: e56399e5e3e83146df9d1bdad09cf7a6c216c8de
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467122"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636242"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの管理者ロールについて
 
@@ -98,7 +98,7 @@ Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft パートナーの代理管理
 
-Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。同様にパートナーは、お客様の会社 (またはパートナー会社) のユーザーに管理者ロールを割り当てることができます。たとえば、彼らがあなたのためにオンライン組織をセットアップして管理している場合、彼らにして欲しいのはこれかもしれません。
+Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。同様にパートナーは、ご自分の会社またはパートナー会社のユーザーに管理者ロールを割り当てることができます。たとえば、パートナーがあなたのためにオンライン組織を設定して管理している場合に行えます。
   
 パートナーは、次の役割を割り当てることができます。
   

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 新しい割り当て機能について説明します。
 ms.date: 05/12/2022
-ms.openlocfilehash: c251d653aa95fa489a2482ae0c9ef80c9851fc4b
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403318"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636088"
 ---
 # <a name="allotment-basics"></a>割り当ての基本
 
@@ -52,6 +52,6 @@ ms.locfileid: "65403318"
 
 割り当ての作業を開始するには、グローバル管理者またはライセンス管理者である必要があります。
 
-## <a name="getting-started"></a>はじめに
+## <a name="getting-started"></a>作業を開始する
 
 割り当て機能は、少数の顧客のみがプライベート プレビューで使用できます。 参加に関心がある場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

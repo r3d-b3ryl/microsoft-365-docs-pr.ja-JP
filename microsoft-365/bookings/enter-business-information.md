@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
 description: 以下の手順に従って、会社名、住所、電話番号、Web サイトの URL、ロゴ、営業時間をMicrosoft Bookingsで作成します。
-ms.openlocfilehash: 5b80de4d94010a7e13b58289d6f63da13384d57d
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 1c1b50215b1e81c0bb3af936ba00e1beefa7965c
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622529"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637761"
 ---
 # <a name="enter-your-business-information-in-microsoft-bookings"></a>Microsoft Bookingsにビジネス情報を入力する
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 Microsoft Bookingsでは、Web アプリ内の [ビジネス情報] ページには、通常、ビジネスの "About Us" ページで見つかるすべての詳細が含まれています。 これらの詳細には、関連する名前、住所、電話番号、Web サイトの URL、プライバシー ポリシーの URL、ロゴ、営業時間が含まれます。
 

@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: Bookings アクティビティの 4 か月ビューを表示する方法について説明します
-ms.openlocfilehash: 8f6ddcdc7320013698b1ba9f0ad2f5b1cd1e2e22
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: c39515852d0a45adfb3faeb5efaf510ee2c27236
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023725"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637210"
 ---
 # <a name="reporting-info-for-bookings"></a>Bookingsのレポート情報
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 これで、Bookings予定表の 4 か月間のビューを TSV ファイルに表示できるようになりました。 TSV ファイルには 4 か月間のデータが表示されますが、1 年間に異なる 4 か月間を選択できます。
 
@@ -49,7 +46,7 @@ ms.locfileid: "65023725"
 - **顧客電話**
 - **顧客の住所**
 - **スタッフ**
-- **サービス**
+- **Service**
 - **Location**
 - **期間 (分)**
 - **イベントの種類**
@@ -61,6 +58,7 @@ ms.locfileid: "65023725"
 - **通貨**   ビジネス用に設定された通貨の種類。
 - **Cc 出席者**   予約の電子メール通知を受信する受信者。 これは、予約の作成時にTeams アプリから指定できます。
 - **サインアップした出席者数**   グループ予約サービスを予約した顧客の数。
-- **テキスト通知が有効になっている**   顧客が SMS テキスト関連の通知を受け取ることができるかどうか。
+- **テキスト通知が有効になっている**  顧客がテキスト関連の通知携帯ショートメール受け取ることができるかどうか。
 - **ユーザー設定フィールド**   このフィールドには、1 つの予約に関連するすべての質問と回答が結合されます。
 - **予約 ID**   これは、グループ サービスの同じ予約を識別するのに役立ちます。
+- **データの追跡**   マーケティング キャンペーンで使用しているキャンペーン ID のメトリックを追跡します。

@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: 6b00c45b95436e2425aedadd57a178fcb01ab50e
-ms.sourcegitcommit: caedcf7f16eed23596487d97c375d4bc4c8f3566
+ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "65000996"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637188"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>データ損失防止ポリシーで名前付きエンティティを使用する
 
@@ -49,6 +49,7 @@ ms.locfileid: "65000996"
 - Teams チャットおよびチャネル メッセージ
 - デバイス (Windows 10、11 個のエンドポイント デバイス)
 - Exchange メールボックス
+- Microsoft Defender for Cloud Apps
 
 名前付きエンティティの SIT と強化されたポリシーは、次ではサポートされていません。
 
@@ -73,9 +74,9 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 
 |ワークロード/サービス  |名前付きエンティティのサポート  |
 |---------|---------|
-|Office Win32 クライアント ポリシー ヒント    |サポート対象外  |
+|Office Win32 クライアント ポリシー ヒント    |非サポート  |
 |Office WAC クライアント ポリシー ヒント    |サポート         |
-|OWA ポリシーのヒント     |サポート対象外         |
+|OWA ポリシーのヒント     |非サポート         |
 |Outlook ポリシーヒント     |サポート対象外 |
 |エンドポイント (Windows 10、11 台のデバイス)     |サポート  |
 |Exchange トランスポート ルール     |サポート |
@@ -83,7 +84,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 |SharePoint Online data-at-rest     |サポート         |
 |保存データをTeamsする     |サポート         |
 |電子メール メッセージの保存時データ     |プライバシー サービス プランを使用するテナントでサポートされている         |
-<!--|Microsoft Defender for Cloud Apps     |サポートされる         |-->
+|Microsoft Defender for Cloud Apps     |サポート         |
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
@@ -97,7 +98,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 |Exchangeトランスポート     |サポート |
 |保存データをOneDrive for Businessする     |サポート |
 |SharePoint Online data-at-rest|サポート|
-|Azure Information Protection (AIP) スキャナー|サポートなし|
+|Azure Information Protection (AIP) スキャナー|サポート対象外|
 
 ## <a name="known-issues"></a>既知の問題
 

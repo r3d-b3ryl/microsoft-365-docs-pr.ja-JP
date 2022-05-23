@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 271f43e4-b8f7-4d63-8059-b5747679bb7e
 description: Microsoft Bookingsで予定の前後にバッファー時間を設定し、機器のクリーンアップまたはリセットに時間を確保します。
-ms.openlocfilehash: 0a27cc287ed7999f1ba1cc1b017c2f54e126c0b9
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 49e58d53cec466c824a40281e3199f1544e74744
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022385"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637585"
 ---
 # <a name="set-buffer-time-in-microsoft-bookings"></a>Microsoft Bookings でバッファー時間を設定する
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 一部の予定では、お客様と会う前または後に、部屋と機器のセットアップ、クリーンアップ、またはリセットに時間が必要になる場合があります。 または、顧客の予定間を移動している場合は、顧客を待たなくても、自分とチームが予定間を移動できるようにするための時間が必要になる場合があります。
 

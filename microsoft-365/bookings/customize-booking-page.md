@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 116d7a84-a7a0-4911-a1e9-debb2cca7c43
 description: Microsoft Bookings アプリで、予約ページの色のテーマを変更します。
-ms.openlocfilehash: bd6c3fc601800cdfca93e9e1a6adc494df1bd67e
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: 1c00f87f3447b7002bf647086ee60c756662803d
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747172"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637805"
 ---
 # <a name="customize-and-publish-your-booking-page"></a>予約ページをカスタマイズして公開する
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 Booking Page では、外部向け予約ページの外観を設定します。 予約ページをカスタマイズして発行すると、ユーザーは予約ページを使用して予約を行います。
 

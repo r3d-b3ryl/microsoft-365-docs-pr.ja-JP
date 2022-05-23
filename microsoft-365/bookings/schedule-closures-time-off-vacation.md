@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: e3c0a4ee-e3d8-4fbe-bd8f-16d1c712d1f4
 description: オフィスの休業日や従業員の休暇のスケジュールは、Bookings の予定表から設定でき、その従業員は指定した時間帯は予約できなくなります。
-ms.openlocfilehash: 32f1d930daf44d000a1dbf03eded3f05fbb976eb
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52b2b8ea912cb876dd2d6e8b8efcdcc3bb90ce1f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468396"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637453"
 ---
 # <a name="schedule-bookings-business-closures-time-off-and-vacation-time"></a>営業Bookings終了、休暇、休暇のスケジュールを設定する
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 場合によっては、休日やチーム イベントのためにビジネスを閉じたい場合や、従業員が病気、休暇中、または他の理由で利用できない場合に休暇が必要になる場合があります。 Microsoft Bookingsカレンダーから休暇をスケジュールすることができ、指定した時間に従業員は予約に使用できなくなります。 営業を再開したときや、従業員が仕事に戻ったときは、設定されている稼働時間に従って従業員が予約ページに表示されます。
 

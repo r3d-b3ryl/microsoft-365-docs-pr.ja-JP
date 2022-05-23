@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティはMicrosoft 365プランの一部ですが、Microsoft Intuneは特定のMicrosoft 365プランに含まれるスタンドアロン製品です。
-ms.openlocfilehash: 1d04beea6ece35d5d28bdd961041b30c1f8f2793
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01d2717aa0368e3d1dc5ed17f3adfd6313880dfe
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435769"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636110"
 ---
 # <a name="choose-between-basic-mobility-and-security-or-intune"></a>基本的なモビリティとセキュリティまたはIntuneを選択する
 
@@ -51,7 +51,7 @@ Basic Mobility と Security とIntuneの両方が、次の表に示すさまざ�
 |Microsoft 365 Education A5 |はい|はい|
 |Microsoft Intune |不要|はい|
 |Enterprise モビリティ & セキュリティ E3 |不要|はい|
-|Enterprise Mobility & Security E5 |不要|はい|
+|Enterprise Mobility & Security E5 |いいえ|はい|
 
 > [!NOTE]
 > Microsoft Intuneを既に使用している場合は、Basic Mobility and Security の使用を開始できません。
@@ -72,11 +72,11 @@ Microsoft Intuneと組み込みの Basic Mobility と Security はどちらも�
 |デバイスコンプライアンスに基づく条件付きアクセス |準拠していないデバイスがクラウドから企業の電子メールとデータにアクセスできないようにします。 |Windows 10ではサポートされていません。<br/>Exchange Online、SharePoint Online、Outlookへのアクセスの制御に限定されます。 |はい |
 |デバイス構成  |デバイス設定の構成 (カメラの無効化など)|設定の制限付きセット。|はい|
 |電子メール プロファイル  |デバイスにネイティブ電子メール プロファイルをプロビジョニングします。 |はい|はい|
-|WiFi プロファイル |デバイスにネイティブ WiFi プロファイルをプロビジョニングします。 |不要|はい|
-|VPN プロファイル |デバイスにネイティブ VPN プロファイルをプロビジョニングします。 |不要|はい|
+|WiFi プロファイル |デバイスにネイティブ WiFi プロファイルをプロビジョニングします。 |いいえ|はい|
+|VPN プロファイル |デバイスにネイティブ VPN プロファイルをプロビジョニングします。 |いいえ|はい|
 |モバイル アプリケーション管理  |社内基幹業務アプリとアプリ ストアからユーザーにデプロイします。 |不要|はい|
 |モバイル アプリケーション保護  |ユーザーが知っているOfficeモバイル アプリと基幹業務アプリを使用して企業情報に安全にアクセスできるようにします。一方、コピー、切り取り、貼り付け、保存などのアクションを企業データに対して承認されたアプリのみに制限することで、データのセキュリティを確保します。 デバイスが Basic Mobility and Security に登録されていない場合でも機能します。 MAM ポリシーを使用したアプリ データの保護に関する説明を参照してください。 |不要|はい|
-|管理対象ブラウザー  |Edge アプリを使用して、より安全な Web 閲覧を有効にします。 |不要|はい|
+|管理対象ブラウザー  |Edge アプリを使用して、より安全な Web 閲覧を有効にします。 |いいえ|はい|
 |ゼロ タッチ登録プログラム (AutoPilot) |多数の企業所有のデバイスを登録し、ユーザーのセットアップを簡略化します。 |不要|はい|
 
 上の表に示す機能に加えて、Basic Mobility and Security とIntuneには、インターネット経由でデバイスにコマンドを送信する一連のリモート アクションが含まれています。 たとえば、個人データを配置したまま従業員のデバイスからOfficeデータを削除 (退職) したり、従業員のデバイスからOfficeアプリを削除したり (ワイプ)、デバイスを出荷時の設定にリセットしたり (完全ワイプ) できます。

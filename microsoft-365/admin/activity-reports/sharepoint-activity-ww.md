@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint アクティビティ使用状況レポートを入手して、ライセンスを持つユーザー ファイルの操作SharePoint、共有されたファイルの数、ストレージ使用率について説明します。
-ms.openlocfilehash: ecd44aad4e2bc1236ade623ad2723945e6422e7b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 52aaaf3d9eef59c582977ee7b7c04ded44233c59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467232"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636506"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---sharepoint-activity"></a>管理センターでレポートをMicrosoft 365する - SharePoint アクティビティ
 
@@ -33,7 +33,7 @@ Microsoft 365管理者として、レポート ダッシュボードには、組
   
 たとえば、ファイルの操作を調べることで、SharePoint を使用するライセンスを持つすべてのユーザーのアクティビティを把握できます。また、共有されているファイルの数を調べると、行われているコラボレーションのレベルを把握できます。
   
-## <a name="how-do-i-get-to-the-to-the-sharepoint-activity-report"></a>SharePoint アクティビティ レポートにアクセスする方法
+## <a name="how-do-i-get-to-the-sharepoint-activity-report"></a>SharePoint アクティビティ レポートにアクセス操作方法?
 
 1. 管理センターで、[**レポート**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">使用状況</a>] ページの順に移動します。 
 2. ダッシュボードのホームページで、SharePoint カードの **[その他の表示**] ボタンをクリックします。
@@ -44,7 +44,7 @@ Microsoft 365管理者として、レポート ダッシュボードには、組
 
 [ **列の選択] を選択** して、レポートに列を追加または削除します。  <br/> ![アクティビティ レポートSharePoint - 列を選択します。](../../media/3c396cd1-9701-4712-8eaa-eb7bba702aa8.png)
 
-また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 2,000 人を超えるユーザーがいる場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
 
 **SharePointアクティビティ** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択した場合、テーブルには現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   

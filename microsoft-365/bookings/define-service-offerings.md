@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: サービス名、説明、場所、期間、価格など、サービスオファリング情報を入力する手順。 また、サービスを提供する資格がある従業員にタグを付けることもできます。
-ms.openlocfilehash: 818d0d84e78907047df41e30f0ded62fc16c6ce4
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0c302e8d84274fa2df8eea27362407ded4a468e3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023769"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637783"
 ---
 # <a name="define-your-service-offerings-in-bookings"></a>Bookingsでサービス オファリングを定義する
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 Microsoft Bookingsでサービスオファリングを定義する場合は、サービス名、説明、場所 (会議を行うかオンライン会議を行うかを選択)、期間、顧客とスタッフへの既定のリマインダー、サービスに関する内部メモ、価格を設定します。 また、サービスを提供する資格がある従業員にタグを付けることもできます。 その後、顧客がビジネス Web サイトに来て予定を予約すると、利用可能な予定の種類を正確に確認し、サービスを提供するユーザーを選択し、サービスのコストを選択できます。
 
@@ -51,7 +48,7 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
        > Teams会議は、Teams モバイル アプリ、Teams デスクトップ アプリ、Web ブラウザー、または電話ダイヤルインを使用して参加できます。 Teamsをテナントの既定のオンライン会議サービスとして有効にすることを強くお勧めします。最適なエクスペリエンスで仮想予定を予約できます。
 
    - 無効：
-     - 予定には会議オプションが含まれていないので、オンライン会議の追加が有効になっているときに表示されるすべての **会議** 関連フィールドは表示されません。
+     - 予定には会議オプションは含まれません。**[オンライン** 会議の追加] が有効になっているときに表示されるすべての会議関連フィールドは表示されません。
 
    **期間**: これは、すべての会議が予約される期間です。 開始時刻から始まる時間がブロックされます。これは、予約中に選択されます。 スタッフの予定表では、完全な予定時間がブロックされます。
 
@@ -105,13 +102,13 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
 
    :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings電子メールの追加情報。":::
 
-9. **顧客のテキスト メッセージ通知を有効にする** 選択した場合、SMS メッセージは顧客に送信されますが、オプトインした場合にのみ送信されます。
+9. **顧客のテキスト メッセージ通知を有効にする** 選択した場合、携帯ショートメールメッセージは顧客に送信されますが、オプトインした場合にのみ送信されます。
 
    - 手動予約とSelf-Service ページの [オプトイン] ボックス:
 
      :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookingsのオプトイン ボックス。":::
 
-   - テキスト メッセージ通知は次のようになります (SMS 通知は現在、北米でのみ使用できます)。
+   - テキスト メッセージ通知は次のようになります (携帯ショートメール通知は現在、北米でのみ使用できます)。
 
      :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Bookingsからのテキスト通知。":::
 

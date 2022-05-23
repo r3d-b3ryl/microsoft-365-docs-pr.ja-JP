@@ -1,5 +1,5 @@
 ---
-title: サインアップする方法 - 管理者ヘルプ
+title: サインアップする方法 - 管理 ヘルプ
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -29,20 +29,20 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Office 365のサインアップ プロセスを実行する前に、Office プログラムの最新バージョンについて知っておくべきことを理解してください。
 ms.date: 03/17/2021
-ms.openlocfilehash: 015f99a2f0b6f9fcd17592e399bccf044313f993
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 185931ba308ae547355cb21a2935bb6f9097c8b7
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436121"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636220"
 ---
-# <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理者ヘルプ
+# <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理 ヘルプ
 
 チームが最新バージョンの Word、Excel、PowerPoint、その他のOffice プログラムの使用を開始できるように、ビジネス向けのMicrosoft 365にサインアップします。
 
 ::: moniker range="o365-21vianet"
 
-中国にいる場合、21Vianet によって運用されているOffice 365は、中国の安全で信頼性が高く、スケーラブルなクラウド サービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft はサービス自体を運用しません。 21Vianet により、サービスの運用、提供、および配信の管理が行われます。 21Vianet は、ホスティング、マネージド ネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データ センター サービス プロバイダーです。 Microsoft テクノロジのライセンスを取得することで、21Vianet はローカルの Microsoft データセンターを運用し、中国内でデータを保持しながらMicrosoft サービスを使用する機能を提供します。 21Vianet では、サブスクリプションサービスと課金サービス、およびサポートも提供されます。
+中国にいる場合、21Vianet によって運用されているOffice 365は、中国の安全で信頼性が高く、スケーラブルなクラウド サービスのニーズを満たすように設計されています。 このサービスには、Microsoft が 21Vianet に対してライセンスを与えたテクノロジが搭載されています。 Microsoft がサービス自体を運用しているわけではありません。 21Vianet により、サービスの運用、提供、および配信の管理が行われます。 21Vianet は、ホスティング、マネージド ネットワーク サービス、クラウド コンピューティング インフラストラクチャ サービスを提供する、中国最大のキャリアニュートラルなインターネット データ センター サービス プロバイダーです。 Microsoft テクノロジのライセンスを取得することで、21Vianet はローカルの Microsoft データセンターを運用し、中国内でデータを保持しながらMicrosoft サービスを使用する機能を提供します。 21Vianet では、サブスクリプションサービスと課金サービス、およびサポートも提供されます。
   
 > [!NOTE]
 > これらのサービスは中国の法律に従います。

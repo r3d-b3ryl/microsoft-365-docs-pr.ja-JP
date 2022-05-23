@@ -9,19 +9,16 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 47403d64-a067-4754-9ae9-00157244c27d
 description: web ベースの予約カレンダーを含み、Outlookと統合してスタッフの予定表を最適化し、顧客が予定を予約する柔軟性を提供するMicrosoft Bookings アプリの概要。
-ms.openlocfilehash: 6cb20104e9fa51023b6a828cfd70291cd0797037
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 02ae9cc4e9b101025a424acaff3a82de7afeef59
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64822674"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637607"
 ---
 # <a name="microsoft-bookings"></a>Microsoft Bookings
 
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
-
-Microsoft Bookingsにより、予定のスケジュール設定と管理が簡単になります。 Bookingsには、Web ベースの予約カレンダーが含まれており、Outlookと統合してスタッフの予定表を最適化し、お客様に最適な時間を柔軟に予約できます。 電子メールと SMS テキスト通知は、ノーショーを減らし、顧客満足度を向上させます。 組織は、繰り返しスケジュールタスクを減らすことで時間を節約します。 組み込みの柔軟性とカスタマイズ機能により、組織のさまざまな部分の状況とニーズに合わせてBookingsを設計できます。
+Microsoft Bookingsにより、予定のスケジュール設定と管理が簡単になります。 Bookingsには、Web ベースの予約カレンダーが含まれており、Outlookと統合してスタッフの予定表を最適化し、お客様に最適な時間を柔軟に予約できます。 電子メールと携帯ショートメールテキスト通知は、ノーショーを減らし、顧客満足度を向上させます。 組織は、繰り返しスケジュールタスクを減らすことで時間を節約します。 組み込みの柔軟性とカスタマイズ機能により、組織のさまざまな部分の状況とニーズに合わせてBookingsを設計できます。
 
 > [!NOTE]
 > Bookings予定表は、Exchange Online内のメールボックスです。
@@ -36,7 +33,7 @@ Bookings には、主に 3 つのコンポーネントがあります。
 
 - 会社用モバイル アプリを使用して、Bookings カレンダーの所有者や管理者は全予約の閲覧、顧客リストと連絡先情報へのアクセス、外出先での手動予約を行うことができます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft Bookingsは、次のサブスクリプションで使用できます。
 

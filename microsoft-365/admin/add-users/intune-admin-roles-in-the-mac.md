@@ -17,12 +17,12 @@ ms.custom:
 - AdminTemplateSet
 - admindeeplinkMAC
 description: Microsoft 365 管理センターを使用すると、一部の Microsoft Intune ロールを管理できます。このロールはビジネス機能にマップされ、特定のタスクを実行するためのアクセス許可を付与します。
-ms.openlocfilehash: efff2d426d40103369126c082fcb8d7be44e031c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 61c73ea49b132dee12839112bdc08624a750989f
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436759"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636264"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 
@@ -47,11 +47,11 @@ Microsoft 365 管理センターで、[**役割**] に移動し、任意の役�
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Microsoft パートナーの代理管理
 
-Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。同様にパートナーは、お客様の会社 (またはパートナー会社) のユーザーに管理者ロールを割り当てることができます。たとえば、パートナーがあなたのためにオンライン組織を設定して管理している場合に行えます。
+Microsoft パートナーと連携している場合、パートナーに管理者ロールを割り当てることができます。同様にパートナーは、ご自分の会社 (またはパートナー会社) のユーザーに管理者ロールを割り当てることができます。たとえば、パートナーがあなたのためにオンライン組織を設定して管理している場合に行えます。
   
 パートナーは、次の役割を割り当てることができます。
   
-- パートナー センターを介した多要素認証の管理を除いた、グローバル管理者と同等の特権を持つ完全な管理。
+- パートナー センターを介した多要素認証の管理を除いた、グローバル管理者と同等の特権を持つフル管理。
 
 - ヘルプデスク管理者と同等の特権を持つ制限付き管理。
 

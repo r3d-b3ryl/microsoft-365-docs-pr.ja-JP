@@ -19,15 +19,15 @@ search.appverid:
 ms.assetid: d3adf0cf-d581-4452-a5b3-6e0d16a34daa
 ROBOTS: NOINDEX
 description: ロシアの Microsoft Cloud Solutions プロバイダーの一覧を取得します。
-ms.openlocfilehash: 0765efaaa8ab5f786cafe62e28ee534fbe617ffb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d17aacf9c1dcaeae515f763adc6946f8a7cf9ff6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60192669"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637320"
 ---
 # <a name="microsoft-cloud-solution-provider-partners-in-russia"></a>ロシアのマイクロソフト クラウド ソリューション プロバイダー パートナー
-[]ロシアのマイクロソフト クラウド ソリューション プロバイダーの一覧を示します。
+ロシアの Microsoft Cloud Solution Providers の一覧を次に示します。
   
 - [Mont](https://www.mont.com/ru-ru/)
     

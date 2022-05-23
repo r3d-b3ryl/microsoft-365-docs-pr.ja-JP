@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: fd6b7587-5055-4bcd-83a4-13bd4929bfff
 description: オンラインで予定を予約するときに顧客に質問する必要がある場合は、予約ページにカスタムの質問と必要な質問を追加できます。
-ms.openlocfilehash: 9830dfaa9ac1964e74eb16321d061e096aad1bab
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.openlocfilehash: d42f883f3d58882ec5a2e8e8e2bbe7baf7ed3232
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64714617"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637695"
 ---
 # <a name="add-custom-and-required-questions-to-the-booking-page"></a>予約ページにカスタムおよび必須の質問を追加する
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 Bookingsでは、顧客が予定を予約するときに顧客に質問する質問を作成できます。 また、必要な質問を選択することもできます。
 

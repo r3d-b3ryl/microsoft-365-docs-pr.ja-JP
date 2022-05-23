@@ -19,16 +19,16 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を設定して使用することで、Microsoft 365組織に接続されているモバイル デバイスを管理し、セキュリティで保護します。
-ms.openlocfilehash: ca2f5f18dc67517fd9af3bf4f1d1a05e17010c35
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435703"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636132"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365の基本的なモビリティとセキュリティの概要
 
-モバイル デバイスがMicrosoft 365組織に接続されている場合は、Basic Mobility and Security を使用して管理し、セキュリティで保護できます。 スマートフォンやタブレットなどのモバイル デバイスを使用して仕事の電子メール、予定表、連絡先、ドキュメントにアクセスすることは、社員が自分たちの仕事をいつでも、どこからでも確実に行ううえで大きな役割を果たします。 そのため、ユーザーがデバイスを使用するときに組織の情報を保護することが重要です。 Basic Mobility と Security を使用して、デバイスのセキュリティ ポリシーとアクセス規則を設定し、モバイル デバイスが紛失または盗難にあった場合はワイプすることができます。
+モバイル デバイスがMicrosoft 365組織に接続されている場合は、Basic Mobility and Security を使用して管理し、セキュリティで保護できます。 職場のメール、予定表、連絡先、ドキュメントにアクセスするために使用されるスマートフォンやタブレットなどのモバイル デバイスは、従業員がどこからでもいつでも仕事を終わらせる上で重要な役割を果たします。 そのため、ユーザーがデバイスを使用するときに組織の情報を保護することが重要です。 Basic Mobility と Security を使用して、デバイスのセキュリティ ポリシーとアクセス規則を設定し、モバイル デバイスが紛失または盗難にあった場合はワイプすることができます。
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="基本的なモビリティとセキュリティのセットアップ。":::
 

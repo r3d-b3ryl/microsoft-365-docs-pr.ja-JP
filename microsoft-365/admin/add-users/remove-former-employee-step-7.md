@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員のすべてのユーザー データを保存してアクセスしたら、Microsoft 365 管理センターで元従業員のアカウントを削除できます。
-ms.openlocfilehash: d6e53dd8d14add9383e3eff9d3c1d90a5087ec45
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5a1929ef1a5ff26ee0e84993f0a7cabb5ebc4617
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436275"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636176"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>手順 7 - 元従業員のユーザー アカウントを削除する
 
@@ -39,11 +39,11 @@ ms.locfileid: "65436275"
 > [!IMPORTANT]
 > メールの転送を設定した場合や、アカウントを共有メールボックスに変換した場合、アカウントを削除しないでください。いずれの場合も、メール転送および共有メールボックスを固定するには、アカウントが必要です。
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 2. 削除する従業員の名前を選択します。
 3. ユーザーの名前の下で、[ **ユーザーの削除**] を選択します。 このユーザーに必要なオプションを選択し、[ユーザーの **削除**] を選択します。 このユーザーの電子メールとOneDriveに対する別のユーザー アクセス権を既に付与している場合は、ここでもう一度行う必要はありません。
 
-ユーザーを削除するとき、約 30 日間アカウントが無効になります。30 日後に永久に削除されるまではアカウントを復元できます。
+ユーザーを削除するとき、約 30 日間アカウントが無効になります。 アカウントを完全に削除する前に、それまでアカウントを復元する必要があります。
 
 ## <a name="watch-delete-a-former-employees-user-account"></a>ウォッチ: 元従業員のユーザー アカウントを削除する
 
@@ -70,8 +70,8 @@ Azure Active Directoryを使用している場合は、[Remove-MsolUser](/powers
 |可能な操作|方法|
 |:-----|:-----|
 |セッション (Outlook on the web、Outlook、Exchange Active Sync など) を終了し、新しいセッションを強制的に開く|パスワードを再設定する|
-|(すべてのプロトコルの) セッションを終了し、今後のセッションに対するアクセスをブロックする|アカウントを無効にする。 たとえば、(Exchange管理センターまたは PowerShell を使用)。 <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
-|特定のプロトコル (ActiveSync など) のセッションを終了する|プロトコルを無効にする。 たとえば、(Exchange管理センターまたは PowerShell を使用)。 <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
+|(すべてのプロトコルの) セッションを終了し、今後のセッションに対するアクセスをブロックする|アカウントを無効にする。 たとえば、Exchange管理センターで、または PowerShell を使用するとします。 <p>  `Set-Mailbox user@contoso.com -AccountDisabled:$true`|
+|特定のプロトコル (ActiveSync など) のセッションを終了する|プロトコルを無効にする。 たとえば、Exchange管理センターで、または PowerShell を使用するとします。 <p>  `Set-CASMailbox user@contoso.com -ActiveSyncEnabled:$false`|
 |
 
 上記の操作は、次の 3 つの場所で実行できます。

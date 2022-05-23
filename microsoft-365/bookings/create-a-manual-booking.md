@@ -9,17 +9,14 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
 description: 次の手順に従って予定を作成し、Microsoft Bookings アプリを使用して従業員を割り当てます。
-ms.openlocfilehash: 488b390c6446693ffa6bf63dce9c84920a629f0b
-ms.sourcegitcommit: 4d6a8e9d69a421d6c293b2485a8aa5e806b71616
+ms.openlocfilehash: 8b7c54a9d8f06ba2f5618ad77049b87a2c212edb
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65182675"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637827"
 ---
 # <a name="create-a-manual-booking"></a>予約を作成する
-
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
 
 予約のスケジュールとスタッフの割り当てには 2 つの方法があります。 最初の方法は、顧客がスタンドアロンの予約ページまたは Web サイトに追加する埋め込み予約ページを使用することです。 もう 1 つは、顧客から予約の電話がかかってきた場合のように管理者または従業員が予約を手動で入力する方法です。 この記事は手動のシナリオについて説明します。
 

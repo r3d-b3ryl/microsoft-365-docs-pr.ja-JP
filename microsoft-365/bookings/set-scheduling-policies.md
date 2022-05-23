@@ -9,21 +9,18 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4b2c84ec-64d3-4027-af4c-40f69e7b37c9
 description: ビジネスのスケジュール ポリシーを設定する方法について説明します。 スケジュール ポリシーには、予定の長さだけでなく、許容される潜在顧客とキャンセル時間も含まれます。
-ms.openlocfilehash: f4b19af8bd0c9a91ea7fea3fd7b2a8feb4285dcd
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 39d6ab31d7bfda8f2686ed232402c1b98e6a56db
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468374"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637541"
 ---
 # <a name="set-your-microsoft-bookings-scheduling-policies"></a>Microsoft Bookingsスケジュール ポリシーを設定する
 
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
-
 すべての予定が同じとは限りません。 わずか数分で終わる予定や、数時間かかる予定があります。 Microsoft Bookingsでは、予約ページでビジネスのスケジュール ポリシーを設定します。 スケジュール ポリシーには、予定の長さ、リードタイムと取り消し時間の上限、予約変更の自動通知が含まれます。 [サービス] ページ内の各サービスに対して、そのサービスにのみ適用される期間の設定とポリシーを追加して、追加のカスタマイズを追加できます。
 
-ここで設定したポリシーは、最上位レベルのポリシーになります。 このポリシーは、サービスごとに変更しない限り、提供するすべてのサービスに自動的に適用されます。 たとえば、最初のコンサルテーションなど、ほとんどのサービスでは、キャンセルに対する 1 日の通知が受け入れられるとします。 ただし、ゴルフ レッスンなど、施設の予約や手数料が必要なサービスの場合、3 日前までの通知を必須にすることもあります。 このサービスレベルのポリシーは、[サービス] ページで設定できます。 手順については、「[サービスの提供内容を定義する](define-service-offerings.md)」を参照してください。
+ここで設定したポリシーは、最上位レベルのポリシーになります。 サービスごとに変更を選択しない限り、提供するすべてのサービスに自動的に適用されます。 たとえば、最初のコンサルテーションなど、ほとんどのサービスでは、キャンセルに対する 1 日の通知が受け入れられるとします。 ただし、ゴルフ レッスンなど、施設の予約や手数料が必要なサービスの場合、3 日前までの通知を必須にすることもあります。 このサービスレベルのポリシーは、[サービス] ページで設定できます。 手順については、「[サービスの提供内容を定義する](define-service-offerings.md)」を参照してください。
 
 ## <a name="types-of-scheduling-policies"></a>スケジュール ポリシーの種類
 

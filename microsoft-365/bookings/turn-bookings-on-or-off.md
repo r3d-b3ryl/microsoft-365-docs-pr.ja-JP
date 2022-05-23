@@ -10,21 +10,16 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft 365でMicrosoft Bookingsにアクセスする方法について説明します。
-ms.openlocfilehash: e088250a24078d735b6751ff8cbcc55e2fdceaaa
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217466"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637298"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings を有効または無効にする
 
-> [!NOTE]
-> この記事は、最新バージョンのMicrosoft Bookingsを操作するのに役立ちます。 以前のバージョンは、今後数か月で廃止される予定です。
-
-この記事は管理者向けです。 
-
-Bookingsは、組織全体または特定のユーザーに対してオンまたはオフにできます。 ユーザーのBookingsを有効にすると、ユーザーはBookings ページを作成したり、予定表を作成したり、他のユーザーが時間を予約したりできます。
+Bookingsは、組織全体または特定のユーザーに対してオンまたはオフにできます。 ユーザーのBookingsを有効にすると、ユーザーはBookings ページを作成したり、予定表を作成したり、他のユーザーが時間を予約したりできます。 この記事は、組織のBookingsを管理する所有者と管理者を対象としています。
 
 > [!NOTE]
 > これらのセクションで説明する管理者コントロールは、Office 365 21Vianet (中国) のお客様が操作することはできません。

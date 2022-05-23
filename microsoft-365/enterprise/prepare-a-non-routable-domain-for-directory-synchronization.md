@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: e7968303-c234-46c4-b8b0-b5c93c6d57a7
 description: オンプレミスのユーザー アカウントに非ルーティング ドメインが関連付けられている場合、Microsoft 365 テナントとの同期前に実行する手順について説明します。
-ms.openlocfilehash: 7c0fd93f327305477908fba0cfb495fa73205ebe
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9d720b42b345e85031a4fa34b9c1353f868765f1
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096372"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637893"
 ---
 # <a name="prepare-a-non-routable-domain-for-directory-synchronization"></a>ディレクトリ同期のために非ルーティング ドメインの準備を整える
 
@@ -51,7 +51,7 @@ Microsoft 365 で確認したドメイン (複数の場合あり) と一致す�
   
 確認済みドメインを使用するように UPN を更新したら、オンプレミスの AD DS をMicrosoft 365と同期する準備が整います。
   
-#### <a name="step-1-add-the-new-upn-suffix"></a>手順 1: 新しい UPN サフィックスを追加する**
+#### <a name="step-1-add-the-new-upn-suffix"></a>手順 1: 新しい UPN サフィックスを追加する
   
 1. AD DS ドメイン コントローラーのサーバー マネージャーで、**[ツール]** \> **[Active Directory ドメインと信頼関係]** の順に選びます。
     

@@ -14,12 +14,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Contoso オンプレミス IT インフラストラクチャの基本構造と、大企業向け Microsoft 365 が企業のビジネス ニーズをどのように満たすかを理解します。
-ms.openlocfilehash: 5dc47898aa0499bc4b62d22d37689d872116a9e7
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 793c867d47d76a03efad707d8447e04538c8ebb8
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101361"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637497"
 ---
 # <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso の IT インフラストラクチャおよびビジネス ニーズ
 
@@ -93,7 +93,7 @@ Contoso 社のビジネス ニーズは、次の 5 つの主なカテゴリに�
 
   よくアクセスされているリソースをクラウドに移動することで、保守作業とサポートのコストを削減し、リモート アクセス ソリューションのパフォーマンスを向上させます。
 
-- 企業間 (B2B) のトランザクションにおける接続性を向上し、オーバーヘッドを削減する
+- 企業間 (B2B) トランザクションに対して、接続の向上とオーバーヘッドの削減を実現する
 
   老朽化が進み、維持にコストがかかるパートナー エクストラネットを、フェデレーション認証を使用するクラウドベースのソリューションに切り替えます。
 

@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 03cdc163c1f560462fa12f18d4e6101665d766de
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64788152"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637915"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -70,9 +70,6 @@ Windows バージョン間の攻撃面の縮小機能
 - **ブロック**: ASR 規則を有効にする
 - **監査**: 有効にした場合に ASR ルールが組織にどのような影響を与えるかを評価する
 - **警告**: ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできるようにする
-
-> [!IMPORTANT]
-> 現在、Microsoft エンドポイント マネージャー (MEM) で ASR 規則を構成する場合、警告モードは 3 つの ASR ルールではサポートされていません。 詳細については、「 [警告モードがサポートされていないケース](attack-surface-reduction.md#cases-where-warn-mode-is-not-supported)」を参照してください。
 
 Windows E5 ライセンス (または同様のライセンス SKU) で ASR ルールを使用して、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) で利用できる高度な監視機能とレポート機能を利用することをお勧めします。 ただし、高度な監視機能やレポート機能を含まないWindows ProfessionalやWindows E3 などの別のライセンスがある場合は、ASR ルールがトリガーされたときに各エンドポイントで生成されるイベント (イベント転送など) の上に独自の監視ツールとレポート ツールを開発できます。
 
@@ -180,7 +177,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem03-1-basics.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの基本属性" lightbox="images/mem03-1-basics.png":::
 
-4. **[次へ]** をクリックします。 手順 **2 構成設定** が開きます。 OMA-URI 設定の場合は、[**追加**] をクリックします。 [ **追加]** と [ **エクスポート**] の 2 つのオプションが表示されるようになりました。
+4. [**次へ**] をクリックします。 手順 **2 構成設定** が開きます。 OMA-URI 設定の場合は、[**追加**] をクリックします。 [ **追加]** と [ **エクスポート**] の 2 つのオプションが表示されるようになりました。
 
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの構成設定" lightbox="images/mem04-2-configuration-settings.png":::
@@ -271,9 +268,9 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
 
 ### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-1. Microsoft Endpoint Configuration Managerで、**資産とコンプライアンス** \> **Endpoint Protection Windows Defender** \> **Exploit Guard** に移動します。
+1. Microsoft Endpoint Configuration Managerで、[**資産とコンプライアンス**] \> [**エンドポイントの保護**] \> [**Windows Defender Exploit Guard**] に移動します。
 
-2. **[ホーム** \> **エクスプロイト ガード ポリシーの作成**] を選択します。
+2. [**ホーム**] \> [**Exploit Guard ポリシーの作成**] を選択します。
 
 3. 名前と説明を入力し、[ **攻撃面の縮小**] を選択して、[ **次へ**] を選択します。
 
@@ -281,7 +278,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
 
 5. 設定を確認し、[ **次へ** ] を選択してポリシーを作成します。
 
-6. ポリシーが作成されたら、[ **閉じる**] を選択します。
+6. ポリシー作成後、[**閉じる**] を選択します。
 
 ### <a name="group-policy"></a>グループ ポリシー
 
@@ -376,7 +373,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
     > [!IMPORTANT]
     > リストにアプリを追加または追加するために使用 `Add-MpPreference` します。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [攻撃面の縮小ルールリファレンス](attack-surface-reduction-rules-reference.md)
 - [攻撃面の縮小を評価する](evaluate-attack-surface-reduction.md)

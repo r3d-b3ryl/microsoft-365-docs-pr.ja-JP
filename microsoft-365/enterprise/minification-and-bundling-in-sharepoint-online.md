@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
 description: Web Essentials で縮小とバンドルの手法を使用して HTTP 要求を減らし、SharePoint Online でページを読み込むのにかかる時間を短縮する方法について説明します。
-ms.openlocfilehash: fabf690f523cabf67fe775bbd1a10251a477f633
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: b02cf095b1d7f05a82df1cf98a590ff762453f8a
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807118"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65637629"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>SharePoint Online での縮小とバンドル
 
@@ -41,10 +41,10 @@ JavaScript ファイルと CSS ファイルの場合は、縮小というアプ�
 Web Essentials などのサード パーティ製ソフトウェアを使用して、CSS ファイルと JavaScript ファイルをバンドルできます。
   
 > [!IMPORTANT]
-> Web Essentials は、サードパーティのオープンソースのコミュニティ ベースのプロジェクトです。 このソフトウェアは、Visual Studio 2012 およびVisual Studio 2013の拡張機能であり、Microsoft ではサポートされていません。 Web Essentials をダウンロードするには、Web Essentials の Web サイトを [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629)参照してください。
+> Web Essentials は、サードパーティのオープンソースのコミュニティ ベースのプロジェクトです。 このソフトウェアは、Visual Studio 2012 およびVisual Studio 2013の拡張機能であり、Microsoft ではサポートされていません。 Web Essentials をダウンロードするには、 [Web Essentials 2012](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials2012) の Web サイトにアクセスしてください。
   
 Web Essentials には、次の 2 つの形式のバンドルが用意されています。
-  
+ 
 - .bundle: CSS ファイルと JavaScript ファイルの場合
 - .sprite: イメージの場合 (Visual Studio 2013でのみ使用できます)
 
@@ -55,7 +55,7 @@ Web Essentials には、次の 2 つの形式のバンドルが用意されて�
 ### <a name="to-create-a-te000127218-and-css-bundle-in-web-essentials"></a>Web Essentials で TE000127218 と CSS バンドルを作成するには
   
 1. Visual Studioのソリューション エクスプローラーで、バンドルに含めるファイルを選択します。
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** **Create JavaScript bundle file] (Web** Essentials \> Create JavaScript バンドル ファイル) を選択します。 例:
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** **Create JavaScript bundle file] (Web** Essentials \> Create JavaScript バンドル ファイル) を選択します。 例として以下のようなものがあります。
 
     ![Web Essentials のメニュー オプションを示すスクリーンショット。](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
@@ -90,7 +90,7 @@ JavaScript ファイルと CSS ファイルをバンドルする方法と同様�
 ### <a name="to-create-an-image-sprite-in-web-essentials"></a>Web Essentials でイメージ スプライトを作成するには**
   
 1. Visual Studioのソリューション エクスプローラーで、バンドルに含めるファイルを選択します。
-2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** Create image sprite] (Web Essentials \> **Create image sprite** ) を選択します。 例:
+2. 選択したファイルを右クリックし、コンテキスト メニューから **[Web Essentials** Create image sprite] (Web Essentials \> **Create image sprite** ) を選択します。 例として以下のようなものがあります。
 
     ![イメージ スプライトを作成する方法を示すスクリーンショット。](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   

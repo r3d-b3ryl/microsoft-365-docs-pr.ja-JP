@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: レポート ダッシュボードを使用して Microsoft Dynamics 365 Customer Voice アクティビティ レポートを取得する方法と、ライセンスを持つユーザーの共同作業方法を確認する方法について説明します。
-ms.openlocfilehash: c8c7678991635139f2bdfb97a8baf7ccc2c667aa
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 8f936f2b3232d8086928751c9846a8d762ff8219
+ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467604"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "65636572"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---dynamics-365-customer-voice-activity"></a>管理センターでレポートをMicrosoft 365する - Dynamics 365 Customer Voice アクティビティ
 
@@ -44,7 +44,7 @@ Microsoft 365 の [レポート] ダッシュボードには、組織内での�
 
 [ **列の選択] を選択** して、レポートに列を追加または削除します。  <br/> ![Dynamics 365 Customer Voice アクティビティ レポート - 列を選択します。](../../media/5ab66f4b-32eb-4c9b-9683-1157ae9e2c0a.png)
 
-また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 ユーザー数が 2000 を超える場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
+また、[**エクスポート**] リンクを選択して、レポート データを Excel の .csv ファイルにエクスポートすることもできます。 これにより、すべてのユーザーのデータがエクスポートされ、単純な並べ替えとフィルター処理を行ってさらに分析することができます。 ユーザー数が 2000 未満である場合は、レポート自体のテーブル内で並べ替えとフィルター処理を行うことができます。 2,000 人を超えるユーザーがいる場合は、フィルター処理と並べ替えを行うために、データをエクスポートする必要があります。 
 
 **Dynamics 365 Customer Voice アクティビティ** レポートは、過去 7 日間、30 日間、90 日間、または 180 日間の傾向を確認できます。 ただし、レポートで特定の日を選択した場合、テーブルには現在の日付から最大 28 日間のデータが表示されます (レポートが生成された日付ではありません)。
   
