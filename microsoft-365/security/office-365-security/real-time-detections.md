@@ -17,14 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b889649de7b56d6a1b5300ff323850a4e555b57
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: e7f3109048f3a4931d25029df3db9a3c217d6354
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775364"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647427"
 ---
 # <a name="explorer-and-real-time-detections"></a>エクスプローラーとリアルタイム検出
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -133,7 +135,7 @@ Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子
 
     - 脅威エクスプローラーから、メールの削除などの修復アクション *を* トリガーできます。 修復、修復の制限、および修復の追跡の詳細については、「 [悪意のあるメールを修復する](remediate-malicious-email-delivered-office-365.md)」を参照してください。  
 
-- Export
+- エクスポート
 
     - **[グラフ データのエクスポート]** をクリックすると、グラフの詳細をエクスポートできます。 同様に、[ **電子メール リストのエクスポート** ] をクリックして電子メールの詳細をエクスポートします。
 
@@ -170,7 +172,7 @@ Security Operations チームは、Defender for Office 365で保護する必要�
 - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
 - [Exchange Online のアクセス許可](/e/exchange/permissions-exo/permissions-exo)
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [脅威エクスプローラーは、電子メール エンティティ ページで電子メールの詳細を収集します](mdo-email-entity-page.md)
 - [配信された悪意のあるメールの検索と調査](investigate-malicious-email-that-was-delivered.md)

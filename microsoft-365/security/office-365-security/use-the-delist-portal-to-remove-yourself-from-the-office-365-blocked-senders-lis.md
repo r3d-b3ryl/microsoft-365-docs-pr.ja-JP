@@ -20,16 +20,14 @@ ms.custom:
 description: この記事では、リスト削除ポータルを使用して、Microsoft 365ブロックされた送信者リストから自分を削除する方法について説明します。 これは、アドレス 5.7.511 アクセス拒否エラーに対する最適な応答です。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 43637f8eb72d078223236f78b45034218e34bcbc
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 83822faaf1c667524dd88fc1bba400c10fa30ac3
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971134"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647735"
 ---
 # <a name="use-the-delist-portal-to-remove-yourself-from-the-blocked-senders-list-and-address-57511-access-denied-errors"></a>リスト解除ポータルを使用して、ブロックされた送信者の一覧から自分を削除し、アドレス 5.7.511 アクセス拒否エラー
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -88,6 +86,6 @@ IP がブロックされないようにするには、「 [EOP で安全な送�
 
 この一覧からの削除を要求する電子メールで、完全な NDR コードと IP アドレスを指定します。 Microsoft は、次の手順で 48 時間以内に連絡します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 **コンシューマー サービスである Outlook.com の** リスト解除フォームは、[こちらにあります](https://support.microsoft.com/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75)。 _提出_ の方向については、必ず [FAQ](https://sendersupport.olc.protection.outlook.com/pm/troubleshooting.aspx) を最初に読んでください。

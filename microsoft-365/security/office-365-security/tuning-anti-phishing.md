@@ -16,16 +16,14 @@ ms.collection:
 description: 管理者は、フィッシング メッセージがMicrosoft 365で受け取った理由と方法、および今後より多くのフィッシング メッセージを防ぐために行う方法を特定する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 299488a7ed8a891d870efb3ace618178c36552f1
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7c39d3f4b3ee6fb98cadcd5518a81710402c1cb3
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206471"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647757"
 ---
 # <a name="tune-anti-phishing-protection"></a>フィッシング対策保護を調整する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -88,7 +86,7 @@ Microsoft 365には、既定で有効になっているさまざまなフィッ�
 
 - 可能な限り、ドメインの電子メールをMicrosoft 365に直接配信することをお勧めします。 つまり、Microsoft 365 ドメインの MX レコードをMicrosoft 365ポイントします。 Exchange Online Protection (EOP) は、メールがMicrosoft 365に直接配信されるときに、クラウド ユーザーに最適な保護を提供できます。 EOP の前でサード パーティ製の電子メールの検疫システムを使用する必要がある場合は、コネクタの拡張フィルター処理を使用します。 手順については、「Exchange Onlineの[コネクタの拡張フィルター処理](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
 
-- ユーザーは [、レポート メッセージ アドイン](enable-the-report-message-add-in.md) または [フィッシングレポート アドインを](enable-the-report-phish-add-in.md) 使用して Microsoft にメッセージを報告する必要があります。これにより、システムをトレーニングできます。 管理者は、 [管理者提出](admin-submission.md) 機能も利用する必要があります。
+- ユーザーは [、レポート メッセージ アドイン](enable-the-report-message-add-in.md) または [フィッシングレポート アドインを](enable-the-report-phish-add-in.md) 使用して Microsoft にメッセージを報告する必要があります。これにより、システムをトレーニングできます。 管理者は、[管理申請](admin-submission.md)機能も利用する必要があります。
 
 - 多要素認証 (MFA) は、侵害されたアカウントを防ぐ優れた方法です。 すべてのユーザーに対して MFA を有効にすることを強くお検討ください。 段階的なアプローチでは、すべてのユーザーに対して MFA を有効にする前に、最も機密性の高いユーザー (管理者、エグゼクティブなど) に対して MFA を有効にすることから始めます。 手順については、「 [多要素認証を設定する](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)」を参照してください。
 

@@ -19,22 +19,20 @@ ms.custom:
 description: この記事では、Azure Information Protectionの保護機能に対する変更について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbfc21b879745567c9273c79356ff60e498d95ff
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 38dd1accf4641d6dfe3f66574b1072e2500cb914
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130826"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647823"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure の保護機能Information Protection既存のテナントにロールアウトする
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-情報の保護の最初の手順を支援するために、2018 年 7 月以降、すべての Azure Information Protection対象テナントに対して、既定で Azure Information Protectionの保護機能が有効になります。 Azure Information Protectionの保護機能は、以前は Rights Management または Azure RMS としてOffice 365で知られていました。 組織にOffice E3 サービス プラン以上のサービス プランがある場合は、これらの機能をロールアウトするときに、Azure Information Protectionを通じて情報の保護を開始できるようになります。
+情報の保護の最初の手順を支援するために、2018 年 7 月以降、すべての Azure Information Protection対象テナントに対して、既定で Azure Information Protectionの保護機能が有効になります。 Azure Information Protection の保護機能は、以前は Rights Management または Azure RMS としてOffice 365で知られていました。 組織にOffice E3 サービス プラン以上のサービス プランがある場合は、これらの機能をロールアウトするときに、Azure Information Protectionを通じて情報の保護を開始できるようになります。
 
 ## <a name="changes-beginning-july-1-2018"></a>2018 年 7 月 1 日以降の変更
 
@@ -65,11 +63,11 @@ Office 365 メッセージ暗号化では、Azure Information Protectionの保�
 
 ## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Active Directory Rights Management サービス (AD RMS) で Azure Information Protectionを使用できますか?
 
-いいえ。 これは、サポートされているデプロイ シナリオではありません。 追加のオプトアウト手順を実行しないと、一部のコンピューターで Azure Rights Management サービスの使用が自動的に開始され、AD RMS クラスターにも接続される場合があります。 このシナリオはサポートされておらず、信頼性の低い結果が得られないため、これらの新機能をロールアウトする前に、今後 30 日以内にこの変更をオプトアウトすることが重要です。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
+いいえ。 これは、サポートされているデプロイ シナリオではありません。 追加のオプトアウト手順を実行しないと、一部のコンピューターで Azure Rights Management サービスの使用が自動的に開始され、AD RMS クラスターにも接続されることがあります。 このシナリオはサポートされておらず、信頼性の低い結果が得られないため、これらの新機能をロールアウトする前に、今後 30 日以内にこの変更をオプトアウトすることが重要です。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>AD RMS を使用しているかどうかを確認操作方法。
 
-AD RMS をデプロイしたかどうかを確認[するには、Active Directory Rights Management サービス (AD RMS) がある場合は、Azure Rights Management 用の環境の準備に](/azure/information-protection/deploy-use/prepare-environment-adrms)関するページの手順を参照してください。
+AD RMS をデプロイしたかどうかを確認[するには、Active Directory Rights Management サービス (AD RMS) がある場合に Azure Rights Management用の環境を準備](/azure/information-protection/deploy-use/prepare-environment-adrms)するに関するページの手順を参照してください。
 
 1. オプションですが、ほとんどの AD RMS 展開では、ドメイン コンピューターが AD RMS クラスターを検出できるように、Active Directory にサービス接続ポイント (SCP) を発行します。
 

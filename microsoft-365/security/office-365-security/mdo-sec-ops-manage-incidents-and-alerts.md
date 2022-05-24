@@ -18,14 +18,20 @@ ms.custom: ''
 description: SecOps 担当者は、Microsoft 365 Defenderのインシデント キューを使用してMicrosoft Defender for Office 365のインシデントを管理する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 05525ac8ac10f8702db4e25d4163fed03b899bc9
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8467d77bd3bdd99af0a33f7fc373e61f7e3efb51
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416990"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649371"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 DefenderのMicrosoft Defender for Office 365からインシデントとアラートを管理する
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft 365 Defenderの[インシデント](/microsoft-365/security/defender/incidents-overview)は、攻撃の完全なストーリーを定義する相関アラートと関連データのコレクションです。 Defender for Office 365 [アラート](/microsoft-365/compliance/alert-policies#default-alert-policies)、[自動調査と対応 (AIR)](office-365-air.md#the-overall-flow-of-air)、および調査の結果は、Microsoft 365 Defenderの [**インシデント]** ページで<https://security.microsoft.com/incidents-queue>ネイティブに統合され、関連付けられます。 このページを _インシデント キュー_ と呼びます。
 

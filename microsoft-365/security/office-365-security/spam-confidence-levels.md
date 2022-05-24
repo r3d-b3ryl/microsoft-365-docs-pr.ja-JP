@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) のメッセージに適用されたスパム信頼レベル (SCL) について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7783eb0655a6e3b0457a45057b920c87388e4c05
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 8febc1d0e0c4fd98b33fb0016beee89a30802241
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682925"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647911"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>EOP のスパム信頼度レベル (SCL)
 
@@ -32,8 +32,6 @@ ms.locfileid: "63682925"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含むMicrosoft 365組織では、Exchange Onlineメールボックスがない場合、受信メッセージは EOP でスパム フィルター処理を通過し、スパム スコアが割り当てられます。 このスコアは、X ヘッダーのメッセージに追加される個々のスパム信頼レベル (SCL) にマップされます。 SCL が高いほど、メッセージがスパムである可能性が高くなります。 EOP は、SCL に基づいてメッセージに対してアクションを実行します。
 

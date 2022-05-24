@@ -15,19 +15,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange OnlineとExchange Online Protectionの IPv6 ソースからの匿名受信メールのサポートを構成する方法について説明します。
+description: 管理は、Exchange OnlineとExchange Online Protectionで IPv6 ソースからの匿名受信メールのサポートを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78b2e653aa284e34af2315ac696d7390dce71884
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 093ab458e8894105536e1c3dd46d2c911de440fd
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373658"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649101"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Microsoft 365で IPv6 経由の匿名受信メールのサポートを追加する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -40,7 +38,7 @@ Exchange Online メールボックスとスタンドアロン Exchange Online Pr
 
 - また、送信者は、SPF 検証 ([RFC 7208](https://tools.ietf.org/html/rfc7208) で既定されている) と [DKIM 検証](http://dkim.org/) ( [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt) で既定されている) のどちらかに合格する必要があります。
 
-組織が IPv6 経由で匿名受信メールを受信するには、管理者が Microsoft サポートに問い合わせて要求する必要があります。 サポート リクエストを開く方法については、「 [ビジネス製品のサポートにお問い合わせください - 管理者向けヘルプ」を](../../admin/get-help-support.md)参照してください。
+組織が IPv6 経由で匿名受信メールを受信するには、管理者が Microsoft サポートに問い合わせて要求する必要があります。 サポート リクエストを開く方法については、「[ビジネス製品のサポートにお問い合わせください - 管理 ヘルプ」を参照してください](../../admin/get-help-support.md)。
 
 組織で匿名受信 IPv6 メッセージのサポートが有効になると、メッセージはサービスによって提供される通常のメッセージ フィルター処理を通過します。
 

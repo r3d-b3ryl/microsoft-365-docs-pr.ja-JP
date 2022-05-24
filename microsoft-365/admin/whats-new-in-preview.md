@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Microsoft 365 管理センター - 今月追加された機能について説明します。
-ms.openlocfilehash: 42c2d1dcf6b778504f1d4786c6fbcc2ce38f9724
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4c730a72252d24145d7555f2684244a2a6531dd2
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099534"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649167"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -50,6 +50,34 @@ ms.locfileid: "65099534"
 - [SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新プログラム](/OfficeUpdates/)
 - [Windowsリリースの正常性を確認する方法](/windows/deployment/update/check-release-health)
+
+## <a name="may-2022"></a>2022 年 5 月
+
+<!-- ### Role based access controls (RBAC)
+
+There are new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
+
+There are also 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Role assignments node under Roles.
+
+For more information about Azure AD built-in roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+
+**Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
+
+**Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
+
+**Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
+
+**Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
+
+**Attribute Definition Reader**   Reads the definition of custom security attributes. -->
+
+### <a name="quick-assist"></a>クイック アシスト
+
+アプリのパフォーマンスとセキュリティを強化するために、クイック アシストをWindows Microsoft Storeに移行しました。 Windows クイック アシスト アプリを使用すると、ユーザーとエンド ユーザーはリモート接続経由で PC サポートを受け取ったり、提供したりできます。
+
+新しいクイック アシスト Microsoft Store アプリでは、パスコードの生成時間が大幅に向上し、アプリケーション エラーが減少します。
+
+詳細については、「[リモート接続で PC の問題を解決する](https://support.microsoft.com/windows/solve-pc-problems-over-a-remote-connection-b077e31a-16f4-2529-1a47-21f6a9040bf3)」と「[クイック アシストのインストール」を](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca)参照してください。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
@@ -153,7 +181,7 @@ NPS アンケート分析情報ダッシュボードを使用して、より優�
 
 ### <a name="microsoft-365-admin-center-video-training"></a>Microsoft 365 管理センタービデオ トレーニング
 
-Microsoft 365 管理センタービデオ トレーニングを更新しました。 [管理者トレーニング ビデオ ライブラリ](admin-video-library.yml) ページに移動して、ビジネス向けのMicrosoft 365を設定および管理する方法について説明します。
+Microsoft 365 管理センタービデオ トレーニングを更新しました。 [管理 トレーニング ビデオ ライブラリ](admin-video-library.yml) ページに移動して、ビジネス向けのMicrosoft 365を設定および管理する方法について説明します。
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="スクリーンショット: 管理センターのビデオ トレーニング ライブラリを表示する":::
 
@@ -194,62 +222,3 @@ Microsoft 365 管理センタービデオ トレーニングを更新しまし�
 - これで、グローバル検索を通じて簡単なセットアップ エクスペリエンスを見つけることができます。 これにより、お客様とチームが新機能の使用方法をすばやく開始できます。 たとえば、有効期限 **が切れないパスワードを検索します**。
 
 管理センターでの検索の詳細については、[Microsoft 365 管理センターの検索に関するページを](manage/search-in-the-mac.md)参照してください。
-
-## <a name="may-2021"></a>2021 年 5 月
-
-### <a name="admin-mobile-app"></a>Admin モバイル アプリ
-
-### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Admin モバイル アプリを使用してサポート チケットの更新を追跡する
-
-テナントで作成されたすべてのサービス要求について、チケットの状態を追跡し、チケットの詳細を表示し、添付ファイル&メモを追加して追加情報を提供/要求できるようになりました。
-
-:::image type="content" source="../media/Keep-track-support-ticket-updates2.PNG" alt-text="スクリーンショット: サポート チケットの更新を追跡する":::
-
-### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>アプリとMicrosoft 365 サブスクリプションに対するすべての主要な更新プログラムを常に活用する
-
-- Message Center プッシュ通知 (既定で有効になりました) を使用して、Microsoft 365 サブスクリプションのすべての主要な更新プログラムを引き続き利用できます。
-
-- [新機能] セクションを使用して、アプリで利用可能な最新 **の機能を** 追跡します。 **設定** > **に移動する新機能**
-
-:::image type="content" source="../media/Stay-on-top-of-updates.PNG" alt-text="スクリーンショット: 主要な更新プログラムと機能を追跡する":::
-
-## <a name="april-2021"></a>2021 年 4 月
-
-### <a name="admin-mobile-app"></a>Admin モバイル アプリ
-
-### <a name="manage-licenses-and-bills-from-the-admin-mobile-app"></a>管理者モバイル アプリからライセンスと請求書を管理する
-
-- これで、サブスクリプションの使用可能なライセンスと割り当てられているすべてのライセンスを表示できるようになりました。 また、ユーザーにライセンスを割り当てたり割り当て解除したり、ライセンスを追加または削除したりすることもできます。
-- これで、アプリで詳細な請求書を表示できるようになりました。
-- これらの更新プログラムは、 [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) デバイスと [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) デバイスの両方で利用できます。
-
-:::image type="content" source="../media/assign-license-mobile-app2.png" alt-text="スクリーンショット: 管理モバイル アプリの割り当てライセンス ページ":::
-:::image type="content" source="../media/license-screen-mobile-app2.png" alt-text="スクリーンショット: ユーザーとそのライセンスを含むモバイル アプリの管理画面":::
-:::image type="content" source="../media/invoice-summary-mobile-app.png" alt-text="スクリーンショット: 管理モバイル アプリの請求書の概要ページ":::
-
-### <a name="updated-message-center-feed-in-the-admin-mobile-app"></a>管理モバイル アプリでメッセージ センター フィードを更新しました
-
-- これで、メッセージ センター フィードの読み取りエクスペリエンスが柔軟になりました。 これで、サービスまたはタグに基づいてメッセージをフィルター処理し、メッセージをお気に入りとしてマークできるようになりました。 メッセージを読み取り、未読、またはアーカイブ済みとしてマークするための一括アクションも追加されました。
-- これらの更新プログラムは、 [Android](https://go.microsoft.com/fwlink/p/?linkid=2159786) デバイスと [iOS](https://go.microsoft.com/fwlink/p/?linkid=2159787) デバイスの両方で利用できます。
-
-:::image type="content" source="../media/mc-feed-mobile-app.png" alt-text="スクリーンショット: 管理モバイル アプリのメッセージ センター フィード ページ":::
-
-## <a name="ignite-2021-march"></a>Ignite 2021 (3 月)
-
-Microsoft Ignite へようこそ。 [Microsoft Ignite 2021](https://myignite.microsoft.com/sessions) のいずれかのセッションに参加できることを願っています。 Ignite で説明した内容の一部を次に示します。
-> [!NOTE]
-> すべての機能をすぐにすべてのユーザーが利用できるわけではありません。 新機能が表示されない場合は、 [ターゲット リリースに参加します](manage/release-options-in-office-365.md)。
-
-### <a name="message-center"></a>メッセージ センター
-
-関連するメッセージを見つけるのに役立つメッセージ センターを刷新し、より柔軟な読み取りエクスペリエンスを追加しました。 メッセージが適用されるサービスをスキャンし、 **サービス** やその他のメタデータでメッセージをフィルター処理するのに役立つ新しいサービス列が追加されました。 メッセージをお気に入りに設定してフォローアップ用にマークしたり、メッセージ一覧に表示される列を選択したり、戻るボタンと次のボタンを使ってメッセージ間を移動したりできます。 また、メッセージ センターの投稿に対するフィードバックを簡単に行えるように、プロセスを改善しました。
-
-:::image type="content" source="../media/message-center.png" alt-text="スクリーンショット: 受信トレイとメッセージを示すメッセージ センターのホーム ページ":::
-
-新機能の詳細については、 [メッセージ センター](manage/message-center.md)を参照してください。
-
-### <a name="whats-new-features"></a>新機能
-
-Office アプリのユーザーの "新機能" 機能を表示する方法が改善されました。 これで、ユーザーが表示できる [新機能] ウィンドウにリッチ コンテンツを表示できるようになりました。 また、機能についてユーザーに知らせる前に、機能の詳細を確認することもできます。 詳細については、「[新機能」に表示されるOffice機能の管理](manage/show-hide-new-features.md)に関するページを参照してください。
-
-:::image type="content" source="../media/power-bi-whats-new2.png" alt-text="スクリーンショット: Power BIの改善を示す新しいページをアプリにOfficeする":::

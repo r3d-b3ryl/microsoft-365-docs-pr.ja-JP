@@ -16,12 +16,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ベースラインを使用して標準テナント構成をデプロイする方法について説明します。
-ms.openlocfilehash: a12abd14064559ec92fc735bd90c1f8d58d24cb1
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 11b8c5ad9adafa4cd6afb6bb4cd19861118e447c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023307"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647691"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Microsoft 365 Lighthouseベースラインを使用して標準テナント構成をデプロイする方法の概要 
 
@@ -41,11 +41,12 @@ Lighthouse ベースライン構成は、すべてのマネージド テナン�
 |--|--|
 | 管理者に MFA を要求する | すべての管理者に多要素認証を必要とする条件付きアクセス ポリシー。 これは、すべてのクラウド アプリケーションに必要です。 このベースラインの詳細については、「 [条件付きアクセス: すべての管理者に MFA を要求する」を](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)参照してください。|
 | エンド ユーザーに MFA を要求する | すべてのユーザーに多要素認証を必要とする条件付きアクセス ポリシー。  これは、すべてのクラウド アプリケーションに必要です。 このベースラインの詳細については、「 [条件付きアクセス: すべてのユーザーに MFA を要求する」を](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)参照してください。 |
-| 従来の認証をブロックする | レガシ クライアント認証をブロックする条件付きアクセス ポリシー。 このベースラインの詳細については、「[条件付きアクセスを使用したAzure ADへのレガシ認証のブロック](/azure/active-directory/conditional-access/block-legacy-authentication)」を参照してください。|
+| 従来の認証をブロックする | レガシ クライアント認証をブロックする条件付きアクセス ポリシー。 このベースラインの詳細については、「 [条件付きアクセスを使用して Azure AD へのレガシ認証をブロックする](/azure/active-directory/conditional-access/block-legacy-authentication)」を参照してください。|
 | デバイス登録を設定する | テナント デバイスがMicrosoft エンドポイント マネージャーに登録できるようにするデバイス登録。 これは、Azure Active DirectoryとMicrosoft エンドポイント マネージャーの間で自動登録を設定することによって行われます。 このベースラインの詳細については、「[Windows デバイスの登録を設定する](/mem/intune/enrollment/windows-enroll)」を参照してください。 |
+| Exchange Online ProtectionとMicrosoft Defender for Office 365のセットアップ | 推奨されるスパム対策、マルウェア対策、フィッシング詐欺対策、安全なリンク、安全な添付ファイル ポリシーをテナントExchange Onlineメールボックスに適用するポリシー。 |
 | Windows 10 以降のMicrosoft Defender ウイルス対策を構成する | 事前に構成されたMicrosoft Defender ウイルス対策設定を持つWindows デバイスのデバイス構成プロファイル。 このベースラインの詳細については、「[IntuneでMicrosoft Defender for Endpointを構成する](/mem/intune/protect/advanced-threat-protection-configure)」を参照してください。|
-| Windows 10 以降用に Microsoft Defender ファイアウォールを構成する | 不要で承認されていないネットワーク トラフィックを防ぐことでデバイスをセキュリティで保護するためのファイアウォール ポリシー。 このベースラインの詳細については、「[ファイアウォールWindows Defender構成するためのベスト プラクティス」](/windows/security/threat-protection/windows-firewall/best-practices-configuring)を参照してください。  |
-| Windows 10 以降のデバイス コンプライアンス ポリシーを構成する | 基本的なコンプライアンス要件を満たすために事前に構成された設定を持つWindowsデバイス ポリシー。 このベースラインの詳細については、「[条件付きアクセス: 参加しているデバイスAzure AD準拠またはハイブリッドを必要とする](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device)」を参照してください。 |
+| Windows 10 以降のMicrosoft Defender ファイアウォールを構成する | 不要で承認されていないネットワーク トラフィックを防ぐことでデバイスをセキュリティで保護するためのファイアウォール ポリシー。 このベースラインの詳細については、「[Windows Defender ファイアウォールを構成するためのベスト プラクティス」](/windows/security/threat-protection/windows-firewall/best-practices-configuring)を参照してください。  |
+| Windows 10 以降のデバイス コンプライアンス ポリシーを構成する | 基本的なコンプライアンス要件を満たすために事前に構成された設定を持つWindowsデバイス ポリシー。 このベースラインの詳細については、「 [条件付きアクセス: 準拠またはハイブリッドの Azure AD 参加済みデバイスを必要とする](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device)」を参照してください。 |
 
 ## <a name="deployment-plans"></a>展開計画
 

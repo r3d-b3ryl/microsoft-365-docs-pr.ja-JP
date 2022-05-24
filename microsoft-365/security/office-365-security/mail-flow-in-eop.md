@@ -12,27 +12,27 @@ ms.localizationpriority: medium
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: 管理者は、Exchange Online Protection (EOP) でメール フローとルーティングを構成するためのオプションについて学習できます。
+description: 管理Exchange Online Protection (EOP) でメール フローとルーティングを構成するためのオプションについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 296cd8aaa92005f094de2ee7d1c9f8bb9427df16
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: e0267af0297dce41657c76e97964e5c02fbe5815
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681020"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648747"
 ---
 # <a name="mail-flow-in-eop"></a>EOP のメール フロー
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスを持つMicrosoft 365組織、またはExchange Onlineメールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、ワーカーがメールボックスを表示する前に、組織に送信されたすべてのメッセージが EOP を通過します。 EOP を通過するメッセージをワーカー受信トレイにルーティングする前に、処理のためにメッセージをルーティングする方法に関するオプションがあります。
+Exchange Online メールボックスを持つMicrosoft 365組織、またはExchange Onlineメールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織では、ユーザーが表示される前に組織に送信されたすべてのメッセージが EOP を通過します。 EOP を通過するメッセージをユーザー メールボックスにルーティングする前に、処理のためにメッセージをルーティングする方法に関するオプションがあります。
 
 ## <a name="working-with-messages-and-message-access-options"></a>メッセージとメッセージ アクセス オプションの操作
 

@@ -17,16 +17,14 @@ ms.collection:
 description: 管理者は、Exchange Online Protection (EOP) で使用される一括苦情レベル (BCL) の値について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c50ca25a355ca142e36c67d03fad42c3aa461a2
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 08e747b704faa18aa73110256624d70c79d0307b
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679876"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647383"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>EOP の一括苦情レベル (BCL)
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

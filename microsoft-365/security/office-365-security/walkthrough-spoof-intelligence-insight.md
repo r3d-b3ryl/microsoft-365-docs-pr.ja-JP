@@ -21,16 +21,14 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 55ed1bd871d78c6d130a933799ec3f62d36d7736
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: f827046dc9a103e73eb6fb79ba161e523e2b2690
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144701"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649355"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP でスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンス 分析情報を使用してスプーフィングされた送信者を管理する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -64,7 +62,7 @@ ms.locfileid: "65144701"
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - スプーフィング インテリジェンスのオプションについては、「 [フィッシング対策ポリシーのスプーフィング設定」を参照してください](set-up-anti-phishing-policies.md#spoof-settings)。
 

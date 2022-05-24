@@ -19,16 +19,14 @@ ms.custom:
 description: この記事では、Backscatter と Microsoft Exchange Online Protection (EOP) について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 79a6dd1be6c33bdbfc3d87b834f231de7cd08a0c
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: d132ed56c02989987da9e0ce32e7d4593e85e651
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60199455"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648219"
 ---
 # <a name="backscatter-in-eop"></a>EOP のバックスキャッター
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

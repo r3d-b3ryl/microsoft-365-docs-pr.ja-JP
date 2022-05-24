@@ -17,14 +17,20 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e591330137f2f2fd92ef05f64f5368cca533fc48
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599323"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648241"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Exchange Online Protection (EOP) の検疫ポリシー (以前は _検疫タグ_ と呼ばれていました) とMicrosoft Defender for Office 365 を使うと、管理者はメッセージが検疫された理由に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を制御できます。
 

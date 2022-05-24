@@ -12,14 +12,19 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニング用のエンド ユーザー通知電子メール メッセージを作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 0693b7f55472c5093df763af5a1a226c0c3aa052
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d21e3bd48dae3f1028412beff9449a38b9f751ff
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101744"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649061"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのエンドユーザー通知
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
 Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングでは、エンド ユーザー通知は、ユーザーに送信される電子メール メッセージの 2 つの基本的な種類の通知です。
 

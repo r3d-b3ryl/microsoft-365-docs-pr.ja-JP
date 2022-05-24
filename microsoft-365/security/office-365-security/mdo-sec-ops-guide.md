@@ -18,14 +18,20 @@ ms.custom: ''
 description: SecOps 担当者がMicrosoft Defender for Office 365を管理するための規範的なプレイブック。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 557e1288e4f2b39938b4da381664b58ed4c7e6c7
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 389d48f5b7952f3d89a0bb75746babaa9430e7c5
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217316"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647268"
 ---
 # <a name="microsoft-defender-for-office-365-security-operations-guide"></a>Microsoft Defender for Office 365 セキュリティ操作ガイド
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 この記事では、組織内のMicrosoft Defender for Office 365を正常に運用するための要件とタスクの概要について説明します。 これらのタスクは、セキュリティオペレーション センター (SOC) が、電子メールおよびコラボレーション関連のセキュリティの脅威を保護、検出、および対応するための高品質で信頼性の高いアプローチを提供することを保証するのに役立ちます。
 
@@ -177,16 +183,16 @@ Defender for Office 365では、次のレポートを使用して、組織内の
 Microsoft 365 Defender ポータルと PowerShell でDefender for Office 365を管理するためのアクセス許可は、ロールベースのアクセス制御 (RBAC) アクセス許可モデルに基づいています。 RBAC は、ほとんどのMicrosoft 365 サービスで使用されるのと同じアクセス許可モデルです。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
 > [!NOTE]
-> Azure ADのPrivileged Identity Management (PIM) は、SecOps 担当者に必要なアクセス許可を割り当てる方法でもあります。 詳細については、[Privileged Identity Management (PIM) とMicrosoft Defender for Office 365で使用する理由を](use-privileged-identity-management-in-defender-for-office-365.md)参照してください。
+> Azure AD のPrivileged Identity Management (PIM) は、SecOps 担当者に必要なアクセス許可を割り当てる方法でもあります。 詳細については、[Privileged Identity Management (PIM) とMicrosoft Defender for Office 365で使用する理由を](use-privileged-identity-management-in-defender-for-office-365.md)参照してください。
 
 次のアクセス許可 (ロールと役割グループ) はDefender for Office 365で使用でき、セキュリティ チーム メンバーへのアクセスを許可するために使用できます。
 
-- **Azure AD ロール**: Defender for Office 365を含 _むすべての_ Microsoft 365 サービスのアクセス許可を割り当てる一元化されたロール。 Microsoft 365 Defender ポータルでは、Azure AD ロールと割り当てられたユーザーを表示できますが、直接管理することはできません。 代わりに、Azure AD ロールとメンバー<https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>を . セキュリティ チームで最も頻繁に使用されるロールは次のとおりです。
+- **Azure AD ロール**: Defender for Office 365を含 _むすべての_ Microsoft 365 サービスのアクセス許可を割り当てる一元化されたロール。 azure AD ロールと割り当てられたユーザーは、Microsoft 365 Defender ポータルで表示できますが、直接管理することはできません。 代わりに、Azure AD ロールとメンバー <https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RolesAndAdministrators>を管理します。. セキュリティ チームで最も頻繁に使用されるロールは次のとおりです。
   - **セキュリティ管理者**
   - **セキュリティ オペレーター**
   - **セキュリティ閲覧者**
 
-- **電子メール & コラボレーション ロール**: Microsoft Defender for Office 365に固有のアクセス許可を付与するロールと役割グループ。 次のロールはAzure ADでは使用できませんが、セキュリティ チームにとって重要な場合があります。
+- **電子メール & コラボレーション ロール**: Microsoft Defender for Office 365に固有のアクセス許可を付与するロールと役割グループ。 次のロールは Azure AD では使用できませんが、セキュリティ チームにとって重要な場合があります。
 
   - **プレビュー** ロール: 調査アクティビティの一環として電子メール メッセージをプレビューまたはダウンロードする必要があるチーム メンバーにこのロールを割り当てます。 ユーザーは、電子メール エンティティ ページを使用して、クラウド メールボックス内の[電子メール](mdo-email-entity-page.md#email-preview-for-cloud-mailboxes) メッセージを[プレビューおよびダウンロード](investigate-malicious-email-that-was-delivered.md#preview-role-permissions)できます。
 
@@ -250,7 +256,7 @@ SIEM ツールの統合の詳細については、「[MICROSOFT 365 DEFENDERと 
 
 ユーザーがフィッシングとしてメッセージを報告するたびに、Defender for Office 365アラートが生成され、アラートによって AIR プレイブックがトリガーされます。 インシデント ロジックは、この情報を可能な限り他のアラートやイベントに関連付けます。 この情報の統合は、セキュリティ チームがユーザーから報告された電子メールをトリアージ、調査、および応答するのに役立ちます。
 
-ユーザーの提出と管理者の提出は、厳密に統合されたプロセスに従う Microsoft によって送信パイプラインによって処理されます。 このプロセスには、次のものが含まれます。
+ユーザーの提出と管理者の提出は、厳密に統合されたプロセスに従う Microsoft によって送信パイプラインによって処理されます。 通常、このプロセスには次のものが含まれます。
 
 - ノイズリダクション。
 - 自動トリアージ。
@@ -260,14 +266,14 @@ SIEM ツールの統合の詳細については、「[MICROSOFT 365 DEFENDERと 
 
 セキュリティ チーム のメンバーは、Microsoft 365 Defender ポータル<https://security.microsoft.com>の複数の場所から次の場所で申請を行うことができます。
 
-- [管理者の提出](admin-submission.md): 申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信します。
+- [管理提出](admin-submission.md): 申請ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信します。
 - 次のいずれかのメッセージ アクションを使用して、脅威エクスプローラーから直接実行します。
   - クリーンなレポート
   - フィッシングを報告する
   - マルウェアを報告する
   - スパムを報告する
 
-  最大 10 個のメッセージを選択して、一括送信を実行できます。 この方法で作成された管理者の申請は、申請ポータルにも表示されます。
+  最大 10 個のメッセージを選択して、一括送信を実行できます。 この方法で作成された管理申請は、申請ポータルにも表示されます。
 
 誤ったネガの短期的な軽減策として、セキュリティ チームは[テナント許可/ブロック リスト](tenant-allow-block-list.md)内のファイル、URL、送信者の[ブロック エントリ](manage-tenant-blocks.md)を直接管理できます。
 

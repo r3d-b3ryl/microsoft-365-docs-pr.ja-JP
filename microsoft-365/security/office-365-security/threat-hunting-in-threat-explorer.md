@@ -17,14 +17,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efeaf3fadfed0032da90db15a6bb57f5a1fc822a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 2c99bc2ce004156320ec8f53f6b956f7989ee056
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418020"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648825"
 ---
 # <a name="threat-hunting-in-threat-explorer-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365用の脅威エクスプローラーでの脅威の検出
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 この記事の内容:
 
@@ -217,7 +223,7 @@ URL のクリックポップアップにもタグ情報が表示されます。 
 >
 > - Exchange Onlineのみ - データ損失防止: すべて
 > - Exchange Onlineのみ - O365SupportViewConfig: すべて
-> - Microsoft Azure Active DirectoryまたはExchange Online - セキュリティ管理者: すべて
+> - Microsoft Azure Active DirectoryまたはExchange Online - セキュリティ 管理: すべて
 > - Azure Active DirectoryまたはExchange Online - セキュリティ リーダー: すべて
 > - Exchange Onlineのみ - トランスポート ルール: すべて
 > - Exchange Onlineのみ - View-Only構成: すべて
@@ -247,7 +253,7 @@ URL のクリックポップアップにもタグ情報が表示されます。 
 エクスプローラーまたはリアルタイム検出を表示して使用するには、次のアクセス許可が必要です。
 
 - Microsoft 365 Defender ポータルで次の手順を実行します。
-  - 組織の管理
+  - 組織管理
   - セキュリティ管理者 (Azure Active Directory管理センターで割り当てることができます (<https://aad.portal.azure.com>)
   - セキュリティ閲覧者
 - Exchange Online:

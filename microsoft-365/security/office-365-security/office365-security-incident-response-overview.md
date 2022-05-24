@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef36caca62935dbeca6640c5fa9ed2edaae9528b
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 6e69ca9f57f3a025ee669001227e64c8809d4741
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60196491"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648153"
 ---
 # <a name="security-incident-response"></a>セキュリティ インシデント対応
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

@@ -13,14 +13,16 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングがユーザーにどのような影響を与えるかを学習し、シミュレーションとトレーニングの結果から分析情報を得ることができます。
 ms.technology: mdo
-ms.openlocfilehash: a360343fd4406dc79d072927fef41369bbe21ed8
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 72ed46d1676f4abd97ecd4fccfe4ef20d971f0b3
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64473895"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649455"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングのインサイトとレポート
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
@@ -257,7 +259,7 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 
 ### <a name="simulation-impact-section"></a>[シミュレーションの影響] セクション
 
-シミュレーションの詳細ページの **[シミュレーションへの影響** ] セクションには、シミュレーションによって完全にだまされたユーザーの数と、シミュレーション内のユーザーの合計数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
+シミュレーションの詳細ページの **[シミュレーションへの影響** ] セクションには、シミュレーションによって完全にだまされたユーザーの数と、シミュレーション内のユーザーの合計数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例として以下のようなものがあります。
 
 - リンク: **入力された資格情報** と資格情報 **を入力しませんでした**。
 
@@ -271,7 +273,7 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 
 ### <a name="all-user-activity-section"></a>[すべてのユーザー アクティビティ] セクション
 
-シミュレーションの詳細ページ **の [すべてのユーザー アクティビティ** ] セクションには、シミュレーションの可能な結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
+シミュレーションの詳細ページ **の [すべてのユーザー アクティビティ** ] セクションには、シミュレーションの可能な結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例として以下のようなものがあります。
 
 - **SuccessfullyDeliveredEmail**
 - **ReportedEmail**: シミュレーション メッセージを疑わしいと報告したユーザーの数。

@@ -13,14 +13,16 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: 8aa81a1940e564e9877af6a1848ff439aea58d8e
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f0f91eb3936d1dc4ed6c028552b37fecb5df2ff6
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468503"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648307"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
@@ -44,7 +46,7 @@ ms.locfileid: "64468503"
 
 [ **選択の種類]** ページで、現在選択できる唯一の値は **[電子メール] です**。
 
-**[次へ]** をクリックします。
+[**次へ**] をクリックします。
 
 ### <a name="select-a-social-engineering-technique"></a>ソーシャル エンジニアリング手法を選択する
 

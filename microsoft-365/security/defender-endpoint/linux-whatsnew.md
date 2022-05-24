@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 385b139390192d172b3bbbcbefd5efc2b793d4ab
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c58c447a4aed08af48576b461a638c1cd43aca83
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173508"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649245"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux でのMicrosoft Defender for Endpointの新機能
 
@@ -28,6 +28,15 @@ ms.locfileid: "65173508"
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+
+## <a name="1016880-30122042168800"></a>101.68.80 (30.122042.16880.0)
+
+- RHEL 6 で実行するときのカーネル バージョン `2.6.32-754.47.1.el6.x86_64` のサポートを追加しました
+- RHEL 6 で、製品を、Unbreakable Enterprise Kernel (UEK) を実行しているデバイスにインストールできるようになりました
+- 実行中と同じように `unknown` プロセス名が正しく表示されない問題を修正しました `mdatp diagnostic real-time-protection-statistics`
+- 製品が検疫フォルダー内のファイルを誤って検出する場合があるバグを修正しました
+- ソフト リンクとしてマウントされたときにコマンド ライン ツールが`/opt`機能しない問題`mdatp`を修正しました
+- バグ修正&パフォーマンスの向上
 
 ## <a name="1016577-30122032165770"></a>101.65.77 (30.122032.16577.0)
 

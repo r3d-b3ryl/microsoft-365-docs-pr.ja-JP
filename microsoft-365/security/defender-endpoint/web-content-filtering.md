@@ -15,16 +15,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2e86aa7fc8ed304327ab2c07ec487789ad966fc7
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535450"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648571"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -56,7 +54,7 @@ Web コンテンツ フィルターは、主要な Web ブラウザーで使用�
 
 | 要件 | 説明 |
 |:---|:---|
-| サブスクリプション | サブスクリプションには、次のいずれかを含める必要があります。<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint プラン 1 またはプラン 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md) |
+| サブスクリプション | サブスクリプションには、次のいずれかを含める必要があります。<br/>- [Windows 10/11 Enterprise E5](/windows/deployment/deploy-enterprise-licenses)<br/>- [Microsoft 365 E5](https://www.microsoft.com/microsoft-365/enterprise/e5?activetab=pivot%3aoverviewtab)<br/>- Microsoft 365 E5 Security<br/>- [Microsoft 365 E3](https://www.microsoft.com/microsoft-365/enterprise/e3?activetab=pivot%3aoverviewtab)<br/>- [Microsoft Defender for Endpoint プラン 1 またはプラン 2](../defender/eval-defender-endpoint-overview.md)<br/>- [Microsoft Defender for Business](../defender-business/mdb-overview.md)<br/>- [Microsoft 365 Business Premium](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium)|
 | ポータル へのアクセス | <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>にアクセスできる必要があります。 |
 | オペレーティング システム | 組織のデバイスは、 [最新のウイルス対策/マルウェア対策更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md)を使用して、次のいずれかのオペレーティング システムを実行している必要があります。 <br/>- Windows 11<br/>- Windows 10 Anniversary Update (バージョン 1607) 以降 |
 | 関連する保護 | [Windows Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) と[ネットワーク保護](network-protection.md)は、組織のデバイスで有効にする必要があります。 |
@@ -177,7 +175,7 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 4. ポリシー スコープを指定します。 デバイス グループを選択して、ポリシーを適用する場所を指定します。 選択したデバイス グループ内のデバイスのみが、選択したカテゴリの Web サイトにアクセスできなくなります。
 
    > [!IMPORTANT]
-   > Defender for Business を使用している場合、Web コンテンツ フィルター ポリシーは既定ですべてのユーザーに適用されます。 スコーピングは適用されません。
+   > Microsoft 365 Business Premiumまたは Defender for Business のいずれかを使用している場合、Web コンテンツ フィルター ポリシーは既定ですべてのユーザーに適用されます。 スコーピングは適用されません。
 
 5. 概要を確認し、ポリシーを保存します。 ポリシーの更新は、選択したデバイスに適用されるまでに最大 2 時間かかる場合があります。
 
@@ -204,7 +202,7 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 ### <a name="dispute-categories"></a>クレーム カテゴリ
 
-誤って分類されたドメインが発生した場合は、ポータルから直接カテゴリに異議を申し合うことができます。
+誤って分類されたドメインが発生した場合は、Microsoft 365 Defender ポータルから直接カテゴリに異議を申し合うことができます。
 
 ドメインのカテゴリに関する問題を解決するには、 **レポート** \> **Web 保護** \> **Web コンテンツ フィルターの詳細** \> **ドメイン** に移動します。 Web コンテンツ フィルター レポートの [ドメイン] タブに、各ドメインの横に省略記号が表示されます。 この省略記号にマウス ポインターを合わせ、[ **クレーム カテゴリ**] を選択します。
 
@@ -252,9 +250,11 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 デバイスの OS 構成がサーバー (**cmd** \> **Systeminfo** \> **OS 構成**) の場合にのみ、Microsoft Edgeがサポートされます。 Network Protection は、サポートされているサード パーティのブラウザー間のトラフィックのセキュリティ保護を担当するサーバー デバイスの検査モードでのみサポートされます。
 
-Microsoft Edgeのみがサポートされており、Windows 10 Azure Virtual Desktop マルチセッション ホストでは Network Protection はサポートされていません。
+Microsoft Edgeのみがサポートされ、azure Virtual Desktop マルチセッション ホストWindows 10ネットワーク保護はサポートされていません。
 
-Network Protection は現在 SSL 検査をサポートしていないため、通常はブロックされる Web コンテンツ フィルターによって一部のサイトが許可される可能性があります。 TLS ハンドシェイクが行われた後の暗号化されたトラフィックの可視性が不足し、特定のリダイレクトを解析できないため、サイトは許可されます。  これには、一部の Web ベースのメール ログイン ページからメールボックス ページへのリダイレクトが含まれます。 受け入れられた回避策として、ログイン ページのカスタム ブロック インジケーターを作成して、ユーザーがサイトにアクセスできないようにすることができます。 これにより、同じ Web サイトに関連付けられている他のサービスへのアクセスがブロックされる可能性があることに注意してください。 
+ネットワーク保護は現在 SSL 検査をサポートしていないため、通常はブロックされる Web コンテンツ フィルターによって一部のサイトが許可される可能性があります。 TLS ハンドシェイクが行われた後の暗号化されたトラフィックの可視性が不足し、特定のリダイレクトを解析できないため、サイトは許可されます。  これには、一部の Web ベースのメール ログイン ページからメールボックス ページへのリダイレクトが含まれます。 受け入れられた回避策として、ログイン ページのカスタム ブロック インジケーターを作成して、ユーザーがサイトにアクセスできないようにすることができます。 これにより、同じ Web サイトに関連付けられている他のサービスへのアクセスがブロックされる可能性があることに注意してください。 
+
+Microsoft 365 Business PremiumまたはMicrosoft Defender for Businessを使用している場合は、環境に対して 1 つの Web コンテンツ フィルター ポリシーを定義できます。 このポリシーは、既定ですべてのユーザーに適用されます。
 
 ## <a name="see-also"></a>関連項目
 

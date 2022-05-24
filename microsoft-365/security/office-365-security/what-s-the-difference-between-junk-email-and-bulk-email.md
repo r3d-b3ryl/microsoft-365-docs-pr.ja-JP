@@ -19,16 +19,14 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の迷惑メール (スパム) と一括メール (灰色のメール) の違いについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8a896ac3360ccf799dbe34c7e298f76140ee6d5
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5f948b45c5f4b26f3fba74f3883511218daa0ef0
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60154304"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647845"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP での迷惑メールと一括メールの違いは何ですか?
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

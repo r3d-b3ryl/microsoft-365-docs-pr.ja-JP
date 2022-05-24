@@ -19,18 +19,19 @@ description: Microsoft 365の自動調査中と自動調査後に、結果と主
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bf9fe34a88444d9d8ec6dccf4b22a507e55dfb00
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: b99573f73d5b53b6ea0e8d0cd1e44b539fa47db9
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63680800"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649079"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365での自動調査の詳細と結果
 
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 [Microsoft Defender for Office 365](defender-for-office-365.md)で[自動調査](office-365-air.md)が発生した場合、その調査に関する詳細は、自動調査プロセス中および自動調査後に使用できます。 必要なアクセス許可がある場合は、Microsoft 365 Defender ポータルでこれらの詳細を表示できます。 調査の詳細は、最新の状態と、保留中のアクションを承認する機能を提供します。
 
@@ -57,7 +58,7 @@ ms.locfileid: "63680800"
 
 ## <a name="view-details-of-an-investigation"></a>調査の詳細を表示する
 
-1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動してサインインします。
+1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動し、サインインします。
 2. ナビゲーション ウィンドウで、[ **アクション センター**] を選択します。
 3. **[保留中]** タブまたは [**履歴**] タブで、アクションを選択します。 ポップアップ ウィンドウが開きます。
 4. ポップアップ ウィンドウで、[ **調査ページを開く**] を選択します。 
@@ -67,7 +68,7 @@ ms.locfileid: "63680800"
 
 特定の種類のアラートにより、Microsoft 365での自動調査がトリガーされます。 詳細については、 [自動調査をトリガーするアラート ポリシー](office-365-air.md#which-alert-policies-trigger-automated-investigations)に関するページを参照してください。
 
-1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動してサインインします。
+1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動し、サインインします。
 2. ナビゲーション ウィンドウで、[ **アクション センター**] を選択します。
 3. **[保留中]** タブまたは [**履歴**] タブで、アクションを選択します。 ポップアップ ウィンドウが開きます。
 4. ポップアップ ウィンドウで、[ **調査ページを開く**] を選択します。

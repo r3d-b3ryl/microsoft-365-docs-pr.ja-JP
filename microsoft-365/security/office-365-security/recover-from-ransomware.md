@@ -16,16 +16,14 @@ ms.collection:
 description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e5e942bb39097fffa955d5bb9c3b8a72212d0cc
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64730848"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648659"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365でのランサムウェア攻撃から回復する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -82,7 +80,7 @@ OneDrive 同期を一時停止すると、感染する可能性のあるデバ�
 
 環境からランサムウェア ペイロードを削除する前の手順を完了すると (ランサムウェアによるファイルの暗号化または削除が防止されます)、Windows 11、Windows 10、Windows 8.1で[ファイル履歴](https://support.microsoft.com/help/17128)を使用し、Windows 7 の System Protection を使用してローカル ファイルとフォルダーの回復を試みることができます。
 
-**注意**:
+**注**:
 
 - 一部のランサムウェアではバックアップ バージョンも暗号化または削除されるため、ファイル履歴または System Protection を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアやOneDriveの影響を受けなかった外部ドライブまたはデバイスでバックアップを使用する必要があります。
 
@@ -170,7 +168,7 @@ Microsoft Azure
 - [ランサムウェア攻撃に対する Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Azure と Microsoft 365 を使用してランサムウェアの回復性を最大化する](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
-- Microsoft Azure Backup (26 分間のビデオ) [を使用してランサムウェアから保護する](https://www.youtube.com/watch?v=VhLOr2_1MCg)
+- [Microsoft Azure Backup を使用したランサムウェアからの保護に役立つ](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 分間のビデオ)
 - [体系的な ID 侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Microsoft Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
 - [Microsoft Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)

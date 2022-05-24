@@ -13,14 +13,16 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 計画 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: 94e002adf3fcdefcb3d2483f4f32ce7b10be8dab
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 55810d65c33796a617421f0796191335821bde98
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077636"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648891"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートする
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
@@ -100,7 +102,7 @@ Microsoft Defender for Office 365計画 2 またはMicrosoft 365 E5の攻撃シ�
 
 - **テーマ別のフィルター**: 使用可能な値は、**アカウントのアクティブ化**、**アカウントの確認**、**課金**、**メールのクリーンアップ**、**ドキュメント受信**、**経費**、**FAX**、**財務レポート**、**受信メッセージ**、**請求書**、**受信したアイテム**、**ログイン アラート、受信****したメール**、**パスワード**、**支払い**、**給与**、**個人用プラン**、**検疫**、 **リモート作業**、**メッセージの確認**、**セキュリティ更新プログラム**、**サービスの中断**、**署名が必要**、**メールボックスストレージのアップグレード メールボックス**、**ボイスメール**、**およびその他** を確認します。
 
-- **ブランド別のフィルター**: 使用可能な値は、**American Express**、**Capital One**、**DHL**、**DocuSign**、**Dropbox**、**Facebook**、**First American**、**Microsoft**、**Netflix**、**スコシアバンク**、**SendGrid**、**スチュワート タイトル**、**テスコ**、**ウェルズ ファーゴ**、**Syrinx Cloud**、**その他** です。
+- **ブランド別のフィルター**: 使用可能な値は、**American Express**、**Capital One**、**DHL**、**DocuSign**、**Dropbox**、**Facebook**、**First American**、**Microsoft**、**Netflix**、**スコシアバンク**、**SendGrid**、**スチュワート タイトル**、**テスコ**、**ウェルズ Fargo**、**Syrinx Cloud**、**その他** です。
 
 - **業界別のフィルター**: 利用可能な値は、 **銀行**、 **ビジネス サービス**、 **コンシューマー サービス**、 **教育**、 **エネルギー**、 **建設**、 **コンサルティング**、 **金融サービス**、 **政府機関**、 **接待**、 **保険**、 **法務**、 **配送業者サービス**、 **IT**、 **医療**、 **製造**、 **小売**、 **通信**、 **不動産**、およびその **他**。
 

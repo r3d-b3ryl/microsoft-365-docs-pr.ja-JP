@@ -14,14 +14,20 @@ description: Microsoft Defender for Office 365の脅威フィルター スタッ
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e7be5c66e0ca3841a8bc4fd76555feaeafb1bd17
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 4548beaf8d3071006114a65fd95c16b06e8a875d
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469033"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648175"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft Defender for Office 365保護スタックまたはフィルター スタックは、この記事のように 4 つのフェーズに分けることができます。 一般に、受信メールは配信前にすべてのフェーズを通過しますが、電子メールの実際のパスは組織のDefender for Office 365構成の対象となります。
 
@@ -136,7 +142,7 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender for Office 365でのフィルター処理のすべてのフェーズ (1 ~ 4)" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 ***now** _Microsoft Defender for Office 365設定する必要がありますか? このスタック_now*を使用して、 [組織](protect-against-threats.md) の保護を開始します。
 

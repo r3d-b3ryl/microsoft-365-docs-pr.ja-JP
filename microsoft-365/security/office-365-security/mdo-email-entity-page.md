@@ -17,14 +17,20 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: E5 および P1 および P2 のお客様Microsoft Defender for Office 365、電子メール エンティティ ページを使用して各メールの 360 度ビューを取得できるようになりました。
-ms.openlocfilehash: c2dfd4016f756073407e7d1c22034031c60a901f
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 79863916cab3b859a0b24de9dc5eb9b4f324a3f9
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131088"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648769"
 ---
 # <a name="the-email-entity-page"></a>メール エンティティ ページ
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 **この記事の内容:**
 - [電子メール エンティティ ページにアクセスする](#reach-the-email-entity-page)

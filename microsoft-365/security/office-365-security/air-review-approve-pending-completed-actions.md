@@ -20,14 +20,16 @@ description: Microsoft Defender for Office 365プラン 2 の自動調査と対�
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: 35e9293fa83b86fb80c1c907fbf3a0769e323503
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: aaa444a2bada254aeed83540aee361ed806ab0a0
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318621"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649123"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Office 365での修復アクションの確認と管理
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
@@ -95,7 +97,7 @@ ms.locfileid: "63318621"
 ## <a name="next-steps"></a>次の手順
 
 - [脅威エクスプローラーを使用する](threat-explorer.md)
-- [管理者/手動アクション](remediate-malicious-email-delivered-office-365.md)
+- [管理/手動操作](remediate-malicious-email-delivered-office-365.md)
 - [自動調査と応答機能で誤検知/否定を報告する方法](air-report-false-positives-negatives.md)
 
 ## <a name="see-also"></a>関連項目

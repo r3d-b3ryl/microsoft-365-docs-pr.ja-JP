@@ -12,14 +12,16 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、ペイロードの自動化 (ペイロード の収集) を使用して、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニングの自動シミュレーションを収集して起動する方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: aa223ab1abda110e32a9b9dc55e9dc76a1983321
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5b008dc25ee3b705f212b1fac1bf3779f1de8bda
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468437"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647515"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのペイロード自動化
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 

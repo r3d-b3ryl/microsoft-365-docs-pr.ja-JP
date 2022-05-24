@@ -12,14 +12,16 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、プラン 2 で指定した条件が満たされたときに起動する特定の手法とペイロードを含む自動シミュレーションMicrosoft Defender for Office 365作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: c5023c29c0526b7eba2329e8206479b9d322d42e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b80d73f6efe398465eecea9967c4bd8d929a51a2
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092715"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649411"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーション自動化
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
@@ -103,7 +105,7 @@ ms.locfileid: "65092715"
 
 - **テーマ別のフィルター**: 使用可能な値は、**アカウントのアクティブ化**、**アカウントの確認**、**課金**、**メールのクリーンアップ**、**ドキュメント受信**、**経費**、**FAX**、**財務レポート**、**受信メッセージ**、**請求書**、**受信したアイテム**、**ログイン アラート、受信****したメール**、**パスワード**、**支払い**、**給与**、**個人用プラン**、**検疫**、 **リモート作業**、**メッセージの確認**、**セキュリティ更新プログラム**、**サービスの中断**、**署名が必要**、**メールボックスストレージのアップグレード メールボックス**、**ボイスメール**、**およびその他** を確認します。
 
-- **ブランド別のフィルター**: 使用可能な値は、**American Express**、**Capital One**、**DHL**、**DocuSign**、**Dropbox**、**Facebook**、**First American**、**Microsoft**、**Netflix**、**スコシアバンク**、**SendGrid**、**スチュワート タイトル**、**テスコ**、**ウェルズ ファーゴ**、**Syrinx Cloud**、**その他** です。
+- **ブランド別のフィルター**: 使用可能な値は、**American Express**、**Capital One**、**DHL**、**DocuSign**、**Dropbox**、**Facebook**、**First American**、**Microsoft**、**Netflix**、**スコシアバンク**、**SendGrid**、**スチュワート タイトル**、**テスコ**、**ウェルズ Fargo**、**Syrinx Cloud**、**その他** です。
 
 - **業界別のフィルター**: 利用可能な値は、 **銀行**、 **ビジネス サービス**、 **コンシューマー サービス**、 **教育**、 **エネルギー**、 **建設**、 **コンサルティング**、 **金融サービス**、 **政府機関**、 **接待**、 **保険**、 **法務**、 **配送業者サービス**、 **IT**、 **医療**、 **製造**、 **小売**、 **通信**、 **不動産**、およびその **他**。
 

@@ -15,14 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Defender for Office 365 ソリューション試用版のプレイブック。
-ms.openlocfilehash: f23c45d117735997c219278621be7f314602cd8f
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a1adcf15bd051478e874b990a5e6b12f19d3b0c6
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130694"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648351"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>試用版プレイブック: Microsoft Defender for Office 365
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Microsoft Defender for Office 365 試用版のプレイブックへようこそ。 このプレイブックでは、Defender for Office 365 を使用して組織を保護する方法を説明し、90 日間の無料試用版を最大限に活用するサポートを行います。 Microsoft 推奨事項を使用して、Defender for Office 365 が、保護ポリシーの定義、組織への脅威の分析、攻撃への対応にどのように役立つ方法を説明します。
 

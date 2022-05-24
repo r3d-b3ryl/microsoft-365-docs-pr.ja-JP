@@ -21,14 +21,20 @@ ms.custom: ''
 description: 管理者は、セキュリティ設定を昇格させ、Microsoft 365組織の優先度アカウントのレポート、アラート、調査を使用する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c997f38e06444aab8ff6de550759959eb8f71d9f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 50d51bf2861d1ef1b9e4d9694fc9469fc5ec7406
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470771"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648637"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 の優先アカウントのセキュリティに関する推奨事項
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 すべてのユーザー アカウントが同じ会社情報にアクセスできるわけではありません。 一部のアカウントでは、財務データ、製品開発情報、重要なビルド システムへのパートナー アクセスなど、機密情報にアクセスできます。 侵害された場合、機密性の高い情報にアクセスできるアカウントは重大な脅威になります。 このような種類のアカウント _の優先度アカウントを_ 呼び出します。 優先度アカウントには、CEO、CISO、CFO、インフラストラクチャ管理者アカウント、ビルド システム アカウントなどが含まれます (ただし、これらに限定されません)。
 

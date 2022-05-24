@@ -18,14 +18,19 @@ ms.custom:
 description: 管理者は、展開に関する考慮事項と、Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 組織での攻撃のシミュレーションとトレーニングに関してよく寄せられる質問について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 57b4d684e52fd51a2ece279cc7322389a953a17c
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 4145dcd073ec97c43ac64eecdbd25c48612a9b83
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467799"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649023"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象**
+- [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
 攻撃シミュレーション トレーニングを使用すると、Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 組織は、現実世界の非武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 Terranova セキュリティと連携して提供されるハイパーターゲット トレーニングは、知識を向上させ、従業員の行動を変えるのに役立ちます。
 
@@ -49,7 +54,7 @@ URL 評価サービスでは、攻撃シミュレーション トレーニング
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされたフィッシング シミュレーションと管理者の URL
 
-フィッシング シミュレーション URL と管理者 URL の両方が、中間のセキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 例:
+フィッシング シミュレーション URL と管理者 URL の両方が、中間のセキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 例として以下のようなものがあります。
 
 - ファイアウォール
 - Web Application Firewall (WAF) ソリューション
@@ -116,7 +121,7 @@ URL 評価サービスでは、攻撃シミュレーション トレーニング
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーによってフィッシングとして報告されたメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザー アクティビティの詳細が提供されます。 例:
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザー アクティビティの詳細が提供されます。 例として以下のようなものがあります。
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を断ち切ったユーザー。
@@ -138,9 +143,9 @@ A: ターゲット ユーザーには、次のいくつかのオプションを�
 - すべてのユーザーを含めます (現在、ユーザーが 40,000 人未満の組織で使用できます)。
 - 特定のユーザーを選択します。
 - CSV ファイルからユーザーを選択します (1 行に 1 つのメール アドレス)。
-- グループベースのターゲット設定をAzure ADします。
+- Azure AD グループベースのターゲット設定。
 
-ターゲット ユーザーがAzure AD グループによって識別されるキャンペーンは、一般に管理が容易であることがわかりました。
+ターゲットユーザーが Azure AD グループによって識別されるキャンペーンは、一般に管理が容易であることがわかりました。
 
 ### <a name="q-are-there-any-limits-in-targeting-users-while-importing-from-a-csv-or-adding-users"></a>Q: CSV からインポートしたり、ユーザーを追加したりするときに、ユーザーのターゲット設定に制限はありますか?
 

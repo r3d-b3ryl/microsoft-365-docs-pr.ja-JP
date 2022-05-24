@@ -17,16 +17,14 @@ ms.collection:
 description: 電子メールをユーザーが安心して使用できるようにするため、Microsoft は各種ポリシーやテクノロジを用いて、ユーザーを保護しています。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 80eff003ec75eba68d1b194fe83d216fa2d013c0
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: ff526dc317935651d28843b36bb529edf4ceb006
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974193"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648681"
 ---
 # <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Microsoft 365にメールを送信する非顧客向けサービス
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 電子メールの不正使用、迷惑メール、詐欺メール (フィッシング詐欺) は、引き続き電子メール エコシステム全体にとって負担となっています。 Microsoft では、電子メールの使用に対するユーザーの信頼を維持するために、ユーザーの保護に役立つさまざまなポリシーとテクノロジを用意しています。 ただし、正当な電子メールが不利を被らないようにするべきであることも理解しています。 そのため、送信者が送信の評判をプロアクティブに管理することで、Microsoft 365 ユーザーに電子メールを配信する機能を向上させるための一連のサービスを確立しました。
 

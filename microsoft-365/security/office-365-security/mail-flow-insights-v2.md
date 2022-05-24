@@ -14,16 +14,16 @@ description: 管理者は、セキュリティ & コンプライアンス セン
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eef35eedd5a7f182160b9a6a8b27a59cf9cdd9c0
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5850612fbd0de89e5eafe101f55d368b0f4b0c8f
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129180"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648725"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センター のメール フロー インサイト
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -37,27 +37,16 @@ ms.locfileid: "65129180"
 使用可能な分析情報は次のとおりです。
 
 - [自動転送されたメッセージのインサイト](mfi-auto-forwarded-messages-report.md)
-
 - [可能なメール ループ分析情報](mfi-mail-loop-insight.md) <sup>1 を</sup>修正する
-
 - [低速メール フロー ルールの分析情報](mfi-slow-mail-flow-rules-insight.md) <sup>1</sup> を修正する
-
 - [メール フローのマップ](mfi-mail-flow-map-report.md)
-
 - [新しいドメインが転送される電子メール分析情報](mfi-new-domains-being-forwarded-email.md)<sup>2</sup>
-
 - [メール分析情報を転送する新しいユーザー](mfi-new-users-forwarding-email.md) <sup>2</sup>
-
 - [承認されていないドメインのレポート](mfi-non-accepted-domain-report.md)
-
 - [配信不能レポート](mfi-non-delivery-report.md)
-
 - [送信および受信メール フローのインサイト](mfi-outbound-and-inbound-mail-flow.md)
-
 - [キューのインサイト](mfi-queue-alerts-and-queues.md)
-
 - [SMTP Auth クライアントのインサイトとレポート](mfi-smtp-auth-clients-report.md)
-
 - [トップドメインのメール フローの状態洞察](mfi-domain-mail-flow-status-insight.md)　
 
 <sup>1</sup> この分析情報は、問題が検出された後にのみ、[メール フロー] ダッシュボードの **[推奨** される情報] 領域に表示されます。 それ以外の場合は、表示されません。
@@ -80,7 +69,5 @@ ms.locfileid: "65129180"
 アクセス許可の詳細については、「 [セキュリティ & コンプライアンス センターのアクセス許可](permissions-in-the-security-and-compliance-center.md) 」と「セキュリティ [& コンプライアンス センターへのアクセス権をユーザーに付与する](grant-access-to-the-security-and-compliance-center.md)」を参照してください。
 
 ## <a name="where-to-find-the-mail-flow-dashboard"></a>メール フロー ダッシュボードの場所
-
-セキュリティ & コンプライアンス センターを開き <https://protection.office.com>、[ **メール フロー**] を展開して、[ **ダッシュボード**] を選択します。
 
 メール フロー ダッシュボードに直接移動するには、を開きます <https://protection.office.com/mailflow/dashboard>。

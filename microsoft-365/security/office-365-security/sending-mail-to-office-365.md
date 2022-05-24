@@ -19,16 +19,14 @@ ms.custom:
 description: ゲスト送信者として、Microsoft 365のユーザーに電子メールを配信する機能を向上させる方法について説明します。 また、迷惑メール&フィッシングの試行をゲストとして報告する方法についても説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6d0f594da174236ce03ab0fd9b2af045f57f9f0
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 94bd79493a56bd288d21be255915b046b2bb0178
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535904"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649189"
 ---
 # <a name="sending-mail-to-microsoft-365"></a>Microsoft 365にメールを送信する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 これらの記事は、外部送信者の評判を向上させ、Microsoft 365でユーザーに電子メールを配信する機能を向上させるために役立ちます。 また、迷惑メールやフィッシング詐欺の試みを報告する方法に関する情報も、自分でMicrosoft 365ユーザーでない場合でも提供されます。
 

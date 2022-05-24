@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 41fa5aece6f8c18ef16dbf624f90a1ead25b45f5
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 33eff726609db3d7f2d07f4a5bcf4955536c086c
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174934"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647285"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
@@ -36,13 +36,45 @@ ms.locfileid: "65174934"
 
 - Windows 10またはWindows 11、または Server 2019 または Windows Server 2022 Windows実行している必要があります。
 - Microsoft Defender for Endpoint サービスにデバイスをオンボードするには、[こちらを参照してください](onboard-configure.md)。
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender</a>データの受信を開始するには、高度なセキュリティを備えたWindows Defenderファイアウォールの **監査イベント** を有効にする必要があります。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender</a>データの受信を開始するには、Advanced Security を使用してWindows Defender ファイアウォールの **監査イベント** を有効にする必要があります。
   - [フィルター プラットフォームのパケット ドロップの監査](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [プラットフォーム接続のフィルター処理の監査](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - グループ ポリシー オブジェクト エディター、ローカル セキュリティ ポリシー、またはauditpol.exe コマンドを使用して、これらのイベントを有効にします。 詳細については、「[こちら](/windows/win32/fwp/auditing-and-logging)」をご覧ください。
   - 2 つの PowerShell コマンドは次のとおりです。
     - **auditpol /set /サブカテゴリ:"Filtering Platform Packet Drop" /failure:enable**
     - **auditpol /set /サブカテゴリ:"Filtering Platform Connection" /failure:enable**
+```powershell
+param (
+    [switch]$remediate
+)
+try {
+
+    $categories = "Filtering Platform Packet Drop,Filtering Platform Connection"
+    $current = auditpol /get /subcategory:"$($categories)" /r | ConvertFrom-Csv    
+    if ($current."Inclusion Setting" -ne "failure") {
+        if ($remediate.IsPresent) {
+            Write-Host "Remediating. No Auditing Enabled. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})"
+            $output = auditpol /set /subcategory:"$($categories)" /failure:enable
+            if($output -eq "The command was successfully executed.") {
+                Write-Host "$($output)"
+                exit 0
+            }
+            else {
+                Write-Host "$($output)"
+                exit 1
+            }
+        }
+        else {
+            Write-Host "Remediation Needed. $($current | ForEach-Object {$_.Subcategory + ":" + $_.'Inclusion Setting' + ";"})."
+            exit 1
+        }
+    }
+
+}
+catch {
+    throw $_
+} 
+```
 
 ## <a name="the-process"></a>プロセス
 
@@ -52,7 +84,7 @@ ms.locfileid: "65174934"
 - イベントを有効にすると、Microsoft 365 Defenderはデータの監視を開始します。
   - リモート IP、リモート ポート、ローカル ポート、ローカル IP、コンピューター名、受信接続と送信接続間のプロセス。
 - 管理者は、[ここで](https://security.microsoft.com/firewall)Windowsホスト ファイアウォール アクティビティを確認できるようになりました。
-  - [カスタム レポート スクリプト](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)をダウンロードして、Power BIを使用してWindows Defenderファイアウォールアクティビティを監視することで、追加のレポートを容易にすることができます。
+  - [カスタム レポート スクリプト](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)をダウンロードして、Power BIを使用してWindows Defender ファイアウォールアクティビティを監視することで、追加のレポート作成を容易にすることができます。
   - データが反映されるまでに最大で 12 時間かかる場合があります。
 
 ## <a name="supported-scenarios"></a>サポートされるシナリオ
@@ -87,4 +119,4 @@ Ring0 プレビューでは、次のシナリオがサポートされます。
 
 クエリを実行できるようになり、過去 30 日間のすべての関連ファイアウォール イベントを調べることができます。
 
-追加のレポートやカスタム変更を行う場合は、クエリをPower BIにエクスポートして詳細な分析を行うことができます。 カスタム レポートは、[カスタム レポート スクリプト](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)をダウンロードして、Power BIを使用してWindows Defenderファイアウォール アクティビティを監視することで容易に行うことができます。
+追加のレポートやカスタム変更を行う場合は、クエリをPower BIにエクスポートして詳細な分析を行うことができます。 カスタム レポートは、[カスタム レポート スクリプト](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)をダウンロードして、Power BIを使用してWindows Defender ファイアウォールアクティビティを監視することで容易に行うことができます。

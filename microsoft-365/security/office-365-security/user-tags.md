@@ -17,14 +17,20 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 でユーザー タグを持つユーザーの特定のグループを識別する方法について説明します。 タグ フィルターは、タグ付けされたユーザーをすばやく識別するために、Microsoft Defender for Office 365のアラート、レポート、調査全体で使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7b9584b41ded7edd28fb1501ee4e5c3a1febd74
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286408"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647471"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365のユーザー タグ
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ユーザー タグは、[Microsoft Defender for Office 365](defender-for-office-365.md)内のユーザーの特定のグループの識別子です。 ユーザー タグには、次の 2 種類があります。
 
@@ -47,7 +53,7 @@ ms.locfileid: "65286408"
 - [上位の送信者と受信者のレポート](view-email-security-reports.md#top-senders-and-recipients-report)
 - [攻撃シミュレーション](attack-simulation-training.md#target-users)
 - [キャンペーン ビュー](campaigns.md)
-- [管理者とユーザーの申請](admin-submission.md)
+- [管理とユーザーの申請](admin-submission.md)
 - [検疫](quarantine.md)
 - 優先度アカウントの場合は、Exchange管理センター (EAC) の [[優先度アカウントの電子メールの問題] レポート](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)を使用できます。
 
@@ -61,7 +67,7 @@ ms.locfileid: "65286408"
 
 - この記事の手順を実行するには、Microsoft 365 Defender ポータルでアクセス許可を割り当てる必要があります。
   - カスタム ユーザー タグを作成、変更、削除するには、 **組織の管理** または **セキュリティ管理者** の役割グループのメンバーである必要があります。
-  - Priority Account システム タグのメンバーを追加および削除するには、**セキュリティ管理者** および **Exchange管理者** ロール グループのメンバーである必要があります。
+  - Priority Account システム タグのメンバーを追加および削除するには、**セキュリティ管理者** と **Exchange 管理** ロール グループのメンバーである必要があります。
   - 既存のカスタム ユーザー タグのメンバーを追加および削除するには、 **組織の管理** または **セキュリティ管理者** の役割グループのメンバーである必要があります。
   - ユーザー タグへの読み取り専用アクセスの場合は、 **グローバル リーダー**、 **セキュリティ オペレーター**、または **セキュリティ 閲覧者** ロール グループのメンバーである必要があります。
 
@@ -146,6 +152,6 @@ ms.locfileid: "65286408"
 
 3. 表示される確認ダイアログで警告を読み、 **はい、[削除**] をクリックします。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 [Microsoft Defender for Office 365で優先度アカウントを構成して確認する](configure-review-priority-account.md)

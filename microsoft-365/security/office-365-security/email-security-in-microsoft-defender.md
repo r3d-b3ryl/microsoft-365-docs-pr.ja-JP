@@ -17,14 +17,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: da555769cbff177fff7de4ee4a25908e1eee3782
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 637e387ca457c9795892791a1a6d9326107fc6fb
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475127"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65648197"
 ---
 # <a name="email-security-with-threat-explorer-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の脅威エクスプローラーを使用した電子メール セキュリティ
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 この記事の内容:
 
@@ -36,11 +42,6 @@ ms.locfileid: "64475127"
 > これは、**脅威エクスプローラー (エクスプローラー)**、**電子メール セキュリティ**、**エクスプローラーとリアルタイム検出** (ツール間の違い、操作に必要なアクセス許可など) に関する **3 記事シリーズ** の一部です。 このシリーズの他の 2 つの記事は、[脅威エクスプローラーと脅威エクスプローラーでの脅威の検出](threat-hunting-in-threat-explorer.md)[とリアルタイム検出です](real-time-detections.md)。
 
 この記事では、Microsoft 365セキュリティ機能によって電子メールで検出されたマルウェアやフィッシングの試行を表示し、調査する方法について説明します。
-
-**適用対象:**
-
-- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
-- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ## <a name="view-malware-detected-in-email"></a>電子メールで検出されたマルウェアを表示する
 

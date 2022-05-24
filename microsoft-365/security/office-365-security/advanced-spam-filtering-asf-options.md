@@ -18,16 +18,14 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) のスパム対策ポリシーで使用できる高度なスパム フィルター (ASF) 設定について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a34507866be90a197fcbed7bd1038cbcec61c84
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 75fca937049e71576e1dd599b4cc0f7fba2a2211
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682309"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647669"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパム フィルター (ASF) 設定
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -56,7 +54,7 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
   - **既定の X ヘッダー テキスト (*AddXHeader*) の追加**: X ヘッダー値 `X-CustomSpam: This message was filtered by the custom spam filter option` がメッセージに追加されます。 受信トレイ ルールまたはメール フロー ルール (トランスポート ルールとも呼ばれます) でこの値を使用して、メッセージの配信に影響を与えることができます。
   - **Bcc メッセージの送信 (*BccMessage*)**: 指定した電子メール アドレス (PowerShell の *TestModeBccToRecipients* パラメーター値) がメッセージの Bcc フィールドに追加され、メッセージは追加の Bcc 受信者に配信されます。 Microsoft 365 Defender ポータルでは、複数のメール アドレスをセミコロン (;)で区切ります。 PowerShell では、複数の電子メール アドレスをコンマで区切ります。
 
-  **注意**:
+  **注**:
 
   - テスト モードは、次の ASF 設定では使用できません。
     - **条件付き送信者 ID のフィルター処理: ハード エラー** (*MarkAsSpamFromAddressAuthFail*)

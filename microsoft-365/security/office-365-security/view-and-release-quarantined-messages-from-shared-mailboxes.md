@@ -17,14 +17,21 @@ ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示して操作する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f136f373fa63be7dab6cfbd63e44b33b4eca2ff
-ms.sourcegitcommit: 2697938d2d4fec523b501c5e7b0b8ec8f34e59b0
+ms.openlocfilehash: 2613d3b8be200db3a9107355a27b0dd79ce537d3
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "63450536"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65647332"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
+
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
+
+**適用対象:**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
+- [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 ユーザーは、「EOP で検疫されたメッセージを検索して解放する」の説明に従って、受信者の 1 つである [検疫済みメッセージを](find-and-release-quarantined-messages-as-a-user.md)管理できます。 ただし、「Exchange Onlineの **共有メールボックス**」で説明されているように、ユーザーがメールボックスへのフル アクセスと送信または代理で送信のアクセス許可を持つ [共有メールボックス](/exchange/collaboration-exo/shared-mailboxes)についてはどうでしょうか。
 
@@ -45,7 +52,7 @@ ms.locfileid: "63450536"
 
 - 共有メールボックスの検疫操作に関しては、入れ子になったセキュリティ グループを使用して共有メールボックスへのアクセスを許可する場合は、入れ子になったグループのレベルを 2 つ以下にすることをお勧めします。 たとえば、グループ A はグループ B のメンバーであり、グループ C のメンバーです。共有メールボックスにアクセス許可を割り当てるには、ユーザーをグループ A に追加してから、グループ C を共有メールボックスに割り当てないでください。  
 
-- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーは _、RecipientAddress_ パラメーターの値に共有メールボックスの電子メール アドレスを含む [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットを使用してメッセージを識別する必要があります。 例:
+- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーは _、RecipientAddress_ パラメーターの値に共有メールボックスの電子メール アドレスを含む [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットを使用してメッセージを識別する必要があります。 例として以下のようなものがあります。
 
   ```powershell
   Get-QuarantineMessage -RecipientAddress officeparty@contoso.com
