@@ -124,7 +124,7 @@ ms.locfileid: "65363150"
 
 | **旧称** | **New Name/新しい名前** | **説明** |
 |:----------------|:-------------|:----------------|
-| Microsoft 365 の高度な監査 <br><br> Microsoft 365 基本的な監査 | Microsoft Purview 監査 (プレミアム) <br><br> Microsoft Purview 監査 (標準)| 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 詳細については、「[Microsoft Purview Advanced 監査 (プレミアム)](advanced-audit.md)」「[Microsoft Purview Advanced 監査 (標準)](set-up-basic-audit.md)」を参照してください。 |
+| Microsoft 365 の高度な監査 <br><br> Microsoft 365 基本的な監査 | Microsoft Purview 監査 (プレミアム) <br><br> Microsoft Purview 監査 (Standard)| 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 詳細については、「[Microsoft Purview Advanced 監査 (Premium)](advanced-audit.md)」「[Microsoft Purview Advanced 監査 (Standard)](set-up-basic-audit.md)」を参照してください。 |
 | Microsoft 365 でのコミュニケーション コンプライアンス | Microsoft Purview でのコミュニケーション コンプライアンス | コミュニケーション コンプライアンスは、企業のコミュニケーション チャネルやポリシー違反の迅速な検出、取得、是正措置をサポートすることで、リスクを最小化します。 詳細については、「[Microsoft Purview コミュニケーション コンプライアンス](communication-compliance-solution-overview.md)」を参照してください。 |
 | Microsoft コンプライアンス マネージャー | Microsoft Purview コンプライアンス マネージャー | コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。詳細については、「[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)」を参照してください。 |
 | Microsoft 365 カスタマー キー | Microsoft Purview カスタマー キー | カスタマー キーは、承認されていないシステムや個人によるデータの閲覧を防止するための追加の保護を提供し、Microsoft データセンターの Bitlocker ディスク暗号化を補完します。 詳細については、「[Microsoft Purview カスタマー キー](customer-key-overview.md)」を参照してください。 |
@@ -138,7 +138,7 @@ ms.locfileid: "65363150"
 | Office 365 Message Encryption | Microsoft Purview のメッセージの暗号化 | Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。詳細については、「[Microsoft Purview Message Encryption](ome.md)」を参照してください。 |
 | Microsoft 365 での特権アクセス管理 | Microsoft Purview Privileged Access Management | 特権アクセス管理は、機密データへの常時アクセスや重要な構成設定へのアクセスを制限することで、組織を情報漏えいから守り、コンプライアンスのベスト プラクティスに適合させるのに役立ちます。 詳細については、「[Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md)」を参照してください。 |
 | Microsoft データ コネクタ | Microsoft Purview データ コネクタ | Microsoft 365 を使用すると、管理者はソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからのサードパーティ データを、Microsoft 365 組織のメールボックスにインポートしてアーカイブすることができます。 詳細については、「[Microsoft Purview データ コネクタ](compliance-extensibility.md)」を参照してください。 |
-| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview eDiscovery (プレミアム)](overview-ediscovery-20.md)」「[Microsoft Purview eDiscovery (標準)](get-started-core-ediscovery.md)」を参照してください。 |
+| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md)」「[Microsoft Purview eDiscovery (Standard)](get-started-core-ediscovery.md)」を参照してください。 |
 | Microsoft 365 コンプライアンス センター | Microsoft Purview コンプライアンス ポータル | Microsoft 365 E5 Compliance スイート内のソリューションとソリューション カタログにアクセスするための管理者ポータル。 詳細については、「[Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)」を参照してください。 |
 
 ## <a name="march-2022"></a>2022 年 3 月
