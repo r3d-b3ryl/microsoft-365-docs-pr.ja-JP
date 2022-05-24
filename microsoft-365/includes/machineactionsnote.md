@@ -7,12 +7,12 @@ manager: dansimp
 ms.author: macapara
 author: mjcaparas
 ms.prod: w10
-ms.openlocfilehash: 13d9d849ec6b6819e6824ba7b2b5d7a139bc81ad
-ms.sourcegitcommit: f88a0ec621e7d9bc5f376eeaf70c8a9800711f88
+ms.openlocfilehash: 6a280e10b89fa8934186aab2a62e30b4ac3b6114
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "59357388"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65650416"
 ---
->[!Note]
+> [!NOTE]
 > このページでは、API を使用してマシン アクションを実行することに重点を置いています。 Microsoft Defender for Endpoint[を使用した応答アクション](/microsoft-365/security/defender-endpoint/respond-machine-alerts)機能の詳細については、コンピューターでの応答アクションの実行に関するページを参照してください。
