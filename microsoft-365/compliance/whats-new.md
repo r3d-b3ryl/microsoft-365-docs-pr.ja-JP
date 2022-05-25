@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターへの新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 今月起こったことついてご覧ください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4af9cb3073e4fa150a2683c2dd2f125336ef01b8
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
-ms.translationtype: HT
+ms.openlocfilehash: 20a8a96146b7f65ef3f8ccec4f099b91d74822a0
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363150"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670104"
 ---
 # <a name="whats-new-in-microsoft-purview"></a>Microsoft Purview の最新情報
 
@@ -151,7 +151,7 @@ ms.locfileid: "65363150"
 
 - [改善のための処置の操作](compliance-manager-improvement-actions.md)、[コンプライアンス マネージャーの使用を開始する](compliance-manager-setup.md) - 自動的に監視およびテストできる改善のための処置 (「継続的なコンプライアンス評価」) に関する情報を追加しました。これには、ある処置のテスト状態を別の処置のテスト状態に親和させる新しい機能が含まれます。
 
-### <a name="data-classification"></a>データ分類
+### <a name="data-classification"></a>データの分類
 
 - [コンテンツ エクスプローラーを開始する](data-classification-content-explorer.md) - ライセンス セクションでサービスの説明を指摘する、チーム ガイダンスを追加しました。
 
@@ -168,15 +168,15 @@ ms.locfileid: "65363150"
 - [エンドポイント データ損失防止の構成](dlp-configure-endpoint-settings.md) - 制限されたアプリ グループのパブリック プレビュー向け新機能。
 - [データ損失防止ポリシー参照](dlp-policy-reference.md) - 制限付きアプリ グループのパブリック プレビュー用に更新されました。
 - [Power BI のデータ損失防止の使用を開始する](dlp-powerbi-get-started.md) - パブリック プレビュー向け新機能。
+- 
+### <a name="information-protection"></a>情報保護
 
+- [2 バイト文字セットのリリース ノート向けサポート](mip-dbcs-relnotes.md) - macOS 向けのガイダンスが追加されました。
+- 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
 - [インサイダー リスクの管理を開始する](insider-risk-management-configure.md) - おすすめの操作ガイダンスに新しいタスクが追加されました。
 - [インサイダー リスク管理設定の使用を開始する](insider-risk-management-settings.md) - 通知とメール アラート機能の新しい更新情報、分析通知の新しい更新情報。
-
-### <a name="microsoft-information-protection"></a>Microsoft Information Protection
-
-- [2 バイト文字セットのリリース ノート向けサポート](mip-dbcs-relnotes.md) - macOS 向けのガイダンスが追加されました。
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 

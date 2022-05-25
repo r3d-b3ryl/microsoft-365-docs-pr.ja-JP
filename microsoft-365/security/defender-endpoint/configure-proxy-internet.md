@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 787da143bdbbc2d21610ba14d0fe7c955e4e976d
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: 1faff638c9b33b933277dc74248c2d7daa43331c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823402"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669674"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -152,7 +152,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 2. 次のコマンドを入力して、**Enter** キーを押します。
 
-   ```PowerShell
+   ```command prompt
    netsh winhttp set proxy <proxy>:<port>
    ```
 
@@ -160,7 +160,7 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 
 winhttp プロキシをリセットするには、次のコマンドを入力し、**Enter** キーを押します。
 
-```PowerShell
+```command prompt
 netsh winhttp reset proxy
 ```
 
@@ -183,7 +183,7 @@ netsh winhttp reset proxy
 ファイアウォールで、地理列が WW であるすべての URL を開きます。 地理列が WW ではない行の場合は、特定のデータの場所の URL を開きます。 データの場所の設定を確認するには、「[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/data-retention-settings) のデータ保存場所の確認とデータ保持設定の更新」を参照してください。
 
 > [!NOTE]
-> 1803 以前のバージョンで実行されている Windows デバイスには `settings-win.data.microsoft.com` が必要です。<br>
+> 1803 以前のバージョンで実行されている Windows デバイスには `settings-win.data.microsoft.com` が必要です。  <br>
 >
 > v20 を含む URL は、バージョン 1803 以降の Windows デバイスを使用している場合にのみ必要です。 たとえば、バージョン 1803 以降を実行し、米国の データ ストレージ地域にオンボードされている Windows デバイスには、`us-v20.events.data.microsoft.com` が必要です。
 >
@@ -249,13 +249,13 @@ netsh winhttp reset proxy
 
 4. 次のコマンドを入力して、**Enter** キーを押します。
 
-    ```PowerShell
+    ```command prompt
     HardDrivePath\MDEClientAnalyzer.cmd
     ```
 
     *HardDrivePath* を MDEClientAnalyzer ツールがダウンロードされたパスに置き換えます。例えば：
 
-    ```PowerShell
+    ```command prompt
     C:\Work\tools\MDEClientAnalyzer\MDEClientAnalyzer.cmd
     ```
 

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ROBOTS: NO INDEX, NO FOLLOW
 description: OutlookでBookingsを使用して、他のユーザーがOutlookで自分と一緒に会議をスケジュールできるようにします。
-ms.openlocfilehash: 65e3e751e883ed498cdf5b4ccae2b1f2e587f756
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b77b9b0450f77014e304c232aa46f3427dcbbe22
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469213"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670142"
 ---
 # <a name="bookings-in-outlook"></a>OutlookのBookings
 
@@ -128,7 +128,7 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
 2. 次のコマンドを実行して、個人の **EwsApplicationAccessPolicy** を確認します。
 
    ```PowerShell
-   Get-CASMailbox -Identity adam@contoso.com| Format-List EwsApplicationAccessPolicy,Ews*List
+   Get-CASMailbox -Identity adam@contoso.com | Format-List EwsApplicationAccessPolicy,Ews*List
    ```
 
     **A**. **EwsApplicationAccessPolicy** の値が **EnforceAllowList** の場合、EwsAllowList に指定されているアプリケーションだけに EWS と REST へのアクセスが許可されます。
@@ -150,7 +150,7 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
     - このユーザーのOutlookでBookingsをオフにするには、次のコマンドを実行して **、MicrosoftOWSPersonalBookings** を **EnforceBlockList** に追加します。
 
    ```PowerShell
-   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```
 
     - このユーザーのOutlookでBookingsを有効にするには、次のコマンドを実行して、**EnforceBlockList から MicrosoftOWSPersonalBookings** が存在する場合は削除します。
@@ -164,5 +164,5 @@ PowerShell を使用して次のコマンドExchange Online実行する必要が
     - このユーザーのOutlookでBookingsをオフにするには、次のコマンドを実行して **、EnforceBlockList** ポリシーを設定し **、MICROSOFTOWSPersonalBookings** を EWSBlockList に追加します。
 
     ```PowerShell
-   Set-CASMailbox -Identity Adam -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
+   Set-CASMailbox -Identity adam@contoso.com -EwsApplicationAccessPolicy EnforceBlockList -EWSBlockList @{Add="MicrosoftOWSPersonalBookings"}
    ```

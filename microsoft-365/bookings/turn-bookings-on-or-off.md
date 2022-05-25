@@ -10,12 +10,12 @@ ms.custom: admindeeplinkMAC
 ms.localizationpriority: medium
 ms.assetid: 5382dc07-aaa5-45c9-8767-502333b214ce
 description: Microsoft 365でMicrosoft Bookingsにアクセスする方法について説明します。
-ms.openlocfilehash: 98c6ae99bceada7649dc823ca88669ae0081fc10
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: ecd0e970d1e672a7c40bb1876f84d4e55a7dbff0
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637298"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663538"
 ---
 # <a name="turn-microsoft-bookings-on-or-off"></a>Microsoft Bookings を有効または無効にする
 
@@ -87,7 +87,7 @@ PowerShell コマンドレット [Set-OrganizationConfig](/powershell/module/exc
 
 ## <a name="allow-only-selected-users-to-create-bookings-calendars"></a>選択したユーザーのみがBookings予定表を作成できるようにする
 
-ポリシー制限を使用すると、ライセンスを持つユーザーがBookings予定表を作成できないように制限できます。 まず、組織全体のBookingsを有効にする必要があります。 組織内のすべてのユーザーにBookingsライセンスが付与されますが、ポリシーに含まれるユーザーのみがBookings予定表を作成し、作成した予定表にアクセスできるユーザーを完全に制御できます。
+ポリシー制限を使用すると、ライセンスを持つユーザーがBookings予定表を作成できないように制限できます。 組織内のすべてのユーザーにBookingsライセンスが付与されますが、ポリシーに含まれるユーザーのみがBookings予定表を作成し、作成した予定表にアクセスできるユーザーを完全に制御できます。
 
 このポリシーに含まれているユーザーは、新しいBookings予定表を作成でき、既存のBookings予定表に任意の容量 (管理者ロールを含む) のスタッフとして追加できます。 このポリシーに含まれていないユーザーは、新しいBookingsカレンダーを作成できず、そうしようとするとエラー メッセージが表示されます。
 

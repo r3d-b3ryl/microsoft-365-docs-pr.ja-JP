@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1279f7271abbd4086c946492e95daa52962dbae5
-ms.sourcegitcommit: babc2dad1c0e08a9237dbe4956ffd21c0214db83
+ms.openlocfilehash: a9e46b428500b41b143585434f7a16c13227db1c
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "62345633"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669762"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 
@@ -64,7 +64,7 @@ Defender for Endpoint のオフボード デバイス。
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
-> - ユーザーは 'Global Admin' AD ロールが必要です
+> - ユーザーは "グローバル 管理" AD ロールを必要とする
 > - ユーザーは、デバイス グループの設定に基づいてデバイスにアクセスできる必要があります (詳細については、「 [デバイス グループの作成と管理](machine-groups.md) 」を参照してください)
 
 ## <a name="http-request"></a>HTTP 要求
@@ -77,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -86,13 +86,13 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 ---|---|---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは 201 - 作成された応答コードと応答本文の [Machine Action](machineaction.md) を返します。
+成功した場合、このメソッドは、応答本文に 200 個の作成済み応答コードと [Machine Action](machineaction.md) を返します。
 
 ## <a name="example"></a>例
 

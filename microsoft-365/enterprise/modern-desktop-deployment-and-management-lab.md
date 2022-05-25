@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: WindowsとOffice展開ラボ キットにアクセスする場所について説明します。
-ms.openlocfilehash: e90a52a23c6c79a3293d381c0503480abc90c2d7
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463167"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669213"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows と Office 365 展開ラボ キット
 
@@ -97,9 +97,15 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 - BitLocker
 - Microsoft Defender ウイルス対策
 - Windows Hello for Business
+- Windows Defender Credential Guard       
+- Microsoft Defender Application Guard     
+- Windows Defender Exploit Guard             
+- Windows Defender Application Control   
+- Microsoft Defender for Endpoint 
+
 
 > [!NOTE]
-> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 Windows 10 ラボの有効期限は 2022 年 8 月 11 日です。 Windows 11 ラボの有効期限は 2022 年 8 月 7 日です。 新しいバージョンは、有効期限が切れる前に発行されます。
+> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 これらのラボの評価ソフトウェアは、アクティブ化後 90 日から 120 日で期限切れになります。 ラボの新しいバージョンは、2022 年 8 月に公開される予定です。 
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 

@@ -20,17 +20,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid: MET150
 description: ビジネス サブスクリプションに対して課金される頻度を変更する方法について説明します。
-ms.date: 04/02/2021
-ms.openlocfilehash: dcb3d20d12dec8451481626538f759aef627a221
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/24/2022
+ms.openlocfilehash: 366d35b81d5c7ea84d5f9cd471ea4f6b7feac984
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321153"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669235"
 ---
 # <a name="change-your-billing-frequency"></a>請求頻度を変更する
 
-サブスクリプションを購入する場合、月単位の課金か年単位の課金かを選択できます。 サブスクリプションの請求頻度を変更するには、次の手順を実行します。
+サブスクリプションを購入するときは、課金頻度を選択します。 サブスクリプションの請求頻度を変更するには、次の手順を実行します。
 
 1. 管理センターの [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の **課金**\>] ページに移動します。
 2. **[製品]** タブで、変更するサブスクリプションを選択します。

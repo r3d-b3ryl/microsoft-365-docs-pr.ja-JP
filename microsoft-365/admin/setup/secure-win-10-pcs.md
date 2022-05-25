@@ -25,18 +25,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを設定した後、Windows 10 PC をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: d0f2842c69127893e512822a8d91dfd37a4a0e48
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 872fce9124f6a27dd884ed9d740baa9d195d8f95
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622910"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663450"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
 
 この記事は Microsoft 365 Business Premium に適用されます。
 
-Microsoft 365 Business Premium[を設定](business-set-up.md)したら、組織内のWindows 10 コンピューターを盗難から保護し、ウイルスやマルウェアなどの悪意のある脅威から保護します。
+Microsoft 365 Business Premium[を設定](/microsoft-365/business-premium/m365bp-setup)したら、組織内のWindows 10 コンピューターを盗難から保護し、ウイルスやマルウェアなどの悪意のある脅威から保護します。
 
 ## <a name="watch-secure-your-windows-10-pcs"></a>ウォッチ: Windows 10 PC をセキュリティで保護する
 

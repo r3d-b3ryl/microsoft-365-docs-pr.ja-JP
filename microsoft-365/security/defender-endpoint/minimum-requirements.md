@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 754537d11a4c183cd1057b94d583a31543d9e4a5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
-ms.translationtype: HT
+ms.openlocfilehash: 355fc0f367c415ae679259195e18ff3920812f4a
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467359"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670160"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の最小要件
 
@@ -89,6 +89,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
   - Windows Server 2019
   - Windows Server 2022
 - Windows Virtual Desktop
+- Windows 365
 
 ネットワーク上のデバイスは、これらのエディションのいずれかを実行している必要があります。
 

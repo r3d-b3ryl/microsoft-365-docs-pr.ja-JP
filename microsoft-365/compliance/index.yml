@@ -14,12 +14,12 @@ metadata:
   ms.author: robmazz
   ms.date: 04/22/2022
   ms.localizationpriority: high
-  ms.openlocfilehash: b848abdb739d09595e9be91b8217acf09b01dbd2
-  ms.sourcegitcommit: c33af120921d3c4fb5c362dac3e74f0ab3d1e58d
+  ms.openlocfilehash: fe8cae943a031b6390832df1e0b85305ce4886dd
+  ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/06/2022
-  ms.locfileid: "65249599"
+  ms.lasthandoff: 05/25/2022
+  ms.locfileid: "65670126"
 landingContent:
 - title: クラウド、アプリ、デバイス全体で機密データを保護する
   linkLists:
@@ -69,8 +69,10 @@ landingContent:
     links:
     - text: ゼロ トラストでデータを保護する
       url: /security/zero-trust/data
-    - text: Microsoft Purview の情報保護ソリューションを展開する
+    - text: 情報保護ソリューションの展開
       url: /microsoft-365/compliance/information-protection-solution
+    - text: データ ガバナンス ソリューションをデプロイする
+      url: /microsoft-365/compliance/data-governance-solution
     - text: データ プライバシー規制用の情報保護を展開する
       url: /microsoft-365/solutions/information-protection-deploy
     - text: 情報保護とコンプライアンスの図を探す

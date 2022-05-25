@@ -19,12 +19,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 2b88e6413bb8ef520c3049f63cca60703a509be3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 04eee4c44e0cf2b712ecab84b18837d7b3705cef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637915"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669806"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -48,13 +48,15 @@ Windows バージョン間の攻撃面の縮小機能
 
 次のいずれかのエディションとバージョンのWindowsを実行しているデバイスに対して、攻撃面の縮小ルールを設定できます。
 
+- [Windows 11 Pro](/windows/whats-new/windows-11-overview)
+- [Windows 11 Enterprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)
 - Windows 10 Pro[バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
 - Windows 10 Enterprise[バージョン 1709](/windows/whats-new/whats-new-windows-10-version-1709) 以降
 - Windows Server [バージョン 1803 (半期チャネル)](/windows-server/get-started/whats-new-in-windows-server-1803) 以降
-- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
-- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
 - [Windows Server 2012 R2](/windows/win32/srvnodes/what-s-new-for-windows-server-2012-r2)
-- Windows Server 2022
+- [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)
+- [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+- [Windows Server 2022](/windows-server/get-started/whats-new-in-windows-server-2022)
 
 攻撃表面の縮小ルールの機能セット全体を使用するには、次のものが必要です。
 
@@ -107,8 +109,8 @@ ASR ルールでは、環境変数とワイルドカードがサポートされ�
 2. MEM マネージド デバイスの攻撃面削減ルールでは、さまざまなポリシーの設定を統合して、デバイスごとにポリシーのスーパーセットを作成する動作がサポートされるようになりました。 競合していない設定のみがマージされますが、競合している設定はルールのスーパーセットに追加されません。 以前は、2 つのポリシーに 1 つの設定の競合が含まれていた場合、両方のポリシーに競合のフラグが設定され、どちらのプロファイルの設定も展開されませんでした。 攻撃対象の縮小ルールのマージ動作は次のとおりです。
    - 次のプロファイルからの攻撃表面の縮小ルールは、ルールが適用されるデバイスごとに評価されます。
      - デバイス>構成ポリシー>エンドポイント保護プロファイル> **Microsoft Defender Exploit Guard** >  [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) です。
-     - エンドポイント セキュリティ>**攻撃面の縮小ポリシーAttack** >  [surface reduction ルール](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune)。
-     - エンドポイント セキュリティ>セキュリティ ベースライン> **Microsoft Defender ATP BaselineAttack** >  [Surface Reduction Rules](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules)。
+     - エンドポイント セキュリティ> **攻撃面の縮小ポリシー** > [攻撃面の削減規則](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune)。
+     - エンドポイント セキュリティ> セキュリティ ベースライン> **Microsoft Defender ATP ベースライン** > [攻撃表面縮小規則](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules)。
    - 競合のない設定は、デバイスのポリシーのスーパーセットに追加されます。
    - 2 つ以上のポリシーに競合する設定がある場合、競合する設定は結合されたポリシーに追加されませんが、競合しない設定は、デバイスに適用されるスーパーセット ポリシーに追加されます。
    - 競合する設定の構成のみが保持されます。
@@ -373,7 +375,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
     > [!IMPORTANT]
     > リストにアプリを追加または追加するために使用 `Add-MpPreference` します。 コマンドレットを `Set-MpPreference` 使用すると、既存のリストが上書きされます。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [攻撃面の縮小ルールリファレンス](attack-surface-reduction-rules-reference.md)
 - [攻撃面の縮小を評価する](evaluate-attack-surface-reduction.md)

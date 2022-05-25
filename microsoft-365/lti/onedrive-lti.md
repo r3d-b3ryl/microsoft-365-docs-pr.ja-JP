@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: 新しい Microsoft OneDrive ラーニング Tools Interoperability App for Canvas を使用して、課題の作成と採点、コース コンテンツのビルドとキュレーション、ファイルでの共同作業をリアルタイムで行うことができます。
-ms.openlocfilehash: 8a4e3a1fc1b1d19bed093d5e72bf66e1afb2f591
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 62df03d18081cf9c48e5b153ed7a3cfe6ee27901
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285568"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663406"
 ---
 # <a name="integrate-microsoft-onedrive-lti-with-canvas"></a>Microsoft OneDrive LTI と Canvas を統合する
 
@@ -44,7 +44,7 @@ Microsoft OneDrive LTI と Canvas の統合は、2 段階のプロセスです�
 > この統合を実行するユーザーは、Canvas の管理者であり、Microsoft 365 テナントの管理者である必要があります。
 
 1. <a href="https://onedrivelti.microsoft.com/admin" target="_blank">Microsoft OneDrive LTI 登録ポータル</a>にサインインする
-2. **[管理者の同意**] ボタンを選択し、アクセス許可を受け入れます。
+2. **[管理同意**] ボタンを選択し、アクセス許可を受け入れます。
 
    > [!CAUTION]
    > この手順が実行されていない場合、次の手順ではエラーが発生し、エラーが発生した後にこの手順を 1 時間実行することはできません。
@@ -71,17 +71,21 @@ Microsoft OneDrive LTI と Canvas の統合は、2 段階のプロセスです�
     >
     > 教育者がコース ナビゲーション リンクを変更する方法の詳細については、「コース ナビゲーション リンク[の管理操作方法](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-manage-Course-Navigation-links/ta-p/1020)参照してください。
 
-7. キーを保存すると、Canvas で **Off** 状態で使用できるようになります。 キーを **オンに** し、次の手順で使用する **[詳細** ] 列のキーをコピーします。
+7. 次に、[ **追加設定** ] ドロップダウンを展開し、[ **プライバシー レベル** ] を **[パブリック**] に設定します。 
+  
+   **プライバシー レベル** を **パブリック** に設定すると、コースメンバーの名前を他のメンバーに表示してコラボレーションを行うことができます。
+
+8. キーを保存すると、Canvas で **Off** 状態で使用できるようになります。 キーを **オンに** し、次の手順で使用する **[詳細** ] 列のキーをコピーします。
 
    :::image type="content" source="media/OneDrive-LTI-19.png" alt-text="キーがオフの状態に設定されたキャンバス ページ。有効にする必要があり、このページの詳細列からキーをコピーする必要があります。":::
 
-8. Microsoft OneDrive LTI 登録ポータルに戻り、**キャンバス クライアント ID** フィールドにキーを貼り付けます。 準備ができたら、[ **次へ** ] を選択します。
+9. Microsoft OneDrive LTI 登録ポータルに戻り、**キャンバス クライアント ID** フィールドにキーを貼り付けます。 準備ができたら、[ **次へ** ] を選択します。
 
    :::image type="content" source="media/OneDrive-LTI-20.png" alt-text="LTI テナント登録ページ。このページには、JSON テキストとキーをコピーするテキスト ボックスが表示されます。":::
 
-9. 変更を確認して保存します。 登録が成功すると、メッセージが表示されます。
+10. 変更を確認して保存します。 登録が成功すると、メッセージが表示されます。
 
-10. 登録の詳細は、ホーム ページの **[LTI テナントの表示** ] ボタンを選択して確認することもできます。
+11. 登録の詳細は、ホーム ページの **[LTI テナントの表示** ] ボタンを選択して確認することもできます。
 
 今後のリリースでは、追加の管理者の同意が必要になる場合があります。 このような場合は、手順 1 と手順 2 のみを繰り返す必要があります。
 

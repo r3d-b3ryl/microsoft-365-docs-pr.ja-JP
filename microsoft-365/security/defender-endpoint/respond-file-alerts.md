@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8bfa08a92a011d32cdc30e2f68052715b4075fdf
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: a70602f9b482196ee949a8f9922f2979b04b3ff4
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665516"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669300"
 ---
 # <a name="take-response-actions-on-a-file"></a>ファイルの対応措置を講じる
 
@@ -151,7 +151,7 @@ ms.locfileid: "64665516"
 
 ### <a name="download-quarantined-files"></a>検疫済みファイルをダウンロードする
 
-Microsoft Defender ウイルス対策またはセキュリティ チームによって検疫されたファイルは、[サンプル送信構成](enable-cloud-protection-microsoft-defender-antivirus.md)に従って準拠した方法で保存されます。 セキュリティ チームは、[ファイルのダウンロード] ボタンを使用して、ファイルの詳細ページから直接ファイルをダウンロードできます。 **このプレビュー機能は、既定で "オン" になっています**。
+Microsoft Defender ウイルス対策またはセキュリティ チームによって検疫されたファイルは、[サンプル送信構成](enable-cloud-protection-microsoft-defender-antivirus.md)に従って準拠した方法で保存されます。 セキュリティ チームは、[ファイルのダウンロード] ボタンを使用して、ファイルの詳細ページから直接ファイルをダウンロードできます。 **この機能は既定で 'On' になっています**。
 
 場所は、組織の地域設定 (EU、英国、または米国) によって異なります。 検疫されたファイルは、組織ごとに 1 回だけ収集されます。 Service Trust Portal https://aka.ms/STPの Microsoft のデータ保護の詳細については、以下をご覧ください。
 

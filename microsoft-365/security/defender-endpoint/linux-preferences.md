@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a579944fa0f7578fa2afcf66472cebbb6f07037
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: c5bdf0cb91853f993a2328b5f92f878de1101e76
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663778"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669630"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する
 
@@ -102,7 +102,7 @@ ms.locfileid: "64663778"
 |---|---|
 |**キー**|behaviorMonitoring|
 |**データ型**|String|
-|**指定可能な値**|無効 (既定値) <p> 有効 (既定)|
+|**指定可能な値**|無効 (既定値) <p> enabled |
 |**コメント**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>定義が更新された後にスキャンを実行する
@@ -134,7 +134,7 @@ ms.locfileid: "64663778"
 |**キー**|scanArchives|
 |**データ型**|Boolean|
 |**指定可能な値**|true (既定値) <p> false|
-|**コメント**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
+|**Comments**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
 |||
 
 #### <a name="degree-of-parallelism-for-on-demand-scans"></a>オンデマンド スキャンの並列処理の程度
@@ -167,7 +167,7 @@ ms.locfileid: "64663778"
 |**キー**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定値) <p> admin_only|
-|**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
+|**Comments**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
 |
 
 #### <a name="scan-exclusions"></a>除外をスキャンする
@@ -183,7 +183,7 @@ ms.locfileid: "64663778"
 |---|---|
 |**キー**|除外|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 |
 
 ##### <a name="type-of-exclusion"></a>除外の種類
@@ -292,7 +292,7 @@ ms.locfileid: "64663778"
 |**キー**|disallowedThreatActions|
 |**データ型**|文字列の配列|
 |**指定可能な値**|allow (ユーザーによる脅威の許可を制限) <p> restore (ユーザーが検疫からの脅威を復元できないように制限)|
-|**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
+|**Comments**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
 |
 
 #### <a name="threat-type-settings"></a>脅威の種類の設定
@@ -307,7 +307,7 @@ ms.locfileid: "64663778"
 |---|---|
 |**キー**|threatTypeSettings|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 |
 
 ##### <a name="threat-type"></a>脅威の種類
@@ -404,7 +404,7 @@ ms.locfileid: "64663778"
 |---|---|
 |**キー**|cloudService|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 |
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>クラウド配信保護を有効/無効にする

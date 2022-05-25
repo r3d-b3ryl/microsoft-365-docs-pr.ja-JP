@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, pablom
+ms.reviewer: prlachhw, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,13 +20,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: 管理者は、組織内のユーザーが行ったセルフサービス購入を管理する方法を学習できます。
-ms.date: 03/26/2021
-ms.openlocfilehash: 19f276107de7b1dd1053e500d249950a8700ac41
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/24/2022
+ms.openlocfilehash: 50d782052839c099f3c64e45cc82a6f2ae5ba853
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319729"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663516"
 ---
 # <a name="manage-self-service-purchases-admin"></a>セルフサービスによる購入を管理する (管理者)
 
@@ -83,6 +83,9 @@ ms.locfileid: "63319729"
 - **AllowSelfServicePurchase** パラメーター値の既定の状態 (製品によって有効または無効になっているかどうか) を表示する
 - 利用可能な製品の一覧およびセルフサービス購入の有効または無効を表示する
 - 特定の製品の現在の設定を表示または変更し、有効または無効にする
+
+> [!IMPORTANT]
+> **AllowSelfServicePurchase** ポリシーを使用すると、セルフサービス購入とセルフサービス試用版の両方が有効または無効になります。 セルフサービス購入に使用できる製品の一覧については、「セルフサービス購入 [製品の一覧とその状態を表示する](allowselfservicepurchase-powershell.md#view-a-list-of-self-service-purchase-products-and-their-status)」を参照してください。 試用版サブスクリプションでは、ProjectとVisioのみが使用できます。
 
 詳細については、「[MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する](allowselfservicepurchase-powershell.md)」を参照してください。
 

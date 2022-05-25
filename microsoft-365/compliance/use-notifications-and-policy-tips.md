@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作していることをユーザーに通知する方法について説明します。
-ms.openlocfilehash: ce6665227b62ea5937229696fa65b69e7cfb894a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: af3dd2181c5bd8865f02755ba4d17f1feb0514d2
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623209"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669542"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -97,7 +97,10 @@ DLP ポリシーのそれぞれのルールで、次のことを行えます。
 - HTML またはトークンを使用して、通知に含まれるテキストをカスタマイズできます。詳細については、次のセクションを参照してください。
 
 > [!NOTE]
-> 電子メール通知は、グループや配布リストではなく、個々の受信者にのみ送信できます。 電子メール通知をトリガーするのは新しいコンテンツだけです。 既存のコンテンツを編集すると、ポリシーヒントがトリガーされますが、電子メール通知はトリガーされません。
+>
+> - 電子メール通知は、グループや配布リストではなく、個々の受信者にのみ送信できます。
+> - 電子メール通知をトリガーするのは新しいコンテンツだけです。 既存のコンテンツを編集すると、ポリシーヒントがトリガーされますが、電子メール通知はトリガーされません。
+> - 外部送信者は通知を受け取りません。 通知は内部ユーザーにのみ送信されます。
 
 ![電子メール通知オプション。](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
@@ -167,18 +170,18 @@ DLP ポリシー内の各ルールに関して、次の事柄を行うポリシ�
 
 |通知ルール |通知/ブロック アクション  |使用可能なオーバーライド  |正当な理由を要求する  |
 |---------|---------|---------|---------|
-|通知のみ     |通知         |いいえ         |いいえ         |
-|通知 + AllowOverride     |通知         |いいえ         |いいえ         |
-|通知 + AllowOverride + False positive     |通知         |いいえ         |いいえ         |
-|通知 + AllowOverride + 理由付き     |通知         |いいえ         |いいえ         |
-|Notify + AllowOverride + False positive + Justification なし    |通知         |いいえ         |いいえ         |
-|通知 + AllowOverride + False positive + 両端揃え     |通知         |いいえ         |いいえ         |
-|通知 + ブロック     |ブロック         |いいえ         |いいえ         |
-|通知 + ブロック + AllowOverride     |ブロック         |必要         |いいえ         |
-|通知 + ブロック + AllowOverride + False positive     |ブロック         |はい         |いいえ         |
-|通知 + ブロック + AllowOverride + 理由付き     |ブロック         |はい         |必要         |
-|通知 + ブロック + AllowOverride + False positive + 理由なし     |ブロック         |必要         |いいえ         |
-|通知 + ブロック + AllowOverride + False positive + 両端揃え     |ブロック         |はい         |必要         |
+|通知のみ     |通知         |不要         |不要         |
+|通知 + AllowOverride     |通知         |不要         |不要         |
+|通知 + AllowOverride + False positive     |通知         |不要         |不要         |
+|通知 + AllowOverride + 理由付き     |通知         |不要         |不要         |
+|Notify + AllowOverride + False positive + Justification なし    |通知         |不要         |不要         |
+|通知 + AllowOverride + False positive + 両端揃え     |通知         |不要         |不要         |
+|通知 + ブロック     |ブロック         |不要         |不要         |
+|通知 + ブロック + AllowOverride     |ブロック         |はい         |不要         |
+|通知 + ブロック + AllowOverride + False positive     |ブロック         |はい         |不要         |
+|通知 + ブロック + AllowOverride + 理由付き     |ブロック         |はい         |はい         |
+|通知 + ブロック + AllowOverride + False positive + 理由なし     |ブロック         |はい         |不要         |
+|通知 + ブロック + AllowOverride + False positive + 両端揃え     |ブロック         |はい         |はい         |
 
 
 ## <a name="policy-tips-on-onedrive-for-business-sites-and-sharepoint-online-sites"></a>OneDrive for Business サイトおよび SharePoint Online サイトのポリシー ヒント

@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: カスタマー キーを設定したら、AKV キーを復元し、アクセス許可を管理し、データ暗号化ポリシーを作成して割り当てることで、それを管理する方法について説明します。
-ms.openlocfilehash: 9d7a926018a23c62d2ea21283ad6852d979cc6bb
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: a1fab2694be866acd6035af90929b5ab690da031
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535428"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663472"
 ---
 # <a name="manage-customer-key"></a>カスタマー キーを管理する
 
@@ -105,7 +105,7 @@ DEP は、Azure Key Vaultに格納されている一連のキーに関連付け�
    New-DataEncryptionPolicy -Name USA_mailboxes -Description "Root key for mailboxes in USA and its territories" -AzureKeyIDs https://contoso_EastUSvault02.vault.azure.net/keys/USA_key_01, https://contoso_CentralUSvault02.vault.azure.net/keys/USA_Key_02
    ```
 
-構文とパラメーターの詳細については、「 [New-DataEncryptionPolicy](/powershell/module/exchange/new-data-encryptionpolicy)」を参照してください。
+構文とパラメーターの詳細については、「 [New-DataEncryptionPolicy](/powershell/module/exchange/new-dataencryptionpolicy)」を参照してください。
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>メールボックスに DEP を割り当てる
 
@@ -305,7 +305,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
-次に例を示します。
+例として以下のようなものがあります。
   
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -323,7 +323,7 @@ Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O3
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-次に例を示します。
+例として以下のようなものがあります。
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -335,7 +335,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-次に例を示します。
+例として以下のようなものがあります。
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
@@ -414,7 +414,7 @@ PowerShell コマンドレットは一度に 1 つの DEP に対してのみ実�
 
 SharePointの削除、職場または学校のOneDrive、およびTeams ファイルの DEP の削除は、カスタマー キーではサポートされていません。 これらのマルチワークロード DEP は、すべてのテナント ユーザー間で複数のワークロード間でデータを暗号化するために使用されます。 このような DEP を削除すると、複数のワークロード間のデータにアクセスできなくなります。 Microsoft 365 サービスを完全に終了することにした場合は、文書化されたプロセスごとにテナントの削除のパスを追及できます。 [Azure Active Directoryでテナントを削除する](/azure/active-directory/enterprise-users/directory-delete-howto)方法について説明します。  
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [Microsoft Purview カスタマー キーを使用したサービスの暗号化](customer-key-overview.md)
 

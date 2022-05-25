@@ -16,17 +16,17 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 67205e2c326c34bdcaac7e36042797c9f261b547
-  ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+  ms.openlocfilehash: 8f9b3abe8b2e4eb6182496635f01b71c001f7b7d
+  ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 05/17/2022
-  ms.locfileid: "65437505"
+  ms.lasthandoff: 05/24/2022
+  ms.locfileid: "65663670"
 title: Microsoft Defender for Business - よく寄せられる質問と回答
 summary: >
   この記事を使用して、Defender for Business に関する質問に対する回答を取得します。
 sections:
-- name: 一般
+- name: General/標準
   questions:
   - question: Defender for Business のプレビュー試用版を延長できますか?
     answer: "Defender for Business が一般公開されたため、プレビュー プログラムは終了し、拡張できません。 \n\n[「Microsoft Defender for Businessを取得する」を](get-defender-business.md)参照してください。\n"
@@ -54,7 +54,7 @@ sections:
     answer: >
       Defender for Business には、堅牢なカスタム レポートをサポートするための一連の API と、Power BI コネクタが含まれています。 POWERShell スクリプトをスケジュールして、HTML 形式のエグゼクティブ サマリーを生成し、それらの概要を電子メールで送信できます。 [API リファレンス情報を参照](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-partners)してください。
   - question: Microsoft パートナーです。 1 つのコントロール パネルから複数のテナントを管理できますか、それとも各テナントに個別にサインインする必要がありますか?
-    answer: "Defender for Business は、単一のコンソール ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でマルチテナントサポートのためにMicrosoft 365 Lighthouseで有効になっています。 \n \n現在、マルチテナント インシデント キューには、注意が必要なインシデントのテナント間ビューが用意されています。ただし、構成とオンボードは、パートナー資格情報を使用して顧客のテナントで行われます。 \n\n機能は引き続きロールアウトされており、より多くの統合シナリオが計画されています。\n\n詳細については、「[Microsoft 365 Lighthouseの概要](/microsoft-365/lighthouse/m365-lighthouse-overview)」を参照してください。\n"
+    answer: "Defender for Business は、単一のコンソール ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でマルチテナントサポートのためにMicrosoft 365 Lighthouseで有効になっています。 \n\n詳細については、「[Microsoft 365 Lighthouseの概要](/microsoft-365/lighthouse/m365-lighthouse-overview)」を参照してください。\n"
   - question: Defender for Business で攻撃面の縮小ルールと機能を構成操作方法?
     answer: >
       Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の Defender for Business を使用した攻撃表面の縮小ルールと機能の簡略化された構成はまだサポートされていません。 Microsoft Intuneがある場合は、Microsoft エンドポイント マネージャー管理センターを使用して、攻撃面の縮小ポリシーを構成できます。 [Intuneのエンドポイント セキュリティに関する攻撃面の縮小ポリシーに関する](/mem/intune/protect/endpoint-security-asr-policy)説明を参照してください。

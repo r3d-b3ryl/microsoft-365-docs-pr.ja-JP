@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 0cb7523036d6660d4b5556fdfd07e443a359b208
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c1f6fa058715f831b1c8ba594bf1604ad92e9ed2
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466237"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669366"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpointアラートに関連付けられているファイルを調査する
 
@@ -43,6 +43,7 @@ ms.locfileid: "64466237"
 ファイル ビューの次のセクションから情報を取得できます。
 
 - ファイルの詳細、マルウェアの検出、ファイルの普及率
+- ファイル PE メタデータ (存在する場合)
 - 詳細分析
 - アラート
 - 組織内で観察される
@@ -69,7 +70,7 @@ ms.locfileid: "64466237"
 
 ファイルの MD5、ウイルス合計検出率、Microsoft Defender AV 検出 (使用可能な場合)、ファイルの普及率などの詳細が表示されます。
 
-ファイルの普及率カードには、組織内および世界中のデバイスでファイルが表示された場所が表示されます。
+ファイルの普及率カードには、組織内および世界中のデバイスでファイルが表示された場所が表示されます。 ファイルが表示された最初のデバイスと最後のデバイスに簡単にピボットし、デバイスタイムラインで調査を続行できます。 
 
 > [!NOTE]
 > ファイルの普及率カードの *組織セクションのデバイスには* 、異なるユーザーが異なる値を表示する場合があります。 これは、ユーザーが持つ RBAC スコープに基づいてカードに情報が表示されるためです。 つまり、特定のデバイス セットに対する可視性がユーザーに付与されている場合、それらのデバイスに対するファイルの組織の普及率のみが表示されます。
@@ -78,7 +79,7 @@ ms.locfileid: "64466237"
 
 ## <a name="alerts"></a>アラート
 
-[ **アラート]** タブには、ファイルに関連付けられているアラートの一覧が表示されます。 この一覧には、影響を受けるデバイスが属しているデバイス グループがある場合を除き、アラート キューと同じ情報の多くが含まれます。 列ヘッダーの上にあるツール バーから **[列のカスタマイズ** ] を選択すると、表示される情報の種類を選択できます。
+[ **アラート]** タブには、ファイルに関連付けられているアラートの一覧と、アラートがリンクされているインシデントが表示されます。 この一覧には、影響を受けるデバイスが属しているデバイス グループがある場合を除き、アラート キューと同じ情報の多くが含まれます。 列ヘッダーの上にあるツール バーから **[列のカスタマイズ** ] を選択すると、表示される情報の種類を選択できます。
 
 :::image type="content" source="images/atp-alerts-related-to-file.png" alt-text="ファイル セクションに関連するアラート" lightbox="images/atp-alerts-related-to-file.png":::
 
@@ -91,7 +92,7 @@ ms.locfileid: "64466237"
 
 :::image type="content" source="images/atp-observed-machines.png" alt-text="ファイルで観察された最新のデバイス" lightbox="images/atp-observed-machines.png":::
 
-スライダーまたは範囲セレクターを使用して、ファイルに関連するイベントを確認する期間をすばやく指定します。 タイム ウィンドウは、1 日に限り小さく指定できます。 これにより、その時点でその IP アドレスと通信したファイルのみが表示され、不要なスクロールと検索が大幅に減ります。
+スライダーまたは範囲セレクターを使用して、ファイルに関連するイベントを確認する期間をすばやく指定します。 範囲に対するアラートの表示によって支援を受けることができます。 タイム ウィンドウは、1 日に限り小さく指定できます。 これにより、その時点でその IP アドレスと通信したファイルのみが表示され、不要なスクロールと検索が大幅に減ります。
 
 ## <a name="deep-analysis"></a>詳細分析
 
@@ -104,6 +105,10 @@ ms.locfileid: "64466237"
 [ **ファイル名** ] タブには、組織内で使用するために観察されたすべての名前が一覧表示されます。
 
 :::image type="content" source="images/atp-file-names.png" alt-text="[ファイル名] タブ" lightbox="images/atp-file-names.png":::
+
+## <a name="action-center"></a>アクション センター
+
+**アクション センター** には、特定のファイルでフィルター処理されたアクション センターが表示されるため、保留中のアクションとファイルに対して実行されたアクションの履歴を確認できます。
 
 ## <a name="related-topics"></a>関連項目
 

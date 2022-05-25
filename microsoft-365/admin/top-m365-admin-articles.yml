@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
-summary: 最終更新日 2022 年 3 月 23 日。 管理者に最も人気のあるヘルプ記事はどれですか? 毎月更新された 20 件の最も閲覧回数の多いヘルプ記事のこのコレクションを確認してください。
+summary: 最終更新日 2022 年 5 月 24 日。 管理者に最も人気のあるヘルプ記事はどれですか? 毎月更新された 20 件の最も閲覧回数の多いヘルプ記事のこのコレクションを確認してください。
 metadata:
   title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
   description: 毎月更新される、管理者に最も人気のあるヘルプ記事上位 20 件のこのコレクションをご覧ください。
@@ -8,16 +8,16 @@ metadata:
   ms.topic: landing-page
   author: SKjerland
   ms.author: sharik
-  ms.date: 03/22/2022
+  ms.date: 05/24/2022
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 115617fb4291e65b828bb8308afab1765fcab3b6
-  ms.sourcegitcommit: f941967b8bc2c24401795e41fd155365a0dbc645
+  ms.openlocfilehash: d27424db329d3d5b42dfea2ab6b98a0340f75b6f
+  ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 03/23/2022
-  ms.locfileid: "63761524"
+  ms.lasthandoff: 05/25/2022
+  ms.locfileid: "65670082"
 landingContent:
 - title: データとサービスを管理する
   linkLists:
@@ -27,9 +27,7 @@ landingContent:
       url: add-users/about-admin-roles.md
     - text: 使用状況レポートをMicrosoft 365する
       url: activity-reports/activity-reports.md
-  - linkListType: video
-    links:
-    - text: ヘルプまたはサポートを利用する
+    - text: ビジネス向け Microsoft 365 のサポートを受ける
       url: get-help-support.md
 - title: ドメイン
   linkLists:
@@ -43,7 +41,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 多要素認証を設定する
+    - text: Microsoft 365 Business Premium の多要素認証を設定する
       url: security-and-compliance/set-up-multi-factor-authentication.md
 - title: 請求書とサブスクリプション
   linkLists:
@@ -53,7 +51,7 @@ landingContent:
       url: ../commerce/about-registration-numbers.md
   - linkListType: how-to-guide
     links:
-    - text: サブスクリプションをキャンセルする
+    - text: 一般法人向けサブスクリプションをキャンセルします。
       url: ../commerce/subscriptions/cancel-your-subscription.md
     - text: サブスクリプションを支払う
       url: ../commerce/billing-and-payments/pay-for-your-subscription.md
@@ -73,7 +71,7 @@ landingContent:
       url: email/configure-email-forwarding.md
     - text: 共有メールボックスを作成する
       url: email/create-a-shared-mailbox.md
-    - text: 別のユーザーにメールボックス アクセス許可を付与する
+    - text: 別のMicrosoft 365 ユーザーにメールボックスのアクセス許可を付与する
       url: add-users/give-mailbox-permissions-to-another-user.md
     - text: ユーザー名とメール アドレスを変更する
       url: add-users/change-a-user-name-and-email-address.md
@@ -81,17 +79,11 @@ landingContent:
       url: email/convert-user-mailbox-to-shared-mailbox.md
 - title: ユーザー、グループ、およびパスワード
   linkLists:
-  - linkListType: overview
-    links:
-    - text: グループを比較する
-      url: create-groups/compare-groups.md
   - linkListType: how-to-guide
     links:
     - text: ユーザーを追加して同時にライセンスを割り当てる
       url: add-users/add-users.md
-    - text: ユーザーにライセンスを割り当てる
+    - text: Microsoft 365 ライセンスをユーザーに割り当てる
       url: manage/assign-licenses-to-users.md
-    - text: 組織のパスワード有効期限ポリシーを設定します。
-      url: manage/set-password-expiration-policy.md
     - text: ユーザーが QR コードを使用してモバイル アプリOutlookにサインインできるようにする
       url: manage/use-qr-code-download-outlook.md

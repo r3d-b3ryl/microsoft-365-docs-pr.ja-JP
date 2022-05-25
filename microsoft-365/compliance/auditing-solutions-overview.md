@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d7c6ba3e63e50370579f6db89a919ec8a2dafd8f
-ms.sourcegitcommit: f645e0e9db74b25663cd9ddec7e3824d6ffc57f7
+ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
+ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65444247"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65649389"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview での監査ソリューション
 
@@ -100,14 +100,14 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
 
 ### <a name="audit-standard"></a>監査 (標準)
 
-- Microsoft Purview Business Basic サブスクリプション
-- Microsoft Purview Apps for Business サブスクリプション
-- Microsoft Purview Enterprise E3 サブスクリプション
-- Microsoft Purview Business Premium
-- Microsoft Purview Education A3 サブスクリプション
-- Microsoft Purview Government G3 サブスクリプション
-- Microsoft Purview Government G1 サブスクリプション
-- Microsoft Purview Frontline F1 または F3 サブスクリプション、または F5 セキュリティ アドオン
+- Microsoft 365 Business Basic サブスクリプション
+- Microsoft 365 Apps for Business サブスクリプション
+- Microsoft 365 Enterprise E3 サブスクリプション
+- Microsoft 365 Business Premium
+- Microsoft 365 Education A3 サブスクリプション
+- Microsoft 365 Government G3 サブスクリプション
+- Microsoft 365 Government G1 サブスクリプション
+- Microsoft 365 Frontline F1 または F3 サブスクリプション、または F5 セキュリティ アドオン
 - Office 365 Enterprise E3 サブスクリプション
 - Office 365 Enterprise E1 サブスクリプション
 - Office 365 Education A1 サブスクリプション

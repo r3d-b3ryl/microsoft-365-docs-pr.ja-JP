@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 825605f932b3732ba27af7ec95160f34959356b0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648329"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669322"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -229,3 +229,9 @@ Microsoft は、パフォーマンス、セキュリティ、新機能を提供�
 ## <a name="resources"></a>リソース
 
 - ログ、アンインストール、またはその他のトピックの詳細については、「 [リソース](linux-resources.md)」を参照してください。
+  
+## <a name="related-articles"></a>関連記事
+  
+-  [Defender for Cloudの統合EDR ソリューションでエンドポイントを保護する: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint)
+-  [Azure 以外のマシンをMicrosoft Defender for CloudにConnectする](/azure/defender-for-cloud/quickstart-onboard-machines)
+

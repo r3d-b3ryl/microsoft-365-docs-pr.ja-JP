@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: f0148a8bfe18c7636e95ceae7b268cc70b2e58ed
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 3b3f438555be507d046f99838596a6672714e0ad
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500418"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65670226"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスを提供する 
 
@@ -37,15 +37,15 @@ ms.locfileid: "64500418"
 
 マルチテナント委任アクセス ソリューションを実装するには、次の手順に従います。
 
-1. Microsoft 365 Defender ポータルを使用して Defender for Endpoint の[ロールベースのアクセス制御](/windows/security/threat-protection/microsoft-defender-atp/rbac)を有効にし、Azure Active Directory (Azure AD) グループに接続します。
+1. Microsoft 365 Defender ポータルを使用して Defender for Endpoint の[ロールベースのアクセス制御](/microsoft-365/security/defender-endpoint/rbac)を有効にし、Azure Active Directory (Azure AD) グループに接続します。
 
-2. アクセス要求とプロビジョニングのために [ガバナンス アクセス パッケージ](/azure/active-directory/governance/identity-governance-overview) を構成します。
+2. Azure AD Identity Governance 内で [外部ユーザーのエンタイトルメント管理](/azure/active-directory/governance/entitlement-management-external-users) を構成して、アクセス要求とプロビジョニングを有効にします。
 
 3. [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve) でアクセス要求と監査を管理します。
 
 ## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでMicrosoft Defender for Endpointでロールベースのアクセス制御を有効にする
 
-1. **カスタマー AAD: グループで MSSP リソースのアクセス グループを作成する**
+1. **Customer AAD: Groups で MSSP リソースのアクセス グループを作成する**
 
     これらのグループは、ポータルの Defender for Endpoint で作成したロールMicrosoft 365 Defenderリンクされます。 これを行うには、顧客 AD テナントで 3 つのグループを作成します。 このアプローチの例では、次のグループを作成します。
 
@@ -67,13 +67,13 @@ ms.locfileid: "64500418"
       ライブ応答を除くすべてのアクションを実行し、セキュリティ設定を管理します。
 
     - **階層 2 アナリスト** <br>
-      [ライブ応答](/windows/security/threat-protection/microsoft-defender-atp/live-response)に追加された階層 1 の機能
+      [ライブ応答](/microsoft-365/security/defender-endpoint/live-response)に追加された階層 1 の機能。
 
-    詳細については、「 [ロールベースのアクセス制御を使用する](/windows/security/threat-protection/microsoft-defender-atp/rbac)」を参照してください。
+    詳細については、「 [ロールベースのアクセス制御を使用したポータル アクセスの管理](/microsoft-365/security/defender-endpoint/rbac)」を参照してください。
 
 ## <a name="configure-governance-access-packages"></a>ガバナンス アクセス パッケージを構成する
 
-1. **顧客AADで接続された組織として MSSP を追加する: ID ガバナンス**
+1. **顧客 AAD の接続された組織として MSSP を追加する: ID ガバナンス**
 
     接続された組織として MSSP を追加すると、MSSP は要求し、アクセスをプロビジョニングできます。 
 
@@ -90,7 +90,7 @@ ms.locfileid: "64500418"
 
     詳細については、「 [リソースのカタログを作成する](/azure/active-directory/governance/entitlement-management-catalog-create)」を参照してください。
 
-3. **MSSP リソースのアクセス パッケージを作成する カスタマー AAD: Identity Governance**
+3. **MSSP リソースのアクセス パッケージを作成する 顧客 AAD: ID ガバナンス**
 
     アクセス パッケージは、承認時に要求元に付与される権限とアクセスのコレクションです。 
 
@@ -105,7 +105,7 @@ ms.locfileid: "64500418"
 
     詳細については、「 [新しいアクセス パッケージの作成](/azure/active-directory/governance/entitlement-management-access-package-create)」を参照してください。
 
-4. **カスタマー AAD: Identity Governance から MSSP リソースへのアクセス要求リンクを提供する**
+4. **顧客 AAD から MSSP リソースへのアクセス要求リンクを提供する: ID ガバナンス**
 
     My Access ポータル のリンクは、MSSP SOC アナリストが作成したアクセス パッケージを使用してアクセスを要求するために使用されます。 このリンクは持続性があり、新しいアナリストに対して同じリンクが時間の経過と共に使用される可能性があることを意味します。 アナリスト要求は、 **MSSP アナリスト承認者** による承認のためにキューに入ります。
 

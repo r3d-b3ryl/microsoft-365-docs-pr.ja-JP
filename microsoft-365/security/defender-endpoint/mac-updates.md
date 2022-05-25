@@ -15,14 +15,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0b9ddf9693a242b3b8c466cfa1616b62c5eb73b9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 4612c7ca68ab0b55fa2a2f28821cb5baef6ff6e9
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469297"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669344"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でMicrosoft Defender for Endpointの更新プログラムを展開する
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>macOSにMicrosoft Defender for Endpointの更新プログラムをデプロイする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "64469297"
 
 Microsoft は、パフォーマンス、セキュリティ、新機能を提供するために、ソフトウェア更新プログラムを定期的に発行しています。
 
-macOS でMicrosoft Defender for Endpointを更新するには、Microsoft AutoUpdate (MAU) という名前のプログラムが使用されます。 既定では、MAU は毎日更新プログラムを自動的にチェックしますが、毎週、毎月、または手動で変更できます。
+macOSでMicrosoft Defender for Endpointを更新するには、Microsoft AutoUpdate (MAU) という名前のプログラムが使用されます。 既定では、MAU は毎日更新プログラムを自動的にチェックしますが、毎週、毎月、または手動で変更できます。
 
 :::image type="content" source="images/MDATP-34-MAU.png" alt-text="マウ" lightbox="images/MDATP-34-MAU.png":::
 
@@ -48,9 +48,10 @@ macOS でMicrosoft Defender for Endpointを更新するには、Microsoft AutoUp
 
 MAU には *msupdate* と呼ばれるコマンド ライン ツールが含まれています。このツールは IT 管理者向けに設計されており、更新プログラムの適用時期をより正確に制御できます。 このツールの使用方法については、[msupdate を使用した update Office for Macを参照](/deployoffice/mac/update-office-for-mac-using-msupdate)してください。
 
-MAU では、macOS 上のMicrosoft Defender for Endpointのアプリケーション識別子は *WDAV00 です*。 macOS でMicrosoft Defender for Endpointの最新の更新プログラムをダウンロードしてインストールするには、ターミナル ウィンドウから次のコマンドを実行します。
+MAU では、macOS上のMicrosoft Defender for Endpointのアプリケーション識別子は *WDAV00 です*。 macOSでMicrosoft Defender for Endpointの最新の更新プログラムをダウンロードしてインストールするには、ターミナル ウィンドウから次のコマンドを実行します。
 
 ```dos
+cd /Library/Application\ Support/Microsoft/MAU2.0/Microsoft\ AutoUpdate.app/Contents/MacOS
 ./msupdate --install --apps wdav00
 ```
 
@@ -87,7 +88,7 @@ MAU では、macOS 上のMicrosoft Defender for Endpointのアプリケーショ
 |||
 
 > [!WARNING]
-> この設定は、Microsoft AutoUpdate を通じて更新されるすべてのアプリケーションのチャネルを変更します。 macOS 上のMicrosoft Defender for Endpointに対してのみチャネルを変更するには、目的のチャネルに置き換えた後、次のコマンドを`[channel-name]`実行します。
+> この設定は、Microsoft AutoUpdate を通じて更新されるすべてのアプリケーションのチャネルを変更します。 macOSのMicrosoft Defender for Endpointに対してのみチャネルを変更するには、目的のチャネルに置き換えた後、次のコマンドを`[channel-name]`実行します。
 >
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"

@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Microsoft Purview データ損失防止ポリシーとツールを使用して機密情報を保護し、DLP ライフサイクルをツアーする方法について説明します。
-ms.openlocfilehash: aa32eba1111f4a119652ba88b59062581bb6cc4b
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: Microsoft Purviewデータ損失防止ポリシーとツールを使用して機密情報を保護し、DLP ライフサイクルをツアーする方法について説明します。
+ms.openlocfilehash: 1d05eb2ae7b7071a79448596832eb6594ab680ef
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231787"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669696"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -28,7 +28,7 @@ ms.locfileid: "65231787"
 
 組織には、財務データ、所有権データ、クレジット カード番号、健康記録、社会保障番号などの機密情報が管理下にあります。 これらの機密データを保護し、リスクを軽減するには、こうしたデータを保持するべきでないユーザーと不適切に共有できないようにする方法が必要です。 この方法は、データ損失防止 (DLP) と呼ばれます。
 
-Microsoft Purview では、DLP ポリシーを定義して適用することで、データ損失防止を実装します。 DLP ポリシーを使用すると、次の項目全体で機密項目を識別、監視、および自動的に保護できます。
+Microsoft Purviewでは、DLP ポリシーを定義して適用することで、データ損失防止を実装します。 DLP ポリシーを使用すると、次の項目全体で機密項目を識別、監視、および自動的に保護できます。
 
 - Teams、Exchange、SharePoint、OneDriveなどのMicrosoft 365 サービス
 - Word、Excel、PowerPointなどのOffice アプリケーション
@@ -38,9 +38,9 @@ Microsoft Purview では、DLP ポリシーを定義して適用することで�
 
 DLP は、単純なテキスト スキャンだけでなく、ディープ コンテンツ分析を使用して機密アイテムを検出します。 コンテンツは、キーワードへのプライマリ データ一致、正規表現の評価、内部関数の検証、およびプライマリ データ一致に近いセカンダリ データ一致によって分析されます。 さらに、DLP では、機械学習アルゴリズムやその他の方法を使用して、DLP ポリシーに一致するコンテンツを検出します。
 
-## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP は、大規模な Microsoft Purview オファリングの一部です
+## <a name="dlp-is-part-of-the-larger-microsoft-purview-offering"></a>DLP は、大規模なMicrosoft Purviewオファリングの一部です
 
-DLP は Microsoft Purview ツールの 1 つに過ぎず、機密性の高いアイテムがどこに住んでも旅行でも保護するのに役立ちます。 Microsoft Purview ツール セット内の他のツール、それらが相互に相互に変換され、よりうまく連携する方法を理解する必要があります。  情報保護プロセスの詳細については、 [Microsoft Purview ツール](protect-information.md) を参照してください。
+DLP は、機密性の高いアイテムがどこに住んでいるか移動しても保護するために使用するMicrosoft Purview ツールの 1 つに過ぎません。 Microsoft Purview ツール セット内の他のツール、それらが相互に相互に変換され、よりうまく連携する方法を理解する必要があります。  情報保護プロセスの詳細については、[Microsoft Purview ツール](protect-information.md)を参照してください。
 
 ## <a name="protective-actions-of-dlp-policies"></a>DLP ポリシーの保護アクション
 
@@ -71,7 +71,7 @@ DLP の監視と保護は、ユーザーが毎日使用するアプリケーシ�
 
 **DLP のテクノロジ計画**
 
-DLP は、保存データ、使用中のデータ、Microsoft 365 サービス、Windows 10、Windows 11、macOS (Catalina 10.15 以降) デバイス、オンプレミスのファイル共有、オンプレミスのSharePoint間で動作するデータを監視および保護できることに注意してください。 さまざまな場所、監視および保護するデータの種類、ポリシーの一致が発生したときに実行されるアクションには、計画上の影響があります。
+DLP は、保存データ、使用中のデータ、Microsoft 365 サービス、Windows 10、Windows 11、macOS (Catalina 10.15 以降) デバイス、オンプレミスのファイル共有、オンプレミスのSharePointにわたって、データを監視および保護できることに注意してください。 さまざまな場所、監視および保護するデータの種類、ポリシーの一致が発生したときに実行されるアクションには、計画上の影響があります。
 
 **DLP のビジネス プロセス計画**
 
@@ -121,6 +121,9 @@ DLP の正常な実装は、適切に計画され調整されたポリシーに�
 - 新しいユーザーを追加する
 - 新しい制限付きアプリを追加する
 - 新しい制限付きサイトを追加する
+
+> [!NOTE]
+> _さらに多くのルールの処理を停止_ しても、テスト モードでは動作しません。オンになっている場合でも、
 
 #### <a name="enable-the-control-and-tune-your-policies"></a>コントロールを有効にしてポリシーを調整する
 
@@ -183,7 +186,7 @@ All DLP policies are created and maintained in the Microsoft Purview center. See
 
 ## <a name="viewing-policy-application-results"></a>ポリシー アプリケーションの結果の表示
 
-DLP は、監視、ポリシーの一致とアクション、ユーザー アクティビティから Microsoft Purview に膨大な量の情報を報告します。 機密性の高いアイテムに対して実行されたポリシーとトリアージ アクションを調整するには、その情報を使用して操作する必要があります。 テレメトリは [、Microsoft Purview コンプライアンス ポータルの監査ログ](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal) に最初に入り、処理され、さまざまなレポート ツールに移動します。 レポート ツールごとに目的が異なります。
+DLP は、監視、ポリシーの一致とアクション、ユーザー アクティビティからMicrosoft Purviewに大量の情報を報告します。 機密性の高いアイテムに対して実行されたポリシーとトリアージ アクションを調整するには、その情報を使用して操作する必要があります。 テレメトリは、最初に[Microsoft Purview コンプライアンス ポータル監査ログ](search-the-audit-log-in-security-and-compliance.md#search-the-audit-log-in-the-compliance-portal)に入り、処理され、さまざまなレポート ツールに移動します。 レポート ツールごとに目的が異なります。
 
 ### <a name="dlp-alerts-dashboard"></a>DLP アラート ダッシュボード
 
@@ -213,7 +216,7 @@ DLP ページの [アクティビティ エクスプローラー] タブには�
 
 詳細については、「[アクティビティ エクスプローラーでの概要](data-classification-activity-explorer.md)」を参照してください。
 
-Microsoft Purview DLP の詳細については、次を参照してください。
+MICROSOFT PURVIEW DLP の詳細については、次を参照してください。
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
 - [Microsoft Teams の既定のデータ損失防止ポリシーについての詳細情報 (プレビュー)](dlp-teams-default-policy.md)
@@ -221,7 +224,7 @@ Microsoft Purview DLP の詳細については、次を参照してください�
 - [Microsoft Compliance Extension の詳細情報](dlp-chrome-learn-about.md)
 - [データ損失防止の警告ダッシュボードについて](dlp-alerts-dashboard-learn.md)
 
-データ損失防止を使用してデータ プライバシー規制に準拠する方法については、「Microsoft Purview (aka.ms/m365dataprivacy) を [使用してデータプライバシー規制の情報保護を展開](../solutions/information-protection-deploy.md)  する」を参照してください。
+データ損失防止を使用してデータ プライバシー規制に準拠する方法については、「Microsoft Purview (aka.ms/m365dataprivacy) を[使用したデータプライバシー規制の情報保護の展開](../solutions/information-protection-deploy.md)」を参照してください。
 
 ## <a name="licensing-and-subscriptions"></a>ライセンスとサブスクリプション
 

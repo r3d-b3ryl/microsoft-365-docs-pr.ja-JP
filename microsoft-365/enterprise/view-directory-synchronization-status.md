@@ -21,21 +21,21 @@ search.appverid:
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
 description: この記事では、Office 365でディレクトリ同期の状態を確認する方法について説明します。
-ms.openlocfilehash: 8f21985f8db3539e8dd1a839cc6cb499a425feeb
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 28376a63ab035490bdfeafb294eed9d993db54d9
+ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095556"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65669652"
 ---
 # <a name="view-directory-synchronization-status-in-microsoft-365"></a>Microsoft 365でディレクトリ同期の状態を表示する
 
-オンプレミス環境とMicrosoft 365を同期することで、オンプレミスの Active Directory Domain Services (AD DS) と Azure Active Directory (Azure AD) を統合している場合は、同期の状態を確認することもできます。
+オンプレミス環境をMicrosoft 365と同期することで、オンプレミスの Active Directory Domain Services (AD DS) と Azure Active Directory (Azure AD) を統合している場合は、同期の状態を確認することもできます。
   
 ## <a name="view-directory-synchronization-status"></a>ディレクトリ同期の状態を表示する
 
 - [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインし、ホーム ページで **[DirSync 状態]** を選択します。
-- または、[ユーザー **のアクティブユーザー****]** \> に移動し、[**アクティブなユーザー**] ページで [**その他**\>の **ディレクトリ同期**] を選択することもできます。 [ **ディレクトリ同期** ] ウィンドウで、[ **DirSync 管理に移動**] を選択します。
+- または、[ユーザー **のアクティブユーザー****]** \> に移動し、[**アクティブユーザー**] ページで **[Elipse** \> **ディレクトリの同期**] を選択します。 [ **ディレクトリ同期** ] ウィンドウで、[ **DirSync 管理に移動**] を選択します。
 
 ## <a name="information-on-the-manage-directory-synchronization-page"></a>[ディレクトリ同期の管理] ページの情報
 
@@ -51,7 +51,7 @@ ms.locfileid: "65095556"
 |**最新のディレクトリ同期** | 前回ディレクトリ同期が実行されました。 最後の同期が 3 日前を超えた場合は、警告とトラブルシューティング ツールへのリンクが表示されます。 |
 |**パスワード同期が有効になっている** | True または False。 オンプレミスとMicrosoft 365 テナントの間でパスワード ハッシュ同期を行うかどうかを指定します。 |
 |**最後のパスワード同期** | 前回パスワード ハッシュ同期が実行されました。 最後の同期が 3 日前を超えた場合は、警告とトラブルシューティング ツールへのリンクが表示されます。 |
-|**ディレクトリ同期クライアントのバージョン** | 新しいバージョンのAzure AD Connectがリリースされた場合のダウンロード リンクが含まれます。 |
+|**ディレクトリ同期クライアントのバージョン** | 新しいバージョンの Azure AD Connectがリリースされた場合のダウンロード リンクが含まれます。 |
 |**ディレクトリ同期サービス アカウント** | Microsoft 365 ディレクトリ同期サービス アカウントの名前を表示します。 |
 |||
 

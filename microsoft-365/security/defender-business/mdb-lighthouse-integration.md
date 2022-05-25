@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 6dcc0ad7d03031ed0cc41aadeba901eff666943b
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: d7681be9f1103fbf21b7f3f89b74fc6d9d32f809
+ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174200"
+ms.lasthandoff: 05/24/2022
+ms.locfileid: "65663648"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 LighthouseとMicrosoft Defender for Business
 
@@ -31,9 +31,6 @@ Microsoft クラウド ソリューション プロバイダー (CSP) で[Micros
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="Microsoft 365 Lighthouseのインシデントリストのスクリーンショット":::
 
 インシデントの一覧にアクセスするには、Microsoft 365 Lighthouseのホーム ページで[**セキュリティ インシデント**] カードを探し、[**すべてのインシデントの表示**] を選択します。
-
-> [!IMPORTANT]
-> 機能は引き続きロールアウトされています。これらの機能がまだない場合は、すぐに使用する必要があります。
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの詳細を確認する
 
