@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a75c56dd2844c563b1ee29ccb32acc263ffd3aed
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 6d90fc636b4ca2c99313b40da61e94fe359c42ab
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623577"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679004"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止macOSセキュリティ設定を保護する
 
@@ -72,7 +72,7 @@ macOSの改ざん防止は、セキュリティ設定に対する不要な変更
 > - モードの変更はすぐに適用されます。 機能フラグを変更したり、Microsoft Defender for Endpointを再起動したりする必要はありません。
 > - 初期構成中に JAMF を使用した場合は、JAMF も使用して構成を更新する必要があります。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - サポートされているmacOS バージョン: Lake (12)、Big Sur (11)、Catalina (10.15 以降)
 - Defender for Endpoint に必要な最小バージョン: 101.49.25
@@ -90,7 +90,7 @@ macOSの改ざん防止は、セキュリティ設定に対する不要な変更
 - [JAMF](#jamf)
 - [Intune](#intune)
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 
 "tamper_protection" が "無効" に設定されていることを確認します。
 
@@ -146,7 +146,7 @@ Intune プロファイルに次の構成を追加します。
 > Intune構成の場合は、改ざん防止構成を追加する新しいプロファイル構成ファイルを作成するか、既存のプロファイル構成ファイルにこれらのパラメーターを追加できます。
 
 ```xml
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1">
     <dict>

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: high
 description: 高度なメタデータ検索とカスタム サイト列の検索を使用して、SharePoint Syntex で SharePoint ドキュメント ライブラリ内のアイテムを検索する方法について説明します。
-ms.openlocfilehash: f010c6944fdcb05fcfe2c254274249b2dcabe99e
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 50b9ef7ff6fe7942266ec59f8d5ad81e0dfbecd4
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595381"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679573"
 ---
 # <a name="search-for-metadata-in-document-libraries-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のドキュメント ライブラリでメタデータを検索する
 
@@ -55,8 +55,5 @@ SharePoint Syntex の高度なメタデータ検索機能を使用すると、Sh
     カスタム サイト列を検索に追加するには、[**その他のオプションを追加**] を選択し、サイト列の名前を選択します。
 
     ![メタデータ検索ウィンドウの [その他のオプションを追加] メニューのスクリーンショット。](../media/content-understanding/metadata-search-add-more-options.png)
-
-    > [!NOTE]
-    > 現在、管理されたメタデータ フィールドや複数行のテキスト フィールドを追加する機能は使用できません。 
 
 4. **検索** を選択します。メタデータ検索に一致するドキュメントが結果ページに表示されます。 

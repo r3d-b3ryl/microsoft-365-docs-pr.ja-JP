@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2b4c1cd9c37921fbb54633c0fc1bf2e42d308081
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472883"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679442"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint評価ラボ
 
@@ -49,7 +49,7 @@ Windows 10、Windows 11、Windows Server 2019、Windows Server 2016、Linux (Ubu
 
 任意のシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。すべて追加コストなしで便利に利用できます。 また、シミュレーション カタログからアクセスして実行できるさまざまなシミュレーションに簡単にアクセスできます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 [ライセンス要件](minimum-requirements.md#licensing-requirements)を満たすか、評価ラボにアクセスするためにMicrosoft Defender for Endpointへの試用版アクセス権を持っている必要があります。
 
@@ -157,6 +157,28 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
    > [!TIP]
    > [ **シミュレーターの状態** ] 列で、情報アイコンにマウス ポインターを合わせると、エージェントのインストール状態を確認できます。
+
+
+## <a name="add-a-domain-controller-preview"></a>ドメイン コントローラーを追加する (プレビュー)
+
+> [!IMPORTANT]
+> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+
+ドメイン コントローラーを追加して、複数のデバイスにわたる横移動や多段階攻撃などの複雑なシナリオを実行します。
+
+
+>[!NOTE]
+>ドメインのサポートは、Microsoft 365 Defender ポータル (security.microsoft.com) でのみ使用できます。
+
+1. ダッシュボードで [デバイスの **追加**] を選択します。
+
+2. **[Windows Server 2019**] を選択し、[**ドメイン コントローラーとして設定**] を選択します。 
+
+3. ドメイン コントローラーがプロビジョニングされると、[デバイスの **追加]** をクリックしてドメインに参加しているデバイスを作成できます。 次に、[Windows 10/ Windows 11] を選択し、[**ドメインに参加**] を選択します。 
+
+>[!NOTE]
+>一度に使用できるドメイン コントローラーは 1 つだけです。 ドメイン コントローラー デバイスに接続されているライブ デバイスがある限り、ドメイン コントローラー デバイスはライブのままになります。
+
 
 
 ## <a name="request-for-more-devices"></a>その他のデバイスの要求

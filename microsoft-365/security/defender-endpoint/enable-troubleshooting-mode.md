@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: db45e53534b323e32b77197ed568324c5d692615
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 07ebfc55df3a03d3447e12f540b7c200de16ae51
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535466"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679016"
 ---
 # <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでのトラブルシューティング モードでの概要
 
@@ -30,12 +30,12 @@ ms.locfileid: "65535466"
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-
+> [!NOTE]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 Microsoft Defender for Endpointトラブルシューティング モードを使用すると、組織のポリシーによって制御されている場合でも、デバイスから有効にし、さまざまなシナリオをテストすることで、さまざまな Microsoft Defender ウイルス対策機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これは排他的にEnterprise専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - トラブルシューティング モードを使用して、改ざん防止設定を無効または変更して実行します。
 
@@ -70,8 +70,6 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 - コマンドがMicrosoft 365 Defenderからデバイスでアクティブになるまでに、最大で 15 分かかる場合があります。
 
 - トラブルシューティング モードが開始され、トラブルシューティング モードが終了すると、エンド ユーザーに通知が送信されます。 また、まもなく終了することを通知する警告も送信されます。
-
-- トラブルシューティング モードがアクティブな間、エンドポイントでの検出と対応 (EDR) では、Microsoft Defender ウイルス対策がスキャンから除外したファイル、フォルダー、またはプロセスはブロックされません。
 
 - トラブルシューティング モードの開始と終了は、デバイス ページの **デバイス タイムライン** で識別されます。
 

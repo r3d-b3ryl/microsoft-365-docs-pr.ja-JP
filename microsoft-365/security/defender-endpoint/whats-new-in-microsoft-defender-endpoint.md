@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 615a68d7725e180e512674909f490e27d3da6771
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468802"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679278"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -63,6 +63,7 @@ ms.locfileid: "65468802"
 ## <a name="may-2022"></a>2022 年 5 月
 - [macOSの改ざん防止 (プレビュー)](tamperprotection-macos.md)<br>改ざん防止は、macOSでのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。
 
+- [ドメイン コントローラー デバイスの追加 - 評価ラボの機能強化 (プレビュー)](evaluation-lab.md#add-a-domain-controller-preview)<br>ドメイン コントローラーを追加して、複数のデバイスにわたる横移動や多段階攻撃などの複雑なシナリオを実行します。
 
 ## <a name="april-2022"></a>2022 年 4 月
 - [Windows Server 2012 R2 とWindows Server 2016) のオンボードと機能パリティを更新しました](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージが一般公開され、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になりました。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。

@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a5c6cd7b4fde3545f77cdece31f3693f74ca4444
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669322"
+ms.locfileid: "65679244"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -83,9 +83,9 @@ Linux にMicrosoft Defender for Endpointをインストールおよび構成す�
 
 - サポートされている Linux サーバーディストリビューションと x64 (AMD64/EM64T) とx86_64バージョン:
 
-  - Red Hat Enterprise Linux 6.7 以降
-  - Red Hat Enterprise Linux 7.2 以降
-  - Red Hat Enterprise Linux 8.x
+  - Red Hat Enterprise Linux 6.7 以降 (プレビュー)
+  - Red Hat Enterprise Linux 7.2 以降 
+  - Red Hat Enterprise Linux 8.x 
   - CentOS 6.7 以降 
   - CentOS 7.2 以降
   - Ubuntu 16.04 LTS 以上の LTS
@@ -98,6 +98,9 @@ Linux にMicrosoft Defender for Endpointをインストールおよび構成す�
 
     > [!NOTE]
     > 明示的に一覧表示されていないディストリビューションとバージョンはサポートされていません (公式にサポートされているディストリビューションから派生した場合でも)。
+
+
+
 
 - サポートされているカーネル バージョンの一覧
   - 最小カーネル バージョン 3.10.0-327 (Red Hat Enterprise Linux 6 および CentOS 6 を除く、上記でサポートされているすべての Linux ディストリビューションの場合)

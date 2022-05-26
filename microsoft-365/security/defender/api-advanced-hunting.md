@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: d01cdacc40b58eb940b2773606221b4fdbe18728
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
+ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64823192"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65692763"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高度なハンティング API
 
@@ -53,16 +53,16 @@ ms.locfileid: "64823192"
 6. HTTP 応答コードは `429` 、送信された要求の数または割り当てられた実行時間によって、クォータに達したことを示します。 応答本文を読み、上限に達したことを理解します。 
 
 > [!NOTE]
-> 上記のすべてのクォータ (たとえば、1 分あたり 15 回の呼び出し) は、テナント サイズごとです。 これらのクォータは最小です。
+> 上記のすべてのクォータ (1 分あたり 15 回の呼び出しなど) はテナント全体です。 これらのクォータは最小です。
 
 ## <a name="permissions"></a>アクセス許可
 
-高度なハンティング API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft 365 Defender Protection API にアクセスする」を](api-access.md)参照してください。
+高度なハンティング API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft 365 Defender Protection API にアクセス](api-access.md)する」を参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
 アプリケーション | AdvancedHunting.Read.All| 高度なクエリを実行する
-委任 (職場または学校のアカウント) | AdvancedHunting.Read | 高度なクエリを実行する
+委任 (職場または学校アカウント) | AdvancedHunting.Read | 高度なクエリを実行する
 
 >[!Note]
 > ユーザー資格情報を使用してトークンを取得する場合:
@@ -89,7 +89,7 @@ Content-Type | application/json
 
 パラメーター | 種類 | 説明
 -|-|-
-クエリ | テキスト | 実行するクエリ。 **注: 必須**
+Query | テキスト | 実行するクエリ。 **(必須)**
 
 ## <a name="response"></a>応答
 

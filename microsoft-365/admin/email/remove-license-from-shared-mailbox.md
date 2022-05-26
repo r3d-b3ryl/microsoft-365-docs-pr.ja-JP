@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 description: '共有メールボックスからライセンスを削除して別のユーザーに割り当てるか、ライセンスを返して支払いを行わないようにします。 '
 ms.date: 04/22/2022
-ms.openlocfilehash: 4445163281e403505612066285192b31adc44979
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5248c7fdb807a91ab2a9a7dfd44bdb375eb7d0f0
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091921"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678922"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>共有メールボックスからライセンスを削除する
 
@@ -41,7 +41,6 @@ ms.locfileid: "65091921"
 > - 共有メールボックスには、50 GB を超えるストレージが使用されています。
 > - 共有メールボックスでは、インプレース アーカイブが使用されます。
 > - 共有メールボックスは訴訟ホールドに置かれます。
-> - 共有メールボックスには、Microsoft 365 Defender ライセンスが割り当てられます。
 > 
 > ライセンスを割り当てる方法の詳細な手順については、「ユーザーに [ライセンスを割り当てる」を](/microsoft-365/admin/manage/assign-licenses-to-users)参照してください。 
 
@@ -50,13 +49,13 @@ ms.locfileid: "65091921"
 
 ::: moniker range="o365-worldwide"
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- 1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+ 1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 ::: moniker-end
 

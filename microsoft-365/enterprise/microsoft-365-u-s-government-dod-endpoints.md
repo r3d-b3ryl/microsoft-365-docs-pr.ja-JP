@@ -3,7 +3,7 @@ title: Office 365米国政府機関の DOD エンドポイント
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/28/2022
+ms.date: 05/04/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 にはインターネットへの接続が必要です。 以下のエンドポイントは、Office 365米国政府機関の DoD プランのみを使用しているお客様に対して到達可能である必要があります。
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f380ab128861b9846a15be675745da0b6c1eb51e
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 9f245db1d2fe8531facd5f2f1f8fcca032e404ff
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217500"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678944"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365米国政府機関の DoD エンドポイント
 
@@ -42,7 +42,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 |備考|ダウンロード|
 |---|---|
-|**最終更新日:** 2022 年 4 月 28 日 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [ログ サブスクリプションの変更](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全な一覧|
+|**最終更新日:** 2022 年 5 月 4 日 - ![RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログのサブスクリプション](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**ダウンロード:** [JSON 形式](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)の完全な一覧|
 |
 
 [Office 365 エンドポイントの管理](managing-office-365-endpoints.md)から始めて、このデータを使用してネットワーク接続を管理するための推奨事項を理解してください。 エンドポイントのデータは、毎月初めに必要に応じて更新され、アクティブになる 30 日前に新しい IP アドレスと URL が公開されます。 これにより、自動更新をまだ行っていないお客様は、新しい接続が必要になる前にプロセスを完了できます。 サポートの拡大、セキュリティ上の問題、その他の緊急な運用要件に対処する為に必要な場合にも、その月の間にエンドポイントを更新する可能性があります。 以下のこのページに示されているデータはすべて、REST ベースの Web サービスから生成されています。 スクリプトまたはネットワーク デバイスを使用してこのデータにアクセスする場合は、 [Web サービス](microsoft-365-ip-web-service.md) に直接アクセスする必要があります。
@@ -57,7 +57,7 @@ Office 365 にはインターネットへの接続が必要です。 以下の�
 
 - **カテゴリ**: エンドポイント セットが "最適化"、"許可"、または "既定値" に分類されているかどうかを示します。 これらのカテゴリと、それらの管理に関するガイダンスについては、以下をご覧 [https://aka.ms/pnc](./microsoft-365-network-connectivity-principles.md)ください。 この列には、ネットワーク接続に必要なエンドポイント セットも一覧表示されます。 ネットワーク接続を必要としないエンドポイント セットの場合、エンドポイント セットがブロックされた場合に欠落する機能を示すメモをこのフィールドに示します。 サービス領域全体を除外する場合は、必要に応じて一覧表示されているエンドポイント セットに接続は必要ありません。
 
-- **ER**: これは、エンドポイント セットが、Office 365ルート プレフィックスを持つ Azure ExpressRoute でサポートされている場合は **はい** です。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス領域と一致します。 ER が **No** の場合、これは、このエンドポイント セットで ExpressRoute がサポートされていないことを意味します。 ただし、ER が **No** であるエンドポイント セットのルートがアドバタイズされないと想定しないでください。 Azure AD Connectを使用する予定がある場合は、[特別な考慮事項に関するセクション](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)を参照して、適切なAzure AD Connect構成を確保してください。
+- **ER**: これは、エンドポイント セットが、Office 365ルート プレフィックスを持つ Azure ExpressRoute でサポートされている場合は **はい** です。 表示されるルート プレフィックスを含む BGP コミュニティは、一覧表示されているサービス領域と一致します。 ER が **No** の場合、これは、このエンドポイント セットで ExpressRoute がサポートされていないことを意味します。 ただし、ER が **No** であるエンドポイント セットのルートがアドバタイズされないと想定しないでください。 Azure AD Connectを使用する予定の場合は、[特別な考慮事項に関するセクション](/azure/active-directory/hybrid/reference-connect-instances#microsoft-azure-government)を参照して、適切な Azure AD Connect構成を確保してください。
 
 - **アドレス**: FQDN またはワイルドカードを含むドメイン名と、エンドポイントのセットの IP アドレス範囲を一覧表示します。IP アドレスの範囲は CIDR 形式となり、指定されたネットワークの個別の IP アドレスが多数含まれる場合があることに注意してください。
 

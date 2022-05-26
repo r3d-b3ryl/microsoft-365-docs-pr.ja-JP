@@ -96,6 +96,8 @@
       href: m365bp-security-incident-management.md
     - name: セキュリティに関する推奨事項を確認する
       href: ../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
+    - name: デバイスで検出された脅威を確認する
+      href: m365bp-review-threats-take-action.md
     - name: デバイス上の修復アクションを確認する
       href: m365bp-review-remediation-actions-devices.md
     - name: 侵害された電子メール アカウントへ対応する
@@ -110,7 +112,7 @@
       href: m365bp-remove-company-data.md
     - name: デバイスを工場出荷時の設定にリセットする
       href: m365bp-reset-devices-to-factory-settings.md
-- name: 参照
+- name: リファレンス
   items:
     - name: 用語集
       href: m365bp-glossary.md

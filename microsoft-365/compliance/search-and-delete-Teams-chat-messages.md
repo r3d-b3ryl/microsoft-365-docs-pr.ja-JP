@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: 電子情報開示 (プレミアム) と Microsoft Graph エクスプローラーを使用して、Microsoft Teamsでチャット メッセージを検索および消去し、Teamsのデータ流出インシデントに対応します。
-ms.openlocfilehash: c2202c45cc5e3caaa0af429439d44b1dfed3ac86
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: 19841140d928cb96dcc734e2ce5806e15295fc88
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302074"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679632"
 ---
 # <a name="search-and-purge-chat-messages-in-teams-preview"></a>Teamsでのチャット メッセージの検索と消去 (プレビュー)
 
@@ -34,7 +34,7 @@ ms.locfileid: "65302074"
 
 ## <a name="before-you-search-and-purge-chat-messages"></a>チャット メッセージを検索して消去する前に
 
-- 電子情報開示 (プレミアム) ケースを作成し、コレクションを使用してチャット メッセージを検索するには、Microsoft Purview コンプライアンス ポータルで **電子情報開示マネージャー** の役割グループのメンバーである必要があります。 チャット メッセージを削除するには、 **検索ロールと消去** ロールが割り当てられている必要があります。 このロールは、既定でデータ調査担当者と組織管理の役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
+- 電子情報開示 (プレミアム) ケースを作成し、コレクションを使用してチャット メッセージを検索するには、Microsoft Purview コンプライアンス ポータルの **電子情報開示マネージャー** ロール グループのメンバーである必要があります。 チャット メッセージを削除するには、 **検索ロールと消去** ロールが割り当てられている必要があります。 このロールは、既定でデータ調査担当者と組織管理の役割グループに割り当てられます。 詳細については、「[電子情報開示のアクセス許可を割り当てる](assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 - テナント内の会話では、検索と消去がサポートされています。 Teams Connect チャット (外部アクセスまたはフェデレーション) の会話のサポートは、インターフェイスで有効になっている場合がありますが、意図したとおりに機能しない場合があります。
 - メールボックスごとに最大 10 個のアイテムを一度に削除できます。 チャット メッセージを検索および削除する機能はインシデント対応ツールであるため、この制限はチャット メッセージを迅速に削除するのに役立ちます。
 
@@ -46,7 +46,7 @@ ms.locfileid: "65302074"
 
 ## <a name="step-1-create-a-case-in-ediscovery-premium"></a>手順 1: 電子情報開示でケースを作成する (プレミアム)
 
-最初の手順は、電子情報開示 (プレミアム) でケースを作成して、検索と消去プロセスを管理することです。 ケースの作成の詳細については、「 [新しいケース形式を使用する」を](advanced-ediscovery-new-case-format.md)参照してください。 
+最初の手順は、電子情報開示 (プレミアム) でケースを作成して、検索と消去プロセスを管理することです。 ケースの作成の詳細については、「 [新しいケース形式を使用する」を](advanced-ediscovery-new-case-format.md)参照してください。
 
 ## <a name="step-2-create-a-draft-collection"></a>手順 2: 下書きコレクションを作成する
 
@@ -90,7 +90,7 @@ Teams チャット会話の最も包括的なコレクション (1 対 1 とグ�
 
 削除するチャット メッセージを含むメールボックスの一覧を使用し、それらのメールボックスに保留ポリシーまたはアイテム保持ポリシーが割り当てられているかどうかを判断し、保持ポリシーまたはアイテム保持ポリシーを削除します。 手順 7. でメールボックスに再割り当てできるように、削除する保留ポリシーまたはアイテム保持ポリシーを必ず特定してください。
 
-保留ポリシーとアイテム保持ポリシーを特定して削除する方法については、「保留中のクラウドベースのメールボックスの [回復可能なアイテム フォルダー内のアイテムを削除](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)する」の「手順 3: メールボックスからすべての保留を削除する」を参照してください。 
+保留ポリシーとアイテム保持ポリシーを特定して削除する方法については、「手順 3: メールボックスからすべての保留を削除する」を参照してください。保留状態にある [クラウドベースのメールボックスの回復可能なアイテム フォルダーのアイテムを削除](delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md#step-3-remove-all-holds-from-the-mailbox)します。
 
 ## <a name="step-5-purge-chat-messages-from-teams"></a>手順 5: Teamsからチャット メッセージを消去する
 

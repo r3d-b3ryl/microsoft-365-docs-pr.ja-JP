@@ -1,8 +1,8 @@
 ---
-title: 検出された脅威を確認して対処する
+title: デバイスで検出された脅威を確認し、アクションを実行する
 f1.keywords: NOCSH
-ms.author: sharik
-author: SKjerland
+ms.author: deniseb
+author: denisebmsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -14,13 +14,13 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Windows 10 デバイス上のMicrosoft Defender ウイルス対策によって検出された脅威を確認して管理する方法について説明します。
-ms.openlocfilehash: ebd3f099c02483427ec95959a3466348ebf1d28f
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Windows デバイス上のMicrosoft Defender ウイルス対策によって検出された脅威を確認して管理する方法について説明します。
+ms.openlocfilehash: 59b28ff1fe381b0d379e559427a806723dd26aac
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623825"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679260"
 ---
 # <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Microsoft Defender ウイルス対策によって検出された脅威を確認し、アクションを実行する
 
@@ -52,7 +52,7 @@ IT プロフェッショナル/管理者は、[Microsoft 365 管理センター�
 
 1. Microsoft 365 管理センターに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>移動してサインインします。
 
-2. ナビゲーション ページで、**DevicesActive デバイスを** > 選択します。 アクティブなデバイスと詳細の一覧 (保護状態、ウイルス対策 (AV) 保護の状態、検出されたアクティブな脅威の数など) が表示されます。
+2. ナビゲーション ページで、[ **デバイス** > **のアクティブなデバイス**] を選択します。 アクティブなデバイスと詳細の一覧 (保護状態、ウイルス対策 (AV) 保護の状態、検出されたアクティブな脅威の数など) が表示されます。
 
 3. デバイスを選択すると、そのデバイスと使用可能なアクションの詳細が表示されます。 ポップアップが開き、推奨事項と使用可能なアクション ( **更新ポリシー**、 **ウイルス対策の更新**、 **クイック スキャンの実行**、 **フル スキャンの実行** など) が表示されます。
 

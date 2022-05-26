@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: 5be59cc7b99d64ceceb08bc400eeb0c44e3de1a8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535484"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679616"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
@@ -42,12 +42,12 @@ ms.locfileid: "65535484"
 
 2. [**新しいエンティティエクストラクター** ] 画面で、[ **新しいエクストラクター 名**] フィールドにエクストラクターの名前を入力します。 たとえば、契約更新の各ドキュメントからサービス開始日を抽出する場合は、「**サービスの開始日** と名前を入力します。 以前に作成した列 (例えば[管理されたメタデータ] 列など) を再使用することもできます。
 
-    既定では、列の種類は **1 行のテキストです**。 列の種類を変更する場合は、[**詳細設定** > ]**Column 型** を選択し、使用する種類を選択します。
+    既定では、列の種類は **1 行のテキストです**。 列の種類を変更する場合は、[ **詳細設定** > **] 列の種類** を選択し、使用する種類を選択します。
 
     ![[列の種類] オプションを示す [新しいエンティティ抽出ツール] パネルの [詳細設定] 部分のスクリーンショット。](../media/content-understanding/advanced-settings-column-type.png)
 
     > [!NOTE]
-    > 列の種類が **1 行のテキストを** 含む抽出器の場合、最大文字数の上限は 255 です。 制限を超えて入力した文字はすべて切り捨てられます。
+    > 列の種類が **1 行のテキストを** 含む抽出器の場合、最大文字数の上限は 255 です。 制限を超えて選択した文字はすべて切り捨てられます。 255 文字を超える文字を選択するには、抽出器を作成するときに [ **複数行のテキスト** ] 列の種類を選択します。
 
 3. 完了したら、[ **作成**] を選択します。
 

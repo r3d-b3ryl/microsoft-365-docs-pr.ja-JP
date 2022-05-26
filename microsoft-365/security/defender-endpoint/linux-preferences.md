@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c5bdf0cb91853f993a2328b5f92f878de1101e76
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 2bc051baa8d2ac6df9e29f1679402e63c2774cac
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669630"
+ms.locfileid: "65679310"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する
 
@@ -134,7 +134,7 @@ ms.locfileid: "65669630"
 |**キー**|scanArchives|
 |**データ型**|Boolean|
 |**指定可能な値**|true (既定値) <p> false|
-|**Comments**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
+|**コメント**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
 |||
 
 #### <a name="degree-of-parallelism-for-on-demand-scans"></a>オンデマンド スキャンの並列処理の程度
@@ -150,7 +150,7 @@ ms.locfileid: "65669630"
 |**キー**|maximumOnDemandScanThreads|
 |**データ型**|整数|
 |**指定可能な値**|2 (既定値)。 使用できる値は、1 から 64 までの整数です。|
-|**コメント**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
+|**Comments**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
 |||
   
 
@@ -167,7 +167,7 @@ ms.locfileid: "65669630"
 |**キー**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定値) <p> admin_only|
-|**Comments**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
+|**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
 |
 
 #### <a name="scan-exclusions"></a>除外をスキャンする
@@ -262,7 +262,7 @@ ms.locfileid: "65669630"
 |**キー**|name|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
-|**コメント**|*$type**が excludedFileName* の場合にのみ適用されます|
+|**Comments**|*$type**が excludedFileName* の場合にのみ適用されます|
 |
 
 #### <a name="allowed-threats"></a>許可される脅威
@@ -491,7 +491,6 @@ ms.locfileid: "65669630"
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "threatTypeSettings":[
          {
@@ -522,7 +521,6 @@ ms.locfileid: "65669630"
 ```JSON
 {
    "antivirusEngine":{
-      "behaviorMonitoring":"enabled",
       "enforcementLevel":"real_time",
       "scanAfterDefinitionUpdate":true,
       "scanArchives":true,

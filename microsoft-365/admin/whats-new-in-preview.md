@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Microsoft 365 管理センター - 今月追加された機能について説明します。
-ms.openlocfilehash: 4c730a72252d24145d7555f2684244a2a6531dd2
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 198832f09f6b219579f128b7104ecf3ae2fa3446
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649167"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679354"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "65649167"
 
 ::: moniker-end
 
-[Microsoft 365 管理センター](Microsoft 365 管理センターの概要](admin-overview/admin-center-overview.md)、学習した問題の修正、フィードバックに基づく変更を継続的に追加しています。 以下を見て、現在ご利用いただける内容を確認してください。 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、 [対象となるリリースに自分を追加してみてください](manage/release-options-in-office-365.md)。
+[Microsoft 365 管理センター](Microsoft 365 管理センターの概要](admin-overview/admin-center-overview.md)、学習した問題の修正、フィードバックに基づく変更を継続的に追加しています。 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、 [対象となるリリースに自分を追加してみてください](manage/release-options-in-office-365.md)。
 
 また、他の Microsoft クラウド サービスの新機能を知りたい場合は、次のようにします。
 
@@ -53,23 +53,23 @@ ms.locfileid: "65649167"
 
 ## <a name="may-2022"></a>2022 年 5 月
 
-<!-- ### Role based access controls (RBAC)
+### <a name="role-based-access-controls-rbac"></a>ロール ベースのアクセス制御 (RBAC)
 
-There are new Azure AD built-in roles in the Microsoft 365 admin center. Give admins only the access they need to manage Virtual Visits.
+Microsoft 365 管理センターには、カスタム セキュリティ属性を管理するための 4 つの新しいロールがあります。 これらのロールは、すべてのユーザーが [**ロール**] の下のMicrosoft 365 管理センターで使用できます。
 
-There are also 4 new roles in the Microsoft 365 admin center centered around management of custom security attributes. These roles are available for everyone to use in the Role assignments node under Roles.
+- **属性の割り当て管理者**   サポートされている Azure AD オブジェクトにカスタム セキュリティ属性キーと値を割り当てます。
 
-For more information about Azure AD built-in roles, see [Azure AD built-in roles](/azure/active-directory/roles/permissions-reference).
+- **属性の割り当てリーダー**   サポートされている Azure AD オブジェクトのカスタム セキュリティ属性キーと値を読み取ります。
 
-**Virtual Visits Administrator**   Manage and share Virtual Visits information and metrics from admin centers or the Virtual Visits app.
+- **属性定義管理者**   カスタム セキュリティ属性の定義を定義および管理します。
 
-**Attribute Assignment Administrator**   Assign custom security attribute keys and values to supported Azure AD objects.
+- **属性定義リーダー**   カスタム セキュリティ属性の定義を読み取ります。
 
-**Attribute Assignment Reader**   Reads custom security attribute keys and values for supported Azure AD objects.
+また、仮想アクセスを管理するために必要なアクセス権のみを管理者に付与できる新しいロールもあります。
 
-**Attribute Definition Administrator**   Define and manage the definition of custom security attributes.
+- **Virtual Visits 管理者**   管理センターまたは Virtual Visits アプリから、Virtual Visits の情報とメトリックを管理および共有します。
 
-**Attribute Definition Reader**   Reads the definition of custom security attributes. -->
+これらのロールの詳細については、 [Azure AD の組み込みロールに](/azure/active-directory/roles/permissions-reference)関するページを参照してください。
 
 ### <a name="quick-assist"></a>クイック アシスト
 
@@ -85,7 +85,7 @@ For more information about Azure AD built-in roles, see [Azure AD built-in roles
 
 NPS アンケート分析情報は、Microsoft 365 管理センターで利用できる AI 主導のダッシュボードです。
 
-管理センターで、**HealthProduct** >  **feedbackNPS** >  **アンケートの分析情報** に移動します。
+管理センターで、 **正常性** > **製品のフィードバック** > **NPS アンケートの分析情報** に移動します。
 
 この機能は、ユーザーが回答した Microsoft NPS アンケートから派生した実用的な分析情報を取得するような管理者に役立ちます。 詳細については、 [Microsoft 製品 NPS のフィードバックと組織の分析情報を参照してください](manage/manage-feedback-product-insights.md)。
 
@@ -152,7 +152,7 @@ Microsoft 365 Lighthouseの使用を開始するには、「[Microsoft 365 Light
 
 これで、Microsoft 365 管理センター内のユーザーからの NPS アンケート データと分析情報を表示できるようになりました。 この新機能を使用すると、エンド ユーザーから NPS アンケートの回答から実用的な分析情報を取得し、問題や懸念事項に対処することで、より高いエンド ユーザーの喜びを実現できます。
 
-管理センターで、**HealthProduct** >  **feedbackNPS** >  **アンケートの分析情報** に移動します。
+管理センターで、 **正常性** > **製品のフィードバック** > **NPS アンケートの分析情報** に移動します。
 
 :::image type="content" source="../media/feedback-whatsnew.png" alt-text="スクリーンショット: Microsoft 365 管理センターの [フィードバック] ページを表示する":::
 
@@ -209,7 +209,7 @@ Microsoft 365 管理センタービデオ トレーニングを更新しまし�
 
 :::image type="content" source="../media/SuppInsight-date-sev.PNG" alt-text="スクリーンショット: 重大度と日付によるサポート チケットの並べ替えを示す表。":::
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 管理センター</a>でこれらの更新プログラムを確認するには、左側のナビゲーション ウィンドウの **SupportView** >  **Service 要求** に移動します。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2166757" target="_blank">Microsoft 365 管理センター</a>でこれらの更新プログラムを確認するには、左側のナビゲーション ウィンドウの **[サポート** > **ビュー サービス要求**] に移動します。
 
 ## <a name="june-2021"></a>2021 年 6 月
 

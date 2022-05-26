@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、プラン 2 で指定した条件が満たされたときに起動する特定の手法とペイロードを含む自動シミュレーションMicrosoft Defender for Office 365作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: b80d73f6efe398465eecea9967c4bd8d929a51a2
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649411"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678857"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーション自動化
 
@@ -29,11 +29,11 @@ ms.locfileid: "65649411"
 
 シミュレーションの自動化を作成するには、次の手順に従います。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com/>[**Email & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーションの自動化**] タブに移動します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com/>[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング**\>オートメーション] タブ **の** **[シミュレーションの自動化**] タブに移動します\>。
 
-   **[シミュレーションの自動化**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationautomation>.
+   **[オートメーション]** タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
-2. [ **シミュレーションの自動化** ] タブで、[オートメーションの作成] アイコンを選択 ![します。](../../media/m365-cc-sc-create-icon.png) **自動化を作成します**。
+2. **シミュレーションオートメーションで、[オートメーションの** 作成] アイコンを選択![します。](../../media/m365-cc-sc-create-icon.png) **自動化を作成します**。
 
    :::image type="content" source="../../media/attack-sim-training-sim-automations-create.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [シミュレーションの自動化] タブの [シミュレーションの作成] ボタン" lightbox="../../media/attack-sim-training-sim-automations-create.png":::
 
@@ -339,7 +339,7 @@ ms.locfileid: "65649411"
 - **Microsoft の既定のトレーニング割り当て通知**
 - 以前に作成したカスタム トレーニングの割り当て通知。
 
-  これらの通知は、攻撃シミュレーション トレーニングの **[エンド ユーザー通知** ] タブでも <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>利用できます。 **Microsoft の既定のトレーニング割り当て通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングの割り当て通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
+  これらの通知は、攻撃シミュレーション トレーニング<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>の **[シミュレーション コンテンツ ライブラリ**] タブの **[エンド ユーザー通知**] でも利用できます。 **Microsoft の既定のトレーニング割り当て通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングの割り当て通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
 
 既存のトレーニング割り当て通知を選択するか、使用する新しい通知を作成できます。
 
@@ -374,7 +374,7 @@ ms.locfileid: "65649411"
   - **Microsoft の既定のトレーニング リマインダー通知**
   - 以前に作成したカスタム トレーニングリマインダー通知。
 
-    これらの通知は、攻撃シミュレーション トレーニングの **[エンド ユーザー通知** ] タブでも <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>利用できます。 **Microsoft の既定のトレーニング リマインダー通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングリマインダー通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
+    これらの通知は、攻撃シミュレーション トレーニング<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>の **[シミュレーション コンテンツ ライブラリ**] タブの **[エンド ユーザー通知**] でも利用できます。 **Microsoft の既定のトレーニング リマインダー通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングリマインダー通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
 
   既存のトレーニングリマインダー通知を選択するか、使用する新しい通知を作成できます。
 
@@ -411,7 +411,7 @@ ms.locfileid: "65649411"
   - **Microsoft の既定の正の補強通知**
   - 以前に作成したカスタムの肯定的な補強通知。
 
-    これらの通知は、攻撃シミュレーション トレーニングの **[エンド ユーザー通知** ] タブでも <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>利用できます。 **Microsoft の既定の肯定的な補強通知** は、[ **グローバル通知** ] タブで利用できます。カスタムの肯定的な強化通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
+    これらの通知は、攻撃シミュレーション トレーニング<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>の **[シミュレーション コンテンツ ライブラリ**] タブの **[エンド ユーザー通知**] でも利用できます。 **Microsoft の既定の肯定的な補強通知** は、[ **グローバル通知** ] タブで利用できます。カスタムの肯定的な強化通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
 
   既存の肯定的な補強通知を選択するか、使用する新しい通知を作成できます。
 

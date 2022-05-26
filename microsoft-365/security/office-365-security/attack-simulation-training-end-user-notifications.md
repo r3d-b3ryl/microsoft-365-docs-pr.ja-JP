@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニング用のエンド ユーザー通知電子メール メッセージを作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: d21e3bd48dae3f1028412beff9449a38b9f751ff
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66e3e029e8da203b35285080caa91dca3a51e5c7
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649061"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678839"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのエンドユーザー通知
 
@@ -31,11 +31,11 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃
 - **シミュレーション通知**: これらのメッセージは、ユーザーがトレーニングに登録されたときに送信され、必要なトレーニングのリマインダーとして送信されます。
 - **肯定的な強化通知**: これらのメッセージは、ユーザーがシミュレートされたフィッシング メッセージを報告するときに送信されます。
 
-利用可能なエンド ユーザー通知を表示するには、Microsoft 365 Defender ポータルを<https://security.microsoft.com>開き、**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **エンド ユーザー通知** タブに移動します。**[エンド ユーザー通知**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>.
+利用可能なエンド ユーザー通知を表示するには、Microsoft 365 Defender ポータルを<https://security.microsoft.com>開き、**電子メール &コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ** タブ\>で **エンド ユーザー通知** を選択します。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
-**[エンド ユーザー通知**] タブには、次の 2 つのタブがあります。
+**エンド ユーザー通知** には、次の 2 つのタブがあります。
 
-- **グローバル通知**: 組み込みの通知と変更不可の通知が含まれます。
+- **グローバル通知**: 変更可能でない組み込みの通知が含まれています。
 - **テナント通知**: 作成したカスタム通知が含まれます。
 
 通知ごとに次の情報が表示されます。

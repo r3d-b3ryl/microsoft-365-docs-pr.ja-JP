@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: f0f91eb3936d1dc4ed6c028552b37fecb5df2ff6
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 24655986cd8c30bec4495477a63d692fd1ebb2d2
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648307"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679332"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する
 
@@ -30,7 +30,7 @@ ms.locfileid: "65648307"
 
 この記事では、攻撃シミュレーション トレーニングで独自のペイロードを作成する方法について説明します。 カスタム ペイロードは、次の場所に作成できます。
 
-- **[ペイロード**] タブ: Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング** \> ペイロード] タブ **に** 移動します。**[ペイロード**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=payload>.
+- **ペイロード**: Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ**] タブ **の [ペイロード**] に移動します\>。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 - シミュレーションの作成中: シミュレーション作成ウィザードの **[ペイロードの選択** ] ページ (3 番目のページ) でカスタム ペイロードを作成できます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
 
 攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニング[を使用した概要](attack-simulation-training-get-started.md)」を参照してください。
@@ -40,7 +40,7 @@ ms.locfileid: "65648307"
 
 ## <a name="create-a-payload"></a>ペイロードを作成する
 
-[ペイロードの作成] アイコンをクリック ![した後。](../../media/m365-cc-sc-create-icon.png) 攻撃シミュレーション トレーニングの **[ペイロード**] **タブまたはシミュレーション** 作成ウィザードの **[[ペイロードの選択](attack-simulation-training.md#select-a-payload)**] ページでペイロードを作成すると、ペイロード作成ウィザードが開始され、このセクションで説明します。
+[ペイロードの作成] アイコンをクリック ![した後。](../../media/m365-cc-sc-create-icon.png) 攻撃シミュレーション トレーニングの **[シミュレーション コンテンツ ライブラリ**] タブの **[ペイロード**] から **ペイロードを作成** するか、シミュレーション作成ウィザードの **[[ペイロードの選択](attack-simulation-training.md#select-a-payload)**] ページで、ペイロード作成ウィザードが開始され、このセクションで説明します。
 
 ### <a name="select-a-payload-type"></a>ペイロードの種類を選択する
 

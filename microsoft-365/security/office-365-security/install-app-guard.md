@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: 最新のハードウェア ベースの分離を取得します。 悪用や悪意のあるリンクなどの現在および新しい攻撃が従業員の生産性とエンタープライズ セキュリティを中断するのを防ぎます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 98d23a814ac2af8d9dedc4f163923e67c9ca7dc2
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 17743c3aecc50724309ab17c9bcaf2ab10d8ab9b
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973247"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65678988"
 ---
 # <a name="application-guard-for-office-for-admins"></a>管理者向け Application Guard for Office
 
@@ -48,10 +48,14 @@ Office更新チャネルの詳細については、「[Microsoft 365の更新チ
 
 ### <a name="licensing-requirements"></a>ライセンスの要件
 
-* Microsoft 365 E5またはMicrosoft 365 E5 Security
+* Microsoft 365 E5 Security
+* 教職員向けのMicrosoft 365 A5
+* 学生向けのMicrosoft 365 A5
 
 > [!NOTE]
 > 共有コンピューターのライセンス認証またはデバイス ベースのライセンスを持つMicrosoft 365 Apps for enterpriseは、Application Guard for Officeにアクセスできません。
+>
+> セーフ ドキュメント ライセンス プランでは、application Guard for Office へのアクセスが許可されます。 詳細については、「[Microsoft 365 E5/A5 のドキュメントのセーフ](/microsoft-365/security/office-365-security/safe-docs)」を参照してください。
 
 ## <a name="deploy-application-guard-for-office"></a>Office用の Application Guard をデプロイする
 
@@ -69,7 +73,7 @@ Office更新チャネルの詳細については、「[Microsoft 365の更新チ
    Enable-WindowsOptionalFeature -online -FeatureName Windows-Defender-ApplicationGuard
    ```
 
-3. **コンピューター ConfigurationAdministrative\\ テンプレート\\Windows コンポーネント\\Microsoft Defender Application Guard** のグループ ポリシーである **マネージド モード** でMicrosoft Defender Application Guardを検索します。 [オプション] の値を **2** または **3** に設定し、[OK] または [**適用****] を** 選択して、このポリシーを有効にします。
+3. コンピューター **構成\\管理テンプレート\\Windows コンポーネント\\Microsoft Defender Application Guard** のグループ ポリシーである **マネージド モード** でMicrosoft Defender Application Guardを検索します。 [オプション] の値を **2** または **3** に設定し、[OK] または [**適用****] を** 選択して、このポリシーを有効にします。
 
    :::image type="content" source="../../media/ag04-deploy.png" alt-text="マネージド モードで AG を有効にするオプション" lightbox="../../media/ag04-deploy.png":::
 
@@ -237,7 +241,7 @@ Application Guard では、予想されるファイルの開き方をユーザ�
 
 * Web リンク (`http` または `https`Web リンク) を選択しても、ブラウザーは開きません。
 * コピー貼り付け保護ポリシーの既定の設定は、テキストへのクリップボードアクセスのみを有効にすることです。
-* サポートされていないファイルの種類の保護ポリシーの既定の設定は、暗号化されているか、Information Rights Management (IRM) が設定されている信頼されていないサポートされていないファイルの種類を開くのをブロックすることです。 これには、Microsoft Purview Information Protectionの秘密度ラベルを使用して暗号化されるファイルが含まれます。
+* サポートされていないファイルの種類の保護ポリシーの既定の設定は、暗号化されているか、情報Rights Management (IRM) が設定されている信頼されていないサポートされていないファイルの種類を開くのをブロックすることです。 これには、Microsoft Purview 情報保護の秘密度ラベルを使用して暗号化されるファイルが含まれます。
 * 現時点では、CSV ファイルと HTML ファイルはサポートされていません。
 * 現在、Office用の Application Guard は NTFS 圧縮ボリュームでは機能しません。 "ERROR_VIRTUAL_DISK_LIMITATION" というエラーが表示される場合は、ボリュームの圧縮解除を試してください。
 * .NET を更新すると、Application Guard でファイルを開けなくなります。 回避策として、ユーザーは、このエラーが発生したときにデバイスを再起動できます。 [Windows Defender Application GuardまたはWindows サンドボックスを開くときにエラー メッセージが表示される場合の](https://support.microsoft.com/help/4575917/receiving-an-error-message-when-attempting-to-open-windows-defender-ap)問題の詳細を確認します。

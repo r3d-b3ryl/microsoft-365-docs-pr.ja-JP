@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 計画 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: 55810d65c33796a617421f0796191335821bde98
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
+ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648891"
+ms.lasthandoff: 05/25/2022
+ms.locfileid: "65679464"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートする
 
@@ -347,7 +347,7 @@ Microsoft が作成したランディング ページは、中国語 (簡体字)
 - **Microsoft の既定のトレーニング割り当て通知**
 - 以前に作成したカスタム トレーニングの割り当て通知。
 
-  これらの通知は、攻撃シミュレーション トレーニングの **[エンド ユーザー通知** ] タブでも <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>利用できます。 **Microsoft の既定のトレーニング割り当て通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングの割り当て通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
+  これらの通知は、攻撃シミュレーション トレーニング<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>の **[シミュレーション コンテンツ ライブラリ**] タブの **[エンド ユーザー通知**] でも利用できます。 **Microsoft の既定のトレーニング割り当て通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングの割り当て通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
 
 既存のトレーニング割り当て通知を選択するか、使用する新しい通知を作成できます。
 
@@ -382,7 +382,7 @@ Microsoft が作成したランディング ページは、中国語 (簡体字)
   - **Microsoft の既定のトレーニング リマインダー通知**
   - 以前に作成したカスタム トレーニングリマインダー通知。
 
-    これらの通知は、攻撃シミュレーション トレーニングの **[エンド ユーザー通知** ] タブでも <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>利用できます。 **Microsoft の既定のトレーニング リマインダー通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングリマインダー通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
+    これらの通知は、攻撃シミュレーション トレーニング<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>の **[シミュレーション コンテンツ ライブラリ**] タブの **[エンド ユーザー通知**] でも利用できます。 **Microsoft の既定のトレーニング リマインダー通知** は、[ **グローバル通知** ] タブで利用できます。カスタム トレーニングリマインダー通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
 
   既存のトレーニングリマインダー通知を選択するか、使用する新しい通知を作成できます。
 
@@ -419,7 +419,7 @@ Microsoft が作成したランディング ページは、中国語 (簡体字)
   - **Microsoft の既定の正の補強通知**
   - 以前に作成したカスタムの肯定的な補強通知。
 
-    これらの通知は、攻撃シミュレーション トレーニングの **[エンド ユーザー通知** ] タブでも <https://security.microsoft.com/attacksimulator?viewid=endUserNotification>利用できます。 **Microsoft の既定の肯定的な補強通知** は、[ **グローバル通知** ] タブで利用できます。カスタムの肯定的な強化通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
+    これらの通知は、攻撃シミュレーション トレーニング<https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>の **[シミュレーション コンテンツ ライブラリ**] タブの **[エンド ユーザー通知**] でも利用できます。 **Microsoft の既定の肯定的な補強通知** は、[ **グローバル通知** ] タブで利用できます。カスタムの肯定的な強化通知は、[ **テナント通知** ] タブで利用できます。詳細については、「 [攻撃シミュレーション トレーニングのエンド ユーザー通知」を](attack-simulation-training-end-user-notifications.md)参照してください。
 
   既存の肯定的な補強通知を選択するか、使用する新しい通知を作成できます。
 
