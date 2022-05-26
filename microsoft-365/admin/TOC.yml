@@ -14,13 +14,7 @@
         - name: Microsoft 365 for business のセットアップを計画
           href: setup/plan-your-setup.md
         - name: Microsoft 365 Business Premium にサインアップする
-          items:
-            - name: サインアップ
-              href: ../business/sign-up.md
-            - name: セットアップ ウィザードを使用して Microsoft 365 Business Premium をセットアップする
-              href: ../business/set-up.md
-            - name: Microsoft 365 Business Premium (動画)
-              href: admin-overview/what-is-microsoft-365.md
+          href: ../business-premium/index.md
         - name: Microsoft 365 Business Standard にサインアップする
           items:
             - name: Microsoft 365 Business Standard にサインアップする
@@ -352,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
-        - name: データ保護のための前提条件
-          href: /microsoft-365/business-premium/m365bp-pre-requisites-for-data-protection
         - name: Microsoft Defender ウイルス対策によって検出された脅威
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: コンプライアンス機能をセットアップする
@@ -366,29 +358,7 @@
       items:
         - name: デバイスとアプリのデータの保護方法
           href: devices/choose-device-security.md
-        - name: Microsoft Intune ドキュメント
-          href: /mem/intune/
-        - name: ポリシーとデバイスを表示し編集する
-          href: /microsoft-365/business-premium/m365bp-view-policies-and-devices
-        - name: 会社データを削除する
-          href: /microsoft-365/business-premium/m365bp-remove-company-data
-        - name: デバイスを工場出荷時の設定にリセットする
-          href: devices/reset-devices-to-factory-settings.md
-        - name: 保護機能を Intune の設定にマップする
-          href: /microsoft-365/business-premium/m365bp-map-protection-features-to-intune-settings
-        - name: デバイス状態
-          href: devices/device-states.md
-        - name: Windows 10 PC のアプリの保護設定
-          href: devices/protection-settings-for-windows-10-devices.md
         - name: Android または iOS の設定を検証する
-        - name: Autopilot
-          items:
-            - name: AutoPilot プロファイルを作成し編集する
-              href: /microsoft-365/business-premium/m365bp-create-and-edit-autopilot-profiles
-            - name: AutoPilot デバイスを作成し編集する
-              href: devices/create-and-edit-autopilot-devices.md
-        - name: Microsoft 365 for enterprise のドキュメント
-          href: ../enterprise/index.yml
         - name: 基本的なモビリティとセキュリティ
           items:
             - name: 基本的なモビリティとセキュリティの概要
