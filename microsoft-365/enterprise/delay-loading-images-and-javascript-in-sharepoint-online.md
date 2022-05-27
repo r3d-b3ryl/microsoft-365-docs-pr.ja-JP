@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: 74d327e5-755f-4135-b9a5-7b79578c1bf9
 description: JavaScript を使用してイメージの読み込みを遅延し、必須ではない JavaScript を使用して、SharePoint Online ページの読み込み時間を短縮する方法について説明します。
-ms.openlocfilehash: af75b3ede1136894bea0a7f4c00cc9498d194fe3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8252e169e36dc6976a7be0b4815915ee72283eff
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101295"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754734"
 ---
 # <a name="delay-loading-images-and-javascript-in-sharepoint-online"></a>SharePoint Online での画像の読み込み遅延と JavaScript
 
@@ -36,7 +36,7 @@ ms.locfileid: "65101295"
   
 ## <a name="improve-page-load-times-by-delaying-image-loading-in-sharepoint-online-pages-by-using-javascript"></a>JavaScript を使用してSharePoint Online ページでの画像読み込みを遅らせることでページの読み込み時間を短縮する
 
-JavaScript を使用すると、Web ブラウザーがイメージを事前にフェッチできないようにすることができます。 これにより、ドキュメントの全体的なレンダリングが高速化されます。 これを行うには、タグから src 属性の値を \<img\> 削除し、data-src などのデータ属性内のファイルへのパスに置き換えます。 例:
+JavaScript を使用すると、Web ブラウザーがイメージを事前にフェッチできないようにすることができます。 これにより、ドキュメントの全体的なレンダリングが高速化されます。 これを行うには、タグから src 属性の値を \<img\> 削除し、data-src などのデータ属性内のファイルへのパスに置き換えます。 次に例を示します。
   
 ```html
 <img src="" data-src="/sites/NavigationBySearch/_catalogs/masterpage/media/microsoft-white-8.jpg" />
@@ -115,7 +115,7 @@ delayLoadImages.jsの作成が完了したら、SharePoint Online のマスタ�
   
 ![ページに読み込まれたいくつかの画像を示すスクリーンショット。](../media/95eb2b14-f6a1-4eac-a5cb-96097e49514c.png)
   
-JavaScript を使用してイメージの読み込みを遅らせることは、パフォーマンスを向上させる効果的な手法です。ただし、この手法がパブリック Web サイトに適用されている場合、検索エンジンは、定期的に形成されたイメージをクロールするのと同じ方法で画像をクロールできません。 これは、ページが読み込まれるまで画像自体のメタデータが実際には存在しないため、検索エンジンのランク付けに影響を与える可能性があります。 検索エンジン のクローラーは HTML のみを読み取るため、画像はページのコンテンツとして表示されません。 画像は、検索結果のページのランク付けに使用される要因の 1 つです。 これを回避する 1 つの方法は、画像に入門テキストを使用する方法です。
+JavaScript を使用してイメージの読み込みを遅らせることは、パフォーマンスを向上させる効果的な手法です。ただし、この手法がパブリック Web サイトに適用されている場合、検索エンジンは、定期的に形成されたイメージをクロールするのと同じ方法で画像をクロールできません。 これは、ページが読み込まれるまで画像自体のメタデータが実際には存在しないため、検索エンジンのランク付けに影響を与える可能性があります。 検索エンジン クローラーは HTML のみを読み取るため、画像はページのコンテンツとして表示されません。 画像は、検索結果のページのランク付けに使用される要因の 1 つです。 これを回避する 1 つの方法は、画像に入門テキストを使用する方法です。
   
 ## <a name="github-code-sample-injecting-javascript-to-improve-performance"></a>GitHubコード サンプル: JavaScript を挿入してパフォーマンスを向上させる
 

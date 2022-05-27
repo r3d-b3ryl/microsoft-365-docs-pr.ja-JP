@@ -19,13 +19,13 @@ ms.custom:
 - commerce_billing
 - okr_SMB
 - AdminSurgePortfolio
-ms.date: 10/29/2021
-ms.openlocfilehash: 42b0852e61e81228d1094bad575e6439c3c77745
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 05/26/2022
+ms.openlocfilehash: a20b576a5ce988bc23bd3be0ede1961a008085ca
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321531"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754634"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>課金プロファイルを使用してサブスクリプションに対して支払う方法
 
@@ -38,6 +38,16 @@ ms.locfileid: "63321531"
 既定では、定期的な課金を使用するすべての有料サブスクリプションに対して、定期的な課金が自動的に有効になります。 課金期間ごとに、課金プロファイルに関連付けられている支払い方法に自動的に課金され、その課金プロファイルを使用するすべてのサブスクリプションに対して支払いが行われます。 支払い方法が拒否された場合は、請求書の [ **今すぐ支払う** ] ボタンを使用して、サブスクリプションの 1 回限りの支払いを行うことができます。
 
 課金プロファイルで定期的な課金がオフになっている場合は、課金プロファイルにリンクされている支払い方法に関係なく、請求書の [ **今すぐ** 支払う] ボタンを使用して、請求期間ごとに支払いを行うことができます。 小切手または電子送金 (EFT) で支払うこともできます。 その方法については、請求書の PDF コピーに記載されています。
+
+## <a name="new-regulations-from-the-reserve-bank-of-india"></a>インド準備銀行からの新しい規制
+
+2021 年 10 月 1 日以降、インドでの自動支払いでは、一部のクレジット カード取引 (特に 5,000 INR を超えるトランザクション) がブロックされる可能性があります。 この規制のため、Microsoft 365 管理センターで手動で支払いを行う必要がある場合があります。 これらの規制は、使用量に対して請求される合計金額には影響しません。
+
+[定期的な支払いに関するインド準備銀行規制の詳細について説明します](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0)。
+
+2022 年 7 月 1 日に、Microsoft およびその他のオンライン マーチャントはクレジット カード情報を保存しなくなります。 この規制に準拠するために、Microsoft は保存されているすべてのカードの詳細をMicrosoft 365 管理センターから削除します。 サービスの中断を回避するには、支払い方法を追加し、すべてのサブスクリプションと課金プロファイルに対して 1 回限りの支払いを行う必要があります。
+
+[カードストレージに関するインド準備銀行の規制について説明します](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211)。
 
 ## <a name="paying-by-invoice"></a>請求書での支払い
 

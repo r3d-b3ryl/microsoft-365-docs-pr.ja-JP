@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: 24655986cd8c30bec4495477a63d692fd1ebb2d2
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8ee202f66d2e9f4fdbf3eba1a1548abd1c3b5524
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679332"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739839"
 ---
 # <a name="create-custom-payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365で攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する
 
@@ -30,7 +30,7 @@ ms.locfileid: "65679332"
 
 この記事では、攻撃シミュレーション トレーニングで独自のペイロードを作成する方法について説明します。 カスタム ペイロードは、次の場所に作成できます。
 
-- **ペイロード**: Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ**] タブ **の [ペイロード**] に移動します\>。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+- **ペイロード**: Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ**] タブ **の [ペイロード**] に移動します\>。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動し、[**ペイロード**] を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 - シミュレーションの作成中: シミュレーション作成ウィザードの **[ペイロードの選択** ] ページ (3 番目のページ) でカスタム ペイロードを作成できます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
 
 攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニング[を使用した概要](attack-simulation-training-get-started.md)」を参照してください。

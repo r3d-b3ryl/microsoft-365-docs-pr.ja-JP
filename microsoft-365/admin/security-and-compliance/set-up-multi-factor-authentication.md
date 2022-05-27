@@ -28,12 +28,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: faac2f052b7c184a967f916cca433dfaef6866c7
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637342"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739917"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Microsoft 365 Business Premium の多要素認証を設定する
 
@@ -122,6 +122,8 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[多要素認証を設定する](set-up-multi-factor-authentication.md) (ビデオ)
+[多要素認証を設定する](set-up-multi-factor-authentication.md) (ビデオ)\
 
-[スマートフォンの多要素認証を有効にする](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+[スマートフォンの多要素認証を有効にする](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14) (記事)\
+
+[セキュリティの既定値と多要素認証](/microsoft-365/business-premium/m365bp-conditional-access) (記事)

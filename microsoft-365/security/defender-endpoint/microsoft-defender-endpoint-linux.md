@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e5f60e37765e562f0c1508778182f1f506773bff
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9207e0ad186f6a5dc5219e1a24c6ccdd8ee23fcd
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679244"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754104"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Linux 用 Microsoft Defender for Endpoint
 
@@ -79,14 +79,21 @@ Linux にMicrosoft Defender for Endpointをインストールおよび構成す�
 > [!NOTE]
 > 既定のインストール パス以外の場所にMicrosoft Defender for Endpointをインストールすることはサポートされていません。 
 
+> [!NOTE]
+> Linux 上のMicrosoft Defender for Endpointでは、ランダムな UID と GID を持つ "mdatp" ユーザーが作成されます。 UID と GID を制御する場合は、"/usr/sbin/nologin" シェル オプションを使用して、インストール前に "mdatp" ユーザーを作成します。
+> 例: `mdatp:x:UID:GID::/home/mdatp:/usr/sbin/nologin`。
+
 ### <a name="system-requirements"></a>システム要件
+
+> [!NOTE]
+> Red Hat Enterprise Linux および CentOS 6.7 以降から 6.10 以降のサポートはプレビュー段階です。
 
 - サポートされている Linux サーバーディストリビューションと x64 (AMD64/EM64T) とx86_64バージョン:
 
   - Red Hat Enterprise Linux 6.7 以降 (プレビュー)
-  - Red Hat Enterprise Linux 7.2 以降 
-  - Red Hat Enterprise Linux 8.x 
-  - CentOS 6.7 以降 
+  - Red Hat Enterprise Linux 7.2 以降
+  - Red Hat Enterprise Linux 8.x
+  - CentOS 6.7 以降 (プレビュー)
   - CentOS 7.2 以降
   - Ubuntu 16.04 LTS 以上の LTS
   - Debian 9 以降
@@ -103,13 +110,16 @@ Linux にMicrosoft Defender for Endpointをインストールおよび構成す�
 
 
 - サポートされているカーネル バージョンの一覧
-  - 最小カーネル バージョン 3.10.0-327 (Red Hat Enterprise Linux 6 および CentOS 6 を除く、上記でサポートされているすべての Linux ディストリビューションの場合)
+  > [!NOTE]
+  > RHEL/CentOS のMicrosoft Defender for Endpoint - 6.7 から 6.10 はカーネル ベースのソリューションです。 新しいカーネル バージョンに更新する前に、カーネルがサポートされていることを確認する必要があります。 サポートされているカーネルの一覧については、以下の一覧を参照してください。
+  > サポートされているその他のすべてのディストリビューションとバージョンのMicrosoft Defender for Endpoint実装は、カーネル バージョンに依存しません。 カーネル バージョンが 3.10.0-327 以降の場合は最小限の要件です。
+
   - カーネル オプションを `fanotify` 有効にする必要があります
   - Red Hat Enterprise Linux 6 および CentOS 6:
     - 6.7 の場合: 2.6.32-573.*
     - 6.8 の場合: 2.6.32-642.*
     - 6.9 の場合:2.6.32-696.* (2.6.32-696.el6.x86_64を除く)
-    - 6.10 の場合:2.6.32-754.43.1 に2.6.32.754.2.1.el6.x86_64:
+    - 6.10 の場合:2.6.32-754.47.1 に2.6.32.754.2.1.el6.x86_64します。
     
        - 2.6.32-754.10.1.el6.x86_64
        - 2.6.32-754.11.1.el6.x86_64

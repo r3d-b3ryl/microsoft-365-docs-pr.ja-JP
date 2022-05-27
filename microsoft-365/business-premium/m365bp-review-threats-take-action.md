@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Windows デバイス上のMicrosoft Defender ウイルス対策によって検出された脅威を確認して管理する方法について説明します。
-ms.openlocfilehash: 59b28ff1fe381b0d379e559427a806723dd26aac
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: dfa76f3a4af903663537c662f7a63b19ab85ba38
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679260"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739933"
 ---
 # <a name="review-threats-detected-by-microsoft-defender-antivirus-and-take-action"></a>Microsoft Defender ウイルス対策によって検出された脅威を確認し、アクションを実行する
 
@@ -32,7 +32,7 @@ Microsoft Defender ウイルス対策は、次の種類の脅威を検出して�
 - フィッシングの試行
 - データ盗難の試行
 
-IT プロフェッショナル/管理者は、[Microsoft 365 管理センターのIntuneに登録されているWindows 10 デバイス間の](/mem/intune/enrollment/device-enrollment)脅威検出に関する情報を表示できます。 次のような概要情報が表示されます。
+IT プロフェッショナル/管理者は、[Microsoft 365 管理センターのIntuneに登録されているWindows デバイス間の](/mem/intune/enrollment/device-enrollment)脅威検出に関する情報を表示できます。 次のような概要情報が表示されます。
 
 - ウイルス対策保護が必要なデバイスの数
 - セキュリティ ポリシーに準拠していないデバイスの数
@@ -40,28 +40,13 @@ IT プロフェッショナル/管理者は、[Microsoft 365 管理センター�
 
 脅威の検出とデバイスに関する特定の情報を表示するには、いくつかのオプションがあります。
 
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の **[アクティブなデバイス**] ページ。 この記事 [の「アクティブなデバイスの管理」ページの「脅威検出の管理](#manage-threat-detections-on-the-active-devices-page) 」を参照してください。
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>の **[アクティブな脅威**] ページ。 この記事 [の「アクティブな脅威」ページの脅威検出の管理に関する](#manage-threat-detections-on-the-active-threats-page) ページを参照してください。
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft エンドポイント マネージャー</a>の **[ウイルス対策]** ページ。 この記事の「[Microsoft エンドポイント マネージャーの脅威検出の管理](#manage-threat-detections-in-microsoft-endpoint-manager)」を参照してください。
+- Microsoft 365 管理センターの **[アクティブな脅威**] ページを使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">します</a>。 この記事 [の「 **アクティブな** 脅威」ページの脅威検出の管理に関する](#manage-threat-detections-on-the-active-threats-page) ページを参照してください。
+- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で **セキュリティ レポート** を使用します。 この記事の「[Microsoft 365 Defender ポータルでの脅威検出の表示と管理](#view-and-manage-threat-detections-in-the-microsoft-365-defender-portal)」を参照してください。
+- Microsoft エンドポイント マネージャーの **[ウイルス対策]** ページを使用 <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">します</a>。 この記事の「[Microsoft エンドポイント マネージャーの脅威検出の管理](#manage-threat-detections-in-microsoft-endpoint-manager)」を参照してください。
 
 詳細については、「[Microsoft Defender ウイルス対策によって検出された脅威](/admin/security-and-compliance/threats-detected-defender-av.md)」を参照してください。
 
-## <a name="manage-threat-detections-on-the-active-devices-page"></a>**[アクティブなデバイス**] ページで脅威の検出を管理する
-
-次の手順は、Microsoft 365 Business Premiumをお持ちのお客様に適用されます。
-
-1. Microsoft 365 管理センターに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>移動してサインインします。
-
-2. ナビゲーション ページで、[ **デバイス** > **のアクティブなデバイス**] を選択します。 アクティブなデバイスと詳細の一覧 (保護状態、ウイルス対策 (AV) 保護の状態、検出されたアクティブな脅威の数など) が表示されます。
-
-3. デバイスを選択すると、そのデバイスと使用可能なアクションの詳細が表示されます。 ポップアップが開き、推奨事項と使用可能なアクション ( **更新ポリシー**、 **ウイルス対策の更新**、 **クイック スキャンの実行**、 **フル スキャンの実行** など) が表示されます。
-
 ## <a name="manage-threat-detections-on-the-active-threats-page"></a>**[アクティブな** 脅威] ページで脅威の検出を管理する
-
-次の手順は、Microsoft 365 Business Premiumをお持ちのお客様に適用されます。 [Windows 10デバイスをセキュリティで保護](../business-premium/m365bp-secure-windows-devices.md)し、[Intuneに登録](/mem/intune/enrollment/windows-enrollment-methods)する必要があります。
-
-> [!NOTE]
-> **Microsoft Defender ウイルス対策** カードと **アクティブな脅威** ページは段階的にロールアウトされているため、すぐにアクセスできない可能性があります。
 
 1. Microsoft 365 管理センターに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>移動してサインインします。
 
@@ -71,7 +56,7 @@ IT プロフェッショナル/管理者は、[Microsoft 365 管理センター�
 
 4. ポップアップで、使用可能なアクション ( **更新ポリシー**、 **ウイルス対策の更新**、 **クイック スキャンの実行** など) を表示するデバイスを選択します。
 
-## <a name="actions-you-can-take"></a>実行できるアクション
+### <a name="actions-you-can-take"></a>実行できるアクション
 
 特定の脅威やデバイスに関する詳細を表示すると、推奨事項と実行できる 1 つ以上のアクションが表示されます。 次の表では、表示される可能性があるアクションについて説明します。<br><br>
 
@@ -82,7 +67,15 @@ IT プロフェッショナル/管理者は、[Microsoft 365 管理センター�
 | クイック スキャンを実行する | レジストリ キーや既知のWindowsスタートアップ フォルダーなど、マルウェアが登録されている可能性がある一般的な場所に焦点を当てて、デバイスでクイックウイルス対策スキャンを開始します。 |
 | フル スキャンを実行する | デバイスで完全なウイルス対策スキャンを開始し、マルウェアが登録される可能性がある一般的な場所に焦点を当て、デバイス上のすべてのファイルとフォルダーを含めます。 結果は[Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)に送信されます。 |
 | ウイルス対策を更新する | デバイスがウイルス対策とマルウェア対策の [保護のためにセキュリティ インテリジェンス更新プログラム](https://go.microsoft.com/fwlink/?linkid=2149926) を取得する必要があります。 |
-| デバイスの再起動 | Windows 10 デバイスを強制的に 5 分以内に再起動します。<br><br>**大事な：** デバイスの所有者またはユーザーに再起動の通知が自動的に通知されず、未保存の作業が失われる可能性があります。 |
+| デバイスの再起動 | Windows 10 デバイスを強制的に 5 分以内に再起動します。<br><br>**大事な：** デバイスの所有者またはユーザーに再起動の通知が自動的に表示されないため、未保存の作業が失われる可能性があります。 |
+
+## <a name="view-and-manage-threat-detections-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで脅威の検出を表示および管理する
+
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
+
+2. ナビゲーション ウィンドウで、[ **レポート** > **全般** > **セキュリティ レポート**] を選択します。
+
+3. **[デバイス]** 行まで下にスクロールします。 デバイスで脅威が検出された場合は、この行にその情報が表示されます。
 
 ## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーで脅威の検出を管理する
 
@@ -102,7 +95,7 @@ Microsoft エンドポイント マネージャーを使用して、脅威の検
 
 | アクション | 説明 |
 |--|--|
-| Restart | Windows 10 デバイスを強制的に 5 分以内に再起動します。<br><br>**大事な：** デバイスの所有者またはユーザーに再起動の通知が自動的に通知されず、未保存の作業が失われる可能性があります。 |
+| Restart | Windows 10 デバイスを強制的に 5 分以内に再起動します。<br><br>**大事な：** デバイスの所有者またはユーザーに再起動の通知が自動的に表示されないため、未保存の作業が失われる可能性があります。 |
 | クイック スキャン | レジストリ キーや既知のWindowsスタートアップ フォルダーなど、マルウェアが登録されている可能性がある一般的な場所に焦点を当てて、デバイスでクイックウイルス対策スキャンを開始します。 結果は[Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)に送信されます。 |
 | フル スキャン | デバイスで完全なウイルス対策スキャンを開始し、マルウェアが登録される可能性がある一般的な場所に焦点を当て、デバイス上のすべてのファイルとフォルダーを含めます。 結果は[Microsoft エンドポイント マネージャー](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager)に送信されます。 |
 | 同期 | デバイスがIntune (Microsoft エンドポイント マネージャーの一部) でチェックインする必要があります。 デバイスがチェックインすると、デバイスに割り当てられている保留中のアクションまたはポリシーがデバイスに受信されます。 |

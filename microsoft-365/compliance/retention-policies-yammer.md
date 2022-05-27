@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yammer に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: e90d83cb4b71600f4dbf8b16790454f523ce6c13
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: c479b7b08fd74b957a8ef7d23147758948459dc8
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286474"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754314"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer の保持の詳細
 
@@ -47,7 +47,7 @@ Yammer のユーザー メッセージとコミュニティ メッセージは�
 
 ユーザー メッセージには、会話内のすべてのユーザーの名前が含まれ、コミュニティ メッセージにはコミュニティ名とメッセージの件名 (提供されている場合) が含まれます。
 
-Yammer のアイテム保持ポリシーを使用する場合、絵文字の形式で他のユーザーからの反応は保持されません。
+Yammer のアイテム保持ポリシーを使用する場合、絵文字の形式で他のユーザーからのリアクションは保持されません。
 
 Yammer で使用するファイルは、Yammer のアイテム保持ポリシーには含まれません。これらのアイテムには独自のアイテム保持ポリシーがあります。
 
@@ -66,10 +66,10 @@ Exchange に保存されている場合でも、Yammer メッセージは、**Ya
 > [!NOTE]
 > ユーザーが Yammer のデータを保持するアクティブなアイテム保持ポリシーに含まれている場合、このポリシーに含まれるユーザーのメールボックスを削除すると、Yammer のデータを保持するためにメールボックスは[非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)に変換されます。 ユーザーのこの Yammer データを保持する必要がない場合は、メールボックスを削除する前に、アイテム保持ポリシーからそのユーザー アカウントを除外します。
 
-Yammer メッセージのアイテム保持ポリシーが構成されると、Exchange サービスのタイマー ジョブが、これらの Yammer メッセージが保存されている隠しフォルダ内のアイテムを定期的に評価します。 このタイマー ジョブを実行するには、最大 7 日間かかります。 アイテムの保持期間が満了すると、これらのアイテムは SubstrateHolds フォルダに移動されます。これは、すべてのユーザーまたはグループのメールボックスにある隠しフォルダで、アイテムが完全に削除される前の "論理的に削除済み" のアイテムが保存されます。
+Yammer メッセージのアイテム保持ポリシーが構成されると、Exchange サービスのタイマー ジョブが、これらの Yammer メッセージが保存されている隠しフォルダ内のアイテムを定期的に評価します。 このタイマー ジョブを実行するには、最大 7 日間かかります。 アイテムの保持期間が満了すると、これらのアイテムは SubstrateHolds フォルダに移動されます。これは、すべてのユーザーまたはグループのメールボックスにある隠しフォルダで、「論理的に削除済み」アイテムが完全に削除される前に保存するためのものです。
 
 > [!IMPORTANT]
-> [アイテム保持の最初の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)により、および Yammer メッセージは Exchange Online メールボックスに保存されるため、メールボックスが別のアイテム保持ポリシー (Exchange の場所に適用されたポリシーを含む)、訴訟ホールド、または遅延ホールドの影響を受ける場合、または電子情報開示ホールドが法的または調査上の理由によりメールボックスに適用される場合には、SubstrateHolds フォルダーからの完全な削除は常に中断されます。
+> [アイテム保持の最初の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)により、および Yammer メッセージは Exchange Online メールボックスに保存されるため、メールボックスが別のアイテム保持ポリシー、訴訟ホールド、または遅延ホールドの影響を受ける場合、または電子情報開示ホールドが法的または調査上の理由によりメールボックスに適用される場合には、SubstrateHolds フォルダーからの完全な削除は常に中断されます。
 >
 > メールボックスは該当するホールド リストに含まれる一方で、削除された Yammer メッセージは Yammer に表示されなくなりますが、電子情報開示では引き続き検出できます。
 
@@ -110,7 +110,7 @@ Yammer メッセージのアイテム保持ポリシーが構成されると、E
 - [例 2: 30 日間保持してから、削除する](#example-2-retain-for-30-days-and-then-delete)
 - [例 3: 1 日後削除のみ](#example-3-delete-only-after-1-day)
 
-完全な削除を参照するすべての例では、[保持の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)により、メッセージがアイテムを保持するための別のアイテム保持ポリシーの対象であるか、電子情報開示の保持の対象である場合、このアクションは一時停止されます。
+完全な削除を参照するすべての例では、[アイテム保持の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)により、メッセージがアイテムを保持するための別のアイテム保持ポリシーの対象であるか、電子情報開示の保持の対象である場合、このアクションは一時停止されます。
 
 ##### <a name="example-1-retain-only-for-7-years"></a>例 1: 7 年間保持のみ
 

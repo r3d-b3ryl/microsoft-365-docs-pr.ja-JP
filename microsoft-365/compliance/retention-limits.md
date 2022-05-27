@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: bb94043f68d46f98f005853cde03da048495e10f
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: a0246fef2ae72dd2b0b176f82bb42559d405eaa5
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285360"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754038"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
@@ -59,7 +59,7 @@ Microsoft Teams と Yammer のデータ保持ポリシーでは、データ保�
 
 ## <a name="maximums-for-adaptive-policy-scopes"></a>アダプティブ ポリシー スコープの最大数
 
-保持のためにポリシーに追加できる[アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)の数に制限はありません。ただし、各アダプティブ スコープを定義するクエリには、以下のとおり最大数にいくつかの制限があります。
+保持のためにポリシーに追加できる[アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)の数に制限はありません。ただし、各アダプティブ スコープを定義するクエリには、以下のとおり最大数にいくつかの制限があります:
 
 - 属性値またはプロパティ値の文字列の長さ: 200
 - グループのない場合またはグループ内の属性またはプロパティの数: 10

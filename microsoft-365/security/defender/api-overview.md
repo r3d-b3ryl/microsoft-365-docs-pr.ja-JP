@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: ec4a497fd0ee428fbc664ae064ec95f74fcdce85
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: c2a340c2ad147e32082a50e326a2e0c7e11718c2
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172417"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739607"
 ---
 # <a name="overview-of-microsoft-365-defender-apis"></a>Microsoft 365 Defender API の概要
 
@@ -53,6 +53,9 @@ Microsoft 365 Defender API を使用して、共有インシデントテーブ�
 
 > [!NOTE]
 > 統合ポータルへの移行は、Microsoft Defender for Endpoint API に基づいて PowerBi ダッシュボードに影響を与えるべきではありません。 対話型ポータルの切り替えに関係なく、既存の API を引き続き操作できます。
+
+この短いビデオでは、Microsoft 365 Defenderを使用してワークフローを自動化し、アプリを統合する方法について説明します。  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M?rel=0]
 
 ## <a name="learn-more"></a>詳細情報
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4429226eaebc254676fac5589a2a25ca51acdeb6
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: d4b17e0b8a57c5f3778eff15d8961713c642409e
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499927"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739973"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Microsoft 365 Defender の使用を開始する
 
@@ -35,6 +35,9 @@ ms.locfileid: "64499927"
 - Microsoft 365 Defender
 
 Microsoft 365 Defenderは、企業全体のセキュリティを監視および管理できる統合エクスペリエンスです。 ID、エンドポイント、データ、アプリ、電子メール、コラボレーション ツール全体にわたる統合アラートにより、脅威の調査と対応が一元的な場所で行われるようになりました。 
+
+この短いビデオでは、Microsoft 365 DefenderがMicrosoft 365全体の脅威を防止、検出、調査、修復する方法について説明します。  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
 
 Microsoft のセキュリティ製品スイートを初めて使用する場合でも、個々のワークフローに精通している場合でも、このトピックでは、Microsoft 365 Defenderの使用を開始するために必要な簡単な手順について説明します。
 
@@ -52,6 +55,7 @@ Microsoft のセキュリティ製品スイートを初めて使用する場合�
 
 
 ## <a name="key-capabilities"></a>主な機能
+
 サービスのMicrosoft 365 Defenderとデプロイを有効にすると、次の主要な機能にアクセスできます。
 
 

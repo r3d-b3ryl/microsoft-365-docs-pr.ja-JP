@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 計画 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: 647ea6188e1bd7867e823bbfbb6341255e82960d
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679464"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739651"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートする
 
@@ -319,7 +319,7 @@ Microsoft が作成したランディング ページは、中国語 (簡体字)
       - **キャンペーン終了後に配信する**
       - **キャンペーン中に配信する**
     - **アクション**: [表示] アイコンを ![クリックした場合。](../../media/m365-cc-sc-view-icon.png) **[表示]** アイコンをクリックすると、[ **校閲通知** ] ページに次の情報が表示されます。
-      - **[プレビュー** ] タブ: 通知メッセージを表示します。
+      - **[プレビュー** ] タブ: ユーザーに表示される通知メッセージを表示します。
         - 異なる言語でメッセージを表示するには、[言語の **選択]** ボックスを使用します。
         - [ **プレビューするペイロードの選択** ] ボックスを使用して、複数のペイロードを含むシミュレーションの通知メッセージを選択します。
       - **[詳細** ] タブ: 通知に関する詳細を表示します。

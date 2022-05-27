@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: fd043ae1ebabcb8162ed96b973c9392bae5fd2a1
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944439"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739419"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -206,9 +206,8 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 
 ### <a name="create-an-automated-flow"></a>自動化されたフローを作成する
 
-詳細なステップ バイ ステップ プロセスについては、 [ここ](https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn)のビデオを参照してください。
-
-このビデオでは、power Automate を Defender for Cloud Apps に接続する方法についても説明します。
+この短いビデオでは、スムーズなワークフローを作成するために自動化が効率的に機能する方法と、Power Automateを Defender for Cloud Apps に接続する方法について説明します。 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## <a name="next-steps"></a>次の手順
 

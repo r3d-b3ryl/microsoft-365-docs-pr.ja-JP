@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 3832cd64ce66e667cced13c41bc34c28d575b373
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: b2d66fce2b1eeffa4500c01a07f271b5b1a96ab7
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637519"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754778"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックス移行 (プレビュー)
 
@@ -48,7 +48,7 @@ ms.locfileid: "65637519"
 
 さらに、ソース テナント内の少なくとも 1 つのメールが有効なセキュリティ グループが必要です。 これらのグループは、ソース テナント (またはリソースとも呼ばれる) テナントからターゲット テナントに移動できるメールボックスの一覧の範囲を指定するために使用されます。 これにより、移行元テナント管理者は、移動する必要があるメールボックスの特定のセットを制限またはスコープ設定し、意図しないユーザーが移行されないようにすることができます。 入れ子になったグループはサポートされていません。
 
-また、信頼できるパートナー企業 (メールボックスを移動する相手) と通信して、Microsoft 365テナント ID を取得する必要もあります。 このテナント ID は、[組織リレーションシップ DomainName] フィールドで使用されます。
+また、信頼できるパートナー会社 (メールボックスを移動する相手) と通信して、Microsoft 365テナント ID を取得する必要もあります。 このテナント ID は、[組織リレーションシップ DomainName] フィールドで使用されます。
 
 サブスクリプションのテナント ID を取得するには、[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)にサインインして [https://aad.portal.azure.com/\#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Properties)、 . テナント ID プロパティのコピー アイコンをクリックして、クリップボードにコピーします。
 
@@ -122,7 +122,7 @@ ms.locfileid: "65637519"
 
 22. ポータル ウィンドウに戻り、[更新] を選択して同意を確認できます。
 
-23. 信頼されたパートナー (ソース テナント管理者) に送信する URL を作成し、アプリケーションを受け入れてメールボックスの移行を有効にすることもできます。 作成したアプリのアプリケーション ID が必要になる URL の例を次に示します。
+23. 信頼されたパートナー (ソース テナント管理者) に送信する URL を作成し、アプリケーションを受け入れてメールボックスの移行を有効にすることもできます。 作成したアプリのアプリケーション ID が必要な URL の例を次に示します。
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -238,12 +238,12 @@ ms.locfileid: "65637519"
 
    - Target MailUser には、ソース メールボックスから、または新しい User オブジェクトで割り当てられている次の属性が必要です。
       - ExchangeGUID (ソースからターゲットへの直接フロー): メールボックス GUID が一致している必要があります。 ターゲット オブジェクトに存在しない場合、移動プロセスは続行されません。
-      - ArchiveGUID (ソースからターゲットへの直接フロー): アーカイブ GUID が一致している必要があります。 ターゲット オブジェクトにこれが存在しない場合、移動プロセスは続行されません。 (これは、ソース メールボックスがアーカイブが有効になっている場合にのみ必要です)。
+      - ArchiveGUID (ソースからターゲットへの直接フロー): アーカイブ GUID が一致している必要があります。 ターゲット オブジェクトに存在しない場合、移動プロセスは続行されません。 (これは、ソース メールボックスがアーカイブが有効になっている場合にのみ必要です)。
       - LegacyExchangeDN (proxyAddress としてフロー、"x500:\<LegacyExchangeDN>"): LegacyExchangeDN は、ターゲット MailUser に x500: proxyAddress として存在する必要があります。 さらに、ソース メールボックスからターゲット メール ユーザーにすべての x500 アドレスをコピーする必要もあります。 移動プロセスは、ターゲット オブジェクトに存在しない場合は続行されません。
       - UserPrincipalName: UPN は、ユーザーの新しい ID またはターゲット企業 (user@northwindtraders.onmicrosoft.com など) に対応します。
       - プライマリ SMTPAddress: プライマリ SMTP アドレスは、ユーザーの新しい会社 (user@northwind.com など) に合わせて配置されます。
       - TargetAddress/ExternalEmailAddress: MailUser は、ソース テナントでホストされているユーザーの現在のメールボックス (user@contoso.onmicrosoft.com など) を参照します。 この値を割り当てるときに、PrimarySMTPAddress が割り当てられているか、またはこの値が PrimarySMTPAddress を設定することを確認します。これにより、移動エラーが発生します。
-      - 移行元メールボックスからターゲット MailUser に従来の SMTP プロキシ アドレスを追加することはできません。 たとえば、fabrikam.onmicrosoft.com テナント オブジェクト) 内の MEU の contoso.com を維持することはできません)。 ドメインは、1 つの Azure AD またはExchange Online テナントにのみ関連付けられます。
+      - ソース メールボックスからターゲット MailUser に従来の SMTP プロキシ アドレスを追加することはできません。 たとえば、fabrikam.onmicrosoft.com テナント オブジェクト) で MEU の contoso.com を維持することはできません)。 ドメインは、1 つの Azure AD またはExchange Online テナントにのみ関連付けられます。
 
      **ターゲット** MailUser オブジェクトの例:
 

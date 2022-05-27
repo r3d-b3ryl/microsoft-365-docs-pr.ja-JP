@@ -20,16 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: この記事では、Office 365に含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法について説明します。
-ms.openlocfilehash: 3617e1f067f4b29470feedcf7381b41a400887f9
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759105"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754678"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-DLP ポリシーを使用する最も簡単で一般的な方法は、Microsoft 365 コンプライアンス センターに含まれるテンプレートのいずれかを使用することです。 これらのテンプレートの 1 つをそのまま使用することも、組織の特定のコンプライアンス要件を満たすようにルールをカスタマイズすることもできます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+DLP ポリシーを使用する最も簡単で一般的な方法は、Microsoft Purview コンプライアンス ポータルに含まれるテンプレートのいずれかを使用することです。 これらのテンプレートの 1 つをそのまま使用することも、組織の特定のコンプライアンス要件を満たすようにルールをカスタマイズすることもできます。
 
 Microsoft 365には、さまざまな一般的な規制とビジネス ポリシーのニーズを満たすのに役立つ 40 を超えるすぐに使用できるテンプレートが含まれています。 参照してください。完全なリストの [ポリシー テンプレート](dlp-policy-reference.md#policy-templates) 。 
 
@@ -41,9 +43,9 @@ Microsoft 365には、さまざまな一般的な規制とビジネス ポリシ
 
 DLP ポリシーを作成するコンプライアンス チームのメンバーは、コンプライアンス センターへのアクセス許可を持っている必要があります。 既定では、テナント管理者は、コンプライアンス担当者や他のユーザーにアクセス権を付与できます。 次の手順を実行します。
   
-1. Microsoft 365 でグループを作成して、コンプライアンス責任者をグループに追加します。
+1. Microsoft 365 でグループを作成して、コンプライアンス責任者を追加します。
     
-2. セキュリティ &amp; コンプライアンス センターの [**アクセス許可**] ページで役割グループを作成します。 
+2. Microsoft Purview コンプライアンス ポータルの **[アクセス許可]** ページで役割グループを作成します。 
 
 3. 役割グループを作成するときに、[ロールの **選択** ] セクションを使用して、役割グループに次のロールを追加します。 **DLP コンプライアンス管理**。
     
@@ -51,7 +53,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 **表示専用 DLP コンプライアンス管理** ロールを使用して、DLP ポリシーと DLP レポートに対する表示専用特権を持つロール グループを作成します。
 
-詳細については、「[Give users access to the Office 365 Security & Compliance Center (Office 365 セキュリティ/コンプライアンス センターへのアクセス権をユーザーに付与する)](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md)」を参照してください。
+詳細については、「[Microsoft Purview コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)」 を参照してください。
   
 これらのアクセス許可は、ポリシーを適用しないように DLP ポリシーを作成して適用するために必要です。
 
@@ -59,14 +61,14 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割の一覧を次に示します。 詳細については、[Microsoft Purview コンプライアンス ポータルのアクセス許可に関するページを](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、[Microsoft Purview コンプライアンス ポータルのアクセス許可に関するページを](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)参照してください。
 
 - 情報保護
 - Information Protection レベル
@@ -76,9 +78,9 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 ### <a name="create-the-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-1. Microsoft 365 コンプライアンス センターにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">します</a>。
+1. Microsoft Purview コンプライアンス ポータルにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">します</a>。
 
-2. コンプライアンス センター \> の左側のナビゲーション \> **ソリューション** \> **データ損失防止** \> **ポリシー** \> **+ ポリシーの作成**。
+2. 左側のナビゲーション \> Microsoft Purview コンプライアンス ポータル \> **ソリューション** \> **データ損失防止** \> **ポリシー** \> **+ ポリシーの作成**。
 
     ![ポリシー ボタンを作成します。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
           
@@ -94,7 +96,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 5. DLP ポリシーで保護する場所を選択し、場所ごとに既定のスコープを受け入れるか、スコープをカスタマイズします。 スコープ オプションの [場所](dlp-policy-reference.md#locations) を参照してください。
 
-6. [\> **次へ**]を選択します。
+6. \> **次へ** を選択します。
  
 1. 次のいずれかの操作を行います。
 
@@ -121,7 +123,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     1. OneDrive
     1. チャット メッセージとチャネル メッセージをTeamsする 
 
-10. [**次へ**]を選択します。
+10. **次へ** を選択します。
 
 11. 必要に応じて、[ **保護アクション]** ページで、ポリシー ヒント通知と通知メールをカスタマイズできます。 **コンテンツがポリシー条件と一致する場合に有効にし、ポリシーのヒントをユーザーに表示し、電子メール通知を送信** してから、[**ヒントと電子メールのカスタマイズ**] を選択します。
 12. [ **次へ**] を選びます。
@@ -205,7 +207,7 @@ In this example, you'll create a DLP policy that identifies U.S. PII data, which
 
 ## View the status of a DLP policy
 
-At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Security &amp; Compliance Center. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
+At any time, you can view the status of your DLP policies on the **Policy** page in the **Data loss prevention** section of the Microsoft Purview compliance portal. Here you can find important information, such as whether a policy was successfully enabled or disabled, or whether the policy is in test mode.
 
 Here are the different statuses and what they mean.
 

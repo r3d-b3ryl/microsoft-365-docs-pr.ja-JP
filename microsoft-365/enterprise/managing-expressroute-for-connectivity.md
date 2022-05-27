@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: e4468915-15e1-4530-9361-cd18ce82e231
-description: プレフィックス のフィルター処理、セキュリティ、コンプライアンスなどの構成に共通する領域を含む、Office 365の ExpressRoute の管理方法について説明します。
-ms.openlocfilehash: a601c047a7b8e19f02a728d00708689c795d5a64
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: プレフィックス のフィルター処理、セキュリティ、コンプライアンスなどの構成に共通する領域を含む、Office 365用の ExpressRoute を管理する方法について説明します。
+ms.openlocfilehash: 493a7c0ca14d05a2b84763b9e9485f828574a930
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098320"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753872"
 ---
 # <a name="managing-expressroute-for-office-365-connectivity"></a>Office 365 向け ExpressRoute の接続を管理する
 
@@ -37,9 +37,9 @@ ExpressRoute for Office 365は、インターネットに送信するすべて�
 
 Microsoft は、お客様が Microsoft からアドバタイズされたすべての BGP ルートを受け入れることをお勧めします。提供されるルートは厳格なレビューと検証プロセスを受け、追加された精査に対する利点を排除します。 ExpressRoute では、IP プレフィックスの所有権、整合性、スケールなどの推奨される制御がネイティブに提供され、顧客側では受信ルートのフィルター処理は行われません。
   
-ExpressRoute パブリック ピアリング全体のルート所有権の追加検証が必要な場合は、 [Microsoft のパブリック IP 範囲](https://www.microsoft.com/download/details.aspx?id=53602)を表すすべての IPv4 および IPv6 IP プレフィックスの一覧に対してアドバタイズされたルートを確認できます。 これらの範囲は、Microsoft の完全なアドレス空間をカバーし、頻繁に変更されることが少なく、信頼性の高い一連の範囲を提供し、それに対してフィルターを適用することで、Microsoft 以外の所有ルートが環境に漏えいすることを懸念しているお客様に対する追加の保護も提供します。 変更がある場合は、月の 1 日に行われ、ファイルが更新されるたびにページの **詳細** セクションのバージョン番号が変更されます。
+ExpressRoute パブリック ピアリング全体のルート所有権の追加検証が必要な場合は、 [Microsoft のパブリック IP 範囲](https://www.microsoft.com/download/details.aspx?id=53602)を表すすべての IPv4 および IPv6 IP プレフィックスの一覧に対してアドバタイズされたルートを確認できます。 これらの範囲は、Microsoft の完全なアドレス空間をカバーし、頻繁に変更されることが少なく、信頼性の高い一連の範囲を提供し、それに対してフィルターを適用することで、Microsoft 以外の所有ルートが環境に漏えいすることを懸念しているお客様に対する追加の保護も提供します。 変更が発生した場合は、月の 1 日に行われ、ファイルが更新されるたびにページの **詳細** セクションのバージョン番号が変更されます。
   
-プレフィックス フィルター リストを生成するために[、Office 365 URL と IP アドレス範囲](./urls-and-ip-address-ranges.md)の使用を回避するには、さまざまな理由があります。 次を含めます。
+プレフィックス フィルター リストを生成するために[、Office 365 URL と IP アドレス範囲](./urls-and-ip-address-ranges.md)を使用しないようにするには、多くの理由があります。 次を含めます。
   
 - Office 365 IP プレフィックスは、頻繁に多くの変更を受けます。
 
@@ -59,7 +59,7 @@ Microsoft からの BGP ルートアドバタイズメントを管理する方�
   
 ### <a name="security"></a>セキュリティ
 
-ExpressRoute のパブリックおよび Microsoft ピアリングとの間の接続には、Office 365 サービスとの間の接続を含む独自のネットワークおよびセキュリティ境界制御を維持することをお勧めします。 セキュリティ制御は、ネットワークから Microsoft のネットワークに送信されるネットワーク要求と、Microsoft のネットワークからネットワークへの受信に対して行われる必要があります。
+ExpressRoute のパブリックおよび Microsoft ピアリングとの間の接続には、Office 365 サービスとの間の接続を含む独自のネットワークおよびセキュリティ境界制御を維持することをお勧めします。 セキュリティ制御は、ネットワークから Microsoft のネットワークに送信され、Microsoft のネットワークからネットワークに受信されるネットワーク要求に対して行われる必要があります。
   
 #### <a name="outbound-from-customer-to-microsoft"></a>お客様から Microsoft への送信
   
@@ -86,11 +86,11 @@ Microsoft がネットワークへの接続を開始する必要があるオプ�
 
 - Exchange Online テナントからオンプレミス ホストにメールを送信します。
 
-- SharePoint オンライン メールは、SharePoint Online からオンプレミスのホストに送信されます。
+- SharePoint Online からオンプレミス ホストに送信されたオンライン メールをSharePointします。
 
 - [フェデレーション ハイブリッド検索をSharePoint](/SharePoint/hybrid/display-hybrid-federated-search-results-in-sharepoint-online)します。
 
-- [ハイブリッド BCS をSharePoint](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution)します。
+- [ハイブリッド BCSをSharePoint](/SharePoint/hybrid/deploy-a-business-connectivity-services-hybrid-solution)します。
 
 - [ハイブリッド](/skypeforbusiness/hybrid/plan-hybrid-connectivity?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)フェデレーションまたは[Skype for BusinessフェデレーションをSkype for Business](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-features)します。
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b9bca10cf946a7e812064f07cc3be6fa658edf39
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217400"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65740017"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -33,6 +33,7 @@ ms.locfileid: "65217400"
 
 
 **適用対象:**
+
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
@@ -71,6 +72,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 **[高度な捜索でこのクエリを実行する](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>クエリを記述し、検索するテーブルを指定する
+
 クエリの先頭に短いコメントが追加され、目的を説明しました。 このコメントは、後でクエリを保存し、組織内の他のユーザーと共有することを決定した場合に役立ちます。 
 
 ```kusto
@@ -82,7 +84,9 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 ```kusto
 union DeviceProcessEvents, DeviceNetworkEvents
 ```
+
 ### <a name="set-the-time-range"></a>時間範囲を設定する
+
 最初のパイプ要素は、前の 7 日間の範囲の時間フィルターです。 時間範囲を制限することで、クエリが適切に実行され、管理可能な結果が返され、タイムアウトが回避されるのに役立ちます。
 
 ```kusto
@@ -90,6 +94,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="check-specific-processes"></a>特定のプロセスを確認する
+
 時間範囲の直後に、PowerShell アプリケーションを表すプロセス ファイル名を検索します。
 
 ```kusto
@@ -98,6 +103,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="search-for-specific-command-strings"></a>特定のコマンド文字列を検索する
+
 その後、クエリは、PowerShell を使用してファイルをダウンロードするために通常使用されるコマンド ライン内の文字列を検索します。
 
 ```kusto
@@ -113,6 +119,7 @@ union DeviceProcessEvents, DeviceNetworkEvents
 ```
 
 ### <a name="customize-result-columns-and-length"></a>結果の列と長さをカスタマイズする 
+
 クエリによって、検索するデータが明確に識別されるようになったので、結果の見た目を定義できます。 `project` は特定の列を返し `top` 、結果の数を制限します。 これらの演算子は、結果が適切に書式設定され、合理的に大きく、処理が簡単であることを確認するのに役立ちます。
 
 ```kusto
@@ -125,6 +132,8 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 >[!TIP]
 >クエリ結果をグラフとして表示し、フィルターをすばやく調整できます。 ガイダンスについては、[クエリ結果の操作に関する記事を参照](advanced-hunting-query-results.md)してください
+
+この[短いビデオ](https://www.youtube.com/watch?v=8qZx7Pp5XgM)では、Kusto 照会言語を使用してテーブルを結合する方法について説明します。
 
 ## <a name="learn-common-query-operators"></a>一般的なクエリ演算子について説明します
 
@@ -160,12 +169,14 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 これらのデータ型の詳細については、[Kustoスカラー データ型に関する](/azure/data-explorer/kusto/query/scalar-data-types/)ページを参照してください。
 
 ## <a name="get-help-as-you-write-queries"></a>クエリを記述するときにヘルプを参照する
+
 次の機能を利用して、クエリをより速く記述します。
-- **Autosuggest** —クエリを記述するときに、高度な捜索では IntelliSense からの提案が提供されます。 
+- **Autosuggest** —クエリを記述すると、高度な捜索によってIntelliSenseからの提案が提供されます。 
 - **スキーマ ツリー** - テーブルの一覧とその列を含むスキーマ表現が作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
 - **[スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - テーブルと列の説明、サポートされているイベントの種類 (`ActionType` 値)、サンプル クエリを含むポータル内参照
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>エディターで複数のクエリを操作する
+
 クエリ エディターを使用して、複数のクエリを試すことができます。 複数のクエリを使用するには:
 
 - 空の行を使用して各クエリを分離します。
@@ -201,6 +212,7 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 >この記事の一部のテーブルは、Microsoft Defender for Endpointでは使用できない場合があります。 [Microsoft 365 Defenderを有効にして](m365d-enable.md)、より多くのデータ ソースを使用して脅威を検出します。 高度なハンティング クエリをMicrosoft Defender for Endpointから移行するの手順に従って、[高度なハンティング ワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defender](advanced-hunting-migrate-from-mde.md)に移動できます。
 
 ## <a name="related-topics"></a>関連項目
+
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)
 - [共有クエリを使用する](advanced-hunting-shared-queries.md)

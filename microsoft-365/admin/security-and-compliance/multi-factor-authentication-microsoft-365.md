@@ -25,12 +25,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: 多要素認証 (MFA) では、強力である必要があるパスワードと追加の検証方法の両方が使用されます。
-ms.openlocfilehash: e7d32776edb0f8fa6eaa4019f394870a6346e1d2
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: f939b187fc81381dae4959fdf14280bc839dadb0
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637651"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739873"
 ---
 # <a name="multifactor-authentication-for-microsoft-365"></a>Microsoft 365の多要素認証
 
@@ -62,7 +62,7 @@ ms.locfileid: "65637651"
 |計画|推奨事項|お客様の種類|
 |---|---|---|
 |すべての Microsoft 365 プラン|すべてのユーザー アカウントに対して MFA を要求する、セキュリティの既定値を使用します。 <p> 個々のユーザー アカウントでユーザーごとの MFA を構成することもできますが、これはお勧めしません。|小規模企業|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1 ライセンス|条件付きアクセス ポリシーを使用して、グループ メンバーシップ、アプリ、その他の条件に基づいてユーザー アカウントに MFA を要求します。|小規模企業から大規模企業まで|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1 ライセンス|グループ メンバーシップ、アプリ、またはその他の条件に基づいてユーザー アカウントに MFA を要求するには、 [セキュリティの既定値または条件付きアクセス ポリシー](/microsoft-365/business-premium/m365bp-conditional-access) を使用します。|小規模企業から大規模企業まで|
 |Microsoft 365 E5 <p> Azure AD Premium P2|Azure AD Identity Protection を使用して、サインイン リスクの条件に基づいて MFA を要求します。|大規模企業|
 ||||
 

@@ -17,18 +17,18 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、SharePoint Online でポータルの起動を計画する方法と、正常に起動するために実行する手順について説明します。
-ms.openlocfilehash: 088416537317a6728e1c5533767badf309de7634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f04738900a25a2e74e24d6bf0f05b5bd6c7865f4
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097472"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753928"
 ---
 # <a name="planning-your-portal-launch-roll-out-plan-in-sharepoint-online"></a>SharePoint Online でポータルの起動ロールアウト計画を計画する
 
 ポータルは、イントラネット上のSharePoint サイトであり、サイトのコンテンツを使用する多くのサイト 閲覧者がいます。 大規模な組織には、複数のポータルを用意できます。 たとえば、ポータル サイトと人事ポータルなどです。 通常、ポータルには、サイトとそのコンテンツの作成および作成者は比較的少ないです。 ポータルへのほとんどの訪問者は、コンテンツの読み取りと使用のみを行います。
 
-この記事では、展開を計画し、SharePoint Online にロールアウトする方法について説明します。 また、従来のロード テストはSharePoint Online では許可されていないため、従う方法も提供されます。 SharePoint Online はクラウド サービスであり、サービスの負荷機能、正常性、および負荷の全体的なバランスは Microsoft によって管理されます。
+この記事では、展開を計画し、SharePoint Online にロールアウトする方法について説明します。 また、従来のロード テストは SharePoint Online では許可されていないため、それに従う方法も提供されます。 SharePoint Online はクラウド サービスであり、サービスの負荷機能、正常性、および負荷の全体的なバランスは Microsoft によって管理されます。
 
 ポータルを正常に作成するには、[正常なポータルの作成、起動、および保守](/sharepoint/portal-health)に関するページで詳しく説明されている基本的な原則、プラクティス、推奨事項に従ってください。
 

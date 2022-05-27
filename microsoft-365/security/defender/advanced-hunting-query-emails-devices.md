@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 099ba7abe53be6269c1d01c0d39d9e5cfbe3557d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731694"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739951"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、ID 全体の脅威を探す
 
@@ -82,7 +82,10 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
+この[短いビデオ](https://www.youtube.com/watch?v=8qZx7Pp5XgM)では、Kusto 照会言語を使用してテーブルを結合する方法について説明します。  
+
 ### <a name="get-device-information"></a>デバイス情報を取得する
+
 [高度なハンティング スキーマ](advanced-hunting-schema-tables.md)は、さまざまなテーブルに広範なデバイス情報を提供します。 たとえば、 [DeviceInfo テーブル](advanced-hunting-deviceinfo-table.md) は、定期的に集計されるイベント データに基づいて包括的なデバイス情報を提供します。 このクエリでは、このテーブルを `DeviceInfo` 使用して、侵害された可能性のあるユーザー (`<account-name>`) が任意のデバイスにログオンしているかどうかを確認し、それらのデバイスでトリガーされたアラートを一覧表示します。
 
 >[!Tip]
@@ -154,7 +157,7 @@ DeviceInfo
 
 ### <a name="example-query-for-macos-devices"></a>macOS デバイスのクエリの例
 
-次のクエリ例を使用して、Catalina より古いバージョンの macOS を実行しているすべてのデバイスを確認します。
+次のクエリ例を使用して、Catalina より古いバージョンのmacOSを実行しているすべてのデバイスを確認します。
 
 ```kusto
 DeviceInfo
@@ -188,6 +191,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>捜索のシナリオ
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>正常に表示されなかった電子メールを受信したユーザーのログオン アクティビティを一覧表示する
+
 [ゼロ時間自動消去 (ZAP)](../office-365-security/zero-hour-auto-purge.md) は、悪意のある電子メールを受信した後にアドレス指定します。 ZAP が失敗した場合、悪意のあるコードが最終的にデバイスで実行され、アカウントが侵害される可能性があります。 このクエリは、ZAP によって正常に対処されなかった電子メールの受信者によって行われたログオン アクティビティをチェックします。
 
 ```kusto
@@ -205,6 +209,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 ```
 
 ### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>資格情報の盗難の対象となるドメイン アカウントによるログオン試行を取得する
+
 このクエリでは、まず、テーブル内のすべての資格情報アクセス アラートを `AlertInfo` 識別します。 その後、テーブルを `AlertEvidence` マージまたは結合します。このテーブルは、対象のアカウントの名前を解析し、ドメイン参加アカウントのフィルターのみを対象にします。 最後に、テーブルを `IdentityLogonEvents` チェックして、ドメインに参加している対象アカウントによってすべてのログオン アクティビティを取得します。
 
 ```kusto
@@ -225,6 +230,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>既知の悪意のある送信者からのファイルがデバイスに存在するかどうかを確認する
+
 悪意のあるファイルを送信している電子メール アドレスがわかっている場合は`MaliciousSender@example.com`、このクエリを実行して、この送信者のファイルがデバイスに存在するかどうかを判断できます。 たとえば、このクエリを使用して、マルウェア配布キャンペーンの影響を受けるデバイスを特定できます。
 
 ```kusto
@@ -241,6 +247,7 @@ DeviceFileEvents
 ```
 
 ### <a name="review-logon-attempts-after-receipt-of-malicious-emails"></a>悪意のあるメール受信後のログオン試行を確認する
+
 このクエリは、既知の悪意のあるメールの受信後 30 分以内に受信者が実行したログオン試行のうち、最新のもの 10 件を見つけます。 このクエリを使用することで、メールの受信者のアカウントが侵害されたかどうかを確認できます。
 
 ```kusto
@@ -261,6 +268,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>既知の悪意のある送信者からのメール受信後の PowerShell アクティビティを確認する
+
 悪意のあるメールには多くの場合、PowerShell コマンドを実行して追加のペイロードを配信するドキュメントや特別に細工した添付ファイルが含まれます。 既知の悪意のある送信者 () からのメールが認識されている場合は、このクエリを使用して、送信者`MaliciousSender@example.com`から電子メールを受信した後 30 分以内に発生した PowerShell アクティビティを一覧表示して確認できます。  
 
 ```kusto
@@ -283,6 +291,7 @@ DeviceProcessEvents
 ```
 
 ## <a name="related-topics"></a>関連項目
+
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ言語の説明](advanced-hunting-query-language.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

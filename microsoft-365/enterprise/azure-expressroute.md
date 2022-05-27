@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Office 365で Azure ExpressRoute を使用し、ネットワーク実装プロジェクトをデプロイする場合は計画する方法について説明します。
-ms.openlocfilehash: bbb53913ede8a51d5e6d9bf6e39386cd3e8de304
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1350bf73fdddd2141a2df1cbcec5edebeacf7ad4
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096856"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754292"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Office 365 向け Azure ExpressRoute
 
@@ -51,7 +51,7 @@ Office 365、Windows Update、TechNet など、すべての Microsoft アプリ�
 
 ![ネットワーク接続をOffice 365します。](../media/9d8bc622-4a38-4a3b-a0f3-68657712d460.png)
 
-次に、インターネットと ExpressRoute の両方を使用してOffice 365に接続するOffice 365顧客を示す更新された図を見てみましょう。 パブリック DNS やContent Delivery Network ノードなどの一部の接続では、引き続きパブリック インターネット接続が必要であることに注意してください。 また、ExpressRoute 接続されている建物にいない顧客のユーザーがインターネット経由で接続されていることにも注意してください。
+次に、更新された図を見てみましょう。これは、インターネットと ExpressRoute の両方を使用してOffice 365に接続するOffice 365顧客を示しています。 パブリック DNS ノードやコンテンツ配信ネットワーク ノードなどの一部の接続では、パブリック インターネット接続が引き続き必要であることに注意してください。 また、ExpressRoute 接続されている建物にいない顧客のユーザーがインターネット経由で接続されていることにも注意してください。
 
 ![ExpressRoute との接続をOffice 365します。](../media/251788c4-0937-4584-9b2c-df08e11611fc.png)
 
@@ -60,14 +60,14 @@ Office 365、Windows Update、TechNet など、すべての Microsoft アプリ�
 ## <a name="what-office-365-services-are-included"></a>どのようなOffice 365サービスが含まれていますか?
 <a name="BKMK_WhatDoIGet"> </a>
 
-次の表に、ExpressRoute でサポートされているOffice 365 サービスを示します。 これらのアプリケーションに対してどのネットワーク要求にインターネット接続が必要かについては、[Office 365 エンドポイント](./urls-and-ip-address-ranges.md)に関する記事を参照してください。
+次の表に、ExpressRoute でサポートされているOffice 365 サービスを示します。 これらのアプリケーションに対してどのネットワーク要求にインターネット接続が必要かを理解するには、[Office 365 エンドポイント](./urls-and-ip-address-ranges.md)に関する記事を参照してください。
 
 | 含まれるアプリケーション |
 |:-----|
 |Exchange Online <sup>1</sup> <br/> Exchange Online Protection <sup>1</sup> <br/> Delve <sup>1</sup> <br/> |
-|Skype for Business <sup>Online1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
-|SharePoint <sup>Online1</sup> <br/> OneDrive for Business <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
-|ポータルと <sup>shared1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
+|Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |
+|SharePoint Online<sup>1</sup> <br/> OneDrive for Business <sup>1</sup> <br/> Project Online <sup>1</sup> <br/> |
+|ポータルと共有<sup>1</sup> <br/> Azure Active Directory (Azure AD) <sup>1</sup> <br/> Azure AD Connect <sup>1</sup> <br/> Office <sup>1</sup> <br/> |
 
 <sup>1</sup> これらの各アプリケーションには、ExpressRoute ではサポートされていないインターネット接続要件があります。詳細については、[Office 365 エンドポイントに関する記事](./urls-and-ip-address-ranges.md)を参照してください。
 
@@ -79,11 +79,11 @@ ExpressRoute を実装するには、ネットワークとアプリケーショ�
 
 1. expressRoute がOffice 365接続計画で満たす必要性を完全に理解します。 インターネットまたは ExpressRoute を使用するアプリケーションを理解し、トラフィックをOffice 365するためにインターネットと ExpressRoute の両方を使用するコンテキストで、ネットワーク容量、セキュリティ、および高可用性のニーズを完全に計画します。
 
-2. インターネットトラフィックと ExpressRoute <sup>traffic1</sup> の両方のエグレスとピアリングの場所を決定します。
+2. インターネットトラフィックと ExpressRoute トラフィック 1 の両方のエグレスとピアリングの場所を決定<sup>します</sup>。
 
 3. インターネット接続と ExpressRoute 接続で必要な容量を決定します。
 
-4. セキュリティとその他の標準境界制御を実装するための計画を立てる <sup>1</sup>。
+4. セキュリティとその他の標準境界制御<sup>1</sup> を実装するための計画を立てる。
 
 5. ExpressRoute をサブスクライブするための有効なMicrosoft Azure アカウントを持っています。
 
@@ -93,7 +93,7 @@ ExpressRoute を実装するには、ネットワークとアプリケーショ�
 
 8. 必要に応じて [QoS を実装](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d) し、地域の拡大を評価します。
 
-<sup>1</sup> パフォーマンスに関する重要な考慮事項。 ここでの決定は、Skype for Businessなどのアプリケーションにとって非常に重要な待機時間に大きな影響を与える可能性があります。
+<sup>1</sup> パフォーマンスに関する重要な考慮事項。 ここでの決定は待機時間に大きな影響を与える可能性があります。これは、Skype for Businessなどのアプリケーションにとって非常に重要です。
 
 その他の参照については、[ExpressRoute のドキュメント](/azure/expressroute/expressroute-introduction)に加えて[、ルーティング ガイド](https://support.office.com/article/Routing-with-ExpressRoute-for-Office-365-e1da26c6-2d39-4379-af6f-4da213218408)を使用してください。
 
@@ -101,7 +101,7 @@ Office 365用に ExpressRoute を購入するには、1 つ以上の[承認済�
 
 ここに戻る場合は、次のショート リンクをご利用ください: [https://aka.ms/expressrouteoffice365]()
 
-[ExpressRoute for Office 365 にサインアップする](https://aka.ms/ert)準備はできましたか?
+[expressRoute for Office 365](https://aka.ms/ert) にサインアップする準備はできましたか?
 
 ## <a name="related-topics"></a>関連項目
 

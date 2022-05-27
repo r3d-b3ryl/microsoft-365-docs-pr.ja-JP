@@ -19,19 +19,19 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: Azure の仮想マシンにAzure AD Connectをデプロイして、オンプレミスのディレクトリとAzure ADテナントの間でアカウントを同期する方法について説明します。
-ms.openlocfilehash: 077fe85307b5c64c5ece9d710a3ad171d04a21da
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Azure の仮想マシンに Azure AD Connectをデプロイして、オンプレミスのディレクトリと Azure AD テナントの間でアカウントを同期する方法について説明します。
+ms.openlocfilehash: e04a3a4e681ab50b767670cfd419d29cd95556e7
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092163"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753388"
 ---
 # <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Microsoft Azureでディレクトリ同期Microsoft 365展開する
 
-Azure Active Directory (Azure AD) Connect (以前はディレクトリ同期ツール、ディレクトリ同期ツール、またはDirSync.exe ツールと呼ばられていました) は、ドメインに参加しているサーバーにインストールして、オンプレミスの Active Directory Domain Services (AD DS) ユーザーをドメイン サービス (AD DS) ユーザーに同期するアプリケーションです。Microsoft 365 サブスクリプションのテナントをAzure ADします。 Microsoft 365は、そのディレクトリ サービスにAzure ADを使用します。 Microsoft 365 サブスクリプションには、Azure AD テナントが含まれています。 このテナントは他の SaaS アプリケーションと Azure のアプリを含む、他のクラウドのワークロードで組織の ID を管理するためにも使用されます。
+Azure Active Directory (Azure AD) Connect (以前はディレクトリ同期ツール、ディレクトリ同期ツール、またはDirSync.exe ツールと呼ばられていました) は、ドメインに参加しているサーバーにインストールして、オンプレミスの Active Directory Domain Services (AD DS) ユーザーを Azure AD テナントに同期するアプリケーションです。サブスクリプションMicrosoft 365。 Microsoft 365は、ディレクトリ サービスに Azure AD を使用します。 Microsoft 365 サブスクリプションには、Azure AD テナントが含まれています。 このテナントは他の SaaS アプリケーションと Azure のアプリを含む、他のクラウドのワークロードで組織の ID を管理するためにも使用されます。
 
-Azure AD Connect はオンプレミス サーバーにインストールできますが、次の理由により、Azure の仮想マシンにもインストールできます。
+Azure AD Connectはオンプレミス サーバーにインストールできますが、次の理由から Azure の仮想マシンにインストールすることもできます。
   
 - クラウド ベースのサーバーをより迅速にプロビジョニングして構成でき、ユーザーがすぐにサービスを利用できるようになります。
 - Azure では、より少ない労力でより良いサイト可用性が得られます。
@@ -44,14 +44,14 @@ Azure AD Connect はオンプレミス サーバーにインストールでき�
   
 ## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Azure でのディレクトリ同期Microsoft 365デプロイの概要
 
-次の図は、オンプレミスの AD DS フォレストをMicrosoft 365 サブスクリプションに同期する Azure の仮想マシン (ディレクトリ同期サーバー) で実行されているAzure AD Connectを示しています。
+次の図は、オンプレミスの AD DS フォレストをMicrosoft 365 サブスクリプションに同期する Azure の仮想マシン (ディレクトリ同期サーバー) で実行されている Azure AD Connectを示しています。
   
-![オンプレミス アカウントをトラフィック フローを使用してMicrosoft 365 サブスクリプションのAzure AD テナントに同期する Azure の仮想マシン上のAzure AD Connect ツール。](../media/CP-DirSyncOverview.png)
+![Azure AD Connect、オンプレミス アカウントをトラフィック フローを使用してMicrosoft 365 サブスクリプションの Azure AD テナントに同期する Azure の仮想マシン上のツールです。](../media/CP-DirSyncOverview.png)
   
-この図には、サイト間 VPN または ExpressRoute 接続で接続されている 2 つのネットワークがあります。具体的には、AD DS ドメイン コントローラーが配置されているオンプレミス ネットワークと、ディレクトリ同期サーバーとして [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) を実行している仮想マシンが含まれる Azure 仮想ネットワークの 2 つです。ディレクトリ同期サーバーを発信元とする主要なトラフィック フローは 2 つあります。
+この図には、サイト間 VPN または ExpressRoute 接続で接続されている 2 つのネットワークがあります。 AD DS ドメイン コントローラーが配置されているオンプレミス ネットワークと、Azure AD Connectを実行している仮想マシンであるディレクトリ同期サーバーを備えた [Azure](https://www.microsoft.com/download/details.aspx?id=47594) 仮想ネットワークがあります。 ディレクトリ同期サーバーから発信される主なトラフィック フローは 2 つあります。
   
 -  Azure AD Connect は、アカウントとパスワードの変更に関してオンプレミス ネットワーク上のドメイン コントローラーにクエリを実行します。
--  Azure AD Connect、アカウントとパスワードに対する変更をMicrosoft 365 サブスクリプションのAzure AD インスタンスに送信します。 ディレクトリ同期サーバーはオンプレミス ネットワークの拡張部分にあるため、これらの変更はオンプレミス ネットワークのプロキシ サーバーを介して送信されます。
+-  Azure AD Connectは、アカウントとパスワードに対する変更を、Microsoft 365 サブスクリプションの Azure AD インスタンスに送信します。 ディレクトリ同期サーバーはオンプレミス ネットワークの拡張部分にあるため、これらの変更はオンプレミス ネットワークのプロキシ サーバーを介して送信されます。
     
 > [!NOTE]
 > このソリューションでは、1 つの Active Directory フォレスト内の単一 Active Directory ドメインの同期について説明します。 Azure AD Connectは、Active Directory フォレスト内のすべての Active Directory ドメインをMicrosoft 365と同期します。 Microsoft 365と同期する Active Directory フォレストが複数ある場合は、「[マルチフォレスト ディレクトリ同期と単一のSign-Onシナリオ](/azure/active-directory/hybrid/whatis-hybrid-identity)」を参照してください。 
@@ -60,15 +60,15 @@ Azure AD Connect はオンプレミス サーバーにインストールでき�
   
 1. Azure Virtual Network を作成し、オンプレミスネットワークに対するサイト間 VPN 接続を確立します。詳しくは、「[オンプレミス ネットワークを Microsoft Azure 仮想ネットワークに接続する](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md)」をご覧ください。
     
-2. Azure [の](https://www.microsoft.com/download/details.aspx?id=47594)ドメイン参加済み仮想マシンにAzure AD Connectをインストールし、オンプレミスの AD DS をMicrosoft 365に同期します。 これには以下の手順を実行します。
+2. Azure のドメインに参加している仮想マシンに [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594)をインストールし、オンプレミスの AD DS をMicrosoft 365に同期します。 これには以下の手順を実行します。
     
     Azure AD Connect を実行するため、Azure Virtual Machine を作成します。
     
     [Azure AD Connect ](https://www.microsoft.com/download/details.aspx?id=47594) をインストールし、設定します。
     
-    Azure AD Connectを構成するには、Azure AD管理者アカウントと AD DS エンタープライズ管理者アカウントの資格情報 (ユーザー名とパスワード) が必要です。 Azure AD Connectは、オンプレミスの AD DS フォレストをMicrosoft 365に同期するために、直ちに継続的に実行されます。
+    Azure AD Connectを構成するには、Azure AD 管理者アカウントと AD DS エンタープライズ管理者アカウントの資格情報 (ユーザー名とパスワード) が必要です。 Azure AD Connectは、オンプレミスの AD DS フォレストをMicrosoft 365に同期するために、直ちに継続的に実行されます。
     
-このソリューションを運用環境にデプロイする前に、「 [シミュレートされたエンタープライズベース構成」](simulated-ent-base-configuration-microsoft-365-enterprise.md) の手順を使用して、この構成を概念実証、デモンストレーション、または実験用に設定できます。
+このソリューションを運用環境にデプロイする前に、「 [シミュレートされたエンタープライズベース構成」](simulated-ent-base-configuration-microsoft-365-enterprise.md) の手順を使用して、概念実証、デモンストレーション、または実験用にこの構成を設定できます。
   
 > [!IMPORTANT]
 > Azure AD Connect の設定が完了しても、AD DS エンタープライズ管理者アカウントの資格情報は保存されません。 
@@ -101,9 +101,9 @@ Azure AD Connect はオンプレミス サーバーにインストールでき�
     
 - オンプレミス ネットワークには、ドメイン コントローラーと DNS サーバーが存在します。
     
-- Azure AD Connect は、シングル サインオンではなくパスワード ハッシュ同期を実行します (Active Directory フェデレーション サービス (AD FS) インフラストラクチャを展開する必要はありません)。パスワード ハッシュ同期とシングル サインオンのオプションの詳細については、「[Azure Active Directory ハイブリッド ID ソリューションの適切な認証方法の選択](/azure/active-directory/hybrid/choose-ad-authn)」を参照してください。
+- Azure AD Connectでは、シングル サインオンの代わりにパスワード ハッシュ同期が実行されます。 Active Directory フェデレーション サービス (AD FS) (AD FS) インフラストラクチャをデプロイする必要はありません。 パスワード ハッシュ同期とシングル サインオン オプションの詳細については、「[Azure Active Directory ハイブリッド ID ソリューションに適した認証方法の選択」を](/azure/active-directory/hybrid/choose-ad-authn)参照してください。
     
-ご使用の環境でこのソリューションを展開する場合に考慮できるその他の設計に関する選択内容があります。それらには以下が含まれます。
+このソリューションを環境にデプロイする際に考慮する可能性がある設計上の選択肢は他にもあります。 これらには次のコマンドレットがあります。
   
 - 既存の Azure Virtual Network 内に既存の DNS サーバーがある場合、オンプレミス ネットワークの DNS サーバーではなく、それらをディレクトリ同期サーバーで使用して名前解決を行うかどうかを決定します。
     
@@ -175,9 +175,9 @@ Azure AD Connect がインターネット リソースにアクセスできる�
 
 Azure AD Connectは、オンプレミスの AD DS からMicrosoft 365 サブスクリプションにアカウントを追加しますが、ユーザーがMicrosoft 365にサインインしてそのサービスを使用するには、アカウントを場所とライセンスで構成する必要があります。 次の手順で、適切なユーザーアカウントに場所を追加し、ライセンス認証を行います。
   
-1. [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインし、[**管理者**] をクリックします。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com)にサインインし、[**管理**] をクリックします。
     
-2. 左側のナビゲーションで、[**UsersActive** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**ユーザー**</a>] をクリックします。
+2. 左側のナビゲーションで、[ **ユーザー** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**アクティブ ユーザー**</a>] をクリックします。
 3. ユーザーアカウントのリストで、アクティブにするユーザー名の隣にあるチェック ボックスをオンにします。
     
 4. ユーザーのページで、**[製品ライセンス]** の **[編集]** をクリックします。

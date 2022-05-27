@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス要件または規制要件のためにデータを統制するために、組織に Microsoft Purview を展開するための規範的なガイダンス。
-ms.openlocfilehash: 0a16bf231111019381ad76670446dba246cf2d4f
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 5a7ef3f26ed21cc8ad97aeea3ed97cb1938cd837
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294830"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754252"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Microsoft Purview を使用してデータ ガバナンス ソリューションをデプロイする
 
@@ -83,8 +83,8 @@ ms.locfileid: "65294830"
 
 コンサルタントと管理者向けの学習モジュール:
 
-- [Microsoft 365 での情報保護とガバナンスについて](/learn/modules/m365-compliance-information-governance)
-- [Microsoft 365 で情報を管理する](/learn/modules/m365-compliance-information-govern-information/)
-- [Microsoft 365 でレコードを管理する](/learn/modules/m365-compliance-information-manage-records/)
+- [Microsoft Purview での情報保護とデータ ライフサイクル管理の概要](/learn/modules/m365-compliance-information-governance)
+- [Microsoft Purview でデータ ライフサイクルを管理する](/learn/modules/m365-compliance-information-govern-information/)
+- [Microsoft Purview でレコードを管理する](/learn/modules/m365-compliance-information-manage-records/)
 
 これらのソリューションのデプロイ時にユーザーをサポートするためのドキュメントについては、[データ ライフサイクル管理](get-started-with-information-governance.md#end-user-documentation)と[レコード管理](get-started-with-records-management.md#end-user-documentation)のエンド ユーザー ドキュメントセクションを参照してください。

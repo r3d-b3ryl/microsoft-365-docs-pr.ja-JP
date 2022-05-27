@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニング用のエンド ユーザー通知電子メール メッセージを作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 66e3e029e8da203b35285080caa91dca3a51e5c7
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 5e14fe4edc559b927a8b1d703d7706bbe97b5949
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678839"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739855"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのエンドユーザー通知
 
@@ -31,7 +31,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃
 - **シミュレーション通知**: これらのメッセージは、ユーザーがトレーニングに登録されたときに送信され、必要なトレーニングのリマインダーとして送信されます。
 - **肯定的な強化通知**: これらのメッセージは、ユーザーがシミュレートされたフィッシング メッセージを報告するときに送信されます。
 
-利用可能なエンド ユーザー通知を表示するには、Microsoft 365 Defender ポータルを<https://security.microsoft.com>開き、**電子メール &コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ** タブ\>で **エンド ユーザー通知** を選択します。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+利用可能なエンド ユーザー通知を表示するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、**電子メール &コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ** タブ\>に移動し、**エンド ユーザー通知** を選択します。 [ **シミュレーション コンテンツ ライブラリ** ] タブに直接移動し、 **エンド ユーザー通知** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **エンド ユーザー通知** には、次の 2 つのタブがあります。
 
@@ -61,7 +61,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃
 
 一覧から通知を選択すると、詳細ポップアップが表示され、次の情報が表示されます。
 
-- **[プレビュー** ] タブ: 通知メッセージを表示します。 異なる言語でメッセージを表示するには、[言語の **選択]** ボックスを使用します。
+- **[プレビュー** ] タブ: ユーザーに表示される通知メッセージを表示します。 異なる言語でメッセージを表示するには、[言語の **選択]** ボックスを使用します。
 - **[詳細** ] タブ: 通知に関する詳細を表示します。
   - **通知の説明**
   - **ソース**: 組み込みの通知の場合、値は **グローバルです**。 カスタム通知の場合、値は **テナントです**。

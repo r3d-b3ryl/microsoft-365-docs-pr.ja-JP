@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d797fb8843bdf5d29e9af43cac152461eb379e5f
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 505308bec005811e174b90cde9e872532ccacdfe
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221402"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739485"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -185,6 +185,8 @@ ms.locfileid: "61221402"
     | where Timestamp > ago(1h)
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
+
+Kusto 照会言語を最適化する方法については、この[短いビデオ](https://www.youtube.com/watch?v=ceYvRuPp5D8)をご覧ください。  
 
 ## <a name="query-scenarios"></a>クエリのシナリオ
 

@@ -22,12 +22,12 @@ ms.collection:
 - m365solution-scenario
 - m365scenario-fpfn
 ms.custom: FPFN
-ms.openlocfilehash: ee7f5e5b4744d9299d122b4ba6b0dffe6734eca7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79a3ecc07c8b987b2f77455323bc656ca9d2ad4f
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414828"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754694"
 ---
 # <a name="submit-files-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでファイルを送信する
 
@@ -42,13 +42,13 @@ ms.locfileid: "65414828"
 
 Microsoft Defender for Endpointでは、管理者は統合申請機能を使用して、ファイルとファイル ハッシュ (SHA) を Microsoft に送信してレビューを行うことができます。 統合された提出エクスペリエンスは、メール、URL、電子メールの添付ファイル、ファイルを 1 つの使いやすい提出エクスペリエンスで送信するための一貫したショップです。 管理者は、Microsoft 365 Defender ポータルまたはMicrosoft Defender for Endpointアラート ページを使用して疑わしいファイルを送信できます。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - 新しい統合申請エクスペリエンスは、Microsoft 365 Defender、Microsoft Defender for Endpoint プラン 2、または Microsoft Defender for Office プラン 2 を含むサブスクリプションでのみ使用できます。
 
 - Microsoft にファイルを送信するには、次のいずれかの役割グループのメンバーである必要があります。
 
-  - [Microsoft 365 Defender ポータル](../office-365-security/permissions-microsoft-365-security-center.md)の **組織の管理** または **セキュリティ管理者**。
+  - [Microsoft 365 Defender ポータル](../office-365-security/permissions-microsoft-365-security-center.md)の **組織管理**、**セキュリティ管理者**、または **セキュリティ 閲覧者**。
 
 - スパム、フィッシング、URL、電子メールの添付ファイルを Microsoft に送信する方法の詳細については、「 [メッセージとファイルを Microsoft に報告する」を](../office-365-security/report-junk-email-messages-to-microsoft.md)参照してください。
 

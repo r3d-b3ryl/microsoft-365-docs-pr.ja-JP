@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなど、サイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: ca159d8d2adda033b1786355c1505cb4d66b625a
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 44acc5b7b76d1ae355db88e9773982e1d1e1b4d2
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679650"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739507"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365をセキュリティで保護するためのベスト プラクティス
 
@@ -352,5 +352,7 @@ Microsoft 365 Business Premiumを使用すると、デバイス管理や高度�
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365の多要素認証](multi-factor-authentication-microsoft-365.md) (記事)\
-[優先度アカウントの管理と監視](/microsoft-365/security/office-365-security/configure-review-priority-account) (記事)\
-[管理センターでレポートをMicrosoft 365する](../activity-reports/activity-reports.md) (ビデオ)
+[優先度アカウントの管理と監視](../setup/priority-accounts.md) (記事)\
+[管理センターでレポートをMicrosoft 365する](../activity-reports/activity-reports.md) (ビデオ)\
+[Microsoft 365 Business Premium — 小規模ビジネス向けのサイバーセキュリティ](/microsoft-365/business-premium/) (記事)\
+

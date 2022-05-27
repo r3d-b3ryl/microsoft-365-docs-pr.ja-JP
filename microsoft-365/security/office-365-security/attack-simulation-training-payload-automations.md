@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、ペイロードの自動化 (ペイロード の収集) を使用して、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニングの自動シミュレーションを収集して起動する方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: 7fb3b0bbad5bbec8044a94da1943b0bd25eba865
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 862547884f9a7697382affda734af0f323c86c4a
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679376"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739563"
 ---
 # <a name="payload-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのペイロード自動化
 
@@ -31,7 +31,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 の攻撃シ�
 
 1. Microsoft 365 Defender ポータルの <https://security.microsoft.com/>[**電子メール & コラボレーション** \> **の攻撃シミュレーション トレーニング** \> **自動化**] タブの **[ペイロードの自動化**] タブに移動します\>。
 
-   **[オートメーション]** タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   [ **Automations** ] タブに直接移動し、[ **ペイロードの自動化**] を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. **ペイロードオートメーションで、[オートメーションの** 作成] アイコンを選択![します。](../../media/m365-cc-sc-create-icon.png) **自動化を作成します**。
 

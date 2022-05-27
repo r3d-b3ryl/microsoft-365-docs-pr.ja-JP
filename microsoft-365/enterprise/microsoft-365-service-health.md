@@ -17,16 +17,16 @@ ms.custom: admindeeplinkMAC
 f1.keywords:
 - NOCSH
 description: Microsoft 365 サービス正常性の状態
-ms.openlocfilehash: 0b3ede9b35dbf4e0356be8d1479e75561f66fdb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f7c7d0d14cdecbfb122d03fdcb4c93fcddbced2
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100393"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753366"
 ---
 # <a name="microsoft-365-network-health-status"></a>Microsoft 365 ネットワーク正常性の状態
 
-新型コロナウイルス感染症 (COVID-19) のために生じている危機的な状況により Microsoft のクラウド サービスの需要が高まっているため、Microsoft のグローバル ネットワークの正常性に関する情報と、お客様が経験する可能性があるが弊社が制御できないネットワーク品質の問題に関する情報を提供します。
+新型コロナウイルス感染症 (COVID-19) のために生じている危機的な状況により Microsoft のクラウド サービスの需要が高まっているため、Microsoft のグローバル ネットワークの正常性に関する情報と、お客様が経験する可能性があるが弊社が制御できないネットワーク品質の問題に関する情報を提供しています。
 
 この情報には、Microsoft 365 を含む、弊社のすべての「サービスとしてのソフトウェア」製品に影響するネットワーク問題が含まれます。
 

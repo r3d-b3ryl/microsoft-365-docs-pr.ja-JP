@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: ''
 description: '概要: Office 365 GCC High と DoD には追加のネットワーク セキュリティ要件があります'
 hideEdit: true
-ms.openlocfilehash: c4fbfc52085b634329130c2785ce683109b8febe
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 86d3eb3fb4db42eda2be0c2c66fc754fbfd35f1e
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60170369"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65754270"
 ---
 # <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Office 365 GCC High および DOD の追加のネットワーク セキュリティ要件
 
@@ -67,4 +67,4 @@ GCC フェデレーション ID またはハイブリッド共存を使用する
 * サブネット範囲を/24より大きくすることはできません
 * 商用クラウド サービス (商用Office 365、Google G-Suite、Amazon Web Services など) へのアクセスを許可する要求には対応 **できません**。
 
-Microsoft によって要求が受信および承認されると、実装に対して 3 週間の SLA があり、迅速に実行することはできません。  要求を受け取ったときに最初の確認が届き、完了すると最終的な確認が届きます。
+Microsoft から要求を受け取って承認すると、実装用の 3 週間の SLA があり、迅速に実行することはできません。  最初の確認は、要求を受け取ったときに受け取り、完了したら最終的な確認を受け取ります。

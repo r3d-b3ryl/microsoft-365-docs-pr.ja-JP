@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 14332b2787b59e2ef192741dc97e59a7c7cb5418
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 9aa293a84f3bdca6988b1bf8437906f8b1cfbd39
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499509"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65740002"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defenderでインシデントを管理する
 
@@ -105,6 +105,9 @@ Microsoft 365 Defenderは、影響を受けるエンドポイントの数、影�
 - 検出したインシデントの種類に対する **誤検知** は、技術的に不正確または誤解を招く可能性があるため、無視できます。
 
 インシデントを分類し、その状態と種類を指定すると、Microsoft 365 Defenderを調整して、時間の経過と共に検出の判断が向上します。
+
+この短いビデオでは、分類を使用してトリアージ効率を高める方法について説明します。  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LHJq]
 
 ## <a name="add-comments"></a>コメントを追加する
 

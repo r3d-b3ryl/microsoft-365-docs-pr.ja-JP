@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、プラン 2 で指定した条件が満たされたときに起動する特定の手法とペイロードを含む自動シミュレーションMicrosoft Defender for Office 365作成する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: ded6a77e72e71a676c0cc05ffdc3be53e3fbada1
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 32730dfa36b0140bda246137b4cf6706b3472da7
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65678857"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739673"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーション自動化
 
@@ -31,7 +31,7 @@ ms.locfileid: "65678857"
 
 1. Microsoft 365 Defender ポータルの <https://security.microsoft.com/>[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング**\>オートメーション] タブ **の** **[シミュレーションの自動化**] タブに移動します\>。
 
-   **[オートメーション]** タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
+   [ **オートメーション** ] タブに直接移動し、 **シミュレーションオートメーション** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 2. **シミュレーションオートメーションで、[オートメーションの** 作成] アイコンを選択![します。](../../media/m365-cc-sc-create-icon.png) **自動化を作成します**。
 
@@ -311,7 +311,7 @@ ms.locfileid: "65678857"
       - **キャンペーン終了後に配信する**
       - **キャンペーン中に配信する**
     - **アクション**: [表示] アイコンを ![クリックした場合。](../../media/m365-cc-sc-view-icon.png) **[表示]** アイコンをクリックすると、[ **校閲通知** ] ページに次の情報が表示されます。
-      - **[プレビュー** ] タブ: 通知メッセージを表示します。
+      - **[プレビュー** ] タブ: ユーザーに表示される通知メッセージを表示します。
         - 異なる言語でメッセージを表示するには、[言語の **選択]** ボックスを使用します。
         - [ **プレビューするペイロードの選択** ] ボックスを使用して、複数のペイロードを含むシミュレーションの通知メッセージを選択します。
       - **[詳細** ] タブ: 通知に関する詳細を表示します。

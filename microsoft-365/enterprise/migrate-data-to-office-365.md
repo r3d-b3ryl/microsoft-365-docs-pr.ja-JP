@@ -16,13 +16,13 @@ ms.assetid: e2fdfc8d-547e-4419-8628-2738ed4e0f46
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: この記事では、組織のデータをMicrosoft 365に移行するのに役立つリソースについて説明します。
-ms.openlocfilehash: d0cf1aa5e744dc545f5a037b63f7cc1981f0e23c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: この記事では、組織データをMicrosoft 365に移行するのに役立つリソースを確認します。
+ms.openlocfilehash: 97846f3a35fdc415b172cbc5670739ca10204b70
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096416"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753432"
 ---
 # <a name="migrate-your-organization-data-to-microsoft-365-enterprise"></a>組織データをMicrosoft 365 Enterpriseに移行する
 
@@ -30,10 +30,10 @@ ms.locfileid: "65096416"
 
 基本的[なセットアップ手順は、](https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)Microsoft 365サービスとアプリケーションを可能な限り短時間で使用できるように支援します。 これにより、ハイブリッド シナリオと、Microsoft 365に移行するためのより高度な方法がスキップされます。 
   
-Microsoft 365セットアップに関するヘルプが必要な場合は、[Microsoft 365](https://fasttrack.microsoft.com/office)を展開する最も簡単な方法FastTrack、サインインして[、Microsoft 365 サービスのセットアップ ガイドを](setup-guides-for-microsoft-365.md)使用することもできます。
+Microsoft 365のセットアップに関するヘルプが必要な場合は、[Microsoft 365](https://fasttrack.microsoft.com/office)を展開する最も簡単な方法FastTrack、サインインして[、Microsoft 365 サービスのセットアップ ガイドを](setup-guides-for-microsoft-365.md)使用することもできます。
 
 ## <a name="migrate-email-to-microsoft-365"></a>メールをMicrosoft 365に移行する
-- [Exchange 展開アシスタントを使って Exchange ハイブリッド](https://technet.microsoft.com/exdeploy2013)の移行をする。(管理者)
+- Exchange [デプロイ アシスタント](https://technet.microsoft.com/exdeploy2013)を使用して、Exchange ハイブリッドを使用して移行します。 (管理者)
 - [メールをMicrosoft 365に移行するさまざまな方法](https://support.office.com/article/Ways-to-migrate-multiple-email-accounts-to-Office-365-0a4913fe-60fb-498f-9155-a86516418842)について説明します。
 - [組織内のユーザーが自分のメール、連絡先、および予定表を移行する](https://support.office.com/article/Migrate-email-and-contacts-to-Office-365-for-business-a3e3bddb-582e-4133-8670-e61b9f58627e)ための別の方法を見ます。
 

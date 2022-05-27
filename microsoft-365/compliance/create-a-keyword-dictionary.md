@@ -19,16 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: 64e431b5d2ef01e85eff55f39f4436786f45664b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: ceb410d09d9869d87681128f2c6e7b45cd8363cb
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64758599"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753674"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
-データ損失防止 (DLP) は、機密アイテムの識別、監視、および保護を行うことができます。 機密アイテムの識別には、特に汎用コンテンツ (医療関連の通信など) または不適切な言語や露骨な表現を識別するときに、キーワードを検索する必要がある場合があります。 機密情報の種類でキーワード リストを作成することができますが、キーワード リストにはサイズの制限があり、リストの作成や編集を行うには、XML を変更する必要があります。 キーワード辞書は、キーワードの管理が簡単になり、はるかに大規模で、辞書で最大 1 MB の用語 (圧縮後) をサポートし、あらゆる言語をサポートします。 テナント制限は、圧縮後も 1 MB です。 1 MB の圧縮後の制限は、テナント全体で結合されたすべての辞書が 100 万文字近くになる可能性があることを意味します。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview のデータ損失防止 (DLP) は、機密アイテムの識別、監視、および保護を行うことができます。 機密アイテムの識別には、特に汎用コンテンツ (医療関連の通信など) または不適切な言語や露骨な表現を識別するときに、キーワードを検索する必要がある場合があります。 機密情報の種類でキーワード リストを作成することができますが、キーワード リストにはサイズの制限があり、リストの作成や編集を行うには、XML を変更する必要があります。 キーワード辞書は、キーワードの管理が簡単になり、はるかに大規模で、辞書で最大 1 MB の用語 (圧縮後) をサポートし、あらゆる言語をサポートします。 テナント制限は、圧縮後も 1 MB です。 1 MB の圧縮後の制限は、テナント全体で結合されたすべての辞書が 100 万文字近くになる可能性があることを意味します。
 
 ## <a name="keyword-dictionary-limits"></a>キーワード辞書の制限
 
@@ -74,7 +76,7 @@ Remove-Item $rawFile
 
 辞書のキーワードを、さまざまなソースから作成することができます。一般的な例として、サービスにインポートされたファイルや PowerShell コマンドレットでインポートされたファイル (.csv または .txt リストなど)、PowerShell コマンドレットで直接入力するリスト、または既存の辞書などがあります。キーワード辞書を作成するときには、次の同じ基本手順に従います。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> を使用するか、**セキュリティ &amp; Microsoft 365 コンプライアンス センター PowerShell** に接続してください。
+1. *<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>を使用するか **、Microsoft Purview コンプライアンス ポータル PowerShell** に接続します。
 
 2. **該当するソースからキーワードを定義する、または読み込む**。ウィザードとコマンドレットの両方でコンマ区切りキーワード リストを使ってカスタム キーワード辞書を作成できるので、この手順はキーワードがどこから得られるかによって多少異なります。いったん読み込まれたキーワードは、インポートされる前にエンコードされてバイト配列に変換されます。
 
@@ -84,7 +86,7 @@ Remove-Item $rawFile
 
 ユーザー辞書のキーワードを作成してインポートするには、次の手順を実行します。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に接続します。
 
 2. **[分類] > [機密情報の種類]** の順に移動します。
 

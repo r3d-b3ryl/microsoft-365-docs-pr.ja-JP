@@ -20,21 +20,21 @@ ms.custom: ''
 description: Microsoft Defender for Office 365のキャンペーン ビューについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb1e5e6e740accdb9c6102b798df8e60ab47dfff
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 5308770e4ddb72ead5e4d5dac7506c507aa407f6
+ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467733"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "65739629"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 のキャンペーン ビュー
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
-キャンペーン ビューは、Microsoft Defender for Office 365 プラン 2 の機能です (たとえば、Microsoft 365 E5やDefender for Office 365プラン 2 アドオンを持つ組織)。 Microsoft 365 Defender ポータルのキャンペーン ビューでは、サービス内のフィッシング攻撃を識別して分類します。 キャンペーン ビューは、次の目的に使用できます。
+キャンペーン ビューは、Microsoft Defender for Office 365 プラン 2 の機能です (Microsoft 365 E5、Defender for Office 365 プラン 2 アドオンを持つ組織など)。 Microsoft 365 Defender ポータルのキャンペーン ビューでは、サービス内のフィッシング攻撃を識別して分類します。 キャンペーン ビューは、次の目的に使用できます。
 
 - フィッシング攻撃を効率的に調査し、対処する。
 - 攻撃対象を正確に理解する。
@@ -42,11 +42,14 @@ ms.locfileid: "64467733"
 
 キャンペーン ビューを使用すると、人間には真似できない速さと完全さで攻撃の全体像を把握できます。
 
+Microsoft Defender for Office 365のキャンペーン ビューが、組織をターゲットとする攻撃キャンペーンを理解するのに役立つ方法について、この短いビデオをご覧ください。  
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGBL8]
+
 ## <a name="what-is-a-campaign"></a>キャンペーンとは
 
 キャンペーンとは、1 つまたは複数の組織に対する組織的なメール攻撃のことです。 資格情報と会社のデータを盗む電子メール攻撃は、大規模で有益な業界です。 攻撃を阻止する取り組みの中でテクノロジが増加するにつれて、攻撃者は継続的な成功を確実にするためにメソッドを変更します。
 
-Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 例:
+Microsoft は、サービス全体で膨大な量のフィッシング対策、スパム対策、マルウェア対策データを活用して、キャンペーンの特定に役立ちます。 攻撃情報を分析し、いくつかの要因に従って分類します。 次に例を示します。
 
 - **攻撃元**: 送信元 IP アドレスと送信者の電子メール ドメイン。
 - **メッセージのプロパティ: メッセージ** の内容、スタイル、トーン。
@@ -89,7 +92,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 - **型**: この値は **フィッシング** または **マルウェア** です。
 
-- **サブタイプ**: この値には、キャンペーンの詳細が含まれています。 例:
+- **サブタイプ**: この値には、キャンペーンの詳細が含まれています。 次に例を示します。
   - **フィッシング**: 利用可能な場合は、このキャンペーンによってフィッシングされたブランド。 たとえば、、`Microsoft``Outlook``365``Unknown`または .`DocuSign`
   - **マルウェア**: たとえば、`HTML/PHISH`.`HTML/<MalwareFamilyName>`
 
@@ -101,7 +104,7 @@ Microsoft は、サービス全体で膨大な量のフィッシング対策、�
 
 - **クリック済み**: URL をクリックしたか、フィッシング メッセージで添付ファイルを開いたユーザーの数。
 
-- **クリック率**: "**ClickedInboxed**" で計算 **された** / パーセンテージ。 この値は、キャンペーンの有効性を示す指標です。 つまり、受信者がメッセージをフィッシングとして識別できた場合と、ペイロード URL をクリックしなかった場合です。
+- **クリック率**: "**Clicked****Inboxed**" で計算された / 割合。 この値は、キャンペーンの有効性を示す指標です。 つまり、受信者がメッセージをフィッシングとして識別できた場合と、ペイロード URL をクリックしなかった場合です。
 
   マルウェア キャンペーンでは **、クリック率** は使用されないことに注意してください。
 

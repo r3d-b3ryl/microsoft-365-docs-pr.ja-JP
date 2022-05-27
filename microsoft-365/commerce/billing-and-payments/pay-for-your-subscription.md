@@ -22,13 +22,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/18/2022
-ms.openlocfilehash: d116fe2b9fb2b0b0b96ec44107d486edca19ff04
-ms.sourcegitcommit: 60970cf8a2cb451011c423d797dfb77925394f89
+ms.date: 05/26/2022
+ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
+ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65587426"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65753850"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -46,6 +46,16 @@ ms.locfileid: "65587426"
 
 - この記事で説明する手順を実行するには、グローバル管理者または課金管理者である必要があります。詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - チェックアウト時に選択するお支払い方法は、今後のすべての請求期間に使用されるお支払い方法です。いつでも変更できます。
+
+## <a name="new-regulations-from-the-reserve-bank-of-india"></a>インド準備銀行の新しい規制
+
+2021 年 10 月 1 日以降、インドでの自動支払いでは、一部のクレジット カード取引 (特に 5,000 INR を超えるトランザクション) がブロックされる可能性があります。 この規制のため、Microsoft 365 管理センターで手動で支払いを行う必要がある場合があります。 これらの規制は、使用量に対して請求される合計金額には影響しません。
+
+[定期的な支払いに関するインド準備銀行の規制の詳細については、こちらをご覧ください](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0)。
+
+2022 年 7 月 1 日に、Microsoft およびその他のオンライン マーチャントはクレジット カード情報を保存しなくなります。 この規制に準拠するために、Microsoft は保存されているすべてのカードの詳細をMicrosoft 365 管理センターから削除します。 サービスの中断を回避するには、支払い方法を追加し、すべてのサブスクリプションと課金プロファイルに対して 1 回限りの支払いを行う必要があります。
+
+[カードの保存に関するインド準備銀行の規制について説ついては、こちらをご覧ください](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211)。
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>クレジット カード、デビット カード、または銀行口座引き落としでの支払い
 
