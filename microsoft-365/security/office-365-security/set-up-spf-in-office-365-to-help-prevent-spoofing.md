@@ -19,12 +19,12 @@ ms.custom:
 description: Office 365 で Sender Policy Framework (SPF) をカスタム ドメインと併用できるように、ドメイン ネーム サービス (DNS) レコードを更新する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d29175c471e076b1f69e1edb6da3c005d3857f8f
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 33e4a6d3644f7a3aab8992130b2b92e09dd665af
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626043"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772404"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>SPF を設定して、スプーフィングを防止する
 
@@ -152,5 +152,7 @@ SPF は、ユーザーの代わりにメールを送信できるメール サー
 [**DMARC**](use-dmarc-to-validate-email.md) メール認証の目標は、SPF と DKIM の情報が From アドレスと確実に一致していることを確認することです。
 
  サポートされている SPF 構文の高度な例や詳細については、「[Office 365 において SPF がスプーフィングとフィッシングを防ぐしくみ](how-office-365-uses-spf-to-prevent-spoofing.md#HowSPFWorks)」をご覧ください。
+
+[正当なメールフローに信頼された ARC 送信者を使用する](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
 
 *このドキュメントに関してフィードバックがある場合は、[フィードバック] の下にある [このページ] を選択してください。*

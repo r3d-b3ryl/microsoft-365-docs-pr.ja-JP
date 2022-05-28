@@ -156,16 +156,18 @@
           items:
             - name: メール認証
               href: email-validation-and-authentication.md
+            - name: SPF を設定して、スプーフィングを防止する
+              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+            - name: Microsoft 365 で SPF を使用して、スプーフィングを防止する方法
+              href: how-office-365-uses-spf-to-prevent-spoofing.md
             - name: DKIM を使用して、送信電子メールを検証する
               href: use-dkim-to-validate-outbound-email.md
             - name: DKIM 署名付きメッセージの検証をサポートする
               href: support-for-validation-of-dkim-signed-messages.md
             - name: DMARC を使用してメールを検証する
               href: use-dmarc-to-validate-email.md
-            - name: SPF を設定して、スプーフィングを防止する
-              href: set-up-spf-in-office-365-to-help-prevent-spoofing.md
-            - name: Microsoft 365 で SPF を使用して、スプーフィングを防止する方法
-              href: how-office-365-uses-spf-to-prevent-spoofing.md
+            - name: 送信側と受信側の間の正当なデバイスとサービスに Trusted ARC 送信者を使用する
+              href: use-arc-exceptions-to-mark-trusted-arc-senders.md
         - name: EOP のメール フロー
           href: mail-flow-in-eop.md
         - name: ユーザーからの報告ポリシー
@@ -394,6 +396,8 @@
           href: quarantine-faq.yml
     - name: 参照
       items:
+        - name: Defender for Office 365 のデータ保持
+          href: mdo-data-retention.md
         - name: セキュリティ ロードマップ
           href: security-roadmap.md
         - name: EOP のヘルプとサポート
