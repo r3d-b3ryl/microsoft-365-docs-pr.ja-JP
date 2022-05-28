@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 56b6d53d56c8f9fb16e900271b8d6a4c152f6440
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438007"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772685"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -389,6 +389,7 @@ Azure Active Directory ポータルを除いて、秘密度ラベルをサポー
   - Yammer
   - Project
   - Power BI
+  - マイ アプリ ポータル
 
 ## <a name="classic-azure-ad-group-classification"></a>従来の Azure AD グループの分類
 
