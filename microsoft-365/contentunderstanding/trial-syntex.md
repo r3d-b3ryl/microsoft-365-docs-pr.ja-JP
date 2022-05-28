@@ -17,12 +17,12 @@ ms.custom:
 search.appverid: ''
 ms.localizationpriority: medium
 description: 組織内のSharePoint Syntexの試用版パイロット プログラムを計画、サインアップ、実行する方法について説明します。
-ms.openlocfilehash: ccbf1208d5c655171825b5a96f3a78b25ea3bbf2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 5081c3877e005d1e014ad7520beeffd657a31f67
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754446"
+ms.locfileid: "65759804"
 ---
 # <a name="run-a-trial-of-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexの試用版を実行する
 
@@ -88,7 +88,7 @@ SharePoint Syntex試用版を正常に計画するには、次の要因を考慮
 
 ## <a name="during-a-trial"></a>試用版中
 
-試用期間は限られているため、最初は、SharePoint Syntex モデルでドキュメントを分類し、定義されたユース ケースのメタデータを抽出できるかどうかに重点を置くのが最善です。 試用期間が終了したら、メタデータを悪用する方法を評価できます。
+試用期間は限られているため、最初は、SharePoint Syntex モデルでドキュメントを分類し、定義されたユース ケースのメタデータを抽出できるかどうかに重点を置くのが最善です。 試用期間が終了したら、メタデータの使用方法を評価できます。
 
 ## <a name="after-a-trial"></a>試用版の後
 
@@ -113,3 +113,5 @@ SharePoint Syntex試用版を正常に計画するには、次の要因を考慮
 ## <a name="see-also"></a>関連項目
 
 [SharePoint Syntexの導入を促進する概要](adoption-getstarted.md)
+
+[SharePoint Syntex のシナリオとユース ケース](adoption-scenarios.md)
