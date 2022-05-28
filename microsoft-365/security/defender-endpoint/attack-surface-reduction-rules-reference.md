@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: d43bcfd16a2ab2b1927ae4da0f894db114003cbe
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: d719c83c8a6cc27ff682c17928c694184e3e94d6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599571"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772514"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -56,9 +56,9 @@ ms.locfileid: "65599571"
 >
 > 特に明記されていない限り、最小Windows&nbsp; 10 ビルドはバージョン 1709 (RS3、ビルド 16299) 以降です。最小Windows&nbsp; Server ビルドのバージョンは 1809 以降です。
 >
-> Windows&nbsp; Server2012R2&nbsp;&nbsp; および Windows&nbsp; Server2016&nbsp; の攻撃面の縮小ルールは、最新の統合ソリューション パッケージを使用してオンボードされたデバイスで使用できます。 詳細については、「[Windows Server 2012 R2 および 2016 Preview の最新の統合ソリューションの新機能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)」を参照してください。
+> Windows&nbsp; Server&nbsp;2012&nbsp;R2 および Windows&nbsp; Server&nbsp;2016 の攻撃面の縮小ルールは、最新の統合ソリューション パッケージを使用してオンボードされたデバイスで使用できます。 詳細については、「[Windows Server 2012 R2 および 2016 Preview の最新の統合ソリューションの新機能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)」を参照してください。
 
-| ルール名| &nbsp;Windows 11 <br>and<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>and<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
+| ルール名| &nbsp;Windows 11 <br>and<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>and<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012 R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
 | [悪用された脆弱な署名されたドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> バージョン 1803 (半期チャネル) 以降 | Y | Y |
 | [Adobe Reader による子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y <br> バージョン 1809 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
@@ -79,7 +79,7 @@ ms.locfileid: "65599571"
 
 (<a id="fn1">1</a>) Windows Server 2012と 2016 の最新の統合ソリューションを参照します。 詳細については、「[Windows サーバーを Defender for Endpoint サービスにオンボードする」を](configure-server-endpoints.md)参照してください。
 
-(<a id="fn1">2</a>) Windows&nbsp; Server 2016 および Windows&nbsp; Server 2012R2&nbsp; の場合、Microsoft Endpoint Configuration Managerの最小必須バージョンはバージョン 2111 です。
+(<a id="fn1">2</a>) Windows&nbsp; Server 2016 および Windows&nbsp; Server 2012&nbsp;R2 の場合、Microsoft Endpoint Configuration Managerの最小必須バージョンはバージョン 2111 です。
 
 (<a id="fn1">3</a>) バージョンとビルド番号は、Windows&nbsp; 10 にのみ適用されます。
 
@@ -131,16 +131,16 @@ ms.locfileid: "65599571"
 |[Windowsローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) |   | N | Y |
 |[電子メール クライアントと webmail から実行可能コンテンツをブロックする](#block-executable-content-from-email-client-and-webmail) |   | Y <br> 高クラウド ブロック レベルのデバイスが必要です | Y <br> 高クラウド ブロック レベルのデバイスが必要です |
 |[実行可能ファイルが有病率、年齢、または信頼されたリスト条件を満たしていない限り、実行可能ファイルの実行をブロックする](#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion) |   | N | Y |
-|[難読化される可能性があるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
+|[難読化される可能性があるスクリプトの実行をブロックする](#block-execution-of-potentially-obfuscated-scripts) |  監査&nbsp;\|&nbsp;ブロック | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
 |[ダウンロードした実行可能コンテンツの起動から JavaScript または VBScript をブロックする](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) | ブロック | Y <br> 高クラウド ブロック レベルのデバイスが必要です  | Y <br> 高クラウド ブロック レベルのデバイスが必要です |
 |[アプリケーションOffice実行可能コンテンツの作成をブロックする](#block-office-applications-from-creating-executable-content) |   | N | Y |
 |[アプリケーションOfficeコードを他のプロセスに挿入できないようにブロックする](#block-office-applications-from-injecting-code-into-other-processes)  |   | N | Y |
 |[通信アプリケーションOffice子プロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) |  |  N | Y |
-|[WMI イベント サブスクリプションを使用して永続化をブロックする](#block-persistence-through-wmi-event-subscription) |  AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
+|[WMI イベント サブスクリプションを使用して永続化をブロックする](#block-persistence-through-wmi-event-subscription) |  監査&nbsp;\|&nbsp;ブロック | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
 |[PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) |   | N | Y |
-|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
+|[USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | 監査&nbsp;\|&nbsp;ブロック | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
 |[Office マクロからの Win32 API 呼び出しをブロックする](#block-win32-api-calls-from-office-macros) |   | N | Y |
-|[ランサムウェアに対する高度な保護を使用する](#use-advanced-protection-against-ransomware) | AuditBlock&nbsp;\|&nbsp; | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
+|[ランサムウェアに対する高度な保護を使用する](#use-advanced-protection-against-ransomware) | 監査&nbsp;\|&nbsp;ブロック | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
   
 ## <a name="asr-rules-and-guids-matrix"></a>ASR の規則と GUID マトリックス
 
@@ -174,7 +174,7 @@ _警告モード_ は、危険な可能性があるアクションについて�
 
 [許可] ボタンをクリックすると、ブロックは 24 時間非表示になります。 24 時間後、エンド ユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809 以降) デバイスでのみサポートされます。 バイパスが古いバージョンのデバイスの ASR ルールに割り当てられている場合、ルールはブロック モードになります。
 
-また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 次に例を示します。
+また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 例として以下のようなものがあります。
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -330,6 +330,9 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>難読化される可能性があるスクリプトの実行をブロックする
 
 このルールは、難読化されたスクリプト内で疑わしいプロパティを検出します。
+  
+> [!IMPORTANT]
+> PowerShell スクリプトは、過去に発生した大規模な FP の問題により、"難読化される可能性があるスクリプトの実行をブロックする" 規則から一時的に除外されています。
 
 スクリプトの難読化は、マルウェア作成者と正当なアプリケーションの両方が、知的財産を隠したり、スクリプトの読み込み時間を短縮したりするために使用する一般的な手法です。 また、マルウェアの作成者は難読化を使用して、悪意のあるコードの読み取りを困難にし、人間やセキュリティ ソフトウェアによる綿密な調査を防ぎます。
 

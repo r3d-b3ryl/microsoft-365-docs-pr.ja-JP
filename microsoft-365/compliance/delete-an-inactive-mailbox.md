@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365非アクティブなメールボックスの内容を保持する必要がなくなった場合は、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: b1a828b2248be7eed583141e13a3badef948b32e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438453"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772382"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -50,7 +50,7 @@ ms.locfileid: "65438453"
 
 前述のように、訴訟ホールド、In-Placeホールド、またはアイテム保持ポリシーは非アクティブなメールボックスに配置される可能性があります。 最初の手順として、非アクティブなメールボックスのホールドを識別します。
   
-[PowerShell をExchange Online Connect](/powershell/exchange/connect-to-exchange-online-powershell)、次のコマンドを実行して、組織内のすべての非アクティブなメールボックスの保留情報を表示します。
+[PowerShell をExchange Online Connect](/powershell/exchange/connect-to-exchange-online-powershell)し、次のコマンドを実行して、組織内のすべての非アクティブなメールボックスの保留情報を表示します。
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL DisplayName,Name,IsInactiveMailbox,LitigationHoldEnabled,InPlaceHolds
@@ -94,7 +94,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>アイテム保持ポリシーから非アクティブなメールボックスを削除する
 
-非アクティブなメールボックスをMicrosoft 365アイテム保持ポリシーから削除する手順は、非アクティブなメールボックスに割り当てられているアイテム保持ポリシーが組織全体か明示的かによって異なります。 は、非アクティブなメールボックスに割り当てられているアイテム保持ポリシーの種類に基づいて設定されます。
+非アクティブなメールボックスをMicrosoft 365アイテム保持ポリシーから削除する手順は、非アクティブなメールボックスに割り当てられているアイテム保持ポリシーが組織全体であるか明示的であるかによって異なります。
 
 - 組織内のすべてのメールボックスに割り当てられた組織全体のアイテム保持ポリシー。 PowerShell の **Get-OrganizationConfig** コマンドレットExchange Online使用して、組織全体のアイテム保持ポリシーに関する情報を取得します。
 

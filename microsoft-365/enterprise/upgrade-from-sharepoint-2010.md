@@ -20,12 +20,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint 2010 および SharePoint Server 2010 からアップグレードする情報とリソースを確認します。 2021 年 4 月 13 日の両方のサポート。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be25dd1260c378146d292e6487329065a3020ac8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4ed6cf873442d4fd48cdbf9562e6067fd238384e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077402"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772754"
 ---
 # <a name="upgrading-from-sharepoint-2010"></a>SharePoint 2010 からのアップグレード
 
@@ -112,9 +112,9 @@ SharePoint Server 2013 または SharePoint Server 2016 にアップグレード
 |SharePoint Online の利点|SharePoint Online の欠点|
 |---|---|
 |Microsoft が SPO ハードウェアおよびすべてのハードウェアの管理を行う。|使用可能な機能は、SharePoint Server オンプレミスと SPO で異なる場合があります。|
-|サブスクリプションの Sharepoint 管理者またはグローバル管理者であり、SPO サイトに管理者を割り当てることができます。|SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは、Microsoft 365のSharePoint管理者ロールに存在しない (または必要ありません)。 ただし、SharePoint管理、サイト コレクション管理、サイト所有権は組織に対してローカルです。|
+|サブスクリプションのSharePoint管理者またはグローバル管理者であり、SPO サイトに管理者を割り当てることができます。|SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは、Microsoft 365のSharePoint管理者ロールに存在しない (または必要ありません)。 ただし、SharePoint管理、サイト コレクション管理、サイト所有権は組織に対してローカルです。|
 |Microsoft は、SharePoint Online が実行されているSQL サーバーを含む、基になるハードウェアとソフトウェアにパッチ、修正プログラム、更新プログラムを適用します。|サービス内の基になるファイル システムにアクセスできないため、カスタマイズは制限されます。|
-|Microsoft は [サービス レベル アグリーメント](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) を発行し、サービス レベルのインシデントを迅速に解決します。|バックアップと復元などの復旧オプションは、SharePoint Online のサービスによって自動化されます。 バックアップは、使用しない場合は上書きされます。|
+|Microsoft は [サービス レベル アグリーメント](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) を発行し、サービス レベルのインシデントを迅速に解決します。|Backupと復元などの回復オプションは、SharePoint Online のサービスによって自動化されます。 バックアップは、使用しない場合は上書きされます。|
 |セキュリティ テストとサーバー パフォーマンスチューニングは、Microsoft によってサービス内で継続的に実行されます。|ユーザー インターフェイスとその他の SharePoint 機能の変更はサービスによってインストールされ、オン/オフの切り替えが必要な場合がある。|
 |Microsoft 365は、[Microsoft コンプライアンス オファリング](/compliance/regulatory/offering-home)という多くの業界標準を満たしています。|移行の際に [FastTrack](https://go.microsoft.com/fwlink/?linkid=518597) でできることが限られる。  <br/> アップグレードの多くは、手動で行うか、SharePoint [Online および OneDrive 移行コンテンツ ロードマップ](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)で説明されている SPO 移行 API を使用します。|
 |Microsoft サポート エンジニアとデータセンターの従業員は、サブスクリプションへの無制限の管理者アクセス権を持っていません。|新しいバージョンのSharePointをサポートするためにハードウェア インフラストラクチャをアップグレードする必要がある場合や、アップグレードにセカンダリ ファームが必要な場合は、追加のコストが発生する可能性があります。|

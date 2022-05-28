@@ -19,16 +19,16 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365のリンク ポリシーとグローバル セーフ リンク設定セーフ表示、作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1d60be56f8dad960ca3f15484276324421c00426
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 969e3f3bb3b139a21cd2d84b4a0bd698a74b5107
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623024"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772448"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 で安全なリンク ポリシーを設定する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -304,6 +304,20 @@ New-SafeLinksRule -Name "<RuleName>" -SafeLinksPolicy "<PolicyName>" <Recipient 
 New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs contoso.com
 ```
 
+この例では、前の例に似た安全なリンク規則を作成しますが、この例では、ルールは組織内のすべての承認済みドメインの受信者に適用されます。
+
+```powershell
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+この例では、前の例に似た安全なリンク規則を作成しますが、この例では、.csv ファイルで指定されたドメイン内の受信者にルールが適用されます。
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+New-SafeLinksRule -Name "Contoso All" -SafeLinksPolicy "Contoso All" -RecipientDomainIs $SLDomains
+```
+
 構文とパラメーターの詳細については、「 [New-SafeLinksRule](/powershell/module/exchange/new-safelinksrule)」を参照してください。
 
 ### <a name="use-powershell-to-view-safe-links-policies"></a>PowerShell を使用して安全なリンク ポリシーを表示する
@@ -389,6 +403,20 @@ PowerShell で安全なリンク規則を変更するときに使用できない
 
 ```PowerShell
 Set-SafeLinksRule -Identity "<RuleName>" <Settings>
+```
+
+この例では、Contoso All という名前の安全なリンク規則に、組織内のすべての承認済みドメインを条件として追加します。
+
+```powershell
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs (Get-AcceptedDomain).Name
+```
+
+この例では、指定した.csvのドメインを条件として Contoso All という名前の安全なリンク規則に追加します。
+
+```powershell
+$Data = Import-Csv -Path "C:\Data\SafeLinksDomains.csv"
+$SLDomains = $Data.Domains
+Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs $SLDomains
 ```
 
 構文とパラメーターの詳細については、「 [Set-SafeLinksRule](/powershell/module/exchange/set-safelinksrule)」を参照してください。

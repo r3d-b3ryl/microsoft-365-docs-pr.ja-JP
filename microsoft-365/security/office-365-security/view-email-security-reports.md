@@ -20,16 +20,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e57b797ab0b5d5eee90315ae9c3459fcba0a02c
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 614cdd62e5884eff0f91b1c0d1f9946a1c8ce891
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621693"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772306"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -392,7 +392,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 ## <a name="submissions-report"></a>提出レポート
 
-提出レポートには、管理者が分析のために Microsoft に報告したアイテムに関する情報が表示 **されます** 。 詳細については、「 [管理者申請を使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
+提出レポートには、管理者が分析のために Microsoft に報告したアイテムに関する情報が表示 **されます** 。 詳細については、「[管理申請を使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
 
 Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **申請] を** 探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport>。 [Microsoft 365 Defender ポータルで管理者の申請に](admin-submission.md)移動するには、[**送信に移動**] をクリックします。 管理者は、過去 30 日間レポートを表示できます。
 
@@ -413,7 +413,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
-- **Name**
+- **[名前]**
 - **提出者**
 - **送信の理由**:
   - **迷惑ではない**
@@ -619,7 +619,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 - **ファイルデトネーションの評価**<sup>\*</sup>: Defender for Office 365デトネーションによって生成されるすべての悪意のあるファイルの評判。
 - **ファイルの評価**
 - **マルウェア対策エンジン**<sup>\*</sup>: マルウェア対策エンジンからの検出。
-- **マルウェア対策ポリシー ファイルの種類ブロック**: これらは、メッセージ内で識別された悪意のあるファイルの種類のために除外された電子メール メッセージです。
+- **マルウェア対策ポリシー ファイルの種類ブロック**: メッセージで識別されたファイルの種類 (一般的な添付ファイル フィルター) が原因で、電子メール メッセージが自動的にフィルター処理されます。
 - **URL 悪意のある評判**<sup>\*</sup>
 - **URL デトネーション**<sup>\*</sup>
 - **URL の起爆評価**<sup>\*</sup>
@@ -660,7 +660,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
-[**Threat 保護の状態** ] ページの [スケジュールの作成] ![アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、 ![レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[要求レポート]](#request-report)**、[ ![エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
+**[脅威の保護の状態**] ページの [スケジュールの作成] ![アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、 ![レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[要求レポート]](#request-report)**、[ ![エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
 
 ### <a name="chart-breakdown-by-policy-type"></a>ポリシーの種類別のグラフの内訳
 
@@ -1158,7 +1158,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 
 2. **[ダウンロード用のレポート]** ページに、使用可能なレポートごとに次の情報が表示されます。
    - **開始日**
-   - **Name**
+   - **[名前]**
    - **レポートの種類**
    - **最後に送信された**
    - **方向**

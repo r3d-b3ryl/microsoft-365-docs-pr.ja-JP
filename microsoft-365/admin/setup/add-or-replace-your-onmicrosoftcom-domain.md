@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: 新しい onmicrosoft.com ドメインを作成し、新しいフォールバック ドメインにする方法について説明します。
-ms.openlocfilehash: 82eca45807405980043b00e8cfe5a221c52fa065
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 967cc1992b33b3a17a853954175adbf050b34f1c
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704841"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772134"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Microsoft 365で onmicrosoft.com フォールバック ドメインを追加して置き換える
 
@@ -48,7 +48,7 @@ Microsoft 365にサインアップすると、Microsoft は *onmicrosoft.com* �
 フォールバック ドメインは、Microsoft 365 管理センターで変更できます。 フォールバック ドメインを変更する一般的な理由は次のとおりです。
 
 - Microsoft 365に初めてサインアップしたときに使用する会社名がわからない。 会社名がわかったので、ユーザーに適切なログイン アカウント名を設定する必要があります。 
-- 新しいサイトを作成するときに Sharepoint URL がどのように表示されるかを変更したいと考えています。 Microsoft 365環境のSharePoint URL は、フォールバック ドメイン名に基づいて作成されます。 初めてサインアップしたときに正しい会社名を使用しなかった場合、サイトのSharePoint URL は、新しいSharePoint サイトを作成するときに引き続きその名前を使用します。 
+- 新しいサイトを作成するときに、SharePoint URL がどのように表示されるかを変更したいと考えています。 Microsoft 365環境のSharePoint URL は、フォールバック ドメイン名に基づいて作成されます。 初めてサインアップしたときに正しい会社名を使用しなかった場合、サイトのSharePoint URL は、新しいSharePoint サイトを作成するときに引き続きその名前を使用します。 
 
 
 追加の onmicrosoft.com ドメインを追加できますが、フォールバック ドメインとして使用できる onmicrosoft.com ドメインは 1 つだけです。 この記事の手順では、次の方法について説明します。

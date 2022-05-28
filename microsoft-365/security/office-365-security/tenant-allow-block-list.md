@@ -17,16 +17,16 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 58b1fadc85b993701d49b1c33750fc7db2527264
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468110"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772093"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -448,7 +448,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 - **中央のワイルドカード**:
 
-  - conto\* so.com
+  - conto\*so.com
   - conto~so.com
 
 - **二重ワイルドカード**
@@ -468,6 +468,7 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **インフラストラクチャの送信**: この値は、スプーフィングされたユーザーからのメッセージのソースを示します。 有効な値は次のとおりです。
   - 送信元電子メール サーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) で見つかったドメイン (fabrikam.com など)。
   - 送信元 IP アドレスに PTR レコードがない場合、送信インフラストラクチャは /24 (たとえば、192.168.100.100/24) として \<source IP\>識別されます。
+  - 検証済みの DKIM ドメイン。
 
 スプーフィングされた送信者を識別するための有効なドメイン ペアの例を次に示します。
 

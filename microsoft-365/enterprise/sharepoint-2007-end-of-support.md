@@ -37,12 +37,12 @@ search.appverid:
 - OSU160
 ms.assetid: ba124775-d5c0-4d68-b88d-8458ad4c3717
 description: SharePoint Server 2007 のサポートは、2017 年 10 月に終了しました。 この記事では、アップグレード、移行、およびサポート のオプションについて説明します。
-ms.openlocfilehash: 260949f73fbb4530436484e70ca39d4e2f99bbcf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7f98e3652e2836a0c4193efbe33147fd09ced01e
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098232"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771955"
 ---
 # <a name="sharepoint-server-2007-end-of-support-roadmap"></a>SharePoint Server 2007 のサポート終了ロードマップ
 
@@ -71,7 +71,7 @@ Office 2007 サーバーとサポート終了の詳細については、[Office 
   
 ## <a name="what-are-my-options"></a>使用できるオプション
 
-最初の停止は [製品ライフサイクル サイト](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)である必要があります。 オンプレミスの Microsoft 製品が期限切れになっている場合は、アップグレードまたは移行をスケジュールする 1 年ほどになるように、サポート終了日を確認してください。 次の手順を選択するときは、どの製品の機能が十分で、より良く、最適かを検討してください。 次に例を示します。 
+最初の停止は [製品ライフサイクル サイト](/lifecycle/products/?alpha=Microsoft+Office+SharePoint+Server+2007)である必要があります。 オンプレミスの Microsoft 製品が期限切れになっている場合は、アップグレードまたは移行をスケジュールする 1 年ほどになるように、サポート終了日を確認してください。 次の手順を選択するときは、どの製品の機能が十分で、より良く、最適かを検討してください。 次に例を示します: 
   
 |**標準**|**良い**|**最良**|
 |:-----|:-----|:-----|
@@ -119,9 +119,9 @@ SharePoint 2007 から SharePoint Online に直接移行することはできま
 |**Online pro**|**オンライン con**|
 |:-----|:-----|
 |Microsoft が SPO ハードウェアおよびすべてのハードウェアの管理を行う。  <br/> |使用可能な機能は、SharePoint Server オンプレミスと SPO で異なる場合があります。  <br/> |
-|サブスクリプションの Sharepoint 管理者またはグローバル管理者であり、SPO サイトに管理者を割り当てることができます。  <br/> |SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは存在しないか、Microsoft 365のSharePoint管理者ロールに必ずしも含まれていません。  <br/> |
+|サブスクリプションのSharePoint管理者またはグローバル管理者であり、SPO サイトに管理者を割り当てることができます。  <br/> |SharePoint Server オンプレミスのファーム管理者が使用できる一部のアクションは存在しないか、Microsoft 365のSharePoint管理者ロールに必ずしも含まれていません。  <br/> |
 |Microsoft は、基になるハードウェアとソフトウェアにパッチ、修正プログラム、更新プログラムを適用します。 <br/> |サービス内の基になるファイル システムにアクセスできないため、カスタマイズは制限されます。  <br/> |
-|Microsoft は [サービス レベル アグリーメント](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) を発行し、サービス レベルのインシデントを迅速に解決します。 <br/> |バックアップと復元などの復旧オプションは、SharePoint Online のサービスによって自動化されます。 バックアップは、使用しない場合は上書きされます。 <br/> |
+|Microsoft は [サービス レベル アグリーメント](/office365/servicedescriptions/office-365-platform-service-description/service-level-agreement) を発行し、サービス レベルのインシデントを迅速に解決します。 <br/> |Backupと復元などの回復オプションは、SharePoint Online のサービスによって自動化されます。 バックアップは、使用しない場合は上書きされます。 <br/> |
 |セキュリティ テストとサーバーのパフォーマンス チューニングは、Microsoft によって、継続的なサービスとして実施される。 <br/> |ユーザー インターフェイスとその他の SharePoint 機能の変更はサービスによってインストールされ、オン/オフの切り替えが必要な場合がある。 <br/> |
 |Microsoft 365は、[Microsoft コンプライアンス オファリング](/compliance/regulatory/offering-home)という多くの業界標準を満たしています。  <br/> |移行の際に [FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) でできることが限られる。  <br/> アップグレードの多くは、手動で行うか、SharePoint [Online および OneDrive 移行コンテンツ ロードマップ](/sharepointmigration/upload-on-premises-content-to-sharepoint-online-using-powershell-cmdlets)で説明されている SPO 移行 API を使用します。  <br/> |
 |Microsoft サポートエンジニアとデータセンターの従業員は、サブスクリプションへの無制限の管理者アクセス権を持ちません。 <br/> |新しいバージョンのSharePointをサポートするためにハードウェアをアップグレードする必要がある場合や、アップグレードにセカンダリ ファームが必要な場合は、追加のコストが発生する可能性があります。  <br/> |

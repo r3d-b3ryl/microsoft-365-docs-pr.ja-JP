@@ -20,16 +20,16 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) でスプーフィング インテリジェンスの分析情報について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c147396ff47f924d7dd4b2ebd3a0cac106de94b2
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144731"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772108"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>詳細については、「EOP のスプーフィング インテリジェンス分析」を参照してください。
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -38,7 +38,7 @@ ms.locfileid: "65144731"
 
 Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含むMicrosoft 365組織では、Exchange Onlineメールボックスがない場合、受信電子メール メッセージはスプーフィングから自動的に保護されます。 EOP では、フィッシングに対する組織全体の防御の一環として **、スプーフィング インテリジェンス** が使用されます。 詳細については、「 [EOP でのスプーフィング対策保護](anti-spoofing-protection.md)」を参照してください。
 
-送信者が電子メール アドレスをスプーフィングすると、組織のドメインの 1 つのユーザー、または組織に電子メールを送信する外部ドメイン内のユーザーのように見えます。 スパムやフィッシングメールを送信するために送信者をスプーフィングする攻撃者は、ブロックする必要があります。 ただし、正当な送信者がスプーフィングを行うシナリオがあります。 例:
+送信者が電子メール アドレスをスプーフィングすると、組織のドメインの 1 つのユーザー、または組織に電子メールを送信する外部ドメイン内のユーザーのように見えます。 スパムやフィッシングメールを送信するために送信者をスプーフィングする攻撃者は、ブロックする必要があります。 ただし、正当な送信者がスプーフィングを行うシナリオがあります。 例として以下のようなものがあります。
 
 - 内部ドメインをスプーフィングするための正当なシナリオ:
   - サードパーティの送信者は、ドメインを使用して、会社の投票のために自分の従業員に一括メールを送信します。
@@ -83,7 +83,7 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
   > [!NOTE]
   >
   > - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - EOP とMicrosoft Defender for Office 365のフィッシング対策ポリシーでスプーフィング インテリジェンスを有効または無効にします。 スプーフィング インテリジェンスは既定で有効になっています。 詳細については、「[EOP でフィッシング対策ポリシーを構成する](configure-anti-phishing-policies-eop.md)」または「[Microsoft Defender for Office 365でフィッシング対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)」を参照してください。
 
@@ -115,6 +115,7 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 - **インフラストラクチャの送信**: _インフラストラクチャ_ とも呼ばれます。 送信インフラストラクチャは、次のいずれかの値になります。
   - 送信元電子メール サーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) で見つかったドメイン。
   - 送信元 IP アドレスに PTR レコードがない場合、送信インフラストラクチャは /24 (たとえば、192.168.100.100/24) として \<source IP\>識別されます。
+  - 検証済みの DKIM ドメイン。
 - **メッセージ数**: 過去 7 日以内に、スプーフィングされたドメイン _と_ 組織への送信インフラストラクチャの組み合わせからのメッセージの数。
 - **最終更新日**: スプーフィングされたドメインを含む送信インフラストラクチャからメッセージを受信した最後の日付。
 - **スプーフィングの種類**: 次のいずれかの値。
@@ -147,7 +148,7 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 
 ### <a name="about-allowed-spoofed-senders"></a>許可されたスプーフィング送信者について
 
-スプーフィング インテリジェンス 分析情報で許可されたスプーフィングされた送信者、または手動で [スプーフィングを許可する] に変更したブロックされた **スプーフィン** グされた送信者は、スプーフィングされたドメイン *と* 送信インフラストラクチャの組み合わせからのメッセージのみを許可します。 スプーフィングされたドメインからの電子メールを任意のソースから許可したり、ドメインの送信インフラストラクチャからの電子メールを許可したりすることはありません。
+スプーフィング インテリジェンス 分析情報で許可されたスプーフィングされた送信者、または手動で [スプーフィングを許可する] に変更したブロックされた **スプーフィン** グされた送信者は、スプーフィングされたドメイン _と_ 送信インフラストラクチャの組み合わせからのメッセージのみを許可します。 スプーフィングされたドメインからの電子メールを任意のソースから許可したり、ドメインの送信インフラストラクチャからの電子メールを許可したりすることはありません。
 
 たとえば、次のスプーフィングされた送信者はスプーフィングを許可されます。
 

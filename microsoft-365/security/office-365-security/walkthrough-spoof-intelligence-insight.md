@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f827046dc9a103e73eb6fb79ba161e523e2b2690
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649355"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65771999"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP でスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンス 分析情報を使用してスプーフィングされた送信者を管理する
 
@@ -47,7 +47,7 @@ ms.locfileid: "65649355"
 >
 > **Get-PhishFilterPolicy** コマンドレットと **Set-PhishFilterPolicy** コマンドレットを使用した古いスプーフィングされた送信者管理エクスペリエンスは非推奨のプロセスにありますが、コマンドレットがすべての場所で削除されるまで、この記事では完全さを示しています。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -98,7 +98,7 @@ Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
    ```
 
 2. CSV ファイルを編集して、次の値を追加または変更します。
-   - **送信者** (ソース サーバーの PTR レコードまたは IP/24 アドレスのドメイン)
+   - **送信者** (ソース サーバーの PTR レコードのドメイン、IP/24 アドレス、または検証済みの DKIM ドメイン)
    - **スプーフィングユーザー**: 次のいずれかの値。
      - 内部ユーザーの電子メール アドレス。
      - 外部ユーザーの電子メール ドメイン。
