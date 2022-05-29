@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 組織に Microsoft Purview の情報保護を展開するための規範的なガイダンス。
-ms.openlocfilehash: d672e113e4f1bdaca155881afba6262878d0ecb3
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: fa826e7b9761ebcff34dd9ae6f7c2ee1b268bade
+ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294758"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "65759848"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Microsoft Purview を使用して情報保護ソリューションを展開する
 
@@ -58,7 +58,7 @@ Microsoft Purview の情報保護機能は、Microsoft Purview に含まれて�
 
 |手順|説明|詳細情報|
 |:---|:----------|:---------------|
-|1| 保護する機密情報のカテゴリについて説明します。 <br /><br /> 組織にとって最も重要な情報の種類と、そうでない情報の種類は既に把握しています。 利害関係者と協力してこれらのカテゴリを説明してください。これらは出発点であるためです。 | [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md) <p> [トレーニング可能な分類子の詳細](classifier-learn-about.md)|
+|1| 保護する機密情報のカテゴリについて説明します。 <br /><br /> 組織にとって最も重要な情報の種類と、そうでない情報の種類は既に把握しています。 利害関係者と協力して、出発点となるこれらのカテゴリについて説明します。 | [機密情報の種類に関する詳細情報](sensitive-information-type-learn-about.md) <p> [トレーニング可能な分類子の詳細](classifier-learn-about.md)|
 |2| 機密データを検出して分類します。 <br /><br /> アイテム内の機密データは、既定の DLP ポリシー、ユーザーによる手動ラベル付け、機密情報の種類または機械学習を使用した自動パターン認識など、さまざまな方法を使用して見つけることができます。 | [データ分類の説明](data-classification-overview.md) <p> [ビデオ: コンプライアンス センターでのデータ分類](https://www.microsoft.com/videoplayer/embed/RE4vx8x)|
 |3| 機密アイテムを表示します。  <br /><br /> コンテンツ エクスプローラーとアクティビティ エクスプローラーを使用して、機密性の高いアイテムと、ユーザーがこれらのアイテムに対して実行しているアクションの詳細な分析を行います。| [コンテンツ エクスプローラーの使用を開始する](data-classification-content-explorer.md) <p> [アクティビティ エクスプローラーの使用を開始する](data-classification-activity-explorer.md)|
 
@@ -102,10 +102,10 @@ Microsoft Purview データ損失防止 (DLP) ポリシーを展開して、ア�
 
 コンサルタントと管理者向けの学習モジュール:
 
-- [Microsoft 365 での情報保護とガバナンスについて](/learn/modules/m365-compliance-information-governance)
+- [Microsoft Purview での情報保護とデータ ライフサイクル管理の概要](/learn/modules/m365-compliance-information-governance)
 - [保護とガバナンスのためにデータを分類する](/learn/modules/m365-compliance-information-classify-data)
-- [Microsoft 365 で情報を保護する](/learn/modules/m365-compliance-information-protect-information)
-- [Microsoft 365 でデータの損失を防止する](/learn/modules/m365-compliance-information-prevent-data-loss)
+- [Microsoft Purview で情報を保護する](/learn/modules/m365-compliance-information-protect-information)
+- [Microsoft Purview でのデータ損失の防止](/learn/modules/m365-compliance-information-prevent-data-loss)
 
 ユーザーに対して構成した秘密度ラベルを適用して使用するようにトレーニングするには、「[秘密度ラベルのユーザーのドキュメントを終了する](get-started-with-sensitivity-labels.md#end-user-documentation-for-sensitivity-labels)」を参照してください。
 

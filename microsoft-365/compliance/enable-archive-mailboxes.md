@@ -23,12 +23,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: 組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効または無効にする方法を説明します。
-ms.openlocfilehash: ba5fdf252fe379798b1126d59affb12bb3725306
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
+ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647239"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "65772426"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview コンプライアンス ポータルでアーカイブ メールボックスを有効にする
 
@@ -124,6 +124,10 @@ Microsoft 365 管理センターでポップアップ ページが開きます�
 
 > [!NOTE]
 > アーカイブ メールボックスの診断チェックを使用するには、Microsoft 365 グローバル管理者である必要があります。 なお、この機能は、Microsoft 365 Government クラウド、21 Vianet が運用する Microsoft 365、または Microsoft 365 Germany では使用できません。
+
+## <a name="instructions-for-end-users"></a>エンド ユーザー向けの手順
+
+アーカイブ メールボックスのしくみと、Windows、macOS、および Web 上のOutlookでの操作方法について説明します。 最も効果的なドキュメントは、組織に対してカスタマイズされます。 ただし、基本的な手順については、[[オンライン アーカイブ メールボックスを使用したメール ストレージの管理](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)] を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 
