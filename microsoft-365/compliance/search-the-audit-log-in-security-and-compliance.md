@@ -21,12 +21,12 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 70bb6383b67392da1766d3ca8d1ef0806d105bb1
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 9d556facba3fa1a9c1dbafbfe2b2cb519f1b362d
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465978"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810968"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログを検索する
 
@@ -1130,7 +1130,13 @@ Exchange Online、SharePoint Online、OneDrive for Business、Azure Active Direc
 
 **セキュリティ/コンプライアンス ポータルまたは Office 365 Management Activity API の使用以外に、監査ログを取得する方法はありますか?**
 
-いいえ。監査サービスからデータを取得する方法は、この 2 つの方法のみです。
+はい、次の方法を使用して、監査ログを取得できます。
+
+- [Office 365 マネージメント アクティビティ API](/office/office-365-management-api/office-365-management-activity-api-reference)。
+
+- Microsoft Purview コンプライアンス ポータルの [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)。
+
+- Exchange Online PowerShell の [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) コマンドレット。
 
 **監査ログを取得したい各サービスで監査を個別に有効にする必要がありますか?**
 

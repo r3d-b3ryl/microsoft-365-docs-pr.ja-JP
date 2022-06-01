@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Yammer に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: c479b7b08fd74b957a8ef7d23147758948459dc8
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 25a746fcd5fe5dfd0e17edf08c9e7d3f722ce676
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754314"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810574"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer の保持の詳細
 
@@ -86,7 +86,14 @@ Yammer メッセージのアイテム保持ポリシーが構成されると、E
 2. **Yammer メッセージが削除されない場合**、および編集した後の現在のメッセージの場合は、保持期間満了後にメッセージは SubstructateHolds フォルダに移動されます。 このアクションには、有効期限から最大で 7 日かかります。 メッセージが SubstrateHolds フォルダにある場合は、直ちに完全に削除されます。 
 
 > [!NOTE]
-> SubstrateHolds フォルダー内のメッセージは、電子情報開示ツールで検索できます。 メッセージは完全に削除されるまで（SubstituteHolds フォルダ内）、メッセージは電子情報開示ツールで検索できます。
+> SubstrateHolds フォルダー内のメッセージは、電子情報開示ツールで検索できます。 メッセージは SubstituteHolds フォルダー内から完全に削除されるまで、電子情報開示ツールで検索できます。
+
+メッセージの保存期間が終了して SubstrateHolds フォルダに移動すると、バックエンドの Yammer サービスに削除操作が伝えられ、同じ操作が Yammer クライアントアプリに伝わります。 この通信またはキャッシュの遅延は、ユーザーが Yammer アプリでこれらのメッセージを短時間表示し続ける理由を説明しています。
+
+保持ポリシーのために Yammer サービスが削除コマンドを受信するこのシナリオでは、Yammer クライアント アプリ内の対応するメッセージが会話内のすべてのユーザーに対して削除されます。 これらのユーザーの中には、別の組織のユーザー、保持期間が長い保持ポリシー、または保持ポリシーが割り当てられていないユーザーもいます。 これらのユーザーの場合、メッセージのコピーはメールボックスに保存され、別の保持ポリシーによってメッセージが完全に削除されるまで、電子情報開示で検索可能なままです。
+
+> [!IMPORTANT]
+> Yammer アプリに表示されるメッセージは、コンプライアンス要件のために保持されるか完全に削除されるかを正確に反映していません。
 
 アイテム保持ポリシーが保持のみ、または削除のみの場合、コンテンツ パスは保持か削除かで異なります。
 
@@ -173,7 +180,7 @@ Yammer メッセージのアイテム保持ポリシーが構成されると、E
 
 ## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
-ユーザーが組織を離れ、そのユーザーの Microsoft 365 アカウントが削除された場合、保持の対象となる Yammer ユーザーのメッセージは、非アクティブなメールボックスに保存されます。 これらのメッセージは、引き続きメールボックスが非アクティブになる前にユーザーに配置されたアイテム保持ポリシーの適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
+ユーザーが組織を離れ、そのユーザーの Microsoft 365 アカウントが削除された場合、保持の対象となる Yammer ユーザーのメッセージは、非アクティブなメールボックスに保存されます。 これらのメッセージは、引き続きメールボックスが非アクティブになる前にユーザーに配置されたアイテム保持ポリシーの適用対象となり、電子情報開示の検索が可能です。 詳細については、「[非アクティブ メールボックスの詳細](inactive-mailboxes-in-office-365.md)」を参照してください。
 
 ユーザーが Yammer にファイルを保存している場合は、SharePoint と OneDrive の「[同等のセクション](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)」を参照してください。
 

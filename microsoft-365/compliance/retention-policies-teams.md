@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Teams に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: cadff304744fcf06c6717b0709b719e05f8ddfb6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: f289b8da5a4b21214887fd6429e977e434a9cd0b
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754358"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811024"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -71,7 +71,7 @@ Teams 会議室に使用される RoomMailbox などの他のメールボック�
 
 Teams では、すべてのメッセージ (チャットおよびチャネル メッセージ) のプライマリ ストレージとして Azure を利用したチャット サービスを使用します。 コンプライアンス上の理由で Teams メッセージを削除する必要がある場合は、Teams のアイテム保持ポリシーは、メッセージが作成された日に基づいて、特定の期間の後にメッセージを削除することができます。 その後、メッセージは、コンプライアンス操作のために保存された Exchange メールボックスと、基盤となる Azure を利用したチャット サービスによって使用されるプライマリ ストレージの両方から完全に削除されます。 基盤となるアーキテクチャの詳細については、「[Microsoft Teams のセキュリティとコンプライアンス](/MicrosoftTeams/security-compliance-overview)」、特に「[情報保護アーキテクチャ](/MicrosoftTeams/security-compliance-overview#information-protection-architecture)」セクションを参照してください。
 
-Teams のチャットとチャネル メッセージからのこのデータはメールボックスに保存されますが、**Teams のチャネル メッセージ** と **Teams のチャット** の場所のアイテム保持ポリシーを構成する必要があります。 Teams のチャットとチャネル メッセージは、Exchange ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーには含まれていません。 同様に、Teams のアイテム保持ポリシーは、保存されている他のメール アイテムには影響しません。
+Teams のチャットとチャネル メッセージからのこのデータはメールボックスに保存されますが、**Teams のチャネル メッセージ** と **Teams のチャット** の場所のアイテム保持ポリシーを構成する必要があります。 Teams のチャットとチャネル メッセージは、Exchange ユーザーまたはグループのメールボックスに対して構成されているアイテム保持ポリシーには含まれていません。 同様に、Teams のアイテム保持ポリシーは、メール ボックスに保存されている他のメール アイテムには影響しません。
 
 ユーザーがチャットに追加されると、共有されているすべてのメッセージのコピーがメールボックスに取り込まれます。 これらのメッセージの作成日は、新しいユーザーに対して変更されるのではなく、すべてのユーザーに対して同じままです。
 
@@ -83,7 +83,7 @@ Teams のチャットとチャネル メッセージからのこのデータは�
 メッセージは SubstrateHolds フォルダーに少なくとも 1 日間残り、削除の対象となる場合、タイマー ジョブは次回の実行時にメッセージを完全に削除します。
 
 > [!IMPORTANT]
-> [アイテム保持の最初の原則](retention.md#the-principles-of-retention-or-what-takes-precedence)により、また Teams のチャットおよびチャネル メッセージは Exchange Online メールボックスに保存されるため、メールボックスが別のアイテム保持ポリシー、訴訟ホールド、または遅延ホールドの影響を受ける場合、または電子情報開示ホールドが法的または調査上の理由によりメールボックスに適用される場合には、SubstrateHolds フォルダーからの完全な削除は常に中断されます。
+> [アイテム保持の最初の原則](retention.md#the-principles-of-retention-or-what-takes-precedence) により、また Teams のチャットおよびチャネル メッセージは Exchange Online メールボックスに保存されるため、メールボックスが別のアイテム保持ポリシー、訴訟ホールド、または遅延ホールドの影響を受ける場合、または電子情報開示ホールドが法的または調査上の理由によりメールボックスに適用される場合には、SubstrateHolds フォルダーからの完全な削除は常に中断されます。
 >
 > メールボックスは該当するホールド リストに含まれる一方で、削除された Teams のチャットおよびチャネル メッセージは Teams アプリに表示されなくなりますが、電子情報開示では引き続き検出できます。
 
@@ -206,7 +206,7 @@ Skype for Business のチャットが Teams に届くと、Teams のチャット
 
 ## <a name="when-a-user-leaves-the-organization"></a>ユーザーが組織を離れる場合 
 
-Exchange Online のメールボックスを持っているユーザーが組織を離れ、そのユーザーの Microsoft 365 アカウントが削除された場合、保持の対象となるチャット メッセージは、非アクティブなメールボックスに保存されます。 チャット メッセージは、引き続きメールボックスが非アクティブになる前にユーザーに配置されたアイテム保持ポリシーの適用対象となり、電子情報開示の検索が可能です。 詳細については、「[Exchange Online の非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)」を参照してください。 
+Exchange Online のメールボックスを持っているユーザーが組織を離れ、そのユーザーの Microsoft 365 アカウントが削除された場合、保持の対象となるチャット メッセージは、非アクティブなメールボックスに保存されます。 チャット メッセージは、引き続きメールボックスが非アクティブになる前にユーザーに配置されたアイテム保持ポリシーの適用対象となり、電子情報開示の検索が可能です。 詳細については、「[非アクティブ メールボックスの詳細](inactive-mailboxes-in-office-365.md)」を参照してください。 
 
 ユーザーが Teams にファイルを保存している場合は、SharePoint と OneDrive の[同等のセクション](retention-policies-sharepoint.md#when-a-user-leaves-the-organization)を参照してください。
 
