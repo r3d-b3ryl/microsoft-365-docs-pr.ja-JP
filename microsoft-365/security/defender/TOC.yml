@@ -332,6 +332,12 @@
           items:
             - name: 概要
               href: defenderexpertsforhuntingprev.md
+        - name: ランサムウェア プレイブック
+          items:
+            - name: Microsoft 365 Defender による人間によるランサムウェア攻撃の検出
+              href: playbook-detecting-ransomware-m365-defender.md
+            - name: ランサムウェア攻撃への対応
+              href: playbook-responding-ransomware-m365-defender.md
     - name: セキュリティ運用ガイド
       items:
         - name: 概要
