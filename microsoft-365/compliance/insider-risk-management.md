@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 86a56ec16f81eaa6b61a452829e65251b673cb78
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9b2897a242f7dbbf9af9c9f3b639c0b91623fa25
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599257"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810618"
 ---
 # <a name="learn-about-insider-risk-management"></a>インサイダー リスク管理の詳細
 
@@ -43,6 +43,8 @@ Microsoft Purview インサイダー リスク管理は、組織内の悪意の�
 
 **Insider リスク管理ワークフロー**:
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+組織内のユーザーからのデータ リスクを最小限に抑えるために、インサイダー リスク管理とコミュニケーション コンプライアンスがどのように連携するかについては [、Microsoft Mechanics のビデオ](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) をご覧ください。
 
 > [!IMPORTANT]
 > インサイダー リスク管理は、現在、Azure サービスの依存関係でサポートされている地理的リージョンと国でホストされているテナントで利用できます。 組織でインサイダー リスク管理がサポートされていることを確認するには、 [国/地域ごとの Azure 依存関係の可用性](/troubleshoot/azure/general/dependency-availability-by-country)に関するページを参照してください。
@@ -141,7 +143,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 さらに、新しい [監査ログ (プレビュー)](insider-risk-management-audit-log.md) を使用すると、インサイダー リスク管理機能で実行されたアクションについて常に情報を得られます。 このリソースを使用すると、1 つ以上のインサイダー リスク管理ロール グループに割り当てられたユーザーが実行したアクションを独立して確認できます。
 
-### <a name="action"></a>アクション
+### <a name="action"></a>Action
 
 ケースを調査した後、レビュー担当者は、ケースを解決したり、組織内の他のリスク関係者と共同作業したりするために迅速に行動できます。 ユーザーが誤って、または誤ってポリシー条件に違反した場合は、組織用にカスタマイズできる通知テンプレートから簡単なリマインダー通知をユーザーに送信できます。 これらの通知は、簡単なリマインダーとして機能する場合や、将来の危険な動作を防ぐためにトレーニングやガイダンスを更新するようユーザーに指示する場合があります。 詳細については、「[インサイダー リスク管理通知テンプレート](insider-risk-management-notices.md)」をご覧ください。
 

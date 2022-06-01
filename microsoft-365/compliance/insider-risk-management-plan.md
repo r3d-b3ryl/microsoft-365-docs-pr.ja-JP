@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ad69d525ac8cf105761286c59e8bce54d446ae8f
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599593"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810924"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
 
@@ -33,6 +33,8 @@ ms.locfileid: "65599593"
 <br>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OUXB]
+
+組織内のユーザーからのデータ リスクを最小限に抑えるために、インサイダー リスク管理とコミュニケーション コンプライアンスがどのように連携するかについては [、Microsoft Mechanics のビデオ](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) をご覧ください。
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>組織内の利害関係者と連携する
 
@@ -57,20 +59,20 @@ ms.locfileid: "65599593"
 
 インサイダー リスク管理を使用する場合は、次のロール グループのオプションとソリューション アクションから選択します。
 
-|**アクション**|**インサイダー リスクの管理**|**Insider Risk Management 管理者**|**インサイダー リスク管理アナリスト**|**インサイダー リスク管理調査担当者**|**Insider Risk Management Auditors**|
+|**アクション**|**インサイダー リスクの管理**|**Insider Risk Management 管理**|**インサイダー リスク管理アナリスト**|**インサイダー リスク管理調査担当者**|**Insider Risk Management Auditors**|
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| ポリシーと設定を構成する | はい | はい | 不要 | 不要 | 不要 |
+| ポリシーと設定を構成する | はい | はい | 不要 | いいえ | 不要 |
 | 分析分析情報にアクセスする | はい | はい | はい | 不要 | 不要 |
 | アラートを調査&アクセスする | はい | 不要 | はい | はい | 不要 |
 | アクセス&ケースを調査する | はい | 不要 | はい | はい | 不要 |
-| コンテンツ エクスプローラー&表示する | はい | 不要 | 不要 | はい | 不要 |
+| コンテンツ エクスプローラー&表示する | はい | 不要 | いいえ | はい | 不要 |
 | 通知テンプレートを構成する | はい | 不要 | はい | はい | 不要 |
-| 監査ログのエクスポート&表示する | はい | 不要 | 不要 | 不要 | はい |
+| 監査ログのエクスポート&表示する | はい | 不要 | 不要 | いいえ | はい |
 
 >[!IMPORTANT]
->特定のユーザーが組織を離れた場合に *インサイダー リスク管理* の構成が "ゼロ管理者" シナリオに入らないように、必ず Insider Risk Management または *Insider Risk Management 管理者* ロール グループに少なくとも 1 人のユーザーが含まれていることを確認します (選択したオプションに応じて)。
+>Insider *Risk Management* または *Insider Risk Management 管理* ロール グループに少なくとも 1 人のユーザーが常に存在することを確認します (選択したオプションに応じて)。 特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が "ゼロ管理者" シナリオに入らないようにします。
 
-次のロールのメンバーは、インサイダー リスク管理ロール グループにユーザーを割り当て、 *Insider Risk Management 管理者* ロール グループに含まれる同じソリューションアクセス許可を持つことができます。
+次のロールのメンバーは、インサイダー リスク管理ロール グループにユーザーを割り当て、*Insider Risk Management 管理* ロール グループに含まれる同じソリューションアクセス許可を持つことができます。
 
 - Azure Active Directory *グローバル管理者*
 - Azure Active Directory *コンプライアンス管理者*

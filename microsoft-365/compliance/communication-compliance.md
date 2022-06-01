@@ -21,12 +21,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 09135faa505aa2d5b95003cc7321a38a0eaddaf3
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 36d3ca7d820d31843df535eddd6c253d0c1f951e
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599213"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810946"
 ---
 # <a name="learn-about-communication-compliance"></a>通信コンプライアンスの詳細
 
@@ -57,6 +57,8 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 コミュニケーション コンプライアンスの概要については、[Microsoft Mechanics チャネル](https://www.youtube.com/user/OfficeGarageSeries)の[「職場での嫌がらせを検出し、コミュニケーション コンプライアンスに関する](https://youtu.be/z33ji7a7Zho)ビデオで対応する」を参照してください。
 
 [TD 証券が通信コンプライアンスを使用して](https://customers.microsoft.com/story/1391545301764211731-td-securities-banking-capital-markets-compliance)規制上の義務に対処し、セキュリティと安定性のニーズを満たしている方法を確認します。
+
+組織内のユーザーからのデータ リスクを最小限に抑えるために、インサイダー リスク管理とコミュニケーション コンプライアンスがどのように連携するかについては [、Microsoft Mechanics のビデオ](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) をご覧ください。
 
 最新の通信コンプライアンス更新プログラムに対応するには、組織の [コミュニケーション コンプライアンス](https://compliance.microsoft.com/)**の新機能** を選択します。
 

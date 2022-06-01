@@ -12,7 +12,7 @@
       items:
         - name: 概要
           href: testoverview.md
-        - name: テスト ベースでバイナリ ファイルをテストする
+        - name: テスト ベースでのバイナリ ファイルの作成とテスト
           href: testapplication.md
         - name: Test Base でIntune アプリをテストする
           href: testintuneapplication.md

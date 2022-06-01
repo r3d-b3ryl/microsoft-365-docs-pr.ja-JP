@@ -18,12 +18,12 @@ localization_priority: Normal
 f1.keywords: NOCSH
 recommendations: false
 description: Teamsのゲスト コラボレーションと共有チャネルの違いと、使用するチャネルを選択する方法について説明します。
-ms.openlocfilehash: 09948b49d0c4f3e21d03c1e3994e4dd2d609ed13
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3a6bc5c7f0b07208e3543bfab9d1d5f0d51fc225
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65465784"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65811006"
 ---
 # <a name="plan-external-collaboration-with-channel-conversations-file-collaboration-and-shared-apps"></a>チャネル会話、ファイル コラボレーション、共有アプリを使用して外部コラボレーションを計画する
 
@@ -130,7 +130,7 @@ IP ベースのポリシーは、SharePoint ファイル レベルでサポー�
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-ホスト組織で使用できる[秘密度ラベル](/microsoft-365/compliance/sensitivity-labels)は、共有チャネル サイトのドキュメントに適用できる唯一のラベルです。 秘密度ラベルによって暗号化されたファイルは、外部参加者が開くことはできません。 自動ラベル付けは使用されません。
+ホスト組織で使用できる[秘密度ラベル](/microsoft-365/compliance/sensitivity-labels)は、共有チャネル サイトのドキュメントに適用できる唯一のラベルです。 秘密度ラベルによって暗号化されたファイルは、アクセス許可が付与されていない限り、外部参加者が開くことはできません。 自動ラベル付けは使用されません。
 
 共有チャネルとそれに関連付けられているSharePoint サイトは、親チームからラベルを継承します。
 

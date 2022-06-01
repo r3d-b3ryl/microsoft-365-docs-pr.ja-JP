@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 22e5ed11c97ed00449cb62439e105bd1e6dc78e7
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 2f9d3ae0bc7a07d515b80d7e98140e91d29db342
+ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599549"
+ms.lasthandoff: 06/01/2022
+ms.locfileid: "65810814"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 
@@ -33,6 +33,8 @@ ms.locfileid: "65599549"
 組織で [コミュニケーション コンプライアンス](communication-compliance.md) を開始する前に、情報テクノロジとコンプライアンス管理チームが確認する必要がある重要な計画アクティビティと考慮事項があります。 次の領域での展開を十分に理解し、計画することで、通信コンプライアンス機能の実装と使用が円滑に進み、ソリューションのベスト プラクティスと一致することが保証されます。
 
 組織内のコンプライアンスと危険なアクティビティに対処するための計画プロセスの詳細と概要については、「 [インサイダー リスク管理プログラムの開始](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf)」を参照してください。
+
+また、組織内のユーザーからのデータ リスクを最小限に抑えるために、内部関係者のリスク管理とコミュニケーション コンプライアンスがどのように連携しているかを [Microsoft Mechanics のビデオ](https://www.youtube.com/watch?v=Ynkfu8OF0wQ) で確認することもできます。
 
 > [!IMPORTANT]
 > 現在、通信コンプライアンスは、Azure サービスの依存関係でサポートされている地理的リージョンと国でホストされているテナントで利用できます。 組織で通信コンプライアンスがサポートされていることを確認するには、 [国/地域ごとの Azure 依存関係の可用性](/troubleshoot/azure/general/dependency-availability-by-country)に関するページを参照してください。
@@ -74,9 +76,9 @@ Microsoft Purview コンプライアンス ポータルの定期的な周期で�
 - Microsoft Purview コンプライアンス ポータル [*組織管理*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)役割グループ
 - Microsoft Purview コンプライアンス ポータル [*コンプライアンス管理者*](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)の役割グループ
 - *コミュニケーション コンプライアンス* の役割グループ
-- *コミュニケーション コンプライアンス管理者* の役割グループ
+- *コミュニケーション コンプライアンス管理* 役割グループ
 
-次のロールのメンバーには、 *Communication Compliance Admin* ロール グループに含まれるソリューションのアクセス許可が同じです。
+次のロールのメンバーには、*Communication Compliance 管理* ロール グループに含まれるのと同じソリューションアクセス許可があります。
 
 - Azure Active Directory *グローバル管理者*
 - Azure Active Directory *コンプライアンス管理者*
@@ -84,7 +86,7 @@ Microsoft Purview コンプライアンス ポータルの定期的な周期で�
 - Microsoft Purview コンプライアンス ポータル *コンプライアンス管理者*
 
 > [!IMPORTANT]
-> 特定のユーザーが組織を離れた場合に *、コミュニケーション コンプライアンス* 構成が "ゼロ管理者" シナリオに入らないように、常にコミュニケーション コンプライアンスまたは *コミュニケーション コンプライアンス管理者* ロール グループに少なくとも 1 人のユーザーが含まれていることを確認します (選択したオプションに応じて)。
+> コミュニケーション コンプライアンスまたは *コミュニケーション コンプライアンス 管理* ロール グループに少なくとも 1  人のユーザーが含まれていることを確認します (選択したオプションに応じて)。 特定のユーザーが組織を離れた場合、コミュニケーション コンプライアンス構成が "ゼロ管理者" シナリオに入らないようにします。
 
 通信コンプライアンス ポリシーとアラートを管理する方法に応じて、ユーザーを特定の役割グループに割り当てて、さまざまな通信コンプライアンス機能のセットを管理する必要があります。 コンプライアンスの責任が異なるユーザーに特定のロール グループを割り当てて、コミュニケーション コンプライアンス機能のさまざまな領域を管理するオプションがあります。 または、指定された管理者、アナリスト、調査担当者、および閲覧者のすべてのユーザー アカウントを、*コミュニケーション コンプライアンス* ロール グループに割り当ててもよいでしょう。 コンプライアンス管理の要件に最適な 1 つのロール グループまたは複数のロール グループを使用します。
 
