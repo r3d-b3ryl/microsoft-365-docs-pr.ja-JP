@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、毎月Microsoft 365 Lighthouseで追加、変更、および修正された内容を確認します。
-ms.openlocfilehash: 917c9bcf3629385d1440acc5205507b378da274b
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 8c054539b5a19e3259ca20a2044f498a3c8e31eb
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840515"
+ms.locfileid: "65842275"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの新機能
 
@@ -53,7 +53,7 @@ Microsoft 365 Lighthouse[に新機能](m365-lighthouse-overview.md)を継続的�
 
 ### <a name="windows-365-business-integration-and-management-actions"></a>Windows 365 Business統合アクションと管理アクション
 
-ユーザーからのフィードバックに基づいて、Windows 365 Business エディションをMicrosoft 365 Lighthouseに統合しました。 これにより、すべての顧客のクラウド PC を 1 か所から管理および監視できます。 
+ユーザーからのフィードバックに基づいて、Windows 365 BusinessをMicrosoft 365 Lighthouseに統合しました。 これにより、すべての顧客のクラウド PC を 1 つの場所から管理および監視できます。 
 
 Microsoft 365 LighthouseでWindows 365 Businessクラウド PC と統合するだけでなく、次の管理アクションを実行できるようになりました。
 
@@ -71,7 +71,7 @@ Microsoft 365 Lighthouseが一般公開されたので、現在のパートナ�
 
 ### <a name="granular-delegated-access-permissions-gdap-roles"></a>詳細な委任アクセス許可 (GDAP) ロール
 
-Microsoft 365 Lighthouse、MSP が詳細な委任アクセス許可 (GDAP) ロールを使用する機能が含まれるようになりました。 最新の更新プログラムにより、MSP は、Microsoft 365 Lighthouseでの最小限の特権アクセスの原則を有効にする技術者に対して GDAP ロールを活用できます。 この機能により、各技術者が操作できる顧客のデータと設定を細かく制御できるため、管理 エージェントの委任アクセス許可 (DAP) ロールの広範なアクセス許可に固有のリスクが軽減されます。
+Microsoft 365 Lighthouse、MSP が詳細委任された管理特権 (GDAP) ロールを使用する機能が含まれるようになりました。 最新の更新プログラムにより、MSP は、Microsoft 365 Lighthouseでの最小限の特権アクセスの原則を有効にする技術者に対して GDAP ロールを活用できます。 この機能により、各技術者が操作できる顧客のデータと設定を細かく制御できるため、管理 エージェントの委任アクセス許可 (DAP) ロールの広範なアクセス許可に固有のリスクが軽減されます。
 
 Microsoft 365 Lighthouseの GDAP の詳細については、「[ポータル セキュリティMicrosoft 365 Lighthouse構成する](m365-lighthouse-configure-portal-security.md)」を参照してください。
 
@@ -83,11 +83,11 @@ Microsoft 365 Lighthouseの GDAP の詳細については、「[ポータル セ
 
 Microsoft 365 Lighthouse、条件付きアクセス ポリシーを使用して、展開手順のテナント構成をテストできるようになりました。  
 
-この新しい機能は、管理するテナント内の既存のポリシーを検出し、展開計画と比較することで機能します。 Microsoft 365 Lighthouseは、デプロイ 手順と展開手順プロセスの状態指定を提供し、どの展開プロセスが既に完了しているか、どのプロセスに対処する必要があるか、展開計画で規定されている設定が、既存のポリシーに含まれる設定と等しいか、不足しているか、競合しているかについて理解するのに役立ちます。 この情報を知ることで、ポリシーの競合の特定、優先順位付け、解決が迅速かつ簡単になり、より効果的になります。
+この新機能は、管理する顧客テナント内の既存のポリシーを検出し、展開計画と比較します。 Microsoft 365 Lighthouseは、デプロイ 手順と展開手順プロセスの状態指定を提供し、どの展開プロセスが既に完了しているか、どのプロセスに対処する必要があるか、展開計画で規定されている設定が、既存のポリシーに含まれる設定と等しいか、不足しているか、競合しているかについて理解するのに役立ちます。 この情報を知ることで、ポリシーの競合の特定、優先順位付け、解決が迅速かつ簡単になり、より効果的になります。
 
 ### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Microsoft Defender ファイアウォールを構成する展開手順
 
-Microsoft 365 Lighthouse、既定のベースラインに [Microsoft Defender ファイアウォール展開の構成] ステップが追加されました。 この手順は、WINDOWS 10 (以降) デバイスの既定のファイアウォール構成を使用して、MSP がテナントのデバイスをセキュリティで保護するのに役立ちます。 Microsoft Defender ファイアウォールは、テナントのデバイスに出入りする未承認のネットワーク トラフィックをブロックし、ネットワーク セキュリティの脅威のリスクを軽減します。 Microsoft Defender ファイアウォール ルール機能は現在開発中です。
+Microsoft 365 Lighthouse、既定のベースラインに [Microsoft Defender ファイアウォール展開の構成] ステップが追加されました。 この手順は、MSP がWindows 10 (以降) デバイスの既定のファイアウォール構成を使用して顧客テナント デバイスをセキュリティで保護するのに役立ちます。 Microsoft Defender ファイアウォールは、顧客のテナント デバイスに出入りする未承認のネットワーク トラフィックをブロックし、ネットワーク セキュリティの脅威のリスクを軽減します。 Microsoft Defender ファイアウォール ルール機能は現在開発中です。
 
 Microsoft Defender ファイアウォールは、Windows 10 (以降) デバイスでは既定でオンになっています。 顧客テナントにこの構成がない場合は、次の手順に従います。
 
@@ -104,17 +104,17 @@ Microsoft Defender ファイアウォールは、Windows 10 (以降) デバイ�
 
 ### <a name="support-for-advisor-customers"></a>アドバイザーのお客様のサポート
 
-オンボーディング要件を変更し、アドバイザーリレーションシップを持つ既存の顧客テナントをMicrosoft 365 Lighthouseにオンボードできるようにしました。 代理アクセス許可の要件を満たし、必要なライセンスを持ち、最大ユーザー数を超えない場合、リセラーとアドバイザーの両方の契約をお持ちのお客様は、Microsoft 365 Lighthouseに参加できます。
+アドバイザーリレーションシップを持つ既存の顧客テナントをMicrosoft 365 Lighthouseにオンボードできるように、オンボード要件を変更しました。 代理アクセス許可の要件を満たし、必要なライセンスを持ち、最大ユーザー数を超えない場合、リセラーとアドバイザーの両方の契約をお持ちのお客様は、Microsoft 365 Lighthouseに参加できます。
 
 詳細については、「[Microsoft 365 Lighthouseの要件」を](m365-lighthouse-requirements.md)参照してください。
 
 ## <a name="january-2022"></a>2022 年 1 月
 
-### <a name="capability-to-review-audit-logs-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで監査ログを確認する機能
+### <a name="capability-to-view-audit-logs-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで監査ログを表示する機能
 
-Microsoft 365 Lighthouse監査ログを確認する機能が含まれるようになりました。 過去のアクションを確認して、修復、プロセスとセキュリティの調査をサポートし、従業員をトレーニングし、コンプライアンスと監査の要件を満たすための不適切な構成と危険なアクションを見つけることができます。 最新の更新プログラムを使用すると、次のことができます。
+Microsoft 365 Lighthouse監査ログを表示する機能が含まれるようになりました。 過去のアクションを確認して、修復、プロセスとセキュリティの調査をサポートし、従業員をトレーニングし、コンプライアンスと監査の要件を満たすための不適切な構成と危険なアクションを見つけることができます。 最新の更新プログラムを使用すると、次のことができます。
 
-- 監査ログを表示して、顧客テナントの変更を含め、Microsoft 365 Lighthouse内で実行されたすべてのアクションを確認します。
+- 監査ログを表示して、顧客テナントの変更、変更日時、変更者など、Microsoft 365 Lighthouse内で実行されたすべてのアクションを確認します。
 - 監査ログを検索してフィルター処理して、特定の情報を検索します。
 - ログを分析して保持できるようにログをエクスポートします。
  
@@ -124,7 +124,7 @@ Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで、[
 
 ### <a name="microsoft-365-services-usage-data"></a>サービスの使用状況データをMicrosoft 365する
 
-Microsoft 365 Lighthouseから、Microsoft 365 サービスの使用状況データを表示できるようになりました。 お客様がMicrosoft 365 サービスを使用する方法を理解することは、IT 投資を最大限に活用するために不可欠です。 複数のリソースを使用して、顧客のさまざまな生産性、セキュリティ、コンプライアンス サービス全体の情報を表示する代わりに、それらを 1 つのシンプルで強力なビューに集約Microsoft 365 Lighthouse。  
+Microsoft 365 Lighthouse内から、Microsoft 365 サービスの使用状況データを表示できるようになりました。 お客様がMicrosoft 365 サービスを使用する方法を理解することは、IT 投資を最大限に活用するために不可欠です。 複数のリソースを使用して、顧客のさまざまな生産性、セキュリティ、コンプライアンス サービス全体の情報を表示する代わりに、それらを 1 つのシンプルで強力なビューに集約Microsoft 365 Lighthouse。  
 
 これらの分析情報は、ユーザーが積極的に使用するサービスと、セキュリティや生産性を向上させる機会がある可能性がある場所を理解できるように支援することで、顧客のエンゲージメントを通知し、顧客により多くの価値を提供するのに役立ちます。 
 
@@ -154,13 +154,13 @@ Microsoft 365 Lighthouse内からユーザーのリスクの理由を簡単に�
 
 ### <a name="capability-to-provide-feedback-on-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseに関するフィードバックを提供する機能
 
-お客様のフィードバックは重要であり、重要であるため、フィードバックの提供を求める新しいフィードバック機能が追加されました。この機能は、(月に 1 回を超えない) 場合があります。 Microsoft 365 Lighthouseの右上隅にある [フィードバック] アイコンを選択して、いつでもフィードバックを提供することもできます。
+お客様のフィードバックは重要であり、重要であるため、フィードバックの提供を求める新しいフィードバック機能が追加されました。この機能は、(月に 1 回を超えない) 場合があります。 Microsoft 365 Lighthouseの右上隅にあるフィードバック アイコンを選択して、いつでもフィードバックを提供することもできます。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
 ### <a name="tenant-filter-changes"></a>テナント フィルターの変更
 
-Microsoft 365 Lighthouse内の任意のページからテナントとタグをすばやく表示および管理できるように、テナント フィルター 処理エクスペリエンスにいくつかの変更を加えています。 任意のページの上部にある [テナント] フィルターを選択し、フィルター処理するテナントまたはタグ名を参照または入力します。
+Microsoft 365 Lighthouse内の任意のページからテナントとタグをすばやく表示および管理できるように、テナント フィルター 処理エクスペリエンスにいくつかの変更を加えています。 任意のページの上部にある **[テナント** ] フィルターを選択し、フィルター処理するテナントまたはタグ名を参照または入力します。
 
 ## <a name="august-2021"></a>2021 年 8 月
 
@@ -194,7 +194,7 @@ Microsoft 365 Lighthouse内の任意のページからテナントとタグを�
 
 ### <a name="baselines-to-standardize-your-customer-tenant-deployments"></a>顧客テナントのデプロイを標準化するためのベースライン
 
-新しいベースライン機能を使用して、顧客テナントのユーザー、デバイス、およびデータのセキュリティ保護に関連する標準構成をデプロイできるようになりました。 既定のベースラインには、現在、次のデプロイ手順が含まれています (近日公開予定)。 
+新しいベースライン機能を使用すると、標準構成をデプロイして、顧客テナント内のユーザー、デバイス、データをセキュリティで保護できるようになりました。 既定のベースラインには、現在、次のデプロイ手順が含まれています (近日公開予定)。 
 
 - 管理者に MFA を要求する 
 - ユーザーに MFA を要求する 

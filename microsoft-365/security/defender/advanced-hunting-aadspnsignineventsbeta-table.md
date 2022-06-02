@@ -1,7 +1,6 @@
 ---
 title: 高度なハンティング スキーマの AADSpnSignInEventsBeta テーブル
 description: Azure Active Directoryのサービス プリンシパルとマネージド ID のサインイン イベント テーブルに関連付けられている情報について説明します。
-keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, AlertInfo, アラート, エンティティ, 証拠, ファイル, IP アドレス, デバイス, マシン, ユーザー, アカウント, ID, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 77cf2d7b74dfc4ccea88661642579f5244e14089
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: b1b9d6405abdddea42652cfd4c532df91eeb6b30
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62073679"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842216"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -31,7 +30,7 @@ ms.locfileid: "62073679"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> この`AADSpnSignInEventsBeta`テーブルは現在ベータ版であり、Azure Active Directory (AAD) のサインイン イベントを確認できるように、短期的に提供されています。 このテーブルのアクティビティを収集して表示するには、Azure Active Directory Premium P2 ライセンスが必要です。 Microsoft は最終的にすべてのサインイン スキーマ情報をテーブルに `IdentityLogonEvents` 移動します。
+> この`AADSpnSignInEventsBeta`テーブルは現在ベータ版であり、Azure Active Directory (AAD) サインイン イベントを探索できるように、短期的に提供されています。 このテーブルのアクティビティを収集して表示するには、Azure Active Directory Premium P2 ライセンスが必要です。 Microsoft は最終的にすべてのサインイン スキーマ情報をテーブルに `IdentityLogonEvents` 移動します。
 
 `AADSpnSignInEventsBeta`高度なハンティング スキーマの表には、Azure Active Directoryサービス プリンシパルとマネージド ID サインインに関する情報が含まれています。さまざまな種類のサインインの詳細については、[サインイン アクティビティ レポートのプレビュー Azure Active Directory参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
 

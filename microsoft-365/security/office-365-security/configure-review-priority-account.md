@@ -17,16 +17,16 @@ ms.custom: ''
 description: 組織内の重要なユーザーを識別し、優先度の高いアカウント タグを追加して、追加の保護を提供する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc37f1efa5eb633bc3b1b711302f9393d655a339
-ms.sourcegitcommit: dba1a846ae78ea14240d28efa8d4934fe303f308
+ms.openlocfilehash: 7f240dd7f4679710859ffdeaccc6e935fa5f64e7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/16/2022
-ms.locfileid: "64891843"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842343"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365で優先度アカウントを構成して確認する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -52,7 +52,7 @@ ms.locfileid: "64891843"
 
 ### <a name="enable-the-priority-account-tag"></a>優先度アカウント タグを有効にする
 
-Microsoft Defender for Office 365は、アラート、レポート、および調査のフィルターとして使用できるタグとして優先度アカウントをサポートしています。
+Microsoft Defender for Office 365は、アラート、レポート、インシデントなどのフィルターとして使用できるタグとして優先度アカウントをサポートしています。
 
 詳細については、「[Microsoft Defender for Office 365 のユーザー タグ](user-tags.md)」を参照してください。
 
@@ -60,9 +60,17 @@ Microsoft Defender for Office 365は、アラート、レポート、および�
 
 優先度アカウント保護の影響は、次の機能に表示されます。
 
-- [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)。
-- [脅威エクスプローラー](threat-explorer.md)
-- [[電子メール エンティティ] ページ](mdo-email-entity-page.md)
+- [アラート](alerts.md)
+- [カスタム アラート ポリシー](../../compliance/alert-policies.md#viewing-alerts)
+- [脅威エクスプローラーとリアルタイム検出](threat-explorer.md)
+- [侵害されたユーザー レポート](view-email-security-reports.md#compromised-users-report)
+- [[メール エンティティ] ページ](mdo-email-entity-page.md#other-innovations)
+- [脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)
+- [上位の送信者と受信者のレポート](view-email-security-reports.md#top-senders-and-recipients-report)
+- [攻撃シミュレーション](attack-simulation-training.md#target-users)
+- [キャンペーン ビュー](campaigns.md)
+- [管理とユーザーの申請](admin-submission.md)
+- [検疫](quarantine.md)
 
 ### <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
@@ -102,7 +110,7 @@ Microsoft Defender for Office 365は、アラート、レポート、および�
 
 エンティティ ページの上部にあるタブを使用すると、電子メールを効率的に調査できます。 [ **分析** ] タブをクリックします。[脅威 **の検出の詳細**] に[優先度のアカウント保護]が表示されるようになりました。
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 - [Microsoft Defender for Office 365のユーザー タグ](user-tags.md)
 - [優先アカウントを管理および監視する](../../admin/setup/priority-accounts.md)

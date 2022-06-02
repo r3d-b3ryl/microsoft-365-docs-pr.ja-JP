@@ -1,5 +1,5 @@
 ---
-title: Exchange Online 管理者の役割について
+title: Exchange管理者ロールについて
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -21,23 +21,24 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: Exchange Online管理者は、組織の電子メールとメールボックスを管理し、たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
-ms.openlocfilehash: 048a435a515c4f88eb688a2cfaf13006e859741c
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Exchange管理者は、組織の電子メールとメールボックスを管理し、たとえば、ユーザーのメールボックス内の削除済みアイテムを回復します。
+ms.openlocfilehash: 375e2d6a1bf08ab310da28233deaf5dbbbae9be7
+ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65467100"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65842259"
 ---
-# <a name="about-the-exchange-online-admin-role"></a>Exchange Online 管理者の役割について
+# <a name="about-the-exchange-administrator-role"></a>Exchange管理者ロールについて
 
-Microsoft 365を管理するために、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>から組織のメールとメールボックスを管理するためのアクセス許可をユーザーに[割り当てることができます](assign-admin-roles.md)。 それには、対象のユーザーを Exchange 管理者の役割に割り当てます。
+Microsoft 365を管理するために、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>から組織のメールとメールボックスを管理するためのアクセス許可をユーザーに[割り当てることができます](assign-admin-roles.md)。 これを行うには、Exchange管理者ロールに割り当てます。
   
- **ヒント**:ユーザーを Exchange 管理者の役割に割り当てる場合は、そのユーザーをサービス管理者の役割にも割り当てます。 これにより、ユーザーは Microsoft 365 管理センター での重要な情報 (Exchange Online サービスの正常性など) の確認や、通知内容の変更および通知のリリースを行うことができます。
+> [!TIP]
+> Exchange管理者ロールにユーザーを割り当てる場合は、サービス サポート管理者ロールに割り当てることをお勧めします。 これにより、ユーザーは Microsoft 365 管理センター での重要な情報 (Exchange Online サービスの正常性など) の確認や、通知内容の変更および通知のリリースを行うことができます。
 
-Exchange 管理者の役割を割り当てられた場合にユーザーが実行できる重要なタスクのいくつかを次に説明します。
+ユーザーがExchange管理者ロールに割り当てられたときに実行できる主なタスクの一部を次に示します。
   
-- [ユーザーのメールボックスで削除されたアイテムを復元する](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
+- [ユーザーのメールボックスで削除済みアイテムを復元する - 管理者ヘルプ](/Exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
 - [組織内のメールボックスのアーカイブポリシーと削除ポリシーを設定します](../../compliance/set-up-an-archive-and-deletion-policy-for-mailboxes.md)。
 
