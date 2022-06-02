@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4c3464a3aec242bd098503ac5bca997943ac2a4a
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 296b977452802d8e1ed8949cf6a8871cac171f3a
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074572"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839996"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>デバイスごとのソフトウェア インベントリ評価をエクスポートする
 
@@ -29,6 +29,7 @@ ms.locfileid: "62074572"
 **適用対象:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -94,17 +95,17 @@ GET /api/machines/SoftwareInventoryByMachine
 :---|:---|:---|:---
 DeviceId|string|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
-DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。|[ "C:\\Program Files (x86)\\MicrosoftSilverlightApplication\\\\\\silverlight.exe" ]
+DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。|[ "C:\\Program Files (x86)\\Microsoft\\Silverlight\\アプリケーション\\silverlight.exe" ]
 EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。|2020-12-30
 EndOfSupportStatus|string|サポートの終了状態。 次の値を含めることができます。None、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。|今後の EOS
 ID|string|レコードの一意の識別子。|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|このデバイス上のこのソフトウェアの弱点の数|3
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これらは、Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システムです。 詳細については、tvm でサポートされているオペレーティング システムとプラットフォームを参照してください。|Windows10 とWindows 11
 RbacGroupName|string|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。|サーバー
-RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\\SOFTWAREWOW6432NodeMicrosoft\\\\\\ Windows\\ CurrentVersionUninstallMicrosoft\\\\ Silverlight" ]
+RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\ Windows\\ CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp|string|このソフトウェアがデバイスで初めて表示された。|2019-04-07 02:06:47
 SoftwareName|string|ソフトウェア製品の名前。|Silverlight
-SoftwareVendor|string|ソフトウェア ベンダーの名前。|microsoft
+SoftwareVendor|string|ソフトウェア ベンダーの名前。|マイクロソフト
 SoftwareVersion|string|ソフトウェア製品のバージョン番号。|81.0.4044.138
 |
 
@@ -253,7 +254,7 @@ GET /api/machines/SoftwareInventoryExport
 
 プロパティ (ID)|データ型|説明|返された値の例
 :---|:---|:---|:---
-ファイルをエクスポートする|arraystring\[\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|string|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
 |
 

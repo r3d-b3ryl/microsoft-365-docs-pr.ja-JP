@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 計画 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学習できます。
 ms.technology: mdo
-ms.openlocfilehash: 08d86488f9575aad995752ca331b3cbbb31d07fe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8f6ef692885277368c7ca1c194116a4455f52b31
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739651"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839757"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートする
 
@@ -123,7 +123,7 @@ Microsoft Defender for Office 365計画 2 またはMicrosoft 365 E5の攻撃シ�
 
 名前をクリックして一覧からペイロードを選択すると、テスト ペイロードの ![送信アイコンが表示されます。](../../media/m365-cc-sc-create-icon.png) メイン ページに **[テストの送信**] ボタンが表示され、検査のためにペイロード電子メールのコピーを自分 (現在ログインしているユーザー) に送信できます。
 
-独自のペイロードを作成するには、[ペイロードの作成] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **ペイロードを作成します**。 詳細については、「 [攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する](attack-simulation-training-payloads.md)」を参照してください。
+独自のペイロードを作成するには、[ペイロードの作成] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **ペイロードを作成します**。 詳細については、「 [攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する](attack-simulation-training-payloads.md#create-payloads)」を参照してください。
 
 完了したら、**[次へ]** をクリックします。
 

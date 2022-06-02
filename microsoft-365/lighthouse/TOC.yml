@@ -1,10 +1,12 @@
 - name: Microsoft 365 Lighthouse
   items:
+    - name: Microsoft 365 Lighthouseの新機能
+      href: m365-lighthouse-whats-new.md
     - name: Microsoft 365 Lighthouseの概要
       href: m365-lighthouse-overview.md
     - name: Microsoft 365 Lighthouseの要件
       href: m365-lighthouse-requirements.md
-- name: 作業の開始
+- name: 概要
   items:
     - name: サインアップ
       href: m365-lighthouse-sign-up.md

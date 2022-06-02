@@ -19,16 +19,16 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Microsoft Defender for Office 365を持つ組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teamsで検疫されたファイルを管理することもできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df123916f5f15a8651ba8ad8dcbae95598afbfa8
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 3bd239231cc49684f8b07fb73f33265c9463bad4
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418064"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839801"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -195,11 +195,11 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
 
   - 同じ受信者にメッセージを複数回リリースすることはできません。
   - メッセージを受信していない受信者のみが、潜在的な受信者の一覧に表示されます。
-  - **セキュリティ管理者** ロール グループのメンバーのみが、**メッセージを Microsoft に送信して検出を向上 (誤検知)** し、**このようなメッセージを許可** するオプションを表示して使用できます。 
+  - **セキュリティ管理者** ロール グループのメンバーのみが、**メッセージを Microsoft に送信して検出を向上 (誤検知)** し、**このようなメッセージを許可** するオプションを表示して使用できます。
 
 - ![[共有メール] アイコン。](../../media/m365-cc-sc-share-email-icon.png) **メールを共有** する: 表示されるポップアップで、1 人以上の受信者を追加してメッセージのコピーを受け取ります。 完了したら、[ **共有**] をクリックします。
 
-![[その他のアクション] アイコン](../../media/m365-cc-sc-more-actions-icon.png)をクリックすると、次の操作を実行できます。**その他のアクション**:
+[その他のアクション] アイコンをクリック ![すると、次のアクションを使用できます。](../../media/m365-cc-sc-more-actions-icon.png) **その他のアクション**:
 
 - ![[メッセージ ヘッダーを表示] アイコン。](../../media/m365-cc-sc-view-message-headers-icon.png) **メッセージ ヘッダーを表示**: このリンクをクリックすると、メッセージ ヘッダー テキストが表示されます。 **メッセージ ヘッダー** ポップアップは、次のリンクと共に表示されます。
   - **メッセージ ヘッダーのコピー**: メッセージ ヘッダー (すべてのヘッダー フィールド) をクリップボードにコピーするには、このリンクをクリックします。

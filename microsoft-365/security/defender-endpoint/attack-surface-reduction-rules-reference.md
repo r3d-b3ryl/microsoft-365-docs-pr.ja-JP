@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: d719c83c8a6cc27ff682c17928c694184e3e94d6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30764562ebe60842f2824d7e313bec73e03f2ffa
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772514"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65838871"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -48,7 +48,7 @@ ms.locfileid: "65772514"
   - ルールの説明
   - 構成管理システムのルール名
 
-## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
+## <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
 次の表に、現在一般公開にリリースされているルールでサポートされているオペレーティング システムを示します。 この表には、規則のアルファベット順が一覧表示されます。
 
@@ -174,7 +174,7 @@ _警告モード_ は、危険な可能性があるアクションについて�
 
 [許可] ボタンをクリックすると、ブロックは 24 時間非表示になります。 24 時間後、エンド ユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809 以降) デバイスでのみサポートされます。 バイパスが古いバージョンのデバイスの ASR ルールに割り当てられている場合、ルールはブロック モードになります。
 
-また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 例として以下のようなものがあります。
+また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 次に例を示します。
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -199,7 +199,7 @@ _警告モード_ は、危険な可能性があるアクションについて�
 <!--The above link is the 'only link' that exists for having drivers examined. The 'en-us' component is required to make the link work. Any alterations to this link will result in a 404.
 -->
 
-Intune名: `Block abuse of exploited vulnerable signed drivers` (まだ使用できません)
+Intune名:`Block abuse of exploited vulnerable signed drivers`
 
 Configuration Manager名: まだ使用できません
   

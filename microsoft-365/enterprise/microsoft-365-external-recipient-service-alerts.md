@@ -3,7 +3,7 @@ title: 外部受信者サービス アラート
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: ''
+ms.date: 05/31/2022
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,13 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: 外部受信者サービス アラートを使用して、メールボックスクォータに達しているメールボックスを監視します。
-ms.openlocfilehash: 8db8e090ec5430f13153bc3edf5b3315c041d9cf
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ROBOTS: NOINDEX
+ms.openlocfilehash: 2eac85b5a4b6f0f1c7c8737041edc9de50b5a074
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568008"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840455"
 ---
 # <a name="service-alerts-for-messages-pending-delivery-to-external-recipients-in-exchange-online-monitoring"></a>Exchange Online監視で外部受信者への配信が保留されているメッセージに対するサービス アラート
 

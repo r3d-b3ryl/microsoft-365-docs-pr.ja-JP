@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8865bf2138947238980b533b8b47ee9663fd5448
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 955f11aa44bd0defb867c25124da7c5a3769c98d
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074536"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840119"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IP および URL/ドメインのインジケーターを作成
 
@@ -50,13 +50,14 @@ IPS、URL、またはドメインのインジケーターを作成する前に�
 
 - URL/IP の許可とブロックは、Defender for Endpoint コンポーネントの Network Protection をブロック モードで有効にする必要があります。 Network Protection と構成手順の詳細については、「 [ネットワーク保護を有効にする」を](enable-network-protection.md)参照してください。
 - マルウェア対策クライアントバージョンは、4.18.1906.x 以降である必要があります。 
-- Windows 10、バージョン 1709 以降、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019、Windows Server 2022 のマシンでサポートされます。
+- Windows 10、バージョン 1709 以降、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019、Windows Server 2022、Android およびデバイスをiOSします。
 
     > [!NOTE]
     > この機能を機能させるには、「オンボード Windows サーバー」の手順に従って[、Windows Server 2016とWindows Server 2012](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) R2 をオンボードする必要があります。
 
 - Microsoft 365 Defender **設定** \> **Advanced 機能****で** \> **カスタム ネットワーク インジケーター** が有効になっていることを確認します。 詳細については、「 [高度な機能」を](advanced-features.md)参照してください。
-- iOS でのインジケーターのサポートについては、「 [カスタム インジケーターの構成」を](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)参照してください。
+- iOSに関するインジケーターのサポートについては、[iOSのMicrosoft Defender for Endpointを](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)参照してください。
+- Androidのインジケーターのサポートについては、[AndroidのMicrosoft Defender for Endpointを](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators)参照してください。
 
 > [!IMPORTANT]
 > インジケーターの一覧に追加できるのは外部 IP のみです。 内部 IP に対してインジケーターを作成することはできません。

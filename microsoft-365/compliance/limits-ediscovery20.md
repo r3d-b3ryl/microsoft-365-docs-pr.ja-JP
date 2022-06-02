@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365の電子情報開示 (プレミアム) ソリューションで有効なケースの制限、インデックス作成の制限、検索制限について説明します。
-ms.openlocfilehash: 5b83cd578b8975dd0185fb2902357c2f0c201043
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0c288b1d30fa668446421db547e2595f3385cbb7
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772700"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839317"
 ---
 # <a name="limits-in-ediscovery-premium"></a>電子情報開示の制限 (プレミアム)
 
@@ -35,8 +35,8 @@ ms.locfileid: "65772700"
 
 |制限の説明|極限|
 |---|---|
-|ケースに追加できるドキュメントの合計数 (ケース内のすべてのレビュー セットの場合)。|300 万|
-|読み込みセットあたりの合計ファイル サイズ。 これには、レビュー セットへの非Office 365の読み込みが含まれます。|300 GB|
+|ケースに追加できるドキュメントの合計数 (ケース内のすべてのレビュー セットの場合)。|最大 4,000 万 (新しいケース形式)|
+|読み込みセットあたりの合計ファイル サイズ。 これには、レビュー セットへの非Office 365の読み込みが含まれます。|最大 1 TB (新しいケース形式)|
 |組織内のすべてのレビュー セットに 1 日に読み込まれたデータの合計量。<br/>|2 TB|
 |ケースあたりの最大読み込みセット数。|200|
 |ケースあたりのレビュー セットの最大数。|20|

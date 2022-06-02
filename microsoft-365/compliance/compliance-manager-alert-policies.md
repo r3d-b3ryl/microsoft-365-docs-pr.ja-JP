@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview Compliance Manager のアラートとアラート ポリシー
+title: コンプライアンス マネージャーのアラートとアラート ポリシーをMicrosoft Purviewする
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -17,15 +17,15 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview コンプライアンス マネージャーで、コンプライアンス スコアに影響を与える可能性があるアクティビティのアラートを作成する方法について説明します。
-ms.openlocfilehash: 32ab22f47d35d64fa72dcc4898f5fff06d20c13c
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+description: コンプライアンス スコアに影響を与える可能性があるMicrosoft Purviewコンプライアンス マネージャーでアクティビティのアラートを作成する方法について説明します。
+ms.openlocfilehash: c69e56c693a2994a93b1faccfe6f69fa317d8390
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231739"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839451"
 ---
-# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>Microsoft Purview Compliance Manager のアラートとアラート ポリシー
+# <a name="microsoft-purview-compliance-manager-alerts-and-alert-policies"></a>コンプライアンス マネージャーのアラートとアラート ポリシーをMicrosoft Purviewする
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -65,21 +65,21 @@ ms.locfileid: "65231739"
 
 ## <a name="alert-policy-permissions"></a>アラート ポリシーのアクセス許可
 
-次の表では、ロールの種類に基づいてアラートとアラート ポリシーを作成および編集できるユーザーの概要を示します。 コンプライアンス マネージャーロールを保持するだけでなく、ユーザーには次のようなAzure ADロールも必要です。
+次の表では、ロールの種類に基づいてアラートとアラート ポリシーを作成および編集できるユーザーの概要を示します。 コンプライアンス マネージャー ロールを保持するだけでなく、ユーザーには次のような Azure AD ロールも必要です。
 
-- アラートとアラート ポリシーを表示するためのAzure ADの **セキュリティ リーダー** ロール
-- アラート ポリシーを作成または更新するためのAzure ADの **セキュリティ管理者** ロール
+- アラートとアラート ポリシーを表示するには:Azure AD の **セキュリティ リーダー** ロール
+- アラート ポリシーを作成または更新するには:Azure AD の **コンプライアンス管理者**、 **コンプライアンス データ管理者**、 **セキュリティ管理者**、または **セキュリティ オペレーター** ロール
  
-[Microsoft Purview コンプライアンス ポータルで Azure ロールの](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal)詳細を確認します。
+[Microsoft Purview コンプライアンス ポータルの Azure ロール](microsoft-365-compliance-center-permissions.md#azure-roles-in-the-compliance-portal)の詳細について説明します。
 
 
-| 役割 | ポリシーを作成および編集できます | アラートを編集できる | 
+| ロール | ポリシーを作成および編集できます | アラートを編集できる | 
 | :------------- | :-------------: | :------------: |
 | **コンプライアンス マネージャー管理**| はい  | はい | 
 | **コンプライアンス マネージャー評価者**| はい | はい | 
-| **コンプライアンス マネージャーの投稿**| はい | はい | 
-| **グローバル管理者**| はい | はい  | 
-| **コンプライアンス マネージャー リーダー**| いいえ | いいえ | 
+| **コンプライアンス マネージャー投稿者**| はい | はい | 
+| **コンプライアンス マネージャー リーダー**| 不要 | 不要 | 
+| **全体管理者**| はい | はい | 
 
 [ユーザーのアクセス許可を設定し、コンプライアンス マネージャーのロールを割り当てる](compliance-manager-setup.md#set-user-permissions-and-assign-roles)方法について説明します。
 
@@ -105,7 +105,7 @@ ms.locfileid: "65231739"
 
 - これらのアラートの重大度レベルは **中です**。
 
-- 組織のグローバル管理者は、アラート通知の既定の受信者です。
+- 組織のグローバル 管理は、アラート通知の既定の受信者です。
 
 - 次の手順に従って、アラート受信者をさらに追加できます。
     - [ **アラート ポリシー** ] ページで、 **コンプライアンス マネージャーの既定のアラート ポリシー** を見つけます。

@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c10f454919afc725b37537aa354fed05b95cb571
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: fc2686b9ef6a30c9c81d7633ce8a59a0454d622d
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074476"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65838945"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティをエクスポートする
 
@@ -29,6 +29,7 @@ ms.locfileid: "62074476"
 **適用対象:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -94,7 +95,7 @@ timestamp|String|デバイスで最後に構成が表示された時刻。
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-ファイルをエクスポートする|arraystring\[\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
+ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
 GeneratedTime|String|エクスポートが生成された時刻。
 
 ## <a name="2-export-software-inventory-assessment"></a>2. ソフトウェア インベントリの評価をエクスポートする
@@ -131,7 +132,7 @@ SoftwareVersion|String|ソフトウェア製品のバージョン番号。
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-ファイルをエクスポートする|arraystring\[\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
+ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
 GeneratedTime|String|エクスポートが生成された時刻。
 
 ## <a name="3-export-software-vulnerabilities-assessment"></a>3. ソフトウェアの脆弱性評価をエクスポートする
@@ -154,7 +155,7 @@ CveId|String|共通の脆弱性と公開 (CVE) システムのセキュリティ
 CvssScore|String|CVE の CVSS スコア。
 DeviceId|String|サービス内のデバイスの一意の識別子。
 DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
-DiskPaths|Arraystring\[\]|製品がデバイスにインストールされていることを示すディスク証拠。
+DiskPaths|配列\[文字列\]|製品がデバイスにインストールされていることを示すディスク証拠。
 ExploitabilityLevel|String|この脆弱性の悪用可能性レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)
 FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて確認されたとき。
 Id|String|レコードの一意の識別子。
@@ -175,7 +176,7 @@ VulnerabilitySeverityLevel|String|CVSS スコアと脅威の状況の影響を�
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-ファイルをエクスポートする|arraystring\[\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
+ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
 GeneratedTime|String|エクスポートが生成された時刻。
 
 ### <a name="34-properties-delta-export-json-response"></a>3.4 プロパティ (delta export JSON response)

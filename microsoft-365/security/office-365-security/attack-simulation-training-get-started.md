@@ -20,16 +20,16 @@ ms.custom:
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5または計画 2 組織でシミュレートされたフィッシング攻撃とパスワード攻撃を実行Microsoft Defender for Office 365方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 255d0f40cd360f2b4b3e5084f84989bdbe643319
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 79c8db9a088484a56e559ab4c3e33d68ebf33380
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415620"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840147"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365で攻撃シミュレーション トレーニングを使用する概要
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
@@ -121,7 +121,7 @@ ms.locfileid: "65415620"
 
 ### <a name="create-a-payload"></a>ペイロードを作成する
 
-シミュレーション内で使用するペイロードを作成する方法の詳細な手順については、「 [攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する](attack-simulation-training-payloads.md)」を参照してください。
+シミュレーション内で使用するペイロードを作成する方法の詳細な手順については、「 [攻撃シミュレーション トレーニング用のカスタム ペイロードを作成する](attack-simulation-training-payloads.md#create-payloads)」を参照してください。
 
 ### <a name="gaining-insights"></a>分析情報を取得する
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: 571516a7112e3f145d9e3ca392ad3488a33b4887
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8856eade8e271c3b07ec61775c1f462e4b13bcff
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947827"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839877"
 ---
 # <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメント理解モデルとフォーム処理モデルの違い 
 
@@ -34,7 +34,7 @@ Microsoft SharePoint Syntex でのコンテンツの理解により、SharePoint
 どちらのモデルも一般的に同じ目的で使用されますが、以下に示す主な違いは、どちらを使用できるかに影響します。
 
 > [!NOTE]
-> フォーム処理とドキュメント理解シナリオの例の詳細については、「[SharePoint Syntex の導入: 概要](./adoption-getstarted.md)」を参照してください。
+> フォーム処理とドキュメントの理解シナリオの例の詳細については、[SharePoint Syntexの導入を促進する概要](./adoption-getstarted.md)を参照してください。
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>構造化コンテンツと非構造化コンテンツおよび半構造化コンテンツ
 
@@ -68,23 +68,23 @@ Microsoft SharePoint Syntex でのコンテンツの理解により、SharePoint
 
 現在、フォーム処理モデルは、モデルを作成した SharePoint ドキュメント ライブラリにのみ適用できます。 これにより、サイトにアクセスできるライセンス付与済みのユーザーは、フォーム処理モデルを作成できるようになります。 管理者は、SharePoint ドキュメントライブラリでフォーム処理を有効にして、ライセンス付与済みのユーザーが使用できるようにする必要があります。
 
-## <a name="comparison-of-forms-processing-and-document-understanding"></a>フォーム処理とドキュメント理解の比較
+## <a name="comparison-of-form-processing-and-document-understanding"></a>フォーム処理とドキュメントの理解の比較
 
-次の表を使用して、フォーム処理を使用するタイミングとドキュメント理解を使用するタイミングを理解してください。
+次の表を使用して、フォーム処理を使用するタイミングとドキュメントの理解を使用するタイミングを理解します。
 
-| 特徴 | フォーム処理 | ドキュメント理解 |
+| 機能 | フォーム処理 | ドキュメント理解 |
 | ------- | ------- | ------- |
-| モデルの種類 - それぞれをいつ使用するか | 半構造化ファイル形式に使用されます。たとえば、レイアウトと形式が類似している請求書や発注書などのフォーム コンテンツの PDF などです。  | 半構造化ファイル形式に使用されます。たとえば、レイアウトに違いはあるものの、抽出される情報は類似している Office ドキュメントなどです。 |
+| モデルの種類 - それぞれを使用する場合 | 構造化ファイル形式と半構造化ファイル形式 (請求書などのフォーム コンテンツの PDF や、レイアウトと書式設定が類似している発注書など)。  | 非構造化ファイル形式や半構造化ファイル形式 (たとえば、レイアウトに違いがあるドキュメントOfficeしますが、引き続き同様の情報が抽出されます)。 |
 | モデルの作成 | SharePoint ドキュメント ライブラリからシームレスにアクセスできる AI Builder で作成されたモデル。| SharePoint でコンテンツ センターという新しいサイトに作成されたモデル。 |
 | 分類の種類| 抽出するデータに関する手がかりをシステムに与える設定可能な分類子。| 機械教育を使用して、抽出するデータのドキュメントの場所を割り当てる、オプションの抽出子を備えたトレーニング可能な分類子。|
 | 場所 | 単一のドキュメント ライブラリ用にトレーニングされています。| 複数のライブラリに適用できます。|
-| サポートされているファイルの種類| PDF、JPG、PNG 形式、合計 50 MB および 500 ページでトレーニングします。| 否定的な例を含め、5 - 10 個の PDF、Office、またはメール ファイルでトレーニングします。<br>Office ファイルは 64k 文字で切り捨てられます。 OCR でスキャンされるファイルは 20 ページに制限されています。|
+| サポートされているファイルの種類| PDF、JPG、PNG 形式、合計 50 MB および 500 ページでトレーニングします。| 否定的な例を含め、5 - 10 個の PDF、Office、またはメール ファイルでトレーニングします。<br>Office ファイルは 64K 文字で切り捨てられます。 OCR でスキャンされるファイルは 20 ページに制限されています。|
 | 管理されたメタデータと統合する | いいえ | はい。設定された管理対象メタデータ フィールドを参照するエンティティ抽出子のトレーニングを行います。|
-| Microsoft Purview Information Protectionとのコンプライアンス機能の統合 | 発行済みの保持ラベルを設定します。<br>秘密度ラベルを設定する予定です。 | 発行済みの保持ラベルを設定します。<br>公開された秘密度ラベルを設定します。 |
+| コンプライアンス機能とMicrosoft Purview 情報保護の統合 | 発行済みの保持ラベルを設定します。<br>秘密度ラベルを設定する予定です。 | 発行済みの保持ラベルを設定します。<br>公開された秘密度ラベルを設定します。 |
 | サポートされる地域| フォーム処理は Power Platform に依存しています。 Power Platform と AI Builder のグローバルな可用性については、「[Power Platform の可用性](https://dynamics.microsoft.com/geographic-availability/)」を参照してください。 | すべての地域で利用可能です。|
-| トランザクション コスト | AI Builder クレジットを使用します。<br>クレジットは 1 M のバッチで購入できます。<br>300 以上の SharePoint Syntex ライセンスを購入すると、1 M のクレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
+| トランザクション コスト | AI Builder クレジットを使用します。<br>1 か月あたりのSharePoint Syntexライセンスごとに 3.5K クレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
 | 容量 | 既定の Power Platform 環境を使用します (Dataverse データベースをサポートするカスタム環境)。 | 容量制限はありません。|
-| サポートされている言語| 73 以上の [言語の言語](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)サポート。 | モデルは、すべてのラテンアルファベット言語で動作します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
+| サポートされている言語| 73 を超える [言語の言語](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)サポート。 | モデルは、すべてのラテンアルファベット言語で動作します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
 
 
 ## <a name="see-also"></a>関連項目

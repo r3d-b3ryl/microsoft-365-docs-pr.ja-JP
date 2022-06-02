@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5d10b96e1d5abfe1c9e9a87b9800dafba081c961
-ms.sourcegitcommit: dd6514ae173f1c821d4ec25298145df6cb232e2e
+ms.openlocfilehash: 86d2b0b09748a83c9b73430c4c6e371ca2e37f31
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/19/2022
-ms.locfileid: "62074464"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65838986"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>デバイスごとのソフトウェア脆弱性評価のエクスポート
 
@@ -29,6 +29,7 @@ ms.locfileid: "62074464"
 **適用対象:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -104,7 +105,7 @@ CveId|String|共通の脆弱性と公開 (CVE) システムのセキュリティ
 CvssScore|String|CVE の CVSS スコア。|6.2
 DeviceId|String|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
 DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
-DiskPaths|Arraystring\[\]|製品がデバイスにインストールされていることを示すディスク証拠。|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
+DiskPaths|配列\[文字列\]|製品がデバイスにインストールされていることを示すディスク証拠。|[ "C:\Program Files (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
 ExploitabilityLevel|String|この脆弱性の悪用可能性レベル (NoExploit、ExploitIsPublic、ExploitIsVerified、ExploitIsInKit)|ExploitIsInKit
 FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて確認されたとき。|2020-11-03 10:13:34.8476880
 Id|String|レコードの一意の識別子。|123ABG55_573AG&mnp!
@@ -114,7 +115,7 @@ RbacGroupName|String|ロールベースのアクセス制御 (RBAC) グループ
 RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。|va _--microsoft-_-silverlight
 RecommendedSecurityUpdate (省略可能)|String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。|2020 年 4 月のセキュリティ更新プログラム
 RecommendedSecurityUpdateId (省略可能)|String|該当するガイダンスまたはサポート情報 (KB) の記事の該当するセキュリティ更新プログラムまたは識別子の識別子|4550961
-RegistryPaths|Arraystring\[\]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
+RegistryPaths|配列\[文字列\]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
 SoftwareName|String|ソフトウェア製品の名前。|Chrome
 SoftwareVendor|String|ソフトウェア ベンダーの名前。|Google
 SoftwareVersion|String|ソフトウェア製品のバージョン番号。|81.0.4044.138
@@ -307,7 +308,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 
 プロパティ (ID)|データ型|説明|返された値の例
 :---|:---|:---|:---
-ファイルをエクスポートする|arraystring\[\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
+ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。|["https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|String|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
 |
 
