@@ -204,7 +204,7 @@
               href: attack-simulation-training-get-started.md
             - name: 攻撃シミュレーション トレーニングでフィッシング攻撃のシュミレーション
               href: attack-simulation-training.md
-            - name: 攻撃シミュレーション トレーニングのカスタム ペイロードを作成する
+            - name: 攻撃シミュレーション トレーニングのペイロード
               href: attack-simulation-training-payloads.md
             - name: 攻撃シミュレーション トレーニングでのシミュレーションの自動化
               href: attack-simulation-training-simulation-automations.md

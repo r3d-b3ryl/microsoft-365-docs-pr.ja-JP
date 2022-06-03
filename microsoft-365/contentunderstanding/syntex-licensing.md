@@ -13,19 +13,19 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex のライセンスの詳細
-ms.openlocfilehash: 497952498e3ead2166f7cda11f050d929e6b6b9c
-ms.sourcegitcommit: dbce0b6e74ae2efec42fe2b3b82c8e8cabe0ddbe
+ms.openlocfilehash: 7a7f310cb9c925fdb98a38ee12335abde91ea1db
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "62054922"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839332"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex のライセンス
 
-SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブスクリプションが必要であり、各 Syntex ユーザーにライセンスが必要です。 将来 SharePoint Syntex サブスクリプションを解約すると (または試用期間が終了すると)、ユーザーはドキュメントの理解またはフォーム処理モデルを作成、公開、または実行できなくなります。 さらに、用語ストア レポート、SKOS 分類インポート、およびコンテンツの種類のプッシュは使用できなくなります。 モデル、コンテンツ、メタデータが削除されたり、サイトのアクセス許可が変更されたりすることはありません。
+SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブスクリプションがあり、各 SharePoint Syntex ユーザーにライセンスが必要です。 将来 SharePoint Syntex サブスクリプションを解約すると (または試用期間が終了すると)、ユーザーはドキュメントの理解またはフォーム処理モデルを作成、公開、または実行できなくなります。 さらに、用語ストア レポート、SKOS 分類インポート、およびコンテンツの種類のプッシュは使用できなくなります。 モデル、コンテンツ、メタデータが削除されたり、サイトのアクセス許可が変更されたりすることはありません。
  
 > [!NOTE] 
-> SharePoint Syntex はアドオン ライセンスであり、ユーザーは Microsoft 365 のライセンスも持っている必要があります。
+> SharePoint Syntex はアドオン ライセンスであり、ユーザーにはMicrosoft 365のライセンスも必要です。
  
 ## <a name="tasks-requiring-a-license"></a>ライセンスが必要なタスク
  
@@ -39,12 +39,12 @@ SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブ�
 
 ライセンスのないユーザーは、コンテンツ センターへのアクセスを許可され、そこで文書理解モデルを作成できますが、それをドキュメント ライブラリに適用することはできません。
  
-## <a name="cost-of-running-models"></a>モデルの実行コスト
+## <a name="cost-of-training-and-running-models"></a>モデルのトレーニングと実行のコスト
  
-文書理解モデルの実行コストは、SharePoint Syntex ライセンスのコストに含まれています。 ただし、フォーム処理モデルは、トレーニングとランタイム処理の両方に AI ビルダーの容量を使用します。 AI ビルダーを使用する Power Apps 環境に容量を割り当てる必要があります。
- 
-組織に300以上のSharePoint Syntex用 SharePoint Syntexライセンスがある場合は、100万のAI Builder クレジットが割り当てられます。 この容量は、300 以上のライセンスを維持している場合、毎月更新されます。 (未使用のクレジットは月ごとに繰り越されません。) ライセンス数が 300 未満の場合、フォーム処理を使用するには、AI ビルダークレジットを購入する必要があります。
- 
+文書理解モデルのトレーニングと実行のコストは、SharePoint Syntex ライセンスのコストに含まれています。 ただし、フォーム処理モデルは、トレーニングとランタイム処理の両方に AI ビルダーの容量を使用します。 AI ビルダーを使用する Power Apps 環境に容量を割り当てる必要があります。
+
+SharePoint Syntex ライセンスごとに、1 ライセンスあたり 3,500 AI Builder クレジットが割り当てられ、テナント レベルでプールされた 1 か月あたり、最大 100 万クレジットが割り当てられます。 この割り当ては、アクティブな SharePoint Syntex ライセンスごとに毎月更新されます。 (未使用のクレジットは、月ごとにロールオーバーされません。) 
+
 Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.com/ai-builder-calculator)を使用して見積もることができます。
 
 カスタム Power Platform 環境を使用する場合は、 [その環境にクレジット割り当てる](/power-platform/admin/capacity-add-on)必要があります。

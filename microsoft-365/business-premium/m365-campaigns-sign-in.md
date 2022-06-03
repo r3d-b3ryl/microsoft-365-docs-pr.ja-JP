@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 にサインインします。 メール、データ、および通信に対する、サイバーセキュリティの脅威から、ビジネス、実践、またはキャンペーンを保護します。
-ms.openlocfilehash: 4203abe638c15978ac4acd753fdeb6a83ba5920d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c0decc886b30ba63d67e7927c0655e1980a47a57
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099853"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65839582"
 ---
 # <a name="sign-in-to-microsoft-365-business-premium"></a>Microsoft 365 Business Premium にサインインする
 
@@ -40,7 +40,7 @@ Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) にサイ
 
 2. ブラウザーで、<a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> の Microsoft 365 管理センターに移動します。
 
-3. ユーザー名とパスワードを入力します。 [**サインイン**] を選びます。
+3. ユーザー名とパスワードを入力し、**[サインイン]** を選びます。
 
 4. ページの右上で、コントロールの [**プレビュー**] を見つけます。 [[キャンペーンのバンプアップ保護](m365-campaigns-security-overview.md)] で説明されているすべてのコントロールを使用できるように、[**プレビュー**] を選択します。
 
@@ -48,7 +48,7 @@ Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) にサイ
 
 Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) サブスクリプションに追加されたユーザーは、次の手順に従ってサインインできます。
 
-1. <a href="https://office.com" target="_blank">https://Office.com</a> に移動します。
+1. <a href="https://office.com" target="_blank">https://office.com</a> に移動します。
 
 2. アカウントのユーザー名とパスワードを使用してサインインします。 ユーザーは、ユーザーとして追加されたときに受信するはずのメールにこの情報が含まれています。 メールが見つからない場合は、「[招待メールを共有しましたが、ユーザーがメールを受信しませんでした](../admin/simplified-signup/admin-invite-business-standard.md#i-shared-an-email-invite-but-the-user-didnt-receive-the-email)」を参照してください。
 

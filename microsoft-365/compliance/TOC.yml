@@ -561,7 +561,7 @@
               href: view-the-dlp-reports.md
             - name: サイトに保存された機密データを検索するクエリの形成
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
+            - name: Microsoft Purview コンプライアンス ポータルと Exchange 管理センターの間での DLP のしくみ
               href: how-dlp-works-between-admin-centers.md
             - name: DLP ポリシーの警告を構成および表示する (プレビュー)
               href: dlp-configure-view-alerts-policies.md

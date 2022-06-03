@@ -20,16 +20,16 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44b1d86d441be5582b8c4b3381a383b2e03417a1
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: bc3e53283f59d7a750e05d56718d389f48e6a9d9
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471541"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840018"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -216,5 +216,5 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 
 :::image type="content" source="../../media/quarantine-user-message-bulk-actions.png" alt-text="検疫内のメッセージの [一括アクション] ドロップダウン リスト" lightbox="../../media/quarantine-user-message-bulk-actions.png":::
 
-- ![[メールを解放する] アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **メールを解放する**: 受信トレイにメッセージを配信します。
+- ![メッセージの解放アイコン。](../../media/m365-cc-sc-check-mark-icon.png) **メッセージの解放**: 受信トレイにメッセージを配信します。
 - ![[検疫から削除] アイコン。](../../media/m365-cc-sc-delete-icon.png) **メッセージの削除**: 表示される警告で **[はい]** をクリックすると、メッセージは元の受信者に送信されずに検疫から直ちに削除されます。
