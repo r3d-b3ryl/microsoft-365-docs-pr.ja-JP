@@ -21,12 +21,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ設定を昇格させ、Microsoft 365組織の優先度アカウントのレポート、アラート、調査を使用する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50d51bf2861d1ef1b9e4d9694fc9469fc5ec7406
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 99e4726af1226e044715d33e92a176c9292b49ab
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648637"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873382"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Microsoft 365 の優先アカウントのセキュリティに関する推奨事項
 
@@ -53,7 +53,7 @@ Microsoft 365とMicrosoft Defender for Office 365には、優先度アカウン�
 |[ユーザーのトレーニング](#train-users)|![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Included](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
 > [!NOTE]
-> _特権アカウント_ (管理者アカウント) のセキュリティ保護については、[このトピック](/azure/architecture/framework/security/critical-impact-accounts)を参照してください。
+> _特権アカウント_ (管理者アカウント) のセキュリティ保護については、[このトピック](/security/compass/critical-impact-accounts)を参照してください。
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>優先度アカウントのサインイン セキュリティを強化する
 

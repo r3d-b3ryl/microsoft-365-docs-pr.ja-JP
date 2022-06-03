@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 958c58fab875ce86b0a3290450e2cf17c4b75a44
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 4f309c98b7278dbeb062deacf49553b7e73f58da
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320499"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873790"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング
 
@@ -50,7 +50,7 @@ Microsoft Defender for Endpointオンボード手順の Security Management に�
 
 - コンピューターはドメイン コントローラーで認証できます
 - コンピューターは、組織のネットワーク内から次の Microsoft リソースにアクセスできます。
-  - https://enterpriseregistration.windows.net
+  - /windows/iot/iot-enterprise/commercialization/licensing
   - https://login.microsoftonline.com
   - https://device.login.microsoftonline.com
 - Azure AD 接続は、コンピューター オブジェクトを同期するように構成されています。 既定では、コンピューター OU は Azure AD Connect 同期スコープ内にあります。 コンピューター オブジェクトが特定の組織単位 (OU) に属している場合は、Azure AD Connectで同期するように OU を構成します。 Azure AD Connectを使用してコンピューター オブジェクトを同期する方法の詳細については、「[組織単位ベースのフィルター処理](/azure/active-directory/hybrid/how-to-connect-sync-configure-filtering#organizational-unitbased-filtering)」を参照してください。
@@ -121,7 +121,7 @@ AAD または MEM でオンボードされたデバイスを識別できず、�
 |エラー コード|登録状態|管理者のアクション|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|一般的なエラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 これは、デバイスが[Microsoft Defender for Endpoint管理チャネルの前提条件を](security-config-management.md)満たしていない可能性があります。 デバイスで [クライアント アナライザー](https://aka.ms/BetaMDEAnalyzer) を実行すると、問題の根本原因を特定するのに役立ちます。 問題が解決しない場合は、サポートにお問い合わせください。|
-| `8`, `44` | Microsoft エンドポイント マネージャー構成の問題 | デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft エンドポイント マネージャーは、Microsoft Defender for Endpointセキュリティ構成を許可するように管理センターを介して構成されていません。 [Microsoft エンドポイント マネージャー テナントが構成され、機能がオン](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management)になっていることを確認します。|
+| `8`, `44` | Microsoft エンドポイント マネージャー構成の問題 | デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft エンドポイント マネージャーは管理 センターを通じてMicrosoft Defender for Endpointセキュリティ構成を許可するように構成されていません。 [Microsoft エンドポイント マネージャー テナントが構成され、機能がオン](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management)になっていることを確認します。|
 |`13-14`,`20`,`24`,`25`|接続の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、接続の問題が原因である可能性があるセキュリティ構成管理フローにエラーが発生しました。 [Azure Active DirectoryエンドポイントとMicrosoft エンドポイント マネージャー エンドポイント](security-config-management.md#connectivity-requirements)がファイアウォールで開かれていることを確認します。|
 |`10`,`42`|一般的なハイブリッド結合エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、OS でハイブリッド参加を実行できませんでした。 OS レベル[のハイブリッド参加エラーのトラブルシューティングには、ハイブリッド Azure Active Directory参加済みデバイス](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)のトラブルシューティングを使用します。|
 |`15`|テナントの不一致|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft Defender for Endpoint テナント ID がAzure Active Directoryテナント ID と一致しないため、セキュリティ構成管理フローでエラーが発生しました。 Defender for Endpoint テナントのAzure Active Directoryテナント ID が、ドメインの SCP エントリのテナント ID と一致していることを確認します。 詳細については、「[Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング」を参照](troubleshoot-security-config-mgt.md)してください。|

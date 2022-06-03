@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpointでのトラブルシューティング モードでの概要
+title: Microsoft Defender for Endpointでのトラブルシューティング モードを使用した概要 (プレビュー)
 description: Microsoft Defender for Endpointトラブルシューティング モードをオンにして、さまざまなウイルス対策の問題に対処します。
 keywords: ウイルス対策, トラブルシューティング, トラブルシューティング モード, 改ざん防止, 互換性
 search.product: eADQiWindows 10XVcnh
@@ -17,25 +17,28 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 07ebfc55df3a03d3447e12f540b7c200de16ae51
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 624dbfe677240dd3c16e4d0f59204971f29504b0
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679016"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872639"
 ---
-# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでのトラブルシューティング モードでの概要
+# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint-preview"></a>Microsoft Defender for Endpointでのトラブルシューティング モードを使用した概要 (プレビュー)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-> [!NOTE]
-> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+>Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+
+> [!IMPORTANT]
+> 一部の情報は、リリース済みの製品に関連しており、商用リリースされる前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 Microsoft Defender for Endpointトラブルシューティング モードを使用すると、組織のポリシーによって制御されている場合でも、デバイスから有効にし、さまざまなシナリオをテストすることで、さまざまな Microsoft Defender ウイルス対策機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これは排他的にEnterprise専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - トラブルシューティング モードを使用して、改ざん防止設定を無効または変更して実行します。
 
@@ -82,7 +85,7 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 
 - Windows 10 (バージョン 19044.1618 以降)、Windows 11、Windows Server 2019、または Windows Server 2022 を実行しているデバイス。
 
-  半期/Redstone|OS のバージョン|Release
+  半期/Redstone|OS のバージョン|リリース
   :---|:---|:---
   21H2/SV1|>=22000.593|[KB5011563: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011563)
   20H1/20H2/21H1|>=19042.1620<br/> >=19041.1620<br/> >=19043.1620|[KB5011543: Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Search.aspx?q=KB5011543)

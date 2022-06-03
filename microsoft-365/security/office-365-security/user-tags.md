@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 でユーザー タグを持つユーザーの特定のグループを識別する方法について説明します。 タグ フィルターは、タグ付けされたユーザーをすばやく識別するために、Microsoft Defender for Office 365のアラート、レポート、調査全体で使用できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d4f5b82e09c9a58e891fa6fcba009ac490c0cb1
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 24509489259a368fb35773603e3708a265f8ed76
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647471"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873272"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365のユーザー タグ
 
@@ -81,7 +81,7 @@ ms.locfileid: "65647471"
 
 - また、Microsoft 365 管理センターで優先度アカウントを管理および監視することもできます。 手順については、「 [優先度アカウントの管理と監視](../../admin/setup/priority-accounts.md)」を参照してください。
 
-- _特権アカウント_ (管理者アカウント) のセキュリティ保護については、[このトピック](/azure/architecture/framework/security/critical-impact-accounts)を参照してください。
+- _特権アカウント_ (管理者アカウント) のセキュリティ保護については、[このトピック](/security/compass/critical-impact-accounts)を参照してください。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-user-tags"></a>Microsoft 365 Defender ポータルを使用してユーザー タグを作成する
 

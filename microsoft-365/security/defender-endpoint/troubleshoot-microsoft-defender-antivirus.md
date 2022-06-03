@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 01/27/2022
+ms.date: 06/02/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 9008fe0d6a4c46d544e4d806c3a15b24c53f2f10
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 1a82f1fb6759bd3cfeaa5bc24154e7e030d08355
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65638002"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872404"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -44,7 +44,6 @@ Microsoft Defender ウイルス対策で問題が発生した場合は、この�
 
 > [!TIP]
 > Microsoft Defender for Endpoint のデモ Web サイト ([demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)) にアクセスして、次の機能が動作していることを確認することもできます:
->
 > - クラウドによる保護
 > - 高速学習 (一目でブロックを含む)
 > - 望ましくない可能性があるアプリケーションのブロック
@@ -332,7 +331,7 @@ Microsoft Defender ウイルス対策は、Windows イベント ログにイベ�
 <ol>
 <li>スキャンを再度実行します。</li>
 <li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポートサイト</a>に移動し、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを探します。</li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
+<li><a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
 </td>
@@ -1239,7 +1238,7 @@ Microsoft Defender ウイルス対策 クライアントで重大な問題が発
 このイベントが続く場合は、次の処理を行います:<ol>
 <li>スキャンを再度実行します。</li>
 <li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポートサイト</a>に移動し、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを探します。</li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
+<li><a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
 </td>
@@ -1544,7 +1543,7 @@ Microsoft Defender ウイルス対策が署名更新でエラーが発生しま�
 <td >このエラーは、定義の更新中に問題が発生した場合に発生します。このイベントのトラブルシューティングを行うには:<ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">定義を更新し</a>、エンドポイントで直接再スキャンを強制します。</li>
 <li>このエラーの詳細については、%Windir%\WindowsUpdate.log ファイルのエントリを確認します。</li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
+<li><a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
 </td>
@@ -1632,7 +1631,7 @@ Microsoft Defender ウイルス対策 クライアントの更新に失敗しま
 このイベントをトラブルシューティングするには:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">定義を更新し</a>、エンドポイントで直接再スキャンを強制します。</li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
+<li><a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
 </td>
@@ -1680,7 +1679,7 @@ Microsoft Defender ウイルス対策 クライアントが最新の定義ファ
 <ol>
 <li>コンピューターを再起動して、もう一度やり直してください。</li>
 <li><a href="https://aka.ms/wdsi">Microsoft セキュリティ インテリジェンス サイト</a> から最新の定義をダウンロードします。注: サイトからダウンロードした定義ファイルのサイズは 60 MB を超える可能性があるため、定義を更新するための長期的なソリューションとして使用しないでください。</li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
+<li><a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
 </td>
@@ -2280,7 +2279,7 @@ Microsoft Defender ウイルス対策クライアントのリアルタイム保�
 ユーザー操作:
 </td>
 <td >
-リアルタイム保護機能が再起動されました。 このイベントが再度発生した場合は、 <a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
+リアルタイム保護機能が再起動されました。 このイベントが再度発生した場合は、 <a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。
 </td>
 </tr>
 <tr>
@@ -2443,7 +2442,7 @@ Microsoft Defender ウイルス対策エラーが原因でエンジンが終了�
 </li>
 </ul>
 </li>
-<li>同じようでエラーが発生した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポート サイト</a>にアクセスし、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを検索し、<a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。</li>
+<li>同じようでエラーが発生した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポート サイト</a>にアクセスし、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを検索し、<a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。</li>
 </ol>
 </td>
 </tr>
@@ -2454,7 +2453,7 @@ Microsoft Defender ウイルス対策エラーが原因でエンジンが終了�
 <td >予期しないエラーが発生したため、Microsoft Defender ウイルス対策のクライアント エンジンが停止しました。このイベントのトラブルシューティングを行うには:<ol>
 <li>スキャンを再度実行します。</li>
 <li>同じ方法で失敗した場合は、<a href="https://go.microsoft.com/fwlink/?LinkId=215163">Microsoft サポートサイト</a>に移動し、[<b>検索</b>] ボックスにエラー番号を入力してエラー コードを探します。</li>
-<li><a href="https://go.microsoft.com/fwlink/?LinkId=215491">Microsoft テクニカル サポート</a>にお問い合わせください。
+<li><a href="/microsoft-365/admin/get-help-support">Microsoft テクニカル サポート</a>にお問い合わせください。
 </li>
 </ol>
 </td>

@@ -10,18 +10,17 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c36902d6c636c726a42292d7a6e4f0cdec60edb7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 46abb6a11e1752934218a031993b10286d8ab420
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415109"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872250"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
@@ -39,11 +38,11 @@ Microsoft Defender ウイルス対策では、保護の状態とアラートを�
 
 サード パーティのセキュリティ情報とイベント管理 (SIEM) サーバーがある場合は、[クライアント イベントWindows Defender](/windows/win32/events/windows-events)使用することもできます。
 
-Windows イベントは、Security Account Manager (SAM) イベント ([Windows 10用に強化され](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)、[セキュリティ監査](/windows/device-security/auditing/security-auditing-overview)のトピックも参照)、[Windows Defender イベント](troubleshoot-microsoft-defender-antivirus.md)など、いくつかのセキュリティ イベント ソースで構成されます。
+Windows イベントは、Security Account Manager (SAM) イベント ([Windows 10用に強化され](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)、[セキュリティ監査](/windows/security/threat-protection/auditing/security-auditing-overview)のトピックも参照)、[Windows Defender イベント](troubleshoot-microsoft-defender-antivirus.md)など、いくつかのセキュリティ イベント ソースで構成されます。
 
 これらのイベントは、[Windows イベント コレクター](/windows/win32/wec/windows-event-collector)を使用して一元的に集計できます。 多くの場合、SIEM サーバーにはWindows イベント用のコネクタがあり、SIEM サーバー内のすべてのセキュリティ イベントを関連付けることができます。
 
-[Log Analytics のマルウェア評価ソリューションを使用して、マルウェア イベントを監視](/azure/log-analytics/log-analytics-malware)することもできます。
+[Log Analytics のマルウェア評価ソリューションを使用して、マルウェア イベントを監視](/security/benchmark/azure/security-control-logging-monitoring)することもできます。
 
 PowerShell、WMI、またはMicrosoft Azureを使用して状態を監視または決定する方法については、[(デプロイ、管理、およびレポートのオプションの表) を](deploy-manage-report-microsoft-defender-antivirus.md#ref2)参照してください。
 

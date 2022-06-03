@@ -18,16 +18,16 @@ description: Office 365でOutlookルールとカスタム フォームインジ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10cbb57018cb0e7c30282ca2c89b6a8dab812e24
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 268e50059ad1b128e583a5be383788b545fa6190
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131110"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874098"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlookルールとカスタム フォームインジェクション攻撃の検出と修復
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **概要** Office 365でOutlookルールとカスタム フォームインジェクション攻撃を認識して修復する方法について説明します。
 
@@ -205,7 +205,7 @@ Outlookを再インストールしたり、影響を受けるユーザーに新�
 
   - **異常な偽装アクティビティ (ユーザー別):** このポリシーは、環境をプロファイリングし、ユーザーが学習したベースラインに関して 1 つのセッションで複数の偽装アクティビティを実行するとアラートをトリガーします。これは侵害の試行を示している可能性があります。
 
-- [セキュリティスコアOffice 365](https://securescore.office.com/)などのツールを使用して、アカウントのセキュリティの構成と動作を管理します。
+- [セキュリティスコアOffice 365](/microsoft-365/security/defender/microsoft-secure-score)などのツールを使用して、アカウントのセキュリティの構成と動作を管理します。
 
 ### <a name="second-keep-your-outlook-clients-current"></a>2 番目: Outlook クライアントを最新の状態に保つ
 

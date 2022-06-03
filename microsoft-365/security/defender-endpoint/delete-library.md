@@ -20,19 +20,19 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 23625c8b7160d604df5f3a8b1b1387fc31027acf
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 97a2a2152a60ff542cb946c4283fe3f26c4b9c8e
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526816"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874132"
 ---
 #  <a name="delete-a-file-from-the-live-response-library"></a>ライブ応答ライブラリからファイルを削除する  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -65,7 +65,7 @@ DELETE https://api.securitycenter.microsoft.com/api/libraryfiles/{fileName}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-| 名前            | 種類   | 説明               |
+| 名前            | 型   | 説明               |
 |-----------------|--------|---------------------------|
 | Authorization   | String | 無記名\<token>\. 必須です。 |
 

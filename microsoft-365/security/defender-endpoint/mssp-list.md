@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3c91b1c5d024ccf651e3735399f73510e7596ff0
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 9e149a883a24093c503bb1487870d2efe83592e0
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569676"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874032"
 ---
 # <a name="supported-managed-security-service-providers"></a>サポート対象マネージド セキュリティ サービス プロバイダー
 
@@ -37,7 +37,7 @@ ms.locfileid: "64569676"
 :---|:---|:---
 ![Accenture ロゴの画像。](images/accenture-logo.png)|[Accenture マネージド検出&応答 (MDR)](https://go.microsoft.com/fwlink/?linkid=2164353) | クラウドとオンプレミスにある IT 環境と OT 環境の両方で高度なサイバー攻撃を検出、予防的に検出、および対応する拡張機能を使用して、グローバル サイバーセキュリティ運用を管理、維持、強化します。
 ![Aujas ロゴの画像。](images/aujas-logo.png) | [Aujas マネージド MDE サービス](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas サイバーセキュリティは、サイバー防御センターを通じてMicrosoft Defender for Endpointを使用して、企業全体で 24* 7 個のマネージド セキュリティ サービスを提供します。
-![BDO デジタル ロゴの画像。](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | BDO Digital のマネージド 防御では、ベスト プラクティス ツール、AI、社内セキュリティエキスパートを使用して 24/7/365 ID 保護を行います
+![BDO デジタル ロゴの画像。](images/bdo-logo.png)| [BDO Digital](/openspecs/ie_standards/ms-html401/ad459f6f-5219-4f68-829c-a58f7397a11f) | BDO Digital のマネージド 防御では、ベスト プラクティス ツール、AI、社内セキュリティエキスパートを使用して 24/7/365 ID 保護を行います
 ![BlueVoyant ロゴの画像。](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR for Microsoft Defender for Endpointは、エンドポイントに対する高度な攻撃の監視、調査、軽減をサポートします
 :::image type="content" source="images/bt-logo.png" alt-text="!BT ロゴの画像。":::|[BT からマネージド エンドポイント Microsoft](https://www.globalservices.bt.com/en/solutions/solution/endpoint-security-and-protection-solutions)| この専門知識により、Microsoft のお客様を保護するために使用する独自のトレードクラフトを開発することができました。 グローバル セキュリティ オペレーション センターで、お客様のMicrosoft Defender for Endpoint資産を 24 時間 365 日監視します。
 ![Cloud Defender for Cloud ロゴの画像。](images/cloudsecuritycenter-logo.png)| [クラウド Defender for Cloud](https://go.microsoft.com/fwlink/?linkid=2099315) | InSpark のクラウド Defender for Cloudは、24 時間 365 日のマネージド サービスであり、保護され、応答機能&検出されます
@@ -60,5 +60,5 @@ ms.locfileid: "64569676"
 ![Wortell のクラウド SOC ロゴの画像。](images/wortell-logo.png)| [Wortell のクラウド SOC](https://go.microsoft.com/fwlink/?linkid=2108415) | &応答を監視するための 24 時間 365 日のマネージド Defender for Endpoint サービス
 ![ゼロ トラスト Analytics Platform (ZTAP) ロゴの画像。](images/ztap-logo.png)| [ゼロ トラスト Analytics Platform (ZTAP)](https://go.microsoft.com/fwlink/?linkid=2090971) | アラートを 99% 削減し、モバイル デバイスからすべてのセキュリティ機能にアクセスする
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [マネージド サービス セキュリティ プロバイダーの統合を構成する](configure-mssp-support.md)

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security で管理できないデバイスの場合は、Microsoft 365電子メールへのアプリ アクセスExchange ActiveSyncブロックする必要があります。
-ms.openlocfilehash: 450d694e83b5044efb25adb918f38a124181481f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 01b89bc50fb348072873d68f52b75d721830aeb5
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435835"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863130"
 ---
 # <a name="manage-device-access-settings-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス アクセス設定を管理する
 
@@ -40,10 +40,10 @@ Basic Mobility と Security を使用している場合は、Basic Mobility と 
 
 3. **データ損失防止** \> **デバイス管理** \> **デバイス ポリシー** に移動し、[**組織全体のデバイス アクセス設定の管理**] を選択します。
 
-4. **[ブロック]** を選択します。 
+4. **[アクセス**] を選択します。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="[基本的なモビリティとセキュリティ のブロック アクセス] チェック ボックス。":::
+    :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="[基本的なモビリティとセキュリティ のブロック アクセス] チェック ボックス。":::
 
-5. [**保存**] を選択します。
+5. **[保存]** を選択します。
 
 Basic Mobility と Security がサポートするデバイスについては、「 [基本的なモビリティとセキュリティの機能](capabilities.md)」を参照してください。

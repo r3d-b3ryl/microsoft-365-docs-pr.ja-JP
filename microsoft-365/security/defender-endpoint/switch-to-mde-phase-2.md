@@ -19,14 +19,13 @@ ms.collection:
 - m365solution-symantecmigrate
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 5dd5c78c366a708104b4662be86d71056d6a726a
-ms.sourcegitcommit: adea59259a5900cad5de29ddf46d1ca9e9e1c82f
+ms.openlocfilehash: fe789a8f4eaaee68fd18832b5d45125407525ccd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "64632713"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873900"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Microsoft Defender for Endpoint - フェーズ 2: セットアップに切り替える
 
@@ -131,7 +130,7 @@ Defender for Endpoint への切り替えを行う際に、Microsoft Defender ウ
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/><br/> **注**: IntuneはMicrosoft エンドポイント マネージャーの一部になりました。|1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)に移動し、サインインします。<br/><br/>2. [ **デバイス** \> **構成プロファイル]** を選択し、構成するプロファイルの種類を選択します。 **デバイス制限** プロファイルの種類をまだ作成していない場合、または新しいデバイス制限の種類を作成する場合は、「[Microsoft Intuneでデバイス制限設定を構成する](/intune/device-restrictions-configure)」を参照してください。<br/><br/>3. **[プロパティ**] を選択し、[**構成設定: 編集]** を選択します。<br/><br/>4. **[Microsoft Defender ウイルス対策**] を展開します。<br/><br/>5. **クラウド配信保護を** 有効にします。<br/><br/>6. [ **サンプルの提出前にユーザーにプロンプトを表示** する] ドロップダウンで、[ **すべてのサンプルを自動的に送信する**] を選択します。<br/><br/>7. [ **望ましくない可能性があるアプリケーションの検出** ] ドロップダウンで、[ **有効]** または [ **監査**] を選択します。<br/><br/>8. **[確認と保存**] を選択し、[ **保存]** を選択します。 <br/><br/> **ヒント**: デバイス プロファイルの作成と構成方法など、Intuneデバイス プロファイルの詳細については、「[Microsoft Intune デバイス プロファイルとは」](/intune/device-profiles)を参照してください。|
 |Microsoft Endpoint Configuration Manager|[Configuration ManagerでEndpoint Protectionのマルウェア対策ポリシーを作成してデプロイ](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)する方法に関する説明を参照してください。 <br/><br/> マルウェア対策ポリシーを作成して構成するときは、 [リアルタイムの保護設定](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) を確認し、 [ブロックを一目で有効に](configure-block-at-first-sight-microsoft-defender-antivirus.md)してください。
 |Windowsのコントロール パネル|こちらのガイダンスに従ってください:[Microsoft Defender ウイルス対策を有効にします](/mem/intune/user-help/turn-on-defender-windows)。 (一部のバージョン *のWindows* では *、Microsoft Defender ウイルス対策ではなくWindows Defender ウイルス対策* が表示される場合があります)。|
-|[高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> または <br/><br/> [グループ ポリシー管理コンソール](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. **[コンピューター構成** \> **管理用テンプレート** \> **] Windowsコンポーネント** \> **Microsoft Defender ウイルス対策** に移動します。<br/><br/>2. [**Microsoft Defender ウイルス対策をオフにする]** というポリシーを探します。<br/><br/>3. [ **ポリシー設定の編集]** を選択し、ポリシーが無効になっていることを確認します。 このアクションにより、Microsoft Defender ウイルス対策が有効になります。 <br/>(一部のバージョン *のWindows* では *、Microsoft Defender ウイルス対策ではなくWindows Defender ウイルス対策* が表示される場合があります)。|
+|[高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> or <br/><br/> [グループ ポリシー管理コンソール](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. **[コンピューター構成** \> **管理用テンプレート** \> **] Windowsコンポーネント** \> **Microsoft Defender ウイルス対策** に移動します。<br/><br/>2. [**Microsoft Defender ウイルス対策をオフにする]** というポリシーを探します。<br/><br/>3. [ **ポリシー設定の編集]** を選択し、ポリシーが無効になっていることを確認します。 このアクションにより、Microsoft Defender ウイルス対策が有効になります。 <br/>(一部のバージョン *のWindows* では *、Microsoft Defender ウイルス対策ではなくWindows Defender ウイルス対策* が表示される場合があります)。|
 
 > [!TIP]
 > 組織のデバイスがオンボードされる前に、ポリシーを展開できます。
@@ -144,11 +143,10 @@ Defender for Endpoint への切り替えを行う際に、Microsoft Defender ウ
 > 除外の構成に関するヘルプについては、ソリューション プロバイダーのドキュメントを参照してください。
 
 構成する特定の除外は、エンドポイントまたはデバイスが実行されているWindowsのバージョンによって異なり、次の表に示します。
-<br/><br/>
 
 | OS |除外 |
 |:--|:--|
-|Windows 11 <br/><br/>Windows 10[バージョン 1803](/windows/release-health/status-windows-10-1803) 以降 ([リリース情報Windows 10](/windows/release-health/release-information)参照)<br/><br/>[KB4493441](https://support.microsoft.com/help/4493441) がインストールされているWindows 10、バージョン 1703 または 1709 <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>さらに、最新の統合ソリューションを実行Windows Server 2012 R2 と 2016 では、[KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) を使用して Sense EDR コンポーネントを更新した後、次の除外が必要です。<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe` |
+|Windows 11 <br/><br/>Windows 10[バージョン 1803](/lifecycle/announcements/windows-server-1803-end-of-servicing) 以降 ([リリース情報Windows 10](/windows/release-health/release-information)参照)<br/><br/>[KB4493441](https://support.microsoft.com/help/4493441) がインストールされているWindows 10、バージョン 1703 または 1709 <br/><br/> Windows Server 2022<br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019) <br/><br/>[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows Server バージョン 1803](/windows-server/get-started/whats-new-in-windows-server-1803) | `C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCncProxy.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseSampleUploader.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseIR.exe`<br/><br/>`C:\Program Files\Windows Defender Advanced Threat Protection\SenseCM.exe`<br/><br/>さらに、最新の統合ソリューションを実行Windows Server 2012 R2 と 2016 では、[KB5005292](https://support.microsoft.com/en-us/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) を使用して Sense EDR コンポーネントを更新した後、次の除外が必要です。<br/> <br/> `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\MsSense.exe` <br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCnCProxy.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseIR.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCE.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseSampleUploader.exe`<br/><br/>`C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Platform\*\SenseCM.exe` |
 |[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |`C:\Program Files\Microsoft Monitoring Agent\Agent\Health Service State\Monitoring Host Temporary Files 6\45\MsSenseS.exe`<br/><br/>**注**: ホスト一時ファイル 6\45 の監視には、異なる番号のサブフォルダーを指定できます。<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\AgentControlPanel.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HealthService.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\HSLockdown.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MOMPerfSnapshotHelper.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe`<br/><br/>`C:\Program Files\Microsoft Monitoring Agent\Agent\TestCloudConnection.exe` |
 
 ## <a name="add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策の除外リストに既存のソリューションを追加する
@@ -170,11 +168,8 @@ Defender for Endpoint への切り替えを行う際に、Microsoft Defender ウ
 次の点に注意してください。
 
 - *パスの除外では、特定の* ファイルとそのファイルにアクセスするものは除外されます。
-
 - *プロセスの除外では* 、プロセスが触れるものは除外されますが、プロセス自体は除外されません。
-
 - 完全なパスを使用してプロセスの除外を一覧表示します。名前のみでは一覧表示されません。 (名前のみのメソッドの安全性は低くなります)。)
-
 - 各実行可能ファイル (.exe) をパスの除外とプロセスの除外の両方として一覧表示すると、プロセスとそれが触れるものはすべて除外されます。
 
 ## <a name="set-up-your-device-groups-device-collections-and-organizational-units"></a>デバイス グループ、デバイス コレクション、および組織単位を設定する

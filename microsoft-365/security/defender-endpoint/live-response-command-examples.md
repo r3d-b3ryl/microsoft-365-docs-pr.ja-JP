@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 325146ba7ed40e27c50eaca490c70d3988b1198f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 77a1bd5c9234b7a38266be55825726e683557eb4
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312655"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872389"
 ---
 # <a name="live-response-command-examples"></a>ライブ応答コマンドの例
 
@@ -112,8 +112,8 @@ getfile c:\Users\user\Desktop\work.txt -auto
 >
 > 次のファイルの種類は、Live Response 内からこのコマンドを使用してダウンロード *できません* 。
 >
-> - [ポイント ファイルを再解析する](/windows/desktop/fileio/reparse-points/)
-> - [スパース ファイル](/windows/desktop/fileio/sparse-files/)
+> - [ポイント ファイルを再解析する](/windows-hardware/drivers/ifs/reparse-points)
+> - [スパース ファイル](/windows-server/administration/windows-commands/fsutil-sparse)
 > - 空のファイル
 > - 仮想ファイル、または完全にローカルに存在しないファイル
 >

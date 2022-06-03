@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b467d87f16900375ca2db2f8478bf001780c9059
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: a9d16cb82354bcb44e817de3207cb49de66dbf91
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130343"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873052"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -84,8 +84,8 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     |ディストリビューションとバージョン|パッケージ|
     |---|---|
     |RHEL/Centos/Oracle 8.0-8.5 の場合|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 の場合 |<https://packages.microsoft.com/config/rhel/7/[channel].repo>|
-    |RHEL/Centos 6.7-6.10 の場合|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|
+    |RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 の場合 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
+    <!--|RHEL/Centos 6.7-6.10 の場合|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |Fedora 33 の場合|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Fedora 34 の場合|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -323,12 +323,12 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
 
     ```Output
     Archive:  WindowsDefenderATPOnboardingPackage.zip
-    inflating: MicrosoftDefenderATPOnboardingLinuxServer.sh
+    inflating: MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
 
 ## <a name="client-configuration"></a>クライアントの構成
 
-1. MicrosoftDefenderATPOnboardingLinuxServer.sh をターゲット デバイスにコピーします。
+1. MicrosoftDefenderATPOnboardingLinuxServer.py をターゲット デバイスにコピーします。
 
     > [!NOTE]
     > 最初は、クライアント デバイスが組織に関連付けられていないので、 *orgId* 属性は空白です。
@@ -337,10 +337,21 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
     mdatp health --field org_id
     ```
 
-2. MicrosoftDefenderATPOnboardingLinuxServer.sh を実行します。
+2. MicrosoftDefenderATPOnboardingLinuxServer.py を実行します。
+
+    > [!NOTE]
+    > このコマンドを実行するには、disto とバージョンに応じてデバイスにインストールされているか`python3`、インストールされている必要があります`python`。 必要に応じて、 [Linux に Python をインストールするための詳細な手順に関するページを](https://opensource.com/article/20/4/install-python-linux)参照してください。
+    
+    RHEL 8.x または Ubuntu 20.04 以降を実行している場合は `python3`、.
 
     ```bash
-    sudo bash MicrosoftDefenderATPOnboardingLinuxServer.sh
+    sudo python3 MicrosoftDefenderATPOnboardingLinuxServer.py
+    ```
+
+    ディストリビューションとバージョンの残りの部分については、 `python`.
+    
+    ```bash
+    sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
     
 3. デバイスが組織に関連付けられていることを確認し、有効な組織 ID を報告します。

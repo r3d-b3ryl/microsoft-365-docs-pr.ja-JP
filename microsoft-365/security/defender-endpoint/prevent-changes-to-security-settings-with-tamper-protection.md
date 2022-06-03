@@ -17,16 +17,15 @@ ms.custom:
 - nextgen
 - admindeeplinkDEFENDER
 ms.technology: mde
-ms.date: 05/20/2022
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 7ac72d88975231bb76f6e097a80f372a8ffac535
-ms.sourcegitcommit: c4924bcad6648fae279076cafa505fae1194924a
+ms.openlocfilehash: 36aa48f26e60e2c3afb034a218c3356e27d75ffd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/21/2022
-ms.locfileid: "65626967"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873360"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -96,9 +95,9 @@ ms.locfileid: "65626967"
 
 | 改ざん防止を有効にする方法 | クラウド保護への依存 |
 |---|---|
-|Microsoft Intune|いいえ|
-|テナントアタッチを使用したMicrosoft Endpoint Configuration Manager|いいえ|
-|Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|必要|
+|Microsoft Intune|不要|
+|テナントアタッチを使用したMicrosoft Endpoint Configuration Manager|不要|
+|Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|はい|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用して組織の改ざん防止を管理する
 
@@ -154,7 +153,7 @@ ms.locfileid: "65626967"
 - デバイスを[Microsoft Defender for Endpointにオンボードする](/microsoft-365/security/defender-endpoint/onboarding)必要があります。
 - グローバル管理者、セキュリティ管理者、セキュリティ操作など、適切な [アクセス許可](/microsoft-365/security/defender-endpoint/assign-portal-access) が割り当てられている必要があります。
 - 組織では[、Microsoft エンドポイント マネージャーを使用してデバイスを管理します](/mem/endpoint-manager-getting-started)。 (Microsoft エンドポイント マネージャー (MEM) ライセンスが必要です。MEM は、Microsoft 365 E3/E5、Enterprise Mobility + Security E3/E5、Microsoft 365 Business Premium、Microsoft 365 F1/F3、Microsoft 365に含まれています Government G3/G5、および対応する教育ライセンス)。
-- Windows デバイスは、[Windows 11または 1709、1803](/windows/release-health/status-windows-10-1709)、[1809](/windows/release-health/status-windows-10-1803) 以降Windows 10実行されている必要があります。 [](/windows/release-health/status-windows-10-1809-and-windows-server-2019) (リリースの詳細については、[リリース情報Windows 10](/windows/release-health/release-information)参照してください。
+- Windows デバイスは、[Windows 11または 1709、1803](/lifecycle/announcements/revised-end-of-service-windows-10-1709)、[1809](/lifecycle/announcements/windows-server-1803-end-of-servicing) 以降Windows 10実行されている必要があります。 [](/windows/release-health/status-windows-10-1809-and-windows-server-2019) (リリースの詳細については、[リリース情報Windows 10](/windows/release-health/release-information)参照してください。
 - セキュリティ インテリジェンスをバージョン 1.287.60.0 (またはそれ以降) に更新して、Windows [セキュリティ](https://www.microsoft.com/wdsi/definitions)を使用している必要があります。
 - デバイスは、マルウェア対策プラットフォーム バージョン 4.18.1906.3 (またはそれ以降) とマルウェア対策エンジンバージョン `1.1.15500.X` (またはそれ以降) を使用している必要があります。 ([Microsoft Defender ウイルス対策更新プログラムを管理し、ベースラインを適用します](manage-updates-baselines-microsoft-defender-antivirus.md)。
 
@@ -200,7 +199,6 @@ ms.locfileid: "65626967"
 
 > [!NOTE]
 > 改ざん防止ブロックは、レジストリを介してMicrosoft Defender ウイルス対策設定を変更しようとします。
->
 > 改ざん防止が、これらの設定を変更する Microsoft 以外のセキュリティ製品やエンタープライズ インストール スクリプトに干渉しないようにするには、**Windows セキュリティ** に移動し、**セキュリティ インテリジェンス** をバージョン 1.287.60.0 以降に更新します。 ( [セキュリティ インテリジェンスの更新プログラムを](https://www.microsoft.com/wdsi/definitions)参照してください。)この更新プログラムを実行すると、改ざん防止によってレジストリ設定が保護され続け、ログはエラーを返さずに変更を試みます。
 
 ホーム ユーザーであるか、セキュリティ チームによって管理されている設定の対象になっていない場合は、Windows セキュリティ アプリを使用して改ざん防止を管理できます。 改ざん防止などのセキュリティ設定を変更するには、デバイスに対する適切な管理者アクセス許可が必要です。
@@ -249,7 +247,7 @@ Windows Server 2016では、改ざん防止が有効になっている場合、�
 
 - Windows 11
 - Windows 11 Enterprise multi-session
-- Windows 10 OS [1709](/windows/release-health/status-windows-10-1709)、[1803](/windows/release-health/status-windows-10-1803)、[1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) 以降と[共にMicrosoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)。
+- Windows 10 OS [1709](/lifecycle/announcements/revised-end-of-service-windows-10-1709)、[1803](/lifecycle/announcements/windows-server-1803-end-of-servicing)、[1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) 以降と[共にMicrosoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)。
 - Windows 10 Enterprise マルチセッション
   
 テナント接続でConfiguration Managerバージョン 2006 を使用している場合は、改ざん防止を Windows Server 2012 R2、Windows Server 2016、Windows Server 2019、Windows Server 2022 に拡張できます。 「 [テナントのアタッチ: 管理センターからエンドポイント セキュリティウイルス対策ポリシーを作成して展開する (プレビュー)」](/mem/configmgr/tenant-attach/deploy-antivirus-policy)を参照してください。

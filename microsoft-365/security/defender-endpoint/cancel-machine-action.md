@@ -18,20 +18,20 @@ ms.collection: m365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc4191043e19df7fea4f350d85acd78d2eca1551
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 08f302a541e60cb2844dc6ef2b91509556f03330
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322913"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873756"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API を取り消す
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2146631)
-- [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/defender-endpoint)
+- [Microsoft Defender for Endpoint Plan 1](/microsoft-365/security/defender-endpoint/defender-endpoint-plan-1)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -66,14 +66,14 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|種類|説明|
+|名前|型|説明|
 |---|---|---|
-|Authorization|String|ベアラー {token}。必須。|
+|Authorization|String|ベアラー {トークン}。必須。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|種類|説明|
+|パラメーター|型|説明|
 |---|---|---|
 |コメント|文字列|取り消しアクションに関連付けるコメント。|
 

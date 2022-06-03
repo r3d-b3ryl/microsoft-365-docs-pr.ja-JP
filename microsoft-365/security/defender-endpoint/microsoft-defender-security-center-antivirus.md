@@ -16,12 +16,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1c5177946ff3d54ab64c78e9013a8e0c07b0fd11
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: bd045ac36f1685c3bf12cedf04dd074ed6c7fc5e
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468129"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873988"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows セキュリティ アプリのMicrosoft Defender ウイルス対策
 
@@ -34,8 +34,7 @@ Windows 10バージョン 1703 以降では、Windows Defender アプリはWindo
 Windows Defender クライアントとメイン Windows 設定の一部であった設定が結合され、Windows 10 バージョン 1703 の一部として既定でインストールされる新しいアプリに移動されました。
 
 > [!IMPORTANT]
-> Windows セキュリティ アプリ サービスを無効にしても、ファイアウォールのMicrosoft Defender ウイルス対策や[Windows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)は無効になりません。 サード パーティのウイルス対策またはファイアウォール製品がインストールされ、最新の状態に保たれている場合、これらは自動的に無効になります。
->
+> Windows セキュリティ アプリ サービスを無効にしても、Microsoft Defender ウイルス対策や[Windows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)は無効になりません。 サード パーティのウイルス対策またはファイアウォール製品がインストールされ、最新の状態に保たれている場合、これらは自動的に無効になります。
 > Windows セキュリティ アプリ サービスを無効にしたり、関連付けられたグループ ポリシー設定を構成して起動や実行を妨げる場合、Windows セキュリティ アプリには、デバイスにインストールしたウイルス対策製品やファイアウォール製品に関する古い情報や不正確な情報が表示されることがあります。
 > また、古い、または古いサード パーティ製のウイルス対策を使用している場合、または以前にインストールした可能性があるサードパーティのウイルス対策製品をアンインストールした場合、Microsoft Defender ウイルス対策がそれ自体を有効にできない場合もあります。
 > これにより、デバイスの保護が大幅に低下し、マルウェア感染につながる可能性があります。
@@ -73,7 +72,7 @@ Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降
 
 2. **[ウイルス&脅威保護**] タイル (または左側のメニュー バーのシールド アイコン) を選択します。
 
-3. **[ウイルス&脅威対策の更新プログラム**] を選択します。 現在インストールされているバージョンが、ダウンロードされた日時に関するいくつかの情報と共に表示されます。 手動でダウンロードできる最新バージョンに対して現在のバージョンを確認したり、そのバージョンの変更ログを確認したりできます。 [Microsoft Defender ウイルス対策およびその他の Microsoft マルウェア対策のセキュリティ インテリジェンス更新プログラムに関](https://www.microsoft.com/wdsi/defenderupdates)するページを参照してください。
+3. **[ウイルス&脅威対策の更新プログラム**] を選択します。 現在インストールされているバージョンが、ダウンロードされた日時に関するいくつかの情報と共に表示されます。 手動でダウンロードできる最新バージョンに対して現在のバージョンを確認したり、そのバージョンの変更ログを確認したりできます。 [Microsoft Defender ウイルス対策およびその他の Microsoft マルウェア対策のセキュリティ インテリジェンス更新プログラムに関](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)するページを参照してください。
 
 4. [ **更新プログラムの確認** ] を選択して、新しい保護更新プログラムをダウンロードします (存在する場合)。
 
@@ -105,16 +104,12 @@ Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降
 
 次の表は、除外の種類と動作をまとめたものです。
 
-<br>
-
-****
 |除外の種類|によって定義される|動作|
 |---|---|---|
-|**ファイル**|Location <br/>例: `c:\sample\sample.test`|特定のファイルはMicrosoft Defender ウイルス対策によってスキップされます。|
-|**Folder**|Location <br/>例: `c:\test\sample`|指定したフォルダー内のすべての項目は、Microsoft Defender ウイルス対策によってスキップされます。|
+|**ファイル**|場所 <br/>例: `c:\sample\sample.test`|特定のファイルはMicrosoft Defender ウイルス対策によってスキップされます。|
+|**Folder**|場所 <br/>例: `c:\test\sample`|指定したフォルダー内のすべての項目は、Microsoft Defender ウイルス対策によってスキップされます。|
 |**ファイルの種類**|ファイル拡張子 <br/>例: `.test`|デバイス上の任意の`.test`場所にある拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策によってスキップされます。|
 |**プロセス**|実行可能ファイルのパス <br>例: `c:\test\process.exe`|特定のプロセスとそのプロセスによって開かれたすべてのファイルは、Microsoft Defender ウイルス対策によってスキップされます。|
-|
 
 詳細については、次のリソースを参照してください。
 

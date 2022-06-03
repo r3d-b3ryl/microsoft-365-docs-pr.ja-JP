@@ -1,9 +1,9 @@
 ---
 title: コア データを新しいMicrosoft 365データセンター geo に移動する
-ms.author: andyber
-author: andybergen
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 11/16/2021
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +15,19 @@ f1.keywords:
 - NOCSH
 description: 新しいOffice 365 データセンター geo と、データ常駐オプションを使用してコア データの新しい geo への移動を要求する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be42954aaa0de3f1c5af851915070e7f27c4e850
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c70d59edba9cd35710b315adc8f93d6139fd2595
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101141"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873580"
 ---
 # <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>コア データを新しいMicrosoft 365データセンター geo に移動する
 
-Microsoft 365 サービスの新しいデータセンター geo を引き続き開いています。 こうした新しいデータセンター geo により、現在続いているお客様の需要と使用量の拡大をサポートするための容量と計算リソースが増加されます。 さらに、新しいデータセンター geo では、コア カスタマー データを geo 内に常駐できます。 
+Microsoft 365 サービスの新しいデータセンター geo を引き続き開いています。 こうした新しいデータセンター geo により、現在続いているお客様の需要と使用量の拡大をサポートするための容量と計算リソースが増加されます。 さらに、新しいデータセンター geo では、コア カスタマー データを geo 内に常駐できます。
 
-コア カスタマー データとは、カスタマー データのサブセットを表す用語です。これには、次のデータが含まれます。 
+コア カスタマー データとは、カスタマー データのサブセットを表す用語です。これには、次のデータが含まれます。
+
 - ExchangeOnline メールボックスのコンテンツ (メール本文、予定表のエントリ、メール添付ファイルのコンテンツ)
 - SharePoint Online サイトのコンテンツと、そのサイト内に格納されているファイル
 - OneDrive for Business にアップロードしたファイル
@@ -53,25 +54,25 @@ Microsoft 365 サービスの新しいデータセンター geo を引き続き�
 
 2020 年 10 月 1 日以降、テナントに含まれるOffice 365 Education サブスクリプションをお持ちのお客様は移行の対象になりません。
 
-すべてのデータセンター geo、データセンター、格納されているお客様データの場所のリストは、[対話型のデータセンター マップ](https://office.com/datamaps)の一部として利用できます。 
+すべてのデータセンター geo、データセンター、格納されているお客様データの場所のリストは、[対話型のデータセンター マップ](https://office.com/datamaps)の一部として利用できます。
   
 ## <a name="data-residency-option"></a>データ常駐のオプション
 
 データ常駐オプションは、上記の表に記載されているデータセンターの地域でカバーされている対象となるMicrosoft 365のお客様に提供されます。 このオプションを使用すると、データ常駐要件を持つ対象顧客は、組織のコア顧客データの保存時に新しいデータセンター geo への移行を要求できます。  Microsoft は、登録期間中に移行を要求するすべての対象顧客に対して、コミットされた期限を提供します。  データセンター geo の開いている登録ウィンドウと、プログラムに登録する手順の詳細については、 [データ移動を要求する方法](request-your-data-move.md) ページを参照してください。  データの移行は、要求期間が終了してから最大 24 か月かかる場合があります。
 
 新しいデータセンター geo では、独自機能や準拠証明書を導入していません。
-    
-グローバルに操作され自動化された環境内でデータ移動を実行する際に必要になる複雑さ、精度およびスケールは、テナントまたはその他の任意の単一テナントがデータ移動の完了を期待しているときに、共有の妨げになります。お客様のデータ移動が完了すると、お客様はメッセージ センターで、参加しているサービスごとに 1 つの確認メッセージを受信します。 
-    
-データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンド サービスの操作です。影響を受ける機能については「[データの移行中および移行後](during-and-after-your-data-move.md)」ページに記載されています。可用性については、[Microsoft Online Services サービス レベル契約 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)に準拠しています。お客様が、移行に伴って準備や監視を行う必要はありません。必要に応じて、サービス メンテナンスの通知が行われます。 
+
+グローバルに操作され自動化された環境内でデータ移動を実行する際に必要になる複雑さ、精度およびスケールは、テナントまたはその他の任意の単一テナントがデータ移動の完了を期待しているときに、共有の妨げになります。お客様のデータ移動が完了すると、お客様はメッセージ センターで、参加しているサービスごとに 1 つの確認メッセージを受信します。
+
+データの移行は、エンドユーザーへの影響を最小限に抑えたバックエンド サービスの操作です。影響を受ける機能については「[データの移行中および移行後](during-and-after-your-data-move.md)」ページに記載されています。可用性については、[Microsoft Online Services サービス レベル契約 (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897)に準拠しています。お客様が、移行に伴って準備や監視を行う必要はありません。必要に応じて、サービス メンテナンスの通知が行われます。
 
 新しいデータセンター geo へのデータの移行は、追加料金なしで完了します。
-    
-## <a name="related-topics"></a>関連項目 
- 
+
+## <a name="related-topics"></a>関連項目
+
 [データ移行を申請する方法](request-your-data-move.md)
-    
-[データ移行についての一般的な FAQ](data-move-faq.yml)
+
+[データ移行についての一般的な FAQ](data-move-faq.md)
   
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](/power-platform/admin/new-datacenter-regions)
   

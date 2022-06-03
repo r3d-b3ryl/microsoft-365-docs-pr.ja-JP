@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 5a38ed6fbdcebf54dcd8bc34458733b5edefb850
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623163"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872426"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -49,7 +49,7 @@ Microsoft 以外の別のウイルス対策/マルウェア対策ソリューシ
 > [!IMPORTANT]
 > - Microsoft Defender ウイルス対策は、Windows 10 および 11、Windows Server 2022、Windows Server 2019、Windows Server、バージョン 1803 以降、および Windows Server 2016 を実行しているデバイスで使用できます。 
 > - Microsoft Defender ウイルス対策は、[最新の統合ソリューション](/microsoft-365/security/defender-endpoint/configure-server-endpoints)を使用してオンボードされた Windows Server 2012 R2 でも利用できます。
-> - Windows 8.1 では、エンタープライズ レベルのエンドポイントウイルス対策保護が [System Center Endpoint Protection](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10) として提供されます。これは、Microsoft Endpoint Configuration Manager によって管理されます。
+> - Windows 8.1では、エンタープライズ レベルのエンドポイントウイルス対策保護は[、Microsoft Endpoint Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh508760(v=technet.10))によって管理されるSystem Center Endpoint Protectionとして提供されます。
 > - Windows Defender は、[Windows 8.1 上のコンシューマー デバイス](/previous-versions/windows/it-pro/windows-8.1-and-8/dn344918(v=ws.11)#BKMK_WindowsDefender)にも提供されますが、Windows Defender ではエンタープライズ レベルの管理は提供されません。
 
 ## <a name="antivirus-protection-without-defender-for-endpoint"></a>Defender for Endpoint を使用しないウイルス対策保護
@@ -65,8 +65,8 @@ Microsoft 以外の別のウイルス対策/マルウェア対策ソリューシ
 |:---|:---|:---|
 |Windows 10 <br/> Windows 11|Microsoft Defender ウイルス対策|アクティブ モード|
 |Windows 10 <br/> Windows 11|Microsoft 以外のウイルス対策/マルウェア対策ソリューション|無効モード (自動的に発生)|
-|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server バージョン 1803 以降 <br/> Windows Server 2016 |Microsoft Defender ウイルス対策|アクティブ モード|
-|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server バージョン 1803 以降 <br/> Windows Server 2016  |Microsoft 以外のウイルス対策/マルウェア対策ソリューション|無効 (手動で設定) <sup>[[1](#fn1)]</sup>|
+|Windows Server 2022 <br/> Windows Server 2019<br/> Windows Server バージョン 1803 以降 <br/> Windows Server 2016 <br/> Windows Server 2012 R2 |Microsoft Defender ウイルス対策|アクティブ モード|
+|Windows Server 2022<br/>Windows Server 2019<br/>Windows Server バージョン 1803 以降 <br/> Windows Server 2016 |Microsoft 以外のウイルス対策/マルウェア対策ソリューション|無効 (手動で設定) <sup>[[1](#fn1)]</sup>|
 
 (<a id="fn1">1</a>) Windowsサーバーで、Microsoft 以外のウイルス対策製品を実行している場合は、競合を防止するためにMicrosoft Defender ウイルス対策をアンインストールできます。 デバイスが Microsoft Defender for Endpoint にオンボードされている場合は、パッシブ モードで Microsoft Defender ウイルス対策を使用できます (以下を参照)。
 
@@ -149,18 +149,18 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 | 保護 | Microsoft Defender ウイルス対策 <br/>(*アクティブ モード*) | Microsoft Defender ウイルス対策 <br/>(*パッシブ モード*) | Microsoft Defender ウイルス対策 <br/>(*無効またはアンインストール済み*) | [ブロック モードの EDR](edr-in-block-mode.md) | 
 |:---|:---|:---|:---|:---| 
 | [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md): | はい | メモ <sup>[[4](#fn4)]</sup> を参照してください | いいえ | 不要 | 
-| [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | いいえ  | いいえ | 不要 | 
-| [ネットワーク保護](network-protection.md)  | はい | いいえ | いいえ | 不要 | 
-| [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | いいえ | いいえ  | いいえ | 
+| [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | 不要  | いいえ | 不要 | 
+| [ネットワーク保護](network-protection.md)  | はい | 不要 | いいえ | 不要 | 
+| [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | 不要 | いいえ  | いいえ | 
 | [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | いいえ | はい | 不要 | 
 | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい<sup>[[5](#fn5)]</sup> | 不要 | はい | 
 | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[6](#fn6)]</sup>を参照してください | 不要 | はい | 
 | [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい <sup>[[7](#fn7)]</sup> | 不要 | はい <sup>[[7](#fn7)]</sup> | 
-| [データ損失防止](../../compliance/endpoint-dlp-learn-about.md) | はい | 必要 | いいえ | 不要 |
-| [制御されたフォルダー アクセス](controlled-folders.md) | はい |いいえ | いいえ | 不要 |
+| [データ損失防止](../../compliance/endpoint-dlp-learn-about.md) | はい | はい | 不要 | 不要 |
+| [制御されたフォルダー アクセス](controlled-folders.md) | はい |不要 | 不要 | 不要 |
 | [Web コンテンツ フィルタリング](web-content-filtering.md) | はい | メモ <sup>[[8](#fn8)]</sup> を参照してください | 不要 | 不要 |
-| [デバイス コントロール](device-control-report.md) | はい | 必要 | いいえ | 不要 |
-| [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | いいえ | いいえ | 不要 |
+| [デバイス コントロール](device-control-report.md) | はい | はい | 不要 | 不要 |
+| [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | 不要 | いいえ | 不要 |
 
 (<a id="fn4">4</a>) 一般に、Microsoft Defender ウイルス対策がパッシブ モードの場合、リアルタイム保護では、有効でパッシブ モードであっても、ブロックや強制は提供されません。
 

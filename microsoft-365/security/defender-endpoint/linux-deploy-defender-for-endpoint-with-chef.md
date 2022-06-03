@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 799fc4d163b120b4197b6cd044efe4740e4a3cc7
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 8f610821b6c0bef7694d6ce8acd256f59f761f06
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941926"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872935"
 ---
 # <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Chef を使用して Linux 用 Microsoft Defender for Endpoint を展開する
 
@@ -117,7 +117,7 @@ end
 
 必ず、パス名をオンボード ファイルの場所に更新してください。
 Chef ワークステーションにデプロイをテストするには、実行するだけです ``sudo chef-client -z -o mdatp``。
-デプロイ後は、[Linux でのMicrosoft Defender for Endpointの設定の設定](/linux-preferences.md)に基づいて、構成ファイルを作成してサーバーにデプロイすることを検討する必要があります。
+デプロイ後は、[Linux でのMicrosoft Defender for Endpointの設定の設定](/microsoft-365/security/defender-endpoint/linux-preferences)に基づいて、構成ファイルを作成してサーバーにデプロイすることを検討する必要があります。
 構成ファイルを作成してテストしたら、それを cookbook/mdatp/files フォルダーに配置し、オンボード パッケージも配置できます。 次に、mdatp/recipies フォルダーに settings_mdatp.rb ファイルを作成し、次のテキストを追加できます。
 
 ```powershell

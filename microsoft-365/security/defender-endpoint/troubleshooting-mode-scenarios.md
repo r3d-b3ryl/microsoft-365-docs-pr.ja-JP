@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpointでのモードシナリオのトラブルシューティング
+title: Microsoft Defender for Endpointでのモード シナリオのトラブルシューティング (プレビュー)
 description: Microsoft Defender for Endpointトラブルシューティング モードを使用して、さまざまなウイルス対策の問題に対処します。
 keywords: ウイルス対策, トラブルシューティング, トラブルシューティング モード, 改ざん防止, 互換性
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b62ed508640fcf9523c768d2af8e038e4d269e85
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: f5a1734b267f512f19179e20b7ba66d8f38e1d19
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65420071"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874114"
 ---
-# <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでのモードシナリオのトラブルシューティング
+# <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint-preview"></a>Microsoft Defender for Endpointでのモード シナリオのトラブルシューティング (プレビュー)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,6 +33,8 @@ ms.locfileid: "65420071"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
+> [!IMPORTANT]
+> 一部の情報は、リリース済みの製品に関連しており、商用リリースされる前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 Microsoft Defender for Endpointトラブルシューティング モードを使用すると、組織のポリシーによって制御されている場合でも、デバイスから有効にし、さまざまなシナリオをテストすることで、さまざまな Microsoft Defender ウイルス対策機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これは排他的にEnterprise専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
 
@@ -46,7 +48,7 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 
 3. プロセス モニター (ProcMon) を開始します。 [リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティングに関するページで説明されている手順を](troubleshoot-performance-issues.md)参照してください。  
 
-4. **Windows** **securityThreat** >  & virus **protectionManage** >  **settingsTamper** >  **protectionOff** >  に移動します。  
+4. **[Windows セキュリティ** > **脅威&ウイルス対策** > **の管理設定** > **改ざん防止** > オフ] に移動 **します**。  
 
 5. 管理者特権の PowerShell コマンド プロンプトを起動し、RTP をオフにします。 
 
@@ -59,7 +61,7 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 
 スケジュールされたスキャン中に、MsMpEng.exeが高い CPU を消費することがあります。
 
-1. **[Task** **ManagerDetails** > ] タブに移動して、MsMpEng.exeが CPU 使用率が高い理由であることを確認します。 また、スケジュールされたスキャンが現在進行中かどうかを確認します。
+1. **[タスク マネージャー** > **の詳細**] タブに移動し、MsMpEng.exeが CPU 使用率が高い理由であることを確認します。 また、スケジュールされたスキャンが現在進行中かどうかを確認します。
 
 2. CPU スパイク中に約 5 分間 ProcMon を実行し、ProcMon ログで手がかりを確認します。 
 
@@ -123,7 +125,7 @@ Network Protection によって Microsoft ドメインがブロックされ、�
 
 詳細については、「 [ネットワーク保護を使用して、不適切なサイトへの接続を防止する」を](network-protection.md)参照してください。 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [トラブルシューティング モードを有効にする](enable-troubleshooting-mode.md)
 - [改ざん防止機能を使用してセキュリティ設定を保護する](prevent-changes-to-security-settings-with-tamper-protection.md)

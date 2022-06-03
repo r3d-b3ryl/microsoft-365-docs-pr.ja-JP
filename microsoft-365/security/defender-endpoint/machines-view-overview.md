@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e5bf4e09224961d9a6cb0f0dc076b672fd20aabc
-ms.sourcegitcommit: 344a254ca268a2f65cf199d9158a47e08861ffa5
+ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65368179"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874176"
 ---
 # <a name="device-inventory"></a>デバイス一覧
 
@@ -70,7 +70,7 @@ Microsoft Defender for Endpointオンボード プロセス中、MDE にオン�
 
 ## <a name="navigate-to-the-device-inventory-page"></a>[デバイス インベントリ] ページに移動する
 
-[Microsoft 365 Defender ポータル](/defender/microsoft-365-security-center-mde)の **[エンドポイント**] ナビゲーション メニューから **[デバイス インベントリ**] を選択して、デバイス インベントリ ページにアクセスします。
+[Microsoft 365 Defender ポータル](/microsoft-365/security/defender-business/mdb-get-started)の **[エンドポイント**] ナビゲーション メニューから **[デバイス インベントリ**] を選択して、デバイス インベントリ ページにアクセスします。
 
 ## <a name="device-inventory-overview"></a>デバイス インベントリの概要
 

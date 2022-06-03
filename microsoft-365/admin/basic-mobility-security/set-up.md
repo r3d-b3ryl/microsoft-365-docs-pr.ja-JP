@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: デバイスをリモートワイプするなどの操作を実行して、ユーザーのモバイル デバイスをセキュリティで保護および管理するように Basic Mobility と Security を設定します。
-ms.openlocfilehash: b26906c0f374f5dc103fe26e4619663195da6ebd
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 04480e59177dc9b51bc50e413715e0ad82c7f461
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64780833"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863192"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの設定
 
@@ -54,15 +54,13 @@ Microsoft 365に関連付けられているカスタム ドメインがない場
 
 2 つの CNAME レコードを追加したら、セキュリティ & コンプライアンス センターに戻り、 **データ損失防止** > **デバイス管理** に移動して次の手順を完了します。
 
-### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>手順 2: (必須) iOS デバイス用の APNs 証明書を構成する
+### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>手順 2: (必須) iOS デバイスの APNs 証明書を構成する
 
-iPadや iPhone などの iOS デバイスを管理するには、APN 証明書を作成する必要があります。
+iPadや iPhone などのiOSデバイスを管理するには、APN 証明書を作成する必要があります。
 
 1. グローバル管理者アカウントでMicrosoft 365にサインインします。
 
-2. ブラウザーの種類: [https://protection.office.com](https://protection.office.com/).
-
-3. **[データ損失防止** > **デバイス管理**] を選択し、[**iOS デバイス用の APNs 証明書] を選択します**。
+2. [Microsoft 365 管理センター](https://portal.office.com/adminportal/home?#/MifoDevices)に移動し、**iOSの APNs 証明書を** 選択します。
 
 4. [Apple プッシュ通知証明書設定] ページで、[**次へ**] を選択します。
 
@@ -93,9 +91,9 @@ iPadや iPhone などの iOS デバイスを管理するには、APN 証明書�
 
 MFA は、2 番目の形式の認証を必要とすることで、モバイル デバイス登録のMicrosoft 365へのサインインをセキュリティで保護するのに役立ちます。 ユーザーは、職場アカウントのパスワードを正しく入力した後、モバイル デバイスで電話、テキスト メッセージ、またはアプリの通知を確認する必要があります。 この 2 番目の形式の認証が完了した後にのみ、デバイスを登録できます。 ユーザー デバイスが Basic Mobility and Security に登録されると、ユーザーは自分の職場アカウントでのみMicrosoft 365リソースにアクセスできます。
 
-Azure AD ポータルで MFA を有効にする方法については、「[多要素認証を設定](../security-and-compliance/set-up-multi-factor-authentication.md)する」を参照してください。
+Azure AD portal で MFA を有効にする方法については、「 [多要素認証を設定](../security-and-compliance/set-up-multi-factor-authentication.md)する」を参照してください。
 
-MFA を設定したら、セキュリティ & コンプライアンス センターに戻り、**Data loss preventionDevice** >  **managementDevice** >  **ポリシー** に移動して次の手順を完了します。
+MFA を設定したら、セキュリティ & コンプライアンス センターに戻り、 **データ損失防止** > **デバイス管理** > **デバイス ポリシー** に移動して、次の手順を完了します。
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>手順 4: (推奨) デバイス セキュリティ ポリシーを管理する
 
@@ -107,7 +105,7 @@ MFA を設定したら、セキュリティ & コンプライアンス センタ
 
 3. **デバイス ポリシー** に移動します。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティとモビリティのポリシー設定。":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="基本的なセキュリティとモビリティのポリシー設定。":::
 
 4. 「基本的なモビリティとセキュリティでデバイス セキュリティ ポリシーを作成する」の手順に従って、組織に適した [デバイス セキュリティ ポリシーを作成して展開します](create-device-security-policies.md)。
 
@@ -126,7 +124,7 @@ MFA を設定したら、セキュリティ & コンプライアンス センタ
 > [!IMPORTANT]
 > ユーザーの優先言語が登録プロセスでサポートされていない場合、ユーザーは別の言語でモバイル デバイスで登録通知と手順を受け取る可能性があります。 Microsoft 365でサポートされているすべての言語が、モバイル デバイスでの登録プロセスで現在サポートされているわけではありません。
 
-Android または iOS デバイスを持つユーザーは、登録プロセスの一環としてポータル サイト アプリをインストールする必要があります。
+AndroidデバイスまたはiOS デバイスを持つユーザーは、登録プロセスの一環としてポータル サイト アプリをインストールする必要があります。
 
 ## <a name="related-content"></a>関連コンテンツ
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 9af3694f530660ead6f10008e1642990a20cc0a6
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: b01a9315e143a3fb49cedef84e1f7b9e505441d5
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416620"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873338"
 ---
 # <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Microsoft Defender ウイルス対策更新プログラムのソースを管理する
 
@@ -68,7 +68,7 @@ ms.locfileid: "65416620"
 - [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) <sup>[[1](#fn1)]<sup></sup>  
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [ネットワーク ファイル共有](#unc-share)
-- [Microsoft Defender ウイルス対策とその他の Microsoft マルウェア対策](https://www.microsoft.com/wdsi/defenderupdates) <sup>[[2](#fn1)]<sup></sup>のセキュリティ インテリジェンス更新プログラム
+- [Microsoft Defender ウイルス対策とその他の Microsoft マルウェア対策](/microsoft-365/security/defender-endpoint/manage-protection-update-schedule-microsoft-defender-antivirus) <sup>[[2](#fn1)]<sup></sup>のセキュリティ インテリジェンス更新プログラム
 
 (<a id="fn1">1</a>) Intune 内部定義更新サーバー - SCCM/SUP を使用して Microsoft Defender ウイルス対策 の定義更新プログラムを取得し、クライアント デバイスでブロックされている Windows Update にアクセスする必要がある場合は、共同管理に移行し、エンドポイント保護ワークロードを Intune にオフロードできます。 Intune で構成されたマルウェア対策ポリシーには、オンプレミスの WSUS を更新ソースとして使用するように構成できる "内部定義更新サーバー" のオプションがあります。 これにより、企業に対して承認される公式 WU サーバーからの更新プログラムを制御できます。また、ネットワーク トラフィックをプロキシして、公式の Windows Update ネットワークに保存するのにも役立ちます。
 
@@ -83,12 +83,10 @@ Microsoft Update では、最大限の保護を確保するために、迅速な
 
 > [!IMPORTANT]
 > サーバー更新サービスまたは Microsoft Update の後に [Microsoft セキュリティ インテリジェンス ページ](https://www.microsoft.com/security/portal/definitions/adl.aspx)の更新プログラム Windowsをフォールバック ソースとして設定した場合、更新プログラムは、現在の更新プログラムが最新でないと見なされた場合にのみ、セキュリティ インテリジェンス更新プログラムとプラットフォーム更新プログラムからダウンロードされます。 (既定では、Windows Server Update Service または Microsoft Update サービスから更新プログラムを適用できないのは、連続する 7 日間です)。
-> ただし、[保護が最新でないとして報告されるまでの日数を設定](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)できます。<p>
+> ただし、[保護が最新でないとして報告されるまでの日数を設定](/microsoft-365/security/defender-endpoint/manage-outdated-endpoints-microsoft-defender-antivirus)できます。<p>
 > 2019 年 10 月 21 日 (月曜日) 以降、セキュリティ インテリジェンスの更新プログラムとプラットフォーム更新プログラムは SHA-2 のみ署名されます。 最新のセキュリティ インテリジェンス更新プログラムとプラットフォーム更新プログラムを取得するには、SHA-2 をサポートするようにデバイスを更新する必要があります。 詳細については、「[Windows および WSUS の 2019 SHA-2 コード署名サポートの要件](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus)」を参照してください。
 
 各ソースには、次の表に示すように、更新プログラムを発行する頻度に加えて、ネットワークの構成方法に依存する一般的なシナリオがあります。
-
-<br/><br/>
 
 |Location|シナリオ例|
 |---|---|

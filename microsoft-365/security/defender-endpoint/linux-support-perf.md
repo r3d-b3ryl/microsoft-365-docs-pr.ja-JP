@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 369c6a198035418a5c16e2a72d84c8dcfc88be2f
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666440"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873008"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux でのMicrosoft Defender for Endpointのパフォーマンスの問題のトラブルシューティング
 
@@ -190,7 +190,7 @@ Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Linux [上のオ�
    ![コマンド ラインの例の画像。](images/4ca188f6c457e335abe3c9ad3eddda26.png)
 
 > [!NOTE]
-> - アナライザーでは、結果出力を生成するために 'lxml' が必要です。 インストールされていない場合、アナライザーは、以下の Python パッケージの公式リポジトリからそれをフェッチしようとします。 <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - アナライザーでは、結果出力を生成するために 'lxml' が必要です。 インストールされていない場合、アナライザーは、以下の Python パッケージの公式リポジトリからそれをフェッチしようとします。 <https://pypi.org/search/?q=lxml>
 > 
 > - さらに、このツールでは現在、Python バージョン 3 以降をインストールする必要があります。
 >
@@ -243,9 +243,9 @@ Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Linux [上のオ�
 
   説明: HTML レポートを作成するときにアナライザーによって使用される追加の XML ファイル。
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  説明: [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS 用の監査済みサービスと関連コンポーネントの詳細
+  説明: [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS の監査済みサービスと関連コンポーネントの詳細
 
 - perf_benchmark.tar.gz
 

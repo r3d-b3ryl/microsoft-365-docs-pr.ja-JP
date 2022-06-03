@@ -20,19 +20,19 @@ ms.collection:
 ms.topic: reference
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 84ec7e361cccdc886650b0710f738a4315c4db8d
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 8e0bc9ca78a7e0baad7c07e73790215618aff9ab
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63527060"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873741"
 ---
 #  <a name="upload-files-to-the-live-response-library"></a>ライブ応答ライブラリにファイルをアップロードする  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -72,7 +72,7 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|  名前   |    種類    |       説明                         |
+|  名前   |    型    |       説明                         |
 |-----------------|--------|--------------------------------|
 | Authorization   | String | ベアラー\<token>。 必須です。      |
 | Content-Type    | string | multipart/form-data。 必須です。 |
@@ -81,12 +81,12 @@ POST https://api.securitycenter.microsoft.com/api/libraryfiles
 
 要求本文で、次のパラメーターを含むフォーム データ オブジェクトを指定します。
 
-| パラメーター         |     種類         |       説明                                        |
+| パラメーター         |     型         |       説明                                        |
 |-----------------------|--------------|------------------------------------------------------------|
 | ファイル                  | ファイルの内容 | ライブ応答ライブラリにアップロードするファイル。必須 |
 | 説明           | String       | ファイルの説明。                                  |
 | ParametersDescription | String       | (省略可能)スクリプトを実行するために必要なパラメーター。 既定値は空の文字列です。                |
-| OverrideIfExists      | ブール値      | (省略可能)ファイルが既に存在する場合は、ファイルをオーバーライドするかどうかを指定します。 既定値は空の文字列です。          |
+| OverrideIfExists      | Boolean      | (省略可能)ファイルが既に存在する場合は、ファイルをオーバーライドするかどうかを指定します。 既定値は空の文字列です。          |
 
 
 

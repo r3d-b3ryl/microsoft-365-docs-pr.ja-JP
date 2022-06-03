@@ -10,17 +10,16 @@ ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/18/2022
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 690ec028b3013bf00e28547ff440c7804b4d0f64
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416422"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872316"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -36,7 +35,7 @@ ms.locfileid: "65416422"
 
 Microsoft リモート デスクトップ サービスと VDI のサポートの詳細については、[Azure Virtual Desktop のドキュメントを参照してください](/azure/virtual-desktop)。
 
-Azure ベースの仮想マシンについては、「[Microsoft Defender for CloudにEndpoint Protectionをインストールする](/azure/security-center/security-center-install-endpoint-protection)」を参照してください。
+Azure ベースの仮想マシンについては、「[Microsoft Defender for CloudにEndpoint Protectionをインストールする](/azure/defender-for-cloud/endpoint-protection-recommendations-technical)」を参照してください。
 
 VDI で実行されている VM に更新プログラムを簡単にデプロイする機能を使用して、このガイドを短縮し、コンピューターで迅速かつ簡単に更新プログラムを入手する方法に焦点を当てています。 更新プログラムがホスト サーバー上のコンポーネント ビットに展開され、オンになると VM に直接ダウンロードされるため、ゴールデン イメージを定期的に作成してシールする必要はなくなりました。
 
@@ -53,7 +52,7 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
 また、[Virtual Desktop インフラストラクチャのホワイトペーパー Microsoft Defender ウイルス対策](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)をダウンロードすることもできます。このホワイト ペーパーでは、新しい共有セキュリティ インテリジェンス更新機能と、パフォーマンス テストと、独自の VDI でウイルス対策のパフォーマンスをテストする方法に関するガイダンスを確認できます。
 
 > [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
 
 > [!IMPORTANT]
 > VDI はWindows Server 2012またはWindows Server 2016でホストできますが、以前のバージョンのWindowsでは利用できない保護テクノロジと機能が強化されているため、仮想マシン (VM) は少なくとも 1607 Windows 10実行されている必要があります。

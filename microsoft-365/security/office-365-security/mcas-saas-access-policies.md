@@ -15,43 +15,43 @@ ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
 ms.prod: m365-security
-ms.openlocfilehash: a53666c58c8a9cc5793d160c428bc96ea322b274
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8386b01da6d0db5703d74d96f4e22de18b1f7d70
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945541"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873624"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>推奨される SaaS アプリ用 Microsoft Defender for Cloud Apps ポリシー
 
-Microsoft Defender for Cloud Apps Azure AD条件付きアクセス ポリシーに基づいて構築され、ダウンロードのブロック、アップロード、コピーと貼り付け、印刷など、SaaS アプリできめ細かなアクションをリアルタイムで監視および制御できます。 この機能により、企業リソースにアンマネージド デバイスやゲスト ユーザーからアクセスされる場合など、固有のリスクを伴うセッションにセキュリティが追加されます。
+Microsoft Defender for Cloud Appsは、ダウンロードのブロック、アップロード、コピーと貼り付け、印刷など、SaaS アプリできめ細かなアクションをリアルタイムで監視および制御できるように、Azure AD の条件付きアクセス ポリシーに基づいています。 この機能により、企業リソースにアンマネージド デバイスやゲスト ユーザーからアクセスされる場合など、固有のリスクを伴うセッションにセキュリティが追加されます。
 
-Defender for Cloud Apps は Microsoft Purview Information Protectionともネイティブに統合され、機密情報の種類と秘密度ラベルに基づいて機密データを検索し、適切なアクションを実行するためのリアルタイムコンテンツ検査を提供します。
+Defender for Cloud アプリは、Microsoft Purview 情報保護とネイティブに統合され、機密情報の種類と秘密度ラベルに基づいて機密データを検索し、適切なアクションを実行するためのリアルタイムコンテンツ検査を提供します。
 
 このガイダンスには、次のシナリオに関する推奨事項が含まれています。
 
 - SaaS アプリを IT 管理に取り込む
 - 特定の SaaS アプリの保護を調整する
-- データ保護規則に準拠できるように Microsoft Purview データ損失防止 (DLP) を構成する
+- データ保護規則に準拠できるようにMicrosoft Purviewデータ損失防止 (DLP) を構成する
 
 ## <a name="bring-saas-apps-into-it-management"></a>SaaS アプリを IT 管理に取り込む
 
-Defender for Cloud Apps を使用して SaaS アプリを管理する最初の手順は、これらを検出してAzure AD テナントに追加することです。 検出に関するヘルプが必要な場合は、 [ネットワーク内の SaaS アプリの検出と管理に関するページを参照してください](/cloud-app-security/tutorial-shadow-it)。 アプリを検出したら、[これらをAzure AD テナントに追加します](/azure/active-directory/manage-apps/add-application-portal)。
+Defender for Cloud Apps を使用して SaaS アプリを管理する最初の手順は、これらを検出してから Azure AD テナントに追加することです。 検出に関するヘルプが必要な場合は、 [ネットワーク内の SaaS アプリの検出と管理に関するページを参照してください](/cloud-app-security/tutorial-shadow-it)。 アプリを検出したら、 [これらを Azure AD テナントに追加します](/azure/active-directory/manage-apps/add-application-portal)。
 
 これらの管理を開始するには、次の手順を実行します。
 
-1. まず、Azure ADで、新しい条件付きアクセス ポリシーを作成し、"条件付きアクセス アプリ制御の使用" に構成します。 これにより、要求が Defender for Cloud Apps にリダイレクトされます。 1 つのポリシーを作成し、すべての SaaS アプリをこのポリシーに追加できます。
+1. まず、Azure AD で新しい条件付きアクセス ポリシーを作成し、"条件付きアクセス アプリ制御を使用する" に構成します。 これにより、要求が Defender for Cloud Apps にリダイレクトされます。 1 つのポリシーを作成し、すべての SaaS アプリをこのポリシーに追加できます。
 1. 次に、Defender for Cloud Apps でセッション ポリシーを作成します。 適用するコントロールごとに 1 つのポリシーを作成します。
 
-通常、SaaS アプリに対するアクセス許可は、アプリへのアクセスに必要なビジネスニーズに基づいています。 これらのアクセス許可は非常に動的な場合があります。 Defender for Cloud Apps ポリシーを使用すると、ユーザーが開始点、エンタープライズ、または特殊なセキュリティ保護に関連付けられているAzure AD グループに割り当てられているかどうかに関係なく、アプリ データの保護が保証されます。
+通常、SaaS アプリに対するアクセス許可は、アプリへのアクセスに必要なビジネスニーズに基づいています。 これらのアクセス許可は非常に動的な場合があります。 Defender for Cloud Apps ポリシーを使用すると、ユーザーが開始点、エンタープライズ、または特殊なセキュリティ保護に関連付けられている Azure AD グループに割り当てられているかどうかに関係なく、アプリ データの保護が保証されます。
 
-SaaS アプリのコレクション全体でデータを保護するために、次の図は、Defender for Cloud Apps で作成できる必要なAzure AD条件付きアクセス ポリシーと推奨されるポリシーを示しています。 この例では、Defender for Cloud Apps で作成されたポリシーは、管理しているすべての SaaS アプリに適用されます。 これらは、既にファイルに適用されている機密ラベルだけでなく、デバイスが管理されているかどうかに基づいて適切な制御を適用するように設計されています。
+SaaS アプリのコレクション全体でデータを保護するために、次の図は、必要な Azure AD 条件付きアクセス ポリシーと、Defender for Cloud Apps で作成できる推奨ポリシーを示しています。 この例では、Defender for Cloud Apps で作成されたポリシーは、管理しているすべての SaaS アプリに適用されます。 これらは、既にファイルに適用されている機密ラベルだけでなく、デバイスが管理されているかどうかに基づいて適切な制御を適用するように設計されています。
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Defender for Cloud Apps で SaaS アプリを管理するためのポリシー" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
-次の表に、Azure ADで作成する必要がある新しい条件付きアクセス ポリシーを示します。
+次の表に、Azure AD で作成する必要がある新しい条件付きアクセス ポリシーを示します。
 
-|保護レベル|ポリシー|詳細情報|
+|保護レベル|ポリシー|詳細|
 |---|---|---|
 |すべての保護レベル|[Defender for Cloud アプリで条件付きアクセス アプリ制御を使用する](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|これにより、Defender for Cloud Apps を操作するように IdP (Azure AD) が構成されます。|
 ||||
@@ -65,7 +65,7 @@ SaaS アプリのコレクション全体でデータを保護するために、
 |特殊なセキュリティ|すべてのデバイスから分類されたラベルが付いたファイルのダウンロードをブロックします (これにより、ブラウザーのみのアクセスが提供されます)|
 |||
 
-条件付きアクセス アプリ制御を設定するためのエンドツーエンドの手順については、「注目のアプリに [条件付きアクセス アプリコントロールをデプロイする](/cloud-app-security/proxy-deployment-aad)」を参照してください。 この記事では、Azure ADで必要な条件付きアクセス ポリシーを作成し、SaaS アプリをテストするプロセスについて説明します。
+条件付きアクセス アプリ制御を設定するためのエンドツーエンドの手順については、「注目のアプリに [条件付きアクセス アプリコントロールをデプロイする](/cloud-app-security/proxy-deployment-aad)」を参照してください。 この記事では、Azure AD で必要な条件付きアクセス ポリシーを作成し、SaaS アプリをテストするプロセスについて説明します。
 
 詳細については、「[条件付きアクセス アプリ制御を使用してアプリを保護Microsoft Defender for Cloud Apps」を](/cloud-app-security/proxy-intro-aad)参照してください。
 
@@ -79,7 +79,7 @@ SaaS アプリのコレクション全体でデータを保護するために、
 - ほとんどアクセスがない国からのアクティビティ
 - 疑わしい IP アドレスからのアクティビティ
 - 不可能な移動
-- 終了したユーザーによって実行されるアクティビティ (IdP としてAADが必要)
+- 終了したユーザーによって実行されるアクティビティ (IdP として AAD が必要)
 - マルウェアの検出
 - 複数回のログイン試行の失敗
 - ランサムウェアのアクティビティ
@@ -107,4 +107,4 @@ Defender for Cloud アプリは、コンプライアンス規制の保護を構�
 
 ## <a name="next-steps"></a>次の手順
 
-Defender for Cloud アプリの使用の詳細については、[Microsoft Defender for Cloud Appsドキュメントを参照してください](//cloud-app-security/)。
+Defender for Cloud アプリの使用の詳細については、[Microsoft Defender for Cloud Appsドキュメントを参照してください](/defender-cloud-apps/)。

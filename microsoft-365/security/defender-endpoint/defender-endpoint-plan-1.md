@@ -7,7 +7,6 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 01/19/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-overview
-ms.openlocfilehash: 774d54aee080fbe3d6f5576fb29c85d887717b70
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ace1eae6ab668a34e4ceff676b9edf01196521dd
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663514"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872722"
 ---
 # <a name="overview-of-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint プラン 1 の概要
 
@@ -149,7 +148,7 @@ Web 保護を使用すると、Web の脅威や不要なコンテンツから組
 - 機密データと知的財産を保護する
 - セキュリティへの投資を延長する
 
-詳細については、「[高度なセキュリティを備えたファイアウォールWindows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)」を参照してください。
+詳細については、「[高度なセキュリティを備えたWindows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)」を参照してください。
 
 ### <a name="application-control"></a>アプリケーション制御
 
@@ -193,7 +192,10 @@ Defender for Endpoint API を使用すると、ワークフローを自動化し
 - Windows 7 (ESU が必要)
 - Windows 8.1
 - Windows 10バージョン 1709 以降
-- macOS: 11.5 (Big Sur)、10.15.7 (Catalina)、または 10.14.6 (Mojave)
+- Windows 10 Enterprise
+- Windows 10 Enterprise LTSC 2016 (以降)](/windows/whats-new/ltsc/)
+- Windows 10 Enterprise IoT
+- macOS (最新の 3 つのリリースがサポートされています)
 - iOS
 - Android OS
 

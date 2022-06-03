@@ -230,7 +230,7 @@
         - name: データの移行中および移行後
           href: during-and-after-your-data-move.md
         - name: データ移行についての一般的な FAQ
-          href: data-move-faq.yml
+          href: data-move-faq.md
         - name: 顧客データの保存場所
           href: o365-data-locations.md
         - name: 欧州連合のデータの場所

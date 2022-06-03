@@ -16,14 +16,13 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 11/29/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 2155c72d7008bf3669a1908b3fd866877eb36a7c
-ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
+ms.openlocfilehash: 6a5df2cee1230050267f926297c1b00e47fb0ec3
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "62464616"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874064"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用したMicrosoft Defender for Endpointの管理
 
@@ -42,23 +41,21 @@ Azure Active Directory Domain Services の グループ ポリシー オブジ�
 ## <a name="configure-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用してMicrosoft Defender for Endpointを構成する
 
 > [!NOTE]
-> [Windows Server 2012 R2 と 2016 の新しい統合Microsoft Defender for Endpoint ソリューション](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)を使用している場合は、中央ストアで最新の ADMX ファイルを使用して、正しいMicrosoft Defender for Endpoint ポリシー オプションにアクセスしていることを確認してください。 [Windowsで グループ ポリシー 管理用のセントラル ストアを作成および管理する方法と、Windows 10](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)**で使用する** 最新のファイルをダウンロードする方法を参照してください。 
+> [Windows Server 2012 R2 と 2016 の新しい統合Microsoft Defender for Endpoint ソリューション](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)を使用している場合は、中央ストアで最新の ADMX ファイルを使用して、正しいMicrosoft Defender for Endpoint ポリシー オプションにアクセスしていることを確認してください。 Windows [でグループ ポリシー管理用テンプレートの中央Microsoft Storeを作成および管理し、Windows 10](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)**で使用する** 最新のファイルをダウンロードする方法を参照してください。 
 
 次の表に、グループ ポリシー オブジェクトを使用してMicrosoft Defender for Endpointを構成するために実行できるさまざまなタスクを示します。
-
-<br/><br/>
 
 |タスク|追加情報|
 |---|---|
 |**ユーザー オブジェクトとコンピューター オブジェクトの設定を管理する** <br/><br/> *組み込みのグループ ポリシー オブジェクトをカスタマイズするか、組織のニーズに合わせてカスタム グループ ポリシー オブジェクトと組織単位を作成します。*|[Azure Active Directory Domain Services マネージド ドメインでグループ ポリシーを管理する](/azure/active-directory-domain-services/manage-group-policy)|
 |**Microsoft Defender ウイルス対策を構成する** <br/><br/> *ポリシー設定、除外、修復、組織のデバイス (エンドポイントとも呼ばれる) でのスケジュールされたスキャンなど、ウイルス対策機能&機能を構成します。*|[グループ ポリシー設定を使用して Microsoft Defender ウイルス対策を管理する](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus) <br/><br/> [グループ ポリシーを使用してクラウド配信保護を有効にする](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus#use-group-policy-to-enable-cloud-delivered-protection)|
-|**組織の攻撃面削減ルールを管理する** <br/><br/> *ファイル&フォルダーを除外するか、ユーザーのデバイスに表示される通知アラートにカスタム テキストを追加して、攻撃対象の縮小ルールをカスタマイズします。*|[グループ ポリシー オブジェクトを使用して攻撃面の縮小ルールをカスタマイズする](/microsoft-365/security/defender-endpoint/customize-attack-surface-reduction#use-group-policy-to-exclude-files-and-folders)|
+|**組織の攻撃面削減ルールを管理する** <br/><br/> *ファイル&フォルダーを除外するか、ユーザーのデバイスに表示される通知アラートにカスタム テキストを追加して、攻撃対象の縮小ルールをカスタマイズします。*|[グループ ポリシー オブジェクトを使用して攻撃面の縮小ルールをカスタマイズする](/microsoft-365/security/defender-endpoint/attack-surface-reduction-rules-deployment-implement)|
 |**エクスプロイト保護の設定を管理する** <br/><br/> *エクスプロイト保護設定をカスタマイズし、構成ファイルをインポートしてから、グループ ポリシーを使用してその構成ファイルをデプロイできます。*|[エクスプロイト保護設定をカスタマイズする](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [エクスプロイト保護構成のインポート、エクスポート、展開](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml) <br/><br/> [グループ ポリシーを使用して構成を配布する](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)|
 |**ネットワーク保護を有効にして** 、従業員がインターネット上の悪意のあるコンテンツのアプリを使用できないようにする <br/><br/> *テスト環境でネットワーク保護に最初に [監査モード](/microsoft-365/security/defender-endpoint/evaluate-network-protection) を使用して、ロールアウトする前にブロックされるアプリを確認することをお勧めします。*|[グループ ポリシーを使用してネットワーク保護を有効にする](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |ランサムウェアから保護するように **フォルダー アクセスの制御を構成** する <br/><br/> *[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソーイウェア保護とも呼ばれます。*|[グループ ポリシーを使用してフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
 |インターネット上の悪意のあるサイトやファイルから保護するように **Microsoft Defender SmartScreenを構成** します。|[グループ ポリシーを使用してMicrosoft Defender SmartScreen グループ ポリシーとモバイル デバイス管理 (MDM) の設定を構成する](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
 |Windowsを実行している組織のデバイスに関する情報を保護するように **暗号化と BitLocker を構成** する|[BitLocker グループ ポリシー設定](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
-|資格情報盗難攻撃から保護するように **Microsoft Defender Credential Guard を構成する**|[グループ ポリシーを使用してWindows Defender Credential Guard を有効にする](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
+|資格情報盗難攻撃から保護するように **Microsoft Defender Credential Guard を構成する**|[グループ ポリシーを使用してWindows Defender Credential Guardを有効にする](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを構成する
 

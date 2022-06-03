@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を設定して使用することで、Microsoft 365組織に接続されているモバイル デバイスを管理し、セキュリティで保護します。
-ms.openlocfilehash: 168fd1f0ef08cf1a9bd5d7c90c53781016b232e6
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636132"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863208"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365の基本的なモビリティとセキュリティの概要
 
@@ -50,7 +50,7 @@ Microsoft 365グローバル管理者は、基本的なモビリティとセキ�
 
 **手順 3:** デバイス ポリシーを作成し、ユーザーのグループに適用します。 これを行うと、ユーザーはデバイスに登録メッセージを受け取り、登録が完了すると、デバイスは設定したポリシーによって制限されます。 詳細については、「 [Basic Mobility and Security を使用してモバイル デバイスを登録する」](enroll-your-mobile-device.md)を参照してください。 
 
-:::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なセキュリティとモビリティのポリシー設定。":::
+:::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="基本的なセキュリティとモビリティのポリシー設定。":::
 
 ## <a name="device-management-tasks"></a>デバイス管理タスク
 

@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティを使用して、組織の情報を保護するデバイス ポリシーを作成します。
-ms.openlocfilehash: d4e693d27ea71cdd18c9ea668a2102e0ce061b8d
-ms.sourcegitcommit: cdb90f28e59f36966f8751fa8ba352d233317fc1
+ms.openlocfilehash: f6cbcd72f5e5cae93b7fa775d7bce6f2906f454e
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/09/2022
-ms.locfileid: "63400449"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863240"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Basic Mobility and Security でデバイス セキュリティ ポリシーを作成する
 
@@ -48,11 +48,11 @@ Basic Mobility and Security を使用して、Microsoft 365に関する組織情
 
 開始する前に、基本的なモビリティとセキュリティをアクティブ化して設定していることを確認します。 手順については、「 [基本的なモビリティとセキュリティの概要」](overview.md)を参照してください。
 
-1. ブラウザーから「.」と入力します <https://protection.office.com/devicev2>。
+1. ブラウザーから「.」と入力します <https://compliance.microsoft.com/basicmobilityandsecurity>。
 
 2. [**ポリシーの作成**] を選択します。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なモビリティとセキュリティのポリシー設定。":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="基本的なモビリティとセキュリティのポリシー設定。":::
 
 3. [ **ポリシー設定]** ページで、組織内のモバイル デバイスに適用する要件を指定します。
 
@@ -68,7 +68,7 @@ Basic Mobility and Security を使用して、Microsoft 365に関する組織情
 
 デバイス ポリシーを作成したら、組織に展開する前に、ポリシーが想定どおりに機能することを確認します。
 
-1. ブラウザーから「.」と入力します [https://protection.office.com/devicev2](https://protection.office.com/devicev2)。
+1. ブラウザーから「.」と入力します [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity)。
 2. [ **管理対象デバイスの一覧を表示する**] を選択します。
 3. ポリシーが適用されているユーザー デバイスの状態を確認します。 デバイスの **状態** を管理する必要があります **。**
 4. デバイスを選択した後に[ **Factory reset** ]\(会社 **のデータ** を **管理** から削除\) ボタンをクリックして、デバイスの完全ワイプまたは選択的ワイプを実行することもできます。 手順については、「Microsoft 365でモバイル デバイスをワイプする」を参照してください。
@@ -77,7 +77,7 @@ Basic Mobility and Security を使用して、Microsoft 365に関する組織情
 
 デバイス ポリシーを作成し、それが期待どおりに動作することを確認したら、それを組織に展開します。
 
-1. ブラウザーの種類から: [https://protection.office.com/devicev2](https://protection.office.com/devicev2).
+1. ブラウザーの種類から: [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity).
 2. 展開するポリシーを選択し、**適用先のグループ** の横にある **[編集]** を選択します。
 3. 追加するグループを検索し、[ **選択**] をクリックします。
 4. [ **閉じる** ] と **[変更] の設定を選択します。**
@@ -91,31 +91,31 @@ Basic Mobility and Security を使用して、Microsoft 365に関する組織情
 
 **アプリへのアクセスをブロックするには:**
 
-1. ブラウザーから「.」と入力します [https://protection.office.com/devicev2](https://protection.office.com/devicev2)。
+1. ブラウザーから「.」と入力します [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity)。
 2. [ **組織全体のデバイス アクセス設定の管理] を選択します**。
-3. サポートされていないデバイスをブロックするには、[**デバイスが Basic Mobility and Security for Microsoft 365でサポートされていない場合**] で **[ブロック**] を選択し、[保存] を選択 **します**。
+3. サポートされていないデバイスをブロックするには、[**デバイスが Basic Mobility and Security for Microsoft 365でサポートされていない場合**] で **[アクセス**] を選択し、[保存] を選択 **します**。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-5-block-access.png" alt-text="基本的なモビリティとセキュリティ ブロックのアクセス オプション。":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-access.png" alt-text="基本的なモビリティとセキュリティ ブロックのアクセス オプション。":::
 
 ## <a name="step-5-choose-security-groups-to-be-excluded-from-conditional-access-checks"></a>手順 5: 条件付きアクセス チェックから除外するセキュリティ グループを選択する
 
 一部のユーザーをモバイル デバイスの条件付きアクセス チェックから除外し、それらのユーザーに対して 1 つ以上のセキュリティ グループを作成した場合は、ここにセキュリティ グループを追加します。 これらのグループのユーザーには、サポートされているモバイル デバイスに適用されるポリシーはありません。 これは、組織で Basic Mobility と Security を使用する必要がなくなった場合に推奨されるオプションです。
 
-1. ブラウザーから「.」と入力します [https://protection.office.com/devicev2](https://protection.office.com/devicev2)。
+1. ブラウザーから「.」と入力します [https://compliance.microsoft.com/basicmobilityandsecurity](https://compliance.microsoft.com/basicmobilityandsecurity)。
 
 2. [ **組織全体のデバイス アクセス設定の管理] を選択します**。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="基本的なモビリティとセキュリティによってポリシー オプションが作成されます。":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-microsoft-purview.png" alt-text="基本的なモビリティとセキュリティによってポリシー オプションが作成されます。":::
 
 3. [**追加]** を選択して、Microsoft 365へのアクセスをブロックしないように除外するユーザーを含むセキュリティ グループを追加します。 ユーザーがこの一覧に追加されると、サポートされていないデバイスを使用しているときにMicrosoft 365電子メールにアクセスできます。
 
 4. [グループの選択] パネルで、使用するセキュリティ **グループを選択** します。
 
-5. 名前を選択し、**AddSave** >  を選択 **します**。
+5. 名前を選択し、[**保存の追加]** >  をクリック **します**。
 
 6. **組織全体のデバイス アクセス設定パネルで**、[保存] を選択 **します**。
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-8-allow-access.png" alt-text="基本的なモビリティとセキュリティは、アクセスを許可するオプションです。":::
+   :::image type="content" source="../../media/basic-mobility-security/basic-mobility-groups.png" alt-text="基本的なモビリティとセキュリティは、アクセスを許可するオプションです。":::
 
 ## <a name="what-is-the-impact-of-security-policies-on-different-device-types"></a>さまざまなデバイスの種類に対するセキュリティ ポリシーの影響は何ですか?
 
@@ -123,26 +123,26 @@ Basic Mobility and Security を使用して、Microsoft 365に関する組織情
 
 |**セキュリティ ポリシー**|**Android**|**Samsung KNOX**|**iOS**|**注**|
 |:-----|:-----|:-----|:-----|:-----|
-|暗号化されたバックアップを要求|いいえ|はい|はい|iOS 暗号化バックアップが必要です。|
-|クラウド バックアップの禁止|はい|はい|はい|Android で Google バックアップをブロックする (淡色表示)、iOS でのクラウド バックアップ。|
-|ドキュメントの同期の禁止|いいえ|いいえ|はい|iOS: クラウド内のドキュメントをブロックします。|
-|写真の同期の禁止 |いいえ|いいえ|はい|iOS (ネイティブ): フォト ストリームをブロックします。|
-|画面キャプチャの禁止 |いいえ|はい|はい|試行時にブロックされます。|
-|ビデオ会議をブロックする |いいえ|いいえ|はい|FaceTime は iOS でブロックされ、Skypeや他のユーザーではブロックされません。|
-|診断データの送信をブロックする |いいえ|はい|はい|Android での Google クラッシュ レポートの送信をブロックします。|
-|アプリ ストアへのアクセスをブロックする |いいえ|はい|はい|Android ホーム ページでアプリ ストア アイコンが見つからない、Windowsで無効、iOS で見つかりません。|
-|アプリ ストアのパスワードを要求する |いいえ|いいえ|はい|iOS: iTunes の購入に必要なパスワード。|
-|リムーバブル ストレージへの接続をブロックする |いいえ|はい|該当なし|Android: SD カードは設定で淡色表示され、ユーザーに通知Windows、インストールされたアプリは使用できません|
-|Bluetooth 接続の禁止 |メモを表示する|メモを表示する|はい|Android の設定として BlueTooth を無効にすることはできません。 代わりに、BlueTooth を必要とするすべてのトランザクション (Advanced Audio Distribution、Audio/Video Remote Control、ハンズフリー デバイス、ヘッドセット、電話 Book Access、シリアル ポート) を無効にします。 これらのメッセージのいずれかが使用されると、ページの下部に小さなトースト メッセージが表示されます。|
+|暗号化されたバックアップを要求|いいえ|はい|はい|iOS暗号化されたバックアップが必要です。|
+|クラウド バックアップの禁止|はい|はい|はい|Android (淡色表示) で Google バックアップをブロックし、iOSのクラウド バックアップをブロックします。|
+|ドキュメントの同期の禁止|不要|不要|はい|iOS: クラウド内のドキュメントをブロックします。|
+|写真の同期の禁止 |不要|不要|はい|iOS (ネイティブ): フォト ストリームをブロックします。|
+|画面キャプチャの禁止 |不要|はい|はい|試行時にブロックされます。|
+|ビデオ会議をブロックする |不要|不要|はい|FaceTime は、Skypeや他のユーザーではなく、iOSでブロックされます。|
+|診断データの送信をブロックする |不要|はい|はい|Androidに関する Google クラッシュ レポートの送信をブロックします。|
+|アプリ ストアへのアクセスをブロックする |不要|はい|はい|Androidホーム ページにアプリ ストア アイコンが表示されません。Windowsでは無効になり、iOSでは表示されません。|
+|アプリ ストアのパスワードを要求する |不要|不要|はい|iOS: iTunes の購入に必要なパスワード。|
+|リムーバブル ストレージへの接続をブロックする |不要|はい|該当なし|Android: SD カードが設定で淡色表示され、ユーザーに通知Windows、インストールされているアプリは使用できません|
+|Bluetooth 接続の禁止 |メモを表示する|メモを表示する|はい|Androidの設定として BlueTooth を無効にすることはできません。 代わりに、BlueTooth を必要とするすべてのトランザクション (Advanced Audio Distribution、Audio/Video Remote Control、ハンズフリー デバイス、ヘッドセット、電話 Book Access、シリアル ポート) を無効にします。 これらのメッセージのいずれかが使用されると、ページの下部に小さなトースト メッセージが表示されます。|
 
 ## <a name="what-happens-when-you-delete-a-policy-or-remove-a-user-from-the-policy"></a>ポリシーを削除するか、ポリシーからユーザーを削除するとどうなりますか?
 
 ポリシーを削除するか、ポリシーが展開されたグループからユーザーを削除すると、ポリシー設定、Microsoft 365電子メール プロファイル、キャッシュされた電子メールがユーザーのデバイスから削除される可能性があります。 次の表を参照して、さまざまなデバイスの種類に対して削除される内容を確認します。
 
-|**削除された内容**|**iOS**|**Android (Samsung KNOX を含む)**|
+|**削除された内容**|**iOS**|**Android (Samsung KNOXを含む)**|
 |:-----|:-----|:-----|
-|Managed email <sup>profiles1</sup>|はい|いいえ|
-|クラウド バックアップの禁止|はい|いいえ|
+|マネージド 電子メール プロファイル<sup>1</sup>|はい|不要|
+|クラウド バックアップの禁止|はい|不要|
 
 <sup>1</sup> [ **電子メール プロファイルが管理** されている] オプションを選択してポリシーが展開された場合、そのプロファイル内のマネージド 電子メール プロファイルとキャッシュされた電子メールがユーザー デバイスから削除されます。
 

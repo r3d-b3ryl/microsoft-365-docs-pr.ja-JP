@@ -1,9 +1,9 @@
 ---
 title: データ移行をリクエストする方法
-ms.author: andyber
-author: andybergen
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
-ms.date: 12/10/2019
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-administration
@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: 既存のOffice 365のお客様は、Microsoft 365 サービス データを新しい地域に移行する期限の前に要求を送信する必要があります。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 023262910f55da0e1145cc02f339debf4dffdcd5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 492e7680524728a136d5aa5530285e50b47f2935
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096306"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874154"
 ---
 # <a name="how-to-request-your-data-move"></a>データ移行をリクエストする方法
 
@@ -71,11 +71,11 @@ Microsoft 365 管理センターのページにアクセスするには、左側
 
 2020 年 1 月現在、対象Office 365国のお客様は、チャット サービス データの移行をオプトインMicrosoft Teamsできます。  以前にData Residencyの移行をオプトインした顧客は、ローカル データセンター geo に移動Teams。  これらのお客様は、追加のアクションは必要ありません。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 [コア データを新しい Office 365 データ センター geo に移行する](moving-data-to-new-datacenter-geos.md)
 
-[データ移行についての一般的な FAQ](data-move-faq.yml)
+[データ移行についての一般的な FAQ](data-move-faq.md)
 
 [Microsoft Dynamics CRM Online の新しいデータ センター geo](/power-platform/admin/new-datacenter-regions)
   

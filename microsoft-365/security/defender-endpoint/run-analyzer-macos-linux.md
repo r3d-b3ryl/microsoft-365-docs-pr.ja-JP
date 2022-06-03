@@ -1,6 +1,6 @@
 ---
 title: macOS または Linux でのクライアント アナライザーの実行
-description: macOS または Linux でMicrosoft Defender for Endpointクライアント アナライザーを実行する方法について説明します
+description: macOSまたは Linux でMicrosoft Defender for Endpointクライアント アナライザーを実行する方法について説明します
 keywords: クライアント アナライザー, センサーのトラブルシューティング, アナライザー, mdeanalyzer, macos, linux, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d56cbb48697c4804aa493d945ff81c52e12f86c5
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 9e3b52f5e16a2294cc504791928f10a96e5e54c7
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470089"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872766"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -31,7 +31,7 @@ ms.locfileid: "64470089"
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>GUI シナリオを使用してアナライザーを実行する
 
-1. 調査する必要がある macOS または Linux コンピューターに [XMDE クライアント アナライザー](https://aka.ms/XMDEClientAnalyzer) ツールをダウンロードします。
+1. 調査する必要があるmacOSまたは Linux コンピューターに [XMDE クライアント アナライザー](https://aka.ms/XMDEClientAnalyzer) ツールをダウンロードします。
 
    > [!NOTE]
    > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'A9BF065DE3F2608A309BC4F5295548BB9931F107BF2F01DC42A789C5527C1308' です。
@@ -64,7 +64,7 @@ ms.locfileid: "64470089"
 4. 実際の診断パッケージを収集し、結果アーカイブ ファイルを生成するには、ルートとして再実行します。 `./mde_support_tool.sh -d`
 
 > [!NOTE]
-> - Linux の場合、アナライザーは結果出力を生成するために 'lxml' を必要とします。 インストールされていない場合、アナライザーは、以下の Python パッケージの公式リポジトリからそれをフェッチしようとします。 <https://files.pythonhosted.org/packages/\*/lxml\*.whl>
+> - Linux の場合、アナライザーは結果出力を生成するために 'lxml' を必要とします。 インストールされていない場合、アナライザーは、以下の Python パッケージの公式リポジトリからそれをフェッチしようとします。 <https://pypi.org/search/?q=lxml>
 > 
 > - さらに、このツールでは現在、Python バージョン 3 以降をインストールする必要があります。
 >
@@ -93,7 +93,7 @@ ms.locfileid: "64470089"
 **-f** \# 力<br>
 \# 出力が宛先パスに既に存在する場合は上書きする
 
-## <a name="result-package-contents-on-macos-and-linux"></a>macOS と Linux 上の結果パッケージの内容
+## <a name="result-package-contents-on-macos-and-linux"></a>macOSおよび Linux 上の結果パッケージの内容
 
 - report.html
 
@@ -101,9 +101,9 @@ ms.locfileid: "64470089"
 
 - mde_diagnostic.zip
 
-  説明: いずれかの [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information) で *mdatp 診断の作成* を実行するときに生成されるのと同じ診断出力
+  説明: いずれかの [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)で *mdatp 診断作成* を実行するときに生成されるのと同じ診断出力
 
-  または
+  or
 
   [ Linux ](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 
@@ -127,9 +127,9 @@ ms.locfileid: "64470089"
 
   説明: HTML レポートを作成するときにアナライザーによって使用される追加の XML ファイル。
 
-- Auditd_info.txt
+- Audited_info.txt
 
-  説明: [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-support-events) OS 用の監査済みサービスと関連コンポーネントの詳細
+  説明: [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS の監査済みサービスと関連コンポーネントの詳細
 
 - perf_benchmark.tar.gz
 

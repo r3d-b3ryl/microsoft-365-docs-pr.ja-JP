@@ -16,12 +16,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: d67a4ca067f16d74b15a1d7ece5c47d563f1a941
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: d60d01bd2a77d992110f85967196390f3dceae3d
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471915"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873712"
 ---
 # <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Managerを使用してWindowsデバイスをオンボードする
 
@@ -49,7 +49,7 @@ Configuration Managerを使用してデバイスをオンボードするため�
 Windows Server 2012 R2 とWindows Server 2016の場合は、オンボード手順を完了したら、[System Center Endpoint Protection クライアントを構成して更新](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients)する必要があります。
 
 > [!NOTE]
-> Defender for Endpoint では、 [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボードはサポートされません。 インストールまたはアップグレードWindows実行した後、ユーザーが OOBE を完了していることを確認します。
+> Defender for Endpoint では、 [Out-Of-Box Experience (OOBE)](/windows-hardware/test/assessments/out-of-box-experience) フェーズ中のオンボードはサポートされません。 インストールまたはアップグレードWindows実行した後、ユーザーが OOBE を完了していることを確認します。
 >
 > デバイスがオンボードされているかどうかを継続的に確認するために、Configuration Manager アプリケーションに検出ルールを作成できます。 アプリケーションは、パッケージやプログラムとは異なる種類のオブジェクトです。
 > デバイスがまだオンボードされていない場合 (保留中の OOBE の完了またはその他の理由により)、Configuration Managerは、ルールが状態変更を検出するまでデバイスのオンボードを再試行します。
@@ -200,7 +200,7 @@ Value: "1"
 
 詳細については、「[System Center 2012 R2 Configuration Managerのコンプライアンス設定の概要](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)

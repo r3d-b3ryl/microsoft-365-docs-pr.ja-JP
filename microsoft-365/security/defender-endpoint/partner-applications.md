@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e7470115d053cd892b87399b53ba0b471c3cda8e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: 2c0dd284b75d5dd1752259930b937502aaca60e1
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62765705"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874010"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointのパートナー アプリケーション
 
@@ -61,7 +61,7 @@ Microsoft Defender for Endpoint既存のセキュリティ ソリューション
 ![SafeBreach ロゴの画像。](images/safebreach-logo.png)|[SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)|SafeBreach シミュレーションと自動的に関連付けられる Defender for Endpoint セキュリティ イベントの可視性を得る
 ![Skybox 脆弱性制御ロゴの画像。](images/skybox-logo.png)|[Skybox の脆弱性制御](https://go.microsoft.com/fwlink/?linkid=2127467)|Skybox 脆弱性制御は、脆弱性の管理のノイズを削減し、ビジネス、ネットワーク、脅威のコンテキストを関連付けて、最も危険な脆弱性を明らかにします
 ![Splunk ロゴの画像。](images/splunk-logo.png)|[Splunk](https://go.microsoft.com/fwlink/?linkid=2129805)|Defender for Endpoint アドオンを使用すると、Splunk ユーザーはすべてのアラートを取り込み、Splunk に情報をサポートすることができます
-![XM Cyber ロゴの画像。](images/xmcyber-logo.png)|[XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700)|リスク要因と価値の高い資産に基づいて、アラートに対する応答に優先順位を付ける
+![XM Cyber ロゴの画像。](images/xmcyber-logo.png)|[XM Cyber](/microsoft-365/compliance/insider-risk-management-configure)|リスク要因と価値の高い資産に基づいて、アラートに対する応答に優先順位を付ける
 
 ### <a name="orchestration-and-automation"></a>オーケストレーションと自動化
 
@@ -88,7 +88,7 @@ Microsoft Defender for Endpoint既存のセキュリティ ソリューション
 ロゴ|パートナー名|説明
 :---|:---|:---
 ![Aruba ClearPass Policy Manager ロゴの画像。](images/aruba-logo.png)|[Aruba ClearPass ポリシー マネージャー](https://go.microsoft.com/fwlink/?linkid=2127544)|ネットワークへのアクセスを許可する前に、Defender for Endpoint が各エンドポイントにインストールおよび更新されていることを確認する
-![Blue Hexagon for Network ロゴの画像。](images/bluehexagon-logo.png)|[ネットワーク用の青い六角形](https://go.microsoft.com/fwlink/?linkid=2104613)|Blue Hexagon は、ネットワーク脅威保護のための業界初のリアルタイムディープ ラーニング プラットフォームを構築しました
+![Blue Hexagon for Network ロゴの画像。](images/bluehexagon-logo.png)|[ネットワーク用の青い六角形](/learn/modules/explore-malware-threat-protection/)|Blue Hexagon は、ネットワーク脅威保護のための業界初のリアルタイムディープ ラーニング プラットフォームを構築しました
 ![Corelight ロゴの画像。](images/logo-corelight.png)| [Corelight]( https://corelight.com/integrations/iot-security)| Corelight ネットワーク アプライアンスから送信されたデータを使用Microsoft 365 Defender、他の非管理対象デバイスや外部ネットワークとの通信など、アンマネージド デバイスのネットワーク アクティビティの可視性が向上します。
 ![CyberMDX ロゴの画像。](images/cybermdx-logo.png)|[CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620)|Cyber MDX は、包括的な医療資産の可視性、脅威の防止、および Defender for Endpoint 環境への再提供を統合します
 ![HYAS Protect ロゴの画像。](images/hyas-logo.png)|[HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763)|HYAS Protect は、攻撃者インフラストラクチャに関する信頼できる知識を利用して、サイバー攻撃からMicrosoft Defender for Endpointエンドポイントをプロアクティブに保護します
@@ -101,9 +101,9 @@ Microsoft Defender for Endpoint既存のセキュリティ ソリューション
 ![Bitdefender ロゴの画像。](images/bitdefender-logo.png)|[Bitdefender](https://go.microsoft.com/fwlink/?linkid=860032)|Bitdefender GravityZone は、高度なサイバー脅威の完全な範囲に対する包括的な保護を提供する、階層化された次世代エンドポイント保護プラットフォームです
 ![Better Mobile ロゴの画像。](images/bettermobile-logo.png)|[Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)|モバイルの脅威&フィッシングを停止する AI ベースの MTD ソリューション。 ユーザーのプライバシーを保護するためのプライベート インターネット閲覧
 ![Corrata ロゴの画像。](images/corrata-logo.png)|[Corrata](https://go.microsoft.com/fwlink/?linkid=2081148)|モバイル ソリューション - Corrata からきめ細かな可視性と制御でモバイル デバイスを保護する
-![Lookout ロゴの画像。](images/lookout-logo.png)|[展望 台](https://go.microsoft.com/fwlink/?linkid=866935)|Android および iOS モバイル デバイス用の Lookout Mobile Threat Protection テレメトリを取得する
+![Lookout ロゴの画像。](images/lookout-logo.png)|[展望 台](https://go.microsoft.com/fwlink/?linkid=866935)|モバイル デバイスのAndroidとiOSのLookout Mobile Threat Protectionテレメトリを取得する
 ![Symantec Endpoint Protection Mobile ロゴの画像。](images/symantec-logo.png)|[Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)|SEP Mobile は、企業がモバイル デバイス上のセキュリティの脅威と脆弱性を予測、検出、防止するのに役立ちます
-![Zimperium ロゴの画像。](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Machine Learning ベースの Mobile Threat Defense を使用して、Defender for Endpoint を iOS および Android に拡張する
+![Zimperium ロゴの画像。](images/zimperium-logo.png)|[Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Machine Learning ベースの Mobile Threat Defense を使用して、Defender for Endpoint をiOSとAndroidに拡張する
 
 ## <a name="other-integrations"></a>その他の統合
 

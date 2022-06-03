@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: fc641845907e157e555e70104b2fcb472ad496af
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 9998f71d275d28f10fc950b978cc13ce7fd3c335
+ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599279"
+ms.lasthandoff: 06/02/2022
+ms.locfileid: "65840433"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -268,7 +268,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
   - 概要で説明したように、ラベル設定は自動ラベル付けポリシーを補完するため、Office アプリのラベル設定の自動ラベル付けがオンかオフかは関係ありません。
   - 自動ラベル付けに使用するラベルが視覚的なマーキング (ヘッダー、フッター、透かし) を使用するように構成されている場合、これらはドキュメントに適用されないことに注意してください。
   - ラベルが[暗号化](encryption-sensitivity-labels.md)を適用する場合:
-    - 自動ラベル付けポリシーに SharePoint または OneDrive の場所が含まれている場合は、[**アクセス許可を今すぐ割り当てる**] 設定でラベルを構成する必要があります。
+    - 自動ラベル付けポリシーに SharePoint または OneDrive の場所が含まれている場合は、 **[今すぐアクセス許可を割り当てる ]** 設定にラベルを構成し、 **コンテンツへのユーザー アクセスの有効期限** を **[なし]** に設定する必要があります。
     - 自動ラベル付けポリシーが Exchange 専用の場合、ラベルは、[**アクセス許可を今すぐ割り当てる**] または [**ユーザーにアクセス許可を割り当てさせる**] ([転送しない] または [暗号化のみ] オプションの場合) のいずれかに構成できます。
 
 ### <a name="learn-about-simulation-mode"></a>シミュレーション モードの詳細

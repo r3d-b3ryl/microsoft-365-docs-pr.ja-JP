@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 864d67aeaa84713b1b2126b017fadacd0e43dc7a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 7b1614738b17d7f3cf78a6bfabb84f85196d42ff
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623001"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65873250"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -41,7 +41,7 @@ ms.locfileid: "65623001"
 > Microsoft Defender ウイルス対策除外は、[攻撃面縮小 (ASR) ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)や[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外したファイルは、引き続きEDRアラートやその他の検出をトリガーできます。
 > ファイルを広範に除外するには、それらをMicrosoft Defender for Endpoint[カスタム インジケーター](/microsoft-365/security/defender-endpoint/manage-indicators)に追加します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 [除外リストを定義する前に、除外を定義する](configure-exclusions-microsoft-defender-antivirus.md)おすすめを参照してください。
 
@@ -109,21 +109,23 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 3. ツリーを展開して **、除外Windows Defender ウイルス対策コンポーネント** \> **をWindows** \> **します**。
 
 4. 編集用の **[パスの除外]** 設定を開き、除外を追加します。
+
     1. オプションを **[有効]** に設定します。
     2. **[オプション]** セクションで、[**表示**] を選択します。
     3. [ **値名** ] 列で、各フォルダーを独自の行に指定します。
     4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。
     5. **[値]** 列に **「0**」と入力します。
 
-5. その後で、**[OK]** を選択します。
+5. [**OK**] をクリックします。
 
 6. [ **拡張機能の除外] 設定を** 開いて編集し、除外を追加します。
+
     1. オプションを **[有効]** に設定します。
     2. **[オプション]** セクションで、[**表示**] を選択します。
     3. [ **値名** ] 列の下に、各ファイル拡張子を独自の行に入力します。
     4. **[値]** 列に **「0**」と入力します。
 
-7. その後で、**[OK]** を選択します。
+7. [**OK**] をクリックします。
 
 <a id="ps"></a>
 
@@ -192,7 +194,6 @@ ExclusionPath
 
 > [!IMPORTANT]
 > これらのワイルドカードには、主な制限事項と使用シナリオがあります。
->
 > - 環境変数の使用は、コンピューター変数と、NT AUTHORITY\SYSTEM アカウントとして実行されているプロセスに適用できる変数に制限されます。
 > - 1 つのエントリにつき最大 6 つのワイルドカードのみを使用できます。
 > - ドライブ文字の代わりにワイルドカードを使用することはできません。
@@ -200,8 +201,6 @@ ExclusionPath
 > - 現在、Microsoft Endpoint Configuration Managerではワイルドカード文字 (など`*``?`) はサポートされていません。
     
 次の表では、ワイルドカードを使用する方法と、いくつかの例を示します。
-
-<br/><br/>
 
 |ワイルドカード|例|
 |---|---|
@@ -211,9 +210,7 @@ ExclusionPath
 
 > [!IMPORTANT]
 > ファイル除外引数とフォルダー除外引数を混在させる場合、ルールは一致したフォルダー内のファイル引数の一致で停止し、サブフォルダー内のファイル一致は検索されません。
->
 > たとえば、フォルダー `c:\data\final\marked` 内の "date" で始まるすべてのファイルを除外し、 `c:\data\review\marked` ルール引数 `c:\data\*\marked\date*`を使用して除外できます。
->
 > ただし、この引数は、サブ `c:\data\final\marked` フォルダーまたはサブフォルダー内のファイルと `c:\data\review\marked`一致しません。
 
 <a id="review"></a>
@@ -289,7 +286,7 @@ ExclusionPath
 
 除外リスト内の項目は、次のいずれかの方法で取得できます。
 
-- [Intune](/intune/deploy-use/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune)
+- [Intune](/mem/intune/fundamentals/deployment-guide-intune-setup)
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - [MpCmdRun](command-line-arguments-microsoft-defender-antivirus.md)
 - [PowerShell](/powershell/module/defender)
@@ -297,7 +294,6 @@ ExclusionPath
 
 > [!IMPORTANT]
 > グループ ポリシーで行われた除外リストの変更 **は、**[Windows セキュリティ アプリ](microsoft-defender-security-center-antivirus.md)の一覧に表示されます。
->
 > Windows セキュリティ アプリで行われた変更は、グループ ポリシー リストには **表示されません**。
 
 PowerShell を使用する場合は、次の 2 つの方法で一覧を取得できます。
