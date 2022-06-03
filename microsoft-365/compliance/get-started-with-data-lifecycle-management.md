@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータの管理を開始する準備はできましたが、どこから始めればよいかわからないでしょうか。開始するには、いくつかの規範的なガイダンスをお読みください。
-ms.openlocfilehash: 95ce0286d5ec45b5dabcbd2447bd52821f547caf
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 6fe80e32096fc4394ba15786ef378f4b7997af2b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772732"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864462"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>データ ライフサイクル管理の使用を開始する
 
@@ -95,7 +95,7 @@ Microsoft 365 の保持を管理するための役割と役割グループにつ
 
 Microsoft 365 の保持をサポートするエンドユーザー向けドキュメントについては、次のセクションを参照してください。
 
-非アクティブなメール ボックスのデータ ライフサイクル管理機能と PST ファイルのインポートは、管理者のみが実行できる操作であるため、エンド ユーザー向けのドキュメントは必要ありません。 この機能を有効にした後、ユーザーが Outlook でアーカイブ メールボックスの仕組みを理解し操作できるようにするには、「[オンライン アーカイブ メールボックスを使用して電子メール ストレージを管理する](https://prod.support.services.microsoft.com/en-us/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)」を参照してください。
+非アクティブなメール ボックスのデータ ライフサイクル管理機能と PST ファイルのインポートは、管理者のみが実行できる操作であるため、エンド ユーザー向けのドキュメントは必要ありません。 この機能を有効にした後、ユーザーが Outlook でアーカイブ メールボックスの仕組みを理解し操作できるようにするには、「[オンライン アーカイブ メールボックスを使用して電子メール ストレージを管理する](https://support.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)」を参照してください。
 
 ### <a name="end-user-documentation-for-retention-and-deletion"></a>保持と削除に関するエンドユーザー向けドキュメント
 

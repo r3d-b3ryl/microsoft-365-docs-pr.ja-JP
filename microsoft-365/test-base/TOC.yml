@@ -20,6 +20,8 @@
           href: uploadApplication.md
     - name: パッケージをビルドする
       href: buildpackage.md
+    - name: 既存のパッケージを複製する
+      href: clonepackage.md
     - name: パッケージ ガイドライン
       href: contentguideline.md
     - name: アプリケーション/テストルール

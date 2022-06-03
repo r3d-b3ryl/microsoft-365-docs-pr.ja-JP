@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、毎月Microsoft 365 Lighthouseで追加、変更、および修正された内容を確認します。
-ms.openlocfilehash: 8c054539b5a19e3259ca20a2044f498a3c8e31eb
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: e84324d3d37b28daec1a7f5e4498e0427a29a588
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842275"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864437"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの新機能
 
@@ -30,16 +30,6 @@ Microsoft 365 Lighthouse[に新機能](m365-lighthouse-overview.md)を継続的�
 
 > [!NOTE]
 > 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、すぐに表示されます。
-
-## <a name="may-2022"></a>2022 年 5 月
-
-### <a name="redesigned-left-navigation-pane"></a>再設計された左側のナビゲーション ウィンドウ
-
-新しい外観Microsoft 365 Lighthouse左側のナビゲーション ウィンドウが表示されました。 テナント、ユーザー、デバイスなどの最上位ノードが展開され、危険なユーザー、デバイスコンプライアンス、脅威管理などの関連サブノードが表示される、洗練されたデザインに気付きます。 このナビゲーション モデルは、他のMicrosoft 365管理センターで使用されるモデルと一致します。
-
-### <a name="enriched-user-details-pane"></a>エンリッチされたユーザーの詳細ウィンドウ
-
-ユーザーの詳細ウィンドウを再設計し、より多くのユーザー情報と、ユーザーをより適切に管理するために実行できるより多くのアクションを含めます。 これで、Microsoft 365 管理センターのユーザーの詳細ウィンドウと同じ外観になりました。 Microsoft 365 Lighthouseの [ユーザーの詳細] ウィンドウにアクセスするには、左側のナビゲーション ウィンドウで [**ユーザー**] を選択し、[**ユーザーの検索**] または [**危険なユーザー**] を選択します。 任意のユーザーを選択して詳細ウィンドウを開きます。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
