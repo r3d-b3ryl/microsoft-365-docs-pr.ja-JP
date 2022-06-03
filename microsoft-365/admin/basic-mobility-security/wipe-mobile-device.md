@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 組み込みの Basic Mobility と Security を使用して、登録済みデバイスから情報を削除します。
-ms.openlocfilehash: 959e785958dd6d447713507ee9c48763b814db78
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ecdfc691d85b86d882cf05dd5328d41dcdfa767
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129092"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863056"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Basic Mobility and Security でモバイル デバイスをワイプする
 
 組み込みの Basic Mobility and Security for Microsoft 365を使用すると、組織の情報のみを削除したり、出荷時のリセットを実行してモバイル デバイスからすべての情報を削除し、出荷時設定に復元したりできます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 モバイル デバイスは、組織の機密情報を格納し、組織のMicrosoft 365 リソースへのアクセスを提供できます。 組織の情報を保護するために、会社のデータをファクトリ リセットまたは削除できます。
 
@@ -46,25 +46,21 @@ ms.locfileid: "65129092"
 
 ## <a name="wipe-a-mobile-device"></a>モバイル デバイスをワイプする
 
-1. [Microsoft 365 管理センター](../../admin/admin-overview/admin-center-overview.md)に戻ります。
+1. Microsoft 365 管理センターにサインインし、[モバイル デバイス管理 ページ](https://portal.office.com/adminportal/home?#/MifoDevices)に移動します。
 
-2. 検索フィールドに「モバイル デバイス管理」と入力し、結果の一覧から **[モバイル デバイス管理**] を選択します。
+1. [ **デバイスの管理**] を選択します。
 
-    :::image type="content" source="../../media/basic-mobility-security/bms-6-mobile-device-management-option.png" alt-text="Basic Mobility および Secruity モバイル デバイス管理オプション。":::
+1. ワイプを実行するデバイスを選びます。
 
-3. [ **デバイスの管理**] を選択します。
+1. **[管理]** を選択します。
 
-4. ワイプを実行するデバイスを選びます。
-
-5. [ **管理**] を選択します。
-
-6. 実行するリモートワイプのタイプを選択します。
+1. 実行するリモートワイプのタイプを選択します。
 
     - 完全ワイプを実行し、デバイスを工場出荷時の設定に復元するには、[ **出荷時のリセット**] を選択します。
     - 組織の情報のみを選択的にワイプして削除するには、[**会社のデータ** Microsoft 365の削除] を選択します。
     - 組織からデバイスを削除するには、[デバイスの **削除**] を選択します。
 
-7. [**はい**] を選択して確認します。
+1. [**はい**] を選択して確認します。
 
 ## <a name="how-do-i-know-it-worked"></a>操作方法機能したことを知っていますか?
 
@@ -89,4 +85,4 @@ ms.locfileid: "65129092"
 |Basic Mobility と Security によって作成された電子メール プロファイルは削除され、デバイス上のキャッシュされた電子メールは削除されます。|はい|該当なし|
 
 > [!NOTE]
-> ポータル サイトアプリは、iOS および Android デバイス用 Play ストアのApp Storeで利用できます。
+> ポータル サイト アプリは、iOSとAndroid デバイスのPlay ストアのApp Storeで利用できます。

@@ -14,12 +14,12 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 description: Basic Mobility and Security で iPad や iPhone などのiOSデバイスを管理するには、まず APNs 証明書を作成します。
-ms.openlocfilehash: 8bcbcdeac9f1cadd945c3f7c44e9192d57db7c82
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 10d2e8412cfecf3627c7520123592b371bf01fdb
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435791"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863524"
 ---
 # <a name="create-an-apns-certificate-for-ios-devices"></a>iOS デバイスの APN 証明書を作成する
 
@@ -27,15 +27,13 @@ Basic Mobility and Security で iPad や iPhone などのiOSデバイスを管�
 
 1. グローバル管理者アカウントでMicrosoft 365にサインインします。
 
-2. ブラウザーで「.」と入力します <https://protection.office.com/>。
+1. [Microsoft 365 管理センター](https://portal.office.com/adminportal/home?#/MifoDevices)に移動し、**iOSの APNs 証明書を** 選択します。
 
-3. **[データ損失防止** \> **デバイス管理]** を選択し、**iOS デバイスの [APNs 証明書] を選択します**。
+1. [Apple プッシュ通知証明書設定] ページで、[**次へ**] を選択します。
 
-4. [Apple プッシュ通知証明書設定] ページで、[**次へ**] を選択します。
+1. [CSR ファイルのダウンロード] を選択し、覚えているコンピューターのどこかに証明書署名要求を保存します。 **[次へ]** を選択します。
 
-5. [CSR ファイルのダウンロード] を選択し、覚えているコンピューターのどこかに証明書署名要求を保存します。 **[次へ]** を選択します。
-
-6. [APNs 証明書の作成] ページで、次の手順を実行します。
+1. [APNs 証明書の作成] ページで、次の手順を実行します。
 
     1. Select Apple APNS Portal to open the Apple Push Certificates Portal. 
 
@@ -53,10 +51,10 @@ Basic Mobility and Security で iPad や iPhone などのiOSデバイスを管�
        > [!TIP]
        > If you're having trouble downloading the certificate, refresh your browser.
 
-7. Microsoft 365に戻るし、[**次へ**] を選択して **アップロード APNS 証明書** ページに移動します。
+1. Microsoft 365に戻るし、[**次へ**] を選択して **アップロード APNS 証明書** ページに移動します。
 
-8.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
+1.  Browse to the APN certificate you downloaded from the Apple Push Certificates Portal.
 
-9. [**完了**] を選択します。
+1. **[完了]** を選択します。
 
 セットアップを完了するには、Security & Compliance Center \> **セキュリティ ポリシー** \> **デバイス管理の** \> **管理設定** に戻ります。

@@ -20,12 +20,12 @@ metadata:
   search.appverid:
   - MET150
   description: Basic Mobility and Security に関してよく寄せられる質問。
-  ms.openlocfilehash: 68e7143dba70859aa69845f8e1e8e0a5c65ea44f
-  ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+  ms.openlocfilehash: c404ff1c80952ec3db600e96ceef5cce97c182cd
+  ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 04/19/2022
-  ms.locfileid: "64934205"
+  ms.lasthandoff: 06/03/2022
+  ms.locfileid: "65863012"
 title: 基本的なモビリティとセキュリティに関してよく寄せられる質問 (FAQ)
 summary: この記事には、Microsoft 365でモバイル デバイスを管理およびセキュリティで保護するのに役立つ基本的なモビリティとセキュリティに関してよく寄せられる質問が含まれています。 質問に対する回答が見つからない場合は、この記事に質問を追加することを検討できるように、ページにコメントを残してお知らせください。
 sections:
@@ -40,14 +40,14 @@ sections:
       2.  デバイス管理>データ損失防止に移動します。
   - question: >
       Basic Mobility and Security でデバイス管理を開始するにはどうすればよいですか?
-    answer: "基本的なモビリティとセキュリティの使用を開始するには、次の 4 つの手順があります。 \n\n1. Office 365 セキュリティ&コンプライアンスに移動して、基本的なモビリティと[セキュリティを](https://protection.office.com/)アクティブ化します。\n\n2. デバイス管理>デバイス ポリシー>データ損失防止に移動します。\n    \n3. デバイス管理ポリシーを作成し、セキュリティ グループに設定されているユーザーのグループに適用します。 まず、小規模なテスト グループにポリシーをデプロイすることをお勧めします。 詳細については、「 [基本的なモビリティとセキュリティでデバイス セキュリティ ポリシーを作成する」を参照してください](create-device-security-policies.md)。\n\n4. ポリシーを適用したユーザーは、Microsoft 365 データにアクセスしようとすると、デバイスを登録するように求められます。 詳細については、「 [Basic Mobility and Security を使用してモバイル デバイスを登録する」](enroll-your-mobile-device.md)を参照してください。\n\n詳細については、「 [基本的なモビリティとセキュリティの設定](set-up.md)」を参照してください。\n"
+    answer: "基本的なモビリティとセキュリティの使用を開始するには、次の 4 つの手順があります。 \n\n1. Office 365 セキュリティ&コンプライアンスに移動して、基本的なモビリティと[セキュリティを](https://protection.office.com/)アクティブ化します。\n\n2. [Basic Mobility and Security (プレビュー)](https://compliance.microsoft.com/basicmobilityandsecurity) に移動します。\n    \n3. デバイス管理ポリシーを作成し、セキュリティ グループに設定されているユーザーのグループに適用します。 まず、小規模なテスト グループにポリシーをデプロイすることをお勧めします。 詳細については、「 [基本的なモビリティとセキュリティでデバイス セキュリティ ポリシーを作成する」を参照してください](create-device-security-policies.md)。\n\n4. ポリシーを適用したユーザーは、Microsoft 365 データにアクセスしようとすると、デバイスを登録するように求められます。 詳細については、「 [Basic Mobility and Security を使用してモバイル デバイスを登録する」](enroll-your-mobile-device.md)を参照してください。\n\n詳細については、「 [基本的なモビリティとセキュリティの設定](set-up.md)」を参照してください。\n"
   - question: >
       基本的なモビリティとセキュリティを設定しようとしていますが、スタックしているようです。 Microsoft 365 Service Health にはしばらくの間、"プロビジョニング" が表示されています。 解決方法
     answer: >
       サービスの準備に時間がかかる場合があります。 プロビジョニングが完了すると、[基本的なモビリティとセキュリティ] ページが表示されます。 24 時間待っても状態が引き続きプロビジョニングされている場合は、サポートにお問い合わせください。問題の内容を把握するのに役立ちます。
   - question: >
       デバイスの登録に失敗した場合、どうすればよいですか?
-    answer: "デバイスの登録に問題がある場合は、まず次の項目を確認します。\n\n- デバイスが別のモバイル デバイス管理プロバイダー (Intuneなど) にまだ登録されていないことを確認します。\n\n- デバイスが正しい日付と時刻に設定されていることを確認します。\n\n- デバイス上の別の WIFI または携帯ネットワークに切り替えます。\n\n- Android または iOS デバイスの場合は、Intune ポータル サイト アプリをデバイスにアンインストールして再インストールします。\n    \n登録がまだ機能しない場合は、「 [基本的なモビリティとセキュリティのトラブルシューティング」を参照してください](troubleshoot.md)。\n"
+    answer: "デバイスの登録に問題がある場合は、まず次の項目を確認します。\n\n- デバイスが別のモバイル デバイス管理プロバイダー (Intuneなど) にまだ登録されていないことを確認します。\n\n- デバイスが正しい日付と時刻に設定されていることを確認します。\n\n- デバイス上の別の WIFI または携帯ネットワークに切り替えます。\n\n- AndroidデバイスまたはiOS デバイスの場合は、Intune ポータル サイト アプリをアンインストールしてデバイスに再インストールします。\n    \n登録がまだ機能しない場合は、「 [基本的なモビリティとセキュリティのトラブルシューティング」を参照してください](troubleshoot.md)。\n"
   - question: >
       Intuneと基本的なモビリティとセキュリティの違いは何ですか?
     answer: >
@@ -55,7 +55,7 @@ sections:
   - question: >
       基本的なモビリティとセキュリティのポリシーはどのように機能しますか? 操作方法設定しますか? 無効にしますか?
     answer: >
-      Basic Mobility and Security の初期セットアップが完了したら、ポリシーを作成し、セキュリティ & コンプライアンス センターのユーザー グループに適用します。 ポリシーでは、デバイスを使用してMicrosoft 365データにアクセスする前に、ポリシーのユーザーがデバイスを Basic Mobility and Security に登録する必要があります。 設定したポリシーによって、モバイル デバイスの設定 (パスワードをリセットする頻度やデータ暗号化が必要かどうかなど) が決まります。 詳細については、 [Basic Mobility and Security および](create-device-security-policies.md) [Microsoft Purview コンプライアンス ポータル](../../compliance/microsoft-365-compliance-center.md)でのデバイス セキュリティ ポリシーの作成に関するページを参照してください。
+      Basic Mobility and Security の初期セットアップが完了したら、ポリシーを作成し、セキュリティ & コンプライアンス センターのユーザー グループに適用します。 ポリシーでは、デバイスを使用してMicrosoft 365データにアクセスする前に、ポリシーのユーザーがデバイスを Basic Mobility and Security に登録する必要があります。 設定したポリシーによって、モバイル デバイスの設定 (パスワードをリセットする頻度やデータ暗号化が必要かどうかなど) が決まります。 詳細については、「[基本的なモビリティとセキュリティとMicrosoft Purview コンプライアンス ポータルでデバイス セキュリティ ポリシーを作成する](create-device-security-policies.md)」を参照してください。[](../../compliance/microsoft-365-compliance-center.md)
 
 
       デバイス ポリシーの作成と展開の詳細な手順については、「 [基本的なモビリティとセキュリティでデバイス セキュリティ ポリシーを作成](create-device-security-policies.md)する」を参照してください。
