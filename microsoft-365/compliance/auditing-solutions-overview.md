@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 description: Microsoft 365 組織内のユーザーや管理者のアクティビティを監査する方法をご紹介します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e4dab263a85730f893adadab0d3fa5709d17861
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 8ceaea2b888c144fb5c6bc34d9d7788ab595b56b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649389"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864586"
 ---
 # <a name="auditing-solutions-in-microsoft-purview"></a>Microsoft Purview での監査ソリューション
 
@@ -101,6 +101,7 @@ Microsoft Purview 監査 (標準) では、監査されたアクティビティ�
 ### <a name="audit-standard"></a>監査 (標準)
 
 - Microsoft 365 Business Basic サブスクリプション
+- Microsoft Business Standard サブスクリプション
 - Microsoft 365 Apps for Business サブスクリプション
 - Microsoft 365 Enterprise E3 サブスクリプション
 - Microsoft 365 Business Premium

@@ -25,12 +25,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium での保護レベルの向上に関するヘルプを表示する
-ms.openlocfilehash: 2bd00329f160c187325fc696114f0fac4e503656
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319135"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863610"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の脅威に対する保護を強化する
 
@@ -166,7 +166,7 @@ ms.locfileid: "65319135"
 
 ### <a name="view-your-alert-policies"></a>アラート ポリシーを表示する
 
-1. [https://compliance.microsoft.com](https://compliance.microsoft.com) で Microsoft 365 コンプライアンス センターに移動して、サインインします。
+1. [https://compliance.microsoft.com](https://compliance.microsoft.com) で Microsoft Purview コンプライアンス ポータルに移動してサインインします。
 
 2. ナビゲーション ウィンドウで **[ポリシー]** を選択し、**[アラート ポリシー]** を選択します。
 
@@ -179,12 +179,12 @@ ms.locfileid: "65319135"
 
 ### <a name="how-to-view-alerts"></a>アラートを表示する方法
 
-特定のアラートに応じて、Microsoft 365 Defender ポータルまたは Microsoft 365 コンプライアンス センターでアラートを表示できます。
+特定のアラートに応じて、Microsoft 365 Defender ポータルまたは Microsoft Purview コンプライアンス ポータルでアラートを表示できます。
 
 | アラートの種類。  | 操作  |
 |---------|---------|
 | ユーザーが悪意のあるリンクをクリックしたとき、電子メールがマルウェアまたはフィッシングとして報告されたとき、またはデバイスがマルウェアが含まれていると検出された場合などのセキュリティ アラート     | <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、**[メールと共同作業]** で **[ポリシーとルール]** > **[アラート ポリシー]** の順に選択します。または、<https://security.microsoft.com/alertpolicies> に直接移動することもできます。 |
-| ユーザーが機密情報を共有する場合 (データ損失防止アラート) や、異常な量の外部ファイル共有がある場合などのコンプライアンス アラート (情報ガバナンス アラート)    | <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>に移動し、**[ポリシー]** > **[アラート]** > **[アラート ポリシー]** の順に選択します。  |
+| ユーザーが機密情報を共有する場合 (データ損失防止アラート) や、異常な量の外部ファイル共有がある場合などのコンプライアンス アラート (情報ガバナンス アラート)    | <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、**[ポリシー]** > **[アラート]** > **[アラート ポリシー]** の順に選択します。  |
 
 詳細については、「[アラートの表示](../compliance/alert-policies.md#view-alerts)」を参照してください。
 

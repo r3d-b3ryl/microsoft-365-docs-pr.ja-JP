@@ -709,4 +709,5 @@
 ## [Defender for Identity](/defender-for-identity/)
 ## [Defender for Cloud Apps](/cloud-app-security/)
 ## [Defender for Business](../defender-business/index.yml)
+## [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml) 
 

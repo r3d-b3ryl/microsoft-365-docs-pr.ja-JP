@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: c45d345a38b1ba9d045d6984feda614513512021
-ms.sourcegitcommit: 4cd8be7c22d29100478dce225dce3bcdce52644d
+ms.openlocfilehash: bbc7735e0c0267db5e69279d7ed81db8c0119e37
+ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65302152"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65863442"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
@@ -33,9 +33,6 @@ Teams で別の組織と共有チャネルを有効にする場合:
 - 組織内のチーム所有者は、共有チャネルに参加するよう他の組織のユーザーを招待できます。
 - 組織のカスタム (基幹業務) アプリを共有チャネルで利用できます。外部の参加者は、それらのアプリにアクセスできるようになります。
 - 組織のアプリ リストを共有チャネルで利用できます。外部の参加者は、それらのアプリにアクセスできるようになります。
-
-> [!NOTE]
-> 共有チャネルはプレビュー中で、[Microsoft Teams パブリック プレビュー](/MicrosoftTeams/public-preview-doc-updates)が構成されている必要があります。 チャネルを他の組織と共有する場合は、それらの組織でも Teams パブリック プレビューが構成されている必要があります。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 
@@ -74,7 +71,7 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 この構成の一環として、**Office 365** アプリケーションが有効になります。これには、Teams と、SharePoint などの Teams 統合サービスが含まれます。
 
 > [!NOTE]
-> クロス テナント アクセス設定の変更が有効になるまでに最大 2 時間かかる場合があります。
+> テナント間アクセス設定の変更は、有効になるまでに最大 3 時間 15 分かかる場合があります。
 
 ### <a name="add-an-organization"></a>組織を追加する
 

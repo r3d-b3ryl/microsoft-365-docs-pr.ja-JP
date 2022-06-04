@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用のさまざまな種類のコンテンツを認識できます。
-ms.openlocfilehash: f99e9e66f1dae9459f28ba59ca9f197d78ab8bad
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: e52be352076808bf7b5287fb5b8f568754240c88
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864542"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65889326"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -45,19 +45,19 @@ ms.locfileid: "65864542"
 - テンプレート [(ドキュメントフィンガー印刷)](document-fingerprinting.md) のバリエーションであるため、アイテムを認識します。
 - 正確な文字列の存在を使用して [、正確なデータ一致を行います](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)。
 
-その後、秘密度ラベルと保持ラベルを自動的に適用して、保持ラベルのポリシーのMicrosoft Purview データ損失防止と[自動適用](apply-retention-labels-automatically.md)[に関するページ](dlp-learn-about-dlp.md)でコンテンツを使用できるようにします。
+その後、機密ラベルと保持ラベルを自動的に適用して、 [コンテンツを Microsoft Purview データ損失防止の詳細](dlp-learn-about-dlp.md) で使用できるようにし、 [保持ラベルのポリシーを自動適用](apply-retention-labels-automatically.md)できます。
 
 ## <a name="classifiers"></a>クラシファイア
 
 この分類方法は、手動または自動のパターンマッチング方法で簡単に識別できないコンテンツに適しています。 この分類方法は、分類子を使用して、アイテム内の要素 (パターン マッチング) ではなく、アイテムの内容に基づいてアイテムを識別する方法について詳しく説明します。 分類子は、分類したいコンテンツの数百の例を見て、コンテンツのタイプを識別する方法を学びます。
 
 > [!NOTE]
-> プレビュー - フィルター パネルで [トレーニング可能な分類子] を展開することで、コンテンツ エクスプローラーで **トレーニング可能な分類子** を表示できます。 トレーニング可能な分類子は、ラベル付けを必要とせずに、SharePoint、Teams、OneDriveで検出されたインシデントの数を自動的に表示します。
-> この機能を使用しない場合は、既定の分類を無効にするには、Microsoft サポートで要求を提出する必要があります。 これにより、ラベル付けポリシーを作成する前に、機密コンテンツとラベル付きコンテンツのスキャンが無効になります。
+> プレビュー - フィルター パネルで [トレーニング可能な分類子] を展開することで、コンテンツ エクスプローラーで **トレーニング可能な分類子** を表示できます。 トレーニング可能な分類子は、ラベル付けを必要とせずに、SharePoint、Teams、OneDrive で検出されたインシデントの数を自動的に表示します。
+> この機能を使用しない場合は、既定の分類を無効にするには、Microsoft サポートに要求を提出する必要があります。 これにより、ラベル付けポリシーを作成する前に、機密コンテンツとラベル付きコンテンツのスキャンが無効になります。
 
 ### <a name="where-you-can-use-classifiers"></a>分類子を使用できる場所
 
-分類子は、秘密度ラベルを使用して[自動ラベルをOffice](apply-sensitivity-label-automatically.md)する条件として使用したり、[条件に基づいて保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)したり、[通信コンプライアンス](communication-compliance.md)に適用したりできます。 
+分類子は、秘密度ラベルを使用した [Office 自動ラベル付けの](apply-sensitivity-label-automatically.md)条件として使用したり、条件と[通信コンプライアンス](communication-compliance.md)[に基づいてアイテム保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)したりできます。 
 
 機密ラベルは条件として分類子を使用できます。「 [コンテンツに秘密度ラベルを自動的に適用する」を](apply-sensitivity-label-automatically.md)参照してください。
 
@@ -71,15 +71,17 @@ ms.locfileid: "65864542"
 
 ### <a name="pre-trained-classifiers"></a>事前トレーニング済みの分類子
 
-Microsoft 365には、事前にトレーニングされた複数の分類子が付属しています。
+Microsoft 365 には、事前トレーニング済みの分類子が複数用意されています。
+
+- **成人向け、Racy、および Gory**: これらの種類の画像を検出します。 画像のサイズは 50 KB から 4 メガバイト (MB) で、高さ x 幅の寸法は 50 x 50 ピクセルを超える必要があります。 スキャンと検出は、Exchange Online の電子メール メッセージ、および Microsoft Teams のチャネルとチャットでサポートされています。 .jpeg、.png、.gif、.bmp ファイル内のコンテンツを検出します。
 
 - **契約**: 秘密保持契約、作業明細書、ローンおよびリース契約、雇用契約、非競争契約など、法的契約に関連するコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
 
 - **履歴書**: 申請者の個人、教育、職業資格、職務経験、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt 項目を検出します。
 
-- **ソース コード**: ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、GitHub Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 個の使用済みコンピューター プログラミング言語で記述された一連の命令とステートメントを含む項目を検出します。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp、 .cxx、.hh、.c++、.clj、.edn、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.pod、.php、.phar、.php4、.pyc、 .R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
+- **ソース コード**: GitHub で使用されているコンピューター プログラミング言語の上位 25 で記述された一連の命令とステートメントを含む項目を検出します。ActionScript、C、C#、C++、クロジュレ、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプト。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp、 .cxx、.hh、.c++、.clj、.edn、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.pod、.php、.phar、.php4、.pyc、 .R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
 
-- **顧客からの苦情**: 顧客の苦情分類子は、組織の製品またはサービスに関するフィードバックと苦情を検出します。 この分類子は、消費者金融保護局や食品医薬品局の要件など、苦情の検出とトリアージに関する規制要件を満たすのに役立ちます。 .msg 内のコンテンツが検出され、.eml は通信コンプライアンスのみであり、.docx、.pdf、.txt、.rtf、.jpg、.jpeg、.png、.gif、.bmp、.svg ファイルです。
+- **顧客からの苦情**: 顧客の苦情分類子は、組織の製品またはサービスに関するフィードバックと苦情を検出します。 この分類子は、消費者金融保護局や食品医薬品局の要件など、苦情の検出とトリアージに関する規制要件を満たすのに役立ちます。 通信コンプライアンスでは、.msg ファイルと .eml ファイル内のコンテンツが検出されます。 Microsoft Purview Information Protection サービスの残りの部分では、.docx、.pdf、.txt、.rtf、.jpg、.jpeg、.png、.gif、.bmp、.svg ファイル内のコンテンツが検出されます。
 
 - **差別**: 明示的な差別言語を検出し、他のコミュニティと比較して、アフリカ系アメリカ人/ブラックコミュニティに対する差別的言語に依存します。
 
@@ -103,7 +105,7 @@ Microsoft 365には、事前にトレーニングされた複数の分類子が�
 
 - **履歴書**: 申請者の個人、教育、職業資格、職務経験、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt 項目を検出します。
 
-- **ソース コード**: ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、GitHub Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 個の使用済みコンピューター プログラミング言語で記述された一連の命令とステートメントを含む項目を検出します。
+- **ソース コード**: GitHub で使用されているコンピューター プログラミング言語の上位 25 で記述された一連の命令とステートメントを含む項目を検出します。ActionScript、C、C#、C++、クロジュレ、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプト。
 
     > [!NOTE]
     > ソース コードは、テキストの大部分がソース コードである場合を検出するようにトレーニングされます。 プレーンテキストが混在するソース コード テキストは検出されません。
@@ -115,12 +117,12 @@ Microsoft 365には、事前にトレーニングされた複数の分類子が�
 - **税**: 税計画、税務フォーム、税務書類、税規制などの税関係の内容を検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.ppsx、.ppsm、.ppsm、.ppss、.ppsm、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、xla ファイル。
 - **脅威**: 人や財産に対する暴行や身体的危害または損害を与える脅威に関連する、攻撃的な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
 
-これらは、**Microsoft Purview コンプライアンス ポータル** > **Data 分類** > **トレーニング可能な分類子** ビューに表示され、状態`Ready to use`は .
+これらは **、Microsoft Purview コンプライアンス ポータル** > の **データ分類** > **トレーニング可能な分類子** ビューに表示され、状態`Ready to use`は .
 
 ![分類子-事前トレーニング済み分類子。](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> 不快な言葉、嫌がらせ、不適切な表現、差別、脅威の分類子は検索可能なテキストでのみ機能し、これらの分野全体の用語や言語の完全なリストではありません。 さらに、言語と文化の基準は絶えず変化し、これらの現実に照らして、Microsoft は独自の裁量でこれらの分類子を更新する権利を留保します。 分類子は組織がこれらの領域を検出するのに役立つ場合がありますが、分類子は、そのような言語の使用を検出または対処する組織の唯一の手段を提供することを意図していません。 Microsoft またはその子会社ではなく、組織は、事前トレーニング済みの分類子によって識別されたコンテンツの監視、スキャン、ブロック、削除、および保持に関連するすべての決定について責任を負います。これには、地域のプライバシーやその他の適用法への準拠が含まれます。 Microsoft では、展開と使用の前に法律相談者に相談することをお勧めします。
+> 組み込みのトレーニング可能な分類子とグローバル分類子では、これらの領域全体の用語または言語の完全な一覧は提供されないことに注意してください。 さらに、言語と文化の基準は絶えず変化し、これらの現実に照らして、Microsoft は独自の裁量でこれらの分類子を更新する権利を留保します。 分類子は組織がこれらの領域を検出するのに役立つ場合がありますが、分類子は、そのような言語の使用を検出または対処する組織の唯一の手段を提供することを意図していません。 Microsoft またはその子会社ではなく、組織は、事前トレーニング済みの分類子によって識別されたコンテンツの監視、スキャン、ブロック、削除、および保持に関連するすべての決定について責任を負います。これには、地域のプライバシーやその他の適用法への準拠が含まれます。 Microsoft では、展開と使用の前に法律相談者に相談することをお勧めします。
 
 事前トレーニング済みの分類子は、次の言語でコンテンツをスキャンできます。
 
@@ -139,11 +141,11 @@ Microsoft 365には、事前にトレーニングされた複数の分類子が�
 
 ### <a name="custom-classifiers"></a>カスタム分類子
 
-事前トレーニング済みの分類子がニーズを満たしていない場合は、独自の分類子を作成してトレーニングできます。 独自に作成するには、はるかに多くの作業が必要になりますが、組織のニーズに合わせてカスタマイズできます。
+事前トレーニング済みの分類子がニーズを満たしていない場合は、独自の分類子を作成してトレーニングできます。 独自の作成にはより多くの作業が伴いますが、組織のニーズに合わせて調整する方がはるかに優れています。
 
 カスタムトレーニング可能な分類子の作成を開始するには、間違いなくカテゴリに含まれる例を入力します。 これらの例を処理したら、一致する例と一致しない例の両方を組み合わせてテストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 その結果を確認し、真陽性、真陰性、偽陽性、および偽陰性を並べ替えて、予測の精度を高めます。 
 
-分類子を発行すると、SharePoint Online、Exchange、OneDriveなどの場所のアイテムを並べ替え、コンテンツを分類します。 分類子を発行した後は、最初のトレーニング プロセスに似たフィードバック プロセスを使用して、それをトレーニングし続けることができます。
+分類子を発行すると、SharePoint Online、Exchange、OneDrive などの場所のアイテムが並べ替え、コンテンツが分類されます。 分類子を発行した後は、最初のトレーニング プロセスに似たフィードバック プロセスを使用して、それをトレーニングし続けることができます。
 
 たとえば、次のトレーニング可能な分類子を作成できます。
 
