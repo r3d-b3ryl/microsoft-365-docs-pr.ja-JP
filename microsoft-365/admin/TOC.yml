@@ -50,7 +50,7 @@
         - name: Office アプリのインストール
           href: setup/install-applications.md
         - name: Windows デバイスをセットアップする
-          href: setup/set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
         - name: モバイル デバイスをセットアップする
           href: setup/set-up-mobile-devices.md
         - name: 一般法人向け Outlook for Microsoft 365 のメールを設定する (ビデオ)

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365の概要に合わせて Scheduler のスケジュール設定を調整する
+title: Scheduler for Microsoft 365 のスケジュール設定の調整の概要
 ms.author: shivb
 author: shivbijlani
 manager: charlle
@@ -7,57 +7,38 @@ audience: Admin
 ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
-description: Microsoft 365の Scheduler のスケジュール設定を調整する方法について説明します。
-ms.openlocfilehash: 4c6bf31472f9237f82905ce36f7db534a99896b0
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+description: Scheduler for Microsoft 365 のスケジュール設定を調整する方法について説明します。
+ms.openlocfilehash: 34594db45883a7f746b9905661b1dedc8e5e4f6a
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670395"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893434"
 ---
-<a name="scheduling-preferences"></a>スケジュール設定
-======================
+# <a name="scheduling-preferences-used-by-scheduler"></a>Scheduler で使用されるスケジュール設定
 
-Scheduler では、開催者の会議をスケジュールするために、いくつかのOutlook設定が考慮されます。 Outlook クライアントを介した基本設定の変更は、Scheduler がCortanaに送信された後続の要求を処理する方法に自動的に反映されます。 たとえば、開催者が Outlook Web の [設定] ページでタイム ゾーンの基本設定を変更した場合、開催者によるそれ以降のすべての要求は既定で新しいタイム ゾーン値に設定されます。
+Scheduler では、複数の Outlook 環境設定を使用して、開催者の会議をスケジュールします。 Outlook クライアントで基本設定を変更すると、Scheduler が Cortana に送信された要求を処理する方法に影響します。 たとえば、Outlook Web の設定ページで開催者がタイム ゾーンの基本設定を変更した場合、その後に続く開催者によるすべての要求は既定で新しいタイム ゾーンに設定されます。
 
-<a name="supported-settings"></a>サポートされている設定
-------------------
+## <a name="supported-settings"></a>サポートされている設定
 
-<a name="time-zone"></a>タイム ゾーン
----------
+- **タイム ゾーン**。 会議に適した時間を決定するタイム ゾーン スケジューラ ユーザー。 詳細については [、「タイム ゾーンの追加、削除、または変更](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) 」を参照してください。
 
-会議をスケジュールする適切な時間を決定するときに使用されるタイム ゾーン。 [タイム ゾーンの追加、削除、変更](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04)に関するドキュメントを参照してください。
+- **作業時間と日数**。 ほとんどの会議の種類では、Scheduler は開催者の勤務時間と会議時間の設定に従って時間を選択します。 詳細については、「 [Outlook で作業時間と日数を変更](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f) する」を参照してください。
 
-<a name="work-hours-and-days"></a>作業時間と日数
--------------------
+- **オンライン会議。** 予定表オプションをオンにすると、Outlook と Scheduler からスケジュールしたすべての会議が、会議の詳細と共にオンラインで開催されます。 スケジューラは現在、会議プロバイダーとして Teams と Skype をサポートしています。 詳細については、「 [すべての会議を Teams 会議にする](https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f#bkmk_makeallteamsmtngs) 」を参照してください。
 
-ほとんどの会議の種類では、Scheduler は開催者の週と会議時間の設定に従って時間をスケジュールします。 [Outlookドキュメントの「勤務時間と日数を変更](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f)する」を参照してください。
+- **既定の会議期間**。 開催者が要求で目的の会議期間を指定しない場合、Scheduler は要求に優先する会議期間を使用します。 この設定は、Windows Outlook クライアントでのみ使用できます。
 
-<a name="online-meetings"></a>オンライン会議
----------------
+   1. [ **ファイル** > **オプション] を** 選択すると、[Outlook オプション] ダイアログが表示されます。
 
-予定表オプションをオンにすると、Outlookと Scheduler からスケジュールしたすべての会議が、会議の詳細と共にオンラインで開催されます。 スケジューラは現在、会議プロバイダーとしてTeamsとSkypeをサポートしています。 [会議のすべての会議Teamsドキュメントを](https://support.microsoft.com/en-us/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f#bkmk_makeallteamsmtngs)参照してください。
+   2. ダイアログの左側にある一覧から [ **予定表** ] を選択します。
 
-<a name="default-meeting-duration"></a>既定の会議期間
-------------------------
+   3. ダイアログの右側にある予定表オプションの設定で、 **新しい予定と会議の既定の期間** を選択します。
 
-開催者が要求で目的の会議期間を指定しない場合、Scheduler は要求に優先する会議期間を使用します。 この設定は、Windows Outlook クライアントでのみ使用できます。
+      :::image type="content" source="../media/OutlookOptions.png" alt-text="Windows の Outlook 予定表オプション ダイアログでは、作業時間、既定の会議期間を設定し、Scheduler で使用する会議を短縮することができます。":::
 
-1. **[ファイル****オプション**] をクリックする >  
+- **バック ツー バックの会議は避けてください**。 Outlook 設定では、会議の遅延を開始したり、会議を早期に終了したりして、会議のバック ツー バックを回避できます。 また、スケジューラは、設定した設定に従って会議の期間を短縮できます。 詳細については、「 [既定の会議の長さを変更](https://techcommunity.microsoft.com/t5/hybrid-work/change-default-meeting-length-in-outlook-avoid-back-to-back/m-p/1247361) する」を参照してください。
 
-2. **ナビゲーション ウィンドウ** で **[予定表**] を選択します。
-
-3. 既定の期間設定は、[**予定表****オプション]** の下にあります。
-
-![Windowsの [Outlook カレンダー オプション] ダイアログ。 Scheduler が既定値として使用できるように、作業時間、既定の期間、および会議の短縮オプションを構成します。](../media/OutlookOptions.png)
-
-<a name="avoid-back-to-back-meetings"></a>会議のバック ツー バックを回避する
----------------------------
-
-Outlook、会議を自動的に遅く開始するか、会議を早期に終了して、バック ツー バックの会議を回避する設定が追加されました。 設定した場合、Scheduler では、基本設定に従って会議の期間も短縮されます。 Outlookドキュメントの[「既定の会議の長さを変更](https://techcommunity.microsoft.com/t5/hybrid-work/change-default-meeting-length-in-outlook-avoid-back-to-back/m-p/1247361)する」を参照してください。
-
-##<a name="additional-note"></a>その他の注意
-
-- Windows クライアントを使用する場合は、スケジューラとその他のOutlook クライアント間で環境設定が同期されるようにするには、次のオプションを設定する必要があります。
-
-![Windowsの [Outlook カレンダー オプション] ダイアログ。 [クラウドでOutlook設定をMicrosoft Storeする] を有効にします。](../media/OutlookOptions2.png)
+> [!NOTE]
+> Windows クライアントを使用する場合は、[ **Outlook の設定をクラウドに保存** する] を選択して、Scheduler やその他の Outlook クライアント間で環境設定を同期する必要があります。
+> :::image type="content" source="../media/OutlookOptions2.png" alt-text="Windows の [Outlook 予定表オプション] ダイアログ。[Outlook の設定をクラウドに保存する] を選択して、クライアント間でスケジュール設定を同期します。":::

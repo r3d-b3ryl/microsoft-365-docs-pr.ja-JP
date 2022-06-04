@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: df99f73275e0aa83216bd1de101638dee628f0f2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091899"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893231"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の修復アクションを確認する
 
-セキュリティ違反が検出されましたが、どうしますか? その性質によって異なります。 
+セキュリティ違反が検出されましたが、どうしますか? その性質によって異なります。
 
 修復アクションの例としては、検疫へのファイルの送信、プロセスの実行の停止、スケジュールされたタスクの完全な削除などがあります。 すべての修復アクションは、[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) にあるアクション センターで追跡されます。
 

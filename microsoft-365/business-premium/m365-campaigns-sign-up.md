@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 for Campaigns への詳細なサインアップ手順。 選挙運動を、メール、データ、通信に対するサイバーセキュリティの脅威から保護します。
-ms.openlocfilehash: 08ef22374e69590a3535366463770815c2a2b0ee
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b39d01bc6aa1cf138d230e95493d5f9eeb3cc51b
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096262"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893309"
 ---
 # <a name="sign-up-for-microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns にサインアップする 
 
@@ -120,4 +120,4 @@ Microsoft 365 Business Standard など、一般法人向け Microsoft 365 のサ
 
 1. [Microsoft 365 for Campaigns にサインインする](m365-campaigns-sign-in.md)。
 
-2. [基本的なセットアップに関するガイド付き手順を確認する](m365bp-setup.md#use-the-guided-process-for-basic-setup)。
+2. [基本的なセットアップに関するガイド付き手順を確認する](m365bp-setup.md#guided-setup-process)。

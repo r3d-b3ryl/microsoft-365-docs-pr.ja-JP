@@ -2,8 +2,10 @@
   items:
     - name: 概要
       href: index.md
-    - name: Microsoft 365がビジネスにどのように役立つのか
+    - name: Microsoft 365 がビジネスにどのように役立つのか
       href: m365bp-secure-users.md
+    - name: Microsoft 365 Business Premium 試用版プレイブック
+      href: m365bp-trial-playbook-microsoft-business-premium.md
     - name: Microsoft 365 Business Premium を取得する
       href: get-microsoft-365-business-premium.md
     - name: Microsoft 365 for Campaigns を入手する
@@ -16,14 +18,8 @@
           href: m365bp-setup-overview.md
         - name: Microsoft 365 Business Premium のセットアップ
           href: m365bp-setup.md
-        - name: キャンペーン用に Microsoft 365 を設定する
-          items:
-            - name: サインアップ
-              href: m365-campaigns-sign-up.md
-            - name: サインイン
-              href: m365-campaigns-sign-in.md
-            - name: サインイン ページをカスタマイズする
-              href: m365-customize-sign-in.md
+        - name: キャンペーン用の Microsoft 365 Business を設定する
+          href: m365-campaigns-setup.md
     - name: セキュリティの保護を強化する
       items:
         - name: 概要
@@ -42,7 +38,7 @@
           href: m365bp-devices-overview.md
         - name: 多要素認証を設定する
           href: m365bp-multifactor-authentication.md
-        - name: デバイスにOffice アプリをインストールする
+        - name: デバイスに Office アプリをインストールする
           href: m365bp-install-office-apps.md
         - name: 管理されていないデバイスを保護する
           href: m365bp-protect-pcs-macs.md
@@ -51,7 +47,7 @@
         - name: 概要
           href: m365bp-protect-email-overview.md
         - name: フィッシング詐欺やその他の攻撃から保護する
-          href: avoid-phishing-and-attacks.md
+          href: m365bp-avoid-phishing-and-attacks.md
         - name: 暗号化された電子メールを送信する
           href: send-encrypted-email.md
     - name: セキュイティで保護された共同作業および共有を行う
@@ -78,14 +74,16 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Windows デバイスを保護する
           items:
-            - name: Windows デバイスの保護設定
-              href: m365bp-protection-settings-for-windows-10-devices.md
             - name: Windows 10 デバイスをセキュリティで保護する
               href: m365bp-secure-windows-devices.md
             - name: Windows デバイスを管理する
               href: m365bp-manage-windows-devices.md
             - name: Office クライアントの展開を準備する
               href: m365bp-prepare-for-office-client-deployment.md
+            - name: Windows デバイスのアプリ保護設定を作成する
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: Windows デバイスでアプリ設定を検証する
+              href: m365bp-validate-settings-on-windows-10-pcs.md
         - name: デバイス ポリシーを確認および編集する
           href: m365bp-view-edit-create-mdb-policies.md
         - name: デバイス グループを管理する
@@ -112,13 +110,13 @@
       href: m365bp-remove-company-data.md
     - name: デバイスを工場出荷時の設定にリセットする
       href: m365bp-reset-devices-to-factory-settings.md
-- name: リファレンス
+- name: 参照
   items:
     - name: 用語集
       href: m365bp-glossary.md
     - name: Microsoft 365 Business Premium に関するよく寄せられる質問
       href: microsoft-365-business-faqs.yml
-    - name: Microsoft 365管理者コンテンツ
+    - name: Microsoft 365 管理者コンテンツ
       href: /microsoft-365/admin/
     - name: AutoPilot を設定する
       items:
@@ -130,6 +128,8 @@
           href: m365bp-create-and-edit-autopilot-devices.md
     - name: Android および iOS のアプリ保護の設定
       href: m365bp-app-protection-settings-for-android-and-ios.md
+    - name: Android と iOS のアプリ設定を検証する
+      href: m365bp-validate-settings-on-android-or-ios.md
     - name: 保護機能を Intune の設定にマップする
       href: m365bp-map-protection-features-to-intune-settings.md
     - name: コンプライアンス マネージャーを設定する

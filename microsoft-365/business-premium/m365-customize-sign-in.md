@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 のプライバシーと同意に関する通知を使用してサインイン ページをカスタマイズします。
-ms.openlocfilehash: 84c7a488d8a6ba854e3ac8b09067fd350c9ae4fc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fb56a6de2b916f9b9699e0963f9f1cd1bd8bba16
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097890"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893287"
 ---
 # <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意の通知を使用してサインイン ページをカスタマイズする
 
@@ -50,6 +50,6 @@ ms.locfileid: "65097890"
 
 ## <a name="next-steps"></a>次の手順
 
-1. [基本的なセットアップに関するガイド付き手順を確認する](m365bp-setup.md#use-the-guided-process-for-basic-setup)。
+1. [基本的なセットアップに関するガイド付き手順を確認する](m365bp-setup.md)。
 
 2. [セキュリティ機能を設定する](m365bp-security-overview.md)。

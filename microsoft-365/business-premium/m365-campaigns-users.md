@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium に関するこれらのセキュリティの推奨事項がユーザーにどのように影響し、データを保護するかについて説明します。
-ms.openlocfilehash: ffd25f52c0f230506a43a3f611ce933f59d26802
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 30e609a6dc74ef8a0303c93f65eb44a4003d3a99
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469231"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893141"
 ---
 # <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>これらのセキュリティに関する推奨事項が Microsoft 365 ユーザーに与える影響
 
@@ -47,7 +47,7 @@ ms.locfileid: "65469231"
 
 - 安全なリンクと安全な添付ファイルによって確認されたように、安全なリンクと添付ファイルのみを開きます。
 
-[多要素認証](m365bp-multifactor-authentication.md)、および[フィッシングとその他の攻撃](avoid-phishing-and-attacks.md)の詳細をご覧ください。
+[多要素認証](m365bp-multifactor-authentication.md)、および[フィッシングとその他の攻撃](m365bp-avoid-phishing-and-attacks.md)の詳細をご覧ください。
 
 自分とチームのメンバーのためのヒントを含む[インフォグラフィック](m365-campaigns-protect-campaign-infographic.md)をダウンロードします。
 

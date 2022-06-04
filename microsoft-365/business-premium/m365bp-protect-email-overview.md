@@ -25,12 +25,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business Premium に含まれているサイバーセキュリティ ツールを使用して、マルウェア、フィッシング、およびその他の悪意のあるサイバー攻撃からメールを保護するようにチームをトレーニングする方法の概要。
-ms.openlocfilehash: f54ac045957625a3c2b8b5a66bd7212a4f76e60a
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 16e1107b67a406c5058d2e83a3f5d955bb748c39
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101759"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893169"
 ---
 # <a name="protect-all-email"></a>すべてのメールを保護する
 
@@ -38,10 +38,9 @@ ms.locfileid: "65101759"
 
 ミッションの目的は次のとおりです。
 
-- [フィッシング詐欺やその他の攻撃から保護する](avoid-phishing-and-attacks.md)
+- [フィッシング詐欺やその他の攻撃から保護する](m365bp-avoid-phishing-and-attacks.md)
 - [暗号化されたメールを設定する](send-encrypted-email.md)
 
 [次のミッション](m365bp-collaborate-share-securely.md)に進む前に、これらの目的を達成してください。
 
 :::image type="content" source="media/m365bp-use-email-securely.jpg" alt-text="メールを保護します。":::
-   
