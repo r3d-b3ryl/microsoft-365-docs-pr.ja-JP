@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
-ms.openlocfilehash: 38e7e1c1371c83fd5b55105bbd91485e2b6c26a3
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 444be08a2083bf184d61ee206dfaa8ab53657b0b
+ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915953"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65864564"
 ---
 # <a name="create-a-shared-mailbox"></a>共有メールボックスを作成する 
 
@@ -92,6 +92,9 @@ ms.locfileid: "64915953"
 - **[メールボックス所有者として送信する]**: [メールボックス所有者として送信する] アクセス許可を使用すれば、メールの送信時に共有メールボックスを代理で処理できます。たとえば、Katerina がマーケティング部門の共有メールボックスにログインして、メールを送信する場合、そのメールはマーケティング部門が送信したように見えます。
 
 - **[代理人として送信する]**: [代理人として送信する] アクセス許可を使用すれば、共有メールボックスの代わりに電子メールを送信できます。たとえば、John が共有メールボックス Reception Building 32 にログインして電子メールを送信すると、メールが「Reception Building 32 の代わりに John」によって送信されたように見えます。EAC では [代理人として送信する] アクセス許可を付与できないため、 **Set-Mailbox** コマンドレットを _GrantSendonBehalf_ パラメーターと一緒に使用する必要があります。
+
+> [!NOTE]
+> メールボックスの *HiddenFromAddressListsEnabled* パラメーターが **True** に設定されている Outlook デスクトップ クライアントでは、メールボックスをグローバル アドレス一覧経由で Outlook に表示する必要があるため、**送信** と **代理で送信** のアクセス許可は機能しません。
 
 ### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>EAC を使用して共有メールボックスの委任を編集する
 
