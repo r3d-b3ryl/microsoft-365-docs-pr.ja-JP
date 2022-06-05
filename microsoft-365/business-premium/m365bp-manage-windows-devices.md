@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 がローカル Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: 2d29e7350be7ddfcdf22f031ea3c2c27439daeac
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 42a9fb553cbebe9e8a49cc15e97555e6b12ca495
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622741"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893123"
 ---
 # <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium による Windows デバイスの管理
 
@@ -144,7 +144,7 @@ PS C:\> Initialize-SecMgmtHybirdDeviceEnrollment -GroupPolicyDisplayName 'Device
 
 2. 上記の手順で作成したポリシーを選択し、[**OK**] をクリックします。
 
-## <a name="get-the-latest-administrative-templates"></a>最新の管理用テンプレート ツールをダウンロードします。
+## <a name="get-the-latest-administrative-templates"></a>最新の管理用テンプレート ツールを取得します。
 
 **既定の Azure AD 資格情報を使用して MDM の自動登録を有効にする** ポリシーが表示されない場合は、Windows 10 バージョン 1803 以降用の ADMX がインストールされていない可能性があります。この問題を解決するには、次の手順に従います (注: 最新の MDM.admx は下位互換性があります)。
 

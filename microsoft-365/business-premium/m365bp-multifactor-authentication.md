@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Business Premium で電話の多要素認証を設定します。 電話に Microsoft Business Premium の MFA 機能を使用して、セキュリティを強化します。
-ms.openlocfilehash: d92a1a651790626c8d8a8b70f334f907bcde7cdc
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: a01c829d961c1941e1910b5f7068f3cc66732db8
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622635"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893265"
 ---
 # <a name="set-up-mfa"></a>MFA をセットアップする
 
@@ -45,4 +45,4 @@ ms.locfileid: "65622635"
 
 ## <a name="next-objective"></a>次の目標
 
-「[Office アプリケーションのインストール](m365bp-install-office-apps.md)」のガイダンスに従ってください。
+次の目標については、[Office アプリケーションをインストールする](m365bp-install-office-apps.md) ためのガイダンスに従ってください。
