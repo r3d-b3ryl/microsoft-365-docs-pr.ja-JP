@@ -25,11 +25,11 @@ search.appverid:
 - MOE150
 description: Microsoft 365 を使用してフィッシングやその他の攻撃から自分を保護します。
 ms.openlocfilehash: 5549abdee6c7dadcb3aca7be9daba2c1f4b228ea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101970"
+ms.lasthandoff: 06/05/2022
+ms.locfileid: "65900808"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から身を守る
 
