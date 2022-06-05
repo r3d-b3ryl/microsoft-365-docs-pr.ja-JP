@@ -1,8 +1,9 @@
 ---
 title: Microsoft 365 データの場所
-ms.author: deanw
-author: dmwmsft
+ms.author: kvice
+author: kelleyvice-msft
 manager: scotv
+ms.date: 06/02/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -17,20 +18,20 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 19741da49baf6890fbc0a7570190df1676990e9e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 07d137c6eda243a1ffa33b486d7cdbea5b37f9d9
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090797"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65874071"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
 次の表は、Microsoft のすべてのグローバル クラウドの場所で、Microsoft 365 サービスの顧客データが保存されている場所を示しています。 請求先住所の国の場所を展開して、各サービスの顧客データが保存される場所を確認します。
 
-ビジネスが欧州連合にある場合、詳細については、「[欧州連合のデータの場所](EU-data-storage-locations.md)」を参照してください。 
+ビジネスが欧州連合にある場合、詳細については、「[欧州連合のデータの場所](EU-data-storage-locations.md)」を参照してください。
 
-お客様には、Microsoft 365 管理者センターの **[設定]**  >  **[組織の設定]**  > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"> **[組織プロファイル]** タブの</a> >  **[データの場所]** でテナント固有のデータの場所情報が表示されるはずです。 [新しい地域への移行を要求した](request-your-data-move.md) 場合、移行中に一部のデータが以前の地域に一時的に保存されていることがあっても、Microsoft 365 管理センターのデータの場所情報には新しい地域だけが表示されることがあります。 
+お客様には、Microsoft 365 管理者センターの **[設定]**  >  **[組織の設定]**  > <a href="https://go.microsoft.com/fwlink/p/?linkid=2067339" target="_blank"> **[組織プロファイル]** タブの</a> >  **[データの場所]** でテナント固有のデータの場所情報が表示されるはずです。 [新しい地域への移行を要求した](request-your-data-move.md) 場合、移行中に一部のデータが以前の地域に一時的に保存されていることがあっても、Microsoft 365 管理センターのデータの場所情報には新しい地域だけが表示されることがあります。
 
 新しい Microsoft 365 テナントは、そのテナントの最初のサブスクリプションに関連付けられたトランザクションの国に基づいて既定で Geo に設定されます。
 
@@ -38,89 +39,121 @@ ms.locfileid: "65090797"
 
 Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
 
-お客様の請求先住所がヨーロッパ以外にあり、お客様が Office 365 Education サブスクリプションを所有している場合、OST の「コアオンラインサービスの顧客データの保存場所」セクションにかかわらず、マイクロソフトはお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。 顧客データをヨーロッパまたは北米内のどこにでも保管します。  お客様の請求先住所がヨーロッパにあり、お客様が Office 365 Education サブスクリプションを持っている場合、OST の「コアオンラインサービスの保存されているお客様データの場所」セクションにかかわらず、マイクロソフトはお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。 顧客データを欧州連合内のどこにでも保存します。
+お客様の請求先住所がヨーロッパ以外にあり、お客様が Office 365 Education サブスクリプションを所有している場合、OST の「コアオンラインサービスの顧客データの保存場所」セクションにかかわらず、Microsoft はお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。顧客データをヨーロッパまたは北米内のどこにでも保管します。  お客様の請求先住所がヨーロッパにあり、お客様が Office 365 Education サブスクリプションを持っている場合、OST の「コアオンラインサービスの保存されているお客様データの場所」セクションにかかわらず、Microsoft はお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。顧客データを欧州連合内のどこにでも保存します。
 
-
-
-
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 ### <a name="how-does-microsoft-define-data"></a>Microsoft はどのようにデータを定義するのですか?
+<details><summary>クリックして展開</summary>
 
 Microsoft セキュリティ センターで[さまざまな種類のデータの定義](https://go.microsoft.com/fwlink/p/?linkid=864390)を確認してください。 [プライバシーとセキュリティの使用条件](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)で、Microsoft は顧客データ/お客様のデータに関して契約上のコミットメントを行います。 Microsoft は、[プライバシーとセキュリティの使用条件](https://www.microsoft.com/licensing/terms/product/PrivacyandSecurityTerms/all)に従ってお客様の地域内でのみ保管されている顧客データをコア カスタマー データと呼びます。
 
+</details>
+
 ### <a name="where-are-the-exact-addresses-of-the-data-centers"></a>データ センターの正確な所在地はどこですか?
+
+<details><summary>クリックして展開</summary>
 
 Microsoft は、データ センターの正確な所在地を開示しません。 このポリシーは、データ センター施設のセキュリティを強化するために確立されました。  ただし、都市の場所は記載しています。 詳細については、「[データ センターの場所](o365-data-locations.md#data-center-locations)」を参照してください。
 
+</details>
+
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>顧客データの場所は、エンドユーザーのエクスペリエンスに直接影響を与えますか?
+<details><summary>クリックして展開</summary>
 
 Microsoft 365 のパフォーマンスは、データ センターの場所までのユーザーの距離に単純に比例するわけではありません。 Microsoft は、グローバル クラウド ネットワーク、グローバル クラウド インフラストラクチャ、Microsoft 365 サービス アーキテクチャにおいて継続的な投資を行っており、顧客データがどこに保存されているかに関係なく、単一で一貫性のあるエクスペリエンスをユーザーに提供します。 ユーザーにパフォーマンスの問題が発生している場合は、それらを詳細にトラブルシューティングする必要があります。 Microsoft は、[Office サポート Web サイト](./network-planning-and-performance.md)で、エンドユーザーのパフォーマンスを計画および最適化するためのガイダンスを Microsoft 365 の顧客向けに公開しています。
 
+</details>
+
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>Microsoft は、国、地域、業界固有の規制にどのように準拠していますか?
+<details><summary>クリックして展開</summary>
 
 個人のデータの収集と使用を管理する国、地域、業界固有の要件への準拠を支援するために、Microsoft 365 は、あらゆるグローバル クラウド生産性プロバイダーの最も包括的なコンプライアンス製品を提供します。 Microsoft トラスト センターの [Microsoft Purview](https://go.microsoft.com/fwlink/p/?linkid=862317) セクションで、[コンプライアンスの提供](/compliance/regulatory/offering-home)とその他の詳細を確認してください。 また、特定の Microsoft 365プラン では、データの管理、法的要件および規制要件への準拠、データに対して実行される操作ンの監視に役立つ追加のコンプライアンス ソリューションが提供されます。
 
+</details>
+
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>誰がどの規則に従ってデータにアクセスできますか?
+<details><summary>クリックして展開</summary>
 
  Microsoft は、承認されていないユーザーによる不適切なアクセスや使用からお客様のデータを保護するための強力な対策を実施しています。 これには、Microsoft の担当者や下請業者によるアクセスの制限、および顧客データに対する政府の要求に対応するための要件を慎重に定義することが含まれます。 ただし、いつでも理由を問わず、お客様自身の顧客データにアクセスできます。 詳細については、[Microsoft セキュリティ センター](https://go.microsoft.com/fwlink/p/?linkid=864392)をご覧ください。
 
+</details>
+
 ### <a name="does-microsoft-access-your-data"></a>Microsoft は、お客様のデータにアクセスしますか?
+<details><summary>クリックして展開</summary>
 
 Microsoft は、顧客データへの自社アクセスを意図的に制限しながら、ほとんどの Microsoft 365 操作を自動化します。 これにより、Microsoft 365 を規模に応じて管理し、顧客データに対する内部脅威のリスクに対処できます。 既定では、Microsoft のエンジニアには継続的な管理者権限も、Microsoft 365 の顧客データへのアクセス権もありません。 Microsoft のエンジニアは、限られた期間、顧客データに制限され記録された状態でアクセスできます。ただし、通常のサービス運用に必要な場合、Microsoft 上級管理職のメンバー (カスタマー ロックボックス機能のライセンスを取得しているお客様の場合はお客様) によって承認された場合のみです。
 
+</details>
+
 ### <a name="how-does-microsoft-secure-your-data"></a>Microsoft は、お客様のデータをどのように保護していますか?
+<details><summary>クリックして展開</summary>
 
 Microsoft は、お客様の情報を安全な状態で保護できるように、信頼性の高いポリシー、コントロールとシステムを Microsoft 365 に組み込んでいます。 詳細については、Microsoft セキュリティ センターの[「Microsoft 365 セキュリティ」のセクション](https://go.microsoft.com/fwlink/p/?linkid=864393)を確認してください。
 
+</details>
+
 ### <a name="does-microsoft-365-encrypt-your-data"></a>Microsoft 365 では、データは暗号化されるのですか?
+<details><summary>クリックして展開</summary>
 
 Microsoft 365 は、保存中および転送中の顧客データを暗号化するサービス側テクノロジを使用します。 保存中の顧客データの場合、Microsoft 365 はボリューム レベルおよびファイル レベルの暗号化を使用します。 転送中の顧客データの場合、Microsoft 365 は、トランスポート レイヤー セキュリティ (TLS) やインターネット プロトコル セキュリティ (IPsec) など、データ センター間およびクライアントとサーバー間の通信に複数の暗号化テクノロジを使用します。 Microsoft 365 には、顧客により管理される暗号化機能も含まれています。
 
+</details>
+
 ### <a name="where-can-i-find-data-residency-information-for-microsoft-azure"></a>Microsoft Azure のデータ常駐情報はどこで入手できますか?
+<details><summary>クリックして展開</summary>
 
 Microsoft Azure のデータ常駐情報については、[地域別に利用可能な製品](https://go.microsoft.com/fwlink/p/?linkid=2093451)ページを確認してください。
 
-### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365 の複数地域機能とは何ですか?
+</details>
 
-[複数地域機能](https://go.microsoft.com/fwlink/p/?linkid=872033) を使用すると、ユーザーは主要な顧客データを Microsoft 365 クラウドの利用可能な場所に保存しておくことができます。   
+### <a name="what-are-multi-geo-capabilities-in-microsoft-365"></a>Microsoft 365 の複数地域機能とは何ですか?
+<details><summary>クリックして展開</summary>
+
+[複数地域機能](https://go.microsoft.com/fwlink/p/?linkid=872033) を使用すると、ユーザーは主要な顧客データを Microsoft 365 クラウドの利用可能な場所に保存しておくことができます。
+
+</details>  
 
 ### <a name="what-services-support-multi-geo"></a>複数地域機能をサポートするサービスは何ですか?
+<details><summary>クリックして展開</summary>
 
 [Multi-Geo](https://go.microsoft.com/fwlink/p/?linkid=872033) は、Exchange Online、OneDrive for Business、SharePoint Online および Teams で使用できます。
 
+</details>
+
 ### <a name="why-do-i-see-my-microsoft-365-service-requests-for-my-data-at-rest-connecting-to-servers-in-countries-outside-of-my-region"></a>地域外の国のサーバーに保存され接続している私のデータについて、Microsoft 365 サービス要求に直面しなければならない理由は何ですか?
+<details><summary>クリックして展開</summary>
 
 場合によっては、お客様の要求は、データが保存されている場所とは異なる地域のサーバーによって処理される場合があります。 これは、ネットワーク ルーティングの決定によって、要求処理のために別のサーバーが選択される場合に発生しますが、しかしこのような場合、データは新しい保存場所に移動されません。
 
+</details>
+
 ### <a name="what-are-the-exceptions-for-intune-data-locations"></a>Intune データの保存場所については、どのような例外がありますか?
+<details><summary>クリックして展開</summary>
 
 Microsoft は、次の場合を除いて、指定された地域外に Intune の顧客データを保存しません。
 
 - Microsoft は、顧客サポートを提供したり、サービスのトラブルシューティングを行ったり、法的要件に準拠したりする必要があります。
 - ユーザーは、次のような用途を含む顧客データの保存を可能にするアカウントを構成します。
-
   - 地球規模のキャッシュ サービスを提供し、世界中に顧客データを保存する、コンテンツ配信ネットワーク (CDN) など、グローバルに動作するように設計された機能。
-
   - ディレクトリ データをグローバルに保存できる、Azure Active Directory (Azure AD)。この内容は、米国 (Azure AD データは米国のみに保存されます)、または欧州 (Azure AD データは欧州または米国に保存されています) の Azure AD の展開には適用されません。
-   
   - 通常、顧客データは米国に保存されますが、プレビュー、ベータ、およびその他のプレリリース サービスについては、グローバルに保存することができます。
 
-にも関わらず、Microsoft は、顧客やそのエンド ユーザーによる顧客データへのアクセス元の場所 (Geo) について、統制や制限をしません。同様に、他のサービスの顧客データが引き続いて Intune に統合される場合、元の顧客データは、元のサービス独自の Geo コミットメント (存在する場合) に従って引き続き保存されます; Intune に統合された顧客データのコピーのみが、Intune の指定された Geo に保存されます。  
+いずれにしても、Microsoft は、顧客やそのエンドユーザーが顧客データにアクセスできるような地域機能を制御したり制限したりすることはありません。 同様に、他のサービスの顧客データがその後 Intune に統合される場合、元の顧客データは、他のサービス独自の Geo コミットメント (存在する場合) に従って引き続き保存されます。Intune に統合された顧客データのコピーのみが、Intune の指定された Geo に保存されます。
+
+</details>
 
 ### <a name="what-are-the-considerations-for-microsoft-viva-data-locations"></a>Microsoft Viva 用のデータの場所についてはどのような配慮が必要ですか?
+<details><summary>クリックして展開</summary>
 
 - Viva コネクション
-
-  - ダッシュボード、リソース、デスクトップ アプリのデータは、SharePoint Online に保存されます。 
-  
-  - フィードには、SharePoint Online (ニュース)、ストリーム (SharePoint Online に静止画として保存)、Yammer (Yammer に静止画として保存) のコンテンツがあります。  
-  
+  - ダッシュボード、リソース、デスクトップ アプリのデータは、SharePoint Online に保存されます。
+  - フィードには、SharePoint Online (ニュース)、ストリーム (SharePoint Online に静止画として保存)、Yammer (Yammer に静止画として保存) のコンテンツがあります。
 - Viva インサイト
-
   - 個人用アプリのデータ所在地は、ユーザーのメールボックスの場所に基づくものです。
-  
   - マネージャー/リーダーまた アドバンスト のデータ領域は、個々のユーザーではなく、テナントのプライマリ リージョンによって決定されます。
+
+</details>
 
 ## <a name="data-center-locations"></a>データ センターの場所
 
@@ -128,7 +161,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 
 ### <a name="data-center-geographies"></a>データ センターの地域
 
-次のグローバルな地域では、データを保存できます。 顧客データの保存場所は変更される場合があります。 
+次のグローバルな地域では、データを保存できます。 顧客データの保存場所は変更される場合があります。
 
 | グローバルな地域 | 顧客データを保存できる場所 |
 | --- | --- |
@@ -720,7 +753,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="belarus"></a>ベラルーシ
 <details><summary>クリックして展開</summary><p>
@@ -1590,7 +1622,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - 上級 | 米国 |
 </p></details>
 
-
 ## <a name="congo-brazzaville"></a>コンゴ民主共和国 (ブラザビル)
 <details><summary>クリックして展開</summary><p>
 
@@ -1619,7 +1650,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - 上級 | 米国 |
 </p></details>
 
-
 ## <a name="congo-kinshasa"></a>コンゴ共和国、(キンシャサ)
 <details><summary>クリックして展開</summary><p>
 
@@ -1647,7 +1677,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="cook-islands"></a>クック諸島
 <details><summary>クリックして展開</summary><p>
@@ -2601,7 +2630,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - 上級 | 米国 |
 </p></details>
 
-
 ## <a name="greenland"></a>グリーンランド
 <details><summary>クリックして展開</summary><p>
 
@@ -3077,7 +3105,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="india"></a>インド
 <details><summary>クリックして展開</summary><p>
@@ -3667,7 +3694,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - 上級 | 米国 |
 </p></details>
 
-
 ## <a name="lesotho"></a>レソト
 <details><summary>クリックして展開</summary><p>
 
@@ -3695,7 +3721,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="liberia"></a>リベリア
 <details><summary>クリックして展開</summary><p>
@@ -3752,7 +3777,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="liechtenstein"></a>リヒテンシュタイン
 <details><summary>クリックして展開</summary><p>
@@ -4454,7 +4478,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - 上級 | 米国 |
 </p></details>
 
-
 ## <a name="nepal"></a>ネパール
 <details><summary>クリックして展開</summary><p>
 
@@ -4482,7 +4505,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="netherlands"></a>オランダ
 <details><summary>クリックして展開</summary><p>
@@ -4539,7 +4561,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="new-caledonia"></a>ニューカレドニア
 <details><summary>クリックして展開</summary><p>
@@ -5273,7 +5294,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="russian-federation"></a>ロシア連邦
 <details><summary>クリックして展開</summary><p>
 
-
 | サービス | 場所 |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5302,7 +5322,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 ## <a name="rwanda"></a>ルワンダ
 <details><summary>クリックして展開</summary><p>
 
-
 | サービス | 場所 |
 | --- | --- |
 | Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5330,7 +5349,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 
 ## <a name="saint-helena"></a>セントヘレナ島
 <details><summary>クリックして展開</summary><p>
-
 
 | サービス | 場所 |
 | --- | --- |
@@ -5891,7 +5909,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 
 ## <a name="somalia"></a>ソマリア
 <details><summary>クリックして展開</summary><p>
-
 
 | サービス | 場所 |
 | --- | --- |
@@ -6868,7 +6885,6 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
 | Viva インサイト - 上級 | 米国 |
 </p></details>
-
 
 ## <a name="vietnam"></a>ベトナム
 <details><summary>クリックして展開</summary><p>

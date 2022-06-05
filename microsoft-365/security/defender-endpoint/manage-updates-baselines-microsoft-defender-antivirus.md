@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d2ad08c91d8c28163eccf239f9a7266b15a44927
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: ef9793a1bcbf09f6b7a1640d9213522cdb741891
+ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418338"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "65872272"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -297,7 +297,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 
 ### <a name="whats-new"></a>新機能
 - Windows ポータブル デバイスのデバイス制御のサポートを追加しました
-- 望ましくない可能性のあるアプリケーション (PUA) に対する保護は、既定でコンシューマーに対して有効になります (「[望ましくない可能性のあるアプリは既定でブロックされる](https://support.microsoft.com/windows/potentially-unwanted-apps-will-be-blocked-by-default-b9f53cb9-7f1e-40bb-8c6b-a17e0ab6289e)」を参照してください)
+- 望ましくない可能性のあるアプリケーション (PUA) 保護は、コンシューマーに対して既定でオンになっています (「[Microsoft Defender ウイルス対策で望ましくない可能性のあるアプリケーションをブロックする](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)」を参照してください。)
 - グループ ポリシー オブジェクトで管理されているシステムのスケジュールされたスキャンは、ユーザーが構成したスキャンの時間に従います
 - 動作監視エンジンの改善
 
