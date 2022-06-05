@@ -25,25 +25,25 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium での保護レベルの向上に関するヘルプを表示する
-ms.openlocfilehash: a442dcd399a1886f5f63bd17dc897d1547a0f579
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: dfbde871e31bd4c8e47fb9365ad4da7a9a1f6226
+ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863610"
+ms.lasthandoff: 06/04/2022
+ms.locfileid: "65893187"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の脅威に対する保護を強化する
 
 この目的では、Microsoft 365 Business Premium を使用して脅威に対する保護を強化します。 フィッシング、マルウェア、その他の脅威からビジネスを保護することが重要です。 この目標には、次に関する情報が含まれます:
 
-- セットアップと構成に多くの時間を節約できる[事前設定済みのセキュリティ ポリシー](#review-and-apply-preset-security-policies)
+- セットアップと構成に多くの時間を節約できる[事前設定済みのセキュリティ ポリシー](#review-and-apply-preset-security-policies)。
 - ビジネス ニーズに合わせて定義できる[カスタム セキュリティ ポリシー](#create-custom-security-policies)
-- [SharePoint と OneDrive ファイルとフォルダーの共有設定を調整する方法](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)
-- 特定のファイルとその使用方法を監視する[アラート ポリシー](#review-your-alert-policies)。 
+- [SharePoint と OneDrive ファイルとフォルダーの共有設定を調整する方法](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)。
+- 特定のファイルとその使用方法を監視する[アラート ポリシー](#review-your-alert-policies)。
 
 ## <a name="review-and-apply-preset-security-policies"></a>事前設定されたセキュリティ ポリシーを確認して適用する
 
-サブスクリプションには、スパム対策、マルウェア対策、フィッシング対策の保護のためのおすすめの設定を使用する[事前設定されたセキュリティ ポリシー](../security/office-365-security/preset-security-policies.md)が含まれています。 既定では、組み込みの保護が有効になっています。ただし、セキュリティを強化するために標準または厳格な保護を適用することを検討してください。 
+サブスクリプションには、スパム対策、マルウェア対策、フィッシング対策の保護のためのおすすめの設定を使用する[事前設定されたセキュリティ ポリシー](../security/office-365-security/preset-security-policies.md)が含まれています。 既定では、組み込みの保護が有効になっています。ただし、セキュリティを強化するために標準または厳格な保護を適用することを検討してください。
 
 :::image type="content" source="media/m365bp-presetsecuritypolicies.png" alt-text="事前設定されたセキュリティ ポリシーを示すスクリーンショット。":::
 
@@ -214,4 +214,4 @@ ms.locfileid: "65863610"
 
 ## <a name="next-steps"></a>次の手順
 
-では、[**BYOD デバイスを設定**](m365bp-devices-overview.md)するミッションを開始しましょう。
+それでは、[**これらのアンマネージド BYOD デバイスを設定**](m365bp-devices-overview.md)しましょう。
