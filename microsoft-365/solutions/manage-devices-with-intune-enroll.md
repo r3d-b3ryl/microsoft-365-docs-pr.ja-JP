@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 98c98298b5bb6728a0f8526e0406fb1fe02654f0
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: d01630c5e5011363a08ae43ce87e6620d8d17f8f
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704716"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923327"
 ---
 # <a name="step-2-enroll-devices-to-intune"></a>手順 2。 デバイスを Intune に登録する
 
@@ -36,6 +36,12 @@ ms.locfileid: "64704716"
 この記事では、デバイスを Intune に登録する方法を推奨しています。これらのメソッドと各メソッドの展開方法の詳細については、「[展開ガイダンス: Microsoft Intune にデバイスを登録する](/mem/intune/fundamentals/deployment-guide-enrollment)」を参照してください。
 
 ![デバイスを管理するための手順](../media/devices/intune-mdm-steps-1.png#lightbox)
+
+この記事のガイダンスは、この図に示す各プラットフォームの登録オプションと共に使用してください。 
+
+[![プラットフォーム別の Intune 登録オプションの視覚的表現](../media/devices/msft-intune-enrollment-options-thumb-landscape.png)](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) <br/> [PDF](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.pdf) | [Visio](https://download.microsoft.com/download/e/6/2/e6233fdd-a956-4f77-93a5-1aa254ee2917/msft-intune-enrollment-options.vsdx) <br/> 更新日: 2022 年 6 月
+
+
 
 ## <a name="windows-enrollment"></a>Windows の登録
 Windows 10 および Windows 11 デバイスを登録するためのいくつかのオプションがあります。 最も一般的な方法には、次の 2 つがあります。

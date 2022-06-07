@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ef9793a1bcbf09f6b7a1640d9213522cdb741891
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: bcba0da734c4f5b1945a506d77a88355215efada
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872272"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923305"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -721,6 +721,21 @@ Windows 10 リリース情報については、「[Windows ライフサイクル
 詳細については、「[Windows オペレーティング システムのインストール イメージ用の Microsoft Defender 更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)」を参照してください。
 
 <details>
+<summary>20220603.3</summary>
+
+&ensp;パッケージのバージョン: **20220603.3**<br/>
+&ensp;プラットフォームのバージョン: **4.18.2203.5**<br/>
+&ensp;エンジンのバージョン: **1.1.19200.6**<br/>
+&ensp;署名のバージョン: **1.367.1009.0**<br/>
+
+### <a name="fixes"></a>修正プログラム
+- なし
+
+### <a name="additional-information"></a>その他の情報
+- なし
+
+<br/>
+</details><details>
 <summary>20220506.6</summary>
 
 &ensp;パッケージのバージョン: **20220506.6**<br/>

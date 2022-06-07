@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベル ポリシーとともに保管ロックを使用して、規制要件を満たし、不正な管理者から保護します。
-ms.openlocfilehash: cf72f0b2eed6328244bf78c9e365447c9f38edeb
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 6ee7937bad487fcac8d1ee15483becfb276d9579
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286014"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922221"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する
 
@@ -50,16 +50,13 @@ ms.locfileid: "65286014"
 > [!IMPORTANT]
 > アイテム保持ポリシーまたは保持ラベル ポリシーをロックする前に、その影響を理解し、それが組織に必要であるかどうかを確認することが非常に重要です。 たとえば、規制要件を満たす必要がある場合があります。 保管ロックを適用すると、管理者はこれらのポリシーを無効にすることも削除することもできなくなります。
 
-[発行](create-apply-retention-labels.md)または[自動適用](apply-retention-labels-automatically.md)する[アイテム保持ポリシー](create-retention-policies.md)、または保持ラベル ポリシーを作成した後、保管ロックを構成します。
-
-> [!NOTE]
-> ラベル ポリシーをロックしても、管理者はロックされたポリシーに含まれているラベルの保持期間を短縮できます。 アイテムを[規制レコード](records-management.md#records)としてマークするようにラベルを構成するときに、この要件を他の制限とともに満たすことができます。
+[アイテムを規制レコードとしてマーク](records-management.md#records)するラベルのみが含まれる[公開](create-apply-retention-labels.md)したアイテム保持ラベル ポリシーか、[アイテム保持ポリシー](create-retention-policies.md)の作成後に保管ロックを構成します。
 
 ## <a name="how-to-lock-a-retention-policy-or-retention-label-policy"></a>アイテム保持ポリシーまたは保持ラベル ポリシーをロックする方法
 
 保管ロックを使用する必要がある場合は、PowerShell を使用する必要があります。 管理者は、保管ロックが適用された後に保持に関するポリシーを無効にしたり、削除したりすることができないため、この機能の有効化は、偶発的な構成を予防するものとして UI で使用することはできません。
 
-すべての保持に関するポリシーおよびそのいかなる構成も、保管ロックをサポートします。
+保持ロックのいかなる構成にも対応するすべてのアイテム保持ポリシー。 保持ラベル ポリシーに保管ロックを適用するには、アイテムを規制レコードとしてマークするラベルのみがそれに含まれる必要があります。
 
 1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 

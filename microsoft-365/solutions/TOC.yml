@@ -314,12 +314,8 @@
           href: ../compliance/ediscovery.md
         - name: Microsoft Purview 電子情報開示 (プレミアム)
           href: ../compliance/overview-ediscovery-20.md
-        - name: 法令遵守アクション プラン
+        - name: 法令遵守のよくあるご質問およびアクション プラン
           items:
-            - name: ISO - 推奨アクション プラン
-              href: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
-            - name: NIST - 推奨アクション プラン
-              href: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: CCPA - その他のよく寄せられる質問
               href: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json
             - name: GDPR - 推奨する対策計画

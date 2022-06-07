@@ -18,7 +18,7 @@ ms.topic: conceptual
 ms.technology: mde
 ms.openlocfilehash: 355fc0f367c415ae679259195e18ff3920812f4a
 ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/25/2022
 ms.locfileid: "65670160"
