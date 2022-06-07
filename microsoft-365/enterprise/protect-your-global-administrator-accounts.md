@@ -1,5 +1,5 @@
 ---
-title: 手順 2.  Microsoft 365特権アカウントを保護する
+title: 手順 2.  Microsoft 365 特権アカウントを保護する
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -22,18 +22,18 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: この記事では、Microsoft 365 テナントへの特権アクセスの保護に関する情報を提供します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b9719908fcbe8aa453ac07788ee7771a39242d4e
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 3da8a6279d122a056a168485145c171f9d3d7f5f
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622580"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930199"
 ---
-# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>手順 2。 Microsoft 365特権アカウントを保護する
+# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>手順 2. Microsoft 365 特権アカウントを保護する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-通常、情報の収集やフィッシング攻撃など、Microsoft 365 テナントのセキュリティ侵害は、Microsoft 365特権アカウントの資格情報を侵害することによって行われます。 クラウドのセキュリティは、お客様と Microsoft 間のパートナーシップに基づくものです。
+情報の収集やフィッシング攻撃を含む Microsoft 365 テナントのセキュリティ侵害は、通常、Microsoft 365 特権アカウントの資格情報を侵害することによって行われます。 クラウドのセキュリティは、お客様と Microsoft 間のパートナーシップに基づくものです。
   
 - Microsoft クラウド サービスは信頼とセキュリティの基盤の上に構築されます。 Microsoft が提供するセキュリティ制御と機能は、お客様のデータとアプリケーションの保護に役立ちます。
     
@@ -43,9 +43,12 @@ Microsoft は組織を保護するのに役立つ機能を提供しますが、�
   
 1. 専用の特権を持つクラウドベースのアカウントを作成し、必要な場合にのみ使用します。
     
-2. 専用のMicrosoft 365特権アカウントに対して多要素認証 (MFA) を構成し、最も強力な形式のセカンダリ認証を使用します。
+2. 専用の Microsoft 365 特権アカウントに多要素認証 (MFA) を構成し、最も強力な形式のセカンダリ認証を使用します。
 
-3. ゼロ トラスト ID とデバイス アクセスに関する推奨事項を使用して特権アカウントを保護します。
+3. ゼロ トラスト ID とデバイス アクセスに関する推奨事項を使用して、特権アカウントを保護します。
+
+> [!NOTE]
+> 特権ロールをセキュリティで保護するには、テナントへの特権アクセスをセキュリティで保護するための [Azure AD ロールのベスト プラクティス](/azure/active-directory/roles/best-practices) を確認してください。
 
 ## <a name="1-create-dedicated-privileged-cloud-based-user-accounts-and-use-them-only-when-necessary"></a>1. 専用の特権を持つクラウドベースのユーザー アカウントを作成し、必要な場合にのみ使用する
 
@@ -54,15 +57,15 @@ Microsoft は組織を保護するのに役立つ機能を提供しますが、�
 この時点から、管理者特権を必要とするタスクに対してのみ、専用の特権アカウントでサインインします。 他のすべての Microsoft 365 の管理は、他の管理ロールをユーザー アカウントに割り当てて行う必要があります。
   
 > [!NOTE]
-> これには、日常のユーザー アカウントとしてサインアウトし、専用の管理者アカウントでサインインするための追加の手順が必要です。 ただし、これは管理者の操作に対してのみ行う必要があります。 管理者アカウントの侵害後にMicrosoft 365サブスクリプションを回復するには、さらに多くの手順が必要であると考えてください。
+> これには、日常のユーザー アカウントとしてサインアウトし、専用の管理者アカウントでサインインするための追加の手順が必要です。 ただし、これは管理者の操作に対してのみ行う必要があります。 管理者アカウントの侵害後に Microsoft 365 サブスクリプションを回復するには、さらに多くの手順が必要であると考えてください。
 
 また、Azure AD から誤ってロックアウトされないように、 [緊急アクセス アカウント](/azure/active-directory/roles/security-emergency-access) を作成する必要もあります。
 
-Azure AD Privileged Identity Management (PIM) を使用して特権アカウントをさらに保護し、管理者ロールをオンデマンドでジャストインタイムで割り当てることができます。 
+Azure AD Privileged Identity Management (PIM) を使用して特権アカウントをさらに保護し、管理者ロールをオンデマンドで Just-In-Time で割り当てることができます。 
  
-## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. 専用のMicrosoft 365特権アカウントの多要素認証を構成する
+## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. 専用の Microsoft 365 特権アカウントの多要素認証を構成する
 
-多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365では、次の追加の検証方法がサポートされます。
+多要素認証 (MFA) には、アカウント名とパスワード以外の追加情報が必要です。 Microsoft 365 では、次の追加の検証方法がサポートされています。
   
 - Microsoft Authenticator アプリ
 - 電話
@@ -70,7 +73,6 @@ Azure AD Privileged Identity Management (PIM) を使用して特権アカウン�
 - スマート カード (仮想または物理) (フェデレーション認証が必要)
 - 生体認証デバイス
 - Oauth トークン
-- 
     
 >[!Note]
 >アメリカ国立標準技術研究所 (NIST) の標準に準拠する必要がある組織では、電話またはテキスト メッセージベースの追加の検証方法の使用が制限されています。 詳細については、[ここ](https://pages.nist.gov/800-63-FAQ/#q-b01)をクリックしてください。
@@ -78,9 +80,9 @@ Azure AD Privileged Identity Management (PIM) を使用して特権アカウン�
 
 クラウドにのみ格納されているユーザー アカウント (クラウド専用 ID モデル) を使用している小規模企業の場合は、専用の特権アカウントごとにスマートフォンに送信される電話またはテキスト メッセージ検証コードを使用して MFA を構成するように [MFA を設定](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) します。
     
-Microsoft 365ハイブリッド ID モデルを使用している大規模な組織の場合は、より多くの検証オプションがあります。 より強力なセカンダリ認証方法用にセキュリティ インフラストラクチャが既に用意されている場合は、 [MFA を設定](../admin/security-and-compliance/set-up-multi-factor-authentication.md) し、適切な検証方法に対して専用の特権アカウントを構成します。
+Microsoft 365 ハイブリッド ID モデルを使用している大規模な組織の場合は、より多くの検証オプションがあります。 より強力なセカンダリ認証方法用にセキュリティ インフラストラクチャが既に用意されている場合は、 [MFA を設定](../admin/security-and-compliance/set-up-multi-factor-authentication.md) し、適切な検証方法に対して専用の特権アカウントを構成します。
   
-必要な強力な検証方法のセキュリティ インフラストラクチャが整っていず、Microsoft 365 MFA に対して機能している場合は、中間セキュリティ対策として、Microsoft Authenticator アプリ、電話、またはスマート フォンに送信されたテキスト メッセージ検証コードを使用して、MFA を使用して専用の特権アカウントを構成することを強くお勧めします。 MFA によって提供される追加の保護なしで、専用の特権アカウントを残さないでください。
+Microsoft 365 MFA に対して目的の強力な検証方法のセキュリティ インフラストラクチャが整って機能していない場合は、中間セキュリティ対策として、Microsoft Authenticator アプリ、電話、またはテキスト メッセージ検証コードをスマート フォンに送信して、MFA を使用して専用の特権アカウントを構成することを強くお勧めします。 MFA によって提供される追加の保護なしで、専用の特権アカウントを残さないでください。
   
 詳細については、「[Microsoft 365 の MFA](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)」を参照してください。
   
@@ -97,7 +99,7 @@ Microsoft 365ハイブリッド ID モデルを使用している大規模な組
   
 ### <a name="privileged-access-workstation"></a>特権アクセス ワークステーション (PAW)
 
-高い権限を持つタスクの実行が、可能な限りセキュリティで保護されるようにするには、特権アクセス ワークステーション (PAW) を使用します。 PAW は、特権アカウントを必要とするMicrosoft 365構成など、機密性の高い構成タスクにのみ使用される専用コンピューターです。 このコンピューターはインターネットの閲覧や電子メールには毎日使用されないため、インターネット攻撃や脅威から保護する方が効果的です。
+高い権限を持つタスクの実行が、可能な限りセキュリティで保護されるようにするには、特権アクセス ワークステーション (PAW) を使用します。 PAW は、特権アカウントを必要とする Microsoft 365 構成などの機密性の高い構成タスクにのみ使用される専用コンピューターです。 このコンピューターはインターネットの閲覧や電子メールには毎日使用されないため、インターネット攻撃や脅威から保護する方が効果的です。
   
 PAWの設定方法については、[https://aka.ms/cyberpaw](/security/compass/privileged-access-devices)を参照してください。
 
@@ -139,7 +141,7 @@ PIM は、Microsoft 365 E5 に含まれている Azure Active Directory Premium 
 
 ### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Microsoft 365 ログ記録用のセキュリティ情報とイベント管理 (SIEM)
 
-サーバー上で実行される SIEM ソフトウェアは、アプリケーションとネットワーク ハードウェアによって作成されたセキュリティ アラートとイベントのリアルタイム分析を実行します。 SIEM サーバーが分析機能とレポート機能にMicrosoft 365セキュリティ アラートとイベントを含めることを許可するには、Azure AD を SEIM に統合します。 「[Azure Log Integration の概要](/azure/security/security-azure-log-integration-overview)」を参照してください。
+サーバー上で実行される SIEM ソフトウェアは、アプリケーションとネットワーク ハードウェアによって作成されたセキュリティ アラートとイベントのリアルタイム分析を実行します。 SIEM サーバーが Microsoft 365 のセキュリティ アラートとイベントを分析およびレポート機能に含めることを許可するには、Azure AD を SEIM に統合します。 「[Azure Log Integration の概要](/azure/security/security-azure-log-integration-overview)」を参照してください。
 
 ## <a name="next-step"></a>次の手順
 

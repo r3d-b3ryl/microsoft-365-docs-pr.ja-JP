@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用してMicrosoft 365ユーザー アカウントを作成する
+title: PowerShell を使用して Microsoft 365 ユーザー アカウントを作成する
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -18,31 +18,31 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 6770c5fa-b886-4512-8c67-ffd53226589e
-description: PowerShell を使用して個々のユーザー アカウントまたは複数のMicrosoft 365 ユーザー アカウントを作成する方法。
-ms.openlocfilehash: 2b0ef749dc0a0d38d84d1086dee50ce416d93e9b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: PowerShell を使用して、個々または複数の Microsoft 365 ユーザー アカウントを作成する方法。
+ms.openlocfilehash: 9f96c5a96e014055622deb34c37cb8523f0041f8
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101053"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930243"
 ---
-# <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用してMicrosoft 365ユーザー アカウントを作成する
+# <a name="create-microsoft-365-user-accounts-with-powershell"></a>PowerShell を使用して Microsoft 365 ユーザー アカウントを作成する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
-PowerShell を使用して、複数のアカウントを含むユーザー アカウントを効率的に作成Microsoft 365。
+PowerShell for Microsoft 365 を使用すると、複数のアカウントを含むユーザー アカウントを効率的に作成できます。
 
 PowerShell でユーザー アカウントを作成する場合、特定のアカウント プロパティが常に必要です。 その他のプロパティは必須ではありませんが、重要です。 次の表を参照してください。
   
 |**プロパティ名**|**必須**|**説明**|
 |:-----|:-----|:-----|
 |**DisplayName** <br/> |はい  <br/> |これは、Microsoft 365 サービスで使用される表示名です。 たとえば、 *Caleb Sills* です。 <br/> |
-|**UserPrincipalName** <br/> |はい  <br/> |これは、Microsoft 365 サービスへのサインインに使用されるアカウント名です。 たとえば、 *CalebS\@ contoso.onmicrosoft.com*。  <br/> |
+|**UserPrincipalName** <br/> |はい  <br/> |これは、Microsoft 365 サービスへのサインインに使用されるアカウント名です。 たとえば、 *CalebS\@contoso.onmicrosoft.com*。  <br/> |
 |**FirstName** <br/> |いいえ  <br/> ||
 |**LastName** <br/> |いいえ  <br/> ||
-|**LicenseAssignment** <br/> |いいえ  <br/> |これは、使用可能なライセンスがユーザー アカウントに割り当てられるライセンス プラン (ライセンス プランまたは SKU とも呼ばれます) です。 ライセンスは、アカウントで使用できるMicrosoft 365 サービスを定義します。 アカウントを作成するときにユーザーにライセンスを割り当てる必要はありませんが、そのアカウントには、Microsoft 365 サービスにアクセスするためのライセンスが必要です。 ユーザー アカウントにライセンスを割り当てる期間は作成後 30 日です。 |
+|**LicenseAssignment** <br/> |いいえ  <br/> |これは、使用可能なライセンスがユーザー アカウントに割り当てられる [ライセンス プラン (ライセンス プランまたは SKU](/azure/active-directory/enterprise-users/licensing-service-plan-reference) とも呼ばれます) です。 このライセンスは、アカウントで使用できる Microsoft 365 サービスを定義します。 アカウントを作成するときにユーザーにライセンスを割り当てる必要はありませんが、アカウントには Microsoft 365 サービスにアクセスするためのライセンスが必要です。 ユーザー アカウントにライセンスを割り当てる期間は作成後 30 日です。 |
 |**Password** <br/> |いいえ  <br/> | パスワードを指定しない場合、ランダムなパスワードがユーザー アカウントに割り当てられ、パスワードはコマンドの結果に表示されます。 パスワードを指定する場合は、小文字、大文字、数字、記号の 8 から 16 の ASCII テキスト文字が必要です。<br/> |
-|**UsageLocation** <br/> |いいえ  <br/> |これは有効な ISO 3166-1 alpha-2 国コードです。 たとえば、*米国の場合は米国*、フランスの場合 *は FR* です。 一部のMicrosoft 365 サービスは特定の国では利用できないため、この値を指定することが重要です。 アカウントにこの値が構成されていない限り、ユーザー アカウントにライセンスを割り当てることはできません。 詳細については、「 [ライセンス制限について](https://go.microsoft.com/fwlink/p/?LinkId=691730)」を参照してください。<br/> |
+|**UsageLocation** <br/> |いいえ  <br/> |これは有効な ISO 3166-1 alpha-2 国コードです。 たとえば、 *米国は米国* 、フランスは *FR* です。 一部の Microsoft 365 サービスは特定の国では利用できないため、この値を指定することが重要です。 アカウントにこの値が構成されていない限り、ユーザー アカウントにライセンスを割り当てることはできません。 詳細については、「 [ライセンス制限について](https://go.microsoft.com/fwlink/p/?LinkId=691730)」を参照してください。<br/> |
 
 >[!Note]
 >Microsoft 365 管理センターを使用して[ユーザー アカウントを作成する方法について説明](../admin/add-users/add-users.md)します。
@@ -83,16 +83,16 @@ New-MsolUser -DisplayName <display name> -FirstName <first name> -LastName <last
 ```
 
 >[!Note]
->PowerShell Core では、名前に *Msol* が含まれるWindows PowerShell モジュールとコマンドレットのMicrosoft Azure Active Directory モジュールはサポートされていません。 これらのコマンドレットは、Windows PowerShell から実行します。
+>PowerShell Core では、Windows PowerShell モジュール用の Microsoft Azure Active Directory モジュールとその名前に *Msol* が含まれるコマンドレットはサポートされていません。 これらのコマンドレットは、Windows PowerShell から実行します。
 >
 
-使用可能なライセンスのプラン名を一覧表示するには、次のコマンドを使用します。
+使用可能な [ライセンス プラン名を](/azure/active-directory/enterprise-users/licensing-service-plan-reference)一覧表示するには、次のコマンドを使用します。
 
 ````powershell
 Get-MsolAccountSku
 ````
 
-この例では、米国ユーザー *Caleb Sills* のアカウントを作成し、(Office 365 Enterprise E3) ライセンス プランから`contoso:ENTERPRISEPACK`ライセンスを割り当てます。
+この例では、米国ユーザー *Caleb Sills* のアカウントを作成し、(Office 365 Enterprise E3) ライセンス プランから `contoso:ENTERPRISEPACK` ライセンスを割り当てます。
   
 ```powershell
 New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPrincipalName calebs@contoso.onmicrosoft.com -UsageLocation US -LicenseAssignment contoso:ENTERPRISEPACK
@@ -110,7 +110,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
      ```
 
    >[!NOTE]
-   >CSV ファイルの最初の行の列名とその順序は任意です。 ただし、ファイルの残りの部分のデータの順序が列名の順序と一致することを確認してください。 PowerShell for Microsoft 365 コマンドのパラメーター値の列名を使用します。
+   >CSV ファイルの最初の行の列名とその順序は任意です。 ただし、ファイルの残りの部分のデータの順序が列名の順序と一致することを確認してください。 また、PowerShell for Microsoft 365 コマンドのパラメーター値の列名を使用します。
     
 2. 次の構文を使用してください。
     
@@ -124,7 +124,7 @@ New-MsolUser -DisplayName "Caleb Sills" -FirstName Caleb -LastName Sills -UserPr
     Import-Csv -Path "C:\My Documents\NewAccounts.csv" | foreach {New-MsolUser -DisplayName $_.DisplayName -FirstName $_.FirstName -LastName $_.LastName -UserPrincipalName $_.UserPrincipalName -UsageLocation $_.UsageLocation -LicenseAssignment $_.AccountSkuId} | Export-Csv -Path "C:\My Documents\NewAccountResults.csv"
     ```
 
-3. 出力ファイルで結果を確認します。 パスワードを指定していないため、生成されたランダムなパスワードMicrosoft 365出力ファイルに表示されます。
+3. 出力ファイルで結果を確認します。 パスワードを指定していないため、Microsoft 365 によって生成されたランダムなパスワードが出力ファイルに表示されます。
     
 ## <a name="see-also"></a>関連項目
 
