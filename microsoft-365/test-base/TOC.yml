@@ -7,23 +7,25 @@
 - name: クイックスタート
   items:
     - name: テスト ベース アカウントの作成
-      href: createAccount.md
+      href: createaccount.md
     - name: テスト ベースでアプリケーションをテストする
       items:
         - name: 概要
           href: testoverview.md
         - name: テスト ベースでのバイナリ ファイルの作成とテスト
           href: testapplication.md
-        - name: Test Base でIntune アプリをテストする
+        - name: テスト ベースで Intune アプリをテストする
           href: testintuneapplication.md
-        - name: テスト ベース パッケージをアップロードする (Zip)
-          href: uploadApplication.md
+        - name: ビルド済みの zip パッケージのアップロード
+          href: uploadapplication.md
     - name: パッケージをビルドする
       href: buildpackage.md
     - name: 既存のパッケージを複製する
       href: clonepackage.md
     - name: パッケージ ガイドライン
       href: contentguideline.md
+    - name: 使用コストを把握する
+      href: usagecost.md
     - name: アプリケーション/テストルール
       href: rules.md
 - name: 使い方ガイド
@@ -40,7 +42,7 @@
       href: cpu.md
     - name: SDK & API
       href: sdkapi.md
-- name: 参照
+- name: 関連情報
   items:
     - name: よく寄せられる質問
       href: faq.md

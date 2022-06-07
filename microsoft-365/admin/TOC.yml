@@ -348,10 +348,6 @@
           href: security-and-compliance/enable-modern-authentication.md
         - name: Microsoft Defender ウイルス対策によって検出された脅威
           href: /microsoft-365/business-premium/m365bp-review-threats-take-action
-        - name: コンプライアンス機能をセットアップする
-          href: /microsoft-365/business-premium/m365bp-set-up-compliance.md
-        - name: セキュア スコア
-          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: GDPR コンプライアンスのガイド
           href: security-and-compliance/gdpr-compliance.md
     - name: デバイスとアプリのデータを管理する

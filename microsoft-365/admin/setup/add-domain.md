@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストで DNS レコードを追加して、Microsoft 365 管理センターで Microsoft 365 にドメインを追加します。
-ms.openlocfilehash: fa809486b968c4bc0f8c74e466285ee2ce9ac895
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: ad4654bce8781607a77272dafeb3eb9135c85765
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321713"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922925"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
@@ -149,7 +149,7 @@ ms.locfileid: "63321713"
 
 ### <a name="add-an-onmicrosoftcom-domain"></a>onmicrosoft.com ドメインを追加します。
 
-各 Microsoft 365 組織は、最大 3 つの onmicrosoft.com ドメインを持つことができます。
+各 Microsoft 365 組織は、最大 5 つの onmicrosoft.com ドメインを持つことができます。
 
 > [!NOTE]
 > ドメインを追加するには、グローバル管理者またはドメイン名管理者である必要があります。
@@ -159,11 +159,29 @@ ms.locfileid: "63321713"
 
 onmicrosoft.com ドメインを追加するには:
 
-1. Microsoft 管理センター、**[設定]** > <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**[ドメイン]**</a> の順に移動します。
+1. Microsoft 365 管理センターで、[ **設定]** を選択し、[ **ドメイン**] を選択します。
+2. onmicrosoft.com の既定のドメインを選択します。
 
-2. **[概要]** タブで、**[onmicrosoft.com ドメインを追加する]** を選択します。
+    ![[ドメイン] ページ。](../../media/onmicrosoft-domains.png)
+  
+3. [ドメインのプロパティ] ページの [ **このドメイン** について] セクションで、[ **Add onmicrosoft domain] (onmicrosoft ドメインの追加**) を選択します。
 
-所有している任意のドメインを既定のドメインとして設定できます。
+    ![この [ドメイン] ページについて。](../../media/add-onmicrosoft-domain-link.png)
+
+4. [ **Add onmicrosoft domain** ] ページの [ **ドメイン名** ] ボックスに、新しい onmicrosoft.com ドメインの名前を入力します。 
+
+    ![[Add onmicrosoft domain]\(onmicrosoft ドメインの追加\) ページのスクリーンショット。](../../media/add-an-onmicrosoftcom-domain-page.png)
+
+    > [!NOTE]
+    > 入力したドメイン名のスペルと正確性を確認してください。 ドメインは 5 つの onmicrosoft.com に制限されており、現在は作成後は削除できません。     
+
+5. [**ドメインの追加**] を選択します。 正常に追加されると、これを示すメッセージが表示されます。 
+    
+    ![正常に追加されたドメインのスクリーンショット。](../../media/domain-added.png)
+
+所有している任意のドメインを既定のドメインとして設定できます。 
+
+onmicrosoft.com ドメインを追加する方法の詳細については、「onmicrosoft.com ドメイン [を追加または置き換える](add-or-replace-your-onmicrosoftcom-domain.md)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

@@ -23,18 +23,18 @@ ms.custom:
 - business_assist
 search.appverid: MET150
 description: Microsoft 365 管理センターでは、既存の支払方法を使用したり、新しい支払方法を追加したりして、Microsoft からビジネス製品やサービスを購入できます。
-ms.date: 04/02/2021
-ms.openlocfilehash: 1b36a11c2bdb34880f8f02b84788062dfb88c4b1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 06/01/2022
+ms.openlocfilehash: a6f15318e1539ef1f6c2656197c222e068f04f87
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319757"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65922999"
 ---
 # <a name="manage-payment-methods"></a>支払方法を管理する
 
 > [!IMPORTANT]
-> 2021 年 1 月 26 日より、ベルギー、フランス、イタリア、ルクセンブルク、ポルトガル、スペイン、米国のお客様の新しい銀行口座はサポートされなくなりました。 いずれかの国にお住まいのお客様は、既存の銀行口座でサブスクリプションの支払いを行い、新しいサブスクリプションを追加することができますが、銀行口座が有効な場合に限ります。
+> 2021 年 1 月 26 日をもって、ベルギー、フランス、イタリア、ルクセンブルグ、ポルトガル、スペイン、および米国のお客様に、新しい銀行口座をサポートしなくなりました。 これらの国の 1 つで既存のお客様である場合は、良好な状態にある既存の銀行口座でサブスクリプションの支払いを続けることができます。 ただし、銀行口座に新しいサブスクリプションを追加することはできません。
 
 Microsoft からビジネス製品またはサービスを購入する場合、既存の支払方法を使用することも、新しい支払方法を追加することもできます。 クレジット カード、デビット カード、または銀行口座を使用して、購入したものの支払いを行うことができます。
 

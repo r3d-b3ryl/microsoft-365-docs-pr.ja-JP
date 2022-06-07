@@ -627,7 +627,6 @@
 - name: Microsoft 365 のアーキテクチャとソリューション
   href: ../solutions/index.yml
 - name: クラウドサービスによるエンタープライズ ビジネスの継続性の管理 (EBCM)
-  href: /compliance/assurance/assurance-understanding-ebcm-with-cloud-services
   items:
     - name: 顧客およびクラウド パートナーの EBCM 責任
       href: /compliance/assurance/assurance-customer-and-cloud-partner-ebcm-responsibilities
