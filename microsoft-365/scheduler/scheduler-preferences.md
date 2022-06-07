@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: scheduler
 ms.localizationpriority: medium
 description: Scheduler for Microsoft 365 のスケジュール設定を調整する方法について説明します。
-ms.openlocfilehash: 34594db45883a7f746b9905661b1dedc8e5e4f6a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: e6b6f4426b173bced90fcc8f2a705bc3e48cd09e
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893434"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923386"
 ---
 # <a name="scheduling-preferences-used-by-scheduler"></a>Scheduler で使用されるスケジュール設定
 
@@ -21,7 +21,7 @@ Scheduler では、複数の Outlook 環境設定を使用して、開催者の�
 
 ## <a name="supported-settings"></a>サポートされている設定
 
-- **タイム ゾーン**。 会議に適した時間を決定するタイム ゾーン スケジューラ ユーザー。 詳細については [、「タイム ゾーンの追加、削除、または変更](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) 」を参照してください。
+- **タイム ゾーン**。 タイム ゾーン スケジューラは、会議に適した時刻を決定するために使用します。 詳細については [、「タイム ゾーンの追加、削除、または変更](https://support.microsoft.com/en-us/office/add-remove-or-change-time-zones-5ab3e10e-5a6c-46af-ab48-156fedf70c04) 」を参照してください。
 
 - **作業時間と日数**。 ほとんどの会議の種類では、Scheduler は開催者の勤務時間と会議時間の設定に従って時間を選択します。 詳細については、「 [Outlook で作業時間と日数を変更](https://support.microsoft.com/en-us/office/change-your-work-hours-and-days-in-outlook-a27f261d-0681-415f-8ac1-388ab21e833f) する」を参照してください。
 

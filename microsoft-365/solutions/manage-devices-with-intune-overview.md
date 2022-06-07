@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-overview
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: 08abc5c53c54c5a4e4100cc88adf0fb25af5c23b
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 1f5b512c18c1ca6014881f93714320a6887bd9df
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535362"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923370"
 ---
 # <a name="manage-devices-with-intune-overview"></a>Intune の概要でデバイスを管理する
 
@@ -110,7 +110,7 @@ Microsoft 365 には、デバイスを管理および保護するためのツー
 Intune のみがデバイスを管理していることに注意してください。 オンボーディングとは、デバイスが特定のサービスと情報を共有する機能を指します。 次の表は、特定のサービスの管理デバイスとオンボーディング デバイスへのデバイスの登録の違いをまとめたものです。
 
 
-|         |登録     |オンボード  |
+| &nbsp; |登録     |オンボード  |
 |---------|---------|---------|
 |説明     |  登録はデバイスの管理に適用されます。 デバイスは、Intune または Configuration Manager で管理するために登録されます。        | オンボーディングは、Microsoft 365 の特定の機能セットで動作するようにデバイスを構成します。 現在、オンボーディングは、Microsoft Defender for Endpoint および Microsoft コンプライアンス機能に適用されます。 <br><br>Windows デバイスでは、オンボーディングには、Windows Defender の設定を切り替えて、Defender がオンライン サービスに接続し、デバイスに適用されるポリシーを受け入れることができるようにすることが含まれます。        |
 |範囲     | これらのデバイス管理ツールは、セキュリティなどの特定の目的を満たすようにデバイスを構成することを含め、デバイス全体を管理します。        |オンボーディングは、適用されるサービスにのみ影響します。     |

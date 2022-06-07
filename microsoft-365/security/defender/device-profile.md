@@ -1,11 +1,11 @@
 ---
 title: Microsoft 365 セキュリティ ポータルのデバイス プロファイル
 description: 組織内のデバイスのリスクレベルと露出レベルを表示します。 過去と現在の脅威を分析し、最新の更新プログラムでデバイスを保護します。
-keywords: セキュリティ, マルウェア, Microsoft 365, M365, Microsoft 365 Defender, セキュリティ センター, Microsoft Defender for Endpoint, Microsoft Defender for Office 365,Microsoft Defender for Identity、デバイス ページ、デバイス プロファイル、コンピューター ページ、コンピューター プロファイル
+keywords: セキュリティ, マルウェア, Microsoft 365, M365, Microsoft 365 Defender, セキュリティ センター, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity, デバイス ページ, デバイス プロファイル, マシン ページ, マシン プロファイル
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: v-maave
+ms.author: dansimp
 author: martyav
 manager: dansimp
 audience: ITPro
@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: eec3881d2fdb53bc03e4e730fecaf6f1c78c98c7
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 962ec0c5ed6b7d6934678678be9a57ebcbaabc55
+ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755854"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65923436"
 ---
 # <a name="device-profile-page"></a>[デバイス プロファイル] ページ
 
@@ -28,9 +28,9 @@ ms.locfileid: "63755854"
 Microsoft 365 セキュリティ ポータルにはデバイス プロファイル ページが用意されているため、ネットワーク上のデバイスの正常性と状態をすばやく評価できます。
 
 > [!IMPORTANT]
-> デバイス プロファイル ページは、デバイスがMicrosoft Defender for Endpoint、Microsoft Defender for Identity、またはその両方に登録されているかどうかによって、若干異なる場合があります。
+> デバイス プロファイル ページは、デバイスが Microsoft Defender for Endpoint、Microsoft Defender for Identity、またはその両方に登録されているかどうかに応じて、若干異なる場合があります。
 
-デバイスがMicrosoft Defender for Endpointに登録されている場合は、デバイス プロファイル ページを使用して、一般的なセキュリティ タスクを実行することもできます。
+デバイスが Microsoft Defender for Endpoint に登録されている場合は、デバイス プロファイル ページを使用して、一般的なセキュリティ タスクを実行することもできます。
 
 ## <a name="navigating-the-device-profile-page"></a>デバイス プロファイル ページ内を移動する
 
@@ -42,7 +42,7 @@ Microsoft 365 セキュリティ ポータルにはデバイス プロファイ�
 
 メイン コンテンツ領域 (2) には、切り替えてデバイスに関するさまざまな種類の情報を表示できるタブが含まれています。
 
-デバイスがMicrosoft Defender for Endpointに登録されている場合は、応答アクションの一覧も表示されます (3)。 応答アクションを使用すると、一般的なセキュリティ関連タスクを実行できます。
+デバイスが Microsoft Defender for Endpoint に登録されている場合は、応答アクションの一覧も表示されます (3)。 応答アクションを使用すると、一般的なセキュリティ関連タスクを実行できます。
 
 ## <a name="sidebar"></a>サイドバー
 
@@ -52,15 +52,15 @@ Microsoft 365 セキュリティ ポータルにはデバイス プロファイ�
 
 サイドバーには、デバイスの完全な名前と露出レベルが一覧表示されます。 また、小さなサブセクションでは、次のような重要な基本情報も提供されます。これには、開くか閉じるかを切り替えることができます。
 
-* **タグ** - デバイスに関連付けられている任意のMicrosoft Defender for Endpoint、Microsoft Defender for Identity、またはカスタム タグ。 Microsoft Defender for Identityのタグは編集できません。
-* **セキュリティ情報** - インシデントとアクティブなアラートを開きます。 Microsoft Defender for Endpointに登録されたデバイスには、露出レベルとリスク レベルも表示されます。
+* **タグ** - Microsoft Defender for Endpoint、Microsoft Defender for Identity、またはデバイスに関連付けられているカスタム タグ。 Microsoft Defender for Identity のタグは編集できません。
+* **セキュリティ情報** - インシデントとアクティブなアラートを開きます。 Microsoft Defender for Endpoint に登録されているデバイスには、露出レベルとリスク レベルも表示されます。
 
 > [!TIP]
 > 露出レベルは、デバイスがセキュリティの推奨事項に準拠している量に関連しますが、リスク レベルはアクティブなアラートの種類や重大度など、さまざまな要因に基づいて計算されます。
 
-* **デバイスの詳細** - ドメイン、OS、デバイスが最初に表示されたときのタイムスタンプ、IP アドレス、リソース。 Microsoft Defender for Endpointに登録されているデバイスには、正常性状態も表示されます。 Microsoft Defender for Identityに登録されているデバイスには、デバイスが最初に作成されたときの SAM 名とタイムスタンプが表示されます。
+* **デバイスの詳細** - ドメイン、OS、デバイスが最初に表示されたときのタイムスタンプ、IP アドレス、リソース。 Microsoft Defender for Endpoint に登録されているデバイスには、正常性状態も表示されます。 Microsoft Defender for Identity に登録されているデバイスには、デバイスが最初に作成されたときの SAM 名とタイムスタンプが表示されます。
 * **ネットワーク アクティビティ** - デバイスがネットワーク上で初めて、最後に表示されたときのタイムスタンプ。
-* **ディレクトリ データ** (*Microsoft Defender for Identityに登録されているデバイスの場合のみ*) - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) フラグ、[SPN](/windows/win32/ad/service-principal-names)、およびグループ メンバーシップ。
+* **ディレクトリ データ** (*Microsoft Defender for Identity に登録されているデバイスの場合のみ*) - [UAC](/windows/security/identity-protection/user-account-control/user-account-control-overview) フラグ、 [SPN](/windows/win32/ad/service-principal-names)、およびグループ メンバーシップ。
 
 ## <a name="response-actions"></a>応答アクション
 
@@ -69,16 +69,16 @@ Microsoft 365 セキュリティ ポータルにはデバイス プロファイ�
 :::image type="content" source="../../media/mtp-device-profile/hybrid-device-long-action-bar.png" alt-text="Microsoft 365 Defender ポータルのデバイス プロファイルのアクション バー" lightbox="../../media/mtp-device-profile/hybrid-device-long-action-bar.png":::
 
 > [!IMPORTANT]
-> * [応答アクション](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts)は、デバイスがMicrosoft Defender for Endpointに登録されている場合にのみ使用できます。
-> * Microsoft Defender for Endpointに登録されているデバイスでは、デバイスの OS とバージョン番号に基づいて、応答アクションの数が異なる場合があります。
+> * [応答アクション](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts) は、デバイスが Microsoft Defender for Endpoint に登録されている場合にのみ使用できます。
+> * Microsoft Defender for Endpoint に登録されているデバイスでは、デバイスの OS とバージョン番号に基づいて、応答アクションの数が異なる場合があります。
 
 デバイス プロファイル ページで使用できるアクションは次のとおりです。
 
 * **タグの管理** - このデバイスに適用したカスタム タグを更新します。
-* **デバイスを分離** する - デバイスを組織のネットワークから分離し、Microsoft Defender for Endpointに接続したままにします。 通信のために、デバイスの分離中に、Outlook、Teams、およびSkype for Businessの実行を許可することを選択できます。
+* **デバイスを分離** する - デバイスを組織のネットワークから分離し、Microsoft Defender for Endpoint に接続したままにします。 通信のために、デバイスが分離されている間に Outlook、Teams、Skype for Business の実行を許可することを選択できます。
 * **アクション センター** - 送信されたアクションの状態を表示します。 別のアクションが既に選択されている場合にのみ使用できます。
 * **アプリの実行を制限** する - Microsoft によって署名されていないアプリケーションの実行を禁止します。
-* **ウイルス対策スキャンを実行** する - Windows Defender ウイルス対策定義を更新し、すぐにウイルス対策スキャンを実行します。 クイック スキャンまたはフル スキャンのどちらかを選択します。
+* **ウイルス対策スキャンを実行** する - Windows Defender ウイルス対策の定義を更新し、すぐにウイルス対策スキャンを実行します。 クイック スキャンまたはフル スキャンのどちらかを選択します。
 * **調査パッケージを収集** する - デバイスに関する情報を収集します。 調査が完了したら、ダウンロードできます。
 * **ライブ応答セッションを開始** する - デバイスにリモート シェルを読み込み、 [詳細なセキュリティ調査を行います](/microsoft-365/security/defender-endpoint/live-response)。
 * **自動調査を開始する** - [脅威を自動的に調査して修復](../office-365-security/office-365-air.md)します。 このページから実行する自動調査を手動でトリガーできますが、 [特定のアラート ポリシー](../../compliance/alert-policies.md#default-alert-policies) では、独自に自動調査がトリガーされます。
@@ -88,7 +88,7 @@ Microsoft 365 セキュリティ ポータルにはデバイス プロファイ�
 
 [デバイス プロファイル] タブでは、デバイスに関するセキュリティの詳細の概要と、アラートの一覧を含むテーブルを切り替えることができます。
 
-Microsoft Defender for Endpointに登録されているデバイスには、タイムライン、セキュリティに関する推奨事項の一覧、ソフトウェア インベントリ、検出された脆弱性の一覧、不足している KB (セキュリティ更新プログラム) を含むタブも表示されます。
+Microsoft Defender for Endpoint に登録されているデバイスには、タイムライン、セキュリティに関する推奨事項の一覧、ソフトウェア インベントリ、検出された脆弱性の一覧、欠落している KB (セキュリティ更新プログラム) を含むタブも表示されます。
 
 ### <a name="overview-tab"></a>[概要] タブ
 
@@ -98,11 +98,11 @@ Microsoft Defender for Endpointに登録されているデバイスには、タ�
 
 ここでは、デバイスのアクティブなアラートと、現在ログオンしているすべてのユーザーを簡単に確認できます。
 
-デバイスがMicrosoft Defender for Endpointに登録されている場合は、デバイスのリスク レベルと、セキュリティ評価に関する使用可能なデータも表示されます。 セキュリティ評価では、デバイスの公開レベルを記述し、セキュリティに関する推奨事項を提供し、影響を受けるソフトウェアと検出された脆弱性を一覧表示します。
+デバイスが Microsoft Defender for Endpoint に登録されている場合は、デバイスのリスク レベルと、セキュリティ評価に関する使用可能なデータも表示されます。 セキュリティ評価では、デバイスの公開レベルを記述し、セキュリティに関する推奨事項を提供し、影響を受けるソフトウェアと検出された脆弱性を一覧表示します。
 
 ### <a name="alerts-tab"></a>[通知] タブ
 
-[**アラート]** タブには、Microsoft Defender for IdentityとMicrosoft Defender for Endpointの両方からデバイスで発生したアラートの一覧が表示されます。
+[ **アラート]** タブには、Microsoft Defender for Identity と Microsoft Defender for Endpoint の両方からデバイスで発生したアラートの一覧が含まれています。
 
 :::image type="content" source="../../media/mtp-device-profile/hybrid-device-tab-alerts.png" alt-text="Microsoft 365 Defender ポータルのデバイス プロファイルの [アラート] タブ" lightbox="../../media/mtp-device-profile/hybrid-device-tab-alerts.png":::
 
@@ -178,9 +178,9 @@ Microsoft Defender for Endpointに登録されているデバイスには、タ�
 
 アイテムを選択すると、更新プログラムにリンクするポップアップが開きます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
-* [Microsoft 365 Defenderの概要](microsoft-365-defender.md)
+* [Microsoft 365 Defender の概要](microsoft-365-defender.md)
 * [Microsoft 365 Defender を有効にする](m365d-enable.md)
 * [ライブ応答を使用してデバイス上のエンティティを調査する](../defender-endpoint/live-response.md)
 * [Office 365 での自動調査および対応 (AIR)](../office-365-security/office-365-air.md)
