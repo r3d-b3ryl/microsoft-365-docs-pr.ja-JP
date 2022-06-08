@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 description: この記事では、サテライトの場所を追加する方法と、Microsoft 365 Multi-Geoのテナントを構成する方法について説明します。
-ms.openlocfilehash: 2bd0db24b364c642255ef2e902abad0495d24337
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 2a82872e7c917421c0eb418cf0582eb33d2a53c9
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64568880"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941198"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Microsoft 365 Multi-Geo テナントの構成
 
@@ -40,7 +40,7 @@ _Microsoft 365 の複数地域機能_ プランは、ユーザー レベルの�
 
 [!INCLUDE [Microsoft 365 Multi-Geo locations](../includes/microsoft-365-multi-geo-locations.md)]
 
-![SharePoint管理センターの [地域の場所] ページのスクリーンショット。](../media/sharepoint-multi-geo-admin-center.png)
+![SharePoint 管理センターの [地域の場所] ページのスクリーンショット。](../media/sharepoint-multi-geo-admin-center.png)
 
 サテライトの場所を追加する方法
 
@@ -81,7 +81,7 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
 > [!IMPORTANT]
-> OneDriveがプロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを付与し、ユーザーの PDL がAzure ADに同期されてから少なくとも 48 時間待ってから、ユーザーがOneDrive for Businessにログインする前に変更が反映されるまで待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
+> OneDrive がプロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを付与し、ユーザーの PDL が Azure AD に同期されてから少なくとも 48 時間待ってから、ユーザーが OneDrive for Business にログインする前に変更が反映されるまで待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
 ### <a name="setting-preferred-data-location-for-cloud-only-users"></a>クラウド専用ユーザーの優先されるデータの場所を設定する
 
@@ -89,9 +89,9 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 このセクションの手順では、[Windows PowerShell モジュール用 Microsoft Azure Active Directory モジュール](https://www.powershellgallery.com/packages/MSOnline/1.1.166.0)が必要です。 このモジュールをすでにインストールしている場合は、必ず最新バージョンに更新してください。
 
-1. テナントの一連のグローバル管理者の資格情報を使用して、[接続してサインイン](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)します。
+1. テナントの一連のグローバル管理者の資格情報を使用して、[接続してサインイン](/connect-to-microsoft-365-powershell?view=o365-worldwide#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell&preserve-view=true)します。
 
-2. [Set-MsolUser](/powershell/msonline/v1/set-msoluser) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
+2. [Set-MsolUser](/powershell/module/msonline/set-msoluser?view=azureadps-1.0&preserve-view=true) コマンドレットを使用して、ユーザーごとに優先されるデータの場所を設定します。次に、例を示します。
 
    ```powershell
    Set-MsolUser -UserPrincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR
@@ -108,14 +108,14 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 標準のユーザー作成フローの一部として、ユーザーの優先されるデータの場所の設定を含めることをお勧めします。
 
 > [!IMPORTANT]
-> OneDriveがプロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを付与し、ユーザーの PDL が設定されてから少なくとも 48 時間待ってから、ユーザーがOneDriveにログインする前に変更が反映されるまで待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
+> OneDrive がプロビジョニングされていない新しいユーザーの場合は、アカウントにライセンスを付与し、ユーザーの PDL が設定されてから少なくとも 48 時間待ってから、ユーザーが OneDrive にログインする前に変更が反映されるまで待ちます。 (ユーザーが OneDrive for Business をプロビジョニングするために、ログインする前に優先されるデータの場所を設定すると、新しい OneDrive が正しい場所にプロビジョニングされるようになります。)
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>OneDrive のプロビジョニングと PDL の効果
 
-テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーのOneDriveを移動するには、「[OneDrive for Business geo Move](move-onedrive-between-geo-locations.md)」を参照してください。
+テナントに ユーザーの OneDrive サイトが既に作成されている場合は、そのユーザーの PDL を設定しても既存の OneDrive は自動的に移動されません。 ユーザーの OneDrive を移動するには、「 [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md)」を参照してください。
 
 > [!NOTE]
-> EXCHANGE ONLINE PLD が変更され、MailboxRegion がメールボックス データベースの地理的位置コードと一致しなくなった場合、ユーザーのメールボックスは自動的に再配置されます。 詳細については、「[複数地域環境でのExchange Onlineメールボックスの管理」を参照してください](./administering-exchange-online-multi-geo.md)。
+> PLD が変更され、MailboxRegion がメールボックス データベースの地理的位置コードと一致しなくなった場合、Exchange Online はユーザーのメールボックスを自動的に再配置します。 詳細については、「 [複数地域環境での Exchange Online メールボックスの管理」を参照してください](./administering-exchange-online-multi-geo.md)。
 
 テナント内に OneDrive サイトを持っていないユーザーの場合、ユーザーの PDL が会社のサテライトの場所のいずれかと一致すれば、ユーザーの OneDrive は PDL 値に基づいてプロビジョニングされます。
 
@@ -142,11 +142,11 @@ Azure Active Directory (Azure AD) には、クラウドのみのユーザーと�
 
 Microsoft 365 アプリ起動ツールから OneDrive を選択し、ユーザーの PDL に基づいて、ユーザーの適切な地理的位置に自動的に誘導されることを確認します。 OneDrive for Business により、その場所でプロビジョニングが開始されるはずです。 プロビジョニングが完了したら、ドキュメントのアップロードやダウンロードを試してください。
 
-**モバイル アプリOneDrive**:
+**OneDrive モバイル アプリ**:
 
-OneDrive モバイル アプリにテスト用アカウントの資格情報でログインします。 OneDrive for Business のファイルを表示できることと、それらのファイルをモバイル デバイスから操作できることを確認します。
+テスト アカウントの資格情報を使用して OneDrive モバイル アプリにログインします。 OneDrive for Business のファイルを表示できることと、それらのファイルをモバイル デバイスから操作できることを確認します。
 
-**OneDrive 同期 クライアント**:
+**OneDrive 同期クライアント**:
 
 ログイン時に、OneDrive 同期クライアントが OneDrive for Business 地域の場所を自動的に検出することを確認します。同期クライアントのダウンロードが必要な場合は、OneDrive ライブラリで **[同期]** をクリックしてください。
 

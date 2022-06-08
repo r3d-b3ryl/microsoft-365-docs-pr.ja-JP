@@ -13,22 +13,22 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 6b0eff4c-2c5e-4581-8393-a36f7b36a72f
-description: '概要: Microsoft AzureのMicrosoft 365の高可用性フェデレーション認証用にドメイン コントローラーとディレクトリ同期サーバーを構成します。'
-ms.openlocfilehash: a3b5963100072f55c108f29d4437a2ae997ad96d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: '概要: Microsoft Azure で Microsoft 365 の高可用性フェデレーション認証用にドメイン コントローラーとディレクトリ同期サーバーを構成します。'
+ms.openlocfilehash: 765ccb0aaf2611947f505b53b5689009dadd5148
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098364"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940692"
 ---
 # <a name="high-availability-federated-authentication-phase-2-configure-domain-controllers"></a>高可用性フェデレーション認証のフェーズ 2: ドメイン コントローラーを構成する
 
-Azure インフラストラクチャ サービスでMicrosoft 365フェデレーション認証の高可用性をデプロイするこのフェーズでは、2 つのドメイン コントローラーと、Azure 仮想ネットワーク内のディレクトリ同期サーバーを構成します。 オンプレミス ネットワークへのサイト間 VPN 接続を経由して認証トラフィックを送信するのではなく、Azure 仮想ネットワーク内で認証に対するクライアント Web 要求を認証できます。
+Azure インフラストラクチャ サービスに Microsoft 365 フェデレーション認証の高可用性をデプロイするこのフェーズでは、2 つのドメイン コントローラーと、Azure 仮想ネットワーク内のディレクトリ同期サーバーを構成します。 オンプレミス ネットワークへのサイト間 VPN 接続を経由して認証トラフィックを送信するのではなく、Azure 仮想ネットワーク内で認証に対するクライアント Web 要求を認証できます。
   
 > [!NOTE]
-> Active Directory フェデレーション サービス (AD FS) (AD FS) では、Active Directory Domain Services (AD DS) ドメイン コントローラーの代わりにAzure Active Directory (Azure AD) を使用できません。 
+> Active Directory フェデレーション サービス (AD FS) は、Active Directory Domain Services (AD DS) ドメイン コントローラーの代わりに Azure Active Directory (Azure AD) を使用できません。 
   
-フェーズ [3: AD FS サーバーの構成](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)に進む前に、このフェーズを完了する必要があります。 すべてのフェーズについては、「[Azure でMicrosoft 365用の高可用性フェデレーション認証をデプロイ](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)する」を参照してください。
+フェーズ [3: AD FS サーバーの構成](high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md)に進む前に、このフェーズを完了する必要があります。 すべてのフェーズについては、「 [Azure で Microsoft 365 の高可用性フェデレーション認証をデプロイ](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) する」を参照してください。
   
 ## <a name="create-the-domain-controller-virtual-machines-in-azure"></a>Azure にドメイン コントローラー仮想マシンを作成する
 
@@ -37,16 +37,16 @@ Azure インフラストラクチャ サービスでMicrosoft 365フェデレー
 |**アイテム**|**仮想マシン名**|**ギャラリー イメージ**|**ストレージの種類**|**最小サイズ**|
 |:-----|:-----|:-----|:-----|:-----|
 |1.  <br/> |![行。](../media/Common-Images/TableLine.png)  (最初のドメイン コントローラー。例: DC1)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
-|2.  <br/> |![行。](../media/Common-Images/TableLine.png)  (2 番目のドメイン コントローラー。例: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
+|2。  <br/> |![行。](../media/Common-Images/TableLine.png)  (2 番目のドメイン コントローラー。例: DC2)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |3。  <br/> |![行。](../media/Common-Images/TableLine.png) (ディレクトリ同期サーバー、DS1 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |4.  <br/> |![行。](../media/Common-Images/TableLine.png) (最初の AD FS サーバー、ADFS1 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |5.  <br/> |![行。](../media/Common-Images/TableLine.png) (2 つ目の AD FS サーバー、ADFS2 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |6.  <br/> |![行。](../media/Common-Images/TableLine.png) (最初の Web アプリケーション プロキシ サーバー、WEB1 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
 |7.  <br/> |![行。](../media/Common-Images/TableLine.png) (2 つ目の Web アプリケーション プロキシ サーバー、WEB2 の例)  <br/> |Windows Server 2016 Datacenter  <br/> |Standard_LRS  <br/> |Standard_D2  <br/> |
    
- **表 M - Azure でのMicrosoft 365の高可用性フェデレーション認証用の仮想マシン**
+ **表 M - Azure での Microsoft 365 の高可用性フェデレーション認証用の仮想マシン**
   
-仮想マシンのサイズの一覧については、「[Azure の仮想マシンのサイズ](/azure/virtual-machines/virtual-machines-windows-sizes)」を参照してください。
+仮想マシンのサイズの一覧については、「[Azure の仮想マシンのサイズ](/azure/virtual-machines/sizes)」を参照してください。
   
 次に示す Azure PowerShell コマンド ブロックは、2 つのドメイン コントローラー用の仮想マシンを作成します。 変数の値を指定し、文字を \< and > 削除します。 なお、この Azure PowerShell コマンド ブロックは、次の表の値を使用します。
   
@@ -65,12 +65,12 @@ Azure インフラストラクチャ サービスでMicrosoft 365フェデレー
 [フェーズ 1: Azure の構成](high-availability-federated-authentication-phase-1-configure-azure.md)でテーブル R、V、S、I、A を定義したことを思い出してください。
   
 > [!NOTE]
-> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 [Azure PowerShellの概要を](/powershell/azure/get-started-azureps)参照してください。 
+> 次のコマンド セットは、Azure PowerShell の最新版を使用します。 [Azure PowerShell の概要に](/powershell/azure/get-started-azureps)関するページを参照してください。 
   
 すべてに適切な値を指定したら、その結果のブロックを Azure PowerShell プロンプト、またはローカル コンピューターの PowerShell 統合スクリプト環境 (ISE) で実行します。
   
 > [!TIP]
-> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、この[Microsoft Excel構成ブック](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)を使用します。 
+> カスタム設定に基づいてすぐに実行できる PowerShell コマンド ブロックを生成するには、この [Microsoft Excel 構成ブック](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)を使用します。 
 
 ```powershell
 # Set up variables common to both virtual machines
@@ -150,7 +150,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
 
 任意のリモート デスクトップ クライアントを使用して、最初のドメイン コント ローラー仮想マシンへのリモート デスクトップ接続を作成します。イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-次に、最初のドメイン コントローラー仮想マシンのWindows PowerShellコマンド プロンプトから、次のコマンドを使用して **、追加のデータ ディスクを最初のドメイン コントローラーに** 追加します。
+次に、最初のドメイン コントローラー仮想マシンの Windows PowerShell コマンド プロンプトから次のコマンドを使用して、 **最初のドメイン コントローラーに追加の** データ ディスクを追加します。
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -175,7 +175,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 任意のリモート デスクトップ クライアントを使用して、2 番目のドメイン コント ローラー仮想マシンへのリモート デスクトップ接続を作成します。イントラネット DNS を使用するか、ローカル管理者アカウントのコンピューター名と資格情報を使用します。
   
-次に、2 つ目のドメイン コントローラー仮想マシンのWindows PowerShellコマンド プロンプトから次のコマンドを使用して、**追加のデータ ディスクを 2 番目のドメイン コントローラーに追加する必要があります**。
+次に、2 つ目のドメイン コントローラー仮想マシンの Windows PowerShell コマンド プロンプトから次のコマンドを使用して、 **2 つ目のドメイン コントローラーに** 余分なデータ ディスクを追加する必要があります。
   
 ```powershell
 Get-Disk | Where PartitionStyle -eq "RAW" | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "WSAD Data"
@@ -193,7 +193,7 @@ Install-ADDSDomainController -InstallDns -DomainName $domname  -DatabasePath "F:
 
 ドメイン管理者アカウントの資格情報の入力を求めるダイアログが表示されます。コンピューターが再起動されます。
   
-次に、DNS サーバーとして使用する 2 つの新しいドメイン コントローラーの IP アドレスを Azure が仮想マシンに割り当てるように、仮想ネットワークの DNS サーバーを更新する必要があります。 変数を入力し、ローカル コンピューターでWindows PowerShellコマンド プロンプトから次のコマンドを実行します。
+次に、DNS サーバーとして使用する 2 つの新しいドメイン コントローラーの IP アドレスを Azure が仮想マシンに割り当てるように、仮想ネットワークの DNS サーバーを更新する必要があります。 変数を入力し、ローカル コンピューターで Windows PowerShell コマンド プロンプトから次のコマンドを実行します。
   
 ```powershell
 $rgName="<Table R - Item 4 - Resource group name column>"
@@ -245,7 +245,7 @@ Restart-Computer
   
 **フェーズ 2: Azure の高可用性フェデレーション認証インフラストラクチャ用のドメイン コントローラーとディレクトリ同期サーバー**
 
-![高可用性のフェーズ 2 Microsoft 365ドメイン コントローラーを使用した Azure のフェデレーション認証インフラストラクチャ。](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
+![Azure の高可用性 Microsoft 365 フェデレーション認証インフラストラクチャとドメイン コントローラーのフェーズ 2。](../media/b0c1013b-3fb4-499e-93c1-bf310d8f4c32.png)
   
 ## <a name="next-step"></a>次の手順
 
@@ -255,6 +255,6 @@ Restart-Computer
 
 [Azure に Microsoft 365 の高可用性フェデレーション認証を展開する](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Microsoft 365開発/テスト環境のフェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Microsoft 365 開発/テスト環境のフェデレーション ID](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365 ソリューションおよびアーキテクチャ センター](../solutions/index.yml)

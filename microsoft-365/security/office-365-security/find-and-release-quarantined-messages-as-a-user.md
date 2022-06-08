@@ -20,12 +20,13 @@ ms.custom:
 description: ユーザーは、ユーザーに配信されるべきであった検疫済みメッセージを Exchange Online Protection (EOP) で表示して管理する方法を学ぶことができます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc3e53283f59d7a750e05d56718d389f48e6a9d9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+adobe-target: true
+ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840018"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941000"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 

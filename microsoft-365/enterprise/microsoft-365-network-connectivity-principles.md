@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、Microsoft 365 ネットワーク接続を安全に最適化するための最新のガイドについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 082061eeeb3443068eaa13cb0b91f8e93adefb21
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 76bbad1b392966f9140db36cf4adbbfff7b62b2b
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078781"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940956"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Microsoft 365 ネットワーク接続の原則
 
@@ -189,7 +189,7 @@ Microsoft 365 のトラフィックを管理するための以前のガイダン
   - DNS 名前解決により返された IP アドレスが、これらエンドポイントのルーティング エグレス パスと一致するようにします。
   - SD-WAN 統合のこうしたエンドポイントを優先して、Microsoft グローバル ネットワークの最も近いインターネット ピアリング ポイントに直接、最低限の待機時間のルーティングを行います。
 
-- **既定** のエンドポイントは、最適化を必要としない Office 365 サービスと、依存関係を表し、顧客ネットワークでは通常のインターネット バウンド トラフィックとして扱うことができます。 このカテゴリの一部のエンドポイントは、Microsoft データ センターでホストされない場合があります。 たとえば、  *https://odc.officeapps.live.com*  や  *https://appexsin.stb.s-msn.com* などがあります。
+- **既定** のエンドポイントは、最適化を必要としない Office 365 サービスと、依存関係を表し、顧客ネットワークでは通常のインターネット バウンド トラフィックとして扱うことができます。 このカテゴリの一部のエンドポイントは、Microsoft データ センターでホストされない場合があります。 たとえば、  *https://odc.officeapps.live.com*  や  *`https://appexsin.stb.s-msn.com`* などがあります。
 
 Office 365 のネットワーク最適化手法の詳細については、「[Office 365 エンドポイントを管理する](managing-office-365-endpoints.md)」の記事を参照してください。
   

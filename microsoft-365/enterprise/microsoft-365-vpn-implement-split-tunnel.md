@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365用の VPN 分割トンネリングの実装
+title: Microsoft 365 の VPN 分割トンネリングを実装する
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -16,30 +16,30 @@ ms.collection:
 - remotework
 f1.keywords:
 - NOCSH
-description: Microsoft 365用の VPN 分割トンネリングを実装する方法
-ms.openlocfilehash: ee8c0929682370d581c9d1b5c738d682d3f91a01
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft 365 用の VPN 分割トンネリングを実装する方法
+ms.openlocfilehash: 6b578b9b1801921644c6982c15c160bce5fbb4dd
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63320439"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941088"
 ---
-# <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Microsoft 365用の VPN 分割トンネリングの実装
+# <a name="implementing-vpn-split-tunneling-for-microsoft-365"></a>Microsoft 365 の VPN 分割トンネリングを実装する
 
 >[!NOTE]
->この記事は、リモート ユーザーの最適化Microsoft 365対処する一連の記事の一部です。
+>この記事は、リモート ユーザーに対する Microsoft 365 の最適化に対処する一連の記事の一部です。
 
->- VPN 分割トンネリングを使用してリモート ユーザーのMicrosoft 365接続を最適化する方法の概要については、「[概要: Microsoft 365の VPN 分割トンネリング」を](microsoft-365-vpn-split-tunnel.md)参照してください。
->- VPN 分割トンネリングのシナリオの詳細な一覧については、「[Microsoft 365の一般的な VPN 分割トンネリング シナリオ」を](microsoft-365-vpn-common-scenarios.md)参照してください。
->- VPN 分割トンネリング環境でのTeamsメディア トラフィックのセキュリティ保護に関するガイダンスについては、「VPN 分割トンネリング[のメディア トラフィックTeamsセキュリティ保護](microsoft-365-vpn-securing-teams.md)する」を参照してください。
+>- VPN 分割トンネリングを使用してリモート ユーザー向けに Microsoft 365 接続を最適化する方法の概要については、「 [概要: Microsoft 365 の VPN 分割トンネリング」を](microsoft-365-vpn-split-tunnel.md)参照してください。
+>- VPN 分割トンネリング シナリオの詳細な一覧については、 [Microsoft 365 の一般的な VPN 分割トンネリング シナリオに関するページを](microsoft-365-vpn-common-scenarios.md)参照してください。
+>- VPN 分割トンネリング環境での Teams メディア トラフィックのセキュリティ保護に関するガイダンスについては、「 [VPN 分割トンネリング用の Teams メディア トラフィックのセキュリティ保護](microsoft-365-vpn-securing-teams.md)」を参照してください。
 >- VPN 環境で Stream イベントとライブ イベントを構成する方法については、「VPN 環境での [Stream イベントとライブ イベントに関する特別な考慮事項](microsoft-365-vpn-stream-and-live-events.md)」を参照してください。
->- 中国のユーザーに対Microsoft 365世界規模のテナント パフォーマンスを最適化する方法については、「中国ユーザー[のパフォーマンスの最適化Microsoft 365」を参照してください](microsoft-365-networking-china.md)。
+>- 中国のユーザーに対して Microsoft 365 の世界規模のテナント パフォーマンスを最適化する方法については、「 [Microsoft 365 の中国ユーザー向けのパフォーマンスの最適化](microsoft-365-networking-china.md)」を参照してください。
 
 リモート ワーカーの接続を最適化するための Microsoft の推奨戦略は、問題を迅速に軽減し、いくつかの簡単な手順で高いパフォーマンスを提供することに重点を置きます。 これらの手順では、ボトルネックになっている VPN サーバーをバイパスするいくつかの定義済みのエンドポイントに対して従来の VPN アプローチを調整します。 同等、あるいはより優れたセキュリティ モデルを異なるレイヤに適用することで、企業ネットワークの出口ですべてのトラフィックを保護する必要がなくなります。 ほとんどの場合、これは数時間以内に効果的に実現でき、要件の需要と時間が許す限り、他のワークロードに対してスケーラブルです。
 
 ## <a name="implement-vpn-split-tunneling"></a>スプリット トンネル VPN の実装
 
-この記事では、VPN クライアント アーキテクチャを _VPN 強制トンネルから VPN 強制トンネル_ に移行するために必要な簡単な手順と、_いくつかの信頼できる例外を含む VPN 強制トンネル_ への移行に必要な簡単な手順について説明します。VPN [分割トンネル モデル #2](microsoft-365-vpn-common-scenarios.md#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) は、[Microsoft 365の一般的な VPN 分割トンネリング シナリオ](microsoft-365-vpn-common-scenarios.md)で示されています。
+この記事では、VPN クライアント アーキテクチャを _VPN 強制トンネルから VPN 強制トンネル_ に移行するために必要な簡単な手順と、_いくつかの信頼できる例外を含む VPN 強制トンネル_ への移行に必要な簡単な手順について説明します。[Microsoft 365 の一般的な VPN 分割トンネリング シナリオでは、VPN 分割](microsoft-365-vpn-common-scenarios.md)[トンネル モデル #2](microsoft-365-vpn-common-scenarios.md#2-vpn-forced-tunnel-with-a-small-number-of-trusted-exceptions) です。
 
 次の図は、推奨している VPN スプリット トンネリング ソリューションのしくみを示しています。
 
@@ -47,7 +47,7 @@ ms.locfileid: "63320439"
 
 ### <a name="1-identify-the-endpoints-to-optimize"></a>1. 最適化するエンドポイントを決める
 
-[Microsoft 365 URL と IP アドレス範囲](urls-and-ip-address-ranges.md)に関する記事では、最適化に必要な主要なエンドポイントを明確に特定し、**最適化** として分類します。 現在、最適化する必要がある URL は 4 つ、IP サブネットは 20 個だけです。 この少数のエンドポイント グループは、Teams メディアなどの待機時間に依存するエンドポイントを含め、Microsoft 365 サービスへのトラフィック量の約 70% から 80% を占めます。 基本的に、これは特別な注意を払う必要があるトラフィックであり、従来のネットワーク パスと VPN インフラストラクチャに大きく影響するトラフィックでもあります。
+[Microsoft 365 の URL と IP アドレス範囲](urls-and-ip-address-ranges.md)に関する記事では、最適化に必要な主要なエンドポイントを明確に識別し、**最適化** として分類します。 現在、最適化する必要がある URL は 4 つ、IP サブネットは 20 個だけです。 この少数のエンドポイント グループは、Teams メディアなどの待機時間に依存するエンドポイントを含め、Microsoft 365 サービスへのトラフィック量の約 70% から 80% を占めます。 基本的に、これは特別な注意を払う必要があるトラフィックであり、従来のネットワーク パスと VPN インフラストラクチャに大きく影響するトラフィックでもあります。
 
 このカテゴリの URL には、次のような特性があります。
 
@@ -58,7 +58,7 @@ ms.locfileid: "63320439"
 - 必要なセキュリティ要素をネットワーク上で、インラインではなくサービスで提供することができる
 - Microsoft 365 サービスへのトラフィック量の約 70 ~ 80% を占める
 
-Microsoft 365 エンドポイントとその分類と管理方法の詳細については、「[Microsoft 365 エンドポイントの管理](managing-office-365-endpoints.md)」を参照してください。
+Microsoft 365 エンドポイントとその分類と管理方法の詳細については、「 [Microsoft 365 エンドポイントの管理](managing-office-365-endpoints.md)」を参照してください。
 
 #### <a name="optimize-urls"></a>URL を最適化する
 
@@ -68,15 +68,15 @@ Microsoft 365 エンドポイントとその分類と管理方法の詳細につ
 | --- | --- | --- |
 | <https://outlook.office365.com> | TCP 443 | これは、Outlook が Exchange Online サーバーへの接続に使用する主要なURL の 1 つであり、帯域幅の使用数と接続数が大量になります。 クイック検索、その他のメールボックス 予定表、空き時間の検索、ルールと通知の管理、Exchange オンラインのアーカイブ、送信トレイからのメール送信などといったオンライン上の機能では、ネットワークの遅延を少なくしておく必要があります。 |
 | <https://outlook.office.com> | TCP 443 | このURLは Outlook Online Web Access が Exchange Online のサーバーに接続するために使用され、ネットワーク遅延の影響を受けやすくなっています。 SharePoint Online での大きなファイルのアップロードとダウンロードには、特に接続性が必要です。 |
-| \<tenant\>https://.sharepoint.com | TCP 443 | これは、SharePoint Online のプライマリ URL であり、高帯域幅の使用があります。 |
+| \<tenant\>https://.sharepoint.com | TCP 443 | これは SharePoint Online のプライマリ URL であり、高帯域幅の使用量があります。 |
 | \<tenant\>https://-my.sharepoint.com | TCP 443 | これは OneDrive for Business の標準 URL で、帯域幅の使用率が高く、OneDrive for Business Sync ツールからの接続数が多くなることがあります。 |
-| Teams のメディア IP (URL なし) | UDP 3478、3479、3480、および3481 | Relay Discovery の割り当てとリアルタイム トラフィック。 これらは、Skype for BusinessおよびMicrosoft Teams メディア トラフィック (通話、会議など) に使用されるエンドポイントです。 ほとんどのエンドポイントは、Microsoft Teams クライアントが発信を確立するときに提供されます(サービスのリストにある必要な IP 内に含まれています)。 メディアの品質を最適化するには、UDP プロトコルを使用する必要があります。   |
+| Teams のメディア IP (URL なし) | UDP 3478、3479、3480、および3481 | Relay Discovery の割り当てとリアルタイム トラフィック。 これらは、Skype for Business および Microsoft Teams Media トラフィック (通話、会議など) に使用されるエンドポイントです。 ほとんどのエンドポイントは、Microsoft Teams クライアントが発信を確立するときに提供されます(サービスのリストにある必要な IP 内に含まれています)。 メディアの品質を最適化するには、UDP プロトコルを使用する必要があります。   |
 
-上記の例では、**テナント** をMicrosoft 365テナント名に置き換える必要があります。 たとえば、 **contoso.onmicrosoft.com** は _contoso.sharepoint.com_ と contoso-my.sharepoint.com を使用 _します_。
+上記の例では、 **テナント** を Microsoft 365 テナント名に置き換える必要があります。 たとえば、 **contoso.onmicrosoft.com** は _contoso.sharepoint.com_ と contoso-my.sharepoint.com を使用 _します_。
 
 #### <a name="optimize-ip-address-ranges"></a>IP アドレスの範囲を最適化する
 
-これらのエンドポイントが対応する IP アドレス範囲を記述する時点では、次のようになります。 この例、[Microsoft 365 IP と URL Web サービス](microsoft-365-ip-web-service.md)、[URL/IP ページ](urls-and-ip-address-ranges.md)[などのスクリプト](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category)を使用して、構成を適用するときに更新プログラムを確認し、定期的に行うポリシーを設定することを **強くお** 勧めします。
+これらのエンドポイントが対応する IP アドレス範囲を記述する時点では、次のようになります。 この例、[Microsoft 365 IP および URL Web サービス](microsoft-365-ip-web-service.md)、[URL/IP ページ](urls-and-ip-address-ranges.md)[などのスクリプト](https://github.com/microsoft/Office365NetworkTools/tree/master/Scripts/Display%20URL-IPs-Ports%20per%20Category)を使用して、構成を適用するときに更新プログラムを確認し、定期的に行うポリシーを設定することを **強くお** 勧めします。
 
 ```markdown
 104.146.128.0/17
@@ -122,7 +122,7 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 
 ![印刷出力をルーティングします。](../media/vpn-split-tunneling/vpn-route-print.png)
 
-オプティマイズ カテゴリ _内のすべての現在の_ IP アドレス範囲のルートを追加するには、次のスクリプト バリエーションを使用して、[Microsoft 365 IP および URL Web サービス](microsoft-365-ip-web-service.md)に対して現在の Optimize IP サブネットのセットに対してクエリを実行し、それらをルート テーブルに追加します。
+オプティマイズ カテゴリ _内のすべての現在の_ IP アドレス範囲のルートを追加するには、次のスクリプト バリエーションを使用して、現在の Optimize IP サブネットのセットについて [Microsoft 365 IP および URL Web サービス](microsoft-365-ip-web-service.md) にクエリを実行し、それらをルート テーブルに追加します。
 
 #### <a name="example-add-all-optimize-subnets-into-the-route-table"></a>例: すべての最適化サブネットをルート テーブルに追加する 
 
@@ -156,37 +156,37 @@ foreach ($prefix in $destPrefix) {New-NetRoute -DestinationPrefix $prefix -Inter
 ```
 -->
 
-VPN クライアントの設定を行い、**最適化** IP へのトラフィックがこの方法でルーティングされるようにしてください。 これにより、トラフィックは、Microsoft 365 サービスや接続エンドポイントをできるだけ近くユーザーに提供する [Azure Front Door などのMicrosoft 365サービス フロント ドア](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/)などのローカル Microsoft リソースを利用できます。 これにより、世界中のユーザーに高いパフォーマンス レベルを提供し、 [Microsoft の世界クラスのグローバル ネットワーク](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を最大限に活用できます。これは、ユーザーの直接エグレスから数ミリ秒以内である可能性があります。
+VPN クライアントの設定を行い、**最適化** IP へのトラフィックがこの方法でルーティングされるようにしてください。 これにより、トラフィックは、Microsoft 365 サービスや接続エンドポイントを可能な限りユーザーの近くに提供する [Azure Front Door などの](https://azure.microsoft.com/blog/azure-front-door-service-is-now-generally-available/) Microsoft 365 Service Front Door などのローカル Microsoft リソースを利用できます。 これにより、世界中のユーザーに高いパフォーマンス レベルを提供し、 [Microsoft の世界クラスのグローバル ネットワーク](https://azure.microsoft.com/blog/how-microsoft-builds-its-fast-and-reliable-global-network/)を最大限に活用できます。これは、ユーザーの直接エグレスから数ミリ秒以内である可能性があります。
 
 ## <a name="howto-guides-for-common-vpn-platforms"></a>一般 VPN プラットフォームのHOWTO ガイド
 
-このセクションでは、この領域で最も一般的なパートナーからのMicrosoft 365 トラフィックの分割トンネリングを実装するための詳細なガイドへのリンクを提供します。 ガイドは利用可能になり次第、追加する予定です。
+このセクションでは、この分野で最も一般的なパートナーからの Microsoft 365 トラフィックの分割トンネリングを実装するための詳細なガイドへのリンクを提供します。 ガイドは利用可能になり次第、追加する予定です。
 
-- **Windows 10 VPN クライアント**: [ネイティブ Windows 10 VPN クライアントを使用したリモート ワーカーのMicrosoft 365 トラフィックの最適化](/windows/security/identity-protection/vpn/vpn-office-365-optimization)
+- **Windows 10 VPN クライアント**: [ネイティブ Windows 10 VPN クライアントを使用してリモート ワーカー用に Microsoft 365 トラフィックを最適化](/windows/security/identity-protection/vpn/vpn-office-365-optimization)する
 - **Cisco Anyconnect**：[ Anyconnect スプリット トンネリングを Office365 向けに最適化する](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215343-optimize-anyconnect-split-tunnel-for-off.html)
-- **Palo Alto GlobalProtect**: [VPN 分割によるMicrosoft 365トラフィックの最適化Tunnelアクセス ルートを除外する](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)
-- **F5 Networks BIG-IP APM**: [BIG-IP APM を使用する場合の VPN 経由のリモート アクセスでのMicrosoft 365 トラフィックの最適化](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)
-- **Citrix Gateway**: [Office365 向けのCitrix Gateway VPN スプリット トンネルの最適化](https://docs.citrix.com/citrix-gateway/13/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
+- **Palo Alto GlobalProtect**: [VPN 分割トンネル経由で Microsoft 365 トラフィックを最適化する アクセス ルートを除外](https://live.paloaltonetworks.com/t5/Prisma-Access-Articles/GlobalProtect-Optimizing-Office-365-Traffic/ta-p/319669)する
+- **F5 Networks BIG-IP APM**: [BIG-IP APM を使用する場合の VPN 経由のリモート アクセスで Microsoft 365 トラフィックを最適化](https://devcentral.f5.com/s/articles/SSL-VPN-Split-Tunneling-and-Office-365)する
+- **Citrix Gateway**: [Office365 向けのCitrix Gateway VPN スプリット トンネルの最適化](https://docs.citrix.com/en-us/citrix-gateway/current-release/optimizing-citrix-gateway-vpn-split-tunnel-for-office365.html)
 - **Pulse Secure**: [VPN トンネリング: Microsoft 365 アプリケーションを除外するように分割トンネリングを構成する方法](https://kb.pulsesecure.net/articles/Pulse_Secure_Article/KB44417)
-- **Check Point VPN**: [Microsoft 365およびその他の SaaS アプリケーションの分割Tunnelを構成する方法](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
+- **Check Point VPN**: [Microsoft 365 およびその他の SaaS アプリケーション用の分割トンネルを構成する方法](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk167000)
 
 ## <a name="related-articles"></a>関連記事
 
-[概要: Microsoft 365の VPN 分割トンネリング](microsoft-365-vpn-split-tunnel.md)
+[概要: Microsoft 365 の VPN 分割トンネリング](microsoft-365-vpn-split-tunnel.md)
 
-[Microsoft 365の一般的な VPN 分割トンネリング シナリオ](microsoft-365-vpn-common-scenarios.md)
+[Microsoft 365 の一般的な VPN 分割トンネリング シナリオ](microsoft-365-vpn-common-scenarios.md)
 
 [VPN 分割トンネリングのための Teams メディア トラフィックのセキュリティ保護](microsoft-365-vpn-securing-teams.md)
 
 [VPN 環境での Stream イベントとライブ イベントに関する特別な考慮事項](microsoft-365-vpn-stream-and-live-events.md)
 
-[中国ユーザーのMicrosoft 365パフォーマンスの最適化](microsoft-365-networking-china.md)
+[中国ユーザー向けの Microsoft 365 パフォーマンスの最適化](microsoft-365-networking-china.md)
 
 [Microsoft 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)
 
 [Microsoft 365 ネットワーク接続の評価](assessing-network-connectivity.md)
 
-[Microsoft 365ネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
+[Microsoft 365 ネットワークとパフォーマンスのチューニング](network-planning-and-performance.md)
 
 [セキュリティ専門家と IT による、現代のユニークなリモート ワーク シナリオで最新のセキュリティ管理を実現するための代替的な方法 (Microsoft セキュリティ チーム ブログ)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 

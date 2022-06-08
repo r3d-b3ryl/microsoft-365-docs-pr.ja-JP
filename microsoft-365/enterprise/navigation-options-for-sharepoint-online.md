@@ -21,25 +21,25 @@ search.appverid:
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
 description: この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。
-ms.openlocfilehash: 67bf1c854d97cf254d1484151987a87853e1ae9d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c95666a0fdb78fa584d9ca32ce19f10e4db89753
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101185"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940934"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>SharePoint Online のナビゲーション オプション
 
-この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。 ナビゲーションの選択と構成は、SharePoint Online のサイトのパフォーマンスとスケーラビリティに大きく影響します。 SharePoint発行サイト テンプレートは、一元化されたポータルで必要な場合にのみ使用し、発行機能は特定のサイトでのみ有効にする必要があります。また、不適切に使用した場合のパフォーマンスに影響を与える可能性があるため、絶対に必要な場合にのみ使用してください。
+この記事では、SharePoint Publishing が有効化されている SharePoint Online サイトのナビゲーション オプションについて説明します。 ナビゲーションの選択と構成は、SharePoint Online のサイトのパフォーマンスとスケーラビリティに大きく影響します。 SharePoint 発行サイト テンプレートは、一元化されたポータルに必要な場合にのみ使用し、発行機能は特定のサイトでのみ有効にする必要があります。また、不適切に使用した場合のパフォーマンスに影響を与える可能性があるため、絶対に必要な場合にのみ使用してください。
 
 >[!NOTE]
->メガ メニュー、カスケード ナビゲーション、ハブ ナビゲーションなどの最新のSharePoint ナビゲーション オプションを使用している場合、この記事はサイトには適用されません。 最新のSharePoint サイト アーキテクチャでは、よりフラット化されたサイト階層とハブ アンド スポーク モデルが活用されています。 これにより、SharePoint発行機能を使用する必要のない多くのシナリオを実現できます。
+>メガ メニュー、カスケード ナビゲーション、ハブ ナビゲーションなどの最新の SharePoint ナビゲーション オプションを使用している場合、この記事はサイトには適用されません。 最新の SharePoint サイト アーキテクチャでは、よりフラット化されたサイト階層とハブ アンド スポーク モデルが活用されています。 これにより、SharePoint 発行機能を使用する必要のない多くのシナリオを実現できます。
 
 ## <a name="overview-of-navigation-options"></a>ナビゲーション オプションの概要
 
 ナビゲーション プロバイダーの構成はサイト全体のパフォーマンスに大きな影響を与える可能性があるため、SharePoint サイトの要件を満たすように効果的に対応できるナビゲーション プロバイダーと構成を慎重に選択する必要があります。 2 つの既成のナビゲーション プロバイダーの他、ナビゲーションのカスタム実装が提供されています。
 
-サイトの構造ナビゲーション **キャッシュを有効にした場合**、最初のオプションである [**構造ナビゲーション**](#using-structural-navigation-in-sharepoint-online)は、クラシック SharePoint サイトのSharePoint Online で推奨されるナビゲーション オプションです。 このナビゲーション プロバイダーは、現在のサイトの下にナビゲーション項目を表示し、必要に応じて現在のサイトとその兄弟を表示します。 セキュリティ トリミングやサイト構造の列挙などの追加機能が提供されます。 キャッシュが無効になっていると、パフォーマンスとスケーラビリティに悪影響が生じ、調整の対象になる可能性があります。
+サイトの **構造ナビゲーション キャッシュを有効にした場合**、最初のオプションである [**構造ナビゲーション**](#using-structural-navigation-in-sharepoint-online)は、従来の SharePoint サイトの SharePoint Online で推奨されるナビゲーション オプションです。 このナビゲーション プロバイダーは、現在のサイトの下にナビゲーション項目を表示し、必要に応じて現在のサイトとその兄弟を表示します。 セキュリティ トリミングやサイト構造の列挙などの追加機能が提供されます。 キャッシュが無効になっていると、パフォーマンスとスケーラビリティに悪影響が生じ、調整の対象になる可能性があります。
 
 2 番目のオプションである [**Managed (Metadata) ナビゲーション**](#using-managed-navigation-and-metadata-in-sharepoint-online)は、Managed Metadata 用語セットを使用したナビゲーション項目を表します。 必要でない限り、セキュリティ トリミングを無効にすることをお勧めします。 セキュリティ トリミングは既定によるセキュリティ保護としてこのナビゲーション プロバイダーで有効化されていますが、多くのサイトでは、サイトのすべてのユーザーに対して一貫性のあるナビゲーション要素を提供しているため、セキュリティ トリミングのオーバーヘッドは必要ありません。 推奨されているセキュリティトリミングを無効にする構成にした場合、このナビゲーション プロバイダーではサイト構造を列挙する必要がなく、パフォーマンスへの影響を許容範囲に抑えながら高い拡張性が提供されます。
 
@@ -57,15 +57,15 @@ ms.locfileid: "65101185"
 サイトに最適なオプションは、サイトの要件と技術的な能力に依存しています。 コンテンツが変更されたときに自動的に更新される簡単に構成できるナビゲーション プロバイダーが必要な場合は、 [キャッシュを有効にした](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) 構造ナビゲーションが適しています。
 
 >[!NOTE]
->モダン SharePoint サイトと同じ原則を適用して、サイト構造全体をフラットな非階層構造にすることで、パフォーマンスが向上し、最新のSharePoint サイトへの移行が簡単になります。 つまり、何百ものサイト (サブ web) を含む 1 つのサイト コレクションを持つ代わりに、サブサイト (サブ web) が非常に少ない多くのサイト コレクションを作成することをお勧めします。
+>サイト構造全体をフラットな非階層構造に簡略化することで、最新の SharePoint サイトと同じ原則を適用すると、パフォーマンスが向上し、最新の SharePoint サイトへの移行が簡略化されます。 つまり、何百ものサイト (サブ web) を含む 1 つのサイト コレクションを持つ代わりに、サブサイト (サブ web) が非常に少ない多くのサイト コレクションを作成することをお勧めします。
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>SharePoint Online でのナビゲーション パフォーマンスの分析
 
-[SharePoint 用のページ診断ツール](./page-diagnostics-for-spo.md)は、Microsoft Edge ブラウザーと Chrome ブラウザー用のブラウザー拡張機能であり、SharePoint Online モダン ポータルとクラシック発行サイト ページの両方を分析します。 このツールは、SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
+[SharePoint 用ページ診断ツールは、SharePoint](./page-diagnostics-for-spo.md) Online モダン ポータルとクラシック発行サイト ページの両方を分析する Microsoft Edge ブラウザーと Chrome ブラウザー用のブラウザー拡張機能です。 このツールは SharePoint Online でのみ機能し、SharePoint システム ページでは使用できません。
 
 このツールは、定義済みのルール セットに対してページがどのように実行されるかを示す分析済みページごとにレポートを生成し、テストの結果が基準値から外れたときに詳細情報を表示します。 SharePoint Online の管理者とデザイナーは、このツールを使用してパフォーマンスの問題をトラブルシューティングし、発行前に新しいページが最適化されるようにすることができます。
 
-**SPRequestDuration** は特に、SharePointがページを処理するのに要する時間です。 重いナビゲーション (ナビゲーションにページを含む)、複雑なサイト階層、その他の構成とトポロジのオプションはすべて、時間の長い時間に大きく貢献する可能性があります。
+**SPRequestDuration** は特に、SharePoint がページを処理するのに要する時間です。 重いナビゲーション (ナビゲーションにページを含む)、複雑なサイト階層、その他の構成とトポロジのオプションはすべて、時間の長い時間に大きく貢献する可能性があります。
 
 ## <a name="using-structural-navigation-in-sharepoint-online"></a>SharePoint Online で構造ナビゲーションを使用する
 
@@ -73,15 +73,15 @@ ms.locfileid: "65101185"
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>構造ナビゲーション キャッシュを実装する方法
 
-**[サイト 設定** > **Look と** **FeelNavigation** > ] で、グローバル ナビゲーションまたは現在のナビゲーションで構造ナビゲーションが選択されているかどうかを検証できます。 **[ページの表示]** を選択すると、パフォーマンスに悪影響が生じます。
+[**サイト設定の****外観** > ナビゲーション]  >  で、グローバル **ナビゲーション** または現在のナビゲーションに対して構造ナビゲーションが選択されているかどうかを検証できます。 **[ページの表示]** を選択すると、パフォーマンスに悪影響が生じます。
 
 ![サブサイトの表示が選択された構造ナビゲーション。](../media/SPONavOptionsStructuredShowSubsites.png)
 
-キャッシュは、サイト コレクション レベルとサイト レベルで有効または無効にすることができ、既定では両方に対して有効になっています。 サイト コレクション レベルで有効にするには、[**サイト 設定** > **Site コレクション管理** > **サイト コレクション ナビゲーション**] で、[**キャッシュを有効にする**] チェック ボックスをオンにします。
+キャッシュは、サイト コレクション レベルとサイト レベルで有効または無効にすることができ、既定では両方に対して有効になっています。 サイト コレクション レベルで有効にするには **、[サイトの設定]** > **サイト コレクション管理** > **サイト コレクションナビゲーション** で、[ **キャッシュを有効にする**] チェック ボックスをオンにします。
 
-![サイト レベルでキャッシュを有効にします。](../media/structural-nav/structural-nav-caching-site-coll.png)
+![サイト コレクション レベルでキャッシュを有効にします。](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-サイト レベルで有効にするには、[**サイト 設定** > **Navigation**] で、[**キャッシュを有効にする**] チェック ボックスをオンにします。
+サイト レベルで有効にするには、[**サイト設定ナビゲーション]** >  の [**キャッシュを有効にする**] チェック ボックスをオンにします。
 
 ![サイト レベルでキャッシュを有効にします。](../media/structural-nav/structural-nav-caching-site.png)
 
@@ -99,7 +99,7 @@ ms.locfileid: "65101185"
 
 ### <a name="how-to-implement-managed-navigation-and-the-results"></a>管理ナビゲーションと結果を実装する方法
 
-マネージド ナビゲーションの詳細については、docs.microsoft.com に関するいくつかの記事があります。 たとえば、「[SharePoint Server での管理ナビゲーションの概要」を参照してください](/sharepoint/administration/overview-of-managed-navigation)。
+マネージド ナビゲーションの詳細については、docs.microsoft.com に関するいくつかの記事があります。 たとえば、「 [SharePoint Server での管理ナビゲーションの概要」を参照してください](/sharepoint/administration/overview-of-managed-navigation)。
 
 マネージド ナビゲーションを実装するために、サイトのナビゲーション構造に対応する URL で用語を設定します。 管理ナビゲーションは多くの場合、手動で監督することにより構造ナビゲーションと置き換えられます。 次に例を示します。
 
@@ -221,7 +221,7 @@ var root = "https://spperformance.sharepoint.com/sites/NavigationBySearch";
 ### <a name="about-the-javascript-file"></a>JavaScript ファイルについて
 
 >[!NOTE]
->カスタム JavaScript を使用している場合は、パブリック CDNが有効になっていて、ファイルがCDN場所にあることを確認します。
+>カスタム JavaScript を使用している場合は、パブリック CDN が有効になっていて、ファイルが CDN の場所にあることを確認します。
 
 JavaScript ファイルの全体は次のとおりです。
 
@@ -476,7 +476,7 @@ function addEventsToElements() {
 
 - jQuery - https://jquery.com/
 - KnockoutJS - https://knockoutjs.com/
-- Linq.js - https://linqjs.codeplex.com/、または github.com/neuecc/linq.js
+- Linq.js - `https://linqjs.codeplex.com/`、または github.com/neuecc/linq.js
 
 LinqJS の現在のバージョンには、上記のコードで使用されている ByHierarchy メソッドが含まれておらず、ナビゲーション コードが機能しなくなります。 これを解決するには、Linq.js ファイルの `Flatten: function ()` の行の前に次のメソッドを追加します。
 

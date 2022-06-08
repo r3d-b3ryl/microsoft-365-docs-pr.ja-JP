@@ -1,5 +1,5 @@
 ---
-title: 迷惑メールと一括メールの違いは何&apos;ですか?
+title: 迷惑メールとバルク メールの違い
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の迷惑メール (スパム) と一括メール (灰色のメール) の違いについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f948b45c5f4b26f3fba74f3883511218daa0ef0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: dd876b522a0d565b84e8bb9043e277cd3bc34495
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647845"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65940450"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP での迷惑メールと一括メールの違いは何ですか?
 
@@ -33,7 +33,7 @@ ms.locfileid: "65647845"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含むMicrosoft 365組織で、Exchange Online メールボックスがない場合、お客様は「迷惑メールと一括メールの違いは何ですか?」と尋ねる場合があります。 このトピックでは、その違いと、EOP で使用できるコントロールについて説明します。
+Exchange Online のメールボックスを持つ Microsoft 365 組織、または Exchange Online メールボックスのないスタンドアロンの Exchange Online Protection (EOP) 組織では、"迷惑メールと一括メールの違いは何ですか? このトピックでは、その違いと、EOP で使用できるコントロールについて説明します。
 
 - **迷惑メール** はスパムです。これは、迷惑なメッセージで、普遍的に必要とされないメッセージ (正常に識別される) です。 既定では、EOP は、ソースメールサーバーの評価に基づいてスパムを拒否します。 メッセージが送信元 IP の検査を通過した場合は、スパムフィルタリングに送信されます。 迷惑メールフィルターによってメッセージがスパムとして分類された場合、メッセージは (既定では) 対象の受信者に配信されて、[迷惑メール] フォルダーに移動します。
 

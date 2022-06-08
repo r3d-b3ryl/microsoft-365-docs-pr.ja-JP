@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 Defender ポータルでアラート ポリシーを作成して、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: b0f7d037731bc1073ac177667927ca4f691e9904
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e96572abd5c01b8a84e47d3a918db8e97827e775
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094594"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941022"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -128,7 +128,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 ## <a name="default-alert-policies"></a>既定のアラート ポリシー
 
-Microsoft には、管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、データ ライフサイクル管理リスクExchange識別するのに役立つ組み込みのアラート ポリシーが用意されています。 [**通知ポリシー**] ページでは、これらの組み込みポリシーの名前は太字で表示され、ポリシーの種類は [**システム**] と定義されます。 これらのポリシーは既定で有効になっています。 これらのポリシーを無効にしたり (または有効に戻したり)、メール通知受信者のリストを設定したり、1 日の通知制限を設定したりできます。 これらのポリシーの他の設定を編集することはできません。
+Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、データ ライフサイクル管理のリスクを特定するのに役立つ組み込みのアラート ポリシーが用意されています。 [**通知ポリシー**] ページでは、これらの組み込みポリシーの名前は太字で表示され、ポリシーの種類は [**システム**] と定義されます。 これらのポリシーは既定で有効になっています。 これらのポリシーを無効にしたり (または有効に戻したり)、メール通知受信者のリストを設定したり、1 日の通知制限を設定したりできます。 これらのポリシーの他の設定を編集することはできません。
 
 次の表に、使用可能なデフォルトのアラート ポリシーと、各ポリシーが割り当てられているカテゴリを示します。 カテゴリは、ユーザーが [アラート] ページで表示できるアラートを決定するために使用されます。 詳細については、「[アラートを表示するために必要な RBAC アクセス許可](#rbac-permissions-required-to-view-alerts)」を参照してください。
 
@@ -147,6 +147,7 @@ Microsoft には、管理者のアクセス許可の悪用、マルウェア ア
 |**配信後に削除された悪意のある URL を含む電子メール メッセージ**|悪意のある URL を含むメッセージが組織内のメール ボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は[ゼロ時間自動パージ](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メール ボックスから感染したメッセージを削除します。 このポリシーには **情報** の重大度設定があり、[Office 365 での自動調査と応答](../security/office-365-security/office-365-air.md)を自動的にトリガーします。 この新しいポリシーの詳細については、「[Microsoft Defender for Office 365 の新しいアラート ポリシー](new-defender-alert-policies.md)」を参照してください。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
 |**配信後に削除されたキャンペーンからのメール メッセージ**|[キャンペーン](../security/office-365-security/campaigns.md)に関連づけられているメッセージが組織内のメール ボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は[ゼロ時間自動パージ](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メール ボックスから感染したメッセージを削除します。 このポリシーには **情報** の重大度設定があり、[Office 365 での自動調査と応答](../security/office-365-security/office-365-air.md)を自動的にトリガーします。 この新しいポリシーの詳細については、「[Microsoft Defender for Office 365 の新しいアラート ポリシー](new-defender-alert-policies.md)」を参照してください。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
 |**メール メッセージが配信後に削除されました**|悪意のあるエンティティ (URL またはファイル) を含まない、またはキャンペーンに関連付けられている悪意のあるメッセージが組織内のメールボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は[ゼロ時間自動パージ](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メール ボックスから感染したメッセージを削除します。 このポリシーには **情報** の重大度設定があり、[Office 365 での自動調査と応答](../security/office-365-security/office-365-air.md)を自動的にトリガーします。 この新しいポリシーの詳細については、「[Microsoft Defender for Office 365 の新しいアラート ポリシー](new-defender-alert-policies.md)」を参照してください。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
+|**配信後に削除されない悪意のあるエンティティを含むメッセージ**|悪意のあるコンテンツ (ファイル、URL、キャンペーン、エンティティなし) を含むメッセージが組織内のメールボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は [0 時間の自動消去](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メールボックスから感染したメッセージを削除しようとしましたが、エラーが原因でメッセージが削除されませんでした。 追加の調査をお勧めします。 このポリシーには **中重大度** 設定があり、 [Office 365 の自動調査と応答が自動的にトリガーされます](../security/office-365-security/office-365-air.md)。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
 |**ユーザーによってマルウェアまたはフィッシングとして報告されたメール**|組織内のユーザーが迷惑メール報告アドインを使用してメッセージをフィッシング メールとして報告すると、アラートを生成します。 このポリシーの重大度設定は **低** です。 このアドインの詳細については、「[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。 Defender for Office 365 P2、E5、G5 のお客様の場合、このアラートは [Office 365 での自動調査と応答を自動的にトリガーします](../security/office-365-security/office-365-air.md)。|脅威の管理|はい|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**メール送信制限を超えました**|組織内の誰かが送信スパム ポリシーで許可されているよりも多くのメールを送信したときにアラートを生成します。 これは通常、ユーザーが送信しているメールが多すぎるか、アカウントが侵害されている可能性があることを示しています。 このポリシーの重大度設定は **中** です。 このアラート ポリシーによって生成されたアラートを受け取った場合は、[ユーザー アカウントが侵害されていないかどうかを確認する](../security/office-365-security/responding-to-a-compromised-email-account.md)ことをお勧めします。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**フィッシング詐欺の可能性が原因でブロックされたフォーム**|フィッシング詐欺の繰り返しが検出されたために、組織内の誰かが Microsoft Forms を使用したフォームの共有と応答の収集を制限されたときにアラートを生成します。 このポリシーの **重大度設定は高** です。|脅威の管理|不要|E1、E3/F3、または E5|

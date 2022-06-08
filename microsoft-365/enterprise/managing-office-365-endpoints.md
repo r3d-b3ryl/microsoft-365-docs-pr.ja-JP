@@ -19,16 +19,16 @@ ms.custom:
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
 description: エンタープライズ組織のネットワーク アーキテクチャで動作するように Office 365 エンドポイントを管理する方法について説明します。
-ms.openlocfilehash: c32b44365a8c926e398e4441b6b50905ea77147d
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: eed902c125711adcf19d45dce1078c4860f911b0
+ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753828"
+ms.lasthandoff: 06/08/2022
+ms.locfileid: "65941176"
 ---
 # <a name="managing-office-365-endpoints"></a>Office 365 エンドポイントを管理する
 
-複数の異なる場所にオフィスを構えて WAN 接続を使用しているエンタープライズ組織のほとんどでは、Office 365 ネットワーク接続用の構成が必要です。 すべての信頼できるOffice 365ネットワーク要求をファイアウォール経由で直接送信し、余分なパケット レベルの検査や処理をすべてバイパスすることで、ネットワークを最適化できます。 これにより、待機時間と境界の容量要件が削減されます。 Office 365 ネットワーク トラフィックを識別することは、ユーザーに最適なパフォーマンスを提供するための第一歩です。 詳細については、「[Office 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)」を参照してください。
+複数の異なる場所にオフィスを構えて WAN 接続を使用しているエンタープライズ組織のほとんどでは、Office 365 ネットワーク接続用の構成が必要です。 すべての信頼できる Office 365 ネットワーク要求をファイアウォール経由で直接送信し、余分なパケット レベルの検査や処理をすべてバイパスすることで、ネットワークを最適化できます。 これにより、待機時間と境界の容量要件が削減されます。 Office 365 ネットワーク トラフィックを識別することは、ユーザーに最適なパフォーマンスを提供するための第一歩です。 詳細については、「 [Office 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)」を参照してください。
 
 Microsoft では、[Office 365 IP アドレスと URL の Web サービス](microsoft-365-ip-web-service.md) を使用して、Office 365 ネットワーク エンドポイントおよびそれらに対する進行中の変更にアクセスすることをお勧めします。
 
@@ -50,7 +50,7 @@ PAC または WPAD ファイルを使用して、Office 365 と関連付けら�
 [PowerShell Gallery の Get-PacFile](https://www.powershellgallery.com/packages/Get-PacFile) は、Office 365 IP アドレスと URL Web サービスから最新のネットワーク エンドポイントを読み取り、サンプル PAC ファイルを作成する PowerShell スクリプトです。このスクリプトを変更して、既存の PAC ファイル管理と統合させることができます。
 
 > [!NOTE]
-> Office 365 エンドポイントへの直接接続のセキュリティとパフォーマンスに関する考慮事項の詳細については、「[Office 365ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)」を参照してください。
+> Office 365 エンドポイントへの直接接続のセキュリティとパフォーマンスに関する考慮事項の詳細については、「 [Office 365 ネットワーク接続の原則](microsoft-365-network-connectivity-principles.md)」を参照してください。
 
 ![ファイアウォールとプロキシ経由で Office 365 に接続する。](../media/34d402f3-f502-42a0-8156-24a7c4273fa5.png)
 
@@ -92,9 +92,9 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 ## <a name="proxy-server-bypass-processing-of-office-365-network-traffic"></a>プロキシ サーバーによる Office 365 ネットワーク トラフィック処理のバイパス
 
-PAC ファイルを直接送信トラフィックに使用しない場合でも、プロキシ サーバーを構成してネットワーク境界で処理をバイパスする必要があります。 一部のプロキシ サーバー ベンダーでは、[Office 365 ネットワーク パートナー プログラム](microsoft-365-networking-partner-program.md)で説明されているように、この自動構成が有効になっています。
+PAC ファイルを直接送信トラフィックに使用しない場合でも、プロキシ サーバーを構成してネットワーク境界で処理をバイパスする必要があります。 一部のプロキシ サーバー ベンダーでは、 [Office 365 ネットワーク パートナー プログラム](microsoft-365-networking-partner-program.md)で説明されているように、この自動構成が有効になっています。
 
-これを手動で行う場合は、Office 365 IP アドレスと URL Web サービスからエンドポイント カテゴリ データの最適化と許可を取得し、これらの処理をバイパスするようにプロキシ サーバーを構成する必要があります。 最適化と許可のカテゴリ エンドポイントの SSL 中断と検査、プロキシ認証を回避することが重要です。
+これを手動で行う場合は、Office 365 の IP アドレスと URL Web サービスから最適化と許可のエンドポイント カテゴリ データを取得し、これらの処理をバイパスするようにプロキシ サーバーを構成する必要があります。 最適化と許可のカテゴリ エンドポイントの SSL 中断と検査、プロキシ認証を回避することが重要です。
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Office 365 IP アドレスと URL の変更管理
@@ -103,11 +103,11 @@ PAC ファイルを直接送信トラフィックに使用しない場合でも�
 
 Office 365 IP アドレスと URL の変更は通常、各月の末日近くに公開されます。場合によっては、運用、サポート、またはセキュリティ上の必要により、このスケジュール外に変更が公開されることもあります。
 
-IP アドレスまたは URL が追加されたために操作する必要がある変更が発行された場合、そのエンドポイントにOffice 365 サービスが存在するまで、変更を発行してから 30 日間の通知を受け取ることを期待する必要があります。 これは、有効日として反映されます。 この通知期間を目指していますが、運用、サポート、またはセキュリティの要件により、常に可能であるとは限りません。 削除された IP アドレスや URL などの接続を維持するための即時アクションを必要としない変更や、重大でない変更は、事前通知を含めないでください。 このような場合、有効日は指定されません。 どの通知が提供されているかに関係なく、変更ごとに予想されるサービスのアクティブな日付が一覧表示されます。
+IP アドレスまたは URL が追加されたために操作する必要がある変更が発行された場合、そのエンドポイントに Office 365 サービスが存在するまで、変更を公開してから 30 日間の通知を受け取る必要があります。 これは、有効日として反映されます。 この通知期間を目指していますが、運用、サポート、またはセキュリティの要件により、常に可能であるとは限りません。 削除された IP アドレスや URL などの接続を維持するための即時アクションを必要としない変更や、重大でない変更は、事前通知を含めないでください。 このような場合、有効日は指定されません。 どの通知が提供されているかに関係なく、変更ごとに予想されるサービスのアクティブな日付が一覧表示されます。
 
 ### <a name="change-notification-using-the-web-service"></a>Web サービスを使用した変更通知
 
-Office 365 IP アドレスと URL Web サービスを使用して、変更通知を受け取ることができます。 **/version** Web メソッドを 1 時間に 1 回呼び出して、Office 365への接続に使用しているエンドポイントのバージョンを確認することをお勧めします。 使用中のバージョンと比較してこのバージョンが変更された場合は、 **/endpoints** Web メソッドから最新のエンドポイント データを取得し、必要に応じて **/changes** Web メソッドとの違いを取得する必要があります。 検出したバージョンに変更がない場合は、 **/endpoints** または **/changes** Web メソッドを呼び出す必要はありません。
+Office 365 IP アドレスと URL Web サービスを使用して、変更通知を受け取ることができます。 **/version** Web メソッドを 1 時間に 1 回呼び出して、Office 365 への接続に使用しているエンドポイントのバージョンを確認することをお勧めします。 使用中のバージョンと比較してこのバージョンが変更された場合は、 **/endpoints** Web メソッドから最新のエンドポイント データを取得し、必要に応じて **/changes** Web メソッドとの違いを取得する必要があります。 検出したバージョンに変更がない場合は、 **/endpoints** または **/changes** Web メソッドを呼び出す必要はありません。
 
 詳細については、「[Office 365 IP アドレスと URL の Web サービス](microsoft-365-ip-web-service.md)」を参照してください。
 
@@ -143,13 +143,13 @@ Office 365 ネットワーク接続に関してよく寄せられるこれらの
 <a name="bkmk_MissingIP"> </a>
 ### <a name="i-see-network-requests-to-ip-addresses-not-on-the-published-list-do-i-need-to-provide-access-to-them"></a>公開済みの一覧に掲載されていない IP アドレスに対してネットワーク要求を受け取ります。それらの IP アドレスに対してアクセス権を付与する必要はありますか?
 
-直接ルーティングする必要があるOffice 365 サーバーの IP アドレスのみを提供します。 これは、ネットワーク要求が表示されるすべての IP アドレスの包括的な一覧ではありません。 Microsoft とサードパーティが所有する未公開の IP アドレスに対するネットワーク要求が表示されます。 これらの IP アドレスは、変更されたときにタイムリーに通知されないように、動的に生成または管理されます。 ファイアウォールでこれらのネットワーク要求の FQDN に基づくアクセスを許可できない場合は、PAC または WPAD ファイルを使用して要求を管理します。
+直接ルーティングする必要がある Office 365 サーバーの IP アドレスのみが提供されます。 これは、ネットワーク要求が表示されるすべての IP アドレスの包括的な一覧ではありません。 Microsoft とサードパーティが所有する未公開の IP アドレスに対するネットワーク要求が表示されます。 これらの IP アドレスは、変更されたときにタイムリーに通知されないように、動的に生成または管理されます。 ファイアウォールでこれらのネットワーク要求の FQDN に基づくアクセスを許可できない場合は、PAC または WPAD ファイルを使用して要求を管理します。
   
 Office 365 と関連付けられた IP の詳細を確認するには、以下の手順を実行してください。
   
 1. [IPv4](https://www.ipaddressguide.com/cidr) や [IPv6](https://www.ipaddressguide.com/ipv6-cidr) などの CIDR 計算ツールを使用して、より広く公開されている範囲に IP アドレスが含まれているかどうかを確認します。 たとえば、40.103.0.1 が含まれる IP アドレス 40.96.0.0/13 には、40.96 は一致しますが、40.103 は一致しません。
 2. [whois クエリ](https://dnsquery.org/) を使用して、パートナーが IP を所有しているかどうかを確認します。 Microsoft 所有の場合は、内部パートナーの可能性があります。 多くのパートナー ネットワーク エンドポイントは、IP アドレスが公開されていない _既定_ のカテゴリに属するものとして一覧表示されます。
-3. IP アドレスは、Office 365 または依存関係の一部ではない可能性があります。 ネットワーク エンドポイントの発行Office 365、すべての Microsoft ネットワーク エンドポイントが含まれているわけではありません。
+3. IP アドレスは、Office 365 または依存関係の一部ではない可能性があります。 Office 365 ネットワーク エンドポイントの発行には、すべての Microsoft ネットワーク エンドポイントが含まれているわけではありません。
 4. 証明書を確認します。ブラウザーで *HTTPS://\<IP_ADDRESS\>* を使用して IP アドレスに接続し、証明書に表示されるドメインを確認して、IP アドレスに関連付けられているドメインを把握します。Microsoft 所有の IP アドレスで、Office 365 の IP アドレス一覧に掲載されていない場合、その IP アドレスは、*MSOCDN.NET* や IP 情報が公開されていない他の Microsoft ドメインなど、Microsoft CDN に関連付けられている可能性があります。証明書のドメインが、Microsoft が IP アドレスの登録を主張しているドメインの場合は、お知らせください。
 
 <a name="bkmk_cname"> </a>
@@ -163,9 +163,9 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 これらの CNAME リダイレクトは DNS の通常の部分であり、クライアント コンピューターに対して透過的であり、プロキシ サーバーには透過的です。 これらは、負荷分散、コンテンツ配信ネットワーク、高可用性、およびサービス インシデントの軽減に使用されます。 Microsoft は中間 CNAME レコードを発行せず、いつでも変更される可能性があるため、プロキシ サーバーで許可されているように構成する必要はありません。
 
-プロキシ サーバーは最初の URL を検証します。この例では serviceA.office.com され、この URL はOffice 365発行に含まれます。 プロキシ サーバーは、その URL の DNS 解決を IP アドレスに要求し、IP_1を受信します。 中間 CNAME リダイレクト レコードは検証されません。
+プロキシ サーバーは最初の URL を検証します。この例では serviceA.office.com であり、この URL は Office 365 発行に含まれます。 プロキシ サーバーは、その URL の DNS 解決を IP アドレスに要求し、IP_1を受信します。 中間 CNAME リダイレクト レコードは検証されません。
 
-ハードコーディングされた構成、または間接Office 365 FQDN に基づく許可リストの使用は推奨されておらず、Microsoft ではサポートされておらず、お客様の接続の問題を引き起こすことがわかっています。 CNAME リダイレクトをブロックする DNS ソリューション、または DNS エントリOffice 365誤って解決する DNS ソリューションは、DNS 再帰が有効になっている DNS フォワーダーまたは DNS ルート ヒントを使用して解決できます。 多くのサード パーティのネットワーク境界製品では、推奨されるOffice 365 エンドポイントをネイティブに統合して、[Office 365 IP アドレスと URL Web サービス](microsoft-365-ip-web-service.md)を使用して構成に許可リストを含めます。
+ハードコーディングされた構成や、間接 Office 365 FQDN に基づく許可リストの使用は推奨されておらず、Microsoft ではサポートされておらず、お客様の接続の問題の原因になることがわかっています。 CNAME リダイレクトをブロックする DNS ソリューション、または Office 365 DNS エントリを誤って解決する DNS ソリューションは、DNS 再帰が有効になっている DNS フォワーダーまたは DNS ルート ヒントを使用して解決できます。 多くのサードパーティネットワーク境界製品では、推奨される Office 365 エンドポイントをネイティブに統合して、 [Office 365 IP アドレスと URL Web サービス](microsoft-365-ip-web-service.md)を使用して構成に許可リストを含めます。
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Microsoft ドメイン名に nsatc.net や akadns.net などの名前が表示されるのはなぜですか?
@@ -217,7 +217,7 @@ Office 365 を使用しようとして、サードパーティ サービスに�
 
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>ファイアウォールには IP アドレスが必要で、URL を処理することはできません。 Office 365 に合わせて構成する方法
 
-Office 365は、必要なすべてのネットワーク エンドポイントの IP アドレスを提供するわけではありません。 一部は URL としてだけ提供され、既定に分類されます。 必要な既定のカテゴリの URL は、プロキシ サーバー経由で許可する必要があります。 プロキシ サーバーがない場合は、ユーザーが Web ブラウザーのアドレス バーに入力する URL に対する Web 要求を構成した方法を確認します。ユーザーも IP アドレスを指定しません。 Office 365 の既定のカテゴリ URL に IP アドレスがない場合でも、同じ方法で構成する必要があります。
+Office 365 では、必要なすべてのネットワーク エンドポイントの IP アドレスは提供されません。 一部は URL としてだけ提供され、既定に分類されます。 必要な既定のカテゴリの URL は、プロキシ サーバー経由で許可する必要があります。 プロキシ サーバーがない場合は、ユーザーが Web ブラウザーのアドレス バーに入力する URL に対する Web 要求を構成した方法を確認します。ユーザーも IP アドレスを指定しません。 Office 365 の既定のカテゴリ URL に IP アドレスがない場合でも、同じ方法で構成する必要があります。
 
 ## <a name="related-topics"></a>関連項目
 
@@ -227,7 +227,7 @@ Office 365は、必要なすべてのネットワーク エンドポイントの
   
 [Microsoft パブリック IP スペース](https://www.microsoft.com/download/details.aspx?id=53602)
   
-[Microsoft Intune のネットワーク インフラストラクチャの要件](/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)
+[Microsoft Intune のネットワーク インフラストラクチャの要件](/mem/intune/fundamentals/intune-endpoints)
   
 [ExpressRoute と Power BI](https://powerbi.microsoft.com/documentation/powerbi-admin-power-bi-expressroute/)
   
