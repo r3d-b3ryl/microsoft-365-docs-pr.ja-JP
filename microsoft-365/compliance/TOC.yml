@@ -10,7 +10,7 @@
       href: compliance-easy-trials-compliance-manager-assessments.md
 - name: 作業の開始
   items:
-    - name: Microsoft Purview を開始するためのクイック タスク
+    - name: Microsoft Purview でコンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
     - name: Microsoft Purview ソリューション カタログ
       href: microsoft-365-solution-catalog.md
