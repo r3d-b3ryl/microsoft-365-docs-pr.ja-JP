@@ -30,7 +30,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 4b518095404f22631533cbf7eff744a62a9c7bd1
 ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/26/2022
 ms.locfileid: "65739895"
@@ -46,9 +46,9 @@ ms.locfileid: "65739895"
 > [!IMPORTANT]
 > この記事は、[Microsoft Defender for Office 365](defender-for-office-365.md) をお持ちの法人のお客様を対象としています。Outlook.com、Microsoft 365 ファミリー、または Microsoft 365 Personal を使用していて、Outlook のセーフリンクに関する情報を探している場合は、「[高度な Outlook.com セキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」 を参照してください。
 
-安全なリンクは、[Defender for Office 365](defender-for-office-365.md) の機能で、メール フロー内の受信メール メッセージの URL スキャンと書き換え、メール メッセージなどに含まれる URL やリンクの Time-of-Click 検証を行います。 セーフ リンクスキャンは、Exchange Online Protection (EOP) の受信電子メール メッセージの通常の[スパム対策](anti-spam-protection.md)と[マルウェア対策](anti-malware-protection.md)に加えて発生します。 安全なリンクのスキャンは、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護できます。
+安全なリンクは、[Defender for Office 365](defender-for-office-365.md) の機能で、メール フロー内の受信メール メッセージの URL スキャンと書き換え、メール メッセージなどに含まれる URL やリンクの Time-of-Click 検証を行います。 安全なリンクのスキャンは、Exchange Online Protection (EOP) の受信メール メッセージにおける通常の[スパム対策](anti-spam-protection.md)と[マルウェア対策](anti-malware-protection.md)に追加して発生します。 安全なリンクのスキャンは、フィッシングやその他の攻撃で使用される悪意のあるリンクから組織を保護できます。
 
-Microsoft Defender for Office 365のセーフ リンクを使用して悪意のあるリンクから保護する方法については、この短いビデオをご覧ください。  
+Microsoft Defender for Office 365 のセーフ リンクを使用して悪意のあるリンクから保護する方法について、この短いビデオをご覧ください。  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGzjb]
 
 安全なリンクの保護機能は以下の場所で利用できます。
@@ -67,7 +67,7 @@ Microsoft Defender for Office 365のセーフ リンクを使用して悪意の�
   Teams の安全なリンク保護の詳細については、この記事で後述する「[Microsoft Teams の安全なリンク設定](#safe-links-settings-for-microsoft-teams)」セクションを参照してください。
 
   > [!NOTE]
-  > 現在、Microsoft Teamsのセーフリンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
+  > 現在、Microsoft Teams のセーフ リンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
 
 - **Office 365 アプリ**: Office 365 アプリの安全なリンク保護は、サポートされたデスクトップ、モバイル、および Web アプリで利用できます。 グローバル設定で、安全なリンク ポリシーの **対象外** である Office 365 アプリの安全なリンク保護を **構成** します。 手順については「[Microsoft Defender for Office 365 の安全なリンク設定のグローバル設定の構成](configure-global-settings-for-safe-links.md)」を参照してください。
 
@@ -170,7 +170,7 @@ Microsoft Defender for Office 365のセーフ リンクを使用して悪意の�
 > [!NOTE]
 > Teams の安全なリンク保護をオンまたはオフにすると、変更が有効になるまでに最大 24 時間かかる場合があります。
 >
-> 現在、Microsoft Teamsのセーフリンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
+> 現在、Microsoft Teams のセーフ リンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
 
 メール メッセージ内のリンクに適用される安全なリンク ポリシーの次の設定は、Teams のリンクにも適用されます。
 

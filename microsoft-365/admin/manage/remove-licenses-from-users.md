@@ -25,12 +25,12 @@ description: 製品ライセンスの割り当てを解除する方法は、特�
 ms.date: 04/22/2022
 ms.openlocfilehash: 29d46ac745487328ecfe49bf658fdaa79fa346d9
 ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/18/2022
 ms.locfileid: "65465802"
 ---
-# <a name="unassign-microsoft-365-licenses-from-users"></a>ユーザーからMicrosoft 365ライセンスの割り当てを解除する
+# <a name="unassign-microsoft-365-licenses-from-users"></a>一般法人向け Microsoft 365 のユーザーからライセンスの割り当てを解除する
 
 **[アクティブなユーザー]** ページ、または **[ライセンス]** ページ上で、ユーザーからライセンスの割り当てを解除できます。 使用する方法は、特定のユーザーから製品ライセンスの割り当てを解除するのか、または特定の製品からユーザー ライセンスの割り当て解除するのかによって異なります。
 
@@ -120,7 +120,7 @@ ms.locfileid: "65465802"
 
 - ユーザーからライセンスを削除すると、そのアカウントに関連付けられているデータは 30 日間保持されます。30 日間の猶予期間後、データは削除され、復元できなくなります。
 - OneDrive for Business に保存されたファイルは、ユーザーが Microsoft 365 管理センターから削除されるか、Active Directory 同期によって削除されない限り、削除されません。詳細については、「[OneDrive の保持と削除](/onedrive/retention-and-deletion)」を参照してください。
-- ライセンスが削除されると、ユーザーのメールボックスは、コンテンツ検索や電子情報開示 (プレミアム) などの電子情報開示ツールを使用して検索できなくなります。 詳細については、[Microsoft 365 のコンテンツ検索](../../compliance/content-search.md)の「切断された、またはライセンスを解除されたメールボックスを検索する」を参照してください。
+- ライセンスが削除されると、ユーザーのメールボックスは、コンテンツ検索や電子情報開示 (Premium) などの電子情報開示ツールを使用して検索できなくなります。 詳細については、[Microsoft 365 のコンテンツ検索](../../compliance/content-search.md)の「切断された、またはライセンスを解除されたメールボックスを検索する」を参照してください。
 - Office 365 Enterprise E3 などの Enterprise サブスクリプションがある場合、Exchange Online では、[非アクティブなメールボックス](../../compliance/inactive-mailboxes-in-office-365.md)を使用して、削除されたユーザー アカウントのメールボックス データを保存できます。詳細については、「[Exchange Online の非アクティブなメールボックスを作成および管理する](../../compliance/create-and-manage-inactive-mailboxes.md)」をご覧ください。
 - ライセンスが削除された後にユーザーの Microsoft 365 データへのアクセスをブロックする方法、および後でデータにアクセスする方法については、「[元従業員を削除する](../add-users/remove-former-employee.md)」を参照してください。
 - ユーザーのライセンスを削除しても Office アプリがインストールされている場合、Office アプリを使用するときに、[Office でライセンスのない製品とアクティベーション エラー](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。
