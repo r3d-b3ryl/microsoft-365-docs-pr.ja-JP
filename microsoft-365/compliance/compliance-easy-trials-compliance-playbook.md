@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版プレイブック。
-ms.openlocfilehash: cf054a27fb56589c42552bb1b79ae837a666d81f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 72ac87a398decd7f3446bc29ee5c001c9f3773fa
+ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466286"
+ms.lasthandoff: 06/07/2022
+ms.locfileid: "65930286"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
 
@@ -77,7 +77,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 > [!TIP]
 > 試用版のベスト プラクティス: 最初の 30 日以内に作成する
 
-監査ログの保持ポリシーは、Microsoft 365 の新しい監査 (プレミアム) 機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
+監査ログの保持ポリシーは、Microsoft Purview の新しい監査 (プレミアム) 機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
 
 1. 監査ログ保持ポリシーの作成前 - ポリシーを作成する前に[知っておきたい主なポイント](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 1. [PowerShell で監査ログの保持ポリシーを作成する](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
@@ -262,7 +262,7 @@ DLP ポリシーの構成は柔軟に行うことができます。 Teams やデ
 > [!TIP]
 > 試用版のベスト プラクティス: 最初の 30 日以内に作成する
 
-より多くの企業が、重要な電子情報開示プロセスに Microsoft 365 の電子情報開示 (プレミアム) ソリューションを使用しています。 これには、規制の要求、調査、訴訟への対応などがあります。
+より多くの企業が、重要な電子情報開示プロセスに Microsoft Purview の電子情報開示 (プレミアム) ソリューションを使用しています。 これには、規制の要求、調査、訴訟への対応などがあります。
 
 1. 電子情報開示 (プレミアム) を管理する - [電子情報開示 (プレミアム) の構成、セキュリティ/コンプライアンス センターを使用したケースの管理、電子情報開示 (プレミアム) でのワークフローの管理、電子情報開示 (プレミアム) の検索結果の分析などの方法を説明します](/learn/modules/manage-advanced-ediscovery)。
 1. [Advanced eDiscovery の新しいケース形式を使用して電子情報開示ケースを作成する](advanced-ediscovery-new-case-format.md)
