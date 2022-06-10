@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 共有メールボックスを設定すると、エラーが発生することがあります。 共有メールボックスで問題が発生した場合は、次の解決策を試してください。
-ms.openlocfilehash: cf121504b53951e0aaaf248d43d045cfa937f4ed
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 08b5bbaa1ea952ee2b9bb6c626328fdb6b91d71c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437109"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008581"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>共有メールボックスの問題を解決する
 
@@ -38,9 +38,9 @@ ms.locfileid: "65437109"
 
 エラー メッセージが表示された場合、 **プロキシ アドレス "smtp:<共有メールボックス名\>" は、プロキシ アドレスまたは LegacyExchangeDN の ""\<name> によって既に使用されています。別のプロキシ アドレスを選択してください**。これは、共有メールボックスに既に使用されている名前を付けようとしていることを意味します。 たとえば、info@domain1 と info@domain2 という名前の共有メールボックスが必要とします。 このようにするには、次の 2 つの方法があります。
 
-  - Windows PowerShell を使用します。 手順については、このブログ投稿を参照してください: [異なるドメインで同じエイリアスを持つ共有メールボックスを作成する](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
-    
-  - 2 つ目の共有メールボックスに、エラーを回避するために最初とは異なる名前を付けます。 次に、管理センターで、共有メールボックスの名前を目的のメールボックスに変更します。
+- PowerShell Exchange Online使用します。 手順については、このブログ投稿を参照してください: [異なるドメインで同じエイリアスを持つ共有メールボックスを作成する](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+
+- 2 つ目の共有メールボックスに、エラーを回避するために最初とは異なる名前を付けます。 次に、管理センターで、共有メールボックスの名前を目的のメールボックスに変更します。
 
 ## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>共有メールボックスを使用しているときに送信アクセス許可がないことに関するエラー
 

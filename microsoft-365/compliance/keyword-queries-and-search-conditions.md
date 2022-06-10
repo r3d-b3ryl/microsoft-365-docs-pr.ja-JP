@@ -22,18 +22,18 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365の電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについて説明します。
-ms.openlocfilehash: d6a918f41004a366b9e8c7c53c7e0f2153d57c3b
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: ebea983caedc73c8471d6e460b58314bd76f1861
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319050"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012342"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-この記事では、Exchange Onlineのメール アイテムやMicrosoft Teamsチャット会話で検索できる電子メールとドキュメントのプロパティ、および電子情報開示検索ツールを使用してSharePointサイトとOneDrive for Business サイトに保存されているドキュメントについて説明します。Microsoft Purview コンプライアンス ポータル。 これには、コンテンツ検索、Microsoft Purview電子情報開示 (Standard)、Microsoft Purview電子情報開示 (プレミアム) が含まれます (電子情報開示での電子情報開示検索 (プレミアム) は *コレクション* と呼ばれます)。 また、セキュリティ/コンプライアンス センター PowerShell の **\*-ComplianceSearch** コマンドレットを使用してこれらのプロパティを検索することもできます。 この記事では、次についても説明します。
+この記事では、Exchange Onlineの電子メール アイテムやMicrosoft Teamsチャット会話で検索できる電子メールとドキュメントのプロパティ、および Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用してSharePointサイトとOneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Microsoft Purview 電子情報開示 (Standard)、Microsoft Purview 電子情報開示 (プレミアム) が含まれます (電子情報開示での電子情報開示検索 (プレミアム) は *コレクション* と呼ばれます)。 セキュリティ & コンプライアンス PowerShell の -ComplianceSearch コマンドレットを使用 **\*** して、これらのプロパティを検索することもできます。 この記事では、次についても説明します。
 
 - ブール検索演算子、検索条件、およびその他の検索クエリ技法を使用して、検索結果を絞り込む。
 - SharePoint および OneDrive for Business で機密情報の種類およびカスタムの機密情報の種類を検索する。
@@ -46,7 +46,7 @@ ms.locfileid: "65319050"
 - [電子情報開示で下書きコレクションを作成する (プレミアム)](create-draft-collection.md)
 
 > [!NOTE]
-> コンプライアンス ポータルでの電子情報開示検索と、Security & Compliance Center PowerShell の対応する **\*-ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
+> コンプライアンス ポータルでの電子情報開示の検索と、Security & Compliance PowerShell の対応する **\*-ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
 
 ## <a name="searchable-email-properties"></a>検索可能なメール プロパティ
 
@@ -70,9 +70,9 @@ ms.locfileid: "65319050"
 |Kind|検索するメール メッセージの種類。 可能な値: <p>  contacts <p>  docs <p>  email <p>  externaldata <p>  faxes <p>  im <p>  journals <p>  meetings <p>  microsoftteams (Microsoft Teams のチャット、会議、通話のアイテムが返されます) <p>  notes <p>  posts <p>  rssfeeds <p>  tasks <p>  voicemail|`kind:email` <p> `kind:email OR kind:im OR kind:voicemail` <p> `kind:externaldata`|最初の例では、検索条件に一致するメール メッセージが返されます。 2 番目の例では、検索条件に一致するメール メッセージ、インスタント メッセージ、会話 (Skype for Business の会話と Microsoft Teams のチャットを含みます) ボイス メッセージが返されます。 3 番目の例は、サード パーティのデータ ソース (Twitter、Facebook、Cisco Jabber など) から Office 365 のメールボックスにインポートされたアイテムのうち、検索条件に一致して、返されたアイテムです。 詳細については、「[Office 365 でサードパーティのデータをアーカイブする](https://www.microsoft.com/?ref=go)」を参照してください。|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
 |受信済み|電子メール メッセージが受信者によって受信された日付。|`received:2021-04-15` <p> `received>=2021-01-01 AND received<=2021-03-31`|2021 年 4 月 15 日に受信したメッセージ。 2 番目の例では、2021 年 1 月 1 日から 2021 年 3 月 31 日の間に受信したすべてのメッセージが返されます。|
-|Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
+|Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。 2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
 |送信日時|送信者によって電子メール メッセージが送信された日付。|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
-|Size|アイテムのサイズ (バイト数)。|`size>26214400` <p> `size:1..1048567`|25 MB を超えるメッセージ。2 番目の例は 1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージを返します。|
+|Size|アイテムのサイズ (バイト数)。|`size>26214400` <p> `size:1..1048567`|25 MB を超えるメッセージ。 2 番目の例では、1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージが返されます。|
 |Subject|電子メール メッセージの件名行に含まれるテキスト。 <p> **注:** クエリで Subject プロパティを使用すると、検索するテキストが件名に含まれているすべてのメッセージが返されます。 つまり、完全一致のメッセージのみがクエリで返されるわけではありません。 たとえば、 `subject:"Quarterly Financials"` を検索した場合の結果には、件名が "Quarterly Financials 2018" のメッセージが含まれることになります。|`subject:"Quarterly Financials"` <p> `subject:northwind`|件名行のテキストのいずれかの箇所に "Quarterly Financials" を含むメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
 |To|メール メッセージの To フィールド。<sup>1</sup>|`to:annb@contoso.com` <p> `to:annb ` <br/> `to:"Ann Beebe"`|いずれの例も、To: 行に "Ann Beebe" が指定されているメッセージを返します。|
 
@@ -92,7 +92,7 @@ ms.locfileid: "65319050"
 
 ## <a name="searchable-site-properties"></a>検索可能なサイト プロパティ
 
-次の表に、Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用するか、**New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使用して検索できるSharePointプロパティとOneDrive for Business プロパティの一部を示します。 表には、各プロパティの  _property:value_ 構文の例、およびその例で返される検索結果の説明が含まれています。
+次の表に、Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用するか、**New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使用して検索できるSharePointプロパティとOneDrive for Businessプロパティの一部を示します。 表には、各プロパティの  _property:value_ 構文の例、およびその例で返される検索結果の説明が含まれています。
 
 検索可能な SharePoint プロパティの完全な一覧については、「[クロールされたプロパティと管理プロパティの概要](/SharePoint/technical-reference/crawled-and-managed-properties-overview)」を参照してください。 [**クエリ可能**] 列で **[はい]** と示されているプロパティが検索可能です。
 
@@ -156,7 +156,7 @@ ms.locfileid: "65319050"
 
 コンプライアンス ポータルの電子情報開示検索ツールを使用すると、SharePoint サイトやOneDrive for Business サイトのドキュメントに格納されている機密データ (クレジット カード番号や社会保障番号など) を検索できます。 これを行うには、`SensitiveType`プロパティと機密情報の名前 (または ID) をキーワード クエリで使います。 たとえば、クエリ `SensitiveType:"Credit Card Number"` は、クレジット カード番号が含まれているドキュメントを返します。 クエリ`SensitiveType:"U.S. Social Security Number (SSN)"` は米国の社会保障番号を含むドキュメントを返します。
 
-検索できる機密情報の種類の一覧を表示するには、コンプライアンス ポータルで **データ分類の** \> **機密情報の種類** に移動します。 または、セキュリティ/コンプライアンス センター PowerShell で **Get-DlpSensitiveInformationType** コマンドレットを使用する方法でも機密情報の種類の一覧を表示できます。
+検索できる機密情報の種類の一覧を表示するには、コンプライアンス ポータルで **データ分類の** \> **機密情報の種類** に移動します。 または、Security & Compliance PowerShell の **Get-DlpSensitiveInformationType** コマンドレットを使用して、機密情報の種類の一覧を表示することもできます。
 
 `SensitiveType` プロパティを使用したクエリの作成の詳細については、「[サイトに保存されている機密データを検索するクエリを作成する](form-a-query-to-find-sensitive-data-stored-on-sites.md)」を参照してください。 
 
@@ -164,7 +164,7 @@ ms.locfileid: "65319050"
 
 - カスタムの機密情報の種類を検索するには、`SensitiveType`プロパティで機密情報の種類の ID を指定する必要があります。 前のセクションの組み込み機密情報の種類の例で示すように、カスタムの機密情報の種類の名前を使用すると、結果は返されません。 コンプライアンス センターの [**機密情報の種類**] ページの [**発行元**] 列 (または PowerShell の **発行元** プロパティ) を使って、組み込みの機密情報の種類とカスタムの機密情報の種類を区別できます。 組み込みの機密データ型は **発行元** プロパティの値`Microsoft Corporation`を持っています。
 
-  組織のカスタムの機密データの種類の名前と ID を表示するには、セキュリティ/コンプライアンス センターの PowerShell で次のコマンドを実行します。
+  組織内のカスタム機密データ型の名前と ID を表示するには、Security & Compliance PowerShell で次のコマンドを実行します。
 
   ```powershell
   Get-DlpSensitiveInformationType | Where-Object {$_.Publisher -ne "Microsoft Corporation"} | FT Name,Id
@@ -195,7 +195,7 @@ ms.locfileid: "65319050"
 |\>=|property\>=value|検索対象のプロパティが特定の値以上であることを意味します。<sup>1</sup>|
 |..|property:value1..value2|検索対象のプロパティが value1 以上で value2 以下であることを意味します。<sup>1</sup>|
 |"  "|"fair value" <p> subject:"Quarterly Financials"|キーワード クエリ ([**キーワード**] ボックスにペアを入力する`property:value`場合) では、二重引用符 (" ") を使用して、正確な語句または語句を検索します。 ただし、**件名** または **件名/タイトル**[の検索条件](#search-conditions)を使用する場合は、これらの検索条件を使用するときに引用符が自動的に追加されるため、値に二重引用符を追加しないでください。 値に引用符を追加すると、条件値に 2 組の二重引用符が追加され、検索クエリによってエラーが返されます。 |
-|\*|cat\* <p> subject:set\*|キーワードまたは`property:value`クエリの単語の末尾にワイルドカード文字 (*) が配置されるプレフィックス検索 (*プレフィックスマッチング* とも呼ばれます)。 プレフィックス検索では、単語の後に 0 個以上の文字が続く語句を含む結果が返されます。 たとえば、 `title:set*` ドキュメント タイトルに "set"、"setup"、および "setting" (および "set" で始まる他の単語) を含むドキュメントを返します。 <p> **メモ：** プレフィックス検索のみを使用できます。たとえば、**cat\**_ や _* set\* *_などです。サフィックス検索 (_*\*cat**)、インフィックス検索 (**ct\***)、および部分文字列検索 (**\*cat\***) はサポートされていません。 <p> また、ピリオド( \. の追加 ) をプレフィックス検索に設定すると、返される結果が変更されます。 これは、ピリオドが停止語として扱われるためです。 たとえば、**cat\**_ と   _* cat.\*** 検索では、異なる結果が返されます。 プレフィックス検索ではピリオドを使用しないことをお勧めします。|
+|\*|cat\* <p> subject:set\*|キーワードまたは`property:value`クエリの単語の末尾にワイルドカード文字 (*) が配置されるプレフィックス検索 (*プレフィックスマッチング* とも呼ばれます)。 プレフィックス検索では、単語の後に 0 個以上の文字が続く語句を含む結果が返されます。 たとえば、 `title:set*` ドキュメント タイトルに "set"、"setup"、および "setting" (および "set" で始まる他の単語) を含むドキュメントを返します。 <p> **メモ：** プレフィックス検索のみを使用できます。たとえば、**cat\**_ や _* set\* *_などです。サフィックス検索 (_*\*cat**)、infix 検索 (**c\*t**)、および部分文字列検索 (**\*cat\***) はサポートされていません。 <p> また、ピリオド( \. の追加 ) をプレフィックス検索に設定すると、返される結果が変更されます。 これは、ピリオドが停止語として扱われるためです。 たとえば、**cat\**_ と   _* cat.\*** 検索では、異なる結果が返されます。 プレフィックス検索ではピリオドを使用しないことをお勧めします。|
 |(  )|(fair OR free) AND from:contoso.com <p> (IPO OR initial) AND (stock OR shares) <p> (quarterly financials)|括弧は、ブール演算子の文字列、 `property:value` アイテム、およびキーワードをグループにまとめます。たとえば、  `(quarterly financials)` は quarterly および financials の語を含むアイテムを返します。  |
 
 > [!NOTE]
@@ -238,7 +238,7 @@ ms.locfileid: "65319050"
 |メッセージの種類|検索するメッセージの種類。 これは、Kind メール プロパティと同じプロパティです。 可能な値: <ul><li>contacts</li><li>docs</li><li>email</li><li>externaldata</li><li>fax</li><li>im</li><li>journals</li><li>meetings</li><li>microsoftteams</li><li>notes</li><li>posts</li><li>rssfeeds</li><li>tasks</li><li>voicemail</li></ul>|
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。 ([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
 |Type|メール アイテムのメッセージ クラス プロパティ。 これは、ItemClass メール プロパティと同じプロパティです。 また、複数値の条件です。 複数のメッセージ クラスを選ぶには、**Ctrl** キーを押したまま、ドロップダウン リストで条件に追加する複数のメッセージ クラスをクリックします。 リストで選んだ各メッセージ クラスは、対応する検索クエリでは **OR** 演算子によって論理的に接続されます。 <p> Exchange によって使われていて **メッセージ クラス** リストで選ぶことができるメッセージ クラス (およびそれに対応するメッセージ クラス ID) のリストについては、「[アイテムの種類とメッセージ クラス](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)」をご覧ください。|
-|受信済み|メール メッセージが受信者によって受信された日付。これは、Received メール プロパティと同じプロパティです。|
+|受信済み|電子メール メッセージが受信者によって受信された日付。 これは、Received メール プロパティと同じプロパティです。|
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。 ([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
 |Sender|電子メール メッセージの差出人。|
 |送信日時|送信者によって電子メール メッセージが送信された日付。 これは、Sent メール プロパティと同じプロパティです。|
@@ -267,7 +267,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 |Before|`property<date`|日付の条件で使用されます。指定された日付の前に送信、受信、変更された項目を返します。|
 |Between|`date..date`|日付条件およびサイズ条件で使用します。 日付条件で使用すると、指定された日付範囲内に送信、受信、変更された項目を返します。 サイズ条件で使用すると、サイズが指定範囲内にある項目を返します。|
 |Contains any of|`(property:value) OR (property:value)`|文字列値を指定するプロパティの条件で使用されます。 1 つ以上の指定された文字列の値の任意の部分が含まれる項目を返します。|
-|Doesn't contain any of|`-property:value` <p> `NOT property:value`|文字列値を指定するプロパティの条件で使用されます。指定された文字列のどの部分も含まれない項目を返します。|
+|Doesn't contain any of|`-property:value` <p> `NOT property:value`|文字列値を指定するプロパティの条件で使用されます。 指定された文字列のどの部分も含まれない項目を返します。|
 |Doesn't equal any of|`-property=value` <p> `NOT property=value`|文字列値を指定するプロパティの条件で使用されます。特定の文字列が含まれない項目を返します。|
 |Equals|`size=value`|指定されたサイズに等しい項目を返します。<sup>1</sup>|
 |次のいずれかと等しい|`(property=value) OR (property=value)`|文字列値を指定するプロパティの条件で使用されます。 指定した 1 つ以上の文字列値と一致する項目を返します。|
@@ -456,7 +456,7 @@ SharePoint サイトとOneDrive アカウントでコンテンツを検索する
 
 - To、From、Cc、Recipients などの受信者プロパティを検索するとき、SMTP アドレス、別名、または表示名を使用して受信者を指定できます。たとえば、pilarp@contoso.com、pilarp、または "Pilar Pinilla" を使用できます。
 
-- プレフィックス検索のみを使用できます。たとえば、**cat\**_ や _* set\* *_などです。サフィックス検索 (_*\*cat**)、インフィックス検索 (**ct\***)、および部分文字列検索 (**\*cat\***) はサポートされていません。
+- プレフィックス検索のみを使用できます。たとえば、**cat\**_ や _* set\* *_などです。サフィックス検索 (_*\*cat**)、infix 検索 (**c\*t**)、および部分文字列検索 (**\*cat\***) はサポートされていません。
 
 - 検索プロパティを検索するとき、検索値が複数の単語で構成される場合は、二重引用符 ("  ") を使用します。 たとえば、 `subject:budget Q1` は、件名行に **budget** を含み、メッセージ内またはいずれかのメッセージ プロパティ内のいずれかの場所に **Q1** を含むメッセージを返します。 `subject:"budget Q1"` を使用すると、件名行に **budget Q1** を含むすべてのメッセージが返されます。
 

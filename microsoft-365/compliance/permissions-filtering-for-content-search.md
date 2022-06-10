@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: 検索アクセス許可フィルターを使用して、電子情報開示マネージャーが組織内のメールボックスとサイトのサブセットのみを検索できるようにします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ba8cfaaec45ceefff89b17b561a5e80bebbdade6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 067e1a3c785d624579af80f92476d2641266f4dc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098804"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018055"
 ---
 # <a name="configure-permissions-filtering-for-ediscovery"></a>電子情報開示のアクセス許可フィルターを構成する
 
@@ -59,7 +59,7 @@ Security & Compliance PowerShell の次の 4 つのコマンドレットを使�
 
 - コンプライアンス セキュリティ フィルター コマンドレットを実行するには、コンプライアンス ポータルの組織管理役割グループのメンバーである必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください。
 
-- コンプライアンス セキュリティ フィルター コマンドレットを使用するには、Exchange Onlineとセキュリティ&コンプライアンス センター PowerShell の両方に接続する必要があります。 これは、これらのコマンドレットがメールボックスのプロパティにアクセスする必要があるため、PowerShell Exchange Online接続する必要があるためです。 手順については、次のセクションを参照してください。
+- コンプライアンス セキュリティ フィルター コマンドレットを使用するには、Exchange Online とセキュリティ &コンプライアンス PowerShell の両方に接続する必要があります。 これは、これらのコマンドレットがメールボックスのプロパティにアクセスする必要があるため、PowerShell Exchange Online接続する必要があるためです。 手順については、次のセクションを参照してください。
 
 - アクセス許可の検索フィルターの詳細については、「[More information](#more-information)」セクションを参照してください。
 
@@ -69,7 +69,7 @@ Security & Compliance PowerShell の次の 4 つのコマンドレットを使�
 
 - 組織で作成できる検索アクセス許可フィルターの数に制限はありません。 ただし、検索クエリには最大 100 個の条件を指定できます。 この場合、条件は、ブール演算子 ( **AND**、 **OR**、 **NEAR** など) によってクエリに接続されているものとして定義されます。 条件の数の制限には、検索クエリ自体と、検索を実行するユーザーに適用されるすべての検索アクセス許可フィルターが含まれます。 そのため、(特にこれらのフィルターが同じユーザーまたはユーザーのグループに適用されている場合) 検索アクセス許可フィルターが多いほど、検索の条件の最大数を超える可能性が高くなります。 組織が条件の制限に達するのを防ぐには、組織の検索アクセス許可フィルターの数を、ビジネス要件を満たすためにできるだけ少なくしてください。 詳細については、「 [電子情報開示調査のコンプライアンス境界を設定する](set-up-compliance-boundaries.md#frequently-asked-questions)」を参照してください。
 
-## <a name="connect-to-exchange-online-and-security--compliance-center-powershell-in-a-single-session"></a>1 回のセッションでコンプライアンス センター PowerShell & Exchange OnlineとセキュリティにConnectする
+## <a name="connect-to-exchange-online-and-security--compliance-powershell-in-a-single-session"></a>Exchange Onlineとセキュリティ&コンプライアンス PowerShell を 1 回のセッションでConnectする
 
 このセクションでスクリプトを正常に実行するには、Exchange Online PowerShell V2 モジュールをダウンロードしてインストールする必要があります。 詳細については、「[PowerShell V2 モジュールExchange Onlineについて](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)」を参照してください。
 
@@ -89,13 +89,13 @@ Security & Compliance PowerShell の次の 4 つのコマンドレットを使�
     .\ConnectEXO-SCC.ps1
     ```
 
-これが機能したかどうかを知る方法 スクリプトを実行すると、Exchange Online および Security & Compliance PowerShell のコマンドレットがローカル Windows PowerShell セッションにインポートされます。 何もエラーが表示されなければ、正常に接続されています。 クイック テストでは、Exchange Online および Security & Compliance Center PowerShell コマンドレットを実行します。 たとえば、 **Get-Mailbox** と **Get-ComplianceSearch** を実行して実行できます。
+これが機能したかどうかを知る方法 スクリプトを実行すると、powerShell と Security & Compliance PowerShell Exchange Onlineのコマンドレットを使用できます。 何もエラーが表示されなければ、正常に接続されています。 クイック テストでは、PowerShell コマンドレットと Security & Compliance PowerShell コマンドレットExchange Online実行します。 たとえば、 **Get-Mailbox** と **Get-ComplianceSearch** を実行して実行できます。
 
 PowerShell 接続エラーのトラブルシューティングについては、次を参照してください。
 
 - [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell#how-do-you-know-this-worked)
 
-- [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
+- [セキュリティ/コンプライアンス PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell#how-do-you-know-this-worked)
 
 ## <a name="new-compliancesecurityfilter"></a>New-ComplianceSecurityFilter
 
@@ -122,7 +122,7 @@ _Filters_ パラメーターはコンプライアンス セキュリティ フ�
   |プロパティ名  |例  |
   |---------|---------|
   |Alias    |`"Mailbox_Alias -like 'v-'"`         |
-  |Company  |`"Mailbox_Company -eq 'Contoso'"`        |
+  |会社名  |`"Mailbox_Company -eq 'Contoso'"`        |
   |CountryOrRegion |`"Mailbox_CountryOrRegion -eq 'United States'"`         |
   |部署 |`"Mailbox_Department -eq 'Finance'"`        |
   |||

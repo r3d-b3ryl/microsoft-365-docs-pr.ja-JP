@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、「テナント」ページを参照してください。
-ms.openlocfilehash: 0f25f8bb02c6957598b2b328bc7832c429ca1e7a
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 28ca99b32021be0ad5efbf29a858df7bad253078
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128376"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016522"
 ---
 # <a name="overview-of-the-tenants-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [テナント] ページの概要
 
@@ -60,8 +61,8 @@ Microsoft 365 Lighthouseでは、左側のナビゲーション ウィンドウ�
 
 | 状態                                   | 説明                                                                                             |
 |------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| アクティブ                                   | テナントのオンボードとデータ フローが開始されました。                                                           |
-| 非 アクティブ                                 | テナントは MSP の要求でオフボードされ、Lighthouse で管理されなくなりました。           |
+| Active                                   | テナントのオンボードとデータ フローが開始されました。                                                           |
+| 非アクティブ                                 | テナントは MSP の要求でオフボードされ、Lighthouse で管理されなくなりました。           |
 | 処理中                               | テナントが検出されましたが、完全にオンボードされていません。                                                              |
 | 不適格 - DAP または GDAP が設定されていない    | パートナーは、テナントでセットアップされた委任 (DAP) または詳細な委任 (GDAP) 管理特権を持っている必要があります。 |
 | 不適格 - 必要なライセンスがありません | テナントに必要なライセンスがありません。                                                               |
@@ -108,7 +109,7 @@ Microsoft 365 Lighthouseでは、左側のナビゲーション ウィンドウ�
 - タイトル
 - Phone
 - メール
-- 備考
+- メモ
 
 [メモ] セクションは、テナントのキー情報 (エンゲージメントの設定、場所、タイム ゾーン、組織内のロールに関する詳細など) を記録するために使用できるテキスト フィールドです。
 

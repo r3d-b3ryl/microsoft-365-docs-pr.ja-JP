@@ -16,13 +16,13 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Salesforce Chatter、Yahoo Messenger、Yammerなどのデータ ソースからサード パーティのデータをインポートするようにカスタム コネクタを設定する方法について説明します。
-ms.openlocfilehash: f0de03fb68b78779b6d1ed057a8b462c5c2a901b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: カスタム コネクタを設定して、Salesforce Chatter、Yahoo Messenger、Yammerなどのデータ ソースからサード パーティのデータをインポートする方法について説明します。
+ms.openlocfilehash: 02c0d8a61668a0d3dd3e663c1cb4915be15d9a08
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097560"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015520"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>パートナーと共同作業して、サード パーティのデータをアーカイブする
 
@@ -161,7 +161,7 @@ Microsoft 365でサード パーティのデータをアーカイブするため
 
 - Bloomberg メール
 
-- 検索ボックス
+- Box
 
 - CipherCloud for Salesforce Chatter
 
@@ -403,7 +403,6 @@ Microsoft 365でサード パーティのデータをアーカイブするため
 
 - YouTube
 
-
 ### <a name="verba"></a>バーバ
 
 [Verba](https://www.verba.com) では、次のサード パーティのデータ ソースがサポートされています。
@@ -476,18 +475,18 @@ Microsoft 365でサード パーティのデータをアーカイブするため
 
 Microsoft 365にデータをインポートするためのサード パーティ製のデータ メールボックスを作成して構成する手順を次に示します。 前述のように、パートナー コネクタがアイテムのユーザー ID をユーザー アカウントにマップできない場合、アイテムはこのメールボックスにインポートされます。
 
- **Microsoft 365 管理センターでこれらのタスクを完了する**
+### <a name="complete-these-tasks-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでこれらのタスクを完了する
 
 1. ユーザー アカウントを作成し、プラン 2 ライセンスExchange Online割り当てます。[「Microsoft 365にユーザーを追加する」を](../admin/add-users/add-users.md)参照してください。 メールボックスを訴訟ホールドにするか、最大 1.5 TB のストレージ クォータを持つアーカイブ メールボックスを有効にするには、プラン 2 ライセンスが必要です。
 
 2. サード パーティのデータ メールボックスのユーザー アカウントを **Microsoft 365のExchange管理者** 管理者ロールに追加します。「Microsoft 365 [で管理者ロールを割り当てる](../admin/add-users/assign-admin-roles.md)」を参照してください。
 
     > [!TIP]
-    > このユーザー アカウントの資格情報を控えておきます。手順 4 で説明するように、この情報をパートナーに提供する必要があります。
+    > このユーザー アカウントの資格情報を控えておきます。 手順 4 で説明するように、この情報をパートナーに提供する必要があります。
 
- **Exchange管理センターでこれらのタスクを完了する**
+### <a name="complete-these-tasks-in-the-exchange-admin-center"></a>Exchange管理センターでこれらのタスクを完了する
 
-1. 組織内のアドレス帳やその他のアドレス一覧からサード パーティのデータ メールボックスを非表示にします。 [ユーザー メールボックスの管理に関するページを](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)参照してください。 または、次の PowerShell コマンドを実行することもできます。
+1. 組織内のアドレス帳やその他のアドレス一覧からサード パーティのデータ メールボックスを非表示にします。 [ユーザー メールボックスの管理に関するページを](/exchange/recipients-in-exchange-online/manage-user-mailboxes/manage-user-mailboxes)参照してください。 または、次の[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) コマンドを実行することもできます。
 
     ```powershell
     Set-Mailbox -Identity <identity of third-party data mailbox> -HiddenFromAddressListsEnabled $true
@@ -509,7 +508,7 @@ Microsoft 365にデータをインポートするためのサード パーティ
 
 ## <a name="step-3-configure-user-mailboxes-for-third-party-data"></a>手順 3: サード パーティのデータに対してユーザーのメールボックスを構成する
 
-次の手順は、サード パーティのデータをサポートするためにユーザーのメールボックスを構成します。 これらのタスクは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>を使用するか、対応するWindows PowerShell コマンドレットを使用して実行します。
+次の手順は、サード パーティのデータをサポートするためにユーザーのメールボックスを構成します。 これらのタスクは<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Exchange管理センター</a>を使用するか、対応するコマンドレットを使用して実行します。
 
 1. 各ユーザーのアーカイブ メールボックスを有効にします。 [「アーカイブ メールボックスを有効にする」](enable-archive-mailboxes.md) および「 [自動展開アーカイブを有効にする](enable-autoexpanding-archiving.md)」を参照してください。
 
@@ -562,17 +561,17 @@ Microsoft 365にデータをインポートするためのサード パーティ
 
 ## <a name="more-information"></a>詳細情報
 
-- 前述のように、サード パーティのデータ ソースのアイテムは、メール メッセージとして Exchange メールボックスにインポートされます。 パートナー コネクタは、Microsoft 365 API で必要なスキーマを使用してアイテムをインポートします。 次の表では、メール メッセージとして Exchange メールボックスにインポートされた後の、サード パーティのデータ ソースのアイテムのメッセージのプロパティについて説明します。 この表では、メッセージのプロパティが必須かどうかも示します。 必須プロパティは設定されている必要があります。 必須プロパティがないアイテムは、Microsoft 365にインポートされません。 インポート プロセスは、アイテムがインポートされなかった理由と、どのプロパティが見つからないかを説明するエラー メッセージを返します。<br/><br/>
+- 前述のように、サード パーティのデータ ソースのアイテムは、メール メッセージとして Exchange メールボックスにインポートされます。 パートナー コネクタは、Microsoft 365 API で必要なスキーマを使用してアイテムをインポートします。 次の表では、メール メッセージとして Exchange メールボックスにインポートされた後の、サード パーティのデータ ソースのアイテムのメッセージのプロパティについて説明します。 この表では、メッセージのプロパティが必須かどうかも示します。 必須プロパティは設定されている必要があります。 必須プロパティがないアイテムは、Microsoft 365にインポートされません。 インポート プロセスは、アイテムがインポートされなかった理由と、どのプロパティが見つからないかを説明するエラー メッセージを返します。
 
-    |**メッセージのプロパティ**|**必須かどうか?**|**説明**|**値の例**|
-    |:-----|:-----|:-----|:-----|
-    |**FROM** <br/> |はい  <br/> |最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。 パートナー コネクタは、ソース アイテム (Twitter ハンドルなど) からすべての参加者 (FROM フィールドと TO フィールドのユーザー) のユーザー アカウントにユーザー ID をマップしようとします。 メッセージのコピーが、すべての参加者のメールボックスにインポートされます。 アイテムの参加者のいずれもユーザー アカウントにマップできない場合、アイテムはMicrosoft 365のサード パーティのアーカイブ メールボックスにインポートされます。  <br/> <br/> アイテムの送信者として識別された参加者には、アイテムのインポート先となる組織内のアクティブなメールボックスが必要です。 送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`  | `bob@contoso.com` <br/> |
-    |**TO** <br/> |はい  <br/> |アイテムを受信したユーザー (データ ソース内のアイテムに該当する場合)。  <br/> | `bob@contoso.com` <br/> |
-    |**件名** <br/> |いいえ  <br/> |ソース アイテムの件名。  <br/> | `"Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/> |
-    |**DATE** <br/> |はい  <br/> |顧客データ ソースでアイテムが最初に作成または投稿された日付。 たとえば、Twitter メッセージがツイートされた日付です。  <br/> | `01 NOV 2015` <br/> |
-    |**体** <br/> |いいえ  <br/> |メッセージまたは投稿のコンテンツ。 一部のデータ ソースでは、このプロパティのコンテンツは **SUBJECT** プロパティのコンテンツと同じになります。 インポート プロセス中、パートナー コネクタはコンテンツ ソースからの完全な忠実性を可能な限り維持しようとします。 可能な場合には、ソース アイテムの本文からのファイル、グラフィック、またはその他のコンテンツが、このプロパティに含まれます。 それ以外の場合、ソース アイテムからのコンテンツは **ATTACHMENT** プロパティに含まれます。 このプロパティの内容は、パートナー コネクタとソース プラットフォームの機能によって異なります。  <br/> | `Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015` <br/> |
-    |**添付 ファイル** <br/> |いいえ  <br/> |データ ソース内のアイテム (Twitter のツイートやインスタント メッセージング会話など) に添付ファイルがある場合、または画像を含める場合、パートナーの接続は最初に **BODY** プロパティに添付ファイルを含めようとします。 それが不可能な場合は、** ATTACHMENT ** プロパティに追加されます。 添付ファイルの例として、他にも Facebook の「いいね」、コンテンツ ソースからのメタデータ、およびメッセージまたは投稿への返信などがあります。  <br/> | `image.gif` <br/> |
-    |**MESSAGECLASS** <br/> |はい  <br/> | これは、パートナー コネクタによって作成および設定される複数値プロパティです。 このプロパティの形式は  `IPM.NOTE.Source.Event`. (このプロパティは、 で始まる  `IPM.NOTE`必要があります。 この形式は、メッセージ クラスの形式に  `IPM.NOTE.X` 似ています)。このプロパティには、次の情報が含まれます。  <br/><br/>`Source`: サード パーティのデータ ソースを示します。たとえば、Twitter、Facebook、BlackBerry などです。  <br/> <br/>  `Event`: 項目を生成したサード パーティのデータ ソースで実行されたアクティビティの種類を示します。たとえば、Twitter のツイートや Facebook の投稿などです。 イベントはデータ ソースに固有です。  <br/> <br/>  このプロパティの目的の 1 つは、アイテムが発生したデータ ソースに基づいて、またはイベントの種類に基づいて特定の項目をフィルター処理することです。 たとえば、電子情報開示検索では、特定のユーザーによって投稿されたすべてのツイートを検索する検索クエリを作成できます。  <br/> | `IPM.NOTE.Twitter.Tweet` <br/> |
+  |メッセージのプロパティ|必須かどうか?|説明|値の例|
+  |---|---|---|---|
+  |**FROM**|はい|最初にサード パーティのデータ ソース内のアイテムを作成または送信したユーザー。 パートナー コネクタは、ソース アイテム (Twitter ハンドルなど) からすべての参加者 (FROM フィールドと TO フィールドのユーザー) のユーザー アカウントにユーザー ID をマップしようとします。 メッセージのコピーが、すべての参加者のメールボックスにインポートされます。 アイテムの参加者のいずれもユーザー アカウントにマップできない場合、アイテムはMicrosoft 365のサード パーティのアーカイブ メールボックスにインポートされます。  <br/> <br/> アイテムの送信者として識別された参加者には、アイテムのインポート先となる組織内のアクティブなメールボックスが必要です。 送信者がアクティブなメールボックスを持っていない場合は、次のエラーが返されます。<br/><br/>  `One or more messages in the Request failed to be delivered to either From or Sender email address. You will need to resend your entire Request. Error: The request failed. The remote server returned an error: (401) Unauthorized.`|`bob@contoso.com`|
+  |**TO**|はい|アイテムを受信したユーザー (データ ソース内のアイテムに該当する場合)。|`bob@contoso.com`|
+  |**件名**|不要|ソース アイテムの件名。|`"Mega deals with Contoso coming your way! #ContosoHolidayDeals"`|
+  |**DATE**|はい|顧客データ ソースでアイテムが最初に作成または投稿された日付。 たとえば、Twitter メッセージがツイートされた日付です。|`01 NOV 2015`|
+  |**体**|不要|メッセージまたは投稿のコンテンツ。 一部のデータ ソースでは、このプロパティのコンテンツは **SUBJECT** プロパティのコンテンツと同じになります。 インポート プロセス中、パートナー コネクタはコンテンツ ソースからの完全な忠実性を可能な限り維持しようとします。 可能な場合には、ソース アイテムの本文からのファイル、グラフィック、またはその他のコンテンツが、このプロパティに含まれます。 それ以外の場合、ソース アイテムからのコンテンツは **ATTACHMENT** プロパティに含まれます。 このプロパティの内容は、パートナー コネクタとソース プラットフォームの機能によって異なります。|`Author: bob@contoso.com` <br/>  `Date: 10 DEC 2014` <br/>  `Tweet: "Mega deals with Contoso coming your way! #ContosoHolidayDeals"` <br/>  `Date: 01 NOV 2015`|
+  |**添付 ファイル**|不要|データ ソース内のアイテム (Twitter のツイートやインスタント メッセージング会話など) に添付ファイルがある場合、または画像を含める場合、パートナーの接続は最初に **BODY** プロパティに添付ファイルを含めようとします。 それが不可能な場合は、** ATTACHMENT ** プロパティに追加されます。 添付ファイルの例として、他にも Facebook の「いいね」、コンテンツ ソースからのメタデータ、およびメッセージまたは投稿への返信などがあります。|`image.gif`|
+  |**MESSAGECLASS**|はい|これは、パートナー コネクタによって作成および設定される複数値プロパティです。 このプロパティの形式は  `IPM.NOTE.Source.Event`. (このプロパティは、 で始まる  `IPM.NOTE`必要があります。 この形式は、メッセージ クラスの形式に  `IPM.NOTE.X` 似ています)。このプロパティには、次の情報が含まれます。  <br/><br/>`Source`: サード パーティのデータ ソースを示します。たとえば、Twitter、Facebook、BlackBerry などです。  <br/> <br/>  `Event`: 項目を生成したサード パーティのデータ ソースで実行されたアクティビティの種類を示します。たとえば、Twitter のツイートや Facebook の投稿などです。 イベントはデータ ソースに固有です。  <br/> <br/>  このプロパティの目的の 1 つは、アイテムが発生したデータ ソースに基づいて、またはイベントの種類に基づいて特定の項目をフィルター処理することです。 たとえば、電子情報開示検索では、特定のユーザーによって投稿されたすべてのツイートを検索する検索クエリを作成できます。|`IPM.NOTE.Twitter.Tweet`|
 
 - アイテムがMicrosoft 365のメールボックスに正常にインポートされると、HTTP 応答の一部として一意の識別子が呼び出し元に返されます。 この識別子 (呼び出し)  `x-IngestionCorrelationID`は、アイテムのエンド ツー エンドの追跡にパートナーが後続のトラブルシューティングを行うために使用できます。 パートナーがこの情報をキャプチャし、パートナーの側で記録することをお勧めします。 この識別子を示す HTTP 応答の例を以下に示します。
 

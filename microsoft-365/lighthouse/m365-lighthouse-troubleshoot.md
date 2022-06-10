@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: troubleshooting
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、エラー メッセージと問題のトラブルシューティングに関するヘルプを参照してください。
-ms.openlocfilehash: dd0867611eb0a77b0e45cb5471fb5789dccf0a4d
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: 6508e3aca49bb2047d2f04a60c469d7b0888f765
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692676"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011906"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング
 
@@ -59,12 +60,12 @@ ms.locfileid: "65692676"
 
 **解像 度：** 次の表では、アクションを必要とするさまざまなテナントの状態と、それらを解決する方法について説明します。
 
-*お客様を Lighthouse にオンボードするには、委任された管理特権 (DAP) が必要です。 また、より安全な委任アクセスを有効にするために、お客様と一緒に詳細な委任された管理特権 (GDAP) を確立することをお勧めします。 DAP と GDAP は共存していますが、両方のモデルが配置されているお客様に対して GDAP が優先されます。 近いうちに、GDAP (DAP なし) を持つお客様は、Lighthouse にオンボードできるようになります。
+顧客を Lighthouse にオンボードするには、詳細な代理管理特権 (GDAP) と間接リセラー関係、または代理管理特権 (DAP) リレーションシップのいずれかが必要です。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。 近日、GDAP のみのリレーションシップ (間接リセラー関係なし) を持つお客様は、Lighthouse にオンボードできるようになります。<br><br>
 
 | 状態 | 説明 | 解決方法 |
 |--|--|--|
-| 非 アクティブ | テナントは MSP の要求でオフボードされ、ライトハウスで管理されなくなりました。 | テナントを再アクティブ化する必要があります。 [ **テナント** ] ページで、再アクティブ化するテナントの横にある 3 つのドット (その他のアクション) を選択し、[ **テナントのアクティブ化**] を選択します。 最初の顧客データが Lighthouse に表示されるまでに 24 ~ 48 時間かかる場合があります。 |
-| 不適格 - DAP または GDAP が設定されていません | テナントで設定された DAP または GDAP 管理者特権はありません。これは Lighthouse で必要です。 | Microsoft パートナー センターで DAP または GDAP 管理者特権を設定します。 |
+| 非アクティブ | テナントは MSP の要求でオフボードされ、ライトハウスで管理されなくなりました。 | テナントを再アクティブ化する必要があります。 [ **テナント** ] ページで、再アクティブ化するテナントの横にある 3 つのドット (その他のアクション) を選択し、[ **テナントのアクティブ化**] を選択します。 最初の顧客データが Lighthouse に表示されるまでに 24 ~ 48 時間かかる場合があります。 |
+| 不適格 - DAP または GDAP が設定されていません | テナントで設定された DAP または GDAP および間接リセラー管理特権はありません。これは Lighthouse で必要です。 | Microsoft パートナー センターで DAP または GDAP および間接リセラーの管理者特権を設定します。 |
 | 不適格 - 必要なライセンスがありません | テナントに必要なライセンスがありません。 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、またはMicrosoft Defender for Businessライセンスが必要です。 | テナントに少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、Windows 365 Business、またはMicrosoft Defender for Businessライセンスが割り当てられます。 |
 | 不適格 - ユーザー数が超過しました | テナントには、Lighthouse で許可されているライセンスユーザーの最大数が 1,000 人を超えています。 | テナントにライセンスを持つユーザーが 1000 人を超えていないことを確認します。 |
 | 不適格 - geo チェックに失敗しました | ユーザーと顧客は、Lighthouse で必要とされる同じ地理的リージョンに存在しません。 | 顧客が地理的リージョンに存在することを確認します。 そうでない場合は、Lighthouse でテナントを管理することはできません。 |
@@ -80,7 +81,7 @@ ms.locfileid: "65692676"
 
 **解像 度：** 適切なアクセス許可を持つパートナー テナントの管理者が、Azure AD の適切な GDAP セキュリティ グループに割り当てられ、パートナー センターで正しいロールが割り当てられていることを確認します。 また、Lighthouse の一部のアクションでは、グローバル管理者である必要があることに注意してください。GDAP ロールと各ロールで実行できる操作の詳細については、「[Microsoft 365 Lighthouseのアクセス許可の概要](m365-lighthouse-overview-of-permissions.md)」を参照してください。 GDAP のすべての Azure AD 組み込みロールとアクセス許可の詳細については、「 [Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)」を参照してください。
 
-DAP リレーションシップをお持ちのお客様の場合、パートナー管理者はパートナー センターの管理 エージェントまたはヘルプデスク エージェントロールに割り当てる必要があります。 すべてのパートナー センターの役割とアクセス許可の詳細については、「 [ユーザーにロールとアクセス許可を割り当てる」を](/partner-center/permissions-overview)参照してください。
+DAP リレーションシップを持つ顧客の場合、パートナー管理者は、パートナー センターの管理者エージェントまたはヘルプデスク エージェントロールにユーザーを割り当てる必要があります。 すべてのパートナー センターの役割とアクセス許可の詳細については、「 [ユーザーにロールとアクセス許可を割り当てる」を](/partner-center/permissions-overview)参照してください。
 
 ### <a name="i-dont-see-complete-data-in-certain-areas-of-lighthouse-or-i-cant-perform-certain-tasks-or-i-cant-access-certain-tenants"></a>Lighthouse の特定の領域に完全なデータが表示されない、または特定のタスクを実行できない、または特定のテナントにアクセスできない
 

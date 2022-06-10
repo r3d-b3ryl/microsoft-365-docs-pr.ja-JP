@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 431d2ae027e92c83d645a4b27ab515d17326c1b7
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 05d66c4c05289cefeea9478256a016def6561a52
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535804"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014566"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -51,14 +51,14 @@ Microsoft 365 グループと Microsoft Teams の使用が増えるにつれ、�
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシーを構成して使用Who。
 
-|ロール|可能な操作|
+|役割|可能な操作|
 |---------|---------|
 |Office 365 グローバル管理者 (Azure では会社の管理者)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシー設定を作成、読み取り、更新、または削除します。|
 |User|所有しているMicrosoft 365 グループを更新または[復元](/azure/active-directory/users-groups-roles/groups-restore-deleted)する|
 
 ## <a name="how-to-set-the-expiration-policy"></a>有効期限ポリシーを設定する方法
 
-前述のように、有効期限は既定でオフになっています。 管理者は、有効期限ポリシーを有効にして、有効にするプロパティを設定する必要があります。 有効にするには、**Azure Active Directory** >  **GroupsExpiration** >  に移動します。 ここでは、既定のグループの有効期間を設定し、1 番目と 2 番目の有効期限通知をグループ所有者に送信する期間を事前に指定できます。
+前述のように、有効期限は既定でオフになっています。 管理者は、有効期限ポリシーを有効にして、有効にするプロパティを設定する必要があります。 有効にするには、**Azure Active Directory** >  **Groups** > **の有効期限** に移動します。 ここでは、既定のグループの有効期間を設定し、1 番目と 2 番目の有効期限通知をグループ所有者に送信する期間を事前に指定できます。
 
 グループの有効期間は日数で指定され、180、365、または指定したカスタム値に設定できます。 カスタム値は 30 日以上である必要があります。
 
@@ -70,7 +70,7 @@ Microsoft 365 グループと Microsoft Teams の使用が増えるにつれ、�
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>有効期限が保持ポリシーとどのように連携するか
 
-セキュリティ と コンプライアンス センターでグループの保持ポリシーを設定している場合、有効期限ポリシーは保持ポリシーとシームレスに連携します。 グループの有効期限が切れると、グループ サイト内のグループのメールボックスの会話とファイルは、保持ポリシーで定義された特定の日数の間、保持コンテナに保持されます。 ただし、有効期限が切れると、ユーザーにはグループまたはそのコンテンツは表示されません。
+Microsoft Purview コンプライアンス ポータルでグループのアイテム保持ポリシーを設定した場合、有効期限ポリシーはアイテム保持ポリシーとシームレスに連携します。 グループの有効期限が切れると、グループ サイト内のグループのメールボックスの会話とファイルは、保持ポリシーで定義された特定の日数の間、保持コンテナに保持されます。 ただし、有効期限が切れると、ユーザーにはグループまたはそのコンテンツは表示されません。
 
 ## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>グループの所有者が、グループの有効期限が切れるかどうかを知る方法と時間
 

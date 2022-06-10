@@ -1,5 +1,5 @@
 ---
-title: コンプライアンス マネージャー用の Microsoft コンプライアンス構成アナライザー
+title: Microsoft Compliance Configuration Analyzer for Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,42 +16,44 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft コンプライアンス構成アナライザーを使用して、Microsoft コンプライアンス マネージャーを使用して迅速に立ち上げ、実行する方法について説明します。
-ms.openlocfilehash: a679f0483431313672ac0dfa1101eb9909b6c060
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+description: Microsoft Purview Compliance Manager を使用して、Microsoft Compliance Configuration Analyzer を使用して迅速に起動して実行する方法について説明します。
+ms.openlocfilehash: a973412c2d40993b47343273675cee3922b57cdf
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525155"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012816"
 ---
-# <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>コンプライアンス マネージャー用 Microsoft コンプライアンス構成アナライザー (プレビュー)
+# <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer for Compliance Manager (プレビュー)
 
-**この記事では、次の情報を参照してください。** Microsoft コンプライアンス構成アナライザー ツールをインストールして実行して、Microsoft コンプライアンス 管理プログラムをすぐに開始する方法について説明します。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Microsoft コンプライアンス構成アナライザー (MCCA) (プレビュー) の概要
+**この記事では、次の操作を行います。** Microsoft Compliance Configure Analyzer ツールをインストールして実行し、Microsoft Compliance Manger の概要を確認する方法について説明します。
 
-Microsoft コンプライアンス構成アナライザー (MCCA) は、Microsoft コンプライアンス マネージャーの開始に役立つプレビュー [ツールです](compliance-manager.md)。 MCCA は PowerShell ベースのユーティリティで、組織の現在の構成をフェッチし、推奨されるベスト プラクティスにMicrosoft 365検証します。 これらのベスト プラクティスは、データ保護とデータ ガバナンスの主要な規制と標準を含む一連のコントロールに基づいて行います。
+## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Microsoft Compliance Configuration Analyzer (MCCA) (プレビュー) の概要
 
-MCCA を使用すると、コンプライアンス マネージャーの改善アクションが現在の環境に適用Microsoft 365できます。 MCCA によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始する適切なソリューションを含む、実装に関する推奨事項が示されます。
+Microsoft Compliance Configuration Analyzer (MCCA) は、 [Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)の使用を開始するのに役立つプレビュー ツールです。 MCCA は、組織の現在の構成をフェッチし、推奨されるベスト プラクティスに照らして検証Microsoft 365 PowerShell ベースのユーティリティです。 これらのベスト プラクティスは、データ保護とデータ ガバナンスに関する主要な規制と標準を含む一連の制御に基づいています。
 
-MCCA を理解するもう 1 つのリソースは、MCCA の [README](https://github.com/OfficeDev/MCCA#overview) の手順にアクセスGitHub。 このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHubアカウントは必要ない。
+MCCA を使用すると、コンプライアンス マネージャーのどの改善アクションが現在のMicrosoft 365環境に適用されているかをすばやく確認できます。 MCCA によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始するための該当するソリューションを含む、実装に関する推奨事項が提供されます。
 
-**可用性**: MCCA は、Office 365 および Microsoft 365 ライセンスと米国政府機関 Community (GCC) モデレート、GCC 高、および国防総省 (DoD) のお客様のすべての組織で利用できます。
+MCCA を理解するための追加のリソースは、[GitHubに関する README の手順にアクセスすることです](https://github.com/OfficeDev/MCCA#overview)。 このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHub アカウントは必要ありません。
+
+**可用性**: MCCA は、Office 365およびMicrosoft 365ライセンスと米国政府Community (GCC) Moderate、GCC High、および国防総省 (DoD) のお客様のすべての組織で利用できます。
 
 ## <a name="install-mcca-and-run-a-report"></a>MCCA をインストールしてレポートを実行する
 
-MCCA ツールは、次の手順を使用Windows PowerShell。 ツールをダウンロードしてインストールしたら、レポートを実行するためにこれらの手順を繰り返す必要がなされません。 MCCA を開くごとに、ログイン資格情報を求め、新しい更新されたレポートが生成されます。
+Windows PowerShellを使用して MCCA ツールをインストールできます。 ツールをダウンロードしてインストールしたら、レポートを実行するためにこれらの手順を繰り返す必要はありません。 MCCA を開くたびに、ログイン資格情報の入力が求められ、更新された新しいレポートが生成されます。
 
-### <a name="step-1-install-windows-powershell"></a>手順 1: インストールWindows PowerShell
+### <a name="step-1-install-the-exchange-online-powershell-v2-module"></a>手順 1: Exchange Online PowerShell V2 モジュールをインストールする
 
-まず、PowerShell ギャラリーで使用Exchange Online PowerShell モジュール (v2.0.3 以上) が必要です。 [インストール手順を取得します](https://www.powershellgallery.com/packages/ExchangeOnlineManagement/2.0.3)。
+まず、PowerShell ギャラリーで使用できる Exchange Online PowerShell モジュール (v2.0.3 以降) が必要です。 インストール手順については、「 [EXO V2 モジュールのインストールと保守](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)」を参照してください。
 
 ### <a name="step-2-install-mcca"></a>手順 2: MCCA をインストールする
 
-MCCA をインストールするには、まず管理者モードで PowerShell を使用します。 以下の手順に従います。
+MCCA をインストールするには、まず PowerShell を管理者モードで使用します。 次の手順に従います。
 
-1. [スタート] ボタンWindows **選択** します。
-1. 「**PowerShell」と** 入力し、[**管理者として実行** Windows PowerShellを選択 **します**。
+1. [Windows **開始] ボタンを** 選択します。
+1. **PowerShell** と入力し、**Windows PowerShell** を右クリックし、[**管理者として実行**] を選択します。
 1. コマンド プロンプトに次のコマンドを入力します。
 
     ```powershell
@@ -60,7 +62,7 @@ MCCA をインストールするには、まず管理者モードで PowerShell 
 
 ### <a name="step-3-run-a-report"></a>手順 3: レポートを実行する
 
-MCCA をインストールした後、MCCA を実行してレポートを生成できます。 レポートを実行するには、次のコマンドを実行します。
+MCCA をインストールした後、MCCA を実行してレポートを生成できます。 レポートを実行するには:
 
 1. PowerShell を開く
 2. 次のコマンドレットを実行します。
@@ -69,39 +71,40 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
     Get-MCCAReport
     ```
 
-    高い顧客の場合GCCレポートを実行するには、追加の入力パラメーターを指定する必要があります。
+    高顧客GCC場合は、レポートを実行するために追加の入力パラメーターを指定する必要があります。
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
     ```
 
-3. MCCA を実行すると、初期バージョン チェックが実行され、資格情報が要求されます。 [ユーザー名の入力] プロンプトで、Microsoft 365 アカウントの電子メール アドレスでサインインします (レポートの作成に適格な役割[を表示します](#role-based-reporting))。 次に、パスワード プロンプトでパスワードを入力します。
+3. MCCA が実行されると、初期バージョンチェックが実行され、資格情報が要求されます。 [ユーザー名の入力] プロンプトで、Microsoft 365 アカウントのメール アドレスでサインインします ([レポートの作成に適したロールを表示します](#role-based-reporting))。 次に、パスワード プロンプトでパスワードを入力します。
 
-その後、レポートの生成に約 2 ~ 5 分かかります。 完了すると、ブラウザー ウィンドウが開き、HTML レポートが表示されます。 ツールを実行する度に、資格情報を要求し、新しいレポートを生成します。 このレポートは、ディレクトリ C: \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA にローカルに格納されます。
+レポートの生成には約 2 ~ 5 分かかります。 完了すると、ブラウザー ウィンドウが開き、HTML レポートが表示されます。 ツールを実行するたびに、資格情報が要求され、新しいレポートが生成されます。 このレポートは、ディレクトリ C: \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA にローカルに格納されます。
 
-このディレクトリから、以前に生成されたレポートにアクセスできます。
+このディレクトリから以前に生成されたレポートにアクセスできます。
 
 ## <a name="understanding-your-report"></a>レポートについて
 
-レポートには、生成された日時に基づくデータが反映されます。 上部のセクションでは、生成された時間、組織名、テナント ID の詳細を示します。
+レポートには、レポートが生成された日時に基づいてデータが反映されます。 上部のセクションでは、生成された日時、組織名、テナント ID について詳しく説明します。
 
-#### <a name="geolocation-based-reporting"></a>位置情報ベースのレポート
+### <a name="geolocation-based-reporting"></a>位置情報ベースのレポート
 
-[ **メモ]** セクションでは、テナントの地理的な場所に基づいてレポートがカスタマイズされます。 ツールに記載されている推奨事項は、お客様の国または地域に固有の情報です。
+**[メモ]** セクションでは、テナントの地理的な場所に基づいてレポートがカスタマイズされていることを示します。 ツールに一覧表示されるおすすめは、お使いの国または地域に固有です。
 
-地理位置情報の選択は、その位置情報に関連する機密情報の種類 (SIT) を評価し、国または地域に合ったレポートを生成するために使用されます。 テナント内のデータに基づいて地理位置情報を選択します。
+位置情報の選択は、その位置情報に関連する機密情報の種類 (SIT) を評価し、お客様の国または地域に合ったレポートを生成するために使用されます。 テナント内のデータに基づいて位置情報を選択します。
 
-レポートの位置情報を変更するには、位置情報 (-Geo) 入力パラメーターを指定する必要があります。 テナントに適用可能な 1 つ以上の地理的位置を選択できます。
+レポートの位置情報を変更するには、地理位置情報 (-Geo) 入力パラメーターを指定する必要があります。 テナントに適用できる 1 つまたは複数の位置情報を選択できます。
 
 特定の場所に基づいてレポートを実行するには、次の手順に従います。
 
 1. PowerShell を開く
-2. 特定の地域を指定するには、国または地域に対応する下の表の番号を使用してコマンドレットを実行します。 複数の数値をコンマで区切って入力します。 たとえば、次のコマンドレットは、ユーザーと日本のユーザー向けAsia-Pacific実行します。
+2. 特定のリージョンを指定するには、国または地域に対応する次の表の番号を使用してコマンドレットを実行します。 コンマで区切って複数の数値を入力します。 たとえば、次のコマンドレットは、Asia-Pacificと日本のカスタマイズされたレポートを実行します。
 
     ```powershell
     Get-MCCAReport -Geo @(1,7)
     ```
-  | Input |  国または地域 | 
+
+  | Input |  国または地域 |
   | :------------- | :------------: |
   | 1 | アジア太平洋 |
   | 2 | オーストラリア |
@@ -111,62 +114,62 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
   | 6  | インド |
   | 7  | 日本 |
   | 8  | 韓国 |
-  | 9  | 北アメリカ (カナダを除く) |
+  | 9  | 北米 (カナダを除く) |
   | 10 | 南アメリカ |
   | 11 | 南アフリカ |
   | 12  | スイス |
   | 13 | アラブ首長国連邦 |
-  | 14  | 英国 |
+  | 14 | 英国 |
 
+  > [!NOTE]
+  > レポートには、SWIFT コード、クレジット カード番号などの MCCA でサポートされている国際機密情報の種類が常に含まれます。
 
- > [!NOTE]
-> このレポートには、SWIFT コード、クレジット カード番号など、MCCA でサポートされる国際的な機密情報の種類が常に含まれます。
+### <a name="role-based-reporting"></a>ロールベースのレポート
 
-#### <a name="role-based-reporting"></a>役割ベースのレポート
+また、レポートはロールに基づいてカスタマイズされます。
 
-また、レポートは役割に基づいてカスタマイズされます。
+次の表に、レポートのどのセクションにアクセスできるロールを示します。 組織内の他のロール (以下の表に示されていません) は、ツールを実行できない場合や、ツールを実行し、最終レポートの情報へのアクセスが制限されている可能性があります。
 
-次の表に、レポートのセクションにアクセスできる役割を示します。 組織内の他の役割 (下の表に記載されていない) は、ツールを実行できないか、ツールを実行し、最終レポートの情報へのアクセスが制限されている可能性があります。
-
-![MCCA - 役割。](../media/compliance-manager-mcca-roles.png "MCCA の役割")
+![MCCA - ロール。](../media/compliance-manager-mcca-roles.png "MCCA ロール")
 
 例外:
-1. [IRM を使用する] セクション以外の IP のレポートを生成Exchange Onlineされます。
-2. ユーザーは、[IP の IRM を使用する] セクションとは別に、IP のExchange Onlineできます。
-3. ユーザーは、[O365 で通信コンプライアンスを有効にする] セクションとは別に、IP のレポートを生成できます。
-4. [監査を有効にする] セクション以外の IP のレポートを生成Office 365されます。
-5. ユーザーは、[監査を有効にする] セクション以外の IP のOffice 365できます。
 
-#### <a name="solutions-summary-section"></a>[ソリューションの概要] セクション
+1. ユーザーは、"Exchange Onlineに IRM を使用する" セクションとは別に、IP のレポートを生成できません。
+2. ユーザーは、"Exchange Onlineに IRM を使用する" セクションとは別に、IP のレポートを生成できます。
+3. ユーザーは、"O365 で通信コンプライアンスを有効にする" セクションとは別に、IP のレポートを生成できます。
+4. ユーザーは、"Office 365で監査を有効にする" セクションとは別に、IP のレポートを生成できません。
+5. ユーザーは、「Office 365で監査を有効にする」セクションとは別に、IP のレポートを生成できます。
 
-レポート **の [ソリューションの** 概要] セクションには、コンプライアンス 体制の向上に役立つコンプライアンス マネージャーで組織が実行できる改善アクションの概要が示されています。
+### <a name="solutions-summary-section"></a>[ソリューションの概要] セクション
+
+レポートの **[ソリューションの概要** ] セクションには、コンプライアンス体制を改善するために組織がコンプライアンス マネージャーで実行できる改善アクションの概要が示されています。
 
 ![MCCA - ソリューションの概要。](../media/compliance-manager-mcca-solutions.png "MCCA ソリューションの概要画面")
 
-MCCA は、コンプライアンス マネージャーで推奨される改善アクションに対して現在の構成を評価します。 MCCA ツールで注意が必要と識別される改善アクションは、このセクションに一覧表示されます。
+MCCA は、コンプライアンス マネージャーで推奨される改善アクションに対して現在の構成を評価します。 このセクションでは、MCCA ツールによって注意が必要であると識別されたすべての改善アクションを一覧表示します。
 
-各 Microsoft ソリューションの横には、コンプライアンス マネージャーの改善アクションに対応するアイテムの数を示す色分けされたボックスがあります。 アクションは、次の 3 つの状態に分割されます。
+各 Microsoft ソリューションの横には、コンプライアンス マネージャーの改善アクションに対応する項目の数を示す色分けされたボックスがあります。 アクションは、次の 3 つの状態に分割されます。
 
-- **OK**: 推奨される条件を満たすアクションで、現時点では注意が必要ない
+- **OK**: 推奨される条件を満たし、現時点で注意を必要としないアクション
 - **改善**: 注意が必要なアクション
-- **推奨事項**: 注意を必要としませんが、ベスト プラクティスを推奨するアクション
- 
-ボックスを選択して、改善点と推奨事項を表示します。
+- **推奨事項**: 注意は必要ないが、ベスト プラクティスをお勧めするアクション
 
-**[改善] 状態のアイテム**
+改善点と推奨事項を表示するボックスを選択します。
 
-改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、コンプライアンス マネージャーの該当するソリューションMicrosoft 365 コンプライアンス センター関連ドキュメントが含まれます。
+#### <a name="items-with-the-improvement-status"></a>改善状態のアイテム
 
-[コンプライアンス マネージャー] リンクをクリックすると、まだ実装していないソリューション内のすべての改善アクションのフィルタービューが表示されます。 そこから、コンプライアンス スコアを上げ、適用する評価、および該当する規制[](compliance-score-calculation.md)と認定を得る目的で達成できるポイントの数を確認できます。
+改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、Microsoft Purview コンプライアンス ポータルの該当するソリューション、および関連ドキュメントが含まれています。
 
-DLP の場合、推奨される情報に基づいて事前に生成された PowerShell スクリプトを提供する [修復スクリプト] ボタンがあります。 PowerShell コンソールにコピーして直接貼り付けます。 テスト モードで DLP ポリシーを作成します
+コンプライアンス マネージャーのリンクをクリックすると、まだ実装していないソリューション内のすべての改善アクションのフィルター処理されたビューが表示されます。 そこから、 [コンプライアンス スコア](compliance-score-calculation.md)を向上させるために達成できるポイントの数と、それらが適用される評価、および適用される規制と認定を確認できます。
 
-**推奨事項の状態を持つアイテム**
+DLP の場合、推奨される内容に基づいて事前に生成された PowerShell スクリプトを提供する **[修復** スクリプト] ボタンがあります。 コピーして PowerShell コンソールに直接貼り付けることができます。 テスト モードで DLP ポリシーが作成されます
 
-改善アクションの右側にある **[おすすめ** ] ラベルの横にあるドロップダウンを選択します。 改善アクションに関連する組織の現在のMicrosoft 365の概要と、推奨されるベスト プラクティスが表示されます。
+#### <a name="items-with-recommendation-status"></a>推奨事項の状態を持つアイテム
 
-## <a name="resources"></a>リソース
+改善アクションの右側にある **[推奨事項** ] ラベルの横にあるドロップダウンを選択します。 改善アクションに関連する組織の現在のMicrosoft 365環境の概要と、推奨されるベスト プラクティスが表示されます。
 
-MCCA のインストール、セットアップ、および使用の詳細については、「GitHub」の [README](https://github.com/OfficeDev/MCCA#overview) GitHub参照してください。
+## <a name="resources"></a>関連情報
 
-詳細については、「[PowerShell Windows PowerShellを使用する」を参照してください](/powershell/scripting/how-to-use-docs)。 「[Starting Windows PowerShell」も参照してください](/powershell/scripting/windows-powershell/starting-windows-powershell)。
+MCCA のインストール、セットアップ、および使用の詳細については、[GitHubに関する README の手順](https://github.com/OfficeDev/MCCA#overview)を参照してください (GitHub アカウントは必要ありません)。
+
+Windows PowerShellの詳細については、[PowerShell のドキュメントの使用方法](/powershell/scripting/how-to-use-docs)を参照してください。 [Windows PowerShellの開始](/powershell/scripting/windows-powershell/starting-windows-powershell)も参照してください。

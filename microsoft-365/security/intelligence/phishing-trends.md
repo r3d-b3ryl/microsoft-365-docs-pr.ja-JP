@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: c56478f4dbe496f7e2080e9c73d6466df0e2c5d7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 7bfad3fdad392c2ea0795d24e21d6f8c2848f70b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666748"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016078"
 ---
 # <a name="phishing-trends-and-techniques"></a>フィッシングの傾向と手法
 
@@ -68,7 +68,7 @@ Whaling は、特定の企業内の高レベルまたは上級幹部に対して
 
 ## <a name="more-information-about-phishing-attacks"></a>フィッシング攻撃の詳細
 
-最新のフィッシング攻撃、手法、傾向については、 [Microsoft Security ブログ](https://www.microsoft.com/security/blog/product/windows/)で次のエントリを参照してください。
+最新のフィッシング攻撃、手法、傾向については、 [Microsoft Security ブログ](https://www.microsoft.com/security/blog/)で次のエントリを参照してください。
 
 - [フィッシング詐欺者は、PDF 添付ファイルを使用してシンプルで効果的なソーシャル エンジニアリング手法を解き放ちます](https://cloudblogs.microsoft.com/microsoftsecure/2017/01/26/phishers-unleash-simple-but-effective-social-engineering-techniques-using-pdf-attachments/?source=mmpc)
 - [税金をテーマにしたフィッシングとマルウェア攻撃は、税務ファイリングシーズン中に急増する](https://cloudblogs.microsoft.com/microsoftsecure/2017/03/20/tax-themed-phishing-and-malware-attacks-proliferate-during-the-tax-filing-season/?source=mmpc)

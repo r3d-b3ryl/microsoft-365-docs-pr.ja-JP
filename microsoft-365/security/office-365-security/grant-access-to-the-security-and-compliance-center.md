@@ -20,16 +20,16 @@ description: ユーザーは、Microsoft 365 セキュリティ & コンプラ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5bf2f6f99af13de0858b041807f01e25e3516da8
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4e0ca3874f03d9f0c386a84c9e8b56ea58bbfe72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130760"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018010"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>ユーザーにセキュリティ/コンプライアンス センターへのアクセス権を付与する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -56,15 +56,15 @@ ms.locfileid: "65130760"
 
 2. 役割グループの一覧から役割グループを選択し、[ **編集]** ![アイコンをクリックします](../../media/O365-MDM-CreatePolicy-EditIcon.gif)。
 
-3. [ **メンバー**] の [役割グループのプロパティ] ページで、[ **追加アイコン]**![ をクリックします。](../../media/ITPro-EAC-AddIcon.gif) をクリックし、追加するユーザー (またはユーザー) の名前を選択します。
+3. [ **メンバー**] の [役割グループのプロパティ] ページで、[ **追加**![アイコン] をクリックします。](../../media/ITPro-EAC-AddIcon.gif) をクリックし、追加するユーザー (またはユーザー) の名前を選択します。
 
 4. 役割グループに追加するすべてのユーザーを選択したら、[ **追加\>** ] をクリックし、[ **OK] をクリックします**。
 
 5. 完了したら、**[保存]** をクリックします。
 
-## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>セキュリティ & コンプライアンス センター PowerShell を使用して、別のユーザーにセキュリティ & コンプライアンス センターへのアクセス権を付与する
+## <a name="use-security--compliance-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>セキュリティ & コンプライアンス PowerShell を使用して、別のユーザーにセキュリティ & コンプライアンス センターへのアクセス権を付与する
 
-1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ & コンプライアンス PowerShell にConnect](/powershell/exchange/connect-to-scc-powershell)します。
 
 2. 次の構文を使用してください。
 
@@ -88,7 +88,7 @@ ms.locfileid: "65130760"
 
 - セキュリティ & コンプライアンス センターで、[ **アクセス許可]** に移動し、役割グループを選択します。 開いた詳細ポップアップで、役割グループのメンバーを確認します。
 
-- Security & Compliance Center PowerShell で、役割グループの名前に置き換えて \<RoleGroupName\> 、次のコマンドを実行します。
+- セキュリティ & コンプライアンス PowerShell で、役割グループの名前に置き換えて \<RoleGroupName\> 、次のコマンドを実行します。
 
   ```powershell
   Get-RoleGroupMember -Identity "<RoleGroupName>"

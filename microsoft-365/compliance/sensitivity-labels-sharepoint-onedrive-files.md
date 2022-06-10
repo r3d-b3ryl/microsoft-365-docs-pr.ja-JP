@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePointおよびOneDriveで Word、Excel、PowerPoint ファイルの秘密度ラベルのサポートを有効にすることができます。
-ms.openlocfilehash: ee24663fd5fe1de1bdce8b2d210174a05f156394
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 9130558bb7ae1af86981e1c052a17565f6d943af
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621363"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014258"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -32,7 +32,7 @@ ms.locfileid: "65621363"
 
 ユーザーがOffice for the webで[秘密度](sensitivity-labels.md)ラベルを適用できるように、SharePointおよびOneDriveで[サポートされているOffice ファイル](sensitivity-labels-office-apps.md#office-file-types-supported)の組み込みのラベル付けを有効にします。 この機能が有効になっていると、ユーザーはリボンの **[秘密度** ] ボタンを表示してラベルを適用し、適用されたラベル名をステータス バーに表示します。
 
-また、この機能を有効にすると、秘密度ラベルを使用して暗号化されたOffice ファイルの内容を処理できるSharePointとOneDriveが発生します。 ラベルは、Office for the web、またはデスクトップ アプリOfficeで適用し、SharePointとOneDriveにアップロードまたは保存できます。 この機能を有効にするまで、これらのサービスは暗号化されたファイルを処理できません。つまり、共同編集、電子情報開示、Microsoft Purviewデータ損失防止、検索、およびその他の共同作業機能は、これらのファイルでは機能しません。
+また、この機能を有効にすると、秘密度ラベルを使用して暗号化されたOffice ファイルの内容を処理できるSharePointとOneDriveが発生します。 ラベルは、Office for the web、またはデスクトップ アプリOfficeで適用し、SharePointとOneDriveにアップロードまたは保存できます。 この機能を有効にするまで、これらのサービスは暗号化されたファイルを処理できません。つまり、共同編集、電子情報開示、Microsoft Purview データ損失防止、検索、およびその他の共同作業機能は、これらのファイルでは機能しません。
 
 SharePointおよびOneDriveのOffice ファイルの秘密度ラベルを有効にした後、クラウドベースのキーを使用して暗号化を適用する秘密度ラベルを持つ新しいファイルと変更されたファイルに対して 、[二重キー暗号化](double-key-encryption.md)を使用しません。
 
@@ -81,7 +81,7 @@ Windowsでは OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降�
 
 - SharePointとOneDriveでは、Azure Information Protection ラベルを使用して既に暗号化した既存のファイルに秘密度ラベルが自動的に適用されることはありません。 代わりに、SharePointおよびOneDriveでOffice ファイルの秘密度ラベルを有効にした後で機能を機能させるには、次のタスクを実行します。
 
-    1. [Azure Information Protection ラベルを](/azure/information-protection/configure-policy-migrate-labels)秘密度ラベルに移行し、Microsoft Purview コンプライアンス ポータルから[発行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)していることを確認します。
+    1. [Azure Information Protection ラベルを](/azure/information-protection/configure-policy-migrate-labels)秘密度ラベルに移行し、Microsoft Purview コンプライアンス ポータルから[発行](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy)したことを確認します。
     2. ラベル付けされたファイルをダウンロードし、SharePointまたはOneDriveの元の場所にアップロードします。
 
 - SharePointとOneDriveは、暗号化を適用したラベルに暗号化用の次のいずれかの構成がある場合、[暗号化](encryption-sensitivity-labels.md#configure-encryption-settings)されたファイルを処理できません。
@@ -96,7 +96,7 @@ Windowsでは OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降�
 - ドキュメントが [SharePointでチェックアウト](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de)されている間にラベルが付けられている場合、ドキュメントがチェックインされて次にSharePointで開かれるまで、ドキュメント ライブラリの **[秘密度**] 列にはラベル名は表示されません。
 
 - ラベル付けされた暗号化されたドキュメントが、サービス プリンシパル名を使用するアプリまたはサービスによってSharePointまたはOneDriveからダウンロードされ、異なる暗号化設定を適用するラベルを使用して再度アップロードされた場合、アップロードは失敗します。 シナリオの例として、ファイルの秘密度ラベルを **機密から高機密** に、または **機密** から **一般** に **変更するMicrosoft Defender for Cloud Apps** があります。
-    
+
     [ラベル付きドキュメントの暗号化の削除](#remove-encryption-for-a-labeled-document)セクションで説明されているように、アプリまたはサービスが [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを最初に実行した場合、アップロードは失敗しません。 または、アップロード前に元のファイルが削除されるか、ファイル名が変更されます。
 
 - ユーザーは、次の [名前を付けて保存] シナリオで暗号化されたドキュメントを開く際に遅延が発生する可能性があります。デスクトップ バージョンのOfficeを使用すると、暗号化を適用する秘密度ラベルを持つドキュメントに対して [名前を付けて保存] を選択します。 ユーザーは場所のSharePointまたはOneDriveを選択し、すぐにOffice for the webでそのドキュメントを開こうとします。 サービスが暗号化をまだ処理している場合は、デスクトップ アプリでドキュメントを開く必要があるというメッセージがユーザーに表示されます。 数分後にもう一度やり直すと、Office for the webでドキュメントが正常に開きます。
@@ -106,7 +106,7 @@ Windowsでは OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降�
 - Office for the webで暗号化されたドキュメントの場合、クリップボードと画面キャプチャへのコピーは防止されません。 詳細については、「[画面キャプチャRights Management防止できますか?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - 既定では、Office デスクトップ アプリとモバイル アプリは、暗号化でラベル付けされたファイルの共同編集をサポートしていません。 これらのアプリは、ラベル付けされた暗号化されたファイルを排他的編集モードで引き続き開きます。
-    
+
     > [!NOTE]
     > WindowsとmacOSの共同編集がサポートされるようになりました。 詳細については、「 [秘密度ラベルで暗号化されたファイルの共同編集を有効にする](sensitivity-labels-coauthoring.md)」を参照してください。
 
@@ -119,7 +119,7 @@ Windowsでは OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降�
   - [ダブル キー](double-key-encryption.md)暗号化を使用して適用された暗号化
   - たとえば、Rights Management保護テンプレートを直接適用することで、ラベルとは別に適用された暗号化。
 
-- [他の言語](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell)用に構成されたラベルはサポートされておらず、元の言語のみが表示されます。
+- [他の言語](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)用に構成されたラベルはサポートされておらず、元の言語のみが表示されます。
 
 - 該当するラベル ポリシーからラベルを削除するのではなく、SharePointまたはOneDriveのドキュメントに適用されているラベルを削除した場合、ダウンロードしたドキュメントにはラベル付けまたは暗号化されません。 これに対して、ラベル付けされたドキュメントがSharePointまたはOneDriveの外部に保存されている場合、ラベルが削除された場合、ドキュメントは暗号化されたままになります。 テスト フェーズ中にラベルを削除する可能性がありますが、運用環境でラベルを削除することは非常にまれであることに注意してください。
 
@@ -127,11 +127,11 @@ Windowsでは OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降�
 
 新しい機能を有効にするには、Microsoft Purview コンプライアンス ポータルを使用するか、PowerShell を使用します。 SharePointとOneDriveのすべてのテナント レベルの構成変更と同様に、変更が有効になるまでに約 15 分かかります。
 
-### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>Microsoft Purview コンプライアンス ポータルを使用して秘密度ラベルのサポートを有効にする
+### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>Microsoft Purview コンプライアンス ポータルを使用して機密ラベルのサポートを有効にする
 
 このオプションは、SharePointとOneDriveの秘密度ラベルを有効にする最も簡単な方法ですが、テナントのグローバル管理者としてサインインする必要があります。
 
-1. グローバル管理者として [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)にサインインし、**SolutionsInformation** >  **protectionLabels** >  に移動します。
+1. グローバル管理者として [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)にサインインし、**ソリューション** > **情報保護** > **ラベル** に移動します
 
 2. オンライン ファイルでコンテンツを処理する機能を有効にするメッセージが表示Office場合は、[**今すぐ有効にする**] を選択します。
 
@@ -228,7 +228,7 @@ InformationProtectionLabelId:8faca7b8-8d20-48a3-8ea2-0f96310a848e
 
 秘密度ラベルの GUID を取得するには、 [Get-Label](/powershell/module/exchange/get-label) コマンドレットを使用します。
 
-1. まず、[Office 365 セキュリティ/コンプライアンス センター PowerShell へ接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. まず、[Office 365 セキュリティ&コンプライアンス PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
     たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
 

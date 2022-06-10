@@ -17,12 +17,12 @@ ms.assetid: 2e5fbe9f-ee4d-4178-8ff8-4356bc1b168e
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルで電子情報開示ケースを使用して、組織の法的調査を管理します。
-ms.openlocfilehash: 464996eb160eff520582e82ab87b74b4472f7a5d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f75d59e58ae51e5cb525044edb775c87b52686d1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077877"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010068"
 ---
 # <a name="manage-legal-investigations-in-microsoft-365"></a>Microsoft 365 で法的調査を管理する
 
@@ -46,7 +46,7 @@ ms.locfileid: "65077877"
 
 ### <a name="use-scripts-for-advanced-scenarios"></a>高度なシナリオにスクリプトを使用する
 
-コンテンツ検索シナリオのスクリプトを示した前のセクションと同様に、電子情報開示ケースの管理に役立つセキュリティ & コンプライアンス センター PowerShell スクリプトも作成しました。
+コンテンツ検索シナリオのスクリプトを示した前のセクションと同様に、電子情報開示ケースの管理に役立つセキュリティ &コンプライアンス PowerShell スクリプトも作成しました。
   
 - 組織内[の電子情報開示](create-a-report-on-holds-in-ediscovery-cases.md)ケースに関連付けられているすべての保留に関する情報を含む電子情報開示保留レポートを作成します。
 

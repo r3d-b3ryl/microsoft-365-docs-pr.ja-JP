@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: この記事には、リーン ポップアウトを使用して、Outlook on the webでのメッセージダウンロードのパフォーマンスを向上させるための情報が含まれています。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 40494b43438a491fc200fd19e3015eed58b17493
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9636fd3beafd169358c4b50cafdc4ac0f9494994
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096284"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012684"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>リーン ポップアウトを使用して、メール メッセージの読み取り時に使用されるメモリを減らす
 
@@ -29,7 +29,7 @@ ms.locfileid: "65096284"
 **Office 365アプリケーション管理者**、**グローバル管理者**、または **ユーザー管理者** は、Microsoft Edgeまたは Internet Explorer で _、無駄のないポップアップ_ を配信するようにOutlook on the webを構成できます。 Outlook on the web用にリーン ポップアウトを構成すると、サーバー側のレンダリングされたコンポーネントが読み込まれ、パフォーマンスが最適化されます。
   
 > [!NOTE]
-> 2018 年 3 月の時点では、Information Rights Management (IRM) などの使用権限の制限を指定するメッセージでは、リーン ポップアウトを使用できません。
+> 2018 年 3 月の時点では、情報Rights Management (IRM) などの使用権限の制限を指定するメッセージでは、リーン ポップアウトを使用できません。
   
 これらの機能は引き続きメイン ウィンドウで機能しますが、リーン ポップアウトでは使用できません。
   
@@ -39,7 +39,7 @@ ms.locfileid: "65096284"
   
 ## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>Office 365組織内のすべてのユーザーに対してリーン ポップアップを構成するには
   
-1. [リモート PowerShell を使用してExchange OnlineするConnect](/powershell/exchange/connect-to-exchange-online-powershell)。
+1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
   
 2. 次のように、LeanPopoutEnabled パラメーターを使用して [Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) コマンドレットを実行します。
 

@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: PowerShell を使用して、Microsoft 365への一括移行を実行して、ソース電子メール システムからコンテンツを一度に移動する方法について説明します。
-ms.openlocfilehash: ede2dfc25897012c5cb7e5469abea49e6db4292e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078693"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008399"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Microsoft 365 への一括移行に PowerShell を使用する
 
@@ -41,7 +41,7 @@ ms.locfileid: "65078693"
 
 この手順を実行する際には、あらかじめアクセス許可を割り当てる必要があります。必要なアクセス許可を確認するには、トピック「[受信者のアクセス許可](/exchange/recipients-permissions-exchange-2013-help)」内の表にある「移行」エントリを参照してください。
 
-Exchange Online PowerShell コマンドレットを使用するには、サインインしてコマンドレットをローカルの Windows PowerShell セッションにインポートする必要があります。手順については、「[リモート PowerShell による Exchange への接続](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+Exchange Online PowerShell コマンドレットを使用するには、サインインしてコマンドレットをローカルの Windows PowerShell セッションにインポートする必要があります。 手順については、[PowerShell をExchange OnlineするConnect](/powershell/exchange/connect-to-exchange-online-powershell)を参照してください。
 
 移行コマンドの完全な一覧については、「[移動と移行のコマンドレット](/powershell/exchange/)」を参照してください。
 

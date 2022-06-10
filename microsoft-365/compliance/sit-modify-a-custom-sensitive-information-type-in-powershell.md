@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用してカスタム機密情報の種類を変更する
+title: PowerShell を使用してカスタムの機密情報の種類を変更する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,17 +14,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: PowerShell を使用してカスタム機密情報を変更する方法について説明します。
-ms.openlocfilehash: 2f1bc44dca9ec4a938c8cd3d4158163f9d5e2e2f
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: PowerShell を使用してカスタムの機密情報を変更する方法について説明します。
+ms.openlocfilehash: deb50679702cec69187392337511b4dde2d1ceb3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900736"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014390"
 ---
-# <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタム機密情報の種類を変更する
+# <a name="modify-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を変更する
 
-コンプライアンス センターの PowerShell でカスタムの機密情報の種類を変更するには、次のようにする必要があります。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Security & Compliance PowerShell では、カスタムの機密情報の種類を変更するには、次のことを行う必要があります。
 
 1. カスタムの機密情報の種類が含まれている既存のルール パッケージを XML ファイル (または、ある場合は既存の XML ファイル) にエクスポートします。
 
@@ -32,9 +34,9 @@ ms.locfileid: "62900736"
 
 3. 更新した XML ファイルを既存のルール パッケージにインポートします。
 
-コンプライアンス センターの PowerShell に接続するには、「[コンプライアンス センター PowerShell に接続する](/powershell/exchange/exchange-online-powershell)」を参照してください。
+セキュリティ & コンプライアンス PowerShell に接続するには、「 [セキュリティ &コンプライアンス PowerShell](/powershell/exchange/exchange-online-powershell)」を参照してください。
 
-### <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>手順 1: 既存のルール パッケージを XML ファイルにエクスポートします
+## <a name="step-1-export-the-existing-rule-package-to-an-xml-file"></a>手順 1: 既存のルール パッケージを XML ファイルにエクスポートします
 
 > [!NOTE]
 > XML ファイルのコピーがある場合 (たとえば、先ほど作成してインポートした場合)、次の手順に進んで、XML ファイルを変更することができます。
@@ -66,17 +68,17 @@ ms.locfileid: "62900736"
    [System.IO.File]::WriteAllBytes('XMLFileAndPath', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-   次の使用例は、C:\My Documents フォルダーExportedRulePackage.xmlという名前のファイルにルール パッケージをエクスポートします。
+   次の使用例は、ルール パッケージを C:\My Documents フォルダー内のExportedRulePackage.xmlという名前のファイルにエクスポートします。
 
    ```powershell
    [System.IO.File]::WriteAllBytes('C:\My Documents\ExportedRulePackage.xml', $rulepak.SerializedClassificationRuleCollection)
    ```
 
-#### <a name="step-2-modify-the-sensitive-information-type-in-the-exported-xml-file"></a>手順 2: エクスポートした XML ファイルでカスタムの機密情報の種類を変更します
+## <a name="step-2-modify-the-sensitive-information-type-in-the-exported-xml-file"></a>手順 2: エクスポートした XML ファイルでカスタムの機密情報の種類を変更します
 
 XML ファイル内の機密情報の種類、およびファイル内の他の要素については、このトピックで前述されています。
 
-#### <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>手順 3: 更新した XML ファイルを既存のルール パッケージにインポートします
+## <a name="step-3-import-the-updated-xml-file-back-into-the-existing-rule-package"></a>手順 3: 更新した XML ファイルを既存のルール パッケージにインポートします
 
 更新された XML を既存のルール パッケージに再びインポートするには、[Set-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/set-dlpsensitiveinformationtyperulepackage) コマンドレットを使用します。
 
@@ -88,6 +90,6 @@ Set-DlpSensitiveInformationTypeRulePackage -FileData ([System.IO.File]::ReadAllB
 
 ## <a name="more-information"></a>詳細情報
 
-- [データ損失防止について](dlp-learn-about-dlp.md)
+- [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
-- [機密情報の種類関数](sit-functions.md)
+- [機密情報の種類の機能](sit-functions.md)

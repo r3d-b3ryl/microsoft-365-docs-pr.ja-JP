@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 416baed923884d9cbabbd6ee7607a48b0a19ab62
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092379"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010090"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>従来の電子情報開示の検索と保留をコンプライアンス ポータルに移行する
 
@@ -33,33 +33,34 @@ Microsoft Purview コンプライアンス ポータルでは、電子情報開�
 > [!NOTE]
 > さまざまなシナリオがあるため、この記事では、コンプライアンス ポータルで検索と保留を電子情報開示 (Standard) ケースに移行するための一般的なガイダンスを提供します。 電子情報開示ケースの使用は必ずしも必要ではありませんが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当てることで、セキュリティのレイヤーが追加されます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
+
+- Exchange Online V2 モジュールをインストールする必要があります。 詳細については、「[EXO V2 モジュールをインストールして管理する](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)」を参照してください。
 
 - この記事で説明する PowerShell コマンドを実行するには、コンプライアンス ポータルの電子情報開示マネージャー役割グループのメンバーである必要があります。 また、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>の探索管理役割グループのメンバーである必要もあります。
 
 - この記事では、電子情報開示ホールドを作成する方法に関するガイダンスを提供します。 ホールド ポリシーは、非同期プロセスを通じてメールボックスに適用されます。 電子情報開示ホールドを作成するときは、CaseHoldPolicy と CaseHoldRule の両方を作成する必要があります。それ以外の場合、保留は作成されず、コンテンツの場所は保留にされません。
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>手順 1: PowerShell とセキュリティ & コンプライアンス センター PowerShell をExchange OnlineするConnect
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>手順 1: PowerShell とセキュリティ & コンプライアンス PowerShell をExchange OnlineするConnect
 
-最初の手順は、Exchange Online PowerShell と Security & Compliance Center PowerShell に接続することです。 次のスクリプトをコピーし、PowerShell ウィンドウに貼り付けてから実行できます。 接続先の組織の資格情報を求めるメッセージが表示されます。 
+最初の手順は、同じ PowerShell ウィンドウExchange Online PowerShell とセキュリティ &コンプライアンス PowerShell に接続することです。 次のコマンドをコピーし、PowerShell ウィンドウに貼り付けてから実行できます。 資格情報の入力を求めるメッセージが表示されます。
 
 ```powershell
-$UserCredential = Get-Credential
-$sccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.compliance.protection.outlook.com/powershell-liveid -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $sccSession -DisableNameChecking
-$exoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://ps.outlook.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection
-Import-PSSession $exoSession -AllowClobber -DisableNameChecking
+Connect-IPPSSession
+Connect-ExchangeOnline -UseRPSSession
 ```
 
-この PowerShell セッションでは、次の手順でコマンドを実行する必要があります。
+詳細な手順については、「[セキュリティ & コンプライアンス PowerShell のConnect](/powershell/exchange/connect-to-scc-powershell)」と「PowerShell の[Exchange OnlineへのConnect」を参照](/powershell/exchange/connect-to-exchange-online-powershell)してください。
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>手順 2: Get-MailboxSearchを使用してIn-Place電子情報開示検索の一覧を取得する
 
-認証が完了したら、 **Get-MailboxSearch** コマンドレットを実行して、In-Place電子情報開示検索の一覧を取得できます。 次のコマンドをコピーして PowerShell に貼り付けてから実行します。 検索の一覧には、名前とIn-Place保留の状態が表示されます。
+接続したら、 **Get-MailboxSearch** コマンドレットを実行して、電子情報開示検索In-Placeの一覧を取得できます。 次のコマンドをコピーして PowerShell ウィンドウに貼り付けてから実行します。
 
 ```powershell
 Get-MailboxSearch
 ```
+
+検索の一覧には、名前とIn-Place保留の状態が表示されます。
 
 コマンドレットの出力は次のようになります。
 
@@ -74,7 +75,7 @@ $search = Get-MailboxSearch -Identity "Search 1"
 ```
 
 ```powershell
-$search | FL
+$search | Format-List
 ```
 
 これら 2 つのコマンドの出力は、次のようになります。
@@ -82,7 +83,7 @@ $search | FL
 ![個々の検索にGet-MailboxSearchを使用した PowerShell 出力の例。](../media/MigrateLegacyeDiscovery2.png)
 
 > [!NOTE]
-> この例のIn-Placeホールドの期間は無期限です (*ItemHoldPeriod: Unlimited*)。 これは、電子情報開示と法的調査のシナリオで一般的です。 保持期間の値が無期限と異なる場合、保持が保持シナリオでコンテンツを保持するために使用されている可能性があります。 保持シナリオでは、Security & Compliance Center PowerShell で電子情報開示コマンドレットを使用する代わりに、 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) と [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) を使用してコンテンツを保持することをお勧めします。 これらのコマンドレットを使用した結果は **、New-CaseHoldPolicy** と **New-CaseHoldRule** の使用に似ていますが、保持期間の有効期限が切れた後にコンテンツを削除するなど、保持期間と保持アクションを指定できます。 また、保持コマンドレットを使用しても、保持保持を電子情報開示ケースに関連付ける必要はありません。
+> この例のIn-Placeホールドの期間は無期限です (*ItemHoldPeriod: Unlimited*)。 これは、電子情報開示と法的調査のシナリオで一般的です。 保持期間の値が無期限と異なる場合、保持が保持シナリオでコンテンツを保持するために使用されている可能性があります。 保持シナリオでは、Security & Compliance PowerShell で電子情報開示コマンドレットを使用する代わりに、 [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy) と [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule) を使用してコンテンツを保持することをお勧めします。 これらのコマンドレットを使用した結果は **、New-CaseHoldPolicy** と **New-CaseHoldRule** の使用に似ていますが、保持期間の有効期限が切れた後にコンテンツを削除するなど、保持期間と保持アクションを指定できます。 また、保持コマンドレットを使用しても、保持保持を電子情報開示ケースに関連付ける必要はありません。
 
 ## <a name="step-4-create-a-case-in-the-microsoft-purview-compliance-portal"></a>手順 4: Microsoft Purview コンプライアンス ポータルでケースを作成する
 
@@ -91,6 +92,7 @@ $search | FL
 ```powershell
 $case = New-ComplianceCase -Name "[Case name of your choice]"
 ```
+
 ![New-ComplianceCase コマンドの実行例。](../media/MigrateLegacyeDiscovery3.png)
 
 ## <a name="step-5-create-the-ediscovery-hold"></a>手順 5: 電子情報開示ホールドを作成する
@@ -152,7 +154,7 @@ In-Place電子情報開示検索を移行しても電子情報開示ケースに
 ## <a name="more-information"></a>詳細情報
 
 - Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>での電子情報開示&保留のIn-Placeの詳細については、次を参照してください。
-  
+
   - [インプレース電子情報開示 (eDiscovery)](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
   - [インプレース保持と訴訟ホールド](/exchange/security-and-compliance/in-place-and-litigation-holds)
@@ -160,15 +162,15 @@ In-Place電子情報開示検索を移行しても電子情報開示ケースに
 - 記事で使用されている PowerShell コマンドレットの詳細については、次を参照してください。
 
   - [Get-MailboxSearch](/powershell/module/exchange/get-mailboxsearch)
-  
+
   - [New-ComplianceCase](/powershell/module/exchange/new-compliancecase)
 
   - [New-CaseHoldPolicy](/powershell/module/exchange/new-caseholdpolicy)
-  
+
   - [New-CaseHoldRule](/powershell/module/exchange/new-caseholdrule)
 
   - [Get-CaseHoldPolicy](/powershell/module/exchange/get-caseholdpolicy)
-  
+
   - [New-ComplianceSearch](/powershell/module/exchange/new-compliancesearch)
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)

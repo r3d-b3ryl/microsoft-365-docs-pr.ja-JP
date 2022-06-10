@@ -13,12 +13,12 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: a4962ba35ef2a66067acdf2676dbe34e63de99c5
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396232"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014179"
 ---
 # <a name="manage-information-barriers-policies"></a>情報バリア ポリシーを管理する
 
@@ -42,7 +42,7 @@ ms.locfileid: "65396232"
 | [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting) | 情報バリアに関する予期しない問題が発生した場合は、この記事を参照してください。 |
 
 >[!IMPORTANT]
->この記事で説明するタスクを実行するには、次のいずれかの適切なロールを割り当てる必要があります。<br>- Microsoft 365 Enterprise グローバル管理者<br>- グローバル管理者<br>- コンプライアンス管理者<br>- IB コンプライアンス管理 (これは新しいロールです!<br><br>情報バリアの前提条件の詳細については、「 [前提条件 (情報バリア ポリシーの場合)」](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)を参照してください。<br><br> [セキュリティ & コンプライアンス センター PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)してください。
+>この記事で説明するタスクを実行するには、次のいずれかの適切なロールを割り当てる必要があります。<br>- Microsoft 365 Enterprise グローバル管理者<br>- グローバル管理者<br>- コンプライアンス管理者<br>- IB コンプライアンス管理 (これは新しいロールです!<br><br>情報バリアの前提条件の詳細については、「 [前提条件 (情報バリア ポリシーの場合)」](information-barriers-policies.md#step-1-make-sure-prerequisites-are-met)を参照してください。<br><br> [セキュリティ & コンプライアンス PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)してください。
 
 ## <a name="edit-user-account-attributes"></a>ユーザー アカウントの属性を編集する
 
@@ -261,7 +261,7 @@ ms.locfileid: "65396232"
     |:---------|:----------|
     | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> この例では、情報バリア ポリシーの適用を停止しています。 |
 
-## <a name="resources"></a>リソース
+## <a name="resources"></a>関連情報
 
 - [情報バリアの概要を確認する](information-barriers.md)
 - [情報バリアに対するポリシーを定義する](information-barriers-policies.md)

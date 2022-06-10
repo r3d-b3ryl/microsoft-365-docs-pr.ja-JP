@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: 監査ポリシーとアラート ポリシーとデータ主体の要求を使用して、個人データ インシデントを監視し、対応します。
-ms.openlocfilehash: 730eb42fdf6aed66f5beac69621981848ffa6510
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953329"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013268"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>組織内のデータ プライバシー インシデントを監視して対応する
 
@@ -61,7 +61,7 @@ Microsoft 365機能は、関連する機能を運用する際に組織内のデ�
 - さまざまなデータの種類とソースに対して、どのような日常的な監視、調査、およびレポート手法を利用できますか?
 - データ主体要求 (DSR) と、匿名化、再実行、削除などの修復アクションを処理するために必要なメカニズム。
 
-## <a name="auditing-and-alert-policies-in-the-security-and-compliance-center"></a>セキュリティとコンプライアンス センターの監査ポリシーとアラート ポリシー
+## <a name="auditing-and-alert-policies-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview コンプライアンス ポータルの監査ポリシーとアラート ポリシー
 
 監査、高度な監査、アラート ポリシーの設定については、次の記事を参照してください。
 
@@ -76,7 +76,7 @@ Microsoft 365で DSR に応答する方法については、「[GDPR と CCPA �
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Microsoft Streamで削除されたユーザーを管理する
 
-Microsoft Streamの場合、ユーザーがAzure Active Directory (Azure AD) から削除された場合、その名前がその時点より前に投稿された Stream ビデオに関連付けられていた場合、そのメール アドレスはビデオに関連付けられたままになります。 削除するには、「[Microsoft Streamから削除されたユーザーを管理](/stream/managing-deleted-users)する」を参照してください。
+Microsoft Streamの場合、ユーザーが Azure Active Directory (Azure AD) から削除された場合、その名前がそのポイントより前の投稿された Stream ビデオに関連付けられていた場合、そのメール アドレスはビデオに関連付けられたままになります。 削除するには、「[Microsoft Streamから削除されたユーザーを管理](/stream/managing-deleted-users)する」を参照してください。
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>調査ツールとしてのインサイダー リスク管理
 

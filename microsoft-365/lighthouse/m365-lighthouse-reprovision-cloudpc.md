@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: katmartin
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 LighthouseでWindows 365 クラウド PCを再プロビジョニングする方法について説明します。
-ms.openlocfilehash: c3ff7dac53798f26da212ac4790ba0cb1412c307
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 4c292b3feda03045703be03d81006bd274239e6b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535886"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017528"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Microsoft 365 LighthouseでWindows 365 クラウド PCを再プロビジョニングする
 
-Microsoft 365 Lighthouseは、プロビジョニング ポリシーを持つクラウド PC の再プロビジョニングをサポートします。 新しいユーザーのデバイスの再プロビジョニングが必要な場合や、デバイスが正常に動作していない場合があります。 再プロビジョニングがトリガーされると、クラウド PC は削除され、新しいクラウド PC として再作成されます。 すべてのユーザー データ、アプリケーション、カスタマイズなどが削除されます。
+Microsoft 365 Lighthouseは、プロビジョニング ポリシーを持つクラウド PC の再プロビジョニングをサポートします。 新しいユーザーのデバイスの再プロビジョニングが必要な場合や、デバイスが正常に動作していない場合があります。 再プロビジョニングがトリガーされると、クラウド PC が削除され、新しいクラウド PC として再作成されます。 すべてのユーザー データ、アプリケーション、カスタマイズは削除されます。
 
 ## <a name="before-you-begin"></a>はじめに
 

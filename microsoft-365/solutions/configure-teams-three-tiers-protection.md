@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: セキュリティと共同作業の簡便さのバランスを取りながら、3 つの階層の保護を使用して、ファイル共有セキュリティを強化するために、Teams を構成する方法について説明します。
-ms.openlocfilehash: 116675ac6736e1761286226a8bf724915627574f
-ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
+ms.openlocfilehash: 4d287d342371a8182a4c9de5742d2d45ca01a1c6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "63712723"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012475"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>3 層の保護を使ってチームを構成する
 
@@ -45,12 +45,11 @@ ms.locfileid: "63712723"
 
 以上の層と各層に推奨される機能については、「[エンタープライズ アーキテクト向け Microsoft クラウドのイラスト](./cloud-architecture-models.md)」をご覧ください
 
-
 ## <a name="three-tiers-at-a-glance"></a>3 層の概要
 
 次の表は、各層の構成の要約を示しています。 この構成を出発点として利用し、組織のニーズに合わせて構成を調整してください。 すべての層を必要としない場合があります。
 
-|-|ベースライン (パブリック)|ベースライン (プライベート)|機密|高機密|
+|&nbsp;|ベースライン (パブリック)|ベースライン (プライベート)|機密|高機密|
 |:-----|:-----|:-----|:-----|:-----|
 |プライベート チームまたはパブリック チーム|パブリック|プライベート|プライベート|プライベート|
 |誰にアクセス権が与えられるか|B2B のユーザーを含む組織の全員。|チームのメンバーのみ。 他のユーザーが関連するサイトに対するアクセスを要求できる。|チームのメンバーのみ。|チームのメンバーのみ。|
@@ -142,4 +141,4 @@ Azure AD を使用する他の組織と定期的に共同作業を行う場合�
 
 [Microsoft Teams のセキュリティとコンプライアンス](/microsoftteams/security-compliance-overview)
 
-[セキュリティ/コンプライアンス センターのアラート ポリシー](../compliance/alert-policies.md)
+[通知ポリシー](../compliance/alert-policies.md)

@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ポータル セキュリティを構成する方法について説明します。
-ms.openlocfilehash: 60e0d2f1ba61e5def3979358f338da0846914543
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 5033787f314036f345a00b7f9632851317ed05f0
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188682"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013576"
 ---
 # <a name="configure-microsoft-365-lighthouse-portal-security"></a>ポータル セキュリティMicrosoft 365 Lighthouse構成する
 
@@ -45,7 +46,7 @@ MSP 技術者は、Admin Agent または Helpdesk Agent ロールを使用して
 
 Lighthouse の非顧客テナント関連アクション (オンボード、顧客の非アクティブ化/再アクティブ化、タグの管理、ログの確認など) の場合、MSP 技術者はパートナー テナントに割り当てられたロールを持っている必要があります。 パートナー テナント ロールの詳細については、[Microsoft 365 Lighthouseのアクセス許可の概要](m365-lighthouse-overview-of-permissions.md)に関するページを参照してください。
 
-## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Azure AD Privileged Identity Managementの設定 (PIM)
+## <a name="set-up-azure-ad-privileged-identity-management-pim"></a>Azure AD Privileged Identity Management (PIM) を設定する
 
 MSP は、PIM を使用して、セキュリティで保護された情報またはリソースへの高い特権ロール アクセス権を持つユーザーの数を最小限に抑えることができます。 PIM を使用すると、悪意のあるユーザーがリソースにアクセスしたり、承認されたユーザーが機密リソースに誤って影響を与えたりする可能性が低くなります。 また、MSP は、リソースにアクセスし、広範な変更を加え、指定されたユーザーが特権アクセスで何を行っているかを監視するために、Just-In-Time 高い特権ロールをユーザーに付与することもできます。
 
@@ -56,15 +57,15 @@ MSP は、PIM を使用して、セキュリティで保護された情報また
 
 1. 「Azure Active Directoryでロールを割り[当てるためのグループを作成する」の説明に従って、ロール割り当て可能なグループを作成](/azure/active-directory/roles/groups-create-eligible)します。
 
-2. [Azure AD – [すべてのグループ]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) に移動し、高い特権ロールのセキュリティ グループのメンバーとして新しいグループを追加します (たとえば、DAP の管理者エージェント セキュリティ グループ、GDAP ロールの同様のそれぞれのセキュリティ グループなど)。
+2. [Azure AD – [すべてのグループ]](https://portal.azure.com/#blade/Microsoft_AAD_IAM/GroupsManagementMenuBlade/AllGroups) に移動し、高い特権ロールのセキュリティ グループのメンバーとして新しいグループを追加します (たとえば、DAP の Admin Agents セキュリティ グループ、GDAP ロールの場合は同様のそれぞれのセキュリティ グループなど)。
 
 3. 「特権アクセス グループの [対象となる所有者とメンバーを割り当てる](/azure/active-directory/privileged-identity-management/groups-assign-member-owner)」の記事で説明されているように、新しいグループへの特権アクセスを設定します。
 
 PIM の詳細については、「Privileged Identity Managementとは[」](/azure/active-directory/privileged-identity-management/pim-configure)を参照してください。
 
-## <a name="set-up-risk-based-azure-ad-conditional-access"></a>リスクベースのAzure AD条件付きアクセスを設定する
+## <a name="set-up-risk-based-azure-ad-conditional-access"></a>リスクベースの Azure AD 条件付きアクセスを設定する
 
-MSP は、リスクベースの条件付きアクセスを使用して、MFA を使用し、危険なユーザーとして検出された場合にパスワードを変更することで、スタッフメンバーが自分の ID を証明することを確認できます (資格情報が漏れた場合、または脅威インテリジェンスごとにAzure AD)。 ユーザーは、危険なサインインとして検出されたときに、使い慣れた場所または登録済みデバイスからサインインする必要もあります。 その他の危険な動作には、悪意のある IP アドレスまたは匿名 IP アドレスからのサインイン、非定型または不可能な移動場所からのサインイン、異常なトークンの使用、パスワード スプレーからのパスワードの使用、その他の異常なサインイン動作の表示などがあります。 ユーザーのリスク レベルに応じて、MSP はサインイン時にアクセスをブロックすることもできます。 リスクの詳細については、「[リスクとは何か](/azure/active-directory/identity-protection/concept-identity-protection-risks)」を参照してください。
+MSP では、リスクベースの条件付きアクセスを使用して、MFA を使用し、危険なユーザーとして検出されたときにパスワードを変更することで、スタッフメンバーが ID を証明することを確認できます (資格情報が漏洩しているか、Azure AD 脅威インテリジェンスによって)。 ユーザーは、危険なサインインとして検出されたときに、使い慣れた場所または登録済みデバイスからサインインする必要もあります。 その他の危険な動作には、悪意のある IP アドレスまたは匿名 IP アドレスからのサインイン、非定型または不可能な移動場所からのサインイン、異常なトークンの使用、パスワード スプレーからのパスワードの使用、その他の異常なサインイン動作の表示などがあります。 ユーザーのリスク レベルに応じて、MSP はサインイン時にアクセスをブロックすることもできます。 リスクの詳細については、「[リスクとは何か](/azure/active-directory/identity-protection/concept-identity-protection-risks)」を参照してください。
 
 > [!NOTE]
 > 条件付きアクセスには、パートナー テナントにAzure AD Premium P2ライセンスが必要です。 条件付きアクセスを設定するには、「条件付きアクセス[Azure Active Directory構成する」を](/appcenter/general/configuring-aad-conditional-access)参照してください。

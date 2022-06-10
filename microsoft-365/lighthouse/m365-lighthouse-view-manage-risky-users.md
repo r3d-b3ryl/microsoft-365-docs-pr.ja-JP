@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,20 +17,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、危険なユーザーを表示および管理する方法について説明します。
-ms.openlocfilehash: dad86fedeb27f13752bcd1c07efd0d51aa33cf2a
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 45c91ec0871393f69e7a166cc8582f149479ad1b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022935"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011840"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでリスクの高いユーザーを表示および管理する
 
-Microsoft では、毎日何兆ものユーザー サインインシグナルを収集し、分析しています。 これらのシグナルは、適切なユーザー サインイン動作パターンを構築し、潜在的な危険なサインイン試行を特定するために使用されます。 Azure Active Directory (Azure AD) Identity Protection では、これらのシグナルを使用してユーザーのサインイン試行を確認し、疑わしいアクティビティがある場合はアクションを実行します。
+Microsoft では、毎日何兆ものユーザー サインインシグナルを収集し、分析しています。 これらのシグナルは、適切なユーザー サインイン動作パターンを構築し、潜在的な危険なサインイン試行を特定するために使用されます。 Azure Active Directory (Azure AD) Identity Protection では、これらのシグナルを使用してユーザー のサインイン試行を確認し、疑わしいアクティビティがある場合はアクションを実行します。
 
-Microsoft 365 Lighthouseは、Azure AD Identity Protection によって検出されたリスクを管理するのに役立ちます。すべてのマネージド テナントで危険なユーザーを 1 つのビューで表示できます。 パスワードをリセットするか、Microsoft 365 アカウントへのサインインをブロックすることで、危険なユーザーをすばやくセキュリティで保護できます。 分析情報を表示して、ユーザーのリスクをよりよく理解し、次の手順を決定することもできます。
+Microsoft 365 Lighthouseは、すべてのマネージド テナントに危険なユーザーを 1 つのビューで表示することで、Azure AD Identity Protection によって検出されたリスクを管理するのに役立ちます。 パスワードをリセットするか、Microsoft 365 アカウントへのサインインをブロックすることで、危険なユーザーをすばやくセキュリティで保護できます。 分析情報を表示して、ユーザーのリスクをよりよく理解し、次の手順を決定することもできます。
 
-Azure AD Identity Protection は、次のようなさまざまな種類のリスクを識別します。
+Azure AD Identity Protection は、次のような多くの種類のリスクを識別します。
 
 - 漏えいした資格情報
 - 匿名 IP の使用
@@ -38,17 +39,17 @@ Azure AD Identity Protection は、次のようなさまざまな種類のリス
 - 疑わしいアクティビティを使用して IP アドレスからサインインする
 - なじみのない場所からサインインする
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 危険なユーザーの一覧にユーザーを表示するには、次の条件を満たす必要があります。
 
-- 顧客テナントには、ユーザーごとに Azure AD Premium ライセンスが必要です。 Identity Protection Azure ADサポートするライセンスの詳細については、「Identity Protection とは[」を](/azure/active-directory/identity-protection/overview-identity-protection)参照してください。
+- 顧客テナントには、ユーザーごとに Azure AD Premium ライセンスが必要です。 Azure AD Identity Protection をサポートするライセンスの詳細については、「Identity Protection とは[」を](/azure/active-directory/identity-protection/overview-identity-protection)参照してください。
 
 - 顧客テナントは Microsoft 365 Lighthouse 内でアクティブである必要があります。 テナントがアクティブかどうかを確認するには、[Microsoft 365 LighthouseのWindows 365 (クラウド PC) ページの概要に関するページを](m365-lighthouse-tenant-list-overview.md)参照してください。
 
 ## <a name="review-detected-risks-and-take-action"></a>検出されたリスクを確認し、アクションを実行する
 
-Azure AD Identity Protection では、リスク検出には、Azure ADのユーザー アカウントに関連する特定された疑わしいアクションが含まれます。
+Azure AD Identity Protection では、リスク検出には、Azure AD のユーザー アカウントに関連する特定された疑わしいアクションが含まれます。
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、**[ユーザー]** を選択します。
 
@@ -88,6 +89,6 @@ Azure AD Identity Protection では、リスク検出には、Azure ADのユー�
 > 管理している組織にAzure AD Premium P2ライセンスがある場合は、ユーザー リスクベースの条件付きアクセス ポリシーを有効にすることをお勧めします。 詳細については、「 [条件付きアクセス: ユーザー リスクベースの条件付きアクセス](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
-[チュートリアル: ユーザー サインインのリスク検出を使用して、多要素認証またはパスワードの変更Azure ADトリガー](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa)する (記事)\
+[チュートリアル: ユーザー サインインのリスク検出を使用して Azure AD Multi-Factor Authentication またはパスワードの変更をトリガーする](/azure/active-directory/authentication/tutorial-risk-based-sspr-mfa) (記事)\
 [リスクとは何ですか?](/azure/active-directory/identity-protection/concept-identity-protection-risks) (記事) \
 [リスクを修復し、ユーザーのブロックを解除する](/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock) (記事)

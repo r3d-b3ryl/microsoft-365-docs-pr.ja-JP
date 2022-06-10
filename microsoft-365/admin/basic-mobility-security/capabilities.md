@@ -19,18 +19,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: 基本的なモビリティとセキュリティは、組織Microsoft 365電子メールやドキュメントへのアクセスを制御するポリシーを使用してモバイル デバイスをセキュリティで保護および管理するのに役立ちます。
-ms.openlocfilehash: e63f052e0beebe93f9faa27b54725dbac2a9443f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 55c2a197959e55e2a74f8691b7181f8ee91b0ea9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435857"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010170"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>基本的なモビリティとセキュリティの機能
 
 基本的なモビリティとセキュリティは、組織内のライセンスMicrosoft 365ユーザーが使用する iPhone、iPad、Android、Windows Phone などのモバイル デバイスをセキュリティで保護および管理するのに役立ちます。 サポートされているモバイル デバイスとアプリの組織のMicrosoft 365メールやドキュメントへのアクセスを制御するのに役立つ設定を使用して、モバイル デバイス管理ポリシーを作成できます。 デバイスの紛失または盗難時には、リモートからデバイスをワイプして、組織の機密情報を削除できます。
 
-## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
+## <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
 Basic Mobility and Security によってデバイスでサポートされる最小のオペレーティング システムについては、Microsoft Intune オペレーティング システム ガイドに従ってください。 詳細については、[サポートされているオペレーティング システムIntune](/mem/intune/fundamentals/supported-devices-browsers)参照してください。
 
@@ -110,7 +110,7 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 |設定名|iOS|Android|Samsung Knox|
 |---|---|---|---|
-|デバイスでデータ暗号化を要求<sup>する1</sup>|不要|はい|はい|
+|デバイス<sup>1</sup> でデータ暗号化を要求する|不要|はい|はい|
 
 <sup>1</sup>Samsung Knox では、ストレージ カードで暗号化を要求することもできます。
 
@@ -163,7 +163,7 @@ Basic Mobility and Security を使用して、次のデバイスをセキュリ�
 
 ## <a name="additional-settings"></a>その他の設定
 
-Security & Compliance Center PowerShell コマンドレットを使用して、次の追加のポリシー設定を設定できます。 詳細については、「[セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/scc-powershell)」を参照してください。
+Security & Compliance PowerShell コマンドレットを使用して、次の追加のポリシー設定を設定できます。 詳細については、「[セキュリティ/コンプライアンス PowerShell](/powershell/exchange/scc-powershell)」を参照してください。
 
 |設定名|iOS|Android|
 |---|---|---|
@@ -177,9 +177,9 @@ Security & Compliance Center PowerShell コマンドレットを使用して、�
 |AllowAssistantWhileLocked|はい|不要|
 |AllowPassbookWhileLocked|はい|不要|
 |MaxPasswordGracePeriod|はい|不要|
-|PasswordQuality|不要|はい|
+|PasswordQuality|いいえ|はい|
 |SystemSecurityTLS|はい|不要|
-|WLANEnabled|不要|不要|
+|WLANEnabled|いいえ|いいえ|
 
 ## <a name="settings-supported-by-windows"></a>Windowsでサポートされている設定
 
@@ -230,7 +230,7 @@ PowerShell コマンドレットを使用して、次の追加のポリシー設
 
 ## <a name="remotely-wipe-a-mobile-device"></a>モバイル デバイスをリモートからワイプする
 
-デバイスが紛失または盗難にあった場合は、機密組織データを削除し、Microsoft Purview コンプライアンス ポータル **Data 損失防止** > **デバイス管理** からのワイプを実行して **、Microsoft 365** 組織のリソースへのアクセスを > 防ぐことができます。 個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
+デバイスが紛失または盗難にあった場合は、機密組織のデータを削除し、**Microsoft Purview コンプライアンス ポータル** > の **データ損失防止** > **デバイス管理** からワイプを実行することで、Microsoft 365組織のリソースへのアクセスを防ぐことができます。 個別のワイプで組織のデータのみを削除することも、全体のワイプでデバイスからすべての情報を削除して出荷時の設定に戻すこともできます。
 
 詳細については、「 [基本的なモビリティとセキュリティでモバイル デバイスをワイプする」を参照してください](wipe-mobile-device.md)。
 

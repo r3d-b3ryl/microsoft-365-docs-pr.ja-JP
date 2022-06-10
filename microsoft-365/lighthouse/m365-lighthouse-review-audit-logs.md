@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: vivkuma
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、監査ログを確認する方法について説明します。
-ms.openlocfilehash: 59e45f33b1c6708b4743605bda6ac4c93499bf59
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: a357d6d4383fb967b09d1ce3dc1be68d7fd2ca4f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188770"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017512"
 ---
 # <a name="review-audit-logs-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで監査ログを確認する
 
 監査ログMicrosoft 365 Lighthouse、Lighthouse やその他のMicrosoft 365 サービスで変更を生成するアクションが記録されます。 作成、編集、削除、割り当て、リモート 操作はすべて、確認できる監査イベントを作成します。 既定では、すべてのお客様に対して監査が有効です。 それを無効にすることはできません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 監査ログを表示するには、次のいずれかのアクセス許可が必要です。
 

@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: 所有者のないMicrosoft 365 グループまたはMicrosoft Teamsのチームの所有者になるようにメンバーを自動的に招待する方法について説明します。
-ms.openlocfilehash: 5bd41e3312cd696d9e0a2d7e4159e152d9c9d979
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: da332d32bef075c8ca6ecf45fa642ef6d944bea1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65620976"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008641"
 ---
 # <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>所有者のないMicrosoft 365 グループとチームを管理する
 
-Microsoft TeamsまたはMicrosoft 365 グループのチームは、Microsoft 365で所有者のアカウントが削除または無効になっている場合、所有者を失う可能性があります。 グループとチームでは、所有者がメンバーを追加または削除し、グループ設定を変更する必要があります。
+Microsoft TeamsまたはMicrosoft 365 グループのチームとその関連サービスは、Microsoft 365で所有者のアカウントが削除または無効になっている場合、所有者がいない状態になることがあります。 グループとチームでは、所有者がメンバーを追加または削除し、グループ設定を変更する必要があります。
 
 グローバル管理者は、所有者のないグループまたはチームの最もアクティブなメンバーが所有権を受け入れるかどうかを自動的に要求するポリシーを作成できます。 メンバーが招待を受け入れて所有者になると、アクションはコンプライアンス ポータルの監査ログに記録されます。 ゲストは所有者として招待されることはありません。
 
@@ -65,4 +65,8 @@ Microsoft TeamsまたはMicrosoft 365 グループのチームは、Microsoft 36
 
 1. [ *校閲と終了* ] ページで設定を確認し、[ **完了]** をクリックして、[完了] を選択 **します**。
 
-通知は、ポリシーの作成から 24 時間以内に毎週送信されます。
+通知は、ポリシーの作成から 24 時間以内に毎週送信されます。 受信者は他のユーザーに通知を転送できません。 通知と応答は監査ログで追跡されます。
+
+1 グループあたり最大 2 人のグループ メンバーが招待を受け入れて所有者になることができます。 グループ メンバーが同意しない場合、管理者は [グループ所有者を割り当てる必要があります](/admin/create-groups/add-or-remove-members-from-groups)。
+
+

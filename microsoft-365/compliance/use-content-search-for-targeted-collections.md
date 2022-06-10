@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルでコンテンツ検索を使用して、特定のメールボックスまたはサイト フォルダー内のアイテムを検索する対象のコレクションを実行します。
-ms.openlocfilehash: 396c42183667e59e738779f618ca077d909db419
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094926"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015542"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
@@ -41,12 +41,12 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 - また、Exchange Online組織でメール受信者ロールを割り当てる必要もあります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者ロールは、Exchange Onlineの組織管理および受信者管理の役割グループに割り当てられます。 Exchange Onlineでのアクセス許可の割り当ての詳細については、「[ロール グループ メンバーの管理](/exchange/manage-role-group-members-exchange-2013-help)」を参照してください。 カスタム ロール グループを作成し、メール受信者ロールを割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「 [ロール グループの管理](/Exchange/permissions-exo/role-groups)」を参照してください。
 
-- この記事のスクリプトでは、先進認証がサポートされています。 Microsoft 365またはMicrosoft 365 GCC組織の場合は、スクリプトをそのまま使用できます。 ドイツのOffice 365組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行`Connect-ExchangeOnline`を編集し、*ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して powerShell Exchange Online接続する必要があります。  また、行 `Connect-IPPSSession` を編集し、 *ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、Security & Compliance Center PowerShell に接続する必要があります。 詳細については、[PowerShell をExchange Onlineしてセキュリティ & コンプライアンス センター PowerShell に](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)[ConnectするConnect](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)の例を参照してください。
+- この記事のスクリプトでは、先進認証がサポートされています。 Microsoft 365またはMicrosoft 365 GCC組織の場合は、スクリプトをそのまま使用できます。 ドイツのOffice 365組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行`Connect-ExchangeOnline`を編集し、*ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して powerShell Exchange Online接続する必要があります。  また、行 `Connect-IPPSSession` を編集し、 *ConnectionUri* および *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、Security & Compliance PowerShell に接続する必要があります。 詳細については、[PowerShell をExchange Onlineし](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)、セキュリティ & [コンプライアンス PowerShell にConnectするConnectの例を参照](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)してください。
 
 - スクリプトを実行するたびに、新しいリモート PowerShell セッションが作成されます。 つまり、使用可能なすべてのリモート PowerShell セッションを使用できます。 これを回避するには、次のコマンドを実行して、アクティブなリモート PowerShell セッションを切断します。
 
   ```powershell
-  Get-PSSession | Remove-PSSession
+  Get-PSSession | Remove-PSSession; Disconnect-ExchangeOnline
   ```
 
     詳細については、「[Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
@@ -67,7 +67,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
   - **OneDrive for Business**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
-- **ユーザー資格情報**: スクリプトは、資格情報を使用して、先進認証を使用して PowerShell または Security & Compliance Center PowerShell Exchange Onlineに接続します。 前述のように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
+- **ユーザー資格情報**: スクリプトでは、資格情報を使用して、先進認証を使用して PowerShell またはセキュリティ & コンプライアンス PowerShell Exchange Onlineに接続します。 前述のように、このスクリプトを正常に実行するには、適切なアクセス許可を割り当てる必要があります。
 
 メールボックス フォルダーまたはサイト ドキュメントリンク (パス) 名の一覧を表示するには:
 
@@ -132,7 +132,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
       $searchActionName = "SPFoldersSearch_Preview"
       # List the folders for the SharePoint or OneDrive for Business Site
       $siteUrl = $addressOrSite
-      # Connect to Security & Compliance Center PowerShell
+      # Connect to Security & Compliance PowerShell
       if (!$SccSession)
       {
           Import-Module ExchangeOnlineManagement
@@ -222,7 +222,7 @@ SharePointサイトまたはOneDrive for Business サイトから **documentlink
 
 1. <https://compliance.microsoft.com>手順 1. のスクリプトの実行に使用したアカウントと資格情報を使用してサインインします。
 
-2. コンプライアンス センターの左側のウィンドウで、[**AllContent** >  検索の **表示**] をクリックし、[**新しい検索**] をクリックします。
+2. コンプライアンス センターの左側のウィンドウで、[ **すべての** > **コンテンツ検索** を表示] をクリックし、[ **新しい検索**] をクリックします。
 
 3. [ **キーワード** ] ボックスに `folderid:<folderid>` 、手順 1. のスクリプトによって返された値を  `documentlink:<path>/*` 貼り付けます。
 

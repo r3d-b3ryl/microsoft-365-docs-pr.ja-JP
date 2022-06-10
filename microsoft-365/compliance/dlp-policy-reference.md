@@ -1,5 +1,5 @@
 ---
-title: データ損失防止ポリシー リファレンス
+title: データ損失防止ポリシーリファレンス
 f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
@@ -19,18 +19,18 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 1ad00a36f48849ca110a598f92c5536ef7b21843
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: b62289cfe4d18b4c6e2e79bb9a308f8b88978451
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648622"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015794"
 ---
-# <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシー リファレンス
+# <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview データ損失防止 (DLP) ポリシーには、構成するコンポーネントが多数あります。 効果的なポリシーを作成するには、各コンポーネントの目的とその構成がポリシーの動作をどのように変更するかを理解する必要があります。 この記事では、DLP ポリシーの詳細な構造について説明します。
+Microsoft Purview データ損失防止 (DLP) ポリシーには、構成する多くのコンポーネントがあります。 効果的なポリシーを作成するには、各コンポーネントの目的とその構成がポリシーの動作をどのように変更するかを理解する必要があります。 この記事では、DLP ポリシーの詳細な構造について説明します。
 
 ## <a name="policy-templates"></a>ポリシー テンプレート 
 
@@ -66,7 +66,7 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 |医療と健康| カナダの健康情報法 (HIA) |- [カナダのパスポート番号](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [カナダの社会保険番号](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [カナダの正常性サービス番号](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [カナダの個人の健康識別番号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |医療と健康| カナダ個人健康情報法 (PHIA) Manitoba|- [カナダの社会保険番号](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [カナダの正常性サービス番号](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [カナダの個人の健康識別番号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
 |医療と健康| カナダ個人健康法 (PHIPA) Ontario |- [カナダのパスポート番号](sensitive-information-type-entity-definitions.md#canada-passport-number)</br> - [カナダの社会保険番号](sensitive-information-type-entity-definitions.md#canada-social-insurance-number) </br> - [カナダの正常性サービス番号](sensitive-information-type-entity-definitions.md#canada-health-service-number) </br> - [カナダの個人の健康識別番号](sensitive-information-type-entity-definitions.md#canada-personal-health-identification-number-phin)|
-|医療と健康| 英国の医療報告書の利用に関する法律|- [英国の国民健康サービス番号](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
+|医療と健康| 英国。 医療報告書法へのアクセス|- [英国の国民健康サービス番号](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino)|
 |医療と健康| 米国医療保険法 (HIPAA) の強化|</br> - [病気の国際分類 (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [病気の国際分類 (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm) </br> - [すべてのフル ネーム](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [すべての医療契約条件](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [米国の物理アドレス](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
 |医療と健康| 米国の医療保険法 (HIPAA)| - [病気の国際分類 (ICD-9-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-9-cm) </br> - [病気の国際分類 (ICD-10-CM)](sensitive-information-type-entity-definitions.md#international-classification-of-diseases-icd-10-cm)|
 |プライバシー| オーストラリアプライバシー法の強化|- [オーストラリアの運転免許証番号](sensitive-information-type-entity-definitions.md#australia-drivers-license-number) </br> - [オーストラリアのパスポート番号](sensitive-information-type-entity-definitions.md#australia-passport-number) </br> - [すべてのフル ネーム](sensitive-information-type-entity-definitions.md#all-full-names) </br> - [すべての医療契約条件](sensitive-information-type-entity-definitions.md#all-medical-terms-and-conditions) </br> - [オーストラリアの物理アドレス](sensitive-information-type-entity-definitions.md#australia-physical-addresses)|
@@ -87,10 +87,10 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 |プライバシー| 日本の個人情報の保護強化|- [日本社会保険番号 (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin) </br> - [Japan My Number - Personal](sensitive-information-type-entity-definitions.md#japan-my-number---personal)</br> - [日本のパスポート番号](sensitive-information-type-entity-definitions.md#japan-passport-number) </br> - [日本の運転免許証番号](sensitive-information-type-entity-definitions.md#japan-drivers-license-number)</br> - [すべてのフル ネーム](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [日本の物理アドレス](sensitive-information-type-entity-definitions.md#all-physical-addresses)|
 |プライバシー| 日本の個人情報保護|- [日本居住者登録番号](sensitive-information-type-entity-definitions.md#japan-resident-registration-number)</br> - [日本社会保険番号 (SIN)](sensitive-information-type-entity-definitions.md#japan-social-insurance-number-sin)|
 |プライバシー| サウジアラビア個人識別可能 (PII) データ|- [サウジアラビアの国民 ID](sensitive-information-type-entity-definitions.md#saudi-arabia-national-id)|
-|プライバシー| 英国のデータ保護法|- [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [米国/英国のパスポート番号](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> - [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code)|
-|プライバシー| 英国のプライバシーおよび電子通信に関する規制|- [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code)|
-|プライバシー| 英国の個人情報 (PII) データ|- [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [米国/英国のパスポート番号](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
-|プライバシー| 英国のオンラインの個人情報に関する実務基準 (PIOCP)|- [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [英国の国民健康サービス番号](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code)|
+|プライバシー| 英国。 データ保護法|- [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [米国/英国のパスポート番号](sensitive-information-type-entity-definitions.md#usuk-passport-number) </br> - [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code)|
+|プライバシー| 英国。 プライバシーと電子通信に関する規則|- [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code)|
+|プライバシー| 英国。 個人を特定できる情報 (PII) データ|- [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [米国/英国のパスポート番号](sensitive-information-type-entity-definitions.md#usuk-passport-number)|
+|プライバシー| 英国。 個人情報オンライン実践コード (PIOCP)|- [英国の国民保険番号 (NINO)](sensitive-information-type-entity-definitions.md#uk-national-insurance-number-nino) </br> - [英国の国民健康サービス番号](sensitive-information-type-entity-definitions.md#uk-national-health-service-number) </br> - [SWIFT コード](sensitive-information-type-entity-definitions.md#swift-code)|
 |プライバシー| 米国愛国者法の強化|- [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [米国の銀行口座番号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [米国の個人納税者識別番号 (ITIN)](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [米国の社会保障番号 (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [すべてのフル ネーム](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [米国の物理アドレス](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
 |プライバシー| 米国の愛国者法|- [クレジット カード番号](sensitive-information-type-entity-definitions.md#credit-card-number) </br> - [米国の銀行口座番号](sensitive-information-type-entity-definitions.md#us-bank-account-number)</br> - [米国の個人納税者識別番号 (ITIN)](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [米国の社会保障番号 (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)|
 |プライバシー| 米国個人を特定できる情報 (PII) データの強化|- [米国の個人納税者識別番号 (ITIN)](sensitive-information-type-entity-definitions.md#us-individual-taxpayer-identification-number-itin)  </br> - [米国の社会保障番号 (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn)</br> - [米国/英国のパスポート番号](sensitive-information-type-entity-definitions.md#usuk-passport-number)</br> - [すべてのフル ネーム](sensitive-information-type-entity-definitions.md#all-full-names)</br> - [米国の物理アドレス](sensitive-information-type-entity-definitions.md#us-physical-addresses)|
@@ -366,7 +366,7 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 
 - コンテンツに含まれる **場合を除く** 
 
-### <a name="actions"></a>アクション 
+### <a name="actions"></a>Actions 
 
 包括的な ***conditions** _ フィルターと排他 _*_例外_*_ フィルターを使用するアイテムには、ルールで定義されているすべての _*_アクション_*_ が適用されます。 アクションをサポートするために必要なオプションを構成する必要があります。 たとえば、_Restrict access を使用してExchangeを選択するか、*Microsoft 365場所* アクションでコンテンツを暗号化* する場合は、次のオプションから選択する必要があります。
 
@@ -485,7 +485,7 @@ and
 
 - Microsoft 365の場所でコンテンツへのアクセスを制限または暗号化する
 
-および
+AND
 
 - Exchange以外の場所のすべてのアクション 
 
@@ -525,8 +525,9 @@ for where they are used/expected behavior-->
 
 ![メッセージ バーに Excel 2016 のポリシー ヒントが表示される](../media/7002ff54-1656-4a6c-993f-37427d6508c8.png)
 
-> [!NOTE]
-> 通知メールは保護されていない状態で送信されます。
+> [!IMPORTANT]
+> - 通知メールは保護されていない状態で送信されます。
+> - 電子メール通知は、Microsoft 365 サービスでのみサポートされます。
 
 また、有効なビジネス ニーズがある場合やポリシーで誤検知が検出された場合にブロックされないように、 [ポリシーをオーバーライド](#user-overrides)するオプションをユーザーに付与することもできます。
 
@@ -648,7 +649,7 @@ https://docs.microsoft.com/en-us/microsoft-365/compliance/dlp-configure-view-ale
 
 ルールが一致する場合は、イベントの詳細を含むインシデント レポートをコンプライアンス担当者 (または選択したユーザー) に送信できます。 レポートには、一致したアイテム、ルールに一致した実際のコンテンツ、コンテンツを最後に変更したユーザーの名前に関する情報が含まれます。 メール メッセージの場合、レポートには添付ファイルとして、DLP ポリシーに適合する元のメッセージも含まれます。
 
-DLP は、[インサイダー リスク管理](insider-risk-management.md)などの他のMicrosoft Purview情報保護サービスにインシデント情報をフィードします。 インサイダー リスク管理にインシデント情報を取得するには、 **インシデント レポート** の重大度レベルを **[高**] に設定する必要があります。
+DLP は、 [インサイダー リスク管理](insider-risk-management.md)などの他の Microsoft Purview 情報保護サービスにインシデント情報をフィードします。 インサイダー リスク管理にインシデント情報を取得するには、 **インシデント レポート** の重大度レベルを **[高**] に設定する必要があります。
 
 <!--![Page for configuring incident reports](../media/31c6da0e-981c-415e-91bf-d94ca391a893.png)-->
 

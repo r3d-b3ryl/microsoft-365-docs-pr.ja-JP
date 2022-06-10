@@ -1,5 +1,5 @@
 ---
-title: PowerShell を使用してカスタム機密情報の種類を削除する
+title: PowerShell を使用してカスタムの機密情報の種類を削除する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,26 +14,28 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: PowerShell を使用してカスタム機密情報の種類を削除する方法について説明します。
-ms.openlocfilehash: 852f9987b072f05dcf4f322f600bed23bcce7ef2
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+description: PowerShell を使用してカスタムの機密情報の種類を削除する方法について説明します
+ms.openlocfilehash: e935c9340c353561e71e25fdadfec5509da041e5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62900972"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014742"
 ---
-# <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタム機密情報の種類を削除する
+# <a name="remove-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を削除する
 
-コンプライアンス センターの PowerShell では、カスタムの機密情報の種類を削除する 2 つの方法があります。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-- **個別のカスタム機密情報の種類を削除** する: 「PowerShell を使用してカスタム機密情報の種類を変更する」に記載されているメソッド [を使用します](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell)。 カスタム機密情報の種類を含むカスタム ルール パッケージをエクスポートし、機密情報の種類を XML ファイルから削除し、更新された XML ファイルを既存のカスタム ルール パッケージにインポートし戻します。
+Security & Compliance PowerShell では、カスタムの機密情報の種類を削除するには、次の 2 つの方法があります。
+
+- **個々のカスタム機密情報の種類を削除する**: PowerShell を使用して [カスタムの機密情報の種類を変更する](sit-modify-a-custom-sensitive-information-type-in-powershell.md#modify-a-custom-sensitive-information-type-using-powershell)に関するページに記載されているメソッドを使用します。 カスタムの機密情報の種類を含むカスタム規則パッケージをエクスポートし、XML ファイルから機密情報の種類を削除し、更新された XML ファイルを既存のカスタム ルール パッケージにインポートします。
 
 - **カスタム ルール パッケージとそれに含まれるすべてのカスタムの機密情報の種類を削除する**: この方法は、このセクションに記載されています。
 
 > [!NOTE]
 > カスタムの機密情報の種類を削除する前に、その機密情報の種類を参照している DLP ポリシーまたは Exchange メール フロー ルール (別名: トランスポート ルール) がないことを確認してください。
 
-1. [コンプライアンス センター PowerShell に接続する](/powershell/exchange/exchange-online-powershell)
+1. [セキュリティ & コンプライアンス PowerShell](/powershell/exchange/exchange-online-powershell)
 
 2. カスタム ルール パッケージを削除する場合、[Remove-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/remove-dlpsensitiveinformationtyperulepackage) コマンドレットを使用します。
 
@@ -75,8 +77,8 @@ ms.locfileid: "62900972"
 
 ## <a name="more-information"></a>詳細情報
 
-- [データ損失防止について](dlp-learn-about-dlp.md)
+- [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md)
 
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 
-- [機密情報の種類関数](sit-functions.md)
+- [機密情報の種類の機能](sit-functions.md)

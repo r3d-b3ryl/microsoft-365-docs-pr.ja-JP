@@ -15,20 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: ユーザーが電子情報開示アクセス許可を割り当てたときに、Microsoft Purview コンプライアンス ポータルでコンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) タスクを実行したときに記録されるイベントについて説明します。
+description: Microsoft Purview コンプライアンス ポータルで、ユーザーが電子情報開示アクセス許可を割り当ててコンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) タスクを実行したときに記録されるイベントについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b94c53d497b5e300cdb0a08dbb5f02daec28c19
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317518"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015498"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview コンプライアンス ポータルまたは対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連アクティビティ (Microsoft Purview電子情報開示 (Standard) およびMicrosoft Purview電子情報開示 (プレミアム)) は、監査に記録されますログ。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) がコンプライアンス ポータルで次のコンテンツ検索および電子情報開示 (Standard) タスクを実行すると記録されます。
+Microsoft Purview コンプライアンス ポータルまたは対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連のアクティビティ (Microsoft Purview 電子情報開示 (Standard) と Microsoft Purview 電子情報開示 (プレミアム)) は、監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) がコンプライアンス ポータルで次のコンテンツ検索および電子情報開示 (Standard) タスクを実行すると記録されます。
   
 - 電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースの作成と管理
 
@@ -153,7 +153,7 @@ Microsoft Purview コンプライアンス ポータルまたは対応する Pow
 
 ## <a name="ediscovery-cmdlet-activities"></a>電子情報開示コマンドレットのアクティビティ
 
-次の表に、管理者またはユーザーがコンプライアンス センターを使用するか、Security & Compliance Center PowerShell で対応するコマンドレットを実行して電子情報開示関連のアクティビティを実行したときにログに記録されるコマンドレット監査ログ レコードを示します。 監査ログ レコードの詳細情報は、この表に一覧されているコマンドレットのアクティビティとは異なります。電子情報開示アクティビティは、前述のセクションに示されています。
+次の表に、管理者またはユーザーがコンプライアンス センターを使用するか、Security & Compliance PowerShell で対応するコマンドレットを実行して電子情報開示関連のアクティビティを実行したときにログに記録されるコマンドレット監査ログ レコードを示します。 監査ログ レコードの詳細情報は、この表に一覧されているコマンドレットのアクティビティとは異なります。電子情報開示アクティビティは、前述のセクションに示されています。
   
 既に説明したように、電子情報開示コマンドレットアクティビティが監査ログの検索結果に表示されるまでに最大で 24 時間かかる場合があります。
   

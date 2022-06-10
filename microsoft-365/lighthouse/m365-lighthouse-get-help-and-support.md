@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ヘルプとサポートを受ける方法について説明します。
-ms.openlocfilehash: 24420874314c67b621a53f8eb06e22a49137d380
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 5bf61e9563a87ac44219c1c4644153ce98755cb5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314365"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017808"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのヘルプとサポートを受ける 
 
@@ -43,9 +44,9 @@ ms.locfileid: "63314365"
 
 これらのリソースに一覧にない問題が発生した場合は、この記事の手順に従ってセルフ ヘルプ オプションを表示するか、サービス要求を作成します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- サービス要求を作成および管理するには、**microsoft.office365.supportTickets/allEntities/allTasks** というプロパティ セットを使用して、少なくとも 1 つのAzure Active Directory (Azure AD) ロールが割り当てられている必要があります。 Azure AD ロールの一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください。 ロールを割り当てる方法については、「[Azure AD ロールをユーザーに割り当てる」を参照してください](/azure/active-directory/roles/manage-roles-portal)。
+- サービス要求を作成および管理するには、**microsoft.office365.supportTickets/allEntities/allTasks** というプロパティ セットを使用して、少なくとも 1 つのAzure Active Directory (Azure AD) ロールが割り当てられている必要があります。 Azure AD ロールの一覧については、 [Azure AD の組み込みロールに](/azure/active-directory/roles/permissions-reference)関するページを参照してください。 ロールを割り当てる方法については、「 [ユーザーに Azure AD ロールを割り当てる」を参照してください](/azure/active-directory/roles/manage-roles-portal)。
 
 - サービス要求を作成する必要がある場合は、診断ログ、テナント ID、ユーザー ID (特定のユーザーが影響を受ける場合) など、問題に関するできるだけ多くの詳細を収集します。
 
@@ -75,7 +76,7 @@ ms.locfileid: "63314365"
 
 5.  推奨される記事が役に立たない場合は、[ **サポートにお問い合わせください**] を選択します。
 
-6.  フォームに情報を入力し、手順&nbsp; 1 で保存したスクリーンショットと JSON ファイルを添付します (該当する場合)。 予期される待機時間がウィンドウに表示されます。
+6.  フォームに情報を入力し、手順&nbsp;1 で保存したスクリーンショットと JSON ファイル (該当する場合) を添付し、[ **お問い合わせ**] を選択します。 予期される待機時間がウィンドウに表示されます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

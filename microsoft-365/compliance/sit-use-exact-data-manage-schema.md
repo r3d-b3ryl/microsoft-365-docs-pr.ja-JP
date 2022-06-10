@@ -15,27 +15,29 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 完全なデータ一致スキーマを編集または削除する方法について説明します。
+description: 正確なデータ一致スキーマを編集または削除する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8e06cb25db0a8c616b5b692a423d9827e8918dc9
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 29cfefbd6bf9bb9f92fe5ed7664575ec75adfa12
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63525195"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014676"
 ---
 # <a name="manage-your-exact-data-match-schema"></a>正確なデータ一致スキーマを管理する
 
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
 ## <a name="editing-the-schema-for-edm-based-classification-manually"></a>EDM ベースの分類のスキーマを手動で編集する
 
-EDM スキーマ ( **edm.xml** ファイルなど) を変更する場合 (EDM ベースの分類に使用するフィールドの変更など)、次の手順を実行します。
+EDM ベースの分類に使用されるフィールドの変更など、 **edm.xml** ファイルなど、EDM スキーマに変更を加える場合は、次の手順に従います。
 
 > [!TIP]
-> EDM スキーマと機密情報テーブル ソース ファイルを変更して、構成可能な一致を **利用できます**。 構成されている場合、EDM はアイテムを評価するときに、大文字と小文字の違いと一部の区切り文字を無視します。 これにより、xml スキーマと機密データ ファイルの定義が容易になります。 詳細については、「 [CaseInsensitive フィールドと ignoredDelimiters フィールドを使用する」を参照してください](sit-get-started-exact-data-match-create-schema.md#using-the-caseinsensitive-and-ignoreddelimiters-fields)。
+> 構成 **可能な一致** を利用するように、EDM スキーマと機密情報テーブルのソース ファイルを変更できます。 構成されている場合、EDM はアイテムを評価するときに、大文字と小文字の違いと一部の区切り文字を無視します。 これにより、xml スキーマと機密データ ファイルの定義が容易になります。 詳しくは、「 [caseInsensitive フィールドと ignoredDelimiters フィールドの使用](sit-get-started-exact-data-match-create-schema.md#using-the-caseinsensitive-and-ignoreddelimiters-fields)」をご覧ください。
 
-1. ファイルを **edm.xml** します (これは、「完全なデータ一致ベースの機密情報の種類のスキーマを作成する」で [説明されているファイルです](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types))。
+1. **edm.xml** ファイルを編集します (これは、[完全一致ベースの機密情報の種類のスキーマの作成](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)に関する記事で説明されているファイルです。
 
-2. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
+2. [セキュリティ & コンプライアンス PowerShell にConnect](/powershell/exchange/connect-to-scc-powershell)します。
 
 3. データベース スキーマを更新するには、次のコマンドを実行します。
 
@@ -54,18 +56,18 @@ EDM スキーマ ( **edm.xml** ファイルなど) を変更する場合 (EDM �
       > \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
 
       > [!TIP]
-      > 確認なしで変更を行う場合は `-Confirm:$true` 、手順 3 では使用しません。
+      > 変更を確認せずに行う場合は、手順 3 で使用 `-Confirm:$true` しないでください。
 
       > [!NOTE]
       > 追加機能を使用して EDMSchema を更新するには、10 から 60 分かかることがあります。 追加機能を使用する手順を実行する前に、更新プログラムを完了する必要があります。
 
 ## <a name="removing-the-schema-for-edm-based-classification-manually"></a>EDM ベースの分類のスキーマを手動で削除する
 
-EDM ベースの分類に使用しているスキーマを削除する場合は、次の手順を実行します。
+EDM ベースの分類に使用しているスキーマを削除する場合は、次の手順に従います。
 
-1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ & コンプライアンス PowerShell にConnect](/powershell/exchange/connect-to-scc-powershell)します。
 
-2. 次のコマンドを実行し、"患者レコード" のデータ ストア名を削除するデータ ストア名に置き換えてください (例として、patientrecords ストアを使用します)。
+2. 次のコマンドを実行し、"患者レコード" のデータ ストア名を削除する名前に置き換えます (例として patientrecords ストアを使用)。
 
       ```powershell
       Remove-DlpEdmSchema -Identity 'patientrecords'
@@ -82,17 +84,17 @@ EDM ベースの分類に使用しているスキーマを削除する場合は�
       > \[Y\] Yes \[A\] すべて Yes \[N\] No \[L\] すべて No \[?\] ヘルプ (規定値は "Y"):
 
       > [!TIP]
-      > 確認なしで変更を行う場合は `-Confirm:$true` 、手順 2 では使用しません。
+      > 変更を確認せずに行う場合は、手順 2 で使用 `-Confirm:$true` しないでください。
 
 ### <a name="edit-or-delete-the-edm-schema-with-the-wizard"></a>ウィザードを使用して EDM スキーマを編集または削除する
 
-1. Open **Compliance center** \> **Data classification** \> **Exact data matches**.
+1. **コンプライアンス センター** \> **のデータ分類** \> **の完全一致を開きます**。
 
-2. **[EDM スキーマ] を選択します**。
+2. **EDM スキーマを選択します**。
 
 3. 編集する EDM SIT を選択します。
 
-4. [ **EDM スキーマの編集] または** **[EDM スキーマをフライアウト** から削除] を選択します。
+4. ポップアップから **[EDM スキーマの編集]** または **[EDM スキーマの削除** ] を選択します。
 
 > [!IMPORTANT]
 > スキーマを削除し、それが既に EDM の機密情報の種類に関連付けられている場合は、まずEDM の機密情報の種類を削除し、その後、スキーマを削除できます。

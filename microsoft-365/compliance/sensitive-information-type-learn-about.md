@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密性の高いアイテムを識別するために社会保障、クレジット カード、銀行口座番号などの機密情報を検出する方法について説明します。
-ms.openlocfilehash: 0e154e0ee578b9a182cb7cd5b43cafba466f9bcd
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64971353"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014236"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -111,7 +111,7 @@ Microsoft では、多数の事前構成済み SIT を提供するか、独自�
 
 ### <a name="checksum"></a>チェックサム
 
-いいえ
+不要
 
 ### <a name="definition"></a>定義
 
@@ -171,7 +171,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 
 - **EDM を使用する** - 完全一致 (EDM) ベースの分類を使用して、カスタムの機密情報の種類を設定できます。 この方法では、定期的に更新できる安全なデータベースを使用して、動的な機密情報の種類を作成することができます。 [厳密なデータ一致ベースの機密情報の種類については、「」を](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)参照してください。
 
-- **PowerShell を使用する - PowerShell** を使用して、カスタムの機密情報の種類を設定できます。 この方法は、UI を使用する場合よりも複雑ですが、より多くの構成オプションがあります。 詳細については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。
+- **PowerShell を使用する - PowerShell** を使用して、カスタムの機密情報の種類を設定できます。 この方法は、UI を使用する場合よりも複雑ですが、より多くの構成オプションがあります。 [セキュリティ & コンプライアンス PowerShell でのカスタム機密情報の種類の作成に関する](create-a-custom-sensitive-information-type-in-scc-powershell.md)説明を参照してください。
 
 > [!NOTE]
 > Microsoft Purview データ損失防止サービス、情報保護、通信コンプライアンス、データ ライフサイクル管理、およびレコード管理内ですぐに使用するために、信頼レベルの向上を利用できます。

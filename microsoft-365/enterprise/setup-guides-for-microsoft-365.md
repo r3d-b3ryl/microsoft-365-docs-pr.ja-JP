@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスで機能を計画、移行、実装するためのステップ バイ ステップ ツールを入手します。 サービスまたは実行する必要があるアプリを設定するためのガイドを見つけます。
-ms.openlocfilehash: 5ffb0652b145bba6ae4e834815c5cb51b7ad2b94
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 451f92aade8a6e7910630629b805065e6910b9de
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535926"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017122"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -111,7 +111,7 @@ Microsoft Searchは、組織が作業している作業を完了するために�
 
 また、オプションの高度な ID 保護とユーザー プロビジョニングの自動化を含む、セルフサービス パスワード リセット、条件付きアクセス、統合されたサード パーティのサインオンを有効にするための重要な情報も含まれています。
 
-### <a name="sync-users-from-your-windows-server-active-directory"></a>Windows Server Active Directoryからユーザーを同期する
+### <a name="sync-users-from-your-windows-server-active-directory"></a>Windows Server Active Directory のユーザーを同期させる
 
 [「Windows Server Active Directoryからユーザーを同期](https://aka.ms/directorysyncsetup)する」ガイドでは、ディレクトリ同期を有効にする手順について説明します。 ディレクトリ同期により、オンプレミス ID とクラウド ID がまとめられ、アクセスが容易になり、管理が簡素化されます。 シングル サインオン、セルフサービス オプション、自動アカウント プロビジョニング、条件付きアクセス制御、コンプライアンス ポリシーなどの新機能のロックを解除します。 これらの機能により、ユーザーはどこからでも必要なリソースにアクセスできるようになります。
 
@@ -162,7 +162,7 @@ Microsoft Searchは、組織が作業している作業を完了するために�
 
 Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアから保護するためのクラウドベースのメール フィルタリング サービスであり、メッセージング ポリシー違反から組織を保護する機能を備えています。
 
-[Exchange Online Protectionセットアップ ガイド](https://aka.ms/EOPguidance)を使用して、3 つの展開シナリオ&mdash;のオンプレミス メールボックス、ハイブリッド (オンプレミスとクラウドの組み合わせ) メールボックス、または組織のすべてのクラウド メールボックス&mdash;に適したメールボックスを選択して、EOP を設定します。 このガイドでは、セキュリティ & コンプライアンス センターで、ユーザーのライセンスの設定と確認、Microsoft 365 管理センターでのアクセス許可の割り当て、組織のマルウェア対策ポリシーとスパム ポリシーの構成に関する情報とリソースを提供します。
+[Exchange Online Protectionセットアップ ガイド](https://aka.ms/EOPguidance)を使用して、オンプレミス メールボックス、ハイブリッド (オンプレミスとクラウドの組み合わせ) メールボックス、またはすべてのクラウド&mdash;メールボックスが組織に適合する 3 つの展開シナリオ&mdash;のいずれかを選択して、EOP を設定します。 このガイドでは、セキュリティ & コンプライアンス センターで、ユーザーのライセンスの設定と確認、Microsoft 365 管理センターでのアクセス許可の割り当て、組織のマルウェア対策ポリシーとスパム ポリシーの構成に関する情報とリソースを提供します。
 
 ### <a name="microsoft-defender-for-office-365-setup-guide"></a>Microsoft Defender for Office 365 のセットアップ ガイド
 
@@ -181,13 +181,13 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 * コミュニケーション コンプライアンス ソリューションを使用すると、職場での暴力、インサイダー取引、嫌がらせ、行動規範、規制コンプライアンス違反などの項目に対するコミュニケーション リスクを特定して対処できます。
 * インサイダー リスク管理ソリューションは、知的財産の盗難、機密データ漏えい、セキュリティ違反、データ流出、機密性違反のリスクを特定、調査、および実行するのに役立ちます。
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>Microsoft Purview 情報保護セットアップ ガイド
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Microsoft Purview Information Protection セットアップ ガイド
 
-機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft Purview 情報保護セットアップ ガイド](https://aka.ms/microsoftpurviewinformationprotectionsetupguide)では、これらの各ステージを完了するためのガイダンスを提供します。
+機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft Purview Information Protection のセットアップ ガイド](https://aka.ms/microsoftpurviewinformationprotectionsetupguide)には、これらの各段階を完了するためのガイダンスが記載されています。
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Microsoft Purview データ ライフサイクル管理セットアップ ガイド
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Microsoft Purview データ ライフサイクル管理のセットアップ ガイド
 
-[Microsoft Purview データ ライフサイクル管理セットアップ ガイド](https://aka.ms/migsetupguide)では、組織のガバナンス戦略を設定および管理するために必要な情報を提供し、設定した特定のライフサイクル ガイドラインに従ってデータが確実に分類および管理されるようにします。 このガイドでは、組織のコンテンツとコンプライアンス レコードに適用される保持ラベル、アイテム保持ラベル ポリシー、およびアイテム保持ポリシーを作成、自動適用、または公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
+[Microsoft Purview データ ライフサイクル管理の設定ガイド](https://aka.ms/migsetupguide)では、組織のガバナンス戦略を設定および管理し、設定した特定のライフサイクルのガイドラインに従って、データを確実に分類および管理するために必要な情報を提供します。 このガイドでは、組織のコンテンツとコンプライアンス レコードに適用される保持ラベル、アイテム保持ラベル ポリシー、およびアイテム保持ポリシーを作成、自動適用、または公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>Microsoft Defender for Cloud Appsセットアップ ガイド
 
@@ -250,3 +250,7 @@ Configuration Manager を使用している組織では、「[Configuration Mana
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Intune Configuration Manager共同管理セットアップ ガイド
 
 [Intune Configuration Manager共同管理セットアップ ガイド](https://aka.ms/comanagementsetup)を使用して、組織がMicrosoft Intuneと両方で共同管理する既存のConfiguration Manager クライアント デバイスと新しいインターネット ベースのデバイスを設定します。Configuration Manager。 共同管理を使用すると、Windows 10 デバイスを管理し、組織のデバイスに新機能を追加しながら、両方のソリューションの利点を受けることができます。
+
+#### <a name="school-data-sync-rollover-setup-guide"></a>学校データ同期 ロールオーバーセットアップ ガイド
+
+[SDS ロールオーバーセットアップ ガイド](https://aka.ms/sdsrolloversetupguide)では、組織が学生情報データをAzure Active DirectoryとOffice 365に同期するのに役立つ手順について説明します。 このガイドでは、Exchange OnlineとSharePoint Online のOffice 365 グループ、Microsoft TeamsとOneNoteのクラス チーム、Intuneを作成することで、ライフサイクル管理プロセスという用語を効率化します。 教育機関向け、およびサード パーティ製アプリの名簿とシングル サインオンの統合。 年末のクローズアウト、テナントのクリーンアップとアーカイブ、新しい学年の準備、新しい学年の起動を実行します。 次に、組織に合った同期展開方法を使用して、新しいプロファイルを作成できます。

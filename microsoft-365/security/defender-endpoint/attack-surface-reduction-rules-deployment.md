@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 8743d13939e73e25cefd08724d9a2f8d5a7fa410
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705540"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017433"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>攻撃面の縮小 (ASR) ルールの展開の概要
 
@@ -39,14 +39,14 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 
 さまざまな攻撃面を減らすことで、最初に攻撃が発生するのを防ぐのに役立ちます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 最初の準備では、配置するシステムの機能を理解することが重要です。 この機能を理解すると、組織を保護するために最も重要な ASR 規則を判断するのに役立ちます。 また、ASR デプロイの準備に必要な前提条件がいくつかあります。
 
 >[!IMPORTANT]
 >このガイドでは、ASR ルールを構成する方法を決定するのに役立つ画像と例を示します。これらのイメージと例は、環境に最適な構成オプションを反映していない可能性があります。
 
-開始する前に、基本的な情報については、 [攻撃表面の縮小の概要](overview-attack-surface-reduction.md)と [攻撃面の縮小ルールの概要 (パート 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) ) を参照してください。 カバレッジの領域と潜在的な影響を理解するには、現在の ASR ルールのセットについて理解します。 [「攻撃面の縮小ルールのリファレンス」を参照してください](attack-surface-reduction-rules-reference.md)。  ASR ルール セットについて理解している間は、ルールごとの GUID マッピングに注意してください。参照: [ASR ルールと GUID マトリックス](attack-surface-reduction-rules-reference.md#asr-rules-and-guids-matrix)。
+開始する前に、基本的な情報については、 [攻撃表面の縮小の概要](overview-attack-surface-reduction.md)と [攻撃面の縮小ルールの概要 (パート 1](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/demystifying-attack-surface-reduction-rules-part-1/ba-p/1306420) ) を参照してください。 カバレッジの領域と潜在的な影響を理解するには、現在の ASR ルールのセットについて理解します。 [「攻撃面の縮小ルールのリファレンス」を参照してください](attack-surface-reduction-rules-reference.md)。  ASR ルール セットについて理解している間は、ルールごとの GUID マッピングに注意してください。参照: [ASR 規則から GUID マトリックスへ](attack-surface-reduction-rules-reference.md#asr-rule-to-guid-matrix)。
 
 ASR ルールは、Microsoft Defender for Endpoint内の攻撃面の縮小機能の 1 つの機能にすぎません。 このドキュメントでは、人間が操作するランサムウェアなどの高度な脅威を阻止するために ASR ルールを効果的に展開する方法について詳しく説明します。  
 

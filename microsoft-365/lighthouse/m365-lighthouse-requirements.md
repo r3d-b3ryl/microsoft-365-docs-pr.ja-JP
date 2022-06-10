@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用するための要件の一覧を取得します。
-ms.openlocfilehash: 79084edf573f90ee4d977528c45fdfbfcedff36f
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: 4dae28206ba06b8e942290da29ba6a86b49ca7fd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692717"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017546"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの要件
 
@@ -35,14 +36,14 @@ Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (M
 - 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、Windows 365 Business、またはMicrosoft Defender for Businessライセンス
 - ライセンスを持つユーザーが 1,000 人以下である必要があります
 
-*お客様を Lighthouse にオンボードするには、委任された管理特権 (DAP) が必要です。 また、より安全な委任アクセスを有効にするために、お客様と一緒に詳細な委任された管理特権 (GDAP) を確立することをお勧めします。 DAP と GDAP は共存していますが、両方のモデルが配置されているお客様に対して GDAP が優先されます。 近いうちに、GDAP (DAP なし) を持つお客様は、Lighthouse にオンボードできるようになります。
+顧客を Lighthouse にオンボードするには、詳細な代理管理特権 (GDAP) と間接リセラー関係、または代理管理特権 (DAP) リレーションシップのいずれかが必要です。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。 近日、GDAP のみのリレーションシップ (間接リセラー関係なし) を持つお客様は、Lighthouse にオンボードできるようになります。
 
 ## <a name="requirements-for-enabling-device-management"></a>デバイス管理を有効にするための要件
 
 デバイス管理ページで顧客テナント デバイスを表示するには、MSP で次の手順を実行する必要があります。
 
 - Microsoft エンドポイント マネージャー (MEM) 内のすべての顧客デバイスを登録します。 詳細については、「[Microsoft Intuneにデバイスを登録する](/mem/intune/enrollment/)」を参照してください。
-- コンプライアンス ポリシーをすべての顧客デバイスに割り当てます。 詳細については、「[Microsoft Intuneでのコンプライアンス ポリシーの作成](/mem/intune/protect/create-compliance-policy)」を参照してください。
+- コンプライアンス ポリシーをすべての顧客デバイスに割り当てます。 詳細については、「[Microsoft Intune でコンプライアンス ポリシーを作成する](/mem/intune/protect/create-compliance-policy)」を参照してください。
 
 ## <a name="requirements-for-enabling-user-management"></a>ユーザー管理を有効にするための要件
 

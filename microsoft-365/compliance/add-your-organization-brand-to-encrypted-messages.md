@@ -23,18 +23,18 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: グローバル管理者Office 365組織のブランドを暗号化ポータルのコンテンツ&暗号化された電子メール メッセージに適用する方法について説明します。
-ms.openlocfilehash: c8806f3f52fe5c76ff0e318a13789f580d4e31e2
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: fb0525b112137bf57007b4188bc461abbb0c3f27
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403340"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016858"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>組織のブランドをビジネスメッセージ暗号化で暗号化されたメッセージのMicrosoft 365に追加する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-会社のブランドを適用して、組織の電子メール メッセージと暗号化ポータルの外観をカスタマイズできます。 作業を開始する前に、職場または学校アカウントにグローバル管理者アクセス許可を適用する必要があります。 これらのアクセス許可を取得したら、Get-OMEConfiguration コマンドレットとSet-OMEConfiguration Windows PowerShell コマンドレットを使用して、暗号化された電子メール メッセージのこれらの部分をカスタマイズします。
+会社のブランドを適用して、組織の電子メール メッセージと暗号化ポータルの外観をカスタマイズできます。 作業を開始する前に、職場または学校アカウントにグローバル管理者アクセス許可を適用する必要があります。 これらのアクセス許可を取得したら、Exchange Online PowerShell のGet-OMEConfigurationコマンドレットとSet-OMEConfiguration コマンドレットを使用して、暗号化された電子メール メッセージのこれらの部分をカスタマイズします。
 
 - 入門テキスト
 - 免責事項テキスト
@@ -45,7 +45,7 @@ ms.locfileid: "65403340"
 
 いつでも既定のルック アンド フィールに戻すこともできます。
 
-より詳細な制御が必要な場合は、Microsoft Purview高度なメッセージ暗号化を使用して、組織から送信された暗号化された電子メール用の複数のテンプレートを作成します。 これらのテンプレートを使用して、エンド ユーザー エクスペリエンスの一部を制御します。 たとえば、受信者が Google、Yahoo、Microsoft アカウントを使用して暗号化ポータルにサインインできるかどうかを指定します。 テンプレートを使用して、次のようないくつかのユース ケースを満たします。
+より詳細な制御が必要な場合は、Microsoft Purview Advanced Message Encryption を使用して、組織から送信された暗号化された電子メール用の複数のテンプレートを作成します。 これらのテンプレートを使用して、エンド ユーザー エクスペリエンスの一部を制御します。 たとえば、受信者が Google、Yahoo、Microsoft アカウントを使用して暗号化ポータルにサインインできるかどうかを指定します。 テンプレートを使用して、次のようないくつかのユース ケースを満たします。
 
 - 財務、営業など、個々の部門。
 - さまざまな製品
@@ -53,11 +53,11 @@ ms.locfileid: "65403340"
 - 電子メールの取り消しを許可するかどうか
 - 指定した日数が経過した後に、外部受信者に送信されたメールの有効期限を切れるかどうかを指定します。
 
-テンプレートを作成したら、Exchangeメール フロー ルールを使用して、暗号化されたメールに適用できます。 高度なメッセージ暗号化をMicrosoft Purviewしている場合は、これらのテンプレートを使用してブランド化したメールを取り消すことができます。
+テンプレートを作成したら、Exchangeメール フロー ルールを使用して、暗号化されたメールに適用できます。 Microsoft Purview Advanced Message Encryption をお持ちであれば、これらのテンプレートを使用してブランド化したメールを取り消すことができます。
 
 ## <a name="work-with-ome-branding-templates"></a>OME ブランド テンプレートを操作する
 
-ブランド テンプレート内の複数の機能を変更できます。 既定のテンプレートは変更できますが、削除することはできません。 高度なメッセージ暗号化を使用している場合は、カスタム テンプレートを作成、変更、削除することもできます。 Windows PowerShellを使用して、一度に 1 つのブランド 化テンプレートを操作します。
+ブランド テンプレート内の複数の機能を変更できます。 既定のテンプレートは変更できますが、削除することはできません。 高度なメッセージ暗号化を使用している場合は、カスタム テンプレートを作成、変更、削除することもできます。 Exchange Online PowerShell を使用して、一度に 1 つのブランド 化テンプレートを操作します。
 
 - [Set-OMEConfiguration](/powershell/module/exchange/set-omeconfiguration) - 作成した既定のブランド 化テンプレートまたはカスタム ブランド テンプレートを変更します。
 - [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) - 新しいブランド 化テンプレートを作成します。高度なメッセージ暗号化のみ。
@@ -65,39 +65,34 @@ ms.locfileid: "65403340"
 
 ## <a name="modify-an-ome-branding-template"></a>OME ブランド テンプレートを変更する
 
-Windows PowerShellを使用して、一度に 1 つのブランド 化テンプレートを変更します。 高度なメッセージ暗号化を使用している場合は、カスタム テンプレートを作成、変更、削除することもできます。
+Exchange Online PowerShell を使用して、一度に 1 つのブランド 化テンプレートを変更します。 高度なメッセージ暗号化を使用している場合は、カスタム テンプレートを作成、変更、削除することもできます。
 
-1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、Windows PowerShell セッションを開始し、Exchange Onlineに接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、powerShell Exchange Online接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) の説明に従ってSet-OMEConfigurationコマンドレットを使用するか、次の図と表を使用してガイダンスを作成します。
 
 ![カスタマイズ可能な電子メール パーツ。](../media/ome-template-breakout.png)
 
-<br>
-
-****
-
-|**カスタマイズする暗号化エクスペリエンスの特性**|**これらのコマンドを使用する**|
+|カスタマイズする暗号化エクスペリエンスの特性|これらのコマンドを使用する|
 |---|---|
-|背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> 背景色の詳細については、この記事の後半の「 [背景色」](#background-color-reference) セクションを参照してください。|
-|ロゴ|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <p> **例:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> サポートされているファイル形式: .png、.jpg、.bmp、.tiff <p> ロゴ ファイルの最適なサイズ:40 KB 未満 <p> ロゴ イメージの最適なサイズ: 170 x 70 ピクセル。 イメージがこれらのサイズを超えた場合、ポータルに表示するロゴのサイズがサービスによって変更されます。 このサービスでは、グラフィック ファイル自体は変更されません。 最適な結果を得るには、最適なサイズを使用します。|
-|送信者の名前と電子メール アドレスの横にあるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
-|[メッセージの読み取り] ボタンに表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
-|[メッセージの読み取り] ボタンの下に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
-|プライバシーに関する声明のリンクの URL|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
-|暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
-|暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
+|背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "<#RRGGBB hexadecimal color code or name value>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "Branding Template 1" -BackgroundColor "#ffffff"` <p> 背景色の詳細については、この記事の後半の「 [背景色」](#background-color-reference) セクションを参照してください。|
+|ロゴ|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <Byte[]>` <p> **例:**  <p> `Set-OMEConfiguration -Identity "Branding Template 1" -Image ([System.IO.File]::ReadAllBytes('C:\Temp\contosologo.png'))` <p> サポートされているファイル形式: .png、.jpg、.bmp、.tiff <p> ロゴ ファイルの最適なサイズ:40 KB 未満 <p> ロゴ イメージの最適なサイズ: 170 x 70 ピクセル。 イメージがこれらのサイズを超えた場合、ポータルに表示するロゴのサイズがサービスによって変更されます。 このサービスでは、グラフィック ファイル自体は変更されません。 最適な結果を得るには、最適なサイズを使用します。|
+|送信者の名前と電子メール アドレスの横にあるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -IntroductionText "<String up to 1024 characters>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "Branding Template 1" -IntroductionText "has sent you a secure message."`|
+|[メッセージの読み取り] ボタンに表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -ReadButtonText "<String up to 1024 characters>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "OME Configuration" -ReadButtonText "Read Secure Message."`|
+|[メッセージの読み取り] ボタンの下に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<String up to 1024 characters>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText "Encrypted message from ContosoPharma secure messaging system."`|
+|プライバシーに関する声明のリンクの URL|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PrivacyStatementURL "<URL>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "Branding Template 1" -PrivacyStatementURL "https://contoso.com/privacystatement.html"`|
+|暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -DisclaimerText "<Disclaimer statement. String of up to 1024 characters.>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "Branding Template 1" -DisclaimerText "This message is confidential for the use of the addressee only."`|
+|暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<Text for your portal. String of up to 128 characters.>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText "ContosoPharma secure email portal."`|
 |このカスタム テンプレートのワンタイム パス コードで認証を有効または無効にするには|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -OTPEnabled <$true|$false>` <p> **例:** <br/>このカスタム テンプレートに対してワンタイム パスコードを有効にするには <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $true` <p> このカスタム テンプレートのワンタイム パスコードを無効にするには <p> `Set-OMEConfiguration -Identity "Branding Template 1" -OTPEnabled $false`|
 |このカスタム テンプレートの Microsoft、Google、または Yahoo ID で認証を有効または無効にするには|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -SocialIdSignIn <$true|$false>` <p> **例:** <br/>このカスタム テンプレートのソーシャル ID を有効にするには <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $true` <p> このカスタム テンプレートのソーシャル ID を無効にするには <p> `Set-OMEConfiguration -Identity "Branding Template 1" -SocialIdSignIn $false`|
-|
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>OME ブランド テンプレートを作成する (Advanced Message Encryption)
 
-高度なメッセージ暗号化をMicrosoft Purviewしている場合は、[New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) コマンドレットを使用して、組織のカスタム ブランド テンプレートを作成できます。 テンプレートを作成したら、「OME ブランド テンプレートの変更」の説明に従って、Set-OMEConfiguration コマンドレットを使用して [テンプレートを変更します](#modify-an-ome-branding-template)。 複数のテンプレートを作成できます。
+Microsoft Purview Advanced Message Encryption を使用している場合は、 [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) コマンドレットを使用して、組織のカスタム ブランド テンプレートを作成できます。 テンプレートを作成したら、「OME ブランド テンプレートの変更」の説明に従って、Set-OMEConfiguration コマンドレットを使用して [テンプレートを変更します](#modify-an-ome-branding-template)。 複数のテンプレートを作成できます。
 
 新しいカスタム ブランド テンプレートを作成するには:
 
-1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、Windows PowerShell セッションを開始し、Exchange Onlineに接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、powerShell Exchange Online接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. [New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) コマンドレットを使用して、新しいテンプレートを作成します。
 
@@ -105,7 +100,7 @@ Windows PowerShellを使用して、一度に 1 つのブランド 化テンプ�
    New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
-   例えば、
+   たとえば、
 
    ```powershell
    New-OMEConfiguration -Identity "Custom branding template"
@@ -115,24 +110,19 @@ Windows PowerShellを使用して、一度に 1 つのブランド 化テンプ�
 
 ブランドのカスタマイズなど、既定のテンプレートからすべての変更を削除するには、次の手順を実行します。
 
-1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、Windows PowerShell セッションを開始し、Exchange Onlineに接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、powerShell Exchange Online接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. **Set-OMEConfiguration** の説明に従って [、Set-OMEConfiguration コマンドレットを使用します](/powershell/module/exchange/Set-OMEConfiguration)。 DisclaimerText、EmailText、PortalText の値から組織のブランド化されたカスタマイズを削除するには、値を空の文字列に設定します `""`。 ロゴなど、すべての画像値に対して、値 `"$null"`を .
 
    次の表では、暗号化カスタマイズ オプションの既定値について説明します。
 
-   <br>
-
-   ****
-
    |この暗号化の機能を既定のテキストと画像に戻すには|これらのコマンドを使用する|
    |:-----|:-----|
-   |暗号化された電子メール メッセージに付属する既定のテキスト。 暗号化メッセージの表示手順の上に表示される既定のテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
-   |暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **例:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
+   |暗号化された電子メール メッセージに付属する既定のテキスト。 暗号化メッセージの表示手順の上に表示される既定のテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |暗号化メッセージを含む電子メールの免責文|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <p> **例:**  <p> `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |暗号化メールの表示ポータルの最上部に表示されるテキスト|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <p> **既定に戻す例:** <p> `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |ロゴ|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <p> **既定に戻す例:** <p> `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
    |背景色|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <p> **既定に戻す例:** <p> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
-   |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>カスタム ブランド テンプレートを削除する (Advanced Message Encryption)
 
@@ -140,7 +130,7 @@ Windows PowerShellを使用して、一度に 1 つのブランド 化テンプ�
 
 カスタム ブランド テンプレートを削除するには:
 
-1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、Windows PowerShell セッションを開始し、Exchange Onlineに接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1. 組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、powerShell Exchange Online接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 2. **Remove-OMEConfiguration** コマンドレットを次のように使用します。
 
@@ -148,7 +138,7 @@ Windows PowerShellを使用して、一度に 1 つのブランド 化テンプ�
    Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
-   例えば、
+   たとえば、
 
    ```powershell
    Remove-OMEConfiguration -Identity "Branding template 1"
@@ -164,9 +154,9 @@ Windows PowerShellを使用して、一度に 1 つのブランド 化テンプ�
 既定のテンプレートを変更するか、新しいブランド 化テンプレートを作成した後、Exchangeメール フロー ルールを作成して、特定の条件に基づいてカスタム ブランドを適用できます。 最も重要なのは、電子メールを暗号化する必要がある点です。 このようなルールは、次のシナリオでカスタム ブランドを適用します。
 
 - OutlookまたはOutlook on the webを使用してエンド ユーザーによって電子メールが手動で暗号化された場合は、以前はOutlook Web App
-- Exchangeメール フロー ルールまたはMicrosoft Purview データ損失防止 ポリシーによって電子メールが自動的に暗号化された場合
+- Exchangeメール フロー ルールまたは Microsoft Purview データ損失防止ポリシーによって電子メールが自動的に暗号化された場合
 
-カスタム ブランドMicrosoft Purview Message Encryption適用するには、メール メッセージを暗号化するメール フロー ルールを設定します。 暗号化規則が最初に処理されるように、暗号化規則の優先順位はブランド化規則よりも高くする必要があります。 既定では、ブランド化ルールの前に暗号化規則を作成すると、暗号化ルールの優先度が高くなります。 暗号化を適用するExchangeメール フロー ルールを作成する方法については、「[Office 365で電子メール メッセージを暗号化するメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。 メール フロー ルールの優先度の設定については、「 [メール フロー](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule) ルールの管理」を参照してください。
+Microsoft Purview Message Encryption でカスタム ブランドが適用されるようにするには、メール メッセージを暗号化するメール フロー ルールを設定します。 暗号化規則が最初に処理されるように、暗号化規則の優先順位はブランド化規則よりも高くする必要があります。 既定では、ブランド化ルールの前に暗号化規則を作成すると、暗号化ルールの優先度が高くなります。 暗号化を適用するExchangeメール フロー ルールを作成する方法については、「[Office 365で電子メール メッセージを暗号化するメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。 メール フロー ルールの優先度の設定については、「 [メール フロー](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule) ルールの管理」を参照してください。
 
 1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校アカウントを使用して、[Office 365にサインインします](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
 
@@ -186,8 +176,8 @@ Windows PowerShellを使用して、一度に 1 つのブランド 化テンプ�
 
 7. 暗号化を適用するメール フロー ルールを既に定義している場合は、この手順をスキップしてください。 それ以外の場合は、暗号化を適用するようにメール フロー ルールを構成するには、[**次の操作]** から [**メッセージ セキュリティの変更**] を選択し、[メッセージ **の暗号化と権限の保護Office 365適用**] を選択します。 一覧から RMS テンプレートを選択し、[ **アクションの追加**] を選択します。
 
-   テンプレートの一覧には、既定のテンプレートとオプション、および作成するカスタム テンプレートが含まれます。 リストが空の場合は、Microsoft Purview Message Encryptionを設定していることを確認します。 手順については、「[Microsoft Purview Message Encryptionのセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。 既定のテンプレートの詳細については、「[Azure Information Protection 用のテンプレートの構成と管理](/information-protection/deploy-use/configure-policy-templates)」を参照してください。 [ **転送しない** ] オプションの詳細については、「 [電子メールの転送不可オプション」を](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)参照してください。 **暗号化専用** オプションの詳細については、「[電子メールの暗号化のみオプション」を](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)参照してください。
-   
+   テンプレートの一覧には、既定のテンプレートとオプション、および作成するカスタム テンプレートが含まれます。 一覧が空の場合は、Microsoft Purview メッセージ暗号化が設定されていることを確認します。 手順については、「 [Microsoft Purview メッセージ暗号化の設定](set-up-new-message-encryption-capabilities.md)」を参照してください。 既定のテンプレートの詳細については、「[Azure Information Protection 用のテンプレートの構成と管理](/information-protection/deploy-use/configure-policy-templates)」を参照してください。 [ **転送しない** ] オプションの詳細については、「 [電子メールの転送不可オプション」を](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)参照してください。 **暗号化専用** オプションの詳細については、「[電子メールの暗号化のみオプション」を](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)参照してください。
+
 8. **[次の操作を行う**] で、[**メッセージ セキュリティ**\>の変更] を選択し、**カスタム ブランドを OME メッセージに適用** します。 次に、ドロップダウンからブランド テンプレートを選択します。
 
    別のアクションを指定する場合は [ **アクションの追加** ] を選択するか、[ **保存]** を選択してから [ **OK] を選択します**。
@@ -198,7 +188,7 @@ Windows PowerShellを使用して、一度に 1 つのブランド 化テンプ�
 
 次の表では、使用可能な背景色の名前と対応する 16 進コード値について説明します。
 
-|**色の名前**|**カラー コード**|
+|色の名前|カラー コード|
 |---|---|
 |`aliceblue`|#f0f8ff|
 |`antiquewhite`|#faebd7|

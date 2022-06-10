@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
-ms.openlocfilehash: 2759156a3948339629ea7d988eaaa5464da197fa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095886"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014434"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
 
@@ -35,9 +35,9 @@ Microsoft Purview 電子情報開示 (Standard) または Microsoft Purview 電�
 
 ## <a name="collect-diagnostic-information-for-ediscovery-standard"></a>電子情報開示の診断情報を収集する (Standard)
 
-電子情報開示 (Standard) の診断情報の収集はコマンドレットベースであるため、Security & Compliance Center PowerShell を使用する必要があります。 次の PowerShell の例では、コマンドレットを実行し、指定したテキスト ファイルに出力を保存します。 ほとんどのサポート ケースでは、これらのコマンドの 1 つだけを実行する必要があります。
+電子情報開示 (Standard) の診断情報の収集はコマンドレットベースであるため、Security & Compliance PowerShell を使用する必要があります。 次の PowerShell の例では、コマンドレットを実行し、指定したテキスト ファイルに出力を保存します。 ほとんどのサポート ケースでは、これらのコマンドの 1 つだけを実行する必要があります。
 
-次のコマンドレットを実行するには、 [Security & Compliance Center PowerShell に接続します</span>](/powershell/exchange/connect-to-scc-powershell)。 接続したら、次のコマンドのうち 1 つ以上を実行し、プレースホルダーを実際のオブジェクト名に置き換えてください。
+次のコマンドレットを実行するには、 [Security & Compliance PowerShell に接続します</span>](/powershell/exchange/connect-to-scc-powershell)。 接続したら、次のコマンドのうち 1 つ以上を実行し、プレースホルダーを実際のオブジェクト名に置き換えてください。
 
 生成されたテキスト ファイルを確認し、機密情報を編集した後、ケースで作業しているMicrosoft サポート エンジニアに送信します。
 
@@ -80,13 +80,13 @@ Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches=="
 
 電子情報開示 (**プレミアム**) ケースの [設定] タブでは、ケースの診断情報をすばやくコピーできます。 診断情報はクリップボードに保存されるため、テキスト ファイルに貼り付けてMicrosoft サポートに送信できます。
 
-1. コンプライアンス ポータルに移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**eDiscoveryAdvanced**</a> >  を選択します。
+1. コンプライアンス ポータルに移動し、 **電子情報開示** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**の詳細設定**</a>を選択します。
 
 2. ケースを選択し、[**設定**] タブをクリックします。
 
 3. [ **ケース情報**] の [選択] をクリック **します**。
 
-4. ポップアップ ページで[**ActionsCopy のサポート情報****]** > をクリックして、情報をクリップボードにコピーします。
+4. ポップアップ ページで、[ **操作の** > **コピー] をクリックしてサポート情報** をクリップボードにコピーします。
 
 5. テキスト ファイル (メモ帳 で) を開き、テキスト ファイルに情報を貼り付けます。
 
