@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版プレイブック。
-ms.openlocfilehash: 72ac87a398decd7f3446bc29ee5c001c9f3773fa
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: b43c29ee706fb6d4864227fbfbfe95ad5bbe0495
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930286"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012904"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
 
@@ -82,7 +82,7 @@ MailItemsAccessed や Send などの重要なイベントをログに記録す�
 1. 監査ログ保持ポリシーの作成前 - ポリシーを作成する前に[知っておきたい主なポイント](audit-log-retention-policies.md#before-you-create-an-audit-log-retention-policy)。
 1. [PowerShell で監査ログの保持ポリシーを作成する](audit-log-retention-policies.md#create-an-audit-log-retention-policy)
 1. [Microsoft Purview コンプライアンス ポータルの監査ログ保持ポリシーの管理](audit-log-retention-policies.md#manage-audit-log-retention-policies-in-the-compliance-portal) - 監査ログの保持ポリシーは、[監査の保持ポリシー] タブ (ダッシュボードとも呼ばれます) に一覧表示されます。ダッシュボードを使用して、監査アイテム保持ポリシーを表示、編集、および削除できます。
-1. PowerShell で監査ログ保持ポリシーを作成して管理する - セキュリティ/コンプライアンス センター PowerShellを使用して、[監査ログ保持ポリシーの作成および管理](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell)を行うこともできます。 PowerShell を使用する理由の 1 つは、UI で使用できないレコードの種類またはアクティビティのポリシーを作成することです。
+1. PowerShell で監査ログ保持ポリシーを作成して管理する - セキュリティ/コンプライアンス PowerShell を使用して、[監査ログ保持ポリシーの作成および管理](audit-log-retention-policies.md#create-and-manage-audit-log-retention-policies-in-powershell)を行うこともできます。 PowerShell を使用する理由の 1 つは、UI で使用できないレコードの種類またはアクティビティのポリシーを作成することです。
 
 ## <a name="communication-compliance"></a>通信コンプライアンス
 
@@ -264,7 +264,7 @@ DLP ポリシーの構成は柔軟に行うことができます。 Teams やデ
 
 より多くの企業が、重要な電子情報開示プロセスに Microsoft Purview の電子情報開示 (プレミアム) ソリューションを使用しています。 これには、規制の要求、調査、訴訟への対応などがあります。
 
-1. 電子情報開示 (プレミアム) を管理する - [電子情報開示 (プレミアム) の構成、セキュリティ/コンプライアンス センターを使用したケースの管理、電子情報開示 (プレミアム) でのワークフローの管理、電子情報開示 (プレミアム) の検索結果の分析などの方法を説明します](/learn/modules/manage-advanced-ediscovery)。
+1. 電子情報開示 (プレミアム) を管理する - [電子情報開示 (プレミアム) の構成、ケースの管理、電子情報開示 (プレミアム) でのワークフローの管理、電子情報開示 (プレミアム) の検索結果の分析などの方法を説明します](/learn/modules/manage-advanced-ediscovery)。
 1. [Advanced eDiscovery の新しいケース形式を使用して電子情報開示ケースを作成する](advanced-ediscovery-new-case-format.md)
 1. [ケースを閉じるまたは削除します](close-or-delete-case.md) - 訴訟ケースまたは調査が完了したら、終了または削除できます。また、閉じたケースを再度開くこともできます。
 

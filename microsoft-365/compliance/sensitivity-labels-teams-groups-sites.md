@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 125be09f9d3d9a519e1985a37c0880e3f2465245
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: dfe76e31eb5816e53a3f6d4ab598f1737cdebaa1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772685"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014302"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -67,7 +67,7 @@ ms.locfileid: "65772685"
 
 1. この機能は Azure AD 機能を使用するため、Azure AD のドキュメント [「Azure Active Directory で Microsoft 365 グループに秘密度ラベルを割り当てる」](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels) の指示に従い、秘密度ラベルのサポートを有効にします。
 
-2. 秘密度ラベルを Azure AD に同期することが必要になります。 まず、[セキュリティ/コンプライアンス センターの PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+2. 秘密度ラベルを Azure AD に同期することが必要になります。 まず、[セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
    たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
 
@@ -313,7 +313,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 1. **[管理者として実行]** オプションを使用して PowerShell セッションを開きます。
 
-2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス センターの PowerShellに接続し](/powershell/exchange/connect-to-scc-powershell)、秘密度ラベルとそれらの GUID のリストを取得します。
+2. ラベルの GUID がわからない場合、[セキュリティ/コンプライアンス PowerShellに接続し](/powershell/exchange/connect-to-scc-powershell)、秘密度ラベルとそれらの GUID のリストを取得します。
 
    ```powershell
    Get-Label |ft Name, Guid
@@ -421,7 +421,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 
 ### <a name="use-powershell-to-convert-classifications-for-microsoft-365-groups-to-sensitivity-labels"></a>PowerShell を使用して Microsoft 365 グループの分類を秘密度ラベルに変換する
 
-1. まず、[セキュリティ/コンプライアンス センターの PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
+1. まず、[セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)。
 
    たとえば、管理者として実行している PowerShell セッションで、グローバル管理者アカウントでサインインします。
 

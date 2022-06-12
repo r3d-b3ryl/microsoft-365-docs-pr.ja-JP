@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 71f704e8215265409e5cf0edbbb3324d8925b0e3
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463211"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014188"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -77,6 +77,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上  | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 現在のチャネル: 2107 以上 <br /><br> 月次エンタープライズ チャネル: 2107 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 |  16.51 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 2.58 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 16.0.14931 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[PDF サポート](#pdf-support)| プレビュー: [ベータ チャネル](https://office.com/insider)へのロールアウト |  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
 
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook での秘密度ラベル機能
@@ -102,6 +103,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上 <sup>\*</sup>                    | レビュー中           | レビュー中               | はい |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中           | レビュー中               | はい |
 |[既定ラベルと必須ラベルのさまざまな設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                   | 4.2111 以上           | 4.2111 以上               | はい |
+|[PDF サポート](#pdf-support) | レビュー中|  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
 |
 
 **脚注:**
@@ -370,6 +372,8 @@ ${If.App.<application type>}<your visual markings text> ${If.End}
 
 - 必須のラベル付けが有効になっている場合、ユーザーはドキュメントから秘密度ラベルを削除することはできませんが、既存のラベルを変更することはできます。
 
+- 必須のラベル付けが有効になっている場合、ドキュメントにラベルが付けられているか暗号化されていると、PDF に印刷オプションは使用できなくなります。 詳細については、このページの「[PDF サポート](#pdf-support)」セクションを参照してください。
+
 この設定をいつ使用するかについては、[ポリシー設定](sensitivity-labels.md#what-label-policies-can-do)に関する情報を参照してください。
 
 > [!NOTE]
@@ -399,6 +403,38 @@ Outlook アプリが必須のラベル付けをオフにすることをサポー
 > [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) コマンドレットまたは [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) コマンドレットを使用して、PowerShell の詳細設定 **OutlookDefaultLabel** および **DisableMandatoryInOutlook** を設定している場合は、このコマンドレットを使用してください。
 > 
 > これらの PowerShell 設定で選択した値は、Microsoft Purview コンプライアンス ポータルのラベル ポリシー構成に反映され、これらの設定をサポートする Outlook アプリで自動的に機能します。 その他の PowerShell の詳細設定は、Azure Information Protection 統合ラベル付けクライアントでのみサポートされたままです。
+
+## <a name="pdf-support"></a>PDF サポート
+
+組み込みのラベル付けについては、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表を使用して、サポートされている最小バージョンを特定してください。 Azure Information Protection 統合ラベル付けクライアントは、Office アプリでは PDF をサポートしていません。
+
+Word、Excel、および PowerPoint は、Office ドキュメントを PDF ドキュメントに変換するための次の方法をサポートしています。
+
+- [ファイル] > [名前を付けて保存] > [PDF] 
+- [ファイル] > [エクスポート] > [PDF]
+- [共有] > [コピーを送信] > [PDF]
+
+PDF が作成されると、コンテンツのマーキングと暗号化を含むラベルが継承されます。 暗号化された PDF は、Windows または Mac の Microsoft Edge で開くことができます。 詳細および代替リーダーについては、「[保護された PDF をサポートする PDF リーダー](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)」を参照してください。
+
+
+PDF シナリオはサポートされていません:
+
+- PDF に印刷する
+    
+    ユーザーがこのオプションを選択すると、ドキュメントがラベルの保護と暗号化 (適用されている場合) を失うことを警告され、続行するには確認する必要があります。 秘密度ラベル ポリシーでラベルを削除するか、その分類を下げる理由が必要な場合は、このプロンプトが表示されます。
+    
+    このオプションは秘密度ラベルを削除するため、必須のラベルを使用している場合、ユーザーはこのオプションを使用できません。 この構成は、ユーザーがメールとドキュメントにラベルを適用することを要求する秘密度ラベル ポリシー設定を参照します。
+
+- PDF/A 形式と暗号化
+    
+     ラベルが暗号化を適用する場合、長期アーカイブ用に設計されたこの PDF 形式はサポートされておらず、ユーザーは Office ドキュメントを PDF に変換できません。
+    
+- パスワード保護と暗号化
+    
+    ドキュメントのラベルが暗号化を適用する場合、オプション **[ファイル]** > **[情報]** > **[ドキュメントの保護]** > **[パスワードで暗号化]** はサポートされません。 このシナリオでは、ユーザーは [パスワードで暗号化] オプションを使用できなくなります。
+
+この機能の詳細については、「[Office アプリで作成された PDF に秘密度ラベルを適用する](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps)」の発表を参照してください。
+
 
 ## <a name="auditing-labeling-activities"></a>ラベル付けアクティビティの監査
 

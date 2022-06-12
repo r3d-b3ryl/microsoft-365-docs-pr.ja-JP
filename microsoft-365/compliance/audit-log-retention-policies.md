@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: 監査ログの保持ポリシーは、新しい Microsoft Purview 監査 (プレミアム) 機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
-ms.openlocfilehash: 0a35177c160e80cef2263382e4a1bc04057963b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: e75c88ba3ddd47b433e733984b76716532ab3ffa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099677"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012430"
 ---
 # <a name="manage-audit-log-retention-policies"></a>監査ログの保持ポリシーを管理する
 
@@ -102,7 +102,7 @@ Microsoft 365 の監査 (プレミアム) には、すべての組織の既定�
 
 > [!IMPORTANT]
 >
-> **New-UnifiedAuditLogRetentionPolicy** コマンドレットを使用すると、ダッシュボードの **[監査保持ポリシーの作成]** ツールでは使用できないレコードの種類またはアクティビティの監査ログ保持ポリシーを作成できます。 この場合、**[監査保持ポリシー]** ダッシュボードからポリシーを編集 (保持期間の変更やアクティビティの追加と削除など) することはできません。 コンプライアンス センターでは、ポリシーを表示したり、削除したりすることはできません。 ポリシーを編集するには、セキュリティ/コンプライアンス センターの PowerShell で [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用します。
+> **New-UnifiedAuditLogRetentionPolicy** コマンドレットを使用すると、ダッシュボードの **[監査保持ポリシーの作成]** ツールでは使用できないレコードの種類またはアクティビティの監査ログ保持ポリシーを作成できます。 この場合、**[監査保持ポリシー]** ダッシュボードからポリシーを編集 (保持期間の変更やアクティビティの追加と削除など) することはできません。 Microsoft Purview コンプライアンス ポータルでは、ポリシーを表示したり、削除したりすることはできません。 ポリシーを編集するには、セキュリティ/コンプライアンス PowerShell で [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用します。
 >
 > **ヒント:** PowerShell を使用して編集する必要があるポリシーのメッセージがポップアップ ページの上部に表示されます。
 
@@ -112,13 +112,13 @@ Microsoft 365 の監査 (プレミアム) には、すべての組織の既定�
 
 ## <a name="create-and-manage-audit-log-retention-policies-in-powershell"></a>PowerShell で監査ログの保持ポリシーを作成して管理する
 
-セキュリティ/コンプライアンス センターの PowerShell を使用して監査ログの保持ポリシーを作成して管理することもできます。 PowerShell を使用する理由の 1 つは、UI で使用できないレコードの種類またはアクティビティのポリシーを作成することです。
+セキュリティ/コンプライアンス PowerShell を使用して監査ログの保持ポリシーを作成して管理することもできます。 PowerShell を使用する理由の 1 つは、UI で使用できないレコードの種類またはアクティビティのポリシーを作成することです。
 
 ### <a name="create-an-audit-log-retention-policy-in-powershell"></a>PowerShell で監査ログの保持ポリシーを作成する
 
 PowerShell で監査ログの保持ポリシーを作成するには、次の手順を実行します。
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次のコマンドを実行して監査ログの保持ポリーを作成します。
 
@@ -143,7 +143,7 @@ New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -
 
 ### <a name="view-policies-in-powershell"></a>PowerShell でポリシーを表示する
 
-セキュリティ/コンプライアンス センターの PowerShell で [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを表示します。
+セキュリティ/コンプライアンス PowerShell で [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを表示します。
 
 組織においてすべての監査ログの保持ポリシーの設定を表示するコマンドの例を以下に示します。 このコマンドを実行すると、ポリシーが優先度の高い順に並べ替えられます。
 
@@ -156,11 +156,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>PowerShell でポリシーを編集する
 
-セキュリティ/コンプライアンス センターの PowerShell で[Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用して、既存の監査ログの保持ポリシーを編集します。
+セキュリティ/コンプライアンス PowerShell で [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) コマンドレットを使用して、既存の監査ログの保持ポリシーを編集します。
 
 ### <a name="delete-policies-in-powershell"></a>PowerShell でポリシーを削除する
 
-セキュリティ/コンプライアンス センターの PowerShell で[Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを削除します。 組織からポリシーが削除されるまで、最大 30 分かかる場合があります。
+セキュリティ/コンプライアンス PowerShell で [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) コマンドレットを使用して、監査ログの保持ポリシーを削除します。 組織からポリシーが削除されるまで、最大 30 分かかる場合があります。
 
 ## <a name="more-information"></a>詳細情報
 

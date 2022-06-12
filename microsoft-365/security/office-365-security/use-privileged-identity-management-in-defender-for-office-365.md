@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft Defender for Office 365 で昇格された特権タスクを実行し、データへのリスクを軽減ため、Just-In-Time の時間制限付きアクセスをユーザーに付与するために Azure PIM を統合する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e043a671b2416ba1c856c74a53206b06c180f13
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 32bc21130d98687f95af2ce6664c0759a716f362
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130672"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010236"
 ---
 <!--A-->
 # <a name="privileged-identity-management-pim-and-why-to-use-it-with-microsoft-defender-for-office-365"></a>Privileged Identity Management (PIM) と Microsoft Defender for Office 365 で使用する理由
@@ -86,7 +86,7 @@ Microsoft 365 Defender ポータルで、必要なアクセス許可を含むカ
 
 ### <a name="nest-the-newly-created-security-group-into-the-role-group"></a>新しく作成したセキュリティ グループを役割グループに入れ子にします。
 
-1. [セキュリティー/コンプライアンス センター PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)し、次のコマンドを実行します:
+1. [セキュリティー/コンプライアンス PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)し、次のコマンドを実行します:
 
    ```powershell
    Add-RoleGroupMember "<<Role Group Name>>" -Member "<<Azure Security Group>>"`

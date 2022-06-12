@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: この記事では、認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティスを説明します。
-ms.openlocfilehash: bd153d34e6e9ddc4a4b627a79df90286661353d3
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 783dfce365b34b694f048c7e65e3158678bea244
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128590"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017988"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>認証されていないユーザーとファイルおよびフォルダーを共有するためのベスト プラクティス
 
@@ -87,7 +87,8 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 既定のリンク設定を組織内のユーザーに対してのみ有効なリンクに変更することにより、このようなリスクを軽減できます。 認証されていない人と共有したいユーザーは、そのオプションを意図的に選択することが必要になります。
 
-組織の既定のファイルやフォルダーの共有リンクを設定するには
+組織の既定のファイルやフォルダーの共有リンクを設定するには:
+
 1. SharePoint 管理センターを開き、[<a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank">**共有**</a>] を選択します。
 1. **[ファイルとフォルダーのリンク]** で、**[自分の組織内のユーザーのみ]** を選択します。
 
@@ -95,7 +96,7 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 1. **[保存]** を選びます。
 
-特定のサイトの既定のファイルやフォルダーの共有リンクを設定するには
+特定のサイトの既定のファイルやフォルダーの共有リンクを設定するには:
 
 1. SharePoint 管理センターを開き、**[サイト]** を展開してから、<a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を選択します。
 1. 変更するサイトを選択してから、**[共有]** を選択します。
@@ -109,7 +110,8 @@ Set-SPOSite -Identity https://contoso.sharepoint.com/sites/marketing -OverrideTe
 
 [Microsoft Purview データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md) を使用して、機密コンテンツの認証されていない共有を防ぐことができます。 データ損失防止は、ファイルの秘密度ラベル、保持ラベル、ファイル自体に含まれている機密情報に基づいてアクションを実行することができます。
 
-DLP ルールを作成するには
+DLP ルールを作成するには:
+
 1. Microsoft Purview コンプライアンス管理センターで、[[データ損失防止]](https://compliance.microsoft.com/datalossprevention) ページに移動します。
 2. **[ポリシーの作成]** をクリックします。
 3. **[カスタム]** を選択し、**[次へ]** をクリックします。
@@ -133,18 +135,11 @@ DLP ルールを作成するには
 
 ## <a name="protect-against-malicious-files"></a>悪意のあるファイルから保護する
 
-匿名ユーザーにファイルのアップロードを許可する場合、悪意のあるファイルをアップロードされるリスクが高くなります。 Microsoft 365 では、Defender for Office 365 の *安全な添付ファイル* 機能を使用することにより、アップロードされたファイルを自動的にスキャンし、安全でないことが判明したファイルを検疫できます。
+匿名ユーザーにファイルのアップロードを許可する場合、悪意のあるファイルをアップロードされるリスクが高くなります。 Microsoft Defender for Office 365 プラン 1 またはプラン 2 ライセンスを持つ組織 (Microsoft 365 E5 やアドオンなど) では、*[安全な添付ファイル]* 機能を使用して、サンドボックス仮想環境でアップロードされたファイルを爆発させ、安全でないと見なされたファイルを検疫できます。
 
-安全な添付ファイル機能をオンにするには
-1. セキュリティ/コンプライアンス管理センターで、[ATP 安全な添付ファイル ページ](https://protection.office.com/safeattachmentv2)を開きます。
-2. **[グローバル設定]** をクリックします。
-3. SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にします。
+手順については、「[SharePoint、OneDrive、Microsoft Teams に対して安全な添付ファイルをオンにする](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md)」を参照してください。
 
-   ![セキュリティ/コンプライアンス センターの安全な添付ファイル設定のスクリーンショット。](../media/safe-attachments-setting.png)
-
-4. 必要に応じて安全なドキュメントもオンにし、**[保存]** をクリックします。
-
-その他のガイドについては、「[SharePoint、OneDrive、Microsoft Teams 用の ATP](../security/office-365-security/mdo-for-spo-odb-and-teams.md)」と「[SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする](../security/office-365-security/turn-on-mdo-for-spo-odb-and-teams.md)」を参照してください。
+Microsoft 365 A5 または E5 セキュリティ ライセンスをお持ちの場合は、*[安全なドキュメント]* 機能をオン (および使用) することもできます。 詳細については、「[Microsoft 365 A5 または E5 セキュリティの安全なドキュメント](../security/office-365-security/safe-docs.md)」を参照してください。
 
 ## <a name="add-copyright-information-to-your-files"></a>ファイルに著作権情報を追加する
 
@@ -169,4 +164,4 @@ Microsoft Purview 管理センターで秘密度ラベルを使用する場合�
 
 [ゲストと共有するときにファイルの偶発的な公開を制限する](share-limit-accidental-exposure.md)
 
-[セキュリティで保護されたゲスト共有の環境を作成する](create-secure-guest-sharing-environment.md)
+[セキュリティで保護されたゲスト共有環境を作成する](create-secure-guest-sharing-environment.md)
