@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b0a1f1bec76a8dd22bc04502ea7ca09f2c7af66
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772776"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008869"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -170,7 +170,6 @@ Microsoft 365 は、会社のインフラストラクチャからの受信メー
 
 - ソース IP アドレス (/24 CIDR 範囲に分割)
 - 逆引き DNS (PTR) レコードの組織ドメイン。
-- 検証済みの DKIM ドメイン。
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>送信者/受信者ペアの許可エントリを作成する
 

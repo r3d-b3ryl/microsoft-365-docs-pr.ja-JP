@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: abb18142517ceb6c5442ccd372c4f392db706bc1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 6243db961e9c7789ea1a43f41d848d3d9cbda9e2
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65284954"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016462"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -214,7 +214,7 @@ SharePoint サイトや OneDrive アカウントに適用されているアイ�
 
 まず、アイテム保持ポリシーを選択した場所に配布し、コンテンツに適用する必要があります。 アイテム保持ポリシーの配布状態は、Microsoft Purview コンプライアンス ポリシーの [**アイテム保持ポリシー**] ページから選択することでいつでも確認できます。 ポップアウト ウィンドウで、状態に **(エラー)** が表示され、場所の詳細に、ポリシーの展開またはポリシーの再展開に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-AppRetentionCompliancePolicy](/powershell/module/exchange/set-appretentioncompliancepolicy) または [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください。
 
-1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次のいずれかのコマンドを実行します：
     

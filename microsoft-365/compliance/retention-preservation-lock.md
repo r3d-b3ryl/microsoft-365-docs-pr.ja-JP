@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーと保持ラベル ポリシーとともに保管ロックを使用して、規制要件を満たし、不正な管理者から保護します。
-ms.openlocfilehash: 6ee7937bad487fcac8d1ee15483becfb276d9579
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 228d4cd1a7778b5352df6d10d31b7e4c25af915f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922221"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016286"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>保管ロックを使用して、アイテム保持ポリシーと保持ラベル ポリシーへの変更を制限する
 
@@ -58,7 +58,7 @@ ms.locfileid: "65922221"
 
 保持ロックのいかなる構成にも対応するすべてのアイテム保持ポリシー。 保持ラベル ポリシーに保管ロックを適用するには、アイテムを規制レコードとしてマークするラベルのみがそれに含まれる必要があります。
 
-1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 2. [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy) を実行してロックするポリシーの名前を検索します。例えば:
     
