@@ -17,16 +17,16 @@ ms.collection:
 description: OutlookとOutlook on the web、個々のユーザー、または組織全体に対して、レポート メッセージまたはレポート フィッシング アドインを有効にする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a4166b36888c96b12a8aa410848c392c2afdaeb5
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: b0882a37161989248b8c970a5dbe01efc0bcff65
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144841"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043765"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -57,9 +57,9 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
   - Outlook 2013 SP1 以降
   - Outlook 2016 for Mac
   - Enterprise用のMicrosoft 365 アプリに含まれるOutlook
-  - iOS と Android 用のOutlook アプリ
+  - iOSとAndroid用のアプリをOutlookする
 
-- 両方のアドインは、共有メールボックスでは使用できません。
+- どちらのアドインも、共有メールボックス、グループメールボックス、または委任メールボックスでは使用できません (アドインはグレー表示されます)。
 
 - どちらのアドインも、オンプレミスのExchangeメールボックスでは使用できません。
 

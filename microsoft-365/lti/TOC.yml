@@ -24,3 +24,9 @@
       href: moodle-plugin-configuration.md
     - name: Moodle でMicrosoft Teamsクラスと会議を使用する
       href: teams-classes-meetings-with-moodle.md
+- name: LMS 統合を開く
+  items:
+    - name: Open LMS 用の Moodle プラグインを設定して構成する
+      href: open-lms-plugin-configuration.md
+    - name: Open LMS でMicrosoft Teamsクラスと会議を使用する
+      href: open-lms-teams-classes-and-meetings.md

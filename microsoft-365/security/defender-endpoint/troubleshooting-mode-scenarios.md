@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f5a1734b267f512f19179e20b7ba66d8f38e1d19
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 1c5a3a9a085f889383f570f0d9fc8dc256e29d4f
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874114"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043084"
 ---
 # <a name="troubleshooting-mode-scenarios-in-microsoft-defender-for-endpoint-preview"></a>Microsoft Defender for Endpointでのモード シナリオのトラブルシューティング (プレビュー)
 
@@ -36,13 +36,13 @@ ms.locfileid: "65874114"
 > [!IMPORTANT]
 > 一部の情報は、リリース済みの製品に関連しており、商用リリースされる前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-Microsoft Defender for Endpointトラブルシューティング モードを使用すると、組織のポリシーによって制御されている場合でも、デバイスから有効にし、さまざまなシナリオをテストすることで、さまざまな Microsoft Defender ウイルス対策機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これは排他的にEnterprise専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
+Microsoft Defender for Endpointトラブルシューティング モードを使用すると、さまざまなMicrosoft Defender ウイルス対策機能をデバイスから有効にし、組織のポリシーによって制御されている場合でも、さまざまなシナリオをテストすることで、さまざまな機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これはエンタープライズ専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
 
 ## <a name="scenario-1-unable-to-install-application"></a>シナリオ 1: アプリケーションをインストールできない
 
 アプリケーションをインストールするが、Microsoft Defender ウイルス対策と改ざん防止がオンになっているというエラー メッセージが表示される場合は、次の手順に従って問題のトラブルシューティングを行います。
 
-1. SOC 管理者にトラブルシューティング モードを有効にするよう要求します。 トラブルシューティング モードが開始されると、Windows セキュリティ通知が表示されます。  
+1. セキュリティ管理者にトラブルシューティング モードを有効にするよう要求します。 トラブルシューティング モードが開始されると、Windows セキュリティ通知が表示されます。  
 
 2. ローカル管理者のアクセス許可を持つデバイスにConnectします (ターミナル サービスを使用するなど)。  
 
@@ -52,8 +52,9 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 
 5. 管理者特権の PowerShell コマンド プロンプトを起動し、RTP をオフにします。 
 
-    - RTP の状態を確認するために実行 `get-mppreference` します。
-    - 実行 `set–mppreference` して RTP 実行をオフにします。 
+    - RealTimeProtection の状態を確認するために実行 `Get-MpComputerStatus` します。
+    - 実行 `Set-mppreference -DisableRealtimeMonitoring $true` して RTP をオフにします。
+    - もう一度実行 `Get-MpComputerStatus` して、RealTimeProtection の状態を確認します。
 
 6. アプリケーションをインストールしてみてください。
 
@@ -71,11 +72,11 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 
 5. 次のいずれかのコマンドを使用して、ProcMon の結果に基づいてプロセス/ファイル/フォルダー/拡張子の除外を追加します (以下で説明するパス、拡張子、およびプロセスの除外は例のみです)。 
 
-    - Set-mppreference -ExclusionPath (C:\DB\DataFiles など) 
+    - `Set-mppreference -ExclusionPath` (C:\DB\DataFiles など) 
     
-    - Set-mppreference –ExclusionExtension (.dbx など) 
+    - `Set-mppreference –ExclusionExtension` (たとえば、.dbx) 
     
-    - Set-mppreference –ExclusionProcess (C:\DB\Bin\Convertdb.exeなど) 
+    - `Set-mppreference –ExclusionProcess` (たとえば、C:\DB\Bin\Convertdb.exe) 
 
 6. 除外を追加した後、CPU 使用率が低下したかどうかを確認します。 
 
@@ -85,7 +86,7 @@ Windows Defenderのスキャンと更新に対するコマンドレット構成�
 
 リアルタイム保護Microsoft Defender ウイルス対策有効にすると、アプリケーションで基本的なタスクを実行するのに長い時間がかかります。 リアルタイム保護を無効にし、問題のトラブルシューティングを行うには、次の手順に従います。 
 
-1. デバイスでトラブルシューティング モードを有効にするように SOC 管理者に要求します。 
+1. デバイスでトラブルシューティング モードを有効にするようにセキュリティ管理者に要求します。 
 
 2. このシナリオで RTP を無効にするには、まず改ざん防止を無効にします。 詳細については、「 [改ざん防止を使用してセキュリティ設定を保護する](prevent-changes-to-security-settings-with-tamper-protection.md)」を参照してください。 
 
@@ -93,7 +94,7 @@ Windows Defenderのスキャンと更新に対するコマンドレット構成�
 
 4. 管理者特権の PowerShell コマンド プロンプトを起動します。 
 
-    - Set-mppreference -DisableRealtimeMonitoring $true 
+    - `Set-mppreference -DisableRealtimeMonitoring $true` 
 
 5. RTP を無効にした後、アプリケーションの速度が低下しているかどうかを確認します。 
 
@@ -105,7 +106,7 @@ Attack Surface Reduction (ASR) では、**すべてのOffice アプリケーシ�
 
 2. 管理者特権の PowerShell コマンド プロンプトを起動します。 
 
-    - Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions 無効 
+    - `Set-MpPreference -AttackSurfaceReductionRules_Ids D4F940AB-401B-4EFC-AADC-AD5F3C50688A -AttackSurfaceReductionRules_Actions Disabled` 
 
 3. ASR 規則を無効にした後、Microsoft Office プラグインが機能することを確認します。
 
@@ -119,13 +120,13 @@ Network Protection によって Microsoft ドメインがブロックされ、�
 
 2. 管理者特権の PowerShell コマンド プロンプトを起動します。 
 
-    - Set-MpPreference -EnableNetworkProtection が無効になっている 
+    - `Set-MpPreference -EnableNetworkProtection Disabled` 
 
 3. Network Protection を無効にした後、ドメインが許可されているかどうかを確認します。 
 
 詳細については、「 [ネットワーク保護を使用して、不適切なサイトへの接続を防止する」を](network-protection.md)参照してください。 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [トラブルシューティング モードを有効にする](enable-troubleshooting-mode.md)
 - [改ざん防止機能を使用してセキュリティ設定を保護する](prevent-changes-to-security-settings-with-tamper-protection.md)

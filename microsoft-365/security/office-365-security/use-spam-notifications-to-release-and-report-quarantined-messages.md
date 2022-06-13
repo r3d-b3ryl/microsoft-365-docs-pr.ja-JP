@@ -21,16 +21,16 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で検疫されたメッセージのエンドユーザースパム通知について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c1688e4a56787c9593aae7006a05d52b16558647
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 44ed83a95fe8f588369f0a1bbae4809f32581f87
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393482"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043491"
 ---
 # <a name="use-quarantine-notifications-to-release-and-report-quarantined-messages"></a>検疫通知を使用して検疫済みメッセージを解放および報告する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,9 @@ AdminOnlyAccessPolicy または DefaultFullAccessPolicy という名前の組み
 > [!NOTE]
 > 既定では、信頼度の高いフィッシング、マルウェア、メール フロー ルール (トランスポート ルールとも呼ばれます)、または Defender for Office 365のセーフ添付ファイル ポリシーとして検疫されるメッセージは、管理者のみが使用できます (既定では、AdminOnlyAccessPolicy 検疫ポリシーが使用されます)。 詳細については、「[EOP の管理者として検疫済みのメッセージやファイルを管理する](manage-quarantined-messages-and-files.md)」を参照してください。
 >
-> 現時点では、検疫通知はグループではサポートされていません。
+> 配布グループまたはメールが有効なセキュリティ グループに送信されたメッセージの検疫通知は、すべてのグループ メンバーに送信されます。
+>
+> Microsoft 365 グループに送信されたメッセージの検疫通知は、[グループ メンバーにグループ **の会話とイベントのコピーを送信** する] 設定がオンになっている場合にのみ、すべてのグループ メンバーに送信されます。
 
 検疫通知を受け取ると、検疫されたメッセージごとに常に次の情報を使用できます。
 

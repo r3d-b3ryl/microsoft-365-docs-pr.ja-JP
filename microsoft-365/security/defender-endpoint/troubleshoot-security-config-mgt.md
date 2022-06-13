@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4f309c98b7278dbeb062deacf49553b7e73f58da
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: fbfb20b233f1f942faaddd2a235a55beeb48d2c6
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873790"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043124"
 ---
 # <a name="troubleshoot-onboarding-issues-related-to-security-management-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング
 
@@ -75,16 +75,17 @@ Microsoft Defender for Endpointオンボード手順の Security Management に�
 
 Microsoft Defender for Endpoint ポータルを使用して、セキュリティ管理者はMicrosoft Defender for Endpointオンボード用の Security Management のトラブルシューティングを行うことができます。
 
-**Endpoints** \> **デバイス インベントリ** では、管理チャネル (MEM など) でフィルター処理するために **[Managed By**] 列が追加されています。
+**構成管理** では、**MDE によるオンボード セキュリティ管理** ウィジェットが追加され、Microsoft Defender for Endpointマネージド デバイスの登録状態の内訳が表示されます。
 
-:::image type="content" source="./images/device-inventory-mde-error.png" alt-text="デバイス インベントリ ページ" lightbox="./images/device-inventory-mde-error.png":::
+Microsoft Defender for Endpointによって管理されているすべてのデバイスの一覧を表示するには、[**MDE によって管理されているすべてのデバイスを表示する**] を選択します。
 
-Microsoft Defender for Endpointオンボード プロセスの Security Management に失敗したすべてのデバイスの一覧を表示するには、**MDE-Error** でテーブルをフィルター処理します。
-
-一覧で特定のデバイスを選択すると、サイド パネルにトラブルシューティングの詳細が表示され、エラーの根本原因と対応するドキュメントが示されます。
+一覧で、デバイスの登録状態が "成功" でない場合は、デバイスを選択してサイド パネルにトラブルシューティングの詳細を表示し、エラーの根本原因と対応するドキュメントを示します。
 
 
 :::image type="content" source="./images/secconfig-mde-error.png" alt-text="デバイス インベントリ ページに適用されるフィルター条件" lightbox="./images/secconfig-mde-error.png":::
+
+> [!NOTE] 
+> セキュリティ管理機能を使用しようとして修正に取り組んでいるときに、サード パーティの MMM の正確な検出に影響を与える問題を認識しています。 
 
 ## <a name="run-microsoft-defender-for-endpoint-client-analyzer-on-windows"></a>Windowsでクライアント アナライザー Microsoft Defender for Endpoint実行する
 
@@ -121,7 +122,7 @@ AAD または MEM でオンボードされたデバイスを識別できず、�
 |エラー コード|登録状態|管理者のアクション|
 |---|---|---|
 |`5-7`, `9`, `11-12`, `26-33`|一般的なエラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローでエラーが発生しました。 これは、デバイスが[Microsoft Defender for Endpoint管理チャネルの前提条件を](security-config-management.md)満たしていない可能性があります。 デバイスで [クライアント アナライザー](https://aka.ms/BetaMDEAnalyzer) を実行すると、問題の根本原因を特定するのに役立ちます。 問題が解決しない場合は、サポートにお問い合わせください。|
-| `8`, `44` | Microsoft エンドポイント マネージャー構成の問題 | デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft エンドポイント マネージャーは管理 センターを通じてMicrosoft Defender for Endpointセキュリティ構成を許可するように構成されていません。 [Microsoft エンドポイント マネージャー テナントが構成され、機能がオン](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management)になっていることを確認します。|
+| `8`, `44` | Microsoft エンドポイント マネージャー構成の問題 | デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft エンドポイント マネージャーは、Microsoft Defender for Endpointセキュリティ構成を許可するように管理センターを介して構成されていません。 [Microsoft エンドポイント マネージャー テナントが構成され、機能がオン](/mem/intune/protect/mde-security-integration#configure-your-tenant-to-support-microsoft-defender-for-endpoint-security-configuration-management)になっていることを確認します。|
 |`13-14`,`20`,`24`,`25`|接続の問題|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、接続の問題が原因である可能性があるセキュリティ構成管理フローにエラーが発生しました。 [Azure Active DirectoryエンドポイントとMicrosoft エンドポイント マネージャー エンドポイント](security-config-management.md#connectivity-requirements)がファイアウォールで開かれていることを確認します。|
 |`10`,`42`|一般的なハイブリッド結合エラー|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、セキュリティ構成管理フローにエラーが発生し、OS でハイブリッド参加を実行できませんでした。 OS レベル[のハイブリッド参加エラーのトラブルシューティングには、ハイブリッド Azure Active Directory参加済みデバイス](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current)のトラブルシューティングを使用します。|
 |`15`|テナントの不一致|デバイスが正常にMicrosoft Defender for Endpointにオンボードされました。 ただし、Microsoft Defender for Endpoint テナント ID がAzure Active Directoryテナント ID と一致しないため、セキュリティ構成管理フローでエラーが発生しました。 Defender for Endpoint テナントのAzure Active Directoryテナント ID が、ドメインの SCP エントリのテナント ID と一致していることを確認します。 詳細については、「[Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング」を参照](troubleshoot-security-config-mgt.md)してください。|

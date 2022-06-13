@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用することです。 ただし、[アップグレード] タブは常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: 17e1a35d096762e1645fd4e7143935578cfc1a79
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 1867a161f8de02e20261553bb4dbb10b92ce523f
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329265"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042398"
 ---
 # <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
 
@@ -38,7 +38,7 @@ ms.locfileid: "63329265"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページに移動します。
 2. アップグレードするサブスクリプションを選択します。
-3. [サブスクリプションの詳細] ページで、[**アップグレード**] を選択します。
+3. [サブスクリプションの詳細] ページの [ **製品の詳細とアップグレード**] で、[ **組織に推奨されるアップグレードの表示**] を選択します。
 4. アップグレードする計画を見つけ、[**アップグレード**] ボタンを選択します。
 5. 必要なライセンス数を入力し、月払いまたは年払いのどちらにするかを選択し、[**購入手続きに移動**] を選択します。
     > [!NOTE]

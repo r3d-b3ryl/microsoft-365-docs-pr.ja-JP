@@ -22,16 +22,16 @@ ms.custom:
 search.appverid: MET150
 description: 受け取るアプリケーションとサービスは、Microsoft 365 Apps for businessなど、購入した製品Microsoft 365によって異なります。
 ms.date: 05/12/2022
-ms.openlocfilehash: 48186847368af2bc43831c6e27ef7d347981f1b3
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 56b650a4690151c913855d0007a34d2e2ddcba89
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403230"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043417"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365のサブスクリプションとライセンスについて理解する
 
-ビジネス向けのMicrosoft 365のサブスクリプションを購入すると、月単位または年単位で支払うアプリとサービスのセットにサインアップします。 サブスクリプションの一部として受け取るアプリケーションとサービスは、Microsoft 365 Apps for businessやMicrosoft 365 Business Standardなど、購入した製品によって異なります。 各製品の内容は、[中小企業向けのMicrosoft 365](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1)ページで確認できます。
+ビジネス向けのMicrosoft 365のサブスクリプションを購入すると、月単位または年単位で支払うアプリとサービスのセットにサインアップします。 サブスクリプションの一部として受け取るアプリケーションとサービスは、Microsoft 365 Apps for businessやMicrosoft 365 Business Standardなど、購入した製品によって異なります。 各製品の内容は、[中小企業向けのMicrosoft 365](https://www.microsoft.com/microsoft-365/business/compare-all-microsoft-365-business-products)ページで確認できます。
 
 サブスクリプションを購入する場合、組織の人数に基づいて、必要なライセンス数を指定します。 サブスクリプションを購入した後、組織内のユーザーのアカウントを作成し、各ユーザーにライセンスを割り当てます。 組織のニーズの変化に応じて、新しいユーザーに対応するためにライセンスを追加購入したり、組織を離れるユーザーのライセンスを他のユーザーに再割り当てしたりできます。
 
@@ -55,10 +55,10 @@ ms.locfileid: "65403230"
 以下の表は、ライセンスをユーザーに割り当てたときに自動的に発生することを示しています。
   
 |サブスクリプションにこのサービスがある場合|自動的に行われます|
-|:-----|:-----|
-|Exchange Online|そのユーザーのメールボックスが作成されます。 <br/> このタスクを完了するための SLA については、「[セットアップ..」を参照してください。Microsoft 365 管理センター内のメッセージ](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。 |
+|---|---|
+|Exchange Online|そのユーザーのメールボックスが作成されます。 <br/> このタスクを完了するための SLA については、「[セットアップ..」を参照してください。Microsoft 365 管理センター内のメッセージ](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center)。|
 |SharePoint Online|既定の SharePoint Online チーム サイトの編集権限がそのユーザーに割り当てられます。|
-|Skype for Business Online|ユーザーは、ライセンスに関連付けられている機能にアクセスできます。|
+|Microsoft Teams|ユーザーは、ライセンスに関連付けられている機能にアクセスできます。|
 |Microsoft 365 Apps for enterpriseとMicrosoft 365 Apps for business|最大 5 台の Mac または PC、5 台のタブレット、および 5 台のスマートフォンで、Office アプリをダウンロードできます。|
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>ユーザー以外のメールボックスのライセンスについて
@@ -74,7 +74,7 @@ ms.locfileid: "65403230"
 個々の管理者が実行できるライセンスに関する作業は、その役割によって異なります。以下の表は、最も一般的なオプションをまとめたものです。管理者の役割と権限の詳細については、「[Office 365 の管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   
 |管理者ロール|ライセンスを割り当てる|ライセンスの割り当てを解除する|追加ライセンスを購入する|アカウントの削除|
-|:-----|:-----|:-----|:-----|:-----|
+|---|:---:|:---:|:---:|:---:|
 |課金管理者|いいえ|いいえ|はい|いいえ|
 |グローバル管理者|はい|はい|はい|はい|
 |ライセンス管理者|はい|はい|いいえ|いいえ|

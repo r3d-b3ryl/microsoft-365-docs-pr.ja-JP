@@ -19,12 +19,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Basic Mobility and Security を設定して使用することで、Microsoft 365組織に接続されているモバイル デバイスを管理し、セキュリティで保護します。
-ms.openlocfilehash: 9a9b3d433408d4ce5225f1a74351d01150744132
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 15f9c1f64f43c57de41082962bfc1741b40aa0dd
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863208"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042234"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Microsoft 365の基本的なモビリティとセキュリティの概要
 
@@ -34,7 +34,7 @@ ms.locfileid: "65863208"
 
 ## <a name="what-types-of-devices-can-you-manage"></a>管理できるデバイスの種類
 
-Basic Mobility and Security を使用すると、Windows Phone、Android、iPhone、iPadなど、さまざまな種類のモバイル デバイスを管理できます。 組織内のユーザーが使用するモバイル デバイスを管理するには、各ユーザーに適用可能なMicrosoft 365 ライセンスが必要であり、そのデバイスは Basic Mobility and Security に登録されている必要があります。
+Basic Mobility と Security を使用すると、Android、iPhone、iPadなど、さまざまな種類のモバイル デバイスを管理できます。 組織内のユーザーが使用するモバイル デバイスを管理するには、各ユーザーに適用可能なMicrosoft 365 ライセンスが必要であり、そのデバイスは Basic Mobility and Security に登録されている必要があります。
 
 デバイスの種類ごとに Basic Mobility と Security がサポートする内容については、「 [基本的なモビリティとセキュリティの機能」を](capabilities.md)参照してください。
 
@@ -46,7 +46,7 @@ Microsoft 365グローバル管理者は、基本的なモビリティとセキ�
 
 **手順 1:** 基本的なモビリティとセキュリティの設定の手順に従って [、基本的なモビリティとセキュリティを](set-up.md)アクティブ化します。
 
-**手順 2:** たとえば、iOS デバイスを管理する APN 証明書を作成し、ドメインのドメイン ネーム システム (DNS) レコードを追加して、Windows電話をサポートするなどして、基本的なモビリティとセキュリティを設定します。
+**手順 2:** たとえば、iOS デバイスを管理する APN 証明書を作成し、ドメインのドメイン ネーム システム (DNS) レコードを追加するなどして、基本的なモビリティとセキュリティを設定します。
 
 **手順 3:** デバイス ポリシーを作成し、ユーザーのグループに適用します。 これを行うと、ユーザーはデバイスに登録メッセージを受け取り、登録が完了すると、デバイスは設定したポリシーによって制限されます。 詳細については、「 [Basic Mobility and Security を使用してモバイル デバイスを登録する」](enroll-your-mobile-device.md)を参照してください。 
 

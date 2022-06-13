@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: テナントとユーザーが要件を満たしているかどうかを判断し、一元展開を使用してアドインOffice展開できるようにします。
-ms.openlocfilehash: 4d135e76034880e1419e296f2c201536be98b4bc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3b6517724a89572f971710b8c455866ac44f587e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093770"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043310"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>アドインの一元展開が組織で機能するかどうかを確認する
 
@@ -39,11 +39,11 @@ ms.locfileid: "65093770"
 - 関連するOffice アプリケーションが起動すると、アドインが自動的にダウンロードされます。 アドインがアドイン コマンドをサポートしている場合、アドインはOffice アプリケーション内のリボンに自動的に表示されます。
 - 管理者がアドインをオフまたは削除した場合、またはアドインが割り当てられているAzure Active Directoryまたはグループからユーザーが削除された場合、アドインはユーザーに表示されなくなります。
 
-一元展開では、Mac と Online Office アプリWindows 3 つのデスクトップ プラットフォームがサポートされます。 一元展開では、iOS と Android もサポートされます (モバイル アドインのみOutlook)。
+一元展開では、Mac と Online Office アプリWindows 3 つのデスクトップ プラットフォームがサポートされます。 一元展開では、iOSとAndroidもサポートされます (モバイル アドインのみOutlook)。
 
 アドインがすべてのユーザーのクライアントに表示されるまでには、最大で 24 時間かかる場合があります。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 アドインを一元的に展開するには、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります (Office 組織 ID、Office 365 Education ライセンス (A1/A3/A5)、またはMicrosoft 365 Education ライセンス (A3/A5)、Exchange OnlineおよびアクティブなExchange Online メールボックスを使用します。 サブスクリプション ディレクトリは、Azure Active Directoryに含まれるか、フェデレーションされている必要があります。
 以下のOfficeとExchangeに関する特定の要件を確認することも、[一元配置互換性チェッカー](#centralized-deployment-compatibility-checker)を使用することもできます。
@@ -55,7 +55,7 @@ ms.locfileid: "65093770"
 - Exchange On-Prem メールボックスへのアドインの展開
 - SharePoint に展開するアドイン
 - Teams アプリ
-- コンポーネント オブジェクト モデル (COM) またはVisual Studio Tools for Office (VSTO) アドインのデプロイ。
+- コンポーネント オブジェクト モデル (COM) または Visual Studio Tools for Office (VSTO) アドインのデプロイ。
 - SKU などのExchange Onlineを含まないMicrosoft 365のデプロイ: ビジネス向けのMicrosoft 365 AppsとEnterpriseのMicrosoft 365 Apps。
 
 ### <a name="office-requirements"></a>Office要件
@@ -70,8 +70,8 @@ ms.locfileid: "65093770"
   - Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI) のバージョン 16.0.4494.1000 以降\*
   - バージョン 15.0.4937.1000 以降の Office Professional Plus 2013 (MSI) または Office Standard 2013 (MSI)\*
   - バージョン 16.0.9318.1000 以降のOffice 2016 for Mac
-- iOS 用モバイルのバージョン 2.75.0 以降Outlook
-- Android 用モバイルのバージョン 2.2.145 以降Outlook
+- iOS用モバイルのバージョン 2.75.0 以降Outlook
+- Android用のバージョン 2.2.145 以降のモバイルOutlook
 
     *MSI バージョンのOutlookでは、管理者がインストールしたアドインが適切なOutlookリボンに表示され、[マイ アドイン] セクションは表示されません。
 
@@ -123,6 +123,8 @@ Microsoft Exchange は、組織のテナント内にアドイン マニフェス
 - Officeプラン - ライセンスが付与されているOfficeの計画
 - ライセンス認証された Office - Office をライセンス認証している場合
 - サポートされているメールボックス - OAuth 対応メールボックスを使用している場合
+
+Microsoft 365 レポートに実際のユーザー名ではなく匿名ユーザー名が表示される場合は、Microsoft 365 管理センターのレポート設定を変更してこの問題を解決します。 詳細な手順については、「[Microsoft 365 レポートに実際のユーザー名ではなく匿名ユーザー名が表示](/office365/troubleshoot/miscellaneous/reports-show-anonymous-user-name)される」を参照してください。
 
 > [!NOTE]
 > 中央展開 PowerShell モジュールを使用する場合、多要素認証はサポートされません。 モジュールは基本認証でのみ機能します。

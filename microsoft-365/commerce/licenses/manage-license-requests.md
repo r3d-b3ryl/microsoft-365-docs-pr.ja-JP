@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス サブスクリプションのMicrosoft 365に対するユーザーからのライセンス要求を確認および承認または拒否する方法について説明します。
 ms.date: 04/22/2022
-ms.openlocfilehash: 802b84445c83c2831e5fd88598cc00fb8b0ab867
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dfe8410ce894e19489664396866917e4c5bb3dd4
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098694"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044249"
 ---
 # <a name="manage-license-requests"></a>ライセンス要求を管理する
 
@@ -39,7 +39,7 @@ ms.locfileid: "65098694"
 
 管理者は、ライセンス要求を表示および管理するために、[ライセンス] ページ **の [要求** ] タブ **を** 使用します。 一覧には、要求された製品の名前、ライセンスを要求するユーザーの名前、要求された日付、要求の状態が表示されます。 管理者は、一覧をフィルター処理して、保留中または完了している要求を表示できます。 要求は 30 日間保持されます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 この記事のタスクを実行するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
@@ -50,7 +50,7 @@ ms.locfileid: "65098694"
 > [!IMPORTANT]
 > 独自の要求プロセスを使用する場合、[要求] タブには **要求** は表示されません。メッセージを追加する前の既存の要求は、承認または拒否するまで引き続き表示されます。
 
-1. 管理センターで <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a>  >  ページに移動し、[**要求**] タブを選択します。
+1. 管理センターの [ **課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a> ] ページに移動し、[要求] タブ **を** 選択します。
 2. **代わりに [既存の要求プロセスを使用** する] を選択します。
 3. 右側のウィンドウの [ **メッセージ** ] ボックスに、ユーザーがライセンスを要求したときに表示するメッセージを入力します。 組織ポリシーまたはその他のドキュメントへのリンクも含める場合は、ドキュメントへの **リンク (省略可能)** テキスト ボックスに URL を入力します。
 4. **[保存]** を選択します。
@@ -59,14 +59,14 @@ ms.locfileid: "65098694"
 
 ## <a name="stop-using-your-own-request-process"></a>独自の要求プロセスの使用を停止する
 
-1. 管理センターで <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a>  >  ページに移動し、[**要求**] タブを選択します。
+1. 管理センターの [ **課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a> ] ページに移動し、[要求] タブ **を** 選択します。
 2. **代わりに [既存の要求プロセスを使用** する] を選択します。
 3. 右側のウィンドウで、[組織の **要求プロセスを使用** する] チェック ボックスをオフにします。
 4. **[保存]** を選択します。
 
 ## <a name="approve-or-deny-a-license-request"></a>ライセンス要求を承認または拒否する
 
-1. 管理センターで <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a>  >  ページに移動し、[**要求**] タブを選択します。
+1. 管理センターの [ **課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a> ] ページに移動し、[要求] タブ **を** 選択します。
 2. 確認する要求を含む行を選択します。 右側のウィンドウには、製品に対するライセンスを必要とするユーザーの詳細が表示されます。
 3. 要求全体を拒否するには、[ **承認しない**] を選択し、ダイアログ ボックスで [ **承認しない**] を選択します。
 4. 要求の一部のユーザーを拒否し、他のユーザーを承認するには、削除するユーザーの名前で X を選択します。 それらの名前は[ **これらのユーザーに割り当てないでください] の下に** 移動されます。
@@ -81,4 +81,5 @@ ms.locfileid: "65098694"
 
 [ユーザーにライセンスを割り当てる](../../admin/manage/assign-licenses-to-users.md) (記事)\
 [ユーザーを別のサブスクリプションに移動する](../subscriptions/move-users-different-subscription.md) (記事)\
-[サブスクリプション ライセンスを購入または削除する](buy-licenses.md) (記事)
+[サブスクリプション ライセンスを購入または削除する](buy-licenses.md) (記事)\
+[セルフサービス購入についてよく寄せられる質問](../subscriptions/self-service-purchase-faq.yml)

@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Microsoft 365ネットワーク接続テスト ツール
-ms.openlocfilehash: 047a1ad10efa20f2c47491a20855a92bf141eb15
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: ac2ec12ac0da2309e1d5ac0c35bbd0462cc68a62
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705583"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043711"
 ---
 # <a name="microsoft-365-network-connectivity-test-tool"></a>Microsoft 365ネットワーク接続テスト ツール
 
@@ -261,10 +261,17 @@ Microsoft によって提供されていない SSL 証明書が見つかった�
 
 初めて実行可能ファイルを起動するときに、テストが実行される前にエンド ユーザー ライセンス契約 (EULA) に同意するように求められます。 EULA を既に読んで承諾している場合は、実行可能プロセスの起動時に、現在の作業ディレクトリに Microsoft-365-Network-Connectivity-Test-EULA-accepted.txt という空のファイルを作成できます。 EULA に同意するには、「y」と入力し、プロンプトが表示されたらコマンド ライン ウィンドウで Enter キーを押します。
 
-実行可能ファイルは、/h のコマンド ライン パラメーターを受け入れて、このヘルプ ドキュメントへのリンクを表示します。
+実行可能ファイルは、次のコマンド ライン パラメーターを受け入れます。
+- -h : このヘルプ ドキュメントへのリンクを表示する
+- -testlist test&gt;: 実行するテストを指定します&lt;。 既定では、基本的なテストのみが実行されます。 有効なテスト名には、すべて、dnsConnectivityPerf、dnsResolverIdentification、bufferBloat、traceroute、プロキシ、VPN、skype、接続、networkInterface が含まれます。
+- -filepath &lt;filedir&gt; Directory パスのテスト結果ファイル。 許可される値は、アクセス可能なディレクトリの絶対パスまたは相対パスです
+- -city &lt;city&gt; 都市、州、および国のフィールドに対して、指定した値が指定された場合に使用されます。 指定されていない場合は、Windows Location Services (WLS) に対してクエリが実行されます。 WLS が失敗した場合、コンピューターのネットワーク エグレスから場所が検出されます 
+- -state state &lt;&gt;
+- -country &lt;country&gt; 
+- インターネットにアクセスするためにプロキシが必要な場合は、-proxy &lt;アカウント&gt;&lt;のパスワード&gt; プロキシ アカウント名とパスワードを指定できます
 
 ### <a name="results"></a>結果
-結果の出力は、既に存在しない限り、プロセスの現在の作業ディレクトリに作成される TestResults という名前のフォルダー内の JSON ファイルに書き込まれます。 出力のファイル名の形式は、connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json です。 結果は、Microsoft 365ネットワーク接続テスト ツール Web サイトの Web ページに表示される出力と一致する JSON ノードになります。 実行するたびに新しい結果ファイルが作成され、スタンドアロン実行可能ファイルは Admin Center Network Connectivity ページで表示するための結果を Microsoft テナントにアップロードしません。
+結果の出力は、既に存在しない限り、プロセスの現在の作業ディレクトリに作成される TestResults という名前のフォルダー内の JSON ファイルに書き込まれます。 出力のファイル名の形式は、connectivity_test_result_YYYY-MM-DD-HH-MM-SS.json です。 結果は、Microsoft 365ネットワーク接続テスト ツール Web サイトの Web ページに表示される出力と一致する JSON ノードになります。 実行するたびに新しい結果ファイルが作成され、スタンドアロン実行可能ファイルは Admin Center Network Connectivity ページで表示するための結果を Microsoft テナントにアップロードしません。 フロント ドア のコード、経度、緯度は結果ファイルに含まれません。
 
 ### <a name="launching-from-windows-file-explorer"></a>Windows エクスプローラーからの起動
 実行可能ファイルをダブルクリックしてテストを開始するだけで、コマンド プロンプト ウィンドウが表示されます。
@@ -280,7 +287,7 @@ Windowsタスク スケジューラでは、スタンドアロン のテスト�
 
 コマンド ライン ツールは、まだインストールされていない場合、.NET Frameworkのインストールを試みます。 また、Microsoft 365 ネットワーク接続テスト ツールからメインのテスト実行可能ファイルをダウンロードし、それを起動します。
 
-## <a name="faq"></a>よくあるご質問 (FAQ)
+## <a name="faq"></a>FAQ
 
 よく寄せられる質問の一部に対する回答を次に示します。
 

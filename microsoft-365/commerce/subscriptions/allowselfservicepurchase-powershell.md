@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスでの購入のオンまたはオフを切り替える方法をご紹介します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 12/15/2021
-ms.openlocfilehash: a3800f82386fafe509d9bdabb25cd91422cf058d
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.date: 4/7/2022
+ms.openlocfilehash: e4423892f2dc045a9729e68519c85d471838d5ac
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315723"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042190"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
@@ -95,7 +95,7 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 | 製品 | ProductId |
 |-----------------------------|--------------|
-| ユーザーごとの Power Apps | CFQ7TTC0KP0P |
+| ユーザーごとの Power Apps | CFQ7TTC0LH2H |
 | ユーザーごとの Power Automate | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (スタンドアロン) | CFQ7TTC0KXG7  |
@@ -134,12 +134,12 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>AllowSelfServicePurchase を無効にするスクリプト例
 
-以下の例では、**MSCommerce** モジュールをインポートし、自分のアカウントでサインインし、Power Automate の **ProductId** を取得し、その製品の **AllowSelfServicePurchase** を無効にする方法について説明しています。
+次の例では、**MSCommerce** モジュールをインポートし、アカウントでサインインし、ユーザーごとのPower Automateの **ProductId** を取得し、その製品 **の AllowSelfServicePurchase** を無効にする方法について説明します。
 
 ```powershell
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
-$product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate'}
+$product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
 Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
 ```
 

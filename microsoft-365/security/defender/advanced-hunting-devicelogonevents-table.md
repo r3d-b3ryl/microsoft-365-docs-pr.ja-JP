@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 516b74eb8d1e62194718e0ad3234b3269e07fb83
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: ec3002a30e9b5f20636a272574dcc3d6d00e4389
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731375"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044412"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -58,14 +58,14 @@ ms.locfileid: "64731375"
 | `IsLocalAdmin` | `boolean` | ユーザーがコンピューター上のローカル管理者であるかどうかを示すブールインジケーター |
 | `LogonId` | `string` | ログオン セッションの識別子。 この識別子は、再起動間でのみ同じマシンで一意です |
 | `RemoteDeviceName` | `string` | 影響を受けるコンピューターでリモート操作を実行したマシンの名前。 報告されるイベントによっては、この名前は完全修飾ドメイン名 (FQDN)、NetBIOS 名、またはドメイン情報のないホスト名である可能性があります。 |
-| `RemoteIP` | `string` | に接続されていた IP アドレス |
+| `RemoteIP` | `string` | ログオン試行が実行されたデバイスの IP アドレス |
 | `RemoteIPType` | `string` | IP アドレスの種類 (パブリック、プライベート、予約済み、ループバック、Teredo、FourToSixMapping、ブロードキャストなど) |
 | `RemotePort` | `int` | 接続先のリモート デバイス上の TCP ポート |
 | `InitiatingProcessAccountDomain` | `string` | イベントを担当するプロセスを実行したアカウントのドメイン |
 | `InitiatingProcessAccountName` | `string` | イベントを担当するプロセスを実行したアカウントのユーザー名 |
 | `InitiatingProcessAccountSid` | `string` | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
 | `InitiatingProcessAccountUpn` | `string` | イベントを担当するプロセスを実行したアカウントのユーザー プリンシパル名 (UPN) |
-| ` InitiatingProcessAccountObjectId` | `string` | イベントを担当するプロセスを実行したユーザー アカウントのオブジェクト ID をAzure ADする |
+| ` InitiatingProcessAccountObjectId` | `string` | イベントを担当するプロセスを実行したユーザー アカウントの Azure AD オブジェクト ID |
 | `InitiatingProcessIntegrityLevel` | `string` | イベントを開始したプロセスの整合性レベル。 Windowsは、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
 | `InitiatingProcessTokenElevation` | `string` | イベントを開始したプロセスに適用されたユーザー Access Control (UAC) 特権昇格の有無を示すトークンの種類 |
 | `InitiatingProcessSHA1` | `string` | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |

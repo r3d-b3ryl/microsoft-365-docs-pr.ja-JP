@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: ''
 description: ラーニング ツール相互運用性 (LTI) Microsoft アプリと、Microsoft アプリをラーニング管理システム (LMS) に統合する際の教育者に役立つ方法について説明します。
-ms.openlocfilehash: 99ae862890989b0422cb819f65781a0a99340135
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 994abf0351a3694e1eeb534a328745691cb6a379
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414768"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044293"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft 製品とラーニング管理システム (LMS) の統合
 
@@ -81,6 +81,7 @@ Microsoft Teams会議 LTI アプリは、TEAMS会議を LMS コースに組み�
 
 - [キャンバスを使用して会議をMicrosoft Teams](teams-meetings-with-canvas.md)します。
 - [Moodle で会議をMicrosoft Teams](teams-classes-meetings-with-moodle.md)します。
+- [open LMS を使用して会議をMicrosoft Teamsします](open-lms-teams-classes-and-meetings.md)。
 
 ### <a name="teams-classes-lti"></a>Teams クラス LTI
 
@@ -88,6 +89,7 @@ Microsoft Teams クラス LTI アプリは、教育者と学生が LMS とTeams�
 
 構成手順については、次を参照してください。
 
-- [Canvas を使用してクラス LTI をTeams](teams-classes-with-canvas.md)します。
-- [blackboard を使用して LTI クラスをTeams](teams-classes-with-blackboard.md)します。
-- [Teams クラス LTI と Moodle](teams-classes-meetings-with-moodle.md)。
+- [Canvas を使用してクラス LTI をMicrosoft Teams](teams-classes-with-canvas.md)します。
+- [Blackboard を使用して LTI クラスをMicrosoft Teams](teams-classes-with-blackboard.md)します。
+- [Microsoft Teams クラス LTI with Moodle](teams-classes-meetings-with-moodle.md)。
+- [Open LMS を使用して LTI クラスをMicrosoft Teamsします](open-lms-teams-classes-and-meetings.md)。

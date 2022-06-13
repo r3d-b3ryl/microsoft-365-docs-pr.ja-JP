@@ -12,12 +12,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: カスタマー キーを設定する方法について説明します。
-ms.openlocfilehash: 42c89c23f823f5f4297f31308516888633a1c06c
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 93cf56ba30f333697ccb1ef6f4064918e73d4fcf
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363172"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042442"
 ---
 # <a name="set-up-customer-key"></a>カスタマー キーを設定する
 
@@ -25,7 +25,7 @@ ms.locfileid: "65363172"
 
 Customer Key を使用すると、組織の暗号化キーを制御し、それらを使用して Microsoft のデータ センターで保存データを暗号化するようにMicrosoft 365を構成します。 つまり、カスタマー キーを使用すると、顧客は自分のキーを使用して、自分に属する暗号化レイヤーを追加できます。
 
-カスタマー キーを使用する前に Azure を設定します。 この記事では、必要な Azure リソースを作成して構成するために従う必要がある手順について説明し、カスタマー キーを設定する手順について説明します。 Azure を設定した後、組織内のさまざまなMicrosoft 365ワークロード間でデータを暗号化するために割り当てるポリシーとそのキーを決定します。 カスタマー キーの詳細については、または一般的な概要については、「[カスタマー キーを使用したサービスの暗号化Microsoft Purview](customer-key-overview.md)参照してください。
+カスタマー キーを使用する前に Azure を設定します。 この記事では、必要な Azure リソースを作成して構成するために従う必要がある手順について説明し、カスタマー キーを設定する手順について説明します。 Azure を設定した後、組織内のさまざまなMicrosoft 365ワークロード間でデータを暗号化するために割り当てるポリシーとそのキーを決定します。 カスタマー キーの詳細については、または一般的な概要については、「 [Microsoft Purview カスタマー キーを使用したサービス暗号化](customer-key-overview.md)」を参照してください。
   
 > [!IMPORTANT]
 > この記事のベスト プラクティスに従うことを強くお勧めします。 これらは **TIP** と **IMPORTANT** と呼ばれます。 Customer Key を使用すると、組織全体と同じ範囲のルート暗号化キーを制御できます。 つまり、これらのキーを使用したミスは広範な影響を及ぼし、サービスの中断やデータの取り消し不可能な損失につながる可能性があります。
@@ -107,7 +107,7 @@ Azure Key Vaultでこれらのタスクを完了します。 Customer Key で使
 
 2. ログインしたら、適切なドメインを選択します。
 
-3. 選択したドメインで、上部のナビゲーション バーから [ **サービスの要求** ] を選択し、使用可能なオファーの一覧を確認します。
+3. 選択したドメインで、上部のナビゲーション バーから **[デプロイ** ] を選択し、使用可能なオファーの一覧を確認します。
 
 4. 該当するオファーの情報カードを選択します。
 
@@ -146,7 +146,7 @@ Azure Key Vaultでこれらのタスクを完了します。 Customer Key で使
 
 - すべてのテナント ユーザーに対して DEP を割り当てて SharePoint Online コンテンツとOneDrive for Businessコンテンツ (Teams ファイルを含む) を割り当てる場合は、[spock@microsoft.com](mailto:spock@microsoft.com) にお問い合わせください。
 
-- すべてのテナント ユーザーに対して複数のMicrosoft 365ワークロード (Exchange Online、Teams、Microsoft Purview 情報保護) 間でコンテンツを暗号化するために DEP を割り当てるカスタマー キーを有効にするには、[m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com) にお問い合わせください。
+- すべてのテナント ユーザーに対して複数のMicrosoft 365ワークロード (Exchange Online、Teams、Microsoft Purview Information Protection) 間でコンテンツを暗号化するために DEP を割り当てるカスタマー キーを有効にするには、[m365-ck@service.microsoft.com](mailto:m365-ck@service.microsoft.com) にお問い合わせください。
 
 - メールに次の情報を含めます。
 
@@ -214,13 +214,13 @@ Customer Key を使用するMicrosoft 365 サービスごとに、作成した 2
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user> -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-   次に例を示します。
+   例として以下のようなものがあります。
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-CK-EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- Azure Key Vault自体に対するアクセス許可を変更できる **Key Vault 共同作成者**。 従業員がチームを離れるか、チームに参加するときに、これらのアクセス許可を変更する必要があります。 キー コンテナー管理者が正当にキーを削除または復元するためのアクセス許可を必要とすることはまれですが、アクセス許可を変更する必要もあります。 このキー コンテナー共同作成者のセットには、キー コンテナーの **共同作成者** ロールが付与されている必要があります。 このロールは、Azure Resource Manager を使用して割り当てることができます。 詳細な手順については、「[Role-Based Access Controlを使用して Azure サブスクリプション リソースへのアクセスを管理する](/azure/active-directory/role-based-access-control-configure)」を参照してください。 サブスクリプションを作成する管理者は、このアクセス権を暗黙的に持ち、他の管理者を共同作成者ロールに割り当てることができます。
+- Azure Key Vault自体に対するアクセス許可を変更できる **Key Vault 共同作成者**。 従業員がチームを離れるか、チームに参加するときに、これらのアクセス許可を変更する必要があります。 キー コンテナー管理者が正当にキーを削除または復元するためのアクセス許可を必要とすることはまれですが、アクセス許可を変更する必要もあります。 このキー コンテナー共同作成者のセットには、キー コンテナーの **共同作成者** ロールが付与されている必要があります。 このロールは、Azure Resource Managerを使用して割り当てることができます。 詳細な手順については、「[Role-Based Access Controlを使用して Azure サブスクリプション リソースへのアクセスを管理する](/azure/active-directory/role-based-access-control-configure)」を参照してください。 サブスクリプションを作成する管理者は、このアクセス権を暗黙的に持ち、他の管理者を共同作成者ロールに割り当てることができます。
 
 - Customer Key に使用するすべてのキー コンテナーに対して **アプリケーションをMicrosoft 365するアクセス許可** は、wrapKey、unwrapKey、および対応するMicrosoft 365 サービス プリンシパルに対するアクセス許可を付与する必要があります。
 
@@ -234,7 +234,7 @@ Customer Key を使用するMicrosoft 365 サービスごとに、作成した 2
    - *コンテナー名* は、作成したキー コンテナーの名前です。
    - Exchange OnlineとSkype for Businessの場合は、*Office 365 appID を*`00000002-0000-0ff1-ce00-000000000000`
    - SharePoint Online、OneDrive for Business、Teams ファイルの場合は、*Office 365 appID* を`00000003-0000-0ff1-ce00-000000000000`
-   - すべてのテナント ユーザーに適用されるマルチワークロード ポリシー (Exchange、Teams、Microsoft Purview 情報保護) の場合は、*Office 365 appID* を`c066d759-24ae-40e7-a56f-027002b5d3e4`
+   - すべてのテナント ユーザーに適用されるマルチワークロード ポリシー (Exchange、Teams、Microsoft Purview Information Protection) の場合は、*Office 365 appID* を`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   例: Exchange OnlineとSkype for Businessのアクセス許可を設定します。
 

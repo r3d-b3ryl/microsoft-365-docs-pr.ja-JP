@@ -20,16 +20,16 @@ ms.custom:
 search.appverid: MET150
 description: サブスクリプション間でユーザーを移動する方法について説明します。
 ms.date: 05/12/2022
-ms.openlocfilehash: b790b708ba9095b40ab9f79a27f531a5267c9c08
-ms.sourcegitcommit: 4e7ff69f4d7d27c2d419f763cfcb069e3b0d0d9f
+ms.openlocfilehash: 06d9c6f2ef76ed317705c1e519822db3a8706062
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65403296"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044325"
 ---
 # <a name="move-users-to-a-different-subscription"></a>ユーザーを別のサブスクリプションに移動する
 
-複数のサブスクリプションを持ち、1 つのサブスクリプションのライセンスを持つユーザーを別のサブスクリプションに移動する場合は、既存のライセンスを別のサブスクリプションに置き換えることができます。
+複数の製品を持ち、1 つの製品のライセンスを持つユーザーを別の製品に移行する場合は、既存のライセンスを別の製品に置き換えることができます。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -49,7 +49,7 @@ ms.locfileid: "65403296"
 
 ::: moniker-end
 
-2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
+2. 既存のライセンスを置き換えるユーザーの名前の横にあるチェック ボックスをオンにします。
 
 3. 上部にある [**製品ライセンスの管理**] を選択します。
 

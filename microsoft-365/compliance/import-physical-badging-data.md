@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、組織の物理的な不正使用システムからMicrosoft 365にデータをインポートするデータ コネクタを設定できます。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性がある特定のユーザーによる物理的な建物へのアクセスを検出するのに役立ちます。
-ms.openlocfilehash: 96017d6477f914c799fecbe834abdac22917bfaa
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 41fd7f1214b231668b56e9326055ad736dcd387e
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077974"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044018"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不正なデータをインポートするようにコネクタを設定する (プレビュー)
 
@@ -30,7 +30,7 @@ Microsoft Purview コンプライアンス ポータルでデータ コネクタ
 
 物理的な不適切なコネクタの設定は、次のタスクで構成されます。
 
-- 物理的な不正なデータを含む JSON ペイロードを受け入れる API エンドポイントにアクセスするアプリをAzure Active Directory (Azure AD) に作成します。
+- 物理不正処理データを含む JSON ペイロードを受け入れる API エンドポイントにアクセスするアプリを Azure Active Directory (Azure AD) に作成します。
 
 - 物理不正処理データ コネクタによって定義されたスキーマを使用して JSON ペイロードを作成する。
 
@@ -55,15 +55,15 @@ Microsoft Purview コンプライアンス ポータルでデータ コネクタ
 
 ## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directoryでアプリを作成する
 
-最初の手順は、Azure Active Directory (Azure AD) に新しいアプリを作成して登録することです。 アプリは、手順 3. で作成した物理的な不適切なコネクタに対応します。 このアプリを作成すると、Azure ADは、物理不正処理データを含む JSON ペイロードのプッシュ要求を認証できます。 このAzure AD アプリの作成中に、次の情報を保存してください。 これらの値は、後の手順で使用されます。
+最初の手順は、Azure Active Directory (Azure AD) に新しいアプリを作成して登録することです。 アプリは、手順 3. で作成した物理的な不適切なコネクタに対応します。 このアプリを作成すると、Azure AD は、物理的な不正なデータを含む JSON ペイロードのプッシュ要求を認証できます。 この Azure AD アプリの作成中に、次の情報を保存してください。 これらの値は、後の手順で使用されます。
 
-- Azure AD アプリケーション ID (*アプリ ID* または *クライアント ID* とも呼ばれます)
+- Azure AD アプリケーション ID ( *アプリ ID* または *クライアント ID* とも呼ばれます)
 
-- Azure AD アプリケーション シークレット (*クライアント シークレット* とも呼ばれます)
+- Azure AD アプリケーション シークレット ( *クライアント シークレット* とも呼ばれます)
 
 - テナント ID ( *ディレクトリ ID* とも呼ばれます)
 
-Azure ADでアプリを作成する手順については、「Microsoft ID プラットフォーム[にアプリケーションを登録する](/azure/active-directory/develop/quickstart-register-app)」を参照してください。
+Azure AD でアプリを作成する手順については、「[アプリケーションをMicrosoft ID プラットフォームに登録する](/azure/active-directory/develop/quickstart-register-app)」を参照してください。
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>手順 2: 物理的な不正なデータを含む JSON ファイルを準備する
 
@@ -73,7 +73,7 @@ JSON ファイルは、コネクタに必要なスキーマ定義に準拠して
 
 |プロパティ|説明|データ型|
 |---|---|---|
-|UserId|従業員は、システム全体で複数のデジタル ID を持つことができます。 入力には、ソース システムによってAzure AD ID が既に解決されている必要があります。|UPN または電子メール アドレス|
+|UserId|従業員は、システム全体で複数のデジタル ID を持つことができます。 入力には、ソース システムによって Azure AD ID が既に解決されている必要があります。|UPN または電子メール アドレス|
 |AssetId|物理資産または物理アクセス ポイントの参照 ID。|英数字文字列|
 |AssetName|物理資産または物理アクセス ポイントのフレンドリ名。|英数字文字列|
 |EventTime|アクセスのタイムスタンプ。|日付と時刻 (UTC 形式)|
@@ -150,7 +150,7 @@ JSON ファイルは、コネクタに必要なスキーマ定義に準拠して
 
 4. [ **認証資格情報** ] ページで、次の操作を行い、[ **次へ**] をクリックします。
 
-   1. 手順 1. で作成した Azure アプリのAzure ADアプリケーション ID を入力または貼り付けます。
+   1. 手順 1. で作成した Azure アプリの Azure AD アプリケーション ID を入力または貼り付けます。
 
    2. 参照用のサンプル スキーマをダウンロードして、JSON ファイルを作成します。
 
@@ -199,9 +199,9 @@ JSON ファイルは、コネクタに必要なスキーマ定義に準拠して
 
    |パラメーター|説明|
    |---|---|
-   |tenantId|これは、手順 1 で取得したMicrosoft 365組織の ID です。 Azure AD管理センターの **[概要**] ブレードで、組織の tenantId を取得することもできます。 これは、組織を識別するために使用されます。|
-   |appId|これは、手順 1 のAzure ADで作成したアプリのAzure AD アプリケーション ID です。 これは、スクリプトがMicrosoft 365組織にアクセスしようとしたときに認証のためにAzure ADによって使用されます。|
-   |appSecret|これは、手順 1 のAzure ADで作成したアプリのAzure ADアプリケーション シークレットです。 これは、認証にも使用されます。|
+   |tenantId|これは、手順 1 で取得したMicrosoft 365組織の ID です。 Azure AD 管理センターの **[概要** ] ブレードで、組織の tenantId を取得することもできます。 これは、組織を識別するために使用されます。|
+   |appId|これは、手順 1. で Azure AD で作成したアプリの Azure AD アプリケーション ID です。 これは、スクリプトがMicrosoft 365組織にアクセスしようとしたときに認証に Azure AD によって使用されます。|
+   |appSecret|これは、手順 1. で Azure AD で作成したアプリの Azure AD アプリケーション シークレットです。 これは、認証にも使用されます。|
    |jobId|これは、手順 3. で作成した物理不正検出コネクタのジョブ ID です。 これは、Microsoft クラウドにプッシュされる物理不正プログラム データを物理不正検出コネクタに関連付けるために使用されます。|
    |JsonFilePath|これは、手順 2. で作成した JSON ファイルのローカル コンピューター上のファイル パス (スクリプトの実行に使用しているファイル) です。 このファイルは、手順 3 で説明したサンプル スキーマに従う必要があります。|
    |||
@@ -233,7 +233,7 @@ JSON ファイルは、コネクタに必要なスキーマ定義に準拠して
 
    ![物理的な不適切なコネクタ ログ ファイルには、アップロードされた JSON ファイルのオブジェクトの数が表示されます。](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   **RecordsSaved** フィールドは、アップロードした JSON ファイル内のオブジェクトの数を示します。 たとえば、JSON ファイルに 4 つのオブジェクトが含まれている場合、スクリプトが JSON ファイル内のすべてのオブジェクトを正常にアップロードした場合、 **RecordsSaved** フィールドの値は 4 になります。
+   **RecordsSaved** フィールドは、アップロードされた JSON ファイル内のレコードの数を示します。 たとえば、JSON ファイルに 4 つのレコードが含まれている場合、スクリプトが JSON ファイル内のすべてのレコードを正常にアップロードした場合、 **RecordsSaved** フィールドの値は 4 になります。 **RecordsSkipped** フィールドは、スキップされた JSON ファイル内のレコードの数を示します。 JSON ファイル内のレコードをアップロードする前に、レコードの電子メール ID が検証されます。 無効な電子メール ID を持つレコードはスキップされ、対応する電子メール ID が **EmailIdsNotSaved** フィールドに表示されます
 
 手順 4 でスクリプトを実行していない場合は、[ **最後のインポート**] にスクリプトをダウンロードするためのリンクが表示されます。 スクリプトをダウンロードし、手順 4 の手順に従って実行できます。
 

@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teamsなど、さまざまな場所にあるコンテンツの検索とエクスポートに使用できる 3 つの電子情報開示ツールが用意されています。会話をSkype for Businessします。 電子情報開示 (Standard) と電子情報開示 (プレミアム) には、調査の管理に役立つ多くの追加機能が用意されています。
-ms.openlocfilehash: f5660b8a31cad45b110e6e32450dc03b75d5f533
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 9262f2773d17f19bd5adaea3eed9e747e343e625
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095864"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043395"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview の電子情報開示ソリューション
 
@@ -44,7 +44,7 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 
 - **コンテンツ検索**。 コンテンツ検索ツールを使用して、Microsoft 365 データ ソース間でコンテンツを検索し、検索結果をローカル コンピューターにエクスポートします。
 
-- **電子情報開示 (Standard)**。 電子情報開示 (Standard) は、電子情報開示ケースを作成し、電子情報開示マネージャーを特定のケースに割り当てることで、コンテンツ検索の基本的な検索とエクスポート機能に基づいています。 電子情報開示マネージャーは、メンバーであるケースにのみアクセスできます。 また、電子情報開示 (Standard) では、検索とエクスポートをケースに関連付け、ケースに関連するコンテンツの場所に電子情報開示ホールドを配置することもできます。
+- **電子情報開示 (Standard)**。 電子情報開示 (Standard) は、電子情報開示ケースを作成し、電子情報開示マネージャーを特定のケースに割り当てることで、コンテンツ検索の基本的な検索とエクスポート機能に基づいています。 電子情報開示マネージャーは、メンバーであるケースにのみアクセスできます。 また、電子情報開示 (Standard) を使用すると、検索とエクスポートをケースに関連付け、ケースに関連するコンテンツの場所に電子情報開示を保持できます。
 
 - **電子情報開示 (プレミアム)**。 電子情報開示 (プレミアム) ツールは、電子情報開示 (Standard) の既存のケース管理、保持、検索、エクスポート機能に基づいています。 電子情報開示 (プレミアム) は、組織の内部および外部の調査に対応するコンテンツを識別、保持、収集、レビュー、分析、エクスポートするためのエンドツーエンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。 これにより、ライブ サービスからレビュー セットにデータを収集してコピーできます。これにより、コンテンツをフィルター処理、検索、およびタグ付けして、関連のないコンテンツを詳細なレビューから除外して、ワークフローで最も関連性の高いコンテンツを特定して絞り込むことができます。 電子情報開示 (プレミアム) は、分析と機械学習ベースの予測コーディング モデルを提供し、調査の範囲をさらに最も関連性の高いコンテンツに絞り込みます。
 
@@ -61,20 +61,20 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 |役割に基づくアクセス許可|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |ケース管理||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
 |コンテンツの場所を訴訟ホールドに配置する||![サポートされています。](../media/check-mark.png)|![サポートされています。](../media/check-mark.png)|
-|保管担当者管理|||![サポート対象です。](../media/check-mark.png)|
-|訴訟ホールド通知|||![サポート対象です。](../media/check-mark.png)|
-|高度なインデックス作成|||![サポート対象です。](../media/check-mark.png)|
-|エラー修復|||![サポート対象です。](../media/check-mark.png)|
+|保管担当者管理|||![サポートされています。](../media/check-mark.png)|
+|訴訟ホールド通知|||![サポートされています。](../media/check-mark.png)|
+|高度なインデックス作成|||![サポートされています。](../media/check-mark.png)|
+|エラー修復|||![サポートされています。](../media/check-mark.png)|
 |セットを確認する|||![サポート対象です。](../media/check-mark.png)|
-|クラウド添付ファイルとSharePoint バージョンのサポート|||![サポート対象です。](../media/check-mark.png)|
+|クラウド添付ファイルとSharePoint バージョンのサポート|||![サポートされています。](../media/check-mark.png)|
 |光学式文字認識|||![サポート対象です。](../media/check-mark.png)|
-|会話スレッド|||![サポート対象です。](../media/check-mark.png)|
+|会話スレッド|||![サポートされています。](../media/check-mark.png)|
 |コレクションの統計とレポート|||![サポート対象です。](../media/check-mark.png)|
-|セットのフィルター処理を確認する|||![サポート対象です。](../media/check-mark.png)|
+|セットのフィルター処理を確認する|||![サポートされています。](../media/check-mark.png)|
 |タグ付け|||![サポート対象です。](../media/check-mark.png)|
-|分析|||![サポートされています。](../media/check-mark.png)|
-|予測コーディング モデル|||![サポート対象です。](../media/check-mark.png)|
-|計算されたドキュメント メタデータ|||![サポート対象です。](../media/check-mark.png)|
+|分析|||![サポート対象です。](../media/check-mark.png)|
+|予測コーディング モデル|||![サポートされています。](../media/check-mark.png)|
+|計算されたドキュメント メタデータ|||![サポートされています。](../media/check-mark.png)|
 |実行時間の長いジョブの透過性|||![サポート対象です。](../media/check-mark.png)|
 |顧客所有のAzure Storageの場所にエクスポートする|||![サポート対象です。](../media/check-mark.png)|
 |||||
@@ -145,6 +145,8 @@ Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)
 
 ### <a name="ediscovery-standard"></a>電子情報開示 (標準)
 
+- オンライン プラン 2 をExchangeする
+- Sharepoint Online プラン 2
 - サブスクリプションをMicrosoft 365 E3する
 - サブスクリプションをMicrosoft 365 G3する
 - Microsoft 365 Business Premium サブスクリプション

@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリ ポータルから、組織内のユーザーとグループの Microsoft および Microsoft パートナー アプリを検索、テスト、デプロイします。
-ms.openlocfilehash: 491315b36a7698399bcd22c60173db8cec482148
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094662"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043168"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルでパートナーによるMicrosoft 365 Appsのテストとデプロイ
 
@@ -60,7 +60,7 @@ Microsoft 365 管理センターでは、単一のストア アプリ、カス�
 
 [統合アプリ] ページの一覧にまだ表示されていない発行済みアプリを見つけ、テストし、完全にデプロイできます。 管理センターからアプリを購入してライセンスを付与することで、Microsoft と Microsoft のパートナー アプリを 1 つの場所から一覧に追加できます。
 
-1. 管理センターの左側のナビゲーションで、[**設定**] を選択し、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">**統合アプリ**</a>] を選択します。
+1. 管理センターの左側のナビゲーションで、[**設定**] を選択し、[<a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**統合アプリ**</a>] を選択します。
 
 2. [ **アプリの取得** ] を選択して、アプリのビューを取得します。
 
@@ -86,8 +86,8 @@ Microsoft 365 管理センターでは、単一のストア アプリ、カス�
 次のシナリオでは、統合アプリ ポータルからパートナーが 1 つのストア アプリまたはMicrosoft 365 Appsをデプロイすることはできません。
 
 - 同じアドインが複数の SaaS プランにリンクされています。
-- SaaS オファーはアドインにリンクされていますが、Microsoft Graphと統合されておらず、AADアプリ ID は提供されません。
-- SaaS オファーはアドインにリンクされていますが、Microsoft Graph統合用に提供AADアプリ ID は複数の SaaS オファーで共有されます。
+- SaaS オファーはアドインにリンクされていますが、Microsoft Graphと統合されず、AAD アプリ ID は提供されません。
+- SaaS オファーはアドインにリンクされていますが、Microsoft Graph統合用に提供される AAD アプリ ID は、複数の SaaS オファー間で共有されます。
 
 ## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>テストと完全デプロイのためのカスタム基幹業務アプリのアップロード
 
@@ -115,13 +115,13 @@ Office アドインは、ドキュメントをカスタマイズし、Web 上の
 
 - 管理者がアドインをオフまたは削除した場合、またはアドインが割り当てられているAzure Active Directoryまたはグループからユーザーが削除された場合、アドインはユーザーに表示されなくなります。 
 
-アドインは、Mac アプリと Online Office アプリWindows 3 つのデスクトップ プラットフォームでサポートされています。 iOS と Android でもサポートされています (モバイル アドインのみOutlook)。 
+アドインは、Mac アプリと Online Office アプリWindows 3 つのデスクトップ プラットフォームでサポートされています。 iOSとAndroidでもサポートされています (モバイル アドインのみOutlook)。 
 
 アドインがすべてのユーザーのクライアントに表示されるまでには、最大で 24 時間かかる場合があります。 
 
 現在、Exchange管理者とグローバル管理者の両方が、統合アプリからアドインをデプロイできます。   
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 
 アドインの展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります。 また、ユーザーは組織 ID を使用してOfficeにサインインする必要があります)、Exchange OnlineメールボックスとアクティブなExchange Online メールボックスが必要です。 サブスクリプション ディレクトリが存在するか、Azure Active Directoryにフェデレーションされている必要があります。 
 
@@ -130,7 +130,7 @@ Office アドインは、ドキュメントをカスタマイズし、Web 上の
 - Office 2013 の Word、Excel、または PowerPoint を対象とするアドイン 
 - オンプレミスのディレクトリ サービス 
 - Exchange On-prem メールボックスへのアドインの展開 
-- コンポーネント オブジェクト モデル (COM) またはVisual Studio Tools for Office (VSTO) アドインのデプロイ。 
+- コンポーネント オブジェクト モデル (COM) または Visual Studio Tools for Office (VSTO) アドインのデプロイ。 
 - ビジネス向けのMicrosoft 365 AppsやEnterpriseのMicrosoft 365 Appsなど、Exchange Onlineを含まないMicrosoft 365のデプロイ。  
 
 ### <a name="office-requirements"></a>Office要件 
@@ -147,8 +147,8 @@ Outlookの場合、ユーザーは次のいずれかを使用している必要�
     > MSI バージョンのOutlookでは、管理者がインストールしたアドインが適切なOutlookリボンに表示され、[マイ アドイン] セクションは表示されません。  
 - バージョン 15.0.4937.1000 以降の Office Professional Plus 2013 (MSI) または Office Standard 2013 (MSI)。
 - バージョン 16.0.9318.1000 以降のOffice 2016 for Mac。 
-- iOS 用モバイルのバージョン 2.75.0 以降Outlook。 
-- Android 用モバイルのバージョン 2.2.145 以降Outlook。 
+- iOS用のモバイルのバージョン 2.75.0 以降Outlook。 
+- Android用のバージョン 2.2.145 以降のモバイルOutlook。 
 
 
 
@@ -239,7 +239,7 @@ Office アドインの種類と機能の詳細については、アドイン [�
 アドインの更新は次のように発生します。 
 - **基幹業務** アドイン: この場合、管理者がマニフェストを明示的にアップロードした場合、アドインはメタデータの変更をサポートするために新しいマニフェスト ファイルをアップロードする必要があります。 次に関連する Office アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
 
-- **Office ストア アドイン**: 管理者が Office ストアからアドインを選択した場合、アドインが Office ストアで更新された場合、次回関連するOffice アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
+- **Office Microsoft Store アドイン**: 管理者がOffice Microsoft Storeからアドインを選択すると、アドインがOffice Microsoft Storeで更新されると、次回関連するOffice アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
 
 > [!NOTE]
 > Word の場合、ExcelとPowerPointは[、SharePoint アプリ カタログ](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)を使用して、Microsoft 365への接続や必要なSharePointアドインのサポートを持たないオンプレミス環境のユーザーにアドインを展開します。 Outlook Exchangeコントロール パネルを使用して、Microsoft 365に接続せずにオンプレミス環境にデプロイします。  

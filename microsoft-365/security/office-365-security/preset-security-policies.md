@@ -16,16 +16,16 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365の保護機能全体に Standard および Strict ポリシー設定を適用する方法を学習できます
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fd969461b47b0208dcfd20ff608e829b6a3336
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 06db733b50de51750d6c9f7b3dcf14f28cdff414
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64915975"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66044398"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -85,18 +85,25 @@ ms.locfileid: "64915975"
   > 送信スパム ポリシーは、事前設定されたセキュリティ ポリシーの一部ではありません。 既定の送信スパム ポリシーは、事前設定されたセキュリティ ポリシーのメンバーを自動的に保護します。 または、カスタム送信スパム ポリシーを作成して、事前設定されたセキュリティ ポリシーのメンバーの保護をカスタマイズすることもできます。 詳細については、「 [EOP で送信スパム フィルターを構成する](configure-the-outbound-spam-policy.md)」を参照してください。
 
 - **Microsoft Defender for Office 365 ポリシー**: これには、Microsoft 365 E5またはDefender for Office 365アドオン サブスクリプションを持つ組織が含まれます。
-  - **Standard Preset Security Policy と Strict Preset Security Policy** という名前のMicrosoft Defender for Office 365のフィッシング対策 **ポリシー**。次のものが含まれます。
+  - **Standard Preset Security** Policy と Strict Preset Security Policy という名前のDefender for Office 365のフィッシング対策 **ポリシー**。次のものが含まれます。
     - EOP フィッシング対策ポリシーで使用できるのと同じ [スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings) 。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
   - [セーフ 標準](set-up-safe-links-policies.md)**プリセット セキュリティ ポリシー、Strict Preset Security Policy**、**および組み込み保護****ポリシー** という名前のリンク ポリシー。
   - セーフ **標準プリセット セキュリティ ポリシー、Strict Preset Security Policy**、および **組み込み保護** ポリシーという名前の [添付ファイル](set-up-safe-attachments-policies.md) **ポリシー**。
 
-EOP 保護は、Microsoft Defender for Office 365保護とは異なるユーザーに適用できます。
+EOP 保護は、Defender for Office 365保護とは異なるユーザーに適用することも、同じ受信者に EOP とDefender for Office 365を適用することもできます。
 
 ### <a name="policy-settings-in-preset-security-policies"></a>事前設定されたセキュリティ ポリシーのポリシー設定
 
 保護プロファイルでポリシー設定を変更することはできません。 **Standard**、**Strict**、および **組み込みの保護** ポリシー設定の値については、「[EOP とMicrosoft Defender for Office 365セキュリティの推奨設定」を参照](recommended-settings-for-eop-and-office365.md)してください。
+
+> [!NOTE]
+> Defender for Office 365保護では、[ユーザー権限借用保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)の送信者と、ドメイン偽装保護の内部ドメインまたは外部ドメイン[を](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)識別する必要があります。
+>
+> 所有するすべてのドメイン ([承認済みドメイン) は、](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)事前設定されたセキュリティ ポリシーでドメイン偽装保護を自動的に受け取ります。
+>
+> すべての受信者は、事前設定されたセキュリティ ポリシーで [メールボックス インテリジェンス](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) から偽装保護を自動的に受け取ります。
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>事前設定されたセキュリティ ポリシーとその他のポリシーの優先順位
 
@@ -135,26 +142,75 @@ EOP 保護は、Microsoft Defender for Office 365保護とは異なるユーザ�
 
 2. **[事前設定されたセキュリティ ポリシー**] ページの [**Standard Protection**] セクションまたは [**Strict protection**] セクションで [**管理**] をクリックします。
 
-3. **[標準保護の適用]** または **[厳格な保護の適用]** ウィザードはポップアップで開始されます。 **EOP 保護が適用される** ページで、[EOP 保護](#policies-in-preset-security-policies)が適用される内部受信者 (受信者の条件) を特定します。
-   - **Users**
-   - **グループ**
-   - **ドメイン**
+3. **[標準保護の適用]** または **[厳格な保護の適用]** ウィザードはポップアップで開始されます。
 
-   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+   [**Exchange Online Protectionの適用**] ページで、[EOP 保護](#policies-in-preset-security-policies)が適用される内部受信者 (受信者の条件) を特定します。
+   - **すべての受信者**
+   - **特定の受信者**:
+     - **Users**
+     - **グループ**
+     - **ドメイン**
 
-   ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
+     適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
-   - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
+     ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
+
+   - **なし**
+
+   - **これらの受信者を除外する**: ポリシーが適用される内部受信者の例外 (受信者の例外) を追加するには、このオプションを選択し、例外を構成します。 設定と動作は、条件とまったく同じです。
 
    完了したら、**[次へ]** をクリックします。
 
-4. Microsoft Defender for Office 365組織では、Microsoft Defender for Office 365保護が適用される内部受信者を識別 **するためにページに適用** される [Defender for Office 365保護](#policies-in-preset-security-policies)に移動します (受信者の条件)。
+   > [!NOTE]
+   > Defender for Office 365のない組織では、[**次へ**] をクリックすると、[**校閲**] ページに移動します。 **[校閲**] ページの前の残りの手順/ページは、Defender for Office 365のある組織でのみ使用できます。
+
+4. [**Defender for Office 365保護の適用**] ページで、[Defender for Office 365保護](#policies-in-preset-security-policies)が適用される内部受信者 (受信者の条件) を特定します。
 
    設定と動作は、前の手順のページ **に適用される EOP 保護** とまったく同じです。
 
+   [ **以前に選択した受信者** ] を選択して、前のページで EOP 保護で選択したものと同じ受信者を使用することもできます。
+
    完了したら、**[次へ]** をクリックします。
 
-5. [ **変更の確認と確認** ] ページで、選択内容を確認し、[ **確認**] をクリックします。
+5. [ **偽装保護** ] ページで、[ **次へ**] をクリックします。
+
+6. [ **攻撃者によって偽装されたときにフラグを設定する電子メール アドレスを追加する** ] ページで、 [ユーザー偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)によって保護されている内部および外部の送信者を追加します。
+
+   > [!NOTE]
+   > すべての受信者は、事前設定されたセキュリティ ポリシーで [メールボックス インテリジェンス](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) から偽装保護を自動的に受け取ります。
+
+   各エントリは、表示名と電子メール アドレスで構成されます。 ボックスに各値を入力し、[ **追加**] をクリックします。 必要な回数だけこの手順を繰り返します。
+
+   最大 350 人のユーザーを指定でき、複数のポリシーのユーザー偽装保護設定で同じユーザーを指定することはできません。
+
+   リストから既存のエントリを削除するには、 ![偽装保護アイコンからユーザーを削除します。](../../media/m365-cc-sc-remove.png).
+
+   完了したら、**[次へ]** をクリックします。
+
+7. [ **攻撃者による偽装時にフラグを設定するドメインの追加** ] ページで、 [ドメイン偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)によって保護されている内部ドメインと外部ドメインを追加します。
+
+   > [!NOTE]
+   > 所有するすべてのドメイン ([承認済みドメイン) は、](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)事前設定されたセキュリティ ポリシーでドメイン偽装保護を自動的に受け取ります。
+
+   指定されたドメイン内のすべての送信者は、ドメイン偽装保護によって保護されます。
+
+   ボックスにドメインを入力し、[ **追加**] をクリックします。 必要な回数だけこの手順を繰り返します。
+
+   リストから既存のエントリを削除するには、エントリを選択し、 ![偽装保護アイコンからドメインを削除します。](../../media/m365-cc-sc-remove.png).
+
+   すべてのフィッシング対策ポリシーでドメイン偽装保護に指定できるドメインの最大数は 50 です。
+
+   完了したら、**[次へ]** をクリックします。
+
+8. [ **偽装としてフラグを設定しない信頼された電子メール アドレスとドメインを追加** する] ページで、偽装保護から除外する送信者の電子メール アドレスとドメインを入力します。 これらの送信者からのメッセージには偽装攻撃のフラグは設定されませんが、送信者は引き続き EOP とDefender for Office 365の他のフィルターによるスキャンの対象となります。
+
+   ボックスにメール アドレスまたはドメインを入力し、[ **追加**] をクリックします。 必要な回数だけこの手順を繰り返します。
+
+   リストから既存のエントリを削除するには、エントリを選択し、 ![偽装保護アイコンに例外を削除します。](../../media/m365-cc-sc-remove.png).
+
+   完了したら、**[次へ]** をクリックします。
+
+9. **[このポリシーの確認と確認**] ページで、選択内容を確認し、[**確認**] をクリックします。
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies"></a>Microsoft 365 Defender ポータルを使用して、Standard および Strict の事前設定済みセキュリティ ポリシーの割り当てを変更する
 
@@ -177,7 +233,7 @@ EOP 保護は、Microsoft Defender for Office 365保護とは異なるユーザ�
    - **グループ**
    - **ドメイン**
 
-   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
+   適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![組み込みの保護アイコンから除外を削除します。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 

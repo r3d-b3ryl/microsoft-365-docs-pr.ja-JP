@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365保護への移行を開始する手順を実行します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f4f6e1d557915fe40dc570cd58374371e0e9b6a3
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 34e975be9a937177706fd7db6605d2ef25edcad3
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474929"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043547"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Microsoft Defender for Office 365に移行する - フェーズ 2: セットアップ
 
@@ -54,10 +54,10 @@ ms.locfileid: "64474929"
   [オンボード手順 2: (省略可能) パイロット ユーザーが既存の保護サービスによるフィルター処理を](migrate-to-defender-for-office-365-onboard.md#step-2-optional-exempt-pilot-users-from-filtering-by-your-existing-protection-service)除外する」で説明したように、これらの同じパイロット ユーザーが既存の保護サービスによるスキャンを除外することを検討する必要があります。 既存の保護サービスでフィルター処理を行い、Defender for Office 365のみに依存する可能性を排除することは、移行が完了した後に何が起こるかを最も近く表現することです。
 
 - **特定のDefender for Office 365保護機能のテスト**: パイロット ユーザーであっても、すべてを一度に有効にしたくありません。 パイロット ユーザーに対して有効な保護機能に段階的なアプローチを使用すると、トラブルシューティングと調整がはるかに簡単になります。 この方法を念頭に置いて、次の配布グループをお勧めします。
-  - **セーフ Attachment パイロット グループ**: たとえば、**MDOPilotSafeAttachments\_**
-  - **セーフ リンク パイロット グループ**: たとえば、**MDOPilotSafeLinks\_**
-  - **標準のスパム対策およびフィッシング対策ポリシー設定のパイロット グループ**: たとえば、**MDOPilotSpamPhishStandard\_\_**
-  - **厳格なスパム対策とフィッシング対策ポリシー設定のパイロット グループ**: たとえば、**MDOPilotSpamPhishStrict\_\_**
+  - **セーフ添付ファイル パイロット グループ**: たとえば、**MDOPilot\_SafeAttachments**
+  - **セーフ リンク パイロット グループ**: たとえば、**MDOPilot\_SafeLinks**
+  - **標準スパム対策とフィッシング対策ポリシー設定のパイロット グループ**: たとえば、 **MDOPilot\_SpamPhish\_Standard**
+  - **厳格なスパム対策とフィッシング対策ポリシー設定のパイロット グループ**: たとえば、 **MDOPilot\_SpamPhish\_Strict**
 
 わかりやすくするために、この記事全体でこれらの特定のグループ名を使用しますが、独自の名前付け規則を自由に使用できます。
 
@@ -65,7 +65,7 @@ ms.locfileid: "64474929"
 
 **注意**:
 
-- Standard および Strict という用語は、 [推奨されるセキュリティ設定](recommended-settings-for-eop-and-office365.md)に由来します。これは、 [事前設定されたセキュリティ ポリシー](preset-security-policies.md)でも使用されます。 理想的には、Standard および Strict の事前設定済みセキュリティ ポリシーでパイロット ユーザーを定義することをお勧めしますが、これを行うことはできません。 どうしてでしょうか? 事前設定されたセキュリティ ポリシー (特に、メッセージに対して実行されるアクションや偽装保護設定の調整) の設定をカスタマイズできないためです。 移行テスト中に、メッセージに対して実行するDefender for Office 365を確認し、それが何を行うかを確認し、それらの結果を許可または防止するようにポリシー構成を調整する必要があります。
+- Standard および Strict という用語は、 [推奨されるセキュリティ設定](recommended-settings-for-eop-and-office365.md)に由来します。これは、 [事前設定されたセキュリティ ポリシー](preset-security-policies.md)でも使用されます。 理想的には、Standard および Strict の事前設定済みセキュリティ ポリシーでパイロット ユーザーを定義することをお勧めしますが、これを行うことはできません。 どうしてでしょうか? 事前設定されたセキュリティ ポリシー (特に、メッセージに対して実行されるアクション) の設定をカスタマイズできないためです。 移行テスト中に、メッセージに対して実行するDefender for Office 365を確認し、それが何を行うかを確認し、それらの結果を許可または防止するようにポリシー構成を調整する必要があります。
 
   そのため、事前設定されたセキュリティ ポリシーを使用する代わりに、非常に似た設定でカスタム ポリシーを手動で作成しますが、場合によっては、Standard および Strict の事前設定のセキュリティ ポリシーの設定とは異なります。
 
@@ -110,7 +110,7 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 
 - インターネット メールが既存の保護サービスを経由 **し**、同時にMicrosoft 365に直接送信されるようにする場合は、SCL=-1 メール フロー ルール (スパム フィルターをバイパスするメール) を、既存の保護サービスのみを経由するメールに制限する必要があります。 Microsoft 365のユーザー メールボックスにフィルター処理されていないインターネット メールのランディングは必要ありません。
 
-  既存の保護サービスによって既にスキャンされているメールを正しく識別するには、SCL=-1 メール フロー ルールに条件を追加します。 次に、例を示します。
+  既存の保護サービスによって既にスキャンされているメールを正しく識別するには、SCL=-1 メール フロー ルールに条件を追加します。 例として以下のようなものがあります。
 
   - **クラウドベースの保護サービスの場合**: 組織に固有のヘッダーとヘッダーの値を使用できます。 ヘッダーを含むメッセージは、Microsoft 365によってスキャンされません。 ヘッダーのないメッセージは、Microsoft 365によってスキャンされます
   - **オンプレミスの保護サービスまたはデバイスの** 場合: ソース IP アドレスを使用できます。 ソース IP アドレスからのメッセージは、Microsoft 365によってスキャンされません。 ソース IP アドレスからではないメッセージは、Microsoft 365によってスキャンされます。
@@ -147,7 +147,7 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 
 パイロット ユーザーのセーフ添付ファイル ポリシーを作成します。
 
-推奨される設定については、「[推奨されるセーフ添付ファイルポリシー設定](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings)」を参照してください。 Standard と Strict の推奨事項は同じであることに注意してください。 ポリシーを作成するには、「[添付ファイル ポリシーセーフ設定](set-up-safe-attachments-policies.md)する」を参照してください。 ポリシーの条件としてグループ **MDOPilotSafeAttachments\_** を使用してください (ポリシーが適用されるユーザー)。
+推奨される設定については、「[推奨されるセーフ添付ファイルポリシー設定](recommended-settings-for-eop-and-office365.md#safe-attachments-policy-settings)」を参照してください。 Standard と Strict の推奨事項は同じであることに注意してください。 ポリシーを作成するには、「[添付ファイル ポリシーセーフ設定](set-up-safe-attachments-policies.md)する」を参照してください。 ポリシーの条件として **グループ MDOPilot\_SafeAttachments** を使用してください (ポリシーが適用されるユーザー)。
 
 > [!IMPORTANT]
 > 現在、既定のセーフ添付ファイル ポリシーはありません。 MX レコードを切り替える前に、組織全体を保護するセーフ添付ファイル ポリシーを使用することをお勧めします。
@@ -161,7 +161,7 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 
 パイロット ユーザーのセーフ リンク ポリシーを作成します。 セーフ リンクの誤検知の可能性も非常に低いですが、セーフ添付ファイルよりも少数のパイロット ユーザーで機能をテストすることを検討する必要があります。 この機能はユーザー エクスペリエンスに影響するため、ユーザーを教育する計画を検討する必要があります。
 
-推奨される設定については、「[推奨されるセーフ リンク ポリシー設定](recommended-settings-for-eop-and-office365.md#safe-links-settings)」を参照してください。 Standard と Strict の推奨事項は同じであることに注意してください。 ポリシーを作成するには、「[セーフ リンク ポリシーを設定](set-up-safe-links-policies.md)する」を参照してください。 ポリシーの条件として **グループ MDOPilotSafeLinks\_** を使用してください (ポリシーが適用されるユーザー)。
+推奨される設定については、「[推奨されるセーフ リンク ポリシー設定](recommended-settings-for-eop-and-office365.md#safe-links-settings)」を参照してください。 Standard と Strict の推奨事項は同じであることに注意してください。 ポリシーを作成するには、「[セーフ リンク ポリシーを設定](set-up-safe-links-policies.md)する」を参照してください。 ポリシーの条件としてグループ **MDOPilot\_SafeLinks** を使用してください (ポリシーが適用されるユーザー)。
 
 > [!IMPORTANT]
 > 現在、既定のセーフリンク ポリシーはありません。 MX レコードを切り替える前に、組織全体を保護する セーフ リンク ポリシーを使用することをお勧めします。
@@ -170,8 +170,8 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 
 パイロット ユーザー用に 2 つのスパム対策ポリシーを作成します。
 
-- Standard 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilotSpamPhishStandard\_\_** を使用します (ポリシーが適用されるユーザー)。
-- Strict 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilotSpamPhishStrict\_\_** を使用します (ポリシーが適用されるユーザー)。 このポリシーの優先度は、Standard 設定のポリシーよりも高い (数値が低い) 必要があります。
+- Standard 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilot\_SpamPhish\_Standard** を使用します (ポリシーが適用されるユーザー)。
+- Strict 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilot\_SpamPhish\_Strict** を使用します (ポリシーが適用されるユーザー)。 このポリシーの優先度は、Standard 設定のポリシーよりも高い (数値が低い) 必要があります。
 
 推奨される Standard と Strict の設定については、「 [推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)」を参照してください。 ポリシーを作成するには、「 [スパム対策ポリシーを構成する」を](configure-your-spam-filter-policies.md)参照してください。
 
@@ -179,8 +179,8 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 
 パイロット ユーザー用にフィッシング対策ポリシーを 2 つ作成します。
 
-- 次に示すように、偽装検出アクションを除き、Standard 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilotSpamPhishStandard\_\_** を使用します (ポリシーが適用されるユーザー)。
-- 次に示すように、偽装検出アクションを除き、Strict 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilotSpamPhishStrict\_\_** を使用します (ポリシーが適用されるユーザー)。 このポリシーの優先度は、Standard 設定のポリシーよりも高い (数値が低い) 必要があります。
+- 次に示すように、偽装検出アクションを除き、Standard 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilot\_SpamPhish\_Standard** を使用します (ポリシーが適用されるユーザー)。
+- 次に示すように、偽装検出アクションを除き、Strict 設定を使用するポリシー。 ポリシーの条件として **グループ MDOPilot\_SpamPhish\_Strict** を使用します (ポリシーが適用されるユーザー)。 このポリシーの優先度は、Standard 設定のポリシーよりも高い (数値が低い) 必要があります。
 
 スプーフィング検出の場合、推奨される標準アクションは **受信者の迷惑メール フォルダーにメッセージを移動** することです。推奨される Strict アクションは **メッセージの検疫** です。 スプーフィング インテリジェンス分析情報を使用して結果を観察します。 オーバーライドについては、次のセクションで説明します。 詳細については、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
 
@@ -200,7 +200,7 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 - [フィッシング対策ポリシーの偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Defender for Office 365でフィッシング対策ポリシーを構成](configure-mdo-anti-phishing-policies.md)します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 **おめでとうございます**。 [Microsoft Defender for Office 365への移行](migrate-to-defender-for-office-365.md#the-migration-process)の **セットアップ** フェーズが完了しました。
 

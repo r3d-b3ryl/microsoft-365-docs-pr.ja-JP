@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
 description: ユーザーが組織内外のユーザーと予定表を共有できるように、Microsoft 365 管理センターで予定表共有を有効にします。
-ms.openlocfilehash: 9179e79e27320df2b943a9342ee0c2a91c866448
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b3ca1d4f2a6ef24a6958b4fe805ccf617c0984e7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468560"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043146"
 ---
 # <a name="share-microsoft-365-calendars-with-external-users"></a>外部ユーザーとMicrosoft 365予定表を共有する
 
@@ -41,7 +41,7 @@ ms.locfileid: "65468560"
   
 ## <a name="enable-calendar-sharing-using-the-microsoft-365-admin-center"></a>Office 365 管理センターを使用して予定表の共有を有効にする
 
-1. 管理センターで **[設定** \> **組織の設定]** に移動し、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**サービス**] タブで [</a>予定表] を選択 **します**。
+1. **グローバル管理者** として管理センターにサインインし、**組織の設定****設定**\>移動し、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">**サービス**] タブで [</a>**予定表**] を選択します。
   
 3. **[予定表**] ページで、Microsoft 365またはExchangeを持つ組織外のユーザーと予定表をユーザーが共有できるようにするかどうかを選択します。 匿名ユーザー (資格情報のないユーザー) に電子メール招待を使用して予定表へのアクセスを許可するかどうかを選択します。
 
@@ -57,7 +57,25 @@ ms.locfileid: "65468560"
 
 ## <a name="invite-people-to-access-calendars"></a>予定表にアクセスできるようにユーザーを招待する
 
-共有が有効になると、予定表の所有者は特定のユーザーに招待を拡張できます。 手順については、「[Outlook Web Appで予定表を共有する](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5)」を参照してください。
+共有が有効になると、予定表の所有者は特定のユーザーに招待を拡張できます。
+
+1. [Web でOutlookを](https://outlook.office365.com)開きます。
+
+2. ページの上部にあるアプリ起動ツールを選択し、[予定表] を選択 **します**。 既定では、プライマリ 予定表は "予定表" と呼ばれます。 他の予定表を作成した場合は、代わりに共有する予定表のいずれかを選択できます。 他のユーザーが所有する予定表を共有することはできません。
+
+3. 予定表を共有する相手の名前またはメール アドレスを [ **電子メールで共有招待を送信** する] ボックスに入力します。
+
+4. このユーザーに表示する情報の量を選択します。
+
+     - **[自分がビジー状態を表示できる** ] では、ユーザーがいつビジー状態かを確認できますが、イベントの場所などの詳細は含まれません。
+
+     - **タイトルと場所を表示できます** 。ユーザーは、イベントのタイトルと場所だけでなく、忙しいときも確認できます。
+
+     - **すべての詳細を表示できます** 。ユーザーはイベントのすべての詳細を表示できます。
+
+     - **編集可能な** ユーザーは、イベントのすべての詳細を表示し、予定表を編集できます (組織内のユーザーと共有する場合にのみ使用できます)。
+
+5. **共有** を選択します。 
 
 ## <a name="related-content"></a>関連コンテンツ
 

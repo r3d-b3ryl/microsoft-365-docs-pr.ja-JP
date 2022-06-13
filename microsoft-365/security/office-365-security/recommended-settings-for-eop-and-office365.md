@@ -19,16 +19,16 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 921523ea3c1d73dc83c148cc2e61aab416ed9302
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: bd30be87a277d271fece74a9700a60992a562399
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599301"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043031"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -46,7 +46,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 > [!NOTE]
 > PowerShell 用の Office 365 Advanced Threat Protection 推奨構成アナライザー (ORCA) モジュールは、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には、 **Get-ORCAReport** コマンドレットは、スパム対策、フィッシング詐欺対策、およびその他のメッセージの検疫設定の評価を生成します。 ORCA モジュールは 、次の場所で <https://www.powershellgallery.com/packages/ORCA/>ダウンロードできます。
 >
-> Microsoft 365組織では、迷惑メール フィルターを [自動フィルターなし] に設定Outlook、EOP からのスパム **フィルター** の判定で不要な競合 (正と負の両方) を防ぐことをお勧めします。 詳細については、次の資料を参照してください。
+> Microsoft 365組織では、迷惑メール フィルターを [自動フィルターなし] に設定Outlook、EOP からのスパム **フィルター** の判定で不要な競合 (正と負の両方) を防ぐことをお勧めします。 詳細については、次の記事を参照してください。
 >
 > - [Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)
 > - [Outlookの迷惑メール設定について](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
@@ -153,7 +153,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**From name** <br/><br/> _CustomFromName_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**差出人アドレス** <br/><br/> _CustomFromAddress_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**内部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージが **マルウェアとして検疫されたときに内部送信者に通知** するか、 **内部送信者からの未配信メッセージについて管理者に通知** するが選択されている場合にのみ使用されます。|
-|**件名** <br/><br/> _CustomInternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
+|**[件名]** <br/><br/> _CustomInternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**メッセージ** <br/><br/> _CustomInternalBody_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
 |**外部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、メッセージが **マルウェアとして検疫されたときに外部送信者に通知** するか **、外部送信者からの配信不能メッセージを管理者に通知** するが選択されている場合にのみ使用されます。|
 |**件名** <br/><br/> _CustomExternalSubject_|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`|空白 <br/><br/> `$null`||
@@ -208,10 +208,10 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |セキュリティ機能名|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**フィッシングしきい値&保護**|||||
-|**ユーザーの保護を有効にする** (偽装されたユーザー保護) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|未選択 <br/><br/> `$false` <br/><br/> none|選択済み <br/><br/> `$true` <br/><br/> \<list of users\>|選択済み <br/><br/> `$true` <br/><br/> \<list of users\>|キー ロールにユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、およびその他の上級リーダーである可能性があります。 外部では、保護された送信者には、会議メンバーまたは取締役会が含まれる可能性があります。 <br/><br/> 事前設定されたセキュリティ ポリシーでは、保護するユーザーを指定することはできません。 事前設定されたセキュリティ ポリシーを無効にし、カスタムフィッシング対策ポリシーを使用して、推奨どおりに主要なロールにユーザーを追加する必要があります。|
+|**ユーザーの保護を有効にする** (偽装されたユーザー保護) <br/><br/> _EnableTargetedUserProtection_ <br/><br/> _TargetedUsersToProtect_|未選択 <br/><br/> `$false` <br/><br/> none|選択済み <br/><br/> `$true` <br/><br/> \<list of users\>|選択済み <br/><br/> `$true` <br/><br/> \<list of users\>|キー ロールにユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、およびその他の上級リーダーである可能性があります。 外部では、保護された送信者には、会議メンバーまたは取締役会が含まれる可能性があります。|
 |**ドメインで保護を有効にする** (偽装されたドメイン保護)|未選択|選択済み|選択済み||
 |**所有しているドメインを含める** <br/><br/> _EnableOrganizationDomainsProtection_|Off <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
-|**カスタム ドメインを含める** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Off <br/><br/> `$false` <br/><br/> none|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|所有していないドメイン (送信者ドメイン) を追加することをお勧めしますが、頻繁に操作します。 <br/><br/> 事前設定されたセキュリティ ポリシーでは、保護する custm ドメインを指定することはできません。 事前設定されたセキュリティ ポリシーを無効にし、カスタムフィッシング対策ポリシーを使用して、推奨どおりに保護するカスタム ドメインを追加する必要があります。|
+|**カスタム ドメインを含める** <br/><br/> _EnableTargetedDomainsProtection_ <br/><br/> _TargetedDomainsToProtect_|Off <br/><br/> `$false` <br/><br/> none|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|選択済み <br/><br/> `$true` <br/><br/> \<list of domains\>|所有していないドメイン (送信者ドメイン) を追加することをお勧めしますが、頻繁に操作します。|
 |**信頼できる送信者とドメインの追加** <br/><br/> _ExcludedSenders_ <br/><br/> _ExcludedDomains_|なし|なし|なし|組織によっては、偽装の試行として誤って識別される送信者またはドメインを追加することをお勧めします。|
 |**メールボックス インテリジェンスを有効にする** <br/><br/> _EnableMailboxIntelligence_|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`||
 |**偽装に対する保護のインテリジェンスを有効にする** <br/><br/> _EnableMailboxIntelligenceProtection_|Off <br/><br/> `$false`|選択済み <br/><br/> `$true`|選択済み <br/><br/> `$true`|この設定では、メールボックス インテリジェンスによる偽装検出に対して指定されたアクションを許可します。|
@@ -322,7 +322,7 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 |**通知**||||||
 |**ユーザーに通知する方法**|**既定の通知テキストを使用する**|**既定の通知テキストを使用する**|**既定の通知テキストを使用する**|**既定の通知テキストを使用する**|この設定に関する具体的な推奨事項はありません。 <br/><br/> [ **カスタム通知テキストを使用する** ] (_CustomNotificationText_) を選択して、使用するカスタマイズされた通知テキストを入力できます。 **自動ローカライズにMicrosoft 翻訳ツールを使用** する (_UseTranslatedNotificationText_) を選択して、カスタム通知テキストをユーザーの言語に翻訳することもできます。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - **Exchangeメール フロー ルール (トランスポート ルールとも呼ばれます**) のベスト プラクティスをお探しですか? [Exchange Onlineでメール フロー ルールを構成するためのベスト プラクティスに](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices)関するページを参照してください。
 

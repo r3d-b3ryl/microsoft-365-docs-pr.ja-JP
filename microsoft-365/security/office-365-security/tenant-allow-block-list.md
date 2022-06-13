@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e1832f641c5efc582bee7837dcf8e5b67a9256f6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772093"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043733"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -74,16 +74,13 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - この記事の手順を実行する際には、あらかじめExchange Online でアクセス許可を割り当てる必要があります。
-  - **送信者、URL、ファイル**:
     - テナント許可/ブロック リストの値を追加および削除するには、次のメンバーである必要があります。
       - **組織の管理** または **セキュリティ管理者** の役割グループ (**セキュリティ管理者ロール**)
       - **Security Operator** ロール グループ (**テナント AllowBlockList Manager**)。
     - テナント許可/ブロック リストへの読み取り専用アクセスの場合は、次のメンバーである必要があります。
       - **グローバル リーダー**  の役割グループ
       - **セキュリティ 閲覧者** の役割グループ
-  - **スプーフィング**: 次のいずれかの組み合わせ。
-    - **組織の管理**
-    - **セキュリティ管理者**<u>と</u>**表示専用構成** または **表示専用組織管理**。
+      - **表示専用構成の* 役割グループ。
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
@@ -468,7 +465,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **インフラストラクチャの送信**: この値は、スプーフィングされたユーザーからのメッセージのソースを示します。 有効な値は次のとおりです。
   - 送信元電子メール サーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) で見つかったドメイン (fabrikam.com など)。
   - 送信元 IP アドレスに PTR レコードがない場合、送信インフラストラクチャは /24 (たとえば、192.168.100.100/24) として \<source IP\>識別されます。
-  - 検証済みの DKIM ドメイン。
 
 スプーフィングされた送信者を識別するための有効なドメイン ペアの例を次に示します。
 

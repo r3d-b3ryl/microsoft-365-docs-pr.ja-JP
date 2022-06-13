@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理 センターでのネットワーク接続の概要
-ms.openlocfilehash: 4d23990253b96e57df04411a2207d089c90711ca
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621817"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043873"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターでのネットワーク接続
 
@@ -34,8 +34,8 @@ Microsoft 365 管理 センターには、Microsoft 365 テナントから収集
 > [!div class="mx-imgBorder"]
 > ![[ネットワーク パフォーマンス] ページ。](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
->[!NOTE]
->Admin Center のネットワーク接続は、WW コマーシャルおよびドイツのテナントをサポートしますが、中、GCC高、DoD、中国GCCサポートしていません。
+> [!NOTE]
+> Admin Center のネットワーク接続は、WW コマーシャルおよびドイツのテナントをサポートしますが、中、GCC高、DoD、中国GCCサポートしていません。
 
 最初にネットワーク パフォーマンス ページに移動するときは、グローバル ネットワーク パフォーマンスのマップ、テナント全体を対象とするネットワーク評価、リモートで作業しているユーザーとオンサイトで作業しているユーザーの割合、およびアクションを実行したり、さらに調査したりするための現在の問題の一覧を表示するために、場所を構成する必要があります。 概要ウィンドウからドリルダウンして、特定のネットワーク パフォーマンス メトリックと問題を場所別に表示できます。 詳細については、[Microsoft 365 管理 センターのネットワーク パフォーマンスの概要に関するページを参照してください](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
@@ -202,14 +202,46 @@ CSV ファイルでは、検出された都市の場所が userEntered 列に空
    > [!div class="mx-imgBorder"]
    > ![CSV インポートの準備完了メッセージ。](../media/m365-mac-perf/m365-mac-perf-import-ready.png)
 
+## <a name="cqd-tsv-import-for-lan-subnet-office-locations"></a>LAN サブネット オフィスの場所の CQD TSV インポート
+
+通話品質ダッシュボードに建物データをアップロードした場合は、これらの場所をここに追加して、ネットワーク接続の評価を開始できます。 これは、既存の場所には影響しません。
+
+通話品質ダッシュボードの[テナント データ アップロードに移動](https://cqd.teams.microsoft.com/spd/#/TenantDataUpload)します。 建物データをアップロードした場合は、.tsv ファイルにダウンロードするオプションが表示されます。 通話品質ダッシュボードから .tsv ファイルをダウンロードし、次の手順に従って CQD ポップアップにアップロードします。 .tsv ファイルを手動で作成する場合は、スキーマをビルド データ ファイル内のスキーマとアップロード合わせるか、代わりに LAN サブネットオフィスの場所の CSV インポートを試してください。
+
+1. メインの [Microsoft 365への接続] ウィンドウで、[**場所**] タブをクリックします。
+
+2. 場所の一覧のすぐ上にある [ **複数の場所の管理** ] ボタンをクリックします。
+
+   > [!div class="mx-imgBorder"]
+   > ![[複数の場所の管理] メニュー。](../media/m365-mac-perf/m365-mac-perf-import-cqd-manage-multiple.png)
+
+3. [ **通話品質ダッシュボードから場所を追加**] をクリックすると、[ **通話品質ダッシュボードの場所の追加]** ポップアップが表示されます。
+
+   > [!div class="mx-imgBorder"]
+   > ![通話品質ダッシュボードのポップアップから場所を追加します。](../media/m365-mac-perf/m365-mac-perf-import-cqd-add-locations.png)
+
+4. [**アップロードする .tsv ファイルの選択**] フィールドの横にある **[参照**] ボタンをクリックし、保存した TSV ファイルを選択します。 ファイル内の値がタブ区切りになっていることを確認してください。
+
+5. ファイルは自動的に検証され、オフィスの場所の一覧に解析されます。 検証エラーが発生した場合は、 **ファイルのポップアップをアップロードできませんでした** 。エラーの一覧が表示されます。
+
+   > [!div class="mx-imgBorder"]
+   > ![ファイルポップアップをアップロードできませんでした。](../media/m365-mac-perf/m365-mac-perf-import-cqd-couldnt-upload.png)
+
+6. ファイルにエラーがない場合は、ファイル _test.tsv がアップロードされて準備完了というメッセージが表示されます。[インポート] を選択して情報をアップロードします。_
+
+   > [!div class="mx-imgBorder"]
+   > ![アップロードする .tsc ファイルを選択します。](../media/m365-mac-perf/m365-mac-perf-import-cqd-select-tsv.png)
+
+7. パネルの下部にある **[アップロード**] ボタンをクリックして、オフィスの場所をアップロードします。
+
 ## <a name="faq"></a>FAQ
 
 ### <a name="what-is-a-microsoft-365-service-front-door"></a>Microsoft 365サービス フロント ドアとは何ですか?
 
 Microsoft 365サービス フロント ドアは、Office クライアントとサービスがネットワーク接続を終了する Microsoft のグローバル ネットワーク上のエントリ ポイントです。 Microsoft 365への最適なネットワーク接続を実現するには、ネットワーク接続を最も近いMicrosoft 365フロント ドアに終端することをお勧めします。
 
->[!NOTE]
->サービス フロント ドアMicrosoft 365、Azure マーケットプレースで使用できる Azure Front Door Service 製品との直接的な関係はありません。
+> [!NOTE]
+> サービス フロント ドアMicrosoft 365、Azure マーケットプレースで使用できる Azure Front Door Service 製品との直接的な関係はありません。
 
 ### <a name="what-is-an-optimal-microsoft-365-service-front-door"></a>サービス フロント ドアMicrosoft 365最適なものは何ですか?
 

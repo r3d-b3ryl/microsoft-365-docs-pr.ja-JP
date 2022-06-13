@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 103208f1-e788-4601-aa45-504f896511cd
 description: この記事では、Office 365用の Azure ExpressRoute と、それをネットワーク計画に利用する方法について説明します。
-ms.openlocfilehash: a284472ad84139a5e76eeab38121d62cf3757829
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 59fa69a58bedf6babf2cf277a627d42293487ab1
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095644"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042916"
 ---
 # <a name="network-planning-with-expressroute-for-office-365"></a>Office 365 向け ExpressRoute のネットワーク計画
 
@@ -40,13 +40,13 @@ Azure ExpressRoute は、Microsoft のデータセンター内のOffice 365 サ�
 |**ネットワーク計画の違い**|**インターネット ネットワーク接続**|**ExpressRoute ネットワーク接続**|
 |:-----|:-----|:-----|
 | 必要なインターネット サービスへのアクセス(以下を含む)。  <br/>  DNS 名解決  <br/>  証明書失効の検証  <br/>  コンテンツ配信ネットワーク (CDN)  <br/> |はい  <br/> |Microsoft 所有の DNS やCDN インフラストラクチャへの要求では、ExpressRoute ネットワークを使用できます。  <br/> |
-| Office 365 サービスへのアクセス(以下を含む)  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  ブラウザーでのOffice  <br/>  Office 365 ポータルと認証  <br/> |はい。すべてのアプリケーションと機能  <br/> |はい、 [特定のアプリケーションと機能](./urls-and-ip-address-ranges.md) <br/> |
+| Office 365 サービスへのアクセス(以下を含む)  <br/>  Exchange Online  <br/>  SharePoint Online  <br/>  Skype for Business Online  <br/>  ブラウザー版 Office  <br/>  Office 365 ポータルと認証  <br/> |はい。すべてのアプリケーションと機能  <br/> |はい、 [特定のアプリケーションと機能](./urls-and-ip-address-ranges.md) <br/> |
 |境界でのオンプレミスのセキュリティ。  <br/> |はい  <br/> |はい  <br/> |
 |高可用性の計画。  <br/> |代替インターネット ネットワーク接続にフェールオーバーする  <br/> |別の ExpressRoute 接続にフェールオーバーする  <br/> |
 |予測可能なネットワーク プロファイルを使用した直接接続。  <br/> |いいえ  <br/> |はい  <br/> |
 |IPv6 接続。  <br/> |はい  <br/> |はい  <br/> |
 
-ネットワーク計画の詳細については、以下のタイトルを展開してください。 さらに詳しく説明する 10 部構成の [Azure ExpressRoute for Office 365 トレーニング](https://channel9.msdn.com/series/aer) シリーズも記録しました。
+ネットワーク計画の詳細については、以下のタイトルを展開してください。
 
 ## <a name="existing-azure-expressroute-customers"></a>既存の Azure ExpressRoute のお客様
 
@@ -62,7 +62,7 @@ Azure ExpressRoute サブスクリプションは顧客中心であり、サブ�
 |:-----|:-----|:-----|
 |**サービス** <br/> |IaaS: Azure Virtual Machines  <br/> |PaaS: Azure パブリック サービス  <br/> SaaS: Office 365  <br/> SaaS: Dynamics 365  <br/> |
 |接続の開始**** <br/> |Customer-to-Microsoft  <br/> Microsoft から顧客へ  <br/> |Customer-to-Microsoft  <br/> Microsoft から顧客へ  <br/> |
-|**QoS サポート** <br/> |QoS なし  <br/> |<sup>QoS1</sup> <br/> |
+|**QoS サポート** <br/> |QoS なし  <br/> |QoS<sup>1</sup> <br/> |
 
 <sup>1 </sup>QoS では、現時点でのみSkype for Businessがサポートされています。
   
@@ -104,15 +104,15 @@ expressRoute でOffice 365接続に使用されるネットワーク/セキュ�
 
 - お客様は、冗長性、高可用性、ディザスター リカバリーのベスト プラクティスに従って、Office 365用に ExpressRoute で使用するセキュリティ/境界トポロジを設計することをお勧めします。
 
-さまざまな Azure ExpressRoute 接続オプションと、上で説明した境界セキュリティ モデルを比較する Woodgrove Bank の例を次に示します。
+Contoso の例を次に示します。この例では、さまざまな Azure ExpressRoute 接続オプションと、上で説明した境界セキュリティ モデルを比較します。
   
 ### <a name="example-1-securing-azure-expressroute"></a>例 1: Azure ExpressRoute のセキュリティ保護
   
-Woodgrove Bank は Azure ExpressRoute の実装を検討しており、[Office 365に対して ExpressRoute を](routing-with-expressroute.md)使用したルーティングに最適なアーキテクチャを計画した後、上記のガイダンスを使用して帯域幅要件を理解した後、境界をセキュリティで保護するための最適な方法を決定しています。
+Contoso は Azure ExpressRoute の実装を検討しており、[Office 365用の ExpressRoute を使用したルーティング](routing-with-expressroute.md)に最適なアーキテクチャを計画した後、上記のガイダンスを使用して帯域幅要件を理解した後、境界をセキュリティで保護するための最適な方法を決定しています。
   
-複数の大陸に場所を持つ複数の国家組織である Woodgrove の場合、セキュリティはすべての境界にまたがる必要があります。 Woodgrove の最適な接続オプションは、世界中の複数のピアリング場所とのマルチポイント接続であり、各大陸の従業員のニーズに対応します。 各大陸には、大陸内に冗長な Azure ExpressRoute 回線が含まれており、セキュリティはこれらのすべてにまたがっている必要があります。
+複数の大陸に場所を持つ複数の国内組織である Contoso の場合、セキュリティはすべての境界にまたがる必要があります。 Contoso の最適な接続オプションは、世界中の複数のピアリング場所とのマルチポイント接続であり、各大陸の従業員のニーズに対応します。 各大陸には、大陸内に冗長な Azure ExpressRoute 回線が含まれており、セキュリティはこれらのすべてにまたがっている必要があります。
   
-Woodgrove の既存のインフラストラクチャは信頼性が高く、余分な作業を処理できるため、Woodgrove Bank は Azure ExpressRoute とインターネット境界のセキュリティにインフラストラクチャを使用できます。 これが該当しない場合、Woodgrove は、既存の機器を補完するために、または別の種類の接続を処理するために、より多くの機器を購入することを選択できます。
+Contoso の既存のインフラストラクチャは信頼性が高く、余分な作業を処理できるため、Contoso は Azure ExpressRoute とインターネット境界のセキュリティにインフラストラクチャを使用できます。 これが該当しない場合、Contoso は、既存の機器を補完するために、または別の種類の接続を処理するために、より多くの機器を購入することを選択できます。
   
 ## <a name="high-availability-and-failover-with-azure-expressroute"></a>Azure ExpressRoute を使用した高可用性とフェールオーバー
 <a name="BKMK_high-availability"> </a>
@@ -158,13 +158,13 @@ Office 365のエンドツーエンド接続シナリオに対して高可用性�
   
 ### <a name="example-2-failover-and-high-availability"></a>例 2: フェールオーバーと高可用性
   
-Woodgrove Bank のマルチ地理的設計では、ルーティング、帯域幅、セキュリティのレビューが行われ、高可用性のレビューを行う必要があります。 Woodgrove では、高可用性は 3 つのカテゴリをカバーしていると考えています。回復性、信頼性、冗長性。
+Contoso のマルチ地理的設計では、ルーティング、帯域幅、セキュリティのレビューが行われ、高可用性のレビューを行う必要があります。 Contoso は、高可用性について 3 つのカテゴリをカバーしていると考えます。回復性、信頼性、冗長性。
   
-回復性により、Woodgrove は障害から迅速に回復できます。 信頼性により、Woodgrove はシステム内で一貫した結果を提供できます。 冗長性により、Woodgrove はインフラストラクチャの 1 つ以上のミラー化されたインスタンス間を移動できます。
+回復性により、Contoso は障害から迅速に回復できます。 信頼性により、Contoso はシステム内で一貫した結果を提供できます。 冗長性により、Contoso はインフラストラクチャの 1 つ以上のミラー化されたインスタンス間を移動できます。
   
-各エッジ構成内で、Woodgrove には冗長なファイアウォール、プロキシ、IDS があります。 北米の場合、Woodgrove にはダラス データセンターに 1 つのエッジ構成があり、バージニア データセンターには別のエッジ構成があります。 各場所の冗長機器は、その場所に対する回復性を提供します。
+各エッジ構成内に、Contoso には冗長なファイアウォール、プロキシ、IDS があります。 北米では、Contoso はダラス データセンターに 1 つのエッジ構成を、もう 1 つのエッジ構成をバージニア データセンターに配置します。 各場所の冗長機器は、その場所に対する回復性を提供します。
   
-Woodgrove Bank のネットワーク構成は、いくつかの重要な原則に基づいて構築されています。
+Contoso のネットワーク構成は、いくつかの重要な原則に基づいて構築されています。
   
 - 各地理的リージョン内には、複数の Azure ExpressRoute 回線があります。
 
@@ -172,15 +172,15 @@ Woodgrove Bank のネットワーク構成は、いくつかの重要な原則�
 
 - ルーティングは、可用性、場所などに応じて、どちらか一方のパスを明確に優先します。
 
-- Azure ExpressRoute 回線間のフェールオーバーは、Woodgrove で必要な追加の構成やアクションなしで自動的に行われます。
+- Azure ExpressRoute 回線間のフェールオーバーは、Contoso が必要とする追加の構成やアクションなしで自動的に行われます。
 
-- インターネット回線間のフェールオーバーは、Woodgrove で必要な追加の構成やアクションなしで自動的に行われます。
+- インターネット回線間のフェールオーバーは、Contoso が必要とする追加の構成やアクションなしで自動的に行われます。
 
-この構成では、物理レベルと仮想レベルの冗長性を備えた Woodgrove Bank は、ローカルの回復性、リージョンの回復性、およびグローバルな回復性を信頼性の高い方法で提供できます。 Woodgrove は、リージョンごとに 1 つの Azure ExpressRoute 回線とインターネットにフェールオーバーする可能性を評価した後、この構成を選択しました。
+この構成では、物理レベルと仮想レベルで冗長性を備えた Contoso は、ローカルの回復性、リージョンの回復性、およびグローバルな回復性を信頼性の高い方法で提供できます。 Contoso は、リージョンごとに 1 つの Azure ExpressRoute 回線とインターネットにフェールオーバーする可能性を評価した後、この構成を選択しました。
   
-Woodgrove がリージョンごとに複数の Azure ExpressRoute 回線を持つことができなかった場合、北米に発信されたトラフィックをアジア太平洋の Azure ExpressRoute 回線にルーティングすると、許容できないレベルの待機時間が追加され、必要な DNS フォワーダー構成が複雑になります。
+Contoso がリージョンごとに複数の Azure ExpressRoute 回線を持つことができなかった場合、北米からアジア太平洋の Azure ExpressRoute 回線にトラフィックをルーティングすると、許容できないレベルの待機時間が追加され、必要な DNS フォワーダー構成が複雑になります。
   
-バックアップ構成としてインターネットを使用することはお勧めしません。 これにより、Woodgrove の信頼性の原則が壊れ、接続を使用して一貫性のないエクスペリエンスが得られます。 また、構成されている BGP アドバタイズメント、NAT 構成、DNS 構成、プロキシ構成を考慮してフェールオーバーするには、手動構成が必要になります。 これにより、フェールオーバーの複雑さが増し、復旧にかかる時間が長くなり、関連する手順を診断およびトラブルシューティングする機能が低下します。
+バックアップ構成としてインターネットを使用することはお勧めしません。 これにより、Contoso の信頼性の原則が破られるので、接続を使用して一貫性のないエクスペリエンスが得られます。 また、構成されている BGP アドバタイズメント、NAT 構成、DNS 構成、プロキシ構成を考慮してフェールオーバーするには、手動構成が必要になります。 これにより、フェールオーバーの複雑さが増し、復旧にかかる時間が長くなり、関連する手順を診断およびトラブルシューティングする機能が低下します。
   
 トラフィック管理または Azure ExpressRoute を計画して実装する方法については、まだ質問がありますか? [ネットワークとパフォーマンスに関するガイダンス](./network-planning-and-performance.md)の残りの部分または [Azure ExpressRoute に関する FAQ を参照してください](/azure/expressroute/expressroute-faqs)。
   
