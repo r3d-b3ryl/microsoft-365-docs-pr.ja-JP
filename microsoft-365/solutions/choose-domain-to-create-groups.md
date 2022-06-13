@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: PowerShell を使用して電子メール アドレス ポリシーを構成して、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。
-ms.openlocfilehash: 31b84304643190f343ae9ee74a947ecf6741f135
-ms.sourcegitcommit: c2b5ce3150ae998e18a51bad23277cedad1f06c6
+ms.openlocfilehash: c6eb1bbccf8745c88941f40d6fefeed29aec5620
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/17/2021
-ms.locfileid: "61063313"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012540"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Microsoft 365 グループを作成するときに使用するドメインを選択する
 
@@ -31,7 +31,7 @@ ms.locfileid: "61063313"
   
 ユーザーが会社の既定の承認済みドメイン以外のドメインにグループを作成する必要がある場合、PowerShell を使ってメール アドレス ポリシー (EAP) を構成することでこれを許可できます。
 
-PowerShell コマンドレットを実行する前に、組織と対話できるモジュールをダウンロードしてインストールします。 詳細については、「[リモート PowerShell による Exchange への接続](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+PowerShell コマンドレットを実行する前に、組織と対話できるモジュールをダウンロードしてインストールします。 [PowerShell のExchange Onlineに関するConnect](/powershell/exchange/connect-to-exchange-online-powershell)を確認してください。
 
 ## <a name="example-scenarios"></a>シナリオ例
 

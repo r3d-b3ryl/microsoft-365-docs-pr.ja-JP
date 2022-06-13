@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきでないメッセージを特定する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9a959e70408af80567d1daed140e0642870b975
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d9176f73c94df6413e3b79053318f5547788d773
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647801"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011587"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信するように構成する
 
@@ -45,7 +45,7 @@ _これらの特定のシナリオ_ で受信メッセージがフィルター�
 - これらのシナリオでは、[既定のシステム アラート](/microsoft-365/compliance/alert-policies#default-alert-policies)はトリガーされません。
 - [Defender for Office 365の AIR とクラスタリングでは](office-365-air.md)、これらのメッセージは無視されます。
 - 特にサード パーティのフィッシング シミュレーションの場合:
-  - [管理送信では、](admin-submission.md)メッセージがフィッシング シミュレーション キャンペーンの一部であり、実際の脅威ではないことを示す自動応答が生成されます。 アラートと AIR はトリガーされません。 管理者の提出エクスペリエンスでは、これらのメッセージがシミュレートされた脅威として表示されます。
+  - [管理者の提出では、](admin-submission.md) メッセージがフィッシング シミュレーション キャンペーンの一部であり、実際の脅威ではないことを示す自動応答が生成されます。 アラートと AIR はトリガーされません。 管理者の提出エクスペリエンスでは、これらのメッセージがシミュレートされた脅威として表示されます。
   - ユーザーがレポート メッセージまたはレポート フィッシング アドインを使用してフィッシング シミュレーション [メッセージを報告](enable-the-report-message-add-in.md)すると、システムはアラート、調査、またはインシデントを生成しません。 リンクまたはファイルは起爆されませんが、メッセージは **[送信]** ページの [**ユーザーが報告したメッセージ**] タブにも表示されます。
   - [Defender for Office 365のセーフ リンク](safe-links.md)では、クリック時にこれらのメッセージ内で特定の URL がブロックまたは爆発されることはありません。 URL は引き続きラップされますが、ブロックされません。
   - [Defender for Office 365の添付ファイルをセーフ](safe-attachments.md)しても、これらのメッセージの添付ファイルは爆発しません。
@@ -54,19 +54,19 @@ _これらの特定のシナリオ_ で受信メッセージがフィルター�
 
 <sup>\*\*</sup> マルウェアの ZAP をバイパスするには、マルウェアの ZAP がオフになっている SecOps メールボックスのマルウェア対策ポリシーを作成します。 手順については、「 [EOP でマルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)」を参照してください。
 
-高度な配信ポリシーによって識別されるメッセージはセキュリティ上の脅威ではないため、メッセージはシステムオーバーライドでマークされます。 管理エクスペリエンスでは、**フィッシング シミュレーション** システムのオーバーライドまたは **SecOps メールボックス** システムのオーバーライドのいずれかが原因で、これらのメッセージが表示されます。 管理者は、次のエクスペリエンスで、これらのシステムオーバーライドをフィルター処理して分析できます。
+高度な配信ポリシーによって識別されるメッセージはセキュリティ上の脅威ではないため、メッセージはシステムオーバーライドでマークされます。 管理者エクスペリエンスでは、 **フィッシング シミュレーション** システムのオーバーライドまたは **SecOps メールボックス** システムのオーバーライドが原因で、これらのメッセージが表示されます。 管理者は、次のエクスペリエンスで、これらのシステムオーバーライドをフィルター処理して分析できます。
 
-- [Defender for Office 365プラン 2 の脅威エクスプローラー/リアルタイム検出](threat-explorer.md): 管理 **は、システムオーバーライド ソース** でフィルター処理し、**フィッシング シミュレーション** または **SecOps メールボックス** を選択できます。
-- [脅威エクスプローラー/リアルタイム検出の電子メール エンティティ ページ](mdo-email-entity-page.md): 管理は、**SecOps メールボックス** または [**上書き**] セクションの **[テナントオーバーライド**] の下の **フィッシング シミュレーション** によって組織のポリシーによって許可されたメッセージを表示できます。
-- [脅威の保護状態レポート](view-email-security-reports.md#threat-protection-status-report): 管理は、ドロップダウン メニューの **[システムのオーバーライド] でデータを表示して** フィルター処理し、フィッシング シミュレーション システムのオーバーライドが原因で許可されたメッセージを表示することを選択できます。 SecOps メールボックスの上書きによって許可されるメッセージを表示するには、グラフの内訳 (理由別) ドロップダウン メニューで **、配信場所別****のグラフの内訳** を選択できます。
+- [Defender for Office 365 プラン 2 の脅威エクスプローラー/リアルタイム検出](threat-explorer.md): 管理者は **、システム オーバーライド ソース** でフィルター処理し、**フィッシング シミュレーション** または **SecOps メールボックス** を選択できます。
+- [脅威エクスプローラー/リアルタイム検出の電子メール エンティティ ページ](mdo-email-entity-page.md): 管理者は、[**オーバーライド]** セクションの [**テナントのオーバーライド**] セクションで **、SecOps メールボックス** または **フィッシング シミュレーション** によって組織ポリシーによって許可されたメッセージを表示できます。
+- [脅威の保護状態レポート](view-email-security-reports.md#threat-protection-status-report): 管理者は、ドロップダウン メニューの **[システムのオーバーライド] でビュー データ** をフィルター処理し、フィッシング シミュレーション システムのオーバーライドが原因で許可されたメッセージを表示することを選択できます。 SecOps メールボックスの上書きによって許可されるメッセージを表示するには、グラフの内訳 (理由別) ドロップダウン メニューで **、配信場所別****のグラフの内訳** を選択できます。
 - [Microsoft Defender for Endpointでの高度なハンティング](../defender-endpoint/advanced-hunting-overview.md): フィッシング シミュレーションと SecOps メールボックス システムのオーバーライドは、EmailEvents の OrgLevelPolicy 内のオプションとして表示されます。
-- [キャンペーン ビュー](campaigns.md): 管理 **は、システムオーバーライドソース** でフィルター処理し、**フィッシング シミュレーション** または **SecOps メールボックス** を選択できます。
+- [キャンペーン ビュー](campaigns.md): 管理者は **、システムオーバーライドソース** でフィルター処理し、 **フィッシング シミュレーション** または **SecOps メールボックス** のいずれかを選択できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[詳細配信**] ページに直接移動するには、を開きます<https://security.microsoft.com/advanceddelivery>。
 
-- セキュリティ/コンプライアンス センターの PowerShell に接続するには、「[セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+- セキュリティ & コンプライアンス PowerShell に接続するには、「[セキュリティ & コンプライアンス PowerShell へのConnect](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 - この記事の手順を実行するには、アクセス許可を割り当てる必要があります。
   - 高度な配信ポリシーで構成された設定を作成、変更、または削除するには、**Microsoft 365 Defender ポータル** の **セキュリティ管理者** 役割グループのメンバーであり、Exchange Onlineの **組織管理** 役割グループのメンバーである必要 **があります。**
@@ -146,9 +146,9 @@ _これらの特定のシナリオ_ で受信メッセージがフィルター�
 
 - **レビュー中の誤検知**: [管理者の提出](admin-submission.md) を通じて Microsoft によって分析されている特定のメッセージを一時的に許可し、不適切とマークされている既知の良好なメッセージを Microsoft に報告することができます (誤検知)。 すべてのオーバーライドと同様に、これらの許容量は一時的な値であることを **_強くお勧めします_** 。
 
-## <a name="security--compliance-center-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信ポリシーの SecOps メールボックスのセキュリティ & コンプライアンス センター PowerShell の手順
+## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信ポリシーの SecOps メールボックスのセキュリティ & コンプライアンス PowerShell の手順
 
-Security & Compliance Center PowerShell では、高度な配信ポリシーの SecOps メールボックスの基本的な要素は次のとおりです。
+Security & Compliance PowerShell では、高度な配信ポリシーの SecOps メールボックスの基本的な要素は次のとおりです。
 
 - **SecOps オーバーライド ポリシー**: **-SecOpsOverridePolicy コマンドレットによって\*** 制御されます。
 - **SecOps オーバーライド規則**: **-SecOpsOverrideRule コマンドレットによって\*** 制御されます。
@@ -279,9 +279,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 構文とパラメーターの詳細については、「 [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule)」を参照してください。
 
-## <a name="security--compliance-center-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度な配信ポリシーのサード パーティ製フィッシング シミュレーションのセキュリティ & コンプライアンス センター PowerShell の手順
+## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度な配信ポリシーでのサード パーティ製フィッシング シミュレーションのセキュリティ&コンプライアンス PowerShell の手順
 
-Security & Compliance Center PowerShell では、高度な配信ポリシーにおけるサード パーティのフィッシング シミュレーションの基本的な要素は次のとおりです。
+Security & Compliance PowerShell では、高度な配信ポリシーのサード パーティフィッシング シミュレーションの基本的な要素は次のとおりです。
 
 - **フィッシング シミュレーションオーバーライド ポリシー**: **-PhishSimOverridePolicy コマンドレットによって\*** 制御されます。
 - **フィッシング シミュレーションオーバーライド規則**: **-PhishSimOverrideRule コマンドレットによって\*** 制御されます。

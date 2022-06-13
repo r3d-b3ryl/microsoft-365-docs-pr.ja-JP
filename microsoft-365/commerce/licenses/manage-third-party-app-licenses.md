@@ -19,13 +19,13 @@ ms.custom:
 search.appverid:
 - MET150
 description: Microsoft 365 管理センターで独立系ソフトウェア ベンダー (ISV) アプリのライセンスを管理する方法について説明します。
-ms.date: 06/15/2021
-ms.openlocfilehash: b652b8394b4958788ba49844708a3f80477e2489
-ms.sourcegitcommit: 1c5f9d17a8b095cd88b23f4874539adc3ae021de
+ms.date: 06/08/2022
+ms.openlocfilehash: 0e83335c7130e3ae42c648ee680cf8137a7b1244
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64715409"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011740"
 ---
 # <a name="manage-isv-app-licenses-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで ISV アプリ ライセンスを管理する
 
@@ -37,7 +37,7 @@ ms.locfileid: "64715409"
 
 ## <a name="assign-isv-app-licenses-to-users-or-groups"></a>ISV アプリ ライセンスをユーザーまたはグループに割り当てる
 
-1. Microsoft 365 管理センターで、<a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a>  >  ページに移動します。
+1. Microsoft 365 管理センターで、[**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a>] ページに移動します。
 2. ライセンスを割り当てるアプリを選択します。
 3. ライセンスの詳細ページで、[ **ライセンスの割り当て**] を選択します。
 4. [ **ライセンスの割り当て** ] ウィンドウで、ユーザーまたはグループの名前の入力を開始し、結果から選択してリストに追加します。
@@ -45,20 +45,22 @@ ms.locfileid: "64715409"
 
 ## <a name="unassign-isv-app-licenses-from-users-or-groups"></a>ISV アプリ ライセンスをユーザーまたはグループから割り当て解除する
 
-1. 管理センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a>  >  ページ。
+1. 管理センターの [ **課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a> ] ページ。
 2. ライセンスの割り当てを解除するアプリを選択します。
 3. ライセンスの詳細ページで、ライセンスを削除するユーザーとグループを選択し、[ライセンスの割り当て解除] を選択します。
 4. ダイアログ ボックスで、ライセンスを削除することを確認し、[割り当て解除] を選択します。
 
 ## <a name="add-or-remove-isv-app-licenses-for-your-account"></a>アカウントの ISV アプリ ライセンスを追加または削除する
 
-ISV アプリ ライセンスは、アプリ ベンダーによって管理されます。 アカウントのライセンスを追加または削除するには、ベンダーに問い合わせてください。
+Microsoft でhttps://appsource.microsoft.comアプリを購入した場合は、Microsoft 365 管理センターで[ライセンスを追加または削除](buy-licenses.md)できます。
+
+アプリ ベンダーを通じて ISV アプリを購入した場合は、ベンダーに連絡して、アカウントにライセンスを追加または削除します。
 
 ## <a name="next-steps"></a>次の手順
 
 購入した ISV アプリによっては、次に組織の環境にアプリをインストールします。 アプリをインストールすると、ユーザーがアプリを利用できるようになります。 ISV アプリを環境にインストールするには、次の手順に従います。
 
-1. 管理センターの <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">BillingLicenses</a>  >  ページ。
+1. 管理センターの [ **課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">ライセンス</a> ] ページ。
 2. アカウントにインストールするアプリを選択します。
 3. ライセンスの詳細ページで、[ **この製品のインストール**] を選択します。 環境にアプリをインストールする別のプラットフォーム サイトにリダイレクトされます。
 

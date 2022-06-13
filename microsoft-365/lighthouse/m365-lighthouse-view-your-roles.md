@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) 技術者の場合は、組織が管理するさまざまな顧客テナントでAzure Active Directory (Azure AD) ロールを表示する方法について説明します。
-ms.openlocfilehash: 501faef8aba711763ad9464085ce76221957ea80
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 6f12bef7a1e7958b345a86dbc9d0e2ee76534885
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415490"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011822"
 ---
 # <a name="view-your-azure-active-directory-roles-in-microsoft-365-lighthouse"></a>Microsoft 365 LighthouseでAzure Active Directory ロールを表示する
 
 この記事では、組織が管理するさまざまな顧客テナント間でAzure Active Directory (Azure AD) ロールを表示する方法について説明します。 自分のロールによって、Lighthouse で実行できるアクションが決まります。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 Microsoft 365 Lighthouse サービスにオンボードされているパートナー テナントにアクセスできる必要があります。
 

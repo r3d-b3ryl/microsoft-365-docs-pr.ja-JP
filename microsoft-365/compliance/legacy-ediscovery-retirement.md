@@ -14,12 +14,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: Exchange OnlineのIn-Place電子情報開示とIn-Placeホールド (および対応する PowerShell コマンドレット) は、2020 年前半に廃止されます。 Search-Mailbox コマンドレットと Microsoft Purview 電子情報開示 (プレミアム) v1.0 も同じ期間内に廃止されます。
-ms.openlocfilehash: 367b020a5804ac120f226962ea48a49b73dd70e6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 36883f7edae391ff3461d5d6c135112a4f058671
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094484"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012286"
 ---
 # <a name="retirement-of-legacy-ediscovery-tools"></a>従来の電子情報開示ツールの廃止
 
@@ -173,7 +173,7 @@ PowerShell を使用して、EAC から電子情報開示の検索と保留In-Pl
 
 Exchange管理センターで 2017 年 7 月 1 日に発表された当初の通知に従って、In-Place電子情報開示&保留機能と対応する **\*-MailboxSearch** コマンドレットは廃止されます。 これらのコマンドレットを使用すると、ユーザーは、法的要求、規制、およびパブリック要求に対してメールボックス コンテンツを検索、保持、およびエクスポートできます。
 
-これらの機能は[<span class="underline">、コンプライアンス ポータル</span>](./microsoft-365-compliance-center.md)とOffice 365 セキュリティ & コンプライアンス センター PowerShell でパフォーマンスとスケーラビリティが向上しているため、これらの改善されたコマンドレットを使用する必要があります。 これらのコマンドレットには、-ComplianceCase、[<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch)、[<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy)、[<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule)、[<span class="underline">\*-ComplianceSearchAction が</span>](/powershell/module/exchange/get-compliancesearchaction)含[<span class="underline">\*</span>](/powershell/module/exchange/get-compliancecase)まれます。
+これらの機能は[<span class="underline">、コンプライアンス ポータル</span>](./microsoft-365-compliance-center.md)とOffice 365 セキュリティ &コンプライアンス PowerShell で、パフォーマンスとスケーラビリティが向上しているため、これらの改善されたコマンドレットを使用する必要があります。 これらのコマンドレットには、-ComplianceCase、[<span class="underline">\*-ComplianceSearch</span>](/powershell/module/exchange/get-compliancesearch)、[<span class="underline">\*-CaseHoldPolicy</span>](/powershell/module/exchange/get-caseholdpolicy)、[<span class="underline">\*-CaseHoldRule</span>](/powershell/module/exchange/get-caseholdrule)、[<span class="underline">\*-ComplianceSearchAction が</span>](/powershell/module/exchange/get-compliancesearchaction)含[<span class="underline">\*</span>](/powershell/module/exchange/get-compliancecase)まれます。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
 
@@ -254,7 +254,7 @@ PowerShell スクリプトを使用して、Exchange管理センターから電�
 
 ## <a name="search-mailbox-cmdlet"></a>Search-Mailbox コマンドレット
 
-Exchange Online PowerShell の **Search-Mailbox** コマンドレットは、2018 年からコマンドレット出力の警告で最初に発表されたものとして廃止されます。 **Search-Mailbox** コマンドレットは、もともとユーザーのメールボックスを検索し、悪意のあるコンテンツを消去するために使用されていました。 コンテンツを検索および消去するには、**Office 365** Security & Compliance Center PowerShell の **New-ComplianceSearch コマンドレットと New-ComplianceSearchAction** コマンドレットの使用を開始することをお勧めします。 組み込みのセキュリティ エクスペリエンスのために、[<span class="underline">Microsoft 365 セキュリティ機能</span>](../security/index.yml)は、電子メールやその他の多くのMicrosoft サービスに対して堅牢な脅威保護を提供します。
+Exchange Online PowerShell の **Search-Mailbox** コマンドレットは、2018 年からコマンドレット出力の警告で最初に発表されたものとして廃止されます。 **Search-Mailbox** コマンドレットは、もともとユーザーのメールボックスを検索し、悪意のあるコンテンツを消去するために使用されていました。 コンテンツを検索および消去するには、**Office 365** Security & Compliance PowerShell の **New-ComplianceSearch コマンドレットと New-ComplianceSearchAction** コマンドレットの使用を開始することをお勧めします。 組み込みのセキュリティ エクスペリエンスのために、[<span class="underline">Microsoft 365 セキュリティ機能</span>](../security/index.yml)は、電子メールやその他の多くのMicrosoft サービスに対して堅牢な脅威保護を提供します。
 
 ### <a name="scope-of-affected-organizations"></a>影響を受ける組織の範囲
 
@@ -348,7 +348,7 @@ Exchange Web Services API のこれらの操作は、Exchange管理センター�
 
 組織が電子情報開示 (プレミアム) v1.0 を使用しているかどうかを確認するには、
 
-1. コンプライアンス ポータルに移動し、**eDiscoveryCore** >  を選択し、電子情報開示 (Standard) ケースを開きます。<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank"></a>
+1. コンプライアンス ポータルに移動し、 **電子情報開示** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**コア**</a>を選択し、電子情報開示 (Standard) ケースを開きます。
 
 1. [**電子情報開示に切り替える (プレミアム)]** ボタンが表示されたら、それをクリックすると、1.0 バージョンの電子情報開示 (プレミアム) に移行します。このバージョンは廃止されます。 電子情報開示 (Standard) でケースを作成および管理する機能は影響を受けることはありません。 電子情報開示 (プレミアム) v1.0 でケース データを追加および分析する機能 ([**電子情報開示に切り替える (プレミアム)]** をクリックする機能のみが廃止されます。
 
@@ -356,7 +356,7 @@ Microsoft 365の新しい電子情報開示 (プレミアム) ソリューショ
 
 電子情報開示 (Premium) v2.0 にアクセスするには:
 
-コンプライアンス ポータルに移動し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**eDiscoveryAdvanced**</a> >  を選択して、電子情報開示 (Standard) ケースを開きます。
+コンプライアンス ポータルに移動し、 **電子情報開示** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**の詳細設定**</a>を選択し、電子情報開示 (Standard) ケースを開きます。
 
 現時点では、電子情報開示ワークフローを新しい電子情報開示 (プレミアム) 機能に移行することをお勧めします。 必要に応じて、コンテンツをエクスポートしてオフラインで保存することで、電子情報開示 (プレミアム) 1.0 ケースをアーカイブできます。 既存のケースでは 2020 年 12 月 31 日まで電子情報開示 (プレミアム) v1.0 にアクセスできますが、Microsoft サポートは 2020 年 10 月 1 日以降はサポートを提供しません。 詳細については、次のタイムラインを参照してください。
 

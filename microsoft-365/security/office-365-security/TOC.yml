@@ -396,6 +396,8 @@
           href: quarantine-faq.yml
     - name: ステップ バイ ステップのガイド
       items:
+        - name: Microsoft Defender for Office 365 のステップ バイ ステップ ガイドとその使用方法
+          href: step-by-step-guides/step-by-step-guide-overview.md
         - name: (偽陰性) Microsoft Defender for Office 365 を使用して、受信者に配信された悪意のあるメールを処理する方法
           href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
         - name: (偽陽性) Microsoft Defender for Office 365 を使用して、配信がブロックされる正当なメールを処理する方法

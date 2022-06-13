@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: algreer
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、脅威管理ページを参照してください。
-ms.openlocfilehash: 6e6a49cd1e31132881f45877bc00801d91aff492
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 3d7376b2438ca24cdcf9b6e73d8bfb2cc7daa6de
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173772"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012562"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [脅威管理] ページの概要 
 
@@ -56,7 +57,7 @@ Microsoft 365 Lighthouseの脅威管理ページにアクセスするには、�
 
 | 脅威の状態 | 定義 |
 |---|---|
-| アクティブ | 脅威はデバイスでアクティブです。 |
+| Active | 脅威はデバイスでアクティブです。 |
 | 状態なし | 脅威の状態は利用できません。 デバイスでフル スキャンを実行して、脅威を再検出Microsoft Defender ウイルス対策。 |
 | アクションが失敗しました | デバイスは危険にさらされていません。 アクションは失敗しましたが、潜在的な脅威は停止されており、デバイスではアクティブではありません。 デバイスでフル スキャンを実行します。 |
 | 手動の手順が必要です | 脅威は停止されましたが、フル スキャンやデバイスの再起動など、手動の手順を完了する必要があります。 |

@@ -1,5 +1,5 @@
 ---
-title: 正確なデータ matchsensitive 情報ソース テーブル ファイルを更新する
+title: 正確なデータ一致の機密情報ソース テーブル ファイルを更新する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: 機密情報ソース テーブル ファイルを更新します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fe72fac43d3cc9a568d8aa1c5d985d34f8477a4d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760847"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008847"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>正確なデータ一致の機密情報ソース テーブル ファイルを更新する 
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 機密情報データベースは、24 時間ごとに最大 5 回更新できます。 機密情報のソース テーブルを再ハッシュしてアップロードする必要があります。
 
@@ -39,15 +41,15 @@ ms.locfileid: "64760847"
 
    |メソッド|操作|
    |---|---|
-   |Windows PowerShell|[ScheduledTasks](/powershell/module/scheduledtasks/) のドキュメントと、この記事の [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler)を参照してください。|
+   |PowerShell|[ScheduledTasks](/powershell/module/scheduledtasks/) のドキュメントと、この記事の [PowerShell スクリプトの例](#example-powershell-script-for-task-scheduler)を参照してください。|
    |タスク スケジューラ API|[Task Scheduler](/windows/desktop/TaskSchd/using-the-task-scheduler) のドキュメントを参照してください。|
    |Windows のユーザー インターフェイス|Windows の場合、**[スタート]** をクリックし、「タスク スケジューラ」と入力します。 次に、結果のリストで **[タスク スケジューラ]** を右クリックし、**[管理者として実行]** を選択します。|
 
-### <a name="example-powershell-script-for-task-scheduler"></a>タスク スケジューラの PowerShell スクリプトの例 
+## <a name="example-powershell-script-for-task-scheduler"></a>タスク スケジューラの PowerShell スクリプトの例
 
 このセクションには、データをハッシュしたり、ハッシュされたデータをアップロードするタスクのスケジュールに使用できる PowerShell スクリプトの例が含まれています。
 
-#### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>結合された手順でハッシュとアップロードをスケジュールする
+### <a name="schedule-hashing-and-upload-in-a-combined-step"></a>結合された手順でハッシュとアップロードをスケジュールする
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)
@@ -82,7 +84,7 @@ $taskName = 'EDMUpload\_' + $dataStoreName
 Register-ScheduledTask -TaskName $taskName -InputObject $scheduledTask -User $user -Password $password
 ```
 
-#### <a name="schedule-hashing-and-upload-as-separate-steps"></a>ハッシュをスケジュールし、別の手順としてアップロードする
+### <a name="schedule-hashing-and-upload-as-separate-steps"></a>ハッシュをスケジュールし、別の手順としてアップロードする
 
 ```powershell
 param(\[string\]$dataStoreName,\[string\]$fileLocation)

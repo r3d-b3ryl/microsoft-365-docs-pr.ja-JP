@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: shcallaw, kywirpel
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseベースラインをデプロイする方法について説明します。
-ms.openlocfilehash: 550ded1383cb402da0943bdfeb6707cbd12b02d1
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 17eda86e80b928fb8b4f56b0e5c719574e4741f5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65131132"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012596"
 ---
 # <a name="deploy-microsoft-365-lighthouse-baselines"></a>Microsoft 365 Lighthouseベースラインをデプロイする
 
 Microsoft 365 Lighthouseでは、標準のマネージド テナント構成をデプロイして、顧客テナント内のユーザー、デバイス、データをセキュリティで保護できます。 Lighthouse には 7 つの [既定のベースライン構成](m365-lighthouse-deploy-standard-tenant-configurations-overview.md) があります。 Lighthouse 展開計画機能を使用すると、すべてのテナントにセキュリティ構成を表示、テスト、デプロイできます。 展開計画は、アクティブなテナントでのみ使用できます。 テナントがオンボードされたら、顧客の現在の構成を既定のベースライン構成と比較し、適切なアクションを実行できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 お客様とテナントが、「[Microsoft 365 Lighthouseの要件」](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認します。
 
@@ -147,7 +148,7 @@ Lighthouse を使用して自動化できるデプロイ プロセスごとに�
 
 意識を高めるために追加の設定が提供されますが、アクションを実行する必要はありません。
 
-ポリシー競合管理の詳細については、[条件付きアクセスのドキュメントAzure AD参照してください](/azure/active-directory/conditional-access/)。
+ポリシー競合管理の詳細については、 [Azure AD の条件付きアクセスに関するドキュメントを参照してください](/azure/active-directory/conditional-access/)。
 
 ## <a name="update-deployment-step-status"></a>デプロイ ステップの状態を更新する
 

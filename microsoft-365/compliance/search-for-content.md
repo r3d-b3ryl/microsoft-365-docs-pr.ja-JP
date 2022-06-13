@@ -11,12 +11,12 @@ ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールを使用すると、Exchange メールボックス内の電子メール、SharePoint サイトやOneDriveの場所のドキュメント、Skype for Businessのインスタント メッセージング会話をすばやく見つけることができます。
-ms.openlocfilehash: 30398f91a0ab7807ea3438e6bfdde3606e918a4d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092251"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009433"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索します
 
@@ -70,7 +70,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 ## <a name="use-scripts-for-advanced-scenarios"></a>高度なシナリオにスクリプトを使用する
 
-場合によっては、より高度で複雑で反復的なコンテンツ検索タスクを実行する必要があります。 このような場合は、Security & Compliance Center PowerShell でコマンドを使用する方が簡単で高速です。 これを簡単にするために、複雑なコンテンツ検索関連のタスクを完了するために、セキュリティ & コンプライアンス センターの PowerShell スクリプトを多数作成しました。
+場合によっては、より高度で複雑で反復的なコンテンツ検索タスクを実行する必要があります。 このような場合は、Security & Compliance PowerShell でコマンドを使用する方が簡単で高速です。 これを簡単にするために、複雑なコンテンツ検索関連のタスクを完了するために、セキュリティ &コンプライアンス PowerShell スクリプトを多数作成しました。
 
 - ケースに対応するアイテムがそのフォルダー内にあると確信している場合は、[特定のメールボックスフォルダーとサイト](use-content-search-for-targeted-collections.md) フォルダー (*ターゲット* コレクションと呼ばれます) を検索する
 

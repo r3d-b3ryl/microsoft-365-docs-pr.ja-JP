@@ -13,12 +13,12 @@ ms.custom: seo-marvel-apr2020
 ms.localizationpriority: medium
 ms.collection: Strat_SP_gtc
 description: リージョン パラメーターを使用して、Microsoft 365 Multi-Geo のサテライトの場所で使用する電子情報開示を構成する方法について説明します。
-ms.openlocfilehash: 088d6cf861e70185162a74c0b2d9b029849125de
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 99024a93d3eb68103b4f2c5b99e54bfc80201123
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810596"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66008559"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Microsoft 365 Multi-Geo 電子情報開示の構成
 
@@ -37,7 +37,7 @@ Microsoft 365グローバル管理者は、他のユーザーが電子情報開�
 
 地域のコンプライアンス セキュリティ フィルターを設定するには:
 
-1. [Microsoft 365 セキュリティ/コンプライアンス センター PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)
+1. [セキュリティ&コンプライアンス PowerShell をMicrosoft 365するConnect](/powershell/exchange/connect-to-scc-powershell)
 
 2. 次の構文を使用してください。
 

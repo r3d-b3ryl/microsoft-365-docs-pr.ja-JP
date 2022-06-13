@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: magarlan, chrigreen
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,23 +17,20 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Lighthouse のアクセス許可の要件について詳しく説明します。
-ms.openlocfilehash: e03ae77f6997d3d34f926285cf7aab5cdd682c9c
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 0ccc47fd151fa681b0231b2f776de3d2c46c5784
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188312"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012986"
 ---
 # <a name="overview-of-permissions-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのアクセス許可の概要
 
-マネージド サービス プロバイダー (MSP) がMicrosoft 365 Lighthouseを使用するには、顧客テナントへの委任されたアクセスが必要です。 きめ細かな委任管理者特権 (GDAP) を使用すると、AZURE ACTIVE DIRECTORY [(Azure AD) の組み込みロール](/azure/active-directory/roles/permissions-reference)を通じて顧客にアクセスできるようにすることで、MSP に高いレベルの制御と柔軟性が提供されます。 MSP 技術者に GDAP を介してタスクごとに最も特権の少ないロールを割り当てることで、MSP と顧客の両方のセキュリティ リスクが軽減されます。 タスクごとの最小特権ロールの詳細については、「[最小特権ロール - パートナー センター](/partner-center/gdap-least-privileged-roles-by-task)」と「[Azure Active Directoryのタスクごとの最小特権ロール](/azure/active-directory/roles/delegate-by-task)」を参照してください。 顧客テナントとの GDAP リレーションシップを設定する方法の詳細については、「顧客[のサービスを管理するための詳細な管理者アクセス許可の取得 - パートナー センター](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)」を参照してください。
+マネージド サービス プロバイダー (MSP) がMicrosoft 365 Lighthouseを使用するには、顧客テナントへの委任されたアクセスが必要です。 詳細な代理管理特権 (GDAP) を使用すると、MSP は[、Azure Active Directory (Azure AD) 組み込みロール](/azure/active-directory/roles/permissions-reference)を介して顧客にアクセスできるようにすることで、高いレベルの制御と柔軟性を実現します。 MSP 技術者に GDAP を介してタスクごとに最も特権の少ないロールを割り当てることで、MSP と顧客の両方のセキュリティ リスクが軽減されます。 タスクごとの最小特権ロールの詳細については、「[最小特権ロール - パートナー センター](/partner-center/gdap-least-privileged-roles-by-task)」と「[Azure Active Directoryのタスクごとの最小特権ロール](/azure/active-directory/roles/delegate-by-task)」を参照してください。 顧客テナントとの GDAP リレーションシップを設定する方法の詳細については、「顧客[のサービスを管理するための詳細な管理者アクセス許可の取得 - パートナー センター](/partner-center/gdap-obtain-admin-permissions-to-manage-customer)」を参照してください。
 
-各グループが顧客に代わって実行する必要があるタスクに基づいて、MSP 技術者のグループにロールを割り当てることをお勧めします。 たとえば、Service Desk 技術者は、顧客テナント データを読み取るか、ユーザー パスワードをリセットするだけで済む場合があります。 これに対し、エスカレーション エンジニアは、顧客テナントのセキュリティ設定を更新するために、より修正措置を講じる必要がある場合があります。 顧客とパートナーのデータがセキュリティで保護されるように、タスクを完了するために必要な最小許容ロールを割り当てることをお勧めします。 必要に応じて、Privileged Identity Management (PIM) を使用して、グローバル管理者ロールへの時間範囲アクセスを有効にすることをお勧めします。 ユーザーにグローバル アクセスを許可しすぎる場合は、セキュリティ 上のリスクが伴います。可能な限り制限することをお勧めします。 PIM を有効にする方法の詳細については、「AZURE AD [PIM のセットアップ](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)」を参照してください。
+各グループが顧客に代わって実行する必要があるタスクに基づいて、MSP 技術者のグループにロールを割り当てることをお勧めします。 たとえば、Service Desk 技術者は、顧客テナント データを読み取るか、ユーザー パスワードをリセットするだけで済む場合があります。 これに対し、エスカレーション エンジニアは、顧客テナントのセキュリティ設定を更新するために、より修正措置を講じる必要がある場合があります。 顧客とパートナーのデータがセキュリティで保護されるように、タスクを完了するために必要な最小許容ロールを割り当てることをお勧めします。 必要に応じて、Privileged Identity Management (PIM) を使用して、グローバル管理者ロールへの時間範囲アクセスを有効にすることをお勧めします。 ユーザーにグローバル アクセスを許可しすぎる場合は、セキュリティ 上のリスクが伴います。可能な限り制限することをお勧めします。 PIM を有効にする方法の詳細については、「[Azure AD PIM のセットアップ」を](m365-lighthouse-configure-portal-security.md#set-up-azure-ad-privileged-identity-management-pim)参照してください。
 
 次のセクションの表では、顧客データを読み取り、Lighthouse の顧客テナントに対してアクションを実行するためのアクセス許可を付与する GDAP ロールについて説明します。 Lighthouse エンティティ (タグや Lighthouse サービス要求など) を管理するために必要なその他のロールについては、この記事の [パートナー テナントのアクセス許可](#permissions-in-the-partner-tenant) に関するページを参照してください。
-
-> [!NOTE]
->GDAP は現在、GDAP が一般公開される前に、パートナーがきめ細かなアクセス許可を割り当てることができるように [、テクニカル プレビュー](/partner-center/announcements/2022-february#6) (パブリック プレビュー) に入っている。 Lighthouse でアクションにアクセスまたは実行する際に問題が発生した場合は、 [既知](m365-lighthouse-known-issues.md) の問題を確認します。
 
 ## <a name="example-msp-service-tiers-recommended-gdap-roles-and-permissions"></a>MSP サービス レベルの例、推奨される GDAP ロール、およびアクセス許可
 
@@ -80,8 +78,8 @@ Lighthouse の特定のアクションでは、パートナー テナントで�
 | パートナー テナント ロール | アクセス許可 |
 |--|--|
 | パートナー テナントのグローバル管理者 | <ul><li>Microsoft 365 管理センターで Lighthouse にサインアップします。</li><li>初回のエクスペリエンスでパートナー契約の変更を受け入れます。</li><li>テナントをアクティブ化して非アクティブ化します。</li><li>タグを作成、更新、削除します。</li><li>顧客テナントにタグを割り当てて削除します。</li><li>監査ログを確認する</li></ul> |
-| 次のプロパティ セットで割り当てられた少なくとも 1 つのAzure AD ロールを持つパートナー テナント メンバー。<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Azure AD ロールの完全な一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください)。 | Lighthouse サービス要求を作成します。 |
-| 次の *要件の両方* を満たすパートナー テナント メンバー。 <ul><li>次のプロパティ セットで少なくとも 1 つのAzure ADロールが割り当てられています。<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Azure AD ロールの完全な一覧については、[組み込みロールAzure AD](/azure/active-directory/roles/permissions-reference)参照してください)。</li><li>少なくとも 1 つの DAP 委任されたロールが割り当てられている (管理者エージェントまたはヘルプデスク エージェント)</li></ul> | サービスの正常性情報を表示します。 |
+| 次のプロパティ セットで少なくとも 1 つの Azure AD ロールが割り当てられているパートナー テナント メンバー。<br>**microsoft.office365.supportTickets/allEntities/allTasks**<br>(Azure AD ロールの完全な一覧については、「 [Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)」を参照してください)。 | Lighthouse サービス要求を作成します。 |
+| 次の *要件の両方* を満たすパートナー テナント メンバー。 <ul><li>次のプロパティ セットで少なくとも 1 つの Azure AD ロールが割り当てられています。<br>**microsoft.office365.serviceHealth/allEntities/allTasks**<br>(Azure AD ロールの完全な一覧については、「 [Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)」を参照してください)。</li><li>少なくとも 1 つの DAP 委任されたロールが割り当てられている (管理者エージェントまたはヘルプデスク エージェント)</li></ul> | サービスの正常性情報を表示します。 |
 
 ## <a name="related-content"></a>関連コンテンツ
 

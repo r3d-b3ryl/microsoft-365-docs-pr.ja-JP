@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: chboyd
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント サービスの正常性を表示する方法について説明します。
-ms.openlocfilehash: 3db5085ac4226b3f2800cd46f3542dcb79b311d2
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 53424b98dc47e16971322260a93e30eb707161a7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621009"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007154"
 ---
 # <a name="view-tenant-service-health-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでテナント サービスの正常性を表示する
 
@@ -29,7 +30,7 @@ Microsoft 365 Lighthouseで管理するテナントのサービス正常性を�
 
 Lighthouse にサインインできない場合は、[Microsoft 365 サービスの正常性状態ページ](https://status.office365.com/)を使用して、パートナー テナントにログインできない既知の問題を確認できます。 また、Twitter で [@MSFT365status](https://twitter.com/MSFT365Status) に従ってサインアップし、特定のサービス インシデントに関する情報を表示します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 サービスの正常性を表示するには、 **microsoft.office365.serviceHealth/allEntities/allTasks** というプロパティセットを持つパートナー テナントの Azure AD ロールが必要です。 Azure AD ロールの一覧については、 [Azure AD の組み込みロールに](/azure/active-directory/roles/permissions-reference)関するページを参照してください。
 

@@ -17,17 +17,17 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Windows PowerShell を使用して、組織内の基本的なモビリティおよびセキュリティ デバイスの詳細を取得します。
-ms.openlocfilehash: 4cac15e8377370e4bd2f8b359a39aaf830f13d10
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Azure AD PowerShell を使用して、組織内の Basic Mobility および Security デバイスの詳細を取得します。
+ms.openlocfilehash: 816d397f29d6e1726448d92e641856f2a5a31a73
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64781075"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007198"
 ---
 # <a name="get-details-about-basic-mobility-and-security-managed-devices"></a>基本的なモビリティとセキュリティの管理対象デバイスに関する詳細を取得する
 
-この記事では、Windows PowerShell を使用して、基本的なモビリティとセキュリティ用に設定した組織内のデバイスの詳細を取得する方法について説明します。
+この記事では、Azure AD PowerShell を使用して、Basic Mobility and Security 用に設定した組織内のデバイスの詳細を取得する方法について説明します。
 
 利用可能なデバイスの詳細の内訳は次のとおりです。
 
@@ -79,10 +79,10 @@ ms.locfileid: "64781075"
    Connect-MsolService -Credential $UserCredential
    ```
 
-### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>手順 3: PowerShell スクリプトを実行できることを確認します。
+### <a name="step-3-make-sure-youre-able-to-run-powershell-scripts"></a>手順 3: PowerShell スクリプトを実行できることを確認する
 
 > [!NOTE]
-> 既に PowerShell スクリプトを実行できるように設定している場合は、この手順をスキップできます。
+> PowerShell スクリプトを実行するように既に設定されている場合は、この手順をスキップできます。
 
 Get-MsolUserDeviceComplianceStatus.ps1 スクリプトを実行するには、PowerShell スクリプトの実行を有効にする必要があります。
 

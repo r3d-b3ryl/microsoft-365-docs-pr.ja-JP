@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: ビジネス、学校、非営利団体のパスワード ポリシーを管理する管理者の場合は、Windows PowerShellを使用して強力なパスワード要件を設定できます。
-ms.openlocfilehash: 20bea953207a85b589bf1ae821f988a3cfe8e22c
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: ビジネス、学校、非営利団体のパスワード ポリシーを管理する管理者の場合は、Azure AD PowerShell を使用して強力なパスワード要件を設定できます。
+ms.openlocfilehash: e98c9a3f7b31cbb53d4c853487f4908a6dec72d5
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436187"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010258"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>ユーザーの強力なパスワード要件を無効にする
 

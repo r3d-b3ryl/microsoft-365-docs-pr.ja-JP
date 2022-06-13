@@ -20,24 +20,26 @@ description: Office 365 メッセージ暗号化を使用して、組織の機�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a12c3c559fdd9dcc7bd142e5ee7d58d777211bc7
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 908ec1cf55d8bee06ce9b3b6ccc8eb699d2ba291
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759415"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012294"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージ暗号化を使用して組織の機密情報の種類ポリシーを作成する
 
-Exchangeメール フロー ルールまたはデータ損失防止 (DLP) のいずれかを使用して、Office 365 メッセージ暗号化を使用して機密情報の種類のポリシーを作成できます。 Exchangeメール フロー ルールを作成するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター (EAC)</a> または PowerShell を使用します。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Exchangeメール フロー ルールまたは Microsoft Purview データ損失防止 (DLP) のいずれかを使用して、Office 365 メッセージ暗号化を使用して機密情報の種類のポリシーを作成できます。 Exchangeメール フロー ルールを作成するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター (EAC)</a> または PowerShell を使用します。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>EAC でメール フロー ルールを使用してポリシーを作成するには
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>にサインインし、**Mail** **flowRules** >  に移動します。 [ルール] ページで、メッセージ暗号化Office 365適用するルールを作成します。 メッセージまたは添付ファイルに特定のキーワードや機密情報の種類が存在するなどの条件に基づいてルールを作成できます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>にサインインし、**メール フロー** >  ルールに移動 **します**。 [ルール] ページで、メッセージ暗号化Office 365適用するルールを作成します。 メッセージまたは添付ファイルに特定のキーワードや機密情報の種類が存在するなどの条件に基づいてルールを作成できます。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>PowerShell でメール フロー ルールを使用してポリシーを作成するには
 
-組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用し、Windows PowerShell セッションを開始し、Exchange Onlineに接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 Set-IRMConfigurationコマンドレットとNew-TransportRule コマンドレットを使用してポリシーを作成します。
+組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用して、powerShell Exchange Online接続します。 手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 Set-IRMConfigurationコマンドレットとNew-TransportRule コマンドレットを使用してポリシーを作成します。
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>PowerShell で作成されたメール フロー ルールの例
 
@@ -66,8 +68,8 @@ Microsoft がメッセージを暗号化した後、受信者は暗号化され�
 
 この変更に備えて組織内のユーザーを準備するために、該当するエンド ユーザーのドキュメントとトレーニング資料を更新することができます。 必要に応じて、次のOffice 365メッセージ暗号化リソースをユーザーと共有します。
 
-- [PC のOutlookで暗号化されたメッセージを送信、表示、返信する](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
-- [Microsoft 365 Essentials ビデオ: Office メッセージ暗号化](https://youtu.be/CQR0cG_iEUc)
+- [PC のOutlookで暗号化されたメッセージを送信、表示、返信する](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Microsoft 365 Essentials ビデオ: メッセージ暗号化](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>監査ログでこれらの変更を表示する
 
@@ -79,4 +81,4 @@ Microsoft 365このアクティビティを監査し、管理者が使用でき�
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>機密情報の種類ポリシーを無効またはカスタマイズするには
 
-Exchangeメール フロー ルールを作成したら、Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>の **[メール フロー** > **ルール**] に移動し、ルール "*送信の機密性の高いメールを暗号化する (既定のルール)* を無効にすることで、ルールを [無効または編集](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)できます。
+Exchangeメール フロー ルールを作成したら、Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>の **メール フロー** > **ルール** に移動し、ルール "*送信機密メールを暗号化する (既定のルール)* を無効にすることで、ルールを [無効または編集](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)できます。

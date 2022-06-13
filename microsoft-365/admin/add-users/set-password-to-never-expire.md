@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f493e3af-e1d8-4668-9211-230c245a0466
-description: Microsoft 365管理者アカウントにサインインして、Windows PowerShellを使用して一部の個々のユーザー パスワードが期限切れにならないように設定します。
-ms.openlocfilehash: f0eff70b2b95c7e318f8a7e52777d4b684dbd8bf
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+description: Microsoft 365管理者アカウントにサインインして、Azure AD PowerShell を使用して一部の個々のユーザー パスワードが期限切れにならないように設定します。
+ms.openlocfilehash: a8357e3c72ea4bcd30234492b30e75eff8cb123a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61911535"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66010192"
 ---
 # <a name="set-an-individual-users-password-to-never-expire"></a>個別のユーザーのパスワードを無期限に設定する
 
@@ -36,14 +36,13 @@ ms.locfileid: "61911535"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [Microsoft 365 管理センターの概要に関するページを](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide)参照してください。
+この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [Microsoft 365 管理センターの概要に関するページを](/microsoft-365/admin/admin-overview/admin-center-overview)参照してください。
 
 これらの手順を実行するには、 [グローバル管理者またはパスワード管理者](about-admin-roles.md) である必要があります。
 
 Microsoft クラウド サービスのグローバル管理者は[、GraphにAzure Active Directory PowerShell](/powershell/azure/active-directory/install-adv2) を使用して、特定のユーザーに対してパスワードの有効期限が切れないように設定できます。 [また、AzureAD](/powershell/module/Azuread) コマンドレットを使用して、期限切れのない構成を削除したり、期限切れにならないように設定されているユーザー パスワードを確認したりすることもできます。
 
-このガイドは、IntuneやMicrosoft 365などの他のプロバイダーにも適用されます。ID およびディレクトリ サービスのAzure ADにも依存しています。 パスワードの有効期限は、変更できるポリシーの唯一の部分です。
-
+このガイドは、IntuneやMicrosoft 365などの他のプロバイダーにも適用されます。ID サービスとディレクトリ サービスについても Azure AD に依存しています。 パスワードの有効期限は、変更できるポリシーの唯一の部分です。
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>パスワードの有効期限ポリシーを確認する方法
 

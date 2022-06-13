@@ -4,6 +4,7 @@ f1.keywords: CSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -17,20 +18,20 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseにサインアップする方法について説明します。
-ms.openlocfilehash: 8d845ed454a672b1480ca0b6fe6f471cc30a37a6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172192"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66007132"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseにサインアップする
 
 この記事では、Microsoft 365 Lighthouseにサインアップする方法について説明します。 Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (MSP) が小規模および中規模のビジネス (SMB) のお客様向けに大規模にデバイス、データ、ユーザーをセキュリティで保護および管理するのに役立つ管理ポータルです。 
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- Microsoft 365 Lighthouseは、顧客テナント内だけでなく、パートナー テナントにのみ&mdash;デプロイされますが、お客様と顧客テナントが[、Microsoft 365 Lighthouse要件](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認してください。
+- Microsoft 365 Lighthouseは、顧客テナント内だけでなく、パートナー テナントに&mdash;展開されますが、お客様と顧客テナントが[、Microsoft 365 Lighthouse要件](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認してください。
 
 - サインイン先のパートナー テナントのグローバル管理者である必要があります。
 
@@ -38,7 +39,7 @@ ms.locfileid: "65172192"
 
 1. Microsoft 365 管理センターに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>移動し、パートナー テナントの資格情報を使用してサインインします。 
 
-1. **BillingPurchase** >  **ServicesOther Services** >  に移動します。
+1. **[課金** > **購入サービス****] の [その他のサービス** > ] に移動します。
 
     Microsoft 365 Lighthouseがサービスの一覧にない場合は、[**他のすべてのサービス製品を表示する**] を選択します。
 
