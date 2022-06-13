@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Purview コンプライアンス ポータルでアクティビティ アラートを追加および管理し、ユーザーが特定のアクティビティを実行したときにMicrosoft 365から電子メール通知が送信されるようにする
-ms.openlocfilehash: 99cbbe4a03047b5cf8ef366a228fc78fe9dfbda1
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: b08c23ec80562418112266d03c58f4b764a128ba
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097010"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018099"
 ---
 # <a name="create-activity-alerts"></a>アクティビティ アラートを作成する
 
@@ -128,7 +128,7 @@ ms.locfileid: "65097010"
     |メールボックスから電子メール メッセージを完全に削除 (消去) します。  |メールボックスから削除されたメッセージ  | Exchange メールボックス アクティビティ  |
     |共有メールボックスから電子メール メッセージを送信します。  |送信者権限を使ったメッセージの送信  <br/> And  <br/> 代理送信権限を使ったメッセージの送信  | Exchange メールボックス アクティビティ  |
 
-- Security & Compliance Center PowerShell の **New-ActivityAlert** コマンドレットと **Set-ActivityAlert** コマンドレットを使用して、アクティビティ アラートを作成および編集することもできます。 これらのコマンドレットを使用してアクティビティ アラートを作成または編集する場合は、次の点に注意してください。
+- Security & Compliance PowerShell の **New-ActivityAlert** コマンドレットと **Set-ActivityAlert** コマンドレットを使用して、アクティビティ アラートを作成および編集することもできます。 これらのコマンドレットを使用してアクティビティ アラートを作成または編集する場合は、次の点に注意してください。
 
   - コマンドレットを使用して、[ **アクティビティ** ] ドロップダウン リストに一覧表示されていないアラートにアクティビティを追加する場合、アラートのプロパティ ページに「このアラートには、ピッカーに表示されないカスタム操作があります」というメッセージが表示されます。
 

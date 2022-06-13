@@ -1,7 +1,7 @@
 ---
 title: Azure Virtual Desktop でWindowsマルチセッション デバイスをオンボードする
 description: Azure Virtual Desktop でのマルチセッション デバイスWindowsオンボードの詳細については、この記事を参照してください
-keywords: Azure Virtual Desktop、WVD、Microsoft Defender、エンドポイント、オンボード
+keywords: Azure Virtual Desktop、AVD、Microsoft Defender、エンドポイント、オンボード
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d97326987af49b9bac44b3578884c72d756d5595
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7a093a3b50d7153c71eecb9707ff8ab0dbef0d20
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324061"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013290"
 ---
 # <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Azure Virtual Desktop でWindowsマルチセッション デバイスをオンボードする
 
@@ -32,7 +32,7 @@ ms.locfileid: "63324061"
 
 Microsoft Defender for Endpointでは、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされます。 組織のニーズによっては、従業員が管理されていないデバイス、リモートの場所、または同様のシナリオから企業データやアプリにアクセスできるように、VDI または Azure Virtual Desktop セッションを実装することが必要になる場合があります。 Microsoft Defender for Endpointを使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 [非永続的 VDI に関する考慮事項](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)について理解します。 [Azure Virtual Desktop](/azure/virtual-desktop/overview) では非永続化オプションは提供されませんが、新しいホストのプロビジョニングとマシンの再デプロイに使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の揮発性が高まり、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響を与え、セキュリティ アナリストの可視性が低下する可能性があります。
 
@@ -42,16 +42,16 @@ Microsoft Defender for Endpointでは、VDI セッションと Azure Virtual Des
 > - 仮想デスクトップごとに 1 つのエントリ
 > - 仮想デスクトップごとに複数のエントリ
 
-Microsoft では、仮想デスクトップごとに 1 つのエントリとして Azure Virtual Desktop をオンボードすることをお勧めします。 これにより、Microsoft Defender for Endpoint ポータルでの調査エクスペリエンスが、マシン名に基づいて 1 つのデバイスのコンテキストに確実に存在します。 WVD ホストを頻繁に削除して再デプロイする組織は、同じコンピューターの複数のオブジェクトがMicrosoft Defender for Endpoint ポータルで作成されないようにするため、この方法の使用を強く検討する必要があります。 これにより、インシデントを調査するときに混乱が生じる可能性があります。 テスト環境または不揮発性環境の場合は、別の方法を選択することもできます。
+Microsoft では、仮想デスクトップごとに 1 つのエントリとして Azure Virtual Desktop をオンボードすることをお勧めします。 これにより、Microsoft Defender for Endpoint ポータルでの調査エクスペリエンスが、マシン名に基づいて 1 つのデバイスのコンテキストに確実に存在します。 AVD ホストを頻繁に削除して再デプロイする組織は、同じコンピューターの複数のオブジェクトがMicrosoft Defender for Endpoint ポータルで作成されないようにするため、この方法の使用を強く検討する必要があります。 これにより、インシデントを調査するときに混乱が生じる可能性があります。 テスト環境または不揮発性環境の場合は、別の方法を選択することもできます。
 
-WVD ゴールデン イメージにMicrosoft Defender for Endpointオンボード スクリプトを追加することをお勧めします。 こうすることで、このオンボード スクリプトが最初の起動時にすぐに実行されるようにすることができます。 これは、WVD ゴールデン イメージからプロビジョニングされたすべての WVD マシンで最初に起動時にスタートアップ スクリプトとして実行されます。 ただし、ギャラリー イメージの 1 つを変更せずに使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。
+Microsoft では、AVD ゴールデン イメージにMicrosoft Defender for Endpointオンボード スクリプトを追加することをお勧めします。 こうすることで、このオンボード スクリプトが最初の起動時にすぐに実行されるようにすることができます。 これは、AVD ゴールデン イメージからプロビジョニングされたすべての AVD マシンで最初の起動時にスタートアップ スクリプトとして実行されます。 ただし、ギャラリー イメージの 1 つを変更せずに使用している場合は、スクリプトを共有の場所に配置し、ローカル またはドメイン グループ ポリシーから呼び出します。
 
 > [!NOTE]
-> WVD ゴールデン イメージ上の VDI オンボードスタートアップ スクリプトの配置と構成は、WVD の起動時に実行されるスタートアップ スクリプトとして構成されます。 実際の WVD ゴールデン イメージをオンボード **することは** お勧めしません。 もう 1 つの考慮事項は、スクリプトの実行に使用されるメソッドです。 スタートアップ/プロビジョニング プロセスのできるだけ早い段階で実行して、セッションの受信に使用できるマシンとサービスへのデバイスオンボードの間の時間を短縮する必要があります。 以下のシナリオ 1 とシナリオ 2 では、これを考慮に入れる必要があります。
+> AVD ゴールデン イメージ上の VDI オンボードスタートアップ スクリプトの配置と構成は、AVD の起動時に実行されるスタートアップ スクリプトとして構成されます。 実際の AVD ゴールデン イメージをオンボード **することは** お勧めしません。 もう 1 つの考慮事項は、スクリプトの実行に使用されるメソッドです。 スタートアップ/プロビジョニング プロセスのできるだけ早い段階で実行して、セッションの受信に使用できるマシンとサービスへのデバイスオンボードの間の時間を短縮する必要があります。 以下のシナリオ 1 とシナリオ 2 では、これを考慮に入れる必要があります。
 
 ### <a name="scenarios"></a>シナリオ
 
-WVD ホスト マシンをオンボードするには、いくつかの方法があります。
+AVD ホスト マシンをオンボードするには、いくつかの方法があります。
 
 - 起動時にゴールデン イメージ (または共有場所から) でスクリプトを実行します。
 - 管理ツールを使用してスクリプトを実行します。
@@ -116,7 +116,7 @@ WVD ホスト マシンをオンボードするには、いくつかの方法が
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>ゴールデン イメージを構築するときにマシンにタグを付ける
 
-オンボードの一環として、Microsoft Security Center で WVD マシンをより簡単に区別できるようにマシン タグを設定することを検討する必要があります。 詳細については、「 [レジストリ キー値を設定してデバイス タグを追加する」を](machine-tags.md#add-device-tags-by-setting-a-registry-key-value)参照してください。
+オンボードの一環として、Microsoft Security Center で AVD マシンをより簡単に区別するようにマシン タグを設定することを検討する必要がある場合があります。 詳細については、「 [レジストリ キー値を設定してデバイス タグを追加する」を](machine-tags.md#add-device-tags-by-setting-a-registry-key-value)参照してください。
 
 #### <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定
 

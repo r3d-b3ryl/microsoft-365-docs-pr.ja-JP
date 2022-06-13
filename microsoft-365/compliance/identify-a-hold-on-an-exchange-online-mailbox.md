@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Microsoft 365のExchange Online メールボックスに配置できるさまざまな種類の保留リストを特定する方法について説明します。
-ms.openlocfilehash: 4b4ff5064f59285412c4c20108df9dbbae992f7e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f38376fe3d7517b877239a9bb6add5fbf9952d59
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097758"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017900"
 ---
 # <a name="how-to-identify-the-type-of-hold-placed-on-an-exchange-online-mailbox"></a>Exchange Online メールボックスに保存されている保留の種類を特定する方法
 
@@ -130,9 +130,9 @@ InPlaceHolds プロパティ内のアイテムをMicrosoft 365アイテム保持
 
 ### <a name="ediscovery-holds"></a>電子情報開示の保留
 
-Security & Compliance Center PowerShell で次のコマンドを実行して、メールボックスに適用されている電子情報開示ホールドを特定します。 手順 1 で識別した電子情報開示ホールドに GUID (UniH プレフィックスを含まない) を使用します。 
+Security & Compliance PowerShell で次のコマンドを実行して、メールボックスに適用されている電子情報開示ホールドを特定します。 手順 1 で識別した電子情報開示ホールドに GUID (UniH プレフィックスを含まない) を使用します。 
 
-セキュリティ/コンプライアンス センターの PowerShell に接続するには、「[セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+セキュリティ & コンプライアンス PowerShell に接続するには、「[セキュリティ & コンプライアンス PowerShell へのConnect](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 最初のコマンドは、保留に関する情報を含む変数を作成します。 この変数は、他のコマンドで使用されます。 2 番目のコマンドは、保留リストが関連付けられている電子情報開示ケースの名前を表示します。 3 番目のコマンドには、保留リストの名前と、保留が適用されるメールボックスの一覧が表示されます。
 
@@ -163,7 +163,7 @@ In-Place保留の GUID がプレフィックスで `cld` 始まる場合は、�
 
 ### <a name="microsoft-365-retention-policies"></a>Microsoft 365アイテム保持ポリシー
 
-[Security & Compliance Center PowerShell にConnect](/powershell/exchange/connect-to-scc-powershell)し、次のコマンドを実行して、メールボックスに適用されるMicrosoft 365アイテム保持ポリシー (組織全体または特定の場所) を識別します。 手順 1 で識別した GUID (mbx、skp、または grp プレフィックスやアクション サフィックスを含まない) を使用します。
+[Security & Compliance PowerShell にConnect](/powershell/exchange/connect-to-scc-powershell)し、次のコマンドを実行して、メールボックスに適用されるMicrosoft 365アイテム保持ポリシー (組織全体または特定の場所) を識別します。 手順 1 で識別した GUID (mbx、skp、または grp プレフィックスやアクション サフィックスを含まない) を使用します。
 
 ```powershell
 Get-RetentionCompliancePolicy <hold GUID without prefix or suffix> -DistributionDetail  | FL Name,*Location
@@ -292,7 +292,7 @@ $ht.MailboxLog | Convertfrom-Json
 
 メールボックスに適用されている保留を特定したら、保持期間の変更、一時的または永続的な保留の削除、非アクティブなメールボックスのMicrosoft 365アイテム保持ポリシーからの除外などのタスクを実行できます。 保留に関連するタスクの実行の詳細については、次のいずれかのトピックを参照してください。
 
-- [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) で [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) コマンドを実行して、組織全体のMicrosoft 365アイテム保持ポリシーからメールボックスを除外します。 このコマンドは、 *ExchangeLocation* プロパティの値が等しい `All`アイテム保持ポリシーにのみ使用できます。
+- [Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) で [Set-RetentionCompliancePolicy -Identity \<Policy Name> -AddExchangeLocationException \<user mailbox>](/powershell/module/exchange/set-retentioncompliancepolicy) コマンドを実行して、組織全体のMicrosoft 365アイテム保持ポリシーからメールボックスを除外します。 このコマンドは、 *ExchangeLocation* プロパティの値が等しい `All`アイテム保持ポリシーにのみ使用できます。
 
 - [非アクティブなメールボックスの保持期間を変更する](change-the-hold-duration-for-an-inactive-mailbox.md)
 

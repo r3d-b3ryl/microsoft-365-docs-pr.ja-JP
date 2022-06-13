@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: algreer
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft Defender ウイルス対策による脅威の軽減について説明します。
-ms.openlocfilehash: da8a10b1ffc1932a6b4f84447028d2fa9b865e64
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 3c600c8119ba3d4a252efcf5675ab58138a69b83
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65023659"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016682"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を使用してMicrosoft 365 Lighthouseの脅威を軽減する
 
 Microsoft 365 Lighthouseでは、パートナーは、すべてのテナントにわたる脅威を調査し、軽減できます。 また、デバイスでウイルス対策スキャンを開始したり、デバイスがMicrosoft Defender ウイルス対策の最新の更新プログラムを取得していることを確認したり、ウイルス対策スキャン後に保留中のアクションを確認したりできます。 Lighthouse では、Windows 10 以降を実行しているデバイスのみがサポートされます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - Microsoft 365 Lighthouseは、顧客テナントではなく、パートナー テナントにのみ展開されますが、お客様と顧客テナントが[、Microsoft 365 Lighthouse要件](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認してください。
 

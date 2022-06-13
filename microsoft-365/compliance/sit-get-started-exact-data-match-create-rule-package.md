@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 機密情報の種類/ルール パッケージと完全に一致するデータを作成する
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d18147e576db356a5fb7904c3901003bbf48855e
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435261"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017188"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>機密情報の種類/ルール パッケージと完全に一致するデータを作成する
 
@@ -60,7 +60,7 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>完全一致スキーマと機密情報の種類パターンウィザードを使用する
 
-1. テナントのMicrosoft Purview コンプライアンス ポータルで、**Data classificationExact** >  **データ一致** に移動します。
+1. テナントの Microsoft Purview コンプライアンス ポータルで、 **データ分類** > **の完全なデータ一致** に移動します。
 
 2. **EDM の機密情報の種類** を選択し、 **EDM の機密情報の種類を作成** して、機密情報の種類の構成ウィザードを開きます。
 
@@ -89,7 +89,7 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 
 ### <a name="edit-or-delete-the-sensitive-information-type-pattern"></a>機密情報の種類パターンを編集または削除する
 
-1. **コンプライアンス センター** > **データ分類** > **Exact データ一致を** 開きます。
+1. **コンプライアンス センター** > **のデータ分類** > **の完全一致を開きます**。
 
 2. **EDM の機密情報の種類を選択します**。
 
@@ -138,7 +138,7 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 
 ## <a name="create-a-rule-package-manually"></a>ルール パッケージを手動で作成する
 
-この手順では、ルール パッケージと呼ばれる XML 形式のファイルを (Unicode エンコードを使用して) 作成し、コンプライアンス センターの PowerShell コマンドレットを使用してMicrosoft Purviewにアップロードする方法を示します。
+この手順では、ルール パッケージと呼ばれる XML 形式のファイルを (Unicode エンコードを使用して) 作成し、Security & Compliance PowerShell コマンドレットを使用して Microsoft Purview にアップロードする方法を示します。
 
 > [!NOTE]
 > マップする SIT で複数単語の裏付けとなる証拠を検出できる場合は、手動で作成されたルール パッケージで定義するセカンダリ要素を SIT にマップできます。 たとえば、その裏付けとなる証拠フィールドがそのパターンを検出できる SIT にマップされていない場合は、コンテンツ内でフィールドの 1 つにアップロードされた用語`John Smith`と個別に比較`John`して`Smith`見つけたため、名前`John Smith`はセカンダリ要素として一致しません。
@@ -215,6 +215,6 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 > [!NOTE]
 > ルール パッケージ ファイルの構文は、他の機密情報の種類と同じです。 ルール パッケージ ファイルの構文と追加の構成オプションの詳細、および PowerShell を使用した機密情報の種類の変更と削除の手順については、 [PowerShell を使用してカスタムの機密情報の種類を作成します](create-a-custom-sensitive-information-type-in-scc-powershell.md#create-a-custom-sensitive-information-type-using-powershell)。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 - [機密情報の種類と完全に一致するデータをテストする](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

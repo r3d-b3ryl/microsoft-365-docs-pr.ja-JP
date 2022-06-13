@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
 description: アーカイブ メールボックスを有効にし、自動拡張アーカイブを有効にして、Microsoft 365内のメールボックスの回復可能なアイテム フォルダーのサイズを増やします。
-ms.openlocfilehash: a05851f1019405a495a7b909bf4a8d096227163d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: bbeb72c6a055be42e06c450afccb35965d149dce
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100811"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015018"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 
@@ -64,7 +64,7 @@ ms.locfileid: "65100811"
 
 最初の手順では、[回復可能なアイテム] フォルダーのカスタム保持タグ (アイテム保持ポリシー タグまたは RPT と呼ばれる) を作成します。 先に説明したように、この RPT により、ユーザーのプライマリ メールボックスの [回復可能なアイテム] フォルダー内のアイテムは、ユーザーのアーカイブ メールボックスの [回復可能なアイテム] フォルダーへ移動されます。 回復可能なアイテム フォルダーの RPT を作成するには、PowerShell を使用する必要があります。 Exchange 管理センター (EAC) を使用することはできません。
 
-1. [リモート PowerShell で Exchange Online に接続する](/powershell/exchange/connect-to-exchange-online-powershell)
+1. [Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. [回復可能なアイテム] フォルダーの新しい RPT を作成するには、次のコマンドを実行します。 
 
@@ -137,7 +137,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
 
 ### <a name="use-the-eac-to-apply-the-new-retention-policy"></a>EAC を使用して新しい保持ポリシーを適用する
 
-1. **RecipientsMailboxes** >  に移動 **します**。
+1. **[受信者メールボックス]** >  に移動 **します**。
 
 2. リスト ビューで、アイテム保持ポリシーを適用するメールボックスを選択し、[ **編集]** ![アイコンをクリックします](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif)。
 
@@ -147,7 +147,7 @@ New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks
 
 EAC を使用して、アイテム保持ポリシーを複数のメールボックスに適用することもできます。
 
-1. **RecipientsMailboxes** >  に移動 **します**。
+1. **[受信者メールボックス]** >  に移動 **します**。
 
 2. リスト ビューで、Shift キーまたは Ctrl キーを使用して複数のメールボックスを選択します。
 

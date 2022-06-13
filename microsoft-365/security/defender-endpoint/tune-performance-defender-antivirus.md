@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 43b39cac260f5bda773af6a428304dc898444771
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 558358cca679d9600f9a95c13c4fac6147764b75
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419596"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013356"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のパフォーマンス アナライザー
 
@@ -160,9 +160,11 @@ New-MpPerformanceRecording -RecordTo C:\LocalPathOnServer02\trace.etl -Session $
 上記のコマンドは、Server02 でパフォーマンス記録を収集し (パラメーター セッションの引数$sで指定)、指定されたパス **(Server02 の C:\LocalPathOnServer02\trace.etl** ) に保存します。
 
 ##### <a name="example-3-collect-a-performance-recording-in-non-interactive-mode"></a>例 3: 非対話型モードでパフォーマンス記録を収集する
+
 ```powershell
-New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60 
+New-MpPerformanceRecording -RecordTo:.\Defender-scans.etl -Seconds 60
 ```
+
 上記のコマンドは、パラメーター -Seconds で指定された期間のパフォーマンス記録を秒単位で収集します。 これは、対話やプロンプトを必要としないバッチ コレクションを実行するユーザーに推奨されます。
 
 #### <a name="parameters-new-mpperformancerecording"></a>パラメーター: New-MpPerformanceRecording
@@ -192,6 +194,7 @@ Accept wildcard characters: False
 ```
 
 ##### <a name="-seconds"></a>-Seconds
+
 パフォーマンス記録の継続時間を秒単位で指定します。 これは、対話やプロンプトを必要としないバッチ コレクションを実行するユーザーに推奨されます。
 
 ```yaml
@@ -280,11 +283,13 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopProcesses:10 -TopExtensio
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:100ms
 ```
+
 ##### <a name="example-5-using--raw-parameter"></a>例 5: -Raw パラメーターの使用
 
 ```powershell
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
+
 上記のコマンドで -Raw を使用すると、出力をコンピューターで読み取り可能にし、JSON などのシリアル化形式に簡単に変換できます。
 
 #### <a name="parameters-get-mpperformancereport"></a>パラメーター: Get-MpPerformanceReport
@@ -312,9 +317,10 @@ Default value: None
 Accept pipeline input: True
 Accept wildcard characters: False
 ```
+
 ##### <a name="-raw"></a>-Raw
 
-パフォーマンス記録の出力をコンピューターで読み取り可能にし、JSON などのシリアル化形式に容易に変換できるようにする必要があることを指定します (たとえば、Convert-to-JSON コマンドを使用)。 これは、他のデータ処理システムでのバッチ処理に関心があるユーザーに推奨されます。 
+パフォーマンス記録の出力をコンピューターで読み取り可能にし、JSON などのシリアル化形式に容易に変換できるようにする必要があることを指定します (たとえば、Convert-to-JSON コマンドを使用)。 これは、他のデータ処理システムでのバッチ処理に関心があるユーザーに推奨されます。
 
 ```yaml
 Type: <SwitchParameter>
@@ -537,4 +543,4 @@ Accept wildcard characters: False
 - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-- [Android features で Defender for Endpoint を構成するiOS](android-configure.md)- [機能のMicrosoft Defender for Endpointを構成](ios-configure-features.md)する
+- [Android機能で Defender for Endpoint を構成する iOS機能](android-configure.md)- [にMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft Purview Advanced Message Encryption を使用して、カスタム ブランド テンプレートを使用して電子メールの有効期限を設定することで、電子メールセキュリティを拡張します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e8689820adc3158ae2a36a4d52ebad0959097b49
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188396"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015564"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールの有効期限を設定する
 
@@ -32,7 +32,7 @@ Microsoft Purview Advanced Message Encryption は[、Microsoft 365 Enterprise E5
 
 組織に Microsoft Purview Advanced Message Encryption を含まないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフ価格)、またはMicrosoft 365 E5 Compliance SKU アドオンで購入できます。Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、またはOffice 365 SKU 用の SKU アドオンをOffice 365 Advanced Complianceします。
 
-メッセージの有効期限は、ユーザーが OME ポータルを使用して暗号化された電子メールにアクセスする外部受信者に送信するメールで使用できます。 受信者に対し、Windows PowerShellで有効期限を指定するカスタム ブランド テンプレートを使用して、組織から送信された暗号化されたメールを表示および返信するために OME ポータルを使用するように強制します。
+メッセージの有効期限は、ユーザーが OME ポータルを使用して暗号化された電子メールにアクセスする外部受信者に送信するメールで使用できます。 PowerShell で有効期限を指定するカスタム ブランド テンプレートを使用して、受信者に OME ポータルを使用して、組織から送信された暗号化されたメールを表示して返信するように強制します。
 
 Office 365グローバル管理者は、会社のブランドを適用して組織の電子メール メッセージの外観をカスタマイズするときに、これらの電子メール メッセージの有効期限を指定することもできます。 Microsoft Purview Advanced Message Encryption を使用すると、組織から送信された暗号化された電子メール用の複数のテンプレートを作成できます。 テンプレートを使用すると、受信者がユーザーから送信されたメールにアクセスできる期間を制御できます。
 

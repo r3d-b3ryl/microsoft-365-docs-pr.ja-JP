@@ -18,12 +18,12 @@ ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365非アクティブなメールボックスの内容を保持する必要がなくなった場合は、非アクティブなメールボックスを完全に削除できます。
-ms.openlocfilehash: 640a118a2fc277b05edc181e19008836027dc468
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 1f45e5ce3aca79e4f5abbc13442876ecbb22e90c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772382"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017944"
 ---
 # <a name="delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する
 
@@ -38,7 +38,7 @@ ms.locfileid: "65772382"
   
 ## <a name="before-you-delete-an-inactive-mailbox"></a>非アクティブなメールボックスを削除する前に
 
-- 非アクティブなメールボックスから保留を削除するには、powerShell Exchange Onlineを使用する必要があります。 これらの手順では、Exchange管理センター (EAC) またはMicrosoft Purview コンプライアンス ポータルを使用することはできません。 Exchange Online PowerShell を使用する詳細な手順については、「PowerShell [をExchange OnlineするConnect」を](/powershell/exchange/connect-to-exchange-online-powershell)参照してください。
+- 非アクティブなメールボックスから保留を削除するには、powerShell Exchange Onlineを使用する必要があります。 これらの手順では、Exchange管理センター (EAC) または Microsoft Purview コンプライアンス ポータルを使用することはできません。 Exchange Online PowerShell を使用する詳細な手順については、「PowerShell [をExchange OnlineするConnect」を](/powershell/exchange/connect-to-exchange-online-powershell)参照してください。
 
 - 非アクティブなメールボックスの内容は、ホールドを解除して、非アクティブなメールボックスを削除する前に別のメールボックスにコピーできます。 詳細については、「[Office 365で非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md)」を参照してください。
 
@@ -118,7 +118,7 @@ Set-Mailbox <identity of inactive mailbox> -ExcludeFromAllOrgHolds
 
 #### <a name="remove-an-inactive-mailbox-from-a-specific-location-retention-policy"></a>特定の場所のアイテム保持ポリシーから非アクティブなメールボックスを削除する
 
-[Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) を使用して、明示的なアイテム保持ポリシーから非アクティブなメールボックスを削除します。
+[Security & Compliance PowerShell](/powershell/exchange/connect-to-scc-powershell) を使用して、明示的なアイテム保持ポリシーから非アクティブなメールボックスを削除します。
 
 ```powershell
 Set-RetentionCompliancePolicy -Identity <retention policy GUID without prefix or suffix> -RemoveExchangeLocation <identity of inactive mailbox>

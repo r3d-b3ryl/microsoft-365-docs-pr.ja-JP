@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a355ed4c31cf2355ee6166987651da092c7afb33
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 592b5733844dc6a3df1a1d207e3a2c3deda7d7b7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64945475"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015216"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>電子メールをセキュリティで保護するためのポリシーの推奨事項
 
@@ -33,7 +33,7 @@ ms.locfileid: "64945475"
 
 これらの推奨事項は、ニーズの粒度 ( **開始点**、 **エンタープライズ**、 **特殊な** セキュリティ) に基づいて適用できる 3 つのセキュリティと保護のレベルに基づいています。 これらのセキュリティ層と、以下の推奨事項で参照されている推奨されるクライアントのオペレーティング システムの詳細については、[推奨されるセキュリティ ポリシーと構成の概要](microsoft-365-policies-configurations.md)に関するページを参照してください。
 
-これらの推奨事項では、モバイル デバイス上の iOS と Android のOutlookなど、ユーザーが最新の電子メール クライアントを使用する必要があります。 iOS と Android のOutlookは、Office 365の最適な機能をサポートします。 これらのモバイル Outlook アプリは、モバイル使用をサポートし、他の Microsoft クラウド セキュリティ機能と連携するセキュリティ機能も備えています。 詳細については、「[iOS と Android のOutlookに関する FAQ](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)」を参照してください。
+これらの推奨事項では、モバイル デバイスでのiOSやAndroidのOutlookなど、ユーザーが最新の電子メール クライアントを使用する必要があります。 iOSとAndroidのOutlookは、Office 365の最適な機能をサポートします。 これらのモバイル Outlook アプリは、モバイル使用をサポートし、他の Microsoft クラウド セキュリティ機能と連携するセキュリティ機能も備えています。 詳細については、[iOSとAndroidに関する FAQ のOutlook](/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-faq)を参照してください。
 
 ## <a name="update-common-policies-to-include-email"></a>一般的なポリシーを更新してメールを含める
 
@@ -49,7 +49,7 @@ ActiveSync クライアントをブロックするためのExchange Onlineの新
 |---|---|---|
 |**開始点**|[サインインのリスクが *中*、または *高* のときに MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド アプリの割り当てにExchange Onlineを含める|
 ||[先進認証をサポートしないクライアントはブロックする](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|クラウド アプリの割り当てにExchange Onlineを含める|
-||[アプリ データ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|Outlookがアプリの一覧に含まれていることを確認します。 プラットフォーム (iOS、Android、Windows) ごとにポリシーを更新してください|
+||[アプリ データ保護ポリシーを適用する](identity-access-policies.md#apply-app-data-protection-policies)|Outlookがアプリの一覧に含まれていることを確認します。 プラットフォームごとにポリシーを更新してください (iOS、Android、Windows)|
 ||[承認されたアプリと APP 保護を要求する](identity-access-policies.md#require-approved-apps-and-app-protection)|クラウド アプリの一覧にExchange Onlineを含める|
 ||[ActiveSync クライアントをブロックする](#block-activesync-clients)|この新しいポリシーを追加する|
 |**エンタープライズ**|[サインインのリスクが *低*、*中*、または *高* のときに MFA を要求する](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|クラウド アプリの割り当てにExchange Onlineを含める|
@@ -72,7 +72,7 @@ Exchange ActiveSyncを使用して、デスクトップデバイスとモバイ�
 
 それらのステップは次のとおりです。
 
-1. [Exchange Onlineリモート PowerShell セッションにConnect](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)します。
+1. [Exchange Online PowerShell に接続します](/powershell/exchange/exchange-online/connect-to-exchange-online-powershell/connect-to-exchange-online-powershell)。
 2. OWA メールボックス ポリシーがまだない場合は、 [New-OwaMailboxPolicy](/powershell/module/exchange/new-owamailboxpolicy) コマンドレットを使用して作成します。
 3. 添付ファイルの表示を許可するがダウンロードを許可しない場合は、次のコマンドを使用します。
 
@@ -94,11 +94,11 @@ Exchange ActiveSyncを使用して、デスクトップデバイスとモバイ�
 
    **アクセス制御** \>**セッション**: [**アプリの強制制限を使用** する] を選択します
 
-## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>iOS デバイスと Android デバイスでOutlookを使用する必要がある
+## <a name="require-that-ios-and-android-devices-must-use-outlook"></a>iOSデバイスとAndroid デバイスでOutlookを使用する必要がある
 
-iOS および Android デバイスのユーザーが iOS と Android のOutlookを使用して職場または学校のコンテンツにのみアクセスできるようにするには、それらの潜在的なユーザーを対象とする条件付きアクセス ポリシーが必要です。
+iOSデバイスとAndroid デバイスのユーザーが、iOSとAndroidのOutlookを使用してのみ職場または学校のコンテンツにアクセスできるようにするには、それらの潜在的なユーザーを対象とする条件付きアクセス ポリシーが必要です。
 
-[iOS と Android のOutlookを使用したメッセージング コラボレーション アクセスの管理](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)に関するページで、このポリシーを構成する手順を参照してください。
+iOS[とAndroidにOutlookを使用してメッセージング コラボレーション アクセスを管理する](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)で、このポリシーを構成する手順を参照してください。
 
 ## <a name="set-up-message-encryption"></a>メッセージ暗号化を設定する
 

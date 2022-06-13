@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6501097251f4001c58a651db7ddb34bc623e9b0a
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 55923b13cf47e0309a7246ba43dcb9adaf3c58ff
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61924204"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016012"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>SharePoint、OneDrive、Microsoft Teams 用の ATP を有効にする
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -46,7 +46,7 @@ SharePoint、OneDrive、Microsoft TeamsのMicrosoft Defender for Office 365は�
 
 - SharePoint、OneDrive、Microsoft Teamsのセーフ添付ファイルを有効にするには、Microsoft 365 Defender ポータルで **組織の管理** または **セキュリティ管理者** の役割グループのメンバーである必要があります。 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-- SharePoint Online PowerShell を使用してユーザーが悪意のあるファイルをダウンロードできないようにするには、[Azure ADのグローバル管理者](/azure/active-directory/roles/permissions-reference#global-administrator)ロールまたは[SharePoint管理者](/azure/active-directory/roles/permissions-reference#sharepoint-administrator)ロールのメンバーである必要があります。
+- SharePoint Online PowerShell を使用して悪意のあるファイルをユーザーがダウンロードできないようにするには、Azure AD の[グローバル管理者](/azure/active-directory/roles/permissions-reference#global-administrator)ロールまたは [SharePoint管理者](/azure/active-directory/roles/permissions-reference#sharepoint-administrator)ロールのメンバーである必要があります。
 
 - 組織で監査ログが有効になっていることを確認します。 詳細については、「[監査ログの検索を有効または無効にする](../../compliance/turn-audit-log-search-on-or-off.md)」をご覧ください。
 
@@ -129,7 +129,7 @@ SharePoint、OneDrive、およびMicrosoft Teamsの添付ファイルをセー�
 
 ### <a name="use-security--compliance-powershell-to-create-an-alert-policy-for-detected-files"></a>セキュリティ & コンプライアンス PowerShell を使用して、検出されたファイルのアラート ポリシーを作成する
 
-PowerShell を使用して前のセクションで説明したのと同じアラート ポリシーを作成する場合は、 [Security & Compliance Center PowerShell に接続](/powershell/exchange/connect-to-scc-powershell) し、次のコマンドを実行します。
+PowerShell を使用して前のセクションで説明したのと同じアラート ポリシーを作成する場合は、 [Security & Compliance PowerShell に接続](/powershell/exchange/connect-to-scc-powershell) し、次のコマンドを実行します。
 
 ```powershell
 New-ActivityAlert -Name "Malicious Files in Libraries" -Description "Notifies admins when malicious files are detected in SharePoint Online, OneDrive, or Microsoft Teams" -Category ThreatManagement -Operation FileMalwareDetected -NotifyUser "admin1@contoso.com","admin2@contoso.com"

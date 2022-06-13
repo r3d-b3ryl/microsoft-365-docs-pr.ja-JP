@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 Defender ポータルでアラート ポリシーを作成して、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: e96572abd5c01b8a84e47d3a918db8e97827e775
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 46be5c46c49b50286983517b7b1625f3309ca949
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941022"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015062"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -47,7 +47,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 ![アラート ポリシーの動作の概要。](../media/M365ComplianceDefender-AlertPolicies-Overview.png)
 
-1. 組織内の管理者は、コンプライアンス ポータルまたは Microsoft 365 Defender ポータルの **[アラート ポリシー]** ページを使用して、アラート ポリシーを作成、構成、およびオンにします。 セキュリティ/コンプライアンス センター PowerShell の [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) コマンドレットを使用して、アラート ポリシーを作成することもできます。
+1. 組織内の管理者は、コンプライアンス ポータルまたは Microsoft 365 Defender ポータルの **[アラート ポリシー]** ページを使用して、アラート ポリシーを作成、構成、およびオンにします。 Security & Compliance PowerShell の [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) コマンドレットを使用して、アラート ポリシーを作成することもできます。
 
    アラート ポリシーを作成するには、コンプライアンス ポータルまたは Defender ポータルでアラートの管理ロールまたは組織構成ロールを割り当てる必要があります。
 
@@ -58,11 +58,11 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 3. Microsoft 365 は、コンプライアンス ポータルまたは Defender ポータルの **[アラート]** ページに表示されるアラートを生成します。 また、アラート ポリシーでメール アラートが有効になっている場合、Microsoft は受信者のリストにアラートを送信します。 管理者または他のユーザーが [アラート] ページで確認できるアラートは、ユーザーに割り当てられたロールによって決定されます。 詳細については、「[アラートを表示するために必要な RBAC アクセス許可](#rbac-permissions-required-to-view-alerts)」を参照してください。
 
-4. 管理者は、コンプライアンス センターでアラートを管理します。 アラートの管理は、調査の追跡と管理に役立つアラート状態の割り当てで構成されます。
+4. 管理者は、Microsoft Purview コンプライアンス ポータルでアラートを管理します。 アラートの管理は、調査の追跡と管理に役立つアラート状態の割り当てで構成されます。
 
 ## <a name="alert-policy-settings"></a>アラート ポリシーの設定
 
-アラート ポリシーは、アラートを生成するユーザーまたは管理者アクティビティを定義する一連のルールと条件、アクティビティを実行した場合にアラートをトリガーするユーザーのリスト、およびアラートがトリガーされる前にアクティビティが発生する必要がある回数を定義するしきい値で構成されます。  また、ポリシーを分類し、重大度のレベルを割り当てます。 これらの 2 つの設定は、コンプライアンス センターでポリシーを管理し、アラートを表示するときにこれらの設定をフィルタリングできるため、アラート ポリシー (およびポリシー条件が一致したときにトリガーされるアラート) の管理に役立ちます。 たとえば、同じカテゴリの条件に一致するアラートを表示したり、同じ重大度レベルのアラートを表示したりできます。
+アラート ポリシーは、アラートを生成するユーザーまたは管理者アクティビティを定義する一連のルールと条件、アクティビティを実行した場合にアラートをトリガーするユーザーのリスト、およびアラートがトリガーされる前にアクティビティが発生する必要がある回数を定義するしきい値で構成されます。  また、ポリシーを分類し、重大度のレベルを割り当てます。 この 2 つの設定は、ポリシーを管理し、Microsoft Purview コンプライアンス ポータルでアラートを表示するときにこれらの設定をフィルター処理できるため、アラート ポリシー (およびポリシー条件が一致したときにトリガーされるアラート) を管理するのに役立ちます。 たとえば、同じカテゴリの条件に一致するアラートを表示したり、同じ重大度レベルのアラートを表示したりできます。
 
 アラート ポリシーを表示して作成するには:
 
@@ -70,7 +70,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">コンプライアンス ポータル</a>に移動し、**[ポリシー]** > **[アラート]** > **[アラート ポリシー]** の順に選択します。
 
-![コンプライアンス センターで [ポリシー] を選択し、[アラート] で [アラート ポリシー] を選択してアラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesMCC.png)
+![Microsoft Purview コンプライアンス ポータルで [ポリシー] を選択し、[アラート] で [アラート ポリシー] を選択して、アラート ポリシーを表示して作成します。](../media/LaunchAlertPoliciesMCC.png)
 
 ### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
@@ -79,7 +79,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 ![Defender ポータルで、[メールと共同作業] にある [電子メール &コラボレーション] で [ポリシーとルール] を選択し、[アラート ポリシー] を選択してアラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesDefenderPortal.png)
 
 > [!NOTE]
-> コンプライアンス センターまたは Defender ポータルでアラート ポリシーを表示するには、表示専用のアラート管理ロールが割り当てられている必要があります。 アラート ポリシーを作成および編集するには、アラート管理ロールを割り当てられている必要があります。 詳細については、「[セキュリティ/コンプライアンス センターのアクセス許可](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)」を参照してください。
+> Microsoft Purview コンプライアンス ポータルまたはMicrosoft 365 Defender ポータルでアラート ポリシーを表示するには、アラートの管理ロールView-Only割り当てる必要があります。 アラート ポリシーを作成および編集するには、アラート管理ロールを割り当てられている必要があります。 詳細については、「[Microsoft Purview コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」 を参照してください。
 
 アラート ポリシーは、次の設定と条件で構成されます。
 
@@ -115,7 +115,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
   - Others
 
-  アラート ポリシーの条件を満たすアクティビティが発生した場合、生成される通知に、この設定で定義されているカテゴリのタグが付けられます。 これにより、カテゴリに基づいてアラートを並べ替え、フィルター処理できるため、コンプライアンス センターの **[アラート]** ページで同じカテゴリ設定を持つアラートを追跡および管理できます。
+  アラート ポリシーの条件を満たすアクティビティが発生した場合、生成される通知に、この設定で定義されているカテゴリのタグが付けられます。 これにより、カテゴリに基づいてアラートを並べ替え、フィルター処理できるため、Microsoft Purview ポータルの **[アラート]** ページで同じカテゴリ設定を持つアラートを追跡および管理できます。
 
 - **アラートの重大度**。 アラート カテゴリと同様に、重大度属性 (**低**、**中**、**高**、または **情報**) をアラート ポリシーに割り当てます。 アラート カテゴリと同じく、アラート ポリシーの条件を満たすアクティビティが発生した場合、生成されるアラートには、アラート ポリシーに設定されているものと同じ重大度レベルのタグが付けられます。 これにより、やはり、同じ重大度が設定されているアラートを **[アラート]** ページでまとめて追跡および管理できます。 たとえば、アラートの一覧をフィルター処理し、**高** 重大度のアラートだけを表示できます。
 
@@ -128,7 +128,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 ## <a name="default-alert-policies"></a>既定のアラート ポリシー
 
-Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、データ ライフサイクル管理のリスクを特定するのに役立つ組み込みのアラート ポリシーが用意されています。 [**通知ポリシー**] ページでは、これらの組み込みポリシーの名前は太字で表示され、ポリシーの種類は [**システム**] と定義されます。 これらのポリシーは既定で有効になっています。 これらのポリシーを無効にしたり (または有効に戻したり)、メール通知受信者のリストを設定したり、1 日の通知制限を設定したりできます。 これらのポリシーの他の設定を編集することはできません。
+Microsoft には、管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、データ ライフサイクル管理リスクExchange識別するのに役立つ組み込みのアラート ポリシーが用意されています。 [**通知ポリシー**] ページでは、これらの組み込みポリシーの名前は太字で表示され、ポリシーの種類は [**システム**] と定義されます。 これらのポリシーは既定で有効になっています。 これらのポリシーを無効にしたり (または有効に戻したり)、メール通知受信者のリストを設定したり、1 日の通知制限を設定したりできます。 これらのポリシーの他の設定を編集することはできません。
 
 次の表に、使用可能なデフォルトのアラート ポリシーと、各ポリシーが割り当てられているカテゴリを示します。 カテゴリは、ユーザーが [アラート] ページで表示できるアラートを決定するために使用されます。 詳細については、「[アラートを表示するために必要な RBAC アクセス許可](#rbac-permissions-required-to-view-alerts)」を参照してください。
 
@@ -141,13 +141,13 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 |**管理者がメールの手動調査をトリガーする**|管理者が脅威エクスプローラーからの電子メールの手動調査をトリガーすると、アラートを生成します。 詳細については、「[例: セキュリティ管理者が脅威エクスプローラーから調査を開始する](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)」を参照してください。 このアラートは、調査が開始されたことを組織に通知します。 アラートは、トリガーしたユーザーに関する情報を提供し、調査へのリンクを含めます。 このポリシーには、**情報** の重大度設定があります。|脅威の管理|はい|E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
 |**管理者によってトリガーされたユーザー侵害調査**|管理者が脅威エクスプローラーからの電子メールの送信者または受信者の手動のユーザー侵害調査をトリガーすると、アラートを生成します。 詳細については、「[例: セキュリティ管理者が脅威エクスプローラーから調査を開始する](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)」を参照してください。ここでは、メールの調査に関連する手動のトリガーが示されています。 このアラートは、ユーザー侵害調査が開始されたことを組織に通知します。 アラートは、トリガーしたユーザーに関する情報を提供し、調査へのリンクを含めます。 このポリシーの重大度設定は **中** です。|脅威の管理|はい|E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
 |**転送/リダイレクト ルールの作成**|組織内の誰かが、メッセージを別のメール アカウントに転送またはリダイレクトするメール ボックスの受信ボックス ルールを作成すると、アラートを生成します。 このポリシーは、Outlook on the web (旧称 Outlook Web App) または Exchange Online PowerShell を使用して作成された受信トレイ ルールのみを追跡します。 このポリシーには、**情報** の重大度設定があります。 受信トレイ ルールを使用して Outlookon the Web でメールを転送およびリダイレクトする方法の詳細については、「[Outlook on the web でルールを使ってメッセージを別のアカウントに自動的に転送する](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)」を参照してください。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
-|**eDiscovery 検索が開始またはエクスポートされました**|誰かがセキュリティおよびコンプライアンス センターのコンテンツ検索ツールを使用すると、アラートを生成します。 次のコンテンツ検索アクティビティが実行されると、アラートがトリガーされます。 <br><br> <li> コンテンツ検索が開始されました <li> コンテンツ検索の結果がエクスポートされました <li> コンテンツ検索レポートがエクスポートされました <br><br> アラートは、eDiscovery ケースに関連して以前のコンテンツ検索アクティビティが実行されたときにもトリガーされます。 このポリシーには、**情報** の重大度設定があります。 詳細については、「[監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)」を参照してください。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
+|**eDiscovery 検索が開始またはエクスポートされました**|Microsoft Purview ポータルで他のユーザーがコンテンツ検索ツールを使用したときにアラートを生成します。 次のコンテンツ検索アクティビティが実行されると、アラートがトリガーされます。 <br><br> <li> コンテンツ検索が開始されました <li> コンテンツ検索の結果がエクスポートされました <li> コンテンツ検索レポートがエクスポートされました <br><br> アラートは、eDiscovery ケースに関連して以前のコンテンツ検索アクティビティが実行されたときにもトリガーされます。 このポリシーには、**情報** の重大度設定があります。 詳細については、「[監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)」を参照してください。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**Exchange 管理者権限の昇格**|Exchange Online 組織で誰かに管理者権限が割り当てられたときにアラートを生成します。 たとえば、ユーザーが Exchange Online の組織管理ロール グループに追加された場合です。 このポリシーの重大度設定は **低** です。|アクセス許可|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**配信後に削除された悪意のあるファイルを含むメール メッセージ**|悪意のあるファイルを含むメッセージが組織内のメール ボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は[ゼロ時間自動パージ](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メール ボックスから感染したメッセージを削除します。 このポリシーには **情報** の重大度設定があり、[Office 365 での自動調査と応答](../security/office-365-security/office-365-air.md)を自動的にトリガーします。 この新しいポリシーの詳細については、「[Microsoft Defender for Office 365 の新しいアラート ポリシー](new-defender-alert-policies.md)」を参照してください。|脅威の管理|はい|E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
 |**配信後に削除された悪意のある URL を含む電子メール メッセージ**|悪意のある URL を含むメッセージが組織内のメール ボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は[ゼロ時間自動パージ](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メール ボックスから感染したメッセージを削除します。 このポリシーには **情報** の重大度設定があり、[Office 365 での自動調査と応答](../security/office-365-security/office-365-air.md)を自動的にトリガーします。 この新しいポリシーの詳細については、「[Microsoft Defender for Office 365 の新しいアラート ポリシー](new-defender-alert-policies.md)」を参照してください。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
 |**配信後に削除されたキャンペーンからのメール メッセージ**|[キャンペーン](../security/office-365-security/campaigns.md)に関連づけられているメッセージが組織内のメール ボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は[ゼロ時間自動パージ](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メール ボックスから感染したメッセージを削除します。 このポリシーには **情報** の重大度設定があり、[Office 365 での自動調査と応答](../security/office-365-security/office-365-air.md)を自動的にトリガーします。 この新しいポリシーの詳細については、「[Microsoft Defender for Office 365 の新しいアラート ポリシー](new-defender-alert-policies.md)」を参照してください。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
 |**メール メッセージが配信後に削除されました**|悪意のあるエンティティ (URL またはファイル) を含まない、またはキャンペーンに関連付けられている悪意のあるメッセージが組織内のメールボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は[ゼロ時間自動パージ](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メール ボックスから感染したメッセージを削除します。 このポリシーには **情報** の重大度設定があり、[Office 365 での自動調査と応答](../security/office-365-security/office-365-air.md)を自動的にトリガーします。 この新しいポリシーの詳細については、「[Microsoft Defender for Office 365 の新しいアラート ポリシー](new-defender-alert-policies.md)」を参照してください。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
-|**配信後に削除されない悪意のあるエンティティを含むメッセージ**|悪意のあるコンテンツ (ファイル、URL、キャンペーン、エンティティなし) を含むメッセージが組織内のメールボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は [0 時間の自動消去](../security/office-365-security/zero-hour-auto-purge.md)を使用して Exchange Online メールボックスから感染したメッセージを削除しようとしましたが、エラーが原因でメッセージが削除されませんでした。 追加の調査をお勧めします。 このポリシーには **中重大度** 設定があり、 [Office 365 の自動調査と応答が自動的にトリガーされます](../security/office-365-security/office-365-air.md)。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
+|**配信後に削除されない悪意のあるエンティティを含むメッセージ**|悪意のあるコンテンツ (ファイル、URL、キャンペーン、エンティティなし) を含むメッセージが組織内のメールボックスに配信されたときにアラートを生成します。 このイベントが発生した場合、Microsoft は [0 時間の自動消去](../security/office-365-security/zero-hour-auto-purge.md)を使用して、Exchange Online メールボックスから感染したメッセージを削除しようとしましたが、エラーが原因でメッセージが削除されませんでした。 追加の調査をお勧めします。 このポリシーには **中重大度** 設定があり、[Office 365の自動調査と応答が自動的にトリガーされます](../security/office-365-security/office-365-air.md)。|脅威の管理|はい|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
 |**ユーザーによってマルウェアまたはフィッシングとして報告されたメール**|組織内のユーザーが迷惑メール報告アドインを使用してメッセージをフィッシング メールとして報告すると、アラートを生成します。 このポリシーの重大度設定は **低** です。 このアドインの詳細については、「[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。 Defender for Office 365 P2、E5、G5 のお客様の場合、このアラートは [Office 365 での自動調査と応答を自動的にトリガーします](../security/office-365-security/office-365-air.md)。|脅威の管理|はい|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**メール送信制限を超えました**|組織内の誰かが送信スパム ポリシーで許可されているよりも多くのメールを送信したときにアラートを生成します。 これは通常、ユーザーが送信しているメールが多すぎるか、アカウントが侵害されている可能性があることを示しています。 このポリシーの重大度設定は **中** です。 このアラート ポリシーによって生成されたアラートを受け取った場合は、[ユーザー アカウントが侵害されていないかどうかを確認する](../security/office-365-security/responding-to-a-compromised-email-account.md)ことをお勧めします。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**フィッシング詐欺の可能性が原因でブロックされたフォーム**|フィッシング詐欺の繰り返しが検出されたために、組織内の誰かが Microsoft Forms を使用したフォームの共有と応答の収集を制限されたときにアラートを生成します。 このポリシーの **重大度設定は高** です。|脅威の管理|不要|E1、E3/F3、または E5|
@@ -185,7 +185,7 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 
 ## <a name="view-alerts"></a>警告を表示する
 
-組織内のユーザーによって実行されたアクティビティがアラート ポリシーの設定と一致すると、アラートが生成され、コンプライアンス センターまたは Defender ポータルの **[アラート]** ページに表示されます。 アラート ポリシーの設定によっては、アラートがトリガーされると、指定されたユーザーのリストにメール通知も送信されます。 **[アラート]** ページのダッシュボードには、アラートごとに、対応するアラート ポリシーの名前、アラートの重大度とカテゴリ (アラート ポリシーで定義されている)、アラートが生成される原因になったアクティビティの発生回数が表示されます。 この値は、アラート ポリシーのしきい値設定に基づいています。 ダッシュボードには、各アラートの状態も表示されます。 状態プロパティを使用してアラートを管理する方法の詳細については、「[アラートの管理](#manage-alerts)」を参照してください。
+組織内のユーザーが実行するアクティビティがアラート ポリシーの設定と一致すると、アラートが生成され、Microsoft Purview ポータルまたは Defender ポータルの **[アラート]** ページに表示されます。 アラート ポリシーの設定によっては、アラートがトリガーされると、指定されたユーザーのリストにメール通知も送信されます。 **[アラート]** ページのダッシュボードには、アラートごとに、対応するアラート ポリシーの名前、アラートの重大度とカテゴリ (アラート ポリシーで定義されている)、アラートが生成される原因になったアクティビティの発生回数が表示されます。 この値は、アラート ポリシーのしきい値設定に基づいています。 ダッシュボードには、各アラートの状態も表示されます。 状態プロパティを使用してアラートを管理する方法の詳細については、「[アラートの管理](#manage-alerts)」を参照してください。
 
 アラートを表示するには:
 
@@ -215,7 +215,7 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 
 - **タグ。** 1 つ以上のユーザー タグの通知を表示するには、このフィルターを使います。 タグは、アラートに表示されるタグ付きメール ボックスまたはユーザーに基づいて反映されます。 詳細については、「[Office 356 ATP のユーザー タグ](../security/office-365-security/user-tags.md)」を参照してください。
 
-- **ソース。** このフィルターを使用して、コンプライアンス センターのアラート ポリシーによってトリガーされたアラート、または Office 365 Cloud App セキュリティ ポリシーによってトリガーされたアラート、あるいはその両方を表示します。 Office 365 Cloud App Security アラートの詳細については、「[Defender for Cloud アプリのアラートを表示する](#viewing-cloud-app-security-alerts)」を参照してください。
+- **ソース。** このフィルターを使用して、Microsoft Purview ポータルのアラート ポリシーまたはMicrosoft Defender for Cloud Apps ポリシーによってトリガーされるアラート、またはその両方によってトリガーされるアラートを表示します。 App Security アラートのDefender for Cloudの詳細については、「[Defender for Cloud アプリアラートの表示」を](#viewing-cloud-app-security-alerts)参照してください。
 
 > [!IMPORTANT]
 > ユーザー タグによるフィルタリングと並べ替えは現在公開プレビュー中です。
@@ -298,7 +298,7 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 |表示専用の保持マネージャー|![チェック マーク](../media/checkmark.png)||||||
 
 > [!TIP]
-> デフォルトの各役割グループに割り当てられている役割を表示するには、セキュリティ センターとコンプライアンス センターの PowerShell で次のコマンドを実行します。
+> 各既定の役割グループに割り当てられているロールを表示するには、Security & Compliance PowerShell で次のコマンドを実行します。
 >
 > ```powershell
 > $RoleGroups = Get-RoleGroup
@@ -314,7 +314,7 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 
 ## <a name="manage-alerts"></a>アラートの管理
 
-アラートが生成され、コンプライアンス センターの **[アラート]** ページに表示されたら、それらを優先順位付け、調査、および解決できます。 ユーザーにアラートへのアクセス権を付与するのと同じ [RBAC アクセス許可](#rbac-permissions-required-to-view-alerts)により、アラートを管理することもできます。
+アラートが生成され、Microsoft Purview ポータルの **[アラート]** ページに表示されたら、それらをトリアージ、調査、解決できます。 ユーザーにアラートへのアクセス権を付与するのと同じ [RBAC アクセス許可](#rbac-permissions-required-to-view-alerts)により、アラートを管理することもできます。
 
 ここでは、アラートを管理するために実行できるタスクの一部を示します。
 
@@ -342,17 +342,17 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 
 ## <a name="view-defender-for-cloud-apps-alerts"></a>Defender for Cloud Apps のアラートを表示する
 
-Office 365 Cloud App セキュリティ ポリシーによってトリガーされるアラートが、コンプライアンス センターの **[アラート]** ページに表示されるようになりました。 これには、アクティビティ ポリシーによってトリガーされるアラートと、Office 365 Cloud App Security の異常検出ポリシーによってトリガーされるアラートが含まれます。 これは、コンプライアンス センターですべてのアラートを表示できることを意味します。 Office 365 Cloud App Security は、Office 365 Enterprise E5 または Office 365 US Government G5 サブスクリプションを持つ組織でのみ利用できます。 詳細については、「[Defender for Cloud Apps の概要](/cloud-app-security/what-is-cloud-app-security)」を参照してください。
+Defender for Cloud Apps セキュリティ ポリシーによってトリガーされるアラートが、Microsoft Purview ポータルの **[アラート]** ページに表示されるようになりました。 これには、アクティビティ ポリシーによってトリガーされるアラートと、Defender for Cloud Apps Security の異常検出ポリシーによってトリガーされるアラートが含まれます。 つまり、Microsoft Purview ポータルですべてのアラートを表示できます。 Defender for Cloud App Security は、Office 365 Enterprise E5 または Office 365米国政府機関 G5 サブスクリプションを持つ組織でのみ使用できます。 詳細については、「[Defender for Cloud Apps の概要](/cloud-app-security/what-is-cloud-app-security)」を参照してください。
 
 Enterprise Mobility + Security E5 サブスクリプションの一部として、またはスタンドアロン サービスとして Microsoft Defender for Cloud Apps を使用している組織は、コンプライアンス ポータルまたは Microsoft 365 Defender ポータルで Microsoft 365 アプリとサービスに関連する Defender for Cloud Apps アラートを表示することもできます。
 
-コンプライアンス センターまたは Defender ポータルで Defender for Cloud Apps アラートのみを表示するには、**[ソース]** フィルターを使用して **[Defender for Cloud Apps]** を選択します。
+Microsoft Purview ポータルまたは Defender ポータルで Defender for Cloud Apps アラートのみを表示するには、[**ソース]** フィルターを使用して **[Defender for Cloud アプリ**] を選択します。
 
 ![ソース フィルターを使用して、Defender for Cloud Apps アラートのみを表示します。](../media/FilterCASAlerts.png)
 
-コンプライアンス センターのアラート ポリシーによってトリガーされるアラートと同様に、Defender for Cloud Apps アラートを選択して、アラートの詳細を示すポップアップ ページを表示できます。 アラートには、Defender for Cloud Apps ポータルで詳細を表示してアラートを管理するためのリンクと、アラートをトリガーした対応する Defender for Cloud Apps ポリシーへのリンクが含まれています。 「[Defender for Cloud Apps でアラートを監視する](/cloud-app-security/monitor-alerts)」を参照してください。
+Microsoft Purview ポータルのアラート ポリシーによってトリガーされるアラートと同様に、Defender for Cloud アプリアラートを選択すると、アラートの詳細を含むポップアップ ページを表示できます。 アラートには、Defender for Cloud Apps ポータルで詳細を表示してアラートを管理するためのリンクと、アラートをトリガーした対応する Defender for Cloud Apps ポリシーへのリンクが含まれています。 「[Defender for Cloud Apps でアラートを監視する](/cloud-app-security/monitor-alerts)」を参照してください。
 
 ![アラートの詳細には、Defender for Cloud Apps ポータルへのリンクが含まれています。](../media/CASAlertDetail.png)
 
 > [!IMPORTANT]
-> コンプライアンス センターで Defender for Cloud Apps アラートの状態を変更しても、Defender for Cloud Apps ポータルの同じアラートの解決の状態は更新されません。 たとえば、コンプライアンス センターでアラートのステータスを **解決済み** としてマークした場合、Defender for Cloud Apps ポータルのアラートの状態は変更されません。 Defender for Cloud Apps アラートを解決または無視するには、Defender for Cloud Apps ポータルでアラートを管理します。
+> Microsoft Purview ポータルで Defender for Cloud Apps アラートの状態を変更しても、Defender for Cloud Apps ポータルの同じアラートの解決状態は更新されません。 たとえば、Microsoft Purview ポータルでアラートの状態を **解決済み** としてマークすると、Defender for Cloud Apps ポータルのアラートの状態は変更されません。 Defender for Cloud Apps アラートを解決または無視するには、Defender for Cloud Apps ポータルでアラートを管理します。

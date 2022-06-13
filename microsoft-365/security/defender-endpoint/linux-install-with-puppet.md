@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5ec3eb5d12933b33f4af7d5af96b4ab54fda4604
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 9fe38f8bec7ca99d9c1828126382c8f70a22fa3a
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663800"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014599"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Puppet を使用して Linux にMicrosoft Defender for Endpointをデプロイする
 
@@ -136,9 +136,13 @@ $version = undef
 ){
     case $::osfamily {
         'Debian' : {
+        $release = $channel ? {
+        'prod' => $facts['os']['distro']['codename']
+        default => $channel
+        }
             apt::source { 'microsoftpackages' :
                 location => "https://packages.microsoft.com/${distro}/${version}/prod",
-                release  => $channel,
+                release  =>  $release,
                 repos    => 'main',
                 key      => {
                     'id'     => 'BC528686B50D79E339D3721CEB3E94ADBE1229CF',

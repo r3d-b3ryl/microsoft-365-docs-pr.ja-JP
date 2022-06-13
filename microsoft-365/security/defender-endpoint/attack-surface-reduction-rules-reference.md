@@ -17,18 +17,18 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 02/04/2022
-ms.openlocfilehash: 30764562ebe60842f2824d7e313bec73e03f2ffa
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 2d003ce76db677b22b3873f6f19df05b34f06b96
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838871"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016198"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
 **適用対象:**
 
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Microsoft 365 Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender ウイルス対策
@@ -42,17 +42,15 @@ ms.locfileid: "65838871"
 - [サポートされているオペレーティング システムのバージョン](#supported-operating-systems)
 - [サポートされている構成管理システム](#supported-configuration-management-systems)
 - [ルールごとのアラートと通知の詳細](#per-rule-alert-and-notification-details)
-- [ASR の規則と GUID マトリックス](#asr-rules-and-guids-matrix)
+- [ASR 規則から GUID マトリックスへ](#asr-rule-to-guid-matrix)
 - [ASR ルール モード](#asr-rule-modes)
 - [ルールごとの説明](#per-rule-descriptions)
-  - ルールの説明
-  - 構成管理システムのルール名
 
 ## <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
 
 次の表に、現在一般公開にリリースされているルールでサポートされているオペレーティング システムを示します。 この表には、規則のアルファベット順が一覧表示されます。
 
-> [!Note]
+> [!NOTE]
 >
 > 特に明記されていない限り、最小Windows&nbsp; 10 ビルドはバージョン 1709 (RS3、ビルド 16299) 以降です。最小Windows&nbsp; Server ビルドのバージョンは 1809 以降です。
 >
@@ -60,7 +58,7 @@ ms.locfileid: "65838871"
 
 | ルール名| &nbsp;Windows 11 <br>and<br> &nbsp;Windows 10 | &nbsp;Windows Server <br> 2022 <br>and<br>  &nbsp;Windows Server <br> 2019 | Windows Server | &nbsp;Windows Server <br> 2016 <sup>[[1, 2](#fn1)]<sup></sup> | &nbsp;Windows Server <br> 2012 R2&nbsp;<sup> [[1, 2](#fn1)]<sup></sup> |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| [悪用された脆弱な署名されたドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> バージョン 1803 (半期チャネル) 以降 | Y | Y |
+| [悪用された脆弱な署名されたドライバーの悪用をブロックする](#block-abuse-of-exploited-vulnerable-signed-drivers) | Y | Y | Y <br> バージョン 1803 (半期Enterprise チャネル) 以降 | Y | Y |
 | [Adobe Reader による子プロセスの作成をブロックする](#block-adobe-reader-from-creating-child-processes) | Y <br> バージョン 1809 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [すべてのOffice アプリケーションによる子プロセスの作成をブロックする](#block-all-office-applications-from-creating-child-processes) | Y | Y | Y | Y | Y |
 | [Windowsローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)](#block-credential-stealing-from-the-windows-local-security-authority-subsystem) | Y <br> バージョン 1803 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
@@ -119,7 +117,7 @@ ms.locfileid: "65838871"
 
 "Rule State" が指定されたルールの場合:
 
-- 組み合わせの \<ASR Rule, Rule State\> ASR ルールは、高クラウド ブロック レベルのデバイスに対してのみ、Microsoft Defender for Endpointにアラート (トースト通知) を表示するために使用されます。 クラウド ブロック レベルが高いデバイスでは、<ASR ルール、ルール状態、>の組み合わせに対してアラートが生成されません
+- 組み合わせの \<ASR Rule, Rule State\> ASR ルールは、高クラウド ブロック レベルのデバイスに対してのみ、Microsoft Defender for Endpointにアラート (トースト通知) を表示するために使用されます。 クラウド ブロック レベルが高くないデバイスは、<ASR ルール、ルール状態、>の組み合わせに対してアラートを生成しません
 - EDRアラートは、指定された状態の ASR ルールに対して生成されますが、クラウド ブロック レベルの高いデバイスに対してのみ生成されます。
 
 | ルール名: | ルールの状態: | EDRでアラートを生成しますか? <br> (はい&nbsp;\|&nbsp;いいえ) | トースト通知を生成しますか? <br> (はい&nbsp;\|&nbsp;いいえ) |
@@ -142,7 +140,7 @@ ms.locfileid: "65838871"
 |[Office マクロからの Win32 API 呼び出しをブロックする](#block-win32-api-calls-from-office-macros) |   | N | Y |
 |[ランサムウェアに対する高度な保護を使用する](#use-advanced-protection-against-ransomware) | 監査&nbsp;\|&nbsp;ブロック | Y \| Y <br> 高クラウド ブロック レベルのデバイスが必要です  | N \| Y <br> 高クラウド ブロック レベルのデバイスが必要です |
   
-## <a name="asr-rules-and-guids-matrix"></a>ASR の規則と GUID マトリックス
+## <a name="asr-rule-to-guid-matrix"></a>ASR 規則から GUID マトリックスへ
 
 | [ルール名] | ルール GUID |
 |:-----|:-----|
@@ -165,16 +163,16 @@ ms.locfileid: "65838871"
 
 ## <a name="asr-rule-modes"></a>ASR ルール モード
 
-- **未構成** または **無効**: これは、ASR 規則が有効になっていないか無効になっている状態です。 この状態のコードは 0 です。
-- **ブロック**: これは、ASR 規則が有効になっている状態です。 この状態のコードは 1 です。
-- **監査**: これは、ASR 規則が展開される組織または環境に対する影響を与える動作について評価される状態です。 この状態のコードは 2 です。
-- **警告** これは、ASR 規則が有効になっている状態であり、エンド ユーザーに通知を表示しますが、エンド ユーザーがブロックをバイパスすることを許可します。 この状態のコードは 6 です。
+- **未構成** または **無効**: ASR 規則が有効になっていないか、無効になっている状態。 この状態のコードは 0 です。
+- **ブロック**: ASR 規則が有効になっている状態。 この状態のコードは 1 です。
+- **監査**: ASR ルールが、組織または環境に対して有効になっている場合の効果について評価される状態 (ブロックまたは警告に設定)。 この状態のコードは 2 です。
+- **警告** ASR 規則が有効になっていて、エンド ユーザーに通知を表示する状態ですが、エンド ユーザーはブロックをバイパスできます。 この状態のコードは 6 です。
 
 _警告モード_ は、危険な可能性があるアクションについてユーザーに警告するブロック モードの種類です。 ユーザーは、ブロック警告メッセージをバイパスし、基になるアクションを許可することを選択できます。 ユーザーは **、[OK] を** 選択してブロックを適用するか、ブロックの時点で生成されるエンド ユーザーポップアップ トースト通知を使用してバイパス オプション [ **ブロック** 解除] を選択できます。 警告のブロックが解除された後は、次回警告メッセージが発生するまで操作が許可されます。この時点で、エンド ユーザーはアクションを再評価する必要があります。
 
 [許可] ボタンをクリックすると、ブロックは 24 時間非表示になります。 24 時間後、エンド ユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809 以降) デバイスでのみサポートされます。 バイパスが古いバージョンのデバイスの ASR ルールに割り当てられている場合、ルールはブロック モードになります。
 
-また、AttackSurfaceReductionRules_Actionsを "警告" として指定するだけで、PowerShell を使用して警告モードでルールを設定することもできます。 次に例を示します。
+また、AttackSurfaceReductionRules_Actionsを "警告" として指定することで、PowerShell を使用して警告モードでルールを設定することもできます。 例として以下のようなものがあります。
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -217,7 +215,7 @@ Dependencies: none provided by engineering
 
 このルールは、Adobe Reader によるプロセスの作成をブロックすることで、攻撃を防ぎます。
 
-ソーシャル エンジニアリングや悪用を通じて、マルウェアはペイロードをダウンロードして起動し、Adobe Reader から抜け出すことができます。 Adobe Reader によって子プロセスが生成されるのをブロックすることで、それをベクターとして使用しようとするマルウェアが拡散するのを防ぎます。
+マルウェアは、ペイロードをダウンロードして起動し、ソーシャル エンジニアリングや悪用を通じて Adobe Reader から抜け出すことができます。 Adobe Reader によって子プロセスが生成されるのをブロックすることで、Adobe Reader を攻撃ベクトルとして使用しようとしているマルウェアが拡散するのを防ぎます。
 
 Intune名:`Process creation from Adobe Reader (beta)`
 
@@ -255,7 +253,7 @@ GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 
 この規則は、ローカル セキュリティ機関サブシステム サービス (LSASS) をロックダウンすることで、資格情報の盗難を防ぐのに役立ちます。
 
-LSASS は、Windows コンピューターにサインインするユーザーを認証します。 Windowsの Microsoft Defender Credential Guard では、通常、LSASS から資格情報を抽出する試みを防ぎます。 ただし、一部の組織では、カスタム スマートカード ドライバーまたはローカル セキュリティ機関 (LSA) に読み込まれる他のプログラムとの互換性の問題により、すべてのコンピューターで Credential Guard を有効にできません。 このような場合、攻撃者は Mimikatz などのハッキング ツールを使用して、LSASS からクリアテキスト パスワードと NTLM ハッシュをスクレーピングできます。
+LSASS は、Windows コンピューターにサインインするユーザーを認証します。 Windowsの Microsoft Defender Credential Guard では、通常、LSASS から資格情報を抽出する試みを防ぎます。 一部の組織では、カスタム スマートカード ドライバーやローカル セキュリティ機関 (LSA) に読み込まれるその他のプログラムとの互換性の問題により、すべてのコンピューターで Credential Guard を有効にできません。 このような場合、攻撃者は Mimikatz などのツールを使用して、LSASS からクリアテキスト パスワードと NTLM ハッシュをスクレーピングできます。
 
 > [!NOTE]
 > 一部のアプリでは、実行中のすべてのプロセスがコードによって列挙され、完全なアクセス許可で開こうとします。 このルールは、アプリのプロセスオープン アクションを拒否し、詳細をセキュリティ イベント ログに記録します。 このルールでは、多くのノイズが発生する可能性があります。 LSASS を列挙するだけで機能に実質的な影響がないアプリがある場合は、除外リストに追加する必要はありません。 このイベント ログ エントリ自体は、必ずしも悪意のある脅威を示すわけではありません。
@@ -334,7 +332,7 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 > [!IMPORTANT]
 > PowerShell スクリプトは、過去に発生した大規模な FP の問題により、"難読化される可能性があるスクリプトの実行をブロックする" 規則から一時的に除外されています。
 
-スクリプトの難読化は、マルウェア作成者と正当なアプリケーションの両方が、知的財産を隠したり、スクリプトの読み込み時間を短縮したりするために使用する一般的な手法です。 また、マルウェアの作成者は難読化を使用して、悪意のあるコードの読み取りを困難にし、人間やセキュリティ ソフトウェアによる綿密な調査を防ぎます。
+スクリプトの難読化は、マルウェア作成者と正当なアプリケーションの両方が、知的財産を隠したり、スクリプトの読み込み時間を短縮したりするために使用する一般的な手法です。 マルウェアの作成者は難読化を使用して、悪意のあるコードの読み取りを困難にします。これにより、人間やセキュリティ ソフトウェアによる精査が妨げられています。
 
 > [!IMPORTANT]
 > 誤検知の数が多いため、このルールは現在 PowerShell スクリプトを検出しません。これは一時的な解決策です。 ルールが更新され、すぐに PowerShell スクリプトの再指定が開始されます。
@@ -459,7 +457,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする
 
-このルールは、 [PsExec](/sysinternals/downloads/psexec) と [WMI](/windows/win32/wmisdk/about-wmi) を介して作成されたプロセスの実行をブロックします。 PsExec と WMI は両方ともリモートでコードを実行できるため、コマンドと制御の目的でこの機能をマルウェアが悪用したり、組織のネットワーク全体に感染を広げたりするリスクがあります。
+このルールは、 [PsExec](/sysinternals/downloads/psexec) と [WMI](/windows/win32/wmisdk/about-wmi) を介して作成されたプロセスの実行をブロックします。 PsExec と WMI の両方で、コードをリモートで実行できます。 コマンドと制御の目的で PsExec と WMI の機能をマルウェアが悪用したり、組織のネットワーク全体に感染を広げたりするリスクがあります。
 
 > [!WARNING]
 > このルールは、[Intune](/intune)または別の MDM ソリューションを使用してデバイスを管理している場合にのみ使用します。 この規則は、[Configuration Manager](/configmgr) クライアントが正しく機能するために使用する WMI コマンドをブロックするため、Microsoft Endpoint Configuration Managerを使用した管理と互換性がありません。
@@ -480,6 +478,9 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする
 
 この規則を使用すると、管理者は、SD カードを含む USB リムーバブル ドライブから署名されていない実行可能ファイルまたは信頼されていない実行可能ファイルを実行できないようにすることができます。 ブロックされたファイルの種類には、実行可能ファイル (.exe、.dll、.scr など) が含まれます。
+
+> [!IMPORTANT]
+> USB からディスク ドライブにコピーされたファイルは、ディスク ドライブで実行される場合といつ実行されるかに関して、この規則によってブロックされます。
 
 Intune名:`Untrusted and unsigned processes that run from USB`
 
@@ -522,7 +523,7 @@ GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 
 ### <a name="use-advanced-protection-against-ransomware"></a>ランサムウェアに対する高度な保護を使用する
 
-このルールは、ランサムウェアに対する保護の追加レイヤーを提供します。 クライアントヒューリスティックとクラウド ヒューリスティックの両方を使用して、ファイルがランサムウェアに似ているかどうかを判断します。 この規則では、次の 1 つ以上の特性を持つファイルはブロックされません。
+このルールは、ランサムウェアに対する保護の追加レイヤーを提供します。 クライアントヒューリスティックとクラウド ヒューリスティックの両方を使用して、ファイルがランサムウェアに似ているかどうかを判断します。 このルールでは、次の特性の 1 つ以上を持つファイルはブロックされません。
 
 - このファイルは、Microsoft クラウドで既に無傷であることが判明しています。
 - ファイルは有効な署名済みファイルです。

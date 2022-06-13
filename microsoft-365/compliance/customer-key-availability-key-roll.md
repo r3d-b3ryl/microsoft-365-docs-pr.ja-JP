@@ -12,14 +12,16 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: カスタマー キーで使用される Azure Key Vaultに格納されている顧客ルート キーをロールする方法について説明します。 サービスには、Exchange Online、Skype for Business、SharePoint Online、OneDrive for Business、Teams ファイルが含まれます。
-ms.openlocfilehash: 81d82f49c056f5a6ec9b8731b549aee68d5d658b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: f34e79ee772df1a88058625c0b2df5f62413bcfd
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64761353"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017336"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>カスタマー キーまたは可用性キーをローリングまたはローテーションする
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!CAUTION]
 > カスタマー キーで使用する暗号化キーは、セキュリティ要件またはコンプライアンス要件でキーをロールする必要がある場合にのみロールします。 また、ポリシーに関連付けられているキーや関連付けられているキーは削除しないでください。 キーをロールすると、前のキーで暗号化されたコンテンツが表示されます。 たとえば、アクティブなメールボックスは頻繁に再暗号化されますが、非アクティブ、切断、無効のメールボックスは、前のキーで暗号化される場合があります。 SharePoint Online では、復元と回復の目的でコンテンツのバックアップが実行されるため、古いキーを使用してアーカイブされたコンテンツが引き続き存在する可能性があります。
@@ -35,7 +37,7 @@ Microsoft は、可用性キーの直接制御を顧客に公開しません。 
 
 キーをロールする場合は、既存のキーの新しいバージョンを要求します。 既存のキーの新しいバージョンを要求するには、最初にキーの作成に使用したのと同じ構文で、同じコマンドレット [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) を使用します。 データ暗号化ポリシー (DEP) に関連付けられているキーのローリングが完了したら、別のコマンドレットを実行して、カスタマー キーが新しいキーの使用を開始することを確認します。 各 Azure Key Vault (AKV) でこの手順を実行します。
 
-例:
+例として以下のようなものがあります。
 
 1. Azure PowerShellを使用して Azure サブスクリプションにサインインします。 手順については、「[Azure PowerShellでサインイン](/powershell/azure/authenticate-azureps)する」を参照してください。
 
@@ -53,7 +55,7 @@ Microsoft は、可用性キーの直接制御を顧客に公開しません。 
 
 新しいキーを使用して複数のワークロードを暗号化するように Customer Key に指示するには、次の手順を実行します。
 
-1. ローカル コンピューターで、組織内のグローバル管理者またはコンプライアンス管理者のアクセス許可を持つ職場または学校アカウントを使用[して、Windows PowerShell ウィンドウで powerShell Exchange Onlineに接続](/powershell/exchange/connect-to-exchange-online-powershell)します。
+1. ローカル コンピューターで、組織内のグローバル管理者またはコンプライアンス管理者のアクセス許可を持つ職場または学校アカウントを使用[して、Exchange Online PowerShell に接続](/powershell/exchange/connect-to-exchange-online-powershell)します。
 
 2. Set-M365DataAtRestEncryptionPolicy コマンドレットを実行します。
   
@@ -103,10 +105,10 @@ SharePoint Online では、一度に 1 つのキーのみをロールできま�
 
 ## <a name="related-articles"></a>関連記事
 
-- [Office 365のカスタマー キーを使用したサービス暗号化](customer-key-overview.md)
+- [カスタマー キーによるサービスの暗号化](customer-key-overview.md)
 
-- [Office 365 のカスタマー キーを設定する](customer-key-set-up.md)
+- [カスタマー キーを設定する](customer-key-set-up.md)
 
-- [Office 365 のカスタマー キーを管理する](customer-key-manage.md)
+- [カスタマー キーを管理する](customer-key-manage.md)
 
 - [可用性キーの詳細](customer-key-availability-key-understand.md)

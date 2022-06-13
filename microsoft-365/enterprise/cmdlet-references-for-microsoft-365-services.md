@@ -16,12 +16,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 3a1ea1a6-edbd-4922-9ad3-0b075f7f9009
 description: Azure AD、Exchange Online、SharePoint Online、Skype for Business Online の Microsoft 365 PowerShell コマンドレット リファレンスに関するトピックをご覧ください。
-ms.openlocfilehash: 96c03bed9275d3e48164ac5ac5ba57d78b36c634
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 97372031f928e7862145945c72e522510f7cd30e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101383"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015442"
 ---
 # <a name="cmdlet-references-for-microsoft-365-services"></a>Microsoft 365 サービスのコマンドレットリファレンス
 
@@ -61,11 +61,11 @@ Skype for Business Online のコマンドレット リファレンス トピッ�
 
 Skype for Business Online PowerShell の接続手順については、「[PowerShell を使用して Skype for Business Online を管理する](manage-skype-for-business-online-with-microsoft-365-powershell.md)」を参照してください。
 
-## <a name="security--compliance-center-powershell-cmdlets"></a>セキュリティ/コンプライアンス センター PowerShell コマンドレット
+## <a name="security--compliance-powershell-cmdlets"></a>セキュリティ & コンプライアンス PowerShell コマンドレット
 
 セキュリティ/コンプライアンス センターのコマンドレット リファレンスは、「[セキュリティ/コンプライアンス PowerShell ドキュメント](/powershell/exchange/scc-powershell)」の「リファレンス」セクションにあります。
 
-セキュリティ/コンプライアンス センター PowerShell の接続手順については、「[セキュリティ/コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+セキュリティ & コンプライアンス PowerShell の接続手順については、「[セキュリティ & コンプライアンス PowerShell のConnect](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 

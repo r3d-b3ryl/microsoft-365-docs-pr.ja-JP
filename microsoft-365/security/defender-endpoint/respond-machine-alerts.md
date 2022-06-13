@@ -14,20 +14,23 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f290af2808db1aa56f39593ec4f9fac68c0f76d8
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: c104b7fefae6ad02c9fb46b7d21522c21a2f6895
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438819"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014604"
 ---
 # <a name="take-response-actions-on-a-device"></a>デバイスの対応措置を講じる
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint プラン 1 と 2](defender-endpoint-plan-1-2.md)
 - [Microsoft Defender for Business](/microsoft-365/security/defender-business/mdb-overview)
+
+[!INCLUDE [Prerelease information](../../includes/prerelease.md)]
 
 検出された攻撃に迅速に対応するには、デバイスを分離するか、調査パッケージを収集します。 デバイスでアクションを実行した後、アクション センターでアクティビティの詳細を確認できます。
 
@@ -40,6 +43,7 @@ ms.locfileid: "65438819"
 - ウイルス対策スキャンの実行
 - アプリの実行を制限する
 - デバイスの分離
+- デバイスを含む
 - 脅威のエキスパートに相談する
 - アクション センター
 
@@ -89,8 +93,7 @@ ms.locfileid: "65438819"
 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 調査パッケージを収集することで、デバイスの現在の状態を特定し、攻撃者が使用するツールと手法をさらに理解できます。
 
 > [!IMPORTANT]
->
->これらのアクションは現在、macOSと Linux ではサポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答[を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
+> これらのアクションは、macOSまたは Linux を実行しているデバイスでは現在サポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答[を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
 
 パッケージ (Zip ファイル) をダウンロードし、デバイスで発生したイベントを調査するには
 
@@ -153,8 +156,8 @@ ms.locfileid: "65438819"
 
 悪意のあるプロセスを停止して攻撃を封じ込めることに加えて、デバイスをロックダウンし、悪意のある可能性のあるプログラムの後続の試行が実行されないようにすることもできます。
 
->[!IMPORTANT]
-> - このアクションは、Windows 10、バージョン 1709 以降、Windows 11、Windows Server 2016のデバイスで使用できます。 
+> [!IMPORTANT]
+> - このアクションは、Windows 10 バージョン 1709 以降、Windows 11、および Windows Server 2019 以降のデバイスで使用できます。 
 > - この機能は、組織でMicrosoft Defender ウイルス対策を使用している場合に使用できます。
 > - このアクションは、Windows Defenderアプリケーション制御コード整合性ポリシーの形式と署名の要件を満たす必要があります。 詳細については、「 [コード整合性ポリシーの形式と署名](/windows/security/threat-protection/windows-defender-application-control/use-code-signing-to-simplify-application-control-for-classic-windows-applications)」を参照してください。
 
@@ -173,17 +176,17 @@ ms.locfileid: "65438819"
 
 :::image type="content" source="images/atp-app-restriction.png" alt-text="アプリケーション制限メッセージ" lightbox="images/atp-app-restriction.png":::
 
->[!NOTE]
->通知は、Windows Server 2016および Windows Server 2012 R2 では使用できません。
+> [!NOTE]
+> 通知は、Windows Server 2016および Windows Server 2012 R2 では使用できません。
 
 ## <a name="isolate-devices-from-the-network"></a>ネットワークからデバイスを分離する
 
 攻撃の重大度とデバイスの機密性に応じて、デバイスをネットワークから分離することもできます。 このアクションは、攻撃者が侵害されたデバイスを制御し、データ流出や横移動などのさらなるアクティビティを実行するのを防ぐのに役立ちます。
 
 > [!IMPORTANT]
-> - ネットワークからのデバイスの分離は、現在、macOSおよび Linux ではサポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答 [を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
-> - Windows 10 バージョン 1703、Windows 11、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 上のデバイスでは、完全な分離を使用できます。
-> - 選択的分離は、Windows 10、バージョン 1709 以降、およびWindows 11上のデバイスで使用できます。
+> - ネットワークからデバイスを分離することは、現在、macOSまたは Linux を実行しているデバイスではサポートされていません。 ライブ応答を使用してアクションを実行します。 ライブ応答の詳細については、「ライブ応答 [を使用してデバイス上のエンティティを調査する」を](live-response.md)参照してください。
+> - Windows 11、Windows 10、バージョン 1703 以降、Windows Server 2022、Windows Server 2019、Windows Server 2016を実行しているデバイスでは、完全な分離を使用できます。
+> - 選択的分離は、Windows 10、バージョン 1709 以降、およびWindows 11を実行しているデバイスで使用できます。
 > - デバイスを分離する場合は、特定のプロセスと宛先のみが許可されます。 そのため、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 クラウド ベースの保護関連トラフィックをMicrosoft Defender for EndpointおよびMicrosoft Defender ウイルス対策するために、分割トンネリング VPN を使用することをお勧めします。
 
 このデバイス分離機能は、侵害されたデバイスをネットワークから切断すると同時に、Defender for Endpoint サービスへの接続を保持します。デバイスの監視は続行されます。
@@ -205,6 +208,49 @@ Windows 10バージョン 1709 以降では、ネットワーク分離レベル�
 デバイスが分離されると、次の通知が表示され、デバイスがネットワークから分離されていることをユーザーに通知します。
 
 :::image type="content" source="images/atp-notification-isolate.png" alt-text="ネットワーク接続メッセージなし" lightbox="images/atp-notification-isolate.png":::
+
+## <a name="contain-devices-from-the-network"></a>ネットワークからデバイスを格納する
+
+侵害された、または侵害された可能性のある非管理対象デバイスを特定した場合は、そのデバイスをネットワークから含めることができます。 デバイスを含めると、オンボードされたデバイスMicrosoft Defender for Endpoint、そのデバイスとの送受信通信がブロックされます。 このアクションは、セキュリティ運用アナリストが侵害されたデバイスの脅威を検出、識別、修復するときに、近隣のデバイスが侵害されるのを防ぐのに役立ちます。
+
+> [!NOTE]
+> "包含" デバイスとの送受信通信のブロックは、オンボードされたMicrosoft Defender for Endpoint Windows 10およびWindows Server 2019 以降のデバイスでサポートされています。
+
+### <a name="how-to-contain-a-device"></a>デバイスを含める方法
+
+1. **[デバイス インベントリ**] ページに移動し、含めるデバイスを選択します。
+
+2. デバイス ポップアップの [アクション] メニューから [デバイスを **含む** ] を選択します。
+
+:::image type="content" alt-text="デバイスが含まれているポップアップ メッセージのスクリーンショット。" source="../../media/defender-endpoint/contain_device.png" lightbox="../../media/defender-endpoint/contain_device.png":::
+
+3. デバイスを含むポップアップで、コメントを入力し、[ **確認**] を選択します。
+
+:::image type="content" alt-text="デバイスを含むメニュー項目のスクリーンショット。" source="../../media/defender-endpoint/contain_device_popup.png" lightbox="../../media/defender-endpoint/contain_device_popup.png":::
+
+### <a name="contain-a-device-from-the-device-page"></a>デバイス ページからデバイスを含む
+
+デバイスは、アクション バーから [デバイスを含む] を選択して **、デバイス** ページから含めることもできます。
+
+:::image type="content" alt-text="デバイス ページの [デバイスを含む] メニュー項目のスクリーンショット。" source="../../media/defender-endpoint/contain_device_page.png" lightbox="../../media/defender-endpoint/contain_device_page.png":::
+
+> [!NOTE]
+> 新しく含まれるデバイスの詳細がオンボードされたデバイスに到達するまでに最大 5 分Microsoft Defender for Endpointかかることがあります。
+
+> [!IMPORTANT]
+> - 包含デバイスが IP アドレスを変更した場合、オンボードされているすべてのデバイスMicrosoft Defender for Endpointこれを認識し、新しい IP アドレスとの通信のブロックを開始します。 元の IP アドレスはブロックされなくなります (これらの変更を確認するには、最大 5 分かかる場合があります)。  
+> - 包含デバイスの IP がネットワーク上の別のデバイスによって使用されている場合は、デバイスの格納中に警告が表示され、高度なハンティングへのリンクが表示されます (事前設定されたクエリを使用)。 これにより、同じ IP を使用して他のデバイスに可視性が提供され、デバイスの格納を続行する場合に意識的な決定を下すのに役立ちます。
+> - 包含デバイスがネットワーク デバイスである場合、警告が表示され、ネットワーク接続の問題が発生する可能性があることを示すメッセージが表示されます (たとえば、既定のゲートウェイとして機能するルーターが含まれています)。 この時点で、デバイスを含めるかどうかを選択できます。
+
+デバイスを含めた後、動作が期待どおりにない場合は、Defender for Endpoint オンボード デバイスで基本フィルター エンジン (BFE) サービスが有効になっていることを確認します。
+
+### <a name="stop-containing-a-device"></a>デバイスの格納を停止する
+
+デバイスの格納はいつでも停止できます。
+
+1. **デバイス インベントリ** からデバイスを選択するか、デバイス ページを開きます。
+
+2. アクション メニュー **から [包含からのリリース** ] を選択します。 この操作により、このデバイスのネットワークへの接続が復元されます。
 
 ## <a name="consult-a-threat-expert"></a>脅威のエキスパートに相談する
 

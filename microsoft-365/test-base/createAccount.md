@@ -1,9 +1,9 @@
 ---
-title: 新しい Test Base アカウントを作成する
+title: テスト ベース アカウントの作成
 description: Test Base で新しいアカウントを作成する方法の詳細
 search.appverid: MET150
-author: mansipatel-usl
-ms.author: rshastri
+author: Tinacyt
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
@@ -14,47 +14,73 @@ ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: mapatel
 f1.keywords: NOCSH
-ms.openlocfilehash: 2ead5a65fa21bcfbe52bc9426c3adcf3eb00fd0d
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: bf1830e1f166a3ecef1c7d50cf1f54f4c5b39dec
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923602"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015936"
 ---
-# <a name="step-1-create-a-test-base-account"></a>手順 1: Test Base アカウントを作成する
+# <a name="creating-a-test-base-account"></a>テスト ベース アカウントの作成
 
-Azure サブスクリプションをお持ちでない場合は、開始する前に [無料アカウント](https://azure.microsoft.com/free/) を作成してください。
+**Test Base** アカウントを作成するには、次の手順に従います。 
 
-## <a name="enter-details-for-test-base-account"></a>テスト基本アカウントの詳細を入力する
+> [!IMPORTANT]
+> **Test Base** アカウントに登録するには、サブスクリプションが必要です。 Azure サブスクリプションをお持ちでない場合は、[Azure ホーム](https://ms.portal.azure.com/#home) ページの **サブスクリプション** を参照して、サブスクリプションを作成する方法について説明します。 
+
+## <a name="to-create-a-test-base-account"></a>Test Base アカウントを作成するには
  
-1. Azure portal で **"Test Base" を** 検索します。
+1. [Azure portal](https://ms.portal.azure.com/#home)のホーム ページで、Azure Marketplace で **テスト ベースのMicrosoft 365** を検索して、**Test Base** アカウントを作成するためのコントロールを表示します。 
 
-![Test Base Account 検索イメージを作成します。](Media/CreateTestAccount1.png)
+   > [!div class="mx-imgBorder"]
+   > [![テスト ベース](Media/creatingaccount01-search.png)の検索 ](Media/creatingaccount01-search.png#lightbox)
 
-2. **[作成] を** クリックして、Test Base アカウントを作成します。
+2. [**テスト ベースのMicrosoft 365**] ページの [コントロール] フィールドで、次のように [**作成**] ボタンを選択して、[**テスト ベース アカウントの作成**] ページを開きます。 
 
-![[追加] をクリックしてアカウントを作成します。](Media/CreateTestAccount2.png)
+   > [!div class="mx-imgBorder"]
+   > [![[テスト ベース] ページ](Media/creatingaccount02-testbase.png) ](Media/creatingaccount02-testbase.png#lightbox)
 
-3.  チェック ボックスを ```Terms of Use``` オンにして ```Terms of Use```、.
+3. [ **テスト ベース アカウントの作成** ] ページで、[ **テスト ベース** アカウントの作成] ページの次の必須入力フィールドに情報を追加します。 
 
-![使用条件を確認します。](Media/CreateTestAccount3.png)
+   - **[サブスクリプション]** - ドロップダウン リストから、Azure サブスクリプション ID を見つけて選択します。 
+   - **[リソース グループ**] - [新規作成 **] を選択** し、表示される [ **名前** 入力] ボックスに選択した名前を指定して、新しいリソース グループを作成します。 完了したら **、[OK] を選択します** 。 **リソース グループ** が既にある場合は、ドロップダウン リストでその名前を見つけて選択します。 
+   - **[アカウント****の詳細**] で、次の図に示すように、入力テキスト フィールドに入力して **、Test Base** アカウントの選択した名前を指定します。 
 
-4.  次の要件に従って、正しい情報を入力します。 
-    -   サブスクリプション: リソース グループ
-    -   インスタンスの詳細: 名前。
+   > [!NOTE]
+   > すべての必須フィールド (*)に入力を指定する必要があります。 
 
-**現在、テスト ベースでは Standard 価格レベルのみがサポートされています。**
+   > [!div class="mx-imgBorder"]
+   > [![基本情報](Media/creatingaccount03-basics.png) ](Media/creatingaccount03-basics.png#lightbox)
 
-![サブスクリプション、リソース グループを選択し、詳細を入力します。](Media/CreateTestAccount4.png)
+   > [!NOTE]
+   > 2022 年 4 月の時点で、 **Test Base** は **Standard** 価格レベルのみをサポートしています。 **価格レベル** は、Azure サブスクリプションに対して課金されるリソースと時間単位のサービス コストを決定します。 
 
-5.  最後に、クリックして ```Review + Create``` 、新しく作成したアカウントを検証して有効にします。
+   > [!div class="mx-imgBorder"]
+   > ![価格レベル](Media/creatingaccount04-pricing-tier.png)
 
-## <a name="next-steps"></a>次の手順
+4. **利用規約** をお読みください。 使用条件が許容される場合は、チェック ボックスをオンにして、使用条件を読んで同意したことを確認します。 
 
-次の記事に進み、手順 2: **パッケージのアップロード方法について説明します。**
-> [!div class="nextstepaction"]
-> [次の手順](uploadapplication.md)
+   > [!div class="mx-imgBorder"]
+   > ![利用規約](Media/creatingaccount05-terms.png)
 
-<!---
-Add button for next page
--->
+5. [ **テスト ベース アカウントの作成** ] ページの下部にある [ **確認と作成** ] を選択して、指定した入力データを検証します。 
+
+   検証プロセスが成功した場合は、[ **テスト ベース アカウントの作成** ] ページで入力データの構成を確認できます。 
+
+   > [!div class="mx-imgBorder"]
+   > [![作成を確認する](Media/creatingaccount06-review.png) ](Media/creatingaccount06-review.png#lightbox)
+
+6. 前の [**テスト ベース アカウントの作成**] ページの下部のセクターに表示されている [**作成**] ボタンを選択します。 
+
+   > [!div class="mx-imgBorder"]
+   > ![[作成] ボタン](Media/creatingaccount07-create.png)
+
+7. ユーザー **の [デプロイ]** ページで、[ **リソースに移動** ] を選択して新しい **テスト ベース** アカウントの概要ページを開き、 **テスト ベース** の探索、構成、および体験を開始します。 
+
+   > [!div class="mx-imgBorder"]
+   > [![完全な作成](Media/creatingaccount08-complete.png) ](Media/creatingaccount08-complete.png#lightbox)
+
+
+
+
+

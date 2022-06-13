@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) でスプーフィング インテリジェンスの分析情報について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fc09bb008586b26649e31f409fa3be8114c6d2b6
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 9455ddf17d26e33ed5b2669a27ee93cf5f56b8f9
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772108"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016056"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>詳細については、「EOP のスプーフィング インテリジェンス分析」を参照してください。
 
@@ -115,7 +115,6 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 - **インフラストラクチャの送信**: _インフラストラクチャ_ とも呼ばれます。 送信インフラストラクチャは、次のいずれかの値になります。
   - 送信元電子メール サーバーの IP アドレスの逆引き DNS 参照 (PTR レコード) で見つかったドメイン。
   - 送信元 IP アドレスに PTR レコードがない場合、送信インフラストラクチャは /24 (たとえば、192.168.100.100/24) として \<source IP\>識別されます。
-  - 検証済みの DKIM ドメイン。
 - **メッセージ数**: 過去 7 日以内に、スプーフィングされたドメイン _と_ 組織への送信インフラストラクチャの組み合わせからのメッセージの数。
 - **最終更新日**: スプーフィングされたドメインを含む送信インフラストラクチャからメッセージを受信した最後の日付。
 - **スプーフィングの種類**: 次のいずれかの値。

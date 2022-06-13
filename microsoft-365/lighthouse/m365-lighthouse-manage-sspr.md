@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: ragovind
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、セルフサービスのパスワード リセットを管理する方法について説明します。
-ms.openlocfilehash: 4d618eb80dfd4a37ad5548de997b3d551bcbbf85
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 0af624e93ae9321834e147f829a87f09c36dedf7
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022363"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017678"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでセルフサービスパスワードリセットを管理する
 
@@ -51,9 +52,9 @@ Microsoft 365 Lighthouseでは、パートナーはAzure Active Directory (Azure
 
 3. テナントの一覧からテナントを選択し、詳細ウィンドウを開きます。
 
-4. Azure Active Directory (Azure AD) に移動するには **、Azure Active Directoryで [SSPR 設定の編集]** を選択します。
+4. **Azure Active Directoryで [SSPR 設定の編集]** を選択して、Azure Active Directory (Azure AD) に移動します。
 
-5. Azure ADで、すべてのユーザーまたは選択したユーザーに対して SSPR を有効にします。 詳細については、「[チュートリアル: ユーザーがセルフサービス パスワード リセットを使用してアカウントのロックを解除したり、パスワードをリセットしたりAzure Active Directoryできるようにする](/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
+5. Azure AD で、すべてのユーザーまたは選択したユーザーに対して SSPR を有効にします。 詳細については、「[チュートリアル: ユーザーがセルフサービス パスワード リセットを使用してアカウントのロックを解除したり、パスワードをリセットしたりAzure Active Directoryできるようにする](/azure/active-directory/authentication/tutorial-enable-sspr)」を参照してください。
 
 ## <a name="notify-users-to-register-for-sspr"></a>SSPR に登録するようにユーザーに通知する
 
@@ -75,5 +76,5 @@ Lighthouse によって既定の電子メール クライアントが開き、SS
 
 [Azure Active Directoryセルフサービスパスワード リセットの展開を計画する](/azure/active-directory/authentication/howto-sspr-deployment) (記事)\
 [チュートリアル: ユーザーが自分のアカウントのロックを解除したり、Azure Active Directoryセルフサービスパスワード リセット (記事)\ を使用してパスワードをリセットしたりできるようにします](/azure/active-directory/authentication/tutorial-enable-sspr)。
-[Azure ADで SSPR を有効にして構成する方法](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (ビデオ)\
+[Azure AD で SSPR を有効にして構成する方法](https://www.youtube.com/watch?v=rA8TvhNcCvQ) (ビデオ)\
 [Microsoft 365 Lighthouseで多要素認証を管理する](m365-lighthouse-manage-mfa.md) (記事)

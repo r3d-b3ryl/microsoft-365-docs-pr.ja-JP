@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: データプライバシー規制、関連するシナリオ、準備状況、およびMicrosoft 365環境内の機密情報の種類を決定します。
-ms.openlocfilehash: e2d87599315e7bb43b289d74b5f192b29aecd965
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64973476"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66015040"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>データプライバシーリスクを評価し、Microsoft 365を使用して機密アイテムを特定する
 
@@ -200,9 +200,9 @@ Microsoft Purview コンプライアンス ポータルには、100 を超える
 
 従業員 ID のカスタム形式や、組み込みの機密情報の種類でまだカバーされていないその他の個人情報など、組織固有または地域の種類の機密項目を識別して保護する必要がある場合は、次の方法でカスタムの機密情報の種類を作成できます。
 
-- PowerShell
+- セキュリティ/コンプライアンス PowerShell
 - 完全なデータ一致を持つカスタム ルール (EDM)
-- コンプライアンス [スコアとコンプライアンス マネージャーの使用](information-protection-deploy-compliance.md)に関する記事で強調表示されているコンプライアンス センター管理 UI を使用する
+- コンプライアンス [スコアとコンプライアンス マネージャーの使用](information-protection-deploy-compliance.md)に関する記事で強調表示されているように、Microsoft 365 Purview コンプライアンス ポータルを使用する
 
 また、既存の組み込みの機密情報の種類をカスタマイズすることもできます。
 
@@ -210,8 +210,8 @@ Microsoft Purview コンプライアンス ポータルには、100 を超える
 
 - [組み込みの機密情報の種類をカスタマイズする](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [機密情報の種類に関する詳細情報](../compliance/sensitive-information-type-learn-about.md)
-- [セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type.md)
-- [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Microsoft 365 Purview コンプライアンス ポータルでカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type.md)
+- [Security & Compliance PowerShell でカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
 
 ### <a name="content-explorer"></a>コンテンツ エクスプローラー

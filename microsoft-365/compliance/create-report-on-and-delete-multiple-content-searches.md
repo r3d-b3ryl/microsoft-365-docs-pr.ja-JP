@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
-description: Security & Compliance Center PowerShell を使用して、検索の作成やレポートの実行などのコンテンツ検索タスクを自動化する方法について説明します。
+description: Security & Compliance PowerShell を使用して、検索の作成やレポートの実行などのコンテンツ検索タスクを自動化する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ef806b9be55b8c39ad26f477d35eb076b22c16b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099281"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018077"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
- 探索検索を迅速に作成およびレポートすることは、多くの場合、基になるデータと検索の豊富さと品質について学習しようとしている場合に、電子情報開示と調査の重要なステップです。 これを支援するために、Security & Compliance Center PowerShell には、時間のかかるコンテンツ検索タスクを自動化するための一連のコマンドレットが用意されています。 これらのスクリプトを使用すると、多数の検索を迅速かつ簡単に作成し、推定検索結果のレポートを実行して、問題のデータの量を判断するのに役立ちます。 スクリプトを使用して、異なるバージョンの検索を作成して、それぞれが生成する結果を比較することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。
+ 探索検索を迅速に作成およびレポートすることは、多くの場合、基になるデータと検索の豊富さと品質について学習しようとしている場合に、電子情報開示と調査の重要なステップです。 これを支援するために、Security & Compliance PowerShell には、時間のかかるコンテンツ検索タスクを自動化するための一連のコマンドレットが用意されています。 これらのスクリプトを使用すると、多数の検索を迅速かつ簡単に作成し、推定検索結果のレポートを実行して、問題のデータの量を判断するのに役立ちます。 スクリプトを使用して、異なるバージョンの検索を作成して、それぞれが生成する結果を比較することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。
 
 ## <a name="before-you-create-a-content-search"></a>コンテンツ検索を作成する前に
 
@@ -77,9 +77,9 @@ ms.locfileid: "65099281"
 
 3. Excel ファイルを CSV ファイルとしてローカル コンピューター上のフォルダーに保存します。 手順 3 で作成したスクリプトでは、この CSV ファイルの情報を使用して検索を作成します。
 
-## <a name="step-2-connect-to-security--compliance-center-powershell"></a>手順 2: セキュリティ/コンプライアンス センターの PowerShell に接続する
+## <a name="step-2-connect-to-security--compliance-powershell"></a>手順 2: セキュリティ & コンプライアンス PowerShell にConnectする
 
-次に、組織のセキュリティ/コンプライアンス センターの PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+次の手順では、組織のセキュリティ & コンプライアンス PowerShell に接続します。 詳細な手順については、「[Security & Compliance PowerShell のConnect」を](/powershell/exchange/connect-to-scc-powershell)参照してください。
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>手順 3: スクリプトを実行して検索を作成して開始する
 

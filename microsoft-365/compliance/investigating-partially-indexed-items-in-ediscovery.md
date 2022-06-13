@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内のExchange、SharePoint、OneDrive for Businessから部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれます) を管理する方法について説明します。
-ms.openlocfilehash: aa9071cfb99219bea6c5c0d640c9e6e4255e316d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 373072ff1b1a893a8de970ccb6eacbdcd14b48d3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419970"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014952"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが付けられたアイテムの調査
 
@@ -125,7 +125,7 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
 
    ```powershell
      write-host "**************************************************"
-     write-host "     Security & Compliance Center PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
+     write-host "     Security & Compliance PowerShell      " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "   eDiscovery Partially Indexed Item Statistics   " -foregroundColor yellow -backgroundcolor darkgreen
      write-host "**************************************************"
      " " 
@@ -166,9 +166,9 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
      }
    ```
 
-2. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
+2. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
 
-3. Security & Compliance Center PowerShell で、手順 1. でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
+3. Security & Compliance PowerShell で、手順 1. でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
 
    ```powershell
    .\PartiallyIndexedItems.ps1

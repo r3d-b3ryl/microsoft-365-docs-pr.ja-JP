@@ -20,18 +20,18 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべての保留に関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 25e201e1b8bef0a4ccc3724a6adab6c095f34d54
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 9db08335ff023172092e7bf8bada7a3976956d29
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318022"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017012"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースで保留に関するレポートを作成するスクリプトを使用する
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Microsoft Purview コンプライアンス ポータルの電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースに関連付けられているすべての保留に関する情報を含むレポートを生成できます。 レポートには、保留が関連付けられているケースの名前、保留に配置されるコンテンツの場所、ホールドがクエリ ベースかどうかなどの情報が含まれています。 保留がない場合は、保留のないケースの一覧を含む追加のレポートがスクリプトによって作成されます。
+この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Microsoft Purview コンプライアンス ポータルで電子情報開示 (Standard) および電子情報開示 (プレミアム) ケースに関連付けられているすべての保留に関する情報を含むレポートを生成できます。 レポートには、保留が関連付けられているケースの名前、保留に配置されるコンテンツの場所、ホールドがクエリ ベースかどうかなどの情報が含まれています。 保留がない場合は、保留のないケースの一覧を含む追加のレポートがスクリプトによって作成されます。
 
 レポートに含まれる情報の詳細については、「 [詳細情報](#more-information) 」セクションを参照してください。
 
@@ -43,13 +43,13 @@ ms.locfileid: "65318022"
 
 - このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>手順 1: セキュリティ/コンプライアンス センターの PowerShell に接続する
+## <a name="step-1-connect-to-security--compliance-powershell"></a>手順 1: セキュリティ & コンプライアンス PowerShell にConnectする
 
-最初の手順は、組織のセキュリティ/コンプライアンス センターの PowerShell に接続することです。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+最初の手順は、組織のセキュリティ & コンプライアンス PowerShell に接続することです。 詳細な手順については、「[Security & Compliance PowerShell のConnect」を](/powershell/exchange/connect-to-scc-powershell)参照してください。
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>手順 2: 電子情報開示ケースに関連付けられている保留をレポートするスクリプトを実行する
 
-Security & Compliance Center PowerShell に接続したら、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。
+Security & Compliance PowerShell に接続したら、次の手順では、組織内の電子情報開示ケースに関する情報を収集するスクリプトを作成して実行します。
 
 1. .ps1 のファイル名サフィックスを使用して、次のテキストをWindows PowerShell スクリプト ファイルに保存します。たとえば、CaseHoldsReport.ps1。
 

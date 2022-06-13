@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview コンプライアンス ポータルで電子情報開示アクセス許可を割り当てる
+title: Microsoft Purview コンプライアンス ポータルで電子情報開示のアクセス許可を割り当てる
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,29 +16,29 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 5b9a067b-9d2e-4aa5-bb33-99d8c0d0b5d7
-description: Microsoft Purview コンプライアンス ポータルを使用して電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
+description: Microsoft Purview コンプライアンス ポータルを使用して、電子情報開示関連のタスクを実行するために必要なアクセス許可を割り当てます。
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 112109d50f0f7e1f11687a325f8756cf2b355e5c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: facd219019aa7ad2bd6325da25a2e4da3db660b1
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419442"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013378"
 ---
 # <a name="assign-ediscovery-permissions-in-the-compliance-portal"></a>コンプライアンス ポータルで電子情報開示アクセス許可を割り当てる
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-ユーザーがMicrosoft Purview コンプライアンス ポータルで[電子情報開示関連のツール](ediscovery.md)のいずれかを使用する場合は、適切なアクセス許可を割り当てる必要があります。 これを行う最も簡単な方法は、コンプライアンス ポータルの **[アクセス許可]** ページで適切な役割グループをユーザーに追加することです。 このトピックでは、電子情報開示タスクを実行するために必要なアクセス許可について説明します。
+Microsoft Purview コンプライアンス ポータルで [電子情報開示関連のツール](ediscovery.md) のいずれかをユーザーに使用させる場合は、適切なアクセス許可を割り当てる必要があります。 これを行う最も簡単な方法は、コンプライアンス ポータルの **[アクセス許可]** ページで適切な役割グループをユーザーに追加することです。 このトピックでは、電子情報開示タスクを実行するために必要なアクセス許可について説明します。
 
 > [!TIP]
 > コンプライアンス ポータルの電子情報開示 (プレミアム) の概要ページで、独自のアクセス許可を表示できます。 アクセス許可を表示するには、少なくとも 1 つのロールが割り当てられている必要があります。
 
 コンプライアンス ポータルのプライマリ電子情報開示関連の役割グループは **、電子情報開示マネージャー** と呼ばれます。 この役割グループには 2 つのサブグループがあります。
   
-- **電子情報開示マネージャー** - 電子情報開示マネージャーは、電子情報開示検索ツールを使用して組織内のコンテンツの場所を検索し、検索結果のプレビューやエクスポートなど、さまざまな検索関連アクションを実行できます。 メンバーは、Microsoft Purview電子情報開示 (Standard) とMicrosoft Purview電子情報開示 (プレミアム) でケースを作成および管理したり、ケースにメンバーを追加および削除したり、ケースホールドを作成したり、ケースに関連付けられた検索を実行したり、ケース データにアクセスしたりすることもできます。 電子情報開示マネージャーがアクセスして管理できるのは、自分で作成したケースだけです。 他の電子情報開示マネージャーが作成したケースの場合、アクセスまたは管理はできません。
+- **電子情報開示マネージャー** - 電子情報開示マネージャーは、電子情報開示検索ツールを使用して組織内のコンテンツの場所を検索し、検索結果のプレビューやエクスポートなど、さまざまな検索関連アクションを実行できます。 メンバーは、Microsoft Purview 電子情報開示 (Standard) と Microsoft Purview 電子情報開示 (プレミアム) でケースを作成および管理したり、ケースにメンバーを追加および削除したり、ケースホールドを作成したり、ケースに関連付けられた検索を実行したり、ケース データにアクセスしたりすることもできます。 電子情報開示マネージャーがアクセスして管理できるのは、自分で作成したケースだけです。 他の電子情報開示マネージャーが作成したケースの場合、アクセスまたは管理はできません。
   
 - **電子情報開示管理者** - 電子情報開示管理者は、電子情報開示マネージャーの役割グループのメンバーであり、電子情報開示マネージャーが実行できるのと同じコンテンツ検索とケース管理関連のタスクを実行できます。 さらに、電子情報開示管理者は、次のことができます。
   
@@ -59,7 +59,7 @@ ms.locfileid: "65419442"
 
 - コンプライアンス ポータルで電子情報開示アクセス許可を割り当てるには、組織管理役割グループのメンバーであるか、ロール管理ロールを割り当てる必要があります。
 
-- セキュリティ/コンプライアンス センターの PowerShell で [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループのメンバーとして、電子情報開示管理者の役割グループに追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「 [詳細](#more-information)」を参照してください。
+- セキュリティ & コンプライアンス PowerShell の [Add-RoleGroupMember](/powershell/module/exchange/Add-RoleGroupMember) コマンドレットを使用して、電子情報開示マネージャーの役割グループの電子情報開示マネージャー サブグループのメンバーとしてメールが有効なセキュリティ グループを追加できます。 ただし、メールが有効なセキュリティ グループを電子情報開示管理者のサブグループに追加することはできません。 詳細については、「 [詳細](#more-information)」を参照してください。
   
 ## <a name="assign-ediscovery-permissions"></a>電子情報開示のアクセス許可を割り当てる
 
@@ -67,9 +67,11 @@ ms.locfileid: "65419442"
   
 2. 左側のウィンドウで、[ **アクセス許可**] を選択します。
 
-3. [ **アクセス許可&ロール]** ページの [ **コンプライアンス センター**] の [ **ロール**] をクリックします。
+3. [ **アクセス許可&ロール]** ページの [ **Microsoft Purview ソリューション**] の [ **ロール**] をクリックします。
 
-4. [ **コンプライアンス センターの役割** ] ページで、[ **電子情報開示マネージャー**] を選択します。
+   このページに直接移動するには、 <https://compliance.microsoft.com/compliancecenterpermissions>.
+
+4. **Microsoft Purview ソリューションの役割グループ** ページで、**電子情報開示マネージャー** を選択します。
   
 5. **[電子情報開示マネージャー]** ポップアップ ページで、割り当てる電子情報開示のアクセス許可に基づいて次のいずれかを実行します。
   
@@ -88,17 +90,16 @@ ms.locfileid: "65419442"
   
 | 役割 | コンプライアンス管理者 | 電子情報開示マネージャー &管理者 | 組織の管理 | レビュー担当者 |
 |:-----|:-----:|:-----:|:-----:|:-----:|
-|ケース管理 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
-|コミュニケーション <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|コンプライアンス検索 <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
-|カストディアン <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Export <br/> | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|Hold <br/>  |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |
-|Preview <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> | <br/> |
-|レビュー <br/>  | <br/> |![チェック マーク。](../media/checkmark.png) <br/> | <br/> |![チェック マーク](../media/checkmark.png) <br/> |
-|RMS の暗号化解除 <br/>  ||![チェック マーク](../media/checkmark.png) <br/> |||
-|検索と消去 <br/> | <br/> | <br/> |![チェック マーク](../media/checkmark.png)<br/> | <br/> |
-||||||
+|ケース管理|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)||
+|コミュニケーション||![チェック マーク。](../media/checkmark.png)|||
+|コンプライアンス検索|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)||
+|カストディアン||![チェック マーク。](../media/checkmark.png)|||
+|Export||![チェック マーク。](../media/checkmark.png)|||
+|Hold|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)||
+|Preview||![チェック マーク。](../media/checkmark.png)|||
+|レビュー||![チェック マーク。](../media/checkmark.png)||![チェック マーク](../media/checkmark.png)|
+|RMS の暗号化解除||![チェック マーク](../media/checkmark.png)|||
+|検索と消去|||![チェック マーク](../media/checkmark.png)||
   
 次のセクションでは、前の表に記載されている電子情報開示に関連する RBAC の各役割について説明します。
 
@@ -106,7 +107,7 @@ ms.locfileid: "65419442"
 
 このロールを使用すると、ユーザーはコンプライアンス ポータルで電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースへのアクセスを作成、編集、削除、および制御できます。 前に説明したように、**Add-eDiscoveryCaseAdmin** コマンドレットを使用してユーザーを電子情報開示管理者にするには、そのユーザーにケース管理の役割が割り当てられている必要があります。
 
-詳細については、以下を参照してください。
+詳しくは、以下を参照してください。
 
 - [電子情報開示 (標準) の使用を開始する](get-started-core-ediscovery.md)
 
@@ -138,7 +139,7 @@ ms.locfileid: "65419442"
 
 この役割では、コンテンツ検索の結果をローカル コンピューターにエクスポートできます。 また、電子情報開示 (プレミアム) で分析用の検索結果を準備することもできます。
 
-検索結果のエクスポートの詳細については、「[Microsoft Purview コンプライアンス ポータルから検索結果をエクスポート](export-search-results.md)する」を参照してください。
+検索結果のエクスポートの詳細については、「 [Microsoft Purview コンプライアンス ポータルから検索結果をエクスポート](export-search-results.md)する」を参照してください。
 
 ### <a name="hold"></a>Hold
 
@@ -198,7 +199,7 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
   - 電子情報開示管理者は、すべての電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースを表示およびアクセスできるため、すべてのケースと関連するコンプライアンス検索を監査および監視できます。 これは、コンプライアンス検索または電子情報開示ケースの誤った使い方の防止に役立ちます。 電子情報開示管理者はコンプライアンス検索の結果に含まれる潜在的な機密情報にアクセスできるため、電子情報開示管理者となるユーザーの数を制限する必要があります。
 
-- **グループを電子情報開示マネージャー役割グループのメンバーとして追加できますか?** 前述のとおり、セキュリティ/コンプライアンス センターの PowerShell で **Add-RoleGroupMember** コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示マネージャーのサブグループのメンバーとして、電子情報開示マネージャーの役割グループに追加できます。 たとえば、次のコマンドを実行して、メールが有効なセキュリティ グループを電子情報開示管理者の役割グループに追加できます。 
+- **グループを電子情報開示マネージャー役割グループのメンバーとして追加できますか?** 前述のように、セキュリティ & コンプライアンス PowerShell の **Add-RoleGroupMember** コマンドレットを使用して、電子情報開示マネージャー役割グループの電子情報開示マネージャー サブグループのメンバーとしてメールが有効なセキュリティ グループを追加できます。 たとえば、次のコマンドを実行して、メールが有効なセキュリティ グループを電子情報開示管理者の役割グループに追加できます。 
 
   ```powershell
   Add-RoleGroupMember "eDiscovery Manager" -Member <name of security group>
@@ -206,6 +207,6 @@ Get-ComplianceCase -RoleGroup "Name of role group" -CaseType AdvancedEdiscovery
 
     Exchange配布グループとMicrosoft 365 グループはサポートされていません。 メールが有効なセキュリティ グループを使用する必要があります。このセキュリティ グループは、PowerShell を実行`New-DistributionGroup -Type Security`してExchange Onlineで作成できます。 メールが有効なセキュリティ グループを作成し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>または[Microsoft 365 管理センター](https://go.microsoft.com/fwlink/p/?linkid=2024339)でメンバーを追加することもできます。 新しいメールが有効なセキュリティ グループを電子情報開示マネージャーの役割グループに追加するには、作成してから最大で 60 分かかる場合があります。
 
-    また、前述のとおり、セキュリティ/コンプライアンス センターの PowerShell で **Add-eDiscoveryCaseAdmin** コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者にすることはできません。 個別のユーザーは、電子情報開示管理者としてのみ追加できます。
+    また、前述のように、Security & Compliance PowerShell の **Add-eDiscoveryCaseAdmin** コマンドレットを使用して、メールが有効なセキュリティ グループを電子情報開示管理者にすることはできません。 個別のユーザーは、電子情報開示管理者としてのみ追加できます。
 
     メールが有効なセキュリティ グループをケースのメンバーとして追加することもできません。

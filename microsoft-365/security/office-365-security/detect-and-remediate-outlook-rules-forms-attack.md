@@ -18,12 +18,12 @@ description: Office 365でOutlookルールとカスタム フォームインジ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 268e50059ad1b128e583a5be383788b545fa6190
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 370fa7cf6e8003954044290b7c19c3d839b0a145
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874098"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016034"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Outlookルールとカスタム フォームインジェクション攻撃の検出と修復
 
@@ -155,7 +155,7 @@ Outlookを再インストールしたり、影響を受けるユーザーに新�
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Outlookルールとフォーム攻撃を停止して修復する方法
 
-これらの攻撃のいずれかの証拠が見つかると、修復は簡単です。メールボックスからルールまたはフォームを削除するだけです。 これを行うには、Outlook クライアントを使用するか、リモート PowerShell を使用してルールを削除します。
+これらの攻撃のいずれかの証拠が見つかると、修復は簡単です。メールボックスからルールまたはフォームを削除するだけです。 これを行うには、Outlook クライアントを使用するか、Exchange PowerShell を使用してルールを削除します。
 
 ### <a name="using-outlook"></a>Outlookの使用
 
@@ -171,11 +171,11 @@ Outlookを再インストールしたり、影響を受けるユーザーに新�
 
 ### <a name="using-powershell"></a>PowerShell の使用
 
-危険なルールを削除または無効にするために使用できるリモート PowerShell コマンドレットは 2 つあります。 手順に従ってください。
+危険なルールを削除または無効にするために使用できる PowerShell コマンドレットには、2 つのExchangeがあります。 手順に従ってください。
 
 #### <a name="steps-for-mailboxes-that-are-on-an-exchange-server"></a>Exchange サーバー上にあるメールボックスの手順
 
-1. リモート PowerShell を使用してExchange サーバーにConnectします。 Connectの手順に従って[、リモート PowerShell を使用してサーバーをExchange](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)します。
+1. リモート PowerShell またはExchange管理シェルを使用して、Exchange サーバーにConnectします。 Connectの手順に従って[、リモート PowerShell を使用してサーバーをExchange](/powershell/exchange/connect-to-exchange-servers-using-remote-powershell)するか[、Exchange管理シェルを開きます](/powershell/exchange/open-the-exchange-management-shell)。
 
 2. メールボックスから 1 つのルール、複数のルール、またはすべてのルールを完全に削除する場合は、 [Remove-InboxRule](/powershell/module/exchange/Remove-InboxRule) コマンドレットを使用します。
 
@@ -183,7 +183,7 @@ Outlookを再インストールしたり、影響を受けるユーザーに新�
 
 #### <a name="steps-for-mailboxes-in-exchange-online"></a>Exchange Onlineのメールボックスの手順
 
-1. [PowerShell を使用してExchange Onlineするには、Connect](/powershell/exchange/connect-to-exchange-online-powershell)の手順に従います。
+1. [powerShell をExchange Onlineするには、Connectの手順に](/powershell/exchange/connect-to-exchange-online-powershell)従います。
 
 2. メールボックスから 1 つのルール、複数のルール、またはすべてのルールを完全に削除する場合は、 [Remove-Inbox Rule](/powershell/module/exchange/Remove-InboxRule) コマンドレットを使用します。
 

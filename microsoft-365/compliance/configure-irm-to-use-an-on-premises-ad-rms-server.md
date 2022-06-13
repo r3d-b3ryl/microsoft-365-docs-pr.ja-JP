@@ -15,20 +15,22 @@ search.appverid:
 ms.assetid: 3ecde857-4b7c-451d-b4aa-9eeffc8a8c61
 ms.collection:
 - M365-security-compliance
-description: Active Directory Rights Management Service (EXCHANGE ONLINE RMS) サーバーを使用ADする方法について説明します。
+description: Active Directory Rights Management Service (AD RMS) サーバーを使用するようにExchange Onlineで情報Rights Management (IRM) を構成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f87992fc9be676b9485d6ec7a7b7ff1f3a4d39d9
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: dac33407a9a45da59d0b3a766ab8a695a0f5a076
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271552"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018143"
 ---
 # <a name="configure-irm-to-use-an-on-premises-ad-rms-server"></a>IRM を設定して、オンプレミスの AD RMS サーバーを使用する
 
-Exchange Online の Information Rights Management (IRM) は、Exchange Online のオンプレミス展開で使用するために、Windows Server 2008 以降の情報保護テクノロジである Active Directory Rights Management サービス (AD RMS) を使用します。 IRM 保護を電子メールに適用するには、AD RMS 権利ポリシー テンプレートを電子メール メッセージに適用します。 権限はメッセージ自体に添付されているため、オンラインとオフラインの両方、および組織のファイアウォールの内外両方で保護が有効になります。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法を示します。 Office 365 Message Encryptionおよび Azure Rights Management で新しい機能を使用するAzure Active Directoryについては、「FAQ」を[Office 365 Message Encryptionしてください](./ome-faq.yml)。
+オンプレミスの展開で使用する場合、Exchange Onlineの Information Rights Management (IRM) では、Windows Server 2008 以降の情報保護テクノロジである Active Directory Rights Management サービス (AD RMS) が使用されます。 IRM 保護を電子メールに適用するには、AD RMS 権利ポリシー テンプレートを電子メール メッセージに適用します。 権限はメッセージ自体に添付されているため、オンラインとオフラインの両方、および組織のファイアウォールの内外両方で保護が有効になります。
+
+このトピックでは、AD RMS サーバーを使用するように IRM を構成する方法を示します。 Azure Active Directoryと Azure Rights Managementで Microsoft Purview Message Encryption を使用する方法の詳細については、[メッセージ暗号化](./ome-faq.yml)に関する FAQ を参照してください。
 
 Exchange Online の IRM については、「[Information Rights Management in Exchange Online](information-rights-management-in-exchange-online.md)」を参照してください。
 
@@ -36,16 +38,16 @@ Exchange Online の IRM については、「[Information Rights Management in E
 
 - このタスクの予想所要時間:30 分
 
-- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可を確認するには、「メッセージング ポリシーとコンプライアンスのアクセス許可」の「Information Rights Management」 [エントリを参照](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions) してください。
+- この手順を実行する際には、あらかじめアクセス許可が割り当てられている必要があります。 必要なアクセス許可を確認するには、「[メッセージング ポリシーとコンプライアンスのアクセス許可](/Exchange/permissions/feature-permissions/policy-and-compliance-permissions)」トピックの「情報Rights Management」エントリを参照してください。
 
-- AD RMS サーバーは、Windows Server 2008 以降を実行している必要があります。 RMS を展開する方法のAD、RMS クラスターのインストール [AD参照してください](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11))。
+- AD RMS サーバーは、Windows Server 2008 以降を実行している必要があります。 AD RMS をデプロイする方法の詳細については、「 [AD RMS クラスターのインストール」を参照してください](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc726041(v=ws.11))。
 
-- Windows PowerShell のインストール方法と構成方法、およびサービスへの接続方法については、「[Connect to Exchange Online Using Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+- Windows PowerShellをインストールして構成し、サービスに接続する方法の詳細については、「[PowerShell をExchange OnlineするConnect」を](/powershell/exchange/connect-to-exchange-online-powershell)参照してください。
 
-- このトピックの手順に適用されるキーボード ショートカットの詳細については、「Exchange 管理センターのキーボード ショートカット」を[参照](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)Exchange Online。
+- このトピックの手順に適用されるキーボード ショートカットの詳細については、「[Exchange OnlineのExchange管理センターのキーボード ショートカット](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)」を参照してください。
 
 > [!TIP]
-> 問題がある場合は、Exchange のフォーラムで質問してください。 次のフォーラムにアクセスしてください。[Exchange Server](https://go.microsoft.com/fwlink/p/?linkId=60612)、[Exchange Online](https://go.microsoft.com/fwlink/p/?linkId=267542)、 または [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351)。
+> 問題がある場合は、 Exchange のフォーラムで質問してください。 > 一般法人向け Office 365 の管理者の場合は、サポートに問い合わせることができます。
 
 ## <a name="how-do-you-do-this"></a>実行方法
 <a name="sectionSection1"> </a>
@@ -60,7 +62,7 @@ Exchange Online の IRM については、「[Information Rights Management in E
 
 - TPD に固有の SLC を使用して作成された AD RMS 権利ポリシー テンプレート
 
-TPD をインポートすると、その TPD はストレージに保存され、保護Exchange Online。
+TPD をインポートすると、保存され、Exchange Onlineで保護されます。
 
 1. Active Directory Rights Management サービスのコンソールを開いて、AD RMS クラスターを展開します。
 
@@ -70,15 +72,15 @@ TPD をインポートすると、その TPD はストレージに保存され�
 
 4. **[操作]** ウィンドウで、**[信頼された発行ドメインのエクスポート]** をクリックします。
 
-5. **[発行ドメイン ファイル]** の **[名前を付けて保存]** をクリックして、ローカル コンピューター上の特定の場所にファイルを保存します。 ファイル名を入力し、ファイル名の拡張子を `.xml` 指定し、[保存] をクリック **します**。
+5. **[発行ドメイン ファイル]** の **[名前を付けて保存]** をクリックして、ローカル コンピューター上の特定の場所にファイルを保存します。 ファイル名を入力し、ファイル名拡張子を `.xml` 指定して、[ **保存**] をクリックします。
 
 6. **[パスワード]** ボックスと **[パスワードの確認入力]** ボックスに、信頼された発行ドメイン ファイルの暗号化に使用する強力なパスワードを入力します。このパスワードは、クラウドベースの電子メール組織に TPD をインポートするときに指定する必要があります。
 
-### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>手順 2: 管理シェルExchange使用して、TPD をインポートして管理Exchange Online
+### <a name="step-2-use-the-exchange-management-shell-to-import-the-tpd-to-exchange-online"></a>手順 2: Exchange 管理シェルを使用して TPD をExchange Onlineにインポートする
 
 TPD を XML ファイルにエクスポートした後は、TPD を Exchange Online にインポートする必要があります。TPD をインポートすると、組織の AD RM テンプレートもインポートされます。最初の TPD をインポートすると、それがクラウドベース組織の既定の TPD になります。別の TPD をインポートする場合は、**Default** スイッチを使用してこの TPD を既定の TPD にし、ユーザーが使用できるようにすることができます。
 
-TPD をインポートするには、Windows PowerShell で次のコマンドを実行します。
+TPD をインポートするには、powerShell で次のコマンドExchange Online実行します。
 
 ```powershell
 Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('<path to exported TPD file>')) -Name "<name of TPD>" -ExtranetLicensingUrl <URL> -IntranetLicensingUrl <URL>
@@ -96,13 +98,13 @@ Import-RMSTrustedPublishingDomain -FileData ([System.IO.File]::ReadAllBytes('C:\
 
 構文およびパラメーターの詳細については、「[Import-RMSTrustedPublishingDomain](/powershell/module/exchange/import-rmstrustedpublishingdomain)」を参照してください。
 
-#### <a name="how-do-you-know-that-you-successfully-imported-the-tpd"></a>TPD が正常にインポートされたことをどのように知っていますか?
+#### <a name="how-do-you-know-that-you-successfully-imported-the-tpd"></a>TPD を正常にインポートしたことがどのようにわかりますか?
 
-TPD が正常にインポートされたことを確認するには、**Get-RMSTrustedPublishingDomain** コマンドレットを実行して、組織の TPD をExchange Onlineします。 詳細については、「[Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain)」内の例を参照してください。
+TPD が正常にインポートされたことを確認するには、**Get-RMSTrustedPublishingDomain コマンドレットを** 実行して、Exchange Online組織内の TPD を取得します。 詳細については、「[Get-RMSTrustedPublishingDomain](/powershell/module/exchange/get-rmstrustedpublishingdomain)」内の例を参照してください。
 
-### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>手順 3: 管理シェルを使用Exchange RMS 権限ポリシー テンプレートAD配布する
+### <a name="step-3-use-the-exchange-management-shell-to-distribute-an-ad-rms-rights-policy-template"></a>手順 3: Exchange 管理シェルを使用して AD RMS 権限ポリシー テンプレートを配布する
 
-TPD をインポートしたら、AD RMS 権利ポリシー テンプレートが配布されていることを確認する必要があります。 分散テンプレートは、Outlook on the web (以前は Outlook Web App) ユーザーに表示され、電子メール メッセージにテンプレートを適用できます。
+TPD をインポートしたら、AD RMS 権利ポリシー テンプレートが配布されていることを確認する必要があります。 分散テンプレートは、Outlook on the web (以前はOutlook Web App) ユーザーに表示され、そのテンプレートを電子メール メッセージに適用できます。
 
 既定の TPD に含まれているすべてのテンプレートの一覧を取得するには、次のコマンドを実行します。
 
@@ -110,7 +112,7 @@ TPD をインポートしたら、AD RMS 権利ポリシー テンプレート�
 Get-RMSTemplate -Type All | fl
 ```
 
-Type パラメーターの値 _が指定_ されている `Archived`場合、テンプレートはユーザーに表示されません。 既定の TPD 内の分散テンプレートだけが、既定の TPD でOutlook on the web。
+Type パラメーターの値が _指定_ されている場合、 `Archived`テンプレートはユーザーに表示されません。 既定の TPD の分散テンプレートのみがOutlook on the webで使用できます。
 
 テンプレートを配布するには、次のコマンドを実行します。
 
@@ -141,11 +143,11 @@ Set-RMSTemplate -Identity "Company Confidential" -Type Distributed
 
 IRM 保護要件に合わせて、社内組織内の AD RMS サーバー上に追加の AD RMS 権利ポリシー テンプレートを作成できます。追加の AD RMS 権利ポリシー テンプレートを作成する場合は、TPD を社内 AD RMS サーバーから再びエクスポートして、クラウドベースの電子メール組織の TPD を更新する必要があります。
 
-#### <a name="how-do-you-know-that-you-successfully-distributed-the-ad-rms-rights-policy-template"></a>RMS 権限ポリシー テンプレートの配布に成功したAD方法を説明します。
+#### <a name="how-do-you-know-that-you-successfully-distributed-the-ad-rms-rights-policy-template"></a>AD RMS 権限ポリシー テンプレートが正常に配布されたことをどのように確認しますか?
 
-RMS 権限ポリシー テンプレートが正常に配布AD確認するには、 **Get-RMSTemplate** コマンドレットを実行してテンプレートのプロパティを確認します。 詳細については、「[Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate)」内の例を参照してください。
+正常に分散され、AD RMS 権限ポリシー テンプレートが正常に配布されたことを確認するには、 **Get-RMSTemplate** コマンドレットを実行して、テンプレートのプロパティを確認します。 詳細については、「[Get-RMSTemplate](/powershell/module/exchange/get-rmstemplate)」内の例を参照してください。
 
-### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>手順 4: IRM を有効Exchange管理シェルを使用する
+### <a name="step-4-use-the-exchange-management-shell-to-enable-irm"></a>手順 4: Exchange管理シェルを使用して IRM を有効にする
 
 TPD をインポートして AD RMS 権利ポリシー テンプレートを配布したら、次のコマンドを実行して、クラウドベースの電子メール組織に対して IRM を有効にします。
 
@@ -155,15 +157,15 @@ Set-IRMConfiguration -InternalLicensingEnabled $true
 
 構文およびパラメーターの詳細については、「[Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration)」を参照してください。
 
-#### <a name="how-do-you-know-that-you-successfully-enabled-irm"></a>IRM が正常に有効にされたことをどのように知っていますか?
+#### <a name="how-do-you-know-that-you-successfully-enabled-irm"></a>IRM を正常に有効にしたことがどのようにわかりますか?
 
-IRM が正常に有効にされたことを確認するには、[Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) コマンドレットを実行して、組織の IRM 構成をExchange Onlineします。
+IRM が正常に有効になっていることを確認するには、[Get-IRMConfiguration](/powershell/module/exchange/get-irmconfiguration) コマンドレットを実行して、Exchange Online組織の IRM 構成を確認します。
 
 ## <a name="how-do-you-know-this-task-worked"></a>このタスクの検証方法
 <a name="sectionSection2"> </a>
 
 TPD が正常にインポートされ、IRM が有効になったことを確認するには、次の手順を実行します。
 
-- IRM の機能をテストするには、**Test-IRMConfiguration** コマンドレットを使用します。 詳細については、「 [Test-IRMConfiguration」の「例 1」を参照してください](/powershell/module/exchange/test-irmconfiguration)。
+- IRM の機能をテストするには、**Test-IRMConfiguration** コマンドレットを使用します。 詳細については、 [Test-IRMConfiguration](/powershell/module/exchange/test-irmconfiguration) の「例 1」を参照してください。
 
-- 拡張メニュー (その他のOutlook on the webアイコン) から [アクセス許可の設定] オプションを選択して、新しいメッセージを作成し、IRM-protect![ します。](../media/ITPro-EAC-MoreOptionsIcon.gif)
+- Outlook on the webで新しいメッセージを作成し、拡張メニューの [**アクセス許可の設定**] オプション (![[その他のオプション アイコン])](../media/ITPro-EAC-MoreOptionsIcon.gif)を選択して IRM で保護します。

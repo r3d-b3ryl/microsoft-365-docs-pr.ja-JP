@@ -4,6 +4,7 @@ f1.keywords: NOCSH
 ms.author: sharik
 author: SKjerland
 manager: scotv
+ms-reviewer: crimora
 audience: Admin
 ms.topic: article
 ms.prod: microsoft-365-lighthouse
@@ -16,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、機能領域別の Lighthouse の既知の問題の一覧を参照してください。
-ms.openlocfilehash: aa3b5980b60e966b4edfbac4a6e8d706c399e943
-ms.sourcegitcommit: 339d2c2ffea06726f69429f73c1113c649f37b18
+ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/21/2022
-ms.locfileid: "65022780"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016726"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseに関する既知の問題
 
@@ -73,10 +74,7 @@ ms.locfileid: "65022780"
 
 ## <a name="granular-delegated-admin-privileges-gdap"></a>詳細な委任された管理者特権 (GDAP)
 
-> [!NOTE]
-> GDAP は現在、GDAP が一般公開される前に、パートナーがきめ細かなアクセス許可を割り当てることができるように [、テクニカル プレビュー](/partner-center/announcements/2022-february#6) (パブリック プレビュー) に入っている。
-
-現在、顧客を Lighthouse にオンボードするには、DAP が必要です。 また、より安全な委任アクセスを可能にするために、お客様と共に GDAP を確立することをお勧めします。 DAP と GDAP は共存していますが、両方のモデルが配置されているお客様に対して GDAP が優先されます。 近いうちに、GDAP (DAP なし) を持つお客様は、Lighthouse にオンボードできるようになります。<br><br>
+顧客を Lighthouse にオンボードするには、詳細な代理管理特権 (GDAP) と間接リセラー関係、または代理管理特権 (DAP) リレーションシップのいずれかが必要です。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。 近日、GDAP のみのリレーションシップ (間接リセラー関係なし) を持つお客様は、Lighthouse にオンボードできるようになります。<br><br>
 
 | 問題 | 説明 | 解決方法 |
 | ---------------- | ---------------- | ---------------- |
