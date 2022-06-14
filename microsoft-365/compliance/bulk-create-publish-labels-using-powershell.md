@@ -19,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: PowerShell を使用して、Microsoft Purview コンプライアンス ポータルとは別に、コマンド ラインから保持ラベルを作成および発行する方法について説明します。
-ms.openlocfilehash: 7d650c87aad92cdb65ed9a40c98c8fc3c94e01fb
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: f2a01024f6c2a05eb5d584112f9a828ac2c3058c
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287158"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66011762"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>PowerShell を使用して保持ラベルを作成および発行する
 
@@ -739,11 +739,11 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>手順 4: PowerShell スクリプトを実行する
 
-まず、[セキュリティ/コンプライアンス センターの PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)します。
+まず、[セキュリティとコンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 次に、保持ラベルを作成および発行するスクリプトを実行します。
   
-1. セキュリティ/コンプライアンス センターの PowerShell セッションで、パスを入力し、その後ろに文字 `.\` とスクリプトのファイル名を入力し、Enter キーを押してスクリプトを実行します。例:
+1. セキュリティとコンプライアンス センターの PowerShell セッションで、パスを入力し、その後ろに文字 `.\` とスクリプトのファイル名を入力し、［Enter］ キーを押してスクリプトを実行します。 例:
     
     ```powershell
     <path>.\CreateRetentionSchedule.ps1

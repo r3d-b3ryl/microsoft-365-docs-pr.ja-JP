@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、エラー メッセージと問題のトラブルシューティングに関するヘルプを参照してください。
-ms.openlocfilehash: 6508e3aca49bb2047d2f04a60c469d7b0888f765
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a93e6816effdc68253c4ec465fa79213258d7581
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011906"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057831"
 ---
 # <a name="troubleshoot-error-messages-and-problems-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのエラー メッセージと問題のトラブルシューティング
 
@@ -56,7 +56,7 @@ ms.locfileid: "66011906"
 
 - カスタマー テナントを管理できるようにするには、マネージド サービス プロバイダー (MSP) に対して委任されたアクセスが設定されている必要があります*
 - 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、Windows 365 Business、またはMicrosoft Defender for Businessライセンス
-- ライセンスを持つユーザーが 1,000 人以下である必要があります 
+- ライセンスを持つユーザーが 2500 人以下である必要があります 
 
 **解像 度：** 次の表では、アクションを必要とするさまざまなテナントの状態と、それらを解決する方法について説明します。
 
@@ -67,7 +67,7 @@ ms.locfileid: "66011906"
 | 非アクティブ | テナントは MSP の要求でオフボードされ、ライトハウスで管理されなくなりました。 | テナントを再アクティブ化する必要があります。 [ **テナント** ] ページで、再アクティブ化するテナントの横にある 3 つのドット (その他のアクション) を選択し、[ **テナントのアクティブ化**] を選択します。 最初の顧客データが Lighthouse に表示されるまでに 24 ~ 48 時間かかる場合があります。 |
 | 不適格 - DAP または GDAP が設定されていません | テナントで設定された DAP または GDAP および間接リセラー管理特権はありません。これは Lighthouse で必要です。 | Microsoft パートナー センターで DAP または GDAP および間接リセラーの管理者特権を設定します。 |
 | 不適格 - 必要なライセンスがありません | テナントに必要なライセンスがありません。 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、またはMicrosoft Defender for Businessライセンスが必要です。 | テナントに少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、Windows 365 Business、またはMicrosoft Defender for Businessライセンスが割り当てられます。 |
-| 不適格 - ユーザー数が超過しました | テナントには、Lighthouse で許可されているライセンスユーザーの最大数が 1,000 人を超えています。 | テナントにライセンスを持つユーザーが 1000 人を超えていないことを確認します。 |
+| 不適格 - ユーザー数が超過しました | テナントには、Lighthouse で許可されているライセンスユーザーの最大数が 2,500 人を超えています。 | テナントに 2500 を超えるライセンス ユーザーが含まれていないことを確認します。 |
 | 不適格 - geo チェックに失敗しました | ユーザーと顧客は、Lighthouse で必要とされる同じ地理的リージョンに存在しません。 | 顧客が地理的リージョンに存在することを確認します。 そうでない場合は、Lighthouse でテナントを管理することはできません。 |
 | 処理中 | Lighthouse はテナントを検出しましたが、まだオンボード中です。 | Lighthouse がテナントのオンボードを完了するまでに 48 時間かかります。 |
 

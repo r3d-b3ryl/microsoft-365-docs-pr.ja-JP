@@ -17,16 +17,16 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e9faf6114551725dc1fc3b8b6af173bbe1e21b4
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417954"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057671"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -104,8 +104,8 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
    - **ブロックされていない必要があります (False positive)**
    - **ブロックされている必要があります (False negative)**: 電子 **メールが表示されるセクションとして分類されている必要があります** 。次のいずれかの値を選択します (不明な場合は、最善の判断をしてください)。
      - **フィッシング**
-     - **マルウェア**
-     - **スパム**
+     - **Malware**
+     - **[スパム]**
 
 5. 完了したら、**[送信]** をクリックします。
 
@@ -122,7 +122,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
    - **ブロックされていない必要があります (False positive)**
    - **ブロックされている必要があります (False negative)**: **[この URL は表示されるセクションとして分類されている必要があります** ] で、次のいずれかの値を選択します (わからない場合は、最善の判断をしてください)。
      - **フィッシング**
-     - **マルウェア**
+     - **Malware**
 
 4. 完了したら、**[送信]** をクリックします。
 
@@ -139,7 +139,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
    - **ブロックされていない必要があります (False positive)**
    - **ブロックされている必要があります (False negative)**: **[このファイルは表示されるセクションとして分類されている必要があります** ] で、次のいずれかの値を選択します (不明な場合は、最善の判断をしてください)。
      - **フィッシング**
-     - **マルウェア**
+     - **Malware**
 
 4. 完了したら、**[送信]** をクリックします。
 
@@ -180,7 +180,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
      完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-customize-columns.png" alt-text="管理者申請の [新しいカスタマイズ] 列オプション" lightbox="../../media/admin-submission-customize-columns.png":::
+     > :::image type="content" source="../../media/email-admin-submission-customize-columns.png" alt-text="管理者申請の [新しいカスタマイズ] 列オプション" lightbox="../../media/email-admin-submission-customize-columns.png":::
 
    - エントリをフィルター処理するには、[フィルター] をクリック **します**。 使用できるフィルターは次のとおりです。
      - **送信日**: **開始日** と **終了日**。
@@ -188,7 +188,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
      - **ネットワーク メッセージ ID**
      - **Sender**
      - **[受信者]**
-     - **名前**
+     - **[名前]**
      - **提出者**
      - **送信の理由**
      - **状態**
@@ -197,11 +197,11 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
      完了したら、**[適用]** をクリックします。
 
      > [!div class="mx-imgBorder"]
-     > :::image type="content" source="../../media/admin-submission-filters.png" alt-text="管理者申請の [新しいフィルター] オプション" lightbox="../../media/admin-submission-filters.png":::
+     > :::image type="content" source="../../media/email-admin-submission-filters.png" alt-text="管理者申請の [新しいフィルター] オプション" lightbox="../../media/email-admin-submission-filters.png":::
 
    - エントリをグループ化するには、[ **グループ化** ] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **Type**
+     - **型**
      - **理由**
      - **状態**
      - **結果**
@@ -287,7 +287,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 
 ユーザーがカスタム メールボックスに不審な電子メールを送信すると、ユーザーと管理者は送信を元に戻すオプションを持っていません。 ユーザーが電子メールを回復する場合は、[削除済みアイテム] フォルダーまたは [迷惑メール] フォルダーで回復できます。
 
-### <a name="converting-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>ユーザーが報告したメッセージをカスタム メールボックスから管理者の提出に変換する
+### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>ユーザーが報告したメッセージをカスタム メールボックスから管理者の提出に変換する
 
 Microsoft にメッセージを送信せずにユーザーから報告されたメッセージをインターセプトするようにカスタム メールボックスを構成した場合は、分析のために特定のメッセージを見つけて Microsoft に送信できます。
 

@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: 管理者は、Microsoft 365 の電子情報開示ツールを使用して、Exchange ハイブリッド展開のオンプレミス ユーザーの Teams チャット データを検索してエクスポートできます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e532dc629df1ddc2e3ceaa94a639723dae483714
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4af64bd77d820b67314bc37e574afdff3966d21b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077809"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014346"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>オンプレミス ユーザーの Teams チャット データを検索する
 
@@ -46,7 +46,7 @@ ms.locfileid: "65077809"
   
 ## <a name="how-it-works"></a>メカニズム
 
-Microsoft Teams 対応のユーザーがオンプレミスのメールボックスを持っていて、そのユーザー アカウント/ID がクラウドに同期されている場合、Microsoft は、オンプレミス ユーザーの 1xN Teams チャット データを関連付けるクラウドベースのストレージを作成します。 オンプレミス ユーザーの Teams チャット データは、検索用にインデックス化されます。 これにより、コンテンツ検索 (および Microsoft Purview 電子情報開示 (標準) と Microsoft Purview 電子情報開示 (プレミアム) ケースに関連する検索) を使用して、オンプレミス ユーザーの Teams チャット データを検索、プレビュー、エクスポートできます。 また、セキュリティ/コンプライアンス センター PowerShell の **\*ComplianceSearch** コマンドレットを使用して、オンプレミス ユーザー向け Teams チャット データを検索することもできます。
+Microsoft Teams 対応のユーザーがオンプレミスのメールボックスを持っていて、そのユーザー アカウント/ID がクラウドに同期されている場合、Microsoft は、オンプレミス ユーザーの 1xN Teams チャット データを関連付けるクラウドベースのストレージを作成します。 オンプレミス ユーザーの Teams チャット データは、検索用にインデックス化されます。 これにより、コンテンツ検索 (および Microsoft Purview 電子情報開示 (標準) と Microsoft Purview 電子情報開示 (プレミアム) ケースに関連する検索) を使用して、オンプレミス ユーザーの Teams チャット データを検索、プレビュー、エクスポートできます。 また、セキュリティとコンプライアンス センター PowerShell の **\*ComplianceSearch** コマンドレットを使用して、オンプレミス ユーザー向け Teams チャット データを検索することもできます。
   
 次の図は、オンプレミス ユーザー向け Teams チャット データの検索、プレビュー、エクスポートを行う方法を示しています。
   
@@ -88,7 +88,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 セキュリティ/コンプライアンス センター PowerShell の **New-ComplianceSearch** コマンドレットを使用して、オンプレミス ユーザーの Teams チャット データを検索することもできます。 前に説明したように、PowerShell を使用してオンプレミス ユーザーの Teams チャット データを検索するために、サポート要求を送信する必要はありません。
   
-1. [セキュリティ/コンプライアンス センター PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次の PowerShell コマンドを実行して、オンプレミス ユーザーの Teams チャット データを検索するコンテンツ検索を作成します。
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8b99f4f9805f34485457a0f376f4bfea04d96192
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043733"
+ms.locfileid: "66057607"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -80,7 +80,7 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
     - テナント許可/ブロック リストへの読み取り専用アクセスの場合は、次のメンバーである必要があります。
       - **グローバル リーダー**  の役割グループ
       - **セキュリティ 閲覧者** の役割グループ
-      - **表示専用構成の* 役割グループ。
+      - **表示専用構成の** 役割グループ。
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 

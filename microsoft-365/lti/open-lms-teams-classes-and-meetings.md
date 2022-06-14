@@ -12,19 +12,14 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Microsoft OneDrive ラーニング Tools 相互運用性 for Open LMS を使用して、Teams クラスと会議を作成および管理します。
-ms.openlocfilehash: 3f9feb5f45a0f1d814818edcb4171f28ef362fdb
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 108852bf32e63e7d5b8722ef1ee178abf7ea85c3
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044438"
+ms.locfileid: "66057751"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Open LMS 内でMicrosoft Teamsクラスと会議を統合する
-
-> [!NOTE]
-> 現時点では、Open LMS と Microsoft Teams LTI 統合はプライベート プレビューでのみ使用できます。
->
->プライベート プレビュー プログラムに参加する場合は、 [こちらにサインアップしてください](https://m365crmedu.powerappsportals.com/LMSSignup/)。
 
 このガイドでは、open LMS で Teams クラスと Teams Meetings LTI アプリの両方を登録するための IT 管理者の手順について説明します。
 

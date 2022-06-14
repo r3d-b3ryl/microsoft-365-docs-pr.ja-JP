@@ -12,21 +12,16 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Moodle プラグインを設定して構成することで、One LMS とMicrosoft Teamsを統合する準備を整えます。
-ms.openlocfilehash: d171ee2afcb459ae34dfcd660b6585073cf86806
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: e59d9298d61060f4d898e773cc5800d32e86bebf
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044463"
+ms.locfileid: "66057734"
 ---
 # <a name="set-up-and-configure-the-moodle-plugin"></a>Moodle プラグインを設定して構成する
 
 この記事では、Open LMS エクスペリエンスにMicrosoft Teamsを組み込むために、Moodle プラグインをインストールして構成する方法について説明します。
-
-> [!NOTE]
-> 現時点では、Open LMS と Microsoft Teams LTI 統合はプライベート プレビューでのみ使用できます。
->
->プライベート プレビュー プログラムに参加する場合は、 [ここでサインアップしてください](https://m365crmedu.powerappsportals.com/LMSSignup)
 
 ## <a name="prerequisites"></a>前提条件
 

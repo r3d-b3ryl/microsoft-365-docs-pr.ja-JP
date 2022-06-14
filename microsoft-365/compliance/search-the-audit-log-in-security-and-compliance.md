@@ -21,12 +21,12 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 9d556facba3fa1a9c1dbafbfe2b2cb519f1b362d
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810968"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014280"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログを検索する
 
@@ -107,7 +107,7 @@ ms.locfileid: "65810968"
     > [!NOTE]
     > デフォルトでメールボックス監査がオンになっている場合でも、一部のユーザーのメールボックス監査イベントが、コンプライアンス ポータルまたは Office 365 マネージメント アクティビティ API の監査ログ検索で見つからないことに気付く場合があります。詳細については、「[メールボックス監査ログの詳細](enable-mailbox-auditing.md#more-information)」を参照してください。
 
-- 組織の監査ログの検索を無効にする場合は、Exchange Online 組織に接続されたリモート PowerShell で次のコマンドを実行できます。
+- 組織の監査ログ検索をオフにしたい場合は、Exchange Online PowerShell で次のコマンドを実行します。
 
   ```powershell
   Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false
@@ -573,8 +573,8 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|
-|コンピューターによってファイルの同期が許可されました|ManagedSyncClientAllowed|ユーザーがサイトとの同期関係を正常に確立しました。ユーザーのコンピューターは、組織のドキュメント ライブラリにアクセスできるドメインのリスト (*信頼できる宛先のリスト* と呼ばれる) に追加されているドメインのメンバーであるため、同期関係は正常に確立されています。<br/><br/> この機能の詳細については、「[Windows PowerShell コマンドレットを使用して宛先セーフ リスト上のドメインに対して OneDrive 同期を有効にする](/powershell/module/sharepoint-online/)」を参照してください。|
-|コンピューターに対するファイル同期のブロック|UnmanagedSyncClientBlocked|ユーザーが、組織のドメインのメンバーではないか、組織のドキュメント ライブラリにアクセスできるドメインのリスト (*信頼できる宛先のリスト* と呼ばれる) に追加されていないドメインのメンバーであるコンピューターから、サイトとの同期関係を確立しようとしました。同期関係は許可されず、ユーザーのコンピューターは、ドキュメント ライブラリのファイルの同期、ダウンロード、またはアップロードを行うことができません。 <br/><br/> この機能については、「[Windows PowerShell コマンドレットを使用して宛先セーフ リスト上のドメインに対して OneDrive 同期を有効にする](/powershell/module/sharepoint-online/)」を参照してください。|
+|コンピューターによってファイルの同期が許可されました|ManagedSyncClientAllowed|ユーザーがサイトとの同期関係を正常に確立しました。ユーザーのコンピューターは、組織のドキュメント ライブラリにアクセスできるドメインのリスト (*信頼できる宛先のリスト* と呼ばれる) に追加されているドメインのメンバーであるため、同期関係は正常に確立されています。<br/><br/> この機能の詳細については、「[Windows PowerShell コマンドレットを使用して宛先セーフ リスト上のドメインに対して OneDrive 同期を有効にする](/powershell/module/sharepoint-online/)」 を参照してください。|
+|コンピューターに対するファイル同期のブロック|UnmanagedSyncClientBlocked|ユーザーが、組織のドメインのメンバーではないか、組織のドキュメント ライブラリにアクセスできるドメインのリスト (*信頼できる宛先のリスト* と呼ばれる) に追加されていないドメインのメンバーであるコンピューターから、サイトとの同期関係を確立しようとしました。同期関係は許可されず、ユーザーのコンピューターは、ドキュメント ライブラリのファイルの同期、ダウンロード、またはアップロードを行うことができません。 <br/><br/> この機能については、「[Windows PowerShell コマンドレットを使用して宛先セーフ リスト上のドメインに対して OneDrive 同期を有効にする](/powershell/module/sharepoint-online/)」 を参照してください。|
 |コンピューターへのファイルのダウンロード|FileSyncDownloadedFull|ユーザーは、OneDrive 同期アプリ (OneDrive.exe) を使用して、SharePoint ドキュメント ライブラリまたは OneDrive for Business からコンピューターにファイルをダウンロードします。|
 |コンピューターへのファイル変更のダウンロード|FileSyncDownloadedPartial|このイベントは、古い OneDrive for Business 同期アプリ (Groove.exe) とともに非推奨になりました。|
 |ファイルがドキュメント ライブラリにアップロードされました|FileSyncUploadedFull|ユーザーは、OneDrive 同期アプリ (OneDrive.exe) を使用して、SharePoint ドキュメント ライブラリまたは OneDrive for Business に新しいファイルまたはファイルへの変更をアップロードします。|
@@ -645,7 +645,7 @@ FilePreviewed イベントと FileAccessed イベントの両方が、ユーザ�
 
 次の表に、メールボックス監査ログに記録される可能性があるアクティビティを示します。 メールボックス所有者、委任されたユーザー、または管理者によって実行されたメールボックス アクティビティは、監査ログに最大 90 日間自動的に記録されます。 管理者は、組織のすべてのユーザーについて、メールボックス監査ログをオフにできます。 この場合、いずれのユーザーのメールボックス操作もログに記録されません。 詳細については、「[メールボックスの監査を管理する](enable-mailbox-auditing.md)」を参照してください。
 
- メールボックス操作の検索は、Exchange Online PowerShell で [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) コマンドレットを使用しても行えます。
+ メールボックス操作の検索は、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) コマンドレットを使用しても行えます。
 
 |フレンドリ名|操作​​|説明|
 |:-----|:-----|:-----|

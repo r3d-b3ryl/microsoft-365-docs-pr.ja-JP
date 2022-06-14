@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3e8f6e523a5483de99beb0af7d01ab96951b7a3e
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 53fc78159580a27a8af04009f4e5ecd5b18bc4e8
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61375336"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057585"
 ---
 # <a name="microsoft-365-defender-for-us-government-customers"></a>Microsoft 365 Defender for US Government のお客様
 
@@ -113,12 +113,15 @@ Azure US Government 環境に組み込まれている米国政府機関のお客
 
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
-|統合: Microsoft Sentinel (インシデント&未加工データ)|![はい](../defender-endpoint/images/svg/check-yes.svg)|![はい](../defender-endpoint/images/svg/check-yes.svg) プライベート プレビュー|![はい](../defender-endpoint/images/svg/check-yes.svg) プライベート プレビュー|
+|統合: Microsoft Sentinel (インシデント&未加工データ)|![はい](../defender-endpoint/images/svg/check-yes.svg) パブリック プレビュー段階|![はい](../defender-endpoint/images/svg/check-yes.svg) パブリック プレビュー段階|![はい](../defender-endpoint/images/svg/check-yes.svg) パブリック プレビュー段階|
 |Microsoft 脅威エキスパート|![いいえ](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|
+
+Event Streaming API テーブルの詳細な一覧については、Event Streaming API [でサポートされているストリーミング イベントの種類Microsoft 365 Defenderを](supported-event-types.md)参照してください。
 
 ## <a name="more-details"></a>詳細情報
 
 詳細については、個々のワークロードの US Gov ページを参照してください。
+
 - [Microsoft Defender for Cloud Apps](/enterprise-mobility-security/solutions/ems-cloud-app-security-govt-service-description)。
 - [Microsoft Defender for Identity](/enterprise-mobility-security/solutions/ems-mdi-govt-service-description)。
 - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/gov)。

@@ -12,19 +12,14 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Teams クラスと会議を作成および管理するには、Microsoft OneDrive ラーニング ツールの相互運用性 for Moodle を使用します。
-ms.openlocfilehash: a59c4fcb6f6a39f3a75acbaa241d50d25b9d444a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: da65874516dcf196ac91ecea1acc75e3cb719f58
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415504"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057743"
 ---
 # <a name="integrate-microsoft-teams-classes-and-meetings-within-moodle"></a>Moodle 内Microsoft Teamsクラスと会議を統合する
-
-> [!NOTE]
-> 現在、Moodle と Microsoft Teams LTI の統合はプライベート プレビューでのみ使用できます。
->
->プライベート プレビュー プログラムに参加する場合は、 [こちらにサインアップしてください](https://m365crmedu.powerappsportals.com/LMSSignup/)。
 
 このガイドでは、Teams クラスと Teams Meetings LTI アプリの両方を Moodle に登録するための IT 管理者の手順について説明します。
 
@@ -55,7 +50,7 @@ Moodle とTeamsの統合が正しく機能するには、相互に通信する�
 
 7. 別のタブで Moodle を開きます。Microsoft LMS ゲートウェイ タブを閉じないでください。
 
-8. Moodle で、**Site** **administrationPluginsActivity** >  >  **modulesExternal** >  **toolsManage** >  ツールに移動します。
+8. Moodle で、**サイト管理** > **プラグイン** > **アクティビティ モジュール** > **の外部ツール****管理ツール** > に移動します。
 
 9. [ **ツールの管理** ] ページ **で、手動でツールを構成するを** 選択します。
 
@@ -66,7 +61,7 @@ Moodle とTeamsの統合が正しく機能するには、相互に通信する�
     1. Microsoft の **Open ID 接続 URL** キーは、Moodle の **[ログイン URL の開始]** フィールドに移動します。
     1. Microsoft の **リダイレクト URL** キーは、Moodle の **リダイレクト URI** フィールドに入ります。
 
-12. **[変更の保存]** を選択します。
+12. [**変更の保存**] を選択します。
 
 13. 新しいツールが、Moodle の [**ツールの管理**] ページの [**ツール**] セクションに表示されます。 リスト アイコンを選択すると、 **ツールの構成の詳細が** 表示されます。
 

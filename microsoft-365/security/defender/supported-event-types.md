@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e8264ccb9e3181f6b58a6206417eb2b842bec6e7
-ms.sourcegitcommit: 317fab13e84b2867087a6ba0a593313ecf43bbed
+ms.openlocfilehash: 4f6f098c9d2ec09a777110955b8acb1663e102ed
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/15/2021
-ms.locfileid: "60364798"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057853"
 ---
 # <a name="supported-microsoft-365-defender-streaming-event-types-in-event-streaming-api"></a>イベント ストリーミング API でサポートされているMicrosoft 365 Defenderストリーミング イベントの種類
 
@@ -40,24 +40,25 @@ Event Streaming API は、より多くのイベントの種類をサポートす
 
 次の表には、ストリーミング API でサポートされているテーブルの一覧のみが含まれており、すべての AH スキーマを含むわけではありません。 API の完全な一覧については、「 [スキーマ テーブルについて」を](advanced-hunting-schema-tables.md#learn-the-schema-tables)参照してください。
 
-
-| テーブル名 | 状態 |
-|------------|-------------|
-| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA  |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA |
-| **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA |
-| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA |
-| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | GA |
-| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | GA |
-| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | GA |
-| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** |GA |
-| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA |
-| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA |
-| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA |
-| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |
-| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |
-
-
+| テーブル名 | 状態<br>(商用) | GCC | GCC High | DoD |
+|----|----|----|----|----|
+| **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | GA | GA | GA | GA |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | GA | GA | GA | GA |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** |GA | GA | GA | GA |
+| **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** |GA | GA | GA | GA |
+| **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceInfo](advanced-hunting-deviceinfo-table.md)** | GA | GA | GA | GA |
+| **[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)** |GA | GA | GA | GA |
+| **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | GA | GA | GA | GA |
+| **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | GA | GA | GA | GA |
+| **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | GA | GA | GA | GA |
+| **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | GA |![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | GA |![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | GA |![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|
+| **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | GA |![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|
+| **[IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)**|GA|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|
+| **[IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)**|GA|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|
+| **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)**|GA|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|
+| **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)**|GA|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|![いいえ](../defender-endpoint/images/svg/check-no.svg)|

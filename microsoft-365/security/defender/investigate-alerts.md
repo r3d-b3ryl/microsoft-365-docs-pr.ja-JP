@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 40e0285f185d112fa508d871e0ccd70c2a09120e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: b80bbb747ab9a0aefebaa4dd5721370ba56a3890
+ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739419"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66057717"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -83,7 +83,7 @@ Microsoft Defender for Office 365アラートにアクセスするには、次�
 
    - コンプライアンス管理者
 
-   - 組織管理 
+   - 組織の管理 
 
 - [カスタム ロール](custom-roles.md)
 
@@ -218,3 +218,4 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 - [インシデントの概要](incidents-overview.md)
 - [インシデントの管理](manage-incidents.md)
 - [インシデントの調査](investigate-incidents.md)
+- [データ損失インシデントを調査する](investigate-dlp.md)
