@@ -16,12 +16,12 @@ ms.date: 02/03/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8da099332ffbe2cc3d860faef504e4c5d9663614
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0365f8a9d2f267d7ebc0cfeddd5b7d1d5c16a72a
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418634"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078790"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -41,7 +41,7 @@ ms.locfileid: "65418634"
 
 
 > [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Microsoft Defender ウイルス対策 クラウド サービスへの接続を許可する
 
@@ -90,7 +90,7 @@ Microsoft Defender ウイルス対策 コマンド ライン ユーティリテ�
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Microsoft から偽のマルウェア ファイルのダウンロードを試みる
 
-クラウドに適切に接続Microsoft Defender ウイルス対策検出してブロックするサンプル ファイルをダウンロードできます。 ファイルのダウンロードにアクセス [https://aka.ms/ioavtest](https://aka.ms/ioavtest) します。
+クラウドに適切に接続Microsoft Defender ウイルス対策検出してブロックするサンプル ファイルをダウンロードできます。 ファイルのダウンロードにアクセス [https://aka.ms/ioavtest1](https://aka.ms/ioavtest1) します。
 
 > [!NOTE]
 > ダウンロードしたファイルがマルウェアではありません。 これは、クラウドに適切に接続されているかどうかをテストするために設計された偽のファイルです。

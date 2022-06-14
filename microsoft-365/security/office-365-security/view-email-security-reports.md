@@ -15,17 +15,17 @@ search.appverid:
 ms.assetid: 3a137e28-1174-42d5-99af-f18868b43e86
 ms.collection:
 - M365-security-compliance
-description: 管理者は、Microsoft 365 Defender ポータルで入手できる電子メール セキュリティ レポートを見つけて使用する方法について説明します。
+description: 管理者は、Microsoft 365 Defender ポータルで使用できる電子メール セキュリティ レポートを検索して使用する方法について説明します。
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 499f001c0327c1634be4a94e2a8446adca93daab
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: ef22f0873e6a61864cf3b2abf2d8a4bc26f80c4d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941044"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078988"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
@@ -36,38 +36,38 @@ ms.locfileid: "65941044"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Defender ポータル <https://security.microsoft.com> では、Microsoft 365 のスパム対策機能やマルウェア対策機能などの電子メール セキュリティ機能が組織をどのように保護しているかを確認するのに役立つさまざまなレポートを利用できます。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、この記事で説明されているように、これらのレポートを表示してダウンロードできます。
+Microsoft 365 Defender ポータル<https://security.microsoft.com>にはさまざまなレポートがあり、Microsoft 365のスパム対策やマルウェア対策などの電子メール セキュリティ機能が組織をどのように保護しているかを確認するのに役立ちます。 [必要なアクセス許可](#what-permissions-are-needed-to-view-these-reports)がある場合は、この記事で説明されているように、これらのレポートを表示してダウンロードできます。
 
 > [!NOTE]
 >
-> **[電子メール & コラボレーション レポート**] ページのレポートの一部には、Microsoft Defender for Office 365 が必要です。 これらのレポートの詳細については、 [Microsoft 365 Defender ポータルで Defender for Office 365 レポートを表示](view-reports-for-mdo.md)する方法に関するページを参照してください。
+> **[電子メール & コラボレーション レポート**] ページのレポートの一部には、Microsoft Defender for Office 365が必要です。 これらのレポートの詳細については、[Microsoft 365 Defender ポータルでレポートDefender for Office 365表示する方法に関するページを参照してください](view-reports-for-mdo.md)。
 >
-> メール フローに関連するレポートが Exchange 管理センターに表示されるようになりました。 これらのレポートの詳細については、 [新しい Exchange 管理センターのメール フロー レポートに関するページを参照](/exchange/monitoring/mail-flow-reports/mail-flow-reports)してください。
+> メール フローに関連するレポートが、Exchange管理センターに表示されるようになりました。 これらのレポートの詳細については、[新しいExchange管理センターのメール フロー レポートに関する](/exchange/monitoring/mail-flow-reports/mail-flow-reports)ページを参照してください。
 
-この短いビデオでは、レポートを使用して組織内の Defender for Office 365 の有効性を理解する方法について説明します。
+この短いビデオでは、レポートを使用して組織内のDefender for Office 365の有効性を理解する方法について説明します。
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBkxB]
 
 ## <a name="email-security-report-changes-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでの電子メール セキュリティ レポートの変更
 
-Exchange Online Protection (EOP) と Microsoft Defender for Office 365 のレポートは、置換、移動、または非推奨になった Microsoft 365 Defender ポータルで次の表に示します。
+置き換え、移動、または非推奨になったMicrosoft 365 Defender ポータルのExchange Online Protection (EOP) レポートとMicrosoft Defender for Office 365 レポートを次の表に示します。
 
 |非推奨のレポートとコマンドレット|新しいレポートとコマンドレット|メッセージ センター ID|日付|
 |---|---|:---:|:---:|
-|**URL 追跡** <br/><br/> Get-URLTrace|[URL 保護レポート](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|2021 年 6 月|
+|**URL 追跡** <br/><br/> Get-URLTrace|[URL の保護に関するレポート](view-reports-for-mdo.md#url-protection-report) <br/><br/> [Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <br> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|MC239999|2021 年 6 月|
 |**送受信された電子メール レポート** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailReport|[脅威保護の状態レポート](#threat-protection-status-report) <br> [Mailflow 状態レポート](#mailflow-status-report) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport) <br> [Get-MailFlowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|MC236025|2021 年 6 月|
 |**転送レポート** <br/><br/> コマンドレットなし|[EAC の自動転送メッセージ レポート](/exchange/monitoring/mail-flow-reports/mfr-auto-forwarded-messages-report) <br/><br/> コマンドレットなし|MC250533|2021 年 6 月|
-|**安全な添付ファイルの種類レポート** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|2021 年 6 月|
-|**安全な添付ファイルメッセージの処理レポート** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|2021 年 6 月|
+|**セーフ添付ファイルの種類レポート** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250532|2021 年 6 月|
+|**セーフ 添付ファイル メッセージの処理レポート** <br/><br/> Get-AdvancedThreatProtectionTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250531|2021 年 6 月|
 |**電子メール レポートで検出されたマルウェア** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailMalwareReport|[脅威保護の状態レポート: 電子メール \> マルウェアによるデータの表示](#view-data-by-email--malware-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250530|2021 年 6 月|
 |**スパム検出レポート** <br/><br/> Get-MailTrafficReport <br> Get-MailDetailSpamReport|[脅威の保護状態レポート: 電子メール \> スパムでデータを表示する](#view-data-by-email--spam-and-chart-breakdown-by-detection-technology) <br/><br/> [Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <br> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|MC250529|2021 年 10 月|
 |Get-AdvancedThreatProtectionDocumentReport <br/><br/> Get-AdvancedThreatProtectionDocumentDetail|[Get-ContentMalwareMdoAggregateReport](/powershell/module/exchange/get-contentmalwaremdoaggregatereport) <br/><br/> [Get-ContentMalwareMdoDetailReport](/powershell/module/exchange/get-contentmalwaremdodetailreport)|MC343433|2022 年 5 月|
-|**Exchange トランスポート ルール レポート** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[EAC の Exchange トランスポート ルール レポート](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|2022 年 4 月|
+|**Exchange トランスポート ルール レポート** <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|[EAC でトランスポート ルール レポートをExchangeする](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report) <br/><br/> [Get-MailTrafficPolicyReport](/powershell/module/exchange/get-mailtrafficpolicyreport) <br> [Get-MailDetailTransportRuleReport](/powershell/module/exchange/get-maildetailtransportrulereport)|MC316157|2022 年 4 月|
 |Get-MailTrafficTopReport|[上位の送信者と受信者のレポート](view-email-security-reports.md#top-senders-and-recipients-report) <br/><br/> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport) <br/><br/> **注**: Get-MailTrafficTopReport では、暗号化レポート機能に代わる機能はありません。|MC315742|2022 年 4 月|
 
 ## <a name="compromised-users-report"></a>侵害されたユーザー レポート
 
 > [!NOTE]
-> このレポートは、Exchange Online メールボックスを使用する Microsoft 365 組織で使用できます。 スタンドアロンの Exchange Online Protection (EOP) 組織では使用できません。
+> このレポートは、Exchange Onlineメールボックスを持つMicrosoft 365組織で使用できます。 スタンドアロン Exchange Online Protection (EOP) 組織では使用できません。
 
 **侵害されたユーザー** レポートには、過去 7 日以内に **不審** または **制限** 付きとしてマークされたユーザー アカウントの数が表示されます。 これらの状態のいずれかに含まれるアカウントは、問題が生じるか、侵害される場合もあります。 頻繁に使用すると、レポートを使用して、疑わしいアカウントや制限付きアカウントの急増、さらには傾向を特定できます。 侵害されたユーザーの詳細については、「 [侵害されたメール アカウントへの対応」を参照してください](responding-to-a-compromised-email-account.md)。
 
@@ -75,7 +75,7 @@ Exchange Online Protection (EOP) と Microsoft Defender for Office 365 のレポ
 
 集計ビューには過去 90 日間のデータが表示され、詳細ビューには過去 30 日間のデータが表示されます。
 
-Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、 **侵害されたユーザー** を見つけて、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/CompromisedUsers>。
+Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、 **侵害されたユーザー** を見つけて、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/CompromisedUsers>。
 
 [ **侵害されたユーザー** ] ページのグラフには、指定した日付範囲に関する次の情報が表示されます。
 
@@ -103,15 +103,15 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 
 ## <a name="exchange-transport-rule-report"></a>Exchange トランスポート ルール レポート
 
-**Exchange トランスポート ルール** レポートには、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれます) の効果が表示されます。
+**Exchange トランスポート ルール** レポートは、組織内の受信メッセージと送信メッセージに対するメール フロー ルール (トランスポート ルールとも呼ばれます) の効果を示します。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、 **Exchange トランスポート ルール** を見つけて、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/ETRRuleReport>。
+Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [**電子メール & コラボレーション レポート**] ページ **で、トランスポート ルールExchange** 見つけて、[**詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/ETRRuleReport>。
 
-:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="[電子メール & コラボレーション レポート] ページの Exchange トランスポート ルール ウィジェット" lightbox="../../media/transport-rule-report-widget.png":::
+:::image type="content" source="../../media/transport-rule-report-widget.png" alt-text="[電子メール & コラボレーション レポート] ページの [Exchange トランスポート ルール] ウィジェット" lightbox="../../media/transport-rule-report-widget.png":::
 
-**Exchange トランスポート ルール レポート** ページで、使用可能なグラフとデータについては、次のセクションで説明します。
+**Exchangeトランスポート ルール レポート** ページで、使用可能なグラフとデータについては、次のセクションで説明します。
 > [!NOTE]
-> **Exchange トランスポート ルール レポート** が EAC で使用できるようになりました。 詳細については、 [新しい EAC の Exchange トランスポート ルール レポートに関するページを](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)参照してください。
+> **Exchangeトランスポート ルール レポート** が EAC で使用できるようになりました。 詳細については、[新しい EAC のトランスポート ルール レポートExchangeを参照してください](/exchange/monitoring/mail-flow-reports/mfr-exchange-transport-rule-report)。
 
 ### <a name="chart-breakdown-by-direction"></a>方向別のグラフの内訳
 
@@ -119,13 +119,13 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 **[方向別のグラフの内訳**] を選択した場合は、次のグラフを使用できます。
 
-- **Exchange トランスポート ルールでデータを表示** する: メール フロー ルールの影響を受けた **受信** メッセージと **送信** メッセージの数。
+- **Exchangeトランスポート ルールでデータを表示** する: メール フロー ルールの影響を受けた **受信** メッセージと **送信** メッセージの数。
 - **DLP Exchange トランスポート ルールでデータを表示** する: データ損失防止 (DLP) メール フロー ルールの影響を受けた **受信** メッセージと **送信** メッセージの数。
 
 グラフの下の詳細テーブルには、次の情報が表示されます。
 
 - **Date**
-- **DLP ポリシー** (**DLP Exchange トランスポート ルールによるデータの表示** のみ)
+- **DLP ポリシー** (**DLP Exchange トランスポート ルールのみでデータを表示**)
 - **トランスポート ルール**
 - **件名**
 - **[送信者のアドレス]**
@@ -141,7 +141,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
-**Exchange トランスポート ルール レポート** ページの [スケジュールの作成] ![アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、 ![レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[要求レポート]](#request-report)**、[ ![エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
+**Exchangeトランスポート ルール レポート** ページの [スケジュールの作成] ![アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、 ![レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[要求レポート]](#request-report)**、[ ![エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
 
 ### <a name="chart-breakdown-by-severity"></a>重大度別のグラフの内訳
 
@@ -149,16 +149,16 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 **[重要度別のグラフの内訳**] を選択した場合は、次のグラフを使用できます。
 
-- **Exchange トランスポート ルールでデータを表示** する: **重大度が高い**、 **重大度が中程度**、重大度が **低い** メッセージの数。 重大度レベルをルールのアクションとして設定します (重大度レベルまたは _SetAuditSeverity_ で **このルールを監査** します)。 詳細については、「 [Exchange Online でのメール フロー ルールアクション](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」を参照してください。
+- **Exchangeトランスポート ルールでデータを表示** する: **重大度が高い** メッセージ、**中重大度** メッセージ、**および重大度の低い** メッセージの数。 重大度レベルをルールのアクションとして設定します (重大度レベルまたは _SetAuditSeverity_ で **このルールを監査** します)。 詳細については、「[Exchange Onlineのメール フロー ルールアクション](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)」を参照してください。
 
-- **DLP Exchange トランスポート ルールでデータを表示** する: DLP メール フロー ルールの影響を受けた **重大度が高** い、 **重大度が中程度**、重大度が **低い** メッセージの数。
+- **DLP Exchange トランスポート ルールでデータを表示** する: DLP メール フロー ルールの影響を受けた **重大度が高** い、重大度が **中程度**、**低の** メッセージの数。
 
 グラフの下の詳細テーブルには、次の情報が表示されます。
 
 - **Date**
-- **DLP ポリシー** (**DLP Exchange トランスポート ルールによるデータの表示** のみ)
+- **DLP ポリシー** (**DLP Exchange トランスポート ルールのみでデータを表示**)
 - **トランスポート ルール**
-- **件名**
+- **[件名]**
 - **[送信者のアドレス]**
 - **受信者の住所**
 - **重大度**
@@ -172,7 +172,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
-**Exchange トランスポート ルール レポート** ページの [スケジュールの作成] ![アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、 ![レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[要求レポート]](#request-report)**、[ ![エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
+**Exchangeトランスポート ルール レポート** ページの [スケジュールの作成] ![アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、 ![レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[要求レポート]](#request-report)**、[ ![エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
 
 ## <a name="forwarding-report"></a>転送レポート
 
@@ -181,9 +181,9 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 ## <a name="mailflow-status-report"></a>Mailflow 状態レポート
 
-**Mailflow 状態レポート** は、送受信メール、スパム検出、マルウェア、"良い" と識別されたメール、エッジで許可またはブロックされた電子メールに関する情報を表示するスマート レポートです。 これは、エッジ保護情報を含む唯一のレポートであり、Exchange Online Protection (EOP) による評価のためにサービスに許可される前にブロックされている電子メールの量だけを示します。 メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされることを理解することが重要です。
+**Mailflow 状態レポート** は、送受信メール、スパム検出、マルウェア、"良い" と識別されたメール、エッジで許可またはブロックされた電子メールに関する情報を表示するスマート レポートです。 これは、エッジ保護情報を含む唯一のレポートであり、Exchange Online Protection (EOP) による評価のためにサービスに許可される前にブロックされる電子メールの量のみを示します。 メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされることを理解することが重要です。
 
-Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **メールフローの状態の概要** ] を探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/mailflowStatusReport>。
+Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **メールフローの状態の概要** ] を探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/mailflowStatusReport>。
 
 :::image type="content" source="../../media/mail-flow-status-report-widget.png" alt-text="[電子メール & コラボレーション レポート] ページの [Mailflow 状態の概要] ウィジェット" lightbox="../../media/mail-flow-status-report-widget.png":::
 
@@ -198,7 +198,7 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 - **マルウェア**: さまざまなフィルターによってマルウェアとしてブロックされている電子メール。
 - **フィッシングメール**: さまざまなフィルターによってフィッシングとしてブロックされている電子メール。
 - **スパム**: さまざまなフィルターによってスパムとしてブロックされている電子メール。
-- **エッジ保護**: EOP または Defender for Office 365 によって評価される前に、エッジ/境界で拒否された電子メール。
+- **エッジ保護**: EOP またはDefender for Office 365によって評価される前に、エッジ/境界で拒否された電子メール。
 - **ルール メッセージ**: メール フロー ルールによって処理された電子メール メッセージ (トランスポート ルールとも呼ばれます)。
 
 グラフの下の詳細テーブルは、次の情報を示しています。
@@ -274,7 +274,7 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 
 集計ビューと詳細テーブル ビューでは、90 日間のフィルター処理が可能です。
 
-図の情報は、 **EOP** または **Defender for Office 365** テクノロジによって色分けされています。
+図の情報は、**EOP** または **Defender for Office 365** テクノロジによって色分けされています。
 
 この図は、次の水平バンドに編成されています。
 
@@ -283,12 +283,12 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
   - **エッジ ブロック: エッジ** でフィルター処理され、Edge Protection として識別されるメッセージ。
   - **処理済み**: フィルター処理スタックによって処理されるメッセージ。
 - 結果バンド:
-  - **ルール ブロック**: Exchange メール フロー ルール (トランスポート ルール) によって処理されるメッセージ。
+  - **ルール ブロック**: Exchangeメール フロー ルール (トランスポート ルール) によって処理されるメッセージ。
   - **マルウェア ブロック**: さまざまなフィルターによってマルウェアとして識別されるメッセージ。<sup>\*</sup>
   - **フィッシング ブロック**: さまざまなフィルターによって処理中にフィッシングとして識別されたメッセージ。<sup>\*</sup>
   - **スパム ブロック**: さまざまなフィルターによって処理中にスパムとして識別されたメッセージ。<sup>\*</sup>
-  - **偽装ブロック**: Defender for Office 365 でユーザー権限借用またはドメイン偽装として検出されたメッセージ。<sup>\*</sup>
-  - **デトネーション ブロック**: Defender for Office 365 の安全な添付ファイル ポリシーまたはセーフ リンク ポリシーによるファイルまたは URL デトネーション中に検出されたメッセージ。<sup>\*</sup>
+  - **偽装ブロック**: Defender for Office 365でユーザー権限借用またはドメイン偽装として検出されたメッセージ。<sup>\*</sup>
+  - **デトネーション ブロック**: セーフの添付ファイル ポリシーまたは Defender for Office 365のセーフ リンク ポリシーによって、ファイルまたは URL の起爆中に検出されたメッセージ。<sup>\*</sup>
   - **ZAP が削除されました**: ゼロ時間の自動消去 (ZAP) によって削除されたメッセージ。<sup>\*</sup>
   - **配信済み**: 許可が原因でユーザーに配信されたメッセージ。<sup>\*</sup>
 
@@ -304,7 +304,7 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 - **メールの合計**
 - **フィルター処理されたエッジ**
 - **ルール メッセージ**
-- **マルウェア対策エンジン、安全な添付ファイル、フィルター処理されたルール**
+- **マルウェア対策エンジン、セーフ添付ファイル、フィルター処理されたルール**
 - **DMARC 偽装、スプーフィング、フィッシング フィルター処理**
 - **デトネーション検出**
 - **フィルター処理されたスパム対策**
@@ -331,9 +331,9 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 > [!NOTE]
 > このレポートは非推奨になりました。 [脅威保護の状態レポート](#threat-protection-status-report)でも、同じ情報を入手できます。
 
-## <a name="mail-latency-report"></a>メール待機時間レポート
+## <a name="mail-latency-report"></a>メール遅延レポート
 
-Defender for Office 365 の **メール待機時間レポート** には、組織内で発生したメール配信と爆発の待機時間に関する情報が含まれています。 詳細については、「 [メール待機時間レポート](view-reports-for-mdo.md#mail-latency-report)」を参照してください。
+Defender for Office 365の **メール待機時間レポート** には、組織内で発生したメール配信と起爆の待機時間に関する情報が含まれています。 詳細については、「 [メール待機時間レポート](view-reports-for-mdo.md#mail-latency-report)」を参照してください。
 
 ## <a name="spam-detections-report"></a>スパム検出レポート
 
@@ -346,7 +346,7 @@ Defender for Office 365 の **メール待機時間レポート** には、組�
 
 レポートの集計ビューでは 90 日間のフィルター処理が可能ですが、詳細ビューでは 10 日間のフィルター処理のみが許可されます。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **スプーフィングの検出** ] を見つけて、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/SpoofMailReport>。
+Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **スプーフィングの検出** ] を見つけて、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/SpoofMailReport>。
 
 :::image type="content" source="../../media/spoof-detections-widget.png" alt-text="電子メール & コラボレーション レポート ページのスプーフィング検出ウィジェット" lightbox="../../media/spoof-detections-widget.png":::
 
@@ -371,7 +371,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
   - **その他**
 - **スプーフィングの種類**: **内部** と **外部**
 
-:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="Microsoft 365 Defender ポータルのスプーフィング メール レポート ページ" lightbox="../../media/spoof-detections-report-page.png":::
+:::image type="content" source="../../media/spoof-detections-report-page.png" alt-text="Microsoft 365 Defender ポータルの [スプーフィング メール] レポート ページ" lightbox="../../media/spoof-detections-report-page.png":::
 
 グラフの下の詳細テーブルは、次の情報を示しています。
 
@@ -386,15 +386,15 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 - **DMARC**
 - **メッセージ数**
 
-複合認証結果コードの詳細については、 [Microsoft 365 のスパム対策メッセージ ヘッダーに](anti-spam-message-headers.md)関するページを参照してください。
+複合認証結果コードの詳細については、[Microsoft 365のスパム対策メッセージ ヘッダーに](anti-spam-message-headers.md)関するページを参照してください。
 
 [ **スプーフィングの検出** ] ページの [スケジュールの作成] ![アイコン。](../../media/m365-cc-sc-create-icon.png) **[スケジュールの作成](#schedule-report)**、 ![レポートの要求アイコン。](../../media/m365-cc-sc-download-icon.png) **[[要求レポート]](#request-report)**、[ ![エクスポート] アイコン。](../../media/m365-cc-sc-download-icon.png) **[エクスポート](#export-report)** ボタンを使用できます。
 
 ## <a name="submissions-report"></a>提出レポート
 
-提出レポートには、管理者が分析のために Microsoft に報告したアイテムに関する情報が表示 **されます** 。 詳細については、「 [管理者申請を使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
+提出レポートには、管理者が分析のために Microsoft に報告したアイテムに関する情報が表示 **されます** 。 詳細については、「[管理申請を使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
 
-Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **申請] を** 探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport>。 [Microsoft 365 Defender ポータルで管理者の申請に](admin-submission.md)移動するには、[**提出に移動**] をクリックします。 管理者は、過去 30 日間レポートを表示できます。
+Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **申請] を** 探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/adminSubmissionReport>。 [Microsoft 365 Defender ポータルで管理者の申請に](admin-submission.md)移動するには、[**送信に移動**] をクリックします。 管理者は、過去 30 日間レポートを表示できます。
 
 :::image type="content" source="../../media/submissions-report-widget.png" alt-text="[電子メール & コラボレーション レポート] ページの [申請] ウィジェット" lightbox="../../media/submissions-report-widget.png":::
 
@@ -413,7 +413,7 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 - **申請 ID**
 - **ネットワーク メッセージ ID**
 - **Sender**
-- **名前**
+- **[名前]**
 - **提出者**
 - **送信の理由**:
   - **迷惑ではない**
@@ -424,7 +424,7 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
   - **Pending**
   - **Completed**
 
-グラフの下の詳細テーブルには、同じ情報が表示され、[**電子メール & コラボレーション**\>申請] の [**分析用に送信]** タブと同じ **[グループ**] または [**列のカスタマイズ**] オプションが **表示されます**。 詳細については、「 [Microsoft への管理者の提出を表示する」を参照してください](admin-submission.md#view-admin-submissions-to-microsoft)。
+グラフの下の詳細テーブルには、同じ情報が表示され、[**電子メール & コラボレーション**\>申請] の [**分析用に送信]** タブと同じ **[グループ**] または [**列のカスタマイズ**] オプションが **表示されます**。 詳細については、「 [Microsoft への管理者の提出を表示する」を参照してください](admin-submission.md#view-urls-admin-submissions-to-microsoft)。
 
 [ **申請] ページの** [ **[エクスポート](#export-report)** ] ボタンを使用できます。
 
@@ -432,15 +432,15 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 
 ## <a name="threat-protection-status-report"></a>脅威保護の状態レポート
 
-**脅威保護の状態** レポートは、EOP と Defender for Office 365 の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、 [SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)によって検出された悪意のあるファイルに関する情報は表示できません。
+**脅威の保護の状態** レポートは、EOP とDefender for Office 365の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、電子メールで検出されたマルウェアに関する情報を表示できますが、[SharePoint、OneDrive、およびMicrosoft Teamsのセーフ添付ファイル](mdo-for-spo-odb-and-teams.md)によって検出された悪意のあるファイルに関する情報は表示できません。
 
-このレポートには、マルウェア対策エンジン、 [ゼロ時間自動消去 (ZAP](zero-hour-auto-purge.md))、Defender for Office 365 機能 ( [セーフ リンク](safe-links.md)、 [安全な添付ファイル](safe-attachments.md)、 [フィッシング対策ポリシーの偽装保護機能](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)) によってブロックされたファイルや Web サイト アドレス (URL) などの悪意のあるコンテンツを含む電子メール メッセージの数が表示されます。 この情報を使用して、傾向を把握したり、組織のポリシーを調整する必要があるかどうかを判断することができます。
+このレポートには、マルウェア対策エンジンによってブロックされたファイルや Web サイト アドレス (URL)、[ゼロ時間自動消去 (ZAP](zero-hour-auto-purge.md))、フィッシング対策ポリシーのセーフ [リンク](safe-links.md)、セーフ[添付ファイル](safe-attachments.md)、[偽装保護機能](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)などのDefender for Office 365機能など、悪意のあるコンテンツを含む電子メール メッセージの数が表示されます。 この情報を使用して、傾向を把握したり、組織のポリシーを調整する必要があるかどうかを判断することができます。
 
 **注**: メッセージが 5 人の受信者に送信された場合、メッセージは 1 つのメッセージではなく 5 つの異なるメッセージとしてカウントされることを理解することが重要です。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、 **脅威の保護の状態** を確認し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、次のいずれかの URL を開きます。
+Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、 **脅威の保護の状態** を確認し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、次のいずれかの URL を開きます。
 
-- Defender for Office 365: <https://security.microsoft.com/reports/TPSAggregateReportATP>
+- Defender for Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
 - EOP： <https://security.microsoft.com/reports/TPSAggregateReport>
 
 :::image type="content" source="../../media/threat-protection-status-report-widget.png" alt-text="[電子メール & コラボレーション レポート] ページの [脅威保護の状態] ウィジェット" lightbox="../../media/threat-protection-status-report-widget.png":::
@@ -495,9 +495,9 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 - **高度なフィルター**: 機械学習に基づくフィッシングシグナル。
 - **キャンペーン: キャンペーン**<sup>\*</sup>の一部として識別される [](campaigns.md)メッセージ。
-- **ファイルデトネーション**<sup>\*</sup>: [安全な添付ファイル](safe-attachments.md) は、デトネーション分析中に悪意のある添付ファイルを検出しました。
-- **ファイルデトネーションの評価**<sup>\*</sup>: 他の Microsoft 365 組織の [安全な添付ファイル](safe-attachments.md) の爆発によって以前に検出された添付ファイル。
-- **ファイルの評判**: メッセージには、以前に他の Microsoft 365 組織で悪意があると識別されたファイルが含まれています。
+- **ファイルデトネーション**<sup>\*</sup>: [セーフ添付ファイル](safe-attachments.md)は、デトネーション分析中に悪意のある添付ファイルを検出しました。
+- **ファイルデトネーションの評価**<sup>\*</sup>: 他のMicrosoft 365組織の [セーフ添付ファイル](safe-attachments.md)の起爆によって以前に検出された添付ファイル。
+- **ファイルの評判**: メッセージには、以前に他のMicrosoft 365組織で悪意があると識別されたファイルが含まれています。
 - **指紋照合**: メッセージは、以前に検出された悪意のあるメッセージによく似ています。
 - **一般的なフィルター**: アナリスト ルールに基づくフィッシングシグナル。
 - **偽装ブランド**: 既知のブランドの送信者の偽装。
@@ -508,16 +508,16 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 - **DMARC のスプーフィング**: メッセージが [DMARC 認証](use-dmarc-to-validate-email.md)に失敗しました。
 - **外部ドメインのスプーフィング**: 組織の外部にあるドメインを使用した送信者の電子メール アドレスのスプーフィング。
 - **組織内スプーフィング**: 組織の内部にあるドメインを使用した送信者の電子メール アドレススプーフィング。
-- **URL デトネーション**<sup>\*</sup>: [セーフ リンク](safe-links.md) が、デトネーション分析中にメッセージ内の悪意のある URL を検出しました。
-- **URL デトネーションの評価**<sup>\*</sup>: 他の Microsoft 365 組織の [セーフ リンク](safe-links.md) の起爆によって以前に検出された URL。
-- **URL 悪意のある評判**: メッセージには、以前に他の Microsoft 365 組織で悪意があると識別された URL が含まれています。
+- **URL デトネーション**<sup>\*</sup>: [セーフ リンク](safe-links.md)が、デトネーション分析中にメッセージ内の悪意のある URL を検出しました。
+- **URL デトネーションの評価**<sup>\*</sup>: 他のMicrosoft 365組織の [セーフ リンク](safe-links.md)の起爆によって以前に検出された URL。
+- **URL 悪意のある評判**: メッセージには、以前に他のMicrosoft 365組織で悪意があると識別された URL が含まれています。
 
-<sup>\*</sup> Defender for Office 365 のみ
+<sup>\*</sup>Defender for Office 365のみ
 
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **件名**
+- **[件名]**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -559,16 +559,16 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 - **高度なフィルター**: 機械学習に基づくフィッシングシグナル。
 - **一括**: メッセージの [一括苦情レベル (BCL)](bulk-complaint-level-values.md) が、スパムに対して定義されたしきい値を超えています。
-- **ドメインの評判**: メッセージは、以前に他の Microsoft 365 組織でスパムを送信していると特定されたドメインからのものでした。
+- **ドメインの評判**: メッセージは、以前に他のMicrosoft 365組織でスパムを送信していると特定されたドメインからのメッセージでした。
 - **指紋照合**: メッセージは、以前に検出された悪意のあるメッセージによく似ています。
-- **IP の評判**: メッセージは、以前に他の Microsoft 365 組織でスパムを送信していると特定されたソースからのメッセージでした。
+- **IP 評価**: メッセージは、以前に他のMicrosoft 365組織でスパムを送信していると特定されたソースからのメッセージでした。
 - **混合分析検出**: 複数のフィルターがメッセージの判定に貢献しました。
-- **URL 悪意のある評判**: メッセージには、以前に他の Microsoft 365 組織で悪意があると識別された URL が含まれています。
+- **URL 悪意のある評判**: メッセージには、以前に他のMicrosoft 365組織で悪意があると識別された URL が含まれています。
 
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **件名**
+- **[件名]**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -610,21 +610,21 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 [ **検出テクノロジ別の電子メール \> マルウェア** と **グラフの内訳別** のデータの表示] ビューで、グラフに次の情報が表示されます。
 
-- **ファイルデトネーション**<sup>\*</sup>: [安全な添付ファイル](safe-attachments.md) は、デトネーション分析中に悪意のある添付ファイルを検出しました。
-- **ファイルデトネーションの評価**<sup>\*</sup>: 他の Microsoft 365 組織の [安全な添付ファイル](safe-attachments.md) の爆発によって以前に検出された添付ファイル。
-- **ファイルの評判**: メッセージには、以前に他の Microsoft 365 組織で悪意があると識別されたファイルが含まれています。
+- **ファイルデトネーション**<sup>\*</sup>: [セーフ添付ファイル](safe-attachments.md)は、デトネーション分析中に悪意のある添付ファイルを検出しました。
+- **ファイルデトネーションの評価**<sup>\*</sup>: 他のMicrosoft 365組織の [セーフ添付ファイル](safe-attachments.md)の起爆によって以前に検出された添付ファイル。
+- **ファイルの評判**: メッセージには、以前に他のMicrosoft 365組織で悪意があると識別されたファイルが含まれています。
 - **マルウェア対策エンジン**<sup>\*</sup>: マルウェア対策エンジンからの検出。
 - **マルウェア対策ポリシー ファイルの種類ブロック**: 添付ファイルのファイルの種類 ([マルウェア対策ポリシーでの一般的な添付ファイル フィルター](anti-malware-protection.md)) が原因で、メッセージがブロックされました。
-- **URL デトネーション**<sup>\*</sup>: [セーフ リンク](safe-links.md) が、デトネーション分析中にメッセージ内の悪意のある URL を検出しました。
-- **URL の起爆評価**<sup>\*</sup>>: 他の Microsoft 365 組織の [セーフ リンク](safe-links.md) の爆発によって以前に検出された URL。
+- **URL デトネーション**<sup>\*</sup>: [セーフ リンク](safe-links.md)が、デトネーション分析中にメッセージ内の悪意のある URL を検出しました。
+- **URL の起爆評価**<sup>\*</sup>>: 他のMicrosoft 365組織の [セーフ リンク](safe-links.md)の起爆によって以前に検出された URL。
 - **キャンペーン: キャンペーン**<sup>\*</sup>の一部として識別される [](campaigns.md)メッセージ。
 
-<sup>\*</sup> Defender for Office 365 のみ
+<sup>\*</sup>Defender for Office 365のみ
 
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -665,7 +665,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 [**電子メール フィッシングによるデータの表示]、[電子メール \>****スパムによるデータの表示]、[電子メール \>****\> マルウェア別のデータの表示**] ビューで、[**ポリシーの種類別のグラフの内訳**] を選択すると、グラフに次の情報が表示されます。
 
 - **マルウェア対策**
-- **安全な添付ファイル**<sup>\*</sup>
+- **添付ファイルのセーフ**<sup>\*</sup>
 - **フィッシング対策**
 - **スパム対策**
 - **メール フロー ルール** (トランスポート ルールとも呼ばれます)
@@ -704,7 +704,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 - **ポリシー名 (詳細テーブル ビューのみ)**: **すべて** または指定されたポリシー。
 - **受信者**
 
-<sup>\*</sup> Defender for Office 365 のみ
+<sup>\*</sup>Defender for Office 365のみ
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
@@ -729,7 +729,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **件名**
+- **[件名]**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -759,7 +759,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 - **ポリシー名 (詳細テーブル ビューのみ)**: **すべて** または指定されたポリシー。
 - **受信者**
 
-<sup>\*</sup> Defender for Office 365 のみ
+<sup>\*</sup>Defender for Office 365のみ
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
@@ -769,11 +769,11 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 :::image type="content" source="../../media/threat-protection-status-report-content-malware-view.png" alt-text="脅威の保護状態レポートの [コンテンツ マルウェア] ビュー" lightbox="../../media/threat-protection-status-report-content-malware-view.png":::
 
-**[コンテンツ \> マルウェア別のデータの表示**] ビューでは、Microsoft Defender for Office 365 組織のグラフに次の情報が表示されます。
+[**コンテンツ \> マルウェア別のデータの表示**] ビューでは、Microsoft Defender for Office 365組織のグラフに次の情報が表示されます。
 
-- **マルウェア対策エンジン**: [Microsoft 365 の組み込みのウイルス検出](virus-detection-in-spo.md)によって、SharePoint、OneDrive、および Microsoft Teams で検出された悪意のあるファイル。
-- **MDO デトネーション**: [SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)によって検出された悪意のあるファイル。
-- **ファイルの評判**: メッセージには、以前に他の Microsoft 365 組織で悪意があると識別されたファイルが含まれています。
+- **マルウェア対策エンジン**: Microsoft 365の [組み込みのウイルス検出](virus-detection-in-spo.md)によって、SharePoint、OneDrive、およびMicrosoft Teamsで検出された悪意のあるファイル。
+- **MDO デトネーション**: [SharePoint、OneDrive、Microsoft Teamsのセーフ添付ファイル](mdo-for-spo-odb-and-teams.md)によって検出された悪意のあるファイル。
+- **ファイルの評判**: メッセージには、以前に他のMicrosoft 365組織で悪意があると識別されたファイルが含まれています。
 
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
@@ -788,7 +788,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 - **日付 (UTC)** **開始日** と **終了日**。
 - **検出**: グラフと同じ値。
-- **ワークロード**: **Teams**、 **SharePoint**、 **OneDrive**
+- **ワークロード**: **Teams**、**SharePoint**、**OneDrive**
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
@@ -852,7 +852,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **システムオーバーライド**
@@ -883,7 +883,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 - **ポリシーの種類**:
   - **All**
   - **マルウェア対策**
-  - **安全な添付ファイル**<sup>\*</sup>
+  - **添付ファイルのセーフ**<sup>\*</sup>
   - **フィッシング対策**
   - **スパム対策**
   - **メール フロー ルール** (トランスポート ルール)
@@ -891,7 +891,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 - **ポリシー名 (詳細テーブル ビューのみ)**: **すべて**
 - **受信者**
 
-<sup>\*</sup> Defender for Office 365 のみ
+<sup>\*</sup>Defender for Office 365のみ
 
 フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
 
@@ -901,7 +901,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 **[上位マルウェア**] レポートには、[EOP のマルウェア対策保護](anti-malware-protection.md)によって検出されたさまざまな種類のマルウェアが表示されます。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **上位マルウェア** ] を探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/TopMalware>。
+Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **上位マルウェア** ] を探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/TopMalware>。
 
 :::image type="content" source="../../media/top-malware-report-widget.png" alt-text="[電子メール & コラボレーション レポート] ページの [上位マルウェア] ウィジェット" lightbox="../../media/top-malware-report-widget.png":::
 
@@ -920,13 +920,13 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 ## <a name="top-senders-and-recipients-report"></a>上位の送信者と受信者のレポート
 
-**上位の送信者と受信者** のレポートは、EOP と Defender for Office 365 の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、上位のマルウェア、スパム、フィッシング (スプーフィング) 受信者に関する情報を表示できますが、[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)によって検出された[安全な添付ファイル](safe-attachments.md)またはフィッシングによって検出されたマルウェアに関する情報は表示できません。
+**上位の送信者と受信者** のレポートは、EOP とDefender for Office 365の両方で使用できます。ただし、レポートには異なるデータが含まれています。 たとえば、EOP のお客様は、上位のマルウェア、スパム、フィッシング (スプーフィング) 受信者に関する情報を表示できますが、[偽装保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)によって検出された[セーフ添付ファイル](safe-attachments.md)またはフィッシングによって検出されたマルウェアに関する情報は表示できません。
 
-**上位の送信者と受信者** には、組織内の上位メッセージ送信者と、EOP および Defender for Office 365 保護機能によって検出されたメッセージの上位受信者が表示されます。 既定では、レポートには過去 1 週間のデータが表示されますが、データは過去 90 日間使用できます。
+**上位の送信者と受信者** には、組織内の上位メッセージ送信者と、EOP およびDefender for Office 365保護機能によって検出されたメッセージの上位受信者が表示されます。 既定では、レポートには過去 1 週間のデータが表示されますが、データは過去 90 日間使用できます。
 
-Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **上位の送信者と受信者] レポートを** 探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、次のいずれかの URL を開きます。
+Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **上位の送信者と受信者] レポートを** 探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、次のいずれかの URL を開きます。
 
-- Defender for Office 365: <https://security.microsoft.com/reports/TopSenderRecipientsATP>
+- Defender for Office 365:<https://security.microsoft.com/reports/TopSenderRecipientsATP>
 - EOP： <https://security.microsoft.com/reports/TopSenderRecipient>
 
 :::image type="content" source="../../media/top-senders-and-recipients-widget.png" alt-text="レポート ダッシュボードの上位送信者と受信者ウィジェット" lightbox="../../media/top-senders-and-recipients-widget.png":::
@@ -957,18 +957,18 @@ Microsoft 365 Defender ポータル <https://security.microsoft.com>でレポー
 
 :::image type="content" source="../../media/top-senders-and-recipients-report-view.png" alt-text="[上位の送信者と受信者] レポートの [上位のメール送信者のデータを表示する] ビュー" lightbox="../../media/top-senders-and-recipients-report-view.png":::
 
-## <a name="url-protection-report"></a>URL 保護レポート
+## <a name="url-protection-report"></a>URL の保護に関するレポート
 
-**URL 保護レポート** は、Microsoft Defender for Office 365 でのみ使用できます。 詳細については、「 [URL 保護レポート」を](view-reports-for-mdo.md#url-protection-report)参照してください。
+**URL 保護レポート** は、Microsoft Defender for Office 365でのみ使用できます。 詳細については、「 [URL 保護レポート」を](view-reports-for-mdo.md#url-protection-report)参照してください。
 
 ## <a name="user-reported-messages-report"></a>ユーザーが報告したメッセージ レポート
 
 > [!IMPORTANT]
-> **ユーザーが報告したメッセージ** レポートを正しく機能させるには、Microsoft 365 環境 **で監査ログを有効にする必要があります**。 これは通常、Exchange Online で監査ログロールが割り当てられているユーザーによって行われます。 詳細については、「 [Microsoft 365 監査ログ検索のオンとオフを切り替える」を](../../compliance/turn-audit-log-search-on-or-off.md)参照してください。
+> **ユーザーが報告したメッセージ** レポートを正しく機能させるには、Microsoft 365環境 **で監査ログを有効にする必要があります**。 これは通常、Exchange Onlineで監査ログ ロールが割り当てられているユーザーによって行われます。 詳細については、「[監査ログ検索Microsoft 365オンまたはオフにする」を](../../compliance/turn-audit-log-search-on-or-off.md)参照してください。
 
 **ユーザーが報告したメッセージ** レポートには、レポート メッセージ アドインまたはレポート フィッシング アドインを使用して、ユーザーが迷惑メール、フィッシング詐欺の試み、または適切なメールとして報告した電子メール [メッセージ](enable-the-report-message-add-in.md)に関 [する情報が](enable-the-report-phish-add-in.md)表示されます。
 
-Microsoft 365 Defender ポータルでレポートを表示するには、 **レポート** \> **メール&コラボレーション** \> **メール&コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **ユーザーから報告されたメッセージ]** を探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/userSubmissionReport>。 [Microsoft 365 Defender ポータルで管理者の申請に](admin-submission.md)移動するには、[**提出に移動**] をクリックします。
+Microsoft 365 Defender ポータルでレポートを表示するには、**レポート** \> **メール & コラボレーション** \> **メール & コラボレーション レポート** に移動します。 [ **電子メール & コラボレーション レポート** ] ページで、[ **ユーザーから報告されたメッセージ]** を探し、[ **詳細の表示**] をクリックします。 レポートに直接移動するには、を開きます <https://security.microsoft.com/reports/userSubmissionReport>。 [Microsoft 365 Defender ポータルで管理者の申請に](admin-submission.md)移動するには、[**送信に移動**] をクリックします。
 
 :::image type="content" source="../../media/user-reported-messages-widget.png" alt-text="[電子メール & コラボレーション レポート] ページの [ユーザーから報告されたメッセージ] ウィジェット" lightbox="../../media/user-reported-messages-widget.png":::
 
@@ -1021,7 +1021,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>これらのレポートを表示するには、どのようなアクセス許可が必要ですか?
 
-この記事で説明されているレポートを表示して使用するには、Microsoft 365 Defender ポータルで次のいずれかの役割グループのメンバーである必要があります。
+この記事で説明されているレポートを表示して使用するには、Microsoft 365 Defender ポータルで次のいずれかのロール グループのメンバーである必要があります。
 
 - **組織の管理**
 - **セキュリティ管理者**
@@ -1030,7 +1030,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-**注**: Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_ 、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+**注**: Microsoft 365 管理センターの対応するAzure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>レポートにデータが表示されない場合はどうなりますか?
 
@@ -1061,7 +1061,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 既に作成したスケジュールされたレポートを管理するには、次の手順に従います。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート**\>] に移動し、[**電子メール &コラボレーション**\>] を展開して [**スケジュールの管理**] を選択します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート**\>] に移動し、[**電子メール &コラボレーション**\>] の [**スケジュールの管理**] を選択します。
 
    **[スケジュールの管理**] ページに直接移動するには、 <https://security.microsoft.com/ManageSubscription>.
 
@@ -1112,13 +1112,13 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 ### <a name="download-reports"></a>レポートのダウンロード
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート]** \> に移動し、[**電子メール &コラボレーション**\>] を展開し、[**ダウンロード用のレポート]** を選択します。
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート**\>] に移動し、[**電子メール&コラボレーション**\>] を展開し、[**ダウンロード用のレポート]** を選択します。
 
    **[レポートのダウンロード**] ページに直接移動するには、次を使用します<https://security.microsoft.com/ReportsForDownload>。
 
 2. **[ダウンロード用のレポート]** ページに、使用可能なレポートごとに次の情報が表示されます。
    - **開始日**
-   - **名前**
+   - **[名前]**
    - **レポートの種類**
    - **最後に送信された**
    - **方向**
@@ -1138,14 +1138,14 @@ Microsoft 365 Defender ポータルでレポートを表示するには、 **レ
 
 エクスポートされた.csv ファイルは、それぞれ 150,000 行に制限されています。 データに 150,000 行を超える行が含まれている場合は、複数の.csv ファイルが作成されます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 [EOP のスパム対策保護](anti-spam-protection.md)
 
 [EOP のマルウェア対策保護](anti-malware-protection.md)
 
-[Microsoft 365 Defender ポータルのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
+[Microsoft 365 Defender ポータルでのスマート レポートと分析情報](reports-and-insights-in-security-and-compliance.md)
 
 [Microsoft 365 Defender ポータルでメール フロー レポートを表示する](view-mail-flow-reports.md)
 
-[Defender for Office 365 のレポートを表示する](view-reports-for-mdo.md)
+[Defender for Office 365のレポートを表示する](view-reports-for-mdo.md)

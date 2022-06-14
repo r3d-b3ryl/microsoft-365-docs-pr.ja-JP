@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview での電子情報開示 (Standard) ケースの概要
+title: Microsoft Purviewでの電子情報開示 (Standard) ケースの概要
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,19 +17,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview で電子情報開示 (Standard) の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示保留を作成し、調査に関連するコンテンツを検索してエクスポートできます。
-ms.openlocfilehash: e224bf22741d0e1599d099802470e231b11fd785
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft Purviewで電子情報開示 (Standard) の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示保留を作成し、調査に関連するコンテンツを検索してエクスポートできます。
+ms.openlocfilehash: 38e4d24405810293c9261c1c7f728ece0714cd66
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094948"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078482"
 ---
-# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Microsoft Purview での電子情報開示 (Standard) を使用した概要
+# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Microsoft Purviewでの電子情報開示 (Standard) を使用した概要
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-Microsoft Purview の Microsoft Purview 電子情報開示 (Standard) は、組織がMicrosoft 365およびOffice 365でコンテンツを検索およびエクスポートするために使用できる基本的な電子情報開示ツールを提供します。 電子情報開示 (Standard) を使用して、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft Teamsなどのコンテンツの場所に電子情報開示ホールドを配置することもできます。 電子情報開示 (Standard) を展開するには何も必要ありませんが、組織が電子情報開示 (Standard) を使用してコンテンツの検索、エクスポート、および保持を開始する前に、IT 管理者と電子情報開示マネージャーが完了する必要がある前提条件がいくつかあります。
+Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicrosoft 365およびOffice 365でコンテンツを検索およびエクスポートするために使用できる基本的な電子情報開示ツールを提供します。 電子情報開示 (Standard) を使用して、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft Teamsなどのコンテンツの場所に電子情報開示ホールドを配置することもできます。 電子情報開示 (Standard) を展開するには何も必要ありませんが、組織が電子情報開示 (Standard) を使用してコンテンツの検索、エクスポート、および保持を開始する前に、IT 管理者と電子情報開示マネージャーが完了する必要がある前提条件がいくつかあります。
 
 この記事では、電子情報開示 (Standard) を設定するために必要な手順について説明します。 これには、電子情報開示 (Standard) にアクセスし、コンテンツの場所に電子情報開示を保持するために必要な適切なライセンスを確保するだけでなく、IT、法的、および調査チームがケースにアクセスして管理できるようにアクセス許可を割り当てることも含まれます。 この記事では、ケースを使用してコンテンツを検索およびエクスポートする概要についても説明します。
 
@@ -37,7 +37,7 @@ Microsoft Purview の Microsoft Purview 電子情報開示 (Standard) は、組�
 
 電子情報開示 (Standard) のライセンスには、適切な組織のサブスクリプションとユーザーごとのライセンスが必要です。
 
-- **組織のサブスクリプション:** Microsoft Purview コンプライアンス ポータルで電子情報開示 (Standard) にアクセスし、保留機能とエクスポート機能を使用するには、組織にMicrosoft 365 E3以上のサブスクリプションOffice 365 E3必要があります。 フロントライン組織Microsoft 365 F5 サブスクリプションが必要です。
+- **組織のサブスクリプション:** Microsoft Purview コンプライアンス ポータルで電子情報開示 (Standard) にアクセスし、保留機能とエクスポート機能を使用するには、組織にオンラインプラン 2 以上のExchangeまたはMicrosoft 365 E3またはOffice 365 E3サブスクリプションが必要です。 フロントライン組織Microsoft 365 F5 サブスクリプションが必要です。
 
 - **ユーザーごとのライセンス:** メールボックスとサイトに電子情報開示ホールドを設定するには、組織のサブスクリプションに応じて、次のいずれかのライセンスをユーザーに割り当てる必要があります。
 
@@ -51,7 +51,7 @@ Microsoft Purview の Microsoft Purview 電子情報開示 (Standard) は、組�
 
   - Microsoft 365 フロントライン F5 コンプライアンスまたは F5 セキュリティ & コンプライアンス アドオン ライセンス  
 
-  および
+  AND
 
   - SharePoint Online プラン 2 または OneDrive for Business プラン 2 アドオン ライセンスでライセンスをOffice 365 E1する
   

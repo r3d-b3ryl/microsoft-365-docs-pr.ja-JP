@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: 05/13/2022
+ms.date: 06/14/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内のExchange、SharePoint、OneDrive for Businessから部分的にインデックスが作成されたアイテム (インデックスのないアイテムとも呼ばれます) を管理する方法について説明します。
-ms.openlocfilehash: 373072ff1b1a893a8de970ccb6eacbdcd14b48d3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 528693febbb6d02f6ea143d94aaae154d3dfde7e
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014952"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078746"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>電子情報開示で部分的にインデックスが付けられたアイテムの調査
 
@@ -116,12 +116,13 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
 | `wordbreakertruncated` <br/> |インデックス作成中にドキュメント内で識別された単語が多すぎます。 制限に達するとプロパティの処理が停止し、プロパティが切り捨てられます。  <br/> |
 
 エラー フィールドは、[エラー タグ] フィールドに一覧表示されている処理エラーの影響を受けるフィールドを示します。 または、メッセージの本文のエラーなどの`subject``participants`プロパティを検索している場合、検索結果には影響しません。 これは、さらに調査する必要がある部分インデックス項目を正確に決定する場合に役立ちます。
-  
-## <a name="using-a-powershell-script-to-determine-your-organizations-exposure-to-partially-indexed-email-items"></a>PowerShell スクリプトを使用して、部分的にインデックスが作成された電子メール アイテムに対する組織の公開を決定する
 
-次の手順では、PowerShell スクリプトを実行して、すべてのExchangeメールボックス内のすべてのアイテムを検索し、組織の部分的にインデックスが付けられた電子メール アイテムの比率 (カウントとサイズ別) に関するレポートを生成し、発生するインデックス作成エラーごとにアイテムの数 (とそのファイルの種類) を表示する方法を示します。 前のセクションのエラー タグの説明を使用して、インデックス作成エラーを特定します。
+<!--
+## Using a PowerShell script to determine your organization's exposure to partially indexed email items
+
+The following steps show you how to run a PowerShell script that searches for all items in all Exchange mailboxes, and then generates a report about your organization's ratio of partially indexed email items (by count and by size) and displays the number of items (and their file type) for each indexing error that occurs. Use the error tag descriptions in the previous section to identify the indexing error.
   
-1. 次のテキストをWindows PowerShell スクリプト ファイルに保存するには、.ps1 のファイル名サフィックスを使用します。たとえば、 `PartiallyIndexedItems.ps1`.
+1. Save the following text to a Windows PowerShell script file by using a filename suffix of .ps1; for example, `PartiallyIndexedItems.ps1`.
 
    ```powershell
      write-host "**************************************************"
@@ -166,25 +167,26 @@ Microsoft Purview コンプライアンス ポータルから実行する電子�
      }
    ```
 
-2. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/exchange-online-powershell)。
+2. [Connect to Security & Compliance PowerShell](/powershell/exchange/exchange-online-powershell).
 
-3. Security & Compliance PowerShell で、手順 1. でスクリプトを保存したフォルダーに移動し、スクリプトを実行します。例えば：
+3. In Security & Compliance PowerShell, go to the folder where you saved the script in step 1, and then run the script; for example:
 
    ```powershell
    .\PartiallyIndexedItems.ps1
    ```
 
-スクリプトによって返される出力の例を次に示します。
+Here's an example fo the output returned by the script.
   
-![部分的にインデックスが付けられた電子メール アイテムに対する組織の公開に関するレポートを生成するスクリプトからの出力の例。](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
+![Example of output from script that generates a report on your organization's exposure to partially indexed email items.](../media/aeab5943-c15d-431a-bdb2-82f135abc2f3.png)
 
 > [!NOTE]
-> 次の点に注意してください。
+> Note the following:
 >  
-> - 電子メール アイテムの合計数とサイズ、および部分的にインデックスが付けられた電子メール アイテムの組織の比率 (数とサイズ別)。
+> - The total number and size of email items, and your organization's ratio of partially indexed email items (by count and by size).
 > 
-> - リスト エラー タグと、エラーが発生した対応するファイルの種類。
-  
+> - A list error tags and the corresponding file types for which the error occurred.
+-->
+
 ## <a name="see-also"></a>関連項目
 
 [電子情報開示で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)

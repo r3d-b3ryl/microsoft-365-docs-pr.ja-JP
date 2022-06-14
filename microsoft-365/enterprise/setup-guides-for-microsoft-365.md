@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスで機能を計画、移行、実装するためのステップ バイ ステップ ツールを入手します。 サービスまたは実行する必要があるアプリを設定するためのガイドを見つけます。
-ms.openlocfilehash: 451f92aade8a6e7910630629b805065e6910b9de
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 832c551c9f42082d4c55c8a7902a740ef124012d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017122"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078548"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
@@ -181,11 +181,11 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 * コミュニケーション コンプライアンス ソリューションを使用すると、職場での暴力、インサイダー取引、嫌がらせ、行動規範、規制コンプライアンス違反などの項目に対するコミュニケーション リスクを特定して対処できます。
 * インサイダー リスク管理ソリューションは、知的財産の盗難、機密データ漏えい、セキュリティ違反、データ流出、機密性違反のリスクを特定、調査、および実行するのに役立ちます。
 
-### <a name="microsoft-purview-information-protection-setup-guide"></a>Microsoft Purview Information Protection セットアップ ガイド
+### <a name="microsoft-purview-information-protection-setup-guide"></a>Microsoft Purview 情報保護セットアップ ガイド
 
 機密情報が確実に保護されるように、情報保護戦略に適用できる機能の概要を確認します。 機密情報を発見、分類、保護、および監視する 4 段階のライフサイクル アプローチを使用します。 [Microsoft Purview Information Protection のセットアップ ガイド](https://aka.ms/microsoftpurviewinformationprotectionsetupguide)には、これらの各段階を完了するためのガイダンスが記載されています。
 
-### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Microsoft Purview データ ライフサイクル管理のセットアップ ガイド
+### <a name="microsoft-purview-data-lifecycle-management-setup-guide"></a>Microsoft Purview データ ライフサイクル管理セットアップ ガイド
 
 [Microsoft Purview データ ライフサイクル管理の設定ガイド](https://aka.ms/migsetupguide)では、組織のガバナンス戦略を設定および管理し、設定した特定のライフサイクルのガイドラインに従って、データを確実に分類および管理するために必要な情報を提供します。 このガイドでは、組織のコンテンツとコンプライアンス レコードに適用される保持ラベル、アイテム保持ラベル ポリシー、およびアイテム保持ポリシーを作成、自動適用、または公開する方法について説明します。 また、一括処理のシナリオ、または個々のドキュメントに手動で適用するために、ファイル計画を使用した CSV ファイルのインポートに関する情報を入手できます。
 
@@ -251,6 +251,6 @@ Configuration Manager を使用している組織では、「[Configuration Mana
 
 [Intune Configuration Manager共同管理セットアップ ガイド](https://aka.ms/comanagementsetup)を使用して、組織がMicrosoft Intuneと両方で共同管理する既存のConfiguration Manager クライアント デバイスと新しいインターネット ベースのデバイスを設定します。Configuration Manager。 共同管理を使用すると、Windows 10 デバイスを管理し、組織のデバイスに新機能を追加しながら、両方のソリューションの利点を受けることができます。
 
-#### <a name="school-data-sync-rollover-setup-guide"></a>学校データ同期 ロールオーバーセットアップ ガイド
+### <a name="school-data-sync-rollover-setup-guide"></a>学校データ同期 ロールオーバーセットアップ ガイド
 
 [SDS ロールオーバーセットアップ ガイド](https://aka.ms/sdsrolloversetupguide)では、組織が学生情報データをAzure Active DirectoryとOffice 365に同期するのに役立つ手順について説明します。 このガイドでは、Exchange OnlineとSharePoint Online のOffice 365 グループ、Microsoft TeamsとOneNoteのクラス チーム、Intuneを作成することで、ライフサイクル管理プロセスという用語を効率化します。 教育機関向け、およびサード パーティ製アプリの名簿とシングル サインオンの統合。 年末のクローズアウト、テナントのクリーンアップとアーカイブ、新しい学年の準備、新しい学年の起動を実行します。 次に、組織に合った同期展開方法を使用して、新しいプロファイルを作成できます。

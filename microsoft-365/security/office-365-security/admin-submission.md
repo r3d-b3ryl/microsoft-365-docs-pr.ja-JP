@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 09c0e80c8e8632c088aa42af558c90cbf0f0fc71
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 125e151873e45717a4621bf2798e3587671c6b8d
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057671"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078965"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
 
@@ -60,7 +60,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 
 - 管理者は、メールボックスで引き続き使用でき、ユーザーまたは別の管理者によって削除されない場合、30 日の古いメッセージを送信できます。
 
-- 管理者の提出は、次のレートで調整されます。
+- 管理送信は、次のレートで調整されます。
   - 15 分間の最大送信数: 150 件
   - 24 時間の同じ申請: 3 件の提出
   - 15 分間の同じ申請: 1 件の提出
@@ -149,13 +149,13 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 > [!NOTE]
 > マルウェア フィルターによってメッセージの添付ファイルがマルウェア アラート Text.txt ファイルに置き換えられた場合は、元の添付ファイルを含む検疫から元のメッセージを送信する必要があります。 検疫の詳細と、マルウェアの誤検知を含むメッセージを解放する方法については、「 [管理者としての検疫済みメッセージとファイルの管理](manage-quarantined-messages-and-files.md)」を参照してください。
 
-## <a name="view-admin-submissions-to-microsoft"></a>Microsoft に対する管理者の提出を表示する
+## <a name="view-email-admin-submissions-to-microsoft"></a>Microsoft へのメール管理者の提出を表示する
 
 1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[アクション] & **[申請**] の [**申請]** ページ **に**\>移動します。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
 
-2. [ **送信]** ページで、[ **電子メール**、 **URL**、または **電子メールの添付ファイル** ] タブが選択されていることを確認します。
+2. [ **送信] ページで** 、[ **電子メール** ] タブが選択されていることを確認します。
 
-   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えることができます。 [ **列のカスタマイズ** ] をクリックすると、最大 7 つの列が表示されます。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
+   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えることができます。 [ **列のカスタマイズ** ] をクリックして、必要な列を選択します。 すべての列を選択し、送信グリッドに表示できます。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
      - **申請名**<sup>\*</sup>
      - **[送信者]**<sup>\*</sup>
      - **[受信者]**
@@ -201,7 +201,6 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 
    - エントリをグループ化するには、[ **グループ化** ] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
      - **なし**
-     - **型**
      - **理由**
      - **状態**
      - **結果**
@@ -209,7 +208,105 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 
    - エントリをエクスポートするには、[ **エクスポート**] をクリックします。 表示されるダイアログで、.csv ファイルを保存します。
 
-### <a name="admin-submission-result-details"></a>管理者提出結果の詳細
+## <a name="view-email-attachment-admin-submissions-to-microsoft"></a>Microsoft へのメール添付ファイル管理者の提出を表示する
+
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[アクション] & **[申請**] の [**申請]** ページ **に**\>移動します。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
+
+2. [ **送信] ページで** 、[ **電子メールの添付ファイル** ] タブが選択されていることを確認します。
+
+   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えることができます。 [ **列のカスタマイズ** ] をクリックして、必要な列を選択します。 すべての列を選択し、送信グリッドに表示できます。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
+     - **添付ファイル名**<sup>\*</sup>
+     - **送信日**<sup>\*</sup>
+     - **送信の理由**<sup>\*</sup>
+     - **ステータス**<sup>\*</sup>
+     - **結果**<sup>\*</sup>
+     - **フィルターの判定**
+     - **配信/ブロックの理由**
+     - **申請 ID**
+     - **オブジェクト ID**
+     - **ポリシー アクション**
+     - **提出者**
+     - **タグ**<sup>\*</sup>
+     - **許可**
+
+     完了したら、**[適用]** をクリックします。
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="管理者申請の [新しいカスタマイズ] 列オプション" lightbox="../../media/email-attachment-admin-submission-customize-columns.png":::
+
+   - エントリをフィルター処理するには、[フィルター] をクリック **します**。 使用できるフィルターは次のとおりです。
+     - **送信日**: **開始日** と **終了日**。
+     - **申請 ID**: すべての申請に割り当てられる GUID 値。
+     - **添付ファイルの名前**
+     - **提出者**
+     - **送信の理由**
+     - **状態**
+     - **Tags**
+
+     完了したら、**[適用]** をクリックします。
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/email-attachment-admin-submission-customize-columns.png" alt-text="管理者申請の [新しいフィルター] オプション" lightbox="../../media/email-attachment-admin-submission-filters.png":::
+
+   - エントリをグループ化するには、[ **グループ化** ] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
+     - **なし**
+     - **理由**
+     - **状態**
+     - **結果**
+     - **Tags**
+
+   - エントリをエクスポートするには、[ **エクスポート**] をクリックします。 表示されるダイアログで、.csv ファイルを保存します。
+
+## <a name="view-urls-admin-submissions-to-microsoft"></a>Microsoft に対する URL 管理者の提出を表示する
+
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[アクション] & **[申請**] の [**申請]** ページ **に**\>移動します。 **[申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
+
+2. [ **申請] ページで** 、[ **URL** ] タブが選択されていることを確認します。
+
+   - 使用可能な列ヘッダーをクリックすると、エントリを並べ替えることができます。 [ **列のカスタマイズ** ] をクリックして、必要な列を選択します。 すべての列を選択し、送信グリッドに表示できます。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
+     - [**URL**<sup>\*</sup>]
+     - **送信日**<sup>\*</sup>
+     - **送信の理由**<sup>\*</sup>
+     - **ステータス**<sup>\*</sup>
+     - **結果**<sup>\*</sup>
+     - **フィルターの判定**
+     - **配信/ブロックの理由**
+     - **申請 ID**
+     - **オブジェクト ID**
+     - **ポリシー アクション**
+     - **提出者**
+     - **タグ**<sup>\*</sup>
+     - **許可**
+
+     完了したら、**[適用]** をクリックします。
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="管理者申請の [新しいカスタマイズ] 列オプション" lightbox="../../media/url-admin-submission-customize-columns.png":::
+
+   - エントリをフィルター処理するには、[フィルター] をクリック **します**。 使用できるフィルターは次のとおりです。
+     - **送信日**: **開始日** と **終了日**。
+     - **申請 ID**: すべての申請に割り当てられる GUID 値。
+     - **URL**
+     - **提出者**
+     - **送信の理由**
+     - **状態**
+     - **Tags**
+
+     完了したら、**[適用]** をクリックします。
+
+     > [!div class="mx-imgBorder"]
+     > :::image type="content" source="../../media/url-admin-submission-customize-columns.png" alt-text="管理者申請の [新しいフィルター] オプション" lightbox="../../media/url-admin-submission-filters.png":::
+
+   - エントリをグループ化するには、[ **グループ化** ] をクリックし、ドロップダウン リストから次のいずれかの値を選択します。
+     - **なし**
+     - **理由**
+     - **状態**
+     - **結果**
+     - **Tags**
+
+   - エントリをエクスポートするには、[ **エクスポート**] をクリックします。 表示されるダイアログで、.csv ファイルを保存します。
+
+### <a name="admin-submission-result-details"></a>提出結果の詳細を管理する
 
 管理者の提出で送信されたメッセージが確認され、申請の詳細ポップアップに結果が表示されます。
 
