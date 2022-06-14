@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365エンタープライズ リソース計画 - セキュリティ アーキテクチャ
+title: ID とそれ以降へ - 1 人のアーキテクトの視点
 description: Microsoft のテクニカル プリンシパル アーキテクトである Alex Shteynberg から、Microsoft Enterprise アーキテクチャのトップ デザイン戦略について説明します。
 ms.author: bcarter
 author: brendacarter
@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: ff8fdb34cc69f108b57468d71342a3b1dfb39302
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 065e9a124deb7c064b31666d96a11f076d65abdd
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015084"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060963"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降へ - 1 人のアーキテクトの視点
 

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f2a9f399e447e7b483e664da2e0bf7575b9f55d8
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 0b1db15a9ac896bdcc871177ece532aa01d4bc38
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65599235"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014324"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -446,11 +446,13 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 - 承認されたユーザーが Office アプリで暗号化されたドキュメントを開くと、アプリの上部にある黄色のメッセージ バーにラベル名と説明が表示されます。 暗号化アクセス許可が組織外のユーザーに拡張されている場合は、ドキュメントを開いたときにこのメッセージ バーに表示されるラベル名と説明を慎重に確認します。
 
 - 複数のユーザーが暗号化されたファイルを同時に編集するには、すべて Office for the web を使用しているか、[秘密度ラベルで暗号化されたファイルの共同編集を有効にしていて](sensitivity-labels-coauthoring.md)、すべてのユーザーが[この機能をサポートする Office アプリ](sensitivity-labels-coauthoring.md#prerequisites)を持っている必要があります。この状況が当てはまらず、ファイルが既に開かれている場合、次のことが起こります。
-
+    
   - Office アプリ (Windows、Mac、Android、iOS)で、[**使用中のファイル**] メッセージがファイルをチェック アウトしているユーザーの名前とともにユーザーに表示されます。 その場合、ユーザーは読み取り専用コピーの閲覧またはそのコピーの保存と編集を行うことが可能で、他のユーザーによるファイルの使用が終了したときに通知を受け取ることができます。
   - Web 用 Office では、他のユーザーと同時にドキュメントを編集することはできないというメッセージがユーザーに表示されます。その場合は、[**閲覧表示で開く**] を選択できます。
 
-- iOS および Android 用の Office アプリの[自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5)機能は、暗号化されたファイルに対して無効になっています。 [機密ラベルで暗号化されたファイルの共同編集を有効](sensitivity-labels-coauthoring.md)にしていない場合、この機能は Windows および Mac の暗号化ファイルでも無効になります。 自動保存を有効にする前に削除する必要があるアクセスの制限がファイルに適用されているというメッセージがユーザーに表示されます。
+- [自動保存](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) 機能は、秘密度ラベルで暗号化されたファイルの [有効な共同編集を行っていない場合は、暗号化されたファイルに対して無効になります](sensitivity-labels-coauthoring.md)。 自動保存を有効にする前に削除する必要があるアクセスの制限がファイルに適用されているというメッセージがユーザーに表示されます。
+
+- Office for Windows では、ユーザーがインターネットに接続していない場合に暗号化を適用するラベルがサポートされています。 ただし、他のプラットフォーム (macOS、iOS、Android) の場合、Office アプリでこれらのラベルを適用するには、ユーザーがオンラインである必要があります。 エクスプローラーと PowerShell でこれらのラベルを適用するには、Azure Information Protection 統合ラベル付けクライアントもオンラインである必要があります。 暗号化されたコンテンツを開くために、ユーザーがオンラインである必要はありません。 オフライン アクセスの詳細については、「[Rights Management オフライン アクセス ](#rights-management-use-license-for-offline-access) のライセンスを使用する」 のセクションを参照してください。
 
 - 暗号化されたファイルは、Office アプリ (Windows、Mac、Android、iOS) で開くのに時間がかかる場合があります。
 

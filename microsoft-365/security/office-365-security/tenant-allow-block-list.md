@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a25d1b7ad11c57bc63035086d9a043bcac504c16
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
+ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057607"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66060940"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -73,14 +73,16 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
-- この記事の手順を実行する際には、あらかじめExchange Online でアクセス許可を割り当てる必要があります。
-    - テナント許可/ブロック リストの値を追加および削除するには、次のメンバーである必要があります。
-      - **組織の管理** または **セキュリティ管理者** の役割グループ (**セキュリティ管理者ロール**)
-      - **Security Operator** ロール グループ (**テナント AllowBlockList Manager**)。
-    - テナント許可/ブロック リストへの読み取り専用アクセスの場合は、次のメンバーである必要があります。
-      - **グローバル リーダー**  の役割グループ
-      - **セキュリティ 閲覧者** の役割グループ
-      - **表示専用構成の** 役割グループ。
+- この記事の手順を実行する際には、あらかじめ **Exchange Online** でアクセス許可を割り当てる必要があります。
+  - テナント許可/ブロック リストにエントリを追加および削除するには、次のいずれかの役割グループのメンバーである必要があります。
+    - **組織の管理** ( **セキュリティ管理者** ロール)。
+    - **セキュリティ管理者** ( **セキュリティ管理者** ロール)。
+    - **セキュリティ オペレーター** ( **テナント AllowBlockList Manager** ロール)。
+
+  - テナント許可/ブロック リストへの読み取り専用アクセスの場合は、次のいずれかの役割グループのメンバーである必要があります。
+    - **グローバル リーダー** の役割グループ。
+    - **セキュリティ 閲覧者** の役割グループ。
+    - **表示専用構成の** 役割グループ。
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
@@ -482,7 +484,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 - **インフラストラクチャ**: tms.mx.com
 
 スプーフィングを許可できるのは、そのドメインからのメッセージ *と* 送信インフラストラクチャ ペアからのメッセージだけです。 gmail.com をスプーフィングしようとしている他の送信者は許可されません。 tms.mx.com から発信された他のドメインの送信者からのメッセージは、スプーフィング インテリジェンスによってチェックされます。
-
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>許可エントリまたはブロック エントリを追加した後に必要なもの
 
