@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を含む新しいメールボックスに変換して、Office 365内の非アクティブなメールボックスの内容を回復する方法について説明します。
-ms.openlocfilehash: 027abe49a6e517a783f6458013bdcb4d0faee78b
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 2c679407cb4f7203bb69d88c871bd844694a7c47
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435393"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101582"
 ---
 # <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
 
@@ -109,7 +109,7 @@ ms.locfileid: "65435393"
   Get-Mailbox -InactiveMailboxOnly <identity of inactive mailbox> | Format-List ExternalDirectoryObjectId
   ```
     
-    - **ExternalDirectoryObjectId** プロパティの値がある場合は、メールボックスの保持期間が切れているため、**New-Mailbox -InactiveMailbox** コマンドを実行して非アクティブなメールボックスを回復できます。
+    - **ExternalDirectoryObjectId** プロパティの値がない場合は、メールボックスの保持期間が切れているため、**New-Mailbox -InactiveMailbox** コマンドを実行して非アクティブなメールボックスを回復できます。
     - **ExternalDirectoryObjectId** プロパティの値がある場合は、論理的に削除されたメールボックスの保持期間の有効期限が切れていないため、[ユーザー アカウントを復元](../admin/add-users/delete-a-user.md)してメールボックスを回復する必要があります。
 
 - **非アクティブなメールボックスを回復した後に、アーカイブ メールボックスを有効にすることを検討する。** これにより、復帰したユーザーや新しい従業員が古いメッセージ アーカイブ メールボックスに移動できるようになります。 また、アイテム保持の有効期限が切れると、Exchange Online メールボックスに割り当てられた既定のExchange MRM アイテム保持ポリシーの一部であるアーカイブ ポリシーによって、2 年以上前のアイテムがアーカイブ メールボックスに移動されます。 アーカイブ メールボックスを有効にしない場合は、2 年以上経過しているアイテムがユーザーのプライマリ メールボックスに残ります。 詳細については、「 [アーカイブ メールボックスを有効にする」を](enable-archive-mailboxes.md)参照してください。

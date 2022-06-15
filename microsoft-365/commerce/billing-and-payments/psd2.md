@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jamitche, jmueller
+ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 2019 年 9 月 14 日の時点で、ヨーロッパ経済地域の 31 か国の銀行は、支払いを処理する前にオンライン購入を行っているユーザーの身元を確認する必要があります。
 ms.date: 11/03/2020
-ms.openlocfilehash: 72b0ab8c118d0fa94e3ced5fe2748a11247335ca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3a0bd979cb16de024c2e87f67a8099b952324692
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321111"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101570"
 ---
 # <a name="payment-services-directive-2-and-strong-customer-authentication-for-commercial-customers"></a>商用顧客向けの Payment Services ディレクティブ 2 と強力な顧客認証
 

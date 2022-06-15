@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6faca5dde477908010f4426ff9009f383b63c58c
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 0dd59d2196ebb2c2af80fb53d43a009ff3a367d0
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418612"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102326"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開かれたファイルの除外を構成する
 
@@ -39,8 +39,6 @@ ms.locfileid: "65418612"
 この記事では、除外リストを構成する方法について説明します。
 
 ## <a name="examples-of-exclusions"></a>除外の例
-
-<br/><br/>
 
 |除外|例|
 |---|---|
@@ -99,8 +97,6 @@ PowerShell を使用して、プロセスによって開かれたファイルの
 
 次のように指定できます。\<cmdlet\>
 
-<br/><br/>
-
 |構成アクション|PowerShell コマンドレット|
 |---|---|
 |リストを作成または上書きする|`Set-MpPreference`|
@@ -141,8 +137,6 @@ ExclusionProcess
 特に、疑問符 (`?`) ワイルドカードは使用できず、アスタリスク (`*`) ワイルドカードは完全なパスの末尾でのみ使用できます。 プロセス除外リスト内の項目を定義するときに、ワイルドカードとして環境変数 (など `%ALLUSERSPROFILE%`) を引き続き使用できます。
 
 次の表では、プロセス除外リストでワイルドカードを使用する方法について説明します。
-
-<br/><br/>
 
 |ワイルドカード|使用例|一致する例|
 |---|---|---|

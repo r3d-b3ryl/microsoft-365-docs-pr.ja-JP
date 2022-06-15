@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 3b3f438555be507d046f99838596a6672714e0ad
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 4eccd4d6140810bae4caef5e194082aeb3054217
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670226"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102374"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスを提供する 
 
@@ -128,6 +128,3 @@ ms.locfileid: "65670226"
      この時点で、アナリストアクセスがプロビジョニングされ、各アナリストは顧客のMicrosoft 365 Defenderポータルにアクセスできる必要があります。
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` は、割り当てられたアクセス許可とロールを使用します。
-
-> [!IMPORTANT]
-> 現在、Microsoft 365 Defender ポータルでMicrosoft Defender for Endpointに委任されたアクセスでは、ブラウザー ウィンドウごとに 1 つのテナントにアクセスできます。

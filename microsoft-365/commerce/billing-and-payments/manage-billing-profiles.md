@@ -3,7 +3,7 @@ title: 課金プロファイルを理解する
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 f1.keywords:
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 課金プロファイルが請求書をサポートする方法について説明します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 472b5c4754d686877077133467e33592b5c0b85e
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 92c8bd302d65bc9f7c9376ac148fd49a0ac18e04
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63311867"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102550"
 ---
 # <a name="understand-billing-profiles"></a>課金プロファイルを理解する
 
@@ -53,7 +53,7 @@ ms.locfileid: "63311867"
 > これらの手順に従い、課金プロファイルの一覧が空の場合は、課金プロファイルがなく、この機能を使用できないことを意味します。
 
 1. 管理センターで、[**課金情報**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求と支払い</a>] ページの順に移動します。
-2. [ **課金プロファイル** ] タブを選択し、一覧から課金プロファイルを選択します。
+2. **[ 課金プロファイル]** タブを選択し、一覧から課金プロファイルを選択します。
 
 各課金プロファイルには、次の情報が含まれます。
 

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: 組織の無料のセルフサービス サインアップ サブスクリプションを管理する方法について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: be93a09ca63a4ee24945438be59b725e7d41911c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 58c58c849b72c170e0ccf10de54389bd1245bced
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328387"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102352"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>セルフサービス サインアップ サブスクリプションを管理する
 
@@ -58,4 +58,4 @@ ms.locfileid: "63328387"
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>ディレクトリの削除をブロックするセルフサービス サインアップ サブスクリプションがある
 
-個々のユーザーがサインアップできるセルフサービス サインアップ製品も、Azure AD ディレクトリに認証用のゲスト ユーザーを作成します。 データ損失を回避するために、これらのセルフサービス製品は、ディレクトリから完全に削除されるまでディレクトリの削除をブロックします。 削除できるのは、Azure AD管理者のみです。詳細については、「[Azure Active Directoryのディレクトリを削除する](/azure/active-directory/users-groups-roles/directory-delete-howto)」を参照してください。
+個々のユーザーがサインアップできるセルフサービス サインアップ製品も、Azure AD ディレクトリに認証用のゲスト ユーザーを作成します。 データ損失を回避するために、これらのセルフサービス製品は、ディレクトリから完全に削除されるまでディレクトリの削除をブロックします。 削除できるのは、Azure AD 管理者のみです。詳細については、「[Azure Active Directoryのディレクトリを削除する](/azure/active-directory/users-groups-roles/directory-delete-howto)」を参照してください。

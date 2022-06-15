@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: troubleshooting
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ms.date: 05/01/2021
-ms.openlocfilehash: c8db5e904b56a8ded9b6b90d9273e95b4495c597
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 4ae8b9daec9d80138d3e21f2e82ef8e9f594e730
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318481"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102220"
 ---
 # <a name="problems-with-your-microsoft-365-for-business-product-key"></a>ビジネスプロダクト キーのMicrosoft 365に関する問題
 
@@ -46,7 +46,7 @@ ms.locfileid: "63318481"
 | "入力されたプロダクト キーは期限切れです。別のプロダクト キーを入力してください。" | 現在のサブスクリプションを更新するか、新しいサブスクリプションをアクティブにするには、新しい未使用のプロダクト キーを使用する必要があります。<br/><br/>新しいキーを購入する必要がありますか? [Microsoft ストア](https://go.microsoft.com/fwlink/p/?LinkId=529160)またはサードパーティの販売店にアクセスするか、パートナーと契約している場合は、パートナーに連絡してください。   |
 | "このプロダクト キーは既に使用されています。別のプロダクト キーを入力してください。" | キーをあなたか組織内のメンバーが既に使っていないことをご確認ください。 キーがまだ使われていない場合、パートナーまたはプロダクト キーのご購入元の販売店にお問い合わせください。 |
 | "申し訳ございません。お客様のリクエストを処理できません。しばらく待ってからやり直してください。" | それ以降の試行で同じエラー メッセージが 15 分を超える場合は、 [サポートにお問い合わせください](../admin/get-help-support.md)。 |
-| 「要求されたサブスクリプションは使用できません。次のいずれかの理由による可能性があります。このプランの対象ではありません - お客様の国でサービスが提供されていません - 同じ試用版を 2 回使ったり選んだりすることはできません。問題が解決しない場合は、Microsoft のサポートにお問い合わせください。」 | [supportcontact サポート](../admin/get-help-support.md)[にお問い合わせください](../admin/get-help-support.md)。 パートナーと契約している場合は、パートナーに連絡して、サポートを受けてください。 |
+| 「要求されたサブスクリプションは使用できません。次のいずれかの理由による可能性があります。このプランの対象ではありません - お客様の国でサービスが提供されていません - 同じ試用版を 2 回使ったり選んだりすることはできません。問題が解決しない場合は、Microsoft のサポートにお問い合わせください。」 | [サポートにお問い](../admin/get-help-support.md)[合わせください](../admin/get-help-support.md)。 パートナーと契約している場合は、パートナーに連絡して、サポートを受けてください。 |
 | "このプランで許可されているよりも多くのユーザー ライセンスを追加しました。 最大はユーザー ライセンスです \<x\> 。 このプロダクト キーを削除し、ユーザー ライセンスを少なくするプロダクト キーを入力します。 | 販売店またはパートナーに問い合わせてください。 このMicrosoft 365 サブスクリプションで使用できるライセンスを超えるライセンスを購入しました。 |
 | "プロダクト キーを使うには全体管理者または課金管理者でなければいけません。" | アクセス許可が課金管理者またはグローバル管理者として設定されていることを確認します。これを確認するには、職場または学校[のアカウントでMicrosoft 365にサインイン](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)し、管理センターに移動します。 <br/><br/>In the admin center, select **Users** \> **Active users**. In **Filters**, choose **Global admins** or **Billing admins**.  <br/><br/>結果の一覧に表示されていることを確認します。 |
 

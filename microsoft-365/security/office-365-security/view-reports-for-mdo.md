@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08fd6e2fed34296b42fb3b12bec9b5b2b4cb91f8
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 551d2f0f2da872ff24da2bd0d691eea775894c08
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535848"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102572"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでDefender for Office 365レポートを表示する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -48,7 +48,7 @@ Microsoft Defender for Office 365組織 (Microsoft 365 E5 サブスクリプシ�
 
 ### <a name="download-reports"></a>レポートのダウンロード
 
-1. Microsoft 365 Defender ポータルで<https://security.microsoft.com>**、ReportsEmail** >  **& コラボレーション** \> **レポートに移動してダウンロードします**。 **[レポートのダウンロード**] ページに直接移動するには、次を使用します<https://security.microsoft.com/ReportsForDownload?viewid=custom>。
+Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート** > **メール] &コラボレーション** \> **レポートに移動してダウンロードします**。 **[レポートのダウンロード**] ページに直接移動するには、次を使用します<https://security.microsoft.com/ReportsForDownload?viewid=custom>。
 
 :::image type="content" source="../../media/email-collaboration-download-reports.png" alt-text="Microsoft 365 Defender ポータルの [電子メール & コラボレーション レポート] ページ" lightbox="../../media/email-collaboration-download-reports.png":::
 
@@ -68,7 +68,7 @@ Microsoft Defender for Office 365組織 (Microsoft 365 E5 サブスクリプシ�
 > [!NOTE]
 > このレポートは非推奨になりました。 [脅威保護の状態レポート](#threat-protection-status-report)でも、同じ情報を入手できます。
 
-## <a name="mail-latency-report"></a>メール待機時間レポート
+## <a name="mail-latency-report"></a>メール遅延レポート
 
 **[メール待機時間] レポート** には、組織内で発生したメール配信と起爆待機時間の集計ビューが表示されます。 サービス内のメール配信時間はさまざまな要因の影響を受け、絶対配信時間 (秒単位) は成功や問題を示す適切な指標ではないことがよくあります。 ある日の配信時間が遅い場合は、別の日の平均配送時間、またはその逆と見なされる場合があります。 これにより、他のメッセージの観察された配信時間に関する統計データに基づいて、メッセージ配信を修飾しようとします。
 
@@ -125,7 +125,7 @@ Microsoft Defender for Office 365組織 (Microsoft 365 E5 サブスクリプシ�
 
 **[上位の送信者と受信者] レポートには、** EOP とDefender for Office 365保護機能の上位受信者が表示されます。 詳細については、「 [上位の送信者と受信者のレポート](view-email-security-reports.md#top-senders-and-recipients-report)」を参照してください。
 
-## <a name="url-protection-report"></a>URL 保護レポート
+## <a name="url-protection-report"></a>URL の保護に関するレポート
 
 **URL 保護レポート** には、検出された脅威の概要と傾向のビューと、[セーフ リンク](safe-links.md)の一部として URL クリックに対して実行されたアクションが表示されます。 [ユーザークリックの追跡] オプションが選択されていない場合、セーフ リンク ポリシーが適用された **ユーザーからのクリック** データは、このレポートには表示されません。
 
@@ -149,7 +149,7 @@ Microsoft Defender for Office 365組織 (Microsoft 365 E5 サブスクリプシ�
 - **ブロック**: [ブロック] をクリックします。
 - **テナント管理者によってブロックされる**: セーフ リンク ポリシーでブロックされたクリック数。
 - **ブロックとクリック: ユーザーがブロックされた** URL にクリックスルーするブロックされたクリック。
-- **テナント管理者によってブロックされ、クリックされた** 場合: 管理者はリンクをブロックしましたが、ユーザーはクリックスルーしました。
+- **テナント管理者によってブロックされ、クリックされた**: 管理リンクはブロックされましたが、ユーザーはクリックスルーしました。
 - **スキャン中にクリックされた** 場合: ユーザーが保留中のスキャン ページをクリックして URL に移動する場所をクリックします。
 - **保留中のスキャン: スキャン** の判定を保留中の URL をクリックします。
 
@@ -224,11 +224,11 @@ PowerShell レポート コマンドレット:
 
 |レポート|トピック|
 |---|---|
-|上位送信者および受信者|[Get-MailTrafficTopReport](/powershell/module/exchange/get-mailtraffictopreport) <p> [Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
+|上位送信者および受信者|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |上位マルウェア|[Get-MailTrafficSummaryReport](/powershell/module/exchange/get-mailtrafficsummaryreport)|
 |メール トラフィック|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport) <p> [Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |安全なリンク|[Get-SafeLinksAggregateReport](/powershell/module/exchange/get-safelinksaggregatereport) <p> [Get-SafeLinksDetailReport](/powershell/module/exchange/get-safelinksdetailreport)|
-|侵害されたユーザー|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
+|セキュリティ侵害を受けたユーザー|[Get-CompromisedUserAggregateReport](/powershell/module/exchange/get-compromiseduseraggregatereport) <p> [Get-CompromisedUserDetailReport](/powershell/module/exchange/get-compromiseduserdetailreport)|
 |メール フローの状態|[Get-MailflowStatusReport](/powershell/module/exchange/get-mailflowstatusreport)|
 |スプーフィングされたユーザー|[Get-SpoofMailReport](/powershell/module/exchange/get-spoofmailreport)|
 
@@ -239,7 +239,7 @@ PowerShell レポート コマンドレット:
 - **組織の管理**
 - **セキュリティ管理者**
 - **セキュリティ閲覧者**
-- **グローバル リーダー**
+- **グローバル閲覧者**
 
 詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 

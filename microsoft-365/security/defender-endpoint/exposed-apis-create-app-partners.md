@@ -1,7 +1,7 @@
 ---
-title: ユーザーなしでMicrosoft Defender for Endpointにアクセスするアプリケーションを作成する
+title: Microsoft Defender for Endpoint API を介したパートナー アクセス
 ms.reviewer: ''
-description: ユーザーなしでMicrosoft Defender for Endpointにプログラムでアクセスできるように Web アプリを設計する方法について説明します。
+description: ユーザーに代わってMicrosoft Defender for Endpointにプログラムでアクセスできるように Web アプリを設計する方法について説明します。
 keywords: apis, graph api, サポートされている API, アクター, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度な捜索, クエリ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5f17f29f083df6e567218363027e7677c87ee154
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 7ca212cf6cdacdaf374dbe65f4fd88c74712bb34
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268874"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101846"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API を介したパートナー アクセス
 
@@ -134,13 +134,13 @@ Microsoft Defender for Endpointは、一連のプログラム API を通じて�
 
    さらに、顧客にテナント ID を要求し、トークンを取得するときに将来使用するために保存する必要があります。
 
-6. **完成です！** アプリケーションが正常に登録されました。 トークンの取得と検証については、以下の例を参照してください。
+6. **完了!** アプリケーションが正常に登録されました。 トークンの取得と検証については、以下の例を参照してください。
 
 ## <a name="get-an-access-token-example"></a>アクセス トークンの例を取得する
 
 **メモ：** 顧客に代わってアクセス トークンを取得するには、次のトークン取得で顧客のテナント ID を使用します。
 
-AAD トークンの詳細については、「[AAD チュートリアル」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)参照してください。
+AAD トークンの詳細については、[AAD チュートリアルを](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)参照してください
 
 ### <a name="using-powershell"></a>PowerShell の使用
 
@@ -168,33 +168,35 @@ return $token
 
 ### <a name="using-c"></a>C の使用#
 
-> 次のコードは、Nuget Microsoft.IdentityModel.Clients.ActiveDirectory でテストされました
+> 次のコードは、Nuget Microsoft.Identity.Client でテストされました
 
 > [!IMPORTANT]
-> [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。   アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
+> [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。 アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
 
 - 新しいコンソール アプリケーションを作成する
-- [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGetインストールする
+- [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGetインストールする
 - 以下を使用して追加する
 
     ```console
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 - アプリケーションに次のコードをコピー/貼り付けます (3 つの変数を更新してください。 `tenantId``appId``appSecret`
 
-    ```console
+    ```csharp
     string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
     string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
-    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place!
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.microsoftonline.com";
-    const string wdatpResourceId = "https://api.securitycenter.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(appId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="using-python"></a>Python の使用

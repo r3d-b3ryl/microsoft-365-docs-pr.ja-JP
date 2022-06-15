@@ -3,7 +3,7 @@ title: 課金内容または請求書の内容を理解する
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 f1.keywords:
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
 ms.date: 05/04/2021
-ms.openlocfilehash: ce057a9a3fc72ab1ba818047112451f984894d99
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.openlocfilehash: 4d5bd00726004d0e9dce3f6d284546ba81fb7edd
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63315807"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101780"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 

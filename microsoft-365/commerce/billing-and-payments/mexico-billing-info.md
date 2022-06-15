@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,18 +20,18 @@ ms.custom:
 - AdminSurgePortfolio
 monikerRange: o365-worldwide
 ms.date: 11/20/2020
-ms.openlocfilehash: 91bd33e3f8e178136267b95c2e9133b5923ff703
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8248a9947f30edfa1db9dc002db6e8dd58ca9078
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325433"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102484"
 ---
 # <a name="billing-information-for-microsoft-365-for-business-in-mexico"></a>メキシコでのビジネス向けMicrosoft 365の課金情報
 
 ## <a name="1-where-can-i-get-an-invoice-for-my-microsoft-365-for-business-purchase"></a>1. Microsoft 365の請求書はどこで受け取ることができますか?
 
-請求書は、購入が確認されてから 24 時間後に、登録済みの請求通知メール アドレスに送信されます。 Microsoft 365 管理センターで請求書をダウンロードするには、**BillingBills** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">&支払い</a>ページに移動します。
+請求書は、購入が確認されてから 24 時間後に、登録済みの請求通知メール アドレスに送信されます。 Microsoft 365 管理センターで請求書をダウンロードするには、**課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">請求書&支払い</a>ページに移動します。
 
 > [!IMPORTANT]
 > 請求書に RFC を含める場合は、購入確認の前に追加する必要があります。
@@ -44,7 +44,7 @@ ms.locfileid: "63325433"
 
 ### <a name="for-your-future-purchases"></a>今後の購入の場合
 
-RFC を追加または変更して、情報がビジネス購入の将来のMicrosoft 365に反映されるようにすることができます。 RFC を追加または変更するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">BillingBilling</a>  >  アカウント ページに移動します。
+RFC を追加または変更して、情報がビジネス購入の将来のMicrosoft 365に反映されるようにすることができます。 RFC を追加または変更するには、[ **課金** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">アカウント</a> ] ページに移動します。
 
 > [!NOTE]
 > 毎月または毎年の繰り返し課金サブスクリプションを使用している場合、RFC の追加または変更は、次の料金の請求書に反映されます。

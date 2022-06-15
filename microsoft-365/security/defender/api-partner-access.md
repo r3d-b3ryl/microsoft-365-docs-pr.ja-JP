@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 612cbb4005285f46594bc900cbbc14497b72ffec
-ms.sourcegitcommit: 265a4fb38258e9428a1ecdd162dbf9afe93eb11b
+ms.openlocfilehash: 43bb018abe6a19464d7e52493ed1b4ccd1f15140
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "65268826"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102418"
 ---
 # <a name="create-an-app-with-partner-access-to-microsoft-365-defender-apis"></a>Microsoft 365 Defender API へのパートナー アクセス権を持つアプリを作成する
 
@@ -82,21 +82,21 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 3. 登録フォームで、次の手順を実行します。
 
    - アプリケーションの名前を選択します。
-   - **サポートされているアカウントの種類** から、**任意の組織のディレクトリ (任意のAzure AD ディレクトリ) の [アカウント] - [マルチテナント**] を選択します。
+   - **サポートされているアカウントの種類** から、**任意の組織ディレクトリ (任意の Azure AD ディレクトリ) の [アカウント] - [マルチテナント**] を選択します。
    - **[リダイレクト URI]** セクションに入力します。 種類 **Web** を選択し、リダイレクト URI を **https://portal.azure.com**.
 
    フォームへの入力が完了したら、[登録] を選択 **します**。
 
    :::image type="content" source="../..//media/atp-api-new-app-partner.png" alt-text="Microsoft 365 Defender ポータルのアプリケーションの登録セクション" lightbox="../..//media/atp-api-new-app-partner.png":::
 
-4. アプリケーション ページで、組織が>を使用する **API PermissionsAdd** >  **permissionAPI** >  **を** 選択し、「**Microsoft Threat Protection」** と入力して、**Microsoft Threat Protection** を選択します。 これで、アプリはMicrosoft 365 Defenderにアクセスできるようになりました。
+4. アプリケーション ページで、組織が>**を使用する** **API アクセス許可** > **の追加アクセス許可** >  API を選択し、「**Microsoft Threat Protection」** と入力して、**Microsoft Threat Protection** を選択します。 これで、アプリはMicrosoft 365 Defenderにアクセスできるようになりました。
 
    > [!TIP]
    > *Microsoft Threat Protection* はMicrosoft 365 Defenderの以前の名前であり、元の一覧には表示されません。 テキスト ボックスに名前を書き込み始めて、その名前が表示されるのを確認する必要があります。
 
    :::image type="content" source="../../media/apis-in-my-org-tab.PNG" alt-text="Microsoft 365 Defender ポータルの [API の使用状況] セクション" lightbox="../../media/apis-in-my-org-tab.PNG":::
 
-5. [ **アプリケーションのアクセス許可**] を選択します。 シナリオに関連するアクセス許可 ( **Incident.Read.All** など) を選択し、[ **アクセス許可の追加**] を選択します。
+5. [**アプリケーションのアクセス許可**] を選択します。 シナリオに関連するアクセス許可 ( **Incident.Read.All** など) を選択し、[ **アクセス許可の追加**] を選択します。
 
    :::image type="content" source="../../media/request-api-permissions.PNG" alt-text="Microsoft 365 Defender ポータルのアプリケーションのアクセス許可ウィンドウ" lightbox="../../media/request-api-permissions.PNG":::
 
@@ -140,12 +140,12 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
    また、テナント ID をユーザーに要求する必要もあります。 テナント ID は、アクセス トークンの取得に使用される識別子の 1 つです。
 
-- **完成です！** アプリケーションが正常に登録されました。
+- **完了!** アプリケーションが正常に登録されました。
 - トークンの取得と検証については、以下の例を参照してください。
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-Azure AD トークンの詳細については、[Azure ADチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
+Azure AD トークンの詳細については、 [Azure AD のチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
 
 > [!IMPORTANT]
 > このセクションの例では、テスト目的でシークレット値を貼り付けすることをお勧めしますが、運用環境で実行されているアプリケーションに **シークレットをハードコーディングしないでください** 。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates)を使用すると、アプリのシークレットをセキュリティで保護することができます。 アプリを保護する方法の実用的な例については、「[Azure Key Vaultを使用してサーバー アプリのシークレットを管理する」を参照してください](/learn/modules/manage-secrets-with-azure-key-vault/)。
@@ -183,33 +183,35 @@ return $token
 ### <a name="get-an-access-token-using-c"></a>C を使用してアクセス トークンを取得する\#
 
 > [!NOTE]
-> 次のコードは、Nuget Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 でテストされました。
+> 次のコードは、Nuget Microsoft.Identity.Client 3.19.8 でテストされました。
 
 > [!IMPORTANT]
 > [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。   アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
 
 1. 新しいコンソール アプリケーションを作成します。
-1. [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/) NuGetインストールします。
+1. [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGetインストールします。
 1. 次の行を追加します。
 
     ```C#
-    using Microsoft.IdentityModel.Clients.ActiveDirectory;
+    using Microsoft.Identity.Client;
     ```
 
 1. 次のコードをコピーしてアプリに貼り付けます (次の 3 つの変数を更新することを忘れないでください。 `tenantId``clientId``appSecret`
 
     ```C#
-    string tenantId = ""; // Paste your directory (tenant) ID here
-    string clientId = ""; // Paste your application (client) ID here
-    string appSecret = ""; // Paste your own app secret here to test, then store it in a safe place, such as the Azure Key Vault!
+    string tenantId = "00000000-0000-0000-0000-000000000000"; // Paste your own tenant ID here
+    string appId = "11111111-1111-1111-1111-111111111111"; // Paste your own app ID here
+    string appSecret = "22222222-2222-2222-2222-222222222222"; // Paste your own app secret here for a test, and then store it in a safe place! 
+    const string authority = https://login.microsoftonline.com;
+    const string audience = https://api.securitycenter.microsoft.com;
 
-    const string authority = "https://login.windows.net";
-    const string wdatpResourceId = "https://api.security.microsoft.com";
+    IConfidentialClientApplication myApp = ConfidentialClientApplicationBuilder.Create(appId).WithClientSecret(appSecret).WithAuthority($"{authority}/{tenantId}").Build();
 
-    AuthenticationContext auth = new AuthenticationContext($"{authority}/{tenantId}/");
-    ClientCredential clientCredential = new ClientCredential(clientId, appSecret);
-    AuthenticationResult authenticationResult = auth.AcquireTokenAsync(wdatpResourceId, clientCredential).GetAwaiter().GetResult();
-    string token = authenticationResult.AccessToken;
+    List<string> scopes = new List<string>() { $"{audience}/.default" };
+
+    AuthenticationResult authResult = myApp.AcquireTokenForClient(scopes).ExecuteAsync().GetAwaiter().GetResult();
+
+    string token = authResult.AccessToken;
     ```
 
 ### <a name="get-an-access-token-using-python"></a>Python を使用してアクセス トークンを取得する

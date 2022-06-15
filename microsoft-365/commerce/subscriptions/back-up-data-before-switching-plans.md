@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,14 +21,14 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Microsoft 365プランを変更する前に、コンテンツをバックアップOutlook、OneDrive、Yammer、SharePointします。
+description: Microsoft 365プランを変更する前に、コンテンツをBackup Outlook、OneDrive、Yammer、SharePointします。
 ms.date: 03/17/2021
-ms.openlocfilehash: 57f897b353cfe61d5c9cae56c1d367d5e57a29ca
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fd5239deb88fbf9b87df7e62d85a3d2cc18e1df7
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317935"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102506"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>ビジネス プランのMicrosoft 365を切り替える前にデータをバックアップする
 

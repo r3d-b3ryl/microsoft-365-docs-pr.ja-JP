@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: fdba7ee1b1cf2f46bd17c648c7cda48f1ca65490
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 41f2763d73bbb9ed0b7ae32dce431cb2c1a4d71f
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755226"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102594"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーの代わりにMicrosoft 365 Defender API にアクセスするアプリを作成する
 
@@ -79,7 +79,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
    - **アプリケーションの種類:** パブリック クライアント
    - **リダイレクト URI:** https://portal.azure.com
 
-4. アプリケーション ページで、組織が>を使用する **API PermissionsAdd** >  **permissionAPI** >  **を** 選択し、「**Microsoft Threat Protection」** と入力して、**Microsoft Threat Protection** を選択します。 これで、アプリはMicrosoft 365 Defenderにアクセスできるようになりました。
+4. アプリケーション ページで、組織が>**を使用する** **API アクセス許可** > **の追加アクセス許可** >  API を選択し、「**Microsoft Threat Protection」** と入力して、**Microsoft Threat Protection** を選択します。 これで、アプリはMicrosoft 365 Defenderにアクセスできるようになりました。
 
    > [!TIP]
    > *Microsoft Threat Protection* はMicrosoft 365 Defenderの以前の名前であり、元の一覧には表示されません。 テキスト ボックスに名前を書き込み始めて、その名前が表示されるのを確認する必要があります。
@@ -105,30 +105,33 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-Azure Active Directory トークンの詳細については、[Azure ADチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
+Azure Active Directory トークンの詳細については、[Azure AD のチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
 
-### <a name="get-an-access-token-using-powershell"></a>PowerShell を使用してアクセス トークンを取得する
+### <a name="get-an-access-token-on-behalf-of-a-user-using-powershell"></a>PowerShell を使用してユーザーに代わってアクセス トークンを取得する
+
+委任されたアクセス許可を持つアクセス トークンを取得するには、MSAL.PS ライブラリを使用します。 次のコマンドを実行して、ユーザーの代わりにアクセス トークンを取得します。
 
 ```PowerShell
-if(!(Get-Package adal.ps)) { Install-Package -Name adal.ps } # Install the ADAL.PS package in case it's not already present
+Install-Module -Name MSAL.PS # Install the MSAL.PS module from PowerShell Gallery
 
-$tenantId = '' # Paste your directory (tenant) ID here.
-$clientId = '' # Paste your application (client) ID here.
-$redirectUri = '' # Paste your app's redirection URI
+$TenantId = " " # Paste your directory (tenant) ID here.
+$AppClientId="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" # Paste your application (client) ID here.
 
-$authority = "https://login.windows.net/$tenantId"
-$resourceUrl = 'https://api.security.microsoft.com'
+$MsalParams = @{
+   ClientId = $AppClientId
+   TenantId = $TenantId
+   Scopes   = 'https://graph.microsoft.com/User.Read.All','https://graph.microsoft.com/Files.ReadWrite'
+}
 
-$response = Get-ADALToken -Resource $resourceUrl -ClientId $clientId -RedirectUri $redirectUri -Authority $authority -PromptBehavior:Always
-$response.AccessToken | clip
-
-$response.AccessToken
+$MsalResponse = Get-MsalToken @MsalParams
+$AccessToken  = $MsalResponse.AccessToken
+ 
+$AccessToken # Display the token in PS console
 ```
-
 ## <a name="validate-the-token"></a>トークンを検証する
 
 1. トークンをコピーして [JWT](https://jwt.ms) に貼り付けてデコードします。
-1. デコードされたトークン内の *ロール* 要求に必要なアクセス許可が含まれていることを確認します。
+2. デコードされたトークン内の *ロール* 要求に必要なアクセス許可が含まれていることを確認します。
 
 次の図では、アプリから取得したデコードされたトークンと、アクセス許可、および```AdvancedHunting.Read.All```アクセス許可を```Incidents.Read.All``````Incidents.ReadWrite.All```確認できます。
 

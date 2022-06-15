@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: ビジネス サブスクリプションのMicrosoft 365のアドオンを購入および管理する方法について説明します。
 ms.date: 04/02/2021
-ms.openlocfilehash: ef24e1f6b743c19adc1e7f3120d76e90ebd82192
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 28c155eaa10a578d10126c563945859e6931f180
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63329279"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101648"
 ---
 # <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
 

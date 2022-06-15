@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: lishepar, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 description: 中国の 21Vianet が運営するOffice 365で支払いを行った後、Fapiao 要求を 21Vianet Fapiao 管理システムに送信する方法について説明します。
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: c46ed2c68275bdb3ed28950dd85ba1ad756a1fdf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 8d74a40502fbe1af04a34acfde005980e3784053
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323459"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101934"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>21Vianet が運営するOffice 365に Fapiao を申請する
 
@@ -109,7 +109,7 @@ Fapiao が使用されていない場合、システムは通知を表示し、F
   
 ![21Vianet Fapiao 管理システムが使用されていない場合に表示されるエラー メッセージ。](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>FAQ
+## <a name="faqs"></a>よく寄せられる質問
 
 ### <a name="what-services-can-i-get-from-online-support"></a>オンライン サポートから取得できるサービスは何ですか?
 

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,22 +21,22 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft でアカウントを閉じると、ライセンス、ユーザー、ユーザー データを含め、アカウントに関連するすべての情報が削除されます。
 ms.date: 04/02/2021
-ms.openlocfilehash: b1ac828d047d2c2b9f39185a66ccc77976b8324b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: c036a4cda929d58265a088b15a43772caacb0b94
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63317291"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102462"
 ---
 # <a name="close-your-account"></a>アカウントの使用を停止する
 
 Microsoft でのアカウントの使用を停止すると、アカウントに関連するすべての情報が削除されます。 この情報には、サブスクリプション、ライセンス、支払方法、ユーザー、ユーザー データが含まれます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 このプロセスを開始する前に、保持する必要があるすべてのデータをバックアップしてください。
 
-この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」をご覧ください。
+この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="step-1-delete-users"></a>手順 1: ユーザーを削除する
 
@@ -48,7 +48,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell コマンドレットを使用して、ユーザーを一括で削除することもできます。
 
-組織で Microsoft Azure Active Directory と同期する Active Directory (Azure AD) を使用している場合は、代わりに Active Directory からユーザー アカウントを削除します。 手順については、「[Azure Active Directoryでユーザーを一括削除する](/azure/active-directory/users-groups-roles/users-bulk-delete)」を参照してください。
+組織で Microsoft Azure Active Directory (Azure AD) と同期する Active Directory を使用している場合は、代わりに Active Directory からユーザー アカウントを削除します。 手順については、「[Azure Active Directoryでユーザーを一括削除する](/azure/active-directory/users-groups-roles/users-bulk-delete)」を参照してください。
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>手順 2: アクティブなすべてのサブスクリプションを取り消す
 
@@ -82,7 +82,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>手順 5: Azure Active Directoryのディレクトリを削除する
 
-1. グローバル管理者 アカウントを<a href="https://aad.portal.azure.com/" target="_blank">使用して、Azure AD管理センター</a>にサインインします。
+1. グローバル管理者 アカウントを使用して <a href="https://aad.portal.azure.com/" target="_blank">Azure AD 管理センター</a>にサインインします。
 2. **Azure Active Directory** を選択します。
 3. 削除する組織に切り替えます。
 4. [ **テナントの削除]** を選択します。

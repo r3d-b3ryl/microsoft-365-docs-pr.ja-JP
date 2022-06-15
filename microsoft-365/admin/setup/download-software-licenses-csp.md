@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: mijeffer, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 - admindeeplinkMAC
 description: クラウド ソリューション プロバイダー (CSP) プログラムを通じて購入した永続ソフトウェアのソフトウェアおよび製品ライセンス キーをダウンロードする方法について説明します。
 ms.date: 01/27/2021
-ms.openlocfilehash: 212aaac02772e5b695cf7ee6f3f256a9fd596c1b
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 58b35335e1d00207be664700694edfb46cc8fdec
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468900"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101890"
 ---
 # <a name="download-perpetual-software-and-product-license-keys-in-microsoft-365"></a>Microsoft 365で永続的なソフトウェアと製品のライセンス キーをダウンロードする
 

@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: nalinkla, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MET150
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: adc76ff3fbfa5fd81893f0b260e76018288350f1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: d7969821cceb0864ac2ee20674e7aa67d8a12e39
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328429"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101600"
 ---
 # <a name="change-plans-manually"></a>計画を手動で変更する
 
@@ -84,7 +84,7 @@ Office 365 プランから Microsoft 365 プランにアップグレードする
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. [ **アクティブなユーザー** ] ページで、ライセンスを割り当てるユーザーを選択します。
 
@@ -92,7 +92,7 @@ Office 365 プランから Microsoft 365 プランにアップグレードする
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
-1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
+1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
 
 2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
 

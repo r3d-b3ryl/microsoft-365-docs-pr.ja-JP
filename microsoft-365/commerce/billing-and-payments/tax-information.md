@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: mijeffer, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -21,12 +21,12 @@ ms.custom:
 - AdminTemplateSet
 description: さまざまなリージョンのビジネス サブスクリプションに対してMicrosoft 365に対して課金される税金の額を確認します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 35442bc495b6179a844bdbe3a6b98a4f58556140
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731231"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66101626"
 ---
 # <a name="tax-information"></a>税金情報
 
@@ -148,7 +148,7 @@ Microsoft Corporation によって請求が行われた場合 ([請求書を参�
 
 売上税は単価に対して計算され、集計されます。
 
-例:
+例として以下のようなものがあります。
 
 >*(単価 X 税率)X 数量 = 総売上税*
 
