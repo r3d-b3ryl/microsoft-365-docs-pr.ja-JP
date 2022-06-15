@@ -15,21 +15,17 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 68695ee348b11fcc10f3a82d2cba2d2c168af666
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e491e6d093396e54983e96eb1ca96c5e713565ba
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174391"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089178"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのチュートリアルとシミュレーション
 
 Microsoft Defender for Businessの設定が完了したばかりの場合は、Defender for Business のしくみをどこから確認したらいいか疑問に思うかもしれません。 この記事では、試すシナリオと、Defender for Business で使用できるいくつかのチュートリアルとシミュレーションについて説明します。 これらのリソースは、Defender for Business が会社でどのように機能するかを確認するのに役立ちます。
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="try-these-scenarios"></a>これらのシナリオを試す
 
@@ -37,7 +33,7 @@ Microsoft Defender for Businessの設定が完了したばかりの場合は、D
 
 | シナリオ  | 説明  |
 |---------|---------|
-| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business では、各デバイスでダウンロードして実行するスクリプトを使用して、Windows デバイスと macOS デバイスをオンボードできます。 このスクリプトでは、Azure Active Directory (Azure AD) を使用して信頼を作成し (その信頼がまだ存在しない場合)、デバイスを Microsoft Intune (Intuneがある場合) に登録し、デバイスを Defender for Business にオンボードします。 詳細については、「[デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)」を参照してください。         |
+| ローカル スクリプトを使用したデバイスのオンボード     | Defender for Business では、各デバイスでダウンロードして実行するスクリプトを使用して、デバイスのWindowsとmacOSをオンボードできます。 このスクリプトは、Azure Active Directory (Azure AD) を使用して信頼を作成し (その信頼がまだ存在しない場合)、デバイスを Microsoft Intune (Intuneがある場合) に登録し、デバイスを Defender for Business にオンボードします。 詳細については、「[デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)」を参照してください。         |
 | Microsoft エンドポイント マネージャー管理センターを使用してデバイスをオンボードする     | Defender for Business を取得する前に既にIntuneを使用していた場合は、引き続きエンドポイント マネージャー管理センターを使用してデバイスをオンボードできます。 Microsoft Intuneを使用して、Windows、macOS、iOS、Android デバイスをオンボードしてみてください。 詳細については、「[Microsoft Intuneでのデバイス登録](/mem/intune/enrollment/device-enrollment)」を参照してください。        |
 | セキュリティ ポリシーを編集する     | Defender for Business でセキュリティ ポリシーを管理している場合は、 **デバイス構成** ページを使用してポリシーを表示し、必要に応じてポリシーを編集します。 Defender for Business には、推奨設定を使用して会社のデバイスがオンボードされるとすぐにセキュリティで保護される既定のポリシーが付属しています。 既定のポリシーを保持し、編集し、ビジネス ニーズに合わせて独自のポリシーを定義できます。 詳細については、「[Microsoft Defender for Businessでポリシーを表示または編集](mdb-view-edit-policies.md)する」を参照してください。        |
 | シミュレートされた攻撃を実行する   | Defender for Business では、いくつかのチュートリアルとシミュレーションを利用できます。 これらのチュートリアルとシミュレーションは、Defender for Business の脅威保護機能が会社でどのように機能するかを直接示すために設計されています。 シミュレートされた攻撃をチームのトレーニング演習として使用することもできます。 1 つ以上のチュートリアルを試すには、「[Microsoft Defender for Businessに推奨されるチュートリアル」を](#recommended-tutorials-for-defender-for-business)参照してください。         |

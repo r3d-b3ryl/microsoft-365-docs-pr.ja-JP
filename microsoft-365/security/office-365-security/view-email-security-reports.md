@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef22f0873e6a61864cf3b2abf2d8a4bc26f80c4d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 5501477e14bd5053f6adbe597642470854616a5e
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078988"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089972"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する
 
@@ -158,7 +158,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 - **Date**
 - **DLP ポリシー** (**DLP Exchange トランスポート ルールのみでデータを表示**)
 - **トランスポート ルール**
-- **[件名]**
+- **件名**
 - **[送信者のアドレス]**
 - **受信者の住所**
 - **重大度**
@@ -424,7 +424,7 @@ Microsoft 365 Defender ポータルで<https://security.microsoft.com>レポー�
   - **Pending**
   - **Completed**
 
-グラフの下の詳細テーブルには、同じ情報が表示され、[**電子メール & コラボレーション**\>申請] の [**分析用に送信]** タブと同じ **[グループ**] または [**列のカスタマイズ**] オプションが **表示されます**。 詳細については、「 [Microsoft への管理者の提出を表示する」を参照してください](admin-submission.md#view-urls-admin-submissions-to-microsoft)。
+グラフの下の詳細テーブルには、同じ情報が表示され、[**電子メール & コラボレーション**\>申請] の [**分析用に送信]** タブと同じ **[グループ**] または [**列のカスタマイズ**] オプションが **表示されます**。 詳細については、「 [Microsoft へのメール管理者の提出を表示する」を参照してください](admin-submission.md#view-email-admin-submissions-to-microsoft)。
 
 [ **申請] ページの** [ **[エクスポート](#export-report)** ] ボタンを使用できます。
 
@@ -517,7 +517,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -568,7 +568,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -624,7 +624,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **件名**
+- **[件名]**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -729,7 +729,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **[件名]**
+- **件名**
 - **送信者**
 - **受信者**
 - **検出テクノロジ**: グラフと同じ検出テクノロジ値。
@@ -814,7 +814,7 @@ Microsoft 365 Defender ポータルでレポートを表示するには、**レ�
 グラフの下の詳細テーブルでは、次の情報を使用できます。
 
 - **Date**
-- **件名**
+- **[件名]**
 - **送信者**
 - **受信者**
 - **システムオーバーライド**

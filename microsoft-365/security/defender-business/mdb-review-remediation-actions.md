@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 438d43548b4318499c44aea65399a7d5a3a5f43d
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5c73b840b127770c4581dda4d03b3c95066df515
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174360"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089530"
 ---
 # <a name="review-remediation-actions-in-the-action-center"></a>アクション センターで修復アクションを確認する
 
@@ -34,10 +34,6 @@ ms.locfileid: "65174360"
 - [アクション センターを使用する方法](#how-to-use-the-action-center)
 - [修復アクション](#remediation-actions)
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="how-to-use-the-action-center"></a>アクション センターを使用する方法
 

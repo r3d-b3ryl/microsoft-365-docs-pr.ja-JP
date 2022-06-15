@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: f5a6ec9cd0d221cd025f4bce71008b9d01749590
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 1b8871cba184772bd82e5e608c6e38113d4b0024
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940428"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012882"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -264,11 +264,11 @@ ProgID:Media AND ProgID:Meeting
 InformationProtectionLabelId:<GUID>
 ```
 
-GUID を見つけるには、[セキュリティ/コンプライアンス センター PowerShell](/powershell/exchange/scc-powershell) で [Get-Label](/powershell/module/exchange/get-label) コマンドレットを使用します。
+GUID を見つけるには、[セキュリティ/コンプライアンス PowerShell](/powershell/exchange/scc-powershell) で [Get-Label](/powershell/module/exchange/get-label) コマンドレットを使用します。
 
-````powershell
+```powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
+```
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>トレーニング可能な分類子を使用して、ラベルをコンテンツに自動的に適用する
 
@@ -345,7 +345,7 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 予期されるラベルが 7 日経っても表示されない場合は、Microsoft Purview コンプライアンス センターの **[ラベル ポリシー]** ページから選択して、自動適用ポリシーの **状態** を確認します。 **オフ (エラー)** の状態が表示され、場所の詳細に、ポリシーの展開 (SharePoint の場合) またはポリシーの再展開 (OneDrive の場合) に予想よりも時間がかかっているというメッセージが表示される場合は、[Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) PowerShell コマンドを実行して、ポリシーの配布を再試行してください:
 
-1. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
+1. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 2. 次のコマンドを実行します。
     

@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: acc183abcbae89cd952011cfc637161bb409a95f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174519"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090390"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでファイアウォール ポリシーのカスタム ルールを管理する
 
@@ -34,16 +34,12 @@ Microsoft Defender for Businessには、不要なネットワーク トラフィ
 - [ファイアウォール ポリシーのカスタム規則を編集する](#edit-a-custom-rule-for-a-firewall-policy)
 - [カスタム ルールを削除する](#delete-a-custom-rule)
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="create-a-custom-rule-for-a-firewall-policy"></a>ファイアウォール ポリシーのカスタム規則を作成する
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. **EndpointsDevice** >  **の構成** に移動し、ポリシーの一覧を確認します。
+2. **Endpoints デバイスの** > **構成** に移動し、ポリシーの一覧を確認します。
 
 3. [ **ファイアウォール** ] セクションで、既存のポリシーを選択するか、新しいポリシーを追加します。
 
@@ -66,7 +62,7 @@ Microsoft Defender for Businessには、不要なネットワーク トラフィ
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. **EndpointsDevice** >  **の構成** に移動し、ポリシーの一覧を確認します。
+2. **Endpoints デバイスの** > **構成** に移動し、ポリシーの一覧を確認します。
 
 3. [ **ファイアウォール** ] セクションで、既存のポリシーを選択するか、新しいポリシーを追加します。
 
@@ -91,7 +87,7 @@ Microsoft Defender for Businessには、不要なネットワーク トラフィ
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. **EndpointsDevice** >  **の構成** に移動し、ポリシーの一覧を確認します。
+2. **Endpoints デバイスの** > **構成** に移動し、ポリシーの一覧を確認します。
 
 3. [ **ファイアウォール** ] セクションで、既存のポリシーを選択するか、新しいポリシーを追加します。
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9e3b52f5e16a2294cc504791928f10a96e5e54c7
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: a4dd7193bed1a22e3b88e6bc9201f5a15ddcd9eb
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872766"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090456"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -34,7 +34,7 @@ ms.locfileid: "65872766"
 1. 調査する必要があるmacOSまたは Linux コンピューターに [XMDE クライアント アナライザー](https://aka.ms/XMDEClientAnalyzer) ツールをダウンロードします。
 
    > [!NOTE]
-   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'A9BF065DE3F2608A309BC4F5295548BB9931F107BF2F01DC42A789C5527C1308' です。
+   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'AFD674A149F139E80F1AE90E36814DAAC08AAD9E8B0DA20CB1D3FA33B9D0D1AD' です。
 
 2. コンピューター上のXMDEClientAnalyzer.zipの内容を抽出します。
 
@@ -103,7 +103,7 @@ ms.locfileid: "65872766"
 
   説明: いずれかの [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)で *mdatp 診断作成* を実行するときに生成されるのと同じ診断出力
 
-  or
+  または
 
   [ Linux ](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

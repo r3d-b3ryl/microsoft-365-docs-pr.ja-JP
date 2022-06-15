@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 03295989e1ee44ab43fe0cc53e4029a6c4307ea8
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172647"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089464"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでロールとアクセス許可を割り当てる
 
@@ -32,10 +32,6 @@ Microsoft Defender for Businessの構成、レポートの表示、検出され�
 2. [セキュリティ チームのロールの割り当てを表示または編集](#view-or-edit-role-assignments)します。
 3. [次の手順に進みます](#next-steps)。
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="roles-in-defender-for-business"></a>Defender for Business のロール
 
@@ -52,7 +48,7 @@ Microsoft Defender for Businessの構成、レポートの表示、検出され�
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. ナビゲーション ウィンドウで[**アクセス許可&ロール**]、[**Azure AD**] の [**ロール**] の順に選択します。
+2. ナビゲーション ウィンドウで[ **アクセス許可&ロール**]、[ **Azure AD**] の [ **ロール**] の順に選択します。
 
 3. 次のいずれかのロールを選択して、サイド ウィンドウを開きます。
 
@@ -63,7 +59,7 @@ Microsoft Defender for Businessの構成、レポートの表示、検出され�
    > [!IMPORTANT]
    > Microsoft では、ユーザーにタスクを実行するために必要なもののみにアクセス権を付与することをお勧めします。 この概念は、アクセス許可に対する *最小限の特権* と呼びます。 詳細については、 [アプリケーションの最小特権アクセスのベスト プラクティスに関するページを](/azure/active-directory/develop/secure-least-privileged-access)参照してください。 
 
-4. サイド ウィンドウで、[**Azure ADのメンバーの管理**] リンクを選択します。 このアクションでは、ロールの割り当てを表示および管理できるAzure Active Directory (Azure AD) に移動します。
+4. サイド ウィンドウで、[ **Azure AD のメンバーの管理** ] リンクを選択します。 このアクションでは、ロールの割り当てを表示および管理できるAzure Active Directory (Azure AD) に移動します。
 
 5. ユーザーを選択してプロファイルを開き、[ **割り当てられたロール**] を選択します。
 

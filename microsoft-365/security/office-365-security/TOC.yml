@@ -406,6 +406,8 @@
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
         - name: 事前設定されたセキュリティ ポリシーを使用して常に最適なセキュリティ制御を実現
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: Microsoft 365 Defender のインシデントに優先順位を付け、管理し、調査し、対応する方法
+          href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
         - name: チームの攻撃シミュレーションを実行する方法
           href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
         - name: 攻撃シミュレーション トレーニング内で自動攻撃とトレーニングを設定する方法

@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 7e4f22634756b931a6136f57b1938d12d36bc988
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 923f4a2d8e36f304fac5a48089adff78be1a0b1c
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172799"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090412"
 ---
 # <a name="visit-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルにアクセスする
 
@@ -30,10 +30,6 @@ Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://se
 
 :::image type="content" source="../../media/defender-business/mdb-portal-home.png" alt-text="Microsoft 365 Defender ポータル":::
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="the-navigation-bar"></a>ナビゲーション バー
 

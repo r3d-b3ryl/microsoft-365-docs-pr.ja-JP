@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Businessのファイアウォール
-description: Defender for Business のファイアウォール設定Windows Defenderについて説明します。 ファイアウォールは、不要なネットワーク トラフィックが会社のデバイスに流れるのを防ぐのに役立ちます。
+description: Defender for Business のWindows Defender ファイアウォール設定について説明します。 ファイアウォールは、不要なネットワーク トラフィックが会社のデバイスに流れるのを防ぐのに役立ちます。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9a22af2e1ef047de0deaf98c6eea37cda15dcc5f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 9ec6e0b10812c42c90266fd2793557ae6f3b2efc
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172664"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090346"
 ---
 # <a name="firewall-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのファイアウォール
 
-Microsoft Defender for Businessには、[Windows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)を使用したファイアウォール機能が含まれています。 ファイアウォール保護は、デバイスへの入り込みまたはデバイスからのフローが許可されているネットワーク トラフィックを決定するルールを使用してデバイスをセキュリティで保護するのに役立ちます。 
+Microsoft Defender for Businessには、[Windows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)のファイアウォール機能が含まれています。 ファイアウォール保護は、デバイスへの入り込みまたはデバイスからのフローが許可されているネットワーク トラフィックを決定するルールを使用してデバイスをセキュリティで保護するのに役立ちます。 
 
 ファイアウォール保護を使用して、さまざまな場所のデバイスでの接続を許可するかブロックするかを指定できます。 たとえば、ファイアウォール設定では、会社の内部ネットワークに接続されているデバイスで受信接続を許可できますが、デバイスが信頼されていないデバイスを持つネットワーク上にある場合は、それらの接続を防ぐことができます。
 
@@ -33,10 +33,6 @@ Microsoft Defender for Businessには、[Windows Defender ファイアウォー�
 - [Defender for Business の既定のファイアウォール設定](#default-firewall-settings-in-defender-for-business)
 - [Defender for Business で構成できるファイアウォール設定](#firewall-settings-you-can-configure-in-defender-for-business)
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="default-firewall-settings-in-defender-for-business"></a>Defender for Business の既定のファイアウォール設定
 
@@ -52,7 +48,7 @@ Microsoft Defender for Businessでは、受信接続をブロックまたは許�
 
 Microsoft Defender for Businessには、Windows Defender ファイアウォールによるファイアウォール保護が含まれます。 次の表に、Microsoft Defender for Businessのファイアウォール保護用に構成できる設定を示します。
 
-| Setting | 説明 |
+| 設定 | 説明 |
 |--|--|
 | **ドメイン ネットワーク** | ドメイン ネットワーク プロファイルは、会社のネットワークに適用されます。 ドメイン ネットワークのファイアウォール設定は、同じネットワーク上にある他のデバイスで開始される受信接続に適用されます。 既定では、受信接続は **[すべてブロック]** に設定されます。  |
 | **パブリック ネットワーク** | パブリック ネットワーク プロファイルは、コーヒー ショップや空港などのパブリックな場所で使用できるネットワークに適用されます。 パブリック ネットワークのファイアウォール設定は、同じネットワーク上にある他のデバイスで開始される受信接続に適用されます。 パブリック ネットワークには、知らないデバイスや信頼できないデバイスを含めることができるため、受信接続は既定で **[すべてブロック]** に設定されます。  |
@@ -62,7 +58,7 @@ Microsoft Defender for Businessには、Windows Defender ファイアウォー�
 ## <a name="next-steps"></a>次の手順
 
 - [Microsoft Defender for Businessでファイアウォール設定を管理する](mdb-custom-rules-firewall.md)
-- [ファイアウォールWindows Defender詳細を確認する](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
+- [Windows Defender ファイアウォールの詳細を確認する](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
 - [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
 - [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 95d79bd95aa816b82e69399b9bde99500fcc8b6b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 7124d97c56e414a7c5a47488805bb4134426f073
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419530"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018032"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
@@ -550,7 +550,7 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 
-保持コマンドレットを使用するには、最初に [Office 365 セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続する必要があります。次に、次のいずれかのコマンドレットを使用します。
+保持コマンドレットを使用するには、最初に [Office 365 セキュリティ/コンプライアンス PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。 次に、次のいずれかのコマンドレットを使用します。
 
 - [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 

@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Exact Data Match アクティビティの通知を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 163c1386bed2e1f100a42ab8b22b6404fe6bb145
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 75a0e3c50d9dc540bf76187e6aedcbd5642d250b
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760275"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66009390"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Exact Data Match アクティビティの通知を作成する
+
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
 
@@ -58,7 +60,7 @@ DLP ライセンスの詳細については、「[セキュリティとコンプ
 
 ## <a name="configure-notifications-for-edm-activities"></a>EDM アクティビティの通知を構成する
 
-1. [セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続する。
+1. [セキュリティ/コンプライアンス PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続します。
 
 2. 通知を作成するアクティビティを使用して、`New-ProtectionAlert` コマンドレットを実行します。  たとえば、**UploadDataCompleted** 操作が発生したときに通知を受け取りたい場合は、以下を実行します。
 

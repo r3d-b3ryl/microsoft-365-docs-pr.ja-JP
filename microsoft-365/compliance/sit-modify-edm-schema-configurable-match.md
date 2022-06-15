@@ -17,16 +17,18 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf11e60f3fce46926d297c97a44c7d494942d556
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: f5eb282bd004956d6ca98a9347ef8d832784b55f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271884"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66014786"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
-完全一致 (EDM) ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照するカスタムの機密情報タイプを作成できます。 正確な文字列のバリアントを許可する必要がある場合は、*構成可能な一致* を使用して、大文字と小文字および一部の区切り文字を無視するように Microsoft 365 に指示できます。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+完全一致 (EDM) ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照するカスタムの機密情報タイプを作成できます。 正確な文字列のバリアントを許可する必要がある場合は、*構成可能な一致* を使用して、大文字と小文字および一部の区切り文字を無視するように Microsoft Purview に指示できます。
 
 > [!IMPORTANT]
 > 既存の EDM スキーマとデータファイルを変更するには、以下の手順を実行します。
@@ -105,7 +107,7 @@ ms.locfileid: "62271884"
     - \"
     - \,
 
-6. [セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)。
+6. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
     > [!NOTE]
     > 組織が [テナント レベル (パブリック プレビュー) で Microsoft 365 のカスタム キー](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview) を設定している場合、完全なデータ一致によって暗号化機能が自動的に使用されます。これは、商用クラウドの E5 ライセンステナントでのみ使用できます。
@@ -138,6 +140,6 @@ ms.locfileid: "62271884"
 - [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)
 - [カスタムの機密情報の種類](./sensitive-information-type-learn-about.md)
-- [データ損失防止について](dlp-learn-about-dlp.md)
+- [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md)
 - [Microsoft Defender for Cloud Apps](/cloud-app-security)
 - [New-DlpEdmSchema](/powershell/module/exchange/new-dlpedmschema)

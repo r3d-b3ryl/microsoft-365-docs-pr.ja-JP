@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 6c39db3cceec62ef80cf19f34bbf3d89a219a4f3
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 23d216e4fb831ef6425bff93bf3fc0063a263852
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042980"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089718"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する
 
@@ -77,7 +77,7 @@ ms.locfileid: "66042980"
 |**キー**|enforcementLevel|
 |**データ型**|String|
 |**指定可能な値**|real_time (既定) <p> on_demand <p> パッシブ|
-|**コメント**|Defender for Endpoint バージョン 101.10.72 以降で使用できます。|
+|**Comments**|Defender for Endpoint バージョン 101.10.72 以降で使用できます。|
 
 #### <a name="enabledisable-behavior-monitoring"></a>動作監視を有効/無効にする 
 
@@ -92,7 +92,7 @@ ms.locfileid: "66042980"
 |**キー**|behaviorMonitoring|
 |**データ型**|String|
 |**指定可能な値**|無効 (既定値) <p> enabled|
-|**コメント**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
+|**Comments**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>定義が更新された後にスキャンを実行する
 
@@ -136,7 +136,7 @@ ms.locfileid: "66042980"
 |**キー**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定値) <p> admin_only|
-|**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
+|**Comments**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
 
 #### <a name="scan-exclusions"></a>除外をスキャンする
 
@@ -147,7 +147,7 @@ ms.locfileid: "66042980"
 |---|---|
 |**キー**|除外|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
 ##### <a name="type-of-exclusion"></a>除外の種類
 
@@ -179,7 +179,7 @@ ms.locfileid: "66042980"
 |**キー**|isDirectory|
 |**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
-|**コメント**|*$type**が excludedPath* の場合にのみ適用されます|
+|**Comments**|*$type**が excludedPath* の場合にのみ適用されます|
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>スキャンから除外されたファイル拡張子
 
@@ -190,7 +190,7 @@ ms.locfileid: "66042980"
 |**キー**|拡張子|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
-|**コメント**|*$type**が除外されている場合にのみ適用されるFileExtension*|
+|**Comments**|*$type**が除外されている場合にのみ適用されるFileExtension*|
 
 ##### <a name="process-excluded-from-the-scan"></a>スキャンから除外されたプロセス*
 
@@ -231,7 +231,7 @@ ms.locfileid: "66042980"
 |---|---|
 |**キー**|threatTypeSettings|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
 ##### <a name="threat-type"></a>脅威の種類
 
@@ -277,7 +277,7 @@ ms.locfileid: "66042980"
 |**キー**|scanResultsRetentionDays|
 |**データ型**|String|
 |**指定可能な値**|90 (既定値)。 使用できる値は 1 日から 180 日です。|
-|**コメント**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
+|**Comments**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>ウイルス対策スキャン履歴内のアイテムの最大数
 
@@ -288,7 +288,7 @@ ms.locfileid: "66042980"
 |**キー**|scanHistoryMaximumItems|
 |**データ型**|String|
 |**指定可能な値**|10000 (既定値)。 使用できる値は、5,000 項目から 15,000 項目です。|
-|**コメント**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
+|**Comments**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
 
 ### <a name="cloud-delivered-protection-preferences"></a>クラウド配信の保護の基本設定
 
@@ -298,7 +298,7 @@ ms.locfileid: "66042980"
 |---|---|
 |**キー**|cloudService|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>クラウド配信保護を有効/無効にする
 
@@ -318,8 +318,9 @@ ms.locfileid: "66042980"
 |---|---|
 |**キー**|diagnosticLevel|
 |**データ型**|String|
-|**指定可能な値**|省略可能 (既定値) <p> 必須|
-
+|**指定可能な値**|省略可能 <p> 必須 (既定値)|
+|
+  
 #### <a name="enable--disable-automatic-sample-submissions"></a>サンプルの自動送信を有効または無効にする
 
 疑わしいサンプル (脅威を含む可能性が高い) を Microsoft に送信するかどうかを決定します。 サンプルの提出を制御するための 3 つのレベルがあります。

@@ -17,21 +17,17 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 042f20cce0e0d30195ed241b376bf304abeaa2aa
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 034c37e0b87ab77c2e4119ab87563da06925501a
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172775"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089003"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセットアップ ウィザードを使用する
 
 Microsoft Defender for Businessは、中小企業の時間と労力を節約するように設計されました。 たとえば、セットアップ ウィザードを使用して初期セットアップと構成を行うことができます。 セットアップ ウィザードでは、セキュリティ チームへのアクセス許可の付与、セキュリティ チームの電子メール通知の設定、会社のWindows デバイスのオンボードを行います。
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 > [!TIP]
 > セットアップ ウィザードの使用は省略可能です。 セットアップと構成プロセスを手動で実行することもできます。 詳細については、次を参照してください。
@@ -42,7 +38,7 @@ Microsoft Defender for Businessは、中小企業の時間と労力を節約す�
 
 セットアップ ウィザードは、会社のユーザーが Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に初めてサインインした場合に実行するように設計されています。 
 
-会社がMicrosoft 365 Business Premiumを使用している場合は、誰かが **EndpointsDevice** >  **インベントリ** に初めてアクセスするときに Defender for Business セットアップ ウィザードが実行されます。 
+会社がMicrosoft 365 Business Premiumを使用している場合、誰かが **Endpoints** > **デバイス インベントリ** に初めてアクセスすると、Defender for Business セットアップ ウィザードが実行されます。 
 
 セットアップ ウィザードの開始画面は、次の図のようになります。
 
@@ -59,7 +55,7 @@ Microsoft Defender for Businessは、中小企業の時間と労力を節約す�
 
    Defender for Business では、セキュリティ チームのメンバーに次の 3 つのロールのいずれかを割り当てることができます。<br/>
    
-   - **グローバル管理者**: グローバル管理者は、Microsoft 365 テナント全体のすべての設定を表示および編集できます。 グローバル管理者は、会社のMicrosoft 365 サブスクリプションの初期セットアップと構成を行います。 
+   - **グローバル 管理**: グローバル管理者は、Microsoft 365 テナント全体のすべての設定を表示および編集できます。 グローバル管理者は、会社のMicrosoft 365 サブスクリプションの初期セットアップと構成を行います。 
    - **セキュリティ管理者**: セキュリティ管理者は、セキュリティ設定を表示および編集し、脅威が検出されたときにアクションを実行できます。
    - **セキュリティ リーダー**: セキュリティ リーダーはレポート内の情報を表示できますが、セキュリティ設定を変更することはできません。 
 

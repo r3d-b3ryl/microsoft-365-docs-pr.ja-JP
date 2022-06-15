@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: c790ee691e6a72228c865b8cdf9911ee83f4dfd4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0540f3b1b78b728a7c49e0851696d20a04137bb7
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011580"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66043068"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由
 
@@ -76,7 +76,7 @@ Windows Office アプリの AIP アドインは、既にユーザーに展開済
     - [トレーニング可能な分類子](classifier-learn-about.md)、[完全データ一致 (EDM)](sit-learn-about-exact-data-match-based-sits.md)、[名前付きエンティティ](named-entities-learn.md)を含むインテリジェント分類サービスへのアクセス
     - ユーザーが入力する際の機密情報の検出
     - Word では、ユーザーは識別された機密コンテンツを確認および削除できます。
-- [PDF サポート](sensitivity-labels-office-apps.md#pdf-support)
+- [PDF サポート](sensitivity-labels-office-apps.md#pdf-support) (プレビュー段階)
 - ユーザーによるアクセス許可の割り当てを許可するラベルの場合、ユーザーまたはグループに異なるアクセス許可 (読み取りまたは変更) を付与できます。
 - メールの暗号化のみ
 - ステータス バーのラベルの表示

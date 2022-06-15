@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Microsoft Purview コンプライアンス ポータルの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: 9e6159bcd6cdd8a06a310c5de9f07b105dbb4122
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f4cf7b3f6aeefc3af71739f91322736354c1b68e
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094904"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66017244"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
 
@@ -50,7 +50,7 @@ ms.locfileid: "65094904"
   > [!NOTE]
   > **組織の管理** の役割グループは、Exchange Online とコンプライアンス ポータルの両方にあります。 これらは、異なる権限を持つ個別の役割グループです。 Exchange Online で **組織の管理** のメンバーであっても、メール メッセージを削除するために必要なアクセス許可は付与されません。 Microsoft 365 コンプライアンス センターで **検索と消去** の役割が (直接、または **組織の管理** などの役割グループを通じて) 割り当てられていない場合、手順 3 で **New-ComplianceSearchAction** コマンドレットを実行し、"パラメーター名 'Purge' と一致するパラメーターが見つかりません" というエラー メッセージが表示されます。
 
-- メッセージを削除するには、セキュリティ/コンプライアンス センターの PowerShell を使用する必要があります。 接続方法については、[手順 1](#step-1-connect-to-security--compliance-center-powershell) を参照してください。
+- メッセージを削除するには、セキュリティ/コンプライアンス PowerShell を使用する必要があります。 接続方法については、「[手順 1: セキュリティ/コンプライアンス PowerShell に接続する](#step-1-connect-to-security--compliance-powershell)」を参照してください。
 
 - メールボックスごとに最大 10 個のアイテムを一度に削除できます。メッセージを検索および削除する機能はインシデント対応ツールとして作られているので、この制限によってメールボックスからメッセージをすばやく削除できます。これは、ユーザーのメールボックスをクリーン アップするための機能ではありません。
 
@@ -60,9 +60,9 @@ ms.locfileid: "65094904"
 
 - 電子情報開示 (プレミアム) ケースのレビュー セット内のメール アイテムは、この記事の手順で削除することはできません。 これは、レビュー セット内のアイテムはライブ サービスではなく、Azure ストレージの場所に保存されるからです。 これは、手順 1 で作成したコンテンツ検索では返されないことを意味します。 レビュー セット内のアイテムを削除するには、レビュー セットが含まれている電子情報開示 (プレミアム) ケースを削除する必要があります。 詳細については、「[Close or delete an eDiscovery (Premium) case (電子情報開示 (プレミアム) ケースを閉じるか、または削除する)](close-or-delete-case.md)」を参照してください。
 
-## <a name="step-1-connect-to-security--compliance-center-powershell"></a>手順 1: セキュリティ/コンプライアンス センターの PowerShell に接続する
+## <a name="step-1-connect-to-security--compliance-powershell"></a>手順 1: セキュリティ/コンプライアンス PowerShell に接続する
 
-最初の手順は、組織のセキュリティ/コンプライアンス センターの PowerShell に接続することです。 詳細な手順については、「[セキュリティ/コンプライアンス センターの PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+最初の手順は、組織のセキュリティ/コンプライアンス PowerShell に接続することです。 詳細な手順については、「[セキュリティ/コンプライアンス PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 ## <a name="step-2-create-a-content-search-to-find-the-message-to-delete"></a>手順 2: コンテンツ検索を作成して、削除するメッセージを探す
 
@@ -121,7 +121,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 > [!NOTE]
 > 前述のように、 **New-ComplianceSearchAction -Purge** コマンドを実行しても、コンテンツ検索によって返される Microsoft Teams のアイテムは削除されません。
 
-次のコマンドを実行してメッセージを削除するには、[セキュリティ/コンプライアンス センター PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)していることを確認して下さい。
+次のコマンドを実行してメッセージを削除するには、[セキュリティ/コンプライアンス PowerShell に接続していること](/powershell/exchange/connect-to-scc-powershell)を確認して下さい。
 
 ### <a name="soft-delete-messages"></a>メッセージの論理的な削除
 

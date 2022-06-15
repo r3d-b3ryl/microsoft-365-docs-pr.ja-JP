@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 3da0554f55e25f765702fa0d0fbf169ba2e66438
-ms.sourcegitcommit: b5529afa84f7dde0a89b1e08aeaf6a3a15cd7679
+ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65601648"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66091451"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -95,7 +95,7 @@ Microsoft エンドポイント マネージャーには、デバイス上の De
 
 次の表は、さまざまなシナリオで管理されているデバイスで MDE 設定を構成できるポリシーを理解するのに役立ちます。 *MDE セキュリティ構成* と *Microsoft エンドポイント マネージャー* の両方でサポートされているポリシーを展開する場合、そのポリシーの 1 つのインスタンスは、Microsoft Defender for Endpointのみを実行するデバイスと、IntuneまたはIntuneによって管理されるデバイスによって処理できます。Configuration Manager。
 
-| Microsoft エンドポイント マネージャー  | ワークロード |ポリシー| MDE セキュリティ構成  |  Microsoft エンドポイント マネージャー |
+| Microsoft エンドポイント マネージャー  | Workload |ポリシー| MDE セキュリティ構成  |  Microsoft エンドポイント マネージャー |
 |----------------|----------------|-------------------|------------|
 | エンドポイントのセキュリティ    | ウイルス対策   |     ウイルス対策           | ![サポート](../media/green-check.png)  | ![サポート](../media/green-check.png)  |
 |                      | ウイルス対策   |   ウイルス対策の除外   | ![サポート](../media/green-check.png)  | ![サポート](../media/green-check.png)  |
@@ -123,7 +123,7 @@ Microsoft エンドポイント マネージャーには、デバイス上の De
 
 Microsoft エンドポイント マネージャー管理センターを通じてMicrosoft Defender for Endpointセキュリティ構成管理をサポートするには、各コンソール内からそれらの間の通信を有効にする必要があります。
 
-1. [Microsoft 365 Defender ポータル](https://security.microsoft.com/)にサインインし **、設定** > **EndpointsConfiguration** >  **ManagementEnforcement** >  スコープに移動し、セキュリティ設定管理用のプラットフォームを有効にします。
+1. [Microsoft 365 Defender ポータル](https://security.microsoft.com/)にサインインし **、設定** > **Endpoints** > **Configuration Management****の適用スコープ** に移動し、セキュリティ設定管理 > 用のプラットフォームを有効にします。
 
    :::image type="content" source="../media/security-settings-mgt.png" alt-text="Defender コンソールでMicrosoft Defender for Endpoint設定管理を有効にします。":::
     
@@ -134,7 +134,7 @@ Microsoft エンドポイント マネージャー管理センターを通じて
   > [!TIP]
   > パイロット モードと適切なデバイス タグを使用して、少数のデバイスでロールアウトをテストして検証します。 パイロット モードを使用しないと、構成されたスコープに該当するすべてのデバイスが自動的に登録されます。
 
-1. 関連するユーザーが、Microsoft エンドポイント マネージャーでエンドポイント セキュリティ設定を管理するアクセス許可を持っているか、Defender ポータルでロールを構成してそれらのアクセス許可を付与するアクセス許可を持っていることを確認します。 **設定** > **RolesAdd** >  **項目** に移動します。
+1. 関連するユーザーが、Microsoft エンドポイント マネージャーでエンドポイント セキュリティ設定を管理するアクセス許可を持っているか、Defender ポータルでロールを構成してそれらのアクセス許可を付与するアクセス許可を持っていることを確認します。 **設定** > **Roles** > **Add item** に移動します。
 
    :::image type="content" source="../media/add-role-in-mde.png" alt-text="Defender ポータルで新しいロールを作成します。":::
 
@@ -158,14 +158,11 @@ Microsoft エンドポイント マネージャー管理センターを通じて
 Microsoft Defender for Endpointでは、デバイスをオンボードするためのいくつかのオプションがサポートされています。 現在のガイダンスについては、Defender for Endpoint のドキュメントの[「Windows デバイスのオンボード ツールとメソッド](/microsoft-365/security/defender-endpoint/security-config-management)」を参照してください。
 
 
-> [!IMPORTANT]
-> デバイスがMicrosoft Defender for Endpointでオンボードされた後、Microsoft Defender for Endpoint用の Security Management に登録するには、**MDE-Management** でタグ付けする必要があります。 MDE でのデバイス タグ付けの詳細については、「 [*デバイス タグの作成と管理*](/microsoft-365/security/defender-endpoint/machine-tags)」を参照してください。
-
 
 ## <a name="co-existence-with-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Managerとの共存
 一部の環境では、[テナントがアタッチ](/mem/configmgr/tenant-attach/endpoint-security-get-started)Configuration Manager Microsoft Defender for Endpointに Security Management を使用することが望ましい場合があります。 両方を使用する場合は、複数のチャネルを使用すると競合や望ましくない結果の機会が生じるので、1 つのチャネルでポリシーを制御する必要があります。
 
-これをサポートするには、[セキュリティの *管理] 設定* を [オフ] に切り替Configuration Manager使用して構成 *します*。  [Microsoft 365 Defender ポータル](https://security.microsoft.com/)にサインインし、**設定** > **EndpointsConfiguration** >  **ManagementEnforcement** >  スコープに移動します。
+これをサポートするには、[セキュリティの *管理] 設定* を [オフ] に切り替Configuration Manager使用して構成 *します*。  [Microsoft 365 Defender ポータル](https://security.microsoft.com/)にサインインし、**設定** > **Endpoints** > **Configuration Management** > **Enforcement Scope** に移動します。
 
 :::image type="content" source="../media/manage-security-settings-cfg-mgr.png" alt-text="Configuration Manager設定を使用してセキュリティ設定を管理します。":::
 
@@ -181,7 +178,7 @@ Microsoft Defender for Endpointに登録されているが、IntuneまたはConf
 
 1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にサインインします。
 
-2. **DevicesAll デバイス** > に移動し、[**管理対象**] 列を選択してデバイスのビューを並べ替えます。
+2. [**すべてのデバイス]** >  に移動し、[**管理対象**] 列を選択してデバイスのビューを並べ替えます。
 
    Microsoft Defender for Endpointにオンボードされ、登録されているが、Intuneによって管理されていないデバイスは、[*Managed by*] 列 **にMicrosoft Defender for Endpoint** を表示します。 これらは、Microsoft Defender for Endpointのセキュリティ管理のポリシーを受け取ることができるデバイスです。
 

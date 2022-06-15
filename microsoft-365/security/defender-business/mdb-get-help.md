@@ -15,12 +15,12 @@ ms.collection:
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Defender for Business に関する問題がある場合は、ヘルプを受けるか、サポートにお問い合わせください。
-ms.openlocfilehash: 37e41f8e5d5f6421739fb98a38d99bb6aa0597c6
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 4f2a45514ba701eac27af32b2585c9a765dcc1f2
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173142"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090316"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Microsoft Defender for Businessのヘルプとサポートを受ける
 
@@ -30,10 +30,6 @@ Microsoft Defender for Businessに関するヘルプが必要な場合は、画�
 
 質問に対する回答が表示されない場合は、サポート チケットを開くことができます。 [サポートの取得に関する](../../admin/get-help-support.md)参照
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="see-also"></a>関連項目
 

@@ -1,6 +1,6 @@
 ---
-title: Android のMicrosoft Defender for Endpointの新機能
-description: Android 上の以前のバージョンのMicrosoft Defender for Endpointの主な変更点について説明します。
+title: AndroidのMicrosoft Defender for Endpointの新機能
+description: Androidの以前のバージョンのMicrosoft Defender for Endpointの主な変更点について説明します。
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, インストール, macos, whatsnew
 ms.prod: m365-security
 ms.mktglfcycl: security
@@ -14,14 +14,14 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 95c4d77014e31c748cc4bd6662a148810c01f79a
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: d1379836a2d55a8c6c256ce734c40acc5fc48599
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64825192"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090500"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android のMicrosoft Defender for Endpointの新機能
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>AndroidのMicrosoft Defender for Endpointの新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,10 +31,17 @@ ms.locfileid: "64825192"
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+## <a name="network-protection"></a>ネットワーク保護
+Microsoft Defender for Endpointの Network Protection はパブリック プレビュー段階になりました。 ネットワーク保護は、悪意のあるWi-Fi関連する脅威、不正なハードウェア (セキュリティデバイスなど) に対する保護を提供し、関連する脅威が検出された場合にユーザーに通知します。 また、セキュリティで保護されたネットワークに接続し、セキュリティで保護されていない接続に接続するときにネットワークを変更するためのガイド付きエクスペリエンスも表示されます。
+
+これには、Microsoft エンドポイント マネージャー 管理 センター内から機能を構成する機能など、柔軟性を提供するいくつかの管理者コントロールが含まれています。 管理者は、プライバシー制御を有効にして、Android デバイスから Defender for Endpoint によって送信されるデータを構成することもできます。 
+
+このパブリック プレビューに参加することに興味がある場合は、networkprotection@microsoft.com でテナント ID を共有してください。 詳細については、「 [ネットワーク保護](/microsoft-365/security/defender-endpoint/android-configure)」を参照してください。
+
 >[!NOTE]
 >Microsoft Defender は、1.0.3011.0302 より前のバージョンではサポートされなくなりました。 ユーザーは、デバイスをセキュリティで保護するために、最新バージョンにアップグレードするように要求されます。
 更新するには、ユーザーは次の手順を使用できます。
->1. 仕事用プロファイルで、マネージド プレイ ストアに移動します。
+>1. 仕事用プロファイルで、マネージド Play ストアに移動します。
 >2. 右上隅にあるプロファイル アイコンをタップし、[アプリとデバイスの管理] を選択します。
 >3. 利用可能な更新プログラムの下で MDE を見つけて、更新プログラムを選択します。
 >
@@ -46,11 +53,11 @@ Microsoft Defender for Endpointは、Play ストアで **Microsoft Defender** �
 
 ## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
 
-2022 年 1 月 25 日に、Android と iOS での脅威と脆弱性の管理の一般公開が発表されました。 詳細については、 [こちらにある techcommunity の投稿](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)を参照してください。
+2022 年 1 月 25 日に、AndroidとiOSに関する脅威と脆弱性の管理の一般公開が発表されました。 詳細については、 [こちらにある techcommunity の投稿](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)を参照してください。
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Android 11 以降を実行するMicrosoft Defender for Endpointの今後のアクセス許可の変更 (2021 年 11 月)
 
-リリース ビルド: 1.0.3501.0301 リリース月: 2021 年 11 月 Microsoft Defender for Endpoint、Android API 30 へのアップグレードに [Google](https://developer.android.com/distribute/play-policies#APILevel30) が必要とするこの更新プログラムをリリースしました。 この変更により、Android 11 以降を実行しているデバイスの [新しいストレージアクセス許可](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)へのアクセスを求めるユーザーが表示されます。 リリース ビルド 1.0.3501.0301 以降で Defender アプリを更新したら、この新しいストレージアクセス許可を受け入れる必要があります。 これにより、Defender for Endpoint のアプリ セキュリティ機能が中断なく機能するようになります。 詳細については、次のセクションを参照してください。
+リリース ビルド: 1.0.3501.0301 リリース月: 2021 年 11 月 Microsoft Defender for Endpointは、Android API 30 にアップグレードするために [Google](https://developer.android.com/distribute/play-policies#APILevel30) が必要とするこの更新プログラムをリリースしました。 この変更により、Android 11 以降を実行しているデバイスに対して、[新しいストレージアクセス許可](https://developer.android.com/training/data-storage/manage-all-files#all-files-access-google-play)へのアクセスを求めるユーザーが表示されます。 リリース ビルド 1.0.3501.0301 以降で Defender アプリを更新したら、この新しいストレージアクセス許可を受け入れる必要があります。 これにより、Defender for Endpoint のアプリ セキュリティ機能が中断なく機能するようになります。 詳細については、次のセクションを参照してください。
 
 **これは組織にどのような影響を与えますか。** これらの変更は、Android 11 以降を実行しているデバイスでMicrosoft Defender for Endpointを使用し、ビルド 1.0.3501.0301 以降をリリースするために Defender for Endpoint を更新した場合に有効になります。
 
@@ -75,4 +82,4 @@ Defender for Endpoint を更新して 1.0.3501.0301 以降のバージョンを�
 4. これで、デバイスが保護されます。
 
   > [!NOTE]
-  > このアクセス許可により、Microsoft Defender for Endpointはユーザーのデバイス上のストレージにアクセスできます。これにより、悪意のあるアプリや不要なアプリの検出と削除に役立ちます。 Microsoft Defender for Endpointアクセス/スキャン Android アプリ パッケージ ファイル (.apk) のみ。 仕事用プロファイルを持つデバイスでは、Defender for Endpoint は作業関連のファイルのみをスキャンします。
+  > このアクセス許可により、Microsoft Defender for Endpointはユーザーのデバイス上のストレージにアクセスできます。これにより、悪意のあるアプリや不要なアプリの検出と削除に役立ちます。 Microsoft Defender for Endpointアクセス/スキャンAndroidアプリ パッケージ ファイル (.apk) のみ。 仕事用プロファイルを持つデバイスでは、Defender for Endpoint は作業関連のファイルのみをスキャンします。

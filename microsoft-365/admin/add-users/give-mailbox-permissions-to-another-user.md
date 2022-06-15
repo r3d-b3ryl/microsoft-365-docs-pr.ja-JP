@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Microsoft 365 ユーザーに他のユーザーのメールボックスにアクセスする権利を与え、他のユーザーのメールボックスのメールを読んだり、送信したりすることができるようになります。
-ms.openlocfilehash: 80c316f0615c13d5f46410582abe2ec3516c8a8a
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
+ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436715"
+ms.lasthandoff: 06/13/2022
+ms.locfileid: "66042376"
 ---
 # <a name="give-mailbox-permissions-to-another-microsoft-365-user---admin-help"></a>別のMicrosoft 365 ユーザーにメールボックスのアクセス許可を付与する - 管理者ヘルプ
 
@@ -167,6 +167,8 @@ ms.locfileid: "65436715"
 
 ::: moniker-end
 
+> [!NOTE]
+> メールボックスの *HiddenFromAddressListsEnabled* パラメーターが **True** に設定されている Outlook デスクトップ クライアントでは、メールボックスをグローバル アドレス一覧経由で Outlook に表示する必要があるため、**送信** と **代理で送信** のアクセス許可は機能しません。
 
 ## <a name="related-content"></a>関連コンテンツ
   

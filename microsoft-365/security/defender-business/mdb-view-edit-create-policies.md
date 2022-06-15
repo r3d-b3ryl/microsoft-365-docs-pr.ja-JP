@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 85845ec12b8ad43abe965e277f8ea3f6c67e1d7d
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c5606c19e4cef64e701d34a5e4ccc2143f51f394
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174184"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090368"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでポリシーを表示または編集する
 
@@ -34,10 +34,6 @@ Microsoft Defender for Businessでは、デバイスに適用されるポリシ�
 - [既存のポリシーを編集する](#edit-an-existing-policy)
 - [新しいポリシーの作成](#create-a-new-policy)
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="default-policies-in-defender-for-business"></a>Defender for Business の既定のポリシー
 
@@ -51,7 +47,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。 
 
-2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。 ポリシーは、オペレーティング システム (**[Windows クライアント]** など) とポリシーの種類 (**[次世代保護]** や **[ファイアウォール]** など) ごとに分類されています。 
+2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。ポリシーは、オペレーティング システム (**[Windows クライアント]** など) とポリシーの種類 (**[次世代保護]** や **[ファイアウォール]** など) ごとに分類されています。 
 
 3. オペレーティング システムのタブ (**[Windows クライアント]** など) を選択し、**[次世代保護]** と **[ファイアウォール]** のカテゴリでポリシーの一覧を確認します。 
 
@@ -61,7 +57,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。 
 
-2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。 ポリシーは、オペレーティング システム (**[Windows クライアント]** など) とポリシーの種類 (**[次世代保護]** や **[ファイアウォール]** など) ごとに分類されています。 
+2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。ポリシーは、オペレーティング システム (**[Windows クライアント]** など) とポリシーの種類 (**[次世代保護]** や **[ファイアウォール]** など) ごとに分類されています。 
 
 3. オペレーティング システムのタブ (**[Windows クライアント]** など) を選択し、**[次世代保護]** と **[ファイアウォール]** のカテゴリでポリシーの一覧を確認します。 
 
@@ -94,7 +90,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。 
 
-2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。 ポリシーは、オペレーティング システム (**[Windows クライアント]** など) とポリシーの種類 (**[次世代保護]** や **[ファイアウォール]** など) ごとに分類されています。 
+2. ナビゲーション ウィンドウで、**[デバイスの構成]** を選択します。ポリシーは、オペレーティング システム (**[Windows クライアント]** など) とポリシーの種類 (**[次世代保護]** や **[ファイアウォール]** など) ごとに分類されています。 
 
 3. オペレーティング システムのタブ (**[Windows クライアント]** など) を選択し、**[次世代保護]** ポリシーの一覧を確認します。 
 
@@ -102,7 +98,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 
 5. **[全般情報]** タブで次の手順を実行します。
 
-   1. 名前と説明を入力します。 この情報は、後で自分とチームがポリシーを特定するのに役立ちます。
+   1. 名前と説明を入力します。この情報は、後で自分とチームがポリシーを特定するのに役立ちます。
    2. ポリシーの順序を確認し、必要に応じて編集します。 (詳細については、「[ポリシーの順序](mdb-policy-order.md)」を参照してください)。
    3. **次へ** を選択します。 
 

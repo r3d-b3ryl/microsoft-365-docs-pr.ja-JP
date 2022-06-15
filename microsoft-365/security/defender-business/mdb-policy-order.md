@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 4003585c82c835c21218fd1200b3468140c8370b
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 8490793794d7cbd1ad7b3e660e2394edf870e2a7
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174095"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089630"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでポリシーの順序を理解する
 
@@ -32,10 +32,6 @@ Microsoft Defender for Businessには、従業員が使用するデバイスが�
 
 **複数のポリシーについて覚えておく必要がある重要な点は、デバイスが最初に適用されたポリシーのみを受け取るということです。** 3 つの次世代ポリシーの前の例を参照すると、3 つのポリシーすべてで対象となるデバイスがあるとします。 この場合、これらのデバイスはポリシー番号 1 を受け取りますが、2 と 3 という番号のポリシーは受け取りません。 
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="key-points-to-remember-about-policy-order"></a>ポリシーの順序について覚えておく必要がある重要なポイント
 

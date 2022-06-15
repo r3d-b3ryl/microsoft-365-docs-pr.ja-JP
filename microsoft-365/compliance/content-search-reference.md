@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: この記事には、Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールに関するリファレンス情報が含まれていて、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: 8d7f1497a0dbd400536dd74c5abd4b9e3be7e29f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ec80cd12efc3c314f891972b1ac48232f02c072f
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097120"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66018121"
 ---
 # <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
 
@@ -200,7 +200,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
 - 場合によっては、ユーザーは同じ SMTP アドレスを持つアクティブなメールボックスおよび非アクティブなメールボックスを所有している可能性があります。この場合、コンテンツ検索の場所として選択した特定のメールボックスのみが検索されます。つまり、検索にユーザーのメールボックスを追加する場合に、アクティブなメールボックスと非アクティブなメールボックスの両方が検索されることは想定できません。検索に明示的に追加したメールボックスのみが検索されます。
 
-- Security＆Compliance Center PowerShell を使用してコンテンツ検索を作成し、非アクティブなメールボックスを検索できます。 これを行うには、ピリオド (.) を事前に追加する必要があります。 非アクティブなメールボックスのメール アドレスに。 たとえば次のコマンドは、メール アドレス pavelb@contoso.onmicrosoft.com を含む非アクティブなメールボックスを検索するコンテンツ検索を作成します。
+- セキュリティ/コンプライアンス PowerShell を使用してコンテンツ検索を作成し、非アクティブなメールボックスを検索できます。 これを行うには、ピリオド (.) を事前に追加する必要があります。 非アクティブなメールボックスのメール アドレスに。 たとえば次のコマンドは、メール アドレス pavelb@contoso.onmicrosoft.com を含む非アクティブなメールボックスを検索するコンテンツ検索を作成します。
 
    ```powershell
    New-ComplianceSearch -Name InactiveMailboxSearch -ExchangeLocation .pavelb@contoso.onmicrosoft.com -AllowNotFoundExchangeLocationsEnabled $true

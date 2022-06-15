@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: a4df65d0364aff71c3d3bbfb261952859d6d8ecf
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 8301119b0169e0ee2ac56cc7a85b3037ccb75907
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393090"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66090566"
 ---
 # <a name="use-your-threat--vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを使用する
 
@@ -37,10 +37,6 @@ Microsoft Defender for Businessには、セキュリティ チームの時間と
 
 [Microsoft Defender 脆弱性の管理の詳細については、こちらを参照してください](../defender-vulnerability-management/defender-vulnerability-management.md)。
 
->
-> **少し時間ありますか?**
-> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">セキュリティに関する短いアンケート</a>を受けてください。 ご意見をお寄せください。
->
 
 ## <a name="next-steps"></a>次の手順
 
