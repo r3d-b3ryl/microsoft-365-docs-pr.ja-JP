@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview コンプライアンス マネージャーでの評価テンプレートの操作
+title: Microsoft Purview コンプライアンス マネージャーの評価テンプレートについて説明します
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーで評価を構築するためのテンプレートを使用および管理する方法について説明します。 書式設定されたExcel ファイルを使用してテンプレートを作成および変更します。
-ms.openlocfilehash: 009b2d742ab135abcde7c3ab73f9ec15c05c8f29
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: e83e079ba47a9e9ab33b3219ca648d1b4af9f124
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972785"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116007"
 ---
 # <a name="learn-about-assessment-templates-in-compliance-manager"></a>コンプライアンス マネージャーの評価テンプレートについて学習する
 
@@ -36,13 +36,16 @@ ms.locfileid: "64972785"
 
 ## <a name="templates-overview"></a>テンプレートの概要
 
-テンプレートは、コンプライアンス マネージャーで評価を作成するためのコントロールのフレームワークです。 Microsoft の包括的なテンプレート セットは、組織がデータの収集と使用を管理する国、地域、および業界固有の要件に準拠するのに役立ちます。
+テンプレートは、コンプライアンス マネージャーで評価を作成するためのコントロールのフレームワークです。 Microsoft の包括的なテンプレート セットは、組織がデータの収集と使用を管理する国、地域、および業界固有の要件に準拠するのに役立ちます。 テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。
 
 ## <a name="template-versions-microsoft-and-universal"></a>テンプレート バージョン: Microsoft とユニバーサル
 
-テンプレートは、EU GDPR テンプレートや ISO/IEC 27701:2019 テンプレートなど、基になる認定または規制と同じ名前で参照されます。
+コンプライアンス マネージャーは、さまざまな種類の製品を評価するために使用できます。 [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) の既定のテンプレートを除くすべてのテンプレートには、次の 2 つのバージョンがあります。
 
-コンプライアンス マネージャーは、さまざまな種類の製品を評価するために使用できます。 ベースライン以外のすべてのテンプレートには、定義済みの製品 (Microsoft 365など) に適用される少なくとも 1 つのバージョンと、他の製品に合わせて調整できるユニバーサル バージョンが用意されています。 ユニバーサル テンプレートからの評価は、より一般化されていますが、複数の製品にわたる組織のコンプライアンスを簡単に追跡するのに役立つため、柔軟性が広がっています。
+1. Microsoft 365など、定義済みの製品に適用されるバージョン、および
+2. 他の製品に合わせて調整できるユニバーサル バージョン。
+
+ユニバーサル テンプレートからの評価は、より一般化されていますが、複数の製品にわたる組織のコンプライアンスを簡単に追跡するのに役立つため、柔軟性が広がっています。
 
 米国政府Community (GCC) 中、GCC高、国防総省 (DoD) のお客様は、現在ユニバーサル テンプレートを使用できません。
 
@@ -80,7 +83,7 @@ GCC High アカウントと DOD アカウントは、[ボリューム ライセ�
 
 購入する前に Premium テンプレートを試すには、ライセンスの試用版を入手することもできます。 試用版ライセンスは、90 日間、最大 25 個のテンプレートに適しています。 試用版ライセンスを取得すると、48 時間以内にテナントでテンプレートを使用できるようになります。
 
-組織にコンプライアンス マネージャーの商用ライセンスがある場合は、「 [Microsoft Purview Compliance Manager Premium Assessments の無料試用版について](compliance-easy-trials-compliance-manager-assessments.md)」で試用版を開始する方法について説明します。
+組織にコンプライアンス マネージャーの商用ライセンスがある場合は、「Microsoft Purview [Compliance Manager Premium Assessments の無料試用版について」で試用版を開始する](compliance-easy-trials-compliance-manager-assessments.md)方法について説明します。
 
 組織がGCCまたは DOD ライセンスの下にある場合は、組織に適した試用版のリンクを選択します。
 

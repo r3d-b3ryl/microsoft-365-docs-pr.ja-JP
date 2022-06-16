@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 47e97b728fb27d8df6ad813946d3cdbe08c52085
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089113"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66116043"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
 
@@ -394,3 +394,7 @@ Microsoft にメッセージを送信せずにユーザーから報告された�
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/admin-submission-main-action-button.png" alt-text="[アクション] ボタンの [新規] オプション" lightbox="../../media/admin-submission-main-action-button.png":::
+
+メッセージが Microsoft に報告された場合、[ **管理者に変換] の送信** 値が **[いいえ]** から **[はい**] に変わります。 管理者申請に直接アクセスするには、それぞれのユーザーが報告したメッセージの送信ポップアップ内のオーバーフロー メニューから **[変換された管理者** 申請の表示] をクリックします。
+
+:::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="ユーザーから報告されたメッセージから作成された管理者の提出を表示するオプション。":::

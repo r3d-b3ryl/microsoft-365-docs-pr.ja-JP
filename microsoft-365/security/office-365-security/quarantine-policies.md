@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef3fc69cf07f4b643e12bab96a73b68627e07203
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648241"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115677"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -685,6 +685,9 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
   - **確認**
 
   :::image type="content" source="../../media/quarantine-tags-esn-full-access.png" alt-text="検疫ポリシーでユーザーにフル アクセス許可が付与されている場合に検疫通知で使用可能なボタン" lightbox="../../media/quarantine-tags-esn-full-access.png":::
+
+> [!NOTE]
+> 前述のように、検疫ポリシーに **フル アクセス** 許可グループが割り当てられている場合でも、検疫通知は DefaultFullAccessPolicy という名前の既定の検疫ポリシーで無効になります。 検疫通知は、作成したカスタム検疫ポリシーまたは NotificationEnabledPolicy という名前の既定の検疫アクセス ポリシーでのみ[使用できます (そのポリシーが組織で使用可能な場合](#full-access-permissions-and-quarantine-notifications))。
 
 ### <a name="individual-permissions"></a>個々のアクセス許可
 

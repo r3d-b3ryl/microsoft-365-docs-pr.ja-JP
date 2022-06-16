@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用のさまざまな種類のコンテンツを認識できます。
-ms.openlocfilehash: 955e94aad0c7c4c20a020a76ebf4b4ffc1871d9a
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: ed2b744c1c136afde38151dc424eef547607ef27
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078812"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115853"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -57,7 +57,7 @@ ms.locfileid: "66078812"
 
 ### <a name="where-you-can-use-classifiers"></a>分類子を使用できる場所
 
-分類子は、秘密度ラベルを使用した[自動ラベル付けをOffice](apply-sensitivity-label-automatically.md)するための条件として使用でき、条件と[通信コンプライアンス](communication-compliance.md)[に基づいてアイテム保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)できます。 
+分類子は、秘密度ラベルを使用した[自動ラベル付けをOffice](apply-sensitivity-label-automatically.md)するための条件として使用でき、条件と[通信コンプライアンス](communication-compliance.md)[に基づいてアイテム保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)できます。
 
 機密ラベルは条件として分類子を使用できます。「 [コンテンツに秘密度ラベルを自動的に適用する」を](apply-sensitivity-label-automatically.md)参照してください。
 
@@ -73,13 +73,9 @@ ms.locfileid: "66078812"
 
 Microsoft 365には、事前にトレーニングされた複数の分類子が付属しています。
 
-- **成人向け、Racy、および Gory**: これらの種類の画像を検出します。 画像のサイズは 50 KB から 4 メガバイト (MB) で、高さ x 幅の寸法は 50 x 50 ピクセルを超える必要があります。 スキャンと検出は、Exchange Online電子メール メッセージ、およびMicrosoft Teams チャネルとチャットでサポートされています。 .jpeg、.png、.gif、.bmp ファイル内のコンテンツを検出します。
+- **成人向け、racy、および gory**: これらの種類の画像を検出します。 画像のサイズは 50 KB から 4 メガバイト (MB) で、高さ x 幅の寸法は 50 x 50 ピクセルを超える必要があります。 スキャンと検出は、Exchange Online電子メール メッセージ、およびMicrosoft Teams チャネルとチャットでサポートされています。 .jpeg、.png、.gif、.bmp ファイル内のコンテンツを検出します。
 
 - **契約**: 秘密保持契約、作業明細書、ローンおよびリース契約、雇用契約、非競争契約など、法的契約に関連するコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
-
-- **履歴書**: 申請者の個人、教育、職業資格、職務経験、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt 項目を検出します。
-
-- **ソース コード**: ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、GitHub Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 個の使用済みコンピューター プログラミング言語で記述された一連の命令とステートメントを含む項目を検出します。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp、 .cxx、.hh、.c++、.clj、.edn、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.pod、.php、.phar、.php4、.pyc、 .R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
 
 - **顧客からの苦情**: 顧客の苦情分類子は、組織の製品またはサービスに関するフィードバックと苦情を検出します。 この分類子は、消費者金融保護局や食品医薬品局の要件など、苦情の検出とトリアージに関する規制要件を満たすのに役立ちます。 通信コンプライアンスでは、.msg ファイルと .eml ファイル内のコンテンツが検出されます。 残りのMicrosoft Purview 情報保護 サービスでは、.docx、.pdf、.txt、.rtf、.jpg、.jpeg、.png、.gif、.bmp、.svg ファイル内のコンテンツが検出されます。
 
@@ -101,23 +97,22 @@ Microsoft 365には、事前にトレーニングされた複数の分類子が�
 
 - **調達**: 商品やサービスの供給に対して、入札、見積もり、購入、支払いなどのカテゴリのコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xltm、.xlt、.xlam、.xla ファイルでコンテンツを検出します。
 
-- **不適切な表現**: ほとんどの人を困らせる表現を含む、不快な言語テキスト項目の特定のカテゴリを検出します。
+- **不適切な表現**: ほとんどの人を困らせる表現を含む、不快な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
 
-- **履歴書**: 申請者の個人、教育、職業資格、職務経験、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt 項目を検出します。
+- **履歴書**: 申請者の個人、教育、職業資格、職務経験、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt項目を検出します。
 
-- **ソース コード**: ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、GitHub Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの上位 25 個の使用済みコンピューター プログラミング言語で記述された一連の命令とステートメントを含む項目を検出します。
+- **ソース コード**: ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの一連の命令とステートメントが記述されたコンピューター プログラミング GitHub言語を含む項目を検出します。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp、 .cxx、.hh、.c++、.clj、.edn、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.pod、.php、.phar、.php4、.pyc、 .R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
 
-    > [!NOTE]
-    > ソース コードは、テキストの大部分がソース コードである場合を検出するようにトレーニングされます。 プレーンテキストが混在するソース コード テキストは検出されません。
+  > [!NOTE]
+  > ソース コードは、テキストの大部分がソース コードである場合を検出するようにトレーニングされます。 プレーンテキストが混在するソース コード テキストは検出されません。
 
 - **税**: 税計画、税務フォーム、税務書類、税規制などの税関係の内容を検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.ppsx、.ppsm、.ppsm、.ppss、.ppsm、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、xla ファイル。
 
 - **脅威**: 人や財産に対する暴行や身体的危害または損害を与える脅威に関連する、攻撃的な言語テキスト項目の特定のカテゴリを検出します。
-- **不適切な表現**: ほとんどの人を困らせる表現を含む、不快な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
-- **税**: 税計画、税務フォーム、税務書類、税規制などの税関係の内容を検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.ppsx、.ppsm、.ppsm、.ppss、.ppsm、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、xla ファイル。
+
 - **脅威**: 人や財産に対する暴行や身体的危害または損害を与える脅威に関連する、攻撃的な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
 
-これらは、**Microsoft Purview コンプライアンス ポータル** > **Data 分類** > **トレーニング可能な分類子** ビューに表示され、状態`Ready to use`は .
+これらの分類子は、Microsoft Purview コンプライアンス ポータル **データ分類** \> **トレーニング可能な分類子** ビューに表示され\>、状態`Ready to use`は .
 
 ![分類子-事前トレーニング済み分類子。](../media/classifiers-ready-to-use-classifiers.png)
 
@@ -145,7 +140,7 @@ Microsoft 365には、事前にトレーニングされた複数の分類子が�
 
 事前トレーニング済みの分類子がニーズを満たしていない場合は、独自の分類子を作成してトレーニングできます。 独自の作成にはより多くの作業が伴いますが、組織のニーズに合わせて調整する方がはるかに優れています。
 
-カスタムトレーニング可能な分類子の作成を開始するには、間違いなくカテゴリに含まれる例を入力します。 これらの例を処理したら、一致する例と一致しない例の両方を組み合わせてテストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 その結果を確認し、真陽性、真陰性、偽陽性、および偽陰性を並べ替えて、予測の精度を高めます。 
+カスタムトレーニング可能な分類子の作成を開始するには、間違いなくカテゴリに含まれる例を入力します。 これらの例を処理したら、一致する例と一致しない例の両方を組み合わせてテストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 その結果を確認し、真陽性、真陰性、偽陽性、および偽陰性を並べ替えて、予測の精度を高めます。
 
 分類子を発行すると、SharePoint Online、Exchange、OneDriveなどの場所のアイテムを並べ替え、コンテンツを分類します。 分類子を発行した後は、最初のトレーニング プロセスに似たフィードバック プロセスを使用して、それをトレーニングし続けることができます。
 

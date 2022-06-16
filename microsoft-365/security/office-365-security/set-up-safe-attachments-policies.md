@@ -18,16 +18,16 @@ description: メール内の悪意のあるファイルから組織を保護す�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 811730ce12af80b2ac8df7db068b63b96b856bbd
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 46b69c1bea0f967fe22c031397a8887f3399c99b
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847091"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115567"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365でセーフ添付ファイル ポリシーを設定する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -73,7 +73,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   **注意**:
 
   - Microsoft 365 管理センターで対応するAzure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - セーフ添付ファイル ポリシーの推奨設定については、「[セーフ添付ファイルの設定](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)」を参照してください。
 
@@ -104,9 +104,19 @@ Microsoft 365 Defender ポータルでカスタム セーフ添付ファイル �
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
-   同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) を使用します。
+   同じ条件の複数の値は、OR ロジックを使用します (たとえば _\<recipient1\>_ または _\<recipient2\>_)。異なる条件では AND ロジックを使用します (たとえば _\<recipient1\>_ および _\<member of group 1\>_)。
 
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
+
+   > [!IMPORTANT]
+   > 複数の異なる条件または例外は加算されません。包括的です。 ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します。
+   >
+   > - 受信者は次のとおりです:romain@contoso.com
+   > - 受信者は次のメンバーです。
+   >
+   > ポリシーは、エグゼクティブ グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   >
+   > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -116,7 +126,7 @@ Microsoft 365 Defender ポータルでカスタム セーフ添付ファイル �
      - **オフ**: 通常、この値はお勧めしません。
      - **モニター**
      - **ブロック**: これは既定値であり、Standard および Strict [の事前設定済みセキュリティ ポリシー](preset-security-policies.md)で推奨される値です。
-     - **置換**
+     - **Replace**
      - **動的配信 (プレビュー機能)**
 
      これらの値については、「[セーフ添付ファイルポリシーの設定」を参照してください](safe-attachments.md#safe-attachments-policy-settings)。
@@ -273,7 +283,7 @@ New-SafeAttachmentRule -Name "<RuleName>" -SafeAttachmentPolicy "<PolicyName>" <
 この例では、次の条件で Contoso All という名前の安全な添付規則を作成します。
 
 - ルールは、Contoso All という名前の安全な添付ファイル ポリシーに関連付けられています。
-- この規則は、contoso.com ドメイン内のすべての受信者に適用されます。
+- contoso.com ドメイン内の受信者にルールを適用する。
 - _Priority_ パラメーターを使用していないため、既定の優先度が使用されます。
 - ルールは有効です ( _Enabled_ パラメーターは使用せず、既定値は `$true`有効です)。
 

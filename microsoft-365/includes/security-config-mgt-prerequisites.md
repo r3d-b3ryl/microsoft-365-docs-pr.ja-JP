@@ -4,12 +4,12 @@ description: ファイルを含める
 author: mjcaparas
 ms.service: microsoft-365-enterprise
 ms.author: macapara
-ms.openlocfilehash: 61d7b5f00a42789a2d4f46aa41eb3f8865fb6e03
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 31008df3e43c99f3a97dad3dce037b96e3b0c4b5
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2022
-ms.locfileid: "66091451"
+ms.locfileid: "66116258"
 ---
 ## <a name="prerequisites"></a>前提条件
 
@@ -33,7 +33,7 @@ Microsoft Defender for Endpoint シナリオのセキュリティ管理の要件
 - Azure Active Directory Connect (AAD Connect) は、Microsoft Defender for Endpointから使用されるテナントに同期する必要があります
 - ハイブリッド Azure Active Directory参加は、環境内で構成する必要があります (フェデレーションまたは AAD Connect同期を使用)
 - AAD Connect同期には、Azure Active Directoryと同期するために *スコープ内の* デバイス オブジェクトを含める必要があります (参加に必要な場合)
-- サーバー 2012 R2 の同期に関する AAD Connect規則を変更する必要があります (Server 2012 R2 のサポートが必要な場合)
+- [サーバー 2012 R2](/microsoft-365/security/defender-endpoint/troubleshoot-security-config-mgt?view=o365-worldwide#instructions-for-applying-computer-join-rule-in-aad-connect) の同期に関する AAD Connect規則を変更する必要があります (Server 2012 R2 のサポートが必要な場合)
 - すべてのデバイスは、Microsoft Defender for EndpointをホストするテナントのAzure Active Directoryに登録する必要があります。 テナント間のシナリオはサポートされていません。 
 
 ### <a name="connectivity-requirements"></a>接続要件

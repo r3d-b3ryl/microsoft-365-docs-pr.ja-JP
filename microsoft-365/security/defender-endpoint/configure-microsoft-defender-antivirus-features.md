@@ -12,16 +12,15 @@ author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.date: 10/14/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4047b4628c8b63996be29d77ec13712082fde182
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 8271f6d0fcc58ce5a7e1ce08f6034a8a90afab48
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419222"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115457"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Microsoft Defender ウイルス対策機能を構成する
 
@@ -56,8 +55,6 @@ ms.locfileid: "65419222"
 
 > [!TIP]
 > [管理ツールと構成ツールのリファレンス トピックを確認](configuration-management-reference-microsoft-defender-antivirus.md)します。
-
-> [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
 > - [macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する](mac-preferences.md)
 > - [Mac 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-mac.md)

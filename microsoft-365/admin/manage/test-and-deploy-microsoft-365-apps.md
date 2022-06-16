@@ -14,16 +14,16 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリ ポータルから、組織内のユーザーとグループの Microsoft および Microsoft パートナー アプリを検索、テスト、デプロイします。
-ms.openlocfilehash: 7d28f541c319622a4c15ac4eb4619b805cd0f13b
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 862d70fe57974d2940458cb1fa59d05674d7ff58
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043168"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115501"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルでパートナーによるMicrosoft 365 Appsのテストとデプロイ
 
-Microsoft 365 管理センターでは、単一のストア アプリ、カスタム ビジネス ラインのアプリ、Microsoft 365 パートナー アプリを 1 つの場所から柔軟に展開できます。 場所には、統合アプリの Microsoft 管理センターの設定でアクセスできます。 統合アプリ ポータルから Microsoft パートナーが購入したアプリとライセンスを取得したアプリを検索、テスト、および完全にデプロイする機能により、組織がビジネス サービスを定期的に更新し、効率的に実行するために必要な利便性と利点が得られます。
+Microsoft 365 管理センターでは、単一のストア アプリ、カスタム ビジネス ラインのアプリ、Microsoft 365 パートナー アプリを 1 つの場所から柔軟に展開できます。 場所には、統合アプリの Microsoft 管理 センターの設定でアクセスできます。 統合アプリ ポータルから Microsoft パートナーが購入したアプリとライセンスを取得したアプリを検索、テスト、および完全にデプロイする機能により、組織がビジネス サービスを定期的に更新し、効率的に実行するために必要な利便性と利点が得られます。
 
 組織のパートナーからのアプリの購入とライセンスMicrosoft 365詳細については、「[Microsoft 365 管理センターからのMicrosoft 365 Appsの管理と展開](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)」を参照してください。
 
@@ -93,7 +93,7 @@ Microsoft 365 管理センターでは、単一のストア アプリ、カス�
 
 1. 管理センターの左側のナビゲーションで、**設定**、**統合アプリ** の順に選択します。
 
-2. **カスタム アプリアップロード選択します**。 Word、PowerPoint、Excel、Outlook用のアプリのカスタム行のみがサポートされます。
+2. **カスタム アプリアップロード選択します**。 Word、PowerPoint、Excel、およびOutlook用のカスタム アプリ行のみがサポートされます。
 
 3. デバイスからマニフェスト ファイルをアップロードするか、URL リンクを追加します。 一部のアプリでは、展開を選択する前にユーザーを追加する必要があります。
 
@@ -242,14 +242,14 @@ Office アドインの種類と機能の詳細については、アドイン [�
 - **Office Microsoft Store アドイン**: 管理者がOffice Microsoft Storeからアドインを選択すると、アドインがOffice Microsoft Storeで更新されると、次回関連するOffice アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
 
 > [!NOTE]
-> Word の場合、ExcelとPowerPointは[、SharePoint アプリ カタログ](https://dev.office.com/docs/add-ins/publish/publish-task-pane-and-content-add-ins-to-an-add-in-catalog)を使用して、Microsoft 365への接続や必要なSharePointアドインのサポートを持たないオンプレミス環境のユーザーにアドインを展開します。 Outlook Exchangeコントロール パネルを使用して、Microsoft 365に接続せずにオンプレミス環境にデプロイします。  
+> Word、Excel、およびPowerPointでは、[SharePoint アプリ カタログ](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins)を使用して、Microsoft 365への接続や必要なSharePoint アドインのサポートがないオンプレミス環境のユーザーにアドインを展開します。 Outlook Exchangeコントロール パネルを使用して、Microsoft 365に接続せずにオンプレミス環境にデプロイします。  
 
 ## <a name="add-in-states"></a>アドインの状態
 アドインは **、[オン] または [****オフ]** の状態にすることができます。 
 
 | 状態 | 状態が発生する原因 | 影響 |
 |:-----|:-----|:-----|
-|**アクティブ**  <br/> |管理者がアドインをアップロードし、ユーザーまたはグループに割り当てた。  <br/> |アドインを割り当てられたユーザーやグループは、関連するクライアントでアドインを表示します。  <br/> |
+|**アクティブ**  <br/> |管理アドインをアップロードし、ユーザーまたはグループに割り当てます。  <br/> |アドインを割り当てられたユーザーやグループは、関連するクライアントでアドインを表示します。  <br/> |
 |**オフ**  <br/> |管理者がアドインをオフにした。  <br/> |アドインを割り当てられたユーザーやグループは、そのアドインにアクセスできません。  <br/> アドインの状態が [アクティブ] に変更されると、ユーザーやグループはもう一度アクセスできるようになります。  <br/> |
 |**Deleted**  <br/> |管理者がアドインを削除した。  <br/> |アドインを割り当てられたユーザーやグループは、そのアドインにアクセスできません。  <br/> |
  
@@ -284,7 +284,7 @@ Office アドインの種類と機能の詳細については、アドイン [�
 
 ## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>管理者Exchangeアドインをデプロイできないシナリオ 
 
-Exchange管理者がアドインをデプロイできないケースは 2 つあります。
+Exchange 管理がアドインをデプロイできない場合は、次の 2 つがあります。
 - アドインに MS Graph API へのアクセス許可が必要で、グローバル管理者の同意が必要な場合。
 - アドインが 2 つ以上のアドインと Web アプリにリンクされており、これらのアドインの少なくとも 1 つが別の管理者 (exchange/global) によってデプロイされ、ユーザーの割り当てが均一でない場合。 ユーザーの割り当てが既にデプロイされているすべてのアプリで同じ場合にのみ、アドインのデプロイを許可します。  
 

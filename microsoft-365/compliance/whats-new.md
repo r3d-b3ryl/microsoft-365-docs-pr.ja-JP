@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purviewリスクとコンプライアンス ソリューションの新機能
+title: Microsoft Purview のリスクおよびコンプライアンス ソリューションの新機能
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,12 +20,12 @@ description: コンプライアンス センターへの新しいソリューシ
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 528d3507838f62f017f7a21111f3ccf7dd03ac1f
 ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2022
 ms.locfileid: "66089928"
 ---
-# <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purviewリスクとコンプライアンス ソリューションの新機能
+# <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview のリスクおよびコンプライアンス ソリューションの新機能
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
@@ -47,60 +47,60 @@ ms.locfileid: "66089928"
 
 ### <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
-- [通信コンプライアンス レポートと監査](communication-compliance-reports-audits.md) - エクスポートされたレポートのファイル サイズ制限を更新しました。
-- [通信コンプライアンス ポリシー](communication-compliance-policies.md) - ユーザーから報告されたメッセージの無効化/有効化プロセスを明確にし、TeamsとExchangeの処理を明確にしました。
+- [コミュニケーション コンプライアンス レポートと監査](communication-compliance-reports-audits.md) - エクスポートされたレポートのファイル サイズ制限を更新しました。
+- [コミュニケーション コンプライアンス ポリシー](communication-compliance-policies.md) - 明確化されたユーザー報告メッセージは、Teams と Exchange のプロセスを無効化/有効化し、処理を明確化しました。
 
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
 - [アラートとアラート ポリシー](compliance-manager-alert-policies.md) - すべての組織の既定のスコア変更ポリシーを説明する新しいセクション。
-- [改善アクションの操作](compliance-manager-improvement-actions.md) - 実装状態とテスト状態の状態を明確にし、自動的にテストされたアクションと手動でテストされたアクションの違いを区別します。
-- [テンプレートの一覧](compliance-manager-templates-list.md) - ヨーロッパ、中東、アフリカ (EMEA) リージョンに 2 つの新しいテンプレート (カタール国民情報保証 (NIA) と UAE データ プライバシー法が追加されました。
+- [改善アクションの操作](compliance-manager-improvement-actions.md) - 実装ステータスとテスト ステータスのステータス状態を明確にし、自動テストされたアクションと手動でテストされたアクションを区別します。
+- [テンプレート リスト](compliance-manager-templates-list.md) - ヨーロッパ、中近東およびアフリカ (EMEA) 地域に 2 つの新しいテンプレート、カタール国家情報保証 (NIA) とUAE データ プライバシー法を追加しました。
 
 ### <a name="compliance-offerings--service-assurance"></a>コンプライアンス オファリングとサービス アシュアランス
 
-- [Microsoft Security Development ライフサイクル](/compliance/assurance/assurance-microsoft-security-development-lifecycle) - Microsoft サービスの新しい SDL アシュアランストピック。
+- [Microsoft セキュリティ開発ライフサイクル](/compliance/assurance/assurance-microsoft-security-development-lifecycle) - Microsoft サービスの新しい SDL 保証トピック。
 
 ### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
 
-- 現在プレビューでロールアウト中: [保持期間の終わりに新しいラベル変更オプション](retention-settings.md#relabeling-at-the-end-of-the-retention-period)。
-- 新しいデプロイ ガイダンス: [Microsoft Purviewを使用してデータ ガバナンス ソリューションをデプロイ](data-governance-solution.md)する
-- 静的スコープとアダプティブ スコープの両方について、リソース メールボックスがExchange保持と削除でサポートされていることを確認するためのドキュメントの修正。 静的スコープの場合、リソース メールボックスは組織全体のポリシーに既定で含まれます (すべて既定値)。
-- エンド ユーザー向けの新しいドキュメント: [オンライン アーカイブ メールボックスを使用して電子メール ストレージを管理する](https://support.services.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
+- 現在プレビューでロールアウト中: [保持期間の終了時の新しいラベル変更オプション](retention-settings.md#relabeling-at-the-end-of-the-retention-period)。
+- 新しい展開ガイダンス: [Microsoft Purview を使用してデータ ガバナンス ソリューションを展開する](data-governance-solution.md)
+- ドキュメントの修正により、リソース メールボックスが静的スコープと適応スコープの両方の Exchange の保持と削除でサポートされていることを確認します。 静的スコープの場合、リソース メールボックスは既定で組織全体のポリシーに含まれます (すべて既定)。
+- エンド ユーザー向けの新しいドキュメント: [オンライン アーカイブ メールボックスを使用してメール ストレージを管理する](https://support.services.microsoft.com/office/manage-email-storage-with-online-archive-mailboxes-1cae7d17-7813-4fe8-8ca2-9a5494e9a721)
 
 ### <a name="data-loss-prevention"></a>データ損失防止
 
-- [DLP ポリシーの電子メール通知とポリシーヒントを送信](use-notifications-and-policy-tips.md) する - 通知をトリガーする内容と、通知を受け取ることができるユーザーに関する新しい情報を追加しました。
+- [メール通知と DLP ポリシーのポリシー ヒントを送信する](use-notifications-and-policy-tips.md) - 通知をトリガーするものと、通知を受信できるユーザーに関する新しい情報を追加しました。
 
 ### <a name="information-barriers"></a>情報バリア
 
-- [情報バリアについて学習](information-barriers.md)し、[情報バリアを概要](information-barriers-policies.md)する - トピックの構造をリファクタリングし、Exchange Onlineサポートと制限事項の明確化を追加しました。更新され、新しい IB UI エクスペリエンスのサポートが含まれています。
+- [情報バリアの詳細](information-barriers.md)、[情報バリアの開始](information-barriers-policies.md) - トピックの構造をリファクタリングし、Exchange Online のサポートと制限についての説明を追加し、新しい IB UI エクスペリエンスのサポートを含むように更新しました。
 
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
-- [インサイダー リスク管理設定を使用した概要](insider-risk-management-settings.md) - 新しいDefender for Cloud アプリ インジケーターのガイダンス、カスタムしきい値のトリガー イベントとしての新しい異常、新しいファイル拡張子の優先順位付け、秘密度ラベルポリシーのサポートが追加されました。
-- [インサイダー リスク管理ケース](insider-risk-management-cases.md) - 電子情報開示ケースガイダンスへのエスカレーションを明確にしました。
+- [インサイダー リスク管理設定の開始](insider-risk-management-settings.md) - 新しい Defender for Cloud Apps インジケーターのガイダンスの追加、カスタムしきい値のトリガー イベントとしての新しい変則、新しいファイル拡張子の優先順位付け、秘密度ラベル ポリシーのサポート。
+- [インサイダー リスク管理ケース](insider-risk-management-cases.md) - 電子情報開示ケース ガイダンスへのエスカレーションを明確にしました。
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
-- [無料のPriva試用版について説明](/privacy/priva/priva-trial)します。新しいユニバーサル Microsoft 365試用版の使用条件へのリンクが更新され、ロールと適格性が明確になります。
-- [Privaの概要](/privacy/priva/priva-setup) - 可用性Priva制限事項を示すセクションを追加しました。
+- [Priva 無料試用版の詳細](/privacy/priva/priva-trial) - 新しいユニバーサル Microsoft 365 試用版の使用条件への更新されたリンクと、役割と適格性を明確にするためのマイナーな更新。
+- [Priva の使用を開始する](/privacy/priva/priva-setup) - Priva の可用性の制限を示すセクションを追加しました。
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-- [正確なデータ一致ベースの機密情報の種類について説明](sit-learn-about-exact-data-match-based-sits.md) します。顧客エスカレーションから、EDM がサポートされているリージョンと、テナントのリージョンを検索する手順を追加しました。
-- [EDM SIT ルール パッケージを作成する](sit-get-started-exact-data-match-create-rule-package.md) - スキーマの記事に「特定の種類のデータを操作する」を追加しました。
-- [EDM SIT のスキーマを作成](sit-get-started-exact-data-match-create-schema.md) する - "特定の種類のデータを操作する" を削除しました。
-- [DLP ポリシーで名前付きエンティティを使用](named-entities-use.md)する - Microsoft Defender for Cloud Appsのサポート ステートメントを追加しました。
+- [正確なデータ一致ベースの機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md) - 顧客のエスカレーションから、EDM がサポートされている地域と、テナントの地域を見つける手順を追加しました。
+- [EDM SIT ルール パッケージの作成](sit-get-started-exact-data-match-create-rule-package.md) - スキーマの記事から「特定の種類のデータの処理」を追加しました。
+- [EDM SIT のスキーマの作成](sit-get-started-exact-data-match-create-schema.md) - 「特定の種類のデータの処理」を削除しました。
+- [DLP ポリシーで名前付きエンティティを使用する](named-entities-use.md) - Microsoft Defender for Cloud Apps のサポート ステートメントを追加しました。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 
-- ラベルの作成または編集プロセスの最後に、 [自動ラベル付け設定を自動ラベル付けポリシーに自動的に変換する](apply-sensitivity-label-automatically.md#convert-your-label-settings-into-an-auto-labeling-policy)新しいオプション。
-- SharePointとOneDriveの自動ラベル付けポリシーで、ファイルを最後に変更したアカウントが Azure AD に存在しなくなった場合に、暗号化を使用してラベルを適用できるようになりました。
+- ラベルの作成または編集プロセスの最後に、[自動ラベル付け設定を自動ラベル付けポリシーに自動的に変換する](apply-sensitivity-label-automatically.md#convert-your-label-settings-into-an-auto-labeling-policy)新しいオプション。
+- SharePoint と OneDrive の自動ラベル付けポリシーで、ファイルを最後に変更したアカウントが Azure AD に存在しなくなったときに、暗号化されたラベルを適用できるようになりました。
 - コンテナー ラベルは、Office 365 コンテンツ配信ネットワーク (CDN) でサポートされています。
-- [ラベルの削除と削除に関する](create-sensitivity-labels.md#removing-and-deleting-labels)説明。
-- 新しい [一般的なシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels):
-  - ファイルや電子メールに使用されるものと同じ秘密度ラベルを使用してデータベース列にラベルを付けるSQL、組織が構造化データのエクスポート時に引き続き保護する統合ラベル付けソリューションを備えています
-  - 個人データを含むコンテンツが共有され、保護が必要であるというアラートを受け取った後、機密ラベルをファイルに適用する
+- [ラベルの削除と削除](create-sensitivity-labels.md#removing-and-deleting-labels)の説明。
+- 新しい[一般的なシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels):
+  - ファイルや電子メールに使用しているものと同じ秘密度ラベルを使用して SQL データベース列にラベルを付けて、エクスポート時に、構造化データを保護し続けることができる統合ラベル付けソリューションを組織が持つようにします。
+  - 個人データを含むコンテンツが共有されつつあるか、保護が必要であるというアラートを受け取った後に、機密ラベルをファイルに適用する
 
 ## <a name="april-2022"></a>2022 年 4 月
 

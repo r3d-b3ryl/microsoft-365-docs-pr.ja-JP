@@ -1,5 +1,5 @@
 ---
-title: 送信スパム フィルターを構成する
+title: 送信スパム フィルターの構成
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -19,16 +19,16 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で送信スパム ポリシーを表示、作成、変更、削除する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ab8585a0671f9c62ec2015d91486539c84004db
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847467"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115831"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP の送信スパム フィルターを構成する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -81,7 +81,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
   **注**:
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 - 送信スパム ポリシーの推奨設定については、「 [EOP 送信スパム フィルター ポリシーの設定](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)」を参照してください。
 
@@ -112,9 +112,19 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
-   同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<sender1\>_ または _\<sender2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<sender1\>_ かつ _\<member of group 1\>_) を使用します。
+   同じ条件の複数の値は、OR ロジックを使用します (たとえば _\<sender1\>_ または _\<sender2\>_)。異なる条件では AND ロジックを使用します (たとえば _\<sender1\>_ および _\<member of group 1\>_)。
 
    - **これらのユーザー、グループ、ドメインを除外する**: ポリシーが適用される内部送信者の例外 (受信者の例外) を追加するには、このオプションを選択し、例外を構成します。 設定と動作は、条件とまったく同じです。
+
+   > [!IMPORTANT]
+   > 複数の異なる条件または例外は加算されません。包括的です。 ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します。
+   >
+   > - 受信者は次のとおりです:romain@contoso.com
+   > - 受信者は次のメンバーです。
+   >
+   > ポリシーは、エグゼクティブ グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   >
+   > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
    完了したら、**[次へ]** をクリックします。
 

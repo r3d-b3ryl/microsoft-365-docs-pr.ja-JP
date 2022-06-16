@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purviewで電子情報開示 (Standard) の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示保留を作成し、調査に関連するコンテンツを検索してエクスポートできます。
-ms.openlocfilehash: 38e4d24405810293c9261c1c7f728ece0714cd66
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: c8a3ca883191c450ebc20ddb555018b8b480199b
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078482"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115875"
 ---
 # <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Microsoft Purviewでの電子情報開示 (Standard) を使用した概要
 
@@ -41,6 +41,10 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
 - **ユーザーごとのライセンス:** メールボックスとサイトに電子情報開示ホールドを設定するには、組織のサブスクリプションに応じて、次のいずれかのライセンスをユーザーに割り当てる必要があります。
 
+  -  オンライン プラン 2 ライセンスをExchangeする
+
+   または
+   
   - Microsoft 365 E3以上のライセンスOffice 365 E3
 
    または
@@ -51,7 +55,7 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
   - Microsoft 365 フロントライン F5 コンプライアンスまたは F5 セキュリティ & コンプライアンス アドオン ライセンス  
 
-  AND
+  および
 
   - SharePoint Online プラン 2 または OneDrive for Business プラン 2 アドオン ライセンスでライセンスをOffice 365 E1する
   

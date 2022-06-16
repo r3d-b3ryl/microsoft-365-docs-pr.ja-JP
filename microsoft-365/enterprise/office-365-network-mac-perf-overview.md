@@ -3,11 +3,12 @@ title: Microsoft 365 管理 センターでのネットワーク接続
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 12/06/2021
+ms.date: 06/15/2022
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: medium
+ms.reviewer: pandrew1
 search.appverid:
 - MET150
 ms.collection:
@@ -15,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Microsoft 365 管理 センターでのネットワーク接続の概要
-ms.openlocfilehash: 19aa6beaf299a80b76753357e4cbe4f8f0966362
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 5c360820c39be6ec1c42ecdfa0a045a51716e408
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043873"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115647"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理 センターでのネットワーク接続
 
@@ -35,7 +36,7 @@ Microsoft 365 管理 センターには、Microsoft 365 テナントから収集
 > ![[ネットワーク パフォーマンス] ページ。](../media/m365-mac-perf/m365-mac-perf-page-nav.png)
 
 > [!NOTE]
-> Admin Center のネットワーク接続は、WW コマーシャルおよびドイツのテナントをサポートしますが、中、GCC高、DoD、中国GCCサポートしていません。
+> 管理 センターのネットワーク接続は、WW コマーシャルおよびドイツのテナントをサポートしますが、中、GCC高、DoD、中国GCCサポートしていません。
 
 最初にネットワーク パフォーマンス ページに移動するときは、グローバル ネットワーク パフォーマンスのマップ、テナント全体を対象とするネットワーク評価、リモートで作業しているユーザーとオンサイトで作業しているユーザーの割合、およびアクションを実行したり、さらに調査したりするための現在の問題の一覧を表示するために、場所を構成する必要があります。 概要ウィンドウからドリルダウンして、特定のネットワーク パフォーマンス メトリックと問題を場所別に表示できます。 詳細については、[Microsoft 365 管理 センターのネットワーク パフォーマンスの概要に関するページを参照してください](#network-connectivity-overview-in-the-microsoft-365-admin-center)。
 
@@ -47,19 +48,22 @@ Microsoft 365 管理 センターには、Microsoft 365 テナントから収集
 
 ### <a name="1-enable-windows-location-services"></a>1. Windows Location Services を有効にする
 
-このオプションでは、前提条件をサポートする少なくとも 2 台のコンピューターが各オフィスの場所で実行されている必要があります。 Windows バージョンのOneDriveは最新の状態で、各コンピューターにインストールされている必要があります。 OneDriveバージョンの詳細については、[OneDriveリリース ノート](https://support.office.com/article/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0)を参照してください。 ネットワーク測定値は、近日中に他のOffice 365 クライアント アプリケーションに追加される予定です。
+このオプションでは、前提条件をサポートする少なくとも 2 台のコンピューターが各オフィスの場所で実行されている必要があります。 Windows バージョンのOneDriveは最新の状態で、各コンピューターにインストールされている必要があります。 ネットワーク テストは、ランダムな時刻に 1 日に 1 回以上しか実行されません。 ネットワーク測定値は、近日中に他のOffice 365 クライアント アプリケーションに追加される予定です。
 
 Windows Location Service は、コンピューターで同意する必要があります。 これをテストするには、**マップ** アプリを実行し、自分の場所を特定します。 設定 |を使用して 1 台のマシンで有効にできます。**プライバシー |[** アプリによる場所 _へのアクセスを許可する_] 設定を有効にする必要がある場所。 Windows Location Services の同意は、MDM を使用して PC にデプロイするか、_LetAppsAccessLocation_ を設定したグループ ポリシーに展開できます。
 
-この方法を使用して管理センターに場所を追加する必要はありません。これは、都市の解像度で自動的に識別されるためです。 Windows Location Services を使用している場合、同じ都市内の複数のオフィスの場所は表示されません。 位置情報は、より正確な位置情報にアクセスできないように、最も近い 300 メートルごとに 300 メートルに丸められます。
+都市の解像度で自動的に識別されるため、このメソッドを使用して管理 センターに場所を追加する必要はありません。 Windows Location Services を使用している場合、同じ都市内の複数のオフィスの場所は表示されません。 位置情報は、より正確な位置情報にアクセスできないように、最も近い 300 メートルごとに 300 メートルに丸められます。 ネットワーク測定に Windows Location Services を使用することは、お客様の既定ではオフになっています。 ネットワーク接続設定場所ポップアップで有効にする必要があります。
+
+   > [!div class="mx-imgBorder"]
+   > ![場所を有効にする](../media/m365-mac-perf/m365-mac-perf-location-enable.png)
 
 マシンには、イーサネット ケーブルではなくWi-Fiネットワークが必要です。 イーサネット ケーブルを備えたマシンには、正確な位置情報がありません。
 
-測定サンプルとオフィスの場所は、これらの前提条件が満たされてから 24 時間後に表示され始める必要があります。
+測定サンプルとオフィスの場所は、これらの前提条件が満たされてから 24 時間後に表示され始める必要があります。 Windows Location Services から検出されたOfficeの場所は、市区町村ごとに集計され、サンプルが受信されなくなった後、90 日間ビューに保持されます。 LAN サブネット情報を使用して管理者によって追加されたオフィスの場所に切り替える場合は、Windows Location Services を無効にし、検出されたすべての場所を非表示にすることができます。 90 日後に削除されます。
 
 ### <a name="2-add-locations-and-provide-lan-subnet-information"></a>2. 場所を追加し、LAN サブネット情報を指定する
 
-このオプションでは、Windows Location Services もWi-Fiも必要ありません。 Windows バージョンのOneDriveは最新の状態で、少なくとも 1 台のコンピューターにインストールされている必要があります。
+このオプションでは、Windows Location Services もWi-Fiも必要ありません。 Windows バージョンのOneDriveは最新の状態で、その場所の少なくとも 1 つのコンピューターにインストールされている必要があり、各オフィスの LAN サブネット情報を把握している必要があります。 このオプションでは、都市ごとに複数のオフィスの場所を許可し、オフィスの場所に名前を付けることができます。 他のソースからアップロードすることもできます。
 
 場所 **ページ** にも場所を追加するか、CSV ファイルからインポートしてください。 追加する場所には、Office LAN サブネット情報を含める必要があります。 場所を追加または編集するためのダイアログで、多数の LAN サブネットと多数のパブリック エグレス IP サブネットを指定できます。 LAN サブネットが必要であり、そのうちの 1 つは、結果を表示するために受信したネットワーク評価の LAN サブネット属性と一致する必要があります。 スーパー ネットはサポートされていないため、LAN サブネットが正確に一致する必要があります。
 
@@ -73,9 +77,9 @@ Windows Location Service は、コンピューターで同意する必要があ�
 
 ### <a name="3-manually-gather-test-reports-with-the-microsoft-365-network-connectivity-test-tool"></a>3. Microsoft 365 ネットワーク接続テスト ツールを使用してテスト レポートを手動で収集する
 
-このオプションでは、各場所のユーザーを識別する必要があります。 管理者のアクセス許可を持つWindows コンピューターで[ネットワーク接続テスト](https://connectivity.office.com)をMicrosoft 365するようにユーザーに依頼します。 Web サイトでは、結果を表示するのと同じ組織のOffice 365 アカウントにサインインする必要があります。 次に、[ **テストの実行**] をクリックします。 テスト中に、ダウンロードされた Connectivity テスト EXE があります。 これを開いて実行する必要があります。 テストが完了すると、テスト結果が管理センターにアップロードされます。
+このオプションでは、各場所のユーザーを識別する必要があります。 管理者のアクセス許可を持つWindows コンピューターで[ネットワーク接続テスト](https://connectivity.office.com)をMicrosoft 365するようにユーザーに依頼します。 Web サイトでは、結果を表示するのと同じ組織のOffice 365 アカウントにサインインする必要があります。 次に、[ **テストの実行**] をクリックします。 テスト中に、ダウンロードされた Connectivity テスト EXE があります。 これを開いて実行する必要があります。 テストが完了すると、テスト結果が管理 センターにアップロードされます。
 
-テスト レポートは、LAN サブネット情報を使用して追加された場合は場所にリンクされます。それ以外の場合は、都市の場所にのみ表示されます。
+テスト レポートは、LAN サブネット情報を使用して追加された場合は場所にリンクされます。それ以外の場合は、検出された市区町村の場所にのみ表示されます。
 
 測定サンプルとオフィスの場所は、テスト レポートが完了してから 2 ~ 3 分後に表示され始める必要があります。 詳細については、「[Microsoft 365ネットワーク接続テスト](office-365-network-mac-perf-onboarding-tool.md)」を参照してください。
 

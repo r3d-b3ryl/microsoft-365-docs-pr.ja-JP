@@ -17,16 +17,16 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365で使用できるフィッシング対策ポリシーについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 786a71e37e9602be2c8de4637ffd5f83a70e7e59
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438885"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115897"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング詐欺対策ポリシー
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -86,6 +86,15 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
 
   > [!NOTE]
   > カスタムフィッシング対策ポリシーでは、ポリシーが <u>適用される</u>メッセージ **受信者** を識別するために **、ユーザー、グループ、ドメイン** の設定で少なくとも 1 つの選択が必要です。 Defender for Office 365のフィッシング対策ポリシーには、この記事の後半で説明するように、偽装<u>保護を受ける</u>個々の送信者の電子メール アドレスまたは送信者ドメインを指定できる偽装[設定](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)もあります。
+  >
+  > 複数の異なる条件または例外は加算されません。包括的です。 ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します。
+  >
+  > - 受信者は次のとおりです:romain@contoso.com
+  > - 受信者は次のメンバーです。
+  >
+  > ポリシーは、エグゼクティブ グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+  >
+  > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
 ## <a name="spoof-settings"></a>スプーフィング設定
 
@@ -95,7 +104,7 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
 
 - **スプーフィング インテリジェンスを有効にする**: スプーフィング インテリジェンスのオンとオフを切り替えます。 オンのままにすることをお勧めします。
 
-  スプーフィング インテリジェンスが有効になっている場合、 **スプーフィング インテリジェンス分析情報** は、スプーフィング インテリジェンスによって自動的に検出および許可またはブロックされたスプーフィングされた送信者を示します。 スプーフィング インテリジェンスの判定を手動でオーバーライドして、検出されたスプーフィングされた送信者を分析情報内で許可またはブロックすることができます。 ただし、スプーフィングされた送信者はスプーフィング インテリジェンス分析情報から消え、テナント許可/ブロックリストの **[スプーフィング** ] タブにのみ表示されるようになりました。 テナント許可/ブロック リストで、スプーフィングされた送信者の許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については、次の資料を参照してください。
+  スプーフィング インテリジェンスが有効になっている場合、 **スプーフィング インテリジェンス分析情報** は、スプーフィング インテリジェンスによって自動的に検出および許可またはブロックされたスプーフィングされた送信者を示します。 スプーフィング インテリジェンスの判定を手動でオーバーライドして、検出されたスプーフィングされた送信者を分析情報内で許可またはブロックすることができます。 ただし、スプーフィングされた送信者はスプーフィング インテリジェンス分析情報から消え、テナント許可/ブロックリストの **[スプーフィング** ] タブにのみ表示されるようになりました。 テナント許可/ブロック リストで、スプーフィングされた送信者の許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については、次の記事を参照してください。
 
   - 詳細については、「[EOP のスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
   - [EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)

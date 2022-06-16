@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーで評価を構築し、組織にとって重要な規制や認定の要件を満たすのに役立ちます。
-ms.openlocfilehash: 841d48951eebf0d04bf5c97a708a250218b44c65
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: cb2d90bf8dfbdcb2ec2ca534d1659a19d27998bc
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972565"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115743"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>コンプライアンス マネージャーで評価を構築および管理する
 
@@ -79,11 +79,11 @@ Microsoft では、作業を開始するために、**Microsoft 365データ保�
 
 ## <a name="understand-templates-before-creating-assessments"></a>評価を作成する前にテンプレートを理解する
 
-評価テンプレートには、さまざまなプライバシー規制と標準の認定に基づいて、評価のコントロールとアクションの推奨事項が含まれています。 組織で使用できるテンプレートには、ライセンス契約の一部として含まれていた 1 つ以上のテンプレートと、購入した追加の Premium テンプレートが含まれる場合があります。
+評価テンプレートには、さまざまなプライバシー規制と標準の認定に基づいて、評価のコントロールとアクションの推奨事項が含まれています。 組織は、ライセンス契約に応じて、少なくとも 1 つ以上の **テンプレート** を使用できます。 組織では、追加 **の Premium** テンプレートを購入することもできます。
 
-各テンプレートは、含まれているか Premium であるかに関係なく、Microsoft 365 (または利用可能な他の Microsoft 製品) で使用するためのテンプレートと、使用する他の製品を評価するために調整できるユニバーサル バージョンの 2 つのバージョンに存在します。 評価する製品に適したテンプレートの種類を選択できます。
+各テンプレートは、Microsoft 365 (または利用可能な他の Microsoft 製品) で使用するためのバージョンと、使用する他の製品を評価するように調整できるユニバーサル バージョンの 2 つのバージョンで存在します。 評価する製品に適したテンプレートの種類を選択できます。
 
-テンプレートの詳細については、「 [評価テンプレートの操作](compliance-manager-templates.md)」を参照してください。
+テンプレートの詳細については、 [コンプライアンス マネージャーの評価テンプレートの詳細を参照してください](compliance-manager-templates.md)。
 
 ## <a name="create-assessments"></a>評価を作成する
 

@@ -16,12 +16,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: WindowsとOffice展開ラボ キットにアクセスする場所について説明します。
-ms.openlocfilehash: 2324501927b39d860b8f2b06e36a85585fa8d4be
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 63ec41e1865647caac60aa6fe91f69ed6c878e74
+ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669213"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66115919"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows と Office 365 展開ラボ キット
 
@@ -31,8 +31,8 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 
 |Windows 10 ラボ|Windows 11 ラボ|
 |---|---|
-|[Win 10 ラボ環境](https://download.microsoft.com/download/3/3/a/33a3c7d7-b393-4f78-9b90-2d5eb7fd98e8/Win10_21H1_lab.zip)|[Win 11 ラボ環境](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Win 10 ラボ ガイド](https://download.microsoft.com/download/2/9/9/29952cdb-b98d-4f9b-9d6e-9fb49644b0a0/Win10_21H1_Lab_05.12.zip)|[Win 11 ラボ ガイド](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Win 10 ラボ環境](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Win 11 ラボ環境](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
+|[Win 10 ラボ ガイド](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_guides.zip)|[Win 11 ラボ ガイド](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
 
 ## <a name="a-complete-lab-environment"></a>完全なラボ環境
 
@@ -40,7 +40,7 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 
 |Windows 10 ラボ|Windows 11 ラボ|
 |---|---|
-|Windows 10 Enterpriseバージョン 21H1|Windows 11 Enterprise|
+|Windows 10 Enterpriseバージョン 21H2|Windows 11 Enterprise|
 |Microsoft Endpoint Configuration Managerバージョン 2203|Microsoft Endpoint Configuration Managerバージョン 2203|
 |Windows 10 用 Windows アセスメント & デプロイメント キット|Windows 11のWindows評価と展開キット|
 |Windows Server 2019|Windows Server 2022|
@@ -105,7 +105,7 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 
 
 > [!NOTE]
-> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 これらのラボの評価ソフトウェアは、アクティブ化後 90 日から 120 日で期限切れになります。 ラボの新しいバージョンは、2022 年 8 月に公開される予定です。 
+> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 仮想クライアントは、ラボのアクティブ化の 90 日後に期限切れになります。 仮想サーバーの有効期限は 2022 年 9 月 11 日です。 新しいバージョンのラボは、有効期限が切れる前に公開されます。 
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
