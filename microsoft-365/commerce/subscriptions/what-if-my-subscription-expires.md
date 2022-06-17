@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
 ms.date: 09/16/2021
-ms.openlocfilehash: a96ef700c522577e8d22f734ea6a8a94b410d83a
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102308"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128703"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -55,7 +55,7 @@ ms.locfileid: "66102308"
   
 > [!NOTE]
 >
-> **「顧客データ」とは** 顧客データについては、[Microsoft オンライン サービス条件](https://go.microsoft.com/fwlink/p/?LinkId=613649)で定義されており、Microsoft 365 サービスの顧客の利用を通じて、顧客またはその代理人によって Microsoft に提供されるすべてのテキスト、音声、画像ファイルを含むすべてのデータのことを指します。顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](../../compliance/get-started-with-service-trust-portal.md)」を参照してください。
+> **「顧客データ」とは** 顧客データについては、[Microsoft オンライン サービス条件](https://www.microsoft.com/en-us/licensing/product-licensing/products)で定義されており、Microsoft 365 サービスの顧客の利用を通じて、顧客またはその代理人によって Microsoft に提供されるすべてのテキスト、音声、画像ファイルを含むすべてのデータのことを指します。顧客データの保護の詳細については、「[Microsoft Service Trust Portal の使用を開始する](../../compliance/get-started-with-service-trust-portal.md)」を参照してください。
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 

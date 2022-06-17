@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: 3acbe0632a387139bbe865b854a92f8e51609cc1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b96d5f3df440db58aff63bffca11523f7c09d8ee
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007330"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128923"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>アイテム保持ラベルを発行してアプリに適用する
 
@@ -64,9 +64,9 @@ ms.locfileid: "66007330"
         - [**ソリューション**] > [**レコード管理**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
     
     - データ ライフサイクル管理を使用している場合:
-        - **[ソリューション]**  >  **[データ ライフサイクル管理]**  >  **[ラベル ポリシー]** タブ > **[ラベルの発行]**
+        - [**ソリューション**]  >  [**データ ライフサイクル管理**]  >  [**ラベル ポリシー**] タブ > [**ラベルの発行**]
     
-    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合は、まず、**[すべて表示]** を選択します。 
+    ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
 
 2. メッセージに従って保持ラベル ポリシーを作成します。 ポリシーの保存後は変更できないため、ポリシーに選択する名前に注意してください。
 

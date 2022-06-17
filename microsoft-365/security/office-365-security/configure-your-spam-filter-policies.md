@@ -18,16 +18,16 @@ ms.custom: ''
 description: 管理者が、Exchange Online Protection (EOP) で迷惑メール対策ポリシーを表示、作成、変更、削除する方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94d6ace6cd5d6fcfd87800053048e84e25d4c153
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: d72b99b73a7c399147360364fc2de0a6cee6435b
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847414"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66128725"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -109,9 +109,19 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
 
    ユーザーやグループには、ほとんどの識別子 (名前、表示名、エイリアス、メールアドレス、アカウント名など) を使用できますが、対応する表示名が結果に表示されます。ユーザーの場合、アスタリスク (\*) を単独で入力すると、使用可能なすべての値が表示されます。
 
-   同じ条件に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 別の条件では、AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) を使用します。
+   同じ条件の複数の値は、OR ロジックを使用します (たとえば _\<recipient1\>_ または _\<recipient2\>_)。異なる条件では AND ロジックを使用します (たとえば _\<recipient1\>_ および _\<member of group 1\>_)。
 
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
+
+   > [!IMPORTANT]
+   > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+   >
+   > - 受信者は次のとおりです: romain@contoso.com
+   > - 受信者が次のメンバーの場合: Executive
+   >
+   > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   >
+   > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -167,6 +177,8 @@ Microsoft 365 Defender ポータルでカスタムのスパム対策ポリシー
      > <sup>2</sup> この値をメール フロー ルールの条件として、フィルターやルールに使用することができます。
      >
      > <sup>3</sup> 空白の **[ポリシーを選択]** 値は、特定の判定に対する既定の検疫ポリシーが使用されることを意味します。 後でスパム対策ポリシーを編集するか、設定を表示すると、既定の検疫ポリシー名が表示されます。 スパム フィルター判定に使用される既定の検疫ポリシーの詳細については[この表](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)を参照してください。
+     >
+     > ユーザーは、高確率のフィッシングとして検疫された自身のメッセージを解放できません。 せいぜい、管理者が検疫ポリシーを設定し、ユーザーが検疫されている高確率のフィッシング メッセージの解放を要求できるようにする程度です。
 
    - **スパムを指定した日数隔離しておく**: スパム対策フィルター判定のアクションとして **[メッセージを検疫]** を選択した場合に、メッセージを検疫に保持する期間を指定します。 期間が終了すると、メッセージは削除され、回復できません。 有効な値は 1 日から 30 日です。
 
