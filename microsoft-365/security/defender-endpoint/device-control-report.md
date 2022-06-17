@@ -14,21 +14,21 @@ manager: dansimp
 audience: ITPro
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8a31ce05ed6986159d9f6e4c489e6f7707cfecc4
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 6fe93be2ec244628f2bf2195eb453307235ea06f
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465291"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129187"
 ---
 # <a name="device-control-report"></a>デバイス制御レポート
 
 **適用対象:** 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpointデバイス制御は、リムーバブル ストレージ デバイスや USB ドライブの使用など、組織内のデバイスによるメディアの使用を監視および制御することで、データ損失から保護します。
+Microsoft Defender for Endpointデバイス制御は、リムーバブル ストレージ デバイスや USB ドライブなど、組織内のデバイスによるメディアの使用を監視および制御することで、データ損失から保護します。
 
-デバイス制御レポートを使用すると、次のようなメディア使用状況に関連するイベントを表示できます。
+デバイス制御レポートを使用すると、メディアの使用状況に関連するイベントを表示できます。 このようなイベントは次のとおりです。
 
 - **監査イベント:** 外部メディアが接続されたときに発生する監査イベントの数を示します。
 - **ポリシー イベント:** デバイス制御ポリシーがトリガーされたときに発生するポリシー イベントの数を示します。
@@ -46,16 +46,13 @@ Microsoft Defender for Endpointデバイス制御は、リムーバブル スト
 
 ## <a name="monitor-device-control-security"></a>デバイス制御のセキュリティを監視する
 
-Microsoft Defender for Endpointのデバイス制御により、セキュリティ管理者は、レポートを使用して組織のデバイス制御セキュリティを追跡できるツールを使用できます。 デバイス制御レポートは、Microsoft 365 Defender ポータルの **[レポート] > [デバイス保護]** に移動して確認できます。
+Defender for Endpoint のデバイス制御により、セキュリティ管理者は、レポートを使用して組織のデバイス制御セキュリティを追跡できるツールを使用できます。 デバイス制御レポートは、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で確認できます。 **[レポート****全般** > セキュリティ]  >  レポートに移動 **します**。 **デバイス コントロール カードを** 探し、リンクを選択してレポートを開きます。 
 
 **レポート** ダッシュボードのデバイス保護カードには、過去 180 日間にメディアの種類別に生成された監査イベントの数が表示されます。
 
-> [!div class="mx-imgBorder"]
-> ![DeviceControlReportCard](https://user-images.githubusercontent.com/81826151/138504137-e9a7673e-e988-48cd-820d-2625ec6df352.png)
-
 [ **詳細の表示]** ボタンには、 **デバイス コントロール レポート** ページに、その他のメディア使用状況データが表示されます。
 
-このページには、種類ごとのイベントの集計数とイベントの一覧がダッシュボードに表示されます。 管理者は、時間範囲、メディア クラス名、デバイス ID でフィルター処理できます。
+このページには、種類ごとのイベントの集計数とイベントの一覧が含まれるダッシュボードが提供され、ページごとに 500 イベントが表示されますが、管理者は下にスクロールして、より多くのイベントを表示し、時間範囲、メディア クラス名、デバイス ID でフィルター処理できます。
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="images/Detaileddevicecontrolreport.png" alt-text="Microsoft 365 Defender ポータルの [デバイス制御レポートの詳細] ページ" lightbox="images/Detaileddevicecontrolreport.png":::
@@ -81,4 +78,4 @@ Microsoft Defender for Endpointのデバイス制御により、セキュリテ�
 
 ## <a name="reporting-delays"></a>レポートの遅延
 
-デバイス制御レポートには、メディア接続が発生した時点から、カードまたはドメイン リストにイベントが反映されるまでに 12 時間の遅延が発生する可能性があります。
+メディア接続が発生した時点から、イベントがカードまたはドメイン リストに反映されるまでに最大 12 時間の遅延が発生する可能性があります。

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 74f1a657cbf675b8a55edc169339cb16a22f4dbe
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115677"
+ms.locfileid: "66128857"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -212,6 +212,9 @@ New-QuarantinePolicy -Name LimitedAccess -EndUserQuarantinePermissionsValue 27 -
 > 既定の検疫ポリシーによって提供される (または提供されていない) 既定のエンド ユーザーのアクセス許可と検疫通知に満足している場合は、何もする必要はありません。 ユーザー検疫されたメッセージのエンド ユーザー機能 (使用可能なボタン) を追加または削除する場合、または検疫通知を有効にし、検疫通知で同じ機能を追加または削除する場合は、検疫アクションに別の検疫ポリシーを割り当てることができます。
 
 ## <a name="assign-quarantine-policies-in-supported-policies-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでサポートされているポリシーで、検疫ポリシーを割り当てる
+
+> [!NOTE]
+> ユーザーは、検疫ポリシーの構成方法に関係なく、マルウェア (マルウェア対策ポリシー) または高信頼フィッシング (スパム対策ポリシー) として検疫された独自のメッセージをリリースできません。 管理者は、検疫済みマルウェアまたは信頼度の高いフィッシング メッセージのリリースをユーザーが要求できるように、検疫ポリシーを構成できます。
 
 ### <a name="anti-spam-policies"></a>スパム対策ポリシー
 

@@ -13,12 +13,12 @@ ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft Teams会議を Canvas と統合する
-ms.openlocfilehash: cbb24972dba7fafe60cb460e514a0fede64a08fb
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 59b4ee7a31d1c88f0417d2a9d3e0af1335155076
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621478"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129165"
 ---
 # <a name="use-microsoft-teams-meetings-with-canvas"></a>キャンバスでMicrosoft Teams会議を使用する
 
@@ -31,15 +31,16 @@ Microsoft Teams会議は、教育者と学生がラーニング管理システ�
 >
 > - テナントには Microsoft Education ライセンスが必要です。
 > - Canvas と Microsoft の間でユーザーをマッピングするために使用できる Microsoft テナントは 1 つだけです。
-> - グループの重複を回避するには、クラス Teams LTI を使用する前に学校データ同期 (SDS) をオフにする必要があります。
+> - Canvas のMicrosoft Teams同期機能を Microsoft の学校データ同期 (SDS) と同時に使用する場合は、クラス名簿とクラス名簿データをSDS同期に含めないでください。引き続きSDSを使用して、ユーザー、組織、親連絡先、人口統計など、他のすべてのデータを同期できます。
+> - **コース同期** を有効にせずに、Teams Meetings LTI を使用できます。ただし、[**クラス全体の追加]** オプションを使用することはできません。 出席者のメール アドレスを入力またはコピーして貼り付けるか、既存のチームのチャネルを会議に追加できます。
 
-## <a name="microsoft-office-365-admin"></a>Microsoft Office 365管理者
+## <a name="microsoft-office-365-admin"></a>Microsoft Office 365 管理
 
 Instructure Canvas 内でMicrosoft Teams統合を管理する前に、Canvas 管理者のセットアップを完了する前に、Microsoft Azure テナントの教育機関のMicrosoft Office 365管理者によって Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリが承認されている必要があります。
 
 1. Canvas にサインインします。
 
-2. グローバル ナビゲーションで **[管理者** ] リンクを選択し、アカウントを選択します。
+2. グローバル ナビゲーションで **管理** リンクを選択し、アカウントを選択します。
 
 3. 管理ナビゲーションで、**設定** リンクを選択し、[統合] タブ **を** 選択します。
 
@@ -52,7 +53,7 @@ Instructure Canvas 内でMicrosoft Teams統合を管理する前に、Canvas 管
 
 5. 完了したら **、[設定の更新]** を選択します。
 
-6. Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリのアクセスを承認するには、[**テナント アクセスの許可**] リンクを選択します。 Microsoft Identity Platform 管理者同意エンドポイントにリダイレクトされます。
+6. Canvas の **Microsoft-Teams-Sync-for-Canvas** Azure アプリのアクセスを承認するには、[**テナント アクセスの許可**] リンクを選択します。 Microsoft Identity Platform 管理 Consent Endpoint にリダイレクトされます。
 
    ![アクセス 許可。](media/permissions.png)
 
@@ -65,15 +66,15 @@ Instructure Canvas 内でMicrosoft Teams統合を管理する前に、Canvas 管
 
    ![teams-sync。](media/teams-sync.png)
 
-## <a name="canvas-admin"></a>キャンバス管理者
+## <a name="canvas-admin"></a>キャンバス 管理
 
 Microsoft Teams LTI 1.3 統合を設定します。
 
-キャンバス管理者は、環境内にMicrosoft Teams会議 LTI アプリを追加する必要があります。 アプリの LTI クライアント ID をメモしておきます。
+Canvas 管理として、環境内にMicrosoft Teams会議 LTI アプリを追加する必要があります。 アプリの LTI クライアント ID をメモしておきます。
 
- - Microsoft Teams会議 - 170000000000703
+- Microsoft Teams会議 - 170000000000703
 
-1. **管理者の設定** > **にアクセスするApps**。
+1. **アプリ管理設定** > にアクセス **します**。
 
 2. **[+ アプリ] を** 選択して、Teams LTI アプリを追加します。
 

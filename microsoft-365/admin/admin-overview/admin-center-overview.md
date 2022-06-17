@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターの簡略化されたビューを使用して、一般的なタスクを管理するか、より複雑な設定とタスクのダッシュボード ビューを管理します。
-ms.openlocfilehash: d553eff9a9ed78225200320bbadb5a7e28d517f0
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436143"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129033"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
@@ -171,7 +171,7 @@ Microsoft 365 は、Office 365、Windows 10、Enterprise Mobility + Security が
 
 Microsoft ではいつでもユーザーからのご意見をお待ちしております。 バグの報告やフィードバックの送信をしていただくことで、Microsoft 365 管理センターの改善に役立ちます。 フィードバックを送信するには、ページ下部にある [**フィードバック**] ボタンを選択し、フォームを使用してご意見をお聞かせください。 コメントに関して Microsoft 365 管理センター チームからの連絡をご希望される場合は、チェックボックスをオンにし、お客様のメール アドレスを確認してください。 すべてのフィードバックに折り返しご連絡することはできませんが、できるだけご連絡を差し上げるようにいたします。
 
-管理センター以外にも、Microsoft の UserVoice フォーラムからもフィードバックを送信できます。 このページを使用して機能に関する提案を行うと、それに対して他のフォーラム ユーザーが投票を行えます: [新しい管理センター用の UserVoice フォーラム](https://go.microsoft.com/fwlink/?linkid=2024994)。
+<!---You can also give feedback from outside of the admin center on our UserVoice forum. You can use this page to make feature suggestions that can be voted on by other forum users: [UserVoice forum for the new admin center](https://go.microsoft.com/fwlink/?linkid=2024994).--->
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>特定の種類の IT 担当者役割とセキュリティ、デバイス管理、Exchange などの他のワークスペースについて説明してください。
 

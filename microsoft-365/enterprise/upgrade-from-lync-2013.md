@@ -14,12 +14,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: Lync Server 2013 からアップグレードする情報とリソースを確認します。 サポートは 2023 年 4 月 11 日に終了します。
-ms.openlocfilehash: 6d6d3baed383e85a1e97d37726ff7f1eb355e98c
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+ms.openlocfilehash: 925b53d751cd559ce3ccdf28d823531021611551
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271624"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129143"
 ---
 # <a name="upgrading-from-lync-server-2013"></a>Lync Server 2013 からのアップグレード
 
@@ -41,7 +41,7 @@ Microsoft Lync Server 2013 は、 **2023 年 4 月 11** 日にサポートを終
 
 ## <a name="plan-ahead"></a>事前に計画する
 
-[製品ライフサイクル サイト](/lifecycle/products/lync-server-2013)でサポートが終了する日付を確認します。 これらの日付を念頭に置いて、アップグレードまたは移行を計画します。 製品が一覧に表示された日付に *動作を停止することはないことを忘れないでください* 。 ただし、インストールはその日以降修正プログラムが適用されなくなるので、次のバージョンの製品へのスムーズな移行を計画する必要があります。 次の表に、使用可能なオプションの一覧を示します。
+[製品ライフサイクル サイト](/lifecycle/products/microsoft-lync-server-2013)でサポートが終了する日付を確認します。 これらの日付を念頭に置いて、アップグレードまたは移行を計画します。 製品が一覧に表示された日付に *動作を停止することはないことを忘れないでください* 。 ただし、インストールはその日以降修正プログラムが適用されなくなるので、次のバージョンの製品へのスムーズな移行を計画する必要があります。 次の表に、使用可能なオプションの一覧を示します。
 
 |サポート製品の終了|サポート|推奨|
 |---|---|---|

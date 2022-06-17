@@ -14,12 +14,12 @@ ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 8cb3dcec3690ae3a4433bfffee53dc99842c0028
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f788c72c9b437dba7528c59adedb3ced21539ada
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872316"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129121"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>仮想デスクトップ インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド
 
@@ -31,13 +31,10 @@ ms.locfileid: "65872316"
 **プラットフォーム**
 - Windows
 
-標準のオンプレミスまたはハードウェア構成に加えて、リモート デスクトップ (RDS) または非永続的仮想デスクトップ インフラストラクチャ (VDI) 環境でMicrosoft Defender ウイルス対策を使用することもできます。
+標準のオンプレミスまたはハードウェア構成に加えて、リモート デスクトップ (RDS) または非永続的仮想デスクトップ インフラストラクチャ (VDI) 環境でMicrosoft Defender ウイルス対策を使用できます。 VDI で実行されている VM に更新プログラムを簡単にデプロイできるため、コンピューター上の更新プログラムを迅速かつ簡単に入手できます。 更新プログラムがホスト サーバー上のコンポーネント ビットに展開され、オンになると VM に直接ダウンロードされるため、ゴールデン イメージを定期的に作成してシールする必要はなくなりました。
 
-Microsoft リモート デスクトップ サービスと VDI のサポートの詳細については、[Azure Virtual Desktop のドキュメントを参照してください](/azure/virtual-desktop)。
-
-Azure ベースの仮想マシンについては、「[Microsoft Defender for CloudにEndpoint Protectionをインストールする](/azure/defender-for-cloud/endpoint-protection-recommendations-technical)」を参照してください。
-
-VDI で実行されている VM に更新プログラムを簡単にデプロイする機能を使用して、このガイドを短縮し、コンピューターで迅速かつ簡単に更新プログラムを入手する方法に焦点を当てています。 更新プログラムがホスト サーバー上のコンポーネント ビットに展開され、オンになると VM に直接ダウンロードされるため、ゴールデン イメージを定期的に作成してシールする必要はなくなりました。
+> [!NOTE]
+> Defender for Endpoint デモ サイト `demo.wd.microsoft.com` は非推奨となり、今後削除される予定です。
 
 このガイドでは、次の方法を含め、最適な保護とパフォーマンスを実現するために VM を構成する方法について説明します。
 
@@ -51,12 +48,12 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
 
 また、[Virtual Desktop インフラストラクチャのホワイトペーパー Microsoft Defender ウイルス対策](https://demo.wd.microsoft.com/Content/wdav-testing-vdi-ssu.pdf)をダウンロードすることもできます。このホワイト ペーパーでは、新しい共有セキュリティ インテリジェンス更新機能と、パフォーマンス テストと、独自の VDI でウイルス対策のパフォーマンスをテストする方法に関するガイダンスを確認できます。
 
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
+Microsoft リモート デスクトップ サービスと VDI のサポートの詳細については、[Azure Virtual Desktop のドキュメントを参照してください](/azure/virtual-desktop)。
+
+Azure ベースの仮想マシンについては、「[Microsoft Defender for CloudにEndpoint Protectionをインストールする](/azure/defender-for-cloud/endpoint-protection-recommendations-technical)」を参照してください。
 
 > [!IMPORTANT]
 > VDI はWindows Server 2012またはWindows Server 2016でホストできますが、以前のバージョンのWindowsでは利用できない保護テクノロジと機能が強化されているため、仮想マシン (VM) は少なくとも 1607 Windows 10実行されている必要があります。
->
 > Microsoft Defender AV が Windows 10 Insider Preview の仮想マシンで動作する方法には、パフォーマンスと機能の向上があります。ビルド 18323 (以降)。 Insider Preview ビルドを使用する必要がある場合は、このガイドで特定します。指定されていない場合は、最適な保護とパフォーマンスに必要な最小バージョンは 1607 Windows 10。
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>専用の VDI ファイル共有を設定する
@@ -114,9 +111,8 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 セキュリティ インテリジェンス パッケージは通常、3 時間から 4 時間に 1 回発行されます。 頻度を 4 時間未満に設定しても、管理マシンのネットワーク オーバーヘッドが向上するため、お勧めしません。
 
 また、VM に代わって更新プログラムを一定間隔でフェッチし、使用するためにファイル共有に配置するように、単一のサーバーまたはマシンを設定することもできます。
-これは、更新プログラムを取得できるように、デバイスが共有への読み取りアクセス許可と NTFS アクセス許可を持っている場合に可能です。
+これは、更新プログラムを取得できるように、デバイスが共有への読み取りアクセス許可と NTFS アクセス許可を持っている場合に可能です。 これを行うには、次の手順を実行します。
 
-これを行うには、次の手順を実行します。
  1. SMB/CIFS ファイル共有を作成します。 
  
  2. 次の例を使用して、次の共有アクセス許可を持つファイル共有を作成します。
@@ -134,7 +130,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
     この例では、ファイル共有は次のとおりです。
 
-    \\\fileserver.fqdn\mdatp$\wdav-update
+    `\\fileserver.fqdn\mdatp$\wdav-update`
 
 ### <a name="set-a-scheduled-task-to-run-the-powershell-script"></a>PowerShell スクリプトを実行するようにスケジュールされたタスクを設定する
 
@@ -142,7 +138,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 2. **セキュリティ インテリジェンス アンパックャー** として名前を入力します。 **[トリガー**] タブに移動します。**[新規]を** 選択します。\>**毎日**、OK を選択 **します**。
 
-3. **[アクション]** タブに移動します。**[新規]** を選択します。**[プログラム/スクリプト**] フィールドに **「PowerShell**」と入力します。 **[引数の追加]** フィールドに入力`-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`します。 **[OK]** を選択します。
+3. **[アクション]** タブに移動します。**[新規]** を選択します。**[プログラム/スクリプト**] フィールドに **「PowerShell**」と入力します。 **[引数の追加]** フィールドに入力`-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1`します。 **[OK]** をクリックします。
 
 4. 必要に応じて、追加の設定を構成することもできます。
 
@@ -208,7 +204,6 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 > [!TIP]
 > Windows 10またはWindows 11でアクション センターを開くには、次のいずれかの手順を実行します。
->
 > - タスク バーの右端にある [アクション センター] アイコンを選択します。
 > - Windowsロゴ キー ボタン + A キーを押します。
 > - タッチスクリーン デバイスで、画面の右端からスワイプインします。
@@ -232,6 +227,18 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 このポリシーを使用すると、更新直後にスキャンが実行されなくなります。
 
+## <a name="disable-the-scanonlyifidle-option"></a>オプションを `ScanOnlyIfIdle` 無効にする
+
+次のコマンドレットを使用して、デバイスがパッシブ モードの場合にデバイスがアイドル状態になったときに、クイック スキャンまたはスケジュールされたスキャンを停止します。
+
+```PowerShell
+Set-MpPreference -ScanOnlyIfIdleEnabled $false
+```
+
+ローカル またはドメイン グループ ポリシーを`ScanOnlyIfIdle`使用して、構成別にMicrosoft Defender ウイルス対策のオプションを無効にすることもできます。 これにより、高密度環境での CPU 競合が大幅に回避されます。
+
+詳細については、「 [コンピューターがオンになっていて使用中でない場合にのみ、スケジュールされたスキャンを開始する」を参照](https://admx.help/?Category=SystemCenterEndpointProtection&Policy=Microsoft.Policies.Antimalware::scan_scanonlyifidle)してください。
+
 ## <a name="scan-vms-that-have-been-offline"></a>オフラインになっている VM をスキャンする
 
 1. グループ ポリシー エディターで、スキャン **Microsoft Defender ウイルス対策Windows コンポーネント** \> **に**\>移動 **します**。
@@ -240,7 +247,7 @@ cmd /c "cd /d $vdmpath & mpam-fe.exe /x"
 
 3. ポリシーを **[有効]** に設定します。
 
-4. **[OK]** を選択します。
+4. **[OK]** をクリックします。
 
 5. 通常どおり、グループ ポリシー オブジェクトをデプロイします。
 

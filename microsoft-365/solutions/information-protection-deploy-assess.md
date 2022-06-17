@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: データプライバシー規制、関連するシナリオ、準備状況、およびMicrosoft 365環境内の機密情報の種類を決定します。
-ms.openlocfilehash: 73cf1f3a51806fb53d5f04eb835a2fbcc7cd7b3b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a09e447733baa352a5302490b88e95a08a2775a4
+ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015040"
+ms.lasthandoff: 06/16/2022
+ms.locfileid: "66129055"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>データプライバシーリスクを評価し、Microsoft 365を使用して機密アイテムを特定する
 
@@ -196,7 +196,7 @@ Microsoft Purview コンプライアンス ポータルの新しい **データ�
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-Microsoft Purview コンプライアンス ポータルには、100 を超える機密情報の種類が事前に読み込まれています。そのほとんどは、個人データの識別と検索に関連します。 これらの組み込みの機密情報の種類は、正規表現 (正規表現) または関数によって定義されるパターンに基づいて、クレジット カード番号、銀行口座番号、パスポート番号などを識別して保護するのに役立ちます。 詳細については、「[機密情報の種類で検索される情報](../compliance/sensitive-information-type-entity-definitions.md)」を参照してください。
+Microsoft Purview コンプライアンス ポータルには、100 を超える機密情報の種類が事前に読み込まれています。そのほとんどは、個人データの識別と特定に関連します。 これらの組み込みの機密情報の種類は、正規表現 (正規表現) または関数によって定義されるパターンに基づいて、クレジット カード番号、銀行口座番号、パスポート番号などを識別して保護するのに役立ちます。 詳細については、「[機密情報の種類で検索される情報](../compliance/sensitive-information-type-entity-definitions.md)」を参照してください。
 
 従業員 ID のカスタム形式や、組み込みの機密情報の種類でまだカバーされていないその他の個人情報など、組織固有または地域の種類の機密項目を識別して保護する必要がある場合は、次の方法でカスタムの機密情報の種類を作成できます。
 
@@ -210,13 +210,13 @@ Microsoft Purview コンプライアンス ポータルには、100 を超える
 
 - [組み込みの機密情報の種類をカスタマイズする](../compliance/customize-a-built-in-sensitive-information-type.md)
 - [機密情報の種類に関する詳細情報](../compliance/sensitive-information-type-learn-about.md)
-- [Microsoft 365 Purview コンプライアンス ポータルでカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type.md)
-- [Security & Compliance PowerShell でカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
-- [Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](../compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [セキュリティ/コンプライアンス センターでカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type.md)
+- [セキュリティ/コンプライアンス センター PowerShell でカスタムの機密情報の種類を作成する](../compliance/create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Exact Data Match に基づく分類で、カスタムの機密情報の種類を作成する](/microsoft-365/compliance/sit-get-started-exact-data-match-based-sits-overview?view=o365-worldwide)
 
 ### <a name="content-explorer"></a>コンテンツ エクスプローラー
 
-環境内の機密アイテムの発生を決定するための重要なツールは、Microsoft Purview 管理センターの新しい [コンテンツ エクスプローラー](../compliance/data-classification-content-explorer.md) です。 これは、機密情報の種類の発生と結果の表示のために、Microsoft 365 サブスクリプション全体の初期スキャンと継続的スキャンを行うための自動化されたツールです。
+環境内の機密アイテムの発生を決定するための重要なツールは、Microsoft Purview管理センターの新しい[コンテンツ エクスプローラー](../compliance/data-classification-content-explorer.md)です。 これは、機密情報の種類の発生と結果の表示のために、Microsoft 365 サブスクリプション全体の初期スキャンと継続的スキャンを行うための自動化されたツールです。
 
 新しいコンテンツ エクスプローラー ツールを使用すると、組み込みの機密情報の種類またはカスタムのものを使用して、環境内の機密アイテムの場所をすばやく識別できます。 これには、プロセスを確立し、機密アイテムの存在と場所を定期的に調査する責任が割り当てられる場合があります。
 
