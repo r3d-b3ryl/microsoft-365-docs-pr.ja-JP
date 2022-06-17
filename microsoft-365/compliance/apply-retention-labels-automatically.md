@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 1b8871cba184772bd82e5e608c6e38113d4b0024
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b059a90c8a4f1406e8368cb399ca5de58b2538dd
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012882"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089862"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -326,6 +326,8 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 クラウドの添付ファイルに保持ラベルを自動適用する場合には、次の内容を検討してください。
 
 - 新しく共有されたクラウドの添付ファイルのみが、保持用に自動ラベル付けされます。
+
+- ユーザーが Teams の会話に追加され、会話の完全な履歴へのアクセス権が付与されると、その履歴にクラウドの添付ファイルを含めることができます。 ユーザーが会話に追加されてから 48 時間以内に共有された場合、クラウドの添付ファイルの現在のコピーには保持用の自動ラベルが付けられます。 この期間より前に共有されたクラウド添付ファイルは、新しく追加されたユーザーに対してサポートされていません。
 
 - Teams や Outlook の外部で共有されるクラウドの添付ファイルはサポートされていません。
 

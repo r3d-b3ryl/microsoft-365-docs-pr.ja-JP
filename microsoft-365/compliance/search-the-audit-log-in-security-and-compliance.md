@@ -21,12 +21,12 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 80ddd03eb37bd1b8984585a3e6d38b25a3a2b983
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0e8ac4e3a8705960f307314717127c969a26c2f6
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014280"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078504"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログを検索する
 
@@ -68,6 +68,7 @@ ms.locfileid: "66014280"
 | 脅威インテリジェンス|ThreatIntelligence、ThreatIntelligenceUrl、ThreatFinder、ThreatIntelligenceAtpContent|
 | Workplace Analytics|WorkplaceAnalytics|
 | Yammer|Yammer|
+| SystemSync| DataShareCreated、DataShareDeleted、GenerateCopyOfLakeData、DownloadCopyOfLakeData |
 
 前の表に示した、各サービスで監査される操作の詳細については、この記事の「[監査されたアクティビティ](#audited-activities)」セクションを参照してください。
 
@@ -408,7 +409,7 @@ ms.locfileid: "66014280"
         [暗号化されたメッセージ ポータル アクティビティ](#encrypted-message-portal-activities)
     :::column-end:::
     :::column:::
-        
+        [SystemSync activities] (#systemsync-activities)
     :::column-end:::
     :::column:::
         
@@ -447,7 +448,7 @@ ms.locfileid: "66014280"
 |リサイクルされたファイルのすべてのマイナー バージョン|FileVersionsAllMinorsRecycled|ユーザーが、ファイルのバージョン履歴からすべてのマイナー バージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。|
 |ファイルのすべてのバージョンのリサイクル|FileVersionsAllRecycled|ユーザーが、ファイルのバージョン履歴からすべてのバージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。|
 |ファイルのバージョンのリサイクル|FileVersionRecycled|ユーザーが、ファイルのバージョン履歴から 1 つのバージョンを削除しました。削除されたバージョンは、サイトのごみ箱に移動されます。|
-|ファイルの名前変更|FileRenamed|ユーザーがサイトのドキュメントの名前を変更しました。|
+|ファイルの名前変更|FileRenamed|ユーザーがドキュメントの名前を変更しました。|
 |ファイルの復元|FileRestored|ユーザーがサイトのごみ箱からドキュメントを復元しました。|
 |ファイルのアップロード|FileUploaded|ユーザーがサイトのフォルダーにドキュメントをアップロードしました。|
 |ページの表示|PageViewed|ユーザーがサイトのページを表示しました。 ドキュメント ライブラリにあるファイルの Web ブラウザーを使用した表示は、これに含まれません。 ユーザーがページを表示すると、同じユーザーの PageViewed イベントは、次の 5 分間、同じページに対して再度ログに記録されません。|
@@ -1105,6 +1106,18 @@ Exchange Online 組織で管理者 (または管理者のアクセス許可を�
 - OperationStatus - 指定された操作が成功したか失敗したかを示します。
 - AttachmentName - 添付ファイルの名前。
 - OperationProperties - オプションのプロパティのリスト (送信された OTP パスコードの数、メールの件名など)。
+
+### <a name="systemsync-activities"></a>SystemSync アクティビティ
+
+次の表に、Microsoft 365 監査ログに記録される SystemSync のアクティビティを示します。
+
+|**フレンドリ名**|**操作名**|**説明**|
+|:-----|:-----|:-----|
+|作成済の Data Share|DataShareCreated|データ エクスポートがユーザーによって作成された場合。|
+|削除済みの Data Share|DataShareDeleted|データ エクスポートがユーザーによって削除された場合。|
+|Lake Data のコピーを生成する|GenerateCopyOfLakeData|Lake Data のコピーが生成された場合。|
+|Lake Data のコピーをダウンロードする|DownloadCopyOfLakeData|Lake Data のコピーがダウンロードされた場合。|
+
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 

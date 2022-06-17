@@ -1,6 +1,8 @@
-- name: Microsoft Purview コンプライアンス
+- name: Microsoft Purview のリスク & コンプライアンス ソリューション
   href: index.yml
-- name: Microsoft Purview の最新情報
+- name: リスク & コンプライアンス ソリューションの詳細
+  href: purview-compliance.md
+- name: リスク & コンプライアンス ソリューションの新機能
   href: whats-new.md
 - name: コンプライアンス試用版
   items:
@@ -1001,6 +1003,8 @@
           href: set-up-basic-audit.md
         - name: 監査ログの検索
           href: search-the-audit-log-in-security-and-compliance.md
+        - name: 新しい検索の監査
+          href: audit-new-search.md
         - name: 監査ログ レコードをエクスポート、構成、表示する
           href: export-view-audit-log-records.md
         - name: PowerShell スクリプトを使用して監査ログを検索する

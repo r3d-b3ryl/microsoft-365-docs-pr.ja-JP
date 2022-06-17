@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織のニーズを満たすルールを使用できるようにするカスタム機密情報タイプを作成する方法について説明します。
-ms.openlocfilehash: f0ebc1bb4b13f9e31ca1a8a1967fce007105cfe6
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 69a9808cda2d30cc350da40f6c4f677598c6a000
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753894"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66016418"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
 
@@ -35,7 +35,7 @@ ms.locfileid: "65753894"
 
 ## <a name="export-the-xml-file-of-the-current-rules"></a>現在のルールの XML ファイルをエクスポートする
 
-XML をエクスポートするには、[リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。
+XML をエクスポートするには、[セキュリティ & コンプライアンス PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell) が必要です。
 
 1. PowerShell で次のように入力すると、組織のルールが画面上に表示されます。まだ独自のルールを作成していない場合は、"Microsoft Rule Package" というラベルの付いた既定の組み込みルールだけが表示されます。
 
@@ -43,7 +43,7 @@ XML をエクスポートするには、[リモート PowerShell を介してセ
    Get-DlpSensitiveInformationTypeRulePackage
    ```
 
-2. 組織のルールを変数に格納するため、次のように入力します。変数に情報を格納すると、後ほどリモート PowerShell コマンドで使用するフォーマットの中で簡単に利用できます。
+2. 次のように入力して、組織のルールを変数に格納します。 変数に何かを格納すると、後ほどリモート PowerShell コマンドで使用するフォーマットの中で簡単に利用できます。
 
    ```powershell
    $ruleCollections = Get-DlpSensitiveInformationTypeRulePackage
@@ -86,7 +86,7 @@ XML 内でクレジット カード番号のルール定義が見つかったら
 
 ## <a name="modify-the-xml-and-create-a-new-sensitive-information-type"></a>XML を変更し、新しい機密情報の種類を作成する
 
-既定のルールは直接変更できないため、最初に、新しい機密情報の種類を作成する必要があります。カスタムの機密情報の種類では、さまざまなことができます。その概要については、「[セキュリティ/コンプライアンス センターの PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。この例では、シンプルにするため、クレジット カード番号ルールの補強証拠を削除し、キーワードを追加するだけにします。
+最初に、既定のルールを直接変更できないため、新しい機密情報の種類を作成する必要があります。 カスタムの機密情報の種類を使用してさまざまな操作を行うことができます。詳細については、「[セキュリティ & コンプライアンス PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)」を参照してください。 この例では、シンプルに保ち、裏付けとなる証拠を削除し、クレジット カード番号ルールにキーワードを追加します。
 
 すべての XML ルール定義は、次のような一般的なテンプレートに基づいて作成されます。テンプレート内でクレジット カード番号定義 XML をコピーしてから貼り付け、いくつかの値を変更する必要があります (次の例の ".. ." プレースホルダーに注意してください)。続いて、変更された XML をポリシーで使用できる新しいルールとしてアップロードします。
 
@@ -203,7 +203,7 @@ Microsoft Purview コンプライアンス ポータルにアップロードで�
 
 1. ルールを Unicode エンコードの .xml ファイルとして保存します。これとは違うエンコードでファイルを保存すると、ルールが機能しないことに注意してください。
 
-2. [リモート PowerShell を介してセキュリティ/コンプライアンス センターに接続する](/powershell/exchange/connect-to-scc-powershell)
+2. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 3. PowerShell で次のように入力します。
 
