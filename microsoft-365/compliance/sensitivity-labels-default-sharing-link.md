@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成します。
-ms.openlocfilehash: 132a526cc591f34722e4c0e8d4982859790558da
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286892"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66012320"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成する
 
@@ -58,14 +58,14 @@ Microsoft Purview コンプライアンス ポータルに表示される[秘密
 
 SharePoint および OneDrive のドキュメントに既定の共有リンクの種類を適用するには、これらのサービスで秘密度ラベルを有効にする必要があります。 テナントでこの機能がまだ有効になっていない場合は、「[SharePoint と OneDrive 用の秘密度ラベルの有効化](sensitivity-labels-sharepoint-onedrive-files.md#how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in) (オプトイン)」を参照してください。
 
-PowerShel lセッションでは、「[Office 365 セキュリティ/コンプライアンス センター PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」を行って、既定の共有リンクの種類の設定を構成する必要があります。
+PowerShell セッションでは、「[Office 365 セキュリティ & コンプライアンス センター PowerShell への接続](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)」により、既定の共有リンクの種類の設定を構成する必要があります。
 
 > [!NOTE]
 > 必須ではありませんが、最初に [Microsoft Purview コンプライアンス ポータルで秘密度ラベルの作成と構成を実行して](create-sensitivity-labels.md)、既定の共有リンクの種類を構成する設定で、これらのラベルを変更することが最も簡単です。
 
 ## <a name="how-to-configure-settings-for-the-default-sharing-link-type"></a>既定の共有リンクの種類の設定を構成する方法
 
-既定の共有リンクの種類の構成設定では、以下のように、PowerShell *AdvancedSettings* パラメーターを、[セキュリティ センターとコンプライアンス センターの PowerShell](/powershell/exchange/scc-powershell) の [Set-Label](/powershell/module/exchange/set-label) および [New-Label](/powershell/module/exchange/new-labelpolicy) コマンドレットとともに使用します。
+既定の共有リンクの種類の構成設定では、PowerShell の [Set-Label](/powershell/module/exchange/set-label) と [New-Label](/powershell/module/exchange/new-labelpolicy) コマンドレットとともに [セキュリティ & コンプライアンス PowerShell](/powershell/exchange/scc-powershell) の *AdvancedSettings* を使用します。
 
 - **DefaultSharingScope**: 使用可能な値は次のとおりです。
     - **SpecificPeople**: サイトの既定の共有リンクを "特定のユーザー" リンクに設定します。

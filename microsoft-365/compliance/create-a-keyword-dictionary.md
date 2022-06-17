@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Office 365 セキュリティ/コンプライアンス センターでキーワード ディクショナリを作成する基本的な手順について説明します。
-ms.openlocfilehash: ceb410d09d9869d87681128f2c6e7b45cd8363cb
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: d00ba4a93c6ead4ecde75ac5415ccac08812feb3
+ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753674"
+ms.lasthandoff: 06/10/2022
+ms.locfileid: "66013334"
 ---
 # <a name="create-a-keyword-dictionary"></a>キーワード ディクショナリを作成する
 
@@ -34,7 +34,7 @@ Microsoft Purview のデータ損失防止 (DLP) は、機密アイテムの識�
 
 ## <a name="keyword-dictionary-limits"></a>キーワード辞書の制限
 
-テナントごとに作成できるキーワード辞書ベースの機密情報の種類は 50 個に制限されています。 テナントにあるキーワード辞書の数を確認するには、「[セキュリティ/コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)」の手順を使用して接続し、テナントに接続してこの PowerShell スクリプトを実行します。
+テナントごとに作成できるキーワード辞書ベースの機密情報の種類は 50 個に制限されています。 テナントにあるキーワード辞書の数を確認するには、「[セキュリティ & コンプライアンス センターの PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)」の手順を使用して接続し、テナントに接続してこの PowerShell スクリプトを実行します。
 
 ```powershell
 $rawFile = $env:TEMP + "\rule.xml"
@@ -112,7 +112,7 @@ Remove-Item $rawFile
 
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>PowerShell を使用してファイルからキーワード ディクショナリを作成する
 
-大きなディクショナリを作成する必要がある場合はたいてい、ファイルからのキーワードや、その他のソースからエクスポートしたリストを使うことになります。その場合、外部電子メールでスクリーニングを行うための不適切な言語のリストを含むキーワード ディクショナリを作成します。まず[セキュリティ  コンプライアンス センター PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。
+大きなディクショナリを作成する必要がある場合、それは他のソースからエクスポートされたファイルやリストからのキーワードを使用するためであることが多いです。 この場合、外部メールの画面に対する不適切な言語のリストを含めて、キーワード ディクショナリを作成します。 最初に [セキュリティ & コンプライアンス PowerShell に接続](/powershell/exchange/connect-to-scc-powershell)する必要があります。
 
 1. キーワードをテキスト ファイルにコピーし、各キーワードが別個の行にあるかどうかを確認します。
 
