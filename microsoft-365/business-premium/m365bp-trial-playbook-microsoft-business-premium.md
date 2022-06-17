@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 Business Premium 試用版を最大限に活用しましょう。 生産性とセキュリティに関する主要な機能を試してみてください。
-ms.openlocfilehash: ba9d7764734ccf47d412b6f95864da737d09251d
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 740d0b394148a84434c13fd4a3fcd38e8c617c03
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893524"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089778"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>試用版プレイブック: Microsoft Business Premium
 
@@ -27,7 +27,7 @@ Microsoft Business Premium 試用版プレイブックへようこそ。 この�
 
 ## <a name="set-up-the-microsoft-365-business-premium-trial"></a>Microsoft 365 Business Premium 試用版の設定
 
-[Microsoft 365 Business Premium 試用版を開始するか、購入する](get-microsoft-365-business-premium.md) 場合、最初の手順は、すべてをセットアップすることです。 
+[Microsoft 365 Business Premium 試用版を開始するか、購入する](get-microsoft-365-business-premium.md) 場合、最初の手順は、すべてをセットアップすることです。
 
 > [!Tip]
 > プレイブック内のリンクがこの場所から移動したら、このプレイブックに戻って続行します。
@@ -64,13 +64,13 @@ Microsoft 365 Business Premium のトライアルを購入する際、所有す�
 
 ## <a name="onboard-and-protect-devices"></a>デバイスのオンボードと保護
 
-1. security.microsoft.com の Defender ポータルにアクセスします。
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
 2. [セットアップ ウィザード](../security/defender-business/mdb-use-wizard.md) を実行する
 
-3. そして、[デバイスをオンボード](../security/defender-business/mdb-onboard-devices.md) します。
+3. [デバイスのオンボード](../security/defender-business/mdb-onboard-devices.md)。
 
-4. 次に、[セキュリティ ポリシーを表示](../security/defender-business/mdb-configure-security-settings.md) します。
+4. [セキュリティ ポリシーをレビューする](../security/defender-business/mdb-configure-security-settings.md)。
 
 ## <a name="use-office-apps-on-devices"></a>デバイスで Office アプリを使用する
 

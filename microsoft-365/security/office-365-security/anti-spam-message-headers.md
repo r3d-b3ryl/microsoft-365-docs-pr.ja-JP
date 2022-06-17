@@ -18,16 +18,16 @@ description: 管理者は、Exchange Online Protection (EOP) によってメッ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 33cebd8cfd0d61b09a5d4976baec9708082c8ca3
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 2d9c98446b7963581654c5920c30202f547ce271
+ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679436"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66089025"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -72,7 +72,7 @@ ms.locfileid: "63679436"
 |`LANG`|メッセージが作成された言語であり、国番号 (たとえば、ロシア語は ru_RU) で指定されます。|
 |`PTR:[ReverseDNS]`|逆引き DNS 参照とも呼ばれる、送信元の IP アドレスの PTR レコード。|
 |`SCL`|メッセージの SCL (Spam Confidence Level) です。 値が高いほど、メッセージがスパムである可能性が高くなります。 詳細については、「[Spam Confidence Level (SCL)](spam-confidence-levels.md)」を参照してください。|
-|`SFTY`|メッセージはフィッシングとして識別され、次のいずれかの値が付けられます。 <ul><li>9.19: ドメインの偽装。 送信ドメインが、[保護されたドメインを偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)しようとしています。 ドメイン偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.20: ユーザーの偽装。 送信ユーザーが、受信者の組織内のユーザー、または Microsoft Defender for Office 365 の[フィッシング詐欺対策ポリシーで指定されている保護ユーザー](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)に偽装しようとしています。 ユーザー偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li></ul>|
+|`SFTY`|メッセージはフィッシングとして識別され、次のいずれかの値が付けられます。 <ul><li>9.19: ドメインの偽装。 送信ドメインが、[保護されたドメインを偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)しようとしています。 ドメイン偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.20: ユーザーの偽装。 送信ユーザーが、受信者の組織内のユーザー、または Microsoft Defender for Office 365 の[フィッシング詐欺対策ポリシーで指定されている保護ユーザー](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)に偽装しようとしています。 ユーザー偽装の安全性のヒントがメッセージに追加されます (有効になっている場合)。</li><li>9.25: 最初の連絡先安全性のヒント。 この値は、疑わしいメッセージやフィッシング メッセージを示している _可能性があります_。 詳細については、「[最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)」を参照してください。</li></ul>|
 |`SFV:BLK`|メッセージがユーザーの受信拒否リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージはブロックされました。 <p> 管理者がユーザーの受信拒否リストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
 |`SFV:NSPM`|スパム フィルタリングによって、メッセージがスパムではないとしてマークされ、メッセージは意図された受信者に送信されました。|
 |`SFV:SFE`|メッセージがユーザーの差出人セーフ リスト内のアドレスから送信されているため、フィルター処理が省略され、メッセージは許可されました。 <p> 管理者がユーザーの信頼できる差出人のリストを管理する方法の詳細については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。|
@@ -155,4 +155,4 @@ SPF、DKIM、および DMARC のメール認証チェックの結果は、受信
 |`header.from`|メール メッセージ ヘッダーの `5322.From` アドレスのドメイン (From アドレスまたは P2 送信者とも呼ばれます)。受信者には、メール クライアントの From アドレスが表示されます。|
 |`reason`|複合認証にパスした、または失敗した理由。 値は 3 桁のコードです。 以下に例を示します。 <ul><li>**000**: メッセージが明示的な認証をパスしなかったことを意味します (`compauth=fail`)。たとえば、メッセージが DMARC fail を受け取り、検疫または却下のアクションが適用された場合などです。</li><li>**001** は、メッセージが暗黙的な認証をパスしなかったことを示します (`compauth=fail`)。これは、送信側ドメインがメール認証レコードを公開していないか、公開していた場合でも弱い失敗ポリシー (SPF soft fail または neutral、`p=none` の DMARC ポリシー) があったことを意味します。</li><li>**002**: 組織にスプーフィングされたメールの送信を明示的に禁止する送信者/ドメインのペアのポリシーがあります。この設定は、管理者が手動で設定します。</li><li>**010**: メッセージが拒否または検疫のアクションによって DMARC をパスせず、送信側ドメインが組織の承認済みドメインに含まれていることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。</li><li>**1xx** または **7xx**: メッセージが認証をパスしたことを意味します (`compauth=pass`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**2xx**: メッセージが暗黙的な認証を soft-pass したことを意味します (`compauth=softpass`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**3xx**: メッセージに対して複合認証のチェックが実行されなかったことを意味します (`compauth=none`)。</li><li>**4xx** または **9xx**: メッセージに対する複合認証が省略されたことを意味します (`compauth=none`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**6xx**: メッセージは暗黙的なメール認証をパスしなかったが、送信側ドメインが組織の承認済みドメインのいずれかであることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。</li></ul>|
 |`smtp.mailfrom`|`5321.MailFrom` アドレスのドメイン (MAIL FROM アドレス、P1 送信者、またはエンベロープの差出人とも呼ばれます)。 これは、配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) に使用されるメール アドレスです。|
-|`spf`|メッセージの SPF チェックの結果についての説明。次の値を指定できます。 <ul><li>`pass (IP address)`: メッセージの SPF チェックにパスしたことを示します。送信者の IP アドレスが含まれます。 送信者のドメインに代わってメールを送信または中継する許可がクライアントに与えられています。</li><li>`fail (IP address)` は、メッセージの SPF チェックに失敗したことを示し、送信者の IP アドレスが含まれています。_ハード フェイル_ ともいいます。</li><li>`softfail (reason)`: SPF レコードにより、ホストには送信する許可がないと指定されたことを示しますが、SPF レコードが展開中であることも示します。</li><li>`neutral`: SPF レコードは、IP アドレスの送信が承認されているかどうかをアサートしないと明示的に示します。</li><li>`none`: ドメインに SPF レコードがないか、SPF レコードが結果に対して評価されないことを示します。</li><li>`temperror`: 一時的なエラーが発生しました。 たとえば、DNS エラーです。 同じチェックが後で成功する場合があります。</li><li>`permerror`: パラメーター エラーが発生しました。 たとえば、ドメインに不正な形式の SPF レコードがある場合などです。</li></ul>|
+|`spf`|メッセージの SPF チェックの結果についての説明。 次の値を指定できます。 <ul><li>`pass (IP address)`: メッセージの SPF チェックにパスしたことを示します。送信者の IP アドレスが含まれます。 送信者のドメインに代わってメールを送信または中継する許可がクライアントに与えられています。</li><li>`fail (IP address)` は、メッセージの SPF チェックに失敗したことを示し、送信者の IP アドレスが含まれています。_ハード フェイル_ ともいいます。</li><li>`softfail (reason)`: SPF レコードにより、ホストには送信する許可がないと指定されたことを示しますが、SPF レコードが展開中であることも示します。</li><li>`neutral`: SPF レコードは、IP アドレスの送信が承認されているかどうかをアサートしないと明示的に示します。</li><li>`none`: ドメインに SPF レコードがないか、SPF レコードが結果に対して評価されないことを示します。</li><li>`temperror`: 一時的なエラーが発生しました。 たとえば、DNS エラーです。 同じチェックが後で成功する場合があります。</li><li>`permerror`: パラメーター エラーが発生しました。 たとえば、ドメインに不正な形式の SPF レコードがある場合などです。</li></ul>|

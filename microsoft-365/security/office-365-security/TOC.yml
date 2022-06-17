@@ -404,6 +404,8 @@
           href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
         - name: 検疫のアクセス許可とポリシーを構成する方法
           href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+        - name: メッセージ センターを使用して、Microsoft Defender for Office 365 の今後の変更に関する最新情報を入手する
+          href: step-by-step-guides/stay-informed-with-message-center.md
         - name: 事前設定されたセキュリティ ポリシーを使用して常に最適なセキュリティ制御を実現
           href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
         - name: Microsoft 365 Defender のインシデントに優先順位を付け、管理し、調査し、対応する方法

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff0a64ed04aecff83634172ecf57263482f90dc6
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
+ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014188"
+ms.lasthandoff: 06/14/2022
+ms.locfileid: "66078417"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -414,8 +414,9 @@ Word、Excel、および PowerPoint は、Office ドキュメントを PDF ド�
 - [ファイル] > [エクスポート] > [PDF]
 - [共有] > [コピーを送信] > [PDF]
 
-PDF が作成されると、コンテンツのマーキングと暗号化を含むラベルが継承されます。 暗号化された PDF は、Windows または Mac の Microsoft Edge で開くことができます。 詳細および代替リーダーについては、「[保護された PDF をサポートする PDF リーダー](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)」を参照してください。
+このアクションは、[ファイル アクティビティとページ アクティビティ](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities)監査グループの **名前変更されたファイル** 監査イベントでログに記録されます。 コンプライアンス ポータルの監査検索結果に、この監査イベントの詳細が [**アクティビティ**] フィールドの **SensitivityLabeledFileRenamed** と表示されます。
 
+PDF が作成されると、コンテンツのマーキングと暗号化を含むラベルが継承されます。 暗号化された PDF は、Windows または Mac の Microsoft Edge で開くことができます。 詳細および代替リーダーについては、「[保護された PDF をサポートする PDF リーダー](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)」を参照してください。
 
 PDF シナリオはサポートされていません:
 
