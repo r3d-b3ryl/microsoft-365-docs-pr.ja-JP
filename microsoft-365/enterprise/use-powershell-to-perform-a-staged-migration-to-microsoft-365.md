@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
 description: 段階的な移行を使用して PowerShell を使用して、時間の経過と共にソース 電子メール システムからコンテンツを移動する方法について説明Microsoft 365。
-ms.openlocfilehash: 26c12208c00e6b9b33b0be850a4791ddca804c8c
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0c40e617fbd069ab9894d572a5582985194e7a6e
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014214"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139543"
 ---
 # <a name="use-powershell-to-perform-a-staged-migration-to-microsoft-365"></a>Microsoft 365 への段階的な移行に PowerShell を使用する
 
@@ -65,7 +65,7 @@ Exchange Online PowerShell コマンドレットを使用するには、サイ�
 
 - 企業ネットワークの外部から Outlook を使用して社内の Exchange メールボックスに接続します。
 
-- [Microsoft Remote Connectivity Analyzer](https://https://testconnectivity.microsoft.com/) を使用して接続設定をテストします。 Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
+- [Microsoft Remote Connectivity Analyzer](https://testconnectivity.microsoft.com/) を使用して接続設定をテストします。 Outlook Anywhere (RPC over HTTP) または Outlook 自動検出テストを使用します。
 
 - Exchange Online PowerShell で次のコマンドを実行します。
 

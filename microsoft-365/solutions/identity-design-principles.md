@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 065e9a124deb7c064b31666d96a11f076d65abdd
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: 71b4fc8a671f4b30d70a4c3ec026c39b24c1a9a4
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060963"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139521"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>ID とそれ以降へ - 1 人のアーキテクトの視点
 
@@ -194,7 +194,7 @@ Outlook クライアントを見ると、Exchangeだけでなく、このエク�
 - パフォーマンス上の利点を提供する必要はありません。 [ネットワーク設計](https://aka.ms/office365networking)が正しくない場合、パフォーマンスが低下する可能性があります。 必ずしもデータに対してではなく、Microsoft ネットワークに "近い" デバイスを取得します。
 - [GDPR コンプライアンス](https://www.microsoft.com/trust-center/privacy/gdpr-overview)のソリューションではありません。 GDPR は、データ主権やストレージの場所には焦点を当てません。 その他のコンプライアンス フレームワークがあります。
 - 管理の委任 (以下を参照) や [情報バリア](../compliance/information-barriers.md)は解決されません。
-- マルチテナントと同じではなく、追加の [ユーザー プロビジョニング](https://github.com/MicrosoftDocs/azure-docs-pr/blob/master/articles/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation.md) ワークフローが必要です。
+- マルチテナントと同じではなく、追加の [ユーザー プロビジョニング](/azure/active-directory/hybrid/how-to-connect-sync-feature-preferreddatalocation) ワークフローが必要です。
 - テナント (Azure AD) を別の地域に [移動](../enterprise/moving-data-to-new-datacenter-geos.md) することはありません。
 
 ## <a name="delegation-of-administration"></a>管理の委任
@@ -227,7 +227,7 @@ Outlook クライアントを見ると、Exchangeだけでなく、このエク�
 
 ### <a name="microsoft-365-defender-and-microsoft-365-purview-compliance-portals"></a>Purview コンプライアンス ポータルのMicrosoft 365 DefenderとMicrosoft 365
 
-[Microsoft 365 Defender ポータル](../security/office-365-security/permissions-microsoft-365-security-center.md)の **電子メール & コラボレーション ロール** と、[Microsoft 365 Purview コンプライアンス ポータル](../compliance/microsoft-365-compliance-center-permissions.md)の *_Microsoft Purview ソリューションの役割グループ_* は、Azure AD ロールとは別の "ロール グループ" のコレクションです。 これらのロール グループの一部は Azure AD ロールと同じ名前 (セキュリティ リーダーなど) を持ち、メンバーシップが異なる場合があるため、これはわかりにくい場合があります。 Azure AD ロールの使用が好まれます。 各ロール グループは、1 つ以上の "ロール" で構成され (同じ単語を再利用する意味を参照してください)、Azure AD のメンバー (電子メールが有効なオブジェクト) が含まれています。 また、ロールと同じ名前のロール グループを作成することもできます。ロールが含まれている場合と含まれていない場合があります (この混乱を回避してください)。
+[Microsoft 365 Defender ポータル](../security/office-365-security/permissions-microsoft-365-security-center.md)の **電子メール & コラボレーション ロール** と、Microsoft 365 [Purview コンプライアンス ポータル](../compliance/microsoft-365-compliance-center-permissions.md)の *_Microsoft Purview ソリューションの *ロール グループ_* は、Azure AD ロールとは別の "ロール グループ" のコレクションです。 これらのロール グループの一部は Azure AD ロールと同じ名前 (セキュリティ リーダーなど) を持ち、メンバーシップが異なる場合があるため、これはわかりにくい場合があります。 Azure AD ロールの使用が好まれます。 各ロール グループは、1 つ以上の "ロール" で構成され (同じ単語を再利用する意味を参照してください)、Azure AD のメンバー (電子メールが有効なオブジェクト) が含まれています。 また、ロールと同じ名前のロール グループを作成することもできます。ロールが含まれている場合と含まれていない場合があります (この混乱を回避してください)。
 
 ある意味では、これらのアクセス許可は、Exchangeロール グループ モデルの進化です。 ただし、Exchange Onlineには独自の[役割グループ管理](/exchange/permissions-exo)インターフェイスがあります。 Exchange Onlineの一部のロール グループは、Azure AD または Microsoft 365 Defender および Microsoft 365 Purview コンプライアンス ポータルからロックおよび管理されますが、他のロール グループは同じ名前または類似の名前を持ち、Exchange Onlineで管理される場合があります (混乱が増します)。 Exchange管理のスコープが必要な場合を除き、Exchange Online ユーザー インターフェイスを使用しないことをお勧めします。
 

@@ -15,12 +15,12 @@ ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: ba9102f96ea08bf33f72a260779b4b37d6a6f0f4
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217378"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139343"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -40,7 +40,7 @@ ms.locfileid: "65217378"
 - [追加のフォルダーを保護する](#protect-additional-folders)
 - [保護されたフォルダーへのアクセスを許可する必要があるアプリを追加する](#allow-specific-apps-to-make-changes-to-controlled-folders)
 - [署名された実行可能ファイルに保護されたフォルダーへのアクセスを許可する](#allow-signed-executable-files-to-access-protected-folders)
-- [通知をカスタマイズする](#customize-the-notification)
+- [通知のカスタマイズ](#customize-the-notification)
 
 > [!IMPORTANT]
 > フォルダー アクセスを制御すると、悪意があると検出されたアクティビティについてアプリが監視されます。 正当なアプリがファイルに変更を加えるのをブロックされる場合があります。 フォルダー アクセスの制御が組織の生産性に影響する場合は、この機能を [監査モード](audit-windows-defender.md) で実行して影響を完全に評価することを検討してください。
@@ -169,7 +169,7 @@ Microsoft Defender for Endpoint証明書インジケーターとファイル イ
 > [!Note]
 > これは、Powershell を含むスクリプト エンジンには適用されません。
 
-## <a name="customize-the-notification"></a>通知をカスタマイズする
+## <a name="customize-the-notification"></a>通知のカスタマイズ
 
 ルールがトリガーされ、アプリまたはファイルがブロックされたときに通知をカスタマイズする方法の詳細については、「[Microsoft Defender for Endpointでアラート通知を構成する」を](configure-email-notifications.md)参照してください。
 
@@ -177,4 +177,4 @@ Microsoft Defender for Endpoint証明書インジケーターとファイル イ
 
 - [フォルダーへのアクセス制御で重要なフォルダーを保護する](controlled-folders.md)
 - [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)
-- [攻撃面の減少ルールを評価する](evaluate-attack-surface-reduction.md)
+- [攻撃面の減少ルールを有効にする](enable-attack-surface-reduction.md)

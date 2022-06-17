@@ -10,12 +10,12 @@ search.appverid: ''
 ms.collection: enabler-strategic
 ms.localizationpriority: high
 description: 「SharePoint 分類計画」のためのSKOSフォーマットの詳細
-ms.openlocfilehash: 95183b64d76a70f69d08cd5a3c9dcf76f4e83bce
-ms.sourcegitcommit: dc26169e485c3a31e1af9a5f495be9db75c49760
+ms.openlocfilehash: c9dbaae4242155522eec2fff0f7fd4d721e697cc
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "60747658"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139675"
 ---
 # <a name="skos-format-reference-for-sharepoint-taxonomy"></a>「SharePoint 分類計画」のためのSKOSフォーマットの詳細
 
@@ -128,7 +128,7 @@ ex:TermA    sharepoint-taxonomy:topLevelTermOf    ex:TermSetA.
 
 **sharepoint-taxonomy:inTermSet**
 
-これを使用して、 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)を[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)にマッピングします。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は、1つの[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)にのみ存在します。 SharePointがこのプロパティを必要なのは、[用語](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/blob/3a3cd54dd076b18bdff1d43b3e342897f8704c23/microsoft-365/contentunderstanding/skos-format-reference.md#term)を定義する場合です。
+これを使用して、 [Term](/dotnet/api/microsoft.sharepoint.taxonomy.term)を[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)にマッピングします。 [用語](/dotnet/api/microsoft.sharepoint.taxonomy.term) は、1つの[TermSet](/dotnet/api/microsoft.sharepoint.taxonomy.termset)にのみ存在します。 SharePointがこのプロパティを必要なのは、[用語](#sharepoint-taxonomy-vocabulary)を定義する場合です。
 
 ## <a name="required-labels"></a>必要なラベル
 

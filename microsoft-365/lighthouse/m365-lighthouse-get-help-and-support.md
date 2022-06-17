@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ヘルプとサポートを受ける方法について説明します。
-ms.openlocfilehash: 5bf61e9563a87ac44219c1c4644153ce98755cb5
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: cf0f9e9fd689f8e683b63af4cc8db7a09a1f6240
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017808"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139321"
 ---
 # <a name="get-help-and-support-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのヘルプとサポートを受ける 
 
@@ -40,11 +40,11 @@ ms.locfileid: "66017808"
     3. サービスの一覧で **、Microsoft 365 スイート** を見つけて展開し、スイート内のすべてのサービスを表示します。
     4. **Microsoft 365 Lighthouse** を見つけて正常性を確認します。
 
-- Microsoft 365 Lighthouseに[関する既知の問題に問題](/office365/troubleshoot/microsoft-365-lighthouse/lighthouse-known-issues)が一覧表示されているかどうかを確認します。
+- Microsoft 365 Lighthouseに[関する既知の問題に問題](/microsoft-365/lighthouse/m365-lighthouse-known-issues?view=o365-worldwide)が一覧表示されているかどうかを確認します。
 
 これらのリソースに一覧にない問題が発生した場合は、この記事の手順に従ってセルフ ヘルプ オプションを表示するか、サービス要求を作成します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 - サービス要求を作成および管理するには、**microsoft.office365.supportTickets/allEntities/allTasks** というプロパティ セットを使用して、少なくとも 1 つのAzure Active Directory (Azure AD) ロールが割り当てられている必要があります。 Azure AD ロールの一覧については、 [Azure AD の組み込みロールに](/azure/active-directory/roles/permissions-reference)関するページを参照してください。 ロールを割り当てる方法については、「 [ユーザーに Azure AD ロールを割り当てる」を参照してください](/azure/active-directory/roles/manage-roles-portal)。
 

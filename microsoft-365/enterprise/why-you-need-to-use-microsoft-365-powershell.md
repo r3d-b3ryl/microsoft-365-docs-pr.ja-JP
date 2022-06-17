@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: admindeeplinkEXCHANGE
 ms.assetid: b3209b1a-40c7-4ede-8e78-8a88bb2adc8a
 description: '概要: PowerShell を使用してMicrosoft 365を管理する必要がある理由を理解します。場合によっては、必要に応じて効率的に管理する必要があります。'
-ms.openlocfilehash: 114b97ff27ae1b79e58589eb746a261f83dc422f
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0da00ffe3c492b3bac3da9f435ece89219b4113f
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097934"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139365"
 ---
 # <a name="why-you-need-to-use-powershell-for-microsoft-365"></a>Microsoft 365 で PowerShell を使用する理由
 
@@ -155,7 +155,7 @@ Fabrice Canel                                         BR
 Get-AzureADUser | Select DisplayName, UsageLocation
 ```
 
-このコマンドは、規模が小さいドメインには最適に機能します。 ただし、大規模な組織では、その操作を 2 つのコマンドに分割することができます。1 つのコマンドでユーザー アカウント情報を変数に格納し、もう 1 つは必要な情報を表示します。 次に例を示します。
+このコマンドは、規模が小さいドメインには最適に機能します。 ただし、大規模な組織では、その操作を 2 つのコマンドに分割することができます。1 つのコマンドでユーザー アカウント情報を変数に格納し、もう 1 つは必要な情報を表示します。 次に例を示します:
 
 ```powershell
 $x = Get-AzureADUser
@@ -189,7 +189,7 @@ Set-CsMeetingConfiguration -AdmitAnonymousUsersByDefault $False -AllowConference
 ```
 
 > [!NOTE]
-> このコマンドを実行するには、[Skype for Business Online PowerShell モジュール](https://www.microsoft.com/download/details.aspx?id=39366)をインストールする必要があります。
+> このコマンドを実行するには、[Skype for Business Online PowerShell モジュール](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector)をインストールする必要があります。
 
 この PowerShell コマンドの解釈は次のとおりです。
 
@@ -238,7 +238,7 @@ Get-SPOSite | ForEach {Remove-SPOUser -Site $_.Url -LoginName "kenmyer@litwarein
 > [!NOTE]
 > このコマンドでは、[SharePoint Online PowerShell モジュール](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)をインストールする必要があります。
 
-この PowerShell コマンドの解釈は、現在のMicrosoft 365 サブスクリプション (**Get-SPOSite**) 内のすべてのSharePoint サイトを取得し、サイトごとにアクセスできるユーザーの一覧から Ken Meyer を削除します (**ForEach {Remove-SPOUser -Site $\_)。URL -LoginName "kenmyer\@ litwareinc.com"}**)。
+この PowerShell コマンドの解釈は、現在のMicrosoft 365 サブスクリプション (**Get-SPOSite**) 内のすべてのSharePoint サイトを取得し、サイトごとにアクセスできるユーザーの一覧から Ken Meyer を削除します (**ForEach {Remove-SPOUser -Site $\_)。URL -LoginName "kenmyer\@litwareinc.com"}**)。
 
 Ken Meyer にアクセスできないサイトも含め、すべてのサイトから Ken Meyer を削除するようにMicrosoft 365に指示します。 そのため、アクセス権を持たないサイトのエラーが結果に表示されます。 このコマンドで追加の条件を使用して、Ken Meyer を自分のログイン リストに含まれているサイトからのみ削除できます。 ただし、返されるエラーは、サイト自体に害を及ぼしません。 このコマンドは、Microsoft 365 管理センターを処理する時間ではなく、数百のサイトに対して実行するのに数分かかる場合があります。
 
@@ -258,7 +258,7 @@ Microsoft 365 管理センターには、データをフィルター処理して
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>では、フィルター条件を組み合わせることもできます。 たとえば、ブルーミングトンに住み、財務部門で働くすべてのユーザーのメールボックスを見つけることができます。
 
-ただし、Exchange管理センターでできることには制限があります。 たとえば、ブルーミングトンやサン ディエゴに住んでいるユーザーのメールボックス *や* 、ブルーミングトンに住まないすべてのユーザーのメールボックスを簡単に見つけることができませんでした。
+ただし、Exchange 管理 センターでできることには制限があります。 たとえば、ブルーミングトンやサン ディエゴに住んでいるユーザーのメールボックス *や* 、ブルーミングトンに住まないすべてのユーザーのメールボックスを簡単に見つけることができませんでした。
 
 次の PowerShell for Microsoft 365 コマンドを使用して、ブルーミングトンまたはサン ディエゴに住むすべてのユーザーのメールボックスの一覧を取得できます。
 
@@ -378,7 +378,7 @@ Microsoft 365を構成するコンポーネントは、連携するように設�
 
 - ユーザーが Skype for Business Online に対して有効になっているかどうか
 
-このようなレポートをMicrosoft 365 管理センターで簡単に作成することはできません。 代わりに、Excel ワークシートなどの情報を格納する別のドキュメントを作成する必要があります。 次に、Microsoft 365 管理センターからすべてのユーザー名とライセンス情報を取得し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>からメールボックス情報を取得し、Skype for Business Online 管理センターからオンライン情報Skype for Business取得し、その情報を結合します。
+このようなレポートをMicrosoft 365 管理センターで簡単に作成することはできません。 代わりに、Excel ワークシートなどの情報を格納する別のドキュメントを作成する必要があります。 次に、Microsoft 365 管理センターからすべてのユーザー名とライセンス情報を取得し、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>からメールボックス情報を取得し、Skype for Business Online 管理 センターからオンライン情報Skype for Business取得し、結合します。その情報。
 
 代わりに、PowerShell スクリプトを使用してレポートをコンパイルすることもできます。
 

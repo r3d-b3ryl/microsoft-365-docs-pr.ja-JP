@@ -5,7 +5,7 @@ f1.keywords:
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: jkinma, jmueller
+ms.reviewer: sgautam, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
 ms.date: 09/16/2021
-ms.openlocfilehash: 8baebd55217dd5cd38228cca26a7504e5021f06b
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: a96ef700c522577e8d22f734ea6a8a94b410d83a
+ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322185"
+ms.lasthandoff: 06/15/2022
+ms.locfileid: "66102308"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -133,8 +133,8 @@ ms.locfileid: "63322185"
 試用期間が終了すると、Microsoft 365 を無料で使えなくなります。この場合、いくつかの選択肢があります。
 
 - **Microsoft 365 を購入します。** 試用期間が経過すると、期限切れステージに入り、Microsoft 365 を購入するまでの期間がさらに 30 日間与えられます (ほとんどの国と地域のほとんどの試用版が対象)。 試用版を有料サブスクリプションに切り替える方法については、「[無料試用版からサブスクリプションを購入する](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial)」を参照してください。
-- **試用期間を延長する**。Microsoft 365 を評価する時間がさらに必要なときには、[試用期間を延長する](../extend-your-trial.md)ことができます。
-- **試用版をキャンセルするか期限切れにする。** Microsoft 365 を購入しない場合は、試用版を期限切れにするか、[キャンセルする](cancel-your-subscription.md)ことができます。必要なデータはバックアップしてください。30 日間の期限切れステージが過ぎるとすぐに、試用版のアカウントの情報とデータが完全に消去されます。
+- **試用期間を延長します。** Microsoft 365 の評価にもっと時間が必要ですか? 場合によっては、[試用期間を延長](../extend-your-trial.md)できます。
+- **試用版を終了するか、期限切れにします。** Microsoft 365 を購入しない場合は、試用期間を終了するか、[キャンセルすることができます](cancel-your-subscription.md)。 保持するデータをバックアップします。 30 日間の期限切れステージの直後に、試用版アカウントの情報とデータが完全に消去されます。
 
 > [!NOTE]
 >

@@ -21,12 +21,12 @@ search.appverid:
 - SPO160
 ms.assetid: e8ce6b72-745b-464a-85c7-cbf6eb53391b
 description: コンテンツ クエリ Web パーツを SharePoint Server 2013 および SharePoint Online のコンテンツ検索 Web パーツに置き換えることで、パフォーマンスを向上させる方法について説明します。
-ms.openlocfilehash: 45b43b3071ca39c67283ac70ab92b20e2fc7e21a
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4c8a97d24320d5380eccc089737947df9b1a0d0b
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621986"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139499"
 ---
 # <a name="using-content-search-web-part-instead-of-content-query-web-part-to-improve-performance-in-sharepoint-online"></a>コンテンツ クエリ Web パーツの代わりにコンテンツ検索 Web パーツを使用して、SharePoint Online のパフォーマンスを向上させる
 
@@ -72,6 +72,6 @@ Internet Explorer で、F12 開発者ツールの [ **ネットワーク** ] タ
   
 ## <a name="query-building-and-testing-tool"></a>クエリのビルドとテスト ツール
 
-複雑なクエリをビルドしてテストするツールについては、Codeplex の [検索クエリ ツール](https://sp2013searchtool.codeplex.com/) を参照してください。 
+複雑なクエリをビルドしてテストするツールについては、 [検索クエリ ツール](https://github.com/pnp/PnP-Tools/tree/master/Solutions/SharePoint.Search.QueryTool#download-the-tool)を参照してください。
   
 

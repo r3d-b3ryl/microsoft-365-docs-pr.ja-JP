@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpointでのトラブルシューティング モードを使用した概要 (プレビュー)
+title: Microsoft Defender for Endpointでのトラブルシューティング モードでの概要
 description: Microsoft Defender for Endpointトラブルシューティング モードをオンにして、さまざまなウイルス対策の問題に対処します。
 keywords: ウイルス対策, トラブルシューティング, トラブルシューティング モード, 改ざん防止, 互換性
 search.product: eADQiWindows 10XVcnh
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e89666b6172d7c63d6b7d83cc365d6aed9b6856b
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 4525ab2e979a16381ba75d2bdb229fb73d394156
+ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044078"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66139388"
 ---
-# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint-preview"></a>Microsoft Defender for Endpointでのトラブルシューティング モードを使用した概要 (プレビュー)
+# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでのトラブルシューティング モードでの概要 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,9 +32,6 @@ ms.locfileid: "66044078"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 >Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
-
-> [!IMPORTANT]
-> 一部の情報は、リリース済みの製品に関連しており、商用リリースされる前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 Microsoft Defender for Endpointトラブルシューティング モードを使用すると、組織のポリシーによって制御されている場合でも、デバイスから有効にし、さまざまなシナリオをテストすることで、さまざまな Microsoft Defender ウイルス対策機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これは排他的にEnterprise専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
 
