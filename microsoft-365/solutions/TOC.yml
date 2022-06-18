@@ -302,8 +302,6 @@
                   href: end-life-cycle-groups-teams-sites-yammer.md
         - name: Microsoft 365 での SharePoint のファイルの共同作業
           href: /sharepoint/deploy-file-collaboration
-        - name: エンタープライズ向けの OneDrive ガイド
-          href: /onedrive/plan-onedrive-enterprise
     - name: コンプライアンス
       items:
         - name: Microsoft Purview のインサイダー リスク ソリューション

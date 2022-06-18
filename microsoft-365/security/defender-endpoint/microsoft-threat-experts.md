@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb56ab7feb864a51c51b6f240e8376f989491857
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: b81daa25618fd971f5f29e2672673e8dcd2e35bc
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622706"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159448"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -42,10 +42,11 @@ Microsoft 脅威エキスパートは、セキュリティ オペレーション
 このビデオでは、Microsoft 脅威エキスパートセキュリティ オペレーション センター (SOC) に専門家レベルの監視と分析を提供し、重大な脅威を見逃さないようにする方法について説明します。 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qZ0B]
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!NOTE]
 > マネージド脅威ハンティング サービスに適用する前に、Microsoft Technical Service プロバイダーとアカウント チームと資格要件について話し合ってください。
+> 脅威の専門家は、現在、米国政府のクラウドのMicrosoft 365では利用できません。
 
 Microsoft Defender for Endpoint顧客である場合は、環境内で最も重要な脅威を特定して迅速に対応できるように役立つ特別な分析情報と分析情報を取得するために、**Microsoft 脅威エキスパート - ターゲット攻撃通知** を申請する必要があります。
 

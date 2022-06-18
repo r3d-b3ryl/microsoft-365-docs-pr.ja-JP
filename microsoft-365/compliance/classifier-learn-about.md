@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用のさまざまな種類のコンテンツを認識できます。
-ms.openlocfilehash: ed2b744c1c136afde38151dc424eef547607ef27
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115853"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159578"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -53,7 +53,7 @@ ms.locfileid: "66115853"
 
 > [!NOTE]
 > プレビュー - フィルター パネルで [トレーニング可能な分類子] を展開することで、コンテンツ エクスプローラーで **トレーニング可能な分類子** を表示できます。 トレーニング可能な分類子は、ラベル付けを必要とせずに、SharePoint、Teams、OneDriveで検出されたインシデントの数を自動的に表示します。
-> この機能を使用しない場合は、既定の分類を無効にするには、Microsoft サポートで要求を提出する必要があります。 これにより、ラベル付けポリシーを作成する前に、機密コンテンツとラベル付きコンテンツのスキャンが無効になります。
+> この機能を使用しない場合は、Microsoft サポートを使用して要求を提出する必要があります。 これにより、コンテンツ エクスプローラー内のラベル付けポリシーで使用されていない機密データの表示が無効になります。 データのスキャンも無効にすることができます。 スキャンがオフになっている場合、それらの分類子を使用した秘密度ラベル付けと DLP ポリシーは機能しません
 
 ### <a name="where-you-can-use-classifiers"></a>分類子を使用できる場所
 

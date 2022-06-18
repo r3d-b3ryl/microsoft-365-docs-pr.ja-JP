@@ -1,6 +1,6 @@
 ---
-title: macOS でのMicrosoft Defender for Endpointの手動展開
-description: コマンド ラインから手動で macOS にMicrosoft Defender for Endpointをインストールします。
+title: macOSでのMicrosoft Defender for Endpointの手動デプロイ
+description: コマンド ラインから手動でmacOSにMicrosoft Defender for Endpointをインストールします。
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, インストール, 展開, アンインストール, intune, jamf, macos, catalina, mojave, high sierra
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,14 +16,14 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4c2bf6cef9e2d2d7413cff9aa4a8ed110ae72edf
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 68f91e4b8f789087aacea14b6b2a8a8b67262fd0
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65129268"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159621"
 ---
-# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpointの手動展開
+# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>macOSでのMicrosoft Defender for Endpointの手動デプロイ
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "65129268"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップ](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)します。
 
-このトピックでは、macOS に手動でMicrosoft Defender for Endpointを展開する方法について説明します。 デプロイが正常に完了するには、次のすべての手順を完了する必要があります。
+このトピックでは、macOSにMicrosoft Defender for Endpointを手動でデプロイする方法について説明します。 デプロイが正常に完了するには、次のすべての手順を完了する必要があります。
 
 - [インストール パッケージとオンボード パッケージをダウンロードする](#download-installation-and-onboarding-packages)
 - [アプリケーションのインストール (macOS 10.15)](#application-installation-macos-1015)
@@ -43,14 +43,14 @@ ms.locfileid: "65129268"
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
-作業を開始する前に、[macOS のメイン Microsoft Defender for Endpointページで](microsoft-defender-endpoint-mac.md)、現在のソフトウェア バージョンの前提条件とシステム要件の説明を参照してください。
+作業を開始する前に、現在のソフトウェア バージョンの前提条件とシステム要件の説明については、[macOS ページのメイン](microsoft-defender-endpoint-mac.md) Microsoft Defender for Endpointを参照してください。
 
 ## <a name="download-installation-and-onboarding-packages"></a>インストール パッケージとオンボード パッケージをダウンロードする
 
 Microsoft 365 Defender ポータルからインストール パッケージとオンボード パッケージをダウンロードします。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、**設定 > エンドポイント>デバイス管理>オンボードに** 移動します。
-2. ページのセクション 1 で、オペレーティング システムを **macOS** に設定し、展開方法を **ローカル スクリプト** に設定します。
+2. ページのセクション 1 で、オペレーティング システムを **macOS** に設定し、Deployment メソッドを **ローカル スクリプト** に設定します。
 3. ページのセクション 2 で、[ **インストール パッケージのダウンロード**] を選択します。 wdav.pkg としてローカル ディレクトリに保存します。
 4. ページのセクション 2 で、[ **オンボード パッケージのダウンロード**] を選択します。 同じディレクトリにWindowsDefenderATPOnboardingPackage.zipとして保存します。
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender ポータルからインストール パッケージと�
    > **[許可]** を選択しない場合、インストールは 5 分後に続行されます。 Microsoft Defender for Endpointが読み込まれますが、リアルタイム保護などの一部の機能は無効になります。 これを解決する方法については、「 [カーネル拡張機能の問題のトラブルシューティング](mac-support-kext.md) 」を参照してください。
 
 > [!NOTE]
-> macOS は、Microsoft Defender for Endpointの初回インストール時にデバイスの再起動を要求する場合があります。 デバイスが再起動されるまで、リアルタイム保護は使用できません。
+> macOSは、Microsoft Defender for Endpointの最初のインストール時にデバイスの再起動を要求する場合があります。 デバイスが再起動されるまで、リアルタイム保護は使用できません。
 
 ## <a name="application-installation-macos-11-and-newer-versions"></a>アプリケーションのインストール (macOS 11 以降のバージョン)
 
@@ -117,7 +117,7 @@ Microsoft 365 Defender ポータルからインストール パッケージと�
 
 ## <a name="client-configuration"></a>クライアントの構成
 
-1. macOS にMicrosoft Defender for Endpointを展開するデバイスに wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.sh をコピーします。
+1. macOSにMicrosoft Defender for Endpointを展開するデバイスに wdav.pkg と MicrosoftDefenderATPOnboardingMacOs.sh をコピーします。
 
     クライアント デバイスがorg_idに関連付けられていない。 *org_id* 属性は空白であることに注意してください。
 
@@ -128,7 +128,7 @@ Microsoft 365 Defender ポータルからインストール パッケージと�
 2. Bash スクリプトを実行して、構成ファイルをインストールします。
 
     ```bash
-    bash MicrosoftDefenderATPOnboardingMacOs.sh
+    Sudo bash -x MicrosoftDefenderATPOnboardingMacOs.sh
     ```
 
 3. デバイスが組織に関連付けられていることを確認し、有効な組織 ID を報告します。
@@ -137,7 +137,7 @@ Microsoft 365 Defender ポータルからインストール パッケージと�
     mdatp health --field org_id
     ```
 
-    インストール後、右上隅の macOS ステータス バーに Microsoft Defender アイコンが表示されます。
+    インストール後、右上隅のmacOSステータス バーに Microsoft Defender アイコンが表示されます。
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mdatp-icon-bar.png" alt-text="ステータス バーの Microsoft Defender アイコン" lightbox="images/mdatp-icon-bar.png":::
@@ -190,7 +190,7 @@ Microsoft 365 Defender ポータルからインストール パッケージと�
    > ダブルクリックすると、次のメッセージが表示されます。
    >
    > > **開発者が検証ツールになれないため、"MDATP MacOS DIY" を開けません。**<br/>
-   > > macOS では、このアプリがマルウェアから解放されていることを確認できません。<br/>
+   > > macOSこのアプリがマルウェアから解放されていることを確認できません。<br/>
    > > **\[ごみ箱\]****\[の取り消し\]** に移動する
 
 7. [ **キャンセル**] をクリックします。
@@ -199,25 +199,25 @@ Microsoft 365 Defender ポータルからインストール パッケージと�
 
     システムには次のメッセージが表示されます。
 
-    > **macOS では、MDATP MacOS DIY の開発者を確認できません。開いてよければよか?**<br/>
+    > **macOS MDATP MacOS DIY の開発者を確認できません。開いてよければよか?**<br/>
     > このアプリを開くと、Mac に害を与えたり、プライバシーを侵害したりする可能性のあるマルウェアにコンピューターと個人情報を公開できるシステム セキュリティがオーバーライドされます。
 
 9. [ **開く**] をクリックします。
 
     システムには次のメッセージが表示されます。
 
-    > Microsoft Defender for Endpoint - macOS EDR DIY テスト ファイル<br/>
+    > Microsoft Defender for Endpoint - MACOS EDR DIY テスト ファイル<br/>
     > 対応するアラートは、MDATP ポータルで利用できます。
 
 10. [ **開く**] をクリックします。
 
-    数分後に、"macOS EDR Test Alert" という名前のアラートが発生する必要があります。
+    数分後に、"macOS EDR テスト アラート" という名前のアラートを発生させます。
 
 11. Microsoft 365 Defender ポータル (https://security.microsoft.com/).
 
 12. アラート キューに移動します。
 
-    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="重大度、カテゴリ、検出ソース、および折りたたまれたアクション のメニューを示す macOS EDRテスト アラート" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
+    :::image type="content" source="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png" alt-text="重大度、カテゴリ、検出ソース、および折りたたまれたアクション のメニューを示すmacOS EDRテスト アラート" lightbox="images/b8db76c2-c368-49ad-970f-dcb87534d9be.png":::
 
     アラートの詳細とデバイスのタイムラインを確認し、通常の調査手順を実行します。
 
@@ -227,4 +227,4 @@ Microsoft 365 Defender ポータルからインストール パッケージと�
 
 ## <a name="uninstallation"></a>アンインストール
 
-クライアント デバイスから macOS 上のMicrosoft Defender for Endpointを削除する方法の詳細については、「[アンインストール](mac-resources.md#uninstalling)」を参照してください。
+クライアント デバイスからmacOSのMicrosoft Defender for Endpointを削除する方法の詳細については、「[アンインストール](mac-resources.md#uninstalling)」を参照してください。

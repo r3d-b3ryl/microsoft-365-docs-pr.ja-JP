@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 管理センターの簡略化されたビューを使用して、一般的なタスクを管理するか、より複雑な設定とタスクのダッシュボード ビューを管理します。
-ms.openlocfilehash: f3f9d1616189a5e3347a882a6caec0df28e274c0
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 056072e454b0df3e7c4b06ce39735b1db3961b25
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66129033"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159556"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
@@ -108,11 +108,7 @@ Microsoft 365 管理センターにアクセスするには、[admin.microsoft.c
 
 ## <a name="admin-center-features-and-settings"></a>管理センターの機能と設定
 
-管理センター の左側のナビゲーションに表示される機能と設定を以下に列挙します。 管理タスクの詳細については、[管理者ヘルプ] Microsoft 365 管理センター (admin-center-overview.md) の概要を参照してください。
-
-<br>
-
-****
+機能と設定は、管理センターの左側のナビゲーションに表示されます。管理者タスクについての詳細は、「[管理者ヘルプ](/microsoft-365/admin/)」を参照してください。
 
 |メニュー|目的|
 |-----|-----|

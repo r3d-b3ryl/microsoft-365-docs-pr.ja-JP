@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 2000d10918c7e351c7e4bedfe8281b6a011cca9d
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 82ed2110987bcb5fc1238a31a45c264c64392ba3
+ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872426"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66159404"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -103,11 +103,90 @@ Microsoft Defender ウイルス対策がアクティブ モード、パッシブ
 
 (<a id="fn2">2</a>) Windows Server 2019、Windows Server バージョン 1803 以降、Windows Server 2016、または Windows Server 2012 R2 では、Microsoft 以外のウイルス対策製品をインストールしても、Microsoft Defender ウイルス対策は自動的にパッシブ モードになりません。 このような場合、Microsoft Defender ウイルス対策をパッシブ モードに設定 して、サーバーに複数のウイルス対策製品がインストールされることによる問題を防ぎます。 PowerShell、グループ ポリシー、またはレジストリ キーを使用して Microsoft Defender ウイルス対策をパッシブ モードに設定することができます。 
 
+**Registry Key メソッド**
+
   次のレジストリ キーを設定すると、Microsoft Defender ウイルス対策をパッシブ モードに設定できます。
 - パス: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
 - 名前: `ForceDefenderPassiveMode`
 - 種類`REG_DWORD`
 - 値: `1`
+
+**GPO メソッド**
+
+- グループ ポリシー管理エディター>**コンピューター構成** > **管理テンプレート** > **Windowsコンポーネント** > **Microsoft Defender ウイルス対策** を開きます。
+- **[Microsoft Defender ウイルス対策をオフにする]** を選択します。
+- GPO を **[有効]** に設定します。
+
+PowerShell で保護の状態を表示するには、コマンド "Get-MpComputerStatus" とキー "AMRunningMode" を使用します。
+
+## SYNTAX
+
+```
+PS C:\Users\tommaso> Get-MpComputerStatus
+
+
+AMEngineVersion                  : 0.0.0.0
+AMProductVersion                 : 4.18.2205.4
+AMRunningMode                    : Not running
+AMServiceEnabled                 : False
+AMServiceVersion                 : 0.0.0.0
+AntispywareEnabled               : False
+AntispywareSignatureAge          : 4294967295
+AntispywareSignatureLastUpdated  :
+AntispywareSignatureVersion      : 0.0.0.0
+AntivirusEnabled                 : False
+AntivirusSignatureAge            : 4294967295
+AntivirusSignatureLastUpdated    :
+AntivirusSignatureVersion        : 0.0.0.0
+BehaviorMonitorEnabled           : False
+ComputerID                       : 5CF99D95-BF09-4B2E-9911-8E01C55642E5
+ComputerState                    : 0
+DefenderSignaturesOutOfDate      : False
+DeviceControlDefaultEnforcement  : N/A
+DeviceControlPoliciesLastUpdated : 01/01/1601 00:00:00
+DeviceControlState               : N/A
+FullScanAge                      : 4294967295
+FullScanEndTime                  :
+FullScanOverdue                  : False
+FullScanRequired                 : False
+FullScanSignatureVersion         :
+FullScanStartTime                :
+IoavProtectionEnabled            : False
+IsTamperProtected                : False
+IsVirtualMachine                 : True
+LastFullScanSource               : 0
+LastQuickScanSource              : 0
+NISEnabled                       : False
+NISEngineVersion                 : 0.0.0.0
+NISSignatureAge                  : 4294967295
+NISSignatureLastUpdated          :
+NISSignatureVersion              : 0.0.0.0
+OnAccessProtectionEnabled        : False
+ProductStatus                    : 1
+QuickScanAge                     : 4294967295
+QuickScanEndTime                 :
+QuickScanOverdue                 : False
+QuickScanSignatureVersion        :
+QuickScanStartTime               :
+RealTimeProtectionEnabled        : False
+RealTimeScanDirection            : 0
+RebootRequired                   : False
+TamperProtectionSource           : Signatures
+TDTMode                          : N/A
+TDTStatus                        : N/A
+TDTTelemetry                     : N/A
+TroubleShootingDailyMaxQuota     :
+TroubleShootingDailyQuotaLeft    :
+TroubleShootingEndTime           :
+TroubleShootingExpirationLeft    :
+TroubleShootingMode              :
+TroubleShootingModeSource        :
+TroubleShootingQuotaResetTime    :
+TroubleShootingStartTime         :
+PSComputerName                   :
+```
+
+次の例では、Defender の状態は **[実行中] です**。
 
  > [!NOTE]
  > Windows Server 2016 および Windows Server 2012 R2 を実行しているエンドポイントでパッシブ モードを機能させるには、「[Windows サーバーのオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」で説明されている最新の統合ソリューションを使用して、これらのエンドポイントをオンボードする必要があります。 
@@ -149,10 +228,10 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 | 保護 | Microsoft Defender ウイルス対策 <br/>(*アクティブ モード*) | Microsoft Defender ウイルス対策 <br/>(*パッシブ モード*) | Microsoft Defender ウイルス対策 <br/>(*無効またはアンインストール済み*) | [ブロック モードの EDR](edr-in-block-mode.md) | 
 |:---|:---|:---|:---|:---| 
 | [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md): | はい | メモ <sup>[[4](#fn4)]</sup> を参照してください | いいえ | 不要 | 
-| [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | 不要  | いいえ | 不要 | 
-| [ネットワーク保護](network-protection.md)  | はい | 不要 | いいえ | 不要 | 
-| [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | 不要 | いいえ  | いいえ | 
-| [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | いいえ | はい | 不要 | 
+| [クラウドによる保護](enable-cloud-protection-microsoft-defender-antivirus.md) | はい | 不要  | 不要 | 不要 | 
+| [ネットワーク保護](network-protection.md)  | はい | 不要 | 不要 | 不要 | 
+| [攻撃面の減少ルール](attack-surface-reduction.md)  | はい | 不要 | 不要  | いいえ | 
+| [限定された定期的なスキャンの可用性](limited-periodic-scanning-microsoft-defender-antivirus.md) | いいえ | 不要 | はい | 不要 | 
 | [スキャン中ファイルと検出情報](review-scan-results-microsoft-defender-antivirus.md) | はい | はい<sup>[[5](#fn5)]</sup> | 不要 | はい | 
 | [脅威の修復](configure-remediation-microsoft-defender-antivirus.md) | はい | メモ <sup>[[6](#fn6)]</sup>を参照してください | 不要 | はい | 
 | [セキュリティ インテリジェンスの更新プログラム](manage-updates-baselines-microsoft-defender-antivirus.md) | はい | はい <sup>[[7](#fn7)]</sup> | 不要 | はい <sup>[[7](#fn7)]</sup> | 
@@ -160,7 +239,7 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 | [制御されたフォルダー アクセス](controlled-folders.md) | はい |不要 | 不要 | 不要 |
 | [Web コンテンツ フィルタリング](web-content-filtering.md) | はい | メモ <sup>[[8](#fn8)]</sup> を参照してください | 不要 | 不要 |
 | [デバイス コントロール](device-control-report.md) | はい | はい | 不要 | 不要 |
-| [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | 不要 | いいえ | 不要 |
+| [PUA 保護](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | はい | 不要 | 不要 | 不要 |
 
 (<a id="fn4">4</a>) 一般に、Microsoft Defender ウイルス対策がパッシブ モードの場合、リアルタイム保護では、有効でパッシブ モードであっても、ブロックや強制は提供されません。
 
