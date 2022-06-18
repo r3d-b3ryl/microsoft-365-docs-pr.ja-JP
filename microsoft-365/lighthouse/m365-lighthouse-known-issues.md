@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、機能領域別の Lighthouse の既知の問題の一覧を参照してください。
-ms.openlocfilehash: 7a175d6c14e9b434240ff1a85f901a919ea79dcc
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
+ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016726"
+ms.lasthandoff: 06/18/2022
+ms.locfileid: "66160822"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseに関する既知の問題
 
@@ -66,15 +66,15 @@ ms.locfileid: "66016726"
 | **非アクティブ化と再アクティブ化のアクションが監査ログに一覧表示されない** | 現在、次のアクティビティは Lighthouse の [監査ログ] ページでは報告されません。 <ul><li>名前: offboardTenant \| Action: 顧客を非アクティブ化する</li> <li>名前: resetTenantOnboardingStatus \| Action: Reactive customer</li></ul> | 回避策はありませんが、修正に取り組んでいます。 これらのアクティビティは、修正プログラムがサービスにデプロイされると、監査ログに表示されます。 |
 | **フィルターに一部のユーザーが表示されない** | MSP 技術者が **開始** 者を使用してフィルター処理しようとすると、監査ログを生成するアクションを開始した技術者の電子メール ID に対応するすべてのユーザー プリンシパル名 (UPN) の一覧がフィルターの下に完全に表示されません。<br><br>監査ログ自体が完全に表示されることに注意してください。 **[開始者]** を使用してフィルター処理する機能のみが影響を受けます。 | 回避策はありませんが、修正に取り組んでいます。 修正プログラムがサービスにデプロイされると、フィルターは想定される動作に戻り、フィルター処理する UPN の完全な一覧が表示されます。 |
 
-## <a name="delegated-admin-privileges-dap"></a>委任された管理者特権 (DAP)
+## <a name="delegated-admin-privileges-dap"></a>委任された管理特権 (DAP)
 
 | 問題 | 説明 | 解決方法 |
 | ---------------- | ---------------- | ---------------- |
-| **DAP ロールを変更するときのアクセス許可の遅延** | MSP 技術者が管理者エージェントまたはヘルプデスク エージェント グループに追加または削除された場合、Lighthouse 内の適切なアクセス許可の反映に遅延が生じる可能性があります。 | この問題は 30 分以内に解決されます。 追加の手順は必要ありません。 |
+| **DAP ロールを変更するときのアクセス許可の遅延** | MSP 技術者が 管理 エージェントまたはヘルプデスク エージェント グループに追加または削除された場合、Lighthouse 内の適切なアクセス許可の反映に遅延が生じる可能性があります。 | この問題は 30 分以内に解決されます。 追加の手順は必要ありません。 |
 
-## <a name="granular-delegated-admin-privileges-gdap"></a>詳細な委任された管理者特権 (GDAP)
+## <a name="granular-delegated-admin-privileges-gdap"></a>詳細な委任された管理特権 (GDAP)
 
-顧客を Lighthouse にオンボードするには、詳細な代理管理特権 (GDAP) と間接リセラー関係、または代理管理特権 (DAP) リレーションシップのいずれかが必要です。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。 近日、GDAP のみのリレーションシップ (間接リセラー関係なし) を持つお客様は、Lighthouse にオンボードできるようになります。<br><br>
+顧客を Lighthouse にオンボードするには、詳細な委任された管理特権 (GDAP) と間接リセラーリレーションシップ、または委任された管理特権 (DAP) リレーションシップが必要です。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。 GDAP のみのリレーションシップ (間接リセラー関係なし) を持つお客様は、現在 Lighthouse にオンボードできませんが、今後のリリースでオンボードできます。<br><br>
 
 | 問題 | 説明 | 解決方法 |
 | ---------------- | ---------------- | ---------------- |
