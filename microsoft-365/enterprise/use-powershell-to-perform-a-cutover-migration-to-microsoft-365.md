@@ -17,12 +17,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
 description: PowerShell を使用して、Microsoft 365への一括移行を実行して、ソース電子メール システムからコンテンツを一度に移動する方法について説明します。
-ms.openlocfilehash: d63b7250cd1c4c34d169521943c3973104b15837
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 3761640c42a6907818886e96c9d6355d70073522
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008399"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151208"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Microsoft 365 への一括移行に PowerShell を使用する
 
@@ -177,13 +177,13 @@ Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 
 電子メール システムでは、電子メールを配信する場所を知るために、MX レコードと呼ばれる DNS レコードを使用します。 電子メールの移行プロセス中、MX レコードの宛先は移行元の電子メール システムでした。 Microsoft 365への電子メールの移行が完了したので、MX レコードをMicrosoft 365にポイントします。 これにより、メールがMicrosoft 365メールボックスに確実に配信されます。 MX レコードを移動することによって、準備ができたら古い電子メール システムをオフにすることもできます。
 
-多くの DNS プロバイダーについては、MX レコードを変更するための具体的な手順があります。 使用している DNS プロバイダーが含まれていない場合、または一般的な手順を知りたい場合は、 [「MX レコードの一般的な手順」](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx)も参照してください。
+多くの DNS プロバイダーについては、MX レコードを変更するための具体的な手順があります。 使用している DNS プロバイダーが含まれていない場合、または一般的な手順を知りたい場合は、 [「MX レコードの一般的な手順」](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider?view=o365-worldwide#add-an-mx-record-for-email-outlook-exchange-online)も参照してください。
 
 御社のお客様およびパートナーの電子メール システムが MX レコードの変更を認識するまでに最大 72 時間かかることがあります。次の作業に進むまで、72 時間以上待ちます。 [ステップ 6:一括移行バッチを削除する](#step-6-delete-the-cutover-migration-batch).
 
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>ステップ 6:一括移行バッチを削除する
 
-MX レコードを変更し、すべてのメールがMicrosoft 365メールボックスにルーティングされていることを確認したら、メールがMicrosoft 365されることをユーザーに通知します。 その後、一括移行バッチを削除できます。 移行バッチを削除する前に、次の点を確認します。
+MX レコードを変更し、すべてのメールが Microsoft 365 メールボックスにルーティングされていることを確認したら、メールが Microsoft 365 に送られていることをユーザーに通知します。 その後、一括移行バッチを削除できます。 移行バッチを削除する前に、次の点を確認します。
 
 - すべてのユーザーがMicrosoft 365メールボックスを使用しています。 バッチが削除されると、オンプレミスのExchange Server上のメールボックスに送信されたメールは、対応するMicrosoft 365メールボックスにコピーされません。
 
