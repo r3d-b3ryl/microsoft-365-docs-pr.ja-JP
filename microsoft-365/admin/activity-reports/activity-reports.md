@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 6d773b3f6bf7f2660a2608085b503b1cde1c05c9
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
+ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007242"
+ms.lasthandoff: 06/17/2022
+ms.locfileid: "66151164"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -113,6 +113,7 @@ ms.locfileid: "66007242"
 |[Skype for Business Online のピアツーピア アクティビティ](/SkypeForBusiness/skype-for-business-online-reporting/peer-to-peer-activity-report)|はい|はい|いいえ<sup>1</sup>|いいえ<sup>1</sup>|はい|
 |[Viva ラーニング アクティビティ](viva-learning-activity.md)|はい|該当なし|該当なし|該当なし|該当なし|
 |[Viva インサイト アクティビティ](viva-insights-activity.md)|はい|はい|該当なし|該当なし|該当なし|
+|[Project アクティビティ](project-activity.md)|はい|はい|該当なし|該当なし|該当なし|
 
 該当なし <sup>1</sup>: レポートは将来リリースされる予定です。 <a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=" target="_blank">Microsoft 365 ロードマップ</a> はリリース前に更新されます。
 該当なし <sup>2</sup>: このサービスは環境内で使用できないため、レポートをリリースする予定はありません。

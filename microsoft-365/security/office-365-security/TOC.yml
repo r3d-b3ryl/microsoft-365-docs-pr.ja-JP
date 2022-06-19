@@ -223,13 +223,13 @@
         - name: テナントの許可/禁止リスト
           items:
             - name: テナントの許可/禁止リストを管理する
-              href: tenant-allow-block-list.md
-            - name: テナントの許可/禁止リストの禁止リストを追加する
-              href: manage-tenant-blocks.md
-            - name: テナントの許可/禁止リストの許可リストを追加する
-              href: manage-tenant-allows.md
-            - name: テナントの許可/禁止リストのエントリを変更および削除する
-              href: modify-remove-entries-tenant-allow-block.md
+              href: manage-tenant-allow-block-list.md
+            - name: テナント許可/禁止リストを使用して電子メールを許可またはブロックする
+              href: allow-block-email-spoof.md
+            - name: テナント許可/禁止リストを使用して URL を許可またはブロックする
+              href: allow-block-urls.md
+            - name: テナント許可/禁止リストを使用してファイルを許可またはブロックする
+              href: allow-block-files.md
         - name: 受信拒否リストの作成
           href: Create-block-sender-lists-in-office-365.md
         - name: 信頼できる差出人リストの作成
