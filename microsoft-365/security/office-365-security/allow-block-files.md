@@ -1,5 +1,5 @@
 ---
-title: テナント許可/ブロック リストを使用してファイルを許可またはブロックする
+title: テナント許可/禁止リストを使用してファイルを許可またはブロックする
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロックリストでファイルを許可またはブロックする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65f5a0706b49312ee4b12a626f7ecd0d600c93df
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: a85af4beda791fb9cc2382a48a701406941d0325
+ms.sourcegitcommit: 7df8adc9e67ab65e413d7ea7bb0dcb9fd2da1a11
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159905"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185802"
 ---
-# <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>テナント許可/ブロック リストを使用してファイルを許可またはブロックする
+# <a name="allow-or-block-files-using-the-tenant-allowblock-list"></a>テナント許可/禁止リストを使用してファイルを許可またはブロックする
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -91,7 +91,9 @@ Microsoft 365 Defenderの **[提出]** ページでファイルを許可しま�
 
 6. **[以下の後に削除]** ドロップダウン リストで、許可オプションを機能させる期間を選択します。
 
-7. 完了したら、[ **送信]** ボタンをクリックします。
+7. **省略可能なメモ** を使用して許可を追加する理由を追加します。 
+
+8. 完了したら、[ **送信]** ボタンをクリックします。
 
   :::image type="content" source="../../media/submit-email-for-analysis.png" alt-text="分析のために電子メールを送信します。" lightbox="../../media/submit-email-for-analysis.png":::
 
