@@ -8,7 +8,7 @@ ms.prod: microsoft-365-enterprise
 ms.topic: article
 f1.keywords:
 - NOCSH
-ms.date: 05/05/2022
+ms.date: 06/20/2022
 ms.reviewer: georgiah
 ms.custom:
 - it-pro
@@ -16,24 +16,24 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 839d320bfb52175f58009b8d254ec37eadeb4cb1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: fc0c9186f506cdead968668959c401517551a4d3
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007308"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185393"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックス移行 (プレビュー)
 
 一般に、合併または分割中は、ユーザーのExchange Onlineメールボックスを新しいテナントに移動する機能が必要です。 テナント間メールボックスの移行により、テナント管理者は、powerShell や MRS Exchange Onlineなどの既知のインターフェイスを使用して、ユーザーを新しい組織に移行できます。
 
-管理者は、メールボックスの移動管理ロールで使用できるNew-MigrationBatchコマンドレットを使用して、テナント間の移動を実行できます。
+管理者は、_メールボックスの移動_ 管理ロールで使用できる **New-MigrationBatch** コマンドレットを使用して、テナント間の移動を実行できます。
 
 移行するユーザーは、ターゲット テナントExchange Online システムに MailUsers として存在する必要があります。テナント間の移動を有効にするには、特定の属性がマークされています。 ターゲット テナントで適切に設定されていないユーザーに対して、システムの移動が失敗します。
 
-移動が完了すると、移行元のユーザー メールボックスが MailUser に変換され、targetAddress (Exchangeでは ExternalEmailAddress として表示) に宛先テナントへのルーティング アドレスがスタンプされます。 このプロセスは、従来の MailUser をソース テナントに残し、共存とメール ルーティングを可能にします。 ビジネス プロセスで許可されている場合、移行元テナントはソース MailUser を削除したり、メール連絡先に変換したりすることができます。
+移動が完了すると、移行元のユーザー メールボックスが MailUser に変換され、targetAddress (Exchangeでは ExternalEmailAddress として表示) に宛先テナントへのルーティング アドレスがスタンプされます。 このプロセスは、従来の MailUser をソース テナントに残し、共存とメール ルーティングを可能にします。 ビジネス プロセスで許可されている場合、ソース テナントでは、ソースの MailUser を削除することや、それらをメール連絡先に変換することができます。
 
-テナント間Exchangeメールボックスの移行は、ハイブリッドまたはクラウド内のテナント、または 2 つの任意の組み合わせでのみサポートされます。
+テナント間 Exchange メールボックス移行は、ハイブリッドかクラウドのみ、またはそれら 2 つの組み合わせにあるテナントに対してサポートされています。
 
 この記事では、テナント間のメールボックス移動のプロセスについて説明し、Exchange Onlineメールボックスのコンテンツ移動に対してソース テナントとターゲット テナントを準備する方法に関するガイダンスを提供します。
 
@@ -44,9 +44,9 @@ ms.locfileid: "66007308"
 
 ### <a name="prerequisites-for-source-and-target-tenants"></a>ソース テナントとターゲット テナントの前提条件
 
-開始する前に、Azure、EXO 移行エンドポイント、および EXO 組織リレーションシップでメールボックスの移動アプリケーションを構成するために必要なアクセス許可があることを確認します。
+開始する前に、Azure、EXO の移行エンドポイント、EXO の組織の関係で "メールボックスの移動" アプリケーションを構成するために必要なアクセス許可があることを確認してください。
 
-さらに、ソース テナント内の少なくとも 1 つのメールが有効なセキュリティ グループが必要です。 これらのグループは、ソース テナント (またはリソースとも呼ばれる) テナントからターゲット テナントに移動できるメールボックスの一覧の範囲を指定するために使用されます。 これにより、移行元テナント管理者は、移動する必要があるメールボックスの特定のセットを制限またはスコープ設定し、意図しないユーザーが移行されないようにすることができます。 入れ子になったグループはサポートされていません。
+また、ソース テナント内の、メールが有効なセキュリティ グループが少なくとも 1 つ必要です。 これらのグループは、ソース (リソースとも呼ばれる) テナントからターゲット テナントに移動できるメールボックスのリストの範囲を指定するために使用されます。 これにより、移行元テナント管理者は、移動する必要があるメールボックスの特定のセットを制限またはスコープ設定し、意図しないユーザーが移行されないようにすることができます。 入れ子になったグループはサポートされていません。
 
 また、信頼できるパートナー会社 (メールボックスを移動する相手) と通信して、Microsoft 365テナント ID を取得する必要もあります。 このテナント ID は、[組織リレーションシップ DomainName] フィールドで使用されます。
 
@@ -55,9 +55,9 @@ ms.locfileid: "66007308"
 ### <a name="configuration-steps-to-enable-your-tenants-for-cross-tenant-mailbox-migrations"></a>テナント間メールボックスの移行を有効にする構成手順
 
    > [!NOTE]
-   > 最初にターゲット (宛先) を構成する必要があります。 これらの手順を完了するには、ソース テナントとターゲット テナントの両方のテナント管理者資格情報を持っているか、知っている必要はありません。 ステップは、異なる管理者がテナントごとに個別に実行できます。
+   > 最初にターゲット (移行先) を構成する必要があります。 これらの手順を完了するには、ソース テナントとターゲット テナントの両方のテナント管理者資格情報を持っているか、知っている必要はありません。 手順は、さまざまな管理者がテナントごとに個別に実行できます。
 
-### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>移行アプリケーションとシークレットを作成してターゲット (移行先) テナントを準備する
+### <a name="prepare-the-target-destination-tenant-by-creating-the-migration-application-and-secret"></a>移行アプリケーションとシークレットを作成することでターゲット (移行先) テナントを準備する
 
 1. ターゲット テナント管理者の資格情報を使用して Azure AD ポータル (<https://portal.azure.com>) にログインする
 
@@ -105,7 +105,7 @@ ms.locfileid: "66007308"
 
 16. 次に、アプリケーションの左側のナビゲーション バーで [証明書&シークレット] を選択します。
 
-17. [クライアント シークレット] で、新しいクライアント シークレットを選択します。
+17. [クライアント シークレット] で、[新しいクライアント シークレット] を選択します。
 
     ![クライアント シークレット](../media/tenant-to-tenant-mailbox-move/273dafd5e6c6455695f9baf35ef9977a.png)
 
@@ -114,15 +114,15 @@ ms.locfileid: "66007308"
       > [!NOTE]
       > これは、移行エンドポイントの作成時に使用されるパスワードです。 このパスワードをクリップボードにコピーするか、パスワードをコピーして安全な場所にセキュリティで保護/シークレットすることが非常に重要です。 このパスワードを確認できるのは、これが唯一の時間です。 何らかの方法で紛失した場合やリセットする必要がある場合は、Azure portalに再度ログインし、アプリの登録に移動し、移行アプリを見つけ、[シークレット&証明書] を選択して、アプリの新しいシークレットを作成できます。
 
-19. 移行アプリケーションとシークレットを正常に作成したので、アプリケーションに同意する必要があります。 アプリケーションに同意するには、Azure Active Directoryランディング ページに戻り、左側のナビゲーションでEnterpriseアプリケーションをクリックし、作成した移行アプリを見つけて選択し、左側のナビゲーションで [アクセス許可] を選択します。
+19. 移行アプリケーションとシークレットを作成したので、次はそのアプリケーションを承認する必要があります。 アプリケーションに同意するには、Azure Active Directoryランディング ページに戻り、左側のナビゲーションでEnterpriseアプリケーションをクリックし、作成した移行アプリを見つけて選択し、左側のナビゲーションで [アクセス許可] を選択します。
 
 20. [テナント] ボタンの [管理者の同意を付与する] をクリックします。
 
 21. 新しいブラウザー ウィンドウが開き、[承諾] を選択します。
 
-22. ポータル ウィンドウに戻り、[更新] を選択して同意を確認できます。
+22. 同意を確認するには、ポータル ウィンドウに戻り、[最新の情報に更新] を選択します。
 
-23. 信頼されたパートナー (ソース テナント管理者) に送信する URL を作成し、アプリケーションを受け入れてメールボックスの移行を有効にすることもできます。 作成したアプリのアプリケーション ID が必要な URL の例を次に示します。
+23. 信頼できるパートナー (ソース テナント管理者) に送信する URL を作成して、それらのパートナーがそのアプリケーションを承認してメールボックスの移行を有効にできるようにします。 以下に、それらのパートナーに提供する URL の例を示します。作成したアプリのアプリケーション ID が必要になります。
 
     ```powershell
     https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -135,7 +135,7 @@ ms.locfileid: "66007308"
     >
     > [application_id_of_the_app_you_just_created] を、作成したメールボックス移行アプリのアプリケーション ID に置き換える必要もあります。
 
-### <a name="prepare-the-target-tenant-by-creating-the-exchange-online-migration-endpoint-and-organization-relationship"></a>Exchange Online移行エンドポイントと組織の関係を作成してターゲット テナントを準備する
+### <a name="prepare-the-target-tenant-by-creating-the-exchange-online-migration-endpoint-and-organization-relationship"></a>Exchange Online の移行エンドポイントおよび組織の関係を作成することでターゲット テナントを準備する
 
 1. ターゲット Exchange Online テナントで [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) をExchange OnlineするConnect。
 
@@ -172,7 +172,7 @@ ms.locfileid: "66007308"
 
 ### <a name="prepare-the-source-current-mailbox-location-tenant-by-accepting-the-migration-application-and-configuring-the-organization-relationship"></a>移行アプリケーションを受け入れ、組織の関係を構成することで、ソース (現在のメールボックスの場所) テナントを準備する
 
-1. ブラウザーから、信頼されたパートナーが提供する URL リンクに移動して、メールボックス移行アプリケーションに同意します。 URL は次のようになります。
+1. ブラウザーで、信頼できるパートナーから提供された URL リンクに移動して、メールボックス移行アプリケーションを承認します。 この URL は次のようになります。
 
    ```powershell
    https://login.microsoftonline.com/sourcetenant.onmicrosoft.com/adminconsent?client_id=[application_id_of_the_app_you_just_created]&redirect_uri=https://office.com
@@ -183,7 +183,7 @@ ms.locfileid: "66007308"
    > 上の例の sourcetenant.onmicrosoft.com をソース テナントの正しい onmicrosoft.com 名に置き換える必要があります。
    > [application_id_of_the_app_you_just_created] を、作成したメールボックス移行アプリのアプリケーション ID に置き換える必要もあります。
 
-2. ポップアップが表示されたら、アプリケーションを受け入れます。 Azure Active Directory ポータルにログインし、Enterprise アプリケーションでアプリケーションを見つけることもできます。
+2. ポップアップが表示されたら、アプリケーションを受け入れます。 Azure Active Directory ポータルにログインし、[エンタープライズ アプリケーション] でそのアプリケーションを見つけることもできます。
 
 3. 新しい組織リレーションシップを作成するか、既存の組織リレーションシップ オブジェクトを powerShell でターゲット (移行先) テナントExchange Online編集します。
 
@@ -204,23 +204,15 @@ ms.locfileid: "66007308"
    ```
 
 > [!NOTE]
-> $sourceTenantIdと$targetTenantIdとして入力するテナント ID は、テナント ドメイン名ではなく GUID です。 テナント ID の例とテナント ID の検索に関する情報については、「[Microsoft 365テナント ID を検索する](/onedrive/find-your-office-365-tenant-id)」を参照してください。
+> $sourceTenantId と $targetTenantId として入力するテナント ID は、テナント ドメイン名ではなく GUID です。 テナント ID の例と、テナント ID の検索については、「[Microsoft 365 テナント ID を見つける](/onedrive/find-your-office-365-tenant-id)」を参照してください。
 
 ### <a name="how-do-i-know-this-worked"></a>設定が適用されたことを確認する方法
 
-ターゲット テナントで作成したテナント間移行エンドポイントに対して [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) コマンドレットを実行することで、テナント間メールボックス移行構成を確認できます。
+ターゲット テナントで作成したテナント間移行エンドポイントに対して [Test-MigrationServerAvailability](/powershell/module/exchange/Test-MigrationServerAvailability) コマンドレットを実行することで、テナント間メールボックス移行の構成を確認できます。
 
-   > [!NOTE]
-   >
-   > - ターゲット テナント:
-   >
-   > Test-MigrationServerAvailability -Endpoint "[テナント間移行エンドポイントの名前]"
-   >
-   > Get-OrganizationRelationship |fl 名、DomainNames、MailboxMoveEnabled、MailboxMoveCapability
-   >
-   > - ソース テナント:
-   >
-   > Get-OrganizationRelationship |fl 名、DomainNames、MailboxMoveEnabled、MailboxMoveCapability
+```powershell
+Test-MigrationServerAvailability -EndPoint "Migration endpoint for cross-tenant mailbox moves" - TestMailbox "Primary SMTP of MailUser object in target tenant"
+```
 
 ### <a name="move-mailboxes-back-to-the-original-source"></a>メールボックスを元のソースに戻す
 
@@ -243,11 +235,11 @@ ms.locfileid: "66007308"
       - UserPrincipalName: UPN は、ユーザーの新しい ID またはターゲット企業 (user@northwindtraders.onmicrosoft.com など) に対応します。
       - プライマリ SMTPAddress: プライマリ SMTP アドレスは、ユーザーの新しい会社 (user@northwind.com など) に合わせて配置されます。
       - TargetAddress/ExternalEmailAddress: MailUser は、ソース テナントでホストされているユーザーの現在のメールボックス (user@contoso.onmicrosoft.com など) を参照します。 この値を割り当てるときに、PrimarySMTPAddress が割り当てられているか、またはこの値が PrimarySMTPAddress を設定することを確認します。これにより、移動エラーが発生します。
-      - ソース メールボックスからターゲット MailUser に従来の SMTP プロキシ アドレスを追加することはできません。 たとえば、fabrikam.onmicrosoft.com テナント オブジェクト) で MEU の contoso.com を維持することはできません)。 ドメインは、1 つの Azure AD またはExchange Online テナントにのみ関連付けられます。
+      - ソース メールボックスからターゲット MailUser に従来の SMTP プロキシ アドレスを追加することはできません。 たとえば、fabrikam.onmicrosoft.com テナント オブジェクト) で MEU の contoso.com を維持することはできません)。 ドメインは、1 つの Azure AD または Exchange Online テナントにのみ関連付けられます。
 
      **ターゲット** MailUser オブジェクトの例:
 
-     | 属性            | 値                                                                                                                   |
+     | 属性            | Value                                                                                                                   |
      | -------------------- | ----------------------------------------------------------------------------------------------------------------------- |
      | Alias                | LaraN                                                                                                                   |
      | RecipientType        | MailUser                                                                                                                |
@@ -256,16 +248,16 @@ ms.locfileid: "66007308"
      | PrimarySmtpAddress   | Lara.Newton@northwind.com                                                                                               |
      | ExternalEmailAddress | SMTP:LaraN@contoso.onmicrosoft.com                                                                                      |
      | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                                                                    |
-     | LegacyExchangeDN     | /o=First Organization/ou=Exchange管理グループ                                                                  |
-     |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d1900687694985035Lara                                                 |
-     | EmailAddresses       | x500:/o=First Organization/ou=Exchange 管理グループ (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190 |
+     | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group                                                                  |
+     |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=74e5385fce4b46d19006876949855035Lara                                                 |
+     | EmailAddresses       | x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c8190 |
      |                      | 7273f1f9-Lara                                                                                                           |
      |                      | smtp:LaraN@northwindtraders.onmicrosoft.com                                                                             |
      |                      | SMTP:Lara.Newton@northwind.com                                                                                          |
 
      **ソース** メールボックス オブジェクトの例:
 
-     | 属性            | 値                                                                   |
+     | 属性            | Value                                                                   |
      | -------------------- | ----------------------------------------------------------------------- |
      | Alias                | LaraN                                                                   |
      | RecipientType        | UserMailbox                                                             |
@@ -273,7 +265,7 @@ ms.locfileid: "66007308"
      | UserPrincipalName    | LaraN@contoso.onmicrosoft.com                                           |
      | PrimarySmtpAddress   | Lara.Newton@contoso.com                                                 |
      | ExchangeGuid         | 1ec059c7-8396-4d0b-af4e-d6bd4c12a8d8                                    |
-     | LegacyExchangeDN     | /o=First Organization/ou=Exchange管理グループ                  |
+     | LegacyExchangeDN     | /o=First Organization/ou=Exchange Administrative Group                  |
      |                      | (FYDIBOHF23SPDLT)/cn=Recipients/cn=d11ec1a2cacd4f81858c81907273f1f9Lara |
      | EmailAddresses       | smtp:LaraN@contoso.onmicrosoft.com                                      |
      |                      | SMTP:Lara.Newton@contoso.com                                            |
@@ -303,10 +295,10 @@ ms.locfileid: "66007308"
 
    これは、ハイブリッドのテナントでは機能しないことに注意してください。
 
-4. ターゲット組織のユーザーは、組織に適用される適切なExchange Onlineサブスクリプションを使用してライセンスを取得する必要があります。 メールボックスの移動の前にライセンスを適用できますが、ターゲットの MailUser が ExchangeGUID とプロキシ アドレスで適切に設定された場合にのみ適用できます。 ExchangeGUID が適用される前にライセンスを適用すると、ターゲット組織で新しいメールボックスがプロビジョニングされます。
+4. ターゲット組織のユーザーは、組織に適用される適切な Exchange Online サブスクリプションを使用してライセンスを取得する必要があります。 メールボックスの移動の前にライセンスを適用できますが、ターゲットの MailUser が ExchangeGUID とプロキシ アドレスで適切に設定された場合にのみ適用できます。 ExchangeGUID が適用される前にライセンスを適用すると、ターゲット組織で新しいメールボックスがプロビジョニングされます。
 
     > [!NOTE]
-    > Mailbox または MailUser オブジェクトにライセンスを適用すると、すべての SMTP 型 proxyAddresses がスクラブされ、検証済みのドメインのみがExchange EmailAddresses 配列に含まれていることが確認されます。
+    > Mailbox または MailUser オブジェクトにライセンスを適用すると、すべての SMTP 型 proxyAddresses がスクラブされ、検証済みのドメインのみが Exchange EmailAddresses 配列に含まれていることが確認されます。
 
 5. ターゲット MailUser に、ソース ExchangeGuid と一致しない以前の ExchangeGuid がないことを確認する必要があります。 これは、ターゲット MEU が以前にExchange Onlineのライセンスを取得し、メールボックスをプロビジョニングした場合に発生する可能性があります。 ターゲットの MailUser が以前に、ソース ExchangeGuid と一致しない ExchangeGuid に対してライセンスが付与されていたか、または ExchangeGuid を持っていた場合は、クラウド MEU のクリーンアップを実行する必要があります。 これらのクラウド MEU の場合 `Set-User <identity> -PermanentlyClearPreviousMailboxInfo`は、.
 
@@ -329,7 +321,7 @@ ms.locfileid: "66007308"
     John       UserMailbox                  MailUser      MailUser
     ```
 
-    このコマンドを使用して、論理的に削除されたメールボックスをクリアします。
+    このコマンドを使用して、ソフト削除されたメールボックスをクリアします。
 
     ```powershell
     Set-User <identity> -PermanentlyClearPreviousMailboxInfo
@@ -377,19 +369,19 @@ T2Tbatch                   Syncing ExchangeRemoteMove 1
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-**移行後にオンプレミスのソース内の RemoteMailbox を更新する必要がありますか?**
+### <a name="do-we-need-to-update-remotemailboxes-in-source-on-premises-after-the-move"></a>移行後にオンプレミスのソース内の RemoteMailbox を更新する必要がありますか?
 
 はい。ソース テナント メールボックスがターゲット テナントに移動するときに、ソース オンプレミス ユーザーの targetAddress (RemoteRoutingAddress/ExternalEmailAddress) を更新する必要があります。  メール ルーティングは、異なる targetAddresses を持つ複数のメール ユーザー間の紹介に従うことができますが、メール ユーザーの空き時間検索はメールボックス ユーザーの場所を対象にする必要があります。 空き時間検索では、複数のリダイレクトは追跡されません。
 
-**会議Teamsクロステナントを移行しますか?**
+### <a name="do-teams-meetings-migrate-cross-tenant"></a>会議Teamsクロステナントを移行しますか?
 
 会議は移動しますが、アイテムがテナント間を移行しても、Teams会議の URL は更新されません。 URL はターゲット テナントでは無効であるため、Teams会議を削除して再作成する必要があります。
 
-**Teams チャット フォルダーコンテンツはクロステナントに移行されますか?**
+### <a name="does-the-teams-chat-folder-content-migrate-cross-tenant"></a>Teams チャット フォルダーコンテンツはクロステナントに移行されますか?
 
 いいえ。Teams チャット フォルダーのコンテンツは、クロステナントを移行しません。
 
-**オンボーディングやオフボーディングの移動ではなく、テナント間の移動である移動だけを確認するにはどうすればよいですか?**
+### <a name="how-can-i-see-just-moves-that-are-cross-tenant-moves-not-my-onboarding-and-off-boarding-moves"></a>オンボーディングやオフボーディングの移動ではなく、テナント間の移動である移動だけを確認するにはどうすればよいですか?
 
 _Flags_ パラメーターを使用します。 次に例を示します。
 
@@ -397,7 +389,7 @@ _Flags_ パラメーターを使用します。 次に例を示します。
 Get-MoveRequest -Flags "CrossTenant"
 ```
 
-**テストで使用される属性をコピーするためのスクリプトの例を指定できますか?**
+### <a name="can-you-provide-example-scripts-for-copying-attributes-used-in-testing"></a>テストで使用される属性をコピーするためのスクリプトの例を指定できますか?
 
 > [!NOTE]
 > SAMPLE – AS IS,NO WARRANTY このスクリプトは、ソース メールボックス (ソース値を取得する) とターゲット オンプレミスの Active Directory Domain Services (ADUser オブジェクトにスタンプを設定する) の両方への接続を前提としています。 ソースで訴訟または単一アイテムの回復が有効になっている場合は、移行先アカウントでこれを設定します。  これにより、移行先アカウントのダンプ スター サイズが 100 GB に増加します。
@@ -434,7 +426,7 @@ Get-MoveRequest -Flags "CrossTenant"
    Start-ADSyncSyncCycle
    ```
 
-**使用メールボックスを移動した後、1 日目にOutlookにアクセスするにはどうすればよいですか?**
+### <a name="how-do-we-access-outlook-on-day-1-after-the-use-mailbox-is-moved"></a>使用メールボックスを移動した後、1 日目にOutlookにアクセスするにはどうすればよいですか?
 
 ドメインを所有できるテナントは 1 つのみであるため、メールボックスの移動が完了すると、以前のプライマリ SMTPAddress はターゲット テナント内のユーザーに関連付けられません。新しいテナントに関連付けられているドメインのみ。 Outlookは、新しい UPN を使用してサービスに対する認証を行い、Outlook プロファイルは、ターゲット システム内のメールボックスと一致する従来のプライマリ SMTPAddress を見つけることを想定しています。 レガシ アドレスはターゲット システムにないため、Outlook プロファイルは新しく移動されたメールボックスを見つけるために接続されません。
 
@@ -443,7 +435,7 @@ Get-MoveRequest -Flags "CrossTenant"
 > [!NOTE]
 > 完了のためにユーザーをバッチ処理するときに、それに応じて計画します。 Outlookクライアント プロファイルが作成され、後続の OST ファイルと OAB ファイルがクライアントにダウンロードされる場合は、ネットワーク使用率と容量を考慮する必要があります。
 
-**テナント間の移動を設定または完了するには、どのExchange RBAC ロールのメンバーである必要がありますか?**
+### <a name="what-exchange-rbac-roles-do-i-need-to-be-member-of-to-set-up-or-complete-a-cross-tenant-move"></a>テナント間の移動を設定または完了するには、どのExchange RBAC ロールのメンバーである必要がありますか?
 
 メールボックスの移動を実行する際の委任された職務の前提に基づくロールのマトリックスがあります。 現在、次の 2 つのロールが必要です。
 
@@ -451,17 +443,17 @@ Get-MoveRequest -Flags "CrossTenant"
 
 - 実際の移動コマンドを実行するロールは、下位レベルの関数に委任できます。 メールボックスの移動の役割は、組織内または組織外でメールボックスを移動する機能に割り当てられます。
 
-**変換されたメールボックス (MailUser 変換) で targetAddress (TargetDeliveryDomain) に対して選択されている SMTP アドレスをターゲットにする方法**
+### <a name="how-do-we-target-which-smtp-address-is-selected-for-targetaddress-targetdeliverydomain-on-the-converted-mailbox-to-mailuser-conversion"></a>変換されたメールボックス (MailUser 変換) で targetAddress (TargetDeliveryDomain) に対して選択されている SMTP アドレスをターゲットにする方法
 
 MRS を使用してメールボックスを移動Exchange、ターゲット オブジェクトの電子メール アドレス (proxyAddress) を照合して MailUser に変換するときに、元のソース メールボックスの targetAddress を作成します。 このプロセスは、移動コマンドに渡された -TargetDeliveryDomain 値を受け取り、ターゲット側でそのドメインの一致するプロキシをチェックします。 一致するものが見つかると、変換されたメールボックス (現在の MailUser) オブジェクトの ExternalEmailAddress (targetAddress) を設定するために、一致する proxyAddress が使用されます。
 
-**メールボックスのアクセス許可はどのように切り替えられますか?**
+### <a name="how-do-mailbox-permissions-transition"></a>メールボックスのアクセス許可はどのように切り替えられますか?
 
 メールボックスのアクセス許可には、代理送信とメールボックス アクセスが含まれます。
 
 - Send On Behalf Of (AD:publicDelegates) は、ユーザーのメールボックスへのアクセス権を持つ受信者の DN を代理人として格納します。 この値は Active Directory に格納され、現在はメールボックスの切り替えの一部として移動されません。 ソース メールボックスに publicDelegates が設定されている場合は、MEU からメールボックスへの変換が実行 `Set-Mailbox <principle> -GrantSendOnBehalfTo <delegate>`されてターゲット環境で完了したら、ターゲット メールボックスの publicDelegate を再サンプリングする必要があります。
 
-- メールボックスに格納されているメールボックスのアクセス許可は、プリンシパルと代理人の両方がターゲット システムに移動されると、メールボックスと共に移動します。 たとえば、ユーザー TestUser_7には、テナント SourceCompany.onmicrosoft.com 内のメールボックス TestUser_8への FullAccess が付与されます。 メールボックスの移動が TargetCompany.onmicrosoft.com に完了すると、ターゲット ディレクトリに同じアクセス許可が設定されます。 ソース テナントとターゲット テナントの両方でTestUser_7に *Get-MailboxPermission* を使用する例を次に示します。 Exchangeコマンドレットには、それに応じてソースとターゲットのプレフィックスが付けられます。
+- メールボックスに格納されているメールボックスのアクセス許可は、プリンシパルと代理人の両方がターゲット システムに移動されると、メールボックスと共に移動します。 たとえば、ユーザー TestUser_7には、テナント SourceCompany.onmicrosoft.com 内のメールボックス TestUser_8への FullAccess が付与されます。 メールボックスの移動が TargetCompany.onmicrosoft.com に完了すると、ターゲット ディレクトリに同じアクセス許可が設定されます。 ソース テナントとターゲット テナントの両方でTestUser_7に _Get-MailboxPermission_ を使用する例を次に示します。 Exchangeコマンドレットには、それに応じてソースとターゲットのプレフィックスが付けられます。
 
 移動前のメールボックスのアクセス許可の出力の例を次に示します。
 
@@ -488,7 +480,7 @@ TestUser_8@TargetCompany.onmicrosoft.com         {FullAccess}                   
 > [!NOTE]
 > テナント間メールボックスと予定表のアクセス許可はサポートされていません。 これらの接続されたメールボックスがソース テナントから同時に移行されるように、プリンシパルと代理人を統合移動バッチに編成する必要があります。
 
-**移行を有効にするために、ターゲットの MailUser プロキシ アドレスに追加する必要がある X500 プロキシは何ですか?**
+### <a name="what-x500-proxy-should-be-added-to-the-target-mailuser-proxy-addresses-to-enable-migration"></a>移行を有効にするために、ターゲットの MailUser プロキシ アドレスに追加する必要がある X500 プロキシは何ですか?
 
 テナント間メールボックスの移行では、ソース メールボックス オブジェクトの LegacyExchangeDN 値をターゲット MailUser オブジェクトの x500 電子メール アドレスとしてスタンプする必要があります。
 
@@ -505,11 +497,11 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 > [!NOTE]
 > この X500 プロキシに加えて、ソース内のメールボックスからターゲット内のメールボックスにすべての X500 プロキシをコピーする必要があります。
 
-**ソース テナントとターゲット テナントで同じドメイン名を使用できますか?**
+### <a name="can-the-source-and-target-tenant-utilize-the-same-domain-name"></a>ソース テナントとターゲット テナントで同じドメイン名を使用できますか?
 
 いいえ。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、contoso.com のソース ドメインと、fourthcoffee.com のターゲット ドメインなどです。
 
-**共有メールボックスは移動し、引き続き機能しますか?**
+### <a name="will-shared-mailboxes-move-and-still-work"></a>共有メールボックスは移動し、引き続き機能しますか?
 
 ただし、次の記事で説明されているように、ストアのアクセス許可のみが保持されます。
 
@@ -517,35 +509,43 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 - [Microsoft サポート |専用のExchangeとOutlookメールボックスのアクセス許可Office 365付与する方法](https://support.microsoft.com/topic/how-to-grant-exchange-and-outlook-mailbox-permissions-in-office-365-dedicated-bac01b2c-08ff-2eac-e1c8-6dd01cf77287)
 
-**バッチに関する推奨事項はありますか?**
+### <a name="do-you-have-any-recommendations-for-batches"></a>バッチに関する推奨事項はありますか?
 
 バッチあたり 2,000 メールボックスを超えないようにしてください。 同期中にエンド ユーザーに影響がないため、カットオーバー日の 2 週間前にバッチを送信することを強くお勧めします。 メールボックスの数量が 50,000 を超える場合は、crosstenantmigrationpreview@service.microsoft.com のエンジニアリング フィードバック配布リストにアクセスできます。
 
-**カスタマー キーでサービス暗号化を使用する場合はどうなりますか?**
+### <a name="what-if-i-use-service-encryption-with-customer-key"></a>カスタマー キーでサービス暗号化を使用する場合はどうなりますか?
 
 メールボックスは、移動する前に暗号化解除されます。 ターゲット テナントで顧客キーがまだ必要な場合は、カスタマー キーが構成されていることを確認します。 詳細については [、こちらを](/microsoft-365/compliance/customer-key-overview) 参照してください。
 
-**推定移行時間はどのくらいですか?**
+### <a name="what-is-the-estimated-migration-time"></a>推定移行時間はどのくらいですか?
 
 移行を計画するために、 [次](/exchange/mailbox-migration/office-365-migration-best-practices#estimated-migration-times) の表に、一括メールボックスの移行または個々の移行をいつ完了するかを示します。 これらの見積もりは、以前の顧客の移行のデータ分析に基づいています。 すべての環境は一意であるため、正確な移行速度は異なる場合があります。
 
 この機能は現在プレビュー段階であり、SLA であり、該当するサービス レベルは、この機能のプレビュー状態の間、パフォーマンスや可用性の問題には適用されないことに注意してください。
 
-**移行先テナント内のユーザーがソース テナント内のドキュメントを消耗品として保護する。**
+### <a name="protecting-documents-in-the-source-tenant-consumable-by-users-in-the-destination-tenant"></a>移行先テナント内のユーザーがソース テナント内のドキュメントを消耗品として保護する。**
 
 テナント間移行では、メールボックス データのみが移行され、それ以外は移行されません。 他にも複数のオプションがあります。これは、次のブログ投稿に記載されています。これは役立つ可能性があります。 <https://techcommunity.microsoft.com/t5/security-compliance-and-identity/mergers-and-spinoffs/ba-p/910455>
 
-**移行元テナントと同じラベルを、組織間の配置に応じて移行されたユーザーの唯一の一連のラベルまたは追加のラベル セットとして、移行元テナントに持つことができます。**
+### <a name="can-i-have-the-same-labels-in-the-destination-tenant-as-you-had-in-the-source-tenant-either-as-the-only-set-of-labels-or-an-additional-set-of-labels-for-the-migrated-users-depending-on-alignment-between-the-organizations"></a>移行元テナントと同じラベルを移行元テナントに持つことができます。組織間の配置に応じて、移行されたユーザーのラベルセットまたは追加のラベルセットとしてのみ使用できます。**
 
 テナント間の移行ではラベルがエクスポートされず、テナント間でラベルを共有する方法がないため、これを実現できるのは、移行先テナント内のラベルを再作成することだけです。
 
-**Microsoft 365 グループの移動はサポートされていますか?**
+### <a name="do-you-support-moving-microsoft-365-groups"></a>Microsoft 365 グループの移動はサポートされていますか?
 
 現在、テナント間メールボックス移行機能では、Microsoft 365 グループの移行はサポートされていません。
 
-**メールボックスが新しいテナントまたはターゲット テナントに移行された後、ソース テナント管理者はメールボックスに対して電子情報開示検索を実行できますか?**
+### <a name="can-a-source-tenant-admin-perform-an-ediscovery-search-against-a-mailbox-after-the-mailbox-has-been-migrated-to-the-newtarget-tenant"></a>メールボックスが新しいテナントまたはターゲット テナントに移行された後、ソース テナント管理者はメールボックスに対して電子情報開示検索を実行できますか?
 
 いいえ。テナント間メールボックスの移行後、移行元の移行されたユーザーのメールボックスに対する電子情報開示は機能しません。 これは、メールボックスがターゲット テナントに移行され、現在はターゲット テナントに属しているため、検索対象のメールボックスがソースに存在しなくなったためです。 電子情報開示、メールボックスの移行後は、ターゲット テナント (メールボックスが現在存在する場所) でのみ実行できます。 移行元メールボックスのコピーを移行後に移行元テナントに保持する必要がある場合、ソースの管理者は、データに対する将来の電子情報開示操作のために、移行前の代替メールボックスにコンテンツをコピーできます。
+
+### <a name="at-which-point-will-the-destination-mailuser-be-converted-to-a-destination-mailbox-and-the-source-mailbox-converted-to-a-source-mailuser"></a>移行先の MailUser は、どの時点で宛先メールボックスに変換され、移行元のメールボックスが移行元の MailUser に変換されますか?
+
+これらの変換は、移行プロセス中に自動的に行われます。 手動の手順は必要ありません。
+
+### <a name="at-which-step-should-i-assign-the-exchange-online-license-to-destination-mailusers"></a>Exchange Online ライセンスを宛先の MailUsers に割り当てる必要がある手順はどれですか?
+
+これは移行が完了する前に行うことができますが、 _ExchangeGuid_ 属性をスタンプする前にライセンスを割り当てないようにするか、MailUser オブジェクトからメールボックスへの変換が失敗し、代わりに新しいメールボックスが作成されます。 このリスクを軽減するには、移行が完了するまで待ち、30 日間の猶予期間にライセンスを割り当てることをお勧めします。
 
 ## <a name="known-issues"></a>既知の問題
 

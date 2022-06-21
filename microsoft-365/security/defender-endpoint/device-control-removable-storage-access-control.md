@@ -14,13 +14,13 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/06/2022
-ms.openlocfilehash: 503740e6dc16aea98fd44b71d9693d2b4a5844a8
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/20/2022
+ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043635"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185461"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint デバイス コントロールリムーバブル Storage Access Control
 
@@ -290,7 +290,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Intune ユーザー インターフェイスを使用したポリシーのデプロイと管理
 
-(*近日公開予定)* この機能は、Microsoft エンドポイント マネージャー管理センター (<https://endpoint.microsoft.com/>) で使用できます。 **Endpoint Security Attack** > **Surface Reduction** > **Create Policy** に移動します。 [**プラットフォーム: プロファイル:** **デバイス制御**] でWindows 10以降を選択します。
+この機能は、Microsoft エンドポイント マネージャー管理センター (<https://endpoint.microsoft.com/>) で使用できます。 **Endpoint Security Attack** > **Surface Reduction** > **Create Policy** に移動します。 [**プラットフォーム: プロファイル:** **デバイス制御**] でWindows 10以降を選択します。
 
 ## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>グループ ポリシーを使用したリムーバブル Storage Access Controlのデプロイと管理
 

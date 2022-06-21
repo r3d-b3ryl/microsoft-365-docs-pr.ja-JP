@@ -1,5 +1,5 @@
 ---
-title: Bookingsサービスオファリングを定義する
+title: Bookings サービス オファリングを定義する
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -9,24 +9,28 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 4a1c391e-524f-48e0-bef8-185df3a9634b
 description: サービス名、説明、場所、期間、価格など、サービスオファリング情報を入力する手順。 また、サービスを提供する資格がある従業員にタグを付けることもできます。
-ms.openlocfilehash: 0c302e8d84274fa2df8eea27362407ded4a468e3
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 2daae2139e3d2d4107f4aaed1b94ca655877000a
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637783"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185085"
 ---
-# <a name="define-your-service-offerings-in-bookings"></a>Bookingsでサービス オファリングを定義する
+# <a name="define-your-service-offerings-in-bookings"></a>Bookings でサービス オファリングを定義する
 
 Microsoft Bookingsでサービスオファリングを定義する場合は、サービス名、説明、場所 (会議を行うかオンライン会議を行うかを選択)、期間、顧客とスタッフへの既定のリマインダー、サービスに関する内部メモ、価格を設定します。 また、サービスを提供する資格がある従業員にタグを付けることもできます。 その後、顧客がビジネス Web サイトに来て予定を予約すると、利用可能な予定の種類を正確に確認し、サービスを提供するユーザーを選択し、サービスのコストを選択できます。
 
 また、他のユーザーが予約ページを通じてサービスを予約したときに送信する電子メールの確認とリマインダーに、カスタマイズされた情報と URL を追加することもできます。
 
-## <a name="create-the-service-details"></a>サービスの詳細情報を作成する
+## <a name="watch-create-a-new-service"></a>ウォッチ: 新しいサービスを作成する
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuKXH]
+
+## <a name="steps"></a>手順
 
 1. Microsoft 365でアプリ起動ツールを選択し、**Bookings** を選択します。
 
-2. **[Your** **calendarServices** > ] に移動し、[**新しいサービスの追加]** を選択します。
+2. **予定表** > **サービス** に移動し、[**新しいサービスの追加]** を選択します。
 
 3. [ **基本の詳細** ] ページで、選択内容を追加します。
 
@@ -42,7 +46,7 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
      - 予約に固有のTeamsまたはSkype会議へのリンクは、ダイヤルイン情報と共に、スタッフと顧客の両方の予定表イベントに追加されます。
      - 次の例に示すように、会議に参加するためのリンクがすべての確認メールとリマインダーメールに追加されます。
 
-       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Bookingsで会議Teams参加するためのリンクの例。":::
+       :::image type="content" source="media/bookings-teams-meeting-link.jpg" alt-text="Bookings で会議Teams参加するためのリンクの例。":::
 
        > [!NOTE]
        > Teams会議は、Teams モバイル アプリ、Teams デスクトップ アプリ、Web ブラウザー、または電話ダイヤルインを使用して参加できます。 Teamsをテナントの既定のオンライン会議サービスとして有効にすることを強くお勧めします。最適なエクスペリエンスで仮想予定を予約できます。
@@ -60,9 +64,9 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
 
    **注**: このフィールドは、予約されたスタッフの予約イベントと、Bookings Web アプリの [予定表] タブに表示されるイベントに表示されます。
 
-   **イベントあたりの最大出席者** 数: この設定を使用すると、複数のユーザーが同じ予定時間と同じスタッフ (フィットネス クラスなど) を予約する機能を必要とするサービスを作成できます。 選択したサービス、スタッフ、および時間の予定タイム スロットは、ユーザーが指定した出席者の最大数に達するまで予約できます。 現在の予定の容量と出席者は、Bookings Web アプリの [予定表] タブで表示できます。
+   **イベントあたりの最大出席者** 数: この設定を使用すると、複数のユーザーが同じ予定時間と同じスタッフ (フィットネス クラスなど) を予約する機能を必要とするサービスを作成できます。 選択したサービス、スタッフ、および時間の予定タイム スロットは、ユーザーが指定した出席者の最大数に達するまで予約できます。 現在の予定の容量と出席者は、Bookings Web アプリの [予定表] タブで確認できます。
 
-   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Bookingsで最大出席者数を設定する例":::
+   :::image type="content" source="media/bookings-maximum-attendees.jpg" alt-text="Bookings で最大出席者数を設定する例":::
 
    **顧客が予約を管理できるようにする**: この設定は、Bookings Web アプリの [予定表] タブで予約された場合に、顧客が予約を変更またはキャンセルできるかどうかを決定します。
 
@@ -74,13 +78,13 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
      - **予約をキャンセルする** これにより、予約が取り消され、スタッフの予定表から削除されます。
      - **新しい予約** このオプションを使用すると、新しい予約をスケジュールするために、すべてのサービスとスタッフが一覧表示されたSelf-Service ページにユーザーが表示されます。
 
-        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bookingsの [Bookingsの管理] ボタン。":::
+        :::image type="content" source="media/bookings-manage-booking-button.jpg" alt-text="Bookings の [予約の管理] ボタン。":::
 
       この設定は、お客様がSelf-Service ページにアクセスすることに慣れている場合にのみ有効にしておくことをお勧めします。
 
    - 無効：
 
-     ユーザーは、Bookings Web アプリの [予定表] タブを使用して予約を再スケジュールしたり、予約を取り消したりする機能はありません。 ただし、Self-Service ページを使用して予約する場合、この設定が無効になっている場合でも、顧客は引き続き **[予約の管理** ] ボタンとそのすべてのオプションを使用できます。
+     ユーザーは、Bookings Web アプリの [予定表] タブを使用して予約を予約するときに、予約を再スケジュールまたはキャンセルする機能を持たなくなります。 ただし、Self-Service ページを使用して予約する場合、この設定が無効になっている場合でも、顧客は引き続き **[予約の管理** ] ボタンとそのすべてのオプションを使用できます。
 
      Self-Service ページへのアクセスを制限する場合は、この設定を無効にすることをお勧めします。 また、オフィスに電話したり、ヘルプ デスクにメールを送信したりするなど、他の方法で予約を変更する方法を顧客に伝えるテキストを確認メールやリマインダーメールに追加することをお勧めします。
 
@@ -96,21 +100,21 @@ Microsoft Bookingsでサービスオファリングを定義する場合は、�
 
 8. [ **アラームと確認]** ページで、送信するアラームと通知を設定できます。 アラームと通知は、予定の前に指定された時刻に、顧客、スタッフメンバー、またはその両方に送信されます。 好みに応じて、予定ごとに複数のメッセージを作成できます。
 
-   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Bookingsからの確認メール。":::
+   :::image type="content" source="media/bookings-remind-confirm-2.png" alt-text="Bookings からの確認メール。":::
 
    スケジュール変更に関する情報や、予定に対する顧客の持ち込み情報など、ここに必要なその他のテキストを含めることができます。 [電子メールの確認の追加情報] フィールドに表示される、元の確認メールに追加されたカスタマイズされたテキスト **の例を** 次に示します。
 
-   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings電子メールの追加情報。":::
+   :::image type="content" source="media/bookings-additional-info.jpg" alt-text="Bookings メールの追加情報。":::
 
 9. **顧客のテキスト メッセージ通知を有効にする** 選択した場合、携帯ショートメールメッセージは顧客に送信されますが、オプトインした場合にのみ送信されます。
 
    - 手動予約とSelf-Service ページの [オプトイン] ボックス:
 
-     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookingsのオプトイン ボックス。":::
+     :::image type="content" source="media/bookings-opt-In-boc.jpg" alt-text="Bookings のオプトイン ボックス。":::
 
    - テキスト メッセージ通知は次のようになります (携帯ショートメール通知は現在、北米でのみ使用できます)。
 
-     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Bookingsからのテキスト通知。":::
+     :::image type="content" source="media/bookings-text-notifications.jpg" alt-text="Bookings からのテキスト通知。":::
 
 10. **既定のスケジュール 設定オプション** は既定でオンになっています。 顧客が特定のスタッフ メンバーを予約する方法をカスタマイズする場合は、トグルをオフにします。
 

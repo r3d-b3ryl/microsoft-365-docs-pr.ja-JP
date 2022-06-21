@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9cae28cc69d67bb18058e2c81cd8235ffce79997
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754402"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185371"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度なハンティング イベントを Azure Event Hub にストリーミングするようにMicrosoft 365 Defenderを構成する
 
@@ -111,6 +111,23 @@ Event Hubs にデータをストリーミングするようにMicrosoft 365 Defe
 - Device Info イベントの例を次に示します。
 
   :::image type="content" source="../defender-endpoint/images/machine-info-datatype-example.png" alt-text="デバイス情報のクエリの例" lightbox="../defender-endpoint/images/machine-info-datatype-example.png":::
+
+## <a name="estimating-initial-event-hub-capacity"></a>初期 Event Hub 容量の見積もり
+次の高度なハンティング クエリは、イベント/秒と推定 MB/秒に基づいて、データ 量のスループットと初期イベント ハブ容量の大まかな見積もりを提供するのに役立ちます。"実際の" スループットをキャプチャするために、通常の営業時間中にクエリを実行することをお勧めします。
+ 
+```kusto 
+let bytes_ = 500;
+union withsource=MDTables*
+| where Timestamp > startofday(ago(6h))
+| summarize count() by bin(Timestamp, 1m), MDTables
+| extend EPS = count_ /60
+| summarize avg(EPS), estimatedMBPerSec = (avg(EPS) * bytes_ ) / (1024*1024) by MDTables
+| sort by toint(estimatedMBPerSec) desc
+```
+
+## <a name="monitoring-created-resources"></a>作成されたリソースの監視
+
+**Azure Monitor** を使用して、ストリーミング API によって作成されたリソースを監視できます。 詳細については、 [Azure Monitor での Log Analytics ワークスペース データのエクスポートに関するページを参照してください](/azure/azure-monitor/logs/logs-data-export)。 
 
 ## <a name="related-topics"></a>関連項目
 

@@ -9,12 +9,12 @@ ms.service: bookings
 ms.localizationpriority: medium
 ms.assetid: 0968717e-b61f-4b06-987c-6c1464541782
 description: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
-ms.openlocfilehash: 19b5a186c66659777a0dbe3444c0e43c4142ff36
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 1cd395b377d9d9b0a20ef1d01956a27c559afb42
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637254"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185063"
 ---
 # <a name="employee-working-hours-in-microsoft-bookings"></a>Microsoft Bookings での従業員の勤務時間
 
@@ -30,9 +30,9 @@ ms.locfileid: "65637254"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuXUq]
 
-## <a name="customize-employee-working-hours"></a>従業員の勤務時間をカスタマイズする
+## <a name="steps"></a>手順
 
-1. Microsoft 365で、アプリ起動ツールを選択し、**Bookings** を選択します。
+1. Microsoft 365でアプリ起動ツールを選択し、**Bookings** を選択します。
 
 1. 予定表を選択します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "65637254"
 
 1. ドロップダウンで各日付の開始時間と終了時間を選びます。時間は 15 分単位で指定できます。
 
-   ![Bookingsスタッフの勤務時間画面の画像。](../media/bookings-staff-hours.png)
+   ![Bookings スタッフの勤務時間画面の画像。](../media/bookings-staff-hours.png)
 
 1. 開始時刻セレクターと終了時刻セレクターを追加する場合に選択 **+** します。
 
@@ -54,7 +54,7 @@ ms.locfileid: "65637254"
 
 1. [勤務時間] 画面で、従業員が休暇を取る日の横にある **x** を選択します。
 
-   ![x ボタンの上にマウスを重ね合わせて、Bookingsスタッフの勤務時間画面の画像。](../media/bookings-staff-time-off.png)
+   ![[x] ボタンの上にマウスを重ね合わせて、Bookings スタッフの勤務時間画面の画像。](../media/bookings-staff-time-off.png)
 
 1. 以前に休暇としてマークされた日をスケジュールする場合は、スケジュールする日の **+** 横にある記号を選択します。
 
