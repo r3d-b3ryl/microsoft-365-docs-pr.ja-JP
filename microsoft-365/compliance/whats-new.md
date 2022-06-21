@@ -78,7 +78,7 @@ ms.locfileid: "66089928"
 ### <a name="insider-risk-management"></a>インサイダー リスクの管理
 
 - [インサイダー リスク管理設定の開始](insider-risk-management-settings.md) - 新しい Defender for Cloud Apps インジケーターのガイダンスの追加、カスタムしきい値のトリガー イベントとしての新しい変則、新しいファイル拡張子の優先順位付け、秘密度ラベル ポリシーのサポート。
-- [インサイダー リスク管理ケース](insider-risk-management-cases.md) - 電子情報開示ケース ガイダンスへのエスカレーションを明確にしました。
+- [インサイダー リスク管理ケース](insider-risk-management-cases.md) - eDiscovery ケース ガイダンスへのエスカレーションを明確にしました。
 
 ### <a name="microsoft-priva"></a>Microsoft Priva
 
@@ -183,7 +183,7 @@ ms.locfileid: "66089928"
 
 | **旧称** | **New Name/新しい名前** | **説明** |
 |:----------------|:-------------|:----------------|
-| Microsoft 365 の高度な監査 <br><br> Microsoft 365 基本的な監査 | Microsoft Purview 監査 (プレミアム) <br><br> Microsoft Purview 監査 (Standard)| 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 詳細については、「[Microsoft Purview Advanced 監査 (Premium)](advanced-audit.md)」「[Microsoft Purview Advanced 監査 (Standard)](set-up-basic-audit.md)」を参照してください。 |
+| Microsoft 365 の高度な監査 <br><br> Microsoft 365 基本的な監査 | Microsoft Purview 監査 (Premium) <br><br> Microsoft Purview 監査 (Standard)| 監査ソリューションは、セキュリティ イベント、フォレンジック調査、内部調査、コンプライアンス義務に組織が効果的に対応するための統合ソリューションが用意されています。 詳細については、「[Microsoft Purview Advanced 監査 (Premium)](advanced-audit.md)」「[Microsoft Purview Advanced 監査 (Standard)](set-up-basic-audit.md)」を参照してください。 |
 | Microsoft 365 でのコミュニケーション コンプライアンス | Microsoft Purview でのコミュニケーション コンプライアンス | コミュニケーション コンプライアンスは、企業のコミュニケーション チャネルやポリシー違反の迅速な検出、取得、是正措置をサポートすることで、リスクを最小化します。 詳細については、「[Microsoft Purview コミュニケーション コンプライアンス](communication-compliance-solution-overview.md)」を参照してください。 |
 | Microsoft コンプライアンス マネージャー | Microsoft Purview コンプライアンス マネージャー | コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。詳細については、「[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)」を参照してください。 |
 | Microsoft 365 カスタマー キー | Microsoft Purview カスタマー キー | カスタマー キーは、承認されていないシステムや個人によるデータの閲覧を防止するための追加の保護を提供し、Microsoft データセンターの Bitlocker ディスク暗号化を補完します。 詳細については、「[Microsoft Purview カスタマー キー](customer-key-overview.md)」を参照してください。 |
@@ -197,7 +197,7 @@ ms.locfileid: "66089928"
 | Office 365 Message Encryption | Microsoft Purview のメッセージの暗号化 | Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。詳細については、「[Microsoft Purview Message Encryption](ome.md)」を参照してください。 |
 | Microsoft 365 での特権アクセス管理 | Microsoft Purview Privileged Access Management | 特権アクセス管理は、機密データへの常時アクセスや重要な構成設定へのアクセスを制限することで、組織を情報漏えいから守り、コンプライアンスのベスト プラクティスに適合させるのに役立ちます。 詳細については、「[Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md)」を参照してください。 |
 | Microsoft データ コネクタ | Microsoft Purview データ コネクタ | Microsoft 365 を使用すると、管理者はソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからのサードパーティ データを、Microsoft 365 組織のメールボックスにインポートしてアーカイブすることができます。 詳細については、「[Microsoft Purview データ コネクタ](compliance-extensibility.md)」を参照してください。 |
-| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview 電子情報開示 (プレミアム) <br><br> Microsoft Purview eDiscovery (Standard) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md)」「[Microsoft Purview eDiscovery (Standard)](get-started-core-ediscovery.md)」を参照してください。 |
+| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md)」「[Microsoft Purview eDiscovery (Standard)](get-started-core-ediscovery.md)」を参照してください。 |
 | Microsoft 365 コンプライアンス センター | Microsoft Purview コンプライアンス ポータル | Microsoft 365 E5 Compliance スイート内のソリューションとソリューション カタログにアクセスするための管理者ポータル。 詳細については、「[Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)」を参照してください。 |
 
 ## <a name="march-2022"></a>2022 年 3 月
@@ -254,9 +254,9 @@ ms.locfileid: "66089928"
 
 ## <a name="february-2022"></a>2022 年 2 月
 
-### <a name="ediscovery"></a>電子情報開示
+### <a name="ediscovery"></a>eDiscovery
 
-- [eDiscovery(Premium) でカストディアンの通信テンプレートを管理する](advanced-ediscovery-communications-library.md) - eDiscovery マネージャーは、組織内のすべての eDiscovery (Premium) ケースで使用できるカストディアン通信テンプレートを作成できるようになりました。
+- [eDiscovery (Premium) でカストディアンの通信テンプレートを管理する](advanced-ediscovery-communications-library.md) - eDiscovery マネージャーは、組織内のすべての eDiscovery (Premium) ケースで使用できるカストディアン通信テンプレートを作成できるようになりました。
 - [ eDiscovery (Premium) の発行責任者を管理する](advanced-ediscovery-issuing-officers.md) - eDiscovery 管理者は、組織内のあらゆる eDiscovery (Premium) ケースのカストディアンの通信に割り当てることができる発行責任者の一覧を追加できます。
 
 ### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
@@ -302,7 +302,7 @@ ms.locfileid: "66089928"
 
 - [GDRP に基づく Azure、Dynamics 365 および Windows の侵害通知](/compliance/regulatory/gdpr-breach-notification) - Defender for Cloud などの有料サービスを利用しなくても、セキュリティやプライバシーに関する通知を受信できることを明確にするために更新されました。
 
-### <a name="ediscovery"></a>電子情報開示
+### <a name="ediscovery"></a>eDiscovery
 
 - [eDiscovery (Premium) ワークフローで Microsoft Teams のコンテンツを管理する](teams-workflow-in-advanced-ediscovery.md#reference-guide) - eDiscovery (Premium) で Teams コンテンツを管理するための新しいダウンロード可能なクイック リファレンス ガイドが更新されました。
 
