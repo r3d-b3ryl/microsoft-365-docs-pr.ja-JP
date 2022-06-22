@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版の詳細とサインアップ方法について説明します。
-ms.openlocfilehash: 653c80e7c8b412ac1d9c14a021519ca80baab6e9
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
+ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65188836"
+ms.lasthandoff: 06/21/2022
+ms.locfileid: "66185129"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Microsoft Purview ソリューション試用版について
 
@@ -109,7 +109,7 @@ E5 レベルのソリューションアップグレードしないことを決�
    試用版が終了すると、次のようになります。
 
   - 既存のポリシーは、オフにしない限りオンのままになります。
-  - 試用版の終了後に Teams またはデバイスの場所を含む DLP ポリシーを編集すると、それらの場所がポリシーから削除されます。
+  - 既存または新規のポリシーで Teams またはデバイスの場所を編集または追加することはできなくなります。
 
 - **電子情報開示**
 
