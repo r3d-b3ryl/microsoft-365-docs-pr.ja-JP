@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/18/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理されたデバイスをセットアップする方法
-ms.openlocfilehash: 91d5a8cacb967499b20e069f5005f133c1736625
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 990b6a042e57a7964918e7e339bdfc3987c3c477
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101804"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490262"
 ---
 # <a name="set-up-managed-devices"></a>管理されたデバイスをセットアップする
 
@@ -52,21 +51,28 @@ ms.locfileid: "65101804"
 ### <a name="for-windows-enrollment"></a>Windows 登録の場合:
 
 1. **[Windows]** > **[Windows 登録]** の順に選択します。 
-1. リストされている登録方法から、**[自動登録]** を選択します。
+
+2. リストされている登録方法から、**[自動登録]** を選択します。
 
 ### <a name="for-ios-enrollment"></a>iOS 登録の場合:
 
 1. **[iOS]** > **[iOS 登録]** の順に選択します。
-1. ポリシーのリストからポリシーを選択して、その詳細を確認します。
-1. **[プロパティ]** を選択して、ポリシーを管理します。
-1. **[設定]** > **[システム セキュリティ]** の順に選択し、Intune でセキュリティの詳細を構成します。
-1. 構成プロファイルを確認します。 
-1. プロファイルを作成し、必要に応じて組織内のデバイスにプッシュします。
+
+2. ポリシーのリストからポリシーを選択して、その詳細を確認します。
+
+3. **[プロパティ]** を選択して、ポリシーを管理します。
+
+4. **[設定]** > **[システム セキュリティ]** の順に選択し、Intune でセキュリティの詳細を構成します。
+
+5. 構成プロファイルを確認します。 
+
+6. プロファイルを作成し、必要に応じて組織内のデバイスにプッシュします。
 
 ### <a name="for-android-enrollment"></a>Android 登録の場合:
 
 1. **[Android]** > **[Android 登録]** の順に選択します。
-1. **[管理対象 Google Play]** を選択し、Microsoft に対し、情報を Google に送信するアクセス許可を付与します。
+
+2. **[管理対象 Google Play]** を選択し、Microsoft に対し、情報を Google に送信するアクセス許可を付与します。
 
 ## <a name="next-objective"></a>次の目標
 
