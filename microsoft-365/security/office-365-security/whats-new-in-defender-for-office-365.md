@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37819c0f5ea458a4f5ee25b3536e3688aabd1882
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 82b23047b8013f9916168d46b5b595b326f6d1e5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486909"
+ms.locfileid: "66530534"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -67,6 +67,7 @@ ms.locfileid: "66486909"
 
 - [Microsoft 365 Defender Advanced Hunting の URLClickEvents テーブルの概要](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-the-urlclickevents-table-in-advanced-hunting-with/ba-p/3295096): Microsoft Defender for Office 365を使用した高度なハンティングの UrlClickEvents テーブルの概要。
 - [手動による電子メール修復の機能強化](/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365): 新しいアクションに焦点を当てた調査を使用して、Microsoft Defender for Office 365で実行された手動の電子メール消去アクションを、Microsoft 365 Defender (M365D) 統合アクション センターに取り込みます。
+- [Microsoft Defender for Office 365の優先度アカウントに対する差別化された保護の概要](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/introducing-differentiated-protection-for-priority-accounts-in/ba-p/3283838): 優先度アカウントの差別化された保護の一般提供について説明します。 
  
 ## <a name="march-2022"></a>2022 年 3 月
 

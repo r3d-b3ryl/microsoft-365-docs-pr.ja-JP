@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2aee32adca1799fca84932991dc128a6a3f64ca7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492449"
+ms.locfileid: "66530333"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -38,6 +38,8 @@ ms.locfileid: "66492449"
 
 **プラットフォーム**
 - Windows
+- macOS
+- Linux
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
@@ -52,7 +54,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ## <a name="requirements-for-network-protection"></a>ネットワーク保護の要件
 
-ネットワーク保護には、Windows 10または 11 (Pro または Enterprise)、または Windows Server バージョン 1803 以降、および Microsoft Defender ウイルス対策のリアルタイム保護が必要です。
+ネットワーク保護には、Windows 10または 11 (Pro または Enterprise)、Windows Server バージョン 1803 以降、macOS バージョン 11 以降、または Defender サポートされている Linux バージョン、および Microsoft Defender ウイルス対策のリアルタイム保護が必要です。
 
 | Windows バージョン | Microsoft Defender ウイルス対策 |
 |:---|:---|

@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint サービスのオフボード デバイス
-description: Microsoft Defender for Endpoint サービスからWindows デバイス、サーバー、非Windows デバイスをオンボードする
+description: Microsoft Defender for Endpoint サービスから Windows デバイス、サーバー、Windows 以外のデバイスをオンボードする
 keywords: オフボード、Microsoft Defender for Endpointオフボード、オフボード
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c2ec837ebc9fef0aabd2810dbd22db24597c52da
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3fec93e45fbdced0cc6c4106d24a29eb13087d02
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322605"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531047"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスのオフボード デバイス
 
@@ -55,12 +55,12 @@ ms.locfileid: "63322605"
 
 - [ローカル スクリプトを使用してデバイスをオフボードする](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 - [グループ ポリシーを使用してデバイスをオフボードする](configure-endpoints-gp.md#offboard-devices-using-group-policy)
-- [モバイル デバイス管理ツールを使用してデバイスをオフボードする](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [モバイル デバイス管理ツールを使用してデバイスをオフボードする](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 
 ## <a name="offboard-servers"></a>オフボード サーバー
 
 - [オフボード サーバー](configure-server-endpoints.md#offboard-windows-servers)
 
-## <a name="offboard-non-windows-devices"></a>オフボード非Windows デバイス
+## <a name="offboard-non-windows-devices"></a>Windows 以外のオフボード デバイス
 
-- [オフボード非Windows デバイス](configure-endpoints-non-windows.md#offboard-non-windows-devices)
+- [Windows 以外のオフボード デバイス](configure-endpoints-non-windows.md#offboard-non-windows-devices)

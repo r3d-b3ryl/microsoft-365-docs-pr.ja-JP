@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 210705bd3392e4aeeadd815ed8c1840e772f6ad9
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 3e2772fd458c60e48f78c0d4b816cdac8ca25940
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110429"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530321"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-365-defender"></a>Microsoft 365 Defender と SIEM ツールの統合
 
@@ -38,7 +38,7 @@ ms.locfileid: "61110429"
 > - [Microsoft 365 Defenderインシデントは、](incident-queue.md)関連付けられたアラートとその証拠のコレクションで構成されます。
 > - [ストリーミング API Microsoft 365 Defender](streaming-api.md)、イベント データをMicrosoft 365 Defenderからイベント ハブまたは Azure ストレージ アカウントにストリーミングします。
 
-Microsoft 365 Defenderでは、登録されたAAD アプリケーションの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールがサポートされています。これは、お使いの企業にインストールされている特定の SIEM ソリューションまたはコネクタを表します。環境。 
+Microsoft 365 Defenderでは、環境にインストールされている特定の SIEM ソリューションまたはコネクタを表す登録済み AAD アプリケーションの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールがサポートされます。 
 
 詳細については、以下を参照してください。
 
@@ -51,7 +51,7 @@ Microsoft 365 Defenderでは、登録されたAAD アプリケーションの OA
 
 1.  Azure の REST API からMicrosoft 365 Defenderインシデントとその包含アラートを取り込む。 
 
-2.  Azure Event HubsアカウントまたはAzure Storage アカウントを介してストリーミング イベント データを取り込む。 
+2.  Azure Event Hubs または Azure Storage アカウントを介してストリーミング イベント データを取り込む。 
 
 Microsoft 365 Defenderは現在、次の SIEM ソリューション統合をサポートしています。 
 
@@ -65,20 +65,24 @@ Microsoft 365 Defenderは現在、次の SIEM ソリューション統合をサ�
 
 ### <a name="splunk"></a>Splunk
 
-サポートする Splunk 用のMicrosoft 365 Defender アドオンの使用:
+完全にサポートされている新しい Microsoft Security 用 Splunk アドオンを使用して、次の機能をサポートします。
 
 - Splunk の Common Information Model (CIM) にマップされる、次の製品からのアラートを含むインシデントの取り込み:
 
   - Microsoft 365 Defender
   - Microsoft Defender for Endpoint
-  - id Protection のMicrosoft Defender for IdentityとAzure Active Directory
+  - Microsoft Defender for Identityと Azure Active Directory Identity Protection
   - Microsoft Defender for Cloud Apps
-
-- Splunk 内からMicrosoft 365 Defenderのインシデントを更新する
 
 - Defender for Endpoint アラート (Defender for Endpoint の Azure エンドポイントから) を取り込み、これらのアラートを更新する
 
-Splunk 用のMicrosoft 365 Defender アドオンの詳細については、「[splunkbase](https://splunkbase.splunk.com/app/4959/)」を参照してください。
+- Microsoft 365 DefenderインシデントやMicrosoft Defender for Endpointアラートの更新のサポートと、それぞれのダッシュボードは、Microsoft 365 App for Splunk に移行されました。 
+
+関連情報:
+
+- Microsoft Security 用 Splunk アドオンについては、[Splunkbase の Microsoft Security アドオンを](https://splunkbase.splunk.com/app/6207/#/overview)参照してください。
+
+- Splunk 用 Microsoft 365 アプリは、[Splunkbase 上の Microsoft 365 アプリを](https://splunkbase.splunk.com/app/3786/)参照してください
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 
@@ -86,7 +90,7 @@ Microsoft 365 Defender用の新しい SmartConnector は、ArcSight にインシ
 
 新しい ArcSight SmartConnector for Microsoft 365 Defenderの詳細については、[ArcSight 製品ドキュメントを参照してください](https://community.microfocus.com/cyberres/productdocs/w/connector-documentation/39246/smartconnector-for-microsoft-365-defender)。
 
-SmartConnector は、以前の FlexConnector をMicrosoft Defender for Endpointに置き換えます。
+SmartConnector は、非推奨になった以前の FlexConnector をMicrosoft Defender for Endpointに置き換えます。
   
 
 ## <a name="ingesting-streaming-event-data-via-event-hubs"></a>Event Hubs を使用したストリーミング イベント データの取り込み
@@ -96,11 +100,11 @@ SmartConnector は、以前の FlexConnector をMicrosoft Defender for Endpoint�
 Streaming API でサポートされているイベントの種類の詳細については、「 [サポートされているストリーミング イベントの種類](../defender/supported-event-types.md)」を参照してください。
 
 ### <a name="splunk"></a>Splunk
+
 Microsoft Cloud Services 用 Splunk アドオンを使用して、Azure Event Hubsからイベントを取り込みます。  
 
-
-Microsoft Cloud Services 用 Splunk アドオンの詳細については、「[splunkbase](https://splunkbase.splunk.com/app/3110/)」を参照してください。
+Microsoft Cloud Services 用 Splunk アドオンの詳細については、[Microsoft Cloud Services アドオン on Splunkbase を](https://splunkbase.splunk.com/app/3110/)参照してください。
   
 
 ### <a name="ibm-qradar"></a>IBM QRadar
->Microsoft 365 Defender製品からストリーミング イベント データを取り込む[Microsoft 365 Defender ストリーミング API を](streaming-api.md)呼び出す新しい IBM QRadar Microsoft 365 Defender デバイス サポート モジュール (DSM) を使用します。 サポートされているイベントの種類の詳細については、「 [サポートされているイベントの種類](supported-event-types.md)」を参照してください。
+>Event Hubs または Azure Storage アカウントを介してMicrosoft 365 Defender製品からストリーミング イベント データを取り込む[Microsoft 365 Defender ストリーミング API](streaming-api.md) を呼び出す新しい IBM QRadar Microsoft 365 Defender デバイス サポート モジュール (DSM) を使用します。 サポートされているイベントの種類の詳細については、「 [サポートされているイベントの種類](supported-event-types.md)」を参照してください。

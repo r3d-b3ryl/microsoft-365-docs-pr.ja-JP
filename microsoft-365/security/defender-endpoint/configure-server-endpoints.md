@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 18ca82c4bbcb765eec419cd5b7477df8abbd8515
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490667"
+ms.locfileid: "66531102"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -146,6 +146,16 @@ Windows Server 2012 R2 および 2016 の新しい統合ソリューション �
 3. 証明書をローカル コンピューターの信頼できる "中間証明機関" ストアにインポートします。
 PowerShell コマンドを使用できます:Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
 
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
+
+Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシームレスに統合されます。 サーバーを自動的にオンボードしたり、Microsoft Defender for Cloud で監視されているサーバーを Defender for Endpoint に表示したり、Microsoft Defender for Cloud のお客様として詳細な調査を行うことができます。 
+
+詳細については、「[Microsoft Defender for Cloud での統合](azure-server-integration.md)」 を参照してください。 Microsoft Defender for Cloud を介してオンボードされたサーバーでは、初期構成が [パッシブ モード](/defender-endpoint/microsoft-defender-antivirus-compatibility#microsoft-defender-antivirus-and-non-microsoft-antivirusantimalware-solutions)で Defender ウイルス対策を実行するように設定されます。
+
+> [!NOTE]
+> - Microsoft Defender for servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、[Windows Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) をサポートするように拡張されました。
+> - この統合を利用するサーバー エンドポイントの監視は、Office 365 GCC の顧客に対して無効になっています。
+
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 および Windows Server 2016
 
 ### <a name="prerequisites"></a>前提条件
@@ -166,7 +176,7 @@ PowerShell コマンドを使用できます:Import-Certificate -FilePath .\Inte
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>サードパーティのセキュリティ ソリューションを使用して実行するための前提条件
 
-サードパーティ製のマルウェア対策ソリューションを使用する場合は、パッシブ モードでMicrosoft Defender ウイルス対策を実行する必要があります。 インストールとオンボードのプロセス中は、必ずパッシブ モードに設定する必要があります。
+サードパーティのマルウェア対策ソリューションを使用する場合は、Microsoft Defender ウイルス対策をパッシブ モードで実行する必要があります。 インストールとオンボードのプロセス中は、必ずパッシブ モードに設定する必要があります。
 
 > [!NOTE]
 > McAfee Endpoint Security (ENS) または VirusScan Enterprise (VSE) を使用してサーバーにMicrosoft Defender for Endpointをインストールする場合は、Microsoft Defender ウイルス対策が削除または無効にならないように、McAfee プラットフォームのバージョンを更新する必要がある場合があります。 必要な特定のバージョン番号を含む詳細については、 [McAfee ナレッジ センターの記事](https://kc.mcafee.com/corporate/index?page=content&id=KB88214)を参照してください。
@@ -193,7 +203,7 @@ Windows Server Update Services (WSUS) または Microsoft Endpoint Configuration
    > [!NOTE]
    > Windows Server 2012R2 では、Microsoft Defender ウイルス対策はインストール パッケージによってインストールされ、パッシブ モードに設定しない限りアクティブになります。 Windows Server 2016 では、まず Microsoft Defender ウイルス対策を機能としてインストールしなければならず (「[MDE に切り替える](/microsoft-365/security/defender-endpoint/switch-to-mde-phase-2#re-enable-microsoft-defender-antivirus-on-windows-server-2016)」 を参照)、インストールを続行する前に完全に更新する必要があります。
    >
-   > Microsoft 以外のマルウェア対策ソリューションを実行している場合は、インストール前にMicrosoft Defender ウイルス対策の除外を ([[Defender プロセス] タブの Microsoft Defender プロセスの一覧より](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) Microsoft 以外のソリューションに追加してください。  Microsoft 以外のセキュリティ ソリューションを Defender ウイルス対策の除外リストに追加することもお勧めします。
+   > Microsoft 以外のマルウェア対策ソリューションを実行している場合は、インストール前に Microsoft Defender ウイルス対策の除外を ([[Defender プロセス] タブの Microsoft Defender プロセスの一覧から](https://download.microsoft.com/download/6/b/f/6bfff670-47c3-4e45-b01b-64a2610eaefa/mde-urls-commercial.xlsx)) Microsoft 以外のソリューションに追加してください。  Microsoft 以外のセキュリティ ソリューションを Defender ウイルス対策の除外リストに追加することもお勧めします。
 
 **インストール パッケージ** には、Microsoft Defender for Endpoint エージェントをインストールする MSI ファイルが含まれています。
 
@@ -374,7 +384,7 @@ Windows Server 2012 R2、Windows Server 2016、Windows Server (SAC)、Windows Se
 
 - [グループ ポリシーを使用してデバイスをオフボードする](configure-endpoints-gp.md#offboard-devices-using-group-policy)
 - [構成マネージャーを使用してデバイスをオフボードする](configure-endpoints-sccm.md#offboard-devices-using-configuration-manager)
-- [モバイル デバイス管理 ツールを使用してデバイスをオフボードおよび監視する](configure-endpoints-mdm.md#offboard-and-monitor-devices-using-mobile-device-management-tools)
+- [モバイル デバイス管理ツールを使用してデバイスをオフボードする](configure-endpoints-mdm.md#offboard-devices-using-mobile-device-management-tools)
 - [ローカル スクリプトを使用してデバイスをオフボードする](configure-endpoints-script.md#offboard-devices-using-a-local-script)
 
 オフボーディング後は、Windows Server 2012 R2 とWindows Server 2016で統合ソリューション パッケージをアンインストールできます。

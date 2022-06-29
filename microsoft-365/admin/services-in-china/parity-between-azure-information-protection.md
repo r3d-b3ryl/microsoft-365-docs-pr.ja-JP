@@ -20,16 +20,16 @@ search.appverid:
 - GEA150
 description: 21Vianet によって運用されるOffice 365用の Azure Information Protection (AIP) と、中国のお客様向けに Azure Information Protection (AIP) を構成する方法について説明します。
 monikerRange: o365-21vianet
-ms.openlocfilehash: 0f495139a807d4a0eeb3181626717c6d5061fc38
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 80cd8d9b848235fc3486ad1952fa58f9d7d1570d
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64935217"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530170"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>21Vianet によって運用されるOffice 365の Azure Information Protection サポート
 
-この記事では、21Vianet が運用するOffice 365に対する Azure Information Protection (AIP) のサポートと、中国の顧客向けに AIP を構成する具体的な手順と、AIP オンプレミス スキャナーをインストールしてコンテンツ スキャン ジョブを管理する方法を含む具体的&mdash;な手順について説明します。
+この記事では、21Vianet が運用するOffice 365に対する Azure Information Protection (AIP) のサポートと、中国&mdash;のお客様向けに AIP を構成する具体的な手順について説明します。これには、AIP オンプレミス スキャナーをインストールしてコンテンツ スキャン ジョブを管理する方法が含まれます。
 
 ## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>21Vianet によって運用されるOffice 365の AIP と商用オファリングの違い
 
@@ -37,7 +37,7 @@ ms.locfileid: "64935217"
 
 次の一覧には、21Vianet によって運用されているOffice 365の AIP と、2021 年 1 月の時点での商用オファリングの間の既存のギャップが含まれています。
 
-- Active Directory Rights Management サービス (AD RMS) 暗号化は、Microsoft 365 Apps for enterprise (ビルド 11731.10000 以降) でのみサポートされます。 Office Professional Plusは AD RMS をサポートしていません。
+- Active Directory Rights Management Services (AD RMS) 暗号化は、Microsoft 365 Apps for enterprise (ビルド 11731.10000 以降) でのみサポートされます。 Office Professional Plusは AD RMS をサポートしていません。
 
 - AD RMS から AIP への移行は現在使用できません。
   
@@ -45,7 +45,7 @@ ms.locfileid: "64935217"
   
 - 現在、商用クラウド内のユーザーとのドキュメントと電子メールの添付ファイルの共有は利用できません。 これには、商用クラウド内の 21Vianet ユーザー、商用クラウド内の 21Vianet ユーザーが運用する非Office 365、個人向け RMS ライセンスを持つユーザーが運用するOffice 365が含まれます。
   
-- SharePointを含む IRM (IRM で保護されたサイトとライブラリ) は現在使用できません。
+- SharePoint を使用した IRM (IRM で保護されたサイトとライブラリ) は現在使用できません。
   
 - AD RMS のモバイル デバイス拡張機能は現在使用できません。
 
@@ -62,13 +62,13 @@ ms.locfileid: "64935217"
 中国のお客様向けに AIP を構成するには:
 1. [テナントの Rights Management を有効にします](#step-1-enable-rights-management-for-the-tenant)。
 
-1. [Microsoft Purview Information Protection Sync Service サービス プリンシパルを追加します](#step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal)。
+1. [Microsoft Information Protection Sync Service サービス プリンシパルを追加します](#step-2-add-the-microsoft-information-protection-sync-service-service-principal)。
 
 1. [DNS 暗号化を構成します](#step-3-configure-dns-encryption)。
 
 1. [AIP 統合ラベル付けクライアントをインストールして構成します](#step-4-install-and-configure-the-aip-unified-labeling-client)。
 
-1. [Windowsで AIP アプリを構成します](#step-5-configure-aip-apps-on-windows)。
+1. [Windows で AIP アプリを構成します](#step-5-configure-aip-apps-on-windows)。
 
 1. [AIP オンプレミス スキャナーをインストールし、コンテンツ スキャン ジョブを管理](#step-6-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs)します。 
 
@@ -81,24 +81,24 @@ ms.locfileid: "64935217"
     1. 管理者として PowerShell を起動します。
     2. AIPService モジュールがインストールされていない場合は、実行 `Install-Module AipService`します。
     3. を使用してモジュールを `Import-Module AipService`インポートします。
-    4. を使用して`Connect-AipService -environmentname azurechinacloud`サービスにConnectします。
+    4. を使用して `Connect-AipService -environmentname azurechinacloud`サービスに接続します。
     5. 実行 `(Get-AipServiceConfiguration).FunctionalState` し、状態が `Enabled`.
 
 2. 機能状態が次の場合は `Disabled`、実行します `Enable-AipService`。
 
-### <a name="step-2-add-the-microsoft-purview-information-protection-sync-service-service-principal"></a>手順 2: Microsoft Purview Information Protection Sync Service サービス プリンシパルを追加する
+### <a name="step-2-add-the-microsoft-information-protection-sync-service-service-principal"></a>手順 2: Microsoft Information Protection Sync Service サービス プリンシパルを追加する
 
-**Microsoft Purview Information Protection Sync Service サービス** プリンシパルは、既定では Azure China テナントでは使用できず、Azure Information Protectionに必要です。 Azure Az PowerShell モジュールを使用して、このサービス プリンシパルを手動で作成します。
+**Microsoft Information Protection Sync Service サービス** プリンシパルは、既定では Azure China テナントでは使用できず、Azure Information Protectionに必要です。 Azure Az PowerShell モジュールを使用して、このサービス プリンシパルを手動で作成します。
 
 1. Azure Az モジュールがインストールされていない場合は、Azure Az モジュールをインストールするか、Azure Cloud Shellなどの Azure Az モジュールがプレインストールされているリソース[を使用します](/azure/cloud-shell/overview)。 詳細については、「 [Azure Az PowerShell モジュールのインストール](/powershell/azure/install-az-ps)」を参照してください。
 
-1. [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) コマンドレットと環境名を使用してサービスに`azurechinacloud`Connectします。
+1. [Connect-AzAccount](/powershell/module/az.accounts/Connect-AzAccount) コマンドレットと環境名を使用してサービスに`azurechinacloud`接続します。
 
     ```powershell
     Connect-azaccount -environmentname azurechinacloud
     ```
 
-1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) コマンドレットと `870c4f2e-85b6-4d43-bdda-6ed9a579b725` **Microsoft Purview Information Protection Sync Service** のアプリケーション ID を使用して、Microsoft Purview Information Protection Sync Service サービス プリンシパルを手動で作成します。
+1. [New-AzADServicePrincipal](/powershell/module/az.resources/new-azadserviceprincipal) コマンドレットと `870c4f2e-85b6-4d43-bdda-6ed9a579b725` **Microsoft Purview 情報保護 Sync Service** のアプリケーション ID を使用して、Microsoft Information Protection Sync Service サービス プリンシパルを手動で作成します。
 
     ```powershell 
     New-AzADServicePrincipal -ApplicationId 870c4f2e-85b6-4d43-bdda-6ed9a579b725
@@ -108,7 +108,7 @@ ms.locfileid: "64935217"
 
 ### <a name="step-3-configure-dns-encryption"></a>手順 3: DNS 暗号化を構成する
 
-暗号化を正しく機能させるには、クライアント アプリケーションOfficeサービスの中国インスタンスに接続し、そこからブートストラップする必要があります。 クライアント アプリケーションを適切なサービス インスタンスにリダイレクトするには、テナント管理者は、Azure RMS URL に関する情報を使用して DNS SRV レコードを構成する必要があります。 DNS SRV レコードがない場合、クライアント アプリケーションは既定でパブリック クラウド インスタンスへの接続を試み、失敗します。
+暗号化を正しく機能させるには、Office クライアント アプリケーションがサービスの中国インスタンスに接続し、そこからブートストラップする必要があります。 クライアント アプリケーションを適切なサービス インスタンスにリダイレクトするには、テナント管理者は、Azure RMS URL に関する情報を使用して DNS SRV レコードを構成する必要があります。 DNS SRV レコードがない場合、クライアント アプリケーションは既定でパブリック クラウド インスタンスへの接続を試み、失敗します。
 
 また、ユーザーは、テナント所有のドメイン (たとえば) に基づくユーザー名を使用してログインし、ユーザー名 (たとえば、`joe@contoso.cn``joe@contoso.onmschina.cn`ユーザー名) ではなく`onmschina`ログインすることを前提としています。 ユーザー名のドメイン名は、正しいサービス インスタンスへの DNS リダイレクトに使用されます。
 
@@ -118,7 +118,7 @@ ms.locfileid: "64935217"
 
     1. 管理者として PowerShell を起動します。
     2. AIPService モジュールがインストールされていない場合は、実行 `Install-Module AipService`します。
-    3. を使用して`Connect-AipService -environmentname azurechinacloud`サービスにConnectします。
+    3. を使用して `Connect-AipService -environmentname azurechinacloud`サービスに接続します。
     4. RMS ID を取得するために実行 `(Get-AipServiceConfiguration).RightsManagementServiceId` します。
 
 2. DNS プロバイダーにログインし、ドメインの DNS 設定に移動して、新しい SRV レコードを追加します。
@@ -157,11 +157,11 @@ DNS プロバイダーにログインし、ドメインの DNS 設定に移動�
 - [AIP クイック スタート: AIP クライアントをデプロイする](/azure/information-protection/quickstart-deploy-client)
 - [AIP 管理者ガイド](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [AIP ユーザー ガイド](/azure/information-protection/rms-client/clientv2-user-guide)
-- [秘密度ラベルMicrosoft 365について説明します](../../compliance/sensitivity-labels.md)
+- [Microsoft 365 の秘密度ラベルについて学習する](../../compliance/sensitivity-labels.md)
 
-### <a name="step-5-configure-aip-apps-on-windows"></a>手順 5: Windowsで AIP アプリを構成する
+### <a name="step-5-configure-aip-apps-on-windows"></a>手順 5: Windows で AIP アプリを構成する
 
-Windows上の AIP アプリでは、Azure China の正しいソブリン クラウドを指すために、次のレジストリ キーが必要です。
+Windows 上の AIP アプリでは、Azure China の正しいソブリン クラウドを指すために、次のレジストリ キーが必要です。
 
 - レジストリ ノード = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
 - Name = `CloudEnvType`
@@ -181,7 +181,7 @@ AIP オンプレミス スキャナーをインストールして、機密デー
 
 **スキャナーをインストールして構成するには**:
 
-1. スキャナーを実行するWindows サーバー コンピューターにサインインします。 ローカル管理者権限を持ち、SQL Server マスター データベースに書き込むアクセス許可を持つアカウントを使用します。
+1. スキャナーを実行する Windows Server コンピューターにサインインします。 ローカル管理者権限を持ち、SQL Server マスター データベースに書き込むアクセス許可を持つアカウントを使用します。
 
 1. PowerShell を閉じてから開始します。 以前に AIP クライアントとスキャナーをインストールしたことがある場合は、 **AIPScanner** サービスが停止していることを確認します。
 
@@ -197,19 +197,19 @@ AIP オンプレミス スキャナーをインストールして、機密デー
     > [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) コマンドで同じクラスター名を使用して、複数のスキャナー ノードを同じクラスターに関連付けることができます。 複数のスキャナー ノードに同じクラスターを使用すると、複数のスキャナーを連携してスキャンを実行できます。
     > 
 
-1. **管理ツール** > サービスを使用して、サービスがインストールされていることを確認 **します**。
+1. **管理ツール** >  サービスを使用して、サービスがインストールされていることを確認 **します**。
 
     インストールされているサービスは **Azure Information Protection スキャナー** という名前で、作成したスキャナー サービス アカウントを使用して実行するように構成されています。
 
 1. スキャナーで使用する Azure トークンを取得します。 Azure AD トークンを使用すると、スキャナーは Azure Information Protection サービスに対して認証を行い、スキャナーを非対話型で実行できます。 
 
-    1. Azure portalを開き、認証用のアクセス トークンを指定するAzure AD アプリケーションを作成します。 詳細については、「[Azure Information Protection の非対話型ファイルにラベルを付ける方法」を](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)参照してください。
+    1. Azure portalを開き、認証用のアクセス トークンを指定する Azure AD アプリケーションを作成します。 詳細については、「[Azure Information Protection の非対話型ファイルにラベルを付ける方法」を](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)参照してください。
     
         > [!TIP]
-        > [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) コマンド用のAzure AD アプリケーションを作成および構成する場合、[**要求 API アクセス許可**] ウィンドウには、**Microsoft API** タブの代わりに組織が使用する **API タブが** 表示されます。組織が **使用する API を** 選択して **、Azure Rights Management Services** を選択します。 
+        > [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) コマンド用に Azure AD アプリケーションを作成して構成する場合、[**Api アクセス許可の要求**] ウィンドウに、Microsoft API タブの代わりに **組織が使用** する API タブ **が** 表示されます。組織が **Azure Rights Management Services** を選択するために **使用する API を** 選択します。 
         >
 
-    1. Windows サーバー コンピューターから、スキャナー サービス アカウントにインストールに対して **ローカルでログオン** 権が付与されている場合は、このアカウントでサインインし、PowerShell セッションを開始します。 
+    1. Windows Server コンピューターから、スキャナー サービス アカウントにインストールに対して **ローカルでログオン** が許可されている場合は、このアカウントでサインインし、PowerShell セッションを開始します。 
     
         スキャナー サービス アカウントにインストールに対して **ローカルでログオン** を許可できない場合は、「[Azure Information Protection のファイルに非対話型でラベルを付ける方法](/azure/information-protection/rms-client/clientv2-admin-guide-powershell#how-to-label-files-non-interactively-for-azure-information-protection)」で説明されているように、*OnBehalfOf* パラメーターと [Set-AIPAuthentication](/powershell/module/azureinformationprotection/set-aipauthentication) を使用します。
 
@@ -219,7 +219,7 @@ AIP オンプレミス スキャナーをインストールして、機密デー
       Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
       ```
 
-      例:
+      次に例を示します。
 
       ```PowerShell
       $pscreds = Get-Credential CONTOSO\scanner
@@ -227,7 +227,7 @@ AIP オンプレミス スキャナーをインストールして、機密デー
       Acquired application access token on behalf of CONTOSO\scanner.
       ```
 
-    スキャナーに、Azure ADに対して認証するトークンが含まれるようになりました。 このトークンは、Azure ADの **Web アプリ /API** クライアント シークレットの構成に従って、1 年間、2 年間、または決して有効ではありません。 トークンの有効期限が切れた場合は、この手順を繰り返す必要があります。
+    スキャナーに、Azure AD に対して認証するトークンが含まれるようになりました。 このトークンは、Azure AD の **Web アプリ /API** クライアント シークレットの構成に従って、1 年間、2 年間、または決して有効ではありません。 トークンの有効期限が切れた場合は、この手順を繰り返す必要があります。
 
 1. [Set-AIPScannerConfiguration](/powershell/module/azureinformationprotection/set-aipscannerconfiguration) コマンドレットを実行して、スキャナーをオフライン モードで機能するように設定します。 実行：
 
@@ -237,7 +237,7 @@ AIP オンプレミス スキャナーをインストールして、機密デー
 
 1. [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) コマンドレットを実行して、既定のコンテンツ スキャン ジョブを作成します。
 
-    **Set-AIPScannerContentScanJob** コマンドレットで必要な唯一のパラメーターは **、適用です**。 ただし、この時点で、コンテンツ スキャン ジョブの他の設定を定義することもできます。 例:
+    **Set-AIPScannerContentScanJob** コマンドレットで必要な唯一のパラメーターは **、適用です**。 ただし、この時点で、コンテンツ スキャン ジョブの他の設定を定義することもできます。 次に例を示します。
 
     ```powershell
     Set-AIPScannerContentScanJob -Schedule Manual -DiscoverInformationTypes PolicyOnly -Enforce Off -DefaultLabelType PolicyDefault -RelabelFiles Off -PreserveFileDetails On -IncludeFileTypes '' -ExcludeFileTypes '.msg,.tmp' -DefaultOwner <account running the scanner>
@@ -263,7 +263,7 @@ AIP オンプレミス スキャナーをインストールして、機密デー
     追加するリポジトリの種類に応じて、次のいずれかの構文を使用します。
 
     - ネットワーク共有の場合は、.`\\Server\Folder`
-    - SharePoint ライブラリの場合は、`http://sharepoint.contoso.com/Shared%20Documents/Folder`.
+    - SharePoint ライブラリの場合は、 `http://sharepoint.contoso.com/Shared%20Documents/Folder`.
     - ローカル パスの場合: `C:\Folder`
     - UNC パスの場合: `\\Server\Folder`
 

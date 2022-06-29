@@ -21,12 +21,12 @@ search.appverid:
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスでの購入のオンまたはオフを切り替える方法をご紹介します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 4/7/2022
-ms.openlocfilehash: e4423892f2dc045a9729e68519c85d471838d5ac
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 7c9ac6a1e58049d188d4cd29441d8e0689f2c787
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66042190"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530840"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
@@ -95,7 +95,7 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 | 製品 | ProductId |
 |-----------------------------|--------------|
-| ユーザーごとの Power Apps | CFQ7TTC0LH2H |
+| ユーザーごとの Power Apps* | CFQ7TTC0LH2H |
 | ユーザーごとの Power Automate | CFQ7TTC0KP0N |
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (スタンドアロン) | CFQ7TTC0KXG7  |
@@ -107,6 +107,7 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Windows 365 Enterprise | CFQ7TTC0HHS9 |
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows ハイブリッド特典付き Windows 365 Business | CFQ7TTC0HX99 |
+| Microsoft 365 F3 | CFQ7TTC0LH05 |
 
 *これらの ID は変更されています。 以前に古い ID を使用して製品をブロックした場合、新しい ID を使用して製品は自動的にブロックされます。 追加の作業は必要ありません。
 
@@ -134,7 +135,7 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>AllowSelfServicePurchase を無効にするスクリプト例
 
-次の例では、**MSCommerce** モジュールをインポートし、アカウントでサインインし、ユーザーごとのPower Automateの **ProductId** を取得し、その製品 **の AllowSelfServicePurchase** を無効にする方法について説明します。
+次の例では、 **MSCommerce** モジュールをインポートし、アカウントでサインインし、ユーザーごとに **ProductId** for Power Automate を取得し、その製品の **AllowSelfServicePurchase** を無効にする方法について説明します。
 
 ```powershell
 Import-Module -Name MSCommerce

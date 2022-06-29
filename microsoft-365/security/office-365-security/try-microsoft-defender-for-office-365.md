@@ -19,26 +19,26 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: 17c7dd9a7b92f4a540f16cd5768067dd52991f22
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: ad8c15ef0b5dc56d2df8455341f8bf5e4e6efd94
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415536"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530616"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365を試す
 
-Microsoft 365 Defender ポータルの統合 **試用版** ポータルでは、Microsoft Defender for Office 365に対する以前の個別の試用版と評価エクスペリエンスの 1 つのエントリ ポイントが提供されます。 目的は、完全にコミットする前に、Defender for Office 365 プラン 2 の機能を 90 日間試してみることです。 ただし、Microsoft 365組織の性質に基づいて、評価エクスペリエンスには違いがあります。
+Microsoft 365 Defender ポータルの統合 **試用版** ポータルでは、Microsoft Defender for Office 365に対する以前の個別の試用版と評価エクスペリエンスの 1 つのエントリ ポイントが提供されます。 目的は、完全にコミットする前に、Defender for Office 365 プラン 2 の機能を 90 日間試してみることです。 ただし、Microsoft 365 組織の性質に基づく評価エクスペリエンスには違いがあります。
 
-- Microsoft 365メールボックスは既にありますが、現在、電子メール保護にサード パーティのサービスまたはデバイスを使用しています。 インターネットからのメールは、Microsoft 365組織に配信される前に保護サービスを経由します。 Microsoft 365保護は可能な限り低くなります (完全にオフになることはありません。マルウェア保護は常に適用されます)。
+- Microsoft 365 メールボックスは既にありますが、現在、電子メール保護にサードパーティのサービスまたはデバイスを使用しています。 インターネットからのメールは、Microsoft 365 組織に配信される前に保護サービスを経由します。 Microsoft 365 の保護は可能な限り低くなっています (完全にオフになることはありません。マルウェア保護は常に適用されます)。
 
-  ![メールは、Microsoft 365に配信する前に、サード パーティの保護サービスまたはデバイスを介してインターネットから送信されます。](../../media/mdo-migration-before.png)
+  ![メールは、Microsoft 365 に配信される前に、サード パーティの保護サービスまたはデバイスを介してインターネットから送信されます。](../../media/mdo-migration-before.png)
 
   これらの環境では、*監査* モードでのみDefender for Office 365を試すことができます。 メール フロー (MX レコード) を変更してDefender for Office 365を試す必要はありません。
 
-- Microsoft 365組織が既にあります。 インターネットからのメールは直接Microsoft 365フローされますが、現在のサブスクリプションには[Exchange Online Protection (EOP)](exchange-online-protection-overview.md) または[プラン 1 Defender for Office 365](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet)があります。
+- Microsoft 365 組織が既にあります。 インターネットからのメールは Microsoft 365 に直接送信されますが、現在のサブスクリプションには[Exchange Online Protection (EOP)](exchange-online-protection-overview.md) または[Defender for Office 365プラン 1](overview.md#microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet) のみが含まれます。
 
-  ![メールはインターネットからMicrosoft 365に送信され、EOP やDefender for Office 365プラン 1 からの保護が適用されます。](../../media/mdo-trial-mail-flow.png)
+  ![メールはインターネットから Microsoft 365 に送信され、EOP やDefender for Office 365プラン 1 からの保護が適用されます。](../../media/mdo-trial-mail-flow.png)
 
   これらの環境では、*監査* モードまたは *ブロック* モードでDefender for Office 365を試すことができます。
 
@@ -61,7 +61,7 @@ Defender for Office 365の詳細については、この[対話型ガイド](htt
 
 ## <a name="policies-in-blocking-mode-or-audit-mode"></a>ブロック モードまたは監査モードのポリシー
 
-Defender for Office 365を評価すると、Microsoft 365の保護機能を制御するポリシーが存在します。
+Defender for Office 365を評価すると、Microsoft 365 の保護機能を制御するポリシーが存在します。
 
 - **Exchange Online Protection (EOP)**: 新しいポリシーや特別なポリシーは作成されません。 既存の EOP ポリシーは、メッセージに対して動作できます (たとえば、迷惑メール フォルダーにメッセージを送信したり、検疫を行ったりします)。
 
@@ -74,8 +74,8 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 - **Defender for Office 365**: Defender for Office 365専用のポリシーは、Defender for Office 365を評価するために作成されます。
 
   - [フィッシング対策ポリシーにおける、なりすまし保護](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [電子メール メッセージの添付ファイルをセーフする](safe-attachments.md)
-  - [電子メール メッセージとMicrosoft Teamsのリンクをセーフする](safe-links.md)
+  - [電子メール メッセージの安全な添付ファイル](safe-attachments.md)
+  - [電子メール メッセージと Microsoft Teams の安全なリンク](safe-links.md)
 
   ただし、これらのポリシーの性質は、ブロック モードと監査モードでは異なります。
 
@@ -87,8 +87,8 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 
 **注**:
 
-- セーフ リンクを使用すると、メール フロー内の URL が爆発します。 特定の URL がデトネーションされないようにするには、テナント許可/ブロック リストを使用します。 詳細については、「 [テナント許可/ブロック リストの管理」を参照してください](tenant-allow-block-list.md)。
-- セーフ リンクは、メール メッセージ本文の URL リンクをラップしません。
+- 安全なリンクは、メール フロー内の URL をデトネーションします。 特定の URL がデトネーションされないようにするには、テナント許可/ブロック リストを使用します。 詳細については、「 [テナント許可/ブロック リストの管理」を参照してください](tenant-allow-block-list.md)。
+- 安全なリンクは、メール メッセージ本文で URL リンクをラップしません。
 - 評価ポリシーの設定については、この記事の後半の [「評価ポリシー設定](#evaluation-policy-settings) 」セクションで説明します。
 
 ## <a name="set-up-an-evaluation-in-audit-mode"></a>監査モードで評価を設定する
@@ -122,7 +122,7 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 
    - ドメインの MX レコードの検出に基づいて、次のいずれかのオプションが自動的に選択されます。
 
-     - **サードパーティまたはオンプレミスのサービス プロバイダーを使用しています**。ドメインの MX レコードは、Microsoft 365以外の場所を指しています。 [ **次へ**] をクリックした後、この選択には次の追加設定が必要です。
+     - **サードパーティまたはオンプレミスのサービス プロバイダーを使用しています**。ドメインの MX レコードは、Microsoft 365 以外の場所を指しています。 [ **次へ**] をクリックした後、この選択には次の追加設定が必要です。
 
        1. [ **サード パーティまたはオンプレミスの設定** ] ダイアログで、次の設定を構成します。
 
@@ -136,29 +136,29 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
             - **Trend Micro**
             - **その他**
 
-          - **この評価を適用するコネクタ**: Microsoft 365へのメール フローに使用するコネクタを選択します。
+          - **この評価を適用するコネクタ**: Microsoft 365 へのメール フローに使用するコネクタを選択します。
 
             [コネクタの拡張フィルター処理](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) ( *スキップ リスト* とも呼ばれます) は、指定したコネクタで自動的に構成されます。
 
-            サード パーティのサービスまたはデバイスが Microsoft 365 から配置されている場合、コネクタの強化されたフィルター処理によってインターネット メッセージのソースが正しく識別され、Microsoft フィルター スタックの精度が大幅に向上します (特に、ス[プーフィング インテリジェンス](anti-spoofing-protection.md)、[脅威エクスプローラー](threat-explorer.md)での違反後の機能、自動[調査&応答 (AIR)](automated-investigation-response-office.md))。
+            サード パーティのサービスまたはデバイスが Microsoft 365 の前に配置されている場合、コネクタの強化されたフィルター処理によってインターネット メッセージのソースが正しく識別され、Microsoft フィルター スタックの精度が大幅に向上します (特に、ス [プーフィング インテリジェンス](anti-spoofing-protection.md)、 [脅威エクスプローラー](threat-explorer.md) での違反後の機能、および自動 [調査&応答 (AIR)](automated-investigation-response-office.md))。
 
-          - **メッセージが通過する各ゲートウェイ IP アドレスを一覧表示** する: この設定は、[**サード パーティのサービス プロバイダーの選択**] で **[その他]** を選択した場合にのみ使用できます。 サードパーティの保護サービスまたはデバイスがMicrosoft 365にメールを送信するために使用する IP アドレスのコンマ区切りリストを入力します。
+          - **メッセージが通過する各ゲートウェイ IP アドレスを一覧表示** する: この設定は、[**サード パーティのサービス プロバイダーの選択**] で **[その他]** を選択した場合にのみ使用できます。 サードパーティの保護サービスまたはデバイスが Microsoft 365 にメールを送信するために使用する IP アドレスのコンマ区切りリストを入力します。
 
           完了したら、**[次へ]** をクリックします。
 
-       2. **[Exchangeメール フロー ルール**] ダイアログで、サード パーティの保護サービスまたはデバイスからの受信メッセージのスパム フィルター処理をスキップするExchange Onlineメール フロー ルール (トランスポート ルールとも呼ばれます) が必要かどうかを決定します。
+       2. **[Exchange メール フロー ルール**] ダイアログで、サード パーティの保護サービスまたはデバイスからの受信メッセージのスパム フィルター処理をスキップするExchange Onlineメール フロー ルール (トランスポート ルールとも呼ばれます) が必要かどうかを決定します。
 
-          Exchange Onlineには、保護サービスからのすべての受信メールをバイパス (ほとんどの) Microsoft 365フィルター処理を許可する SCL=-1 メール フロー ルールが既にある可能性があります。 多くの保護サービスは、サービスを使用するMicrosoft 365顧客に対して、このスパム信頼レベル (SCL) メール フロー ルール方法を推奨しています。
+          保護サービスからのすべての受信メールが (ほとんどの) Microsoft 365 フィルター処理をバイパスできるようにする SCL=-1 メール フロー ルールが既にExchange Onlineにある可能性があります。 多くの保護サービスは、サービスを使用している Microsoft 365 のお客様に対して、このスパム信頼レベル (SCL) メール フロー ルール方法を推奨しています。
 
           前の手順で説明したように、コネクタの拡張フィルター処理は、保護サービスからのメールの送信元として指定したコネクタで自動的に構成されます。
 
           保護サービスからの受信メールに対して SCL=-1 ルールを使用せずにコネクタの拡張フィルター処理をオンにすると、 [スプーフィング インテリジェンス](anti-spoofing-protection.md)などの EOP 保護機能の検出機能が大幅に向上し、新しく検出されたメッセージの配信 (迷惑メール フォルダーへの移動や検疫など) に影響を与える可能性があります。 この影響は EOP ポリシーに限定されます。前述のように、Defender for Office 365 ポリシーは監査モードで作成されます。
 
-          SCL=-1 メール フロー ルールを作成したり、既存のルールを確認したりするには、ページの **[管理センターに移動**] ボタンExchangeクリックします。 詳細については、「[メール フロー ルールを使用して、Exchange Online内のメッセージでスパム信頼レベル (SCL) を設定](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)する」を参照してください。
+          SCL=-1 メール フロー ルールを作成したり、既存のルールを確認したりするには、ページの **[Exchange 管理センターに移動** ] ボタンをクリックします。 詳細については、「[メール フロー ルールを使用して、Exchange Online内のメッセージでスパム信頼レベル (SCL) を設定](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)する」を参照してください。
 
           完了したら、 **[完了]** をクリックします。
 
-     - **Microsoft Exchange Onlineのみを使用しています**。ドメインの MX レコードはMicrosoft 365をポイントします。 構成する必要は残っていないので、[ **完了]** をクリックします。
+     - **Microsoft Exchange Onlineのみを使用** しています。ドメインの MX レコードは Microsoft 365 をポイントします。 構成する必要は残っていないので、[ **完了]** をクリックします。
 
 5. 評価が設定されると、進行状況ダイアログが表示されます。 セットアップが完了したら、[完了] をクリック **します**。
 
@@ -218,7 +218,7 @@ Defender for Office 365を評価すると、Microsoft 365の保護機能を制�
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
-Defender for Microsoft 365 の評価を設定するために **Azure AD** で必要なアクセス許可については、次の一覧を参照してください。
+**Azure AD** で Defender for Microsoft 365 の評価を設定するために必要なアクセス許可については、次の一覧で説明します。
 
 - **評価の作成、変更、または削除:** セキュリティ管理者またはグローバル管理者。
 - **評価ポリシーとレポートを表示する**: セキュリティ管理者またはセキュリティ 閲覧者。
@@ -236,22 +236,22 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |AdminDisplayName|評価ポリシー|
 |AuthenticationFailAction|MoveToJmf|
 |Enabled|はい|
-|EnableFirstContactSafetyTips|いいえ|
+|EnableFirstContactSafetyTips|False|
 |EnableMailboxIntelligence|はい|
 |EnableMailboxIntelligenceProtection|はい|
-|EnableOrganizationDomainsProtection|いいえ|
-|EnableSimilarDomainsSafetyTips|いいえ|
-|EnableSimilarUsersSafetyTips|いいえ|
+|EnableOrganizationDomainsProtection|False|
+|EnableSimilarDomainsSafetyTips|False|
+|EnableSimilarUsersSafetyTips|False|
 |EnableSpoofIntelligence|はい|
-|EnableSuspiciousSafetyTip|いいえ|
-|EnableTargetedDomainsProtection|いいえ|
-|EnableTargetedUserProtection|いいえ|
+|EnableSuspiciousSafetyTip|False|
+|EnableTargetedDomainsProtection|False|
+|EnableTargetedUserProtection|False|
 |EnableUnauthenticatedSender|はい|
-|EnableUnusualCharactersSafetyTips|いいえ|
+|EnableUnusualCharactersSafetyTips|False|
 |EnableViaTag|はい|
 |Guid|GUID 値|
 |ImpersonationProtectionState|Manual|
-|IsDefault|いいえ|
+|IsDefault|False|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
@@ -267,11 +267,11 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |TargetedUserQuarantineTag|DefaultFullAccessPolicy|
 |||
 |AntiPhishPolicyLevelDataList|空白|
-|AntiSpoofEnforcementType|高い|
+|AntiSpoofEnforcementType|高|
 |AuthenticationSafetyTipText|空白|
 |AuthenticationSoftPassSafetyTipText|空白|
-|EnableAuthenticationSafetyTip|いいえ|
-|EnableAuthenticationSoftPassSafetyTip|いいえ|
+|EnableAuthenticationSafetyTip|False|
+|EnableAuthenticationSoftPassSafetyTip|False|
 |PolicyTag|空白|
 |SimilarUsersSafetyTipsCustomText|空白|
 |TreatSoftPassAsAuthenticated|はい|
@@ -282,7 +282,7 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |TargetedDomainsToProtect|{}|
 |TargetedUsersToProtect|{}|
 
-**セーフ 添付ファイルの評価ポリシー設定**:
+**安全な添付ファイルの評価ポリシー設定**:
 
 |設定|値|
 |---|---|
@@ -291,15 +291,15 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |AdminDisplayName|評価ポリシー|
 |ConfidenceLevelThreshold|80|
 |有効にする|はい|
-|EnableOrganizationBranding|いいえ|
+|EnableOrganizationBranding|False|
 |Guid|GUID 値|
 |IsBuiltInProtection|いいえ|
-|IsDefault|いいえ|
+|IsDefault|False|
 |名前|評価ポリシー|
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|評価|
-|リダイレクト|いいえ|
+|Redirect|False|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 
@@ -314,7 +314,7 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |DisableUrlRewrite|はい|
 |DoNotRewriteUrls|{}|
 |EnableForInternalSenders|いいえ|
-|EnableOrganizationBranding|いいえ|
+|EnableOrganizationBranding|False|
 |EnableSafeLinksForTeams|はい|
 |Guid|GUID 値|
 |IsBuiltInProtection|いいえ|
@@ -327,7 +327,7 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |TrackClicks|はい|
 |||
 |DoNotAllowClickThrough|空白|
-|DoNotTrackUserClicks|いいえ|
+|DoNotTrackUserClicks|False|
 |EnableSafeLinksForEmail|はい|
 |EnableSafeLinksForOffice|はい|
 |ExcludedUrls|{}|

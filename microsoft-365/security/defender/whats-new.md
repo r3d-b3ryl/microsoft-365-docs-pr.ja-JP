@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 3c11e531e8b4706128e1519b790046f800827d67
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285020"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530518"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
->次の機能は、Microsoft 365 Defenderの最新リリースでプレビューまたは一般公開 (GA) されています。
+Microsoft 365 Defenderの新機能を一覧表示します。 
 
 RSS フィード: ご自身のフィード リーダーに次の URL をコピーして貼り付けると、このページの更新時に通知を受け取ることができます。
 
@@ -45,12 +45,15 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 メッセージ [センター](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)を通じて、製品の更新と重要な通知を受け取ることもできます。 
 
+## <a name="june-2022"></a>2022 年 6 月
+- (プレビュー) [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) テーブルと [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) テーブルが、高度なハンティング スキーマで使用できるようになりました。 これらのテーブルを使用して、さまざまな構成の状態やデバイスの攻撃領域の状態など、Defender 脆弱性管理の評価イベントを確認します。
+
 ## <a name="may-2022"></a>2022 年 5 月
 - (プレビュー)Microsoft [Security Experts](https://aka.ms/MicrosoftSecurityExperts) という新しいサービス カテゴリへの最近発表された拡張に合わせて、Microsoft [Defender Experts for Hunting (Defender Experts for Hunting](defenderexpertsforhuntingprev.md) ) のパブリック プレビューの可用性について紹介します。 Defender Experts for Hunting は、堅牢なセキュリティ運用センターを持ち、エンドポイント、Office 365、クラウド アプリケーション、ID など、Microsoft Defender データ全体の脅威を積極的に検出できるように Microsoft に支援を求めるお客様を対象としています。 
 
 ## <a name="april-2022"></a>2022 年 4 月
 - (プレビュー)これで、検索クエリの結果から直接電子メール メッセージに [対してアクション](advanced-hunting-take-action.md) を実行できるようになりました。 電子メールは、他のフォルダーに移動したり、完全に削除したりできます。 
-- (プレビュー)高度な捜索の新しい[`UrlClickEvents`テーブル](advanced-hunting-urlclickevents-table.md)を使用すると、メール メッセージ、Microsoft Teams、Office 365 アプリのセーフ リンククリックからの情報に基づいて、フィッシング キャンペーンや不審なリンクなどの脅威を検出できます。
+- (プレビュー)高度な捜索の新しい[`UrlClickEvents`表](advanced-hunting-urlclickevents-table.md)は、メール メッセージ、Microsoft Teams、Office 365 アプリのセーフ リンククリックからの情報に基づいて、フィッシング キャンペーンや不審なリンクなどの脅威を検出するために使用できます。
 
 ## <a name="march-2022"></a>2022 年 3 月
 
@@ -63,7 +66,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="november-2021"></a>2021 年 11 月
 
-- (プレビュー)Defender for Cloud Apps へのアプリケーション ガバナンス アドオン機能は、Microsoft 365 Defenderで使用できるようになりました。 アプリ ガバナンスは、Microsoft Graph API を介してMicrosoft 365データにアクセスする OAuth 対応アプリ向けに設計されたセキュリティとポリシー管理機能を提供します。 アプリ ガバナンスは、実用的な分析情報と自動化されたポリシー アラートおよびアクションを通して、これらのアプリとそのユーザーが Microsoft 365 に保存されている機密データにアクセスし、使用し、共有する方法について、完全な可視性、修復、およびガバナンスを提供します。 [アプリケーション ガバナンスの詳細については、こちらを参照してください](/cloud-app-security/app-governance-manage-app-governance)。
+- (プレビュー)Defender for Cloud Apps のアプリケーション ガバナンス アドオン機能は、Microsoft 365 Defenderで利用できるようになりました。 アプリ ガバナンスは、Microsoft Graph API を使用して Microsoft 365 データにアクセスする OAuth 対応アプリ向けに設計されたセキュリティとポリシー管理機能を提供します。 アプリ ガバナンスは、実用的な分析情報と自動化されたポリシー アラートおよびアクションを通して、これらのアプリとそのユーザーが Microsoft 365 に保存されている機密データにアクセスし、使用し、共有する方法について、完全な可視性、修復、およびガバナンスを提供します。 [アプリケーション ガバナンスの詳細については、こちらを参照してください](/cloud-app-security/app-governance-manage-app-governance)。
 - (プレビュー) [高度なハンティング](advanced-hunting-overview.md) ページでは、マルチタブのサポート、スマート スクロール、合理化されたスキーマ タブ、クエリのクイック編集オプション、クエリ リソースの使用状況インジケーターなどの機能強化が行われ、クエリのスムーズで微調整が容易になりました。
 - (プレビュー) [これで、インシデントへのリンク機能を](advanced-hunting-link-to-incident.md) 使用して、高度な捜索クエリの結果から、調査中の新規または既存のインシデントにイベントまたはレコードを直接含めることができます。
 
@@ -87,11 +90,11 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - (プレビュー)インシデント グラフ
 
-  インシデントの [**概要**] タブの新しい **[Graph**] タブには、攻撃の完全な範囲、時間の経過と共にネットワーク経由で攻撃がどのように拡散したか、開始された場所、および攻撃者がどれだけ離れたかを示します。
+  インシデントの **[概要**] タブの新しい **[グラフ**] タブには、攻撃の完全な範囲、時間の経過と共にネットワーク経由で攻撃がどのように拡散したか、開始した場所、攻撃者がどれだけ離れたかを示します。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-- [Professional サービス カタログ](https://sip.security.microsoft.com/interoperability/professional_services)
+- [プロフェッショナル サービス カタログ](https://sip.security.microsoft.com/interoperability/professional_services)
 
   サポートされているパートナー接続を使用して、プラットフォームの検出、調査、脅威インテリジェンス機能を強化します。
 
@@ -135,7 +138,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - [Microsoft 365 Defender脅威分析レポート](threat-analytics.md)
 
-  脅威分析は、アクティブな攻撃の影響に対応し、最小限に抑えるのに役立ちます。 また、Microsoft 365 Defender ソリューションによってブロックされた攻撃の試行について学習し、さらなる暴露のリスクを軽減し、回復性を高める予防的なアクションを実行することもできます。 統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpoint および Microsoft Defender for Office E5 ライセンス所有者が脅威分析を利用できるようになりました。
+  脅威分析は、アクティブな攻撃の影響に対応し、最小限に抑えるのに役立ちます。 また、Microsoft 365 Defender ソリューションによってブロックされた攻撃の試行について学習し、さらなる暴露のリスクを軽減し、回復性を高める予防的なアクションを実行することもできます。 統合セキュリティ エクスペリエンスの一環として、Microsoft Defender for Endpointおよび Microsoft Defender for Office E5 ライセンス所有者向けに脅威分析を利用できるようになりました。
 
 ## <a name="march-2021"></a>2021 年 3 月
 
