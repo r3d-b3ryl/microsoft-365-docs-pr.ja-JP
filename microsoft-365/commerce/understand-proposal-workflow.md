@@ -20,14 +20,14 @@ search.appverid: MET150
 description: Microsoft 製品とサービスの購入に役立つ提案について説明します。
 ROBOTS: NOINDEX
 ms.date: 04/28/2022
-ms.openlocfilehash: 8dc80bfaadcbee236f282796dcdb37f59360ebe4
-ms.sourcegitcommit: 58ec09f1fd66af9717dc2743585d06d358ec7360
+ms.openlocfilehash: e54b68b5090287d7a61e9dea70726b7ec9e83c72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/30/2022
-ms.locfileid: "65144863"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66485981"
 ---
-# <a name="understand-the-proposal-workflow"></a>提案ワークフローを理解する
+# <a name="understand-the-microsoft-proposal-workflow"></a>Microsoft 提案ワークフローを理解する
 
 提案は、組織が Microsoft 製品とサービスを購入するための正式なオファーです。 お客様は、Microsoft の担当者と直接協力して、提案の特定の製品、サービス、および条件を決定します。
 
@@ -59,7 +59,7 @@ Microsoft 顧客契約 (MCA) を使用すると、組織は Microsoft 製品と�
 
 ### <a name="assign-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでロールを割り当てる
 
-1. Microsoft 365 管理センターで、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">BillingBilling</a>  >  アカウント] ページに移動します。
+1. Microsoft 365 管理センターで、[**課金** > アカウント] ページに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2084771" target="_blank">します</a>。
 2. [ **課金アカウント** ] ページの [ **課金アカウント ロール** ] セクションで、[ **ロールの割り当て**] を選択します。
 3. [ **ロールの割り当て** ] ウィンドウで、ロールを割り当てるユーザーの名前を検索します。
 4. ユーザーが持つロール名のボックスを選択し、[ **割り当て**] を選択します。
@@ -76,7 +76,7 @@ Microsoft 顧客契約 (MCA) を使用すると、組織は Microsoft 製品と�
 これが新しい課金アカウントで、誰も契約に同意していない場合は、次の条件を指定すると、自動的に課金アカウントの所有者になります。
 
 - 提案に名前を付けたユーザー **か、または**
-- 組織の[Azure Active Directoryグローバル管理者](/azure/active-directory/roles/permissions-reference#global-administrator)である
+- 組織の [Azure Active Directory グローバル管理者](/azure/active-directory/roles/permissions-reference#global-administrator) が既に存在する
 
 ## <a name="what-is-the-overall-workflow"></a>全体的なワークフローは何ですか?
 
@@ -140,7 +140,7 @@ Microsoft 顧客契約 (MCA) を使用すると、組織は Microsoft 製品と�
 | 作成者 | 提案を準備した Microsoft 担当者の電子メール アドレス。 |
 | 概要 | 提案に関連付けられている小計を表示します。 必要に応じて、コストの計算に使用される外国為替 (FX) レートも表示されます。 |
 | 提案の行項目 | このセクションには、提案に含まれるすべての項目の数量、単価、小計が含まれます。 |
-| 次の手順 | このセクションでは、実行する必要があるアクションを示します。 |
+| 次のステップ | このセクションでは、実行する必要があるアクションを示します。 |
 
 MCA に署名するには、[ **次の手順**] の下にあるボタンを選択します。 補足条項に署名する必要がある場合は、DocuSign サイトへのリンクが表示され、手順に従ってドキュメントに署名します。
 

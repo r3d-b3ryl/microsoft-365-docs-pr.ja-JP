@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 5605678a1fcc30719d7f838a16452ba527c554b7
-ms.sourcegitcommit: a7e1d155939e862337271fbe38bf26f62bd49bdd
+ms.openlocfilehash: 669d4f3b4e8c2d805f72f9113cea1e9e926f3390
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "64847051"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492370"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Microsoft 365 Defenderの修復アクション
 
@@ -50,7 +50,7 @@ Microsoft 365 Defenderの自動調査中と後に、悪意のあるアイテム�
 
 |デバイス (エンドポイント) 修復アクション  |メールの修復アクション  |ユーザー (アカウント)  |
 |:---------|:---------|----------|
-|- 調査パッケージを収集する <br/>- デバイスを分離する (この操作は元に戻すことができます)<br/>- オフボード マシン <br/>- リリース コードの実行 <br/>- 検疫からのリリース <br/>- 要求サンプル <br/>- コードの実行を制限する (このアクションは元に戻すことができます) <br/>- ウイルス対策スキャンの実行 <br/>- 停止と検疫      |- ブロック URL (クリック時)<br/>- 電子メール メッセージまたはクラスターを論理的に削除する<br/>- 検疫メール<br/>- 電子メールの添付ファイルを検疫する<br/>- 外部メール転送をオフにする          |- ユーザーを無効にする<br />- ユーザー パスワードをリセットする<br />- 侵害されたユーザーを確認する          |
+|- 調査パッケージを収集する <br/>- デバイスを分離する (この操作は元に戻すことができます)<br/>- オフボード マシン <br/>- リリース コードの実行 <br/>- 検疫からのリリース <br/>- 要求サンプル <br/>- コードの実行を制限する (このアクションは元に戻すことができます) <br/>- ウイルス対策スキャンの実行 <br/>- 停止と検疫 <br/>- ネットワークからのデバイスを含む     |- ブロック URL (クリック時)<br/>- 電子メール メッセージまたはクラスターを論理的に削除する<br/>- 検疫メール<br/>- 電子メールの添付ファイルを検疫する<br/>- 外部メール転送をオフにする          |- ユーザーを無効にする<br />- ユーザー パスワードをリセットする<br />- 侵害されたユーザーを確認する          |
 
 保留中の承認または既に完了しているかどうかに関係なく、修復アクションは [、アクション センター](m365d-action-center.md)で表示できます。
 
@@ -85,3 +85,4 @@ Microsoft 365 Defenderの自動調査中と後に、悪意のあるアイテム�
 - [アクション センターにアクセスする](m365d-action-center.md)
 - [修復アクションを表示および管理する](m365d-autoir-actions.md)
 - [false positives または false negatives に対処する](m365d-autoir-report-false-positives-negatives.md)
+- [ネットワークからデバイスを格納する](../defender-endpoint\respond-machine-alerts.md#contain-devices-from-the-network)

@@ -22,13 +22,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: 製品ライセンスの割り当てを解除する方法は、特定のユーザーから割り当て解除するのか、それとも特定の製品から割り当てを解除するのかによって異なります。
-ms.date: 04/22/2022
-ms.openlocfilehash: 23fc9ea04f45cdeb50acb0ec2d62d584974d6499
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.date: 06/23/2022
+ms.openlocfilehash: 87e62b8c39e5ba0a8f61caeea3560438a716881d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043244"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486178"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>一般法人向け Microsoft 365 のユーザーからライセンスの割り当てを解除する
 
@@ -48,7 +48,9 @@ ms.locfileid: "66043244"
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>ライセンス ページを使用して、ライセンスの割り当てを解除する
 
-[**ライセンス**] ページを使用してライセンスの割り当てを解除する場合、特定の製品ライセンスを最大 20 人のユーザーから割り当て解除します。
+[ **ライセンス]** ページでは、一度に最大 20 人のユーザーのライセンスを割り当てるか割り当てを解除できます。 ページには、所有している製品、各製品で使用可能なライセンスの数、および使用可能なライセンスの合計数から割り当てられたライセンスの数が表示されます。 ライセンスの数は、同じ製品名のすべてのサブスクリプションのライセンスの合計です。
+
+たとえば、5 つのライセンスを持つMicrosoft 365 Business Premiumのサブスクリプションと、同じ製品に対して 8 つのライセンスを持つ別のサブスクリプションがあるとします。 **[ライセンス]** ページには、すべてのサブスクリプションのMicrosoft 365 Business Premiumに対して合計 13 個のライセンスがあることを示します。 これは、[製品] ページに表示される内容とは異なり、同じ **製品** の場合でも、所有しているサブスクリプションごとに行が表示されます。
 
 ::: moniker range="o365-worldwide"
 
@@ -62,13 +64,13 @@ ms.locfileid: "66043244"
 
 ::: moniker-end
 
-2. ライセンスの割り当てを解除する製品を選択します。
+1. 製品を選択します。
 
-3. ライセンスの割り当てを解除するユーザーを選択します。
+2. ライセンスの割り当てを解除するユーザーのチェック ボックスをオンにします。
 
-4. [**ライセンスの割り当て解除**] を選択します。
+3. [**ライセンスの割り当て解除**] を選択します。
 
-5. [**ライセンスの割り当て解除**] ボックスで、[**割り当て解除**] を選択します。
+4. [**ライセンスの割り当て解除**] ボックスで、[**割り当て解除**] を選択します。
 
 ## <a name="use-the-active-users-page-to-unassign-licenses"></a>アクティブなユーザー ページを使用して、ライセンスの割り当てを解除する
 

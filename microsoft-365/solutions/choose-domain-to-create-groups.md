@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 グループを作成するときに使用するドメインを選択する
+title: Microsoft 365 グループの作成時に使用するドメインを選択する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -18,20 +18,20 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: PowerShell を使用して電子メール アドレス ポリシーを構成して、Microsoft 365 グループを作成するときに使用するドメインを選択する方法について説明します。
-ms.openlocfilehash: c6eb1bbccf8745c88941f40d6fefeed29aec5620
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bd9fad340d136fe4cac228f94f1904761cff7071
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012540"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490899"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Microsoft 365 グループを作成するときに使用するドメインを選択する
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Microsoft 365 グループの作成時に使用するドメインを選択する
 
-一部の組織では、独立した複数のメール ドメインを使用して、ビジネスのさまざまな部分をセグメント化しています。 ユーザーがMicrosoft 365 グループを作成するときに使用するドメインを指定できます。
+一部の組織では、独立した複数のメール ドメインを使用して、ビジネスのさまざまな部分をセグメント化しています。 ユーザーが Microsoft 365 グループを作成するときに使用するドメインを指定できます。
   
 ユーザーが会社の既定の承認済みドメイン以外のドメインにグループを作成する必要がある場合、PowerShell を使ってメール アドレス ポリシー (EAP) を構成することでこれを許可できます。
 
-PowerShell コマンドレットを実行する前に、組織と対話できるモジュールをダウンロードしてインストールします。 [PowerShell のExchange Onlineに関するConnect](/powershell/exchange/connect-to-exchange-online-powershell)を確認してください。
+PowerShell コマンドレットを実行する前に、組織と対話できるモジュールをダウンロードしてインストールします。 [PowerShell への接続Exchange Online確認します](/powershell/exchange/connect-to-exchange-online-powershell)。
 
 ## <a name="example-scenarios"></a>シナリオ例
 
@@ -50,7 +50,7 @@ PowerShell コマンドレットを実行する前に、組織と対話できる
   
 ### <a name="scenario-1"></a>シナリオ 1
 
-次の例では、groups.contoso.com ドメイン内の組織内のすべてのMicrosoft 365 グループをプロビジョニングする方法を示します。
+次の例では、組織内のすべての Microsoft 365 グループを groups.contoso.com ドメインにプロビジョニングする方法を示します。
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -58,7 +58,7 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>シナリオ 2
 
-たとえば、グループが作成Microsoft 365サブドメインを制御するとします。 あなたの希望です：
+たとえば、Microsoft 365 グループが作成されるサブドメインを制御するとします。 あなたの希望です：
   
 - students.groups.contoso.com ドメイン内の学生 ( **部門** が **学生** に設定されているユーザー) によって作成されたグループ。 次のコマンドを使用します。
     
@@ -77,7 +77,9 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
   ```
-
+> [!NOTE]
+> このシナリオは、MX レコードがサード パーティのスパム フィルター処理を指している場合は機能しません。
+ 
 ## <a name="change-email-address-policies"></a>メール アドレス ポリシーを変更する
 
 既存の EAP の優先順位またはメール アドレス テンプレートを変更するには、Set-EmailAddressPolicy コマンドレットを使用します。
@@ -101,7 +103,7 @@ EAP を変更しても、プロビジョニング済みのグループには影�
   
 ## <a name="hybrid-requirements"></a>ハイブリッド要件
 
-組織がハイブリッド シナリオで構成されている場合は、「[オンプレミス Exchange ハイブリッドを使用してMicrosoft 365 グループを構成](/exchange/hybrid-deployment/set-up-microsoft-365-groups)する」を参照して、組織がMicrosoft 365 グループを作成するための要件を満たしていることを確認します。 
+組織がハイブリッド シナリオで構成されている場合は、「 [オンプレミスの Exchange ハイブリッドを使用して Microsoft 365 グループを構成](/exchange/hybrid-deployment/set-up-microsoft-365-groups) する」を参照して、組織が Microsoft 365 グループを作成するための要件を満たしていることを確認してください。 
   
 ## <a name="additional-info-about-using-email-address-policies-groups"></a>電子メール アドレス ポリシー グループの使用に関する追加情報:
 
@@ -125,4 +127,4 @@ EAP を変更しても、プロビジョニング済みのグループには影�
 
 [コラボレーション ガバナンス計画を作成する](collaboration-governance-first.md) (記事)
 
-[管理センターでMicrosoft 365 グループを作成する](../admin/create-groups/create-groups.md) (記事)
+[管理センターで Microsoft 365 グループを作成する](../admin/create-groups/create-groups.md) (記事)

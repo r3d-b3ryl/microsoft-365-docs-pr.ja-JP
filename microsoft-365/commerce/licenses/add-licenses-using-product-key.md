@@ -21,14 +21,14 @@ search.appverid: MET150
 description: プロダクト キーを使用してサブスクリプションにライセンスを追加または拡張する方法について説明します。
 ROBOTS: NOINDEX
 ms.date: 06/06/2022
-ms.openlocfilehash: ff7656975b5d93d03706f26de0691a91db1858eb
-ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
+ms.openlocfilehash: bcc74eaf5031d281ef0b320df7c6bbc3a8debff2
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65925087"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492013"
 ---
-# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>プロダクト キーの使用に対して支払われたサブスクリプションにライセンスを追加または延長する
+# <a name="add-licenses-to-or-extend-a-paid-subscription-by-using-a-microsoft-365-product-key"></a>Microsoft 365 プロダクト キーを使用して有料サブスクリプションにライセンスを追加または延長する
 
 支払い済みのライセンスは、25 文字の英数字コードとして発行されます。 必要なライセンスの購入が完了すると、ライセンスをサブスクリプションに追加できます。 プロダクト キーを使用して、サブスクリプションの有効期限を延長することもできます。
 

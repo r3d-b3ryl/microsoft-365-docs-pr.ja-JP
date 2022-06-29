@@ -18,16 +18,16 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための利用可能なオプションと推奨されるオプションについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 898f04826f89e3a33c0cfcca01b717523e7c6122
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 016257a6cdc3128ba6753532bb0bed74845355d0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974215"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493089"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で安全な差出人のリストを作成する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -108,7 +108,9 @@ Exchange Online およびスタンドアロン EOP のメール フロー ルー
 > [!CAUTION]
 > この方法では、本来ならフィルター処理されるはずのメールを攻撃者が受信トレイに問題なく配信する危険性が高くなります。ただし、ユーザーの信頼できる差出人または安全なドメインの一覧は、マルウェアや信頼度の高いフィッシング メッセージがフィルター処理されるのを防ぐわけではありません。
 
-組織の設定の代わりに、ユーザーまたは管理者は、メールボックスの信頼できる差出人リストに送信者のメール アドレスを追加できます。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。 ほとんどの場合、送信者はフィルター スタックの一部をバイパスするため、これは望ましくありません。 送信者は信頼できる場合でも、送信者が侵害され、悪意のあるコンテンツを送信する可能性があります。 すべてのメッセージを確認するために必要な処理をフィルターで実行し、もしフィルターが間違っている場合は、[誤検知/否定を Microsoft に報告](report-junk-email-messages-to-microsoft.md)することをお勧めします。 フィルター スタックをバイパスすると、[ZAP](zero-hour-auto-purge.md)にも干渉します。
+組織の設定の代わりに、ユーザーまたは管理者は、メールボックスの信頼できる差出人リストに送信者のメール アドレスを追加できます。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。 ほとんどの場合、送信者はフィルター スタックの一部をバイパスするため、このメソッドは望ましくありません。 送信者は信頼できる場合でも、送信者が侵害され、悪意のあるコンテンツを送信する可能性があります。 すべてのメッセージをフィルターでチェックし、間違った場合は [誤検知/否定を Microsoft に報告](report-junk-email-messages-to-microsoft.md) する方がよい場合です。 フィルター 処理スタックをバイパスすると、 [ゼロ時間の自動消去 (ZAP)](zero-hour-auto-purge.md) も妨げられます。
+
+設計上、Exchange Onlineメールボックスのセキュリティを強化するために、安全な送信者、ブロックされた送信者、およびブロックされたドメインの迷惑メール設定のみが認識されます。 セーフ ドメインの設定は無視されます。
 
 ユーザーの信頼できる差出人リストが原因でメッセージがスパム フィルター処理をスキップする場合、**X-Forefront-Antispam-Report** ヘッダー フィールドには `SFV:SFE`があるはずです。これは、 スパム、スプーフィング、フィッシングのフィルター処理がバイパスされたことを示す値です。
 

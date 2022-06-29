@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
-ms.date: 05/20/2022
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -27,17 +26,14 @@ search.appverid:
 - MET150
 ms.assetid: aad21b1a-c775-469a-b89c-c5d1d59d27db
 description: Microsoft 365 Business Premium の保護機能を Intune の設定に対応付ける方法について説明します。 サブスクリプションでは、Intune の設定を変更するためのライセンスが提供されます。
-ms.openlocfilehash: e7a2909d158a550575c487e65e03e0f004e28a66
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: cdfd607745326d1d5a95a9e61b3134fb939bcacb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622430"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489576"
 ---
 # <a name="how-do-protection-features-in-microsoft-365-business-premium-map-to-intune-settings"></a>Microsoft 365 Business Premium の保護機能を Intune の設定に対応付ける方法
-
-> [!NOTE]
-> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
 
 ## <a name="android-and-ios-application-protection-settings"></a>Android および iOS アプリケーションの保護の設定
 
@@ -79,8 +75,7 @@ Intune 設定を見つけるには、Microsoft 365 Business Premium 管理者資
 To find the Intune setting, sign in with your Microsoft 365 Business Premium admin credentials, and go to [Azure portal](https://portal.azure.com). Select **More services**, and type Intune into the **Filter**. Select **Intune App Protection** \> **App Policy**.
   
  > [!IMPORTANT]
- >
- >Microsoft 365 Business Premium サブスクリプションで提供されるライセンスでは、Microsoft 365 Business Premium で使用可能な設定に対応する Intune の設定のみを変更できます。 
+ > Microsoft 365 Business Premium サブスクリプションで提供されるライセンスでは、Microsoft 365 Business Premium で使用可能な設定に対応する Intune の設定のみを変更できます。 
   
 使用可能な設定を調べるには、ポリシー名を選択し、左側のナビゲーション ウィンドウで **[全般]、[割り当て]**、**[許可されるアプリ]**、**[適用から除外されるアプリ]**、**[必須の設定]**、または **[詳細設定]** を選択します。 
   

@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用することです。 ただし、[アップグレード] タブは常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: 4578730d82fddd5bdd3d0d25dd7fd1e16414808b
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102260"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489148"
 ---
-# <a name="upgrade-to-a-different-plan"></a>別のプランにアップグレードする
+# <a name="upgrade-to-a-different-microsoft-plan"></a>別の Microsoft プランにアップグレードする
 
 業務の内容が変化したり、機能がさらに必要な場合は、プランをアップグレードできます。 これを行う最も簡単な方法は、管理センターの [**アップグレード**] タブを使用することです。 ただし、[**アップグレード**] タブは常に使用できるとは限りません。 一部の状況では、手動でプランを変更できる場合があります。
 
@@ -36,7 +36,7 @@ ms.locfileid: "66102260"
 
 [**アップグレード**] タブを使用すると、新しいプランを購入するプロセスが開始されます。すべてのユーザーには、新しいプランのライセンスが自動的に割り当てられ、元のプランがキャンセルされます。
 
-1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページに移動します。
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. アップグレードするサブスクリプションを選択します。
 3. [サブスクリプションの詳細] ページの [ **製品の詳細とアップグレード**] で、[ **組織に推奨されるアップグレードの表示**] を選択します。
 4. アップグレードする計画を見つけ、[**アップグレード**] ボタンを選択します。

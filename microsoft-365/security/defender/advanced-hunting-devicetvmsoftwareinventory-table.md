@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの DeviceTvmSoftwareInventory テーブル
 description: 高度なハンティング スキーマの DeviceTvmSoftwareInventory テーブルで、デバイス内のソフトウェアのインベントリについて説明します。
-keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, データ型, 説明, 脅威& 脆弱性の管理, TVM, デバイス管理, ソフトウェア, インベントリ, 脆弱性, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, 脅威&脆弱性管理, TVM, デバイス管理, ソフトウェア, インベントリ, 脆弱性, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a9a17c6e336704cfe09e1c864e9700a4492e8c87
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cecbf2078bff0143a5c14b8b0cffb636d4fa3454
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328023"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490799"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -58,7 +58,7 @@ ms.locfileid: "63328023"
 | `EndOfSupportStatus` | `string` | 指定されたサポート終了日 (EOS) または有効期限 (EOL) の日付に対するソフトウェア製品のライフサイクル ステージを示します。 |
 | `EndOfSupportDate` | `string` | ソフトウェア製品のサポート終了日 (EOS) または EOL (EOL) の日付 |
 | `ProductCodeCpe` | `string` | ソフトウェア製品の CPE、または CPE がない場合は "利用できない" |
-
+| `CveTags` | `string` | CVE に関連するタグの配列。 現在サポートされているタグは、"ZeroDay" と "NoSecurityUpdate" です。
 
 ## <a name="related-topics"></a>関連項目
 

@@ -16,19 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e7d0e5927a85f2f3952221c294fe2387c268546
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5d3d81f878e201cd00e7286bd045caa5fb3e1625
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300168"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486797"
 ---
 # <a name="api-explorer"></a>API エクスプローラー
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
-- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 Microsoft Defender for Endpoint API エクスプローラーは、さまざまな Defender for Endpoint API を対話的に探索するのに役立つツールです。
@@ -41,13 +40,13 @@ API エクスプローラーを使用すると、使用可能なすべての Def
 
 API エクスプローラーを使用すると、次のことができます。
 
-- 任意のメソッドの要求を実行し、リアルタイムで応答を確認する
-- API サンプルをすばやく参照し、サポートするパラメーターを確認する
-- API 呼び出しを簡単に行います。管理ポータルのサインインを超えて認証する必要はありません
+- 任意のメソッドの要求を実行し、応答をリアルタイムで確認します。
+- API サンプルをすばやく参照し、サポートするパラメーターを確認します。
+- API 呼び出しを簡単に行います。管理ポータルのサインインを超えて認証する必要はありません。
 
 ## <a name="access-api-explorer"></a>Access API Explorer
 
-左側のナビゲーション メニューから、[ **パートナー& API** \> **API エクスプローラー**] を選択します。
+左側のナビゲーション メニューから、[ **パートナー& API** \> **[API エクスプローラー](https://security.microsoft.com/interoperability/api-explorer)**] を選択します。
 
 ## <a name="supported-apis"></a>サポートされている API
 
@@ -55,7 +54,7 @@ API Explorer では、Defender for Endpoint によって提供されるすべて
 
 サポートされている API の一覧は、 [API ドキュメント](apis-intro.md)で入手できます。
 
-## <a name="get-started-with-the-api-explorer"></a>API エクスプローラーでの概要
+## <a name="get-started-with-the-api-explorer"></a>API エクスプローラーの使用を開始する
 
 1. 左側のウィンドウには、使用できるサンプル要求の一覧があります。
 2. リンクに従って、[ **クエリの実行**] をクリックします。

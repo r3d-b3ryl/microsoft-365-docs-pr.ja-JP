@@ -13,14 +13,14 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 で攻撃シミュレーション トレーニングのペイロードを作成および管理する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: a21e3e72e435e9aaa53fb5fab825be6c490017fe
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840235"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487226"
 ---
-# <a name="payloads-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングのペイロード
+# <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングのペイロード
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "65840235"
 - **言語**: ペイロードに複数の翻訳が含まれている場合は、最初の 2 つの言語が直接表示されます。 残りの言語を表示するには、数値アイコン ( **+10** など) にマウス ポインターを合わせます。
 - **ソース**: 組み込みのペイロードの場合、値は **グローバルです**。 カスタム ペイロードの場合、値は **テナントです**。
 - **起動されたシミュレーション**: ペイロードを使用する起動されたシミュレーションの数。
-- **侵害率 (%)**: 組み込みのペイロードの場合、この値は、他のすべてのMicrosoft 365組織で同じ種類のペイロードを使用する攻撃シミュレーション トレーニング シミュレーションの平均侵害率を予測します。
+- **侵害率 (%)**: 組み込みのペイロードの場合、この値は、他のすべての Microsoft 365 組織で同じ種類のペイロードを使用する攻撃シミュレーション トレーニング シミュレーションの平均侵害率を予測します。
 - **作成者**: 組み込みのペイロードの場合、値は **Microsoft です**。 カスタム ペイロードの場合、値はペイロードを作成したユーザーの UPN です。
 - **最終更新日時**
 - **手法**: 使用可能な [ソーシャル エンジニアリング手法](attack-simulation-training.md#select-a-social-engineering-technique)の 1 つ:
@@ -178,7 +178,7 @@ ms.locfileid: "65840235"
      - <https://www.windocyte.com>
 
      > [!NOTE]
-     > URL 評価サービスでは、これらの URL の 1 つ以上が安全でないと識別される場合があります。 シミュレーションで URL を使用する前に、サポートされている Web ブラウザーで URL の可用性を確認してください。 詳細については、「[Google セーフブラウズによってブロックされたフィッシング シミュレーション URL」を参照](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing)してください。
+     > URL 評価サービスでは、これらの URL の 1 つ以上が安全でないと識別される場合があります。 シミュレーションで URL を使用する前に、サポートされている Web ブラウザーで URL の可用性を確認してください。 詳細については、「 [Google Safe Browsing によってブロックされたフィッシング シミュレーション URL」を参照](attack-simulation-training-faq.md#phishing-simulation-urls-blocked-by-google-safe-browsing)してください。
 
    - **[添付ファイルコンテンツ**] セクション: このセクションは、[**技術の選択**] ページ **で [添付ファイルのリンク**] を選択した場合にのみ使用できます。
 
@@ -190,9 +190,9 @@ ms.locfileid: "65840235"
 
      - **タグを追加する**
   
-     - **テーマ**: 使用可能な値は、**アカウントのアクティブ化**、**アカウントの確認**、**課金**、**メールのクリーンアップ**、**受信したドキュメント**、**経費**、**FAX**、**財務レポート**、**受信メッセージ**、**請求書**、**受信したアイテム**、**ログイン アラート**、**受信したメール**、**その他**、**パスワード**、**支払い**、**給与**、**個人用プラン**、**検疫** です。、**リモート作業**、**メッセージの確認**、**セキュリティ更新プログラム**、**サービスの中断**、**署名が必要**、**メールボックスのStorageのアップグレード**、メールボックス **の****確認**、ボイスメール。
+     - **テーマ**: 使用可能な値は、 **アカウントのアクティブ化**、 **アカウントの確認**、 **課金**、 **メールのクリーンアップ**、 **受信したドキュメント**、 **経費**、 **FAX**、 **財務レポート**、 **受信メッセージ**、 **請求書**、 **受信したアイテム**、 **ログイン アラート**、 **受信したメール**、 **その他**、 **パスワード**、 **支払い**、 **給与**、 **個人用プラン**、 **検疫** です。、 **リモート作業**、 **メッセージの確認**、 **セキュリティ更新プログラム**、 **サービスの中断**、 **署名が必要**、 **メールボックスストレージのアップグレード**、 **メールボックスの確認**、 **ボイスメール**。
   
-     - **ブランド**: 使用可能な値は、**American Express**、**Capital One**、**DHL**、**DocuSign**、**Dropbox**、**Facebook**、**First American**、**Microsoft**、**Netflix**、**スコシアバンク**、**SendGrid**、**スチュワート タイトル**、**テスコ**、**ウェルズ ファーゴ**、**Syrinx Cloud**、またはその **他** です。
+     - **ブランド**: 使用可能な値は、 **American Express**、 **Capital One**、 **DHL**、 **DocuSign**、 **Dropbox**、 **Facebook**、 **First American**、 **Microsoft**、 **Netflix**、 **スコシアバンク**、 **SendGrid**、 **スチュアート タイトル**、 **テスコ**、 **ウェルズ ファーゴ**、 **Syrinx Cloud**、またはその **他** です。
   
      - **業界**: 利用可能な値は、 **銀行**、 **ビジネス サービス**、 **コンシューマー サービス**、 **教育**、 **エネルギー**、 **建設**、 **コンサルティング**、 **金融サービス**、 **政府**、 **接待**、 **保険**、 **法的**、 **配送業者サービス**、 **IT**、 **医療**、 **製造**、 **小売**、 **通信**、 **不動産**、または **その他**。
 

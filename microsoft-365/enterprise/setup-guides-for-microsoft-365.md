@@ -21,19 +21,19 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: テナントのライセンスで機能を計画、移行、実装するためのステップ バイ ステップ ツールを入手します。 サービスまたは実行する必要があるアプリを設定するためのガイドを見つけます。
-ms.openlocfilehash: 832c551c9f42082d4c55c8a7902a740ef124012d
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: f1d16517d92e059fc6ca2646fc64ae7ba63ce3a8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078548"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491659"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Microsoft 365 および Office 365 サービスのセットアップ ガイド
 
-Microsoft 365およびOffice 365セットアップ ガイドを使用すると、テナント、アプリ、サービスを計画およびデプロイするためのカスタマイズされたガイダンスとリソースが提供されます。 これらのガイドは、オンボードスペシャリストが個々の対話で共有するのと同じベスト プラクティス[Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)使用して作成され、Microsoft 365 管理センター内のすべての管理者が利用できます。 製品のセットアップ、セキュリティ機能の有効化、コラボレーション ツールのデプロイに関する情報を提供し、高度なデプロイを高速化するためのスクリプトを提供します。
+Microsoft 365 および Office 365 セットアップ ガイドでは、テナント、アプリ、サービスの計画とデプロイに関するカスタマイズされたガイダンスとリソースを提供します。 これらのガイドは、[Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) オンボードスペシャリストが個々の対話で共有するのと同じベスト プラクティスを使用して作成され、Microsoft 365 管理センター内のすべての管理者が利用できます。 製品のセットアップ、セキュリティ機能の有効化、コラボレーション ツールのデプロイに関する情報を提供し、高度なデプロイを高速化するためのスクリプトを提供します。
 
 > [!NOTE]
-> Microsoft 365セットアップ ガイドにアクセスするには、グローバル リーダーなどの管理者ロールを割り当てる必要があります。 このガイドを使用してテナントの設定を変更できるのは、グローバル管理者ロールを持つ管理者のみです。
+> Microsoft 365 セットアップ ガイドにアクセスするには、グローバル リーダーなどの管理者ロールを割り当てる必要があります。 このガイドを使用してテナントの設定を変更できるのは、グローバル管理者ロールを持つ管理者のみです。
 
 ## <a name="how-to-access-setup-guides-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターのセットアップ ガイドにアクセスする方法
 
@@ -53,7 +53,7 @@ Microsoft 365およびOffice 365セットアップ ガイドを使用すると�
 
 ### <a name="prepare-your-environment"></a>環境を準備する
 
-[環境の準備](https://aka.ms/prepareyourenvironment)ガイドは、Microsoft 365サービスとOffice 365 サービス用に組織の環境を準備するのに役立ちます。 目標が何であれ、デプロイを成功させるために完了する必要があるタスクがあります。 環境の準備中にエラーが発生しないようにするために、ドメインの接続、ユーザーの追加、ライセンスの割り当て、Exchange Onlineを使用した電子メールの設定、Office アプリのインストールまたは展開に関する詳細な手順が示されています。
+[環境の準備](https://aka.ms/prepareyourenvironment)ガイドは、Microsoft 365 および Office 365 サービス用に組織の環境を準備するのに役立ちます。 目標が何であれ、デプロイを成功させるために完了する必要があるタスクがあります。 環境の準備中にエラーが発生しないようにするために、ドメインの接続、ユーザーの追加、ライセンスの割り当て、Exchange Onlineを使用したメールの設定、Office アプリのインストールまたは展開に関する詳細な手順が提供されます。
 
 ### <a name="email-setup-guide"></a>電子メール セットアップ ガイド
 
@@ -61,53 +61,57 @@ Microsoft 365およびOffice 365セットアップ ガイドを使用すると�
 
 ### <a name="migrate-gmail-contacts-and-calendar-items"></a>Gmail の連絡先と予定表アイテムを移行する
 
-Gmail ユーザーのメールボックスをMicrosoft 365に移行すると、メール メッセージは移行されますが、連絡先や予定表アイテムは移行されません。 [Gmail の連絡先と予定表アドバイザー](https://aka.ms/gmailcontactscalendar)は、Outlook.com、Outlook クライアント、または PowerShell でインポートおよびエクスポート方法を使用して、Google 連絡先と Google 予定表アイテムをMicrosoft 365にインポートする手順を提供します。
+Gmail ユーザーのメールボックスを Microsoft 365 に移行すると、メール メッセージは移行されますが、連絡先や予定表アイテムは移行されません。 [Gmail の連絡先と予定表アドバイザー](https://aka.ms/gmailcontactscalendar)は、Outlook.com、Outlook クライアント、または PowerShell を使用してインポートおよびエクスポートする方法を使用して、Google 連絡先と Google 予定表アイテムを Microsoft 365 にインポートする手順を提供します。
 
 ### <a name="microsoft-365-setup-guide"></a>Microsoft 365 セットアップ ガイド
 
-[Microsoft 365セットアップ ガイド](https://aka.ms/microsoft365setupguide)では、生産性ツール、セキュリティ ポリシー、およびデバイス管理機能を設定する際のガイダンスを提供します。 Microsoft 365 Business Premium またはエンタープライズ サブスクリプション版 Microsoft 365 があれば、このアドバイザーを使用して組織のデバイスをセットアップし、構成できます。
+[Microsoft 365 セットアップ ガイド](https://aka.ms/microsoft365setupguide)では、生産性ツール、セキュリティ ポリシー、およびデバイス管理機能を設定する際のガイダンスを提供します。 Microsoft 365 Business Premium またはエンタープライズ サブスクリプション版 Microsoft 365 があれば、このアドバイザーを使用して組織のデバイスをセットアップし、構成できます。
 
-クラウド サービスを有効にしたり、サポートされている最新バージョンのWindows 10にデバイスを更新したり、デバイスを 1 か所で Azure Active Directory (Azure AD) に参加したりするためのガイダンスとリソースへのアクセスを受け取ります。
+クラウド サービスを有効にしたり、サポートされている最新バージョンのWindows 10にデバイスを更新したり、デバイスを Azure Active Directory (Azure AD) に参加したりするためのガイダンスとリソースへのアクセスを 1 か所で受け取ります。
 
 ### <a name="remote-work-setup-guide"></a>リモート ワーク セットアップ ガイド
 
 [リモート作業セットアップ ガイド](https://aka.ms/remoteworksetup)では、ユーザーがリモートで正常に動作し、データがセキュリティで保護され、ユーザーの資格情報が保護されるようにするために必要なヒントとリソースが組織に提供されます。
 
-クラウド内のMicrosoft 365 リソースと組織のネットワークの両方に対するリモート ワーカーのデバイス トラフィックを最適化するためのガイダンスを受け取ります。これにより、リモート アクセス VPN インフラストラクチャの負担が軽減されます。
+クラウド内の Microsoft 365 リソースと組織のネットワークの両方に対するリモート ワーカーのデバイス トラフィックを最適化するためのガイダンスを受け取ります。これにより、リモート アクセス VPN インフラストラクチャの負担が軽減されます。
 
-### <a name="microsoft-edge-setup-guide"></a>Microsoft Edgeセットアップ ガイド
+### <a name="microsoft-edge-setup-guide"></a>Microsoft Edge セットアップ ガイド
 
-Microsoft Edgeは、世界レベルの互換性とパフォーマンス、お客様に適したセキュリティとプライバシー、および Web のベストを実現するように設計された新機能を実現するために、ゼロから再構築されています。
+Microsoft Edge は、世界クラスの互換性とパフォーマンス、お客様に適したセキュリティとプライバシー、Web の最高の機能を提供するように設計された新機能を実現するために、ゼロから再構築されています。
 
-[Microsoft Edgeセットアップ ガイド](https://aka.ms/edgeadvisoradmin)を使用すると、組織でアクセスされるサイトEnterpriseを構成して、IE モードを使用し、重要なセキュリティ機能の確認と構成、組織の要件を満たすプライバシー ポリシーとコンプライアンス ポリシーの構成、デバイスでの Web アクセスの管理を行う必要があるサイト探索を構成できます。 Microsoft Edgeを個々のデバイスにダウンロードすることも、グループ ポリシー、Configuration Manager、またはMicrosoft Intuneを使用して組織内の複数のユーザーに展開する方法について説明します。
+[Microsoft Edge セットアップ ガイド](https://aka.ms/edgeadvisoradmin)は、組織でアクセスされるサイトを構成して、IE モードの使用、重要なセキュリティ機能の確認と構成、組織の要件を満たすプライバシー ポリシーとコンプライアンス ポリシーの構成、およびデバイスでの Web アクセスの管理が必要になる可能性があるサイトを確認するのに役立ちます。 Microsoft Edge を個々のデバイスにダウンロードすることも、グループ ポリシー、Configuration Manager、またはMicrosoft Intuneを使用して組織内の複数のユーザーに展開する方法について説明します。
 
-### <a name="configure-ie-mode-for-microsoft-edge"></a>Microsoft Edgeの IE モードを構成する
+### <a name="configure-ie-mode-for-microsoft-edge"></a>Microsoft Edge の IE モードを構成する
 
-Microsoft Edgeを既に展開していて、IE モードのみを構成する場合は、「[Microsoft Edge用の IE モードを構成する」ガイド](https://aka.ms/configureiemodeadmin)では、Enterprise サイト検出の構成を自動化するためのスクリプトが提供されます。 また、ユーザーに展開するEnterprise モード サイト一覧を作成するのに役立つ、クラウドベースのツールから IE モードの推奨事項も取得します。
+Microsoft Edge を既に展開していて、IE モードのみを構成する場合は、 [Microsoft Edge 用の IE モードの構成ガイド](https://aka.ms/configureiemodeadmin) に、Enterprise Site Discovery の構成を自動化するためのスクリプトが用意されています。 また、ユーザーに展開するエンタープライズ モードサイトリストを作成するのに役立つ、クラウドベースのツールから IE モードの推奨事項も取得します。
 
 ### <a name="microsoft-search-setup-guide"></a>Microsoft Search セットアップ ガイド
 
-Microsoft Searchは、組織が作業している作業を完了するために必要なものを見つけるのに役立ちます。 ユーザー、ファイル、組織図、サイト、または一般的な質問に対する回答を検索する場合でも、組織はMicrosoft Searchを使用して回答を得ることができます。
+Microsoft Search を使用すると、組織が作業内容を完了するために必要なものを見つけることができます。 ユーザー、ファイル、組織図、サイト、または一般的な質問に対する回答を検索する場合でも、組織は職場全体で Microsoft Search を使用して回答を得ることができます。
 
-[Microsoft Searchセットアップ ガイド](https://aka.ms/MicrosoftSearchSetup)は、ユーザーのグループにパイロットを適用するか、組織内のすべてのユーザーにロールアウトするかをMicrosoft Search構成するのに役立ちます。検索管理者と検索エディターを割り当て、回答やその他のオプションを使用してユーザーの検索エクスペリエンスをカスタマイズします。たとえば、Chrome にBing拡張機能を追加したり、既定の検索エンジンとしてBingを設定したりします。
+[Microsoft Search セットアップ ガイド](https://aka.ms/MicrosoftSearchSetup)は、Microsoft Search をユーザーのグループにパイロットするか、組織内のすべてのユーザーにロールアウトするかを構成するのに役立ちます。検索管理者と検索エディターを割り当て、回答やその他のオプションを使用してユーザーの検索エクスペリエンスをカスタマイズします。たとえば、Chrome にBing拡張機能を追加したり、既定の検索エンジンとしてBingを設定したりします。
+
+### <a name="block-use-of-internet-explorer-in-your-organization"></a>組織内の Internet Explorer の使用をブロックする
+
+Internet Explorer 11 の Microsoft サポートは、ほとんどのバージョンのWindows 10で間もなく終了します。 [組織ガイドの Internet Explorer の使用をブロック](https://aka.ms/retireinternetexplorer)すると、ユーザーは Internet Explorer に依存する従来の Web アプリを引き続き実行できます。 このガイドは、これらのユーザーを IE モードで Microsoft Edge に移動するのにも役立ちます。
 
 ## <a name="guides-for-authentication-and-access"></a>認証とアクセスのガイド
 
 ### <a name="configure-multi-factor-authentication-mfa"></a>多要素認証 (MFA) を構成する
 
-[多要素認証の構成 (MFA) ガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess)では、資格情報の紛失や盗難による侵害から組織を保護するための情報を提供します。 MFA は、ユーザーがアプリまたは他の会社のリソースにサインインするときにユーザーの ID を証明するために、複数の形式の検証を求めることで、アカウントのセキュリティを直ちに強化します。 このプロンプトは、ユーザーのモバイル デバイスにコードを入力するか、フィンガープリント スキャンを提供することです。 MFA は、条件付きアクセス、セキュリティの既定値、またはユーザーごとの MFA によって有効になります。 このガイドでは、ライセンスと既存の構成に基づいて、組織に推奨される MFA オプションを提供します。
+[多要素認証の構成 (MFA) ガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/security/ConditionalAccess)では、資格情報の紛失や盗難による侵害から組織を保護するための情報を提供します。 MFA は、ユーザーがアプリまたは他の会社のリソースにサインインするときにユーザーの ID を証明するために、複数の形式の検証を求めることで、アカウントのセキュリティを直ちに強化します。 このプロンプトは、ユーザーのモバイル デバイスにコードを入力するか、指紋スキャンを提供することです。 MFA は、条件付きアクセス、セキュリティの既定値、またはユーザーごとの MFA によって有効になります。 このガイドでは、ライセンスと既存の構成に基づいて、組織に推奨される MFA オプションを提供します。
 
-### <a name="identity-security-for-teams"></a>Teamsの ID セキュリティ
+### <a name="identity-security-for-teams"></a>Teams の ID セキュリティ
 
 [チームの ID セキュリティ ガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/teamsidentity)は、ユーザーが安全で、**Teams** を使用して最も生産性の高い時間を過ごすために実行できるいくつかの基本的なセキュリティ手順に役立ちます。
 
-### <a name="add-or-sync-users-to-microsoft-365"></a>Microsoft 365にユーザーを追加または同期する
+### <a name="add-or-sync-users-to-microsoft-365"></a>Microsoft 365 にユーザーを追加または同期する
 
-[このガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard)は、**Microsoft 365** でユーザー アカウントを設定するプロセスを効率化するのに役立ちます。 環境とニーズに基づいて、ユーザーを個別に追加するか、Azure AD クラウド同期または Azure AD Connectを使用してオンプレミス ディレクトリを移行するか、必要に応じて既存の同期の問題をトラブルシューティングするかを選択できます。
+[このガイド](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/modernonboarding/identitywizard) は、 **Microsoft 365** でユーザー アカウントを設定するプロセスを効率化するのに役立ちます。 環境とニーズに基づいて、ユーザーを個別に追加するか、Azure AD クラウド同期または Azure AD Connect を使用してオンプレミス ディレクトリを移行するか、必要に応じて既存の同期の問題のトラブルシューティングを行うかを選択できます。
 
 ### <a name="azure-ad-setup-guide"></a>Azure AD セットアップ ガイド
 
-[Azure AD セットアップ ガイド](https://aka.ms/aadpguidance)には、組織の強固なセキュリティ基盤を確保するための情報が記載されています。 このガイドでは、管理者向けの Azure ロールベースのアクセス制御 (Azure RBAC)、オンプレミス ディレクトリの Azure AD Connect、Azure AD Connect Health などの初期機能を設定して、自動同期中にハイブリッド ID の正常性を監視できるようにします。
+[Azure AD セットアップ ガイド](https://aka.ms/aadpguidance)には、組織の強固なセキュリティ基盤を確保するための情報が記載されています。 このガイドでは、管理者向けの Azure ロールベースのアクセス制御 (Azure RBAC)、オンプレミス ディレクトリ用の Azure AD Connect、Azure AD Connect Health などの初期機能を設定して、自動同期中にハイブリッド ID の正常性を監視できるようにします。
 
 また、オプションの高度な ID 保護とユーザー プロビジョニングの自動化を含む、セルフサービス パスワード リセット、条件付きアクセス、統合されたサード パーティのサインオンを有効にするための重要な情報も含まれています。
 
@@ -191,41 +195,49 @@ Microsoft Exchange Online Protection (EOP) は、スパムやマルウェアか�
 
 ### <a name="microsoft-defender-for-cloud-apps-setup-guide"></a>Microsoft Defender for Cloud Appsセットアップ ガイド
 
-[Microsoft Defender for Cloud Appsセットアップ ガイド](https://aka.ms/cloudappsecuritysetup)では、デプロイと管理のガイダンスに従って Cloud Discovery ソリューションを簡単に設定できます。 Cloud Discovery を使用すると、サポートされているセキュリティ アプリを統合し、トラフィック ログを使用して、組織が使用するクラウド アプリを動的に検出して分析します。 また、リスクの高い使用を特定するための脅威検出ポリシー、アクセスを定義するための情報保護ポリシー、アクティビティを監視するためのリアルタイムセッション制御など、Defender for Cloud Apps ソリューションを通じて利用できる機能も設定します。 これらの機能により、環境は可視性の強化、データ移動の制御、分析を行い、Microsoft およびサード パーティのすべてのクラウド サービス全体のサイバー脅威を特定して対処します。
+[Microsoft Defender for Cloud Appsセットアップ ガイド](https://aka.ms/cloudappsecuritysetup)では、デプロイと管理のガイダンスに従って Cloud Discovery ソリューションを簡単に設定できます。 Cloud Discovery を使用すると、サポートされているセキュリティ アプリを統合し、トラフィック ログを使用して、組織が使用するクラウド アプリを動的に検出して分析します。 また、Defender for Cloud Apps ソリューションを通じて利用できる機能も設定します。これには、リスクの高い使用を識別するための脅威検出ポリシー、アクセスを定義するための情報保護ポリシー、アクティビティを監視するためのリアルタイムセッション制御などがあります。 これらの機能により、環境は可視性の強化、データ移動の制御、分析を行い、Microsoft およびサード パーティのすべてのクラウド サービス全体のサイバー脅威を特定して対処します。
+
+### <a name="audit-solutions-setup-guide"></a>監査ソリューションのセットアップ ガイド
+
+[Microsoft 365 監査ソリューション ガイド](https://aka.ms/auditsolutionsetup)には、組織がセキュリティ イベント、フォレンジック調査、コンプライアンスの義務に効果的に対応するのに役立つ統合ソリューションが用意されています。 Microsoft 365 で監査ソリューションを使用すると、さまざまな Microsoft 365 サービスで実行されるアクティビティを監査ログで検索できます。
+
+### <a name="ediscovery-solutions-setup-guide"></a>電子情報開示ソリューションのセットアップ ガイド
+
+電子情報開示とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 電子情報開示ソリューションのセットアップ ガイドは、Exchange Online、OneDrive for Business、SharePoint Online、Microsoft Teams、Microsoft 365 グループ、Yammer コミュニティでコンテンツを検索できる Microsoft Purview の電子情報開示ツールの使用に役立ちます。
 
 ## <a name="guides-for-collaboration"></a>コラボレーションのガイド
 
 ### <a name="build-your-employee-experience"></a>従業員エクスペリエンスを構築する
 
-従業員 [エクスペリエンス ダッシュボード](https://aka.ms/EmployeeExperienceDashboard)と従業員の連携方法を変革します。 シームレスなチームワークを実現するには、Microsoft 365を使用して生産性の高い一致したチームを作成し、従業員がリーダーシップと組織の他の部分と関わりを持ち続けます。 従業員がすべての作業アクティビティで有効になるのを支援します。 これらのガイドでは、SharePoint、Teams、Yammerを使用して組織全体でコラボレーションを構築し、生産性を向上させる方法について説明します。
+従業員 [エクスペリエンス ダッシュボード](https://aka.ms/EmployeeExperienceDashboard)と従業員の連携方法を変革します。 シームレスなチームワークを実現するには、Microsoft 365 を使用して生産性の高い一致したチームを作成し、従業員がリーダーシップと組織の残りの部分に関与し続けます。 従業員がすべての作業アクティビティで有効になるのを支援します。 これらのガイドでは、SharePoint、Teams、Yammer を使用して組織全体でコラボレーションを構築し、生産性を向上させる方法について説明します。
 
 ### <a name="microsoft-365-apps-setup-guide"></a>Microsoft 365 Appsセットアップ ガイド
 
-[Microsoft 365 Appsセットアップ ガイド](https://aka.ms/OPPquickstartguide)は、Word、Excel、PowerPoint、OneNoteなどの最新バージョンのOffice製品をユーザーのデバイスで実行するのに役立ちます。 管理ツールを使用したエンタープライズ展開への簡単な自己インストール オプションを含む、さまざまな展開方法に関するガイダンスを提供します。 この手順ではユーザーの環境評価、特定の展開要件の把握、必要なサポート ツールの実装を行うことができ、インストールを正常に完了できます。
+[Microsoft 365 Appsセットアップ ガイド](https://aka.ms/OPPquickstartguide)は、Word、Excel、PowerPoint、OneNote などの最新バージョンの Office 製品をユーザーのデバイスで実行するのに役立ちます。 管理ツールを使用したエンタープライズ展開への簡単な自己インストール オプションを含む、さまざまな展開方法に関するガイダンスを提供します。 この手順ではユーザーの環境評価、特定の展開要件の把握、必要なサポート ツールの実装を行うことができ、インストールを正常に完了できます。
 
 ### <a name="mobile-apps-setup-guide"></a>モバイル アプリのセットアップ ガイド
 
-[モバイル アプリのセットアップ ガイド](https://aka.ms/officeappguidance)では、Windows、iOS、およびモバイル デバイスへのOffice アプリのダウンロードとインストールAndroid手順について説明します。 このガイドでは、Microsoft 365アプリとOffice 365 アプリをスマートフォンおよびTablet PC デバイスにダウンロードしてインストールするための詳細な情報を提供します。
+[モバイル アプリのセットアップ ガイド](https://aka.ms/officeappguidance)では、Windows、iOS、Android モバイル デバイスに Office アプリをダウンロードしてインストールする手順について説明します。 このガイドでは、Microsoft 365 とOffice 365 アプリをスマートフォンおよびタブレット デバイスにダウンロードしてインストールするための詳細な情報を提供します。
 
-### <a name="microsoft-teams-setup-guide"></a>Microsoft Teamsセットアップ ガイド
+### <a name="microsoft-teams-setup-guide"></a>Microsoft Teams セットアップ ガイド
 
-[Microsoft Teamsセットアップ ガイド](https://aka.ms/teamsguidance)では、チームとプライベートの両方のコミュニケーションのために、メッセージング、通話、音声またはビデオ会議を通じてリアルタイムの会話をホストするチーム ワークスペースを設定するためのガイダンスを組織に提供します。 このガイドのツールを使用して、PowerShell セッションを開く必要なく、ゲスト アクセスを構成したり、チームを作成できるユーザーを設定したり、.csv ファイルからチーム メンバーを追加したりできます。 また、組織のネットワーク要件を決定し、Teams展開を成功させるためのベスト プラクティスも得られます。
+[Microsoft Teams セットアップ ガイド](https://aka.ms/teamsguidance)では、チームとプライベートの両方の通信に関するメッセージング、通話、音声またはビデオ会議を通じてリアルタイムの会話をホストするチーム ワークスペースを設定するためのガイダンスを組織に提供します。 このガイドのツールを使用して、PowerShell セッションを開く必要なく、ゲスト アクセスを構成したり、チームを作成できるユーザーを設定したり、.csv ファイルからチーム メンバーを追加したりできます。 また、組織のネットワーク要件を決定し、Teams の展開を成功させるためのベスト プラクティスも得られます。
 
-### <a name="teams-phone-setup-guide"></a>Teams 電話セットアップ ガイド
+### <a name="teams-phone-setup-guide"></a>Teams Phone セットアップ ガイド
 
-[Teams 電話セットアップ ガイド](https://aka.ms/teamsphonesetupguide)は、最新の通話ソリューションの使用に常に接続するのに役立ちます。 Teamsのテレフォニー ワークロードをサポートするクラウドベースの呼び出し制御システムを使用して、主要な機能を適用します。 使用可能な公衆交換電話網 (PSTN) 接続オプションから機能を選択して展開できます。 自動応答、通話キュー、電話会議、発信者番号、ライブ イベントなど、他の機能のサポートも提供されています。
+[Teams Phone セットアップ ガイド](https://aka.ms/teamsphonesetupguide)は、最新の通話ソリューションを使用して接続を維持するのに役立ちます。 Teams のテレフォニー ワークロードをサポートするクラウドベースの呼び出し制御システムを使用して、主要な機能を適用します。 使用可能な公衆交換電話網 (PSTN) 接続オプションから機能を選択して展開できます。 自動応答、通話キュー、電話会議、発信者番号、ライブ イベントなど、その他の機能に関するサポートも提供されています。
 
-### <a name="sharepoint-setup-guide"></a>SharePointセットアップ ガイド
+### <a name="sharepoint-setup-guide"></a>SharePoint セットアップ ガイド
 
-[SharePoint セットアップ ガイド](https://aka.ms/spoguidance)を使用して、SharePoint ドキュメント ストレージとコンテンツ管理のセットアップ、サイトの作成、外部共有の構成、データの移行と詳細設定の構成、および組織内でのユーザー エンゲージメントとコミュニケーションを促進することができます。 コンテンツ共有アクセス許可ポリシーを構成し、移行同期ツールを選択し、SharePoint環境のセキュリティ設定を有効にする手順に従います。
+[SharePoint セットアップ ガイド](https://aka.ms/spoguidance)を使用して、SharePoint ドキュメント ストレージとコンテンツ管理のセットアップ、サイトの作成、外部共有の構成、データの移行と詳細設定の構成、および組織内でのユーザー エンゲージメントとコミュニケーションを促進することができます。 コンテンツ共有アクセス許可ポリシーを構成し、移行同期ツールを選択し、SharePoint 環境のセキュリティ設定を有効にする手順に従います。
 
-### <a name="onedrive-setup-guide"></a>OneDriveセットアップ ガイド
+### <a name="onedrive-setup-guide"></a>OneDrive セットアップ ガイド
 
-[OneDriveセットアップ ガイド](https://aka.ms/ODfBquickstartguide)を使用して、OneDriveファイル ストレージ、共有、コラボレーション、および同期機能を開始します。 OneDriveは、ユーザーがMicrosoft 365 Apps ファイルを同期し、外部共有を構成し、ユーザー データを移行し、高度なセキュリティとデバイス アクセス設定を構成できる中央の場所を提供します。 OneDriveセットアップ ガイドは、OneDrive サブスクリプションまたはスタンドアロン OneDrive プランを使用してデプロイできます。
+[OneDrive のセットアップ ガイド](https://aka.ms/ODfBquickstartguide)を使用して、OneDrive ファイル ストレージ、共有、コラボレーション、および同期機能の使用を開始します。 OneDrive は、ユーザーがMicrosoft 365 Apps ファイルを同期し、外部共有を構成し、ユーザー データを移行し、高度なセキュリティとデバイス アクセス設定を構成できる中央の場所を提供します。 OneDrive セットアップ ガイドは、OneDrive サブスクリプションまたはスタンドアロンの OneDrive プランを使用してデプロイできます。
 
-### <a name="yammer-deployment-advisor"></a>Yammer デプロイ アドバイザー
+### <a name="yammer-deployment-advisor"></a>Yammer 展開アドバイザー
 
-Yammerを使用して組織全体でConnectし、関与します。 [Yammer デプロイ アドバイザー](https://aka.ms/yammerdeploymentguide)は、ドメインの追加、管理者の定義、Yammer ネットワークの組み合わせによって、Yammer ネットワークを準備します。 Yammerを展開し、外観をカスタマイズし、セキュリティとコンプライアンスを構成し、設定を絞り込むためのガイダンスが表示されます。
+Yammer を使用して組織全体に接続し、関与します。 [Yammer 展開アドバイザー](https://aka.ms/yammerdeploymentguide)は、ドメインを追加し、管理者を定義し、Yammer ネットワークを組み合わせることで、Yammer ネットワークを準備します。 Yammer を展開し、外観をカスタマイズし、セキュリティとコンプライアンスを構成し、設定を絞り込むためのガイダンスが表示されます。
 
 ## <a name="advanced-guides"></a>高度なガイド
 
@@ -235,13 +247,13 @@ Windows 7 と Windows 8.1 デバイスを最新バージョンの Windows 10 に
 
 ### <a name="deploy-office-to-your-users"></a>Office をユーザーに展開する
 
-Office 展開ツールを使用して、インストールをカスタマイズできる機能を備えた Office アプリをクラウドから展開します。 [ユーザーにOfficeを展開するガイド](https://aka.ms/proplusodt)は、高度な設定でカスタマイズされたOffice構成を作成したり、事前に構築された推奨構成を使用したりするのに役立ちます。 ユーザーが自己インストールを行っている場合でも、ユーザーに個別に展開する場合でも、一括で展開する場合でも、この高度なガイドでは、ユーザーに組織に合わせたOfficeインストールを提供するための詳細な手順を説明します。
+Office 展開ツールを使用して、インストールをカスタマイズできる機能を備えた Office アプリをクラウドから展開します。 [ユーザーに Office を展開するガイド](https://aka.ms/proplusodt)は、高度な設定を使用してカスタマイズされた Office 構成を作成したり、事前に構築された推奨構成を使用したりするのに役立ちます。 ユーザーが自己インストールを行っている場合でも、ユーザーに個別に展開する場合でも、一括で展開する場合でも、この高度なガイドでは、組織に合わせた Office インストールをユーザーに提供するための詳細な手順を説明します。
 
 ### <a name="deploy-office-to-remote-users"></a>リモート ユーザーに Office を展開する
 
-リモートで作業することが当たり前になったので、ユーザーは組織のOffice設定を受け取る必要があります。これは、内部ネットワークに接続されていない場合や、独自のデバイスを使用している場合です。
+リモートで作業することが一般的になったので、ユーザーは内部ネットワークに接続されていない場合や、独自のデバイスを使用している場合に、組織の Office 設定を受け取る必要があります。
 
-[リモート ユーザーにOfficeを展開するガイド](https://aka.ms/officeremoteinstall)を使用して、カスタマイズされたOfficeインストールを作成し、生成された PowerShell スクリプトをユーザーに送信します。このスクリプトを使用すると、構成と共にOfficeがシームレスにインストールされます。
+[Office をリモート ユーザーに展開するガイド](https://aka.ms/officeremoteinstall)を使用して、カスタマイズされた Office インストールを作成し、生成された PowerShell スクリプトをユーザーに送信して、構成と共に Office をシームレスにインストールします。
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Configuration Managerを使用してMicrosoft 365 Appsをデプロイおよび更新する
 
@@ -251,6 +263,6 @@ Configuration Manager を使用している組織では、「[Configuration Mana
 
 [Intune Configuration Manager共同管理セットアップ ガイド](https://aka.ms/comanagementsetup)を使用して、組織がMicrosoft Intuneと両方で共同管理する既存のConfiguration Manager クライアント デバイスと新しいインターネット ベースのデバイスを設定します。Configuration Manager。 共同管理を使用すると、Windows 10 デバイスを管理し、組織のデバイスに新機能を追加しながら、両方のソリューションの利点を受けることができます。
 
-### <a name="school-data-sync-rollover-setup-guide"></a>学校データ同期 ロールオーバーセットアップ ガイド
+### <a name="school-data-sync-rollover-setup-guide"></a>School Data Sync ロールオーバーセットアップ ガイド
 
-[SDS ロールオーバーセットアップ ガイド](https://aka.ms/sdsrolloversetupguide)では、組織が学生情報データをAzure Active DirectoryとOffice 365に同期するのに役立つ手順について説明します。 このガイドでは、Exchange OnlineとSharePoint Online のOffice 365 グループ、Microsoft TeamsとOneNoteのクラス チーム、Intuneを作成することで、ライフサイクル管理プロセスという用語を効率化します。 教育機関向け、およびサード パーティ製アプリの名簿とシングル サインオンの統合。 年末のクローズアウト、テナントのクリーンアップとアーカイブ、新しい学年の準備、新しい学年の起動を実行します。 次に、組織に合った同期展開方法を使用して、新しいプロファイルを作成できます。
+[SDS ロールオーバーセットアップ ガイド](https://aka.ms/sdsrolloversetupguide)では、組織が学生情報データを Azure Active Directory とOffice 365に同期するのに役立つ手順について説明します。 このガイドでは、Exchange Onlineと SharePoint Online のOffice 365 グループ、Microsoft Teams と OneNote のクラス チーム、教育機関向けのIntuneを作成し、サード パーティアプリの名簿作成とシングル サインオン統合を行うことで、ライフサイクル管理プロセスを効率化します。 年末のクローズアウト、テナントのクリーンアップとアーカイブ、新しい学年の準備、新しい学年の起動を実行します。 次に、組織に合った同期展開方法を使用して、新しいプロファイルを作成できます。

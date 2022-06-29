@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,19 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
 description: Microsoft 365 Business Premium を使用して、管理している Windows デバイスを工場出荷時にリセットし、購入時に元の設定に戻す方法について説明します。
-ms.openlocfilehash: 960ee445757e2d53e552611e934d777fb5edaebc
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 9c0430c1d9fdee37f6105fc5c3a537c46cefb3be
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623553"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486509"
 ---
 # <a name="reset-windows-devices-to-factory-settings"></a>Windows デバイスを出荷時の設定にリセットする
-
-この記事は Microsoft 365 Business Premium に適用されます。
-
-> [!NOTE]
-> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Intune と Microsoft Defender for Endpoint についての詳細情報](../security/defender-business/mdb-overview.md)。
 
 出荷時の設定にリセットは、デバイスを購入したときの元の設定にデバイスを戻します。購入後にインストールしたデバイス上のすべてのアプリとデータが削除されます。Microsoft 365 for Business を使って、管理する Windows 10 デバイスを出荷時の設定にリセットできます。
   

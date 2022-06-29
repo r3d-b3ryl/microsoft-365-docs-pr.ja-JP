@@ -2,9 +2,9 @@
 title: Windows デバイスのアプリケーション保護設定を編集または設定する
 ms.author: deniseb
 author: denisebmsft
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 f1.keywords:
 - Win10AppPolicy
 - O365E_Win10AppPolicy
@@ -28,12 +28,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: アプリ管理ポリシーを作成または編集し、ユーザーの個人用 Windows デバイスで作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: 5fb3da72ef5254a7428342554ac87ce996fb2204
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 9e9c98af4279b3e7370959375fc4872f21b73f55
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893157"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493405"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-devices"></a>Windows デバイスのアプリケーション保護設定を設定または編集する
 
@@ -43,11 +43,11 @@ ms.locfileid: "65893157"
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。     
 
-1. 左側のナビゲーションで、**[デバイス]** \> **[ポリシー]** を選択します。
+2. 左側のナビゲーションで、**[デバイス]** \> **[ポリシー]** を選択します。
 
-1. 既存の Windows アプリ ポリシーを選択してから、**[編集]** を選択します。
+3. 既存の Windows アプリ ポリシーを選択してから、**[編集]** を選択します。
 
-1. 変更する設定の横にある **[編集]** を選択してから、**[保存]** を選択します。
+4. 変更する設定の横にある **[編集]** を選択してから、**[保存]** を選択します。
 
 ## <a name="create-an-app-management-policy-for-windows-devices"></a>Windows デバイスのアプリ管理ポリシーを作成する
 
@@ -55,31 +55,31 @@ ms.locfileid: "65893157"
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> から管理センターにアクセスします。 
 
-1. 左側のナビゲーションで、**[デバイス]** \> **[ポリシー]**\>**[追加]** を選択します。
+2. 左側のナビゲーションで、**[デバイス]** \> **[ポリシー]**\>**[追加]** を選択します。
 
-1. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
+3. [ **ポリシーの追加**] ウィンドウで、このポリシーの一意の名前を入力します。 
 
-1. [ **ポリシーの種類**] で、[ **Windows 10 のアプリケーション管理**] を選びます。
+4. [ **ポリシーの種類**] で、[ **Windows 10 のアプリケーション管理**] を選びます。
 
-1. **[デバイスの種類]** で、**[個人所有]** または **[会社所有]** を選びます。
+5. **[デバイスの種類]** で、**[個人所有]** または **[会社所有]** を選びます。
 
-1. [ **作業ファイルを暗号化する**] が自動的にオンになります。 
+6. [ **作業ファイルを暗号化する**] が自動的にオンになります。 
 
-1. 作業ファイルをユーザーの PC に保存させたくない場合は、[ **ユーザーが会社のデータを個人用のファイルにコピーすることを防止し、作業ファイルを OneDrive for Business に保存するようユーザーに強制します**] を **オン** に設定します。 
+7. 作業ファイルをユーザーの PC に保存させたくない場合は、[ **ユーザーが会社のデータを個人用のファイルにコピーすることを防止し、作業ファイルを OneDrive for Business に保存するようユーザーに強制します**] を **オン** に設定します。 
 
-1. **[Windows デバイス上のデータの回復]** を展開します。 **[オン]** にすることをお勧めします。
+8. **[Windows デバイス上のデータの回復]** を展開します。 **[オン]** にすることをお勧めします。
     データ回復エージェント証明書を先に作成してから、その場所を参照します。 手順については、「[暗号化ファイル システム (EFS) データ回復エージェント (DRA) 証明書の作成と検証](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate)」を参照してください。
 
     既定では、デバイスに保存されていてユーザーのプロファイルに関連付けられている秘密キーを使用して、作業ファイルの暗号化が行われます。該当するユーザーのみがファイル開き、暗号化を解除することができます。ただし、デバイスが失われたり、ユーザーが削除されたりした場合、ファイルを暗号化された状態に留めておくことができます。管理者は、データ回復エージェント (DRA) 証明書を使用してファイルを復号化できます。
 
     ![Browse to Data Recovery Agent certificate.](./../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-1. その他のドメインまたは SharePoint Online の場所を追加してリストに表示されているアプリ内のすべてのファイルが確実に保護されるようにする場合は、**[その他のネットワークとクラウドの場所の保護]** を展開します。いずれかのフィールドに複数の項目を入力する必要がある場合は、項目間にセミコロン (;) を使用します。
+9. その他のドメインまたは SharePoint Online の場所を追加してリストに表示されているアプリ内のすべてのファイルが確実に保護されるようにする場合は、**[その他のネットワークとクラウドの場所の保護]** を展開します。いずれかのフィールドに複数の項目を入力する必要がある場合は、項目間にセミコロン (;) を使用します。
 
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](./../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
-1. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
-1. 最後に、[ **追加**] を選択してポリシーを保存し、それをデバイスに割り当てます。
+10. Next decide **Who will get these settings?** If you don't want to use the default **All Users** security group, choose **Change**, choose the security groups who will get these settings \> **Select**.
+11. 最後に、[ **追加**] を選択してポリシーを保存し、それをデバイスに割り当てます。
 
 ## <a name="see-also"></a>関連項目
 

@@ -17,12 +17,12 @@ ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd56ce39cbb1d48470742f80a8b07747dd52f33a
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66116043"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487699"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
 
@@ -32,7 +32,7 @@ ms.locfileid: "66116043"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 
-Exchange Online メールボックスを持つ組織Microsoft 365管理者は、Microsoft 365 Defender ポータルの申請ポータルを使用して、電子メール メッセージ、URL、添付ファイルをスキャン用に Microsoft に送信できます。
+Exchange Online メールボックスを持つ Microsoft 365 組織では、管理者は、Microsoft 365 Defender ポータルの申請ポータルを使用して、電子メール メッセージ、URL、添付ファイルを Microsoft に送信してスキャンできます。
 
 分析のために電子メール メッセージを送信すると、次の情報が表示されます。
 
@@ -46,7 +46,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 
 電子メール メッセージ、URL、添付ファイルを Microsoft に送信するその他の方法については、「 [メッセージとファイルを Microsoft に報告する」を参照してください](report-junk-email-messages-to-microsoft.md)。
 
-この短いビデオでは、Microsoft Defender for Office 365で管理者の提出を使用して評価のために Microsoft にメッセージを送信する方法について説明します。 
+この短いビデオでは、Microsoft Defender for Office 365で管理者の提出を使用して評価のために Microsoft にメッセージを送信する方法について説明します。
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBLPn]
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
@@ -95,8 +95,8 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 1. [ **送信の種類の選択** ] ボックスで、ドロップダウン リストで **[電子メール** ] が選択されていることを確認します。
 
 2. [ **ネットワーク メッセージ ID の追加または電子メール ファイルのアップロード** ] セクションで、次のいずれかのオプションを使用します。
-   - **電子メール ネットワーク メッセージ ID を追加します**。これは、メッセージ内の **X-MS-Exchange-Organization-Network-Message-Id** ヘッダーまたは検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
-   - **電子メール ファイル (.msg または .eml) をアップロード**: [ファイルの **参照**] をクリックします。 開いたダイアログで、.eml または .msg ファイルを見つけて選択し、[ **開く**] をクリックします。
+   - **電子メール ネットワーク メッセージ ID を追加します**。これは、メッセージの **X-MS-Exchange-Organization-Network-Message-Id** ヘッダー、または検疫済みメッセージの **X-MS-Office365-Filtering-Correlation-Id** ヘッダーで使用できる GUID 値です。
+   - **電子メール ファイル (.msg または .eml) をアップロード** する: [ **ファイルの参照**] をクリックします。 開いたダイアログで、.eml または .msg ファイルを見つけて選択し、[ **開く**] をクリックします。
 
 3. [ **問題のある受信者を選択** する] ボックスで、ポリシー チェックを実行する受信者を指定します。 ポリシー チェックでは、ユーザーまたは組織のポリシーが原因で、電子メールがスキャンをバイパスしたかどうかが決定されます。
 
@@ -105,7 +105,7 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
    - **ブロックされている必要があります (False negative)**: 電子 **メールが表示されるセクションとして分類されている必要があります** 。次のいずれかの値を選択します (不明な場合は、最善の判断をしてください)。
      - **フィッシング**
      - **Malware**
-     - **[スパム]**
+     - **スパム**
 
 5. 完了したら、**[送信]** をクリックします。
 
@@ -376,11 +376,11 @@ Exchange Online メールボックスを持つ組織Microsoft 365管理者は、
 > [!NOTE]
 > 組織がユーザーから報告されたメッセージをカスタム メールボックスにのみ送信するように構成されている場合、報告されたメッセージは **ユーザー報告メッセージ** に表示されますが、結果は常に空になります (再スキャンされなかったため)。
 
-### <a name="undo-user-submissions"></a>ユーザーの申請を元に戻す
+## <a name="undo-user-submissions"></a>ユーザーの申請を元に戻す
 
 ユーザーがカスタム メールボックスに不審な電子メールを送信すると、ユーザーと管理者は送信を元に戻すオプションを持っていません。 ユーザーが電子メールを回復する場合は、[削除済みアイテム] フォルダーまたは [迷惑メール] フォルダーで回復できます。
 
-### <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>ユーザーが報告したメッセージをカスタム メールボックスから管理者の提出に変換する
+## <a name="convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission"></a>ユーザーが報告したメッセージをカスタム メールボックスから管理者の提出に変換する
 
 Microsoft にメッセージを送信せずにユーザーから報告されたメッセージをインターセプトするようにカスタム メールボックスを構成した場合は、分析のために特定のメッセージを見つけて Microsoft に送信できます。
 
@@ -398,3 +398,20 @@ Microsoft にメッセージを送信せずにユーザーから報告された�
 メッセージが Microsoft に報告された場合、[ **管理者に変換] の送信** 値が **[いいえ]** から **[はい**] に変わります。 管理者申請に直接アクセスするには、それぞれのユーザーが報告したメッセージの送信ポップアップ内のオーバーフロー メニューから **[変換された管理者** 申請の表示] をクリックします。
 
 :::image type="content" source="../../media/view-converted-admin-submission.png" alt-text="ユーザーから報告されたメッセージから作成された管理者の提出を表示するオプション。":::
+
+## <a name="view-associated-alert-for-user-and-admin-email-submissions"></a>ユーザーと管理者のメール送信に関連するアラートを表示する
+
+> [!IMPORTANT]
+> このセクションの情報は、Defender for Office 365プラン 2 以降にのみ適用されます。
+>
+> 現在、ユーザー申請では、フィッシングとして報告されたメッセージに対してのみアラートが生成されます。
+
+ユーザーが報告したフィッシング メッセージと管理者のメール送信ごとに、対応するアラートが生成されます。
+
+ユーザーが報告したフィッシング メッセージに対応するアラートを表示するには、[ **ユーザーが報告したメッセージ** ] タブを選択し、メッセージをダブルクリックして送信ポップアップを開きます。 [その他のオプション] アイコンをクリック ![します。](../../media/m365-cc-sc-more-actions-icon.png) **その他のオプション** を選択し、[  **アラートの表示**] を選択します。
+
+:::image type="content" source="../../media/alert-from-user-submission.png" alt-text="ユーザーから報告されたフィッシング メッセージから関連するアラートを表示するオプション。":::
+
+管理者のメール送信に対応するアラートを表示するには、[ **電子メール** ] タブを選択し、メッセージをダブルクリックして申請ポップアップを開きます。 [**電子メール エンティティを開く**] オプションで [**アラートの表示**] を選択します。
+
+:::image type="content" source="../../media/alert-from-admin-submission.png" alt-text="管理者の申請から関連するアラートを表示するオプション。":::

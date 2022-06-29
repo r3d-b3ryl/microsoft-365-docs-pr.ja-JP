@@ -4,8 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/07/2022
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium で Teams を使用してファイルを共同作業および共有し、安全に通信する方法の概要。 Teams が提供するクローズド環境では、ファイルと通信にサイバー脅威やサイバー攻撃が発生しません。
-ms.openlocfilehash: 0fe52b116b1606d430c99844bf244c93afedba08
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 093507502e6bcf6b9a6cdfcf1ce8264f47b6e94c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65621054"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489186"
 ---
 # <a name="collaborate-and-share-securely"></a>セキュイティで保護された共同作業および共有を行う
 

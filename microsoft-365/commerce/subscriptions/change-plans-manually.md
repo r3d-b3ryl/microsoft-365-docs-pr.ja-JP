@@ -1,5 +1,5 @@
 ---
-title: ビジネス プランのMicrosoft 365を手動で変更する
+title: ビジネス プランの Microsoft 365 を手動で変更する
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -20,14 +20,14 @@ search.appverid: MET150
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: d7969821cceb0864ac2ee20674e7aa67d8a12e39
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101600"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493555"
 ---
-# <a name="change-plans-manually"></a>計画を手動で変更する
+# <a name="manually-change-microsoft-plans"></a>Microsoft プランを手動で変更する
 
 ## <a name="step-1-decide-how-to-change-plans"></a>手順 1: プランを変更する方法を決定する
 
@@ -50,7 +50,7 @@ ms.locfileid: "66101600"
 
 または
 
-**新しいサブスクリプションとライセンスを購入します。**[ビジネス 用の別のMicrosoft 365を購入](../try-or-buy-microsoft-365.md)するの手順に従って、新しいサブスクリプションを購入します。
+**新しいサブスクリプションとライセンスを購入します。** 「 [別の Microsoft 365 for Business サブスクリプションを購入](../try-or-buy-microsoft-365.md) する」の手順に従って、新しいサブスクリプションを購入します。
 
 必ずユーザーが現在所属している組織と同じ組織のサブスクリプションを購入してください。 たとえば、移動するユーザーのメール アドレスを確認します。 電子メール アドレスに contoso.com が含まれている \@場合は、contoso.com の新しいサブスクリプションを購入する必要があります。
 移動する各ユーザーのライセンスを含めます。

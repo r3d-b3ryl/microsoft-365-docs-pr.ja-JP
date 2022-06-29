@@ -1,6 +1,6 @@
 ---
-title: Storage アカウントにMicrosoft Defender for Endpointイベントをストリーミングする
-description: 高度なハンティング イベントをStorage アカウントにストリーミングするようにMicrosoft Defender for Endpointを構成する方法について説明します。
+title: Microsoft Defender for Endpoint イベントをストレージ アカウントにストリーミングする
+description: Advanced Hunting イベントをストレージ アカウントにストリーミングするようにMicrosoft Defender for Endpointを構成する方法について説明します。
 keywords: 生データエクスポート, ストリーミング API, API, Event Hubs, Azure Storage, ストレージ アカウント, Advanced Hunting, 生データ共有
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d5d4917e2464964da819af0a06f0b8e4883dfea9
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: c94830e4f9dbfe16a8dfafba35aecb5a36efddf5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783889"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493445"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>高度なハンティング イベントをStorage アカウントにストリーミングするようにMicrosoft Defender for Endpointを構成する
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>高度なハンティング イベントをストレージ アカウントにストリーミングするようにMicrosoft Defender for Endpointを構成する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "64783889"
 
 ## <a name="before-you-begin"></a>はじめに
 
-1. テナントに[Storage アカウント](/azure/storage/common/storage-account-overview)を作成します。
+1. テナントに [ストレージ アカウント](/azure/storage/common/storage-account-overview) を作成します。
 
 2. [Azure テナント](https://ms.portal.azure.com/)にログインし、[**サブスクリプション] > [サブスクリプション] > [リソース プロバイダー] > Microsoft.insights に登録します**。
 
@@ -42,21 +42,21 @@ ms.locfileid: "64783889"
 
 1. ***Global Administrator** _ または _*_Security Administrator_** として [Microsoft 365 Defender](https://security.microsoft.com)にログインします。
 
-2. Microsoft 365 Defenderの [[データエクスポート設定] ページ](https://security.microsoft.com/interoperability/dataexport)に移動します。
+2. Microsoft 365 Defenderの [[データエクスポート設定] ページ](https://security.microsoft.com/settings/mtp_settings/raw_data_export)に移動します。
 
 3. [ **データエクスポート設定の追加]** をクリックします。
 
 4. 新しい設定の名前を選択します。
 
-5. [**イベントをAzure Storageに転送]** を選択します。
+5. [ **Azure Storage にイベントを転送する**] を選択します。
 
-6. **Storage アカウント リソース ID を** 入力します。 **Storage アカウント リソース ID を** 取得するには、Azure portalプロパティ タブ\>の [Storage アカウント] ページに移動 [Storage](https://ms.portal.azure.com/) \> **アカウント リソース ID** の下のテキストをコピーします。
+6. **ストレージ アカウント リソース ID を入力します**。 **ストレージ アカウント リソース ID を取得するには、ストレージ アカウント リソース ID** の下のテキストをコピー [Azure portal](https://ms.portal.azure.com/)\>プロパティ タブ\>の **[ストレージ アカウント**] ページに移動します。
 
    :::image type="content" source="images/storage-account-resource-id.png" alt-text="リソース ID1 を持つ Event Hubs" lightbox="images/storage-account-resource-id.png":::
 
 7. ストリーミングするイベントを選択し、[ **保存]** をクリックします。
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>Storage アカウント内のイベントのスキーマ
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>ストレージ アカウント内のイベントのスキーマ
 
 - イベントの種類ごとに BLOB コンテナーが作成されます。
 

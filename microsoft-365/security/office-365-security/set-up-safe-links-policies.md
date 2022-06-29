@@ -16,15 +16,15 @@ ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: 管理者は、Microsoft Defender for Office 365のリンク ポリシーとグローバル セーフ リンク設定セーフ表示、作成、変更、削除する方法について説明します。
+description: 管理者は、Microsoft Defender for Office 365のセーフ リンク ポリシーとグローバルセーフ リンク設定を表示、作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5e66b1b079f67d6454754d056ca9fedf5fefb74f
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 2d006cd49392b80c826e23ef0d63f954d81249c0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115787"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487029"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 で安全なリンク ポリシーを設定する
 
@@ -35,65 +35,65 @@ ms.locfileid: "66115787"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> この記事は、[Microsoft Defender for Office 365](defender-for-office-365.md) をご利用の法人のお客様を対象としています。 Outlookで Safelinks に関する情報を探しているホーム ユーザーの場合は、「[Advanced Outlook.com セキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)」を参照してください。
+> この記事は、[Microsoft Defender for Office 365](defender-for-office-365.md) をご利用の法人のお客様を対象としています。 Outlook の Safelinks に関する情報を探しているホーム ユーザーの場合は、 [高度な Outlook.com セキュリティ](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)に関するページを参照してください。
 
-Microsoft Defender for Office 365の[セーフ](defender-for-office-365.md) リンクでは、メール フロー内の受信メール メッセージの URL スキャンと、電子メール メッセージやその他の場所での URL とリンクのクリック確認の時間が提供されます。 詳細については、「[Microsoft Defender for Office 365のリンクのセーフ](safe-links.md)」を参照してください。
+[Microsoft Defender for Office 365](defender-for-office-365.md)の安全なリンクは、メール フロー内の受信メール メッセージの URL スキャンと、電子メール メッセージやその他の場所での URL とリンクのクリック確認の時間を提供します。 詳細については、「[Microsoft Defender for Office 365のセーフ リンク](safe-links.md)」を参照してください。
 
-既定のセーフ リンク ポリシーはありませんが、**組み込みの保護** プリセット セキュリティ ポリシーでは、すべての受信者 (カスタム セーフ リンク ポリシーで定義されていないユーザー) に対してセーフリンク保護が提供されます。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
+既定のセーフ リンク ポリシーはありませんが、 **組み込みの保護** プリセット セキュリティ ポリシーは、すべての受信者 (カスタムセーフ リンク ポリシーで定義されていないユーザー) に安全なリンク保護を提供します。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 
-この記事の手順を使用して、特定のユーザー、グループ、またはドメインに適用される セーフ リンク ポリシーを作成することもできます。
+この記事の手順を使用して、特定のユーザー、グループ、またはドメインに適用されるセーフ リンク ポリシーを作成することもできます。
 
 > [!NOTE]
 >
-> セーフ リンク ポリシー **の外部** で、セーフ リンク保護のグローバル設定を構成します。 手順については、「[Microsoft Defender for Office 365の セーフ リンクのグローバル設定を構成](configure-global-settings-for-safe-links.md)する」を参照してください。
+> セーフ リンク 保護のグローバル設定は、セーフ リンク ポリシー **の外部で** 構成します。 手順については、「[Microsoft Defender for Office 365のセーフ リンクのグローバル設定を構成](configure-global-settings-for-safe-links.md)する」を参照してください。
 >
-> 管理者は、セーフ リンクのさまざまな構成設定を検討する必要があります。 使用可能なオプションの 1 つは、セーフ リンクにユーザー識別可能な情報を含める方法です。 この機能により、セキュリティ運用 (SecOps) チームは潜在的なユーザー侵害を調査し、修正措置を講じ、コストのかかる侵害を制限できます。
+> 管理者は、安全なリンクのさまざまな構成設定を検討する必要があります。 使用できるオプションの 1 つは、ユーザーが識別できる情報を安全なリンクに含める方法です。 この機能により、セキュリティ運用 (SecOps) チームは潜在的なユーザー侵害を調査し、修正措置を講じ、コストのかかる侵害を制限できます。
 
 セーフ リンク ポリシーは、Microsoft 365 Defender ポータルまたは PowerShell で構成できます (Exchange Online にメールボックスがある適格な Microsoft 365 組織の場合は Exchange Online PowerShell で、Exchange Online メールボックスがないが、Microsoft Defender for Office 365アドオンがある組織の場合はスタンドアロンEOP PowerShell サブスクリプションです)。
 
 安全なリンク ポリシーの基本的な要素は次のとおりです。
 
-- **安全なリンク ポリシー**: セーフ リンク保護を有効にし、リアルタイム URL スキャンを有効にし、メッセージを配信する前にリアルタイム スキャンが完了するのを待つかどうかを指定し、内部メッセージのスキャンをオンにし、ユーザーが URL のクリックを追跡するかどうかを指定し、ユーザーが元の URL をクリックできるかどうかを指定します。
+- **安全なリンク ポリシー**: セーフ リンク保護を有効にし、リアルタイム URL スキャンを有効にし、メッセージを配信する前にリアルタイム スキャンが完了するのを待機するかどうかを指定し、内部メッセージのスキャンをオンにし、ユーザーが URL をクリックしたかどうかを追跡するかどうかを指定し、ユーザーが元の URL をクリックできるかどうかを指定します。
 - **安全なリンク規則**: 優先度フィルターと受信者フィルター (ポリシーが適用されるユーザー) を指定します。
 
-Microsoft 365 Defender ポータルでリンク ポリシーセーフ管理する場合、これら 2 つの要素の違いは明らかではありません。
+Microsoft 365 Defender ポータルでセーフ リンク ポリシーを管理する場合、これら 2 つの要素の違いは明らかではありません。
 
 - 安全なリンク ポリシーを作成するときは、実際には、安全なリンク規則と、関連付けられている安全なリンク ポリシーを同時に作成し、両方に同じ名前を使用します。
 - 安全なリンク ポリシーを変更する場合、名前、優先順位、有効/無効の切り替え、そして受信者フィルターに関連する設定の変更は、実際には安全なリンク ルールを変更しています。 他のすべての設定は、関連付けられている安全なリンク ポリシーを変更します。
 - 安全なリンク ポリシーを削除すると、安全なリンク規則と関連する安全なリンク ポリシーが削除されます。
 
-Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。 詳細については、この記事の後半の「[PowerShell またはスタンドアロン EOP PowerShell Exchange Online使用して セーフ リンク ポリシーを構成する](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies)」セクションを参照してください。
+Exchange Online PowerShell またはスタンドアロン EOP PowerShell では、ポリシーとルールを個別に管理します。 詳細については、この記事の後半の「[PowerShell またはスタンドアロンの EOP PowerShell Exchange Online使用して安全なリンク ポリシーを構成する](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies)」セクションを参照してください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[セーフ リンク**] ページに直接移動するには、<https://security.microsoft.com/safelinksv2>.
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[安全なリンク**] ページに直接移動するには、 <https://security.microsoft.com/safelinksv2>.
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
 - この記事の手順を実行するには、アクセス許可を割り当てる必要があります。
-  - セーフリンク ポリシーを作成、変更、削除するには、Microsoft 365 Defender ポータルの **組織管理** または **セキュリティ管理者** の役割グループのメンバー **であり**、Exchange Onlineの **組織管理** 役割グループのメンバーである必要があります。
-  - セーフ リンク ポリシーへの読み取り専用アクセスの場合は、**グローバル 閲覧者** または **セキュリティ 閲覧者** ロール グループのメンバーである必要があります。
+  - セーフ リンク ポリシーを作成、変更、削除するには、Microsoft 365 Defender ポータルの **組織管理** または **セキュリティ管理者** の役割グループのメンバー **であり**、Exchange Onlineの **組織管理** 役割グループのメンバーである必要があります。
+  - セーフ リンク ポリシーに対する読み取り専用アクセスの場合は、 **グローバル リーダー** または **セキュリティ 閲覧者** ロール グループのメンバーである必要があります。
 
   詳細については、[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)と[Exchange Onlineのアクセス許可に関するページを参照](/exchange/permissions-exo/permissions-exo)してください。
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センターで対応するAzure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
   . - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **表示専用組織管理** 役割グループでは、この機能に対する読み取り専用アクセス権も付与されます。
 
-- セーフ リンク ポリシーの推奨設定については、「[セーフ リンク ポリシーの設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)」を参照してください。
+- セーフ リンク ポリシーの推奨設定については、「 [セーフ リンク ポリシーの設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)」を参照してください。
 
 - 新しいポリシーまたは更新されたポリシーを適用するには、最大 6 時間を許可します。
 
-- [新機能はMicrosoft Defender for Office 365に継続的に追加されています](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新機能が追加されると、既存のセーフ リンク ポリシーを調整することが必要になる場合があります。
+- [新機能はMicrosoft Defender for Office 365に継続的に追加されています](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)。 新機能が追加されると、既存のセーフ リンク ポリシーの調整が必要になる場合があります。
 
-## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフリンク ポリシーを作成する
+## <a name="use-the-microsoft-365-defender-portal-to-create-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフ リンク ポリシーを作成する
 
-Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシーを作成すると、両方に同じ名前を使用して、安全なリンク規則と関連する安全なリンク ポリシーが同時に作成されます。
+Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシーを作成すると、安全なリンク規則と関連付けられた安全なリンク ポリシーが同時に作成され、両方に同じ名前が使用されます。
 
-1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[セーフ リンク**] ページに直接移動するには、<https://security.microsoft.com/safelinksv2>.
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[安全なリンク**] ページに直接移動するには、 <https://security.microsoft.com/safelinksv2>.
 
-2. **[セーフ リンク**] ページで、[作成] アイコンをクリックします![。](../../media/m365-cc-sc-create-icon.png) **Create**。
+2. [ **安全なリンク** ] ページで、[作成] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **Create**。
 
 3. **[新しい安全なリンク ポリシー]** ウィザードが開きます。 [ **ポリシーの名前]** ページで、次の設定を構成します。
 
@@ -118,23 +118,23 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
    > [!IMPORTANT]
-   > 複数の異なる条件または例外は加算されません。包括的です。 ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します。
+   > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
    >
-   > - 受信者は次のとおりです:romain@contoso.com
-   > - 受信者は次のメンバーです。
+   > - 受信者は次のとおりです: romain@contoso.com
+   > - 受信者が次のメンバーの場合: Executive
    >
-   > ポリシーは、エグゼクティブ グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
    >
-   > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+   > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
    完了したら、**[次へ]** をクリックします。
 
 5. 表示される **[保護の設定]** ページで、以下の設定を構成します。
-   - **メッセージ内の悪意のある可能性のある不明な URL に対するアクションを選択** します。[**オン**] を選択して、メール メッセージ内のリンクに対するリンク保護セーフ有効にします。 この設定をオンにすると、次の設定を使用できます。
+   - **メッセージ内の悪意のある可能性のある不明な URL のアクションを選択** します。[ **オン** ] を選択して、電子メール メッセージ内のリンクに対するセーフ リンク保護を有効にします。 この設定をオンにすると、次の設定を使用できます。
      - **疑わしいリンクとファイルを指すリンクのリアルタイム URL スキャンを適用** する: 電子メール メッセージ内のリンクのリアルタイム スキャンを有効にするには、このオプションを選択します。 この設定をオンにすると、次の設定を使用できます。
        - **メッセージを配信する前に URL スキャンが完了するまで待ちます:メッセージを配信する前** に、リアルタイムの URL スキャンが完了するまで待機するには、このオプションを選択します。
-     - **組織内で送信された電子メール メッセージにセーフリンクを適用** する: このオプションを選択すると、内部送信者と内部受信者の間のメッセージに セーフ リンク ポリシーが適用されます。
-   - **Microsoft Teams内の不明な URL または悪意のある可能性のある URL のアクションを選択** します。[**オン**] を選択して、Teams内のリンクに対セーフリンク保護を有効にします。 この設定を有効にするには、最大で 24 時間かかる場合があることに注意してください。
+     - **組織内で送信された電子メール メッセージに安全なリンクを適用** する: 内部送信者と内部受信者の間のメッセージに安全なリンク ポリシーを適用するには、このオプションを選択します。
+   - **Microsoft Teams 内の不明な URL または悪意のある可能性のある URL のアクションを選択します**。[ **オン** ] を選択して、Teams 内のリンクに対して安全なリンク保護を有効にします。 この設定を有効にするには、最大で 24 時間かかる場合があることに注意してください。
 
      > [!NOTE]
      > 現在、Microsoft Teams のセーフ リンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
@@ -143,22 +143,25 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
    - **ユーザーが元の URL までクリック** できるようにする: [警告ページ](safe-links.md#warning-pages-from-safe-links)でユーザーが元の URL までクリックするのをブロックするには、このオプションをオフにします。
    - **次の URL を書き換えないでください**:セーフ リンクによってブロックされる指定された URL にアクセスできます。
 
+     > [!NOTE]
+     > "次の URL を書き換えない" リストの目的は、指定した URL のセーフ リンク の折り返しをスキップすることです。 この一覧を使用する代わりに、 [テナント許可/ブロック リストに許可 URL エントリを作成](allow-block-urls.md#create-allow-url-entries)できるようになりました。
+
      ボックスに、目的の URL または値を入力し、[ **追加**] をクリックします。 必要な回数だけこの手順を繰り返します。
 
      既存のエントリを削除するには、 ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) エントリの横に表示されます。
 
      エントリ構文については、「 [次の URL を書き換えない」の一覧のエントリ構文に関するページを参照してください](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
 
-   これらの設定の詳細については、「[メール メッセージのリンク設定セーフ](safe-links.md#safe-links-settings-for-email-messages)セーフ[リンク設定」を参照してください。Microsoft Teamsのリンク設定を参照](safe-links.md#safe-links-settings-for-microsoft-teams)してください。
+   これらの設定の詳細については、 [電子メール メッセージのセーフ リンク設定](safe-links.md#safe-links-settings-for-email-messages) と [Microsoft Teams のセーフ リンク設定に関するページを参照してください](safe-links.md#safe-links-settings-for-microsoft-teams)。
 
-   Standard ポリシーと Strict ポリシー設定の推奨値の詳細については、「[セーフ リンク ポリシー設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)」を参照してください。
+   Standard ポリシーと Strict ポリシー設定の推奨値の詳細については、「 [セーフ リンク ポリシーの設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)」を参照してください。
 
    完了したら、**[次へ]** をクリックします。
 
 6. 表示される **[通知]** ページで、[ **ユーザーに通知する方法**] で次のいずれかの値を選択します。
    - **既定の通知テキストを使用する**
    - **カスタム通知テキストを使用する**: この値を選択すると (長さが 200 文字を超えることはできません)、次の設定が表示されます。
-     - **自動ローカライズにMicrosoft 翻訳ツールを使用する**
+     - **自動ローカライズに Microsoft Translator を使用する**
      - **カスタム通知テキスト**: このボックスにカスタム通知テキストを入力します。
 
    完了したら、**[次へ]** をクリックします。
@@ -169,32 +172,32 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
 
 8. 表示された [確認]ページで、**[完了]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフリンク ポリシーを表示する
+## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフ リンク ポリシーを表示する
 
-1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[セーフ リンク**] ページに直接移動するには、<https://security.microsoft.com/safelinksv2>.
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[安全なリンク**] ページに直接移動するには、 <https://security.microsoft.com/safelinksv2>.
 
-2. **[セーフ リンク**] ページで、セーフ リンク ポリシーの一覧に次のプロパティが表示されます。
+2. **[安全なリンク**] ページの [安全なリンク] ポリシーの一覧に次のプロパティが表示されます。
    - **名前**
    - **状態**
    - **優先度**
 
 3. ポリシーの名前をクリックして選択すると、ポリシー設定がポップアウトで表示されます。
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフリンク ポリシーを変更する
+## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフ リンク ポリシーを変更する
 
-1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール** \> **の脅威ポリシー** \> **ポリシー**] セクション\>**セーフ [リンク**] に移動します。
+1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール** \> **の脅威ポリシー** \> **ポリシー**] セクション **の [安全なリンク**] に\>移動します。
 
-2. **[セーフ リンク**] ページで、名前をクリックして一覧からポリシーを選択します。
+2. [ **安全なリンク** ] ページで、名前をクリックして一覧からポリシーを選択します。
 
-3. 表示されるポリシーの詳細ポップアップで、各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 設定の詳細については、この記事の「[Microsoft 365 Defender ポータルを使用してセーフリンク ポリシーを作成する](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)」セクションを参照してください。
+3. 表示されるポリシーの詳細ポップアップで、各セクションで **[編集]** を選択して、そのセクション内の設定を変更することができます。 設定の詳細については、この記事の「[Microsoft 365 Defender ポータルを使用してセーフ リンク ポリシーを作成する](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies)」セクションを参照してください。
 
 ポリシーを有効または無効にするか、ポリシーの優先順位を設定するには、次のセクションをご覧ください。
 
 ### <a name="enable-or-disable-safe-links-policies"></a>セーフ リンク ポリシーを有効または無効にする
 
-1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[セーフ リンク**] ページに直接移動するには、<https://security.microsoft.com/safelinksv2>.
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[安全なリンク**] ページに直接移動するには、 <https://security.microsoft.com/safelinksv2>.
 
-2. **[セーフ リンク**] ページで、名前をクリックして一覧からポリシーを選択します。
+2. [ **安全なリンク** ] ページで、名前をクリックして一覧からポリシーを選択します。
 
 3. 表示されるポリシーの詳細ポップアップの上部には、以下のいずれかの値が表示されます。
    - **ポリシー オフ**: ポリシーをオンにするには、![[アイコンをオンにする]](../../media/m365-cc-sc-turn-on-off-icon.png)、**[オンにする]** の順にクリックします。
@@ -214,12 +217,12 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
 
 **注**:
 
-- Microsoft 365 Defender ポータルでは、作成した後にのみ、セーフ リンク ポリシーの優先度を変更できます。 PowerShell では、安全なリンク規則を作成するときに既定の優先度をオーバーライドできます (既存のルールの優先度に影響を与える可能性があります)。
+- Microsoft 365 Defender ポータルでは、セーフ リンク ポリシーの優先度は、作成後にのみ変更できます。 PowerShell では、安全なリンク規則を作成するときに既定の優先度をオーバーライドできます (既存のルールの優先度に影響を与える可能性があります)。
 - セーフ リンク ポリシーは、表示された順序で処理されます (最初のポリシーの **優先度** の値は 0 です)。 優先順位と複数のポリシーを評価し適用する方法の詳細については、「[メール保護の優先順位](how-policies-and-protections-are-combined.md)」を参照してください。
 
-1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[セーフ リンク**] ページに直接移動するには、<https://security.microsoft.com/safelinksv2>.
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ポリシー]** セクションの **[メールと共同作業]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[安全なリンク]** の順に移動します。 **[安全なリンク**] ページに直接移動するには、 <https://security.microsoft.com/safelinksv2>.
 
-2. **[セーフ リンク**] ページで、名前をクリックして一覧からポリシーを選択します。
+2. [ **安全なリンク** ] ページで、名前をクリックして一覧からポリシーを選択します。
 
 3. 表示されるポリシーの詳細ポップアップの上部には、現在の優先度の値とカスタム ポリシーの数に基づいて、**[優先度を上げる]** または **[優先度を下げる]** が表示されます。
    - **優先度** の値が **0** のポリシーでは、**[優先度を下げる]** オプションのみ利用可能です。
@@ -230,17 +233,17 @@ Microsoft 365 Defender ポータルでカスタム セーフ リンク ポリシ
 
 4. 完了したら、ポリシーの詳細ポップアップで **[閉じる]** をクリックします。
 
-## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフリンク ポリシーを削除する
+## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフ リンク ポリシーを削除する
 
-1. Microsoft 365 Defender ポータルで、[ポリシー **] セクション****の [電子メール & コラボレーション** \> **ポリシー&ルール** \> **の脅威ポリシー** \> **セーフリンク**] に移動します。
+1. Microsoft 365 Defender ポータルで、[ポリシー] セクション **の [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **の安全なリンク****]** に移動します。
 
-2. **[セーフ リンク**] ページで、名前をクリックして一覧からポリシーを選択します。 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作]](../../media/m365-cc-sc-more-actions-icon.png) アイコンをクリックします。 **[その他の操作]** \> ![[ポリシーの削除]](../../media/m365-cc-sc-delete-icon.png) アイコン **[ポリシーの削除]** の順にクリックします。
+2. [ **安全なリンク** ] ページで、名前をクリックして一覧からポリシーを選択します。 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作]](../../media/m365-cc-sc-more-actions-icon.png) アイコンをクリックします。 **[その他の操作]** \> ![[ポリシーの削除]](../../media/m365-cc-sc-delete-icon.png) アイコン **[ポリシーの削除]** の順にクリックします。
 
 3. 確認ダイアログ ボックスが表示されたら、**[はい]** をクリックします。
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>PowerShell またはスタンドアロン EOP PowerShell Exchange Onlineを使用して、セーフ リンク ポリシーを構成する
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>PowerShell またはスタンドアロン EOP PowerShell Exchange Onlineを使用してセーフ リンク ポリシーを構成する
 
-前述のように、セーフ リンク ポリシーは、安全なリンク ポリシーと安全なリンク規則で構成されています。
+前述のように、安全なリンク ポリシーは、安全なリンク ポリシーと安全なリンク規則で構成されています。
 
 PowerShell では、安全なリンク ポリシーと安全なリンクルールの違いは明らかです。 **\*-SafeLinksPolicy** コマンドレットを使用して安全なリンクに関するポリシーを管理し、**\*-SafeLinksRule** コマンドレットを使用して安全なリンクに関するルールを管理します。
 
@@ -248,7 +251,7 @@ PowerShell では、安全なリンク ポリシーと安全なリンクルー�
 - PowerShell では、安全なリンクに関するポリシーと安全なリンクに関するルールの設定は別々に変更します。
 - PowerShell から安全なリンクに関するポリシーを削除しても、対応している安全なリンクに関するルールは自動で削除されず、逆もまた同様です。
 
-### <a name="use-powershell-to-create-safe-links-policies"></a>PowerShell を使用して セーフ リンク ポリシーを作成する
+### <a name="use-powershell-to-create-safe-links-policies"></a>PowerShell を使用して安全なリンク ポリシーを作成する
 
 PowerShell では、以下の 2 段階の手順でマルウェア対策ポリシーを作成します。
 
@@ -282,11 +285,11 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 この例では、Contoso All という名前の安全なリンク ポリシーを次の値で作成します。
 
 - メール メッセージで URL スキャンと書き換えを有効にします。
-- Teamsで URL スキャンを有効にします。
+- Teams で URL スキャンを有効にします。
 - クリックされた URL のリアルタイム スキャン (ファイルを指すクリックされたリンクを含む) を有効にします。
 - URL スキャンが完了するまで待ち、その後でメッセージを配信します。
 - 内部メッセージの URL スキャンと書き換えを有効にします。
-- セーフリンク保護に関連するユーザークリックを追跡します (_TrackUserClicks_ パラメーターは使用されておらず、既定値は$true)。
+- セーフ リンク保護に関連するユーザーのクリックを追跡します ( _TrackUserClicks_ パラメーターは使用されておらず、既定値は$true)。
 - ユーザーが元の URL までクリックできないようにします。
 
 ```PowerShell
@@ -386,7 +389,7 @@ Get-SafeLinksRule -Identity "Contoso Executives"
 
 ### <a name="use-powershell-to-modify-safe-links-policies"></a>PowerShell を使用して安全なリンク ポリシーを変更する
 
-PowerShell で安全なリンク ポリシーの名前を変更することはできません ( **Set-SafeLinksPolicy** コマンドレットには _Name_ パラメーターがありません)。 Microsoft 365 Defender ポータルでセーフリンク ポリシーの名前を変更する場合は、安全なリンク _規則_ の名前を変更するだけです。
+PowerShell で安全なリンク ポリシーの名前を変更することはできません ( **Set-SafeLinksPolicy** コマンドレットには _Name_ パラメーターがありません)。 Microsoft 365 Defender ポータルでセーフ リンク ポリシーの名前を変更すると、安全なリンク _ルール_ の名前のみが変更されます。
 
 PowerShell で安全なリンク ポリシーを変更するための唯一の追加の考慮事項は、 _DoNotRewriteUrls_ パラメーター ( ["次の URL を書き換えない" リスト](safe-links.md#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)) で使用できる構文です。
 
@@ -433,7 +436,7 @@ Set-SafeLinksRule -Identity "Contoso All" -RecipientDomainIs $SLDomains
 
 ### <a name="use-powershell-to-enable-or-disable-safe-links-rules"></a>PowerShell を使用して安全なリンク規則を有効または無効にする
 
-PowerShell で安全なリンク規則を有効または無効にすると、セーフ リンク ポリシー全体 (安全なリンク規則と割り当てられた安全なリンク ポリシー) が有効または無効になります。
+PowerShell で安全なリンク規則を有効または無効にすると、セーフ リンク ポリシー全体 (安全なリンク規則と割り当てられた安全なリンク ポリシー) 全体が有効または無効になります。
 
 PowerShell で安全なリンク規則を有効または無効にするには、次の構文を使用します。
 
@@ -512,13 +515,13 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 構文とパラメーターの詳細については、「 [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule)」を参照してください。
 
-セーフ リンクがメッセージをスキャンしていることを確認するには、使用可能なMicrosoft Defender for Office 365 レポートを確認します。 詳細については、[Microsoft 365 Defender](view-reports-for-mdo.md) [ポータルでのDefender for Office 365およびエクスプローラーの使用に関するレポートの表示に関するMicrosoft 365 Defender](threat-explorer.md)を参照してください。
+安全なリンクがメッセージをスキャンしていることを確認するには、使用可能なMicrosoft Defender for Office 365レポートを確認します。 詳細については、[Microsoft 365 Defender](view-reports-for-mdo.md) [ポータルでのDefender for Office 365およびエクスプローラーの使用に関するレポートの表示に関するMicrosoft 365 Defender](threat-explorer.md)を参照してください。
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>正常な動作を確認する方法
 
-リンク ポリシーを正常に作成、変更、または削除したことを確認セーフ、次のいずれかの手順を実行します。
+セーフ リンク ポリシーが正常に作成、変更、または削除されたことを確認するには、次のいずれかの手順を実行します。
 
-- Microsoft 365 Defender ポータルの **[セーフ リンク**] ページで<https://security.microsoft.com/safelinksv2>、ポリシーの一覧、**状態** の値、および **優先度** の値を確認します。 詳細を表示するには、一覧からポリシーを選択し、ポップアップで詳細を表示します。
+- Microsoft 365 Defender ポータルの **[安全なリンク**] ページで<https://security.microsoft.com/safelinksv2>、ポリシーの一覧、**状態** の値、および **優先度** の値を確認します。 詳細を表示するには、一覧からポリシーを選択し、ポップアップで詳細を表示します。
 
 - PowerShell または powerShell Exchange Online Protection Exchange Onlineで、ポリシーまたはルールの名前に置き換え\<Name\>、次のコマンドを実行し、設定を確認します。
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3d50debf31f53f75177e7c8cf8c7116ae3789b6
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128857"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490102"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -53,8 +53,10 @@ Exchange Online Protection (EOP) の検疫ポリシー (以前は _検疫タグ_
 |**送信者をブロック** (_PermissionToBlockSender_)||![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
 |**削除** (_PermissionToDelete_)||![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
 |**プレビュー** (_PermissionToPreview_)||![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
-|**受信者が検疫からメッセージを解放することを許可する** (_PermissionToRelease_)|||![チェック マーク。](../../media/checkmark.png)|
+|**受信者が検疫からメッセージを解放することを許可する** (_PermissionToRelease_)<sup>\*</sup>|||![チェック マーク。](../../media/checkmark.png)|
 |**受信者が検疫アクセス許可からメッセージを解放する要求を許可する** (_PermissionToRequestRelease_) を参照してください。||![チェック マーク](../../media/checkmark.png)||
+
+<sup>\*</sup>**受信者が検疫からメッセージを解放することを許可** するアクセス許可は、マルウェア対策ポリシーやスパム対策ポリシーの高信頼フィッシング判定では受け入れられません。 ユーザーは、独自のマルウェアや信頼度の高いフィッシング メッセージを検疫から解放できません。 [受信者を許可する] を使用 **して、検疫アクセス許可から解放するメッセージを要求** できます。
 
 次の表に、既定の検疫ポリシー、関連するアクセス許可グループ、および検疫通知を有効にするかどうかについてを説明します:
 
@@ -519,7 +521,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="検疫ポリシーのグローバル検疫通知設定で選択された言語。" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **会社のロゴを使用**: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換えるには、このオプションを選択します。 この手順を行う前に、「[組織のMicrosoft 365テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md)する」の手順に従ってカスタム ロゴをアップロードする必要があります。
+   - **会社のロゴを使用**: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換えるには、このオプションを選択します。 この手順を行う前に、 [組織の Microsoft 365 テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md) してカスタム ロゴをアップロードする手順に従う必要があります。
 
      次のスクリーンショットは、検疫通知のカスタム ロゴを示しています:
 
@@ -729,6 +731,9 @@ Remove-QuarantinePolicy -Identity "<QuarantinePolicyName>"
 - **検疫通知**: 効果はありません。
 
 #### <a name="allow-recipients-to-release-a-message-from-quarantine-permission"></a>検疫からのメッセージ解放を要求するアクセス許可を受信者に許可する
+
+> [!NOTE]
+> このアクセス許可は、マルウェア対策ポリシーまたはスパム対策ポリシーの高信頼フィッシング判定では受け入れられません。 ユーザーは、独自のマルウェアや信頼度の高いフィッシング メッセージを検疫から解放できません。 [受信者を許可する] を使用 [して、検疫アクセス許可のアクセス許可から解放するメッセージを要求](#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission) できます。
 
 **検疫からのメッセージ解放を受信者が要求する** アクセス許可 (_PermissionToRelease_) は、管理者の承認なしに、ユーザーが検疫済みメッセージを直接解放する機能を制御します。
 

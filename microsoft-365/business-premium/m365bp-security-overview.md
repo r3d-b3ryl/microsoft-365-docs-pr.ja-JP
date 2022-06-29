@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: サイバー攻撃を防ぐために使用できる多要素認証などのサイバーセキュリティ ツールを提供する Microsoft 365 Business Premium のセキュリティの概要。
-ms.openlocfilehash: e8e9a2d4e9a7593806c2b8d75a861caa8c8a22ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c6941de1c52eaeaf87f45d5269770fe1fd2585a8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101816"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493670"
 ---
 # <a name="bump-up-security"></a>セキュリティを強化する
 

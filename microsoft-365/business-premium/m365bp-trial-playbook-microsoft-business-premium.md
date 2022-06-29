@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 Business Premium 試用版を最大限に活用しましょう。 生産性とセキュリティに関する主要な機能を試してみてください。
-ms.openlocfilehash: 364e2ab3e858bb7c2e06701cc9f3fb8374862003
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 2a4cd72cdb173afcce95250f8aa2916c8064cd26
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139453"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486497"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>試用版プレイブック: Microsoft Business Premium
 
@@ -46,7 +46,7 @@ Microsoft 365 Business Premium には、環境で使用できる[事前設定済
 
 Microsoft 365 Business Premium 体験版取得または購入する際、自分の所有しているドメインを使用するか、サインアップ時にドメインを購入するかを選択することができます。
 
-> [!Note]
+> [!NOTE]
 > サインアップ時に新しいドメインを購入した場合、お客様のドメインはすべてセットアップされており、[ユーザーを追加してライセンスを割り当てる] に移動することができます。 管理センターにアクセスします ([https://admin.microsoft.com](https://admin.microsoft.com))。
 
 1. 管理センターのメニューから **［セットアップ］** を選択してウィザードを開始します。

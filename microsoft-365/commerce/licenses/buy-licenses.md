@@ -23,14 +23,14 @@ ms.custom:
 search.appverid: MET150
 description: これらの手順を使用して、より多くのライセンスを購入するか、Microsoft 365 for Business サブスクリプションのライセンス数を減らします。
 ms.date: 06/06/2022
-ms.openlocfilehash: bbeff9310a652a768c92ba3640e84607b8628619
-ms.sourcegitcommit: 23fd850272f39c4202e2320e56d11fb6707b3e2e
+ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65925090"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489672"
 ---
-# <a name="buy-or-remove-licenses"></a>ライセンスの購入または削除
+# <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>サブスクリプションの Microsoft 365 ライセンスを購入または削除する
 
 次の手順を使用して、より多くのライセンスを購入したり、サブスクリプションのライセンス数を減らしたりできます。
 
@@ -39,9 +39,9 @@ ms.locfileid: "65925090"
 
 ## <a name="before-you-begin"></a>開始する前に
 
-- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 - 同時に [ユーザーを追加し、ライセンスを割り当てることができます](../../admin/add-users/add-users.md)。
-- Microsoft 365 for business または Office 365 Enterprise プランをサード パーティパートナーを通じて購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
+- ビジネス向け Microsoft 365 またはサード パーティパートナーを通じてOffice 365 Enterpriseプランを購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
 
 ## <a name="watch-buy-new-licenses"></a>ウォッチ: 新しいライセンスを購入する
 

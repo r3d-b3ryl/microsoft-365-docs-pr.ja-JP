@@ -4,8 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/14/2022
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -25,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business Premium に含まれているサイバーセキュリティ ツールを使用して、マルウェア、フィッシング、およびその他の悪意のあるサイバー攻撃からメールを保護するようにチームをトレーニングする方法の概要。
-ms.openlocfilehash: 16e1107b67a406c5058d2e83a3f5d955bb748c39
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 7ffefa26e53dcde0f34451db3dfdccd014b9b555
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893169"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493662"
 ---
 # <a name="protect-all-email"></a>すべてのメールを保護する
 

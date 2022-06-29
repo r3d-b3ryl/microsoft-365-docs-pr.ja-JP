@@ -22,12 +22,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: e4ac7636b019b0e8c1d00487e95335ede4600d85
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 631849997fffc0e4f90a9aa9d1850646b764a52a
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570043"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493489"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -51,7 +51,7 @@ ms.locfileid: "64570043"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender ポータルの統合アクション センター。" lightbox="../../media/m3d-action-center-unified.png":::
 
-例: 
+次に例を示します。 
 
 - 以前に Office 365 セキュリティ & コンプライアンス センター ()[https://protection.office.com](https://protection.office.com) を使用していた場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で統合アクション センターを試してください。
 - Microsoft Defender セキュリティ センター () でアクション センターを使用していた場合は、Microsoft 365 Defender[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>で統合アクション センターを試します。
@@ -104,6 +104,7 @@ ms.locfileid: "64570043"
 - コードの実行を制限する (このアクションは元に戻すことができます) 
 - ウイルス対策スキャンの実行 
 - 停止と検疫 
+- ネットワークからデバイスを格納する
 
 アクション センターは、[自動調査](m365d-autoir.md)の結果として自動的に実行される修復アクションに加えて、検出された脅威に対処するためにセキュリティ チームが実行したアクションや、Microsoft 365 Defenderの脅威保護機能の結果として実行されたアクションも追跡します。 自動修復アクションと手動修復アクションの詳細については、「 [修復アクション」を](m365d-remediation-actions.md)参照してください。
 
@@ -128,12 +129,12 @@ ms.locfileid: "64570043"
 
 |修復アクション |必要な役割と権限 |
 |--|----|
-|Microsoft Defender for Endpoint修復 (デバイス) |Azure Active Directory (Azure AD) () または Microsoft 365 管理センター ([https://portal.azure.com](https://portal.azure.com)[https://admin.microsoft.com](https://admin.microsoft.com)) で割り当てられた **セキュリティ管理者** ロール<br/>--- または ---<br/>Microsoft Defender for Endpointで割り当てられた **アクティブな修復アクション** ロール <br/> <br/> 詳細については、次のリソースを参照してください。 <br/>- [組み込みロールをAzure ADする](/azure/active-directory/roles/permissions-reference)<br/>- [ロールベースのアクセス制御のロールを作成および管理する (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365修復 (コンテンツとメールOffice)  |Azure AD () または Microsoft 365 管理センター [https://admin.microsoft.com](https://admin.microsoft.com) ([https://portal.azure.com](https://portal.azure.com)) で割り当てられた **セキュリティ管理者** ロール<br/>--- さらに --- <br/>セキュリティ & コンプライアンス センターで割り当てられた **検索ロールと消去** ロール ([https://protection.office.com](https://protection.office.com)) <br/><br/>**重要**: **Office 365 セキュリティ** & コンプライアンス センター ()[https://protection.office.com](https://protection.office.com) でのみセキュリティ管理者ロールが割り当てられている場合は、アクション センターまたはMicrosoft 365 Defender機能にアクセスできません。 Azure ADまたはMicrosoft 365 管理センターに **セキュリティ管理者** ロールが割り当てられている必要があります。 <br/><br/>詳細については、次のリソースを参照してください。 <br/>- [組み込みロールをAzure ADする](/azure/active-directory/roles/permissions-reference)<br/>- [セキュリティ & コンプライアンス センターのアクセス許可](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint修復 (デバイス) |Azure Active Directory (Azure AD) () または Microsoft 365 管理センター [https://admin.microsoft.com](https://admin.microsoft.com) ([https://portal.azure.com](https://portal.azure.com)) で割り当てられた **セキュリティ管理者** ロール<br/>--- または ---<br/>Microsoft Defender for Endpointで割り当てられた **アクティブな修復アクション** ロール <br/> <br/> 詳細については、次のリソースを参照してください。 <br/>- [Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)<br/>- [ロールベースのアクセス制御のロールを作成および管理する (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
+|Microsoft Defender for Office 365修復 (Office コンテンツと電子メール)  |Azure AD () または Microsoft 365 管理センター [https://admin.microsoft.com](https://admin.microsoft.com) ([https://portal.azure.com](https://portal.azure.com)) で割り当てられた **セキュリティ管理者** ロール<br/>--- さらに --- <br/>セキュリティ & コンプライアンス センターで割り当てられた **検索ロールと消去** ロール ([https://protection.office.com](https://protection.office.com)) <br/><br/>**重要**: **Office 365 セキュリティ** & コンプライアンス センター ()[https://protection.office.com](https://protection.office.com) でのみセキュリティ管理者ロールが割り当てられている場合は、アクション センターまたはMicrosoft 365 Defender機能にアクセスできません。 Azure AD またはMicrosoft 365 管理センターで **セキュリティ管理者** ロールが割り当てられている必要があります。 <br/><br/>詳細については、次のリソースを参照してください。 <br/>- [Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)<br/>- [セキュリティ & コンプライアンス センターのアクセス許可](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
-> **Azure ADでグローバル管理者** ロールが割り当てられているユーザーは、アクション センターで保留中のアクションを承認または拒否できます。 ただし、ベスト プラクティスとして、組織は **グローバル管理者** ロールが割り当てられているユーザーの数を制限する必要があります。 アクション センターのアクセス許可については、前の表に記載されている **セキュリティ管理者**、 **アクティブな修復アクション**、 **および検索と消去** のロールを使用することをお勧めします。
+> Azure AD で **グローバル管理者** ロールが割り当てられているユーザーは、アクション センターで保留中のアクションを承認または拒否できます。 ただし、ベスト プラクティスとして、組織は **グローバル管理者** ロールが割り当てられているユーザーの数を制限する必要があります。 アクション センターのアクセス許可については、前の表に記載されている **セキュリティ管理者**、 **アクティブな修復アクション**、 **および検索と消去** のロールを使用することをお勧めします。
 
-## <a name="next-step"></a>次の手順 
+## <a name="next-step"></a>次のステップ 
 
 - [修復アクションを表示および管理する](m365d-autoir-actions.md)

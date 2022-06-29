@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Device Control リムーバブル Storage Access Control、リムーバブル ストレージ メディア
+title: Microsoft Defender for Endpoint Device Control リムーバブル ストレージ Access Control、リムーバブル ストレージ メディア
 description: Microsoft Defender for Endpointに関するウォークスルー
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,25 +14,25 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 06/20/2022
-ms.openlocfilehash: 78eb4f9cb65fb5eec54747a256abf290a43deb2f
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.date: 06/24/2022
+ms.openlocfilehash: d9ff97aa50a03c1a75f073328a250a9acc3faf54
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185461"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490755"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint デバイス コントロールリムーバブル Storage Access Control
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル ストレージ Access Control
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 > [!NOTE]
-> この製品のグループ ポリシー管理と Intune OMA-URI/Custom Policy management は一般公開されました (4.18.2106): [技術Communityブログを参照してください:リムーバブル ストレージとプリンターをMicrosoft Defender for Endpointで保護します](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)。
+> この製品のグループ ポリシー管理と Intune OMA-URI/Custom Policy management は一般公開されました (4.18.2106): [Tech Community ブログ: Microsoft Defender for Endpointを使用してリムーバブル ストレージとプリンターを保護します](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/protect-your-removable-storage-and-printers-with-microsoft/ba-p/2324806)。
 
-## <a name="device-control-removable-storage-access-control-overview"></a>Device Control リムーバブル Storage Access Controlの概要
+## <a name="device-control-removable-storage-access-control-overview"></a>Device Control リムーバブル ストレージ Access Controlの概要
 
-デバイス制御リムーバブル Storage Access Control機能Microsoft Defender for Endpoint、除外の有無にかかわらず、リムーバブル ストレージに対する読み取り、書き込み、または実行アクセスを監査、許可、または禁止できます。
+デバイス制御リムーバブル ストレージAccess Control機能Microsoft Defender for Endpoint、除外の有無にかかわらず、リムーバブル ストレージへの読み取り、書き込み、または実行アクセスを監査、許可、または禁止できます。
 
 |特権|アクセス許可|
 |---|---|
@@ -43,39 +43,41 @@ ms.locfileid: "66185461"
 |ユーザー ベースのサポート|はい|
 |マシンベースのサポート|はい|
 
-デバイス コントロールリムーバブル Storage Access Control機能Microsoft Defender for Endpoint、次の機能が提供されます。
+デバイスコントロールリムーバブル ストレージAccess Control機能Microsoft Defender for Endpoint、次の機能が提供されます。
 
 |機能|説明|Intuneを使用してデプロイする|グループ ポリシーを使用してデプロイする|
 |---|---|---|---|
-|リムーバブル メディア グループの作成|再利用可能なリムーバブル メディア グループを作成できます|セクション「Intune [OMA-URI を使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri)」の手順 4 と 6| 「[グループ ポリシーを使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)」セクションの手順 4 と 6|
-|ポリシーの作成|各リムーバブル メディア グループを適用するポリシーを作成できます|セクションの手順 5 と 7、[Intune OMA-URI を使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| 「[グループ ポリシーを使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)」セクションの手順 5 と 7|
-|既定の適用|ポリシーがない場合は、リムーバブル メディアに既定のアクセス (拒否または許可) を設定できます|セクションの手順 2. [Intune OMA-URI を使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | セクションの手順 2. [グループ ポリシーを使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)|
-|リムーバブル Storage Access Controlを有効または無効にする|[無効] を設定すると、このマシンのリムーバブル Storage Access Control ポリシーが無効になります。| セクションの手順 1. [Intune OMA-URI を使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| セクション「グループ ポリシー[を使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)」の手順 1|
-|ファイル情報をキャプチャする|書き込みアクセスが発生したときにファイル情報をキャプチャするポリシーを作成できます|  | セクション「[グループ ポリシーを使用したリムーバブル Storage Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)」の手順 10 |
+|リムーバブル メディア グループの作成|再利用可能なリムーバブル メディア グループを作成できます|セクションの手順 4 と 6、[Intune OMA-URI を使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| 「[グループ ポリシーを使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)」セクションの手順 4 と 6|
+|ポリシーの作成|各リムーバブル メディア グループを適用するポリシーを作成できます|セクション「Intune [OMA-URI を使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri)」セクションの手順 5 と 7| 「[グループ ポリシーを使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)」セクションの手順 5 と 7|
+|既定の適用|ポリシーがない場合は、リムーバブル メディアに既定のアクセス (拒否または許可) を設定できます|セクションの手順 2. [Intune OMA-URI を使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri) | セクションの手順 2. [グループ ポリシーを使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)|
+|リムーバブル ストレージ Access Controlを有効または無効にする|[無効] を設定すると、このマシンのリムーバブル ストレージ Access Control ポリシーが無効になります| セクションの手順 1. [Intune OMA-URI を使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-intune-oma-uri)| セクションの手順 1. [グループ ポリシーを使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)|
+|ファイル情報をキャプチャする|書き込みアクセスが発生したときにファイル情報をキャプチャするポリシーを作成できます|  | セクション「[グループ ポリシーを使用したリムーバブル ストレージ Access Controlの展開](#deploying-removable-storage-access-control-by-using-group-policy)」の手順 10 |
 
 ### <a name="prepare-your-endpoints"></a>エンドポイントを準備する
 
-マルウェア対策クライアント バージョン **4.18.2103.3 以降** のWindows 10およびWindows 11 デバイスにリムーバブル Storage Access Controlを展開します。
+マルウェア対策クライアント バージョン **4.18.2103.3 以降** のWindows 10およびWindows 11 デバイスにリムーバブル ストレージ Access Controlを展開します。
 
-- **4.18.2104 以降**: SerialNumberId、VID_PID、filepath ベースの GPO サポート、ComputerSid の追加
+- **4.18.2104 以降**: 追加 `SerialNumberId`、 `VID_PID`filepath ベースの GPO サポート、および `ComputerSid`
 
-- **4.18.2105 以降**: HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId のワイルドカード サポートを追加します。特定のマシン上の特定のユーザーの組み合わせ、リムーバブル SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
+- **4.18.2105 以降**: ワイルドカード サポート `HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId`を追加します。特定のマシン上の特定のユーザーの組み合わせ、リムーバブル SSD (SanDisk Extreme SSD)/USB Attached SCSI (UAS) のサポート
 
-- **4.18.2107 以降**: ポータブル デバイス (WPD) Windowsサポート (タブレットなどのモバイル デバイスの場合) を追加します。[高度なハンティング](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)に AccountName を追加する
+- **4.18.2107 以降**: Windows ポータブル デバイス (WPD) のサポート (タブレットなどのモバイル デバイスの場合) を追加します。[高度なハンティング](device-control-removable-storage-access-control.md#view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint)に追加する`AccountName`
+
+- **4.18.2205 以降**: 既定の適用を **[プリンター**] に展開します。 **[拒否]** に設定すると、プリンターもブロックされるため、記憶域のみを管理する場合は、プリンターを許可するカスタム ポリシーを作成してください。
 
 :::image type="content" source="images/powershell.png" alt-text="PowerShell インターフェイス" lightbox="images/powershell.png":::
 
 > [!NOTE]
-> Windows セキュリティ状態に関係なくリムーバブル Storage Access Controlを実行できるため、Windows セキュリティ コンポーネントをアクティブにする必要はありません。
+> Windows セキュリティ状態に関係なくリムーバブル ストレージ Access Controlを実行できるため、Windows セキュリティ コンポーネントをアクティブにする必要はありません。
 
-## <a name="device-control-removable-storage-access-control-policies"></a>Device Control リムーバブル Storage Access Control ポリシー
+## <a name="device-control-removable-storage-access-control-policies"></a>Device Control リムーバブル ストレージ Access Control ポリシー
 
 次のプロパティを使用して、リムーバブル ストレージ グループを作成できます。
 
 > [!NOTE]
 > XML コメント表記 `<!-- COMMENT -->` を使用するコメントは、ルールおよびグループ XML ファイルで使用できますが、XML ファイルの最初の行ではなく、最初の XML タグ内にある必要があります。
 
-### <a name="removable-storage-group"></a>リムーバブル Storage グループ
+### <a name="removable-storage-group"></a>リムーバブル ストレージ グループ
 
 |プロパティ名|説明|オプション|
 |---|---|---|
@@ -98,15 +100,15 @@ ms.locfileid: "66185461"
 | **オプション** | 通知を表示するかどうかを定義します |**[型の許可] が選択されている場合**: <p>0: 何もない<p>4: このエントリ **に対して AuditAllowed** と **AuditDenied** を無効にします。 **許可** が発生し、AuditAllowed が構成されている場合でも、システムはイベントを送信しません。 <p>8: ファイル情報をキャプチャし、書き込みアクセスの証拠としてファイルのコピーを作成します。 <p>16: 書き込みアクセスのファイル情報をキャプチャします。 <p>**[型拒否] が選択されている場合**: <p>0: 何もない<p>4: このエントリ **の AuditDenied** を無効にします。 **ブロック** が発生し、AuditDenied が構成されている場合でも、システムは通知を表示しません。 <p>**[種類 **AuditAllowed** ] が選択されている場合**: <p>0: 何もない <p>1: 何もない <p>2: イベントを送信する<p> **[種類 **AuditDenied** ] が選択されている場合**: <p>0: 何もない <p>1: 通知を表示する <p>2: イベントを送信する<p>3: 通知を表示し、イベントを送信する |
 |AccessMask|アクセスを定義します。 | **ディスク レベルのアクセス**: <p>1: 読み取り <p>2: 書き込み <p>4: 実行 <p>**ファイル システム レベルのアクセス**: <p>8: ファイル システムの読み取り <p>16: ファイル システムの書き込み <p>32: ファイル システムの実行 <p><p>バイナリ OR 操作を実行すると、複数のアクセス権を持つことができます。たとえば、読み取りと書き込みと実行の AccessMask は 7 になります。読み取りと書き込みの AccessMask は 3 になります。|
 
-## <a name="device-control-removable-storage-access-control-scenarios"></a>Device Control リムーバブル Storage Access Control シナリオ
+## <a name="device-control-removable-storage-access-control-scenarios"></a>Device Control リムーバブル ストレージのAccess Controlシナリオ
 
-リムーバブル Storage Access Control Microsoft Defender for Endpoint理解できるように、ユーザーが従う一般的なシナリオをいくつかまとめられています。
+リムーバブル ストレージ Access ControlのMicrosoft Defender for Endpoint理解を深めるために、一般的なシナリオをいくつか紹介しました。
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>シナリオ 1: 特定の承認済み USB を許可する以外のすべてのユーザーへの書き込みと実行のアクセスを禁止する
 
 1. グループを作成する
 
-    1. グループ 1: リムーバブル ストレージと CD/DVD。 リムーバブル ストレージと CD/DVD の例は、サンプル [のリムーバブル Storageファイルと CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** です。
+    1. グループ 1: リムーバブル ストレージと CD/DVD。 リムーバブル ストレージと CD/DVD の例として、サンプル [のリムーバブル ストレージと CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** があります。
 
     2. グループ 2: デバイスのプロパティに基づいて承認された USB。 このユース ケースの例として、サンプル [の承認済み USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ファイルのインスタンス ID - グループ **65fa649a-a111-4912-9294-fb6337a25038** があります。
 
@@ -123,7 +125,7 @@ ms.locfileid: "66185461"
 
 1. グループを作成する
 
-    1. グループ 1: リムーバブル ストレージと CD/DVD。 このユース ケースの例として、サンプル [のリムーバブル Storageおよび CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** があります。
+    1. グループ 1: リムーバブル ストレージと CD/DVD。 このユース ケースの例として、サンプル [のリムーバブル ストレージファイルと CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ファイルのグループ **9b28fae8-72f7-4267-a1a5-685f747a7146** があります。
 
     2. グループ 2: デバイスのプロパティに基づく未承認の USB(ベンダー ID/製品 ID、フレンドリ名- グループ **65fa649a-a111-4912-9294-fb6337a25038** )、サンプル [の未承認 USB Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) ファイル。
 
@@ -136,13 +138,13 @@ ms.locfileid: "66185461"
 
     2. ポリシー 2: 他のユーザーへの書き込みと実行アクセスを監査します。 このユース ケースの例として、サンプル シナリオ 2 のサンプル シナリオ 2 の PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** が [others.xmlファイルへのアクセスを監査することです](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 。
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>Intune OMA-URI を使用したリムーバブル Storage Access Controlのデプロイと管理
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-intune-oma-uri"></a>Intune OMA-URI を使用したリムーバブル ストレージ Access Controlのデプロイと管理
 
-リムーバブル Storage Access Control機能を使用すると、ユーザーまたはデバイス、またはその両方に OMA-URI を使用してポリシーを適用できます。
+リムーバブル ストレージ Access Control機能を使用すると、OMA-URI を使用して、ユーザーまたはデバイス、またはその両方にポリシーを適用できます。
 
 ### <a name="licensing-requirements"></a>ライセンスの要件
 
-リムーバブル Storage Access Controlの使用を開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)を確認する必要があります。 リムーバブル Storage Access Controlにアクセスして使用するには、Microsoft 365 E3またはMicrosoft 365 E5が必要です。
+リムーバブル ストレージ Access Controlの使用を開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)を確認する必要があります。 リムーバブル ストレージ Access Controlにアクセスして使用するには、Microsoft 365 E3またはMicrosoft 365 E5が必要です。
 
 ### <a name="permission"></a>アクセス許可
 
@@ -152,17 +154,15 @@ Intuneでのポリシーの展開では、デバイス構成プロファイル�
 - デバイス構成プロファイルに対してレポートの作成/編集/更新/読み取り/削除/表示のアクセス許可が有効になっているカスタム ロール
 - グローバル管理者
 
-### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Intune OMA-URI を使用したリムーバブル Storage Access Controlのデプロイ
+### <a name="deploying-removable-storage-access-control-by-using-intune-oma-uri"></a>Intune OMA-URI を使用したリムーバブル ストレージ Access Controlのデプロイ
 
-Microsoft エンドポイント マネージャー管理センター (<https://endpoint.microsoft.com/>) **> デバイス>プロファイル > プラットフォームの作成: Windows 10 以降、プロファイルの種類: テンプレート>カスタム** に移動します。
+Microsoft エンドポイント マネージャー 管理センター (<https://endpoint.microsoft.com/>) **> デバイス>プロファイル >プラットフォームの作成: Windows 10 以降、プロファイルの種類: テンプレート>カスタム** に移動する
 
-1. リムーバブル Storage Access Control (RSAC) を有効または無効にします。
-
-   リムーバブル Storage Access Controlは、次のように有効にすることができます。
+1. 次のようにデバイス制御を有効または無効にします。
 
    - [ **カスタム >構成設定**] で、[ **追加**] をクリックします。
    - [ **行の追加]** ウィンドウで、次のように入力します。
-     - **RSAC を有効にする****名前**
+     - **デバイス制御を有効にする****名前**
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControlEnabled`
      - **整数** としての **データ型**
      - **1** としての **値**
@@ -172,13 +172,13 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
      - [**保存**] をクリックします。
 
-   :::image type="content" source="images/enable-rsac.png" alt-text="リムーバブル Storage Access Control ポリシーを有効にするスクリーンショット" lightbox="images/enable-rsac.png":::
+   :::image type="content" source="images/enable-rsac.png" alt-text="リムーバブル ストレージ Access Control ポリシーを有効にするスクリーンショット" lightbox="images/enable-rsac.png":::
 
 2. 既定の適用を設定する:
 
-   ポリシーがない場合は、既定のアクセス (拒否または許可) をリムーバブル メディアに設定できます。
+   すべてのデバイスコントロール機能 (, , , `PrinterDevices`) に対して既定`WpdDevices``CdRomDevices`のアクセス (`RemovableMediaDevices`拒否または許可) を設定できます。
 
-   たとえば、RemovableMediaDevices には拒否ポリシーまたは許可ポリシーがありますが、CdRomDevices または WpdDevices のポリシーはありません。 このポリシーを使用して既定の拒否を設定すると、CdRomDevices または WpdDevices への読み取り/書き込み/実行アクセスがブロックされます。
+   たとえば、 **拒否** ポリシーまたは **許可** ポリシー `RemovableMediaDevices`を使用していますが、ポリシーが設定されていない `CdRomDevices` 場合や `WpdDevices`、 . このポリシーを使用して **既定の拒否** を設定すると、読み取り/書き込み/実行アクセスが`CdRomDevices``WpdDevices`ブロックされます。 ストレージのみを管理する場合は、プリンターの **許可** ポリシーを作成してください。それ以外の場合は、この既定の適用がプリンターにも適用されます。
 
    - [ **行の追加]** ウィンドウで、次のように入力します。
      - **既定の拒否** として **名前を付** けます
@@ -195,7 +195,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
 3. 監査の既定の拒否:
 
-   次のように、既定の拒否の監査ポリシーを作成できます。
+   既定の拒否の監査ポリシーは、次のように作成できます。
 
    - [ **行の追加]** ウィンドウで、次のように入力します。
      - **監査の既定の拒否** としての **名前**
@@ -214,26 +214,26 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
 4. ReadOnly - グループ:
 
-   次のように、ReadOnly アクセスを使用してリムーバブル ストレージ グループを作成できます。
+   次のように、ReadOnly アクセス権を持つリムーバブル ストレージ グループを作成できます。
 
    - [ **行の追加]** ウィンドウで、次のように入力します。
-     - **任意のリムーバブル Storage グループ** として **名前** を付けます
+     - **任意のリムーバブル ストレージ グループ** として **名前** を付けます
      - **OMA-URI** as `./Vendor/MSFT/Defender/Configuration/DeviceControl/PolicyGroups/%7b9b28fae8-72f7-4267-a1a5-685f747a7146%7d/GroupData`
 
-       :::image type="content" source="images/any-removable-storage-group.png" alt-text="リムーバブル Storage グループを作成するスクリーンショット" lightbox="images/any-removable-storage-group.png":::
+       :::image type="content" source="images/any-removable-storage-group.png" alt-text="リムーバブル ストレージ グループを作成するスクリーンショット" lightbox="images/any-removable-storage-group.png":::
 
      - **文字列としてのデータ型** **(XML ファイル)**
-       - **リムーバブル Storageおよび CD-DVD および WPD Group.xml** ファイルとしての **カスタム XML**
+       - **任意のリムーバブル ストレージ、CD-DVD、WPD Group.xml** ファイルとしての **カスタム XML**
 
          XML ファイル パス: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Any%20Removable%20Storage%20and%20CD-DVD%20and%20WPD%20Group.xml>
 
-         次の XML データを使用して、ReadOnly アクセスを使用して "リムーバブル Storageと CD-DVD および WPD グループ" を作成します。
+         次の XML データを使用して、ReadOnly アクセスを使用して '任意のリムーバブル ストレージと CD-DVD および WPD グループ' を作成します。
 
          :::image type="content" source="images/read-only-group-xml-file.png" alt-text="読み取り専用グループ xml ファイルのスクリーンショット":::
 
 5. ReadOnly - ポリシー:
 
-   ReadOnly ポリシーを作成し、ReadOnly リムーバブル ストレージ グループに適用して、次のように読み取りアクティビティを許可できます。
+   ReadOnly ポリシーを作成し、それを ReadOnly リムーバブル ストレージ グループに適用して、次のように読み取りアクティビティを許可できます。
 
    - [ **行の追加]** ウィンドウで、次のように入力します。
      - **読み取りを許可するアクティビティ** として **名前を付** けます
@@ -262,7 +262,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
        XML ファイル パス: <https://github.com/microsoft/mdatp-devicecontrol/blob/main/Removable%20Storage%20Access%20Control%20Samples/Intune%20OMA-URI/Approved%20USBs%20Group.xml>
 
-       次の XML データを使用して、許可されたメディア グループを作成します。
+       次の XML データを使用して、許可されるメディア グループを作成します。
 
        :::image type="content" source="images/create-group-allowed-medias-xml-file.png" alt-text="許可されたメディア xml ファイルのグループを作成するスクリーンショット":::
 
@@ -292,30 +292,32 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
 この機能は、Microsoft エンドポイント マネージャー管理センター (<https://endpoint.microsoft.com/>) で使用できます。 **Endpoint Security Attack** > **Surface Reduction** > **Create Policy** に移動します。 [**プラットフォーム: プロファイル:** **デバイス制御**] でWindows 10以降を選択します。
 
-## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>グループ ポリシーを使用したリムーバブル Storage Access Controlのデプロイと管理
+## <a name="deploying-and-managing-removable-storage-access-control-by-using-group-policy"></a>グループ ポリシーを使用したリムーバブル ストレージ Access Controlのデプロイと管理
 
-リムーバブル Storage Access Control機能を使用すると、ユーザーまたはデバイス、またはその両方にグループ ポリシーを使用してポリシーを適用できます。
+リムーバブル 記憶域Access Control機能を使用すると、ユーザーまたはデバイス、またはその両方にグループ ポリシーを使用してポリシーを適用できます。
 
 ### <a name="licensing"></a>ライセンス
 
-リムーバブル Storage Access Controlの使用を開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)を確認する必要があります。 リムーバブル Storage Access Controlにアクセスして使用するには、Microsoft 365 E3またはMicrosoft 365 E5が必要です。
+リムーバブル ストレージ Access Controlの使用を開始する前に、[Microsoft 365 サブスクリプション](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)を確認する必要があります。 リムーバブル ストレージ Access Controlにアクセスして使用するには、Microsoft 365 E3またはMicrosoft 365 E5が必要です。
 
-### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>グループ ポリシーを使用したリムーバブル Storage Access Controlのデプロイ
+### <a name="deploying-removable-storage-access-control-by-using-group-policy"></a>グループ ポリシーを使用したリムーバブル ストレージ Access Controlのデプロイ
 
-1. リムーバブル Storage Access Controlを有効または無効にします。
+1. リムーバブル ストレージ Access Controlを有効または無効にします。
 
-   リムーバブル Storage Access Control (RSAC) は、次のように有効にすることができます。
+   デバイス制御は、次のように有効にできます。
 
-   - **デバイス制御>機能> Microsoft Defender ウイルス対策 >コンポーネント> Windows管理用テンプレート>コンピューター構成に** 移動する
+   - **Windows コンポーネント> Microsoft Defender ウイルス対策>機能>デバイスコントロール>コンピューター構成>管理用テンプレートに** 移動する
    - [ **デバイス制御** ] ウィンドウで、[ **有効]** を選択します。
 
    :::image type="content" source="images/enable-rsac-gp.png" alt-text="グループ ポリシーを使用した RSAC の有効化のスクリーンショット " lightbox="images/enable-rsac-gp.png":::
 
 2. 既定の適用を設定する:
 
-   次のようにポリシーがない場合は、既定のアクセス (拒否または許可) をリムーバブル メディアに設定できます。
+   すべてのデバイスコントロール機能 (RemovableMediaDevices、CdRomDevices、WpdDevices、PrinterDevices) に対して既定のアクセス (拒否または許可) を設定できます。
 
-   - **[コンピューターの構成] > [管理用テンプレート] > Windowsコンポーネント> Microsoft Defender ウイルス対策 >デバイスコントロール>機能に移動>、デバイスコントロールの既定の適用を選択** する
+   たとえば、RemovableMediaDevices には拒否ポリシーまたは許可ポリシーがありますが、CdRomDevices または WpdDevices のポリシーはありません。 このポリシーを使用して既定の拒否を設定すると、CdRomDevices または WpdDevices への読み取り/書き込み/実行アクセスがブロックされます。 ストレージのみを管理する場合は、必ずプリンターの許可ポリシーを作成してください。それ以外の場合は、この既定の適用もプリンターにも適用されます。
+
+   - **Windows コンポーネント> Microsoft Defender ウイルス対策>機能>デバイスコントロール >>管理テンプレートに移動>デバイス コントロールの既定の適用を選択** する
 
    - [ **デバイスコントロールの既定の適用の選択]** ウィンドウで、[ **既定の拒否**] を選択します。
 
@@ -361,7 +363,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
    次のように、デバイス制御ポリシー グループを 1 つの XML ファイルに結合できます。
 
-   - デバイス **コントロール**\>定義 **デバイスコントロール ポリシー グループ****Windowsコンポーネント** \> **Microsoft Defender ウイルス対策** \> **コンピューター構成** \> **管理テンプレート**\>に移動します。
+   - **[コンピューター構成** \> **管理用テンプレート** \> **] Windows コンポーネント** \> **の Microsoft Defender ウイルス対策** \> **デバイスコントロール定義** \> **デバイス制御ポリシー グループ** に移動します。
 
     :::image type="content" source="images/define-device-control-policy-grps-gp.png" alt-text="デバイス制御ポリシー グループの定義のスクリーンショット" lightbox="images/define-device-control-policy-grps-gp.png":::
 
@@ -377,7 +379,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
    次のように、デバイス制御ポリシー規則を 1 つの XML ファイルに結合できます。
 
-   - **[コンピューター構成>管理用テンプレート> Windowsコンポーネント> Microsoft Defender ウイルス対策 >デバイス制御>デバイス制御ポリシー規則の定義**] に移動します
+   - **Windows コンポーネント> Microsoft Defender ウイルス対策>デバイス制御>デバイス制御ルールの定義>[コンピューター構成>管理テンプレート**] に移動します
 
      :::image type="content" source="images/define-device-cntrl-policy-rules-gp.png" alt-text="デバイス制御ポリシー規則の定義のスクリーンショット" lightbox="images/define-device-cntrl-policy-rules-gp.png":::
 
@@ -393,17 +395,17 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 
     書き込みアクセスが発生したときにファイルのコピー (証拠) を作成する場合は、システムがコピーを保存できる場所を設定する必要があります。
 
-    - **[コンピューターの構成] > [管理用テンプレート] > Windowsコンポーネント> Microsoft Defender ウイルス対策 >デバイスコントロール>デバイスコントロール証拠データのリモートの場所の定義** に移動します。
+    - **Microsoft Defender ウイルス対策 >>デバイスコントロール> Windows コンポーネント >>管理用テンプレートに移動>、デバイスコントロールの証拠データのリモートの場所を定義** します。
 
     - [ **デバイス制御証拠データのリモートの場所の定義** ] ウィンドウで、[ **有効]** を選択し、ローカルまたはネットワーク共有フォルダーのパスを入力します。
 
       :::image type="content" source="images/evidence-data-remote-location-gp.png" alt-text="デバイスコントロールの証拠データのリモートの場所を定義するスクリーンショット" lightbox="images/evidence-data-remote-location-gp.png":::
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでデバイス コントロールのリムーバブル Storage Access Control データを表示する
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでデバイス コントロールのリムーバブル ストレージ Access Control データを表示する
 
-[Microsoft 365 Defender ポータル](https://security.microsoft.com/advanced-hunting)には、Device Control リムーバブル Storage Access Controlによってトリガーされたイベントが表示されます。 Microsoft 365セキュリティにアクセスするには、次のサブスクリプションが必要です。
+[Microsoft 365 Defender ポータル](https://security.microsoft.com/advanced-hunting)には、Device Control リムーバブル ストレージ Access Controlによってトリガーされるイベントが表示されます。 Microsoft 365 セキュリティにアクセスするには、次のサブスクリプションが必要です。
 
-- E5 レポートのMicrosoft 365
+- E5 レポート用 Microsoft 365
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement
@@ -457,7 +459,7 @@ DeviceEvents
 
 ### <a name="what-are-the-removable-storage-media-and-policy-limitations"></a>リムーバブル ストレージ メディアとポリシーの制限事項は何ですか?
 
-Microsoft エンドポイント マネージャー管理センター (Intune) または Microsoft Graph API を通じてバックエンド呼び出しが行われるため、バックエンド呼び出しは OMA-URI (GET to read or PATCH to update) を介して行われるため、この制限は、XML ファイルの正式な 350,000 文字である Microsoft の任意の OMA-URI カスタム構成プロファイルと同じです。
+Microsoft エンドポイント マネージャー管理センター (Intune) から、または Microsoft Graph APIを介してバックエンド呼び出しが行われるため、バックエンド呼び出しは OMA-URI (GET to read or PATCH to update) を介して行われるため、制限は、XML ファイル用に正式に 350,000 文字である Microsoft の任意の OMA-URI カスタム構成プロファイルと同じです。
 
 たとえば、特定のユーザーを "許可"/"監査許可" するためにユーザー SID ごとに 2 つのエントリ ブロックが必要で、最後に "Deny" all に 2 つのエントリ ブロックが必要な場合は、2,276 人のユーザーを管理できます。
 

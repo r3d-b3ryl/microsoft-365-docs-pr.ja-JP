@@ -13,6 +13,8 @@
           href: compare-mdb-m365-plans.md
         - name: Microsoft 365 Lighthouse との統合
           href: mdb-lighthouse-integration.md
+        - name: パートナー向けのリソース
+          href: mdb-partners.md
     - name: 作業の開始
       items:
         - name: Defender for Business を取得する
@@ -41,7 +43,7 @@
           href: mdb-configure-security-settings.md
     - name: 検出された脅威を表示して対応する
       items:
-        - name: 脆弱性の管理 ダッシュボードを表示する
+        - name: 脆弱性管理ダッシュボードを表示する
           href: mdb-view-tvm-dashboard.md
         - name: インシデントの表示と管理
           href: mdb-view-manage-incidents.md

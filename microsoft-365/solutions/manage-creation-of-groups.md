@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 recommendations: false
 description: Microsoft 365 グループを作成できるユーザーを制御する方法について説明します。
-ms.openlocfilehash: 992f5c62654f23f90f910f62dc3bb78199b949b0
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 2136fbf51912e00b7552e687282d4a80688dcd9e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64946926"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493045"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Microsoft 365 グループを作成できるユーザーを管理する
 
@@ -44,7 +44,7 @@ ms.locfileid: "64946926"
 - Power BI (クラシック)
 - Web 用 Project / ロードマップ
 
-この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 グローバル管理者Microsoft 365、Microsoft 365 管理センター、Planner、Exchange、SharePointを使用してグループを作成できますが、Teamsなどの他の場所を使用することはできません。 他のロールは、次に示す限られた手段でMicrosoft 365 グループを作成できます。
+この記事の手順を実行しても、特定の役割のメンバーがグループを作成できなくなることはありません。 Microsoft 365 グローバル管理者は、Microsoft 365 管理センター、Planner、Exchange、SharePoint を使用してグループを作成できますが、Teams などの他の場所を使用することはできません。 他のロールは、次に示す限られた手段でMicrosoft 365 グループを作成できます。
 
 - Exchange 管理者: Exchange 管理センター、Azure AD
 - パートナー レベル 1 のサポート: Microsoft 365 管理センター、Exchange 管理センター、Azure AD
@@ -58,7 +58,7 @@ ms.locfileid: "64946926"
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
-グループを作成するユーザーを管理するには、次のユーザーにAzure AD Premiumライセンスまたは基本 EDU ライセンスAzure AD割り当てる必要があります。
+グループを作成するユーザーを管理するには、次のユーザーに Azure AD Premium ライセンスまたは Azure AD Basic EDU ライセンスが割り当てられている必要があります。
 
 - これらのグループ作成の設定を管理している管理者
 - グループの作成が許可されているグループのメンバー
@@ -94,7 +94,7 @@ ms.locfileid: "64946926"
 
 - Azure AD PowerShell モジュール (AzureAD) の 2.0 一般提供バージョンをインストールしている場合には、PowerShell セッションで `Uninstall-Module AzureAD` を実行してアンインストールし、`Install-Module AzureADPreview` を実行してプレビュー バージョンをインストールする必要があります。
 
-- プレビュー バージョンを既にインストールしている場合には、`Install-Module AzureADPreview`を実行しそれがこのモジュールの最新バージョンであることを確認します。
+- プレビュー バージョンを既にインストールしている場合には、`Update-Module AzureADPreview`を実行しそれがこのモジュールの最新バージョンであることを確認します。
 
 下のスクリプトを、Notepad などのテキスト エディターまたは [Windows PowerShell ISE](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise) にコピーます。
 

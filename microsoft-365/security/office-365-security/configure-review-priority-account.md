@@ -17,12 +17,12 @@ ms.custom: ''
 description: 組織内の重要なユーザーを識別し、優先度の高いアカウント タグを追加して、追加の保護を提供する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f240dd7f4679710859ffdeaccc6e935fa5f64e7
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 466061562ba0ccc1a33a9fe6ca58073196f4f7e0
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842343"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492183"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365で優先度アカウントを構成して確認する
 
@@ -40,9 +40,9 @@ ms.locfileid: "65842343"
 
 優先度アカウント保護は、事前に特定された重要なユーザーに対して既定で有効になっています。 ただし、組織のセキュリティ管理者は、次の手順に従って、優先度の高いアカウント保護を有効にすることもできます。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>**[設定** **電子メール &** \> コラボレーション\>**の優先度アカウント保護**] に移動します。 **[優先度アカウント保護**] ページに直接移動するには、 <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>**[設定** \> **メール] &コラボレーション** \> **の優先度アカウント保護** に移動します。 **[優先度アカウント保護**] ページに直接移動するには、 <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
-2. [ **優先度アカウント保護** ] ページで、[ **優先度アカウント保護**] をオンにします。
+2. [ **優先度アカウント保護** ] ページで、[ **優先度アカウント保護** ( ):::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: を有効にします。
 
     > [!div class="mx-imgBorder"]
     > ![優先度アカウント保護を有効にします。](../../media/mdo-priority-account-protection.png)
@@ -50,7 +50,23 @@ ms.locfileid: "65842343"
 > [!NOTE]
 > 優先度の高いアカウント保護を無効または無効にすることはお勧めしません。
 
-### <a name="enable-the-priority-account-tag"></a>優先度アカウント タグを有効にする
+PowerShell Exchange Onlineを使用して優先度アカウント保護を有効にする場合は、次の手順に従います。
+
+1. [Exchange Online PowerShell に接続](/powershell/exchange/connect-to-exchange-online-powershell)し、次のコマンドを実行します。
+
+   ```powershell
+   Set-EmailTenantSettings -EnablePriorityAccountProtection $true
+   ```
+
+2. 優先度アカウント保護が有効になっていることを確認するには、次のコマンドを実行して EnablePriorityAccountProtection プロパティの値を確認します。
+
+   ```powershell
+   Get-EmailTenantSettings | Format-List Identity,EnablePriorityAccountProtection
+   ```
+
+   値 True は、優先度アカウント保護が有効になっていることを意味します。 False の値は、優先度アカウント保護がオフになっていることを意味します。
+
+### <a name="assign-the-priority-account-tag-to-users"></a>優先度アカウント タグをユーザーに割り当てる
 
 Microsoft Defender for Office 365は、アラート、レポート、インシデントなどのフィルターとして使用できるタグとして優先度アカウントをサポートしています。
 

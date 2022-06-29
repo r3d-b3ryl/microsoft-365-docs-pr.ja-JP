@@ -21,14 +21,14 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft でアカウントを閉じると、ライセンス、ユーザー、ユーザー データを含め、アカウントに関連するすべての情報が削除されます。
 ms.date: 04/02/2021
-ms.openlocfilehash: c036a4cda929d58265a088b15a43772caacb0b94
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: a14dd1153d8030dd953c58404902a891aeefdaf9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102462"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491761"
 ---
-# <a name="close-your-account"></a>アカウントの使用を停止する
+# <a name="close-your-microsoft-account"></a>Microsoft アカウントを閉じる
 
 Microsoft でのアカウントの使用を停止すると、アカウントに関連するすべての情報が削除されます。 この情報には、サブスクリプション、ライセンス、支払方法、ユーザー、ユーザー データが含まれます。
 
@@ -48,7 +48,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 
 [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell コマンドレットを使用して、ユーザーを一括で削除することもできます。
 
-組織で Microsoft Azure Active Directory (Azure AD) と同期する Active Directory を使用している場合は、代わりに Active Directory からユーザー アカウントを削除します。 手順については、「[Azure Active Directoryでユーザーを一括削除する](/azure/active-directory/users-groups-roles/users-bulk-delete)」を参照してください。
+組織で Microsoft Azure Active Directory (Azure AD) と同期する Active Directory を使用している場合は、代わりに Active Directory からユーザー アカウントを削除します。 手順については、「 [Azure Active Directory でユーザーを一括削除する」を](/azure/active-directory/users-groups-roles/users-bulk-delete)参照してください。
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>手順 2: アクティブなすべてのサブスクリプションを取り消す
 
@@ -80,7 +80,7 @@ Microsoft でのアカウントの使用を停止すると、アカウントに�
 [PowerShell を使用して、複数のユーザーの多要素認証を無効に](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)することもできます。
 
 
-## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>手順 5: Azure Active Directoryのディレクトリを削除する
+## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>手順 5: Azure Active Directory でディレクトリを削除する
 
 1. グローバル管理者 アカウントを使用して <a href="https://aad.portal.azure.com/" target="_blank">Azure AD 管理センター</a>にサインインします。
 2. **Azure Active Directory** を選択します。

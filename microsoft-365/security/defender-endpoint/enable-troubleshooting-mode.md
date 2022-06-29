@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpointでのトラブルシューティング モードでの概要
+title: Microsoft Defender for Endpointでのトラブルシューティング モードの概要
 description: Microsoft Defender for Endpointトラブルシューティング モードをオンにして、さまざまなウイルス対策の問題に対処します。
 keywords: ウイルス対策, トラブルシューティング, トラブルシューティング モード, 改ざん防止, 互換性
 search.product: eADQiWindows 10XVcnh
@@ -17,48 +17,44 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4525ab2e979a16381ba75d2bdb229fb73d394156
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: eee3e07825b2775b4eff1b5fb45a6e1f86fc3a1b
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139388"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490593"
 ---
-# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでのトラブルシューティング モードでの概要 
+# <a name="get-started-with-troubleshooting-mode-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでのトラブルシューティング モードの概要 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
->Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
+> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
-Microsoft Defender for Endpointトラブルシューティング モードを使用すると、組織のポリシーによって制御されている場合でも、デバイスから有効にし、さまざまなシナリオをテストすることで、さまざまな Microsoft Defender ウイルス対策機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これは排他的にEnterprise専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
+Microsoft Defender for Endpointトラブルシューティング モードを使用すると、組織のポリシーによって制御されている場合でも、デバイスから有効にし、さまざまなシナリオをテストすることで、さまざまな Microsoft Defender ウイルス対策機能のトラブルシューティングを行うことができます。 トラブルシューティング モードは既定で無効になっており、デバイス (またはデバイスのグループ) で一定の時間有効にする必要があります。 これはエンタープライズ専用の機能であり、Microsoft 365 Defenderアクセスが必要であることに注意してください。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - トラブルシューティング モードを使用して、改ざん防止設定を無効または変更して実行します。
 
-  - Microsoft Defender ウイルス対策機能のトラブルシューティング/アプリケーションの互換性 (偽陽性のアプリケーション ブロック)。
-
-  - トラブルシューティング モードを使用し、改ざん防止やその他のウイルス対策設定を操作することで、パフォーマンスのトラブルシューティングをMicrosoft Defender ウイルス対策します。
+  - Microsoft Defender ウイルス対策機能のトラブルシューティング /アプリケーションの互換性 (誤検知アプリケーション ブロック)。
+  - トラブルシューティング モードを使用し、改ざん防止やその他のウイルス対策設定を操作することで、Microsoft Defender ウイルス対策のパフォーマンスのトラブルシューティングを行います。
 
 - 改ざんイベントが発生した場合 (たとえば、スナップショットが変更または削除された場合)、 `MpPreference` トラブルシューティング モードは終了し、改ざん保護はデバイスで有効になります。
 
-- 適切なアクセス許可を持つローカル管理者は、通常ポリシーによってロックされている個々のエンドポイントの構成を変更できます。 デバイスをトラブルシューティング モードにすると、Microsoft Defender ウイルス対策パフォーマンスと互換性のシナリオを診断するときに役立ちます。
+- 適切なアクセス許可を持つローカル管理者は、通常ポリシーによってロックされている個々のエンドポイントの構成を変更できます。 デバイスをトラブルシューティング モードにすると、Microsoft Defender ウイルス対策のパフォーマンスと互換性のシナリオを診断するときに役立ちます。
 
-  - ローカル管理者は、Microsoft Defender ウイルス対策をオフにしたり、アンインストールしたりすることはできません。
-
-  - ローカル管理者は、Microsoft Defender ウイルス対策 スイート内の他のすべてのセキュリティ設定 (クラウド保護、改ざん防止など) を構成できます。
+  - ローカル管理者は、Microsoft Defender ウイルス対策を無効にしたり、アンインストールしたりすることはできません。
+  - ローカル管理者は、Microsoft Defender ウイルス対策スイート内の他のすべてのセキュリティ設定 (クラウド保護、改ざん防止など) を構成できます。
 
 - "セキュリティ設定の管理" アクセス許可を持つ管理者は、トラブルシューティング モードを有効にするためのアクセス権を持ちます。
 
 - Microsoft Defender for Endpointは、トラブルシューティング プロセス全体を通じてログと調査データを収集します。
 
   - `MpPreference`のスナップショットは、トラブルシューティング モードが開始される前に作成されます。
-
   - 2 つ目のスナップショットは、トラブルシューティング モードの有効期限が切れる直前に作成されます。
-
   - トラブルシューティング モード中の操作ログも収集されます。
 
   - 上記のすべてのログとスナップショットが収集され、デバイス ページの [[調査パッケージ](respond-machine-alerts.md#collect-investigation-package-from-devices) の収集] 機能を使用して管理者が収集できるようになります。 管理者がデータを収集するまで、Microsoft はデバイスからこのデータを削除しません。
@@ -76,7 +72,7 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 - 高度な捜索では、すべてのトラブルシューティング モード イベントに対してクエリを実行できます。
 
 > [!NOTE]
-> ポリシー管理の変更は、コンピューターがトラブルシューティング モードでアクティブになっている場合に適用されます。 ただし、トラブルシューティング モードの有効期限が切れるまで、変更は有効になりません。 さらに、Microsoft Defender ウイルス対策 プラットフォームの更新プログラムは、トラブルシューティング モードでは適用されません。 トラブルシューティング モードがWindows更新プログラムで終了すると、プラットフォームの更新プログラムが適用されます。
+> ポリシー管理の変更は、コンピューターがトラブルシューティング モードでアクティブになっている場合に適用されます。 ただし、トラブルシューティング モードの有効期限が切れるまで、変更は有効になりません。 また、トラブルシューティング モードでは、Microsoft Defender ウイルス対策プラットフォームの更新プログラムは適用されません。 トラブルシューティング モードが Windows 更新プログラムで終了すると、プラットフォームの更新プログラムが適用されます。
 
 ## <a name="prerequisites"></a>前提条件
 
@@ -114,36 +110,37 @@ Microsoft Defender for Endpointトラブルシューティング モードを使
 環境で発生しているトラブルシューティング イベントを把握できるように、事前に構築された高度なハンティング クエリを次に示します。 また、これらのクエリを使用して、デバイスがトラブルシューティング モードのときにアラートを表示する [検出ルールを作成](/defender/custom-detection-rules.md#create-a-custom-detection-rule) することもできます。
 
 ### <a name="get-troubleshooting-events-for-a-particular-device"></a>特定のデバイスのトラブルシューティング イベントを取得する
-
+それぞれの行をコメントアウトして、deviceId または deviceName で検索します。  
 ```kusto
-let deviceName = "<device name>";   // update with device name
-let deviceId = "<device id>";   // update with device id
-search in (DeviceEvents)
-(DeviceName == deviceName
-) and ActionType == "AntivirusTroubleshootModeEvent"
+//let deviceName = "<deviceName>";   // update with device name
+let deviceId = "<deviceID>";   // update with device id
+DeviceEvents
+| where DeviceId == deviceId
+//| where DeviceName  == deviceName
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| project $table, Timestamp,DeviceId, DeviceName, _tsmodeproperties,
+| project Timestamp,DeviceId, DeviceName, _tsmodeproperties,
  _tsmodeproperties.TroubleshootingState, _tsmodeproperties.TroubleshootingPreviousState, _tsmodeproperties.TroubleshootingStartTime,
  _tsmodeproperties.TroubleshootingStateExpiry, _tsmodeproperties.TroubleshootingStateRemainingMinutes,
  _tsmodeproperties.TroubleshootingStateChangeReason, _tsmodeproperties.TroubleshootingStateChangeSource
 ```
 
-### <a name="devices-currently-in-troubleshooting-mode"></a>現在トラブルシューティング モードのデバイス
+### <a name="devices-currently-in-troubleshooting-mode"></a>現在トラブルシューティング モードのデバイス  
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
-| where Timestamp > ago(3h)
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
 |summarize (Timestamp, ReportId)=arg_max(Timestamp, ReportId), count() by DeviceId
+| order by Timestamp desc
 ```
 
 ### <a name="count-of-troubleshooting-mode-instances-by-device"></a>デバイス別のトラブルシューティング モード インスタンスの数
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(30d)  // choose the date range you want
 | where _tsmodeproperties.TroubleshootingStateChangeReason contains "started"
@@ -154,8 +151,8 @@ ActionType == "AntivirusTroubleshootModeEvent"
 ### <a name="total-count"></a>総件数
 
 ```kusto
-search in (DeviceEvents)
-ActionType == "AntivirusTroubleshootModeEvent"
+DeviceEvents
+| where ActionType == "AntivirusTroubleshootModeEvent"
 | extend _tsmodeproperties = parse_json(AdditionalFields)
 | where Timestamp > ago(2d) //beginning of time range
 | where Timestamp < ago(1d) //end of time range

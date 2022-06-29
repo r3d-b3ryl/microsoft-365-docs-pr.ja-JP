@@ -4,9 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium のすべてのデバイスに Office をインストールする方法。
-ms.openlocfilehash: b05e0330d4119f8c03379a56f541e7a9ca0f8415
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: a0e2295e9d741221cafafc1ed843373937deaa1b
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623570"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486579"
 ---
 # <a name="install-office-apps-on-all-devices"></a>すべてのデバイスに Office をインストールする
 
@@ -48,7 +48,6 @@ ms.locfileid: "65623570"
 3. Office アプリがインストールされました。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
 4. Microsoft Teams をインストールするには、office.com ページに移動し、**[Teams]** を選択します。
 5. Windows アプリを入手してから、**[実行]** を選択します。 インストールが完了すると、Teams のダイアログが表示されます。
-
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザーのモバイル デバイスをセットアップする
 

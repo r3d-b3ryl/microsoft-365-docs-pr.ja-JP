@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
+manager: dansimp
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium に関するこれらのセキュリティの推奨事項がユーザーにどのように影響し、データを保護するかについて説明します。
-ms.openlocfilehash: 30e609a6dc74ef8a0303c93f65eb44a4003d3a99
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 49d5a4cea525f8245599ded625af6d7a5b355eae
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893141"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491097"
 ---
 # <a name="how-these-security-recommendations-affect-your-microsoft-365-users"></a>これらのセキュリティに関する推奨事項が Microsoft 365 ユーザーに与える影響
 
@@ -73,7 +73,7 @@ ms.locfileid: "65893141"
 
 [管理されていない Windows 10 および Mac デバイス](m365bp-protect-pcs-macs.md)の場合、ユーザーは基本的なセキュリティ機能が有効になっていることを確認する責任があります。
 
-**BYOD Windows 10 および Mac デバイスで基本的なセキュリティ機能を有効にする**
+### <a name="enable-basic-security-capabilities-on-byod-windows-10-and-mac-devices"></a>BYOD Windows 10 および Mac デバイスで基本的なセキュリティ機能を有効にする
 
 |**Windows 10**|**Mac**|
 |:-----|:------|

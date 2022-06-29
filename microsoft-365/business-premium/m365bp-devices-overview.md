@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 03/02/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: サイバー攻撃やその他の悪意のある脅威や脆弱性に対する保護を使用して、すべての持ち込みデバイス (BYOD) を設定する方法の概要。
-ms.openlocfilehash: 5485df4f468d724dee5ecb2fcc80b89523eb9c63
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 1ecf39d7d08cd76e0279b0de8869ed14550e020f
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101934"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491047"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>非管理対象 (BYOD) デバイスを設定する
 
-すべてのデバイスはネットワークへの攻撃の可能性があり、個人が所有しているが仕事に使用されるデバイスであっても、適切に監視および管理する必要があります。 この重要なミッションでは、すべての持ち込みデバイス (BYOD) の保護を設定します。これは、管理されていないために組織にとって最も危険なデバイスです。 これらのデバイスをできるだけ早く保護することが重要です。 
+すべてのデバイスはネットワークへの攻撃の可能性があり、個人が所有しているが仕事に使用されるデバイスであっても、適切に監視および管理する必要があります。 この重要なミッションでは、すべての持ち込みデバイス (BYOD) の保護を設定します。これは、管理されていないために組織にとって最も危険なデバイスです。 これらのデバイスをできるだけ早く保護することが重要です。
 
 目標は次のとおりです。
 

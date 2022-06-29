@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: a9e46b428500b41b143585434f7a16c13227db1c
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: ebfcfe21070656d71c50429cd4653d0e14f7724d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669762"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493233"
 ---
 # <a name="offboard-machine-api"></a>オフボード マシン API
 
@@ -48,7 +48,7 @@ Defender for Endpoint のオフボード デバイス。
   [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 > [!NOTE]
-> この API は、Windows 11、Windows 10、バージョン 1703 以降、またはサーバー 2019 以降Windowsでサポートされています。
+> この API は、Windows 11、Windows 10、バージョン 1703 以降、または Windows Server 2019 以降でサポートされています。
 >
 > この API は、MacOS または Linux デバイスではサポートされていません。
 
@@ -77,7 +77,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -86,7 +86,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター|型|説明
+パラメーター|種類|説明
 ---|---|---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
 
@@ -98,7 +98,7 @@ Content-Type|string|application/json. **必須**。
 
 ### <a name="request"></a>要求
 
-以下は、要求の例です。
+以下は、要求の例です。 JSON コメントが追加されていない場合は、コード **400** でエラーが発生します。
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/offboard

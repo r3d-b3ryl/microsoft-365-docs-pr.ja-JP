@@ -19,18 +19,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: さまざまなリージョンのビジネス サブスクリプションに対してMicrosoft 365に対して課金される税金の額を確認します。
+description: さまざまなリージョンのビジネス サブスクリプションに対して Microsoft 365 に対して課金される税金の額を確認します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 049b361f75dec9402464aa4216e15388a8174f1d
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 1c676167f68c37b51c2ccdfc8ac08561e52cbea9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101626"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486539"
 ---
-# <a name="tax-information"></a>税金情報
+# <a name="microsoft-365-tax-information"></a>Microsoft 365 の税金の情報
 
-Microsoft 365製品とサービスを購入する場合、支払う税金は、ビジネス アドレスと配送先住所 (異なる場合) のいずれかによって決まります。 組織が米国内にある場合は、連邦雇用主識別番号 (FEIN) を指定する必要があります。
+Microsoft 365 の製品とサービスを購入する場合、支払う税金は、会社の住所、または異なる場合は配送先住所のいずれかによって決まります。 組織が米国内にある場合は、連邦雇用主識別番号 (FEIN) を指定する必要があります。
 
 次の国の企業は、VAT 番号または同等の現地番号を提供できます。
 
@@ -102,13 +102,13 @@ Microsoft 365製品とサービスを購入する場合、支払う税金は、�
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>ヨーロッパ、中東、アフリカ (EMEA)
 
-EMEA リージョンでMicrosoft 365サービスを購入する場合、この購入はValue-Added税 (VAT) の対象になる可能性があります。
+EMEA リージョンで Microsoft 365 サービスを購入する場合、この購入はValue-Added税 (VAT) の対象になる可能性があります。
   
 - 欧州連合のメンバー国、アルメニア、ベラルーシ、ノルウェー、トルコ、アラブ首長国連邦に所在し、有効な VAT ID を指定していない場合、Microsoft Ireland Operations Ltd. は、アカウントが設定されている課金先の国に基づいて、現在の現地 VAT 料金を適用します。
 
 - リヒテンシュタイン、ロシア、セルビア、南アフリカ、スイスに所在する場合は、VAT ID を指定するかどうかにかかわらず、VAT が適用されます。
 
-- EU のお客様の場合は、VAT ID を検証する前に、VAT 情報Exchange System (VIES) で確認できる必要があります。 VAT ID を確認できない場合は、現地の税務当局にお問い合わせください。
+- EU のお客様の場合は、VAT ID を検証する前に、VAT 情報交換システム (VIES) で確認できる必要があります。 VAT ID を確認できない場合は、現地の税務当局にお問い合わせください。
 
 次の場合、VAT ゼロレーティングの対象となる場合があります。
   
@@ -134,7 +134,7 @@ Microsoft 地域販売オフィスから請求される場合は、「Microsoft 
 
 米国、カナダ、メキシコ、チリ、コロンビアでは、製品の性質と場所に応じてさまざまな税率が適用されます。
   
-Microsoft Corporation によって請求が行われた場合 ([請求書を参照し](view-your-bill-or-invoice.md)、米国、カナダ、プエルトリコ、チリ、コロンビア以外のMicrosoft 365にサインアップした場合、税金は一般に課金されません。
+Microsoft Corporation によって請求が行われた場合 ([請求書を参照し](view-your-bill-or-invoice.md)、米国、カナダ、プエルトリコ、チリ、コロンビアの外部で Microsoft 365 にサインアップした場合、税金は一般に課金されません。
 
 ## <a name="add-your-vat-id"></a>VAT ID を追加する
 
@@ -148,7 +148,7 @@ Microsoft Corporation によって請求が行われた場合 ([請求書を参�
 
 売上税は単価に対して計算され、集計されます。
 
-例として以下のようなものがあります。
+次に例を示します。
 
 >*(単価 X 税率)X 数量 = 総売上税*
 

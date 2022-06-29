@@ -21,20 +21,20 @@ ms.custom:
 search.appverid: MET150
 description: 課金アカウントと、アカウントの設定、請求書、支払い方法、購入の管理に使用する方法について説明します。
 ms.date: 05/24/2022
-ms.openlocfilehash: 0c1dd2048cbe38ecca162f361f3f0bdbc6c3861f
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 4630ee028a298d3c901a0e66cde41df58bebece2
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670060"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493621"
 ---
-# <a name="understand-billing-accounts"></a>請求アカウントを理解する
+# <a name="understand-your-microsoft-billing-accounts"></a>Microsoft の課金アカウントを理解する
 
-Microsoft 製品を試用または購入するためにサインアップすると、課金アカウントが作成されます。 課金アカウントを使用して、アカウント設定、請求書、支払い方法、購入を管理することができます。 複数の課金アカウントにアクセスできます。 たとえば、Microsoft 365に直接サインアップした場合や、組織のEnterprise Agreement、Microsoft Product & Services Agreement、またはMicrosoft 顧客契約にアクセスできます。 これらのシナリオごとに、個別の課金アカウントがあります。
+Microsoft 製品を試用または購入するためにサインアップすると、課金アカウントが作成されます。 課金アカウントを使用して、アカウント設定、請求書、支払い方法、購入を管理することができます。 複数の課金アカウントにアクセスできます。 たとえば、Microsoft 365 に直接サインアップした場合や、組織のEnterprise Agreement、Microsoft 製品&サービス契約、またはMicrosoft 顧客契約にアクセスできます。 これらのシナリオごとに、個別の課金アカウントがあります。
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>は現在、次の種類の課金アカウントをサポートしています。
 
-- Microsoft Online Services プログラム: この課金アカウントは、Microsoft 365 サブスクリプションに直接サインアップするときに作成されます。
+- Microsoft Online Services Program: この課金アカウントは、Microsoft 365 サブスクリプションに直接サインアップするときに作成されます。
 - Microsoft Products & Services Agreement (MPSA) プログラム: この課金アカウントは、組織が MPSA ボリューム ライセンス契約に署名してソフトウェアとオンライン サービスを購入するときに作成されます。
 - Microsoft 顧客契約: この課金アカウントは、組織が Microsoft の担当者、承認されたパートナー、または購入と個別に連携するときに作成されます。
 
@@ -77,7 +77,7 @@ Microsoft 製品を試用または購入するためにサインアップする�
 
 > [!Note]
 > - 課金アカウント ロールは課金アカウントにのみ適用され、他のMicrosoft 365 管理センターシナリオには適用されません。
-> - Microsoft 365サインアップの内部で作成された課金アカウントの場合、新しいグローバル管理者、課金管理者、グローバル 閲覧者管理者には、個別のアクセス レベルが自動的に付与されます。 このアクセスは、ページの下部にあるロールの割り当てセクションからそれらのユーザーを明示的に削除することで、[ **課金** > **アカウント** ] ページから管理できます。
+> - Microsoft 365 サインアップの内部で作成された課金アカウントの場合、新しいグローバル管理者、課金管理者、グローバル 閲覧者管理者には、個別のアクセス レベルが自動的に付与されます。 このアクセスは、ページの下部にあるロールの割り当てセクションからそれらのユーザーを明示的に削除することで、[ **課金** > **アカウント** ] ページから管理できます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

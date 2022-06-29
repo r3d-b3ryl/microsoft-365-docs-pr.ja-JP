@@ -1,6 +1,6 @@
 ---
 title: Windows でクライアント アナライザーを実行する
-description: WindowsでMicrosoft Defender for Endpointクライアント アナライザーを実行する方法について説明します。
+description: Windows でMicrosoft Defender for Endpointクライアント アナライザーを実行する方法について説明します。
 keywords: クライアント アナライザー, センサーのトラブルシューティング, アナライザー, mdeanalyzer, windows
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5ac27241297b9943f1559653777b8e1668fe7f89
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 51eaa6ddcaf50a48ccbd8ffc000a79049c1d9842
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783031"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489472"
 ---
 # <a name="run-the-client-analyzer-on-windows"></a>Windows でクライアント アナライザーを実行する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-1. 調査する必要があるWindows コンピューターに [MDE クライアント アナライザー ツール](https://aka.ms/mdatpanalyzer)をダウンロードします。
+1. 調査する必要がある Windows コンピューターに [MDE クライアント アナライザー ツール](https://aka.ms/mdatpanalyzer) をダウンロードします。
 
 2. コンピューター上のMDEClientAnalyzer.zipの内容を抽出します。
 
@@ -53,9 +53,9 @@ ms.locfileid: "64783031"
 上記に加えて、 [ライブ応答を使用してアナライザー サポート ログを収集](troubleshoot-collect-support-log.md)するオプションもあります。
 
 > [!NOTE]
-> Windows 10/11 では、Windows Server 2019/2022、または[最新の統合ソリューション](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)がインストールされた Windows Server 2012R2/2016 では、クライアント アナライザー スクリプトは、クラウド サービス URL への接続テストを実行するために呼び出された実行可能ファイルを呼び出`MDEClientAnalyzer.exe`します。
+> Windows 10/11、Windows Server 2019/2022、または[最新の統合ソリューション](configure-server-endpoints.md#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)がインストールされた Windows Server 2012R2/2016 では、クライアント アナライザー スクリプトが実行可能ファイルを呼び出して、`MDEClientAnalyzer.exe`クラウド サービス URL への接続テストを実行します。
 >
-> Windows 8.1、Windows Server 2016、またはMicrosoft Monitoring Agent (MMA) がオンボードに使用されている以前の OS エディションでは、クライアント アナライザー スクリプトは実行可能ファイルを呼び出`MDEClientAnalyzerPreviousVersion.exe`して、Command and Control (CnC) URL の接続テストを実行すると同時に呼び出します。サイバー データ チャネル URL の接続ツール`TestCloudConnection.exe`をMicrosoft Monitoring Agentします。
+> Windows 8.1、Windows Server 2016、または Microsoft Monitoring Agent (MMA) がオンボードに使用されている以前の OS エディションでは、クライアント アナライザー スクリプトは実行可能ファイルを呼び出`MDEClientAnalyzerPreviousVersion.exe`し、コマンドおよびコントロール (CnC) URL の接続テストを実行すると同時に、サイバー データ チャネル URL 用の Microsoft Monitoring Agent 接続ツール`TestCloudConnection.exe`も呼び出します。
 
 
 アナライザーに含まれるすべての PowerShell スクリプトとモジュールは、Microsoft によって署名されています。
@@ -75,14 +75,14 @@ MDEClientAnalyzer.ps1が変更された後の内容の例:
 
 
 
-## <a name="result-package-contents-on-windows"></a>Windowsの結果パッケージの内容
+## <a name="result-package-contents-on-windows"></a>Windows 上の結果パッケージの内容
 
 > [!NOTE]
 > キャプチャされる正確なファイルは、次のような要因によって変わる場合があります。
 >
 > - アナライザーを実行するウィンドウのバージョン。
 > - コンピューターでのイベント ログ チャネルの可用性。
-> - EDR センサーの開始状態 (マシンがまだオンボードされていない場合は、センスは停止します)。
+> - EDR センサーの開始状態 (マシンがまだオンボードされていない場合はセンスが停止します)。
 > - アナライザー コマンドで高度なトラブルシューティング パラメーターが使用された場合。
 
 既定では、アンパックされたMDEClientAnalyzerResult.zip ファイルには次の項目が含まれます。
@@ -94,11 +94,11 @@ MDEClientAnalyzer.ps1が変更された後の内容の例:
 - SystemInfoLogs \[フォルダー\]
   - AddRemovePrograms.csv
 
-    説明: レジストリから収集された x64 OS ソフトウェアにインストールされている x86 ソフトウェアの一覧。
+    説明: レジストリから収集された x64 OS にインストールされている x64 ソフトウェアの一覧。
 
   - AddRemoveProgramsWOW64.csv
 
-    説明: レジストリから収集された x64 OS ソフトウェアにインストールされている x86 ソフトウェアの一覧。
+    説明: レジストリから収集された x64 OS にインストールされている x86 ソフトウェアの一覧。
 
     - CertValidate.log
 
@@ -106,7 +106,7 @@ MDEClientAnalyzer.ps1が変更された後の内容の例:
 
     - dsregcmd.txt
 
-      説明: [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd) の実行からの出力。 これにより、コンピューターのAzure AD状態に関する詳細が表示されます。
+      説明: [dsregcmd](/azure/active-directory/devices/troubleshoot-device-dsregcmd) の実行からの出力。 これにより、マシンの Azure AD の状態に関する詳細が表示されます。
 
     - IFEO.txt
 

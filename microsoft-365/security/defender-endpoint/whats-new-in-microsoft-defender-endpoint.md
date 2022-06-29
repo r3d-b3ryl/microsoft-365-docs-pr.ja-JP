@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint の新機能
-description: Microsoft Defender for Endpointの最新リリースで一般公開されている機能 (GA) と、Windows 10およびWindows サーバーのセキュリティ機能を確認します。
+description: Microsoft Defender for Endpointの最新リリースで一般公開されている機能 (GA) と、Windows 10と Windows Server のセキュリティ機能について説明します。
 keywords: Microsoft Defender for Endpoint、ga、一般公開、機能、利用可能、新規の新機能
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 282834b0c582690ff53c8361440bce21fc2d4d0b
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679278"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492427"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -56,24 +56,27 @@ ms.locfileid: "65679278"
 
 他のオペレーティング システムでのMicrosoft Defender for Endpointの詳細については、次の手順を参照してください。
 
-- [Defender for Endpoint on macOSの新機能](mac-whatsnew.md)
-- [Defender for Endpoint on iOSの新機能](ios-whatsnew.md)
+- [macOS 上の Defender for Endpoint の新機能](mac-whatsnew.md)
+- [iOS 上の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
+## <a name="june-2022"></a>2022 年 6 月
+- [Defender for Servers プラン 2 が MDE 統合ソリューションと統合されるようになりました](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>これで、Windows Server 2012 R2 と 2016 の最新の統合ソリューションを、1 つのボタンを使用して Defender for Servers Plan 2 の対象となるサーバーに展開できるようになりました。
+
 ## <a name="may-2022"></a>2022 年 5 月
-- [macOSの改ざん防止 (プレビュー)](tamperprotection-macos.md)<br>改ざん防止は、macOSでのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。
+- [macOS の改ざん防止 (プレビュー)](tamperprotection-macos.md)<br>改ざん防止は、macOS でのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。
 
 - [ドメイン コントローラー デバイスの追加 - 評価ラボの機能強化 (プレビュー)](evaluation-lab.md#add-a-domain-controller-preview)<br>ドメイン コントローラーを追加して、複数のデバイスにわたる横移動や多段階攻撃などの複雑なシナリオを実行します。
 
 ## <a name="april-2022"></a>2022 年 4 月
 - [Windows Server 2012 R2 とWindows Server 2016) のオンボードと機能パリティを更新しました](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージが一般公開され、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になりました。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。
-- Tunnelとの統合。 iOSのMicrosoft Defender for Endpointは、1 つのアプリでセキュリティと接続を有効にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できるようになりました。この機能は、以前はAndroidでのみ使用できます。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
+- Tunnel との統合。 iOS のMicrosoft Defender for Endpointは、1 つのアプリでセキュリティと接続を有効にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できるようになりました。この機能は、以前は Android でのみ使用できます。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)
 
 ## <a name="january-2022"></a>2022 年 1 月
 
 - 評価ラボの機能強化: Windows 11デバイスと Linux デバイスをラボに追加できるようになりました。 
 
-- AndroidとiOSの脅威と脆弱性の管理が一般公開されるようになりました。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) を参照してください。
+- Android と iOS の脅威と脆弱性の管理が一般公開されました。 [詳細情報](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663) を参照してください。
 
 ## <a name="december-2021"></a>2021 年 12 月
 
@@ -85,7 +88,7 @@ ms.locfileid: "65679278"
 
 ## <a name="november-2021"></a>2021 年 11 月
 
-- [セキュリティ構成管理](security-config-management.md) <br/> Microsoft IntuneまたはMicrosoft Endpoint Configuration ManagerのMicrosoft エンドポイント マネージャーによって管理されていないデバイスが Microsoft Defender のセキュリティ構成を直接受信する機能。エンドポイント マネージャー。
+- [セキュリティ構成管理](security-config-management.md) <br/> Microsoft エンドポイント マネージャーによって管理されていないデバイス (Microsoft Intuneまたは Microsoft Endpoint Configuration Manager) が Microsoft Defender のセキュリティ構成をエンドポイント マネージャーから直接受信する機能。
 
 - クロスプラットフォームサポートの機能強化。
 
@@ -128,13 +131,13 @@ ms.locfileid: "65679278"
 
 - [モバイル アプリケーション管理のサポート](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> この機能強化により、Intuneがモバイル アプリケーションの管理に使用されている場合に、マネージド アプリケーション内で組織のデータを保護Microsoft Defender for Endpointできます。 モバイル アプリケーション管理の詳細については、 [このドキュメントを参照してください](/mem/intune/apps/mam-faq)。
 
-- [Microsoft Tunnel VPN 統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能は、Android用のMicrosoft Defender for Endpoint アプリと統合されるようになりました。 この統合により、組織は 1 つのセキュリティ アプリでシンプルなエンド ユーザー エクスペリエンスを提供できます。モバイル脅威の防御とモバイル デバイスからオンプレミスのリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
+- [Microsoft Tunnel VPN の統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-new-capabilities-on-android-and-ios/ba-p/2442730) <br> Microsoft Tunnel VPN 機能は、Android 用のMicrosoft Defender for Endpoint アプリと統合されるようになりました。 この統合により、組織は 1 つのセキュリティ アプリでシンプルなエンド ユーザー エクスペリエンスを提供できます。モバイル脅威の防御とモバイル デバイスからオンプレミスのリソースにアクセスする機能の両方を提供し、セキュリティチームと IT チームは、使い慣れた管理者エクスペリエンスを維持できます。
 
-- [iOSでの脱獄検出](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> iOSのMicrosoft Defender for Endpointでの脱獄検出機能が一般公開されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「 [デバイス リスク信号に基づいて条件付きアクセス ポリシーを設定する](/microsoft-365/security/defender-endpoint/ios-configure-features)」を参照してください。
+- [iOS での脱獄検出](/microsoft-365/security/defender-endpoint/ios-configure-features#conditional-access-with-defender-for-endpoint-on-ios) <br> iOS でのMicrosoft Defender for Endpointでの脱獄検出機能が一般公開されました。 これにより、既に存在するフィッシング保護が追加されます。  詳細については、「 [デバイス リスク信号に基づいて条件付きアクセス ポリシーを設定する](/microsoft-365/security/defender-endpoint/ios-configure-features)」を参照してください。
 
 
 ## <a name="march-2021"></a>2021 年 3 月
-- [Microsoft 365 Defender ポータルを使用して改ざん防止を管理する](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> *テナントアタッチ* と呼ばれるメソッドを使用して、Windows 10、Windows Server 2016、Windows Server 2019、Windows Server 2022 で改ざん防止設定を管理できます。
+- [Microsoft 365 Defender ポータルを使用して改ざん防止を管理する](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) <br> *テナントアタッチ* と呼ばれる方法を使用して、Windows 10、Windows Server 2016、Windows Server 2019、Windows Server 2022 の改ざん防止設定を管理できます。
 
 
 ## <a name="january-2021"></a>2021 年 1 月

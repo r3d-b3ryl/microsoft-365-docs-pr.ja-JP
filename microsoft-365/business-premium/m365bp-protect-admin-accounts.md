@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium で管理者アカウントを設定して保護する方法について説明します。
-ms.openlocfilehash: 1428ee6b447f3f841e7e8e9b77cfd82c2f7a6444
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e20fa8f408668287065f6aa1e30490fd8e3c2fec
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320013"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489927"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium で管理者アカウントを保護する
 

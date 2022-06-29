@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: d7681be9f1103fbf21b7f3f89b74fc6d9d32f809
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: 276bcd6616abe3cf68731bad6f62b3d996557719
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663648"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490124"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 LighthouseとMicrosoft Defender for Business
 
 ## <a name="microsoft-defender-for-business-integrates-with-microsoft-365-lighthouse"></a>Microsoft Defender for BusinessとMicrosoft 365 Lighthouseの統合
 
-Microsoft クラウド ソリューション プロバイダー (CSP) で[Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)がある場合は、顧客 (中小企業) のセキュリティを管理できます。 Microsoft Defender for Businessは、Microsoft 365 Lighthouse ポータル ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でテナント間のセキュリティ インシデントを表示できるように、Microsoft 365 Lighthouseと統合するように設計されています。 
+Microsoft Cloud Solution Provider (CSP) で[Microsoft 365 Lighthouse](../../lighthouse/m365-lighthouse-overview.md)がある場合は、顧客 (中小企業) のセキュリティを管理できます。 Microsoft Defender for Businessは、Microsoft 365 Lighthouse ポータル ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でテナント間のセキュリティ インシデントを表示できるように、Microsoft 365 Lighthouseと統合するように設計されています。 
 
 :::image type="content" source="media/lighthouse-incidents.png" alt-text="Microsoft 365 Lighthouseのインシデントリストのスクリーンショット":::
 
@@ -41,3 +41,7 @@ Microsoft 365 Lighthouseにより、Microsoft Cloud Service プロバイダー�
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (プラン [1 Microsoft Defender for Endpoint](../defender-endpoint/defender-endpoint-plan-1.md)含まれるようになりました)
 
 詳細については、「[Microsoft 365 Lighthouseの概要](../../lighthouse/m365-lighthouse-overview.md)」を参照してください。
+
+## <a name="see-also"></a>関連項目
+
+[Microsoft Defender for Businessおよびマネージド サービス プロバイダーのリソース](mdb-partners.md)

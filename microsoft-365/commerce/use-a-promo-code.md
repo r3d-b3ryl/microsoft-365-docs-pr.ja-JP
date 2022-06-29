@@ -18,16 +18,16 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_SMB
 search.appverid: MET150
-description: プロモーション コードをMicrosoft 365 サブスクリプションに適用して価格を下げる方法と、エラーが発生した場合にプロモーション コードをトラブルシューティングする方法について説明します。
+description: Microsoft 365 サブスクリプションにプロモーション コードを適用して価格を下げる方法と、エラーが発生した場合にプロモーション コードをトラブルシューティングする方法について説明します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 08a5df42de5c230ef7f0945e40c13262e0ae2bb7
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: bff75666fc27895c3d4bdf08477aec677ccd927d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63325405"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489412"
 ---
-# <a name="use-your-promo-code-to-reduce-price"></a>プロモーション コードを使用して価格を下げる
+# <a name="use-your-microsoft-365-for-business-promo-code-to-reduce-the-price"></a>Microsoft 365 for business プロモーション コードを使用して価格を下げる
 
 サブスクリプションを購入するときに、プロモーション コードを使用して価格を下げることが可能です。 この記事では、サブスクリプションにプロモーション コードを適用する方法、 [プロモーション コード用語](#promo-code-terms)の詳細、プロモーション コードのトラブルシューティングを行う方法について説明 [します](#troubleshooting-promo-codes)。
   
@@ -42,7 +42,7 @@ ms.locfileid: "63325405"
   
 ## <a name="promo-code-terms"></a>プロモーション コードの用語
 
-ビジネス サブスクリプションのMicrosoft 365のプロモーション コードには、次のガイドラインが適用されます。
+ビジネス サブスクリプションの Microsoft 365 のプロモーション コードには、次のガイドラインが適用されます。
   
 - **各サブスクリプションのプロモーション コードの数** 同じ注文の複数のサブスクリプションに 1 つのプロモーション コードを使用できますが、同じサブスクリプションに複数のプロモーション コードを使用することはできません。
 - **割引期間** プロモーション コード割引は、注文に適用されると、サブスクリプションの期間だけ続きます。サブスクリプションの期間が月単位の場合、プロモーション コード割引は、プロモーション コードを入力した請求月の終わりまで続きます。サブスクリプションの期間が年単位の場合 (支払いが月単位でも)、プロモーション コード割引はプロモーション コードを入力した請求年の終わりまで続きます。

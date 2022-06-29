@@ -19,14 +19,14 @@ ms.custom:
 search.appverid: MET150
 description: 新しい割り当て機能について説明します。
 ms.date: 05/12/2022
-ms.openlocfilehash: 60c2fdcd451f5926cbda84d8e5236176314bd3f5
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 2ab253bd122fb4f8ec83c38cb623217ec6ae3815
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636088"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489115"
 ---
-# <a name="allotment-basics"></a>割り当ての基本
+# <a name="microsoft-365-license-allotment-basics"></a>Microsoft 365 ライセンス割り当ての基本
 
 ライセンス割り当てでは、ライセンス制限を設定し、選択した製品とライセンス制限のみにライセンスの割り当ての管理を委任できます。
 
@@ -41,7 +41,7 @@ ms.locfileid: "65636088"
 割り当ては、ユーザーが使用できる任意の製品で使用できます。
 
 - Office スイートとスタンドアロン製品
-- Enterpriseおよびモビリティ製品
+- エンタープライズおよびモビリティ製品
 - Dynamics 365 製品
 
 次の製品を割り当てと共に使用することはできません。
@@ -52,6 +52,6 @@ ms.locfileid: "65636088"
 
 割り当ての作業を開始するには、グローバル管理者またはライセンス管理者である必要があります。
 
-## <a name="getting-started"></a>作業を開始する
+## <a name="getting-started"></a>はじめに
 
 割り当て機能は、少数の顧客のみがプライベート プレビューで使用できます。 参加に関心がある場合は、次のフォームに入力します [https://aka.ms/allotment-pilot-signup](https://aka.ms/allotment-pilot-signup)。

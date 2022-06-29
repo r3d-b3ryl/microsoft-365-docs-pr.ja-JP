@@ -3,7 +3,7 @@ title: 21Vianet が運営する Office 365の URL と IP アドレス範囲
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 04/28/2022
+ms.date: 06/01/2022
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: この記事では、21Vianet が中国で運用する場合のOffice 365の URL と IP アドレス範囲を一覧表示します。
 hideEdit: true
-ms.openlocfilehash: 4c91505c0a83408e435879e718901d949e5eba26
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
+ms.openlocfilehash: e99a89e511faef069f0856e046ea1898e896b3c1
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217522"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489905"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>21Vianet が運営する Office 365の URL と IP アドレス範囲
 
@@ -34,9 +34,9 @@ ms.locfileid: "65217522"
 
 **概要**: 次のエンドポイント (FQDN、ポート、URL、IPv4、および IPv6 プレフィックス) は 21Vianet が運営する Office 365 に適用され、これらのプランだけを活用して生産性サービスを組織へ提供できるように設計されています。
   
- **Office 365 エンドポイント:** [世界 (GCCを含む)](urls-and-ip-address-ranges.md)  | *Office 365 21 Vianet* |  [Office 365 米国政府機関 DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 米国政府機関GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) によって運用されています |
+ **Office 365 エンドポイント:** [世界 (GCC を含む)](urls-and-ip-address-ranges.md)  |  *Office 365 21 Vianet* |  [Office 365米国政府機関 DoD](microsoft-365-u-s-government-dod-endpoints.md) |  [Office 365 米国政府機関 GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md) によって運用されています |
   
-**最終更新日:** 2021 年 4 月 28 日 - ![RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログのサブスクリプション](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
+**最終更新日:** 2022 年 6 月 1 日 - ![RSS。](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [変更ログのサブスクリプション](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)
 
 **ダウンロード:** 1 つの [JSON 形式](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)リスト内のすべての必須およびオプションの宛先。
 

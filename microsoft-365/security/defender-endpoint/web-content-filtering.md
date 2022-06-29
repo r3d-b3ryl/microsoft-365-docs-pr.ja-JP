@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 29a221e60484431722be4e7104efb5b37a0408bc
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 7b195f595592b5c3b284b6dee4fd65b66d80e06a
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648571"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489367"
 ---
 # <a name="web-content-filtering"></a>Web コンテンツ フィルタリング
 
@@ -39,7 +39,7 @@ Web コンテンツ のフィルター処理は、Microsoft Defender for Endpoin
 
 特定のカテゴリをブロックするように、デバイス グループ間でポリシーを構成します。 カテゴリをブロックすると、指定したデバイス グループ内のユーザーがカテゴリに関連付けられている URL にアクセスできなくなります。 ブロックされていないカテゴリの場合、URL は自動的に監査されます。 ユーザーは中断することなく URL にアクセスでき、アクセス統計を収集して、よりカスタム ポリシーの決定を作成するのに役立ちます。 表示しているページ上の要素がブロックされたリソースを呼び出している場合、ユーザーにブロック通知が表示されます。
 
-Web コンテンツ フィルターは、主要な Web ブラウザーで使用できます。Windows Defender SmartScreen (Microsoft Edge) と Network Protection (Chrome、Firefox、Brave、Opera) によって実行されるブロックがあります。 ブラウザーのサポートの詳細については、前提条件に関 [するセクションを参照してください](#prerequisites) 。
+Web コンテンツ のフィルター処理は、主要な Web ブラウザーで利用できます。このブロックは、Windows Defender SmartScreen (Microsoft Edge) と Network Protection (Chrome、Firefox、Brave、Opera) によって実行されます。 ブラウザーのサポートの詳細については、前提条件に関 [するセクションを参照してください](#prerequisites) 。
 
 ## <a name="benefits-of-web-content-filtering"></a>Web コンテンツ フィルター処理の利点
 
@@ -63,11 +63,22 @@ Web コンテンツ フィルターは、主要な Web ブラウザーで使用�
 
 データは、[Microsoft Defender for Endpointデータ処理設定](data-storage-privacy.md)の一部として選択されたリージョンに格納されます。 データは、そのリージョンのデータ センターから離れるわけではありません。 また、お客様のデータは、弊社のデータ プロバイダーを含む第三者と共有されることはありません。
 
+## <a name="precedence-for-multiple-active-policies"></a>複数のアクティブなポリシーの優先順位
+
+同じデバイスに複数の異なる Web コンテンツ フィルター ポリシーを適用すると、カテゴリごとに適用されるポリシーの制限が強化されます。 次のような状況で問題が発生します。
+
+- **ポリシー 1**: カテゴリ 1 とカテゴリ 2 をブロックし、残りの部分を監査する
+- **ポリシー 2**: カテゴリ 3 と 4 をブロックし、残りの部分を監査する
+
+その結果、カテゴリ 1 から 4 がすべてブロックされます。  これを次の図に示します。
+
+:::image type="content" source="images/web-content-filtering-policies-mode-precedence.png" alt-text="監査モードよりも Web コンテンツ フィルター ポリシー ブロック モードの優先順位を示します":::
+
 ## <a name="turn-on-web-content-filtering"></a>Web コンテンツ フィルターを有効にする
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。
 
-2. ナビゲーション ウィンドウで、**設定[Endpoints** General Advanced Features]\ **(**\>エンドポイント **の**\>一般的\>**な高度な機能\)** を選択します。 
+2. ナビゲーション ウィンドウで、[Settings Endpoints General Advanced Features **]\(設定** \> **エンドポイントの** \> **一般的** \> **な高度な機能\)** を選択します。 
 
 3. **Web コンテンツ のフィルター処理** が表示されるまで下にスクロールします。 
 
@@ -75,7 +86,7 @@ Web コンテンツ フィルターは、主要な Web ブラウザーで使用�
 
 ### <a name="configure-web-content-filtering-policies"></a>Web コンテンツ フィルター ポリシーを構成する
 
-Web コンテンツ フィルター ポリシーでは、どのデバイス グループでブロックされるサイト カテゴリを指定します。 ポリシーを管理するには、**設定** \> **Endpoints** \> **Web コンテンツ フィルター** ([**ルール**] の下) に移動します。
+Web コンテンツ フィルター ポリシーでは、どのデバイス グループでブロックされるサイト カテゴリを指定します。 ポリシーを管理するには、[設定エンドポイント **] Web コンテンツ フィルター** ([**ルール****]** \> の下) に移動 **します**\>。
 
 ポリシーをデプロイして、次の親または子のカテゴリのいずれかをブロックできます。
 
@@ -143,7 +154,7 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 **インスタント メッセージング: インスタント** メッセージング ソフトウェアまたはクライアント ベースのインスタント メッセージングをダウンロードするために使用できるサイト。
 
-**Professional ネットワーク**: プロフェッショナル ネットワーク サービスを提供するサイト。
+**プロフェッショナル ネットワーク**: プロフェッショナル ネットワーク サービスを提供するサイト。
 
 **ソーシャル ネットワーク: ソーシャル ネットワーク** サービスを提供するサイト。
 
@@ -166,7 +177,7 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 新しいポリシーを追加するには、次の手順に従います。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、**設定** > **Web コンテンツ フィルター** **+ ポリシーの追加** を > 選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、[**設定****Web コンテンツ フィルター+ ポリシーの** > **追加]** >  を選択します。
 
 2. 名前を指定します。
 
@@ -186,7 +197,7 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 ## <a name="end-user-experience"></a>エンドユーザーのエクスペリエンス
 
-サード パーティでサポートされているブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これにより、ブロックされた接続をユーザーに通知するシステム レベルのメッセージが提供されます。 ブラウザー内のユーザー フレンドリなエクスペリエンスを実現するために、Microsoft Edgeの使用を検討してください。
+サード パーティでサポートされているブラウザーのブロック エクスペリエンスは、ネットワーク保護によって提供されます。これにより、ブロックされた接続をユーザーに通知するシステム レベルのメッセージが提供されます。 より使いやすいブラウザー内エクスペリエンスを実現するために、Microsoft Edge の使用を検討してください。
 
 ### <a name="allow-specific-websites"></a>特定の Web サイトを許可する
 
@@ -194,7 +205,7 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 カスタム インジケーターを定義するには、次の手順に従います。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、**エンドポイント** \> **インジケーター** \> **URL/ドメイン** \> **追加項目****設定**\>に移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、[設定 **エンドポイント** \> **インジケーター** \> **の URL/ドメイン****追加項目****]** \> に\>移動します。
 
 2. サイトのドメインを入力します。
 
@@ -248,9 +259,9 @@ Web コンテンツ フィルター ポリシーでは、どのデバイス グ�
 
 ### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
-デバイスの OS 構成がサーバー (**cmd** \> **Systeminfo** \> **OS 構成**) の場合にのみ、Microsoft Edgeがサポートされます。 Network Protection は、サポートされているサード パーティのブラウザー間のトラフィックのセキュリティ保護を担当するサーバー デバイスの検査モードでのみサポートされます。
+デバイスの OS 構成がサーバー (**cmd** \> **Systeminfo** \> **OS 構成**) の場合にのみ、Microsoft Edge がサポートされます。 Network Protection は、サポートされているサード パーティのブラウザー間のトラフィックのセキュリティ保護を担当するサーバー デバイスの検査モードでのみサポートされます。
 
-Microsoft Edgeのみがサポートされ、azure Virtual Desktop マルチセッション ホストWindows 10ネットワーク保護はサポートされていません。
+Microsoft Edge のみがサポートされており、azure Virtual Desktop マルチセッション ホストWindows 10ネットワーク保護はサポートされていません。
 
 ネットワーク保護は現在 SSL 検査をサポートしていないため、通常はブロックされる Web コンテンツ フィルターによって一部のサイトが許可される可能性があります。 TLS ハンドシェイクが行われた後の暗号化されたトラフィックの可視性が不足し、特定のリダイレクトを解析できないため、サイトは許可されます。  これには、一部の Web ベースのメール ログイン ページからメールボックス ページへのリダイレクトが含まれます。 受け入れられた回避策として、ログイン ページのカスタム ブロック インジケーターを作成して、ユーザーがサイトにアクセスできないようにすることができます。 これにより、同じ Web サイトに関連付けられている他のサービスへのアクセスがブロックされる可能性があることに注意してください。 
 

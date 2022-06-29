@@ -19,18 +19,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: ビジネス サブスクリプションのMicrosoft 365のアドオンを購入および管理する方法について説明します。
+description: Microsoft 365 for Business サブスクリプションのアドオンを購入および管理する方法について説明します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 28c155eaa10a578d10126c563945859e6931f180
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 4fbb4cc9277c4f4a6ddc3c780388d0ebd8d492ad
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101648"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492084"
 ---
-# <a name="buy-or-manage-add-ons"></a>アドオンを購入するか、管理します
+# <a name="buy-or-manage-add-ons-for-microsoft-365-business-plans"></a>Microsoft 365 ビジネス プランのアドオンを購入または管理する
 
-ビジネス プランの多くのMicrosoft 365には、サブスクリプション用に購入できるアドオンがあります。 アドオンには、サブスクリプション エクスペリエンスを向上させるために、より多くの機能が用意されています。
+多くの Microsoft 365 for Business プランには、サブスクリプション用に購入できるアドオンがあります。 アドオンには、サブスクリプション エクスペリエンスを向上させるために、より多くの機能が用意されています。
 
 アドオンには次の 2 種類があります。
 

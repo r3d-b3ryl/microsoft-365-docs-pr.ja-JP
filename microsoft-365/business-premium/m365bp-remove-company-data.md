@@ -2,11 +2,11 @@
 title: デバイスから会社のデータを削除する
 f1.keywords:
 - NOCSH
-ms.author: sharik
-author: skjerland
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,19 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Microsoft 365 for Business を使用して、ユーザーがデバイスまたは Windows PC に持っている会社のデータを削除する方法をご覧ください。
-ms.openlocfilehash: f4f9971e65c65267ee9b4e4f8ee99196f5773355
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 082dbdc11a06a03962594c247dcd6738118a0667
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317444"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490737"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
-
-この記事は Microsoft 365 Business Premium に適用されます。
-
-> [!NOTE]
-> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
 
 ## <a name="remove-company-data"></a>会社データを削除する
 

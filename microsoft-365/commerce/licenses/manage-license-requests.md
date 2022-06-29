@@ -18,16 +18,16 @@ ms.custom:
 - MACBillingLicensesRequests
 - AdminSurgePortfolio
 search.appverid: MET150
-description: ビジネス サブスクリプションのMicrosoft 365に対するユーザーからのライセンス要求を確認および承認または拒否する方法について説明します。
+description: Microsoft 365 for Business サブスクリプションのユーザーからのライセンス要求を確認および承認または拒否する方法について説明します。
 ms.date: 04/22/2022
-ms.openlocfilehash: dfe8410ce894e19489664396866917e4c5bb3dd4
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: b4259c4c04284e47193d827a6a10214669a5c991
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044249"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491009"
 ---
-# <a name="manage-license-requests"></a>ライセンス要求を管理する
+# <a name="manage-self-service-license-requests"></a>セルフサービス ライセンス要求を管理する
 
 > [!NOTE]
 > この記事の情報は、セルフサービスで購入された製品にのみ適用されます。 詳細については、「 [セルフサービス購入に関する FAQ](../subscriptions/self-service-purchase-faq.yml)」を参照してください。
@@ -35,13 +35,13 @@ ms.locfileid: "66044249"
 組織内でセルフサービス購入を無効にした場合は、ライセンス要求を使用して、ユーザーのライセンス要求プロセスを管理できます。 ユーザーがブロックした製品のセルフサービス購入を行おうとすると、管理者であるユーザーにライセンスの要求を送信できます。要求を行うときは、製品のライセンスも必要な他のユーザーの名前を追加できます。
 
 > [!NOTE]
-> ユーザーがセルフサービス購入を行うのをブロックした場合、Microsoft はマーケティングメールを送信しません。 また、試用版の製品を使用している場合、製品の購入を求めるメッセージは表示されません。 詳細については、「 [セルフサービス購入の管理 (管理者)](../subscriptions/manage-self-service-purchases-admins.md)」を参照してください。
+> ユーザーがセルフサービス購入を行うのをブロックした場合、Microsoft はマーケティングメールを送信しません。 また、試用版の製品を使用している場合、製品の購入を求めるメッセージは表示されません。 詳細については、「[セルフサービス購入の管理 (管理)」](../subscriptions/manage-self-service-purchases-admins.md)を参照してください。
 
 管理者は、ライセンス要求を表示および管理するために、[ライセンス] ページ **の [要求** ] タブ **を** 使用します。 一覧には、要求された製品の名前、ライセンスを要求するユーザーの名前、要求された日付、要求の状態が表示されます。 管理者は、一覧をフィルター処理して、保留中または完了している要求を表示できます。 要求は 30 日間保持されます。
 
 ## <a name="before-you-begin"></a>はじめに
 
-この記事のタスクを実行するには、グローバル管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+この記事のタスクを実行するには、グローバル管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="use-your-own-request-process"></a>独自の要求プロセスを使用する
 

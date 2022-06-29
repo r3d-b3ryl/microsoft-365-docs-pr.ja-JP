@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/23/2020
 ms.technology: mde
-ms.openlocfilehash: e801776001b79bf1ae3e6e8a220c5e4c395896db
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: cc88fa877c0c284555f1702a5fa3190a06e7e47e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941974"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490877"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint で問題が発生したセンサーの修正
 
@@ -39,7 +39,13 @@ ms.locfileid: "61941974"
 
 非アクティブなデバイスは、問題が原因で必ずしもフラグが設定されるとは限りません。 デバイスで実行される次のアクションにより、デバイスが非アクティブとして分類される可能性があります。
 
-### <a name="device-is-not-in-use"></a>デバイスが使用されていない
+- デバイスが使用されていない
+- デバイスが再インストールまたは名前変更されました
+- デバイスがオフボードされました
+- デバイスがシグナルを送信していない
+
+
+### <a name="device-isnt-in-use"></a>デバイスが使用されていない
 
 7 日間以上使用されていないデバイスは、ポータルで "非アクティブ" 状態を保持します。
 
@@ -49,8 +55,8 @@ ms.locfileid: "61941974"
 ### <a name="device-was-offboarded"></a>デバイスがオフボードされました
 デバイスがオフボードであった場合でも、デバイスの一覧に表示されます。 7 日後、デバイスの正常性状態は非アクティブに変わります。
 
-### <a name="device-is-not-sending-signals"></a>デバイスがシグナルを送信していない
-デバイスが何らかの理由で 7 日を超えて任意のMicrosoft Defender for Endpoint チャネルに信号を送信していない場合、デバイスは非アクティブと見なすことができます。これには、構成が誤ったデバイス分類に該当する条件が含まれます。
+### <a name="device-isnt-sending-signals"></a>デバイスがシグナルを送信していない
+デバイスが何らかの理由で 7 日を超えて任意のMicrosoft Defender for Endpoint チャネルに信号を送信していない場合、デバイスは非アクティブと見なすことができます。これには、構成されていないデバイスの分類に該当する条件が含まれます。
 
 デバイスが "アクティブ" 状態になっていると想定していますか? [サポート チケットを開きます](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636206786382823561)。
 
@@ -84,9 +90,9 @@ ms.locfileid: "61941974"
   プロキシ構成が正常に完了していること、WinHTTP が環境内のプロキシ サーバーを介して検出して通信できること、およびプロキシ サーバーがMicrosoft Defender for Endpoint サービス URL へのトラフィックを許可していることを確認します。
 
 - [診断データ サービスが有効になっていることを確認する](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
-デバイスが正しく報告されていない場合は、Windows診断データ サービスが自動的に開始するように設定されていることを確認する必要があります。 また、Windows診断データ サービスがエンドポイントで実行されていることを確認します。
+デバイスが正しく報告されていない場合は、Windows 診断データ サービスが自動的に開始するように設定されていることを確認する必要があります。 また、Windows 診断データ サービスがエンドポイントで実行されていることを確認します。
 
-- [ポリシーによってMicrosoft Defender ウイルス対策が無効になっていないことを確認する](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+- [ポリシーによって Microsoft Defender ウイルス対策が無効になっていないことを確認する](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
 デバイスがサードパーティのマルウェア対策クライアントを実行している場合、Defender for Endpoint エージェントでは、Microsoft Defender ウイルス対策早期起動マルウェア対策 (ELAM) ドライバーが有効になっている必要があります。
 
 修正アクションを実行し、デバイスの状態がまだ正しく構成されていない場合は、 [サポート チケットを開きます](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409)。

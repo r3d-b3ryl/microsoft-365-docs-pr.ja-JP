@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8a6022161b3c5c52fafd6cc17e5bdea50abc9b7e
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 491d51b30b45fb99cba9924f947c9566305c2fbc
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419244"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490965"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Microsoft Defender 更新プログラムのカスタム 段階的ロールアウト プロセスを作成する
 
@@ -39,9 +39,9 @@ ms.locfileid: "65419244"
 - Windows
 
 > [!NOTE]
-> この機能には、Microsoft Defender ウイルス対策 バージョン 4.18.2106.X 以降が必要です。
+> この機能には、Microsoft Defender ウイルス対策バージョン 4.18.2106.X 以降が必要です。
 
-Defender 更新プログラムの独自のカスタム 段階的ロールアウト プロセスを作成するには、グループ ポリシー、Microsoft エンドポイント マネージャー、および PowerShell を使用できます。
+Defender 更新プログラムの独自のカスタム 段階的ロールアウト プロセスを作成するには、グループ ポリシー、Microsoft エンドポイント マネージャー、PowerShell を使用できます。
 
 次の表に、更新チャネルを構成するために使用できるグループ ポリシー設定を示します。
 
@@ -62,9 +62,9 @@ Defender 更新プログラムの独自のカスタム 段階的ロールアウ�
 > [!NOTE]
 > 更新された Defender ADMX テンプレートは、Windows 10の 21H2 リリースと共に公開されます。 ローカライズされていないバージョンは、次の場所で https://github.com/microsoft/defender-updatecontrolsダウンロードできます。
 
-[グループ ポリシー](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)を使用して、エンドポイントのMicrosoft Defender ウイルス対策を構成および管理できます。
+[グループ ポリシー](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)を使用して、エンドポイントで Microsoft Defender ウイルス対策を構成および管理できます。
 
-一般に、次の手順を使用して、グループ ポリシー設定Microsoft Defender ウイルス対策構成または変更できます。
+一般に、次の手順を使用して、Microsoft Defender ウイルス対策グループ ポリシー設定を構成または変更できます。
 
 1. グループ ポリシー管理マシンで、**グループ ポリシー管理コンソール** を開き、構成する **グループ ポリシー オブジェクト** (GPO) を右クリックし、[編集] をクリック **します**。
 
@@ -72,7 +72,7 @@ Defender 更新プログラムの独自のカスタム 段階的ロールアウ�
 
 3. [ **管理用テンプレート]** をクリックします。
 
-4. ツリーを展開して **、> Microsoft Defender ウイルス対策コンポーネントをWindows** します。
+4. **ツリーを Microsoft Defender ウイルス対策> Windows コンポーネントに展開します**。
 
 5. 構成する設定を含むセクション (このトピックの「 **場所** 」と呼ばれます) を展開し、設定をダブルクリックして開き、構成を変更します。
 
@@ -96,7 +96,7 @@ Defender 更新プログラムの独自のカスタム 段階的ロールアウ�
 Set-MpPreference
 -PlatformUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
 -EngineUpdatesChannel Beta|Preview|Staged|Broad|Delayed|NotConfigured
--DisableGradualRelease True|False
+-DisableGradualRelease 1|0
 -SignaturesUpdatesChannel Staged|Broad|NotConfigured
 ```
 
@@ -104,7 +104,7 @@ Set-MpPreference
 
 ベータ チャネルから到着するようにプラットフォームの更新プログラムを構成するために使用 `Set-MpPreference -PlatformUpdatesChannel Beta` します。
 
-パラメーターとその構成方法の詳細については、「[Set-MpPreference (Microsoft Defender ウイルス対策)|Microsoft Docs](/powershell/module/defender/set-mppreference)」を参照してください。
+パラメーターとその構成方法の詳細については、「[Set-MpPreference (Microsoft Defender ウイルス対策)|Microsoft Docs](/powershell/module/defender/set-mppreference)を参照してください。
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。

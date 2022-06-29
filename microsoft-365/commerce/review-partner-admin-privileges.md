@@ -18,14 +18,14 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) の一覧を確認して、ユーザーが持つ管理者特権と、それらの特権を削除する方法を確認する方法について説明します。
 ms.date: 12/03/2021
-ms.openlocfilehash: 067716689bd82e67dda357d675383ef2541b1dc3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: eefbe2c8b70afee9c1e24e4335a73488906bf844
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63318425"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490699"
 ---
-# <a name="review-partner-administrative-privileges"></a>パートナーの管理特権を確認する
+# <a name="review-microsoft-certified-cloud-solution-provider-partner-administrative-privileges"></a>Microsoft 認定クラウド ソリューション プロバイダー パートナーの管理特権を確認する
 
 Microsoft 認定のクラウド ソリューション プロバイダー (リセラー パートナー) をお持ちのお客様は、委任された管理特権 (DAP) が割り当てられていることを四半期ごとに確認することをお勧めします。 組織がこのパートナーに組織のデータにアクセスし、ユーザーに代わって購入することを望んでいることを確認します。
 
@@ -42,7 +42,7 @@ DAP が有効になっている場合、パートナーが追加できるグロ�
 
 ## <a name="review-and-remove-roles-from-partners"></a>パートナーのロールを確認して削除する
 
-1. Microsoft 365 管理センターで、**設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner リレーションシップ</a> ページに移動します。 DAP のパートナーには、[**ロール**] 列に **グローバル管理者** が表示されます。
+1. Microsoft 365 管理センターで、[設定 <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">パートナーリレーションシップ</a>**]** >  ページに移動します。 DAP のパートナーには、[**ロール**] 列に **グローバル管理者** が表示されます。
 2. グローバル管理者ロールをパートナーから削除するには、削除するパートナーの名前を見つけます。
 3. **リレーションシップの種類** として **Reseller** を含む行を選択します。
 4. パートナーの詳細ページで、[ **ロールの削除**] を選択し、[ **はい**] を選択します。
@@ -56,4 +56,4 @@ DAP が有効になっている場合、パートナーが追加できるグロ�
 
 [パートナー関係の管理](manage-partners.md) (記事)\
 [管理者ロールについて](../admin/add-users/about-admin-roles.md) (記事)\
-[Azure ADの委任された管理者特権](/partner-center/customers-revoke-admin-privileges#delegated-admin-privileges-in-azure-ad) (記事)
+[Azure AD の委任された管理者特権](/partner-center/customers-revoke-admin-privileges#delegated-admin-privileges-in-azure-ad) (記事)

@@ -20,14 +20,14 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理する方法について説明します。
 ms.date: 02/04/2022
-ms.openlocfilehash: c07267989e8df7203cced6c3a21ffd9aa667347f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 313cea4bef92da66bb5c95f3cf9ccd0f9a1d6f32
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328975"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490721"
 ---
-# <a name="manage-partner-relationships"></a>パートナー関係を管理する
+# <a name="manage-microsoft-certified-solution-provider-partner-relationships"></a>Microsoft 認定ソリューション プロバイダー パートナー関係を管理する
 
 Microsoft 認定ソリューション プロバイダー (パートナー) と連携して、組織または学校の製品とサービスを購入および管理できます。 物事を設定するには、いくつかの手順が必要です。
 
@@ -35,9 +35,9 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 2. パートナーは、パートナー関係を確立するために顧客に電子メール要求を送信します。
 3. 顧客はMicrosoft 365 管理センターで招待を受け入れ、パートナーとの連携を開始します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
+これらの手順を実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../admin/add-users/about-admin-roles.md) を参照してください。
 
 ## <a name="what-can-a-partner-do-for-my-organization-or-school"></a>パートナーは自分の組織または学校に対して何をできますか?
 
@@ -49,7 +49,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 | 販売 代理店 | Microsoft 製品を組織または学校に販売するパートナー。 |
 | 代理管理者 | 組織または学校の製品とサービスを管理するパートナー。 Azure Active Directory (AD) では、パートナーはテナントのグローバル管理者です。 このロールを使用すると、ユーザー アカウントの作成、ライセンスの割り当てと管理、パスワードリセットなどのサービスを管理できます。 |
 | 代理管理者&リセラー | Microsoft 製品とサービスを組織または学校に販売および管理するパートナー。 |
-| パートナー | パートナーにテナント内のユーザー アカウントを指定すると、パートナーはユーザーに代わって他のMicrosoft サービスと連携します。 |
+| パートナー | パートナーにテナント内のユーザー アカウントを付与すると、パートナーはユーザーに代わって他の Microsoft サービスと連携します。 |
 | Advisor | パートナーは、パスワードをリセットし、サポート インシデントを処理できます。 |
 | Microsoft Products & Services Agreement (MPSA) パートナー | MPSA プログラムを通じて複数のパートナーと協力している場合は、お互いの購入を確認できます。 |
 | 基幹業務 (LOB) パートナー | パートナーは、組織または学校に固有の LOB アプリを開発、送信、管理できます。 |
@@ -85,7 +85,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 ## <a name="remove-partner-admin-roles"></a>パートナー管理者ロールを削除する
 
-パートナーが行った要求に応じて、招待を承諾すると、グローバル管理者ロールとヘルプデスク管理者ロールを付与することに同意します。 これらの管理者ロールをパートナーに付与すると、Azure ADで委任された管理者特権が自動的に付与されます。 詳細については、「[Azure ADの委任された管理者特権](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)」を参照してください。
+パートナーが行った要求に応じて、招待を承諾すると、グローバル管理者ロールとヘルプデスク管理者ロールを付与することに同意します。 これらの管理者ロールをパートナーに付与すると、Azure AD で委任された管理者特権が自動的に付与されます。 詳細については、「 [Azure AD の委任された管理者特権](/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)」を参照してください。
 
 新しいきめ細かな委任された管理特権 (GDAP) 機能により、パートナーは顧客のワークロードに対してよりきめ細かく、時間に制限されたアクセスを提供します。 これは、パートナーが顧客のセキュリティ上の懸念に対処できることを意味します。 パートナーは、現在のレベルのパートナー アクセスに問題があり、パートナーへの最小特権アクセスのみを提供するための規制要件を持つ顧客に対して、より多くのサービスを提供することもできます。 GDAP では、パートナーの要求で指定されたロールを付与することに同意します。 これらのロールはカスタマイズ可能であるため、特定のアクセス許可が承認されていない場合はパートナーと話し合うことができます。
 
@@ -93,7 +93,7 @@ Microsoft 認定ソリューション プロバイダー (パートナー) と�
 
 パートナーから管理者ロールはいつでも削除できます。 管理者ロールを削除しても、パートナー関係は削除されません。 リセラーなど、別の容量で引き続きお客様と連携できます。 パートナーともう連携したくないと判断した場合は、パートナーに連絡して関係を終了してください。
 
-1. 管理センターで、**設定** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partner リレーションシップ</a> ページに移動します。
+1. 管理センターで、[設定 <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">パートナーリレーションシップ</a>**]** >  ページに移動します。
 2. [ **パートナーリレーションシップ** ] ページで、削除するパートナーの名前を含む行を選択します。
 3. パートナーの名前を含む行を選択します。
 4. パートナー ページで、[ロールの **削除**] を選択します。

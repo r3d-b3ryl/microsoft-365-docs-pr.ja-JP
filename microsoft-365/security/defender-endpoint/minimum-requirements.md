@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 355fc0f367c415ae679259195e18ff3920812f4a
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
-ms.translationtype: HT
+ms.openlocfilehash: b2b1303fc9ab0841643536ccf5a85470243fe74e
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670160"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490577"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の最小要件
 
@@ -42,8 +42,8 @@ ms.locfileid: "65670160"
 > - 最近の MITRE 評価において、Defender for Endpoint の業界をリードする分析力と検出能力が示されました。詳しくは、「[MITRE ATT&CK ベース評価の分析](https://cloudblogs.microsoft.com/microsoftsecure/2018/12/03/insights-from-the-mitre-attack-based-evaluation-of-windows-defender-atp/)」を参照してください。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
-Microsoft Defender for Endpoint のライセンス要件の詳細については、[Microsoft Defender for Endpoint のライセンス情報](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)を参照してください。
 
+Microsoft Defender for Endpoint のライセンス要件の詳細については、[Microsoft Defender for Endpoint のライセンス情報](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)を参照してください。
 
 詳細なライセンス情報については、[製品条項サイト](https://www.microsoft.com/licensing/terms/)を参照し、アカウント チームと協力して使用条件の詳細を確認してください。
 
@@ -63,10 +63,6 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 ### <a name="supported-windows-versions"></a>サポート対象の Windows バージョン
 
-- Windows 7 SP1 Enterprise ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)。)
-- Windows 7 SP1 Pro ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)。)
-- Windows 8.1 Enterprise
-- Windows 8.1 Pro
 - Windows 11 Enterprise
 - Windows 11 Education
 - Windows 11 Pro
@@ -81,6 +77,10 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 - Windows 10 Education
 - Windows 10 Pro
 - Windows 10 Pro Education
+- Windows 8.1 Enterprise
+- Windows 8.1 Pro
+- Windows 7 SP1 Enterprise ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)。)
+- Windows 7 SP1 Pro ([サポートには ESU が必要です](/troubleshoot/windows-client/windows-7-eos-faq/windows-7-extended-security-updates-faq)。)
 - Windows Server
   - Windows Server 2008 R2 SP1 ([サポートには ESU が必要です](/windows-server/get-started/extended-security-updates-deploy))
   - Windows Server 2012 R2
@@ -100,18 +100,18 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 サポートされているバージョンの Windows 10 の詳細については、(/windows/release-health/release-information) を参照してください。
 
 > [!NOTE]
-> モバイル バージョンの Windows (Windows CE や Windows 10 Mobile など) を実行しているコンピューターはサポートされていません。
+> - モバイル バージョンの Windows (Windows CEやWindows 10 Mobileなど) を実行しているエンドポイントはサポートされていません。
 >
-> Windows 10 Enterprise 2016 LTSB を実行している仮想マシンは、Microsoft 以外の仮想化プラットフォームで実行すると、パフォーマンスの問題が発生する場合があります。
+> - Windows 10 Enterprise 2016 LTSB を実行している仮想マシンは、Microsoft 以外の仮想化プラットフォームで実行すると、パフォーマンスの問題が発生する場合があります。
 >
-> 仮想環境の場合は、Windows 10 Enterprise LTSC 2019 以降を使用することをお勧めします。
+> - 仮想環境の場合は、Windows 10 Enterprise LTSC 2019 以降を使用することをお勧めします。
+>
+> - [Defender for Endpoint プラン 1 とプラン 2](defender-endpoint-plan-1-2.md) のスタンドアロン バージョンには、サーバー ライセンスは含まれません。 これらのプランにサーバーをオンボードするには、Defender for Servers プラン 1 またはプラン 2 が [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) オファリングの一部として必要です。 詳細については、こちらを参照してください。 [Microsoft Defender for Servers の概要に関するページを参照してください](/azure/defender-for-cloud/defender-for-servers-introduction)。
 
 コンポーネントが Microsoft Windows オペレーティング システムで最新の状態にある場合、Microsoft Defender for Endpoint のサポートは、それぞれのオペレーティング システムのライフサイクルに従います。 詳細については、「[ライフサイクルに関する FAQ](/lifecycle/faq/general-lifecycle)」を参照してください。 新機能は、通常、ライフサイクルの終了にまだ達していないオペレーティング システムでのみ提供されます。 セキュリティ インテリジェンスの更新プログラム (定義とエンジンの更新) と検出ロジックは、少なくとも次の時点まで引き続き提供されます。
 
 - [サポート終了日](/lifecycle/products/) (拡張セキュリティ更新プログラム (ESU) がないオペレーティング システムの場合)。
 - [ESU の終了日](/lifecycle/faq/extended-security-updates) (ESU プログラムがあるオペレーティング システムの場合)。
-
-
 
 ### <a name="other-supported-operating-systems"></a>サポートされているその他のオペレーティング システム
 

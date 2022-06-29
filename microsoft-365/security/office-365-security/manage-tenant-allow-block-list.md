@@ -17,12 +17,12 @@ ms.custom: ''
 description: セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dc32e6827e9751dc72d28b8eff79d1966f43f646
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: c1790b908389839b1fd35525d5f8e33b58192d67
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159845"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492166"
 ---
 # <a name="manage-your-allows-and-blocks-in-the-tenant-allowblock-list"></a>テナント許可/ブロック一覧で許可とブロックを管理する
 
@@ -33,9 +33,9 @@ ms.locfileid: "66159845"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスが含まれているMicrosoft 365組織では、Exchange Onlineメールボックスがない場合は、EOP フィルターの判定に同意しない可能性があります。 たとえば、適切なメッセージが無効 (誤検知) としてマークされたり、不適切なメッセージが許可されたり (偽陰性) されたりすることがあります。
+Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含む Microsoft 365 組織では、Exchange Onlineメールボックスがない場合は、EOP フィルターの判定に同意しない可能性があります。 たとえば、適切なメッセージが無効 (誤検知) としてマークされたり、不適切なメッセージが許可されたり (偽陰性) されたりすることがあります。
 
-Microsoft 365 Defender ポータルのテナント許可/ブロック リストを使用すると、Microsoft 365フィルターの判定を手動でオーバーライドできます。 テナント許可/ブロック リストは、受信メッセージのメール フロー中 (組織内メッセージには適用されません)、ユーザーがクリックした時点で使用されます。 次の種類のオーバーライドを指定できます。
+Microsoft 365 Defender ポータルのテナント許可/ブロックリストを使用すると、Microsoft 365 フィルターの判定を手動でオーバーライドできます。 テナント許可/ブロック リストは、受信メッセージのメール フロー中 (組織内メッセージには適用されません)、ユーザーがクリックした時点で使用されます。 次の種類のオーバーライドを指定できます。
 
 - ブロックする URL。
 - ブロックするファイル。
@@ -45,13 +45,13 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
 - 許可するファイル。
 - 許可する送信者の電子メールまたはドメイン。
 
-この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つMicrosoft 365組織の PowerShell をExchange Online、スタンドアロン EOP PowerShell を使用しない組織のテナント許可/ブロック リストでエントリを構成する方法について説明します。Exchange Online メールボックス)。
+この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online 内にメールボックスを持つ Microsoft 365 組織の PowerShell をExchange Onlineし、Exchange Onlineのない組織用のスタンドアロン EOP PowerShell) でテナント許可/ブロック リストにエントリを構成する方法について説明します。 メールボックス)。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[テナント許可/ブロック リスト**] ページに直接移動するには、次を使用<https://security.microsoft.com/tenantAllowBlockList>します。
+- Microsoft 365 Defender ポータルの [ルール **] セクションの** <https://security.microsoft.com>[**ポリシー&ルール** \> **脅威ポリシー** \> **テナント許可/ブロック リスト**] に移動します。 **[テナント許可/ブロック リスト**] ページに直接移動するには、次を使用<https://security.microsoft.com/tenantAllowBlockList>します。
 
-- ファイルの SHA256 ハッシュ値を使用してファイルを指定します。 Windowsでファイルの SHA256 ハッシュ値を見つけるには、コマンド プロンプトで次のコマンドを実行します。
+- ファイルの SHA256 ハッシュ値を使用してファイルを指定します。 Windows でファイルの SHA256 ハッシュ値を見つけるには、コマンド プロンプトで次のコマンドを実行します。
 
   ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
@@ -89,17 +89,13 @@ Microsoft 365 Defender ポータルのテナント許可/ブロック リスト�
 
 ## <a name="configure-the-tenant-allowblock-list"></a>テナント許可/ブロック リストを構成する
 
-### <a name="use-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用する
-
-Microsoft 365 Defender ポータルの [ルール **] セクションの** <https://security.microsoft.com>[**ポリシー&ルール** \> **脅威ポリシー** \> **テナント許可/ブロック リスト**] に移動します。 **[テナント許可/ブロック リスト**] ページに直接移動するには、次を使用<https://security.microsoft.com/tenantAllowBlockList>します。
-
-### <a name="use-exchange-online-powershell-or-standalone-eop-powershell"></a>PowerShell またはスタンドアロンの EOP PowerShell Exchange Online使用する
-
 電子メールを許可またはブロックするには、「 [テナント許可/ブロック リストを使用して電子メールを許可またはブロックする」を参照してください](allow-block-email-spoof.md)。
 
 ファイルを許可またはブロックするには、「 [テナント許可/ブロック リストを使用してファイルを許可またはブロックする」を参照してください](allow-block-files.md)。
 
 URL を許可またはブロックするには、「 [テナント許可/ブロック リストを使用して URL を許可またはブロックする」を参照してください](allow-block-urls.md)。
+
+これらの記事には、Microsoft 365 Defender ポータルとExchange Online PowerShell またはスタンドアロンの EOP PowerShell の両方を使用して、テナント許可/ブロック リストのエントリを追加または削除または変更する手順が含まれています。
 
 ### <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>許可エントリまたはブロック エントリを追加した後に必要なもの
 

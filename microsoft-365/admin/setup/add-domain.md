@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - TopSMBIssues
 - SaRA
 - MSStore_Link
@@ -28,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストで DNS レコードを追加して、Microsoft 365 管理センターで Microsoft 365 にドメインを追加します。
-ms.openlocfilehash: ad4654bce8781607a77272dafeb3eb9135c85765
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 64b82aab051af2c9d5444042f27009b4e02f1ad8
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922925"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66492040"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 
@@ -159,18 +160,20 @@ ms.locfileid: "65922925"
 
 onmicrosoft.com ドメインを追加するには:
 
-1. Microsoft 365 管理センターで、[ **設定]** を選択し、[ **ドメイン**] を選択します。
-2. onmicrosoft.com の既定のドメインを選択します。
+1. Microsoft 365 管理センターで **[設定]** を選択し、[**ドメイン**] を選択します。
+
+2. 既存の *.onmicrosoft.com* ドメインを選択します。
 
     ![[ドメイン] ページ。](../../media/onmicrosoft-domains.png)
   
-3. [ドメインのプロパティ] ページの [ **このドメイン** について] セクションで、[ **Add onmicrosoft domain] (onmicrosoft ドメインの追加**) を選択します。
 
-    ![この [ドメイン] ページについて。](../../media/add-onmicrosoft-domain-link.png)
+3. **[概要]** タブで、**[onmicrosoft.com ドメインを追加する]** を選択します。
+
+    ![ドメイン プロパティのスクリーンショット。](../../media/add-onmicrosoft-domain-link.png)
 
 4. [ **Add onmicrosoft domain** ] ページの [ **ドメイン名** ] ボックスに、新しい onmicrosoft.com ドメインの名前を入力します。 
 
-    ![[Add onmicrosoft domain]\(onmicrosoft ドメインの追加\) ページのスクリーンショット。](../../media/add-an-onmicrosoftcom-domain-page.png)
+    ![Add onmicrosoft domain のスクリーンショット。](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
     > 入力したドメイン名のスペルと正確性を確認してください。 ドメインは 5 つの onmicrosoft.com に制限されており、現在は作成後は削除できません。     

@@ -2,8 +2,8 @@
 title: フィッシングやその他の攻撃から身を守る
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
 ms.topic: conceptual
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium を使用してフィッシングやその他の攻撃から自分を保護します。
-ms.openlocfilehash: 1b5f276bc8b2f8ffff205679c50e32cbe559d6cb
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: eee5872e3fc9856cd6bc9d58f4fbdf91899f7c00
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893537"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489198"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>フィッシングやその他の攻撃から身を守る
 
@@ -44,7 +44,7 @@ Microsoft 365 Business Premium が攻撃に対して提供する保護に加え�
 - **マルウェア** は、コンピューターにインストールできる悪意のあるソフトウェアです。通常は、リンクをクリックした後、またはメールからドキュメントを開いた後にインストールされます。 マルウェアにはさまざまな種類があります (たとえば、コンピューターが乗っ取られたときのランサムウェア) が、いずれも受け取りたくありません。 
 
 > [!TIP]
-> セキュリティの概念の詳細については、 [[用語集]](m365bp-glossary.md) をご覧ください。
+> セキュリティの概念の詳細については、 [[用語集]](m365bp-glossary.yml) をご覧ください。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 

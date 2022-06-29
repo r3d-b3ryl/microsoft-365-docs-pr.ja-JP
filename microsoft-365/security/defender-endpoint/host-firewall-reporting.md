@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 33eff726609db3d7f2d07f4a5bcf4955536c086c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 0dcb03a5398b38e05c3c7c867306444b17b8c720
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647285"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490234"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
@@ -34,15 +34,16 @@ ms.locfileid: "65647285"
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Windows 10またはWindows 11、または Server 2019 または Windows Server 2022 Windows実行している必要があります。
+- Windows 10またはWindows 11、Windows Server 2019、または Windows Server 2022 を実行している必要があります。
 - Microsoft Defender for Endpoint サービスにデバイスをオンボードするには、[こちらを参照してください](onboard-configure.md)。
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender</a>データの受信を開始するには、Advanced Security を使用してWindows Defender ファイアウォールの **監査イベント** を有効にする必要があります。
   - [フィルター プラットフォームのパケット ドロップの監査](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)
   - [プラットフォーム接続のフィルター処理の監査](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 - グループ ポリシー オブジェクト エディター、ローカル セキュリティ ポリシー、またはauditpol.exe コマンドを使用して、これらのイベントを有効にします。 詳細については、「[こちら](/windows/win32/fwp/auditing-and-logging)」をご覧ください。
   - 2 つの PowerShell コマンドは次のとおりです。
-    - **auditpol /set /サブカテゴリ:"Filtering Platform Packet Drop" /failure:enable**
-    - **auditpol /set /サブカテゴリ:"Filtering Platform Connection" /failure:enable**
+    - `auditpol /set /subcategory:"Filtering Platform Packet Drop" /failure:enable`
+    - `auditpol /set /subcategory:"Filtering Platform Connection" /failure:enable`
+
 ```powershell
 param (
     [switch]$remediate
@@ -81,15 +82,24 @@ catch {
 > [!NOTE]
 > 上記のセクションの手順に従い、早期プレビュー参加のためにデバイスを適切に構成してください。
 
-- イベントを有効にすると、Microsoft 365 Defenderはデータの監視を開始します。
-  - リモート IP、リモート ポート、ローカル ポート、ローカル IP、コンピューター名、受信接続と送信接続間のプロセス。
-- 管理者は、[ここで](https://security.microsoft.com/firewall)Windowsホスト ファイアウォール アクティビティを確認できるようになりました。
-  - [カスタム レポート スクリプト](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)をダウンロードして、Power BIを使用してWindows Defender ファイアウォールアクティビティを監視することで、追加のレポート作成を容易にすることができます。
-  - データが反映されるまでに最大で 12 時間かかる場合があります。
+- イベントを有効にすると、Microsoft 365 Defenderはデータの監視を開始します。これには次のものが含まれます。 
+   - リモート IP
+   - リモート ポート
+   - ローカル ポート
+   - ローカル IP
+   - コンピューター名
+   - 受信接続と送信接続をまたいで処理する
+- 管理者は、 [ここで](https://security.microsoft.com/firewall) Windows ホストファイアウォールアクティビティを確認できるようになりました。
+   - [カスタム レポート スクリプト](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)をダウンロードして Power BI を使用してWindows Defender ファイアウォールアクティビティを監視することで、追加のレポート作成を容易にすることができます。
+   - データが反映されるまでに最大で 12 時間かかる場合があります。
 
 ## <a name="supported-scenarios"></a>サポートされるシナリオ
 
 Ring0 プレビューでは、次のシナリオがサポートされます。
+
+- [ファイアウォールレポート](#firewall-reporting)
+- ["接続がブロックされたコンピューター" からデバイスへ](#from-computers-with-a-blocked-connection-to-device)
+- [高度なハンティングにドリルインする (プレビュー更新)](#drill-into-advanced-hunting-preview-refresh)
 
 ### <a name="firewall-reporting"></a>ファイアウォールレポート
 
@@ -97,7 +107,7 @@ Ring0 プレビューでは、次のシナリオがサポートされます。
 
 :::image type="content" source="images/host-firewall-reporting-page.png" alt-text="[ホスト ファイアウォール] レポート ページ" lightbox="\images\host-firewall-reporting-page.png":::
 
-これらのレポートには、**ファイアウォールブロック受信接続** カードの下部にある **ReportsSecurity** >  **ReportDevices** >  (セクション) に移動してアクセスすることもできます。
+これらのレポートには、**ファイアウォールブロック受信接続** カードの下部にある **レポート** > **セキュリティ レポート** > **デバイス** (セクション) に移動してアクセスすることもできます。
 
 ### <a name="from-computers-with-a-blocked-connection-to-device"></a>"接続がブロックされたコンピューター" からデバイスへ
 
@@ -119,4 +129,4 @@ Ring0 プレビューでは、次のシナリオがサポートされます。
 
 クエリを実行できるようになり、過去 30 日間のすべての関連ファイアウォール イベントを調べることができます。
 
-追加のレポートやカスタム変更を行う場合は、クエリをPower BIにエクスポートして詳細な分析を行うことができます。 カスタム レポートは、[カスタム レポート スクリプト](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)をダウンロードして、Power BIを使用してWindows Defender ファイアウォールアクティビティを監視することで容易に行うことができます。
+その他のレポートやカスタム変更については、クエリを Power BI にエクスポートして詳細な分析を行うことができます。 カスタム レポートは、Power BI を使用してWindows Defender ファイアウォールアクティビティを監視する[カスタム レポート スクリプトを](https://github.com/microsoft/MDATP-PowerBI-Templates/tree/master/Firewall)ダウンロードすることで容易に行うことができます。

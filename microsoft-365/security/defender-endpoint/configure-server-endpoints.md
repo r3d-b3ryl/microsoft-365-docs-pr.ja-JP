@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a68c589870262d9d8fc26acce0175043b6917b72
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 18ca82c4bbcb765eec419cd5b7477df8abbd8515
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65417382"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490667"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -53,13 +53,28 @@ Windows サーバーのWindows セキュリティベースラインをダウン�
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Windows サーバー および Windows 10 デバイスのオンボード フローの図" lightbox="images/server-onboarding-tools-methods.png":::
 
+## <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
+
+Microsoft Defender for Endpointは、Microsoft Defender for Servers とシームレスに統合されます。 サーバーを自動的にオンボードしたり、Microsoft Defender for Cloud で監視されているサーバーを Defender for Endpoint に表示したり、Microsoft Defender for Cloud のお客様として詳細な調査を行うことができます。
+
+詳細については、「[Microsoft Defender for Cloud での統合](azure-server-integration.md)」 を参照してください。
+
+> [!NOTE]
+> 最新の統合ソリューションを実行している Windows Server 2012 R2 と 2016 の場合は、これらのコンピューターに新しいソリューションを手動でインストールまたはアップグレードするか、統合を使用して、それぞれの Microsoft Defender for Server プランの対象となるサーバーを自動的に展開またはアップグレードできます。 [Defender for Cloud の統合 EDR ソリューションを使用してエンドポイントを保護](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows)する方法について詳しくは、「Microsoft Defender for Endpoint」をご覧ください。
+> - Microsoft Defender for Cloud を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーの場合は米国、ヨーロッパのユーザーの場合は EU、英国のユーザーの場合は英国)。
+Defender for Endpoint によって収集されたデータは、プロビジョニング中に識別されたテナントの地理的な場所に格納されます。
+> - Microsoft Defender for Cloud を使用する前に Defender for Endpoint を使用する場合、後で Microsoft Defender for Cloud と統合した場合でも、テナントの作成時に指定した場所にデータが格納されます。
+> - 構成が完了すると、データの格納場所を変更することはできません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに連絡してテナントをリセットする必要があります。
+> - Microsoft Defender for servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、[Windows Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) をサポートするように拡張されました。
+> - この統合を利用するサーバー エンドポイントの監視は、Office 365 GCC の顧客に対して無効になっています。
+
 **R2 とWindows Server 2016 Windows Server 2012**:
 
 - インストール パッケージとオンボード パッケージをダウンロードする
 - インストール パッケージを適用する
 - 対応するツールのオンボード手順に従う
 
-**Windows サーバー Semi-Annual Enterprise チャネルおよびWindows Server 2019**:
+**Windows Server Semi-Annual エンタープライズ チャネルと Windows Server 2019**:
 
 - オンボーディング パッケージをダウンロードする
 - 対応するツールのオンボード手順に従う
@@ -69,7 +84,7 @@ Windows サーバーのWindows セキュリティベースラインをダウン�
 
 ### <a name="new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution"></a>最新の統合ソリューションの新しいWindows Server 2012 R2 と 2016 の機能
 
-R2 とWindows Server 2016のオンボードWindows Server 2012以前の実装では、Microsoft Monitoring Agent (MMA) の使用が必要でした。
+R2 とWindows Server 2016 Windows Server 2012オンボードの以前の実装では、Microsoft Monitoring Agent (MMA) の使用が必要でした。
 
 新しい統合ソリューション パッケージでは、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になります。 さらに、この統合ソリューション パッケージには、次の主な機能強化が含まれています。
 
@@ -116,12 +131,12 @@ Windows Server 2012 R2 および 2016 の新しい統合ソリューション �
 - Windows Server 2012 R2 では、ネットワーク イベントがタイムラインに設定されない場合があります。 この問題には、「[2021年 10 月 12 日のマンスリー ロールアップ (KB5006714)](https://support.microsoft.com/topic/october-12-2021-kb5006714-monthly-rollup-4dc4a2cd-677c-477b-8079-dcfef2bda09e)」 の一部としてリリースされた Windows Update が必要です。
 - オペレーティング システムのアップグレードはサポートされていません。 アップグレードする前にオフボードしてからアンインストールします。
 - Windows Server 2012 R2 では、**サーバー ロール** の自動除外はサポートされていません。ただし、オペレーティング システム ファイルのビルトイン除外はサポートされています。 除外の追加の詳細については「[現在サポートされているバージョンの Windows を実行しているエンタープライズ用コンピューターのウイルススキャンに関する推奨事項](https://support.microsoft.com/topic/virus-scanning-recommendations-for-enterprise-computers-that-are-running-currently-supported-versions-of-windows-kb822158-c067a732-f24a-9079-d240-3733e39b40bc)」 を参照してください。
-- 以前の MMA ベースのソリューションからアップグレードされたマシンとEDR センサーが 10.8047.22439.1056 より前の (プレビュー) バージョンである場合、MMA ベースのソリューションをアンインストールして元に戻す場合、クラッシュが発生する可能性があります。 このようなプレビュー バージョンの場合は、KB5005292 を使用して更新してください。
-- Microsoft エンドポイント マネージャーを使用して新しいソリューションをデプロイしてオンボードするには、現在パッケージを作成する必要があります。 Configuration Managerでプログラムとスクリプトを展開する方法の詳細については、「Configuration Manager[のパッケージとプログラム](/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。 Endpoint Protection ノードを使用したポリシー構成管理をサポートするには、修正プログラムロールアップ以降の MECM 2107 が必要です。
+- 以前の MMA ベースのソリューションからアップグレードされたマシンと EDR センサーが 10.8047.22439.1056 より前の (プレビュー) バージョンである場合、MMA ベースのソリューションをアンインストールして元に戻すと、クラッシュが発生する可能性があります。 このようなプレビュー バージョンの場合は、KB5005292 を使用して更新してください。
+- Microsoft エンドポイント マネージャーを使用して新しいソリューションをデプロイしてオンボードするには、現在、パッケージを作成する必要があります。 Configuration Managerでプログラムとスクリプトを展開する方法の詳細については、「Configuration Manager[のパッケージとプログラム](/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。 Endpoint Protection ノードを使用したポリシー構成管理をサポートするには、修正プログラムロールアップ以降の MECM 2107 が必要です。
 
 ## <a name="workaround-for-a-known-issue-with-telemetryproxyserver-on-disconnected-machines"></a>切断されたマシンでの TelemetryProxyServer に関する既知の問題の回避策
 
-問題の説明: TelemetryProxyServer 設定を使用して、Microsoft Defender for EndpointのEDR コンポーネントによって使用されるプロキシを指定する場合、証明書失効リスト (CRL) URL にアクセスする他の方法がないマシンでは、中間証明書が不足すると、EDR センサーがクラウド サービスに正常に接続されなくなります。
+問題の説明: TelemetryProxyServer 設定を使用して、Microsoft Defender for Endpointの EDR コンポーネントによって使用されるプロキシを指定する場合、証明書失効リスト (CRL) URL にアクセスする他の方法がないマシンでは、中間証明書が見つからないと、EDR センサーがクラウド サービスに正常に接続されなくなります。
 
 影響を受けるシナリオ: -Microsoft Defender for Endpoint Sense バージョン番号 10.8048.22439.1065 以前のプレビュー バージョンが Windows Server 2012 R2 で実行されている -TelemetryProxyServer プロキシ構成を使用している場合、他の方法は影響を受けません
 
@@ -130,19 +145,6 @@ Windows Server 2012 R2 および 2016 の新しい統合ソリューション �
 2. 証明書をダウンロードして解凍します。 https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
 3. 証明書をローカル コンピューターの信頼できる "中間証明機関" ストアにインポートします。
 PowerShell コマンドを使用できます:Import-Certificate -FilePath .\InterCA.cer -CertStoreLocation Cert:\LocalMachine\Ca
-
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
-
-Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシームレスに統合されます。 サーバーを自動的にオンボードし、Azure Defender によって監視されるサーバーを Defender for Endpoint に表示し、Microsoft Defender for Cloud の顧客として詳細な調査を行うことができます。
-
-詳細については、「[Microsoft Defender for Cloud での統合](azure-server-integration.md)」 を参照してください。
-
-> [!NOTE]
-> 最新の統合ソリューションを実行している Windows Server 2012 R2 および 2016 では、自動展開またはアップグレードのためのMicrosoft Defender for Cloud/Microsoft Defender for servers との統合は、すべてのプランではまだ利用できません。 これらのコンピューターに新しいソリューションを手動でインストールすることも、Microsoft Defender for server P1 を使用して新しいソリューションをテストすることもできます。 [New Defender for servers プランの詳細については、以下を参照してください](/azure/defender-for-cloud/release-notes#new-defender-for-servers-plans)。
-
-> [!NOTE]
-> - Microsoft Defender for servers と Microsoft Defender for Endpoint の統合は、Windows Server 2022、[Windows Server 2019、および Windows Virtual Desktop (WVD)](/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview) をサポートするように拡張されました。
-> - この統合を利用するサーバー エンドポイントの監視は、Office 365 GCC の顧客に対して無効になっています。
 
 ## <a name="windows-server-2012-r2-and-windows-server-2016"></a>Windows Server 2012 R2 および Windows Server 2016
 
@@ -173,7 +175,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 
 EDR センサー コンポーネントの定期的な製品改善と修正プログラムを受け取るには、Windows Update [ KB5005292](https://go.microsoft.com/fwlink/?linkid=2168277) が適用または承認されていることを確認してください。 さらに、保護コンポーネントを最新の状態に保つには、「[Microsoft Defender ウイルス対策更新プログラムの管理とベースラインの適用](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions)」 を参照してください。
 
-Windows Server Update Services (WSUS) やMicrosoft Endpoint Configuration Managerを使用している場合は、この新しい "EDR センサーのMicrosoft Defender for Endpoint更新プログラム" が次のセクションで使用できます。カテゴリ "Microsoft Defender for Endpoint"
+Windows Server Update Services (WSUS) または Microsoft Endpoint Configuration Managerを使用している場合は、この新しい "Microsoft Defender for Endpoint EDR センサーの更新プログラム" がカテゴリの下で利用できます。Microsoft Defender for Endpoint」
 
 ### <a name="onboarding-steps-summary"></a>オンボード手順の概要
 
@@ -311,14 +313,10 @@ Windows Server のサポートにより、サーバーアクティビティに�
 
 > [!IMPORTANT]
 >
-> - Microsoft Defender for Cloud を使用してサーバーを監視すると、Defender for Endpoint テナントが自動的に作成されます (米国のユーザーの場合は米国、ヨーロッパのユーザーの場合は EU、英国のユーザーの場合は英国)。
-Defender for Endpoint によって収集されたデータは、プロビジョニング中に識別されたテナントの地理的な場所に格納されます。
-> - Microsoft Defender for Cloud を使用する前に Defender for Endpoint を使用する場合、後で Microsoft Defender for Cloud と統合した場合でも、テナントの作成時に指定した場所にデータが格納されます。
-> - 構成が完了すると、データの格納場所を変更することはできません。 データを別の場所に移動する必要がある場合は、Microsoft サポートに連絡してテナントをリセットする必要があります。
-> - Windows Server 2019 および Windows Server 2022 から Microsoft エンドポイント マネージャー のオンボード パッケージには、現在スクリプトが付属しています。 構成マネージャーでスクリプトを展開する方法の詳細については、「[構成マネージャーのパッケージとプログラム](/configmgr/apps/deploy-use/packages-and-programs)」 を参照してください。
+> - Windows Server 2012 R2、2016、2019、2022 用のオンボード パッケージは、現在、Microsoft エンドポイント マネージャーを通じてスクリプトとして出荷されています。 Configuration Managerでプログラムとスクリプトを展開する方法の詳細については、「Configuration Manager[のパッケージとプログラム](/configmgr/apps/deploy-use/packages-and-programs)」を参照してください。
 > - ローカル スクリプトは概念実証に適していますが、運用環境のデプロイには使用しないでください。 運用環境のデプロイでは、グループ ポリシーまたは Microsoft Endpoint Configuration Manager を使用することをお勧めします。
 
-## <a name="windows-server-semi-annual-enterprise-channel-sac-windows-server-2019-and-windows-server-2022"></a>Windows サーバー Semi-Annual Enterprise チャネル (SAC)、Windows Server 2019、Windows Server 2022
+## <a name="windows-server-semi-annual-enterprise-channel-sac-windows-server-2019-and-windows-server-2022"></a>Windows Server Semi-Annual エンタープライズ チャネル (SAC)、Windows Server 2019、Windows Server 2022
 
 ### <a name="download-package"></a>パッケージをダウンロード
 
@@ -344,7 +342,7 @@ Microsoft Defender ウイルス対策と Microsoft Defender for Endpoint が実�
 1. 次のコマンドを実行して、Microsoft Defender ウイルス対策がインストールされていることを検証します。
 
     > [!NOTE]
-    > この確認手順は、アクティブなマルウェア対策ソリューションとしてMicrosoft Defender ウイルス対策を使用している場合にのみ必要です。
+    > この確認手順は、アクティブなマルウェア対策ソリューションとして Microsoft Defender ウイルス対策を使用している場合にのみ必要です。
 
     ```DOS
     sc.exe query Windefend

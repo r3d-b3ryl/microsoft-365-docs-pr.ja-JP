@@ -1,5 +1,5 @@
 ---
-title: テナント許可/ブロック リストを使用して電子メールを許可またはブロックする
+title: テナント許可/禁止リストを使用して電子メールを許可またはブロックする
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -16,14 +16,14 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロックリストで、電子メールとスプーフィングされた送信者エントリを許可またはブロックする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: efdd34af13cef4aa4b92b40ad57984469a879010
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: a16a8234b1d0ff2a3647d7f66923faa66784ea72
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159925"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493226"
 ---
-# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>テナント許可/ブロック リストを使用して電子メールを許可またはブロックする
+# <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>テナント許可/禁止リストを使用して電子メールを許可またはブロックする
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -79,10 +79,11 @@ New-TenantAllowBlockListItems -ListType Sender -Block -Entries "test@badattacker
 
 Microsoft 365 Defenderの **[送信]** ページで送信者 (またはドメイン) を許可します。
 
-管理者は、テナント許可/ブロック リストに許可を直接追加できないことに注意してください。 代わりに、管理者提出プロセスを使用して、ブロックされたメッセージを送信して、対応する URL、ファイル、または送信者がテナント許可/ブロック リストに追加されるようにします。 ファイル、URL、または送信者のブロックが発生していない場合、許可は作成されません。 メッセージが誤ってブロックされた誤検知であると判断されたほとんどの場合、許可はシステムに自然に許可する時間を与えるために必要な限り保持されます。
+許可エントリを追加するようにテナント許可/ブロック リストを直接変更することはできません。 代わりに、 [管理者の提出を](admin-submission.md) 使用して、ブロックされたメッセージを送信します。 このアクションにより、対応する URL、ファイル、スプーフィングされた送信者のドメイン ペア、偽装されたドメイン (またはユーザー)、または送信者がテナント許可/ブロック リストに追加されます。 アイテムがブロックされていない場合、許可は作成されません。 メッセージが誤ってブロックされた誤検知であると判断されたほとんどの場合、許可エントリは指定された有効期限日に削除されます。
 
 > [!IMPORTANT]
-> Microsoft が許可を管理しているため、送信者、URL、またはファイルが許可されていないか、不適切と見なされる許可は削除されます。 これは、環境を保護し、許可の構成ミスを防ぐためです。 意見が一致しない場合は、メッセージがまだ不適切と見なされる理由を判断するのに役立つサポート ケースが必要になる場合があります。
+> - Microsoft は許可エントリを管理するため、不要な送信者、URL、またはファイル許可エントリは不要なエントリが削除されます。 この動作により、組織が保護され、構成の誤った許可エントリを防ぐことができます。 判定に同意しない場合は、メッセージが依然として不適切と見なされる理由を判断するためにサポート ケースを開く必要がある場合があります。
+
 
 1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**Actions & submissions**\>] に移動 **します**。 または、[ **申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
 
@@ -96,7 +97,9 @@ Microsoft 365 Defenderの **[送信]** ページで送信者 (またはドメイ
 
 6. [ **削除後に削除]** ドロップダウン リストから、許可オプションを動作させる期間を指定します。
 
-7. 完了したら、[ **送信]** ボタンをクリックします。
+7. **[省略可能なメモ**] ボックスを使用して許可を追加する理由を追加します。 
+
+8. 完了したら、[**送信**] を選択します。
 
   :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="分析の例として、Microsoft にマルウェアを送信します。" lightbox="../../media/admin-submission-allow-messages.png":::
 
@@ -164,18 +167,20 @@ Remove-TenantAllowBlockListItems -ListType <Sender> -Ids <"Id1","Id2",..."IdN">
 - **ドメイン**: gmail.com
 - **インフラストラクチャ**: tms.mx.com
 
-スプーフィングを許可できるのは、そのドメインからのメッセージ *と* 送信インフラストラクチャ ペアからのメッセージだけです。 gmail.com をスプーフィングしようとしている他の送信者は許可されません。 tms.mx.com から発信された他のドメインの送信者からのメッセージは、スプーフィング インテリジェンスによってチェックされます。
+スプーフィングを許可できるのは、そのドメインからのメッセージ _と_ 送信インフラストラクチャ ペアからのメッセージだけです。 gmail.com をスプーフィングしようとしている他の送信者は許可されません。 tms.mx.com から発信された他のドメインの送信者からのメッセージは、スプーフィング インテリジェンスによってチェックされます。
 
 ## <a name="create-blocked-spoofed-sender-entries"></a>ブロックされたスプーフィングされた送信者エントリを作成する
 
 ### <a name="use-microsoft-365-defender"></a>Microsoft 365 Defenderを使用する
 
-**注意**:
-
-- ドメイン ペアで定義されているスプーフィングされたユーザー _と_ 送信インフラストラクチャの _組み合わせ_ のみが、スプーフィングを許可またはブロックされます。
-- ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンス分析情報に表示されなくなります。
-- スプーフィングされた送信者のエントリが期限切れになることはありません。
-- スプーフィングでは、許可とブロックの両方がサポートされます。
+> [!NOTE]
+> これらの送信者からのメールは _フィッシング_ としてブロックされます。
+>
+> ドメイン ペアで定義されているスプーフィングされたユーザー _と_ 送信インフラストラクチャの _組み合わせ_ のみが、スプーフィングを許可またはブロックされます。
+>
+> ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンス分析情報に表示されなくなります。
+>
+> スプーフィングされた送信者のエントリが期限切れになることはありません。
 
 1. Microsoft 365 Defender ポータルで、[**ポリシー&ルール****脅威ポリシー** \> **ルール**\>] セクション\>**の [テナント許可/ブロック リスト**] に移動します。
 
@@ -205,14 +210,13 @@ New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -Sen
 
 ## <a name="create-allowed-spoofed-sender-entries"></a>許可されたスプーフィングされた送信者エントリを作成する 
 
-### <a name="use-microsoft-365-defender"></a>Microsoft 365 Defenderを使用する
+### <a name="use-the-tenant-allowblock-list-in-microsoft-365-defender"></a>Microsoft 365 Defenderでテナント許可/ブロック リストを使用する
 
 > [!NOTE]
 >
 > - ドメイン ペアで定義されているスプーフィングされたユーザー _と_ 送信インフラストラクチャの _組み合わせ_ のみが、スプーフィングを許可またはブロックされます。
 > - ドメイン ペアの許可エントリまたはブロック エントリを構成すると、そのドメイン ペアからのメッセージはスプーフィング インテリジェンス分析情報に表示されなくなります。
 > - スプーフィングされた送信者のエントリが期限切れになることはありません。
-> - スプーフィングでは、許可とブロックの両方がサポートされます。 URL では、ブロックのみがサポートされます。
 
 1. Microsoft 365 Defender ポータルの [ルール **] セクション** の <https://security.microsoft.com>**[電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **テナント許可/ブロック リスト**] に移動します。 または、 **テナント許可/ブロック リスト** ページに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList>.
 
@@ -226,6 +230,38 @@ New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -Sen
    - **アクション**: **[許可**] を選択します。
 
 4. 完了したら、**[追加]** をクリックします。
+
+### <a name="use-admin-submission-in-microsoft-365-defender"></a>Microsoft 365 Defenderで管理申請を使用する
+
+Microsoft 365 Defenderの **[送信]** ページを使用して、スプーフィングされた送信者を許可することもできます。
+
+[管理者の提出を](admin-submission.md)使用して、ブロックされたメッセージを送信します。 このアクションにより、対応する URL、ファイル、スプーフィングされた送信者のドメイン ペア、偽装されたドメイン (またはユーザー)、または送信者がテナント許可/ブロック リストに追加されます。 アイテムがブロックされていない場合、許可は作成されません。 
+
+> [!IMPORTANT]
+>
+> - スプーフィングでは、組織内、組織間、DMARC スプーフィングを処理できます。
+> - 管理者申請の省略可能なメモは、スプーフィングには適用されません。
+
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**Actions & submissions**\>] に移動 **します**。 または、[ **申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
+
+2. [ **送信]** ページで、[ **電子メール** ] タブが選択されていることを確認し、[分析用に Microsoft に送信] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
+
+3. ネットワーク メッセージ ID を追加するか、電子メール ファイルをアップロードして、 **Microsoft に送信してレビュー** ポップアップを使用してメッセージを送信します。
+
+4. [ **Microsoft に送信する理由を選択** する] セクションで、[ **ブロックされていない必要があります (誤検知)]** を選択します。
+
+5. **[このオプションのようなメッセージを許可する**] をオンにします。
+
+6. [ **Remove after]\(削除後** の削除\) ドロップダウン リストから、許可オプションが機能する期間を指定します。ただし、スプーフィングでは適用されませんが、有効期限が切れることはありません。
+
+7. 完了したら、[**送信**] を選択します。
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="分析の例として、Microsoft にマルウェアを送信します。" lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+>
+> - スプーフィングされた送信者のドメイン ペアが作成され、[**テナントの許可とブロック] リスト** ページの [**スプーフィング**] タブに表示されます。
+
 
 ### <a name="use-powershell"></a>PowerShell を使う
 
@@ -290,6 +326,38 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 ```
 
 構文とパラメーターの詳細については、「 [Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems)」を参照してください。
+
+## <a name="create-impersonated-sender-entries"></a>偽装された送信者エントリを作成する
+
+### <a name="use-admin-submission-in-microsoft-365-defender"></a>Microsoft 365 Defenderで管理申請を使用する
+
+Microsoft 365 Defenderの **[送信]** ページを使用して、偽装された送信者を許可することもできます。
+
+[管理者の提出を](admin-submission.md)使用して、ブロックされたメッセージを送信します。 このアクションにより、対応する URL、ファイル、スプーフィングされた送信者のドメイン ペア、偽装されたドメイン (またはユーザー)、または送信者がテナント許可/ブロック リストに追加されます。 アイテムがブロックされていない場合、許可は作成されません。 
+
+> [!IMPORTANT]
+>
+> - 偽装では、ドメインとユーザーの偽装を処理できます。
+> - グラフの偽装は、現時点ではここでは処理されません。
+
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**Actions & submissions**\>] に移動 **します**。 または、[ **申請]** ページに直接移動するには、 <https://security.microsoft.com/reportsubmission>.
+
+2. [ **送信]** ページで、[ **電子メール** ] タブが選択されていることを確認し、[分析用に Microsoft に送信] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
+
+3. ネットワーク メッセージ ID を追加するか、電子メール ファイルをアップロードして、 **Microsoft に送信してレビュー** ポップアップを使用してメッセージを送信します。
+
+4. [ **Microsoft に送信する理由を選択** する] セクションで、[ **ブロックされていない必要があります (誤検知)]** を選択します。
+
+5. **[このオプションのようなメッセージを許可する**] をオンにします。
+
+6. [ **削除後に削除]** ドロップダウン リストから、権限借用された許可には適用されませんが、有効期限が切れることがないため、許可オプションを使用する期間を指定します。
+
+7. 完了したら、[**送信**] を選択します。
+
+  :::image type="content" source="../../media/admin-submission-allow-messages.png" alt-text="分析の例として、Microsoft にマルウェアを送信します。" lightbox="../../media/admin-submission-allow-messages.png":::
+
+> [!NOTE]
+> 偽装されたドメイン (またはユーザー) が作成され、フィッシング対策ポリシーの **[信頼された送信者とドメイン** ] セクションに <https://security.microsoft.com/antiphishing>表示されます。
 
 ## <a name="related-articles"></a>関連記事
 

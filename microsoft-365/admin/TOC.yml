@@ -14,7 +14,7 @@
         - name: Microsoft 365 for business のセットアップを計画
           href: setup/plan-your-setup.md
         - name: Microsoft 365 Business Premium にサインアップする
-          href: ../business-premium/index.md
+          href: ../business-premium/get-microsoft-365-business-premium.md
         - name: Microsoft 365 Business Standard にサインアップする
           items:
             - name: Microsoft 365 Business Standard にサインアップする
@@ -50,7 +50,7 @@
         - name: Office アプリのインストール
           href: setup/install-applications.md
         - name: Windows デバイスをセットアップする
-          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices.md
+          href: /microsoft-365/business-premium/m365bp-set-up-windows-devices
         - name: モバイル デバイスをセットアップする
           href: setup/set-up-mobile-devices.md
         - name: 一般法人向け Outlook for Microsoft 365 のメールを設定する (ビデオ)
@@ -346,8 +346,6 @@
           href: manage/idle-session-timeout-web-apps.md
         - name: Office 2013 の先進認証を有効にする
           href: security-and-compliance/enable-modern-authentication.md
-        - name: Microsoft Defender ウイルス対策によって検出された脅威
-          href: /microsoft-365/business-premium/m365bp-review-threats-take-action
         - name: GDPR コンプライアンスのガイド
           href: security-and-compliance/gdpr-compliance.md
     - name: デバイスとアプリのデータを管理する

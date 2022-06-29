@@ -19,14 +19,14 @@ ms.custom:
 description: 特定のアプリのライセンスをユーザーに自動的に割り当てる自動請求ポリシーを作成して管理する方法について説明します。
 search.appverid: MET150
 ms.date: 04/06/2021
-ms.openlocfilehash: d6cb3d78de914e84e831947089aeadf277e72ddf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 76f2742dc97f880c8044def269e3e9517ea4605c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321097"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493788"
 ---
-# <a name="manage-auto-claim-policies"></a>自動請求ポリシーを管理する
+# <a name="manage-microsoft-teams-auto-claim-policies"></a>Microsoft Teams の自動要求ポリシーを管理する
 
 自動請求ポリシーを使用すると、ユーザーがアプリに初めてサインインすると、自動的に製品のライセンスを要求することができます。 通常、管理者は手動で、またはグループ ベースのライセンスを使用して、ライセンスをユーザーに割り当てる必要があります。 自動請求ポリシーを使用すると、ユーザーが自動的にライセンスを要求できる製品を管理します。 これらのライセンスの取得先の製品を制御することもできます。
 

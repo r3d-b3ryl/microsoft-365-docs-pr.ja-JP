@@ -19,16 +19,16 @@ ms.custom:
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: ビジネス向けのMicrosoft 365の課金通知を受け取るために使用する請求先住所またはメール アドレスを更新する方法について説明します。
+description: Microsoft 365 for Business の課金通知を受け取るために使用する請求先住所またはメール アドレスを更新する方法について説明します。
 ms.date: 01/24/2022
-ms.openlocfilehash: 3c03315612b4f3a65dc39d2dcabee639bc578edd
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 3421cdfa1951d4bcde91d8b0eb97612054980ced
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63322269"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493377"
 ---
-# <a name="change-your-billing-addresses"></a>請求先住所を変更する
+# <a name="change-your-microsoft-365-for-business-billing-addresses"></a>Microsoft 365 のビジネス用請求先住所を変更する
 
 課金内容や請求書には次の 3 つの住所が含まれています。
   
@@ -108,4 +108,4 @@ ms.locfileid: "63322269"
 [課金内容または請求書を表示する](view-your-bill-or-invoice.md) (article)\
 [請求書または請求書 (](understand-your-invoice2.md) 記事)\ を理解する
 [サブスクリプションの支払い](pay-for-your-subscription.md) (記事)\
-[サブスクリプションと課金 - 管理者ヘルプ](../index.yml) (リンク ページ)
+[サブスクリプションと課金 - 管理 ヘルプ](../index.yml) (リンク ページ)

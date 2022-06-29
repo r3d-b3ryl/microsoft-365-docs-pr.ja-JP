@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseにサインアップする方法について説明します。
-ms.openlocfilehash: 5596005ff9a3db4e5a873a32f87b2677cdc8efaa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66007132"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489090"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseにサインアップする
 
@@ -39,15 +39,11 @@ ms.locfileid: "66007132"
 
 1. Microsoft 365 管理センターに<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>移動し、パートナー テナントの資格情報を使用してサインインします。 
 
-1. **[課金** > **購入サービス****] の [その他のサービス** > ] に移動します。
+2. **課金** > **購入サービス** > **Microsoft 365 Services に移動します**。
+   
+3. **[Microsoft 365 Lighthouse**] で [詳細] を選択 **します**。 
 
-    Microsoft 365 Lighthouseがサービスの一覧にない場合は、[**他のすべてのサービス製品を表示する**] を選択します。
-
-    [サービスの購入] エラー ページが表示された場合は、ページの下部にある [ **製品の表示** ] を選択します。
-
-1. **[Microsoft 365 Lighthouse**] で [詳細] を選択 **します**。 
-
-1. [ **購入**] を選択します。
+4. [ **購入**] を選択します。
 
     > [!NOTE]
     > Lighthouse には、パートナー テナントに対してのみ 1 つのライセンスが必要です。 パートナーに追加のユーザーごとのライセンスは必要ありません。また、顧客テナントには Lighthouse ライセンスは必要ありません。 

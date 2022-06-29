@@ -19,12 +19,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f2613825e0925e1899268b4682f66b7facc9600d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 37819c0f5ea458a4f5ee25b3536e3688aabd1882
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015006"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486909"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新機能
 
@@ -49,7 +49,19 @@ ms.locfileid: "66015006"
 
 ## <a name="june-2022"></a>2022 年 6 月
 
-- [office 365 の検疫エクスペリエンス パート 2 のMicrosoft 365 Defenderを簡略化](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687)する: Microsoft Defender for Office 365を使用して検疫エクスペリエンス パート 2 を簡略化します。
+- [スプーフィングでは、管理者の申請を使用できます](allow-block-email-spoof.md#use-admin-submission-in-microsoft-365-defender)。テナント許可/ブロック リストを使用して、許可されたスプーフィングされた送信者エントリを作成します。
+
+- [権限借用では管理者申請を使用できます](allow-block-email-spoof.md#create-impersonated-sender-entries)。追加では、Microsoft 365 Defenderの [送信] ページを使用して偽装された送信者を許可します。
+
+- [ユーザー申請から変換された管理者の申請を表示](admin-submission.md#convert-user-reported-messages-from-the-custom-mailbox-into-an-admin-submission)する: 分析のために Microsoft にメッセージを送信せずに、ユーザーが報告したメッセージを傍受するようにカスタム メールボックスを構成します。
+
+- [ユーザーと管理者の提出に関連するアラートを表示](admin-submission.md#view-associated-alert-for-user-and-admin-email-submissions)する: フィッシング メッセージと管理者の電子メール送信が報告された各ユーザーに対応するアラートを表示します。 
+
+- [構成可能な偽装保護のカスタム ユーザーとドメイン、およびプリセット ポリシー内のスコープの増加](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/configurable-impersonation-protection-and-scope-for-preset/ba-p/3294459):
+  - (選択)事前設定された Strict/Standard ポリシーを組織全体に適用し、特定の受信者ユーザー、グループ、またはドメインを選択する手間を省き、組織のすべての受信者ユーザーをセキュリティで保護します。 
+  - 事前設定された Strict/Standard ポリシー内でカスタム ユーザーとカスタム ドメインの偽装保護設定を構成し、偽装攻撃から対象ユーザーとターゲット ドメインを自動的に保護します。
+
+- [office 365 のMicrosoft 365 Defenderでの検疫エクスペリエンスの簡略化 (パート 2):](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/simplifying-the-quarantine-experience-part-two/ba-p/3354687) 検疫エクスペリエンスをさらに使いやすくするための追加機能を強調表示します。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
@@ -67,7 +79,7 @@ ms.locfileid: "66015006"
 ## <a name="october-2021"></a>2021 年 10 月
 
 - [高度な配信 DKIM の強化](configure-advanced-delivery.md): サード パーティのフィッシング シミュレーション構成の一環として、DKIM ドメイン エントリのサポートが追加されました。
-- [既定でセキュリティ保護](secure-by-default.md): Exchangeメール フロー ルール (トランスポート ルールとも呼ばれます) に対して、既定でセキュリティ保護を強化します。
+- [既定でセキュリティ保護](secure-by-default.md): Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) の場合は、既定でセキュリティで保護されています。
 
 ## <a name="september-2021"></a>2021 年 9 月
 
@@ -80,14 +92,14 @@ ms.locfileid: "66015006"
 
 ## <a name="august-2021"></a>2021 年 8 月
 
-- [報告されたメッセージの管理者レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレート化されたメッセージをエンド ユーザーに返送できるようになりました。 テンプレートは、組織に合わせてカスタマイズでき、管理者の評決にも基づいてカスタマイズできます。
+- [報告されたメッセージの管理レビュー](admin-review-reported-message.md): 管理者は、報告されたメッセージを確認した後、テンプレート化されたメッセージをエンド ユーザーに返送できるようになりました。 テンプレートは、組織に合わせてカスタマイズでき、管理者の評決にも基づいてカスタマイズできます。
 - [テナント許可/ブロック リストに許可を](manage-tenant-allows.md)追加する: ブロックされたメッセージが管理者申請プロセスの一部として送信された場合に、許可エントリをテナント許可/ブロック リストに追加できるようになりました。 ブロックの性質に応じて、送信された URL、ファイル、送信者の許可がテナント許可/ブロック リストに追加されます。 ほとんどの場合、許可が追加され、システムに時間が与え、保証されていれば自然に許可されます。 場合によっては、Microsoft によって許可が管理されます。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
 - [自動調査の電子メール分析の機能強化](email-analysis-investigations.md)
 - [高度な配信](configure-advanced-delivery.md): サード パーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージをセキュリティ操作メールボックスに配信するための新しい機能を導入しました。
-- [Microsoft Teamsのリンクをセーフする](safe-links.md#safe-links-settings-for-microsoft-teams)
+- [Microsoft Teams の安全なリンク](safe-links.md#safe-links-settings-for-microsoft-teams)
 - 次のシナリオの新しいアラート ポリシー: 侵害されたメールボックス、フォームフィッシング、オーバーライドが原因で配信された悪意のあるメール、ZAP の丸め
   - 疑わしいメール転送アクティビティ
   - フォームの共有と応答の収集について制限されたユーザー
@@ -100,15 +112,15 @@ ms.locfileid: "66015006"
 
 ## <a name="june-2021"></a>2021 年 6 月
 
-- フィッシング対策ポリシー内の新しい最初の連絡先安全性のヒント設定。 この安全性のヒントは、受信者が最初に送信者から電子メールを受信したとき、または送信者から電子メールを受信しない場合に表示されます。 この設定とその構成方法の詳細については、次の記事を参照してください。
-  - [最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
+- フィッシング対策ポリシー内の新しい最初の連絡先の安全ヒント設定。 この安全に関するヒントは、受信者が最初に送信者から電子メールを受信したとき、または送信者から電子メールを受信しない場合に表示されます。 この設定とその構成方法の詳細については、次の記事を参照してください。
+  - [最初の連絡先の安全に関するヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)
   - [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)
   - [詳細については、「Microsoft Defender for Office 365 のフィッシング対策ポリシーを構成する」を参照してください。](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="aprilmay-2021"></a>2021 年 4 月/5 月
 
 - [電子メール エンティティ ページ](mdo-email-entity-page.md): 脅威、認証と検出、起爆の詳細、およびまったく新しいメール プレビュー エクスペリエンスに関する情報を含む、電子メールの 360 度の統合ビュー。
-- [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): EmailEvents (RecordType 28) を更新して、配信アクション、元の配信場所と最新の配信場所、および更新された検出の詳細を追加します。
+- [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events): EmailEvents (RecordType 28) に更新して、配信アクション、元の配信場所と最新の配信場所、および更新された検出の詳細を追加します。
 - [Defender for Office 365用の Threat Analytics](/microsoft-365/security/defender/threat-analytics): アクティブな脅威アクター、一般的な手法、攻撃面を表示し、進行中のキャンペーンに関する Microsoft の研究者からの広範なレポートを表示します。
 
 ## <a name="februarymarch-2021"></a>2021 年 2 月/3 月
@@ -124,5 +136,5 @@ Microsoft Defender for Office 365が 2 つのプランで利用できること�
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft 365ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
+- [Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap)
 - [Microsoft Defender for Office 365 サービスの説明](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
