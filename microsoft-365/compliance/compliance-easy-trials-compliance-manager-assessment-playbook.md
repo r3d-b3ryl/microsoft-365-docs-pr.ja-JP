@@ -1,5 +1,5 @@
 ---
-title: Microsoft コンプライアンス マネージャー プレミアム アセスメント試用版プレイブック
+title: Microsoft Purview コンプライアンス マネージャー プレミアム アセスメント試用版プレイブック
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -14,17 +14,20 @@ ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft コンプライアンス マネージャー プレミアム アセスメント試用版プレイブック。
-ms.openlocfilehash: f50060fa5e9f037fbe1301496f18422684c38d3d
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: Microsoft Purview コンプライアンス マネージャー プレミアム アセスメント試用版プレイブック。
+ms.custom: trial-playbook
+ms.openlocfilehash: 3d41cde8cbf7cb6158573ed158a41dfe42d28dd5
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759857"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531013"
 ---
-# <a name="trial-playbook-microsoft-compliance-manager-premium-assessments"></a>試用版プレイブック: Microsoft コンプライアンス マネージャー プレミアム アセスメント
+# <a name="trial-playbook-microsoft-purview-compliance-manager-premium-assessments"></a>試用版プレイブック: Microsoft Purview コンプライアンス マネージャー プレミアム アセスメント
 
-Microsoft Compliance Manager プレミアム アセスメント試用版プレイブックへようこそ。
+[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+
+Microsoft Purview Compliance Manager プレミアム アセスメント試用版プレイブックへようこそ。
 
 このプレイブックは、プレミアム アセスメント テンプレート (アドオン) の包括的なセットの使用法を教えることによって、90 日間の無料試用版の利用に役立ちます。
 
@@ -61,7 +64,7 @@ Microsoft の推奨事項を使用すると、プレミアム アセスメント
 
 試用版ライセンスを使用すると、25 のプレミアム テンプレートを 90 日間使用できます。 リストから 300 以上のプレミアム テンプレートを選択できます。 25 のテンプレートを一度にすべて選択する必要はありません。 一度選択すると、試用版ライセンスを取得して 4 時間以内に、ライセンス テンプレートが使用可能になります。
 
-プレミアム アセスメント アドオン評価版を有効化する方法は 2 つあります: コンプライアンス マネージャー ダッシュボードを使用するか、Microsoft 365 コンプライアンス トライアルを通じて対応します。
+プレミアム アセスメント アドオン評価版を有効化する方法は 2 つあります: コンプライアンス マネージャー ダッシュボードを使用するか、Microsoft Purview トライアルを通じて対応します。
 
 ### <a name="enable-trial-via-the-compliance-manager-dashboard"></a>コンプライアンス マネージャー ダッシュボードを使用して試用版を有効にする
 

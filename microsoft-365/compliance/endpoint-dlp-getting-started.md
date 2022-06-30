@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 097ad2ab08d31482413285d3b3d82e6b43255281
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 1b22fbd10c78c638a9cc68acf939a22d5c140549
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952756"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66531026"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
 
@@ -66,7 +66,7 @@ Windows デバイスのオンボードに関する具体的なガイダンスに
 :---|:---
 [グループ ポリシーを使用して Windows 10 または 11 デバイスをオンボードする](device-onboarding-gp.md) | グループ ポリシーを使用して構成パッケージをデバイスに展開します。
 [Microsoft Endpoint Configuration Manager を使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-sccm.md) | Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1606 または Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1602 以前のいずれかを使用して、構成パッケージをデバイスに展開できます。
-[モバイル デバイス管理ツールを使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-mdm.md) | モバイル デバイス管理ツールまたは Microsoft Intune を使用して、構成パッケージをデバイスに展開します。
+[Microsoft Intune を使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-mdm.md) | Microsoft Intune を使用して構成パッケージをデバイスに展開します。
 [ローカル スクリプトを使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-script.md) | ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
 [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](device-onboarding-vdi.md) | 構成パッケージを使用して VDI デバイスを構成する方法について説明します。
 

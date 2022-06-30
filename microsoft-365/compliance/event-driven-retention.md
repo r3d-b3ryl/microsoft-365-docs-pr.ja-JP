@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: 通常、レコード管理ソリューションの一部として、特定したイベントに基づいて保持期間を開始するように保持ラベルを構成することができます。
-ms.openlocfilehash: 65a3c2088974398abb6ddbeb205cfb66541629e2
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 380a95a6b4d6fa6585d0912b675d65032cd8258b
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285108"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530862"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>イベントの発生時に保持を開始する
 
@@ -202,9 +202,16 @@ PowerShell スクリプトを使用して、ビジネス アプリケーショ�
 - [New-ComplianceRetentionEvent](/powershell/module/exchange/new-complianceretentionevent)
     
 
+アイテム保持ラベルとそのポリシーを作成する他のコマンドレットを識別するには、「[アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット](retention-cmdlets.md)」を参照してください。
+
 ## <a name="automate-events-by-using-a-rest-api"></a>REST API を使用してイベントを自動化する
 
 REST API を使用して、保持期間の開始をトリガーするイベントを自動的に作成できます。
+
+> [!NOTE]
+> プレビュー段階でロールアウトしたら、[レコード管理に Microsoft Graph API](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) を使用してイベントを作成し、イベントの種類と保持ラベルを作成することもできます。
+> 
+> このセクションの REST API は間もなく非推奨になり、動作が停止されるため、これらの Graph API を試してみることをお勧めします。
 
 REST APIは、HTTP 操作 (メソッド) のセットをサポートするサービス エンドポイントであり、サービスのリソースへの作成/取得/更新/削除アクセスを提供します。詳細については、「[REST API の要求/応答のコンポーネント](/rest/api/gettingstarted/#components-of-a-rest-api-requestresponse)」を参照してください。Microsoft 365 REST APIを使用すると、POST メソッドと GET メソッドを使用してイベントを作成および取得できます。
 

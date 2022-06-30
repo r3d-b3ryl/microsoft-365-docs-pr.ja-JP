@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: bbc7735e0c0267db5e69279d7ed81db8c0119e37
-ms.sourcegitcommit: 1fa0b15f86470c49dddf0d6de59d553a38ae259b
+ms.openlocfilehash: 720b2828ab1e27ccebdd12ceeef0479b64a9bafa
+ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65863442"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66530494"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
@@ -72,6 +72,9 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 
 > [!NOTE]
 > テナント間アクセス設定の変更は、有効になるまでに最大 3 時間 15 分かかる場合があります。
+
+> [!NOTE]
+> 商用クラウドと GCC クラウド間の共有チャネルはサポートされていません。
 
 ### <a name="add-an-organization"></a>組織を追加する
 
