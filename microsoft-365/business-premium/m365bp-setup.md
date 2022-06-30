@@ -1,13 +1,12 @@
 ---
 title: Microsoft 365 Business Premium のセットアップ
-description: Microsoft 365 Business Premium をセットアップする方法を確認する
+description: Microsoft 365 Business Premium をセットアップする方法、またはソリューション プロバイダーと連携して設定する方法。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.date: 04/08/2022
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: shlomiakirav
@@ -15,21 +14,20 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 9e24e6bada3b1f5aa047692dc4d742a5a006b9af
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.custom: intro-get-started
+ms.openlocfilehash: 6edfd60b5f5a3d10200191cd676fb66fa72ec1ba
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65317986"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556770"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
 [Microsoft 365 Business Premium の試用版の使用を開始するか、購入したら](get-microsoft-365-business-premium.md)、次のステップはすべての設定を行うことです。使用できるオプションが複数あります。次のことを実行できます。
 
-- [最初はガイド付きセットアップ エクスペリエンス](#use-the-guided-process-for-basic-setup)を使用して基本的なセットアップと構成を行うか、
-- [Microsoft クラウド ソリューション プロバイダー (CSP) などのパートナーと連携します](#work-with-a-microsoft-partner)。
-
-この記事をガイドとして使用してください。
+- [最初はガイド付きセットアップ エクスペリエンス](m365bp-setup.md#guided-setup-process)を使用して基本的なセットアップと構成を行うか、
+- Microsoft クラウド ソリューション プロバイダー (CSP) などの[パートナーと連携します](m365bp-setup.md#work-with-a-microsoft-partner)。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -45,15 +43,9 @@ ms.locfileid: "65317986"
 > [!TIP]
 > Microsoft 365、Office、システム要件の詳細については、「[Microsoft 365 および Office のリソース](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)」を参照してください。
 
-## <a name="use-the-guided-process-for-basic-setup"></a>基本セットアップのためのガイド付き手順を使用する
+## <a name="guided-setup-process"></a>ガイド付きセットアップ プロセス
 
-Microsoft 365 Business Premium には、基本セットアップのためのガイド付き手順が含まれています。 ガイド付きプロセスには、次のタスクが含まれています。
-
-- [既存のドメインを追加してサインインをカスタマイズする](../admin/setup/setup-business-basic.md#add-your-domain-to-personalize-sign-in)
-- [ユーザーの追加とライセンスの割り当て](../admin/add-users/add-users.md)
-- [DNS レコードの更新](../admin/setup/setup-business-basic.md#connect-your-domain)
-
-次のビデオは Microsoft 365 Business Standard のガイド付きセットアップ手順を説明しています。この操作は Microsoft 365 Business Premium でも同じです。<br/><br/>
+Microsoft 365 Business Premium には、ガイド付き手順が含まれています。 次のビデオは、Microsoft 365 Business Standard のガイド付きセットアップ プロセスを示しています。これは、Microsoft 365 Business Premium にも適用されます。<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -66,7 +58,7 @@ Microsoft 365 の入手と設定に Microsoft パートナーのサポートを�
 
 1. 「**Microsoft ソリューション プロバイダー**」ページ ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)) に移動します。
 
-2. 検索ボックスに、自分の場所と会社の規模を入力します。 
+2. 検索ボックスに、自分の場所と会社の規模を入力します。
 
 3. **[製品、サービス、スキル、業界の検索]** ボックスに `Microsoft 365` と入力し、**[Go]** を選択します。
 
@@ -79,17 +71,7 @@ Microsoft 365 の入手と設定に Microsoft パートナーのサポートを�
 - [セルフサービス パスワードを設定する](../admin/add-users/let-users-reset-passwords.md)
 
 - [セルフサービスによるグループ管理をセットアップする](/azure/active-directory/enterprise-users/groups-self-service-management)
-## <a name="next-objectives"></a>次の目標
 
-初期セットアップの手順が完了したら、次の目標は、セキュリティとコンプライアンスの機能を設定することです。
+### <a name="next-objective"></a>次の目標
 
-1. [セキュリティ保護を設定する](m365bp-security-overview.md)。
-
-2. チーム メンバーのトレーニングを行う:
-
-   - [ビジネス データへのアクセスに使用する個人用デバイスを設定する](m365bp-devices-overview.md)
-   - [メールをより安全に使用する](m365bp-protect-email-overview.md)
-   - [共同作業と共有をより安全に行う](m365bp-collaborate-share-securely.md)
-
-3. [管理対象デバイスを保護する](m365bp-protect-devices.md)。
-
+これらの目標を達成したら、[セキュリティ保護を強化する](m365bp-security-overview.md) に進みます。

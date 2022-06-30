@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b1db15a9ac896bdcc871177ece532aa01d4bc38
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 23d59cada628b37942d7c97f8fb517eaf6f1e66a
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014324"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556880"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -48,6 +48,9 @@ ms.locfileid: "66014324"
 - ラベルをコンテンツに適用するときに、**ユーザーがアクセス許可を割り当てる** ことができます。 このようにして、組織内のユーザーに、共同作業を行って作業を完了するために必要な柔軟性を与えることができます。
 
 暗号化の設定は、Microsoft Purview コンプライアンス ポータルで[秘密度ラベルを作成する](create-sensitivity-labels.md)ときに使用できます。
+
+> [!NOTE]
+> プレビューでロールアウトされた Outlook の秘密度ラベルでは、Microsoft Azure AD Rights Management サービスからの暗号化とアクセス許可ではなく、S/MIME 保護を適用できます。 詳細については、「[Outlook で S/MIME 保護を適用するラベルを構成する](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)」を参照してください。
 
 ## <a name="understand-how-the-encryption-works"></a>暗号化のしくみを理解する
 

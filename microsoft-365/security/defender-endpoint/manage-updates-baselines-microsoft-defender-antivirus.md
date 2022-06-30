@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
 audience: ITPro
-ms.topic: article
+ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -18,12 +18,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: bcba0da734c4f5b1945a506d77a88355215efada
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: c1354d69ea1b645ee419ce7635c49e65a0557f26
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923305"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66487865"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -90,6 +90,33 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - 統合の改善 (クラウド、[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>2022 年 5 月 (プラットフォーム: 4.18.2205.7 | エンジン: 1.1.19300.2)</summary>
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.369.88.0**<br/>
+&ensp;リリース日: **2022 年 6 月 22 日**<br/>
+&ensp;プラットフォーム: **4.18.2205.7**<br/>
+&ensp;エンジン: **1.1.19300.2**<br/>
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+
+エンジンバージョン: 1.1.19300.2<br/>
+セキュリティ インテリジェンス更新プログラムのバージョン: 1.369.88.0<br/>
+
+### <a name="whats-new"></a>新機能
+
+- 更新プログラムの ETW チャネル構成の修正プログラムを追加しました 
+- より具体的な除外ターゲット設定を可能にする、コンテキストの除外に関するサポートを追加しました 
+- 固定コンテキストの最大サイズ
+- [ASR LSASS 検出](attack-surface-reduction-rules-reference.md)の修正プログラムを追加しました
+- SHSetKnownFolder にルール除外ロジックの修正プログラムを追加しました
+- 履歴ストアの AMSI ディスク使用制限を追加しました
+- 署名の更新を受け入れることを拒否する Defender サービスの修正を追加しました
+
+### <a name="known-issues"></a>既知の問題
+
+既知の問題はありません
+
+<br/><br/>
+</details><details>
 <summary>2022 年 3 月 *更新プログラム* (プラットフォーム: 4.18.2203.5 | エンジン: 1.1.19200.5)</summary>
 
 *2022 年 3 月の Microsoft Defender エンジン更新プログラム (**1.1.19100.5**) を適用したお客様は、高いリソース使用率 (CPU またはメモリ) が発生した可能性があります。Microsoft は、以前のバージョンで導入されたバグを解決する更新プログラム (**1.1.19200.5**) をリリースしました。お客様は、ウイルス対策エンジン (**1.1.19200.5**) のこの新しいエンジン ビルドに更新することをお勧めします。パフォーマンスの問題が完全に修正されるようにするには、更新プログラムを適用した後にマシンを再起動することをお勧めします。*
@@ -134,7 +161,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 
 ### <a name="known-issues"></a>既知の問題
 
-既知の問題はありません
+- リソース使用率 (CPU またはメモリ) が高くなる可能性があります。 2022 年 3 月のプラットフォーム 4.18.2203.5 およびエンジン 1.1.19200.5 の更新プログラムを参照してください。
 
 <br/><br/>
 </details><details>
@@ -166,14 +193,21 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 既知の問題はありません
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: テクニカル アップグレード サポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートのみに縮小されます。 このセクションに記載されているバージョンより古いバージョンは、テクニカル アップグレード サポートのみ提供されます。<br/><br/>
+
+<details>
 <summary>2022 年 1 月 (プラットフォーム: 4.18.2201.10 | エンジン: 1.1.18900.2)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.357.8.0**<br/>
 &ensp;リリース日: **2022 年 2 月 9 日**<br/>
 &ensp;プラットフォーム: **4.18.2201.10**<br/>
 &ensp;エンジン: **1.1.18900.2**<br/>
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+&ensp;サポート フェーズ: **テクニカル アップグレード サポート (のみ)**<br/>
 
 エンジンのバージョン: 1.1.18900.2 <br/>
 セキュリティ インテリジェンス更新プログラムのバージョン: 1.357.8.0 <br/>
@@ -194,14 +228,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 既知の問題はありません
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: テクニカル アップグレード サポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートのみに縮小されます。 このセクションに記載されているバージョンより古いバージョンは、テクニカル アップグレード サポートのみ提供されます。<br/><br/>
-
-<details>
+</details><details>
 <summary>2021 年 11 月 (プラットフォーム: 4.18.2111.5 | エンジン: 1.1.18800.4)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.355.2.0**<br/>
