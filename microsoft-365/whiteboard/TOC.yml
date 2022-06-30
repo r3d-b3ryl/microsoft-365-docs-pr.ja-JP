@@ -1,19 +1,17 @@
 - name: Microsoft Whiteboard
   href: index.md
-- name: 組織向けホワイトボード
-  items:
-    - name: アクセスを有効にして管理する
-      href: enable-whiteboard-access-organizations.md
-    - name: データ管理
-      href: manage-data-organizations.md
-    - name: 共有を管理する
-      href: manage-sharing-organizations.md
-    - name: Windows デバイスに展開する
-      href: deploy-on-windows-organizations.md
+- name: アクセスを管理する
+  href: manage-whiteboard-access-organizations.md
+- name: データ管理
+  href: manage-data-organizations.md
+- name: 共有を管理する
+  href: manage-sharing-organizations.md
+- name: Windows デバイスに展開する
+  href: deploy-on-windows-organizations.md
 - name: 政府機関向けホワイトボード
   items:
-    - name: アクセスの有効化と管理 - GCC 高
-      href: enable-whiteboard-access-gcc-high.md
+    - name: アクセスの管理 - GCC High
+      href: manage-whiteboard-access-gcc-high.md
     - name: データの管理 - GCC 高
       href: manage-data-gcc-high.md
     - name: 共有の管理 - GCC 高

@@ -208,8 +208,12 @@
               href: attack-simulation-training-simulation-automations.md
             - name: 攻撃シミュレーション トレーニングでのペイロードの自動化
               href: attack-simulation-training-payload-automations.md
+            - name: 攻撃シミュレーション トレーニングのカスタム ペイロードを作成する
+              href: attack-simulation-training-payloads.md
             - name: 攻撃シミュレーション トレーニングのエンドユーザー通知
               href: attack-simulation-training-end-user-notifications.md
+            - name: 攻撃シミュレーション トレーニングのログイン ページ
+              href: attack-simulation-training-login-pages.md
             - name: 攻撃シミュレーション トレーニングでのインサイトとレポート
               href: attack-simulation-training-insights.md
             - name: 攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
