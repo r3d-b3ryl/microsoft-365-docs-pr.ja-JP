@@ -2,12 +2,11 @@
 title: Microsoft 365 Business Premium を使用した Office クライアントの展開を準備する
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
-ms.date: 04/01/2022
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection: M365-subscription-management
@@ -23,12 +22,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: ed34fff3-2881-4ed4-9906-1ba6bb8dd804
 description: 32 ビット Office アプリを Windows コンピューターに自動的にインストールし、Microsoft 365 Business Premium で最新の状態に保つ方法を学びます。
-ms.openlocfilehash: d4e9c16dea6697a428c5f7e51b7c8c1f819c75e4
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: e65b6f0b0eb6c08d2d4cd612a61038ae75aa8030
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622040"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493825"
 ---
 # <a name="prepare-to-automatically-install-office-apps-to-client-computers"></a>Office アプリをクライアント コンピューターに自動的にインストールするための準備
 
@@ -73,5 +72,5 @@ Office のクイック実行バージョンがあるかどうかを判断する�
 
 ## <a name="next-objective"></a>次の目標
 
-[デバイス ポリシーを確認および編集する](m365bp-view-edit-create-mdb-policies.md)
+[アプリ保護設定を作成する](m365bp-protection-settings-for-windows-10-devices.md)
   

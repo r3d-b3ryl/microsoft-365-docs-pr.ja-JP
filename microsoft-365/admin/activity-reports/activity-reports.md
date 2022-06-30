@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- adminvideo
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -22,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 9dbd1ef7044db3a27c93cfe7e2acd09aaa32cd14
-ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
+ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66151164"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66486311"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
@@ -151,6 +152,16 @@ ms.locfileid: "66151164"
 2. [**レポート**] を選択します。
 
 3. **[すべてのレポートで非表示のユーザー、グループ、およびサイト名を表示する]** ステートメントのチェックを外し、変更を保存します。
+
+2022 年 6 月 23 日以降、グローバル管理者が Microsoft 365 管理センターにアクセスしなくても、この設定を変更できるように、すべての環境で API が徐々に利用できるようになります。 API の詳細は次のとおりです。  
+
+URL は https://graph.microsoft.com/beta/admin/reportSettings です 
+
+この API では、次の 2 つのメソッドが承認されています。
+
+:::image type="content" source="../../media/api-show-details.png" alt-text="API メソッド。":::
+
+レポートにはプライバシー設定プロパティのみが含まれます。 Graph API の詳細については、「[Microsoft Graph API を使用する](/graph/use-the-api)」を参照してください。 グローバル管理者は、ソフトウェア開発キット (SDK) を使用するか、ネットワーク機能を備えた任意のプログラム言語を使用して API を直接呼び出すことができます。 [Graph エクスプローラー](/graph/graph-explorer/graph-explorer-overview)を使用することをお勧めします。
 
 レポート ダッシュボードのレポートで変更が有効になるまで数分かかります。 この設定は、[Microsoft Graph](/graph/api/resources/report) と [Power BI](/microsoft-365/admin/usage-analytics/usage-analytics) の Microsoft 365 使用状況レポート、および [Microsoft Teams 管理センターの使用状況レポート](/microsoftteams/teams-analytics-and-reports/teams-reporting-reference)にも適用されます。 特定可能なユーザー情報の表示は、Microsoft Purview コンプライアンス ポータル監査ログに記録されるイベントです。
 

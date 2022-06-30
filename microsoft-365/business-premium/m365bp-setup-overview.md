@@ -4,10 +4,9 @@ f1.keywords:
 - NOCSH
 ms.author: v-kcirillo
 author: cirilk
-manager: scotv
-ms.date: 04/20/2022
+manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,24 +23,23 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: キャンペーンやその他のビジネスの概要を設定します。 サイバーセキュリティを設定し、サイバー攻撃を防ぐ方法。
-ms.openlocfilehash: 3d2aa4a57bf857a855924f834492b2efd6d3f730
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 小規模から中規模の企業やキャンペーンのセットアップの概要。 サイバーセキュリティを設定し、サイバー攻撃を防ぐ方法。
+ms.openlocfilehash: a1eb7bd8daab97dcf15b45c66f0f82aa4ce39169
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65101949"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491887"
 ---
 # <a name="fortify-your-organization-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium を使用して組織を強化する
 
-この最初のミッションでは、最初のセキュリティ防御をすぐに設定します。 サインインして[セットアップ ウィザード](../business/set-up.md?toc=/microsoft-365/campaigns/toc.json)を開始し、チームの全体的なセキュリティとライセンスを構成します。 
+Microsoft 365 Business Premium を入手したので、最初の重要なミッションは、初期のセキュリティ防御をすぐに設定することです。 始めましょう。
 
 目的は次のとおりです。
 
-- サインアップして Microsoft 365 Business Premium にサインインする
-- Microsoft 365 Business Premium をセットアップする
+- [Microsoft 365 Business Premium を設定します](m365bp-setup.md)。
+- これがサブスクリプションの場合は、[Microsoft 365 Business for Campaigns を設定します](m365-campaigns-setup.md)。
 
-これらの目標を達成したら、[次のミッション](m365bp-security-overview.md)に進むことができます。
+これらの目標を達成したら、[セキュリティ保護を強化する](m365bp-security-overview.md) に進みます。
 
 :::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Business Premium のセットアップ":::
-

@@ -2,11 +2,11 @@
 title: Microsoft Business Premium でオンライン会議をセットアップする
 f1.keywords:
 - NOCSH
-ms.author: twerner
-author: twerner
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -25,14 +25,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Business Premium で Microsoft Teams とのオンライン会議をセットアップします。
-ms.openlocfilehash: 01e5d2aa1b556653742a22c1628100044cb29ff2
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4273dee956f4952b4dc2b017c68334ae23e71c0d
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623536"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66491783"
 ---
-# <a name="set-up-meetings"></a>会議をセットアップする
+# <a name="set-up-meetings-with-microsoft-teams"></a>Microsoft Teams で会議を設定する
 
 組織のメンバーがすべての会議で Microsoft Teams を使用していることを確認してください。 Teams 会議のファイルには、オーディオ、ビデオ、および共有が含まれます。これらはオンラインであるため、常に会議スペースがあり、プロジェクターのある部屋は必要ありません。 Microsoft Teams 会議は、組織の内外の両方でスタッフと一緒に集まるための優れた方法です。
 

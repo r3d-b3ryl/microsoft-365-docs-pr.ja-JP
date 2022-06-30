@@ -44,32 +44,31 @@
 #### [PowerShell、WMI、MPCmdRun.exe を使用する](manage-mde-post-migration-other-tools.md)
 #### [サーバー移行シナリオ](server-migration.md)
 
-## [デバイスの構成とオンボード]()
+## [デバイスのオンボードと構成]()
 ### [デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します](onboard-configure.md)
-
-
-### [Windows および Windows Server 上の Microsoft Defender for Endpoint]()
-#### [Windows エンドポイント用のオンボード ツールと各種方法](configure-endpoints.md)
-#### [Windows デバイスと Windows サーバーのオンボード]()
-
-##### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
-
-##### [Windows デバイスと Windows サーバーのオンボード]()
-###### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022 をオンボードする](configure-server-endpoints.md)
-###### [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
-###### [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
-###### [Microsoft Endpoint Configuration Manager を使用した Windows デバイスのオンボード](configure-endpoints-sccm.md)
-###### [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
-###### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
-###### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](onboard-windows-multi-session-device.md)
-
-#### [Microsoft Defender for Cloudとの統合](azure-server-integration.md) 
-
+### [Windows クライアントのオンボーディング](onboard-windows-client.md)
+#### [Intune を使用した Windows クライアントのオンボード](configure-endpoints-mdm.md)
+#### [Microsoft Endpoint Configuration Manager を使用した Windows クライアントのオンボード](configure-endpoints-sccm.md)
+#### [グループ ポリシーを使用した Windows クライアントのオンボード](configure-endpoints-gp.md)
+#### [ローカル スクリプトを使用した Windows クライアントのオンボード](configure-endpoints-script.md)
+#### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
+#### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](onboard-windows-multi-session-device.md)
 #### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
-#### [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)
-#### [デバイスに対してシミュレートされた攻撃を実行する](attack-simulations.md)
-#### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
-#### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
+#### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
+
+
+
+### [Windows Server のオンボーディング](onboard-windows-server.md)
+#### [Windows Server 2012 R2、2016、半期チャネル、2019、および 2022 をオンボードする](configure-server-endpoints.md)
+#### [Configuration Manager を使用した Windows Server のオンボード](configure-endpoints-sccm.md)
+#### [グループ ポリシーを使用した Windows Server デバイスのオンボード](configure-endpoints-gp.md)
+#### [ローカル スクリプトを使用した Windows Server のオンボード](configure-endpoints-script.md)
+#### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
+
+
+
+
+
 
 ### [他のオペレーティング システム上の Microsoft Defender for Endpoint]()
 #### [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
@@ -175,6 +174,14 @@
 ###### [FAQ およびトラブルシューティング](ios-troubleshoot.md)
 
 ###### [プライバシー](ios-privacy.md)
+
+
+
+### [Microsoft Defender for Cloudとの統合](azure-server-integration.md) 
+### [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)
+### [デバイスに対してシミュレートされた攻撃を実行する](attack-simulations.md)
+### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
+### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
 
 ### [Microsoft エンドポイント マネージャーを使用してデバイス上の Microsoft Defender for Endpoint の構成設定を管理する](security-config-management.md)
 
@@ -326,6 +333,7 @@
 #### [Microsoft Defender ウイルス対策の除外](configure-exclusions-microsoft-defender-antivirus.md)
 ##### [ファイル拡張子とフォルダーの場所に基づく除外](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 ##### [プロセスによって開かれたファイルの除外](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+##### [コンテキスト ファイルとフォルダーの除外](configure-contextual-file-folder-exclusions-microsoft-defender-antivirus.md)
 ##### [Windows Server の除外](configure-server-exclusions-microsoft-defender-antivirus.md)
 ##### [回避するべき一般的なミス](common-exclusion-mistakes-microsoft-defender-antivirus.md)
 

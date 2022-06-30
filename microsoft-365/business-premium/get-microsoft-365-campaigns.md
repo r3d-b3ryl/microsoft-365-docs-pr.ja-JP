@@ -1,12 +1,12 @@
 ---
-title: Microsoft 365 for Campaigns を取得する方法
+title: Microsoft 365 for Campaigns を入手する
 f1.keywords:
 - NOCSH
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 for Campaigns を取得することで、サイバー セキュリティの脅威からメール、データ、通信まで、あなたの公職選挙を保護できます。
-ms.openlocfilehash: 945948b378bc67bf52f04740fb00220b4606b294
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 993a9796a4e6a264b26231c495661cbba453941c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100117"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493689"
 ---
 # <a name="how-to-get-microsoft-365-for-campaigns"></a>Microsoft 365 for Campaigns を取得する方法
 
@@ -77,4 +77,4 @@ Microsoft 365 for Campaigns にサインアップしても、最短利用期間�
 
 ## <a name="next-steps"></a>次の手順
 
-招待を受け取ったら、[Microsoft 365 for Campaigns にサインアップします](m365-campaigns-sign-up.md)。
+招待を受け取ったら、[Microsoft 365 for Campaigns を設定します](m365-campaigns-setup.md)。
