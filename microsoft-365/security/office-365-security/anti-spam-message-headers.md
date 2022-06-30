@@ -18,12 +18,12 @@ description: 管理者は、Exchange Online Protection (EOP) によってメッ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d9c98446b7963581654c5920c30202f547ce271
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 592a583b572c134dd4ecd33dd18f392f6e9b36ce
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089025"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66493067"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
