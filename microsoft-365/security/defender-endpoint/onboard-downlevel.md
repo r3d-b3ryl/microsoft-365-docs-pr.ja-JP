@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpointで以前のバージョンのWindowsをオンボードする
-description: Microsoft Defender for Endpoint センサーにセンサー データを送信できるように、サポートされている以前のバージョンのWindows デバイスをオンボードする
+title: 以前のバージョンの Windows をMicrosoft Defender for Endpointにオンボードする
+description: サポートされている以前のバージョンの Windows デバイスをオンボードして、センサー データをMicrosoft Defender for Endpoint センサーに送信できるようにします
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, down level
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8ca88340ae90889c0e45c5905863373d930949b2
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872964"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554425"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -39,17 +39,17 @@ ms.locfileid: "65872964"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-downlevel-abovefoldlink)
 
-Defender for Endpoint では、下位レベルのオペレーティング システムを含めるサポートが拡張され、サポートされているWindows バージョンに対する高度な攻撃検出と調査機能が提供されます。
+Defender for Endpoint では、下位レベルのオペレーティング システムを含めるサポートが拡張され、サポートされている Windows バージョンで高度な攻撃の検出と調査機能が提供されます。
 
-ダウンレベルのWindowsクライアント エンドポイントを Defender for Endpoint にオンボードするには、次の手順を実行する必要があります。
+ダウンレベルの Windows クライアント エンドポイントを Defender for Endpoint にオンボードするには、次のことを行う必要があります。
 
 - [System Center Endpoint Protection クライアントの構成と更新](#configure-and-update-system-center-endpoint-protection-clients)
-- [センサー データを報告するMicrosoft Monitoring Agent (MMA) をインストールして構成する](#install-and-configure-microsoft-monitoring-agent-mma)
+- [センサー データを報告する Microsoft Monitoring Agent (MMA) をインストールして構成する](#install-and-configure-microsoft-monitoring-agent-mma)
 
-Windows Server 2008 R2 SP1 の場合は、[Microsoft Defender for Cloudを介してオンボードする](#onboard-windows-servers-through-microsoft-defender-for-cloud)オプションがあります。
+Windows Server 2008 R2 SP1 の場合は、 [Microsoft Defender for Cloud を使用してオンボードすることもできます](#onboard-windows-servers-through-microsoft-defender-for-cloud)。
 
 > [!NOTE]
-> Microsoft Monitoring Agentを介してWindows サーバーをオンボードするには、ノードごとに Defender for Endpoint スタンドアロン サーバー ライセンスが必要です (オプション 1)。 または、Microsoft Defender for Cloud (オプション 2) を使用してWindows サーバーをオンボードするには、ノードごとに Microsoft Defender for servers ライセンスが必要です。「[Microsoft Defender for Cloudで使用可能なサポートされている機能](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers)」を参照してください。
+> Microsoft Monitoring Agent を使用して Windows サーバーをオンボードするには、ノードごとに Defender for Endpoint スタンドアロン サーバー ライセンスが必要です (オプション 1)。 または、Microsoft Defender for Cloud を使用して Windows サーバーをオンボードするには、ノードごとに Microsoft Defender for servers ライセンスが必要です (オプション 2)、 [Microsoft Defender for Cloud で使用可能なサポートされている機能に関するページを](/azure/defender-for-cloud/supported-machines-endpoint-solutions-clouds-servers)参照してください。
 
 > [!TIP]
 > デバイスをオンボードした後、検出テストを実行して、サービスに適切にオンボードされていることを確認できます。 詳細については、「 [新しくオンボードされた Defender for Endpoint エンドポイントで検出テストを実行する」を参照してください](run-detection-test.md)。
@@ -63,11 +63,11 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 
 この統合を有効にするには、次の手順が必要です。
 
-- [Endpoint Protection クライアント用の 2017 年 1 月マルウェア対策プラットフォーム更新プログラムを](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)インストールする
+- [Endpoint Protection クライアント用に 2017 年 1 月のマルウェア対策プラットフォーム更新プログラムを](https://support.microsoft.com/help/3209361/january-2017-anti-malware-platform-update-for-endpoint-protection-clie)インストールする
 - SCEP クライアント Cloud Protection Service メンバーシップを **詳細設定** に構成する
-- Microsoft Defender ウイルス対策 クラウドへの接続を許可するようにネットワークを構成します。 詳細については、「[Microsoft Defender ウイルス対策ネットワーク接続の構成と検証](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)」を参照してください。
+- Microsoft Defender ウイルス対策クラウドへの接続を許可するようにネットワークを構成します。 詳細については、「[Microsoft Defender ウイルス対策ネットワーク接続の構成と検証](/microsoft-365/security/defender-endpoint/configure-network-connections-microsoft-defender-antivirus)」を参照してください。
 
-## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Microsoft Monitoring Agent (MMA) のインストールと構成
+## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Microsoft Monitoring Agent (MMA) をインストールして構成する
 
 ### <a name="before-you-begin"></a>はじめに
 
@@ -76,14 +76,14 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 - [2018 年 2 月の月次更新プログラムロールアップを](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)インストールする
 
   > [!NOTE]
-  > Windows Server 2008 R2、Windows 7 SP1 Enterprise、Windows 7 SP1 Proにのみ適用されます。
+  > Windows Server 2008 R2、Windows 7 SP1 Enterprise、および Windows 7 SP1 Pro にのみ適用されます。
 
 - [カスタマー エクスペリエンスと診断テレメトリ用の更新プログラムをインストールする](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
 - [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (またはそれ以降) または [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework) をインストールする
 
     > [!NOTE]
-    > Windows Server 2008 R2、Windows 7 SP1 Enterprise、Windows 7 SP1 Proにのみ適用されます。
+    > Windows Server 2008 R2、Windows 7 SP1 Enterprise、および Windows 7 SP1 Pro にのみ適用されます。
     >
     > 4.0.x .NET Frameworkインストールしないでください。これは、上記のインストールを無効にするためです。
     >
@@ -93,21 +93,21 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 
 ### <a name="installation-steps"></a>インストールの手順
 
-1. エージェント セットアップ ファイル ([Windows 64 ビット エージェント](https://go.microsoft.com/fwlink/?LinkId=828603)または [Windows 32 ビット エージェント](https://go.microsoft.com/fwlink/?LinkId=828604)) をダウンロードします。
+1. エージェント セットアップ ファイル ( [Windows 64 ビット エージェント](https://go.microsoft.com/fwlink/?LinkId=828603) または [Windows 32 ビット エージェント) をダウンロードします](https://go.microsoft.com/fwlink/?LinkId=828604)。
 
     >[!NOTE]
     >[MMA エージェントによる SHA-1 サポートが廃止されたため、MMA エージェント](/azure/azure-monitor/agents/agent-windows#sha-2-code-signing-support-requirement)はバージョン 10.20.18029 以降である必要があります。
     
 
 2. ワークスペース ID を取得します。
-   - [Defender for Endpoint] ナビゲーション ウィンドウで、[**デバイス管理] > [オンボード] 設定 >** 選択します。
+   - Defender for Endpoint ナビゲーション ウィンドウで、[**設定] > [デバイス管理] > [オンボード**] を選択します。
    - オペレーティング システムを選択する
    - ワークスペース ID とワークスペース キーをコピーする
 
 3. ワークスペース ID とワークスペース キーを使用して、次のいずれかのインストール方法を選択してエージェントをインストールします。
     - [セットアップを使用してエージェントを手動でインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)。
 
-      [**エージェントのセットアップ オプション]** ページ **で、エージェントを Azure Log Analytics (OMS) にConnect** を選択します。
+      [**エージェントのセットアップ オプション]** ページで、[**エージェントを Azure Log Analytics (OMS) に接続** する] を選択します。
 
     - [コマンド ラインを使用してエージェントをインストールします](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line)。
     - [スクリプトを使用してエージェントを構成します](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation)。
@@ -124,27 +124,27 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 
 - [プロキシ サーバーを使用するように MMA を構成する](/azure/azure-monitor/platform/agent-windows#install-agent-using-setup-wizard)
 
-- [すべての接続にプロキシ サーバーを使用するようにWindowsを構成する](configure-proxy-internet.md)
+- [すべての接続にプロキシ サーバーを使用するように Windows を構成する](configure-proxy-internet.md)
 
 プロキシまたはファイアウォールが使用されている場合は、サーバーが SSL インターセプトなしですべてのMicrosoft Defender for Endpoint サービス URL に直接アクセスできることを確認してください。 詳細については、「 [Defender for Endpoint サービス URL へのアクセスを有効にする」を](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)参照してください。 SSL インターセプトを使用すると、システムが Defender for Endpoint サービスと通信できなくなります。
 
-完了すると、1 時間以内にポータルにオンボードされたWindows サーバーが表示されます。
+完了すると、1 時間以内にオンボードされた Windows サーバーがポータルに表示されます。
 
-## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudを使用してWindows サーバーをオンボードする
+## <a name="onboard-windows-servers-through-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud を使用して Windows サーバーをオンボードする
 
-1. Microsoft 365 Defenderナビゲーション ウィンドウで、**設定** > **Device 管理** > **オンボード** を選択します。
+1. Microsoft 365 Defenderナビゲーション ウィンドウで、[**デバイス管理** > **のオンボード****の設定]** >  を選択します。
 
 2. オペレーティング システムとして **Windows Server 2008 R2 SP1** を選択します。
 
-3. **Microsoft Defender for Cloudで [サーバーのオンボード**] をクリックします。
+3. **Microsoft Defender for Cloud で [サーバーのオンボード**] をクリックします。
 
-4. [Microsoft Defender for CloudでMicrosoft Defender for Endpoint](/azure/security-center/security-center-wdatp)のオンボード手順に従い、Azure ARC を使用している場合は、「[Microsoft Defender for Endpointを有効にする」のオンボード手順に従います統合](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)。
+4. [Microsoft Defender for Cloud のMicrosoft Defender for Endpoint](/azure/security-center/security-center-wdatp)のオンボード手順に従い、Azure ARC を使用している場合は、「[Microsoft Defender for Endpoint統合を有効にする」](/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration)のオンボード手順に従います。
 
 オンボード手順を完了したら、[System Center Endpoint Protection クライアントを構成して更新](#configure-and-update-system-center-endpoint-protection-clients)する必要があります。
 
 > [!NOTE]
 >
-> - Microsoft Defender を使用したサーバーのオンボードが期待どおりに機能するには、サーバーに適切なワークスペースとキーがMicrosoft Monitoring Agent (MMA) 設定内で構成されている必要があります。
+> - Microsoft Defender を介したオンボードでサーバーが期待どおりに機能するには、サーバーに Microsoft Monitoring Agent (MMA) 設定内で適切なワークスペースとキーが構成されている必要があります。
 > - 構成が完了すると、適切なクラウド管理パックがマシンにデプロイされ、センサー プロセス (MsSenseS.exe) がデプロイされて開始されます。
 > - これは、OMS ゲートウェイ サーバーをプロキシとして使用するようにサーバーが構成されている場合にも必要です。
 
@@ -161,7 +161,7 @@ Microsoft Defender AV とMicrosoft Defender for Endpointが実行されている
 
    ```sc.exe query Windefend```
 
-    結果が "指定されたサービスがインストール済みサービスとして存在しない" 場合は、Microsoft Defender AV をインストールする必要があります。 詳細については、[Windows 10のMicrosoft Defender ウイルス対策を](microsoft-defender-antivirus-windows.md)参照してください。
+    結果が "指定されたサービスがインストール済みサービスとして存在しない" 場合は、Microsoft Defender AV をインストールする必要があります。 詳細については、「[Windows 10の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)」を参照してください。
 
     グループ ポリシーを使用して Windows サーバーのMicrosoft Defender ウイルス対策を構成および管理する方法については、「[グループ ポリシー設定を使用してMicrosoft Defender ウイルス対策を構成および管理する方法](use-group-policy-microsoft-defender-antivirus.md)」 を参照してください。
 
@@ -183,7 +183,7 @@ Microsoft Defender AV とMicrosoft Defender for Endpointが実行されている
 
 ### <a name="using-group-policy"></a>グループ ポリシーの使用
 
-**手順 1: エンドポイントに対応する udpate をダウンロードします。**
+**手順 1: エンドポイントに対応する更新プログラムをダウンロードします。**
 
 1. c:\windows\sysvol\domain\scripts に移動します (ドメイン コントローラーのいずれかで変更制御が必要になる場合があります)。
 1. MMA という名前のフォルダーを作成します。
@@ -192,7 +192,7 @@ Microsoft Defender AV とMicrosoft Defender for Endpointが実行されている
     - カスタマー エクスペリエンスと診断テレメトリの更新:
       - [Windows Server 2008 R2 x64 の場合](https://www.microsoft.com/download/details.aspx?familyid=1bd1d18d-4631-4d8e-a897-327925765f71)
      
-    Windows Server 2008 R2 SP1 では、次の更新プログラムも必要です。
+    Windows Server 2008 R2 SP1 の場合は、次の更新プログラムも必要です。
 
     2018 年 2 月の月次ロールアップ - KB4074598 (Windows Server 2008 R2)
 
@@ -214,22 +214,20 @@ Microsoft Defender AV とMicrosoft Defender for Endpointが実行されている
 
 
 ```dos
-@echo off 
-cd "C:"
-IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" ( 
-exit
-) ELSE (
+@echo off  
+cd "C:" 
+IF EXIST "C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe" (  
+exit 
+) ELSE ( 
+ 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart 
+wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart 
+"c:\windows\MMA\MMASetup-AMD64.exe" /c /t:"C:\Windows\MMA"
+c:\windows\MMA\setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_ID="<your workspace ID>" OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
 
-wusa.exe C:\Windows\MMA\Windows6.1-KB3080149-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB4074598-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows6.1-KB3154518-x64.msu /quiet /norestart
-wusa.exe C:\Windows\MMA\Windows8.1-KB3080149-x64.msu /quiet /norestart
-"c:\windows\MMA\MMASetup-AMD64.exe" /c /t: "C:\Windows\MMA"c:\windows\MMA\ setup.exe /qn NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1
-OPINSIGHTS_WORKSPACE_ID="<your workspace ID>"
-OPINSIGHTS_WORKSPACE_KEY="<your workspace key>" AcceptEndUserLicenseAgreement=1
-)
-
-)
+) 
 ```
 
 
@@ -285,23 +283,23 @@ Windows Server 2008 R2 の場合は、次のものが必要です (コピーダ�
 
 :::image type="content" source="images/tasksch.png" alt-text="タスク スケジューラ" lightbox="images/tasksch.png":::
 
-Server 2008 R2 を中心とするサーバーのオンボード ドキュメントで説明されているように、以下を参照してください: Windows Server 2008 R2 SP1 の場合は、次の要件を満たしていることを確認してください。
+Server 2008 R2 のオンボードドキュメントで説明されているように、以下を参照してください:Windows Server 2008 R2 SP1 の場合は、次の要件を満たしていることを確認してください。
 
 - [2018 年 2 月の月次更新プログラムロールアップを](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)インストールする
 - [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (またはそれ以降) または [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework) をインストールする
 
-Server 2008 R2 をオンボードする前に、KB が存在Windows確認してください。 このプロセスでは、サーバーを管理するConfiguration Managerがない場合は、すべてのサーバーをオンボードできます。
+Windows Server 2008 R2 をオンボードする前に、KB が存在することを確認してください。 このプロセスでは、サーバーを管理するConfiguration Managerがない場合は、すべてのサーバーをオンボードできます。
 
 
 ## <a name="offboard-endpoints"></a>オフボード エンドポイント
 
-サービスからエンドポイントをオフボードWindowsするには、次の 2 つのオプションがあります。
+サービスから Windows エンドポイントをオフボードするには、次の 2 つのオプションがあります。
 
 - MMA エージェントをアンインストールする
 - Defender for Endpoint ワークスペースの構成を削除する
 
 > [!NOTE]
-> オフボードにより、Windows エンドポイントはポータルへのセンサー データの送信を停止しますが、エンドポイントからのデータ (発生したアラートへの参照を含む) は、最大 6 か月間保持されます。
+> オフボーディングにより、Windows エンドポイントはポータルへのセンサー データの送信を停止しますが、エンドポイントからのデータ (アラートへの参照を含む) は最大 6 か月間保持されます。
 
 ### <a name="uninstall-the-mma-agent"></a>MMA エージェントをアンインストールする
 
@@ -317,7 +315,7 @@ Windows エンドポイントをオフボードするには、MMA エージェ�
 
 #### <a name="remove-the-defender-for-endpoint-workspace-configuration-from-the-mma-agent"></a>MMA エージェントから Defender for Endpoint ワークスペースの構成を削除する
 
-1. **Microsoft Monitoring Agentプロパティ** で、**Azure Log Analytics (OMS)** タブを選択します。
+1. **Microsoft Monitoring Agent のプロパティ** で、**Azure Log Analytics (OMS)** タブを選択します。
 
 2. Defender for Endpoint ワークスペースを選択し、[ **削除**] をクリックします。
 
@@ -327,7 +325,7 @@ Windows エンドポイントをオフボードするには、MMA エージェ�
 
 1. ワークスペース ID を取得します。
 
-   1. ナビゲーション ウィンドウで、**設定** > **Onboarding** を選択します。
+   1. ナビゲーション ウィンドウで、[オン **ボーディング****の設定]** >  を選択します。
 
    1. 関連するオペレーティング システムを選択し、ワークスペース ID を取得します。
 

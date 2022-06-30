@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 78cb81b1a0da9f0d1965dab7c209067a4e8d02e6
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874176"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554469"
 ---
 # <a name="device-inventory"></a>デバイス一覧
 
@@ -64,7 +64,7 @@ ms.locfileid: "65874176"
 
 Microsoft Defender for Endpointオンボード プロセス中、MDE にオンボードされたデバイスは、センサー データの報告を開始すると、徐々にデバイス インベントリに入力されます。 この後、デバイス インベントリは、デバイス検出プロセスを通じてネットワーク内で検出されたデバイスによって設定されます。 デバイス インベントリには、次の 3 つのタブがあります。
 
-- **コンピューターとモバイル**: Enterprise エンドポイント (ワークステーション、サーバー、モバイル デバイス)
+- **コンピューターとモバイル**: エンタープライズ エンドポイント (ワークステーション、サーバー、モバイル デバイス)
 - **ネットワーク デバイス**: ルーターやスイッチなどのデバイス
 - **IoT デバイス**: プリンターやカメラなどのデバイス
 
@@ -119,12 +119,12 @@ Microsoft Defender for Endpointオンボード プロセス中、MDE にオン�
 **除外状態** </br> | デバイスが除外されたかどうかに基づいて、一覧をフィルター処理します。 詳細については、「デバイスを [除外する](exclude-devices.md)」を参照してください。
 **OS プラットフォーム** </br>| 調査対象の OS プラットフォームでフィルター処理する </br></br>(_コンピューターとモバイルおよび IoT デバイスのみ_)
 **最初に見た** </br> | デバイスがネットワークで初めて表示されたとき、またはデバイスがMicrosoft Defender for Endpoint センサーによって最初に報告されたタイミングに基づいてビューをフィルター処理します。</br></br>(_コンピューターとモバイルおよび IoT デバイスのみ_)
-**Windows バージョン** </br> | 調査対象のWindowsバージョンでフィルター処理します。</br></br> (_コンピューターとモバイルのみ_)
+**Windows バージョン** </br> | 調査対象の Windows バージョンでフィルター処理します。</br></br> (_コンピューターとモバイルのみ_)
 **センサーの正常性状態** </br> | Microsoft Defender for Endpointにオンボードされているデバイスの場合は、次のセンサーの正常性状態でフィルター処理します。</br> - **アクティブ**: センサー データをサービスにアクティブに報告しているデバイス。</br> - **非アクティブ**: 7 日以上シグナルの送信を停止したデバイス。 </br> - **構成が正しくない**: サービスとの通信が妨げているか、センサー データを送信できないデバイス。 </br> 構成が正しくないデバイスは、さらに次のように分類できます。 </br>  - センサー データなし </br>  - 通信の障害 </br>  正しく構成されていないデバイスの問題に対処する方法の詳細については、「 [異常なセンサーを修正](/microsoft-365/security/defender-endpoint/fix-unhealthy-sensors)する」を参照してください。</br></br> (_コンピューターとモバイルのみ_)
 **オンボードの状態** </br> | オンボード状態は、デバイスが現在Microsoft Defender for Endpointにオンボードされているかどうかを示します。 次の状態でフィルター処理できます。 </br> - **オンボード済み**: エンドポイントはMicrosoft Defender for Endpointにオンボードされます。  </br> - **オンボード可能**: エンドポイントは、サポートされているデバイスとしてネットワーク内で検出されましたが、現在オンボードされていません。 Microsoft では、これらのデバイスのオンボードを非常に推奨しています。 </br> - **サポートされていません**:エンドポイントはネットワーク内で検出されましたが、Microsoft Defender for Endpointではサポートされていません。 </br> - **情報が不十分** です。システムはデバイスのサポート可能性を判断できませんでした。</br></br> (_コンピューターとモバイルのみ_)
 **ウイルス対策の状態** </br> | ウイルス対策の状態が無効になっているか、更新されていないか不明かに基づいてビューをフィルター処理します。</br></br> (_コンピューターとモバイルのみ_)
 **グループ** </br> | 調査対象のグループに基づいてリストをフィルター処理します。 </br></br> (_コンピューターとモバイルのみ_)
-**Managed by** </br> | 管理対象は、デバイスの管理方法を示します。 次の条件でフィルター処理できます。</br>- Microsoft Defender for Endpoint </br> - モバイル デバイス管理 (MDM) </br>- 不明: 古いWindows バージョンの実行、SCCM の実行、または別のサード パーティ MDM が原因である可能性があります。</br></br> (_コンピューターとモバイルのみ_)
+**Managed by** </br> | 管理対象は、デバイスの管理方法を示します。 次の条件でフィルター処理できます。</br> - Microsoft Defender for Endpoint</br> - Microsoft エンドポイント マネージャー (MEM)、テナント接続による Microsoft Configuration Managerとの共同管理を含む</br>- Microsoft Configuration Manager (ConfigMgr)</br> - 不明: 古い Windows バージョン、GPO 管理、または別のサード パーティ MDM が実行されている可能性があります。</br></br> (_コンピューターとモバイルのみ_) 
 **デバイスの種類** </br> | 調査するデバイスの種類でフィルター処理します。</br></br> (_IoT デバイスのみ_)
 
 ## <a name="use-columns-to-customize-the-device-inventory-views"></a>列を使用してデバイス インベントリ ビューをカスタマイズする

@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d218e09c8cc300552bcc9f230c1d375d33a5feb6
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 309baa41f217cbac9a865317084f284b3d22961b
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530556"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554227"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します
 
@@ -62,8 +62,8 @@ Microsoft Defender for Endpointのデプロイは、2 段階のプロセスで�
 | **Windows クライアント**  |     [モバイル デバイス管理/Microsoft Intune](configure-endpoints-mdm.md) <br> [グループ ポリシー](configure-endpoints-gp.md) <br> [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>[VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)   |
 | **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)   |
 | **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
-| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [人形](linux-install-with-puppet.md) <br> [アンシブル](linux-install-with-ansible.md)|
-| **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)               |
+| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [人形](linux-install-with-puppet.md) <br> [アンシブル](linux-install-with-ansible.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)      |
+| **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)           |
 | **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)            | 
 
 

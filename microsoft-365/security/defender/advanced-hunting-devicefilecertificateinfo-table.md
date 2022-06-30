@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 7b43b6ad8ed1422830f08358f460b20b16588996
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 019ca8eced735b8a9e24c2b0f3e3baae37757875
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530777"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554557"
 ---
 # <a name="devicefilecertificateinfo"></a>DeviceFileCertificateInfo
 
@@ -56,7 +56,7 @@ ms.locfileid: "61530777"
 | `CertificateExpirationTime` | `datetime` | 証明書の有効期限が切れる日付と時刻 |
 | `CertificateCountersignatureTime` | `datetime` | 証明書の署名が取り消された日時 |
 | `IsTrusted` | `boolean` | 不明なルート証明書情報、無効な署名、失効した証明書、およびその他の疑問の属性をチェックする WinVerifyTrust 関数の結果に基づいて、ファイルが信頼されているかどうかを示します。 |
-| `IsRootSignerMicrosoft` | `boolean` | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `IsRootSignerMicrosoft` | `boolean` | ルート証明書の署名者が Microsoft であるか、ファイルが Windows オペレーティング システムに含まれているかどうかを示します。 |
 | `ReportId` | `long` | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列とタイムスタンプ列と組み合わせて使用する必要があります。 | 
 
 ## <a name="related-topics"></a>関連項目

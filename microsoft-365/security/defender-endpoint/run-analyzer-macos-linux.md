@@ -1,6 +1,6 @@
 ---
 title: macOS または Linux でのクライアント アナライザーの実行
-description: macOSまたは Linux でMicrosoft Defender for Endpointクライアント アナライザーを実行する方法について説明します
+description: macOS または Linux でMicrosoft Defender for Endpointクライアント アナライザーを実行する方法について説明します
 keywords: クライアント アナライザー, センサーのトラブルシューティング, アナライザー, mdeanalyzer, macos, linux, mdeanalyzer
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a4dd7193bed1a22e3b88e6bc9201f5a15ddcd9eb
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: fc5944be9fd209898b53203533f568ae7ccec70e
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090456"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554535"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -31,10 +31,10 @@ ms.locfileid: "66090456"
 
 ## <a name="running-the-analyzer-through-gui-scenario"></a>GUI シナリオを使用してアナライザーを実行する
 
-1. 調査する必要があるmacOSまたは Linux コンピューターに [XMDE クライアント アナライザー](https://aka.ms/XMDEClientAnalyzer) ツールをダウンロードします。
+1. 調査する必要がある macOS または Linux コンピューターに [XMDE クライアント アナライザー](https://aka.ms/XMDEClientAnalyzer) ツールをダウンロードします。
 
    > [!NOTE]
-   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'AFD674A149F139E80F1AE90E36814DAAC08AAD9E8B0DA20CB1D3FA33B9D0D1AD' です。
+   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8' です。
 
 2. コンピューター上のXMDEClientAnalyzer.zipの内容を抽出します。
 
@@ -93,7 +93,7 @@ ms.locfileid: "66090456"
 **-f** \# 力<br>
 \# 出力が宛先パスに既に存在する場合は上書きする
 
-## <a name="result-package-contents-on-macos-and-linux"></a>macOSおよび Linux 上の結果パッケージの内容
+## <a name="result-package-contents-on-macos-and-linux"></a>macOS と Linux 上の結果パッケージの内容
 
 - report.html
 
@@ -101,9 +101,9 @@ ms.locfileid: "66090456"
 
 - mde_diagnostic.zip
 
-  説明: いずれかの [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information)で *mdatp 診断作成* を実行するときに生成されるのと同じ診断出力
+  説明: いずれかの [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information) で *mdatp 診断の作成* を実行するときに生成されるのと同じ診断出力
 
-  または
+  or
 
   [ Linux ](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

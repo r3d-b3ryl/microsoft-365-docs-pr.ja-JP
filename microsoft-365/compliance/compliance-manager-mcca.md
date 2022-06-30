@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Configuration Analyzer for Compliance Manager
+title: Configuration Analyzer for Microsoft Purview
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -16,70 +16,75 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview Compliance Manager を使用して、Microsoft Compliance Configuration Analyzer を使用して迅速に起動して実行する方法について説明します。
-ms.openlocfilehash: a973412c2d40993b47343273675cee3922b57cdf
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Configuration Analyzer for Microsoft Purview を使用して、Microsoft Purview コンプライアンス マネージャーを使用してすばやく起動して実行する方法について説明します。
+ms.openlocfilehash: 5d9d786ba88792ac827252ea7ff257d1f80fa70b
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012816"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554491"
 ---
-# <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer for Compliance Manager (プレビュー)
+# <a name="configuration-analyzer-for-microsoft-purview-camp"></a>Configuration Analyzer for Microsoft Purview (CAMP)
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-**この記事では、次の操作を行います。** Microsoft Compliance Configure Analyzer ツールをインストールして実行し、Microsoft Compliance Manger の概要を確認する方法について説明します。
+**この記事では、次の操作を行います。** Configuration Analyzer for Microsoft Purview (CAMP) ツールをインストールして実行し、Microsoft Compliance Manger の概要を確認する方法について説明します。
 
-## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Microsoft Compliance Configuration Analyzer (MCCA) (プレビュー) の概要
+## <a name="compliance-configuration-analyzer-camp-overview"></a>コンプライアンス構成アナライザー (CAMP) の概要
 
-Microsoft Compliance Configuration Analyzer (MCCA) は、 [Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)の使用を開始するのに役立つプレビュー ツールです。 MCCA は、組織の現在の構成をフェッチし、推奨されるベスト プラクティスに照らして検証Microsoft 365 PowerShell ベースのユーティリティです。 これらのベスト プラクティスは、データ保護とデータ ガバナンスに関する主要な規制と標準を含む一連の制御に基づいています。
+Configuration Analyzer for Microsoft Purview (CAMP) は、 [Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)の使用を開始するのに役立つツールです。 CAMP は、組織の現在の構成をフェッチし、Microsoft 365 推奨のベスト プラクティスに照らして検証する PowerShell ベースのユーティリティです。 これらのベスト プラクティスは、データ保護とデータ ガバナンスに関する主要な規制と標準を含む一連の制御に基づいています。
 
-MCCA を使用すると、コンプライアンス マネージャーのどの改善アクションが現在のMicrosoft 365環境に適用されているかをすばやく確認できます。 MCCA によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始するための該当するソリューションを含む、実装に関する推奨事項が提供されます。
+CAMP を使用すると、コンプライアンス マネージャーのどの改善アクションが現在の Microsoft 365 環境に適用されているかをすばやく確認できます。 CAMP によって識別される各アクションには、コンプライアンス マネージャーへの直接リンクと、修正アクションの実行を開始するための該当するソリューションを含む、実装に関する推奨事項が表示されます。
 
-MCCA を理解するための追加のリソースは、[GitHubに関する README の手順にアクセスすることです](https://github.com/OfficeDev/MCCA#overview)。 このページでは、前提条件に関する詳細な情報を提供し、完全なインストール手順を示します。 このページにアクセスするには、GitHub アカウントは必要ありません。
+前提条件と完全なインストール手順など、CAMP の詳細については、 [GitHub の README の手順を参照してください](https://github.com/OfficeDev/CAMP#overview)。 このページにアクセスするために GitHub アカウントは必要ありません。
 
-**可用性**: MCCA は、Office 365およびMicrosoft 365ライセンスと米国政府Community (GCC) Moderate、GCC High、および国防総省 (DoD) のお客様のすべての組織で利用できます。
+#### <a name="availability"></a>Availability
+CAMP は、Office 365および Microsoft 365 ライセンスと米国政府機関コミュニティ (GCC) Moderate、GCC High、および国防総省 (DoD) のお客様のすべての組織が利用できます。
 
-## <a name="install-mcca-and-run-a-report"></a>MCCA をインストールしてレポートを実行する
+#### <a name="roles"></a>役割
 
-Windows PowerShellを使用して MCCA ツールをインストールできます。 ツールをダウンロードしてインストールしたら、レポートを実行するためにこれらの手順を繰り返す必要はありません。 MCCA を開くたびに、ログイン資格情報の入力が求められ、更新された新しいレポートが生成されます。
+CAMP にアクセスして使用したり、レポート内の情報にアクセスしたりするには、特定のユーザー ロールが必要です。 [GitHub の CAMP 前提条件に関する情報を参照してください](https://github.com/OfficeDev/CAMP#pre-requisites)。
+
+## <a name="install-camp-and-run-a-report"></a>CAMP をインストールしてレポートを実行する
+
+WINDOWS POWERSHELLを使用して CAMP ツールをインストールできます。 ツールをダウンロードしてインストールしたら、レポートを実行するためにこれらの手順を繰り返す必要はありません。 CAMP を開くたびに、ログインするように求められ、更新された新しいレポートが生成されます。
 
 ### <a name="step-1-install-the-exchange-online-powershell-v2-module"></a>手順 1: Exchange Online PowerShell V2 モジュールをインストールする
 
 まず、PowerShell ギャラリーで使用できる Exchange Online PowerShell モジュール (v2.0.3 以降) が必要です。 インストール手順については、「 [EXO V2 モジュールのインストールと保守](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)」を参照してください。
 
-### <a name="step-2-install-mcca"></a>手順 2: MCCA をインストールする
+### <a name="step-2-install-camp"></a>手順 2: CAMP をインストールする
 
-MCCA をインストールするには、まず PowerShell を管理者モードで使用します。 次の手順に従います。
+CAMP をインストールするには、まず PowerShell を管理者モードで使用します。 次の手順に従います。
 
-1. [Windows **開始] ボタンを** 選択します。
+1. [Windows **スタート]** ボタンを選択します。
 1. **PowerShell** と入力し、**Windows PowerShell** を右クリックし、[**管理者として実行**] を選択します。
 1. コマンド プロンプトに次のコマンドを入力します。
 
     ```powershell
-    Install-Module -Name MCCAPreview
+    Install-Module -Name CAMP
     ```
 
 ### <a name="step-3-run-a-report"></a>手順 3: レポートを実行する
 
-MCCA をインストールした後、MCCA を実行してレポートを生成できます。 レポートを実行するには:
+CAMP をインストールした後、CAMP を実行してレポートを生成できます。 レポートを実行するには:
 
 1. PowerShell を開く
 2. 次のコマンドレットを実行します。
 
     ```powershell
-    Get-MCCAReport
+    Get-CAMPReport
     ```
 
-    高顧客GCC場合は、レポートを実行するために追加の入力パラメーターを指定する必要があります。
+    GCC High のお客様の場合は、レポートを実行するために追加の入力パラメーターを指定する必要があります。
 
     ```powershell
-    Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
+    Get-CAMPReport -ExchangeEnvironmentName O365USGovGCCHigh
     ```
 
-3. MCCA が実行されると、初期バージョンチェックが実行され、資格情報が要求されます。 [ユーザー名の入力] プロンプトで、Microsoft 365 アカウントのメール アドレスでサインインします ([レポートの作成に適したロールを表示します](#role-based-reporting))。 次に、パスワード プロンプトでパスワードを入力します。
+3. CAMP が実行されると、初期バージョンチェックが実行され、資格情報が要求されます。 [ユーザー名の入力] プロンプトで、Microsoft 365 アカウントのメール アドレスでサインインします ([レポートの作成に適したロールを表示します](https://github.com/OfficeDev/CAMP#pre-requisites))。 次に、パスワード プロンプトでパスワードを入力します。
 
-レポートの生成には約 2 ~ 5 分かかります。 完了すると、ブラウザー ウィンドウが開き、HTML レポートが表示されます。 ツールを実行するたびに、資格情報が要求され、新しいレポートが生成されます。 このレポートは、ディレクトリ C: \ Users \ *username* \ AppData \ Local \ Microsoft \ MCCA にローカルに格納されます。
+レポートの生成には約 2 ~ 5 分かかります。 完了すると、ブラウザー ウィンドウが開き、HTML レポートが表示されます。 ツールを実行するたびに、資格情報が要求され、新しいレポートが生成されます。 このレポートは、ディレクトリ C: \ Users \ *username* \ AppData \ Local \ Microsoft \ CAMP にローカルに格納されます。
 
 このディレクトリから以前に生成されたレポートにアクセスできます。
 
@@ -89,7 +94,7 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
 
 ### <a name="geolocation-based-reporting"></a>位置情報ベースのレポート
 
-**[メモ]** セクションでは、テナントの地理的な場所に基づいてレポートがカスタマイズされていることを示します。 ツールに一覧表示されるおすすめは、お使いの国または地域に固有です。
+**[メモ]** セクションでは、テナントの地理的な場所に基づいてレポートがカスタマイズされていることを示します。 ツールに一覧表示される推奨事項は、お使いの国または地域に固有です。
 
 位置情報の選択は、その位置情報に関連する機密情報の種類 (SIT) を評価し、お客様の国または地域に合ったレポートを生成するために使用されます。 テナント内のデータに基づいて位置情報を選択します。
 
@@ -101,7 +106,7 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
 2. 特定のリージョンを指定するには、国または地域に対応する次の表の番号を使用してコマンドレットを実行します。 コンマで区切って複数の数値を入力します。 たとえば、次のコマンドレットは、Asia-Pacificと日本のカスタマイズされたレポートを実行します。
 
     ```powershell
-    Get-MCCAReport -Geo @(1,7)
+    Get-CAMPReport -Geo @(1,7)
     ```
 
   | Input |  国または地域 |
@@ -122,31 +127,19 @@ MCCA をインストールした後、MCCA を実行してレポートを生成�
   | 14 | 英国 |
 
   > [!NOTE]
-  > レポートには、SWIFT コード、クレジット カード番号などの MCCA でサポートされている国際機密情報の種類が常に含まれます。
+  > レポートには、SWIFT コード、クレジット カード番号などの CAMP でサポートされている国際機密情報の種類が常に含まれます。
 
 ### <a name="role-based-reporting"></a>ロールベースのレポート
 
-また、レポートはロールに基づいてカスタマイズされます。
-
-次の表に、レポートのどのセクションにアクセスできるロールを示します。 組織内の他のロール (以下の表に示されていません) は、ツールを実行できない場合や、ツールを実行し、最終レポートの情報へのアクセスが制限されている可能性があります。
-
-![MCCA - ロール。](../media/compliance-manager-mcca-roles.png "MCCA ロール")
-
-例外:
-
-1. ユーザーは、"Exchange Onlineに IRM を使用する" セクションとは別に、IP のレポートを生成できません。
-2. ユーザーは、"Exchange Onlineに IRM を使用する" セクションとは別に、IP のレポートを生成できます。
-3. ユーザーは、"O365 で通信コンプライアンスを有効にする" セクションとは別に、IP のレポートを生成できます。
-4. ユーザーは、"Office 365で監査を有効にする" セクションとは別に、IP のレポートを生成できません。
-5. ユーザーは、「Office 365で監査を有効にする」セクションとは別に、IP のレポートを生成できます。
+また、レポートはロールに基づいてカスタマイズされます。 [GitHub の CAMP 前提条件情報](https://github.com/OfficeDev/CAMP#pre-requisites)では、レポートのどのセクションにアクセスできるロールが示されています。 組織内の他のロールがツールを実行できない場合や、ツールを実行し、最終レポートの情報へのアクセスが制限されている場合があります。
 
 ### <a name="solutions-summary-section"></a>[ソリューションの概要] セクション
 
 レポートの **[ソリューションの概要** ] セクションには、コンプライアンス体制を改善するために組織がコンプライアンス マネージャーで実行できる改善アクションの概要が示されています。
 
-![MCCA - ソリューションの概要。](../media/compliance-manager-mcca-solutions.png "MCCA ソリューションの概要画面")
+![MCCA - ソリューションの概要。](../media/compliance-manager-mcca-solutions.png "CAMP ソリューションの概要画面")
 
-MCCA は、コンプライアンス マネージャーで推奨される改善アクションに対して現在の構成を評価します。 このセクションでは、MCCA ツールによって注意が必要であると識別されたすべての改善アクションを一覧表示します。
+CAMP は、コンプライアンス マネージャーで推奨される改善アクションに対して現在の構成を評価します。 このセクションでは、CAMP ツールによって注意が必要であると識別されたすべての改善アクションを一覧表示します。
 
 各 Microsoft ソリューションの横には、コンプライアンス マネージャーの改善アクションに対応する項目の数を示す色分けされたボックスがあります。 アクションは、次の 3 つの状態に分割されます。
 
@@ -158,18 +151,18 @@ MCCA は、コンプライアンス マネージャーで推奨される改善�
 
 #### <a name="items-with-the-improvement-status"></a>改善状態のアイテム
 
-改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、Microsoft Purview コンプライアンス ポータルの該当するソリューション、および関連ドキュメントが含まれています。
+改善アクションの右側にある **[改善** ] ラベルの横にあるドロップダウンを選択します。 現在の設定と推奨される改善アクションに関する簡単な概要と詳細が表示されます。 概要には、コンプライアンス マネージャーへの直接リンク、Microsoft Purview コンプライアンス ポータルの該当するソリューション、および関連ドキュメントが含まれます。
 
-コンプライアンス マネージャーのリンクをクリックすると、まだ実装していないソリューション内のすべての改善アクションのフィルター処理されたビューが表示されます。 そこから、 [コンプライアンス スコア](compliance-score-calculation.md)を向上させるために達成できるポイントの数と、それらが適用される評価、および適用される規制と認定を確認できます。
+コンプライアンス マネージャーのリンクを選択すると、まだ実装していないソリューション内のすべての改善アクションのフィルター処理されたビューが表示されます。 そこから、 [コンプライアンス スコア](compliance-score-calculation.md)を向上させるために達成できるポイントの数と、それらが適用される評価、および適用される規制と認定を確認できます。
 
 DLP の場合、推奨される内容に基づいて事前に生成された PowerShell スクリプトを提供する **[修復** スクリプト] ボタンがあります。 コピーして PowerShell コンソールに直接貼り付けることができます。 テスト モードで DLP ポリシーが作成されます
 
 #### <a name="items-with-recommendation-status"></a>推奨事項の状態を持つアイテム
 
-改善アクションの右側にある **[推奨事項** ] ラベルの横にあるドロップダウンを選択します。 改善アクションに関連する組織の現在のMicrosoft 365環境の概要と、推奨されるベスト プラクティスが表示されます。
+改善アクションの右側にある **[推奨事項** ] ラベルの横にあるドロップダウンを選択します。 改善アクションに関連する組織の現在の Microsoft 365 環境の概要と、推奨されるベスト プラクティスが表示されます。
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
-MCCA のインストール、セットアップ、および使用の詳細については、[GitHubに関する README の手順](https://github.com/OfficeDev/MCCA#overview)を参照してください (GitHub アカウントは必要ありません)。
+CAMP のインストール、セットアップ、および使用の詳細については、 [GitHub の README の手順](https://github.com/OfficeDev/CAMP#overview) を参照してください (GitHub アカウントは必要ありません)。
 
 Windows PowerShellの詳細については、[PowerShell のドキュメントの使用方法](/powershell/scripting/how-to-use-docs)を参照してください。 [Windows PowerShellの開始](/powershell/scripting/windows-powershell/starting-windows-powershell)も参照してください。

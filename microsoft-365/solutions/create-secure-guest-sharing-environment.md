@@ -19,12 +19,12 @@ ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
 description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 5b6f27bd81a47a92926cebeef89de11ed78fcd3d
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948355"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490921"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
 
@@ -153,7 +153,7 @@ SharePoint と OneDrive の場所では、ドキュメントが共有されて�
 
 ## <a name="set-up-web-only-access-for-guests"></a>ゲスト用の Web 専用アクセスを設定する
 
-ゲストが Web ブラウザーのみを使用してチーム、サイト、ファイルにアクセスするように要求することにより、攻撃面を減少させて、管理を容易にできます。
+Web ブラウザーのみを使用して、ゲストにチーム、サイト、およびファイルへのアクセスを要求できます。 これにより、機密ファイルをダウンロードして管理されていないデバイスに残してしまう可能性が低くなります。 これは、共有デバイスを使用する環境と共有する場合にも役立ちます。
 
 Microsoft 365 グループとTeamsの場合は、Azure AD の条件付きアクセスポリシーで行います。 SharePointについては、SharePoint 管理センターで構成されます。 ( [機密ラベルを使用して、ゲストのアクセスを web のみに制限する](../compliance/sensitivity-labels-teams-groups-sites.md)ことができます)
 

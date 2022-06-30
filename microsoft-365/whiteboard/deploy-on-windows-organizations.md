@@ -1,5 +1,5 @@
 ---
-title: Windows 10 デバイスにMicrosoft Whiteboardを展開する
+title: Windows 10 デバイスに Microsoft Whiteboard を展開する
 ms.author: chucked
 author: chuckedmonson
 manager: alexfaulkner
@@ -11,18 +11,18 @@ ms.prod: microsoft-365-enterprise
 search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
-description: Windows 10 以降のバージョンを実行しているデバイスにMicrosoft Whiteboardを展開する方法について説明します。
+description: Windows 10 以降のバージョンを実行しているデバイスに Microsoft Whiteboard を展開する方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 07c55ecb881c3c7c8f6803845d8619c368c65270
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 2ce1ff5b07774d07b3b67404e0b04d42b44759ba
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159830"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66553839"
 ---
-# <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Windows 10 デバイスにMicrosoft Whiteboardを展開する
+# <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Windows 10 デバイスに Microsoft Whiteboard を展開する
 
-ホワイトボードは、Microsoft Intuneまたは Microsoft Configuration Manager (以前はSystem Center Configuration Manager) を使用して、Windows 10以降を実行するデバイスに展開できます。 ホワイトボードは、Windows Server ではサポートされていません。
+ホワイトボードは、Microsoft Intuneまたは Microsoft Configuration Manager (以前はSystem Center Configuration Manager) を使用して、Windows 10以降を実行するデバイスに展開できます。 Windows Server ではホワイトボードはサポートされていません。
 
 - **オンライン ライセンス モードを使用するMicrosoft Intune** – このプロセスでは、Whiteboard アプリへのアクセスを受け取るユーザーのグループを指定できます。
 
@@ -33,7 +33,7 @@ ms.locfileid: "66159830"
 
 ## <a name="install-whiteboard-using-microsoft-intune"></a>Microsoft Intuneを使用して Whiteboard をインストールする
 
-1. この記事の手順を使用して、使用可能なアプリとして Whiteboard を[追加します:Microsoft Store アプリをMicrosoft Intuneに追加](/mem/intune/apps/store-apps-windows)します。
+1. 「[Microsoft Store アプリをMicrosoft Intuneに追加](/mem/intune/apps/store-apps-windows)する」の手順を使用して、使用可能なアプリとして Whiteboard を追加します。
 
 2. この記事の手順を使用して、アプリをグループ[に割り当てます:Microsoft Intuneを持つグループにアプリを割り当てます](/mem/intune/apps/apps-deploy)。
 
@@ -43,7 +43,7 @@ ms.locfileid: "66159830"
 
 2. ヘッダーで [ **管理**] を選択します。
 
-3. 右側のナビゲーション ウィンドウで **設定** を選択し、[**オフライン アプリの表示**] をオンにします。
+3. 右側のナビゲーション ウィンドウで [ **設定]** を選択し、[ **オフライン アプリの表示**] をオンにします。
 
 4. 伝達まで 10 ~ 15 分待ちます。
 
@@ -67,7 +67,7 @@ ms.locfileid: "66159830"
 
 ## <a name="see-also"></a>関連項目
 
-[Whiteboard へのアクセスを有効にして管理する](enable-whiteboard-access-organizations.md)
+[ホワイトボードへのアクセスを管理する](manage-whiteboard-access-organizations.md)
 
 [Whiteboard のデータを管理する](manage-data-organizations.md)
 

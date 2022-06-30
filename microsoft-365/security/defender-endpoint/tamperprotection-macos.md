@@ -1,6 +1,6 @@
 ---
-title: 改ざん防止macOSセキュリティ設定を保護する
-description: 改ざん防止を使用して、悪意のあるアプリが重要なmacOSセキュリティ設定を変更できないようにします。
+title: 改ざん防止を使用して macOS のセキュリティ設定を保護する
+description: 改ざん防止を使用して、悪意のあるアプリが重要な macOS セキュリティ設定を変更できないようにします。
 keywords: macos, 改ざん防止, セキュリティ設定, マルウェア
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1a057f7b8342c7df0db63fd89604d518c1ef3a08
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 594cc36f7e58588b49a1491ce88dcacca2ca5ab4
+ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810678"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66554142"
 ---
-# <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止macOSセキュリティ設定を保護する
+# <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止を使用して macOS のセキュリティ設定を保護する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "65810678"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
 
-macOSの改ざん防止は、セキュリティ設定に対する不要な変更が承認されていないユーザーによって行われるのを防ぐのに役立ちます。 改ざん防止は、macOSでのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。 この機能は、重要なセキュリティ ファイル、プロセス、および構成設定が改ざんされるのにも役立ちます。
+macOS の改ざん防止は、セキュリティ設定に対する不要な変更が承認されていないユーザーによって行われるのを防ぐのに役立ちます。 改ざん防止は、macOS でのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。 この機能は、重要なセキュリティ ファイル、プロセス、および構成設定が改ざんされるのにも役立ちます。
 
 改ざん防止は、次のモードで設定できます。
 
@@ -50,7 +50,6 @@ macOSの改ざん防止は、セキュリティ設定に対する不要な変更
 - Defender for Endpoint の場所の下での新しいファイルの作成がログに記録されます (監査済み)
 - Defender for Endpoint ファイルの削除がログに記録されます (監査済み)
 - Defender for Endpoint ファイルの名前変更がログに記録されます (監査済み)
-- エージェントを停止するコマンドが失敗する
 
 **ブロック モード**:
 
@@ -69,18 +68,18 @@ macOSの改ざん防止は、セキュリティ設定に対する不要な変更
 
 > [!NOTE]
 >
-> - モードの変更はすぐに適用されます。 機能フラグを変更したり、Microsoft Defender for Endpointを再起動したりする必要はありません。
+> - モードの変更はすぐに適用されます。
 > - 初期構成中に JAMF を使用した場合は、JAMF も使用して構成を更新する必要があります。
 
 ## <a name="before-you-begin"></a>はじめに
 
-- サポートされているmacOS バージョン: Lake (12)、Big Sur (11)、Catalina (10.15 以降)
+- サポートされている macOS バージョン: Lake (12)、Big Sur (11)、Catalina (10.15 以降)
 - Defender for Endpoint に必要な最小バージョン: 101.49.25
 
 **強くお勧めする設定:**
 
-1. システム整合性保護 (SIP) が有効になっています。 詳細については、「 [システム整合性保護の無効化と有効化」を](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection)参照してください。
-1. モバイル デバイス管理 (MDM) ツールを使用してMicrosoft Defender for Endpointを構成します。
+- システム整合性保護 (SIP) が有効になっています。 詳細については、「 [システム整合性保護の無効化と有効化」を](https://developer.apple.com/documentation/security/disabling_and_enabling_system_integrity_protection)参照してください。
+- モバイル デバイス管理 (MDM) ツールを使用してMicrosoft Defender for Endpointを構成します。
 
 ## <a name="configure-tamper-protection-on-macos-devices"></a>macOS デバイスで改ざん防止を構成する
 
@@ -92,7 +91,7 @@ macOSの改ざん防止は、セキュリティ設定に対する不要な変更
 
 ### <a name="before-you-begin"></a>はじめに
 
-"tamper_protection" が "無効" に設定されていることを確認します。
+状態の変化を観察するために、"tamper_protection" が "無効" に設定されていることを確認します。
 
 ![無効モードの改ざん防止を備えたコマンド ラインの画像](images/verify-tp.png)
 
@@ -138,7 +137,7 @@ macOSの改ざん防止は、セキュリティ設定に対する不要な変更
 
 ### <a name="intune"></a>Intune
 
-ドキュメントに記載されているIntune プロファイルの例に従って、Intuneを使用して改ざん防止を構成します。 詳細については、「[macOSのMicrosoft Defender for Endpointの基本設定を設定する](mac-preferences.md)」を参照してください。
+ドキュメントに記載されているIntune プロファイルの例に従って、Intuneを使用して改ざん防止を構成します。 詳細については、「[macOS でMicrosoft Defender for Endpointの環境設定を設定する」を](mac-preferences.md)参照してください。
 
 Intune プロファイルに次の構成を追加します。
 
@@ -225,7 +224,7 @@ Intune プロファイルに次の構成を追加します。
 ### <a name="verify-block-mode-and-audit-modes"></a>ブロック モードと監査モードを確認する
 
 - 高度なハンティングを使用すると、改ざんアラートが表示されます
-- 改ざんイベントは、ローカル デバイス ログにあります。 `sudo grep -F '\[{tamperProtection}\]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
+- 改ざんイベントは、ローカル デバイス ログにあります。 `sudo grep -F '[{tamperProtection}]' /Library/Logs/Microsoft/mdatp/microsoft_defender_core.log`
 
 ![改ざん防止ログの画像](images/tamper-protection-log.png)
 
