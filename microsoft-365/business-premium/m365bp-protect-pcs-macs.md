@@ -6,7 +6,7 @@ ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: Admin
-ms.topic: conceptual
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium を使用して、管理されていないデバイスまたは持ち込みデバイス (BYOD) をサイバー攻撃から保護します。 Windows PC と Mac のサイバーセキュリティを設定する方法。
-ms.openlocfilehash: 2c2c94e79e7f694e75ab6aeb6ed38005dbd1f2f4
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 32f491e1a124bacf50f0efa553f6b141c08409b9
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393244"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489126"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium でアンマネージド Windows PC と Mac を保護する
 
-目標として、Microsoft Intune に登録されていないアンマネージド Windows 10 PC および Mac の保護を作成することに重点を置いて説明します。 中小企業やキャンペーンには、各自のデバイス (BYOD) を持ち込むスタッフがいる可能性があり、これらのデバイスは管理されていない可能性があります。 BYOD には、個人所有の電話、タブレット、PC が含まれます。 
+目標として、Microsoft Intune に登録されていないアンマネージド Windows 10 PC および Mac の保護を作成することに重点を置いて説明します。 中小企業やキャンペーンには、各自のデバイス (BYOD) を持ち込むスタッフがいる可能性があり、これらのデバイスは管理されていない可能性があります。 BYOD には、個人所有の電話、タブレット、PC が含まれます。
 
 >[!NOTE]
 >BYOD ユーザーは、これらのデバイスを登録し、会社のリソースへのアクセスを受け取るには、それぞれポータル サイト アプリをインストールして実行する必要があります。
@@ -57,6 +57,8 @@ Windows Update では、自動的に Windows セキュリティの更新プロ�
 **Windows ファイアウォールを有効にする**<p>
 別のファイアウォールが有効な場合でも、Windows ファイアウォールを常に実行する必要があります。 Windows ファイアウォールをオフにすると、デバイス (およびお持ちの場合はネットワーク) が攻撃を受けやすくなります。 手順については、「[Windows ファイアウォールをオン/オフにする](https://support.microsoft.com/help/4028544/windows-10-turn-windows-defender-firewall-on-or-off)」を参照してください。
 
+## <a name="next-mission"></a>次のミッション
+
 ミッションが完了しました。では、[フィッシングやその他の攻撃に対するメール システムをセキュリティで保護する方法](m365bp-protect-email-overview.md)について説明します。
 
 ## <a name="mac"></a>[Mac](#tab/Mac)
@@ -75,4 +77,3 @@ Microsoft は、信頼性の高いウイルス対策ソフトウェアを Mac �
 ## <a name="next-mission"></a>次のミッション
 
 ミッションが完了しました。では、[フィッシングやその他の攻撃に対するメール システムをセキュリティで保護する方法](m365bp-protect-email-overview.md)について説明します。
-

@@ -6,7 +6,7 @@
       href: m365-lighthouse-overview.md
     - name: Microsoft 365 Lighthouseの要件
       href: m365-lighthouse-requirements.md
-- name: 概要
+- name: 作業の開始
   items:
     - name: サインアップ
       href: m365-lighthouse-sign-up.md
@@ -70,6 +70,8 @@
       href: m365-lighthouse-mitigate-threats.md
     - name: '[デバイス セキュリティ] ページの概要'
       href: m365-lighthouse-device-security-overview.md
+    - name: 検疫済みメッセージの概要
+      href: m365-lighthouse-quarantine-messages-overview.md
 - name: ヘルプとサポートを利用する
   items:
     - name: ヘルプとサポートを利用する

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 594cc36f7e58588b49a1491ce88dcacca2ca5ab4
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: a89d90f462528631d97c4f2e81c24f6ffbcd4189
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554142"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573920"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止を使用して macOS のセキュリティ設定を保護する
 
@@ -30,6 +30,9 @@ ms.locfileid: "66554142"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-rbac-abovefoldlink)
+
+[!include[Prerelease information](../../includes/prerelease.md)]
+
 
 macOS の改ざん防止は、セキュリティ設定に対する不要な変更が承認されていないユーザーによって行われるのを防ぐのに役立ちます。 改ざん防止は、macOS でのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。 この機能は、重要なセキュリティ ファイル、プロセス、および構成設定が改ざんされるのにも役立ちます。
 
@@ -71,7 +74,7 @@ macOS の改ざん防止は、セキュリティ設定に対する不要な変�
 > - モードの変更はすぐに適用されます。
 > - 初期構成中に JAMF を使用した場合は、JAMF も使用して構成を更新する必要があります。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 - サポートされている macOS バージョン: Lake (12)、Big Sur (11)、Catalina (10.15 以降)
 - Defender for Endpoint に必要な最小バージョン: 101.49.25
@@ -89,7 +92,7 @@ macOS の改ざん防止は、セキュリティ設定に対する不要な変�
 - [JAMF](#jamf)
 - [Intune](#intune)
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 状態の変化を観察するために、"tamper_protection" が "無効" に設定されていることを確認します。
 

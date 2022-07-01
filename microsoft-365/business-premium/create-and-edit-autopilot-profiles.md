@@ -1,12 +1,12 @@
 ---
-title: AutoPilot プロファイルの作成と編集
+title: Autopilot プロファイルを作成し編集する
 f1.keywords:
 - NOCSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -27,34 +27,33 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
-description: AutoPilot プロファイルを作成してデバイスに適用する方法と、プロファイルを編集または削除したり、デバイスからプロファイルを削除したりする方法について説明します。
-ms.openlocfilehash: 231f3f762e1266b5529f36e792d1b4e4a5f11f03
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Autopilot プロファイルを作成してデバイスに適用し、プロファイルを編集または削除するか、デバイスからプロファイルを削除する方法について説明します。
+ms.openlocfilehash: 6f019e494eb073f47921f4adef454c0e48541b49
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320624"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489698"
 ---
-# <a name="create-and-edit-autopilot-profiles"></a>AutoPilot プロファイルを作成し編集する
+# <a name="create-and-edit-autopilot-profiles"></a>Autopilot プロファイルを作成し編集する
 
-> [!NOTE]
-> Microsoft Defender for Business は、2022 年 3 月 1 日以降、Microsoft 365 Business Premium のお客様に展開されます。 このオファリングでは、デバイスに追加のセキュリティ機能が提供されます。 [Defender for Business の詳細については、こちらをご覧ください](../security/defender-business/mdb-overview.md)。
+[Windows Autopilot 展開プロファイル](/mem/autopilot/profiles)は、[device グループ](m365bp-device-groups-mdb.md)にあるデバイスに適用できます。 展開プロファイルは、ユーザーが持つ Windows の展開と登録のエクスペリエンスを決定します。 
 
 ## <a name="create-a-profile"></a>プロファイルの作成
 
 プロファイルがデバイスまたはデバイスのグループに割り当てられます。
   
-1. Microsoft 365 管理センターで **[デバイス]** \> **[AutoPilot]** を選択します。
+1. Microsoft 365 管理センターで、[ **デバイス** \> **Autopilot** ]を選択します。
   
-2. **[AutoPilot]** ページで、**[プロフィール]** タブ\> **[プロフィールの作成]** を選択します。
+2. [ **Autopilot** ] ページで、[ **プロファイル** ] タブ \>[ **プロファイルの作成**] を選択します。
 
-3. **[プロファイルの作成]** ページで、識別に役立つプロファイルの名前を入力します。たとえば、マーケティングでは、必要な設定をオンにして **[保存]** を選びます。詳細については、「[AutoPilot プロファイルの設定について](m365bp-autopilot-profile-settings.md)」を参照してください。
+3. **プロファイルの作成** ページで、プロファイルを識別するのに役立つプロファイルの名前 (例えばマーケティングなど) を入力します。 目的の設定をオンにし、[**保存**] を選びます。 Autopilot プロファイル設定の詳細については、「 [Autopilot プロファイル設定について](m365bp-Autopilot-profile-settings.md)」を参照してください。
 
     ![Enter name and turn on settings in the Create profile panel.](./../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
 ### <a name="apply-profile-to-a-device"></a>プロファイルをデバイスに適用する
 
-プロファイルを作成した後、デバイスまたはデバイスのグループに適用することができます。[ステップ バイ ステップ ガイド](m365bp-add-autopilot-devices-and-profile.md)で既存のプロファイルを選んだり、プロファイルを新しいデバイスに適用したり、デバイスまたはデバイスのグループの既存のプロファイルを置き換えたりします。
+プロファイルを作成した後、デバイスまたはデバイスのグループに適用することができます。[ステップ バイ ステップ ガイド](m365bp-add-Autopilot-devices-and-profile.md)で既存のプロファイルを選んだり、プロファイルを新しいデバイスに適用したり、デバイスまたはデバイスのグループの既存のプロファイルを置き換えたりします。
   
 1. [ **Windows の準備**] ページで、[ **デバイス**] タブを選びます。
 
@@ -72,7 +71,7 @@ ms.locfileid: "65320624"
 
 2. デバイス名の横にあるチェック ボックスをオンにして、**[プロファイル]** パネルで使用可能な設定を更新して、\> **[保存]** を選択します。
 
-    ユーザーがデバイスをインターネットに接続する前にこの操作を行った場合、プロファイルはセットアップ プロセスに適用されます。
+    ユーザーがデバイスをインターネットに接続する前にこのタスクを実行すると、プロファイルがセットアップ プロセスに適用されます。
 
 ### <a name="delete-a-profile"></a>プロファイルを削除する
 

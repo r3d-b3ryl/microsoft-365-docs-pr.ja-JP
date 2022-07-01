@@ -64,24 +64,26 @@
           href: create-communications-site.md
 - name: 管理対象デバイスを保護する
   items:
-    - name: 概要
-      href: m365bp-protect-devices.md
-    - name: 管理されたデバイスをセットアップする
-      href: m365bp-managed-devices-setup.md
-    - name: 登録済みデバイスをオンボードし、ポリシーを適用する
-      href: m365bp-onboard-devices-mdb.md
-    - name: Windows デバイスを保護する
+    - name: 管理対象デバイスの設定と保護
       items:
-        - name: Windows 10 デバイスをセキュリティで保護する
-          href: m365bp-secure-windows-devices.md
-        - name: Windows デバイスを管理する
-          href: m365bp-manage-windows-devices.md
-        - name: Office クライアントの展開を準備する
-          href: m365bp-prepare-for-office-client-deployment.md
-        - name: Windows デバイスのアプリ保護設定を作成する
-          href: m365bp-protection-settings-for-windows-10-devices.md
-        - name: Windows デバイスでアプリ設定を検証する
-          href: m365bp-validate-settings-on-windows-10-pcs.md
+        - name: 概要
+          href: m365bp-protect-devices.md
+        - name: 管理されたデバイスをセットアップする
+          href: m365bp-managed-devices-setup.md
+        - name: 登録済みデバイスをオンボードし、ポリシーを適用する
+          href: m365bp-onboard-devices-mdb.md
+        - name: Windows デバイスを保護する
+          items:
+            - name: Windows 10 デバイスをセキュリティで保護する
+              href: m365bp-secure-windows-devices.md
+            - name: Windows デバイスを管理する
+              href: m365bp-manage-windows-devices.md
+            - name: Office クライアントの展開を準備する
+              href: m365bp-prepare-for-office-client-deployment.md
+            - name: Windows デバイスのアプリ保護設定を作成する
+              href: m365bp-protection-settings-for-windows-10-devices.md
+            - name: Windows デバイスでアプリ設定を検証する
+              href: m365bp-validate-settings-on-windows-10-pcs.md
     - name: デバイス ポリシーを確認および編集する
       href: m365bp-view-edit-create-mdb-policies.md
     - name: デバイス グループを管理する
@@ -112,7 +114,7 @@
       href: m365bp-remove-company-data.md
     - name: デバイスを工場出荷時の設定にリセットする
       href: m365bp-reset-devices-to-factory-settings.md
-- name: 関連情報
+- name: 参照
   items:
     - name: 用語集
       href: m365bp-glossary.yml
@@ -126,7 +128,7 @@
           href: m365bp-add-Autopilot-devices-and-profile.md
         - name: AutoPilot プロファイルの設定について
           href: m365bp-Autopilot-profile-settings.md
-        - name: Autopilot プロファイルの作成と編集
+        - name: Autopilot プロファイルを作成し編集する
           href: m365bp-create-and-edit-Autopilot-devices.md
     - name: Android および iOS のアプリ保護の設定
       href: m365bp-app-protection-settings-for-android-and-ios.md
@@ -134,6 +136,8 @@
       href: m365bp-validate-settings-on-android-or-ios.md
     - name: 保護機能を Intune の設定にマップする
       href: m365bp-map-protection-features-to-intune-settings.md
+    - name: Intune管理者ロール
+      href: m365bp-intune-admin-roles-in-the-mac.md
     - name: コンプライアンス マネージャーを設定する
       href: m365bp-set-up-compliance.md
     - name: Microsoft Defender for Business

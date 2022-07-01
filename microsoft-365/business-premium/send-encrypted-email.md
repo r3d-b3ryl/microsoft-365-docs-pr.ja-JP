@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 03/08/2022
 ms.audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -26,14 +25,14 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Outlook を使用して暗号化されたメールを送信する方法について説明します。
-ms.openlocfilehash: b9b2251114831bfe0b6364dc4327bd0c21da55e2
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: e4a25cc59d0d92c1905507b1e5db1253f120849c
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65316834"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489560"
 ---
-# <a name="encrypt-or-label-sensitive-email"></a>機密情報を暗号化またはラベル付けする
+# <a name="encrypt-or-label-your-sensitive-email-in-microsoft-365"></a>Microsoft 365で機密メールを暗号化またはラベル付けする
 
 データと情報は重要であり、多くの場合、機密です。ここでの目的は、すべてのユーザーが秘密度ラベルを使用し、メール受信者が最大限の秘密度で情報を扱うようにすることで、この機密情報を保護できるようにすることです。
 

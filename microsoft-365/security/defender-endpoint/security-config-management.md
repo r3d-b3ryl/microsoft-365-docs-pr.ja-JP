@@ -1,6 +1,6 @@
 ---
 title: Microsoft エンドポイント マネージャーを使用してデバイス上の Microsoft Defender for Endpoint の構成設定を管理する
-description: Microsoft Defender for Endpointを使用してMicrosoft エンドポイント マネージャーでセキュリティ設定を有効にする方法について説明します。
+description: Microsoft Defender for Endpointを使用して Microsoft エンドポイント マネージャーでセキュリティ設定を有効にする方法について説明します。
 keywords: デバイス管理、Microsoft Defender for Endpoint デバイスの構成、Microsoft エンドポイント マネージャー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7e9e074e4aeaadf041a70baed1d741ea95a9f792
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622621"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573923"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用してデバイス上の Microsoft Defender for Endpoint の構成設定を管理する
 
@@ -38,12 +38,12 @@ ms.locfileid: "65622621"
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointsscript-abovefoldlink)
 
 
-Microsoft Defender for Endpoint用のセキュリティ管理は、Microsoft エンドポイント マネージャーによって管理されていないデバイスの機能であり、Microsoft IntuneまたはMicrosoft Endpoint Configuration Manager、Microsoft Defender のセキュリティ構成をエンドポイント マネージャーから直接受信します。
+Microsoft Defender for Endpoint用の Security Management は、Microsoft エンドポイント マネージャーによって管理されていないデバイスが、エンドポイント マネージャーから Microsoft Defender のセキュリティ構成を直接受信する機能です。
 
 
 前提条件、サポートされているプラットフォームなど、セキュリティ構成管理の詳細については、「[Microsoft エンドポイント マネージャーを使用したデバイスでのMicrosoft Defender for Endpointの管理](/mem/intune/protect/mde-security-integration)」を参照してください。
 
-このビデオでは、Microsoft エンドポイント マネージャーを使用してMicrosoft Defender for Endpointのセキュリティ構成を管理する方法について説明します。
+Microsoft エンドポイント マネージャーを使用してMicrosoft Defender for Endpointのセキュリティ構成を管理する方法については、このビデオをご覧ください。
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qLVq]
 
 [!INCLUDE [Prerequisites](../../includes/security-config-mgt-prerequisites.md)]
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint用のセキュリティ管理は、Microsoft エ
 >[!NOTE]
 >この機能は段階的にロールアウトされています。 
 
-セキュリティ構成管理の詳細については、「Microsoft エンドポイント マネージャーを[使用したデバイスでのMicrosoft Defender for Endpointの管理](/mem/intune/protect/mde-security-integration)」を参照してください。
+セキュリティ構成管理の詳細については、「[Microsoft エンドポイント マネージャーを使用したデバイスでのMicrosoft Defender for Endpointの管理](/mem/intune/protect/mde-security-integration)」を参照してください。
 
 登録の問題が発生した場合は、「 [セキュリティ構成管理のオンボードに関する問題のトラブルシューティング」を](troubleshoot-security-config-mgt.md)参照してください。
 
@@ -66,7 +66,7 @@ Microsoft Defender for Endpoint用のセキュリティ管理は、Microsoft エ
 
 2.  [Azure Active Directory ポータル](https://aad.portal.azure.com/#blade/Microsoft_AAD_Devices/DevicesMenuBlade/Devices/menuId/)で、デバイスが正常に登録されたことを確認します。
 
-3.  [Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)で、[**デバイス>すべての** デバイス] セクションでデバイスが正常に登録されたことを確認します。
+3.  [Microsoft エンドポイント マネージャー 管理 センター](https://endpoint.microsoft.com/#blade/Microsoft_Intune_DeviceSettings/DevicesMenu/mDMDevicesPreview)で、[**デバイス>すべての** デバイス] セクションでデバイスが正常に登録されたことを確認します。
 
 
 ## <a name="offboard-devices"></a>オフボード デバイス

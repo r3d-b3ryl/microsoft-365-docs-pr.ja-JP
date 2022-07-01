@@ -2,11 +2,11 @@
 title: コラボレーションのために Microsoft Teams を使用する
 f1.keywords:
 - NOCSH
-ms.author: samanro
-author: samanro
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 ms.audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -23,34 +23,34 @@ search.appverid:
 - MET150
 - MOE150
 description: 小規模ビジネスやキャンペーンで共同作業できるように、Microsoft Teams でチームを作成する理由と方法について説明します。
-ms.openlocfilehash: ef9c435cbaa7a862164c39244bdb2a865845fa58
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 046a888c0df95bc404bafcddb041e015131e6503
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100161"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489650"
 ---
 # <a name="use-microsoft-teams-for-collaboration"></a>コラボレーションのために Microsoft Teams を使用する
 
-Microsoft Teams は、チームの組織化を助け、全てのデバイスから会話が可能なコラボレーション アプリです。 Microsoft Teams を使用すると、組織外のスタッフやゲストのメンバーと、簡単に会話できます。 また電話をかける、会議をホストする、ファイルを共有することもできます。
+Microsoft Teams は、組織のメンバーが任意のデバイスを使用して整理し、会話を行うのに役立つコラボレーション アプリです。 Microsoft Teams を使用して、組織外のスタッフまたはゲストのメンバーとすぐに会話できます。 また電話をかける、会議をホストする、ファイルを共有することもできます。
 
 ## <a name="best-practices"></a>ベスト プラクティス
 
 1. 機密情報のためにプライベートな Teams を作成します。
 
-2. 組織の全域で全員とコミュニケーションを取るために、組織向け Teams を作成します。
+1. 組織の全域で全員とコミュニケーションを取るために、組織向け Teams を作成します。
 
-3. 特定のプロジェクト向けの Teams を作成し、参加させる必要があるユーザーについて適切な範囲についての保護を適用します。
+1. 特定のプロジェクト向けの Teams を作成し、参加させる必要があるユーザーについて適切な範囲についての保護を適用します。
 
-4. 外部パートナーとのコミュニケーションのための Teams を作成し、あなたのビジネスにとって機微な情報から隔離します。
+1. 外部パートナーとのコミュニケーションのための Teams を作成し、あなたのビジネスにとって機微な情報から隔離します。
 
 たとえば、ビジネス、法律事務所、保険情報については、以下の Teams が作成される場合があります:
 
-1. **ビジネス、企業、または実践域内のチーム:** これは、すべてのユーザーが日々のコミュニケーションに使用し、ビジネスの全域で仕事をするためのものです。 この Teams を使用して、お知らせを投稿したり、会社または取り組みの全域に渡って関心のある情報を共有できます。
+1. **ビジネス、企業、または実践全体のチーム:** これは、すべてのユーザーが日々のコミュニケーションに使用し、ビジネスの全域で仕事をするためのものです。 この Teams を使用して、お知らせを投稿したり、会社または取り組みの全域に渡って関心のある情報を共有できます。
 
-2. **個々の Teams :** 小規模なグループの Teams をセットアップして、日々の業務について共同作業します。
+1. **個々の Teams :** 小規模なグループの Teams をセットアップして、日々の業務について共同作業します。
 
-3. **外部コミュニケーション チームと Teams :** ベンダー、パートナー、またはクライアントと調整を行い、機微な情報は許可しません。 特定のグループに対して異なるチャンネルを設定します。
+1. **外部コミュニケーション チームと Teams :** ベンダー、パートナー、またはクライアントと調整を行い、機微な情報は許可しません。 特定のグループに対して異なるチャンネルを設定します。
 
 ![ビジネス内の安全なコミュニケーションとコラボレーションを可能にする 3 つの独立した Teams を持つ Microsoft Teams ウィンドウの図。](../media/m365-democracy-teams-business-collab.png)
 
@@ -106,7 +106,7 @@ Microsoft Teams の詳細については、[Microsoft Teams テクニカル ド�
 
 ## <a name="admin-settings"></a>管理設定
 
-> [!Note]
+> [!NOTE]
 > 組織域内でチームを作成するには、管理者である必要があります。 詳細については、「[Microsoft 365 の管理者とは?](https://support.office.com/article/what-is-an-admin-e123627e-4892-4461-b9aa-1b6d57a5cfa4?ui=en-US&rs=en-US&ad=US)」を参照してください。
 
 ## <a name="next-objective"></a>次の目標

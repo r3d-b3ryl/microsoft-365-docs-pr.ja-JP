@@ -1,15 +1,13 @@
 ---
 title: Microsoft 365 Business Premium の修復アクションを確認する
-description: 自動的に実行された修復、またはアクション センターで承認を待っている修復を表示する方法を確認する
+description: アクション センターで自動的に行われたか、承認待ちの修復を表示する方法について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: how-to
-ms.date: 02/24/2022
-ms.prod: m365-security
-ms.technology: mdb
+ms.service: o365-administration
 ms.localizationpriority: high
 ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
@@ -17,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 1e5d4e278bc70fdf63c951598bf12f88816a43d0
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 73790afedc78961562b592d1eb4decd4a8f1b0d4
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893231"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66490401"
 ---
 # <a name="review-remediation-actions-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の修復アクションを確認する
 
@@ -47,7 +45,7 @@ ms.locfileid: "65893231"
 
 3. 保留中のアクションを表示して承認 (または拒否) するには、**[保留中]** タブを選択します。 このようなアクションは、ウイルス対策/マルウェア対策保護、自動調査、手動応答アクティビティ、またはライブ応答セッションから発生する可能性があります。
 
-4. **[履歴]** タブを選択して、完了したアクションのリストを表示します。 
+4. **[履歴]** タブを選択して、完了したアクションのリストを表示します。
 
 ## <a name="types-of-remediation-actions"></a>修復アクションの種類
 

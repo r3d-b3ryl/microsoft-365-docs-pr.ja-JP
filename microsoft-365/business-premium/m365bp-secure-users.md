@@ -24,14 +24,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium の生産性とセキュリティを活用してビジネスを支援する方法について説明します。
-ms.openlocfilehash: f9501ce8a478af45d8d1b79db1411575636eda36
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098134"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489883"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premium がビジネスにどのように役立つか
+# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Microsoft 365セキュリティに関する推奨事項がユーザーに与える影響
 
 Microsoft 365 Business Premium は、中小企業が以前よりも効率的かつ安全に作業できるようにする、コスト効率の高いソリューションです。 この記事では、Microsoft 365 Business Premium がビジネスにどのように役立つかについて説明しており、次のようなセクションがあります:
 
@@ -43,7 +43,7 @@ Microsoft 365 Business Premium は、中小企業が以前よりも効率的か�
 
 ## <a name="video-top-5-benefits-of-microsoft-365-business-premium"></a>ビデオ: Microsoft 365 Business Premium の 5 つの主な利点。
 
-次のビデオを見て、Microsoft 365 Business Premium を使用してビジネスの生産性とセキュリティを強化する方法を確認してください。 <p>
+次のビデオを見て、Microsoft 365 Business Premium がビジネスの生産性とセキュリティを強化するのにどのように役立つかを確認してください。 <p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Pq0G]
 
