@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理されたデバイスをセットアップする方法
-ms.openlocfilehash: 990b6a042e57a7964918e7e339bdfc3987c3c477
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: cd65c70f9ed9c2ec43196d792c81fa3e82f4e05d
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490262"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573987"
 ---
 # <a name="set-up-managed-devices"></a>管理されたデバイスをセットアップする
 
 "管理された" デバイスは、組織によって制御および監視されているため、定期的に更新され、安全です。 デバイスを管理下に置くことは重要な目標です。 これらのデバイスを制御できるようにするために、Microsoft Business Premium に含まれている Intune と Azure Active Directory Premium を使用してデバイス マネージャーに登録されます。 
 
-ユーザーが次の 2 つの手順を完了すると、Windows 10 PC は管理対象と見なされます。
+ユーザーが次の 2 つの手順を完了すると、Windows 10 または 11 PC は管理対象と見なされます。
 
 1. [セットアップ ウィザード](../business/set-up.md)でデバイスとデータの保護ポリシーを設定します。
 
@@ -42,7 +42,7 @@ ms.locfileid: "66490262"
 
 ## <a name="enroll-devices-in-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーにデバイスを登録する
 
-これで、エンドポイント マネージャーにデバイスを登録し、https://endpoint.microsoft.com に移動し、**[デバイス]** > **[デバイスの登録]** の順に選択できます。 
+これで、エンドポイント マネージャーにデバイスを登録できます。 https://endpoint.microsoft.com に移動し、**[デバイス]** > **[デバイスの登録]** を選択します。 
 
 :::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Microsoft エンドポイント マネージャーを使用してデバイスを登録します。"::: 
 

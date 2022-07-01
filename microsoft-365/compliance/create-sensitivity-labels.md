@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Purview Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: 8b25fa9864bcbef92f509f7251a15bf24cc3da2d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0f920c91e1e844a4feaab7f9d1d58e88da6791ca
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017034"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573871"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -36,6 +36,11 @@ ms.locfileid: "66017034"
 まず、アプリやその他のサービスで使用する秘密度ラベルを作成し、構成します。 たとえば、ユーザーに表示して Office アプリから適用するラベルです。
 
 次に、構成するラベルとポリシー設定を含む 1 つ以上のラベル ポリシーを作成します。 このラベル ポリシーで、選択したユーザーと場所のラベルと設定を発行します。
+
+> [!TIP]
+> 秘密度ラベルをお持ちでない場合は、既定のラベルの自動作成と、既定のラベル ポリシーの対象となる場合があります。 一部のラベルをお持ちの場合でも、新規顧客向けに作成しているこれらの既定のラベルの構成を確認することが役に立つ場合があります。 たとえば、同じ手動構成を作成して、独自のラベル展開を高速化できます。
+> 
+> 詳細については、「[Microsoft Purview Information Protection の既定のラベルとポリシー](mip-easy-trials.md)」を参照してください。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -94,7 +99,7 @@ ms.locfileid: "66017034"
 
 - ユーザーがローカル言語でラベル名とヒントを表示できるように、多国籍の展開では *LocaleSettings* パラメーターを使用します。 [次のセクション](#example-configuration-to-configure-a-sensitivity-label-for-different-languages)には、フランス語、イタリア語、ドイツ語のラベル名とヒントのテキストを指定する設定例があります。
 
-- Azure Information Protection 統合ラベル付けクライアントは、ラベルの色の設定やラベルの適用時のカスタム プロパティの適用など、[高度な設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)の広範な一覧をサポートします。 完全なリストについては、このクライアントの管理ガイドの「[利用できるラベルの詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)」を参照してください。
+- 組み込みのラベル付けでサポートされる詳細設定は、PowerShell ドキュメントに含まれています。 これらの PowerShell の詳細設定の指定に関する詳細については、「[詳細設定を指定するための PowerShell のヒント](#powershell-tips-for-specifying-the-advanced-settings)」セクションを参照してください。 Azure Information Protection 統合ラベル付けクライアントでサポートされているその他の詳細設定については、「[このクライアントの管理者ガイドのドキュメント](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-labels)」を参照してください。
 
 #### <a name="example-configuration-to-configure-a-sensitivity-label-for-different-languages"></a>異なる言語向けに機密ラベルを構成する構成例
 
@@ -122,6 +127,26 @@ Settings=@(
 @{key=$Languages[1];Value=$Tooltips[1];}
 @{key=$Languages[2];Value=$Tooltips[2];})}
 Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSettings -Depth 3 -Compress),(ConvertTo-Json $TooltipLocaleSettings -Depth 3 -Compress)
+```
+
+#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>詳細設定を指定するための PowerShell のヒント
+
+秘密度ラベルは名前で指定できますが、ラベル名または表示名を指定する際の混乱を避けるために、ラベル GUID を使用することをお勧めします。 ラベル名はテナントに一意であるため、正しいラベルを構成していることを確認できます。 表示名は一意ではなく、間違ったラベルを構成している可能性があります。 GUID を見つけてラベルのスコープを確認するには、以下の操作を行います。
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
+````
+
+詳細設定を秘密度ラベルから削除するには、同じ AdvancedSettings パラメーター構文を使用しますが、null 文字列値を指定します。 例:
+
+````powershell
+Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
+````
+
+詳細設定などのラベルの構成を確認するには、独自のラベル GUID で次の構文を使用します。
+
+```powershell
+(Get-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e).settings
 ```
 
 ## <a name="publish-sensitivity-labels-by-creating-a-label-policy"></a>ラベル ポリシーを作成して秘密度ラベルを発行する
@@ -166,7 +191,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 [セキュリティ/コンプライアンス PowerShell](/powershell/exchange/scc-powershell) の [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) コマンドレットを使用すると、追加のラベルポリシー設定を利用できます。
 
-Azure Information Protection の統合ラベル付けクライアントは、他のラベリング ソリューションからの移行や、送信されるメールを警告、正当化、またはブロックする Outlook のポップアップ メッセージなど、多くの[詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations)をサポートしています。 完全なリストについては、このクライアントの管理ガイドの [[利用できるラベルの詳細設定](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)] を参照してください。
+このドキュメントには、組み込みのラベル付けでサポートされる詳細設定が含まれています。 Azure Information Protection 統合ラベル付けクライアントでサポートされているその他の詳細設定については、「[このクライアントの管理者ガイドのドキュメント](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies)」を参照してください。
 
 ## <a name="when-to-expect-new-labels-and-changes-to-take-effect"></a>新しいラベルと変更が反映されるタイミング
 
@@ -184,6 +209,9 @@ Azure Information Protection の統合ラベル付けクライアントは、他
 - [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy)
 - [Set-Label](/powershell/module/exchange/set-label)
 - [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy)
+
+> [!TIP]
+> 秘密度ラベルの詳細設定を構成する場合は、このページの「[詳細設定を指定するための PowerShell のヒント](#powershell-tips-for-specifying-the-advanced-settings)」セクションを参照することが役立つ場合があります。
 
 機密ラベルまたは機密ラベルポリシーの削除をスクリプト化する必要がある場合は、 [Remove-Label](/powershell/module/exchange/remove-label) および [Remove-LabelPolicy](/powershell/module/exchange/remove-labelpolicy) を使用することもできます。 ただし、機密ラベルを削除する前に、次のセクションを必ずお読みください。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: 0540f3b1b78b728a7c49e0851696d20a04137bb7
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: aca0c6522b52d4915802b9d6baefffa5151ccbda
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043068"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574192"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由
 
@@ -166,6 +166,7 @@ AIP アドインの次の構成は、組み込みラベル付けではまだサ�
 
 - [メールの添付ファイルからのラベルの継承](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#for-email-messages-with-attachments-apply-a-label-that-matches-the-highest-classification-of-those-attachments)
 - [Outlook の S/MIME](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configure-a-label-to-apply-smime-protection-in-outlook)
+    - この設定は、[すべてのプラットフォームにわたる組み込みのラベル付けのためにプレビュー段階でのロールアウト](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook)を開始します。
 - [Outlook のポップアップ メッセージの過剰共有](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#implement-pop-up-messages-in-outlook-that-warn-justify-or-block-emails-being-sent)
 - [親ラベルの既定のサブラベル](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#specify-a-default-sublabel-for-a-parent-label)
 - [外部コンテンツ マーキングの削除](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#remove-headers-and-footers-from-other-labeling-solution )

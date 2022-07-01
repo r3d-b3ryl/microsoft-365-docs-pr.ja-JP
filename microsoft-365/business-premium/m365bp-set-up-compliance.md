@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 description: データ損失を防ぎ、お客様と顧客の機密情報を安全に保つためのコンプライアンス機能を設定します。
-ms.openlocfilehash: ad95e4dc99a9957812ee09ace69d66b169ef7879
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9ce72a49b67d1ef8a66377ebfaafb075d30b60be
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491899"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573797"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 
-Microsoft 365 Business Premium サブスクリプションには、コンプライアンス機能とプライバシー機能が含まれています。 これらの機能は、会社のデータを保護し、ユーザーと顧客の機密情報をセキュリティで保護するのに役立ちます。 この記事は、コンプライアンス機能の使用を開始するために設計されています。
+Microsoft 365 Business Premium サブスクリプションには、コンプライアンス機能とプライバシー機能が含まれています。 これらの機能は、会社のデータを保護し、自分と顧客の機密情報をセキュリティで保護するのに役立ちます。 この記事は、コンプライアンス機能の使用を開始するために設計されています。
 
 ## <a name="before-you-begin"></a>開始する前に
 

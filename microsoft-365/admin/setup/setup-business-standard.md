@@ -27,18 +27,21 @@ search.appverid:
 - MOE150
 - BEA160
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
-ms.openlocfilehash: a08f5eb5c0a1bb2a77242f4b661c683310568d81
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: d5504edaff4c9d406d218d8ab8333b6d50af406e
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092825"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573893"
 ---
 # <a name="set-up-microsoft-365-business-standard-with-a-new-or-existing-domain"></a>新規ドメインまたは既存のドメインを使用して Microsoft 365 Business Standard を設定する
 
 Microsoft 365 Business Standard を購入するときに、所有するドメインを追加するか、購入するかを選択することができます。 [Microsoft 365 Business Standard サブスクリプションのサインアップ](../simplified-signup/signup-business-standard.md)をチェックアウトします。
 
 この記事では、既に所有している既存のドメインを追加するか、または新しいドメインを購入する手順について説明します。 サインアップ時に新しいドメインを購入した場合、お客様のドメインはすべてセットアップされており、[[ユーザーを追加してライセンスを割り当てる](#add-users-and-assign-licenses)] に移動することができます。
+
+> [!Tip]
+> Microsoft 365 Business Premium サブスクリプションをお持ちのお客様は、「[Microsoft 365 Business Premium のセットアップ](../../business-premium/m365bp-setup.md)」を参照してください。
 
 ## <a name="set-up-microsoft-365-for-business"></a>一般法人向け Microsoft 365 をセットアップする
 

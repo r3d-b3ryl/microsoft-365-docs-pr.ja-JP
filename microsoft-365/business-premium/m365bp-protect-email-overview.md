@@ -24,16 +24,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Microsoft 365 Business Premium に含まれているサイバーセキュリティ ツールを使用して、マルウェア、フィッシング、およびその他の悪意のあるサイバー攻撃からメールを保護するようにチームをトレーニングする方法の概要。
-ms.openlocfilehash: 7ffefa26e53dcde0f34451db3dfdccd014b9b555
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f22b8c71f88edbbf587ccf7fd7f25f52c7c275bf
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493662"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66573831"
 ---
 # <a name="protect-all-email"></a>すべてのメールを保護する
 
-ご存知のように、メールは無害な通信として隠蔽された悪意のある攻撃でいっぱいです。 さらに、メールは組織内の全員によって処理され、人間がそれらの通信で一貫して安全な決定を行うことに依存しているため、メール システムは特に脆弱です。 このミッションでは、メール システムが攻撃者から安全であることを確認します。 
+ご存知のように、メールは無害な通信として隠蔽された悪意のある攻撃でいっぱいです。 さらに、メールは組織内の全員によって処理され、人間がそれらのやり取りで一貫して安全な決定を行うことに依存しているため、メール システムは特に脆弱です。 このミッションでは、組織のメンバー全員が攻撃者からシステムを安全に保つためにどのように役立つかについて説明します。
 
 ミッションの目的は次のとおりです。
 

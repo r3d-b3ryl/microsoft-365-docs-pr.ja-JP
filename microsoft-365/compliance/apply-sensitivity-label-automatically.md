@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 2726a55b05ff27caee3c9739ad9d8604ce1a29d6
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: 79c0ac8873ba23604f394340bb030c1412a6212a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556914"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574246"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -30,7 +30,7 @@ ms.locfileid: "66556914"
 
 [!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
-> [!TIP]
+> [!NOTE]
 > データ マップで秘密度ラベルを自動的に適用する方法については、「[Microsoft Purview データ マップでのラベル付け](/azure/purview/create-sensitivity-label)」を参照してください。
 
 秘密度ラベルを作成する場合、指定した条件に一致したときに、そのラベルをファイルやメールに自動的に割り当てることができます。
@@ -79,6 +79,12 @@ Microsoft 365 でコンテンツに秘密度ラベルを自動的に適用する
     - 自動ラベル付け条件と一致すると、受信メールにラベルが付けられます。 このラベルが[暗号化](encryption-sensitivity-labels.md)用に構成されている場合、送信者が組織から送信されると、その暗号化は常に適用されます。 既定では、送信者が組織外の場合、その暗号化は適用されませんが、**電子メールの追加設定** を構成し、Rights Management 所有者を指定することで適用できます。
     - ラベルが暗号化を適用する場合、[Rights Management 発行者と Rights Management 所有者](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner)は、送信者が自分の組織から送信される際にメールを送信するユーザーです。 送信者が組織外の場合は、ポリシーによってラベル付けおよび暗号化された受信メールの Rights Management 所有者を指定できます。
     - ラベルが[動的マーキング](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)を適用するように構成されている場合、受信メールの場合、この構成により組織外の人の名前が表示される可能性があることに注意してください。
+
+> [!TIP]
+> 一部の新規のお客様には、クライアント側のラベル付けとサービス側のラベル付けの両方に対する既定の自動ラベル付け設定の自動構成が提供されています。 この自動構成の対象になっていない場合でも、その構成を参照すると役立つ場合があります。 たとえば、既存のラベルを手動で構成し、同じ設定で独自の自動ラベル付けポリシーを作成して、ラベル付けの展開を高速化することができます。
+> 
+> 詳細については、「[Microsoft Purview Information Protection の既定のラベルとポリシー](mip-easy-trials.md)」を参照してください。
+
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Office アプリの自動ラベル付けと自動ラベル付けポリシーを比較する
 
