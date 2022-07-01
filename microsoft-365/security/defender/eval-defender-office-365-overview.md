@@ -18,15 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
-- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 6acfec658ee7c104ae58974390ba39da8bc171f9
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 51e441dbebd247e041768e02875e635c9dfa7098
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569889"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602472"
 ---
 # <a name="step-3-enable-and-pilot-microsoft-defender-for-office-365"></a>手順 3. Microsoft Defender for Office 365を有効にしてパイロットする
 
@@ -38,13 +37,13 @@ ms.locfileid: "64569889"
 
 Microsoft Defender for Office 365を有効にしてパイロットするには、次の手順に従います。
 
-:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="Microsoft Defender for Officeを Microsoft Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
+:::image type="content" source="../../media/defender/m365-defender-office-eval-steps.png" alt-text="Microsoft Defender for Office を Microsoft Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-office-eval-steps.png":::
 
 次の表では、図の手順について説明します。
 
 | ステップ番号 | リンク  |説明  |
 |---------|---------|---------|
-|1|[アーキテクチャの要件と主要な概念を確認する](eval-defender-office-365-architecture.md)    | Office アーキテクチャの Defender を理解し、Exchange Online環境がアーキテクチャの前提条件を満たしていることを確認します。       |
+|1|[アーキテクチャの要件と主要な概念を確認する](eval-defender-office-365-architecture.md)    | Defender for Office アーキテクチャを理解し、Exchange Online環境がアーキテクチャの前提条件を満たしていることを確認します。       |
 |2|[評価環境を有効にする](eval-defender-office-365-enable-eval.md)     |   手順に従って、評価環境を設定します。      |
 |3|[パイロットを設定する ](eval-defender-office-365-pilot.md)    |    パイロット グループを作成し、保護を構成し、主要な機能とダッシュボードについて理解を深めます。     |
 

@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 19e654c979428e25d1365cbab5b6f75b39adbdb3
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: c3c693a46c3c22749a4e8ff2d572cef56bc06d9b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705518"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603750"
 ---
 # <a name="enable-attack-surface-reduction-asr-rules"></a>攻撃面の減少 (ASR) ルールを有効にする
 
@@ -99,7 +98,7 @@ ms.locfileid: "64705518"
 
 2. **グループ ポリシー管理エディター** で、[**コンピューターの構成**] に移動し、[**管理用テンプレート**] をクリックします。
 
-3. ツリーを展開して、**Microsoft Defender Exploit Guard攻撃面の縮小****Microsoft Defender ウイルス対策** \> **コンポーネント** \> **をWindows**\>します。
+3. ツリーを **Windows コンポーネント** \> **に展開します。Microsoft Defender ウイルス対策** \> **Microsoft Defender Exploit Guard** \> **攻撃の表面の縮小**。
 
 4. [ **攻撃対象の縮小ルールからファイルとパスを除外する] 設定を** ダブルクリックし、オプションを **[有効]** に設定します。 [ **表示]** を選択し、[ **値名** ] 列に各ファイルまたはフォルダーを入力します。 各項目の **[値**] 列に **「0**」と入力します。
 
@@ -108,7 +107,7 @@ ms.locfileid: "64705518"
 
 ##### <a name="use-powershell-to-exclude-files-and-folders"></a>PowerShell を使用してファイルとフォルダーを除外する
 
-1. スタート メニューに **「powershell**」と入力し、**Windows PowerShell** 右クリックして [**管理者として実行**] を選択します。
+1. スタート メニューに「**powershell**」と入力し、**[Windows PowerShell]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドレットを入力します。
 
@@ -125,7 +124,7 @@ ms.locfileid: "64705518"
 
 除外を追加するには、 [./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOnlyExclusions](/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductiononlyexclusions) 構成サービス プロバイダー (CSP) を使用します。
 
-##### <a name="customize-the-notification"></a>通知をカスタマイズする
+##### <a name="customize-the-notification"></a>通知のカスタマイズ
 
 ルールがトリガーされ、アプリまたはファイルがブロックされたときの通知をカスタマイズできます。 [Windows セキュリティ](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)の記事を参照してください。
 

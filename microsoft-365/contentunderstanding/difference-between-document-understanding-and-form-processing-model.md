@@ -1,5 +1,5 @@
 ---
-title: ドキュメント理解モデルとフォーム処理モデルの違い
+title: Microsoft SharePoint Syntex のカスタム モデルの違い
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
@@ -13,14 +13,14 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: ドキュメント理解モデルとフォーム処理モデルの主な違いについて説明します。
-ms.openlocfilehash: 49e3e2a0d63303b1c5cbdbfd941ba8aaa40594a7
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 31f70983b90e758516f92081217010bb6a64acd4
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491705"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603794"
 ---
-# <a name="differences-between-document-understanding-and-form-processing-models"></a>ドキュメント理解モデルとフォーム処理モデルの違い 
+# <a name="differences-between-custom-models-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex のカスタム モデルの違い 
 
 Microsoft SharePoint Syntexのコンテンツ理解では、SharePoint ドキュメント ライブラリにアップロードされたドキュメントを識別して分類し、各ファイルから関連情報を抽出できます。 たとえば、ファイルが SharePoint ドキュメントライブラリにアップロードされると、*発注書* として識別されたすべてのファイルがそのように分類され、カスタム ドキュメント ライブラリ ビューに表示されます。 さらに、各ファイルから特定の情報 (*PO番号* や *合計* など) を取得して、ドキュメントライブラリビューの列として表示できます。 
 
@@ -78,11 +78,11 @@ Microsoft SharePoint Syntexのコンテンツ理解では、SharePoint ドキュ
 | モデルの作成 | SharePoint ドキュメント ライブラリからシームレスにアクセスできる AI Builder で作成されたモデル。| SharePoint でコンテンツ センターという新しいサイトに作成されたモデル。 |
 | 分類の種類| 抽出するデータに関する手がかりをシステムに与える設定可能な分類子。| 機械教育を使用して、抽出するデータのドキュメントの場所を割り当てる、オプションの抽出子を備えたトレーニング可能な分類子。|
 | 場所 | 単一のドキュメント ライブラリ用にトレーニングされています。| 複数のライブラリに適用できます。|
-| サポートされているファイルの種類| PDF、JPG、PNG 形式、合計 50 MB および 500 ページでトレーニングします。| 否定的な例を含め、5 - 10 個の PDF、Office、またはメール ファイルでトレーニングします。<br>Office ファイルは 64K 文字で切り捨てられます。 OCR でスキャンされるファイルは 20 ページに制限されています。 ドキュメント理解モデルでは、doc、docx、eml、heic、heif、htm、html、jpeg、jpg、markdown、md、msg、pdf、png、ppt、pptx、rtf、tif、tiff、txt、xls、xlsx がサポートされています。|
+| サポートされているファイルの種類| PDF、JPG、PNG 形式、合計 50 MB および 500 ページでトレーニングします。| 否定的な例を含め、5 - 10 個の PDF、Office、またはメール ファイルでトレーニングします。<br>Office ファイルは 64K 文字で切り捨てられます。 OCR でスキャンされるファイルは 20 ページに制限されています。 [サポートされているファイルの種類を](document-understanding-overview.md#supported-file-types)参照してください。|
 | 管理されたメタデータと統合する | いいえ | はい。設定された管理対象メタデータ フィールドを参照するエンティティ抽出子のトレーニングを行います。|
 | コンプライアンス機能とMicrosoft Purview 情報保護の統合 | 発行済みの保持ラベルを設定します。<br>秘密度ラベルを設定する予定です。 | 発行済みの保持ラベルを設定します。<br>公開された秘密度ラベルを設定します。 |
 | サポートされる地域| フォーム処理は Power Platform に依存しています。 Power Platform と AI Builder のグローバルな可用性については、「[Power Platform の可用性](https://dynamics.microsoft.com/geographic-availability/)」を参照してください。 | すべての地域で利用可能です。|
-| トランザクション コスト | AI Builder クレジットを使用します。<br>1 か月あたりのSharePoint Syntexライセンスごとに 3.5K クレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 該当なし |
+| トランザクション コスト | AI Builder クレジットを使用します。<br>1 か月あたりのSharePoint Syntexライセンスごとに 3.5K クレジットが含まれています。<br>1 M のクレジットで 2,000 ファイル ページの処理が可能になります。<br>| 適用されません。 |
 | 容量 | 既定の Power Platform 環境を使用します (Dataverse データベースをサポートするカスタム環境)。 | 容量制限はありません。|
 | サポートされている言語| 73 を超える [言語の言語](/power-platform-release-plan/2021wave2/ai-builder/form-processing-new-language-support)サポート。 | モデルは、すべてのラテンアルファベット言語で動作します。 英語に加えて: ドイツ語、スウェーデン語、フランス語、スペイン語、イタリア語、およびポルトガル語。|
 

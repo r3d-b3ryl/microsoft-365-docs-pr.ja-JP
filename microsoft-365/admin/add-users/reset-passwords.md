@@ -29,17 +29,19 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Microsoft 365管理者アカウントでサインインして、ビジネス サブスクリプションのMicrosoft 365がある場合にユーザーのパスワードをリセットします。
-ms.openlocfilehash: 4c2c4bc1409a49b0f0bb26217fd349348331e95b
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+description: Microsoft 365 for business サブスクリプションを使用している場合は、Microsoft 365 管理者アカウントでサインインしてユーザーのパスワードをリセットします。
+ms.openlocfilehash: c7d3d70e2c286fbf35c4d2ae2e3eb8b812fd7e31
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65620968"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601676"
 ---
-# <a name="reset-passwords-in-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365のパスワードをリセットする
+# <a name="reset-passwords-in-microsoft-365-for-business"></a>Microsoft 365 for business のパスワードをリセットする
 
-この記事では、ビジネス サブスクリプションのMicrosoft 365がある場合に、自分とユーザーのパスワードをリセットする方法について説明します。
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+
+この記事では、Microsoft 365 for Business サブスクリプションを使用している場合に、自分とユーザーのパスワードをリセットする方法について説明します。
 
 > [!NOTE]
 > ユーザーが自分のパスワードをリセットできるように、セルフサービスのパスワード リセットを設定することもできます。 詳細については、「 [ユーザーが自分のパスワードをリセットできるようにする」](let-users-reset-passwords.md)を参照してください。
@@ -55,11 +57,11 @@ ms.locfileid: "65620968"
 
 ## <a name="watch-reset-a-business-password-for-a-user"></a>ウォッチ: ユーザーのビジネス パスワードをリセットする
 
-ユーザーのパスワードをリセットする方法に関する短いビデオをご覧ください。<br><br>
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198204)で、このビデオや他の動画を確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-1. ユーザーが新しいパスワードを要求すると、電子メールでパスワード リセット要求を受け取ります。 パスワードをリセットするには、アプリ起動ツールを開き、[管理者] を選択 **します**。
+1. ユーザーが新しいパスワードを要求すると、電子メールでパスワード リセット要求を受け取ります。 パスワードをリセットするには、アプリ起動ツールを開き、**管理** を選択します。
 1. Microsoft 365 管理センターで[**ユーザー]**、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">**アクティブなユーザー**</a>] の順に選択し、リセットを要求したユーザーの横にあるキー アイコンを選択します。
 1. ランダムなパスワードを自動的に作成するには、[**自動生成のパスワード**] を選択します。
 1. **[リセット]** を選択します。
@@ -82,9 +84,9 @@ ms.locfileid: "65620968"
 
 ## <a name="reset-my-admin-password"></a>管理者パスワードをリセットする
 
-パスワードを忘れたがMicrosoft 365にサインインできる場合は、次の手順を使用します。たとえば、パスワードはブラウザーに保存されるためです。
+パスワードを忘れたが Microsoft 365 にサインインできる場合は、次の手順を使用します。たとえば、パスワードはブラウザーに保存されるためです。
 
-1. **My AccountPersonal** >  Info の右上隅にある自分の名前 (アイコン) >選択 **します**。
+1. **マイ アカウント** > **の個人情報**>右上隅にある自分の名前 (アイコン) を選択します。
 
 2. [ **連絡先の詳細**] で、 **代替メール** が正確であり、携帯電話番号が入力されていることを再確認します。 正しくない場合は、この場で変更します。
 
@@ -103,7 +105,6 @@ ms.locfileid: "65620968"
 - または、[Microsoft サポートにお電話ください](../../business-video/get-help-support.md)。
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>組織内のすべてのユーザーのすべてのビジネス パスワードを同時にリセットする
-<a name="bkmk_forgot"> </a>
 
 次の手順は、数十のユーザーを抱える会社を対象にしています。 ユーザー数が数百または数千人の場合は、パスワードを一括でリセットする方法 (一度に最大 40 ユーザー) に関する次のセクションを参照してください。
   
@@ -118,19 +119,18 @@ ms.locfileid: "65620968"
 5. 一時パスワードを受信できるメール アドレスを入力します。 ユーザーの一時パスワードをユーザーに通知する必要があります。
   
 ## <a name="reset-business-passwords-in-bulk"></a>ビジネス パスワードを一括でリセットする
-<a name="bkmk_forgot"> </a>
 
-PowerShell を使用しましょう。Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)
+PowerShell を使用しましょう。 Eyal Doron による次の投稿を確認してください: [PowerShell でパスワードを管理する](https://go.microsoft.com/fwlink/?linkid=853696)
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-概要については、「[PowerShell を使用したMicrosoft 365の管理](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)」を参照してください。
+概要については、「 [PowerShell を使用した Microsoft 365 の管理](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md)」を参照してください。
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>社内のすべてのユーザーに対してパスワードの変更を強制する
 
 Vasil Michev (Microsoft MVP) による次のブログ投稿を確認してください: [Office 365 のすべてのユーザーのパスワードの変更を強制する](https://go.microsoft.com/fwlink/?linkid=853693)
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>ビジネス サブスクリプションのMicrosoft 365がありません
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Microsoft 365 for Business サブスクリプションがありません
 
 この記事、「[Office で使用するアカウントまたはパスワードを忘れてしまった](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp)」を参照してください。
   

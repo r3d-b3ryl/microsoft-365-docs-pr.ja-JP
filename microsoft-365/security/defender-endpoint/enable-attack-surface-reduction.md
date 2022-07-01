@@ -15,16 +15,15 @@ manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 31af082f66836ecfbe6a7cd804fd3b7bba2ed4bd
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 90244050b9fd8e5714ba28f7ac9850091d368da7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012386"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601226"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -44,9 +43,9 @@ ms.locfileid: "66012386"
 
 ## <a name="requirements"></a>要件
 
-Windows バージョン間の攻撃面の縮小機能
+Windows バージョン全体の攻撃面の縮小機能
 
-次のいずれかのエディションとバージョンのWindowsを実行しているデバイスに対して、攻撃面の縮小ルールを設定できます。
+次のいずれかのエディションとバージョンの Windows を実行しているデバイスに対して、攻撃面の縮小規則を設定できます。
 
 - [Windows 11 Pro](/windows/whats-new/windows-11-overview)
 - [Windows 11 Enterprise](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)
@@ -64,7 +63,7 @@ Windows バージョン間の攻撃面の縮小機能
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (一部のルールでは必須)
 - Windows 10 Enterprise E5 または E3 ライセンス
 
-攻撃表面の縮小ルールには[Windows E5 ライセンス](/windows/deployment/deploy-enterprise-licenses)は必要ありませんが、Windows E5 ライセンスを使用すると、Defender for Endpoint で使用できる監視、分析、ワークフローなどの高度な管理機能と、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>のレポート機能と構成機能を利用できます。 これらの高度な機能は E3 ライセンスでは使用できませんが、引き続きイベント ビューアーを使用して攻撃表面縮小ルール イベントを確認できます。
+攻撃表面の縮小ルールには [Windows E5 ライセンス](/windows/deployment/deploy-enterprise-licenses)は必要ありませんが、Windows E5 ライセンスを使用すると、Defender for Endpoint で使用できる監視、分析、ワークフローなどの高度な管理機能と、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>のレポート機能と構成機能を利用できます。 これらの高度な機能は E3 ライセンスでは使用できませんが、引き続きイベント ビューアーを使用して攻撃表面縮小ルール イベントを確認できます。
 
 各 ASR ルールには、次の 4 つの設定のいずれかが含まれています。
 
@@ -73,7 +72,7 @@ Windows バージョン間の攻撃面の縮小機能
 - **監査**: 有効にした場合に ASR ルールが組織にどのような影響を与えるかを評価する
 - **警告**: ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできるようにする
 
-Windows E5 ライセンス (または同様のライセンス SKU) で ASR ルールを使用して、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) で利用できる高度な監視機能とレポート機能を利用することをお勧めします。 ただし、高度な監視機能やレポート機能を含まないWindows ProfessionalやWindows E3 などの別のライセンスがある場合は、ASR ルールがトリガーされたときに各エンドポイントで生成されるイベント (イベント転送など) の上に独自の監視ツールとレポート ツールを開発できます。
+Windows E5 ライセンス (または同様のライセンス SKU) で ASR ルールを使用して、[Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) で利用できる高度な監視機能とレポート機能を利用することをお勧めします。 ただし、高度な監視機能とレポート機能を含まない Windows Professional や Windows E3 などの別のライセンスがある場合は、ASR ルールがトリガーされたときに各エンドポイントで生成されるイベント (イベント転送など) に基づいて独自の監視ツールとレポート ツールを開発できます。
 
 > [!TIP]
 > Windows ライセンスの詳細については、「[Windows 10 ライセンス](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5)」を参照し、[Windows 10のボリューム ライセンス ガイドを](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)参照してください。
@@ -86,7 +85,7 @@ Windows E5 ライセンス (または同様のライセンス SKU) で ASR ル�
 - [グループ ポリシー](#group-policy)
 - [PowerShell](#powershell)
 
-IntuneやMicrosoft エンドポイント マネージャーなどのEnterpriseレベルの管理をお勧めします。 Enterprise レベルの管理では、起動時に競合するグループ ポリシーまたは PowerShell の設定が上書きされます。
+Intuneや Microsoft エンドポイント マネージャーなどのエンタープライズ レベルの管理をお勧めします。 エンタープライズ レベルの管理では、起動時に競合するグループ ポリシーまたは PowerShell の設定が上書きされます。
 
 ## <a name="exclude-files-and-folders-from-asr-rules"></a>ASR ルールからファイルとフォルダーを除外する
 
@@ -108,7 +107,7 @@ ASR ルールでは、環境変数とワイルドカードがサポートされ�
 
 2. MEM マネージド デバイスの攻撃面削減ルールでは、さまざまなポリシーの設定を統合して、デバイスごとにポリシーのスーパーセットを作成する動作がサポートされるようになりました。 競合していない設定のみがマージされますが、競合している設定はルールのスーパーセットに追加されません。 以前は、2 つのポリシーに 1 つの設定の競合が含まれていた場合、両方のポリシーに競合のフラグが設定され、どちらのプロファイルの設定も展開されませんでした。 攻撃対象の縮小ルールのマージ動作は次のとおりです。
    - 次のプロファイルからの攻撃表面の縮小ルールは、ルールが適用されるデバイスごとに評価されます。
-     - デバイス>構成ポリシー>エンドポイント保護プロファイル> **Microsoft Defender Exploit Guard** >  [Attack Surface Reduction](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules) です。
+     - デバイス>構成ポリシー>エンドポイント保護プロファイル> **Microsoft Defender Exploit Guard** > [攻撃面の縮小](/mem/intune/protect/endpoint-protection-windows-10#attack-surface-reduction-rules)です。
      - エンドポイント セキュリティ> **攻撃面の縮小ポリシー** > [攻撃面の削減規則](/mem/intune/protect/endpoint-security-asr-policy#devices-managed-by-intune)。
      - エンドポイント セキュリティ> セキュリティ ベースライン> **Microsoft Defender ATP ベースライン** > [攻撃表面縮小規則](/mem/intune/protect/security-baseline-settings-defender-atp#attack-surface-reduction-rules)。
    - 競合のない設定は、デバイスのポリシーのスーパーセットに追加されます。
@@ -132,7 +131,7 @@ ASR ルールを有効にする手順には、ファイルとフォルダーを�
 
 #### <a name="device-configuration-profiles"></a>デバイス構成プロファイル
 
-1. [ **デバイス構成** \> **プロファイル] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[ **プロファイルの作成** ] を選択し、このプロファイルの情報を入力します。 [ **プロファイルの種類]** で、[ **エンドポイント保護**] を選択します。 既存のプロファイルを選択した場合は、[**プロパティ**] を選択し、**設定** を選択します。
+1. [ **デバイス構成** \> **プロファイル] を選択します**。 既存のエンドポイント保護プロファイルを選択するか、新しいエンドポイント保護プロファイルを作成します。 新しいプロファイルを作成するには、[ **プロファイルの作成** ] を選択し、このプロファイルの情報を入力します。 [ **プロファイルの種類]** で、[ **エンドポイント保護**] を選択します。 既存のプロファイルを選択した場合は、[ **プロパティ** ] を選択し、[ **設定]** を選択します。
 
 2. **[エンドポイント保護**] ウィンドウで[**Exploit Guard] Windows Defender** 選択し、[**攻撃面の縮小**] を選択します。 ASR 規則ごとに目的の設定を選択します。
 
@@ -144,7 +143,7 @@ ASR ルールを有効にする手順には、ファイルとフォルダーを�
 
 #### <a name="endpoint-security-policy"></a>エンドポイント セキュリティ ポリシー
 
-1. **[Endpoint Security** Attack surface reduction]\(エンドポイント セキュリティ\>**攻撃の表面の削減**\) を選択します。 既存の ASR ルールを選択するか、新しい ASR ルールを作成します。 新しいポリシーを作成するには、[ **ポリシーの作成** ] を選択し、このプロファイルの情報を入力します。 **[プロファイルの種類**] で、[**攻撃面の縮小ルール**] を選択します。 既存のプロファイルを選択した場合は、[**プロパティ**] を選択し、**設定** を選択します。
+1. **[Endpoint Security** Attack surface reduction]\(エンドポイント セキュリティ\>**攻撃の表面の削減**\) を選択します。 既存の ASR ルールを選択するか、新しい ASR ルールを作成します。 新しいポリシーを作成するには、[ **ポリシーの作成** ] を選択し、このプロファイルの情報を入力します。 **[プロファイルの種類**] で、[**攻撃面の縮小ルール**] を選択します。 既存のプロファイルを選択した場合は、[ **プロパティ** ] を選択し、[ **設定]** を選択します。
 
 2. **[構成設定]** ウィンドウで[**攻撃面の削減**] を選択し、各 ASR ルールに必要な設定を選択します。
 
@@ -167,7 +166,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
 
    - **プラットフォーム** で **、Windows 10以降を** 選択します
    - **[プロファイルの種類]** で 、[テンプレート] を選択 **します**。
-   - ASR 規則がエンドポイント セキュリティによって既に設定されている場合は、[**プロファイルの種類**] で **[カタログ設定選択します**。
+   - エンドポイント セキュリティを使用して ASR ルールが既に設定されている場合は、[**プロファイルの種類****] で [設定カタログ]** を選択します。
 
    [ **カスタム**] を選択し、[ **作成**] を選択します。
 
@@ -177,14 +176,14 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
 3. カスタム テンプレート ツールが開き、手順 **1 の基本** に進みます。 **[1 基本]** の **[名前]** にテンプレートの名前を入力し、[**説明]** に説明を入力できます (省略可能)。
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem03-1-basics.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの基本属性" lightbox="images/mem03-1-basics.png":::
+   > :::image type="content" source="images/mem03-1-basics.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの基本的な属性" lightbox="images/mem03-1-basics.png":::
 
-4. **[次へ]** をクリックします。 手順 **2 構成設定** が開きます。 OMA-URI 設定の場合は、[**追加**] をクリックします。 [ **追加]** と [ **エクスポート**] の 2 つのオプションが表示されるようになりました。
+4. **[次へ]** をクリックします。 手順 **2 構成設定** が開きます。 OMA-URI 設定の場合は、[ **追加**] をクリックします。 [ **追加]** と [ **エクスポート**] の 2 つのオプションが表示されるようになりました。
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの構成設定" lightbox="images/mem04-2-configuration-settings.png":::
+   > :::image type="content" source="images/mem04-2-configuration-settings.png" alt-text="Microsoft エンドポイント マネージャー 管理センター ポータルの構成設定" lightbox="images/mem04-2-configuration-settings.png":::
 
-5. もう一度 [ **追加]** をクリックします。 **行 OMA-URI の追加設定** が開きます。 [ **行の追加]** で、次の操作を行います。
+5. もう一度 [ **追加]** をクリックします。 **行 OMA-URI 設定の追加が** 開きます。 [ **行の追加]** で、次の操作を行います。
 
    - **[名前]** にルールの名前を入力します。
    - [ **説明]** に簡単な説明を入力します。
@@ -198,7 +197,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
      - 6 : 警告 (ASR ルールを有効にするが、エンド ユーザーがブロックをバイパスできるようにする)
 
    > [!div class="mx-imgBorder"]
-   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの OMA URI 構成" lightbox="images/mem05-add-row-oma-uri.png":::
+   > :::image type="content" source="images/mem05-add-row-oma-uri.png" alt-text="Microsoft エンドポイント マネージャー 管理センター ポータルの OMA URI 構成" lightbox="images/mem05-add-row-oma-uri.png":::
 
 6. **[保存]** を選択します。 **行の追加** を閉じます。 **[カスタム]** で、[**次へ**] を選択します。 手順 **3 のスコープ タグ** では、スコープ タグは省略可能です。 次のいずれかの操作を行います。
 
@@ -291,7 +290,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して、**Microsoft Defender Exploit Guard攻撃面の縮小****Microsoft Defender ウイルス対策** \> **コンポーネント** \> **をWindows**\>します。
+3. ツリーを **Windows コンポーネント** \> **に展開します。Microsoft Defender ウイルス対策** \> **Microsoft Defender Exploit Guard** \> **攻撃の表面の縮小**。
 
 4. [ **攻撃対象の縮小ルールの構成** ] を選択し、[ **有効]** を選択します。 その後、[オプション] セクションで、各ルールの個々の状態を設定できます。 **[表示]...** を選択し、[**値名**] 列にルール ID を入力し、選択した状態を [**値]** 列に次のように入力します。
 

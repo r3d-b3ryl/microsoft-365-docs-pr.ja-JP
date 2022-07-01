@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 2f745c0f215f19b0d6e4f9fc06b39ba8234fd170
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: aa6255289ddffd7edb9025e36c69a49f4a3b855b
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554271"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603508"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux でのMicrosoft Defender for Endpointの新機能
 
@@ -46,6 +46,7 @@ ms.locfileid: "66554271"
 
 **新機能**
 
+- v2 定義の更新に対して標準以外の場所 (/var の外部) で定義ストレージをサポートするように修正しました
 - RHEL 6 で使用されている製品センサーで、OS がハングする可能性がある問題を修正しました
 - `mdatp connectivity test` は、製品が正しく機能するために必要な追加の URL で拡張されました。 新しい URL は [https://go.microsoft.com/fwlink/?linkid=2144709](https://go.microsoft.com/fwlink/?linkid=2144709).
 - これまで、製品の再起動の間、製品ログ レベルは保持されませんでした。 このバージョン以降、ログ レベルを保持する新しいコマンド ライン ツール スイッチがあります。 新しいコマンドは .`mdatp log level persist --level <level>`

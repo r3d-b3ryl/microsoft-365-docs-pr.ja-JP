@@ -19,15 +19,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
-- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 05dbf222762837f2916a76cc5b183a99cd981101
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e9a0c8939ccc5d8007ef1c0318fed45b35c6d36a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755110"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601248"
 ---
 # <a name="step-4-evaluate-microsoft-defender-for-endpoint-overview"></a>手順 4. Microsoft Defender for Endpointの評価の概要
 

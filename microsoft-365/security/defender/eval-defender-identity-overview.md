@@ -19,15 +19,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
-- m365solution-overview
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d77bb5f61127475c8c7c00e58af6c19013aaffe2
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: d5588a71995a36981662f7560c1d022fd55858a9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755417"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602516"
 ---
 # <a name="step-2-evaluate-microsoft-defender-for-identity-overview"></a>手順 2。 Microsoft Defender for Identityの評価の概要
 

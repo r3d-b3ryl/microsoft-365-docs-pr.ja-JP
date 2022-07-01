@@ -28,26 +28,30 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: セルフサービスパスワード リセット ツールを使用してユーザーが自分のパスワードをリセットできるように、Microsoft 365 管理センターでポリシーを設定する方法について説明します。
-ms.openlocfilehash: 2ade056638db03a0a38b7fe2bdacfe3d6d2e4530
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 44cbcc5404727e22c62fc6345e03682ff0961543
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65436693"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601952"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>ユーザーが自分でパスワードをリセットできるようにする
 
-Microsoft 365管理者は、ユーザーが[セルフサービスパスワード リセット ツール](https://go.microsoft.com/fwlink/p/?LinkId=522677)を使用できるようにします。そのため、ユーザーのパスワードをリセットする必要はありません。 より少ない作業が必要です。
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+
+Microsoft 365 管理者は、ユーザーが [セルフサービスパスワード リセット ツール](https://go.microsoft.com/fwlink/p/?LinkId=522677) を使用できるようにすることで、パスワードをリセットする必要がなくなります。 より少ない作業が必要です。
 
 > [!TIP]
 > このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
  
 ## <a name="watch-let-users-reset-their-own-passwords"></a>ウォッチ: ユーザーが自分のパスワードをリセットできるようにする
 
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198214)で、このビデオや他の動画を確認してください。
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S]
 
-1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウで、**設定** > **Org 設定**、および <a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**セキュリティ &プライバシー**</a>を選択します。
-1. [ **ユーザーが自分のパスワードをリセットできるようにする**] で、[**Azure AD 管理センター**] を選択します。
+1. Microsoft 365 管理センターの左側のナビゲーション ウィンドウで、[設定 **組織の設定****]** > 、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2072756" target="_blank">**セキュリティ&プライバシー**</a>] の順に選択します。
+1. [ **ユーザーが自分のパスワードをリセットできるようにする**] で、**Azure AD 管理センター** を選択します。
 1. 左側のナビゲーション ウィンドウで [ **ユーザー**] を選択し、[ **ユーザー - すべてのユーザー** ] ページで [ **パスワードリセット**] を選択します。
 1. **[すべて**] を選択してセルフサービスのパスワード リセットを有効にし、[保存] を選択 **します**。
 
@@ -55,11 +59,11 @@ Microsoft 365管理者は、ユーザーが[セルフサービスパスワード
  
 ## <a name="before-you-begin"></a>はじめに
   
-- クラウド ユーザーのセルフサービス パスワード リセットは、Microsoft 365ビジネス、教育機関、非営利団体向けの有料プランで **無料** で取得できます。 Microsoft 365試用版では機能しません。
+- Microsoft 365 のビジネス、教育機関、非営利団体向け有料プランを使用すると、クラウド ユーザーのセルフサービス パスワード リセットが **無料** で取得できます。 Microsoft 365 試用版では機能しません。
 
 - この操作には Azure を使用します。これらの手順を行うときに、自動的に **無料** で Azure にあるこの機能を取得できます。その他の Azure 機能を使用しない場合は、セルフサービスによるパスワード リセットをオンにするために費用はかかりません。
 
-- **オンプレミスの Active Directoryを使用している場合** は、上記の 2 つの点は適用されません。 代わりに、これを設定できますが、**Azure AD Premiumには有料サブスクリプションが必要です**。
+- **オンプレミスの Active Directoryを使用している場合** は、上記の 2 つの点は適用されません。 代わりに、これを設定できますが、 **Azure AD Premium への有料サブスクリプションが必要です**。
 
 この記事は、職場、学校、または非営利団体のパスワードの有効期限ポリシーを設定する管理者を対象としています。 これらの手順を完了するには、Microsoft 365 の管理者アカウントでサインインする必要があります。 [管理者アカウントとは何ですか?(Microsoft 365 管理センターの概要](../admin-overview/admin-center-overview.md)
 
@@ -69,7 +73,7 @@ Microsoft 365管理者は、ユーザーが[セルフサービスパスワード
 
 次の手順を行うと、社内のすべてのユーザーに対してセルフサービスによるパスワードのリセットがオンになります。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>で、**設定** > **Org 設定** ページに移動します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">管理センター</a>で、[設定 **組織** の設定 **]** >  ページに移動します。
 
 2. **[組織の設定]** ページの上部にある [**セキュリティ&プライバシー**] タブを選択します。
   

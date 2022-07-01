@@ -23,14 +23,16 @@ ms.custom:
 search.appverid: GEA150
 description: Microsoft 365 Business Standard、Microsoft 365 Business Premium、または Microsoft 365 Apps for business の 30 日間無料試用版にサインアップします。
 ms.date: 08/07/2020
-ms.openlocfilehash: d7ead35ebef6431a5e207e7114936d9724948755
-ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
+ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "64824226"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602538"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
+
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 一般法人向け Microsoft 365 は、組織をクラウドで実行できるサブスクリプション サービスであり、Microsoft に IT を任せることができます。 Microsoft はデバイスを管理し、現実世界の脅威から保護し、最新のビジネス ソフトウェアを組織に提供します。 Microsoft 365 Business Standard、Microsoft 365 Business Premium、または一般法人向け Microsoft 365 Apps の無料試用版サブスクリプションにサインアップして、30 日間お試しください。
 
@@ -108,6 +110,8 @@ ms.locfileid: "64824226"
 既に一般法人向けMicrosoft 365サブスクリプションをお持ちの場合は、Microsoft 365 管理センターを使用して、組織用の別のサブスクリプションを購入することができます。
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>視聴する: ユーザーを別のサブスクリプションに移動する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198013)で、このビデオや他の動画を確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 

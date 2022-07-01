@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 18654dfb1ae6ae10596889fb4491604a37b8ffe8
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017433"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601204"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>攻撃面の縮小 (ASR) ルールの展開の概要
 
@@ -39,7 +38,7 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 
 さまざまな攻撃面を減らすことで、最初に攻撃が発生するのを防ぐのに役立ちます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 最初の準備では、配置するシステムの機能を理解することが重要です。 この機能を理解すると、組織を保護するために最も重要な ASR 規則を判断するのに役立ちます。 また、ASR デプロイの準備に必要な前提条件がいくつかあります。
 
@@ -58,9 +57,9 @@ ASR ルールは、Microsoft Defender for Endpoint内の攻撃面の縮小機能
 
 | 多形の脅威 | 横移動&資格情報の盗難 | 生産性アプリのルール |  電子メール ルール | スクリプト ルール | その他のルール |
 |:---|:---|:---|:---|:---|:---|
-| 有病率 (1000 台のマシン)、年齢 (24 時間)、信頼できるリスト条件を満たしていない限り、実行可能ファイルの実行をブロックする | PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする | アプリOffice実行可能コンテンツの作成をブロックする | 電子メール クライアントと webmail から実行可能コンテンツをブロックする | 難読化された JS/VBS/PS/マクロ コードをブロックする | 悪用された脆弱な署名されたドライバー <sup>の悪用をブロックする [[1](#fn1)]<sup></sup>  |
-| USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする | Windowsローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Office アプリによる子プロセスの作成をブロックする |  通信アプリケーションOffice子プロセスの作成のみをブロックする | ダウンロードした実行可能コンテンツの起動から JS/VBS をブロックする | |
-| ランサムウェアに対する高度な保護を使用する | WMI イベント サブスクリプションを使用して永続化をブロックする | Office アプリが他のプロセスにコードを挿入できないようにブロックする | 通信アプリOffice子プロセスの作成をブロックする | | |
+| 有病率 (1000 台のマシン)、年齢 (24 時間)、信頼できるリスト条件を満たしていない限り、実行可能ファイルの実行をブロックする | PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする | Office アプリが実行可能コンテンツを作成できないようにする | 電子メール クライアントと webmail から実行可能コンテンツをブロックする | 難読化された JS/VBS/PS/マクロ コードをブロックする | 悪用された脆弱な署名されたドライバー <sup>の悪用をブロックする [[1](#fn1)]<sup></sup>  |
+| USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする | Windows ローカル セキュリティ機関サブシステムからの資格情報の盗難をブロックする (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Office アプリによる子プロセスの作成をブロックする |  Office 通信アプリケーションのみが子プロセスを作成できないようにブロックする | ダウンロードした実行可能コンテンツの起動から JS/VBS をブロックする | |
+| ランサムウェアに対する高度な保護を使用する | WMI イベント サブスクリプションを使用して永続化をブロックする | Office アプリが他のプロセスにコードを挿入できないようにする | Office 通信アプリによる子プロセスの作成をブロックする | | |
 | | | Adobe Reader による子プロセスの作成をブロックする | | | |
 
 (<a id="fn1">1</a>) _悪用された脆弱な署名付きドライバーの悪用をブロック_ することは、MEM エンドポイント のセキュリティでは現在使用できません。 このルールは [、MEM OMA-URI を](enable-attack-surface-reduction.md#mem)使用して構成できます。
@@ -74,7 +73,7 @@ ASR ルールを実装する複数の方法は可能ですが、このガイド�
 - Azure Active Directory
 - Microsoft Endpoint Management (MEM)
 - デバイスのWindows 10とWindows 11
-- E5 または Windows E5 ライセンスをMicrosoft Defender for Endpointする
+- Microsoft Defender for Endpoint E5 または Windows E5 ライセンス
 
 ASR ルールとレポートを最大限に活用するには、Microsoft 365 Defender E5 または Windows E5 ライセンスと A5 を使用することをお勧めします。 詳細情報: [Microsoft Defender for Endpointの最小要件](minimum-requirements.md)。
 
@@ -89,29 +88,29 @@ Microsoft Defender ウイルス対策は、プライマリウイルス対策ソ�
 - プライマリ ウイルス対策/マルウェア対策ソリューション  
 - 状態: アクティブ モード
 
-Microsoft Defender ウイルス対策は、次のいずれかのモードにすることはできません。
+Microsoft Defender ウイルス対策は、次のモードのいずれにも含まれてはなりません。
 
 - パッシブ
-- ブロック モードでのエンドポイントの検出と応答 (EDR) を含むパッシブ モード
+- ブロック モードでのエンドポイント検出と応答 (EDR) を使用したパッシブ モード
 - 限られた定期的なスキャン (LPS)
-- Off
+- オフ
 
-「[クラウド配信の保護とMicrosoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)」を参照してください。
+「 [クラウド配信保護」と「Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)」を参照してください。
 
 ### <a name="cloud-protection-maps-must-be-enabled"></a>Cloud Protection (MAPS) を有効にする必要があります
 
 Microsoft Defender ウイルス対策は、Microsoft クラウド サービスとシームレスに連携します。 Microsoft Advanced Protection Service (MAPS) とも呼ばれるこれらのクラウド保護サービスは、標準のリアルタイム保護を強化し、間違いなく最高のウイルス対策防御を提供します。 マルウェアからの侵害や ASR ルールの重要なコンポーネントを防ぐには、クラウド保護が重要です。
 [Microsoft Defender ウイルス対策でクラウド配信保護を有効にします](enable-cloud-protection-microsoft-defender-antivirus.md)。
 
-### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Microsoft Defender ウイルス対策 コンポーネントは現在のバージョンである必要があります
+### <a name="microsoft-defender-antivirus-components-must-be-current-versions"></a>Microsoft Defender ウイルス対策コンポーネントは、現在のバージョンである必要があります
 
-次のMicrosoft Defender ウイルス対策 コンポーネント バージョンは、現在使用可能なバージョンより 2 つ以上古いバージョンにする必要があります。
+次の Microsoft Defender ウイルス対策コンポーネントのバージョンは、現在使用可能なバージョンより 2 つ以上古いバージョンにする必要があります。
 
-- **Microsoft Defender ウイルス対策 プラットフォームの更新バージョン** - Microsoft Defender ウイルス対策 プラットフォームは毎月更新されます。
-- **Microsoft Defender ウイルス対策 エンジンのバージョン** - Microsoft Defender ウイルス対策 エンジンは毎月更新されます。
+- **Microsoft Defender ウイルス対策プラットフォームの更新バージョン**  - Microsoft Defender ウイルス対策プラットフォームは毎月更新されます。
+- **Microsoft Defender ウイルス対策エンジンのバージョン** - Microsoft Defender ウイルス対策エンジンは毎月更新されます。
 - **Microsoft Defender ウイルス対策セキュリティ インテリジェンス** - Microsoft は、最新の脅威に対処し、検出ロジックを改善するために、Microsoft Defender セキュリティ インテリジェンス (定義と署名とも呼ばれます) を継続的に更新します。
 
-Microsoft Defender ウイルス対策バージョンを最新の状態に保つことは、ASR ルールの誤検知の結果を減らし、Microsoft Defender ウイルス対策検出機能を向上させます。 現在のバージョンと、さまざまなMicrosoft Defender ウイルス対策 コンポーネントを更新する方法の詳細については、[プラットフォームのサポートMicrosoft Defender ウイルス対策](manage-updates-baselines-microsoft-defender-antivirus.md)参照してください。
+Microsoft Defender ウイルス対策のバージョンを最新の状態に保つことは、ASR ルールの誤検知結果を減らし、Microsoft Defender ウイルス対策検出機能を改善するのに役立ちます。 現在のバージョンと、さまざまな Microsoft Defender ウイルス対策コンポーネントを更新する方法の詳細については、 [Microsoft Defender ウイルス対策プラットフォームのサポート](manage-updates-baselines-microsoft-defender-antivirus.md)に関するページを参照してください。
 
 ### <a name="caveat"></a>警告
 
@@ -175,7 +174,7 @@ Microsoft Defender ウイルス対策バージョンを最新の状態に保つ�
 
 [Microsoft 365 Apps管理センターのインベントリの概要](/deployoffice/admincenter/inventory)
 
-[Windowsの展開計画を作成する](/windows/deployment/update/create-deployment-plan)
+[Windows の展開計画を作成する](/windows/deployment/update/create-deployment-plan)
 
 [Intuneで分散 IT にロールベースのアクセス制御 (RBAC) タグとスコープ タグを使用する](/mem/intune/fundamentals/scope-tags)
 

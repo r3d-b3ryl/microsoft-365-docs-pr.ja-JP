@@ -21,23 +21,27 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: メール、連絡先、予定表を Google ワークスペースからビジネス向けのMicrosoft 365に移行する方法について説明します。
-ms.openlocfilehash: a5ceccfde47b5084326aae9346b1c645cef7114a
-ms.sourcegitcommit: 559df2c86a7822463ce0597140537bab260c746a
+description: メール、連絡先、予定表を Google ワークスペースから Microsoft 365 for Business に移行する方法について説明します。
+ms.openlocfilehash: be7637816f80ecba3c56db644114d5ddb00caeb7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/15/2022
-ms.locfileid: "62825707"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602040"
 ---
 # <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google ワークスペースからビジネス用メールと予定表を移行する
+
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+
+## <a name="watch-migrate-business-email-and-calendar-from-google-workspace"></a>ウォッチ: Google ワークスペースからビジネス用メールと予定表を移行する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198034)で、このビデオや他の動画を確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
 管理者が実行した移行を使用して、Google ワークスペースからExchange Onlineできます。 メールは、一度に移行することも、段階的に移行することもできます。 次の手順では、電子メール データを一度に移行する方法を示します。 詳細については、「 [G Suite の移行を実行する](/exchange/mailbox-migration/perform-g-suite-migration)」を参照してください。
 
 移行プロセスにはいくつかの手順が必要であり、移行するデータの量に応じて数時間から数日かかる場合があります。
-
-## <a name="try-it"></a>お試しください!
 
 ### <a name="create-a-google-service-account"></a>Google サービス アカウントを作成する
 
@@ -78,7 +82,7 @@ ms.locfileid: "62825707"
  
 1. [ **承認] を選択します**。 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Microsoft 365に移動するメールのサブドメインを作成する
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Microsoft 365 に送信するメールのサブドメインを作成する
 
 1. **Google ワークスペース管理** コンソールに戻ります。
 1. **[ドメイン]**、[**ドメインの管理**]、[**ドメイン エイリアスの追加]** の順に選択します。 
@@ -88,7 +92,7 @@ ms.locfileid: "62825707"
     ドメインの検証には通常数分かかりますが、最大で 48 時間かかる場合があります。
 
 1. [Microsoft 365 管理センター](https://admin.microsoft.com)に戻ります。
-1. Microsoft 365 管理センターの左側のナビゲーションで、[**すべて** > 表示]、[<a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**ドメイン**</a>の **追加**] **の順設定** > 選択します。 
+1. Microsoft 365 管理センターの左側のナビゲーションで、[**すべての** > 設定 <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">**ドメイン**</a>の表示 **]** >  を選択し、[**ドメインの追加]** を選択します。 
 1. 前に作成したサブドメインを入力し、[ **このドメインを使用** する] を選択します。 
 1. ドメインに接続するには、[続行] を選択 **します**。 
 1. 下にスクロールして、MX レコード、CNAME レコード、TXT レコードをメモします。 
@@ -104,7 +108,7 @@ ms.locfileid: "62825707"
 
 これで、ドメインが設定されました。  
 
-### <a name="create-email-aliases-in-microsoft-365"></a>Microsoft 365で電子メール エイリアスを作成する
+### <a name="create-email-aliases-in-microsoft-365"></a>Microsoft 365 で電子メール エイリアスを作成する
 
 移行を開始する前に、新しいサブドメインを持つユーザーの電子メール エイリアスを作成する必要があります。 
 
@@ -145,5 +149,5 @@ ms.locfileid: "62825707"
 1. プロセスが完了すると、状態は **[完了]** に変わります。 
 1. 必要に応じて、[詳細の **表示** ] を選択して移行の詳細を確認できます。 
 1. **[閉じる]** を選択します。 
-1. Outlookを開き、Google ワークスペースからのすべてのメールが正常に移行されたことを確認します。
+1. Outlook を開き、Google ワークスペースからのすべてのメールが正常に移行されたことを確認します。
 予定表アイテムと連絡先についても、これを繰り返すことができます。

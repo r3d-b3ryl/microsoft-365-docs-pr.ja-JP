@@ -10,19 +10,19 @@ ms.topic: how-to
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
-description: レポート メッセージ機能を使用して、Outlookで誤検知と誤検知を報告する方法について説明します。
+description: レポート メッセージ機能を使用して Outlook で誤検知と誤検知を報告する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 762f16916e03940f4d0f95c48f13751d3cbd63c7
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 60f9a9eff9694752630170991b7a800f52a2952d
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416974"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602140"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Outlook の誤検出と検出漏れを報告する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -30,17 +30,17 @@ ms.locfileid: "65416974"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Exchange Onlineメールボックスを持つMicrosoft 365組織の管理者の場合は、Microsoft 365 Defender ポータルの **[申請]** ページを使用することをお勧めします。 詳細については、「 [申請ポータルを使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
+> Exchange Onlineメールボックスを持つ Microsoft 365 組織の管理者の場合は、Microsoft 365 Defender ポータルの **[申請]** ページを使用することをお勧めします。 詳細については、「 [申請ポータルを使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
 
-ハイブリッドモダン認証を使用して、Exchange Onlineまたはオンプレミスのメールボックスにメールボックスを含むMicrosoft 365組織では、偽陽性 (ブロックまたは迷惑メール フォルダーに送信された適切なメール) と偽陰性 (受信トレイに配信された不要なメールまたはフィッシング) をExchange Online Protection (EOP) に送信できます。
+ハイブリッドモダン認証を使用して、Exchange Onlineまたはオンプレミスのメールボックスにメールボックスを含む Microsoft 365 組織では、偽陽性 (ブロックまたは迷惑メール フォルダーに送信された適切なメール) と偽陰性 (受信トレイに配信された不要なメールまたはフィッシング) をExchange Online Protection (EOP) に送信できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - 最適なユーザー申請エクスペリエンスを得るには、レポート メッセージ アドインまたはレポート フィッシング アドインを使用します。
 
-- レポート メッセージ アドインとレポート フィッシング アドインは、すべてのプラットフォーム (Outlook on the web、iOS、Android、デスクトップ) のOutlookに対して機能します。
+- レポート メッセージ アドインとレポート フィッシング アドインは、すべてのプラットフォーム (Outlook on the web、iOS、Android、デスクトップ) で Outlook 用に機能します。
 
-- Exchange Online メールボックスを持つ組織内の管理者の場合は、Microsoft 365 Defender ポータルの申請ポータルを使用します。 詳細については、「 [管理者申請を使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
+- Exchange Online メールボックスを持つ組織内の管理者の場合は、Microsoft 365 Defender ポータルの申請ポータルを使用します。 詳細については、「[管理申請を使用して、疑わしいスパム、フィッシング、URL、およびファイルを Microsoft に送信する」を参照してください](admin-submission.md)。
 
 - Microsoft、指定したメールボックス、またはその両方にメッセージを直接送信するように構成できます。 詳細については、「 [ユーザー申請ポリシー](user-submission.md)」を参照してください。
 
@@ -50,18 +50,6 @@ ms.locfileid: "65416974"
 
 この短いビデオでは、Microsoft Defender for Office 365を使用してユーザーの送信を簡単に調査してメッセージの内容を特定し、適切な修復アクションを適用して送信に応答する方法について説明します。 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWBHof]
-
-### <a name="turn-off-the-built-in-reporting-experience"></a>組み込みのレポート エクスペリエンスを無効にする
-
-[Outlookでは、ユーザー送信ポリシー](./user-submission.md)を使用できないため、組み込みのレポート エクスペリエンスはお勧めしません。 代わりに、レポート メッセージ アドインまたはレポート フィッシング アドインを使用することをお勧めします。
-
-このコマンドレットを実行する際には、あらかじめアクセス許可を割り当てる必要があります。 コマンドレットを組織内で実行するために必要になるアクセス許可とパラメーターを調べるには、「 [Find the permissions required to run any Exchange cmdlet](/powershell/exchange/find-exchange-cmdlet-permissions)」を参照してください。
-
-次の PowerShell コマンドを実行して、Outlook on the webの組み込みのレポート エクスペリエンスを無効にします。
-
-```powershell
-Set-OwaMailboxPolicy -Identity OwaMailboxPolicy-Default -ReportJunkEmailEnabled $false
-```
 
 ## <a name="use-the-report-message-feature"></a>レポート メッセージ機能を使用する
 

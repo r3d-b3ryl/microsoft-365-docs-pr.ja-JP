@@ -17,15 +17,14 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: 1/18/2022
-ms.openlocfilehash: 07388ab8f1aac89991423c07fb442017aafb73e6
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: 4e538a4e986ad0636c380ec2ba167249221ac3ec
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64705299"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602494"
 ---
 # <a name="plan-attack-surface-reduction-asr-rules-deployment"></a>攻撃面の縮小 (ASR) ルールの展開を計画する
 
@@ -44,7 +43,7 @@ ASR ルールの展開をロールアウトする部署を選択する方法は�
   - ソフトウェア
   - 共有フォルダー
   - スクリプトの使用
-  - マクロをOfficeする
+  - Office マクロ
   - ASR 規則の影響を受けるその他のエンティティ
 
 ビジネス ニーズに応じて、ソフトウェア、共有フォルダー、スクリプト、マクロなどの広範なサンプリングを取得するために、複数の部署を含めることにした場合があります。逆に、最初の ASR ルールロールアウトの範囲を 1 つの部署に制限し、ASR ルールのロールアウト プロセス全体を他の部署 (一度に 1 回) に繰り返します。
@@ -77,8 +76,8 @@ ASR ルールの状態とアクティビティの監視と伝達を担当する�
 ## <a name="ring-deployment"></a>リング展開
 
 大企業の場合は、ASR ルールを "リング" に展開することをお勧めします。 リングは、重複しないツリー リングのように外側に放射する同心円として視覚的に表されるデバイスのグループです。 最も内側のリングが正常にデプロイされたら、次のリングをテスト フェーズに移行できます。 ビジネス ユニット、ASR ルールのチャンピオン、アプリ、プロセスを徹底的に評価することは、リングを定義するために不可欠です。
-ほとんどの場合、組織は、Windows更新プログラムの段階的なロールアウト用に展開リングを設計します。 既存のリングデザインを使用して、ASR ルールを実装できます。
-参照: [Windowsのデプロイ 計画を作成する](/windows/deployment/update/create-deployment-plan)
+ほとんどの場合、組織は、Windows 更新プログラムの段階的なロールアウト用に展開リングを設計します。 既存のリングデザインを使用して、ASR ルールを実装できます。
+参照: [Windows の展開計画を作成する](/windows/deployment/update/create-deployment-plan)
 
 ## <a name="additional-topics-in-this-deployment-collection"></a>このデプロイ コレクションのその他のトピック
 

@@ -14,15 +14,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection:
-- m365solution-scenario
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: df79062d1dafcd8d82dfa4ff9b9847ff4fad1775
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2826c623437760d86aad54e4aa36900bdad68082
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476139"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603948"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -41,13 +40,13 @@ ms.locfileid: "64476139"
 > また、 [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) の Microsoft Defender デモ シナリオ Web サイトにアクセスして、他の保護機能の動作を確認することもできます。
 
 > [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
+> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>監査モードでネットワーク保護を有効にする
 
 監査モードでネットワーク保護を有効にして、ブロックされた IP アドレスとドメインを確認します。 基幹業務アプリに影響しないようにしたり、ブロックが発生する頻度を把握したりできます。
 
-1. スタート メニューに **powershell** を入力し、**Windows PowerShell** を右クリックして **[管理者として実行**] を選択します
+1. [スタート] メニューに **「powershell**」と入力し、**Windows PowerShell** 右クリックして **[管理者として実行**] を選択します
 2. 次のコマンドレットを入力します。
 
     ```PowerShell
@@ -69,7 +68,7 @@ ms.locfileid: "64476139"
 
 ## <a name="review-network-protection-events-in-windows-event-viewer"></a>Windows イベント ビューアーでネットワーク保護イベントを確認する
 
-ブロックされたアプリを確認するには、イベント ビューアーを開き、Microsoft Windows-Windows Defender/運用ログでイベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
+ブロックされたアプリを確認するには、イベント ビューアーを開き、Microsoft-Windows-Windows Defender/運用ログでイベント ID 1125 をフィルター処理します。 次の表に、すべてのネットワーク保護イベントを示します。
 
 | イベント ID | 提供/ソース | 説明 |
 |---|---|---|

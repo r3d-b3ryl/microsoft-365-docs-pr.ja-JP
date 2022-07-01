@@ -14,15 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365solution-scenario
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 6a5df2cee1230050267f926297c1b00e47fb0ec3
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 3c7c72597416bda80894f8d44fbf5dbba3d58808
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874064"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603904"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用したMicrosoft Defender for Endpointの管理
 
@@ -34,14 +33,14 @@ ms.locfileid: "65874064"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 > [!NOTE]
-> [Microsoft エンドポイント マネージャー](/mem)を使用して、デバイス (エンドポイントとも呼ばれる) に対する組織の脅威保護機能を管理することをお勧めします。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)と[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)が含まれます。 **[エンドポイント マネージャーの詳細については、こちらを参照してください](/mem/endpoint-manager-overview)**。
+> [Microsoft エンドポイント マネージャー](/mem)を使用して、デバイス (エンドポイントとも呼ばれる) に対する組織の脅威保護機能を管理することをお勧めします。 エンドポイント マネージャーには[、Microsoft Intune](/mem/intune/fundamentals/what-is-intune)と [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)が含まれます。 **[エンドポイント マネージャーの詳細については、こちらを参照してください](/mem/endpoint-manager-overview)**。
 
-Azure Active Directory Domain Services の グループ ポリシー オブジェクトを使用して、Microsoft Defender for Endpointの一部の設定を管理できます。
+Azure Active Directory Domain Servicesの グループ ポリシー オブジェクトを使用して、Microsoft Defender for Endpointの一部の設定を管理できます。
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用してMicrosoft Defender for Endpointを構成する
 
 > [!NOTE]
-> [Windows Server 2012 R2 と 2016 の新しい統合Microsoft Defender for Endpoint ソリューション](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)を使用している場合は、中央ストアで最新の ADMX ファイルを使用して、正しいMicrosoft Defender for Endpoint ポリシー オプションにアクセスしていることを確認してください。 Windows [でグループ ポリシー管理用テンプレートの中央Microsoft Storeを作成および管理し、Windows 10](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)**で使用する** 最新のファイルをダウンロードする方法を参照してください。 
+> [Windows Server 2012 R2 と 2016 の新しい統合Microsoft Defender for Endpoint ソリューション](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-functionality-in-the-modern-unified-solution-for-windows-server-2012-r2-and-2016-preview)を使用している場合は、中央ストアで最新の ADMX ファイルを使用して、正しいMicrosoft Defender for Endpoint ポリシー オプションにアクセスしていることを確認してください。 Windows で グループ ポリシー [管理用テンプレート用のセントラル ストアを作成および管理する方法](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)と、**Windows 10で使用する** 最新のファイルをダウンロードする方法を参照してください。 
 
 次の表に、グループ ポリシー オブジェクトを使用してMicrosoft Defender for Endpointを構成するために実行できるさまざまなタスクを示します。
 
@@ -53,8 +52,8 @@ Azure Active Directory Domain Services の グループ ポリシー オブジ�
 |**エクスプロイト保護の設定を管理する** <br/><br/> *エクスプロイト保護設定をカスタマイズし、構成ファイルをインポートしてから、グループ ポリシーを使用してその構成ファイルをデプロイできます。*|[エクスプロイト保護設定をカスタマイズする](/microsoft-365/security/defender-endpoint/customize-exploit-protection) <br/><br/> [エクスプロイト保護構成のインポート、エクスポート、展開](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml) <br/><br/> [グループ ポリシーを使用して構成を配布する](/microsoft-365/security/defender-endpoint/import-export-exploit-protection-emet-xml#use-group-policy-to-distribute-the-configuration)|
 |**ネットワーク保護を有効にして** 、従業員がインターネット上の悪意のあるコンテンツのアプリを使用できないようにする <br/><br/> *テスト環境でネットワーク保護に最初に [監査モード](/microsoft-365/security/defender-endpoint/evaluate-network-protection) を使用して、ロールアウトする前にブロックされるアプリを確認することをお勧めします。*|[グループ ポリシーを使用してネットワーク保護を有効にする](/microsoft-365/security/defender-endpoint/enable-network-protection#group-policy)|
 |ランサムウェアから保護するように **フォルダー アクセスの制御を構成** する <br/><br/> *[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソーイウェア保護とも呼ばれます。*|[グループ ポリシーを使用してフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
-|インターネット上の悪意のあるサイトやファイルから保護するように **Microsoft Defender SmartScreenを構成** します。|[グループ ポリシーを使用してMicrosoft Defender SmartScreen グループ ポリシーとモバイル デバイス管理 (MDM) の設定を構成する](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
-|Windowsを実行している組織のデバイスに関する情報を保護するように **暗号化と BitLocker を構成** する|[BitLocker グループ ポリシー設定](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
+|インターネット上の悪意のあるサイトやファイルから保護するように **Microsoft Defender SmartScreen を構成** します。|[グループ ポリシーを使用して Microsoft Defender SmartScreen グループ ポリシーとモバイル デバイス管理 (MDM) の設定を構成する](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
+|Windows を実行している組織のデバイスの情報を保護するように **暗号化と BitLocker を構成する**|[BitLocker グループ ポリシー設定](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
 |資格情報盗難攻撃から保護するように **Microsoft Defender Credential Guard を構成する**|[グループ ポリシーを使用してWindows Defender Credential Guardを有効にする](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを構成する
@@ -64,7 +63,7 @@ Azure Active Directory Domain Services の グループ ポリシー オブジ�
 - [Microsoft 365 Defenderの概要](/microsoft-365/security/defender-endpoint/use)
 - [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender ポータルのセキュリティ操作ダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

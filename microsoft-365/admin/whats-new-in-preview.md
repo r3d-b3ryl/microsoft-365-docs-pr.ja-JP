@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Microsoft 365 管理センター - 今月追加された機能について説明します。
-ms.openlocfilehash: 198832f09f6b219579f128b7104ecf3ae2fa3446
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: fe801e913e227239b53eb7f1166a3f802f4217ce
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679354"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602582"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -42,14 +42,14 @@ ms.locfileid: "65679354"
 
 また、他の Microsoft クラウド サービスの新機能を知りたい場合は、次のようにします。
 
-- [Azure Active Directoryの新機能](/azure/active-directory/fundamentals/whats-new)
-- [Exchange管理センターの新機能](/Exchange/whats-new)
+- [Azure Active Directory の新機能](/azure/active-directory/fundamentals/whats-new)
+- [Exchange 管理センターの新機能](/Exchange/whats-new)
 - [Microsoft Intune の新機能](/mem/intune/fundamentals/whats-new)
 - [Microsoft Purview コンプライアンス ポータルの新機能](/Office365/SecurityCompliance/whats-new)
 - [Microsoft 365 Defender の新機能](../security/mtp/whats-new.md)
 - [SharePoint 管理センターの新機能](/sharepoint/what-s-new-in-admin-center)
 - [Office 更新プログラム](/OfficeUpdates/)
-- [Windowsリリースの正常性を確認する方法](/windows/deployment/update/check-release-health)
+- [Windows リリースの正常性を確認する方法](/windows/deployment/update/check-release-health)
 
 ## <a name="may-2022"></a>2022 年 5 月
 
@@ -73,15 +73,15 @@ Microsoft 365 管理センターには、カスタム セキュリティ属性�
 
 ### <a name="quick-assist"></a>クイック アシスト
 
-アプリのパフォーマンスとセキュリティを強化するために、クイック アシストをWindows Microsoft Storeに移行しました。 Windows クイック アシスト アプリを使用すると、ユーザーとエンド ユーザーはリモート接続経由で PC サポートを受け取ったり、提供したりできます。
+アプリのパフォーマンスとセキュリティを強化するために、クイック アシストを Windows ストアに移動しました。 Windows クイック アシスト アプリを使用すると、ユーザーとエンド ユーザーはリモート接続を介して PC サポートを受け取ったり、提供したりできます。
 
-新しいクイック アシスト Microsoft Store アプリでは、パスコードの生成時間が大幅に向上し、アプリケーション エラーが減少します。
+新しい クイック アシスト ストア アプリでは、パスコードの生成時間が大幅に向上し、アプリケーション エラーが減少します。
 
 詳細については、「[リモート接続で PC の問題を解決する](https://support.microsoft.com/windows/solve-pc-problems-over-a-remote-connection-b077e31a-16f4-2529-1a47-21f6a9040bf3)」と「[クイック アシストのインストール」を](https://support.microsoft.com/windows/install-quick-assist-c17479b7-a49d-4d12-938c-dbfb97c88bca)参照してください。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
-### <a name="nps-sentiment-insights"></a>NPS センチメント インサイト
+### <a name="nps-sentiment-insights"></a>NPS Sentiment Insights
 
 NPS アンケート分析情報は、Microsoft 365 管理センターで利用できる AI 主導のダッシュボードです。
 
@@ -89,7 +89,7 @@ NPS アンケート分析情報は、Microsoft 365 管理センターで利用�
 
 この機能は、ユーザーが回答した Microsoft NPS アンケートから派生した実用的な分析情報を取得するような管理者に役立ちます。 詳細については、 [Microsoft 製品 NPS のフィードバックと組織の分析情報を参照してください](manage/manage-feedback-product-insights.md)。
 
-フィードバックに基づいて、NPS ごとの詳細なフィードバックのセンチメントを識別する新機能を導入し、ユーザーがMicrosoft 365製品に対してどのような感情を感じているかを知ることができます。 **ポジティブ**、**ネガティブ**、**その他** などのセンチメント ラベルは、NPS の逐語フィードバックに割り当てられます。
+フィードバックに基づいて、各 NPS の詳細なフィードバックのセンチメントを識別する新機能を導入し、Microsoft 365 製品に関してユーザーが感じていることを知ることができます。 **ポジティブ**、**ネガティブ**、**その他** などのセンチメント ラベルは、NPS の逐語フィードバックに割り当てられます。
 
 :::image type="content" source="../media/product-feedback-nps-verbatims.png" alt-text="スクリーンショット: [NPS surveys insights] タブの [製品フィードバック] ダッシュボード":::
 
@@ -142,7 +142,7 @@ NPS アンケート分析情報ダッシュボードを使用してエクスペ�
 
 :::image type="content" source="../media/lighthouse.png" alt-text="スクリーンショット: ダッシュボードをMicrosoft 365 Lighthouseする":::
 
-Microsoft 365 Lighthouseは IT パートナー サービスのみであり、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、Microsoft 365 Business Premiumで最大 1,000 人のライセンスユーザーを持つ顧客を管理しているパートナーが利用できます。Microsoft 365 E3、または (プレビューの) サブスクリプションをMicrosoft Defender for Businessします。 Microsoft CSP に登録されている IT パートナーの場合、Microsoft 365 Lighthouseは組織に無償で提供され、ビジネスの規模と拡大に役立つよう設計されています。 詳細については、[Microsoft 365 Lighthouseヘルプ ライブラリ](../lighthouse/m365-lighthouse-overview.md)を参照してください。
+Microsoft 365 Lighthouseは IT パートナー サービスのみであり、クラウド ソリューション プロバイダー (CSP) プログラムに登録され、Microsoft 365 Business Premium、Microsoft 365 E3、またはライセンスを持つ最大 1,000 人のライセンスユーザーを持つ顧客を管理しているパートナーが利用できます。Microsoft Defender for Business (プレビュー段階) サブスクリプション。 Microsoft CSP に登録されている IT パートナーの場合、Microsoft 365 Lighthouseは組織に無償で提供され、ビジネスの規模と拡大に役立つよう設計されています。 詳細については、[Microsoft 365 Lighthouseヘルプ ライブラリ](../lighthouse/m365-lighthouse-overview.md)を参照してください。
 
 Microsoft 365 Lighthouseの使用を開始するには、「[Microsoft 365 Lighthouseへのサインアップ](../lighthouse/m365-lighthouse-sign-up.md)」を参照してください。 Microsoft 365 Lighthouse、Defender for Business、Microsoft 365 Business Premiumの詳細については、[パートナー ウェビナー シリーズにお問い合わせください](https://aka.ms/M365MDBSeries)。
 
@@ -156,7 +156,7 @@ Microsoft 365 Lighthouseの使用を開始するには、「[Microsoft 365 Light
 
 :::image type="content" source="../media/feedback-whatsnew.png" alt-text="スクリーンショット: Microsoft 365 管理センターの [フィードバック] ページを表示する":::
 
-ユーザーからのフィードバックから共通のテーマを特定しました。 次に、機械学習モデルの手法を使用してデータ セットをトレーニングし、フィードバックを自動的に上位トピックに整理しました。
+ユーザーからのフィードバックから、共通のテーマを特定しました。 次に、機械学習モデルの手法を使用してデータ セットをトレーニングし、フィードバックを自動的に上位トピックに整理しました。
 
 利用可能なトピックは 9 つあります。 今後の更新に関するその他のトピックを確認してください。
 
@@ -181,7 +181,7 @@ NPS アンケート分析情報ダッシュボードを使用して、より優�
 
 ### <a name="microsoft-365-admin-center-video-training"></a>Microsoft 365 管理センタービデオ トレーニング
 
-Microsoft 365 管理センタービデオ トレーニングを更新しました。 [管理 トレーニング ビデオ ライブラリ](admin-video-library.yml) ページに移動して、ビジネス向けのMicrosoft 365を設定および管理する方法について説明します。
+Microsoft 365 管理センタービデオ トレーニングを更新しました。 [管理 トレーニング ビデオ ライブラリ](https://go.microsoft.com/fwlink/?linkid=2197659) ページに移動して、ビジネス向けに Microsoft 365 を設定および管理する方法について説明します。
 
 :::image type="content" source="../media/admin-library-vid-training.png" alt-text="スクリーンショット: 管理センターのビデオ トレーニング ライブラリを表示する":::
 
@@ -199,11 +199,11 @@ Microsoft 365 管理センタービデオ トレーニングを更新しまし�
 
 **[ボリュームの傾向**] タブの定期グラフでは、サポート ケースが月単位で組織の月単位で増加または減少している場合の傾向が強調表示されます。 グラフにポインターを合わせると、毎月作成されたサポート ケースの数を確認できます。
 
-:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="スクリーンショット: サポート ケースが月単位で組織で増減している場合の傾向を強調するGraph":::
+:::image type="content" source="../media/SuppInsight-voltrnd.PNG" alt-text="スクリーンショット: サポート ケースが月単位で組織で増減している場合の傾向を示すグラフ":::
 
 **製品別ボリュームの傾向** グラフには、サポート ケースが最も多い毎月の上位 3 つの製品が表示されます。 テーブルでフィルター処理が有効になっており、 **製品**、 **重大度**、 **日付** で結果をフィルター処理できるようになりました。
 
-:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="スクリーンショット: Graphは、サポート ケースが最も多い毎月の上位 3 製品を示しています":::
+:::image type="content" source="../media/SuppInsight-voltrndproduct.PNG" alt-text="スクリーンショット: グラフは、サポート ケースが最も多い毎月の上位 3 製品を示しています":::
 
 また **、チケット** に関するより多くの分析情報を提供するために、**サービス要求の表示** テーブルに重大度と **終了日** という 2 つの新しいフィールドも追加されました。
 
@@ -217,7 +217,7 @@ Microsoft 365 管理センタービデオ トレーニングを更新しまし�
 
 いくつかの新しいカテゴリが検索機能に追加されました。
 
-- グローバル検索でMicrosoft 365管理者ロールを検索し、任意のページからロールの割り当てを迅速に表示および管理できるようになりました。 たとえば、**Intune管理者を検索します**。
+- これで、グローバル検索で Microsoft 365 管理者ロールを検索し、任意のページからロールの割り当てを迅速に表示および管理できるようになりました。 たとえば、**Intune管理者を検索します**。
 
 - これで、グローバル検索を通じて簡単なセットアップ エクスペリエンスを見つけることができます。 これにより、お客様とチームが新機能の使用方法をすばやく開始できます。 たとえば、有効期限 **が切れないパスワードを検索します**。
 

@@ -1,5 +1,5 @@
 ---
-title: ビジネス向けのMicrosoft 365の脅威保護を強化する
+title: ビジネス向け Microsoft 365 の脅威保護を強化する
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -24,14 +24,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft Defender for Office 365を設定し、フィッシング、マルウェア、その他の脅威から機密データを保護します。
-ms.openlocfilehash: c291db6430f864a480c1ecf1ba22799d34e51dcc
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: fe7a70b8418ef4658b173611b0c940a0932736d9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469649"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603337"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365の脅威保護を強化する
+# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 の脅威保護を強化する
+
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 この記事は、フィッシング、マルウェア、その他の脅威から保護するために、Microsoft 365 サブスクリプションの保護を強化するのに役立ちます。 これらの推奨事項は、法律事務所や医療診療所など、セキュリティの必要性が高まる組織に適しています。
 
@@ -39,13 +41,13 @@ ms.locfileid: "65469649"
 
 詳細については、 [Microsoft セキュリティ スコア](../../security/defender/microsoft-secure-score.md)に関するページを参照してください。
 
-## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>メール内のマルウェアに対する保護のレベルを上げる
+## <a name="watch-raise-the-level-of-protection-against-malware-in-mail"></a>ウォッチ: メール内のマルウェアに対する保護のレベルを上げる
 
-Office 365またはMicrosoft 365環境には、マルウェアに対する保護が含まれています。 マルウェアでよく使用されるファイルの種類で添付ファイルをブロックすることで、この保護を強化できます。 
+Office 365または Microsoft 365 環境には、マルウェアに対する保護が含まれています。 マルウェアでよく使用されるファイルの種類で添付ファイルをブロックすることで、この保護を強化できます。 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4OA7Z?autoplay=false]
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>から[**表示**]、[**管理センター]**、[**セキュリティ**] の順に選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>から[**詳細を表示]**、[**管理 センター**]、[**セキュリティ**] の順に選択します。
 
 1. **電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシーに移動します**。
 
@@ -55,31 +57,33 @@ Office 365またはMicrosoft 365環境には、マルウェアに対する保護
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、[**ポリシー**] セクションの [**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**マルウェア対策**] に移動します。
 
-2. [ **マルウェア対策** ] ページで、[ **既定] (既定)** をダブルクリックします。 ポップアップが表示されます。 
+1. [ **マルウェア対策** ] ページで、[ **既定] (既定)** をダブルクリックします。 ポップアップが表示されます。 
 
-3. ポップアップの下部にある [ **保護設定の編集]** を選択します。 
+1. ポップアップの下部にある [ **保護設定の編集]** を選択します。 
 
-4. [ **保護の設定]** で、[ **一般的な添付ファイル フィルターを有効にする]** の横にあるチェック ボックスをオンにします。 ブロックされているファイルの種類は、このコントロールのすぐ下に一覧表示されます。 次のファイルの種類を追加してください。
+1. [ **保護の設定]** で、[ **一般的な添付ファイル フィルターを有効にする]** の横にあるチェック ボックスをオンにします。 ブロックされているファイルの種類は、このコントロールのすぐ下に一覧表示されます。 次のファイルの種類を追加してください。
 
    `ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mdz, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif`
 
    ファイルの種類を追加または削除するには、リストの末尾にある **[ファイルの種類のカスタマイズ** ] を選択します。
 
-6. **[保存] を選択します。**
+1. **[保存] を選択します。**
 
 詳細については、「 [EOP でのマルウェア対策の保護](../../security/office-365-security/anti-malware-protection.md)」を参照してください。
 
-## <a name="protect-against-ransomware"></a>ランサムウェアから保護する
+## <a name="watch-protect-against-ransomware"></a>ウォッチ: ランサムウェアから保護する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198018)で、このビデオや他の動画を確認してください。
 
 ランサムウェアは、ファイルを暗号化したり、コンピューター画面をロックしたりすることで、データへのアクセスを制限します。 その後、データへのアクセスと引き換えに、通常はビットコインなどの仮想通貨の形式で"身代金" を要求することで、被害者から金銭を強要しようとします。
 
-ランサムウェアから保護するには、ランサムウェアに一般的に使用されるファイル拡張子をブロックする 1 つ以上のメール フロー ルールを作成します。 (これらのルールは、メール ステップで [マルウェアに対する保護レベルを上げる手順で](#raise-the-level-of-protection-against-malware-in-mail) 追加しました。これらの添付ファイルを電子メールで受信したユーザーに警告することもできます。
+ランサムウェアから保護するには、ランサムウェアに一般的に使用されるファイル拡張子をブロックする 1 つ以上のメール フロー ルールを作成します。 (これらのルールは [、「ウォッチ: メール のマルウェアに対する保護レベルを上げる](#watch-raise-the-level-of-protection-against-malware-in-mail) 」の手順で追加しました)。これらの添付ファイルを電子メールで受信したユーザーに警告することもできます。
 
-前の手順でブロックしたファイルに加えて、マクロを含む添付ファイルを開く前にユーザーに警告するルールOffice作成することをお勧めします。 ランサムウェアはマクロ内に隠すことができるので、知らないユーザーからこれらのファイルを開かないようにユーザーに警告します。
+前の手順でブロックしたファイルに加えて、マクロを含む Office ファイル添付ファイルを開く前にユーザーに警告するルールを作成することをお勧めします。 ランサムウェアはマクロ内に隠すことができるので、知らないユーザーからこれらのファイルを開かないようにユーザーに警告します。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWrWGt?autoplay=false]
 
-1. 管理センターの [管理センター] の **下にある** [https://admin.microsoft.com](https://admin.microsoft.com)[Exchange] を選択 **します**。
+1. 管理センターの [https://admin.microsoft.com](https://admin.microsoft.com)[**管理 センター**] で **[Exchange**] を選択します。
 
 1. 左側のメニューから、[ **メール フロー**] を選択します。
  
@@ -89,7 +93,7 @@ Office 365またはMicrosoft 365環境には、マルウェアに対する保護
 
 メール トランスポート ルールを作成するには:
 
-1. 管理センターに移動し、[**管理センター** \> <https://admin.microsoft.com>] **Exchange** を選択します。
+1. 管理センター<https://admin.microsoft.com>に移動し、**exchange** **管理センター** を選択します\>。
 
 2. **メール フロー** カテゴリで、**ルール** を選択します。
 
@@ -121,7 +125,7 @@ Office 365またはMicrosoft 365環境には、マルウェアに対する保護
 
 メール トランスポート ルールを作成するには、次の手順に従います。
 
-1. Microsoft 365 管理センターで、[**管理センター**\>] **Exchange** を選択します。
+1. Microsoft 365 管理センターで、**exchange 管理センター**\>を選択します。
 
 2. **メール フロー** カテゴリで、**ルール** を選択します。
 
@@ -141,9 +145,11 @@ Office 365またはMicrosoft 365環境には、マルウェアに対する保護
 |次の操作を行います。..|メッセージをブロックします。 . . メッセージを拒否し、説明を含めます。|
 |メッセージ テキストを指定する|セキュリティ上の理由から、この組織外の電子メールの自動転送は防止されます。|
 
-## <a name="protect-your-email-from-phishing-attacks"></a>フィッシング攻撃からメールを保護する
+## <a name="watch-protect-your-email-from-phishing-attacks"></a>ウォッチ: フィッシング攻撃からメールを保護する
 
-Office 365環境またはMicrosoft 365環境に対して 1 つ以上のカスタム ドメインを構成した場合は、対象となるフィッシング対策保護を構成できます。 Microsoft Defender for Office 365の一部であるフィッシング対策保護は、悪意のある偽装ベースのフィッシング攻撃やその他のフィッシング攻撃から組織を保護するのに役立ちます。 カスタム ドメインを構成していない場合は、これを行う必要はありません。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198014)で、このビデオや他の動画を確認してください。
+
+Office 365または Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成している場合は、対象となるフィッシング対策保護を構成できます。 Microsoft Defender for Office 365の一部であるフィッシング対策保護は、悪意のある偽装ベースのフィッシング攻撃やその他のフィッシング攻撃から組織を保護するのに役立ちます。 カスタム ドメインを構成していない場合は、これを行う必要はありません。
 
 最も重要なユーザーとカスタム ドメインを保護するポリシーを作成して、この保護を開始することをお勧めします。
 
@@ -164,15 +170,17 @@ Office 365環境またはMicrosoft 365環境に対して 1 つ以上のカスタ
 |名前|ドメインと最も価値のあるキャンペーン スタッフ|
 |説明|最も重要なスタッフとドメインが偽装されていないことを確認します。|
 |保護対象のユーザーの追加|[ **+ 条件の追加]、[受信者] の順に選択します**。 ユーザー名を入力するか、候補者、キャンペーン マネージャー、その他の重要なスタッフ メンバーのメール アドレスを入力します。 偽装から保護する最大 20 個の内部アドレスと外部アドレスを追加できます。|
-|保護対象のドメインの追加|[ **+ 条件の追加] を選択します。受信者ドメインは次です**。 Microsoft 365 サブスクリプションに関連付けられているカスタム ドメインを定義している場合は、そのドメインを入力します。 複数のドメインを入力できます。|
+|保護対象のドメインの追加|[ **+ 条件の追加] を選択します。受信者ドメインは次です**。 定義した場合は、Microsoft 365 サブスクリプションに関連付けられているカスタム ドメインを入力します。 複数のドメインを入力できます。|
 |処理の選択|偽装されたユーザーから電子メールが送信された場合: [ **別のメール アドレスにメッセージをリダイレクト** する] を選択し、セキュリティ管理者の電子メール アドレスを入力します。たとえば、 *Alice<span><span>@contoso.com*。 メールが偽装ドメインによって送信されている場合: **[メッセージを検疫]** を選択します。|
 |メールボックス インテリジェンス|既定では、新しいフィッシング対策ポリシーの作成時にはメールボックス インテリジェンスが選択されています。 最適な結果が得られるように、この設定は **[オン]** のままにしておいてください。|
 |信頼できる送信者とドメインの追加|ここでは、独自のドメイン、またはその他の信頼できるドメインを追加できます。|
 |適用先|**[受信者のドメインが次の場合]** を選択します。 **[これらのいずれか]** では、**[選択]** を選択します。 **[+ 追加]** を選択します。 ドメインの名前の横にあるチェック ボックス (contoso など) を選択 *します。<span><span>com* を選択し、一覧から [ **追加**] を選択します。 **[完了]** を選択します。|
 
-## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>ウォッチ: セーフ添付ファイルを使用して悪意のある添付ファイルやファイルから保護する
+## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>ウォッチ: 安全な添付ファイルを使用して悪意のある添付ファイルやファイルから保護する
 
-ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを定期的に送信、受信、共有します。 電子メール メッセージを見るだけで、添付ファイルが安全か悪意があるかを常に簡単に判断できるわけではありません。 Microsoft Defender for Office 365 (以前は ATP または Advanced Threat Protection と呼ばMicrosoft 365) には、セーフ添付ファイル保護が含まれていますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、およびMicrosoft Teams内のファイルに拡張されます。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198019)で、このビデオや他の動画を確認してください。
+
+ユーザーは日常的に、文書、プレゼンテーション、スプレッドシートなどを、添付ファイルとして送受信および共有します。 メール メッセージを参照しただけでは、添付ファイルが安全か悪意があるか判断するのは難しい場合があります。 以前は Microsoft 365 ATP または Advanced Threat Protection と呼ばMicrosoft Defender for Office 365には安全な添付ファイル保護が含まれていますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、および Microsoft Teams のファイルにまで及びます。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
@@ -185,7 +193,7 @@ Office 365環境またはMicrosoft 365環境に対して 1 つ以上のカスタ
 1. ルールを適用する追加のドメイン (onmicrosoft.com ドメインなど) を選択します。 [ **追加**] を選択し、[ **OK] を選択します**。
 1. **[保存]** を選択します。
 
-ATP の安全な添付ファイルルールが更新されました。 これで保護が整ったので、Outlook、OneDrive、SharePoint、またはTeamsから悪意のあるファイルを開くことはできません。 影響を受けるファイルの横に赤いシールドが表示されます。 ブロックされたファイルを開こうとすると、警告メッセージが表示されます。
+ATP の安全な添付ファイルルールが更新されました。 これで保護が整ったので、Outlook、OneDrive、SharePoint、または Teams から悪意のあるファイルを開くことはできません。 影響を受けるファイルの横に赤いシールドが表示されます。 ブロックされたファイルを開こうとすると、警告メッセージが表示されます。
 
 ポリシーがしばらく実行されたら、[レポート] ページにアクセスして、スキャンされた内容を確認します。
 
@@ -209,19 +217,21 @@ ATP の安全な添付ファイルルールが更新されました。 これで
 
 詳細については、「[Microsoft Defender for Office 365でのフィッシング対策ポリシーの設定](../../security/office-365-security/set-up-anti-phishing-policies.md)」を参照してください。
 
-## <a name="protect-against-phishing-attacks-with-safe-links"></a>セーフ リンクを使用してフィッシング攻撃から保護する
+## <a name="watch-protect-against-phishing-attacks-with-safe-links"></a>ウォッチ: セーフ リンクを使用してフィッシング攻撃から保護する
 
-ハッカーは、電子メールや他のファイル内のリンクに悪意のある Web サイトを非表示にすることがあります。 Microsoft Defender for Office 365の一部である セーフ リンクは、電子メール メッセージとOfficeドキュメントで Web アドレス (URL) をクリックで確認する時間を提供することで、組織を保護するのに役立ちます。 保護は、セーフ リンク ポリシーを使用して定義されます。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198201)で、このビデオや他の動画を確認してください。
+
+ハッカーは、電子メールや他のファイル内のリンクに悪意のある Web サイトを非表示にすることがあります。 Microsoft Defender for Office 365の一部であるセーフ リンクは、電子メール メッセージと Office ドキュメントで Web アドレス (URL) をクリックで確認する時間を提供することで、組織を保護するのに役立ちます。 保護は、セーフ リンク ポリシーを使用して定義されます。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Microsoft Defender for Office 365(以前は ATP Microsoft 365呼ばれ、Advanced Threat Protection) は、ユーザーがOffice アプリでリンクをクリックしたときに、悪意のあるサイトからビジネスを保護するのに役立ちます。
+以前は Microsoft 365 ATP または Advanced Threat Protection と呼ばMicrosoft Defender for Office 365、ユーザーが Office アプリのリンクをクリックしたときに、悪意のあるサイトからビジネスを保護するのに役立ちます。
 
 1. [管理センター](https://admin.microsoft.com)に移動し、[セットアップ] を選択 **します**。
 
-1. 下にスクロールして **、高度な脅威からの保護を強化します**。 [**管理**] を選択し、**リンクをセーフ** します。
+1. 下にスクロールして **、高度な脅威からの保護を強化します**。 [ **管理**]、[ **安全なリンク**] の順に選択します。
 
-1. [**グローバル 設定**] を選択し、[**次の URL をブロック** する] に、ブロックする URL を入力します。
+1. [ **グローバル設定] を** 選択し、[ **ブロックする URL] に** ブロックする URL を入力します。
 
 次の操作を行うことをお勧めします。
 
@@ -229,7 +239,7 @@ Microsoft Defender for Office 365(以前は ATP Microsoft 365呼ばれ、Advance
 
 - ドメイン内のすべての受信者を対象とする新しいポリシーを追加します。
 
-セーフ リンクを設定するには、次の手順を実行します。
+安全なリンクを設定するには、次の手順を実行します。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、管理者アカウントでサインインします。
 
@@ -247,19 +257,19 @@ Microsoft Defender for Office 365(以前は ATP Microsoft 365呼ばれ、Advance
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|ドメイン内のすべての受信者に対するリンク ポリシーをセーフする|
+|名前|ドメイン内のすべての受信者に対する安全なリンク ポリシー|
 |メッセージ内の悪意のある可能性のある不明な URL のアクションを選択する|[オン] を選択すると、 **ユーザーがリンクをクリックしたときに、URL が書き換えられ、既知の悪意のあるリンクの一覧に対してチェックされます**。|
-|セーフ添付ファイルを使用してダウンロード可能なコンテンツをスキャンする|このボックスを選択します。|
+|安全な添付ファイルを使用して、ダウンロード可能なコンテンツをスキャンする|このボックスを選択します。|
 |適用先|受信者ドメインは . . . ドメインを選択します。|
 
-詳細については、「[セーフ リンク](../../security/office-365-security/safe-links.md)」を参照してください。
+詳細については、「 [安全なリンク](../../security/office-365-security/safe-links.md)」を参照してください。
 
 ## <a name="go-to-intune-admin-center"></a>Intune管理センターに移動する
 
-1. [Azure portal](https://portal.azure.com/)にサインインします。
+1. [Azure portal](https://portal.azure.com/) にサインインします。
 
 2. **[すべてのサービス**] を選択し、**検索ボックス** に *「Intune*」と入力します。
 
 3. 結果が表示されたら、**Microsoft Intune** の横にある開始を選択して、後で見つけやすくします。
 
-管理センターに加えて、Intuneを使用して組織のデバイスを登録および管理できます。 詳細については、[Windows デバイスの登録方法別の機能と、Intune](/intune/enrollment/enrollment-method-capab)[によって管理されるデバイスの登録オプションに関する説明](/intune/enrollment-options)を参照してください。
+管理センターに加えて、Intuneを使用して組織のデバイスを登録および管理できます。 詳細については、「[Windows デバイスの登録方法による機能](/intune/enrollment/enrollment-method-capab)」と、[Intuneによって管理されるデバイスの登録オプションに関する説明](/intune/enrollment-options)を参照してください。

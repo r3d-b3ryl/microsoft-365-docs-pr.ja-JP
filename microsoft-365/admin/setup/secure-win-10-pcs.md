@@ -25,14 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを設定した後、Windows 10 PC をセキュリティで保護する方法について説明します。
-ms.openlocfilehash: 872fce9124f6a27dd884ed9d740baa9d195d8f95
-ms.sourcegitcommit: 612ce4d15d8a2fdbf7795393b50af477d81b6139
+ms.openlocfilehash: a1a7743605992899ed2cfcbb0089e971716d5a13
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65663450"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602394"
 ---
 # <a name="secure-windows-10-computers"></a>Windows 10 コンピューターをセキュリティで保護する
+
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 この記事は Microsoft 365 Business Premium に適用されます。
 
@@ -40,17 +42,19 @@ Microsoft 365 Business Premium[を設定](/microsoft-365/business-premium/m365bp
 
 ## <a name="watch-secure-your-windows-10-pcs"></a>ウォッチ: Windows 10 PC をセキュリティで保護する
 
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198200)で、このビデオや他の動画を確認してください。
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4kcAF?autoplay=false]
 
 Microsoft 365 Business でデバイス保護を設定したら、次の手順に従ってWindows 10 コンピューターを保護します。
 
 1. Microsoft 365 管理センターで、<a href="https://go.microsoft.com/fwlink/p/?linkid=2171997" target="_blank">**[セットアップ]**</a> を選択します。
 
-2. [**Windows コンピューターをセキュリティで保護** する] で 、[表示] を選択 **します**。
+2. [  **セキュリティで保護された Windows コンピューター** ] で、[表示] を選択  **します**。
 
-3. 概要を選択 **します**。
+3. [  **作業の開始**] を選択します。
 
-4. **[Whoポリシーを適用する必要がありますか?**] で、選択内容を組織内のすべてのユーザーに適用するか、特定のセキュリティ グループに適用するかを選択します。
+4. [ **ポリシーを適用するユーザー] で**、選択内容を組織内のすべてのユーザーに適用するか、特定のセキュリティ グループに適用するかを選択します。
 
 5. [  **変更の保存] を選択します**。
 
@@ -62,9 +66,9 @@ Microsoft 365 Business でデバイス保護を設定したら、次の手順に
 
 3. [**Windows 10 コンピューターのセキュリティ** 保護] ページで、すべての情報を読み取って、オンにすること、およびユーザーがどのような影響を与えているかを理解します。
 
-    ページの上部にある **[概要**] を選択します。
+    ページの上部にある [ **作業の開始**] を選択します。
 
-4. [**Windows 10 コンピューターのセキュリティ** 保護] ウィンドウで、有効にするオプションを選択します。 設定の詳細については、「[セキュリティで保護されたWindowsデバイス](../../business-premium/m365bp-secure-windows-devices.md) (記事)」を参照してください。 
+4. [**Windows 10 コンピューターのセキュリティ** 保護] ウィンドウで、有効にするオプションを選択します。 設定の詳細については、「 [セキュリティで保護された Windows デバイス](../../business-premium/m365bp-secure-windows-devices.md) (記事)」を参照してください。 
     
     ほとんどの組織では、ここでのオプションは適切なレベルのセキュリティを提供しますが、組織のセキュリティ ニーズが複雑な場合は、事前に定義されたセキュリティ ベースラインを使用して、Windows 10 デバイスをセキュリティで保護することもできます。 詳細については、「[Windows 10 デバイスのセキュリティ ベースライン](/mem/intune/protect/security-baselines)」を参照してください。   
 

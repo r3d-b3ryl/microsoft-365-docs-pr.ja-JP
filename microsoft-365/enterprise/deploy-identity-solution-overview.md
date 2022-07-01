@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365用の ID インフラストラクチャをデプロイする
+title: Microsoft 365 の ID インフラストラクチャをデプロイする
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -14,27 +14,26 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 - m365solution-m365-identity
-- m365solution-scenario
 - m365solution-overview
 ms.custom:
 - intro-overview
-description: Microsoft 365用の ID インフラストラクチャをデプロイします。
-ms.openlocfilehash: 6128daa59bfece9403953e041f258d87ef6a7413
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 の ID インフラストラクチャをデプロイします。
+ms.openlocfilehash: 9f0956b0c131fb4cf90ce462fcfca0b9e124578e
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092957"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603684"
 ---
-# <a name="deploy-your-identity-infrastructure-for-microsoft-365"></a>Microsoft 365用の ID インフラストラクチャをデプロイする
+# <a name="deploy-your-identity-infrastructure-for-microsoft-365"></a>Microsoft 365 の ID インフラストラクチャをデプロイする
 
-エンタープライズ向けのMicrosoft 365では、十分に計画され実行された ID インフラストラクチャにより、生産性ワークロードとそのデータへのアクセスを認証されたユーザーとデバイスのみに制限するなど、セキュリティの強化が実現します。 ID のセキュリティは、オンプレミスとクラウドの両方でリソースにアクセスしようとするすべての試行が認証され、承認される、ゼロ トラストデプロイの重要な要素です。
+Microsoft 365 for Enterprise では、十分に計画され実行された ID インフラストラクチャにより、生産性ワークロードへのアクセスとそのデータを認証されたユーザーとデバイスのみに制限するなど、セキュリティの強化に道が開けます。 ID のセキュリティは、オンプレミスとクラウドの両方でリソースにアクセスしようとするすべての試行が認証され、承認される、ゼロ トラストデプロイの重要な要素です。
 
-エンタープライズ向けの各Microsoft 365の ID 機能、Azure Active Directory (Azure AD)、オンプレミスおよびクラウドベースのコンポーネントの役割、および最も一般的な認証構成については、[Identity Infrastructure ポスター](../downloads/m365e-identity-infra.pdf)を参照してください。
+エンタープライズ向け各 Microsoft 365 の ID 機能、Azure Active Directory (Azure AD)、オンプレミスおよびクラウドベースのコンポーネントの役割、および最も一般的な認証構成については、 [Identity Infrastructure のポスター](../downloads/m365e-identity-infra.pdf)を参照してください。
 
 [![ID インフラストラクチャのポスター。](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-この 2 ページのポスターを確認して、企業向けのMicrosoft 365の ID の概念と構成をすぐに確認してください。
+この 2 ページのポスターを確認して、エンタープライズ向け Microsoft 365 の ID の概念と構成をすぐに確認してください。
 
 [このポスターはダウンロード](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf)でき、レター形式、法的形式、または Tabloid 形式 (11 x 17) 形式で印刷できます。
 
@@ -42,19 +41,19 @@ ms.locfileid: "65092957"
 
 ![Microsoft 365 ゼロ トラストデプロイ スタック](../media/deploy-identity-solution-overview/zero-trust-deployment-stack.png)
 
-詳細については、[Microsoft 365 ゼロ トラストデプロイ 計画](/microsoft-365/security/microsoft-365-zero-trust)を参照してください。
+詳細については、[Microsoft 365 ゼロ トラスト展開計画](/microsoft-365/security/microsoft-365-zero-trust)を参照してください。
 
 ## <a name="whats-in-this-solution"></a>このソリューションの機能
 
-このソリューションでは、Microsoft 365 テナント用の ID インフラストラクチャをデプロイして、従業員にアクセスし、ID ベースの攻撃から保護する手順を説明します。
+このソリューションでは、Microsoft 365 テナントの ID インフラストラクチャをデプロイして、従業員にアクセスし、ID ベースの攻撃から保護する手順を説明します。
 
-![Microsoft 365用の ID インフラストラクチャをデプロイする](../media/deploy-identity-solution-overview/deploy-identity-solution-overview.png)
+![Microsoft 365 の ID インフラストラクチャをデプロイする](../media/deploy-identity-solution-overview/deploy-identity-solution-overview.png)
 
 このソリューションの手順は次のとおりです。
 
 1. [ID モデルを決定します。](deploy-identity-solution-identity-model.md)
-2. [Microsoft 365特権アカウントを保護します。](protect-your-global-administrator-accounts.md)
-3. [Microsoft 365ユーザー アカウントを保護します。](microsoft-365-secure-sign-in.md)
+2. [Microsoft 365 特権アカウントを保護します。](protect-your-global-administrator-accounts.md)
+3. [Microsoft 365 ユーザー アカウントを保護します。](microsoft-365-secure-sign-in.md)
 4. [ID モデルをデプロイします。](cloud-only-identities.md)
 
 このソリューションは、[ゼロ トラスト](https://www.microsoft.com/security/business/zero-trust/)の主な原則をサポートしています。
@@ -67,25 +66,25 @@ ms.locfileid: "65092957"
 
 ## <a name="microsoft-365-capabilities-and-features"></a>Microsoft 365 の機能と機能
 
-Azure ADは、Microsoft 365 テナントの ID 管理機能とセキュリティ機能の完全なスイートを提供します。
+Azure AD には、Microsoft 365 テナント用の ID 管理機能とセキュリティ機能の完全なスイートが用意されています。
 
 |機能|説明|ライセンス|
 |---|---|---|
-|[多要素認証 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA では、ユーザーが 2 つの形式の検証 (ユーザー パスワードと、Microsoft Authenticator アプリからの通知や電話など) を提供する必要があります。 MFA を使用すると、盗難された資格情報を使用して環境にアクセスできるリスクが大幅に軽減されます。 Microsoft 365は、MFA ベースのサインインにAzure AD多要素認証サービスを使用します。|Microsoft 365 E3 または E5|
-|[条件付きアクセス](/azure/active-directory/conditional-access/overview)|Azure ADユーザー サインインの条件を評価し、条件付きアクセス ポリシーを使用して許可されたアクセスを決定します。 たとえば、このガイダンスでは、機密データへのアクセスにデバイスコンプライアンスを要求する条件付きアクセス ポリシーを作成する方法について説明します。 これにより、自分のデバイスと盗難された資格情報を持つハッカーが機密データにアクセスできるリスクが大幅に軽減されます。 また、デバイスは正常性とセキュリティに関する特定の要件を満たす必要があるため、デバイス上の機密データも保護します。|Microsoft 365 E3 または E5|
-|[Azure AD グループ](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件付きアクセス ポリシー、Intuneを使用したデバイス管理、さらには組織内のファイルやサイトへのアクセス許可は、ユーザー アカウントまたはAzure AD グループへの割り当てに依存します。 実装している保護レベルに対応するAzure AD グループを作成することをお勧めします。 たとえば、エグゼクティブ スタッフはハッカーの価値ターゲットが高い可能性があります。 したがって、これらの従業員のユーザー アカウントをAzure AD グループに追加し、このグループを条件付きアクセス ポリシーやその他のポリシーに割り当てて、より高いレベルのアクセス保護を適用すると便利です。|Microsoft 365 E3 または E5|
+|[多要素認証 (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|MFA では、ユーザーが 2 つの形式の検証 (ユーザー パスワードと Microsoft Authenticator アプリからの通知や電話など) を提供する必要があります。 MFA を使用すると、盗難された資格情報を使用して環境にアクセスできるリスクが大幅に軽減されます。 Microsoft 365 では、MFA ベースのサインインに Azure AD Multi-Factor Authentication サービスを使用します。|Microsoft 365 E3 または E5|
+|[条件付きアクセス](/azure/active-directory/conditional-access/overview)|Azure AD は、ユーザー サインインの条件を評価し、条件付きアクセス ポリシーを使用して許可されるアクセスを決定します。 たとえば、このガイダンスでは、機密データへのアクセスにデバイスコンプライアンスを要求する条件付きアクセス ポリシーを作成する方法について説明します。 これにより、自分のデバイスと盗難された資格情報を持つハッカーが機密データにアクセスできるリスクが大幅に軽減されます。 また、デバイスは正常性とセキュリティに関する特定の要件を満たす必要があるため、デバイス上の機密データも保護します。|Microsoft 365 E3 または E5|
+|[Azure AD グループ](/azure/active-directory/fundamentals/active-directory-manage-groups)|条件付きアクセス ポリシー、Intuneを使用したデバイス管理、さらには組織内のファイルやサイトへのアクセス許可は、ユーザー アカウントまたは Azure AD グループへの割り当てに依存します。 実装している保護レベルに対応する Azure AD グループを作成することをお勧めします。 たとえば、エグゼクティブ スタッフはハッカーの価値ターゲットが高い可能性があります。 そのため、これらの従業員のユーザー アカウントを Azure AD グループに追加し、このグループを条件付きアクセス ポリシーや、アクセスに対してより高いレベルの保護を適用するその他のポリシーに割り当てることは理にかなっています。|Microsoft 365 E3 または E5|
 |[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|組織の ID に影響を与える潜在的な脆弱性を検出し、自動修復ポリシーを低、中、高のサインイン リスクとユーザー リスクに構成できるようにします。 このガイダンスでは、このリスク評価に基づいて、多要素認証に条件付きアクセス ポリシーを適用します。 このガイダンスには、リスクの高いアクティビティがアカウントで検出された場合にユーザーがパスワードを変更する必要がある条件付きアクセス ポリシーも含まれています。|MICROSOFT 365 E5、E5 セキュリティ アドオン、EMS E5、またはAzure AD Premium P2 ライセンスを使用したMicrosoft 365 E3|
 |[セルフサービス パスワード リセット (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|管理者が制御できる複数の認証方法の検証を提供することで、ユーザーがヘルプ デスクの介入なしで安全にパスワードをリセットできるようにします。|Microsoft 365 E3 または E5|
-|[Azure ADパスワード保護](/azure/active-directory/authentication/concept-password-ban-bad)|既知の脆弱なパスワードとそのバリアント、および組織に固有の追加の脆弱な用語を検出してブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。|Microsoft 365 E3 または E5|
+|[Azure AD パスワード保護](/azure/active-directory/authentication/concept-password-ban-bad)|既知の脆弱なパスワードとそのバリアント、および組織に固有の追加の脆弱な用語を検出してブロックします。 既定のグローバル禁止パスワード リストは、Azure AD テナントのすべてのユーザーに自動的に適用されます。 カスタムの禁止パスワード リストに追加のエントリを定義できます。 ユーザーがパスワードを変更またはリセットすると、これらの禁止パスワード リストがチェックされ、強力なパスワードの使用が強制されます。|Microsoft 365 E3 または E5|
 |
 
 ## <a name="next-steps"></a>次の手順
 
-Microsoft 365 テナントの ID モデルと認証インフラストラクチャをデプロイするには、次の手順に従います。
+次の手順を使用して、Microsoft 365 テナントの ID モデルと認証インフラストラクチャをデプロイします。
 
 1. [クラウド ID モデルを決定します。](deploy-identity-solution-identity-model.md)
-2. [Microsoft 365特権アカウントを保護します。](protect-your-global-administrator-accounts.md)
-3. [Microsoft 365ユーザー アカウントを保護します。](microsoft-365-secure-sign-in.md)
+2. [Microsoft 365 特権アカウントを保護します。](protect-your-global-administrator-accounts.md)
+3. [Microsoft 365 ユーザー アカウントを保護します。](microsoft-365-secure-sign-in.md)
 4. クラウド ID モデル ( [クラウド専用](cloud-only-identities.md) または [ハイブリッド](prepare-for-directory-synchronization.md)) をデプロイします。
 
 [![Microsoft 365 テナントに使用する ID モデルを決定する](../media/deploy-identity-solution-overview/identity-solution-identity-model.png)](deploy-identity-solution-identity-model.md)
@@ -103,7 +102,7 @@ Microsoft クラウド ID のデプロイを管理するには、次を参照し
 - [ガバナンス](manage-microsoft-365-identity-governance.md)
 - [ディレクトリ同期](view-directory-synchronization-status.md)
 
-### <a name="how-microsoft-does-identity-for-microsoft-365"></a>Microsoft がMicrosoft 365の ID を行う方法
+### <a name="how-microsoft-does-identity-for-microsoft-365"></a>Microsoft が Microsoft 365 の ID を行う方法
 
 Microsoft の IT エキスパートが [ID を管理し、アクセスをセキュリティで保護](https://www.microsoft.com/en-us/itshowcase/managing-user-identities-and-secure-access-at-microsoft)する方法について説明します。
 
@@ -111,9 +110,9 @@ Microsoft の IT エキスパートが [ID を管理し、アクセスをセキ�
 >この IT ショーケース リソースは英語でのみ使用できます。
 >
 
-### <a name="how-contoso-did-identity-for-microsoft-365"></a>Contoso がMicrosoft 365の ID を行った方法
+### <a name="how-contoso-did-identity-for-microsoft-365"></a>Contoso が Microsoft 365 の ID を行った方法
 
-架空の代表的な多国籍組織が、Microsoft 365 クラウド サービス用のハイブリッド ID インフラストラクチャをデプロイした方法の例については、「[Contoso Corporation の ID」を](contoso-identity.md)参照してください。
+架空の代表的な多国籍組織が Microsoft 365 クラウド サービス用のハイブリッド ID インフラストラクチャをデプロイした例については、「 [Contoso Corporation の ID」を](contoso-identity.md)参照してください。
 
 <!--
 

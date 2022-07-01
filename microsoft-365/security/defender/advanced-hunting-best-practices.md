@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 505308bec005811e174b90cde9e872532ccacdfe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: c4236edcb2b5ec15b7c66be8f4b74ad0a2bc44c7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739485"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603475"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -44,6 +44,8 @@ ms.locfileid: "65739485"
 
 複数のクエリを定期的に実行しているお客様は、使用量を追跡し、この記事の最適化ガイダンスを適用して、クォータや使用状況パラメーターを超えることによる中断を最小限に抑える必要があります。
 
+[KQL クエリの最適化を見て、クエリ](https://www.youtube.com/watch?v=ceYvRuPp5D8)を改善する最も一般的な方法の一部を確認します。  
+
 ## <a name="general-optimization-tips"></a>一般的な最適化のヒント
 
 - **新しいクエリのサイズ** を設定する - クエリが大きな結果セットを返すと思われる場合は、最初に [count 演算子](/azure/data-explorer/kusto/query/countoperator)を使用して評価します。 大きな結果セットを回避するには、 [制限](/azure/data-explorer/kusto/query/limitoperator) またはそのシノニム `take` を使用します。
@@ -63,7 +65,9 @@ ms.locfileid: "65739485"
 - **解析、抽出しない** - 可能な限り、 [解析演算子](/azure/data-explorer/kusto/query/parseoperator) または解析関数 ( [parse_json())](/azure/data-explorer/kusto/query/parsejsonfunction) を使用します。 `matches regex`文字列演算子または [extract() 関数は](/azure/data-explorer/kusto/query/extractfunction)避けます。どちらも正規表現を使用します。 より複雑なシナリオでは、正規表現の使用を予約します。 [関数の解析の詳細](#parse-strings)
 - **式ではなくテーブルをフィルター** 処理する - テーブル列でフィルター処理できる場合は、計算列でフィルターを適用しないでください。
 - **3 文字の用語はありません。3 文字** 以下の用語を使用した比較やフィルター処理は避けてください。 これらの用語にはインデックスが作成されず、一致する場合は、さらに多くのリソースが必要になります。
-- **選択的にProject** - 必要な列のみを投影することで、結果をわかりやすくします。 [結合](/azure/data-explorer/kusto/query/joinoperator)または同様の操作を実行する前に特定の列を射影すると、パフォーマンスが向上します。
+- **プロジェクトを選択的に** - 必要な列のみを投影することで、結果をわかりやすくします。 [結合](/azure/data-explorer/kusto/query/joinoperator)または同様の操作を実行する前に特定の列を射影すると、パフォーマンスが向上します。
+
+
 
 ## <a name="optimize-the-join-operator"></a>演算子を最適化する`join`
 [結合演算子](/azure/data-explorer/kusto/query/joinoperator)は、指定した列の値を一致させることで、2 つのテーブルの行をマージします。 この演算子を使用するクエリを最適化するには、次のヒントを適用します。
@@ -186,7 +190,7 @@ ms.locfileid: "65739485"
     | summarize hint.shufflekey = RecipientEmailAddress count() by Subject, RecipientEmailAddress
     ```
 
-Kusto 照会言語を最適化する方法については、この[短いビデオ](https://www.youtube.com/watch?v=ceYvRuPp5D8)をご覧ください。  
+
 
 ## <a name="query-scenarios"></a>クエリのシナリオ
 
@@ -267,13 +271,13 @@ SHA256,ThreatTypes,DetectionMethods
 | IPv4 アドレス | [parse_ipv4()](/azure/data-explorer/kusto/query/parse-ipv4function) | IPv4 アドレスを長整数に変換します。 IPv4 アドレスを変換せずに比較するには、 [ipv4_compare()](/azure/data-explorer/kusto/query/ipv4-comparefunction)を使用します。 |
 | IPv6 アドレス | [parse_ipv6()](/azure/data-explorer/kusto/query/parse-ipv6function)  | IPv4 または IPv6 アドレスを正規の IPv6 表記に変換します。 IPv6 アドレスを比較するには、 [ipv6_compare()](/azure/data-explorer/kusto/query/ipv6-comparefunction)を使用します。 |
 
-サポートされているすべての解析関数の詳細については、[Kusto文字列関数に関する](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)ページを参照してください。
+サポートされているすべての解析関数の詳細については、 [Kusto 文字列関数に関する](/azure/data-explorer/kusto/query/scalarfunctions#string-functions)ページを参照してください。
 
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpointでは使用できない場合があります。 [Microsoft 365 Defenderを有効にして](m365d-enable.md)、より多くのデータ ソースを使用して脅威を検出します。 高度なハンティング クエリをMicrosoft Defender for Endpointから移行するの手順に従って、[高度なハンティング ワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defender](advanced-hunting-migrate-from-mde.md)に移動できます。
 
-## <a name="related-topics"></a>関連項目
-- [Kustoクエリ言語のドキュメント](/azure/data-explorer/kusto/query/)
+## <a name="related-topics"></a>関連トピック
+- [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [高度なハンティング エラーを処理する](advanced-hunting-errors.md)
 - [高度な追求の概要](advanced-hunting-overview.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2036f0b1e749250d42066fc5ea742c550a2f756e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 4c83db02acea02b076b84f8b180e4d9ff8460a80
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664108"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603321"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な捜索に関するエキスパート トレーニングを受ける
 
@@ -40,10 +40,10 @@ ms.locfileid: "64664108"
 
 | Title | 説明 | 視聴する | クエリ |
 |---|---|---|---|
-| エピソード 1: KQLの基礎 | このエピソードでは、Microsoft 365 Defenderでの高度なハンティングの基本について説明します。 使用可能な高度なハンティング データと、基本的なKQL構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
-| エピソード 2: Joins | 高度な捜索のデータと、テーブルを結合する方法について学習し続けます。 既定の `unique``semi` Kusto`innerunique`結合の微妙な違いについて`inner``outer`説明します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
+| エピソード 1: KQL の基礎 | このエピソードでは、Microsoft 365 Defenderでの高度なハンティングの基本について説明します。 使用可能な高度なハンティング データと、基本的な KQL 構文と演算子について説明します。 | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.txt) |
+| エピソード 2: Joins | 高度な捜索のデータと、テーブルを結合する方法について学習し続けます。 既定の Kusto `innerunique` 結合の微妙な違いについて`unique``outer``inner`説明し`semi`、結合について説明します。 | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.txt) |
 | エピソード 3: データの集計、ピボット、および視覚化 | データをフィルター処理、操作、結合する方法を学習したので、データの集計、定量化、ピボット、視覚化を行います。 このエピソードでは、スキーマに追加のテーブルを `summarize` 導入しながら、演算子とさまざまな計算について説明します。 また、分析情報を抽出するのに役立つグラフにデータセットを変換する方法も学習します。 | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.txt) |
-| エピソード 4: ハントしましょう。 インシデント追跡にKQLを適用する | このエピソードでは、攻撃者のアクティビティを追跡することを学習します。 攻撃を追跡するために、Kustoと高度な捜索に関する理解を強化しました。 サイバーセキュリティの ABC やインシデント対応に適用する方法など、現場で使用される実際のテクニックについて説明します。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
+| エピソード 4: ハントしましょう。 インシデント追跡に KQL を適用する | このエピソードでは、攻撃者のアクティビティを追跡することを学習します。 攻撃を追跡するために、Kusto と高度なハンティングに対する理解を強化しました。 サイバーセキュリティの ABC やインシデント対応に適用する方法など、現場で使用される実際のテクニックについて説明します。 | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [テキスト ファイル](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.txt)
 
 *L33TSP3AK: Microsoft 365 Defenderでの高度なハンティング* に関する専門家のトレーニングを受けることができます。これは、高度なハンティングを使用してセキュリティ調査を行う際の技術的知識と実践的なスキルをMicrosoft 365 Defenderで拡張しようとしているアナリスト向けの Web キャスト シリーズです。
 
@@ -55,7 +55,7 @@ ms.locfileid: "64664108"
 
 ## <a name="how-to-use-the-csl-file"></a>CSL ファイルを使用する方法
 
-エピソードを開始する前[に、GitHubの対応するテキスト ファイルに](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts)アクセスし、その内容を高度なハンティング クエリ エディターにコピーします。 エピソードを視聴するときは、コピーした内容を使用して話者に従い、クエリを実行できます。
+エピソードを開始する前 [に、GitHub 上の対応するテキスト ファイルに](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Webcasts) アクセスし、その内容を高度なハンティング クエリ エディターにコピーします。 エピソードを視聴するときは、コピーした内容を使用して話者に従い、クエリを実行できます。
 
 クエリを含むテキスト ファイルからの次の抜粋は、コメント `//`としてマークされた包括的なガイダンスのセットを示しています。
 
@@ -90,7 +90,15 @@ CloudAppEvents
 | sort by Timestamp desc
 ```
 
-## <a name="related-topics"></a>関連項目
+
+## <a name="other-resources"></a>その他のリソース
+
+| Title | 説明 | 視聴する |
+|---|---|---|
+|KQL でテーブルを結合する | テーブルを結合して意味のある結果を作成する機能について説明します。 | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
+| KQL でのテーブルの最適化 | クエリを最適化することで、複雑なクエリを実行するときにタイムアウトを回避する方法について説明します。 | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
+
+## <a name="related-topics"></a>関連トピック
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [高度な捜索のクエリ言語について学習する](advanced-hunting-query-language.md)

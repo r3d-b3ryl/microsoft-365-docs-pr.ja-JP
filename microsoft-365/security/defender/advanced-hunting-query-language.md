@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 724e6c0b0e0a9854df6c87977cacbf1e1a69bfbe
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 8c650e639d1a4629ed25bcc3a7f3a8c28df4b8e8
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65740017"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603486"
 ---
 # <a name="learn-the-advanced-hunting-query-language"></a>高度な捜索のクエリ言語について学習する
 
@@ -37,9 +37,9 @@ ms.locfileid: "65740017"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-高度な捜索は、[Kusto クエリ言語](/azure/kusto/query/)に基づいています。 Kusto演算子とステートメントを使用して、特殊化された[スキーマ](advanced-hunting-schema-tables.md)内の情報を検索するクエリを作成できます。 
+高度な捜索は、[Kusto クエリ言語](/azure/kusto/query/)に基づいています。 Kusto 演算子とステートメントを使用して、特殊化されたスキーマ内の情報を検索するクエリを作成 [できます](advanced-hunting-schema-tables.md)。 
 
-この短いビデオでは、便利なKustoクエリ言語の基本について説明します。
+この短いビデオでは、便利な Kusto クエリ言語の基本について説明します。
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWRwfJ]
  
@@ -133,7 +133,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 >[!TIP]
 >クエリ結果をグラフとして表示し、フィルターをすばやく調整できます。 ガイダンスについては、[クエリ結果の操作に関する記事を参照](advanced-hunting-query-results.md)してください
 
-この[短いビデオ](https://www.youtube.com/watch?v=8qZx7Pp5XgM)では、Kusto 照会言語を使用してテーブルを結合する方法について説明します。
+
 
 ## <a name="learn-common-query-operators"></a>一般的なクエリ演算子について説明します
 
@@ -143,7 +143,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 |--|--|
 | `where` | 述語に適合する行のサブセットにテーブルをフィルター処理します。 |
 | `summarize` | 入力テーブルの内容を集約したテーブルを作成します。 |
-| `join` | 各テーブルから指定された列の値を照合して、2 つのテーブルの行を結合し、新しいテーブルを作成します。 |
+| `join` | 各テーブルから指定された列の値を照合して、2 つのテーブルの行を結合し、新しいテーブルを作成します。 方法については、 [KQL の結合テーブル](https://www.youtube.com/watch?v=8qZx7Pp5XgM) をご覧ください。|
 | `count` | 入力レコード セットのレコード数を返します。 |
 | `top` | 指定された列によって並べ替えられた最初の N レコードを返します。 |
 | `limit` | 指定された行数まで返します。 |
@@ -156,7 +156,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 
 ## <a name="understand-data-types"></a>データ型を理解する
 
-高度なハンティングでは、次の一般的な型を含むKustoデータ型がサポートされます。
+高度なハンティングでは、次の一般的な型を含む Kusto データ型がサポートされます。
 
 | データ型 | 説明とクエリの意味 |
 |--|--|
@@ -166,12 +166,12 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | `int` | 32 ビット整数  |
 | `long` | 64 ビット整数 |
 
-これらのデータ型の詳細については、[Kustoスカラー データ型に関する](/azure/data-explorer/kusto/query/scalar-data-types/)ページを参照してください。
+これらのデータ型の詳細については、 [Kusto スカラー データ型に関するページを参照してください](/azure/data-explorer/kusto/query/scalar-data-types/)。
 
 ## <a name="get-help-as-you-write-queries"></a>クエリを記述するときにヘルプを参照する
 
 次の機能を利用して、クエリをより速く記述します。
-- **Autosuggest** —クエリを記述すると、高度な捜索によってIntelliSenseからの提案が提供されます。 
+- **Autosuggest** —クエリを記述するときに、高度な捜索では IntelliSense からの提案が提供されます。 
 - **スキーマ ツリー** - テーブルの一覧とその列を含むスキーマ表現が作業領域の横に表示されます。 詳細については、アイテムにカーソルを合わせてください。 アイテムをダブルクリックして、クエリ エディターに挿入します。
 - **[スキーマリファレンス](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** - テーブルと列の説明、サポートされているイベントの種類 (`ActionType` 値)、サンプル クエリを含むポータル内参照
 
@@ -202,7 +202,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 :::image type="content" source="../../media/get-started-section.png" alt-text="Microsoft 365 Defender ポータルの **Advanced hunting** ページの **[作業の開始]** セクション" lightbox="../../media/get-started-section.png":::
 
 >[!NOTE]
->基本的なクエリ サンプルとは別に、特定の脅威の捜索シナリオの[共有クエリ](advanced-hunting-shared-queries.md)にアクセスすることもできます。 ページの左側またはGitHubクエリ リポジトリの共有[クエリを調べます](https://aka.ms/hunting-queries)。
+>基本的なクエリ サンプルとは別に、特定の脅威の捜索シナリオの[共有クエリ](advanced-hunting-shared-queries.md)にアクセスすることもできます。 ページの左側にある共有クエリまたは [GitHub クエリ リポジトリを調べます](https://aka.ms/hunting-queries)。
 
 ## <a name="access-query-language-documentation"></a>クエリ言語のドキュメントにアクセスする
 
@@ -211,7 +211,7 @@ Kusto クエリ言語およびサポートされる演算子の詳細につい�
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpointでは使用できない場合があります。 [Microsoft 365 Defenderを有効にして](m365d-enable.md)、より多くのデータ ソースを使用して脅威を検出します。 高度なハンティング クエリをMicrosoft Defender for Endpointから移行するの手順に従って、[高度なハンティング ワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defender](advanced-hunting-migrate-from-mde.md)に移動できます。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [クエリ結果を操作する](advanced-hunting-query-results.md)

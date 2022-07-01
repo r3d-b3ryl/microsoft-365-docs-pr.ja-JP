@@ -18,19 +18,18 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 - m365solution-incidentresponse
-- m365solution-scenario
 - m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a4edb82291ff01a4876ad93d688dbbbf19416c05
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: a919e8893fff0486d7a9a3eb89be1822a73ce437
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435371"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603552"
 ---
 # <a name="investigate-and-respond-with-microsoft-365-defender"></a>Microsoft 365 Defenderで調査して応答する
 
@@ -91,4 +90,4 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 Microsoft 脅威エキスパート - ターゲット攻撃通知はマネージド脅威ハンティング サービスです。 適用して承諾されると、Microsoft 脅威の専門家からターゲットを絞った攻撃通知を受け取ります。そのため、環境に対する重大な脅威を見逃すことはありません。 これらの通知は、組織のエンドポイント、電子メール、ID を保護するのに役立ちます。 Microsoft 脅威エキスパート – エキスパート オンデマンドを使用すると、組織が直面している脅威に関する専門家のアドバイスを受けることができます。また、組織が直面している脅威に関するヘルプを受けることができます。 追加のサブスクリプション サービスとして利用できます。
 
-詳細については、「[Microsoft 365の概要」のMicrosoft 脅威エキスパートを](/microsoft-365/security/defender/microsoft-threat-experts)参照してください。
+詳細については、[Microsoft 365 の概要のMicrosoft 脅威エキスパートを](/microsoft-365/security/defender/microsoft-threat-experts)参照してください。

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、毎月Microsoft 365 Lighthouseで追加、変更、および修正された内容を確認します。
-ms.openlocfilehash: e84324d3d37b28daec1a7f5e4498e0427a29a588
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: 927e063abfb806e44c4888ee09d788cfa2bd7f5e
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864437"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602918"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの新機能
 
@@ -30,6 +30,40 @@ Microsoft 365 Lighthouse[に新機能](m365-lighthouse-overview.md)を継続的�
 
 > [!NOTE]
 > 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、すぐに表示されます。
+
+## <a name="june-2022"></a>2022 年 6 月
+
+### <a name="support-for-microsoft-365-e5-customers"></a>Microsoft 365 E5のお客様のサポート
+
+オンボーディング要件を変更し、Microsoft 365 E5顧客をMicrosoft 365 Lighthouseにオンボードできるようにしました。 オンボードにサポートMicrosoft 365 Lighthouseライセンスの拡張リストには、Microsoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、ビジネス向けのMicrosoft Defender for BusinessとWindows 365。 これらのライセンスのいずれかを少なくとも 1 つ持ち、委任されたアクセス許可の要件を満たしており、ライセンスされたユーザーの最大数を超えないお客様は、Microsoft 365 Lighthouseで管理できます。  
+
+要件の完全な一覧については、「[Microsoft 365 Lighthouseの要件」を](m365-lighthouse-requirements.md)参照してください。
+
+### <a name="microsoft-defender-for-business-integration"></a>Microsoft Defender for Business統合
+
+Microsoft 365 LighthouseがMicrosoft Defender for Businessと統合され、Microsoft Defender for Businessを持つすべての顧客テナントに関連する分析情報と管理機能が提供されるようになりました。 Microsoft Defender for Businessにオンボードされた顧客デバイスの一覧を表示するには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで [**デバイス**] を選択します。 顧客テナント全体でフラグが設定されたインシデントとアラートの一覧を表示するには、[ **デバイス** > **デバイス セキュリティ**] に移動し、[ **インシデントとアラート** ] タブを選択します。  
+
+また、顧客テナントのMicrosoft Defender for Businessを設定するのに役立つ手順を既定のベースラインに追加しました。 この手順を表示するには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウから **[基準計画**] を選択するか、いずれかの顧客テナントの展開計画を表示します。
+
+### <a name="status-of-quarantined-email-messages"></a>検疫された電子メール メッセージの状態
+
+マネージド テナントの電子メール検疫データに関する新機能が追加されました。 この機能は、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウから **[データ保護**] を選択してアクセスできるため、顧客テナント全体で検疫された電子メール メッセージの状態を確認できます。 操作が必要なテナントに優先順位を付ける際に役立つ、検疫量の合計と各マネージド テナントの詳細情報の統合情報を確認できます。
+
+### <a name="increase-in-maximum-license-limit"></a>ライセンスの上限の引き上げ
+
+お客様のオンボードの最大ライセンス制限をもう一度引き上げることで、Microsoft 365 Lighthouseの顧客の数を増やすことができます。 最大 2,500 のユーザー ライセンスをお持ちのお客様は、Microsoft 365 Lighthouseにオンボードできるようになりました。 今後のMicrosoft 365 Lighthouseリリースでは、この要件を引き続き評価します。 
+
+詳細については、「[Microsoft 365 Lighthouseの要件」を](m365-lighthouse-requirements.md)参照してください。
+
+## <a name="may-2022"></a>2022 年 5 月
+
+### <a name="redesigned-left-navigation-pane"></a>再設計された左側のナビゲーション ウィンドウ
+
+新しい外観Microsoft 365 Lighthouse左側のナビゲーション ウィンドウが表示されました。 テナント、ユーザー、デバイスなどの最上位ノードが展開され、危険なユーザー、デバイスコンプライアンス、脅威管理などの関連サブノードが表示される、洗練されたデザインに気付きます。 このナビゲーション モデルは、他の Microsoft 365 管理センターで使用されるモデルと一致します。
+
+### <a name="enriched-user-details-pane"></a>エンリッチされたユーザーの詳細ウィンドウ
+
+ユーザーの詳細ウィンドウを再設計し、より多くのユーザー情報と、ユーザーをより適切に管理するために実行できるより多くのアクションを含めます。 これで、Microsoft 365 管理センターのユーザーの詳細ウィンドウと同じ外観になりました。 Microsoft 365 Lighthouseの [ユーザーの詳細] ウィンドウにアクセスするには、左側のナビゲーション ウィンドウで [**ユーザー**] を選択し、[**ユーザーの検索**] または [**危険なユーザー**] を選択します。 任意のユーザーを選択して詳細ウィンドウを開きます。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
@@ -43,7 +77,7 @@ Microsoft 365 Lighthouse[に新機能](m365-lighthouse-overview.md)を継続的�
 
 ### <a name="windows-365-business-integration-and-management-actions"></a>Windows 365 Business統合アクションと管理アクション
 
-ユーザーからのフィードバックに基づいて、Windows 365 BusinessをMicrosoft 365 Lighthouseに統合しました。 これにより、すべての顧客のクラウド PC を 1 つの場所から管理および監視できます。 
+ユーザーからのフィードバックに基づいて、Windows 365 BusinessをMicrosoft 365 Lighthouseに統合しました。 この統合により、すべての顧客のクラウド PC を 1 つの場所から管理および監視できます。 
 
 Microsoft 365 LighthouseでWindows 365 Businessクラウド PC と統合するだけでなく、次の管理アクションを実行できるようになりました。
 
@@ -65,9 +99,9 @@ Microsoft 365 Lighthouse、MSP が詳細委任された管理特権 (GDAP) ロ�
 
 Microsoft 365 Lighthouseの GDAP の詳細については、「[ポータル セキュリティMicrosoft 365 Lighthouse構成する](m365-lighthouse-configure-portal-security.md)」を参照してください。
 
-### <a name="capability-to-notify-users-to-act-on-non-compliant-devices"></a>非準拠デバイスで動作するようにユーザーに通知する機能
+### <a name="capability-to-notify-users-to-act-on-noncompliant-devices"></a>非準拠デバイスで動作するようにユーザーに通知する機能
 
-デバイスコンプライアンスベースラインステップの一環として、顧客テナント内のユーザーに非準拠デバイスで動作するように通知する機能を追加しました。 この変更により、顧客テナントにデバイス コンプライアンスの展開手順を適用すると、そのテナントで作成されたデバイス コンプライアンス ポリシーは、デバイスが非準拠になったときに、デバイスをコンプライアンスに戻すための適切なアクションを実行するようにユーザーに通知を自動的に送信します。
+デバイスコンプライアンスベースラインステップの一環として、顧客テナント内のユーザーに非準拠デバイスで動作するように通知する機能を追加しました。 この変更により、顧客テナントにデバイス コンプライアンスの展開手順を適用すると、そのテナントで作成されたデバイス コンプライアンス ポリシーは、デバイスが非準拠になったときに自動的に通知を送信し、デバイスをコンプライアンスに戻すための適切なアクションを実行するように通知します。
 
 ### <a name="deployment-validation-and-reporting"></a>デプロイの検証とレポート
 
@@ -112,13 +146,13 @@ Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで、[
 
 ## <a name="november-2021"></a>2021 年 11 月
 
-### <a name="microsoft-365-services-usage-data"></a>サービスの使用状況データをMicrosoft 365する
+### <a name="microsoft-365-services-usage-data"></a>Microsoft 365 サービスの使用状況データ
 
-Microsoft 365 Lighthouse内から、Microsoft 365 サービスの使用状況データを表示できるようになりました。 お客様がMicrosoft 365 サービスを使用する方法を理解することは、IT 投資を最大限に活用するために不可欠です。 複数のリソースを使用して、顧客のさまざまな生産性、セキュリティ、コンプライアンス サービス全体の情報を表示する代わりに、それらを 1 つのシンプルで強力なビューに集約Microsoft 365 Lighthouse。  
+これで、Microsoft 365 Lighthouse内から Microsoft 365 サービスの使用状況データを表示できるようになりました。 お客様が Microsoft 365 サービスをどのように使用しているかを理解することは、IT 投資を最大限に活用するうえで非常に重要です。 複数のリソースを使用して、顧客のさまざまな生産性、セキュリティ、コンプライアンス サービス全体の情報を表示する代わりに、それらを 1 つのシンプルで強力なビューに集約Microsoft 365 Lighthouse。  
 
 これらの分析情報は、ユーザーが積極的に使用するサービスと、セキュリティや生産性を向上させる機会がある可能性がある場所を理解できるように支援することで、顧客のエンゲージメントを通知し、顧客により多くの価値を提供するのに役立ちます。 
 
-詳細については、「[Microsoft 365 Lighthouse: Microsoft 365使用状況カード」の「テナントの概要」ページを](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card)参照してください。
+詳細については、「[Microsoft 365 Lighthouse: Microsoft 365 の使用状況カード」の「テナントの概要」ページを参照](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card)してください。
 
 ### <a name="exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step"></a>既定のベースライン ステップのExchange Online ProtectionとMicrosoft 365 Defender Office 365
 
@@ -134,9 +168,9 @@ Microsoft 365 Lighthouse内から、Microsoft 365 サービスの使用状況デ
 
 複数のテナント タグで同時にデータをフィルター処理できるようになりました。 この機能は、関連する顧客テナントを表示するためにMicrosoft 365 Lighthouseで使用できる既存のビューと分析情報をより簡単にフィルター処理するのに役立ちます。
 
-### <a name="capability-to-assign-baseline-configurations-to-specific-azure-active-directory-groups"></a>特定のAzure Active Directory グループにベースライン構成を割り当てる機能
+### <a name="capability-to-assign-baseline-configurations-to-specific-azure-active-directory-groups"></a>特定の Azure Active Directory グループにベースライン構成を割り当てる機能
 
-Microsoft 365 Lighthouse内から顧客テナントの特定のAzure Active Directory (Azure AD) グループにベースライン構成を割り当てる機能を追加しました。 任意のデプロイ 手順ページで、含めるまたは除外する特定の Azure AD グループを参照して選択し、その構成をカスタマー テナントにデプロイします。
+Microsoft 365 Lighthouse内から顧客テナントの特定の Azure Active Directory (Azure AD) グループにベースライン構成を割り当てる機能を追加しました。 任意のデプロイ 手順ページで、含めるまたは除外する特定の Azure AD グループを参照して選択し、その構成をカスタマー テナントにデプロイします。
 
 ### <a name="improvements-to-risky-users-page"></a>[危険なユーザーの機能強化] ページ
 
@@ -189,11 +223,11 @@ Microsoft 365 Lighthouse内の任意のページからテナントとタグを�
 - 管理者に MFA を要求する 
 - ユーザーに MFA を要求する 
 - レガシ認証をブロックする 
-- Microsoft エンドポイント マネージャーにデバイスWindows登録する – Azure AD Join 
-- Windows デバイスの Defender AV ポリシーを構成する 
+- Microsoft エンドポイント マネージャーに Windows デバイスを登録する – Azure AD Join 
+- Windows デバイス用の Defender AV ポリシーを構成する 
 - Windows デバイスのコンプライアンス ポリシーを構成する 
 
-これらの展開手順に対処するには、Microsoft 365ライトハウスの左側のナビゲーション ウィンドウから [**テナント**] を選択し、テナントの一覧からテナントを選択してから、[**展開計画**] タブを選択します。 
+これらの展開手順を実行するには、Microsoft 365 Lighthouse の左側のナビゲーション ウィンドウから [ **テナント** ] を選択し、テナントの一覧からテナントを選択してから、[ **展開計画** ] タブを選択します。 
 
 ## <a name="may-2021"></a>2021 年 5 月
 

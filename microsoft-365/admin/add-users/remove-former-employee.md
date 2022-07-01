@@ -28,21 +28,23 @@ search.appverid:
 - MET150
 - MOE150
 description: 元従業員がサインインできないように Microsoft 365 へのアクセスをブロックし、組織データをセキュリティで保護し、他の従業員が自分の電子メールと OneDrive データにアクセスできるようにします。
-ms.openlocfilehash: d8b32a2489735469ecdd2af3b479b0705d33be13
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 12c1656ba0826e9d4d2472427642914cdcc7b2e6
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486222"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601720"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>概要: 元従業員を削除し、データをセキュリティで保護する
+
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 よく寄せられる質問は、「従業員が組織を離れたときにデータをセキュリティで保護し、アクセスを保護するためにどうすればよいか」です。 この記事シリーズでは、Microsoft 365 へのアクセスをブロックして、これらのユーザーが Microsoft 365 にサインインできないようにする方法、組織データをセキュリティで保護するために実行する手順、および他の従業員に電子メールと OneDrive データへのアクセスを許可する方法について説明します。
 
 > [!TIP]
 > このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 このソリューションの手順を完了するには、グローバル管理者である必要があります。
 
@@ -78,7 +80,9 @@ ms.locfileid: "66486222"
 |[手順 6 - 元従業員から Microsoft 365 ライセンスを削除して削除する](remove-former-employee-step-6.md)|ライセンスを削除すると、別のユーザーに割り当てることができます。または、他のユーザーを採用するまで支払うことがないように、ライセンスを削除することもできます。  <p> ライセンスを削除すると、ユーザーの古いメール、連絡先、および予定表は **30 日間** 保持され、その後、完全に削除されます。 ライセンスのみを削除し、アカウントを削除しない場合、ユーザーの OneDrive のコンテンツには 30 日後でもアクセスできます。  |
 |[手順 7 - 元従業員のユーザー アカウントを削除する](remove-former-employee-step-7.md)|これにより、管理センターからアカウントが削除されます。 これできれいになります。|
 
- ## <a name="watch-delete-a-user"></a>ウォッチ: ユーザーを削除する
+## <a name="watch-delete-a-user"></a>ウォッチ: ユーザーを削除する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198203)で、このビデオや他の動画を確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 

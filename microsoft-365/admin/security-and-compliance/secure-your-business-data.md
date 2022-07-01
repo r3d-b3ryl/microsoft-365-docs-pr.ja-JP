@@ -1,5 +1,5 @@
 ---
-title: ビジネス向けのMicrosoft 365をセキュリティで保護するためのベスト プラクティス
+title: ビジネス向け Microsoft 365 をセキュリティで保護するためのベスト プラクティス
 f1.keywords:
 - CSH
 ms.author: deniseb
@@ -28,14 +28,16 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなど、サイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 44acc5b7b76d1ae355db88e9773982e1d1e1b4d2
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 347d88a95d8ed55116655980560eb3d9cf925213
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739507"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602936"
 ---
-# <a name="best-practices-for-securing-microsoft-365-for-business"></a>ビジネス向けのMicrosoft 365をセキュリティで保護するためのベスト プラクティス
+# <a name="best-practices-for-securing-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 をセキュリティで保護するためのベスト プラクティス
+
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 Microsoft のビジネス プランのいずれかを使用している小規模または中規模の組織の場合、この記事のガイダンスは、組織のセキュリティを強化するのに役立ちます。 選択肢の中でも、Microsoft Defender for Businessやその他の[セキュリティ保護](../../business-premium/get-microsoft-365-business-premium.md)が含まれるようになったため、Microsoft 365 Business Premiumが先導します。 ここに含まれる推奨されるアクションは、「強い思い出を持つ人が自分の目標を達成するのに役立 [ちます。これは](https://go.microsoft.com/fwlink/p/?linkid=2015598)、この目標を達成するのに役立ちます。これは、この目標を達成するのに役立ちます。
 
@@ -44,9 +46,11 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 
 ## <a name="watch-a-quick-overview-of-security"></a>ウォッチ: セキュリティの概要
 
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198012)で、このビデオや他の動画を確認してください。
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
-すべてのMicrosoft 365プランでは、Defender ウイルス対策によるベースライン保護とセキュリティが提供されますが、Microsoft 365 Business Premiumでは、Microsoft Defender for Businessが含まれているため、脅威保護、データ保護、デバイス管理機能も備えています。  これらの追加機能により、組織をオンラインの脅威や不正アクセスから保護し、携帯電話、タブレット、コンピューターで会社のデータを管理できます。
+すべての Microsoft 365 プランでは、Defender ウイルス対策によるベースライン保護とセキュリティが提供されますが、Microsoft 365 Business Premiumでは、Microsoft Defender for Businessが含まれているため、脅威保護、データ保護、デバイス管理機能も備えています。  これらの追加機能により、組織をオンラインの脅威や不正アクセスから保護し、携帯電話、タブレット、コンピューターで会社のデータを管理できます。
 
 ## <a name="security-features-comparison"></a>セキュリティ機能の比較
 
@@ -61,24 +65,24 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 [ランサムウェアから保護する](#protect-against-ransomware) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(電子メールとクラウド ストレージの保護) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(デバイス、電子メール、クラウド ストレージの保護の強化) |
 [機密性の高いメールを暗号化する](#send-encrypted-email) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) |
 [フィッシング攻撃からメールを保護する](#protect-sensitive-emails) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(フィッシング対策保護) | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(高度なフィッシング対策保護) |
-[メール ファイルとOffice ファイル内の悪意のある添付ファイル、ファイル、URL から保護する](#protect-against-malicious-attachments-files-and-urls) | | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(セーフ リンクと添付ファイルセーフ) |
+[電子メールファイルと Office ファイルの悪意のある添付ファイル、ファイル、URL から保護する](#protect-against-malicious-attachments-files-and-urls) | | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(安全なリンクと安全な添付ファイル) |
 [組織のデバイスの保護を強化する](#increase-protection-for-your-organizations-devices) | | ![含ま。](../../media/d238e041-6854-4a78-9141-049224df0795.png) <br/>(エンタープライズ グレードのデバイス保護) |
 
-セキュリティをすばやく設定し、[Microsoft 365 Business Premium](../../business-premium/index.md) ライブラリで提供されているガイダンスを使用して安全に共同作業を開始できます。 ビジネス プレミアム情報は、高度なサイバー攻撃やハッカーによって起動されたサイバー脅威からすべての中小企業のお客様を保護するために、Microsoft 防御のデモクラシー チームと協力して開発されました。
+セキュリティをすばやく設定し、[Microsoft 365 Business Premium](../../business-premium/index.md) ライブラリで提供されているガイダンスを使用して安全に共同作業を開始できます。 ビジネス プレミアム情報は、高度なサイバー攻撃やハッカーによって起動されたサイバー脅威からすべての中小企業のお客様を保護するために、Microsoft 防御デモクラシー チームと協力して開発されました。
 
-### <a name="about-the-microsoft-365-secure-score"></a>Microsoft 365セキュリティスコアについて
+### <a name="about-the-microsoft-365-secure-score"></a>Microsoft 365 セキュリティ スコアについて
 
-開始する前に、Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>で[Microsoft 365セキュリティ](../../security/defender/microsoft-secure-score.md)スコアを確認することが重要です。 一元化されたダッシュボードから、Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視および向上させることができます。 推奨されるセキュリティ機能の構成、セキュリティ関連のタスクの実行 (レポートの表示など)、サード パーティ製のアプリケーションまたはソフトウェアを使用した推奨事項への対処に関するポイントが与えられます。 より広範な Microsoft 製品とサービスのセットに対する分析情報と可視性を高め、組織のセキュリティ正常性に関する自信を持って報告できます。
+開始する前に、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で [Microsoft 365 のセキュリティスコア](../../security/defender/microsoft-secure-score.md)を確認することが重要です。 一元化されたダッシュボードから、Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視および向上させることができます。 推奨されるセキュリティ機能の構成、セキュリティ関連のタスクの実行 (レポートの表示など)、サード パーティ製のアプリケーションまたはソフトウェアを使用した推奨事項への対処に関するポイントが与えられます。 より広範な Microsoft 製品とサービスのセットに対する分析情報と可視性を高め、組織のセキュリティ正常性に関する自信を持って報告できます。
 
 ![Microsoft セキュリティ スコアのスクリーンショット。](../../media/secure-score.png)
 
 ## <a name="set-up-multi-factor-authentication"></a>多要素認証をセットアップする
 
-多要素認証 (MFA) を使用して、パスワードの紛失や盗難から保護します。 多要素認証が設定されている場合、ユーザーは携帯電話のコードを使用してMicrosoft 365にサインインする必要があります。 この追加の手順では、ハッカーがパスワードを知っている場合に引き継ぐのを防ぐことができます。 
+多要素認証 (MFA) を使用して、パスワードの紛失や盗難から保護します。 多要素認証が設定されている場合、Microsoft 365 にサインインするには、携帯電話のコードを使用する必要があります。 この追加の手順では、ハッカーがパスワードを知っている場合に引き継ぐのを防ぐことができます。 
 
 多要素認証は、2 段階認証とも呼ばれます。 個人は、Google や Microsoft アカウントなど、ほとんどのアカウントに 2 段階認証を簡単に追加できます。 [個人用 Microsoft アカウントに 2 段階認証を追加する方法を次に示します](https://go.microsoft.com/fwlink/p/?linkid=2016403)。
 
-Microsoft 365を使用している企業の場合は、ユーザーが多要素認証を使用してログインする必要がある設定を追加します。 この変更を行うと、ユーザーは次回ログインするときに、2 要素認証用に電話を設定するように求められます。
+Microsoft 365 を使用している企業の場合は、ユーザーが多要素認証を使用してログインする必要がある設定を追加します。 この変更を行うと、ユーザーは次回ログインするときに、2 要素認証用に電話を設定するように求められます。
 MFA を設定する方法とユーザーがセットアップを完了する方法に関するトレーニング ビデオについては、「MFA と[ユーザーのセットアップ](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)の[設定](set-up-multi-factor-authentication.md)」を参照してください。
 
 ### <a name="turn-on-security-defaults"></a>セキュリティの既定値を有効にする
@@ -91,13 +95,13 @@ Azure portalの Azure Active Directory (Azure AD) の **[プロパティ**] ウ�
 
 2. 左側のナビゲーションで、**[すべて表示]** を選択し、**[管理センター]** の **[Azure Active Directory]** を選択します。
 
-3. **Azure Active Directory管理センター** で、**Azure Active Directory** >  **Properties** を選択します。
+3. **Azure Active Directory 管理センター** で、**Azure Active Directory のプロパティを** > 選択します。
 
 4. ページの下部で、**[セキュリティの既定値の管理]** を選択します。
 
 5. セキュリティの規定値を有効にするには **[はい]** を選び、セキュリティの規定値を無効にするには **[いいえ]** を選んで、**[保存]** を選択します。
 
-組織に多要素認証を設定した後、ユーザーはデバイスに 2 段階認証を設定する必要があります。 詳細については、「[Microsoft 365の 2 段階認証を設定する」を](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)参照してください。
+組織に多要素認証を設定した後、ユーザーはデバイスに 2 段階認証を設定する必要があります。 詳細については、「 [Microsoft 365 の 2 段階認証を設定する」を](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)参照してください。
 
 > [!Tip]
 > 多要素認証をより細かく制御する必要がある場合は、Microsoft 365 Business Premiumを使用して条件付きアクセスを有効にすることができます。 これを行う場合は、同等のポリシーを Security Defaults に実装することをお勧めします。 [セキュリティの既定値](/microsoft-365/business-premium/m365bp-conditional-access)の詳細については、こちらを参照してください。
@@ -122,24 +126,24 @@ Azure portalの Azure Active Directory (Azure AD) の **[プロパティ**] ウ�
 
 ## <a name="use-dedicated-admin-accounts"></a>専用の管理者アカウントを使用する
 
-Microsoft 365環境の管理に使用する管理アカウントには、管理者特権が含まれます。 これらは、ハッカーやサイバー攻撃者にとって有益なターゲットです。 管理者アカウントは、管理にのみ使用します。 管理者は、通常の非管理者用の別のユーザー アカウントを持ち、自分のジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 追加の推奨事項:
+Microsoft 365 環境の管理に使用する管理アカウントには、管理者特権が含まれます。 これらは、ハッカーやサイバー攻撃者にとって有益なターゲットです。 管理者アカウントは、管理にのみ使用します。 管理者は、通常の非管理者用の別のユーザー アカウントを持ち、自分のジョブ機能に関連付けられたタスクを完了するために必要な場合にのみ管理アカウントを使用する必要があります。 追加の推奨事項:
 
-- アカウントが[Azure Active Directory](../../admin/add-users/add-users.md)に追加されていることを確認します。
+- [アカウントが Azure Active Directory](../../admin/add-users/add-users.md) に追加されていることを確認します。
 - 多要素認証用に管理者アカウントも設定されていることを確認します。
 - 管理者アカウントを使用する前に、個人用メール アカウントを含め、無関係なすべてのブラウザー セッションとアプリを閉じます。
 - 管理者タスクを完了したら、必ずブラウザー セッションからログアウトしてください。
 
 ## <a name="protect-against-malware"></a>マルウェアから保護する
 
-Microsoft 365環境には、マルウェアに対する保護が含まれています。 次の方法でマルウェア保護を強化できます。
+Microsoft 365 環境には、マルウェアに対する保護が含まれています。 次の方法でマルウェア保護を強化できます。
 
 - [Microsoft Office 365に対して事前設定されたポリシーを使用する](../../../microsoft-365/security/office-365-security/preset-security-policies.md)。
 - 特定の種類のファイルを含む添付ファイルをブロックする。
-- デバイスでウイルス対策/マルウェア対策の保護を使用する (特にMicrosoft Defender for Business)。 [これには、自動調査レポート](../../security/office-365-security/air-view-investigation-results.md) (AIR) や脅威と脆弱性管理 (TVM) ダッシュボードなどの機能が含まれています。 Microsoft Defender for Businessがプライマリウイルス対策ソフトウェアでない場合でも、パッシブ モードで実行し、[エンドポイントの保護と応答 (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md) を使用できます。特に[、ブロック モード](../../security/defender-endpoint/edr-in-block-mode.md)では、EDRの機能によって検出され、プライマリ ウイルス検出ソフトウェアによって見逃された悪意のあるアーティファクトを修復するためにバックグラウンドで動作します。
+- デバイスでウイルス対策/マルウェア対策の保護を使用する (特にMicrosoft Defender for Business)。 [これには、自動調査レポート](../../security/office-365-security/air-view-investigation-results.md) (AIR) や脅威と脆弱性管理 (TVM) ダッシュボードなどの機能が含まれています。 Microsoft Defender for Businessがプライマリウイルス対策ソフトウェアでない場合でも、パッシブ モードで実行し、[エンドポイント保護と応答 (EDR)](../../security/defender-endpoint/overview-endpoint-detection-response.md) を使用できます。特に[ブロック モード](../../security/defender-endpoint/edr-in-block-mode.md)では、EDR の機能によって検出され、プライマリ ウイルス検出ソフトウェアによって見逃された悪意のあるアーティファクトを修復するためにバックグラウンドで動作します。
 
 ### <a name="block-attachments-with-certain-file-types"></a>特定の種類のファイルを含む添付ファイルをブロックする
 
-マルウェアの保護を強化するには、マルウェアでよく使用されるファイルの種類を含む添付ファイルをブロックします。 メールでマルウェア保護を強化するには、 [短いトレーニング ビデオ](increase-threat-protection.md#raise-the-level-of-protection-against-malware-in-mail)を表示するか、次の手順を実行します。
+マルウェアの保護を強化するには、マルウェアでよく使用されるファイルの種類を含む添付ファイルをブロックします。 メールでマルウェアの保護を強化するには、「 [ウォッチ: メール内のマルウェアに対する保護のレベルを上げる](increase-threat-protection.md#watch-raise-the-level-of-protection-against-malware-in-mail)」を参照するか、次の手順を実行します。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、[**ポリシー**] セクションの [**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**マルウェア対策**] に移動します。
 2. [ **マルウェア対策** ] ページで、[既定値] をダブルクリック **します**。 ポップアップが表示されます。
@@ -151,7 +155,7 @@ Microsoft 365環境には、マルウェアに対する保護が含まれてい�
 
 ### <a name="use-antivirus-and-anti-malware-protection"></a>ウイルス対策とマルウェア対策の保護を使用する
 
-Microsoft Defender ウイルス対策は強力なウイルス対策とマルウェア対策を提供し、Windows オペレーティング システムに組み込まれています。
+Microsoft Defender ウイルス対策は、強力なウイルス対策とマルウェア対策の保護を提供し、Windows オペレーティング システムに組み込まれています。
 
 組織でMicrosoft 365 Business Premiumを使用している場合は、次を含む追加のデバイス保護が提供されます。
 
@@ -167,17 +171,17 @@ Microsoft Defender ウイルス対策は強力なウイルス対策とマルウ�
 
 ランサムウェアは、ファイルを暗号化したり、コンピューター画面をロックしたりすることで、データへのアクセスを制限します。 その後、データへのアクセスと引き換えに、通常はビットコインなどの仮想通貨の形式で"身代金" を求めることによって、被害者からお金を強要しようとします。
 
-Microsoft 365でホストされている電子メールと、OneDriveに格納されているファイルに対してランサムウェア保護を受ける。 Microsoft 365 Business Premiumがある場合は、組織のデバイスに対して追加のランサムウェア保護を受けることができます。
+Microsoft 365 でホストされている電子メールと OneDrive に格納されているファイルに対してランサムウェア保護を受ける。 Microsoft 365 Business Premiumがある場合は、組織のデバイスに対して追加のランサムウェア保護を受けることができます。
 
 ランサムウェアから保護するには、ランサムウェアでよく使用されるファイル拡張子をブロックする 1 つ以上のメール フロー ルールを作成するか、電子メールでこれらの添付ファイルを受信したユーザーに警告します。 適切な開始点は、次の 2 つのルールを作成することです。
 
-- OneDriveを使用してファイルを移動し、常にアクセス制御と保護を行います。
+- OneDrive を使用してファイルを移動すると、常にアクセスが制御され、保護されます。
 
-- マクロを含む添付ファイルOffice開く前に、ユーザーに警告を表示します。 ランサムウェアはマクロ内に隠すことができるので、知らないユーザーからこれらのファイルを開かないようにユーザーに警告します。
+- マクロを含む Office ファイル添付ファイルを開く前に、ユーザーに警告を表示します。 ランサムウェアはマクロ内に隠すことができるので、知らないユーザーからこれらのファイルを開かないようにユーザーに警告します。
 
 - ランサムウェアやその他の悪意のあるコードを含む可能性のあるファイルの種類をブロックします。 まず、実行可能ファイルの一般的な一覧を示します (次の表に示します)。 組織でこれらの実行可能ファイルの種類のいずれかを使用していて、電子メールで送信されることを想定している場合は、前のルールに追加します (ユーザーに警告)。
 
-メール トランスポート ルールを作成するには、 [短いトレーニング ビデオ](increase-threat-protection.md#protect-against-ransomware)を表示するか、次の手順を実行します。
+メール トランスポート ルールを作成するには、「 [ウォッチ: ランサムウェアから保護する」](increase-threat-protection.md#watch-protect-against-ransomware)を参照するか、次の手順を実行します。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>に移動します。
 
@@ -191,7 +195,7 @@ Microsoft 365でホストされている電子メールと、OneDriveに格納�
 
 6. **[保存]** を選択します。
 
-| Setting | Office ファイルの添付ファイルを開く前にユーザーに警告する | ランサムウェアやその他の悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
+| 設定 | Office ファイルの添付ファイルを開く前にユーザーに警告する | ランサムウェアやその他の悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
 |名前  <br/> |ランサムウェア対策ルール: ユーザーに警告する  <br/> |ランサムウェア対策ルール: ファイルの種類をブロックする  <br/> |
 |次の場合は、この規則を適用します。 . .  <br/> |任意の添付ファイル . . . ファイル拡張子が一致します。 . .  <br/> |任意の添付ファイル . . . ファイル拡張子が一致します。 . .  <br/> |
@@ -213,7 +217,7 @@ Microsoft 365でホストされている電子メールと、OneDriveに格納�
 
 ## <a name="protect-sensitive-emails"></a>機密性の高いメールを保護する
 
-Microsoft 365には、組織内外のユーザー間で暗号化された電子メール メッセージを送受信できるOfficeメッセージ暗号化が含まれており、目的の受信者のみが表示できます。 暗号化は、Outlook.com、Yahoo!、Gmail、およびその他の電子メール サービスで機能します。
+Microsoft 365 には、組織内外のユーザー間で暗号化された電子メール メッセージを送受信できる Office メッセージ暗号化が含まれており、目的の受信者のみが表示できます。 暗号化は、Outlook.com、Yahoo!、Gmail、およびその他の電子メール サービスで機能します。
 
 > [!Tip]
 > より厳しいセキュリティ レベルが必要な場合は、組織で電子メールまたはファイルの秘密度ラベル付けも構成して使用する必要があります。 [秘密度ラベル](../../compliance/sensitivity-labels.md) を使用すると、場所に関係なくコンテンツを制御できます。
@@ -225,11 +229,11 @@ Microsoft 365には、組織内外のユーザー間で暗号化された電子�
 1. 新しいメールを開いた状態で、[ **オプション]** メニューを選択します。
 1. **[暗号化**] ドロップダウンから、適切なアクセス許可レベルを選択します。
 
-:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Outlookでの電子メール メッセージの暗号化":::
+:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Outlook での電子メール メッセージの暗号化":::
 
 ### <a name="receive-encrypted-email"></a>暗号化された電子メールを受信する
 
-受信者が 2013 またはOutlook 2016 Outlookと Microsoft メール アカウントを持っている場合、閲覧ウィンドウにアイテムの制限付きアクセス許可に関するアラートが表示されます。 メッセージを開いた後、受信者は他のメッセージと同様にメッセージを表示できます。
+受信者に Outlook 2013 またはOutlook 2016と Microsoft メール アカウントがある場合、閲覧ウィンドウにアイテムの制限付きアクセス許可に関するアラートが表示されます。 メッセージを開いた後、受信者は他のメッセージと同様にメッセージを表示できます。
 
 受信者が Gmail や Yahoo などの別のメール クライアントまたはメール アカウントを使用している場合は、メール メッセージを読み取るためにサインインしたり、Web ブラウザーでメッセージを表示するためのワンタイム パスコードを要求したりするためのリンクが表示されます。 ユーザーがメールを受信していない場合は、迷惑メールフォルダーまたは迷惑メール フォルダーを確認する必要があります。
 
@@ -238,12 +242,12 @@ Microsoft 365には、組織内外のユーザー間で暗号化された電子�
 
 ## <a name="protect-the-organization"></a>組織を保護する
 
-Microsoft 365環境用に 1 つ以上のカスタム ドメインを構成した場合は、対象となるフィッシング対策保護を構成できます。 フィッシング対策保護はMicrosoft Defender for Office 365に含まれており、悪意のある偽装ベースのフィッシングやその他の攻撃から組織を保護するのに役立ちます。
+Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成した場合は、対象となるフィッシング対策保護を構成できます。 フィッシング対策保護はMicrosoft Defender for Office 365に含まれており、悪意のある偽装ベースのフィッシングやその他の攻撃から組織を保護するのに役立ちます。
 
 > [!Note]
 > カスタム ドメインを構成していない場合は、これを行う必要はありません。
 
-最も重要なユーザーとカスタム ドメインのポリシーを作成して、この保護を開始することをお勧めします。 これを行うのに適した場所は、Microsoft Business プレミアムに含まれるMicrosoft 365 Defenderです。 Defender for Office 365でフィッシング対策ポリシーを作成するには、次の手順を実行します。
+最も重要なユーザーとカスタム ドメインのポリシーを作成して、この保護を開始することをお勧めします。 これを行うのに適した場所は、Microsoft Business Premium に含まれるMicrosoft 365 Defenderです。 Defender for Office 365でフィッシング対策ポリシーを作成するには、次の手順を実行します。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動します。
 
@@ -260,7 +264,7 @@ Microsoft 365環境用に 1 つ以上のカスタム ドメインを構成した
 |名前|ドメインと最も価値のあるキャンペーン スタッフ|
 |説明|最も重要なスタッフとドメインが偽装されていないことを確認します。|
 |保護対象のユーザーの追加|[ **+ 条件の追加]、[受信者] の順に選択します**。 ユーザー名を入力するか、候補者、キャンペーン マネージャー、その他の重要なスタッフ メンバーのメール アドレスを入力します。 偽装から保護する最大 20 個の内部アドレスと外部アドレスを追加できます。|
-|保護対象のドメインの追加|[ **+ 条件の追加] を選択します。受信者ドメインは次です**。 Microsoft 365 サブスクリプションに関連付けられているカスタム ドメインを定義している場合は、そのドメインを入力します。 複数のドメインを入力できます。|
+|保護対象のドメインの追加|[ **+ 条件の追加] を選択します。受信者ドメインは次です**。 定義した場合は、Microsoft 365 サブスクリプションに関連付けられているカスタム ドメインを入力します。 複数のドメインを入力できます。|
 |処理の選択|偽装されたユーザーから電子メールが送信された場合: [ **別の電子メール アドレスにメッセージをリダイレクト** する] を選択し、セキュリティ管理者の電子メール アドレスを入力します。たとえば、securityadmin@contoso.com。 <br/> 偽装されたドメインによって電子メールが送信される場合は、[ **検疫メッセージ]** を選択します。|
 |メールボックス インテリジェンス|既定では、新しいフィッシング対策ポリシーの作成時にはメールボックス インテリジェンスが選択されています。 最適な結果が得られるように、この設定は **[オン]** のままにしておいてください。|
 |信頼できる送信者とドメインの追加|この例では、オーバーライドは定義しません。|
@@ -271,11 +275,11 @@ Microsoft 365環境用に 1 つ以上のカスタム ドメインを構成した
 
 ## <a name="protect-against-malicious-attachments-files-and-urls"></a>悪意のある添付ファイル、ファイル、URL から保護する
 
-ユーザーは、ドキュメント、プレゼンテーション、スプレッドシートなどの添付ファイルを定期的に送信、受信、共有します。 電子メール メッセージを見るだけで、添付ファイルが安全か悪意があるかを常に簡単に判断できるわけではありません。 Microsoft Defender for Office 365添付ファイル保護セーフ含まれていますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、およびMicrosoft Teams内のファイルに拡張されます。
+ユーザーは日常的に、文書、プレゼンテーション、スプレッドシートなどを、添付ファイルとして送受信および共有します。 メール メッセージを参照しただけでは、添付ファイルが安全か悪意があるか判断するのは難しい場合があります。 Microsoft Defender for Office 365には安全な添付ファイル保護が含まれますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、および Microsoft Teams のファイルにまで及びます。
 
-### <a name="set-up-safe-attachments"></a>セーフ添付ファイルを設定する
+### <a name="set-up-safe-attachments"></a>安全な添付ファイルを設定する
 
-添付ファイル ポリシーを事前に設定セーフ使用することも、独自のポリシーを作成することもできます。 セーフ添付ファイル ポリシーを作成するには、[短いトレーニング ビデオ](increase-threat-protection.md)を表示するか、次の手順を実行します。
+安全な添付ファイル ポリシーを事前に設定するか、独自のポリシーを作成できます。 安全な添付ファイル ポリシーを作成するには、 [短いトレーニング ビデオ](increase-threat-protection.md)を表示するか、次の手順を実行します。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、管理者アカウントでサインインします。
 
@@ -298,9 +302,9 @@ Microsoft 365環境用に 1 つ以上のカスタム ドメインを構成した
 > [!TIP]
 > 詳細については、「[Defender for Office 365でのフィッシング対策ポリシーの設定](../../security/office-365-security/configure-atp-anti-phishing-policies.md)」を参照してください。
 
-### <a name="set-up-safe-links"></a>セーフ リンクを設定する
+### <a name="set-up-safe-links"></a>安全なリンクを設定する
 
-ハッカーは、電子メールや他のファイル内のリンクに悪意のある Web サイトを非表示にすることがあります。 Microsoft Defender for Office 365の一部である セーフ リンクは、電子メール メッセージとOfficeドキュメントで Web アドレス (URL) をクリックで確認する時間を提供することで、組織を保護するのに役立ちます。 保護は、セーフ リンク ポリシーを使用して定義されます。
+ハッカーは、電子メールや他のファイル内のリンクに悪意のある Web サイトを非表示にすることがあります。 Microsoft Defender for Office 365の一部であるセーフ リンクは、電子メール メッセージと Office ドキュメントで Web アドレス (URL) をクリックで確認する時間を提供することで、組織を保護するのに役立ちます。 保護は、セーフ リンク ポリシーを使用して定義されます。
 
 攻撃から保護するには、次の操作を行います。
 
@@ -308,7 +312,7 @@ Microsoft 365環境用に 1 つ以上のカスタム ドメインを構成した
 
 - ドメイン内のすべての受信者を対象とする新しいポリシーを追加します。
 
-リンクをセーフするには、[短いトレーニング ビデオ](increase-threat-protection.md#protect-against-phishing-attacks-with-safe-links)を表示するか、次の手順を実行します。
+安全なリンクを取得するには、「 [ウォッチ: フィッシング攻撃からメールを保護](increase-threat-protection.md#watch-protect-your-email-from-phishing-attacks)する」を参照するか、次の手順を実行します。
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、管理者アカウントでサインインします。
 
@@ -326,13 +330,13 @@ Microsoft 365環境用に 1 つ以上のカスタム ドメインを構成した
 
 |設定またはオプション|推奨される設定値|
 |---|---|
-|名前|ドメイン内のすべての受信者に対するリンク ポリシーをセーフする|
+|名前|ドメイン内のすべての受信者に対する安全なリンク ポリシー|
 |メッセージ内の悪意のある可能性のある不明な URL のアクションを選択する|[オン] を選択すると、 **ユーザーがリンクをクリックしたときに、URL が書き換えられ、既知の悪意のあるリンクの一覧に対してチェックされます**。|
 |不審なリンクや、ファイルを指しているリンクに対してリアルタイム URL スキャンを適用します|このボックスを選択します。|
 |適用先|受信者ドメインは . . . ドメインを選択します。|
 
 > [!TIP]
-> 詳細については、「[Microsoft Defender for Office 365のリンクのセーフ](../../security/office-365-security/atp-safe-links.md)」を参照してください。
+> 詳細については、「[Microsoft Defender for Office 365のセーフ リンク](../../security/office-365-security/atp-safe-links.md)」を参照してください。
 
 ## <a name="increase-protection-for-your-organizations-devices"></a>組織のデバイスの保護を強化する
 
@@ -347,12 +351,12 @@ Microsoft 365 Business Premiumを使用すると、デバイス管理や高度�
 
 - [Microsoft Defender for Businessの設定と構成](../../security/defender-business/mdb-setup-configuration.md)
 
-- [Microsoft 365 Defender ポータルを使用した概要](../../security/defender-business/mdb-get-started.md)
+- [Microsoft 365 Defender ポータルの使用を開始する](../../security/defender-business/mdb-get-started.md)
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365の多要素認証](multi-factor-authentication-microsoft-365.md) (記事)\
+[Microsoft 365 の多要素認証](multi-factor-authentication-microsoft-365.md) (記事)\
 [優先度アカウントの管理と監視](../setup/priority-accounts.md) (記事)\
-[管理センターでレポートをMicrosoft 365する](../activity-reports/activity-reports.md) (ビデオ)\
+[管理センターの Microsoft 365 レポート](../activity-reports/activity-reports.md) (ビデオ)\
 [Microsoft 365 Business Premium — 小規模ビジネス向けのサイバーセキュリティ](/microsoft-365/business-premium/) (記事)\
 

@@ -23,14 +23,16 @@ ms.custom:
 search.appverid: MET150
 description: これらの手順を使用して、より多くのライセンスを購入するか、Microsoft 365 for Business サブスクリプションのライセンス数を減らします。
 ms.date: 06/06/2022
-ms.openlocfilehash: ad7f0b15218043757c1e0692603e74760e2c10ef
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489672"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602372"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>サブスクリプションの Microsoft 365 ライセンスを購入または削除する
+
+YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 次の手順を使用して、より多くのライセンスを購入したり、サブスクリプションのライセンス数を減らしたりできます。
 
@@ -44,6 +46,8 @@ ms.locfileid: "66489672"
 - ビジネス向け Microsoft 365 またはサード パーティパートナーを通じてOffice 365 Enterpriseプランを購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
 
 ## <a name="watch-buy-new-licenses"></a>ウォッチ: 新しいライセンスを購入する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198206)で、このビデオや他の動画を確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -100,7 +104,7 @@ ms.locfileid: "66489672"
 - 請求期間の途中で追加されたライセンスは、次の請求書に表示されます。 毎年支払う場合は、これらの変更に対して 1 か月以内に請求されます。
 - 次の請求明細書では、元のライセンス数に対する以前の料金が差し引かれます。 ライセンスの元の数で期間の日割り計算された料金を追加し、新しいライセンス数の料金を追加します。 また、請求期間の残りの期間の現在のライセンス数に対する料金も発生します。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 サブスクリプションのライセンスを追加購入した場合、次に行う必要があるのは、 [それらのライセンスを組織内のユーザーに割り当てること](../../admin/manage/assign-licenses-to-users.md)です。
 
