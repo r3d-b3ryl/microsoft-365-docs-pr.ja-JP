@@ -2,11 +2,11 @@
 title: ドメインに参加している Windows 10 デバイスをビジネス向けの Microsoft 365 で管理できるようにする
 f1.keywords:
 - CSH
-ms.author: efrene
-author: efrene
-manager: scotv
+ms.author: deniseb
+author: denisebmsft
+manager: dansimp
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
@@ -26,12 +26,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 がローカル Active Directory に参加している Windows 10 デバイスを保護する方法について説明します。
-ms.openlocfilehash: 42a9fb553cbebe9e8a49cc15e97555e6b12ca495
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 3d3c4cbe30481a2c74783f943ac0cedbe4004dc5
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893123"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66489222"
 ---
 # <a name="manage-windows-devices-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium による Windows デバイスの管理
 
@@ -56,7 +56,7 @@ ms.locfileid: "65893123"
 
 手順については、「[ドメイン ユーザーを Microsoft 365 に同期する](../admin/setup/manage-domain-users.md)」を参照してください。
 
-## <a name="device-actions"></a>デバイス アクション
+## <a name="possible-device-actions-and-statuses"></a>考えられるデバイスのアクションと状態
   
 ![In the Device actions list, you can see the Devices states.](./../media/a621c47e-45d9-4e1a-beb9-c03254d40c1d.png)
 
