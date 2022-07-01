@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーは、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: deb3c3755a8afbab0071b8f829da620676f926ff
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: dc08d38da7c02ef0c02401244934b7d2338ab5f7
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078233"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574098"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Microsoft Purview コンプライアンス マネージャー
 
@@ -36,7 +36,7 @@ ms.locfileid: "65078233"
 
 ## <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは?
 
-[Microsoft Purview コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager) は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a> の機能であり、組織のコンプライアンス要件をより簡単かつ便利に管理するのに役立ちます。 コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
+[Microsoft Purview コンプライアンス マネージャー](https://compliance.microsoft.com/compliancemanager)は、組織のコンプライアンス要件をより簡単かつ便利に管理するのに役立つ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">、Microsoft Purview コンプライアンス ポータル</a>の機能です。 コンプライアンス マネージャーは、データ保護リスクのインベントリの作成から、複雑な制御の実装の管理、規制や認証の最新情報の入手、監査人への報告まで、コンプライアンスの過程全体を支援します。
 
 コンプライアンス マネージャーが組織でコンプライアンスを管理する方法を簡略化する方法については、次のビデオをご覧ください。
 <br>
@@ -53,9 +53,9 @@ ms.locfileid: "65078233"
 
 - 改善のための処置を実行する際の進行状況を測定することで、コンプライアンス体制を理解するのに役立つ、リスクベースのコンプライアンス スコア。
 
-コンプライアンス マネージャー ダッシュボードには、現在のコンプライアンス スコアが表示され、注意が必要なものを確認し、主要な改善アクションを案内します。 コンプライアンス マネージャー ダッシュボードの例を次に示します。
+コンプライアンス マネージャーの概要ページには、現在のコンプライアンス スコアが表示され、注意が必要なものを確認し、主要な改善アクションを案内します。 概要ページの例を次に示します。
 
-![コンプライアンス マネージャーのダッシュ ボード。](../media/compliance-manager-dashboard.png "コンプライアンス マネージャーのダッシュ ボード")
+![コンプライアンス マネージャーのダッシュ ボード。](../media/compliance-manager-overview.png "コンプライアンス マネージャーの概要ページ")
 
 ## <a name="understanding-your-compliance-score"></a>コンプライアンス スコアについて
 
@@ -91,7 +91,7 @@ ms.locfileid: "65078233"
 
 ### <a name="assessments"></a>評価
 
-評価とは、特定の規制、標準、またはポリシーからの制御のグループ化です。 評価は、標準、規則、または法律の要件を満たすのに役立つ評価内で処置を完了します。 たとえば、その中のすべてのアクションを完了すると、ISO 27001 の要件に沿ったMicrosoft 365設定に役立つ評価が得られます。
+評価とは、特定の規制、標準、またはポリシーからの制御のグループ化です。 評価は、標準、規則、または法律の要件を満たすのに役立つ評価内で処置を完了します。 たとえば、その中のすべてのアクションを完了すると、ISO 27001 の要件に沿った Microsoft 365 の設定に役立つ評価が得られます。
 
 評価には、次のいくつかのコンポーネントがあります。
 
@@ -158,8 +158,8 @@ ms.locfileid: "65078233"
 
 ## <a name="next-steps-set-up-and-customize"></a>次の手順: セットアップとカスタマイズ
 
-[コンプライアンス マネージャー](compliance-manager-setup.md)を使用して概要で、サインイン、アクセス許可とロールの割り当て、設定の構成、ダッシュボード ビューのカスタマイズを行う方法について説明します。
+[コンプライアンス マネージャーの概要](compliance-manager-setup.md)で、サインイン、アクセス許可とロールの割り当て、設定の構成、ダッシュボード ビューのカスタマイズを行う方法について説明します。
 
 次に、コンプライアンス マネージャーのカスタマイズを開始し、 [評価を設定](compliance-manager-assessments.md)することで、組織にとって最も重要な業界標準に準拠できるようにします。
 
-データ プライバシー規制に準拠できるように、コンプライアンス マネージャーの使用を含め、Microsoft 365全体で機能を計画および実装するためのエンド ツー エンド プロセスをガイドするワークフローを設計しました。 詳細については、「[Microsoft 365を使用したデータプライバシー規制の情報保護の展開 (aka.ms/m365dataprivacy)](../solutions/information-protection-deploy.md)」を参照してください。 
+データ プライバシー規制に準拠できるように、コンプライアンス マネージャーの使用を含め、Microsoft 365 全体で機能を計画および実装するためのエンド ツー エンド プロセスをガイドするワークフローを設計しました。 詳細については、「[Microsoft 365を使用したデータプライバシー規制の情報保護の展開 (aka.ms/m365dataprivacy)](../solutions/information-protection-deploy.md)」を参照してください。 

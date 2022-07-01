@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: セキュリティ インシデント管理の概要
-ms.openlocfilehash: c51282e5ba72d7519e3761bdfdb5c53753d8dad2
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b13798d34b0bf353158520e6f9c7cdb20aa77453
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491957"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574174"
 ---
 # <a name="security-incident-management"></a>セキュリティ インシデントの管理
 
@@ -41,5 +41,7 @@ ms.locfileid: "66491957"
 インシデント対応の詳細を確認するには、次の手順に従います:
 
 1. [セキュリティに関する推奨事項を確認します](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json)。
+
 1. [修復アクションを確認します](m365bp-review-remediation-actions-devices.md)。
+
 1. [侵害されたメール アカウントに応答します](../security/office-365-security/responding-to-a-compromised-email-account.md)。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purview コンプライアンス マネージャーを使用した概要
+title: Microsoft Purview コンプライアンス マネージャーの使用を開始する
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Compliance Manager ユーザーのアクセス許可とロールを設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: c7920a9eac06128f3cf9bfb54645a83296ca7e53
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091029"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574049"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -41,7 +41,7 @@ ms.locfileid: "65091029"
 
 ## <a name="sign-in"></a>サインイン
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、Microsoft 365グローバル管理者アカウントで **サインイン** します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、Microsoft 365 グローバル管理者アカウントで **サインイン** します。
 2. 左側のナビゲーション ウィンドウで、[**コンプライアンス マネージャー**] を選択します。 [コンプライアンス マネージャー ダッシュボード](#understand-the-compliance-manager-dashboard)にアクセスします。
 
 コンプライアンス・マネージャーにアクセスする直接リンクは [https://compliance.microsoft.com/compliancemanager](https://compliance.microsoft.com/compliancemanager) です。
@@ -52,14 +52,14 @@ ms.locfileid: "65091029"
 
 ### <a name="where-to-set-permissions"></a>アクセス許可の設定場所
 
-組織でグローバル管理者の役割を持つユーザーが、コンプライアンス マネージャーのユーザー権限を設定できます。 アクセス許可は、Microsoft Purview コンプライアンス ポータルとAzure Active Directory (Azure AD) で設定できます。
+組織でグローバル管理者の役割を持つユーザーが、コンプライアンス マネージャーのユーザー権限を設定できます。 アクセス許可は、Microsoft Purview コンプライアンス ポータルと Azure Active Directory (Azure AD) で設定できます。
 
 > [!NOTE]
 > US Government Community (GCC) High および国防総省 (DoD) 環境のお客様は、Azure AD でコンプライアンス マネージャーのユーザー権限とロールのみを設定できます。 Azure AD の説明とロール種別の定義については、以下を参照してください。
 
 Microsoft Purview コンプライアンス ポータルでアクセス許可を設定し、ロールを割り当てるには、次の手順に従います。
 
-1. Microsoft Purview コンプライアンス ポータルに移動し、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**アクセス許可**</a>] を選択します。
+1. Microsoft Purview コンプライアンス ポータルに移動し、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**アクセス許可**</a>] を選択します。
 
 2. コンプライアンス ポータルのドロップダウンで、[ **ロール**] を選択します。
 
@@ -79,7 +79,7 @@ Microsoft Purview コンプライアンス ポータルでアクセス許可を�
 
 Azure AD で役割を割り当て、アクセス許可を設定するには、「[Azure Active Directory で管理者の役割と管理者以外の役割をユーザーに割り当てる](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal)」を参照してください。
 
-Office 365またはMicrosoft 365サブスクリプションを持たないAzure AD ID を持つユーザーは、Microsoft Purview コンプライアンス ポータルで Compliance Manager にアクセスできません。 コンプライアンス マネージャーへのアクセスについては、[cmresearch@microsoft.com](mailto:cmresearch@microsoft.com) までお問い合わせください。
+Office 365または Microsoft 365 サブスクリプションを持たない Azure AD ID を持つユーザーは、Microsoft Purview コンプライアンス ポータルのコンプライアンス マネージャーにアクセスできません。 コンプライアンス マネージャーへのアクセスについては、[cmresearch@microsoft.com](mailto:cmresearch@microsoft.com) までお問い合わせください。
 
 ### <a name="role-types"></a>役割の種類
 
@@ -116,24 +116,32 @@ Compliance Manager Premium Assessments 試用版は、組織に最も関連す�
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>自動テストやユーザー履歴の設定
 
-Microsoft Purview コンプライアンス ポータルのコンプライアンス マネージャーの設定を使用すると、改善アクションの自動テストを有効または無効にすることができます。 また、この設定では、改善のための処置を別のユーザーに再び割り当てる機能など、改善のための処置に関連するユーザーのデータを管理することができます。  コンプライアンス マネージャーの設定にアクセスできるのは、グローバル管理者またはコンプライアンス マネージャー管理者のロールを持つユーザーだけです。
+Microsoft Purview コンプライアンス ポータルのコンプライアンス マネージャー設定を使用すると、改善アクションの自動テストを有効または無効にすることができます。 また、この設定では、改善のための処置を別のユーザーに再び割り当てる機能など、改善のための処置に関連するユーザーのデータを管理することができます。  コンプライアンス マネージャーの設定にアクセスできるのは、グローバル管理者またはコンプライアンス マネージャー管理者のロールを持つユーザーだけです。
 
 > [!NOTE]
 > GCC High および DoD 環境ではセキュリティ スコアが利用できないため、自動テスト機能は利用できません。 GCC High および DoD のお客様は、改善のための処置を手動で実施し、テストする必要があります。
 
 ### <a name="set-up-automated-testing"></a>自動化されたテストの設定
 
-コンプライアンス マネージャーは、データ ライフサイクル管理、情報保護、Microsoft Purview データ損失防止、コミュニケーション コンプライアンス、インサイダー リスク管理など、組織がサブスクライブしている他の Microsoft Purview ソリューションからのシグナルを検出します。 各改善アクションの詳細ページの [テスト] タブの [**テスト ロジック**]  フィールドには、アクションがコンプライアンス スコアに対してポイントを渡して獲得するために、他のソリューションで必要なものが表示されます。
+コンプライアンス マネージャーは、データ ライフサイクル管理、情報保護、Microsoft Purview データ損失防止、コミュニケーション コンプライアンス、インサイダー リスク管理など、組織がサブスクライブする可能性がある他の Microsoft Purview ソリューションからのシグナルを検出します。 コンプライアンス マネージャーは、 [Microsoft Secure Score](../security/defender/microsoft-secure-score.md) によって監視される補完的改善アクションからのシグナルも検出します。
 
-また、コンプライアンス マネージャーは、 [Microsoft Secure Score](../security/defender/microsoft-secure-score.md) によって監視される補完的改善アクションからのシグナルも検出します。 これらのシグナルを使用して、コンプライアンス マネージャーは特定の改善アクションを自動的にテストできるため、コンプライアンス アクティビティの効率を最大限に高めることができます。 改善アクションが正常にテストおよび実装されると、完全なポイントを受け取り、全体的なコンプライアンス スコアにクレジットされます。
+これらのシグナルを使用して、コンプライアンス マネージャーは特定の改善アクションを自動的にテストできるため、コンプライアンス アクティビティの効率を最大限に高めることができます。 改善アクションが正常にテストおよび実装されると、完全なポイントを受け取り、 [全体的なコンプライアンス スコアにクレジット](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls)されます。
 
-コンプライアンス マネージャーを初めて利用する組織では、自動テストが既定でオンになっています。 Microsoft 365またはOffice 365を初めてデプロイするときは、データを完全に収集し、コンプライアンス スコアに組み込むのに約 7 日かかります。 自動化されたテストがオンになっていると、アクションのテスト日は更新されませんが、テストの状態は更新されます。 新しい評価を作成した場合、スコアには Microsoft コントロール スコアとセキュア スコアの統合が自動的に含まれます。
+**コンプライアンス マネージャーを初めて利用する組織では、自動テストが既定でオンになっています。** Microsoft 365 またはOffice 365を初めてデプロイすると、データを完全に収集してコンプライアンス スコアに組み込むのに約 7 日かかります。 自動化されたテストがオンになっていると、アクションのテスト日は更新されませんが、テストの状態は更新されます。 新しい評価を作成した場合、スコアには Microsoft コントロール スコアとセキュア スコアの統合が自動的に含まれます。 この設定を編集または無効にするには、以下の [自動テスト設定の管理](#manage-automated-testing-settings) に関するページを参照してください。
+
+#### <a name="how-to-tell-which-actions-are-tested-automatically"></a>どのアクションが自動的にテストされるかを確認する方法
+
+[ **改善アクション]** ページで、[ **テストソース** ] 列を見つけます。 値が **[自動]** として一覧表示されている場合、アクションはコンプライアンス マネージャーによって自動的にテストされます。  値が **[手動]** の場合、アクションは組織によってテストされます。 値が **Parent** の場合、アクションはリンク先の別のアクションのテスト状態を継承します。 [改善アクション のテスト ソース](compliance-manager-improvement-actions.md#update-testing-source)に関する詳細を取得します。
+
+#### <a name="which-actions-cant-be-tested-automatically"></a>自動的にテストできないアクション
+
+現時点では、Microsoft 365 にスコープされていないテンプレートの改善アクションは、自動テストの対象になりません。 たとえば、ユニバーサル テンプレートや Microsoft Azure または Microsoft Dynamics 用のテンプレートには、自動的にテストできるアクションはありません。 [評価テンプレート](compliance-manager-templates.md)の詳細については、こちらを参照してください。
 
 #### <a name="manage-automated-testing-settings"></a>自動テスト設定を管理する
 
 組織のグローバル管理者は、いつでも自動化されたテストの設定を変更することができます。 一般的な改善のための処置では自動化されたテストをオフにし、個別アクションではオンにすることができます。 以下の手順に従って、自動テストの設定を変更します。
 
-1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>を選択します。
+1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定] を**</a>選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -145,11 +153,8 @@ Microsoft Purview コンプライアンス ポータルのコンプライアン�
 
 6. **[保存]** を選択して設定を保存します。 画面の上部に、選択が保存されたことを示す確認メッセージが表示されます。 失敗と表示された場合は、もう一度やり直してください。
 
-**注**: グローバル管理者だけがすべてのアクションの自動更新をオンまたはオフにすることができます。 コンプライアンス マネージャーの管理者は、個別アクションに自動更新をオンにすることができますが、すべてのアクションにグローバルにオンにすることはできません。
-
-**詳細情報**
-- [継続的監視がコンプライアンス スコアに与える影響の詳細について説明します](compliance-score-calculation.md#how-compliance-manager-continuously-assesses-controls)。
-- [改善アクションのテスト ソースを指定する方法の詳細については、こちらを参照してください](compliance-manager-improvement-actions.md#update-testing-source)。
+> [!NOTE]
+> すべてのアクションの自動更新を有効または無効にできるのは、グローバル管理者のみです。 コンプライアンス マネージャーの管理者は、個別アクションに自動更新をオンにすることができますが、すべてのアクションにグローバルにオンにすることはできません。
 
 ### <a name="manage-user-history"></a>ユーザー履歴の管理
 
@@ -159,7 +164,7 @@ Microsoft Purview コンプライアンス ポータルのコンプライアン�
 
 **ユーザー履歴の設定を確認するには、以下のようにします。**
 
-1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>を選択します。
+1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定] を**</a>選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -177,7 +182,7 @@ Microsoft Purview コンプライアンス ポータルのコンプライアン�
 
 **ユーザー別にレポートをエクスポートするには、以下の手順に従ってください。**
 
-1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>を選択します。
+1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定] を**</a>選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -195,7 +200,7 @@ Microsoft Purview コンプライアンス ポータルのコンプライアン�
 
 **以下の手順に従って、改善のための処置を別のユーザーに再割り当てします。**
 
-1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>を選択します。
+1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定] を**</a>選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -222,7 +227,7 @@ Microsoft Purview コンプライアンス ポータルのコンプライアン�
 
 ユーザーの履歴を削除するには、以下の手順に従います。
 
-1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a>を選択します。
+1. Microsoft Purview コンプライアンス ポータルで <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**[設定] を**</a>選択します。
 
 2. 設定ページで **コンプライアンス マネージャー** を選択します。
 
@@ -365,7 +370,7 @@ Microsoft Purview コンプライアンス ポータルのコンプライアン�
 - **改善のための処置**: 制御の実装を満たすために完了したアクションの数。
 - **Microsoft アクション**: Microsoft 制御の実施を満たすために完了したアクションの数
 - **グループ**: 評価が属するグループの名前
-- **製品**: 関連付けられた製品 (Microsoft 365など)、または評価用に定義された別の製品
+- **製品**: 関連付けられた製品 (Microsoft 365 など)、または評価用に定義された別の製品
 - **規制**: 評価に適用される規制基準、ポリシー、または法律
 
 ### <a name="filtering-your-assessments-view"></a>評価の表示をフィルター処理する

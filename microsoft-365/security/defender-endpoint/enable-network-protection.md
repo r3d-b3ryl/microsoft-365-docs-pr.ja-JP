@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: e53cda0ac61bdc546e972d663bf0063b02b21ad3
-ms.sourcegitcommit: 570c3be37b6ab1d59a4988f7de9c9fb5ca38028f
+ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65363267"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574005"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
@@ -74,7 +74,7 @@ ms.locfileid: "65363267"
 
 ### <a name="powershell"></a>PowerShell
 
-1. スタート メニューに **「powershell**」と入力し、**Windows PowerShell** 右クリックして [**管理者として実行**] を選択します。
+1. スタート メニューに「**powershell**」と入力し、**[Windows PowerShell]** を右クリックして **[管理者として実行]** を選択します。
 
 2. 次のコマンドレットを入力します。
 
@@ -99,6 +99,28 @@ ms.locfileid: "65363267"
 
 ### <a name="microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャー
 
+#### <a name="microsoft-defender-for-endpoint-baseline-method"></a>Microsoft Defender for Endpoint 基準計画メソッド
+
+1. Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com).
+2. **エンドポイント セキュリティ のセキュリティ** > **ベースライン** > **Microsoft Defender for Endpointベースライン** に移動します。
+3. [ **プロファイルの作成**] を選択し、プロファイルの名前を指定して、[ **次へ**] を選択します。
+4. [**構成設定]** セクションで、[**攻撃面の縮小規則**] > [**ブロック**]、[**有効にする]**、または [**ネットワーク保護を有効** にする **監査**] の順に選択します。 **[次へ]** を選択します。
+5. 組織で必要に応じて、適切な **スコープ タグ** と **割り当てを** 選択します。
+7. すべての情報を確認し、[ **作成**] を選択します。
+
+#### <a name="antivirus-policy-method"></a>ウイルス対策ポリシーの方法
+1. Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com).
+2. **エンドポイント セキュリティ** > **ウイルス対策** に移動する
+3. **[ポリシーの作成] を選択する**
+4. [**ポリシーの作成] ポップアップで**、[**プラットフォーム**] **ボックスの一覧から Windows 10、Windows 11、Windows Server** を選択します。
+5. **[プロファイル**] ボックスの一覧から **[Microsoft Defender ウイルス対策**] を選択し、[**作成**] を選択します。
+6. プロファイルの名前を指定し、[ **次へ**] を選択します。
+7. [**構成設定**] セクションで、[**ネットワーク保護** を有効 **にする] で [無効]**、[**有効 (ブロック モード)]** 、または **[有効 ( 監査モード)]** の順に選択し、[**次へ**] を選択します。
+8. 組織で必要に応じて、適切な **割り当て** タグと **スコープ タグ** を選択します。
+9. すべての情報を確認し、[ **作成**] を選択します。
+
+#### <a name="configuration-profile-method"></a>構成プロファイルメソッド
+
 1. Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com).
 
 2. **[デバイス]** > **[構成プロファイル]** > **[プロファイルの作成]** に移動します。
@@ -107,9 +129,9 @@ ms.locfileid: "65363267"
 
 4. **テンプレート名** で、テンプレートの一覧から **[エンドポイント保護** の選択] を選択し、[**作成**] を選択します。
 
-4. **Endpoint** **protectionBasics** >  に移動し、プロファイルの名前を指定して、[**次へ**] を選択します。
+4. **[Endpoint Protection** > **の基本]** に移動し、プロファイルの名前を指定して、[**次へ**] を選択します。
 
-5. [**構成設定]** セクションで、**Microsoft Defender Exploit Guard** >  **Network filteringNetwork** >  **protectionEnable** >  または **Audit** に移動します。 **[次へ]** を選択します。
+5. [**構成設定]** セクションで、**Microsoft Defender Exploit Guard** > **Network フィルターネットワーク****保護** > **の** > 有効化または監査に移動 **します**。 **[次へ]** を選択します。
 
 6. 組織で必要に応じて、適切な **スコープ タグ**、 **割り当て**、 **適用規則** を選択します。 管理者は、より多くの要件を設定できます。
 
@@ -127,15 +149,15 @@ ms.locfileid: "65363267"
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して、**Exploit Guard** \> **Network 保護****Microsoft Defender ウイルス対策Windows Defender** \> **コンポーネント**\>をWindowsします。
+3. ツリーを **Windows コンポーネント** \> **の Microsoft Defender ウイルス対策** \> **Windows Defender Exploit Guard** \> **Network 保護** に展開します。
 
    > [!NOTE]
-   > 以前のバージョンのWindowsでは、グループ ポリシー パスに "Microsoft Defender ウイルス対策" ではなく "Windows Defender ウイルス対策" と表示される場合があります。
+   > 以前のバージョンの Windows では、グループ ポリシー パスに "Microsoft Defender ウイルス対策" ではなく "Windows Defender ウイルス対策" と表示される場合があります。
 
 4. [ **ユーザーとアプリが危険な Web サイトにアクセスできないようにする** ] 設定をダブルクリックし、オプションを **[有効]** に設定します。 [オプション] セクションで、次のいずれかのオプションを指定する必要があります。
     - **ブロック** - ユーザーは悪意のある IP アドレスとドメインにアクセスできません。
     - **無効 (既定値)** - ネットワーク保護機能は機能しません。 ユーザーは悪意のあるドメインへのアクセスをブロックされません。
-    - **監査モード** - ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、イベントはWindows イベント ログに記録されます。 ただし、ユーザーがアドレスにアクセスすることはブロックされません。
+    - **監査モード** - ユーザーが悪意のある IP アドレスまたはドメインにアクセスした場合、Windows イベント ログにイベントが記録されます。 ただし、ユーザーがアドレスにアクセスすることはブロックされません。
 
    > [!IMPORTANT]
    > ネットワーク保護を完全に有効にするには、グループ ポリシー オプションを **[有効]** に設定し、[オプション] ドロップダウン メニューで **[ブロック**] を選択する必要があります。
@@ -147,7 +169,7 @@ ms.locfileid: "65363267"
 
 1. Configuration Manager コンソールを開きます。
 
-2. **資産とコンプライアンス** > **Endpoint Protection Windows Defender** >  **Exploit Guard** に移動します。
+2. **資産とコンプライアンス** > **エンドポイント保護** > **Windows Defender Exploit Guard** に移動します。
 
 3. リボンから **[Exploit Guard Policy の作成** ] を選択して、新しいポリシーを作成します。
    - 既存のポリシーを編集するには、ポリシーを選択し、リボンまたは右クリック メニューから **[プロパティ** ] を選択します。 [ **ネットワーク保護** ] タブから [ **ネットワーク保護** の構成] オプションを編集します。  
