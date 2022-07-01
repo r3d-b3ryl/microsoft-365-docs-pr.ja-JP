@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 21420958d063969a588a4413ba5ee4629e2eb027
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: f46b142755b02b069a17b189b465779654f67412
+ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078417"
+ms.lasthandoff: 06/30/2022
+ms.locfileid: "66556792"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -64,6 +64,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |機能 |Windows |Mac |iOS |Android |Web |
 |-----------|-------:|----|----|--------|----|
 |[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[多言語サポート](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | レビュー中 |
 |新しいドキュメントに[既定の ラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                                        |
 |既存のドキュメントに[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do) | プレビュー: [ベータ チャネル](https://office.com/insider)へのロールアウト | プレビュー: [現在のチャネル (プレビュー)](https://office.com/insider) にロールアウト | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[ラベル変更の正当な理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上  <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -90,6 +91,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |機能 |Outlook for Windows |Outlook for Mac |Outlook on iOS |Outlook on Android |Outlook on the web |
 |-----------|-------------------:|----------------|---------------|-------------------|-------------------|
 |[ラベルを手動で適用、変更、または削除する](https://support.microsoft.com/en-us/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)| 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
+|[多言語サポート](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-powershell)| 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上 | 4.7.1 以上 | 4.0.39 以上 | はい |
 |[既定のラベルを適用する](sensitivity-labels.md#what-label-policies-can-do)                                         | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[ラベル変更の正当な理由を要求する](sensitivity-labels.md#what-label-policies-can-do)                     | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
 |[カスタム ヘルプ ページへのリンクを提供する](sensitivity-labels.md#what-label-policies-can-do)                       | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上                 | 4.7.1 以上         | 4.0.39 以上           | はい               |
@@ -104,7 +106,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中           | レビュー中               | はい |
 |[既定ラベルと必須ラベルのさまざまな設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                   | 4.2111 以上           | 4.2111 以上               | はい |
 |[PDF サポート](#pdf-support) | レビュー中|  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
-|
+|[S/MIME 保護を適用する](#configure-a-label-to-apply-smime-protection-in-outlook)                    | レビュー中 | ロールアウト: 16.61 以上 <sup>\*</sup>                   | ロールアウト: 4.2208以上 | ロールアウト: 4.2203 以上 | レビュー中 |
 
 **脚注:**
 
@@ -404,6 +406,34 @@ Outlook アプリが必須のラベル付けをオフにすることをサポー
 > 
 > これらの PowerShell 設定で選択した値は、Microsoft Purview コンプライアンス ポータルのラベル ポリシー構成に反映され、これらの設定をサポートする Outlook アプリで自動的に機能します。 その他の PowerShell の詳細設定は、Azure Information Protection 統合ラベル付けクライアントでのみサポートされたままです。
 
+## <a name="configure-a-label-to-apply-smime-protection-in-outlook"></a>Outlook で S/MIME 保護を適用するようにラベルを構成する
+
+> [!NOTE]
+> この機能は現在、組み込みのラベル付けのためにロールアウトされています。 このページの Outlook の [機能テーブル](#sensitivity-label-capabilities-in-outlook) と行 [ **S/MIME 保護の適用**] を使用して、この機能をサポートする Outlook の最小バージョンを特定します。
+> 
+> S/MIME 保護を適用するようにラベルを構成しても、Outlook アプリではまだサポートされていない場合、ラベルは Outlook に表示され、適用できますが、S/MIME 設定は無視されます。 Exchange 自動ラベル付けポリシーに対してこのラベルを選択することはできません。
+
+この構成は、Microsoft Purview コンプライアンス センターでは使用できません。 [Office 365 セキュリティ/コンプライアンス センター PowerShell ](/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell) に接続した後、 [Set-Label](/powershell/module/exchange/set-label) または [New-Label](/powershell/module/exchange/new-label) cmd で PowerShell の詳細設定を使用する必要があります。
+
+これらの設定は、作業中の [ S/MIME 展開](/microsoft-365/security/office-365-security/s-mime-for-message-signing-and-encryption) があり、[ Azure Information ProtectionからのRights Management 暗号化を使用する既定の保護](encryption-sensitivity-labels.md)ではなく、電子メールにラベルでこの保護方法を自動的に適用する場合にのみ使用します。 結果として得られる保護は、ユーザーが Outlook から S/MIME オプションを手動で選択した場合と同じです。
+
+|構成  |詳細設定のキー/値 |
+|---------|---------|
+|**S/MIME デジタル署名** | SMimeSign="True" |
+|**S/MIME 暗号化** | SMimeEncrypt="True"|
+
+これらの設定に対して構成するラベルは、コンプライアンス ポータルで暗号化用に構成する必要はありません。 ただし、その場合、S/MIME 保護は Outlook でのみRights Management暗号化を置き換えます。 他のアプリの場合、ラベルは Microsoft Purview コンプライアンス ポータルで指定された暗号化設定を適用します。
+
+秘密度ラベル GUID が **8faca7b8-8d20-48a3-8ea2-0f96310a848e** である PowerShell コマンドの例:
+
+```PowerShell
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeSign="True"}
+
+Set-Label -Identity "8faca7b8-8d20-48a3-8ea2-0f96310a848e" -AdvancedSettings @{SMimeEncrypt="True"}
+```
+
+PowerShell の詳細設定の指定に関する詳細については、「[PowerShell の詳細設定の指定に関するヒント](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings)」を参照してください。
+
 ## <a name="pdf-support"></a>PDF サポート
 
 組み込みのラベル付けについては、このページの[機能](#support-for-sensitivity-label-capabilities-in-apps)セクションの表を使用して、サポートされている最小バージョンを特定してください。 Azure Information Protection 統合ラベル付けクライアントは、Office アプリでは PDF をサポートしていません。
@@ -428,14 +458,13 @@ PDF シナリオはサポートされていません:
 
 - PDF/A 形式と暗号化
     
-     ラベルが暗号化を適用する場合、長期アーカイブ用に設計されたこの PDF 形式はサポートされておらず、ユーザーは Office ドキュメントを PDF に変換できません。
+     長期アーカイブ用に設計されたこの PDF 形式は、ラベルが暗号化を適用する場合はサポートされず、ユーザーが Office ドキュメントを PDF に変換できなくなります。 構成情報については、「 [ISO 19005-1 への PDF 準拠を強制する (PDF/A)](https://admx.help/?Category=Office2016&Policy=office16.Office.Microsoft.Policies.Windows::L_EnforcePDFcompliancewithISO190051PDFA) 」に関するグループ ポリシードキュメントを参照してください。
     
 - パスワード保護と暗号化
     
     ドキュメントのラベルが暗号化を適用する場合、オプション **[ファイル]** > **[情報]** > **[ドキュメントの保護]** > **[パスワードで暗号化]** はサポートされません。 このシナリオでは、ユーザーは [パスワードで暗号化] オプションを使用できなくなります。
 
 この機能の詳細については、「[Office アプリで作成された PDF に秘密度ラベルを適用する](https://insider.office.com/blog/apply-sensitivity-labels-to-pdfs-created-with-office-apps)」の発表を参照してください。
-
 
 ## <a name="auditing-labeling-activities"></a>ラベル付けアクティビティの監査
 
