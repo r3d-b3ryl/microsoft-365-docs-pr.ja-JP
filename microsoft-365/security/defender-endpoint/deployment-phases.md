@@ -1,5 +1,5 @@
 ---
-title: 展開フェーズ
+title: Microsoft Defender for Endpointデプロイの概要
 description: そのサービスにエンドポイントを準備、設定、オンボードしてMicrosoft Defender for Endpointをデプロイする方法について説明します
 keywords: デプロイ、準備、セットアップ、オンボード、フェーズ、デプロイ、デプロイ、導入、構成
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c39ef92448317e625f3f2e6948f69a38093b1504
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 3520d249e7241eb1b890c3939fe6e6165d5c6011
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467711"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607611"
 ---
-# <a name="deployment-phases"></a>展開フェーズ
+# <a name="microsoft-defender-for-endpoint-deployment-overview"></a>Microsoft Defender for Endpointデプロイの概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -81,8 +81,8 @@ Microsoft Defender for Endpointには多くの機能が用意されています�
 
 ### <a name="in-scope"></a>スコープ内
 
-- Microsoft エンドポイント マネージャーとMicrosoft Endpoint Configuration Managerを使用してエンドポイントをサービスにオンボードし、機能を構成する
-- Defender for Endpoint エンドポイントでの検出と対応 (EDR) 機能を有効にする
+- Microsoft エンドポイント マネージャーと Microsoft Endpoint Configuration Managerを使用してエンドポイントをサービスにオンボードし、機能を構成する
+- Defender for Endpoint エンドポイントの検出と応答 (EDR) 機能の有効化
 - Defender for Endpoint Endpoint Protection Platform (EPP) 機能を有効にする
   - 次世代の保護
   - 攻撃面の縮小

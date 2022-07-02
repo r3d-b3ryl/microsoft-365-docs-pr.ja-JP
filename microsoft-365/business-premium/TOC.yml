@@ -74,6 +74,8 @@
           href: m365bp-onboard-devices-mdb.md
         - name: Windows デバイスを保護する
           items:
+            - name: Windows 10 Proにアップグレードする (必要な場合)
+              href: m365bp-upgrade-windows-10-pro.md
             - name: Windows 10 デバイスをセキュリティで保護する
               href: m365bp-secure-windows-devices.md
             - name: Windows デバイスを管理する

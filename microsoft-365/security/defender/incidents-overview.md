@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 70f75fd5986a5d837e33b3caf0b7cb23239ddce5
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: c8fd4be82e9ff778db136db314faa6c100240856
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731594"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607501"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用したインシデント対応
 
@@ -106,9 +106,12 @@ Microsoft 365 Defender ポータルのクイック起動で **インシデント
 
 :::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Microsoft 365 Defender ポータルのインシデントとそのデータとインシデントのタブとの関係。" lightbox="../../media/incidents-overview/incidents-security-center.png":::
 
+> [!NOTE]
+> *サポートされていないアラートの種類* のアラートの状態が表示される場合は、自動調査機能では、自動調査を実行するためにそのアラートを取得できないことを意味します。 ただし、 [これらのアラートは手動で調査](investigate-incidents.md#alerts)できます。
+
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Microsoft 365 Defenderのインシデント対応ワークフローの例
 
-Microsoft 365 Defender ポータルを使用してMicrosoft 365のインシデントに対応するためのワークフローの例を次に示します。
+Microsoft 365 Defender ポータルを使用して Microsoft 365 のインシデントに対応するためのワークフローの例を次に示します。
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-workflow.png" alt-text="Microsoft 365 Defender ポータルのインシデント対応ワークフローの例。" lightbox="../../media/incidents-overview/incidents-example-workflow.png":::
 
@@ -121,7 +124,7 @@ Microsoft 365 Defender ポータルを使用してMicrosoft 365のインシデ�
 
 1. インシデントごとに、 [攻撃とアラートの調査と分析を](investigate-incidents.md)開始します。
 
-   1. インシデントの概要を表示して、そのスコープと重大度、および [**概要**] タブと **[Graph** (プレビュー)] タブで影響を受けるエンティティを確認します。
+   1. インシデントの概要を表示して、そのスコープと重大度、および **概要** タブと **グラフ** (プレビュー) タブで影響を受けるエンティティを理解します。
 
    1. アラートの分析を開始し、[ **アラート** ] タブで配信元、スコープ、重大度を理解します。
 
@@ -201,7 +204,7 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
 
 次の手順に従って新しいルールを作成し、メール通知設定をカスタマイズします。
 
-1. ナビゲーション ウィンドウで、**インシデント メール通知設定 > Microsoft 365 Defender >** 選択します。
+1. ナビゲーション ウィンドウで、[**設定] > Microsoft 365 Defender > [インシデント メール通知]** を選択します。
 2. [ **項目の追加]** を選択します。
 3. [ **基本]** ページで、ルール名と説明を入力し、[ **次へ**] を選択します。
 4. [ **通知の設定]** ページで、次を構成します。
@@ -242,7 +245,7 @@ Microsoft Learn のこのラーニング モジュールを使用して、Micros
 | レベル | 手順 |
 |:-------|:-----|
 | **New** | <ol><li> 最初の[インシデントに対応するチュートリアル](first-incident-overview.md)を参照して、Microsoft 365 Defender ポータルで一般的な分析、修復、インシデント後のレビューの一般的なプロセスのガイド付きツアーを、攻撃の例と共に入手してください。 </li><li> 重大度やその他の要因に基づいて [、優先順位を](incident-queue.md) 付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。</li></ol> |
-| **経験** | <ol><li> Microsoft 365 Defender ポータルの [インシデント] ページから **インシデント** キューを概要します。 グループ プロフィールでは次の操作ができます。 </li> <ul><li> 重大度やその他の要因に基づいて [、優先順位を](incident-queue.md) 付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li><li> インシデント [の調査](investigate-incidents.md) を実行します。 </li></ul> </li><li> [脅威分析](threat-analytics.md)を使用して、新たな脅威を追跡し、対応します。 </li><li>  [高度な脅威](advanced-hunting-overview.md)ハンティングを使用して、脅威をプロアクティブに探します。 </li><li> フィッシング、パスワード スプレー、アプリの同意付与攻撃に関する詳細なガイダンスについては、次の [インシデント対応プレイブック](/security/compass/incident-response-playbooks) を参照してください。 </li></ol> |
+| **経験** | <ol><li> Microsoft 365 Defender ポータルの [**インシデント]** ページからインシデント キューの使用を開始します。 グループ プロフィールでは次の操作ができます。 </li> <ul><li> 重大度やその他の要因に基づいて [、優先順位を](incident-queue.md) 付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li><li> インシデント [の調査](investigate-incidents.md) を実行します。 </li></ul> </li><li> [脅威分析](threat-analytics.md)を使用して、新たな脅威を追跡し、対応します。 </li><li>  [高度な脅威](advanced-hunting-overview.md)ハンティングを使用して、脅威をプロアクティブに探します。 </li><li> フィッシング、パスワード スプレー、アプリの同意付与攻撃に関する詳細なガイダンスについては、次の [インシデント対応プレイブック](/security/compass/incident-response-playbooks) を参照してください。 </li></ol> |
 
 ### <a name="security-team-role"></a>セキュリティ チームロール
 
@@ -250,7 +253,7 @@ Microsoft Learn のこのラーニング モジュールを使用して、Micros
 
 | 役割 | 手順 |
 |---|---|
-| インシデント レスポンダー (階層 1) | Microsoft 365 Defender ポータルの [インシデント] ページから **インシデント** キューを概要します。 グループ プロフィールでは次の操作ができます。 <ul><li> 重大度やその他の要因に基づいて [、優先順位を](incident-queue.md) 付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li></ul> |
+| インシデント レスポンダー (階層 1) | Microsoft 365 Defender ポータルの [**インシデント]** ページからインシデント キューの使用を開始します。 グループ プロフィールでは次の操作ができます。 <ul><li> 重大度やその他の要因に基づいて [、優先順位を](incident-queue.md) 付ける必要があるインシデントを確認します。 </li><li> [インシデント管理ワークフローに](manage-incidents.md)基づいて、名前の変更、割り当て、分類、タグとコメントの追加を含むインシデントを管理します。 </li></ul> |
 | セキュリティ調査担当者またはアナリスト (階層 2) | <ol><li> Microsoft 365 Defender ポータルの [**インシデント]** ページからインシデントの [調査](investigate-incidents.md)を実行します。 </li><li> フィッシング、パスワード スプレー、アプリの同意付与攻撃に関する詳細なガイダンスについては、次の [インシデント対応プレイブック](/security/compass/incident-response-playbooks) を参照してください。 </li></ol> |
 | 高度なセキュリティ アナリストまたは脅威の捜索者 (階層 3) | <ol><li>Microsoft 365 Defender ポータルの [**インシデント]** ページからインシデントの [調査](investigate-incidents.md)を実行します。 </li><li> [脅威分析](threat-analytics.md)を使用して、新たな脅威を追跡し、対応します。 </li><li> [高度な脅威](advanced-hunting-overview.md)ハンティングを使用して、脅威をプロアクティブに探します。 </li><li> フィッシング、パスワード スプレー、アプリの同意付与攻撃に関する詳細なガイダンスについては、次の [インシデント対応プレイブック](/security/compass/incident-response-playbooks) を参照してください。 |
 | SOC マネージャー | [Microsoft 365 Defenderをセキュリティ オペレーション センター (SOC) に統合する](integrate-microsoft-365-defender-secops.md)方法について説明します。 |

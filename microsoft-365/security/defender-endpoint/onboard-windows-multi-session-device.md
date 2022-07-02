@@ -1,6 +1,6 @@
 ---
-title: Azure Virtual Desktop でWindowsマルチセッション デバイスをオンボードする
-description: Azure Virtual Desktop でのマルチセッション デバイスWindowsオンボードの詳細については、この記事を参照してください
+title: Azure Virtual Desktop で Windows デバイスをオンボードする
+description: Azure Virtual Desktop で Windows デバイスを Defender for Endpoint にオンボードする方法について説明します
 keywords: Azure Virtual Desktop、AVD、Microsoft Defender、エンドポイント、オンボード
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,26 +15,27 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7a093a3b50d7153c71eecb9707ff8ab0dbef0d20
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 91a9cc3e7a9fdc38a05deaf04f2124819f41d1ae
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013290"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607435"
 ---
-# <a name="onboard-windows-multi-session-devices-in-azure-virtual-desktop"></a>Azure Virtual Desktop でWindowsマルチセッション デバイスをオンボードする
+# <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Azure Virtual Desktop で Windows デバイスをオンボードする
 
 読み取り時間 6 分
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- Azure Virtual Desktop (AVD) で実行されているマルチセッションをWindowsする
+- Azure Virtual Desktop (AVD) で実行されている Windows マルチセッション
+- [Windows 10 Enterpriseマルチセッション](/microsoft-365/security/defender-endpoint/azure-server-integration)
 
 Microsoft Defender for Endpointでは、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされます。 組織のニーズによっては、従業員が管理されていないデバイス、リモートの場所、または同様のシナリオから企業データやアプリにアクセスできるように、VDI または Azure Virtual Desktop セッションを実装することが必要になる場合があります。 Microsoft Defender for Endpointを使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
-[非永続的 VDI に関する考慮事項](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)について理解します。 [Azure Virtual Desktop](/azure/virtual-desktop/overview) では非永続化オプションは提供されませんが、新しいホストのプロビジョニングとマシンの再デプロイに使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の揮発性が高まり、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響を与え、セキュリティ アナリストの可視性が低下する可能性があります。
+[非永続的 VDI に関する考慮事項](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)について理解します。 [Azure Virtual Desktop](/azure/virtual-desktop/overview) には非永続化オプションは用意されていませんが、新しいホストのプロビジョニングとマシンの再デプロイに使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の揮発性が高まり、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響を与え、セキュリティ アナリストの可視性が低下する可能性があります。
 
 > [!NOTE]
 > オンボード方法の選択に応じて、デバイスは次のようにポータルMicrosoft Defender for Endpoint表示できます。
@@ -55,7 +56,7 @@ AVD ホスト マシンをオンボードするには、いくつかの方法が
 
 - 起動時にゴールデン イメージ (または共有場所から) でスクリプトを実行します。
 - 管理ツールを使用してスクリプトを実行します。
-- [Microsoft Defender for Cloudとの統合を](azure-server-integration.md)通じて
+- [Microsoft Defender for Cloud との統合](azure-server-integration.md)を通じて
 
 #### <a name="scenario-1-using-local-group-policy"></a>*シナリオ 1: ローカル グループ ポリシーの使用*
 
@@ -73,7 +74,7 @@ AVD ホスト マシンをオンボードするには、いくつかの方法が
 
 1. VDI 構成パッケージ .zip ファイルを開く (WindowsDefenderATPOnboardingPackage.zip)
 
-    1. Microsoft 365 Defender ポータルナビゲーション ウィンドウで、(デバイス管理 **の下** で) **設定** \> **エンドポイント** \> **オンボードを** 選択します。
+    1. Microsoft 365 Defender ポータルナビゲーション ウィンドウで、(**デバイス管理** の下で) **[設定** \> **エンドポイント** \> **のオンボード**] を選択します。
     1. オペレーティング システムとしてWindows 10またはWindows 11を選択します。
     1. **[展開方法]** フィールドで、非永続的エンドポイントの VDI オンボード スクリプトを選択します。
     1. [ **パッケージのダウンロード** ] をクリックし、.zip ファイルを保存します。
@@ -86,7 +87,7 @@ AVD ホスト マシンをオンボードするには、いくつかの方法が
 
 2. グループ ポリシー管理エディターで、[**コンピューター構成** \> **の基本設定]** **コントロール パネル** の\>設定に移動します。
 
-3. **[スケジュールされたタスク**] を右クリックし、[**新規**] をクリックし、[**イミディエイト タスク**] (少なくとも Windows 7) をクリックします。
+3. **[スケジュールされたタスク**] を右クリックし、[**新規**] をクリックし、[**イミディエイト タスク** ] (少なくとも Windows 7) をクリックします。
 
 4. 開いた [タスク] ウィンドウで、[ **全般** ] タブに移動します。[ **セキュリティ オプション** ] で[ **ユーザーまたはグループの変更** ] をクリックし、「SYSTEM」と入力します。 [ **名前の確認]** をクリックし、[OK] をクリックします。 NT AUTHORITY\SYSTEM は、タスクを実行するユーザー アカウントとして表示されます。
 
@@ -106,10 +107,10 @@ AVD ホスト マシンをオンボードするには、いくつかの方法が
 
 管理ツールを使用してマシンを管理する予定がある場合は、Microsoft Endpoint Configuration Managerを使用してデバイスをオンボードできます。
 
-詳細については、「[Configuration Managerを使用してWindowsデバイスをオンボードする](configure-endpoints-sccm.md)」を参照してください。
+詳細については、「[Configuration Managerを使用して Windows デバイスをオンボードする](configure-endpoints-sccm.md)」を参照してください。
 
 > [!WARNING]
-> [攻撃表面縮小ルールリファレンス](attack-surface-reduction-rules-reference.md)を使用する予定の場合は、ルール "[PSExec および WMI コマンドから発信されるプロセスの作成をブロック](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)する" ルールを使用しないでください。これは、そのルールがMicrosoft Endpoint Configuration Managerによる管理と互換性がないためです。 この規則は、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。
+> [攻撃表面縮小ルールリファレンス](attack-surface-reduction-rules-reference.md)を使用する予定の場合は、Microsoft Endpoint Configuration Managerを使用した管理と互換性がないため、ルール "[PSExec および WMI コマンドから発信されるプロセスの作成をブロック](attack-surface-reduction-rules-reference.md#block-process-creations-originating-from-psexec-and-wmi-commands)する" ルールを使用しないでください。 この規則は、Configuration Manager クライアントが正しく機能するために使用する WMI コマンドをブロックします。
 
 > [!TIP]
 > デバイスをオンボードした後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認することができます。 詳細については、「[新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](run-detection-test.md)」 を参照してください。
@@ -154,12 +155,12 @@ AVD ホスト マシンをオンボードするには、いくつかの方法が
 
 #### <a name="licensing-requirements"></a>ライセンスの要件
 
-ライセンスに関する注意: Windows Enterpriseマルチセッションを使用する場合は、要件に応じて、Microsoft Defender for Endpoint (ユーザーごと)、Windows Enterprise E5、Microsoft 365を通じてすべてのユーザーにライセンスを付与するかを選択できます。 セキュリティ、Microsoft 365 E5、またはMicrosoft Defender for Cloudを通じて VM のライセンスが付与されています。
+ライセンスに関する注意: Windows Enterprise マルチセッションを使用する場合は、要件に応じて、Microsoft Defender for Endpoint (ユーザーごと)、Windows Enterprise E5、Microsoft 365 セキュリティ、またはMicrosoft 365 E5を通じてすべてのユーザーにライセンスを付与するか、Microsoft Defender for Cloud を通じて VM のライセンスを付与するかを選択できます。
 Microsoft Defender for Endpointのライセンス要件については、「[ライセンス要件」を参照してください](minimum-requirements.md#licensing-requirements)。
 
 ### <a name="known-issues-and-limitations"></a>既知の問題と制限事項
 
-Windows 10マルチセッションでの Web フィルター処理では、Microsoft Edgeのみがサポートされます。
+マルチセッションでの Web フィルター処理では、Microsoft Edge のみがサポートWindows 10。
 
 #### <a name="related-links"></a>関連リンク
 

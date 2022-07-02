@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 5a95980147c66fa8655f5c1b2ebe8adfff9e87c0
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: cc53717feed347019540ffcb8c85687a6c28537f
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64501269"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607479"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果
 
@@ -79,7 +79,7 @@ Microsoft 365 Defenderでは、自動調査が実行されると、[その調査
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。 
 
-2. ナビゲーション ウィンドウで、[**インシデント] &** **alertsIncidents** >  を選択します。 
+2. ナビゲーション ウィンドウで、[インシデント& **アラート** > **インシデント**] を選択します。 
 
 3. 一覧で項目を選択し、[ **インシデント ページを開く**] を選択します。
 
@@ -105,7 +105,7 @@ Microsoft 365 Defenderでは、自動調査が実行されると、[その調査
 | タブ | 説明 |
 |:--------|:--------|
 | **Investigation graph (調査グラフ)** | 調査を視覚的に表します。 エンティティと検出された脅威のほか、警告、承認を待っているアクションがあるかどうかが示されます。<br/>グラフ上の項目を選択すると、詳細を表示できます。 たとえば、[ **証拠** ] アイコンを選択すると、[ **証拠** ] タブに移動し、検出されたエンティティとその評決を確認できます。 |
-| **アラート** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Microsoft Defender for Cloud Apps、その他のMicrosoft 365 Defender機能の脅威保護機能から取得できます。|
+| **アラート** | 調査に関連する警告を一覧表示します。 アラートは、ユーザーのデバイス、Office アプリ、Microsoft Defender for Cloud Apps、その他のMicrosoft 365 Defender機能の脅威保護機能から取得できます。 <br> <br> *[サポートされていないアラートの種類]* が表示された場合は、自動調査機能では自動調査を実行するためにそのアラートを取得できないことに注意してください。 ただし、 [これらのアラートは手動で調査](investigate-incidents.md#alerts)できます。
 | **Devices** | 調査に含まれるデバイスとその修復レベルを一覧表示します。 (修復レベルは [、デバイス グループの自動化レベルに](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups)対応します)。 |
 | **メールボックス** |検出された脅威の影響を受けるメールボックスを一覧表示します。  |
 | **Users**  | 検出された脅威の影響を受けるユーザー アカウントを一覧表示します。 |

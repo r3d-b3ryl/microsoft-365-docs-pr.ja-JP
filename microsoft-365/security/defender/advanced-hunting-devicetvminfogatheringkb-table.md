@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 056f208f1f7739276319bfaad36225718543b718
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: c654ca395762426072bf8e5e20fd3f62e78a480c
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532739"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607110"
 ---
 # <a name="devicetvminfogatheringkb"></a>DeviceTvmInfoGatheringKB
 
@@ -34,7 +34,7 @@ ms.locfileid: "66532739"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 `DeviceTvmInfoGatheringKB`高度なハンティング スキーマのテーブルには、テーブルで収集された[Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-vulnerability-management/defender-vulnerability-management)評価イベント データのメタデータが`DeviceTvmInfoGathering`含まれています。 この `DeviceTvmInfoGatheringKB` 表には、Defender Vulnerability Management の情報収集によってデバイスを評価するために使用されるさまざまな構成と攻撃領域の評価の一覧が含まれています。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
@@ -80,12 +80,11 @@ DeviceTvmInfoGatheringKB
 ```kusto
 // Return all devices on which the TLS version 1.0 is enabled 
 DeviceTvmInfoGathering 
-| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
+| where AdditionalFields.TlsClient10 == "Enabled" or AdditionalFields.TlsServer10 == "Enabled" 
 ```
 
+## <a name="related-topics"></a>関連トピック
 
-
-## <a name="related-topics"></a>関連項目
 - [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)

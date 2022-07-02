@@ -16,14 +16,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: e83306f4af82d8a24745ca5af3d146bb50c41ee7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b253fe7dad271684f5c0e927ec162ea4e993df29
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603398"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607391"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration ManagerでMicrosoft Defender for Endpointを管理する
 
@@ -34,15 +34,12 @@ ms.locfileid: "66603398"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-
 Microsoft Intune (Intune) と [Microsoft Endpoint Configuration Manager](/mem) ([Configuration Manager](/mem/intune/fundamentals/what-is-intune)) を含む [Microsoft エンドポイント マネージャー](/mem/configmgr/core/understand/introduction)を使用することをお勧めします) を使用して、デバイス (エンドポイントとも呼ばれます) に対する組織の脅威保護機能を管理します。
 
 - [エンドポイント マネージャーの詳細を確認する](/mem/endpoint-manager-overview)
 - [Configuration ManagerとIntuneを使用して、Windows 10 デバイスとWindows 11 デバイスのMicrosoft Defender for Endpointを共同管理する](manage-mde-post-migration-intune.md)
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration ManagerでMicrosoft Defender for Endpointを構成する
-
-<br/><br/>
 
 |タスク|追加情報|
 |---|---|
@@ -60,7 +57,7 @@ Microsoft Intune (Intune) と [Microsoft Endpoint Configuration Manager](/mem) (
 - [Microsoft 365 Defenderの概要](/microsoft-365/security/defender-endpoint/use)
 - [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender ポータルのセキュリティ操作ダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

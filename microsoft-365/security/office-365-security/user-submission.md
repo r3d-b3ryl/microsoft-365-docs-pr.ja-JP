@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者は、ユーザーによって報告されたスパムやフィッシングメールを収集するようにメールボックスを構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 64ce66e10e7f6f549479b6f8a838c5db220d36dd
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a4a46225b911c3272baa66772a0cf9ab63f1a1da
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602450"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607589"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーから報告されたメッセージの設定
 
@@ -49,19 +49,19 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
 
 次の記事を使用して、ユーザーが報告したメッセージをカスタム メールボックスに移動するために必要な前提条件を構成します。
 
-- [カスタム メールボックスを SecOps メールボックスとして識別する](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)
+- [カスタム メールボックスを SecOps メールボックスとして識別します](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)。
 
 - カスタム メールボックス[のマルウェア対策ポリシーを作成](configure-your-spam-filter-policies.md#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies)します。
-  - マルウェアのゼロ時間自動消去 (ZAP) がオフになっている ([**保護設定]** セクション \> [ **マルウェアのゼロ時間自動消去を有効にする** ] は選択されていません)。
-  - 共通添付ファイル フィルター オプションがオフになっている (**[保護設定]** セクション \> [ **共通添付ファイル フィルターを有効にする** ] が選択されていません)。
+  - マルウェアのゼロ時間自動消去 (ZAP) がオフになっている ([**保護設定]** セクション>[ **マルウェアのゼロ時間自動消去を有効にする]** が選択されていません)。
+  - 共通添付ファイル フィルター オプションがオフになっている ([**保護の設定]** セクション> **[共通添付ファイル フィルターを有効にする]** が選択されていません)。
 
-Microsoft Defender for Office 365がある場合は、高度なフィルター処理がメッセージを報告するユーザーに影響を与えないように、次の設定も構成する必要があります。
+Microsoft Defender for Office 365がある場合は、高度なフィルター処理が報告されたメッセージに影響を与えないように、次の設定も構成する必要があります。
 
 - カスタム メールボックスが[事前設定されたセキュリティ ポリシー](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)に含まれていないことを確認する
 
-- [[セーフ リンク](set-up-safe-links-policies.md)] スキャンがオフになっているカスタム メールボックスのセーフ リンク ポリシーを作成します (**[メッセージ] セクションで、悪意のある可能性がある不明な URL に対するアクションを選択** します\>**)。**
+- [[セーフ リンク](set-up-safe-links-policies.md) ] スキャンがオフになっているカスタム メールボックスのセーフ リンク ポリシーを作成します (**[メッセージ] セクションの [不明な悪意のある URL のアクションを選択** > **オフ** にします)。
 
-- [安全な添付ファイル](set-up-safe-attachments-policies.md)のスキャンがオフになっているカスタム メールボックスの安全な添付ファイル ポリシーを作成します (**[安全な添付ファイルの不明なマルウェアの応答**] セクション\>**はオフ**)。
+- 動的配信を含む [安全な添付ファイル](set-up-safe-attachments-policies.md)のスキャンがオフになっているカスタム メールボックスの安全な添付ファイル ポリシーを作成します (**[安全な添付ファイルの不明なマルウェアの応答**] セクション>**オフ**)。
 
 メールボックスが適用可能なすべての前提条件を満たしていることを確認したら、この記事の手順を使用して、ユーザー提出メールボックスを構成できます。
 
@@ -84,11 +84,11 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Microsoft 365 Defender ポータルを使用して、ユーザー申請メールボックスを構成する
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー] &ルール** \> **の [脅威ポリシー** \> **] [ユーザーが報告したメッセージの設定**] の [**その他]** セクションに移動します。 **[ユーザー申請]** ページに直接移動するには、 <https://security.microsoft.com/userSubmissionsReportMessage>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー] & [ルール** > **] の [脅威ポリシー** > **] [ユーザーが報告したメッセージ設定**] の [**その他]** セクションに移動します。 **[ユーザー申請]** ページに直接移動するには、 <https://security.microsoft.com/userSubmissionsReportMessage>.
 
 2. **[ユーザー申請]** ページで表示される内容は、[**Microsoft Outlook レポート メッセージ] ボタン** の設定が **[オフ]** と **[オン**] のどちらであるかによって決まります。
 
-   - **Microsoft Outlook レポート メッセージ ボタン** \>**に** ![オンに切り替えます。](../../media/scc-toggle-on.png): レポート メッセージ アドイン、レポート フィッシング アドイン、または組み込みのレポートをOutlook on the webで使用し、次の設定を構成する場合は、このオプションを選択します。
+   - **Microsoft Outlook レポート メッセージ ボタン** > **に** ![オンに切り替えます。](../../media/scc-toggle-on.png): レポート メッセージ アドイン、レポート フィッシング アドイン、または組み込みのレポートをOutlook on the webで使用し、次の設定を構成する場合は、このオプションを選択します。
      - **報告されたメッセージの送信先**: 次のいずれかのオプションを選択します。
        - **Microsoft**: ユーザー提出メールボックスは使用されません (報告されたすべてのメッセージは Microsoft に送信されます)。
        - **Microsoft と組織のメールボックス**: 表示されるボックスに、既存のExchange Online メールボックスのメール アドレスを入力します。 配布グループは許可されません。 ユーザーの提出は、分析のために Microsoft と、分析する管理者またはセキュリティ運用チームのカスタム メールボックスの両方に送信されます。
@@ -123,7 +123,7 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
 
           > 電子メールは、分析のためにそのまま Microsoft に送信されます。 一部の電子メールには、個人情報や機密情報が含まれている場合があります。
 
-   - **Microsoft Outlook レポート メッセージ ボタン** \>**オフ** ![オフに切り替えます。](../../media/scc-toggle-off.png): レポート メッセージ アドイン、レポート フィッシング アドイン、または組み込みのレポートの代わりにサード パーティ製のレポート ツールを使用する場合は、このオプションを選択Outlook on the web、次の設定を構成します。
+   - **Microsoft Outlook レポート メッセージ ボタン** > **オフ** ![オフに切り替えます。](../../media/scc-toggle-off.png): レポート メッセージ アドイン、レポート フィッシング アドイン、または組み込みのレポートの代わりにサード パーティ製のレポート ツールを使用する場合は、このオプションを選択Outlook on the web、次の設定を構成します。
      - **[このカスタム メールボックスを使用して、ユーザーから報告された申請を受信する**] を選択します。 表示されるボックスに、電子メールを受信できる既存のExchange Online メールボックスのメール アドレスを入力します。
 
    - **[検疫レポート メッセージ] ボタン**: エンド ユーザーが検疫からメッセージを報告できるようにする場合は、この機能を有効にします。
@@ -151,12 +151,9 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
 - 2|または迷惑ではない:
 - 3|またはフィッシング:
 
-例として以下のようなものがあります。
+例:
 
 `3|This part is ignored by the system` <br>
 `Not Junk:This part of the subject is ignored as well`
-
-- これらのメッセージはどちらも、件名に基づいて迷惑メールとして報告されています。
-- 残りは無視されます。
 
 この形式に従わないメッセージは、申請ポータルに正しく表示されません。

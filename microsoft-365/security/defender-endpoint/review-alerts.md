@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 5/1/2020
 ms.technology: mde
-ms.openlocfilehash: 91cd06188a8337f3d0df0b9c67d7c98e389e4351
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 76503c180dfdd2314254efc9315235c0802ab7f8
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466772"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607545"
 ---
 # <a name="review-alerts-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointでアラートを確認する
 
@@ -69,6 +69,9 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
 アラートが開いたときに詳細ウィンドウで使用できるその他の情報には、MITRE の手法、ソース、その他のコンテキストの詳細が含まれます。
 
+> [!NOTE]
+> *サポートされていないアラートの種類* のアラートの状態が表示される場合は、自動調査機能では、自動調査を実行するためにそのアラートを取得できないことを意味します。 ただし、 [これらのアラートは手動で調査](../defender/investigate-incidents.md#alerts)できます。
+
 ## <a name="review-affected-assets"></a>影響を受ける資産を確認する
 
 影響を受ける資産セクションでデバイスまたはユーザー カードを選択すると、詳細ウィンドウでデバイスまたはユーザーの詳細に切り替わります。
@@ -81,7 +84,7 @@ Defender for Endpoint でアラートの名前を選択すると、アラート 
 
    :::image type="content" source="images/user-page-details.png" alt-text="ユーザーが選択されている場合の詳細ウィンドウ" lightbox="images/user-page-details.png":::
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [インシデント キューを表示して整理する](view-incidents-queue.md)
 - [インシデントの調査](investigate-incidents.md)

@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365の保護機能全体に Standard および Strict ポリシー設定を適用する方法を学習できます
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eb9eb8c3f45b0047922be854972d1f96123342cb
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115523"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607655"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー
 
@@ -66,16 +66,16 @@ ms.locfileid: "66115523"
   各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
 
   > [!IMPORTANT]
-  > 複数の異なる条件または例外は加算されません。包括的です。 ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します。
+  > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
   >
-  > - 受信者は次のとおりです:romain@contoso.com
-  > - 受信者は次のメンバーです。
+  > - 受信者は次のとおりです: romain@contoso.com
+  > - 受信者が次のメンバーの場合: Executive
   >
-  > ポリシーは、エグゼクティブ グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+  > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
   >
-  > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+  > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
-- **組み込みの保護** (Defender for Office 365のみ): セーフ リンクとセーフ添付ファイルの保護のみを有効にするプロファイル。 このプロファイルは、セーフ リンクとセーフ添付ファイルの既定のポリシーを効果的に提供します。このポリシーには既定のポリシーがありませんでした。
+- **組み込みの保護** (Defender for Office 365のみ): 安全なリンクと安全な添付ファイルの保護のみを有効にするプロファイル。 このプロファイルは、安全なリンクと安全な添付ファイルの既定のポリシーを効果的に提供します。既定のポリシーは一度もありませんでした。
 
   **組み込み保護の** 場合、既定では、すべてのDefender for Office 365ユーザーに対して事前設定されたセキュリティ ポリシーがオンになっています。 お勧めしませんが、特定のユーザーに保護が適用されないように、 **ユーザー**、 **グループ**、 **ドメイン** に基づいて例外を構成することもできます。
 
@@ -85,22 +85,22 @@ ms.locfileid: "66115523"
 
 事前設定されたセキュリティ ポリシーでは、EOP とMicrosoft Defender for Office 365のさまざまな保護機能の対応するポリシーが使用されます。 これらのポリシーは、**Standard Protection** または **Strict** Protection の事前設定されたセキュリティ ポリシーをユーザーに割り当てた _後_ に作成されます。 これらのポリシーの設定は変更できません。
 
-- **Exchange Online Protection (EOP) ポリシー**: これには、Exchange Online メールボックスを持つMicrosoft 365組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織が含まれます。
+- **Exchange Online Protection (EOP) ポリシー**: これらのポリシーは、Exchange Online メールボックスを持つすべての Microsoft 365 組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織にあります。
 
   - 標準プリセット セキュリティ ポリシーと Strict **Preset Security Policy** という名前 **の**[スパム対策](configure-your-spam-filter-policies.md)ポリシー。
   - Standard Preset Security Policy と Strict **Preset Security Policy** という名前の [マルウェア対策](configure-anti-malware-policies.md)**ポリシー**。
-  - **Standard Preset Security Policy と Strict Preset Security Policy** (スプーフィング設定) という名前の [EOP フィッシング対策](set-up-anti-phishing-policies.md#spoof-settings)**ポリシー**。
+  - **Standard Preset Security** Policy と **Strict** Preset Security [Policy (スプーフィング設定) という名前のフィッシング対策ポリシー (スプーフィング保護)。](set-up-anti-phishing-policies.md#spoof-settings)
 
   > [!NOTE]
   > 送信スパム ポリシーは、事前設定されたセキュリティ ポリシーの一部ではありません。 既定の送信スパム ポリシーは、事前設定されたセキュリティ ポリシーのメンバーを自動的に保護します。 または、カスタム送信スパム ポリシーを作成して、事前設定されたセキュリティ ポリシーのメンバーの保護をカスタマイズすることもできます。 詳細については、「 [EOP で送信スパム フィルターを構成する](configure-the-outbound-spam-policy.md)」を参照してください。
 
-- **Microsoft Defender for Office 365 ポリシー**: これには、Microsoft 365 E5またはDefender for Office 365アドオン サブスクリプションを持つ組織が含まれます。
+- **Microsoft Defender for Office 365 ポリシー**: これらのポリシーは、Microsoft 365 E5またはDefender for Office 365アドオン サブスクリプションを持つ組織にあります。
   - **Standard Preset Security** Policy と Strict Preset Security Policy という名前のDefender for Office 365のフィッシング対策 **ポリシー**。次のものが含まれます。
     - EOP フィッシング対策ポリシーで使用できるのと同じ [スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings) 。
     - [偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [高度なフィッシングのしきい値](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
-  - [セーフ 標準](set-up-safe-links-policies.md)**プリセット セキュリティ ポリシー、Strict Preset Security Policy**、**および組み込み保護****ポリシー** という名前のリンク ポリシー。
-  - セーフ **標準プリセット セキュリティ ポリシー、Strict Preset Security Policy**、および **組み込み保護** ポリシーという名前の [添付ファイル](set-up-safe-attachments-policies.md) **ポリシー**。
+  - **Standard Preset Security** Policy、**Strict Preset** Security Policy、**および組み込み保護** ポリシーという名前の [セーフ リンク](set-up-safe-links-policies.md) ポリシー。
+  - **Standard Preset Security Policy、Strict Preset Security Policy**、**および組み込み保護** ポリシーという名前の [安全な添付ファイル](set-up-safe-attachments-policies.md) **ポリシー**。
 
 EOP 保護は、Defender for Office 365保護とは異なるユーザーに適用することも、同じ受信者に EOP とDefender for Office 365を適用することもできます。
 
@@ -122,13 +122,13 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 1. **厳格な保護** の事前設定されたセキュリティ ポリシー
 2. **Standard Protection** 事前設定セキュリティ ポリシー
 3. カスタム セキュリティ ポリシー
-4. **組み込みの保護** プリセットのセキュリティ ポリシーと既定のセキュリティ ポリシー
+4. 安全なリンクと安全な添付ファイルの **組み込みの保護** 事前設定セキュリティ ポリシー、およびマルウェア対策、スパム対策、フィッシング対策の既定のポリシー。
 
-言い換えると、**Strict Protection** ポリシーの設定は **Standard 保護** ポリシーの設定をオーバーライドします。これは、カスタム ポリシーの設定をオーバーライドします。組 **み込みの保護** プリセット セキュリティ ポリシー (セーフ リンクと添付ファイルセーフ) と既定のポリシー (スパム対策、マルウェア対策、フィッシング対策) の設定がオーバーライドされます。
+言い換えると、 **Strict Protection** ポリシーの設定は **Standard 保護** ポリシーの設定をオーバーライドします。これは、 **組み込みの保護** プリセット セキュリティ ポリシー (安全なリンクと安全な添付ファイル) と既定のポリシー (スパム対策、マルウェア対策、フィッシング対策) の設定をオーバーライドするカスタム ポリシーの設定をオーバーライドします。
 
 たとえば、 **Standard Protection** にセキュリティ設定が存在し、管理者がユーザーの **Standard 保護** を有効にしている場合、カスタム ポリシーまたは既定のポリシー (同じユーザー) でその設定に対して構成されている設定ではなく、 **Standard 保護** 設定が適用されます。 特定のニーズを満たすために、組織内の他のユーザーにカスタム ポリシーを適用するときに **、標準** または **厳格な保護** ポリシーのみを適用する組織の一部が存在する場合があることに注意してください。
 
-**組み込みの保護** は、既存のセーフ リンクポリシーまたはセーフ添付ファイル ポリシーの受信者には影響しません。 **Standard Protection**、**Strict Protection**、またはカスタム セーフ リンクまたはセーフ添付ファイル ポリシーを既に構成している場合、これらのポリシーは **組み込み保護**_の前に__常に_ 適用されるため、既存のプリセットポリシーまたはカスタム ポリシーで既に定義されている受信者には影響しません。
+**組み込みの保護** は、既存の安全なリンクまたは安全な添付ファイル ポリシーの受信者には影響しません。 **Standard Protection**、**Strict Protection**、カスタムセーフ リンク、または安全な添付ファイルポリシーを既に構成している場合、これらのポリシーは **組み込み保護**_の前に__常に_ 適用されるため、既存のプリセットポリシーまたはカスタム ポリシーで既に定義されている受信者には影響しません。
 
 ## <a name="assign-preset-security-policies-to-users"></a>事前設定されたセキュリティ ポリシーをユーザーに割り当てる
 
@@ -144,7 +144,7 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Microsoft 365 管理センターの対応するAzure Active Directory ロールにユーザーを追加すると、Microsoft 365の他の機能に必要なアクセス許可 _と_ アクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可 _と_ アクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Microsoft 365 Defender ポータルを使用して、Standard および Strict の事前設定済みセキュリティ ポリシーをユーザーに割り当てる
 
@@ -230,7 +230,7 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
 ### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-the-built-in-protection-preset-security-policy"></a>Microsoft 365 Defender ポータルを使用して、組み込みの保護プリセット セキュリティ ポリシーの割り当てを変更する
 
-**組み込みの保護** プリセット セキュリティ ポリシーはすべての受信者に割り当てられ、**Standard Protection** または **Strict Protection** プリセット セキュリティ ポリシー、またはカスタム セーフ リンクポリシーまたはセーフ添付ファイル ポリシーで定義されている受信者には影響しません。
+**組み込みの保護** プリセット セキュリティ ポリシーはすべての受信者に割り当てられ、**Standard Protection** または **Strict Protection** プリセット セキュリティ ポリシー、またはカスタムのセーフ リンクまたは安全な添付ファイル ポリシーで定義されている受信者には影響しません。
 
 そのため、通常は **、組み込みの保護** プリセット セキュリティ ポリシーに例外を推奨しません。
 
@@ -238,7 +238,7 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
 2. **[事前設定されたセキュリティ ポリシー**] ページの [**組み込みの保護**] セクションで [**除外の追加 (推奨されません)]** を選択します。
 
-3. 表示される [**組み込みの保護から除外**] ポップアップで、組み込みのセーフ リンクとセーフ添付ファイル保護から除外される内部受信者を特定します。
+3. 表示される [ **組み込みの保護から除外** ] ポップアップで、組み込みの安全なリンクと安全な添付ファイル保護から除外されている内部受信者を特定します。
    - **Users**
    - **グループ**
    - **ドメイン**

@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 05fb01b411b1b32eeac763f3c364b29e29f5d8f5
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 1cbaff007a5ef2839cbcf51babc7a057c7b756c0
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603706"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607457"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>IntuneでMicrosoft Defender for Endpointを管理する
 
@@ -58,8 +58,6 @@ Microsoft Intune (Intune) を含む [Microsoft エンドポイント マネー�
 
 次の表に、Intuneを使用してMicrosoft Defender for Endpointを構成するために実行できるさまざまなタスクを示します。 すべてを一度に構成する必要はありません。タスクを選択し、対応するリソースを読み取って続行します。
 
-<br/><br/>
-
 |タスク|追加情報|
 |---|---|
 |**Intuneを使用して組織のデバイスを管理** し、デバイスとそのデバイスに保存されているデータを保護する|[Microsoft Intune でデバイスを保護する](/mem/intune/protect/device-protect)|
@@ -85,7 +83,7 @@ Microsoft Intune (Intune) を含む [Microsoft エンドポイント マネー�
 - [Microsoft 365 Defenderの概要](/microsoft-365/security/defender-endpoint/use)
 - [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 - [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender ポータルのセキュリティ操作ダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

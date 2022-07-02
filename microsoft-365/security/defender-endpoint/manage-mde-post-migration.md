@@ -1,5 +1,5 @@
 ---
-title: 移行後Microsoft Defender for Endpoint管理する
+title: 初期セットアップまたは移行後のMicrosoft Defender for Endpointの管理
 description: Microsoft Defender for Endpointに切り替えたので、次の手順は脅威保護機能を管理することです。
 keywords: 移行後, 管理, 運用, メンテナンス, 使用率, Microsoft Defender for Endpoint, edr
 ms.prod: m365-security
@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/29/2021
+ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 0103fea7a569b7462e455541e574fee58c719d24
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: d00de67b52f521042d5595320346f875f8c89c9e
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601094"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607567"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-post-migration"></a>Microsoft Defender for Endpointの管理、移行後
+# <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>初期セットアップまたは移行後のMicrosoft Defender for Endpointの管理
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
@@ -33,11 +33,9 @@ ms.locfileid: "66601094"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-以前のエンドポイント保護とウイルス対策ソリューションからMicrosoft Defender for Endpointに移行したら、次の手順では機能と機能を管理します。 組織[の](/mem/endpoint-manager-overview)デバイスとセキュリティ設定を管理するには、[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)と [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)を含む Microsoft エンドポイント マネージャーを使用することをお勧めします。 ただし、[Azure Active Directory Domain Servicesの グループ ポリシー オブジェクト](/azure/active-directory-domain-services/manage-group-policy)など、他のツールやメソッドを使用することもできます。
+Microsoft Defender for Endpointを設定して構成したら、次の手順では機能と機能を管理します。 組織[の](/mem/endpoint-manager-overview)デバイスとセキュリティ設定を管理するには、[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)と [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)を含む Microsoft エンドポイント マネージャーを使用することをお勧めします。 ただし、[Azure Active Directory Domain Servicesの グループ ポリシー オブジェクト](/azure/active-directory-domain-services/manage-group-policy)など、他のツールやメソッドを使用することもできます。
 
 次の表に、使用できるさまざまなツール/方法と、詳細を確認するためのリンクを示します。
-
-<br/><br/>
 
 |ツール/メソッド|説明|
 |---|---|
