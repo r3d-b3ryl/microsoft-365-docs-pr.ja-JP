@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium の生産性とセキュリティを活用してビジネスを支援する方法について説明します。
-ms.openlocfilehash: 8cfdbdf6f8980a0dbc3a30ca5994714b82571920
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 851abcfc2e7d6b55c4c6d201132dabafc56a898e
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489883"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574158"
 ---
 # <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Microsoft 365セキュリティに関する推奨事項がユーザーに与える影響
 
@@ -67,7 +67,7 @@ Microsoft 365 Business Premium には、お気に入りの Office 生産性ア�
 
 ## <a name="resources-to-train-your-users"></a>ユーザーをトレーニングするためのリソース
 
-このライブラリで提供されているセキュリティに関するおすすめ候補により、サイバー攻撃者が環境にアクセスすることがはるかに困難になります。 しかし、セキュリティ戦略の重要な要素として、社内でシステムを定期的に使用するユーザー&mdash;へのトレーニングがあります。 ユーザーは、防御の最前線になるのに役立ちます。 誰もが、より安全な環境を維持しながら、生産的に作業する方法を知る必要があります。 
+これらのミッションで提供されるセキュリティに関する推奨事項により、サイバー攻撃者が環境にアクセスすることがはるかに困難になります。 ただし、セキュリティ戦略の重要な部分には、組織のトレーニング メンバー&mdash;、システムを定期的に使用する社内のユーザーが含まれます。 ユーザーは、防御の最前線になるのに役立ちます。 誰もが、より安全な環境を維持しながら、生産的に作業する方法を知る必要があります。
 
 組織内のすべてのユーザーが次の作業を行うのに役立つリソースを利用できます:
 

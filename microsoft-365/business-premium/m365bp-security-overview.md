@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: サイバー攻撃を防ぐために使用できる多要素認証などのサイバーセキュリティ ツールを提供する Microsoft 365 Business Premium のセキュリティの概要。
-ms.openlocfilehash: c6941de1c52eaeaf87f45d5269770fe1fd2585a8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 52dfacaf5d418ef32da0b450a7f93caffa597218
+ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493670"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66574301"
 ---
 # <a name="bump-up-security"></a>セキュリティを強化する
 

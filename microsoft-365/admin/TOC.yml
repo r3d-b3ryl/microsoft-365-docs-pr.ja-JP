@@ -241,6 +241,28 @@
               href: get-help-with-domains/change-nameservers-at-any-domain-registrar.md
             - name: 任意の DNS ホストで DNS レコードを作成する
               href: get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md
+            - name: IONOS by 1&1で DNS レコードを接続する
+              href: dns/create-dns-records-at-1-1-internet.md
+            - name: 123-reg.co.uk で DNS レコードを接続する
+              href: dns/create-dns-records-at-123-reg-co-uk.md
+            - name: Amazon Web Services (AWS) で DNS レコードを接続する
+              href: dns/create-dns-records-at-aws.md
+            - name: Cloudflare で DNS レコードを接続する
+              href: dns/create-dns-records-at-cloudflare.md
+            - name: GoDaddy で DNS レコードを接続する
+              href: dns/create-dns-records-at-godaddy.md
+            - name: Namecheap で DNS レコードを接続する
+              href: dns/create-dns-records-at-namecheap.md
+            - name: Network Solutions で DNS レコードを接続する
+              href: dns/create-dns-records-at-network-solutions.md
+            - name: OVH で DNS レコードを接続する
+              href: dns/create-dns-records-at-ovh.md
+            - name: web.com で DNS レコードを接続する
+              href: dns/create-dns-records-at-web-com.md
+            - name: Wix で DNS レコードを接続する
+              href: dns/create-dns-records-at-wix.md
+            - name: Windows ベースの DNS を使って Microsoft の DNS レコードを作成する
+              href: dns/create-dns-records-using-windows-based-dns.md
         - name: ドメインに関する問題のトラブルシューティング
           href: get-help-with-domains/find-and-fix-issues.md
     - name: データとサービスを管理する
