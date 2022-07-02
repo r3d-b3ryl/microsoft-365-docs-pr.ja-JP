@@ -2,12 +2,12 @@
   href: index.md
 - name: カスタム モデル
   items:
+    - name: カスタム モデル間の違い
+      href: difference-between-document-understanding-and-form-processing-model.md
     - name: ドキュメント理解
       items:
         - name: 概要
           href: document-understanding-overview.md
-        - name: モデル間の違い
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: サンプル モデルをインポートします
           href: learn-about-document-understanding-models-through-the-sample-model.md
         - name: コンテンツ センターを作成する
@@ -46,8 +46,6 @@
       items:
         - name: 概要
           href: form-processing-overview.md
-        - name: モデル間の違い
-          href: difference-between-document-understanding-and-form-processing-model.md
         - name: フォーム処理モデルを作成する
           href: create-a-form-processing-model.md
         - name: 保持ラベルを適用する

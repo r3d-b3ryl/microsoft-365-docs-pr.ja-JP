@@ -25,14 +25,16 @@ ms.custom:
 - adminvideo
 description: 請求書または請求明細書は、Microsoft 365 管理センターで確認できます。 また、課金内容を保存したり印刷したりすることもできます。
 ms.date: 01/25/2022
-ms.openlocfilehash: b82b3c6472abad250c65900208fbdc5e2603e2f6
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 72bbf1b8c845fb462b761e44f94d0f99bcea2aba
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491739"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602836"
 ---
 # <a name="view-your-microsoft-365-for-business-subscription-bill-or-invoice"></a>Microsoft 365 for business のサブスクリプションの請求書を表示する
+
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 この記事は、一般法人向け Microsoft 365 サブスクリプションを持っているユーザーを対象としています。
   
@@ -45,6 +47,8 @@ ms.locfileid: "66491739"
 この記事で説明されている手順を実行するには、全体管理者または課金管理者である必要があります。
   
 ## <a name="watch-view-download-or-print-your-bill"></a>ウォッチ: 請求書の表示、ダウンロード、印刷
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197915) で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

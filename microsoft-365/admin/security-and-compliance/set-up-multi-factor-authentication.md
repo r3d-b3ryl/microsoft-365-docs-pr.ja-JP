@@ -28,14 +28,16 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: 組織向けに多要素認証を設定する方法について説明します。
 monikerRange: o365-worldwide
-ms.openlocfilehash: 6879a49bf0868081fed6ad8171138ce7001783c4
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 00a92a7755c0200d0ad707e84ceb13fac7c978c9
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739917"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66603891"
 ---
 # <a name="set-up-multifactor-authentication-for-microsoft-365"></a>Microsoft 365 Business Premium の多要素認証を設定する
+
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
 
 多要素認証とは、Microsoft 365 にサインインするために、あなたとあなたの従業員が複数の方法を提供する必要があることを意味します。これは、ビジネスを保護する最も簡単な方法の 1 つです。 [多要素認証 (MFA) および Microsoft 365 のサポート](multi-factor-authentication-microsoft-365.md)を理解して、多要素認証を組織に設定し、展開します。 
 
@@ -46,6 +48,8 @@ ms.locfileid: "65739917"
 > このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="watch-turn-on-multifactor-authentication"></a>ウォッチ: 多要素認証を有効にする
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197909) で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MuO3?autoplay=false]
 
@@ -108,10 +112,8 @@ Azure AD P1 および P2 の詳細については、「[Azure Active Directory �
 
 ほとんどのサブスクリプションでは、先進認証が自動的にオンになりますが、2017 年 8 月より前にサブスクリプションを購入した場合、多要素認証などの機能を Outlook などの Windows クライアントで機能させるには、先進認証をオンにする必要があります。
 
-
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> で、左側のナビゲーションの **[設定]** \> **[組織の設定]** の順に選択します。
 2. **[サービス]** タブで、**[先進認証]** を選択し、**[先進認証]** ウィンドウで、**[先進認証を有効にする]** が選択されていることを確認します。**[変更を保存]** を選択します。
-
 
 ## <a name="next-steps"></a>次の手順
 
