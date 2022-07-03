@@ -23,14 +23,16 @@ search.appverid:
 - MET150
 description: 各チーム メンバーにユーザー アカウントを付与して、Microsoft 365 ライセンス、サインイン資格情報、および Microsoft 365 メールボックスを持つ方法について説明します。
 ms.date: 07/01/2020
-ms.openlocfilehash: 8ebc4b99840f9987d115539d0039efa1950499d3
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: b9662263711bb08063a9c2ff9f70767bb3ea7ce4
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466814"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601996"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>ユーザーを追加して同時にライセンスを割り当てる
+
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 チームのメンバーそれぞれに、[一般法人向け Microsoft 365](https://www.microsoft.com/microsoft-365/business) にサインインしてアクセスするためのユーザー アカウントが必要です。ユーザー アカウントを追加する最も簡単な方法は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a> で 1 人ずつ追加することです。この作業が完了すると、ユーザーに Microsoft 365 のライセンス、サインイン資格情報、および Microsoft 365 メールボックスが与えられます。
 
@@ -42,6 +44,8 @@ ms.locfileid: "65466814"
 ユーザーを追加してライセンスを割り当てるには、グローバル管理者、ライセンス管理者、またはユーザー管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ## <a name="watch-add-users-in-the-dashboard-view"></a>視聴: ダッシュボード ビューでユーザーを追加する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198205)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 

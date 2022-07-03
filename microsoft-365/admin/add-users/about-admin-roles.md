@@ -26,14 +26,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: 特定のビジネス機能にマップし、管理センターで特定のタスクを実行するためのアクセス許可を付与するサービス管理者ロールなどの管理者ロールについて説明します。
-ms.openlocfilehash: bef4328146c62d19257ca50d33004ce7d1185fe1
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: cd40eb3421abf21205aac909fa2cb1796d7f0aa2
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636242"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601974"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの管理者ロールについて
+
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 Microsoft 365 または Office 365 のサブスクリプションには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>を使用して組織内のユーザーに割り当てることができる一連の管理者役割があります。各管理者ロールは一般的なビジネス機能に対応し、組織のユーザーに、管理センターで特定のタスクを実行するためのアクセス許可を付与します。
 
@@ -43,6 +45,8 @@ Microsoft 365 または Office 365 のサブスクリプションには、<a hre
 > このトピックの手順に関するヘルプが必要な場合は、[Microsoft Small Business スペシャリストとの協働](https://go.microsoft.com/fwlink/?linkid=2186871)を検討してください。 Business Assist を使用すると、オンボーディングから日常使用まで、ビジネスを成長させながら従業員とともに一日中いつでも中小企業の専門家にアクセスできます。
 
 ## <a name="watch-what-is-an-admin"></a>ビデオ: 管理者とは
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198028)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 

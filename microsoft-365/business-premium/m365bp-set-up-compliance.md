@@ -23,16 +23,20 @@ search.appverid:
 - BCS160
 - MET150
 description: データ損失を防ぎ、お客様と顧客の機密情報を安全に保つためのコンプライアンス機能を設定します。
-ms.openlocfilehash: 9ce72a49b67d1ef8a66377ebfaafb075d30b60be
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: db1993a99292f9b90a3b567007b96742b0f359b2
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573797"
+ms.locfileid: "66602410"
 ---
 # <a name="set-up-compliance-features"></a>コンプライアンス機能をセットアップする
 
+
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
+
 Microsoft 365 Business Premium サブスクリプションには、コンプライアンス機能とプライバシー機能が含まれています。 これらの機能は、会社のデータを保護し、自分と顧客の機密情報をセキュリティで保護するのに役立ちます。 この記事は、コンプライアンス機能の使用を開始するために設計されています。
+
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -72,6 +76,8 @@ Microsoft 365 Business Premium には、コンプライアンス機能の設定�
 Microsoft 365 for business のコンプライアンス機能の詳細については、[Microsoft Purview のドキュメント](../compliance/index.yml)を参照してください。
 
 ## <a name="use-sensitivity-labels"></a>秘密度ラベルを使用する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198022)で、このビデオや他のビデオを確認してください。
 
 秘密度ラベルは、Office アプリ (Outlook、Word、Excel、PowerPoint など) で使用できます。 ラベルの例を次に示します。
 

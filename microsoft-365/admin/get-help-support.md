@@ -22,18 +22,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 for Business サブスクリプションのオンラインまたは電話によるサポートを受ける方法を説明します。 これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。
-ms.openlocfilehash: 3d1b69fef8bd262aada4910c82199203f4cff9ee
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 129a774d808cfc0f7f1dc860f72ede7c21ad8f1a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011784"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602858"
 ---
 # <a name="get-support-for-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 のサポートを受ける
 
 ::: moniker range="o365-worldwide"
 
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
+
 ## <a name="watch-get-help-or-support"></a>視聴: ヘルプまたはサポートを利用する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197598)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 

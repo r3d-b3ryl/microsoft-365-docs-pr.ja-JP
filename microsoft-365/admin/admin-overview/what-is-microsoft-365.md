@@ -21,16 +21,20 @@ search.appverid:
 description: IT 部分を代行するサブスクリプション サービス Microsoft 365 Business Premium についてご紹介します。
 feedback_system: None
 ms.date: 10/20/2021
-ms.openlocfilehash: 00763cd0438a28adbf98b60afed4a463086a2625
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f127ac87d4f3886a623f1c81ef2cec6f53677434
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435813"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601587"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
+
 ## <a name="watch-what-is-microsoft-365-business-premium"></a>ご覧ください: Microsoft 365 Business Premium とは
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198029)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA?autoplay=false]
 

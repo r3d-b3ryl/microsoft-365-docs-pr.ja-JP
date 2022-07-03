@@ -26,18 +26,22 @@ search.appverid:
 - MET150
 ms.assetid: 6f2b80b4-81c3-4714-a7bc-ae69313e8a33
 description: アプリ管理ポリシーを作成、編集、または削除し、Android または iOS デバイス上の作業ファイルを保護する方法について説明します。
-ms.openlocfilehash: 218646af1ea881d381d5bceca4b8c0138918ee20
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 60bc5b3b69eacf9573dd806734cb47355266d3a5
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489210"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66602056"
 ---
 # <a name="set-app-protection-settings-for-android-or-ios-devices"></a>Android または iOS デバイスのアプリ保護設定を設定する
+
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 この記事は Microsoft 365 Business Premium に適用されます。
 
 ## <a name="watch-secure-office-apps-on-ios"></a>ウォッチ: iOS 上の Office アプリをセキュリティで保護する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197828)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FLvZ?autoplay=false]
 
