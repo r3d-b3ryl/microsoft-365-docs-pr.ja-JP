@@ -21,12 +21,12 @@ description: ユーザーは、ユーザーに配信されるべきであった�
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: 3a0faf45e6c9c756490be5ae3ab69b99f3a71cb0
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941000"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607677"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>EOP のユーザーとして検疫済みメッセージを検索して解放する
 
@@ -62,7 +62,7 @@ Exchange Online のメールボックスを使用している Microsoft 365 組�
 |**メール フロー ルール (トランスポート ルール)**||||
 |メール メッセージを検疫するメール フロー ルール。||||
 
-_検疫ポリシー_ は、[サポートされている機能](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)でメッセージが検疫された理由に基づいて、検疫済みのメッセージに対してユーザーが実行できる操作を定義します。 既定の検疫ポリシーでは、前の表で説明したように、履歴機能を適用します。 管理者は、サポートされている機能で、ユーザーの制限を緩和したり厳しくしたりする機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
+_検疫ポリシー_ により、[サポートされている機能](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)で、メッセージが検疫された理由に基づいて、検疫済みメッセージに対してユーザーが実行できる操作を定義します。 既定の検疫ポリシーでは、前の表で説明したように、履歴機能を適用します。 管理者は、サポートされている機能で、ユーザーの制限を緩和したり厳しくしたりする機能を定義するカスタム検疫ポリシーを作成して適用できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
 検疫済みのメッセージは、Microsoft 365 Defender ポータルで、または (管理者が設定している場合は) 検疫ポリシーからの検疫通知にて表示および管理します。
 
@@ -137,7 +137,11 @@ _検疫ポリシー_ は、[サポートされている機能](quarantine-polici
 
    検索条件を入力したら、Enter キーを押して結果をフィルター処理します。
 
+   > [!NOTE]
+   > メインの **[検疫]** ページ内の **[検索]** ボックスでは、すべての検疫済みアイテムからではなく、現在のビュー内の検疫済みアイテムのみから検索されます。 すべての検疫済みアイテムを検索するには、**[フィルター]** を使用し、それによって表示される **[フィルター]** ポップアップを使用します。
+
 特定の検疫済みメッセージを見つけたら、そのメッセージを選択して詳細を表示し、処理を実行します (メッセージの表示、解放、ダウンロード、または削除など)。
+
 
 ### <a name="view-quarantined-message-details"></a>検疫済みメッセージの詳細を表示する
 

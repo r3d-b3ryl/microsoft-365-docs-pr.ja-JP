@@ -23,20 +23,24 @@ search.appverid:
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
 description: 組織内のユーザーがどのように Microsoft 365 サービスを使用しているかの定期的レポートを取得して、各チャートをドリルダウンして詳しい分析情報を得ます。
-ms.openlocfilehash: 481f7abf0015994ab211f55feedabc4aa615dbca
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 05bee2950cb50b0b5a21ef67e9f73cec5e78b07a
+ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486311"
+ms.lasthandoff: 07/01/2022
+ms.locfileid: "66601610"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>管理センターの Microsoft 365 レポート
 
-ユーザーが仕事でどのように Microsoft 365 サービスを使用しているかを簡単に確認できます。たとえば、サービスをかなり使用しているためにクォータに近づいているユーザーや、Microsoft 365 ライセンスをまったく必要としない可能性があるユーザーを、特定することができます。永続的ライセンス モデルがレポートに含まれます。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
+ユーザーが仕事でどのように Microsoft 365 サービスを使用しているかを簡単に確認できます。たとえば、サービスをかなり使用しているためにクォータに近づいているユーザーや、Microsoft 365 ライセンスをまったく必要としない可能性があるユーザーを、特定することができます。永続的ライセンス モデルがレポートに含まれます。 
+  
 過去 7 日、30 日、90 日、180 日間のレポートを利用できます。すべてのレポート期間のデータが最初から存在するわけではありません。レポートは、48 時間以内に使用できるようになります。
 
 ## <a name="watch-act-on-a-usage-report-in-office-365"></a>動画: Office 365 の使用状況レポートでの操作
+  
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198103)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4VjrX?autoplay=false]
 

@@ -28,12 +28,12 @@ search.appverid:
 ROBOTS: NO INDEX, NO FOLLOW
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
 description: 職場または学校アカウントへのサインイン時に Windows デバイスが受け取る既定のデバイス ポリシーの設定の構成について説明します。
-ms.openlocfilehash: 5ac09788d609752d12a6ae6efadfa8739c5a4f9a
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: a9fd78ef37aed3663572b7049ae150e85916e41b
+ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893085"
+ms.lasthandoff: 07/02/2022
+ms.locfileid: "66607413"
 ---
 # <a name="secure-windows-devices"></a>Windows 10 デバイスをセキュリティで保護する
 
@@ -41,25 +41,18 @@ ms.locfileid: "65893085"
 
 ## <a name="before-you-begin"></a>はじめに
 
-Microsoft 365 Business Premium ユーザーの Windows デバイスをセットアップするには、すべての Windows デバイスで、Windows 10 Pro バージョン 1703 (Creators Update) または Windows 11 Pro が実行されていることを確認します。
+Microsoft 365 Business Premium のユーザー用に Windows デバイスを設定する前に、すべての Windows デバイスで Windows 10 Pro が実行されていることを確認してください。
 
-Windows 10 Pro (または Windows 11 Pro) は、Windows 10 Business を展開するための前提条件です。これは、Windows 10 Pro および Windows 11 Pro を補完し、Microsoft 365 Business Premium の一元管理とセキュリティ制御を有効にする一連のクラウド サービスとデバイス管理機能です。
+Windows 10 Pro は、Windows 10 Business を展開するための前提条件です。これは、Windows 10 Pro および Windows 11 Pro を補完し、Microsoft 365 Business Premium の一元管理とセキュリティ制御を有効にする一連のクラウド サービスとデバイス管理機能です。
 
 [Microsoft 365 Business Premium の要件について詳しく説明します](https://www.microsoft.com/microsoft-365/business/microsoft-365-business-premium?activetab=pivot:techspecstab)。
 
-## <a name="windows-10-pro-and-windows-11-pro"></a>Windows 10 Pro と Windows 11 Pro
+## <a name="windows-10-pro"></a>Windows 10 Pro
 
 Windows 7 Pro、Windows 8 Pro、Windows 8.1 Pro などの以前のバージョンの Windows デバイスを実行している場合、Microsoft 365 Business Premium サブスクリプションでは、これらのデバイスを Windows 10 Pro または Windows 11 Pro にアップグレードできます。
   
-Windows デバイスをアップグレードする方法の詳細については、次の記事を参照してください。
+Windows デバイスをアップグレードする方法の詳細については、[「Windows デバイスを Windows 10 Pro にアップグレードする」](m365bp-upgrade-windows-10-pro.md)を参照してください。
 
-- [Windows Home を Windows 10 または Windows 11 Pro にアップグレードする](https://support.microsoft.com/windows/upgrade-windows-home-to-windows-pro-ef34d520-e73f-3198-c525-d1a218cc2818)
-- [Windows 10 Pro にアップグレードする](https://support.microsoft.com/windows/upgrade-to-windows-10-pro-71ecc746-0f81-a4c0-bd4b-0db8559e0796)
-
-<!---
-Could not find the Win11 equivalent upgrade link.
----> 
-  
 ## <a name="secure-your-windows-10-and-11-devices"></a>Windows 10 と 11 のデバイスをセキュリティで保護する
 
 既定では、すべての設定が **オン** になっています。次の設定を使用できます。<br/><br/>
