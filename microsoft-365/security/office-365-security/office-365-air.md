@@ -16,22 +16,22 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft Defender for Office 365で自動調査と応答機能を使用概要。
+description: Microsoft Defender for Office 365の自動調査機能と応答機能の使用を開始します。
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca64509321ff43bbe8b7baf7ec7dfa270d9afdc4
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 0fda154f8eb52ddab024a7f5bb02f980c9a05894
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941525"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617154"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の自動調査と対応 (AIR)
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
@@ -87,19 +87,19 @@ Microsoft Defender for Office 365では、修復アクションは自動的に�
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>自動調査をトリガーするアラート ポリシーはどれですか?
 
-Microsoft 365には、管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、および情報ガバナンス のリスクExchange識別するのに役立つ、多くの組み込みのアラート ポリシーが用意されています。 [既定のアラート ポリシー](../../compliance/alert-policies.md#default-alert-policies)の一部では、自動調査をトリガーできます。 次の表では、自動調査をトリガーするアラート、Microsoft 365 Defender ポータルでの重大度、および生成方法について説明します。
+Microsoft 365 には、Exchange 管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、および情報ガバナンス のリスクを特定するのに役立つ、多くの組み込みのアラート ポリシーが用意されています。 [既定のアラート ポリシー](../../compliance/alert-policies.md#default-alert-policies)の一部では、自動調査をトリガーできます。 次の表では、自動調査をトリガーするアラート、Microsoft 365 Defender ポータルでの重大度、および生成方法について説明します。
 
 |通知|重要度|アラートの生成方法|
 |---|---|---|
-|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次のいずれかが発生したときに生成されます。 <ul><li>組織内の [セーフ リンク](safe-links.md)によって保護されているユーザーが悪意のあるリンクをクリックする</li><li>URL の判定の変更は、Microsoft Defender for Office 365によって識別されます</li><li>ユーザーはセーフリンクの警告ページをオーバーライドします (組織の[セーフリンク ポリシー](set-up-safe-links-policies.md)に基づいています。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「[セーフリンク ポリシーの設定](set-up-safe-links-policies.md)」を参照してください。|
+|悪意のある可能性がある URL のクリックが検出されました|**High**|このアラートは、次のいずれかが発生したときに生成されます。 <ul><li>組織内の [安全なリンク](safe-links.md) で保護されているユーザーが悪意のあるリンクをクリックする</li><li>URL の判定の変更は、Microsoft Defender for Office 365によって識別されます</li><li>ユーザーは、(組織のセーフ リンク ポリシーに基づいて) [セーフ リンク](set-up-safe-links-policies.md)警告ページをオーバーライドします。</li></ul> <p> このアラートをトリガーするイベントの詳細については、「[セーフリンク ポリシーの設定](set-up-safe-links-policies.md)」を参照してください。|
 |ユーザーがマルウェアまたはフィッシングとして電子メール メッセージを報告する|**情報**|このアラートは、組織内のユーザーがレポート メッセージ [アドインまたはレポート](enable-the-report-message-add-in.md) フィッシング アドインを使用してフィッシング メールとしてメッセージ [を報告](enable-the-report-phish-add-in.md)するときに生成されます。|
 |マルウェアを含む電子メール メッセージは、配信後に削除されます|**情報**|このアラートは、マルウェアを含む電子メール メッセージが組織内のメールボックスに配信されるときに生成されます。 このイベントが発生した場合、Microsoft は [0 時間の自動消去 (ZAP)](zero-hour-auto-purge.md) を使用して、Exchange Onlineメールボックスから感染したメッセージを削除します。|
 |フィッシング URL を含む電子メール メッセージは、配信後に削除されます|**情報**|このアラートは、フィッシングを含むメッセージが組織内のメールボックスに配信されたときに生成されます。 このイベントが発生した場合、[Microsoft は ZAP](zero-hour-auto-purge.md) を使用してExchange Onlineメールボックスから感染したメッセージを削除します。|
 |不審な電子メール送信パターンが検出される|**Medium**|このアラートは、組織内のユーザーが疑わしいメールを送信し、電子メールの送信を制限される危険性がある場合に生成されます。 このアラートは、アカウントが侵害されたが、ユーザーを制限するのに十分なほど重大ではない可能性がある動作の早期警告です。 <p> まれですが、このポリシーによって生成されるアラートは異常である可能性があります。 ただし、[ユーザー アカウントが侵害されていないかどうか](responding-to-a-compromised-email-account.md)を確認することをお勧めします。|
-|ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されたときに生成されます。 このアラートは通常、 [電子メール アカウントが侵害](responding-to-a-compromised-email-account.md)されたときに発生します。 <p> 制限付きユーザーの詳細については、「[Microsoft 365の制限付きユーザーポータルからブロックされたユーザーを削除](removing-user-from-restricted-users-portal-after-spam.md)する」を参照してください。|
+|ユーザーが電子メールの送信を制限されている|**High**|このアラートは、組織内のユーザーが送信メールの送信を制限されたときに生成されます。 このアラートは通常、 [電子メール アカウントが侵害](responding-to-a-compromised-email-account.md)されたときに発生します。 <p> 制限付きユーザーの詳細については、「 [Microsoft 365 の制限付きユーザーポータルからブロックされたユーザーを削除](removing-user-from-restricted-users-portal-after-spam.md)する」を参照してください。|
 
 > [!TIP]
-> アラート ポリシーの詳細または既定の設定の編集については、 [Microsoft Purview コンプライアンス ポータルのアラート ポリシーに関するページを](../../compliance/alert-policies.md)参照してください。
+> アラート ポリシーの詳細または既定の設定の編集については、[Microsoft Purview コンプライアンス ポータルのアラート ポリシーに関するページを](../../compliance/alert-policies.md)参照してください。
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>AIR 機能を使用するために必要なアクセス許可
 
@@ -107,8 +107,8 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア 
 
 |タスク|ロールが必要です|
 |---|---|
-|AIR 機能を設定する|次のいずれかのロール。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらのロールは、[Azure Active Directory](/azure/active-directory/roles/permissions-reference)または[Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)で割り当てることができます。|
-|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](/azure/active-directory/roles/permissions-reference)または[Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)で割り当てられた次のいずれかのロール。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と消去 (このロールは[、Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)でのみ割り当てられます。 そこで新しい **電子メール &コラボレーション** 役割グループを作成し、検索ロールと消去ロールをその新しい役割グループに追加することが必要になる場合があります。</li></ul>|
+|AIR 機能を設定する|次のいずれかのロール。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li></ul> <p> これらのロールは、[Azure Active Directory](/azure/active-directory/roles/permissions-reference) または [Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)で割り当てることができます。|
+|自動調査の開始 <p> --- または --- <p> 推奨されるアクションを承認または拒否する|[Azure Active Directory](/azure/active-directory/roles/permissions-reference) または[Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)で割り当てられた次のいずれかのロール。 <ul><li>グローバル管理者</li><li>セキュリティ管理者</li><li>セキュリティ オペレーター</li><li>セキュリティ閲覧者 <br> --- さらに --- </li><li>検索と消去 (このロールは[、Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)でのみ割り当てられます。 そこで新しい **電子メール &コラボレーション** 役割グループを作成し、検索ロールと消去ロールをその新しい役割グループに追加することが必要になる場合があります。</li></ul>|
 
 ## <a name="required-licenses"></a>必要なライセンス
 
@@ -120,7 +120,7 @@ Microsoft 365には、管理者のアクセス許可の悪用、マルウェア 
 
 ## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで変更が間もなく行われる予定です
 
-Microsoft Defender for Office 365で AIR 機能を既に使用している場合は、[改善されたMicrosoft 365 Defender ポータル](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)にいくつかの変更が表示されます。
+Microsoft Defender for Office 365で AIR 機能を既に使用している場合は、[改善されたMicrosoft 365 Defender ポータル](../defender/microsoft-365-defender-portal.md)にいくつかの変更が表示されます。
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="統合アクション センター" lightbox="../../media/m3d-action-center-unified.png":::
 

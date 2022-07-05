@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Endpoint プラン 1 を使用した概要
-description: Defender for Endpoint プラン 1 を使用概要。 Defender for Cloudを使用し、アラートとデバイスを管理し、レポートを表示する方法について説明します。
+title: Microsoft Defender for Endpoint プラン 1 の概要
+description: Defender for Endpoint Plan 1 の使用を開始します。 Defender for Cloud の使用方法、アラートとデバイスの管理、レポートの表示方法について説明します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,14 +17,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
 ms.custom: intro-get-started
-ms.openlocfilehash: d332cbf32f5423fb16abb158f9a30a18c2391a22
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 3926282bce47af2abee905f5c95844a8a78c6d33
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64939347"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617110"
 ---
-# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint プラン 1 を使用した概要
+# <a name="get-started-with-microsoft-defender-for-endpoint-plan-1"></a>Microsoft Defender for Endpoint プラン 1 の概要
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -42,7 +42,7 @@ Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://se
 
 :::image type="content" source="../../media/mde-p1/m365-defender-portal.png" alt-text="Microsoft 365 Defenderのポータル" lightbox="../../media/mde-p1/m365-defender-portal.png":::
 
-ホーム ページには、検出されたアラート、デバイスの状態、脅威のスナップショット集計ビューがセキュリティ チームに提供されます。 Defender for Cloudは、セキュリティ運用チームが探している情報をすばやく簡単に見つけられるように設定されています。
+ホーム ページには、検出されたアラート、デバイスの状態、脅威のスナップショット集計ビューがセキュリティ チームに提供されます。 Defender for Cloud は、セキュリティ運用チームが探している情報をすばやく簡単に見つけられるように設定されています。
 
 > [!NOTE]
 > この記事に示す例は、Microsoft 365 Defender ポータルに表示されているものとは異なる場合があります。 ポータルに表示される内容は、ライセンスとアクセス許可によって異なります。 さらに、セキュリティ チームは、カードを追加、削除、並べ替えることで、組織のポータルをカスタマイズできます。
@@ -67,9 +67,9 @@ Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://se
 | **インシデント&アラート** | 展開してインシデントとアラート **を** 表示 **します**。 |
 | **インシデント&アラート** > **事件** | **インシデント** の一覧に移動します。 インシデントは、アラートがトリガーされたり、脅威が検出されたりしたときに作成されます。 既定では、[インシデント] リスト **には** 過去 30 日間のデータが表示され、最新のインシデントが最初に表示されます。 <br/><br/> 詳細については、「 [インシデント」](view-incidents-queue.md)を参照してください。 |
 | **インシデント&アラート** > **アラート** | アラートの一覧 ( **アラート** キューとも呼ばれます) に移動 **します**。 アラートは、疑わしい、または悪意のあるファイル、プロセス、または動作が検出されたときにトリガーされます。 既定では、 **アラート** の一覧には過去 30 日間のデータが表示され、最新のアラートが最初に一覧表示されます。 <br/><br/> 詳細については、「 [アラート](alerts-queue.md)」を参照してください。 |
-| **アクション センター** | 修復アクションと手動応答アクションを追跡するアクション センターに移動します。 アクション センターでは、次のようなアクティビティが追跡されます。 <br/>- Microsoft Defender ウイルス対策悪意のあるファイルが検出され、そのファイルをブロックまたは削除します。 <br/>- セキュリティ チームがデバイスを分離します。<br/>- Defender for Endpoint は、ファイルを検出して検疫します。 <br/><br/> 詳細については、「 [アクション センター」を](auto-investigation-action-center.md)参照してください。 |
+| **アクション センター** | 修復アクションと手動応答アクションを追跡するアクション センターに移動します。 アクション センターでは、次のようなアクティビティが追跡されます。 <br/>- Microsoft Defender ウイルス対策で悪意のあるファイルが検出され、そのファイルがブロック/削除されます。 <br/>- セキュリティ チームがデバイスを分離します。<br/>- Defender for Endpoint は、ファイルを検出して検疫します。 <br/><br/> 詳細については、「 [アクション センター」を](auto-investigation-action-center.md)参照してください。 |
 | **セキュア スコア** | 組織のセキュリティ体制の表現と、改善アクションとメトリックの一覧を表示します。 <br/><br/> 詳細については、「 [Microsoft Secure Score](../defender/microsoft-secure-score.md)」を参照してください。 |
-| **ラーニング ハブ** | アクセスできるラーニング パスの一覧に移動し、Microsoft 365セキュリティ機能の詳細を確認します。  |
+| **ラーニング ハブ** | Microsoft 365 セキュリティ機能の詳細については、アクセスできるラーニング パスの一覧に移動します。  |
 | **エンドポイント** > **検索** | 特定のデバイスをデバイス名で検索できるページに移動します。 結果の一覧では、リスク レベルや正常性状態などの詳細を一目で確認できます。 |
 |  **エンドポイント** > **デバイス インベントリ** | Defender for Endpoint にオンボードされているデバイスの一覧に移動します。 露出レベルやリスク レベルなど、デバイスに関する情報を提供します。 <br/><br/> 詳細については、「 [デバイス インベントリ](machines-view-overview.md)」を参照してください。 |
 |  **エンドポイント** > **構成&ベースライン** | 展開して **、セキュリティ ベースライン** と **構成管理** を表示します。 |
@@ -79,9 +79,9 @@ Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://se
 | **正常性** | **サービス正常性** と **メッセージ センター** へのリンクが含まれます。  |
 | **健康** > **サービス正常性** | Microsoft 365 管理センターの [サービス正常性] ページに移動します。 このページでは、組織のサブスクリプションで利用可能なすべてのサービスの正常性状態を表示できます。   |
 | **健康** > **メッセージ センター** | Microsoft 365 管理センターのメッセージ センターに移動します。 メッセージ センターでは、計画的な変更に関する情報を提供します。 各メッセージには、今後の予定、ユーザーへの影響、変更の管理方法が説明されています。 |  
-| **ロール&アクセス許可** | Microsoft 365 Defender ポータルを使用するためのアクセス許可を付与できます。 アクセス許可は、Azure Active Directory (Azure AD) のロールを通じて付与されます。 ロールを選択すると、ポップアップ ウィンドウが表示されます。 ポップアップには、ロール グループ内のメンバーを追加または削除できるAzure ADへのリンクが含まれています。 <br/><br/> 詳細については、「 [ロールベースのアクセス制御を使用したポータル アクセスの管理](rbac.md)」を参照してください。  |
-| **設定** | Microsoft 365 Defender ポータルの全般設定 (**セキュリティ センター** として一覧表示) と Defender for Endpoint (エンドポイントとして一覧表示) **に** 移動します。 <br/><br/> 詳細については、「[設定](../defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)」を参照してください。 |
-| **その他のリソース** | Azure Active Directoryや Microsoft Purview コンプライアンス ポータルなど、その他のポータルとセンターの一覧を表示します。 <br/><br/> 詳細については、 [Microsoft セキュリティ ポータルと管理センターに関するページを](../defender/portals.md)参照してください。 |
+| **ロール&アクセス許可** | Microsoft 365 Defender ポータルを使用するためのアクセス許可を付与できます。 アクセス許可は、Azure Active Directory (Azure AD) のロールによって付与されます。 ロールを選択すると、ポップアップ ウィンドウが表示されます。 ポップアップには、ロール グループ内のメンバーを追加または削除できる Azure AD へのリンクが含まれています。 <br/><br/> 詳細については、「 [ロールベースのアクセス制御を使用したポータル アクセスの管理](rbac.md)」を参照してください。  |
+| **設定** | Microsoft 365 Defender ポータルの全般設定 (**セキュリティ センター** として一覧表示) と Defender for Endpoint (エンドポイントとして一覧表示) **に** 移動します。 <br/><br/> 詳細については、「設定」 [を](../defender/microsoft-365-defender-portal.md)参照してください。 |
+| **その他のリソース** | Azure Active Directory やMicrosoft Purview コンプライアンス ポータルなど、その他のポータルとセンターの一覧を表示します。 <br/><br/> 詳細については、 [Microsoft セキュリティ ポータルと管理センターに関するページを](../defender/portals.md)参照してください。 |
 
 > [!TIP]
 > 詳細については、[Microsoft 365 Defender ポータルの概要](../defender/microsoft-365-security-center-mde.md)を参照してください。

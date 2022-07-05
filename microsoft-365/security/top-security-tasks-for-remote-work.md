@@ -17,12 +17,12 @@ ms.collection:
 - remotework
 ms.custom: admindeeplinkDEFENDER
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなど、サイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 3c3a6ad89a795a45a0f76f868fbc6d23a52b963b
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: bc1dd84e83e5c5f1828e65203585d38acc28de5e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319223"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617262"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>自宅での作業をサポートするセキュリティ チームの上位 12 タスク
 
@@ -34,9 +34,9 @@ ms.locfileid: "65319223"
 Microsoft のビジネス プランのいずれかを使用している小規模または中規模の組織の場合は、代わりに次のリソースを参照してください。
 
 - [ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)
-- [キャンペーンのMicrosoft 365](../business-premium/index.md) (Microsoft 365 Business の推奨されるセキュリティ構成を含む)
+- [Microsoft 365 for Campaigns](../business-premium/index.md) (Microsoft 365 Business の推奨セキュリティ構成を含む)
 
-エンタープライズ プランを使用しているお客様の場合は、サービス プランに適用される次の表に示すタスクを完了することをお勧めします。 Microsoft 365エンタープライズ プランを購入する代わりに、サブスクリプションを組み合わせる場合は、次の点に注意してください。
+エンタープライズ プランを使用しているお客様の場合は、サービス プランに適用される次の表に示すタスクを完了することをお勧めします。 Microsoft 365 エンタープライズ プランを購入する代わりに、サブスクリプションを組み合わせる場合は、次の点に注意してください。
 
 - Enterprise Mobility + Security (EMS) E3 と Azure AD P1 が含まれるMicrosoft 365 E3
 - EMS E5 と Azure AD P2 が含まれるMicrosoft 365 E5
@@ -58,13 +58,13 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 |11|[Microsoft Defender for Cloud Apps の使用を開始する](#11-get-started-with-microsoft-defender-for-cloud-apps)|||![含ま。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[脅威を監視し、アクションを実行する](#12-monitor-for-threats-and-take-action)|![含ま。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含ま。](../media/d238e041-6854-4a78-9141-049224df0795.png)|![含ま。](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-開始する前に、Microsoft 365 Defender <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>で[Microsoft 365セキュリティ](./defender/microsoft-secure-score.md)スコアを確認します。 一元化されたダッシュボードから、Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視および向上させることができます。 推奨されるセキュリティ機能の構成、セキュリティ関連のタスクの実行 (レポートの表示など)、サード パーティ製のアプリケーションまたはソフトウェアを使用した推奨事項への対処に関するポイントが与えられます。 この記事で推奨されるタスクでは、スコアが上がります。
+開始する前に、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で [Microsoft 365 のセキュリティスコア](./defender/microsoft-secure-score.md)を確認してください。 一元化されたダッシュボードから、Microsoft 365 ID、データ、アプリ、デバイス、インフラストラクチャのセキュリティを監視および向上させることができます。 推奨されるセキュリティ機能の構成、セキュリティ関連のタスクの実行 (レポートの表示など)、サード パーティ製のアプリケーションまたはソフトウェアを使用した推奨事項への対処に関するポイントが与えられます。 この記事で推奨されるタスクでは、スコアが上がります。
 
 :::image type="content" source="../media/secure-score.png" alt-text="Microsoft 365 Defender ポータルの Microsoft Secure Score 画面" lightbox="../media/secure-score.png":::
 
 ## <a name="1-enable-azure-ad-multi-factor-authentication-mfa"></a>1: Azure AD Multi-Factor Authentication (MFA) を有効にする
 
-自宅で働く従業員のセキュリティを向上させるためにできることは、MFA を有効にすることです。 まだプロセスが整っていない場合は、これを緊急パイロットとして扱い、立ち往生する従業員を支援する準備ができているサポート担当者がいることを確認します。 ハードウェア セキュリティ デバイスを配布できない可能性があるため、Windows Hello生体認証アプリやスマートフォン認証アプリ (Microsoft Authenticator など) を使用します。
+自宅で働く従業員のセキュリティを向上させるためにできることは、MFA を有効にすることです。 まだプロセスが整っていない場合は、これを緊急パイロットとして扱い、立ち往生する従業員を支援する準備ができているサポート担当者がいることを確認します。 ハードウェア セキュリティ デバイスを配布できない可能性があるため、Windows Hello生体認証アプリや Microsoft Authenticator などのスマートフォン認証アプリを使用します。
 
 通常、MICROSOFT では、MFA を要求する前に、デバイスを Multi-Factor Authentication に登録するために 14 日間ユーザーに提供することをお勧めします。 ただし、従業員が自宅で突然働いている場合は、セキュリティの優先順位として MFA を必要とし、それを必要とするユーザーを支援する準備をしてください。
 
@@ -72,7 +72,7 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 
 ****
 
-|プラン|推奨事項|
+|計画|推奨事項|
 |---|---|
 |Microsoft 365 プラン (Azure AD P1 または P2 なし)|[Azure AD でセキュリティの既定値を有効にします](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)。 Azure AD のセキュリティの既定値には、ユーザーと管理者用の MFA が含まれています。|
 |Microsoft 365 E3 (Azure AD P1 を使用)|[一般的な条件付きアクセス ポリシー](/azure/active-directory/conditional-access/concept-conditional-access-policy-common)を使用して、次のポリシーを構成します。 <br/>- [管理者に MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [すべてのユーザーに MFA を要求する](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [従来の認証をブロックする](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
@@ -80,7 +80,7 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 
 ## <a name="2-protect-against-threats"></a>2: 脅威から保護する
 
-すべてのMicrosoft 365プランには、さまざまな脅威保護機能が含まれています。 これらの機能の保護を強化するには、数分かかります。
+すべての Microsoft 365 プランには、さまざまな脅威保護機能が含まれています。 これらの機能の保護を強化するには、数分かかります。
 
 - マルウェア対策保護
 - 悪意のある URL とファイルからの保護
@@ -107,9 +107,9 @@ Microsoft Defender for Office 365:
 - [セーフ リンクのグローバル設定を構成する](office-365-security/configure-global-settings-for-safe-links.md)
 - [安全な添付ファイル機能のポリシーを設定する](office-365-security/set-up-safe-attachments-policies.md)
 
-これらのワークロードのDefender for Office 365を構成するには、Exchange Online管理者とSharePoint Online 管理者と連携する必要があります。
+Exchange Online管理者と SharePoint Online 管理者と連携して、これらのワークロードのDefender for Office 365を構成する必要があります。
 
-- [SharePoint、OneDrive、Microsoft TeamsのMicrosoft Defender for Endpoint](office-365-security/mdo-for-spo-odb-and-teams.md)
+- [SharePoint、OneDrive、および Microsoft Teams のMicrosoft Defender for Endpoint](office-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Microsoft Defender for Identityを構成する
 
@@ -135,7 +135,7 @@ Microsoft Defender for Office 365とMicrosoft Defender for Identityを構成し�
 
 Microsoft Intuneモバイル アプリケーション管理 (MAM) を使用すると、これらのデバイスを管理することなく、スマートフォンやタブレットで組織のデータを管理および保護できます。 次に、動作のしくみを示します。
 
-- デバイス上のどのアプリが管理され、どのような動作が許可されるかを決定する App Protection Policy (APP) を作成します (マネージド アプリのデータが管理されていないアプリにコピーされないようにするなど)。 プラットフォームごとに 1 つのポリシーを作成します (iOS、Android)。
+- デバイス上のどのアプリが管理され、どのような動作が許可されるかを決定する App Protection Policy (APP) を作成します (マネージド アプリのデータが管理されていないアプリにコピーされないようにするなど)。 プラットフォーム (iOS、Android) ごとに 1 つのポリシーを作成します。
 - アプリ保護ポリシーを作成した後、承認されたアプリと APP データ保護を要求する条件付きアクセス規則を Azure AD で作成して、これらを強制します。
 
 APP 保護ポリシーには、多くの設定が含まれます。 さいわい、すべての設定について学習し、オプションを比較検討する必要はありません。 Microsoft では、開始点を推奨することで、設定の構成を簡単に適用できます。 [アプリ保護ポリシーを使用するデータ保護フレームワーク](/mem/intune/apps/app-protection-framework)には、選択できる 3 つのレベルが含まれています。
@@ -144,7 +144,7 @@ APP 保護ポリシーには、多くの設定が含まれます。 さいわい
 
 モバイル アプリ保護を構成するには、 [共通 ID およびデバイス アクセス ポリシー](./office-365-security/identity-access-policies.md)のガイダンスを使用します。
 
- 1. [APP データ保護ポリシーの適用に関する](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies)ガイダンスを使用して、iOSとAndroidのポリシーを作成します。 ベースライン保護には、レベル 2 (強化されたデータ保護) をお勧めします。
+ 1. iOS と Android 用のポリシーを作成するには、 [APP データ保護ポリシーの適用](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) に関するガイダンスを使用します。 ベースライン保護には、レベル 2 (強化されたデータ保護) をお勧めします。
  2. [承認済みアプリと APP 保護を要求](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)する条件付きアクセス規則を作成します。
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7: モバイル アプリ保護を含むゲストの MFA と条件付きアクセスIntune構成する
@@ -171,7 +171,7 @@ Microsoft 365 E5プランを使用していて、リスクベースの MFA に A
 
 また、次のチュートリアルを利用することもできます。
 
-- [Autopilot を使用してIntuneにWindowsデバイスを登録する](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
+- [Autopilot を使用して Windows デバイスをIntuneに登録する](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Apple Business Manager (ABM) で Apple の企業デバイス登録機能を使用して、iOS/iPadOS デバイスをIntuneに登録する](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
 デバイスを登録した後、 [共通 ID ポリシーとデバイス アクセス ポリシー](./office-365-security/identity-access-policies.md) のガイダンスを使用して、これらのポリシーを作成します。
@@ -187,7 +187,7 @@ Microsoft 365 E5プランを使用していて、リスクベースの MFA に A
 
 VPN コンセントレーター、中央ネットワーク エグレス機器 (プロキシやデータ損失防止デバイスなど)、中央のインターネット帯域幅、バックホールの MPLS 回線、NAT 機能などのネットワーク要素は、それらを使用するビジネス全体の負荷のために突然大きな負担にさらされます。 最終的な結果として、パフォーマンスと生産性が低下し、自宅での作業に適応しているユーザーのユーザー エクスペリエンスが低下します。
 
-従来、企業ネットワーク経由でトラフィックをルーティングすることで提供されていた保護の一部は、ユーザーがアクセスしているクラウド アプリによって提供されます。 この記事でこの手順に到達した場合は、Microsoft 365 サービスとデータに対して高度なクラウド セキュリティ制御のセットを実装しました。 これらの制御を設定すると、リモート ユーザーのトラフィックを直接Office 365にルーティングできる場合があります。 他のアプリケーションへのアクセスに VPN リンクが必要な場合は、分割トンネリングを実装することで、パフォーマンスとユーザー エクスペリエンスを大幅に向上させることができます。 組織で契約を結んだら、1 日以内に適切に調整されたネットワーク チームによってこれを実現できます。
+従来、企業ネットワーク経由でトラフィックをルーティングすることで提供されていた保護の一部は、ユーザーがアクセスしているクラウド アプリによって提供されます。 この記事でこの手順に到達した場合は、Microsoft 365 のサービスとデータに対して高度なクラウド セキュリティ制御のセットを実装しました。 これらの制御を設定すると、リモート ユーザーのトラフィックを直接Office 365にルーティングできる場合があります。 他のアプリケーションへのアクセスに VPN リンクが必要な場合は、分割トンネリングを実装することで、パフォーマンスとユーザー エクスペリエンスを大幅に向上させることができます。 組織で契約を結んだら、1 日以内に適切に調整されたネットワーク チームによってこれを実現できます。
 
 詳細については、Docs の次のリソースを参照してください。
 
@@ -205,14 +205,14 @@ VPN コンセントレーター、中央ネットワーク エグレス機器 (�
 
 「中立大学ケネディ学校 [サイバーセキュリティ キャンペーン の手引き」](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) では、フィッシング攻撃を特定するためのユーザーのトレーニングなど、組織内のセキュリティ意識の強い文化を確立するための優れたガイダンスを提供します。
 
-Microsoft 365には、組織内のユーザーに通知するのに役立つ次のリソースが用意されています。
+Microsoft 365 には、組織内のユーザーに通知するのに役立つ次のリソースが用意されています。
 
 ****
 
 |概念|リソース|
 |---|---|
 |Microsoft 365|[カスタマイズ可能な学習経路](/office365/customlearning/) <p>これらのリソースは、組織内のエンド ユーザー向けのトレーニングをまとめるのに役立ちます|
-|Microsoft 365 セキュリティ|[ラーニング モジュール: 組み込みのインテリジェントなセキュリティで組織をセキュリティで保護Microsoft 365](/learn/modules/security-with-microsoft-365) <p>このモジュールを使用すると、Microsoft 365セキュリティ機能の連携方法を説明し、これらのセキュリティ機能の利点を明確にできます。|
+|Microsoft 365 セキュリティ|[ラーニング モジュール: Microsoft 365 の組み込みのインテリジェントなセキュリティで組織をセキュリティで保護する](/learn/modules/security-with-microsoft-365) <p>このモジュールを使用すると、Microsoft 365 セキュリティ機能の連携方法を説明し、これらのセキュリティ機能の利点を明確に示します。|
 |多要素認証|[2 段階認証: 追加の確認ページは何ですか?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>この記事は、エンド ユーザーが多要素認証とは何か、組織で使用されている理由を理解するのに役立ちます。|
 
 このガイダンスに加えて、Microsoft では、ユーザーが「 [ハッカーやマルウェアからアカウントとデバイスを保護](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)する」に記載されているアクションを実行することをお勧めします。 それらの操作を次に示します。
@@ -227,13 +227,13 @@ Microsoft 365には、組織内のユーザーに通知するのに役立つ次�
 
 - [2 段階認証で Gmail アカウントを保護する](https://go.microsoft.com/fwlink/p/?linkid=2015688)
 
-## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11: Microsoft Defender for Cloud Appsを使用した概要
+## <a name="11-get-started-with-microsoft-defender-for-cloud-apps"></a>11: Microsoft Defender for Cloud Appsの使用を開始する
 
-[Microsoft Defender for Cloud Apps](/cloud-app-security)は、すべてのクラウド サービスのサイバー脅威を特定して対処するための、豊富な可視性、データ移動の制御、高度な分析を提供します。 Defender for Cloud アプリの使用を開始すると、異常検出ポリシーは自動的に有効になりますが、Defender for Cloud アプリの初期学習期間は 7 日間で、一部の異常検出アラートが発生するわけではありません。
+[Microsoft Defender for Cloud Apps](/cloud-app-security)は、すべてのクラウド サービスのサイバー脅威を特定して対処するための、豊富な可視性、データ移動の制御、高度な分析を提供します。 Defender for Cloud Apps の使用を開始すると、異常検出ポリシーが自動的に有効になりますが、Defender for Cloud Apps の初期学習期間は 7 日間で、一部の異常検出アラートが発生するわけではありません。
 
-Defender for Cloud アプリで概要できるようになりました。 後で、より高度な監視と制御を設定できます。
+Defender for Cloud Apps の使用を今すぐ開始します。 後で、より高度な監視と制御を設定できます。
 
-- [クイック スタート: Defender for Cloud アプリを使用した概要](/cloud-app-security/getting-started-with-cloud-app-security)
+- [クイック スタート: Defender for Cloud Apps の使用を開始する](/cloud-app-security/getting-started-with-cloud-app-security)
 - [瞬時の行動分析と異常検出を取得する](/cloud-app-security/anomaly-detection-policy)
 - [Microsoft Defender for Cloud Appsの詳細を確認する](/cloud-app-security/what-is-cloud-app-security)
 - [新機能と機能を確認する](/cloud-app-security/release-notes)
@@ -241,13 +241,13 @@ Defender for Cloud アプリで概要できるようになりました。 後で
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: 脅威を監視し、アクションを実行する
 
-Microsoft 365には、状態を監視し、適切なアクションを実行するいくつかの方法が含まれています。 最適な出発点は、組織の [Microsoft Secure Score](./defender/microsoft-secure-score.md) と、注意が必要なアラートまたはエンティティを表示できる<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>です。
+Microsoft 365 には、状態を監視し、適切なアクションを実行するいくつかの方法が含まれています。 最適な出発点は、組織の [Microsoft Secure Score](./defender/microsoft-secure-score.md) と、注意が必要なアラートまたはエンティティを表示できる<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>です。
 
-- [Microsoft 365 Defender ポータルでの概要](./defender/microsoft-365-defender.md#the-microsoft-365-defender-portal)
-- [Microsoft 365のセキュリティ ポータルを表示する](./defender/portals.md)
+- [Microsoft 365 Defender ポータルの概要](./defender/microsoft-365-defender-portal.md)
+- [Microsoft 365 のセキュリティ ポータルを参照してください](./defender/portals.md)
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます! 最も重要なセキュリティ保護の一部を迅速に実装し、組織の安全性が大幅に向上しました。 これで、脅威保護機能 (Microsoft Defender for Endpointを含む)、データの分類と保護機能、管理アカウントのセキュリティ保護をさらに進める準備が整いました。 Microsoft 365に関するより詳細で組織的な一連のセキュリティに関する推奨事項については、「[ビジネス意思決定者向けセキュリティ (BDMs)のMicrosoft 365」を](Microsoft-365-security-for-bdm.md)参照してください。
+おめでとうございます! 最も重要なセキュリティ保護の一部を迅速に実装し、組織の安全性が大幅に向上しました。 これで、脅威保護機能 (Microsoft Defender for Endpointを含む)、データの分類と保護機能、管理アカウントのセキュリティ保護をさらに進める準備が整いました。 Microsoft 365 のより深く、組織的な一連のセキュリティに関する推奨事項については、「 [Microsoft 365 Security for Business Decision Maker (BDMs)」を](Microsoft-365-security-for-bdm.md)参照してください。
 
-また、docs.microsoft.com/security に関する Microsoft の新しい[Defender for Cloud](/security)もご覧ください。
+Microsoft の新しい Defender for Cloud on [docs.microsoft.com/security](/security) もご覧ください。

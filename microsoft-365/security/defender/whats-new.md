@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: ed3d06e1719b51d0914c89e6283c8b53c2ab0812
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 4f2ab696b728244e495ec04933b83eaafeeb3db0
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530518"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617018"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -134,7 +134,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 - Microsoft 365 Defender
 
-  改善された[Microsoft 365 Defender](https://security.microsoft.com)ポータルが利用可能になりました。 この新しいエクスペリエンスにより、Defender for Endpoint、Defender for Office 365、Defender for Identity などが 1 つのポータルにまとめられます。 これは、セキュリティ制御を管理するための新しいホームです。 [新機能について説明します](./microsoft-365-defender.md#the-microsoft-365-defender-portal)。
+  改善された[Microsoft 365 Defender](https://security.microsoft.com)ポータルが利用可能になりました。 この新しいエクスペリエンスにより、Defender for Endpoint、Defender for Office 365、Defender for Identity などが 1 つのポータルにまとめられます。 これは、セキュリティ制御を管理するための新しいホームです。 [新機能について説明します](microsoft-365-defender-portal.md)。
 
 - [Microsoft 365 Defender脅威分析レポート](threat-analytics.md)
 

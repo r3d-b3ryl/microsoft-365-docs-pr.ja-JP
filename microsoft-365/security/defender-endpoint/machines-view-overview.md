@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 81ff80776d3b12e4ec90d6d2c2473389686ae9c9
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 232f27b9edb23e932d49cf33e026d22abfbe72dd
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554469"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617328"
 ---
 # <a name="device-inventory"></a>デバイス一覧
 
@@ -83,6 +83,11 @@ Microsoft Defender for Endpointオンボード プロセス中、MDE にオン�
 [ **ネットワーク デバイス** ] タブと [ **IoT デバイス** ] タブには、ベンダー、モデル、デバイスの種類などの情報も表示されます。
 
 ![ネットワーク デバイスの一覧の画像。](images/device-inventory-networkdevices.png)
+
+> [!NOTE]
+> デバイス検出と [Microsoft Defender for IoT](/azure/defender-for-iot/organizations/) および [Corelight](https://corelight.com/integrations/iot-security) との統合は、完全な OT/IOT 資産インベントリの検索、識別、セキュリティ保護に役立ちます。 これらの統合で検出されたデバイスは、[ **IoT デバイス** ] タブに表示されます。詳細については、「 [デバイス検出の統合](device-discovery.md#device-discovery-integrations)」を参照してください。
+>
+> Defender for IoT が構成されている場合は、そこにデバイスを表示することもできます。 [組織のデバイス インベントリを使用して IoT デバイスを管理する方法に関するページを参照してください](/azure/defender-for-iot/organizations/how-to-manage-device-inventory-for-organizations)。
 
 各デバイス インベントリ タブの上部には、デバイスの合計数、まだオンボードされていないデバイスの数、組織のリスクが高いと特定されたデバイスの数が表示されます。 この情報を使用すると、セキュリティ体制の改善のためにデバイスの優先順位を付けることができます。
 

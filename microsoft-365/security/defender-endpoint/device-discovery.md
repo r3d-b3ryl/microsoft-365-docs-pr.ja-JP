@@ -20,18 +20,19 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 68503556a1d2f3330e47fe601a303363a3f28896
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623233"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617306"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -39,7 +40,7 @@ ms.locfileid: "65623233"
 
 Microsoft Defender for Endpointは、余分なアプライアンスや煩雑なプロセス変更を必要とせずに、企業ネットワークに接続されているアンマネージド デバイスを見つけるのに役立つデバイス検出機能を提供します。 デバイス検出では、オンボードされたエンドポイントをネットワーク内で使用して、ネットワークを収集、プローブ、またはスキャンして、管理されていないデバイスを検出します。 デバイス検出機能を使用すると、次を検出できます。
 
-- Microsoft Defender for EndpointにまだオンボードされていないEnterprise エンドポイント (ワークステーション、サーバー、モバイル デバイス)
+- Microsoft Defender for Endpointにまだオンボードされていないエンタープライズ エンドポイント (ワークステーション、サーバー、モバイル デバイス)
 - ルーターやスイッチなどのネットワーク デバイス
 - プリンターやカメラなどの IoT デバイス
 
@@ -107,7 +108,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>検出されたデバイスの脆弱性評価
 
-デバイスの脆弱性とリスク、およびネットワーク内の他の検出されたアンマネージド デバイスは、"セキュリティ おすすめ" の下の現在の TVM フローの一部であり、ポータル全体のエンティティ ページに表示されます。
+デバイスに関する脆弱性とリスク、およびネットワーク内の他の検出されたアンマネージド デバイスは、現在の TVM フローの一部であり、"セキュリティに関する推奨事項" の下にあり、ポータルのエンティティ ページに表示されます。
 "SSH" 関連のセキュリティに関する推奨事項を検索して、管理されていないデバイスと管理対象デバイスに関連する SSH の脆弱性を見つけます。
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="セキュリティに関する推奨事項ダッシュボード" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::
