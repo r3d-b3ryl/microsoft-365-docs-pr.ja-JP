@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f55cfa3a9c32c6392f1c7d263f8e866ff4084e1e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e1cf2647ac8308d30b82e69cbb288fde330fdc5a
+ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490015"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66612197"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Defender for Endpoint プランの比較
 
@@ -65,10 +65,11 @@ EndPoint 向け Microsoft Defender は、エンタープライズネットワー
 
 ## <a name="start-a-trial"></a>試用版を開始する
 
-- Defender for Endpoint プラン 1 を試す場合は、[https://aka.ms/mdep1trial](https://aka.ms/mdep1trial) にアクセスしてください。
-- Defender for Endpoint Plan 2 を試す場合は、[https://aka.ms/MDEp2OpenTrial](https://aka.ms/MDEp2OpenTrial) にアクセスしてください。
-- Microsoft Defender 脆弱性の管理 アドオンを試すには、 [https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial). 
+- Defender for Endpoint プランを試すには、 [Defender for Endpoint 試用版サインアップ ページ](https://go.microsoft.com/fwlink/p/?LinkID=2168109)に移動します。
+- Defender for Endpoint Plan 2 のMicrosoft Defender 脆弱性の管理 アドオンを試すには、次のページを参照[https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial)してください。 
 
 ## <a name="see-also"></a>関連項目
+
+- [Microsoft Security の使用を開始する (試用版プラン)](https://www.microsoft.com/security/business/get-started/start-free-trial)
 
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (中小企業向けのエンドポイント保護)
