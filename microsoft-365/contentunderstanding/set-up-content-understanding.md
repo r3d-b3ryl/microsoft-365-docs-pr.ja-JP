@@ -15,12 +15,12 @@ ms.custom:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex の設定
-ms.openlocfilehash: 97d12527667de1583f787844da11a4ad875f34ba
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: 3511719e4f396141217a2b4711f642c675ac781e
+ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463145"
+ms.lasthandoff: 07/05/2022
+ms.locfileid: "66617240"
 ---
 # <a name="set-up-sharepoint-syntex"></a>SharePoint Syntex の設定
 
@@ -57,13 +57,13 @@ Power Platform のカスタム環境を使用する場合は、この環境に *
 
 ### <a name="licensing"></a>ライセンス
 
-SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブスクリプションが必要であり、各ユーザーに次のライセンスが割り当てられている必要があります。
+SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブスクリプションが必要であり、各ユーザーに次のライセンスが割り当てられている必要があります。 SharePoint Syntex ライセンスには次のアプリが含まれます。このアプリをすべてに割り当てる必要があります。
 
 - SharePoint Syntex
 - SharePoint Syntex - SPO の種類
 - SharePoint Syntex の共通データ サービス
 
-フォーム処理を使用するには、AI ビルダー クレジットも必要です。 ライセンス ユーザーが 300 人以上の場合、AI ビルダー クレジットの割り当てが毎月提供されます。
+フォーム処理を使用するには、AI ビルダー クレジットも必要です。 SharePoint Syntex のライセンス ユーザーごとに、AI Builder クレジットの割り当てが毎月あります。
 
 SharePoint Syntex ライセンスの詳細については、「[SharePoint Syntex ライセンス](syntex-licensing.md)」を参照してください
 
