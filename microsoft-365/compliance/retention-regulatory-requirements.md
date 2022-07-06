@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: データ ライフサイクル管理およびレコード管理の規制要件を満たすために役立つリソース。
-ms.openlocfilehash: 2d66aa6ac7eee3fab0718e2850f62730d0bd66f1
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 1fdae5c765d940c3f1b37cb7cff68fa736fcbd33
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286430"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638149"
 ---
 # <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理の規制要件
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 このページのリソースは、Microsoft 365 のデータ ライフサイクル管理およびレコード管理に関する特定の規制要件を満たすのに役立ちます。 このドキュメントの各セクションでは、1 つ以上の関連する規制に重点を置いています。また、各セクションには、概説した要件を満たすのに役立つ、Microsoft 365 を構成する方法に関する既存のガイダンスまたはサードパーティの評価が含まれています。
 

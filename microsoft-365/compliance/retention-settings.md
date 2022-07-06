@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: d4bb28255a809737b44324fdcccfc456c6a73dfb
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 87ecdc932932befc24441a59fb0dd8c023e982c2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772662"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639646"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](https://aka.ms/ComplianceSD)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 保持の設定の多くは、保持ポリシーと保持ラベル ポリシーの両方に共通です。 これらの設定を構成して、コンテンツを事前に保持したり、コンテンツを削除したり、コンテンツを保持して削除したりするには、次の情報を使用します。
 

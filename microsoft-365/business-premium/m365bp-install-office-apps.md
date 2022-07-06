@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium のすべてのデバイスに Office アプリをインストールする
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: how-to
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium のすべてのデバイスに Office をインストールする方法。
-ms.openlocfilehash: a0e2295e9d741221cafafc1ed843373937deaa1b
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b06edb2ee6e4427e61ba25f1149c3a2ee0fcf034
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486579"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637801"
 ---
 # <a name="install-office-apps-on-all-devices"></a>すべてのデバイスに Office をインストールする
 

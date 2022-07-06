@@ -15,28 +15,26 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
-description: Microsoft Purview コンプライアンス ポータルで、ユーザーが電子情報開示アクセス許可を割り当ててコンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) タスクを実行したときに記録されるイベントについて説明します。
+description: ユーザーが電子情報開示アクセス許可を割り当てたときに、Microsoft Purview コンプライアンス ポータルでコンテンツ検索、電子情報開示 (Standard)、電子情報開示 (Premium) タスクを実行したときに記録されるイベントについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1e22371999044d5cb70282356045446b46f833fa
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 416cc91a0eb1c97f43c5d279cd47b68c115c3b71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015498"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639360"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>監査ログで電子情報開示アクティビティを検索する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview コンプライアンス ポータルまたは対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連のアクティビティ (Microsoft Purview 電子情報開示 (Standard) と Microsoft Purview 電子情報開示 (プレミアム)) は、監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) がコンプライアンス ポータルで次のコンテンツ検索および電子情報開示 (Standard) タスクを実行すると記録されます。
+Microsoft Purview コンプライアンス ポータルまたは対応する PowerShell コマンドレットを実行して実行されるコンテンツ検索および電子情報開示関連アクティビティ (Microsoft Purview eDiscovery (Standard) およびMicrosoft Purview eDiscovery (Premium))は監査ログに記録されます。 イベントは、管理者または電子情報開示マネージャー (または電子情報開示アクセス許可が割り当てられたユーザー) がコンプライアンス ポータルで次のコンテンツ検索および電子情報開示 (Standard) タスクを実行すると記録されます。
   
-- 電子情報開示 (Standard) ケースと電子情報開示 (プレミアム) ケースの作成と管理
+- 電子情報開示 (Standard) ケースと電子情報開示 (Premium) ケースの作成と管理
 
 - コンテンツ検索の作成、開始、編集
 
 - 検索結果のプレビュー、エクスポート、削除などの検索アクションの実行
 
-- 電子情報開示でのカストディアンとレビュー セットの管理 (プレミアム)
+- 電子情報開示でのカストディアンとレビュー セットの管理 (Premium)
 
 - コンテンツ検索のアクセス許可フィルターの構成
 
@@ -52,7 +50,7 @@ Microsoft Purview コンプライアンス ポータルまたは対応する Pow
 
 2. コンプライアンス ポータルの左側のナビゲーション ウィンドウで、[ **監査**] をクリックします。
 
-3. [**アクティビティ**] ドロップダウン リストの [**電子情報開示アクティビティ**] または **[電子情報開示 (プレミアム) アクティビティ]** で、検索する 1 つ以上のアクティビティをクリックします。
+3. [ **アクティビティ** ] ドロップダウン リストの [ **電子情報開示アクティビティ** ] または [ **電子情報開示 (Premium) アクティビティ]** で、検索する 1 つ以上のアクティビティをクリックします。
 
     > [!NOTE]
     > **[アクティビティ]** ドロップダウン リストには、コマンドレット監査ログからレコードを返す **電子情報開示コマンドレット アクティビティ** という名前のアクティビティのグループも含まれています。
@@ -73,7 +71,7 @@ Microsoft Purview コンプライアンス ポータルまたは対応する Pow
 
 ## <a name="ediscovery-activities"></a>電子情報開示アクティビティ
 
-次の表では、管理者または電子情報開示マネージャーがコンプライアンス ポータルを使用して電子情報開示関連のアクティビティを実行したときにログに記録されるコンテンツ検索と電子情報開示 (Standard) アクティビティについて説明します。 この一覧でアクティビティを検索すると、電子情報開示 (プレミアム) で実行されるアクティビティの一部が返されることがあります。
+次の表では、管理者または電子情報開示マネージャーがコンプライアンス ポータルを使用して電子情報開示関連のアクティビティを実行したときにログに記録されるコンテンツ検索と電子情報開示 (Standard) アクティビティについて説明します。 この一覧でアクティビティを検索すると、電子情報開示 (Premium) で実行される一部のアクティビティが返されることがあります。
   
 > [!NOTE]
 > このセクションに示されている電子情報開示アクティビティは、次のセクションで説明される電子情報開示コマンドレットのアクティビティと同様の情報を示しています。 電子情報開示アクティビティは 30 分以内に監査ログの検索結果に表示されるため、このセクションで示されている電子情報開示アクティビティを使用することをお勧めします。 電子情報開示コマンドレットアクティビティが監査ログの検索結果に表示されるまでには、最大で 24 時間かかる場合があります。
@@ -103,13 +101,13 @@ Microsoft Purview コンプライアンス ポータルまたは対応する Pow
 |コンテンツ検索のエクスポートがダウンロードされました  <br/> |SearchExportDownloaded  <br/> |該当なし  <br/> |ユーザーがコンテンツ検索の結果をローカル コンピューターにダウンロードしました。 検索結果をダウンロードするには、**コンテンツ検索のエクスポートが開始されました** のアクティビティを開始している必要があります。  <br/> |
 |コンテンツ検索の結果がプレビューされました  <br/> |SearchPreviewed  <br/> |該当なし  <br/> |ユーザーがコンテンツ検索の結果をプレビューしました。  <br/> |
 |コンテンツ検索の結果が消去されました  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |ユーザーが **New-ComplianceSearchAction -Purge** コマンドを実行して、コンテンツ検索の結果を削除しました。  <br/> |
-|コンテンツ検索の分析が削除されました  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索準備アクション (電子情報開示の検索結果を準備する (プレミアム)) が削除されました。 準備アクションが 2 週間未満の場合は、電子情報開示 (プレミアム) 用に準備された検索結果がMicrosoft Azureストレージ領域から削除されました。 準備アクションが 2 週間以上経過している場合は、このイベントは、対応する準備アクションのみが削除されたことを示しています。  <br/> |
+|コンテンツ検索の分析が削除されました  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索準備アクション (電子情報開示 (Premium) の検索結果を準備する) が削除されました。 準備アクションが 2 週間未満の場合は、電子情報開示 (Premium) 用に準備された検索結果が Microsoft Azure ストレージ領域から削除されました。 準備アクションが 2 週間以上経過している場合は、このイベントは、対応する準備アクションのみが削除されたことを示しています。  <br/> |
 |コンテンツ結果のエクスポートが削除されました  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索のエクスポート アクションは削除されました。 エクスポート アクションから 2 週間経っていない場合は、Microsoft Azure 記憶域にアップロードされた検索結果は削除されています。 エクスポート アクションが 2 週間以上経過している場合は、このイベントは、対応するエクスポート アクションのみが削除されたことを示しています。  <br/> |
 |電子情報開示ケースからメンバーが削除されました  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |ユーザーが、電子情報開示ケースのメンバーから削除されました。  <br/> |
 |コンテンツ検索の結果のプレビューが削除されました  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索のプレビュー アクションが削除されました。  <br/> |
 |コンテンツ検索で実行された消去アクションが削除されました  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索の消去アクションが削除されました。  <br/> |
 |検索レポートが削除されました  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |コンテンツ検索のエクスポート レポート アクションが削除されました。  <br/> |
-|コンテンツ検索の分析が開始されました  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |コンテンツ検索の結果は、電子情報開示 (プレミアム) で分析用に準備されました。  <br/> |
+|コンテンツ検索の分析が開始されました  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |コンテンツ検索の結果は、電子情報開示 (Premium) の分析用に準備されました。  <br/> |
 |コンテンツ検索が開始されました  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |コンテンツ検索が開始されました。 コンプライアンス ポータルを使用してコンテンツ検索を作成または変更すると、検索が自動的に開始されます。<br/> |
 |コンテンツ検索のエクスポートが開始されました  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索の結果をエクスポートしました。  <br/> |
 |レポートのエクスポートが開始されました  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |ユーザーがコンテンツ検索レポートをエクスポートしました。  <br/> |
@@ -122,12 +120,12 @@ Microsoft Purview コンプライアンス ポータルまたは対応する Pow
   
 ## <a name="ediscovery-premium-activities"></a>電子情報開示 (プレミアム) のアクティビティ
 
-次の表では、監査ログに記録された電子情報開示 (プレミアム) アクティビティについて説明します。 これらのアクティビティは、電子情報開示 (プレミアム) ケースでのアクティビティの進行を追跡するのに役立ちます。
+次の表では、監査ログに記録された電子情報開示 (Premium) アクティビティについて説明します。 これらのアクティビティは、電子情報開示 (Premium) ケースでのアクティビティの進行を追跡するのに役立ちます。
 
 |**フレンドリ名**|**操作名**|**説明**|
 |:-----|:-----|:-----|
 |別のレビュー セットへのデータの追加|AddWorkingSetQueryToWorkingSet|ユーザーが、1つのレビュー セットから別のレビュー セットにドキュメントを追加しました。|
-|レビュー セットへのデータの追加|AddQueryToWorkingSet|ユーザーは、電子情報開示 (プレミアム) ケースに関連付けられたコンテンツ検索の検索結果をレビュー セットに追加しました。|
+|レビュー セットへのデータの追加|AddQueryToWorkingSet|ユーザーは、電子情報開示 (Premium) ケースに関連付けられたコンテンツ検索の検索結果をレビュー セットに追加しました。|
 |Microsoft 365 以外のデータのレビュー セットへの追加|AddNonOffice365DataToWorkingSet|ユーザーが、Microsoft 365 以外のデータをレビュー セットに追加しました。|
 |レビュー セットへの修復済みドキュメントの追加|AddRemediatedData|ユーザーが、インデックス作成エラーがあったドキュメントを修復したものをレビュー セットにアップロードしました。|
 |レビュー セット内のデータの分析|RunAlgo|ユーザーが、レビュー セット内のドキュメントの分析を実行しました。|
@@ -179,7 +177,7 @@ Microsoft Purview コンプライアンス ポータルまたは対応する Pow
 |コンテンツ検索が変更されました  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |既存のコンテンツの検索が変更されました。 変更としては、検索されるコンテンツの場所の追加または削除、検索クエリの編集などがあります。  <br/> |
 |コンテンツ検索が開始されました  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |コンテンツ検索が開始されました。 コンプライアンス センターの GUI を使用してコンテンツ検索を作成または変更すると、検索が自動的に開始されます。 **New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使用して検索を作成または変更する場合、**Start-ComplianceSearch** コマンドレットを実行して検索を開始する必要があります。  <br/> |
 |コンテンツ検索が停止されました  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |実行中だったコンテンツ検索が停止されました。  <br/> |
-|コンテンツ検索アクションが作成されました  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |コンテンツ検索アクションが作成されました。 コンテンツ検索アクションには、検索結果のプレビュー、検索結果のエクスポート、電子情報開示 (プレミアム) での分析用の検索結果の準備、コンテンツ検索の検索条件に一致するアイテムの完全な削除などがあります。  <br/> |
+|コンテンツ検索アクションが作成されました  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |コンテンツ検索アクションが作成されました。 コンテンツ検索アクションには、検索結果のプレビュー、検索結果のエクスポート、電子情報開示 (Premium) での分析用の検索結果の準備、コンテンツ検索の検索条件に一致するアイテムの完全な削除などがあります。  <br/> |
 |コンテンツ検索アクションが削除されました  <br/> |[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |コンテンツ検索アクションが削除されました。  <br/> |
 |検索のアクセス許可フィルターが作成されました  <br/> |[New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) <br/> |検索のアクセス許可フィルターが作成されました。  <br/> |
 |検索のアクセス許可フィルターが削除されました  <br/> |[Remove-ComplianceSecurityFilter](/powershell/module/exchange/remove-compliancesecurityfilter) <br/> |検索のアクセス許可フィルターが削除されました。  <br/> |
@@ -187,7 +185,7 @@ Microsoft Purview コンプライアンス ポータルまたは対応する Pow
 |電子情報開示管理者が作成されました  <br/> |[Add-eDiscoveryCaseAdmin](/powershell/module/exchange/add-ediscoverycaseadmin) <br/> |ユーザーが、組織の電子情報開示管理者として追加されました。  <br/> |
 |電子情報開示管理者が削除されました  <br/> |[Remove-eDiscoveryCaseAdmin](/powershell/module/exchange/remove-ediscoverycaseadmin) <br/> |電子情報開示管理者が組織から削除されました。  <br/> |
 |電子情報開示管理者のメンバーシップが変更されました  <br/> |[Update-eDiscoveryCaseAdmin](/powershell/module/exchange/update-ediscoverycaseadmin) <br/> |組織の電子情報開示管理者のリストが変更されました。 このアクティビティは、電子情報開示管理者が新しいユーザーのグループに置き換えられた場合にログに記録されます。 1 人のユーザーが追加または削除された場合、**Add-eDiscoveryCaseAdmin** または **Remove-eDiscoveryCaseAdmin** 操作がログに記録されます。  <br/> |
-|(なし)|[Get-ComplianceCase](/powershell/module/exchange/get-compliancecase) <br/>|このアクティビティは、ユーザーが電子情報開示 (Standard) または電子情報開示 (プレミアム) ケースの一覧を表示したときに記録されます。 このアクティビティは、ユーザーが電子情報開示 (Standard) で特定のケースを表示したときにも記録されます。 ユーザーが特定のケースを表示すると、監査レコードには表示されたケースの ID が含まれます。 ユーザーがケースの一覧のみを表示した場合、監査レコードにはケース ID は含まれません。|
+|(なし)|[Get-ComplianceCase](/powershell/module/exchange/get-compliancecase) <br/>|このアクティビティは、ユーザーが電子情報開示 (Standard) または電子情報開示 (Premium) ケースの一覧を表示したときに記録されます。 このアクティビティは、ユーザーが電子情報開示 (Standard) で特定のケースを表示したときにも記録されます。 ユーザーが特定のケースを表示すると、監査レコードには表示されたケースの ID が含まれます。 ユーザーがケースの一覧のみを表示した場合、監査レコードにはケース ID は含まれません。|
 |(なし)|[Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch)|このアクティビティは、ユーザーが電子情報開示 (Standard) ケースに関連付けられているコンテンツ検索または検索の一覧を表示したときに記録されます。 このアクティビティは、ユーザーが特定のコンテンツ検索を表示したり、電子情報開示 (Standard) ケースに関連付けられた特定の検索を表示したりするときにも記録されます。 ユーザーが特定の検索を表示すると、監査レコードには、表示された検索の ID が含まれます。 ユーザーが検索の一覧のみを表示した場合、監査レコードには検索 ID は含まれません。
 |(なし)|[Get-ComplianceSearchAction](/powershell/module/exchange/get-compliancesearchaction)|このアクティビティは、ユーザーがコンプライアンス検索アクション (エクスポート、プレビュー、消去など) または電子情報開示 (Standard) ケースに関連付けられているアクションの一覧を表示したときに記録されます。 このアクティビティは、ユーザーが特定のコンプライアンス検索アクション (エクスポートなど) を表示したり、電子情報開示 (Standard) ケースに関連付けられた特定のアクションを表示したりしたときにも記録されます。 ユーザーが検索アクションを表示すると、監査レコードには、表示された検索アクションの ID が含まれます。 ユーザーがアクションの一覧のみを表示した場合、監査レコードにはアクション ID は含まれません。|
 ||||

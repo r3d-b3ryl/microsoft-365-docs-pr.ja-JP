@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス マネージャーの新機能と、次の内容を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: cf817b28c6d375e92e7aabdb1f57ea632c6f1a28
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: aab0ccefd6f139212e8e045eacd458e22f498f9b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692741"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638707"
 ---
 # <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Microsoft Purview コンプライアンス マネージャーの新機能
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。** コンプライアンス マネージャーの最近の更新プログラムについて説明します。
 
@@ -38,7 +36,7 @@ ms.locfileid: "65692741"
 - カタール国民情報保証 (NIA)
 - アラブ首長国連邦データプライバシー法
 
-米国政府Community (GCC) 中、GCC高、国防総省 (DoD) のお客様は、これらのテンプレートが今後数週間で利用可能になるはずです。
+米国政府機関コミュニティ (GCC) 中規模、GCC High、および国防総省 (DoD) のお客様は、これらのテンプレートが今後数週間で利用可能になるはずです。
 
 [評価テンプレートの完全な一覧を表示します](compliance-manager-templates-list.md)。
 
@@ -121,11 +119,11 @@ ms.locfileid: "65692741"
 
 ### <a name="integration-with-microsoft-priva"></a>Microsoft Privaとの統合
 
-コンプライアンス マネージャーは、組織がMicrosoft 365に保存する個人データを保護するのに役立つソリューションであるMicrosoft Privaと連携できるようになりました。 Privaには、データの視覚化と理解、主要なリスク シナリオを管理するポリシーの実装、サブジェクト権利要求の処理に役立つツールが用意されています。 保存する個人データを保護するためのPrivaの手順を実行すると、コンプライアンス マネージャーでのプライバシー評価に貢献し、コンプライアンス スコアの向上に役立ちます。 Privaやその他のソリューションがスコアにどのように貢献しているかを確認し、さらに改善する可能性のある機会については、コンプライアンス マネージャーの [**ソリューション**] タブを参照してください。 Privaの詳細については、「Microsoft Priva[の詳細」を参照](/privacy/priva)してください。
+コンプライアンス マネージャーは、組織が Microsoft 365 に保存する個人データを保護するのに役立つソリューションであるMicrosoft Privaと連携できるようになりました。 Priva には、データの視覚化と理解、主要なリスク シナリオを管理するポリシーの実装、サブジェクト権利要求の処理に役立つツールが用意されています。 保存した個人データを保護するために Priva で手順を実行すると、コンプライアンス マネージャーでのプライバシー評価に貢献し、コンプライアンス スコアの向上に役立ちます。 Priva やその他のソリューションがスコアにどのように貢献しているかを確認し、さらに改善する可能性のある機会については、コンプライアンス マネージャーの [ **ソリューション** ] タブを参照してください。 Priva の詳細については、「[Microsoft Privaについて学習する](/privacy/priva)」を参照してください。
 
 ## <a name="july-2021"></a>2021 年 7 月
 
-新しいユニバーサル バージョンのテンプレートに基づいて、Microsoft 365以外の製品の評価を作成する機能を追加しました。 詳細については、 [まず評価テンプレートの操作に関](compliance-manager-templates.md)するページを参照してください。
+新しいユニバーサル バージョンのテンプレートに基づいて、Microsoft 365 以外の製品の評価を作成する機能を追加しました。 詳細については、 [まず評価テンプレートの操作に関](compliance-manager-templates.md)するページを参照してください。
 
 ## <a name="may-2021"></a>2021 年 5 月
 
@@ -133,7 +131,7 @@ ms.locfileid: "65692741"
 
 次を含む 75 個の新しい評価テンプレートを公開しました。
 - オーストラリアのプライバシー保護法
-- CIS Microsoft 365 Foundation レベル 1 および 2
+- CIS Microsoft 365 Foundation レベル 1 と 2
 - ドイツ - 金融機関における IT の監督要件 (BAIT)
 - Sarbanes-Oxley法
 - 南アフリカ - 情報へのアクセスの促進法
@@ -144,7 +142,7 @@ ms.locfileid: "65692741"
 
 ### <a name="support-for-us-government-dod-customers"></a>米国政府機関 DoD のお客様のサポート
 
-コンプライアンス マネージャーは、米国政府機関の DoD のお客様に加え、米国政府機関Community (GCC) の中GCC高顧客も利用できるようになりました。
+コンプライアンス マネージャーは、米国政府機関コミュニティ (GCC) の中等および GCC High のお客様に加えて、米国政府機関 DoD のお客様が利用できるようになりました。
 
 ## <a name="march-2021"></a>2021 年 3 月
 

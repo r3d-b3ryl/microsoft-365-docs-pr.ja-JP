@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: コンプライアンス センターでカスタムの機密情報の種類を作成、変更、削除、テストする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d93259cfe76419e253c450c4cd5ed7f03f3b85c
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753520"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638612"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>コンプライアンス センターでカスタムの機密情報の種類を作成する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 事前構成の機密情報の種類がニーズを満たしていない場合は、完全に定義した独自のカスタムの機密情報の種類を作成するか、事前構成のいずれかをコピーして変更できます。
 
@@ -106,7 +104,7 @@ ms.locfileid: "65753520"
 
 PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。 これらの方法の詳細については、次を参照してください。
 
-- [PowerShell でカスタムの機密情報の種類Microsoft Purview作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+- [Microsoft Purview PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 
 1. コンプライアンス センターで、**[データの分類]** \> **[機密情報の種類]** の順に移動し、コピーする機密情報の種類を選択します。

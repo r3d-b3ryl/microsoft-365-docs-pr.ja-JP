@@ -12,16 +12,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: カスタマー キーを設定したら、AKV キーを復元し、アクセス許可を管理し、データ暗号化ポリシーを作成して割り当てることで、それを管理する方法について説明します。
-ms.openlocfilehash: 08fae19a5f0f27ff530c734c46453f885ea9043e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d9f9e992b78b673df08d0c0d5b12ba09cfa9ea84
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015750"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637331"
 ---
 # <a name="manage-customer-key"></a>カスタマー キーを管理する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 カスタマー キーを設定したら、1 つ以上のデータ暗号化ポリシー (DEP) を作成して割り当てる必要があります。 DEP を割り当てたら、この記事で説明されているようにキーを管理できます。 カスタマー キーの詳細については、関連トピックを参照してください。
 
@@ -57,7 +55,7 @@ New-M365DataAtRestEncryptionPolicy -Name "Contoso_Global" -AzureKeyIDs "https://
 
 ### <a name="assign-multi-workload-policy"></a>複数ワークロード ポリシーを割り当てる
 
-Set-M365DataAtRestEncryptionPolicyAssignment コマンドレットを使用して DEP を割り当てます。 ポリシーを割り当てると、DEP で識別されたキーを使用してデータを暗号化Microsoft 365。
+Set-M365DataAtRestEncryptionPolicyAssignment コマンドレットを使用して DEP を割り当てます。 ポリシーを割り当てると、Microsoft 365 は DEP で識別されたキーを使用してデータを暗号化します。
 
 ```powershell
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy <PolicyName or ID>
@@ -75,7 +73,7 @@ Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Contoso_Glob
 
 開始する前に、Azure Key Vaultの設定に必要なタスクが完了していることを確認します。 詳細については、「 [顧客キーの設定](customer-key-set-up.md)」を参照してください。 次の手順は、PowerShell Exchange Onlineで完了します。
 
-DEP は、Azure Key Vaultに格納されている一連のキーに関連付けられます。 Microsoft 365のメールボックスに DEP を割り当てます。 Microsoft 365は、ポリシーで識別されたキーを使用してメールボックスを暗号化します。 DEP を作成するには、セットアップ中に取得したKey Vault URI が必要です。 詳細については、「[各 Azure Key Vault キーの URI を取得する](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)」を参照してください。
+DEP は、Azure Key Vaultに格納されている一連のキーに関連付けられます。 Microsoft 365 のメールボックスに DEP を割り当てます。 その後、Microsoft 365 はポリシーで識別されたキーを使用してメールボックスを暗号化します。 DEP を作成するには、セットアップ中に取得したKey Vault URI が必要です。 詳細については、「[各 Azure Key Vault キーの URI を取得する](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)」を参照してください。
 
 覚えて！ DEP を作成するときは、2 つの異なる Azure Key Vault に 2 つのキーを指定します。 geo 冗長性を確保するために、これらのキーを 2 つの別々の Azure リージョンに作成します。
 
@@ -109,7 +107,7 @@ DEP は、Azure Key Vaultに格納されている一連のキーに関連付け�
 
 ### <a name="assign-a-dep-to-a-mailbox"></a>メールボックスに DEP を割り当てる
 
-Set-Mailbox コマンドレットを使用して、DEP をメールボックスに割り当てます。 ポリシーを割り当てると、MICROSOFT 365は DEP で識別されたキーを使用してメールボックスを暗号化できます。
+Set-Mailbox コマンドレットを使用して、DEP をメールボックスに割り当てます。 ポリシーを割り当てると、Microsoft 365 は DEP で識別されたキーを使用してメールボックスを暗号化できます。
 
 ```powershell
 Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -117,7 +115,7 @@ Set-Mailbox -Identity <MailboxIdParameter> -DataEncryptionPolicy <PolicyName>
 
 ここで *、MailboxIdParameter は* ユーザー メールボックスを指定します。 Set-Mailbox コマンドレットの詳細については、「 [Set-Mailbox](/powershell/module/exchange/set-mailbox)」を参照してください。
 
-ハイブリッド環境では、Exchange Online テナントに同期されるオンプレミスのメールボックス データに DEP を割り当てることができます。 この同期されたメールボックス データに DEP を割り当てるには、Set-MailUser コマンドレットを使用します。 ハイブリッド環境のメールボックス データの詳細については、「ハイブリッド[モダン認証を使用したiOSとAndroidにOutlookを使用したオンプレミスのメールボックス](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)」を参照してください。
+ハイブリッド環境では、Exchange Online テナントに同期されるオンプレミスのメールボックス データに DEP を割り当てることができます。 この同期されたメールボックス データに DEP を割り当てるには、Set-MailUser コマンドレットを使用します。 ハイブリッド環境のメールボックス データの詳細については、ハイブリッド [モダン認証を使用した Outlook for iOS と Android を使用したオンプレミスのメールボックス](/exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)に関するページを参照してください。
 
 ```powershell
 Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
@@ -129,15 +127,15 @@ Set-MailUser -Identity <MailUserIdParameter> -DataEncryptionPolicy <PolicyName>
 
 開始する前に、Azure Key Vaultの設定に必要なタスクが完了していることを確認します。 詳細については、「 [顧客キーの設定](customer-key-set-up.md)」を参照してください。
 
-SharePoint Online、OneDrive for Business、Teams ファイルの顧客キーを設定するには、オンライン PowerShell SharePointで次の手順を実行します。
+SharePoint Online、OneDrive for Business、Teams ファイルの顧客キーを設定するには、SharePoint Online PowerShell で次の手順を実行します。
 
-DEP は、Azure Key Vaultに格納されている一連のキーに関連付けます。 1 つの地理的な場所 (geo とも呼ばれる) 内のすべてのデータに DEP を適用します。 Office 365の複数地域機能を使用する場合は、geo ごとに異なるキーを使用する機能を使用して、geo ごとに 1 つの DEP を作成できます。 複数地域を使用していない場合は、SharePoint Online、OneDrive for Business、Teams ファイルで使用する DEP を組織内に 1 つ作成できます。 Microsoft 365では、DEP で識別されたキーを使用して、その geo 内のデータを暗号化します。 DEP を作成するには、セットアップ中に取得したKey Vault URI が必要です。 詳細については、「[各 Azure Key Vault キーの URI を取得する](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)」を参照してください。
+DEP は、Azure Key Vaultに格納されている一連のキーに関連付けます。 1 つの地理的な場所 (geo とも呼ばれる) 内のすべてのデータに DEP を適用します。 Office 365の複数地域機能を使用する場合は、geo ごとに異なるキーを使用する機能を使用して、geo ごとに 1 つの DEP を作成できます。 複数地域を使用していない場合は、SharePoint Online、OneDrive for Business、Teams ファイルで使用する DEP を組織内に 1 つ作成できます。 Microsoft 365 では、DEP で識別されたキーを使用して、その geo 内のデータを暗号化します。 DEP を作成するには、セットアップ中に取得したKey Vault URI が必要です。 詳細については、「[各 Azure Key Vault キーの URI を取得する](customer-key-set-up.md#obtain-the-uri-for-each-azure-key-vault-key)」を参照してください。
 
 覚えて！ DEP を作成するときは、2 つの異なる Azure Key Vault に 2 つのキーを指定します。 geo 冗長性を確保するために、これらのキーを 2 つの別々の Azure リージョンに作成します。
 
 DEP を作成するには、SharePoint Online PowerShell を使用する必要があります。
 
-1. ローカル コンピューターで、組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用[して、SharePoint Online PowerShell に接続](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps)します。
+1. ローカル コンピューターで、組織内のグローバル管理者アクセス許可を持つ職場または学校アカウントを使用 [して、SharePoint Online PowerShell に接続します](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?preserve-view=true&view=sharepoint-ps)。
 
 2. Microsoft Office SharePoint Online管理シェルで、次のようにRegister-SPODataEncryptionPolicyコマンドレットを実行します。
 
@@ -169,7 +167,7 @@ DEP を作成するには、SharePoint Online PowerShell を使用する必要�
 
 ### <a name="assign-a-dep-before-you-migrate-a-mailbox-to-the-cloud"></a>メールボックスをクラウドに移行する前に DEP を割り当てる
 
-DEP を割り当てると、移行中に割り当てられた DEP を使用してメールボックスの内容が暗号化Microsoft 365。 このプロセスは、メールボックスを移行し、DEP を割り当て、暗号化が行われるのを待つよりも効率的です。これには数時間または数日かかる場合があります。
+DEP を割り当てると、Microsoft 365 は移行中に割り当てられた DEP を使用してメールボックスの内容を暗号化します。 このプロセスは、メールボックスを移行し、DEP を割り当て、暗号化が行われるのを待つよりも効率的です。これには数時間または数日かかる場合があります。
 
 Office 365に移行する前にメールボックスに DEP を割り当てるには、powerShell でSet-MailUser コマンドレットExchange Online実行します。
 
@@ -305,7 +303,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Enabled $false
 Restore-AzKeyVaultKey -VaultName <vault name> -InputFile <filename>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O365EX-NA-VaultA1-Key001-Backup-20170802.backup
@@ -323,7 +321,7 @@ Restore-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -InputFile Contoso-O3
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
@@ -335,7 +333,7 @@ Get-AzKeyVault -VaultName Contoso-O365EX-NA-VaultA1
 Remove-AzKeyVaultAccessPolicy -VaultName <vault name> -UserPrincipalName <UPN of user>
 ```
 
-次に例を示します。
+例:
 
 ```powershell
 Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com
@@ -346,9 +344,16 @@ Remove-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipa
 Microsoft マネージド キーに戻す必要がある場合は、次の操作を行うことができます。 オフボードすると、個々のワークロードでサポートされている既定の暗号化を使用してデータが再暗号化されます。 たとえば、Exchange Onlineでは、Microsoft マネージド キーを使用した既定の暗号化がサポートされます。
 
 > [!IMPORTANT]
-> オフボーディングはデータ消去と同じではありません。 データ消去では、組織のデータが完全に暗号化され、Microsoft 365から削除されます。オフボードでは削除されません。 複数のワークロード ポリシーに対してデータ消去を実行することはできません。
+> オフボーディングはデータ消去と同じではありません。 データ消去では、Microsoft 365 から組織のデータが完全に暗号化削除されます。オフボードでは削除されません。 複数のワークロード ポリシーに対してデータ消去を実行することはできません。
 
-マルチワークロード DEP の割り当てにカスタマー キーを使用しない場合は、カスタマー キーから "オフボード" の要求を受けて Microsoft サポートに連絡する必要があります。 Microsoft Purview カスタマー キー チームに対してサービス要求を提出するようサポート チームに依頼します。 質問がある場合は、m365-ck@service.microsoft.com にお問い合 m365-ck@service.microsoft.com。
+**マルチワークロード DEP の割り当てにカスタマー キーを使用しない場合は、Microsoft 管理ポータルを使用してサポート チケットを提出し、要求に次の詳細を入力する必要があります。**
+
+1. テナント FQDN
+2. オフボード要求のテナント連絡先
+3. オフボードの理由
+4. 要求を M365 Customer Key チームに送信し、インシデントを含める必要があるメモをサービス チケットに含める#
+
+Microsoft マネージド キーを使用してデータを再ラップするための適切なアクセス許可を持つカスタマー キーの AKVs と暗号化キーを保持する必要があります。 ご質問がある場合は、m365-ck@service.microsoft.com にお問い合わせください。
 
 メールボックス レベルの DEP を使用して個々のメールボックスを暗号化しなくなった場合は、すべてのメールボックスからメールボックス レベルの DEP を割り当て解除できます。
 
@@ -365,19 +370,19 @@ Microsoft マネージド キーに戻す必要がある場合は、次の操作
 このコマンドレットを実行すると、現在割り当てられている DEP の割り当てが解除され、既定の Microsoft マネージド キーに関連付けられている DEP を使用してメールボックスが再暗号化されます。 Microsoft マネージド キーで使用されている DEP の割り当てを解除することはできません。 Microsoft マネージド キーを使用しない場合は、別のカスタマー キー DEP をメールボックスに割り当てることができます。
 
 > [!IMPORTANT]
-> カスタマー キーから Microsoft マネージド キーへのロールバックは、SharePoint Online、OneDrive for Business、Teams ファイルではサポートされていません。
+> SharePoint Online、OneDrive for Business、Teams ファイルでは、カスタマー キーから Microsoft マネージド キーへのロールバックはサポートされていません。
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>キーを取り消し、データ消去パス プロセスを開始する
 
 可用性キーを含むすべてのルート キーの失効を制御します。 顧客キーは、規制要件の終了計画の側面を制御します。 データを消去してサービスを終了するためにキーを取り消す場合、データ消去プロセスが完了すると、サービスは可用性キーを削除します。 これは、個々のメールボックスに割り当てられている Customer Key DEP でサポートされています。
 
-Microsoft 365は、データ消去パスを監査して検証します。 詳細については、 [Service Trust Portal](https://servicetrust.microsoft.com/) で入手できる SSAE 18 SOC 2 レポートを参照してください。 さらに、Microsoft では次のドキュメントをお勧めします。
+Microsoft 365 は、データ消去パスを監査して検証します。 詳細については、 [Service Trust Portal](https://servicetrust.microsoft.com/) で入手できる SSAE 18 SOC 2 レポートを参照してください。 さらに、Microsoft では次のドキュメントをお勧めします。
 
 - [Microsoft Cloud の金融機関向けのリスク評価とコンプライアンス ガイド](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=edee9b14-3661-4a16-ba83-c35caf672bd7&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
 - [O365 Exit Planning に関する考慮事項](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=77ea7ebf-ce1b-4a5f-9972-d2d81a951d99&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-マルチワークロード DEP の削除は、Customer Key ではサポートされていません。 マルチワークロード DEP は、すべてのテナント ユーザー間で複数のワークロード間でデータを暗号化するために使用されます。 このような DEP を削除すると、複数のワークロード間のデータにアクセスできなくなります。 Microsoft 365 サービスを完全に終了することにした場合は、文書化されたプロセスごとにテナントの削除パスを追い求める可能性があります。 [Azure Active Directoryでテナントを削除する方法について説明します](/azure/active-directory/enterprise-users/directory-delete-howto)。
+マルチワークロード DEP の削除は、Customer Key ではサポートされていません。 マルチワークロード DEP は、すべてのテナント ユーザー間で複数のワークロード間でデータを暗号化するために使用されます。 このような DEP を削除すると、複数のワークロード間のデータにアクセスできなくなります。 Microsoft 365 サービスを完全に終了することにした場合は、文書化されたプロセスごとにテナントの削除のパスを追及できます。 [Azure Active Directory でテナントを削除する方法について説明します](/azure/active-directory/enterprise-users/directory-delete-howto)。
 
 ### <a name="revoke-your-customer-keys-and-the-availability-key-for-exchange-online-and-skype-for-business"></a>カスタマー キーと、Exchange OnlineとSkype for Businessの可用性キーを取り消す
 
@@ -404,15 +409,15 @@ PowerShell コマンドレットは一度に 1 つの DEP に対してのみ実�
 
 4. Microsoft サポートに問い合わせ、データ消去 eDocument を要求します。
 
-    お客様の要求に応じて、Microsoft から、データの削除を確認および承認するための法的ドキュメントが送信されます。 オンボード中にFastTrack オファーで承認者としてサインアップした組織内のユーザーは、このドキュメントに署名する必要があります。 通常、これは会社の役員またはその他の指定された人物であり、組織に代わって書類に署名することを法的に承認されています。
+    お客様の要求に応じて、Microsoft から、データの削除を確認および承認するための法的ドキュメントが送信されます。 オンボード中に FastTrack オファーで承認者としてサインアップした組織内のユーザーは、このドキュメントに署名する必要があります。 通常、これは会社の役員またはその他の指定された人物であり、組織に代わって書類に署名することを法的に承認されています。
 
 5. 代理人が法的文書に署名したら、Microsoft に返します (通常は eDoc 署名を使用)。
 
     Microsoft が法的文書を受け取ると、Microsoft はコマンドレットを実行して、最初にポリシーを削除するデータ消去をトリガーし、メールボックスに完全な削除をマークしてから、可用性キーを削除します。 データ消去プロセスが完了すると、データは消去され、Exchange Onlineにアクセスできず、回復できません。
 
-### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>カスタマー キーと、SharePoint Online、OneDrive for Business、Teams ファイルの可用性キーを取り消す
+### <a name="revoke-your-customer-keys-and-the-availability-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>SharePoint Online、OneDrive for Business、Teams ファイルのカスタマー キーと可用性キーを取り消す
 
-SharePointの削除、職場または学校のOneDrive、およびTeams ファイルの DEP の削除は、カスタマー キーではサポートされていません。 これらのマルチワークロード DEP は、すべてのテナント ユーザー間で複数のワークロード間でデータを暗号化するために使用されます。 このような DEP を削除すると、複数のワークロード間のデータにアクセスできなくなります。 Microsoft 365 サービスを完全に終了することにした場合は、文書化されたプロセスごとにテナントの削除のパスを追及できます。 [Azure Active Directoryでテナントを削除する](/azure/active-directory/enterprise-users/directory-delete-howto)方法について説明します。
+SharePoint、職場または学校用の OneDrive、Teams ファイルの DEP の削除は、カスタマー キーではサポートされていません。 これらのマルチワークロード DEP は、すべてのテナント ユーザー間で複数のワークロード間でデータを暗号化するために使用されます。 このような DEP を削除すると、複数のワークロード間のデータにアクセスできなくなります。 Microsoft 365 サービスを完全に終了することにした場合は、文書化されたプロセスごとにテナントの削除のパスを追及できます。 [Azure Active Directory でテナントを削除](/azure/active-directory/enterprise-users/directory-delete-howto)する方法について説明します。
 
 ## <a name="related-articles"></a>関連記事
 

@@ -15,23 +15,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premiumを使用して Windows デバイスをWindows 10 Proにアップグレードする方法について説明します。
-ms.openlocfilehash: 56cb32269dac6f78d1c1764d881eefee1ac0ea01
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: fdd17eb35767029090dddab103ce6db3b8b00365
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607701"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641026"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows デバイスをWindows 10 Proにアップグレードする
 
-Windows 7 Pro、Windows 8 Pro、またはWindows 8.1 Proを実行している Windows デバイスがある場合、Microsoft 365 Business Premium サブスクリプションでは、これらのデバイスを Windows Pro 10 にアップグレードできます。  
+Windows 7 Pro、Windows 8 Pro、またはWindows 8.1 Proを実行している Windows デバイスがある場合、Microsoft 365 Business Premium サブスクリプションでは、これらのデバイスを Windows 10 または 11 Pro にアップグレードできます。  
 
 アップグレードするには、いくつかの方法から選択できます。
 
 - [Windows Updateを使用する](#use-windows-update) (ほとんどのユーザーに推奨)
 - [Microsoft Software Download サイトを使用してデバイスをアップグレードする](#upgrade-your-device-using-the-microsoft-software-download-site)
 - [Microsoft Software Download サイトからインストール メディアを作成する](#create-installation-media-from-the-microsoft-software-download-site)
-- [Windows 10 HomeからアップグレードするWindows 10 Proを購入する](#purchase-windows-10-pro-to-upgrade-from-windows-10-home)
+- [Windows 10 HomeからアップグレードするWindows 10または 11 Pro を購入する](#purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-home)
 
 ## <a name="use-windows-update"></a>Windows Updateを使用する
 
@@ -48,7 +48,7 @@ Windows 7 Pro、Windows 8 Pro、またはWindows 8.1 Proを実行している Wi
 
 ## <a name="upgrade-your-device-using-the-microsoft-software-download-site"></a>Microsoft Software Download サイトを使用してデバイスをアップグレードする
   
-*現在使用しているデバイスが、更新するデバイスと同じ場合は、このオプションを選択します。* 
+*Windows Update方法をお勧めします。ただし、現在使用しているデバイスが更新するデバイスと同じ場合は、このオプションを選択できます。* 
 
 1. [Microsoft Software Download サイト](https://go.microsoft.com/fwlink/?LinkID=836951)に移動します。
 
@@ -65,7 +65,7 @@ Windows 7 Pro、Windows 8 Pro、またはWindows 8.1 Proを実行している Wi
 > [!NOTE]
 > Windows 7 Pro、Windows 8 Pro、またはWindows 8.1 Proを実行している Windows デバイスがある場合、Microsoft 365 Business Premium サブスクリプションでは、これらのデバイスを Windows Pro 10 にアップグレードできます。
 
-## <a name="purchase-windows-10-pro-to-upgrade-from-windows-10-home"></a>Windows 10 HomeからアップグレードするWindows 10 Proを購入する
+## <a name="purchase-windows-10-or-11-pro-to-upgrade-from-windows-10-home"></a>Windows 10 HomeからアップグレードするWindows 10または 11 Pro を購入する
 
 *Windows 10 Homeを実行しているデバイスの場合は、このオプションを選択します。*
 

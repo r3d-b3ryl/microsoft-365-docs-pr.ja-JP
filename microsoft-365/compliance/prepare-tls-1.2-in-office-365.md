@@ -13,16 +13,14 @@ ms.author: shmehta
 ms.reviewer: krowley
 appliesto:
 - Office 365 Business
-ms.openlocfilehash: 584bf2b27be9c33399a9158038853dac195e3146
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 9edbbb463d04447ee4babcd66b4d6e320663209a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044227"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639756"
 ---
 # <a name="preparing-for-tls-12-in-office-365-and-office-365-gcc"></a>Office 365 および Office 365 GCC での TLS 1.2 の準備
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="summary"></a>概要
 

@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密性の高いアイテムを識別するために社会保障、クレジット カード、銀行口座番号などの機密情報を検出する方法について説明します。
-ms.openlocfilehash: d814bd413fc95a02bc35ab05a804c544d9b84b1e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014236"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639382"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織の管理下にある機密アイテムを識別して分類することは、[Information Protection規範](./information-protection.md)の最初のステップです。  Microsoft Purview では、アイテムを分類できるように、次の 3 つの方法でアイテムを識別できます。
 
@@ -206,6 +204,6 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 - [カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)
 - [PowerShell でカスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 
-機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「Microsoft 365を使用した[データプライバシー規制の情報保護の展開](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy)」を参照してください。
+機密情報の種類を使用してデータプライバシー規制に準拠する方法については、「 [Microsoft 365 (aka.ms/m365dataprivacy) を使用してデータプライバシー規制の情報保護を展開](../solutions/information-protection-deploy.md)  する」を参照してください。
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->

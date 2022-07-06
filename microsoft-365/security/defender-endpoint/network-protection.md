@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 61541cf74640035845ac04889834d12ea6730ad8
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 604938426dfd8818647a5fa7b71069b4527ec877
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530333"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636449"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -92,7 +92,7 @@ Defender for Endpoint のネットワーク保護コンポーネントは、機�
 
 | 新しいマッピング  | 応答カテゴリ  | ソース |
 | :--- | :--- | :--- |
-| フィッシング詐欺 | フィッシング詐欺 | Smartscreen |
+| フィッシング詐欺 | フィッシング | Smartscreen |
 | 悪意 | 悪意がある | Smartscreen |
 | コマンドと制御 | C2 | Smartscreen |
 | コマンドと制御 | COCO | Smartscreen |
@@ -144,20 +144,6 @@ Defender for Endpoint のネットワーク保護コンポーネントは、機�
 最初の形式では、ランサムウェアは商品の脅威であり、事前にプログラムされ、限られた特定の結果 (コンピューターの暗号化など) に焦点を当てています。 しかし、ランサムウェアは人間主導の高度な脅威に進化し、適応性があり、より大規模で広範な結果に焦点を当てています。は、組織全体の資産または身代金のデータを保持する場合などです。
 
 コマンド および制御サーバー (C2) のサポートは、このランサムウェアの進化の重要な部分であり、これらの攻撃がターゲットとする環境に適応することを可能にします。 コマンドアンドコントロール インフラストラクチャへのリンクを解除すると、攻撃の次の段階への進行が停止します。
-
-#### <a name="detecting-and-remediating-cobaltstrike-public-preview"></a>CobaltStrike の検出と修復 (パブリック プレビュー)
-
-人間が操作するランサムウェア攻撃で使用される最も一般的な悪用後フレームワークの 1 つは、CobaltStrike です。 Microsoft 全体の脅威インテリジェンス チームは、ランサムウェアを展開する複数のアクティビティ グループで _戦術、手法、および手順_ (TMP) を追跡し、悪意のあるアクターが使用する特定の戦略や脅威ベクトルから防御するために使用できる行動パターンを特定します。 これらのランサムウェア アクティビティ グループはすべて、攻撃ライフ サイクルのある時点で、実践的なキーボード アクティビティを有効にするために、CobaltStrike ビーコンを被害者のコンピューターに展開することを含みます。
-
-CobaltStrike を使用すると、さまざまなプロトコルに応答する複数のリスナーをホストする機能から、主要なクライアント側コンポーネント (ビーコン) でコードインジェクションを実行し、悪用後ジョブを実行する方法まで、攻撃の複数の側面をカスタマイズできます。 Microsoft Defender が CobaltStrike を検出すると、侵害の主要な指標 (IoC) をインテリジェントに見つけて収集できます。 キャプチャされると、検出と保護の目的で、これらのインジケーターが Microsoft の製品スタック全体で共有されます。
-
-Defender for Endpoint のコマンドと制御の検出は、CobaltStrike に限定されません。 Defender for Endpoint は、複数のマルウェア ファミリの主要な IoC をキャプチャできます。 このインジケーターは、お客様を保護し、侵害が発生した場合にアラートを送信するために、Microsoft 保護スタック全体で共有されます。
-
-コマンドと制御の通信をブロックすると、標的型攻撃を大きく妨げる可能性があります。これにより、セキュリティ チームは、最初のエントリ ベクトルを見つけて、別の攻撃が試行される前にそれらを閉じる時間を与えます。
-
-<!-- Hide {this intro with no subsequent list items}
-[For additional details about Microsoft Defender's command and control detection, see **ADD LINK TO BLOG**.]
--->
 
 ## <a name="smartscreen-unblock"></a>SmartScreen のブロック解除
 
@@ -228,7 +214,7 @@ DeviceEvents:
 | CustomBlockList  |   カスタム インジケーター   |
 | CasbPolicy   |   Defender for Cloud Apps   |
 | 悪意がある   |   Web の脅威  |
-| フィッシング詐欺  |   Web の脅威  |
+| フィッシング  |   Web の脅威  |
 
 詳細については、「 [エンドポイント ブロックのトラブルシューティング](web-protection-overview.md#troubleshoot-endpoint-blocks)」を参照してください。
 
@@ -286,7 +272,7 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** をクリックします。
+2. **[OK]** を選択します。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するようにフィルター処理するカスタム ビューを作成します。
 

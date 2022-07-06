@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: a8bdcbdd-9298-462f-b889-df26037a990c
-description: アーカイブ メールボックスを有効にし、自動拡張アーカイブを有効にして、Microsoft 365内のメールボックスの回復可能なアイテム フォルダーのサイズを増やします。
-ms.openlocfilehash: d426afffb1002e1187adafc794d5340d730cc7e7
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+description: アーカイブ メールボックスを有効にし、自動拡張アーカイブを有効にして、Microsoft 365 のメールボックスの回復可能なアイテム フォルダーのサイズを増やします。
+ms.openlocfilehash: cd5a051ec97d292ca03179fc8b530eb311033dbc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66044140"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640052"
 ---
 # <a name="increase-the-recoverable-items-quota-for-mailboxes-on-hold"></a>保留中のメールボックスの回復可能なアイテムのクォータを拡大する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-既定のExchangeアイテム保持ポリシー (*既定の MRM ポリシー*) は、Exchange Onlineの新しいメールボックスに自動的に適用され、アーカイブに 14 日間移動する回復可能なアイテムという名前の保持タグが含まれています。 このアイテム保持タグは、アイテムの 14 日間の保存期間が経過すると、ユーザーのプライマリ メールボックスの回復可能なアイテム フォルダーから、ユーザーのアーカイブ メールボックスの回復可能なアイテム フォルダーへ、アイテムを移動します。 削除フォルダー内の電子メールは **RetainDeletedItemsFor パラメーターに** 基づいて保持され、回復可能な削除済みアイテム内の他のフォルダーに移動してから、メールボックスをアーカイブします。 この処理を実行するためには、ユーザーのアーカイブ メールボックスを有効にする必要があります。 アーカイブ メールボックスを有効にしていない場合は、処理が実行されないため、保持中のメールボックスの [回復可能なアイテム] フォルダー内のアイテムは、14 日間の保存期間が経過しても、アーカイブ メールボックスに移動されません。 特に、ユーザーのアーカイブ メールボックスを有効にしないと、保持中のメールボックスから何も削除されないため、[回復可能なアイテム] フォルダーの記憶域クォータを超える可能性があります。
+既定の Exchange アイテム保持ポリシー (*既定の MRM ポリシー*) は、Exchange Onlineの新しいメールボックスに自動的に適用され、アーカイブに 14 日間移動する回復可能なアイテムという名前の保持タグが含まれています。 このアイテム保持タグは、アイテムの 14 日間の保存期間が経過すると、ユーザーのプライマリ メールボックスの回復可能なアイテム フォルダーから、ユーザーのアーカイブ メールボックスの回復可能なアイテム フォルダーへ、アイテムを移動します。 削除フォルダー内の電子メールは **RetainDeletedItemsFor パラメーターに** 基づいて保持され、回復可能な削除済みアイテム内の他のフォルダーに移動してから、メールボックスをアーカイブします。 この処理を実行するためには、ユーザーのアーカイブ メールボックスを有効にする必要があります。 アーカイブ メールボックスを有効にしていない場合は、処理が実行されないため、保持中のメールボックスの [回復可能なアイテム] フォルダー内のアイテムは、14 日間の保存期間が経過しても、アーカイブ メールボックスに移動されません。 特に、ユーザーのアーカイブ メールボックスを有効にしないと、保持中のメールボックスから何も削除されないため、[回復可能なアイテム] フォルダーの記憶域クォータを超える可能性があります。
 
 この制限を超える可能性を減らすために、回復可能なアイテム フォルダーのストレージ クォータは、Exchange Online内のメールボックスに保留が配置されると、30 GB から 100 GB に自動的に増やされます。 アーカイブ メールボックスを有効にした場合は、アーカイブ メールボックスの [回復可能なアイテム] フォルダーの記憶域クォータも、30 GB から 100 GB へ拡大されます。 Exchange Onlineの自動拡張アーカイブ機能が有効になっている場合、回復可能なアイテム フォルダーを含むユーザーのアーカイブ メールボックスの合計ストレージ クォータは 1.5 TB です。
 
@@ -48,15 +46,15 @@ ms.locfileid: "66044140"
     > [!NOTE]
     > 回復可能なアイテム フォルダーのストレージ クォータを超えそうなメールボックスのアーカイブを有効にした後、管理フォルダー アシスタントを実行して、有効期限が切れたアイテムがアーカイブ メールボックスの回復可能なアイテム フォルダーに移動されるように、手動でアシスタントをトリガーしてメールボックスを処理することができます。 この手順については、[手順 4](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings) を参照してください。 ユーザーのメールボックス内のその他のアイテムも新しいアーカイブ メールボックスに移動される可能性があることに注意してください。 アーカイブ メールボックスを有効にした後に、これが発生する可能性があることをユーザーに伝えるのを検討してください。
 
-- **保留中のメールボックスのカスタム Exchangeアイテム保持ポリシーを作成します。** 訴訟ホールドまたはIn-Placeホールドのメールボックスに対してアーカイブ メールボックスを有効にし、アーカイブを自動拡張するだけでなく、メールボックスの保持に関するカスタム Exchangeアイテム保持ポリシーを作成することもできます。 これにより、保留状態でないメールボックスに適用される既定の MRM ポリシーとは異なる保留メールボックスにアイテム保持ポリシーを適用し、保留メールボックス用に設計された保持タグを適用できます。 これには、回復可能なアイテム フォルダーの新しい保持タグの作成が含まれます。
+- **保留中のメールボックスのカスタム Exchange アイテム保持ポリシーを作成します。** 訴訟ホールドまたはIn-Placeホールドのメールボックスに対してアーカイブ メールボックスを有効にし、アーカイブを自動拡張するだけでなく、メールボックスの保持に対してカスタムの Exchange アイテム保持ポリシーを作成することもできます。 これにより、保留状態でないメールボックスに適用される既定の MRM ポリシーとは異なる保留メールボックスにアイテム保持ポリシーを適用し、保留メールボックス用に設計された保持タグを適用できます。 これには、回復可能なアイテム フォルダーの新しい保持タグの作成が含まれます。
 
-このトピックの残りの部分では、保留中のメールボックスのカスタム Exchangeアイテム保持ポリシーを作成する手順について説明します。
+このトピックの残りの部分では、保留中のメールボックスのカスタム Exchange アイテム保持ポリシーを作成する手順について説明します。
 
 [手順 1:[回復可能なアイテム] フォルダーのカスタム保持タグを作成する](#step-1-create-a-custom-retention-tag-for-the-recoverable-items-folder)
 
-[手順 2: 保留中のメールボックスの新しいExchangeアイテム保持ポリシーを作成する](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
+[手順 2: 保留中のメールボックスの新しい Exchange アイテム保持ポリシーを作成する](#step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold)
 
-[手順 3: 新しいExchangeアイテム保持ポリシーを保留中のメールボックスに適用する](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
+[手順 3: 新しい Exchange アイテム保持ポリシーを保留中のメールボックスに適用する](#step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold)
 
 [(省略可能) 手順 4:管理フォルダー アシスタントを実行して、新しい保持設定を適用する](#optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings)
 
@@ -81,7 +79,7 @@ ms.locfileid: "66044140"
     > [!TIP]
     > 回復可能なアイテム RPT の保持期間 (  _AgeLimitForRetention_ パラメーターで定義) は、RPT が適用されるメールボックスの削除済みアイテムの保持期間と同じであることをお勧めします。 これによりユーザーは、削除済みアイテムの保持期間全体にわたって、削除済みアイテムがアーカイブ メールボックスに移動される前に、削除済みアイテムを回復することができます。 前の例では、保持期間は、メールボックスの削除済みアイテムの保持期間も 30 日であるという前提を基に、30 日に設定されていました。 Exchange Online メールボックスは、既定で削除されたアイテムを 14 日間保持するように構成されています。 ただしこの設定は、最大 30 日にまで変更できます。 詳細については、「[Exchange Online内のメールボックスの削除済みアイテムの保持期間を変更](https://www.microsoft.com/?ref=go)する」を参照してください。
 
-## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>手順 2: 保留中のメールボックスの新しいExchangeアイテム保持ポリシーを作成する
+## <a name="step-2-create-a-new-exchange-retention-policy-for-mailboxes-on-hold"></a>手順 2: 保留中のメールボックスの新しい Exchange アイテム保持ポリシーを作成する
 
 次の手順では、新しいアイテム保持ポリシーを作成し、そのポリシーに保持タグ (手順 1 で作成した回復可能なアイテムの RPT を含む) を追加します。この新しいポリシーは、次の手順で保持中のメールボックスに適用します。 
 
@@ -131,7 +129,7 @@ New-RetentionPolicy <Name of retention policy>  -RetentionPolicyTagLinks <list o
 New-RetentionPolicy "MRM Policy for Mailboxes on Hold"  -RetentionPolicyTagLinks "Recoverable Items 30 days for mailboxes on hold","1 Month Delete","1 Week Delete","1 Year Delete","5 Year Delete","6 Month Delete","Default 2 year move to archive","Junk Email","Never Delete","Personal 1 year move to archive","Personal 5 year move to archive"
 ```
 
-## <a name="step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold"></a>手順 3: 新しいExchangeアイテム保持ポリシーを保留中のメールボックスに適用する
+## <a name="step-3-apply-the-new-exchange-retention-policy-to-mailboxes-on-hold"></a>手順 3: 新しい Exchange アイテム保持ポリシーを保留中のメールボックスに適用する
 
 最後のステップでは、手順 2 で作成した新しいアイテム保持ポリシーを、組織内の保持中のメールボックスに適用します。 EAC または Exchange Online PowerShell を使用して、アイテム保持ポリシーを 1 つのメールボックスまたは複数のメールボックスに適用できます。
 
@@ -206,7 +204,7 @@ Get-Mailbox -ResultSize unlimited | Where-Object {$_.InPlaceHolds -ne $null} | F
 
 ## <a name="optional-step-4-run-the-managed-folder-assistant-to-apply-the-new-retention-settings"></a>(省略可能) 手順 4:管理フォルダー アシスタントを実行して、新しい保持設定を適用する
 
-新しいExchangeアイテム保持ポリシーを保留中のメールボックスに適用した後、管理フォルダー アシスタントが新しいアイテム保持ポリシーの設定を使用してこれらのメールボックスを処理するには、Exchange Onlineで最大 7 日間かかる場合があります。 管理フォルダー アシスタントが実行されるのを待つ代わりに、**Start-ManagedFolderAssistant** コマンドレットを使用して、アシスタントを手動でトリガーし、新しいアイテム保持ポリシーを適用したメールボックスを処理することができます。
+新しい Exchange アイテム保持ポリシーを保留中のメールボックスに適用した後、管理フォルダー アシスタントが新しいアイテム保持ポリシーの設定を使用してこれらのメールボックスを処理するには、Exchange Onlineで最大 7 日かかる場合があります。 管理フォルダー アシスタントが実行されるのを待つ代わりに、**Start-ManagedFolderAssistant** コマンドレットを使用して、アシスタントを手動でトリガーし、新しいアイテム保持ポリシーを適用したメールボックスを処理することができます。
 
 Pilar Pinilla のメールボックスに対して管理フォルダー アシスタントを開始するには、次のコマンドを実行します。
 
@@ -228,4 +226,4 @@ $MailboxesOnHold.DistinguishedName | Start-ManagedFolderAssistant
 
 - ユーザーのアーカイブ メールボックスを有効にした後は、メールボックスの他のアイテムも ([回復可能なアイテム] フォルダー内のアイテムだけではなく) アーカイブ メールボックスに移動される可能性があることをユーザーに通知することを検討してください。 これは、Exchange Online メールボックスに割り当てられている既定の MRM ポリシーには、アイテムがメールボックスに配信された日またはユーザーが作成した 2 年後にアイテムをアーカイブ メールボックスに移動する保持タグ (既定の 2 年間のアーカイブへの移行という名前) が含まれているためです。 詳細については、「[Exchange Onlineの既定のアイテム保持ポリシー」](/exchange/security-and-compliance/messaging-records-management/default-retention-policy)を参照してください。
 
-- ユーザーのアーカイブ メールボックスを有効にした後は、アーカイブ メールボックス内の [回復可能なアイテム] フォルダーに含まれる削除済みアイテムを回復できることをユーザーに通知することもできます。 アーカイブ メールボックスの **[削除済みアイテム**] フォルダーを選択し、[**ホーム**] タブの [**サーバーから削除済みアイテムの回復**] をクリックすると、Outlookでこれを行うことができます。削除済みアイテムの回復の詳細については、「[WindowsのOutlookで削除されたアイテムを回復する」を](https://go.microsoft.com/fwlink/p/?LinkId=624829)参照してください。
+- ユーザーのアーカイブ メールボックスを有効にした後は、アーカイブ メールボックス内の [回復可能なアイテム] フォルダーに含まれる削除済みアイテムを回復できることをユーザーに通知することもできます。 Outlook でこれを行うには、アーカイブ メールボックスの **[削除済みアイテム]** フォルダーを選択し、[**ホーム**] タブの [**サーバーから削除済みアイテムの回復**] をクリックします。削除済みアイテムの回復の詳細については、「[Outlook for Windows での削除済みアイテムの回復」を](https://go.microsoft.com/fwlink/p/?LinkId=624829)参照してください。

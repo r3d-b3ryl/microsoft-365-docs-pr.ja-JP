@@ -19,18 +19,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: Office 365の DLP レポートを使用して、DLP ポリシーの一致、オーバーライド、または誤検知の数を表示し、時間の経過と共に増加または減少の傾向を確認します。
-ms.openlocfilehash: b264a0e0b76397be99d7586ac793dac501b6672e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6f60aefaa1548e3c3aed2ca1643de42f412cf5cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011625"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641100"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>データ損失防止のレポートの表示
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview データ損失防止 (DLP) ポリシーを作成したら、意図したとおりに動作していることを確認し、準拠を維持するのに役立ちます。 Microsoft Purview コンプライアンス ポータルの DLP レポートを使用すると、次の情報をすばやく表示できます。
+Microsoft Purview データ損失防止 (DLP) ポリシーを作成したら、意図したとおりに動作していることを確認し、準拠を維持するのに役立ちます。 Microsoft Purview コンプライアンス ポータルの DLP レポートを使用すると、次をすばやく表示できます。
 
 - **DLP ポリシーの一致** このレポートには、時間の経過と共に一致する DLP ポリシーの数が表示されます。 レポートは、日付、場所、ポリシー、またはアクションによってフィルター処理できます。 このレポートを使用すると、以下のことを行えます。
 
@@ -62,7 +60,7 @@ Microsoft Purview データ損失防止 (DLP) ポリシーを作成したら、�
 
 すべての DLP レポートでは、最新の 4 か月間のデータを表示できます。 最新のデータは、レポートに表示されるまで最大で 24 時間かかることがあります。
 
-これらのレポートは、Microsoft Purview コンプライアンス ポータル \>の **レポート** \> **ダッシュボードで** 確認できます。
+これらのレポートは、Microsoft Purview コンプライアンス ポータル \> **レポート** \> **ダッシュボード** にあります。
 
 ![DLP ポリシーはレポートと一致します。](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
 
@@ -82,11 +80,11 @@ DLP ポリシーでユーザーがそれを上書きすることを許可して�
 
 セキュリティ & コンプライアンス センターで DLP レポートを表示するには、次の情報を割り当てる必要があります。
 
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>の **セキュリティ 閲覧者** ロール。 既定では、このロールは、Exchange管理センターの組織の管理とセキュリティ 閲覧者の役割グループに割り当てられます。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の **セキュリティ 閲覧者** ロール。 既定では、このロールは Exchange 管理センターの組織の管理とセキュリティ 閲覧者の役割グループに割り当てられます。
 
 - セキュリティ **& コンプライアンス センターの表示専用 DLP コンプライアンス管理** ロール。 既定では、このロールは、セキュリティ & コンプライアンス センターのコンプライアンス管理者、組織管理、セキュリティ管理者、およびセキュリティ 閲覧者の役割グループに割り当てられます。
 
-- <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>の **表示専用受信者** ロール。 既定では、このロールは、Exchange管理センターのコンプライアンス管理、組織管理、View-Only組織管理の役割グループに割り当てられます。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の **表示専用受信者** ロール。 既定では、このロールは Exchange 管理センターのコンプライアンス管理、組織管理、View-Only組織管理の役割グループに割り当てられます。
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>DLP レポートのコマンドレットを見つける
 

@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: b60337226a12f7395b4a5664b5a11b0d88ed4790
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: 0769dd3cfd64f611162803952a1e39b9241ac2ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893374"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638678"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>通信コンプライアンスでチャネル信号を検出する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 通信コンプライアンス ポリシーを使用すると、次の通信プラットフォームの 1 つ以上のメッセージをグループまたはスタンドアロン ソースとしてスキャンできます。 これらのプラットフォーム全体でキャプチャされた元のメッセージは、組織の [保持および保持ポリシー](/microsoft-365/compliance/information-governance)に従って元のプラットフォームの場所に保持されます。 分析と調査のために通信コンプライアンス ポリシーによって使用されるメッセージのコピーは、ユーザーが組織を離れてメールボックスが削除された場合でも、ポリシーが適用されている限り保持されます。 通信ポリシーが削除されると、ポリシーに関連付けられているメッセージのコピーも削除されます。
 
@@ -60,26 +58,18 @@ ms.locfileid: "65893374"
 Teams で個々のユーザー チャットとチャネル通信を監督するには、次のグループ管理構成を使用します。
 
 - **Teams チャット通信の場合:** 個々のユーザーを割り当てるか、 [配布グループ](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) を通信コンプライアンス ポリシーに割り当てます。 この設定は、ユーザーとチャットの関係が 1 対 1 または 1 対多の場合に使用できます。
-- **Teams チャネル通信の場合:** 特定のユーザーを含むスキャン対象のすべての Microsoft Teams チャネルまたは Microsoft 365 グループを、通信コンプライアンス ポリシーに割り当てます。 同じユーザーを別の Microsoft Teams チャネルまたは Microsoft 365 グループに追加する場合は、これらの新しいチャネルとグループを必ずコミュニケーション コンプライアンス ポリシーに追加するようにします。 チャネルのいずれかのメンバーがポリシー内の監視対象ユーザーであり、 *受信* 方向がポリシーで構成されている場合、チャネル内で送信されるすべてのメッセージはレビューの対象となり、ポリシーが一致する可能性があります (チャネル内のユーザーが明示的に監督されていない場合でも)。 たとえば、ユーザー A はチャネルの所有者またはメンバーです。 ユーザー B とユーザー C は、同じチャネルのメンバーであり、ユーザー A のみを監視する不適切なコンテンツ ポリシーと一致する言語を使用します。ユーザー B とユーザー C は、不適切なコンテンツ ポリシーで直接監督されていない場合でも、チャネル内の会話に対してポリシー一致を作成します。 ユーザー A を含むチャネルの外部にあるユーザー B とユーザー C の間の Teams の会話は、ユーザー A を含む不適切なコンテンツ ポリシーの対象になりません。チャネルの他のメンバーが明示的に監督されている場合に、チャネル メンバーを監督から除外するには、該当する通信コンプライアンス ポリシーで *[受信* 通信方向] 設定をオフにします。
-- **ハイブリッド電子メール環境を使用した Teams チャット通信の場合**:コミュニケーション コンプライアンスは、Exchange オンプレミス展開または Microsoft Teams を有効にした外部電子メール プロバイダーを使用して、組織のユーザーのチャット メッセージを監視できます。 監視するオンプレミスまたは外部メールボックスを持つユーザーの配布グループを作成する必要があります。 通信コンプライアンス ポリシーを作成するときに、ポリシー ウィザードで **監視対象ユーザーとグループ** の選択としてこの配布グループを割り当てます。 クラウドベースのストレージを有効にするための要件と制限事項、およびオンプレミス ユーザーに対する Teams のサポートの詳細については、「[オンプレミス ユーザーの Teams チャット データを検索する](search-cloud-based-mailboxes-for-on-premises-users.md)」を参照してください。
+- **Teams チャネル通信の場合:** 特定のユーザーを含むスキャン対象のすべての Microsoft Teams チャネルまたは Microsoft 365 グループを、通信コンプライアンス ポリシーに割り当てます。 同じユーザーを別の Microsoft Teams チャネルまたは Microsoft 365 グループに追加する場合は、これらの新しいチャネルとグループを必ずコミュニケーション コンプライアンス ポリシーに追加するようにします。 チャネルのいずれかのメンバーがポリシー内の監視対象ユーザーであり、 *受信* 方向がポリシーで構成されている場合、チャネル内で送信されるすべてのメッセージはレビューの対象となり、潜在的なポリシーが一致します (明示的に監督されていないチャネル内のユーザーの場合でも)。 たとえば、ユーザー A はチャネルの所有者またはメンバーです。 ユーザー B とユーザー C は、同じチャネルのメンバーであり、ユーザー A のみを監視する不適切なコンテンツ ポリシーと一致する言語を使用します。ユーザー B とユーザー C は、不適切なコンテンツ ポリシーで直接監督されていない場合でも、チャネル内の会話に対してポリシー一致を作成します。 ユーザー A を含むチャネルの外部にあるユーザー B とユーザー C の間の Teams の会話は、ユーザー A を含む不適切なコンテンツ ポリシーの対象になりません。チャネルの他のメンバーが明示的に監督されている場合に、チャネル メンバーを監督から除外するには、該当する通信コンプライアンス ポリシーで *[受信* 通信方向] 設定をオフにします。
+- **ハイブリッド電子メール環境を使用した Teams チャット通信の場合**:コミュニケーション コンプライアンスは、Exchange オンプレミス展開または Microsoft Teams を有効にした外部電子メール プロバイダーを使用している組織のユーザー向けのチャット メッセージを検出できます。 監視するオンプレミスまたは外部メールボックスを持つユーザーの配布グループを作成する必要があります。 通信コンプライアンス ポリシーを作成するときに、ポリシー ウィザードで **監視対象ユーザーとグループ** の選択としてこの配布グループを割り当てます。 クラウドベースのストレージを有効にするための要件と制限事項、およびオンプレミス ユーザーに対する Teams のサポートの詳細については、「[オンプレミス ユーザーの Teams チャット データを検索する](search-cloud-based-mailboxes-for-on-premises-users.md)」を参照してください。
 
 ## <a name="exchange-email"></a>Exchange メール
 
-Microsoft 365 または Office 365 サブスクリプションの一部として Exchange Online でホストされているメールボックスはすべて、メッセージ スキャンの対象となります。 Exchange 電子メール メッセージと添付ファイルは、通信コンプライアンス ポリシーの条件に一致するため、処理に約 24 時間かかる場合があります。 コミュニケーション コンプライアンスでサポートされる添付ファイルの種類は、[Exchangeメール フロー ルールのコンテンツ検査でサポートされているファイルの種類](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)と同じです。
+Microsoft 365 またはOffice 365 サブスクリプションの一部としてExchange Onlineでホストされているメールボックスはすべて、メッセージ スキャンの対象となります。 Exchange 電子メール メッセージと添付ファイルは、通信コンプライアンス ポリシーの条件に一致するため、処理に約 24 時間かかる場合があります。 コミュニケーション コンプライアンスでサポートされる添付ファイルの種類は、[Exchangeメール フロー ルールのコンテンツ検査でサポートされているファイルの種類](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)と同じです。
 
 ## <a name="yammer"></a>Yammer
 
 Yammer コミュニティ内のプライベート メッセージとパブリック会話、および関連する添付ファイルをスキャンできます。 定義されたチャネルとして Yammer を含むコミュニケーション コンプライアンス ポリシーにユーザーが追加されると、ユーザーがメンバーであるすべての Yammer コミュニティ間の通信がスキャン プロセスに含まれます。 通信コンプライアンス ポリシーの条件に一致する Yammer チャットと添付ファイルの処理には、最大で 24 時間かかる場合があります。 
 
-Yammer の通信と添付ファイルを監視するには、Yammer が通信コンプライアンス ポリシーの [ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode) になっている必要があります。 ネイティブ モードでは、すべての Yammer ユーザーが Azure Active Directory (AAD) にあり、すべてのグループが Office 365 グループであり、すべてのファイルが SharePoint Online に格納されます。
-
-## <a name="skype-for-business-online"></a>Skype for Business Online
-
-Skype for Business Online のチャット通信と関連する添付ファイルを監視できます。 コミュニケーション コンプライアンス ポリシーの条件に一致する Skype for Business Online チャットの処理には、最大 24 時間かかる場合があります。 監視付きチャット会話は、 [Skype for Business Online に保存された以前の会話](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)から提供されます。  
-
-次のグループ管理構成を使用して、Skype for Business Online のユーザー チャット通信を監視します。
-
-- **Skype for Business Online チャット通信の場合**: 個々のユーザーを割り当てるか、通信コンプライアンス ポリシーに [配布グループ](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) を割り当てます。 この設定は、ユーザーとチャットの関係が 1 対 1 または 1 対多の場合に使用できます。
+Yammer の通信と添付ファイルを監視するには、Yammer が通信コンプライアンス ポリシーの [ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode) になっている必要があります。 ネイティブ モードでは、すべての Yammer ユーザーが Azure Active Directory (AAD) にあり、すべてのグループが Office 365 グループになり、すべてのファイルが SharePoint Online に格納されます。
 
 ## <a name="third-party-sources"></a>サードパーティのソース
 

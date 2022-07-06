@@ -18,16 +18,14 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターへの新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 今月起こったことついてご覧ください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 528d3507838f62f017f7a21111f3ccf7dd03ac1f
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
-ms.translationtype: HT
+ms.openlocfilehash: 828389ded4e62b7cc7f7bbb1a0da8ef3534b6a58
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089928"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637785"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview のリスクおよびコンプライアンス ソリューションの新機能
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)への新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 Microsoft Purview の新機能は以下のとおりです。
 
@@ -254,7 +252,7 @@ ms.locfileid: "66089928"
 
 ## <a name="february-2022"></a>2022 年 2 月
 
-### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>電子情報開示
 
 - [eDiscovery (Premium) でカストディアンの通信テンプレートを管理する](advanced-ediscovery-communications-library.md) - eDiscovery マネージャーは、組織内のすべての eDiscovery (Premium) ケースで使用できるカストディアン通信テンプレートを作成できるようになりました。
 - [ eDiscovery (Premium) の発行責任者を管理する](advanced-ediscovery-issuing-officers.md) - eDiscovery 管理者は、組織内のあらゆる eDiscovery (Premium) ケースのカストディアンの通信に割り当てることができる発行責任者の一覧を追加できます。
@@ -302,7 +300,7 @@ ms.locfileid: "66089928"
 
 - [GDRP に基づく Azure、Dynamics 365 および Windows の侵害通知](/compliance/regulatory/gdpr-breach-notification) - Defender for Cloud などの有料サービスを利用しなくても、セキュリティやプライバシーに関する通知を受信できることを明確にするために更新されました。
 
-### <a name="ediscovery"></a>eDiscovery
+### <a name="ediscovery"></a>電子情報開示
 
 - [eDiscovery (Premium) ワークフローで Microsoft Teams のコンテンツを管理する](teams-workflow-in-advanced-ediscovery.md#reference-guide) - eDiscovery (Premium) で Teams コンテンツを管理するための新しいダウンロード可能なクイック リファレンス ガイドが更新されました。
 

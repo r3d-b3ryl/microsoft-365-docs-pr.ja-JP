@@ -1,6 +1,6 @@
 ---
 title: 情報バリアの属性
-description: この記事は、情報バリア セグメントの定義に使用できるAzure Active Directoryユーザー アカウント属性のリファレンスです。
+description: この記事は、情報バリア セグメントの定義に使用できる Azure Active Directory ユーザー アカウント属性のリファレンスです。
 keywords: Microsoft 365、Microsoft Purview、コンプライアンス、情報バリア
 ms.author: robmazz
 author: robmazz
@@ -14,23 +14,21 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e09331fb819d2b00764cd6dacd1687ade8ee116c
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: a1549a0cb3bf03056b37a75175c3b24416bec7b5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396269"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639778"
 ---
 # <a name="information-barriers-attributes"></a>情報バリアの属性
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Azure Active Directoryの特定の属性は、情報バリア (IB) でユーザーをセグメント化するために使用できます。 セグメントが定義されると、これらのセグメントを IB ポリシーのフィルターとして使用できます。 たとえば、 **部門** を使用して、組織内の部門別にユーザーのセグメントを定義することができます (1 人の従業員が 2 つの部署で同時に働く場合を想定)。
+Azure Active Directory の特定の属性は、情報バリア (IB) でユーザーをセグメント化するために使用できます。 セグメントが定義されると、これらのセグメントを IB ポリシーのフィルターとして使用できます。 たとえば、 **部門** を使用して、組織内の部門別にユーザーのセグメントを定義することができます (1 人の従業員が 2 つの部署で同時に働く場合を想定)。
 
 この記事では、情報バリアで属性を使用する方法について説明し、使用できる属性の一覧を示します。 情報バリアの詳細については、次のリソースを参照してください。
 
 - [情報障壁](information-barriers.md)
-- [Microsoft Teamsで情報バリアのポリシーを定義する](information-barriers-policies.md)
+- [Microsoft Teams で情報バリアのポリシーを定義する](information-barriers-policies.md)
 - [IB ポリシーを編集 (または削除) する](information-barriers-edit-segments-policies.md)
 
 ## <a name="how-to-use-attributes-in-ib-policies"></a>IB ポリシーで属性を使用する方法
@@ -43,7 +41,7 @@ Azure Active Directoryの特定の属性は、情報バリア (IB) でユーザ�
 
     - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) 場合は、「[powerShell でユーザー アカウントのプロパティを構成するOffice 365](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)」を参照してください。
 
-    - 1 つのアカウントを編集するには、「[Azure Active Directoryを使用してユーザーのプロファイル情報を追加または更新](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)する」を参照してください。
+    - 1 つのアカウントを編集するには、「 [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する」を](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)参照してください。
 
 3. 次の例のように、[PowerShell を使用してセグメントを定義](information-barriers-policies.md#define-segments-using-powershell)します。
 
@@ -56,15 +54,15 @@ Azure Active Directoryの特定の属性は、情報バリア (IB) でユーザ�
     > [!TIP]
     > セグメントを定義するときは、すべてのセグメントに同じ属性を使用します。 たとえば、Department を使用して一部のセグメントを定義する場合は、 *Department* を使用してすべてのセグメントを定義 *します*。 *Department* を使用して一部のセグメントを定義し、*MemberOf を* 使用するセグメントを定義しないでください。 セグメントが重複していないことを確認します。各ユーザーは、1 つのセグメントに割り当てる必要があります。
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>関連情報
 
 次の表に、情報バリアで使用できる属性の一覧を示します。
 
-|**Azure Active Directory プロパティ名<br/>(LDAP 表示名)**|**Exchange プロパティ名**|
+|**Azure Active Directory プロパティ名<br/> (LDAP 表示名)**|**Exchange プロパティ名**|
 |:---------------------------------------------------------------|:-------------------------|
 | 共同 | 共同 |
-| Company | Company |
-| Department | Department |
+| 会社名 | 会社名 |
+| 部署 | Department |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |
 | ExtensionAttribute3 | CustomAttribute3 |
@@ -85,7 +83,7 @@ Azure Active Directoryの特定の属性は、情報バリア (IB) でユーザ�
 | MSExchExtensionCustomAttribute3 | ExtensionCustomAttribute3 |
 | MSExchExtensionCustomAttribute4 | ExtensionCustomAttribute4 |
 | MSExchExtensionCustomAttribute5 | ExtensionCustomAttribute5 |
-| MailNickname | Alias |
+| MailNickname | エイリアス |
 | PhysicalDeliveryOfficeName | Office |
 | PostalCode | PostalCode |
 | Proxyaddresses | EmailAddresses |
@@ -99,6 +97,6 @@ Azure Active Directoryの特定の属性は、情報バリア (IB) でユーザ�
 
 ## <a name="resources"></a>リソース
 
-- [Microsoft Teamsで情報バリアのポリシーを定義する](information-barriers-policies.md)
+- [Microsoft Teams で情報バリアのポリシーを定義する](information-barriers-policies.md)
 - [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)
 - [情報障壁](information-barriers.md)

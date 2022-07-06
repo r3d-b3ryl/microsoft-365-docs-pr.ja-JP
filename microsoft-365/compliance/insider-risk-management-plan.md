@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 043ee6cac3a7aa7408d949b4455fd90f7f6a66d0
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: d117ba643ceb15cc867e0688675b56caa3d302f7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810924"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637287"
 ---
 # <a name="plan-for-insider-risk-management"></a>インサイダー リスク管理のための計画
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織で [インサイダー リスク管理](insider-risk-management.md) を開始する前に、情報技術とコンプライアンス管理チームが確認する必要がある重要な計画アクティビティと考慮事項があります。 次の領域での展開を十分に理解し、計画することで、インサイダー リスク管理機能の実装と使用が円滑に進み、ソリューションのベスト プラクティスと一致することが保証されます。 
 
@@ -61,13 +59,13 @@ ms.locfileid: "65810924"
 
 |**アクション**|**インサイダー リスクの管理**|**Insider Risk Management 管理**|**インサイダー リスク管理アナリスト**|**インサイダー リスク管理調査担当者**|**Insider Risk Management Auditors**|
 |:----------|:--------------------------|:--------------------------------|:-----------------------------------|:----------------------------------------|:-----------------------------------|
-| ポリシーと設定を構成する | はい | はい | 不要 | いいえ | 不要 |
+| ポリシーと設定を構成する | はい | はい | 不要 | 不要 | 不要 |
 | 分析分析情報にアクセスする | はい | はい | はい | 不要 | 不要 |
 | アラートを調査&アクセスする | はい | 不要 | はい | はい | 不要 |
 | アクセス&ケースを調査する | はい | 不要 | はい | はい | 不要 |
-| コンテンツ エクスプローラー&表示する | はい | 不要 | いいえ | はい | 不要 |
+| コンテンツ エクスプローラー&表示する | はい | 不要 | 不要 | はい | 不要 |
 | 通知テンプレートを構成する | はい | 不要 | はい | はい | 不要 |
-| 監査ログのエクスポート&表示する | はい | 不要 | 不要 | いいえ | はい |
+| 監査ログのエクスポート&表示する | はい | 不要 | 不要 | 不要 | はい |
 
 >[!IMPORTANT]
 >Insider *Risk Management* または *Insider Risk Management 管理* ロール グループに少なくとも 1 人のユーザーが常に存在することを確認します (選択したオプションに応じて)。 特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が "ゼロ管理者" シナリオに入らないようにします。
@@ -81,21 +79,21 @@ ms.locfileid: "65810924"
 
 ## <a name="understand-requirements-and-dependencies"></a>要件と依存関係を理解する
 
-インサイダー リスク管理ポリシーを実装する方法に応じて、適切なMicrosoft 365ライセンス サブスクリプションを用意し、いくつかのソリューションの前提条件を理解し、計画する必要があります。
+インサイダー リスク管理ポリシーを実装する方法に応じて、適切な Microsoft 365 ライセンス サブスクリプションを持ち、いくつかのソリューションの前提条件を理解し、計画する必要があります。
 
 **ライセンス：** インサイダー リスク管理は、Microsoft 365 ライセンス サブスクリプションの幅広い選択の一環として利用できます。 詳細については、 [インサイダー リスク管理の概要に関する](insider-risk-management-configure.md#subscriptions-and-licensing) 記事を参照してください。
 
 > [!IMPORTANT]
 > インサイダー リスク管理は、現在、Azure サービスの依存関係でサポートされている地理的リージョンと国でホストされているテナントで利用できます。 組織でインサイダー リスク管理がサポートされていることを確認するには、 [国/地域ごとの Azure 依存関係の可用性](/troubleshoot/azure/general/dependency-availability-by-country)に関するページを参照してください。
 
-既存のMicrosoft 365 Enterprise E5 プランがなく、インサイダー リスク管理を試す場合は、既存のサブスクリプションに[Microsoft 365を追加](/office365/admin/try-or-buy-microsoft-365)するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)できます。
+既存のMicrosoft 365 Enterprise E5 プランがない場合で、インサイダー リスク管理を試したい場合は、[Microsoft 365](/office365/admin/try-or-buy-microsoft-365) を既存のサブスクリプションに追加するか、Microsoft 365 Enterprise E5 の[試用版にサインアップ](https://www.microsoft.com/microsoft-365/enterprise)します。
 
 **ポリシー テンプレートの要件:** 選択したポリシー テンプレートに応じて、組織でインサイダー リスク管理を構成する前に理解し、計画する必要がある要件があります。
 
-- ユーザー テンプレートを **削除してデータ盗難を使用する** 場合は、組織内のユーザーの辞任と終了日の情報を定期的にインポートするように、Microsoft 365人事コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
+- ユーザー テンプレートを **削除してデータ盗難を使用する** 場合は、組織内のユーザーの辞任と終了日の情報を定期的にインポートするように Microsoft 365 HR コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
 - **データ リーク** テンプレートを使用する場合は、組織内の機密情報を定義し、重大度の高い DLP ポリシー アラートのインサイダー リスク アラートを受信するように、少なくとも 1 つのMicrosoft Purview データ損失防止 (DLP) ポリシーを構成する必要があります。 組織の DLP ポリシーを構成する方法については、「[DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)」の記事をご覧ください。
 - **セキュリティ ポリシー違反** テンプレートを使用する場合は、Defender Security Center のインサイダー リスク管理統合のMicrosoft Defender for Endpointを有効にして、セキュリティ違反アラートをインポートする必要があります。 Defender for Endpoint とインサイダー リスク管理の統合を有効にする詳細なガイダンスについては、「[Microsoft Defender for Endpointで高度な機能を構成する](/windows/security/threat-protection/microsoft-defender-atp/advanced-features)」を参照してください。
-- **Disgruntled ユーザー** テンプレートを使用する場合は、組織内のユーザーのパフォーマンスまたは降格状態情報を定期的にインポートするように、Microsoft 365人事コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
+- **Disgruntled ユーザー** テンプレートを使用する場合は、組織内のユーザーのパフォーマンスまたは降格状態情報を定期的にインポートするように Microsoft 365 HR コネクタを構成する必要があります。 組織用の HR コネクタの段階的な構成手順については「[Microsoft 365 HR コネクタでデータをインポートする](import-hr-data.md)」を参照してください。
 
 ## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>運用環境で少数のユーザー グループを使用してテストする
 
@@ -119,5 +117,5 @@ ms.locfileid: "65810924"
 
 組織のインサイダー リスク管理を構成する準備はできましたか? 次の記事を確認します。
 
-- [概要インサイダー リスク管理設定を使用](insider-risk-management-settings.md)してグローバル ポリシー設定を構成します。
-- [インサイダー リスク管理を概要](insider-risk-management-configure.md)して、前提条件を構成し、ポリシーを作成し、アラートの受信を開始します。
+- [インサイダー リスク管理の設定を開始](insider-risk-management-settings.md) して、グローバル ポリシー設定を構成します。
+- [インサイダー リスク管理を開始](insider-risk-management-configure.md) して前提条件を構成し、ポリシーを作成し、アラートの受信を開始します。

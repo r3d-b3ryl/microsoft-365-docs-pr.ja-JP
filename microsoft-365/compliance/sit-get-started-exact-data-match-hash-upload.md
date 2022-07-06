@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: 機密情報の種類に一致する正確なデータの機密情報ソース テーブルをハッシュしてアップロードします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3c45c618caad24084ee9c85410be886863dd733
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437637"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641298"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>機密情報の種類と完全に一致する機密情報のソース テーブルをハッシュしてアップロードする
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、機密情報ソース テーブルをハッシュしてアップロードする方法について説明します。
 
@@ -35,20 +33,20 @@ ms.locfileid: "65437637"
 このフェーズでは、次の操作を行います。
 
 1. カスタム セキュリティ グループとユーザー アカウントを設定する
-2. EDM アップロード エージェント ツールを設定する
-3. EDM アップロード エージェント ツールを使用して、ソルト値を使用して機密情報ソース テーブルをハッシュし、アップロードします。
+2. EDM Upload Agent ツールを設定する
+3. EDM Upload Agent ツールを使用して、機密情報ソース テーブルである salt 値を使用してハッシュし、アップロードします。
 
 ハッシュ化とアップロードは 1 台のコンピューターで行うこともできますし、ハッシュ化のステップとアップロードのステップを分離してセキュリティを高めることもできます。
 
 1 台のコンピューターでハッシュ化とアップロードを行う場合は、ご利用の Microsoft 365 テナントに直接接続可能なコンピューターから行う必要があります。 これには、クリア テキストの機密情報ソース テーブル ファイルがハッシュのためにそのコンピューター上にある必要があります。
 
-ダイレクト アクセス コンピューターでクリア テキストの機密情報ソース テーブル ファイルを公開しない場合は、セキュリティで保護された場所にあるコンピューターでハッシュし、ハッシュ ファイルと salt ファイルをアップロードのためにMicrosoft 365 テナントに直接接続できるコンピューターにコピーできます。 分離されたハッシュとアップロードのシナリオでは、両方のコンピューターに EDMUploadAgent が必要です。
+直接アクセス コンピューターでクリア テキストの機密情報ソース テーブル ファイルを公開しない場合は、セキュリティで保護された場所にあるコンピューターでハッシュし、アップロードのために Microsoft 365 テナントに直接接続できるコンピューターにハッシュ ファイルと salt ファイルをコピーできます。 分離されたハッシュとアップロードのシナリオでは、両方のコンピューターに EDMUploadAgent が必要です。
 
 > [!IMPORTANT]
 > 完全一致スキーマと機密情報の種類ウィザードを使用してスキーマ ファイルを作成した場合は、まだスキーマをダウンロードしていない場合は、この手順のスキーマをダウンロード ***する必要があります*** 。 [「EDM スキーマ ファイルを XML 形式でエクスポート](sit-get-started-exact-data-match-create-schema.md#export-of-the-edm-schema-file-in-xml-format)する」を参照してください。
 
 > [!NOTE]
-> 組織が[テナント レベルでMicrosoft 365の顧客キーを](customer-key-overview.md)設定している場合は、完全一致によって暗号化機能が自動的に使用されます。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
+> 組織が [テナント レベルで Microsoft 365 の顧客キーを](customer-key-overview.md)設定している場合、データの完全一致によって、その暗号化機能が自動的に使用されます。 この機能を利用できるのは、商用クラウド内の E5 ライセンスが割り当てられたテナントのみです。
 
 ### <a name="best-practices"></a>ベスト プラクティス
 
@@ -120,7 +118,7 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
    >
    > EDMUploadAgent を使用して特定のデータ ストアにデータをアップロードできるのは、1 日に 2 回だけです。
 
-3. EDM アップロード エージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、**C:\EDM\Data ディレクトリに** 切り替えてから、次のコマンドを実行します。
+3. EDM アップロード エージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、 **C:\EDM\Data ディレクトリに** 切り替えてから、次のコマンドを実行します。
 
    `EdmUploadAgent.exe /Authorize`
 
@@ -179,7 +177,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
    EdmUploadAgent.exe /CreateHash /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /AllowedBadLinesPercentage [value]
    ```
 
-   次に例を示します。
+   例:
 
    ```dos
    EdmUploadAgent.exe /CreateHash /DataFile C:\Edm\Data\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml /AllowedBadLinesPercentage 5
@@ -195,7 +193,7 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 
 2. 機密情報ソース テーブル ファイル (PatientRecords) をテナントにアップロードするために使用するコンピューターに、セキュリティで保護された方法でこれらのファイルをコピーします。
 
-3. EDM アップロード エージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、**C:\EDM\Data ディレクトリに** 切り替えてから、次のコマンドを実行します。
+3. EDM アップロード エージェントを承認し、管理者としてコマンド プロンプト ウィンドウを開き、 **C:\EDM\Data ディレクトリに** 切り替えてから、次のコマンドを実行します。
 
    ```dos
    EdmUploadAgent.exe /Authorize

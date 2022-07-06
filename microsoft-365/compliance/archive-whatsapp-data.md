@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365で WhatsApp データをアーカイブするコネクタを設定する
+title: Microsoft 365 で WhatsApp データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、Microsoft 365で WhatsApp データをインポートおよびアーカイブする TeleMessage コネクタを設定できます。 これにより、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサード パーティのデータを管理できます。
-ms.openlocfilehash: d48e4108fdf89023d3b41d9c1ff6a31e0148b17d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 管理者は、Microsoft 365 で WhatsApp データをインポートおよびアーカイブするための TeleMessage コネクタを設定できます。 これにより、Microsoft 365 のサード パーティのデータ ソースからデータをアーカイブできるため、訴訟ホールド、コンテンツ検索、アイテム保持ポリシーなどのコンプライアンス機能を使用して、組織のサードパーティ データを管理できます。
+ms.openlocfilehash: cf596cd4c48e68759321f4f477ef387c7e8cfc74
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094055"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637707"
 ---
 # <a name="set-up-a-connector-to-archive-whatsapp-data"></a>WhatsApp データをアーカイブするコネクタを設定する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、WhatsApp の呼び出し、チャット、添付ファイル、ファイル、および削除されたメッセージをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに毎日 1 回接続され、TeleMessage WhatsApp Phone Archiver または TeleMessage WhatsApp Cloud Archiver を使用して従業員のモバイル通信を Microsoft 365 のメールボックスにインポートします。
 
-Microsoft Purview コンプライアンス ポータルの TeleMessage コネクタを使用して、WhatsApp の呼び出し、チャット、添付ファイル、ファイル、および削除されたメッセージをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の TeleMessage アカウントに毎日 1 回接続され、TeleMessage WhatsApp 電話 Archiver または TeleMessage WhatsApp Cloud Archiver を使用して従業員のモバイル通信をMicrosoft 365のメールボックスにインポートします。
-
-WhatsApp データがユーザー メールボックスに格納された後、訴訟ホールド、コンテンツ検索、Microsoft 365アイテム保持ポリシーなどの Microsoft Purview 機能を WhatsApp データに適用できます。 たとえば、コンテンツ検索を使用して WhatsApp メッセージを検索したり、WhatsApp メッセージを含むメールボックスを電子情報開示 (プレミアム) ケースのカストディアンに関連付けることができます。 WhatsApp コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+WhatsApp データがユーザー メールボックスに格納された後、訴訟ホールド、コンテンツ検索、Microsoft 365 アイテム保持ポリシーなどの Microsoft Purview 機能を WhatsApp データに適用できます。 たとえば、コンテンツ検索を使用して WhatsApp メッセージを検索したり、WhatsApp メッセージを含むメールボックスを電子情報開示 (Premium) ケースのカストディアンに関連付けることができます。 WhatsApp コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-whatsapp-data"></a>WhatsApp データのアーカイブの概要
 
-次の概要では、コネクタを使用して WhatsApp データをMicrosoft 365にアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して Microsoft 365 で WhatsApp データをアーカイブするプロセスについて説明します。
 
 ![WhatsApp アーカイブ ワークフロー。](../media/WhatsAppConnectorWorkflow.png)
 
@@ -37,31 +35,31 @@ WhatsApp データがユーザー メールボックスに格納された後、�
 
 2. リアルタイムで、組織の WhatsApp データが TeleMessage サイトにコピーされます。
 
-3. コンプライアンス ポータルで作成した WhatsApp コネクタは、毎日 TeleMessage サイトに接続し、過去 24 時間の WhatsApp データを Microsoft クラウド内の安全なAzure Storageの場所に転送します。 また、コネクタはコンテンツ WhatsApp データを電子メール メッセージ形式に変換します。
+3. コンプライアンス ポータルで作成した WhatsApp コネクタは、毎日 TeleMessage サイトに接続し、過去 24 時間の WhatsApp データを Microsoft クラウドの安全な Azure Storage の場所に転送します。 また、コネクタはコンテンツ WhatsApp データを電子メール メッセージ形式に変換します。
 
 4. コネクタは、WhatsApp データを特定のユーザーのメールボックスにインポートします。 **WhatsApp Archiver** という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *ユーザーの電子メール アドレス* プロパティの値を使用してこのマッピングを行います。 すべての WhatsApp メッセージには、このプロパティが含まれています。このプロパティには、メッセージのすべての参加者の電子メール アドレスが設定されます。
 
-   *ユーザーの電子メール アドレス* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを実装することもできます。 このマッピング ファイルには、組織内のユーザーの携帯電話番号と対応するMicrosoft 365電子メール アドレスが含まれています。 自動ユーザー マッピングとカスタム マッピングの両方を有効にした場合、すべての WhatsApp アイテムについて、コネクタは最初にカスタム マッピング ファイルを参照します。 ユーザーの携帯電話番号に対応する有効なMicrosoft 365ユーザーが見つからない場合、コネクタはインポートしようとしているアイテムの電子メール アドレス プロパティの値を使用します。 カスタム マッピング ファイルまたは WhatsApp アイテムのメール アドレス プロパティで有効なMicrosoft 365 ユーザーがコネクタで見つからない場合、アイテムはインポートされません。
+   *ユーザーの電子メール アドレス* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを実装することもできます。 このマッピング ファイルには、組織内のユーザーの携帯電話番号と対応する Microsoft 365 メール アドレスが含まれています。 自動ユーザー マッピングとカスタム マッピングの両方を有効にした場合、すべての WhatsApp アイテムについて、コネクタは最初にカスタム マッピング ファイルを参照します。 ユーザーの携帯電話番号に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはインポートしようとしているアイテムのメール アドレス プロパティの値を使用します。 カスタム マッピング ファイルまたは WhatsApp アイテムの電子メール アドレス プロパティで、コネクタで有効な Microsoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタを設定する前に
 
-WhatsApp 通信データをアーカイブするために必要な実装手順の一部はMicrosoft 365外部にあり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
+WhatsApp 通信データをアーカイブするために必要な実装手順の一部は、Microsoft 365 の外部にあり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
 - [TeleMessage から WhatsApp Archiver サービス](https://www.telemessage.com/mobile-archiver/order-mobile-archiver-for-o365)を注文し、組織の有効な管理アカウントを取得します。 コンプライアンス センターでコネクタを作成するときは、このアカウントにサインインする必要があります。
 
-- TeleMessage アカウントで WhatsApp アーカイブを必要とするすべてのユーザーを登録します。 ユーザーを登録するときは、Microsoft 365 アカウントに使用するのと同じメール アドレスを必ず使用してください。
+- TeleMessage アカウントで WhatsApp アーカイブを必要とするすべてのユーザーを登録します。 ユーザーを登録するときは、Microsoft 365 アカウントで使用されているのと同じメール アドレスを使用してください。
 
-- TeleMessage [WhatsApp 電話 Archiver アプリ](https://www.telemessage.com/mobile-archiver/whatsapp-phone-archiver-2/)を従業員の携帯電話にインストールし、アクティブ化します。 または、従業員の携帯電話に通常の WhatsApp または WhatsApp Business アプリをインストールし、TeleMessage Web サイトで QR コードをスキャンして WhatsApp Cloud Archiver サービスをアクティブ化することもできます。 詳細については、「 [WhatsApp Cloud Archiver」を](https://www.telemessage.com/mobile-archiver/whatsapp-archiver/whatsapp-cloud-archiver/)参照してください。
+- 従業員の携帯電話に TeleMessage [WhatsApp Phone Archiver アプリ](https://www.telemessage.com/mobile-archiver/whatsapp-phone-archiver-2/) をインストールし、アクティブ化します。 または、従業員の携帯電話に通常の WhatsApp または WhatsApp Business アプリをインストールし、TeleMessage Web サイトで QR コードをスキャンして WhatsApp Cloud Archiver サービスをアクティブ化することもできます。 詳細については、「 [WhatsApp Cloud Archiver」を](https://www.telemessage.com/mobile-archiver/whatsapp-archiver/whatsapp-cloud-archiver/)参照してください。
 
-- Verizon ネットワーク コネクタを作成するユーザーには、データ コネクタ管理者ロールが割り当てられている必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
+- Verizon Network コネクタを作成するユーザーには、データ コネクタ 管理 ロールが割り当てられている必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者がカスタムロール グループを作成し、Data Connector 管理ロールを割り当ててから、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この TeleMessage データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティのアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purview およびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この TeleMessage データ コネクタは、Microsoft 365 US Government クラウドの GCC 環境で使用できます。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあり、Microsoft Purview およびデータ保護コミットメントの対象外であるサード パーティ システムに対する組織の顧客データの保存、送信、処理が含まれる場合があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="create-a-whatsapp-archiver-connector"></a>WhatsApp Archiver コネクタを作成する
 
-前のセクションで説明した前提条件を完了したら、コンプライアンス ポータルで WhatsApp コネクタを作成できます。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、WhatsApp データをMicrosoft 365の対応するユーザー メールボックス ボックスに転送します。
+前のセクションで説明した前提条件を完了したら、コンプライアンス ポータルで WhatsApp コネクタを作成できます。 コネクタは、指定した情報を使用して TeleMessage サイトに接続し、WhatsApp データを Microsoft 365 の対応するユーザー メールボックス ボックスに転送します。
 
-1. **Data connectorsWhatsApp** >  **Archiver** に [https://compliance.microsoft.com](https://compliance.microsoft.com/)移動してクリックします。
+1. **データ コネクタ** > **WhatsApp Archiver** に [https://compliance.microsoft.com](https://compliance.microsoft.com/)移動してクリックします。
 
 2. **WhatsApp Archiver** 製品の説明ページで、[**コネクタの追加**] をクリックします。
 

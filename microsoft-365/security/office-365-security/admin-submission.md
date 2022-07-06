@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
-description: 管理者は、Microsoft 365 Defender ポータルの提出ポータルを使用して、疑わしいメール、フィッシング詐欺の疑いのあるメール、スパム、その他有害な可能性のあるメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
+description: 管理者は、Microsoft 365 Defender ポータルで申請ポータルを使用して、ブロックされた正当なメール、疑わしい電子メール、疑わしいフィッシングメール、スパム、その他の潜在的に有害なメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 280b609f39431759216ab4e40cfb5d01752b6514
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 17083a248e31d5ae1eff3c088497f071bcac643b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487699"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639448"
 ---
-# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信する
+# <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ブロックされる正当なメール、および電子メールの添付ファイルを Microsoft に送信する
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -105,7 +105,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、管�
    - **ブロックされている必要があります (False negative)**: 電子 **メールが表示されるセクションとして分類されている必要があります** 。次のいずれかの値を選択します (不明な場合は、最善の判断をしてください)。
      - **フィッシング**
      - **Malware**
-     - **スパム**
+     - **[スパム]**
 
 5. 完了したら、**[送信]** をクリックします。
 
@@ -188,7 +188,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、管�
      - **ネットワーク メッセージ ID**
      - **Sender**
      - **[受信者]**
-     - **[名前]**
+     - **名前**
      - **提出者**
      - **送信の理由**
      - **状態**

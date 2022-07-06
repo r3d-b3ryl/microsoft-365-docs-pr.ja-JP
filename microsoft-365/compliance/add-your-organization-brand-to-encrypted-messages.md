@@ -23,16 +23,14 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: グローバル管理者Office 365組織のブランドを暗号化ポータルのコンテンツ&暗号化された電子メール メッセージに適用する方法について説明します。
-ms.openlocfilehash: fb0525b112137bf57007b4188bc461abbb0c3f27
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: bf6f3b9de64185778be7eeb4da6cc8e537f0305a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016858"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637023"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>組織のブランドをビジネスメッセージ暗号化で暗号化されたメッセージのMicrosoft 365に追加する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>組織のブランドを Microsoft 365 for business Message Encryption で暗号化されたメッセージに追加する
 
 会社のブランドを適用して、組織の電子メール メッセージと暗号化ポータルの外観をカスタマイズできます。 作業を開始する前に、職場または学校アカウントにグローバル管理者アクセス許可を適用する必要があります。 これらのアクセス許可を取得したら、Exchange Online PowerShell のGet-OMEConfigurationコマンドレットとSet-OMEConfiguration コマンドレットを使用して、暗号化された電子メール メッセージのこれらの部分をカスタマイズします。
 
@@ -53,7 +51,7 @@ ms.locfileid: "66016858"
 - 電子メールの取り消しを許可するかどうか
 - 指定した日数が経過した後に、外部受信者に送信されたメールの有効期限を切れるかどうかを指定します。
 
-テンプレートを作成したら、Exchangeメール フロー ルールを使用して、暗号化されたメールに適用できます。 Microsoft Purview Advanced Message Encryption をお持ちであれば、これらのテンプレートを使用してブランド化したメールを取り消すことができます。
+テンプレートを作成したら、Exchange メール フロー ルールを使用して、暗号化されたメールに適用できます。 Microsoft Purview Advanced Message Encryption をお持ちであれば、これらのテンプレートを使用してブランド化したメールを取り消すことができます。
 
 ## <a name="work-with-ome-branding-templates"></a>OME ブランド テンプレートを操作する
 
@@ -100,7 +98,7 @@ Microsoft Purview Advanced Message Encryption を使用している場合は、 
    New-OMEConfiguration -Identity "<OMEConfigurationName>"
    ```
 
-   たとえば、
+   例えば、
 
    ```powershell
    New-OMEConfiguration -Identity "Custom branding template"
@@ -138,7 +136,7 @@ Microsoft Purview Advanced Message Encryption を使用している場合は、 
    Remove-OMEConfiguration -Identity ""<OMEConfigurationName>"
    ```
 
-   たとえば、
+   例えば、
 
    ```powershell
    Remove-OMEConfiguration -Identity "Branding template 1"
@@ -146,25 +144,25 @@ Microsoft Purview Advanced Message Encryption を使用している場合は、 
 
    詳細については、「 [Remove-OMEConfiguration」を](/powershell/module/exchange/remove-omeconfiguration)参照してください。
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>カスタム ブランドを暗号化されたメールに適用するExchangeメール フロー ルールを作成する
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>暗号化されたメールにカスタム ブランドを適用する Exchange メール フロー ルールを作成する
 
 > [!IMPORTANT]
 > メールをスキャンおよび変更するサード パーティ製アプリケーションでは、OME ブランドが正しく適用されない可能性があります。
 
-既定のテンプレートを変更するか、新しいブランド 化テンプレートを作成した後、Exchangeメール フロー ルールを作成して、特定の条件に基づいてカスタム ブランドを適用できます。 最も重要なのは、電子メールを暗号化する必要がある点です。 このようなルールは、次のシナリオでカスタム ブランドを適用します。
+既定のテンプレートを変更するか、新しいブランド 化テンプレートを作成した後、Exchange メール フロー ルールを作成して、特定の条件に基づいてカスタム ブランドを適用できます。 最も重要なのは、電子メールを暗号化する必要がある点です。 このようなルールは、次のシナリオでカスタム ブランドを適用します。
 
-- OutlookまたはOutlook on the webを使用してエンド ユーザーによって電子メールが手動で暗号化された場合は、以前はOutlook Web App
-- Exchangeメール フロー ルールまたは Microsoft Purview データ損失防止ポリシーによって電子メールが自動的に暗号化された場合
+- Outlook またはOutlook on the webを使用してエンド ユーザーによって電子メールが手動で暗号化された場合は、以前はOutlook Web App
+- Exchange メール フロー ルールまたはMicrosoft Purview データ損失防止 ポリシーによって電子メールが自動的に暗号化された場合
 
-Microsoft Purview Message Encryption でカスタム ブランドが適用されるようにするには、メール メッセージを暗号化するメール フロー ルールを設定します。 暗号化規則が最初に処理されるように、暗号化規則の優先順位はブランド化規則よりも高くする必要があります。 既定では、ブランド化ルールの前に暗号化規則を作成すると、暗号化ルールの優先度が高くなります。 暗号化を適用するExchangeメール フロー ルールを作成する方法については、「[Office 365で電子メール メッセージを暗号化するメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。 メール フロー ルールの優先度の設定については、「 [メール フロー](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule) ルールの管理」を参照してください。
+カスタム ブランドMicrosoft Purview Message Encryption適用するには、メール メッセージを暗号化するメール フロー ルールを設定します。 暗号化規則が最初に処理されるように、暗号化規則の優先順位はブランド化規則よりも高くする必要があります。 既定では、ブランド化ルールの前に暗号化規則を作成すると、暗号化ルールの優先度が高くなります。 暗号化を適用する Exchange メール フロールールを作成する方法については、「[Office 365で電子メール メッセージを暗号化するメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。 メール フロー ルールの優先度の設定については、「 [メール フロー](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#set-the-priority-of-a-mail-flow-rule) ルールの管理」を参照してください。
 
 1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校アカウントを使用して、[Office 365にサインインします](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
 
-2. **[管理者**] タイルを選択します。
+2. **管理** タイルを選択します。
 
-3. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、[**管理センター**\>] <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>を選択します。
+3. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で、[**管理 センター** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>] を選択します。
 
-4. EAC の [**メール フロー** \> **ルール**] に移動し、[**新しい新規**![] アイコンを選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、[Exchange Onlineの管理センター Exchange](/exchange/exchange-admin-center)参照してください。
+4. EAC の [**メール フロー** \> **ルール**] に移動し、[**新しい新規**![] アイコンを選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、[Exchange Onlineの Exchange 管理センターに関するページを](/exchange/exchange-admin-center)参照してください。
 
 5. **[名前]** に、ルールの名前 (営業部門のブランド化など) を入力します。
 
@@ -176,7 +174,7 @@ Microsoft Purview Message Encryption でカスタム ブランドが適用され
 
 7. 暗号化を適用するメール フロー ルールを既に定義している場合は、この手順をスキップしてください。 それ以外の場合は、暗号化を適用するようにメール フロー ルールを構成するには、[**次の操作]** から [**メッセージ セキュリティの変更**] を選択し、[メッセージ **の暗号化と権限の保護Office 365適用**] を選択します。 一覧から RMS テンプレートを選択し、[ **アクションの追加**] を選択します。
 
-   テンプレートの一覧には、既定のテンプレートとオプション、および作成するカスタム テンプレートが含まれます。 一覧が空の場合は、Microsoft Purview メッセージ暗号化が設定されていることを確認します。 手順については、「 [Microsoft Purview メッセージ暗号化の設定](set-up-new-message-encryption-capabilities.md)」を参照してください。 既定のテンプレートの詳細については、「[Azure Information Protection 用のテンプレートの構成と管理](/information-protection/deploy-use/configure-policy-templates)」を参照してください。 [ **転送しない** ] オプションの詳細については、「 [電子メールの転送不可オプション」を](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)参照してください。 **暗号化専用** オプションの詳細については、「[電子メールの暗号化のみオプション」を](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)参照してください。
+   テンプレートの一覧には、既定のテンプレートとオプション、および作成するカスタム テンプレートが含まれます。 リストが空の場合は、Microsoft Purview Message Encryptionを設定していることを確認します。 手順については、「[Microsoft Purview Message Encryptionのセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。 既定のテンプレートの詳細については、「[Azure Information Protection 用のテンプレートの構成と管理](/information-protection/deploy-use/configure-policy-templates)」を参照してください。 [ **転送しない** ] オプションの詳細については、「 [電子メールの転送不可オプション」を](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)参照してください。 **暗号化専用** オプションの詳細については、「[電子メールの暗号化のみオプション」を](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)参照してください。
 
 8. **[次の操作を行う**] で、[**メッセージ セキュリティ**\>の変更] を選択し、**カスタム ブランドを OME メッセージに適用** します。 次に、ドロップダウンからブランド テンプレートを選択します。
 

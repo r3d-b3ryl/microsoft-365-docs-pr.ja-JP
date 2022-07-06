@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 1 つのレビュー セットからドキュメントを選択し、Microsoft Purview 電子情報開示 (プレミアム) ケースの別のセットでドキュメントを個別に操作する方法について説明します。
+description: 1 つのレビュー セットからドキュメントを選択し、Microsoft Purview eDiscovery (Premium) ケース内の別のセットでドキュメントを個別に操作する方法について説明します。
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 599af9e2060497738076cd702e9e3dd31f5db06d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 4fc1548903ebea3a42d1612c8e9c74be32bbe0ba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094143"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640966"
 ---
 # <a name="add-data-to-a-review-set-from-another-review-set"></a>別のレビュー セットからレビュー セットにデータを追加
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 場合によっては、1 つのレビュー セットからドキュメントを選択し、別のレビュー セットで個別に操作することが必要になる場合があります。 これは、レビューセットのコンテンツを選別して、データのサブセットに対して 分析を実行する場合に、特に役立ちます。
 

@@ -14,56 +14,52 @@ metadata:
   search.appverid:
   - MET150
   ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
-  description: Microsoft Purview メッセージ暗号化のしくみについて質問がありますか? ここで回答をご覧ください。
+  description: Microsoft Purview Message Encryptionのしくみについて質問がありますか? ここで回答をご覧ください。
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4d365174ff7fa7db71939a10de0a57e50dbd4d46
-  ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+  ms.openlocfilehash: 0c20c671352c62b5c71f6c5369fd89aab99528ae
+  ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/13/2022
-  ms.locfileid: "66043046"
+  ms.lasthandoff: 07/06/2022
+  ms.locfileid: "66640590"
 title: メッセージの暗号化についてよく寄せられる質問
-summary: >
-  [!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-
-  新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。 また、Azure Information Protection のデータ保護サービスである Azure Rights Management についての質問の回答については、「[Azure Information Protection でのデータ保護についてよく寄せられる質問](/information-protection/get-started/faqs-rms)」を参照してください。
+summary: "\n新しいメッセージ保護機能について質問がある場合は、 ここで回答をご覧ください。 また、Azure Information Protection のデータ保護サービスである Azure Rights Management についての質問の回答については、「[Azure Information Protection でのデータ保護についてよく寄せられる質問](/information-protection/get-started/faqs-rms)」を参照してください。\n"
 sections:
 - name: 無視
   questions:
-  - question: Microsoft Purview メッセージ暗号化 (OME) とは
-    answer: Microsoft Purview Message Encryption は、電子メールの暗号化と権限管理機能を組み合わせたものです。 著作権管理機能は Azure Information Protection を利用しています。
+  - question: Microsoft Purview Message Encryption (OME)とは
+    answer: Microsoft Purview Message Encryptionは、電子メールの暗号化と権限管理機能を組み合わせたものです。 著作権管理機能は Azure Information Protection を利用しています。
   - question: >
-      Who Microsoft Purview メッセージ暗号化を使用できますか?
-    answer: "Microsoft Purview メッセージ暗号化は、次の条件で使用できます。\n  \n- Office 365でExchange Onlineに対して Office 365 メッセージ暗号化 (OME) または IRM を設定したことがない場合。\n\n- OME と IRM がセットアップ済みで、Azure Information Protection から Azure Rights Management サービスを使用している場合は、次の手順を使用することができます。\n\n- Exchange Online Active Directory Rights Management サービス (AD RMS) を使用している場合は、これらの新機能をすぐに有効にすることはできません。 代わりに、[AD RMS から Azure Information Protection に移行する](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)必要があります。 移行が完了したら、Microsoft Purview メッセージ暗号化を正常に設定できます。\n\n  Azure Information Protectionに移行する代わりに、Exchange Onlineでオンプレミス AD RMS を引き続き使用することを選択した場合、Microsoft Purview Message Encryption を使用することはできません。\n"
+      Microsoft Purview Message Encryptionを使用できるユーザー
+    answer: "次の条件でMicrosoft Purview Message Encryptionを使用できます。\n  \n- Office 365でExchange Onlineに対して Office 365 メッセージ暗号化 (OME) または IRM を設定したことがない場合。\n\n- OME と IRM がセットアップ済みで、Azure Information Protection から Azure Rights Management サービスを使用している場合は、次の手順を使用することができます。\n\n- Exchange Online Active Directory Rights Management サービス (AD RMS) を使用している場合は、これらの新機能をすぐに有効にすることはできません。 代わりに、[AD RMS から Azure Information Protection に移行する](/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)必要があります。 移行が完了したら、Microsoft Purview Message Encryptionを正常に設定できます。\n\n  Azure Information Protectionに移行する代わりに、Exchange Onlineでオンプレミス AD RMS を引き続き使用することを選択した場合、Microsoft Purview Message Encryptionを使用することはできません。\n"
   - question: >
-      Microsoft Purview Message Encryption を使用するには、どのようなサブスクリプションが必要ですか?
+      Microsoft Purview Message Encryptionを使用するには、どのようなサブスクリプションが必要ですか?
     answer: >
-      Microsoft Purview Message Encryption を使用するには、次のいずれかのプランが必要です。
+      Microsoft Purview Message Encryptionを使用するには、次のいずれかのプランが必要です。
 
 
-      - Microsoft Purview Message Encryption は、Office 365 Enterprise E3 および E5、Microsoft 365 Enterprise E3、E5、Microsoft 365 Business Premium、Office 365 A1、A3、A5 の一部として提供されます。Office 365 Government G3と G5。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。
+      - Microsoft Purview Message Encryptionは、Office 365 Enterprise E3 および E5、Microsoft 365 Enterprise E3、E5、Microsoft 365 Business Premium、Office 365 A1、A3、A5、およびOffice 365 Government G3と G5。 Azure Information Protection を利用した新しい保護機能を受信するために、追加のライセンスは必要ありません。
 
 
-      - Azure Information Protection プラン 1 を次のプランに追加して、Microsoft Purview メッセージ暗号化を受け取ることもできます。Exchange Online プラン 1、Exchange Online プラン 2、Office 365 F3、E1 Microsoft 365 Business Basic、Microsoft 365 Business Standard、またはOffice 365 Enterprise。
+      - Azure Information Protection プラン 1 を次のプランに追加して、Microsoft Purview Message Encryptionを受け取ることもできます。Exchange Onlineプラン 1、Exchange Online プラン 2、Office 365 F3、E1 Microsoft 365 Business Basic、Microsoft 365 Business Standard、またはOffice 365 Enterprise。
 
 
-      - Microsoft Purview Message Encryption の恩恵を受けている各ユーザーには、この機能の対象となるライセンスが必要です。
+      - Microsoft Purview Message Encryptionの恩恵を受ける各ユーザーには、この機能の対象となるライセンスが必要です。
 
 
-      - 完全な一覧については、Microsoft Purview Message Encryption [のExchange Onlineサービスの説明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)を参照してください。
+      - 完全な一覧については、[Microsoft Purview Message EncryptionのExchange Onlineサービスの説明](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description)を参照してください。
   - question: >
       Azure Information Protection では、Exchange Online で Bring Your Own Key (BYOK) を使用できますか?
-    answer: "はい。 Microsoft Purview Message Encryption を設定する前に、BYOK を設定する手順を完了することをお勧めします。\n  \nBYOK の詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。\n  \n"
+    answer: "はい。 Microsoft Purview Message Encryptionを設定する前に、BYOK を設定する手順を完了することをお勧めします。\n  \nBYOK の詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。\n  \n"
   - question: >
-      Azure を使用した Microsoft Purview Message Encryption と BYOK Information Protection、召喚状などのサード パーティのデータ要求に対する Microsoft のアプローチを変更しますか?
-    answer: "いいえ。 Microsoft Purview Message Encryption と、Azure Information Protectionから BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関の召喚状に対応するように設計されていませんでした。 OME と Azure Information Protection の BYOK は、規制遵守を重視する組織向けに設計されています。 Microsoft では、第三者による顧客データの要求に慎重に対応しています。 クラウド サービス プロバイダーとして、お客様のデータのプライバシーを常にサポートします。 Microsoft では、召喚状を受け取ると、第三者がお客様に個人情報を直接要求するように案内するよう努めます。 (Brad Smith のブログ「[政府機関による監視から顧客データを保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)」を参照してください)。 Microsoft は、受け取った要求の詳細情報を定期的に公開しています。 第三者によるデータの要求に関する詳細については、Microsoft トラスト センターで「[顧客データへのアクセスに関する政府および法執行機関の要求への対応方法](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)」を参照してください。 [オンライン サービスの使用条件 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) で「顧客データの開示」も参照してください。\n  \n"
+      Azure Information Protectionを使用したMicrosoft Purview Message Encryptionと BYOK は、召喚状などのサード パーティのデータ要求に対する Microsoft のアプローチを変更しますか?
+    answer: "いいえ。 Microsoft Purview Message Encryptionと、Azure Information Protectionから BYOK と呼ばれる独自の暗号化キーを提供および制御するオプションは、法執行機関の召喚状に対応するようには設計されていませんでした。 OME と Azure Information Protection の BYOK は、規制遵守を重視する組織向けに設計されています。 Microsoft では、第三者による顧客データの要求に慎重に対応しています。 クラウド サービス プロバイダーとして、お客様のデータのプライバシーを常にサポートします。 Microsoft では、召喚状を受け取ると、第三者がお客様に個人情報を直接要求するように案内するよう努めます。 (Brad Smith のブログ「[政府機関による監視から顧客データを保護する](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)」を参照してください)。 Microsoft は、受け取った要求の詳細情報を定期的に公開しています。 第三者によるデータの要求に関する詳細については、Microsoft トラスト センターで「[顧客データへのアクセスに関する政府および法執行機関の要求への対応方法](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data)」を参照してください。 [オンライン サービスの使用条件 (OST)](https://www.microsoft.com/Licensing/product-licensing/products.aspx) で「顧客データの開示」も参照してください。\n  \n"
   - question: >
       この機能は、従来の Office 365 Message Encryption (OME) および Information Rights Management (IRM) 機能とどのように関連していますか?
-    answer: "Microsoft Purview Message Encryption は、既存の IRM ソリューションとレガシ OME ソリューションの進化です。 以下の表に詳細を示します。\n  \n**レガシ OME、IRM、および Microsoft Purview メッセージ暗号化の比較**\n\n| 機能 | 以前のバージョンの OME | IRM | Microsoft Purview のメッセージの暗号化 |\n|:-----|:-----|:-----|:-----|\n|**暗号化されたメールを送信する**|Exchange メール フロー ルールを使用した場合のみ|Outlook for Windows、Outlook for Mac、Outlook on the web から、または Exchange メール フロー ルールを使用して開始したエンドユーザー|Outlook for Windows、Outlook for Mac、Outlook on the web から、またはメール フロー ルールを使用して開始したエンドユーザー|\n|**著作権管理**|-|[転送不可] オプションとカスタム テンプレート|[転送不可] オプション、[暗号化のみ] オプション、既定とカスタム テンプレート|\n|**サポートされる受信者の種類**|外部受信者のみ|内部受信者のみ|内部および外部受信者|\n|**受信者のエクスペリエンス**|外部受信者は、ダウンロードを実行し、ブラウザーまたはダウンロードしたモバイル アプリで開いたことを通知する HTML メッセージを受信しました。|内部受信者は、Outlook for Windows、Outlook for Mac、Outlook on the web でのみ暗号化されたメールを受信しました。|内部および外部受信者は、同じ組織内に存在するか、あるいはどの組織に存在するかに関係なく、Outlook for Windows、Outlook for Mac、Outlook on the web、Outlook for Android、Outlook for iOS で、または Web ポータルを通してメールを受信します。 OME ポータルで別途ダウンロードする必要はありません。|\n|**Bring Your Own Key サポート**|使用不可|使用不可| BYOK がサポートされています|\n"
+    answer: "Microsoft Purview Message Encryptionは、既存の IRM ソリューションとレガシ OME ソリューションの進化です。 以下の表に詳細を示します。\n  \n**レガシ OME、IRM、およびMicrosoft Purview Message Encryptionの比較**\n\n| 機能 | 以前のバージョンの OME | IRM | Microsoft Purview のメッセージの暗号化 |\n|:-----|:-----|:-----|:-----|\n|**暗号化されたメールを送信する**|Exchange メール フロー ルールを使用した場合のみ|Outlook for Windows、Outlook for Mac、Outlook on the web から、または Exchange メール フロー ルールを使用して開始したエンドユーザー|Outlook for Windows、Outlook for Mac、Outlook on the web から、またはメール フロー ルールを使用して開始したエンドユーザー|\n|**著作権管理**|-|[転送不可] オプションとカスタム テンプレート|[転送不可] オプション、[暗号化のみ] オプション、既定とカスタム テンプレート|\n|**サポートされる受信者の種類**|外部受信者のみ|内部受信者のみ|内部および外部受信者|\n|**受信者のエクスペリエンス**|外部受信者は、ダウンロードを実行し、ブラウザーまたはダウンロードしたモバイル アプリで開いたことを通知する HTML メッセージを受信しました。|内部受信者は、Outlook for Windows、Outlook for Mac、Outlook on the web でのみ暗号化されたメールを受信しました。|内部および外部受信者は、同じ組織内に存在するか、あるいはどの組織に存在するかに関係なく、Outlook for Windows、Outlook for Mac、Outlook on the web、Outlook for Android、Outlook for iOS で、または Web ポータルを通してメールを受信します。 OME ポータルで別途ダウンロードする必要はありません。|\n|**Bring Your Own Key サポート**|使用不可|使用不可| BYOK がサポートされています|\n"
   - question: >
-      組織操作方法 Microsoft Purview Message Encryption を有効にしますか?
-    answer: "[Microsoft Purview メッセージ暗号化の設定に関するページを](set-up-new-message-encryption-capabilities.md)参照してください。\n  \n"
+      組織操作方法Microsoft Purview Message Encryptionを有効にしますか?
+    answer: "[「Microsoft Purview Message Encryptionのセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。\n  \n"
   - question: >
       OME の以前のバージョンは廃止されますか?
     answer: >
@@ -88,14 +84,14 @@ sections:
   - question: >
       OME で送信できるメッセージのサイズに制限はありますか?
     answer: >
-      はい。 添付ファイルを含む Microsoft Purview Message Encryption で送信できる最大メッセージ サイズは 25 MB です。 詳細については、「[メッセージの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)」を参照してください。
+      はい。 添付ファイルを含め、Microsoft Purview Message Encryptionで送信できる最大メッセージ サイズは 25 MB です。 詳細については、「[メッセージの制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#message-limits-1)」を参照してください。
   - question: >
       OME ポータルでサポートされているメッセージの種類は何ですか?
     answer: >
       OME ポータルでは、メールのみがサポートされます。 ポータルでは、予定表やボイス メールなどの他のメッセージの種類はサポートされていません。
   - question: >
       保護されたメールの添付ファイルとしてサポートされているファイルの種類は何ですか? 添付ファイルは保護されたメールに関連付けられている保護ポリシーを継承しますか?
-    answer: "保護されたメールには、あらゆる種類のファイルを添付できます。 1 つ例外があり、保護ポリシーは「[Azure Information Protection クライアントでサポートされているファイルの種類](/information-protection/rms-client/client-admin-guide-file-types)」に記載されているファイル形式にのみ適用されます。 Microsoft Purview Message Encryption では、Word (.doc)、Excel (.xls)、PowerPoint (.ppt) の 97-2003 バージョンのOffice プログラムはサポートされていません。\n\nWord、Excel、PowerPoint ファイルなど、ファイル形式がサポートされている場合、添付ファイルが受信者によってダウンロードされた後も、ファイルは常に保護されます。 たとえば、添付ファイルが転送不可によって保護されているとします。 元の受信者がファイルをダウンロードし、新しい受信者にメッセージを作成してファイルを添付します。 新しい受信者がファイルを受信すると、受信者は保護されたファイルを開くことができません。\n  \n"
+    answer: "保護されたメールには、あらゆる種類のファイルを添付できます。 1 つ例外があり、保護ポリシーは「[Azure Information Protection クライアントでサポートされているファイルの種類](/information-protection/rms-client/client-admin-guide-file-types)」に記載されているファイル形式にのみ適用されます。 Microsoft Purview Message Encryptionは、Word (.doc)、Excel (.xls)、PowerPoint (.ppt) の 97- 2003 バージョンをサポートしていません。\n\nWord、Excel、PowerPoint ファイルなど、ファイル形式がサポートされている場合、添付ファイルが受信者によってダウンロードされた後も、ファイルは常に保護されます。 たとえば、添付ファイルが転送不可によって保護されているとします。 元の受信者がファイルをダウンロードし、新しい受信者にメッセージを作成してファイルを添付します。 新しい受信者がファイルを受信すると、受信者は保護されたファイルを開くことができません。\n  \n"
   - question: >
       PDF の添付ファイルはサポートされていますか?
     answer: >
@@ -105,7 +101,7 @@ sections:
       Outlook on the web、Outlook for iOS、Outlook for Android の場合、送信する PDF をその他の手順なしで暗号化できます。 これらのクライアントでは、本来より PDF の暗号化がサポートされています。
 
 
-      Outlook デスクトップでは本来、PDF の添付ファイルがサポートされていません。 PDF の添付ファイルに暗号化を適用するには、代わりに、まずは Exchange メール フロー ルールまたは DLP を設定する必要があります。 PDF の添付ファイル付きのメールを Outlook デスクトップから送信するとき、クライアントはまずメッセージを添付ファイルと一緒にサービスに送信します。 サービスがファイルを受信すると、サービスは、Exchange Onlineのデータ損失防止 (DLP) ポリシーまたはメール フロー ルールの Microsoft Purview Message Encryption 保護を適用します。 次に、Exchange Online はメッセージを PDF 添付ファイルと一緒に送信します。
+      Outlook デスクトップでは本来、PDF の添付ファイルがサポートされていません。 PDF の添付ファイルに暗号化を適用するには、代わりに、まずは Exchange メール フロー ルールまたは DLP を設定する必要があります。 PDF の添付ファイル付きのメールを Outlook デスクトップから送信するとき、クライアントはまずメッセージを添付ファイルと一緒にサービスに送信します。 サービスがファイルを受信すると、サービスはExchange Onlineのデータ損失防止 (DLP) ポリシーまたはメール フロー ルールのMicrosoft Purview Message Encryption保護を適用します。 次に、Exchange Online はメッセージを PDF 添付ファイルと一緒に送信します。
 
 
       PDF の添付ファイルの暗号化を有効にするには、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で次のコマンドを実行します。
@@ -118,7 +114,7 @@ sections:
       ```
 
 
-      PDF の暗号化により、セキュリティで保護された通信またはセキュリティで保護されたコラボレーションによって機密性の高い PDF ドキュメントを保護できます。 すべてのOutlook クライアントでは、メッセージと保護されていない PDF 添付ファイルは、Exchange Onlineのデータ損失防止 (DLP) ポリシーまたはメール フロールールの Microsoft Purview Message Encryption 保護を継承します。 また、Outlook on the web のユーザーが保護されていない PDF ドキュメントを添付し、メッセージに保護を適用した場合、メッセージはメッセージの保護を継承します。 ユーザーは、保護された PDF がサポートされているアプリケーションでのみ暗号化された添付ファイルを開くことができます (OME ポータルと Azure Information Protection ビューアーなど)。
+      PDF の暗号化により、セキュリティで保護された通信またはセキュリティで保護されたコラボレーションによって機密性の高い PDF ドキュメントを保護できます。 すべての Outlook クライアントでは、メッセージと保護されていない PDF 添付ファイルは、Exchange Onlineのデータ損失防止 (DLP) ポリシーまたはメール フロー ルールのMicrosoft Purview Message Encryption保護を継承します。 また、Outlook on the web のユーザーが保護されていない PDF ドキュメントを添付し、メッセージに保護を適用した場合、メッセージはメッセージの保護を継承します。 ユーザーは、保護された PDF がサポートされているアプリケーションでのみ暗号化された添付ファイルを開くことができます (OME ポータルと Azure Information Protection ビューアーなど)。
 
 
       > [!IMPORTANT]
@@ -146,9 +142,9 @@ sections:
     answer: >
       管理者は、メール フロー ルールを設定して送信メールの暗号化を削除できます。 受信メールの暗号化を削除するルールは、組織内から送信されるメールに対してのみ設定できます。
   - question: >
-      Microsoft Purview コンプライアンス ポータルを使用してデータ損失防止 (DLP) でポリシーを設定することで、メッセージを自動的に暗号化できますか?
+      Microsoft Purview コンプライアンス ポータルを使用してデータ損失防止 (DLP) にポリシーを設定することで、メッセージを自動的に暗号化できますか?
     answer: >
-      はい。 メール フロー ルールは、Exchange Onlineまたは Microsoft Purview コンプライアンス ポータルで DLP を使用して設定できます。
+      はい。 メール フロー ルールは、Exchange Onlineで設定することも、Microsoft Purview コンプライアンス ポータルで DLP を使用して設定することもできます。
   - question: >
       暗号化されたメッセージを企業ブランドでカスタマイズすることはできますか?
     answer: "はい。組織内のExchange Onlineメールボックスから送信されたメールの場合は有効です。 電子メール メッセージと OME ポータルのカスタマイズの詳細については、「 [暗号化されたメッセージに組織のブランドを追加する」を参照してください](add-your-organization-brand-to-encrypted-messages.md)。\n  \n"
@@ -158,7 +154,7 @@ sections:
   - question: >
       電子情報開示などのコンプライアンス機能でメッセージの暗号化を使用することはできますか?
     answer: >
-      はい。Microsoft Purview Message Encryption によって保護されているほとんどのメッセージは検出可能です。 メール フロー ルールを使用してカスタム ブランドが適用されている別のMicrosoft 365組織から受信した Microsoft Purview Message Encryption で保護されたメールは、電子情報開示サービスでは検出できません。 つまり、メールがユーザーのメールボックスからアクセスできず、OME ポータルへのリンクのみによって表示できる場合、メールは検索可能ではありません。 詳細については、「[暗号化されたアイテムをサポートする電子情報開示アクティビティ](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items)」を参照してください。
+      はい。Microsoft Purview Message Encryptionによって保護されているほとんどのメッセージは検出可能です。 Microsoft Purview Message Encryptionメール フロー ルールを使用してカスタム ブランドが適用されている別の Microsoft 365 組織から受信した保護されたメールは、電子情報開示サービスでは検出できません。 つまり、メールがユーザーのメールボックスからアクセスできず、OME ポータルへのリンクのみによって表示できる場合、メールは検索可能ではありません。 詳細については、「[暗号化されたアイテムをサポートする電子情報開示アクティビティ](/microsoft-365/compliance/ediscovery-decryption#ediscovery-activities-that-support-encrypted-items)」を参照してください。
   - question: >
       メールから暗号化を削除することはできますか?
     answer: >
@@ -176,7 +172,7 @@ sections:
       - ユーザーは、共有メールボックスが配布グループの一部として保護されたメールを受信した場合、共有メールボックスの保護されたメールを開くことができます。
 
 
-      - ユーザーは、Windows、Outlook for Mac、AndroidのOutlook、iOSのOutlook、Outlook on the webにOutlookを使用するときに、電子メールから保護を継承する添付ファイルを表示できます。
+      - ユーザーは、Outlook for Windows、Outlook for Mac、Outlook for Android、Outlook for iOS、およびOutlook on the webを使用するときに、電子メールから保護を継承する添付ファイルを表示できます。
 
 
       次の表に、共有メールボックスがサポートされるクライアントの一覧を示します。
@@ -199,7 +195,7 @@ sections:
 
       > [!NOTE]
 
-      > AndroidとiOSでは、Office モバイル アプリを使用して、暗号化された添付ファイルを表示しますが、Outlook モバイルでは直接表示されません。
+      > Android と iOS では、Outlook モバイルでは直接ではなく、Office モバイル アプリを使用して暗号化された添付ファイルを表示します。
 
 
       現在、2 つの既知の制限があります。
@@ -208,13 +204,13 @@ sections:
       - モバイル デバイスで受信するメールの添付ファイルを Outlook モバイルを使用して開くことはできません。
 
 
-      - Outlook Win32 では、電子メールが有効なセキュリティ グループを使用して共有メールボックスに割り当てられたユーザーに対して、Web ブラウザーを使用して暗号化されたメールを表示する通知メールが表示されます。  Outlook Win32 で暗号化されたメールを直接表示するには、Outlookと Azure Information Protection統合ラベル付けクライアントで、フル アクセス許可と自動マッピングが有効になっている共有メールボックスにユーザーを直接割り当てる必要があります。 自動マッピングは、Exchange Online に対して既定で有効になっています。
+      - Outlook Win32 では、電子メールが有効なセキュリティ グループを介して共有メールボックスに割り当てられているユーザーに対して、Web ブラウザーを使用して暗号化されたメールを表示する通知メールが表示されます。  Outlook Win32 で暗号化されたメールを直接表示するには、Outlook と Azure Information Protection統合ラベル付けクライアントで、フル アクセス許可と自動マッピングが有効になっている共有メールボックスにユーザーを直接割り当てる必要があります。 自動マッピングは、Exchange Online に対して既定で有効になっています。
 
 
       **ユーザーを共有メールボックスにアサインするには、次の操作を実行します**
 
 
-      1. [PowerShell.aspx) のExchange OnlineにConnect](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)します。
+      1. [Exchange Online PowerShell.aspx) に接続します](/powershell/exchange/connect-to-exchange-online-powershell?v=exchg.150)。
 
 
       2. Automapping パラメーターを指定して Add-MailboxPermission コマンドレットを実行します。 この例では、Ayla にサポート メールボックスに対するフル アクセスのアクセス許可を付与します。

@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: fdc67df9819054eedbe84ce647d77177039cd4a8
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65623295"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637353"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンテンツ エクスプローラーを使用すると、概要ページで要約されたアイテムをネイティブに表示することができます。
 

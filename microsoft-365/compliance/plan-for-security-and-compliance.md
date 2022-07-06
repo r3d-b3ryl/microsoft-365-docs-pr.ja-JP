@@ -1,5 +1,5 @@
 ---
-title: セキュリティコンプライアンスを計画 &amp; する
+title: セキュリティとコンプライアンスを計画する
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,35 +14,35 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
-description: このランディング ページには、セキュリティとコンプライアンスに関するリンクと計画情報がOffice 365。
+description: このランディング ページには、Office 365のセキュリティとコンプライアンスに関するリンクと計画に関する情報が記載されています。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2a238f4d4c5598e9628bb6bb7adb607b7c24c6cb
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 6ecc9d01f82393aa20f8993abfffd6cca78c656f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63679524"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639822"
 ---
-# <a name="plan-for-security-amp-compliance"></a>セキュリティコンプライアンスを計画 &amp; する
+# <a name="plan-for-security-amp-compliance"></a>セキュリティ &amp; コンプライアンスを計画する
 
-セキュリティとコンプライアンスの管理はパートナーシップです。 お客様はデータ、ID、およびデバイスを保護する責任を負い、Microsoft はサービスを積極的にMicrosoft 365します。 EMS (Microsoft 365とEnterprise Mobility + Securityを使用して、組織の適切なレベルの保護を実現できます。
+セキュリティとコンプライアンスの管理はパートナーシップです。 お客様は、お客様のデータ、ID、デバイスを保護する責任を負い、Microsoft は Microsoft 365 サービスを積極的に保護します。 Microsoft 365 と Enterprise Mobility + Security (EMS) を一緒に使用すると、組織に適したレベルの保護を実現できます。
   
-## <a name="step-1-review-capabilities"></a>手順 1: 機能の確認
+## <a name="step-1-review-capabilities"></a>手順 1: 機能を確認する
 
-[情報保護] ポスターの情報保護機能にOffice 365します。 
+Office 365ポスターのInformation Protectionの情報保護機能を身に付ける。 
   
-[データプライバシーに関する規制に関する情報保護を、Microsoft 365](../solutions/information-protection-deploy.md)
+[Microsoft 365 でデータプライバシー規制の情報保護を展開する](../solutions/information-protection-deploy.md)
   
-## <a name="step-2-check-your-secure-score"></a>手順 2: セキュリティで保護されたスコアを確認する
+## <a name="step-2-check-your-secure-score"></a>手順 2: セキュリティスコアを確認する
 
-サブスクリプションを設定Microsoft 365、開始スコアをメモします。 Secure Score には、スコアを上げするために使用できる構成の提案が提供されます。 目標は、ユーザーの生産性に悪影響を及ぼしない環境を保護するために取り得る機会を認識する必要があります。
+Microsoft 365 サブスクリプションを設定した後、開始スコアをメモしておきます。 セキュリティスコアは、スコアを上げるために使用できる構成の提案を提供します。 目標は、ユーザーの生産性に悪影響を及ぼさない環境を保護するために利用できる機会を認識することです。
   
-- [セキュリティで保護されたスコアOffice 365紹介](../security/defender/microsoft-secure-score.md)
+- [Office 365セキュリティスコアの概要](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>手順 3: ID とデバイスのアクセス保護を計画する
 
-データとサービスへのアクセスMicrosoft 365保護することは、サイバー攻撃から防御し、データ損失から保護するために重要です。
+Microsoft 365 のデータとサービスへのアクセスを保護することは、サイバー攻撃から保護し、データ損失を防ぐために非常に重要です。
   
 - [Office 365 でデータやサービスへのアクセスを保護する](protect-access-to-data-and-services.md)
     
@@ -50,36 +50,36 @@ ms.locfileid: "63679524"
     
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [その他の言語](https://www.microsoft.com/download/details.aspx?id=55032)
   
-## <a name="step-4-plan-data-protection-based-on-data-sensitivity"></a>手順 4: データの感度に基づいてデータ保護を計画する
+## <a name="step-4-plan-data-protection-based-on-data-sensitivity"></a>手順 4: データの機密性に基づいてデータ保護を計画する
 
-3 つのレベルの保護で構成されたファイル保護機能を確認し、計画します。
+3 つのレベルの保護によって編成されたファイル保護機能を確認し、計画します。
   
 [PDF](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.pdf) | [Visio](https://download.microsoft.com/download/7/8/9/789645A5-BD10-4541-BC33-F8D1EFF5E911/MSFT_cloud_architecture_O365%20file%20protection.vsdx)
   
-## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: セキュリティ コンプライアンス センター Microsoft 365活用&amp;する
+## <a name="step-5-leverage-the-microsoft-365-security-amp-compliance-center"></a>手順 5: Microsoft 365 セキュリティ &amp; コンプライアンス センターを活用する
 
-セキュリティ コンプライアンス センター&amp;では、脅威管理、データ ガバナンス、検索と調査など、Microsoft 365 セキュリティの範囲を管理するために使用するコントロールを 1 つのビューで確認できます。 
+セキュリティ &amp; コンプライアンス センターでは、脅威管理、データ ガバナンス、検索と調査など、Microsoft 365 セキュリティの範囲を管理するために使用するコントロールを 1 つのビューで確認できます。 
   
-- [セキュリティ コンプライアンス センターに &amp; 移動する](./microsoft-365-compliance-center.md)
+- [セキュリティ &amp; コンプライアンス センターに移動する](./microsoft-365-compliance-center.md)
     
-- [セキュリティ コンプライアンス センターのアクセス &amp; 許可](~/security/office-365-security/protect-against-threats.md)
+- [セキュリティ &amp; コンプライアンス センターのアクセス許可](~/security/office-365-security/protect-against-threats.md)
     
-- [ユーザーにセキュリティ コンプライアンス センターへのアクセス権を &amp; 与える](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
+- [ユーザーにセキュリティ &amp; コンプライアンス センターへのアクセス権を付与する](~/security/office-365-security/grant-access-to-the-security-and-compliance-center.md)
     
 ## <a name="step-6-use-end-to-end-security-scenarios-as-starting-points"></a>手順 6: エンドツーエンドのセキュリティ シナリオを開始点として使用する
 
-これらの推奨構成は、エンタープライズ 規模または高度なアクセス セキュリティ シナリオの開始点として使用します。
+エンタープライズ 規模または高度なアクセス セキュリティ シナリオの開始点として、これらの推奨される構成を使用します。
   
 - [セキュリティで保護された電子メール ポリシーと構成](../security/office-365-security/secure-email-recommended-policies.md)
     
 - [Microsoft Cloud の Contoso](../enterprise/contoso-case-study.md)
     
-## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365管理センターとダッシュボード
+## <a name="microsoft-365-admin-centers-and-dashboards"></a>Microsoft 365 管理センターとダッシュボード
 
-これらの管理センターとダッシュボードでセキュリティとコンプライアンスの設定を構成して、環境を保護Microsoft 365する
+Microsoft 365 環境を保護するために、これらの管理センターとダッシュボードでセキュリティとコンプライアンスの設定を構成する
   
-|**サブスクリプション**|**管理 URL**|**ダッシュボードと管理センター**|
+|**Subscription**|**管理 URL**|**ダッシュボードと管理センター**|
 |:-----|:-----|:-----|
-|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint管理センターと管理センター OneDrive for Business管理センター  <br/> |
+|Microsoft 365  <br/> |`https://admin.microsoft.com`  <br/> | Microsoft 365 管理センター  <br/>  セキュリティ/コンプライアンス センター  <br/>  Exchange 管理センター  <br/>  SharePoint 管理センターとOneDrive for Business管理センター  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.azure.com`  <br/> | Azure Active Directory  <br/>  Microsoft Mobile Application Management  <br/>  Microsoft Intune  <br/> |
 |Enterprise Mobility + Security  <br/> |`https://portal.cloudappsecurity.com`  <br/> | Defender for Cloud Apps  <br/> |

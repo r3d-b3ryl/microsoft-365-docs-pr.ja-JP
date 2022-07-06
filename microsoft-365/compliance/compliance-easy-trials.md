@@ -14,16 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview ソリューション試用版の詳細とサインアップ方法について説明します。
-ms.openlocfilehash: 425c9c3aecd4df38a53a5b6bee818f466f167a27
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: dd223402153048b0d7f452b202804e6bf1853b97
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185129"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640118"
 ---
 # <a name="about-the-microsoft-purview-solutions-trial"></a>Microsoft Purview ソリューション試用版について
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview ソリューションは、ファイルやメールの不適切なアクセス許可に起因する内部の脅威から組織を保護し、組織が規制や内部ビジネス要件に準拠するためのサポートを行います。
 
@@ -47,6 +45,7 @@ Microsoft E5 ライセンス パッケージをまだお持ちでない Microsof
 - 課金管理者
 - コンプライアンス管理者
 - グローバル管理者
+- コンプライアンス データ管理者
 
 役割の詳細については、「[管理者の役割について](../admin/add-users/about-admin-roles.md)」を参照してください。
 

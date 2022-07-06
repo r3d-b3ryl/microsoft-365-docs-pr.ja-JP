@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示での関連性分析のテスト (プレミアム)
+title: 電子情報開示での関連性分析のテスト (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,25 +16,23 @@ search.appverid:
 - MET150
 ms.assetid: 1b092f7c-ea55-44f5-b419-63f3458fd7e0
 ROBOTS: NOINDEX, NOFOLLOW
-description: 電子情報開示 (プレミアム) の Batch 計算後に [テスト] タブを使用して、処理の全体的な品質をテスト、比較、検証する方法について説明します。
-ms.openlocfilehash: 0b3d6c70bdfef4dec8e8a5d08d4e72f80d6fec77
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 電子情報開示 (Premium) の Batch 計算後に [テスト] タブを使用して、処理の全体的な品質をテスト、比較、検証する方法について説明します。
+ms.openlocfilehash: 5c1fabf677dd305fb91d77e94af0e18304280d45
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095468"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637045"
 ---
-# <a name="test-relevance-analysis-in-ediscovery-premium"></a>電子情報開示での関連性分析のテスト (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="test-relevance-analysis-in-ediscovery-premium"></a>電子情報開示での関連性分析のテスト (Premium)
   
-Microsoft Purview 電子情報開示 (プレミアム) の [テスト] タブでは、処理の全体的な品質をテスト、比較、検証できます。 これらのテストは、Batch 計算後に実行されます。 コレクション内のファイルにタグを付けることで、専門家は、タグ付けされた各ファイルがケースに関連しているかどうかを最終的に判断します。
+Microsoft Purview eDiscovery (Premium) の [テスト] タブでは、処理の全体的な品質をテスト、比較、検証できます。 これらのテストは、Batch 計算後に実行されます。 コレクション内のファイルにタグを付けることで、専門家は、タグ付けされた各ファイルがケースに関連しているかどうかを最終的に判断します。
   
 単一および複数の問題のシナリオでは、通常、問題ごとにテストが実行されます。 各テストの後に結果を表示し、指定したサンプル テスト ファイルを使用してテスト結果を再作業できます。
   
 ## <a name="testing-the-rest"></a>残りの部分のテスト
 
-"残りのテスト" テストは、カリングの決定を検証するために使用されます。たとえば、最終的な電子情報開示 (プレミアム) の結果に基づいて、特定の関連性のカットオフ スコアを超えるファイルのみを確認します。 エキスパートは、選択したカットオフ スコアの下のファイルのサンプルを確認して、そのセット内の関連ファイルの数を評価します。
+"残りのテスト" テストは、カリングの決定を検証するために使用されます。たとえば、最終的な電子情報開示 (Premium) の結果に基づいて、特定の関連性のカットオフ スコアを超えるファイルのみを確認します。 エキスパートは、選択したカットオフ スコアの下のファイルのサンプルを確認して、そのセット内の関連ファイルの数を評価します。
   
 このテストでは、レビュー セットと残りの母集団のテストの統計と比較が提供されます。 レビュー セットの結果は、トレーニング中に関連性によって計算された結果です。 結果には、次のような設定と入力パラメーターに基づく計算が含まれます。
   

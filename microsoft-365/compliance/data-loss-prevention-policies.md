@@ -25,16 +25,14 @@ ms.custom:
 ROBOTS: NOINDEX, NOFOLLOW
 feedback_system: None
 description: データ損失防止の参考資料
-ms.openlocfilehash: b7546d41310942a0e6eab99511a78c594822ee2a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 5a52d79a073a9735d5c32ce3a9646ccacf1a0dcb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017288"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636471"
 ---
 # <a name="data-loss-prevention-reference"></a>データ損失防止リファレンス
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > これは参照トピックであり、Microsoft Purview データ損失防止 (DLP) 情報のメイン リソースではなくなりました。 DLP コンテンツ セットが更新され、再構築されています。 この記事で取り上げるトピックは、更新された新しい記事に移行します。 DLP の詳細については、「 [データ損失防止の詳細](dlp-learn-about-dlp.md)」を参照してください。
@@ -75,7 +73,7 @@ With a DLP policy, you can:
 
 Microsoft Purview コンプライアンス ポータルのデータ損失防止ページで DLP ポリシーを作成および管理します。
 
-![Microsoft Purview コンプライアンス ポータルのデータ損失防止ページ](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
+![Microsoft Purview コンプライアンス ポータルの [データ損失防止] ページ](../media/943fd01c-d7aa-43a9-846d-0561321a405e.png)
 
 <!-- MOVED TO LEARN ABOUT ## What a DLP policy contains
 
@@ -526,13 +524,13 @@ Microsoft Purview コンプライアンス ポータルで DLP ポリシーを�
 DLP は、インデックスを作成できるすべてのコンテンツを評価します。 既定でクロールされるファイルの種類の詳細については、「[SharePoint Server での既定のクロール対象ファイルのファイル名拡張子および解析対象ファイルの種類](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)」を参照してください。
 
 > [!NOTE]
-> DLP ポリシーが分析する機会を得る前にドキュメントが共有されないようにするために、コンテンツのインデックスが作成されるまで、SharePoint内の新しいファイルの共有をブロックできます。 詳細については、「[新しいファイルを既定で機密としてマークする](/sharepoint/sensitive-by-default)」をご覧ください。
+> DLP ポリシーが分析する機会を得る前にドキュメントが共有されないようにするために、SharePoint での新しいファイルの共有は、コンテンツのインデックスが作成されるまでブロックできます。 詳細については、「[新しいファイルを既定で機密としてマークする](/sharepoint/sensitive-by-default)」をご覧ください。
 
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Exchange Online、Outlook、Outlook on the web でのポリシーの評価
 
-Exchange Onlineを場所として含む DLP ポリシーを作成すると、ポリシーは Microsoft Purview コンプライアンス ポータルからExchange Onlineに同期され、Exchange OnlineからOutlook on the webおよびOutlookに同期されます。
+Exchange Onlineを場所として含む DLP ポリシーを作成すると、ポリシーはMicrosoft Purview コンプライアンス ポータルからExchange Onlineに、次にExchange OnlineからExchange Onlineに同期されます。Outlook on the webと Outlook。
 
-メッセージが Outlook で作成される場合、作成中のコンテンツは DLP ポリシーに対して評価されるため、ユーザーはポリシー ヒントを確認できます。 メッセージが送信された後は、EXCHANGE<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>で作成されたExchangeメール フロー ルール (トランスポート ルールとも呼ばれます) と DLP ポリシーと共に、メール フローの通常の一部として DLP ポリシーに対して評価されます。 DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
+メッセージが Outlook で作成される場合、作成中のコンテンツは DLP ポリシーに対して評価されるため、ユーザーはポリシー ヒントを確認できます。 また、メッセージが送信された後は、Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>で作成された Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) と DLP ポリシーと共に、通常のメール フローの一部として DLP ポリシーに対して評価されます。 DLP ポリシーは、メッセージと添付ファイルの両方をスキャンします。
 
 ### <a name="policy-evaluation-in-the-office-desktop-programs"></a>Office デスクトップ プログラムにおけるポリシー評価
 
@@ -544,11 +542,11 @@ Office における DLP ポリシーの評価は、プログラムのパフォ�
 ### <a name="policy-evaluation-in-microsoft-teams"></a>Microsoft Teams でのポリシーの評価
  <!--what do you mean that it's synched to user accounts?  I thought DLP policies were applied to locations not users like sensitivity labels are  -->
 
-場所としてMicrosoft Teamsを含む DLP ポリシーを作成すると、ポリシーは Microsoft Purview コンプライアンス ポータルからユーザー アカウントとMicrosoft Teams チャネルとチャット メッセージに同期されます。 DLP ポリシーの構成方法によっては、ユーザーが Microsoft Teams のチャットやチャネル メッセージで機密情報を共有しようとしたときに、そのメッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、このユーザー対しては開きません。 詳細については、「[データ損失防止と Microsoft Teams](dlp-microsoft-teams.md)」を参照してください。
+場所として Microsoft Teams を含む DLP ポリシーを作成すると、ポリシーはMicrosoft Purview コンプライアンス ポータルからユーザー アカウントと Microsoft Teams チャネルとチャット メッセージに同期されます。 DLP ポリシーの構成方法によっては、ユーザーが Microsoft Teams のチャットやチャネル メッセージで機密情報を共有しようとしたときに、そのメッセージをブロックまたは取り消すことができます。 また、機密情報が含まれていて、ゲスト (外部ユーザー) と共有されているドキュメントは、このユーザー対しては開きません。 詳細については、「[データ損失防止と Microsoft Teams](dlp-microsoft-teams.md)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
-既定では、グローバル管理者、セキュリティ管理者、コンプライアンス管理者は、DLP ポリシーを作成して適用するためのアクセス権を持ちます。 DLP ポリシーを作成するコンプライアンス チームの他のメンバーには、Microsoft Purview コンプライアンス ポータルへのアクセス許可が必要です。 既定では、テナント管理者はこの場所にアクセスでき、テナント管理者のすべてのアクセス許可を付与することなく、コンプライアンス担当者や他のユーザーに Microsoft Purview コンプライアンス ポータルへのアクセス権を付与できます。これを行うには、次のことをお勧めします。
+既定では、グローバル管理者、セキュリティ管理者、コンプライアンス管理者は、DLP ポリシーを作成して適用するためのアクセス権を持ちます。 DLP ポリシーを作成するコンプライアンス チームの他のメンバーには、Microsoft Purview コンプライアンス ポータルへのアクセス許可が必要です。 既定では、テナント管理者はこの場所にアクセスでき、コンプライアンス担当者や他のユーザーにテナント管理者のすべてのアクセス許可を与えることなく、Microsoft Purview コンプライアンス ポータルにアクセスできます。これを行うには、次のことをお勧めします。
 
 1. Microsoft 365 でグループを作成して、コンプライアンス責任者を追加します。
 
@@ -566,13 +564,13 @@ Office における DLP ポリシーの評価は、プログラムのパフォ�
 
 ## <a name="find-the-dlp-cmdlets"></a>DLP コマンドレットを検索する
 
-Microsoft Purview コンプライアンス ポータルでほとんどのコマンドレットを使用するには、次の操作を行う必要があります。
+Microsoft Purview コンプライアンス ポータルにほとんどのコマンドレットを使用するには、次の手順を実行する必要があります。
 
 1. [セキュリティ/コンプライアンス PowerShell に接続します](/powershell/exchange/connect-to-scc-powershell)。
 
 2. これらの[ポリシーおよびコンプライアンスの dlp コマンドレット](/powershell/module/exchange/export-dlppolicycollection)のいずれかを使用する。
 
-ただし、DLP レポートは、Exchange Online を含む Microsoft 365 全体からデータを取り込む必要があります。 このため、***DLP レポートのコマンドレットは、Microsoft Purview コンプライアンス ポータルの Powershell ではなく、Exchange Online Powershell で使用できます***。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
+ただし、DLP レポートは、Exchange Online を含む Microsoft 365 全体からデータを取り込む必要があります。 このため、***DLP レポートのコマンドレットは powershell Exchange Onlineで使用できます。powershell Microsoft Purview コンプライアンス ポータルでは使用できません***。 したがって、DLP レポートのコマンドレットを使用するには、次の操作を行う必要があります。
 
 1. [Exchange Online PowerShell に接続します](/powershell/exchange/connect-to-exchange-online-powershell)。
 

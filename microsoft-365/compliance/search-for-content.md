@@ -10,17 +10,15 @@ audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールを使用すると、Exchange メールボックス内の電子メール、SharePoint サイトやOneDriveの場所のドキュメント、Skype for Businessのインスタント メッセージング会話をすばやく見つけることができます。
-ms.openlocfilehash: cf5c6b61e9b4cc041d9f8e315321c63c78415a63
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールを使用して、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Skype for Businessでのインスタント メッセージング会話をすばやく見つけます。
+ms.openlocfilehash: 42084e764ffaf93f59e0225194db331c2ac952db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66009433"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637863"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>コンテンツ検索ツールを使用してコンテンツを検索します
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールを使用して、Exchange メールボックスのメール、SharePoint サイトおよび OneDrive ロケーションのドキュメント、Skype for Business のインスタント メッセージングの会話をすばやく検索できます。 コンテンツ検索ツールは、Microsoft Teams や Microsoft 365 グループなどのコラボレーション ツール内のメール、ドキュメント、インスタント メッセージングの会話を検索するために使用できます。
   
@@ -36,11 +34,11 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 - 電子情報開示マネージャーが組織内のメールボックスまたはサイトのサブセットのみを検索できるように、[検索アクセス許可フィルターを構成](permissions-filtering-for-content-search.md)する
 
-- Microsoft 365のオンプレミス ユーザーの[クラウドベースのメールボックスを検索](search-cloud-based-mailboxes-for-on-premises-users.md)する
+- Microsoft 365 でオンプレミス ユーザーの[クラウドベースのメールボックスを検索](search-cloud-based-mailboxes-for-on-premises-users.md)する
 
 - 検索結果の[キーワード統計を表示](view-keyword-statistics-for-content-search.md)し、必要に応じてクエリを絞り込みます
 
-- 組織がMicrosoft 365にインポートした[サード パーティのデータを検索](use-content-search-to-search-third-party-data-that-was-imported.md)する
+- 組織が Microsoft 365 にインポートした[サード パーティのデータを検索](use-content-search-to-search-third-party-data-that-was-imported.md)する
 
 - [Bcc 受信者を](/exchange/policy-and-compliance/holds/preserve-bcc-recipients-and-group-members) 検索できるように保持する
 
@@ -62,7 +60,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 - 検索結果をエクスポートおよびダウンロードするときに、[推定検索結果と実際の検索結果](differences-between-estimated-and-actual-ediscovery-search-results.md)、およびそれらの間に違いがある可能性がある理由
 
-- [ExchangeおよびSharePoint内の部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md)と、検索結果をエクスポートおよびダウンロードするときにアイテムを含めたり除外したりする方法
+- [Exchange と SharePoint で部分的にインデックスが作成されたアイテム](partially-indexed-items-in-content-search.md) と、検索結果をエクスポートおよびダウンロードするときにアイテムを含めたり除外したりする方法
 
 - [部分的にインデックスが作成されたアイテムを調査](investigating-partially-indexed-items-in-ediscovery.md) し、組織がそれらのアイテムに公開しているかどうかを判断する
 
@@ -74,7 +72,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 - ケースに対応するアイテムがそのフォルダー内にあると確信している場合は、[特定のメールボックスフォルダーとサイト](use-content-search-for-targeted-collections.md) フォルダー (*ターゲット* コレクションと呼ばれます) を検索する
 
-- [メールボックスとOneDrive場所を検索](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md)して、ユーザーの一覧を探します
+- [メールボックスと OneDrive の場所](search-the-mailbox-and-onedrive-for-business-for-a-list-of-users.md) でユーザーの一覧を検索する
 
 - [複数の検索を作成、レポート、削除して、](create-report-on-and-delete-multiple-content-searches.md) 検索データを迅速かつ効率的に識別およびカリングする
 

@@ -13,19 +13,17 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ''
-ms.openlocfilehash: da8ea6f996735edb91b7191bbcf90df02e134428
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft Purview eDiscovery (Premium) の予測コーディング ツールの主要な概念とメトリックについて説明します。
+ms.openlocfilehash: 59718c033fb297a7ef583611c207794cd7b69b6f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091481"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640546"
 ---
 # <a name="predictive-coding-reference-preview"></a>予測コーディングリファレンス (プレビュー)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-この記事では、Microsoft Purview 電子情報開示 (プレミアム) の予測コーディング ツールの主要な概念とメトリックについて説明します。 記事のセクションはアルファベット順に一覧表示されます。
+この記事では、Microsoft Purview eDiscovery (Premium) の予測コーディング ツールの主要な概念とメトリックについて説明します。 記事のセクションはアルファベット順に一覧表示されます。
 
 ## <a name="confidence-level"></a>信頼度
 
@@ -43,7 +41,7 @@ ms.locfileid: "65091481"
 
 ****
 
-|Label|モデルはアイテムが関連すると予測します|モデルはアイテムが関連しないと予測します|
+|ラベル|モデルはアイテムが関連すると予測します|モデルはアイテムが関連しないと予測します|
 |---|---|---|
 |**レビュー担当者ラベルアイテムを関連項目として表示する**|真陽性|誤検知|
 |**レビュー担当者ラベルアイテムが関連しない**|False negative|真の負の値|

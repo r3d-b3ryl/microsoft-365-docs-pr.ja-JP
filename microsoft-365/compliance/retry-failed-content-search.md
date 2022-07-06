@@ -16,16 +16,14 @@ search.appverid:
 ms.assetid: ''
 description: 調査中に、[再試行] ボタンを使用して、コンテンツの場所エラーが発生したコンテンツ検索を解決できます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5345b346e8c66f6983d67081839248e4c66be7d8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c524be95ac72f44e58b03958694d26c52a401e40
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090431"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638171"
 ---
 # <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>コンテンツ検索を再試行してコンテンツの場所エラーを解決する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 セキュリティとコンプライアンス センターでコンテンツ検索を使用して多数のメールボックスを検索すると、次のような検索エラーが発生することがあります。
 
@@ -54,7 +52,7 @@ User2@contoso.com: Application error occurred. Please try again later. (CS012-00
 
 これにより、失敗したメールボックスについてのみ検索が再試行されます。 検索を再試行すると、正常に返された他の結果が保持されます。
 
-## <a name="tips-to-avoid-content-location-errors"></a>コンテンツの場所のエラーを回避するためのヒント
+## <a name="tips-to-avoid-content-location-errors"></a>コンテンツの場所エラーを回避するためのヒント
 
 コンテンツの場所のエラーのその他の原因と、多数のメールボックスを検索するときにそれらを回避するのに役立つヒントを次に示します。
 

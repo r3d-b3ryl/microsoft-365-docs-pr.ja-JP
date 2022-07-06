@@ -19,33 +19,31 @@ search.appverid:
 - MET150
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
-description: Microsoft Purview コンプライアンス ポータルで監査ログ検索機能をオンまたはオフにして、管理者が監査ログを検索する機能を有効または無効にする方法。
-ms.openlocfilehash: 3602a35169670b61a124cda40c9ab50b481571d8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 監査ログを検索する管理者の機能を有効または無効にするには、Microsoft Purview コンプライアンス ポータルの監査ログ検索機能をオンまたはオフにする方法。
+ms.openlocfilehash: 7a757b07796f2b25fc6269a41d51f27e696e77cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078869"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640272"
 ---
 # <a name="turn-auditing-on-or-off"></a>監査のオンとオフを切り替える
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+監査ログは、Microsoft 365 およびエンタープライズ組織Office 365既定で有効になります。 ただし、新しい Microsoft 365 またはOffice 365組織を設定する場合は、組織の監査状態を確認する必要があります。 手順については、この記事の「 [組織の監査状態を確認する](#verify-the-auditing-status-for-your-organization) 」セクションを参照してください。 
 
-監査ログは、Microsoft 365およびOffice 365エンタープライズ組織に対して既定で有効になります。 ただし、新しいMicrosoft 365またはOffice 365組織を設定する場合は、組織の監査状態を確認する必要があります。 手順については、この記事の「 [組織の監査状態を確認する](#verify-the-auditing-status-for-your-organization) 」セクションを参照してください。 
-
-Microsoft Purview コンプライアンス ポータルで監査を有効にすると、組織のユーザーと管理者のアクティビティが監査ログに記録され、ユーザーに割り当てられたライセンスに応じて最大 1 年間、90 日間保持されます。 ただし、組織には、監査ログ データを記録および保持したくない理由が考えられます。 このような場合、グローバル管理者は、Microsoft 365で監査を無効にすることを決定する場合があります。
+Microsoft Purview コンプライアンス ポータルの監査が有効になっていると、組織のユーザーと管理者のアクティビティが監査ログに記録され、ユーザーに割り当てられたライセンスに応じて最大 1 年間、90 日間保持されます。 ただし、組織には、監査ログ データを記録および保持したくない理由が考えられます。 このような場合、グローバル管理者は Microsoft 365 で監査を無効にすることを決定できます。
 
 > [!IMPORTANT]
-> Microsoft 365で監査を無効にした場合、Office 365 Management Activity API または Microsoft Sentinel を使用して組織の監査データにアクセスすることはできません。 この記事の手順に従って監査を無効にすると、コンプライアンス ポータルを使用して監査ログを検索するとき、または PowerShell で **Search-UnifiedAuditLog** コマンドレットを実行したときに結果Exchange Online返されないことを意味します。 これは、Office 365 Management アクティビティ API または Microsoft Sentinel を使用して監査ログを使用できないことも意味します。
+> Microsoft 365 で監査を無効にした場合、Office 365 Management Activity API または Microsoft Sentinel を使用して組織の監査データにアクセスすることはできません。 この記事の手順に従って監査を無効にすると、コンプライアンス ポータルを使用して監査ログを検索するとき、または PowerShell で **Search-UnifiedAuditLog** コマンドレットを実行したときに結果Exchange Online返されないことを意味します。 これは、Office 365 Management アクティビティ API または Microsoft Sentinel を使用して監査ログを使用できないことも意味します。
   
 ## <a name="before-you-turn-auditing-on-or-off"></a>監査をオンまたはオフにする前に
 
-- Microsoft 365組織で監査を有効または無効にするには、Exchange Onlineで監査ログ ロールを割り当てる必要があります。 既定では、このロールは、Exchange管理センターの **[アクセス許可**] ページのコンプライアンス管理と組織管理の役割グループに割り当てられます。 Microsoft 365のグローバル管理者は、Exchange Onlineの組織管理役割グループのメンバーです。
+- Microsoft 365 組織で監査を有効または無効にするには、Exchange Onlineで監査ログ ロールを割り当てる必要があります。 既定では、このロールは、Exchange 管理センターの **[アクセス許可** ] ページのコンプライアンス管理と組織管理の役割グループに割り当てられます。 Microsoft 365 のグローバル管理者は、Exchange Onlineの組織管理役割グループのメンバーです。
 
     > [!NOTE]
     > 監査を有効または無効にするには、Exchange Onlineでユーザーにアクセス許可を割り当てる必要があります。 コンプライアンス ポータルの **[アクセス許可** ] ページでユーザーに監査ログ ロールを割り当てると、監査をオンまたはオフにすることはできません。 これは、基になるコマンドレットが powerShell コマンドレットExchange Onlineであるためです。
 
-- 監査ログの検索の詳細な手順については、「監査ログ [の検索」を](search-the-audit-log-in-security-and-compliance.md)参照してください。 Microsoft 365 Management アクティビティ API の詳細については、「[Microsoft 365 Management API を使用した概要」を参照してください](/office/office-365-management-api/get-started-with-office-365-management-apis)。
+- 監査ログの検索の詳細な手順については、「監査ログ [の検索」を](search-the-audit-log-in-security-and-compliance.md)参照してください。 Microsoft 365 Management アクティビティ API の詳細については、「 [Microsoft 365 Management API の概要」を](/office/office-365-management-api/get-started-with-office-365-management-apis)参照してください。
 
 ## <a name="verify-the-auditing-status-for-your-organization"></a>組織の監査状態を確認する
 
@@ -118,9 +116,9 @@ _UnifiedAuditLogIngestionEnabled_ プロパティの`True`値は、監査が有�
 
 ## <a name="audit-records-when-auditing-status-is-changed"></a>監査の状態が変更されたときにレコードを監査する
 
-組織内の監査状態に対する変更は、それ自体が監査されます。 つまり、監査レコードは、監査がオンまたはオフになっているときにログに記録されます。 これらの監査レコードについては、Exchange管理者監査ログを検索できます。
+組織内の監査状態に対する変更は、それ自体が監査されます。 つまり、監査レコードは、監査がオンまたはオフになっているときにログに記録されます。 これらの監査レコードについては、Exchange 管理者監査ログを検索できます。
 
-Exchange管理者監査ログで、監査のオンとオフを切り替えるときに生成される監査レコードを検索するには、[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で次のコマンドを実行します。
+監査をオンまたはオフにするときに生成される監査レコードを Exchange 管理者監査ログで検索するには、[PowerShell で](/powershell/exchange/connect-to-exchange-online-powershell)次のコマンドExchange Online実行します。
 
 ```powershell
 Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLogIngestionEnabled
@@ -140,4 +138,4 @@ Search-AdminAuditLog -Cmdlets Set-AdminAuditLogConfig -Parameters UnifiedAuditLo
 
 の値 `Confirm` は、 *CmdletParameters* プロパティには含まれません。 これは、 **Set-AdminAuditLogConfig -UnifiedAuditLogIngestionEnabled $false** コマンドを実行して、統合監査ログが無効になっていることを示します。
 
-Exchange管理者監査ログの検索の詳細については、「[Search-AdminAuditLog」を](/powershell/module/exchange/search-adminauditlog)参照してください。
+Exchange 管理者監査ログの検索の詳細については、「 [Search-AdminAuditLog」を](/powershell/module/exchange/search-adminauditlog)参照してください。

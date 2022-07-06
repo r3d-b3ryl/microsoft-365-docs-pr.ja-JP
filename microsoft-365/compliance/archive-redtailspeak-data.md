@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365で Red Tail Speak データをアーカイブするようにコネクタを設定する
+title: Microsoft 365 で Red Tail Speak データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、Red tail Speak データを Veritas からMicrosoft 365にインポートおよびアーカイブするコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: fb2e3bcb2bc8725d7cd452bd091bb18408a4224e
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: 管理者は、Red tail Speak データを Veritas から Microsoft 365 にインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
+ms.openlocfilehash: 28fb3de980fd9520afb69c9ec74fb9392f14a0d6
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320742"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66639228"
 ---
 # <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Redtail Speak データをアーカイブするコネクタを設定する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Microsoft 365 組織内のユーザー メールボックスに Redtail Speak からデータをインポートおよびアーカイブします。 Veritas には、Redtail からアイテムを受信する組織の SFTP サーバーからアイテムをキャプチャするように構成された [Redtail Speak](https://globanet.com/redtail/) コネクタが用意されています。 コネクタは、Redtail Speak から電子メール メッセージ形式にコンテンツを変換し、それらのアイテムを Microsoft 365 のユーザーのメールボックスにインポートします。
 
-Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、Redtail Speak からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、Redtail からアイテムを受信する組織の SFTP サーバーからアイテムをキャプチャするように構成された [Redtail Speak](https://globanet.com/redtail/) コネクタが用意されています。 コネクタは、Redtail Speak から電子メール メッセージ形式にコンテンツを変換し、それらのアイテムをMicrosoft 365のユーザーのメールボックスにインポートします。
-
-Redtail Speak データがユーザー メールボックスに格納されたら、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどのMicrosoft Purview機能を適用できます。 Redtail Speak コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
+Redtail Speak データがユーザー メールボックスに格納された後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどの Microsoft Purview 機能を適用できます。 Redtail Speak コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-the-redtail-speak-data"></a>Redtail Speak データのアーカイブの概要
 
-次の概要では、コネクタを使用して Redtail Speak データをMicrosoft 365にアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して Microsoft 365 で Redtail Speak データをアーカイブするプロセスについて説明します。
 
 ![Redtail Speak データのアーカイブ ワークフロー。](../media/RedtailSpeakConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ Redtail Speak データがユーザー メールボックスに格納された�
 
 2. 24 時間に 1 回、Redtail Speak アイテムが Veritas Merge1 サイトにコピーされます。 コネクタでは、Redtail Speak アイテムも電子メール メッセージ形式に変換されます。
 
-3. コンプライアンス ポータルで作成した Redtail Speak コネクタは、毎日 Veritas Merge1 サイトに接続され、Microsoft クラウド内の安全なAzure Storage場所にメッセージを転送します。
+3. コンプライアンス ポータルで作成した Redtail Speak コネクタは、毎日 Veritas Merge1 サイトに接続し、メッセージを Microsoft クラウドのセキュリティで保護された Azure Storage の場所に転送します。
 
 4. コネクタは、変換された Redtail Speak アイテムを、[手順 3](#step-3-map-users-and-complete-the-connector-setup). の説明に従って自動ユーザー マッピングの *Email* プロパティの値を使用して、特定のユーザーのメールボックスにインポートします。 **Redtail Speak** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての Redtail Speak アイテムにはこのプロパティが含まれています。このプロパティには、アイテムのすべての参加者の電子メール アドレスが入力されます。
 
@@ -47,9 +45,9 @@ Redtail Speak データがユーザー メールボックスに格納された�
 
 - 手順 2 では、組織の SFTP サーバーを指定する必要があります。 この手順は、Veritas Merge1 が SFTP を介して Redtail Speak データを収集するために連絡できるように必要です。
 
-- 手順 1 で Redtail Speak Importer コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 1 で Redtail Speak Importer コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理 ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者がカスタムロール グループを作成し、Data Connector 管理ロールを割り当ててから、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この Veritas データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境でパブリック プレビュー段階にあります。 サード パーティ製のアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purviewおよびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この Veritas データ コネクタは、Microsoft 365 US Government クラウドの GCC 環境でパブリック プレビュー段階にあります。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあり、Microsoft Purview およびデータ保護コミットメントの対象外であるサード パーティ システムに対する組織の顧客データの保存、送信、処理が含まれる場合があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="step-1-set-up-the-redtail-speak-connector"></a>手順 1: Redtail Speak コネクタを設定する
 
@@ -75,7 +73,7 @@ Redtail Speak データがユーザー メールボックスに格納された�
 
 ユーザーをマップし、コネクタのセットアップを完了するには、次の手順に従います。
 
-1. [**ユーザーを Microsoft 365 ユーザーに話す**] ページで、自動ユーザー マッピングを有効にします。 Redtail Speak アイテム *には、組織内* のユーザーの電子メール アドレスを含む Email というプロパティが含まれています。 コネクタがこのアドレスをMicrosoft 365 ユーザーに関連付けることができる場合、アイテムはそのユーザーのメールボックスにインポートされます。
+1. **[ユーザーを Microsoft 365 ユーザーに話す**] ページで、自動ユーザー マッピングを有効にします。 Redtail Speak アイテム *には、組織内* のユーザーの電子メール アドレスを含む Email というプロパティが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合、アイテムはそのユーザーのメールボックスにインポートされます。
 
 2. **[次へ**] を選択し、設定を確認し、[**データ コネクタ**] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 

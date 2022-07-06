@@ -19,24 +19,22 @@ search.appverid:
 ms.assetid: 1d463dda-a3b5-4675-95d4-83db19c9c4a3
 description: Security & Compliance PowerShell を使用して、検索の作成やレポートの実行などのコンテンツ検索タスクを自動化する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 50d0a66957e4bdca1e39cb42c837aa0f992bad98
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: be456c737188f02cfad245d4a1dc4661f2c611a5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018077"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638590"
 ---
 # <a name="create-report-on-and-delete-multiple-content-searches"></a>複数のコンテンツ検索の作成、報告、削除
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
  探索検索を迅速に作成およびレポートすることは、多くの場合、基になるデータと検索の豊富さと品質について学習しようとしている場合に、電子情報開示と調査の重要なステップです。 これを支援するために、Security & Compliance PowerShell には、時間のかかるコンテンツ検索タスクを自動化するための一連のコマンドレットが用意されています。 これらのスクリプトを使用すると、多数の検索を迅速かつ簡単に作成し、推定検索結果のレポートを実行して、問題のデータの量を判断するのに役立ちます。 スクリプトを使用して、異なるバージョンの検索を作成して、それぞれが生成する結果を比較することもできます。 これらのスクリプトは、データを迅速かつ効率的に識別してカリングするのに役立ちます。
 
 ## <a name="before-you-create-a-content-search"></a>コンテンツ検索を作成する前に
 
-- このトピックで説明するスクリプトを実行するには、Microsoft Purview コンプライアンス ポータルで電子情報開示マネージャーの役割グループのメンバーである必要があります。
+- このトピックで説明するスクリプトを実行するには、Microsoft Purview コンプライアンス ポータルの電子情報開示マネージャー役割グループのメンバーである必要があります。
 
-- 手順 1 で CSV ファイルに追加できる組織内のOneDrive for Business サイトの URL の一覧を収集するには、「組織内[のすべてのOneDriveの場所の一覧を作成](/onedrive/list-onedrive-urls)する」を参照してください。
+- 手順 1 で CSV ファイルに追加できる組織内のOneDrive for Business サイトの URL の一覧を収集するには、「[組織内のすべての OneDrive の場所の一覧を作成](/onedrive/list-onedrive-urls)する」を参照してください。
 
 - このトピックで作成するすべてのファイルは、必ず同じフォルダーに保存してください。 そうすることで、スクリプトを簡単に実行できるようになります。
 
@@ -62,7 +60,7 @@ ms.locfileid: "66018077"
 
    ファイルの最初の行 (ヘッダー行) には、 **New-ComplianceSearch** コマンドレットによって (手順 3 のスクリプトで) 新しいコンテンツ検索を作成するために使用されるパラメーターが一覧表示されます。 各パラメーター名はコンマで区切られています。 ヘッダー行にスペースがないことを確認します。 ヘッダー行の下の各行は、各検索のパラメーター値を表します。 CSV ファイル内のプレースホルダー データを実際のデータに置き換えてください。
 
-2. Excelで.txt ファイルを開き、次の表の情報を使用して、検索ごとに情報を含むファイルを編集します。
+2. Excel で.txt ファイルを開き、次の表の情報を使用して、検索ごとに情報を含むファイルを編集します。
 
    ****
 
@@ -71,15 +69,15 @@ ms.locfileid: "66018077"
    |`ExchangeLocation`|ユーザーのメールボックスの SMTP アドレス。|
    |`SharePointLocation`|ユーザーのOneDrive for Business サイトの URL、または組織内の任意のサイトの URL。 OneDrive for Business サイトの URL には、次の形式を使用します` https://<your organization>-my.sharepoint.com/personal/<user alias>_<your organization>_onmicrosoft_com `。 例: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft_com`。|
    |`ContentMatchQuery`|検索の検索クエリ。 検索クエリの作成の詳細については、「コンテンツ検索 [のキーワード クエリと検索条件」を参照](keyword-queries-and-search-conditions.md)してください。|
-   |`StartDate`|電子メールの場合、メッセージが受信者によって受信されたか、送信者によって送信された日付または後の日付。 SharePoint サイトまたはOneDrive for Business サイトのドキュメントの場合、ドキュメントが最後に変更された日付または後の日付。|
-   |`EndDate`|電子メールの場合は、ユーザーが送信したメッセージの送信日または送信前の日付。 SharePoint サイトまたはOneDrive for Business サイトのドキュメントの場合、ドキュメントが最後に変更された日付または前の日付。|
+   |`StartDate`|電子メールの場合、メッセージが受信者によって受信されたか、送信者によって送信された日付または後の日付。 SharePoint または OneDrive for Business サイトのドキュメントの場合、ドキュメントが最後に変更された日付または後の日付。|
+   |`EndDate`|電子メールの場合は、ユーザーが送信したメッセージの送信日または送信前の日付。 SharePoint またはOneDrive for Business サイトのドキュメントの場合、ドキュメントが最後に変更された日付または前の日付。|
    |
 
 3. Excel ファイルを CSV ファイルとしてローカル コンピューター上のフォルダーに保存します。 手順 3 で作成したスクリプトでは、この CSV ファイルの情報を使用して検索を作成します。
 
-## <a name="step-2-connect-to-security--compliance-powershell"></a>手順 2: セキュリティ & コンプライアンス PowerShell にConnectする
+## <a name="step-2-connect-to-security--compliance-powershell"></a>手順 2: セキュリティ & コンプライアンス PowerShell に接続する
 
-次の手順では、組織のセキュリティ & コンプライアンス PowerShell に接続します。 詳細な手順については、「[Security & Compliance PowerShell のConnect」を](/powershell/exchange/connect-to-scc-powershell)参照してください。
+次の手順では、組織のセキュリティ & コンプライアンス PowerShell に接続します。 詳細な手順については、「[セキュリティ/コンプライアンス PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 ## <a name="step-3-run-the-script-to-create-and-start-the-searches"></a>手順 3: スクリプトを実行して検索を作成して開始する
 

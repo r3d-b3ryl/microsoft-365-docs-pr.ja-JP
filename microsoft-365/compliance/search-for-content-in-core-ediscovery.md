@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 電子情報開示 (Standard) ケースに関連する可能性があるコンテンツを検索します。
-ms.openlocfilehash: d0c565e46860329c4dc6dac741fb0312ddccfd2c
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 1c51475602e3a0807932501325e12d93a89fcba3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318926"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66638127"
 ---
 # <a name="search-for-content-in-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースでコンテンツを検索する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview電子情報開示 (Standard) ケースが作成され、ケースに関心のあるユーザーが保留されたら、ケースに関連するコンテンツの 1 つ以上の検索を作成して実行できます。 電子情報開示 (Standard) ケースに関連付けられている検索は、Microsoft Purview コンプライアンス ポータルの **[コンテンツ検索**] ページに一覧表示されません。 これらの検索は、 **検索が関連付** けられている電子情報開示 (Standard) ケースの [検索] ページに一覧表示されます。 これは、ケースに関連付けられた検索にケース メンバーのみがアクセスできることを意味します。
+Microsoft Purview eDiscovery (Standard) ケースが作成され、ケースに関心のあるユーザーが保留されたら、ケースに関連するコンテンツの 1 つ以上の検索を作成して実行できます。 電子情報開示 (Standard) ケースに関連付けられている検索は、Microsoft Purview コンプライアンス ポータルの **[コンテンツ検索**] ページに一覧表示されません。 これらの検索は、 **検索が関連付** けられている電子情報開示 (Standard) ケースの [検索] ページに一覧表示されます。 これは、ケースに関連付けられた検索にケース メンバーのみがアクセスできることを意味します。
 
 電子情報開示 (Standard) 検索を作成するには:
   
@@ -79,6 +77,6 @@ Microsoft Purview電子情報開示 (Standard) ケースが作成され、ケー
 
 - [ **ユーザー、グループ、またはチームの選択]** をクリックして検索するメールボックスを指定すると、表示されるメールボックス ピッカーは空になります。 これは、パフォーマンスを向上させるための仕様です。 このリストに受信者を追加するには、[ **ユーザー、グループ、またはチームの選択**] をクリックし、検索ボックスに名前 (3 文字以上) を入力し、名前の横にあるチェック ボックスをオンにしてから、[ **選択**] をクリックします。
 
-- 非アクティブなメールボックス、Microsoft Teams、Yammer グループ、Office 365 グループ、配布グループを検索するメールボックスの一覧に追加できます。 動的配布グループはサポートされていません。 Microsoft Teams、Yammer グループ、またはOffice 365 グループを追加すると、グループまたはチームのメールボックスが検索されます。グループ メンバーのメールボックスは検索されません。
+- 非アクティブなメールボックス、Microsoft Teams、Yammer グループ、Office 365 グループ、配布グループを検索するメールボックスの一覧に追加できます。 動的配布グループはサポートされていません。 Microsoft Teams、Yammer グループ、またはOffice 365 グループを追加すると、グループまたはチームメールボックスが検索されます。グループ メンバーのメールボックスは検索されません。
 
-- 検索にサイトを追加するには、トグルをオンにし、[ **サイトの選択**] をクリックします。 検索する各サイトの URL を入力します。 Microsoft Team、Yammer グループ、またはOffice 365 グループのSharePoint サイトの URL を追加することもできます。
+- 検索にサイトを追加するには、トグルをオンにし、[ **サイトの選択**] をクリックします。 検索する各サイトの URL を入力します。 Microsoft Team、Yammer グループ、またはOffice 365 グループの SharePoint サイトの URL を追加することもできます。
