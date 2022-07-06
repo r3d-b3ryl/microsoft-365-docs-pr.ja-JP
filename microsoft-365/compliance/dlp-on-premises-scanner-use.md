@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
+title: データ損失防止のオンプレミス スキャナーを使用する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: オンプレミスのスキャナーで Microsoft 365 データ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
-ms.openlocfilehash: d726bfccf7dff2e95e3ccf996544f1db26bf09a2
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: オンプレミスのスキャナーでデータ損失防止を使用して、保存されているデータをスキャンし、オンプレミスのファイル共有とオンプレミスの SharePoint フォルダーとドキュメント ライブラリに保護アクションを実装する方法について説明します。
+ms.openlocfilehash: ae5ffce9e664ada6e7476bb02b40f4a5c279d441
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60203149"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624181"
 ---
-# <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
+# <a name="use-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーを使用する
 
-DLP オンプレミス機能、および DLP ポリシーで表示される方法を把握するために、いくつかのシナリオをまとめてましたので、確認してください。
+Microsoft Purview データ損失防止オンプレミス機能、および DLP ポリシーで表示される方法を把握するために、いくつかのシナリオをまとめてましたので、確認してください。
 
 > [!IMPORTANT]
 > これらの DLP オンプレミス シナリオは、DLP ポリシーの作成と調整に関する公式な手順ではありません。 一般的な状況で DLP ポリシーを使用する必要がある場合は、次のトピックを参照してください。
@@ -48,7 +48,7 @@ DLP オンプレミス スキャナーのデータが複数の領域に表示さ
 
 #### <a name="microsoft-365-audit-log"></a>Microsoft 365 監査ログ
 
-DLP ルールの一致は、監査ログ UI で利用できます。「[コンプライアンス センターで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」をご覧になるか、または[Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell からアクセスできます。
+DLP ルールの一致は、監査ログ UI で利用できます。「[Microsoft Purview コンプライアンス ポータルで監査ログを検索する](search-the-audit-log-in-security-and-compliance.md)」をご覧になるか、または [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell からアクセスできます。
 
 #### <a name="aip"></a>AIP
 

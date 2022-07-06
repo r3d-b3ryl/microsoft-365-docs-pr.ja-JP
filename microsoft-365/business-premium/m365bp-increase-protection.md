@@ -25,19 +25,19 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium での保護レベルの向上に関するヘルプを表示する
-ms.openlocfilehash: 7917fa7e0530724c201db8b118ea2adedc7c3a62
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: b5d1c7c241be8e61c7f1dcb3ccd08f9c3a0e93af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573849"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631939"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の脅威に対する保護を強化する
 
-この目的では、Microsoft 365 Business Premium を使用して脅威に対する保護を強化します。 フィッシング、マルウェア、その他の脅威からビジネスを保護することが重要です。 この目標には、次に関する情報が含まれます:
+この目的では、Microsoft 365 Business Premium を使用して脅威に対する保護を強化します。 フィッシング、マルウェア、その他の脅威からビジネスを保護することが重要です。 この記事には、次の情報が含まれています。
 
 - セットアップと構成に多くの時間を節約できる[事前設定済みのセキュリティ ポリシー](#review-and-apply-preset-security-policies)。
-- ビジネス ニーズに合わせて定義できる[カスタム セキュリティ ポリシー](#create-custom-security-policies)
+- ビジネス ニーズに合わせて定義できる[カスタム セキュリティ ポリシー](#create-custom-security-policies)。
 - [SharePoint と OneDrive ファイルとフォルダーの共有設定を調整する方法](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)。
 - 特定のファイルとその使用方法を監視する[アラート ポリシー](#review-your-alert-policies)。
 

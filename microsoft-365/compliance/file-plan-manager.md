@@ -17,18 +17,16 @@ search.appverid:
 - MET150
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: ファイルプランでは、アイテム保持ラベルに高度な管理機能が提供されます。
-ms.openlocfilehash: 67844e521aeec2257440aea34a79f0b96333f7f9
-ms.sourcegitcommit: e6443eb3a4c826792806873428c0c17b59f4fde5
+ms.openlocfilehash: 4257f7306767f1ede04edfc949419b1ab7477d8b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65889369"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635373"
 ---
 # <a name="use-file-plan-to-create-and-manage-retention-labels"></a>ファイル計画を使用して保持ラベルを作成および管理する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 保持ラベルの作成と管理は、Microsoft Purview コンプライアンス ポータルの **[データ ライフサイクル管理]** から実行できますが、**[レコード管理]** のファイル計画には追加の管理機能があります。
 
@@ -204,10 +202,10 @@ A *.csv ファイルは既存の全ての保持ラベルを開く、を含みま
 |:-----|:-----|:-----|:-----|
 |LabelName|文字列|はい|このプロパティは、保持ラベルの名前を指定します。このプロパティは、テナント内で一意である必要があります。 インポートでサポートされる文字: a-z、A から Z、0 から 9、ハイフン (-)、およびスペース文字。|
 |コメント|文字列|いいえ|このプロパティを使用して、管理者の保持ラベルに関する説明を追加します。 この説明は、Microsoft Purview コンプライアンス ポータルで保持ラベルを管理する管理者にのみ表示されます。|
-|メモ|文字列|いいえ|このプロパティを使用して、ユーザーの保持ラベルに関する説明を追加します。 この説明は、ユーザーが Outlook、SharePoint、OneDrive などのアプリでラベルにカーソルを置いたときに表示されます。 このプロパティを空白のままにすると、ラベルの保持設定を説明する既定の説明が表示されます。 |
+|Notes|文字列|いいえ|このプロパティを使用して、ユーザーの保持ラベルに関する説明を追加します。 この説明は、ユーザーが Outlook、SharePoint、OneDrive などのアプリでラベルにカーソルを置いたときに表示されます。 このプロパティを空白のままにすると、ラベルの保持設定を説明する既定の説明が表示されます。 |
 |IsRecordLabel|文字列|いいえ、**Regulatory** が **TRUE** でない場合です|このプロパティでは、ラベルがコンテンツをレコードとしてマークするかどうかを指定します。有効な値は次のとおりです。</br>**TRUE**: ラベルはアイテムをレコードとしてマークし、その結果としてアイテムを削除できません。 </br>**FALSE**: ラベルはコンテンツをレコードとしてマークしません。これは既定値です。</br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction、 RetentionDuration、および RetentionType も指定される必要があります。|
 |RetentionAction|文字列|いいえ、**RetentionDuration**、**RetentionType**、または **ReviewerEmail** が指定されていない場合です|このプロパティは、RetentionDuration プロパティ (指定された場合) で指定された値の有効期限が切れた後に実行するアクションを指定します。有効な値は次のとおりです。</br>**Delete**: RetentionDuration プロパティで指定された値よりも古いアイテムが削除されます。</br>**Keep**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了しても何もしません。 </br>**KeepAndDelete**: RetentionDuration プロパティで指定された期間のアイテムを保持し、期間が終了したらそれらを削除します。 </br> </br> グループの依存関係: このプロパティが指定された場合、RetentionDuration および RetentionType も指定される必要があります。 |
-|RetentionDuration|文字列|いいえ、**RetentionAction** または **RetentionType** が指定されていない場合です|このプロパティは、コンテンツを保持する日数を指定します。有効な値は次のとおりです。</br>**Unlimited**: アイテムは無期限に保持されます。 </br>**_n_*: 日付の正の整数です (例: _ **365**)。 サポート可能な最大数は 24,855 で、これは 68 年です。 この最大値よりも長い期間を必要とする場合は、代わりに Unlimited 版を使用します。</br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction および RetentionType も指定される必要があります。
+|RetentionDuration|文字列|いいえ、**RetentionAction** または **RetentionType** が指定されていない場合です|このプロパティは、コンテンツを保持する日数を指定します。有効な値は次のとおりです。</br>**Unlimited**: アイテムは無期限に保持されます。 </br>**_n_*: 日付の正の整数です (例: _ **365**)。 サポート可能な最大数は 36,525 で、これは 100 年です。 この最大値よりも長い期間を必要とする場合は、代わりに Unlimited 版を使用します。</br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction および RetentionType も指定される必要があります。
 |RetentionType|String|いいえ、**RetentionAction** または **RetentionDuration** が指定されていない場合です|プロパティは、コンテンツ作成日、イベント日、ラベルが付けられた日、または最終変更日のいずれから保持期間 (指定された場合) を計算するかを指定します。有効な値は次のとおりです。</br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** </br> </br> グループの依存関係: このプロパティが指定された場合、RetentionAction および RetentionDuraction も指定される必要があります。|
 |ReviewerEmail|SmtpAddress|いいえ|このプロパティが指定された場合、保持期間が終了すると、廃棄のレビューがトリガーされます。 このプロパティは、**KeepAndDelete** の保持期間用アクションのテナント内レビュー担当者の電子メール アドレスを指定します。 </br> </br> テナント内の個々のユーザー、配布グループまたはセキュリティ グループのメール アドレスを含めることが出来ます。 複数のメール アドレスをセミコロンで区切って指定します。 </br> </br> グループの依存関係: このプロパティが指定された場合、**RetentionAction** (**KeepAndDelete** である必要があります)、**RetentionDuration**、および **RetentionType** も指定される必要があります。|
 |ReferenceId|String|いいえ|このプロパティは、**参照 ID** ファイル計画記述子に表示される値を指定します。そしてこれは組織の固有の値として使うことが出来ます。| 

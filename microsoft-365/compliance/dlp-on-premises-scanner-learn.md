@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報
+title: データ損失防止のオンプレミス スキャナーの詳細
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Microsoft 365 データ損失防止オンプレミス スキャナーは、ファイル アクティビティの監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoin tフォルダーおよびドキュメント ライブラリに拡張します。 ファイルは、Azure Information Protection (AIP) スキャナーによってスキャンおよび保護されます
-ms.openlocfilehash: c696d4c4e8504d07ce69554c6ff52f264b8ba491
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: データ損失防止のオンプレミス スキャナーは、ファイル アクティビティの監視とそれらのファイルの保護アクションを、オンプレミスのファイル共有と SharePoint フォルダーおよびドキュメント ライブラリに拡張します。 ファイルは、Azure Information Protection (AIP) スキャナーによってスキャンされ、保護されます
+ms.openlocfilehash: 8edf472fe65380b708a833864ccceedadb240191
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60207345"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629819"
 ---
-# <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner"></a>Microsoft 365 のエンドポイントのデータ損失防止について説明します
+# <a name="learn-about-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの詳細
 
-Microsoft Data Loss Prevention (オンプレミス スキャナー) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft 365 Data Loss Prevention (DLP) スイートの機能の一部です。MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
+データ損失防止オンプレミス スキャナーは、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft Purview Data Loss Prevention (DLP) スイートの機能の一部です。 MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
 
 **DLP オンプレミス スキャナー** は、ファイル共有と SharePoint ドキュメント ライブラリおよびフォルダー内のオンプレミスの保存データをクロールして、漏洩した場合に組織にリスクをもたらしたり、コンプライアンス ポリシー違反のリスクをもたらしたりする機密アイテムを探します。 これにより、機密性の高いアイテムが適切に使用および保護されていることを確認し、危険にさらされる可能性のある動作を防止するために必要な可視性と制御を得ることができます。 DLP オンプレミス スキャナーは、[組み込み](sensitive-information-type-entity-definitions.md)または[カスタムの機密情報](create-a-custom-sensitive-information-type.md)タイプ、[機密ラベル](sensitivity-labels.md)、またはファイル プロパティを使用して機密情報を検出します。 機密アイテムを使用してユーザーが行っていることに関する情報が[Activity Explorer](data-classification-activity-explorer.md)に表示され、[DLPポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
 
@@ -87,8 +87,8 @@ DLP オンプレミス スキャナー データは、M365 コンプライアン
 
 ## <a name="see-also"></a>関連項目
 
-- [Getting started with the Microsoft data loss prevention on-premises scanner (Microsoft データ損失防止オンプレミス スキャナーの使用を開始する)](dlp-on-premises-scanner-get-started.md)
-- [Use the Microsoft data loss prevention on-premises scanner (Microsoft データ損失防止オンプレミス スキャナーを使用する)](dlp-on-premises-scanner-use.md)
+- [データ損失防止のオンプレミス スキャナーの使用を開始する](dlp-on-premises-scanner-get-started.md)
+- [データ損失防止のオンプレミス スキャナーを使用する](dlp-on-premises-scanner-use.md)
 - [データ損失防止について](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [Activity Explorer を使い始める](data-classification-activity-explorer.md)

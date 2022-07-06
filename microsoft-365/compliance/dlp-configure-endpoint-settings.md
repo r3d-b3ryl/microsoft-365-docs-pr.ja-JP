@@ -18,16 +18,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント データ損失防止 (DLP) の中央設定を構成する方法について説明します。
-ms.openlocfilehash: edf5d42421aa9fb0c54d0121655e3a31d4a729f6
-ms.sourcegitcommit: 1c8f54f9e7a7665bc10b5ef4a3d8c36e3e48f44c
+ms.openlocfilehash: 99598880515dd14bc453ebd61a633be7eb66a9fc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66078768"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629951"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>エンドポイント データ損失防止の設定を構成する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 エンドポイント データ損失防止 (DLP) の動作の多くの側面は、一元的に構成された設定によって制御されます。 設定は、デバイスのすべての DLP ポリシーに適用されます。
 
@@ -57,13 +55,13 @@ ms.locfileid: "66078768"
 |機密アイテムに対するブラウザーとドメインの制限      |サポート         |サポート         |         |
 |エンドポイント DLP の追加設定     |サポート         |サポート         |macOS デバイスでは、既定の業務上の正当な理由のみがサポートされます         |
 |デバイスのファイル アクティビティを常に監査する     |サポート         |サポート         |         |
-|許可されていないアプリからの自動検疫ファイル | サポート | サポート対象外| |
+|許可されていないアプリからの自動検疫ファイル | サポートされている | サポート対象外| |
 |高度な分類 | サポートされている | サポート対象外| |
 |ポリシー ヒントでの業務上の正当な理由 | サポート | サポート| |
 
 ### <a name="advanced-classification-scanning-and-protection"></a>高度な分類のスキャンと保護
 
-高度な分類のスキャンと保護によって、より高度な Microsoft Purview クラウドベースのデータ分類サービスを使用して、項目をスキャンし、分類し、結果をローカル コンピューターに返すことができます。 つまり、DLP ポリシーで[厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分類、[名前付きエンティティ](named-entities-learn.md)、[トレーニング可能な分類子](classifier-learn-about.md)などの分類手法を利用できるということです。
+高度な分類のスキャンと保護によって、より高度な Microsoft Purview クラウドベースのデータ分類サービスを使用して、項目をスキャンし、分類し、結果をローカル コンピューターに返すことができます。 つまり、DLP ポリシーで[厳密なデータ一致](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)分類、[名前付きエンティティ](named-entities-learn.md)のような分類手法を利用できるということです。
 
 高度な分類を有効にすると、コンテンツはスキャンと分類のためにローカル デバイスからクラウド サービスに送信されます。 帯域幅の使用率が懸念される場合は、24 時間のローリングで使用できる量に関して制限を設定できます。 制限はエンドポイント DLP 設定で構成され、デバイスごとに適用されます。 帯域幅使用率の制限を設定し、それを超えた場合、DLP はユーザー コンテンツのクラウドへの送信を停止します。 この時点で、データ分類はデバイス上でローカルに続行されますが、完全なデータ一致、名前付きエンティティ、トレーニング可能な分類子を使用した分類は使用できません。 累積帯域幅使用率が 24 時間のローリング制限を下回ると、クラウド サービスとの通信が再開されます。
 

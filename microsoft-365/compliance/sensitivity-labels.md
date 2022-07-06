@@ -22,18 +22,16 @@ description: Microsoft Purview Information Protection の秘密度ラベルを�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 088e84c492fe142471799139743f29be32513206
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: db050d3e26f19901e98052be5051b9eebce21990
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65287202"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637951"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Office アプリに表示される秘密度レベルに関する情報をお探しの場合は、「[Office のファイルとメールに秘密度レベルを適用する](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)」をご覧ください。
@@ -186,7 +184,7 @@ Microsoft Purview Information Protection の秘密度ラベルを使用すると
 
 - **ラベルを表示させるユーザーとグループを選択する。** Azure AD の特定のユーザーまたは電子メールが有効なセキュリティ グループ、配布グループ、または Microsoft 365 グループ ([ダイナミック メンバーシップ](/azure/active-directory/users-groups-roles/groups-create-rule)を使用できる) にラベルを発行することができます。
 
-- ラベル付けされていないドキュメントとメール、新しいコンテナー ([Microsoft Teams、Microsoft 365 グループおよび SharePoint サイトの秘密度ラベルを有効](sensitivity-labels-teams-groups-sites.md)にした場合)、の **既定のラベルを指定します**。また、[Power BI コンテンツ](/power-bi/admin/service-security-sensitivity-label-default-label-policy)に既定のラベルをしてします。 4 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ユーザーは、適用された既定の秘密度ラベルを、コンテンツまたはコンテナーの秘密度に合わせて変更できます。
+- ラベル付けされていないドキュメントとメール、新しいコンテナー ([Microsoft Teams、Microsoft 365 グループおよび SharePoint サイトの秘密度ラベルを有効](sensitivity-labels-teams-groups-sites.md)にした場合)、の **既定のラベルを指定します**。また、[Power BI コンテンツ](/power-bi/admin/service-security-sensitivity-label-default-label-policy)に既定のラベルを指定します。 4 種類のアイテムすべてに同じラベルを指定することも、異なるラベルを指定することもできます。 ユーザーは、適用された既定の秘密度ラベルを、コンテンツまたはコンテナーの秘密度に合わせて変更できます。
     
     > [!NOTE]
     > 組み込みのラベルを使用する Office アプリのプレビュー: この設定では、ユーザーが開いた既存のドキュメントと新しいドキュメントがサポートされるようになりました。 この動作の変更は、Azure Information Protection の統合ラベル付けクライアントとのパリティを提供します。 アプリごとのロールアウトと最小バージョンの詳細については、Word、Excel、PowerPoint の [機能表](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) を参照してください。

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 のデータ損失防止のオンプレミス スキャナーの使用を開始する
+title: データ損失防止のオンプレミス スキャナーの使用を開始する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,17 +19,17 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: 1586489389931b3df19a1c84f0ae49ac7ff9c099
-ms.sourcegitcommit: d37fce3b708ea5232b4102fd0e693f4bf17a8948
+description: データ損失防止のオンプレミス スキャナーを設定する
+ms.openlocfilehash: a1bcebfb48a502a9d7c484d266d91fe105603f84
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "62159488"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625437"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの使用を開始する
 
-この記事では、Microsoft 365 データ損失防止オンプレミス スキャナーの前提条件と構成について説明します。
+この記事では、Microsoft Purview データ損失防止オンプレミス スキャナーの前提条件と構成について説明します。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -60,14 +60,14 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 
 プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
 - Information Protection レベル
@@ -100,7 +100,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
    > [!IMPORTANT]
    > スキャナーはデフォルトでリポジトリのデルタ スキャンを実行し、ファイルが変更されたか、完全な再スキャンを開始しない限り、前のスキャン サイクルですでにスキャンされたファイルはスキップされることに注意してください。完全な再スキャンは、UI の **[すべてのファイルを再スキャンする]** オプションを使用するか、**Start-AIPScan-Reset** を実行することで開始できます。
 
-6.  Microsoft 365 コンプライアンス センターの [[データ損失防止]](https://compliance.microsoft.com/datalossprevention?viewid=policies) ページを開きます。
+6.  Microsoft Purview コンプライアンス ポータルの[データ損失防止ページ](https://compliance.microsoft.com/datalossprevention?viewid=policies)を開きます。
 
 7. **[ポリシーの作成]** を選択し、テスト DLP ポリシーを作成します。 ポリシーの作成についてサポートが必要な場合は、「[テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)」を参照してください。 この機能に慣れるまで、必ずテストで実行してください。 ポリシーには、次のパラメータを使用します。
     1. 必要に応じて、DLP オンプレミス スキャナー ルールを特定の場所にスコープします。 **[場所]** のスコープを **[すべて]** に設定すると、スキャナーによってスキャンされたすべてのファイルが DLP ルールの照合と適用の対象になります。
@@ -124,7 +124,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 
 ### <a name="viewing-dlp-on-premises-scanner-alerts-in-dlp-alerts-management-dashboard"></a>DLP アラート管理ダッシュボードでの DLP オンプレミス スキャナー アラートの表示
 
-1. Microsoft 365 コンプライアンス センターの [[データ損失防止]](https://compliance.microsoft.com/datalossprevention?viewid=policies) ページを開き、**[アラート]** を選択します。
+1. Microsoft Purview コンプライアンス ポータルの [データ損失防止ページ](https://compliance.microsoft.com/datalossprevention?viewid=policies)を開き、**アラート** を選択します。
 
 2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
 
@@ -133,7 +133,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 > [!NOTE]
 > オンプレミス スキャナーでは、監査を有効にする必要があります。 Microsoft 365では、監査は既定で有効になっています。
 
-1. Microsoft 365 コンプライアンスセンターでドメインの[データ分類ページ](https://compliance.microsoft.com/dataclassification?viewid=overview)を開き、Activity エクスプローラーを選択します。
+1. Microsoft Purview コンプライアンス ポータルでドメインの[データ分類ページ](https://compliance.microsoft.com/dataclassification?viewid=overview)を開き、Activity エクスプローラーを選択します。
 
 2. オンプレミス スキャナーの場所のすべてのデータにアクセスしてフィルタリングするには、「[Activity エクスプローラースタートガイド](data-classification-activity-explorer.md)」の手順に従ってください。
 

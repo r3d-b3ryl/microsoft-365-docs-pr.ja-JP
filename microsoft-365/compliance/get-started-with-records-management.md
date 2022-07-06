@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 86d6f21963b33fde59cb498868b8ecec315e1ad8
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 1c64559500d2edc0d440f0632a39de616d89c434
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286782"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629687"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 のレコード管理ソリューションを使用して、組織内の法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツの管理を開始する準備はできましたか? 開始するには、次のガイダンスを使用してください。
 
@@ -85,6 +83,7 @@ Microsoft Purview 機能のメリットを得られるようにユーザーに�
 |保持期間の終了時にコンテンツが削除される前に、誰かがレビューと承認を行うようにする|[廃棄確認](disposition.md#disposition-reviews) |
 |保存期間の終了時に完全に削除されたコンテンツの廃棄の証拠を取得する|[レコードの廃棄](disposition.md#disposition-of-records) |
 | 保持および削除設定がアイテムに適用される方法と場所を監視する | [保持ラベルの監視](retention.md#monitoring-retention-labels) |
+| 保持ラベル、イベント ベースの保持をプログラムで作成および管理し、レコード管理の反復タスクを自動化する | [レコード管理の Microsoft Graph API (プレビュー)](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview) |
 
 ## <a name="end-user-documentation"></a>エンド ユーザー向けのドキュメント
 

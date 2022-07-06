@@ -17,17 +17,17 @@ search.appverid:
 - MOE150
 - MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft 365 Defender ポータルl と Microsoft 365 コンプライアンス センターは、組織の現在の設定に基づいてデータ ガバナンスのための推奨事項を提供し、何回かクリックするだけで設定することができます。 これらの推奨事項の一部は、組織内の特定のコンテンツを検出し、そのコンテンツを管理するための推奨手順を提供します。 たとえば、推奨事項によって業務上重要なコンテンツ (弁護士/依頼人特権や NDA 情報など) が含まれる項目が検出されると、これらの項目に保持ラベルが自動的に適用され、必要に応じて分類および保持されます。 このトピックでは、ユーザーに表示される可能性があるデータ ガバナンスの推奨事項を一覧表示し、それぞれの推奨事項をトリガーするコンテンツについて説明します。
-ms.openlocfilehash: cddd73fdd0c21605549450968db182883ab7e6ad
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+description: Microsoft 365 Defender ポータルl と Microsoft Purview コンプライアンス ポータルは、組織の現在の設定に基づいてデータ ガバナンスのための推奨事項を提供し、何回かクリックするだけで設定することができます。 これらの推奨事項の一部は、組織内の特定のコンテンツを検出し、そのコンテンツを管理するための推奨手順を提供します。 たとえば、推奨事項によって業務上重要なコンテンツ (弁護士/依頼人特権や NDA 情報など) が含まれる項目が検出されると、これらの項目に保持ラベルが自動的に適用され、必要に応じて分類および保持されます。 このトピックでは、ユーザーに表示される可能性があるデータ ガバナンスの推奨事項を一覧表示し、それぞれの推奨事項をトリガーするコンテンツについて説明します。
+ms.openlocfilehash: 27fcc5dd07695be355fc15ba2145ffa5540673ca
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "61110969"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66637309"
 ---
 # <a name="how-content-is-identified-for-data-governance-recommendations"></a>データ ガバナンスの推奨事項のためのコンテンツの識別方法
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>と <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>は、組織の現在の設定に基づいてデータ ガバナンスのための推奨事項を提供し、何回かクリックするだけで設定することができます。 これらの推奨事項の一部は、組織内の特定のコンテンツを検出し、そのコンテンツを管理するための推奨手順を提供します。 たとえば、推奨事項によって業務上重要なコンテンツ (弁護士/依頼人特権や NDA 情報など) が含まれる項目が検出されると、これらの項目に保持ラベルが自動的に適用され、必要に応じて分類および保持されます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>と <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>は、組織の現在の設定に基づいてデータ ガバナンスのための推奨事項を提供し、何回かクリックするだけで設定することができます。 これらの推奨事項の一部は、組織内の特定のコンテンツを検出し、そのコンテンツを管理するための推奨手順を提供します。 たとえば、推奨事項によって業務上重要なコンテンツ (弁護士/依頼人特権や NDA 情報など) が含まれる項目が検出されると、これらの項目に保持ラベルが自動的に適用され、必要に応じて分類および保持されます。
 
 このトピックでは、ユーザーに表示される可能性があるデータ ガバナンスの推奨事項を一覧表示し、それぞれの推奨事項をトリガーするコンテンツについて説明します。
 

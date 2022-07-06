@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成します。
-ms.openlocfilehash: 0c72d35399a0185bbd8cf58b5eac58241a695b72
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012320"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628575"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルに表示される[秘密度ラベル](sensitivity-labels.md)の設定に対する追加構成として、これらのラベルは、SharePoint サイトまたは OneDrive アカウントと、個々のドキュメントに対応する既定の共有リンクの種類の設定を構成するために使用できます。 これらの設定は自動的に選択されますが、Office アプリで **[共有]** ボタンを選択したユーザーにはあまり表示されません。 次に例を示します。
 
@@ -92,6 +90,8 @@ PowerShell の例、秘密度ラベル GUID は **8faca7b8-8d20-48a3-8ea2-0f9631
     Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultShareLinkPermission="Edit"}
     ````
 
+PowerShell の詳細設定の指定に関する詳細については、「[詳細設定を指定するための PowerShell のヒント](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings)」を参照してください。
+
 サイトの既定の共有リンクの種類の設定を構成するには、Microsoft Purview コンプライアンス ポータルで秘密度ラベルを作成するときに、[秘密度ラベルの範囲](sensitivity-labels.md#label-scopes)に **[グループとサイト]** を含める必要があります。 作成後、**[ラベル]** ページの **[範囲]** 列に **サイト、UnifiedGroup** として表示され、PowerShell *ContentType* 設定にも同じ値が表示されます。 ドキュメントの場合、範囲には **[ファイルとメール]** が含まれている必要があります。これらは **[ファイル、メール]** として表示されます。 その後で以下の手順に従います。
 
 - 範囲に **[グループとサイト]** が含まれている場合、そのサイトのデフォルトの共有リンクタイプを設定するラベルをサイトに適用できます。 サイトに秘密度ラベルを適用する方法については、「[コンテナーに秘密度ラベルを適用する](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers)」を参照してください。
@@ -100,18 +100,3 @@ PowerShell の例、秘密度ラベル GUID は **8faca7b8-8d20-48a3-8ea2-0f9631
 
 > [!TIP]
 > [ラベル ポリシー設定](sensitivity-labels.md#what-label-policies-can-do)として、ラベルが新しいサイトまたは新しいドキュメントに適用されるデフォルトの秘密度ラベルであることを指定することもできます。
-
-### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>詳細設定を指定するための PowerShell のヒント
-
-秘密度ラベルは名前で指定できますが、ラベル名または表示名を指定する際の混乱を避けるために、ラベル GUID を使用することをお勧めします。GUID を見つけて、ラベルの範囲を確認するには、以下の手順に従います。
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid, ContentType
-````
-
-これらの詳細設定のいずれかを秘密度ラベルから削除するには、同じ AdvancedSettings パラメーター構文を使用しますが、null 文字列値を指定します。 例として、以下のようなものがあります:
-
-````powershell
-Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{DefaultSharingScope=""}
-````
-
