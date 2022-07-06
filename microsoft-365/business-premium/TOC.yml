@@ -106,6 +106,8 @@
   items:
     - name: 概要
       href: m365bp-maintain-environment.md
+    - name: セキュリティ運用ガイド
+      href: m365bp-security-incident-quick-start.md
     - name: ユーザーの削除
       href: ../admin/add-users/remove-former-employee.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
     - name: ユーザーの追加
@@ -116,7 +118,7 @@
       href: m365bp-remove-company-data.md
     - name: デバイスを工場出荷時の設定にリセットする
       href: m365bp-reset-devices-to-factory-settings.md
-- name: 参照
+- name: Reference
   items:
     - name: 用語集
       href: m365bp-glossary.yml

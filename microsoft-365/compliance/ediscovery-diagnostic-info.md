@@ -17,18 +17,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: Microsoft サポート ケースの電子情報開示診断情報を収集する方法について説明します。
-ms.openlocfilehash: f5dba88a598a73441c67e3eaa08a59b7258ea712
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 46c85e822daf82cc88e6bf89ceea97dede3e2276
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014434"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641814"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>電子情報開示の診断情報を収集する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (Standard) または Microsoft Purview 電子情報開示 (プレミアム) に関連するサポート ケースを開くときに、Microsoft サポートエンジニアが問題に関する特定の情報を必要とする場合があります。 この記事では、エンジニアが問題を調査して解決するのに役立つ診断情報を収集する方法に関するガイダンスを提供します。 通常、Microsoft サポート エンジニアから要求されるまで、この情報を収集する必要はありません。
+Microsoft Purview eDiscovery (Standard) または Microsoft Purview eDiscovery (Premium) に関連するサポート ケースを開くときに、Microsoft サポートエンジニアが問題に関する特定の情報を必要とすることがあります。 この記事では、エンジニアが問題を調査して解決するのに役立つ診断情報を収集する方法に関するガイダンスを提供します。 通常、Microsoft サポート エンジニアから要求されるまで、この情報を収集する必要はありません。
 
 > [!IMPORTANT]
 > この記事で説明するコマンドレットと診断情報からの出力には、組織内の訴訟または内部調査に関する機密情報が含まれる場合があります。 未加工の診断情報をMicrosoft サポートに送信する前に、情報を確認し、機密情報 (訴訟または調査の当事者に関する名前やその他の情報など) を編集`XXXXXXX`する必要があります。 このメソッドを使用すると、Microsoft サポート エンジニアにも情報が編集されたことを示します。
@@ -42,7 +40,7 @@ Microsoft Purview 電子情報開示 (Standard) または Microsoft Purview 電�
 生成されたテキスト ファイルを確認し、機密情報を編集した後、ケースで作業しているMicrosoft サポート エンジニアに送信します。
 
 > [!NOTE]
-> このセクションのコマンドを実行して、Microsoft Purview コンプライアンス ポータルの **コンテンツ検索** ページに一覧表示されている検索とエクスポートの診断情報を収集することもできます。
+> このセクションのコマンドを実行して、Microsoft Purview コンプライアンス ポータルの **[コンテンツ検索**] ページに一覧表示されている検索とエクスポートの診断情報を収集することもできます。
 
 ### <a name="collect-information-about-searches"></a>検索に関する情報を収集する
 
@@ -76,19 +74,19 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 Get-ComplianceCase "<eDiscovery (Standard) case name>"| %{$_|fl;"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
 ```
 
-## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>電子情報開示の診断情報を収集する (プレミアム)
+## <a name="collect-diagnostic-information-for-ediscovery-premium"></a>電子情報開示の診断情報を収集する (Premium)
 
-電子情報開示 (**プレミアム**) ケースの [設定] タブでは、ケースの診断情報をすばやくコピーできます。 診断情報はクリップボードに保存されるため、テキスト ファイルに貼り付けてMicrosoft サポートに送信できます。
+電子情報開示 (Premium) ケースの **[設定]** タブでは、ケースの診断情報をすばやくコピーできます。 診断情報はクリップボードに保存されるため、テキスト ファイルに貼り付けてMicrosoft サポートに送信できます。
 
 1. コンプライアンス ポータルに移動し、 **電子情報開示** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2174006" target="_blank">**の詳細設定**</a>を選択します。
 
-2. ケースを選択し、[**設定**] タブをクリックします。
+2. ケースを選択し、[ **設定]** タブをクリックします。
 
 3. [ **ケース情報**] の [選択] をクリック **します**。
 
 4. ポップアップ ページで、[ **操作の** > **コピー] をクリックしてサポート情報** をクリップボードにコピーします。
 
-5. テキスト ファイル (メモ帳 で) を開き、テキスト ファイルに情報を貼り付けます。
+5. テキスト ファイル (メモ帳で) を開き、テキスト ファイルに情報を貼り付けます。
 
 6. テキスト ファイルを保存し、次のような`AeD Diagnostic Info YYYY.MM.DD`名前を付けます (たとえば)。 `AeD Diagnostic Info 2020.11.03`
 

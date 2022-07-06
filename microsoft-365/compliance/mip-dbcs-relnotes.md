@@ -1,5 +1,5 @@
 ---
-title: 2 バイト文字セットのリリース ノート向け Microsoft 365 コンプライアンス サポート
+title: 2 バイト文字セットのリリース ノート向け Microsoft Purview サポート
 ms.author: chrfox
 author: chrfox
 manager: laurawi
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 2 バイト文字セットをサポートするためのリリース ノートです。
-ms.openlocfilehash: 2de0e67c78ac558f4bdc2648790e49fad86e3178
-ms.sourcegitcommit: 33bc25167812b31c51cf096c728e3a5854e94f1c
+ms.openlocfilehash: 593e1db04c5e4dc56bc4cc1a7fd11d907d4fe09d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/01/2022
-ms.locfileid: "64595061"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622427"
 ---
 # <a name="support-for-double-byte-character-set-release-notes"></a>2 バイト文字セットのリリース ノート向けサポート
 
@@ -30,7 +30,7 @@ ms.locfileid: "64595061"
 - 韓国語
 - 日本語
 
-このサポートは、機密情報の種類とキーワード ディクショナリで使用でき、データ損失防止 (Exchange Online、SharePoint Online、OneDrive for Business、および Teams 用)、 コミュニケーション コンプライアンス、Office アプリの自動ラベル付け、および Microsoft Defender for Cloud Apps に反映されます。
+このサポートは、機密情報の種類とキーワード ディクショナリで使用でき、Microsoft Purview データ損失防止 (Exchange Online、SharePoint Online、OneDrive for Business、および Teams 用)、 コミュニケーション コンプライアンス、Office アプリの自動ラベル付け、および Microsoft Defender for Cloud Apps に反映されます。
 
 ## <a name="known-issues"></a>既知の問題
 

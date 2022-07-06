@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 コンプライアンスのためのアーカイブ メールボックスの詳細
+title: Microsoft Purview のためのアーカイブ メールボックスの詳細
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -15,16 +15,16 @@ ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 description: 追加のメールボックス容量を提供するアーカイブ メールボックスについて説明します。
-ms.openlocfilehash: a863df7be1b73d6a50d818bca5948f3017e3d373
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: 57de7c7791615e8587222de992588f1923348059
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62242190"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621251"
 ---
 # <a name="learn-about-archive-mailboxes"></a>アーカイブ メールボックスの詳細
 
-Microsoft 365 でのメールボックスのアーカイブ (*インプレース アーカイブ* とも呼ばれます) では、追加のメールボックスの記憶域がユーザーに提供されます。 アーカイブ メールボックスをオンにすると、ユーザーの現在のメールボックスが *プライマリ メールボックス* になり、*アーカイブ メールボックス* と呼ばれる追加のメールボックスが作成されます。 どちらのメールボックスも、Microsoft 365 コンプライアンス センターからのコンテンツ検索、Microsoft 365 データ保持、訴訟ホールドなどのコンプライアンス機能に関するユーザーのメールボックスとみなされます。
+Microsoft 365 でのメールボックスのアーカイブ (*インプレース アーカイブ* とも呼ばれます) では、追加のメールボックスの記憶域がユーザーに提供されます。 アーカイブ メールボックスをオンにすると、ユーザーの現在のメールボックスが *プライマリ メールボックス* になり、*アーカイブ メールボックス* と呼ばれる追加のメールボックスが作成されます。 どちらのメールボックスも、Microsoft Purview コンプライアンス ポータルからのコンテンツ検索、Microsoft 365 データ保持、訴訟ホールドなどのコンプライアンス機能に関するユーザーのメールボックスとみなされます。
 
 ユーザーは、Outlook と Outlook on the web を使用してアーカイブ メールボックスにアクセスし、メッセージを保存できます。 ユーザーは、自分のプライマリ メールボックスとアーカイブ メールボックスの間でメッセージを移動したりコピーしたりもできます。 ユーザーはまた、削除済みアイテムの復元ツールを使用して、アーカイブ メールボックスの [回復可能なアイテム] フォルダーから削除済みのアイテムを復元できます。
 
@@ -39,7 +39,7 @@ Microsoft 365 でのメールボックスのアーカイブ (*インプレース
 [保持タグ](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies)を使用して組織の MRM ポリシー をカスタマイズできます。 構成例については、「[組織のメールボックスのアーカイブと削除ポリシーを設定する](set-up-an-archive-and-deletion-policy-for-mailboxes.md)」を参照してください。
 
 > [!NOTE]
-> MRM は、Microsoft 365 のアイテム保持ポリシーや保持ラベルと同様に、指定した期間を経過したメールを自動的に削除することもできます。 Microsoft 365 保持よりも古いテクノロジとして、MRM は Microsoft 365 コンプライアンスのアイテム保持ポリシーや保持ラベルと並行して動作し続けます。 詳細については、「[以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用する](retention.md#use-retention-policies-and-retention-labels-instead-of-older-features)」を参照してください。
+> MRM は、Microsoft 365 のアイテム保持ポリシーや保持ラベルと同様に、指定した期間を経過したメールを自動的に削除することもできます。 Microsoft 365 保持よりも古いテクノロジとして、MRM は Microsoft Purview のアイテム保持ポリシーや保持ラベルと並行して動作し続けます。 詳細については、「[以前の機能の代わりにアイテム保持ポリシーと保持ラベルを使用する](retention.md#use-retention-policies-and-retention-labels-instead-of-older-features)」を参照してください。
 
 ## <a name="auto-expanding-archiving"></a>自動拡張アーカイブ 
 
@@ -51,4 +51,4 @@ Microsoft 365 でのメールボックスのアーカイブ (*インプレース
 
 ## <a name="next-steps"></a>次の手順
 
-詳細については、「[セキュリティ/コンプライアンス センターでアーカイブ メールボックスを有効にする](enable-archive-mailboxes.md)」を参照してください。
+「[Microsoft Purview コンプライアンス ポータルでアーカイブ メールボックスを有効にする](enable-archive-mailboxes.md)」を参照してください。

@@ -20,20 +20,18 @@ ms.custom:
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
 description: レガシ ファイルを組織の Office 365 メッセージ暗号化 (OME) に移行する方法について説明します。
-ms.openlocfilehash: 2d994e2c521f11a70c6946e2f1a9a3a1a5766ba3
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b34ccbcf077238ba3caee9da3b337cd0d32cf458
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014908"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642527"
 ---
 # <a name="legacy-information-for-office-365-message-encryption"></a>Office 365 Message Encryption の古い情報
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+まだ組織をMicrosoft Purview Message Encryptionに移行していないが、既に OME を展開している場合は、この記事の情報が組織に適用されます。 組織にとって妥当な場合は、すぐにMicrosoft Purview Message Encryptionに移行する計画を立てるようお勧めします。 手順については、「[Microsoft Purview Message Encryptionのセットアップ](set-up-new-message-encryption-capabilities.md)」を参照してください。 新しいメッセージ暗号化の最初の方法の詳細については、メッセージの暗号化に関する [ページを](ome.md)参照してください。 この記事の残りの部分では、Microsoft Purview Message Encryptionのリリース前の OME 動作について説明します。
 
-組織を Microsoft Purview Message Encryption にまだ移行していないが、既に OME を展開している場合は、この記事の情報が組織に適用されます。 Microsoft では、組織にとって妥当な場合は、すぐに Microsoft Purview Message Encryption に移行する計画を立てるようお勧めします。 手順については、「 [Microsoft Purview メッセージ暗号化の設定](set-up-new-message-encryption-capabilities.md)」を参照してください。 新しいメッセージ暗号化の最初の方法の詳細については、メッセージの暗号化に関する [ページを](ome.md)参照してください。 この記事の残りの部分では、Microsoft Purview メッセージ暗号化のリリース前の OME 動作について説明します。
-
-Office 365 Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。 Office 365 Message Encryption は、Outlook.com、Yahoo、Gmail、およびその他のメール サービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
+Office 365 Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。 Office 365 メッセージ暗号化は、Outlook.com、Yahoo、Gmail、およびその他の電子メール サービスで機能します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
 
 次に、いくつかの例を示します:
 
@@ -47,31 +45,31 @@ Office 365 Message Encryption を使用すると、組織は組織内外のユ�
 
 Office 365 メッセージ暗号化は、Microsoft Azure Rights Management (Azure RMS) 上に構築されたオンライン サービスです。 Azure RMS を使用すると、管理者はメール フロー ルールを定義して、暗号化の条件を決定できます。 たとえば、ルールでは、特定の受信者宛てのすべてのメッセージの暗号化を要求できます。
 
-暗号化規則に一致する電子メール メッセージをExchange Onlineで送信すると、メッセージは HTML 添付ファイルで送信されます。 受信者が HTML 添付ファイルを開き、指示に従って、Office 365 メッセージ暗号化ポータルで暗号化されたメッセージを表示します。 受信者は、Microsoft アカウントまたはOffice 365に関連付けられている職場または学校でサインインするか、1 回限りのパス コードを使用してメッセージを表示するかを選択できます。 どちらのオプションも、指定された受信者のみが暗号化されたメッセージを表示できるようにするために役立ちます。 このプロセスは、Microsoft Purview メッセージ暗号化では大きく異なります。
+暗号化規則に一致する電子メール メッセージをExchange Onlineで送信すると、メッセージは HTML 添付ファイルで送信されます。 受信者が HTML 添付ファイルを開き、指示に従って、Office 365 メッセージ暗号化ポータルで暗号化されたメッセージを表示します。 受信者は、Microsoft アカウントまたはOffice 365に関連付けられている職場または学校でサインインするか、1 回限りのパス コードを使用してメッセージを表示するかを選択できます。 どちらのオプションも、指定された受信者のみが暗号化されたメッセージを表示できるようにするために役立ちます。 このプロセスは、Microsoft Purview Message Encryptionでは大きく異なります。
 
 下の図は、暗号化と復号化のプロセスにおける電子メール メッセージの流れをまとめたものです。
 
 ![暗号化された電子メールのパスを示す図。](../media/O365-Office365MessageEncryption-Concept.png)
 
-詳細については、[Microsoft Purview メッセージ暗号化のリリース前のレガシ Office 365 メッセージ暗号化のサービス情報に関するページを参照](legacy-information-for-message-encryption.md#LegacyServiceInfo)してください。
+詳細については、[Microsoft Purview Message Encryptionのリリース前のレガシ Office 365 メッセージ暗号化のサービス情報を](legacy-information-for-message-encryption.md#LegacyServiceInfo)参照してください。
 
-## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption"></a>Microsoft Purview メッセージ暗号化を使用しないOffice 365 メッセージ暗号化のメール フロー ルールを定義する
+## <a name="defining-mail-flow-rules-for-office-365-message-encryption-that-dont-use-microsoft-purview-message-encryption"></a>Microsoft Purview Message Encryptionを使用しないOffice 365 メッセージ暗号化のメール フロー ルールを定義する
 
-新しい機能なしでOffice 365メッセージ暗号化を有効にするには、Exchange Online管理者とExchange Online Protection管理者がメール フロー ルールExchange定義します。 これらのルールは、電子メール メッセージを暗号化する条件と、メッセージの暗号化を削除するための条件を決定します。 ルールに対して暗号化アクションが設定されている場合、サービスは、メッセージを送信する前に、ルールの条件に一致するすべてのメッセージに対してアクションを実行します。
+新しい機能を使用せずにOffice 365メッセージ暗号化を有効にするには、Exchange Online管理者とExchange Online Protection管理者が Exchange メール フロー ルールを定義します。 これらのルールは、電子メール メッセージを暗号化する条件と、メッセージの暗号化を削除するための条件を決定します。 ルールに対して暗号化アクションが設定されている場合、サービスは、メッセージを送信する前に、ルールの条件に一致するすべてのメッセージに対してアクションを実行します。
 
 メール フロー ルールは柔軟であるため条件を組み合わせることができ、1 つのルールで特定のセキュリティ要件を満たすことができます。 たとえば、指定したキーワードを含み、外部の受信者に宛てられたすべてのメッセージを暗号化するルールを作成できます。 Office 365 メッセージ暗号化では、暗号化された電子メールの受信者からの返信も暗号化され、メール ユーザーの利便性としてそれらの返信を復号化するルールを作成できます。 そうすれば、組織内のユーザーは、返信を表示するために暗号化ポータルにサインインする必要はありません。
 
-Exchangeメール フロー ルールを作成する方法の詳細については、「[メッセージ暗号化Office 365ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
+Exchange メール フロー ルールを作成する方法の詳細については、「[メッセージ暗号化Office 365ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
-### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-microsoft-purview-message-encryption"></a>EAC を使用して、Microsoft Purview メッセージ暗号化を使用せずに電子メール メッセージを暗号化するためのメール フロー ルールを作成する
+### <a name="use-the-eac-to-create-a-mail-flow-rule-for-encrypting-email-messages-without-microsoft-purview-message-encryption"></a>EAC を使用して、Microsoft Purview Message Encryptionなしで電子メール メッセージを暗号化するためのメール フロー ルールを作成する
 
 1. Web ブラウザーで、グローバル管理者のアクセス許可が付与されている職場または学校アカウントを使用して、[Office 365にサインインします](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
 
-2. **[管理者**] タイルを選択します。
+2. **管理** タイルを選択します。
 
-3. Microsoft 365 管理センターで、[**管理センター**\>] <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>を選択します。
+3. Microsoft 365 管理センターで、[**管理 センター** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>] を選択します。
 
-4. EAC の [**メール フロー** \> **ルール**] に移動し、[**新しい新規**![] アイコンを選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、[Exchange Onlineの管理センター Exchange](/exchange/exchange-admin-center)参照してください。
+4. EAC の [**メール フロー** \> **ルール**] に移動し、[**新しい新規**![] アイコンを選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、[Exchange Onlineの Exchange 管理センターに関するページを](/exchange/exchange-admin-center)参照してください。
 
 5. **[名前]** に、ルールの名前 ([DrToniRamos@hotmail.com のメールを暗号化する] など) を入力します。
 
@@ -115,19 +113,19 @@ Exchangeメール フロー ルールを作成する方法の詳細について�
 
    詳細な構文とパラメーターについては、「[New-TransportRule](/powershell/module/exchange/New-TransportRule)」を参照してください。
 
-### <a name="remove-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>Microsoft Purview Message Encryption を使用せずに暗号化された電子メール返信から暗号化を削除する
+### <a name="remove-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>Microsoft Purview Message Encryptionなしで暗号化された電子メール返信から暗号化を削除する
 
 電子メール ユーザーが暗号化メッセージを送信した場合、これらのメッセージの受信者は、暗号化された返信で応答することができます。 メール フロー ルールを作成すると、組織内のメール ユーザーが暗号化ポータルにサインインして表示する必要がないように、返信から暗号化を自動的に削除できます。 EAC コマンドレットまたはExchange Online PowerShell コマンドレットを使用して、これらの規則を定義できます。 組織内から送信されたメッセージや、組織内から送信されたメッセージに対する返信メッセージを復号化できます。 組織の外部から送信された暗号化されたメッセージの暗号化を解除することはできません。
 
-#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>EAC を使用して、Microsoft Purview Message Encryption を使用せずに暗号化された電子メール返信から暗号化を削除するルールを作成する
+#### <a name="use-the-eac-to-create-a-rule-for-removing-encryption-from-email-replies-encrypted-without-microsoft-purview-message-encryption"></a>EAC を使用して、Microsoft Purview Message Encryptionせずに暗号化された電子メール返信から暗号化を削除するルールを作成します。
 
 1. Web ブラウザーで、管理者アクセス許可が付与されている職場または学校アカウントを使用[して、Office 365にサインインします](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)。
 
-2. **[管理者**] タイルを選択します。
+2. **管理** タイルを選択します。
 
-3. Microsoft 365 管理センターで、[**管理センター**\>] <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>を選択します。
+3. Microsoft 365 管理センターで、[**管理 センター** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">**Exchange**</a>] を選択します。
 
-4. EAC の [**メール フロー** \> **ルール**] に移動し、[**新しい新規**![] アイコンを選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、[Exchange Onlineの管理センター Exchange](/exchange/exchange-admin-center)参照してください。
+4. EAC の [**メール フロー** \> **ルール**] に移動し、[**新しい新規**![] アイコンを選択します。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \>**新しいルールを作成します**。 EAC の使用の詳細については、[Exchange Onlineの Exchange 管理センターに関するページを](/exchange/exchange-admin-center)参照してください。
 
 5. **[名前]** に、受信メールからの暗号化の削除など、ルールの名前を入力します。
 
@@ -213,7 +211,7 @@ Exchange OnlineおよびExchange Online Protection管理者は、暗号化され
 ## <a name="service-information-for-legacy-office-365-message-encryption-prior-to-the-release-of-the-new-ome-capabilities"></a>新しい OME 機能のリリース前のレガシ Office 365 メッセージ暗号化のサービス情報
 <a name="LegacyServiceInfo"> </a>
 
-次の表は、Microsoft Purview Message Encryption のリリース前のOffice 365 メッセージ暗号化サービスの技術的な詳細を示しています。
+次の表に、Microsoft Purview Message Encryption のリリース前のOffice 365 メッセージ暗号化サービスの技術的な詳細を示します。
 
 |サービスの詳細情報|説明|
 |---|---|
@@ -222,23 +220,23 @@ Exchange OnlineおよびExchange Online Protection管理者は、暗号化され
 |サポートされているメッセージの種類|Office 365 Message Encryption は、**IPM.Note** のメッセージ クラス ID があるアイテムでのみサポートされます。 詳細については、「 [アイテムの種類とメッセージ クラス」を](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes)参照してください。|
 |メッセージ サイズの制限|Office 365 Message Encryption は、25 メガバイトまでのメッセージを暗号化できます。 メッセージ サイズの制限の詳細については、「[Exchange Online制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)」を参照してください。|
 |Exchange Online電子メールアイテム保持ポリシー|Exchange Onlineは、暗号化されたメッセージを格納しません。|
-|Office 365 Message Encryption の言語サポート|Office 365 メッセージ暗号化では、次のようにMicrosoft 365言語がサポートされます。 <p> 受信電子メール メッセージと添付 HTML ファイルは、送信者の言語設定に基づいてローカライズされます。 <p> 表示するためのポータルは、受信者のブラウザーの設定に基づいてローカライズされます。 <p> 暗号化されたメッセージの本文 (コンテンツ) は、ローカライズされません。|
+|Office 365 Message Encryption の言語サポート|Office 365 メッセージ暗号化では、次のように Microsoft 365 言語がサポートされます。 <p> 受信電子メール メッセージと添付 HTML ファイルは、送信者の言語設定に基づいてローカライズされます。 <p> 表示するためのポータルは、受信者のブラウザーの設定に基づいてローカライズされます。 <p> 暗号化されたメッセージの本文 (コンテンツ) は、ローカライズされません。|
 |OME ポータルと OME Viewer アプリの個人情報|[Office 365 Messaging Encryption Portal privacy statement](https://privacy.microsoft.com/privacystatement) には、お客様の個人情報を使用して Microsoft が行うことと行わないことについて詳しく記されています。|
 
 ## <a name="frequently-asked-questions-about-legacy-ome"></a>レガシ OME に関するよく寄せられる質問
 <a name="LegacyServiceInfo"> </a>
 
-メッセージ暗号化のOffice 365に関する質問がありますか? いくつかの回答を次に示します。 必要なものが見つからない場合は、[Microsoft Tech Community フォーラムでOffice 365を](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)確認してください。
+メッセージ暗号化のOffice 365に関する質問がありますか? いくつかの回答を次に示します。 必要なものが見つからない場合は、[Office 365のMicrosoft Tech Community フォーラムを](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)確認してください。
 
  **Q。ユーザーは、組織外の受信者に暗号化された電子メール メッセージを送信します。Office 365 メッセージ暗号化で暗号化された電子メール メッセージの読み取りと返信を行うために、外部受信者が行う必要があることはありますか?**
 
-暗号化されたメッセージを受信Microsoft 365組織外の受信者は、次の 2 つの方法のいずれかで受信者を表示できます。
+Microsoft 365 で暗号化されたメッセージを受信する組織外の受信者は、次の 2 つの方法のいずれかでメッセージを表示できます。
 
 - Office 365に関連付けられている Microsoft アカウントまたは職場または学校のアカウントでサインインします。
 
 - ワンタイム パス コードを使用します。
 
- **Q。Microsoft 365暗号化されたメッセージは、クラウドまたは Microsoft サーバーに格納されますか?**
+ **Q。Microsoft 365 の暗号化されたメッセージは、クラウドまたは Microsoft サーバーに格納されますか?**
 
 いいえ。暗号化されたメッセージは受信者の電子メール システムに保持され、受信者がメッセージを開くと、Microsoft サーバーで表示するために一時的に投稿されます。 メッセージはそこに保存されません。
 
@@ -254,7 +252,7 @@ Exchange OnlineおよびExchange Online Protection管理者は、暗号化され
 
 いいえ。外部の受信者は、暗号化されたメッセージを読んで返信するためにサブスクリプションを必要としません。
 
- **Q。Office 365 メッセージ暗号化は、Rights Management Services (RMS) とどのように異なりますか?**
+ **Q。Office 365 メッセージ暗号化と Rights Management Services (RMS) の違いは何ですか?**
 
 RMS は、次のような組み込みのテンプレートを提供することで、組織の内部電子メールに対して Information Rights Protection 機能を提供します。たとえば、転送しない、会社の社外秘です。 Office 365 メッセージ暗号化では、外部受信者と内部受信者に送信されるメッセージの電子メール メッセージ暗号化がサポートされます。
 
@@ -264,7 +262,7 @@ S/MIME は、基本的に、クライアント側の暗号化テクノロジで�
 
  **Q. モバイル デバイスで暗号化されたメッセージを読むことはできますか。**
 
-はい。Google Play ストアと Apple App Store から OME ビューアー アプリをダウンロードすると、AndroidとiOSでメッセージを表示できます。 OME Viewer アプリの HTML 添付ファイルを開いてから、指示に従って暗号化されたメッセージを開きます。 その他のモバイル デバイスでは、メール クライアントが投稿フォームをサポートしている限り HTML 添付ファイルを開くことができます。
+はい。Android と iOS でメッセージを表示するには、Google Play ストアと Apple App Store から OME ビューアー アプリをダウンロードします。 OME Viewer アプリの HTML 添付ファイルを開いてから、指示に従って暗号化されたメッセージを開きます。 その他のモバイル デバイスでは、メール クライアントが投稿フォームをサポートしている限り HTML 添付ファイルを開くことができます。
 
  **Q. 返信や転送されたメッセージは暗号化されますか。**
 
@@ -288,15 +286,15 @@ Office 365 メッセージ暗号化では、Rights Management Services (RMS) が
 
 暗号化された返信が暗号ポータルから、または OME ビューアー アプリを介して送信されるとき、送信元電子メール アドレスは Office365@messaging.microsoft.com に設定されます。暗号化メッセージは Microsoft エンドポイントを介して送信されるためです。これにより、暗号化されたメッセージがスパムとしてマークされるのを回避できます。このラベルがあるため、暗号化ポータル内の電子メールとアドレスの表示名が変更されることはありません。また、このラベルが適用されるのは、ポータルを介して送信されるメッセージだけで、他の電子メール クライアントを介して送信されるメッセージには適用されません。
 
- **Q。ホストされた暗号化 (EHE) サブスクライバー Exchangeしています。Office 365 メッセージ暗号化へのアップグレードの詳細については、どこで確認できますか?**
+ **Q。Exchange Hosted Encryption (EHE) サブスクライバーです。Office 365 メッセージ暗号化へのアップグレードの詳細については、どこで確認できますか?**
 
-EHE のすべてのお客様は、Office 365 Message Encryption にアップグレードされました。 詳細については、[ホスト型暗号化アップグレード センター Exchange](../security/office-365-security/exchange-online-protection-overview.md)を参照してください。
+EHE のすべてのお客様は、Office 365 Message Encryption にアップグレードされました。 詳細については、 [Exchange Hosted Encryption アップグレード センターを参照してください](../security/office-365-security/exchange-online-protection-overview.md)。
 
  **Q。メッセージ暗号化をサポートするために、組織のファイアウォールで URL、IP アドレス、またはポート Office 365を開く必要がありますか?**
 
 はい。 Office 365 Message Encryption によって暗号化されたメッセージの認証を有効にするには、ご自分の組織の許可リストに Exchange Online の URL を追加する必要があります。 Exchange Online URL の一覧については、「[Microsoft 365 URL と IP アドレス範囲」を](../enterprise/urls-and-ip-address-ranges.md)参照してください。
 
- **Q。Microsoft 365暗号化されたメッセージを送信できる受信者の数を教えてください。**
+ **Q。Microsoft 365 で暗号化されたメッセージを送信できる受信者の数はどれくらいですか?**
 
 受信者の制限は、メッセージあたり 500 人の受信者、または配布リストの展開後に組み合わせると、メッセージの **[宛先** ] フィールドの 11,980 文字のいずれか先になります。
 
@@ -306,7 +304,7 @@ EHE のすべてのお客様は、Office 365 Message Encryption にアップグ�
 
  **Q. 受信されて既読になった暗号化メッセージのレポートを表示することはできますか。**
 
-暗号化されたメッセージが表示されたかどうかを示すレポートはありませんが、たとえば、特定のメール フロー ルール (トランスポート ルールとも呼ばれます) に一致したメッセージの数を決定するために利用できるレポートMicrosoft 365があります。
+暗号化されたメッセージが表示されたかどうかを示すレポートはありませんが、Microsoft 365 レポートを利用して、特定のメール フロー ルール (トランスポート ルールとも呼ばれます) に一致したメッセージの数を決定できます。
 
  **Q. OME ポータルと OME Viewer アプリで提供した情報を Microsoft はどのように使用しますか。**
 

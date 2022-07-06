@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示で予測コーディング モデルをトレーニングする (プレミアム)
+title: 電子情報開示 (Premium) で予測コーディング モデルをトレーニングする
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,31 +13,29 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: ''
-ms.openlocfilehash: 1f94f49f93310ea4b40d588c7c43ecce7ec535cc
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 予測コーディングのための最初のトレーニング ラウンドの実行について説明します。
+ms.openlocfilehash: 509e47372655691130be9a4621c973b5e6575f80
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091459"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642352"
 ---
 # <a name="train-a-predictive-coding-model-preview"></a>予測コーディング モデルをトレーニングする (プレビュー)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Microsoft Purview eDiscovery (Premium) で予測コーディング モデルを作成した後、次の手順では、最初のトレーニング ラウンドを実行して、レビュー セット内の関連性と関連性のないコンテンツについてモデルをトレーニングします。 トレーニングの最初のラウンドを完了したら、後続のトレーニング ラウンドを実行して、関連するコンテンツと関連性のないコンテンツを予測するモデルの能力を向上させることができます。
 
-Microsoft Purview 電子情報開示 (プレミアム) で予測コーディング モデルを作成した後、次の手順では、最初のトレーニング ラウンドを実行して、レビュー セット内の関連性と関連性のないコンテンツに関するモデルをトレーニングします。 トレーニングの最初のラウンドを完了したら、後続のトレーニング ラウンドを実行して、関連するコンテンツと関連性のないコンテンツを予測するモデルの能力を向上させることができます。
-
-予測コーディング ワークフローを確認するには、「[電子情報開示での予測コーディングの詳細 (プレミアム)](predictive-coding-overview.md#the-predictive-coding-workflow)」を参照してください。
+予測コーディング ワークフローを確認するには、「[電子情報開示での予測コーディングの詳細 (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)」を参照してください。
 
 ## <a name="before-you-train-a-model"></a>モデルをトレーニングする前に
 
-- トレーニング ラウンド中に、ドキュメント内のコンテンツの関連性に基づいて、アイテムに **[関連性** ] または **[関連なし** ] というラベルを付けます。 メタデータ フィールドの値に基づいて決定しないでください。 たとえば、電子メール メッセージやTeams会話の場合は、メッセージ参加者に基づいてラベル付けの決定を行わないでください。
+- トレーニング ラウンド中に、ドキュメント内のコンテンツの関連性に基づいて、アイテムに **[関連性** ] または **[関連なし** ] というラベルを付けます。 メタデータ フィールドの値に基づいて決定しないでください。 たとえば、電子メール メッセージや Teams 会話の場合は、メッセージ参加者に基づいてラベル付けの決定を行わないでください。
 
 ## <a name="train-a-model-for-the-first-time"></a>モデルを初めてトレーニングする
 
-1. Microsoft Purview コンプライアンス ポータルで、電子情報開示 (プレミアム) ケースを開き、[**校閲セット**] タブを選択します。
+1. Microsoft Purview コンプライアンス ポータルで、電子情報開示 (Premium) ケースを開き、[**校閲セット**] タブを選択します。
 
-2. レビュー セットを開き、**AnalyticsManage** >  **予測コーディング (プレビュー)** をクリックします。
+2. レビュー セットを開き、 **Analytics** > **[予測コーディングの管理 (プレビュー)]** をクリックします。
 
 3. [ **予測コーディング モデル (プレビュー)]** ページで、トレーニングするモデルを選択します。
 
@@ -73,7 +71,7 @@ Microsoft Purview 電子情報開示 (プレミアム) で予測コーディン�
 
   ****
 
-  |Label|モデルはアイテムが関連すると予測します|モデルはアイテムが関連しないと予測します|
+  |ラベル|モデルはアイテムが関連すると予測します|モデルはアイテムが関連しないと予測します|
   |---|---|---|
   |**レビュー担当者ラベルアイテムを関連項目として表示する**|真陽性|誤検知|
   |**レビュー担当者ラベルアイテムが関連しない**|False negative|真の負の値|

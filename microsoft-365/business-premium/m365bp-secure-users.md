@@ -10,9 +10,6 @@ ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
@@ -24,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium の生産性とセキュリティを活用してビジネスを支援する方法について説明します。
-ms.openlocfilehash: 851abcfc2e7d6b55c4c6d201132dabafc56a898e
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: c8620bd687e297151fd6ccabac7f8d01a66457ad
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574158"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631752"
 ---
-# <a name="how-microsoft-365-security-recommendations-affect-your-users"></a>Microsoft 365セキュリティに関する推奨事項がユーザーに与える影響
+# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premium がビジネスにどのように役立つか
 
-Microsoft 365 Business Premium は、中小企業が以前よりも効率的かつ安全に作業できるようにする、コスト効率の高いソリューションです。 この記事では、Microsoft 365 Business Premium がビジネスにどのように役立つかについて説明しており、次のようなセクションがあります:
+Microsoft 365 Business Premium は、中小企業が以前よりも効率的かつ安全に作業できるようにする、コスト効率の高いソリューションです。 この記事では、Microsoft 365 Business Premium がビジネスまたはキャンペーンにどのように役立つかについて説明します。 この記事に含まれるセクションは次のとおりです。
 
 - [ビデオ: Microsoft 365 Business Premium の 5 つの主な利点。](#video-top-5-benefits-of-microsoft-365-business-premium)
 - [生産性と高度なセキュリティ機能](#productivity-and-security)を使用すると、デバイス間で、またどこからでもビジネスをより安全に実行できます
@@ -87,6 +84,8 @@ Microsoft 365 Business Premium には、お気に入りの Office 生産性ア�
 
 ## <a name="next-steps"></a>次の手順
 
-1. [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) または [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md)。
+1. [Microsoft 365 Business Premium](get-microsoft-365-business-premium.md) または [Microsoft 365 for Campaigns](get-microsoft-365-campaigns.md) のいずれかを取得します。
 
 2. [セットアップ プロセスを再開してください](m365bp-setup-overview.md)。
+
+3. [セキュリティを強化します](m365bp-security-overview.md)。

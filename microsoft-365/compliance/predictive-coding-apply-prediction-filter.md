@@ -14,18 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 予測スコア フィルターを使用して、予測コーディング モデルが関連性として予測された項目または関連性のない項目を表示します。
-ms.openlocfilehash: 64abac8b9f53baa9afb869d77296089544919fea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 7a05b85fa81396da2c9d66eddb68b542b7eb8eba
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096614"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642406"
 ---
 # <a name="apply-a-prediction-score-filter-to-a-review-set-preview"></a>レビュー セットに予測スコア フィルターを適用する (プレビュー)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (プレミアム) で予測コーディング モデルを作成し、それが安定しているポイントまでトレーニングした後、予測スコア フィルターを適用して、モデルが関連すると判断したレビュー セットアイテム (または関連なし) を表示できます。 モデルを作成すると、対応する予測スコア フィルターも作成されます。 このフィルターを使用すると、指定した範囲内で予測スコアが割り当てられた項目を表示できます。 一般に、 **0** から **.5** の間の予測スコアは、モデルが予測した項目に割り当てられます。 **.5** から **1.0** の間で予測スコアが割り当てられた項目は、モデルが予測した項目が関連します。
+Microsoft Purview eDiscovery (Premium) で予測コーディング モデルを作成し、それが安定しているポイントまでトレーニングした後、予測スコア フィルターを適用して、モデルが関連すると判断したレビュー セット アイテム (または関連なし) を表示できます。 モデルを作成すると、対応する予測スコア フィルターも作成されます。 このフィルターを使用すると、指定した範囲内で予測スコアが割り当てられた項目を表示できます。 一般に、 **0** から **.5** の間の予測スコアは、モデルが予測した項目に割り当てられます。 **.5** から **1.0** の間で予測スコアが割り当てられた項目は、モデルが予測した項目が関連します。
 
 予測スコア フィルターを使用するには、次の 2 つの方法があります。
 
@@ -41,7 +39,7 @@ Microsoft Purview 電子情報開示 (プレミアム) で予測コーディン�
 
 ## <a name="apply-a-prediction-score-filter"></a>予測スコア フィルターを適用する
 
-1. Microsoft Purview コンプライアンス ポータルで、電子情報開示 (プレミアム) ケースを開き、[**校閲セット**] タブを選択して、レビュー セットを開きます。
+1. Microsoft Purview コンプライアンス ポータルで、電子情報開示 (Premium) ケースを開き、[**校閲セット**] タブを選択して、レビュー セットを開きます。
 
    ![[フィルター] をクリックして 、[フィルター] ポップアップ ページを表示します。](..\media\PredictionScoreFilter0.png)   
 

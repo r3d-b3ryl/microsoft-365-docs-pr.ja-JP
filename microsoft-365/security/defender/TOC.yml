@@ -4,8 +4,10 @@
   items:
     - name: 概要
       items:
-        - name: Microsoft 365 Defender
+        - name: Microsoft 365 Defender とは
           href: microsoft-365-defender.md
+        - name: Microsoft 365 Defender ポータル
+          href: microsoft-365-defender-portal.md
         - name: Microsoft 365 Defender の新機能
           href: whats-new.md
         - name: Microsoft 365 Defender サービス

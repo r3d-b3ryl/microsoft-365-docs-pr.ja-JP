@@ -9,33 +9,31 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Microsoft Purview コンプライアンス ポータルの内容、取得方法、次の手順などについて説明します。
+description: 含まれるもの、それを取得する方法、次の手順など、Microsoft Purview コンプライアンス ポータルについて説明します。
 ms.collection: M365-security-compliance
 ms.custom:
 - admindeeplinkCOMPLIANCE
 - intro-overview
-ms.openlocfilehash: 504c5426ccbf2322cc7803fda1b5f396a5cf935c
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: 45bca9fa0cfe3867d97065be3cb84440dc6bc014
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64970783"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642484"
 ---
 # <a name="microsoft-purview-compliance-portal"></a>Microsoft Purview コンプライアンス ポータル
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-組織のコンプライアンス体制に関心がある場合は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>を気に入る必要があります。 Microsoft Purview コンプライアンス ポータルでは、組織のコンプライアンス ニーズに管理するために必要なデータとツールに簡単にアクセスできます。
+組織のコンプライアンス体制に関心がある場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>を気に入る必要があります。 Microsoft Purview コンプライアンス ポータルでは、組織のコンプライアンス ニーズに管理するために必要なデータとツールに簡単にアクセスできます。
 
 この記事を読んで、コンプライアンス ポータル、それに [アクセスする方法](#how-do-i-access-the-compliance-portal)、 [および次の手順](#next-steps)について説明します。
 
-[![Microsoft Purview コンプライアンス ポータルのホーム ページ。](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
+[![ホーム ページMicrosoft Purview コンプライアンス ポータル。](../media/m365-compliance-center-home.png)](https://compliance.microsoft.com)
 
 ## <a name="welcome-to-microsoft-purview"></a>Microsoft Purview へようこそ
 
 コンプライアンス ポータルに初めてアクセスすると、次のウェルカム メッセージが表示されます。
 
-![Microsoft Purview コンプライアンス ポータルの概要。](../media/m365-compliance-center-welcome-steps.png)
+![Microsoft Purview コンプライアンス ポータルイントロです。](../media/m365-compliance-center-welcome-steps.png)
 
 ウェルカム バナーには、次の手順で開始する方法に関するいくつかのポインターと、フィードバックをお寄せいただく招待が表示されます。
 
@@ -55,9 +53,9 @@ ms.locfileid: "64970783"
 
 - **アクティブなアラート** カードを確認します。このカードには、最も [アクティブなアラート](alert-policies.md)の概要が含まれ、重大度、状態、カテゴリなど、より詳細な情報を表示できるリンクが含まれています。
 
-    ![アクティブ アラート カード Microsoft Purview コンプライアンス ポータル。](../media/m365-compliance-center-active-alerts-card.png)
+    ![アクティブなアラート カードMicrosoft Purview コンプライアンス ポータル。](../media/m365-compliance-center-active-alerts-card.png)
 
-また、[**カードの追加]** 機能を使用して、組織のクラウド アプリのコンプライアンスを示すカードや、共有ファイルを持つユーザーに関するデータを表示するカードなど、[Defender for Cloud アプリ](/cloud-app-security/)やデータを探索できるその他のツールへのリンクを追加することもできます。
+また、[ **カードの追加]** 機能を使用して、組織のクラウド アプリコンプライアンスを示すカードや、共有ファイルを持つユーザーに関するデータを表示するカードなど、 [Defender for Cloud Apps](/cloud-app-security/) やデータを探索できるその他のツールへのリンクを追加することもできます。
 
 ![その他のコンプライアンス センター カードの詳細。](../media/m365-compliance-center-additional-cards.png)
 
@@ -71,7 +69,7 @@ ms.locfileid: "64970783"
 
 |ナビゲーション|コメント|
 |---|---|
-|![Microsoft Purview コンプライアンス ポータルでのナビゲーション。](../media/m365-compliance-center-leftnav.png)|[ **ホーム** ] を選択して、コンプライアンス ポータルのメイン ページに戻ります。 <p> **コンプライアンス マネージャー** にアクセスして、コンプライアンス スコアを確認し、組織の [コンプライアンスの管理を](compliance-manager.md)開始します。 <p> [ **データ分類** ] セクションを選択して、 [トレーニング可能な分類子](classifier-learn-about.md)、 [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)、コンテンツ、 [アクティビティ エクスプローラーに](data-classification-activity-explorer.md) アクセスします。 <p> **[データ コネクタ**] を選択して、Microsoft 365 サブスクリプション内のデータをインポートおよびアーカイブ [するようにコネクタを構成](archiving-third-party-data.md)します。 <p> アラートに移動して **アラート** を表示および解決 [する](alert-policies.md) <p>**レポート** にアクセスして、[ラベルの使用状況と保持](sensitivity-labels.md)、[DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](/cloud-app-security/file-filters)、[使用中のサード パーティ製アプリ](/cloud-app-security/discovered-apps)などのデータを表示します。 <p> **[ポリシー]** に移動して、データの管理、デバイスの管理、アラートの受信を行うポリシーを設定 [します](../security/office-365-security/alerts.md)。 [DLP](dlp-learn-about-dlp.md) ポリシーと[アイテム保持](retention.md)ポリシーにアクセスすることもできます。 <p> [ **アクセス許可]** を選択して、組織内でコンプライアンス ポータルにアクセスできるユーザーを管理し、コンテンツを表示し、タスクを完了します。 <p> [ **ソリューション** ] セクションのリンクを使用して、組織のコンプライアンス ソリューションにアクセスします。 これには、次のものが含まれます。 <p> [カタログ](microsoft-365-solution-catalog.md) <br> 組織で利用できるインテリジェントなコンプライアンスとリスク管理ソリューションを見つけて、学習し、使用を開始します。 <p> [監査](search-the-audit-log-in-security-and-compliance.md) <br> 監査ログを使用して、一般的なサポートとコンプライアンスの問題を調査します。 <p> [コンテンツ検索](search-for-content.md) <br> コンテンツ検索を使用すると、Exchange メールボックス内の電子メール、SharePoint サイトやOneDriveの場所のドキュメント、Microsoft TeamsとSkype for Businessでのインスタント メッセージングの会話をすばやく検索できます。 <p> [通信コンプライアンス](communication-compliance.md) <br> 不適切なメッセージを自動的にキャプチャし、ポリシー違反の可能性を調査し、修復する手順を実行することで、通信リスクを最小限に抑えます。 <p> [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md) <br> 機密性の高いコンテンツが組織全体、クラウド、デバイスで使用および共有されている状態を検出し、偶発的なデータ損失を防ぐのに役立ちます。 <p> [データ サブジェクト要求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> 一般データ保護規則 (GDPR) のデータ主体の要求に対応するために、ユーザーの個人データを検索してエクスポートします。 <p> [電子情報開示](overview-ediscovery-20.md) <br> このセクションを展開して、組織の内部および外部の調査に対応するコンテンツの保持、収集、レビュー、分析、エクスポートにコアと電子情報開示 (プレミアム) を使用します。 <p> [データ ライフサイクル管理](manage-data-governance.md) <br> 重要なデータをインポート、格納、分類する機能を使用して機密データのライフサイクルを管理し、必要なものを保持し、不要なものを削除できるようにします。 <p> [情報保護](information-protection.md) <br> 組織全体のライフサイクルを通じて、機密データとビジネスクリティカルなデータを検出、分類、保護します。 <p> [インサイダー リスク管理](insider-risk-management.md) <br> 組織全体で危険なアクティビティを検出し、インサイダーのリスクと脅威を迅速に特定し、調査し、アクションを実行できるようにします。 <p> [レコード管理](records-management.md) <br> ビジネス、法的、または規制上の記録保持要件に対する価値の高いアイテムの保持と削除を管理します。|
+|![Microsoft Purview コンプライアンス ポータルのナビゲーション。](../media/m365-compliance-center-leftnav.png)|[ **ホーム** ] を選択して、コンプライアンス ポータルのメイン ページに戻ります。 <p> **コンプライアンス マネージャー** にアクセスして、コンプライアンス スコアを確認し、組織の [コンプライアンスの管理を](compliance-manager.md)開始します。 <p> [ **データ分類** ] セクションを選択して、 [トレーニング可能な分類子](classifier-learn-about.md)、 [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md)、コンテンツ、 [アクティビティ エクスプローラーに](data-classification-activity-explorer.md) アクセスします。 <p> [ **データ コネクタ** ] を選択して、Microsoft 365 サブスクリプション内のデータをインポートおよびアーカイブ [するようにコネクタを構成](archiving-third-party-data.md) します。 <p> アラートに移動して **アラート** を表示および解決 [する](alert-policies.md) <p>**レポート** にアクセスして、[ラベルの使用状況と保持](sensitivity-labels.md)、[DLP ポリシーの一致とオーバーライド](view-the-dlp-reports.md)、[共有ファイル](/cloud-app-security/file-filters)、[使用中のサード パーティ製アプリ](/cloud-app-security/discovered-apps)などのデータを表示します。 <p> **[ポリシー]** に移動して、データの管理、デバイスの管理、アラートの受信を行うポリシーを設定 [します](../security/office-365-security/alerts.md)。 [DLP](dlp-learn-about-dlp.md) ポリシーと[アイテム保持](retention.md)ポリシーにアクセスすることもできます。 <p> [ **アクセス許可]** を選択して、組織内でコンプライアンス ポータルにアクセスできるユーザーを管理し、コンテンツを表示し、タスクを完了します。 <p> [ **ソリューション** ] セクションのリンクを使用して、組織のコンプライアンス ソリューションにアクセスします。 たとえば、次の環境です。: <p> [カタログ](microsoft-365-solution-catalog.md) <br> 組織で利用できるインテリジェントなコンプライアンスとリスク管理ソリューションを見つけて、学習し、使用を開始します。 <p> [監査](search-the-audit-log-in-security-and-compliance.md) <br> 監査ログを使用して、一般的なサポートとコンプライアンスの問題を調査します。 <p> [コンテンツ検索](search-for-content.md) <br> コンテンツ検索を使用すると、Exchange メールボックス内の電子メール、SharePoint サイトと OneDrive の場所のドキュメント、Microsoft Teams とSkype for Businessでのインスタント メッセージングの会話をすばやく検索できます。 <p> [通信コンプライアンス](communication-compliance.md) <br> 不適切なメッセージを自動的にキャプチャし、ポリシー違反の可能性を調査し、修復する手順を実行することで、通信リスクを最小限に抑えます。 <p> [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md) <br> 機密性の高いコンテンツが組織全体、クラウド、デバイスで使用および共有されている状態を検出し、偶発的なデータ損失を防ぐのに役立ちます。 <p> [データ サブジェクト要求](/compliance/regulatory/gdpr-manage-gdpr-data-subject-requests-with-the-dsr-case-tool) <br> 一般データ保護規則 (GDPR) のデータ主体の要求に対応するために、ユーザーの個人データを検索してエクスポートします。 <p> [電子情報開示](overview-ediscovery-20.md) <br> このセクションを展開して、組織の内部および外部の調査に対応するコンテンツの保持、収集、レビュー、分析、エクスポートにコアと電子情報開示 (Premium) を使用します。 <p> [データ ライフサイクル管理](manage-data-governance.md) <br> 重要なデータをインポート、格納、分類する機能を使用して機密データのライフサイクルを管理し、必要なものを保持し、不要なものを削除できるようにします。 <p> [情報保護](information-protection.md) <br> 組織全体のライフサイクルを通じて、機密データとビジネスクリティカルなデータを検出、分類、保護します。 <p> [インサイダー リスク管理](insider-risk-management.md) <br> 組織全体で危険なアクティビティを検出し、インサイダーのリスクと脅威を迅速に特定し、調査し、アクションを実行できるようにします。 <p> [レコード管理](records-management.md) <br> ビジネス、法的、または規制上の記録保持要件に対する価値の高いアイテムの保持と削除を管理します。|
 |
 
 ## <a name="how-do-i-access-the-compliance-portal"></a>コンプライアンス ポータルにアクセス操作方法?

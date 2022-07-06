@@ -1,13 +1,27 @@
 - name: Microsoft Whiteboard
   href: index.md
-- name: アクセスを管理する
-  href: manage-whiteboard-access-organizations.md
-- name: データ管理
-  href: manage-data-organizations.md
-- name: 共有を管理する
-  href: manage-sharing-organizations.md
-- name: Windows デバイスに展開する
-  href: deploy-on-windows-organizations.md
+- name: Whiteboard を設定する
+  items:
+    - name: セットアップと使用
+      href: /surface-hub/whiteboard-collaboration
+    - name: Windows デバイスに展開する
+      href: deploy-on-windows-organizations.md
+- name: Whiteboard を管理する
+  items:
+    - name: アクセスを管理する
+      href: manage-whiteboard-access-organizations.md
+    - name: データ管理
+      href: manage-data-organizations.md
+    - name: 共有を管理する
+      href: manage-sharing-organizations.md
+    - name: Windows デバイスに展開する
+      href: deploy-on-windows-organizations.md
+- name: プライバシーとコンプライアンス
+  items:
+    - name: プライバシー設定を構成する
+      href: configure-privacy-settings.md
+    - name: GDPR 要求
+      href: gdpr-requests.md
 - name: 政府機関向けホワイトボード
   items:
     - name: アクセスの管理 - GCC High

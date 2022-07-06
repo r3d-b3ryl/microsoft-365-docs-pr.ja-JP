@@ -1,5 +1,5 @@
 ---
-title: Microsoft Compliance Extension を開始する
+title: Microsoft Purview Extension の使用を開始する
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,24 +19,24 @@ ms.collection:
 ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
-description: Microsoft Compliance Extension の準備と導入。
-ms.openlocfilehash: 1c4c0a79f65f8a58ed30a9170256ef93b2bb4cef
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+description: Microsoft Purview Extension を準備して導入します。
+ms.openlocfilehash: 9593b75ea9bb858e9cd770ec4f40f4e6d7667a2e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63681812"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622945"
 ---
-# <a name="get-started-with-microsoft-compliance-extension"></a>Microsoft Compliance Extension を開始する
+# <a name="get-started-with-microsoft-purview-extension"></a>Microsoft Purview Extension の使用を開始する
 
-以下の手順を使用して、Microsoft Compliance Extension をロールアウトします。
+以下の手順を使用して、Microsoft Purview Extension をロールアウトします。
 
 ## <a name="before-you-begin"></a>はじめに
 
-Microsoft Compliance Extension を使用するには、デバイスがエンドポイント DLP に搭載されている必要があります。 DLP やエンドポイント DLP に慣れていない場合は、これらの記事をレビューします
+Microsoft Purview Extension を使用するには、デバイスがエンドポイント DLP に搭載されている必要があります。 DLP やエンドポイント DLP に慣れていない場合は、これらの記事をレビューします
 
-- [Microsoft Compliance Extension の詳細](dlp-chrome-learn-about.md)
-- [データ損失防止について](dlp-learn-about-dlp.md)
+- [Microsoft Purview Extension の詳細](dlp-chrome-learn-about.md)
+- [Microsoft Purview データ損失防止についての説明](dlp-learn-about-dlp.md)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md)
 - [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)
@@ -60,7 +60,7 @@ Microsoft Compliance Extension を使用するには、デバイスがエンド�
 
 - ご所属の組織で エンドポイント DLP のライセンスを取得している必要があります。
 - デバイスで Windows 10 x64 ビルド 1809 以降を実行している必要があります。
-- デバイスで Antimalware Client バージョン 4.18.2101.9 以降を実行している必要があります。 **Windows セキュリティ** アプリを開いて現在のバージョンを確認し、**[設定]** アイコンを選択して、**[バージョン情報]** を選択します。
+- デバイスで Antimalware Client バージョン 4.18.2202.x 以降を実行している必要があります。 **Windows セキュリティ** アプリを開いて現在のバージョンを確認し、**[設定]** アイコンを選択して、**[バージョン情報]** を選択します。
 
 
 ### <a name="permissions"></a>アクセス許可
@@ -79,14 +79,14 @@ Microsoft Compliance Extension を使用するには、デバイスがエンド�
 
 プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
 - Information Protection レベル
@@ -96,7 +96,7 @@ Microsoft Compliance Extension を使用するには、デバイスがエンド�
 
 ### <a name="overall-installation-workflow"></a>インストールの全体的なワークフロー
 
-Microsoft Compliance Extension の展開は、多段階のプロセスです。一度に 1 台のマシンにインストールするか、Microsoft エンドポイント マネージャーやグループ ポリシーを使用して組織全体に展開するかを選択できます。
+拡張機能の導入は、複数の手順を踏まえて行われます。 一度に 1 台のマシンにインストールするか、Microsoft エンドポイント マネージャーやグループ ポリシーを使用して組織全体に展開するかを選択できます。
 
 1. [デバイスを準備します](#prepare-your-devices)。
 2. [基本的なセットアップ シングル マシンのセルフホスト](#basic-setup-single-machine-selfhost)
@@ -108,7 +108,7 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
 
 ### <a name="prepare-infrastructure"></a>インフラストラクチャの準備
 
-監視しているすべての Windows 10 デバイスに Microsoft Compliance Extension をロールアウトしている場合は、許可されていないアプリのリストおよび許可されていないブラウザーのリストから Google Chrome を削除する必要があります。 詳細については、「[許可されていないブラウザー](dlp-configure-endpoint-settings.md#unallowed-browsers)」を参照してください。 少数のデバイスにしかロールアウトしない場合は、Chrome を許可されていないブラウザーまたは許可されていないアプリのリストに残しておくことができます。 Microsoft Compliance Extension がインストールされているコンピューターでは、両方のリストの表示制限が回避されます。
+監視しているすべての Windows 10 デバイスに拡張機能をロールアウトしている場合は、許可されていないアプリのリストおよび許可されていないブラウザーのリストから Google Chrome を削除する必要があります。 詳細については、「[許可されていないブラウザー](dlp-configure-endpoint-settings.md#unallowed-browsers)」を参照してください。 少数のデバイスにしかロールアウトしない場合は、Chrome を許可されていないブラウザーまたは許可されていないアプリのリストに残しておくことができます。 拡張機能がインストールされているコンピューターでは、両方のリストの表示制限が回避されます。
 
 ### <a name="prepare-your-devices"></a>デバイスを準備する
 
@@ -121,44 +121,17 @@ Microsoft Compliance Extension の展開は、多段階のプロセスです。�
 
 これは推奨される方法です。
 
-1. Microsoft Compliance Extension をインストールする Windows 10 コンピューターにサインインし、管理者としてこの PowerShell スクリプトを実行します。
+1. [Microsoft Purview Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco) に移動します。
 
-   ```powershell
-   Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-   ```
-
-2. [Microsoft Compliance Extension - Chrome Web Store (google.com)](https://chrome.google.com/webstore/detail/microsoft-compliance-exte/echcggldkblhodogklpincgchnpgcdco) に移動します。
-
-3. Chrome Web ストアのページに記載されている手順で、拡張機能をインストールします。
+2. Chrome Web ストアのページに記載されている手順で、拡張機能をインストールします。
 
 ### <a name="deploy-using-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用して展開する
 
 この設定方法は、組織全体の展開に使用します。
 
-##### <a name="enabling-required-registry-value-via-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーで必要なレジストリ値を有効にする
-
-1. 次のコンテンツを使用して PowerShell スクリプトを作成します。
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-2. [Microsoft エンドポイント マネージャー管理センター](https://endpoint.microsoft.com)にサインインします。
-
-3. **[デバイス]** > >  **[スクリプト]** の順に移動し、**[追加]** を選択します。
-
-4. プロンプトが表示されたら、作成したスクリプトの場所を参照してください。
-
-5. 次の設定を選択します。
-    1. ログオンした資格情報を使用して、このスクリプトを実行する: いいえ
-    1. スクリプトの署名チェックを強制する: いいえ
-    1. 64 ビットの PowerShell ホストでスクリプトを実行する: はい
-
-6. 適切なデバイス グループを選択し、ポリシーを適用します。
-
 #### <a name="microsoft-endpoint-manager-force-install-steps"></a>Microsoft エンドポイント マネージャーの強制インストール手順
 
-Microsoft Compliance Extension を強制インストールされた拡張機能のリストに追加する前に、Chrome ADMX を取り込むことが重要です。 Microsoft エンドポイント マネージャーでのこの手順は、Google で以下のとおり文書化されています。[Microsoft Intune を使用して Chrome ブラウザーを管理する - Google Chrome Enterprise ヘルプ](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune)
+拡張機能を強制インストールされた拡張機能のリストに追加する前に、Chrome ADMX を取り込むことが重要です。 Microsoft エンドポイント マネージャーでのこの手順は、Google で以下のとおり文書化されています。[Microsoft Intune を使用して Chrome ブラウザーを管理する - Google Chrome Enterprise ヘルプ](https://support.google.com/chrome/a/answer/9102677?hl=en#zippy=%2Cstep-ingest-the-chrome-admx-file-into-intune)
 
  ADMX を取り込んだ後、以下の手順でこの拡張機能の構成プロファイルを作成します。
 
@@ -186,39 +159,7 @@ Microsoft Compliance Extension を強制インストールされた拡張機能�
 
 ### <a name="deploy-using-group-policy"></a>グループ ポリシーを使用して展開する
 
-Microsoft エンドポイント マネージャーを使用しない場合は、グループ ポリシーを使用して Microsoft Compliance Extension を組織全体に展開することができます。
-
-1. デバイスはグループ ポリシーで管理できる必要があり、すべての Chrome ADMX をグループ ポリシー セントラル ストアにインポートする必要があります。 詳細については、「[Windows でグループ ポリシー管理テンプレート用に中央ストアを作成および管理する方法](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)」を参照してください。
-
-2. 以下の PowerShell コマンドを使用して、PowerShell スクリプトを作成します。
-
-    ```powershell
-    Get-Item -path "HKLM:\SOFTWARE\Microsoft\Windows Defender\Miscellaneous Configuration" | New-ItemProperty -Name DlpDisableBrowserCache -Value 0 -Force
-    ```
-
-3. **グループ ポリシー管理コンソール** を開き、自分の組織単位 (OU) に移動します。
-
-4. 右クリックして、**[このドメインに GPO を作成し、このコンテナーにリンクする]** を選択します。 プロンプトが表示されたら、このグループ ポリシー オブジェクト (GPO) にわかりやすい名前を割り当て、作成を終了します。
-
-5. GPO を右クリックし、**[編集]** を選択します。
-
-6. **[コンピュータの構成]** > >  **[環境設定]** > >  **[コントロールパネルの設定]** > >  **[スケジュールされたタスク]** の順に移動します。
-
-7. 右クリックして **[新規作成]** > >  **[即時タスク (Windows 7 以降)** を選択して新しい即時タスクを作成します。
-
-8. タスクに名前と説明をつけます。
-
-9. 即時タスクを実行するための対応するアカウントを選択します (NT Authority など)。
-
-10. **[最上位の特権で実行する]** を選択します。
-
-11. Windows 10 用のポリシーを構成します。
-
-12. **[アクション]** タブで、アクション **[プログラムの開始]** を選択します。
-
-13. 手順 1 で作成した Program/Script のパスを入力します。
-
-14. **[適用]** を選択します。
+Microsoft エンドポイント マネージャーを使用しない場合は、グループ ポリシーを使用して拡張機能を組織全体に展開することができます。
 
 #### <a name="adding-the-chrome-extension-to-the-forceinstall-list"></a>Chrome 拡張機能を ForceInstall リストに追加する
 
@@ -263,13 +204,13 @@ Microsoft エンドポイント マネージャーを使用しない場合は、
 
 ### <a name="use-the-alerts-management-dashboard-to-viewing-chrome-dlp-alerts"></a>アラート管理ダッシュボードを使用して、Chrome DLP アラートを表示する
 
-1. **Microsoft 365 コンプライアンス センター** の <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">データ損失防止 ページ</a>を開き、**アラート** を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>の **データ損失防止** ページを開き、**アラート** を選択します。
 
 2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
 
 ### <a name="viewing-chrome-dlp-data-in-activity-explorer"></a>Activity エクスプローラーでのエンドポイント DLP データの表示
 
-1. [Microsoft 365 コンプライアンス センター](https://compliance.microsoft.com/dataclassification?viewid=overview)で <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">ドメインのデータ分類ページ</a>を開き、**Activity エクスプローラー** を選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>でドメインの [データ分類ページ](https://compliance.microsoft.com/dataclassification?viewid=overview)を開き、**Activity エクスプローラー** を選択します。
 
 2. エンドポイントデバイスのすべてのデータにアクセスしてフィルタリングするには、「[Activity エクスプローラースタートガイド](data-classification-activity-explorer.md)」の手順に従ってください。
 

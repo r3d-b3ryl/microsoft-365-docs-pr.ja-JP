@@ -19,18 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 2998c993cd605f0371e728bba1cdea555b5e51e0
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 0161071c1dbfb8941c4f89a45ac2de52d58a2236
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574214"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641518"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 秘密度ラベルの概要とそれらが組織のデータを保護する方法の詳細については、「[秘密度ラベルの詳細](sensitivity-labels.md)」を参照してください。
 

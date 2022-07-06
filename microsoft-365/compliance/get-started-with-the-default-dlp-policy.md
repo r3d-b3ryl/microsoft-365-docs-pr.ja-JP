@@ -19,16 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: レポートを使用して、組織の既定のデータ損失防止 (DLP) ポリシーを調整する方法について説明します。
-ms.openlocfilehash: 893aae6dfbc4e5c9fcf48a8eec53694352ead4f2
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: d47568f009745edaa8205ce65b4de9b481f58139
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753454"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641496"
 ---
 # <a name="get-started-with-the-default-dlp-policy"></a>既定の DLP ポリシーの使用を開始する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 最初のMicrosoft Purview データ損失防止 (DLP) ポリシーを作成する前に、DLP は既定のポリシーを使用して機密情報を保護するのに役立ちます。 この既定のポリシーとその推奨事項 (以下に示します) は、クレジット カード番号を含む電子メールやドキュメントが組織外のユーザーと共有されたときに通知することで、機密コンテンツを安全に保つのに役立ちます。 この推奨事項は、Microsoft Purview コンプライアンス ポータルの **ホーム** ページに表示されます。 
   
@@ -44,7 +42,7 @@ ms.locfileid: "65753454"
   
 機密情報を保護するために、既定の DLP ポリシーは次のとおりです。
   
-- 1 つ以上のクレジット カード番号を含むExchange、SharePoint、OneDriveのコンテンツが組織外のユーザーと共有されるタイミングを検出します。
+- 少なくとも 1 つのクレジット カード番号を含む Exchange、SharePoint、OneDrive 内のコンテンツが組織外のユーザーと共有されるタイミングを検出します。
     
 - ポリシー ヒントを表示し、組織外のユーザーとこの機密情報を共有しようとしたときに、ユーザーに電子メール通知を送信します。 これらのオプションの詳細については、「 [電子メール通知を送信し、DLP ポリシーのポリシーヒントを表示する」を](use-notifications-and-policy-tips.md)参照してください。
     
@@ -62,7 +60,7 @@ ms.locfileid: "65753454"
   
 これらのオプションを後で変更する場合は、いつでも既定の DLP ポリシーを編集できます。次のセクションを参照してください。
   
-![共有コンテンツをさらに保護するという名前のウィジェットの設定。](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
+![共有コンテンツをさらに保護するウィジェットの設定。](../media/dad30a84-2715-4c0a-a5c5-44d85492363e.png)
   
 ## <a name="edit-the-default-dlp-policy"></a>既定の DLP ポリシーを編集する
 
@@ -78,7 +76,7 @@ ms.locfileid: "65753454"
   
 このウィジェットは、次の場合にのみ表示されます。
   
-- Microsoft Purview コンプライアンス ポータルまたはExchange管理センターには、データ損失防止ポリシーはありません。 このウィジェットは DLP の使用を開始するのに役立つため、DLP ポリシーが既にある場合は表示されません。
+- Microsoft Purview コンプライアンス ポータルまたは Exchange 管理センターには、データ損失防止ポリシーはありません。 このウィジェットは DLP の使用を開始するのに役立つため、DLP ポリシーが既にある場合は表示されません。
     
 - 過去 30 日間に、少なくとも 1 つのクレジット カードを含むコンテンツが組織外のユーザーと共有されました。
     

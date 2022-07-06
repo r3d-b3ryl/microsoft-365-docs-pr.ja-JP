@@ -2,8 +2,8 @@
 title: Microsoft 365 Business Premium で安全に共同作業と共有を行う
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium で Teams を使用してファイルを共同作業および共有し、安全に通信する方法の概要。 Teams が提供するクローズド環境では、ファイルと通信にサイバー脅威やサイバー攻撃が発生しません。
-ms.openlocfilehash: 093507502e6bcf6b9a6cdfcf1ce8264f47b6e94c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5fbc31f41d74b8b267a15356d5648266070b6fa1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489186"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621585"
 ---
 # <a name="collaborate-and-share-securely"></a>セキュイティで保護された共同作業および共有を行う
 
@@ -36,11 +36,11 @@ Microsoft 365 Business Premium Office アプリによって保護されたので
 
 目的は次のとおりです。
 
-- [共同作業のためのチームを作成する](create-teams-for-collaboration.md)
-- [会議を設定する](set-up-meetings.md)
-- [ファイルやビデオを共有する](share-files-and-videos.md)
-- [コミュニケーション サイトを作成する](create-communications-site.md)
+- [共同作業のための Teams を作成する](create-teams-for-collaboration.md)。
+- [会議を設定する](set-up-meetings.md)。
+- [ファイルやビデオを共有する](share-files-and-videos.md)。
+- [コミュニケーション サイトを作成する](create-communications-site.md)。
 
-これらの目的を完了したら、[最後のミッション](m365bp-protect-devices.md)を開始します。
+これらの目的を完了したら、最後のミッションである[管理対象デバイスの保護](m365bp-protect-devices.md)を開始します。
 
 :::image type="content" source="media/m365bp-collaborate-share-securely.jpg" alt-text="セキュイティで保護された共同作業および共有を行います。":::

@@ -2,8 +2,8 @@
 title: 非管理対象デバイスのセットアップの概要
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
@@ -24,22 +24,22 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: サイバー攻撃やその他の悪意のある脅威や脆弱性に対する保護を使用して、すべての持ち込みデバイス (BYOD) を設定する方法の概要。
-ms.openlocfilehash: 666a0b9af03f5b70ff474e310270eab324cb76ba
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ac20d80f97d000414a81e9637a69b2678fa0d3b1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574262"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623393"
 ---
 # <a name="set-up-unmanaged-byod-devices"></a>非管理対象 (BYOD) デバイスを設定する
 
-すべてのデバイスはネットワークへの攻撃の可能性があり、個人が所有しているが仕事に使用されるデバイスであっても、適切に監視および管理する必要があります。 この重要なミッションでは、すべての持ち込みデバイス (BYOD) の保護を設定します。これは、管理されていないために組織にとって最も危険なデバイスです。 これらのデバイスをできるだけ早く保護することが重要です。
+すべてのデバイスはネットワークへの攻撃の可能性があり、個人が所有しているが仕事に使用されるデバイスであっても、適切に監視および管理する必要があります。 この重要なミッションでは、すべての持ち込みデバイス (BYOD) の保護を設定します。これは、管理されていないために組織にとって最も危険なデバイスです。 誰もができるだけ早くデバイスを保護できるようにすることが重要です。
 
 目標は次のとおりです。
 
-- [セットアップ MFA](m365bp-multifactor-authentication.md)
-- [Office アプリのインストール](m365bp-install-office-apps.md)
-- [保護された非管理対象 PC と Mac](m365bp-protect-pcs-macs.md)
+- [すべてのユーザーに MFA を設定してもらう](m365bp-multifactor-authentication.md)。
+- [Office アプリをデバイスにインストールする](m365bp-install-office-apps.md)。
+- [非管理対象 Windows デバイスと Mac デバイスの保護](m365bp-protect-pcs-macs.md)。
 
 これらの目標を達成したら、 [次のミッション](m365bp-protect-email-overview.md)に進みます。
 

@@ -18,22 +18,20 @@ search.appverid:
 - MOE150
 ms.custom: admindeeplinkMAC
 description: 問題が発生したときに Microsoft サポート エンジニアがデータにアクセスする方法を制御できるカスタマー ロックボックス要求について説明します。
-ms.openlocfilehash: cf9a2a6d682ca87e97986389f640a536775ca014
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 7094de30722c4419e3c1c33d0c06f2cdb6d37290
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953828"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642176"
 ---
 # <a name="microsoft-purview-customer-lockbox"></a>Microsoft Purview カスタマー ロックボックス
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+この記事では、Customer Lockbox のデプロイと構成に関するガイダンスを提供します。 Customer Lockbox では、Exchange Online、SharePoint Online、OneDrive for Business、Teams のデータにアクセスするための要求がサポートされています。 他のサービスのサポートを推奨するには、 [フィードバック ポータル](https://feedbackportal.microsoft.com)で要求を送信します。
 
-この記事では、Customer Lockbox のデプロイと構成に関するガイダンスを提供します。 Customer Lockbox では、Exchange Online、SharePoint Online、OneDrive for Business、Teamsのデータにアクセスするための要求がサポートされています。 他のサービスのサポートを推奨するには、 [フィードバック ポータル](https://feedbackportal.microsoft.com)で要求を送信します。
+Microsoft Purview オファリングの恩恵を受けるためにユーザーにライセンスを付与するためのオプションについては、 [セキュリティ&コンプライアンスに関する Microsoft 365 ライセンスガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)を参照してください。
 
-Microsoft Purview オファリングの恩恵を受けるためにユーザーにライセンスを付与するオプションについては、[セキュリティ&コンプライアンスに関するMicrosoft 365ライセンスガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)を参照してください。
-
-カスタマー ロックボックスを使用すると、Microsoft が明示的な承認なしにサービス操作を行うためにコンテンツにアクセスできなくなります。 Customer Lockbox は、承認された要求のみがコンテンツへのアクセスを許可するように Microsoft が使用する承認ワークフロー プロセスに移行します。 Microsoft のワークフロー プロセスの詳細については、 [特権アクセス管理](privileged-access-management-solution-overview.md)に関するページを参照してください。
+カスタマー ロックボックスを使用すると、明示的な承認なしにサービス操作を実行するために、Microsoft がコンテンツにアクセスできなくなります。 カスタマー ロックボックスは、Microsoft で使用する承認ワークフロー プロセスを導入し、承認された要求のみコンテンツにアクセスできるようにします。 Microsoft のワークフロー プロセスの詳細については、 [特権アクセス管理](privileged-access-management-solution-overview.md)に関するページを参照してください。
 
 場合によっては、Microsoft エンジニアは、サービスで発生する問題のトラブルシューティングと修正を支援します。 通常、エンジニアは、Microsoft がサービス用に用意している広範なテレメトリとデバッグ ツールを使用して問題を修正します。 ただし、根本原因を特定して問題を解決するために、Microsoft エンジニアがコンテンツにアクセスする必要がある場合があります。 Customer Lockbox では、承認ワークフローの最後の手順として、エンジニアからアクセスを要求する必要があります。 これにより、組織の要求を承認または拒否し、コンテンツへの直接アクセス制御を提供できます。
 
@@ -77,7 +75,7 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
 1. グローバル管理者または **カスタマー ロックボックス アクセス承認者** ロールが割り当てられている職場または学校アカウントを使用して、アクセス [https://admin.microsoft.com](https://admin.microsoft.com) してサインインします。
 
-2. **[設定** > **Org 設定** > **Security & Privacy**] を選択します。
+2. [**Settings** > **Org Settings****Security & Privacy**] を選択します > 。
 
 3. [ **セキュリティ&プライバシー**] を選択し、左側の列で **[Customer Lockbox** ] を選択します。 **[すべてのデータ アクセス要求の承認が必要**] チェック ボックスをオンにし、変更を保存して機能を有効にします。
 
@@ -108,11 +106,11 @@ Microsoft 365 管理センターで、カスタマー ロックボックス コ�
 
 ## <a name="auditing-customer-lockbox-requests"></a>カスタマー ロックボックス要求を監査する
 
-Customer Lockbox 要求に対応する監査レコードは、Microsoft 365監査ログに記録されます。 これらのログには、Microsoft Purview コンプライアンス ポータルの [監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md) を使用してアクセスできます。 カスタマー ロックボックス要求の受け入れまたは拒否に関連するアクションと、Microsoft エンジニアが実行したアクション (アクセス要求が承認されたとき) も監査ログに記録されます。 これらの監査レコードを検索して確認することができます。
+カスタマー ロックボックス要求に対応する監査レコードは、Microsoft 365 監査ログに記録されます。 これらのログには、Microsoft Purview コンプライアンス ポータルの[監査ログ検索ツール](search-the-audit-log-in-security-and-compliance.md)を使用してアクセスできます。 カスタマー ロックボックス要求の受け入れまたは拒否に関連するアクションと、Microsoft エンジニアが実行したアクション (アクセス要求が承認されたとき) も監査ログに記録されます。 これらの監査レコードを検索して確認することができます。
 
 ### <a name="search-the-audit-log-for-activity-related-to-customer-lockbox-requests"></a>カスタマー ロックボックス要求に関連するアクティビティの監査ログを検索する
 
-監査ログを使用して Customer Lockbox の要求を追跡する前に、監査ログを検索するためのアクセス許可の割り当てなど、監査ログを設定するために必要な手順がいくつかあります。 詳細については、「 [Microsoft Purview 監査のセットアップ (Standard)](set-up-basic-audit.md)」を参照してください。 セットアップが完了したら、次の手順を使用して監査ログ検索クエリを作成し、Customer Lockbox に関連する監査レコードを返します。
+監査ログを使用して Customer Lockbox の要求を追跡する前に、監査ログを検索するためのアクセス許可の割り当てなど、監査ログを設定するために必要な手順がいくつかあります。 詳細については、「[Microsoft Purview 監査のセットアップ (Standard)](set-up-basic-audit.md)」を参照してください。 セットアップが完了したら、次の手順を使用して監査ログ検索クエリを作成し、Customer Lockbox に関連する監査レコードを返します。
 
 1. <https://compliance.microsoft.com>に移動します。
   
@@ -150,14 +148,14 @@ Customer Lockbox 要求に対応する監査レコードは、Microsoft 365監�
 
 ### <a name="export-the-audit-log-search-results"></a>監査ログの検索結果をエクスポートする
 
-監査ログの検索結果を CSV ファイルにエクスポートし、Excelでファイルを開いてフィルター処理機能と並べ替え機能を使用して、Customer Lockbox アクセス要求に関連する監査レコードを簡単に見つけて表示することもできます。
+監査ログの検索結果を CSV ファイルにエクスポートし、Excel でファイルを開いてフィルター処理と並べ替え機能を使用して、Customer Lockbox アクセス要求に関連する監査レコードを簡単に見つけて表示することもできます。
 
 監査レコードをエクスポートするには、前の手順を使用して監査ログを検索します。 検索が完了したら、検索結果ページの上部にある **[エクスポート>すべての結果をダウンロード** する] を選択します。 エクスポート プロセスが完了したら、CSV ファイルをローカル コンピューターにダウンロードできます。 詳細な手順については、「 [監査ログ レコードのエクスポート、構成、および表示](export-view-audit-log-records.md)」を参照してください。
 
-ファイルをダウンロードした後、Excelで開き、[**操作**] 列でフィルター処理して **、Set-AccessToCustomerDataRequest** アクティビティの監査レコードを表示できます。 **UserIds** 列 (**値 Microsoft オペレーター** を使用) でフィルター処理して、Microsoft エンジニアによって実行されたアクティビティの監査レコードを表示することもできます。
+ファイルをダウンロードした後、Excel でファイルを開き、[ **操作]** 列でフィルター処理して **、Set-AccessToCustomerDataRequest** アクティビティの監査レコードを表示できます。 **UserIds** 列 (**値 Microsoft オペレーター** を使用) でフィルター処理して、Microsoft エンジニアによって実行されたアクティビティの監査レコードを表示することもできます。
 
 > [!NOTE]
-> CSV ファイルで監査レコードを表示する場合は、 **AuditData** 列に追加情報が含まれます。 この列の情報は JSON オブジェクトに含まれています。これには、プロパティとして構成された複数のプロパティが含まれています *。値* のペアはコンマで区切られます。 ExcelのPower Query エディターの JSON 変換機能を使用して **、AuditData** 列の JSON オブジェクト内の各プロパティを複数の列に分割して、各プロパティに独自の列を含めることができます。 これにより、この情報を解釈しやすくなります。 詳細な手順については、「[Power Query エディターを使用してエクスポートされた監査ログを書式設定する」を参照](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor)してください。
+> CSV ファイルで監査レコードを表示する場合は、 **AuditData** 列に追加情報が含まれます。 この列の情報は JSON オブジェクトに含まれています。これには、プロパティとして構成された複数のプロパティが含まれています *。値* のペアはコンマで区切られます。 Excel のPower Query エディターの JSON 変換機能を使用すると、**AuditData** 列の JSON オブジェクト内の各プロパティを複数の列に分割して、各プロパティに独自の列を含めることができます。 これにより、この情報を解釈しやすくなります。 詳細な手順については、「[Power Query エディターを使用してエクスポートされた監査ログを書式設定する」を参照](export-view-audit-log-records.md#step-2-format-the-exported-audit-log-using-the-power-query-editor)してください。
 
 ### <a name="use-powershell-to-search-and-export-audit-records"></a>PowerShell を使用して監査レコードを検索およびエクスポートする
 
@@ -190,7 +188,7 @@ Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -UserIds "Micro
 | 日付       | カスタマー ロックボックス要求が承認または拒否された日付と時刻。
 | IP アドレス | 要求を承認または拒否するために使用された承認者のコンピューターの IP アドレス。 |
 | ユーザー       | サービス アカウントBOXServiceAccount@\[customerforest.prod.outlook.com\]。            |
-| アクティビティ   | Set-AccessToCustomerDataRequest: これは、カスタマー ロックボックス要求を承認または拒否したときにログに記録される監査アクティビティです。                                |
+| 最新情報   | Set-AccessToCustomerDataRequest: これは、カスタマー ロックボックス要求を承認または拒否したときにログに記録される監査アクティビティです。                                |
 | アイテム       | Customer Lockbox 要求の Guid                             |
 
 次のスクリーンショットは、承認された顧客ロックボックス要求に対応する監査レコードの例を示しています。 Customer Lockbox 要求が拒否された場合、パラメーターの `ApprovalDecision` 値は `Deny`.
@@ -211,13 +209,13 @@ Search-UnifiedAuditLog -StartDate xx/xx/xxxx -EndDate xx/xx/xxxx -UserIds "Micro
 
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
-### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Customer Lockbox はどのMicrosoft 365サービスに適用されますか?
+### <a name="which-microsoft-365-services-does-customer-lockbox-apply-to"></a>Customer Lockbox はどの Microsoft 365 サービスに適用されますか?
 
-Customer Lockbox は現在、Exchange Online、SharePoint Online、OneDrive for Business、Teamsでサポートされています。
+Customer Lockbox は現在、Exchange Online、SharePoint Online、OneDrive for Business、Teams でサポートされています。
 
 ### <a name="is-customer-lockbox-available-to-all-customers"></a>Customer Lockbox は、すべてのお客様が利用できますか?
 
-Customer Lockbox は、Microsoft 365 サブスクリプションまたはOffice 365 E5 サブスクリプションに含まれており、Information Protectionとコンプライアンス、または Advanced Compliance アドオン サブスクリプションを使用して他のプランに追加できます。 詳細については、「 [プランと価格](https://products.office.com/business/office-365-enterprise-e5-business-software) 」を参照してください。
+Customer Lockbox は Microsoft 365 または Office 365 E5 サブスクリプションに含まれており、Information Protectionとコンプライアンス、または Advanced Compliance アドオン サブスクリプションを使用して他のプランに追加できます。 詳細については、「 [プランと価格](https://products.office.com/business/office-365-enterprise-e5-business-software) 」を参照してください。
 
 ### <a name="what-is-customer-content"></a>顧客コンテンツとは何ですか?
 
@@ -233,19 +231,19 @@ Customer Lockbox は、Microsoft 365 サブスクリプションまたはOffice 
 
 - インスタント メッセージ (IM) または音声会話
 
-- Teams チャットとTeams チャネルに入力されたテキスト (たとえば、1 対 1 のチャット、グループ チャット、共有チャネル、プライベート チャネル、会議チャットなど)
+- Teams チャットと Teams チャネルに入力されたテキスト (たとえば、1 対 1 のチャット、グループ チャット、共有チャネル、プライベート チャネル、会議チャットなど)
 
-- Teams チャット スレッドに貼り付けられたその他のデータ (コード スニペット、画像、オーディオ メッセージ、ビデオ メッセージ、リンクなど)
+- Teams チャット スレッドに貼り付けられたその他のデータ (コード スニペット、画像、オーディオメッセージとビデオ メッセージ、リンクなど)
 
-- Teams チャットとTeams チャネルのアプリとボットのデータ
+- Teams チャットと Teams チャネルのアプリとボットのデータ
 
 - Teams アクティビティ フィード
 
-- 会議の記録とトランスクリプトをTeamsする
+- Teams 会議の記録とトランスクリプト
 
 - ボイスメール
 
-- Teams チャットやTeams チャネルに投稿されたファイル
+- Teams チャットと Teams チャネルに投稿されたファイル
 
 - 顧客が生成した blob または構造化ストレージ データ (SQL コンテナーなど)
 
@@ -255,11 +253,11 @@ Customer Lockbox は、Microsoft 365 サブスクリプションまたはOffice 
 
 Office 365の顧客コンテンツの詳細については、[Office 365 セキュリティ センター](https://products.office.com/business/office-365-trust-center-privacy/)を参照してください。
 
-### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>コンテンツにアクセスする要求があると、Whoに通知されますか?
+### <a name="who-is-notified-when-there-is-a-request-to-access-my-content"></a>自分のコンテンツにアクセスする要求がある場合、誰に通知されますか?
 
 グローバル管理者と、Customer Lockbox アクセス承認者管理者ロールが割り当てられているすべてのユーザーに通知されます。 これらは、カスタマー ロックボックス要求に対して承認できるユーザーと同じです。
 
-### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>Who組織内でこれらの要求を承認または拒否できますか?
+### <a name="who-can-approve-or-reject-these-requests-in-my-organization"></a>組織でこれらの要求を承認または拒否できるのはだれですか?
 
 グローバル管理者と、Customer Lockbox アクセス承認者管理者ロールが割り当てられているすべてのユーザーは、カスタマー ロックボックス要求を承認できます。 顧客は、組織でこれらのロールの割り当てを制御します。
 
@@ -279,11 +277,11 @@ Customer Lockbox は、最新の [SOC 1 SSAE 16 監査レポートに](https://s
 
 ### <a name="can-microsoft-modify-the-list-of-approvers-for-my-tenant-if-not-how-is-it-prevented"></a>Microsoft では、テナントの承認者の一覧を変更できますか? そうでない場合は、どのように防止されますか?
 
-組織のグローバル管理者のみが、カスタマー ロックボックス要求を承認できるユーザーを指定できます。 つまり、要求を承認できるユーザーを指定できるのは、Azure Active Directoryのグローバル管理者 グループのメンバーだけです。 Azure Active Directoryのグローバル管理者 グループのメンバーシップは、組織によってのみ管理されます。
+組織のグローバル管理者のみが、カスタマー ロックボックス要求を承認できるユーザーを指定できます。 つまり、要求を承認できるユーザーを指定できるのは、Azure Active Directory のグローバル管理者 グループのメンバーだけです。 Azure Active Directory のグローバル管理者 グループのメンバーシップは、組織によってのみ管理されます。
 
 ### <a name="what-if-i-need-more-information-about-a-content-access-request-to-approve-it"></a>コンテンツ アクセス要求の承認に関する詳細情報が必要な場合はどうすればよいですか?
 
-各 Customer Lockbox 要求には、Microsoft 365サービス要求番号が含まれています。 Microsoft サポートに問い合わせ、このサービス番号を参照して、要求の詳細を確認できます。
+各 Customer Lockbox 要求には、Microsoft 365 サービス要求番号が含まれています。 Microsoft サポートに問い合わせ、このサービス番号を参照して、要求の詳細を確認できます。
 
 ### <a name="when-a-customer-lockbox-request-is-approved-how-long-are-the-permissions-valid"></a>Customer Lockbox 要求が承認されると、アクセス許可が有効な期間はどれくらいですか?
 
@@ -317,15 +315,15 @@ Customer Lockbox は、最新の [SOC 1 SSAE 16 監査レポートに](https://s
 
 ### <a name="how-does-microsoft-ensure-that-a-member-of-its-staff-doesnt-have-standing-access-to-customer-content-in-office-365-applications"></a>Microsoft では、そのスタッフのメンバーが、Office 365 アプリケーション内の顧客コンテンツに永続的にアクセスできないようにするにはどうすればよいですか?
 
-Microsoft では、アクセス制御システムを通じた広範な予防措置と、これらのアクセス制御システムを回避しようとする試みを特定して対処するための探偵対策を実装しています。 Microsoft 365は、最小限の特権と Just-In-Time アクセスの原則で動作します。 そのため、継続的に顧客コンテンツにアクセスするアクセス許可を持つ Microsoft 担当者はいません。 アクセス許可が付与されている場合は、制限付きの期間です。
+Microsoft では、アクセス制御システムを通じた広範な予防措置と、これらのアクセス制御システムを回避しようとする試みを特定して対処するための探偵対策を実装しています。 Microsoft 365 は、最小限の特権と Just-In-Time アクセスの原則で動作します。 そのため、継続的に顧客コンテンツにアクセスするアクセス許可を持つ Microsoft 担当者はいません。 アクセス許可が付与されている場合は、制限付きの期間です。
 
-Microsoft 365では、*Lockbox* という名前のアクセス制御システムを使用して、サービス内で運用および管理機能を実行する権限を付与するアクセス許可の要求を処理します。 オペレーターは Lockbox を使用して顧客コンテンツへのアクセスを要求する必要があります。これにより、アクセスが許可される前に、2 人目のユーザーが要求に対してアクションを実行する必要があります (たとえば、承認)。 その 2 番目のユーザーは要求元になることができず、顧客コンテンツへのアクセスを承認するように指定する必要があります。 要求が承認された場合にのみ、オペレーターは顧客コンテンツへの一時的なアクセスを取得します。 昇格期間が経過すると、ロックボックスはアクセスを取り消します。
+Microsoft 365 では *、Lockbox* と呼ばれるアクセス制御システムを使用して、サービス内で運用機能と管理機能を実行する権限を付与するアクセス許可の要求を処理します。 オペレーターは Lockbox を使用して顧客コンテンツへのアクセスを要求する必要があります。これにより、アクセスが許可される前に、2 人目のユーザーが要求に対してアクションを実行する必要があります (たとえば、承認)。 その 2 番目のユーザーは要求元になることができず、顧客コンテンツへのアクセスを承認するように指定する必要があります。 要求が承認された場合にのみ、オペレーターは顧客コンテンツへの一時的なアクセスを取得します。 昇格期間が経過すると、ロックボックスはアクセスを取り消します。
 
 Microsoft の一般的なセキュリティプラクティスの詳細については、 [Online Services の使用条件](https://www.microsoft.com/licensing/product-licensing/products) を参照してください。
 
 ### <a name="under-what-circumstances-do-microsoft-engineers-need-access-to-my-content"></a>Microsoft エンジニアは、どのような状況で自分のコンテンツにアクセスする必要がありますか?
 
-Microsoft エンジニアが顧客コンテンツにアクセスする必要がある最も一般的なシナリオは、お客様がトラブルシューティングにアクセスする必要があるサポート要求を行うときです。 Microsoft 365の基本原則は、Microsoft がお客様のコンテンツにアクセスしなくてもサービスが動作することです。 Microsoft によって実行されるほぼすべてのサービス操作は完全に自動化され、人間の関与は高度に制御され、顧客コンテンツから抽象化されます。 Microsoft 365の目標は、お客様が Microsoft アクセスに対する特定の要求を承認するまで、サービスをサポートするために顧客コンテンツにアクセスする必要はありません。
+Microsoft エンジニアが顧客コンテンツにアクセスする必要がある最も一般的なシナリオは、お客様がトラブルシューティングにアクセスする必要があるサポート要求を行うときです。 Microsoft 365 の基本原則は、Microsoft がお客様のコンテンツにアクセスすることなくサービスが動作することです。 Microsoft によって実行されるほぼすべてのサービス操作は完全に自動化され、人間の関与は高度に制御され、顧客コンテンツから抽象化されます。 Microsoft 365 の目標は、お客様が Microsoft アクセスに対する特定の要求を承認するまで、サービスをサポートするために顧客コンテンツにアクセスする必要はありません。
 
 ### <a name="i-already-thought-my-data-was-secure-with-the-microsoft-cloud-so-why-do-i-need-customer-lockbox"></a>データは Microsoft クラウドでセキュリティで保護されていると既に考えています。そのため、カスタマー ロックボックスが必要な理由は何ですか?
 

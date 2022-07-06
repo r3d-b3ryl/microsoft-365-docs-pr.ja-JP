@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'エンドポイントのデータ損失防止は、ファイル アクティビティの監視と、それらのファイルに対する保護アクションをエンドポイントに拡張します。コンプライアンス ソリューションでファイルが表示されます '
-ms.openlocfilehash: 015e219d1b3ed41605ae3b331488d8dec6e7751f
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: d711a61c1c61df94311dfd409e94330bb8696d88
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530906"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641748"
 ---
 # <a name="learn-about-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止について
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview のデータ損失防止 (DLP) を使用すると、機密があると判断されたアイテムに対して、発生しているアクションを監視し、それらのアイテムの意図しない共有を防ぐことができます。DLPの詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。
 

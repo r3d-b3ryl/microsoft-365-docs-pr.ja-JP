@@ -2,8 +2,8 @@
 title: Microsoft Defender for Business Premium 試用版プレイブック
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 Business Premium 試用版を最大限に活用しましょう。 生産性とセキュリティに関する主要な機能を試してみてください。
-ms.openlocfilehash: 2a4cd72cdb173afcce95250f8aa2916c8064cd26
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 96bfec80e828ec88866da740622ca252eaabf9e4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486497"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624649"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>試用版プレイブック: Microsoft Business Premium
 
@@ -29,8 +29,8 @@ Microsoft Business Premium 試用版プレイブックへようこそ。 この�
 
 [Microsoft 365 Business Premium 試用版を開始するか、購入する](get-microsoft-365-business-premium.md) 場合、最初の手順は、すべてをセットアップすることです。
 
-> [!Tip]
-> プレイブック内のリンクがこの場所から移動したら、このプレイブックに戻って続行します。
+> [!TIP]
+> このプレイブックをブラウザーのお気に入りに保存します。 プレイブック内のリンクがこの場所から移動したら、このプレイブックに戻って続行します。
 
 まず、[試用期間を設定](../business-premium/m365bp-setup.md) します。
 

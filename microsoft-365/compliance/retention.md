@@ -18,19 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なコンテンツを保持し不要なコンテンツを削除するのに役立つ、アイテム保持ポリシーと保持ラベルについて説明します。
-ms.openlocfilehash: 7124d97c56e414a7c5a47488805bb4134426f073
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: c78bcae040ae1c210c58923b924f099a5ec396bc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018032"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622527"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Teams でアイテム保持ポリシーに関するメッセージが表示される場合、あるいはアプリ内の保持ラベルについて質問がある場合は、IT 部門に連絡して、ポリシーがどのように構成されているかを確認します。その際、次の記事も参考にしてください。
@@ -259,7 +257,7 @@ Microsoft Purview コンプライアンス ポータルから、[**データの�
 |機能|アイテム保持ポリシー |保持ラベル|
 |:-----|:-----|:-----|:-----|
 |保持してから削除、保持のみ、削除のみを指定できる保持設定 |はい |はい |
-|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> いいえ <br /> いいえ <br /> いいえ |
+|サポートされるワークロード: <br />- Exchange <br />- SharePoint <br />- OneDrive <br />- Microsoft 365 グループ <br />- Skype for Business <br />- Teams<br />- Yammer|<br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい <br /> はい | <br /> はい (パブリック フォルダーを除く) <br /> はい <br /> はい <br /> はい <br /> 不要 <br /> 不要 <br /> いいえ |
 |保持の自動適用 | はい | はい |
 |保持期間の終了時に異なる保持設定を自動的に適用する | いいえ | はい |
 |条件に基づいて適用される保持 <br /> - 機密情報の種類、KQL クエリとキーワード、トレーニング可能な分類子、クラウド添付ファイル| いいえ | はい |
@@ -272,7 +270,7 @@ Microsoft Purview コンプライアンス ポータルから、[**データの�
 |廃棄の証明 (最大 7 年間) | いいえ |はい、処分レビューを使用するか、アイテムがレコードとしてマークされている場合|
 |管理者アクティビティを監査する| はい | はい|
 |保持アクションの監査| いいえ | はい <sup>\*</sup> |
-|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> いいえ | <br /> はい <br /> はい|
+|保持対象のアイテムの特定 <br /> - コンテンツ検索 <br /> - データ分類ページ、コンテンツ エクスプローラー、アクティビティ エクスプローラー | <br /> 不要 <br /> 不要 | <br /> はい <br /> はい|
 
 **脚注:**
 
@@ -550,39 +548,9 @@ Microsoft 365 の場所に対して複数の保持ポリシーと、発行また
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 
-保持コマンドレットを使用するには、最初に [Office 365 セキュリティ/コンプライアンス PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)必要があります。 次に、次のいずれかのコマンドレットを使用します。
+大規模な構成、自動化のためのスクリプト、または高度な構成シナリオで必要になる可能性のある Purview 保持コマンドレットに [Office 365 セキュリティ/コンプライアンス センターの PowerShell](/powershell/exchange/scc-powershell) を使用します。
 
-- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
-
-- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
-
-- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
-
-- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
-
-- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
-
-- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
-
-- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
-
-- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
-
-- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
-
-- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
-
-- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig)
-
-- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
-
-- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
-
-- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
-
-- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
-
-- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+使用可能なコマンドレットの一覧について、およびさまざまな場所でサポートされているコマンドレットを特定するには、「[アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット](retention-cmdlets.md)」を参照してください。
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>アイテム保持ポリシーと保持ラベルまたは電子情報開示用の保留を使用する場合
 

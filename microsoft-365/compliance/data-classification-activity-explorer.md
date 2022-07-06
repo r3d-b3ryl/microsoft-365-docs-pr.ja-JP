@@ -1,5 +1,5 @@
 ---
-title: アクティビティ エクスプローラーの使用を開始する
+title: アクティビティ エクスプローラーの概要
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,18 +18,18 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーを使用すると、ラベル付きコンテンツに対してユーザーが実行しているアクションを表示およびフィルター処理できます。
-ms.openlocfilehash: 93cd3910a79b136d95ba46fa79940d379340cf75
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: fc74e8c5e11834b14c6aa8a3f80d43e20c43ec11
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62806566"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642022"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
-データ[分類の概要と](data-classification-overview.md)[コンテンツ エクスプローラーの](data-classification-content-explorer.md)タブを使用すると、どのコンテンツが検出され、ラベル付けされ、そのコンテンツがどこに表示されるのかを確認できます。 アクティビティ エクスプローラーでは、ラベル付きコンテンツに対して実行される内容を監視できるようにすることで、こうした一連の機能性を完全なものにします。 アクティビティ エクスプローラーは、ラベル付きコンテンツのアクティビティの履歴ビューを提供します。 アクティビティ情報は、統合監査Microsoft 365ログから収集され、変換され、アクティビティ エクスプローラー UI で使用できます。 アクティビティ エクスプローラーは、最大 30 日分のデータについて報告します。
+[データ分類の概要](data-classification-overview.md)と[コンテンツ エクスプローラー](data-classification-content-explorer.md)のタブを使用すると、検出およびラベル付けされたコンテンツとそのコンテンツの場所を確認できます。 アクティビティ エクスプローラーでは、ラベル付きコンテンツに対して実行される内容を監視できるようにすることで、こうした一連の機能性を完全なものにします。 アクティビティ エクスプローラーは、ラベル付けされたコンテンツに対するアクティビティの履歴ビューを提供します。 アクティビティ情報は、Microsoft 365 統合監査ログから収集され、変換され、アクティビティ エクスプローラー UI で使用できるようになります。 アクティビティ エクスプローラーでは、最大 30 日間分のデータが報告されます。
 
-![プレースホルダー スクリーンショットの概要アクティビティ エクスプローラー。](../media/data-classification-activity-explorer-1.png)
+![プレースホルダースクリーンショットの概要アクティビティ エクスプローラー。](../media/data-classification-activity-explorer-1.png)
 
 使用可能なフィルターは 30 種類以上あり、以下がその一例です。
 
@@ -57,20 +57,20 @@ ms.locfileid: "62806566"
 
 ### <a name="permissions"></a>アクセス許可
 
-アカウントには、これらの役割グループのいずれかのメンバーシップを明示的に割り当てるか、役割を明示的に付与する必要があります。
+アカウントには、これらのロール グループのいずれかでメンバーシップを明示的に割り当てるか、ロールを明示的に付与する必要があります。
 
 ### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
 
-プレビューには、アクセス制御を微調整するためにテストアウトできる役割と役割グループがあります。
+プレビューには、アクセス制御を微調整するためにテストできるロールと役割グループがあります。
 
-プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
 - Information Protection レベル
@@ -89,7 +89,7 @@ ms.locfileid: "62806566"
 - セキュリティ管理者
 - コンプライアンス データ管理者
 
-**Microsoft 365ロール**
+**Microsoft 365 ロール**
 
 - コンプライアンス管理者
 - セキュリティ管理者
@@ -97,9 +97,9 @@ ms.locfileid: "62806566"
 
 ## <a name="activity-types"></a>アクティビティの種類
 
-アクティビティ エクスプローラーは、複数のアクティビティ ソースの監査ログからアクティビティ情報を収集します。 どのラベル付けアクティビティがアクティビティ エクスプローラーに表示されるかの詳細については、「アクティビティ エクスプローラーで利用可能なイベントのラベル付け [」を参照してください](data-classification-activity-explorer-available-events.md)。
+アクティビティ エクスプローラーは、アクティビティの複数のソースの監査ログからアクティビティ情報を収集します。 アクティビティ エクスプローラーに表示されるラベル付けアクティビティの詳細については、「アクティビティ エクスプローラー [で使用できるラベル付けイベント」を参照してください](data-classification-activity-explorer-available-events.md)。
 
- Office ネイティブ アプリケーション、Azure  Information Protection アドイン、SharePoint Online、Exchange Online (感度ラベルのみ)、および OneDrive からの感度ラベル アクティビティと保持ラベル付けアクティビティ。 次に例を示します。
+Office ネイティブ アプリケーション、Azure Information Protection アドイン、SharePoint Online、Exchange Online (秘密度ラベルのみ)、OneDrive からの機密ラベル **アクティビティ** と **保持ラベル付けアクティビティ**。 次に例を示します。
 
 - ラベルが適用されました
 - ラベルが変更されました (アップグレード、ダウングレード、または削除されました)
@@ -113,19 +113,19 @@ ms.locfileid: "62806566"
 - 保護を削除しました
 - 検出されたファイル
 
-アクティビティ エクスプローラーは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、および Windows 10 **デバイスからのイベントを収集します。エンドポイント データ損失防止 (DLP)。** デバイスからのイベントの例Windows 10ファイルです。
+アクティビティ エクスプローラーでは、Exchange Online、SharePoint Online、OneDrive、Teams チャットとチャネル (プレビュー)、オンプレミスの SharePoint フォルダーとライブラリ、オンプレミスのファイル共有、および **エンドポイント データ損失防止 (DLP)** を介したWindows 10 デバイスからのイベントと **一致する DLP ポリシー** も収集されます。 Windows 10 デバイスからのイベントの例を次に示します。
 
-- 削除
-- 作成
+- Deletions
+- 作品
 - クリップボードにコピー
 - Modified
 - 読み取り
-- 印刷済み
-- 名前の変更
-- ネットワーク共有にコピー
-- 許可されていないアプリからアクセスする 
+- 印刷
+- 変更
+- ネットワーク共有にコピー済み
+- 未承認のアプリからアクセスされる 
 
-機密性の高いラベル付きコンテンツで実行されるアクションを理解すると、データ損失防止ポリシーなどのコントロールが有効か、[](dlp-learn-about-dlp.md)有効ではないかを確認できます。 そうでない場合、つまり、多数の `highly confidential` でラベル付けされたアイテムおよび `general` にダウングレードされたアイテムなどの予想しない何かが検出された場合は、各種ポリシーを管理して、望ましくない動作を制限するための新しい操作を行うことができます。
+機密性の高いラベル付けされたコンテンツで実行されているアクションを理解すると、[Microsoft Purview データ損失防止](dlp-learn-about-dlp.md) ポリシーなどのコントロールが有効かどうかを確認できます。 そうでない場合、つまり、多数の `highly confidential` でラベル付けされたアイテムおよび `general` にダウングレードされたアイテムなどの予想しない何かが検出された場合は、各種ポリシーを管理して、望ましくない動作を制限するための新しい操作を行うことができます。
 
 > [!NOTE]
 > アクティビティ エクスプローラーは現在、Exchange Online の保持アクティビティを監視していません。
