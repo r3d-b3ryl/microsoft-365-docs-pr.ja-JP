@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Microsoft Purview Information Protection 機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報を保護できます。
-ms.openlocfilehash: b055e71ee6c22cc9804b82a36f339a73675ce914
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 4b221bb0019147d7527ee5b8692af9717204b44f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294649"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636097"
 ---
 # <a name="protect-your-sensitive-data-with-microsoft-purview"></a>Microsoft Purview を使用して機密データを保護する
 
@@ -31,8 +31,6 @@ ms.locfileid: "65294649"
 
 > [!TIP]
 > *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Microsoft Purview Information Protection** (以前の Microsoft Information Protection) の機能を実装すれば、機密情報がどこに保存されていても、どこに移動しても、それらの情報の検出、分類、保護が可能になります。
 

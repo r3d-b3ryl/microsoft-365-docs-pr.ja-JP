@@ -17,16 +17,14 @@ ms.collection:
 - M365-security-compliance
 description: Microsoft Purview Advanced Message Encryption を使用して、カスタム ブランド テンプレートを使用して電子メールの有効期限を設定することで、電子メールセキュリティを拡張します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 78855ae8906367293b69406ba74246619b5af465
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b93aad4f217f956561b686b1415c64456a4360db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015564"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635153"
 ---
 # <a name="set-an-expiration-date-for-email-encrypted-by-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールの有効期限を設定する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview Advanced Message Encryption は[、Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 (非営利団体スタッフ価格)、Office 365 Enterprise E5 (非営利団体スタッフ価格)、およびOffice 365 Education A5。 Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、またはOffice 365 Advanced Compliance SKU アドオン用のMicrosoft 365 E5 Compliance SKU アドオンMicrosoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、またはOffice 365 SKU。
 
@@ -44,7 +42,7 @@ Microsoft Purview Advanced Message Encryption を使用すると、カスタム 
 
 ## <a name="create-a-custom-branding-template-to-force-mail-expiration-by-using-powershell"></a>PowerShell を使用してメールの有効期限を強制するカスタム ブランド テンプレートを作成する
 
-1. [組織内の](/powershell/exchange/connect-to-exchange-online-powershell)グローバル管理者アクセス許可を持つアカウントで PowerShell をExchange Online Connect。
+1. 組織内のグローバル管理者アクセス許可を持つアカウントを使用して[、powerShell](/powershell/exchange/connect-to-exchange-online-powershell) Exchange Onlineに接続します。
 
 2. New-OMEConfiguration コマンドレットを実行します。
 

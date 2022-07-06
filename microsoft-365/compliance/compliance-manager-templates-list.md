@@ -16,17 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purview コンプライアンス マネージャーは、国内、地域、および業界の規制、標準、および法律に適合する評価を構築するためのテンプレートを提供します。
-ms.openlocfilehash: 1ee28bc4ef79e6565086ba087055b8e00a0fe034
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+description: Microsoft Purview コンプライアンス マネージャーには、国内、地域、および業界の規制、標準、および法律に適合する評価を構築するためのテンプレートが用意されています。
+ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692785"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631207"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。** コンプライアンス マネージャーで評価を作成するために使用できる **テンプレート** の包括的な一覧を表示します。
 
@@ -35,7 +33,7 @@ ms.locfileid: "65692785"
 
 ## <a name="overview"></a>概要
 
-[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md)は、評価を作成するための包括的なテンプレート セットを提供します。 これらのテンプレートは、組織がデータの収集と使用に関する国内、地域、そして業界固有の要件に準拠して管理することに役立ちます。
+[Microsoft Purview コンプライアンス マネージャー](compliance-manager.md) には、評価を作成するための包括的なテンプレート セットが用意されています。 これらのテンプレートは、組織がデータの収集と使用に関する国内、地域、そして業界固有の要件に準拠して管理することに役立ちます。
 
 新しい法律や規制が適用されると、テンプレートがコンプライアンス マネージャーに追加されます。 また、コンプライアンス マネージャーは、基になる法律や規制が変更されたときにテンプレートを更新します。 [更新プログラムを確認して同意](compliance-manager-assessments.md#accept-updates-to-assessments)する方法について詳しくは、こちらを参照してください。
 
@@ -43,7 +41,7 @@ ms.locfileid: "65692785"
 
 コンプライアンス マネージャーのテンプレートの完全な一覧を次に示します。 テンプレート名は、関連する規制または認定と一致します。 使用可能な場合は、以下のテンプレート名のリンクから、その標準、規制、または法律に関する関連ドキュメントにアクセスできます。
 
-各テンプレート ([Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) の既定のテンプレートを除く) は、Microsoft 365などの特定の製品で使用できるように設計された少なくとも 1 つのバージョンと、選択した他の製品を評価するために使用できるユニバーサル バージョンで使用できます。 テンプレート オプションの詳細については、「 [評価テンプレートの詳細](compliance-manager-templates.md)」を参照してください。
+各テンプレート ( [Microsoft Data Protection Baseline](compliance-manager-assessments.md#data-protection-baseline-default-assessment) の既定のテンプレートを除く) は、Microsoft 365 などの特定の製品で使用できるように設計された少なくとも 1 つのバージョンと、選択した他の製品を評価するために使用できるユニバーサル バージョンで使用できます。 テンプレート オプションの詳細については、「 [評価テンプレートの詳細](compliance-manager-templates.md)」を参照してください。
 
 また、コンプライアンス マネージャーで個々のテンプレートを選択して、テンプレートの規制とプロパティの説明など、そのテンプレートに関する詳細情報を表示することもできます。 概要については、 **About** セクションを参照してください。
 
@@ -72,7 +70,7 @@ ms.locfileid: "65692785"
 - NIST 800-53 Revs。 4 と 5
 
 > [!NOTE]
-> 米国政府Community (GCC) 中等度、GCC高、国防総省 (DoD) のお客様の場合:上記のテンプレートに加えて、サイバーセキュリティ成熟度モデル認定 (CMMC) レベル 1 ~ 5 のテンプレートが含まれています。
+> 米国政府機関コミュニティ (GCC) の中規模、GCC 高、および国防総省 (DoD) のお客様の場合は、上記のテンプレートに加えて、サイバーセキュリティ成熟度モデル認定 (CMMC) レベル 1 ~ 5 のテンプレートが含まれています。
 
 ## <a name="preview-templates"></a>テンプレートのプレビュー
 
@@ -89,7 +87,7 @@ ms.locfileid: "65692785"
 - AZURE の ISO 27018:2019 (プレビュー)
 - ISO 27018:2019 for Dynamics 365 (プレビュー)
 
-## <a name="premium-templates"></a>プレミアム テンプレート
+## <a name="premium-templates"></a>Premium テンプレート
 
 以下に示すテンプレートは、組織で購入できます。
 
@@ -125,7 +123,7 @@ ms.locfileid: "65692785"
 - ARMA - 一般的に受け入れられた記録保持原則 (GARP) の実装  
 - [CDSA Content Protection & Security Standard](/compliance/regulatory/offering-cdsa)  
 - [CIS 実装グループ 1、グループ 2、グループ 3](/compliance/regulatory/offering-cis-benchmark)
-- CIS Microsoft 365 Foundation レベル 1 および 2
+- CIS Microsoft 365 Foundation Level 1 および 2
 - [Cloud Security Alliance (CSA) クラウド コントロール マトリックス (CCM)](/compliance/regulatory/offering-csa-star-attestation)
 - COBIT 5  
 - FINRA サイバーセキュリティ チェックリスト  
@@ -140,7 +138,7 @@ ms.locfileid: "65692785"
 - 消費者金融および健康情報規制のプライバシー、NAIC MDL-672、2017 年第 2 四半期  
 - 運用リスクの健全な管理に関する原則の改訂 (運用リスクの運用)  
 - 標準化された情報収集 (SIG) アンケート  
-- [信頼された情報セキュリティ評価Exchange](/compliance/regulatory/offering-tisax-germany)
+- [信頼された情報セキュリティ評価 Exchange](/compliance/regulatory/offering-tisax-germany)
 
 ### <a name="us-government"></a>米国政府機関
 
@@ -287,7 +285,7 @@ ms.locfileid: "65692785"
 - オーストラリア - ASD Essential 8 成熟度レベル 2
 - オーストラリア - ASD Essential 8 成熟度レベル 3
 - オーストラリア - 国立公文書保管法
-- オーストラリア - パブリック レコードOffice、Officeの記録管理標準  
+- オーストラリア - パブリック レコード オフィス のインドレコード保管基準  
 - オーストラリア - スパム法 2003  
 - オーストラリアのプライバシー (クレジット レポート) コード  
 - オーストラリアのプライバシー保護法  
@@ -376,7 +374,7 @@ ms.locfileid: "65692785"
 - EudraLex - 欧州連合の医療製品を管理する規則  
 - ヨーロッパネットワークおよび情報セキュリティ機関 (ENISA) - クラウド コンピューティング情報アシュアランス フレームワーク  
 - フィンランド - データ保護法  
-- クラウド サービスの情報セキュリティの評価に関するフィンランドの基準
+- Cloud Servicesの情報セキュリティの評価に関するフィンランドの基準
 - フランス - データ保護法  
 - 個人データ保護に関するジョージア法  
 - ドイツ - リスク管理の最小要件の注釈付きテキスト  
@@ -440,7 +438,7 @@ ms.locfileid: "65692785"
 
 - カナダ - セキュリティセーフガード規則違反  
 - カナダ - British Columbia - Information Privacy & Security - FOIPPA  
-- [カナダ - 金融機関サイバーセキュリティSelf-Assessmentガイドの監督者のOffice](/compliance/regulatory/offering-osfi-canada)  
+- [カナダ - 金融機関サイバーセキュリティSelf-Assessmentガイドの監督のオフィス](/compliance/regulatory/offering-osfi-canada)  
 - カナダ - 個人用健康Information Protection法 (PHIPA) 2020  
 - カナダ - 個人用Information Protectionおよび電子文書法 (PIPEDA)  
 - カナダ - 保護された B

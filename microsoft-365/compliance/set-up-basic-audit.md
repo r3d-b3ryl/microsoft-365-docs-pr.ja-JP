@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365で監査 (Standard) を設定する
+title: Microsoft 365 で監査 (Standard) を設定する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -20,18 +20,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、組織内のユーザーと管理者が実行する監査アクティビティの検索を開始できるように、監査 (Standard) を設定する方法について説明します。
-ms.openlocfilehash: d9f685bd0438faa785f070b6b03707cda0184305
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 17f9e24f4c3159186011d3faefbd8796f51cc5ce
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091701"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632203"
 ---
 # <a name="set-up-microsoft-purview-audit-standard"></a>Microsoft Purview 監査を設定する (Standard)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft 365の Microsoft Purview Audit (Standard) を使用すると、ユーザーと管理者がさまざまなMicrosoft 365 サービスで実行されたアクティビティの監査レコードを検索できます。 監査 (Standard) は、ほとんどのMicrosoft 365およびOffice 365組織で既定で有効になっているため、組織内の他のユーザーが監査ログを検索する前に行う必要があるのはごくわずかです。
+Microsoft 365 のMicrosoft Purview 監査 (Standard) を使用すると、ユーザーと管理者がさまざまな Microsoft 365 サービスで実行されたアクティビティの監査レコードを検索できます。 監査 (Standard) は、ほとんどの Microsoft 365 およびOffice 365組織で既定で有効になっているため、自分や組織内の他のユーザーが監査ログを検索する前に行う必要があるのはごくわずかです。
 
 この記事では、監査 (Standard) を設定するために必要な次の手順について説明します。
 
@@ -39,7 +37,7 @@ Microsoft 365の Microsoft Purview Audit (Standard) を使用すると、ユー�
 
 これらの手順には、監査レコードの生成と保持に必要な適切な組織のサブスクリプションとユーザー ライセンスの確保と、監査ログを検索できるようにセキュリティ運用、IT、コンプライアンス、および法務チームのチーム メンバーにアクセス許可を割り当てることが含まれます。
 
-詳細については、「[Microsoft 365の監査 (Standard)](auditing-solutions-overview.md#audit-standard)」を参照してください。
+詳細については、 [Microsoft 365 の監査 (Standard) に関するページを](auditing-solutions-overview.md#audit-standard)参照してください。
 
 ## <a name="step-1-verify-organization-subscription-and-user-licensing"></a>手順 1: 組織のサブスクリプションとユーザー ライセンスを確認する
 
@@ -47,13 +45,13 @@ Microsoft 365の Microsoft Purview Audit (Standard) を使用すると、ユー�
 
 監査されたアクティビティがユーザーや管理者によって実行されると、監査記録が生成され、組織の監査ログに保存されます。 監査 (Standard) では、監査レコードは 90 日間監査ログに保持され、検索可能です。
 
-Audit (Standard) のサブスクリプションとライセンス要件の一覧については、[Microsoft 365の監査ソリューションに関するページを](auditing-solutions-overview.md#licensing-requirements)参照してください。
+監査 (Standard) のサブスクリプションとライセンス要件の一覧については、 [Microsoft 365 の監査ソリューションに関するページを](auditing-solutions-overview.md#licensing-requirements)参照してください。
 
 ## <a name="step-2-assign-permissions-to-search-the-audit-log"></a>手順 2: 監査ログを検索するためのアクセス許可を割り当てる
 
 監査ログを検索するには、調査チームの管理者とメンバーにView-Only監査ログまたは監査ログ ロールをExchange Onlineに割り当てる必要があります。 既定では、これらの役割は <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の [**アクセス許可**] ページでコンプライアンス管理役割グループまたは組織管理役割グループに割り当てられています。 Office 365 および Microsoft 365 のグローバル管理者は自動的に、組織管理役割グループのメンバーとして Exchange Online に追加されます。 最小限の特権レベルで監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、閲覧限定の監査ログまたは監査ログの役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「[Exchange Online で役割グループを管理する](/Exchange/permissions-exo/role-groups)」を参照してください。
 
-次のスクリーンショットは、Exchange管理センターの組織管理役割グループに割り当てられている 2 つの監査関連のロールを示しています。
+次のスクリーンショットは、Exchange 管理センターの組織管理役割グループに割り当てられた 2 つの監査関連のロールを示しています。
 
 ![Exchange Onlineの役割グループに割り当てられているロールを監査します。](../media/EACAuditRoles.png)
 

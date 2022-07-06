@@ -18,19 +18,17 @@ ms.custom: admindeeplinkDEFENDER
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft 365分類子は、さまざまな種類のコンテンツを認識するためのトレーニングを行うことができるツールです。このツールを使用すると、さまざまな種類のコンテンツを確認できます。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を高める方法について説明します。
-ms.openlocfilehash: d3a7639ed31dc42688cffbffb151049659a41660
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+description: Microsoft 365 分類子は、見るサンプルを提供することで、さまざまな種類のコンテンツを認識するようにトレーニングできるツールです。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を高める方法について説明します。
+ms.openlocfilehash: ff23f24145cee1b694f96e933919dddf779dfd9a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173206"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631383"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>トレーニング可能な分類子の使用を開始する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft 365トレーニング可能な分類子は、さまざまな種類のコンテンツを認識するためにトレーニングできるツールです。このツールを使用すると、サンプルを見ることができます。 トレーニングが完了したら、それを使用して、Office秘密度ラベル、通信コンプライアンス ポリシー、および保持ラベル ポリシーの適用項目を識別できます。
+Microsoft 365 トレーニング可能な分類子は、見るサンプルを提供することで、さまざまな種類のコンテンツを認識するようにトレーニングできるツールです。 トレーニングが完了したら、それを使用して、Office 秘密度ラベル、通信コンプライアンス ポリシー、およびアイテム保持ラベル ポリシーの適用項目を識別できます。
 
 最初にカスタムトレーニング可能な分類子を作成するには、人間が選ばれ、カテゴリに正に一致するサンプルを提供する必要があります。 次に、それらを処理した後、正と負のサンプルを組み合わせて分類子に予測する能力をテストします。 この記事では、カスタム分類子を作成してトレーニングする方法と、再トレーニングを通じてカスタムトレーニング可能な分類子と事前トレーニング済み分類子の有効期間にわたるパフォーマンスを向上させる方法について説明します。
 
@@ -60,7 +58,7 @@ UI で分類子にアクセスするには:
 
 - アイテム保持ラベル ポリシーのシナリオ: レコード管理ロールと保持管理ロール 
 - 秘密度ラベル ポリシーのシナリオ: セキュリティ管理者、コンプライアンス管理者、コンプライアンス データ管理者
-- コミュニケーション コンプライアンス ポリシーのシナリオ: Insider Risk Management 管理者、スーパーバイザー レビュー管理者 
+- コミュニケーション コンプライアンス ポリシーのシナリオ: Insider Risk Management 管理、スーパーバイザー レビュー管理者 
 
 > [!IMPORTANT]
 > 既定では、カスタム分類子を作成するユーザーのみが、その分類子によって行われた予測をトレーニングおよび確認できます。
@@ -76,7 +74,7 @@ UI で分類子にアクセスするには:
 ![trainable-classifier-timeline。](../media/trainable-classifier-deployment-timeline_border.png)
 
 > [!TIP]
-> トレーニング可能な分類子には、初めてオプトインが必要です。 Microsoft 365が組織のコンテンツのベースライン評価を完了するまでに 12 日かかります。 オプトイン プロセスを開始するには、グローバル管理者に問い合わせてください。
+> トレーニング可能な分類子には、初めてオプトインが必要です。 Microsoft 365 が組織のコンテンツのベースライン評価を完了するまでに 12 日かかります。 オプトイン プロセスを開始するには、グローバル管理者に問い合わせてください。
 
 ### <a name="overall-workflow"></a>全体的なワークフロー
 
@@ -98,17 +96,17 @@ UI で分類子にアクセスするには:
 
 ## <a name="how-to-create-a-trainable-classifier"></a>トレーニング可能な分類子を作成する方法
 
-1. 50 ~ 500 個のシード コンテンツ アイテムを収集します。 これらは、トレーニング可能な分類子が分類カテゴリ内にあると肯定的に識別するコンテンツの種類を強く表すサンプルである必要があります。 サポート[されているファイルの種類については、SharePoint Server の既定のクロールされたファイル名拡張子と解析された](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)ファイルの種類を参照してください。
+1. 50 ~ 500 個のシード コンテンツ アイテムを収集します。 これらは、トレーニング可能な分類子が分類カテゴリ内にあると肯定的に識別するコンテンツの種類を強く表すサンプルである必要があります。 サポート [されているファイルの種類については、SharePoint Server の既定のクロールされたファイル名拡張子と解析された](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) ファイルの種類を参照してください。
 
    > [!IMPORTANT]
    > シード セット内の項目が、カテゴリの **強力な** 例であることを確認します。 トレーニング可能な分類子は、最初に、それをシードした内容に基づいてモデルを構築します。 分類子は、すべてのシード サンプルが強力な陽性であり、サンプルがカテゴリに対して弱いか負の一致かどうかを知る方法がないことを前提としています。
 
-2. シード コンテンツのみを保持する専用のSharePoint Online フォルダーに *シード コンテンツを* 配置します。 サイト、ライブラリ、フォルダーの URL を書き留めます。
+2. シード コンテンツのみを保持する専用の SharePoint Online フォルダーに *シード コンテンツを* 配置します。 サイト、ライブラリ、フォルダーの URL を書き留めます。
 
    > [!TIP]
    > シード データ用に新しいサイトとフォルダーを作成する場合は、そのシード データを使用するトレーニング可能な分類子を作成する前に、その場所に少なくとも 1 時間はインデックスを付けます。
 
-3. コンプライアンス管理者またはセキュリティ管理者ロールアクセスを使用して Microsoft Purview コンプライアンス ポータルにサインインし、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender portalData 分類を</a> > 開 **きます**。
+3. コンプライアンス管理者またはセキュリティ管理者ロールへのアクセスを使用してMicrosoft Purview コンプライアンス ポータルにサインインし <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">、ポータルデータ分類Microsoft Purview コンプライアンス ポータル</a>または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a> > 開 **きます**。
 
 4. **[トレーニング可能な分類子]** タブを選択します。
 
@@ -116,7 +114,7 @@ UI で分類子にアクセスするには:
 
 6. このトレーニング可能な分類子で識別する項目のカテゴリと`Description`フィールドに適切な値`Name`を入力します。
 
-7. 手順 2. から、シード コンテンツ サイトのSharePointオンライン サイト、ライブラリ、およびフォルダー URL を選択します。 を選択します `Add`。
+7. 手順 2. から、シード コンテンツ サイトの SharePoint Online サイト、ライブラリ、フォルダーの URL を選択します。 を選択します `Add`。
 
 8. 設定を確認し、 `Create trainable classifier`.
 
@@ -127,16 +125,16 @@ UI で分類子にアクセスするには:
     > [!div class="mx-imgBorder"]
     > ![トレーニング可能な分類子をテストする準備ができました。](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. 最適な結果を得るには、少なくとも 200 個のテスト コンテンツ アイテム (最大 10,000 個) を収集します。 これらは、強い陽性、強いネガティブ、その性質上少し明らかでない項目の組み合わせである必要があります。 サポート[されているファイルの種類については、SharePoint Server の既定のクロールされたファイル名拡張子と解析された](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)ファイルの種類を参照してください。
+11. 最適な結果を得るには、少なくとも 200 個のテスト コンテンツ アイテム (最大 10,000 個) を収集します。 これらは、強い陽性、強いネガティブ、その性質上少し明らかでない項目の組み合わせである必要があります。 サポート [されているファイルの種類については、SharePoint Server の既定のクロールされたファイル名拡張子と解析された](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) ファイルの種類を参照してください。
 
-12. テスト コンテンツのみを保持する専用の SharePoint Online フォルダーに *テスト コンテンツを* 配置します。 SharePoint Online サイト、ライブラリ、フォルダーの URL を書き留めます。
+12. テスト コンテンツのみを保持する専用の SharePoint Online フォルダーに *テスト コンテンツを* 配置します。 SharePoint Online のサイト、ライブラリ、フォルダーの URL を書き留めます。
 
     > [!TIP]
     > テスト データ用に新しいサイトとフォルダーを作成する場合は、そのシード データを使用するトレーニング可能な分類子を作成する前に、その場所に少なくとも 1 時間はインデックスを付けます。
 
 13. を選択します `Add items to test`。
 
-14. 手順 12 から、テスト コンテンツ サイトの SharePoint Online サイト、ライブラリ、およびフォルダー URL を選択します。 を選択します `Add`。
+14. 手順 12 から、テスト コンテンツ サイトの SharePoint Online サイト、ライブラリ、フォルダーの URL を選択します。 を選択します `Add`。
 
 15. を選択してウィザードを `Done`終了します。 トレーニング可能な分類子は、テスト ファイルの処理に最大 1 時間かかります。
 
@@ -147,7 +145,7 @@ UI で分類子にアクセスするには:
 
 17. タブを選択 `Tested items to review` してアイテムを確認します。
 
-18. Microsoft 365は、一度に 30 個のアイテムを表示します。 それらを確認し、ボックスで`We predict this item is "Relevant". Do you agree?`いずれかまたはを選択します`No``Not sure, skip to next item`。`Yes` モデルの精度は、30 項目ごとに自動的に更新されます。
+18. Microsoft 365 では、一度に 30 個のアイテムが表示されます。 それらを確認し、ボックスで`We predict this item is "Relevant". Do you agree?`いずれかまたはを選択します`No``Not sure, skip to next item`。`Yes` モデルの精度は、30 項目ごとに自動的に更新されます。
 
     > [!div class="mx-imgBorder"]
     > ![[レビュー アイテム] ボックス。](../media/classifier-trainable-review-detail.png)
@@ -159,4 +157,4 @@ UI で分類子にアクセスするには:
 
 20. 分類子を発行します。
 
-21. 公開された分類子は、[秘密度ラベルを使用した自動ラベル付けOffice](apply-sensitivity-label-automatically.md)条件として使用できるようになります。条件と[通信コンプライアンス](communication-compliance.md)[に基づいてアイテム保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)します。
+21. 公開されると、機密ラベルを使用した [Office 自動ラベル付けの](apply-sensitivity-label-automatically.md)条件として分類子を使用できるようになります。条件と[通信コンプライアンス](communication-compliance.md)[に基づいてアイテム保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)します。

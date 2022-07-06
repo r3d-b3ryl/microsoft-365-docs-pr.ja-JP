@@ -23,16 +23,14 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkEXCHANGE
 description: 組織でのメッセージの保持、電子情報開示、保留に関する要件をサポートするためにアーカイブ メールボックスを有効または無効にする方法を説明します。
-ms.openlocfilehash: f95da36b48389bba2bd640825071dbff5c6ddb3d
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 0fef0db0af845a0e3e03f7747775eb41591002a3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772426"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635537"
 ---
 # <a name="enable-archive-mailboxes-in-the-microsoft-purview-compliance-portal"></a>Microsoft Purview コンプライアンス ポータルでアーカイブ メールボックスを有効にする
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft 365 でのアーカイブ (*インプレース アーカイブ* とも呼ばれます) では、追加のメールボックスの記憶域がユーザーに提供されます。 詳細については、「[アーカイブ メールボックスの詳細](archive-mailboxes.md)」を参照してください。
 

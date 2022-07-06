@@ -16,28 +16,26 @@ ms.collection:
 search.appverid:
 - MET150
 description: 高度なメッセージ暗号化は、管理者が保護されたメッセージでさらに多くのことを行うことを可能にすることで、組織がコンプライアンスの義務を果たすのに役立ちます。
-ms.openlocfilehash: 077a17921c456ddff30e7490611dd4e78aaa5232
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: a4b970c005b49067e59254ff549200a9118f6cd4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393288"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632159"
 ---
 # <a name="advanced-message-encryption"></a>高度なメッセージ暗号化
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview高度なメッセージ暗号化は[、Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 (非営利団体スタッフ価格)、Office 365 Enterprise E5 (非営利団体スタッフ) に含まれています価格)、A5 Office 365 Education。 組織に高度なメッセージ暗号化Microsoft Purview含まないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、またはMicrosoft 365 E5 Compliance SKU アドオンで購入できます。Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、Office 365 SKU、またはMicrosoft 365 E5/A5 Information Protection用のOffice 365 Advanced Compliance SKU アドオン Microsoft 365 A3/E3 用のガバナンス SKU アドオン。
+Microsoft Purview Advanced Message Encryption は[、Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/enterprise/home)、Office 365 E5、Microsoft 365 E5 (非営利団体スタッフ価格)、Office 365 Enterprise E5 (非営利団体スタッフ価格)、およびOffice 365 Education A5。 組織に Microsoft Purview Advanced Message Encryption を含まないサブスクリプションがある場合は、Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフ価格)、またはMicrosoft 365 E5 Compliance SKU アドオンで購入できます。Microsoft 365 E3、Microsoft 365 E3 (非営利団体スタッフの価格)、Office 365 SKU、またはMicrosoft 365 E5/A5 Information Protection用のOffice 365 Advanced Compliance SKU アドオン Microsoft 365 A3/E3 用のガバナンス SKU アドオン。
 
 高度なメッセージ暗号化は、外部受信者と暗号化された電子メールへのアクセスに対してより柔軟な制御を必要とするコンプライアンスの義務を満たすのに役立ちます。 Office 365の高度なメッセージ暗号化を使用すると、自動ポリシーを使用して組織外で共有される機密メールを制御し、暗号化されたメッセージ ポータルのアクセス ログを使用してそれらのアクティビティを追跡できます。 PII、財務、正常性 ID などの機密情報の種類を識別するようにこれらのポリシーを構成するか、キーワードを使用して保護を強化することができます。 ポリシーを構成したら、ポリシーとカスタム ブランドの電子メール テンプレートを組み合わせ、ポリシーに合った電子メールをさらに制御するための有効期限を追加します。 また、管理者は、いつでもメールへのアクセスを取り消すことで、セキュリティで保護された Web ポータルを介して外部からアクセスされる暗号化されたメールをさらに制御できます。
 
 外部の受信者に送信された電子メールの有効期限を取り消して設定することだけが可能です。
 
-## <a name="get-started-with-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview高度なメッセージ暗号化を使用した概要
+## <a name="get-started-with-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Advanced Message Encryption の使用を開始する
 
 次の記事では、高度なメッセージ暗号化を設定して使用する方法について説明します。
 
-組織には、高度なメッセージ暗号化Microsoft Purview含むサブスクリプションが必要です。 サポートされているサブスクリプションの詳細については、 [メッセージ ポリシーとコンプライアンス サービスの説明](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)を参照してください。
+組織には、Microsoft Purview Advanced Message Encryption を含むサブスクリプションが必要です。 サポートされているサブスクリプションの詳細については、 [メッセージ ポリシーとコンプライアンス サービスの説明](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance)を参照してください。
 
 Office 365メッセージ暗号化がまだ設定されていない場合は、「[新しいOffice 365メッセージ暗号化機能を設定する](set-up-new-message-encryption-capabilities.md)」を参照してください。
 
@@ -45,8 +43,8 @@ Office 365メッセージ暗号化がまだ設定されていない場合は、�
 
 メッセージを取り消し、有効期限をユーザーがポータルから受け取るメッセージにのみ適用できます。 つまり、カスタム ブランド テンプレートが適用された電子メール。 詳細と例については、「 [すべての外部受信者が OME ポータルを使用して暗号化されたメールを読み取っていることを確認する](manage-office-365-message-encryption.md#ensure-all-external-recipients-use-the-ome-portal-to-read-encrypted-mail)」のガイダンスを参照してください。
 
-[高度なメッセージ暗号化によって暗号化された電子メールの有効期限Microsoft Purview設定](ome-advanced-expiration.md)します。 セキュリティで保護された Web ポータルから暗号化された電子メールへのアクセスを期限切れにすることで保護を強化する自動ポリシーを使用して、組織外で共有される機密性の高いメールを制御します。
+[Microsoft Purview Advanced Message Encryption によって暗号化された電子メールの有効期限を設定](ome-advanced-expiration.md)します。 セキュリティで保護された Web ポータルから暗号化された電子メールへのアクセスを期限切れにすることで保護を強化する自動ポリシーを使用して、組織外で共有される機密性の高いメールを制御します。
 
-[高度なメッセージ暗号化によって暗号化された電子メールMicrosoft Purview取り消します](revoke-ome-encrypted-mail.md)。 組織外で共有される機密性の高いメールを制御し、セキュリティで保護された Web ポータルから暗号化された電子メールへのアクセスを取り消すことで保護を強化します。
+[Microsoft Purview Advanced Message Encryption によって暗号化された電子メールを取り消します](revoke-ome-encrypted-mail.md)。 組織外で共有される機密性の高いメールを制御し、セキュリティで保護された Web ポータルから暗号化された電子メールへのアクセスを取り消すことで保護を強化します。
 
-[高度なメッセージ暗号化をMicrosoft Purviewして、暗号化されたメッセージ ポータルアクティビティ ログ](ome-message-access-logs.md)。 暗号化されたメッセージ ポータルで、組織外で共有されている機密性の高いメールを監視します。
+[Microsoft Purview Advanced Message Encryption による暗号化されたメッセージ ポータル アクティビティ ログ](ome-message-access-logs.md)。 暗号化されたメッセージ ポータルで、組織外で共有されている機密性の高いメールを監視します。

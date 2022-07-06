@@ -18,19 +18,17 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーは、組織がリスク評価を簡素化および自動化するのに役立ち、リスクに対処するために推奨されるアクションを提案します。
-ms.openlocfilehash: dc08d38da7c02ef0c02401244934b7d2338ab5f7
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 74783c99873b76d3b3637947203bb58d4a656b13
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574098"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634745"
 ---
 # <a name="microsoft-purview-compliance-manager"></a>Microsoft Purview コンプライアンス マネージャー
 
 > [!TIP]
 > *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。** コンプライアンス マネージャーとは何か、コンプライアンスを簡素化してリスクを軽減する方法、およびその主要なコンポーネントについて説明します。
 

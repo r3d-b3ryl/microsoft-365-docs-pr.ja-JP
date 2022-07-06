@@ -16,18 +16,16 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: 管理者が powerShell と CSV ファイルExchange Online使用して、外部連絡先をグローバル アドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 5e80453326159010aaae81a8b810396f5a7294cf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 40e8c44a45e8d8d0c416f3f00df57e24504a4e70
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093550"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633809"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先をExchange Onlineに一括インポートする
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-**この記事は管理者向けです。連絡先を自分のメールボックスにインポートしようとしていますか?Outlook [への連絡先のインポートに関する](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)Outlook**
+**この記事は管理者向けです。連絡先を自分のメールボックスにインポートしようとしていますか?[Outlook に連絡先をインポートするを](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)参照してください**
    
 会社には、Exchange Onlineの共有アドレス帳 (グローバル アドレス一覧とも呼ばれます) に含める既存のビジネス連絡先が多数存在しますか? 社内のユーザーと同様に、外部連絡先を配布グループのメンバーとして追加しますか? その場合は、Exchange Online PowerShell と CSV (コンマ区切り値) ファイルを使用して、外部連絡先をExchange Onlineに一括インポートできます。 これは 3 段階のプロセスです。
   
@@ -63,7 +61,7 @@ ms.locfileid: "65093550"
     > [!NOTE]
     > このテキストには、削除できるサンプル データが含まれています。 ただし、最初の (ヘッダー) 行は削除または変更しないでください。 外部連絡先のすべてのプロパティが含まれています。 
   
-2. Microsoft Excelで CSV ファイルを開いて CSV ファイルを編集する方法は、Excelを使用して CSV ファイルを編集する方がはるかに簡単であるためです。
+2. Excel を使用して CSV ファイルを編集する方がはるかに簡単であるため、Microsoft Excel で CSV ファイルを開いて CSV ファイルを編集します。
     
 3. Exchange Onlineにインポートする連絡先ごとに行を作成します。 できるだけ多くのセルを設定します。 この情報は、各連絡先の共有アドレス帳に表示されます。 
     
@@ -74,7 +72,7 @@ ms.locfileid: "65093550"
 
 次の手順では、手順 1 と PowerShell で作成した CSV ファイルを使用して、CSV ファイルに一覧表示されている外部連絡先をExchange Onlineに一括インポートします。 
   
-1.  PowerShell をExchange Online組織にConnectします。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 PowerShell に接続するときは、必ずグローバル管理者アカウントのユーザー名とパスワードExchange Online使用してください。 
+1.  PowerShell をExchange Online組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 PowerShell に接続するときは、必ずグローバル管理者アカウントのユーザー名とパスワードExchange Online使用してください。 
     
 2. PowerShell をExchange Onlineに接続した後、手順 1. で CSV ファイルを保存したデスクトップ フォルダーに移動します。たとえば`C:\Users\Administrator\desktop`、
     
@@ -86,14 +84,14 @@ ms.locfileid: "65093550"
 
     インポートする連絡先の数によっては、新しい連絡先の作成に時間がかかる場合があります。 コマンドの実行が完了すると、作成された新しい連絡先の一覧が PowerShell に表示されます。 
     
-4. 新しい外部連絡先を表示するには、Exchange管理センター (EAC) に移動し、[**受信者の** \> <a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank">**連絡先**</a>] をクリックします。 
+4. 新しい外部連絡先を表示するには、Exchange 管理センター (EAC) に移動し、[ **受信者の** \> <a href="https://go.microsoft.com/fwlink/?linkid=2182970" target="_blank">**連絡先**</a>] をクリックします。 
     
     > [!TIP]
-    > EAC に接続する手順については、[Exchange Onlineの管理センター Exchange](/exchange/exchange-admin-center)参照してください。 
+    > EAC に接続する手順については、[Exchange Onlineの Exchange 管理センターに関するページを](/exchange/exchange-admin-center)参照してください。 
   
 5. 必要に応じて、[ **更新]** をクリックしてリストを更新し、インポートされた外部連絡先を表示します。 
     
-    インポートされた連絡先は、OutlookとOutlook on the webの共有アドレス帳に表示されます。
+    インポートされた連絡先は、Outlook とOutlook on the webの共有アドレス帳に表示されます。
     
     > [!NOTE]
     > [**ユーザー**\>の連絡先] に移動して、Microsoft 365 管理センターの **連絡先** を表示することもできます。 
@@ -102,7 +100,7 @@ ms.locfileid: "65093550"
 
 手順 2 でコマンドを実行すると、外部連絡先は作成されますが、連絡先や組織の情報は含まれません。これは、CSV ファイル内のほとんどのセルからの情報です。 これは、新しい外部連絡先を作成するときに、必要なプロパティのみが設定されるためです。 CSV ファイルにすべての情報が入力されていない場合は、心配しないでください。 存在しない場合は、追加されません。
   
-1.  PowerShell をExchange Online組織にConnectします。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1.  PowerShell をExchange Online組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
     
 2. 手順 1 で CSV ファイルを保存したデスクトップ フォルダーに移動します。たとえば、. `C:\Users\Administrator\desktop`
     
@@ -124,11 +122,11 @@ ms.locfileid: "65093550"
     
 4. プロパティが連絡先に追加されたことを確認するには、 
     
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>で、[**受信者の**\>連絡先] に移動 **します**。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>で、[**受信者の**\>連絡先] に移動 **します**。
     
 2. 連絡先をクリックし、[ **編集]** ![アイコンをクリックします。](../media/ebd260e4-3556-4fb0-b0bb-cc489773042c.gif) をクリックすると、連絡先のプロパティが表示されます。 
     
-手順は以上です。 ユーザーは、アドレス帳のOutlookとOutlook on the webで連絡先と追加情報を確認できます。
+手順は以上です。 ユーザーは、アドレス帳 Outlook とOutlook on the webで連絡先と追加情報を確認できます。
   
 ## <a name="add-more-external-contacts"></a>外部連絡先をさらに追加する
 
@@ -141,7 +139,7 @@ ms.locfileid: "65093550"
 
 一部の企業では、外部連絡先を配布グループのメンバーとして追加できるようにのみ使用できます。 このシナリオでは、共有アドレス帳から外部連絡先を非表示にすることができます。 次の操作を実行してください。
   
-1.  PowerShell をExchange Online組織にConnectします。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+1.  PowerShell をExchange Online組織に接続します。 詳しい手順については、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
     
 2. 1 つの外部連絡先を非表示にするには、次のコマンドを実行します。
     

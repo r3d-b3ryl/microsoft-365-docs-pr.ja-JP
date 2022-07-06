@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示のレビュー セット内のデータを分析する (プレミアム)
+title: 電子情報開示 (Premium) のレビュー セット内のデータを分析する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Microsoft Purview 電子情報開示 (プレミアム) ケースを分析するときにドキュメント セットを整理するために使用できるツールについて説明します。
+description: Microsoft Purview eDiscovery (Premium) ケースを分析するときにドキュメント セットを整理するために使用できるツールについて説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: af34a790881cad2af5d278cf187b963f0aa58146
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 822c21c05b865bdf1208f7679eaff9ea35b10a9e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099831"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634833"
 ---
-# <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>電子情報開示のレビュー セット内のデータを分析する (プレミアム)
+# <a name="analyze-data-in-a-review-set-in-ediscovery-premium"></a>電子情報開示 (Premium) のレビュー セット内のデータを分析する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-収集されたドキュメントの数が多い場合、それらをすべて確認することは困難な場合があります。 Microsoft Purview 電子情報開示 (プレミアム) には、ドキュメントを分析して、情報を失うことなく確認するドキュメントの量を減らし、ドキュメントを一貫した方法で整理するのに役立つツールが多数用意されています。 これらの機能の詳細については、次を参照してください。
+収集されたドキュメントの数が多い場合、それらをすべて確認することは困難な場合があります。 Microsoft Purview eDiscovery (Premium) には、ドキュメントを分析して、情報を失うことなく確認するドキュメントの量を減らし、ドキュメントを一貫した方法で整理するのに役立つツールが多数用意されています。 これらの機能の詳細については、次を参照してください。
 
 - [準重複の検出](near-duplicate-detection-in-advanced-ediscovery.md)
 
@@ -44,7 +42,7 @@ ms.locfileid: "65099831"
 
 2. 分析するレビュー セットを開きます。
 
-3. [**AnalyticsRun** >  **ドキュメント&電子メール分析**] をクリックします。
+3. [ **Analytics** > **Run document &電子メール分析**] をクリックします。
 
    ![[分析] ドロップダウン リストから [ドキュメント&電子メール分析の実行] を選択します。](..\media\RunAnalytics1.png)
 
@@ -72,12 +70,12 @@ ms.locfileid: "65099831"
 
 - **ドキュメントとその他**。 重複するドキュメントを除外します。 レビュー セット内で一意のドキュメントのみが表示されます。
 
-- **会話をTeamsします**。 レビュー セット内のすべてのTeams (およびYammer) 会話が表示されます。
+- **Teams の会話**。 レビュー セット内のすべての Teams (および Yammer) 会話が表示されます。
 
-包含型とドキュメントの一意性の詳細については、「[電子情報開示での電子メール スレッド (プレミアム)」](email-threading-in-advanced-ediscovery.md)を参照してください。
+包含型とドキュメントの一意性の詳細については、「 [電子情報開示での電子メール スレッド (Premium)](email-threading-in-advanced-ediscovery.md)」を参照してください。
 
 > [!NOTE]
-> 電子情報開示 (プレミアム) の [新しいケース形式](advanced-ediscovery-new-case-format.md)のパブリック プレビュー中に、**For Review** フィルター クエリは、2021 年 11 月 4 日より前に作成されたレビュー セット (大きなケース形式を使用する場合) のTeamsまたはYammer会話を返しませんでした。 この問題は解決されました。 つまり、大きなケース形式を使用するケースでレビュー セットに **For Review** クエリを再適用すると、すべてのTeamsまたはYammerの会話が含まれるため、フィルター クエリに一致するアイテムが多く表示される可能性があります。
+> 電子情報開示 (Premium) の [新しいケース形式](advanced-ediscovery-new-case-format.md) のパブリック プレビューでは、 **For Review** フィルター クエリは、2021 年 11 月 4 日より前に作成されたレビュー セット (大きなケース形式を使用する場合) の Teams または Yammer の会話を返しませんでした。 この問題は解決されました。 つまり、大きなケース形式を使用するケースでレビュー セットに **For Review** クエリを再適用すると、すべての Teams または Yammer 会話が含まれるため、フィルター クエリに一致するアイテムが多く表示される可能性があります。
 
 ## <a name="analytics-report"></a>分析レポート
 
@@ -85,7 +83,7 @@ ms.locfileid: "65099831"
 
 1. レビュー セットを開きます。
 
-2. **[AnalyticsShow** >  レポート] をクリック **します**。
+2. [ **分析レポート** > **の表示**] をクリックします。
 
 **分析** レポートには、分析の 7 つのコンポーネントがあります。
 

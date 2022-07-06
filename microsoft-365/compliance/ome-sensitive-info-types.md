@@ -20,22 +20,20 @@ description: Office 365 メッセージ暗号化を使用して、組織の機�
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 908ec1cf55d8bee06ce9b3b6ccc8eb699d2ba291
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 0974c30882177eb9fc46c2a2fcf65bc2edb43078
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012294"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633435"
 ---
 # <a name="create-a-sensitive-information-type-policy-for-your-organization-using-message-encryption"></a>メッセージ暗号化を使用して組織の機密情報の種類ポリシーを作成する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Exchangeメール フロー ルールまたは Microsoft Purview データ損失防止 (DLP) のいずれかを使用して、Office 365 メッセージ暗号化を使用して機密情報の種類のポリシーを作成できます。 Exchangeメール フロー ルールを作成するには、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター (EAC)</a> または PowerShell を使用します。
+Exchange メール フロー ルールまたは Microsoft Purview データ損失防止 (DLP) のいずれかを使用して、Office 365 Message Encryption を使用して機密情報の種類のポリシーを作成できます。 Exchange メール フロー ルールを作成するには、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター (EAC)</a> または PowerShell を使用します。
 
 ## <a name="to-create-the-policy-by-using-mail-flow-rules-in-the-eac"></a>EAC でメール フロー ルールを使用してポリシーを作成するには
 
-<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>にサインインし、**メール フロー** >  ルールに移動 **します**。 [ルール] ページで、メッセージ暗号化Office 365適用するルールを作成します。 メッセージまたは添付ファイルに特定のキーワードや機密情報の種類が存在するなどの条件に基づいてルールを作成できます。
+<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>にサインインし、**メール フロー** >  ルールに移動 **します**。 [ルール] ページで、メッセージ暗号化Office 365適用するルールを作成します。 メッセージまたは添付ファイルに特定のキーワードや機密情報の種類が存在するなどの条件に基づいてルールを作成できます。
 
 ### <a name="to-create-the-policy-by-using-mail-flow-rules-in-powershell"></a>PowerShell でメール フロー ルールを使用してポリシーを作成するには
 
@@ -43,7 +41,7 @@ Exchangeメール フロー ルールまたは Microsoft Purview データ損失
 
 ## <a name="example-mail-flow-rule-created-with-powershell"></a>PowerShell で作成されたメール フロー ルールの例
 
-PowerShell で次のコマンドを実行して、電子メールまたはその添付ファイルに次の機密情報の種類が含まれている場合に、暗号化専用オプションを使用して組織外で送信された電子メールを自動的に暗号化するExchangeメール フロー ルールを作成します。
+PowerShell で次のコマンドを実行して、電子メールまたはその添付ファイルに次の機密情報の種類が含まれている場合に、暗号化専用オプションを使用して組織外で送信された電子メールを自動的に暗号化する Exchange メール フロー ルールを作成します。
 
 - ABA ルーティング番号
 - クレジット カード番号
@@ -68,12 +66,12 @@ Microsoft がメッセージを暗号化した後、受信者は暗号化され�
 
 この変更に備えて組織内のユーザーを準備するために、該当するエンド ユーザーのドキュメントとトレーニング資料を更新することができます。 必要に応じて、次のOffice 365メッセージ暗号化リソースをユーザーと共有します。
 
-- [PC のOutlookで暗号化されたメッセージを送信、表示、返信する](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
+- [Outlook for PC で暗号化されたメッセージを送信、表示、返信する](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980)
 - [Microsoft 365 Essentials ビデオ: メッセージ暗号化](https://youtu.be/CQR0cG_iEUc)
 
 ## <a name="view-these-changes-in-the-audit-log"></a>監査ログでこれらの変更を表示する
 
-Microsoft 365このアクティビティを監査し、管理者が使用できるようにします。 この操作は "New-TransportRule" であり、セキュリティ & コンプライアンス センターの監査ログ検索のサンプル監査エントリのスニペットを次に示します。
+Microsoft 365 は、このアクティビティを監査し、管理者が利用できるようにします。 この操作は "New-TransportRule" であり、セキュリティ & コンプライアンス センターの監査ログ検索のサンプル監査エントリのスニペットを次に示します。
 
 ```text
 *{"CreationTime":"2018-11-28T23:35:01","Id":"a1b2c3d4-daa0-4c4f-a019-03a1234a1b0c","Operation":"New-TransportRule","OrganizationId":"123456-221d-12345 ","RecordType":1,"ResultStatus":"True","UserKey":"Microsoft Operator","UserType":3,"Version":1,"Workload":"Exchange","ClientIP":"123.456.147.68:17584","ObjectId":"","UserId":"Microsoft Operator","ExternalAccess":true,"OrganizationName":"contoso.onmicrosoft.com","OriginatingServer":"CY4PR13MBXXXX (15.20.1382.008)","Parameters": {"Name":"Organization","Value":"123456-221d-12346"{"Name":"ApplyRightsProtectionTemplate","Value":"Encrypt"},{"Name":"Name","Value":"Encrypt outbound sensitive emails (out of box rule)"},{"Name":"MessageContainsDataClassifications"...etc.*
@@ -81,4 +79,4 @@ Microsoft 365このアクティビティを監査し、管理者が使用でき�
 
 ## <a name="to-disable-or-customize-the-sensitive-information-types-policy"></a>機密情報の種類ポリシーを無効またはカスタマイズするには
 
-Exchangeメール フロー ルールを作成したら、Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>の **メール フロー** > **ルール** に移動し、ルール "*送信機密メールを暗号化する (既定のルール)* を無効にすることで、ルールを [無効または編集](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)できます。
+Exchange メール フロー ルールを作成したら、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の **メール フロー** > **ルール** に移動し、ルール "*送信機密メールを暗号化する (既定のルール)* を無効にすることで、ルールを [無効または編集](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules#enable-or-disable-a-mail-flow-rule)できます。

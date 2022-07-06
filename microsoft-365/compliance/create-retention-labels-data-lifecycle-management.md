@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除できるように、データ ライフサイクル管理のアイテム保持ポリシーに対する例外の保持ラベルを作成する手順。
-ms.openlocfilehash: 082297e7d967493dc2ca4bb73be408b320e1775c
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285926"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632577"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>アイテム保持ポリシーの例外の保持ラベルを作成する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 必要なものを保持し、不要なものを削除するためのデータ ガバナンス戦略の一環として、アイテム保持ポリシーの例外を必要とするアイテムの保持ラベルをいくつか作成することが必要になる場合があります。
 

@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft Purview コンプライアンス ポータルのインポート サービスを使用して、メール データ (PSTファイル) をユーザーのメールボックスに一括でインポートする方法について説明します。
-ms.openlocfilehash: c1a7cd9a2c2c0a3ee564710461796c690c7391b5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 254d9cc31e4d8be88671ca59de176a308ae008a8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092759"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636119"
 ---
 # <a name="learn-about-importing-your-organizations-pst-files"></a>組織の PST ファイルのインポートに関する詳細
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > この記事は管理者向けです。自分のメールボックスに PST ファイルをインポートする場合は、「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。

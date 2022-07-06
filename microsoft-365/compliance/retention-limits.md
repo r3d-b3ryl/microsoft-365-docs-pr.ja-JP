@@ -18,18 +18,16 @@ search.appverid:
 - MET150
 hideEdit: true
 description: アイテム保持ポリシーおよび保持ラベル ポリシーのポリシーおよびポリシーごとの項目の最大数を把握する
-ms.openlocfilehash: a0246fef2ae72dd2b0b176f82bb42559d405eaa5
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: fba8d0385831b4f05bbf0a967072d64eead5644a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754038"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633413"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>アイテム保持ポリシーとアイテム保持ラベルの制限
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [アイテム保持ポリシーと保持ラベル ポリシー](retention.md#retention-policies-and-retention-labels)を使用して、組織のデータを自動的に保持または削除する場合、注意すべき最大数がいくつかあります。
 

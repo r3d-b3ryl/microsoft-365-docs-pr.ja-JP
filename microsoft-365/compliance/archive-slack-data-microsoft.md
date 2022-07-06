@@ -1,5 +1,5 @@
 ---
-title: Microsoft が提供するデータ コネクタを使用して Slack 電子情報開示データをMicrosoft 365にアーカイブする
+title: Microsoft が提供するデータ コネクタを使用して、Slack 電子情報開示データを Microsoft 365 にアーカイブする
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -12,40 +12,38 @@ ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft が提供する Slack 電子情報開示データ コネクタを設定して使用して、インスタント メッセージング データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 65d7b666390c132995882ca4e8d027064482df13
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 138a93449b4b2a9ce7b57b4c240f2e42c553d818
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65320686"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631483"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Slack 電子情報開示データをアーカイブするコネクタを設定する (プレビュー)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft が提供する Slack 電子情報開示データ コネクタは、組織の Slack ワークスペースからMicrosoft 365にインスタント メッセージング データ (メッセージ、添付ファイル、リンク、リビジョンなど) をインポートおよびアーカイブするのに役立ちます。 データ コネクタは Slack API からデータをプルし、それを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。 Slack データがインポートされたら、訴訟ホールド、Microsoft Purview電子情報開示 (プレミアム)、通信コンプライアンス、保持設定などのコンプライアンス ソリューションを Slack コンテンツに適用できます。 Slack 電子情報開示データ コネクタを使用してMicrosoft 365にデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+Microsoft から提供される Slack 電子情報開示データ コネクタは、組織の Slack ワークスペースから Microsoft 365 にインスタント メッセージング データ (メッセージ、添付ファイル、リンク、リビジョンなど) をインポートおよびアーカイブするのに役立ちます。 データ コネクタは Slack API からデータをプルし、それを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。 Slack データがインポートされたら、訴訟ホールド、Microsoft Purview eDiscovery (Premium)、通信コンプライアンス、保持設定などのコンプライアンス ソリューションを Slack コンテンツに適用できます。 Slack 電子情報開示データ コネクタを使用して Microsoft 365 でデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Slack 電子情報開示データのアーカイブの概要
 
-次の概要では、Microsoft データ コネクタを使用してMicrosoft 365で Slack データをアーカイブするプロセスについて説明します。
+次の概要では、Microsoft データ コネクタを使用して Microsoft 365 で Slack データをアーカイブするプロセスについて説明します。
 
 ![Slack 電子情報開示のアーカイブ ワークフロー。](../media/SlackMSFTConnectorWorkflow.png)
 
 1. 組織は Slack と連携して Slack ワークスペースを設定および構成します。
 
-2. データ コネクタを設定すると、組織の Slack ワークスペースからのメッセージがMicrosoft 365のユーザー メールボックスにコピーされます。 また、データ コネクタは、チャット メッセージの内容を電子メール メッセージ形式に変換します。
+2. データ コネクタを設定すると、組織の Slack ワークスペースからのメッセージが Microsoft 365 のユーザー メールボックスにコピーされます。 また、データ コネクタは、チャット メッセージの内容を電子メール メッセージ形式に変換します。
 
 3. コネクタは、変換されたチャット メッセージを特定のユーザーのメールボックスにインポートします。 **Slack 電子情報開示** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、チャット メッセージ アイテムがそのフォルダーにインポートされます。
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタを設定する前に
 
-- 組織には、Slack の Enterprise Grid サブスクリプションが必要です。 詳細については、「 [Slack サブスクリプションと機能](https://slack.com/intl/en-gb/help/articles/115003205446-Slack-subscriptions-and-features-)」を参照してください。
+- 組織には、Slack 用の Enterprise Grid サブスクリプションが必要です。 詳細については、「 [Slack サブスクリプションと機能](https://slack.com/intl/en-gb/help/articles/115003205446-Slack-subscriptions-and-features-)」を参照してください。
 
 - データ コネクタを作成するユーザーには、Slack 組織で **組織の所有者** アプリケーション ロールを割り当てる必要があります。 詳細については、「 [Slack のロールの種類](https://slack.com/intl/en-gb/help/articles/360018112273-Types-of-roles-in-Slack)」を参照してください。
 
 - 組織の Slack エンタープライズ アカウントのユーザー名とパスワードを取得します。 これらの資格情報を使用して、データ コネクタを作成するときにこのアカウントにサインインします。 また、シングル サインオン (SSO) を使用するように構成された Slack 組織内の自動ユーザー プロビジョニングを行うことをお勧めします。 [セキュリティ & コンプライアンス センターのロール](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)
 
-- Slack 電子情報開示コネクタを作成するユーザーには、データ コネクタ管理者ロールが割り当てられている必要があります。 このロールは、Microsoft Purview コンプライアンス ポータルの **[データ コネクタ**] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- Slack 電子情報開示コネクタを作成するユーザーには、Data Connector 管理 ロールが割り当てられている必要があります。 このロールは、Microsoft Purview コンプライアンス ポータルの **[データ コネクタ**] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者がカスタムロール グループを作成し、Data Connector 管理ロールを割り当ててから、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
 ## <a name="step-1-create-a-slack-ediscovery-connector"></a>手順 1: Slack 電子情報開示コネクタを作成する
 
@@ -77,7 +75,7 @@ Microsoft が提供する Slack 電子情報開示データ コネクタは、�
 
 5. [ **許可]** をクリックして、アプリが組織を管理できるようにします。
 
-   **[許可**] をクリックすると、Slack ページが閉じ、コネクタ ウィザードの **[ユーザーに対する Slack 電子情報開示ユーザーのマップ**] ページMicrosoft 365表示されます。
+   **[許可**] をクリックすると、Slack ページが閉じ、コネクタ ウィザードの **[Slack 電子情報開示ユーザーを Microsoft 365 ユーザーにマップ**] ページが表示されます。
 
 ## <a name="step-3-specify-the-users-to-import-data-for"></a>手順 3: データをインポートするユーザーを指定する
 
@@ -89,11 +87,11 @@ Microsoft が提供する Slack 電子情報開示データ コネクタは、�
 
 ## <a name="step-4-map-users-and-select-data-types-to-import"></a>手順 4: ユーザーをマップし、インポートするデータ型を選択する
 
-1. Slack ユーザーを自分のMicrosoft 365メールボックスにマップするには、次のオプションのいずれかまたは両方を構成します。
+1. Slack ユーザーを Microsoft 365 メールボックスにマップするには、次のいずれかのオプションまたは両方を構成します。
 
-   - **自動ユーザー マッピング**。 Slack ユーザー名をメールボックスに自動的にマップMicrosoft 365するには、このオプションを選択します。 コネクタは、すべての Slack メッセージまたはアイテムに含まれる *Email* プロパティの値を使用して行います。 このプロパティには、メッセージのすべての参加者の電子メール アドレスが設定されます。 コネクタが対応するMicrosoft 365 ユーザーに電子メール アドレスを関連付けることができる場合、アイテムはそれらのユーザーのMicrosoft 365 メールボックスにインポートされます。 このオプションを使用するには、Slack 組織に対して SSO が構成されている必要があります。
+   - **自動ユーザー マッピング**。 Slack ユーザー名を Microsoft 365 メールボックスに自動的にマップするには、このオプションを選択します。 コネクタは、すべての Slack メッセージまたはアイテムに含まれる *Email* プロパティの値を使用して行います。 このプロパティには、メッセージのすべての参加者の電子メール アドレスが設定されます。 コネクタが対応する Microsoft 365 ユーザーに電子メール アドレスを関連付けることができる場合、アイテムはそれらのユーザーの Microsoft 365 メールボックスにインポートされます。 このオプションを使用するには、Slack 組織に対して SSO が構成されている必要があります。
 
-   - **カスタム ユーザー マッピング**。 また、自動ユーザー マッピングの代わりに (またはそれに加えて) カスタム ユーザー マッピングを使用することもできます。 このオプションを使用すると、ユーザーの Slack メンバー ID を自分のMicrosoft 365メール アドレスにマップする CSV ファイルを作成してアップロードする必要があります。 これを行うには、[**CSV マッピング テンプレートのダウンロード**] をクリックし、組織内のすべてのユーザーの Slack メンバー ID とMicrosoft 365メール アドレスを CSV ファイルに設定し、CSV ファイルを選択してウィザードにアップロードします。 CSV ファイル内の列見出しは変更しないでください。 CSV マッピング ファイルの例を次に示します。
+   - **カスタム ユーザー マッピング**。 また、自動ユーザー マッピングの代わりに (またはそれに加えて) カスタム ユーザー マッピングを使用することもできます。 このオプションでは、ユーザーの Slack メンバー ID を自分の Microsoft 365 メール アドレスにマップする CSV ファイルを作成してアップロードする必要があります。 これを行うには、[ **CSV マッピング テンプレートのダウンロード**] をクリックし、組織内のすべてのユーザーの Slack メンバー ID と Microsoft 365 メール アドレスを CSV ファイルに設定し、CSV ファイルを選択してウィザードにアップロードします。 CSV ファイル内の列見出しは変更しないでください。 CSV マッピング ファイルの例を次に示します。
 
      |**ExternalUserId**  | **O365UserMailbox**   |
      |:-------------------|:-----------------------|
@@ -105,11 +103,11 @@ Microsoft が提供する Slack 電子情報開示データ コネクタは、�
    > [!TIP]
    > ユーザーのメンバー ID は、... をクリックして取得できます。ユーザーのプロファイルのその他のボタンをクリックし、[ **メンバー ID のコピー**] を選択します。 または、Slack [users.list API メソッド](https://api.slack.com/methods/users.list) を使用して、Slack チームのすべてのメンバーの ID を取得することもできます。
 
-   自動ユーザー マッピングを有効にし、カスタム マッピング ファイルを指定した場合、コネクタは最初にカスタム マッピング ファイルを見て、Slack ユーザーをMicrosoft 365メールボックスにマップします。 コネクタで Slack ユーザーに対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタは Slack アイテムの *Email* プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたはメッセージ アイテムの *Email* プロパティで有効なMicrosoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
+   自動ユーザー マッピングを有効にし、カスタム マッピング ファイルを指定した場合、コネクタは最初にカスタム マッピング ファイルを調べて Slack ユーザーを Microsoft 365 メールボックスにマップします。 コネクタで Slack ユーザーに対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタは Slack アイテムの *Email* プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたはメッセージ アイテムの *Email* プロパティで有効な Microsoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
 2. [ **インポートするデータ型の選択** ] ウィザード ページで、インポートする Slack データ型を選択します。 すべてのチャネルからメッセージをインポートする場合は、すべてのオプションを選択します。 それ以外の場合は、インポートするデータ型のみを選択します。
 
-     Slack メッセージに加えて、Microsoft 365にインポートする他の種類の Slack コンテンツを指定することもできます。 
+     Slack メッセージに加えて、他の種類の Slack コンテンツを指定して Microsoft 365 にインポートすることもできます。 
 
 3. インポートするデータ型を構成したら、[ **次へ**] をクリックしてコネクタの設定を確認し、[ **完了]** をクリックしてコネクタを作成します。
 

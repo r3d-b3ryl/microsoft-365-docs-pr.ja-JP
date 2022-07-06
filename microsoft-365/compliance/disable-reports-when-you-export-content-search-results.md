@@ -16,19 +16,17 @@ search.appverid:
 ms.assetid: c9b0ff0c-282b-4a44-b43f-cfc5b96557f9
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft Purview コンプライアンス ポータルからコンテンツ検索の結果をエクスポートするときに、ローカル コンピューターの Windows レジストリを編集してレポートを無効にします。
-ms.openlocfilehash: 3f44c30b2fe3459e44f2d1c5a2d372e57774eeb2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: コンテンツ検索の結果をMicrosoft Purview コンプライアンス ポータルからエクスポートするときにレポートを無効にするには、ローカル コンピューターの Windows レジストリを編集します。
+ms.openlocfilehash: 55a5405d516b0bf3daaca5970a25794b468a5119
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65094970"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636185"
 ---
 # <a name="disable-reports-when-you-export-content-search-results"></a>コンテンツ検索の結果をエクスポートするときにレポートを無効にする
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-電子情報開示エクスポート ツールを使用して Microsoft Purview コンプライアンス ポータルでコンテンツ検索の結果をエクスポートすると、エクスポートされたコンテンツに関する追加情報を含む 2 つのレポートが自動的に作成およびエクスポートされます。 これらのレポートは、Results.csv ファイルとManifest.xml ファイルです (これらのレポートの詳細については、このトピックの [「エクスポート レポートの無効化に関するよく寄せられる質問](#frequently-asked-questions-about-disabling-export-reports) 」セクションを参照してください)。 これらのファイルは非常に大きくなる可能性があるため、これらのファイルがエクスポートされないようにすることで、ダウンロード時間を短縮し、ディスク領域を節約できます。 これを行うには、検索結果のエクスポートに使用するコンピューターの Windows レジストリを変更します。 後でレポートを含める場合は、レジストリ設定を編集できます。 
+電子情報開示エクスポート ツールを使用してコンテンツ検索の結果をMicrosoft Purview コンプライアンス ポータルにエクスポートすると、エクスポートされたコンテンツに関する追加情報を含む 2 つのレポートが自動的に作成およびエクスポートされます。 これらのレポートは、Results.csv ファイルとManifest.xml ファイルです (これらのレポートの詳細については、このトピックの [「エクスポート レポートの無効化に関するよく寄せられる質問](#frequently-asked-questions-about-disabling-export-reports) 」セクションを参照してください)。 これらのファイルは非常に大きくなる可能性があるため、これらのファイルがエクスポートされないようにすることで、ダウンロード時間を短縮し、ディスク領域を節約できます。 これを行うには、検索結果のエクスポートに使用するコンピューター上の Windows レジストリを変更します。 後でレポートを含める場合は、レジストリ設定を編集できます。 
   
 ## <a name="create-registry-settings-to-disable-the-export-reports"></a>エクスポート レポートを無効にするレジストリ設定を作成する
 
@@ -40,7 +38,7 @@ ms.locfileid: "65094970"
     
     - **Results.csv**
     
-      次のテキストを .reg のファイル名サフィックス (DisableResultsCsv.reg など) を使用して、Windows レジストリ ファイルに保存します。
+      .reg のファイル名サフィックスを使用して、次のテキストを Windows レジストリ ファイルに保存します。たとえば、DisableResultsCsv.reg です。
     
       ```text
       Windows Registry Editor Version 5.00
@@ -49,7 +47,7 @@ ms.locfileid: "65094970"
 
     - **Manifest.xml**
     
-      次のテキストを .reg のファイル名サフィックス (DisableManifestXml.reg など) を使用して、Windows レジストリ ファイルに保存します。
+      .reg のファイル名サフィックスを使用して、次のテキストを Windows レジストリ ファイルに保存します。たとえば、DisableManifestXml.reg です。
     
       ```text
       Windows Registry Editor Version 5.00
@@ -74,7 +72,7 @@ ms.locfileid: "65094970"
     
     - **Results.csv**
     
-        メモ帳で DisableResultsCsv.reg ファイルを開き、値`False`を変更`True`してファイルを保存します。 たとえば、ファイルを編集すると、次のようになります。
+        DisableResultsCsv.reg ファイルをメモ帳で開き、値  `False` を変更  `True`してファイルを保存します。 たとえば、ファイルを編集すると、次のようになります。
     
         ```text
         Windows Registry Editor Version 5.00
@@ -83,7 +81,7 @@ ms.locfileid: "65094970"
 
     - **Manifest.xml**
     
-        メモ帳で DisableManifestXml.reg ファイルを開き、値`False`を変更`True`してファイルを保存します。 たとえば、ファイルを編集すると、次のようになります。
+        メモ帳で DisableManifestXml.reg ファイルを開き、値  `False` を変更  `True`してファイルを保存します。 たとえば、ファイルを編集すると、次のようになります。
     
       ```text
       Windows Registry Editor Version 5.00
@@ -104,7 +102,7 @@ ms.locfileid: "65094970"
   
 Results.csv ファイルとManifest.xml ファイルには、エクスポートされたコンテンツに関する追加情報が含まれています。
   
-- **Results.csv** 検索結果としてダウンロードされる各項目に関する情報を含むExcelドキュメント。 電子メールの場合、結果ログには、次のような各メッセージに関する情報が含まれます。 
+- **Results.csv** 検索結果としてダウンロードされる各項目に関する情報を含む Excel ドキュメント。 電子メールの場合、結果ログには、次のような各メッセージに関する情報が含まれます。 
     
   - 移行元のメールボックス内のメッセージの場所 (メッセージがプライマリ メールボックスとアーカイブ メールボックスのどちらであるかを含みます)。
     
@@ -116,7 +114,7 @@ Results.csv ファイルとManifest.xml ファイルには、エクスポート�
     
   - 検索結果をエクスポートするときに重複除去を有効にした場合、メッセージが重複メッセージであるかどうか。 重複するメッセージには、メッセージを重複として識別する値が **親 ItemId** 列に含まれます。 **親 ItemId** 列の値は、エクスポートされたメッセージの **Item DocumentId** 列の値と同じです。 
     
-    SharePointサイトおよびOneDrive for Business サイトのドキュメントの場合、結果ログには、次のような各ドキュメントに関する情報が含まれます。
+    SharePoint およびOneDrive for Business サイトのドキュメントの場合、結果ログには、次のような各ドキュメントに関する情報が含まれます。
     
   - ドキュメントの URL。
     

@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示での通信の操作 (プレミアム)
+title: 電子情報開示 (Premium) で通信を操作する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 電子情報開示 (プレミアム) を使用すると、訴訟調査のカストディアンへの通知に関する訴訟ホールド通知ワークフローを簡単に管理できます。
-ms.openlocfilehash: 59acf9dd561b46a7e7b970ffcd2c4c505f0b5a1c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 電子情報開示 (Premium) を使用すると、訴訟調査でカストディアンに通知する際の訴訟ホールド通知ワークフローを簡単に管理できます。
+ms.openlocfilehash: 371ede05fc1d17caf8ec8a449dab2f386ac53628
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097736"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635219"
 ---
-# <a name="work-with-communications-in-ediscovery-premium"></a>電子情報開示での通信の操作 (プレミアム)
+# <a name="work-with-communications-in-ediscovery-premium"></a>電子情報開示 (Premium) で通信を操作する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (プレミアム) を使用すると、法務部門は、訴訟ホールド通知の追跡と配布に関するプロセスを簡略化できます。 カストディアン通信ツールを使用すると、法務部門は、最初の通知からリマインダー、エスカレーションまで、訴訟ホールド プロセス全体を 1 か所で管理および自動化できます。
+Microsoft Purview eDiscovery (Premium) を使用すると、法務部門は、訴訟ホールド通知の追跡と配布に関するプロセスを簡略化できます。 カストディアン通信ツールを使用すると、法務部門は、最初の通知からリマインダー、エスカレーションまで、訴訟ホールド プロセス全体を 1 か所で管理および自動化できます。
 
 ## <a name="what-is-a-legal-hold-notification"></a>訴訟ホールド通知とは
 
@@ -37,7 +35,7 @@ Microsoft Purview 電子情報開示 (プレミアム) を使用すると、法�
 
 組織には、間近に迫った訴訟や規制調査について知ったときに、関連情報を保持する義務があります。 調査の保存要件に準拠するために、組織は潜在的なカストディアンに関連情報を保存する義務を直ちに通知する必要があります。
 
-電子情報開示 (プレミアム) を使用すると、訴訟チームは訴訟ホールド通知ワークフローを作成してカスタマイズできます。 カストディアン通信ツールを使用すると、法務チームは次の通知とワークフローを構成できます。
+電子情報開示 (Premium) を使用すると、訴訟チームは訴訟ホールド通知ワークフローを作成してカスタマイズできます。 カストディアン通信ツールを使用すると、法務チームは次の通知とワークフローを構成できます。
 
 1. **発行通知:** 訴訟ホールド通知は、ケースに関する関連情報を持っている可能性があるカストディアンに対して、法務部門からの通知によって発行 (または開始) されます。 この通知は、検出に必要なすべての情報を保存するようにカストディアンに指示します。
 

@@ -18,16 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Compliance Manager ユーザーのアクセス許可とロールを設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 76126f9a13716e3ebf48309f8129de6ede4d11e9
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574049"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634767"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事の内容**: この記事は、コンプライアンス マネージャーの設定に役立ちます。 コンプライアンス マネージャーへの **アクセス**、**ロールとアクセス許可の設定**、**改善アクションの自動テスト** の方法を紹介します。 **コンプライアンス マネージャー ダッシュボード** を紹介し、改善のための処置ページ、解決策ページ、評価ページ、評価テンプレート ページのメイン ページを理解します。
 

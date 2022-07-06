@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示で予測コーディング モデルを作成する (プレミアム)
+title: 電子情報開示で予測コーディング モデルを作成する (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,21 +13,19 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: 電子情報開示 (プレミアム) で予測コーディング モデルを作成する方法について説明します。 これは、電子情報開示 (プレミアム) で機械学習機能を使用して、レビュー セット内の関連するコンテンツと関連性のないコンテンツを特定するのに役立つ最初の手順です。
-ms.openlocfilehash: 4542ffbf8be3c7a5c0193f3c0372e3c19e91f02e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 電子情報開示 (Premium) で予測コーディング モデルを作成する方法について説明します。 これは、電子情報開示 (Premium) の機械学習機能を使用して、レビュー セット内の関連するコンテンツと関連性のないコンテンツを識別するのに役立つ最初の手順です。
+ms.openlocfilehash: 1105ff05d323ded2297a92d7b12b44a78c35b11f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099655"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635745"
 ---
 # <a name="create-a-predictive-coding-model-preview"></a>予測コーディング モデルを作成する (プレビュー)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+電子情報開示 (Premium) で予測コーディングの機械学習機能を使用する最初の手順は、予測コーディング モデルを作成することです。 モデルを作成した後、レビュー セット内の関連するコンテンツと非関連コンテンツを識別するトレーニングを行うことができます。
 
-電子情報開示 (プレミアム) で予測コーディングの機械学習機能を使用する最初の手順は、予測コーディング モデルを作成することです。 モデルを作成した後、レビュー セット内の関連するコンテンツと非関連コンテンツを識別するトレーニングを行うことができます。
-
-予測コーディング ワークフローを確認するには、「[電子情報開示での予測コーディングの詳細 (プレミアム)](predictive-coding-overview.md#the-predictive-coding-workflow)」を参照してください。
+予測コーディング ワークフローを確認するには、「[電子情報開示での予測コーディングの詳細 (Premium)](predictive-coding-overview.md#the-predictive-coding-workflow)」を参照してください。
 
 ## <a name="before-you-create-a-model"></a>モデルを作成する前に
 
@@ -39,9 +37,9 @@ ms.locfileid: "65099655"
 
 ## <a name="create-a-model"></a>モデルを作成する
 
-1. Microsoft Purview コンプライアンス ポータルで、電子情報開示 (プレミアム) ケースを開き、[**校閲セット**] タブを選択します。
+1. Microsoft Purview コンプライアンス ポータルで、電子情報開示 (Premium) ケースを開き、[**校閲セット**] タブを選択します。
 
-2. レビュー セットを開き、**AnalyticsManage** >  **予測コーディング (プレビュー)** をクリックします。
+2. レビュー セットを開き、 **Analytics** > **[予測コーディングの管理 (プレビュー)]** をクリックします。
 
    ![レビュー セットの [分析] ドロップダウン メニューをクリックして、[予測コーディング] ページに移動します。](..\media\ManagePredictiveCoding.png)
 

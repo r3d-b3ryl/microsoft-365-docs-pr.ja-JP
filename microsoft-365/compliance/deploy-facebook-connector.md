@@ -15,25 +15,23 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: 管理者は、ネイティブ コネクタを設定して、Facebook Business ページをインポートしてMicrosoft 365にアーカイブできます。 このデータをMicrosoft 365にインポートした後は、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
-ms.openlocfilehash: b3f3770b4e3cf8415111ebdd1881905ae21f4739
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 管理者は、Microsoft 365 に Facebook Business ページをインポートおよびアーカイブするためのネイティブ コネクタを設定できます。 このデータを Microsoft 365 にインポートした後は、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Facebook データのガバナンスを管理できます。
+ms.openlocfilehash: 0b2d37859941cc0e1ae5c49fad6fd72312cc03cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098870"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632555"
 ---
 # <a name="deploy-a-connector-to-archive-facebook-business-pages-data"></a>コネクタをデプロイして Facebook Business ページデータをアーカイブする
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+この記事には、Office 365 Import サービスを使用して Facebook Business ページから Microsoft 365 にデータをインポートするコネクタをデプロイするためのステップ バイ ステップ プロセスが含まれています。 このプロセスの概要と、Facebook コネクタをデプロイするために必要な前提条件の一覧については、「Facebook [データをアーカイブするためのコネクタの設定」を](archive-facebook-data-with-sample-connector.md)参照してください。
 
-この記事には、Office 365 Import サービスを使用して Facebook Business ページからMicrosoft 365にデータをインポートするコネクタをデプロイするためのステップ バイ ステップ プロセスが含まれています。 このプロセスの概要と、Facebook コネクタをデプロイするために必要な前提条件の一覧については、「Facebook [データをアーカイブするためのコネクタの設定」を](archive-facebook-data-with-sample-connector.md)参照してください。
-
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directoryでアプリを作成する
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directory でアプリを作成する
 
 1. <https://portal.azure.com>グローバル管理者アカウントの資格情報を使用して、アクセスしてサインインします。
 
-    ![AADでアプリを作成します。](../media/FBCimage1.png)
+    ![AAD でアプリを作成します。](../media/FBCimage1.png)
 
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 
@@ -43,9 +41,9 @@ ms.locfileid: "65098870"
 
     ![[**アプリの登録 (プレビュー)]** をクリックし、[**新しい登録**] をクリックします。](../media/FBCimage3.png)
 
-4. アプリケーションを登録します。 [リダイレクト URI] で、アプリケーションの種類ドロップダウン リストで [Web] を選択し、URI のボックスに入力 <https://portal.azure.com> します。
+4. アプリケーションを登録する [リダイレクト URI] で、アプリケーションの種類ドロップダウン リストで [Web] を選択し、URI のボックスに入力 <https://portal.azure.com> します。
 
-   ![アプリケーションを登録します。](../media/FBCimage4.png)
+   ![アプリケーションを登録する](../media/FBCimage4.png)
 
 5. **アプリケーション (クライアント) ID** と **ディレクトリ (テナント) ID を** コピーし、テキスト ファイルまたはその他の安全な場所に保存します。 これらの ID は、後の手順で使用します。
 
@@ -63,17 +61,17 @@ ms.locfileid: "65098870"
 
     ![シークレットを入力し、有効期限を選択します。](../media/FBCimage8.png)
 
-9. シークレットの値をコピーし、テキスト ファイルまたはその他の保存場所に保存します。 これは、後の手順で使用するAADアプリケーション シークレットです。
+9. シークレットの値をコピーし、テキスト ファイルまたはその他の保存場所に保存します。 これは、後の手順で使用する AAD アプリケーション シークレットです。
 
    ![シークレットの値をコピーして保存します。](../media/FBCimage9.png)
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHubから Azure アカウントにコネクタ Web サービスをデプロイする
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHub から Azure アカウントにコネクタ Web サービスをデプロイする
 
-1. [このGitHub サイト](https://github.com/microsoft/m365-sample-connector-csharp-aspnet)に移動し、[**Azure へのデプロイ**] をクリックします。
+1. [この GitHub サイト](https://github.com/microsoft/m365-sample-connector-csharp-aspnet)に移動し、[**Azure へのデプロイ**] をクリックします。
 
     ![[Azure へのデプロイ] をクリックします。](../media/FBCGithubApp.png)
 
-2. **[Azure へのデプロイ**] をクリックすると、カスタム テンプレート ページを含むAzure portalにリダイレクトされます。 **基本** と **設定** の詳細を入力し、[**購入**] をクリックします。
+2. **[Azure へのデプロイ**] をクリックすると、カスタム テンプレート ページを含むAzure portalにリダイレクトされます。 **[基本]** と **[設定]** の詳細を入力し、[**購入**] をクリックします。
 
    - **サブスクリプション：** Facebook Business ページ コネクタ Web サービスをデプロイする Azure サブスクリプションを選択します。
 
@@ -83,7 +81,7 @@ ms.locfileid: "65098870"
 
    - **Web アプリ名:** コネクタ Web アプリの一意の名前を指定します。 名前の長さは 3 文字から 18 文字にする必要があります。 この名前は、Azure アプリ サービスの URL を作成するために使用されます。たとえば、 **fbconnector** の Web アプリ名を指定すると、Azure アプリ サービスの URL **が fbconnector.azurewebsites.net** されます。
 
-   - **tenantId:** 手順 1 のAzure Active Directoryで Facebook コネクタ アプリを作成した後にコピーしたMicrosoft 365組織のテナント ID。
+   - **tenantId:** 手順 1. で Azure Active Directory で Facebook コネクタ アプリを作成した後にコピーした Microsoft 365 組織のテナント ID。
 
    - **APISecretKey:** 任意の値をシークレットとして入力できます。 これは、手順 5. のコネクタ Web アプリにアクセスするために使用されます。
 
@@ -91,7 +89,7 @@ ms.locfileid: "65098870"
 
 3. デプロイが成功すると、ページは次のスクリーンショットのようになります。
 
-   ![[Storage] をクリックし、[Storage アカウント] をクリックします。](../media/FBCimage13.png)
+   ![[ストレージ] をクリックし、[ストレージ アカウント] をクリックします。](../media/FBCimage13.png)
 
 ## <a name="step-3-register-the-facebook-app"></a>手順 3: Facebook アプリを登録する
 
@@ -119,7 +117,7 @@ ms.locfileid: "65098870"
 
    ![[クイック スタート] セクションを完了します。](../media/FBCimage30.png)
 
-7. **Facebook ログイン** の下の左側のナビゲーション ウィンドウで **、[設定**] をクリックし、[**有効な OAuth リダイレクト URI] ボックスに OAuth リダイレクト URI を** 追加します。 **/Views/FacebookOAuth の形式\<connectorserviceuri>** を使用します。connectorserviceuri の値は組織の Azure アプリ サービス URL です。たとえば、 `https://fbconnector.azurewebsites.net`
+7. **Facebook ログイン** の左側のナビゲーション ウィンドウで **、[設定]** をクリックし、[**有効な OAuth リダイレクト URI] ボックスに OAuth リダイレクト URI を** 追加します。 **/Views/FacebookOAuth の形式\<connectorserviceuri>** を使用します。connectorserviceuri の値は組織の Azure アプリ サービス URL です。たとえば、 `https://fbconnector.azurewebsites.net`
 
    ![OAuth リダイレクト URI を [有効な OAuth リダイレクト URI] ボックスに追加します。](../media/FBCimage31.png)
 
@@ -171,7 +169,7 @@ ms.locfileid: "65098870"
 
    ![[構成] をクリックしてサインイン ページを表示します。](../media/FBCimage42.png)
 
-3. [テナント ID] ボックスに、テナント ID (手順 2 で取得した) を入力または貼り付けます。 パスワード ボックスに、APISecretKey (手順 2 で取得した) を入力または貼り付け、**構成設定の設定** をクリックして構成の詳細ページを表示します。
+3. [テナント ID] ボックスに、テナント ID (手順 2 で取得した) を入力または貼り付けます。 パスワード ボックスに、APISecretKey (手順 2 で取得した) を入力または貼り付けて、[ **構成設定の設定]** をクリックして構成の詳細ページを表示します。
 
     ![テナント ID とパスワードを使用してサインインし、構成の詳細ページに移動します。](../media/FBCimage43.png)
 
@@ -183,7 +181,7 @@ ms.locfileid: "65098870"
 
    - **Facebook Webhook はトークンを確認します。** 手順 3 で作成した検証トークン。
 
-   - **AAD アプリケーション ID:** 手順 1. で作成したAzure Active Directory アプリのアプリケーション ID。
+   - **AAD アプリケーション ID:** 手順 1. で作成した Azure Active Directory アプリのアプリケーション ID。
 
    - **AAD アプリケーション シークレット:** 手順 1 で作成した APISecretKey シークレットの値。
 
@@ -209,11 +207,11 @@ ms.locfileid: "65098870"
 
    - [ **パスワード** ] ボックスに、手順 2. で追加した APISecretKey の値を入力または貼り付けます。
 
-   - **[Azure アプリ ID**] ボックスに、手順 1 で作成したアプリケーション ID とも呼ばれるアプリケーション (クライアント) ID の値AAD入力または貼り付けます。
+   - **[Azure アプリ ID**] ボックスに、手順 1 で作成した AAD アプリケーション ID とも呼ばれるアプリケーション (クライアント) ID の値を入力または貼り付けます。
 
 6. 接続が正常に検証されたら、[ **次へ**] をクリックします。
 
-7. [**データをインポートするための承認Microsoft 365**] ページで、APISecretKey をもう一度入力または貼り付けてから、[**ログイン Web アプリ**] をクリックします。
+7. [ **データをインポートするための Microsoft 365 の承認** ] ページで、APISecretKey をもう一度入力または貼り付けてから、[ **ログイン Web アプリ**] をクリックします。
 
 8. **[Facebook コネクタ アプリの構成]** ページ **で、[Facebook でログイン**] をクリックし、組織の Facebook Business ページのアカウントの資格情報を使用してログインします。 ログインした Facebook アカウントに、組織の Facebook Business ページの管理者ロールが割り当てられていることを確認します。
 
@@ -227,7 +225,7 @@ ms.locfileid: "65098870"
 
 11. [ **フィルターの設定** ] ページで、フィルターを適用して、特定の年齢のアイテムを最初にインポートできます。 年齢を選択し、[ **次へ**] をクリックします。
 
-12. [**ストレージの場所の選択]** ページで、Facebook アイテムのインポート先となるメールボックスMicrosoft 365メール アドレスを入力し、[**次へ**] をクリックします。
+12. [ **ストレージの場所の選択]** ページで、Facebook アイテムのインポート先となる Microsoft 365 メールボックスのメール アドレスを入力し、[ **次へ**] をクリックします。
 
 13. [ **次へ** ] をクリックしてコネクタの設定を確認し、[ **完了]** をクリックしてコネクタの設定を完了します。
 

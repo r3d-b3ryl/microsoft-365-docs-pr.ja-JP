@@ -18,18 +18,16 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: 組織に Microsoft Purview の情報保護を展開するための規範的なガイダンス。
-ms.openlocfilehash: fa826e7b9761ebcff34dd9ae6f7c2ee1b268bade
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: 3b62cf6165447288275a7a8c02a64ab27b41d607
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759848"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635263"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Microsoft Purview を使用して情報保護ソリューションを展開する
 
 >*[Microsoft 365 セキュリティとコンプライアンスのライセンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 情報保護戦略は、ビジネス ニーズによって推進されます。 規制、法律、およびビジネス プラクティスに準拠する必要のある組織が多くあります。 さらに、組織は、特定のプロジェクトのデータなど、独自の情報を保護する必要があります。
 

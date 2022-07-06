@@ -1,5 +1,5 @@
 ---
-title: Office 365 セキュリティとコンプライアンス センターから Microsoft Purview コンプライアンス ポータルへのユーザーのリダイレクト
+title: Office 365 セキュリティとコンプライアンス センターからMicrosoft Purview コンプライアンス ポータルへのユーザーのリダイレクト
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -9,21 +9,19 @@ ms.service: O365-seccomp
 audience: ITPro
 ms.topic: article
 ms.localizationpriority: medium
-description: Office 365 Security and Compliance Center ユーザーから Microsoft Purview コンプライアンス ポータルへのユーザーの自動リダイレクトについて説明します。
+description: Office 365 Security and Compliance Center ユーザーからMicrosoft Purview コンプライアンス ポータルへのユーザーの自動リダイレクトについて説明します。
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: b88c5f5915944c813f5c803e3526f1bf42040159
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: e1c079eda89033dee05eae9b9059521d625b2f5c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243010"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635789"
 ---
-# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Office 365 セキュリティとコンプライアンス センターから Microsoft Purview コンプライアンス ポータルへのユーザーのリダイレクト
+# <a name="redirection-of-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-purview-compliance-portal"></a>Office 365 セキュリティとコンプライアンス センターからMicrosoft Purview コンプライアンス ポータルへのユーザーのリダイレクト
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-この記事では、Office 365 セキュリティコンプライアンス センター (protection.office.com) から <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>へのコンプライアンス ソリューションにアクセスするユーザーに対して、自動リダイレクトがどのように機能するかを説明します。
+この記事では、Office 365 セキュリティコンプライアンス センター (protection.office.com) からMicrosoft Purview コンプライアンス ポータルへのコンプライアンス ソリューションにアクセスするユーザーに対して、自動リダイレクトがどのように機能するかを説明<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">します。</a>
 
 ## <a name="what-to-expect"></a>想定される変化
 

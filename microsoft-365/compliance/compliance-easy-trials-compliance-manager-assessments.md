@@ -14,16 +14,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャー プレミアム評価試用版について。
-ms.openlocfilehash: b5d653626eadbfcc6e58d2be36a7ed8899c02eeb
-ms.sourcegitcommit: 7e0094ddff54bcbe5d691dba58d4c4fb86f8b1a9
+ms.openlocfilehash: 50950cc39d9a987239a7b10c70f68aece5647085
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "65187758"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631273"
 ---
 # <a name="about-the-free-trial-for-microsoft-purview-compliance-manager-premium-assessments"></a>Microsoft Purview コンプライアンス マネージャー プレミアム評価の無料試用版について
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンプライアンス マネージャーは、組織のコンプライアンス要件を管理し、コンプライアンス スコアを評価して改善するのに役立ちます。 作成する評価は、世界中の政府の規制と業界標準に対応するテンプレートに基づいています。  
 

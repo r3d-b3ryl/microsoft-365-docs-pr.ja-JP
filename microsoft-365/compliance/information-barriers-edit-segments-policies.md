@@ -13,16 +13,14 @@ ms.collection:
 ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: eaaa98233a839f41c008052ab91c5c0f45f8eb13
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a84b8e712de53b0abae81a05bbe1b2bef3237beb
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014179"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635307"
 ---
 # <a name="manage-information-barriers-policies"></a>情報バリア ポリシーを管理する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [情報バリア (IB) ポリシーを定義](information-barriers-policies.md)した後、トラブルシューティングの一環として、または定期的なメンテナンスとして、それらのポリシーまたはユーザー セグメントに変更[を](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)加える必要がある場合があります。
 
@@ -30,7 +28,7 @@ ms.locfileid: "66014179"
 
 |**操作**|**説明**|
 |:---------|:--------------|
-| [ユーザー アカウントの属性を編集する](#edit-user-account-attributes) | セグメントの定義に使用できる属性をAzure Active Directoryに入力します。 <br> ユーザーが必要なセグメントに含まれていない場合、ユーザーが含まれているセグメントを変更する場合、または異なる属性を使用してセグメントを定義する場合は、ユーザー アカウント属性を編集します。 |
+| [ユーザー アカウントの属性を編集する](#edit-user-account-attributes) | セグメントの定義に使用できる属性を Azure Active Directory に入力します。 <br> ユーザーが必要なセグメントに含まれていない場合、ユーザーが含まれているセグメントを変更する場合、または異なる属性を使用してセグメントを定義する場合は、ユーザー アカウント属性を編集します。 |
 | [セグメントを編集する](#edit-a-segment) | セグメントの定義方法を変更する場合は、セグメントを編集します。 <br> たとえば、 *最初に Department* を使用してセグメントを定義し、 *MemberOf* などの別の属性を使用する必要があるとします。 |
 | [ポリシーを編集する](#edit-a-policy) | ポリシーの動作を変更する場合は、情報バリア ポリシーを編集します。<br> たとえば、2 つのセグメント間の通信をブロックする代わりに、特定のセグメント間でのみ通信を行えるようにすることができます。 |
 | [ポリシーを非アクティブ状態に設定する](#set-a-policy-to-inactive-status) |ポリシーを変更する場合、またはポリシーを有効にしたくない場合は、ポリシーを非アクティブ状態に設定します。 |
@@ -58,7 +56,7 @@ ms.locfileid: "66014179"
 
 3. 前の手順で選択した属性の値を含めるには、1 つ以上のユーザー アカウントを編集します。 このアクションを実行するには、次のいずれかの手順を使用します。
 
-    - 1 つのアカウントを編集するには、「[Azure Active Directoryを使用してユーザーのプロファイル情報を追加または更新](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)する」を参照してください。
+    - 1 つのアカウントを編集するには、「 [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する」を](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)参照してください。
 
     - 複数のアカウントを編集する (または PowerShell を使用して 1 つのアカウントを編集する) 場合は、「[powerShell でユーザー アカウントのプロパティを構成するOffice 365](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)」を参照してください。
 
@@ -261,12 +259,12 @@ ms.locfileid: "66014179"
     |:---------|:----------|
     | `Stop-InformationBarrierPoliciesApplication -Identity GUID` | `Stop-InformationBarrierPoliciesApplication -Identity 46237888-12ca-42e3-a541-3fcb7b5231d1` <p> この例では、情報バリア ポリシーの適用を停止しています。 |
 
-## <a name="resources"></a>関連情報
+## <a name="resources"></a>リソース
 
 - [情報バリアの概要を確認する](information-barriers.md)
 - [情報バリアに対するポリシーを定義する](information-barriers-policies.md)
-- [Microsoft Teamsの情報バリアの詳細を確認する](/MicrosoftTeams/information-barriers-in-teams)
+- [Microsoft Teams の情報バリアの詳細を確認する](/MicrosoftTeams/information-barriers-in-teams)
 - [SharePoint Online の情報バリアの詳細](/sharepoint/information-barriers)
-- [OneDriveの情報バリアの詳細を確認する](/onedrive/information-barriers)
+- [OneDrive の情報バリアの詳細を確認する](/onedrive/information-barriers)
 - [IB ポリシーの属性](information-barriers-attributes.md)
 - [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)

@@ -15,18 +15,16 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft Purview Data ライフサイクル管理と Microsoft Purview レコード管理の機能を実装し、コンプライアンスや規制要件に対応してデータを統制します。
-ms.openlocfilehash: 2eff1aea82575a8364eb05f91652a089efbbe833
-ms.sourcegitcommit: f723ebbc56db8013598a88b0d7f13214d9d3eb10
+ms.openlocfilehash: 7578aad4bdbb44bf0937a58343fc05462449688f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/10/2022
-ms.locfileid: "65294736"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635987"
 ---
 # <a name="govern-your-data-with-microsoft-purview"></a>Microsoft Purview を使用してデータを統制する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Microsoft Purview データ ライフサイクル管理** (以前の Microsoft Information Governance) と **Microsoft Purview レコード管理** の機能を使用し、コンプライアンスや規制要件に対応してデータを統制します。
 

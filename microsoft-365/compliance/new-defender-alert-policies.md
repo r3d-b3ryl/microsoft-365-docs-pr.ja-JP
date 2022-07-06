@@ -19,16 +19,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ROBOTS: noindex,nofollow
 description: Microsoft Defender for Office 365 の新しいアラート ポリシーをリリースします。 また、新しいものに置き換えられた 2 つの既存のアラート ポリシーを廃止します。
-ms.openlocfilehash: c883a352bad5af918d605bd8fa95112a7df07bd3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0f9a8b74febe3ea59d022baceff7c15c3ee2e5d1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098000"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634008"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の新しいアラート ポリシー
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Defender for Office 365 は、配信後の検出に関連する新しい改善されたアラート ポリシーを導入しています。 これには、それらに関連付けられた自動調査および応答 (AIR) プレイブックの機能強化が含まれます。 さらに、6 つの既定アラート ポリシーの重大度分類を変更して、これらのポリシーによって生成されたアラートを組織への影響とより適切に調整します。
 

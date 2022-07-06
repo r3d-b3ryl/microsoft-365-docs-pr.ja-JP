@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365で YouTube データをアーカイブするコネクタを設定する
+title: Microsoft 365 で YouTube データをアーカイブするコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 管理者は、Veritas から Microsoft 365 に YouTube データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、電子情報開示、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
-ms.openlocfilehash: 27cf5f4bf3c35fd4bc61f754eb43048d4b4b470a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+description: 管理者は、Veritas から Microsoft 365 に YouTube データをインポートおよびアーカイブするためのコネクタを設定できます。 このコネクタを使用すると、Microsoft 365 のサード パーティのデータ ソースからデータをアーカイブできます。 このデータをアーカイブした後、訴訟ホールド、電子情報開示、保持ポリシーなどのコンプライアンス機能を使用して、サード パーティのデータを管理できます。
+ms.openlocfilehash: 5735ea439a7d65a21fb8f0da10acd826664bfea7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418830"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631505"
 ---
 # <a name="set-up-a-connector-to-archive-youtube-data"></a>YouTube データをアーカイブするコネクタを設定する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、YouTube から Microsoft 365 組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目を Microsoft 365 にインポートするように構成されたコネクタが用意されています。 コネクタは、チャット、添付ファイル、タスク、メモ、投稿などのコンテンツを YouTube から電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
-Microsoft Purview コンプライアンス ポータルの Veritas コネクタを使用して、YouTube からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 Veritas には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成されたコネクタが用意されています。 コネクタは、チャット、添付ファイル、タスク、メモ、投稿などのコンテンツを YouTube から電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
-
-YouTube データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどのMicrosoft Purview機能を適用できます。 YouTube コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+YouTube データがユーザー メールボックスに保存された後、訴訟ホールド、電子情報開示、アイテム保持ポリシー、保持ラベルなどの Microsoft Purview 機能を適用できます。 YouTube コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-youtube-data"></a>YouTube データのアーカイブの概要
 
-次の概要では、コネクタを使用して、Microsoft 365で YouTube データをアーカイブするプロセスについて説明します。
+次の概要では、コネクタを使用して Microsoft 365 で YouTube データをアーカイブするプロセスについて説明します。
 
 ![YouTube データのアーカイブ ワークフロー。](../media/YouTubeConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ YouTube データがユーザー メールボックスに保存された後、�
 
 2. 24 時間に 1 回、YouTube アイテムは Veritas Merge1 サイトにコピーされます。 また、コネクタは YouTube アイテムを電子メール メッセージ形式に変換します。
 
-3. コンプライアンス ポータルで作成した YouTube コネクタは、毎日 Veritas Merge1 サイトに接続し、YouTube コンテンツを Microsoft クラウド内の安全なAzure Storageの場所に転送します。
+3. コンプライアンス ポータルで作成した YouTube コネクタは、毎日 Veritas Merge1 サイトに接続し、YouTube コンテンツを Microsoft クラウドの安全な Azure Storage の場所に転送します。
 
 4. コネクタは、[手順 3](#step-3-map-users-and-complete-the-connector-setup). で説明したように、自動ユーザー マッピングの *Email* プロパティの値を使用して、変換されたアイテムを特定のユーザーのメールボックスにインポートします。 **YouTube** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、そのフォルダーにアイテムがインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての YouTube アイテムにはこのプロパティが含まれています。このプロパティには、アイテムのすべての参加者のメール アドレスが入力されます。
 
@@ -47,13 +45,13 @@ YouTube データがユーザー メールボックスに保存された後、�
 
 - YouTube アカウントからデータをフェッチする YouTube アプリケーションを作成します。 アプリケーションの作成に関する詳細な手順については、「 [Merge1 サード パーティ コネクタ ユーザー ガイド」を](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20YouTube%20User%20Guide.pdf)参照してください。
 
-- 手順 1 で YouTube コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 1 で YouTube コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理 ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者がカスタムロール グループを作成し、Data Connector 管理ロールを割り当ててから、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
 ## <a name="step-1-set-up-the-youtube-connector"></a>手順 1: YouTube コネクタを設定する
 
 最初の手順では、コンプライアンス ポータルの **[データ コネクタ** ] ページにアクセスし、YouTube データ用のコネクタを作成します。
 
-1. **Data connectorsYouTube** >  に<https://compliance.microsoft.com>移動してクリックします。
+1. **[データ コネクタ****] YouTube** に<https://compliance.microsoft.com>移動し、[データ コネクタ > ] をクリックします。
 
 2. **YouTube** 製品の説明ページで、[**コネクタの追加**] をクリックします。
 
@@ -73,7 +71,7 @@ YouTube データがユーザー メールボックスに保存された後、�
 
 ユーザーをマップし、コンプライアンス ポータルでコネクタのセットアップを完了するには、次の手順に従います。
 
-1. **[YouTube ユーザーを Microsoft 365 ユーザーにマップ** する] ページで、自動ユーザー マッピングを有効にします。 YouTube アイテムには、組織内のユーザーのメール アドレスを含む *Email* というプロパティが含まれています。 コネクタがこのアドレスをMicrosoft 365 ユーザーに関連付けることができる場合、アイテムはそのユーザーのメールボックスにインポートされます。
+1. **[YouTube ユーザーを Microsoft 365 ユーザーにマップする**] ページで、自動ユーザー マッピングを有効にします。 YouTube アイテムには、組織内のユーザーのメール アドレスを含む *Email* というプロパティが含まれています。 コネクタがこのアドレスを Microsoft 365 ユーザーに関連付けることができる場合、アイテムはそのユーザーのメールボックスにインポートされます。
 
 2. [ **次へ**] をクリックして設定を確認し、[ **データ コネクタ** ] ページに移動して、新しいコネクタのインポート プロセスの進行状況を確認します。
 

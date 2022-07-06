@@ -20,16 +20,14 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 Defender ポータルでアラート ポリシーを作成して、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: 46be5c46c49b50286983517b7b1625f3309ca949
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 6c5f045d40a0c82ed70c6903e41628e2b520020e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015062"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633237"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 Defender ポータルのアラート ポリシーおよびアラート ダッシュボードを使用して、アラート ポリシーを作成し、ユーザーがアラート ポリシーの条件に一致するアクティビティを実行したときに生成されるアラートを表示できます。 Exchange Online での管理者権限の割り当て、マルウェア攻撃、フィッシング キャンペーン、異常なレベルのファイル削除や外部共有などのアクティビティを監視するのに役立つ既定のアラート ポリシーがいくつかあります。
 
@@ -62,7 +60,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 ## <a name="alert-policy-settings"></a>アラート ポリシーの設定
 
-アラート ポリシーは、アラートを生成するユーザーまたは管理者アクティビティを定義する一連のルールと条件、アクティビティを実行した場合にアラートをトリガーするユーザーのリスト、およびアラートがトリガーされる前にアクティビティが発生する必要がある回数を定義するしきい値で構成されます。  また、ポリシーを分類し、重大度のレベルを割り当てます。 この 2 つの設定は、ポリシーを管理し、Microsoft Purview コンプライアンス ポータルでアラートを表示するときにこれらの設定をフィルター処理できるため、アラート ポリシー (およびポリシー条件が一致したときにトリガーされるアラート) を管理するのに役立ちます。 たとえば、同じカテゴリの条件に一致するアラートを表示したり、同じ重大度レベルのアラートを表示したりできます。
+アラート ポリシーは、アラートを生成するユーザーまたは管理者アクティビティを定義する一連のルールと条件、アクティビティを実行した場合にアラートをトリガーするユーザーのリスト、およびアラートがトリガーされる前にアクティビティが発生する必要がある回数を定義するしきい値で構成されます。  また、ポリシーを分類し、重大度のレベルを割り当てます。 これらの 2 つの設定は、ポリシーを管理し、Microsoft Purview コンプライアンス ポータルでアラートを表示するときにこれらの設定をフィルター処理できるため、アラート ポリシー (およびポリシー条件が一致したときにトリガーされるアラート) を管理するのに役立ちます。 たとえば、同じカテゴリの条件に一致するアラートを表示したり、同じ重大度レベルのアラートを表示したりできます。
 
 アラート ポリシーを表示して作成するには:
 
@@ -70,7 +68,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">コンプライアンス ポータル</a>に移動し、**[ポリシー]** > **[アラート]** > **[アラート ポリシー]** の順に選択します。
 
-![Microsoft Purview コンプライアンス ポータルで [ポリシー] を選択し、[アラート] で [アラート ポリシー] を選択して、アラート ポリシーを表示して作成します。](../media/LaunchAlertPoliciesMCC.png)
+![Microsoft Purview コンプライアンス ポータルで [ポリシー] を選択し、[アラート] で [アラート ポリシー] を選択して、アラート ポリシーを表示および作成します。](../media/LaunchAlertPoliciesMCC.png)
 
 ### <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
@@ -128,7 +126,7 @@ Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 D
 
 ## <a name="default-alert-policies"></a>既定のアラート ポリシー
 
-Microsoft には、管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、データ ライフサイクル管理リスクExchange識別するのに役立つ組み込みのアラート ポリシーが用意されています。 [**通知ポリシー**] ページでは、これらの組み込みポリシーの名前は太字で表示され、ポリシーの種類は [**システム**] と定義されます。 これらのポリシーは既定で有効になっています。 これらのポリシーを無効にしたり (または有効に戻したり)、メール通知受信者のリストを設定したり、1 日の通知制限を設定したりできます。 これらのポリシーの他の設定を編集することはできません。
+Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、データ ライフサイクル管理のリスクを特定するのに役立つ組み込みのアラート ポリシーが用意されています。 [**通知ポリシー**] ページでは、これらの組み込みポリシーの名前は太字で表示され、ポリシーの種類は [**システム**] と定義されます。 これらのポリシーは既定で有効になっています。 これらのポリシーを無効にしたり (または有効に戻したり)、メール通知受信者のリストを設定したり、1 日の通知制限を設定したりできます。 これらのポリシーの他の設定を編集することはできません。
 
 次の表に、使用可能なデフォルトのアラート ポリシーと、各ポリシーが割り当てられているカテゴリを示します。 カテゴリは、ユーザーが [アラート] ページで表示できるアラートを決定するために使用されます。 詳細については、「[アラートを表示するために必要な RBAC アクセス許可](#rbac-permissions-required-to-view-alerts)」を参照してください。
 
@@ -215,7 +213,7 @@ Microsoft には、管理者のアクセス許可の悪用、マルウェア ア
 
 - **タグ。** 1 つ以上のユーザー タグの通知を表示するには、このフィルターを使います。 タグは、アラートに表示されるタグ付きメール ボックスまたはユーザーに基づいて反映されます。 詳細については、「[Office 356 ATP のユーザー タグ](../security/office-365-security/user-tags.md)」を参照してください。
 
-- **ソース。** このフィルターを使用して、Microsoft Purview ポータルのアラート ポリシーまたはMicrosoft Defender for Cloud Apps ポリシーによってトリガーされるアラート、またはその両方によってトリガーされるアラートを表示します。 App Security アラートのDefender for Cloudの詳細については、「[Defender for Cloud アプリアラートの表示」を](#viewing-cloud-app-security-alerts)参照してください。
+- **ソース。** このフィルターを使用して、Microsoft Purview ポータルのアラート ポリシーまたはMicrosoft Defender for Cloud Apps ポリシーによってトリガーされるアラート、またはその両方によってトリガーされるアラートを表示します。 Defender for Cloud App Security アラートの詳細については、「[Defender for Cloud Apps アラートの表示」を](#viewing-cloud-app-security-alerts)参照してください。
 
 > [!IMPORTANT]
 > ユーザー タグによるフィルタリングと並べ替えは現在公開プレビュー中です。
@@ -342,15 +340,15 @@ Microsoft には、管理者のアクセス許可の悪用、マルウェア ア
 
 ## <a name="view-defender-for-cloud-apps-alerts"></a>Defender for Cloud Apps のアラートを表示する
 
-Defender for Cloud Apps セキュリティ ポリシーによってトリガーされるアラートが、Microsoft Purview ポータルの **[アラート]** ページに表示されるようになりました。 これには、アクティビティ ポリシーによってトリガーされるアラートと、Defender for Cloud Apps Security の異常検出ポリシーによってトリガーされるアラートが含まれます。 つまり、Microsoft Purview ポータルですべてのアラートを表示できます。 Defender for Cloud App Security は、Office 365 Enterprise E5 または Office 365米国政府機関 G5 サブスクリプションを持つ組織でのみ使用できます。 詳細については、「[Defender for Cloud Apps の概要](/cloud-app-security/what-is-cloud-app-security)」を参照してください。
+Defender for Cloud Apps セキュリティ ポリシーによってトリガーされるアラートが、Microsoft Purview ポータルの **[アラート]** ページに表示されるようになりました。 これには、アクティビティ ポリシーによってトリガーされるアラートと、Defender for Cloud Apps Security の異常検出ポリシーによってトリガーされるアラートが含まれます。 つまり、Microsoft Purview ポータルですべてのアラートを表示できます。 Defender for Cloud App Securityは、Office 365 Enterprise E5 またはOffice 365米国政府機関 G5 サブスクリプションを持つ組織でのみ使用できます。 詳細については、「[Defender for Cloud Apps の概要](/cloud-app-security/what-is-cloud-app-security)」を参照してください。
 
 Enterprise Mobility + Security E5 サブスクリプションの一部として、またはスタンドアロン サービスとして Microsoft Defender for Cloud Apps を使用している組織は、コンプライアンス ポータルまたは Microsoft 365 Defender ポータルで Microsoft 365 アプリとサービスに関連する Defender for Cloud Apps アラートを表示することもできます。
 
-Microsoft Purview ポータルまたは Defender ポータルで Defender for Cloud Apps アラートのみを表示するには、[**ソース]** フィルターを使用して **[Defender for Cloud アプリ**] を選択します。
+Microsoft Purview ポータルまたは Defender ポータルで Defender for Cloud Apps アラートのみを表示するには、 **ソース** フィルターを使用して **Defender for Cloud Apps** を選択します。
 
 ![ソース フィルターを使用して、Defender for Cloud Apps アラートのみを表示します。](../media/FilterCASAlerts.png)
 
-Microsoft Purview ポータルのアラート ポリシーによってトリガーされるアラートと同様に、Defender for Cloud アプリアラートを選択すると、アラートの詳細を含むポップアップ ページを表示できます。 アラートには、Defender for Cloud Apps ポータルで詳細を表示してアラートを管理するためのリンクと、アラートをトリガーした対応する Defender for Cloud Apps ポリシーへのリンクが含まれています。 「[Defender for Cloud Apps でアラートを監視する](/cloud-app-security/monitor-alerts)」を参照してください。
+Microsoft Purview ポータルのアラート ポリシーによってトリガーされるアラートと同様に、Defender for Cloud Apps アラートを選択して、アラートの詳細を含むポップアップ ページを表示できます。 アラートには、Defender for Cloud Apps ポータルで詳細を表示してアラートを管理するためのリンクと、アラートをトリガーした対応する Defender for Cloud Apps ポリシーへのリンクが含まれています。 「[Defender for Cloud Apps でアラートを監視する](/cloud-app-security/monitor-alerts)」を参照してください。
 
 ![アラートの詳細には、Defender for Cloud Apps ポータルへのリンクが含まれています。](../media/CASAlertDetail.png)
 

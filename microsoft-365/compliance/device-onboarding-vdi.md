@@ -13,39 +13,39 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: 構成パッケージを仮想デスクトップ インフラストラクチャ (VDI) デバイスに展開して、Microsoft 365 エンドポイント データ損失防止サービスにオンボードします。
-ms.openlocfilehash: 6bfb0f69198afbcc9d2949d583e151631cc7953b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+description: 構成パッケージを仮想デスクトップ インフラストラクチャ (VDI) デバイスにデプロイして、エンドポイント データ損失防止サービスにオンボードします。
+ms.openlocfilehash: 8a54d4ce3cfb4b3ba6571f2aee63cd60c2a6d71f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760627"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636141"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-devices"></a>非永続的仮想デスクトップ インフラストラクチャ デバイスをオンボードする
 
 **適用対象:**
 
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md)
 
 - 仮想デスクトップ インフラストラクチャ (VDI) デバイス
 
 > [!WARNING]
-> Microsoft 365 Windows Virtual Desktop のエンドポイント データ損失防止サポートでは、単一セッション シナリオがサポートされます。 Windows Virtual Desktop でのマルチセッション シナリオは現在サポートされていません。
+> Windows Virtual Desktop のエンドポイント データ損失防止サポートでは、単一セッション シナリオがサポートされます。 Windows Virtual Desktop でのマルチセッション シナリオは現在サポートされていません。
 
 ## <a name="onboard-vdi-devices"></a>VDI デバイスをオンボードする
 
-Microsoft 365では、非永続的仮想デスクトップ インフラストラクチャ (VDI) セッションのオンボードがサポートされます。
+Microsoft 365 では、非永続的仮想デスクトップ インフラストラクチャ (VDI) セッションのオンボードがサポートされています。
 
 > [!NOTE]
 > 非永続的 VDI セッションをオンボードするには、VDI デバイスが 1809 以上Windows 10されている必要があります。
 
 VDI のオンボード時に、関連する課題が発生する可能性があります。 このシナリオの一般的な課題は次のとおりです。
 
-- 短期間のセッションの即時早期オンボード。これは、実際のプロビジョニングの前にMicrosoft 365にオンボードする必要があります。
+- 短期間のセッションの即時早期オンボード。実際のプロビジョニングの前に Microsoft 365 にオンボードする必要があります。
 - 通常、デバイス名は新しいセッションに再利用されます。
 
-VDI デバイスは、Microsoft 365 コンプライアンス センターに次のように表示できます。
+VDI デバイスは、次のようにMicrosoft Purview コンプライアンス ポータルに表示できます。
 
 - デバイスごとに 1 つのエントリ。
 この場合、無人応答ファイルを使用するなど、セッションの作成時に *同じ* デバイス名を構成する必要があることに注意してください。
@@ -56,9 +56,9 @@ VDI デバイスは、Microsoft 365 コンプライアンス センターに次�
 > [!WARNING]
 > リソース構成が低い環境では、VDI ブート手順によってデバイスのオンボード プロセスが遅くなる可能性があります。
 
-1. [Microsoft コンプライアンス センター](https://compliance.microsoft.com)から VDI 構成パッケージ .zip ファイル (*DeviceCompliancePackage.zip*) を取得します。
+1. MICROSOFT PURVIEW コンプライアンス ポータルから VDI 構成パッケージ .zip ファイル (*DeviceCompliancePackage.zip*) [を](https://compliance.microsoft.com)取得します。
 
-2. ナビゲーション ウィンドウで、**設定** > **Device onboardingOnboarding を** > 選択します。
+2. ナビゲーション ウィンドウで、[デバイスの **オンボード** のオン **ボーディング** > **の設定]** >  を選択します。
 
 3. **[展開方法]** フィールドで、**非永続的エンドポイントの VDI オンボード スクリプトを選択します**。
 
@@ -73,7 +73,7 @@ VDI デバイスは、Microsoft 365 コンプライアンス センターに次�
     > [!NOTE]
     > フォルダーが表示 `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` されない場合は、非表示になっている可能性があります。 [**非表示のファイルとフォルダーを表示** する] オプションをエクスプローラーから選択する必要があります。
 
-8. [ローカル グループ ポリシー エディター] ウィンドウを開き、**コンピューターの構成** > **Windows 設定** > **ScriptsStartup** >  に移動します。
+8. [ローカル グループ ポリシー エディター] ウィンドウを開き、[**コンピューター構成****Windows 設定****スクリプト** > **のスタートアップ**]  >  >  に移動します。
 
    > [!NOTE]
    > ドメイン グループ ポリシーは、非永続的 VDI デバイスのオンボードにも使用できます。
@@ -82,11 +82,11 @@ VDI デバイスは、Microsoft 365 コンプライアンス センターに次�
 
    **デバイスごとに 1 つのエントリの場合**
 
-   **[PowerShell スクリプト**] タブを選択し、[**追加**] をクリックします (Windows エクスプローラーは、オンボード スクリプトを先にコピーしたパスで直接開きます)。 PowerShell スクリプトのオンボードに移動します `Onboard-NonPersistentMachine.ps1`。
+   **[PowerShell スクリプト**] タブを選択し、[**追加**] をクリックします (Windows エクスプローラーは、前にオンボード スクリプトをコピーしたパスで直接開きます)。 PowerShell スクリプトのオンボードに移動します `Onboard-NonPersistentMachine.ps1`。
 
    **デバイスごとに複数のエントリの場合**:
 
-   [**スクリプト**] タブを選択し、[**追加**] をクリックします (Windows エクスプローラーは、オンボード スクリプトを先にコピーしたパスで直接開きます)。 オンボード bash スクリプトに移動します `DeviceComplianceOnboardingScript.cmd`。
+   [ **スクリプト** ] タブを選択し、[ **追加** ] をクリックします (Windows エクスプローラーは、前にオンボード スクリプトをコピーしたパスで直接開きます)。 オンボード bash スクリプトに移動します `DeviceComplianceOnboardingScript.cmd`。
 
 10. ソリューションをテストします。
     1. 1 つのデバイスでプールを作成します。
@@ -114,13 +114,13 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 
 DISM コマンドとオフライン サービスの詳細については、以下の記事を参照してください。
 
-- [DISM を使用してWindowsイメージを変更する](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [DISM を使用して Windows イメージを変更する](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM イメージ管理Command-Lineオプション](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [オフライン Windows イメージ内のコンポーネント ストアのサイズを小さくする](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [オフライン Windows イメージのコンポーネント ストアのサイズを小さくする](/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 オフライン サービスが非永続的 VDI 環境で実行可能なオプションでない場合は、一貫性とセンサーの正常性を確保するために次の手順を実行する必要があります。
 
-1. オンライン サービスまたはパッチ適用用のゴールデン イメージを起動した後、オフボード スクリプトを実行して、Microsoft 365デバイス監視センサーをオフにします。 詳細については、「 [ローカル スクリプトを使用したオフボード デバイス](device-onboarding-script.md#offboard-devices-using-a-local-script)」を参照してください。
+1. オンライン サービスまたはパッチ適用用のゴールデン イメージを起動した後、オフボード スクリプトを実行して、Microsoft 365 デバイス監視センサーをオフにします。 詳細については、「 [ローカル スクリプトを使用したオフボード デバイス](device-onboarding-script.md#offboard-devices-using-a-local-script)」を参照してください。
 
 2. CMD ウィンドウで次のコマンドを実行して、センサーが停止していることを確認します。
 
@@ -142,7 +142,7 @@ DISM コマンドとオフライン サービスの詳細については、以�
 
 5. 通常と同じように、ゴールデン イメージを再シールします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [グループ ポリシーを使用してWindows 10デバイスとWindows 11 デバイスをオンボードする](device-onboarding-gp.md)
 - [Microsoft Endpoint Configuration Managerを使用してWindows 10デバイスとWindows 11 デバイスをオンボードする](device-onboarding-sccm.md)

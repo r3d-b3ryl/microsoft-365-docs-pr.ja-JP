@@ -16,26 +16,24 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: この記事では、Microsoft 365の電子情報開示 (Standard) ケースの制限について説明します。
-ms.openlocfilehash: 6cc058bee09563d6a9914b9602b2fc6a3bfdf7f6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: この記事では、Microsoft 365 の電子情報開示 (Standard) ケースの制限について説明します。
+ms.openlocfilehash: fe564bfb26bf586ba6ff6567dae057ecb1065296
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093045"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634139"
 ---
 # <a name="limits-in-ediscovery-standard"></a>電子情報開示の制限 (Standard)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-次の表に、電子情報開示 (Standard) ケースの制限と、電子情報開示 (Standard) ケースに関連付けられている保留の一覧を示します。 Microsoft Purview 電子情報開示 (Standard) の詳細については、「 [電子情報開示の概要 (Standard)](./get-started-core-ediscovery.md)」を参照してください。
+次の表に、電子情報開示 (Standard) ケースの制限と、電子情報開示 (Standard) ケースに関連付けられている保留の一覧を示します。 Microsoft Purview eDiscovery (Standard) の詳細については、「[電子情報開示の概要 (Standard)](./get-started-core-ediscovery.md)」を参照してください。
     
   | 制限の説明 | 極限 |
   |:-----|:-----|
-  |組織のケースの最大数。  <br/> |無制限  <br/> |
-  |組織のケースホールドの最大数。  <br/> |10,000  <br/> |
-  |1 つのケースホールド内のメールボックスの最大数。 この制限には、ユーザー メールボックスの合計と、Microsoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているメールボックスの合計が含まれます。  <br/> |1,000 人  <br/> |
-  |1 つのケースホールド内のサイトの最大数。 この制限には、OneDrive for Business サイト、SharePoint サイト、Microsoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているサイトの合計が含まれます。  <br/> |100  <br/> |
+  |組織のケースの最大数。  <br/> |制限なし  <br/> |
+  |組織のケース保留の最大数。  <br/> |10,000  <br/> |
+  |1 つのケース保留のメールボックスの最大数。 この制限には、ユーザー メールボックスと、Microsoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているメールボックスの合計が含まれます。  <br/> |1,000 人  <br/> |
+  |1 つのケースホールド内のサイトの最大数。 この制限には、OneDrive for Business サイト、SharePoint サイト、およびMicrosoft 365 グループ、Microsoft Teams、Yammer グループに関連付けられているサイトの合計が含まれます。  <br/> |100  <br/> |
   |電子情報開示 (Standard) ホーム ページに表示されるケースの最大数と、ケース内の [保留]、[検索]、[エクスポート] タブに表示されるアイテムの最大数。 <sup>1</sup> |1,000 人|
 
    > [!NOTE]

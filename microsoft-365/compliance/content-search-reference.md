@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: この記事には、Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールに関するリファレンス情報が含まれていて、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: ec80cd12efc3c314f891972b1ac48232f02c072f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: a028cfc80dfdba7bea0ddbf89b6f528d5e0726ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66018121"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634811"
 ---
 # <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、コンテンツ検索の機能について説明します。
 

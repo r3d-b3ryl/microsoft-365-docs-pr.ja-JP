@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、実行するたびに大規模なセットの監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
-ms.openlocfilehash: 8799f1a4ddf2ef7dd536ccb3e6e70a4b731b4cd6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0c1d8d6ab8f6a2c8a0dc6a1c858a164c2f4ff494
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100855"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632841"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>PowerShell スクリプトを使用して監査ログを検索する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 今日の世界では、セキュリティ、コンプライアンス、および監査は、IT 管理者にとって最優先事項になっています。 Microsoft 365 には、組織がセキュリティ、コンプライアンス、および監査を管理するのに役立ついくつかの組み込みの機能があります。 特に、統合監査ログは、セキュリティ インシデントとコンプライアンスの問題を調査するのに役立ちます。 次の方法を使用して、監査ログを取得できます。
 
@@ -66,7 +64,7 @@ ms.locfileid: "65100855"
 
 Exchange Online PowerShell に接続した後、次の手順は、スクリプトを作成、変更、および実行して、監査データを取得することです。 監査ログ検索スクリプトの最初の 7 行には、検索を構成するために変更できる次の変数が含まれています。 これらの変数の説明については、手順 2 の表を参照してください。
 
-1. ファイル拡張子 ps1 の Windows PowerShell スクリプトに以下のテキストを保存します。たとえば、SearchAuditLog.ps1 などという名前のファイルに保存します。
+1. ファイル名のサフィックスに ".ps1" を使って、次のテキストを Windows PowerShell スクリプト ファイルに保存します。 たとえば、SearchAuditLog.ps1 というファイル名です。
 
    ```powershell
    #Modify the values for the following variables to configure the audit log search.

@@ -16,16 +16,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: cb8471ffea418ac47921777a0ee9594fa73fe4ac
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930221"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632643"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Microsoft Purview でのコンプライアンスの概要に関するクイック タスク
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview を初めて使用し、どこから始めればいいのか疑問に思う場合は、この記事では基本に関するガイダンスを提供し、重要なコンプライアンス タスクに優先順位を付けます。 この記事は、データの管理と監視、情報の保護、インサイダー リスクの最小化を迅速に開始するのに役立ちます。
 
@@ -35,7 +33,7 @@ Microsoft Purview を初めて使用し、どこから始めればいいのか�
 
 ## <a name="task-1-configure-compliance-permissions"></a>タスク 1: コンプライアンスアクセス許可を構成する
 
-組織内のだれが Microsoft Purview コンプライアンス ポータルにアクセスしてコンテンツを表示し、管理タスクを実行するかを管理することが重要です。 Microsoft 365 には、コンプライアンスに固有の管理ロールと、Microsoft Purview コンプライアンス ポータルに含まれるツールを使用するための管理ロールが用意されています。
+コンテンツを表示し、管理タスクを実行するために、組織内でMicrosoft Purview コンプライアンス ポータルにアクセスできるユーザーを管理することが重要です。 Microsoft 365 には、コンプライアンスに固有の管理ロールと、Microsoft Purview コンプライアンス ポータルに含まれるツールを使用するための管理ロールが用意されています。
 
 まず、組織内のユーザーにコンプライアンスアクセス許可を割り当てて、これらのタスクを実行し、承認されていないユーザーが自分の責任の範囲外の領域にアクセスできないようにします。 Microsoft 365 に含まれるコンプライアンス ソリューションの構成と実装を開始する前に、適切なユーザーを **コンプライアンス データ管理者** と **コンプライアンス管理者** の管理者ロールに割り当てる必要があります。 また、コンプライアンス マネージャーでデータを表示するには、Azure Active Directory グローバル リーダー ロールにユーザーを割り当てる必要もあります。
 
@@ -52,7 +50,7 @@ Microsoft Purview を初めて使用し、どこから始めればいいのか�
 > [!IMPORTANT]
 > セキュリティとコンプライアンスは、ほとんどの組織で緊密に統合されています。 セキュリティとコンプライアンスの両方に対する防御の詳細なアプローチを提供するために、組織が基本的なセキュリティ、脅威保護、ID およびアクセス管理領域に対処することが重要です。
 >
-> [Microsoft 365 Defender ポータルで Microsoft 365 セキュリティ スコア](/microsoft-365/security/defender/microsoft-secure-score)を確認し、次の記事で説明されているタスクを完了します。<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank"></a>
+> <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で [Microsoft 365 のセキュリティスコア](/microsoft-365/security/defender/microsoft-secure-score)を確認し、次の記事で説明されているタスクを完了します。
 >
 > - [セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](/microsoft-365/security/office-365-security/security-roadmap)
 > - [自宅での作業をサポートするセキュリティ チームの上位 12 タスク](/microsoft-365/security/top-security-tasks-for-remote-work)
@@ -152,7 +150,7 @@ Teams と Yammer メッセージ、Exchange メール、SharePoint サイト、O
 
 ### <a name="prevent-data-loss"></a>データの損失を防止する
 
-[Microsoft Purview データ損失防止 (DLP) ポリシー](/microsoft-365/compliance/dlp-learn-about-dlp) を使用すると、Microsoft 365 組織全体の機密情報を識別、監視、および自動的に保護できます。 DLP ポリシーを使用して、Microsoft サービス全体の機密アイテムを識別し、機密アイテムの偶発的な共有を防ぎ、ユーザーがワークフローを中断することなくコンプライアンスを維持する方法を学習できるようにします。
+[Microsoft Purview データ損失防止 (DLP) ポリシー](/microsoft-365/compliance/dlp-learn-about-dlp)を使用すると、Microsoft 365 組織全体の機密情報を識別、監視、および自動的に保護できます。 DLP ポリシーを使用して、Microsoft サービス全体の機密アイテムを識別し、機密アイテムの偶発的な共有を防ぎ、ユーザーがワークフローを中断することなくコンプライアンスを維持する方法を学習できるようにします。
 
 DLP ポリシーを構成するための詳細なガイダンスについては、DLP ポリシーの [作成、テスト、および調整を行います](/microsoft-365/compliance/create-test-tune-dlp-policy)。 データ損失管理のライセンス情報については、 [セキュリティ&コンプライアンスに関する Microsoft 365 ライセンス ガイダンスを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business)参照してください。
 

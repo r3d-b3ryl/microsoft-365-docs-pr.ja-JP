@@ -16,16 +16,14 @@ search.appverid:
 ms.assetid: fd6be6d3-2e8d-449d-9851-03ab7546e6aa
 ROBOTS: NOINDEX, NOFOLLOW
 description: ファイルをそれぞれの関連度でスコアリングして分析結果を生成するには、電子情報開示 (プレミアム) で関連度トレーニングを設定するための推奨事項を参照してください。
-ms.openlocfilehash: be9347468ef39fd5d6ae254ff4eb662a795f4f0b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6c6d1b88f9cbb92d44a040f1f060b860252df263
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098518"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635241"
 ---
 # <a name="manage-relevance-setup-in-ediscovery-premium-classic"></a>電子情報開示 (プレミアム) (クラシック) で関連度の設定を管理する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > Microsoft Purview 電子情報開示 (プレミアム) を使用するには、Advanced Compliance アドオンがインストールされた Office 365 E3 サブスクリプション、または E5 サブスクリプションがお客様の組織で必要になります。このプランを利用しておらず、電子情報開示 (プレミアム) をお試しになりたい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)してください。 

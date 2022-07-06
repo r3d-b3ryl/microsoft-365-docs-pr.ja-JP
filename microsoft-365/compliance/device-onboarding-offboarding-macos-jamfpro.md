@@ -1,5 +1,5 @@
 ---
-title: JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする
+title: JAMF Pro を使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,19 +13,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
-ms.openlocfilehash: bf15868b865afa80146df2b16199caf360a55ce2
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+description: JAMF Pro を使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
+ms.openlocfilehash: a4f6928098525cf04c2e752b8c6d467800f270da
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953429"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66635625"
 ---
-# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Proを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする
+# <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Pro を使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-JAMF Proを使用して、エンドポイントのデータ損失防止などの Microsoft Purview ソリューションに macOS デバイスをオンボードできます。
+JAMF Pro を使用して、エンドポイントデータ損失防止などの Microsoft Purview ソリューションに macOS デバイスをオンボードできます。
 
 > [!IMPORTANT]
 > macOS デバイスにMicrosoft Defender for Endpoint (MDE) が展開 ***されていない*** 場合は、次の手順を使用します。
@@ -35,12 +33,12 @@ JAMF Proを使用して、エンドポイントのデータ損失防止などの
 - [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- [macOS デバイスが JAMF pro を介して管理され、JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ConnectまたはIntuneを介して ID (Azure AD参加している UPN) に関連付けられていることを確認します。
+- [MACOS デバイスが JAMF pro を介して管理され、JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) Connect またはIntuneを介して ID (Azure AD joined UPN) に関連付けられていることを確認します。
 - macOS デバイスに v95+ Edge ブラウザーをインストールする
 
-## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Proを使用してデバイスを Microsoft Purview ソリューションにオンボードする
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Pro を使用してデバイスを Microsoft Purview ソリューションにオンボードする
 
 1. この手順では、これらのファイルが必要です。
 
@@ -69,7 +67,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 ### <a name="get-the-device-onboarding-package"></a>デバイスのオンボード パッケージを取得する
 
-1. **コンプライアンス センター** で **、設定** > **Device オンボードを** 開き、[**オンボード**] を選択します。
+1. **コンプライアンス センター** で、[デバイス **のオンボーディング****の設定] を** > 開き、[**オンボード**] を選択します。
 
 1. オペレーティング **システムを選択してオンボードプロセスを開始するには****、macOS** を選択します
 
@@ -79,16 +77,16 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. デバイスオンボード パッケージの内容を抽出します。 JAMF フォルダーに *DeviceComplainceOnboarding.plist* ファイルが表示されます。
 
-### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>オンボード パッケージの JAMF Pro構成プロファイルを作成する
+### <a name="create-a-jamf-pro-configuration-profile-for-the-onboarding-package"></a>オンボード パッケージの JAMF Pro 構成プロファイルを作成する
 
-1. JAMF Proで新しい構成プロファイルを作成します。 [JAMF Pro管理者ガイドを](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)参照してください。 次の値を使用します。
+1. JAMF Pro で新しい構成プロファイルを作成します。 [JAMF Pro 管理者ガイドを](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)参照してください。 次の値を使用します。
     - 名前: `MDATP onboarding for macOS`
     - 説明： `MDATP EDR onboarding for macOS`
     - カテゴリ： `none`
     - 分布方法: `install automatically`
     - レベル： `computer level`
 
-2. JAMF Pro コンソール>**アプリケーション&カスタム設定** で、**アップロード** を選択して **追加** します。 次の値を使用します。
+2. JAMF Pro コンソール> **アプリケーション &カスタム設定** で、 **アップロード** を選択して **追加** します。 次の値を使用します。
     - 基本設定ドメイン: `com.microsoft.wdav.atp`
 
 3. **アップロード** を選択し、オンボード ファイル **DeviceComplianceOnboarding.plist** を選択します。
@@ -106,17 +104,17 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 > [!IMPORTANT]
 > 基本設定ドメインの値として ***com.microsoft.wdav** _ を使用する必要があります。 Microsoft Defender for Endpointでは、この名前と _ *_com.microsoft.wdav.ext_** を使用して管理設定を読み込みます。
 
-1. JAMF Proで新しい構成プロファイルを作成します。 [JAMF Pro管理者ガイドを](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)参照してください。 次の値を使用します。
+1. JAMF Pro で新しい構成プロファイルを作成します。 [JAMF Pro 管理者ガイドを](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)参照してください。 次の値を使用します。
     - 名前: `MDATP MDAV configuration settings`
     - 説明: 空白のままにする
     - カテゴリ： `none`
     - 分布方法: `install automatically`
     - レベル： `computer level`
 
-1. [**アプリケーション & カスタム 設定**] タブで、[**外部アプリケーション**] を選択し、[**追加**] を選択し、基本設定ドメインの **[カスタム スキーマ**] を選択します。 次の値を使用します。
+1. [ **アプリケーション & カスタム設定] タブで** 、[ **外部アプリケーション**] を選択し、[ **追加]** を選択し、基本設定ドメインの **[カスタム スキーマ** ] を選択します。 次の値を使用します。
     - 基本設定ドメイン: `com.microsoft.wdav`
 
-1. [**スキーマの追加]** を選択し **、アップロード***を選択して schema.json* ファイルをアップロードします。
+1. [ **スキーマの追加]** と [ **アップロード]** を選択して *schema.json* ファイルをアップロードします。
 
 1. **[保存]** を選択します。
 
@@ -134,16 +132,16 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 ### <a name="create-and-deploy-a-configuration-profile-for-microsoft-autoupdate-mau"></a>Microsoft AutoUpdate (MAU) の構成プロファイルを作成して展開する
 
-1. **com.microsoft.autoupdate2.plist** を使用して JAMF Pro構成ファイルを作成します。 [JAMF Pro管理者ガイドを](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)参照してください。 次の値を使用します。
+1. **com.microsoft.autoupdate2.plist** を使用して JAMF Pro 構成ファイルを作成します。 [JAMF Pro 管理者ガイドを](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)参照してください。 次の値を使用します。
     - 名前: `MDATP MDAV MAU settings`
     - 説明： `Microsoft AutoUPdate settings for MDATP for macOS`
     - カテゴリ： `none`
     - 分布方法: `install automatically`
     - レベル： `computer level`
 
-1. **アプリケーション & カスタム 設定** で **、アップロード** と追加を選択 **します**。
+1. **[アプリケーション & カスタム設定] で、[****アップロード** と **追加**] を選択します。
 
-1. **[基本設定のドメイン] に**「アップロード」と入力`com.microsoft.autoupdate2`**して選択します**。
+1. **[基本設定のドメイン] に**「アップロード」と入力`com.microsoft.autoupdate2`し、[**アップロード**] を選択します。
 
 1. **com.microsoft.autoupdate2.plist ファイルを** 選択します。
 
@@ -161,11 +159,11 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. **fulldisk.mobileconfig** ファイルを使用します。
 
-1. **fulldisk.mobileconfig** ファイルを JAMF にアップロードします。 [JAMF Proを使用したカスタム構成プロファイルのデプロイ](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)に関する説明を参照してください。
+1. **fulldisk.mobileconfig** ファイルを JAMF にアップロードします。 [JAMF Pro を使用したカスタム構成プロファイルのデプロイに関する説明](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)を参照してください。
 
 ### <a name="create-and-deploy-a-configuration-profile-for-system-extensions"></a>システム拡張機能の構成プロファイルを作成してデプロイする
 
-1. JAMF Pro管理者ガイドの手順を使用して[、JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)構成ファイルを作成します。 次の値を使用します。
+1. JAMF Pro 管理者ガイドの手順を使用して [、JAMF Pro](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/) 構成ファイルを作成します。 次の値を使用します。
     - 名前: `MDATP MDAV System Extensions`
     - 説明： `MDATP system extensions`
     - カテゴリ： `none`
@@ -188,19 +186,19 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 ### <a name="configure-network-extension"></a>ネットワーク拡張機能を構成する
 
-1. GitHubからダウンロードした **netfilter.mobileconfig** ファイルを使用します。
+1. GitHub からダウンロードした **netfilter.mobileconfig**  ファイルを使用します。
 
-2. [Jamf Proを使用したカスタム構成プロファイルのデプロイ](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)に関する説明に従って JAMF にアップロードします。
+2. [Jamf Pro を使用したカスタム構成プロファイルのデプロイ](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)の説明に従って JAMF にアップロードします。
 
 ### <a name="grant-accessibility-access-to-dlp"></a>DLP へのアクセシビリティ アクセスを付与する
 
-1. GitHubからダウンロードした **accessibility.mobileconfig** ファイルを使用します。
+1. GitHub からダウンロードした **accessibility.mobileconfig** ファイルを使用します。
 
-2. [Jamf Proを使用したカスタム構成プロファイルのデプロイ](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)に関する説明に従って JAMF にアップロードします。
+2. [Jamf Pro を使用したカスタム構成プロファイルのデプロイ](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)の説明に従って JAMF にアップロードします。
 
 ### <a name="get-the-installation-package"></a>インストール パッケージを取得する
 
-1. **コンプライアンス センター** で **、設定** > **Device オンボードを** 開き、[**オンボード**] を選択します。
+1. **コンプライアンス センター** で、[デバイス **のオンボーディング****の設定] を** > 開き、[**オンボード**] を選択します。
 
 1. オペレーティング **システムを選択してオンボードプロセスを開始するには****、macOS** を選択します
 
@@ -227,7 +225,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
     - **[オプション] タブ**: 既定値のままにする
     - **[制限事項] タブ**: 既定値のままにする
 
-1. **[保存]** を選択します。 これにより、パッケージが JAMF Proにアップロードされます。
+1. **[保存]** を選択します。 これにより、パッケージが JAMF Pro にアップロードされます。
 
 1. **[ポリシー] ページを** 開きます。
 
@@ -240,7 +238,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. **[保存]** を選択します。
 
-1. **[PackagesConfigure** > ] を選択 **します**。
+1. [ **パッケージの** > **構成] を選択します**。
 
 1. **[追加]** を選択します。
 
@@ -260,7 +258,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. macOS デバイスを再起動します。
 
-1. **System PreferencesProfiles** >  を開 **きます**。
+1. **システム環境設定プロファイルを** > 開 **きます**。
 
 1. 次の情報が表示されます。
     - アクセシビリティ
@@ -272,10 +270,10 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
     - ネットワーク フィルター
     - システム拡張機能プロファイル
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>JAMF Proを使用したオフボード macOS デバイス
+## <a name="offboard-macos-devices-using-jamf-pro"></a>JAMF Pro を使用したオフボード macOS デバイス
 
 1. アプリケーションをアンインストールする (MDE を使用していない場合)
-    1. JAMF Pro Docs - パッケージの展開 - [JAMF Pro管理者ガイド](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro管理者ガイドを参照してください
+    1. JAMF Pro Docs - パッケージ展開 - [JAMF Pro 管理者ガイド](https://www.jamf.com/resources/product-documentation/jamf-pro-administrators-guide/)Jamf Pro 管理者ガイドを参照してください
 
 1. macOS デバイスを再起動する - 一部のアプリケーションは、再起動するまで印刷機能を失う可能性があります
 

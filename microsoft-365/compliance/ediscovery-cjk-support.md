@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示の CJK/Double Byte のサポート (プレミアム)
+title: 電子情報開示の CJK/Double Byte サポート (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,19 +15,17 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft 365の Microsoft Purview 電子情報開示 (プレミアム) で、2 バイト文字セットを使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について説明します。
-ms.openlocfilehash: e6399136713ff7be4b3c065de05b587a3f942b01
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 のMicrosoft Purview eDiscovery (Premium) で、2 バイト文字セットを使用する中国語、日本語、韓国語 (CJK) 言語をサポートする方法について説明します。
+ms.openlocfilehash: a16f1f63deee7cbc77b105c9c49431a8eeda0e71
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095908"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66636207"
 ---
-# <a name="cjk-language-support-for-ediscovery-premium"></a>電子情報開示の CJK 言語サポート (プレミアム)
+# <a name="cjk-language-support-for-ediscovery-premium"></a>電子情報開示の CJK 言語サポート (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (プレミアム) は、レビュー セットの次の高度なシナリオに対して、2 バイト文字セット言語 (簡体字中国語、繁体字中国語、日本語、韓国語など)をサポートしています。これらは、まとめて *CJK* 言語と呼ばれます)。
+Microsoft Purview eDiscovery (Premium) では、レビュー セットの次の高度なシナリオに対して、2 バイト文字セット言語 (簡体字中国語、繁体字中国語、日本語、韓国語など)がサポートされています。これらは *CJK* 言語と総称されます)。
 
 - [レビュー セット内のデータに対してクエリを実行](review-set-search.md)する場合。
 
@@ -39,7 +37,7 @@ Microsoft Purview 電子情報開示 (プレミアム) は、レビュー セッ
 
 **CJK 文字を含むアイテムを収集する検索を作成操作方法?**
 
-電子情報開示 (プレミアム) でコンテンツを検索するときに、[キーワード検索](building-search-queries.md#keyword-searches)、[キーワード クエリ、検索条件](keyword-queries-and-search-conditions.md)に CJK 文字を使用できます。 CJK 文字の検索は、Microsoft Purview 電子情報開示 (Standard) および Content Search でコンテンツを検索するときにもサポートされます。
+電子情報開示 (Premium) でコンテンツを検索するときに、 [キーワード検索](building-search-queries.md#keyword-searches)、 [キーワード クエリ、検索条件](keyword-queries-and-search-conditions.md) に CJK 文字を使用できます。 CJK 文字の検索は、Microsoft Purview eDiscovery (Standard) および Content Search でコンテンツを検索するときにもサポートされます。
 
 ブール演算子 **AND**、**OR**、**NOT**、**NEAR** など、すべての [検索演算子](keyword-queries-and-search-conditions.md#search-operators)と [検索条件](keyword-queries-and-search-conditions.md#search-conditions)に対して CJK サポートを提供しています。
 
@@ -49,13 +47,13 @@ Microsoft Purview 電子情報開示 (プレミアム) は、レビュー セッ
 
 検索シナリオによって異なります。
 
-- 電子情報開示 (プレミアム) [でレビュー セット](review-set-search.md)内のデータにクエリを実行すると、複数の言語を検索できます。
+- 電子情報開示 (Premium) [でレビュー セット内のデータにクエリを実行](review-set-search.md) すると、複数の言語を検索できます。
 
 - [データを収集する検索を作成](create-draft-collection.md)するときは、ターゲットとする言語ごとに個別のコレクションを作成します。 たとえば、中国語と韓国語の両方を含むドキュメントを検索する場合は、最初のコレクションに中国語を選択し、2 番目のコレクションに韓国語を選択します。
 
 **レビュー セット内のクエリの言語を選択するためのクエリ言語 -country/region アイコンが表示されません。レビュー セット検索でクエリ言語を指定するにはどうすればよいですか?**
 
-レビュー セットクエリの場合、ドキュメント言語を指定する必要はありません。 電子情報開示 (プレミアム) は、レビュー セットにコンテンツを追加すると、ドキュメント言語を自動的に検出します。 これにより、レビュー セットでクエリ結果を最適化できます。
+レビュー セットクエリの場合、ドキュメント言語を指定する必要はありません。 電子情報開示 (Premium) は、レビュー セットにコンテンツを追加すると、ドキュメント言語を自動的に検出します。 これにより、レビュー セットでクエリ結果を最適化できます。
 
 **検出された言語を [ファイル メタデータ](view-documents-in-review-set.md#file-metadata)に表示できますか?**
 

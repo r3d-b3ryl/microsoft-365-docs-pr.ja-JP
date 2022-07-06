@@ -1,6 +1,6 @@
 ---
 title: 情報バリアの使用を開始する
-description: Microsoft Purviewで情報バリアを使用する方法について説明します。
+description: Microsoft Purview で情報バリアを使用する方法について説明します。
 keywords: Microsoft 365、Microsoft Purview、コンプライアンス、情報バリア
 ms.author: robmazz
 author: robmazz
@@ -16,16 +16,14 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74da3ee1c2b3339a66ff205989dd978fdd00a530
-ms.sourcegitcommit: 99494a5530ad64802f341573ad42796134190296
+ms.openlocfilehash: fde4db2d646ccb9c7535096ec001c0371e78da8f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65396247"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632269"
 ---
 # <a name="get-started-with-information-barriers"></a>情報バリアの使用を開始する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、組織で情報バリア (IB) ポリシーを構成する方法について説明します。 いくつかの手順が関係しているため、IB ポリシーの構成を開始する前に、プロセス全体を確認してください。
 
@@ -46,7 +44,7 @@ IB の使用を開始する前に、Microsoft 365 サブスクリプションと
 - Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 コンプライアンス アドオン
 - Microsoft 365 E3/A3/A1 サブスクリプション + Microsoft 365 E5/A5 Insider Risk Management アドオン
 
-詳細については、[セキュリティ&コンプライアンスに関するMicrosoft 365ライセンスガイダンスに関するページを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)参照してください。
+詳細については、 [セキュリティ&コンプライアンスに関する Microsoft 365 ライセンス ガイダンスを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection)参照してください。
 
 [IB ポリシーを管理](information-barriers-policies.md)するには、次のいずれかのロールが割り当てられている必要があります。
 
@@ -71,43 +69,43 @@ IB を構成するときは、いくつかのオブジェクトと概念を操�
     > *許可* ポリシーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーには表示されません。 IB 以外のグループとユーザーが IB セグメントとポリシーに含まれるユーザーに表示されるようにする必要がある場合は、 *ブロック* ポリシーを使用する必要があります。
 
 - **ポリシー アプリケーション** は、すべての IB ポリシーが定義された後に実行され、組織で適用する準備が整いました。
-- **IB 以外のユーザーとグループの可視性**。 IB 以外のユーザーとグループは、IB セグメントとポリシーから除外されたユーザーとグループです。 IB ポリシーの種類 (ブロックまたは許可) によって、これらのユーザーとグループの動作は、Microsoft Teams、SharePoint、OneDrive、グローバル アドレス一覧で異なります。 許可ポリシーで定義 *された* ユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーには表示されません。 *ブロック* ポリシーで定義されたユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーに表示されます。
+- **IB 以外のユーザーとグループの可視性**。 IB 以外のユーザーとグループは、IB セグメントとポリシーから除外されたユーザーとグループです。 IB ポリシーの種類 (ブロックまたは許可) によって、これらのユーザーとグループの動作は、Microsoft Teams、SharePoint、OneDrive、およびグローバル アドレス一覧で異なります。 許可ポリシーで定義 *された* ユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーには表示されません。 *ブロック* ポリシーで定義されたユーザーの場合、IB 以外のグループとユーザーは、IB セグメントとポリシーに含まれるユーザーに表示されます。
 - **グループのサポート**。 IB では現在、モダン グループのみがサポートされており、配布リスト/セキュリティ グループは IB 以外のグループとして扱われます。
-- **非表示/無効のユーザー アカウント**。 組織内の非表示/無効なアカウントの場合、ユーザー アカウントが非表示または無効になっている場合、 *HiddenFromAddressListEnabled* パラメーターは自動的に *True* に設定されます。 IB 対応組織では、これらのアカウントが他のすべてのユーザー アカウントと通信できなくなります。 Microsoft Teamsでは、これらのアカウントを含むすべてのチャットがロックされるか、ユーザーが会話から自動的に削除されます。
+- **非表示/無効のユーザー アカウント**。 組織内の非表示/無効なアカウントの場合、ユーザー アカウントが非表示または無効になっている場合、 *HiddenFromAddressListEnabled* パラメーターは自動的に *True* に設定されます。 IB 対応組織では、これらのアカウントが他のすべてのユーザー アカウントと通信できなくなります。 Microsoft Teams では、これらのアカウントを含むすべてのチャットがロックされるか、ユーザーが会話から自動的に削除されます。
 
 ## <a name="configuration-overview"></a>構成の概要
 
 | **手順** | **内容** |
 |:------|:----------------|
-| **手順 1**: [前提条件が満たされていることを確認する](#step-1-make-sure-prerequisites-are-met) | - 必要なサブスクリプションとアクセス許可があることを確認する <br/>- ディレクトリにユーザーをセグメント化するためのデータが含まれていることを確認する<br/>- [Microsoft Teamsの名前で検索を](/microsoftteams/teams-scoped-directory-search)有効にする<br/>- 監査ログの記録をオンにしてあることを確認する<br/>- Exchange アドレス帳ポリシーが設定されていないことを確認する <br/>- Microsoft Teamsの管理者の同意を提供する (手順が含まれています) |
+| **手順 1**: [前提条件が満たされていることを確認する](#step-1-make-sure-prerequisites-are-met) | - 必要なサブスクリプションとアクセス許可があることを確認する <br/>- ディレクトリにユーザーをセグメント化するためのデータが含まれていることを確認する<br/>- [Microsoft Teams の名前で検索を](/microsoftteams/teams-scoped-directory-search)有効にする<br/>- 監査ログの記録をオンにしてあることを確認する<br/>- Exchange アドレス帳ポリシーが設定されていないことを確認する <br/>- Microsoft Teams の管理者の同意を提供する (手順が含まれています) |
 | **手順 2**: [組織内のユーザーをセグメント化する](#step-2-segment-users-in-your-organization) | - 必要なポリシーを決定する<br/>- 定義するセグメントのリストを作成する<br/>- 使用する属性を特定する<br/>- ポリシー フィルターの観点からセグメントを定義する |
 | **手順 3**: [情報バリア ポリシーを作成する](#step-3-create-ib-policies) | - ポリシーを作成する (まだ適用しない)<br/>- 2 つの種類から選択します (ブロックまたは許可) |
 | **手順 4**: [情報バリア ポリシーを適用する](#step-4-apply-ib-policies) | - ポリシーをアクティブな状態に設定する<br/>- ポリシー アプリケーションを実行する<br/>- ポリシーの状態を表示する |
-| **手順 5**: [SharePointとOneDriveに関する情報バリアの構成 (省略可能)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - SharePointとOneDrive用に IB を構成する |
+| **手順 5**: [SharePoint と OneDrive の情報バリアの構成 (省略可能)](#step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive) | - SharePoint と OneDrive の IB を構成する |
 | **手順 6**: [情報バリア モード (省略可能)](#step-6-information-barriers-modes) | - 該当する場合は IB モードを更新する |
 
 ## <a name="step-1-make-sure-prerequisites-are-met"></a>手順 1: 前提条件が満たされていることを確認する
 
 必要なサブスクリプションとアクセス許可に加えて、IB を構成する前に、次の要件が満たされていることを確認してください。
 
-- **ディレクトリ データ**: 組織の構造がディレクトリ データに反映されていることを確認してください。 この操作を実行するには、ユーザー アカウント属性 (グループ メンバーシップ、部署名など) がAzure Active Directory (またはExchange Online) に正しく設定されていることを確認します。 詳細については、次のリソースを参照してください。
+- **ディレクトリ データ**: 組織の構造がディレクトリ データに反映されていることを確認してください。 この操作を実行するには、ユーザー アカウント属性 (グループ メンバーシップ、部署名など) が Azure Active Directory (またはExchange Online) に正しく設定されていることを確認します。 詳細については、次のリソースを参照してください。
   - [情報バリア ポリシーの属性](information-barriers-attributes.md)
   - [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Office 365 PowerShell でユーザー アカウント プロパティを構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- **スコープディレクトリ検索**: 組織の最初の IB ポリシーを定義する前に、[Microsoft Teamsでスコープ付きディレクトリ検索を有効にする](/MicrosoftTeams/teams-scoped-directory-search)必要があります。 IB ポリシーを設定または定義する前に、スコープ付きディレクトリ検索を有効にしてから少なくとも 24 時間待ちます。
+- **スコープ付きディレクトリ検索**: 組織の最初の IB ポリシーを定義する前に、 [Microsoft Teams でスコープ付きディレクトリ検索を有効にする](/MicrosoftTeams/teams-scoped-directory-search)必要があります。 IB ポリシーを設定または定義する前に、スコープ付きディレクトリ検索を有効にしてから少なくとも 24 時間待ちます。
 
 - **監査ログが有効になっていることを確認** する: IB ポリシー アプリケーションの状態を検索するには、監査ログを有効にする必要があります。 Microsoft 365 の組織では、監査が既定で有効になっています。 組織によっては、特定の理由で監査を無効にしている場合があります。 組織の監査が無効になっている場合は、別の管理者が無効にしている可能性があります。 この手順を完了する場合は、監査を再びオンにしても問題ないか確認することをお勧めします。 詳細については、「[監査ログの検索を有効または無効にする](turn-audit-log-search-on-or-off.md)」をご覧ください。
 
 - **既存のExchange Onlineアドレス帳ポリシーを削除** する: IB ポリシーを定義して適用する前に、組織内のすべての既存のExchange Onlineアドレス帳ポリシーを削除する必要があります。 IB ポリシーはアドレス帳ポリシーに基づいており、既存の ABPs ポリシーは IB によって作成された ABP と互換性がありません。 既存のアドレス帳ポリシーを削除するには、「[Exchange Onlineでアドレス帳ポリシーを削除する](/exchange/address-books/address-book-policies/remove-an-address-book-policy)」を参照してください。 IB ポリシーとExchange Onlineの詳細については、「[情報バリアとExchange Online](information-barriers.md#information-barriers-and-exchange-online)」を参照してください。
 
 - **PowerShell を使用して管理する (省略可能):** IB セグメントとポリシーは、Office 365 Security & Compliance PowerShell で定義および管理できます。 この記事ではいくつかの例を示していますが、PowerShell を使用して IB セグメントとポリシーを構成および管理する場合は、PowerShell コマンドレットとパラメーターについて理解しておく必要があります。 この構成オプションを選択した場合は、Azure Active Directory PowerShell モジュールも必要になります。
-  - [セキュリティ & コンプライアンス PowerShell へのConnect](/powershell/exchange/connect-to-scc-powershell)
-  - [Graph用の PowerShell Azure Active Directoryインストールする](/powershell/azure/active-directory/install-adv2)
+  - [セキュリティ/コンプライアンス PowerShell に接続する](/powershell/exchange/connect-to-scc-powershell)
+  - [Azure Active Directory PowerShell for Graph のインストール](/powershell/azure/active-directory/install-adv2)
 
-- **Microsoft Teamsの IB に対する管理者の同意**: IB ポリシーが適用されると、グループ (グループに基づくTeams チャネルなど) から IB 以外のコンプライアンス ユーザーを削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順を使用して、MICROSOFT TEAMSで IB ポリシーが期待どおりに機能するようにします。
+- **Microsoft Teams での IB の同意管理**: IB ポリシーが適用されると、IB 以外のコンプライアンス ユーザーをグループ (グループに基づく Teams チャネルなど) から削除できます。 この構成は、組織がポリシーと規制に準拠し続けるのに役立ちます。 次の手順に従って、MICROSOFT Teams で IB ポリシーを期待どおりに機能させます。
 
-   1. 前提条件: [Graph用の PowerShell Azure Active Directoryインストール](/powershell/azure/active-directory/install-adv2)します。
+   1. 前提条件: [Azure Active Directory PowerShell for Graph をインストールします](/powershell/azure/active-directory/install-adv2)。
 
    2. Windows PowerShell コマンドレットを実行します。
 
@@ -154,14 +152,14 @@ IB を構成するときは、いくつかのオブジェクトと概念を操�
 セグメントの定義に使用する組織のディレクトリ データの属性を決定します。 *Department*、*MemberOf*、またはサポートされている任意の IB 属性を使用できます。 ユーザーに対して選択した属性に値があることを確認します。 詳細については、 [IB でサポートされている属性を](information-barriers-attributes.md)参照してください。
 
 > [!IMPORTANT]
-> **次のセクションに進む前に、セグメントの定義に使用できる属性の値がディレクトリ データにあることを確認します**。 ディレクトリ データに使用する属性の値がない場合は、IB の構成を続行する前に、その情報を含むようにユーザー アカウントを更新する必要があります。 これに関するヘルプを表示するには、次のリソースを参照してください。<br/>- [PowerShell を使用してユーザー アカウントのプロパティOffice 365構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Azure Active Directoryを使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **次のセクションに進む前に、セグメントの定義に使用できる属性の値がディレクトリ データにあることを確認します**。 ディレクトリ データに使用する属性の値がない場合は、IB の構成を続行する前に、その情報を含むようにユーザー アカウントを更新する必要があります。 これに関するヘルプを表示するには、次のリソースを参照してください。<br/>- [PowerShell を使用してユーザー アカウントのプロパティOffice 365構成する](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)<br/>- [Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-the-compliance-portal"></a>コンプライアンス ポータルを使用してセグメントを定義する
 
 コンプライアンス ポータルでセグメントを定義するには、次の手順を実行します。
 
 1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
-2. コンプライアンス ポータルで、[**Information** **barriersSegments** > ] を選択します。
+2. コンプライアンス ポータルで、[**情報バリア** >  セグメント] を選択 **します**。
 3. [ **セグメント] ページで** 、[ **新しいセグメント** ] を選択して、新しいセグメントを作成して構成します。
 4. [ **名前]** ページで、セグメントの名前を入力します。 セグメントが作成されたら、セグメントの名前を変更することはできません。
 5. **[次へ]** を選択します。
@@ -247,7 +245,7 @@ IB ポリシーを作成するときに、特定のセグメント間の通信�
 コンプライアンス ポータルでポリシーを定義するには、次の手順を実行します。
 
 1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
-2. コンプライアンス ポータルで、[**Information** **barriersPolicies** > ] を選択します。
+2. コンプライアンス ポータルで、[ **情報バリア** > **ポリシー**] を選択します。
 3. [ **ポリシー** ] ページで、[ **ポリシーの作成** ] を選択し、新しい IB ポリシーを作成して構成します。
 4. [ **名前]** ページで、ポリシーの名前を入力し、[ **次へ**] を選択します。
 5. [ **割り当てられたセグメント** ] ページで、[セグメントの選択] を **選択します**。 検索ボックスを使用して、名前でセグメントを検索するか、スクロールして表示された一覧からセグメントを選択します。 [ **追加]** を選択して、選択したセグメントをポリシーに追加します。 セグメントは 1 つだけ選択できます。
@@ -294,7 +292,7 @@ PowerShell でポリシーを定義するには、次の手順を実行します
 コンプライアンス ポータルでポリシーを定義するには、次の手順を実行します。
 
 1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
-2. コンプライアンス ポータルで、[**Information** **barriersPolicies** > ] を選択します。
+2. コンプライアンス ポータルで、[ **情報バリア** > **ポリシー**] を選択します。
 3. [ **ポリシー** ] ページで、[ **ポリシーの作成** ] を選択し、新しい IB ポリシーを作成して構成します。
 4. [ **名前]** ページで、ポリシーの名前を入力し、[ **次へ**] を選択します。
 5. [ **割り当てられたセグメント** ] ページで、[セグメントの選択] を **選択します**。 検索ボックスを使用して、名前でセグメントを検索するか、スクロールして表示された一覧からセグメントを選択します。 [ **追加]** を選択して、選択したセグメントをポリシーに追加します。 セグメントは 1 つだけ選択できます。
@@ -341,7 +339,7 @@ IB ポリシーは、アクティブな状態に設定してポリシーを適�
 コンプライアンス ポータルでポリシーを適用するには、次の手順を実行します。
 
 1. 組織内の管理者アカウントの資格情報を使用して [コンプライアンス ポータル](https://compliance.microsoft.com) にサインインします。
-2. コンプライアンス ポータルで、**Information** **barriersPolicy** >  アプリケーションを選択します。
+2. コンプライアンス ポータルで、 **情報バリア** > **ポリシー アプリケーション** を選択します。
 3. [ **ポリシー] アプリケーション** ページで、[ **すべてのポリシーを適用]** を選択して、組織内のすべての IB ポリシーを適用します。
 
     >[!NOTE]
@@ -388,24 +386,24 @@ IB ポリシーの管理に役立つリソースを利用できます。
 - IB ポリシーを編集、停止、または削除するには、「 [情報バリア](information-barriers-edit-segments-policies.md) ポリシーの管理」を参照してください。
 - IB で問題が発生した場合は、「 [情報バリアのトラブルシューティング](/office365/troubleshoot/information-barriers/information-barriers-troubleshooting)」を参照してください。
 
-## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>手順 5: SharePointとOneDriveに関する情報バリアの構成
+## <a name="step-5-configuration-for-information-barriers-on-sharepoint-and-onedrive"></a>手順 5: SharePoint と OneDrive の情報バリアの構成
 
-SharePointとOneDrive用に IB を構成する場合は、これらのサービスで IB を有効にする必要があります。 また、Microsoft Teams用に IB を構成する場合は、これらのサービスで IB を有効にする必要もあります。 チームがMicrosoft Teams チームで作成されると、SharePoint サイトが自動的に作成され、ファイル エクスペリエンスのMicrosoft Teamsに関連付けられます。 この新しいSharePoint サイトとファイルでは、既定では IB ポリシーは適用されません。
+SharePoint と OneDrive の IB を構成する場合は、これらのサービスで IB を有効にする必要があります。 Microsoft Teams 用に IB を構成する場合は、これらのサービスで IB を有効にする必要もあります。 Microsoft Teams チームでチームを作成すると、SharePoint サイトが自動的に作成され、ファイル エクスペリエンスのために Microsoft Teams に関連付けられます。 IB ポリシーは、この新しい SharePoint サイトとファイルでは既定では適用されません。
 
-SharePointとOneDriveで IB を有効にするには、「SharePointで[情報バリアを使用](/sharepoint/information-barriers)する」のガイダンスと手順に従います。
+SharePoint と OneDrive で IB を有効にするには、「SharePoint で [情報バリアを使用](/sharepoint/information-barriers) する」のガイダンスと手順に従います。
 
 ## <a name="step-6-information-barriers-modes"></a>手順 6: 情報バリア モード
 
-モードは、リソースの IB モードに基づいて、Microsoft 365 リソースへのアクセス、共有、メンバーシップを強化するのに役立ちます。 モードは、Microsoft 365 グループ、Microsoft Teams、OneDrive、SharePoint サイトでサポートされ、新しいまたは既存の IB 構成で自動的に有効になります。
+モードは、リソースの IB モードに基づいて、Microsoft 365 リソースのアクセス、共有、メンバーシップを強化するのに役立ちます。 モードは、Microsoft 365 グループ、Microsoft Teams、OneDrive、SharePoint サイトでサポートされ、新規または既存の IB 構成で自動的に有効になります。
 
 Microsoft 365 リソースでは、次の IB モードがサポートされています。
 
 | **Mode** | **説明** | **例** |
 |:-----|:------------|:--------|
 | **開く** | Microsoft 365 リソースに関連付けられている IB ポリシーやセグメントはありません。 だれでもリソースのメンバーとして招待できます。 | 組織用に作成されたチーム サイト。 |
-| **所有者モデレート (プレビュー)** | Microsoft 365 リソースの IB ポリシーは、リソース所有者の IB ポリシーから決定されます。 リソース所有者は、IB ポリシーに基づいて任意のユーザーをリソースに招待できます。 このモードは、会社が所有者によってモデレートされている互換性のないセグメント ユーザー間のコラボレーションを許可する場合に便利です。 リソース所有者のみが、IB ポリシーに従って新しいメンバーを追加できます。 | 人事担当副社長は、営業およびリサーチの VM と共同作業したいと考えています。 IB モード *所有者モデレート* で設定された新しいSharePoint サイトで、Sales セグメントユーザーと Research セグメント ユーザーの両方を同じサイトに追加します。 適切なメンバーがリソースに追加されるようにするのは、所有者の責任です。 |
-| **暗黙的** | Microsoft 365 リソースの IB ポリシーまたはセグメントは、リソース メンバーの IB ポリシーから継承されます。 所有者は、リソースの既存のメンバーと互換性がある限り、メンバーを追加できます。 このモードは、Microsoft Teamsの既定の IB モードです。 | Sales セグメント ユーザーは、組織内の他の互換性のあるセグメントと共同作業するMicrosoft Teams チームを作成します。 |
-| **Explicit** | Microsoft 365 リソースの IB ポリシーは、リソースに関連付けられているセグメントに従います。 リソース所有者またはSharePoint管理者は、リソースのセグメントを管理できます。  | Sales セグメントをサイトに関連付けて共同作業するために、Sales セグメント メンバー専用に作成されたサイト。   |
+| **所有者モデレート (プレビュー)** | Microsoft 365 リソースの IB ポリシーは、リソース所有者の IB ポリシーから決定されます。 リソース所有者は、IB ポリシーに基づいて任意のユーザーをリソースに招待できます。 このモードは、会社が所有者によってモデレートされている互換性のないセグメント ユーザー間のコラボレーションを許可する場合に便利です。 リソース所有者のみが、IB ポリシーに従って新しいメンバーを追加できます。 | 人事担当副社長は、営業およびリサーチの VM と共同作業したいと考えています。 IB モード *所有者モデレート* で設定され、Sales セグメントと Research セグメントユーザーの両方を同じサイトに追加する新しい SharePoint サイト。 適切なメンバーがリソースに追加されるようにするのは、所有者の責任です。 |
+| **暗黙的** | Microsoft 365 リソースの IB ポリシーまたはセグメントは、リソース メンバーの IB ポリシーから継承されます。 所有者は、リソースの既存のメンバーと互換性がある限り、メンバーを追加できます。 このモードは、Microsoft Teams の既定の IB モードです。 | Sales セグメント ユーザーは、組織内の他の互換性のあるセグメントと共同作業する Microsoft Teams チームを作成します。 |
+| **Explicit** | Microsoft 365 リソースの IB ポリシーは、リソースに関連付けられているセグメントに従います。 リソース所有者または SharePoint 管理者は、リソースのセグメントを管理できます。  | Sales セグメントをサイトに関連付けて共同作業するために、Sales セグメント メンバー専用に作成されたサイト。   |
 
 IB モードとサービス間での構成方法の詳細については、次の記事を参照してください。
 
@@ -439,7 +437,7 @@ Contoso には、 *人事*、 *営業*、 *マーケティング*、 *リサー�
 
 ### <a name="contosos-defined-segments"></a>Contoso の定義済みセグメント
 
-Contoso は、次のように、Azure Active Directoryの Department 属性を使用してセグメントを定義します。
+Contoso は、次のように、Azure Active Directory の Department 属性を使用してセグメントを定義します。
 
 | 部署 | セグメント定義 |
 |:-------------|:---------------------|
@@ -468,6 +466,6 @@ Contoso では、次の表に示すように、3 つの IB ポリシーを定義
 ## <a name="resources"></a>リソース
 
 - [情報バリアについての詳細情報](information-barriers.md)
-- [Microsoft Teamsの情報バリアの詳細を確認する](/MicrosoftTeams/information-barriers-in-teams)
+- [Microsoft Teams の情報バリアの詳細を確認する](/MicrosoftTeams/information-barriers-in-teams)
 - [SharePoint Online の情報バリアの詳細](/sharepoint/information-barriers)
-- [OneDriveの情報バリアの詳細を確認する](/onedrive/information-barriers)
+- [OneDrive の情報バリアの詳細を確認する](/onedrive/information-barriers)

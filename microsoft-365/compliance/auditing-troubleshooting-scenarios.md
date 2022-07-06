@@ -18,17 +18,15 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Microsoft 365監査ログ検索ツールを使用して、電子メール アカウントの一般的なサポートの問題のトラブルシューティングに役立つ方法について説明します。
-ms.openlocfilehash: 57d8cfd1cbb07300b7cd69fb78ff6a0b33b302f5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft 365 監査ログ検索ツールを使用して、電子メール アカウントの一般的なサポートの問題のトラブルシューティングに役立つ方法について説明します。
+ms.openlocfilehash: d97e8e074c2d0e14bb75fd46a512cacb6827047a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097186"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633853"
 ---
 # <a name="search-the-audit-log-to-investigate-common-support-issues"></a>監査ログを検索して、一般的なサポートの問題を調査する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、監査ログ検索ツールを使用して、一般的なサポートの問題を調査する方法について説明します。 これには、監査ログを使用して次の操作が含まれます。
 
@@ -60,7 +58,7 @@ ms.locfileid: "65097186"
   
 2. 次の検索条件を構成できます。 この記事の各トラブルシューティング シナリオでは、これらのフィールドを構成するための具体的なガイダンスをお勧めします。
   
-   a.  **開始日** と **終了日:** 日付と時刻の範囲を選択して、その期間内に発生したイベントを表示します。 既定では、過去 7 日間が選択されます。 日付と時間は、協定世界時 (UTC) 形式で指定します。 指定できる日付範囲は最大 90 日です。
+   a. **開始日** と **終了日:** 日付と時刻の範囲を選択して、その期間内に発生したイベントを表示します。 既定では、過去 7 日間が選択されます。 日付と時間は、協定世界時 (UTC) 形式で指定します。 指定できる日付範囲は最大 90 日です。
 
    b. **活動：** ドロップダウン リストを選択すると、検索できるアクティビティが表示されます。 検索の実行後、選択したアクティビティの監査ログ エントリのみが表示されます。 **[すべてのアクティビティの結果を表示]** を選択すると、他の検索条件を満たすすべてのアクティビティの結果が表示されます。 また、一部のトラブルシューティング シナリオでは、このフィールドを空白のままにしておく必要もあります。
   
@@ -84,10 +82,10 @@ ms.locfileid: "65097186"
 
 このシナリオで監査ログの検索クエリを構成する方法は次のとおりです。
 
-**活動：** ケースに関連する場合は、検索する特定のアクティビティを選択します。 侵害されたアカウントのトラブルシューティングを行うには、**Exchangeメールボックス アクティビティの下でメールボックスアクティビティにサインインしているユーザー****を** 選択することを検討してください。 これにより、メールボックスへのサインイン時に使用された IP アドレスを示す監査レコードが返されます。 それ以外の場合は、すべてのアクティビティの監査レコードを返すには、このフィールドを空白のままにします。 
+**活動：** ケースに関連する場合は、検索する特定のアクティビティを選択します。 侵害されたアカウントのトラブルシューティングを行うには、**Exchange メールボックス** アクティビティで **メールボックスアクティビティにサインインしているユーザーを** 選択することを検討してください。 これにより、メールボックスへのサインイン時に使用された IP アドレスを示す監査レコードが返されます。 それ以外の場合は、すべてのアクティビティの監査レコードを返すには、このフィールドを空白のままにします。 
 
 > [!TIP]
-> このフィールドを空白のままにすると、**UserLoggedIn** アクティビティが返されます。これは、ユーザー アカウントにサインインしたことを示すAzure Active Directoryアクティビティです。 検索結果でフィルター処理を使用して **、UserLoggedIn** 監査レコードを表示します。
+> このフィールドを空白のままにすると、 **UserLoggedIn** アクティビティが返されます。これは、ユーザー がユーザー アカウントにサインインしたことを示す Azure Active Directory アクティビティです。 検索結果でフィルター処理を使用して **、UserLoggedIn** 監査レコードを表示します。
 
 **開始日** と **終了日:** 調査に適用される日付範囲を選択します。
 
@@ -185,9 +183,9 @@ Set-Mailbox <mailbox alias> -ForwardingSmtpAddress $null
 
 **活動：****[Exchange メールボックス アクティビティ**] で、次のいずれかのアクティビティまたは両方のアクティビティを選択します。
 
-- **New-InboxRule Outlook Web Appから新しい受信トレイ ルールを作成** します。 このアクティビティは、Outlook Web アプリまたは PowerShell Exchange Onlineを使用して受信トレイ ルールが作成されたときに監査レコードを返します。
+- **New-InboxRule Outlook Web Appから新しい受信トレイ ルールを作成** します。 このアクティビティは、Outlook Web アプリまたは powerShell Exchange Onlineを使用して受信トレイ ルールが作成されたときに監査レコードを返します。
 
-- **Outlook クライアントからの受信トレイ ルールを更新しました**。 このアクティビティは、Outlook デスクトップ クライアントを使用して受信トレイルールが作成、変更、または削除されたときに監査レコードを返します。
+- **Outlook クライアントから受信トレイルールを更新しました**。 このアクティビティは、Outlook デスクトップ クライアントを使用して受信トレイルールが作成、変更、または削除されたときに監査レコードを返します。
 
 **開始日** と **終了日:** 調査に適用される日付範囲を選択します。
 
@@ -209,34 +207,34 @@ d. **UserId** フィールドは、**ObjectId** フィールドで指定され�
 
 ## <a name="investigate-why-there-was-a-successful-login-by-a-user-outside-your-organization"></a>組織外のユーザーによるログインが成功した理由を調査する
 
-監査ログの監査レコードを確認すると、外部ユーザーがAzure Active Directoryによって認証され、組織に正常にログインされたことを示すレコードが表示される場合があります。 たとえば、contoso.onmicrosoft.com の管理者には、別の組織のユーザー (fabrikam.onmicrosoft.com など) が contoso.onmicrosoft.com に正常にログインしたことを示す監査レコードが表示される場合があります。 同様に、Outlook.com や Live.com などの Microsoft アカウント (MSA) を持つユーザーが組織に正常にログインしたことを示す監査レコードが表示される場合があります。 このような状況では、監査されたアクティビティは **ユーザー ログインです**。 
+監査ログの監査レコードを確認すると、外部ユーザーが Azure Active Directory によって認証され、組織に正常にログインしたことを示すレコードが表示される場合があります。 たとえば、contoso.onmicrosoft.com の管理者には、別の組織のユーザー (fabrikam.onmicrosoft.com など) が contoso.onmicrosoft.com に正常にログインしたことを示す監査レコードが表示される場合があります。 同様に、Microsoft アカウント (MSA) を持つユーザー (Outlook.com や Live.com など) が組織に正常にログインしたことを示す監査レコードが表示される場合があります。 このような状況では、監査されたアクティビティは **ユーザー ログインです**。 
 
-この動作は仕様です。 ディレクトリ サービスAzure Active Directory (Azure AD) では、外部ユーザーが組織内のSharePoint サイトまたはOneDriveの場所にアクセスしようとしたときに *パススルー認証* と呼ばれるものを許可します。 外部ユーザーがこれを行おうとすると、資格情報の入力を求めるメッセージが表示されます。 Azure ADは資格情報を使用してユーザーを認証します。つまりAzure ADユーザーが自分と言っているユーザーであることを確認するだけです。 監査レコードに正常にログインしたことが示されるのは、ユーザーを認証Azure AD結果です。 ログインが成功しても、ユーザーが組織内の任意のリソースにアクセスしたり、他のアクションを実行できたわけではありません。 ユーザーがAzure ADによって認証されたことを示すだけです。 パススルー ユーザーがSharePointまたはOneDriveリソースにアクセスするには、組織内のユーザーが共有招待または匿名共有リンクを送信して、リソースを外部ユーザーと明示的に共有する必要があります。 
+この動作は仕様です。 ディレクトリ サービスである Azure Active Directory (Azure AD) では、外部ユーザーが組織内の SharePoint サイトまたは OneDrive の場所にアクセスしようとしたときに *パススルー認証* と呼ばれるものを許可します。 外部ユーザーがこれを行おうとすると、資格情報の入力を求めるメッセージが表示されます。 Azure AD では、資格情報を使用してユーザーを認証します。つまり、ユーザーが自分と言っていることを確認するのは Azure AD だけです。 監査レコードに正常にログインしたことが示されるのは、Azure AD がユーザーを認証した結果です。 ログインが成功しても、ユーザーが組織内の任意のリソースにアクセスしたり、他のアクションを実行できたわけではありません。 これは、ユーザーが Azure AD によって認証されたことを示すだけです。 パススルー ユーザーが SharePoint または OneDrive リソースにアクセスするには、組織内のユーザーに共有招待または匿名共有リンクを送信して、リソースを外部ユーザーと明示的に共有する必要があります。 
 
 > [!NOTE]
-> Azure ADでは、SharePoint Online やOneDrive for Businessなどの *ファースト パーティアプリケーション* に対してのみパススルー認証を許可します。 他のサード パーティ製アプリケーションでは許可されません。
+> Azure AD では、SharePoint Online やOneDrive for Businessなどの *ファースト パーティ アプリケーション* に対してのみパススルー認証が許可されます。 他のサード パーティ製アプリケーションでは許可されません。
 
 パススルー認証の結果である **ユーザー ログイン** イベントの監査レコード内の関連するプロパティの例と説明を次に示します。 監査レコードを選択して **[詳細** ] ポップアップ ページを表示し、[ **詳細情報**] を選択します。
 
 ![パススルー認証が成功した場合の監査レコードの例。](../media/PassThroughAuth1.png)
 
-   a.  このフィールドは、組織内のリソースにアクセスしようとしたユーザーが組織のAzure ADに見つからなかったことを示します。
+   a. このフィールドは、組織内のリソースにアクセスしようとしたユーザーが組織の Azure AD で見つからなかったことを示します。
 
    b. このフィールドには、組織内のリソースにアクセスしようとした外部ユーザーの UPN が表示されます。 このユーザー ID は、監査レコードの **User** プロパティと **UserId** プロパティでも識別されます。
 
-   c. **ApplicationId** プロパティは、ログオン要求をトリガーしたアプリケーションを識別します。 この監査レコードの ApplicationId プロパティに表示される 00000003-0000-0ff1-ce00-00000000000 の値は、オンラインSharePoint示します。 OneDrive for Businessにも同じ ApplicationId があります。
+   c. **ApplicationId** プロパティは、ログオン要求をトリガーしたアプリケーションを識別します。 この監査レコードの ApplicationId プロパティに表示される 00000003-0000-0ff1-ce00-00000000000 の値は、SharePoint Online を示します。 OneDrive for Businessにも同じ ApplicationId があります。
 
-   d. これは、パススルー認証が成功したことを示します。 つまり、ユーザーはAzure ADによって正常に認証されました。 
+   d. これは、パススルー認証が成功したことを示します。 つまり、ユーザーは Azure AD によって正常に認証されました。 
 
-   e. **RecordType** 値 **15** は、監査されたアクティビティ (UserLoggedIn) が、Azure ADのセキュリティで保護されたトークン サービス (STS) ログオン イベントであることを示します。
+   e. **RecordType** 値 **15** は、監査されたアクティビティ (UserLoggedIn) が Azure AD のセキュリティで保護されたトークン サービス (STS) ログオン イベントであることを示します。
 
-UserLoggedIn 監査レコードに表示されるその他のプロパティの詳細については、[Office 365 Management Activity API スキーマ](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)のAzure AD関連のスキーマ情報を参照してください。
+UserLoggedIn 監査レコードに表示されるその他のプロパティの詳細については、[Office 365 Management Activity API スキーマ](/office/office-365-management-api/office-365-management-activity-api-schema#azure-active-directory-base-schema)の Azure AD 関連のスキーマ情報を参照してください。
 
 パススルー認証が原因 **でユーザーが** ログインした監査アクティビティが成功するシナリオの例を次に 2 つ示します。 
 
   - Microsoft アカウントを持つユーザー (SaraD@outlook.com など) が fourthcoffee.onmicrosoft.com のOneDrive for Business アカウント内のドキュメントにアクセスしようとしましたが、fourthcoffee.onmicrosoft.com に SaraD@outlook.com に対応するゲスト ユーザー アカウントがありません。
 
-  - 組織内の職場または学校アカウントを持つユーザー (pilarp@fabrikam.onmicrosoft.com など) が contoso.onmicrosoft.com のSharePoint サイトにアクセスしようとしましたが、contoso.onmicrosoft.com に pilarp@fabrikam.com に対応するゲスト ユーザー アカウントがありません。
+  - 組織内の職場または学校アカウントを持つユーザー (pilarp@fabrikam.onmicrosoft.com など) が contoso.onmicrosoft.com の SharePoint サイトにアクセスしようとしましたが、contoso.onmicrosoft.com に pilarp@fabrikam.com に対応するゲスト ユーザー アカウントがありません。
 
 ### <a name="tips-for-investigating-successful-logins-resulting-from-pass-through-authentication"></a>パススルー認証に起因する正常なログインを調査するためのヒント
 
@@ -246,9 +244,9 @@ UserLoggedIn 監査レコードに表示されるその他のプロパティの�
 
     **ユーザーがログインした** アクティビティに加えて、組織内のユーザーが外部ユーザーとリソースを共有していることや、外部ユーザーが共有されたドキュメントにアクセス、変更、またはダウンロードしたかどうかを示す他の監査レコードが返される場合があります。
 
-- ファイルが、ログインした監査レコードによって識別された外部ユーザーと共有されたことを示す共有アクティビティをSharePoint **検索** します。 詳細については、「[監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。
+- ファイルが、ログインしている監査レコードによって識別された外部ユーザーと共有されたことを示す SharePoint 共有アクティビティ **を** 検索します。 詳細については、「[監査ログで共有監査を使用する](use-sharing-auditing.md)」を参照してください。
 
-- 調査に関連するレコードを含む監査ログ検索結果をエクスポートして、Excelを使用して外部ユーザーに関連する他のアクティビティを検索できるようにします。 詳細については、「  [監査ログ レコードのエクスポート、構成、および表示](export-view-audit-log-records.md)」を参照してください。
+- Excel を使用して外部ユーザーに関連する他のアクティビティを検索できるように、調査に関連するレコードを含む監査ログ検索結果をエクスポートします。 詳細については、「  [監査ログ レコードのエクスポート、構成、および表示](export-view-audit-log-records.md)」を参照してください。
 
 ## <a name="search-for-mailbox-activities-performed-by-users-with-non-e5-licenses"></a>E5 以外のライセンスを持つユーザーが実行したメールボックス アクティビティを検索する
 

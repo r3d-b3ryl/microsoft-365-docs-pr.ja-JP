@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 description: Microsoft Purview ソリューション試用版プレイブック。
 ms.custom: trial-playbook
-ms.openlocfilehash: 981f4d619eeef380625d6de8194e9cb0c42e2011
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530282"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66633787"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview ソリューション試用版プレイブックへようこそ。このプレイブックは、Microsoft Purview およびセキュリティ製品の堅牢で包括的な機能を見つけ出すのに役立ち、90 日間の無料試用版を最大限に活用するのに役立ちます。
 

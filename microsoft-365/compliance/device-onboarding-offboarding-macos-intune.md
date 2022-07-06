@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Intuneを使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
-ms.openlocfilehash: 99a407b2b0c8d6a506cd138078b3f35cf9e5a232
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: e5cc3ff25895f3eb7557566eb8a38722a1aee35f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952976"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632357"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-microsoft-purview-solutions-using-intune"></a>Intune を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Intuneを使用して、macOS デバイスを Microsoft Purview ソリューションにオンボードできます。
 
@@ -35,7 +33,7 @@ Intuneを使用して、macOS デバイスを Microsoft Purview ソリューシ�
 - [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - [macOS デバイスがIntuneにオンボード](/mem/intune/fundamentals/deployment-guide-platform-macos)され、[ポータル サイト アプリ](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)に登録されていることを確認します。 
 - [Microsoft エンドポイント マネージャー センター](https://endpoint.microsoft.com/#home)にアクセスできることを確認します。
@@ -142,7 +140,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 ```
 -->
 
-2. **Microsoft エンドポイント マネージャー** **centerDevicesConfiguration** >  >  **プロファイルを開きます**。
+2. **Microsoft エンドポイント マネージャー センター** > **のデバイス** > **構成プロファイルを開きます**。
 
 1. 選択: **プロファイルの作成** 
 
@@ -153,7 +151,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. [**作成**] を選択する
 
-1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 **[次へ]** を選択します。
+1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 **次へ** を選択します。
 
 1. 手順 1 でダウンロードした **accessibility.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
@@ -170,13 +168,13 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
         1. ウイルス対策エンジン `passive mode` = `true` を設定するか、 `false`. DLP のみを展開する場合に使用します `true`。 DLP とMicrosoft Defender for Endpoint (MDE) を展開する場合は、値を使用`false`するか、割り当てないでください。
     1. **netfilter.mobileconfig**
  
-1. **DevicesConfiguration** >  プロファイルを開くと、作成したプロファイルがそこに表示されます。
+1. **デバイス** > **構成プロファイルを** 開くと、作成したプロファイルがそこに表示されます。
 
 1. [ **構成プロファイル]** ページで、先ほど作成したプロファイルを選択し、この例の *[アクセシビリティフォームACOS* ] で [ **デバイスの状態** ] を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
 
 ### <a name="get-the-device-onboarding-package"></a>デバイスのオンボード パッケージを取得する
 
-1. **コンプライアンス センター** で **、設定** > **Device オンボードを** 開き、[**オンボード**] を選択します。
+1. **コンプライアンス センター** で、[デバイス **のオンボーディング****の設定] を** > 開き、[**オンボード**] を選択します。
  
 1. [ **オペレーティング システムを選択してオンボードプロセスを開始する** ] で **、macOS** を選択します。
  
@@ -186,7 +184,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 ### <a name="deploy-the-onboarding-package"></a>オンボード パッケージをデプロイする
 
-1. **Microsoft エンドポイント マネージャー** **centerDevicesConfiguration** >  >  **プロファイルを開きます**。
+1. **Microsoft エンドポイント マネージャー センター** > **のデバイス** > **構成プロファイルを開きます**。
 
 1. [プロファイル **の作成**] を選択します。 
 
@@ -197,7 +195,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. [**作成**] を選択する
 
-1. この例の *OnboardingPackage* のように、プロファイルの名前を選択します。 **[次へ]** を選択します。
+1. この例の *OnboardingPackage* のように、プロファイルの名前を選択します。 **次へ** を選択します。
 
 1. 構成プロファイル ファイルとして *DeviceComplianceOnboarding.xml* ファイルを選択します。
 
@@ -209,7 +207,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 ### <a name="enable-system-extension"></a>システム拡張機能を有効にする
 
-1. **Microsoft エンドポイント マネージャー センター** で、[構成 **プロファイル] で [プロファイルの作成**] を選択 **します**。
+1. **Microsoft エンドポイント マネージャー センター** で、[**構成プロファイル**] で [**プロファイルの作成**] を選択します。
 
 1. 選択：
     1. **Platform = macOS**
@@ -236,7 +234,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 ### <a name="get-the-installation-package"></a>インストール パッケージを取得する
 
-1. **コンプライアンス センター** で **、設定** > **Device オンボードを** 開き、[**オンボード**] を選択します。
+1. **コンプライアンス センター** で、[デバイス **のオンボーディング****の設定] を** > 開き、[**オンボード**] を選択します。
  
 1. オペレーティング **システムを選択してオンボードプロセスを開始するには****、macOS** を選択します
  
@@ -257,7 +255,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 > [!NOTE]
 > オフボードにより、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (発生したアラートへの参照を含む) は、最大 6 か月間保持されます。
 
-2. **Microsoft エンドポイント マネージャー センター** で **DevicesConfiguration** >  プロファイルを開くと、作成したプロファイルがそこに表示されます。
+2. **Microsoft エンドポイント マネージャー センター** でデバイス **構成プロファイル****を** > 開くと、作成したプロファイルがそこに表示されます。
 
 1. [ **構成プロファイル]** ページで、 *wdav.pkg.intunemac* プロファイルを選択します。
 

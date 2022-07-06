@@ -20,16 +20,14 @@ description: Microsoft Azure Active Directory Rights Management サービス (RM
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-ms.openlocfilehash: 71881e5317153288f955c44d3c52cbf80a3f8def
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: af8f19fe455c1aca1d6b7aab045a9aea5b5efee5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043002"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632049"
 ---
 # <a name="set-up-information-rights-management-irm-in-sharepoint-admin-center"></a>SharePoint 管理センターにおける Information Rights Management (IRM) の設定
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 SharePoint Online では、リストおよびライブラリのレベルでファイルに IRM 保護が適用されます。 組織で IRM 保護を使用するには、まず、Rights Management をセットアップしておく必要があります。 IRM は Azure Information Protection の Azure Rights Management サービスを利用して、暗号化と使用制限の割り当てを実施します。 Microsoft 365 のプランには Azure Rights Management が含まれているものと、含まれていないものがあります。 詳細については、「[Office のアプリケーションとサービスが Azure Rights Management をサポートするしくみ](/azure/information-protection/understand-explore/office-apps-services-support)」を参照してください。
   
@@ -41,9 +39,9 @@ Rights Management サービスをアクティブにしたら、SharePoint 管理
   
 1. グローバル管理者または SharePoint 管理者としてサインインします。
     
-2. Office 365のアプリ起動ツール アイコン![を選択します。](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) をクリックし、[**管理者**] を選択してMicrosoft 365 管理センターを開きます。 ([管理者] タイルが表示されない場合、組織の管理者のアクセス許可が付与されていません。) 
+2. Office 365のアプリ起動ツール アイコン![を選択します。](../media/e5aee650-c566-4100-aaad-4cc2355d909f.png) をクリックし、**管理** を選択してMicrosoft 365 管理センターを開きます。 ([管理者] タイルが表示されない場合、組織の管理者のアクセス許可が付与されていません。) 
     
-3. 左側のウィンドウで、[**管理センター**] <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint [管理センター</a>\>] を選択します。
+3. 左側のウィンドウで、<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">sharePoint 管理センター</a>**管理センター**\>を選択します。
     
 4. 左側のウィンドウで、**[設定]** を選択してから、**[クラシック設定] ページ** を選択します。
     

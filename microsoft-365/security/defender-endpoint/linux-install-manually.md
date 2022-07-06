@@ -16,17 +16,16 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9d16cb82354bcb44e817de3207cb49de66dbf91
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 2b960141b8f6da710b7ef3cbbf812ac0f00f1ce5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873052"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634073"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -34,17 +33,16 @@ ms.locfileid: "65873052"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-
 この記事では、Linux 用 Microsoft Defender for Endpoint を手動で展開する方法について説明します。 展開を成功させるには、次のすべてのタスクを完了する必要があります。
 
-  - [前提条件とシステム要件](#prerequisites-and-system-requirements)
-  - [Linux ソフトウェア リポジトリを構成する](#configure-the-linux-software-repository)
-    - [RHEL とバリアント (CentOS、Fedora、Oracle Linux、Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
-    - [SLES とバリエーション](#sles-and-variants)
-    - [Ubuntu および Debian システム](#ubuntu-and-debian-systems)
-  - [アプリケーションのインストール](#application-installation)
-  - [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
-  - [クライアント構成](#client-configuration)
+- [前提条件とシステム要件](#prerequisites-and-system-requirements)
+- [Linux ソフトウェア リポジトリを構成する](#configure-the-linux-software-repository)
+  - [RHEL とバリアント (CentOS、Fedora、Oracle Linux、Amazon Linux 2)](#rhel-and-variants-centos-fedora-oracle-linux-and-amazon-linux-2)
+  - [SLES とバリエーション](#sles-and-variants)
+  - [Ubuntu および Debian システム](#ubuntu-and-debian-systems)
+- [アプリケーションのインストール](#application-installation)
+- [オンボーディング パッケージをダウンロードする](#download-the-onboarding-package)
+- [クライアント構成](#client-configuration)
 
 ## <a name="prerequisites-and-system-requirements"></a>前提条件とシステム要件
 
@@ -77,20 +75,16 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 
     次の表を使用して、パッケージを見つけるのに役立ててください。
 
-    <br>
-
-    ****
-
     |ディストリビューションとバージョン|パッケージ|
     |---|---|
     |RHEL/Centos/Oracle 8.0-8.5 の場合|<https://packages.microsoft.com/config/rhel/8/[channel].repo>|
-    |RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 の場合 |</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
-    <!--|RHEL/Centos 6.7-6.10 の場合|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
+    |RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 の場合|</azure/cognitive-services/speech-service/how-to-configure-rhel-centos-7>|
     |Fedora 33 の場合|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Fedora 34 の場合|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
-    次のコマンドで、*[バージョン]* と *[チャネル]* を特定した情報に置き換えます。
+    <!--|For RHEL/Centos 6.7-6.10|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
 
+    次のコマンドで、*[バージョン]* と *[チャネル]* を特定した情報に置き換えます。
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/rhel/[version]/[channel].repo
@@ -341,7 +335,7 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
 
     > [!NOTE]
     > このコマンドを実行するには、disto とバージョンに応じてデバイスにインストールされているか`python3`、インストールされている必要があります`python`。 必要に応じて、 [Linux に Python をインストールするための詳細な手順に関するページを](https://opensource.com/article/20/4/install-python-linux)参照してください。
-    
+
     RHEL 8.x または Ubuntu 20.04 以降を実行している場合は `python3`、.
 
     ```bash
@@ -349,11 +343,11 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
     ```
 
     ディストリビューションとバージョンの残りの部分については、 `python`.
-    
+
     ```bash
     sudo python MicrosoftDefenderATPOnboardingLinuxServer.py
     ```
-    
+
 3. デバイスが組織に関連付けられていることを確認し、有効な組織 ID を報告します。
 
     ```bash
@@ -382,9 +376,9 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
         ```bash
         mdatp health --field real_time_protection_enabled
         ```
-        
+
       有効になっていない場合は、次のコマンドを実行します。
-      
+
        ```bash
         mdatp config real-time-protection --value enabled
         ```
@@ -401,7 +395,7 @@ Microsoft 365 Defender ポータルからオンボード パッケージをダ�
         mdatp threat list
         ```
 
-6. EDR検出テストを実行し、検出をシミュレートして、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
+6. EDR 検出テストを実行し、検出をシミュレートして、デバイスが適切にオンボードされ、サービスに報告されていることを確認します。 新しくオンボードされたデバイスで次の手順を実行します。
 
     - オンボードされた Linux サーバーが Microsoft 365 Defender に表示されることを確認します。 これがマシンの最初のオンボーディングである場合、表示されるまで最大 20 分かかります。
 

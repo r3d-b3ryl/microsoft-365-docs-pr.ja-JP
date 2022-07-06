@@ -17,25 +17,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
-description: Microsoft 365の電子情報開示 (Standard) ケースからコンテンツをエクスポートおよびダウンロードする方法について説明します。
-ms.openlocfilehash: 550bdda2c8b2f8afb0e7b4934f5337d7ee323d3a
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: Microsoft 365 の電子情報開示 (Standard) ケースからコンテンツをエクスポートしてダウンロードする方法について説明します。
+ms.openlocfilehash: 144bb7248753894c72accebbf3e87ab2d7d82d2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318660"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66634271"
 ---
 # <a name="export-content-from-a-ediscovery-standard-case"></a>電子情報開示 (Standard) のケースからのコンテンツのエクスポート
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview電子情報開示 (Standard) ケースに関連付けられた検索が正常に実行されたら、検索結果をエクスポートできます。 検索結果をエクスポートすると、PST ファイルまたは個々のメッセージとしてメールボックス アイテムがダウンロードされます。 SharePoint サイトやOneDrive for Business サイトからコンテンツをエクスポートすると、ネイティブ Office ドキュメントやその他のドキュメントのコピーがエクスポートされます。 エクスポートされたすべてのアイテムに関する情報を含むResults.csv ファイルと、すべての検索結果に関する情報を含むマニフェスト ファイル (XML 形式) もエクスポートされます。
+Microsoft Purview eDiscovery (Standard) ケースに関連付けられた検索が正常に実行されたら、検索結果をエクスポートできます。 検索結果をエクスポートすると、PST ファイルまたは個々のメッセージとしてメールボックス アイテムがダウンロードされます。 SharePoint およびOneDrive for Business サイトからコンテンツをエクスポートすると、ネイティブ Office ドキュメントとその他のドキュメントのコピーがエクスポートされます。 エクスポートされたすべてのアイテムに関する情報を含むResults.csv ファイルと、すべての検索結果に関する情報を含むマニフェスト ファイル (XML 形式) もエクスポートされます。
   
 ## <a name="export-search-results"></a>検索結果をエクスポートする
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、適切な電子情報開示アクセス許可が割り当てられているユーザー アカウントの資格情報を使用してサインインします。
 
-2. コンプライアンス ポータルの左側のナビゲーション ウィンドウで、[**すべて表示**] を選択し、**電子情報開示** >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**(Standard)**</a> を選択します。
+2. コンプライアンス ポータルの左側のナビゲーション ウィンドウで、[**すべて表示**] を選択し、[**電子情報開示**<a href="https://go.microsoft.com/fwlink/p/?linkid=2174007" target="_blank">**電子情報開示**</a> >  (Standard)] を選択します。
 
 3. **[電子情報開示 (Standard)]** ページで、保留リストを作成するケースの名前をクリックします。
 
@@ -50,7 +48,7 @@ Microsoft Purview電子情報開示 (Standard) ケースに関連付けられた
    > [!NOTE]
    > 検索されたメールボックスで同じメール メッセージの複数のインスタンスが検出された可能性がある場合でも、検索結果をエクスポートするときに、メール メッセージの 1 つのコピーのみがエクスポートされるようにする重複除去オプションを有効にできます。重複除去および重複したアイテムの特定方法の詳細については、「[電子情報開示検索結果での重複除去](de-duplication-in-ediscovery-search-results.md)」を参照してください。
 
-   エクスポートを開始すると、検索結果はダウンロードの準備が整います。つまり、Microsoft クラウド内の Microsoft 提供のAzure Storageの場所に転送されます。
+   エクスポートを開始すると、検索結果がダウンロード用に準備されます。つまり、Microsoft クラウド内の Microsoft 提供の Azure Storage の場所に転送されます。
   
 6. ケースの [ **エクスポート** ] タブをクリックして、エクスポート ジョブの一覧を表示します。
   
@@ -71,4 +69,4 @@ Microsoft Purview電子情報開示 (Standard) ケースに関連付けられた
 
 - エクスポートを再開した場合、エクスポート ジョブを構成する検索のクエリに対する変更は、取得される検索結果には影響しません。 エクスポートを再起動すると、エクスポート ジョブの作成時に実行されたのと同じ複合検索クエリ ジョブが再度実行されます。
 
-- また、エクスポートを再起動すると、Azure Storageの場所にコピーされた検索結果によって前の結果が上書きされます。 コピーされた前の結果はダウンロードできません。
+- また、エクスポートを再起動すると、Azure Storage の場所にコピーされた検索結果によって、前の結果が上書きされます。 コピーされた前の結果はダウンロードできません。

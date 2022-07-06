@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 37cdbb02-a24a-4093-8bdb-2a7f0b3a19ee
 description: Exchange Online メールボックスに追加のアーカイブ記憶域を提供する自動拡張アーカイブについて説明します。
-ms.openlocfilehash: fc3e40e72ad287e7d7e696557422420cccbd4ee1
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: d039e63310ed7db92f2e625f8bbdd0ff4d0c97cf
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922441"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66632687"
 ---
 # <a name="learn-about-auto-expanding-archiving"></a>自動拡張アーカイブに関する詳細情報
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Office 365 のアーカイブ メールボックスは、ユーザーに追加のメールボックス記憶領域を提供します。 ユーザーのアーカイブ メールボックスを有効にすると、最大 100 GB の追加記憶域を使用できます。 以前は、100 GB の記憶域クォータに達したとき、組織は、Microsoft に問い合わせてアーカイブ メールボックス用の追加記憶領域を要求する必要がありました。 このようなことはもうなくなります。
 
