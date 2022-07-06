@@ -16,16 +16,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: データ損失防止ポリシーで名前付きエンティティを利用するには、次の手順を使用します。
-ms.openlocfilehash: 85d3d11704ea238f6c1acff64193d8aaba8994b8
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+ms.openlocfilehash: 0cdf544eddf873f3bbf761bd613641433dd2da6b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65637188"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623711"
 ---
 # <a name="use-named-entities-in-your-data-loss-prevention-policies"></a>データ損失防止ポリシーで名前付きエンティティを使用する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 名前付きエンティティの使用を開始する前に、 [名前付きエンティティの詳細](named-entities-learn.md) を確認してください。
 
@@ -62,8 +60,8 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 
 ## <a name="workloads-and-services-that-support-named-entities"></a>名前付きエンティティをサポートするワークロードとサービス
 
-- **Microsoft 365電子情報開示** では、Entity サービスでの名前付きエンティティの使用がサポートされます。
-- **Microsoft Defender for Cloud Appsでは、** Defender for Cloud アプリ ポータルの Defender for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされます。
+- **Microsoft 365 電子情報開示** では、Entity サービスでの名前付きエンティティの使用がサポートされています。
+- **Microsoft Defender for Cloud Apps** では、Defender for Cloud Apps ポータルの Defender for Cloud Apps ポリシーでの名前付きエンティティの使用がサポートされています。
 - **Insider Risk Management** では、Entity サービスでの名前付きエンティティの使用がサポートされています。
 - **レコード管理** では、名前付きエンティティの使用がサポートされます。
 - **厳密なデータ一致の機密情報の種類** では、名前付きエンティティの使用がサポートされます。
@@ -74,31 +72,31 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 
 |ワークロード/サービス  |名前付きエンティティのサポート  |
 |---------|---------|
-|Office Win32 クライアント ポリシー ヒント    |非サポート  |
-|Office WAC クライアント ポリシー ヒント    |サポート         |
+|Office Win32 クライアントポリシーヒント    |サポート対象外  |
+|Office WAC クライアント のポリシー ヒント    |サポート         |
 |OWA ポリシーのヒント     |非サポート         |
-|Outlook ポリシーヒント     |サポート対象外 |
+|Outlook ポリシーのヒント     |サポート対象外 |
 |エンドポイント (Windows 10、11 台のデバイス)     |サポート  |
 |Exchange トランスポート ルール     |サポート |
 |保存データをOneDrive for Businessする     |サポート         |
-|SharePoint Online data-at-rest     |サポート         |
-|保存データをTeamsする     |サポート         |
+|SharePoint Online データ保存時     |サポート         |
+|Teams の保存データ     |サポート         |
 |電子メール メッセージの保存時データ     |プライバシー サービス プランを使用するテナントでサポートされている         |
-|Microsoft Defender for Cloud Apps     |サポート         |
+|Microsoft Defender for Cloud Apps     |サポートされている         |
 
 ### <a name="autolabeling"></a>自動ラベル付け
 
 |ワークロード/サービス |名前付きエンティティのサポート  |
 |---------|---------|
 |Office Win32 クライアントをオフラインにする   |サポートされている、ユーザーはラベルを選択し、手動で適用する必要があります |
-|オンライン Office Win32 クライアントオンライン|以前の信頼スキームでサポートされている |
-|オンラインでOutlookする   |以前の信頼スキームでサポートされている  |
-|WAC クライアントOffice     |サポート |
+|オンライン Office Win32 クライアント オンライン|以前の信頼スキームでサポートされている |
+|Outlook Online   |以前の信頼スキームでサポートされている  |
+|Office WAC クライアント     |サポート |
 |OWA     |サポート |
-|Exchangeトランスポート     |サポート |
+|Exchange トランスポート     |サポート |
 |保存データをOneDrive for Businessする     |サポート |
-|SharePoint Online data-at-rest|サポート|
-|Azure Information Protection (AIP) スキャナー|サポート対象外|
+|SharePoint Online データ保存時|サポートされている|
+|Azure Information Protection (AIP) スキャナー|非サポート|
 
 ## <a name="known-issues"></a>既知の問題
 
@@ -122,7 +120,7 @@ DLP ポリシーを作成または編集するには、「DLP ポリシーの [�
 - [自動ラベル付けシミュレーションを](apply-sensitivity-label-automatically.md#learn-about-simulation-mode)使用して、名前付きエンティティ SIT の精度をテストできます。 名前付きエンティティ SIT を使用してシミュレーションを実行し、ポリシーに一致する項目を確認します。 この情報を使用すると、カスタム ポリシーまたは強化されたテンプレート条件でインスタンス数と信頼レベルを調整することで、精度を微調整できます。 運用環境で名前付きエンティティを含む DLP ポリシーまたは自動ラベル付けポリシーをデプロイする前に、シミュレーションを精度が目的の場所になるまで反復処理できます。 フローの概要を次に示します。
 
 1. シミュレーション モードでテストする SIT または SIT の組み合わせを特定します (カスタムまたは複製、編集)。
-1. 自動ラベル付けポリシーで、Exchange、SharePoint サイト、またはOneDrive アカウントで一致するものが見つかると、適用する秘密度ラベルを特定または作成します。
+1. 自動ラベル付けポリシーが Exchange、SharePoint サイト、または OneDrive アカウントで一致を検出したときに適用される秘密度ラベルを特定または作成します。
 1. 手順 1 の SIT を使用し、DLP ポリシーで使用されるのと同じ条件と例外を使用する秘密度自動ラベル付けポリシーを作成する
 1. ポリシー シミュレーションを実行する
 1. 結果を表示する

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: データ損失防止 (DLP) ポリシーを設計する方法について説明します
-ms.openlocfilehash: 2d7c370ab34eea2c708769674495a2c51f1a3fcf
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 32204659da3adcc2fd868568bf3a7bd909e5f2f9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782041"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623011"
 ---
 # <a name="design-a-data-loss-prevention-policy"></a>データ損失防止ポリシーを設計する
 
@@ -30,9 +30,9 @@ ms.locfileid: "64782041"
 
  if you have to do a lot of tuning to get a policy to yield the intended results can be time consuming .-->
 
-DLP を初めてMicrosoft 365する場合は、ポリシーの設計を開始する前に、次の記事を実行すると便利です。
+Microsoft Purview DLP を初めて使用する場合は、ポリシーの設計を開始する前に、次の記事を実行すると便利です。
 
-- [データ損失防止について学習](dlp-learn-about-dlp.md#learn-about-data-loss-prevention) する - この記事では、データ損失防止規範と Microsoft による DLP の実装について説明します
+- [Microsoft Purview データ損失防止について学習](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)する - この記事では、データ損失防止規範と Microsoft による DLP の実装について説明します
 - [データ損失防止 (DLP) を計画](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp) する - この記事に従って、次のことを行います。
   - [利害関係者を特定する](dlp-overview-plan-for-dlp.md#identify-stakeholders)
   - [保護する機密情報のカテゴリについて説明する](dlp-overview-plan-for-dlp.md#describe-the-categories-of-sensitive-information-to-protect)
@@ -56,7 +56,7 @@ DLP を初めてMicrosoft 365する場合は、ポリシーの設計を開始す
 
 たとえば、4 つの質問すべてに対する回答を提供する意図ステートメントの架空の最初の草案を次に示します。
 
-*"Microsoft は米国に拠点を置く組織であり、ONEDRIVE/SharePointに格納されている HIPPA の対象となる機密性の高い医療情報を含むOfficeドキュメントを検出し、Teamsチャットやチャネル メッセージで共有されている情報から保護し、すべてのユーザーが承認されていないサード パーティと共有できないように制限する必要があります。*
+*"Microsoft は米国に拠点を置く組織であり、OneDrive/SharePoint に格納されている HIPPA の対象となる機密性の高い医療情報を含む Office ドキュメントを検出し、Teams チャットやチャネル メッセージで共有されているその情報から保護し、承認されていないサード パーティとの共有を全員に制限する必要があります。*
 
 ポリシー設計を開発するときに、ステートメントを変更して拡張する可能性があります。
 
@@ -66,9 +66,9 @@ DLP を初めてMicrosoft 365する場合は、ポリシーの設計を開始す
 
 |Statement|構成に関する質問に回答し、構成マッピングを行う|
 |---|---|
-|"Microsoft は米国に拠点を置く組織であり、HIPPA の対象となる機密性の高い医療情報を含むOfficeドキュメントを検出する必要があります。|- **監視対象**: ドキュメントOffice、[米国医療保険法 (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) テンプレートを使用する </br>- **一致条件**: (事前構成済みだが編集可能) - 項目には、米国 SSN および薬物執行機関 (DEA) 番号、国際分類の病気 (ICD-9-CM)、国際分類の病気 (ICD-10-CM) が含まれています。コンテンツは組織外のユーザーと共有されます  </br> - 会話を駆動して、 [信頼レベル](sensitive-information-type-learn-about.md#more-on-confidence-levels)や [インスタンス数](dlp-policy-reference.md#content-contains) (漏えい許容度と呼ばれる) などの検出のトリガーしきい値を明確にします。|
-|...は、OneDrive/SharePointに格納され、チャットやチャネル メッセージTeams共有されているその情報から保護されます。...|- **監視する場所**: OneDrive サイトとSharePoint サイト、Teamsチャット/チャネル アカウント、または配布グループを含めるか除外して [、場所のスコープ](dlp-policy-reference.md#locations)を設定します。|
-|...すべてのユーザーがそれらのアイテムを承認されていないサード パーティと共有できないように制限します。|- **実行するアクション**: アクセスの制限 [を追加](dlp-policy-reference.md#actions)*するか、Microsoft 365の場所でコンテンツを暗号化* します。 </br> - 共有制限、通知やアラートなどの認識アクション、ブロックアクションのユーザーオーバーライドを許可するなどのユーザーエンパワーメントアクションなど、ポリシーがトリガーされたときに実行するアクションに関する会話を促進します|
+|"Microsoft は米国を拠点とする組織であり、HIPPA の対象となる機密性の高い医療情報を含む Office ドキュメントを検出する必要があります。|- **監視対象**: Office ドキュメント、 [米国健康保険法 (HIPAA)](what-the-dlp-policy-templates-include.md#us-health-insurance-act-hipaa) テンプレートを使用する </br>- **一致条件**: (事前構成済みだが編集可能) - 項目には、米国 SSN および薬物執行機関 (DEA) 番号、国際分類の病気 (ICD-9-CM)、国際分類の病気 (ICD-10-CM) が含まれています。コンテンツは組織外のユーザーと共有されます  </br> - 会話を駆動して、 [信頼レベル](sensitive-information-type-learn-about.md#more-on-confidence-levels)や [インスタンス数](dlp-policy-reference.md#content-contains) (漏えい許容度と呼ばれる) などの検出のトリガーしきい値を明確にします。|
+|...OneDrive/SharePoint に格納され、Teams チャットとチャネル メッセージが共有されているその情報から保護します。...|- **監視する場所**: OneDrive サイトと SharePoint サイト、Teams チャット/チャネル アカウント、または配布グループを含めるか除外して  [、場所のスコープ](dlp-policy-reference.md#locations) を設定します。|
+|...すべてのユーザーがそれらのアイテムを承認されていないサード パーティと共有できないように制限します。|- **実行するアクション**: アクセスの制限 [を追加](dlp-policy-reference.md#actions)*するか、Microsoft 365 の場所でコンテンツを暗号化* します </br> - 共有制限、通知やアラートなどの認識アクション、ブロックアクションのユーザーオーバーライドを許可するなどのユーザーエンパワーメントアクションなど、ポリシーがトリガーされたときに実行するアクションに関する会話を促進します|
 
 この例では、DLP ポリシーのすべての構成ポイントを網羅しているわけではなく、展開する必要があります。 ただし、独自の DLP ポリシー意図ステートメントを開発するときに、正しい方向に考える必要があります。
 
@@ -161,7 +161,7 @@ Here are some examples of more detailed policy intent statement to configuration
 ## <a name="see-also"></a>関連項目
 
 - [データ損失防止について](dlp-learn-about-dlp.md#learn-about-data-loss-prevention)
-- [データ損失防止 (DLP) の計画](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
-- [データ損失防止ポリシーリファレンス](dlp-policy-reference.md#data-loss-prevention-policy-reference)
+- [データ損失防止ポリシー (DLP) のサポート](dlp-overview-plan-for-dlp.md#plan-for-data-loss-prevention-dlp)
+- [データ損失防止ポリシー リファレンス](dlp-policy-reference.md#data-loss-prevention-policy-reference)
 - [データ損失防止ポリシーヒントのリファレンス](dlp-policy-tips-reference.md#data-loss-prevention-policy-tips-reference)
 - [DLP ポリシーの作成、テスト、調整](create-test-tune-dlp-policy.md#create-test-and-tune-a-dlp-policy)

@@ -19,16 +19,14 @@ description: 組織の有料サブスクリプションに含まれる、Azure A
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: cc0863184aa00fdc26532267a56936b2ed93270b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2d6e274f286893adaeecb81b519b72dc5ba7927a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65078825"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625943"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>無料の Azure Active Directory Domain Services サブスクリプションを使用する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 組織が Microsoft 365、Microsoft Dynamics CRM Online、Enterprise Mobility Suite、その他の Microsoft サービスの有料サブスクリプションを保有している場合、Microsoft Azure Active Directory の無料サブスクリプションを利用できます。管理者であれば、Azure AD を使用してユーザー アカウントとグループ アカウントを作成および管理できます。Azure AD を使用するには、Azure portal にアクセスし、アカウンにサインインします。
 

@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーで改善アクションを操作して、コントロールを実装してテストする方法について説明します。 作業の割り当て、ドキュメントの保存、レポートのエクスポートを行います。
-ms.openlocfilehash: ed52b6e9b3f6c817430383beebcb57f9c4dcf613
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: ca6855c544451661f9a8bd3cc9f59a111eeed360
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574280"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625503"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>コンプライアンス マネージャーでの改善アクションの操作
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。** この記事では、改善アクションを使用して **コンプライアンス ワークフローを管理** する方法について説明します。 実装とテストの **改善アクションを割り当て** 、 **更新プログラムを管理** し、 **レポート** をエクスポートする方法について説明します。
 

@@ -14,25 +14,23 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: 管理者がデータ コネクタを設定して使用して、Instant Bloomberg チャット ツールからMicrosoft 365にデータをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 54e7853ef34b391676c1e1ecb495a6cf5b8f9991
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 管理者がデータ コネクタを設定して使用して、Instant Bloomberg チャット ツールから Microsoft 365 にデータをインポートおよびアーカイブする方法について説明します。
+ms.openlocfilehash: 9cca5955248ca7bd992c00b769ed2f2fbd212f89
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099018"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623411"
 ---
 # <a name="set-up-a-connector-to-archive-instant-bloomberg-data"></a>コネクタをセットアップしてインスタント ブルームバーグ データをアーカイブする
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Microsoft Purview コンプライアンス ポータルのネイティブ コネクタを使用して、[Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) コラボレーション ツールから金融サービス チャット データをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の Bloomberg セキュリティで保護された FTP サイト (SFTP) に毎日 1 回接続し、チャット メッセージの内容を電子メール メッセージ形式に変換してから、Microsoft 365 のメールボックスにそれらのアイテムをインポートします。
 
-Microsoft Purview コンプライアンス ポータルのネイティブ コネクタを使用して、 [Instant Bloomberg](https://www.bloomberg.com/professional/product/collaboration/) コラボレーション ツールから金融サービス チャット データをインポートおよびアーカイブします。 コネクタを設定して構成すると、組織の Bloomberg セキュリティで保護された FTP サイト (SFTP) に毎日 1 回接続され、チャット メッセージのコンテンツが電子メール メッセージ形式に変換され、それらのアイテムがMicrosoft 365のメールボックスにインポートされます。
-
-Instant Bloomberg データをユーザー メールボックスに格納した後、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、通信コンプライアンス、Microsoft 365アイテム保持ポリシーなどの Microsoft Purview 機能をインスタント ブルームベルグ データに適用できます。 たとえば、コンテンツ検索を使用して Instant Bloomberg チャット メッセージを検索したり、インスタント ブルームベルグ データを含むメールボックスを Microsoft Purview 電子情報開示 (プレミアム) ケースのカストディアンに関連付けることができます。 Instant Bloomberg コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
+Instant Bloomberg データがユーザー メールボックスに格納された後、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、通信コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft Purview 機能をインスタント ブルームベルグ データに適用できます。 たとえば、コンテンツ検索を使用して Instant Bloomberg チャット メッセージを検索したり、インスタント ブルームベルグ データを含むメールボックスをMicrosoft Purview eDiscovery (Premium) ケースのカストディアンに関連付けることができます。 Instant Bloomberg コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-instant-bloomberg-data"></a>Instant Bloomberg データのアーカイブの概要
 
-次の概要では、コネクタを使用してMicrosoft 365のインスタント ブルームバーク チャット データをアーカイブするプロセスについて説明します。 
+次の概要では、コネクタを使用して Microsoft 365 でインスタント ブルームバーク チャット データをアーカイブするプロセスについて説明します。 
 
 ![Bloomberg のインポートとアーカイブのプロセスを即座に行います。](../media/InstantBloombergDataArchiving.png)
 
@@ -40,21 +38,21 @@ Instant Bloomberg データをユーザー メールボックスに格納した�
 
 2. 24 時間に 1 回、Instant Bloomberg からのチャット メッセージが Bloomberg SFTP サイトにコピーされます。
 
-3. コンプライアンス ポータルで作成した Instant Bloomberg コネクタは、毎日 Bloomberg SFTP サイトに接続され、前の 24 時間のチャット メッセージを Microsoft Cloud のセキュリティで保護されたAzure Storage領域に転送します。 また、コネクタは、チャット の会話の内容を電子メール メッセージ形式に変換します。
+3. コンプライアンス ポータルで作成した Instant Bloomberg コネクタは、毎日 Bloomberg SFTP サイトに接続され、前の 24 時間のチャット メッセージを Microsoft Cloud のセキュリティで保護された Azure Storage 領域に転送します。 また、コネクタは、チャット の会話の内容を電子メール メッセージ形式に変換します。
 
-4. コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 InstantBloomberg という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress* プロパティの値を使用してこれを行います。 すべてのチャット メッセージにはこのプロパティが含まれています。このプロパティには、チャット メッセージのすべての参加者の電子メール アドレスが入力されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 このマッピング ファイルには、Bloomberg UUID と、各ユーザーに対応するMicrosoft 365メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定する場合は、すべてのチャット 項目について、コネクタが最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタはチャット アイテムの *CorporateEmailAddress* プロパティを使用します。 カスタム マッピング ファイルまたはチャット アイテムの *CorporateEmailAddress* プロパティで有効なMicrosoft 365 ユーザーがコネクタで見つからない場合、アイテムはインポートされません。
+4. コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 InstantBloomberg という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress* プロパティの値を使用してこれを行います。 すべてのチャット メッセージにはこのプロパティが含まれています。このプロパティには、チャット メッセージのすべての参加者の電子メール アドレスが入力されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 このマッピング ファイルには、Bloomberg UUID と、各ユーザーに対応する Microsoft 365 メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定する場合は、すべてのチャット 項目について、コネクタが最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャット アイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたはチャット アイテムの *CorporateEmailAddress* プロパティで有効な Microsoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタを設定する前に
 
-Instant Bloomberg データをアーカイブするために必要な実装手順の一部はMicrosoft 365外部にあり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
+Instant Bloomberg データをアーカイブするために必要な実装手順の一部は Microsoft 365 の外部にあり、コンプライアンス センターでコネクタを作成する前に完了する必要があります。
 
-- Instant Bloomberg コネクタを設定するには、Pretty Good Privacy (PGP) と Secure Shell (SSH) にキーとキー パスフレーズを使用する必要があります。 これらのキーは、Bloomberg SFTP サイトを構成するために使用され、コネクタが Bloomberg SFTP サイトに接続してデータをMicrosoft 365にインポートするために使用されます。 PGP キーは、Bloomberg SFTP サイトからMicrosoft 365に転送されるデータの暗号化を構成するために使用されます。 SSH キーは、コネクタが Bloomberg SFTP サイトに接続するときにセキュリティで保護されたリモート ログインを有効にするようにセキュリティで保護されたシェルを構成するために使用されます。
+- Instant Bloomberg コネクタを設定するには、Pretty Good Privacy (PGP) と Secure Shell (SSH) にキーとキー パスフレーズを使用する必要があります。 これらのキーは、Bloomberg SFTP サイトを構成するために使用され、コネクタが Bloomberg SFTP サイトに接続して Microsoft 365 にデータをインポートするために使用されます。 PGP キーは、Bloomberg SFTP サイトから Microsoft 365 に転送されるデータの暗号化を構成するために使用されます。 SSH キーは、コネクタが Bloomberg SFTP サイトに接続するときにセキュリティで保護されたリモート ログインを有効にするようにセキュリティで保護されたシェルを構成するために使用されます。
 
   コネクタを設定するときは、Microsoft が提供する公開キーとキー パスフレーズを使用するか、独自の秘密キーとパスフレーズを使用することができます。 Microsoft が提供する公開キーを使用することをお勧めします。 ただし、組織で既に秘密キーを使用して Bloomberg SFTP サイトを構成している場合は、同じ秘密キーを使用してコネクタを作成できます。
 
 - [Bloomberg Anywhere](https://www.bloomberg.com/professional/product/remote-access/?bbgsum-page=DG-WS-PROF-PROD-BBA) をサブスクライブします。 これは、設定および構成する必要がある Bloomberg SFTP サイトにアクセスするために、Bloomberg Anywhere にログインするために必要です。
 
-- Bloomberg SFTP (セキュリティで保護されたファイル転送プロトコル) サイトを設定します。 Bloomberg と連携して SFTP サイトを設定した後、Instant Bloomberg のデータは毎日 SFTP サイトにアップロードされます。 手順 2 で作成したコネクタは、この SFTP サイトに接続し、チャット データをMicrosoft 365メールボックスに転送します。 SFTP では、転送プロセス中にメールボックスに送信されるインスタント ブルームベルグ チャット データも暗号化されます。
+- Bloomberg SFTP (セキュリティで保護されたファイル転送プロトコル) サイトを設定します。 Bloomberg と連携して SFTP サイトを設定した後、Instant Bloomberg のデータは毎日 SFTP サイトにアップロードされます。 手順 2 で作成したコネクタは、この SFTP サイトに接続し、チャット データを Microsoft 365 メールボックスに転送します。 SFTP では、転送プロセス中にメールボックスに送信されるインスタント ブルームベルグ チャット データも暗号化されます。
 
   Bloomberg SFTP ( *BB-SFTP* とも呼ばれる) の詳細については、以下を参照してください。
 
@@ -72,9 +70,9 @@ Instant Bloomberg データをアーカイブするために必要な実装手�
 
   - Bloomberg SFTP サイトのポート番号
 
-- Instant Bloomberg コネクタは、1 日に合計 200,000 個のアイテムをインポートできます。 SFTP サイトに 200,000 を超えるアイテムがある場合、これらの項目はMicrosoft 365にインポートされません。
+- Instant Bloomberg コネクタは、1 日に合計 200,000 個のアイテムをインポートできます。 SFTP サイトに 200,000 を超えるアイテムがある場合、これらの項目はいずれも Microsoft 365 にインポートされません。
 
-- 手順 3 で Instant Bloomberg コネクタを作成し、手順 1 で公開キーと IP アドレスをダウンロードするユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 3 で Instant Bloomberg コネクタを作成し、手順 1 で公開キーと IP アドレスをダウンロードするユーザーには、Data Connector 管理 ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者がカスタムロール グループを作成し、Data Connector 管理ロールを割り当ててから、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
 ## <a name="set-up-a-connector-using-public-keys"></a>公開キーを使用してコネクタを設定する
 
@@ -82,7 +80,7 @@ Instant Bloomberg データをアーカイブするために必要な実装手�
 
 ### <a name="step-1-obtain-pgp-and-ssh-and-public-keys"></a>手順 1: PGP と SSH と公開キーを取得する
 
-最初の手順は、Pretty Good Privacy (PGP) と Secure Shell (SSH) の公開キーのコピーを取得することです。 手順 2 のこれらのキーを使用して、(手順 3 で作成した) コネクタが SFTP サイトに接続し、インスタント ブルーム山チャット データを Microsoft 365メールボックスに転送できるように、Bloomberg SFTP サイトを構成します。 また、この手順では、Bloomberg SFTP サイトを構成するときに使用する IP アドレスも取得します。
+最初の手順は、Pretty Good Privacy (PGP) と Secure Shell (SSH) の公開キーのコピーを取得することです。 手順 2 のこれらのキーを使用して、(手順 3 で作成した) コネクタが SFTP サイトに接続し、インスタント ブルーム山チャット データを Microsoft 365 メールボックスに転送できるように、Bloomberg SFTP サイトを構成します。 また、この手順では、Bloomberg SFTP サイトを構成するときに使用する IP アドレスも取得します。
 
 1. 左側の <https://compliance.microsoft.com> ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 
@@ -102,26 +100,26 @@ Instant Bloomberg データをアーカイブするために必要な実装手�
 
    これらのファイルには、手順 2 で Bloomberg SFTP サイトを構成するために使用される次の項目が含まれています。
 
-   - PGP 公開キー: このキーは、Bloomberg SFTP サイトからMicrosoft 365に転送されるデータの暗号化を構成するために使用されます。
+   - PGP 公開キー: このキーは、Bloomberg SFTP サイトから Microsoft 365 に転送されるデータの暗号化を構成するために使用されます。
 
    - SSH 公開キー: このキーは、コネクタが Bloomberg SFTP サイトに接続するときに、セキュリティで保護されたリモート ログインを有効にするようにセキュリティで保護されたシェルを構成するために使用されます。
 
-   - IP アドレス: Bloomberg SFTP サイトは、この IP アドレスからの接続要求を受け入れるように構成されています。 SFTP サイトに接続し、Instant Bloomberg データをMicrosoft 365に転送するために、インスタント ブルームベルグ コネクタで同じ IP アドレスが使用されます。
+   - IP アドレス: Bloomberg SFTP サイトは、この IP アドレスからの接続要求を受け入れるように構成されています。 SFTP サイトに接続し、Instant Bloomberg データを Microsoft 365 に転送するために、Instant Bloomberg コネクタで同じ IP アドレスが使用されます。
 
 7. [ **キャンセル] を** クリックしてウィザードを閉じます。 手順 3 でこのウィザードに戻り、コネクタを作成します。
 
 ### <a name="step-2-configure-the-bloomberg-sftp-site"></a>手順 2: Bloomberg SFTP サイトを構成する
 
-次の手順では、PGP と SSH の公開キーと手順 1 で取得した IP アドレスを使用して、Bloomberg SFTP サイトの PGP 暗号化と SSH 認証を構成します。 これにより、手順 3 で作成した Instant Bloomberg コネクタを Bloomberg SFTP サイトに接続し、インスタント ブルームベルグ データをMicrosoft 365に転送できます。 Bloomberg SFTP サイトを設定するには、Bloomberg カスタマー サポートと連携する必要があります。 [サポートについては、Bloomberg カスタマー サポート](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)にお問い合わせください。 
+次の手順では、PGP と SSH の公開キーと手順 1 で取得した IP アドレスを使用して、Bloomberg SFTP サイトの PGP 暗号化と SSH 認証を構成します。 これにより、手順 3 で作成した Instant Bloomberg コネクタが Bloomberg SFTP サイトに接続し、Instant Bloomberg データを Microsoft 365 に転送できるようになります。 Bloomberg SFTP サイトを設定するには、Bloomberg カスタマー サポートと連携する必要があります。 [サポートについては、Bloomberg カスタマー サポート](https://service.bloomberg.com/portal/sessions/new?utm_source=bloomberg-menu&utm_medium=csc)にお問い合わせください。 
 
 > [!IMPORTANT]
 > Bloomberg では、手順 1 でダウンロードした 3 つのファイルを電子メール メッセージに添付し、それらを使用して Bloomberg SFTP サイトを設定するときにカスタマー サポート チームに送信することをお勧めします。
 
 ### <a name="step-3-create-an-instant-bloomberg-connector"></a>手順 3: Instant Bloomberg コネクタを作成する
 
-最後の手順は、コンプライアンス ポータルでインスタント ブルームベルグ コネクタを作成することです。 コネクタは、指定した情報を使用して、Bloomberg SFTP サイトに接続し、チャット メッセージをMicrosoft 365の対応するユーザー メールボックス ボックスに転送します。
+最後の手順は、コンプライアンス ポータルでインスタント ブルームベルグ コネクタを作成することです。 コネクタは、指定した情報を使用して、Bloomberg SFTP サイトに接続し、チャット メッセージを Microsoft 365 の対応するユーザー メールボックス ボックスに転送します。
 
-1. **Data connectorsInstant** >  **Bloomberg** に<https://compliance.microsoft.com>移動してクリックします。
+1. **[Data Connectors** > **Instant Bloomberg**] に<https://compliance.microsoft.com>移動し、[データ コネクタ] をクリックします。
 
 2. **Instant Bloomberg** 製品の説明ページで、[**コネクタの追加**] をクリックします。
 
@@ -145,10 +143,10 @@ Instant Bloomberg データをアーカイブするために必要な実装手�
 
 6. [ **インポートするデータ型の選択]** ページで、メッセージとは別にインポートする必要なデータ型を選択 **します**
 
-7. **[ユーザーにインスタント Bloomberg ユーザーをマップする] ページ Microsoft 365で**、自動ユーザー マッピングを有効にし、必要に応じてカスタム ユーザー マッピングを提供します
+7. **[ユーザーを Microsoft 365 ユーザーにマップする**] ページで、自動ユーザー マッピングを有効にし、必要に応じてカスタム ユーザー マッピングを提供します
 
    > [!NOTE]
-   > コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 **InstantBloomberg** という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress* プロパティの値を使用して行います。 すべてのチャット メッセージにはこのプロパティが含まれており、プロパティにはチャット メッセージのすべての参加者の電子メール アドレスが設定されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 マッピング ファイルには、Bloomberg UUID と、各ユーザーに対応するMicrosoft 365メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定した場合、すべてのチャット 項目について、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタはチャット アイテムの *CorporateEmailAddress* プロパティを使用します。 カスタム マッピング ファイルまたはチャット アイテムの *CorporateEmailAddress* プロパティで有効なMicrosoft 365 ユーザーがコネクタで見つからない場合、アイテムはインポートされません。
+   > コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 **InstantBloomberg** という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress* プロパティの値を使用して行います。 すべてのチャット メッセージにはこのプロパティが含まれており、プロパティにはチャット メッセージのすべての参加者の電子メール アドレスが設定されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 マッピング ファイルには、各ユーザーの Bloomberg UUID と対応する Microsoft 365 メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定した場合、すべてのチャット 項目について、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャット アイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたはチャット アイテムの *CorporateEmailAddress* プロパティで有効な Microsoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
 7. [ **次へ**] をクリックし、設定を確認し、[ **完了]** をクリックしてコネクタを作成します。
 
@@ -163,7 +161,7 @@ Instant Bloomberg データをアーカイブするために必要な実装手�
 > [!NOTE]
 > 組織が以前に、PGP と SSH 秘密キーを使用して Bloomberg Message データをアーカイブするように Bloomberg SFTP サイトを構成している場合は、別のサイトを構成する必要はありません。 手順 2. でコネクタを作成するときに、同じ SFTP サイトを指定できます。
 
-組織が PGP と SSH 秘密キーを使用して Bloomberg SFTP サイトを設定した場合は、IP アドレスを取得し、それを Bloomberg カスタマー サポートに提供する必要があります。 この IP アドレスからの接続要求を受け入れるように、Bloomberg SFTP サイトを構成する必要があります。 SFTP サイトに接続し、Instant Bloomberg データをMicrosoft 365に転送するために、インスタント ブルームベルグ コネクタで同じ IP アドレスが使用されます。
+組織が PGP と SSH 秘密キーを使用して Bloomberg SFTP サイトを設定した場合は、IP アドレスを取得し、それを Bloomberg カスタマー サポートに提供する必要があります。 この IP アドレスからの接続要求を受け入れるように、Bloomberg SFTP サイトを構成する必要があります。 SFTP サイトに接続し、Instant Bloomberg データを Microsoft 365 に転送するために、Instant Bloomberg コネクタで同じ IP アドレスが使用されます。
 
 IP アドレスを取得するには、
 
@@ -187,7 +185,7 @@ IP アドレスを取得するには、
 
 ### <a name="step-2-create-an-instant-bloomberg-connector"></a>手順 2: Instant Bloomberg コネクタを作成する
 
-Bloomberg SFTP サイトを構成した後、次の手順では、コンプライアンス ポータルでインスタント ブルームベルグ コネクタを作成します。 コネクタは、指定した情報を使用して、Bloomberg SFTP サイトに接続し、Microsoft 365の対応するユーザー メールボックス ボックスに電子メール メッセージを転送します。 この手順を完了するには、Bloomberg SFTP サイトのセットアップに使用したのと同じ秘密キーとキー パスフレーズのコピーを必ず作成してください。
+Bloomberg SFTP サイトを構成した後、次の手順では、コンプライアンス ポータルでインスタント ブルームベルグ コネクタを作成します。 コネクタは、指定した情報を使用して、Bloomberg SFTP サイトに接続し、電子メール メッセージを Microsoft 365 の対応するユーザー メールボックス ボックスに転送します。 この手順を完了するには、Bloomberg SFTP サイトのセットアップに使用したのと同じ秘密キーとキー パスフレーズのコピーを必ず作成してください。
 
 1. 左側の <https://compliance.microsoft.com> ナビゲーションにある **[データ コネクタ** ] に移動してクリックします。
 
@@ -229,10 +227,10 @@ Bloomberg SFTP サイトを構成した後、次の手順では、コンプラ�
 
     - **訴訟ホールドのユーザーのみ**。 メールボックスが訴訟ホールドに置かれているユーザーに対してのみデータをインポートするには、このオプションを選択します。 このオプションは、LitigationHoldEnabled プロパティが True に設定されているユーザー メールボックスにデータをインポートします。 詳細については、「 [訴訟ホールドの作成](create-a-litigation-hold.md)」を参照してください。
 
-9. **[ユーザーをMicrosoft 365にマップする**] ページで、自動ユーザー マッピングを有効にし、必要に応じてカスタム ユーザー マッピングを提供します。
+9. **[ユーザーを Microsoft 365 ユーザーにマップする**] ページで、自動ユーザー マッピングを有効にし、必要に応じてカスタム ユーザー マッピングを提供します。
 
    > [!NOTE]
-   > コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 **InstantBloomberg** という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress* プロパティの値を使用して行います。 すべてのチャット メッセージにはこのプロパティが含まれており、プロパティにはチャット メッセージのすべての参加者の電子メール アドレスが設定されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 マッピング ファイルには、Bloomberg UUID と、各ユーザーに対応するMicrosoft 365メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定した場合、すべてのチャット 項目について、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効なMicrosoft 365 ユーザーが見つからない場合、コネクタはチャット アイテムの *CorporateEmailAddress* プロパティを使用します。 カスタム マッピング ファイルまたはチャット アイテムの *CorporateEmailAddress* プロパティで有効なMicrosoft 365 ユーザーがコネクタで見つからない場合、アイテムはインポートされません。
+   > コネクタは、チャット メッセージ アイテムを特定のユーザーのメールボックスにインポートします。 **InstantBloomberg** という名前の新しいフォルダーが特定のユーザーのメールボックスに作成され、アイテムがインポートされます。 コネクタは、 *CorporateEmailAddress* プロパティの値を使用して行います。 すべてのチャット メッセージにはこのプロパティが含まれており、プロパティにはチャット メッセージのすべての参加者の電子メール アドレスが設定されます。 *CorporateEmailAddress* プロパティの値を使用した自動ユーザー マッピングに加えて、CSV マッピング ファイルをアップロードしてカスタム マッピングを定義することもできます。 マッピング ファイルには、各ユーザーの Bloomberg UUID と対応する Microsoft 365 メールボックス アドレスが含まれている必要があります。 自動ユーザー マッピングを有効にし、カスタム マッピングを指定した場合、すべてのチャット 項目について、コネクタは最初にカスタム マッピング ファイルを確認します。 ユーザーの Bloomberg UUID に対応する有効な Microsoft 365 ユーザーが見つからない場合、コネクタはチャット アイテムの *CorporateEmailAddress* プロパティを使用します。 コネクタで、カスタム マッピング ファイルまたはチャット アイテムの *CorporateEmailAddress* プロパティで有効な Microsoft 365 ユーザーが見つからない場合、アイテムはインポートされません。
 
 10. [ **次へ**] をクリックし、設定を確認し、[ **完了]** をクリックしてコネクタを作成します。
 

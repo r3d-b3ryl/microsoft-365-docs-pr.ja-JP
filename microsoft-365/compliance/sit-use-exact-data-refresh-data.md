@@ -17,20 +17,18 @@ search.appverid:
 - MET150
 description: 機密情報ソース テーブル ファイルを更新します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a846f22b866b4b8adf75c44e55fde4b9d56b8ac4
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 310663caae55bb9b5e0d07cb38ba9fa4b45e8a73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008847"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621669"
 ---
 # <a name="refresh-your-exact-data-match-sensitive-information-source-table-file"></a>正確なデータ一致の機密情報ソース テーブル ファイルを更新する 
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 機密情報データベースは、24 時間ごとに最大 5 回更新できます。 機密情報のソース テーブルを再ハッシュしてアップロードする必要があります。
 
-1. 機密データをMicrosoft Excelなどのアプリに再エクスポートし、ファイルを.csv、.tsv 形式、パイプ (|) 区切り形式で保存します。 以前にファイルをハッシュしてアップロードしたときに使用したものと同じファイル名と場所を保持します。 機密データをエクスポートして正しい形式に取得する方法の詳細については、「 [完全一致ベースの機密情報の種類のソース](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) データをエクスポートする」を参照してください。
+1. 機密データを Microsoft Excel などのアプリに再エクスポートし、ファイルを.csv、.tsv 形式、またはパイプ (|) 区切り形式で保存します。 以前にファイルをハッシュしてアップロードしたときに使用したものと同じファイル名と場所を保持します。 機密データをエクスポートして正しい形式に取得する方法の詳細については、「 [完全一致ベースの機密情報の種類のソース](sit-get-started-exact-data-match-export-data.md#export-source-data-for-exact-data-match-based-sensitive-information-type) データをエクスポートする」を参照してください。
 
       > [!NOTE]
       > 機密情報ソース テーブル ファイルの構造 (フィールド名) に変更がない場合は、データを更新するときにデータベース スキーマ ファイルを変更する必要はありません。 ただし、変更が必要な場合は、必要に応じてデータベース スキーマとルール パッケージを編集してください。 スキーマを編集または削除する手順については、 [完全なデータ一致スキーマを管理](sit-use-exact-data-manage-schema.md#manage-your-exact-data-match-schema) します。 EDM SIT/rule パッケージを編集または削除する手順については、「 [厳密なデータ一致の機密情報の種類/規則](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package) パッケージを作成する」を参照してください。

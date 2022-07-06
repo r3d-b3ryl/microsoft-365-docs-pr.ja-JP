@@ -15,25 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス センターでポリシーのカスタムの機密情報の種類を作成してインポートする方法について説明します。
-ms.openlocfilehash: 8678b7c218844d9963bd610b66e8b6c2c2647dea
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b71893afad2d68f9820f23e60ae9c3b15531f976
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014522"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625591"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>PowerShell を使用してカスタムの機密情報の種類を作成する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事では、カスタム [の機密情報の種類](sensitive-information-type-entity-definitions.md)を定義する XML *ルール パッケージ* ファイルを作成する方法について説明します。 この記事では、従業員 ID を識別するカスタムの機密情報の種類について説明します。 この記事のサンプル XML は、独自の XML ファイルの開始点として使用できます。
 
 機密情報の種類の詳細については、「機密情報の種類 [の詳細](sensitive-information-type-learn-about.md)」を参照してください。
 
-整形式の XML ファイルを作成したら、PowerShell を使用してMicrosoft 365にアップロードできます。 次に、ポリシーでカスタムの機密情報の種類を使用する準備ができました。 意図したとおりに機密情報を検出する効果をテストできます。
+整形式の XML ファイルを作成したら、PowerShell を使用して Microsoft 365 にアップロードできます。 次に、ポリシーでカスタムの機密情報の種類を使用する準備ができました。 意図したとおりに機密情報を検出する効果をテストできます。
 
 > [!NOTE]
-> PowerShell が提供するきめ細かなコントロールが不要な場合は、Microsoft Purview コンプライアンス ポータルでカスタムの機密情報の種類を作成できます。 詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」をご覧ください。
+> PowerShell が提供するきめ細かなコントロールが必要ない場合は、Microsoft Purview コンプライアンス ポータルにカスタムの機密情報の種類を作成できます。 詳細については、「[カスタムの機密情報の種類を作成する](create-a-custom-sensitive-information-type.md)」をご覧ください。
 
 ## <a name="important-disclaimer"></a>重要な免責事項
 
@@ -233,7 +231,7 @@ A `Pattern` には複数の `Match` 要素が含まれる場合があります�
 
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>日付や住所などのその他のパターン [組み込み関数]
 
-機密情報の種類では、組み込みの関数を使用して、裏付けとなる証拠を識別することもできます。 たとえば、米国の日付、EU の日付、有効期限、米国の住所などです。 Microsoft 365独自のカスタム関数のアップロードはサポートされていません。 ただし、カスタムの機密情報の種類を作成すると、エンティティは組み込み関数を参照できます。
+機密情報の種類では、組み込みの関数を使用して、裏付けとなる証拠を識別することもできます。 たとえば、米国の日付、EU の日付、有効期限、米国の住所などです。 Microsoft 365 では、独自のカスタム関数のアップロードはサポートされていません。 ただし、カスタムの機密情報の種類を作成すると、エンティティは組み込み関数を参照できます。
 
 たとえば、従業員 ID バッジには採用日があるため、このカスタム エンティティは組み込み関数を使用して、米国で `Func_us_date` 一般的に使用される形式で日付を識別できます。
 
@@ -327,7 +325,7 @@ Entity には各パターン の confidenceLevel に加え、 recommendedConfide
 
 ## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>コンプライアンス センターの UI で他の言語をサポートする場合 [LocalizedStrings 要素]
 
-コンプライアンス チームが Microsoft Purview コンプライアンス ポータルを使用して、さまざまなロケールと異なる言語でポリシーを作成する場合は、カスタム機密情報の種類の名前と説明のローカライズされたバージョンを指定できます。 コンプライアンス チームが、サポートしている言語で Microsoft 365 を使用すると、UI にローカライズされた名前が表示されます。
+コンプライアンス チームがMicrosoft Purview コンプライアンス ポータルを使用して、異なるロケールと異なる言語でポリシーを作成する場合は、カスタムの機密情報の種類の名前と説明のローカライズされたバージョンを指定できます。 コンプライアンス チームが、サポートしている言語で Microsoft 365 を使用すると、UI にローカライズされた名前が表示されます。
 
 ![インスタンス数と一致精度の構成。](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
 
@@ -372,7 +370,7 @@ Version 要素も重要です。ルール パッケージを初めてアップ�
 
 ## <a name="validators"></a>バリデーター
 
-Microsoft 365は、バリデーターとして一般的に使用される SIT の関数プロセッサを公開します。 その一覧を次に示します。
+Microsoft 365 では、バリデーターとして一般的に使用される SIT の関数プロセッサが公開されています。 その一覧を次に示します。
 
 ### <a name="list-of-currently-available-validators"></a>現在使用可能なバリデーターの一覧
 
@@ -418,7 +416,7 @@ Microsoft 365は、バリデーターとして一般的に使用される SIT �
 </Entity>
 ```
 
-Microsoft 365には 2 つの汎用バリデーターが用意されています
+Microsoft 365 には、2 つの汎用バリデーターが用意されています
 
 ### <a name="checksum-validator"></a>チェックサム バリデーター
 
@@ -452,7 +450,7 @@ Microsoft 365には 2 つの汎用バリデーターが用意されています
 
 ## <a name="changes-for-exchange-online"></a>Exchange Online の変更
 
-以前は、DLP 用にカスタムの機密情報の種類をインポートするために Exchange Online PowerShell を使用することがありました。 これで、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>とコンプライアンス センターの両方でカスタムの機密情報の種類を使用できるようになりました。 この機能強化の一環として、Security & Compliance PowerShell を使用してカスタムの機密情報の種類をインポートする必要があります。これにより、PowerShell からインポートExchange Onlineできなくなります。 カスタムの機密情報の種類は以前と同様に使用できますが、コンプライアンス センターでカスタムの機密情報の種類を変更した場合、Exchange 管理センターに表示されるまでに最大 1 時間かかる可能性があります。
+以前は、DLP 用にカスタムの機密情報の種類をインポートするために Exchange Online PowerShell を使用することがありました。 これで、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> とコンプライアンス センターの両方でカスタムの機密情報の種類を使用できるようになりました。 この機能強化の一環として、Security & Compliance PowerShell を使用してカスタムの機密情報の種類をインポートする必要があります。これにより、PowerShell からインポートExchange Onlineできなくなります。 カスタムの機密情報の種類は以前と同様に使用できますが、コンプライアンス センターでカスタムの機密情報の種類を変更した場合、Exchange 管理センターに表示されるまでに最大 1 時間かかる可能性があります。
 
 コンプライアンス センターでは、**[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** コマンドレットを入力して、ルール パッケージをアップロードします。 (以前は、Exchange 管理センターで **ClassificationRuleCollection** コマンドレットを使用していました。)
 
@@ -561,7 +559,7 @@ Microsoft 365には 2 つの汎用バリデーターが用意されています
 
 Microsoft 365 は、検索クローラーを使用して、サイト コンテンツ内の機密情報を特定し、分類しています。SharePoint Online サイトと OneDrive for Business サイトのコンテンツが更新されると、自動的に再クロールされます。ただし、既存のすべてのコンテンツで新しいカスタムの機密情報の種類を特定するには、そのコンテンツを再クロールする必要があります。
 
-Microsoft 365では、組織全体の再クロールを手動で要求することはできませんが、サイト コレクション、リスト、またはライブラリの再クロールを手動で要求できます。 詳細については、「サイト、 [ライブラリ、またはリストのクロールとインデックスの再作成を手動で要求する](/sharepoint/crawl-site-content)」を参照してください。
+Microsoft 365 では、組織全体の再クロールを手動で要求することはできませんが、サイト コレクション、リスト、またはライブラリの再クロールを手動で要求できます。 詳細については、「サイト、 [ライブラリ、またはリストのクロールとインデックスの再作成を手動で要求する](/sharepoint/crawl-site-content)」を参照してください。
 
 ## <a name="reference-rule-package-xml-schema-definition"></a>リファレンス: ルール パッケージ XML スキーマの定義
 

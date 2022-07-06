@@ -15,18 +15,16 @@ ms.collection:
 - SPO_Content
 - m365initiative-compliance
 description: Microsoft Purview データ ライフサイクル管理を利用することで、必要なものを保持して、不要なものを削除する方法について説明します。
-ms.openlocfilehash: d5d91bef4332722d148bfdf136df03e75bb85734
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: d783ef7f97b45f21f6c90f2aa0230120634abd93
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65286870"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624401"
 ---
 # <a name="learn-about-data-lifecycle-management"></a>データ ライフサイクル管理の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview データ ライフサイクル管理 (旧称: Microsoft 情報ガバナンス) には、保持が必要なコンテンツを保持して、保持が不要なコンテンツを削除するためのツールと機能が用意されています。 コンテンツの保持と削除は、コンプライアンスや規制要件のために必要な場合が多いですが、ビジネス価値のなくなったコンテンツを削除することは、リスクや責任の管理にも役立ちます。 たとえば、攻撃面を減らします。
 

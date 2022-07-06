@@ -1,5 +1,5 @@
 ---
-title: 検索と分析の設定を構成する - 電子情報開示 (プレミアム)
+title: 検索と分析の設定を構成する - 電子情報開示 (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,19 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: ケース内のすべてのレビュー セットに適用される Microsoft Purview 電子情報開示 (プレミアム) 設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
-ms.openlocfilehash: 0ef76833d18b44a2a1c39db41f7d6fa31f99293e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: ケース内のすべてのレビュー セットに適用されるMicrosoft Purview eDiscovery (Premium) 設定を構成します。 これには、分析と光学式文字認識の設定が含まれます。
+ms.openlocfilehash: 315448606e99a768bacd8d7d4ac7f858c79c7bed
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097142"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624567"
 ---
-# <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>電子情報開示で検索と分析の設定を構成する (プレミアム)
+# <a name="configure-search-and-analytics-settings-in-ediscovery-premium"></a>電子情報開示 (Premium) で検索と分析の設定を構成する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (プレミアム) ケースごとに設定を構成して、次の機能を制御できます。
+各Microsoft Purview eDiscovery (Premium) ケースの設定を構成して、次の機能を制御できます。
 
 - 準重複と電子メールスレッド
 
@@ -48,7 +46,7 @@ Microsoft Purview 電子情報開示 (プレミアム) ケースごとに設定�
 
    ケース設定ページが表示されます。 これらの設定は、ケース内のすべてのレビュー セットに適用されます。
 
-   ![電子情報開示 (プレミアム) ケースの分析と検索の設定を構成します。](../media/AeDCaseSettings.png)
+   ![電子情報開示 (Premium) ケースの分析と検索の設定を構成します。](../media/AeDCaseSettings.png)
 
 ## <a name="near-duplicates-and-email-threading"></a>準重複と電子メールスレッド
 
@@ -74,7 +72,7 @@ Microsoft Purview 電子情報開示 (プレミアム) ケースごとに設定�
 
 ## <a name="review-set-query"></a>セット クエリの確認
 
-**[分析後に保存された検索を自動的に作成** する] チェック ボックスをオンにすると、電子情報開示 (プレミアム) によって、For Review という名前のレビュー セット クエリが自動生成されます **。** 
+**[分析後に保存された検索を自動的に作成** する] チェック ボックスをオンにした場合、電子情報開示 (Premium) は **、For Review** という名前のレビュー セット クエリを自動生成します。 
 
 ![For Review の自動生成されたクエリ。](../media/AeDForReviewQuery.png)
 

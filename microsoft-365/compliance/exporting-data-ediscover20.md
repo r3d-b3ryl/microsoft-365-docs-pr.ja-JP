@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示でケース データをエクスポートする (プレミアム)
+title: 電子情報開示でケース データをエクスポートする (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 電子情報開示 (プレミアム) ケースのプレゼンテーションまたは外部レビュー用のレビュー セットからコンテンツをエクスポートまたはダウンロードする方法について説明します。
+description: 電子情報開示 (Premium) ケースでプレゼンテーションまたは外部レビュー用のレビュー セットからコンテンツをエクスポートまたはダウンロードする方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d4ee1627587196527987afec5a675b9440ea806e
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 2650e38509baa11cbd93e014f13d15e734ee02c3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096944"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624137"
 ---
-# <a name="export-case-data-in-ediscovery-premium"></a>電子情報開示でケース データをエクスポートする (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="export-case-data-in-ediscovery-premium"></a>電子情報開示でケース データをエクスポートする (Premium)
 
 レビュー セットからデータをエクスポートするには、次の 3 つの方法があります。
 
@@ -37,4 +35,4 @@ ms.locfileid: "65096944"
 **別のレビュー セットに追加する:** 1 つのレビュー セットから別のレビュー セットにデータをコピーします。 詳細については、「 [1 つのレビュー セットから別のレビュー セットにデータを追加する](add-data-to-review-set-from-another-review-set.md)」を参照してください。
 
 > [!NOTE]
-> Microsoft 365では、データはハッシュされ、それらのハッシュは検証のために出力ファイルに提供されます。 これは、監査ログとレポート機能 (コレクション統計、読み込みセット レポート、エクスポート 読み込みファイルを含む) などのレポート機能によって補完されます。
+> Microsoft 365 では、データがハッシュされ、それらのハッシュが検証目的で出力ファイルに提供されます。 これは、監査ログとレポート機能 (コレクション統計、読み込みセット レポート、エクスポート 読み込みファイルを含む) などのレポート機能によって補完されます。

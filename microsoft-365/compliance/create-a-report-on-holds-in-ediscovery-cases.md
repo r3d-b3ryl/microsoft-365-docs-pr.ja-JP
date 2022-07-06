@@ -20,22 +20,20 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべての保留に関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 9db08335ff023172092e7bf8bada7a3976956d29
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9820eba0e29a510a1881a9349f63c7e2d9650728
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017012"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625481"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースで保留に関するレポートを作成するスクリプトを使用する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Microsoft Purview コンプライアンス ポータルで電子情報開示 (Standard) および電子情報開示 (プレミアム) ケースに関連付けられているすべての保留に関する情報を含むレポートを生成できます。 レポートには、保留が関連付けられているケースの名前、保留に配置されるコンテンツの場所、ホールドがクエリ ベースかどうかなどの情報が含まれています。 保留がない場合は、保留のないケースの一覧を含む追加のレポートがスクリプトによって作成されます。
+この記事のスクリプトを使用すると、電子情報開示管理者と電子情報開示マネージャーは、Microsoft Purview コンプライアンス ポータルの電子情報開示 (Standard) ケースと電子情報開示 (Premium) ケースに関連付けられているすべての保留に関する情報を含むレポートを生成できます。 レポートには、保留が関連付けられているケースの名前、保留に配置されるコンテンツの場所、ホールドがクエリ ベースかどうかなどの情報が含まれています。 保留がない場合は、保留のないケースの一覧を含む追加のレポートがスクリプトによって作成されます。
 
 レポートに含まれる情報の詳細については、「 [詳細情報](#more-information) 」セクションを参照してください。
 
-## <a name="admin-requirements-and-script-information"></a>管理者の要件とスクリプト情報
+## <a name="admin-requirements-and-script-information"></a>管理要件とスクリプト情報
 
 - 組織内のすべての電子情報開示ケースに関するレポートを生成するには、組織内の電子情報開示管理者である必要があります。 電子情報開示マネージャーの場合、レポートには、アクセスできるケースに関する情報のみが含まれます。 電子情報開示のアクセス許可の詳細については、「電子情報開示アクセス [許可の割り当て](assign-ediscovery-permissions.md)」を参照してください。
 
@@ -43,9 +41,9 @@ ms.locfileid: "66017012"
 
 - このトピックで提供されているサンプル スクリプトは、いかなる Microsoft 標準サポート プログラムまたはサービスでもサポートされていません。サンプル スクリプトは、いかなる保証もありません。これらのサンプルに対しては、Microsoft 社は商品またはその他の何らかの目的を持つものに付随すると考えられている暗黙の責任も一切認めません。これらのサンプルは、完全にユーザーの責任において使用してください。いかなる場合でも、Microsoft 社および販売店は、これらのサンプルを使用した結果発生した損害およびこれらのサンプルを使用できなかったことによる損害に対して、商業的損失、業務の中断、企業情報の喪失、およびその他の金銭的損失等を含め、何ら制限も設けることなく一切の責任を認めません。これは、たとえ Microsoft 社がそのような損害の可能性について通知を受けていた場合でも同じです。
 
-## <a name="step-1-connect-to-security--compliance-powershell"></a>手順 1: セキュリティ & コンプライアンス PowerShell にConnectする
+## <a name="step-1-connect-to-security--compliance-powershell"></a>手順 1: セキュリティ/コンプライアンス PowerShell に接続する
 
-最初の手順は、組織のセキュリティ & コンプライアンス PowerShell に接続することです。 詳細な手順については、「[Security & Compliance PowerShell のConnect」を](/powershell/exchange/connect-to-scc-powershell)参照してください。
+最初の手順は、組織のセキュリティ/コンプライアンス PowerShell に接続することです。 詳細な手順については、「[セキュリティ/コンプライアンス PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
 
 ## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>手順 2: 電子情報開示ケースに関連付けられている保留をレポートするスクリプトを実行する
 
@@ -203,7 +201,7 @@ Security & Compliance PowerShell に接続したら、次の手順では、組�
 
 - 保留リストの名前と、保留リストが関連付けられている電子情報開示ケースの名前。
 
-- 保留が電子情報開示 (Standard) または電子情報開示 (プレミアム) ケースに関連付けられているかどうか。
+- 保留が電子情報開示 (Standard) または電子情報開示 (Premium) ケースに関連付けられているかどうか。
 
 - 電子情報開示ケースがアクティブかクローズか。
 
@@ -215,7 +213,7 @@ Security & Compliance PowerShell に接続したら、次の手順では、組�
 
 - ケースが閉じられている場合は、そのケースを閉じたユーザーと、そのケースが閉じられた時刻と日付です。
 
-- 保留されているExchangeメールボックスとSharePoint サイトの場所。
+- 保留中の Exchange メールボックスと SharePoint サイトの場所。
 
 - 保留がクエリ ベースの場合は、クエリ構文です。
 

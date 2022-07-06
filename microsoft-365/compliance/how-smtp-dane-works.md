@@ -14,16 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: SMTP DNS ベースの名前付きエンティティの認証 (DANE) が、メール サーバー間の電子メール通信をセキュリティで保護するためにどのように機能するかを説明します。
-ms.openlocfilehash: 200dde9c62fb9825ce36eea7416304727bd6b598
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2202cccc3c1feb9f50cc35dbb3e38d6b443675fd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015772"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625151"
 ---
 # <a name="how-smtp-dns-based-authentication-of-named-entities-dane-works"></a>名前付きエンティティの SMTP DNS ベースの認証 (DANE) のしくみ
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 SMTP プロトコルは、メール サーバー間でメッセージを転送するために使用されるメイン プロトコルであり、既定ではセキュリティで保護されていません。 トランスポート層セキュリティ (TLS) プロトコルは、SMTP 経由でのメッセージの暗号化された送信をサポートするために数年前に導入されました。 これは一般的に要件としてではなく日和見的に使用され、多くの電子メール トラフィックをクリア テキストに残し、悪意のあるアクターによる傍受に対して脆弱です。 さらに、SMTP は、スプーフィングや中間者攻撃 (MITM) の影響を受けやすいパブリック DNS インフラストラクチャを介して宛先サーバーの IP アドレスを決定します。 これにより、電子メールの送受信のセキュリティを高めるために多くの新しい標準が作成されました。そのうちの 1 つは、DNS ベースの名前付きエンティティの認証 (DANE) です。 
 
@@ -50,9 +48,9 @@ TLSA レコードの種類に固有の 4 つの構成可能なフィールドが
 |値|略語|説明|
 |---|---|---|
 |0<sup>1</sup>|PKIX-TA|使用される証明書は、X.509 トラスト チェーンからの信頼アンカーパブリック CA です。|
-|1<sup>1</sup>|PKIX-Enterprise Edition|確認された証明書は宛先サーバーです。DNSSEC チェックでは、その信頼性を確認する必要があります。|
+|1<sup>1</sup>|PKIX-EE|確認された証明書は宛先サーバーです。DNSSEC チェックでは、その信頼性を確認する必要があります。|
 |2|DANE-TA|信頼チェーンの信頼アンカーによって検証する必要がある X.509 ツリーのサーバーの秘密キーを使用します。 TLSA レコードは、ドメインの TLS 証明書の検証に使用する信頼アンカーを指定します。|
-|3|DANE-Enterprise Edition|移行先サーバーの証明書に対してのみ一致します。|
+|3|DANE-EE|移行先サーバーの証明書に対してのみ一致します。|
 
 <sup>1</sup> Exchange Onlineは、RFC 実装ガイダンスに従います。0 または 1 の証明書使用フィールド値は、DANE を SMTP で実装する場合は使用しないでください。 証明書使用法フィールドの値が 0 または 1 の TLSA レコードがExchange Onlineに返されると、Exchange Onlineはそれを使用できないものとして扱います。 すべての TLSA レコードが使用できないと見なされた場合、Exchange Online電子メールの送信時に 0 または 1 の DANE 検証手順は実行されません。 代わりに、TLSA レコードが存在するため、Exchange Onlineは、電子メールを送信するための TLS の使用を強制し、宛先電子メール サーバーが TLS をサポートしている場合は電子メールを送信するか、宛先電子メール サーバーが TLS をサポートしていない場合は NDR を生成します。
 
@@ -93,7 +91,7 @@ Exchange Online顧客として、送信メールに対してこの強化され�
 
 SMTP DANE の RFC 実装ガイダンスに従って、証明書使用法フィールドで構成される TLSA レコードを 3 に設定し、セレクター フィールドを 1 に設定し、照合の種類フィールドを 1 に設定することをお勧めします。
 
-## <a name="exchange-online-mail-flow-with-smtp-dane"></a>SMTP DANE を使用したメール FlowのExchange Online
+## <a name="exchange-online-mail-flow-with-smtp-dane"></a>SMTP DANE を使用したメール フローのExchange Online
 
 SMTP DANE を使用したExchange Onlineのメール フロー プロセスは、次のフロー 図に示すように、DNSSEC、宛先メール サーバーでの TLS サポート、および宛先メール サーバーの証明書が、関連する TLSA レコードに基づいて想定されているものと一致するドメインとリソース レコードのセキュリティを検証します。
 
@@ -103,13 +101,13 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 
 - 宛先ドメインのすべての MX レコードには TLSA レコードがあり、宛先サーバーの証明書のいずれも、TSLA レコード データに対して想定されていたものと一致しないか、TLS 接続が宛先サーバーでサポートされていません。
 
-:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="SMTP DANE を使用したオンライン メール フローのExchange" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
+:::image type="content" source="../media/compliance-trial/mail-flow-smtp-dane.png" alt-text="SMTP DANE を使用した Exchange オンライン メール フロー" lightbox="../media/compliance-trial/mail-flow-smtp-dane.png":::
 
 ## <a name="related-technologies"></a>関連技術
 
 |テクノロジ|その他の情報|
 |---|---|
-|**メール転送エージェント - 厳格なトランスポート セキュリティ (MTA-STS)** は、転送先の電子メール サーバーが TLS をサポートするかどうか、TLS をネゴシエートできない場合に行う操作を指定するドメイン ポリシーを設定するメカニズムを提供することで、ダウングレードと中間者攻撃を阻止するのに役立ちます。たとえば、転送を停止します。|Exchange Onlineのインバウンドおよびアウトバウンドの MTA-STS の今後のサポートの詳細については、今年後半に公開される予定です。 <br/><br/> [Microsoft Ignite 2020 からのトランスポート ニュースのExchange Online - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
+|**メール転送エージェント - 厳格なトランスポート セキュリティ (MTA-STS)** は、転送先の電子メール サーバーが TLS をサポートするかどうか、TLS をネゴシエートできない場合に行う操作を指定するドメイン ポリシーを設定するメカニズムを提供することで、ダウングレードと中間者攻撃を阻止するのに役立ちます。たとえば、転送を停止します。|Exchange Onlineのインバウンドおよびアウトバウンドの MTA-STS の今後のサポートの詳細については、今年後半に公開される予定です。 <br/><br/> [Microsoft Ignite 2020 のトランスポート ニュースのExchange Online - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699) <br/><br/> [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)|
 |**Sender Policy Framework (SPF)** では、IP 情報を使用して、宛先電子メール システムがカスタム ドメインから送信されたメッセージを信頼するようにします。|[Sender Policy Framework (SPF) がスプーフィングを防止する方法 - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)|
 |**DomainKeys 識別メール (DKIM)** では、X.509 証明書情報を使用して、宛先電子メール システムがカスタム ドメインから送信されたメッセージを信頼できるようにします。|[カスタム ドメインの電子メールに DKIM を使用する方法 - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)|
 |**ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC) は、** 送信者ポリシー フレームワークと DomainKeys 識別メールと連携して、メール送信者を認証し、宛先電子メール システムがドメインから送信されたメッセージを信頼することを確認します。|[DMARC を使用して電子メールを検証し、手順をセットアップする - Office 365 - Microsoft Docs](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)|
@@ -118,7 +116,7 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 
 現在、EXCHANGE ONLINEで電子メールを送信する場合、DANE には 4 つのエラー コードがあります。 Microsoft では、このエラー コードの一覧を積極的に更新しています。 次のエラーが表示されます。
 
-1. メッセージ トレースの詳細ビューを使用して管理センターポータルをExchangeします。
+1. メッセージ トレースの詳細ビューを使用した Exchange 管理 センター ポータル。
 2. DANE または DNSSEC エラーが原因でメッセージが送信されない場合に生成される NDR。
 3. リモート接続アナライザー ツール [Microsoft リモート接続アナライザー](https://testconnectivity.microsoft.com/tests/o365)。
 
@@ -142,14 +140,14 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 
 1. 宛先の電子メール アドレスが正しく入力されたことを確認します。
 2. 宛先サーバーが TLS を使用してメッセージを受信するように正しく構成されているかどうかを判断できるように、このエラー コードを受信したことを宛先メール管理者に通知します。
-3. メールの送信を再試行し、Exchange管理センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
+3. メールの送信を再試行し、Exchange 管理 センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
 
 ### <a name="troubleshooting-57322-certificate-expired"></a>5.7.322 証明書の有効期限が切れた場合のトラブルシューティング
 
 有効期限が切れていない有効な X.509 証明書を、送信側の電子メール サーバーに提示する必要があります。 X.509 証明書は、有効期限が切れた場合は更新する必要があり、一般的には毎年更新する必要があります。 メッセージを受信した後:
 
 1. このエラー コードを受信したことを宛先の電子メール管理者に通知し、エラー コード文字列を指定します。
-2. 宛先サーバー証明書を更新し、TLSA レコードを更新して新しい証明書を参照する時間を確保します。 次に、メールの送信を再試行し、Exchange管理センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
+2. 宛先サーバー証明書を更新し、TLSA レコードを更新して新しい証明書を参照する時間を確保します。 次に、メールの送信を再試行し、Exchange 管理 センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
 
 ### <a name="troubleshooting-57323-tlsa-invalid"></a>トラブルシューティング 5.7.323 tlsa-invalid
 
@@ -163,7 +161,7 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 メッセージを受信した後:
 
 1. このエラー コードを受信したことを宛先の電子メール管理者に通知し、エラー コード文字列を指定します。
-2. 宛先メール管理者が DANE 構成と電子メール サーバー証明書の有効性を確認する時間を確保します。 次に、メールの送信を再試行し、Exchange管理センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
+2. 宛先メール管理者が DANE 構成と電子メール サーバー証明書の有効性を確認する時間を確保します。 次に、メールの送信を再試行し、Exchange 管理 センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
 
 ### <a name="troubleshooting-57324-dnssec-invalid"></a>トラブルシューティング 5.7.324 dnssec-invalid
 
@@ -172,7 +170,7 @@ SMTP DANE エラーによって電子メールがブロックされるシナリ�
 メッセージを受信した後:
 
 1. このエラー コードを受信したことを宛先の電子メール管理者に通知し、エラー コード文字列を指定します。
-2. 宛先メール管理者がドメインの DNSSEC 構成を確認する時間を確保します。 次に、メールの送信を再試行し、Exchange管理センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
+2. 宛先メール管理者がドメインの DNSSEC 構成を確認する時間を確保します。 次に、メールの送信を再試行し、Exchange 管理 センター ポータルでメッセージのメッセージ トレースの詳細を確認します。
 
 ## <a name="troubleshooting-receiving-emails-with-smtp-dane"></a>SMTP DANE を使用した電子メールの受信のトラブルシューティング
 
@@ -315,6 +313,6 @@ DNSSEC は、中間者攻撃に対して完全に耐性がなく、メール フ
 
 [Sender Policy Framework (SPF) がスプーフィングを防止する方法 - Office 365 |Microsoft Docs](/microsoft-365/security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing)
 
-[Microsoft Ignite 2020 からのトランスポート ニュースのExchange Online - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699)
+[Microsoft Ignite 2020 のトランスポート ニュースのExchange Online - Microsoft Tech Community](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-online-transport-news-from-microsoft-ignite-2020/ba-p/1687699)
 
 [rfc8461 (ietf.org)](https://datatracker.ietf.org/doc/html/rfc8461)

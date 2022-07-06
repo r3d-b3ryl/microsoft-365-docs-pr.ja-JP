@@ -1,5 +1,5 @@
 ---
-title: Microsoft Purviewでの電子情報開示 (Standard) ケースの概要
+title: Microsoft Purview での電子情報開示 (Standard) ケースの概要
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -17,19 +17,17 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: Microsoft Purviewで電子情報開示 (Standard) の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示保留を作成し、調査に関連するコンテンツを検索してエクスポートできます。
-ms.openlocfilehash: c8a3ca883191c450ebc20ddb555018b8b480199b
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Microsoft Purview で電子情報開示 (Standard) の使用を開始する方法について説明します。 電子情報開示のアクセス許可を割り当ててケースを作成したら、メンバーを追加し、電子情報開示保留を作成し、調査に関連するコンテンツを検索してエクスポートできます。
+ms.openlocfilehash: 2bbd7c0bdeb1a23274deacb5b70e83ba45aacdc5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115875"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624313"
 ---
-# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Microsoft Purviewでの電子情報開示 (Standard) を使用した概要
+# <a name="get-started-with-ediscovery-standard-in-microsoft-purview"></a>Microsoft Purview で電子情報開示 (Standard) の使用を開始する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicrosoft 365およびOffice 365でコンテンツを検索およびエクスポートするために使用できる基本的な電子情報開示ツールを提供します。 電子情報開示 (Standard) を使用して、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft Teamsなどのコンテンツの場所に電子情報開示ホールドを配置することもできます。 電子情報開示 (Standard) を展開するには何も必要ありませんが、組織が電子情報開示 (Standard) を使用してコンテンツの検索、エクスポート、および保持を開始する前に、IT 管理者と電子情報開示マネージャーが完了する必要がある前提条件がいくつかあります。
+Microsoft Purview のMicrosoft Purview eDiscovery (Standard) には、組織が Microsoft 365 およびOffice 365のコンテンツを検索およびエクスポートするために使用できる基本的な電子情報開示ツールが用意されています。 電子情報開示 (Standard) を使用して、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft Teams などのコンテンツの場所に電子情報開示ホールドを配置することもできます。 電子情報開示 (Standard) を展開するには何も必要ありませんが、組織が電子情報開示 (Standard) を使用してコンテンツの検索、エクスポート、および保持を開始する前に、IT 管理者と電子情報開示マネージャーが完了する必要がある前提条件がいくつかあります。
 
 この記事では、電子情報開示 (Standard) を設定するために必要な手順について説明します。 これには、電子情報開示 (Standard) にアクセスし、コンテンツの場所に電子情報開示を保持するために必要な適切なライセンスを確保するだけでなく、IT、法的、および調査チームがケースにアクセスして管理できるようにアクセス許可を割り当てることも含まれます。 この記事では、ケースを使用してコンテンツを検索およびエクスポートする概要についても説明します。
 
@@ -37,11 +35,11 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
 電子情報開示 (Standard) のライセンスには、適切な組織のサブスクリプションとユーザーごとのライセンスが必要です。
 
-- **組織のサブスクリプション:** Microsoft Purview コンプライアンス ポータルで電子情報開示 (Standard) にアクセスし、保留機能とエクスポート機能を使用するには、組織にオンラインプラン 2 以上のExchangeまたはMicrosoft 365 E3またはOffice 365 E3サブスクリプションが必要です。 フロントライン組織Microsoft 365 F5 サブスクリプションが必要です。
+- **組織のサブスクリプション:** Microsoft Purview コンプライアンス ポータルの電子情報開示 (Standard) にアクセスし、保留機能とエクスポート機能を使用するには、組織に Exchange オンライン プラン 2 以上のMicrosoft 365 E3またはOffice 365 E3 サブスクリプションが必要です。 Microsoft 365 フロントライン組織には、F5 サブスクリプションが必要です。
 
 - **ユーザーごとのライセンス:** メールボックスとサイトに電子情報開示ホールドを設定するには、組織のサブスクリプションに応じて、次のいずれかのライセンスをユーザーに割り当てる必要があります。
 
-  -  オンライン プラン 2 ライセンスをExchangeする
+  -  Exchange Online プラン 2 ライセンス
 
    または
    
@@ -53,7 +51,7 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
    または
 
-  - Microsoft 365 フロントライン F5 コンプライアンスまたは F5 セキュリティ & コンプライアンス アドオン ライセンス  
+  - Microsoft 365 Frontline F5 コンプライアンスまたは F5 セキュリティ & コンプライアンス アドオン ライセンス  
 
   および
 
@@ -63,9 +61,9 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
 セキュリティとコンプライアンスに関する情報とガイダンス:
 
-- [Microsoft 365比較表](https://aka.ms/M365EnterprisePlans)の電子情報開示と監査のセクションをダウンロードして確認します。
+- [Microsoft 365 の比較表](https://aka.ms/M365EnterprisePlans)の電子情報開示と監査のセクションをダウンロードして参照してください。
 
-- [セキュリティ&コンプライアンスのMicrosoft 365ガイダンスを参照してください - サービスの説明 |Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
+- [セキュリティ&コンプライアンスに関する Microsoft 365 のガイダンスを参照してください - サービスの説明 |Microsoft Docs](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。
 
 ## <a name="step-2-assign-ediscovery-permissions"></a>手順 2: 電子情報開示のアクセス許可を割り当てる
 
@@ -73,7 +71,7 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
 電子情報開示マネージャーの役割グループにユーザーを追加するには、次の手順を実行します。
 
-1. コンプライアンス ポータルに移動し、Microsoft 365またはOffice 365組織の管理者アカウントの資格情報を使用してサインインします。
+1. コンプライアンス ポータルに移動し、Microsoft 365 またはOffice 365組織の管理者アカウントの資格情報を使用してサインインします。
 
 2. [ <a href="https://go.microsoft.com/fwlink/p/?linkid=2173597" target="_blank">**アクセス許可]**</a> ページで、 **電子情報開示マネージャー** の役割グループを選択します。
 
@@ -129,7 +127,7 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
 1. コンプライアンス ポータルの **[電子情報開示 (Standard)]** ページで、メンバーを追加するケースの名前をクリックします。
 
-2. ケース ホーム ページで、[**設定**] タブを選択し、[**アクセス許可&** 選択します。
+2. ケース ホーム ページで、[ **設定]** タブを選択し、[ **アクセス許可&** 選択します。
 
 3. [ **アクセス&アクセス許可** ] ポップアップ ページの [ **メンバー**] の [ **追加** ] をクリックして、ケースにメンバーを追加します。
 
@@ -152,7 +150,7 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
 ![電子情報開示 (Standard) ワークフロー。](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[電子情報開示ホールドを作成します](create-ediscovery-holds.md)**。 ケースを作成した後の最初の手順は、調査に関心のあるユーザーのコンテンツの場所に *ホールド (電子情報開示ホールド* とも呼ばれます) を配置することです。 コンテンツの場所には、Exchangeメールボックス、SharePoint サイト、OneDrive アカウント、Microsoft TeamsとMicrosoft 365 グループに関連付けられているメールボックスとサイトが含まれます。 この手順は省略可能ですが、電子情報開示ホールドを作成すると、調査中にケースに関連する可能性のあるコンテンツが保持されます。 電子情報開示ホールドを作成する場合は、特定のコンテンツの場所のすべてのコンテンツを保持するか、クエリ ベースの保留を作成して、保留クエリに一致するコンテンツのみを保持できます。 コンテンツを保持するだけでなく、電子情報開示保留を作成するもう 1 つの正当な理由は、次の手順で検索を作成して実行するときに、(検索する各場所を選択する代わりに) コンテンツの場所をすばやく検索することです。 調査が完了したら、作成した保留を解放できます。
+1. **[電子情報開示ホールドを作成します](create-ediscovery-holds.md)**。 ケースを作成した後の最初の手順は、調査に関心のあるユーザーのコンテンツの場所に *ホールド (電子情報開示ホールド* とも呼ばれます) を配置することです。 コンテンツの場所には、Exchange メールボックス、SharePoint サイト、OneDrive アカウント、Microsoft Teams およびMicrosoft 365 グループに関連付けられているメールボックスとサイトが含まれます。 この手順は省略可能ですが、電子情報開示ホールドを作成すると、調査中にケースに関連する可能性のあるコンテンツが保持されます。 電子情報開示ホールドを作成する場合は、特定のコンテンツの場所のすべてのコンテンツを保持するか、クエリ ベースの保留を作成して、保留クエリに一致するコンテンツのみを保持できます。 コンテンツを保持するだけでなく、電子情報開示保留を作成するもう 1 つの正当な理由は、次の手順で検索を作成して実行するときに、(検索する各場所を選択する代わりに) コンテンツの場所をすばやく検索することです。 調査が完了したら、作成した保留を解放できます。
 
 2. **[コンテンツを検索します](search-for-content-in-core-ediscovery.md)**。 電子情報開示保留を作成したら、組み込みの検索ツールを使用して、保留中のコンテンツの場所を検索します。 ケースに関連する可能性があるデータについて、他のコンテンツの場所を検索することもできます。 ケースに関連付けられたさまざまな検索を作成して実行できます。 キーワード、プロパティ、および条件を使用して、ケースに最も関連する可能性が高いデータで検索結果を返す検索 [クエリを作成](keyword-queries-and-search-conditions.md) します。 以下のことも実行できます。
 
@@ -162,4 +160,4 @@ Microsoft PurviewのMicrosoft Purview eDiscovery (Standard) は、組織がMicro
 
    - クエリを修正し、検索を再実行します。
 
-3. **[検索結果をエクスポートしてダウンロードします](export-content-in-core-ediscovery.md)**。 調査に関連するデータを検索して見つけたら、調査チームの外部のユーザーがレビューするためにOffice 365からエクスポートできます。 データのエクスポートは 2 段階のプロセスです。 最初の手順では、ケース内の検索結果をOffice 365からエクスポートします。 これは、Microsoft が提供するAzure Storageの場所に検索結果をコピーすることで実現されます。 次の手順では、電子情報開示エクスポート ツールを使用してコンテンツをローカル コンピューターにダウンロードします。 エクスポートされたデータ ファイルに加えて、エクスポート パッケージにはエクスポート レポート、概要レポート、エラー レポートが含まれます。
+3. **[検索結果をエクスポートしてダウンロードします](export-content-in-core-ediscovery.md)**。 調査に関連するデータを検索して見つけたら、調査チームの外部のユーザーがレビューするためにOffice 365からエクスポートできます。 データのエクスポートは 2 段階のプロセスです。 最初の手順では、ケース内の検索結果をOffice 365からエクスポートします。 これは、Microsoft が提供する Azure Storage の場所に検索結果をコピーすることで実現されます。 次の手順では、電子情報開示エクスポート ツールを使用してコンテンツをローカル コンピューターにダウンロードします。 エクスポートされたデータ ファイルに加えて、エクスポート パッケージにはエクスポート レポート、概要レポート、エラー レポートが含まれます。

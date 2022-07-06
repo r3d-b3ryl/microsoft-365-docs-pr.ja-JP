@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: 正確なデータ一致ベースの機密情報の種類について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0574c11751898b31b22da4642f2d5dd415991732
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65415928"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621999"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類の詳細
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [機密情報の種類](sensitive-information-type-learn-about.md) は、機密情報の種類を使用して、機密情報が誤ってまたは不適切に共有されないようにしたり、電子情報開示で関連するデータを特定したり、特定の種類の情報にガバナンス アクションを適用したりするのに役立ちます。 次に基づいて、カスタムの機密情報の種類 (SIT) を定義します。
 
@@ -46,7 +44,7 @@ ms.locfileid: "65415928"
 
 ![EDM ベースの分類。](../media/EDMClassification.png)
 
-EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、Microsoft Purview[データ損失防止](dlp-learn-about-dlp.md)ポリシーや[Microsoft Cloud App Security ファイル](/cloud-app-security/data-protection-policies) ポリシーなどのポリシーで EDM ベースの分類を使用できます。
+EDM ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照する、カスタムの機密情報の種類を作成できます。 データベースは毎日更新できます。また、最大 1 億行のデータを格納できます。 そのため、従業員、患者、または顧客の出入りに合わせて記録が変更されても、カスタムの機密情報の種類は最新の状態が維持されます。 また、[Microsoft Purview データ損失防止](dlp-learn-about-dlp.md)ポリシーや[Microsoft Cloud App Security ファイル](/cloud-app-security/data-protection-policies) ポリシーなどのポリシーで EDM ベースの分類を使用できます。
 
 > [!NOTE]
 > Microsoft Purview 情報保護では、次の 2 バイト文字セット言語がサポートされています。
@@ -95,12 +93,11 @@ EDM SIT を使用する場合は、それらに固有のいくつかの概念を
 
 ### <a name="you-supply-your-own-schema-and-data"></a>独自のスキーマとデータを指定します
 
-Microsoft Purviewには、定義済みのスキーマ、正規表現パターン、キーワード、信頼度レベルを備えた [200 を超える SIT が](sensitive-information-type-entity-definitions.md)付属しています。 EDM SIT を使用すると、機密項目を識別するプライマリ フィールドとセカンダリ フィールドだけでなく、スキーマを定義する必要があります。 スキーマとプライマリとセカンダリのデータ値は非常に機密性が高いため、ランダムに生成されたまたは自己提供の [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) 値を含む[ハッシュ](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)関数を使用して暗号化します。 その後、これらのハッシュされた値がサービスにアップロードされるため、機密データが開かれることはありません。
+Microsoft Purview には、定義済みのスキーマ、正規表現パターン、キーワード、信頼レベルを備えた [200 を超える SITS](sensitive-information-type-entity-definitions.md) が付属しています。 EDM SIT を使用すると、機密項目を識別するプライマリ フィールドとセカンダリ フィールドだけでなく、スキーマを定義する必要があります。 スキーマとプライマリとセカンダリのデータ値は非常に機密性が高いため、ランダムに生成されたまたは自己提供の [salt](https://en.wikipedia.org/wiki/Salt_(cryptography)#:~:text=The%20salt%20value%20is%20generated%20at%20random%20and,the%20salt%20value%20and%20hashed%20value%20are%20stored.) 値を含む[ハッシュ](/dotnet/standard/security/ensuring-data-integrity-with-hash-codes)関数を使用して暗号化します。 その後、これらのハッシュされた値がサービスにアップロードされるため、機密データが開かれることはありません。
 
 ### <a name="primary-and-secondary-support-elements"></a>プライマリとセカンダリのサポート要素
 
 EDM SIT を作成するときは、ルール パッケージに *プライマリ要素* フィールドを定義します。 プライマリ フィールドは、すべてのコンテンツを検索する要素であり、識別するために定義されたパターンに従う必要があります。 スキャンされた項目でプライマリ要素が見つかると、EDM は、パターンに従う必要のない *セカンダリ* 要素またはサポート要素、およびプライマリ要素への近接性を探します。 EDM では、プライマリ要素が既存の SIT を介して最初に検出可能であることが必要です。 使用可能な SIT の完全な一覧については、 [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md) を参照してください。 EDM SIT で検出するクラスを検出するもののいずれかを見つける必要があります。 たとえば、EDM SIT スキーマに主な要素として米国の社会保障番号がある場合、EDM スキーマを作成するときに、それを [米国社会保障番号 (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT に関連付けたとします。
-
 
 ## <a name="how-matching-works"></a>照合のしくみ
 
@@ -108,6 +105,19 @@ EDM は、定義した機密データのテーブルと見なされるコンテ�
 
 > [!TIP]
 > 一般的な方法は、EDM 機密情報の種類の使用と、DLP ルールに基づく通常の機密情報の種類と、異なるしきい値を組み合わせることです。 たとえば、社会保障番号やその他のデータを検索する EDM 機密情報の種類を使用できます。厳しい要件と、1 つ以上の一致によって DLP アラートが発生する許容度が低く、米国社会保障番号の組み込みのように通常の機密情報の種類を使用して、より多くのカウントを実現できます。  
+
+## <a name="services-that-edm-supports"></a>EDM がサポートするサービス
+
+
+|サービス  |場所  |
+|---------|---------|
+| Microsoft Purview データ損失防止    | - SharePoint Online </br>- OneDrive for Business </br>- Teams チャット </br>- Exchange Online </br>- デバイス       |
+|Microsoft Defender for Cloud Apps     | - SharePoint Online </br>- OneDrive for Business        |
+|自動ラベル付け (サービス側)     |- SharePoint Online </br>- OneDrive for Business </br>- Exchange Online         |
+|自動ラベル付け (クライアント側)     |- Word </br>- Excel </br>- PowerPoint </br>- Exchange デスクトップ クライアント         |
+|カスタマー マネージド キー     |- SharePoint Online </br>- OneDrive for Business </br>- Teams チャット </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange デスクトップ クライアント </br>- デバイス         |
+|電子情報開示     |- SharePoint Online </br>- OneDrive for Business </br>- Teams チャット </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange デスクトップ クライアント  |
+|インサイダー リスクの管理     |- SharePoint Online </br>- OneDrive for Business </br>- Teams チャット </br>- Exchange Online </br>- Word </br>- Excel </br>- PowerPoint </br>- Exchange デスクトップ クライアント      |
 
 ## <a name="see-also"></a>関連項目
 

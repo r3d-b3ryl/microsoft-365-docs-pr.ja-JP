@@ -21,19 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Microsoft 365の電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについて説明します。
-ms.openlocfilehash: ebea983caedc73c8471d6e460b58314bd76f1861
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Microsoft 365 の電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについて説明します。
+ms.openlocfilehash: 3ff2143a170531b527850b4805cb9a79f10afb5e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012342"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623873"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-この記事では、Exchange Onlineの電子メール アイテムやMicrosoft Teamsチャット会話で検索できる電子メールとドキュメントのプロパティ、および Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用してSharePointサイトとOneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Microsoft Purview 電子情報開示 (Standard)、Microsoft Purview 電子情報開示 (プレミアム) が含まれます (電子情報開示での電子情報開示検索 (プレミアム) は *コレクション* と呼ばれます)。 セキュリティ & コンプライアンス PowerShell の -ComplianceSearch コマンドレットを使用 **\*** して、これらのプロパティを検索することもできます。 この記事では、次についても説明します。
+この記事では、Exchange Onlineの電子メール アイテムと Microsoft Teams チャット会話で検索できる電子メールとドキュメントのプロパティ、およびMicrosoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用して SharePoint およびOneDrive for Business サイトに保存されているドキュメントについて説明します。 これには、コンテンツ検索、Microsoft Purview eDiscovery (Standard)、Microsoft Purview eDiscovery (Premium) が含まれます (電子情報開示 (Premium) の電子情報開示検索は *コレクション* と呼ばれます)。 セキュリティ & コンプライアンス PowerShell の -ComplianceSearch コマンドレットを使用 **\*** して、これらのプロパティを検索することもできます。 この記事では、次についても説明します。
 
 - ブール検索演算子、検索条件、およびその他の検索クエリ技法を使用して、検索結果を絞り込む。
 - SharePoint および OneDrive for Business で機密情報の種類およびカスタムの機密情報の種類を検索する。
@@ -43,10 +41,10 @@ ms.locfileid: "66012342"
 
 - [コンテンツ検索](content-search.md)
 - [電子情報開示でコンテンツを検索する (Standard)](search-for-content-in-core-ediscovery.md)
-- [電子情報開示で下書きコレクションを作成する (プレミアム)](create-draft-collection.md)
+- [電子情報開示で下書きコレクションを作成する (Premium)](create-draft-collection.md)
 
 > [!NOTE]
-> コンプライアンス ポータルでの電子情報開示の検索と、Security & Compliance PowerShell の対応する **\*-ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
+> コンプライアンス ポータルの電子情報開示検索と、Security & Compliance PowerShell の対応する **\*-ComplianceSearch** コマンドレットでは、キーワード クエリ言語 (KQL) を使用します。 詳細については、「[キーワード クエリ言語 (KQL) 構文のリファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
 
 ## <a name="searchable-email-properties"></a>検索可能なメール プロパティ
 
@@ -71,7 +69,7 @@ ms.locfileid: "66012342"
 |Participants|メール メッセージのすべての送受信者フィールド。 すなわち、[差出人]、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`participants:garthf@contoso.com` <p> `participants:contoso.com`|garthf@contoso.com が送信元または送信先のメッセージ。2 番目の例は、contoso.com ドメイン内のユーザーが送信元または送信先のすべてのメッセージを返します。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
 |受信済み|電子メール メッセージが受信者によって受信された日付。|`received:2021-04-15` <p> `received>=2021-01-01 AND received<=2021-03-31`|2021 年 4 月 15 日に受信したメッセージ。 2 番目の例では、2021 年 1 月 1 日から 2021 年 3 月 31 日の間に受信したすべてのメッセージが返されます。|
 |Recipients|メール メッセージのすべての受信者フィールド。 すなわち、[宛先]、[Cc]、[Bcc] の各フィールドです。<sup>1</sup>|`recipients:garthf@contoso.com` <p> `recipients:contoso.com`|garthf@contoso.com に送信されたメッセージ。 2 番目の例では、contoso.com ドメイン内のすべての受信者に送信されたメッセージを返します。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
-|送信日時|送信者によって電子メール メッセージが送信された日付。|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
+|Sent|送信者によって電子メール メッセージが送信された日付。|`sent:2021-07-01` <p> `sent>=2021-06-01 AND sent<=2021-07-01`|指定された日付に送信された、または指定された日付範囲内に送信されたメッセージ。|
 |Size|アイテムのサイズ (バイト数)。|`size>26214400` <p> `size:1..1048567`|25 MB を超えるメッセージ。 2 番目の例では、1 ～ 1,048,567 バイト (1 MB) のサイズのメッセージが返されます。|
 |Subject|電子メール メッセージの件名行に含まれるテキスト。 <p> **注:** クエリで Subject プロパティを使用すると、検索するテキストが件名に含まれているすべてのメッセージが返されます。 つまり、完全一致のメッセージのみがクエリで返されるわけではありません。 たとえば、 `subject:"Quarterly Financials"` を検索した場合の結果には、件名が "Quarterly Financials 2018" のメッセージが含まれることになります。|`subject:"Quarterly Financials"` <p> `subject:northwind`|件名行のテキストのいずれかの箇所に "Quarterly Financials" を含むメッセージ。 2 番目の例では、件名行に「northwind」の語が含まれているすべてのメッセージを返します。|
 |To|メール メッセージの To フィールド。<sup>1</sup>|`to:annb@contoso.com` <p> `to:annb ` <br/> `to:"Ann Beebe"`|いずれの例も、To: 行に "Ann Beebe" が指定されているメッセージを返します。|
@@ -88,11 +86,11 @@ ms.locfileid: "66012342"
 ただし、検索クエリで受信者の拡張を防ぐと、関連するアイテムが検索結果に返されない可能性があります。 Exchange のメール メッセージは、受信者フィールドに異なるテキスト形式で保存できます。 受信者の拡張は、異なるテキスト形式を含む可能性のあるメッセージを返して、この事実を軽減することを目的としています。 受信者の拡張を防ぐと、検索クエリが調査に関連する可能性のあるすべてのアイテムを返さない結果になる可能性があります。
 
 > [!NOTE]
-> 受信者の展開が原因で検索クエリによって返されるアイテムを確認または減らす必要がある場合は、電子情報開示 (プレミアム) の使用を検討してください。 受信者の拡張を利用してメッセージを検索し、それをレビュー セットに追加し、レビュー セットのクエリまたはフィルターを使用して結果を確認または絞り込みます。 詳細については、「[ケース用にデータを収集する](collecting-data-for-ediscovery.md)」および「[レビュー セットのデータのクエリ](review-set-search.md)」を参照してください。
+> 受信者の展開が原因で検索クエリによって返されるアイテムを確認または減らす必要がある場合は、電子情報開示 (Premium) の使用を検討してください。 受信者の拡張を利用してメッセージを検索し、それをレビュー セットに追加し、レビュー セットのクエリまたはフィルターを使用して結果を確認または絞り込みます。 詳細については、「[ケース用にデータを収集する](collecting-data-for-ediscovery.md)」および「[レビュー セットのデータのクエリ](review-set-search.md)」を参照してください。
 
 ## <a name="searchable-site-properties"></a>検索可能なサイト プロパティ
 
-次の表に、Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用するか、**New-ComplianceSearch** または **Set-ComplianceSearch** コマンドレットを使用して検索できるSharePointプロパティとOneDrive for Businessプロパティの一部を示します。 表には、各プロパティの  _property:value_ 構文の例、およびその例で返される検索結果の説明が含まれています。
+次の表に、Microsoft Purview コンプライアンス ポータルの電子情報開示検索ツールを使用するか、**New-ComplianceSearch コマンドレットまたは Set-ComplianceSearch** コマンドレットを使用して検索できる SharePoint プロパティとOneDrive for Business プロパティの一部を示します。 表には、各プロパティの  _property:value_ 構文の例、およびその例で返される検索結果の説明が含まれています。
 
 検索可能な SharePoint プロパティの完全な一覧については、「[クロールされたプロパティと管理プロパティの概要](/SharePoint/technical-reference/crawled-and-managed-properties-overview)」を参照してください。 [**クエリ可能**] 列で **[はい]** と示されているプロパティが検索可能です。
 
@@ -108,7 +106,7 @@ ms.locfileid: "66012342"
 |FileName|ファイルの名前。|`filename:"marketing plan"` <p> `filename:estimate`|最初の例では、タイトルに "marketing plan" と完全一致する語句が含まれるファイルが返されます。2 番目の例では、ファイル名に "estimate" という単語を含むファイルが返されます。|
 |LastModifiedTime|アイテムが最後に変更された日付。|`lastmodifiedtime>=2021-05-01` <p> `lastmodifiedtime>=2021-05-01 AND lastmodifiedtime<=2021-06-01`|最初の例では、2021 年 5 月 1 日以降に変更された項目を返します。 2 番目の例では、2021 年 5 月 1 日から 2021 年 6 月 1 日の間に変更された項目が返されます。|
 |ModifiedBy|アイテムを最後に変更した人。 このプロパティには、必ずユーザーの表示名を使用してください。|`modifiedby:"Garth Fort"`|Garth Fort によって最後に変更されたすべてのアイテム。|
-|Path|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。 <p> 指定したサイトからのみアイテムを返すには、URL の末尾に末尾 `/` を追加する必要があります。たとえば、 `path: "https://contoso.sharepoint.com/sites/international/"` <p> path プロパティで指定したサイト内のフォルダーにあるアイテムを返すには、URL の末尾に追加 `/*` する必要があります。たとえば、  `path: "https://contoso.sharepoint.com/Shared Documents/*"` <p> **メモ：** このプロパティを`Path`使用してOneDrive場所を検索しても、.png、.tiff、.wav ファイルなどのメディア ファイルは検索結果に返されません。 OneDrive フォルダー内のメディア ファイルを検索するには、検索クエリで別のサイト プロパティを使用します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"` <p> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムが返されます。 2 番目の例では、指定したサイト フォルダー (およびサイト内のフォルダー) に存在するドキュメントで、ファイル名に "confidential" という単語が含まれるものが返されます。|
+|Path|SharePoint または OneDrive for Business サイトの特定のサイトのパス (URL)。 <p> 指定したサイトからのみアイテムを返すには、URL の末尾に末尾 `/` を追加する必要があります。たとえば、 `path: "https://contoso.sharepoint.com/sites/international/"` <p> path プロパティで指定したサイト内のフォルダーにあるアイテムを返すには、URL の末尾に追加 `/*` する必要があります。たとえば、  `path: "https://contoso.sharepoint.com/Shared Documents/*"` <p> **メモ：** このプロパティを `Path` 使用して OneDrive の場所を検索しても、.png、.tiff、.wav ファイルなどのメディア ファイルは検索結果に返されません。 OneDrive フォルダー内のメディア ファイルを検索するには、検索クエリで別のサイト プロパティを使用します。 <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"` <p> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|最初の例では、指定した OneDrive for Business サイト内のすべてのアイテムが返されます。 2 番目の例では、指定したサイト フォルダー (およびサイト内のフォルダー) に存在するドキュメントで、ファイル名に "confidential" という単語が含まれるものが返されます。|
 |SharedWithUsersOWSUser|指定したユーザーと共有されているドキュメントで、そのユーザーの OneDrive for Business サイトの [**自分と共有**] ページに表示されるドキュメント。 これらは、組織内の他のユーザーによって指定したユーザーと明示的に共有されているドキュメントです。 SharedWithUsersOWSUser プロパティを使う検索クエリと一致するドキュメントをエクスポートすると、ドキュメントは、指定したユーザーとドキュメントを共有しているユーザーの元のコンテンツの場所からエクスポートされます。 詳細については、「[組織内で共有されているサイト コンテンツの検索](#searching-for-site-content-shared-within-your-organization)」を参照してください。|`sharedwithusersowsuser:garthf` <p> `sharedwithusersowsuser:"garthf@contoso.com"`|どちらの例でも、Garth Fort と明示的に共有されていて、Garth Fort の OneDrive for Business アカウントの [**自分と共有**] ページに表示されるすべての内部ドキュメントが返されます。|
 |Site|組織内のサイトかサイトのグループの URL。|`site:"https://contoso-my.sharepoint.com"` <p> `site:"https://contoso.sharepoint.com/sites/teams"`|最初の例では、組織内のすべてのユーザー向けの OneDrive for Business のサイトからアイテムが返されます。 2 番目の例では、すべてのチーム サイトからアイテムが返されます。|
 |Size|アイテムのサイズ (バイト数)。|`size>=1` <p> `size:1..10000`|最初の例では、1 バイトより大きいアイテムが返されます。2 番目の例では、1 ～ 10,000 バイトのサイズのメッセージが返されます。|
@@ -154,7 +152,7 @@ ms.locfileid: "66012342"
 
 ## <a name="searchable-sensitive-data-types"></a>検索可能な機密情報の種類
 
-コンプライアンス ポータルの電子情報開示検索ツールを使用すると、SharePoint サイトやOneDrive for Business サイトのドキュメントに格納されている機密データ (クレジット カード番号や社会保障番号など) を検索できます。 これを行うには、`SensitiveType`プロパティと機密情報の名前 (または ID) をキーワード クエリで使います。 たとえば、クエリ `SensitiveType:"Credit Card Number"` は、クレジット カード番号が含まれているドキュメントを返します。 クエリ`SensitiveType:"U.S. Social Security Number (SSN)"` は米国の社会保障番号を含むドキュメントを返します。
+コンプライアンス ポータルの電子情報開示検索ツールを使用すると、SharePoint およびOneDrive for Business サイトのドキュメントに格納されている機密データ (クレジット カード番号や社会保障番号など) を検索できます。 これを行うには、`SensitiveType`プロパティと機密情報の名前 (または ID) をキーワード クエリで使います。 たとえば、クエリ `SensitiveType:"Credit Card Number"` は、クレジット カード番号が含まれているドキュメントを返します。 クエリ`SensitiveType:"U.S. Social Security Number (SSN)"` は米国の社会保障番号を含むドキュメントを返します。
 
 検索できる機密情報の種類の一覧を表示するには、コンプライアンス ポータルで **データ分類の** \> **機密情報の種類** に移動します。 または、Security & Compliance PowerShell の **Get-DlpSensitiveInformationType** コマンドレットを使用して、機密情報の種類の一覧を表示することもできます。
 
@@ -172,7 +170,7 @@ ms.locfileid: "66012342"
 
   次に、`SensitiveType` 検索プロパティで ID を使用して、カスタムの機密データ型を含むドキュメントを返します。例えば `SensitiveType:7e13277e-6b04-3b68-94ed-1aeb9d47de37`
 
-- 機密性のある情報の種類と `SensitiveType` 検索プロパティは、Exchange Online メールボックスに保管されている機密性の高いデータの検索には使用できません。 これには、1 対 1 のチャット メッセージ、1 対 N のグループ チャット メッセージ、Microsoft Teamsのチーム チャネル会話が含まれます。このコンテンツはすべてメールボックスに格納されるためです。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密性の高いメール データを保護できます。 詳細については、「 [データ損失防止の詳細」](dlp-learn-about-dlp.md) と「 [個人データの検索と検索」](/compliance/regulatory/gdpr)を参照してください。
+- 機密性のある情報の種類と `SensitiveType` 検索プロパティは、Exchange Online メールボックスに保管されている機密性の高いデータの検索には使用できません。 これには、Microsoft Teams の 1 対 1 のチャット メッセージ、1 対 N のグループ チャット メッセージ、およびチーム チャネルの会話が含まれます。これは、すべてのコンテンツがメールボックスに格納されるためです。 ただし、データ損失防止 (DLP) ポリシーを使用して、転送中の機密性の高いメール データを保護できます。 詳細については、「 [データ損失防止の詳細」](dlp-learn-about-dlp.md) と「 [個人データの検索と検索」](/compliance/regulatory/gdpr)を参照してください。
 
 ## <a name="search-operators"></a>検索演算子
 
@@ -313,7 +311,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 #### <a name="example-1"></a>例 1
 
-この例では、クレジット カード番号を含み、2021 年 1 月 1 日より前に最後に変更されたSharePointサイトとOneDrive for Business サイトのドキュメントを返します。
+この例では、クレジット カード番号を含み、2021 年 1 月 1 日より前に最後に変更された SharePoint およびOneDrive for Business サイトのドキュメントを返します。
 
 **GUI**:
 
@@ -369,7 +367,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>外部ユーザーと共有されているサイト コンテンツの検索
 
-コンプライアンス センターの電子情報開示検索ツールを使用して、組織外のユーザーと共有されているSharePointおよびOneDrive for Business サイトに保存されているドキュメントを検索することもできます。 これにより、組織外で共有されている重要な情報や機密情報を識別できます。 これはキーワード クエリの  `ViewableByExternalUsers` プロパティを使って行うことができます。 このプロパティは、次の共有方法のいずれかを使用して外部ユーザーと共有されているドキュメントまたはサイトを返します。
+コンプライアンス センターの電子情報開示検索ツールを使用して、組織外のユーザーと共有されている SharePoint およびOneDrive for Business サイトに保存されているドキュメントを検索することもできます。 これにより、組織外で共有されている重要な情報や機密情報を識別できます。 これはキーワード クエリの  `ViewableByExternalUsers` プロパティを使って行うことができます。 このプロパティは、次の共有方法のいずれかを使用して外部ユーザーと共有されているドキュメントまたはサイトを返します。
 
 - ユーザーが認証されたユーザーとして組織にサインインする必要がある共有への招待。
 - リンクを使って誰でも認証なしでリソースにアクセスできる匿名ゲスト リンク。
@@ -432,17 +430,17 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## <a name="character-limits-for-searches"></a>検索の文字制限
 
-SharePoint サイトとOneDrive アカウントでコンテンツを検索する場合、検索クエリには 4,000 文字の制限があります。
+SharePoint サイトと OneDrive アカウントでコンテンツを検索する場合、検索クエリには 4,000 文字の制限があります。
 検索クエリの合計文字数の計算方法を次に示します。
 
 - キーワード検索クエリの文字 (ユーザー フィールドとフィルター フィールドの両方を含む) は、この制限に対してカウントされます。
-- 任意の場所プロパティ内の文字 (検索対象のすべてのSharePoint サイトの URL や検索されるOneDriveの場所など) は、この制限に反してカウントされます。
+- 任意の場所プロパティの文字 (検索対象のすべての SharePoint サイトの URL や OneDrive の場所など) は、この制限に反してカウントされます。
 - 制限に対して検索カウントを実行しているユーザーに適用されるすべての検索アクセス許可フィルター内の文字。
 
 文字制限の詳細については、「 [電子情報開示検索の制限](limits-for-content-search.md#search-limits)」を参照してください。
 
 > [!NOTE]
-> 4,000 文字の制限は、コンテンツ検索、電子情報開示 (Standard)、電子情報開示 (プレミアム) に適用されます。
+> 4,000 文字の制限は、コンテンツ検索、電子情報開示 (Standard)、電子情報開示 (Premium) に適用されます。
 
 ## <a name="search-tips-and-tricks"></a>検索のヒントと秘訣
 

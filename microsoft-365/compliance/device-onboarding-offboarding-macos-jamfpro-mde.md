@@ -13,19 +13,17 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Microsoft Defender for Endpoint顧客向けの JAMF Proを使用して、macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
-ms.openlocfilehash: ba2ff7723e54451ace46823fafb5323dcb35069e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+description: Microsoft Defender for Endpointのお客様向けに JAMF Pro を使用して macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
+ms.openlocfilehash: 97ab1dbccc28cd1f9d14635c2fa351d0295202c1
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953385"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622923"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-jamf-pro-for-microsoft-defender-for-endpoint-customers"></a>Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-JAMF Proを使用して、macOS デバイスを Microsoft Purview ソリューションにオンボードできます。
+JAMF Pro を使用して、MacOS デバイスを Microsoft Purview ソリューションにオンボードできます。
 
 > [!IMPORTANT]
 > macOS デバイスに Microsoft Defender for Endpoint (MDE) を展開している ***場合は***、次の手順を使用します。
@@ -37,12 +35,12 @@ JAMF Proを使用して、macOS デバイスを Microsoft Purview ソリュー�
 - [インサイダー リスク管理](insider-risk-management.md)
 
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
-- [macOS デバイスが JAMF pro を介して管理され、JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) ConnectまたはIntuneを介して ID (Azure AD参加している UPN) に関連付けられていることを確認します。
+- [MACOS デバイスが JAMF pro を介して管理され、JAMF](https://www.jamf.com/resources/product-documentation/jamf-pro-installation-guide-for-mac/) Connect またはIntuneを介して ID (Azure AD joined UPN) に関連付けられていることを確認します。
 - macOS デバイスに v95+ Edge ブラウザーをインストールする
 
-## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Proを使用してデバイスを Microsoft Purview ソリューションにオンボードする
+## <a name="onboard-devices-into-microsoft-purview-solutions-using-jamf-pro"></a>JAMF Pro を使用してデバイスを Microsoft Purview ソリューションにオンボードする
 
 macOS デバイスをコンプライアンス ソリューションにオンボードすることは、多段階プロセスです。
 
@@ -82,19 +80,19 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
 
 1. **fulldisk.mobileconfig** ファイルを使用して、既存のフル ディスク アクセス プロファイルを更新します。
 
-1. **fulldisk.mobileconfig** ファイルを JAMF にアップロードします。 [JAMF Proを使用したカスタム構成プロファイルのデプロイ](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)に関する説明を参照してください。
+1. **fulldisk.mobileconfig** ファイルを JAMF にアップロードします。 [JAMF Pro を使用したカスタム構成プロファイルのデプロイに関する説明](https://docs.jamf.com/technical-articles/Deploying_Custom_Configuration_Profiles_Using_Jamf_Pro.html)を参照してください。
 
 ### <a name="grant-accessibility-access-to-dlp"></a>DLP へのアクセシビリティ アクセスを付与する
 
 1. 以前にダウンロードした accessibility.mobileconfig ファイルを使用します。
 
-1. [Jamf Proを使用したカスタム構成プロファイルのデプロイ](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)に関する説明に従って JAMF にアップロードします。
+1. [Jamf Pro を使用したカスタム構成プロファイルのデプロイ](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)の説明に従って JAMF にアップロードします。
 
 ### <a name="check-the-macos-device"></a>macOS デバイスを確認する 
 
 1. macOS デバイスを再起動します。
 
-1. **System PreferencesProfiles** >  を開 **きます**。
+1. **システム環境設定プロファイルを** > 開 **きます**。
 
 1. 次の情報が表示されます。
     - アクセシビリティ
@@ -108,7 +106,7 @@ macOS デバイスをコンプライアンス ソリューションにオンボ�
     - 通知
     - システム拡張機能プロファイル
 
-## <a name="offboard-macos-devices-using-jamf-pro"></a>JAMF Proを使用したオフボード macOS デバイス
+## <a name="offboard-macos-devices-using-jamf-pro"></a>JAMF Pro を使用したオフボード macOS デバイス
 
 > [!IMPORTANT]
 > オフボーディングにより、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (発生したアラートへの参照を含む) は、最大 6 か月間保持されます。

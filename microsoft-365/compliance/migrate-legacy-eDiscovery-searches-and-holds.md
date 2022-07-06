@@ -1,5 +1,5 @@
 ---
-title: 従来の電子情報開示の検索と保留を Microsoft Purview コンプライアンス ポータルに移行する
+title: 従来の電子情報開示の検索と保留をMicrosoft Purview コンプライアンス ポータルに移行する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,20 +15,18 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkEXCHANGE
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: 3b80db06faea9c76c7df671468b94fc11f0c63df
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 607b66d863c0584ce1bb06c069de7870245cb167
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66010090"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622593"
 ---
 # <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-compliance-portal"></a>従来の電子情報開示の検索と保留をコンプライアンス ポータルに移行する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Microsoft Purview コンプライアンス ポータルでは、電子情報開示の使用に関するエクスペリエンスが向上します。たとえば、信頼性の向上、パフォーマンスの向上、電子情報開示ワークフローに合わせた多くの機能 (問題別にコンテンツを整理するケースを含む)、コンテンツと分析をレビューするためのレビュー セットを含む、ほぼ重複したグループ化、電子メール スレッド、テーマ分析、予測コーディングなどのデータをカリングするのに役立ちます。
 
-Microsoft Purview コンプライアンス ポータルでは、電子情報開示の使用に関するエクスペリエンスが向上します。これには、信頼性の向上、パフォーマンスの向上、電子情報開示ワークフローに合わせた多くの機能が用意されています。これには、コンテンツを問題別に整理するためのケース、コンテンツと分析をレビューするためのレビュー セットが含まれており、ほぼ重複するグループ化、電子メール スレッド、テーマ分析、予測コーディングなどのデータをカリングするのに役立ちます。
-
-この記事では、お客様が新機能と改善された機能を利用できるように、Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>からコンプライアンス ポータルに電子情報開示の検索と保留In-Place移行する方法に関する基本的なガイダンスを提供します。
+この記事では、お客様が新機能と改善された機能を利用できるように、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a> からコンプライアンス ポータルに電子情報開示の検索と保留In-Place移行する方法に関する基本的なガイダンスを提供します。
 
 > [!NOTE]
 > さまざまなシナリオがあるため、この記事では、コンプライアンス ポータルで検索と保留を電子情報開示 (Standard) ケースに移行するための一般的なガイダンスを提供します。 電子情報開示ケースの使用は必ずしも必要ではありませんが、組織内の電子情報開示ケースにアクセスできるユーザーを制御するためのアクセス許可を割り当てることで、セキュリティのレイヤーが追加されます。
@@ -37,11 +35,11 @@ Microsoft Purview コンプライアンス ポータルでは、電子情報開�
 
 - Exchange Online V2 モジュールをインストールする必要があります。 詳細については、「[EXO V2 モジュールをインストールして管理する](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)」を参照してください。
 
-- この記事で説明する PowerShell コマンドを実行するには、コンプライアンス ポータルの電子情報開示マネージャー役割グループのメンバーである必要があります。 また、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>の探索管理役割グループのメンバーである必要もあります。
+- この記事で説明する PowerShell コマンドを実行するには、コンプライアンス ポータルの電子情報開示マネージャー役割グループのメンバーである必要があります。 <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">また、Exchange 管理センター</a>の探索管理役割グループのメンバーである必要もあります。
 
 - この記事では、電子情報開示ホールドを作成する方法に関するガイダンスを提供します。 ホールド ポリシーは、非同期プロセスを通じてメールボックスに適用されます。 電子情報開示ホールドを作成するときは、CaseHoldPolicy と CaseHoldRule の両方を作成する必要があります。それ以外の場合、保留は作成されず、コンテンツの場所は保留にされません。
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>手順 1: PowerShell とセキュリティ & コンプライアンス PowerShell をExchange OnlineするConnect
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-powershell"></a>手順 1: Exchange Online PowerShell とセキュリティ & コンプライアンス PowerShell に接続する
 
 最初の手順は、同じ PowerShell ウィンドウExchange Online PowerShell とセキュリティ &コンプライアンス PowerShell に接続することです。 次のコマンドをコピーし、PowerShell ウィンドウに貼り付けてから実行できます。 資格情報の入力を求めるメッセージが表示されます。
 
@@ -50,7 +48,7 @@ Connect-IPPSSession
 Connect-ExchangeOnline -UseRPSSession
 ```
 
-詳細な手順については、「[セキュリティ & コンプライアンス PowerShell のConnect](/powershell/exchange/connect-to-scc-powershell)」と「PowerShell の[Exchange OnlineへのConnect」を参照](/powershell/exchange/connect-to-exchange-online-powershell)してください。
+詳細な手順については、「[セキュリティ & コンプライアンス PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」と「PowerShell [への接続」Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)参照してください。
 
 ## <a name="step-2-get-a-list-of-in-place-ediscovery-searches-by-using-get-mailboxsearch"></a>手順 2: Get-MailboxSearchを使用してIn-Place電子情報開示検索の一覧を取得する
 
@@ -139,7 +137,7 @@ New-ComplianceSearch -Name $search.Name -ExchangeLocation $search.SourceMailboxe
 
 すべてが正しく設定されていることを確認するには、コンプライアンス ポータルの [[https://compliance.microsoft.com](https://compliance.microsoft.com)**電子情報開示> Core**] をクリックします。
 
-![Microsoft Purview コンプライアンス ポータルの電子情報開示。](../media/MigrateLegacyeDiscovery7.png)
+![電子情報開示をMicrosoft Purview コンプライアンス ポータルします。](../media/MigrateLegacyeDiscovery7.png)
 
 手順 3 で作成したケースは、 **電子情報開示 (Standard)** ページに一覧表示されます。 ケースを開き、[保留] タブの一覧の手順 4 で作成した **保留リスト** に注目します。保留リストを選択すると、ポップアップ ページに詳細が表示されます。これには、保留が適用されるメールボックスの数や配布状態が含まれます。
 
@@ -153,7 +151,7 @@ In-Place電子情報開示検索を移行しても電子情報開示ケースに
 
 ## <a name="more-information"></a>詳細情報
 
-- Exchange<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>での電子情報開示&保留のIn-Placeの詳細については、次を参照してください。
+- <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>での電子情報開示&保留のIn-Placeの詳細については、次を参照してください。
 
   - [インプレース電子情報開示 (eDiscovery)](/exchange/security-and-compliance/in-place-ediscovery/in-place-ediscovery)
 
@@ -175,4 +173,4 @@ In-Place電子情報開示検索を移行しても電子情報開示ケースに
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- コンプライアンス ポータルの詳細については、「 [Microsoft Purview コンプライアンス ポータルの概要](microsoft-365-compliance-center.md)」を参照してください。
+- コンプライアンス ポータルの詳細については、「[Microsoft Purview コンプライアンス ポータルの概要」を](microsoft-365-compliance-center.md)参照してください。

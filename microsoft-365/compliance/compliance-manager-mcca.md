@@ -17,16 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Configuration Analyzer for Microsoft Purview を使用して、Microsoft Purview コンプライアンス マネージャーを使用してすばやく起動して実行する方法について説明します。
-ms.openlocfilehash: d2e5fbc0d928fb5931139a274cf9cce5bdc4d983
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 96d44dd310361e8a9ca2c4239448ced863abaddc
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573949"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621163"
 ---
 # <a name="configuration-analyzer-for-microsoft-purview-camp"></a>Configuration Analyzer for Microsoft Purview (CAMP)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事では、次の操作を行います。** Configuration Analyzer for Microsoft Purview (CAMP) ツールをインストールして実行し、Microsoft Purview Compliance Manger の概要を確認する方法について説明します。
 

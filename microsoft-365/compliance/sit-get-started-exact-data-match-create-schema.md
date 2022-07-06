@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく機密情報の種類のスキーマを作成する
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 080bdff37893bcf0d41414c066b51727d2650f7a
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017166"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622021"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類のスキーマを作成する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 スキーマと EDM SIT は、 [厳密なデータ一致スキーマと機密情報の種類パターンを使用するウィザードを使用](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) するか [、手動で](#create-exact-data-match-schema-manually-and-upload)作成できます。 1 つのメソッドを使用して両方を組み合わせてスキーマを作成し、後でもう一方のメソッドを使用して編集することもできます。
 
@@ -36,7 +34,7 @@ EDM ベースの SITS またはその実装に慣れていない場合は、次�
 - [完全なデータ一致に基づく機密情報の種類の詳細](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)
 - [完全なデータ一致に基づく機密情報の種類の使用を開始する](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
-1 つの EDM スキーマは、同じ機密データ テーブルを使用する複数の機密情報の種類で使用できます。 Microsoft 365 テナントに最大 10 個の異なる EDM スキーマを作成できます。
+1 つの EDM スキーマは、同じ機密データ テーブルを使用する複数の機密情報の種類で使用できます。 Microsoft 365 テナントでは、最大 10 個の異なる EDM スキーマを作成できます。
 
 
 
@@ -50,7 +48,7 @@ EDM ベースの SITS またはその実装に慣れていない場合は、次�
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>完全一致スキーマと機密情報の種類パターンウィザードを使用する
 
-1. テナントの Microsoft Purview コンプライアンス ポータルで、**EDM スキーマ** と一致 > する **データ分類** > **の正確なデータ** に移動します。
+1. テナントのMicrosoft Purview コンプライアンス ポータルで、[**データ分類** > ] の [**正確なデータと一致する** > **EDM スキーマ] に移動します**。
 
 2. **EDM スキーマを作成** を選択して、スキーマ ウィザードの構成 ポップアップを開きます。
 

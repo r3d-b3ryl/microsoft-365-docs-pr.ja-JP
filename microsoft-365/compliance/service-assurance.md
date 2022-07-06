@@ -16,16 +16,14 @@ search.appverid:
 - MET150
 ms.assetid: 47e8b964-4b09-44f7-a2d7-b8a06e8e389c
 description: サードパーティの監査をダウンロードし、Microsoft がお客様のデータを安全に保つ方法を確認し、Office 365を使用するときに ISO、HIPAA、FINRA、FedRAMP に準拠する方法を確認します。
-ms.openlocfilehash: 8247eee98d9c039e05aca2b621881f56b59c2ee5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: fdd60478266ee4ef55f550aa04a62d9e1148856e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077836"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622395"
 ---
 # <a name="service-assurance-in-the-security--compliance-center"></a>セキュリティ/コンプライアンス センターのサービス アシュアランス
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 セキュリティ & コンプライアンス センターでサービス アシュアランスを使用して、次のようなさまざまなトピックを説明するドキュメントにアクセスします。 
   
@@ -43,7 +41,7 @@ ms.locfileid: "65077836"
     
 - Federal Risk and Authorization Management Program (FedRAMP)
     
-## <a name="who-can-access-office-365-service-assurance-and-how"></a>Office 365サービスアシュアランスにアクセスできるWhoとその方法
+## <a name="who-can-access-office-365-service-assurance-and-how"></a>Office 365サービス アシュアランスにアクセスできるユーザーと方法
 
  **Microsoft オンライン サービスを評価している新規のお客様およびお客様** は、Office 365 Enterprise E3 プランと E5 プラン (試用版サブスクリプションと有料サブスクリプションの両方) に含まれるサービス アシュアランスにアクセスできます。 これらのプランの 1 つがなく、サービス保証を試したい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)できます。
   
@@ -54,11 +52,11 @@ ms.locfileid: "65077836"
 
 サービス アシュアランスに初めてアクセスする場合、最初の手順は、業界と地域の設定を構成することです。 これらの設定はいつでも変更できます。 これらの設定を構成すると、組織に最も関連するコンテンツを提供するサービス アシュアランスが可能になります。 業界と地域の設定を構成するには:
   
-1. サービスアシュアランスにアクセスしたら、**設定** を選択すると、次のスクリーンショットに示すように [リージョンと業界の設定] ページが表示されます。 
+1. サービス アシュアランスにアクセスしたら、[ **設定]** を選択すると、次のスクリーンショットに示すように [リージョンと業界の設定] ページが表示されます。 
     
     ![保護センターの設定ページを表示します。](../media/101716e8-9c0a-4839-a2c0-f6aacf64eb9d.png)
   
-2. **[設定**] ページで、[**リージョン**] の横にある下向き矢印を選択し、組織の適切なリージョンを確認します。 
+2. [ **設定]** ページで、[ **リージョン** ] の横にある下矢印を選択し、組織の適切なリージョンを確認します。 
     
 3. [ **業界** ] の横にある下矢印を選択し、組織に適した業界を確認します。 
     

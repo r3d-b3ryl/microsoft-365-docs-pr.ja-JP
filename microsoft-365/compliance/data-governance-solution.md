@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス要件または規制要件のためにデータを統制するために、組織に Microsoft Purview を展開するための規範的なガイダンス。
-ms.openlocfilehash: 5a7ef3f26ed21cc8ad97aeea3ed97cb1938cd837
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: fbfc208a860b8f062b424912207718ece2055b3b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754252"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623337"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Microsoft Purview を使用してデータ ガバナンス ソリューションをデプロイする
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **Microsoft Purview データ ライフサイクル管理** (以前の Microsoft Information Governance) と **Microsoft Purview レコード管理** を使用し、コンプライアンスや規制要件に対応して Microsoft 365 データを統制します。
 

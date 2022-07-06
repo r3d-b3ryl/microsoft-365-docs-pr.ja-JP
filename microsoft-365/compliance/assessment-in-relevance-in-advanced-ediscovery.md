@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示の関連性の評価について (プレミアム)
+title: 電子情報開示の関連性の評価を理解する (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,25 +15,23 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 1d33d4fb-91ed-41c0-b72e-5a26eca3a2a7
-description: 評価ステージの概要と、Microsoft Purview 電子情報開示 (プレミアム) での関連性トレーニング中の問題の豊富さを決定する役割について説明します。
+description: 評価ステージの概要と、Microsoft Purview eDiscovery (Premium) での関連性トレーニング中の問題の豊富さを決定する役割について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bfd6087bbcade2c7e4d9afdcda0f47bbea6f53d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 19d518e116fbd86dc0f781443ba16c21890c4346
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096118"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625569"
 ---
-# <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>電子情報開示の関連度モジュールの評価 (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="assessment-in-the-relevance-module-in-ediscovery-premium"></a>電子情報開示の関連度モジュールの評価 (Premium)
   
-Microsoft Purview 電子情報開示 (プレミアム) では、定義された問題やケースにインポートされたデータなどについて、早期評価が可能になります。 電子情報開示 (プレミアム) を使用すると、専門家は採用されたアプローチに関する決定を行い、これらの決定をドキュメント レビュー プロジェクトに適用できます。
+Microsoft Purview eDiscovery (Premium) を使用すると、定義済みの問題やケースにインポートされたデータなど、早期評価が可能になります。 電子情報開示 (Premium) を使用すると、エキスパートは採用されたアプローチに関する決定を行い、これらの決定をドキュメント レビュー プロジェクトに適用できます。
   
 ## <a name="understanding-assessment"></a>評価について
 
-評価では、専門家は少なくとも 500 個のファイルのランダム セットをレビューします。これは、問題の豊富さを判断し、トレーニング結果を反映する統計を生成するために使用されます。 評価は、電子情報開示 (プレミアム) の関連性が正確な統計を提供し、トレーニング プロセスの安定化ポイントを効果的に決定するのに役立つ統計レベルに達することが見つかった場合に成功します。 
+評価では、専門家は少なくとも 500 個のファイルのランダム セットをレビューします。これは、問題の豊富さを判断し、トレーニング結果を反映する統計を生成するために使用されます。 評価は、電子情報開示 (Premium) の関連性が正確な統計を提供し、トレーニング プロセスの安定化ポイントを効果的に決定するのに役立つ統計レベルに達する十分な関連ファイルが見つかった場合に成功します。 
   
 評価セット内の関連ファイルの数が多いほど、安定性アルゴリズムの統計と有効性がより正確になります。 評価ファイル内の関連ファイルの数は、問題の豊富さによって異なります。 リッチネスは、問題に関連するセット内の関連ファイルの推定パーセントです。 リッチ度が高い問題は、リッチ度が低い問題よりも、関連するファイルの数が多い方が速くなります。 リッチ度が非常に低い問題 (たとえば、2% 以下) では、多数の関連ファイルに到達するには、非常に大きな評価セットが必要になります。
   

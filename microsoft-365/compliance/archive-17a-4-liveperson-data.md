@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365で LivePerson Conversational Cloud データをアーカイブするコネクタを設定する
+title: Microsoft 365 で LivePerson Conversational Cloud データをアーカイブするためのコネクタを設定する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -11,25 +11,23 @@ ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
-description: 17a-4 LivePerson Conversational Cloud DataParser コネクタを設定して使用して、Microsoft 365に LivePerson Conversational Cloud データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: e4843a5e186b35d76c0ca4e4bc38033748b40a1f
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+description: 17a-4 LivePerson Conversational Cloud DataParser コネクタを設定して使用して、Microsoft 365 で LivePerson Conversational Cloud データをインポートおよびアーカイブする方法について説明します。
+ms.openlocfilehash: ba0050b49f1b2e76a56b8e1cb022661361ebe3b3
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65319796"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621569"
 ---
 # <a name="set-up-a-connector-to-archive-liveperson-conversational-cloud-data"></a>LivePerson Conversational Cloud データをアーカイブするコネクタを設定する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+17a-4 LLC の [LivePerson Conversational Cloud DataParser](https://www.17a-4.com/liveperson-dataparser/) を使用して、LivePerson Conversational Cloud から Microsoft 365 組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目を Microsoft 365 にインポートするように構成された LivePerson Conversational Cloud コネクタが含まれています。 LivePerson Conversational Cloud DataParser コネクタは、データを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。
 
-17a-4 LLC の [LivePerson Conversational Cloud DataParser を](https://www.17a-4.com/liveperson-dataparser/)使用して、LivePerson Conversational Cloud からMicrosoft 365組織内のユーザー メールボックスにデータをインポートおよびアーカイブします。 DataParser には、サード パーティのデータ ソースからアイテムをキャプチャし、それらの項目をMicrosoft 365にインポートするように構成された LivePerson Conversational Cloud コネクタが含まれています。 LivePerson Conversational Cloud DataParser コネクタは、データを電子メール メッセージ形式に変換し、それらのアイテムをMicrosoft 365のユーザー メールボックスにインポートします。
-
-データをユーザー メールボックスに格納した後、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどのMicrosoft Purview機能を適用できます。 LivePerson Conversational Cloud コネクタを使用してMicrosoft 365のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けるのに役立ちます。
+ユーザー メールボックスにデータを格納した後は、訴訟ホールド、電子情報開示、アイテム保持ポリシーと保持ラベル、通信コンプライアンスなどの Microsoft Purview 機能を適用できます。 LivePerson Conversational Cloud コネクタを使用して Microsoft 365 のデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="overview-of-archiving-liveperson-conversational-cloud-data"></a>LivePerson Conversational Cloud データのアーカイブの概要
 
-次の概要では、データ コネクタを使用して LivePerson Conversational Cloud データをMicrosoft 365にアーカイブするプロセスについて説明します。
+次の概要では、データ コネクタを使用して、Microsoft 365 で LivePerson Conversational Cloud データをアーカイブするプロセスについて説明します。
 
 ![17a-4 の LivePerson Conversational Cloud データのアーカイブ ワークフロー。](../media/LiveEngageDataParserConnectorWorkflow.png)
 
@@ -37,7 +35,7 @@ ms.locfileid: "65319796"
 
 2. 定期的に、LivePerson Conversational Cloud アイテムは DataParser によって収集されます。 DataParser では、メッセージの内容も電子メール メッセージ形式に変換されます。
 
-3. Microsoft Purview コンプライアンス ポータルで作成した LivePerson Conversational Cloud DataParser コネクタは、DataParser に接続され、Microsoft クラウド内の安全なAzure Storageの場所にメッセージを転送します。
+3. Microsoft Purview コンプライアンス ポータルで作成した LivePerson Conversational Cloud DataParser コネクタは DataParser に接続し、メッセージを Microsoft クラウドのセキュリティで保護された Azure Storage の場所に転送します。
 
 4. **LivePerson Conversational Cloud DataParser** という名前の受信トレイ フォルダー内のサブフォルダーがユーザー メールボックスに作成され、アイテムがそのフォルダーにインポートされます。 コネクタは、 *Email* プロパティの値を使用して、アイテムをインポートするメールボックスを決定します。 すべての項目には、すべての参加者の電子メール アドレスが設定されたこのプロパティが含まれています。
 
@@ -45,15 +43,15 @@ ms.locfileid: "65319796"
 
 - Microsoft コネクタの DataParser アカウントを作成します。 これを行うには、 [17a-4 LLC](https://www.17a-4.com/contact/) にお問い合わせください。 手順 1 でコネクタを作成するときに、このアカウントにサインインする必要があります。
 
-- 手順 1 で LivePerson Conversational Cloud DataParser コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理者ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
+- 手順 1 で LivePerson Conversational Cloud DataParser コネクタを作成し、手順 3 で完了したユーザーには、Data Connector 管理 ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者がカスタムロール グループを作成し、Data Connector 管理ロールを割り当ててから、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
-- この 17a-4 データ コネクタは、Microsoft 365米国政府機関クラウドのGCC環境で使用できます。 サード パーティ製のアプリケーションとサービスには、組織の顧客データを、Microsoft 365 インフラストラクチャの外部にあるサード パーティ システムに格納、送信、処理する必要があるため、Microsoft Purviewおよびデータ保護のコミットメントの対象とされません。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
+- この 17a-4 データ コネクタは、Microsoft 365 US Government クラウドの GCC 環境で使用できます。 サード パーティのアプリケーションとサービスには、Microsoft 365 インフラストラクチャの外部にあり、Microsoft Purview およびデータ保護コミットメントの対象外であるサード パーティ システムに対する組織の顧客データの保存、送信、処理が含まれる場合があります。 Microsoft は、この製品を使用してサード パーティ製アプリケーションに接続することは、これらのサードパーティ アプリケーションが FEDRAMP に準拠していることを意味することを示しません。
 
 ## <a name="step-1-set-up-a-liveperson-conversational-cloud-dataparser-connector"></a>手順 1: LivePerson Conversational Cloud DataParser コネクタを設定する
 
 最初の手順は、コンプライアンス ポータルの [データ コネクタ] ページにアクセスし、LivePerson Conversational Cloud データ用の 17a-4 コネクタを作成することです。
 
-1. **Data connectorsLivePerson** >  **Conversational Cloud DataParser** に<https://compliance.microsoft.com>移動してクリックします。
+1. <https://compliance.microsoft.com> **[データ コネクタ** > **] LivePerson Conversational Cloud DataParser** に移動してクリックします。
 
 2. **LivePerson Conversational Cloud DataParser 製品の** 説明ページで、[**コネクタの追加**] をクリックします。
 
@@ -69,7 +67,7 @@ ms.locfileid: "65319796"
 
 ## <a name="step-3-map-users"></a>手順 3: ユーザーをマップする
 
-LivePerson Conversational Cloud DataParser コネクタは、Microsoft 365にデータをインポートする前に、ユーザーをMicrosoft 365電子メール アドレスに自動的にマップします。
+LivePerson Conversational Cloud DataParser コネクタは、Microsoft 365 にデータをインポートする前に、ユーザーを Microsoft 365 のメール アドレスに自動的にマップします。
 
 ## <a name="step-4-monitor-the-liveperson-conversational-cloud-dataparser-connector"></a>手順 4: LivePerson Conversational Cloud DataParser コネクタを監視する
 

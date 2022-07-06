@@ -20,16 +20,14 @@ search.appverid:
 - MET150
 ms.custom: admindeeplinkCOMPLIANCE
 description: エンドポイントのデータ損失防止を設定して、ファイルアクティビティを監視し、それらのファイルの保護アクションをエンドポイントに実装します。
-ms.openlocfilehash: 1b22fbd10c78c638a9cc68acf939a22d5c140549
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 7b9999b180262eb35f1b2b36c4059b5b34855e1e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531026"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624159"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止を開始する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 エンドポイントのデータ損失防止 (Endpoint DLP) は、Microsoft 365 サービス全体で機密アイテムを検出して保護する Microsoft Purview データ損失防止 (DLP) スイートの機能の一部です。 MicrosoftのすべてのDLP製品の詳細については、「[データ損失防止の概要](dlp-learn-about-dlp.md)」を参照してください。 エンドポイント DLP の詳細については、「[エンドポイント データ損失防止の説明](endpoint-dlp-learn-about.md)」を参照してください。
 

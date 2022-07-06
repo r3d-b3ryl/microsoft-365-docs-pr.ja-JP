@@ -21,19 +21,17 @@ ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkSPO
-description: Microsoft Purview コンプライアンス ポータルで、電子情報開示ケースに関連付けられた新しいホールドにメールボックス& OneDrive for Businessサイトを追加するスクリプトを実行する方法について説明します。
-ms.openlocfilehash: 04d41936e437740a39ab73aeafb9ca40b914dd2f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Microsoft Purview コンプライアンス ポータルの電子情報開示ケースに関連付けられた新しいホールドにメールボックス& OneDrive for Businessサイトを追加するスクリプトを実行する方法について説明します。
+ms.openlocfilehash: ebfe9bf2fc2784e8c590b949912aa15c1b773cc0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012759"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621647"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースでユーザーをホールドに追加するスクリプトを使用する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Security & Compliance PowerShell には、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できるコマンドレットが用意されています。 現在、Microsoft Purview コンプライアンス ポータルで Microsoft Purview 電子情報開示 (Standard) ケースを使用して、多数のカストディアン コンテンツの場所を保持するには、時間と準備が必要です。 たとえば、保留リストを作成する前に、保留にするOneDrive for Businessサイトごとに URL を収集する必要があります。 次に、保留にするユーザーごとに、メールボックスとそのOneDrive for Business サイトを保留に追加する必要があります。 この記事のスクリプトを使用して、このプロセスを自動化できます。
+Security & Compliance PowerShell には、電子情報開示ケースの作成と管理に関連する時間のかかるタスクを自動化できるコマンドレットが用意されています。 現在、Microsoft Purview コンプライアンス ポータルでMicrosoft Purview eDiscovery (Standard) ケースを使用して、多数のカストディアン コンテンツの場所を保留にするには、時間と準備が必要です。 たとえば、保留リストを作成する前に、保留にするOneDrive for Businessサイトごとに URL を収集する必要があります。 次に、保留にするユーザーごとに、メールボックスとそのOneDrive for Business サイトを保留に追加する必要があります。 この記事のスクリプトを使用して、このプロセスを自動化できます。
 
 このスクリプトでは、組織の個人用サイト ドメインの名前 (URLhttps://contoso-my.sharepoint.com)、既存の電子情報開示ケースの名前、`contoso`ケースに関連付けられている新しいホールドの名前、保留にするユーザーの電子メール アドレスの一覧、クエリ ベースのホールドを作成する場合に使用する検索クエリなど) を求めるメッセージが表示されます。 スクリプトは、リスト内の各ユーザーのOneDrive for Business サイトの URL を取得し、新しい保留リストを作成し、リスト内の各ユーザーのメールボックスとOneDrive for Business サイトを保留リストに追加します。 このスクリプトでは、新しい保留に関する情報を含むログ ファイルも生成されます。
 
@@ -55,7 +53,7 @@ Security & Compliance PowerShell には、電子情報開示ケースの作成�
 
 - このスクリプトは、既存のケースに関連付けられている新しい保留リストにユーザーの一覧を追加します。 スクリプトを実行する前に、保留リストを関連付けるケースが作成されていることを確認します。
 
-- この記事のスクリプトでは、セキュリティ & コンプライアンス PowerShell および SharePoint Online Management Shell に接続するときの先進認証がサポートされています。 Microsoft 365またはMicrosoft 365 GCC組織の場合は、スクリプトをそのまま使用できます。 ドイツのOffice 365組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行 `Connect-IPPSSession` を編集し、 *ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、Security & Compliance PowerShell に接続する必要があります。 詳細については、「[セキュリティ & コンプライアンス PowerShell にConnectする](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)」の例を参照してください。
+- この記事のスクリプトでは、セキュリティ & コンプライアンス PowerShell と SharePoint Online Management Shell に接続するときの先進認証がサポートされています。 Microsoft 365 または Microsoft 365 GCC 組織の場合は、このスクリプトをそのまま使用できます。 ドイツのOffice 365組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行 `Connect-IPPSSession` を編集し、 *ConnectionUri* パラメーターと *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、Security & Compliance PowerShell に接続する必要があります。 詳細については、「 [セキュリティへの接続&コンプライアンス PowerShell](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)」の例を参照してください。
 
 - このスクリプトは、Security & Compliance PowerShell と SharePoint Online Management Shell から自動的に切断されます。
 
@@ -65,9 +63,9 @@ Security & Compliance PowerShell には、電子情報開示ケースの作成�
 
 ## <a name="step-1-install-the-sharepoint-online-management-shell"></a>手順 1: SharePoint Online 管理シェルをインストールする
 
-最初の手順は、SharePoint Online Management Shell がローカル コンピューターにまだインストールされていない場合にインストールすることです。 この手順ではシェルを使用する必要はありませんが、手順 3 で実行するスクリプトに必要な前提条件が含まれているため、シェルをインストールする必要があります。 これらの前提条件により、スクリプトは SharePoint Online と通信して、OneDrive for Business サイトの URL を取得できます。
+最初の手順は、ローカル コンピューターにまだインストールされていない場合は、SharePoint Online Management Shell をインストールすることです。 この手順ではシェルを使用する必要はありませんが、手順 3 で実行するスクリプトに必要な前提条件が含まれているため、シェルをインストールする必要があります。 これらの前提条件により、スクリプトは SharePoint Online と通信して、OneDrive for Business サイトの URL を取得できます。
 
-[SharePoint Online Management Shell 環境のセットアップ](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)に移動し、手順 1 と手順 2 を実行して、SharePoint Online Management Shell をローカル コンピューターにインストールします。
+[SharePoint Online Management Shell 環境のセットアップに](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)移動し、手順 1 と手順 2 を実行して、ローカル コンピューターに SharePoint Online Management Shell をインストールします。
 
 ## <a name="step-2-generate-a-list-of-users"></a>手順 2: ユーザーの一覧を生成する
 
@@ -85,9 +83,9 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 この手順でスクリプトを実行すると、次の情報を求めるメッセージが表示されます。 スクリプトを実行する前に、必ずこの情報を準備しておいてください。
 
-- **ユーザー資格情報:** このスクリプトでは、資格情報を使用して Security & Compliance PowerShell に接続します。 また、これらの資格情報を使用して、SharePoint Online にアクセスして、ユーザーの一覧のOneDrive for Business URL を取得します。
+- **ユーザー資格情報:** このスクリプトでは、資格情報を使用して Security & Compliance PowerShell に接続します。 また、これらの資格情報を使用して SharePoint Online にアクセスし、ユーザーの一覧のOneDrive for Business URL を取得します。
 
-- **SharePoint ドメインの名前:** スクリプトは、<a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint管理センター</a>に接続できるように、この名前を入力するように求められます。 また、組織内のOneDrive URL のドメイン名も使用します。 たとえば、管理センターの URL が`https://contoso-admin.sharepoint.com`OneDriveの URL である場合は`https://contoso-my.sharepoint.com`、スクリプトからドメイン名の入力を求められたときに入力`contoso`します。
+- **SharePoint ドメインの名前:** このスクリプトでは、 <a href="https://go.microsoft.com/fwlink/?linkid=2185219" target="_blank">SharePoint 管理センター</a>に接続できるように、この名前を入力するように求められます。 また、組織内の OneDrive URL のドメイン名も使用します。 たとえば、管理センターの URL が `https://contoso-admin.sharepoint.com` OneDrive の URL である場合は `https://contoso-my.sharepoint.com`、スクリプトからドメイン名の入力を求められたときに入力 `contoso` します。
 
 - **ケースの名前:** 既存のケースの名前。 スクリプトによって、このケースに関連付けられた新しいホールドが作成されます。
 

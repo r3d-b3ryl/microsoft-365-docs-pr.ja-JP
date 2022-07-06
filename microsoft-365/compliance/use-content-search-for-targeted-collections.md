@@ -18,22 +18,20 @@ search.appverid:
 - MET150
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
-description: Microsoft Purview コンプライアンス ポータルでコンテンツ検索を使用して、特定のメールボックスまたはサイト フォルダー内のアイテムを検索する対象のコレクションを実行します。
-ms.openlocfilehash: 224da8e651599d1d007684a069b0dbb9d30a6119
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Microsoft Purview コンプライアンス ポータルのコンテンツ検索を使用して、特定のメールボックスまたはサイト フォルダー内のアイテムを検索する対象のコレクションを実行します。
+ms.openlocfilehash: ab4fda56e3ccbd04ac8b7b820c4305e9c6e45093
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66015542"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623675"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>対象のコレクションにコンテンツ検索を使用する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールでは、EXCHANGE メールボックスまたはSharePoint サイトやOneDrive for Business サイト内の特定のフォルダーを検索するための直接の方法が UI に用意されていません。 ただし、実際の検索クエリ構文でサイトの電子メールまたはパス (DocumentLink) プロパティのフォルダー ID プロパティを指定することで、特定のフォルダー ( *ターゲット コレクション* と呼ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースアイテムや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーに配置されていると確信できる場合に便利です。 この記事のスクリプトを使用して、メールボックス フォルダーのフォルダー ID、またはSharePointおよびOneDrive for Business サイト上のフォルダーのパス (DocumentLink) を取得できます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返すことができます。
+Microsoft Purview コンプライアンス ポータルのコンテンツ検索ツールでは、EXCHANGE メールボックスまたは SharePoint およびOneDrive for Business サイト内の特定のフォルダーを検索するための直接の方法は UI に用意されていません。 ただし、実際の検索クエリ構文でサイトの電子メールまたはパス (DocumentLink) プロパティのフォルダー ID プロパティを指定することで、特定のフォルダー ( *ターゲット コレクション* と呼ばれる) を検索できます。 コンテンツ検索を使用して対象のコレクションを実行すると、ケースアイテムや特権アイテムに対応するアイテムが特定のメールボックスまたはサイト フォルダーに配置されていると確信できる場合に便利です。 この記事のスクリプトを使用すると、SharePoint およびOneDrive for Business サイト上のフォルダーのメールボックス フォルダーまたはパス (DocumentLink) のフォルダー ID を取得できます。 次に、検索クエリのフォルダー ID またはパスを使用して、フォルダー内にあるアイテムを返すことができます。
 
 > [!NOTE]
-> SharePointサイトまたはOneDrive for Business サイト内のフォルダーにあるコンテンツを返すために、このトピックのスクリプトでは、Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティは、フォルダー内のすべてのコンテンツを返すのに対し、Path プロパティは一部のメディア ファイルを返さないため、Path プロパティよりも堅牢です。
+> SharePoint またはOneDrive for Business サイト内のフォルダーにあるコンテンツを返すために、このトピックのスクリプトでは、Path プロパティの代わりに DocumentLink 管理プロパティを使用します。 DocumentLink プロパティは、フォルダー内のすべてのコンテンツを返すのに対し、Path プロパティは一部のメディア ファイルを返さないため、Path プロパティよりも堅牢です。
 
 ## <a name="before-you-run-a-targeted-collection"></a>ターゲット コレクションを実行する前に
 
@@ -41,7 +39,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 - また、Exchange Online組織でメール受信者ロールを割り当てる必要もあります。 これは、スクリプトに含まれる **Get-MailboxFolderStatistics** コマンドレットを実行するために必要です。 既定では、メール受信者ロールは、Exchange Onlineの組織管理および受信者管理の役割グループに割り当てられます。 Exchange Onlineでのアクセス許可の割り当ての詳細については、「[ロール グループ メンバーの管理](/exchange/manage-role-group-members-exchange-2013-help)」を参照してください。 カスタム ロール グループを作成し、メール受信者ロールを割り当て、手順 1 でスクリプトを実行する必要があるメンバーを追加することもできます。 詳細については、「 [ロール グループの管理](/Exchange/permissions-exo/role-groups)」を参照してください。
 
-- この記事のスクリプトでは、先進認証がサポートされています。 Microsoft 365またはMicrosoft 365 GCC組織の場合は、スクリプトをそのまま使用できます。 ドイツのOffice 365組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行`Connect-ExchangeOnline`を編集し、*ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して powerShell Exchange Online接続する必要があります。  また、行 `Connect-IPPSSession` を編集し、 *ConnectionUri* および *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、Security & Compliance PowerShell に接続する必要があります。 詳細については、[PowerShell をExchange Onlineし](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)、セキュリティ & [コンプライアンス PowerShell にConnectするConnectの例を参照](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)してください。
+- この記事のスクリプトでは、先進認証がサポートされています。 Microsoft 365 または Microsoft 365 GCC 組織の場合は、このスクリプトをそのまま使用できます。 ドイツのOffice 365組織、Microsoft 365 GCC High 組織、または Microsoft 365 DoD 組織の場合は、スクリプトを編集して正常に実行する必要があります。 具体的には、行`Connect-ExchangeOnline`を編集し、*ExchangeEnvironmentName* パラメーター (および組織の種類に適した値) を使用して powerShell Exchange Online接続する必要があります。  また、行 `Connect-IPPSSession` を編集し、 *ConnectionUri* および *AzureADAuthorizationEndpointUri* パラメーター (および組織の種類に適した値) を使用して、Security & Compliance PowerShell に接続する必要があります。 詳細については、「[Exchange Online PowerShell への接続](/powershell/exchange/connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-without-using-mfa)と[セキュリティ&コンプライアンス PowerShell への接続](/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)」の例を参照してください。
 
 - スクリプトを実行するたびに、新しいリモート PowerShell セッションが作成されます。 つまり、使用可能なすべてのリモート PowerShell セッションを使用できます。 これを回避するには、次のコマンドを実行して、アクティブなリモート PowerShell セッションを切断します。
 
@@ -57,13 +55,13 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 ## <a name="step-1-run-the-script-to-get-a-list-of-folders-for-a-mailbox-or-site"></a>手順 1: スクリプトを実行して、メールボックスまたはサイトのフォルダーの一覧を取得する
 
-この最初の手順で実行するスクリプトは、メールボックス フォルダー、SharePointフォルダー、OneDrive for Business フォルダーの一覧、および各フォルダーの対応するフォルダー ID またはパスを返します。 このスクリプトを実行すると、次の情報を求めるメッセージが表示されます。
+この最初の手順で実行するスクリプトは、メールボックス フォルダーまたは SharePoint フォルダーとOneDrive for Business フォルダーの一覧と、各フォルダーの対応するフォルダー ID またはパスを返します。 このスクリプトを実行すると、次の情報を求めるメッセージが表示されます。
 
-- **電子メール アドレスまたはサイト URL**: Exchangeメールボックス フォルダーとフォルダー ID の一覧を返す保管担当者の電子メール アドレスを入力します。 または、指定したサイトのパスの一覧を返すSharePoint サイトまたはOneDrive for Business サイトの URL を入力します。 次に、いくつかの例を示します:
+- **電子メール アドレスまたはサイト URL**: Exchange メールボックス フォルダーとフォルダー ID の一覧を返すカストディアンの電子メール アドレスを入力します。 または、SharePoint サイトまたはOneDrive for Business サイトの URL を入力して、指定したサイトのパスの一覧を返します。 次に、いくつかの例を示します:
 
-  - **Exchange**:`stacig@contoso.onmicrosoft.com`
+  - **Exchange**: `stacig@contoso.onmicrosoft.com`
 
-  - **SharePoint**:`https://contoso.sharepoint.com/sites/marketing`
+  - **SharePoint**: `https://contoso.sharepoint.com/sites/marketing`
 
   - **OneDrive for Business**:`https://contoso-my.sharepoint.com/personal/stacig_contoso_onmicrosoft_com`
 
@@ -210,7 +208,7 @@ Microsoft Purview コンプライアンス ポータルのコンテンツ検索�
 
 ### <a name="script-output-for-site-folders"></a>サイト フォルダーのスクリプト出力
 
-SharePointサイトまたはOneDrive for Business サイトから **documentlink** プロパティのパスを取得する場合、スクリプトは Security & Compliance PowerShell に接続し、サイトでフォルダーを検索する新しいコンテンツ検索を作成し、指定したサイトにあるフォルダーの一覧を表示します。 スクリプトには各フォルダーの名前が表示され、 **documentlink** のプレフィックスがフォルダー URL に追加されます。 **documentlink** プロパティは検索可能なプロパティであるため、手順 2. の検索クエリで property:value ペアを使用`documentlink:<path>`してそのフォルダーを検索します。 このスクリプトには、最大 100 個のサイト フォルダーが表示されます。 100 を超えるサイト フォルダーがある場合は、最新のフォルダーが表示されます。
+SharePoint またはOneDrive for Business サイトから **documentlink** プロパティのパスを取得する場合、スクリプトは Security & Compliance PowerShell に接続し、サイトでフォルダーを検索する新しいコンテンツ検索を作成し、指定したサイトにあるフォルダーの一覧を表示します。 スクリプトには各フォルダーの名前が表示され、 **documentlink** のプレフィックスがフォルダー URL に追加されます。 **documentlink** プロパティは検索可能なプロパティであるため、手順 2. の検索クエリで property:value ペアを使用`documentlink:<path>`してそのフォルダーを検索します。 このスクリプトには、最大 100 個のサイト フォルダーが表示されます。 100 を超えるサイト フォルダーがある場合は、最新のフォルダーが表示されます。
 
 サイト フォルダーのスクリプトによって返される出力の例を次に示します。
 
@@ -236,11 +234,11 @@ SharePointサイトまたはOneDrive for Business サイトから **documentlink
 
 5. メールボックス フォルダーとサイト フォルダーのどちらを検索しているかに基づいて、次のいずれかの操作を行います。
 
-    - **Exchangeメール** の横にある **[ユーザー、グループ、またはチームの選択**] をクリックし、手順 1 でスクリプトを実行したときに指定したメールボックスを追加します。
+    - **Exchange メール** の横にある **[ユーザー、グループ、またはチームの選択**] をクリックし、手順 1 でスクリプトを実行したときに指定したメールボックスを追加します。
 
       または
 
-    - **SharePoint サイト** の横にある [**サイトの選択**] をクリックし、手順 1 でスクリプトを実行したときに指定したのと同じサイト URL を追加します。
+    - **SharePoint サイト** の横にある **[サイトの選択]** をクリックし、手順 1 でスクリプトを実行したときに指定したのと同じサイト URL を追加します。
 
 6. 検索するコンテンツの場所を保存したら、[ **保存&実行**] をクリックし、コンテンツ検索の名前を入力し、[ **保存]** をクリックして対象のコレクション検索を開始します。
 

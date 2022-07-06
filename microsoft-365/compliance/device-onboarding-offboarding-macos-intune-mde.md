@@ -14,16 +14,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: MDE のお客様向けのMicrosoft Intuneを使用して、macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
-ms.openlocfilehash: c6b374ad3c35ba3441e82412d9897132006d0559
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 3e6947483a4d3320b61211edeb0f9fdc3e31095d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952844"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623033"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!IMPORTANT]
 > macOS デバイスに Microsoft Defender for Endpoint (MDE) を展開している ***場合は***、次の手順を使用します。
@@ -35,7 +33,7 @@ ms.locfileid: "64952844"
 - [インサイダー リスク管理](insider-risk-management.md)
 
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - [macOS デバイスがIntuneにオンボードされ](/mem/intune/fundamentals/deployment-guide-platform-macos)、[ポータル サイト アプリ](/mem/intune/user-help/enroll-your-device-in-intune-macos-cp)に登録されていることを確認します。 
 - [Microsoft エンドポイント マネージャー センター](https://endpoint.microsoft.com/#home)にアクセスできることを確認する
@@ -63,7 +61,7 @@ MDE が既に展開されている場合は、次の手順に従って macOS デ
 
 ### <a name="create-system-configuration-profiles"></a>システム構成プロファイルを作成する
 
-1. **Microsoft エンドポイント マネージャー** **centerDevicesConfiguration** >  >  **プロファイルを開きます**。
+1. **Microsoft エンドポイント マネージャー センター** > **のデバイス** > **構成プロファイルを開きます**。
 
 1. [プロファイル **の作成**] を選択します。 
 
@@ -74,7 +72,7 @@ MDE が既に展開されている場合は、次の手順に従って macOS デ
 
 1. [**作成**] を選択する
 
-1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 **[次へ]** を選択します。
+1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 **次へ** を選択します。
 
 1. 手順 1 でダウンロードした **accessibility.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
@@ -84,7 +82,7 @@ MDE が既に展開されている場合は、次の手順に従って macOS デ
 
 1. 設定を確認し、[ **作成** ] を選択して構成をデプロイします。
 
-1. **DevicesConfiguration** >  プロファイルを開くと、作成したプロファイルがそこに表示されます。
+1. **デバイス** > **構成プロファイルを** 開くと、作成したプロファイルがそこに表示されます。
 
 1. [ **構成プロファイル]** ページで、先ほど作成したプロファイルを選択し、この例の *[アクセシビリティフォームACOS* ] で [ **デバイスの状態** ] を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
 
@@ -109,7 +107,7 @@ MDE が既に展開されている場合は、次の手順に従って macOS デ
 > [!IMPORTANT]
 > オフボーディングにより、デバイスはポータルへのセンサー データの送信を停止しますが、デバイスからのデータ (発生したアラートへの参照を含む) は、最大 6 か月間保持されます。
 
-1. **Microsoft エンドポイント マネージャー センター** で **DevicesConfiguration** >  プロファイルを開くと、作成したプロファイルがそこに表示されます。
+1. **Microsoft エンドポイント マネージャー センター** でデバイス **構成プロファイル****を** > 開くと、作成したプロファイルがそこに表示されます。
 
 2. [ **構成プロファイル] ページで** 、MDE 基本設定プロファイルを選択します。
 

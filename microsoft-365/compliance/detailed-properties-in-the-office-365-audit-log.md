@@ -19,18 +19,16 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、Office 365監査ログ レコードの結果をエクスポートするときに含まれる追加のプロパティについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 82fd42fc44d5738c47ec022de2bb1b5f53396ae2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 66928de026e95fbbb02f1a3e7d0efd3da0766afd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65098826"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623277"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview コンプライアンス ポータルから監査ログ検索の結果をエクスポートする場合は、検索条件を満たすすべての結果をダウンロードできます。 このエクスポートを行うには、[**監査ログの検索**] ページで、[**結果のエクスポート**] \> [**テスト結果のダウンロード**] の順に選択します。 詳細については、「[監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
+Microsoft Purview コンプライアンス ポータルから監査ログ検索の結果をエクスポートする場合は、検索条件に一致するすべての結果をダウンロードできます。 このエクスポートを行うには、[**監査ログの検索**] ページで、[**結果のエクスポート**] \> [**テスト結果のダウンロード**] の順に選択します。 詳細については、「[監査ログの検索](search-the-audit-log-in-security-and-compliance.md)」を参照してください。
   
  監査ログ検索のすべての結果をエクスポートすると、統合監査ログの生データが、ローカル コンピューターにダウンロードされるコンマ区切り値 (CSV) ファイルにコピーされます。 このファイルには、[**AuditData**] という名前の列にある各監査レコードからの追加情報が入っています。 この列には、監査ログ レコードからの複数のプロパティに対する複数値プロパティが含まれています。 この複数値プロパティに含まれる各 **プロパティ: 値** ペアはカンマで区切られています。 
   
@@ -39,7 +37,7 @@ Microsoft Purview コンプライアンス ポータルから監査ログ検索�
 > [!TIP]
 > Excel の Power Query に含まれる JSON 変換機能を使用すると、[**AuditData**] 列を複数の列に分割し、プロパティごとに個別の列を設定できます。 このようにすると、これらの 1 つ以上のプロパティで並べ替えやフィルター処理を行うことができます。 これを行う方法については、「[監査ログ レコードをエクスポート、構成、表示する](export-view-audit-log-records.md)」を参照してください。 
   
-|**Property**|**説明**|**このプロパティを持つサービスをMicrosoft 365する**|
+|**Property**|**説明**|**このプロパティを持つ Microsoft 365 サービス**|
 |:-----|:-----|:-----|
 |Actor|アクションを実行したユーザーまたはサービス アカウント。|Azure Active Directory|
 |AddOnName|チームで追加、削除、または更新されたアドオンの名前。 Microsoft Teams のアドオンの種類には、ボット、コネクタ、またはタブがあります。|Microsoft Teams|
@@ -81,18 +79,18 @@ Microsoft Purview コンプライアンス ポータルから監査ログ検索�
 |SourceFileName|ユーザーがアクセスしたファイルまたはフォルダーの名前。|SharePoint|
 |SourceRelativeUrl|ユーザーがアクセスするファイルが含まれているフォルダーの URL。 **SiteURL**、**SourceRelativeURL**、および **SourceFileName** プロパティの値の組み合わせは、**ObjectID** プロパティの値と同じであり、ユーザーがアクセスするファイルの完全パス名です。|SharePoint|
 |Subject|アクセスされたメッセージの件名。|Exchange (メールボックス アクティビティ)|
-|TabType| チームで追加、削除、または更新されたタブの種類。このプロパティの有効な値は次のとおりです。<br/><br/> **Excel pin** - Excel のタブ。  <br/> **Extension** - すべてのファースト パーティおよびサード パーティのアプリ (Class Schedule、VSTS、Forms など)。  <br/> **Notes** - OneNote のタブ。  <br/> **Pdfpin** - PDF のタブ。  <br/> **Powerbi** - [Power BI] タブ。  <br/> **Powerpointpin** - PowerPoint のタブ。  <br/> **Sharepointfiles** - SharePoint のタブ。  <br/> **Webpage** - ピン留めされた Web サイトのタブ。  <br/> **Wiki-tab** - Wiki のタブ。  <br/> **Wordpin** - Word のタブ。|Microsoft Teams|
+|TabType| チームで追加、削除、または更新されたタブの種類。このプロパティの有効な値は次のとおりです。<br/><br/> **Excel pin** - Excel のタブ。  <br/> **Extension** - すべてのファースト パーティおよびサード パーティのアプリ (Class Schedule、VSTS、Forms など)。  <br/> **Notes** - OneNote のタブ。  <br/> **Pdfpin** - PDF のタブ。  <br/> **Powerbi** - Power BI タブ。  <br/> **Powerpointpin** - PowerPoint のタブ。  <br/> **Sharepointfiles** - SharePoint のタブ。  <br/> **Webpage** - ピン留めされた Web サイトのタブ。  <br/> **Wiki-tab** - Wiki のタブ。  <br/> **Wordpin** - Word のタブ。|Microsoft Teams|
 |Target|(**Operation** プロパティで識別された) アクションの実行対象となったユーザー。たとえば、SharePoint または Microsoft Team にゲスト ユーザーが追加されると、このプロパティにそのユーザーが一覧表示されます。|Azure Active Directory|
 |TeamGuid|Microsoft Teams のチームの ID。|Microsoft Teams|
 |TeamName|Microsoft Teams のチームの名前。|Microsoft Teams|
 |UserAgent|ユーザーのブラウザーに関する情報。この情報は、ブラウザーによって提供されます。|SharePoint|
 |UserDomain|アクションを実行したユーザー (アクター) のテナント組織に関する情報を示します。|Azure Active Directory|
-|UserId|結果としてログ記録されているレコードが生成されたアクション (**Operation** プロパティで指定された) を実行したユーザー。 システム アカウント (SHAREPOINT\system または NT AUTHORITY\SYSTEM など) によって実行されたアクティビティの監査レコードも監査ログに含まれます。 UserId プロパティのもう 1 つの一般的な値は app@sharepoint です。 これは、アクティビティを実行した "ユーザー" が、ユーザー、管理者、またはサービスの代理として、組織全体のアクション (SharePoint サイトまたは OneDrive アカウント検索など) を実行するために必要な アクセス許可が SharePoint に与えられているアプリケーションであることを示しています。 <br/><br/>詳細については、以下を参照してください。<br/> [監査レコード内の appsharepoint\@ ユーザー](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> または <br/>[Exchange メールボックス監査レコード内のシステム アカウント](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records)。 |すべて|
+|UserId|結果としてログ記録されているレコードが生成されたアクション (**Operation** プロパティで指定された) を実行したユーザー。 システム アカウント (SHAREPOINT\system または NT AUTHORITY\SYSTEM など) によって実行されたアクティビティの監査レコードも監査ログに含まれます。 UserId プロパティのもう 1 つの一般的な値は app@sharepoint です。 これは、アクティビティを実行した "ユーザー" が、ユーザー、管理者、またはサービスの代理として、組織全体のアクション (SharePoint サイトまたは OneDrive アカウント検索など) を実行するために必要な アクセス許可が SharePoint に与えられているアプリケーションであることを示しています。 <br/><br/>詳細については、以下を参照してください。<br/> [監査レコード内のアプリ\@sharepoint ユーザー](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> または <br/>[Exchange メールボックス監査レコードのシステム アカウント](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records)。 |すべて|
 |UserKey|**UserID** プロパティで識別されたユーザーの別の ID。このプロパティには、たとえば SharePoint でユーザーによって発生したイベントの Passport 固有 ID (PUID) が格納されます。このプロパティは、他のサービスで発生したイベントや、システム アカウントによって発生したイベントの **UserID** プロパティと同じ値を示す場合もあります。|すべて|
 |UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
-|UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - Microsoft 365組織内の管理者。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
+|UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - Microsoft 365 組織内の管理者。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
 |Version|ログに記録された (**Operation** プロパティで識別された) アクティビティのバージョン番号を示します。|すべて|
-|Workload|アクティビティが発生したMicrosoft 365 サービス。|すべて|
+|Workload|アクティビティが発生した Microsoft 365 サービス。|すべて|
 ||||
 
 > [!NOTE]

@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Purview Extension は、ファイル アクティビティの監視と制御、および保護措置を Google Chrome ブラウザーに拡張します。
-ms.openlocfilehash: a74cfeb734f41622d491c8aaffe3a5e054479a2a
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 08078871765a75577475c93ba35cabda9ee3fd6a
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172243"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622901"
 ---
 # <a name="learn-about-the-microsoft-purview-extension"></a>Microsoft Purview Extension の詳細
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [エンドポイントデータ損失防止 (エンドポイント DLP)](endpoint-dlp-learn-about.md) は、Windows 10 デバイスにある機密アイテムについて、[Microsoft Purview data loss prevention (DLP)](dlp-learn-about-dlp.md) のアクティビティの監視と保護機能を拡張します。 デバイスが、Microsoft Purview ソリューションに オンボードすると、機密アイテムを使用してユーザーが行っていることに関する情報が[アクティビティ エクスプローラー](data-classification-activity-explorer.md)に表示され、[DLP ポリシー](create-test-tune-dlp-policy.md)を通して、それらのアイテムに保護アクションを適用できます。
 

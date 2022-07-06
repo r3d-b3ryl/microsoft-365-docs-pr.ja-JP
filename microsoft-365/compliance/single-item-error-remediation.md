@@ -15,19 +15,17 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 一括エラー修復プロセスに従わなくても、電子情報開示 (プレミアム) のレビュー セット内のドキュメントの処理エラーを修正できます。
-ms.openlocfilehash: e8ace66eefadf5ce959bc01150ba21e232429131
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 一括エラー修復プロセスに従うことなく、電子情報開示 (Premium) のレビュー セット内のドキュメントの処理エラーを修正できます。
+ms.openlocfilehash: cb1b7248ff02a4aafce529b764efdf7408a05386
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092351"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622175"
 ---
-# <a name="single-item-error-remediation-in-ediscovery-premium"></a>電子情報開示の単一アイテム エラー修復 (プレミアム)
+# <a name="single-item-error-remediation-in-ediscovery-premium"></a>電子情報開示の単一アイテム エラー修復 (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-エラー修復により、Microsoft Purview 電子情報開示 (プレミアム) ユーザーは、電子情報開示 (プレミアム) がコンテンツを適切に処理できないようにするデータの問題を修正できます。 たとえば、パスワードで保護されたファイルは、それらのファイルがロックまたは暗号化されているため、処理できません。 以前は、 [このワークフロー](error-remediation-when-processing-data-in-advanced-ediscovery.md)を使用して一括してエラーを修復する必要があります。 ただし、調査中のケースに対してこれらのファイルのいずれかが応答しているかどうかが不明な場合は、複数のファイルのエラーを修復しても意味がない場合があります。 また、応答性に関する事前の決定に役立つファイル メタデータ (ファイルの場所やアクセス権を持ったユーザーなど) を確認する前に、エラーを修復しても意味がない場合があります。 *単一項目エラー修復* と呼ばれる新機能により、電子情報開示マネージャーは、処理エラーのあるファイルのメタデータを表示し、必要に応じてレビュー セット内のエラーを直接修復できます。 この記事では、レビュー セット内の処理エラーがあるファイルを識別、無視、修復する方法について説明します。
+エラー修復により、Microsoft Purview eDiscovery (Premium) ユーザーは、電子情報開示 (Premium) でコンテンツを適切に処理できないデータの問題を修正できます。 たとえば、パスワードで保護されたファイルは、それらのファイルがロックまたは暗号化されているため、処理できません。 以前は、 [このワークフロー](error-remediation-when-processing-data-in-advanced-ediscovery.md)を使用して一括してエラーを修復する必要があります。 ただし、調査中のケースに対してこれらのファイルのいずれかが応答しているかどうかが不明な場合は、複数のファイルのエラーを修復しても意味がない場合があります。 また、応答性に関する事前の決定に役立つファイル メタデータ (ファイルの場所やアクセス権を持ったユーザーなど) を確認する前に、エラーを修復しても意味がない場合があります。 *単一項目エラー修復* と呼ばれる新機能により、電子情報開示マネージャーは、処理エラーのあるファイルのメタデータを表示し、必要に応じてレビュー セット内のエラーを直接修復できます。 この記事では、レビュー セット内の処理エラーがあるファイルを識別、無視、修復する方法について説明します。
 
 ## <a name="identify-documents-with-errors"></a>エラーのあるドキュメントを特定する
 
@@ -55,7 +53,7 @@ ms.locfileid: "65092351"
 
 1 つのドキュメントを修復するには、次の手順に従います。
 
-1.  > [**DownloadDownload original**] をクリックして、ファイルのコピーをローカル コンピューターにダウンロードします。
+1. [**元** のファイルの **ダウンロード** > ] をクリックして、ファイルのコピーをローカル コンピューターにダウンロードします。
 
    ![処理エラーが発生したドキュメントをダウンロードします。](../media/SIERimage5.png)
 

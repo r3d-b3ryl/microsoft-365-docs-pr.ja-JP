@@ -20,20 +20,18 @@ ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkCOMPLIANCE
 description: この記事では、Office 365に含まれるテンプレートのいずれかを使用して DLP ポリシーを作成する方法について説明します。
-ms.openlocfilehash: 952a552210b00061717c24db5de5e5a47b84d72b
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 67d21d3e5a057960a4d3fa92bfaa709345cf38ff
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65754678"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624589"
 ---
 # <a name="create-a-dlp-policy-from-a-template"></a>テンプレートから DLP ポリシーを作成する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 DLP ポリシーを使用する最も簡単で一般的な方法は、Microsoft Purview コンプライアンス ポータルに含まれるテンプレートのいずれかを使用することです。 これらのテンプレートの 1 つをそのまま使用することも、組織の特定のコンプライアンス要件を満たすようにルールをカスタマイズすることもできます。
 
-Microsoft 365には、さまざまな一般的な規制とビジネス ポリシーのニーズを満たすのに役立つ 40 を超えるすぐに使用できるテンプレートが含まれています。 参照してください。完全なリストの [ポリシー テンプレート](dlp-policy-reference.md#policy-templates) 。 
+Microsoft 365 には、さまざまな一般的な規制とビジネス ポリシーのニーズを満たすのに役立つ 40 を超えるすぐに使用できるテンプレートが含まれています。 参照してください。完全なリストの [ポリシー テンプレート](dlp-policy-reference.md#policy-templates) 。 
 
 テンプレートを微調整するには、既存のルールを変更するか、新しいルールを追加します。 たとえば、ルールに新しい種類の機密情報を追加したり、トリガーの難度を変更するためにルール内のカウントを変えたり、業務上の理由を提供することによってルールのアクションをユーザーが上書きできるようにしたり、通知とインシデント レポートの通知先を変更したりできます。 DLP ポリシー テンプレートは、多くの一般的なコンプライアンス シナリオの柔軟な開始点となります。
 
@@ -53,7 +51,7 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 **表示専用 DLP コンプライアンス管理** ロールを使用して、DLP ポリシーと DLP レポートに対する表示専用特権を持つロール グループを作成します。
 
-詳細については、「[Microsoft Purview コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)」 を参照してください。
+詳細については、「[Microsoft Purview コンプライアンス センターのアクセス許可](microsoft-365-compliance-center-permissions.md)」 を参照してください。
   
 これらのアクセス許可は、ポリシーを適用しないように DLP ポリシーを作成して適用するために必要です。
 
@@ -61,14 +59,14 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビュー段階の該当する役割の一覧を次に示します。 詳細については、[Microsoft Purview コンプライアンス ポータルのアクセス許可に関するページを](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)参照してください。
+該当するロールの一覧を次に示します。 詳細については、[Microsoft Purview コンプライアンス ポータルのアクセス許可に関するページを](microsoft-365-compliance-center-permissions.md)参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、[Microsoft Purview コンプライアンス ポータルのアクセス許可に関するページを](microsoft-365-compliance-center-permissions.md#permissions-in-the-microsoft-purview-compliance-portal)参照してください。
+該当する役割グループの一覧を次に示します。 詳細については、[Microsoft Purview コンプライアンス ポータルのアクセス許可に関するページを](microsoft-365-compliance-center-permissions.md)参照してください。
 
 - 情報保護
 - Information Protection レベル
@@ -82,8 +80,6 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
 
 2. 左側のナビゲーション \> Microsoft Purview コンプライアンス ポータル \> **ソリューション** \> **データ損失防止** \> **ポリシー** \> **+ ポリシーの作成**。
 
-    ![ポリシー ボタンを作成します。](../media/b1e48a08-92e2-47ca-abdc-4341694ddc7c.png)
-          
 3. 必要な種類の機密情報を保護する DLP ポリシー テンプレートを選び、**[次へ]** を選択します。
 
 4. ポリシーの名前を設定し、**[次へ]** を選びます。
@@ -121,9 +117,9 @@ DLP ポリシーを作成するコンプライアンス チームのメンバー
     1. Exchange
     1. SharePoint
     1. OneDrive
-    1. チャット メッセージとチャネル メッセージをTeamsする 
+    1. Teams チャットとチャネル メッセージ 
 
-10. **次へ** を選択します。
+10. [**次へ**]を選択します。
 
 11. 必要に応じて、[ **保護アクション]** ページで、ポリシー ヒント通知と通知メールをカスタマイズできます。 **コンテンツがポリシー条件と一致する場合に有効にし、ポリシーのヒントをユーザーに表示し、電子メール通知を送信** してから、[**ヒントと電子メールのカスタマイズ**] を選択します。
 12. [ **次へ**] を選びます。

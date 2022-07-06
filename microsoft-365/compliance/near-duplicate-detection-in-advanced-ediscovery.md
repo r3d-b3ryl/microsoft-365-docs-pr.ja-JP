@@ -15,18 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: ほぼ重複データ検出を使用して、電子情報開示 (プレミアム) でケース データを分析するときに、テキストに似たドキュメントをグループ化します。
+description: ほぼ重複データ検出を使用して、電子情報開示 (Premium) でケース データを分析するときに、テキストに似たドキュメントをグループ化します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b6ad8a3a3775c8389e943aa249cffd16b6b84d2
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 985374558189b2001c6f11e09581f7cb3ed6d11b
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096636"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622571"
 ---
-# <a name="near-duplicate-detection-in-ediscovery-premium"></a>電子情報開示のほぼ重複データ検出 (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="near-duplicate-detection-in-ediscovery-premium"></a>電子情報開示での重複データの検出に近い (Premium)
 
 サブセットが同じテンプレートに基づいており、ほとんど同じ定型言語を持つ一連のドキュメントを確認する必要があるとします。ここではいくつかの違いがあります。 校閲者がこのサブセットを特定し、そのうちの 1 つを十分に確認し、残りの部分の違いを確認できる場合は、一意の情報を見逃す必要はありません。一意の情報は見逃せません。一部の時間しかかからず、カバーするすべてのドキュメントを読み取る必要がありました。 準重複の検出グループは、テキスト的に類似したドキュメントをまとめてグループ化し、レビュープロセスをより効率的にします。
 

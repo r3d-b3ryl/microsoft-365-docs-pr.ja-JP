@@ -13,12 +13,12 @@ ms.collection:
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 で攻撃シミュレーション トレーニングのペイロードを作成および管理する方法について説明します。
 ms.technology: mdo
-ms.openlocfilehash: 38e9e60c50a7bc0dec4e8f9f75845fdc34e4b237
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 6cb3f2b2edb3c55063db2640eab1dd888f9aa5b7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487226"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621295"
 ---
 # <a name="payloads-in-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングのペイロード
 
@@ -101,7 +101,7 @@ ms.locfileid: "66487226"
    ![Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングのペイロードの [テナント ペイロード] タブにペイロードを作成します。](../../media/attack-sim-training-payload-create.png)
 
    > [!NOTE]
-   > ![ペイロード アイコンを作成します。](../../media/m365-cc-sc-create-icon.png) **ペイロードの作成** は、シミュレーション作成ウィザードの **[ペイロードの選択]** ページでも使用できます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
+   > ![ペイロード アイコンを作成します。](../../media/m365-cc-sc-create-icon.png) **ペイロードの作成** は、シミュレーション作成ウィザードの **[ペイロードとログインの選択] ページ** の手順でも使用できます。 詳細については、「 [シミュレーションの作成: ペイロードとログインページを選択する](attack-simulation-training.md#select-a-payload-and-login-page)」を参照してください。
    >
    > 作成ウィザードの任意の時点で、[ **保存] をクリックして閉じて** 進行状況を保存し、後でペイロードの構成を続行できます。 [ペイロード] の [ **テナント ペイロード** ] タブで通知を選択し、[ **ペイロード** の編集] アイコンをクリック ![すると、中断した場所を選択できます。](../../media/m365-cc-sc-edit-icon.png) **ペイロードを編集します**。 部分的に完了したペイロードには **、[状態]** の値 [ **下書き**] が表示されます。
 

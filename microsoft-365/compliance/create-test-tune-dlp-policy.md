@@ -19,16 +19,14 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について説明します。
-ms.openlocfilehash: 8e4c96a1625e3e11995aed66fff4a289da5d059d
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016968"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624733"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview データ損失防止 (DLP) は、機密情報の意図しないまたは偶発的な共有を防ぐのに役立ちます。
 
@@ -94,9 +92,9 @@ DLP で"VISA" や "AMEX" などのキーワード (クレジット カードの�
 
 データ漏洩のリスクが完全に明らかではない場合、DLP の実装をどこから始めるべきかを正確に判断することは困難です。 さいわい、DLP ポリシーは "テスト モード" で実行できるため、有効にする前に、その有効性と正確性を測定できます。
 
-Exchange Online の DLP ポリシーは、Exchange 管理センターを介して管理できます。 ただし、Microsoft Purview コンプライアンス ポータルを使用してすべてのワークロードの DLP ポリシーを構成できるので、この記事のデモに使用します。 Microsoft Purview コンプライアンス ポータルでは、**データ損失防止** > ポリシーの下に DLP **ポリシー** があります。 [開始 **するポリシーの作成** ] を選択します。
+Exchange Online の DLP ポリシーは、Exchange 管理センターを介して管理できます。 ただし、Microsoft Purview コンプライアンス ポータルを通じてすべてのワークロードの DLP ポリシーを構成できるので、この記事のデモンストレーションに使用します。 Microsoft Purview コンプライアンス ポータルでは、**データ損失防止** > ポリシーの下に DLP **ポリシー** があります。 [開始 **するポリシーの作成** ] を選択します。
 
-Microsoft 365には、ポリシーの作成に使用できる[さまざまな DLP ポリシー テンプレート](what-the-dlp-policy-templates-include.md)が用意されています。 例えば、ここがオーストラリアの企業だとしましょう。 オーストラリアのテンプレートをフィルター処理し、財務、医療、健康、プライバシーを選択できます。
+Microsoft 365 には、ポリシーの作成に使用できる [さまざまな DLP ポリシー テンプレート](what-the-dlp-policy-templates-include.md) が用意されています。 例えば、ここがオーストラリアの企業だとしましょう。 オーストラリアのテンプレートをフィルター処理し、財務、医療、健康、プライバシーを選択できます。
 
 ![国または地域を選択するオプション。](../media/DLP-create-test-tune-choose-country.png)
 
@@ -112,11 +110,11 @@ Microsoft 365には、ポリシーの作成に使用できる[さまざまな DL
 
 ![すべての場所を選択するオプション。](../media/DLP-create-test-tune-choose-locations.png)
 
-最初の **ポリシー 設定** 手順では、今のところ既定値をそのまま使用します。 DLP ポリシーはカスタマイズできますが、既定値は開始するのに最適な場所です。
+最初の **ポリシー設定** 手順では、今のところ既定値をそのまま使用します。 DLP ポリシーはカスタマイズできますが、既定値は開始するのに最適な場所です。
 
 ![保護するコンテンツの種類をカスタマイズするオプション。](../media/DLP-create-test-tune-default-customization-settings.png)
 
-[次へ]、[**] をクリックすると、その他のカスタマイズ オプションを含む[**ポリシー設定**] ページが表示されます。 テストしているポリシーの場合、ここから調整を開始できます。
+[次へ]、[** ] をクリックすると、その他のカスタマイズ オプションを含む[ **ポリシー設定]** ページが表示されます。 テストしているポリシーの場合、ここから調整を開始できます。
 
 - 現時点ではポリシー ヒントをオフにしています。これは、テストを行っているだけであってまだユーザーに何も表示したくない場合に行う合理的な手順です。 ポリシー ヒントは、ユーザーに対して DLP ポリシーに違反しようとしているという警告を表示します。 たとえば Outlook ユーザーには添付したファイルにクレジット カード番号が含まれているという警告が表示され、メールが拒否されます。 ポリシーヒントの目標は、準拠していない動作が発生する前に停止することです。
 - また、インスタンスの数を 10 から 1 に減らすことで、このポリシーがデータの一括共有だけでなくオーストラリアの PII データの共有を検出できるようにしました。
@@ -235,7 +233,7 @@ DLP ポリシーが機密情報の種類を正確かつ効果的に検出し、�
 
 ![ポリシーを有効にするオプション。](../media/DLP-create-test-tune-turn-on-policy.png)
  
-ポリシーがいつ有効になるかを確認する場合は、[Security & Compliance PowerShell にConnect](/powershell/exchange/connect-to-scc-powershell)し、[Get-DlpCompliancePolicy コマンドレット](/powershell/module/exchange/get-dlpcompliancepolicy)を実行して DistributionStatus を表示します。
+ポリシーがいつ有効になるかを確認する場合は、 [セキュリティ & コンプライアンス PowerShell に接続](/powershell/exchange/connect-to-scc-powershell) し、 [Get-DlpCompliancePolicy コマンドレット](/powershell/module/exchange/get-dlpcompliancepolicy) を実行して DistributionStatus を表示します。
 
  ```powershell
  Get-DlpCompliancePolicy "Testing -Australia PII" -DistributionDetail | Select distributionstatus

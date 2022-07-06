@@ -17,27 +17,27 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: コンプライアンス センターでキーワード 辞書を変更するMicrosoft 365説明します。
-ms.openlocfilehash: acdf8b24aced21ed2f576fd57a3c685ef14debea
-ms.sourcegitcommit: 99067d5eb1fa7b094e7cdb1f7be65acaaa235a54
+description: Microsoft Purview コンプライアンス ポータルでキーワード ディクショナリを変更する方法について説明します。
+ms.openlocfilehash: 8b2f2256be506f0ba01dc059bf0ac54e84c481c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/29/2022
-ms.locfileid: "62271816"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621713"
 ---
 # <a name="modify-a-keyword-dictionary"></a>キーワード 辞書を変更する
 
 キーワード ディクショナリのいずれかでキーワードを変更したり、組み込みのディクショナリのいずれかを変更したりする必要が生じることがあります。 これを行うには、PowerShell またはコンプライアンス センターを使用します。
 
-## <a name="modify-a-keyword-dictionary-in-compliance-center"></a>コンプライアンス センターでキーワード 辞書を変更する
+## <a name="modify-a-keyword-dictionary-in-compliance-center"></a>コンプライアンス センターでキーワード ディクショナリを変更する
 
-キーワード ディクショナリは、機密情報の種類 `Primary elements` `Supporting elements` (SIT) パターンとして、または機密情報のパターンで使用できます。 SIT または既存の SIT の作成時にキーワード 辞書を編集できます。 たとえば、既存のキーワード ディクショナリを編集するには、次の方法を使用します。
+キーワード ディクショナリは、機密情報の種類 (SIT) パターンとして `Primary elements` 、または `Supporting elements` 機密情報の種類で使用できます。 SIT の作成時または既存の SIT 内で、キーワード ディクショナリを編集できます。 たとえば、既存のキーワード ディクショナリを編集するには、
 
 1. 更新するキーワード ディクショナリを含むパターンを開きます。
-2. 更新するキーワード 辞書を見つけて、[編集] を選択します。
-3. 1 行に 1 つのキーワードを使用して編集します。
+2. 更新するキーワード ディクショナリを見つけて、[編集] を選択します。
+3. 1 行に 1 つのキーワードを使用して編集を行います。
 
-   ![スクリーンショットの編集キーワード。](../media/edit-keyword-dictionary.png)
+   ![スクリーンショット編集キーワード。](../media/edit-keyword-dictionary.png)
 
 4. を選択します `Done`。
 
@@ -51,9 +51,9 @@ ms.locfileid: "62271816"
 $dict = Get-DlpKeywordDictionary -Name "Diseases"
 ```
 
-印刷では `$dict` 、さまざまなプロパティが表示されます。 キーワード自体は `$dict.KeywordDictionary` 、バックエンド上のオブジェクトに格納されますが、辞書の変更に使用する文字列表現が含まれます。
+印刷 `$dict` にはさまざまなプロパティが表示されます。 キーワード自体はバックエンド上のオブジェクトに格納されますが、それらの文字列表現が `$dict.KeywordDictionary` 含まれています。この表現を使用してディクショナリを変更します。
 
-辞書を変更する前に、メソッドを使用して用語の文字列を配列に戻す必要 `.split(',')` があります。 次に、メソッドを使用 `.trim()` してキーワード間の不要なスペースをクリーンアップし、使用するキーワードを残します。
+ディクショナリを変更する前に、メソッドを使用して `.split(',')` 用語の文字列を配列に戻す必要があります。 次に、メソッドを使用 `.trim()` してキーワード間の不要なスペースをクリーンアップし、操作するキーワードだけを残します。
 
 ```powershell
 $terms = $dict.KeywordDictionary.split(',').trim()
@@ -63,7 +63,7 @@ $terms = $dict.KeywordDictionary.split(',').trim()
 
 最後の手順で、キーワードを配列に保存しました。[配列から項目を削除する](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10))にはいくつか方法がありますが、簡単なのは、ディクショナリから削除する用語の配列を作成して、削除する用語のリストには含まれないディクショナリの用語だけをそこにコピーする方法です。
 
-コマンドを実行して `$terms` 、現在の用語の一覧を表示します。 コマンドの出力は次のようになります。
+コマンド `$terms` を実行して、現在の用語の一覧を表示します。 コマンドの出力は次のようになります。
 
 ```powershell
 aarskog's syndrome
@@ -98,7 +98,7 @@ $termsToRemove = @('abandonment','ablatio')
 $updatedTerms = $terms | Where-Object {$_ -notin $termsToRemove}
 ```
 
-コマンドを実行して `$updatedTerms` 、更新された用語の一覧を表示します。 コマンドの出力は次のように表示されます (指定した用語は削除されています)。
+コマンド `$updatedTerms` を実行して、更新された用語の一覧を表示します。 コマンドの出力は次のようになります (指定された用語は削除されました)。
 
 ```powershell
 aarskog's syndrome
@@ -133,7 +133,7 @@ Set-Content $updatedTerms -Path "C:\myPath\terms.txt"
 Set-DlpKeywordDictionary -Identity "Diseases" -FileData ([System.IO.File]::ReadAllBytes('C:myPath\terms.txt'))
 ```
 
-辞書はその場で更新されます。 この `Identity` フィールドは辞書の名前を受け取る。 コマンドレットを使用して`Set-``-Name`辞書の名前も変更する場合は、新しい辞書名で上記のパラメーターを追加する必要があります。
+辞書はその場で更新されます。 フィールドは `Identity` ディクショナリの名前を受け取ります。 コマンドレットを使用してディクショナリの名前も変更する場合は、新しいディクショナリ名を`-Name`使用`Set-`して上記のパラメーターを追加するだけで済みます。
 
 ## <a name="see-also"></a>関連項目
 

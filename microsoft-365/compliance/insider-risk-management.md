@@ -15,21 +15,19 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 3a2d678f8e653d65007369c2db5ddd8c72a71c66
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923283"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622835"
 ---
 # <a name="learn-about-insider-risk-management"></a>インサイダー リスク管理の詳細
 
 > [!TIP]
 > *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview Insider Risk Management は、組織内の悪意のある不注意なアクティビティを検出、調査、および操作できるようにすることで、内部リスクを最小限に抑えるのに役立つコンプライアンス ソリューションです。 インサイダー リスク ポリシーを使用すると、ケースに対応したり、必要に応じて Microsoft 電子情報開示 (Premium) にケースをエスカレートしたりするなど、組織内で識別および検出するリスクの種類を定義できます。 組織内のリスク アナリストは、ユーザーが組織のコンプライアンス基準に準拠していることを確認するために、適切なアクションをすばやく実行できます。
+Microsoft Purview インサイダー リスク管理は、組織内の悪意のある不注意なアクティビティを検出、調査、および操作できるようにすることで、内部リスクを最小限に抑えるのに役立つコンプライアンス ソリューションです。 インサイダー リスク ポリシーを使用すると、ケースに対応したり、必要に応じて Microsoft 電子情報開示 (Premium) にケースをエスカレートしたりするなど、組織内で識別および検出するリスクの種類を定義できます。 組織内のリスク アナリストは、ユーザーが組織のコンプライアンス基準に準拠していることを確認するために、適切なアクションをすばやく実行できます。
 
 組織内の危険なアクティビティに対処するための計画プロセスの詳細と概要については、「 [インサイダー リスク管理プログラムの開始](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf)」を参照してください。
 
@@ -149,8 +147,8 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 より深刻な状況では、インサイダー リスク管理ケース情報を組織内の他のレビュー担当者またはサービスと共有することが必要になる場合があります。 インサイダー リスク管理は、他の Microsoft Purview ソリューションと緊密に統合されており、エンドツーエンドのリスク解決に役立ちます。
 
-- **電子情報開示 (Premium)**: 調査のためにケースをエスカレートすると、ケースのデータと管理を Microsoft Purview 電子情報開示 (Premium) に転送できます。 電子情報開示 (プレミアム) は、組織の内部および外部の調査と関連性のあるコンテンツを保管、収集、確認、分析、エクスポートするための、エンドツーエンドのワークフローを提供します。 これにより、法務チームは訴訟ホールド通知ワークフロー全体を管理できます。 電子情報開示 (Premium) ケースの詳細については、「 [Microsoft Purview 電子情報開示 (Premium) の概要](overview-ediscovery-20.md)」を参照してください。
-- **Office 365 Management API 統合 (プレビュー)**: Insider リスク管理では、Office 365 Management API を使用して、アラート情報をセキュリティ情報とイベント管理 (SIEM) サービスにエクスポートできます。 プラットフォーム内のアラート情報にアクセスして、組織のリスク プロセスに最適な方法を使用すると、リスク アクティビティに対してより柔軟に対処できます。 Office 365 Management API を使用したアラート情報のエクスポートの詳細については、「アラートの [エクスポート](insider-risk-management-settings.md#export-alerts)」を参照してください。
+- **電子情報開示 (Premium)**: 調査のためにケースをエスカレートすると、ケースのデータと管理をMicrosoft Purview eDiscovery (Premium) に転送できます。 電子情報開示 (プレミアム) は、組織の内部および外部の調査と関連性のあるコンテンツを保管、収集、確認、分析、エクスポートするための、エンドツーエンドのワークフローを提供します。 これにより、法務チームは訴訟ホールド通知ワークフロー全体を管理できます。 電子情報開示 (Premium) ケースの詳細については、「[Microsoft Purview eDiscovery (Premium) の概要](overview-ediscovery-20.md)」を参照してください。
+- **Office 365管理 API 統合 (プレビュー)**: Insider リスク管理では、Office 365 Management API を使用して、アラート情報をセキュリティ情報およびイベント管理 (SIEM) サービスにエクスポートできます。 プラットフォーム内のアラート情報にアクセスして、組織のリスク プロセスに最適な方法を使用すると、リスク アクティビティに対してより柔軟に対処できます。 Office 365管理 API を使用したアラート情報のエクスポートの詳細については、「[アラートのエクスポート](insider-risk-management-settings.md#export-alerts)」を参照してください。
 
 > [!NOTE]
 > ServiceNow コネクタのプレビュー期間中のフィードバックとサポートに感謝します。 ServiceNow コネクタのプレビューを終了し、2020 年 11 月 30 日にインサイダー リスク管理のサポートを中止することにしました。 Microsoft では、お客様にインサイダー リスク管理の ServiceNow 統合を提供するための代替方法を積極的に評価しています。
@@ -173,7 +171,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 ## <a name="intentional-or-unintentional-security-policy-violations-preview"></a>意図的または意図しないセキュリティ ポリシー違反 (プレビュー)
 
-ユーザーは、通常、最新の職場でデバイスを管理するときに、大きな制御を行います。 このコントロールには、職務のパフォーマンスに必要なアプリケーションをインストールまたはアンインストールするためのアクセス許可、またはデバイス セキュリティ機能を一時的に無効にする機能が含まれる場合があります。 このアクティビティが不注意であるか、偶発的であるか、悪意があるかに関係なく、この行為は組織にリスクをもたらす可能性があり、最小限に抑えるために識別して行動することが重要です。 これらの危険なセキュリティ アクティビティを特定するために、次のインサイダー リスク管理セキュリティ ポリシー違反テンプレートは、セキュリティ リスク インジケーターをスコア付けし、Microsoft Defender for Endpoint アラートを使用して、セキュリティ関連のアクティビティに関する分析情報を提供します。
+ユーザーは、通常、最新の職場でデバイスを管理するときに、大きな制御を行います。 このコントロールには、職務のパフォーマンスに必要なアプリケーションをインストールまたはアンインストールするためのアクセス許可、またはデバイス セキュリティ機能を一時的に無効にする機能が含まれる場合があります。 このアクティビティが不注意であるか、偶発的であるか、悪意があるかに関係なく、この行為は組織にリスクをもたらす可能性があり、最小限に抑えるために識別して行動することが重要です。 これらの危険なセキュリティ アクティビティを特定するために、次のインサイダー リスク管理セキュリティ ポリシー違反テンプレートは、セキュリティ リスク インジケーターをスコア付けし、Microsoft Defender for Endpointアラートを使用してセキュリティ関連のアクティビティの分析情報を提供します。
 
 - [一般的なセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#general-security-policy-violations-preview)
 - [離職するユーザーによるセキュリティ ポリシー違反 (プレビュー)](insider-risk-management-policies.md#security-policy-violations-by-departing-users-preview)

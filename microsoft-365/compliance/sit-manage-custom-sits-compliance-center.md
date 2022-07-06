@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: コンプライアンス センターでカスタムの機密情報の種類を変更および削除する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0efbb93096fc3c0b61a57319aa2d23a079f684d1
-ms.sourcegitcommit: bb493f12701f6d6ee7d5e64b541adb87470bc7bc
+ms.openlocfilehash: 5e0b1b91fd19a5e0705ad95affe888a87847caf8
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "62902626"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621967"
 ---
 # <a name="manage-custom-sensitive-information-types-in-the-compliance-center"></a>コンプライアンス センターでカスタムの機密情報の種類を管理する
 

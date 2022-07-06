@@ -15,22 +15,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ec2677ff-c4d7-4363-a9e7-22c80e015688
-description: コンテンツ検索電子情報開示ツールを使用して、クエリを作成してサード パーティのデータ ソースからMicrosoft 365内のメールボックスにインポートされたアイテムを検索します。
+description: コンテンツ検索電子情報開示ツールを使用して、クエリを作成してサード パーティのデータ ソースから Microsoft 365 のメールボックスにインポートされたアイテムを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 73967c8897ee0fd5143b8e15dfe8874fc0c85755
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6d4475987cddb04e0ad49394eda14d638774c22e
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095402"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66624843"
 ---
 # <a name="use-content-search-to-search-third-party-data-imported-by-a-custom-partner-connector"></a>コンテンツ検索を使用して、カスタム パートナー コネクタによってインポートされたサード パーティのデータを検索する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview コンプライアンス ポータルの[コンテンツ検索電子情報開示ツール](content-search.md)を使用して、サード パーティのデータ ソースからMicrosoft 365のメールボックスにインポートされたアイテムを検索できます。 インポートされたすべてのサード パーティのデータ項目を検索するクエリを作成することも、特定のサード パーティのデータ項目を検索するクエリを作成することもできます。 また、クエリ ベースのアイテム保持ポリシーまたはクエリ ベースの電子情報開示ホールドを作成して、サード パーティのデータを保持することもできます。
+Microsoft Purview コンプライアンス ポータルの[コンテンツ検索電子情報開示ツール](content-search.md)を使用すると、サード パーティのデータ ソースから Microsoft 365 のメールボックスにインポートされたアイテムを検索できます。 インポートされたすべてのサード パーティのデータ項目を検索するクエリを作成することも、特定のサード パーティのデータ項目を検索するクエリを作成することもできます。 また、クエリ ベースのアイテム保持ポリシーまたはクエリ ベースの電子情報開示ホールドを作成して、サード パーティのデータを保持することもできます。
   
-パートナーと協力してサード パーティのデータをインポートする方法と、Microsoft 365にインポートできるサード パーティのデータ型の一覧については、「[パートナーと連携してOffice 365でサード パーティのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)」を参照してください。
+パートナーと協力してサード パーティのデータをインポートする方法と、Microsoft 365 にインポートできるサード パーティのデータ型の一覧の詳細については、「[パートナーと連携して、Office 365でサード パーティのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)」を参照してください。
 
 > [!IMPORTANT]
 > この記事のガイダンスは、カスタム パートナー コネクタによってインポートされたサード パーティのデータにのみ適用されます。 この記事は、Microsoft コンプライアンス センターのサード パーティ製データ コネクタを使用してインポートされた [サード パーティのデータ](archiving-third-party-data.md#third-party-data-connectors) には適用されません。
@@ -86,7 +84,7 @@ itemclass:ipm.externaldata.Facebook* AND subject:contoso
 |ブルームバーグ  <br/> | `ipm.externaldata.Bloomberg*` <br/> |
 |Bloomberg メッセージ  <br/> | `ipm.externaldata.conversation.Bloomberg Message*` <br/> |
 |Bloomberg Messaging  <br/> | `ipm.externaldata.BloombergMessaging*` <br/> |
-|検索ボックス  <br/> | `ipm.externaldata.Box*` <br/> |
+|Box  <br/> | `ipm.externaldata.Box*` <br/> |
 |Cisco IM &amp; Presence Server  <br/> | `ipm.externaldata.Jabber.IM` <br/> |
 |Cisco Jabber  <br/> | `ipm.externaldata.Jabber*` <br/> |
 |CipherCloud for Salesforce Chatter  <br/> | `ipm.externaldata.Chatter.Post` <br/>  `ipm.externaldata.Chatter.Comment` <br/> |

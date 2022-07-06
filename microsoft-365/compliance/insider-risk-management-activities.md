@@ -1,6 +1,6 @@
 ---
 title: インサイダー リスク管理アクティビティを調査する
-description: Microsoft Purviewでのインサイダー リスク管理アクティビティの調査について説明します
+description: Microsoft Purview でのインサイダー リスク管理アクティビティの調査について説明します
 keywords: Microsoft 365、Microsoft Purview、インサイダー リスク、リスク管理、コンプライアンス
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: a808e2d52692c44364e542cb8cd9e7a2b0c57cac
-ms.sourcegitcommit: d9842a9fcaead280bb704e92d44c1f4c201f9eb4
+ms.openlocfilehash: 53b56c8e96beb3e68c56fd968ac87e58994bc2ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65759870"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622967"
 ---
 # <a name="investigate-insider-risk-management-activities"></a>インサイダー リスク管理アクティビティを調査する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 リスクの高いユーザー アクティビティを調査することは、組織のインサイダー リスクを最小限に抑えるための重要な最初のステップです。 これらのリスクは、インサイダー リスク管理ポリシーからアラートを生成するアクティビティや、ポリシーによって検出されたが、ユーザーのインサイダー リスク管理アラートをすぐに作成しないアクティビティからのリスクである可能性があります。 これらの種類のアクティビティは、 **ユーザー アクティビティ レポート (プレビュー)** または **アラート ダッシュボード** を使用して調査できます。
 
@@ -163,7 +161,7 @@ ms.locfileid: "65759870"
 1. **時間フィルター**: 既定では、過去 3 か月間のアクティビティがユーザー アクティビティ チャートに表示されます。 バブル チャートの *6 か月*、 *3 か月*、または *1 か月* のタブを選択すると、グラフ ビューを簡単にフィルター処理できます。
 2. **リスク アラート アクティビティと詳細**: リスク アクティビティは、ユーザー アクティビティ チャートに色付きバブルとして視覚的に表示されます。 バブルは、さまざまなカテゴリのリスクと. バブルを選択すると、各リスク アクティビティの詳細が表示されます。 詳細は次のとおりです。
     - リスクアクティビティの **日付**。
-    - **リスク アクティビティのカテゴリ**。 たとえば、*組織外に送信された添付ファイルを含む電子メール* や *、SharePoint Online からダウンロードしたファイル* などです。
+    - **リスク アクティビティのカテゴリ**。 たとえば、 *組織外に送信された添付ファイルを含む電子メール* や *、SharePoint Online からダウンロードしたファイル* などです。
     - アラートの **リスクスコア**。 このスコアは、アラートリスクの重大度レベルを表すスコアの数値です。
     - アラートに関連付けられているイベント数。 リスク アクティビティに関連付けられている各ファイルまたは電子メールへのリンクも利用できます。
 3. **フィルターと並べ替え (プレビュー)**:

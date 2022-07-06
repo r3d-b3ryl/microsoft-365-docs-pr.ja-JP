@@ -14,21 +14,19 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Microsoft Purview コンプライアンス ポータルでコネクタ&使用して、&アーカイブ データを Facebook Business ページからMicrosoft 365にインポートするように設定する方法について説明します。
-ms.openlocfilehash: 2d732352d8b6eebaee304a030736f35bcf32b84c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: Microsoft Purview コンプライアンス ポータルのコネクタを使用&設定して、Facebook Business ページから Microsoft 365 に&アーカイブ データをインポートする方法について説明します。
+ms.openlocfilehash: d8b951e7f0b9733dacca7cfd16eed1042d84c460
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099325"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66623355"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook データをアーカイブするコネクタを設定する (プレビュー)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+Microsoft Purview コンプライアンス ポータルのコネクタを使用して、Facebook Business ページから Microsoft 365 にデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、Facebook Business ページ (スケジュールに基づいて) に接続され、Facebook アイテムのコンテンツが電子メール メッセージ形式に変換され、Microsoft 365 のメールボックスにそれらのアイテムがインポートされます。
 
-Microsoft Purview コンプライアンス ポータルのコネクタを使用して、Facebook Business ページからMicrosoft 365にデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、Facebook Business ページ (スケジュールに基づいて) に接続され、Facebook アイテムのコンテンツが電子メール メッセージ形式に変換され、そのアイテムがMicrosoft 365のメールボックスにインポートされます。
-
-Facebook データがインポートされたら、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、コミュニケーション コンプライアンス、Microsoft 365アイテム保持ポリシーなどの Microsoft Purview 機能を Facebook データに適用できます。 たとえば、メールボックスを訴訟ホールドに置いたり、アイテム保持ポリシーに割り当てたりすると、Facebook データは保持されます。 コンテンツ検索を使用してサード パーティのデータを検索したり、Facebook データが保存されているメールボックスを Microsoft Purview 電子情報開示 (プレミアム) ケースのカストディアンに関連付けることができます。 コネクタを使用してMicrosoft 365で Facebook データをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+Facebook データがインポートされたら、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、コミュニケーション コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft Purview 機能を Facebook データに適用できます。 たとえば、メールボックスを訴訟ホールドに置いたり、アイテム保持ポリシーに割り当てたりすると、Facebook データは保持されます。 コンテンツ検索を使用してサード パーティのデータを検索したり、Facebook データが保存されているメールボックスをMicrosoft Purview eDiscovery (Premium) ケースのカストディアンに関連付けることができます。 コネクタを使用して Microsoft 365 で Facebook データをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Facebook Business ページのコネクタを設定するための前提条件
 
@@ -43,37 +41,37 @@ Facebook データがインポートされたら、訴訟ホールド、コン�
     - [従量課金制 Azure サブスクリプションにサインアップする](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go/)
 
     > [!NOTE]
-    > [Microsoft 365 サブスクリプション](use-your-free-azure-ad-subscription-in-office-365.md)に含まれる無料のAzure Active Directory サブスクリプションは、コンプライアンス ポータルのコネクタをサポートしていません。
+    > Microsoft 365 [サブスクリプションに含まれる無料の Azure Active Directory](use-your-free-azure-ad-subscription-in-office-365.md) サブスクリプションは、コンプライアンス ポータルのコネクタをサポートしていません。
 
-- Facebook Business ページのコネクタでは、1 日に合計 200,000 個のアイテムをインポートできます。 1 日に 200,000 件を超える Facebook Business アイテムがある場合、これらのアイテムはMicrosoft 365にインポートされません。
+- Facebook Business ページのコネクタでは、1 日に合計 200,000 個のアイテムをインポートできます。 1 日に 200,000 件を超える Facebook Business アイテムがある場合、これらのアイテムは Microsoft 365 にインポートされません。
 
-- コンプライアンス ポータルでカスタム コネクタを設定するユーザー (手順 5) には、Data Connector 管理者ロールが割り当てられている必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者は、カスタム役割グループを作成し、Data Connector 管理者ロールを割り当て、適切なユーザーをメンバーとして追加することもできます。 手順については、 [Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)のアクセス許可の「カスタム ロール グループの作成」セクションを参照してください。
+- コンプライアンス ポータルでカスタム コネクタを設定するユーザー (手順 5) には、Data Connector 管理 ロールを割り当てる必要があります。 このロールは、コンプライアンス ポータルの **[データ コネクタ** ] ページでコネクタを追加するために必要です。 このロールは、既定で複数の役割グループに追加されます。 これらの役割グループの一覧については、「セキュリティ & コンプライアンス センターのアクセス許可」の「 [セキュリティとコンプライアンス センターの](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)ロール」セクションを参照してください。 または、組織内の管理者がカスタムロール グループを作成し、Data Connector 管理ロールを割り当ててから、適切なユーザーをメンバーとして追加することもできます。 手順については、[Microsoft Purview コンプライアンス ポータルのアクセス許可](microsoft-365-compliance-center-permissions.md#create-a-custom-role-group)の「カスタム ロール グループの作成」セクションを参照してください。
 
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directoryでアプリを作成する
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directory でアプリを作成する
 
-最初の手順は、Azure Active Directory (AAD) に新しいアプリを登録することです。 このアプリは、Facebook コネクタの手順 4 と手順 5 で実装した Web アプリ リソースに対応します。
+最初の手順では、Azure Active Directory (AAD) に新しいアプリを登録します。 このアプリは、Facebook コネクタの手順 4 と手順 5 で実装した Web アプリ リソースに対応します。
 
-詳細な手順については、「[Azure Active Directoryでアプリを作成する](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory)」を参照してください。
+詳細な手順については、「 [Azure Active Directory でアプリを作成する」を](deploy-facebook-connector.md#step-1-create-an-app-in-azure-active-directory)参照してください。
 
 この手順が完了したら (前の手順を使用して)、次の情報をテキスト ファイルに保存します。 これらの値は、デプロイ プロセスの後の手順で使用されます。
 
 - AAD アプリケーション ID
 
-- アプリケーション シークレットをAADする
+- AAD アプリケーション シークレット
 
 - テナント ID
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHubから Azure アカウントにコネクタ Web サービスをデプロイする
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHub から Azure アカウントにコネクタ Web サービスをデプロイする
 
-次の手順では、Facebook API を使用して Facebook アカウントに接続し、データを抽出してMicrosoft 365にインポートする Facebook Business ページ コネクタ アプリのソース コードをデプロイします。 組織にデプロイする Facebook コネクタは、Facebook Business ページのアイテムを、この手順で作成したAzure Storageの場所にアップロードします。 コンプライアンス ポータル (手順 5) で Facebook ビジネス ページ コネクタを作成すると、インポート サービスは、Azure Storageの場所からMicrosoft 365組織内のメールボックスに Facebook ビジネス ページ のデータをコピーします。 前に「[前提条件」](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages)セクションで説明したように、Azure Storage アカウントを作成するには、有効な Azure サブスクリプションが必要です。
+次の手順では、Facebook API を使用して Facebook アカウントに接続し、Microsoft 365 にインポートできるようにデータを抽出する Facebook Business ページ コネクタ アプリのソース コードをデプロイします。 組織にデプロイする Facebook コネクタは、Facebook Business ページから、この手順で作成された Azure Storage の場所にアイテムをアップロードします。 コンプライアンス ポータルで Facebook ビジネス ページ コネクタを作成すると (手順 5)、インポート サービスによって、Azure Storage の場所から Microsoft 365 組織内のメールボックスに Facebook ビジネス ページデータがコピーされます。 「 [前提条件」](#prerequisites-for-setting-up-a-connector-for-facebook-business-pages) セクションで説明したように、Azure Storage アカウントを作成するには、有効な Azure サブスクリプションが必要です。
 
-詳細な手順については、「[GitHubから Azure アカウントにコネクタ Web サービスをデプロイする」を参照してください](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account)。
+詳細な手順については、「 [GitHub から Azure アカウントにコネクタ Web サービスをデプロイする」を参照してください](deploy-facebook-connector.md#step-2-deploy-the-connector-web-service-from-github-to-your-azure-account)。
 
 この手順を完了するための詳細な手順では、次の情報を指定します。
 
 - APISecretKey: この手順の完了時に、このシークレットを作成します。 手順 5. で使用します。
 
-- TenantId: 手順 1 のAzure Active Directoryで Facebook コネクタ アプリを作成した後にコピーしたMicrosoft 365組織のテナント ID。
+- TenantId: 手順 1 で Azure Active Directory で Facebook コネクタ アプリを作成した後にコピーした Microsoft 365 組織のテナント ID。
 
 この手順を完了したら、必ず Azure アプリ サービスの URL (例: https://fbconnector.azurewebsites.net). 手順 3、手順 4、および手順 5) を完了するには、この URL を使用する必要があります。
 
@@ -105,13 +103,13 @@ Facebook データがインポートされたら、訴訟ホールド、コン�
 
 - Facebook Webhook によってトークンが確認されます (手順 3 で取得)
 
-- Azure Active Directory アプリケーション ID (手順 1 で取得したAAD アプリケーション ID)
+- Azure Active Directory アプリケーション ID (手順 1 で取得した AAD アプリケーション ID)
 
-- Azure Active Directory アプリケーション シークレット (手順 1 で取得したAAD アプリケーション シークレット)
+- Azure Active Directory アプリケーション シークレット (手順 1 で取得した AAD アプリケーション シークレット)
 
 ## <a name="step-5-set-up-a-facebook-business-pages-connector-in-the-compliance-portal"></a>手順 5: コンプライアンス ポータルで Facebook Business ページ コネクタを設定する
 
-最後の手順は、コンプライアンス ポータルでコネクタを設定し、Facebook Business ページからMicrosoft 365の指定されたメールボックスにデータをインポートします。 この手順を完了すると、Microsoft 365 インポート サービスによって、Facebook Business ページからMicrosoft 365へのデータのインポートが開始されます。
+最後の手順では、コンプライアンス ポータルでコネクタを設定し、Facebook Business ページから Microsoft 365 の指定されたメールボックスにデータをインポートします。 この手順を完了すると、Microsoft 365 Import サービスによって、Facebook Business ページから Microsoft 365 へのデータのインポートが開始されます。
 
 詳細な手順については、「 [手順 5: コンプライアンス ポータルで Facebook コネクタを設定する」を](deploy-facebook-connector.md#step-5-set-up-a-facebook-connector-in-the-compliance-portal)参照してください。
 

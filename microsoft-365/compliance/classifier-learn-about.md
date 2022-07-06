@@ -19,16 +19,14 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用のさまざまな種類のコンテンツを認識できます。
-ms.openlocfilehash: 03c0c0991188982fbfc4fb9ec908f6e5f4ab3bba
-ms.sourcegitcommit: b0b1be67de8f40b199bb9b51eb3568e59377e93a
+ms.openlocfilehash: 0c47d019b3508bdd8d8fba1f1b4303c7f4c9579d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66159578"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66621207"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンテンツを適切に保護および処理できるようにコンテンツを分類およびラベル付けすることは、情報保護に対するトレーニングの出発点です。 Microsoft 365 には、コンテンツを分類する 3 つの方法があります。
 
@@ -52,12 +50,12 @@ ms.locfileid: "66159578"
 この分類方法は、手動または自動のパターンマッチング方法で簡単に識別できないコンテンツに適しています。 この分類方法は、分類子を使用して、アイテム内の要素 (パターン マッチング) ではなく、アイテムの内容に基づいてアイテムを識別する方法について詳しく説明します。 分類子は、分類したいコンテンツの数百の例を見て、コンテンツのタイプを識別する方法を学びます。
 
 > [!NOTE]
-> プレビュー - フィルター パネルで [トレーニング可能な分類子] を展開することで、コンテンツ エクスプローラーで **トレーニング可能な分類子** を表示できます。 トレーニング可能な分類子は、ラベル付けを必要とせずに、SharePoint、Teams、OneDriveで検出されたインシデントの数を自動的に表示します。
+> プレビュー - フィルター パネルで [トレーニング可能な分類子] を展開することで、コンテンツ エクスプローラーで **トレーニング可能な分類子** を表示できます。 トレーニング可能な分類子は、ラベル付けを必要とせずに、SharePoint、Teams、OneDrive で検出されたインシデントの数を自動的に表示します。
 > この機能を使用しない場合は、Microsoft サポートを使用して要求を提出する必要があります。 これにより、コンテンツ エクスプローラー内のラベル付けポリシーで使用されていない機密データの表示が無効になります。 データのスキャンも無効にすることができます。 スキャンがオフになっている場合、それらの分類子を使用した秘密度ラベル付けと DLP ポリシーは機能しません
 
 ### <a name="where-you-can-use-classifiers"></a>分類子を使用できる場所
 
-分類子は、秘密度ラベルを使用した[自動ラベル付けをOffice](apply-sensitivity-label-automatically.md)するための条件として使用でき、条件と[通信コンプライアンス](communication-compliance.md)[に基づいてアイテム保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)できます。
+分類子は、秘密度ラベルを使用した [Office 自動ラベル付けの](apply-sensitivity-label-automatically.md)条件として使用したり、条件と[通信コンプライアンス](communication-compliance.md)[に基づいてアイテム保持ラベル ポリシーを自動適用](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels)したりできます。
 
 機密ラベルは条件として分類子を使用できます。「 [コンテンツに秘密度ラベルを自動的に適用する」を](apply-sensitivity-label-automatically.md)参照してください。
 
@@ -71,9 +69,9 @@ ms.locfileid: "66159578"
 
 ### <a name="pre-trained-classifiers"></a>事前トレーニング済みの分類子
 
-Microsoft 365には、事前にトレーニングされた複数の分類子が付属しています。
+Microsoft 365 には、事前トレーニング済みの分類子が複数用意されています。
 
-- **成人向け、racy、および gory**: これらの種類の画像を検出します。 画像のサイズは 50 KB から 4 メガバイト (MB) で、高さ x 幅の寸法は 50 x 50 ピクセルを超える必要があります。 スキャンと検出は、Exchange Online電子メール メッセージ、およびMicrosoft Teams チャネルとチャットでサポートされています。 .jpeg、.png、.gif、.bmp ファイル内のコンテンツを検出します。
+- **成人向け、racy、および gory**: これらの種類の画像を検出します。 画像のサイズは 50 KB から 4 メガバイト (MB) で、高さ x 幅の寸法は 50 x 50 ピクセルを超える必要があります。 スキャンと検出は、Exchange Online電子メール メッセージ、および Microsoft Teams チャネルとチャットでサポートされています。 .jpeg、.png、.gif、.bmp ファイル内のコンテンツを検出します。
 
 - **契約**: 秘密保持契約、作業明細書、ローンおよびリース契約、雇用契約、非競争契約など、法的契約に関連するコンテンツを検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、.rtf、.txt、.one、.msg、.eml ファイルのコンテンツを検出します。
 
@@ -101,7 +99,7 @@ Microsoft 365には、事前にトレーニングされた複数の分類子が�
 
 - **履歴書**: 申請者の個人、教育、職業資格、職務経験、その他の個人識別情報のテキスト アカウントである docx、.pdf、.rtf、.txt項目を検出します。
 
-- **ソース コード**: ActionScript、C、C#、C++、Clojure、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、Vim スクリプトの一連の命令とステートメントが記述されたコンピューター プログラミング GitHub言語を含む項目を検出します。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp、 .cxx、.hh、.c++、.clj、.edn、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.pod、.php、.phar、.php4、.pyc、 .R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
+- **ソース コード**: GitHub で記述された一連の命令とステートメントを含む項目を検出します。ActionScript、C、C#、C++、クロジュレ、CoffeeScript、Go、Haskell、Java、JavaScript、Lua、MATLAB、Objective-C、Perl、PHP、Python、R、Ruby、Scala、Shell、Swift、TeX、TeX、Vim スクリプト。 .msg、.as、.h、.c、.cs、.cc、.cpp、.hpp、 .cxx、.hh、.c++、.clj、.edn、.cljc、.cljs、.coffee、.litcoffee、.go、.hs、.lhs、.java、.jar、.js、.mjs、.lua、.m、.mm、.pl、.pm、.t、.xs、.pod、.php、.phar、.php4、.pyc、 .R、.r、.rda、.RData、.rds、.rb、.scala、.sc、.sh、.swift ファイル。
 
   > [!NOTE]
   > ソース コードは、テキストの大部分がソース コードである場合を検出するようにトレーニングされます。 プレーンテキストが混在するソース コード テキストは検出されません。
@@ -142,7 +140,7 @@ Microsoft 365には、事前にトレーニングされた複数の分類子が�
 
 カスタムトレーニング可能な分類子の作成を開始するには、間違いなくカテゴリに含まれる例を入力します。 これらの例を処理したら、一致する例と一致しない例の両方を組み合わせてテストします。 次に、分類子は、特定のアイテムが作成中のカテゴリに該当するかどうかを予測します。 その結果を確認し、真陽性、真陰性、偽陽性、および偽陰性を並べ替えて、予測の精度を高めます。
 
-分類子を発行すると、SharePoint Online、Exchange、OneDriveなどの場所のアイテムを並べ替え、コンテンツを分類します。 分類子を発行した後は、最初のトレーニング プロセスに似たフィードバック プロセスを使用して、それをトレーニングし続けることができます。
+分類子を発行すると、SharePoint Online、Exchange、OneDrive などの場所のアイテムが並べ替え、コンテンツが分類されます。 分類子を発行した後は、最初のトレーニング プロセスに似たフィードバック プロセスを使用して、それをトレーニングし続けることができます。
 
 たとえば、次のトレーニング可能な分類子を作成できます。
 

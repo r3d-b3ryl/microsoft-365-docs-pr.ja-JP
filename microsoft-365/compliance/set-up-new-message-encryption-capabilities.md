@@ -21,16 +21,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 48a5ca3bad7c0fb0d7120cb4e35bc5f24902a46e
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 828588491c3efbc696994f6073ca4ce849a64be5
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66043342"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66622131"
 ---
 # <a name="set-up-message-encryption"></a>Message Encryption を設定する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview Message Encryption により、保護されたメールをどのデバイスででも、誰とでも共有できるようになります。 Outlook.com や Gmail などのメール サービスを使用して、他の Microsoft 365 組織ともサードパーティとも、保護されたメッセージを交換できます。
 
