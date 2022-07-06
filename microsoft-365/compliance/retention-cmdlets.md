@@ -15,18 +15,16 @@ ms.collection:
 - SPO_Content
 - m365initiative-compliance
 description: 大規模な構成、自動化、または高度な構成シナリオに必要になる可能性があるリテンション期間用の PowerShell コマンドレットを特定します。
-ms.openlocfilehash: 5e31fb7b92dbc1dc83af8f7047041a7d0b4b23b2
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612153"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66625987"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 次のセクションを使用して、大規模な構成、自動化されたスクリプト、または高度な構成シナリオに必要なアイテム保持ポリシーと保持ラベルに使用できる主な PowerShell コマンドレットを特定します。 コマンドレットの完全な一覧については、PowerShell ドキュメントの [ポリシーとコンプライアンスの保持リスト](/powershell/module/exchange#policy-and-compliance-retention) を参照してください。
 

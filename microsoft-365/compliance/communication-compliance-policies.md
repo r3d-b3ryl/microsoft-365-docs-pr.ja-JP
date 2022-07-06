@@ -19,16 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 912254e5827815f796560bc6979856f4545b0ae9
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: c371de57ab6fdd4b7869b676680bb8f922798438
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556814"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626471"
 ---
 # <a name="communication-compliance-policies"></a>コミュニケーション コンプライアンス ポリシー
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ## <a name="policies"></a>ポリシー
 
@@ -249,7 +247,7 @@ OCR が有効になっているポリシーの保留中のアラートを確認�
 
 > [!IMPORTANT]
 >
-> ユーザー辞書ファイルをインポートする場合は、各単語または語句をキャリッジ リターンと個別の行で区切る必要があります。 次に例を示します。
+> ユーザー辞書ファイルをインポートする場合は、各単語または語句をキャリッジ リターンと個別の行で区切る必要があります。 例:
 >
 > *銀行* <br>
 > *機密* <br>

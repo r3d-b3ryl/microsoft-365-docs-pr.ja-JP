@@ -23,16 +23,14 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: カスタム メッセージング レコード管理 (MRM) のアーカイブと削除ポリシーを作成して、アイテムをユーザーのアーカイブ メールボックスに自動的に移動する方法。
-ms.openlocfilehash: 9ea642dc9d6aa4e66938703b45a8af0bab53476f
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 7002f28d5926ac02cf01e7ab26b02cddfbd58404
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013004"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626053"
 ---
 # <a name="customize-an-archive-and-deletion-policy-for-mailboxes-in-your-organization"></a>組織内のメールボックスのアーカイブと削除ポリシーをカスタマイズする
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview 管理者は、アイテムをユーザーのアーカイブ メールボックスに自動的に移動し、メールボックスからアイテムを自動的に削除する [アーカイブ](archive-mailboxes.md) と削除ポリシーを作成できます。
 
@@ -68,7 +66,7 @@ Microsoft Purview 管理者は、アイテムをユーザーのアーカイブ �
 
 最初の手順は、組織内の各ユーザーにアーカイブ メールボックスがあることを確認することです。 ユーザーのアーカイブ メールボックスを有効にして、アイテム保持期間の有効期限が切れた後にアイテムを "アーカイブに移動" 保持アクションを含むアイテム保持タグを移動できるようにする必要があります。
 
-アーカイブ メールボックスを有効にする手順については、 [Microsoft Purview コンプライアンス ポータルでアーカイブ メールボックスを有効にする](enable-archive-mailboxes.md)方法に関するページを参照してください。
+アーカイブ メールボックスを有効にする手順については、「[Microsoft Purview コンプライアンス ポータルでアーカイブ メールボックスを有効にする」を](enable-archive-mailboxes.md)参照してください。
   
 > [!NOTE]
 > アーカイブ メールボックスは、プロセスを完了する前のある時点で有効になっている限り、このプロセス中にいつでも有効にすることができます。 アーカイブ メールボックスが有効になっていない場合、アーカイブまたは削除ポリシーが割り当てられているアイテムに対してアクションは実行されません。
@@ -83,7 +81,7 @@ Microsoft Purview 管理者は、アイテムをユーザーのアーカイブ �
 
 - Alpine House Deleted Items 5 Years Delete and Allow Recovery (Deleted Items フォルダーのカスタム タグ)
 
-新しい保持タグを作成するには、Exchange Online組織で<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター (EAC)</a> を使用します。 EAC のクラシック バージョンを必ず使用してください。
+新しい保持タグを作成するには、Exchange Online組織の <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター (EAC)</a> を使用します。 EAC のクラシック バージョンを必ず使用してください。
   
 1. 資格情報を [https://admin.protection.outlook.com/ecp/](https://admin.protection.outlook.com/ecp/) 使用してサインインします。
   
@@ -99,7 +97,7 @@ Microsoft Purview 管理者は、アイテムをユーザーのアーカイブ �
 
 2. [ **メールボックス全体に自動的に適用される新しいタグ (既定)]** ページで、次のフィールドに入力します。 
 
-    ![設定して、新しいアーカイブの既定のポリシー タグを作成します。](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
+    ![新しいアーカイブの既定のポリシー タグを作成するための設定。](../media/41c0a43c-9c72-44e0-8947-da0831896432.png)
   
    1. **名前** 新しい保持タグの名前を入力します。 
 
@@ -121,7 +119,7 @@ Microsoft Purview 管理者は、アイテムをユーザーのアーカイブ �
 
 2. [ **メールボックス全体に自動的に適用される新しいタグ (既定)]** ページで、次のフィールドに入力します。 
 
-    ![新しい削除の既定のポリシー タグを作成する設定。](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
+    ![新しい削除の既定のポリシー タグを作成するための設定。](../media/f1f0ff62-eec9-4824-8e7c-d93dcfb09a79.png)
   
    1. **名前** 新しい保持タグの名前を入力します。 
 
@@ -143,7 +141,7 @@ Microsoft Purview 管理者は、アイテムをユーザーのアーカイブ �
 
 2. 既定の **フォルダー ページに自動的に適用される新しいタグで** 、次のフィールドに入力します。
 
-    ![削除済みアイテム フォルダーの新しいアイテム保持ポリシー タグを作成する設定。](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
+    ![[削除済みアイテム] フォルダーの新しいアイテム保持ポリシー タグを作成するための設定。](../media/6f3104bd-5edb-48ac-884d-5fe13d81dd1d.png)
   
    1. **名前** 新しい保持タグの名前を入力します。 
 
@@ -288,6 +286,6 @@ Exchange Online PowerShell に接続し、組織内のすべてのメールボ�
     |削除しない  <br/> |このタグにより、アイテムがアイテム保持ポリシーによって削除されるのを防ぎます。  <br/> |組み込み  <br/> |個人用。このタグは、ユーザーが適用できます。  <br/> |
     |個人 - 1 年でアーカイブへ移動  <br/> |1 年後にアイテムをアーカイブ メールボックスに移動します。  <br/> |組み込み  <br/> |個人用。このタグは、ユーザーが適用できます。  <br/> |
 
-    > <sup>\*</sup>ユーザーは、OutlookおよびOutlook on the web (以前は Outlook Web App と呼ばられていました) で削除済みアイテムの回復ツールを使用して、削除されたアイテムの保持期間内に削除されたアイテムを回復できます。既定では、Exchange Onlineでは 14 日間です。 管理者は、Exchange Online PowerShell を使用して、削除されたアイテムの保持期間を最大 30 日間に増やすことができます。 詳細については、「[WindowsのOutlookの削除済みアイテムを回復](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)する」および「Exchange Online[内のメールボックスの削除済みアイテムの保持期間を変更する」を](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)参照してください。
+    > <sup>\*</sup>ユーザーは、Outlook と Outlook on the web の [削除済みアイテムの回復] ツール (以前は Outlook Web App と呼ばられていました) を使用して、削除されたアイテムの保持期間内に削除されたアイテムを回復できます。既定では、Exchange Onlineでは 14 日間です。 管理者は、Exchange Online PowerShell を使用して、削除されたアイテムの保持期間を最大 30 日間に増やすことができます。 詳細については、「[Outlook for Windows で削除済みアイテムを回復する](https://support.office.com/article/49e81f3c-c8f4-4426-a0b9-c0fd751d48ce)」および「[Exchange Onlineのメールボックスの削除済みアイテムの保持期間を変更](/exchange/recipients-in-exchange-online/manage-user-mailboxes/change-deleted-item-retention)する」を参照してください。
   
 - **回復可能なアイテムを 14 日間アーカイブに移動保持タグを** 使用すると、ユーザーのプライマリ メールボックスの回復可能なアイテム フォルダー内のストレージ領域を解放できます。 これは、ユーザーのメールボックスが保留になっている場合に便利です。つまり、ユーザーのメールボックスから完全に削除されることはありません。 アイテムをアーカイブ メールボックスに移動せずに、プライマリ メールボックス内の回復可能なアイテム フォルダーのストレージ クォータに達する可能性があります。 この問題とその回避方法の詳細については、「 [メールボックスの回復可能なアイテムのクォータを引き上げる」を参照してください](./increase-the-recoverable-quota-for-mailboxes-on-hold.md)。

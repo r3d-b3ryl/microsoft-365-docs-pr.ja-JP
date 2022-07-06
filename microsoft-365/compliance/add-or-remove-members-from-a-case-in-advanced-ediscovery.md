@@ -15,20 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 電子情報開示 (プレミアム) ケースを管理するときにケースにアクセスできるメンバーを追加または削除する方法について説明します。
+description: 電子情報開示 (Premium) ケースを管理するときにケースにアクセスできるメンバーを追加または削除する方法について説明します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 85a8673e7e3c31ab12cda0109f6c06762adeabf3
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 0b3ed53ee897e88d70a7b1322999e5b81de8ed81
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65091877"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627715"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>ケースからメンバーを追加または削除する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-メンバーを追加または削除して、ケースにアクセスできるユーザーを管理できます。 ただし、メンバーが電子情報開示 (プレミアム) ケースにアクセスし、ケース内のタスクを実行する前に、Microsoft Purview コンプライアンス ポータルの **[アクセス許可**] ページで電子情報開示マネージャーの役割グループにユーザーを追加する必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](./assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
+メンバーを追加または削除して、ケースにアクセスできるユーザーを管理できます。 ただし、メンバーが電子情報開示 (Premium) ケースにアクセスし、その場合はタスクを実行する前に、Microsoft Purview コンプライアンス ポータルの **[アクセス許可**] ページで電子情報開示マネージャーの役割グループにユーザーを追加する必要があります。 詳細については、「[電子情報開示のアクセス許可を割り当てる](./assign-ediscovery-permissions.md)」を参照してください。電子情報開示のアクセス許可を割り当てる」を参照してください。
 
 1. **eDiscovery (Premium)** ページで、メンバーを追加するケースに移動します。
 

@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 description: 機密情報の種類/ルール パッケージと完全に一致するデータを作成する
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff493f7af88d377bcf008d13752969107cfd65e7
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017188"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628509"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>機密情報の種類/ルール パッケージと完全に一致するデータを作成する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンプライアンス センターの [EDM スキーマと SIT ウィザード](#use-the-edm-schema-and-sit-wizard) を使用して、厳密なデータ一致 (EDM) 機密情報の種類 (SIT) を作成するか、ルール パッケージ XML ファイルを [手動で](#create-a-rule-package-manually)作成できます。 1 つのメソッドを使用して両方を組み合わせてスキーマを作成し、後でもう一方のメソッドを使用して編集することもできます。
 
@@ -60,7 +58,7 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 
 ### <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>完全一致スキーマと機密情報の種類パターンウィザードを使用する
 
-1. テナントの Microsoft Purview コンプライアンス ポータルで、 **データ分類** > **の完全なデータ一致** に移動します。
+1. テナントのMicrosoft Purview コンプライアンス ポータルで、[**データ分類** > **の完全一致]** に移動します。
 
 2. **EDM の機密情報の種類** を選択し、 **EDM の機密情報の種類を作成** して、機密情報の種類の構成ウィザードを開きます。
 

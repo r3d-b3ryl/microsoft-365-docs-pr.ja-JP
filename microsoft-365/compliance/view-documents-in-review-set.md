@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示でレビュー セット内のドキュメントを表示する (プレミアム)
+title: 電子情報開示 (Premium) でレビュー セット内のドキュメントを表示する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -13,18 +13,16 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: テキスト、注釈、変換、ネイティブ ビューなど、電子情報開示 (プレミアム) でコンテンツを表示する方法を選択します。
+description: テキスト、注釈、変換、ネイティブ ビューなど、電子情報開示 (Premium) でコンテンツを表示する方法を選択します。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d21ee5f24b12f010ba9869ca1dfe9af9251ab64c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c5373734b0442d872f5c98ce40876c7be8d95990
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65093528"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627021"
 ---
-# <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>電子情報開示でレビュー セット内のドキュメントを表示する (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="view-documents-in-a-review-set-in-ediscovery-premium"></a>電子情報開示 (Premium) でレビュー セット内のドキュメントを表示する
 
 eDiscovery (Premium) では、それぞれ異なる目的を持つ複数のビューアーを使用してコンテンツを表示します。 さまざまなビューアーを使用するには、レビュー セット内の任意のドキュメントをクリックします。 現在提供されているビューアーは次のとおりです。
 

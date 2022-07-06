@@ -19,31 +19,29 @@ ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
-description: Microsoft 365では、既定でメールボックス監査ログが有効になります ("既定のメールボックス監査" または "既定のメールボックス監査" とも呼ばれます)。 この構成は、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録され、メールボックスで実行されたアクティビティを検索できることを意味します。
-ms.openlocfilehash: d5d966cf4d5b7c58c15df4ce8d4039331ebca8c4
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+description: メールボックス監査ログは、Microsoft 365 で既定で有効になります ("既定のメールボックス監査" または "既定のメールボックス監査" とも呼ばれます)。 この構成は、メールボックスの所有者、代理人、および管理者によって実行される特定のアクションがメールボックス監査ログに自動的に記録され、メールボックスで実行されたアクティビティを検索できることを意味します。
+ms.openlocfilehash: c59e1e552f6598287c10adfb2661ec4d358529f9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972631"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627395"
 ---
 # <a name="manage-mailbox-auditing"></a>メールボックスの監査を管理する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 2019 年 1 月以降、Microsoft はすべての組織で既定でメールボックス監査ログを有効にしています。 つまり、メールボックスの所有者、代理人、管理者によって実行される特定のアクションが自動的にログに記録され、メールボックス監査ログで検索すると、対応するメールボックス監査レコードを使用できるようになります。 メールボックス監査を既定で有効にする前に、組織内のすべてのユーザー メールボックスに対して手動で有効にする必要がありました。
 
 既定では、メールボックス監査の利点をいくつか次に示します。
 
 - 監査は、新しいメールボックスを作成するときに自動的に有効になります。 新しいユーザーに対して手動で有効にする必要はありません。
-- 監査されるメールボックスアクションを管理する必要はありません。 定義済みのメールボックス アクションのセットは、ログオンの種類 (管理者、代理人、所有者) ごとに既定で監査されます。
+- 監査されるメールボックスアクションを管理する必要はありません。 定義済みのメールボックス アクションのセットは、ログオンの種類 (管理、委任、所有者) ごとに既定で監査されます。
 - Microsoft が新しいメールボックス アクションをリリースすると、既定で監査されるメールボックス アクションの一覧にアクションが自動的に追加される場合があります (適切なライセンスを持つユーザーが対象)。 つまり、メールボックスに対する新しいアクションの追加を監視する必要はありません。
 - 組織全体に一貫したメールボックス監査ポリシーがあります (すべてのメールボックスに対して同じアクションを監査しているため)。
 
 > [!NOTE]
 >
 > - 既定でメールボックス監査のリリースについて覚えておく必要がある重要な点は、メールボックス監査を管理するために何もする必要がないことです。 ただし、詳細については、既定の設定からメールボックスの監査をカスタマイズするか、完全に無効にしてください。この記事は役に立ちます。
-> - 既定では、E5 ユーザーのメールボックス監査イベントのみが、Microsoft Purview コンプライアンス ポータルまたは Office 365 Management Activity API を使用して監査ログ検索で使用できます。 詳細については、この記事の [「詳細情報](#more-information) 」セクションを参照してください。
+> - 既定では、E5 ユーザーのメールボックス監査イベントのみが、Microsoft Purview コンプライアンス ポータルまたは Office 365 Management Activity API で監査ログ検索で使用できます。 詳細については、この記事の [「詳細情報](#more-information) 」セクションを参照してください。
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>既定によるメールボックス監査の有効化がオンになっていることを確認する
 
@@ -80,10 +78,10 @@ Get-OrganizationConfig | Format-List AuditDisabled
 - **デリゲート**:
   - SendAs、SendOnBehalf、または FullAccess アクセス許可が別のメールボックスに割り当てられているユーザー。
   - ユーザーのメールボックスに FullAccess アクセス許可が割り当てられている管理者。
-- **管理者**:
+- **管理**:
   - メールボックスは、次のいずれかの Microsoft 電子情報開示ツールで検索されます。
     - コンプライアンス センターのコンテンツ検索。
-    - コンプライアンス センターの電子情報開示または電子情報開示 (プレミアム)。
+    - コンプライアンス センターの電子情報開示または電子情報開示 (Premium)。
     - Exchange Onlineで電子情報開示をIn-Placeします。
   - メールボックスには、Microsoft Exchange Server MAPI エディターを使用してアクセスします。
 
@@ -104,15 +102,15 @@ Get-OrganizationConfig | Format-List AuditDisabled
 |**FolderBind**|メールボックス フォルダーがアクセスされました。この操作は、管理者または委任されたユーザーがメールボックスを開いたときにも記録されます。<br/><br/> **注**: デリゲートによって実行されるフォルダー バインド アクションの監査レコードは統合されます。 24 時間以内に個々のフォルダー アクセスに対して 1 つの監査レコードが生成されます。|![チェック マーク。](../media/checkmark.png)|![チェック マーク。](../media/checkmark.png)||
 |**HardDelete**|メッセージが [回復可能なアイテム] フォルダーから削除されました。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|ユーザーが自分のメールボックスにサインインしている。|||![チェック マーク](../media/checkmark.png)|
-|**MailItemsAccessed**|**注**: この値は、E5/A5/G5 ライセンスを持つユーザーにのみ使用できます。 詳細については、「[Microsoft Purview 監査のセットアップ (プレミアム)](set-up-advanced-audit.md)」を参照してください。 <br/><br/> メール データには、メール プロトコルとクライアントによってアクセスされます。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|**注**: この値は、E5/A5/G5 ライセンスを持つユーザーにのみ使用できます。 詳細については、「[Microsoft Purview 監査のセットアップ (Premium)](set-up-advanced-audit.md)」を参照してください。 <br/><br/> メール データには、メール プロトコルとクライアントによってアクセスされます。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |**MessageBind**|**注**: この値は、E5/A5/G5 ライセンス *を持たない* ユーザーにのみ使用できます。 <br/><br/> メッセージがプレビュー ウィンドウで表示されたか、管理者によって開かれた。|![チェック マーク](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|この値はメールボックス アクションとして受け入れられますが、 **UpdateFolderPermissions** アクションに既に含まれており、個別に監査されることはありません。 つまり、この値は使用しないでください。||||
 |**移動する**|メッセージが別のフォルダーに移動されました。|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|
 |**MoveToDeletedItems**|メッセージが削除され、[削除済みアイテム] フォルダーに移動されました。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|レコードとしてラベル付けされたアイテムが論理的に削除されました (回復可能なアイテム フォルダーに移動されました)。 レコードとしてラベル付けされたアイテムを完全に削除することはできません (回復可能なアイテム フォルダーから削除されます)。|![チェック マーク。](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|![チェック マーク](../media/checkmark.png)|
 |**RemoveFolderPermissions**|この値はメールボックス アクションとして受け入れられますが、 **UpdateFolderPermissions** アクションに既に含まれており、個別に監査されることはありません。 つまり、この値は使用しないでください。||||
-|**SearchQueryInitiated**|**注**: この値は、E5/A5/G5 ライセンスを持つユーザーにのみ使用できます。 詳細については、「[Microsoft Purview 監査のセットアップ (プレミアム)](set-up-advanced-audit.md)」を参照してください。 <br/><br/> ユーザーはOutlook (Windows、Mac、iOS、Android、またはOutlook on the web) またはメール アプリをWindows 10に使用してメールボックス内のアイテムを検索します。|||![チェック マーク](../media/checkmark.png)|
-|**Send**|**注**: この値は、E5/A5/G5 ライセンスを持つユーザーにのみ使用できます。 詳細については、「[Microsoft Purview 監査のセットアップ (プレミアム)](set-up-advanced-audit.md)」を参照してください。 <br/><br/> ユーザーが電子メール メッセージを送信したり、電子メール メッセージに返信したり、電子メール メッセージを転送したりします。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>||![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
+|**SearchQueryInitiated**|**注**: この値は、E5/A5/G5 ライセンスを持つユーザーにのみ使用できます。 詳細については、「[Microsoft Purview 監査のセットアップ (Premium)](set-up-advanced-audit.md)」を参照してください。 <br/><br/> ユーザーは Outlook (Windows、Mac、iOS、Android、またはOutlook on the web) またはメール アプリを使用して、メールボックス内のアイテムを検索Windows 10します。|||![チェック マーク](../media/checkmark.png)|
+|**Send**|**注**: この値は、E5/A5/G5 ライセンスを持つユーザーにのみ使用できます。 詳細については、「[Microsoft Purview 監査のセットアップ (Premium)](set-up-advanced-audit.md)」を参照してください。 <br/><br/> ユーザーが電子メール メッセージを送信したり、電子メール メッセージに返信したり、電子メール メッセージを転送したりします。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>||![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|SendAs アクセス許可を使用してメッセージが送信されました (他のユーザーがこのメールボックスの所有者を装ってメッセージを送信しました)。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|SendOnBehalf アクセス許可を使用してメッセージが送信されました (他のユーザーがこのメールボックスの所有者の代理人としてメッセージを送信しました)。この場合は、メッセージの名目上の送信者と実際の送信者が受信者に示されます。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|メッセージが完全に削除された、つまり [削除済みアイテム] フォルダーから削除されました。削除済み (回復可能) アイテムは、回復可能なアイテム フォルダーに移動されます。|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク。](../media/checkmark.png)<sup>\*</sup>|![チェック マーク](../media/checkmark.png)<sup>\*</sup>|
@@ -127,11 +125,11 @@ Get-OrganizationConfig | Format-List AuditDisabled
 
 ### <a name="mailbox-actions-for-microsoft-365-group-mailboxes"></a>Microsoft 365 グループ メールボックスのメールボックス アクション
 
-既定でメールボックスの監査をオンにすると、メールボックス監査ログがグループ メールボックスにMicrosoft 365されますが、ログに記録される内容をカスタマイズすることはできません (ログオンの種類に対してログに記録されるメールボックスアクションを追加または削除することはできません)。
+メールボックスの監査は既定で Microsoft 365 グループ メールボックスにメールボックス監査ログを記録しますが、ログに記録される内容をカスタマイズすることはできません (ログオンの種類に対してログに記録されるメールボックスアクションを追加または削除することはできません)。
 
-次の表では、ログオンの種類ごとに既定でMicrosoft 365 グループ メールボックスに記録されるメールボックスアクションについて説明します。
+次の表では、ログオンの種類ごとに Microsoft 365 グループ メールボックスで既定でログに記録されるメールボックスアクションについて説明します。
 
-Microsoft 365 グループ メールボックスに対するフル アクセス権限を持つ管理者は代理人と見なされることに注意してください。
+Microsoft 365 グループ メールボックスに対するフル アクセス許可を持つ管理者は代理人と見なされることに注意してください。
 
 |メールボックス アクション|説明|管理者|代理人|Owner|
 |---|---|:---:|:---:|:---:|
@@ -153,7 +151,7 @@ Microsoft 365 グループ メールボックスに対するフル アクセス�
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Microsoft 365 グループ メールボックスに値を表示するには、共有メールボックスの名前、エイリアス、または電子メール アドレスに置き換え\<MailboxIdentity\>、powerShell で次のコマンドExchange Online実行します。
+Microsoft 365 グループ メールボックスに値を表示するには、共有メールボックスの名前、エイリアス、または電子メール アドレスに置き換えて\<MailboxIdentity\>、powerShell で次のコマンドExchange Online実行します。
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -180,7 +178,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 ユーザー メールボックスまたは共有メールボックスに現在ログオンしているメールボックスアクションを表示するには、メールボックスの名前、エイリアス、電子メール アドレス、またはユーザー プリンシパル名 (ユーザー名) に置き換え\<MailboxIdentity\>、PowerShell で次のコマンドを 1 つ以上実行Exchange Online。
 
 > [!NOTE]
-> Microsoft 365 グループ メールボックスの次の **Get-Mailbox** コマンドにスイッチを追加`-GroupMailbox`できますが、返される値は信じられません。 Microsoft 365 グループ メールボックスに対して監査される既定のメールボックスアクションと静的メールボックスアクションについては、この記事の「[Microsoft 365 グループ メールボックスのメールボックスアクション](#mailbox-actions-for-microsoft-365-group-mailboxes)」セクションで説明しています。
+> Microsoft 365 グループ メールボックスの次の **Get-Mailbox** コマンドにスイッチを追加`-GroupMailbox`できますが、返される値を信じないでください。 Microsoft 365 グループ メールボックスに対して監査される既定のメールボックスアクションと静的メールボックスアクションについては、この記事の前半の [「Microsoft 365 グループ メールボックスのメールボックスアクション](#mailbox-actions-for-microsoft-365-group-mailboxes) 」セクションで説明しています。
 
 #### <a name="owner-actions"></a>所有者アクション
 
@@ -194,7 +192,7 @@ Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditOwn
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditDelegate
 ```
 
-#### <a name="admin-actions"></a>管理者のアクション
+#### <a name="admin-actions"></a>管理アクション
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> | Select-Object -ExpandProperty AuditAdmin
@@ -244,7 +242,7 @@ Set-Mailbox -Identity "Team Discussion" -AuditDelegate @{Remove="MoveToDeletedIt
 ### <a name="restore-the-default-mailbox-actions"></a>既定のメールボックスアクションを復元する
 
 > [!NOTE]
-> 次の手順は、Microsoft 365 グループ メールボックスには適用されません ([ここで説明するように](#mailbox-actions-for-microsoft-365-group-mailboxes)、既定のアクションに限定されます)。
+> 次の手順は、Microsoft 365 グループ メールボックスには適用されません ( [ここで](#mailbox-actions-for-microsoft-365-group-mailboxes)説明するように、既定のアクションに限定されます)。
 
 ユーザー メールボックスまたは共有メールボックスで監査されるメールボックスアクションをカスタマイズした場合、次の構文を使用して、1 つまたはすべてのログオンの種類の既定のメールボックス アクションを復元できます。
 
@@ -260,7 +258,7 @@ Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Own
 Set-Mailbox -Identity mark@contoso.onmicrosoft.com -DefaultAuditSet Admin,Delegate,Owner
 ```
 
-次の使用例は、メールボックス chris@contoso.onmicrosoft.com の管理者ログオンの種類の既定の監査済みメールボックス アクションを復元しますが、委任ログオンと所有者ログオンの種類に対してカスタマイズされた監査済みメールボックスアクションは残します。
+次の使用例は、メールボックス chris@contoso.onmicrosoft.com の管理ログオンの種類に対する既定の監査済みメールボックス アクションを復元しますが、委任ログオンと所有者ログオンの種類に対してカスタマイズされた監査済みメールボックスアクションは残します。
 
 ```PowerShell
 Set-Mailbox -Identity chris@contoso.onmicrosoft.com -DefaultAuditSet Admin
@@ -304,7 +302,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 - バイパスされたユーザーによって実行されたメールボックス所有者アクションはログに記録されません。
 - バイパスされたユーザーが他のユーザーのメールボックス (共有メールボックスを含む) で実行した委任アクションはログに記録されません。
-- バイパスされたユーザーによって実行された管理者アクションはログに記録されません。
+- バイパスされたユーザーによって実行された管理アクションはログに記録されません。
 
 特定のユーザーについてメールボックス監査ログをバイパスするには、\<MailboxIdentity\> をそのユーザーの名前、メール アドレス、エイリアス、またはユーザー プリンシパル名 (username) で置き換え、次のコマンドを実行します。
 
@@ -322,11 +320,11 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 ## <a name="more-information"></a>詳細情報
 
-- 既定ではすべての組織でメールボックス監査ログオンが有効になっていますが、E5 ライセンスを持つユーザーのみが [、Microsoft Purview コンプライアンス ポータル](search-the-audit-log-in-security-and-compliance.md)または [既定で Office 365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) を使用して監査ログ検索でメールボックス監査ログ イベント **を** 返します。
+- 既定では、すべての組織でメールボックス監査ログオンが有効になっていますが、E5 ライセンスを持つユーザーのみが、Microsoft Purview コンプライアンス ポータルまたは [既定でOffice 365 Management アクティビティ API](/office/office-365-management-api/office-365-management-activity-api-reference) を使用して [監査ログ検索でメールボックス監査ログ](search-the-audit-log-in-security-and-compliance.md) イベント **を** 返します。
 
   E5/A5/G5 ライセンスを持たないユーザーのメールボックス監査ログ エントリを取得するには、次のいずれかの回避策を使用できます。
 
-  - 個々のメールボックスでメールボックス監査を手動で有効にします (コマンドを実行します `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`)。 これを行った後は、Microsoft Purview コンプライアンス ポータルまたは Office 365 Management Activity API を使用して監査ログ検索を使用できます。
+  - 個々のメールボックスでメールボックス監査を手動で有効にします (コマンドを実行します `Set-Mailbox -Identity <MailboxIdentity> -AuditEnabled $true`)。 これを行った後は、Microsoft Purview コンプライアンス ポータルまたは Office 365 Management アクティビティ API を使用して監査ログ検索を使用できます。
 
     > [!NOTE]
     > メールボックスでメールボックスの監査が既に有効になっているように見えるが、検索で結果が返されない場合は、 *AuditEnabled* パラメーターの値を `$false` 変更してから `$true`、 .
@@ -335,7 +333,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
     - [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) を使用して、特定のユーザーのメールボックス監査ログを検索します。
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) を使用して、特定のユーザーのメールボックス監査ログを検索し、指定した受信者に電子メールで結果を送信します。
 
-  - Exchange OnlineのExchange管理センター (EAC) を使用して、次の操作を実行します。
+  - Exchange Onlineの Exchange 管理センター (EAC) を使用して、次の操作を実行します。
     - [メールボックス監査ログのエクスポート](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
     - [所有者以外のメールボックス アクセスのレポートを実行する](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
@@ -345,7 +343,7 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 - 組織のメールボックス監査が既定で有効になっている前にメールボックスの *AuditLogAgeLimit* プロパティを変更した場合、メールボックスの既存の監査ログの有効期間の制限は変更されません。 言い換えると、既定でメールボックス監査は、メールボックス監査レコードの現在の年齢制限には影響しません。
 
-- Microsoft 365 グループ メールボックスの *AuditLogAgeLimit* 値を変更するには、メールボックスの **設定** コマンドにスイッチを含める`-GroupMailbox`必要があります。
+- Microsoft 365 グループ メールボックスの *AuditLogAgeLimit* 値を変更するには、**Set-Mailbox** コマンドにスイッチを含める`-GroupMailbox`必要があります。
 
 - メールボックス監査ログ レコードは、各ユーザーのメールボックスの回復可能なアイテム フォルダー内のサブフォルダー ( *Audit* という名前) に格納されます。 メールボックス監査レコードと回復可能なアイテム フォルダーについては、次の点に注意してください。
 
@@ -368,4 +366,4 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 - メールボックスがコンプライアンス センターで保持またはアイテム保持ポリシーに割り当てられている場合、監査ログ レコードは、メールボックスの *AuditLogAgeLimit* プロパティによって定義されている期間 (既定では 90 日間) 保持されます。 保留中のメールボックスの監査ログ レコードを長く保持するには、メールボックスの *AuditLogAgeLimit* 値を増やす必要があります。
 
-- 複数地域環境では、複数地域のメールボックスの監査はサポートされていません。 たとえば、異なる地理的位置にある共有メールボックスにアクセスする権限がユーザーに割り当てられている場合、そのユーザーが実行したメールボックス操作は、共有メールボックスのメールボックス監査ログに記録されません。 Exchange管理者監査イベントは、現在、既定の場所でのみ使用できます。
+- 複数地域環境では、複数地域のメールボックスの監査はサポートされていません。 たとえば、異なる地理的位置にある共有メールボックスにアクセスする権限がユーザーに割り当てられている場合、そのユーザーが実行したメールボックス操作は、共有メールボックスのメールボックス監査ログに記録されません。 Exchange 管理者監査イベントは、現在、既定の場所でのみ使用できます。

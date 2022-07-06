@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示でのタグ付けと関連性のトレーニング (プレミアム)
+title: 電子情報開示でのタグ付けと関連性のトレーニング (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,21 +16,19 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: 電子情報開示 (プレミアム) の関連性トレーニング ステージで、40 個のファイルのトレーニング サンプルにタグを付けて操作する手順について説明します。
-ms.openlocfilehash: 3e2deb66658aacc8fdd50f2dea5ba082afb8a5e6
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 電子情報開示 (Premium) の関連性トレーニング ステージで、タグ付けして 40 個のファイルのトレーニング サンプルを操作する手順について説明します。
+ms.openlocfilehash: 8f3d92564d908344155b55b5f84dc6357324a388
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090387"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627263"
 ---
-# <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>電子情報開示でのタグ付けと関連性のトレーニング (プレミアム)
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+# <a name="tagging-and-relevance-training-in-ediscovery-premium"></a>電子情報開示でのタグ付けと関連性のトレーニング (Premium)
   
-この記事では、Microsoft Purview 電子情報開示 (プレミアム) の関連性トレーニング モジュールを操作する手順について説明します。
+この記事では、Microsoft Purview eDiscovery (Premium) の関連性トレーニング モジュールを操作する手順について説明します。
   
-評価が電子情報開示 (プレミアム) で完了し、関連性トレーニング ステージに入ると、40 個のファイルのトレーニング サンプルがタグ付けのために [タグ] タブに取り込まれます。
+評価が電子情報開示 (Premium) で完了し、関連性トレーニング ステージに入ると、40 個のファイルのトレーニング サンプルがタグ付け用の [タグ] タブに取り込まれます。
   
 ## <a name="performing-relevance-training"></a>関連性トレーニングの実行
 

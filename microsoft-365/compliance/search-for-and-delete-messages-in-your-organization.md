@@ -17,16 +17,14 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Microsoft Purview コンプライアンス ポータルの検索と消去機能を使って、組織のすべてのメールボックスからメール メッセージを検索し、削除できます。
-ms.openlocfilehash: f4cf7b3f6aeefc3af71739f91322736354c1b68e
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: d6ff40dd5c74330bdcaeeb304c42665469003174
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017244"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628531"
 ---
 # <a name="search-for-and-delete-email-messages"></a>メール メッセージを検索して削除する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 **この記事は管理者向けです。メールボックスで削除するアイテムを探している場合は、「[クイック検索を使ってメッセージまたはアイテムを検索する](https://support.office.com/article/69748862-5976-47b9-98e8-ed179f1b9e4d)**」を参照してください。
 

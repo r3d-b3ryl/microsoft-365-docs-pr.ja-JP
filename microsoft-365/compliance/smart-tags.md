@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示でスマート タグを設定する (プレミアム)
+title: 電子情報開示 (Premium) でスマート タグを設定する
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -16,19 +16,17 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: スマート タグを使用すると、電子情報開示 (プレミアム) ケースでコンテンツを確認するときに機械学習機能を適用できます。 スマート タグ グループを使用して、弁護士とクライアントの特権モデルなどの機械学習検出モデルの結果を表示します。
-ms.openlocfilehash: e9b791d632ea6a1a84472ac5ad00b4a45fea294d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: スマート タグを使用すると、電子情報開示 (Premium) ケースのコンテンツを確認するときに機械学習機能を適用できます。 スマート タグ グループを使用して、弁護士とクライアントの特権モデルなどの機械学習検出モデルの結果を表示します。
+ms.openlocfilehash: 30d2d6f30f09fe8fb6772a4fb46c6895b174991f
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095512"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629081"
 ---
-# <a name="set-up-smart-tags-in-ediscovery-premium"></a>電子情報開示でスマート タグを設定する (プレミアム)
+# <a name="set-up-smart-tags-in-ediscovery-premium"></a>電子情報開示 (Premium) でスマート タグを設定する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (プレミアム) の機械学習 (ML) 機能は、レビュー セット内のケース ドキュメントをレビューするときに、意思決定プロセスの効率を高めるのに役立ちます。 スマート タグは、ML機能を、レビュー中にドキュメントにタグを付ける場合に、決定が記録される場所に移動する方法です。 スマート タグ グループを作成すると、スマート タグ グループに関連付けたML モデルの結果である決定事項が、タグ グループ内のタグとインラインで表示されます。 これにより、特定のドキュメントを確認するときにML結果情報がインラインで表示されます。
+Microsoft Purview eDiscovery (Premium) の機械学習 (ML) 機能は、レビュー セット内のケース ドキュメントをレビューするときに意思決定プロセスをより効率的にするのに役立ちます。 スマート タグは、レビュー中にドキュメントにタグを付ける場合に、決定が記録される ML 機能を取得する方法です。 スマート タグ グループを作成すると、スマート タグ グループに関連付けられた ML モデルの結果である決定事項が、タグ グループ内のタグとインラインで表示されます。 これにより、特定のドキュメントを確認するときに、ML の結果情報がインラインで表示されます。
 
 ## <a name="how-to-set-up-a-smart-tag-group"></a>スマート タグ グループを設定する方法
 
@@ -36,7 +34,7 @@ Microsoft Purview 電子情報開示 (プレミアム) の機械学習 (ML) 機�
 
 2. [ **タグ グループの追加]** をクリックし、[ **スマート タグ グループの追加]** を選択します。
 
-3. タグ グループに関連付けるML モデルを選択します。
+3. タグ グループに関連付ける ML モデルを選択します。
     
    これにより、タグ グループと *N 個* の子タグが作成されます。 *N* はモデルの可能な出力の数です。 たとえば、 [弁護士とクライアントの特権検出モデル](attorney-privilege-detection.md) には、次の 2 つの出力が考えられます。 
 

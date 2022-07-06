@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 でのレコード管理ソリューションの実装に役立つレコードについて説明します。
-ms.openlocfilehash: 9515622af6a6ddb5abe28d6fb920eed72f487f41
-ms.sourcegitcommit: 5c64002236561000c5bd63c71423e8099e803c2d
+ms.openlocfilehash: 176e0a005d388681fcda119798fd838d73b7f733
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/09/2022
-ms.locfileid: "65285064"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629357"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>SharePoint または OneDrive に保存されているレコードを更新するためにレコードのバージョン管理を使用する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > 規制レコードは編集をブロックしているため、規制レコードのレコードのバージョン管理は利用できません。

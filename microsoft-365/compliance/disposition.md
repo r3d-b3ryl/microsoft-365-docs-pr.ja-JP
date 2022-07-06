@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 処理確認を利用する場合や、レコードとしてマークされたアイテムが構成した設定に従って自動的に削除される場合、コンテンツの処理を監視および管理します。
-ms.openlocfilehash: 34ac1a9d3b62cd0806318582f7baef76947d7670
-ms.sourcegitcommit: 37111bc0c5a6cc4690f7144a019bbff11d44858f
+ms.openlocfilehash: d72cc68bb093c3b49c7f79847916c5cbc5fe5a2d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65463266"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630105"
 ---
 # <a name="disposition-of-content"></a>コンテンツの処理
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Microsoft Purview コンプライアンス ポータルの **レコード管理** の **[処理]** ページを使用して、処理確認を管理し、保持期間の終了時に自動的に削除された [レコード](records-management.md#records)のメタデータを表示します。
 

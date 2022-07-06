@@ -15,21 +15,19 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 ROBOTS: NOINDEX, NOFOLLOW
-description: 管理者は、Twitter データをインポートしてMicrosoft 365にアーカイブするネイティブ コネクタを設定できます。 このデータをMicrosoft 365にインポートした後は、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
-ms.openlocfilehash: a928e24c73fcbb290bde2caa0f508610fc18728d
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 管理者は、Microsoft 365 に Twitter データをインポートおよびアーカイブするためのネイティブ コネクタを設定できます。 このデータを Microsoft 365 にインポートした後は、訴訟ホールド、コンテンツ検索、保持ポリシーなどのコンプライアンス機能を使用して、組織の Twitter データのガバナンスを管理できます。
+ms.openlocfilehash: bdc678fe1240b4b82a47d5cd091ee309a8153daa
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090963"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627759"
 ---
 # <a name="deploy-a-connector-to-archive-twitter-data"></a>Twitter データをアーカイブするためのコネクタのデプロイ
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
+この記事には、Office 365 Import サービスを使用して組織の Twitter アカウントから Microsoft 365 にデータをインポートするコネクタをデプロイするためのステップ バイ ステップ プロセスが含まれています。 このプロセスの概要と、Twitter コネクタをデプロイするために必要な前提条件の一覧については、「Twitter [データをアーカイブするためのコネクタの設定 ](archive-twitter-data-with-sample-connector.md)」を参照してください。
 
-この記事には、Office 365 Import サービスを使用して組織の Twitter アカウントからMicrosoft 365にデータをインポートするコネクタをデプロイするためのステップ バイ ステップ プロセスが含まれています。 このプロセスの概要と、Twitter コネクタをデプロイするために必要な前提条件の一覧については、「Twitter [データをアーカイブするためのコネクタの設定 ](archive-twitter-data-with-sample-connector.md)」を参照してください。
-
-## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directoryでアプリを作成する
+## <a name="step-1-create-an-app-in-azure-active-directory"></a>手順 1: Azure Active Directory でアプリを作成する
 
 1. <https://portal.azure.com>グローバル管理者アカウントの資格情報を使用して、アクセスしてサインインします。
 
@@ -37,13 +35,13 @@ ms.locfileid: "65090963"
 
 2. 左側のナビゲーション ウィンドウで **[Azure Active Directory]** をクリックします。
 
-   ![Azure Active Directoryに移動します。](../media/TCimage02.png)
+   ![Azure Active Directory に移動します。](../media/TCimage02.png)
 
 3. 左側のナビゲーション ウィンドウで、[**アプリの登録 (プレビュー)]** をクリックし、[**新しい登録**] をクリックします。
 
    ![新しいアプリ登録を作成します。](../media/TCimage03.png)
 
-4. アプリケーションを登録します。 [ **リダイレクト URI (省略可能)]** で、アプリケーションの種類ドロップダウン リストで **[Web** ] を選択し、URI のボックスに入力 `https://portal.azure.com` します。
+4. アプリケーションを登録する [ **リダイレクト URI (省略可能)]** で、アプリケーションの種類ドロップダウン リストで **[Web** ] を選択し、URI のボックスに入力 `https://portal.azure.com` します。
 
    ![リダイレクト URI の種類 https://portal.azure.com 。](../media/TCimage04.png)
 
@@ -59,18 +57,18 @@ ms.locfileid: "65090963"
 
    ![シークレットを入力し、有効期限を選択します。](../media/TCimage08.png)
 
-8. シークレットの値をコピーし、テキスト ファイルまたはその他の保存場所に保存します。 これは、後の手順で使用するAADアプリケーション シークレットです。
+8. シークレットの値をコピーし、テキスト ファイルまたはその他の保存場所に保存します。 これは、後の手順で使用する AAD アプリケーション シークレットです。
 
    ![シークレットをコピーして保存します。](../media/TCimage09.png)
 
 
-## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHubから Azure アカウントにコネクタ Web サービスをデプロイする
+## <a name="step-2-deploy-the-connector-web-service-from-github-to-your-azure-account"></a>手順 2: GitHub から Azure アカウントにコネクタ Web サービスをデプロイする
 
-1. [このGitHub サイト](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)に移動し、[**Azure へのデプロイ**] をクリックします。
+1. [この GitHub サイト](https://github.com/microsoft/m365-sample-twitter-connector-csharp-aspnet)に移動し、[**Azure へのデプロイ**] をクリックします。
 
     ![Azure ホーム ページに移動します。](../media/FBCimage11.png)
 
-2. **[Azure へのデプロイ**] をクリックすると、カスタム テンプレート ページを含むAzure portalにリダイレクトされます。 **基本** と **設定** の詳細を入力し、[**購入**] をクリックします。
+2. **[Azure へのデプロイ**] をクリックすると、カスタム テンプレート ページを含むAzure portalにリダイレクトされます。 **[基本]** と **[設定]** の詳細を入力し、[**購入**] をクリックします。
 
    ![[リソースの作成] をクリックし、ストレージ アカウントを入力します。](../media/FBCimage12.png)
 
@@ -82,13 +80,13 @@ ms.locfileid: "65090963"
 
     - **Web アプリ名:** コネクタ Web アプリの一意の名前を指定します。 名前の長さは 3 文字から 18 文字にする必要があります。 この名前は、Azure アプリ サービスの URL を作成するために使用されます。たとえば、 **twitterconnector** の Web アプリ名を指定すると、Azure アプリ サービスの URL **が twitterconnector.azurewebsites.net** されます。
 
-    - **tenantId:** 手順 1. で Azure Active Directory で Facebook コネクタ アプリを作成した後にコピーした、Microsoft 365組織のテナント ID。
+    - **tenantId:** 手順 1. で Azure Active Directory で Facebook コネクタ アプリを作成した後にコピーした Microsoft 365 組織のテナント ID。
 
    - **APISecretKey:** 任意の値をシークレットとして入力できます。 これは、手順 5. のコネクタ Web アプリにアクセスするために使用されます。
 
 3. デプロイが成功すると、ページは次のスクリーンショットのようになります。
 
-    ![[Storage] をクリックし、[Storage アカウント] をクリックします。](../media/FBCimage13.png)
+    ![[ストレージ] をクリックし、[ストレージ アカウント] をクリックします。](../media/FBCimage13.png)
 
 ## <a name="step-3-create-the-twitter-app"></a>手順 3: Twitter アプリを作成する
 
@@ -141,7 +139,7 @@ ms.locfileid: "65090963"
 
    ![[構成] をクリックしてサインイン ページを表示します。](../media/FBCimage42.png)
 
-3. [テナント ID] ボックスに、テナント ID (手順 2 で取得した) を入力または貼り付けます。 パスワード ボックスに、APISecretKey (手順 2 で取得した) を入力または貼り付け、**構成設定の設定** をクリックして構成の詳細ページを表示します。
+3. [テナント ID] ボックスに、テナント ID (手順 2 で取得した) を入力または貼り付けます。 パスワード ボックスに、APISecretKey (手順 2 で取得した) を入力または貼り付けて、[ **構成設定の設定]** をクリックして構成の詳細ページを表示します。
 
    ![テナント ID と API シークレット キーを使用してサインインします。](../media/TCimage35.png)
 
@@ -155,7 +153,7 @@ ms.locfileid: "65090963"
 
    - **Twitter アクセス トークン シークレット:** 手順 3. で作成したアクセス トークン シークレット。
 
-   - **AAD アプリケーション ID:** 手順 1 で作成したAzure Active Directory アプリのアプリケーション ID
+   - **AAD アプリケーション ID:** 手順 1 で作成した Azure Active Directory アプリのアプリケーション ID
 
    - **AAD アプリケーション シークレット:** 手順 1 で作成した APISecretKey シークレットの値。
 
@@ -185,7 +183,7 @@ ms.locfileid: "65090963"
 
 6. 接続が正常に検証されたら、[ **次へ**] をクリックします。
 
-7. [**データをインポートするための承認Microsoft 365**] ページで、APISecretKey をもう一度入力または貼り付けてから、[**ログイン Web アプリ**] をクリックします。
+7. [ **データをインポートするための Microsoft 365 の承認** ] ページで、APISecretKey をもう一度入力または貼り付けてから、[  **ログイン Web アプリ**] をクリックします。
 
 8. [ **Twitter でログイン]** をクリックします。
 
@@ -199,7 +197,7 @@ ms.locfileid: "65090963"
 
 11. [ **フィルターの設定** ] ページで、フィルターを適用して、特定の年齢のアイテムを最初にインポートできます。 年齢を選択し、[ **次へ**] をクリックします。
 
-12. [**ストレージの場所の選択]** ページで、Twitter アイテムのインポート先となるメールボックスMicrosoft 365メール アドレスを入力し、[**次へ**] をクリックします。
+12. [ **ストレージの場所の選択]** ページで、Twitter アイテムのインポート先となる Microsoft 365 メールボックスのメール アドレスを入力し、[ **次へ**] をクリックします。
 
 13. [ **次へ** ] をクリックしてコネクタの設定を確認し、[ **完了]** をクリックしてコネクタの設定を完了します。
 

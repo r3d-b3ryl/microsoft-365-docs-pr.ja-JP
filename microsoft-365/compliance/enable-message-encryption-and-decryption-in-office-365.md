@@ -13,19 +13,19 @@ ms.localizationpriority: medium
 ms.assetid: e313c489-ce5e-4015-aadf-981c697ab51f
 ms.collection:
 - M365-security-compliance
-description: Office 365 Message Encryption により、電子メール ユーザーは、組織の内外の人々に暗号化されたメッセージを送信することができます。 管理者は、暗号化の条件Office 365 Message Encryptionメール フロー ルール (トランスポート ルールとも呼ばれる) を作成することで、メール フロールールを有効にできます。
-ms.openlocfilehash: 086ddd06d90990da7b9260fcdac10acb7b22de3e
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft Purview Message Encryptionを使用すると、電子メール ユーザーは組織内外のユーザーに暗号化されたメッセージを送信できます。 管理者は、暗号化の条件を設定するメール フロー ルール (トランスポート ルールとも呼ばれます) を作成することで、Microsoft Purview Message Encryptionを有効にすることができます。
+ms.openlocfilehash: 1440d2c1bcc60b68b3aae02cdba5ca7dec8737db
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60177533"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627307"
 ---
 # <a name="enable-message-encryption-and-decryption"></a>メッセージの暗号化と復号化を有効にする
 
-Office 365 Message Encryption により、電子メール ユーザーは、組織の内外の人々に暗号化されたメッセージを送信することができます。 管理者は、暗号化の条件Office 365 Message Encryptionメール フロー ルール (トランスポート ルールとも呼ばれる) を作成することで、メール フロールールを有効にできます。 ユーザーの 1 人がルールの条件に一致するメッセージを送信すると、メッセージは暗号化されます。
+Microsoft Purview Message Encryptionを使用すると、電子メール ユーザーは組織内外のユーザーに暗号化されたメッセージを送信できます。 管理者は、暗号化の条件を設定するメール フロー ルール (トランスポート ルールとも呼ばれます) を作成することで、Microsoft Purview Message Encryptionを有効にすることができます。 ユーザーの 1 人がルールの条件に一致するメッセージを送信すると、メッセージは暗号化されます。
   
-暗号化用のメール フロー ルールを作成する方法については、「電子メール メッセージを暗号化または復号化するためのルールを定義 [する」を参照してください](./define-mail-flow-rules-to-encrypt-email.md)。
+暗号化用のメール フロー ルールを作成する方法については、「 [電子メール メッセージを暗号化または暗号化解除するルールを定義する](./define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
   
 ## <a name="see-also"></a>関連項目
 

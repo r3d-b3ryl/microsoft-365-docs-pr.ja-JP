@@ -1,5 +1,5 @@
 ---
-title: レビュー セット用の電子情報開示 (プレミアム) ダッシュボード
+title: レビュー セット用の電子情報開示 (Premium) ダッシュボード
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -15,23 +15,21 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: レビュー セットには Microsoft Purview 電子情報開示 (プレミアム) ダッシュボードを使用してコーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計情報を特定します。
-ms.openlocfilehash: 00d4c6648d74fdf459965ed410dd43c73e698c23
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: レビュー セットにはMicrosoft Purview eDiscovery (Premium) ダッシュボードを使用してコーパスをすばやく分析し、レビュー戦略の策定に役立つ傾向や主要な統計を特定します。
+ms.openlocfilehash: 225cc0d732023322b87e0e04c2cca1455fb0ff87
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097868"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629059"
 ---
-# <a name="ediscovery-premium-dashboard-for-review-sets"></a>レビュー セット用の電子情報開示 (プレミアム) ダッシュボード
+# <a name="ediscovery-premium-dashboard-for-review-sets"></a>レビュー セット用の電子情報開示 (Premium) ダッシュボード
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (プレミアム) では、大量のドキュメントと電子メール メッセージを確認する必要がある場合があります。 レビュー プロセスを開始する前に、コーパスをすばやく分析して、レビュー戦略の策定に役立つ傾向や主要な統計情報を特定することができます。 これを行うには、電子情報開示 (プレミアム) ダッシュボードを使用して、レビュー セットを使用してコーパスをすばやく分析できます。
+Microsoft Purview eDiscovery (Premium) の場合、大量のドキュメントと電子メール メッセージを確認する必要がある場合があります。 レビュー プロセスを開始する前に、コーパスをすばやく分析して、レビュー戦略の策定に役立つ傾向や主要な統計情報を特定することができます。 これを行うには、電子情報開示 (Premium) ダッシュボードを使用してレビュー セットを作成し、コーパスをすばやく分析できます。
 
 ## <a name="step-1-create-a-widget-on-the-review-set-dashboard"></a>手順 1: レビュー セット ダッシュボードにウィジェットを作成する
 
-1. Microsoft Purview コンプライアンス ポータルで、**電子情報開示>電子情報開示 (プレミアム)** に移動して、組織内のケースの一覧を表示します。
+1. Microsoft Purview コンプライアンス ポータルで、**電子情報開示>電子情報開示 (Premium)** に移動して、組織内のケースの一覧を表示します。
   
 2. 既存のケースを選択します。
   
@@ -39,7 +37,7 @@ Microsoft Purview 電子情報開示 (プレミアム) では、大量のドキ�
   
 4. **[個々の結果]** ドロップダウン リストで、**[検索プロファイルの表示]** をクリックします。 
 
-   ![DashbordPivot.](../media/dashboardpivot.png)
+   ![DashboardPivot。](../media/dashboardpivot.png)
 
    **[検索プロファイル ビュー]** ページが表示されます。このページを初めて表示するときに、3 つの既定のウィジェットが表示されます。
 
@@ -57,9 +55,9 @@ Microsoft Purview 電子情報開示 (プレミアム) では、大量のドキ�
 
    ![ウィジェットを作成します。](../media/addwidget.png)
 
-    a.  ウィジェットの名前を入力します。ウィジェットのタイトル バーに表示されます。 ウィジェットに名前を付ける必要がありますが、ウィジェット データを識別すると便利です。
+    a. ウィジェットの名前を入力します。ウィジェットのタイトル バーに表示されます。 ウィジェットに名前を付ける必要がありますが、ウィジェット データを識別すると便利です。
 
-    b. ウィジェット データに使用される [ **ピボットの選択** ] ドロップダウン リストでプロパティを選択します。 この一覧のアイテムは、レビュー セット内のアイテムの検索可能なプロパティです。 これらのプロパティの説明については、「[電子情報開示のドキュメント メタデータ フィールド (プレミアム)](document-metadata-fields-in-Advanced-eDiscovery.md)」を参照してください。 ウィジェットのピボット オプションは、このトピックの **[検索可能なフィールド名** ] 列に一覧表示されます。
+    b. ウィジェット データに使用される [ **ピボットの選択** ] ドロップダウン リストでプロパティを選択します。 この一覧のアイテムは、レビュー セット内のアイテムの検索可能なプロパティです。 これらのプロパティの説明については、 [電子情報開示 (Premium) のドキュメント メタデータ フィールドに](document-metadata-fields-in-Advanced-eDiscovery.md)関するページを参照してください。 ウィジェットのピボット オプションは、このトピックの **[検索可能なフィールド名** ] 列に一覧表示されます。
 
     c. 選択したピボット プロパティのデータを表示するグラフの種類を選択します。
 
@@ -69,7 +67,7 @@ Microsoft Purview 電子情報開示 (プレミアム) では、大量のドキ�
 
 1. ウィジェットのタイトル バーで **[...** ] をクリックし、[ **条件の適用**] をクリックします。
 
-   ![ダッシュ ボード。](../media/searchprofilehome.png)
+   ![ダッシュボードホーム。](../media/searchprofilehome.png)
 
 2. ポップアップ ページで、ウィジェット キーまたはウィジェット グラフの要素をクリックしてフィルターを作成します。
 

@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 7b8ca4e909893ec417d3466f825c2c0a1c5c736a
-ms.sourcegitcommit: f302de988d98628922eea1f509a3f639634ddc64
+ms.openlocfilehash: 0f0fa2da9c41700216b0142827897980870f006d
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66151186"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627671"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 アイテム保持ポリシーを使用して、コンテンツを保持するか、削除するか、あるいは保持した後に削除するかを事前に決定することにより、組織のデータを管理します。
 

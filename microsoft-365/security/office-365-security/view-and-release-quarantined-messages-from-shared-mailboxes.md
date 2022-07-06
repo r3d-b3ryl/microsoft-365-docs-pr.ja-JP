@@ -13,16 +13,15 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-ROBOTS: NOINDEX
 description: ユーザーは、アクセス許可を持つ共有メールボックスに送信された検疫済みメッセージを表示して操作する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2613d3b8be200db3a9107355a27b0dd79ce537d3
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: a37ed03535bd3f3b48aca81c7bf7adeb3c660b46
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647332"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629015"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>共有メールボックスから検疫済みメッセージを表示および解放する
 
@@ -50,9 +49,11 @@ ms.locfileid: "65647332"
 
 - 現時点では、[ **送信者のブロック** ] ボタンは、共有メールボックスに送信された検疫済みメッセージの **詳細** ポップアップでは使用できません。
 
-- 共有メールボックスの検疫操作に関しては、入れ子になったセキュリティ グループを使用して共有メールボックスへのアクセスを許可する場合は、入れ子になったグループのレベルを 2 つ以下にすることをお勧めします。 たとえば、グループ A はグループ B のメンバーであり、グループ C のメンバーです。共有メールボックスにアクセス許可を割り当てるには、ユーザーをグループ A に追加してから、グループ C を共有メールボックスに割り当てないでください。  
+- 共有メールボックスの検疫操作に関しては、入れ子になったセキュリティ グループを使用して共有メールボックスへのアクセスを許可する場合は、入れ子になったグループのレベルを 2 つ以下にすることをお勧めします。 たとえば、グループ A はグループ B のメンバーであり、グループ C のメンバーです。共有メールボックスにアクセス許可を割り当てるには、ユーザーをグループ A に追加してから、グループ C を共有メールボックスに割り当てないでください。
 
-- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーは _、RecipientAddress_ パラメーターの値に共有メールボックスの電子メール アドレスを含む [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットを使用してメッセージを識別する必要があります。 例として以下のようなものがあります。
+- 2022 年 7 月の時点で、ユーザー プリンシパル名 (UPN) とは異なるプライマリ SMTP アドレスを持つユーザーは、共有メールボックスの検疫済みメッセージにアクセスできる必要があります。
+
+- [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で共有メールボックスの検疫済みメッセージを管理するには、エンド ユーザーは _、RecipientAddress_ パラメーターの値に共有メールボックスの電子メール アドレスを含む [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) コマンドレットを使用してメッセージを識別する必要があります。 例:
 
   ```powershell
   Get-QuarantineMessage -RecipientAddress officeparty@contoso.com

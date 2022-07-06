@@ -18,18 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: dfe76e31eb5816e53a3f6d4ab598f1737cdebaa1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 17b1a2aab1da0e2c901aac14b3bf675cbbabe740
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66014302"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628685"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 [秘密度ラベル](sensitivity-labels.md) を使用して、ドキュメントやメールを分類および保護するだけでなく、Microsoft Teams サイト、Microsoft 365 グループ ([以前は Office 365 グループ](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601))、およびSharePoint サイトなどのコンテナーにあるコンテンツを保護するために、秘密度ラベルを使用することもできます。コンテナー レベルの分類と保護を設定するには、次のラベル設定を使用します。
 
@@ -207,7 +205,7 @@ SharePoint サイトに適用する秘密度ラベルに構成できる別の Po
 Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{MembersCanShare="MemberShareNone"}
 ````
 
-PowerShell の詳細設定の指定に関する詳細については、「[PowerShell の詳細設定の指定に関するヒント](sensitivity-labels-default-sharing-link.md#powershell-tips-for-specifying-the-advanced-settings)」を参照してください。
+PowerShell の詳細設定の指定に関する詳細については、「[PowerShell の詳細設定の指定に関するヒント](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings)」を参照してください。
 
 ## <a name="sensitivity-label-management"></a>機密ラベルの管理
 

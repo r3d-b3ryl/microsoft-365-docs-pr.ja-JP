@@ -1,7 +1,7 @@
 ---
 title: SIEM ソリューションのコミュニケーション コンプライアンス
 description: SIEM ソリューションとの通信コンプライアンスの統合について説明します。
-keywords: Microsoft 365、Microsoft Purview、コンプライアンス、コミュニケーション コンプライアンス
+keywords: Microsoft 365、Microsoft Purview、コンプライアンス、通信コンプライアンス
 f1.keywords:
 - NOCSH
 ms.author: robmazz
@@ -19,24 +19,22 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: f111fbd831f36cd8f1647e4b99565a24372387b8
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 4d9ee561e033e98919063d1f344aa3207a6bb6cd
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953872"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626537"
 ---
 # <a name="communication-compliance-with-siem-solutions"></a>SIEM ソリューションのコミュニケーション コンプライアンス
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 [コミュニケーション コンプライアンス](communication-compliance.md) は Microsoft Purview のインサイダー リスク ソリューションであり、組織内の不適切なメッセージを検出、キャプチャ、および操作できるようにすることで、コミュニケーション リスクを最小限に抑えることができます。 [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) や [Splunk](https://www.splunk.com/) などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威の集計と追跡に一般的に使用されます。
 
-組織の一般的なニーズは、通信コンプライアンス アラートとこれらの SIEM ソリューションを統合することです。 この統合により、組織は SIEM ソリューションで通信コンプライアンス アラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内のアラートを修復できます。 たとえば、従業員は別の従業員に不快なメッセージを送信し、そのメッセージは不適切なコンテンツに対するコミュニケーション コンプライアンス ポリシーの監視によって検出されます。 これらのイベントは、通信コンプライアンス ソリューションによってMicrosoft 365監査 ("統合監査ログ" とも呼ばれます) で追跡され、SIEM ソリューションにインポートされます。 その後、通信コンプライアンス アラートに関連付けられているMicrosoft 365監査で監視されるイベントから、組織の SIEM ソリューションでアラートがトリガーされます。 調査担当者には SIEM ソリューションでアラートが通知され、通信コンプライアンス ソリューションでアラートを調査して修復します。
+組織の一般的なニーズは、通信コンプライアンス アラートとこれらの SIEM ソリューションを統合することです。 この統合により、組織は SIEM ソリューションで通信コンプライアンス アラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内のアラートを修復できます。 たとえば、従業員は別の従業員に不快なメッセージを送信し、そのメッセージは不適切なコンテンツに対するコミュニケーション コンプライアンス ポリシーの監視によって検出されます。 これらのイベントは、通信コンプライアンス ソリューションによって Microsoft 365 監査 ("統合監査ログ" とも呼ばれます) で追跡され、SIEM ソリューションにインポートされます。 その後、通信コンプライアンス アラートに関連付けられている Microsoft 365 監査で監視されるイベントから、組織の SIEM ソリューションでアラートがトリガーされます。 調査担当者には SIEM ソリューションでアラートが通知され、通信コンプライアンス ソリューションでアラートを調査して修復します。
 
-## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Microsoft 365監査の通信コンプライアンス アラート
+## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Microsoft 365 監査の通信コンプライアンス アラート
 
-すべての通信コンプライアンス ポリシーの一致は、Microsoft 365監査にキャプチャされます。 次の例は、選択した通信コンプライアンス ポリシー一致アクティビティで使用できる詳細を示しています。
+すべての通信コンプライアンス ポリシーの一致は、Microsoft 365 監査でキャプチャされます。 次の例は、選択した通信コンプライアンス ポリシー一致アクティビティで使用できる詳細を示しています。
 
 **不適切なコンテンツ ポリシー テンプレート一致の監査ログ エントリの例:**
 
@@ -54,7 +52,7 @@ IsValid: True
 ObjectState: Unchanged
 ```
 
-**カスタム キーワード一致 (カスタム機密情報の種類) を持つポリシーのMicrosoft 365監査ログ エントリの例:**
+**カスタム キーワード一致 (カスタム機密情報の種類) を持つポリシーの Microsoft 365 監査ログ エントリの例:**
 
 ```xml
 RunspaceId: 5c7bc9b0-7672-4091-a112-0635bd5f7732
@@ -71,11 +69,11 @@ ObjectState: Unchanged
 ```
 
 > [!NOTE]
-> 現時点では、ポリシー一致がMicrosoft 365監査に記録されてから、ポリシーの一致を通信コンプライアンスで調査できる時間までの間に、最大で 24 時間の遅延が発生する可能性があります。
+> 現時点では、ポリシー一致が Microsoft 365 監査に記録されてから、ポリシーの一致を通信コンプライアンスで調査できる時間までの間に、最大で 24 時間の遅延が発生する可能性があります。
 
 ## <a name="configure-communication-compliance-and-microsoft-sentinel-integration"></a>通信コンプライアンスと Microsoft Sentinel 統合を構成する
 
-Microsoft Sentinel を使用して通信コンプライアンス ポリシーの一致を集計する場合、Sentinel はデータ ソースとしてMicrosoft 365監査を使用します。 通信コンプライアンス アラートを Sentinel と統合するには、次の手順を実行します。
+Microsoft Sentinel を使用して通信コンプライアンス ポリシーの一致を集計する場合、Sentinel はデータ ソースとして Microsoft 365 監査を使用します。 通信コンプライアンス アラートを Sentinel と統合するには、次の手順を実行します。
 
 1. [Microsoft Sentinel にオンボード](/azure/sentinel/quickstart-onboard)します。 オンボード プロセスの一環として、データ ソースを構成します。
 2. Microsoft Sentinel [Microsoft Office 365 データ コネクタ](/azure/sentinel/data-connectors-reference#microsoft-office-365)を構成し、コネクタの構成で *Exchange* を選択します。
@@ -87,14 +85,14 @@ Microsoft Sentinel を使用して通信コンプライアンス ポリシーの
 
     *|OfficeActivity |ここで、OfficeWorkload == "Exchange" と Operation == "SupervisionRuleMatch" と UserId == "User1@Contoso.com" |TimeGenerated で並べ替える*
 
-Microsoft Sentinel によって収集されたOffice 365のMicrosoft 365監査ログの詳細については、「[Azure Monitor ログ リファレンス」を参照してください](/azure/azure-monitor/reference/tables/OfficeActivity)。
+Microsoft Sentinel によって収集されたOffice 365の Microsoft 365 監査ログの詳細については、「[Azure Monitor ログ リファレンス」を参照してください](/azure/azure-monitor/reference/tables/OfficeActivity)。
 
 ## <a name="configure-communication-compliance-and-splunk-integration"></a>通信コンプライアンスと Splunk 統合を構成する
 
 通信コンプライアンス アラートを Splunk と統合するには、次の手順を実行します。
 
 1. [Microsoft Office 365用の Splunk アドオンを](https://docs.splunk.com/Documentation/AddOns/released/MSO365/ConfigureinputsmanagementAPI)インストールする
-2. Microsoft Office 365用の Splunk アドオンのAzure ADで統合アプリケーションを構成する
+2. Microsoft Office 365用の Splunk アドオン用に Azure AD で統合アプリケーションを構成する
 3. Splunk ソリューションで検索クエリを構成します。 次の検索例を使用して、すべての通信コンプライアンス アラートを識別します。
 
     *index=\* sourcetype="o365:management:activity" Workload=Exchange Operation=SupervisionRuleMatch*
@@ -110,11 +108,11 @@ Microsoft Sentinel によって収集されたOffice 365のMicrosoft 365監査�
 | ポリシーの種類 | 検索結果の例 |
 | :------------------ | :--------------------------------------- |
 | カスタムの機密情報の種類のキーワード リストを検出するポリシー | { <br> CreationTime: 2021-09-17T16:29:57 <br> ID: 4b9ce23d-ee60-4f66-f38d-08d979f8631f <br> IsPolicyHit: true <br> Objectid： <CY1PR05MB27158B96AF7F3AFE62E1F762CFDD9@CY1PR05MB2715.namprd05.prod.outlook.com> <br> 操作: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM。注","CcsiResults":"leak"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.OnMicrosoft.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> バージョン: 1 <br> ワークロード: Exchange <br> } |
-| 不適切な言語を検出するポリシー | { <br> CreationTime: 2021-09-17T23:44:35 <br> ID: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectid： <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> 操作: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM.Yammer。Message","CcsiResults":"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> バージョン: 1 <br> }  |
+| 不適切な言語を検出するポリシー | { <br> CreationTime: 2021-09-17T23:44:35 <br> ID: e0ef6f54-9a52-4e4c-9584-08d97a351ad0 <br> IsPolicyHit: true <br> Objectid： <BN6PR05MB3571AD9FBB85C4E12C1F66B4CCDD9@BN6PR05MB3571.namprd05.prod.outlook.com> <br> 操作: SupervisionRuleMatch <br> OrganizationId: d6a06676-95e8-4632-b949-44bc00f0793f <br> RecordType: 68 <br> ResultStatus: {"ItemClass":"IPM。Yammer.Message","CcsiResults":"} <br> SRPolicyMatchDetails: { [+] } <br> UserId: user1@contoso.com <br> UserKey: SupervisionStoreDeliveryAgent <br> UserType: 0 <br> バージョン: 1 <br> }  |
 
 ## <a name="configure-communication-compliance-with-other-siem-solutions"></a>他の SIEM ソリューションとの通信コンプライアンスを構成する
 
-Microsoft 365監査から通信コンプライアンス ポリシーの一致を取得するには、PowerShell または [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-reference) を使用できます。
+Microsoft 365 監査から通信コンプライアンス ポリシーの一致を取得するには、PowerShell または [Office 365 Management API](/office/office-365-management-api/office-365-management-activity-api-reference) を使用できます。
 
 PowerShell を使用する場合は、これらのパラメーターのいずれかを **Search-UnifiedAuditLog** コマンドレットと共に使用して、監査ログ イベントをフィルター処理して、通信コンプライアンス アクティビティを行うことができます。
 
@@ -136,5 +134,5 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ## <a name="resources"></a>リソース
 
 - [コミュニケーション コンプライアンス監査](communication-compliance-reports-audits.md#audit)
-- [Microsoft Purview 監査 (プレミアム)](advanced-audit.md)
+- [Microsoft Purview 監査 (Premium)](advanced-audit.md)
 - [Office 365 管理アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)

@@ -15,33 +15,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: 電子情報開示 (プレミアム) カストディアン管理ツールを使用して、ケース内のカストディアンのアクティビティに簡単にアクセスして検索します。
+description: 電子情報開示 (Premium) カストディアン管理ツールを使用して、ケース内のカストディアンのアクティビティに簡単にアクセスして検索します。
 ms.custom:
 - seo-marvel-mar2020
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 6f55ad389fe24e87e693e6523c7008713c6bc54b
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 3ead391eee7fc35a66a0d9472278ee75878de4df
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096570"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626999"
 ---
 # <a name="view-custodian-audit-activity"></a>カストディアンの監査アクティビティを表示する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 Microsoft Purview 電子情報開示 (プレミアム) が、Microsoft Purview コンプライアンス ポータルの既存の監査ログ検索ツールと統合されるようになりました。 この埋め込みエクスペリエンスを使用すると、電子情報開示 (プレミアム) カストディアン管理ツールを使用して、ケース内のカストディアンのアクティビティに簡単にアクセスして検索することで、調査を容易にすることができます。
+ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 Microsoft Purview eDiscovery (Premium) が、Microsoft Purview コンプライアンス ポータルの既存の監査ログ検索ツールと統合されるようになりました。 この埋め込みエクスペリエンスを使用すると、電子情報開示 (Premium) カストディアン管理ツールを使用して、ケース内のカストディアンのアクティビティに簡単にアクセスして検索することで、調査を容易にすることができます。
 
 ## <a name="get-permissions"></a>アクセス許可の取得
 
-監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらのロールは、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange管理センター</a>の [アクセス許可] ページのコンプライアンス管理および組織管理の役割グループに割り当てられます。 最小限の特権レベルで eDiscovery (Premium) 監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、"表示専用の監査ログ" または "監査ログ" 役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
+監査ログを検索するには、Exchange Online で閲覧限定の監査ログまたは監査ログの役割が割り当てられている必要があります。 既定では、これらのロールは <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">、Exchange 管理センター</a>の [アクセス許可] ページのコンプライアンス管理と組織管理の役割グループに割り当てられます。 最小限の特権レベルで eDiscovery (Premium) 監査ログを検索する権限をユーザーに付与するには、Exchange Online でカスタムの役割グループを作成し、"表示専用の監査ログ" または "監査ログ" 役割を追加し、この新しい役割グループのメンバーとしてユーザーを追加します。 詳細については、「Exchange Online で役割グループを管理する」を参照してください。
 
 > [!IMPORTANT]
 > コンプライアンス ポータルの [アクセス許可] ページでユーザーに View-Only Audit Logs (閲覧限定の監査ログ) または Audit Logs (監査ログ) の役割を割り当てると、監査ログを検索できなくなります。Exchange Online でアクセス許可を割り当てる必要があります。これは、監査ログの検索に使用される基本のコマンドレットが ExchangeOnline コマンドレットだからです。
 
 ## <a name="step-1-search-the-audit-log-for-activities-performed-by-a-custodian"></a>手順 1: カストディアンによって実行されたアクティビティについて監査ログを検索する
 
-1. **電子情報開示>電子情報開示 (プレミアム)** に移動し、ケースを開きます。
+1. **電子情報開示>電子情報開示 (Premium)** に移動し、ケースを開きます。
   
 2. [ **ソース]** タブをクリックします。
   

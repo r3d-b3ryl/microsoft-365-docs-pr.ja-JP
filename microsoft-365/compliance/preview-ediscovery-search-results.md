@@ -20,16 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルで、コンテンツ検索または電子情報開示 (標準) 検索によって返される結果のサンプルをプレビューします。
-ms.openlocfilehash: acbfebc5935666299dc6a717d70f9c426a6d61cd
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: f369148c6f898c4150d0c86f898640f71ab367a0
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65099633"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628597"
 ---
 # <a name="preview-ediscovery-search-results"></a>電子情報開示検索結果をプレビューする
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンテンツ検索、またはMicrosoft Purview 電子情報開示 (標準) ケースに関連付けられている検索を実行すると、検索によって返される結果サンプルをプレビューできます。 検索クエリによって返されたアイテムをプレビューすると、検索が所望の結果を返しているかどうか、検索クエリを変更して検索を再実行する必要があるのかどうかを把握することができます。
 

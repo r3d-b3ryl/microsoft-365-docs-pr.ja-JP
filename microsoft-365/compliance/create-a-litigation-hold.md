@@ -17,16 +17,14 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 00c7e809fd878b677947dc1db2a55c612ef04997
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097054"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631075"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 メールボックスを訴訟ホールドに置くと、削除されたアイテムや変更されたアイテムの元のバージョンを含むすべてのメールボックス コンテンツを保持できます。 ユーザー メールボックスを訴訟ホールドに置くと、ユーザーのアーカイブ メールボックス内のコンテンツ (有効になっている場合) も保持されます。 保持を作成するときに、保持期間 (*時間ベースの保持* とも呼ばれます) を指定すると、削除および変更されたアイテムが指定した期間保持され、その後メールボックスから完全に削除されます。 または、コンテンツを無期限に保持する ( *無限保留* と呼ばれる) か、訴訟ホールドが削除されるまで保持することもできます。 保持期間を指定する場合は、メッセージが受信された、またはメールボックス アイテムが作成された日付から計算されます。 
   
@@ -51,7 +49,7 @@ ms.locfileid: "65097054"
 
 Microsoft 365 管理センターを使用してメールボックスを訴訟ホールドに配置する手順を次に示します。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Microsoft 365 管理センター</a>に移動し、**UsersActive ユーザー** > をクリックします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Microsoft 365 管理センター</a>に移動し、[**ユーザー****アクティブ ユーザー** > ] をクリックします。
 
 2. 訴訟ホールドに配置するユーザーを選択します。
 

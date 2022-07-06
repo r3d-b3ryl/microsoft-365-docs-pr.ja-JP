@@ -19,18 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータの管理を開始する準備はできましたが、どこから始めればよいかわからないでしょうか。開始するには、いくつかの規範的なガイダンスをお読みください。
-ms.openlocfilehash: 6fe80e32096fc4394ba15786ef378f4b7997af2b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864462"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629675"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>データ ライフサイクル管理の使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 保持する必要のあるコンテンツを保持し、その必要のないコンテンツを削除することにより、組織のデータの管理を開始する用意はできていますか? 作業を開始するには、Microsoft Purview データ ライフサイクル管理 (以前の Microsoft Information Governance) に関する次のガイダンスを使用します。
 

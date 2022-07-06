@@ -1,6 +1,6 @@
 ---
 title: インサイダー リスク管理のケース
-description: Microsoft Purviewのインサイダー リスク管理ケースについて説明します
+description: Microsoft Purview のインサイダー リスク管理ケースについて説明します
 keywords: Microsoft 365、Microsoft Purview、インサイダー リスク、リスク管理、コンプライアンス
 ms.localizationpriority: medium
 ms.service: O365-seccomp
@@ -13,16 +13,14 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 916fb67d8fb2376a1a59d3d2aa61a8e7d041f194
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 678d500b5d523c2b656f4f30fa4ef4a4ed5015a7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65469384"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628707"
 ---
 # <a name="insider-risk-management-cases"></a>インサイダー リスク管理のケース
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ケースはインサイダー リスク管理の中核であり、ポリシーで定義されたリスク インジケーターによって発生する問題を深く調査し、対処することができます。 ケースは、ユーザーのコンプライアンス関連の問題に対処するためにさらにアクションが必要な状況で、アラートから手動で作成されます。 各ケースのスコープは 1 人のユーザーに対して行われ、ユーザーに対する複数のアラートを既存のケースまたは新しいケースに追加できます。
 
@@ -31,7 +29,7 @@ ms.locfileid: "65469384"
 - ユーザーに通知を送信する
 - ケースを問題のないものとして解決する
 - ServiceNow インスタンスまたは電子メール受信者とケースを共有する
-- 電子情報開示 (プレミアム) 調査のケースをエスカレートする
+- 電子情報開示 (Premium) 調査のケースをエスカレートする
 
 インサイダー リスク管理でケースを調査および管理する方法の概要については、 [Insider Risk Management の調査とエスカレーション](https://www.youtube.com/watch?v=UONUSmkRC8s) に関するビデオを参照してください。
 
@@ -137,7 +135,7 @@ ms.locfileid: "65469384"
 
 ![Insider リスク管理ケース コンテンツ エクスプローラー。](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>ケースメモ
+### <a name="case-notes"></a>ケース ノート
 
 ケースの [ **ケース ノート** ] タブでは、リスク アナリストと調査担当者がケースの作業に関するコメント、フィードバック、分析情報を共有します。 ノートはケースに永続的に追加され、メモを保存した後で編集または削除することはできません。 アラートからケースが作成されると、「**アラートの確認とインサイダーリスクケースの作成**」ダイアログに入力されたコメントが、ケースメモとして自動的に追加されます。
 
@@ -165,12 +163,12 @@ ms.locfileid: "65469384"
 1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com)で、**Insider リスク管理** に移動し、[ケース] タブ **を** 選択します。
 2. ケースを選択し、[ **共同作成者** ] タブを選択します。
 3. [ **共同作成者の追加]** を選択します。
-4. [ **共同作成者の追加]** ダイアログで、追加するユーザーの名前の入力を開始し、推奨されるユーザーの一覧からユーザーを選択します。 この一覧は、テナント サブスクリプションのAzure Active Directoryから生成されます。
+4. [ **共同作成者の追加]** ダイアログで、追加するユーザーの名前の入力を開始し、推奨されるユーザーの一覧からユーザーを選択します。 この一覧は、テナント サブスクリプションの Azure Active Directory から生成されます。
 5. [ **追加]** を選択してユーザーを共同作成者として追加するか、[ **キャンセル]** を選択して、ユーザーを共同作成者として追加せずにダイアログを閉じます。
 
 ## <a name="case-actions"></a>ケースへの対処
 
-リスク調査担当者は、ケースの重大度、ユーザーのリスク履歴、組織のリスク ガイドラインに応じて、いくつかの方法のいずれかでケースに対してアクションを実行できます。 状況によっては、ケースをユーザーまたはデータ調査にエスカレートして、組織の他の領域と共同作業し、リスク アクティビティの詳細を調べる必要がある場合があります。 インサイダー リスク管理は、エンド ツー エンドの解決管理に役立つ他のMicrosoft Purview ソリューションと緊密に統合されています。
+リスク調査担当者は、ケースの重大度、ユーザーのリスク履歴、組織のリスク ガイドラインに応じて、いくつかの方法のいずれかでケースに対してアクションを実行できます。 状況によっては、ケースをユーザーまたはデータ調査にエスカレートして、組織の他の領域と共同作業し、リスク アクティビティの詳細を調べる必要がある場合があります。 インサイダー リスク管理は、他の Microsoft Purview ソリューションと緊密に統合されており、エンドツーエンドの解決管理に役立ちます。
 
 ### <a name="send-email-notice"></a>電子メール通知を送信する
 
@@ -188,7 +186,7 @@ ms.locfileid: "65469384"
 
 ### <a name="escalate-for-investigation"></a>調査を拡大する
 
-ユーザーのリスク アクティビティに追加の法的レビューが必要な状況で、ユーザー調査のケースをエスカレートします。 このエスカレーションにより、Microsoft 365組織内で新しいMicrosoft Purview電子情報開示 (プレミアム) ケースが開きます。 電子情報開示 (プレミアム) は、組織の内部および外部の法的調査と関連性のあるコンテンツを保管、収集、確認、分析、エクスポートするための、エンドツーエンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。 インサイダー リスク管理ケースから電子情報開示 (プレミアム) ケースにエスカレートすると、法務チームが適切なアクションを実行し、コンテンツの保存を管理するのに役立ちます。 電子情報開示 (プレミアム) ケースの詳細については、「[Microsoft Purview電子情報開示 (プレミアム)の概要](overview-ediscovery-20.md)」を参照してください。
+ユーザーのリスク アクティビティに追加の法的レビューが必要な状況で、ユーザー調査のケースをエスカレートします。 このエスカレーションにより、Microsoft 365 組織で新しいMicrosoft Purview eDiscovery (Premium) ケースが開きます。 電子情報開示 (プレミアム) は、組織の内部および外部の法的調査と関連性のあるコンテンツを保管、収集、確認、分析、エクスポートするための、エンドツーエンドのワークフローを提供します。 また、訴訟チームが法的情報保留通知ワークフロー全体を管理して、ケースに関係するカストディアンとコミュニケーションを取ることができます。 インサイダー リスク管理ケースから電子情報開示 (Premium) ケースにエスカレートすると、法務チームが適切なアクションを実行し、コンテンツの保存を管理するのに役立ちます。 電子情報開示 (Premium) ケースの詳細については、「[Microsoft Purview eDiscovery (Premium) の概要](overview-ediscovery-20.md)」を参照してください。
 
 ケースをユーザー調査にエスカレートするには:
 
@@ -198,34 +196,34 @@ ms.locfileid: "65469384"
 4. 通知フィールドを確認し、必要に応じて更新します。 ここで入力した値は、テンプレートの値をオーバーライドします。
 5. [ **確認]** を選択してユーザー調査ケースを作成するか、[ **キャンセル]** を選択して、新しいユーザー調査ケースを作成せずにダイアログを閉じます。
 
-インサイダー リスク管理ケースが新しいユーザー調査ケースにエスカレートされたら、Microsoft Purview コンプライアンス ポータルの **電子****DiscoveryAdvanced** >  領域で新しいケースを確認できます。
+インサイダー リスク管理ケースが新しいユーザー調査ケースにエスカレートされたら、Microsoft Purview コンプライアンス ポータルの **電子情報開示** > **の詳細** 領域で新しいケースを確認できます。
 
-### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>ケースのPower Automate フローを使用して自動化されたタスクを実行する
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>ケースの Power Automate フローを使用して自動化されたタスクを実行する
 
-推奨されるPower Automate フローを使用すると、リスク調査担当者とアナリストは、次のアクションを迅速に実行できます。
+推奨される Power Automate フローを使用すると、リスク調査担当者とアナリストは、次の操作を迅速に実行できます。
 
 - インサイダー リスク ケースのユーザーに関する人事または企業からの情報の要求
 - ユーザーがインサイダー リスク アラートを受け取ったときにマネージャーに通知する
 - ServiceNow でインサイダー リスク管理ケースのレコードを作成する
 - インサイダー リスク ポリシーに追加されたときにユーザーに通知する
 
-インサイダー リスク管理ケースのPower Automate フローを実行、管理、または作成するには:
+インサイダー リスク管理ケースの Power Automate フローを実行、管理、または作成するには、
 
 1. ケース アクション ツール バーで [ **自動化** ] を選択します。 
-2. 実行するPower Automate フローを選択し、[**フローの実行**] を選択します。 
+2. 実行する Power Automate フローを選択し、[ **フローの実行**] を選択します。 
 3. フローが完了したら、[完了] を選択 **します**。
 
-インサイダー リスク管理のPower Automate フローの詳細については、「インサイダー リスク管理設定の[概要](insider-risk-management-settings.md#power-automate-flows-preview)」を参照してください。
+インサイダー リスク管理の Power Automate フローの詳細については、「インサイダー リスク管理 [設定の概要](insider-risk-management-settings.md#power-automate-flows-preview)」を参照してください。
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>ケースのMicrosoft Teams チームを表示または作成する
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>ケースの Microsoft Teams チームを表示または作成する
 
-インサイダー リスク管理のMicrosoft Teams統合が設定で有効になっている場合、アラートが確認され、ケースが作成されるたびに、Microsoft Teams チームが自動的に作成されます。 リスク調査担当者とアナリストは、Microsoft Teamsをすばやく開き、ケース アクション ツール バーで [チームの **表示] Microsoft Teams** 選択することで、ケースのチームに直接移動できます。
+インサイダー リスク管理の Microsoft Teams 統合が設定で有効になっている場合、アラートが確認され、ケースが作成されるたびに、Microsoft Teams チームが自動的に作成されます。 リスク調査担当者とアナリストは、Microsoft Teams をすばやく開き、ケース アクション ツール バーの [ **Microsoft Teams チームの表示** ] を選択して、ケースのチームに直接移動できます。
 
-Microsoft Team 統合を有効にする前に開かれたケースの場合、リスク調査担当者とアナリストは、ケース アクション ツール バーで [Microsoft Teams チームの作成] を選択することで、ケースの新しい **Microsoft Teams チーム** を作成できます。
+Microsoft Team 統合を有効にする前に開かれたケースの場合、リスク調査担当者とアナリストは、ケース アクション ツール バーの [Microsoft Teams チームの作成] を選択することで、ケースの新しい **Microsoft Teams チーム** を作成できます。
 
 ケースが解決されると、関連付けられている Microsoft チームが自動的にアーカイブされます (非表示になり、読み取り専用になります)。
 
-インサイダー リスク管理のMicrosoft Teamsの詳細については、「インサイダー リスク管理設定の[概要](insider-risk-management-settings.md#microsoft-teams-preview)」を参照してください。
+インサイダー リスク管理のための Microsoft Teams の詳細については、「インサイダー リスク管理 [設定の概要](insider-risk-management-settings.md#microsoft-teams-preview)」を参照してください。
 
 ### <a name="resolve-the-case"></a>ケースを解決する
 

@@ -21,16 +21,14 @@ description: Microsoft Purview コンプライアンス ポータルを使用し
 ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
-ms.openlocfilehash: 76cee49b8f37f946f9aa8e67bf40e8642f242fac
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 90a40127dd1a9efbf6334e8207ad35a6e5bd2231
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128818"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628663"
 ---
 # <a name="search-the-audit-log-in-the-compliance-portal"></a>コンプライアンス ポータルで監査ログを検索する
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 ユーザーが特定のドキュメントを表示したかどうか、またはメールボックスからアイテムを削除したかどうかを確認する必要がありますか。 その場合は、Microsoft Purview コンプライアンス ポータルで監査ログ検索を使用して統合監査ログを検索し、組織内のユーザーと管理者のアクティビティを確認できます。 何十もの Microsoft 365 サービスやソリューションで実行された何千ものユーザーや管理者の操作は、組織の統一された監査ログにキャプチャされ、記録されて保持されます。 組織内のユーザーは、監査ログ検索ツールを使用して、これらの操作の監査レコードを検索、表示、(CSV ファイルに) エクスポートできます。
 

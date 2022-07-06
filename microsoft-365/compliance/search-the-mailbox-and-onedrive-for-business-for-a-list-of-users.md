@@ -19,16 +19,14 @@ search.appverid:
 ms.assetid: 5f4f8206-2d6a-4cb2-bbc6-7a0698703cc0
 description: コンテンツ検索とこの記事のスクリプトを使用して、メールボックスとOneDrive for Businessサイトでユーザー グループを検索します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 838e565d385077416d1001afc02e1aceeebb5188
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 02ee9790d35eca411a9e27607a7e99ca962ddf05
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011632"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629169"
 ---
 # <a name="use-content-search-to-search-the-mailbox-and-onedrive-for-business-site-for-a-list-of-users"></a>コンテンツ検索を使用してメールボックスと OneDrive for Business サイトでユーザーのリストを探す
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 Security & Compliance PowerShell には、時間のかかる電子情報開示関連のタスクを自動化できるコマンドレットが多数用意されています。 現在、Microsoft Purview コンプライアンス ポータルでコンテンツ検索を作成して多数のカストディアン コンテンツの場所を検索するには、時間と準備が必要です。 検索を作成する前に、各OneDrive for Business サイトの URL を収集し、各メールボックスとOneDrive for Business サイトを検索に追加する必要があります。 今後のリリースでは、コンプライアンス ポータルで行う方が簡単になります。 それまでは、この記事のスクリプトを使用して、このプロセスを自動化できます。 このスクリプトでは、組織の MySite ドメインの名前 (URL `https://contoso-my.sharepoint.com`内の **contoso** など)、ユーザーの電子メール アドレスの一覧、新しいコンテンツ検索の名前、使用する検索クエリの入力を求めるメッセージが表示されます。 スクリプトは、リスト内の各ユーザーのOneDrive for Business URL を取得し、指定した検索クエリを使用して、メールボックスとOneDrive for Business サイトを検索するコンテンツ検索を作成して開始します。
 
@@ -46,11 +44,11 @@ Security & Compliance PowerShell には、時間のかかる電子情報開示�
 
 最初の手順では、SharePoint Online Management Shell をインストールします。 この手順ではシェルを使用する必要はありませんが、手順 3 で実行するスクリプトに必要な前提条件が含まれているため、シェルをインストールする必要があります。 これらの前提条件により、スクリプトは SharePoint Online と通信して、OneDrive for Business サイトの URL を取得できます。
 
-[SharePoint Online Management Shell 環境のセットアップ](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)に移動し、手順 1 と手順 2 を実行して、SharePoint Online Management Shell をインストールします。
+[SharePoint Online Management Shell 環境のセットアップに](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online)移動し、手順 1 と手順 2 を実行して SharePoint Online Management Shell をインストールします。
 
 ## <a name="step-2-generate-a-list-of-users"></a>手順 2: ユーザーの一覧を生成する
 
-手順 3 のスクリプトでは、メールボックスを検索するコンテンツ検索を作成し、ユーザーの一覧をOneDriveアカウントを作成します。 テキスト ファイルに電子メール アドレスを入力するか、PowerShell でコマンドを実行して電子メール アドレスの一覧を取得し、ファイルに保存することができます (手順 3 でスクリプトを保存するのと同じフォルダーにあります)。
+手順 3 のスクリプトでは、メールボックスと OneDrive アカウントでユーザーの一覧を検索するコンテンツ検索を作成します。 テキスト ファイルに電子メール アドレスを入力するか、PowerShell でコマンドを実行して電子メール アドレスの一覧を取得し、ファイルに保存することができます (手順 3 でスクリプトを保存するのと同じフォルダーにあります)。
 
 組織内のすべてのユーザーの電子メール アドレスの一覧を取得し、それをという名前`Users.txt`のテキスト ファイルに保存するために実行できる [powerShell](/powershell/exchange/connect-to-exchange-online-powershell) のExchange Onlineコマンドを次に示します。
 
@@ -64,7 +62,7 @@ Get-Mailbox -ResultSize unlimited -Filter { RecipientTypeDetails -eq 'UserMailbo
 
 この手順でスクリプトを実行すると、次の情報を求めるメッセージが表示されます。 スクリプトを実行する前に、必ずこの情報を準備しておいてください。
 
-- **ユーザー資格情報** - このスクリプトでは、資格情報を使用してSharePoint Online にアクセスし、OneDrive for Business URL を取得し、Security & Compliance PowerShell に接続します。
+- **ユーザー資格情報** - スクリプトは、資格情報を使用して SharePoint Online にアクセスし、OneDrive for Business URL を取得し、Security & Compliance PowerShell に接続します。
 
 - **MySite ドメインの名前** - MySite ドメインは、組織内のすべてのOneDrive for Business サイトを含むドメインです。 たとえば、MySite ドメインの URL が [MySite] ドメインの場合、 **https://contoso-my.sharepoint.com** スクリプトから MySite ドメインの名前の入力を求められたときに入力  `contoso` します。
 

@@ -19,16 +19,14 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9078078d201f7add89cc2ae0764f7655f33ad1e
-ms.sourcegitcommit: b16520d8bfe04b29274f7a129d90ef116bb77f69
+ms.openlocfilehash: 0b24dc0ddc69c9af7516ee844af3899ff92fe4c4
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65231827"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66626031"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 > [!NOTE]
 > この記事は管理者向けです。自分のメールボックスに PST ファイルをインポートする場合は、「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。

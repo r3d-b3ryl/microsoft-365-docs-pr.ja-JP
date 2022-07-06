@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: この記事では、電子情報開示 (Standard) ケースを管理する方法について説明します。 これには、ケースの終了、クローズされたケースの再び開き、ケースの削除が含まれます。
-ms.openlocfilehash: f527d206e7112534db557928daf6ab8942c60d1c
-ms.sourcegitcommit: 7dc7e9fd76adf848f941919f86ca25eecc704015
+ms.openlocfilehash: 5c2efd96f563eb2947b17e1cc857613d27981dac
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "65318318"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66628861"
 ---
 # <a name="close-reopen-and-delete-a-ediscovery-standard-case"></a>電子情報開示 (Standard) ケースを閉じる、再度開く、削除する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-この記事では、Microsoft 365の電子情報開示 (Standard) ケースMicrosoft Purview閉じる、再度開く、削除する方法について説明します。
+この記事では、Microsoft 365 のMicrosoft Purview eDiscovery (Standard) ケースを閉じる、開き直す、削除する方法について説明します。
 
 ## <a name="close-a-case"></a>ケースを閉じる
 
@@ -44,7 +42,7 @@ ms.locfileid: "65318318"
 
 ケースを閉じるには、次のようにします。
   
-1. コンプライアンス ポータルで [**電子情報開示** >  **(Standard)]** をクリックして、組織内の電子情報開示 (Standard) ケースの一覧を表示します。
+1. コンプライアンス ポータルで [**電子情報開示** 電子情報開示  > **(Standard)]** をクリックして、組織内の電子情報開示 (Standard) ケースの一覧を表示します。
 
 2. 閉じるケースの名前をクリックします。
 
@@ -66,7 +64,7 @@ ms.locfileid: "65318318"
 
 ケースを再度開くと、ケースが閉じられたときに配置されていた電子情報開示が保持された場合、自動的には復元されません。 ケースを再度開いた後は、[ **保留]** ページに移動し、前の保留を有効にする必要があります。 保留を有効にするには、選択してポップアップ ページを表示し、[**状態**] を[**On**] に切り替えます。
   
-1. コンプライアンス ポータルで **[電子情報開示** > **コア** ] をクリックして、組織内の電子情報開示 (Standard) ケースの一覧を表示します。
+1. コンプライアンス ポータルで [ **電子情報開示** > **コア** ] をクリックして、組織内の電子情報開示 (Standard) ケースの一覧を表示します。
 
 2. 再度開くケースの名前をクリックします。
 
@@ -104,7 +102,7 @@ ms.locfileid: "65318318"
 
 ケースを削除する方法は、次のとおりです。
 
-1. コンプライアンス ポータルで [**電子情報開示** >  **(Standard)]** をクリックして、組織内の電子情報開示 (Standard) ケースの一覧を表示します。
+1. コンプライアンス ポータルで [**電子情報開示** 電子情報開示  > **(Standard)]** をクリックして、組織内の電子情報開示 (Standard) ケースの一覧を表示します。
 
 2. 削除するケースの名前をクリックします。
 

@@ -18,16 +18,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: 組織のニーズを満たすルールを使用できるようにするカスタム機密情報タイプを作成する方法について説明します。
-ms.openlocfilehash: 69a9808cda2d30cc350da40f6c4f677598c6a000
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 14fb645a4b7f58f609995bc71edae24090c83cc7
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016418"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630987"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>組み込みの機密情報の種類をカスタマイズする
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 コンテンツ内の機密情報を探すときには、*ルール* と呼ばれるものの中にその情報を記述する必要があります。 Microsoft Purview データ損失防止 (DLP) には、すぐに利用できる最も一般的な機密情報の種類のルールが含まれています。 これらのルールを使用するには、それらをポリシーの中に組み込む必要があります。 これらの組み込みのルールを組織の特定のニーズに合わせて調整する必要がある場合は、カスタムの機密情報の種類を作成することができます。 このトピックでは、クレジット カード情報である可能性のある情報をより幅広い範囲で検出できるように、既存のルール コレクションが入っている XML ファイルをカスタマイズする方法について説明します。
 

@@ -15,25 +15,25 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: Configuration Managerを使用して構成パッケージをデバイスに展開し、サービスにオンボードします。
-ms.openlocfilehash: 2cca9cc073ca08c7fabb19511a4253e4a682057a
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 3bfeadd0008b548b8193333b3509e82831b162c9
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64760715"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630017"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-using-configuration-manager"></a>Windows 10を使用してデバイスをオンボードし、デバイスをWindows 11 Configuration Manager
 
 **適用対象:**
 
-- [Microsoft 365 エンドポイントのデータ損失防止 (DLP)](./endpoint-dlp-learn-about.md)
-- [インサイダー リスク管理](insider-risk-management.md#learn-about-insider-risk-management-in-microsoft-365)
+- [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
+- [インサイダー リスク管理](insider-risk-management.md)
 
 ### <a name="onboard-devices-using-system-center-configuration-manager"></a>System Center Configuration Managerを使用してデバイスをオンボードする
 
-1. [Microsoft コンプライアンス センター](https://compliance.microsoft.com/)から構成パッケージ .zip ファイル (*DeviceComplianceOnboardingPackage.zip*) を取得します。
+1. Microsoft Purview コンプライアンス ポータルから構成パッケージ .zip ファイル (*DeviceComplianceOnboardingPackage.zip*) [を](https://compliance.microsoft.com/)取得します。
 
-2. ナビゲーション ウィンドウで、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a> > **Device OnboardingOnboarding** >  を選択します。
+2. ナビゲーション ウィンドウで、[**デバイスオンボード** > の <a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定]**</a> >  を選択 **します。**
 
 3. **[展開方法]** フィールドで、**Microsoft Endpoint Configuration Manager 2012/2012 R2/1511/1602** を選択します。
 
@@ -41,12 +41,12 @@ ms.locfileid: "64760715"
 
 5. パッケージを展開するネットワーク管理者がアクセスできる読み取り専用の共有場所に、.zip ファイルの内容を抽出します。 *DeviceComplianceOnboardingScript.cmd* という名前のファイルが必要です。
 
-6. System Center [2012 R2 Configuration Managerの記事の「パッケージとプログラム」の手順に従って、パッケージを](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))展開します。
+6. [System Center 2012 R2 のパッケージとプログラム](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))のConfiguration Manager記事の手順に従って、パッケージを展開します。
 
 7. パッケージをデプロイする定義済みのデバイス コレクションを選択します。
 
 > [!NOTE]
-> Microsoft 365情報保護では、[Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボードはサポートされません。 インストールまたはアップグレードWindows実行した後、ユーザーが OOBE を完了していることを確認します。
+> Microsoft 365 の情報保護では、 [Out-Of-Box Experience (OOBE)](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) フェーズ中のオンボードはサポートされていません。 Windows のインストールまたはアップグレードを実行した後、ユーザーが OOBE を完了していることを確認します。
 
 > [!TIP]
 > デバイスのオンボード後、検出テストを実行して、デバイスがサービスに適切にオンボードされていることを確認できます。 詳細については、「[新しくオンボードされた Microsoft Defender for Endpoint デバイスで検出テストを実行する](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)」 を参照してください。
@@ -56,7 +56,7 @@ ms.locfileid: "64760715"
 >
 > この動作は、(種類 REG_DWORDの) "OnboardingState" レジストリ値が 1 かどうかを確認する検出規則を作成することによって実現できます。
 > このレジストリ値は、"HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status" の下にあります。
-詳細については、「[System Center 2012 R2 Configuration Managerでの検出方法の構成](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)」を参照してください。
+詳細については、「[System Center 2012 R2 Configuration Managerで検出方法を構成する](/previous-versions/system-center/system-center-2012-R2/gg682159(v=technet.10)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)」を参照してください。
 
 ### <a name="configure-sample-collection-settings"></a>サンプル コレクションの設定を構成する
 
@@ -138,15 +138,15 @@ System Center Configuration Managerコンプライアンスの詳細について
 > [!NOTE]
 > オンボード ポリシーとオフボード ポリシーを同じデバイスに同時にデプロイすることはできません。そうしないと、予期しない競合が発生します。
 
-### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>現在のブランチを使用Microsoft Endpoint Configuration Managerオフボード デバイス
+### <a name="offboard-devices-using-microsoft-endpoint-configuration-manager-current-branch"></a>Microsoft Endpoint Configuration Manager現在のブランチを使用するオフボード デバイス
 
-現在のブランチMicrosoft Endpoint Configuration Manager使用する場合は、「[オフボード構成ファイルを作成する](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)」を参照してください。
+Microsoft Endpoint Configuration Manager現在のブランチを使用する場合は、「[オフボード構成ファイルを作成する](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)」を参照してください。
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>System Center 2012 R2 Configuration Managerを使用するオフボード デバイス
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>System Center 2012 R2 Configuration Managerを使用したオフボード デバイス
 
-1. オフボード パッケージを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a>から取得します。
+1. オフボード パッケージを<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>から取得します。
 
-2. ナビゲーション ウィンドウで、<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**設定**</a> >  **Device onboardingOffboarding を**> 選択します。
+2. ナビゲーション ウィンドウで、[デバイスオン **ボーディング**> **オフボーディング**<a href="https://go.microsoft.com/fwlink/p/?linkid=2174201" target="_blank">**の設定]**</a> >   を選択します。
 
 3. オペレーティング システムとしてWindows 10を選択します。
 
@@ -156,7 +156,7 @@ System Center Configuration Managerコンプライアンスの詳細について
 
 6. パッケージを展開するネットワーク管理者がアクセスできる読み取り専用の共有場所に、.zip ファイルの内容を抽出します。 *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd* という名前のファイルが必要です。
 
-7. System Center [2012 R2 Configuration Managerの記事の「パッケージとプログラム」の手順に従って、パッケージを](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))展開します。
+7. [System Center 2012 R2 のパッケージとプログラム](/previous-versions/system-center/system-center-2012-R2/gg699369(v=technet.10))のConfiguration Manager記事の手順に従って、パッケージを展開します。
 
 8. パッケージをデプロイする定義済みのデバイス コレクションを選択します。
 
@@ -165,13 +165,13 @@ System Center Configuration Managerコンプライアンスの詳細について
 
 ## <a name="monitor-device-configuration"></a>デバイス構成を監視する
 
-現在のブランチMicrosoft Endpoint Configuration Manager使用している場合は、Configuration Manager コンソールで組み込みのMicrosoft Defender for Endpoint ダッシュボードを使用します。 詳細については、「 [Microsoft Defender Advanced Threat Protection - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)」を参照してください。
+Microsoft Endpoint Configuration Manager現在のブランチを使用している場合は、Configuration Manager コンソールの組み込みのMicrosoft Defender for Endpoint ダッシュボードを使用します。 詳細については、「 [Microsoft Defender Advanced Threat Protection - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)」を参照してください。
 
 System Center 2012 R2 Configuration Managerを使用している場合、監視は次の 2 つの部分で構成されます。
 
 1. 構成パッケージが正しくデプロイされ、ネットワーク内のデバイスで実行 (または正常に実行されました) されていることを確認します。
 
-2. デバイスがMicrosoft 365デバイスオンボード サービスに準拠していることを確認します (これにより、デバイスがオンボード プロセスを完了し、サービスにデータをレポートし続けることができます)。
+2. デバイスが Microsoft 365 デバイスオンボード サービスに準拠していることを確認します (これにより、デバイスがオンボード プロセスを完了し、サービスにデータをレポートし続けることができます)。
 
 ### <a name="confirm-the-configuration-package-has-been-correctly-deployed"></a>構成パッケージが正しくデプロイされたことを確認する
 
@@ -187,9 +187,9 @@ System Center 2012 R2 Configuration Managerを使用している場合、監視�
 
     ![Configuration Manager、エラーなしで正常にデプロイされたことを示します。](../media/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-365-endpoint-data-loss-prevention-service"></a>デバイスがMicrosoft 365 エンドポイントデータ損失防止サービスに準拠していることを確認します
+### <a name="check-that-the-devices-are-compliant-with-the-endpoint-data-loss-prevention-service"></a>デバイスが Endpoint データ損失防止サービスに準拠していることを確認する
 
-System Center 2012 R2 Configuration Managerで構成項目のコンプライアンス規則を設定して、デプロイを監視できます。
+System Center 2012 R2 Configuration Managerで構成項目のコンプライアンス規則を設定して、展開を監視できます。
 
 > [!NOTE]
 > この手順とレジストリ エントリは、Endpoint DLP と Defender for Endpoint に適用されます。
@@ -206,7 +206,7 @@ Value: "1"
 
 詳細については、「[System Center 2012 R2 Configuration Managerのコンプライアンス設定の概要](/previous-versions/system-center/system-center-2012-R2/gg682139(v=technet.10))」を参照してください。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [グループ ポリシーを使用してWindows 10デバイスとWindows 11 デバイスをオンボードする](device-onboarding-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード](device-onboarding-mdm.md)

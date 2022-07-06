@@ -17,21 +17,19 @@ search.appverid:
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: 電子情報開示 (プレミアム) を使用して、電子メールを通じて訴訟ホールド通知を送信およびフォローアップし、義務の状態を監視する方法について説明します。
-ms.openlocfilehash: 21f02f25518fe2ff1c2e4bf80e43de476d381595
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+description: 電子情報開示 (Premium) を使用して、電子メールによる訴訟ホールド通知の送信とフォローアップ、および義務の状態の監視を行う方法について説明します。
+ms.openlocfilehash: 3322228dbdc27463bde16de0aa71900cbc80ca58
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65100613"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66627793"
 ---
 # <a name="acknowledge-a-hold-notification"></a>保留通知を確認する
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
 規制の要求または調査に対応する場合、電子保存情報 (ESI) を保持する義務と、アクティブまたは差し迫った法的問題に関連する可能性のある資料を保管担当者に通知することが必要になる場合があります。 送信後、法務チームは、各カストディアンが与えられた指示に従うことを受け取り、読み、理解し、同意したことを知る必要があります。
 
-電子情報開示 (プレミアム) を使用すると、カストディアンのフォローアップにかかる時間、コスト、労力を削減するために、電子情報開示を使用して、電子メールで訴訟ホールド通知を送信してフォローアップできます。 電子メール通知に加えて、各カストディアンは個別のコンプライアンス ポータルにアクセスできます。これにより、カストディアンは、義務状態の変更について常に通知を受け取ることができます。
+電子情報開示 (Premium) を使用すると、保管担当者のフォローアップにかかる時間、コスト、労力を削減するために、電子情報開示 (Premium) を使用すると、電子メールを介して訴訟ホールド通知を送信してフォローアップできます。 電子メール通知に加えて、各カストディアンは個別のコンプライアンス ポータルにアクセスできます。これにより、カストディアンは、義務状態の変更について常に通知を受け取ることができます。
 
 ## <a name="email-notifications"></a>メール通知
 

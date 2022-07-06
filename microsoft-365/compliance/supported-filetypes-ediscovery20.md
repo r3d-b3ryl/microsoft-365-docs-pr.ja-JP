@@ -1,5 +1,5 @@
 ---
-title: 電子情報開示でサポートされているファイルの種類 (プレミアム)
+title: 電子情報開示でサポートされているファイルの種類 (Premium)
 f1.keywords:
 - NOCSH
 ms.author: v-tophillips
@@ -14,20 +14,18 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: 電子情報開示 (プレミアム) でサポートされているファイルの種類 (電子情報開示 (プレミアム) の OCR 機能でサポートされているイメージ ファイルの種類を含む、Microsoft 365電子情報開示でサポートされているファイルの種類の一覧。
+description: Microsoft 365 電子情報開示 (Premium) でサポートされているファイルの種類の一覧。電子情報開示 (Premium) の OCR 機能でサポートされているイメージ ファイルの種類を含みます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 422200b3015ff86566507cbe3f63bc2a75a84bea
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: faa367800653e320621336e98f9e8fc684b222ee
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65095798"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66631031"
 ---
-# <a name="supported-file-types-in-ediscovery-premium"></a>電子情報開示でサポートされているファイルの種類 (プレミアム)
+# <a name="supported-file-types-in-ediscovery-premium"></a>電子情報開示でサポートされているファイルの種類 (Premium)
 
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
-
-Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレベルで多くのファイルの種類をサポートしています。 サポート ファイルの種類については、この記事の次の表で説明します。 この一覧は確定されておらず、検証テストを続行する際に新しいファイルの種類を追加します。 これらのテーブルは、テキスト抽出 (および画像ファイルの光学式文字認識または OCR テキスト抽出) でファイルの種類がサポートされているかどうかを示します。ネイティブ ビューアーで表示でき、電子情報開示の注釈ビューアー (プレミアム) でもサポートされます。
+Microsoft Purview eDiscovery (Premium) では、さまざまなレベルで多くのファイルの種類がサポートされています。 サポート ファイルの種類については、この記事の次の表で説明します。 この一覧は確定されておらず、検証テストを続行する際に新しいファイルの種類を追加します。 これらのテーブルは、テキスト抽出 (および画像ファイルの光学式文字認識または OCR テキスト抽出) でファイルの種類がサポートされているかどうかを示し、ネイティブ ビューアーで表示でき、電子情報開示 (Premium) の注釈ビューアーでもサポートされます。
 
 ## <a name="archive--container"></a>アーカイブ/コンテナー
 
@@ -51,12 +49,12 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/mp4|はい|はい|いいえ|はい|いいえ|.f4v; .m4a; .m4v;.mp4; .mp4v;.mpeg; .mpeg4|
-|audio/mpeg|はい|はい|いいえ|はい|いいえ|.mpeg|
-|video/3gpp|はい|はい|いいえ|はい|いいえ|.3gp|
-|video/3gpp2|はい|はい|いいえ|はい|いいえ|.3g2; .3gp2|
-|video/quicktime|はい|はい|いいえ|はい|いいえ|.moov; .mov; .qt|
-|video/x-m4v|はい|はい|いいえ|はい|いいえ|.m4v|
+|application/mp4|はい|はい|不要|はい|不要|.f4v; .m4a; .m4v;.mp4; .mp4v;.mpeg; .mpeg4|
+|audio/mpeg|はい|はい|不要|はい|不要|.mpeg|
+|video/3gpp|はい|はい|不要|はい|不要|.3gp|
+|video/3gpp2|はい|はい|不要|はい|不要|.3g2; .3gp2|
+|video/quicktime|はい|はい|不要|はい|不要|.moov; .mov; .qt|
+|video/x-m4v|はい|はい|不要|はい|不要|.m4v|
 |
 
 ## <a name="database"></a>Database
@@ -67,7 +65,7 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/x-msaccess|はい|はい|はい|いいえ|いいえ|.mdb|
+|application/x-msaccess|はい|はい|はい|不要|不要|.mdb|
 |
 
 ## <a name="email"></a>メール
@@ -108,7 +106,7 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 |text/html|はい|はい|はい|はい|はい|.htm;.html; .shtml|
 |
 
-## <a name="image"></a>イメージ
+## <a name="image"></a>Image
 
 <br>
 
@@ -121,7 +119,7 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 |image/gif|はい|はい|はい|はい|はい|.gif|
 |image/jpeg|はい|はい|はい|はい|はい|.jpeg;.jpg|
 |image/png|はい|はい|はい|はい|はい|.png|
-|image/svg+xml|はい|はい|はい|はい|いいえ|.svg|
+|image/svg+xml|はい|はい|はい|はい|不要|.svg|
 |image/tiff|はい|はい|はい|はい|はい|.tif|
 |image/vnd.dwg|はい|はい|はい|はい|はい|.dwg; .dxf|
 |image/wmf|はい|はい|はい|はい|はい|.wmf|
@@ -136,9 +134,9 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/vnd.ms-excel|はい|はい|はい|はい|はい|.dat;.xls|
-|application/vnd.ms-excel.sheet.binary.macroenabled.12|はい|はい|はい|はい|いいえ|.xlsb|
+|application/vnd.ms-excel.sheet.binary.macroenabled.12|はい|はい|はい|はい|不要|.xlsb|
 |application/vnd.ms-excel.sheet.macroenabled.12|はい|はい|はい|はい|はい|.xlsm|
-|application/vnd.ms-excel.template.macroenabled.12|はい|はい|はい|いいえ|いいえ|.xltm|
+|application/vnd.ms-excel.template.macroenabled.12|はい|はい|はい|不要|不要|.xltm|
 |application/vnd.openxmlformats-officedocument.spreadsheetml.sheet|はい|はい|はい|はい|はい|.xlsx|
 |application/vnd.openxmlformats-officedocument.spreadsheetml.template|はい|はい|はい|はい|はい|.xltx|
 |
@@ -151,7 +149,7 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/onenote|はい|はい|はい|いいえ|いいえ|.one|
+|application/onenote|はい|はい|はい|不要|不要|.one|
 |
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
@@ -176,7 +174,7 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-project|はい|はい|はい|いいえ|はい|.mpp|
+|application/vnd.ms-project|はい|はい|はい|不要|はい|.mpp|
 |
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher
@@ -198,7 +196,7 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-visio.drawing|はい|はい|はい|はい|いいえ||
+|application/vnd.ms-visio.drawing|はい|はい|はい|はい|不要||
 |application/vnd.visio|はい|はい|はい|はい|はい|.vsd|
 |
 
@@ -226,8 +224,8 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.ms-works-ss|はい|はい|いいえ|いいえ|いいえ|.wps|
-|application/vnd.ms-works-wp|はい|はい|いいえ|いいえ|いいえ|.wps|
+|application/vnd.ms-works-ss|はい|はい|不要|不要|不要|.wps|
+|application/vnd.ms-works-wp|はい|はい|不要|不要|不要|.wps|
 |
 
 ## <a name="open-document-format"></a>ドキュメント形式を開く
@@ -250,10 +248,10 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 |application/json|はい|はい|はい|はい|はい|×|
-|application/octet-stream|はい|いいえ|いいえ|いいえ|いいえ|.fluid|
-|application/vnd.ms-graph|はい|はい|いいえ|いいえ|いいえ||
-|application/winhlp|はい|はい|いいえ|いいえ|いいえ|.hlp|
-|application/x-tnef|はい|はい|いいえ|いいえ|いいえ||
+|application/octet-stream|はい|不要|不要|不要|不要|.fluid|
+|application/vnd.ms-graph|はい|はい|不要|いいえ|いいえ||
+|application/winhlp|はい|はい|不要|不要|不要|.hlp|
+|application/x-tnef|はい|はい|不要|いいえ|いいえ||
 |
 
 ## <a name="plain-text"></a>プレーン テキスト
@@ -287,9 +285,9 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.wordperfect;version=5.0|はい|はい|はい|いいえ|いいえ|.wpd|
-|application/vnd.wordperfect;version=5.1|はい|はい|はい|いいえ|いいえ|.wpd|
-|application/vnd.wordperfect;version=6.x|はい|はい|はい|いいえ|いいえ|.wpd|
+|application/vnd.wordperfect;version=5.0|はい|はい|はい|不要|不要|.wpd|
+|application/vnd.wordperfect;version=5.1|はい|はい|はい|不要|不要|.wpd|
+|application/vnd.wordperfect;version=6.x|はい|はい|はい|不要|不要|.wpd|
 |
 
 ## <a name="word-pro"></a>Word Pro
@@ -300,5 +298,5 @@ Microsoft Purview 電子情報開示 (プレミアム) は、さまざまなレ�
 
 |Mime の種類|ファイルの識別|メタデータの抽出|テキスト抽出|ネイティブ ビューアー|ビューアーに注釈を付ける|可能な拡張機能|
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-|application/vnd.lotus-wordpro|はい|はい|いいえ|いいえ|いいえ|.lwp|
+|application/vnd.lotus-wordpro|はい|はい|不要|不要|不要|.lwp|
 |

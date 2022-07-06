@@ -17,18 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: SharePoint と OneDrive の保持のしくみについて説明します。
-ms.openlocfilehash: 8515b84f21677644be821ca129ab02083121ab84
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 3fb316c0780ccb5c854e12dae8bde450c877f1d2
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468856"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66629191"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
-
-[!include[Purview banner](../includes/purview-rebrand-banner.md)]
 
 この記事の情報は[保持の詳細](retention.md)に関する記事を補足するもので、SharePoint と OneDrive に固有の情報が含まれています。
 
