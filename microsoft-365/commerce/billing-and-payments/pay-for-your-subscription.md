@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 05edb03d34644d1f09acaad22bbcff01b3654ac3
-ms.sourcegitcommit: 6a981ca15bac84adbbed67341c89235029aad476
+ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/27/2022
-ms.locfileid: "65753850"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663814"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -53,7 +53,7 @@ ms.locfileid: "65753850"
 
 [定期的な支払いに関するインド準備銀行の規制の詳細については、こちらをご覧ください](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0)。
 
-2022 年 7 月 1 日に、Microsoft およびその他のオンライン マーチャントはクレジット カード情報を保存しなくなります。 この規制に準拠するために、Microsoft は保存されているすべてのカードの詳細をMicrosoft 365 管理センターから削除します。 サービスの中断を回避するには、支払い方法を追加し、すべてのサブスクリプションと課金プロファイルに対して 1 回限りの支払いを行う必要があります。
+2022 年 9 月 30 日に、Microsoft およびその他のオンライン マーチャントはクレジット カード情報を保存しなくなります。 この規制に準拠するために、Microsoft は保存されているすべてのカードの詳細をMicrosoft 365 管理センターから削除します。 サービスの中断を回避するには、支払い方法を追加し、すべてのサブスクリプションと課金プロファイルに対して 1 回限りの支払いを行う必要があります。
 
 [カードの保存に関するインド準備銀行の規制について説ついては、こちらをご覧ください](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211)。
 

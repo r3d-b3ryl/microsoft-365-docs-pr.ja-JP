@@ -22,12 +22,12 @@ description: Microsoft Purview Information Protection の秘密度ラベルを�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: db050d3e26f19901e98052be5051b9eebce21990
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637951"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663484"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -134,13 +134,13 @@ Microsoft Purview Information Protection の秘密度ラベルを使用すると
 
 ![秘密度ラベルの範囲オプション。](../media/sensitivity-labels-scopes.png)
 
-既定では、**ファイルとメール** の範囲が常に選択されています。 その他の範囲は、テナントに対して機能が有効になると、既定で選択されます。
+既定では、**アイテム** の範囲が常に選択されています。 その他の範囲は、テナントに対して機能が有効になると、既定で選択されます。
 
 - **グループとサイト**: [コンテナーの秘密度ラベルを有効化してラベルを同期する](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
 - **スキーマ化されたデータ アセット**: [Microsoft Purview Data Map のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)
 
-すべての範囲が選択されないように既定値を変更すると、選択していない範囲の構成設定の最初のページが表示されますが、設定を構成することはできません。 たとえば、ファイルとメールのスコープが選択されていない場合、次のページでオプションを選択することはできません。
+すべての範囲が選択されないように既定値を変更すると、選択していない範囲の構成設定の最初のページが表示されますが、設定を構成することはできません。 たとえば、アイテムの範囲が選択されていない場合、次のページでオプションを選択することはできません。
 
 ![秘密度ラベルの使用できないオプション。](../media/sensitivity-labels-unavailable-settings.png)
 
@@ -148,7 +148,7 @@ Microsoft Purview Information Protection の秘密度ラベルを使用すると
 
 ### <a name="label-priority-order-matters"></a>ラベルの優先度 (順序の問題)
 
-管理センターで秘密度ラベルを作成すると、そのラベルは **[ラベル]** ページの **[秘密度]** タブにリスト表示されます。このリストでは、ラベルの順序が重要になります。その理由は、この順序がラベルの優先度を反映しているからです。最も制限の厳しい秘密度ラベル (「極秘」など) はリストの **末尾** に表示されるようにして、制限の緩い秘密度ラベルはリストの **先頭** に表示されるようにします。
+秘密度ラベルを Microsoft Purview コンプライアンス センターで作成すると、そのラベルは **[ラベル]** ページの **[秘密度]** タブにあるリストに表示されます。 このリストでは、ラベルの順序が重要になります。その理由は、この順序がラベルの優先度を反映しているためです。 最も厳密な機密ラベル (「極秘」など) はリストの **下側** に表示されるようにして、最も厳密でない機密ラベル (「公開」など) はリストの **上側** に表示されるようにします。
 
 ドキュメント、メール、コンテナーなどのアイテムに適用できる秘密度ラベルは 1 つだけです。 ラベルの分類を低く変更する場合の正当性を示すようユーザーに要求するオプションを選択する場合は、より低い分類はこの一覧の順序によって特定されます。 ただし、このオプションは、親ラベルの優先度を共有するサブラベルには適用されません。
 
