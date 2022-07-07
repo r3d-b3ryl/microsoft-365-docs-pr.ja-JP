@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: b80bbb747ab9a0aefebaa4dd5721370ba56a3890
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: b0c9e5793ec0ffc97cbbac0308a7e362da279e1b
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057717"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663645"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -37,7 +37,7 @@ ms.locfileid: "66057717"
 - Microsoft 365 Defender
 
 >[!Note]
->この記事では、Microsoft 365 Defenderのセキュリティ アラートについて説明します。 ただし、アクティビティ アラートを使用すると、ユーザーがMicrosoft 365で特定のアクティビティを実行したときに、自分や他の管理者に電子メール通知を送信できます。 詳細については、「[アクティビティ アラートの作成 - Microsoft Purview |」を参照してください。Microsoft Docs](../../compliance/create-activity-alerts.md)。
+>この記事では、Microsoft 365 Defenderのセキュリティ アラートについて説明します。 ただし、アクティビティ アラートを使用すると、ユーザーが Microsoft 365 で特定のアクティビティを実行したときに、自分または他の管理者に電子メール通知を送信できます。 詳細については、「[アクティビティ アラートの作成 - Microsoft Purview |」を参照してください。Microsoft Docs](../../compliance/create-activity-alerts.md)。
 
 アラートは、すべてのインシデントの基礎であり、環境内で悪意のあるイベントまたは疑わしいイベントが発生したことを示します。 通常、アラートは広範な攻撃の一部であり、インシデントに関する手がかりを提供します。
 
@@ -170,23 +170,103 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-select-related.png" alt-text="Microsoft 365 Defender ポータルでの関連アラートの管理":::
 
-過去に同様のアラートが既に分類されていた場合は、Microsoft 365 Defender推奨事項を使用して、他のアラートがどのように解決されたかを確認することで、時間を節約できます。 [概要の詳細] セクションで、**おすすめ** を選択します。
+過去に同様のアラートが既に分類されていた場合は、Microsoft 365 Defender推奨事項を使用して、他のアラートがどのように解決されたかを確認することで、時間を節約できます。 [概要の詳細] セクションで、[ **推奨事項**] を選択します。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations.png" alt-text="アラートの推奨事項を選択する例":::
 
-**[おすすめ**] タブには、調査、修復、防止に関する次のステップのアクションとアドバイスが表示されます。 次に例を示します。
+[ **推奨事項]** タブには、調査、修復、防止に関する次のステップのアクションとアドバイスが表示されます。 次に例を示します。
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-recommendations-example.png" alt-text="アラートの推奨事項の例":::
 
+ 
+## <a name="suppress-an-alert"></a>アラートを抑制する
+
+セキュリティ オペレーション センター (SOC) アナリストとして、最も重要な問題の 1 つは、毎日トリガーされる膨大な数のアラートをトリアージすることです。 優先度の低いアラートの場合、アナリストは引き続き手動プロセスである傾向があるアラートをトリアージして解決する必要があります。 SOC アナリストの時間は貴重であり、重要度の高いアラートと優先度の高いアラートのみに焦点を当てたいと考えています。
+
+アラート抑制は、事前にアラートを調整および管理する機能を提供します。 これにより、アラート キューが効率化され、特定の予想される組織の動作が発生し、ルール条件が満たされるたびに、アラートを自動的に非表示または解決することでトリアージ時間を節約できます。 
+
+ファイル、プロセス、スケジュールされたタスク、アラートをトリガーするその他の多くの証拠の種類など、"証拠の種類" に基づいてルール条件を作成できます。 ルールを作成した後、ユーザーは、選択したアラートまたはルールの条件を満たすアラートの種類にルールを適用して、アラートを抑制できます。 
+
+> [!NOTE]
+> アラートの抑制はお勧めしません。 ただし、特定の状況では、既知の内部ビジネス アプリケーションまたはセキュリティ テストによって予期されるアクティビティがトリガーされ、これらのアラートを表示したくない場合があります。 そのため、アラートの抑制ルールを作成できます。 
+
+### <a name="create-rule-conditions-to-suppress-alerts"></a>アラートを抑制するルール条件を作成する
+
+アラートの抑制ルールを作成するには:
+
+1. 調査対象のアラートを選択します。 メイン アラート ページで、アラート ページの [概要の詳細] セクションで [ **抑制ルールの作成** ] を選択します。 
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-click.png" lightbox="../../media/investigate-alerts/suppression-click.png" alt-text="分離ルールの作成アクションのスクリーンショット。":::
+
+2. [ **抑制ルールの作成** ] ウィンドウで、[ **このアラートの種類のみ** ] を選択して、選択したアラートにルールを適用します。
+
+    ただし、ルールの条件を満たすアラートの種類にルールを適用するには、 **IOC の条件に基づいて [任意のアラートの種類**] を選択します。
+ 
+    IOC は、アラートをトリガーするファイル、プロセス、スケジュールされたタスク、その他の証拠の種類などのインジケーターです。
+     
+3. [ **IOC** ] セクションで、[ **任意の IOC** ] を選択して、アラートの原因となった "証拠" に関係なくアラートを抑制します。 
+
+    複数のルール条件を設定するには、[ **IOC の選択] を選択します**。 **AND**、**OR**、およびグループ化オプションを使用して、アラートの原因となるこれらの複数の "証拠の種類" の間にリレーションシップを構築します。
+ 
+    1. たとえば、[ **条件** ] セクションで、[トリガーする証拠 **エンティティ ロール: トリガー**]、[ **等しい** ] を選択し、ドロップダウン リストから証拠の種類を選択します。 
+
+    :::image type="content" source="../../media/investigate-alerts/evidence-types-drop-down-list.png" alt-text="[証拠の種類] ドロップダウン リストのスクリーンショット。" lightbox="../../media/investigate-alerts/evidence-types-drop-down-list.png":::
+
+    2. この "証拠" のすべてのプロパティは、次の各フィールドに新しいサブグループとして自動的に設定されます。
+    :::image type="content" source="../../media/investigate-alerts/properties-evidence.png" alt-text="証拠の自動入力のプロパティのスクリーンショット。" lightbox="../../media/investigate-alerts/properties-evidence.png" :::
+
+    > [!NOTE]
+    > 条件値では大文字と小文字が区別されません。 
+
+    3. 要件に従って 、この "証拠" のプロパティを編集または削除できます (サポートされている場合はワイルドカードを使用)。
+
+    4. ファイルとプロセス以外の AMSI スクリプト、WMI イベント、スケジュールされたタスクは、証拠の種類ドロップダウン リストから選択できる新しく追加された証拠の種類の一部です。
+    :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="他の種類の証拠のスクリーンショット。" lightbox="../../media/investigate-alerts/other-evidence-types.png":::
+
+    5. 別の IOC を追加するには、[ **フィルターの追加]** をクリックします。 
+    > [!NOTE]
+    > アラートの種類を抑制するには、ルール条件に少なくとも 1 つの IOC を追加する必要があります。
+    
+4. または、**IOC** セクション **で [すべてのアラート 7 関連 IOC に自動入力**] を選択して、すべてのアラート関連の証拠の種類とそのプロパティを [**条件**] セクションに一度に追加することもできます。
+    :::image type="content" source="../../media/investigate-alerts/autofill-iocs.png" alt-text="アラート関連のすべての IOC に自動入力するスクリーンショット。" lightbox="../../media/investigate-alerts/autofill-iocs.png":::
+
+5. [ **スコープ** ] セクションで、特定のデバイス、複数のデバイス、デバイス グループ、組織全体、またはユーザーを選択して、[ **条件** ] サブセクションでスコープを設定します。
+    > [!NOTE]
+    > **スコープ** が **ユーザー** のみに設定されている場合は、管理アクセス許可が必要です。 スコープが **デバイス****、デバイス グループ** と **共に****ユーザー** に設定されている場合、管理アクセス許可は必要ありません。
+
+:::image type="content" source="../../media/investigate-alerts/suppression-choose-scope.png" lightbox="../../media/investigate-alerts/suppression-choose-scope.png" alt-text="[抑制ルールの作成] ウィンドウのスクリーンショット: 条件、スコープ、アクション。":::
+ 
+6. [ **アクション]** セクションで、[ **アラートの非表示]** または [アラートの **解決**] のいずれかの適切なアクションを実行します。
+    **名前**、**コメント** と入力し、[**保存**] をクリックします。
+
+7. **今後、IOC がブロックされないようにします。**<br>
+抑制ルールを保存したら、表示された **[サプレッション ルールの作成に成功しました** ] ページで、選択した IOC をインジケーターとして "許可リスト" に追加し、今後ブロックされないようにすることができます。 <br>
+アラート関連のすべての IOC が一覧に表示されます。 <br>
+既定では、抑制条件で選択された IOC が選択されます。
+      1. たとえば、許可するファイルを **Select evidence (IOC) に追加して許可** することができます。 既定では、アラートをトリガーしたファイルが選択されます。
+      1. 適用するスコープを **選択するスコープを入力します**。 既定では、関連するアラートのスコープが選択されます。
+      1. [**保存**] をクリックします。 これで、ファイルは許可リストに含まれているのでブロックされません。
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="抑制ルールの作成が成功したスクリーンショット。 ":::
+
+8.  新しい抑制アラート機能は既定で使用できます。 <br> ただし、[**設定] > [エンドポイント] > [アラート抑制]** に移動し、[**新しい抑制ルールの作成が有効]** トグルをオフにすることで、Microsoft 365 Defender ポータルで以前のエクスペリエンスに戻すことができます。 
+ 
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="抑制ルール作成機能のオン/オフを切り替えるトグルのスクリーンショット。":::
+
+9.  **既存のルールを編集する:** <br> 関連するルールを選択し、[ルールの **編集]** をクリックすると、Microsoft Defender ポータルで常にルールの条件と新しいルールまたは既存のルールの範囲を追加または変更できます。    
+    既存のルールを編集するには、[ **新しい抑制ルールの作成が有効]** トグルが有効になっていることを確認します。         
+
+    :::image type="content" source="../../media/investigate-alerts/suppression-toggle-on-edit.png" lightbox="../../media/investigate-alerts/suppression-toggle-on-edit.png" alt-text="抑制ルールの編集のスクリーンショット。":::
+  
 ## <a name="resolve-an-alert"></a>アラートを解決する
 
 アラートの分析が完了し、解決できたら、アラートまたは類似の **アラートの [アラートの管理**] ウィンドウに移動し、状態を **解決済み** としてマークし、脅威の種類、情報、アクティビティの種類を含む **予想されるアクティビティ、** または **偽陽性** で **True 陽性** として分類します。
 
 アラートを分類すると、検出品質を向上Microsoft 365 Defender役立ちます。
 
-## <a name="use-power-automate-to-triage-alerts"></a>Power Automateを使用してアラートをトリアージする
+## <a name="use-power-automate-to-triage-alerts"></a>Power Automate を使用してアラートをトリアージする
 
-最新のセキュリティ運用 (SecOps) チームは、効果的に動作するために自動化が必要です。 実際の脅威の捜索と調査に重点を置くために、SecOps チームはPower Automateを使用してアラートの一覧をトリアージし、脅威ではないアラートを排除します。  
+最新のセキュリティ運用 (SecOps) チームは、効果的に動作するために自動化が必要です。 実際の脅威の捜索と調査に専念するために、SecOps チームは Power Automate を使用してアラートの一覧をトリアージし、脅威ではないアラートを排除します。  
 
 ### <a name="criteria-for-resolving-alerts"></a>アラートを解決するための条件
 
@@ -194,19 +274,19 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 
 - ユーザーが高リスクとしてタグ付けされていない
 
-両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、アラートが解決された後、Microsoft Teamsに投稿されます。
+両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、アラートが解決された後、Microsoft Teams に投稿されます。
 
-### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud AppsにConnect Power Automateする
+### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Power Automate をMicrosoft Defender for Cloud Appsに接続する
 
-自動化を作成するには、Power AutomateをMicrosoft Defender for Cloud Appsに接続する前に API トークンが必要です。
+自動化を作成するには、Power Automate をMicrosoft Defender for Cloud Appsに接続する前に API トークンが必要です。
 
-1. **[設定**] をクリックし、[**セキュリティ拡張機能**] を選択し、[**API トークン**] タブで [**トークンの追加**] をクリックします。
+1. [**設定] を** クリックし、[**セキュリティ拡張機能**] を選択し、[**API トークン**] タブで [**トークンの追加**] をクリックします。
 
 2. トークンの名前を指定し、[ **生成**] をクリックします。 後で必要になるので、トークンを保存します。
 
 ### <a name="create-an-automated-flow"></a>自動化されたフローを作成する
 
-この短いビデオでは、スムーズなワークフローを作成するために自動化が効率的に機能する方法と、Power Automateを Defender for Cloud Apps に接続する方法について説明します。 
+この短いビデオでは、スムーズなワークフローを作成するために自動化が効率的に機能する方法と、Power Automate を Defender for Cloud Apps に接続する方法について説明します。 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWFIRn]
 
 ## <a name="next-steps"></a>次の手順

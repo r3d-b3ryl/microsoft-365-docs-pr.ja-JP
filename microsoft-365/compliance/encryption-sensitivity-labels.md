@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2f41fbec0018008d2a59ad8960a7a0cd89f1a556
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625393"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663778"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -81,13 +81,13 @@ ms.locfileid: "66625393"
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>暗号化のラベルを構成する方法
 
-1. 一般的な手順に従って、[機密度ラベルを作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ラベルのスコープとして **[ファイルとメール]** が選択されていることを確認します。 
+1. 一般的な手順に従って、[秘密度ラベルを作成または編集](create-sensitivity-labels.md#create-and-configure-sensitivity-labels)し、ラベルの範囲として **[アイテム]** が選択されていることを確認します。 
     
-    ![ファイルとメールの機密度ラベルス コープ オプション。](../media/filesandemails-scope-options-sensitivity-label.png)
+    ![ファイルとメールの秘密度ラベルの範囲オプション](../media/filesandemails-scope-options-sensitivity-label.png)
 
-2. 次に、**[ファイルとメールの保護設定の選択]** ページで、**[ファイルとメールの暗号化]** を選択していることを確認します。
+2. 次に、**[ラベル付きアイテムの保護設定の選択]** ページで、**[アイテムの暗号化]** が選択されていることを確認します。
     
-    ![ファイルとメールの機密度ラベル保護オプション。](../media/protection-options-sensitivity-label.png)
+    :::image type="content" source="../media/protection-options-sensitivity-label.png" alt-text="アイテムの秘密度ラベル保護オプション。" Lightbox="../media/protection-options-sensitivity-label.png":::
 
 4.  **[暗号化]** ページで、次のいずれかのオプションを選択します。
     
@@ -97,7 +97,7 @@ ms.locfileid: "66625393"
     
     - **暗号化設定の構成**: 暗号化をオンにして、暗号化設定を表示します。
         
-        ![暗号化用の秘密度ラベルのオプション。](../media/encrytion-options-sensitivity-label.png)
+        :::image type="content" source="../media/encrytion-options-sensitivity-label.png" alt-text="暗号化用の秘密度ラベルのオプション。"lightbox="../media/encrytion-options-sensitivity-label.png":::
         
         これらの設定の手順は、次の「[暗号化設定の構成](#configure-encryption-settings)」セクションにあります。
 
@@ -412,7 +412,7 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 この構成には、メールまたはドキュメントを暗号化するためにユーザー、グループ、またはドメインを指定する必要がないという利点があります。 コンテンツは引き続き暗号化され、使用権限、有効期限、オフライン アクセスを指定できます。
 
-保護されたドキュメントまたはメールを開くことができるユーザーを制限する必要がない場合にのみ、この構成を使用してください。[この設定の詳細情報](#requirements-and-limitations-for-add-any-authenticated-users)
+保護されたドキュメントまたはメールを開くことができるユーザーを制限する必要がない場合にのみ、この構成を使用してください。 [この設定の詳細情報](#requirements-and-limitations-for-add-any-authenticated-users)を参照してください。
 
 1. **[暗号化]** ページで: **[アクセス許可を今すぐ割り当てるか、それともユーザーに決定させますか?]** で、**[アクセス許可を今すぐ割り当てる]** が選択されていることを確認します。
 

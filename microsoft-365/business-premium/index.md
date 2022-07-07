@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを使用して中小企業にサイバーセキュリティを実装する方法について説明します。 サイバーセキュリティの機能と機能は、サイバー攻撃やセキュリティ侵害を防ぐために最適化され、高度なサイバー防御を使用してデータ、デバイス、情報を保護するのに役立ちます。
-ms.openlocfilehash: 2e8a5a5c9a1d4e9fcdcb75a3b7b9d4d6e3284e2f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3752393e32ab151edcaa8166eabe862ad3f90c2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634977"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663110"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; 中小企業向けサイバーセキュリティ
 
@@ -39,10 +39,6 @@ ms.locfileid: "66634977"
 
 すべてのミッションを完了することは、ハッカーを阻止し、ランサムウェアから保護し、組織の将来が最高のサイバーセキュリティ防御で保護されるようにするための最も効果的な方法です。 では、始めましょう。
 
-次のタブを使用して、各ミッションとMicrosoft 365 Business Premiumセキュリティを設定する方法について説明します。
-
-## <a name="fortify-your-environment"></a>[**環境を強化する**](#tab/Fortify)
-
 ## <a name="fortify-your-environment"></a>環境を強化する
 
 これらの最初のミッションでは、アカウント アクセス保護から始めて、最初の防御の壁にサインインして設定します。
@@ -51,30 +47,7 @@ ms.locfileid: "66634977"
 
 2. [**サイバーセキュリティ保護を強化します**](m365bp-security-overview.md)。 サイバー攻撃を防ぐために、重要な最前線のセキュリティ対策を設定します。
 
-[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Microsoft 365 Business Premiumは、アプリ、ファイル ストレージ、電子メール、デバイス、ID を保護します。":::](m365bp-setup-overview.md)
-
-## <a name="cybersecurity-playbook"></a>サイバーセキュリティプレイブック
-
-これらのミッションのガイダンスは、信頼ゼロの手法に基づいており、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
-
-インフォグラフィックをクリック (またはタップ) して、より大きなバージョンを表示するか、 [Cybersecurity プレイブックのポスターのコピーをダウンロードします](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
-
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="サイバーセキュリティ プレイブック" lightbox="media/m365bp-cyber-security-playbook.png":::
-
-[PDF を取得します](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
-
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premium がビジネスにどのように役立つか
-
-Microsoft 365 Business Premiumは、中小企業向けの包括的なセキュリティとコラボレーション ソリューションです。 [Microsoft 365 Business Premiumの利点について詳しくは、こちらを参照してください](m365bp-secure-users.md)。
-
-## <a name="next-steps"></a>次の手順
-
-それでは、 [サイバー攻撃に対して環境を強化](m365bp-setup-overview.md)しましょう。
-
-> [!NOTE]
-> 用語またはディレクティブが不明な場合は、 [用語の用語集](m365bp-glossary.yml)で定義を見つけることができます。
-
-## <a name="train-your-team"></a>[**チームをトレーニングする**](#tab/Train)
+[:::image type="content" source="media/m365bp-fortify-environment.jpg" alt-text="Fortify Your Environment が選択されたミッションのアウトライン図。":::](m365bp-setup-overview.md)
 
 ## <a name="train-your-team"></a>チームをトレーニングする
 
@@ -86,30 +59,7 @@ Microsoft 365 Business Premiumは、中小企業向けの包括的なセキュ�
 
 3. [**共同作業と共有を安全に行います**](m365bp-collaborate-share-securely.md)。 このミッションの目的では、組織のすべてのメンバーに対してセキュリティで保護されたファイル共有を設定する必要があります。
 
-[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="Microsoft 365 Business Premiumは、アプリ、ファイル ストレージ、電子メール、デバイス、ID を保護します。":::](m365bp-devices-overview.md)
-
-## <a name="cybersecurity-playbook"></a>サイバーセキュリティプレイブック
-
-これらのミッションのガイダンスは、信頼ゼロの手法に基づいており、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます。
-
-インフォグラフィックをクリック (またはタップ) して、より大きなバージョンを表示するか、 [Cybersecurity プレイブックのポスターのコピーをダウンロードします](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
-
-:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="サイバーセキュリティ プレイブック" lightbox="media/m365bp-cyber-security-playbook.png":::
-
-[PDF を取得します](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
-
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premium がビジネスにどのように役立つか
-
-Microsoft 365 Business Premiumは、中小企業向けの包括的なセキュリティとコラボレーション ソリューションです。 [Microsoft 365 Business Premiumの利点について詳しくは、こちらを参照してください](m365bp-secure-users.md)。
-
-## <a name="next-steps"></a>次の手順
-
-それでは、 [サイバー攻撃に対して環境を強化](m365bp-setup-overview.md)しましょう。
-
-> [!NOTE]
-> 用語またはディレクティブが不明な場合は、 [用語の用語集](m365bp-glossary.yml)を参照してください。
-
-## <a name="safeguard-managed-devices"></a>[**管理対象デバイスを保護する**](#tab/Safeguard)
+[:::image type="content" source="media/m365bp-train-team.jpg" alt-text="[チームのトレーニング] が選択されたミッションのアウトライン図。":::](m365bp-devices-overview.md)
 
 ## <a name="safeguard-managed-devices"></a>管理対象デバイスを保護する
 
@@ -117,7 +67,7 @@ Microsoft 365 Business Premiumは、中小企業向けの包括的なセキュ�
 
 - [**マネージド デバイスを設定してセキュリティで保護します**](m365bp-protect-devices.md)。 これらのデバイスが組織によって監視および保護されるように、これらのデバイスをセキュリティで保護する手順を実行します。
 
-[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="Microsoft 365 Business Premiumは、アプリ、ファイル ストレージ、電子メール、デバイス、ID を保護します。":::](m365bp-protect-devices.md)
+[:::image type="content" source="media/m365bp-safeguard-managed-devices.jpg" alt-text="[管理対象デバイスの保護] が選択されたミッションのアウトライン図。":::](m365bp-protect-devices.md)
 
 ## <a name="cybersecurity-playbook"></a>サイバーセキュリティプレイブック
 
@@ -129,7 +79,7 @@ Microsoft 365 Business Premiumは、中小企業向けの包括的なセキュ�
 
 [PDF を取得します](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)。
 
-## <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premium がビジネスにどのように役立つか
+## <a name="learn-more-about-how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premiumがビジネスに役立つ方法の詳細を確認する
 
 Microsoft 365 Business Premiumは、中小企業向けの包括的なセキュリティとコラボレーション ソリューションです。 [Microsoft 365 Business Premiumの利点について詳しくは、こちらを参照してください](m365bp-secure-users.md)。
 

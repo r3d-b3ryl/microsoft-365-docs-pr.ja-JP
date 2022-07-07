@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: 製品ライセンスの割り当てを解除する方法は、特定のユーザーから割り当て解除するのか、それとも特定の製品から割り当てを解除するのかによって異なります。
 ms.date: 06/23/2022
-ms.openlocfilehash: 87e62b8c39e5ba0a8f61caeea3560438a716881d
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 956391e8eeda1d17fdba76cf406a0291d1850b6f
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486178"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663506"
 ---
 # <a name="unassign-microsoft-365-licenses-from-users"></a>一般法人向け Microsoft 365 のユーザーからライセンスの割り当てを解除する
 
@@ -48,9 +48,9 @@ ms.locfileid: "66486178"
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>ライセンス ページを使用して、ライセンスの割り当てを解除する
 
-[ **ライセンス]** ページでは、一度に最大 20 人のユーザーのライセンスを割り当てるか割り当てを解除できます。 ページには、所有している製品、各製品で使用可能なライセンスの数、および使用可能なライセンスの合計数から割り当てられたライセンスの数が表示されます。 ライセンスの数は、同じ製品名のすべてのサブスクリプションのライセンスの合計です。
+**[ライセンス]** ページでは、一度に最大 20 人のユーザーに対して、ライセンスを割り当てることや、ライセンスの割り当てを解除することができます。 このページには、所有している製品、各製品の使用可能ライセンスの数、および使用可能ライセンスの合計数のうちの割り当て済みライセンスの数が表示されます。 ライセンスの数は、同一製品名のすべてのサブスクリプションのライセンスの合計です。
 
-たとえば、5 つのライセンスを持つMicrosoft 365 Business Premiumのサブスクリプションと、同じ製品に対して 8 つのライセンスを持つ別のサブスクリプションがあるとします。 **[ライセンス]** ページには、すべてのサブスクリプションのMicrosoft 365 Business Premiumに対して合計 13 個のライセンスがあることを示します。 これは、[製品] ページに表示される内容とは異なり、同じ **製品** の場合でも、所有しているサブスクリプションごとに行が表示されます。
+たとえば、 Microsoft 365 Business Premium の、5 つのライセンスがあるサブスクリプションと、同一製品の、8 つのライセンスがある別のサブスクリプションを所有しているとします。 **[ライセンス]** ページには、すべてのサブスクリプションを合わせて、Microsoft 365 Business Premium のライセンスが 13 個あることが示されます。 これは、**[お使いの製品]** ページに表示される内容とは異なります。そのページでは、同一製品のサブスクリプションを複数所有している場合でもサブスクリプションごとに行が表示されます。
 
 ::: moniker range="o365-worldwide"
 
@@ -129,7 +129,7 @@ ms.locfileid: "66486178"
 
 ## <a name="next-steps"></a>次の手順
 
-[未使用のライセンスを他のユーザーに再割り当て](../../managed-desktop/get-started/assign-licenses.md)しない場合は、[サブスクリプションからライセンスを削除](../../commerce/licenses/buy-licenses.md)して、必要以上のライセンスを支払わないようにすることを検討してください。
+[未使用のライセンスを他のユーザーに再割り当て](assign-licenses-to-users.md)しない場合は、[サブスクリプションからライセンスを削除](../../commerce/licenses/buy-licenses.md)して、必要以上のライセンスを支払わないようにすることを検討してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 

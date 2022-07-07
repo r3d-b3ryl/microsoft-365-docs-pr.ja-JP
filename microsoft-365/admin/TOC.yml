@@ -440,6 +440,8 @@
           href: 'https://support.microsoft.com/office/943507a9-8583-4c58-b5d2-8ec8265e04e5'
         - name: ゲスト ユーザーとの Teams 会議に参加する
           href: 'https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508'
+    - name: Microsoft 365 機能の説明
+      href: m365-feature-descriptions.md
     - name: トラブルシューティング
       href: /office/troubleshoot/
     - name: サポートに連絡

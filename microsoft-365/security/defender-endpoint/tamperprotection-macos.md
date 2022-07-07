@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a89d90f462528631d97c4f2e81c24f6ffbcd4189
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: c8294d5e3ba9faf240d438f3e8c1c3df3a66b414
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573920"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662224"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止を使用して macOS のセキュリティ設定を保護する
 
@@ -76,8 +76,9 @@ macOS の改ざん防止は、セキュリティ設定に対する不要な変�
 
 ## <a name="before-you-begin"></a>開始する前に
 
-- サポートされている macOS バージョン: Lake (12)、Big Sur (11)、Catalina (10.15 以降)
-- Defender for Endpoint に必要な最小バージョン: 101.49.25
+- サポートされている macOS バージョン: Lake (12)、Big Sur (11)、Catalina (10.15 以降)。
+- Defender for Endpoint に必要な最小バージョン: 101.70.19。
+- 改ざん防止機能がプレビュー段階にある間は、運用以外の更新チャネル ([プレビューまたはベータ)](/deployoffice/office-insider/deploy/microsoft-autoupdate) を使用している必要があります。 運用チャネルを使用している場合、構成された改ざん防止モードは無視されます。
 
 **強くお勧めする設定:**
 
@@ -94,9 +95,49 @@ macOS の改ざん防止は、セキュリティ設定に対する不要な変�
 
 ### <a name="before-you-begin"></a>開始する前に
 
-状態の変化を観察するために、"tamper_protection" が "無効" に設定されていることを確認します。
+状態の変化を観察するために、"tamper_protection" が "無効" または "監査" に設定されていることを確認します。
+また、"release_ring" で "運用" が報告されていないことを確認します。
 
-![無効モードの改ざん防止を備えたコマンド ラインの画像](images/verify-tp.png)
+```bash
+mdatp health
+```
+
+```console
+healthy                                     : true
+health_issues                               : []
+licensed                                    : true
+engine_version                              : "1.1.19300.3"
+app_version                                 : "1.0.0"
+org_id                                      : "..."
+log_level                                   : "info"
+machine_guid                                : "..."
+release_ring                                : "InsiderFast"
+product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+cloud_enabled                               : true
+cloud_automatic_sample_submission_consent   : "safe"
+cloud_diagnostic_enabled                    : false
+passive_mode_enabled                        : false
+real_time_protection_enabled                : true
+real_time_protection_available              : true
+real_time_protection_subsystem              : "endpoint_security_extension"
+network_events_subsystem                    : "network_filter_extension"
+device_control_enforcement_level            : "audit"
+tamper_protection                           : "audit"
+automatic_definition_update_enabled         : true
+definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+definitions_updated_minutes_ago             : 5
+definitions_version                         : "1.369.896.0"
+definitions_status                          : "up_to_date"
+edr_early_preview_enabled                   : "disabled"
+edr_device_tags                             : []
+edr_group_ids                               : ""
+edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+conflicting_applications                    : []
+network_protection_status                   : "stopped"
+data_loss_prevention_status                 : "disabled"
+full_disk_access_enabled                    : true
+```
 
 ### <a name="manual-configuration"></a>手動構成
 
@@ -113,7 +154,46 @@ macOS の改ざん防止は、セキュリティ設定に対する不要な変�
 
 2. 結果を確認します。
 
-    ![手動構成コマンドの結果の画像](images/result-manual-config.png)
+  ```bash
+  mdatp health
+  ```
+
+  ```console
+  healthy                                     : true
+  health_issues                               : []
+  licensed                                    : true
+  engine_version                              : "1.1.19300.3"
+  app_version                                 : "1.0.0"
+  org_id                                      : "..."
+  log_level                                   : "info"
+  machine_guid                                : "..."
+  release_ring                                : "InsiderFast"
+  product_expiration                          : Dec 29, 2022 at 09:48:37 PM
+  cloud_enabled                               : true
+  cloud_automatic_sample_submission_consent   : "safe"
+  cloud_diagnostic_enabled                    : false
+  passive_mode_enabled                        : false
+  real_time_protection_enabled                : true
+  real_time_protection_available              : true
+  real_time_protection_subsystem              : "endpoint_security_extension"
+  network_events_subsystem                    : "network_filter_extension"
+  device_control_enforcement_level            : "audit"
+  tamper_protection                           : "block"
+  automatic_definition_update_enabled         : true
+  definitions_updated                         : Jul 06, 2022 at 01:57:03 PM
+  definitions_updated_minutes_ago             : 5
+  definitions_version                         : "1.369.896.0"
+  definitions_status                          : "up_to_date"
+  edr_early_preview_enabled                   : "disabled"
+  edr_device_tags                             : []
+  edr_group_ids                               : ""
+  edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
+  edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+  conflicting_applications                    : []
+  network_protection_status                   : "stopped"
+  data_loss_prevention_status                 : "disabled"
+  full_disk_access_enabled                    : true
+  ```
 
 "tamper_protection" が "ブロック" に設定されていることに注目してください。
 
@@ -211,8 +291,6 @@ Intune プロファイルに次の構成を追加します。
 ![ブロック モードでの改ざん防止の画像](images/tp-block-mode.png)
 
 完全に `mdatp health` 実行し、出力で "tamper_protection" を探すこともできます。
-
-![ブロック モードの場合の改ざん防止の画像](images/health-tp-audit.png)
 
 ## <a name="verify-tamper-protection-preventive-capabilities"></a>改ざん防止の予防機能を確認する
 
