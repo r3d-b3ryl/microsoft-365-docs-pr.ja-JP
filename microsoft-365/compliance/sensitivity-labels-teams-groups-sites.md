@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: 17b1a2aab1da0e2c901aac14b3bf675cbbabe740
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 53278feccc7b2741453c20d37bbd995226a21dbe
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628685"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66662526"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -50,7 +50,7 @@ ms.locfileid: "66628685"
 
 コンテナーの秘密度ラベルを有効化し、新しい設定の秘密度ラベルを構成する前に、ユーザーはアプリで秘密度ラベルを表示および適用できます。たとえば、Word では次のようなことができます。
 
-![Word デスクトップ アプリに表示される機密ラベル。](../media/sensitivity-label-word.png)
+:::image type="content" source="../media/sensitivity-label-word.png" alt-text="Word デスクトップ アプリに表示される秘密度ラベル。" lightbox="../media/sensitivity-label-word.png"
 
 コンテナーの秘密度ラベルを有効にして構成すると、ユーザーは追加で秘密度ラベルを表示し、Microsoft チーム サイト、Microsoft 365 グループ、および SharePoint サイトに適用することができます。たとえば、SharePoint から新しいチーム サイトを作成する場合:
 
@@ -301,7 +301,7 @@ Outlook on the web では、新しいグループを作成するときに、公�
 
 ラベルが適用され、ユーザーがサイトを参照すると、ラベルの名前および適用されているポリシーが表示されます。 たとえば、以下のサイトでは、**秘密** のラベル付けがされており、プライバシー設定は **プライベート** になっています。
 
-![機密ラベルが適用されているサイト。](../media/sensitivity-label-site.png)
+:::image type ="content" source="../media/sensitivity-label-site.png" alt-text="機密ラベルが適用されているサイト。" lightbox="../media/sensitivity-label-site.png":::
 
 ### <a name="use-powershell-to-apply-a-sensitivity-label-to-multiple-sites"></a>PowerShell を使用して、複数のサイトに秘密度ラベルを適用する
 
@@ -341,7 +341,7 @@ SharePoint Online 管理シェルのバージョン16.0.19418.12000 以降があ
 
 適用された秘密度ラベルを表示、並べ替え、および検索するには、新しい SharePoint 管理センターの <a href="https://go.microsoft.com/fwlink/?linkid=2185220" target="_blank">**[アクティブなサイト]**</a> を使用します。最初に **[秘密度]** 列を追加する必要がある場合があります。
 
-![[アクティブなサイト] ページの [機密] 列。](../media/manage-site-sensitivity-labels.png)
+:::image type="content" source="../media/manage-site-sensitivity-labels.png" alt-text="[アクティブなサイト] ページの [秘密度] 列。" lightbox="../media/manage-site-sensitivity-labels.png"
 
 列を追加する方法など、[アクティブなサイト] ページからサイトを管理する方法の詳細については、「[新しい SharePoint 管理センターでサイトを管理する](/sharepoint/manage-sites-in-new-admin-center)」 を参照してください。
 
@@ -451,7 +451,7 @@ SharePoint の古いグループ分類を使用した場合の例として、「
 ## <a name="auditing-sensitivity-label-activities"></a>機密ラベル アクティビティの監査
 
 > [!IMPORTANT]
-> コンテナを保護するラベルの **[グループとサイト]** スコープのみを選択してラベル分離を使用する場合: このセクションで説明する **検出されたドキュメントの機密性の不一致** の監査イベントとメールのため、**ファイルとメール** のスコープを持つラベルの前に [ラベルの順序付け](sensitivity-labels.md#label-priority-order-matters)を検討してください。 
+> コンテナを保護するラベルの **[グループとサイト]** スコープのみを選択してラベル分離を使用する場合: このセクションで説明する **検出されたドキュメントの機密性の不一致** の監査イベントとメールのため、**アイテム** のスコープを持つラベルの前に [ラベルの順序付け](sensitivity-labels.md#label-priority-order-matters)を検討してください。 
 
 誰かが機密ラベルで保護されているサイトにドキュメントをアップロードし、そのドキュメントの機密ラベルが、サイトに適用されている機密ラベルよりも[優先度が高く](sensitivity-labels.md#label-priority-order-matters)なっている場合、このアクションはブロックされません。 たとえば、「**一般**」ラベルを SharePoint サイトに適用し、誰かがこのサイトに「**社外秘**」というラベルの付けられたドキュメントをアップロードしたとします。 優先度の高い機密ラベルは、優先順位の低いコンテンツよりも機密性の高いコンテンツを識別するため、この状況はセキュリティ上の懸念になる可能性があります。
 

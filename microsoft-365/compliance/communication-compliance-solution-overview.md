@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: 0d0e99442ac11a92ce99d922ac170dc6939d56e1
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: cf6a2ec63de23eab72d33f9e9cbff13854f6cc3d
+ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686319"
+ms.locfileid: "66687106"
 ---
 # <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
@@ -41,4 +41,4 @@ ms.locfileid: "66686319"
 ## <a name="more-information-about-communication-compliance"></a>通信コンプライアンスの詳細
 
 - [アラートの調査と修復](/microsoft-365/compliance/communication-compliance-investigate-remediate)
-- [ケース スタディ - Contoso は、Microsoft Teams、Exchange、Yammer 通信に不適切なコンテンツ ポリシーをすばやく構成します](/microsoft-365/compliance/communication-compliance-case-study)
+- [ケース スタディ: Contoso は、Microsoft Teams、Exchange、Yammer 通信に不適切なコンテンツ ポリシーをすばやく構成します](/microsoft-365/compliance/communication-compliance-case-study)

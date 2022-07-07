@@ -20,16 +20,16 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 39a30b7fcc853ac96d14df4fa04f9e727f98628c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 4dc790b780b6c066eda635b081d412654468b52f
+ms.sourcegitcommit: 244ab1b8fe98363f2bfeec337bf68e88ab31d789
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686033"
+ms.locfileid: "66687128"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>通信コンプライアンスのアラートを調査して修復する
 
-通信コンプライアンス ポリシーを構成すると、ポリシーの条件に一致するメッセージの問題に関するアラートがMicrosoft Purview コンプライアンス ポータルで受信されます。 アラートの問題を調査して修復するには、ここのワークフローの手順に従います。
+[通信コンプライアンス ポリシー](/microsoft-365/compliance/communication-compliance-policies)を構成すると、ポリシーの条件に一致するメッセージの問題に関するアラートが[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com)で受信されます。 アラートの問題を調査して修復するには、ここのワークフローの手順に従います。
 
 ## <a name="investigate-alerts"></a>アラートを調査する
 
