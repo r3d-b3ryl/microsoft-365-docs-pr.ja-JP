@@ -21,17 +21,17 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ba5778ccf00525d78da05127d41ffd3f52a4bf83
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0b8b285573c9a2f78037e2d29ea3a57ddfa2b306
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626413"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686297"
 ---
 # <a name="learn-about-communication-compliance"></a>通信コンプライアンスの詳細
 
 > [!TIP]
-> *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](compliance-easy-trials.md)の詳細について説明します。
+> *9 つの Microsoft Purview ソリューションすべてのプレミアム バージョンを無料で試すことができることをご存知ですか?* 90 日間の Purview ソリューション試用版を使用して、堅牢な Purview 機能が組織のコンプライアンス ニーズを満たすのにどのように役立つかを調べてください。 Microsoft 365 E3 および Office 365 E3 のお客様は、[Microsoft Purview コンプライアンス ポータルの試用版ハブ](https://compliance.microsoft.com/trialHorizontalHub?sku=ComplianceE5&ref=DocsRef)から今すぐ開始できます。 [サインアップできるユーザーと試用版の使用条件](/microsoft-365/compliance/compliance-easy-trials)の詳細について説明します。
 
 Microsoft Purview コミュニケーション コンプライアンスは、組織内の不適切なメッセージを検出、キャプチャ、および操作できるようにすることで、コミュニケーション リスクを最小限に抑えるのに役立つインサイダー リスク ソリューションです。 事前に定義されたカスタムポリシーを使用すると、指定されたレビュー担当者が調査できるように、ポリシーの一致の確認のために内部および外部の通信をスキャンできます。 校閲者は、組織内のスキャンされた電子メール、Microsoft Teams、Yammer、またはサードパーティの通信を調査し、組織のメッセージ標準に準拠していることを確認するために適切なアクションを実行できます。
 
@@ -94,7 +94,7 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 コミュニケーション コンプライアンスのインテリジェントなカスタマイズ可能なテンプレートを使用すると、機械学習を適用して、組織内の通信違反をインテリジェントに検出できます。
 
 - **カスタマイズ可能な事前構成済みテンプレート**: ポリシー テンプレートは、最も一般的な通信リスクに対処するのに役立ちます。 事前に定義された不適切なコンテンツ、機密情報、競合、規制コンプライアンス テンプレートを使用して、ポリシーの初期作成とフォローオンの更新が迅速になりました。
-- **新しい機械学習のサポート**: 組み込みの差別、脅威、嫌がらせ、不適切な表現、画像 [分類子](classifier-get-started-with.md) は、スキャンされたメッセージの誤分類されたコンテンツを減らし、調査と修復プロセス中の校閲者の時間を節約するのに役立ちます。
+- **新しい機械学習のサポート**: 組み込みの差別、脅威、嫌がらせ、不適切な表現、画像 [分類子](/microsoft-365/compliance/classifier-get-started-with) は、スキャンされたメッセージの誤分類されたコンテンツを減らし、調査と修復プロセス中の校閲者の時間を節約するのに役立ちます。
 - **条件ビルダーの改善**: ポリシー条件の構成が、ポリシー ウィザードで統合された 1 つのエクスペリエンスに合理化され、ポリシーに対する条件の適用方法の混乱が軽減されました。
 
 ### <a name="flexible-remediation-workflows"></a>柔軟な修復ワークフロー
@@ -128,9 +128,9 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 - **Microsoft Teams**: パブリックおよびプライベート [の Microsoft Teams](/MicrosoftTeams/Teams-overview) チャネルと個々のチャットのチャット通信は、スタンドアロン チャネル ソースとして、または他の Microsoft 365 サービスとの通信コンプライアンスでサポートされています。 通信コンプライアンス ポリシーで監督するユーザーとグループを選択するときは、個々のユーザー、配布グループ、または特定の Microsoft Teams チャネルを手動で追加する必要があります。 Teams ユーザーは、レビューと修復のために、プライベート チャネルとグループ チャネルやチャットで不適切なメッセージを自己報告することもできます。
 - **Exchange Online**: Microsoft 365 組織内の [Exchange Online](/Exchange/exchange-online)でホストされているすべてのメールボックスは、スキャンの対象となります。 通信コンプライアンス ポリシーの条件に一致する電子メールと添付ファイルは、監視およびコンプライアンス レポートですぐに使用できます。 Exchange Onlineはオプションのソース チャネルになり、通信コンプライアンス ポリシーでは不要になりました。
 - **Yammer**: [Yammer](/yammer/yammer-landing-page) のプライベート メッセージとパブリック コミュニティの会話は、コミュニケーション ポリシーでサポートされています。 Yammer はオプションのチャネルであり、メッセージと添付ファイルのスキャンをサポートするためには、[ネイティブ モード](/yammer/configure-your-yammer-network/overview-native-mode)に設定されている必要があります。
-- **サード パーティのソース**: Microsoft 365 組織内のメールボックスにインポートされたデータについて [、サード パーティのソース](archiving-third-party-data.md) からのメッセージをスキャンできます。 通信コンプライアンスは、Instant Bloomberg など、いくつかの一般的なプラットフォームへの接続をサポートします。
+- **サード パーティのソース**: Microsoft 365 組織内のメールボックスにインポートされたデータについて [、サード パーティのソース](/microsoft-365/compliance/archiving-third-party-data) からのメッセージをスキャンできます。 通信コンプライアンスは、Instant Bloomberg など、いくつかの一般的なプラットフォームへの接続をサポートします。
 
-通信コンプライアンス ポリシーでのメッセージング チャネルのサポートの詳細については、「通信コンプライアンス [を使用したチャネル信号の検出](communication-compliance-channels.md)」を参照してください。
+通信コンプライアンス ポリシーでのメッセージング チャネルのサポートの詳細については、「通信コンプライアンス [を使用したチャネル信号の検出](/microsoft-365/compliance/communication-compliance-channels)」を参照してください。
 
 ## <a name="workflow"></a>ワークフロー
 
@@ -145,7 +145,7 @@ Microsoft 365 のコミュニケーション コンプライアンス ポリシ�
 このワークフロー 手順では、コンプライアンス要件を特定し、適用可能な通信コンプライアンス ポリシーを構成します。 ポリシー テンプレートは、新しいコンプライアンス ポリシーをすばやく構成するだけでなく、要件の変更に応じてポリシーをすばやく変更および更新する優れた方法です。 たとえば、組織内のすべてのユーザーに対してポリシーを構成する前に、少数のユーザーグループの通信に不適切なコンテンツがないかポリシーをすばやくテストすることができます。
 
 >[!IMPORTANT]
->既定では、グローバル管理者にはコミュニケーション コンプライアンス機能へアクセス権はありません。 通信コンプライアンス機能のアクセス許可を有効にするには、「 [組織で通信コンプライアンスを利用できるようにする](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)」を参照してください。
+>既定では、グローバル管理者にはコミュニケーション コンプライアンス機能へアクセス権はありません。 通信コンプライアンス機能のアクセス許可を有効にするには、「 [組織で通信コンプライアンスを利用できるようにする](/microsoft-365/compliance/communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance)」を参照してください。
 
 Microsoft Purview コンプライアンス ポータルでは、次のポリシー テンプレートから選ぶことができます。
 
@@ -158,7 +158,7 @@ Microsoft Purview コンプライアンス ポータルでは、次のポリシ�
 - **ユーザーが報告するメッセージ ポリシー**: このシステム ポリシーは、チャネル、グループ、プライベート チャット メッセージからユーザーが報告したメッセージをサポートします。 Teams 管理センターで既定で有効になっています。
 
 >[!TIP]
->[推奨されるアクション](communication-compliance-configure.md#recommended-actions)を使用して、機密情報の種類のポリシーが必要かどうか、または既存の不適切なコンテンツ ポリシーを更新する必要があるかどうかを判断するのに役立ちます。
+>[推奨されるアクション](/microsoft-365/compliance/communication-compliance-configure#recommended-actions)を使用して、機密情報の種類のポリシーが必要かどうか、または既存の不適切なコンテンツ ポリシーを更新する必要があるかどうかを判断するのに役立ちます。
 
 ### <a name="investigate"></a>調査
 
@@ -180,7 +180,7 @@ Microsoft Purview コンプライアンス ポータルでは、次のポリシ�
 - **別のレビュー担当者にエスカレーションする**: 問題を解決するために他のレビュー担当者からの情報が必要になる場合があります。 解決プロセスの一環として、メッセージの問題を組織内の他の分野のレビュー担当者にエスカレーションできます。
 - **誤検知としてレポートする**: コンプライアンス ポリシーの一致として誤って検出されたメッセージは、確認プロセスに送られるすることがあります。 これらのタイプのアラートを誤分類としてマークし、誤分類に関するフィードバックを Microsoft に送信して、グローバル分類子を改善し、問題を自動的に解決することができます。
 - **Teams でメッセージを削除する プレビュー**: 不適切なメッセージは、Microsoft Teams チャネルまたは個人およびグループのチャット メッセージでの表示から削除される場合があります。 削除された不適切なメッセージは、ポリシー違反のためにメッセージが削除されたという通知に置き換えられます。
-- **調査のためにエスカレーションする**: 最も深刻な状況では、コミュニケーション コンプライアンス情報を組織内の他のレビュー担当者と共有することが必要になる場合があります。 コミュニケーション コンプライアンスは他の Microsoft Purview 機能と緊密に統合されており、エンド ツー エンドのリスク解決に役立ちます。 調査のためにケースをエスカレートすると、ケースのデータと管理をMicrosoft Purview eDiscovery (Premium) に転送できます。 電子情報開示 (プレミアム) は、組織の内部および外部の調査と関連性のあるコンテンツを保管、収集、確認、分析、エクスポートするための、エンドツーエンドのワークフローを提供します。 これにより、法務チームは訴訟ホールド通知ワークフロー全体を管理できます。 電子情報開示 (Premium) ケースの詳細については、「[Microsoft Purview eDiscovery (Premium) の概要](overview-ediscovery-20.md)」を参照してください。
+- **調査のためにエスカレーションする**: 最も深刻な状況では、コミュニケーション コンプライアンス情報を組織内の他のレビュー担当者と共有することが必要になる場合があります。 コミュニケーション コンプライアンスは他の Microsoft Purview 機能と緊密に統合されており、エンド ツー エンドのリスク解決に役立ちます。 調査のためにケースをエスカレートすると、ケースのデータと管理をMicrosoft Purview eDiscovery (Premium) に転送できます。 電子情報開示 (プレミアム) は、組織の内部および外部の調査と関連性のあるコンテンツを保管、収集、確認、分析、エクスポートするための、エンドツーエンドのワークフローを提供します。 これにより、法務チームは訴訟ホールド通知ワークフロー全体を管理できます。 電子情報開示 (Premium) ケースの詳細については、「[Microsoft Purview eDiscovery (Premium) の概要](/microsoft-365/compliance/overview-ediscovery-20)」を参照してください。
 
 ### <a name="monitor"></a>監視する
 
@@ -190,6 +190,6 @@ Microsoft Purview コンプライアンス ポータルでは、次のポリシ�
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-- 計画情報については、「 [通信コンプライアンスの計画」を](communication-compliance-plan.md)参照してください。
-- [Contoso のケース スタディ](communication-compliance-case-study.md)を確認し、Microsoft Teams、Exchange Online、Yammer 通信の不適切なコンテンツを監視する通信コンプライアンス ポリシーをすばやく構成した方法を確認します。
-- Microsoft 365 組織の通信コンプライアンスを構成するには、「 [通信コンプライアンスの構成」を](communication-compliance-configure.md)参照してください。
+- 計画情報については、「 [通信コンプライアンスの計画」を](/microsoft-365/compliance/communication-compliance-plan)参照してください。
+- [Contoso のケース スタディ](/microsoft-365/compliance/communication-compliance-case-study)を確認し、Microsoft Teams、Exchange Online、Yammer 通信の不適切なコンテンツを監視する通信コンプライアンス ポリシーをすばやく構成した方法を確認します。
+- Microsoft 365 組織の通信コンプライアンスを構成するには、「 [通信コンプライアンスの構成」を](/microsoft-365/compliance/communication-compliance-configure)参照してください。

@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8294d5e3ba9faf240d438f3e8c1c3df3a66b414
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 45a30d02992d3128ab1520c24927fb43c1180cf8
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662224"
+ms.locfileid: "66685532"
 ---
 # <a name="protect-macos-security-settings-with-tamper-protection"></a>改ざん防止を使用して macOS のセキュリティ設定を保護する
 
@@ -74,7 +74,7 @@ macOS の改ざん防止は、セキュリティ設定に対する不要な変�
 > - モードの変更はすぐに適用されます。
 > - 初期構成中に JAMF を使用した場合は、JAMF も使用して構成を更新する必要があります。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 - サポートされている macOS バージョン: Lake (12)、Big Sur (11)、Catalina (10.15 以降)。
 - Defender for Endpoint に必要な最小バージョン: 101.70.19。
@@ -93,7 +93,7 @@ macOS の改ざん防止は、セキュリティ設定に対する不要な変�
 - [JAMF](#jamf)
 - [Intune](#intune)
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 
 状態の変化を観察するために、"tamper_protection" が "無効" または "監査" に設定されていることを確認します。
 また、"release_ring" で "運用" が報告されていないことを確認します。
@@ -107,7 +107,7 @@ healthy                                     : true
 health_issues                               : []
 licensed                                    : true
 engine_version                              : "1.1.19300.3"
-app_version                                 : "1.0.0"
+app_version                                 : "101.70.19"
 org_id                                      : "..."
 log_level                                   : "info"
 machine_guid                                : "..."
@@ -132,7 +132,7 @@ edr_early_preview_enabled                   : "disabled"
 edr_device_tags                             : []
 edr_group_ids                               : ""
 edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
-edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+edr_machine_id                              : "..."
 conflicting_applications                    : []
 network_protection_status                   : "stopped"
 data_loss_prevention_status                 : "disabled"
@@ -163,7 +163,7 @@ full_disk_access_enabled                    : true
   health_issues                               : []
   licensed                                    : true
   engine_version                              : "1.1.19300.3"
-  app_version                                 : "1.0.0"
+  app_version                                 : "101.70.19"
   org_id                                      : "..."
   log_level                                   : "info"
   machine_guid                                : "..."
@@ -188,7 +188,7 @@ full_disk_access_enabled                    : true
   edr_device_tags                             : []
   edr_group_ids                               : ""
   edr_configuration_version                   : "20.199999.main.2022.07.05.02-ac10b0623fd381e28133debe14b39bb2dc5b61af"
-  edr_machine_id                              : "6fe9fd3dad788fc600504cd12cd91b1965477de5"
+  edr_machine_id                              : "..."
   conflicting_applications                    : []
   network_protection_status                   : "stopped"
   data_loss_prevention_status                 : "disabled"

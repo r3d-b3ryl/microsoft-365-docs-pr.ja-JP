@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 0769dd3cfd64f611162803952a1e39b9241ac2ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 21897bcfc21cac7e6eb2ceeff3e20280595c539b
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638678"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686465"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>通信コンプライアンスでチャネル信号を検出する
 
@@ -59,7 +59,7 @@ Teams で個々のユーザー チャットとチャネル通信を監督する�
 
 - **Teams チャット通信の場合:** 個々のユーザーを割り当てるか、 [配布グループ](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) を通信コンプライアンス ポリシーに割り当てます。 この設定は、ユーザーとチャットの関係が 1 対 1 または 1 対多の場合に使用できます。
 - **Teams チャネル通信の場合:** 特定のユーザーを含むスキャン対象のすべての Microsoft Teams チャネルまたは Microsoft 365 グループを、通信コンプライアンス ポリシーに割り当てます。 同じユーザーを別の Microsoft Teams チャネルまたは Microsoft 365 グループに追加する場合は、これらの新しいチャネルとグループを必ずコミュニケーション コンプライアンス ポリシーに追加するようにします。 チャネルのいずれかのメンバーがポリシー内の監視対象ユーザーであり、 *受信* 方向がポリシーで構成されている場合、チャネル内で送信されるすべてのメッセージはレビューの対象となり、潜在的なポリシーが一致します (明示的に監督されていないチャネル内のユーザーの場合でも)。 たとえば、ユーザー A はチャネルの所有者またはメンバーです。 ユーザー B とユーザー C は、同じチャネルのメンバーであり、ユーザー A のみを監視する不適切なコンテンツ ポリシーと一致する言語を使用します。ユーザー B とユーザー C は、不適切なコンテンツ ポリシーで直接監督されていない場合でも、チャネル内の会話に対してポリシー一致を作成します。 ユーザー A を含むチャネルの外部にあるユーザー B とユーザー C の間の Teams の会話は、ユーザー A を含む不適切なコンテンツ ポリシーの対象になりません。チャネルの他のメンバーが明示的に監督されている場合に、チャネル メンバーを監督から除外するには、該当する通信コンプライアンス ポリシーで *[受信* 通信方向] 設定をオフにします。
-- **ハイブリッド電子メール環境を使用した Teams チャット通信の場合**:コミュニケーション コンプライアンスは、Exchange オンプレミス展開または Microsoft Teams を有効にした外部電子メール プロバイダーを使用している組織のユーザー向けのチャット メッセージを検出できます。 監視するオンプレミスまたは外部メールボックスを持つユーザーの配布グループを作成する必要があります。 通信コンプライアンス ポリシーを作成するときに、ポリシー ウィザードで **監視対象ユーザーとグループ** の選択としてこの配布グループを割り当てます。 クラウドベースのストレージを有効にするための要件と制限事項、およびオンプレミス ユーザーに対する Teams のサポートの詳細については、「[オンプレミス ユーザーの Teams チャット データを検索する](search-cloud-based-mailboxes-for-on-premises-users.md)」を参照してください。
+- **ハイブリッド電子メール環境を使用した Teams チャット通信の場合**:コミュニケーション コンプライアンスは、Exchange オンプレミス展開または Microsoft Teams を有効にした外部電子メール プロバイダーを使用している組織のユーザー向けのチャット メッセージを検出できます。 監視するオンプレミスまたは外部メールボックスを持つユーザーの配布グループを作成する必要があります。 通信コンプライアンス ポリシーを作成するときに、ポリシー ウィザードで **監視対象ユーザーとグループ** の選択としてこの配布グループを割り当てます。 クラウドベースのストレージを有効にするための要件と制限事項、およびオンプレミス ユーザーに対する Teams のサポートの詳細については、「[オンプレミス ユーザーの Teams チャット データを検索する](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)」を参照してください。
 
 ## <a name="exchange-email"></a>Exchange メール
 
@@ -73,6 +73,6 @@ Yammer の通信と添付ファイルを監視するには、Yammer が通信コ
 
 ## <a name="third-party-sources"></a>サードパーティのソース
 
-[Instant Bloomberg](archive-instant-bloomberg-data.md)、[Slack](archive-slack-data.md)、[Zoom](archive-zoommeetings-data.md)、SMS などのサード パーティのソースから、Microsoft 365 組織内のメールボックスにインポートされたデータの通信をスキャンできます。 通信コンプライアンスでサポートされているコネクタの完全な一覧については、「 [サード パーティのデータをアーカイブする](archiving-third-party-data.md)」を参照してください。
+[Instant Bloomberg](/microsoft-365/compliance/archive-instant-bloomberg-data)、[Slack](/microsoft-365/compliance/archive-slack-data)、[Zoom](/microsoft-365/compliance/archive-zoommeetings-data)、SMS などのサード パーティのソースから、Microsoft 365 組織内のメールボックスにインポートされたデータの通信をスキャンできます。 通信コンプライアンスでサポートされているコネクタの完全な一覧については、「 [サード パーティのデータをアーカイブする](/microsoft-365/compliance/archiving-third-party-data)」を参照してください。
 
 通信コンプライアンス ポリシーにコネクタを割り当てる前に、Microsoft 365 組織のサードパーティ コネクタを構成する必要があります。 通信コンプライアンス ポリシー ウィザード **の [サード パーティソース]** セクションには、現在構成されているサードパーティコネクタのみが表示されます。

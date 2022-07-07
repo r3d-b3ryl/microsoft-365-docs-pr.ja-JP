@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 27c166f3c9df0dead57f977b00cab41eb82347ad
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4810f76d2d0fc7446c15c3c52fd6577e763918fe
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630487"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686399"
 ---
 # <a name="use-communication-compliance-reports-and-audits"></a>コミュニケーション コンプライアンス レポートと監査を使用する
 
@@ -141,7 +141,7 @@ ms.locfileid: "66630487"
 場合によっては、ユーザーアクティビティと通信の監督を証明するために、規制監査人またはコンプライアンス監査人に情報を提供する必要があります。 この情報は、定義された組織のポリシーに関連付けられているすべてのアクティビティの概要、または通信コンプライアンス ポリシーが変更された場合の任意の時間の概要である場合があります。 コミュニケーション コンプライアンス ポリシーには、内部監査または外部監査に完全に対応するための監査証跡が組み込まれています。 作成、編集、削除のすべてのアクションの詳細な監査履歴は、監視手順の証明を提供するために、通信ポリシーによってキャプチャされます。
 
 > [!IMPORTANT]
-> 通信コンプライアンス イベントが記録される前に、組織の監査を有効にする必要があります。 監査を有効にするには、「 [監査ログを有効にする」を](communication-compliance-configure.md#step-2-required-enable-the-audit-log)参照してください。 アクティビティが Microsoft 365 監査ログにキャプチャされたイベントをトリガーする場合、これらのイベントが通信コンプライアンス ポリシーで表示されるまでに最大で 48 時間かかる場合があります。
+> 通信コンプライアンス イベントが記録される前に、組織の監査を有効にする必要があります。 監査を有効にするには、「 [監査ログを有効にする」を](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log)参照してください。 アクティビティが Microsoft 365 監査ログにキャプチャされたイベントをトリガーする場合、これらのイベントが通信コンプライアンス ポリシーで表示されるまでに最大で 48 時間かかる場合があります。
 
 通信コンプライアンス ポリシーの更新アクティビティを表示するには、任意のポリシーのメイン ページで **[ポリシー更新プログラムのエクスポート** ] コントロールを選択します。 更新アクティビティをエクスポートするには、*グローバル 管理* または *コミュニケーション コンプライアンス 管理* ロールが割り当てられている必要があります。 このアクションは、次の情報を含む.csv形式の監査ファイルを生成します。
 
@@ -161,7 +161,7 @@ ms.locfileid: "66630487"
 | **操作** | ポリシーに対して実行されたレビュー操作。 |
 | **AuditData** | このフィールドは、すべてのポリシー レビュー アクティビティのメイン データ ソースです。 すべてのレビュー アクティビティは記録され、コンマ区切り記号で区切られます。 |
 
-また、統合監査ログまたは [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell コマンドレットを使用して監査アクティビティを表示することもできます。 監査ログ保持ポリシーの詳細については、「 [監査ログ保持](audit-log-retention-policies.md)ポリシーの管理」を参照してください。
+また、統合監査ログまたは [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) PowerShell コマンドレットを使用して監査アクティビティを表示することもできます。 監査ログ保持ポリシーの詳細については、「 [監査ログ保持](/microsoft-365/compliance/audit-log-retention-policies)ポリシーの管理」を参照してください。
 
 たとえば、次の例では、すべての監督レビュー アクティビティ (ポリシーとルール) のアクティビティを返します。
 

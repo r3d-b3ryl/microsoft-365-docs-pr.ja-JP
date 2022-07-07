@@ -1,5 +1,5 @@
 ---
-title: SIEM ソリューションのコミュニケーション コンプライアンス
+title: SIEM ソリューションとの通信コンプライアンスを使用する
 description: SIEM ソリューションとの通信コンプライアンスの統合について説明します。
 keywords: Microsoft 365、Microsoft Purview、コンプライアンス、通信コンプライアンス
 f1.keywords:
@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4d9ee561e033e98919063d1f344aa3207a6bb6cd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 247999954e6ff69fdfbd2ff681bb79c0bf22c8bc
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626537"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686121"
 ---
-# <a name="communication-compliance-with-siem-solutions"></a>SIEM ソリューションのコミュニケーション コンプライアンス
+# <a name="use-communication-compliance-with-siem-solutions"></a>SIEM ソリューションとの通信コンプライアンスを使用する
 
-[コミュニケーション コンプライアンス](communication-compliance.md) は Microsoft Purview のインサイダー リスク ソリューションであり、組織内の不適切なメッセージを検出、キャプチャ、および操作できるようにすることで、コミュニケーション リスクを最小限に抑えることができます。 [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) や [Splunk](https://www.splunk.com/) などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威の集計と追跡に一般的に使用されます。
+[コミュニケーション コンプライアンス](/microsoft-365/compliance/communication-compliance) は Microsoft Purview のインサイダー リスク ソリューションであり、組織内の不適切なメッセージを検出、キャプチャ、および操作できるようにすることで、コミュニケーション リスクを最小限に抑えることができます。 [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) や [Splunk](https://www.splunk.com/) などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威の集計と追跡に一般的に使用されます。
 
 組織の一般的なニーズは、通信コンプライアンス アラートとこれらの SIEM ソリューションを統合することです。 この統合により、組織は SIEM ソリューションで通信コンプライアンス アラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内のアラートを修復できます。 たとえば、従業員は別の従業員に不快なメッセージを送信し、そのメッセージは不適切なコンテンツに対するコミュニケーション コンプライアンス ポリシーの監視によって検出されます。 これらのイベントは、通信コンプライアンス ソリューションによって Microsoft 365 監査 ("統合監査ログ" とも呼ばれます) で追跡され、SIEM ソリューションにインポートされます。 その後、通信コンプライアンス アラートに関連付けられている Microsoft 365 監査で監視されるイベントから、組織の SIEM ソリューションでアラートがトリガーされます。 調査担当者には SIEM ソリューションでアラートが通知され、通信コンプライアンス ソリューションでアラートを調査して修復します。
 
@@ -77,7 +77,7 @@ Microsoft Sentinel を使用して通信コンプライアンス ポリシーの
 
 1. [Microsoft Sentinel にオンボード](/azure/sentinel/quickstart-onboard)します。 オンボード プロセスの一環として、データ ソースを構成します。
 2. Microsoft Sentinel [Microsoft Office 365 データ コネクタ](/azure/sentinel/data-connectors-reference#microsoft-office-365)を構成し、コネクタの構成で *Exchange* を選択します。
-3. 通信コンプライアンス アラートを取得するように検索クエリを構成します。 例:
+3. 通信コンプライアンス アラートを取得するように検索クエリを構成します。 次に例を示します。
 
     *|OfficeActivity |ここで、OfficeWorkload == "Exchange" と Operation == "SupervisionRuleMatch" |TimeGenerated で並べ替える*
 
@@ -133,6 +133,6 @@ Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Compl
 ```
 ## <a name="resources"></a>リソース
 
-- [コミュニケーション コンプライアンス監査](communication-compliance-reports-audits.md#audit)
-- [Microsoft Purview 監査 (Premium)](advanced-audit.md)
+- [コミュニケーション コンプライアンス監査](/microsoft-365/compliance/communication-compliance-reports-audits#audit)
+- [Microsoft Purview 監査 (Premium)](/microsoft-365/compliance/advanced-audit)
 - [Office 365 管理アクティビティ API リファレンス](/office/office-365-management-api/office-365-management-activity-api-reference)

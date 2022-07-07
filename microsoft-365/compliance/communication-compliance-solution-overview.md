@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 - m365solution-scenario
-ms.openlocfilehash: e24401762906f66592d12efa42c5305a2c3d6d2e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0d0e99442ac11a92ce99d922ac170dc6939d56e1
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626449"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686319"
 ---
 # <a name="communication-compliance"></a>コミュニケーション コンプライアンス
 
@@ -33,12 +33,12 @@ ms.locfileid: "66626449"
 
 ![Insider リスク ソリューションの通信コンプライアンス手順。](../media/ir-solution-cc-steps.png)
 
-1. [コミュニケーション コンプライアンス](communication-compliance.md)について学習する
-2. [通信コンプライアンス](communication-compliance-plan.md)を計画し、[ライセンスを確認する](communication-compliance-configure.md#subscriptions-and-licensing)
-3. 前提条件と[アクセス許可](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)[を構成する](communication-compliance-configure.md#step-2-required-enable-the-audit-log)
-4. [通信コンプライアンス ポリシー](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)を作成して構成する
+1. [コミュニケーション コンプライアンス](/microsoft-365/compliance/communication-compliance)について学習する
+2. [通信コンプライアンス](/microsoft-365/compliance/communication-compliance-plan)を計画し、[ライセンスを確認する](/microsoft-365/compliance/communication-compliance-configure#subscriptions-and-licensing)
+3. 前提条件と[アクセス許可](/microsoft-365/compliance/communication-compliance-configure#step-1-required-enable-permissions-for-communication-compliance)[を構成する](/microsoft-365/compliance/communication-compliance-configure#step-2-required-enable-the-audit-log)
+4. [通信コンプライアンス ポリシー](/microsoft-365/compliance/communication-compliance-configure#step-5-required-create-a-communication-compliance-policy)を作成して構成する
 
 ## <a name="more-information-about-communication-compliance"></a>通信コンプライアンスの詳細
 
-- [アラートの調査と修復](communication-compliance-investigate-remediate.md)
-- [ケース スタディ - Contoso は、Microsoft Teams、Exchange、Yammer 通信に不適切なコンテンツ ポリシーをすばやく構成します](communication-compliance-case-study.md)
+- [アラートの調査と修復](/microsoft-365/compliance/communication-compliance-investigate-remediate)
+- [ケース スタディ - Contoso は、Microsoft Teams、Exchange、Yammer 通信に不適切なコンテンツ ポリシーをすばやく構成します](/microsoft-365/compliance/communication-compliance-case-study)

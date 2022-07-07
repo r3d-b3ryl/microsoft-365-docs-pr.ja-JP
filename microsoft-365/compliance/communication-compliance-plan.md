@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1efb3a1f4ea0f699e5dbb92c0ef2f4c6c56f8398
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 71364ebf68d6167666ec993fd15e0288f7ab30b2
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630567"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686187"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 
-組織で [コミュニケーション コンプライアンス](communication-compliance.md) を開始する前に、情報テクノロジとコンプライアンス管理チームが確認する必要がある重要な計画アクティビティと考慮事項があります。 次の領域での展開を十分に理解し、計画することで、通信コンプライアンス機能の実装と使用が円滑に進み、ソリューションのベスト プラクティスと一致することが保証されます。
+組織で [コミュニケーション コンプライアンス](/microsoft-365/compliance/communication-compliance) を開始する前に、情報テクノロジとコンプライアンス管理チームが確認する必要がある重要な計画アクティビティと考慮事項があります。 次の領域での展開を十分に理解し、計画することで、通信コンプライアンス機能の実装と使用が円滑に進み、ソリューションのベスト プラクティスと一致することが保証されます。
 
 組織内のコンプライアンスと危険なアクティビティに対処するための計画プロセスの詳細と概要については、「 [インサイダー リスク管理プログラムの開始](https://download.microsoft.com/download/b/2/0/b208282a-2482-4986-ba07-15a9b9286df0/pwc-starting-an-insider-risk-management-program-with-pwc-and-microsoft.pdf)」を参照してください。
 
@@ -49,7 +49,7 @@ Office 365の監督に関する退職情報については、[詳細について
 
 ## <a name="work-with-stakeholders-in-your-organization"></a>組織内の利害関係者と連携する
 
-コミュニケーション コンプライアンス アラートに対してアクションを実行するために、組織内の適切な利害関係者を特定して共同作業を行います。 初期計画とエンドツーエンド [の通信コンプライアンス ワークフロー](communication-compliance.md#workflow) を含めることについて検討すべき推奨される利害関係者の中には、組織の次の領域のユーザーが含まれます。
+コミュニケーション コンプライアンス アラートに対してアクションを実行するために、組織内の適切な利害関係者を特定して共同作業を行います。 初期計画とエンドツーエンド [の通信コンプライアンス ワークフロー](/microsoft-365/compliance/communication-compliance#workflow) を含めることについて検討すべき推奨される利害関係者の中には、組織の次の領域のユーザーが含まれます。
 
 - 情報技術
 - コンプライアンス
@@ -100,7 +100,7 @@ Microsoft Purview コンプライアンス ポータルの定期的な周期で�
 
 ### <a name="supervised-users"></a>監督対象ユーザー
 
-コミュニケーション コンプライアンス ポリシーの使用を開始する前に、通信のレビューの対象ユーザーを決定する必要があります。 このポリシーでは、監督対象となるユーザーまたはユーザーのグループを指定するために、ユーザーのメール アドレスが使用されます。 これらのグループの例には、Microsoft 365 グループ、Exchange ベースの配布リスト、Yammer コミュニティ、Microsoft Teams チャネルなどがあります。 特定の除外グループまたはグループのリストを使用して、特定のユーザーまたはグループを監視から除外することもできます。 通信コンプライアンス ポリシーでサポートされているグループの種類の詳細については、「通信コンプライアンスの [概要](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)」を参照してください。
+コミュニケーション コンプライアンス ポリシーの使用を開始する前に、通信のレビューの対象ユーザーを決定する必要があります。 このポリシーでは、監督対象となるユーザーまたはユーザーのグループを指定するために、ユーザーのメール アドレスが使用されます。 これらのグループの例には、Microsoft 365 グループ、Exchange ベースの配布リスト、Yammer コミュニティ、Microsoft Teams チャネルなどがあります。 特定の除外グループまたはグループのリストを使用して、特定のユーザーまたはグループを監視から除外することもできます。 通信コンプライアンス ポリシーでサポートされているグループの種類の詳細については、「通信コンプライアンスの [概要](/microsoft-365/compliance/communication-compliance-configure#step-3-optional-set-up-groups-for-communication-compliance)」を参照してください。
 
 > [!IMPORTANT]
 > 通信コンプライアンス ポリシーの対象となるユーザーは、Microsoft 365 E5 Compliance ライセンス、Advanced Compliance アドオンを使用したOffice 365 Enterprise E3 ライセンス、またはOffice 365 Enterprise E5 サブスクリプションに含まれている必要があります。 既存の Enterprise E5 プランがなく、コミュニケーション コンプライアンスを試したい場合は、[Office 365 Enterprise E5 の試用版にサインアップ](https://go.microsoft.com/fwlink/p/?LinkID=698279)できます。
@@ -133,15 +133,15 @@ Microsoft Purview コンプライアンス ポータルの定期的な周期で�
 
 ## <a name="plan-for-policies"></a>ポリシーの計画
 
-コミュニケーション コンプライアンス ポリシーの作成は、不適切なコンテンツ、機密情報、および規制コンプライアンス用に [事前に定義されたテンプレート](communication-compliance-policies.md#policy-templates) を使用して迅速かつ簡単に行うことができます。 カスタム通信コンプライアンス ポリシーを使用すると、組織と要件に固有の問題を柔軟に検出および調査できます。
+コミュニケーション コンプライアンス ポリシーの作成は、不適切なコンテンツ、機密情報、および規制コンプライアンス用に [事前に定義されたテンプレート](/microsoft-365/compliance/communication-compliance-policies#policy-templates) を使用して迅速かつ簡単に行うことができます。 カスタム通信コンプライアンス ポリシーを使用すると、組織と要件に固有の問題を柔軟に検出および調査できます。
 
 通信コンプライアンス ポリシーを計画する場合は、次の領域を考慮してください。
 
 - 組織内のすべてのユーザーを、コミュニケーション コンプライアンス ポリシーのスコープ内として追加することを検討してください。 個々のポリシーのスコープ内として特定のユーザーを特定することは、状況によっては役に立ちますが、ほとんどの組織では、嫌がらせや差別の検出に最適化されたコミュニケーション コンプライアンス ポリシーにすべてのユーザーを含める必要があります。
 - 100% で確認する通信の割合を構成して、ポリシーが組織の通信に関するすべての問題を確実に把握できるようにします。
-- Microsoft 365 組織内のメールボックスにインポートされたデータについては [、サード パーティのソース](communication-compliance-channels.md#third-party-sources) からの通信をスキャンできます。 これらのプラットフォームに通信のレビューを含めるには、ポリシーの条件を満たすメッセージが通信ポリシーによって監視される前に、これらのサービスへのコネクタを構成する必要があります。
-- ポリシーは、カスタム通信コンプライアンス ポリシーで英語以外の言語の監視をサポートできます。 好みの言語で攻撃的な単語の [カスタム キーワード 辞書](communication-compliance-policies.md#custom-keyword-dictionaries) を作成するか、Microsoft 365 で [トレーニング可能な分類子](classifier-get-started-with.md) を使用して独自の機械学習モデルを構築します。
-- すべての組織には、異なる通信標準とポリシーのニーズがあります。 通信コンプライアンス [ポリシーの条件](communication-compliance-policies.md#conditional-settings) を使用して特定のキーワードを検出するか、カスタムの機密情報の種類で特定の種類の [情報を検出します](create-a-custom-sensitive-information-type.md)。
+- Microsoft 365 組織内のメールボックスにインポートされたデータについては [、サード パーティのソース](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) からの通信をスキャンできます。 これらのプラットフォームに通信のレビューを含めるには、ポリシーの条件を満たすメッセージが通信ポリシーによって監視される前に、これらのサービスへのコネクタを構成する必要があります。
+- ポリシーは、カスタム通信コンプライアンス ポリシーで英語以外の言語の監視をサポートできます。 好みの言語で攻撃的な単語の [カスタム キーワード 辞書](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) を作成するか、Microsoft 365 で [トレーニング可能な分類子](/microsoft-365/compliance/classifier-get-started-with) を使用して独自の機械学習モデルを構築します。
+- すべての組織には、異なる通信標準とポリシーのニーズがあります。 通信コンプライアンス [ポリシーの条件](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) を使用して特定のキーワードを検出するか、カスタムの機密情報の種類で特定の種類の [情報を検出します](/microsoft-365/compliance/create-a-custom-sensitive-information-type)。
 
 ## <a name="creating-a-communication-compliance-policy-walkthrough"></a>通信コンプライアンス ポリシーのチュートリアルの作成
 
@@ -154,4 +154,4 @@ Microsoft Purview コンプライアンス ポータルの定期的な周期で�
 
 ## <a name="ready-to-get-started"></a>始める準備はいいですか。
 
-Microsoft 365 組織の通信コンプライアンスを構成するには、「[コミュニケーション コンプライアンスの構成](communication-compliance-configure.md)」または[「Contoso のケース スタディ](communication-compliance-case-study.md)」と、Microsoft Teams、Exchange Online、Yammer 通信の不適切なコンテンツを検出するための通信コンプライアンス ポリシーをすばやく構成した方法に関するページを参照してください。
+Microsoft 365 組織の通信コンプライアンスを構成するには、「[コミュニケーション コンプライアンスの構成](/microsoft-365/compliance/communication-compliance-configure)」または[「Contoso のケース スタディ](/microsoft-365/compliance/communication-compliance-case-study)」と、Microsoft Teams、Exchange Online、Yammer 通信の不適切なコンテンツを検出するための通信コンプライアンス ポリシーをすばやく構成した方法に関するページを参照してください。

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを使用して中小企業にサイバーセキュリティを実装する方法について説明します。 サイバーセキュリティの機能と機能は、サイバー攻撃やセキュリティ侵害を防ぐために最適化され、高度なサイバー防御を使用してデータ、デバイス、情報を保護するのに役立ちます。
-ms.openlocfilehash: f3752393e32ab151edcaa8166eabe862ad3f90c2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 0fec3c5117759cc0cdb5d13fe8c04809cfcf8356
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663110"
+ms.locfileid: "66685923"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; 中小企業向けサイバーセキュリティ
 
@@ -51,7 +51,7 @@ ms.locfileid: "66663110"
 
 ## <a name="train-your-team"></a>チームをトレーニングする
 
-ここには、チームが完了する必要があるいくつかの目標を含む一連のミッションが含まれています。 チームのデバイスが保護されていることと、チームがメールとファイル共有を安全に使用し、脅威を認識して報告するようにトレーニングされていることを確認する必要があります。
+ここには、チーム (すべての従業員) が完了する必要があるいくつかの目標を含む一連のミッションが含まれています。 チームのデバイスが保護されていること、およびチームがメールとファイル共有を安全に使用し、脅威を認識して報告できるようにトレーニングされていることを確認する必要があります。
 
 1. [**BYOD デバイスを設定します**](m365bp-protect-pcs-macs.md)。 このミッションでは、すべてのアンマネージド (BYOD) デバイスを設定し、それらが安全にエコシステムの一部になるようにします。
 

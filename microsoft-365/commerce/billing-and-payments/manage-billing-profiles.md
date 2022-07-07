@@ -20,20 +20,20 @@ ms.custom:
 search.appverid: MET150
 description: 課金プロファイルが請求書をサポートする方法について説明します。
 ms.date: 04/02/2021
-ms.openlocfilehash: 92c8bd302d65bc9f7c9376ac148fd49a0ac18e04
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 18e1eb23d0fcbdfd6eb374032f780a4f89a48cee
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102550"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66685879"
 ---
 # <a name="understand-billing-profiles"></a>課金プロファイルを理解する
 
-課金プロファイルには、支払い方法、請求先情報、その他の請求書設定 (発注書番号、電子メール請求書の設定など) が含まれています。 課金プロファイルを使用して、Microsoft から購入した製品の料金を支払います。 課金プロファイルは、ユーザーがセルフサービスで購入したときに自動的に作成されます。 各課金プロファイルは個別に請求されます。
+課金プロファイルには、支払い方法、請求先情報、その他の請求書設定 (発注書番号、電子メール請求書の設定など) が含まれています。 課金プロファイルを使用して、Microsoft から購入した製品の料金を支払います。 課金プロファイルは自動的に作成され、それぞれ個別に請求されます。 
 
 > [!NOTE]
 >
-> 課金プロファイルは、Microsoft.com またはMicrosoft 365 管理センターの **[サービスの購入**] ページで製品やサービスを購入する顧客には使用できません。
+> すべてのアカウントに課金プロファイルがあるわけではありません。 お持ちかどうかわからない場合は、[課金プロファイルの一覧を表示する] (manage-billing-profiles.md#view-my-billing-profiles) を使用できます。
 
 ## <a name="what-are-billing-profile-roles"></a>課金プロファイル ロールとは何ですか?
 

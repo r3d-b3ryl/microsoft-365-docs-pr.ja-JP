@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f8d44cd032e658e28242c89f3fbd938bfd1fb320
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490555"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686143"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -65,6 +65,7 @@ ms.locfileid: "66490555"
 - セキュリティ インテリジェンスの更新プログラムの削除
 - 検出された脅威に対する自動アクションを無効にする
 - Windows セキュリティ アプリでの通知の抑制
+- アーカイブファイルとネットワーク ファイルのスキャンを無効にする
 
 ### <a name="how-it-works"></a>メカニズム
 
@@ -96,8 +97,8 @@ ms.locfileid: "66490555"
 
 | 改ざん防止を有効にする方法 | クラウド保護への依存 |
 |---|---|
-|Microsoft Intune|X|
-|テナントアタッチを使用した Microsoft Endpoint Configuration Manager|X|
+|Microsoft Intune|不要|
+|テナントアタッチを使用した Microsoft Endpoint Configuration Manager|不要|
 |Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|はい|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用して組織の改ざん防止を管理する
