@@ -2,8 +2,8 @@
 title: 管理対象デバイスの設定と保護
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: overview
@@ -23,16 +23,16 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理対象デバイスを設定してセキュリティの脅威やサイバー攻撃から保護する方法の概要。 すべてのデバイスを登録してオンボーディングすることにより、サイバーセキュリティの防御とエンドポイント保護を実装します。 デバイス ポリシーを設定し、デバイス グループを管理する方法をご覧ください。
-ms.openlocfilehash: ad5ff8c03fa3749cb764949990a491ae8aa0266a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 119b54dd2a00e02fcef9a7caa0406638ec06a261
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486555"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66630837"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>管理対象デバイスの設定と保護
 
-最後の重要なミッションへようこそ。 ここでは、組織内のすべての管理対象デバイスの保護をオンボードして実装します。 マルウェアとウイルス対策が常に最新であることを確認し、システムをロックダウンするのに役立つポリシーを設定するために、Defender でオンボードする必要があります。 次に、すべての Windows デバイスが保護され、Office 展開用に設定されていることを確認します。 これらの目的が達成されたら、保護できることを実行したので、ご安心ください。
+最後の重要なミッションへようこそ。 ここでは、組織内のすべての管理対象デバイスの保護をオンボードして実装します。 デバイスを Defender for Business にオンボードして、ウイルス対策とマルウェア対策の保護を常に最新の状態に保ち、システムのロックダウンに役立つポリシーを設定します。 また、Windows デバイスが保護され、Office 展開の準備ができていることを確認できます。 完了したら、これらの目的を達成したときに、組織を保護するためにできることを行ったことを理解し、安心できます。
 
 ミッションの目的:
 
@@ -41,7 +41,14 @@ ms.locfileid: "66486555"
 - [デバイス ポリシーを確認および編集する](m365bp-view-edit-create-mdb-policies.md)
 - [デバイス グループを管理する](m365bp-device-groups-mdb.md)
 
-これらの目的が達成されると、サイバー攻撃やその他のサイバーセキュリティの脅威から組織を保護するという全体的なミッションは成功です。 ここで、システムの整合性を守りながら発生する可能性のある状況に対処するために、対応チームを設定してください。 
+これらの目的が達成されるたら、サイバー攻撃やその他のサイバーセキュリティの脅威から組織を保護するという全体的なミッションは成功です。 ここで、システムの整合性を守りながら発生する可能性のある状況に対処するために、対応チームを設定してください。 次の手順を参照してください。
 
 :::image type="content" source="media/m365bp-secure-managed-devices.jpg" alt-text="管理対象デバイスをセキュリティで保護します。":::
 
+## <a name="next-steps"></a>次の手順
+
+1. [セキュリティ操作手順を設定します](m365bp-security-incident-quick-start.md)。
+
+2. [セキュリティ インシデント管理について説明します](m365bp-security-incident-management.md)。
+
+3. [環境を維持する方法について説明します](m365bp-maintain-environment.md)。

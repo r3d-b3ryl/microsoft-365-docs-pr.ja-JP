@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: ac51e20b786b2e21d3bb83bd7900e56fb8fac513
-ms.sourcegitcommit: 400ef9ac34247978e3de7ecc0b376c4abb6c99d8
+ms.openlocfilehash: e84205a0357e87f28a77f5186265cf421add1483
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/27/2022
-ms.locfileid: "62241565"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66640766"
 ---
 # <a name="learn-about-data-classification"></a>データ分類について
 
@@ -44,7 +44,7 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 - [コンテンツ エクスプローラー](data-classification-content-explorer.md)
 - [アクティビティ エクスプローラー](data-classification-activity-explorer.md)
 
-データ分類は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft 365 コンプライアンス センター</a> または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>  >  [**分類**]  >  [**データ分類**] で確認することができます。
+データ分類は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a> または <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>  >  [**分類**]  >  [**データ分類**] で確認することができます。
 
 データ分類機能についてのビデオ ツアーを開始します。
 
@@ -72,14 +72,14 @@ Microsoft 365 の管理者またはコンプライアンス管理者は、組織
 
 プレビューには、アクセス制御を微調整するためにテストできる役割と役割グループがあります。
 
-プレビュー段階の Microsoft Information Protection (MIP) 役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の MIP 役割グループの一覧を次に示します。 詳細については、「[セキュリティ/コンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、「[セキュリティ/コンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
 - Information Protection レベル
@@ -134,7 +134,7 @@ SharePoint および OneDrive にあるファイルに対応するデータが�
 
 > [!NOTE]
 > "No retention labels detected" (保持ラベルが検出されませんでした) というメッセージがカードに表示される場合、保持ラベルが作成または発行されていないか、いずれのコンテンツにも保持ラベルが適用されていないことを意味します。保持ラベルの使用を開始するには、以下を参照してください。
->- [情報ガバナンスを開始する](get-started-with-information-governance.md)
+>- [データ ライフサイクル管理の使用を開始する](get-started-with-data-lifecycle-management.md)
 
 ## <a name="top-activities-detected"></a>検出された上位アクティビティ
 

@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: キャンペーンや他の企業用の Microsoft 365 Business のセットアップの概要
-ms.openlocfilehash: 2deeac236ff9bac0459e160c9400c134b622cca5
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d9a265ee291bce197fd59f6a27a2ad5c85392945
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66491213"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66642640"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>キャンペーン用の Microsoft 365 Business をセットアップする
 
@@ -63,7 +63,7 @@ Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) にサイ
 
 4. ページの右上で、コントロールの [**プレビュー**] を見つけます。 [[キャンペーンのバンプアップ保護](m365bp-security-overview.md)] で説明されているすべてのコントロールを使用できるように、[**プレビュー**] を選択します。
 
-### <a name="staff-sign-in"></a>スタッフサインイン
+## <a name="how-your-staff-will-sign-in"></a>スタッフがサインインする方法
 
 Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) サブスクリプションに追加されたユーザーは、次の手順に従ってサインインできます。
 
@@ -74,13 +74,13 @@ Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) サブス
 > [!TIP]
 > サインイン、Office アプリの取得、ファイルの保存、コピー、共有に関するヘルプについては、[従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md) へのリンクをスタッフに提供します。
 
-### <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意の通知を使用してサインイン ページをカスタマイズする
+## <a name="customize-your-sign-in-page-with-a-privacy-and-consent-notice"></a>プライバシーと同意の通知を使用してサインイン ページをカスタマイズする
 
 ビジネスやキャンペーンは、サインイン ページにプライバシーと同意の通知を追加することにより、法執行機関がオンラインの犯罪者に対して法的請求を行うことを容易にすることができます。
 
 サインイン ページは、ブランドに合わせてカスタマイズできます。 また、ユーザーがサインインするのに役立つテキストを追加したり、Microsoft 365 リソースにアクセスするための法的要件や制限を指摘したりすることもできます。
 
-### <a name="customize-the-text-on-your-sign-in-page"></a>サインイン ページのテキストをカスタマイズする
+## <a name="customize-the-text-on-your-sign-in-page"></a>サインイン ページのテキストをカスタマイズする
 
 サインイン ページのカスタマイズ可能な要素を更新するには、グローバル管理者である必要があります。 具体的な手順については、[会社のブランディングの追加](/azure/active-directory/fundamentals/customize-branding)に関する記事を参照してください。
 
@@ -92,6 +92,14 @@ Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) サブス
 - ユーザー名ヒント フィールド
 
 プライバシーと同意に関する通知の例については、「[コンピューターの検索と押収、および犯罪捜査における電子証拠の取得](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)」の付録 A を参照してください。
+
+## <a name="visual-guide-help-protect-yourself-and-your-campaign-from-digital-threats"></a>ビジュアル ガイド: デジタルの脅威から自分とキャンペーンを保護するのに役立ちます
+
+スタッフがサイバー脅威からキャンペーンを保護する手順について学習できるように、次のダウンロード 可能なガイドを使用します。
+
+[![キャンペーン情報グラフィックを保護するためのセキュリティで保護された画像。](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf)
+
+[PDF](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pdf) | [PowerPoint](https://download.microsoft.com/download/f/c/5/fc58bc0c-773a-4ac8-a232-6f986f61ef58/M365CampaignsWhatCanUsersDoToSecure.pptx)
 
 ## <a name="next-objective"></a>次の目標
 

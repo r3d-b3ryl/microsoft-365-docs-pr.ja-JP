@@ -2,8 +2,8 @@
 title: 環境を維持する
 f1.keywords:
 - NOCSH
-ms.author: v-kcirillo
-author: cirilk
+ms.author: deniseb
+author: denisebmsft
 manager: dansimp
 audience: Admin
 ms.topic: conceptual
@@ -23,20 +23,24 @@ search.appverid:
 - BCS160
 - MET150
 description: 組織のネットワークとシステムのセキュリティ環境の維持とサイバー攻撃からの防御に関する概要。
-ms.openlocfilehash: 5eb393eafc13df5ceb60abbc9fbbb699ffaccc87
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 92a234873babcb81b0c1f1e2a1e5145bec1b35ca
+ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489588"
+ms.lasthandoff: 07/06/2022
+ms.locfileid: "66641038"
 ---
 # <a name="maintain-your-environment"></a>環境を維持する
 
-ネットワーク上のユーザーは時間の経過とともに変化するため、安全な環境を維持する必要があります。 これまでに完了したミッションは、システムを保護することです。 ただし、これに加えて、システムからユーザーを安全かつクリーンに削除して、すべてのデータと情報へのアクセスを削除できるようにする必要もあります。 ユーザーが使用した可能性のあるデータを保護および移行する方法、所有している会社のデバイスをクリーンアップする方法、またはネットワークから完全に削除する方法について説明します。
+ネットワーク上のユーザーは時間の経過とともに変化するため、安全な環境を維持する必要があります。 これまでに完了したミッションは、システムを保護することです。 ただし、これに加えて、システムからユーザーを安全かつクリーンに削除して、すべてのデータと情報へのアクセスを削除できるようにする必要もあります。 また、実行する特定のセキュリティ管理タスクもあります。 
 
-これを行うには、次の手順を実行します。
+- [Microsoft 365 Business Premium セキュリティ操作ガイドをご確認ください](m365bp-security-incident-quick-start.md)。
+- [ユーザー アカウントを削除する](m365bp-review-remediation-actions-devices.md)。
+- [新規ユーザーの追加](m365bp-add-users.md)。
+- [(必要に応じて) パスワードをリセットします](m365bp-reset-passwords.md)。
+- [(必要に応じて) デバイスから会社のデータを削除します](../admin/devices/remove-company-data.md)。
+- [(必要に応じて) デバイスを工場出荷時の設定にリセットします](../admin/devices/reset-devices-to-factory-settings.md)。
 
-- [ユーザーを削除する](m365bp-review-remediation-actions-devices.md)
-- [デバイスからデータを削除する](../admin/devices/remove-company-data.md)
-- [デバイスをリセットする](../admin/devices/reset-devices-to-factory-settings.md)
+## <a name="see-also"></a>関連項目
 
+[セキュリティ インシデントの管理](m365bp-security-incident-management.md)
