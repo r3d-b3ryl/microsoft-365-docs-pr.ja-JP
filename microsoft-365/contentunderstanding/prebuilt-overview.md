@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntexの事前構築済みモデルについて説明します。
-ms.openlocfilehash: d43a608885864f5c81a8938010a0a52a2c4998a6
-ms.sourcegitcommit: dc415d784226c77549ba246601f34324c4f94e73
+ms.openlocfilehash: 47579f640e02874545177946534d81f1350104cd
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64916229"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66687676"
 ---
 # <a name="prebuilt-models-overview-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex の事前構築済みモデルの概要
 
@@ -29,7 +29,7 @@ SharePoint Syntexは、[理解モデル](document-understanding-overview.md)と[
 
 事前構築済みモデルでは、光学式文字認識 (OCR) とディープ ラーニング モデルを組み合わせて使用し、特定のドキュメントの種類に共通する定義済みのテキストフィールドとデータ フィールドを識別して抽出します。 まず、事前構築済みモデルに対してファイルの 1 つを分析します。 次に、目的に合った検出されたフィールドを選択します。 モデルで必要なフィールドが検出されない場合は、別のファイルを使用して再度分析できます。
 
-ドキュメント理解モデルと同様に、事前構築済みモデルは [コンテンツ センター](create-a-content-center.md)で作成および管理されます。 SharePointドキュメント ライブラリに適用すると、モデルはコンテンツ タイプに関連付け、抽出される情報を格納する列を持ちます。 
+ドキュメント理解モデルと同様に、事前構築済みモデルは [コンテンツ センター](create-a-content-center.md)で作成および管理されます。 SharePoint ドキュメント ライブラリに適用すると、モデルはコンテンツ タイプに関連付け、抽出される情報を格納する列を持ちます。 
 
 モデルを公開したら、コンテンツセンターを使用して、アクセスできる SharePoint ドキュメントライブラリにモデルを適用します。  
 
@@ -53,7 +53,7 @@ SharePoint Syntexは、[理解モデル](document-understanding-overview.md)と[
 
 ### <a name="file-limitations"></a>ファイルの制限事項
 
-テキスト ベースのファイルと OCR スキャンされたファイル (PDF、画像、TIFF) のMicrosoft Officeに関して、次の違いに注意してください。
+Microsoft Office テキスト ベースのファイルと OCR スキャンされたファイル (PDF、画像、TIFF) については、次の違いに注意してください。
 
 - Office ファイル: 64,000 文字で切り捨てられます (ドキュメント ライブラリ内のファイルに対して実行する場合)。
 
@@ -63,12 +63,9 @@ SharePoint Syntexは、[理解モデル](document-understanding-overview.md)と[
 
 - 2 つ以上の事前構築済みモデルが同じライブラリに適用されている場合、ファイルは平均信頼度スコアが最も高いモデルを使用して分類されます。 抽出されたエンティティは、適用されたモデルからのみ取得されます。
 
-- 事前構築済みモデルがドキュメント理解モデルを持つライブラリに適用されている場合、ファイルはドキュメント理解モデルとそのモデルのトレーニング済み抽出プログラムを使用して分類されます。 事前構築済みモデルに一致する空の列がある場合は、抽出された値を使用して列が設定されます。
-
 - カスタム フォーム処理モデルを持つライブラリに事前構築済みモデルが適用されている場合、ファイルは事前構築済みモデルとそのモデルで検出されたすべての抽出器を使用して分類されます。 フォーム処理モデルに一致する空の列がある場合は、抽出された値を使用して列が設定されます。
 
 - 複数のカスタム フォーム処理モデルをライブラリに適用することはサポートされていません。
-
 
 ## <a name="see-also"></a>関連項目
 

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint と OneDrive で Word、Excel、および PowerPoint ファイルの秘密度ラベルのサポートを有効にすることができます。
-ms.openlocfilehash: cc5a72a3e36c36ec752699f488450adee4a037aa
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 15985ea95c3e4a562a4cbc51f84a10af2592d53f
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637841"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66687698"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -123,7 +123,9 @@ Windows では OneDrive 同期 アプリ バージョン 19.002.0121.0008 以降
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>SharePoint と OneDrive の秘密度ラベルを有効にする方法 (オプトイン)
 
-新しい機能を有効にするには、Microsoft Purview コンプライアンス ポータルを使用するか、PowerShell を使用します。 SharePoint と OneDrive のすべてのテナント レベルの構成変更と同様に、変更が有効になるまでに約 15 分かかります。
+新しい機能を有効にするには、Microsoft Purview コンプライアンス ポータルを使用するか、PowerShell を使用します。 手順については、次のセクションを参照してください。
+
+SharePoint と OneDrive のすべてのテナント レベルの構成変更と同様に、変更が有効になるまでに約 15 分かかります。
 
 ### <a name="use-the-microsoft-purview-compliance-portal-to-enable-support-for-sensitivity-labels"></a>Microsoft Purview コンプライアンス ポータルを使用して秘密度ラベルのサポートを有効にする
 
@@ -244,7 +246,7 @@ SharePoint 管理者が SharePoint に格納されているドキュメントか
 
 代わりに、グローバル管理者または [SharePoint 管理者](/sharepoint/sharepoint-admin-role) は [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行できます。これにより、秘密度ラベルと暗号化の両方が削除されます。 このコマンドレットは、管理者がサイトまたはファイルに対するアクセス許可を持っていない場合や、Azure Rights Management サービスが利用できない場合でも実行されます。
 
-例:
+次に例を示します。
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
