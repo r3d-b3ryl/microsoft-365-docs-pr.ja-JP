@@ -22,12 +22,12 @@ description: Microsoft Purview Information Protection の秘密度ラベルを�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b7deebb8f745c3b43f82093412e291ab304b4794
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663484"
+ms.locfileid: "66685967"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -71,7 +71,7 @@ Microsoft Purview Information Protection の秘密度ラベルを使用すると
 
 - **保護設定を何も使わずにコンテンツを分類する。** コンテンツの分類の結果としてラベルを単純に割り当てることもできます。 これにより、分類を組織のラベル名に視覚的にマッピングすることができます。ラベルを使用して、使用状況レポートを生成し、機密コンテンツのアクティビティ データを確認できます。 この情報に基づいて常に選択し、後で保護設定を適用できます。
 
-これらすべてのケースで、Microsoft 365 の秘密度ラベルを使用することにより、適切なコンテンツで適切な措置をとることができます。 秘密度ラベルを使用すると、組織全体でデータを分類し、その分類に基づいて保護設定を適用できます。
+Microsoft Purview の秘密度ラベルを使用することにより、これらすべてのケースにおいて適切なコンテンツで適切な措置をとることができます。 秘密度ラベルを使用すると、組織全体でデータを分類し、その分類に基づいて保護設定を適用できます。 その保護はコンテンツに残ります。
 
 秘密度ラベルでサポートされているこれらのシナリオの詳細については、「[秘密度ラベルの一般的なシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)」を参照してください。 機密情報のラベルをサポートする新しい機能は、常に開発されています。そのため、[Microsoft 365 の ロードマップ](https://aka.ms/MIPC/Roadmap)を参照することをお勧めします。
 
@@ -83,9 +83,9 @@ Microsoft Purview Information Protection の秘密度ラベルを使用すると
 
 - **クリア テキスト。** ラベルはファイルやメールのメタデータにクリア テキストとして保存されるため、サードパーティ製のアプリやサービスはラベルを読み取り、必要に応じてそれぞれの保護アクションを適用することができます。
 
-- **永続性。** ラベルがファイルおよびメールのメタデータに保存されているため、ラベルは、保存または格納場所に関係なく、コンテンツと共に移動します。 固有のラベル識別は、構成するポリシーを適用して実施するための基礎となります。
+- **永続性。** ラベルがファイルおよびメールのメタデータに保存されているため、ラベルは、保存または格納場所に関係なく、コンテンツと共に保持されます。 固有のラベル識別は、構成するポリシーを適用して実施するための基礎となります。
 
-ユーザーに表示する場合、秘密度ラベルは、使用しているアプリのタグのように表示され、既存のワークフローに簡単に統合できます。
+組織のユーザーに表示する場合、秘密度ラベルは、使用しているアプリのタグのように表示され、既存のワークフローに簡単に統合できます。
 
 秘密度ラベルをサポートする各アイテムには、単一の秘密度ラベルを適用できます。 ドキュメントとメールには、秘密度ラベルと[保持ラベル](retention.md#retention-labels)の両方を適用できます。
 
@@ -247,8 +247,7 @@ AIP クライアントを使用している場合は、「[Office アプリの A
 
 ### <a name="azure-information-protection-labels"></a>Azure Information Protection のラベル
 
-> [!NOTE]
-> Azure Portal での Azure Information Protection ラベルのラベル管理は、**2021 年 3 月 31 日** に廃止されます。詳細については、公式の「[非推奨通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)」を参照してください。
+Azure Portal での Azure Information Protection ラベルのラベル管理は、**2021 年 3 月 31 日** に廃止されます。詳細については、公式の「[非推奨通知](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179)」を参照してください。
 
 テナントがまだ[統合ラベル付けプラットフォーム](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)を使用していない場合は、機密ラベルを使用する前に、まず統合ラベルを有効化する必要があります。 手順については、、「[Azure Information Protection ラベルを統合秘密度ラベルに移行する方法](/azure/information-protection/configure-policy-migrate-labels)」を参照してください。
 
@@ -262,4 +261,4 @@ AIP クライアントを使用している場合は、「[Office アプリの A
 
 ライセンス情報、アクセス許可、展開戦略、およびサポートされているシナリオとエンドユーザー ドキュメントのリソースのリストを含む展開計画とガイダンスについては、「[秘密度ラベルの開始](get-started-with-sensitivity-labels.md)」を参照してください。
 
-秘密度ラベルを使用してデータ プライバシー規制に準拠する方法については、「[Microsoft 365 における、データ プライバシー規制のための情報の展開保護](../solutions/information-protection-deploy.md)」(aka.ms/m365dataprivacy) を参照してください。
+秘密度ラベルを使用してデータ プライバシー規制に準拠する方法については、「[Microsoft 365 における、データ プライバシー規制のための情報の展開保護](../solutions/information-protection-deploy.md)」を参照してください。

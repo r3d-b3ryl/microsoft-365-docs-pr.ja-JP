@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6edfd60b5f5a3d10200191cd676fb66fa72ec1ba
-ms.sourcegitcommit: 4c7b34fc46be8f5faf33139c6c7b6efaf43def27
+ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
+ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66556770"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66686011"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
@@ -38,7 +38,7 @@ ms.locfileid: "66556770"
 | サブスクリプション | Microsoft 365 Business Premium または Microsoft 365 for Campaigns <br/><br/> 試用版を開始する、またはサブスクリプションを購入するには、次の記事を参照してください。 <br/>- [Microsoft 365 Business Premium を入手する](get-microsoft-365-business-premium.md)<br/>- [Microsoft 365 for Campaigns を入手する](get-microsoft-365-campaigns.md) |
 | アクセス許可  | 初期セットアップの手順を完了するには、グローバル管理者である必要があります。[管理者ロールの詳細を参照してください](../admin/add-users/about-admin-roles.md)。 |
 | ブラウザー要件 | Microsoft Edge、Safari、Chrome または Firefox。 [ブラウザー要件の詳細を参照してください](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy)。  |
-| オペレーティング システム | **Windows**: Windows 11、Windows 10、Windows 8.1、Windows Server 2019 以降、または Windows Server 2016<br/><br/>**MacOS**: 最新の 3 つのバージョンのいずれか。 |
+| オペレーティング システム | **Windows**:  Windows 11、Windows 10、Windows 8.1<br/>**MacOS**: 最新の 3 つのバージョンのいずれか。 <br/>現在、Microsoft 365 Business Premium およびスタンドアロン バージョンの Microsoft Defender for Business は、サーバーをサポートしていません。  |
 
 > [!TIP]
 > Microsoft 365、Office、システム要件の詳細については、「[Microsoft 365 および Office のリソース](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)」を参照してください。

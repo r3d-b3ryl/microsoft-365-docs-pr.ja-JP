@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 570f2a6e684dbe160f8de2f43817fde996f0b92c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f3af46b59134a815f3ba3a02154f9ecfd6f95627
+ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640900"
+ms.lasthandoff: 07/08/2022
+ms.locfileid: "66689184"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -272,9 +272,6 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 トレーニング可能な分類子のオプションを選択する場合、1 つ以上の事前にトレーニングされた、またはカスタムのトレーニング可能な分類子を選択できます。
 
 ![トレーニング可能な分類子の選択。](../media/retention-label-classifers.png)
-
-> [!CAUTION]
-> 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 この分類子は使用しないでください。現在使用している場合は、ビジネス プロセスを移動して、代わりに、事前にトレーニングされた **[対象へのハラスメント]**、**[冒とく]**、および **[脅威]** 分類子を使用することをお勧めします。
 
 このオプションを使用してラベルを自動的に適用するには、SharePoint サイトとメールボックスには少なくとも 10 MB のデータが必要です。
 

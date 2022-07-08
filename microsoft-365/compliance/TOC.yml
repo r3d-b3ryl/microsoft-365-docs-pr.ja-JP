@@ -238,9 +238,9 @@
           href: communication-compliance-policies.md
         - name: 通信コンプライアンスのアラートを調査して修復する
           href: communication-compliance-investigate-remediate.md
-        - name: 通信コンプライアンス レポートと監査の詳細
+        - name: 通信コンプライアンス レポートと監査の使用
           href: communication-compliance-reports-audits.md
-        - name: SIEM ソリューションのコミュニケーション コンプライアンス
+        - name: SIEM ソリューションのコミュニケーション コンプライアンスの使用
           href: communication-compliance-siem.md
         - name: ケース スタディ - Contoso が不適切なテキスト ポリシーをすばやく構成する
           href: communication-compliance-case-study.md
