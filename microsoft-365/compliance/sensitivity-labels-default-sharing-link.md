@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成します。
-ms.openlocfilehash: ca4b74c2fb25c4f1f1ef96b8ae0241481358797d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0e2fbe762483ff3997484b32448ce96711147e43
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628575"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663176"
 ---
 # <a name="use-sensitivity-labels-to-configure-the-default-sharing-link-type-for-sites-and-documents-in-sharepoint-and-onedrive"></a>秘密度ラベルを使用して、SharePoint と OneDrive のサイトと個ドキュメントの既定の共有リンクの種類を構成する
 
@@ -92,11 +92,11 @@ PowerShell の例、秘密度ラベル GUID は **8faca7b8-8d20-48a3-8ea2-0f9631
 
 PowerShell の詳細設定の指定に関する詳細については、「[詳細設定を指定するための PowerShell のヒント](create-sensitivity-labels.md#powershell-tips-for-specifying-the-advanced-settings)」を参照してください。
 
-サイトの既定の共有リンクの種類の設定を構成するには、Microsoft Purview コンプライアンス ポータルで秘密度ラベルを作成するときに、[秘密度ラベルの範囲](sensitivity-labels.md#label-scopes)に **[グループとサイト]** を含める必要があります。 作成後、**[ラベル]** ページの **[範囲]** 列に **サイト、UnifiedGroup** として表示され、PowerShell *ContentType* 設定にも同じ値が表示されます。 ドキュメントの場合、範囲には **[ファイルとメール]** が含まれている必要があります。これらは **[ファイル、メール]** として表示されます。 その後で以下の手順に従います。
+サイトの既定の共有リンクの種類の設定を構成するには、Microsoft Purview コンプライアンス ポータルで秘密度ラベルを作成するときに、[秘密度ラベルの範囲](sensitivity-labels.md#label-scopes)に **[グループとサイト]** を含める必要があります。 作成後、**[ラベル]** ページの **[範囲]** 列に **サイト、UnifiedGroup** として表示され、PowerShell *ContentType* 設定にも同じ値が表示されます。 ドキュメントの場合、範囲には **[アイテム]** が含まれている必要があります。これらは **[ファイル、メール]** として表示されます。 その後で以下の手順に従います。
 
 - 範囲に **[グループとサイト]** が含まれている場合、そのサイトのデフォルトの共有リンクタイプを設定するラベルをサイトに適用できます。 サイトに秘密度ラベルを適用する方法については、「[コンテナーに秘密度ラベルを適用する](sensitivity-labels-teams-groups-sites.md#how-to-apply-sensitivity-labels-to-containers)」を参照してください。
 
-- 秘密度ラベルの範囲に **[ファイルとメール]** が含まれている場合、そのラベルをドキュメントに適用できます。これにより、そのドキュメントの既定の共有リンクの種類が設定されます。ラベルは [手動](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)で適用することも、[自動的](apply-sensitivity-label-automatically.md)に適用することもできます。
+- 秘密度ラベルの範囲に **[アイテム]** が含まれている場合、そのラベルをドキュメントに適用できます。これにより、そのドキュメントの既定の共有リンクタイプが設定されます。 [手動](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)で、または[自動的に](apply-sensitivity-label-automatically.md)適用することができます。
 
 > [!TIP]
 > [ラベル ポリシー設定](sensitivity-labels.md#what-label-policies-can-do)として、ラベルが新しいサイトまたは新しいドキュメントに適用されるデフォルトの秘密度ラベルであることを指定することもできます。

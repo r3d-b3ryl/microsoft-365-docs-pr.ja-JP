@@ -18,12 +18,12 @@ ms.collection:
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3e5cc711aef4e81833540572027b8d06087c510
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66486931"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663396"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -100,7 +100,7 @@ Microsoft 365 で受信するメールの DMARC を設定するために必要�
 
 ## <a name="set-up-dmarc-for-outbound-mail-from-microsoft-365"></a>Microsoft 365 からの送信メール用に DMARC を設定する
 
-Microsoft 365 を使用しているものの、カスタム ドメインを使用していない場合 (onmicrosoft.com を使用している)、組織で DMARC を構成または実装するために、他に何をする必要もありません。 SPF のセットアップはすでに完了しており、Microsoft 365 により自動的に送信メールに DKIM 署名が生成されます。 組織の DMARC を構成するために、他に何もする必要はありません。 この署名の詳細については「[DKIM と Microsoft 365 の既定の動作](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)」をご覧ください。
+Microsoft 365 を使用しているもののカスタム ドメインを使用していない場合 (つまり、onmicrosoft.com を使用する場合)、SPF のセットアップは既に完了しており、Microsoft 365 により自動的に送信メールに DKIM 署名が生成されます。この署名の詳細については「[DKIM と Microsoft 365 の既定の動作](use-dkim-to-validate-outbound-email.md#DefaultDKIMbehavior)」をご覧ください。 組織に DMARC を設定するには、onmicrosoft.com ドメインの [[DMARC TXT レコードを作成]](#step-4-form-the-dmarc-txt-record-for-your-domain) し、[Office 365 管理センター](https://admin.microsoft.com) > [設定] > [ドメイン] > [onmicrosoft.com ドメイン] > [レコードの追加] をクリックして DNS に公開する必要があります。
 
  カスタム ドメインを所有している場合や、Microsoft 365 と合わせてオンプレミスの Exchange サーバーも使用している場合は、送信メール用に手動で DMARC を設定する必要があります。 カスタム ドメイン用に DMARC を設定する手順は次のとおりです。
 
@@ -281,4 +281,4 @@ DMARC の詳細情報が必要ですか。以下のリソースが役に立ち�
 
 [**DKIM を使用して、Microsoft 365 のカスタム ドメインから送信される送信電子メールを検証する**](use-dkim-to-validate-outbound-email.md)
 
-[正当なメールフローに信頼された ARC 送信者を使用する](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[正当なメールフローに信頼された ARC 送信者を使用する](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)

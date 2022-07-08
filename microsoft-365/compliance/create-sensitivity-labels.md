@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'すべての Microsoft Purview Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
-ms.openlocfilehash: ad7e9c9aeea0a1ef05f79214afd60ac479ba2e66
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 486cc10888ebb66a657aa21930fe306073ac1868
+ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625525"
+ms.lasthandoff: 07/07/2022
+ms.locfileid: "66663528"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>秘密度ラベルとそのポリシーを作成して構成する
 
@@ -50,7 +50,7 @@ ms.locfileid: "66625525"
 
 2. **[ラベル]** ページで、**[+ ラベルの作成]** を選択して、新しい秘密度ラベルの構成を開始します。 
     
-    ![秘密度ラベルを作成する。](../media/create-sensitivity-label-full.png)
+    :::image type="content" source="../media/create-sensitivity-label-full.png" alt-text="秘密度ラベルを作成する。" lightbox="../media/create-sensitivity-label-full.png":::
 
     > [!NOTE]
     > 既定では、テナントにはラベルはありません。作成する必要があります。 こちらに例示した図のラベルには、[Azure Information Protection から移行](/azure/information-protection/configure-policy-migrate-labels) された既定のラベルが表示されます。
@@ -59,7 +59,7 @@ ms.locfileid: "66625525"
 
     ![機密度ラベルのスコープ。](../media/sensitivity-labels-scopes.png)
 
-    - **[ファイルとメール]** が選択されている場合、Office Word や Outlook などの機密度ラベルをサポートするアプリに適用される設定を構成できます。 このオプションが選択されていない場合、これらの設定の最初のページを表示しても、それらを構成することはできず、ユーザーがこれらのアプリでラベルを選択することはできません。
+    - **[アイテム]** が選択されている場合、Office Word や Outlook などの機密度ラベルをサポートするアプリに適用される設定を構成できます。 このオプションが選択されていない場合、これらの設定の最初のページを表示しても、それらを構成することはできず、ユーザーがこれらのアプリでラベルを選択することはできません。
 
     - **[グループとサイト]** が選択されている場合、Microsoft 365 グループ、および Teams と SharePoint のサイトに適用される設定を構成できます。 このオプションが選択されていない場合、これらの設定の最初のページを表示しても、それらを構成することはできず、ユーザーがグループおよびサイト用にラベルを選択することはできません。
 
@@ -153,7 +153,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Def
 
 2. **[ラベル ポリシー]** ページで、**[ラベルの発行]** を選択して **[ポリシーの作成]** 構成を開始します。
     
-    ![ラベルを発行。](../media/publish-sensitivity-labels-full.png)
+   :::image type="content" source="../media/publish-sensitivity-labels-full.png" alt-text="ラベルを発行。" lightbox="../media/publish-sensitivity-labels-full.png":::
     
     > [!NOTE]
     > 既定では、テナントにはラベル ポリシーはありません。作成する必要があります。 
@@ -167,7 +167,7 @@ Set-Label -Identity 8faca7b8-8d20-48a3-8ea2-0f96310a848e -AdvancedSettings @{Def
 
 5. 指示に従ってポリシー設定を構成します。
 
-    表示されるポリシー設定は、選択したラベルのスコープと一致します。たとえば、**[ファイルとメール]** のスコープのみを持つラベルを選択した場合、ポリシー設定 **[このラベルを既定でグループとサイトに適用する]** および **[ユーザーにグループやサイトにラベルを付けるように要求する]** は表示されません。
+    表示されるポリシー設定は、選択したラベルのスコープと一致します。 たとえば、**[アイテム]** のスコープのみを持つラベルを選択した場合、ポリシー設定 **[このラベルを既定でグループとサイトに適用する]** および **[ユーザーにグループやサイトにラベルを付けるように要求する]** は表示されません。
 
     これらの設定の詳細については、概要情報の「[ラベル ポリシーでできること](sensitivity-labels.md#what-label-policies-can-do)」を参照してください。また、個々の設定については、UI のヘルプを参照してください。
 
