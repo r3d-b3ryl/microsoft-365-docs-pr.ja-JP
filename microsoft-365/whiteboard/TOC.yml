@@ -20,7 +20,7 @@
   items:
     - name: プライバシー設定を構成する
       href: configure-privacy-settings.md
-    - name: GDPR 要求
+    - name: GDPR 要求の管理
       href: gdpr-requests.md
 - name: 政府機関向けホワイトボード
   items:
