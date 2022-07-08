@@ -22,12 +22,12 @@ description: Microsoft Purview Information Protection の秘密度ラベルを�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 879b412ff6efa743756a6c41b322516952dec93c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
+ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685967"
+ms.locfileid: "66687808"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -134,11 +134,11 @@ Microsoft Purview の秘密度ラベルを使用することにより、これ�
 
 ![秘密度ラベルの範囲オプション。](../media/sensitivity-labels-scopes.png)
 
-既定では、**アイテム** の範囲が常に選択されています。 その他の範囲は、テナントに対して機能が有効になると、既定で選択されます。
+既定では、**アイテム** スコープ (以前に名前が付けられた **ファイルとメール**) は常に選択されます。 その他の範囲は、テナントに対して機能が有効になると、既定で選択されます。
 
-- **グループとサイト**: [コンテナーの秘密度ラベルを有効化してラベルを同期する](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
+- **グループとサイト**: [コンテナーの秘密度ラベルを有効化してラベルを同期する](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)を参照してください
 
-- **スキーマ化されたデータ アセット**: [Microsoft Purview Data Map のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)
+- **スキーマ化されたデータ アセット**: [Microsoft Purview Data Map のコンテンツに自動的にラベルを付ける](/azure/purview/create-sensitivity-label)を参照してください
 
 すべての範囲が選択されないように既定値を変更すると、選択していない範囲の構成設定の最初のページが表示されますが、設定を構成することはできません。 たとえば、アイテムの範囲が選択されていない場合、次のページでオプションを選択することはできません。
 
