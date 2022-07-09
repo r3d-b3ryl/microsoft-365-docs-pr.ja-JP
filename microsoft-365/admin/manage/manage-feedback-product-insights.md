@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: エンドユーザーのネット プロモーター スコア (NPS) を使用して、Microsoft の製品やサービスについてエンドユーザーがどのように感じているかを確認します。
-ms.openlocfilehash: ec261553a5713d9e12205cbf4c88611a128bc48b
-ms.sourcegitcommit: b3f5fe84a319741583954ef8ff2ec9ec6da69bcf
-ms.translationtype: HT
+ms.openlocfilehash: c7afd214359922c7946e3cb972ec6aced90857e0
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "65217356"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696208"
 ---
 # <a name="microsoft-product-nps-feedback-and-insights-for-your-organization"></a>組織に対する Microsoft 製品の NPS フィードバックと分析情報
 
@@ -49,16 +49,16 @@ NPS 調査とエンドユーザーからのフィードバックを使用して�
 
 ## <a name="nps-survey-insights"></a>NPS アンケートの分析情報
 
-1. 管理センターで、**[正常性]** > **[製品フィードバック]** > **[NPS 調査の分析情報]** にアクセスします。
+1. [Microsoft 365 管理センター](https://admin.microsoft.com/)で、**正常性** > **製品のフィードバック** > **NPS アンケートの分析情報** に移動します。
 2. **[NPS 調査分析情報]** ページから、ページに移動して、組織の NPS に関連する調査分析情報を確認します。
 
-:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="スクリーンショット: ネット プロモーター スコア (NPS) のメイン チャート":::
+:::image type="content" source="../../media/product-feedback-main-page.png" alt-text="スクリーンショット: ネット プロモーター スコア (NPS) のメイン チャート" lightbox="../../media/product-feedback-main-page.png":::
 
 ### <a name="top-topic-filters"></a>トップ トピック フィルター
 
 ユーザーからのフィードバックから、共通のテーマを特定しました。 次に、データセットをトレーニングし、フィードバックを **[トップ トピック]** に自動的に整理する機械学習モデルを使用しました。 次に、逐語的なフィードバックが最も多い上位 5 つのトピックを特定できます。  
 
-:::image type="content" source="../../media/top-topics-filter.png" alt-text="スクリーンショット: 最も逐語的なフィードバックがある上位 5 つのトピック":::
+:::image type="content" source="../../media/top-topics-filter.png" alt-text="スクリーンショット: 最も逐語的なフィードバックがある上位 5 つのトピック" lightbox="../../media/top-topics-filter.png":::
 
 > [!NOTE]
 > インテリジェント トピックは、対象分野の専門家と協力して設定された最低品質基準を満たした後にのみ公開されます。 適合率と再現率の指標は、同じものを決定するために使用されます。
@@ -138,7 +138,7 @@ NPS 調査とエンドユーザーからのフィードバックを使用して�
 - パッシブとは、サービスには満足しているが、製品やサービスを推奨するには不十分な顧客です。
 - プロモーター - 忠実かつ熱心で、あなたの製品やサービスを推薦する可能性が高い幸せな顧客。
 
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="スクリーンショット: 友人や同僚にアプリを推奨する可能性を示すグラフ":::
+:::image type="content" source="../../media/how-likely-recommend.png" alt-text="スクリーンショット: 友人や同僚にアプリを推奨する可能性を示すグラフ" lightbox="../../media/how-likely-recommend.png":::
 
 ### <a name="export-to-csv-and-search"></a>CSV にエクスポートして検索
 
@@ -161,7 +161,7 @@ Microsoft 365 for Business **製品** の大部分は、このフィルターの
 
 **[フィードバック タイプ]** (NPS フィードバック タイプにのみ設定) を使用して、収集したフィードバックをフィルタリングします。
 
-:::image type="content" source="../../media/feedback-filters.png" alt-text="スクリーンショット: フィードバックの種類を示すグラフ":::
+:::image type="content" source="../../media/feedback-filters.png" alt-text="スクリーンショット: フィードバックの種類を示すグラフ" lightbox="../../media/feedback-filters.png":::
 
 ### <a name="we-want-to-hear-from-you"></a>ご意見をお聞かせください。
 

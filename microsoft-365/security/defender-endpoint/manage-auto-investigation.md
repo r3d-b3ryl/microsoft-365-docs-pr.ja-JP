@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 06e2c6c5269b32b29be87f44635d65b9c610c344
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535870"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695618"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションを確認する
 
@@ -61,7 +61,7 @@ ms.locfileid: "65535870"
 
 ## <a name="review-pending-actions"></a>保留中のアクションを確認する
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> に移動してサインインします。
 
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
 
@@ -78,7 +78,7 @@ ms.locfileid: "65535870"
 
 ## <a name="review-completed-actions"></a>完了した処理を確認する
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a> に移動してサインインします。
 
 2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。
 
@@ -102,7 +102,7 @@ ms.locfileid: "65535870"
 > - ファイルを停止して検疫する
 > - ファイルをブロックまたは許可するインジケーターを追加する
 >
-> 詳細については、「Microsoft Defender for Endpoint [プランを比較](defender-endpoint-plan-1-2.md)する」と「[中小企業向けのMicrosoft 365プランのセキュリティ機能の比較](../defender-business/compare-mdb-m365-plans.md)」を参照してください。
+> 詳細については、「Microsoft Defender for Endpoint[プランの比較](defender-endpoint-plan-1-2.md)」と「Microsoft [365 プランの中小規模企業向けのセキュリティ機能の比較](../defender-business/compare-mdb-m365-plans.md)」を参照してください。
 
 ### <a name="to-undo-multiple-actions-at-one-time"></a>複数のアクションを一度に元に戻すには
 
@@ -127,9 +127,9 @@ ms.locfileid: "65535870"
 |デバイス グループの設定|自動調査の結果|操作|
 |---|---|---|
 |**完全 - 脅威を自動的に修復する**<br/>(推奨)|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> 適切な修復アクションが自動的に実行されます。|[完了した処理を確認する](#review-completed-actions)|
-|**完全 - 脅威を自動的に修復する**|証拠の一部については *、疑わしい* という判定に達します。 <p> 修復アクションは、続行するための承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
+|**完全 - 脅威を自動的に修復する**|証拠の一部については *、疑わしい* という判定に達します。 <p> 適切な修復アクションが自動的に実行されます。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
 |**半 - 修復の承認が必要**|一部の証拠に対して *、[悪意]* または *[疑わしい* ] の判定に達します。 <p> 修復アクションは、続行するための承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
-|**Semi - コア フォルダー修復の承認が必要**|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> 成果物がファイルまたは実行可能ファイルであり、オペレーティング システム ディレクトリ (Windows フォルダーや Program files フォルダーなど) にある場合、修復アクションは承認待ちです。 <p> アーティファクトがオペレーティング システム ディレクトリ *にない* 場合は、修復アクションが自動的に実行されます。|<ol><li>[保留中のアクションを承認 (または拒否) する](#review-pending-actions)</li><li>[完了した処理を確認する](#review-completed-actions)</li></ol>|
+|**Semi - コア フォルダー修復の承認が必要**|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> アーティファクトがファイルまたは実行可能ファイルであり、Windows フォルダーや Program files フォルダーなどのオペレーティング システム ディレクトリにある場合、修復アクションは承認待ちです。 <p> アーティファクトがオペレーティング システム ディレクトリ *にない* 場合は、修復アクションが自動的に実行されます。|<ol><li>[保留中のアクションを承認 (または拒否) する](#review-pending-actions)</li><li>[完了した処理を確認する](#review-completed-actions)</li></ol>|
 |**Semi - コア フォルダー修復の承認が必要**|証拠の一部については *、疑わしい* という判定に達します。 <p> 修復アクションは承認待ちです。|[保留中のアクションを承認 (または拒否) します](#review-pending-actions)。|
 |**Semi - 一時フォルダー以外の修復の承認が必要**|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> アーティファクトが、ユーザーのダウンロード フォルダーや一時フォルダーなどの一時フォルダーにないファイルまたは実行可能ファイルの場合、修復アクションは承認待ちです。 <p> アーティファクトが一時フォルダー内にあるファイルまたは実行可能ファイル *の* 場合は、修復アクションが自動的に実行されます。|<ol><li>[保留中のアクションを承認 (または拒否) する](#review-pending-actions)</li><li>[完了した処理を確認する](#review-completed-actions)</li></ol>|
 |**Semi - 一時フォルダー以外の修復の承認が必要**|証拠の一部については *、疑わしい* という判定に達します。 <p> 修復アクションは承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|

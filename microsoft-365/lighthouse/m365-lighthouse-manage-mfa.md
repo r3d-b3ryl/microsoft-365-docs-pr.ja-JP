@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse を使用するマネージド サービス プロバイダー (MSP) 向けに、多要素認証を管理する方法を説明します。
-ms.openlocfilehash: d7874988f4316015afb58a40651bc6e85cf88f2a
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 79690fb052c611fd9d89cf0cdbde8fc8b3f37832
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686209"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695640"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで多要素認証を管理する
 
-Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプリケーションへのアクセスを保護するのに役立ち、2 つ目の形式の認証を使用して別のセキュリティ層を提供します。 [多要素認証] タブには、テナント全体での MFA 有効化の状態に関する詳細情報が表示されます。 一覧から任意のテナントを選択すると、そのテナントの詳細が表示されます。これには、MFA を必要とする条件付きアクセス ポリシーが既に構成されているものと、MFA にまだ登録していないユーザーが含まれます。
+Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプリケーションへのアクセスを保護するのに役立ち、2 つ目の形式の認証を使用して別のセキュリティ層を提供します。 [多要素認証] タブには、テナント全体での MFA 有効化の状態に関する詳細情報が表示されます。 一覧から任意のテナントを選択すると、MFA を必要とする条件付きアクセス ポリシーが既に構成されていることや、MFA にまだ登録していないユーザーなど、そのテナントの詳細が表示されます。
 
 中小企業 (SMB) のお客様の場合は、少なくとも[セキュリティの既定値群](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)を有効にすることをお勧めします。 より複雑なシナリオでは、[条件付きアクセス](/azure/active-directory/conditional-access/overview)を使用して特定のポリシーを構成できます。
 

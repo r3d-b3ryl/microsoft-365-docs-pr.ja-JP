@@ -9,12 +9,12 @@ audience: Developer
 ms.date: 3/7/2022
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.openlocfilehash: 65b0ffd5d605302dd62369471b65c1ac10aacd40
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d5390c97c097bdbf52e496336e3a239d975a88aa
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641770"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696230"
 ---
 # <a name="office-tls-certificate-changes"></a>Office TLS 証明書の変更
 
@@ -143,7 +143,8 @@ Microsoft 365 サービスで使用される新しい TLS 証明書は、次の�
 非常にまれな状況では、エンタープライズ ユーザーには、ルート CA "DigiCert Global Root G2" が失効として表示される証明書検証エラーが表示される場合があります。 これは、次の両方の条件下で Windows の既知のバグが原因です。
 
 - ルート CA は [CurrentUser\Root 証明書ストア](/windows/win32/seccrypto/system-store-locations#cert_system_store_current_user)にあり、プロパティと`NotBeforeEKU`プロパティがありません`NotBeforeFileTime`
-- ルート CA は [LocalMachine\AuthRoot 証明書ストア](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)にもありますが、プロパティと`NotBeforeEKU`プロパティの`NotBeforeFileTime`両方があります。
+- ルート CA は [LocalMachine\AuthRoot 証明書ストア](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)にありますが、プロパティと`NotBeforeEKU`プロパティの両方があります`NotBeforeFileTime`
+- ルート CA が [LocalMachine\Root 証明書ストア](/windows/win32/seccrypto/system-store-locations#cert_system_store_local_machine)にありません
 
 このルート CA から発行されたすべてのリーフ証明書は、失効した後に `NotBeforeFileTime` 表示されます。 
 
@@ -182,7 +183,12 @@ certutil -store -v authroot DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 certutil -user -store -v root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
 
-ユーザーは、証明書ストア内のルート CA のコピーを削除することで、問題を `CurrentUser\Root` 解決できます。
+ユーザーは、次の操作を実行して、証明書ストア内のルート CA のコピーを削除することで、問題を `CurrentUser\Root` 解決できます。
 ```
 certutil -user -delstore root DF3C24F9BFD666761B268073FE06D1CC8D4F82A4
 ```
+または 
+```
+reg delete HKCU\SOFTWARE\Microsoft\SystemCertificates\Root\Certificates\DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 /f
+```
+最初の方法では、ユーザーがクリックする必要がある Windows ダイアログが作成されますが、2 番目のアプローチではクリックする必要はありません。 

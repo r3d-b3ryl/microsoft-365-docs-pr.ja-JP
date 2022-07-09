@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c21d0bdf8a96347e60b79d998c0b8c64fd507a1
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 547b41deceae01045baf119aeba1c15b8573a23f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531102"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695869"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -53,7 +53,7 @@ Windows サーバーのWindows セキュリティベースラインをダウン�
 
 :::image type="content" source="images/server-onboarding-tools-methods.png" alt-text="Windows サーバー および Windows 10 デバイスのオンボード フローの図" lightbox="images/server-onboarding-tools-methods.png":::
 
-## <a name="integration-with-microsoft-defender-for-cloud"></a>Microsoft Defender for Cloudとの統合
+## <a name="integration-with-microsoft-defender-for-servers"></a>Microsoft Defender for Servers との統合
 
 Microsoft Defender for Endpointは、Microsoft Defender for Servers とシームレスに統合されます。 サーバーを自動的にオンボードしたり、Microsoft Defender for Cloud で監視されているサーバーを Defender for Endpoint に表示したり、Microsoft Defender for Cloud のお客様として詳細な調査を行うことができます。
 
@@ -196,6 +196,9 @@ Windows Server Update Services (WSUS) または Microsoft Endpoint Configuration
 ### <a name="step-1-download-installation-and-onboarding-packages"></a>手順 1: インストールとオンボード パッケージをダウンロードする
 
 **インストール** と **オンボード** パッケージの両方をポータルからダウンロードする必要があります。
+
+> [!NOTE]
+> インストール パッケージは毎月更新されます。 使用する前に、必ず最新のパッケージをダウンロードしてください。
 
 > [!div class="mx-imgBorder"]
 > ![オンボード ダッシュボードの画像](images/install-agent-onboard.png)

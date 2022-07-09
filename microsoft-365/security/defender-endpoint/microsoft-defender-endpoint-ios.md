@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: dcc67b2d2a9ad03dc1235eebd577e3525ab07a03
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: ac2c34359686da45998fab1076b7501357651318
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64665934"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695881"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>iOS 用 Microsoft Defender for Endpoint API
 
@@ -40,7 +40,7 @@ ms.locfileid: "64665934"
 > [!CAUTION]
 > iOS 上で Defender for Endpoint と共に他のサード パーティのエンドポイント保護製品を実行すると、パフォーマンスの問題と予期しないシステム エラーが発生する可能性があります。
 
-## <a name="pre-requisites"></a>前提条件
+## <a name="prerequisites"></a>前提条件
 
 **エンド ユーザーの場合**
 
@@ -52,10 +52,11 @@ ms.locfileid: "64665934"
     
     >[!NOTE]
     >Apple では、リダイレクトユーザーがアプリ ストアから他のアプリをダウンロードすることは許可されていないため、この手順はユーザーがアプリにオンボードする前に行う必要Microsoft Defender for Endpoint。
-    
-    - デバイスはAzure Active Directoryに登録されます。 これには、エンド ユーザーが[アプリを](https://apps.apple.com/app/microsoft-authenticator/id983156458)介してサインインMicrosoft Authenticator必要があります。
 
-- **登録されていないデバイスの場合**:デバイスはAzure Active Directoryに登録されます。 これには、エンド ユーザーが[アプリを](https://apps.apple.com/app/microsoft-authenticator/id983156458)介してサインインMicrosoft Authenticator必要があります。
+
+    - デバイスは Azure Active Directory に登録されます。 これには、エンド ユーザーが [Microsoft Authenticator アプリ](https://apps.apple.com/app/microsoft-authenticator/id983156458)を使用してサインインする必要があります。
+
+- **登録されていないデバイスの場合**:デバイスは Azure Active Directory に登録されます。 これには、エンド ユーザーが [Microsoft Authenticator アプリ](https://apps.apple.com/app/microsoft-authenticator/id983156458)を使用してサインインする必要があります。
 
 - ライセンスを割り当てる方法の詳細については、「 [ユーザーにライセンスを割り当てる」を](/azure/active-directory/users-groups-roles/licensing-groups-assign)参照してください。
 
@@ -63,7 +64,7 @@ ms.locfileid: "64665934"
 
 - Microsoft 365 Defender ポータルへのアクセス。
 
-- [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)へのアクセス、
+- [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)にアクセスして、次の情報にアクセスします。
    - 組織内の登録済みユーザー グループにアプリをデプロイします。
    - アプリ保護ポリシー (MAM) でMicrosoft Defender for Endpointリスクシグナルを構成する
 
@@ -76,7 +77,10 @@ ms.locfileid: "64665934"
 
 - iOS 12.0 以降を実行している iOS デバイス。 iPad もサポートされています。 *2022 年 3 月 31 日から 3 月 31 日以降、Microsoft Defender for Endpointでサポートされる iOS の最小バージョンは iOS 13.0 になります。*
 
-- デバイスは[、Intune ポータル サイト アプリ](https://apps.apple.com/us/app/intune-company-portal/id719171358)に登録されているか、同じアカウントでMicrosoft Authenticatorを介して[Azure Active Directory](https://apps.apple.com/app/microsoft-authenticator/id983156458)に登録されます。
+- デバイスは[、Intune ポータル サイト アプリ](https://apps.apple.com/us/app/intune-company-portal/id719171358)に登録されているか、同じアカウントで [Microsoft Authenticator](https://apps.apple.com/app/microsoft-authenticator/id983156458) を介して Azure Active Directory に登録されています。
+
+ > [!NOTE]
+ > iOS ユーザー登録を使用している間、iOS でのMicrosoft Defender for Endpointは現在サポートされていません。
 
 ## <a name="installation-instructions"></a>インストール手順
 

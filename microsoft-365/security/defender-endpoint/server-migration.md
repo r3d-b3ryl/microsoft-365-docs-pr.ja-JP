@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 461a3e4ebb97d809bf61c11591f40448ef97f8cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dca4745b5058ed7b98bf0821e2b715393f7bf77f
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490533"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695968"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>前の MMA ベースのMicrosoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -39,14 +39,13 @@ ms.locfileid: "66490533"
 
 これらの手順は、Windows Server 2012 R2 およびWindows Server 2016用のMicrosoft Defender for Endpointの新しい統合ソリューションとインストーラー (MSI) パッケージに適用されます。 この記事では、前のソリューションから現在のソリューションまで、さまざまな移行シナリオに関する高度な手順について説明します。 これらの高レベルの手順は、環境で使用可能なデプロイ ツールと構成ツールに合わせて調整するためのガイドラインとして意図されています。 
 
-**Microsoft Defender for Cloud を使用してデプロイを実行している場合は、インストールとアップグレードを自動化できます。「Defender for Servers Plan 2 now integrations with MDE unified solution」(https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)**
+**Microsoft Defender for Cloud を使用してデプロイを実行している場合は、インストールとアップグレードを自動化できます。[Defender for Servers プラン 2 と MDE 統合ソリューションの統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)を参照してください**
 
 > [!NOTE]
 > Microsoft Defender for Endpointがインストールされているオペレーティング システムのアップグレードはサポートされていません。 アップグレードを続行する前に、オフボードでアンインストールしてください。
 
 > [!NOTE]
 > 自動化されたアップグレードを実行するための完全な Microsoft Endpoint Configuration Manager自動化と統合は、MECM の後のリリースで利用できます。 最新の修正プログラム ロールアップを使用した 2107 リリースから、構成だけでなく、グループ ポリシー、PowerShell、Microsoft エンドポイント マネージャー テナントのアタッチ、またはローカル構成にも Endpoint Protection ノードを使用できます。 さらに、Microsoft Endpoint Configuration Managerの既存の機能を利用して、手動アップグレード手順を自動化できます。この方法については、以下で説明します。
-
 
 ## <a name="installer-script"></a>インストーラー スクリプト
 
@@ -107,6 +106,7 @@ ms.locfileid: "66490533"
 
 パス: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode 型: REG_DWORD値: 0
 
+MMA から統合ソリューションへのサーバーの移行の詳細については、「 [Microsoft Monitoring Agent から統合ソリューションへのサーバーの移行](application-deployment-via-mecm.md)」を参照してください。
 
 ## <a name="other-migration-scenarios"></a>その他の移行シナリオ
 
