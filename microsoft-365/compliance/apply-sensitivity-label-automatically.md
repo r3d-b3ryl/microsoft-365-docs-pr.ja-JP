@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: 06e769f3e6aa616d8b725ec37c52e2a24289ceb2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662342"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696041"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -194,8 +194,7 @@ DLP ポリシーを構成する場合と同様に、インスタンス数と一�
 
 ![トレーニング可能な分類子と秘密度ラベルのオプション](../media/sensitivity-labels-classifers.png)
 
-> [!CAUTION]
-> 事前にトレーニングされた [**不快な言葉**] 分類子は、誤検知の数が多いため、廃止予定です。 この分類子は使用しないでください。現在使用している場合は、ビジネス プロセスを移動して、代わりに、事前にトレーニングされた **[対象へのハラスメント]**、**[冒とく]**、および **[脅威]** 分類子を使用することをお勧めします。
+利用可能な事前トレーニング済みの分類子は頻繁に更新されるため、このスクリーンショットに表示されているものよりも多くのエントリを選択できる可能性があります。
 
 これらの分類子の詳細については、「[トレーニング可能な分類子 (プレビュー) の詳細](classifier-learn-about.md)」を参照してください。
 

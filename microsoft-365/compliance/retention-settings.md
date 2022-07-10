@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 87ecdc932932befc24441a59fb0dd8c023e982c2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639646"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695750"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -407,7 +407,7 @@ Exchange メールとは異なり Skype の場所の状態をオンに切り替�
 #### <a name="relabeling-at-the-end-of-the-retention-period"></a>保持期間の満了時点での再ラベル付け
 
 > [!NOTE]
-> このオプションは、現在展開のプレビュー段階であり、変更される可能性があります。
+> このオプションは現在プレビュー段階であり、変更される可能性があります。
 
 保存期間の終了時に自動的に別の保存ラベルを適用するように設定した場合、そのアイテムは、新しく選択した保持ラベルの保持設定の対象となります。 このオプションを使用すると、アイテムの保持設定を自動的に変更できます。
 

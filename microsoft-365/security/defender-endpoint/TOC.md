@@ -43,6 +43,7 @@
 #### [グループ ポリシーを使用する](manage-mde-post-migration-group-policy-objects.md)
 #### [PowerShell、WMI、MPCmdRun.exe を使用する](manage-mde-post-migration-other-tools.md)
 #### [サーバー移行シナリオ](server-migration.md)
+##### [Microsoft Monitoring Agent から統合ソリューションへのサーバーの移行](application-deployment-via-mecm.md)
 
 ## [デバイスのオンボードと構成]()
 ### [デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します](onboard-configure.md)

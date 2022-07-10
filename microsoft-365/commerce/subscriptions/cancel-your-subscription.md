@@ -20,24 +20,24 @@ ms.custom:
 - admindeeplinkMAC
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
-ms.date: 06/02/2022
-ms.openlocfilehash: 962553d620b9cc3477f5eb7c91fa0b822dc5de07
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 07/07/2022
+ms.openlocfilehash: f7d967d14f7f0e23e3d422318bddf25eb6772dcf
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490367"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695706"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Microsoft サブスクリプションをキャンセルする
 
 サブスクリプションをキャンセルする場合は、[継続請求をオフにする](renew-your-subscription.md)のが最も簡単な方法です。 継続請求をオフにした場合、サブスクリプション期間の最後に有効期限が切れるまで、サブスクリプションを引き続き使用できます。 直ちにキャンセルする場合は、この記事の情報と手順を使用します。
 
+無料試用版はいつでもキャンセルして、今後の請求を停止することができます。 1 か月の無料試用期間が終了すると、該当するサブスクリプション料金が請求されます。
+
 > [!IMPORTANT]
-> - この記事は、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 サブスクリプションにのみ適用されます。 Microsoft 365 Family または Personal をお持ちの場合は、「[Microsoft 365 サブスクリプションのキャンセル](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)」を参照してください。
+> - この記事は、Dynamics 365、Intune、Power Platform、Windows 365、および Microsoft 365 for business サブスクリプションにのみ適用されます。 Microsoft 365 Family または Personal をお持ちの場合は、「[Microsoft 365 サブスクリプションのキャンセル](https://support.microsoft.com/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link)」を参照してください。
 > - Microsoft の担当者またはリセラー パートナーを通じてサブスクリプションを購入した場合、日割り計算による払い戻しを取り消すための 7 日間があります。 サブスクリプションをキャンセルするには、販売者またはパートナーにお問い合わせください。 [パートナーについての詳細情報](../manage-partners.md#what-can-a-partner-do-for-my-organization-or-school)をご覧ください。
 > - 組織がチリに所在し、チリのパートナーを通じてサブスクリプションを購入した場合、日割り計算による払い戻しを取り消すための 10 日間があります。
-
-サブスクリプションをキャンセルする場合は、[継続請求をオフにする](renew-your-subscription.md)のが最も簡単な方法です。 継続請求をオフにした場合、サブスクリプション期間の最後に有効期限が切れるまで、サブスクリプションを引き続き使用できます。 直ちにキャンセルする場合は、この記事の情報と手順を使用します。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -58,9 +58,6 @@ ms.locfileid: "66490367"
 サブスクリプションの開始または更新後 7 日以内にキャンセルする必要がある場合は、この記事で後述する「[サブスクリプションをキャンセルする手順](#steps-to-cancel-your-subscription)」を参照してください。
 
 7 日以上経過した場合は、[継続請求をオフにします](renew-your-subscription.md)。 これにより、期間の終了時にサブスクリプションを更新できなくなります。  サブスクリプションの残りの部分については、製品とサービスに引き続きアクセスできます。 年間サブスクリプションをお持ちで、月額料金を支払っている場合は、サブスクリプション期間の残りの期間に対して毎月課金されます。
-
-> [!NOTE]
-> 今後の請求を停止するには、いつでも無料試用版をキャンセルしてください。 1 か月の無料試用期間後、該当するサブスクリプション料金が請求されます。
 
 ### <a name="if-you-dont-have-a-billing-profile"></a>請求プロファイルがない場合
 

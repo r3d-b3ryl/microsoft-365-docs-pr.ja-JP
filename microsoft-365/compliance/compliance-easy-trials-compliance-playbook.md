@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview ソリューション試用版プレイブック。
 ms.custom: trial-playbook
-ms.openlocfilehash: 2b84a3e5636edad78a9d221a0d088b84392cf49e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ab54e60dbb127ac5f5cdffc835d0d00dc423d38
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633787"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66696252"
 ---
 # <a name="trial-playbook-microsoft-purview-solutions"></a>試用版プレイブック: Microsoft Purview ソリューション
 
@@ -184,7 +184,7 @@ Microsoft Purview コンプライアンス マネージャーは、データ保�
 
 アダプティブ ポリシー スコープを使用するポリシーは、新しい従業員の入社や退職など、組織の変化に合わせて常に最新の状態に維持されます。 また、ポリシーに含まれていた 100/1,000 の場所の従来の制限の対象にもなりません。
 
-- アダプティブ ポリシー スコープを作成し、アイテム保持ポリシーと併用する
+- [アダプティブ ポリシー スコープ](retention.md#adaptive-or-static-policy-scopes-for-retention)を作成し、アイテム保持ポリシーと併用する
 
 ### <a name="step-2-automate-labeling-to-apply-a-label-to-all-items-by-default"></a>手順 2: 既定ですべての項目にラベルを適用するラベル付けを自動化する
 
@@ -193,7 +193,7 @@ Microsoft Purview コンプライアンス マネージャーは、データ保�
 
 既定のラベルを使用すると、SharePoint 内の指定したライブラリ、フォルダー、またはドキュメント セット内のすべてのアイテムに保持ラベルを自動的に適用できます。
 
-- ラベルを発行し、SharePoint で既定として適用する
+- ラベルを発行し、[SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) で既定として適用する
 
 ## <a name="data-loss-prevention"></a>データ損失防止
 
@@ -384,7 +384,7 @@ Insider リスク管理分析では、インサイダー リスク ポリシー�
 
 **ビジネス、法律、または規制の記録管理要件のために価値の高いアイテムを管理する**:
 
-Microsoft Purview のレコード管理機能を使用して、組織の規制、法律、およびビジネスに不可欠なレコードの保持スケジュールを自動化します。 作成からコラボレーションまでの自動化機能を活用して、レコードを宣言し、コンテンツを保持し、最後にそれらを破棄します。
+統合された Microsoft Purview のレコード管理機能を使用して、組織の規制、法律、およびビジネスに不可欠なレコードの保持スケジュールを自動化します。 作成からコラボレーションまでの自動化機能を活用して、レコードを宣言し、コンテンツを保持し、最後にそれらを破棄します。
 
 ### <a name="step-1-mark-contents-as-records"></a>手順 1: コンテンツをレコードとしてマークする  
 
@@ -393,7 +393,7 @@ Microsoft Purview のレコード管理機能を使用して、組織の規制�
 
 コンテンツがレコードとして宣言されると、どのようなアクションが許可されるか、またはブロックされるかという点でアイテムに制限が加えられ、アイテムに関する追加のアクティビティが記録され、保持期間の終わりにアイテムが削除された場合には、廃棄の証明が得られます。
 
-- コンテンツをレコードまたは規制レコードとして宣言する保持ラベルを作成する
+- [コンテンツをレコードまたは規制レコードとして宣言する](declare-records.md)保持ラベルを作成する
 
 ### <a name="step-2-review-content-to-approve-before-its-permanently-deleted"></a>手順 2: コンテンツを完全に削除する前に、承認するコンテンツを確認する
 
@@ -402,7 +402,7 @@ Microsoft Purview のレコード管理機能を使用して、組織の規制�
 
 保持期間の終了時には、指定したユーザー ("レビュー担当者") に通知して、コンテンツを確認し、完全に廃棄する処置の承認を得ることができます。 これは、コンテンツに別の保有期間を割り当てたり、監査の削除を中断したりするなど、削除以外のアクションの方が適切な場合にサポートされます。
 
-- 廃棄レビューを使用する保持ラベルを作成する
+- [廃棄レビューを使用する保持ラベルを作成する](disposition.md#disposition-reviews)
 
 ### <a name="step-3-apply-labels-automatically-to-content-that-matches-specific-conditions"></a>手順 3: 特定の条件に一致するコンテンツにラベルを自動的に適用する
 
@@ -411,9 +411,9 @@ Microsoft Purview のレコード管理機能を使用して、組織の規制�
 
 ラベルを自動適用すると、ユーザーが手動でラベル付けアクティビティを実行する必要がなくなります。コンテンツに保持ラベルがまだ適用されておらず、コンテンツに機密情報、キーワード、検索可能なプロパティ、またはトレーニング可能な分類子のマッチが含まれている場合、保持ラベルをコンテンツに自動的に適用できます。
 
-- 特定の種類の機密情報によるコンテンツへの保持ラベルの自動適用
-- トレーニング可能な分類子を使用して、保持ラベルをコンテンツに自動的に適用する
-- キーワードまたは検索可能なプロパティを使用して保持ラベルを自動適用する
+- [特定の種類の機密情報によるコンテンツへの保持ラベルの自動適用](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-specific-types-of-sensitive-information)
+- [トレーニング可能な分類子を使用して、保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md#auto-apply-labels-to-content-by-using-trainable-classifiers)
+- [キーワードまたは検索可能なプロパティを使用して保持ラベルを自動適用する](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties)
 
 ## <a name="additional-trials-and-add-ons"></a>追加の試用版とアドオン
 

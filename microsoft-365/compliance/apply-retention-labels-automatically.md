@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: f3af46b59134a815f3ba3a02154f9ecfd6f95627
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
+ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689184"
+ms.lasthandoff: 07/09/2022
+ms.locfileid: "66695990"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -273,9 +273,11 @@ Get-Label | Format-Table -Property DisplayName, Name, Guid
 
 ![トレーニング可能な分類子の選択。](../media/retention-label-classifers.png)
 
-このオプションを使用してラベルを自動的に適用するには、SharePoint サイトとメールボックスには少なくとも 10 MB のデータが必要です。
+利用可能な事前トレーニング済みの分類子は頻繁に更新されるため、このスクリーンショットに表示されているものよりも多くのエントリを選択できる可能性があります。
 
 トレーニング可能な分類子の詳細については、「[トレーニング可能な分類子の詳細 (プレビュー)](classifier-learn-about.md)」を参照してください。
+
+このオプションを使用してラベルを自動的に適用するには、SharePoint サイトとメールボックスには少なくとも 10 MB のデータが必要です。
 
 > [!TIP]
 > Exchange でトレーニング可能な分類子を使用している場合は、「[コンテンツ エクスプローラーで分類子を再トレーニングする方法 (プレビュー)](classifier-how-to-retrain-content-explorer.md)」を参照してください。

@@ -18,6 +18,8 @@
           href: duplicate-a-model.md
         - name: モデルの名前を変更する
           href: rename-a-model.md
+        - name: モデルを削除する
+          href: delete-a-model.md
         - name: 抽出子を作成する
           href: create-an-extractor.md
         - name: 抽出子の名前を変更する
