@@ -16,6 +16,8 @@
               href: microsoft-365-security-center-mde.md
             - name: Microsoft 365 Defender の Defender for Office 365
               href: microsoft-365-security-center-mdo.md
+            - name: Microsoft 365 Defender の Defender for Identity
+              href: microsoft-365-security-center-mdi.md
             - name: Microsoft 365 Defender の Defender for Cloud Apps
               href: microsoft-365-security-center-defender-cloud-apps.md
             - name: Defender for Endpoint を Microsoft 365 Defender にリダイレクトする
@@ -148,6 +150,8 @@
               href: incident-queue.md
             - name: インシデントを管理する
               href: manage-incidents.md
+            - name: インシデント キューを CSV ファイルにエクスポートする
+              href: export-incidents-queue.md
             - name: 最初のインシデントに対応する
               items:
                 - name: 概要

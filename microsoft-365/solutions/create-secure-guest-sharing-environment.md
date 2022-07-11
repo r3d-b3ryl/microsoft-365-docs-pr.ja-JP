@@ -1,5 +1,5 @@
 ---
-title: セキュリティで保護されたゲスト共有環境を作成する
+title: より安全なゲスト共有環境を作成する
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -18,17 +18,17 @@ ms.custom:
 ms.localizationpriority: high
 f1.keywords: NOCSH
 recommendations: false
-description: セキュリティで保護されたゲスト共有環境を Microsoft 365 で作成するための使用可能なオプションについては、こちらを参照してください。ゲスト アクセスによって共同作業を改善します。
-ms.openlocfilehash: 26daea8795084a87a2891a5dd04da172692990cb
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+description: Microsoft 365 でより安全なゲスト共有環境を作成し、コラボレーションを改善するゲスト アクセスを提供するための利用可能なオプションについて説明します。
+ms.openlocfilehash: ce635d96cf793b0c655b02ccdb9e7077cd245bb4
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490921"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714730"
 ---
-# <a name="create-a-secure-guest-sharing-environment"></a>セキュリティで保護されたゲスト共有環境を作成する
+# <a name="create-a-more-secure-guest-sharing-environment"></a>より安全なゲスト共有環境を作成する
 
-この記事では、Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成するためのさまざまなオプションについて説明します。 これらの例は、使用可能なオプションの概要を示しています。 これらの手順は、組織のセキュリティとコンプライアンスのニーズに合わせて、いろいろ組み合わせて使用できます。
+この記事では、Microsoft 365 でより安全なゲスト共有環境を作成するためのさまざまなオプションについて説明します。 これらの例は、使用可能なオプションの概要を示しています。 これらの手順は、組織のセキュリティとコンプライアンスのニーズに合わせて、いろいろ組み合わせて使用できます。
 
 この文書には、以下の内容が含まれます。
 
