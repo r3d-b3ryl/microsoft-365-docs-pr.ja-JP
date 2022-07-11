@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9cc85dc768696169c8da164975278a661c755f94
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 0949e979bfc2f0e2f784342e2a7c2f326908b49d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492427"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714621"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の新機能
 
@@ -60,13 +60,19 @@ ms.locfileid: "66492427"
 - [iOS 上の Defender for Endpoint の新機能](ios-whatsnew.md)
 - [Defender for Endpoint on Linux の新機能](linux-whatsnew.md)
 
+
+## <a name="july-2022"></a>2022 年 7 月
+- - [ドメイン コントローラー デバイスの追加 - 評価ラボの機能強化](evaluation-lab.md#add-a-domain-controller)<br>一般提供開始 - ドメイン コントローラーを追加して、複数のデバイス間での横移動や多段階攻撃などの複雑なシナリオを実行します。
+
+
+
 ## <a name="june-2022"></a>2022 年 6 月
 - [Defender for Servers プラン 2 が MDE 統合ソリューションと統合されるようになりました](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)<br>これで、Windows Server 2012 R2 と 2016 の最新の統合ソリューションを、1 つのボタンを使用して Defender for Servers Plan 2 の対象となるサーバーに展開できるようになりました。
 
 ## <a name="may-2022"></a>2022 年 5 月
 - [macOS の改ざん防止 (プレビュー)](tamperprotection-macos.md)<br>改ざん防止は、macOS でのMicrosoft Defender for Endpointの不正な削除を防ぐのに役立ちます。
 
-- [ドメイン コントローラー デバイスの追加 - 評価ラボの機能強化 (プレビュー)](evaluation-lab.md#add-a-domain-controller-preview)<br>ドメイン コントローラーを追加して、複数のデバイスにわたる横移動や多段階攻撃などの複雑なシナリオを実行します。
+- [ドメイン コントローラー デバイスの追加 - 評価ラボの機能強化 (プレビュー)](evaluation-lab.md#add-a-domain-controller)<br>ドメイン コントローラーを追加して、複数のデバイスにわたる横移動や多段階攻撃などの複雑なシナリオを実行します。
 
 ## <a name="april-2022"></a>2022 年 4 月
 - [Windows Server 2012 R2 とWindows Server 2016) のオンボードと機能パリティを更新しました](configure-server-endpoints.md)<br/> 新しい統合ソリューション パッケージが一般公開され、依存関係とインストール手順を削除することで、サーバーのオンボードが容易になりました。 さらに、この統合ソリューション パッケージには、多くの新機能が追加されています。

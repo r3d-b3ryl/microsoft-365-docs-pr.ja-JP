@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d13c3b126f4aae75ff775ac3170049dfc9c0a2e
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: 8a369aba012d7de23f72501ef1ce042750c57f7d
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679442"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714599"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint評価ラボ
 
@@ -43,13 +43,13 @@ Microsoft Defender for Endpoint評価ラボは、デバイスと環境の構成�
 
 自動調査、高度な捜索、脅威分析など、プラットフォームの強力な機能にフル アクセスできるため、Defender for Endpoint が提供する包括的な保護スタックをテストできます。
 
-Windows 10、Windows 11、Windows Server 2019、Windows Server 2016、Linux (Ubuntu) デバイスを追加して、最新の OS バージョンと適切なセキュリティ コンポーネントをインストールし、Office 2019 Standard をインストールできます。
+Windows 10、Windows 11、Windows Server 2019、Windows Server 2016、Linux (Ubuntu) デバイスを追加できます。このデバイスは、最新の OS バージョンと適切なセキュリティ コンポーネントと Office 2019 Standard がインストールされるように事前に構成されています。
 
 脅威シミュレーターをインストールすることもできます。 Defender for Endpoint は、業界をリードする脅威シミュレーション プラットフォームと提携し、ポータルから離れることなく Defender for Endpoint 機能をテストするのに役立ちます。
 
 任意のシミュレーターをインストールし、評価ラボ内でシナリオを実行し、プラットフォームのパフォーマンスを即座に確認できます。すべて追加コストなしで便利に利用できます。 また、シミュレーション カタログからアクセスして実行できるさまざまなシミュレーションに簡単にアクセスできます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 [ライセンス要件](minimum-requirements.md#licensing-requirements)を満たすか、評価ラボにアクセスするためにMicrosoft Defender for Endpointへの試用版アクセス権を持っている必要があります。
 
@@ -66,7 +66,7 @@ Windows 10、Windows 11、Windows Server 2019、Windows Server 2016、Linux (Ubu
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink)
 
-## <a name="get-started-with-the-lab"></a>ラボでの概要
+## <a name="get-started-with-the-lab"></a>ラボの概要
 
 メニューからラボにアクセスできます。 ナビゲーション メニューで、 **評価ラボ>評価とチュートリアル** を選択します。
 
@@ -111,7 +111,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 ラボのセットアップ中に脅威シミュレーターを追加することを選択した場合、すべてのデバイスに、追加したデバイスに脅威シミュレーター エージェントがインストールされます。
 
-デバイスは、推奨されるWindowsセキュリティ コンポーネントをオンにして監査モードでテナントに自動的にオンボードされます。お客様の側で作業を行う必要はありません。
+デバイスは、推奨される Windows セキュリティ コンポーネントをオンにして監査モードでテナントに自動的にオンボードされます。ユーザー側で作業を行う必要はありません。
 
 テスト デバイスでは、次のセキュリティ コンポーネントが事前に構成されています。
 
@@ -125,7 +125,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 > [!NOTE]
-> Microsoft Defender ウイルス対策はオンになります (監査モードではありません)。 Microsoft Defender ウイルス対策シミュレーションの実行がブロックされている場合は、Windows セキュリティを使用してデバイスのリアルタイム保護をオフにすることができます。 詳細については、「 [常時オン保護を構成する](configure-real-time-protection-microsoft-defender-antivirus.md)」を参照してください。
+> Microsoft Defender ウイルス対策はオンになります (監査モードではありません)。 Microsoft Defender ウイルス対策でシミュレーションの実行がブロックされている場合は、Windows セキュリティを使用してデバイスのリアルタイム保護を無効にすることができます。 詳細については、「 [常時オン保護を構成する](configure-real-time-protection-microsoft-defender-antivirus.md)」を参照してください。
 
 自動調査の設定は、テナントの設定に依存します。 既定では、半自動化されるように構成されます。 詳細については、「 [自動調査の概要](automated-investigations.md)」を参照してください。
 
@@ -159,10 +159,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
    > [ **シミュレーターの状態** ] 列で、情報アイコンにマウス ポインターを合わせると、エージェントのインストール状態を確認できます。
 
 
-## <a name="add-a-domain-controller-preview"></a>ドメイン コントローラーを追加する (プレビュー)
-
-> [!IMPORTANT]
-> 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+## <a name="add-a-domain-controller"></a>ドメイン コントローラーを追加する 
 
 ドメイン コントローラーを追加して、複数のデバイスにわたる横移動や多段階攻撃などの複雑なシナリオを実行します。
 
@@ -172,7 +169,7 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 1. ダッシュボードで [デバイスの **追加**] を選択します。
 
-2. **[Windows Server 2019**] を選択し、[**ドメイン コントローラーとして設定**] を選択します。 
+2. **Windows Server 2019** を選択し、**ドメイン コントローラーとして設定** を選択します。 
 
 3. ドメイン コントローラーがプロビジョニングされると、[デバイスの **追加]** をクリックしてドメインに参加しているデバイスを作成できます。 次に、[Windows 10/ Windows 11] を選択し、[**ドメインに参加**] を選択します。 
 
@@ -219,9 +216,9 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 > [!NOTE]
 > テスト デバイスへの接続は RDP を使用して行われます。 ファイアウォール設定で RDP 接続が許可されていることを確認します。
 
-1. デバイスにConnectし、**Connect** を選択して攻撃シミュレーションを実行します。
+1. デバイスに接続し、[接続] を選択して攻撃シミュレーションを実行 **します**。
 
-    :::image type="content" source="images/test-machine-table.png" alt-text="テスト デバイスの [Connect] ボタン" lightbox="images/test-machine-table.png":::
+    :::image type="content" source="images/test-machine-table.png" alt-text="テスト デバイスの [接続] ボタン" lightbox="images/test-machine-table.png":::
 
 
    :::image type="content" source="images/remote-connection.png" alt-text="リモート デスクトップ接続画面" lightbox="images/remote-connection.png":::

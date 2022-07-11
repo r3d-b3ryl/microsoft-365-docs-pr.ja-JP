@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ea60746554c9ad52c3e8b6d23989b2b7659cd0ad
-ms.sourcegitcommit: 52e2a67a1badd7faaabbcf99c65f464e23a47805
+ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/14/2022
-ms.locfileid: "66060940"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714511"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -33,25 +33,28 @@ ms.locfileid: "66060940"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスが含まれているMicrosoft 365組織では、Exchange Onlineメールボックスがない場合は、EOP フィルターの判定に同意しない可能性があります。 たとえば、適切なメッセージが無効 (誤検知) としてマークされたり、不適切なメッセージが許可されたり (偽陰性) されたりすることがあります。
+Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含む Microsoft 365 組織では、Exchange Onlineメールボックスがない場合は、EOP フィルターの判定に同意しない可能性があります。 たとえば、適切なメッセージが無効 (誤検知) としてマークされたり、不適切なメッセージが許可されたり (偽陰性) されたりすることがあります。
 
-Microsoft 365 Defender ポータルのテナント許可/ブロック リストを使用すると、Microsoft 365フィルターの判定を手動でオーバーライドできます。 テナント許可/ブロック リストは、受信メッセージのメール フロー中 (組織内メッセージには適用されません)、ユーザーがクリックした時点で使用されます。 次の種類のオーバーライドを指定できます。
+Microsoft 365 Defender ポータルのテナント許可/ブロックリストを使用すると、Microsoft 365 フィルターの判定を手動でオーバーライドできます。 テナント許可/ブロック リストは、受信メッセージのメール フロー中 (組織内メッセージには適用されません)、ユーザーがクリックした時点で使用されます。 次の種類のオーバーライドを指定できます。
 
 - ブロックする URL。
 - ブロックするファイル。
 - ブロックする送信者の電子メールまたはドメイン。
 - 許可またはブロックするスプーフィングされた送信者。 [スプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)の許可またはブロックの判定をオーバーライドすると、スプーフィングされた送信者は、テナント許可/ブロックリストの [**スプーフィング**] タブにのみ表示される手動の許可エントリまたはブロック エントリになります。 スプーフィング インテリジェンスによって検出される前に、スプーフィングされた送信者の許可エントリまたはブロック エントリを手動で作成することもできます。
-- 許可する URL。
+- 許可する URL
 - 許可するファイル。
 - 許可する送信者の電子メールまたはドメイン。
 
-この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online のメールボックスを持つMicrosoft 365組織の PowerShell をExchange Online、スタンドアロン EOP PowerShell を使用しない組織のテナント許可/ブロック リストでエントリを構成する方法について説明します。Exchange Online メールボックス)。
+この記事では、Microsoft 365 Defender ポータルまたは PowerShell (Exchange Online 内にメールボックスを持つ Microsoft 365 組織の PowerShell をExchange Onlineし、Exchange Onlineのない組織用のスタンドアロン EOP PowerShell) でテナント許可/ブロック リストにエントリを構成する方法について説明します。 メールボックス)。
+
+> [!NOTE]
+> [セーフ リンク ポリシーの [次の URL をブロックする] の一覧](safe-links.md#block-the-following-urls-list-for-safe-links)は非推奨になっています。 テナント許可/ブロック リストでブロック URL エントリを管理できるようになりました。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[テナント許可/ブロック リスト**] ページに直接移動するには、次を使用<https://security.microsoft.com/tenantAllowBlockList>します。
 
-- ファイルの SHA256 ハッシュ値を使用してファイルを指定します。 Windowsでファイルの SHA256 ハッシュ値を見つけるには、コマンド プロンプトで次のコマンドを実行します。
+- ファイルの SHA256 ハッシュ値を使用してファイルを指定します。 Windows でファイルの SHA256 ハッシュ値を見つけるには、コマンド プロンプトで次のコマンドを実行します。
 
   ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
@@ -121,7 +124,7 @@ Microsoft 365 Defender ポータルの [ルール **] セクションの** <http
      - **[削除]**
      - **注**
    - 「**スプーフィング**」
-     - **スプーフィングされたユーザー**
+     - **偽のユーザー**
      - **インフラストラクチャの送信**
      - **スプーフィングの種類**: 値 **内部** または **外部**。
      - **アクション**: 値 **[ブロック]** または **[許可] を指定** します。
