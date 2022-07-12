@@ -13,12 +13,12 @@ ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard から個人情報をエクスポート、転送、または削除する方法について説明します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e35aa6825814043eb91c2d24c7426e7b4489bb76
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 7ac0eb5270e377565840ad2d7ff40cab7546d692
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687615"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717742"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Microsoft Whiteboard で GDPR データ主体の要求を管理する
 
@@ -28,9 +28,9 @@ ms.locfileid: "66687615"
 
 ## <a name="export-a-whiteboard"></a>ホワイトボードをエクスポートする
 
-### <a name="on-windows-10"></a>Windows 10
+### <a name="on-windows"></a>Windows の場合
 
-Windows 10で、次の手順を実行します。
+Windows で、次の手順を実行します。
 
 1. エクスポートするホワイトボードの **[その他** ] (**...**) ボタンを選択します。 
 
@@ -66,6 +66,13 @@ iOS または Web で、次の手順を実行します。
 
 2. **[削除]** を選択します。
 
+OneDrive for Businessでホワイトボード ファイルを削除するには、次の手順に従います。
+
+1.  OneDrive の Whiteboards フォルダーに移動します。
+
+2.  削除するホワイトボード ファイルを右クリックします。
+
+3. **[削除]** を選択します。
+
 >[!WARNING]
 > これにより、選択したホワイトボードが完全に削除されます。
-

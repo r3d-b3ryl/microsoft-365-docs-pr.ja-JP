@@ -1,5 +1,5 @@
 ---
-title: スパム、スパム以外、フィッシング、疑わしいメールを Microsoft に報告する
+title: スパム、スパム以外、フィッシング、疑わしいメール、ファイルを Microsoft に報告する
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,17 +14,17 @@ search.appverid:
 ms.assetid: c31406ea-2979-4fac-9288-f835269b9d2f
 ms.collection:
 - M365-security-compliance
-description: 疑わしいメールを Microsoft に報告操作方法? 分析のために Microsoft にメッセージ、URL、電子メールの添付ファイルを報告します。 スパム メールとフィッシングメールを報告する方法について説明します。
+description: 疑わしいメールやファイルを Microsoft に報告操作方法? 分析のために、メッセージ、URL、電子メールの添付ファイル、ファイルを Microsoft に報告します。 スパム メールとフィッシングメールを報告する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 67b4d0a2dc3f52c66c1fea406a51005daa43093a
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 3ccb01e63011b48fa341b7ce3198b05505940a01
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714445"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717782"
 ---
-# <a name="how-do-i-report-a-suspicious-email-to-microsoft"></a>疑わしいメールを Microsoft に報告操作方法?
+# <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>疑わしいメールやファイルを Microsoft に報告操作方法?
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "66714445"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-疑わしい電子メールをどうするか疑問に思いますか? Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含む Microsoft 365 組織では、Exchange Onlineメールボックスがない *場合、ユーザー* と *管理者* は、疑わしい電子メール メッセージ、URL、または電子メールの添付ファイルを Microsoft に報告するさまざまな方法があります。
+疑わしい電子メールまたはファイルを使用して何を行うのか疑問に思いますか? Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含む Microsoft 365 組織では、Exchange Onlineメールボックスがない *場合、ユーザー* と *管理者* は、疑わしい電子メール メッセージ、URL、または電子メールの添付ファイルを Microsoft に報告するさまざまな方法があります。
 
 さらに、Microsoft Defender for Endpoint管理者を持つ Microsoft 365 組織には、ファイルをレポートするためのいくつかの方法もあります。
 

@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c503c3ed4cfea4ed0645cf18a9c9bf4ebe4a5ade
-ms.sourcegitcommit: 355ab75eb7b604c6afbe9a5a1b97ef16a1dec4fc
+ms.openlocfilehash: 9c884ab9a4ee2180d3c491c4257fb04129c40bc9
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "62807250"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717230"
 ---
 # <a name="troubleshoot-attack-surface-reduction-rules"></a>攻撃対象の縮小ルールのトラブルシューティング
 
@@ -54,7 +54,7 @@ ms.locfileid: "62807250"
 
 - エンドポイントは、バージョン 1709 (Fall Creators Update とも呼ばれます) Windows 10 Enterprise実行されています。
 
-- エンドポイントは、唯一のウイルス対策保護アプリとしてMicrosoft Defender ウイルス対策を使用しています。 [その他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策自体が無効](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)になります。
+- エンドポイントは、唯一のウイルス対策保護アプリとして Microsoft Defender ウイルス対策を使用しています。 [他のウイルス対策アプリを使用すると、Microsoft Defender ウイルス対策によってそれ自体が無効になります](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)。
 
 - [リアルタイム保護](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) が有効になっています。
 
@@ -63,11 +63,6 @@ ms.locfileid: "62807250"
 これらの前提条件がすべて満たされている場合は、次の手順に進み、監査モードでルールをテストします。
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>監査モードを使用してルールをテストする
-
-[demo.wd.microsoft.com のWindows Defender](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) テスト グラウンド Web サイトにアクセスして、攻撃表面の縮小ルールが一般にデバイス上で事前に構成されたシナリオとプロセスに対して機能していることを確認したり、監査モードを使用してレポートのみのルールを有効にしたりできます。
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 デモ ツールの使用に関するページの手順に従って、問題が発生している特定の [ルールをテストするために、攻撃表面の縮小ルールがどのように機能するかを確認します](evaluate-attack-surface-reduction.md) 。
 
@@ -99,7 +94,7 @@ ms.locfileid: "62807250"
 
 ## <a name="report-a-false-positive-or-false-negative"></a>偽陽性または偽陰性を報告する
 
-[Windows Defender Security Intelligence Web ベースの送信フォーム](https://www.microsoft.com/wdsi/filesubmission)を使用して、ネットワーク保護の偽陰性または偽陽性を報告します。 Windows E5 サブスクリプションでは、[関連付けられているアラートへのリンクを指定](alerts-queue.md)することもできます。
+[Windows Defender Security Intelligence Web ベースの送信フォーム](https://www.microsoft.com/wdsi/filesubmission)を使用して、ネットワーク保護の偽陰性または偽陽性を報告します。 Windows E5 サブスクリプションでは、 [関連付けられているアラートへのリンクを指定](alerts-queue.md)することもできます。
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>ファイル送信の診断データを収集する
 

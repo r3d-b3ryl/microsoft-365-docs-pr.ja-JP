@@ -15,12 +15,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 99790921d51bf6d7b5a7268c541b4f754e7b99c9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: f1a1517e072c3a1c07f8792281092392dd1ff210
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438863"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717098"
 ---
 # <a name="next-generation-protection-overview"></a>次世代保護の概要
 
@@ -42,17 +42,6 @@ Microsoft Defender for Endpoint には、ネットワークのセキュリティ
 
 > [!TIP]
 > 次世代の保護は、Microsoft Defender for Endpoint プラン 1 とプラン 2 の両方に含まれています。 [ Defender for Endpoint プラン 1 とプラン 2 の詳細](defender-endpoint-plan-1-2.md) 次世代保護は、Microsoft Defender for Business および Microsoft 365 Business Premium にも含まれています。 [中小企業向けの Microsoft 365 プランのセキュリティ機能を比較します](../defender-business/compare-mdb-m365-plans.md)。
-
-## <a name="try-a-demo"></a>デモを試す
-
-[Microsoft Defender for Endpoint のデモ用 Web サイト](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)にアクセスし、以下の保護機能が動作していることを確認したり、デモのシナリオを使用して検証したりしましょう。
-
-- クラウドによる保護
-- 事前ブロック (BAFS) 保護
-- 望ましくない可能性のあるアプリケーション (PUA) 保護
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="configure-next-generation-protection-services"></a>次世代の保護サービスを構成する
 

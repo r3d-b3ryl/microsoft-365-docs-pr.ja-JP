@@ -16,12 +16,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 2826c623437760d86aad54e4aa36900bdad68082
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 4c9c0618db34df38168dca881117288832abf4a5
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603948"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717848"
 ---
 # <a name="evaluate-network-protection"></a>ネットワーク保護を評価する
 
@@ -35,12 +35,6 @@ ms.locfileid: "66603948"
 [ネットワーク保護](network-protection.md) は、従業員がアプリケーションを使用して、フィッシング詐欺、悪用、その他の悪意のあるコンテンツをインターネット上でホストする可能性のある危険なドメインにアクセスできないようにするのに役立ちます。
 
 この記事は、この機能を有効にしてテスト サイトに誘導することで、ネットワーク保護を評価するのに役立ちます。 この評価記事のサイトは悪意はありません。 これらは、悪意のあるふりをする特別に作成された Web サイトです。 サイトは、ユーザーが悪意のあるサイトまたはドメインにアクセスした場合に発生する動作をレプリケートします。
-
-> [!TIP]
-> また、 [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) の Microsoft Defender デモ シナリオ Web サイトにアクセスして、他の保護機能の動作を確認することもできます。
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
 
 ## <a name="enable-network-protection-in-audit-mode"></a>監査モードでネットワーク保護を有効にする
 

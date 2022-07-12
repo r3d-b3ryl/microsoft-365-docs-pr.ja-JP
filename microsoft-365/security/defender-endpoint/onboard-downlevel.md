@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c330d3c8210ea0c83605a2b5e9f9f43d1c930442
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554425"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717218"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -69,24 +69,24 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Microsoft Monitoring Agent (MMA) をインストールして構成する
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>開始する前に
 
 次の詳細を確認して、最小システム要件を確認します。
 
-- [2018 年 2 月の月次更新プログラムロールアップを](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)インストールする
+- [2018 年 2 月の更新プログラムのロールアップ](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598)をインストールする - Windows Update カタログからの直接ダウンロード リンクは[、こちらを](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4074598)参照してください。
+
+- [2019 年 3 月 12 日 (またはそれ以降) のサービス スタック更新プログラムの](https://support.microsoft.com/topic/servicing-stack-update-for-windows-7-sp1-and-windows-server-2008-r2-sp1-march-12-2019-b4dc0cff-d4f2-a408-0cb1-cb8e918feeba)インストール - Windows Update カタログからの直接ダウンロード リンクは[、ここで](https://www.catalog.update.microsoft.com/search.aspx?q=4490628)入手できます。
+
+- [SHA-2 コード署名サポート更新プログラム](https://support.microsoft.com/topic/sha-2-code-signing-support-update-for-windows-server-2008-r2-windows-7-and-windows-server-2008-september-23-2019-84a8aad5-d8d9-2d5c-6d78-34f9aa5f8339)をインストールする - Windows Update カタログからの直接ダウンロード リンクは[、こちらを](https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419)参照してください
 
   > [!NOTE]
   > Windows Server 2008 R2、Windows 7 SP1 Enterprise、および Windows 7 SP1 Pro にのみ適用されます。
 
 - [カスタマー エクスペリエンスと診断テレメトリ用の更新プログラムをインストールする](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry)
 
-- [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (またはそれ以降) または [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework) をインストールする
+- [Microsoft .Net Framework 4.5.2 以降を](https://www.microsoft.com/en-US/download/details.aspx?id=42642)インストールする
 
     > [!NOTE]
-    > Windows Server 2008 R2、Windows 7 SP1 Enterprise、および Windows 7 SP1 Pro にのみ適用されます。
-    >
-    > 4.0.x .NET Frameworkインストールしないでください。これは、上記のインストールを無効にするためです。
-    >
     > .NET 4.5 のインストールでは、インストール後にコンピューターの再起動が必要になる場合があります。
 
 - Azure Log Analytics エージェントの最小システム要件を満たします。 詳細については、「[Log Analytics を使用して環境内のコンピューターからデータを収集する](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)」を参照してください。

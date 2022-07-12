@@ -21,20 +21,45 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 9acc7cd4147f2fdf29b82ecb2d211ef30ea4e6dc
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617044"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717186"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Microsoft Secure Score をセキュリティ体制をより適切に表すために、いくつかの変更を加えています。 今後の変更については、「[Microsoft セキュア スコアの新機能](microsoft-secure-score-whats-coming.md)」を参照してください。
+Microsoft Secure Score をセキュリティ体制をより適切に表すために、引き続き新機能と改善アクションを追加します。
+
+より多くの改善アクションを実行すればするほど、セキュリティ スコアは高くなります。 詳細については、 [Microsoft セキュリティ スコア](microsoft-secure-score.md)に関するページを参照してください。
 
 Microsoft Secure Score はhttps://security.microsoft.com/securescore[、Microsoft 365 Defender ポータル](microsoft-365-defender-portal.md)にあります。
+
+## <a name="june-2022"></a>2022 年 6 月
+
+- 新しいMicrosoft Defender for EndpointとMicrosoft Defender 脆弱性の管理の推奨事項は、セキュリティスコア改善アクションとして利用できるようになりました。
+
+  - 共有へのオフライン アクセスを禁止する
+  - 共有書き込みアクセス許可セットを **すべてのユーザー** に削除する
+  - ルート フォルダーから共有を削除する
+  - 共有のフォルダー アクセス ベースの列挙を設定する
+  - コア コンポーネントMicrosoft Defender for Endpoint更新する
+
+- セキュリティスコアの改善アクションとして、新しいMicrosoft Defender for Identity推奨事項を利用できます。
+
+  - セキュリティで保護されていないドメイン構成を解決する
+
+- 新しい [アプリ ガバナンス](/defender-cloud-apps/app-governance-manage-app-governance) の推奨事項が、セキュア スコアの改善アクションとして利用できるようになりました。
+
+  - 優先度アカウントからの同意を得てアプリを規制する
+
+- 新しい Salesforce と ServiceNow の推奨事項は、Microsoft Defender for Cloud Apps顧客向けのセキュリティスコア改善アクションとして利用できるようになりました。 詳細については、「 [SaaS セキュリティ体制管理の概要」を](https://aka.ms/saas_security_posture_management)参照してください。
+
+>[!Note]
+>Salesforce コントロールと ServiceNow コントロールがパブリック プレビューで使用できるようになりました。
 
 ## <a name="april-2022"></a>2022 年 4 月
 

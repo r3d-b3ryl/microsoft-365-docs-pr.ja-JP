@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 for Business の課金内容または請求書についての料金、請求書、支払い情報を解釈する方法について説明します。
 ms.date: 05/24/2022
-ms.openlocfilehash: 594ad923c186410ad17085425fc0702d1a245ef9
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
-ms.translationtype: HT
+ms.openlocfilehash: 57120632cfe0b3543b228dfaca5955dfa31e4358
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65670248"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717870"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -38,7 +38,7 @@ ms.locfileid: "65670248"
 
 ## <a name="how-often-and-when-am-i-billed"></a>課金の頻度および課金時期は?
 
-サブスクリプションの購入時に選択した請求頻度に応じて、毎月、四半期ごと、半年ごと、または毎年のいずれかで請求書を受け取ります。 前回の請求日からの期間を、 *請求期間* と呼び、請求書の 1 ページ 1 に記載されています。 この期間は、現在の請求書の料金が発生する日付範囲を表します。 ライセンスの追加や削除など、この日付範囲外のサブスクリプションを変更した場合は、関連する料金は次の課金期間の請求書に表示されます。
+サブスクリプションの購入時に選択した課金頻度に応じて、毎月または毎年、請求書を受け取ります。 前回の請求日からの期間を、 *請求期間* と呼び、請求書の 1 ページ 1 に記載されています。 この期間は、現在の請求書の料金が発生する日付範囲を表します。 ライセンスの追加や削除など、この日付範囲外のサブスクリプションを変更した場合は、関連する料金は次の課金期間の請求書に表示されます。
 
 請求書の 2 ページ目から、 *サービス期間* ごとにグループ化された料金が表示されます。 サービス期間とは、サービスの使用に対して課金される日付範囲です。
 

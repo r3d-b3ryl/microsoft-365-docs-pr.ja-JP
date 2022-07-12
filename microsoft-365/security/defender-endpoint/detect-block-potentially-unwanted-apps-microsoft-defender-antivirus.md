@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: d93587867a2fea0921a1ac9711eed0f8c1b1beec
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468308"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717760"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -87,12 +87,6 @@ Windows Defender ウイルス対策は、検出された PUA ファイルと、�
 PUA 保護は、[Microsoft Intune](/mem/intune/protect/device-protect)、[Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection)、[グループ ポリシー](/azure/active-directory-domain-services/manage-group-policy)、または [PowerShell コマンドレット](/powershell/module/defender/?preserve-view=true&view=win10-ps)を使用して有効にできます。
 
 監査モードで PUA 保護を使用して、望ましくない可能性のあるアプリケーションをブロックせずに検出することもできます。 検出は、Windows イベント ログに記録されます。
-
-> [!TIP]
-> Microsoft Defender for Endpoint のデモ Web サイト [demo.wd.microsoft.com](https://demo.wd.microsoft.com/Page/UrlRep) にアクセスすることで、この機能が動作していることを確認し、実際の操作を見ることができます。
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
 
 監査モードの PUA 保護は、会社が内部ソフトウェア セキュリティ コンプライアンス チェックを実施していて、誤検知を回避したい場合に役立ちます。
 

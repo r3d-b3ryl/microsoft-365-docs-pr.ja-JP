@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 4ccb91f0a8c181697eb525dd8f5576e6f6cdc0d1
-ms.sourcegitcommit: 4f56b4b034267b28c7dd165e78ecfb4b5390087d
+ms.openlocfilehash: 8e251222d71ad9559084ec39d7fa65a18b9e2c1a
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64789824"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717164"
 ---
 # <a name="evaluate-controlled-folder-access"></a>制御されたフォルダー アクセスを評価する
 
@@ -37,17 +37,11 @@ ms.locfileid: "64789824"
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[フォルダー アクセスの制御](controlled-folders.md) は、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護するのに役立つ機能です。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、Windows 11 クライアントでサポートされています。
+[フォルダー アクセスの制御](controlled-folders.md) は、疑わしいアプリや悪意のあるアプリによる変更からドキュメントやファイルを保護するのに役立つ機能です。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、およびWindows 11 クライアントでサポートされています。
 
 特に、ファイルを暗号化して人質にしようとする [ランサムウェア](https://www.microsoft.com/wdsi/threats/ransomware) から保護するのに役立ちます。
 
 この記事は、フォルダー アクセスの制御を評価するのに役立ちます。 組織で機能を直接テストできるように、監査モードを有効にする方法について説明します。
-
-> [!TIP]
-> demo.wd.microsoft.com のMicrosoft Defender for Endpointデモ シナリオ Web [サイトにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)して、機能が動作していることを確認し、動作を確認することもできます。
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 ## <a name="use-audit-mode-to-measure-impact"></a>監査モードを使用して影響を測定する
 
@@ -61,11 +55,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > 組織内でフォルダー アクセスの制御方法を完全に監査する場合は、管理ツールを使用してこの設定をネットワーク内のデバイスに展開する必要があります。
-また、グループ ポリシー、Intune、モバイル デバイス管理 (MDM)、またはMicrosoft エンドポイント マネージャーを使用して設定を構成および展開することもできます。この設定は、フォルダーの主な[アクセス制御トピック](controlled-folders.md)で説明されています。
+また、グループ ポリシー、Intune、モバイル デバイス管理 (MDM)、または Microsoft エンドポイント マネージャーを使用して、メインの[フォルダー アクセス制御トピック](controlled-folders.md)で説明されているように、設定を構成および展開することもできます。
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Windows イベント ビューアーで制御されたフォルダー アクセス イベントを確認する
 
-次のフォルダー アクセス制御イベントは、Microsoft/Windows/Windows Defender/運用フォルダーの下のWindows イベント ビューアーに表示されます。
+次のフォルダー アクセス制御イベントは、Windows イベント ビューアーの Microsoft/Windows/Windows Defender/Operational フォルダーの下に表示されます。
 
 イベント ID | 説明
 -|-
@@ -74,7 +68,7 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
  1123 | ブロックされたフォルダー アクセス イベント
 
 > [!TIP]
-> ログを一元的に収集するように[、Windows イベント転送サブスクリプション](/windows/win32/wec/setting-up-a-source-initiated-subscription)を構成できます。 
+> ログを一元的に収集するように [Windows イベント転送サブスクリプション](/windows/win32/wec/setting-up-a-source-initiated-subscription) を構成できます。 
 
 ## <a name="customize-protected-folders-and-apps"></a>保護されたフォルダーとアプリをカスタマイズする
 

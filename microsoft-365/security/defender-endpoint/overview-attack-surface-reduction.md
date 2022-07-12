@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: ec39e02b48471857932a63ba19547ff2ad1b3390
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438098"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717152"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃面の縮小機能を理解して使用する
 
@@ -51,11 +51,11 @@ ms.locfileid: "65438098"
 
 環境で攻撃面の削減を構成するには、次の手順に従います。
 
-1. [Microsoft Edgeのハードウェア ベースの分離を有効にします](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
+1. [Microsoft Edge のハードウェア ベースの分離を有効にします](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
 
 2. アプリケーション制御を有効にします。
 
-   1. Windowsの基本ポリシーを確認します。 [基本ポリシーの例を](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)参照してください。
+   1. Windows で基本ポリシーを確認します。 [基本ポリシーの例を](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)参照してください。
    2. [Windows Defenderアプリケーション コントロールの設計ガイドを](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)参照してください。
    3. [Windows Defenderアプリケーション制御 (WDAC) ポリシーのデプロイ](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)に関するページを参照してください。
 
@@ -76,7 +76,7 @@ ms.locfileid: "65438098"
 > [!TIP]
 > ほとんどの場合、攻撃面の縮小機能を構成するときに、いくつかの方法から選択できます。
 >
-> - Microsoft エンドポイント マネージャー (Microsoft IntuneとMicrosoft Endpoint Configuration Managerが含まれるようになりました)
+> - Microsoft エンドポイント マネージャー (Microsoft Intuneと Microsoft Endpoint Configuration Managerが含まれるようになりました)
 > - グループ ポリシー
 > - PowerShell コマンドレット
 
@@ -95,17 +95,11 @@ ms.locfileid: "65438098"
 
 この機能は、アプリ、スクリプト、またはファイルの変更をブロックまたは禁止しません。 ただし、Windows イベント ログは、機能が完全に有効になっているかのようにイベントを記録します。 監査モードでは、イベント ログを確認して、機能が有効になっている場合にどのような影響を与えたかを確認できます。
 
-監査対象のエントリを見つけるには、**アプリケーションとサービス** \> **Microsoft** \> **Windows Windows Defender** \>  \> Operational に移動 **します**。
+監査対象のエントリを見つけるには、**アプリケーションとサービス** \> **Microsoft** \> **Windows** \> **Windows Defender** \> Operational に移動 **します**。
 
 Defender for Endpoint を使用して、各イベントの詳細を取得します。 これらの詳細は、攻撃面の縮小ルールを調査する場合に特に役立ちます。 Defender for Endpoint コンソールを使用すると、 [アラート タイムラインと調査シナリオの一部として問題を調査できます](investigate-alerts.md)。
 
 グループ ポリシー、PowerShell、および構成サービス プロバイダー (CSP) を使用して監査モードを有効にすることができます。
-
-> [!TIP]
-> demo.wd.microsoft.com のWindows Defender Testground Web [サイトにアクセス](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)して、機能が動作していることを確認し、動作を確認することもできます。
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 | 監査オプション | 監査モードを有効にする方法 | イベントを表示する方法 |
 |---|---|---|
@@ -136,7 +130,7 @@ E5 サブスクリプションを持ち、[Microsoft Defender for Endpoint](micr
 
 ### <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>カスタム ビューを使用して攻撃面の縮小機能を確認する
 
-Windows イベント ビューアーにカスタム ビューを作成して、特定の機能と設定のイベントのみを表示します。 最も簡単な方法は、カスタム ビューを XML ファイルとしてインポートすることです。 このページから XML を直接コピーできます。
+Windows イベント ビューアーでカスタム ビューを作成し、特定の機能と設定のイベントのみを表示します。 最も簡単な方法は、カスタム ビューを XML ファイルとしてインポートすることです。 このページから XML を直接コピーできます。
 
 また、機能に対応するイベント領域に手動で移動することもできます。
 
@@ -148,7 +142,7 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
     - 攻撃対象の縮小イベントのカスタム ビュー: *asr-events.xml*
     - ネットワーク/保護イベントのカスタム ビュー: *np-events.xml*
 
-2. スタート メニューに **イベント ビューアー** を入力し、**イベント ビューアー** を開きます。
+2. [スタート] メニューに **「イベント ビューアー**」と入力し **、イベント ビューアー** を開きます。
 
 3. **[アクション** \> **インポート カスタム ビュー]を選択します。..**
 
@@ -163,7 +157,7 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 
 #### <a name="copy-the-xml-directly"></a>XML を直接コピーする
 
-1. スタート メニューに **イベント ビューアー** を入力し、Windows **イベント ビューアー** を開きます。
+1. [スタート] メニューに **「イベント ビューアー**」と入力し、Windows イベント ビューアーを開 **きます**。
 
 2. 左側のパネルの [**アクション]** で、[**カスタム ビューの作成**] を選択します。
 
@@ -231,12 +225,12 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 
 ### <a name="list-of-attack-surface-reduction-events"></a>攻撃面の縮小イベントの一覧
 
-すべての攻撃対象軽減イベントは、次の表に示すように、Microsoft > Windowsとフォルダーまたはプロバイダー **>アプリケーションとサービス ログ** の下にあります。
+すべての攻撃対象軽減イベントは、次の表に示すように、 **Microsoft > Windows >アプリケーションログとサービス ログ** の下に配置され、次の表に示すようにフォルダーまたはプロバイダーに配置されます。
 
-これらのイベントには、Windowsイベント ビューアーでアクセスできます。
+Windows イベント ビューアーでは、次のイベントにアクセスできます。
 
 1. **[スタート]** メニューを開き、「**イベント ビューアー**」と入力し、**イベント ビューアー** 結果を選択します。
-2. **Microsoft > Windows>アプリケーションとサービス ログ** を展開し、次の表の [**プロバイダー/ソース]** の下にあるフォルダーに移動します。
+2. **Microsoft > Windows >アプリケーションとサービス ログ** を展開し、次の表の [**プロバイダー/ソース]** の下にあるフォルダーに移動します。
 3. サブ項目をダブルクリックすると、イベントが表示されます。 イベントをスクロールして探しているイベントを見つけます。
 
    ![イベント ビューアーを使用して示すアニメーション。](images/event-viewer.gif)
@@ -247,30 +241,30 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 
 |機能|プロバイダー/ソース|イベント ID|説明|
 |---|---|:---:|---|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|1|ACG の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|2|ACG の実施|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|3|[Do not allow child processes] (子プロセスを許可しない) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|4|[Do not allow child processes] (子プロセスを許可しない) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|5|[Block low integrity images] (整合性が低いイメージのブロック) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|6 |[Block low integrity images] (整合性が低いイメージのブロック) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|7 |[Block remote images] (リモート イメージのブロック) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|8 |[Block remote images] (リモート イメージのブロック) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|9 |[Disable win32k system calls] (win32k システム呼び出しの無効化) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|10|[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|11|[Code integrity guard] (コードの整合性の保護) 監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|12 |[Code integrity guard] (コードの整合性の保護) ブロック|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|13|EAF の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|14|EAF の実施|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|15|EAF+ の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|16|EAF+ の実施|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|17 |IAF の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|18 |IAF の実施|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|19|ROP StackPivot の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|20|ROP StackPivot の実施|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)| 21|ROP CallerCheck の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|22|ROP CallerCheck の実施|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|23|ROP SimExec の監査|
-|エクスプロイト保護|Security-Mitigations (カーネル モード/ユーザー モード)|24|ROP SimExec の実施|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|1|ACG の監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|2|ACG の実施|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|3|[Do not allow child processes] (子プロセスを許可しない) 監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|4|[Do not allow child processes] (子プロセスを許可しない) ブロック|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|5|[Block low integrity images] (整合性が低いイメージのブロック) 監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|6 |[Block low integrity images] (整合性が低いイメージのブロック) ブロック|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|7 |[Block remote images] (リモート イメージのブロック) 監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|8 |[Block remote images] (リモート イメージのブロック) ブロック|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|9 |[Disable win32k system calls] (win32k システム呼び出しの無効化) 監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|10|[Disable win32k system calls] (win32k システム呼び出しの無効化) ブロック|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|11|[Code integrity guard] (コードの整合性の保護) 監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|12 |[Code integrity guard] (コードの整合性の保護) ブロック|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|13|EAF の監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|14|EAF の実施|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|15|EAF+ の監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|16|EAF+ の実施|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|17 |IAF の監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|18 |IAF の実施|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|19|ROP StackPivot の監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|20|ROP StackPivot の実施|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)| 21|ROP CallerCheck の監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|22|ROP CallerCheck の実施|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|23|ROP SimExec の監査|
+|エクスプロイト保護|セキュリティ軽減策 (カーネル モード/ユーザー モード)|24|ROP SimExec の実施|
 |エクスプロイト保護|WER-Diagnostics|5|CFG のブロック|
 |エクスプロイト保護|Win32K (運用)|260|信頼されていないフォント|
 |ネットワーク保護|Windows Defender (運用)|5007|設定が変更された場合のイベント|
@@ -286,7 +280,7 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 |攻撃面の縮小|Windows Defender (運用)|1121|ブロック モードでルールが起動した場合のイベント|
 
 >[!NOTE]
-> ユーザーの観点から見ると、ASR 警告モードの通知は、攻撃表面の縮小ルールのWindowsトースト通知として行われます。
+> ユーザーの観点から見ると、ASR 警告モードの通知は、攻撃表面の縮小ルールの Windows トースト通知として行われます。
 >
 > ASR では、Network Protection は監査モードとブロック モードのみを提供します。
 
@@ -296,10 +290,10 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 
 | 記事 | 説明 |
 |:---|:---|
-| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの起動時と実行中に、システムの整合性を保護および維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 Microsoft Edgeにはコンテナーの分離を使用して、悪意のある Web サイトから保護します。 |
+| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの起動時と実行中に、システムの整合性を保護および維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 悪意のある Web サイトから保護するには、Microsoft Edge のコンテナー分離を使用します。 |
 | [アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | アプリケーション制御を使用して、アプリケーションを実行するために信頼を得る必要があります。 |
-| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) が、キー システム フォルダー内のファイルに変更を加えないようにするのに役立ちます (Microsoft Defender ウイルス対策必要)。 |
-| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要)。 |
+| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) が、キー システム フォルダー内のファイルに変更を加えないようにするのに役立ちます (Microsoft Defender ウイルス対策が必要です)。 |
+| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要です)。 |
 | [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されないように保護します。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
 | [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することで、データ損失から保護します。 |
 | [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件について説明します。 |
@@ -308,4 +302,4 @@ Windows イベント ビューアーにカスタム ビューを作成して、�
 | [攻撃面の減少 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md) | 攻撃表面縮小ルールをテスト (監査) モードからアクティブで有効な (ブロック) モードに移行する手順を示します。 |
 | [攻撃面の減少 (ASR) ルールの運用化](attack-surface-reduction-rules-deployment-operationalize.md) | 日常のレビューとメンテナンスアクティビティに関する情報を提供します。 |
 | [攻撃面の減少 (ASR) ルールの参照](attack-surface-reduction-rules-reference.md) | 各攻撃対象領域の縮小ルールの詳細を提供します。 |
-| [攻撃面の減少ルール](attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (Microsoft Defender ウイルス対策が必要)。 |
+| [攻撃面の減少ルール](attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (Microsoft Defender ウイルス対策が必要です)。 |

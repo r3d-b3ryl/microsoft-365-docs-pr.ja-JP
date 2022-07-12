@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: e06b2a37f45ccf0febc35e31d33ece55c03e3303
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: c38136aa8d6616613968de5ef352e326c41c4137
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492062"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717826"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -38,10 +38,6 @@ Microsoft Defender ウイルス対策クラウド配信保護が正しく機能�
 
 > [!IMPORTANT]
 > この記事には、Microsoft Defender ウイルス対策専用のネットワーク接続の構成に関する情報が含まれています。 Microsoft Defender for Endpoint (Microsoft Defender ウイルス対策を含む) を使用している場合は、「[Defender for Endpoint のデバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)」を参照してください。
-
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは非推奨であり、将来削除される予定です。
 
 ## <a name="allow-connections-to-the-microsoft-defender-antivirus-cloud-service"></a>Microsoft Defender ウイルス対策クラウド サービスへの接続を許可する
 

@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 1a82f1fb6759bd3cfeaa5bc24154e7e030d08355
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: eb4551d703258c5fdfa3429b721ef3317e9d2c6d
+ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872404"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66717284"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -42,14 +42,6 @@ Microsoft Defender ウイルス対策で問題が発生した場合は、この�
 - [Microsoft Defender ウイルス対策エラー コード](#error-codes)
 - [内部 Microsoft Defender ウイルス対策クライアント エラー コード (開発およびテスト中に Microsoft が使用)](#internal-error-codes)
 
-> [!TIP]
-> Microsoft Defender for Endpoint のデモ Web サイト ([demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)) にアクセスして、次の機能が動作していることを確認することもできます:
-> - クラウドによる保護
-> - 高速学習 (一目でブロックを含む)
-> - 望ましくない可能性があるアプリケーションのブロック
-
-> [!NOTE]
-> demo.wd.microsoft.com の Defender for Endpoint デモ サイトは推奨されません。今後削除される予定です。
 
 <a id="windows-defender-av-ids"></a>
 ## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender - ウイルス対策イベント ID
