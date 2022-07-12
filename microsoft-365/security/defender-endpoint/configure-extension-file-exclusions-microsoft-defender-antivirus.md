@@ -1,6 +1,6 @@
 ---
 title: 拡張機能、名前、または場所に基づいて除外を構成して検証する
-description: ファイル拡張子、ファイル名、または場所に基づいて、Microsoft Defender ウイルス対策 スキャンからファイルを除外します。
+description: ファイル拡張子、ファイル名、または場所に基づいて、Microsoft Defender ウイルス対策スキャンからファイルを除外します。
 keywords: 除外、ファイル、拡張子、ファイルの種類、フォルダー名、ファイル名、スキャン
 ms.prod: m365-security
 ms.technology: mde
@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7b1614738b17d7f3cf78a6bfabb84f85196d42ff
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 8e9c153f55b38871ebf6af7a4511af2e637fad68
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873250"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720481"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -32,26 +32,25 @@ ms.locfileid: "65873250"
 **プラットフォーム**
 - Windows
 
-[スケジュールされたスキャン](schedule-antivirus-scans.md)、[オンデマンド](run-scan-microsoft-defender-antivirus.md) スキャン、[および常時オンのリアルタイム保護と監視](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されるMicrosoft Defender ウイルス対策の除外を定義できます。 **通常、除外を適用する必要はありません**。 除外を適用する必要がある場合は、さまざまな種類から選択できます。
+[スケジュールされたスキャン](schedule-antivirus-scans.md)、[オンデマンド](run-scan-microsoft-defender-antivirus.md) スキャン、[および常時オンのリアルタイム保護と監視](configure-real-time-protection-microsoft-defender-antivirus.md)に適用される Microsoft Defender ウイルス対策の除外を定義できます。 **通常、除外を適用する必要はありません**。 除外を適用する必要がある場合は、さまざまな種類から選択できます。
 
 - ファイル拡張子とフォルダーの場所に基づく除外 (この記事で説明)
 - [プロセスによって開かれるファイルの除外](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策除外は、[攻撃面縮小 (ASR) ルール](/microsoft-365/security/defender-endpoint/attack-surface-reduction)や[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外したファイルは、引き続きEDRアラートやその他の検出をトリガーできます。
-> ファイルを広範に除外するには、それらをMicrosoft Defender for Endpoint[カスタム インジケーター](/microsoft-365/security/defender-endpoint/manage-indicators)に追加します。
+> Microsoft Defender ウイルス対策の除外は、[攻撃面縮小 (ASR) ルール](attack-surface-reduction.md)や[フォルダー アクセスの制御](controlled-folders.md)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外するファイルは、エンドポイントの検出と応答 (EDR) アラートやその他の検出を引き続きトリガーできます。
+> ファイルを広範に除外するには、それらをMicrosoft Defender for Endpoint[カスタム インジケーター](manage-indicators.md)に追加します。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
-[除外リストを定義する前に、除外を定義する](configure-exclusions-microsoft-defender-antivirus.md)おすすめを参照してください。
+[除外リストを定義する前に除外を定義するための推奨事項](configure-exclusions-microsoft-defender-antivirus.md)に関するページを参照してください。
 
 ## <a name="exclusion-lists"></a>除外リスト
 
-Microsoft Defender ウイルス対策 スキャンから特定のファイルを除外するには、除外リストを変更します。 Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるものなど) に基づく多くの自動除外が含まれます。
+Microsoft Defender ウイルス対策スキャンから特定のファイルを除外するには、除外リストを変更します。 Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるものなど) に基づく多くの自動除外が含まれています。
 
 > [!NOTE]
-> 不要と思われるアプリ (PUA) の検出にも除外が適用されます。
->
+> 不要 [と思われるアプリ (PUA) の検出](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) にも除外が適用されます。
 > 自動除外は、Windows Server 2016 以降にのみ適用されます。 これらの除外は、Windows セキュリティ アプリおよび PowerShell では表示されません。
 
 次の表に、ファイル拡張子とフォルダーの場所に基づく除外の例をいくつか示します。
@@ -74,7 +73,7 @@ Microsoft Defender ウイルス対策 スキャンから特定のファイルを
 
 - マップされたネットワーク ドライブを除外しないでください。 実際のネットワーク パスを指定します。
 
-- Microsoft Defender ウイルス対策 サービスの開始後に作成され、除外リストに追加されたポイントを再解析するフォルダーは含まれません。 新しい再解析ポイントが有効な除外ターゲットとして認識されるように (Windowsを再起動して) サービスを再起動します。
+- Microsoft Defender ウイルス対策サービスの開始後に作成され、除外リストに追加された再解析ポイントであるフォルダーは含まれません。 新しい再解析ポイントが有効な除外ターゲットとして認識されるようにするには、(Windows を再起動して) サービスを再起動します。
 
 - 除外は、 [スケジュールされたスキャン](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、 [オンデマンド スキャン](run-scan-microsoft-defender-antivirus.md)、 [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されますが、Defender for Endpoint には適用されません。 Defender for Endpoint 全体で除外を定義するには、 [カスタム インジケーターを使用します](manage-indicators.md)。
 
@@ -91,7 +90,7 @@ Microsoft Defender ウイルス対策の除外を定義するには、いくつ�
 次の記事をご覧ください。
 
 - [Microsoft Intune でデバイスの制限設定を構成する](/intune/device-restrictions-configure)
-- [IntuneでWindows 10のデバイス制限設定をMicrosoft Defender ウイルス対策する](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [IntuneのWindows 10に対する Microsoft Defender ウイルス対策デバイスの制限設定](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Configuration Managerを使用して、ファイル名、フォルダー、またはファイル拡張子の除外を構成する
 
@@ -106,7 +105,7 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 
 2. [**グループ ポリシー管理エディター**] で、[**コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
-3. ツリーを展開して **、除外Windows Defender ウイルス対策コンポーネント** \> **をWindows** \> **します**。
+3. ツリーを [**除外]** **Windows Defender ウイルス対策** \> **Windows コンポーネント**\>に展開します。
 
 4. 編集用の **[パスの除外]** 設定を開き、除外を追加します。
 
@@ -116,7 +115,7 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
     4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。
     5. **[値]** 列に **「0**」と入力します。
 
-5. [**OK**] をクリックします。
+5. **[OK]** をクリックします。
 
 6. [ **拡張機能の除外] 設定を** 開いて編集し、除外を追加します。
 
@@ -125,7 +124,7 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
     3. [ **値名** ] 列の下に、各ファイル拡張子を独自の行に入力します。
     4. **[値]** 列に **「0**」と入力します。
 
-7. [**OK**] をクリックします。
+7. **[OK]** をクリックします。
 
 <a id="ps"></a>
 
@@ -157,7 +156,7 @@ PowerShell を使用して、拡張子、場所、またはファイル名に基
 > [!IMPORTANT]
 > コマンドレットを使用してリストを作成した場合、 `Set-MpPreference` または `Add-MpPreference`コマンドレットを使用すると、既存の `Set-MpPreference` リストが上書きされます。
 
-たとえば、次のコード スニペットを使用すると、Microsoft Defender ウイルス対策 スキャンによってファイル拡張子を持つファイルが`.test`除外されます。
+たとえば、次のコード スニペットを使用すると、Microsoft Defender ウイルス対策スキャンによって、ファイル拡張子を持つファイルが `.test` 除外されます。
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -198,7 +197,6 @@ ExclusionPath
 > - 1 つのエントリにつき最大 6 つのワイルドカードのみを使用できます。
 > - ドライブ文字の代わりにワイルドカードを使用することはできません。
 > - フォルダーの除外のアスタリスク `*` は、1 つのフォルダーに対応します。 複数のインスタンスを使用して、名前が指定されていない複数の `\*\` 入れ子になったフォルダーを示します。
-> - 現在、Microsoft Endpoint Configuration Managerではワイルドカード文字 (など`*``?`) はサポートされていません。
     
 次の表では、ワイルドカードを使用する方法と、いくつかの例を示します。
 
@@ -298,7 +296,7 @@ ExclusionPath
 
 PowerShell を使用する場合は、次の 2 つの方法で一覧を取得できます。
 
-- すべてのMicrosoft Defender ウイルス対策設定の状態を取得します。 各リストは別々の行に表示されますが、各リスト内の項目は同じ行に結合されます。
+- すべての Microsoft Defender ウイルス対策設定の状態を取得します。 各リストは別々の行に表示されますが、各リスト内の項目は同じ行に結合されます。
 - すべての設定の状態を変数に書き込み、その変数を使用して、関心のある特定のリストのみを呼び出します。 それぞれの使用 `Add-MpPreference` は新しい行に書き込まれます。
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>MpCmdRun を使用して除外リストを検証する
@@ -313,9 +311,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 > [!NOTE]
-> MpCmdRun で除外を確認するには、MICROSOFT DEFENDER ウイルス対策 CAMP バージョン 4.18.2111-5.0 (2021 年 12 月にリリース) 以降が必要です。
+> MpCmdRun で除外を確認するには、Microsoft Defender ウイルス対策 CAMP バージョン 4.18.2111-5.0 (2021 年 12 月にリリース) 以降が必要です。
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>PowerShell を使用して、他のすべてのMicrosoft Defender ウイルス対策設定と共に除外の一覧を確認する
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>PowerShell を使用して、他のすべての Microsoft Defender ウイルス対策の基本設定と共に除外の一覧を確認する
 
 次のコマンドレットを使用します。
 
@@ -357,7 +355,7 @@ $WDAVprefs.ExclusionPath
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-Microsoft Defender ウイルス対策がマルウェアを報告する場合、ルールは機能しません。 マルウェアのレポートがなく、ダウンロードしたファイルが存在する場合は、除外が機能します。 ファイルを開いて、 [EICAR テスト ファイル Web サイト](http://www.eicar.org/86-0-Intended-use.html)で説明されている内容と同じ内容であることを確認できます。
+Microsoft Defender ウイルス対策でマルウェアが報告された場合、ルールは機能しません。 マルウェアのレポートがなく、ダウンロードしたファイルが存在する場合は、除外が機能します。 ファイルを開いて、 [EICAR テスト ファイル Web サイト](http://www.eicar.org/86-0-Intended-use.html)で説明されている内容と同じ内容であることを確認できます。
 
 次の PowerShell コードを使用して、.NET WebClient クラスを呼び出してテスト ファイルをダウンロードすることもできます 。コマンドレットと `Invoke-WebRequest` 同様に、検証する規則に準拠するファイルに置き換えます `c:\test.txt` 。
 
@@ -386,7 +384,7 @@ $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt"
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft Defender ウイルス対策 スキャンでの除外の構成と検証](configure-exclusions-microsoft-defender-antivirus.md)
+- [Microsoft Defender ウイルス対策スキャンで除外を構成して検証する](configure-exclusions-microsoft-defender-antivirus.md)
 - [プロセスによって開かれたファイルの除外を構成して検証する](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Windows サーバーでMicrosoft Defender ウイルス対策除外を構成する](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Windows Server で Microsoft Defender ウイルス対策の除外を構成する](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)

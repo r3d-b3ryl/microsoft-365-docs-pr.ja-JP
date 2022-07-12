@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 06/17/2022
+ms.date: 07/11/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e1cf2647ac8308d30b82e69cbb288fde330fdc5a
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: d90e39028f563c7b3913f6fd0dbf97222d1068d2
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612197"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720437"
 ---
 # <a name="compare-microsoft-defender-for-endpoint-plans"></a>Defender for Endpoint プランの比較
 
@@ -49,6 +49,16 @@ EndPoint 向け Microsoft Defender は、エンタープライズネットワー
 > [!IMPORTANT]
 > Defender for Endpoint プラン 1 とプラン 2 のスタンドアロン バージョンには、サーバー ライセンスは含まれません。 Windows Server や Linux を実行しているエンドポイントなどのサーバーをオンボードするには、 [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) オファリングの一部として Defender for Servers プラン 1 またはプラン 2 が必要です。 詳細については、こちらを参照してください。 [Microsoft Defender for Servers の概要に関するページを参照してください](/azure/defender-for-cloud/defender-for-servers-introduction)。
 
+Microsoft Defender for Endpoint プラン 1 は、商用および教育機関のお客様向けのスタンドアロン ユーザー サブスクリプション ライセンスとして使用できます。 また、Microsoft 365 E3/A3 の一部としても含まれています。
+
+Microsoft Defender for Endpointプラン 2 は、以前は Microsoft Defender for Endpoint と呼ばれ、スタンドアロン ライセンスとして、および次のプランの一部として使用できます。
+
+- Windows 11 Enterprise E5/A5
+- Windows 10 Enterprise E5/A5
+- Microsoft 365 E5/A5/G5 (Windows 10 または Windows 11 Enterprise E5 を含む)
+- Microsoft 365 E5/A5/G5/F5 Security
+- Microsoft 365 F5 セキュリティ/コンプライアンス
+
 ## <a name="mixed-licensing-scenarios"></a>混合ライセンスのシナリオ
 
 組織が、Defender for Endpoint Plan 1 や Defender for Endpoint Plan 2 など、Microsoft エンドポイント セキュリティ サブスクリプションを組み合わせて使用しているとします。 **現在、最も機能の高い Microsoft エンドポイント セキュリティ サブスクリプションは、テナントのエクスペリエンスを設定します**。 この例では、テナント エクスペリエンスは、すべてのユーザーに対する Defender for Endpoint Plan 2 です。
@@ -65,7 +75,7 @@ EndPoint 向け Microsoft Defender は、エンタープライズネットワー
 
 ## <a name="start-a-trial"></a>試用版を開始する
 
-- Defender for Endpoint プランを試すには、 [Defender for Endpoint 試用版サインアップ ページ](https://go.microsoft.com/fwlink/p/?LinkID=2168109)に移動します。
+- Defender for Endpoint を試すには、 [Defender for Endpoint 試用版サインアップ ページ](https://go.microsoft.com/fwlink/p/?LinkID=2168109)に移動します。
 - Defender for Endpoint Plan 2 のMicrosoft Defender 脆弱性の管理 アドオンを試すには、次のページを参照[https://aka.ms/AddonPreviewTrial](https://aka.ms/AddonPreviewTrial)してください。 
 
 ## <a name="see-also"></a>関連項目

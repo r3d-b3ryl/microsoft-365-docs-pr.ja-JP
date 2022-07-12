@@ -20,12 +20,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f668efd6c205d67d5aaf4ffa86fae6933f9a257a
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: e5ab7630ad0e749eedb6ced8b9895c0a632a527f
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686143"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720503"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>改ざん防止機能を使用してセキュリティ設定を保護する
 
@@ -97,9 +97,9 @@ ms.locfileid: "66686143"
 
 | 改ざん防止を有効にする方法 | クラウド保護への依存 |
 |---|---|
-|Microsoft Intune|不要|
-|テナントアタッチを使用した Microsoft Endpoint Configuration Manager|不要|
-|Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|はい|
+|Microsoft Intune|いいえ|
+|テナントアタッチを使用した Microsoft Endpoint Configuration Manager|いいえ|
+|Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))|必要|
 
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを使用して組織の改ざん防止を管理する
 
@@ -152,7 +152,6 @@ ms.locfileid: "66686143"
 
 ### <a name="requirements-for-managing-tamper-protection-in-endpoint-manager"></a>エンドポイント マネージャーで改ざん防止を管理するための要件
 
-- デバイスを[Microsoft Defender for Endpointにオンボードする](/microsoft-365/security/defender-endpoint/onboarding)必要があります。
 - グローバル管理者、セキュリティ管理者、セキュリティ操作など、適切な [アクセス許可](/microsoft-365/security/defender-endpoint/assign-portal-access) が割り当てられている必要があります。
 - 組織では[、Microsoft エンドポイント マネージャーを使用してデバイスを管理します](/mem/endpoint-manager-getting-started)。 (Microsoft エンドポイント マネージャー (MEM) ライセンスが必要です。MEM は、Microsoft 365 E3/E5、Enterprise Mobility + Security E3/E5、Microsoft 365 Business Premium、Microsoft 365 F1/F3、Microsoft 365 Government G3/G5、および対応する教育ライセンスに含まれています)。
 - Windows デバイスは、[Windows 11または 1709、1803](/lifecycle/announcements/revised-end-of-service-windows-10-1709)、[1809](/lifecycle/announcements/windows-server-1803-end-of-servicing) 以降Windows 10実行されている必要があります[](/windows/release-health/status-windows-10-1809-and-windows-server-2019)。 (リリースの詳細については、[リリース情報Windows 10](/windows/release-health/release-information)参照してください。
