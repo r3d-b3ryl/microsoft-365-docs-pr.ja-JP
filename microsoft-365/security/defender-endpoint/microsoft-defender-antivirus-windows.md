@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: e344c98fd136569015a032bcc83569bc38e06621
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 0efacb67cb3ba6b5126bbe5de327fa0b9f2092cf
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438797"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66720393"
 ---
 # <a name="microsoft-defender-antivirus-in-windows"></a>Windows の Microsoft Defender ウイルス対策
 
@@ -47,8 +47,6 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 
 次の表は、Microsoft Defender ウイルス対策がアクティブ モード、パッシブ モード、または無効である場合に期待される内容を示しています。
 
-<br/><br/>
-
 | モード | 動作 |
 |---|---|
 | アクティブ モード | アクティブ モードでは、Microsoft Defender ウイルス対策はデバイス上の主要なウイルス対策アプリとして使用されます。 ファイルがスキャンされ、脅威が修正され、検出された脅威が組織のセキュリティ レポートと Windows セキュリティ アプリに一覧表示されます。 |
@@ -59,21 +57,21 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 
 ## <a name="check-the-state-of-microsoft-defender-antivirus-on-your-device"></a>デバイス上の Microsoft Defender ウイルス対策の状態を確認する
 
-デバイス上の Microsoft Defender ウイルス対策の状態を確認する場合は、Windows セキュリティ アプリや Windows PowerShell などのいくつかの方法のいずれかを使用できます。
+Windows セキュリティ アプリや Windows PowerShell などのいくつかの方法のいずれかを使用して、デバイス上の Microsoft Defender ウイルス対策の状態を確認できます。
 
-### <a name="use-the-windows-security-app-to-check-status-of-microsoft-defender-antivirus"></a>Windows セキュリティ アプリを使用して、Microsoft Defender ウイルス対策の状態を確認する
+### <a name="use-the-windows-security-app-to-check-the-status-of-microsoft-defender-antivirus"></a>Windows セキュリティ アプリを使用して、Microsoft Defender ウイルス対策の状態を確認する
 
-1. Windows デバイスで、[スタート] メニューを選択し、`Security` の入力を開始します。 次に、結果で Windows セキュリティ アプリを開きます。
+1. Windows デバイスで、**[スタート]** メニューを選択し、`Security` の入力を開始します。 次に、結果で Windows セキュリティ アプリを開きます。
 
 2. **[ウイルスと脅威の防止]** を選択します。
 
-3. **[ウイルスと脅威の防止設定]** で **[設定の管理]** を選択します。
+3. **[自分を保護している人]** の下の **[プロバイダーの管理]** を選択します。
 
-設定ページにウイルス対策/マルウェア対策ソリューションの名前が表示されます。
+セキュリティ プロバイダー ページにウイルス対策/マルウェア対策ソリューションの名前が表示されます。
 
-### <a name="use-powershell-to-check-status-of-microsoft-defender-antivirus"></a>PowerShell を使用して Microsoft Defender ウイルス対策の状態を確認する
+### <a name="use-powershell-to-check-the-status-of-microsoft-defender-antivirus"></a>PowerShell を使用して Microsoft Defender ウイルス対策の状態を確認する
 
-1. [スタート] メニューを選択し、`PowerShell` の入力を開始します。 次に、結果で Windows PowerShell を開きます。
+1. **[スタート]** メニューを選択し、`PowerShell` の入力を開始します。 次に、結果で Windows PowerShell を開きます。
 
 2. 種類 `Get-MpComputerStatus`。
 
@@ -92,7 +90,7 @@ Microsoft Defender ウイルス対策は、Microsoft Defender for Endpoint の�
 
 ## <a name="get-your-antivirusantimalware-platform-updates"></a>ウイルス対策/マルウェア対策プラットフォームの更新プログラムを取得する
 
-Microsoft Defender ウイルス対策、またはウイルス対策/マルウェア対策ソリューションを最新の状態に保つことが重要です。 Microsoft は定期的な更新プログラムをリリースして、デバイスが、新しいマルウェアや攻撃手法から保護する最新のテクノロジを備えていることを確認します。 詳細については、「[Microsoft Defender ウイルス対策の更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。
+Microsoft Defender ウイルス対策 (またはウイルス対策/マルウェア対策ソリューション) を最新の状態に保つことが重要です。 Microsoft は定期的な更新プログラムをリリースして、デバイスが、新しいマルウェアや攻撃手法から保護する最新のテクノロジを備えていることを確認します。 詳細については、「[Microsoft Defender ウイルス対策の更新プログラムの管理とベースラインの適用](manage-updates-baselines-microsoft-defender-antivirus.md)」を参照してください。
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。
