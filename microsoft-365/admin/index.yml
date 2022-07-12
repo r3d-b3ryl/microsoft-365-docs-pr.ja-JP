@@ -16,12 +16,12 @@ metadata:
   - AdminSurgePortfolio
   - intro-hub-or-landing
   ms.collection: Adm_TOC
-  ms.openlocfilehash: cc7a727276871edb56106e1c2b779405a1f7c99e
-  ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+  ms.openlocfilehash: f85e162a2f1d1b002e9f7f241b37c59fcce3db46
+  ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
   ms.translationtype: HT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/01/2022
-  ms.locfileid: "66602018"
+  ms.lasthandoff: 07/11/2022
+  ms.locfileid: "66714423"
 highlightedContent:
   items:
   - title: Office 365 は Microsoft 365 になりました!
@@ -41,7 +41,7 @@ productDirectory:
     imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg
     summary: 他の管理者に最も人気のあるヘルプ記事をご覧ください。
     url: top-m365-admin-articles.yml
-  - title: 管理者トレーニング ビデオ ライブラリ
+  - title: YouTube - 小規模企業向けの Microsoft 365 ヘルプ
     imageSrc: https://docs.microsoft.com/office/media/icons/video-play.svg
     summary: 短いビデオを使用してビジネス向けの Microsoft 365 を設定および管理する方法について説明します。
     url: https://go.microsoft.com/fwlink/?linkid=2197659

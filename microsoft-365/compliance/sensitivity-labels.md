@@ -22,12 +22,12 @@ description: Microsoft Purview Information Protection の秘密度ラベルを�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: f06b4a2f40987481c3870ee512e60497f57d851a
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: 4d1c0f590535691f0ac7c10fdff8c67261753577
+ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687808"
+ms.lasthandoff: 07/11/2022
+ms.locfileid: "66714138"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -130,7 +130,7 @@ Microsoft Purview の秘密度ラベルを使用することにより、これ�
 - そのラベルに構成できるラベル設定
 - ラベルがユーザーに表示される場所
 
-このスコープ構成により、ドキュメントとメール専用で、コンテナー用に選択できない秘密度ラベルを作成できます。 同様に、コンテナー専用で、ドキュメントやメールには選択できない秘密度ラベル。 Microsoft Purview Data Mapアセットのスコープを選択することもできます。
+このスコープ構成では、ドキュメントや電子メールなどのアイテム専用で、コンテナー用に選択できない機密ラベルを使用できます。 同様に、コンテナー専用で、ドキュメントやメールには選択できない秘密度ラベル。 Microsoft Purview データ マップのスキーマ化されたデータ アセットのスコープを選択することもできます。
 
 ![秘密度ラベルの範囲オプション。](../media/sensitivity-labels-scopes.png)
 
