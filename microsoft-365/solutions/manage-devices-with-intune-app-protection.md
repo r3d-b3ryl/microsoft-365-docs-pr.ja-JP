@@ -18,14 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: e421a62d3b1fa60df7a64a5b9a94e6e46b0a139f
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: 829d650b6d815a84203e43e7256442bfee6bac0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651513"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749289"
 ---
 # <a name="step-1-implement-app-protection-policies"></a>手順 1. アプリ保護ポリシーの実装
 
@@ -61,4 +62,4 @@ Intune アプリ保護ポリシー (APP) は、モバイル アプリケーシ�
 
 ## <a name="next-steps"></a>次の手順
 
-手順 2. に進[みます。デバイスをIntuneに登録します](manage-devices-with-intune-enroll.md)。 
+「[手順 2. デバイスを Intune に登録する](manage-devices-with-intune-enroll.md)」に移動します。 

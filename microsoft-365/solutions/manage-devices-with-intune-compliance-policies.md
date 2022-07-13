@@ -15,18 +15,19 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: f93642984ecb2439ab6e4ad484ea4f6f3303c0ce
-ms.sourcegitcommit: a06bb81fbd727a790a8fe6a3746b8a3cf62a6b24
-ms.translationtype: MT
+ms.openlocfilehash: ae2866d2cabf21616b7aea74220dcf5ce8e4d4eb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "64651369"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750300"
 ---
 # <a name="step-3-set-up-compliance-policies-for-devices-with-intune"></a>手順 3. Intune を搭載したデバイスのコンプライアンス ポリシーを設定する
 
-デバイスをIntuneに登録すると、環境内のデータのセキュリティと制御をさらに強化できます。 [手順 2.デバイスを登録して、Intuneを](manage-devices-with-intune-enroll.md)使用してこれを実現する方法の詳細をIntuneします。 この記事では、デバイス コンプライアンス ポリシーを構成する次の手順について説明します。 
+デバイスを Intune に登録すると、環境内のデータのセキュリティと制御をさらに強化できます。 「[手順2. デバイスを Intune に登録する](manage-devices-with-intune-enroll.md)」では、Intune を使用してこれを実現する方法について詳しく説明します。 この記事では、デバイス コンプライアンス ポリシーを構成する次の手順について説明します。 
 
 ![デバイスを管理する手順](../media/devices/intune-mdm-step-2.png#lightbox)
 

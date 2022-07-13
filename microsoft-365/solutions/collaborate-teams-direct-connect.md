@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: 720b2828ab1e27ccebdd12ceeef0479b64a9bafa
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: ae076b5bfb653fd1a90d9260d699d454246200a0
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530494"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66747885"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
@@ -71,7 +71,7 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 この構成の一環として、**Office 365** アプリケーションが有効になります。これには、Teams と、SharePoint などの Teams 統合サービスが含まれます。
 
 > [!NOTE]
-> テナント間アクセス設定の変更は、有効になるまでに最大 3 時間 15 分かかる場合があります。
+> クロステナント アクセス設定の変更が有効になるまで、最大 6 時間かかる場合があります。
 
 > [!NOTE]
 > 商用クラウドと GCC クラウド間の共有チャネルはサポートされていません。
@@ -82,7 +82,7 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 
 組織を追加する方法
 1. 全体管理者またはセキュリティ管理者のアカウントを使用して、[Azure Active Directory](https://aad.portal.azure.com) にサインインします。
-1. **[外部 ID]** を選択し、**[クロス テナント アクセス設定 (プレビュー)]** を選択します。
+1. **[外部 ID]** を選択し、**[クロス テナント アクセス設定]** を選択します。
 1. **[組織設定]** を選択します。
 1. **[組織の追加]** を選択します。
 1. **[組織の追加]** ウィンドウで、組織の完全なドメイン名 (またはテナント ID) を入力し、Enter キーを押します。
@@ -94,7 +94,7 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 外部の参加者を招待する組織ごとに、この手順に従います。
 
 組織の受信設定を構成する方法
-1. [[Azure Active Directory]](https://aad.portal.azure.com) で、**[外部 ID]** を選択し、**[クロス テナント アクセス設定 (プレビュー)]** を選択します。
+1. [[Azure Active Directory]](https://aad.portal.azure.com) で、**[外部 ID]** を選択し、**[クロス テナント アクセス設定]** を選択します。
 1. 変更する組織の受信アクセス リンクを選択します。
 1. **[B2B 直接接続]** タブで、**[設定のカスタマイズ]** を選択します。
 1. 外部 **[外部ユーザーとグループ]** タブで、**[アクセスを許可]** と **[すべての外部ユーザーとグループ]** を選択します。 (秘密保持契約書に署名したユーザーとグループなど、特定のユーザーとグループにアクセスを限定する場合、**［外部のユーザーとグループを選択 (Select external users and groups)]** を選ぶことができます)。
@@ -108,7 +108,7 @@ Azure AD B2B 直接接続は既定で無効になっています。 共有チャ
 ユーザーを参加させる外部の共有チャネルの組織ごとに、この手順を実行します。
 
 組織の送信設定を構成する方法
-1. [[Azure Active Directory]](https://aad.portal.azure.com) で、**[外部 ID]** を選択し、**[クロス テナント アクセス設定 (プレビュー)]** を選択します。
+1. [[Azure Active Directory]](https://aad.portal.azure.com) で、**[外部 ID]** を選択し、**[クロス テナント アクセス設定]** を選択します。
 1. 変更する組織の送信アクセス リンクを選択します。
 1. **[B2B 直接接続]** タブで、**[設定のカスタマイズ]** を選択します。
 1. **[外部ユーザーとグループ]** タブで、**[アクセスを許可]** を選択し、すべてのユーザーの **[適用先]** を設定します。
