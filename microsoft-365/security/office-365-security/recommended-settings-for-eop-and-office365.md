@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7798bc177cf6d3a864644fdfa6563ced14cd0ab8
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 4abfee62caea6e11b525f558bb4e6e8408655c17
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489793"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756829"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -148,11 +148,11 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**From name** <p> _CustomFromName_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**差出人アドレス** <p> _CustomFromAddress_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**内部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、 **内部送信者からの未配信メッセージについて管理者に通知** するが選択されている場合にのみ使用されます。|
-|**[件名]** <p> _CustomInternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
-|**メッセージ** <p> _CustomInternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**件名** <p> _CustomInternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**Message** <p> _CustomInternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 |**外部送信者からのメッセージの通知をカスタマイズする**||||これらの設定は、 **外部送信者からの配信不能メッセージについて管理者に通知** するが選択されている場合にのみ使用されます。|
-|**[件名]** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
-|**メッセージ** <p> _CustomExternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**件名** <p> _CustomExternalSubject_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
+|**Message** <p> _CustomExternalBody_|空白 <p> `$null`|空白 <p> `$null`|空白 <p> `$null`||
 
 ### <a name="eop-anti-phishing-policy-settings"></a>EOP フィッシング対策ポリシー設定
 
@@ -203,10 +203,10 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |セキュリティ機能名|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**フィッシングしきい値&保護**|||||
-|**ユーザーの保護を有効にする** (偽装されたユーザー保護) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|未選択 <p> `$false` <p> なし|選択済み <p> `$true` <p> \<list of users\>|選択済み <p> `$true` <p> \<list of users\>|キー ロールにユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、およびその他の上級リーダーである可能性があります。 外部では、保護された送信者には、会議メンバーまたは取締役会が含まれる可能性があります。|
+|**ユーザーの保護を有効にする** (偽装されたユーザー保護) <p> _EnableTargetedUserProtection_ <p> _TargetedUsersToProtect_|未選択 <p> `$false` <p> none|選択済み <p> `$true` <p> \<list of users\>|選択済み <p> `$true` <p> \<list of users\>|キー ロールにユーザー (メッセージ送信者) を追加することをお勧めします。 内部的には、保護された送信者は、CEO、CFO、およびその他の上級リーダーである可能性があります。 外部では、保護された送信者には、会議メンバーまたは取締役会が含まれる可能性があります。|
 |**ドメインで保護を有効にする** (偽装されたドメイン保護)|未選択|選択済み|選択済み||
 |**所有しているドメインを含める** <p> _EnableOrganizationDomainsProtection_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|オフ <p> `$false` <p> なし|選択済み <p> `$true` <p> \<list of domains\>|選択済み <p> `$true` <p> \<list of domains\>|所有していないドメイン (送信者ドメイン) を追加することをお勧めしますが、頻繁に操作します。|
+|**カスタム ドメインを含める** <p> _EnableTargetedDomainsProtection_ <p> _TargetedDomainsToProtect_|オフ <p> `$false` <p> none|選択済み <p> `$true` <p> \<list of domains\>|選択済み <p> `$true` <p> \<list of domains\>|所有していないドメイン (送信者ドメイン) を追加することをお勧めしますが、頻繁に操作します。|
 |**信頼できる送信者とドメインの追加** <p> _ExcludedSenders_ <p> _ExcludedDomains_|なし|なし|なし|組織によっては、偽装の試行として誤って識別される送信者またはドメインを追加することをお勧めします。|
 |**メールボックス インテリジェンスを有効にする** <p> _EnableMailboxIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |**偽装に対する保護のインテリジェンスを有効にする** <p> _EnableMailboxIntelligenceProtection_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|この設定では、メールボックス インテリジェンスによる偽装検出に対して指定されたアクションを許可します。|
@@ -283,9 +283,6 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 |セキュリティ機能名|既定値|組み込みの保護|コメント|
 |---|:---:|:---:|---|
 |**次の URL をブロックする** <p> _ExcludedUrls_|空白 <p> `$null`|空白 <p> `$null`|この設定に関する具体的な推奨事項はありません。 <p> 詳細については、 [セーフ リンクの「次の URL をブロックする」の一覧を参照してください](safe-links.md#block-the-following-urls-list-for-safe-links)。 <p> **注**: [テナント許可/ブロック リスト](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list)でブロック URL エントリを管理できるようになりました。 "次の URL をブロックする" 一覧は非推奨のプロセスです。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。|
-|**Office 365 アプリで安全なリンクを使用する** <p> _EnableSafeLinksForO365Clients_|オン <p> `$true`|オン <p> `$true`|サポートされているOffice 365デスクトップおよびモバイル (iOS および Android) アプリで安全なリンクを使用します。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。|
-|**ユーザーがOffice 365 アプリで保護されたリンクをクリックしたときに追跡しない** <p> _TrackClicks_|オン <p> `$false`|オフ <p> `$true`|この設定をオフにする (_TrackClicks_ を設定) `$true`すると、サポートされているOffice 365 アプリでユーザーのクリックが追跡されます。|
-|**ユーザーがOffice 365 アプリの元の URL をクリックできないようにする** <p> _AllowClickThrough_|オン <p> `$false`|オン <p> `$false`|この設定をオンにする (_AllowClickThrough_ を設定) `$false`すると、サポートされているOffice 365 アプリの元の URL へのクリックが防止されます。|
 
 #### <a name="safe-links-policy-settings"></a>セーフ リンク ポリシーの設定
 
@@ -310,6 +307,9 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 |**電子メールで次の URL を書き換えないでください** <p> _DoNotRewriteUrls_|未選択 <p> 空白|未選択 <p> 空白|未選択 <p> 空白|未選択 <p> 空白|この設定に関する具体的な推奨事項はありません。 <p> **注**: [次の URL を書き換えない] 一覧の目的は、指定した URL のセーフ リンクの折り返しをスキップすることです。 この一覧を使用する代わりに、 [テナント許可/ブロック リストに許可 URL エントリを作成](allow-block-urls.md#create-allow-url-entries)できるようになりました。|
 |**Microsoft Teams の潜在的に悪意のある URL に対するアクション**||||||
 |**オン: 安全なリンクは、ユーザーが Microsoft Teams でリンクをクリックすると、既知の悪意のあるリンクの一覧をチェックします** <p> _EnableSafeLinksForTeams_|未選択 <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
+|**Office 365 アプリで安全なリンクを使用する** <p> _EnableSafeLinksForO365Clients_|オン <p> `$true`|オン <p> `$true`|サポートされているOffice 365デスクトップおよびモバイル (iOS および Android) アプリで安全なリンクを使用します。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。|
+|**ユーザーがOffice 365 アプリで保護されたリンクをクリックしたときに追跡しない** <p> _TrackClicks_|オン <p> `$false`|オフ <p> `$true`|この設定をオフにする (_TrackClicks_ を設定) `$true`すると、サポートされているOffice 365 アプリでユーザーのクリックが追跡されます。|
+|**ユーザーがOffice 365 アプリの元の URL をクリックできないようにする** <p> _AllowClickThrough_|オン <p> `$false`|オン <p> `$false`|この設定をオンにする (_AllowClickThrough_ を設定) `$false`すると、サポートされているOffice 365 アプリの元の URL へのクリックが防止されます。|
 |**[保護の設定] をクリックする**||||||
 |**ユーザーのクリックを追跡する** <p> _TrackUserClicks_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |**ユーザーが元の URL までクリックできるようにする** <p> _AllowClickThrough_|選択済み <p> `$true`|選択済み <p> `$true`|未選択 <p> `$false`|未選択 <p> `$false`|この設定をオフにする ( _AllowClickThrough_ を設定する `$false`) と、元の URL へのクリックが防止されます。|

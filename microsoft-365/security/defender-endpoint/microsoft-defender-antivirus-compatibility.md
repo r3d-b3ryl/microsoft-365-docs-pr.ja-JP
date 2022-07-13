@@ -17,12 +17,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d3b6cee3212ea7d98782a9e073343321c31c8990
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 860c1cd36568705b2646cf14b6fea071af4a19a5
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750322"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756607"
 ---
 # <a name="microsoft-defender-antivirus-compatibility-with-other-security-products"></a>Microsoft Defender ウイルス対策の他のセキュリティ製品との互換性
 
@@ -107,6 +107,8 @@ Microsoft Defender ウイルス対策がアクティブ モード、パッシブ
 - 種類`REG_DWORD`
 - 値: `1`
 
+PowerShell で保護状態を表示するには、 [Get-MpComputerStatus](/powershell/module/defender/get-mpcomputerstatus) コマンドを使用します。 の値を確認します `AMRunningMode`。 Microsoft Defender ウイルス対策がエンドポイントで有効になっている場合は、 **標準**、 **パッシブ**、または **EDR ブロック モード** が表示されます。 
+
  > [!NOTE]
  > Windows Server 2016 および Windows Server 2012 R2 を実行しているエンドポイントでパッシブ モードを機能させるには、「[Windows サーバーのオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」で説明されている最新の統合ソリューションを使用して、これらのエンドポイントをオンボードする必要があります。 
 
@@ -176,9 +178,14 @@ Defender for Endpoint は、Microsoft Defender ウイルス対策がパッシブ
 
 ## <a name="how-to-confirm-the-state-of-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策の状態を確認する方法
 
-Microsoft Defender ウイルス対策の状態を確認するには、次のいずれかの方法を使用します。
+いくつかの方法のいずれかを使用して、Microsoft Defender ウイルス対策の状態を確認できます。 次の操作を行うことができます:
 
-### <a name="use-the-windows-security-app"></a>Windows セキュリティ アプリを使用する
+- [Windows セキュリティ アプリを使用して、ウイルス対策アプリを識別します](#use-the-windows-security-app-to-identify-your-antivirus-app)。
+- [タスク マネージャーを使用して、Microsoft Defender ウイルス対策が実行されていることを確認します](#use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running)。
+- [Windows PowerShellを使用して、Microsoft Defender ウイルス対策が実行されていることを確認します](#use-windows-powershell-to-confirm-that-microsoft-defender-antivirus-is-running)。
+- [Windows PowerShellを使用して、ウイルス対策保護が実行されていることを確認します](#use-windows-powershell-to-confirm-that-antivirus-protection-is-running)。
+
+### <a name="use-the-windows-security-app-to-identify-your-antivirus-app"></a>Windows セキュリティ アプリを使用してウイルス対策アプリを識別する
 
 1. Windows デバイスで、Windows セキュリティ アプリを開きます。
 
@@ -188,7 +195,7 @@ Microsoft Defender ウイルス対策の状態を確認するには、次のい�
 
 4. [ **セキュリティ プロバイダー** ] ページの [ **ウイルス対策**] で、 **Microsoft Defender ウイルス対策が有効になっている** ことがわかります。
 
-### <a name="use-task-manager"></a>タスク マネージャーを使用する
+### <a name="use-task-manager-to-confirm-that-microsoft-defender-antivirus-is-running"></a>タスク マネージャーを使用して Microsoft Defender ウイルス対策が実行されていることを確認する
 
 1. Windows デバイスで、タスク マネージャー アプリを開きます。
 

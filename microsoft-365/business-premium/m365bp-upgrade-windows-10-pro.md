@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premiumを使用して Windows デバイスをWindows 10 Proにアップグレードする方法について説明します。
-ms.openlocfilehash: fdd17eb35767029090dddab103ce6db3b8b00365
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5440dcd91ac32dcc11f9f7c44c404b81d57a0c73
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641026"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756811"
 ---
 # <a name="upgrade-windows-devices-to-windows-10-pro"></a>Windows デバイスをWindows 10 Proにアップグレードする
 
@@ -81,6 +81,6 @@ Windows 7 Pro、Windows 8 Pro、またはWindows 8.1 Proを実行している Wi
 
 [Windows をアクティブ化する](https://support.microsoft.com/windows/activate-windows-c39005d4-95ee-b91e-b399-2820fda32227#WindowsVersion=Windows_10)
 
-[一般法人向け Microsoft 365 のトレーニング ビデオ](../admin/admin-video-library.yml)
+[一般法人向け Microsoft 365 のトレーニング ビデオ](https://go.microsoft.com/fwlink/?linkid=2197659)
 
 

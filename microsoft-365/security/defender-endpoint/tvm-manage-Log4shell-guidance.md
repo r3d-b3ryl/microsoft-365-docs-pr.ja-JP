@@ -21,11 +21,11 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
 ms.openlocfilehash: 6e265490eb5afee275debcdd1eb073f11bb845e3
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65416492"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66766565"
 ---
 # <a name="learn-how-to-manage-the-log4shell-vulnerability-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointで Log4Shell の脆弱性を管理する方法について説明します
 
@@ -42,7 +42,7 @@ Log4Shell の脆弱性は、Apache Log4j 2 ログ ライブラリで見つかっ
 
 ## <a name="overview-of-discovery-monitoring-and-mitigation-capabilities"></a>検出、監視、軽減機能の概要
 
-脅威と脆弱性の管理には、Log4Shell の脆弱性に対する組織の公開を特定、監視、軽減するのに役立つ次の機能が用意されています。
+脅威と脆弱性の管理には、Log4Shell の脆弱性に対する組織の影響を特定、監視、軽減するのに役立つ次の機能が用意されています。
 
 - **検出**: 公開されているデバイス (Microsoft Defender for Endpointオンボードされたデバイスと、検出されたがまだオンボードされていないデバイスの両方) の検出は、ディスク上で検出された脆弱なソフトウェアと脆弱なファイルに基づいています。
 - **脅威の認識:** 組織の露出を評価するための統合ビュー。 このビューには、デバイス レベルとソフトウェア レベルでの公開が表示され、最後に表示された日時、最後に実行された日時、開いているポートで最後に実行された時刻など、脆弱なファイルの詳細にアクセスできます。 この情報を使用して、修復アクションに優先順位を付けることができます。 公開されているデバイスに関連するデータがダッシュボードに表示されるまでには、最大で 24 時間かかる場合があります。
@@ -50,11 +50,11 @@ Log4Shell の脆弱性は、Apache Log4j 2 ログ ライブラリで見つかっ
 - **高度なハンティング:** 高度な捜索を使用して、ディスク上で識別された脆弱な log4j ファイルの詳細を返します。
 
 > [!NOTE]
-> これらの機能は、Windows 10 & Windows 11、Windows サーバー、Linux、macOSでサポートされています。
+> これらの機能は、Windows 10 & Windows 11、Windows Server、Linux、macOS でサポートされています。
 >
 > Linux でのサポートには Microsoft Defender for Endpoint、Linux クライアント バージョン 101.52.57 (30.121092.15257.0) 以降が必要です。
 >
-> macOSのサポートには、クライアント バージョン 20.121111.15416.0 以降Microsoft Defender for Endpoint macOS必要があります。
+> macOS でのサポートには、macOS クライアント バージョン 20.121111.15416.0 以降Microsoft Defender for Endpoint必要があります。
 >
 >サポートされているバージョンの詳細については、「 [サポートされているオペレーティング システムのプラットフォームと機能](tvm-supported-os.md)」を参照してください。
 
@@ -64,11 +64,11 @@ Log4Shell の脆弱性は、Apache Log4j 2 ログ ライブラリで見つかっ
 
 オンボードされたデバイスは、脆弱なソフトウェアとファイルを検出できる既存の埋め込み脅威と脆弱性の管理機能を使用して評価されます。
 
-検出されたがまだオンボードされていないデバイスで検出するには、Log4j 検出を有効にする必要があります。 これにより、デバイス検出がネットワークをアクティブにプローブするのと同じ方法でプローブが開始されます。 これには、複数のオンボード エンドポイント (Windows 10+ および Windows Server 2019+ デバイス) からのプローブと、CVE-2021-44228 に対して脆弱でリモートで公開されているデバイスを検出するためのサブネット内でのプローブのみが含まれます。
+検出されたがまだオンボードされていないデバイスで検出するには、Log4j 検出を有効にする必要があります。 これにより、デバイス検出がネットワークをアクティブにプローブするのと同じ方法でプローブが開始されます。 これには、複数のオンボード エンドポイント (Windows 10+ デバイスと Windows Server 2019 以降のデバイス) からのプローブと、CVE-2021-44228 に対して脆弱でリモートで公開されているデバイスを検出するためのサブネット内でのプローブのみが含まれます。
 
 Log4 検出を有効にするには:
 
-1. **設定** > **Device discoveryDiscovery** >  **のセットアップ** に移動します
+1. [デバイス **検出検出** > **の設定]** >  に移動 **します**
 2. **Log4j2 検出を有効にする (CVE-2021-44228)** を選択します
 3. **[保存]** を選びます。
 
@@ -88,7 +88,7 @@ Log4 検出を有効にするには:
 - **脆弱なソフトウェア**: 検出は、Log4j リモート コードの実行に対して脆弱であることが知られているインストール済みのアプリケーション Common Platform 列挙型 (CPE) に基づいています。
 - **脆弱なファイル:** メモリ内のファイルとファイル システム内のファイルの両方が評価されます。 これらのファイルには、既知の脆弱なバージョンの Log4j コア jar ファイル、または脆弱な jndi ルックアップ クラスまたは脆弱な log4j コア ファイルを含む Uber-JAR を使用できます。 具体的には、次のようになります。
 
-  - JAR ファイルに脆弱な Log4j ファイルが含まれているかどうかを判断するには、JAR ファイルを調べて、次のファイル \\(META-INFmavenorg.apache.logging.log4jlog4j-corepom.properties\\\\\\\\) を検索します。このファイルが存在する場合は、Log4j バージョンが読み取られ、抽出されます。
+  - JAR ファイルに脆弱な Log4j ファイルが含まれているかどうかを判断するには、JAR ファイルを調べて、次のファイルを検索します。\\META-INF\\maven\\org.apache.logging.log4j log4j-core\\\\pom.properties - このファイルが存在する場合は、Log4j バージョンが読み取られ、抽出されます。
   - 文字列 "/log4j/core/lookup/JndiLookup.class" を含むパスを探して JAR ファイル内の JndiLookup.class ファイルを検索します。JndiLookup.class ファイルが存在する場合、脅威と脆弱性の管理は、この JAR に pom.properties で定義されたバージョンの Log4j ファイルが含まれているかどうかを判断します。
   - は、次のいずれかの文字列を含むパスを検索して、入れ子になった JAR 内に埋め込まれた脆弱な Log4j コア JAR ファイルを検索します。
     - lib/log4j-core-
@@ -99,10 +99,10 @@ Log4 検出を有効にするには:
 
 |機能|ファイルの種類|Windows10 以降、<br>server2019+|Server 2012R2,<br>server2016|Server 2008R2|Linux + macOS|
 |:---|:---|:---|:---|:---|:---|
-|メモリ内の検索  | Log4j-core | はい |はい<sup>[1]| - | はい |
-| |Uber-JARs | はい |はい<sup>[1]| - | はい |
-| ディスク上のすべてのファイルを検索する  |Log4j-core | はい |はい<sup>[1]| はい | - |
-| | Uber-JARs|はい |はい<sup>[1]| - | -|
+|メモリ内の検索  | Log4j-core | 必要 |はい<sup>[1]| - | 必要 |
+| |Uber-JARs | 必要 |はい<sup>[1]| - | 必要 |
+| ディスク上のすべてのファイルを検索する  |Log4j-core | 必要 |はい<sup>[1]| 必要 | - |
+| | Uber-JARs|必要 |はい<sup>[1]| - | -|
 
 (1) 機能は、[KB5005292 が Windows Server 2012 R2](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-update-for-edr-sensor-f8f69773-f17f-420f-91f4-a8e5167284ac) および 2016 にインストールされている場合に使用できます。
 
@@ -112,8 +112,8 @@ Log4 検出を有効にするには:
 
 脅威と脆弱性の管理 ダッシュボードを使用して、現在の露出を確認します。
 
-1. Microsoft 365 Defender ポータルで、**脆弱性管理** > **DashboardThreat** >  **awareness:**
-:::image type="content" source="images/awareness_dashboard.png" alt-text="脆弱性の管理 ダッシュボードの脅威認識ウィジェットに" lightbox="images/awareness_dashboard.png":::移動します
+1. Microsoft 365 Defender ポータルで、脆弱性管理 **ダッシュボード****の脅威認識:**
+**脆弱性管理** > ダッシュボード > :::image type="content" source="images/awareness_dashboard.png" alt-text="の脅威認識ウィジェットに移動します" lightbox="images/awareness_dashboard.png":::。
 2. [ **脆弱性の詳細の表示** ] を選択して、組織の公開の統合ビューを表示します。
 :::image type="content" source="images/view_vulnerability_details.png" alt-text="CVE-2021-44228 (Log4j) の脆弱性の詳細ページ" lightbox="images/view_vulnerability_details.png":::
 3. 関連するタブを選択すると、露出が次のように分割されます。
@@ -146,7 +146,7 @@ log4Shell の脆弱性は、既定の構成で Log4j バージョン 2.10 - 2.14
 | 適用される回避策 | _Windows_: LOG4J_FORMAT_MSG_NO_LOOKUPS環境変数は、最新のデバイスの再起動前に観察されました。 <br/><br/> _Linux + macOS_: 実行中のすべてのプロセスは、環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true を持ちます。 |
 | 再起動中の回避策 | LOG4J_FORMAT_MSG_NO_LOOKUPS環境変数は設定されていますが、次の再起動は検出されません。 |
 | 未適用 | _Windows_: LOG4J_FORMAT_MSG_NO_LOOKUPS環境変数は観察されませんでした。 <br/><br/> _Linux + macOS_: 実行中のプロセスの環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true というわけではありません。デバイスには軽減アクションが適用されませんでした。 |
-| 部分的に軽減 | _Linux + macOS_: 軽減策アクションはデバイスに適用されましたが、実行中のプロセスの環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true というわけではありません。 |
+| 部分的に軽減 | _Linux + macOS_: 軽減アクションはデバイスに適用されましたが、実行中のプロセスの環境変数にLOG4J_FORMAT_MSG_NO_LOOKUPS=true というわけではありません。 |
 |該当なし | 軽減策のバージョン範囲にない脆弱なファイルを持つデバイス。 |
 |不明 | 現時点では、軽減策の状態を特定できませんでした。 |
 
@@ -157,7 +157,7 @@ log4Shell の脆弱性は、既定の構成で Log4j バージョン 2.10 - 2.14
 
 軽減策を元に戻す必要がある場合は、次の手順に従います。
 
-**_Windowsの場合:_**
+**_Windows の場合:_**
 
 1. 管理者特権の PowerShell ウィンドウを開く
 2. 次のコマンドを実行します。
@@ -170,15 +170,15 @@ log4Shell の脆弱性は、既定の構成で Log4j バージョン 2.10 - 2.14
 
 **_Linux の場合:_**
 
-1. ファイル /etc/environment を開き、行 LOG4JFORMATMSGNOLOOKUPS\_\_\_\_=true を削除します
-2. ファイル /etc/systemd/system.conf.d/log4jdisablejndilookups.conf\_\_\_ を削除します
-3. ファイル /etc/systemd/user.conf.d/log4jdisablejndilookups.conf\_\_\_ を削除します
+1. ファイル /etc/environment を開き、行 LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS=true を削除します
+2. ファイル /etc/systemd/system.conf.d/log4j\_disable\_jndi\_lookups.conf を削除する
+3. ファイル /etc/systemd/user.conf.d/log4j\_disable\_jndi\_lookups.conf
 
 この変更は、デバイスの再起動後に有効になります。
 
-**_macOSの場合:_**
+**_macOS の場合:_**
 
-ファイル setenv を削除します。LOG4JFORMATMSGNOLOOKUPS.plist\_\_\_\_ を次のフォルダーから取得します。
+ファイル setenv を削除します。LOG4J\_FORMAT\_MSG\_NO\_LOOKUPS.plist from the folders:
 
 - */Library/LaunchDaemons/*
 - */Library/LaunchAgents/*

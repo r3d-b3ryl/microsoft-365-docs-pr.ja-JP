@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターへの新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 今月起こったことついてご覧ください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 828389ded4e62b7cc7f7bbb1a0da8ef3534b6a58
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637785"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756751"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview のリスクおよびコンプライアンス ソリューションの新機能
 
@@ -40,6 +40,47 @@ ms.locfileid: "66637785"
 > - [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 >
 > [Microsoft 365 のロードマップ](https://www.microsoft.com/microsoft-365/roadmap)では、提供済み、ロールアウト中、開発中、キャンセル済み、以前にリリース済みの Microsoft 365 機能がわかります。
+
+## <a name="june-2022"></a>2022 年 6 月
+
+### <a name="compliance-manager"></a>コンプライアンス マネージャー
+
+- [Microsoft Purview Compliance Manager のアラートとアラート ポリシー - アラート ポリシー](compliance-manager-alert-policies.md) を作成または編集するアクセス許可を持つ 3 つの ADD ロールが追加されました。
+- [Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md) - 以前は "Microsoft Compliance Configuration Analyzer" という名前の Compliance Manager のこの入門ツールの新しい名前と更新された参照リンク。
+
+### <a name="data-loss-prevention"></a>データ損失防止
+
+- Microsoft Purview ブランドのスクリーンショットに関する多数のページ更新プログラム。
+
+### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
+
+- プレビュー段階: [Microsoft Graph API for records management](compliance-extensibility.md#microsoft-graph-api-for-records-management-preview)
+
+### <a name="microsoft-priva"></a>Microsoft Priva
+
+- [Subject Rights Requests](/privacy/priva/subject-rights-requests) - 各進行状況ステップを通じてユーザーを支援するために、SRR コンテンツの大幅な更新と再構築。以下の詳細を参照してください。
+  - Priva 主体の権利要求 - 顧客価値の小道具の明確なアーティキュレーションと、SRR プロセスの一般的な概要[について説明](/privacy/priva/subject-rights-requests)します。
+  - [ワークフローと詳細ページを理解](/privacy/priva/subject-rights-requests-workflow) する - 要求を完了し、手動と自動進行を示し、詳細なコンテンツにリンクする手順を明確にします。セクションでは、新しい [履歴] タブなど、要求の詳細ページを解釈して操作する方法について説明します。
+  - [要求を作成して検索設定を定義](/privacy/priva/subject-rights-requests-create) する - サブヘッドを使用して新しいフレームを作成する方法は、ガイド付きプロセスを使用したカスタム メソッドと、状況に最も関連するコンテンツの取得を目的としたテンプレートを使用する新機能の 2 つの方法です。
+  - [データの見積もりと取得](/privacy/priva/subject-rights-requests-data-retrieval) - 一部の要求がデータ見積もり段階で一時停止する理由と、結果として検索を調整する方法について説明します。また、データの取得を自動的に進める前に、最初に一時停止するように要求を設定する方法についても説明します。
+  - [サブジェクト権限要求のデータを確認](/privacy/priva/subject-rights-requests-data-review) する - 新しいインポート ファイル機能を使用すると、ユーザーは Microsoft 以外の 365 の場所からファイルを取得できます。それ以外の場合は、検索で取得されていないファイルを [データ収集] タブに移動できます。
+  - [レポートを生成し、要求を閉じる](/privacy/priva/subject-rights-requests-reports) - 最終的なデータ パッケージがいつ生成され、どのような種類のファイルが含まれているかを明確にします。
+  - [Microsoft Graph APIと Power Automate を統合して拡張](/privacy/priva/subject-rights-requests-automate)する - この以前の Power Automate ページのタイトルと拡張されたページ コンテンツのタイトルを変更し、以前に別のページに存在していたGraph APIコンテンツと参照リンクを含めます。
+
+### <a name="sensitive-information-types"></a>機密情報の種類
+
+- [正確なデータ一致ベースの機密情報の種類について説明](sit-learn-about-exact-data-match-based-sits.md) します。EDM がサポートするサービスに関するセクションが追加されました。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+- プレビューでは、 [ドキュメントを PDF](sensitivity-labels-office-apps.md#pdf-support) 形式に変換し、視覚的なマーキングと暗号化でラベルを継承する Office アプリの PDF サポート。 PDF への印刷はサポートされておらず、ラベル ポリシーが必須ラベル付け用に構成されている場合、このオプションはユーザーに対して使用できなくなります。
+- プレビュー段階: ラベルの削除またはダウングレードの理由を要求するようにラベル ポリシーが構成されている場合にユーザーが表示するダイアログ ボックスは、入力された応答に機密データを含めないことをユーザーに警告するように更新されます。 [ラベル ポリシーで [実行できる操作](sensitivity-labels.md#what-label-policies-can-do) ] セクションのスクリーンショットは、この更新されたダイアログ ボックスを示しています。これにより、運用環境で使用するために Office 展開チャネルに進むことができます。
+- プレビュー段階: [S/MIME 保護を適用するための Outlook のサポート](sensitivity-labels-office-apps.md#configure-a-label-to-apply-smime-protection-in-outlook) は、クライアント プラットフォーム間でロールアウトされ始めたばかりです。
+- [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#creating-an-auto-labeling-policy)の場合、設定された日数内に編集されていない場合にポリシーを自動的に有効にできる新しい設定。
+
+### <a name="trainable-classifiers"></a>トレーニング可能な分類子
+
+- [トレーニング可能な分類子 (](classifier-learn-about.md) 追加された Adult、Racy、Gory 画像トレーニング可能な分類子) について説明します。
 
 ## <a name="may-2022"></a>2022 年 5 月
 
@@ -293,32 +334,3 @@ ms.locfileid: "66637785"
 - 自動ラベル付け ポリシー向けの新たな[監視機能](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy)。
 - 現在、既存のドキュメントの既定のラベル、Office on the web の理由テキストを公開中です。
 - バージョン 2202 以降で 7 月の半期エンタープライズ チャネル向けに発表されました。Outlook の共同編集と監査。
-
-## <a name="december-2021"></a>2021 年 12 月
-
-### <a name="compliance-and-service-assurance"></a>コンプライアンスとサービス アシュアランス
-
-- [GDRP に基づく Azure、Dynamics 365 および Windows の侵害通知](/compliance/regulatory/gdpr-breach-notification) - Defender for Cloud などの有料サービスを利用しなくても、セキュリティやプライバシーに関する通知を受信できることを明確にするために更新されました。
-
-### <a name="ediscovery"></a>電子情報開示
-
-- [eDiscovery (Premium) ワークフローで Microsoft Teams のコンテンツを管理する](teams-workflow-in-advanced-ediscovery.md#reference-guide) - eDiscovery (Premium) で Teams コンテンツを管理するための新しいダウンロード可能なクイック リファレンス ガイドが更新されました。
-
-### <a name="data-lifecycle-management"></a>データ ライフサイクル管理
-
-- [コンプライアンス センターでアーカイブ メールボックスを有効にする](enable-archive-mailboxes.md#run-diagnostics-on-archive-mailboxes) - アーカイブ メールボックスの新しい診断ツールについてのセクションが追加されました。
-- [ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする](use-network-upload-to-import-pst-files.md#step-2-upload-your-pst-files-to-microsoft-365) - PST インポートは AzCopy v10 をサポートするようになりました
-- [非アクティブなメールボックスを復元する](restore-an-inactive-mailbox.md) - 非アクティブなメールボックスの LegacyExchangeDN を対象のメールボックスに最初に追加して復元する手順が改訂されました
-
-### <a name="information-protection"></a>情報保護
-
-- [Microsoft Purview を使用した情報保護ソリューションの展開](information-protection-solution.md) - Microsoft Purview Information Protection を展開するための規範的なロードマップをお探しのお客様向けの新しい段階的なガイダンスです。
-
-### <a name="retention-and-records-management"></a>保持とレコード管理
-
-- [アイテム保持ポリシーが有効になるまでの所要時間](create-retention-policies.md#how-long-it-takes-for-retention-policies-to-take-effect)に関する新しいガイダンス
-- 新しいテナント設定のロールアウトには、レコードとしてマークされロックされた、ラベル付けされた SharePoint アイテムのプロパティを編集できないようにするレコード管理設定と、レコードとしてマークされたアイテムのロックをユーザーが解除できないようにするその他の設定があります。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-- Power BI のラベル付けの義務化と既定のラベルが一般提供 (GA) されるようになりました
