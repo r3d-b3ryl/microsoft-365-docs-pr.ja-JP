@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7661619ccb60bb55020a8e241c341b11fe45abd1
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 5883b5af4101f9227e43009a148344b82fdfb5ef
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487347"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772689"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft 脅威エキスパートの機能を構成および管理する
 
@@ -35,20 +35,20 @@ ms.locfileid: "66487347"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>開始する前に
 
 > [!NOTE]
-> 対象攻撃通知マネージド脅威ハンティング サービスに適用する前 Microsoft 脅威エキスパートに、Microsoft Technical Service プロバイダーとアカウント チームと資格要件について話し合ってください。
+> Endpoint Attack Notifications マネージド脅威ハンティング サービスに適用する前に、Microsoft Technical Service プロバイダーとアカウント チームと資格要件について話し合ってください。
 
 ラボのセットアップだけでなく、デバイスが登録されている環境に Defender for Endpoint がデプロイされていることを確認します。
 
-Defender for Endpoint のお客様の場合は、**Microsoft 脅威エキスパート - ターゲット攻撃通知** を申請して、最も重要な脅威を特定するのに役立つ特別な分析情報と分析情報を取得し、それらに迅速に対応できるようにする必要があります。 Microsoft 脅威エキスパートにサブスクライブするには、アカウント チームまたは Microsoft の担当者に問い合わせてください **。エキスパートオンデマンド** では、関連する検出と敵対者について脅威の専門家に相談してください。
+Defender for Endpoint のお客様の場合は、 **エンドポイント攻撃通知** を申請して、最も重要な脅威を特定するのに役立つ特別な分析情報と分析情報を取得し、それらに迅速に対応できるようにする必要があります。 Microsoft 脅威エキスパートにサブスクライブするには、アカウント チームまたは Microsoft の担当者に問い合わせてください **。エキスパートオンデマンド** では、関連する検出と敵対者について脅威の専門家に相談してください。
 
-## <a name="apply-for-microsoft-threat-experts---targeted-attack-notifications-service"></a>Microsoft 脅威エキスパート - ターゲット攻撃通知サービスに申請する
+## <a name="apply-for-endpoint-attack-notifications-service"></a>エンドポイント攻撃通知サービスに適用する
 
 Defender for Endpoint のお客様は、Microsoft 365 Defender ポータルから申請できます。
 
-1. ナビゲーション ウィンドウで、[**設定] > [全般>高度な機能] > Microsoft 脅威エキスパート - [ターゲット攻撃通知]** に移動します。
+1. ナビゲーション ウィンドウで、[ **設定] > [全般>高度な機能>エンドポイント攻撃通知] に** 移動します。
 
 2. [**適用**] をクリックします。
 
@@ -62,9 +62,9 @@ Defender for Endpoint のお客様は、Microsoft 365 Defender ポータルか�
 
    :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Microsoft 脅威エキスパートアプリケーションの確認メッセージ" lightbox="images/mte-applicationconfirmation.png":::
 
-承諾されると、ウェルカム メールが届き、[ **適用** ] ボタンが "オン" になっているトグルに変更されて表示されます。 ターゲット攻撃通知サービスから離れたい場合は、トグルを "オフ" にスライドし、ページの下部にある [ **保存] 環境設定** をクリックします。
+承諾されると、ウェルカム メールが届き、[ **適用** ] ボタンが "オン" になっているトグルに変更されて表示されます。 エンドポイント攻撃通知サービスから自分を離れたい場合は、トグルを "オフ" にスライドさせて、ページの下部にある [ **保存] を** クリックします。
 
-## <a name="where-youll-see-the-targeted-attack-notifications-from-microsoft-threat-experts"></a>Microsoft 脅威エキスパートからの標的型攻撃通知が表示される場所
+## <a name="where-youll-see-the-endpoint-attack-notifications-from-microsoft-threat-experts"></a>Microsoft 脅威エキスパートからのエンドポイント攻撃通知が表示される場所
 
 Microsoft 脅威エキスパートから、以下の媒体を通じて、標的型攻撃通知を受信できます。
 
@@ -74,15 +74,15 @@ Microsoft 脅威エキスパートから、以下の媒体を通じて、標的�
 - 高度なハンティングの [DeviceAlertEvents](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-devicealertevents-table) テーブル
 - ユーザーのメール(構成することにした場合)
 
-メールにて標的型攻撃通知を受信するには、メール通知ルールを作成します。
+電子メールでエンドポイント攻撃通知を受信するには、電子メール通知ルールを作成します。
 
 ### <a name="create-an-email-notification-rule"></a>電子メール通知ルールを作成する
 
 通知の受信者に電子メール通知を送信するルールを作成できます。 詳細については、「電子メール通知を作成、編集、削除、またはトラブルシューティングするようにアラート通知を  [構成](configure-email-notifications.md) する」を参照してください。
 
-## <a name="view-the-targeted-attack-notification"></a>対象となる攻撃通知を表示する
+## <a name="view-the-endpoint-attack-notifications"></a>エンドポイント攻撃通知を表示する
 
-電子メール通知を受信するようにシステムを構成した後、電子メール内のMicrosoft 脅威エキスパートから標的型攻撃通知の受信を開始します。
+電子メール通知を受信するようにシステムを構成した後、電子メールのMicrosoft 脅威エキスパートからエンドポイント攻撃通知の受信を開始します。
 
 1. メール内のリンクをクリックして、 **脅威の専門家** がタグ付けされたダッシュボードの対応するアラート コンテキストに移動します。
 
@@ -137,21 +137,21 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 - 今日、高プロファイル ユーザーのデバイスから失敗したログインの異常な数に関する奇数のアラートを受け取ります。 これらのサインイン試行に関するそれ以上の証拠は見つかりません。 Defender for Endpoint では、これらの試行をどのように確認できますか? 監視対象のサインインの種類は何ですか?
 - このアラートに関するより多くのコンテキストや分析情報を提供できますか。"システム ユーティリティによる疑わしい動作が観察されました"。
 
-### <a name="possible-machine-compromise"></a>コンピューターの侵害の可能性
+### <a name="possible-device-compromise"></a>デバイスの侵害の可能性
 
 - "不明なプロセスが観察された" と表示される理由の回答をお願いします。 このメッセージまたはアラートは、多くのデバイスで頻繁に表示されます。 このメッセージまたはアラートが悪意のあるアクティビティに関連しているかどうかを明確にするために、ご意見をお願いします。
 - [月] の同じシステムでの以前の [マルウェア名] マルウェア検出と同様の動作を持つ [日付] に、次のシステムで侵害の可能性を検証するのに役立ちますか?
 
 ### <a name="threat-intelligence-details"></a>脅威インテリジェンスの詳細
 
-- 悪意のある Word 文書をユーザーに配信したフィッシングメールが検出されました。 悪意のある Word 文書によって一連の疑わしいイベントが発生し、複数の Defender for Endpoint アラートが [マルウェア名] マルウェアに対してトリガーされました。 このマルウェアに関する情報はありますか? はいの場合は、リンクを送信できますか?
+- 悪意のある Word 文書をユーザーに配信したフィッシングメールが検出されました。 悪意のある Word 文書により、一連の疑わしいイベントが発生し、[マルウェア名] マルウェアに対する複数のエンドポイント攻撃通知アラートがトリガーされました。 このマルウェアに関する情報はありますか? はいの場合は、リンクを送信できますか?
 - 最近、業界をターゲットにしている脅威に関する [ソーシャル メディア リファレンス (Twitter やブログなど)] の投稿を見ました。 この脅威アクターに対して Defender for Endpoint が提供する保護について理解するのに役立ちますか?
 
 ### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 脅威エキスパート' アラート通信
 
-- インシデント対応チームは、ターゲットを絞った攻撃通知に対処するのに役立ちますか?
-- Microsoft 脅威エキスパートからこの標的型攻撃通知を受け取った。 独自のインシデント対応チームはありません。 この時点でできることと、インシデントをどのように含めることができるか。
-- Microsoft 脅威エキスパートから標的型攻撃通知を受け取った。 インシデント対応チームに渡すことができるデータは何ですか?
+- インシデント対応チームは、Microsoft が受け取ったエンドポイント攻撃通知に対処するのに役立ちますか?
+- このエンドポイント攻撃通知をMicrosoft 脅威エキスパートから受信しました。 独自のインシデント対応チームはありません。 この時点でできることと、インシデントをどのように含めることができるか。
+- Microsoft 脅威エキスパートからエンドポイント攻撃通知を受け取った。 インシデント対応チームに渡すことができるデータは何ですか?
 
   > [!NOTE]
   > Microsoft 脅威エキスパートはマネージド サイバーセキュリティハンティング サービスであり、インシデント対応サービスではありません。 ただし、独自のインシデント対応チームと連携して、インシデント対応が必要な問題に対処できます。 独自のインシデント対応チームがなく、Microsoft のサポートが必要な場合は、CSS サイバーセキュリティ インシデント対応チーム (CIRT) に参加できます。 問い合わせに対処するためにチケットを開くことができます。

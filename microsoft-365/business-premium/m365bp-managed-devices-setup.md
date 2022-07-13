@@ -23,30 +23,30 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理されたデバイスをセットアップする方法
-ms.openlocfilehash: 0ebaf9246daa9f364702954c657a1af7e7e262f2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a5498fc89a135a90d192b2b7ddb7165527e13123
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636996"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773121"
 ---
 # <a name="set-up-managed-devices"></a>管理されたデバイスをセットアップする
 
-"管理された" デバイスは、組織によって制御および監視されているため、定期的に更新され、安全です。 デバイスを管理下に置くことは重要な目標です。 これらのデバイスを制御できるようにするために、Microsoft Business Premium に含まれている Intune と Azure Active Directory Premium を使用してデバイス マネージャーに登録されます。 
-
-ユーザーが次の 2 つの手順を完了すると、Windows 10 または 11 PC は管理対象と見なされます。
+"管理された" デバイスは、組織によって制御および監視されているため、定期的に更新され、安全です。 デバイスを管理下に置くことは重要な目標です。 これらのデバイスを制御できるようにするために、Microsoft Business Premium に含まれている Intune と Azure Active Directory でデバイス マネージャーに登録します。
 
 1. [セットアップ ウィザード](../business/set-up.md)でデバイスとデータの保護ポリシーを設定します。
 
 2. コンピューターを Microsoft 365 のユーザー名とパスワードを使用して [Azure Active Directory](../business/set-up-windows-devices.md) に接続しました。 
 
-## <a name="enroll-devices-in-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーにデバイスを登録する
+## <a name="enroll-devices-in-intune"></a>Intune でデバイスを登録する
 
-これで、エンドポイント マネージャーにデバイスを登録できます。 https://endpoint.microsoft.com に移動し、**[デバイス]** > **[デバイスの登録]** を選択します。 
+1. Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) に移動してサインインします。
 
-:::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Microsoft エンドポイント マネージャーを使用してデバイスを登録します。"::: 
+2. **[デバイス]** > **[デバイスを登録]** の順に選択します。 
 
-以下の特定のデバイス登録ガイダンスに従ってください。
+   :::image type="content" source="media/m365bp-endpoint-manager-enroll-devices.png" alt-text="Microsoft エンドポイント マネージャーを使用してデバイスを登録します。"::: 
+
+3. 以下の特定のデバイス登録ガイダンスに従ってください。
 
 ### <a name="for-windows-enrollment"></a>Windows 登録の場合:
 
@@ -76,5 +76,5 @@ ms.locfileid: "66636996"
 
 ## <a name="next-objective"></a>次の目標
 
-次のガイダンスを使用して、[デバイスをオンボードします](m365bp-onboard-devices-mdb.md)。
+次のガイダンスを使用して、[デバイスを Defender for Business 機能にオンボーディング](m365bp-onboard-devices-mdb.md)します。
 

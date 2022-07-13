@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で送信スパム ポリシーを表示、作成、変更、削除する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 690d4def4081812653cb533765f6c61cca7d1e90
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 3c3c6fd32d03e5df84d35d399d963c28c3d745a6
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115831"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772086"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>EOP の送信スパム フィルターを構成する
 
@@ -35,15 +35,15 @@ ms.locfileid: "66115831"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含むMicrosoft 365組織では、Exchange Online メールボックスがない場合、EOP を介して送信される送信電子メール メッセージは、スパムと通常とは異なる送信アクティビティが自動的にチェックされます。
+Exchange Online またはスタンドアロン Exchange Online Protection (EOP) のメールボックスを持つ Microsoft 365 組織では、Exchange Online メールボックスがない場合、EOP 経由で送信される送信電子メール メッセージは、スパムや通常とは異なる送信アクティビティが自動的にチェックされます。
 
-組織内のユーザーからの送信スパムは、通常、侵害されたアカウントを示します。 不審な送信メッセージは (スパム信頼レベルまたは SCL に関係なく) スパムとしてマークされ、[高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md)を介してルーティングされ、サービスの評判を保護するのに役立ちます (つまり、送信元電子メール サーバー Microsoft 365 IP ブロック リストから外してください)。 管理者には、疑わしい送信電子メール アクティビティが自動的に通知され、 [アラート ポリシー](../../compliance/alert-policies.md)を介してブロックされたユーザーが表示されます。
+組織内のユーザーからの送信スパムは、通常、侵害されたアカウントを示します。 不審な送信メッセージは (スパム信頼レベルまたは SCL に関係なく) スパムとしてマークされ、 [高リスク配信プール](high-risk-delivery-pool-for-outbound-messages.md) を介してルーティングされ、サービスの評判を保護するのに役立ちます (つまり、Microsoft 365 ソース電子メール サーバーを IP ブロック リストから外します)。 管理者には、疑わしい送信電子メール アクティビティが自動的に通知され、 [アラート ポリシー](../../compliance/alert-policies.md)を介してブロックされたユーザーが表示されます。
 
 EOP では、組織のスパムに対する全体的な防御の一環として、送信スパム ポリシーが使用されます。 詳細については、「[スパム対策保護](anti-spam-protection.md)」を参照してください。
 
 管理者は、既定の送信スパム ポリシーを表示、編集、構成 (ただし削除) することはできません。 粒度を高めるために、組織内の特定のユーザー、グループ、またはドメインに適用されるカスタム送信スパム ポリシーを作成することもできます。 カスタム ポリシーは既定のポリシーより常に優先されますが、カスタム ポリシーの優先度 (実行順序) を変更できます。
 
-送信スパム ポリシーは、Microsoft 365 Microsoft 365 Defender ポータルまたは PowerShell で構成できます (Exchange Online のメールボックスを持つMicrosoft 365組織の PowerShell Exchange Online、スタンドアロンの EOP PowerShell forExchange Online メールボックスのない組織)。
+送信スパム ポリシーは、Microsoft 365 Microsoft 365 Defender ポータルまたは PowerShell (Exchange Onlineにメールボックスを含む Microsoft 365 組織の PowerShell Exchange Online、Exchange Onlineのない組織向けのスタンドアロン EOP PowerShell で構成できます。メールボックス)。
 
 EOP の送信スパム ポリシーの基本的な要素は次のとおりです。
 
@@ -85,7 +85,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
 - 送信スパム ポリシーの推奨設定については、「 [EOP 送信スパム フィルター ポリシーの設定](recommended-settings-for-eop-and-office365.md#eop-outbound-spam-policy-settings)」を参照してください。
 
-- **電子メール送信の制限を超えた** という既定の [アラート ポリシー](../../compliance/alert-policies.md)、**疑わしいメール送信パターンが検出されました**。また、送信スパムによる通常とは異なる送信電子メール アクティビティとブロックされたユーザーについて **、既に TenantAdmins** (**グローバル管理者**) グループのメンバーに電子メール通知を **送信することを制限** されています。 詳細については、「 [制限付きユーザーのアラート設定を確認する」を参照してください](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 送信スパム ポリシーの通知オプションの代わりに、これらのアラート ポリシーを使用することをお勧めします。
+- **送信制限を超えたEmail** という名前の既定の [アラート ポリシー](../../compliance/alert-policies.md)、**検出された不審な電子メール送信パターン**、および **ユーザーが**、送信スパムによる異常な送信電子メール アクティビティとブロックされたユーザーに関する電子メール通知を **TenantAdmins** (**グローバル管理者**) グループのメンバーに既に送信することを制限しました。 詳細については、「 [制限付きユーザーのアラート設定を確認する」を参照してください](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users)。 送信スパム ポリシーの通知オプションの代わりに、これらのアラート ポリシーを使用することをお勧めします。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-outbound-spam-policies"></a>Microsoft 365 Defender ポータルを使用して送信スパム ポリシーを作成する
 
@@ -117,12 +117,12 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
    - **これらのユーザー、グループ、ドメインを除外する**: ポリシーが適用される内部送信者の例外 (受信者の例外) を追加するには、このオプションを選択し、例外を構成します。 設定と動作は、条件とまったく同じです。
 
    > [!IMPORTANT]
-   > 複数の異なる条件または例外は加算されません。包括的です。 ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します。
+   > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
    >
-   > - 受信者は次のとおりです:romain@contoso.com
-   > - 受信者は次のメンバーです。
+   > - 受信者は次のとおりです: romain@contoso.com
+   > - 受信者が次のメンバーの場合: Executive
    >
-   > ポリシーは、エグゼクティブ グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   > ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
    >
    > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
@@ -142,14 +142,14 @@ Microsoft 365 Defender ポータルでカスタム送信スパム ポリシー�
 
      すべてのアクションについて、ユーザーで指定された送信者は **、電子メール アラート ポリシーの送信を制限** されています (このページの後半で **送信スパムの設定が原因で送信者がブロックされている場合は、これらのユーザーとグループに** 冗長通知を行うようになりました) は、電子メール通知を受け取ります。
 
-     - **ユーザーのメール送信を次の日まで制限** します。これは既定値です。 電子メール通知が送信され、ユーザーは UTC 時刻に基づいて翌日までメッセージを送信できなくなります。 管理者がこのブロックをオーバーライドする方法はありません。
+     - **ユーザーのメール送信を次の日まで制限** します。これは既定値です。 Email通知が送信され、ユーザーは UTC 時刻に基づいて翌日までメッセージを送信できなくなります。 管理者がこのブロックをオーバーライドする方法はありません。
        - **ユーザーが電子メールの送信を制限** されたという名前のアラート ポリシーは、管理者に通知します (電子メールとインシデント **&アラート** \> **の表示** ページ)。
        - ポリシーで **送信スパムの送信が原因で送信者がブロックされている場合は、[特定のユーザーに通知** ] で指定されたすべての受信者にも通知されます。
        - ユーザーは、UTC 時刻に基づいて、翌日までそれ以上メッセージを送信できません。 管理者がこのブロックをオーバーライドする方法はありません。
-     - **ユーザーのメール送信を制限する**: 電子メール通知が送信され、ユーザーがMicrosoft 365 Defender ポータルで **制限付きユーザー**<https://security.microsoft.com/restrictedusers>に追加され、管理者によって **制限付きユーザー** から削除されるまで、ユーザーは電子メールを送信できません。管理者がリストからユーザーを削除した後、その日のユーザーは再び制限されません。 手順については、「 [スパム メールの送信後に制限付きユーザー ポータルからユーザーを削除する」を](removing-user-from-restricted-users-portal-after-spam.md)参照してください。
-     - **アクションなし、アラートのみ**: 電子メール通知が送信されます。
+     - **ユーザーのメール送信を制限する**:Email通知が送信され、ユーザーがMicrosoft 365 Defender ポータルで **制限付きユーザー**<https://security.microsoft.com/restrictedusers>に追加され、管理者によって **制限付きユーザー** から削除されるまで、ユーザーはメールを送信できません。管理者がリストからユーザーを削除した後、その日のユーザーは再び制限されません。 手順については、「 [スパム メールの送信後に制限付きユーザー ポータルからユーザーを削除する」を](removing-user-from-restricted-users-portal-after-spam.md)参照してください。
+     - **アクションなし、アラートのみ**: Email通知が送信されます。
 
-   - **転送ルール**: このセクションの設定を使用して、メールボックスを外部の送信者に **Exchange Online** して自動メール転送を制御します。 詳細については、「[Microsoft 365での自動外部メール転送を制御する](external-email-forwarding.md)」を参照してください。
+   - **転送ルール**: このセクションの設定を使用して、メールボックスを外部の送信者に **Exchange Online** して自動メール転送を制御します。 詳細については、「 [Microsoft 365 での自動外部メール転送の制御」を](external-email-forwarding.md)参照してください。
 
      > [!NOTE]
      > 自動転送が無効になっている場合、外部の送信者が転送先のメールボックスに電子メールを送信した場合、受信者は配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) を受け取ります。 メッセージが内部送信者によって送信 **され、** 転送方法が [メールボックス転送](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) ( _SMTP 転送_ とも呼ばれます) である場合、内部送信者は NDR を取得します。 受信トレイルールが原因で転送が発生した場合、内部送信者は NDR を取得しません。
@@ -305,7 +305,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 この例では、Contoso Executives という名前の新しい送信スパム フィルター ポリシーを次の設定で作成します。
 
-- 受信者レートの制限は、既定値より小さい値に制限されます。 詳細については、「[Microsoft 365 オプション間での制限の送信](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)」を参照してください。
+- 受信者レートの制限は、既定値より小さい値に制限されます。 詳細については、「 [Microsoft 365 オプション間での送信制限」を](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)参照してください。
 
 - いずれかの制限に達すると、ユーザーはメッセージを送信できなくなります。
 

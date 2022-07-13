@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4abfee62caea6e11b525f558bb4e6e8408655c17
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: f182b27c4d50ea16a289ac05adceb22c7fc9fd8d
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756829"
+ms.locfileid: "66770957"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -46,11 +46,11 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 > [!NOTE]
 > PowerShell 用の Office 365 Advanced Threat Protection 推奨構成アナライザー (ORCA) モジュールは、(管理者) これらの設定の現在の値を見つけるのに役立ちます。 具体的には、 **Get-ORCAReport** コマンドレットは、スパム対策、フィッシング詐欺対策、およびその他のメッセージの検疫設定の評価を生成します。 ORCA モジュールは 、次の場所で <https://www.powershellgallery.com/packages/ORCA/>ダウンロードできます。
 >
-> Microsoft 365 組織では、EOP からのスパム フィルターの判定で不要な競合 (正と負の両方) を防ぐために、Outlook の迷惑メール フィルターを **[自動フィルター** なし] に設定しておくことをお勧めします。 詳細については、次の資料を参照してください。
+> Microsoft 365 組織では、EOP からのスパム フィルターの判定で不要な競合 (正と負の両方) を防ぐために、Outlook の迷惑メール Email フィルターを **自動フィルター処理なし** に設定しておくことをお勧めします。 詳細については、次の資料を参照してください。
 >
 > - [Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)
 > - [Outlook の迷惑メール設定について](configure-junk-email-settings-on-exo-mailboxes.md#about-junk-email-settings-in-outlook)
-> - [迷惑メール フィルターで保護レベルを変更する](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+> - [迷惑メール Email フィルターの保護レベルを変更する](https://support.microsoft.com/en-us/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 > - [EOP で安全な差出人のリストを作成する](create-safe-sender-lists-in-office-365.md)
 > - [EOP で受信拒否送信者の一覧を作成する](create-block-sender-lists-in-office-365.md)
 
@@ -73,11 +73,11 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**これらの国から** <p> _EnableRegionBlockList_ <p> _RegionBlockList_|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|**オフ** <p> `$false` <p> 空白|この設定に関する具体的な推奨事項はありません。 ビジネス ニーズに基づいて、特定の国からのメッセージをブロックできます。|
 |**テスト モード** (_TestModeAction_)|**なし**|**なし**|**なし**|この設定は ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
 |**アクション**||||**[検疫メッセージ**] を選択すると、検疫 **ポリシーの選択** ボックスを使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが許可する操作を定義します。 <p> Standard および Strict の事前設定済みセキュリティ ポリシーでは、 [次](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)の表に示すように、既定の検疫ポリシー (AdminOnlyAccessPolicy または DefaultFullAccessPolicy と検疫通知なし) が使用されます。 <p> 新しいスパム対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、特定の判定によって検疫されたメッセージの履歴機能を定義することを意味します (高 **信頼フィッシング** の検疫通知のない AdminOnlyAccessPolicy。DefaultFullAccessPolicy(それ以外のすべての検疫通知なし)。 <p> 管理者は、既定またはカスタムのスパム対策ポリシーで、ユーザーに対してより制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
-|**スパム** 検出アクション <p> _SpamAction_|**迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
-|**高信頼スパム** 検出アクション <p> _HighConfidenceSpamAction_|**迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
-|**フィッシング検出** アクション <p> _PhishSpamAction_|**迷惑メール フォルダーにメッセージを移動する**<sup>\*</sup> <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーと PowerShell で作成した新しいスパム対策ポリシーの [ **迷惑メールにメッセージを移動] フォルダー** です。 既定値は、Microsoft 365 Defender ポータルで作成した新しいスパム対策ポリシーの **検疫メッセージ** です。|
+|**スパム** 検出アクション <p> _SpamAction_|**迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
+|**高信頼スパム** 検出アクション <p> _HighConfidenceSpamAction_|**迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
+|**フィッシング検出** アクション <p> _PhishSpamAction_|**迷惑メール Email フォルダーにメッセージを移動する**<sup>\*</sup> <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`|<sup>\*</sup>既定値は、既定のスパム対策ポリシーと PowerShell で作成した新しいスパム対策ポリシーの迷惑メール Email **フォルダーにメッセージを移動** することです。 既定値は、Microsoft 365 Defender ポータルで作成した新しいスパム対策ポリシーの **検疫メッセージ** です。|
 |**高信頼フィッシング** 検出アクション <p> _HighConfidencePhishAction_|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`|**検疫メッセージ** <p> `Quarantine`||
-|**一括** 検出アクション <p> _BulkSpamAction_|**迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
+|**一括** 検出アクション <p> _BulkSpamAction_|**迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**検疫メッセージ** <p> `Quarantine`||
 |**この数日間、検疫でスパムを保持する** <p> _QuarantineRetentionPeriod_|15 日間<sup>\*</sup>|30 日間|30 日間|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーと PowerShell で作成した新しいスパム対策ポリシーで 15 日間です。 Microsoft 365Defender ポータルで作成する新しいスパム対策ポリシーの規定値は30日です。 <p> この値は、フィッシング対策ポリシーによって検疫されたメッセージにも影響します。 詳細については、「 [EOP で検疫された電子メール メッセージ](quarantine-email-messages.md)」を参照してください。|
 |**スパムの安全性に関するヒントを有効にする** <p> _InlineSafetyTipsEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |フィッシング メッセージに対してゼロ時間の自動消去 (ZAP) を有効にする <p> _PhishZapEnabled_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
@@ -165,7 +165,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**フィッシングしきい値&保護**|||||
 |**スプーフィング インテリジェンスを有効にする** <p> _EnableSpoofIntelligence_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |**アクション**|||||
-|**メッセージがスプーフィングとして検出された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンス分析情報に示すように自動的にブロックされたス [プーフィング](learn-about-spoof-intelligence.md) された送信者、または [テナント許可/ブロック リスト](tenant-allow-block-list.md)で手動でブロックされた送信者に適用されます。 <p> **[検疫] を** 選択した場合、[**検疫ポリシーの適用**] ボックスを使用して、スプーフィングとして検疫されたメッセージに対してユーザーが許可する操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、スプーフィングとして検疫されたメッセージの履歴機能を定義することを意味します (検疫通知のない DefaultFullAccessPolicy)。 <p> Standard および Strict の事前設定済みセキュリティ ポリシーでは、 [次](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)の表に示すように、既定の検疫ポリシー (検疫通知のない DefaultFullAccessPolicy) が使用されます。 <p> 管理者は、既定またはカスタムフィッシング対策ポリシーで、ユーザーに対してより制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
+|**メッセージがスプーフィングとして検出された場合** <p> _AuthenticationFailAction_|**受信者の迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**受信者の迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`|この設定は、スプーフィング インテリジェンス分析情報に示すように自動的にブロックされたス [プーフィング](learn-about-spoof-intelligence.md) された送信者、または [テナント許可/ブロック リスト](tenant-allow-block-list.md)で手動でブロックされた送信者に適用されます。 <p> **[検疫] を** 選択した場合、[**検疫ポリシーの適用**] ボックスを使用して、スプーフィングとして検疫されたメッセージに対してユーザーが許可する操作を定義する検疫ポリシーを選択できます。 新しいフィッシング対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、スプーフィングとして検疫されたメッセージの履歴機能を定義することを意味します (検疫通知のない DefaultFullAccessPolicy)。 <p> Standard および Strict の事前設定済みセキュリティ ポリシーでは、 [次](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)の表に示すように、既定の検疫ポリシー (検疫通知のない DefaultFullAccessPolicy) が使用されます。 <p> 管理者は、既定またはカスタムフィッシング対策ポリシーで、ユーザーに対してより制限の厳しい機能または制限の少ない機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**最初の連絡先の安全に関するヒントを表示する** <p> _EnableFirstContactSafetyTips_|未選択 <p> `$false`|未選択 <p> `$false`|未選択 <p> `$false`|詳細については、「[最初の連絡先安全性のヒント](set-up-anti-phishing-policies.md#first-contact-safety-tip)」を参照してください。|
 |**スプーフィングの認証されていない送信者の表示 (?)** <p> _EnableUnauthenticatedSender_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|Outlook の送信者の写真に疑問符 (?) を追加して、未確認のスプーフィング送信者を表示します。 詳細については、「 [認証されていない送信者インジケーター](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators)」を参照してください。|
 |**"via" タグを表示する** <p> _EnableViaTag_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|DKIM 署名または **MAIL FROM** アドレスのドメインと異なる場合は、from アドレスに via タグ (fabrikam.com 経由で chris@contoso.com) を追加します。 <p> 詳細については、「 [認証されていない送信者インジケーター](set-up-anti-phishing-policies.md#unauthenticated-sender-indicators)」を参照してください。|
@@ -213,7 +213,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |**アクション**||||**[メッセージの検疫**] を選択した場合は、検疫 **ポリシーの選択** ボックスを使用できます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが許可する操作を定義します。 <p> Standard および Strict の事前設定済みセキュリティ ポリシーでは、 [次](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)の表に示すように、既定の検疫ポリシー (検疫通知のない DefaultFullAccessPolicy) が使用されます。 <p> 新しいフィッシング対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、その判定によって検疫されたメッセージの履歴機能を定義することを意味します (すべての偽装検出の種類の DefaultFullAccessPolicy)。 <p> 管理者は、既定のフィッシング対策ポリシーまたはカスタムフィッシング対策ポリシーで、ユーザーに対して制限の少ない、またはより制限の厳しい機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**偽装されたユーザーとしてメッセージが検出された場合** <p> _TargetedUserProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
 |**偽装されたドメインとしてメッセージが検出された場合** <p> _TargetedDomainProtectionAction_|**アクションを適用しない** <p> `NoAction`|**メッセージを検疫する** <p> `Quarantine`|**メッセージを検疫する** <p> `Quarantine`||
-|**メールボックス インテリジェンスが検出され、偽装されたユーザーの場合** <p> _MailboxIntelligenceProtectionAction_|**アクションを適用しない** <p> `NoAction`|**受信者の迷惑メール フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`||
+|**メールボックス インテリジェンスが検出され、偽装されたユーザーの場合** <p> _MailboxIntelligenceProtectionAction_|**アクションを適用しない** <p> `NoAction`|**受信者の迷惑メール Email フォルダーにメッセージを移動する** <p> `MoveToJmf`|**メッセージを検疫する** <p> `Quarantine`||
 |**ユーザー偽装の安全性に関するヒントを表示する** <p> _EnableSimilarUsersSafetyTips_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
 |**ドメイン偽装の安全性に関するヒントを表示する** <p> _EnableSimilarDomainsSafetyTips_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
 |**ユーザー権限借用の異常な文字の安全性のヒントを表示する** <p> _EnableUnusualCharactersSafetyTips_|オフ <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`||
@@ -267,7 +267,7 @@ PowerShell では、これらの設定に [New-SafeAttachmentPolicy](/powershell
 
 Defender for Office 365のセーフ リンクには、アクティブなセーフ リンク ポリシーに含まれるすべてのユーザーに適用されるグローバル設定と、各セーフ リンク ポリシーに固有の設定が含まれます。 詳細については、「[Defender for Office 365のセーフ リンク](safe-links.md)」を参照してください。
 
-既定のセーフ リンク ポリシーはありませんが、 **組み込みの保護** プリセット セキュリティ ポリシーは、すべての受信者 (カスタムセーフ リンク ポリシーで定義されていないユーザー) に安全なリンク保護を提供します。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
+既定のセーフ リンク ポリシーはありませんが、 **組み込みの保護** プリセット セキュリティ ポリシーは、すべての受信者 (カスタムのセーフ リンク ポリシーまたは Standard または Strict プリセットのセキュリティ ポリシーで定義されていないユーザー) に安全なリンク保護を提供します。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 
 #### <a name="global-settings-for-safe-links"></a>セーフ リンクのグローバル設定
 
@@ -307,9 +307,8 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 |**電子メールで次の URL を書き換えないでください** <p> _DoNotRewriteUrls_|未選択 <p> 空白|未選択 <p> 空白|未選択 <p> 空白|未選択 <p> 空白|この設定に関する具体的な推奨事項はありません。 <p> **注**: [次の URL を書き換えない] 一覧の目的は、指定した URL のセーフ リンクの折り返しをスキップすることです。 この一覧を使用する代わりに、 [テナント許可/ブロック リストに許可 URL エントリを作成](allow-block-urls.md#create-allow-url-entries)できるようになりました。|
 |**Microsoft Teams の潜在的に悪意のある URL に対するアクション**||||||
 |**オン: 安全なリンクは、ユーザーが Microsoft Teams でリンクをクリックすると、既知の悪意のあるリンクの一覧をチェックします** <p> _EnableSafeLinksForTeams_|未選択 <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
-|**Office 365 アプリで安全なリンクを使用する** <p> _EnableSafeLinksForO365Clients_|オン <p> `$true`|オン <p> `$true`|サポートされているOffice 365デスクトップおよびモバイル (iOS および Android) アプリで安全なリンクを使用します。 詳細については、「[Office 365 アプリ向けの安全なリンク設定](safe-links.md#safe-links-settings-for-office-365-apps)」を参照してください。|
-|**ユーザーがOffice 365 アプリで保護されたリンクをクリックしたときに追跡しない** <p> _TrackClicks_|オン <p> `$false`|オフ <p> `$true`|この設定をオフにする (_TrackClicks_ を設定) `$true`すると、サポートされているOffice 365 アプリでユーザーのクリックが追跡されます。|
-|**ユーザーがOffice 365 アプリの元の URL をクリックできないようにする** <p> _AllowClickThrough_|オン <p> `$false`|オン <p> `$false`|この設定をオンにする (_AllowClickThrough_ を設定) `$false`すると、サポートされているOffice 365 アプリの元の URL へのクリックが防止されます。|
+|**Microsoft Office アプリの潜在的に悪意のある URL に対するアクション**||||||
+|**オン: ユーザーが Microsoft Office アプリでリンクをクリックすると、安全なリンクによって既知の悪意のあるリンクの一覧がチェックされます** <p> _EnableSafeLinksForO365Clients_|未選択 <p> `$false`|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|サポートされているOffice 365デスクトップおよびモバイル (iOS および Android) アプリで安全なリンクを使用します。 詳細については、「 [Office アプリのセーフ リンク設定」を](safe-links.md#safe-links-settings-for-office-apps)参照してください。|
 |**[保護の設定] をクリックする**||||||
 |**ユーザーのクリックを追跡する** <p> _TrackUserClicks_|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`|選択済み <p> `$true`||
 |**ユーザーが元の URL までクリックできるようにする** <p> _AllowClickThrough_|選択済み <p> `$true`|選択済み <p> `$true`|未選択 <p> `$false`|未選択 <p> `$false`|この設定をオフにする ( _AllowClickThrough_ を設定する `$false`) と、元の URL へのクリックが防止されます。|

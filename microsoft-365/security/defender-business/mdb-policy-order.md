@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 8490793794d7cbd1ad7b3e660e2394edf870e2a7
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 361a1a08569f24c83498fddeb0e4c2b9bd8c5d02
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089630"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770879"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでポリシーの順序を理解する
 
-## <a name="policy-order-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでのポリシーの順序
+## <a name="policy-order-in-defender-for-business"></a>Defender for Business のポリシー順序
 
-Microsoft Defender for Businessには、従業員が使用するデバイスが確実に保護されるようにするための定義済みのポリシーが含まれています。 セキュリティ チームは、新しいポリシーを追加することもできます。 たとえば、一部のデバイスに特定の設定を適用し、他のデバイスに異なる設定を適用するとします。 これを行うには、次世代の保護ポリシーやファイアウォール ポリシーなどのポリシーを追加します。
+Defender for Business には、従業員が使用するデバイスが確実に保護されるように、定義済みのポリシーが含まれています。 セキュリティ チームは、新しいポリシーを追加することもできます。 たとえば、一部のデバイスに特定の設定を適用し、他のデバイスに異なる設定を適用するとします。 これを行うには、次世代の保護ポリシーやファイアウォール ポリシーなどのポリシーを追加します。
 
 ポリシーが追加されると、優先度の順序が割り当てられていることがわかります。 定義するポリシーの優先度の順序は編集できますが、既定のポリシーの優先度の順序は変更できません。 たとえば、Windows クライアント デバイスには、3 つの次世代保護ポリシーがあるとします。 この場合、既定のポリシーの優先度は 3 です。 1 と 2 の番号が付いたポリシーの順序を変更できますが、既定のポリシーはリスト内の 3 番目の番号のままになります。 
 
@@ -42,8 +42,8 @@ Microsoft Defender for Businessには、従業員が使用するデバイスが�
 
 ## <a name="next-steps"></a>次の手順
 
-- [Defender for Business を使用した概要](mdb-get-started.md)
+- [Defender for Business の使用を開始する](mdb-get-started.md)
 - [デバイスの管理](mdb-manage-devices.md)
-- [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-- [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
+- [Defender for Business でインシデントを表示および管理する](mdb-view-manage-incidents.md)
+- [Defender for Business の脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

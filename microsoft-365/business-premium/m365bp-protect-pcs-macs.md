@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium を使用して、管理されていないデバイスまたは持ち込みデバイス (BYOD) をサイバー攻撃から保護します。 Windows PC と Mac のサイバーセキュリティを設定する方法。
-ms.openlocfilehash: 5a1239f84e801c6327eb18c1049e410cc0859bdb
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631774"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773083"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium でアンマネージド Windows PC と Mac を保護する
 
@@ -66,9 +66,9 @@ Windows Update では、自動的に Windows セキュリティの更新プロ�
 
 ミッションが完了しました。では、[フィッシングやその他の攻撃に対するメール システムをセキュリティで保護する方法](m365bp-protect-email-overview.md)について説明します。
 
-## <a name="macos"></a>[macOS](#tab/macOS)
+## <a name="mac"></a>[Mac](#tab/Mac)
 
-## <a name="macos"></a>macOS
+## <a name="mac"></a>Mac
 
 ### <a name="use-filevault-to-encrypt-your-mac-disk"></a>FileVault を使用して、Mac のディスクを暗号化する
 

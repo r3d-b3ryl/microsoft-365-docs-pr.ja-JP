@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b6ffc1325eb71bf366761545c8e21bfe5da3b4fa
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 62f21a13578850b1d66f7ff26b0b360adecb7875
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090104"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66770923"
 ---
 # <a name="set-up-email-notifications"></a>電子メール通知を設定する
 
@@ -42,11 +42,11 @@ ms.locfileid: "66090104"
 | アラート&脆弱性  | デバイスで脅威が検出されたためにアラートが生成された場合、または新しい悪用や脆弱性イベントが検出された場合、受信者は電子メールを受信します。 |
 
 > [!TIP]
-> **セキュリティ チームが新しいアラートや脆弱性について知ることができる唯一の方法は、電子メール通知ではありません**。
+> **Email通知は、セキュリティ チームが新しいアラートや脆弱性について知る唯一の方法ではありません**。
 > 
-> 電子メール通知は、セキュリティ チームにリアルタイムで情報を提供するのに役立つ便利な方法です。 しかし、他にも存在します。 たとえば、セキュリティ チームが Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) にサインインするたびに、新しい脅威、アラート、および脆弱性を強調するカードが表示されます。 Defender for Business は、セキュリティ チームがサインインするとすぐに気になる重要な情報を強調表示するように設計されています。
+> Email通知は、セキュリティ チームにリアルタイムで情報を提供するのに役立つ便利な方法です。 しかし、他にも存在します。 たとえば、セキュリティ チームが Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) にサインインするたびに、新しい脅威、アラート、および脆弱性を強調するカードが表示されます。 Defender for Business は、セキュリティ チームがサインインするとすぐに気になる重要な情報を強調表示するように設計されています。
 > 
-> セキュリティ チームは、ナビゲーション ウィンドウで **[インシデント** ] を選択して情報を表示することもできます。 詳細については、「[Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)」を参照してください。
+> セキュリティ チームは、ナビゲーション ウィンドウで **[インシデント** ] を選択して情報を表示することもできます。 詳細については、「 [Defender for Business でのインシデントの表示と管理」を](mdb-view-manage-incidents.md)参照してください。
 
 ## <a name="view-and-edit-email-notifications"></a>電子メール通知を表示および編集する
 
@@ -54,7 +54,7 @@ ms.locfileid: "66090104"
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. ナビゲーション ウィンドウで[**設定**]、[エンドポイント] の順 **に** 選択します。 次に、[ **全般**] で [ **電子メール通知**] を選択します。 
+2. ナビゲーション ウィンドウで [ **設定]** を選択し、[ **エンドポイント**] を選択します。 次に、[**全般**] で **[Email通知**] を選択します。 
 
 3. **[アラート**] タブと [脆弱性] タブの情報 **を** 確認します。
 
@@ -71,4 +71,4 @@ ms.locfileid: "66090104"
 
 次の手順に進みます。
 
-- [手順 4: デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)
+- [手順 4: Defender for Business にデバイスをオンボードする](mdb-onboard-devices.md)

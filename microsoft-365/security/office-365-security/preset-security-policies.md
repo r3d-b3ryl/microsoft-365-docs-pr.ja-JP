@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365の保護機能全体に Standard および Strict ポリシー設定を適用する方法を学習できます
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ffce562fbcbdf8ca9d6c19265166400163be7acf
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607655"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772064"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー
 
@@ -71,9 +71,9 @@ ms.locfileid: "66607655"
   > - 受信者は次のとおりです: romain@contoso.com
   > - 受信者が次のメンバーの場合: Executive
   >
-  > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+  > ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
   >
-  > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+  > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
 - **組み込みの保護** (Defender for Office 365のみ): 安全なリンクと安全な添付ファイルの保護のみを有効にするプロファイル。 このプロファイルは、安全なリンクと安全な添付ファイルの既定のポリシーを効果的に提供します。既定のポリシーは一度もありませんでした。
 
@@ -144,11 +144,11 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
   詳細については、「[Exchange Online のアクセス許可](/exchange/permissions-exo/permissions-exo)」を参照してください。
 
-  **注**: Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可 _と_ アクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  **注**: Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 の他の機能に必要なアクセス許可 _と_ アクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
 ### <a name="use-the-microsoft-365-defender-portal-to-assign-standard-and-strict-preset-security-policies-to-users"></a>Microsoft 365 Defender ポータルを使用して、Standard および Strict の事前設定済みセキュリティ ポリシーをユーザーに割り当てる
 
-1. Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セクション **の** <https://security.microsoft.com>[電子メール & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **プリセット セキュリティ ポリシー**] に移動します。 **[プリセット セキュリティ ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/presetSecurityPolicies>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**テンプレート** ポリシー] セクション **の [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **の事前設定されたセキュリティ ポリシー**] に移動します。 **[プリセット セキュリティ ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. **[事前設定されたセキュリティ ポリシー**] ページの [**Standard Protection**] セクションまたは [**Strict protection**] セクションで [**管理**] をクリックします。
 
@@ -234,7 +234,7 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
 そのため、通常は **、組み込みの保護** プリセット セキュリティ ポリシーに例外を推奨しません。
 
-1. Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セクション **の** <https://security.microsoft.com>[電子メール & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **プリセット セキュリティ ポリシー**] に移動します。 **[プリセット セキュリティ ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/presetSecurityPolicies>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**テンプレート** ポリシー] セクション **の [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **の事前設定されたセキュリティ ポリシー**] に移動します。 **[プリセット セキュリティ ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/presetSecurityPolicies>.
 
 2. **[事前設定されたセキュリティ ポリシー**] ページの [**組み込みの保護**] セクションで [**除外の追加 (推奨されません)]** を選択します。
 
@@ -253,6 +253,6 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
 **Standard Protection** または **Strict Protection** セキュリティ ポリシーがユーザーに正常に割り当てられていることを確認するには、標準保護設定とは異なる標準 **保護** 設定と既定値が異なる **保護** 設定を使用します。
 
-たとえば、スパムとして検出された電子メール (信頼度の高いスパムではない) の場合、 **メッセージが Standard 保護** ユーザーの迷惑メール フォルダーに配信され、 **Strict Protection** ユーザー用に検疫されていることを確認します。
+たとえば、スパムとして検出された電子メール (信頼度の高いスパムではない) の場合、メッセージが **Standard 保護** ユーザーの迷惑メール Email フォルダーに配信され、**Strict Protection** ユーザー用に検疫されていることを確認します。
 
-または、 [一括メール](bulk-complaint-level-values.md)の場合は、BCL 値 6 以上が **標準保護** ユーザーの迷惑メール フォルダーにメッセージを配信し、BCL 値 4 以上が **Strict Protection** ユーザーのメッセージを検疫することを確認します。
+または、[一括メール](bulk-complaint-level-values.md)の場合は、BCL 値 6 以上が **Standard 保護** ユーザーの迷惑メール Email フォルダーにメッセージを配信し、BCL 値 4 以上が **Strict Protection** ユーザーのメッセージを検疫することを確認します。

@@ -15,16 +15,16 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 5b321b15e608c96a18e756c2f6634b5fb4f69e6f
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: a21c3b1779c3a8ffa32ca4bbd777b377536ec870
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089464"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772623"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでロールとアクセス許可を割り当てる
 
-Microsoft Defender for Businessの構成、レポートの表示、検出された脅威に対する応答アクションの実行など、Microsoft 365 Defender ポータルでタスクを実行するには、セキュリティ チームに適切なアクセス許可を割り当てる必要があります。 アクセス許可は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) または[Azure Active Directory](/azure/active-directory/roles/manage-roles-portal)で割り当てられているロールを通じて付与されます。 
+Defender for Business の構成、レポートの表示、検出された脅威に対する応答アクションの実行など、Microsoft 365 Defender ポータルでタスクを実行するには、セキュリティ チームに適切なアクセス許可を割り当てる必要があります。 アクセス許可は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) または [Azure Active Directory](/azure/active-directory/roles/manage-roles-portal) で割り当てられているロールを通じて付与されます。 
 
 ## <a name="what-to-do"></a>操作
 
@@ -39,9 +39,9 @@ Microsoft Defender for Businessの構成、レポートの表示、検出され�
 
 | 権限レベル | 説明 |
 |:---|:---|
-| **グローバル管理者** (グローバル管理者とも呼ばれます) <br/><br/> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 Microsoft 365またはMicrosoft Defender for Businessに会社をサインアップしたユーザーは、既定でグローバル管理者です。 <br/><br/> グローバル管理者は、次のようなすべてのMicrosoft 365 ポータルで設定にアクセス/変更できます。 <br/>- Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) <br/>- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) |
-| **セキュリティ管理者** (セキュリティ管理者とも呼ばれます) | セキュリティ管理者は、次のタスクを実行できます。 <br/>- セキュリティ ポリシーの表示と管理 <br/>- セキュリティの脅威とアラートの表示と管理 (これらのアクティビティには、エンドポイントに対する応答アクションの実行が含まれます) <br/>- セキュリティ情報とレポートを表示する |
-| **セキュリティ閲覧者** | セキュリティ リーダーは、次のタスクを実行できます。 <br/>- セキュリティ ポリシーを表示する <br/>- セキュリティの脅威とアラートを表示する <br/>- セキュリティ情報とレポートを表示する  |
+| **グローバル管理者** (グローバル管理者とも呼ばれます) <p> *ベスト プラクティスとして、グローバル管理者の数を制限します。* | グローバル管理者は、あらゆる種類のタスクを実行できます。 Microsoft 365 または Defender for Business に会社をサインアップしたユーザーは、既定でグローバル管理者です。 <p> グローバル管理者は、次のようなすべての Microsoft 365 ポータルの設定を変更できます。 <ul><li>Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com))</li><li>Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))</li></ul> |
+| **セキュリティ管理者** (セキュリティ管理者とも呼ばれます) | セキュリティ管理者は、次のタスクを実行できます。 <ul><li>セキュリティ ポリシーの表示と管理</li><li>セキュリティの脅威とアラートの表示と管理 (これらのアクティビティには、エンドポイントに対する応答アクションの実行が含まれます)</li><li>セキュリティ情報とレポートを表示する</li></ul> |
+| **セキュリティ閲覧者** | セキュリティ リーダーは、次のタスクを実行できます。<ul><li>セキュリティ ポリシーを表示する</li><li>セキュリティの脅威とアラートを表示する</li><li>セキュリティ情報とレポートを表示する</li></ul>  |
 
 
 ## <a name="view-or-edit-role-assignments"></a>ロールの割り当てを表示または編集する
@@ -59,7 +59,7 @@ Microsoft Defender for Businessの構成、レポートの表示、検出され�
    > [!IMPORTANT]
    > Microsoft では、ユーザーにタスクを実行するために必要なもののみにアクセス権を付与することをお勧めします。 この概念は、アクセス許可に対する *最小限の特権* と呼びます。 詳細については、 [アプリケーションの最小特権アクセスのベスト プラクティスに関するページを](/azure/active-directory/develop/secure-least-privileged-access)参照してください。 
 
-4. サイド ウィンドウで、[ **Azure AD のメンバーの管理** ] リンクを選択します。 このアクションでは、ロールの割り当てを表示および管理できるAzure Active Directory (Azure AD) に移動します。
+4. サイド ウィンドウで、[ **Azure AD のメンバーの管理** ] リンクを選択します。 このアクションを実行すると、Azure Active Directory (Azure AD) に移動し、ロールの割り当てを表示および管理できます。
 
 5. ユーザーを選択してプロファイルを開き、[ **割り当てられたロール**] を選択します。
 
@@ -72,7 +72,7 @@ Microsoft Defender for Businessの構成、レポートの表示、検出され�
 
 ## <a name="next-steps"></a>次の手順
 
-次の手順に進みます。
+行きます：
 
 - [手順 3: 電子メール通知を設定する](mdb-email-notifications.md)
-- [手順 4: デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)
+- [手順 4: Defender for Business にデバイスをオンボードする](mdb-onboard-devices.md)

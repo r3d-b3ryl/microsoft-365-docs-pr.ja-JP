@@ -19,12 +19,12 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365のセーフ リンク ポリシーとグローバルセーフ リンク設定を表示、作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d006cd49392b80c826e23ef0d63f954d81249c0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487029"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771397"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 で安全なリンク ポリシーを設定する
 
@@ -39,13 +39,13 @@ ms.locfileid: "66487029"
 
 [Microsoft Defender for Office 365](defender-for-office-365.md)の安全なリンクは、メール フロー内の受信メール メッセージの URL スキャンと、電子メール メッセージやその他の場所での URL とリンクのクリック確認の時間を提供します。 詳細については、「[Microsoft Defender for Office 365のセーフ リンク](safe-links.md)」を参照してください。
 
-既定のセーフ リンク ポリシーはありませんが、 **組み込みの保護** プリセット セキュリティ ポリシーは、すべての受信者 (カスタムセーフ リンク ポリシーで定義されていないユーザー) に安全なリンク保護を提供します。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
+既定のセーフ リンク ポリシーはありませんが、 **組み込みの保護** プリセット セキュリティ ポリシーは、すべての受信者 (カスタムのセーフ リンクまたは Standard または Strict プリセットのセキュリティ ポリシーで定義されていないユーザー) に安全なリンク保護を提供します。 詳しくは、「[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md)」を参照してください。
 
 この記事の手順を使用して、特定のユーザー、グループ、またはドメインに適用されるセーフ リンク ポリシーを作成することもできます。
 
 > [!NOTE]
 >
-> セーフ リンク 保護のグローバル設定は、セーフ リンク ポリシー **の外部で** 構成します。 手順については、「[Microsoft Defender for Office 365のセーフ リンクのグローバル設定を構成](configure-global-settings-for-safe-links.md)する」を参照してください。
+> セーフ リンク ポリシー **の外部** でセーフ リンク保護のグローバル設定で、[次の URL をブロックする] の一覧を構成します。 手順については、「[Microsoft Defender for Office 365のセーフ リンクのグローバル設定を構成](configure-global-settings-for-safe-links.md)する」を参照してください。
 >
 > 管理者は、安全なリンクのさまざまな構成設定を検討する必要があります。 使用できるオプションの 1 つは、ユーザーが識別できる情報を安全なリンクに含める方法です。 この機能により、セキュリティ運用 (SecOps) チームは潜在的なユーザー侵害を調査し、修正措置を講じ、コストのかかる侵害を制限できます。
 
@@ -78,7 +78,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   > [!NOTE]
   >
-  > - Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+  > - Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   . - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **表示専用組織管理** 役割グループでは、この機能に対する読み取り専用アクセス権も付与されます。
 
 - セーフ リンク ポリシーの推奨設定については、「 [セーフ リンク ポリシーの設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)」を参照してください。
@@ -123,36 +123,69 @@ Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシ�
    > - 受信者は次のとおりです: romain@contoso.com
    > - 受信者が次のメンバーの場合: Executive
    >
-   > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   > ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
    >
-   > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+   > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
    完了したら、**[次へ]** をクリックします。
 
-5. 表示される **[保護の設定]** ページで、以下の設定を構成します。
-   - **メッセージ内の悪意のある可能性のある不明な URL のアクションを選択** します。[ **オン** ] を選択して、電子メール メッセージ内のリンクに対するセーフ リンク保護を有効にします。 この設定をオンにすると、次の設定を使用できます。
-     - **疑わしいリンクとファイルを指すリンクのリアルタイム URL スキャンを適用** する: 電子メール メッセージ内のリンクのリアルタイム スキャンを有効にするには、このオプションを選択します。 この設定をオンにすると、次の設定を使用できます。
-       - **メッセージを配信する前に URL スキャンが完了するまで待ちます:メッセージを配信する前** に、リアルタイムの URL スキャンが完了するまで待機するには、このオプションを選択します。
-     - **組織内で送信された電子メール メッセージに安全なリンクを適用** する: 内部送信者と内部受信者の間のメッセージに安全なリンク ポリシーを適用するには、このオプションを選択します。
-   - **Microsoft Teams 内の不明な URL または悪意のある可能性のある URL のアクションを選択します**。[ **オン** ] を選択して、Teams 内のリンクに対して安全なリンク保護を有効にします。 この設定を有効にするには、最大で 24 時間かかる場合があることに注意してください。
+5. URL **&表示される [保護設定]** ページで、次の設定を構成します。
+
+   - **[電子メール] セクション内の潜在的に悪意のある URL に対するアクション** :
+     - **オン: ユーザーがメール内のリンクをクリックすると、既知の悪意のあるリンクの一覧が安全なリンクでチェック** されます。このオプションを選択すると、電子メール メッセージ内のリンクに対するセーフ リンク保護が有効になります。 このオプションを選択すると、次の設定を使用できます。
+       - **組織内で送信された電子メール メッセージに安全なリンクを適用** する: 内部送信者と内部受信者の間のメッセージに安全なリンク ポリシーを適用するには、このオプションを選択します。
+       - **疑わしいリンクとファイルを指すリンクのリアルタイム URL スキャンを適用** する: 電子メール メッセージ内のリンクのリアルタイム スキャンを有効にするには、このオプションを選択します。 このオプションを選択すると、次の設定を使用できます。
+         - **メッセージを配信する前に URL スキャンが完了するまで待ちます:メッセージを配信する前** に、リアルタイムの URL スキャンが完了するまで待機するには、このオプションを選択します。
+       - **URL を書き換えないでください。SafeLinks API 経由でのみチェックを行います**。URL の折り返しを防ぐには、このオプションを選択します。 安全なリンクは、URL クリック時に API を介して排他的に呼び出されます。これは、それをサポートする Outlook クライアントによって行われます。
+
+       - **[電子メール] セクションで次の URL を書き換えないでください** 。 **[管理 ] (nn) URL を** クリックして、セーフ リンクによってブロックされる特定の URL へのアクセスを許可します。
+
+     > [!NOTE]
+     > "次の URL を書き換えない" 一覧の目的は、それらの URL のセーフ リンクの折り返しをスキップすることです。 この一覧を使用する代わりに、 [テナント許可/ブロック リストに許可 URL エントリを作成](allow-block-urls.md#create-allow-url-entries)できるようになりました。
+
+     1. 表示されるポップアップ **を書き換えない URL の管理** で、[URL の追加] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **URL を追加します**。
+     2. 表示される **[URL の追加]** ポップアップで、目的の URL または値を入力し、ボックスの下に表示されるエントリを選択して、[ **保存**] をクリックします。 必要な回数だけこの手順を繰り返します。
+
+        エントリ構文については、「 [次の URL を書き換えない」の一覧のエントリ構文に関するページを参照してください](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
+
+        エントリを削除するには、 ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) エントリの横に表示されます。
+
+        完了したら、**[保存]** をクリックします。
+
+     3. ポップアップを **書き換えないように URL の管理に** 戻り、エントリの一覧で **[完了]** をクリックするか、メンテナンスを行います。
+
+        リストからエントリを削除するには、[検索] アイコンを ![使用します。](../../media/m365-cc-sc-search-icon.png) **検索** ボックスでエントリを検索します。
+
+        1 つのエントリを選択するには、[ **URL** ] 列の値をクリックします。
+
+        複数のエントリを 1 つずつ選択するには、値の左側にある空白領域をクリックします。
+
+        すべてのエントリを 1 つで選択するには、 **URL** 列ヘッダーの左側にある空白領域をクリックします。
+
+        1 つ以上のエントリが選択されている状態で、 ![[URL の追加] アイコン。](../../media/m365-cc-sc-create-icon.png) または ![[削除] アイコン。](../../media/m365-cc-sc-delete-icon.png) アイコンが表示されます。
+
+        完了したら、[**完了**] をクリックします。
+
+   - **Microsoft Teams セクションの潜在的に悪意のある URL に対するアクション** :
+     - **オン: [安全なリンク] は、ユーザーが Microsoft Teams のリンクをクリックしたときに既知の悪意のあるリンクの一覧をチェックします**。このオプションを選択すると、Teams のリンクに対するセーフ リンク保護が有効になります。 この設定を有効にするには、最大で 24 時間かかる場合があることに注意してください。
 
      > [!NOTE]
      > 現在、Microsoft Teams のセーフ リンク保護は、Microsoft 365 GCC High または Microsoft 365 DoD では使用できません。
 
-   - **ユーザーのクリックを追跡する**: このオプションを選択したままにして、電子メール メッセージの URL を追跡ユーザーがクリックできるようにします。
-   - **ユーザーが元の URL までクリック** できるようにする: [警告ページ](safe-links.md#warning-pages-from-safe-links)でユーザーが元の URL までクリックするのをブロックするには、このオプションをオフにします。
-   - **次の URL を書き換えないでください**:セーフ リンクによってブロックされる指定された URL にアクセスできます。
+   - **Microsoft Office アプリの潜在的に悪意のある URL に対するアクション** セクション:
+     - **オン: [セーフ リンク] は、ユーザーが Microsoft Office アプリでリンクをクリックしたときに既知の悪意のあるリンクの一覧をチェックします**。このオプションを選択すると、サポートされている Office デスクトップ、モバイル、および Web アプリ内のファイル内のリンクに対するセーフ リンク保護が有効になります。
 
-     > [!NOTE]
-     > "次の URL を書き換えない" リストの目的は、指定した URL のセーフ リンク の折り返しをスキップすることです。 この一覧を使用する代わりに、 [テナント許可/ブロック リストに許可 URL エントリを作成](allow-block-urls.md#create-allow-url-entries)できるようになりました。
+   - **[保護設定] セクションをクリックします** 。
+     - **ユーザーのクリックを追跡する**: このオプションを選択したままにして、追跡ユーザーが URL をクリックできるようにします。 このオプションを選択すると、次のオプションを使用できます。
+       - **ユーザーが元の URL までクリック** できるようにする: [警告ページ](safe-links.md#warning-pages-from-safe-links)でユーザーが元の URL までクリックするのをブロックするには、このオプションをオフにします。
+       - **通知ページと警告ページに組織のブランドを表示** する: カスタマイズされたブランド化の詳細については、「 [組織の Microsoft 365 テーマをカスタマイズする](../../admin/setup/customize-your-organization-theme.md)」を参照してください。
 
-     ボックスに、目的の URL または値を入力し、[ **追加**] をクリックします。 必要な回数だけこの手順を繰り返します。
+   これらの設定の詳細については、次を参照してください。
 
-     既存のエントリを削除するには、 ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) エントリの横に表示されます。
-
-     エントリ構文については、「 [次の URL を書き換えない」の一覧のエントリ構文に関するページを参照してください](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)。
-
-   これらの設定の詳細については、 [電子メール メッセージのセーフ リンク設定](safe-links.md#safe-links-settings-for-email-messages) と [Microsoft Teams のセーフ リンク設定に関するページを参照してください](safe-links.md#safe-links-settings-for-microsoft-teams)。
+   - [電子メール メッセージのセーフ リンク設定](safe-links.md#safe-links-settings-for-email-messages)。
+   - [Microsoft Teams のセーフ リンク設定](safe-links.md#safe-links-settings-for-microsoft-teams)。
+   - [Office アプリのセーフ リンク設定](safe-links.md#safe-links-settings-for-office-apps)。
+   - [セーフ リンク ポリシーの [保護の設定] をクリックする](safe-links.md#click-protection-settings-in-safe-links-policies)
 
    Standard ポリシーと Strict ポリシー設定の推奨値の詳細については、「 [セーフ リンク ポリシーの設定](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)」を参照してください。
 
@@ -160,9 +193,9 @@ Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシ�
 
 6. 表示される **[通知]** ページで、[ **ユーザーに通知する方法**] で次のいずれかの値を選択します。
    - **既定の通知テキストを使用する**
-   - **カスタム通知テキストを使用する**: この値を選択すると (長さが 200 文字を超えることはできません)、次の設定が表示されます。
+   - **カスタム通知テキストを使用** する: この値を選択すると、次の設定が表示されます。
      - **自動ローカライズに Microsoft Translator を使用する**
-     - **カスタム通知テキスト**: このボックスにカスタム通知テキストを入力します。
+     - **カスタム通知テキスト**: このボックスにカスタム通知テキストを入力します (長さは 200 文字を超えることはできません)。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -235,7 +268,7 @@ Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシ�
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Microsoft 365 Defender ポータルを使用してセーフ リンク ポリシーを削除する
 
-1. Microsoft 365 Defender ポータルで、[ポリシー] セクション **の [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **の安全なリンク****]** に移動します。
+1. Microsoft 365 Defender ポータルで、[ポリシー] セクション **の [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **の安全なリンク****]** に移動します。
 
 2. [ **安全なリンク** ] ページで、名前をクリックして一覧からポリシーを選択します。 表示されるポリシーの詳細ポップアウトの上部で、![[その他の操作]](../../media/m365-cc-sc-more-actions-icon.png) アイコンをクリックします。 **[その他の操作]** \> ![[ポリシーの削除]](../../media/m365-cc-sc-delete-icon.png) アイコン **[ポリシーの削除]** の順にクリックします。
 
@@ -273,7 +306,7 @@ PowerShell では、以下の 2 段階の手順でマルウェア対策ポリシ
 安全なリンク ポリシーを作成するには、次の構文を使用します。
 
 ```PowerShell
-New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
+New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSafeLinksForEmail <$true | $false>] [-EnableSafeLinksForOffice <$true | $false>] [-EnableSafeLinksForTeams <$true | $false>] [-ScanUrls <$true | $false>] [-DeliverMessageAfterScan <$true | $false>] [-EnableForInternalSenders <$true | $false>] [-AllowClickThrough <$true | $false>] [-TrackUserClicks <$true | $false>] [-DoNotRewriteUrls "Entry1","Entry2",..."EntryN"]
 ```
 
 > [!NOTE]
@@ -284,16 +317,17 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-Enab
 
 この例では、Contoso All という名前の安全なリンク ポリシーを次の値で作成します。
 
-- メール メッセージで URL スキャンと書き換えを有効にします。
+- メール メッセージで URL スキャンと URL 書き換えを有効にします。
+  - 内部メッセージの URL スキャンと書き換えを有効にします。
+  - クリックされた URL のリアルタイム スキャン (ファイルを指すクリックされたリンクを含む) を有効にします。
+    - URL スキャンが完了するまで待ち、その後でメッセージを配信します。
 - Teams で URL スキャンを有効にします。
-- クリックされた URL のリアルタイム スキャン (ファイルを指すクリックされたリンクを含む) を有効にします。
-- URL スキャンが完了するまで待ち、その後でメッセージを配信します。
-- 内部メッセージの URL スキャンと書き換えを有効にします。
+- サポートされている Office アプリで URL スキャンを有効にします。
 - セーフ リンク保護に関連するユーザーのクリックを追跡します ( _TrackUserClicks_ パラメーターは使用されておらず、既定値は$true)。
 - ユーザーが元の URL までクリックできないようにします。
 
 ```PowerShell
-New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
+New-SafeLinksPolicy -Name "Contoso All" -EnableSafeLinksForEmail $true -EnableSafeLinksForOffice $true -EnableSafeLinksForTeams $true -ScanUrls $true -DeliverMessageAfterScan $true -EnableForInternalSenders $true -AllowClickThrough $false
 ```
 
 構文とパラメーターの詳細については、「 [New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy)」を参照してください。

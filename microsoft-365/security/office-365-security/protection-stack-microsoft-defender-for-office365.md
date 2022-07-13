@@ -14,12 +14,12 @@ description: Microsoft Defender for Office 365の脅威フィルター スタッ
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 4548beaf8d3071006114a65fd95c16b06e8a875d
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648175"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772042"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
@@ -62,7 +62,7 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
 
 1. **アカウントの侵害検出** トリガーとアラートは、アカウントが侵害と一致する異常な動作を持つ場合に発生します。 場合によっては、組織のセキュリティ運用チームによって問題が解決されるまで、ユーザー アカウントがブロックされ、それ以降の電子メール メッセージの送信が妨げられます。
 
-2. **電子メール認証** には、お客様がクラウドに設定した方法と方法の両方が含まれます。これは、送信者が承認された本格的なメーラーであることを保証することを目的としています。 これらのメソッドは、スプーフィングに抵抗します。
+2. **Email認証** には、送信者が承認された信頼性の高いメーラーであることを保証することを目的として、クラウドに設定された顧客が構成した方法と方法の両方が含まれます。 これらのメソッドは、スプーフィングに抵抗します。
     - **SPF** は、組織に代わってメールを送信できる IP アドレスとサーバーを一覧表示する DNS TXT レコードに基づいてメールを拒否できます。
     - **DKIM** は、送信者を認証する暗号化された署名を提供します。
     - **DMARC** を使用すると、管理者はドメインで必要に応じて SPF と DKIM をマークし、これら 2 つのテクノロジの結果間の調整を強制できます。
@@ -90,7 +90,7 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="MDO のフェーズ 3 フィルター処理はコンテンツ フィルター処理です" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png":::
 
-1. **トランスポート ルール** (メール フロー ルールまたはExchangeトランスポート ルールとも呼ばれます) を使用すると、メッセージに対して同じ範囲の条件が満たされたときに、管理者は幅広いアクションを実行できます。 組織を通過するすべてのメッセージは、有効なメール フロー ルール/トランスポート ルールに対して評価されます。
+1. **トランスポート ルール** (メール フロー ルールまたは Exchange トランスポート ルールとも呼ばれます) を使用すると、メッセージに対して同じ範囲の条件が満たされたときに、管理者はさまざまなアクションを実行できます。 組織を通過するすべてのメッセージは、有効なメール フロー ルール/トランスポート ルールに対して評価されます。
 
 2. **Microsoft Defender ウイルス対策** と 2 つの *サード パーティ製ウイルス対策エンジン* を使用して、添付ファイル内のすべての既知のマルウェアを検出します。
 
@@ -106,7 +106,7 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
 
 8. **コンテンツ ヒューリスティックス** では、機械学習モデルを使用して、メッセージの本文内の構造と単語の頻度に基づいて疑わしいメッセージを検出できます。
 
-9. **セーフ添付ファイル** は、Defender for Office 365のお客様のすべての添付ファイルをサンドボックス化し、動的分析を使用して、これまでに見たことがない脅威を検出します。
+9. **安全な添付ファイル** は、Defender for Office 365顧客のすべての添付ファイルをサンドボックス化し、動的分析を使用して、見たことがない脅威を検出します。
 
 10. **リンクされたコンテンツの破壊** は、メール内のファイルにリンクしているすべての URL を添付ファイルとして扱い、配信時にファイルを非同期的にサンドボックス化します。
 
@@ -114,11 +114,11 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
 
 ## <a name="phase-4---post-delivery-protection"></a>フェーズ 4 - 配信後保護
 
-最後のステージは、メールまたはファイルの配信後に行われ、Microsoft Teamsなどのクライアントに表示されるさまざまなメールボックスやファイルやリンク内のメールに対して動作します。
+最後のステージは、メールまたはファイルの配信後に行われ、Microsoft Teams などのクライアントに表示されるさまざまなメールボックスやファイルやリンクに含まれるメールに対して動作します。
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Defender for Office 365のフェーズ 4 フィルター処理は配信後保護です" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png":::
 
-1. **安全なリンク** は、Defender for Office 365 のクリック時保護です。 すべてのメッセージのすべての URL は、Microsoft セーフ Links サーバーを指すようにラップされます。 URL がクリックされると、ユーザーがターゲット サイトにリダイレクトされる前に、最新の評価に対してチェックされます。 URL は非同期的にサンドボックス化され、評判が更新されます。
+1. **安全なリンク** は、Defender for Office 365 のクリック時保護です。 すべてのメッセージのすべての URL は、Microsoft Safe Links サーバーを指すようにラップされます。 URL がクリックされると、ユーザーがターゲット サイトにリダイレクトされる前に、最新の評価に対してチェックされます。 URL は非同期的にサンドボックス化され、評判が更新されます。
 
 2. **フィッシングのゼロ時間自動消去 (ZAP)** は、既にExchange Onlineメールボックスに配信されている悪意のあるフィッシング メッセージをさかのぼって検出し、そのメッセージを消去します。
 
@@ -130,9 +130,9 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
 
 6. **レポート メッセージ アドイン** を使用すると、ユーザーは誤検知 (良いメール、誤って不適切とマークされた) または偽陰性 ( *不適切* なメールが *適切* とマークされた) を Microsoft に簡単に報告して、詳細な分析を行うことができます。
 
-7. **Office クライアントのセーフ リンク** では、Word、PowerPoint、ExcelなどのOffice クライアント内で、リンクのクリック時保護と同じセーフが提供されます。
+7. **Office クライアントの安全なリンク** は、Word、PowerPoint、Excel などのサポートされている Office アプリ内でネイティブに、同じセーフ リンクのクリック時保護を提供します。
 
-8. **OneDrive、SharePoint、Teamsの保護は、** 悪意のあるファイルに対する同じセーフ添付ファイル保護をネイティブに、OneDrive、SharePoint、およびMicrosoft Teamsの内部で提供します。
+8. **OneDrive、SharePoint、Teams の保護は、OneDrive、SharePoint、および Microsoft Teams** 内でネイティブに悪意のあるファイルに対して同じ安全な添付ファイル保護を提供します。
 
 9. 配信後にファイルを指す URL が選択されると、ファイルのサンドボックス化が完了し、URL が安全であることが判明するまで、 **リンクされたコンテンツの爆発** によって警告ページが表示されます。
 
@@ -142,7 +142,7 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png" alt-text="Defender for Office 365でのフィルター処理のすべてのフェーズ (1 ~ 4)" lightbox="../../media/mdo-filtering-stack/mdo-filter-stack-phase5.png":::
 
-## <a name="more-information"></a>詳細
+## <a name="more-information"></a>詳細情報
 
 ***now** _Microsoft Defender for Office 365設定する必要がありますか? このスタック_now*を使用して、 [組織](protect-against-threats.md) の保護を開始します。
 

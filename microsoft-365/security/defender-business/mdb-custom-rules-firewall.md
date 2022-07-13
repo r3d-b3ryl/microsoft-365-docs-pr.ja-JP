@@ -15,18 +15,18 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: e8ab0981b2e4cfbcd5d885bdfc26f42c6f432aa6
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: cb584d01f2ca135a25ef715fe7152c1fe33ce0f3
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090390"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772711"
 ---
 # <a name="manage-your-custom-rules-for-firewall-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでファイアウォール ポリシーのカスタム ルールを管理する
 
-Microsoft Defender for Businessには、不要なネットワーク トラフィックからデバイスを保護するのに役立つファイアウォール ポリシーが含まれています。 カスタム規則を使用して、ファイアウォール ポリシーの例外を定義できます。 つまり、カスタム ルールを使用して、特定の接続をブロックまたは許可できます。
+Defender for Business には、不要なネットワーク トラフィックからデバイスを保護するのに役立つファイアウォール ポリシーが含まれています。 カスタム規則を使用して、ファイアウォール ポリシーの例外を定義できます。 つまり、カスタム ルールを使用して、特定の接続をブロックまたは許可できます。
 
-ファイアウォールのポリシーと設定の詳細については、「[Microsoft Defender for Businessのファイアウォール](mdb-firewall.md)」を参照してください。
+ファイアウォール ポリシーと設定の詳細については、「 [Defender for Business のファイアウォール」を](mdb-firewall.md)参照してください。
 
 **この記事では、次の方法について説明します**。
 
@@ -99,6 +99,6 @@ Microsoft Defender for Businessには、不要なネットワーク トラフィ
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-- [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
+- [Defender for Business でインシデントを表示および管理する](mdb-view-manage-incidents.md)
+- [Defender for Business の脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: 5d28d8b7d0a95d7b8f4311f064729198628881ca
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 0072cd6088d7fa560e5dbd6f449b766cb6afb694
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089906"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772645"
 ---
 # <a name="view-and-manage-incidents-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでのインシデントの表示と管理
 
@@ -47,22 +47,21 @@ ms.locfileid: "66089906"
 3. ポップアップ ウィンドウには、アラート のタイトルを表示したり、影響を受けた資産の一覧 (エンドポイントやユーザー アカウントなど) を表示したり、使用可能なアクションを実行したり、リンクを使用して詳細情報を表示したり、選択したアラートの詳細ページを開いたりすることもできます。 
 
 > [!TIP]
-> Microsoft Defender for Businessは、推奨されるアクションを提供することで、検出された脅威に対処できるように設計されています。 アラートを表示するときは、推奨されるアクションを探します。 また、アラートの重大度もメモします。これは、脅威の重大度だけでなく、会社に対するリスクのレベルにも基づいて決定されます。 
+> Defender for Business は、推奨されるアクションを提供することで、検出された脅威に対処できるように設計されています。 アラートを表示するときは、推奨されるアクションを探します。 また、アラートの重大度もメモします。これは、脅威の重大度だけでなく、会社に対するリスクのレベルにも基づいて決定されます。 
 
 ## <a name="alert-severity"></a>アラートの重大度
 
-検出された脅威 (マルウェア) の絶対重大度と個々のエンドポイント (感染した場合) に潜在的なリスクに基づいてアラートの重大度を割り当てるMicrosoft Defender ウイルス対策。
-Microsoft Defender for Businessは、検出された動作の重大度、エンドポイント (デバイス) への実際のリスク、さらに重要なのは、潜在的なリスクに基づいて、アラートの重大度を会社に割り当てます。 次の表に、いくつかの例を示します。
+Microsoft Defender ウイルス対策が、検出された脅威 (マルウェア) の絶対重大度と個々のエンドポイント (感染した場合) に潜在的なリスクに基づいてアラートの重大度を割り当てる場合。 Defender for Business は、検出された動作の重大度、エンドポイント (デバイス) に対する実際のリスク、さらに重要なのは、潜在的なリスクに基づいて、アラートの重大度を会社に割り当てます。 次の表に、いくつかの例を示します。
 
-| シナリオ | アラートの重大度 | 理由 |
-|:---|:---|:---|
-| Microsoft Defender ウイルス対策は、脅威が何らかの損害を与える前に、脅威を検出して停止します。 | 情報 | 脅威は、被害が発生する前に停止されました。 |
-| Microsoft Defender ウイルス対策社内で実行されていたマルウェアを検出します。 マルウェアが停止され、修復されます。 | 低 | 個々のエンドポイントに対して一部の被害が発生した可能性がありますが、マルウェアは会社に脅威を与える必要はありません。 |
-| 実行中のマルウェアは、Microsoft Defender for Businessによって検出されます。 マルウェアはほぼ即座にブロックされます。 | 中または高 | マルウェアは、個々のエンドポイントと会社に脅威を与えています。 |
-| 疑わしい動作は検出されますが、修復アクションはまだ実行されません。 | 低、中、または高 | 重大度は、その動作が会社に脅威を与える度合いによって異なります。 |
+| シナリオ | アラートの重大度と理由 |
+|:---|:---|
+| Microsoft Defender ウイルス対策では、脅威が検出され、被害が発生する前に停止します。 | 情報 <br/><br/>脅威は、被害が発生する前に停止されました。 |
+| Microsoft Defender ウイルス対策は、社内で実行されていたマルウェアを検出します。 マルウェアが停止され、修復されます。 | 低い <br/><br/>個々のエンドポイントに対して一部の被害が発生した可能性がありますが、マルウェアは会社に脅威を与える必要はありません。 |
+| Defender for Business によって、実行中のマルウェアが検出されます。 マルウェアはほぼ即座にブロックされます。 | 中または高 <br/><br/>マルウェアは、個々のエンドポイントと会社に脅威を与えています。 |
+| 疑わしい動作は検出されますが、修復アクションはまだ実行されません。 | 低、中、または高 <br/><br/>重大度は、その動作が会社に脅威を与える度合いによって異なります。 |
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
+- [Defender for Business の脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
-- [Microsoft Defender for Businessでデバイス ポリシーを表示または編集する](mdb-view-edit-policies.md)
+- [Defender for Business でデバイス ポリシーを表示または編集する](mdb-view-edit-policies.md)

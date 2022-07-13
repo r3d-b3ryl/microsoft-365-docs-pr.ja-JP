@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Microsoft Defender for Office 365の試用版モードについて学習できます
-ms.openlocfilehash: 086ea200b6f8519c487622d02ba2d2fc8347f68a
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554205"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66773259"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版について
 
@@ -62,9 +62,9 @@ Microsoft Defender for Office 365試用版は、数回クリックするだけ�
 既定では、これらのポリシーは組織内のすべてのユーザーに適用されますが、試用版のセットアップ中または設定後に、ポリシーの割り当てを特定のユーザーに変更できます。
 
 > [!NOTE]
-> 既存のスパム対策ポリシーは、スパム対策ポリシーの信頼性の高いスパム判定のために、アクション **[メッセージを迷惑メールに移動] フォルダー** で構成されている可能性があります。 事前設定されたセキュリティ ポリシーの標準テンプレートでは、信頼性の高いスパムに対して検疫 **メッセージ** というアクションが使用され、事前設定されたセキュリティ ポリシーは常にカスタムスパム対策ポリシーまたは既定のスパム対策ポリシーの前に適用されます。 既定、標準、および厳格な設定の詳細については、「[EOP と Microsoft Defender for Office 365 セキュリティの推奨設定](recommended-settings-for-eop-and-office365.md)」を参照してください。
+> 既存のスパム対策ポリシーは、スパム対策ポリシーの信頼性の高いスパム判定のために、アクション **メッセージを迷惑メールEmailフォルダーに移動** して構成されている可能性があります。 事前設定されたセキュリティ ポリシーの標準テンプレートでは、信頼性の高いスパムに対して検疫 **メッセージ** というアクションが使用され、事前設定されたセキュリティ ポリシーは常にカスタムスパム対策ポリシーまたは既定のスパム対策ポリシーの前に適用されます。 既定、標準、および厳格な設定の詳細については、「[EOP と Microsoft Defender for Office 365 セキュリティの推奨設定](recommended-settings-for-eop-and-office365.md)」を参照してください。
 
-その他のワークロードも保護に使用できます (たとえば、[SharePoint の安全な添付ファイル、OneDrive、Microsoft Teams、](mdo-for-spo-odb-and-teams.md)[サポートされているOffice 365 アプリの安全なリンク](safe-links.md#safe-links-settings-for-office-365-apps)など)。
+その他のワークロードも保護に使用できます (たとえば、[SharePoint の安全な添付ファイル、OneDrive、Microsoft Teams、](mdo-for-spo-odb-and-teams.md)[サポートされている Office アプリの安全なリンク](safe-links.md#safe-links-settings-for-office-apps)など)。
 
 試用版のセットアップ中に、プラン 2 Defender for Office 365専用の応答機能 (たとえば、[AIR](office-365-air.md) と[脅威エクスプローラー](threat-explorer.md)も組織全体に対して設定されます。 ポリシースコープは必要ありません。
 

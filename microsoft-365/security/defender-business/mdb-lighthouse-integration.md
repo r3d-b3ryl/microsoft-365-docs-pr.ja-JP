@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 276bcd6616abe3cf68731bad6f62b3d996557719
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 796320ce2a9b51a01663b553317318e387814d37
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490124"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772667"
 ---
 # <a name="microsoft-365-lighthouse-and-microsoft-defender-for-business"></a>Microsoft 365 LighthouseとMicrosoft Defender for Business
 
@@ -34,14 +34,16 @@ Microsoft Cloud Solution Provider (CSP) で[Microsoft 365 Lighthouse](../../ligh
 
 ## <a name="learn-more-about-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの詳細を確認する
 
-Microsoft 365 Lighthouseにより、Microsoft Cloud Service プロバイダーは、次のいずれかのサブスクリプションを使用している中小企業のお客様に対して、デバイス、データ、およびユーザーを大規模にセキュリティで保護および管理できます。
+Microsoft 365 Lighthouse、Microsoft CSP は、次のいずれかのサブスクリプションを使用しているお客様のデバイス、データ、およびユーザーを大規模にセキュリティで保護および管理できます。
 
 - [Microsoft Defender for Business](/security/defender-business/mdb-overview.md)
 - [Microsoft 365 Business Premium](../../admin/admin-overview/what-is-microsoft-365.md)
 - [Microsoft 365 E3](../../enterprise/microsoft-365-overview.md) (プラン [1 Microsoft Defender for Endpoint](../defender-endpoint/defender-endpoint-plan-1.md)含まれるようになりました)
+- [Microsoft 365 E5](../../enterprise/microsoft-365-overview.md) ([Defender for Endpoint Plan 2](../defender-endpoint/microsoft-defender-endpoint.md)、[Defender for Office 365 プラン 2](../office-365-security/defender-for-office-365.md)、[Defender for Identity](/defender-for-identity/what-is)、[およびその他のセキュリティ機能を](../defender/microsoft-365-defender.md)含む)
+- [Windows 365 Businessまたはエンタープライズ](/windows-365/overview)
 
 詳細については、「[Microsoft 365 Lighthouseの概要](../../lighthouse/m365-lighthouse-overview.md)」を参照してください。
 
 ## <a name="see-also"></a>関連項目
 
-[Microsoft Defender for Businessおよびマネージド サービス プロバイダーのリソース](mdb-partners.md)
+[Microsoft Defender for Businessおよびマネージド サービス プロバイダーのリソース](mdb-partners.md) (MSP の RMM と PSA の統合に関する情報を提供します)

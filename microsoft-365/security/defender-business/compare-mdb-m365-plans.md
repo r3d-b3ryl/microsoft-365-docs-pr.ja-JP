@@ -1,5 +1,5 @@
 ---
-title: 中小企業向けのMicrosoft 365プランのセキュリティ機能を比較する
+title: 中小企業向けの Microsoft 365 プランのセキュリティ機能を比較する
 description: Defender for Business と Defender for Endpoint と Microsoft 365 Business Premiumの比較 会社の情報に基づいた意思決定を行うことができるように、各プランに含まれる内容を確認します。
 search.appverid: MET150
 author: denisebmsft
@@ -16,38 +16,39 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 245063299df0df25f8a4c14ed9a3ee26b880ea15
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 9c3c4cf2914e268abeabc199e72ef28dac81a0f1
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089884"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771998"
 ---
-# <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>中小企業向けのMicrosoft 365プランのセキュリティ機能を比較する
+# <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>中小企業向けの Microsoft 365 プランのセキュリティ機能を比較する
 
-Microsoft では、中小企業向けのさまざまなプランを含め、さまざまなクラウド ソリューションとサービスを提供しています。 たとえば、[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)には、セキュリティとデバイス管理機能と、Office アプリなどの生産性機能が含まれます。 この記事は、デバイス保護などのセキュリティ機能がMicrosoft 365 Business Premium、Microsoft Defender for Business、Microsoft Defender for Endpointに含まれているセキュリティ機能を明確にするために設計されています。
+Microsoft では、中小企業向けの計画など、さまざまなクラウド ソリューションとサービスを提供しています。 たとえば、[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)には、Office アプリなどの生産性機能と共に、セキュリティとデバイス管理機能が含まれます。 この記事では、Microsoft 365 Business Premium、Microsoft Defender for Business、[Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)のセキュリティ機能について説明します。
 
 
 **この記事を使用して、次の操作を行います**。
 
-- [Microsoft Defender for Business (スタンドアロン) と Microsoft 365 Business Premiumの比較](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium)
-- [Defender for Business (スタンドアロン) をMicrosoft Defender for Endpointエンタープライズ オファリングと比較する](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)
+- [Defender for Business (スタンドアロン) をMicrosoft 365 Business Premiumと比較します](#compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium)。
+- [Defender for Business (スタンドアロン) と Defender for Endpoint エンタープライズ オファリングを比較します](#compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2)。
 
-**Microsoft Defender for Businessを購入して使用するために、Microsoft 365 サブスクリプションを持っている必要はありません。** Microsoft Defender for BusinessはMicrosoft 365 Business Premiumに含まれており、中小企業向けのスタンドアロン セキュリティ ソリューションとして利用できます。 Microsoft 365 Business Basicまたは Standard が既にある場合は、Microsoft 365 Business Premiumにアップグレードするか、Microsoft Defender for Businessを追加して脅威保護機能を強化することを検討してください。
+> [!TIP]
+> Defender for Business は、中小企業向けのスタンドアロン セキュリティ ソリューションとして利用できます。 Microsoft 365 Business Premiumにも含まれています。 Microsoft 365 Business Basicまたは Standard が既にある場合は、Microsoft 365 Business Premiumにアップグレードするか、サブスクリプションに Defender for Business を追加して、デバイスの脅威保護機能を強化することを検討してください。
 
 ## <a name="compare-security-features-in-microsoft-defender-for-business-to-microsoft-365-business-premium"></a>Microsoft Defender for Businessのセキュリティ機能をMicrosoft 365 Business Premiumと比較する
 
 > [!NOTE]
-> この記事は、Microsoft Defender for Business (スタンドアロン プラン) およびMicrosoft 365 Business Premium (Defender for Business を含む) に含まれる脅威保護機能の概要を提供することを目的としています。 この記事は、サービスの説明またはライセンス契約ドキュメントとして機能することを意図していません。 詳細については、[セキュリティ&コンプライアンスに関するMicrosoft 365ライセンスガイダンスを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)参照してください。
+> この記事では、Microsoft Defender for Business (スタンドアロン プラン) とMicrosoft 365 Business Premium (Defender for Business を含む) に含まれる脅威保護機能の概要について説明します。 サービスの説明やライセンス契約のドキュメントを意図したものではありません。 詳細については、 [セキュリティ&コンプライアンスに関する Microsoft 365 ライセンス ガイダンスを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)参照してください。
 
-**2022 年 3 月 1 日時点で、Defender for Business はMicrosoft 365 Business Premiumに含まれています。Defender for Business は、スタンドアロン サブスクリプションとしても利用できます。** 次の表では、Defender for Business (スタンドアロン) のセキュリティ機能とMicrosoft 365 Business Premiumを比較します。
+Defender for Business はスタンドアロン サブスクリプションとしても利用でき、Microsoft 365 Business Premiumにも含まれています。 次の表では、Defender for Business (スタンドアロン) のセキュリティ機能とMicrosoft 365 Business Premiumを比較します。
 
 |機能/機能|[Microsoft Defender for Business](mdb-overview.md)<br/>(スタンドアロン)|[Microsoft 365 Business Premium](../../business/microsoft-365-business-overview.md)<br/>(Defender for Business を含む)|
 |---|---|---|
-|電子メール保護|はい <br/>- [Microsoft Defender ウイルス対策を使用した電子メール スキャン](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|はい <br/>- [Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) <br/>- [Microsoft Defender ウイルス対策を使用した電子メール スキャン](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|
-|スパム対策保護|はい <br/>- デバイスの場合|はい <br/>- デバイスの場合<br/>- Microsoft 365メール コンテンツ (メッセージや添付ファイルなど) の場合|
-|マルウェア対策保護|はい<br/>- デバイスの場合|はい <br/>- デバイスの場合<br/>- Microsoft 365メール コンテンツ (メッセージや添付ファイルなど) の場合|
-|[次世代の保護](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (ウイルス対策とマルウェア対策の保護)|はい<br/>- Microsoft Defender ウイルス対策はWindows 10以降に含まれます|はい <br/>- Microsoft Defender ウイルス対策はWindows 10以降に含まれます<br/>- オンボードされたデバイスの次世代保護ポリシー|
+|Email保護|はい <br/>[Microsoft Defender ウイルス対策を使用したEmailスキャン](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|はい <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Microsoft Defender ウイルス対策を使用したEmailスキャン](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
+|スパム対策保護|はい<br/>デバイスの場合|はい <ul><li>デバイスの場合</li><li>Microsoft 365 メール コンテンツ (メッセージや添付ファイルなど) の場合</li></ul>|
+|マルウェア対策保護|はい<br/>デバイスの場合|はい<ul><li>デバイスの場合</li><li>Microsoft 365 メール コンテンツ (メッセージや添付ファイルなど) の場合</li></ul>|
+|[次世代の保護](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (ウイルス対策とマルウェア対策の保護)|はい<br/>Microsoft Defender ウイルス対策は、Windows 10 以降に含まれています|はい <ul><li>Microsoft Defender ウイルス対策は、Windows 10 以降に含まれています</li><li>オンボードされたデバイスの次世代保護ポリシー</li></ul>|
 |[攻撃面の減少](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Windows 10 以降の ASR 規則とファイアウォール保護)|はい|はい|
 |[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(動作ベースの検出アクションと手動応答アクション)|はい|はい|
 |[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい|はい|
@@ -62,22 +63,22 @@ Defender for Business は、Defender for Endpoint のエンタープライズ �
 |機能/機能|[Defender for Business](mdb-overview.md)<br/>(スタンドアロン)|[Defender for Endpoint プラン 1](../defender-endpoint/defender-endpoint-plan-1.md)<br/>(エンタープライズのお客様向け) |[Defender for Endpoint プラン 2](../defender-endpoint/microsoft-defender-endpoint.md)<br/>(エンタープライズのお客様向け) |
 |---|---|---|---|
 |[集中管理](../defender-endpoint/manage-atp-post-migration.md) |はい <sup>[[1](#fn1)]</sup>|はい|はい|
-|[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|いいえ|不要|
+|[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|いいえ|いいえ|
 |[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|はい|いいえ|はい|
 |[攻撃面の減少機能](../defender-endpoint/overview-attack-surface-reduction.md)|はい|はい|はい|
 |[次世代の保護](../defender-endpoint/next-generation-protection.md)|はい|はい|はい|
-|[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md)|はい <sup>[[2](#fn2)]</sup>|不要|はい|
-|[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい <sup>[[3](#fn3)]</sup>|不要|はい|
-|[脅威の捜索](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 |いいえ <sup>[[4](#fn4)]</sup>|不要|はい|
-|[脅威の分析](../defender-endpoint/threat-analytics.md)|はい <sup>[[5](#fn5)]</sup>|不要|はい|
-|[クロスプラットフォームサポート](../defender-endpoint/minimum-requirements.md) <br/>(Windows、macOS、iOS、Android OS)|はい <sup>[[6](#fn6)]</sup>|はい|はい|
-|[Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md)|不要|不要|はい|
+|[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md)|はい <sup>[[2](#fn2)]</sup>|いいえ|はい|
+|[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい <sup>[[3](#fn3)]</sup>|いいえ|はい|
+|[脅威の捜索](../defender-endpoint/advanced-hunting-overview.md) と 6 か月間のデータ保持 |いいえ <sup>[[4](#fn4)]</sup>|いいえ|はい|
+|[脅威の分析](../defender-endpoint/threat-analytics.md)|はい <sup>[[5](#fn5)]</sup>|いいえ|はい|
+|[クロスプラットフォームサポート](../defender-endpoint/minimum-requirements.md) <br/>(Windows、Mac、iOS、Android OS)|はい <sup>[[6](#fn6)]</sup>|はい|はい|
+|[Microsoft 脅威エキスパート](../defender-endpoint/microsoft-threat-experts.md)|いいえ|いいえ|はい|
 |パートナー API|はい|はい|はい|
 |[Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間のセキュリティ インシデントを表示する場合)|はい |はい <sup>[[7](#fn7)]</sup>|はい <sup>[[7](#fn7)]</sup>|
 
-(<a id="fn1">1</a>) Microsoft 365 Defender ポータル () または Microsoft エンドポイント マネージャー 管理センター[https://endpoint.microsoft.com](https://endpoint.microsoft.com) ([https://security.microsoft.com](https://security.microsoft.com)) で管理されるMicrosoft Intuneを使用して、デバイスのオンボードと管理を行います。
+(<a id="fn1">1</a>) Microsoft 365 Defender ポータル () または Microsoft エンドポイント マネージャー 管理センター ([https://security.microsoft.com](https://security.microsoft.com)[https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で管理されるMicrosoft Intuneを使用して、デバイスのオンボードと管理を行います。
 
-(<a id="fn2">2</a>) Defender for Business のエンドポイント検出と応答 (EDR) 機能には、動作ベースの検出と次の 4 種類の手動応答アクションが含まれます。 
+(<a id="fn2">2</a>) Defender for Business のエンドポイント検出と応答 (EDR) 機能には、動作ベースの検出と次の手動応答アクションが含まれます。 
 - ウイルス対策スキャンの実行
 - デバイスの分離
 - ファイルを停止して検疫する

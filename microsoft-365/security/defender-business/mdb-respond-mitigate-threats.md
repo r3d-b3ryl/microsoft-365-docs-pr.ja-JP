@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: b7a911991935407f9d512213c9d76c92106b74c8
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 9330584979bc6c47204809a0408be7950c0d5612
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089564"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772819"
 ---
 # <a name="respond-to-and-mitigate-threats-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessの脅威に対応し、軽減する
 
@@ -42,18 +42,18 @@ Microsoft 365 Defender ポータルを使用すると、セキュリティ チ�
 
    **[デバイス インベントリ]** ページには、会社のデバイスとそのリスク レベルと露出レベルが一覧表示されます。
 
-4. デバイスなどの項目を選択します。 ポップアップ ウィンドウが開き、次の図に示すように、そのアイテムに対して生成されたアラートとインシデントに関する詳細情報が表示されます。  
+4. デバイスなどの項目を選択します。 ポップアップ ウィンドウが開き、次の画像に示すように、そのアイテムに対して生成されたアラートとインシデントに関する詳細情報が表示されます。  
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout.png" alt-text="選択したデバイスのポップアップ ウィンドウのスクリーンショット":::
 
-5. ポップアップで、表示される情報を表示します。 省略記号 (...) を選択して、次の図に示すように、使用可能なアクションを一覧表示するメニューを開きます。 
+5. ポップアップで、表示される情報を確認します。 次の画像に示すように、省略記号 (...) を選択して、使用可能なアクションを一覧表示するメニューを開きます。 
 
    :::image type="content" source="../../media/defender-business/mdb-deviceinventory-selecteddeviceflyout-menu.png" alt-text="選択したデバイスで使用可能なアクションのスクリーンショット":::
 
-6. 使用可能なアクションを選択します。 たとえば、[**ウイルス対策スキャンの実行**] を選択すると、Microsoft Defender ウイルス対策デバイスでクイック スキャンが開始されます。 または、[ **自動調査の開始** ] を選択して、デバイスの自動調査をトリガーすることもできます。
+6. 使用可能なアクションを選択します。 たとえば、**[ウイルス対策スキャンを実行する]** を選択すると、Microsoft Defender ウイルス対策によってデバイスでクイック スキャンが開始されます。 または、**[自動調査の開始]** を選択して、デバイスの自動調査をトリガーすることもできます。
 
 ## <a name="next-steps"></a>次の手順
 
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)
-- [Microsoft Defender for Businessでデバイスを管理する](mdb-manage-devices.md)
-- [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
+- [Defender for Business でデバイスを管理する](mdb-manage-devices.md)
+- [Defender for Business でインシデントを表示および管理する](mdb-view-manage-incidents.md)

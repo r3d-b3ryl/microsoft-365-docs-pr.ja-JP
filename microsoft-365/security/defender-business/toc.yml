@@ -11,10 +11,12 @@
           href: trial-playbook-defender-business.md
         - name: 中小規模のビジネスのプランを比較する
           href: compare-mdb-m365-plans.md
-        - name: Microsoft 365 Lighthouse との統合
-          href: mdb-lighthouse-integration.md
+        - name: プレビュー機能
+          href: mdb-preview.md
         - name: パートナー向けのリソース
           href: mdb-partners.md
+        - name: Microsoft 365 Lighthouse との統合
+          href: mdb-lighthouse-integration.md
     - name: 作業の開始
       items:
         - name: Defender for Business を取得する
@@ -75,6 +77,8 @@
           href: mdb-offboard-devices.md
     - name: 参照情報
       items:
+        - name: Microsoft Defender for Business サーバーを取得する方法 (プレビュー)
+          href: get-defender-business-servers.md
         - name: ヘルプを入手する方法またはサポートに問い合わせる方法
           href: mdb-get-help.md
         - name: よく寄せられる質問

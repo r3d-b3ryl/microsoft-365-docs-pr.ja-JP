@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 6b0c67aeac244b214e5c017511192225be05d454
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 6c7fdf4c7c2a2311d0a7651de4adb428d9c456cd
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663198"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772359"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで脆弱性管理ダッシュボードを使用する
 
-Microsoft Defender for Businessには、セキュリティ チームの時間と労力を節約するように設計された脆弱性管理ダッシュボードが含まれています。 公開スコアを提供するだけでなく、公開されたデバイスとセキュリティに関する推奨事項に関する情報を表示することもできます。 脅威&脆弱性管理ダッシュボードを使用すると、次のことができます。
+Defender for Business には、セキュリティ チームの時間と労力を節約するように設計された脆弱性管理ダッシュボードが含まれています。 公開スコアを提供するだけでなく、公開されたデバイスとセキュリティに関する推奨事項に関する情報を表示することもできます。 脅威&脆弱性管理ダッシュボードを使用すると、次のことができます。
 
 - 会社のデバイスに関連付けられている露出スコアを表示する
 - デバイスとの通信障害への対処、ファイアウォール保護のオン、Microsoft Defender ウイルス対策の定義の更新など、セキュリティに関する推奨事項を確認する
@@ -35,6 +35,6 @@ Microsoft Defender for Businessには、セキュリティ チームの時間と
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Businessのチュートリアルとシミュレーション](mdb-tutorials.md)
-- [デバイスをMicrosoft Defender for Businessにオンボードする](mdb-onboard-devices.md)
-- [Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-create-policies.md)
+- [Defender for Business のチュートリアルとシミュレーション](mdb-tutorials.md)
+- [デバイスを Defender for Business にオンボードする](mdb-onboard-devices.md)
+- [Defender for Business でポリシーを表示または編集する](mdb-view-edit-create-policies.md)

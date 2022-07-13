@@ -16,16 +16,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: c5606c19e4cef64e701d34a5e4ccc2143f51f394
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: 209af419462d6894e80b1d05955a58a78572e525
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66090368"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772743"
 ---
 # <a name="view-or-edit-policies-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでポリシーを表示または編集する
 
-Microsoft Defender for Businessでは、デバイスに適用されるポリシーを使用してセキュリティ設定が構成されます。 Defender for Business には、セットアップと構成のエクスペリエンスを簡素化するために、会社のデバイスがオンボードされるとすぐに保護できるように、事前に構成されたポリシーが含まれています。 既定のポリシーを使用したり、ポリシーを編集したり、独自のポリシーを作成したりできます。
+Defender for Business では、デバイスに適用されるポリシーを使用してセキュリティ設定が構成されます。 Defender for Business には、セットアップと構成のエクスペリエンスを簡素化するために、会社のデバイスがオンボードされるとすぐに保護できるように、事前に構成されたポリシーが含まれています。 既定のポリシーを使用したり、ポリシーを編集したり、独自のポリシーを作成したりできます。
 
 **この記事では、次の方法について説明します**。
 
@@ -69,7 +69,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 
    - 選択したデバイス グループをそのままにするには、**[次へ]** を選択します。
    - ポリシーからデバイス グループを削除するには、**[削除]** を選択 します。
-   - 新しいデバイス グループを設定するには、**[新しいグループの作成]** を選択し、デバイス グループを設定します。 (このタスクに関するヘルプについては、「[Microsoft Defender for Businessのデバイス グループ](mdb-create-edit-device-groups.md)」を参照してください)。
+   - 新しいデバイス グループを設定するには、**[新しいグループの作成]** を選択し、デバイス グループを設定します。 (このタスクに関するヘルプについては、「 [Defender for Business のデバイス グループ」を](mdb-create-edit-device-groups.md)参照してください)。
    - ポリシーを別のデバイス グループに適用するには、**[既存のグループを使用]** を選択します。
 
    ポリシーを受け取るデバイス グループを指定したら、**[次へ]** を選択します。
@@ -111,7 +111,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 
    デバイス グループの詳細については、「 [Defender for Business のデバイス グループ」を](mdb-create-edit-device-groups.md)参照してください。
 
-8. **[構成設定]** タブで、ポリシーの設定を指定し、**[次へ]** を選択します。 個々の設定の詳細については、「[Microsoft Defender for Businessの構成設定」を](mdb-next-gen-configuration-settings.md)参照してください。
+8. **[構成設定]** タブで、ポリシーの設定を指定し、**[次へ]** を選択します。 個々の設定の詳細については、「 [Defender for Business の構成設定」を](mdb-next-gen-configuration-settings.md)参照してください。
 
 9. **[ポリシーの確認]** タブで、一般情報、対象デバイス、および構成設定を確認します。 
 
@@ -124,7 +124,7 @@ Defender for Business には、会社のデバイスを保護するためのポ�
 次のタスクのうち 1 つ以上を選択します。
 
 - [デバイスの管理](mdb-manage-devices.md)
-- [Microsoft Defender for Businessで新しいポリシーを作成する](mdb-create-new-policy.md)
-- [Microsoft Defender for Businessでのインシデントの表示と管理](mdb-view-manage-incidents.md)
-- [Microsoft Defender for Businessの脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
+- [Defender for Business で新しいポリシーを作成する](mdb-create-new-policy.md)
+- [Defender for Business でインシデントを表示および管理する](mdb-view-manage-incidents.md)
+- [Defender for Business の脅威に対応し、軽減する](mdb-respond-mitigate-threats.md)
 - [アクション センターで修復アクションを確認する](mdb-review-remediation-actions.md)

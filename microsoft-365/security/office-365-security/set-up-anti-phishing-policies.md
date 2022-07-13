@@ -17,12 +17,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365で使用できるフィッシング対策ポリシーについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a1265e70c0d22182e8ee4db865eeb53ac8168b7
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: cb33af08174890565994ffc253cf2332c01c31eb
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115897"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771001"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Microsoft 365 のフィッシング詐欺対策ポリシー
 
@@ -33,7 +33,7 @@ ms.locfileid: "66115897"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-フィッシング対策の設定を構成するポリシーは、Exchange Online メールボックス、Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織、およびMicrosoft 365組織で使用できます。組織Microsoft Defender for Office 365。
+フィッシング対策の保護設定を構成するためのポリシーは、Exchange Online メールボックス、Exchange Online メールボックスのないスタンドアロン Exchange Online Protection (EOP) 組織、および組織Microsoft Defender for Office 365。
 
 組織Microsoft Defender for Office 365例を次に示します。
 
@@ -50,7 +50,7 @@ EOP のフィッシング対策ポリシーとDefender for Office 365のフィ�
 |カスタム ポリシーの作成|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
 |一般的なポリシー設定<sup>\*</sup>|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
 |スプーフィング設定|![チェック マーク。](../../media/checkmark.png)|![チェック マーク。](../../media/checkmark.png)|
-|最初の連絡先安全性のヒント|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
+|最初の連絡先の安全に関するヒント|![チェック マーク。](../../media/checkmark.png)|![チェック マーク](../../media/checkmark.png)|
 |偽装設定||![チェック マーク](../../media/checkmark.png)|
 |高度なフィッシングのしきい値||![チェック マーク](../../media/checkmark.png)|
 
@@ -77,7 +77,7 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
 
   - **ユーザー**: 組織内の 1 つ以上のメールボックス、メール ユーザー、またはメール連絡先。
   - **グループ**: 組織内の 1 つ以上のグループ。
-  - **ドメイン**: Microsoft 365で構成 [された承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)の 1 つ以上。
+  - **ドメイン**: Microsoft 365 で構成 [された承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) の 1 つ以上。
 
   - **これらのユーザー、グループ、ドメインを除外します**。ポリシーの例外。 設定と動作は、次の条件とまったく同じです。
     - **Users**
@@ -87,24 +87,24 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
   > [!NOTE]
   > カスタムフィッシング対策ポリシーでは、ポリシーが <u>適用される</u>メッセージ **受信者** を識別するために **、ユーザー、グループ、ドメイン** の設定で少なくとも 1 つの選択が必要です。 Defender for Office 365のフィッシング対策ポリシーには、この記事の後半で説明するように、偽装<u>保護を受ける</u>個々の送信者の電子メール アドレスまたは送信者ドメインを指定できる偽装[設定](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)もあります。
   >
-  > 複数の異なる条件または例外は加算されません。包括的です。 ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します。
+  > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
   >
-  > - 受信者は次のとおりです:romain@contoso.com
-  > - 受信者は次のメンバーです。
+  > - 受信者は次のとおりです: romain@contoso.com
+  > - 受信者が次のメンバーの場合: Executive
   >
-  > ポリシーは、エグゼクティブ グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+  > ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
   >
   > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
 ## <a name="spoof-settings"></a>スプーフィング設定
 
-スプーフィングとは、電子メール メッセージ内の差出人アドレス (電子メール クライアントに表示される送信者アドレス) が電子メール ソースのドメインと一致しない場合です。 スプーフィングの詳細については、「[Microsoft 365でのスプーフィング対策の保護](anti-spoofing-protection.md)」を参照してください。
+スプーフィングとは、電子メール メッセージ内の差出人アドレス (電子メール クライアントに表示される送信者アドレス) が電子メール ソースのドメインと一致しない場合です。 スプーフィングの詳細については、 [Microsoft 365 のスプーフィング対策保護に関する](anti-spoofing-protection.md)ページを参照してください。
 
 EOP およびDefender for Office 365のフィッシング対策ポリシーでは、次のスプーフィング設定を使用できます。
 
 - **スプーフィング インテリジェンスを有効にする**: スプーフィング インテリジェンスのオンとオフを切り替えます。 オンのままにすることをお勧めします。
 
-  スプーフィング インテリジェンスが有効になっている場合、 **スプーフィング インテリジェンス分析情報** は、スプーフィング インテリジェンスによって自動的に検出および許可またはブロックされたスプーフィングされた送信者を示します。 スプーフィング インテリジェンスの判定を手動でオーバーライドして、検出されたスプーフィングされた送信者を分析情報内で許可またはブロックすることができます。 ただし、スプーフィングされた送信者はスプーフィング インテリジェンス分析情報から消え、テナント許可/ブロックリストの **[スプーフィング** ] タブにのみ表示されるようになりました。 テナント許可/ブロック リストで、スプーフィングされた送信者の許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については、次の記事を参照してください。
+  スプーフィング インテリジェンスが有効になっている場合、 **スプーフィング インテリジェンス分析情報** は、スプーフィング インテリジェンスによって自動的に検出および許可またはブロックされたスプーフィングされた送信者を示します。 スプーフィング インテリジェンスの判定を手動でオーバーライドして、検出されたスプーフィングされた送信者を分析情報内で許可またはブロックすることができます。 ただし、スプーフィングされた送信者はスプーフィング インテリジェンス分析情報から消え、テナント許可/ブロックリストの **[スプーフィング** ] タブにのみ表示されるようになりました。 テナント許可/ブロック リストで、スプーフィングされた送信者の許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については、次の資料を参照してください。
 
   - 詳細については、「[EOP のスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。
   - [EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)
@@ -112,16 +112,16 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
   > [!NOTE]
   >
   > - スプーフィング対策保護は、既定のフィッシング対策ポリシーと、作成した新しいカスタムフィッシング対策ポリシーで既定で有効になります。
-  > - MX レコードがMicrosoft 365を指していない場合は、スプーフィング対策保護を無効にする必要はありません。代わりに、コネクタの拡張フィルター処理を有効にします。 手順については、「Exchange Onlineの[コネクタの拡張フィルター処理](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
+  > - MX レコードが Microsoft 365 を指していない場合は、スプーフィング対策保護を無効にする必要はありません。代わりに、コネクタの拡張フィルター処理を有効にします。 手順については、「Exchange Onlineの[コネクタの拡張フィルター処理](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)」を参照してください。
   > - スプーフィング対策保護を無効にすると、[複合認証](email-validation-and-authentication.md#composite-authentication)チェックからの _暗黙的な_ スプーフィング保護のみが無効になります。 送信者がポリシーが検疫または拒否に設定されている場所を _明示的_[な DMARC](use-dmarc-to-validate-email.md) チェックで失敗した場合でも、メッセージは検疫または拒否されます。
 
 - **認証されていない送信者インジケーター**: スプーフィング インテリジェンスがオンになっている場合にのみ、[ **安全に関するヒント&インジケーター** ] セクションで使用できます。 次のセクションの詳細を参照してください。
 - **アクション**: ブロックされたスプーフィングされた送信者からのメッセージ (スプーフィング インテリジェンスによって自動的にブロックされるか、テナント許可/ブロック リストで手動でブロック) の場合は、メッセージに対して実行するアクションを指定することもできます。
-  - **受信者の迷惑メール フォルダーにメッセージを移動** する: これは既定値です。 メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 詳細については、「[Microsoft 365のExchange Online メールボックスで迷惑メール設定を構成](configure-junk-email-settings-on-exo-mailboxes.md)する」を参照してください。
+  - **受信者の迷惑メール Email フォルダーにメッセージを移動** する: これは既定値です。 メッセージはメールボックスに配信され、迷惑メール Email フォルダーに移動されます。 詳細については、「[Microsoft 365 のExchange Onlineメールボックスで迷惑メール設定を構成する」を](configure-junk-email-settings-on-exo-mailboxes.md)参照してください。
   - **メッセージを検疫する**: 目的の受信者ではなく、メッセージを検疫に送信します。 検疫の詳細については、以下の記事を参照してください。
-    - [Microsoft 365の検疫](quarantine-email-messages.md)
-    - [Microsoft 365で検疫済みのメッセージとファイルを管理者として管理する](manage-quarantined-messages-and-files.md)
-    - [Microsoft 365で検疫されたメッセージをユーザーとして検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 の検疫](quarantine-email-messages.md)
+    - [Microsoft 365 で検疫済みのメッセージとファイルを管理者として管理する](manage-quarantined-messages-and-files.md)
+    - [Microsoft 365 で検疫済みメッセージをユーザーとして検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
     **[メッセージの検疫**] を選択した場合は、スプーフィング インテリジェンス保護によって検疫されたメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
@@ -140,25 +140,25 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
   - 送信者の写真の疑問符の場合、SPF または DKIM が最も重要です。
   - via タグの場合は、DKIM 署名内のドメイン、または差出人アドレスのドメインと一致する (またはサブドメインのサブドメイン) **MAIL FROM** アドレスを確認します。
 
-詳細については、「[Outlook.com およびOutlook on the webで疑わしいメッセージを識別](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)する」を参照してください。
+詳細については、「[Outlook.com とOutlook on the webで疑わしいメッセージを識別](https://support.microsoft.com/office/3d44102b-6ce3-4f7c-a359-b623bec82206)する」を参照してください。
 
-## <a name="first-contact-safety-tip"></a>最初の連絡先安全性のヒント
+## <a name="first-contact-safety-tip"></a>最初の連絡先の安全に関するヒント
 
-**最初の連絡先安全性のヒントの表示** 設定は、EOP およびDefender for Office 365組織で使用でき、スプーフィング インテリジェンスや偽装保護設定には依存しません。 安全性のヒントは、次のシナリオで受信者に表示されます。
+**Show first contact safety tip** settings is available in EOP and Defender for Office 365 organization, and no dependency on spoof Intelligence or impersonation protection settings. 安全性のヒントは、次のシナリオで受信者に表示されます。
 
 - 送信者から初めてメッセージを受け取った場合
 - 送信者からメッセージを受け取ることがよくあります。
 
-:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="1 人の受信者を含むメッセージの最初の連絡先安全性のヒント" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-one-recipient.png" alt-text="1 人の受信者を含むメッセージの最初の連絡先の安全性に関するヒント" lightbox="../../media/safety-tip-first-contact-one-recipient.png":::
 
-:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="複数の受信者を含むメッセージの最初の連絡先安全性のヒント" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
+:::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="複数の受信者を含むメッセージの最初の連絡先の安全性に関するヒント" lightbox="../../media/safety-tip-first-contact-multiple-recipients.png":::
 
 この機能により、潜在的な偽装攻撃に対するセキュリティ保護のレイヤーが追加されるため、有効にすることをお勧めします。
 
-最初の連絡先安全性のヒントでは、**X-MS-Exchange-EnableFirstContactSafetyTip** という名前のヘッダーをメッセージに **対して有効にする** 値を追加するメール フロー ルール (トランスポート ルールとも呼ばれます) を作成する必要も置き換えられます (ただし、この機能は引き続き使用できます)。
+最初の連絡先の安全ヒントでは、 **X-MS-Exchange-EnableFirstContactSafetyTip** という名前のヘッダーをメッセージに **対して有効** にする値を追加するメール フロー ルール (トランスポート ルールとも呼ばれます) を作成する必要も置き換えられます (ただし、この機能は引き続き使用できます)。
 
 > [!NOTE]
-> メッセージに複数の受信者がある場合は、ヒントが表示されているかどうか、およびマジョリティ モデルに基づいているユーザーかどうか。 受信者の大半が送信者からメッセージを受信したことがない、または受信することが多くない場合、影響を受ける受信者は、 **このメッセージを受信した一部のユーザーを受け取** ります。ヒント。 この動作によって受信者間の通信習慣が明らかになっていることを懸念する場合は、最初の連絡先安全性のヒントを有効にせず、代わりにメール フロー ルールを引き続き使用する必要があります。
+> メッセージに複数の受信者がある場合は、ヒントが表示されているかどうか、およびマジョリティ モデルに基づいているユーザーかどうか。 受信者の大半が送信者からメッセージを受信したことがない、または受信することが多くない場合、影響を受ける受信者は、 **このメッセージを受信した一部のユーザーを受け取** ります。ヒント。 この動作によって受信者間の通信習慣が明らかになっていることを懸念する場合は、最初の連絡先の安全に関するヒントを有効にせず、代わりにメール フロー ルールを引き続き使用する必要があります。
 
 ## <a name="exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365のフィッシング対策ポリシーの排他的設定
 
@@ -206,11 +206,11 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
 - **アクション**: ポリシー内の保護されたユーザーと保護されたドメインに対する偽装試行を含む受信メッセージに対して実行するアクションを選択します。 保護されたユーザーの偽装と保護されたドメインの偽装に対して、さまざまなアクションを指定できます。
   - **アクションを適用しない**
   - **他の電子メール アドレスにメッセージをリダイレクトする**: 目的の受信者ではなく、指定した受信者にメッセージを送信します。
-  - **受信者の迷惑メール フォルダーにメッセージを移動** する: メッセージはメールボックスに配信され、迷惑メール フォルダーに移動されます。 詳細については、「[Microsoft 365のExchange Online メールボックスで迷惑メール設定を構成](configure-junk-email-settings-on-exo-mailboxes.md)する」を参照してください。
+  - **受信者の迷惑メール Email フォルダーに** メッセージを移動する: メッセージはメールボックスに配信され、迷惑メール Email フォルダーに移動されます。 詳細については、「[Microsoft 365 のExchange Onlineメールボックスで迷惑メール設定を構成する」を](configure-junk-email-settings-on-exo-mailboxes.md)参照してください。
   - **メッセージを検疫する**: 目的の受信者ではなく、メッセージを検疫に送信します。 検疫の詳細については、以下の記事を参照してください。
-    - [Microsoft 365の検疫](quarantine-email-messages.md)
-    - [Microsoft 365で検疫済みのメッセージとファイルを管理者として管理する](manage-quarantined-messages-and-files.md)
-    - [Microsoft 365で検疫されたメッセージをユーザーとして検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
+    - [Microsoft 365 の検疫](quarantine-email-messages.md)
+    - [Microsoft 365 で検疫済みのメッセージとファイルを管理者として管理する](manage-quarantined-messages-and-files.md)
+    - [Microsoft 365 で検疫済みメッセージをユーザーとして検索して解放する](find-and-release-quarantined-messages-as-a-user.md)
 
     **[メッセージの検疫**] を選択した場合は、ユーザー権限借用またはドメイン偽装保護によって検疫されたメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作を定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
 
@@ -231,7 +231,7 @@ EOP およびDefender for Office 365のフィッシング対策ポリシーで�
 - **インテリジェンス偽装保護を有効にする**: この設定をオンにして、メールボックス インテリジェンスの結果から偽装検出のためにメッセージを実行するアクションを指定します。
   - **アクションを適用しないでください**。この値は **、メールボックス インテリジェンス** を有効にした場合と同じ結果になりますが、 **インテリジェンス偽装保護を有効にする** をオフにした場合と同じ結果になります。
   - **メッセージを他のメール アドレスにリダイレクトする**
-  - **受信者の迷惑メール フォルダーにメッセージを移動する**
+  - **受信者の迷惑メール Email フォルダーにメッセージを移動する**
   - **メッセージを検疫する**: このアクションを選択した場合は、メールボックス インテリジェンス保護によって検疫されるメッセージに適用される検疫ポリシーを選択することもできます。 検疫ポリシーは、検疫されたメッセージに対してユーザーが実行できる操作と、ユーザーが検疫通知を受け取るかどうかを定義します。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。
   - **メッセージを配信し、Bcc 行に他のアドレスを追加する**
   - **メッセージが配信される前にメッセージを削除する**
