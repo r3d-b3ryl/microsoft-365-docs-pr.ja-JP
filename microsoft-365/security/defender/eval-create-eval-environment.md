@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: 5b684a1ead5638a787413d7470cb103cbe55e7df
-ms.sourcegitcommit: 9c8eca862a2f0fdca7a66c641e382e37fcaefa10
+ms.openlocfilehash: fb097532fe809fa1b1ec4c29a9a489bcb4ea2871
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/24/2022
-ms.locfileid: "63775524"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66747969"
 ---
 # <a name="step-1-create-the-microsoft-365-defender-evaluation-environment-for-greater-cyber-security"></a>手順 1. Microsoft 365 Defender評価環境を作成してサイバーセキュリティを強化する
 
@@ -44,13 +45,13 @@ ms.locfileid: "63775524"
 
 このシリーズの手順は、Microsoft 365 Defender XDR の背後にある概念の学習から構築、評価環境の運用まで、エンドツーエンドで実行されます。
 
-この次の評価手順には、2 つの一般的な方法があります。 このシリーズでは、運用Microsoft 365テナントが既にあると想定しており、E5 試用版ライセンスをアクティブ化して *、現在の環境* でMicrosoft 365 Defenderを評価します。 インプレース評価を使用すると、評価期間の後にライセンスを購入したセキュリティ方法を保持できます。
+この次の評価手順には、2 つの一般的な方法があります。 このシリーズは、運用 Microsoft 365 テナントが既にあると想定しており、E5 試用版ライセンスをアクティブ化して *、現在の環境* でMicrosoft 365 Defenderを評価します。 インプレース評価を使用すると、評価期間の後にライセンスを購入したセキュリティ方法を保持できます。
 
 2 つ目は、評価を目的として[Microsoft 365 Defender試用版ラボ環境を設定](setup-m365deval.md)することです。 テスト中は、ビジネスからの実際のシグナルが多くない可能性があることに注意してください。
 
 ## <a name="you-will-need-to-activate-e5-trial-licenses-to-evaluate-microsoft-365-defender"></a>Microsoft 365 Defenderを評価するには、E5 試用版ライセンスをアクティブ化する必要があります。
 
-1. 既存のMicrosoft 365テナント管理ポータルにログオンします。
+1. 既存の Microsoft 365 テナント管理ポータルにログオンします。
 2. ナビゲーション メニューから [ **サービスの購入** ] を選択します。
 3. [Office 365] セクションまで下にスクロールし、ライセンスの下にある [**詳細**] ボタンOffice 365 E5選択します。
 
@@ -66,6 +67,6 @@ ms.locfileid: "63775524"
 
 ## <a name="go-to-the-next-step"></a>次の手順に進む
 
-[ID のMicrosoft 365を有効にする方法について説明します](eval-defender-identity-overview.md)
+[Microsoft 365 for Identity を有効にする方法について説明します](eval-defender-identity-overview.md)
 
 または、[評価とパイロットMicrosoft 365 Defender](eval-overview.md)の概要に戻ります。

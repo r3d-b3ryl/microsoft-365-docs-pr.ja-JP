@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 73601660fc4b7ee2f58748d7e59a10aa53157745
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 7dbf9154769ab4b97c15dc5fc67593b376ab2f6d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570131"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750344"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用したパイロット Microsoft Defender for Cloud Apps
 
@@ -44,7 +45,7 @@ ms.locfileid: "64570131"
 - [手順 2.保護の構成 - 条件付きアクセス アプリ制御](#step-2-configure-protectionconditional-access-app-control)
 - [手順 3.機能を試す - 環境を保護するためのチュートリアルについて説明します](#step-3-try-out-capabilitieswalk-through-tutorials-for-protecting-your-environment) 
 
-## <a name="step-1-create-the-pilot-groupscope-your-pilot-deployment-to-certain-user-groups"></a>手順 1. パイロット グループを作成する - パイロット展開のスコープを特定のユーザー グループに設定する
+## <a name="step-1-create-the-pilot-groupscope-your-pilot-deployment-to-certain-user-groups"></a>手順 1。 パイロット グループを作成する - パイロット展開のスコープを特定のユーザー グループに設定する
 
 Microsoft Defender for Cloud Appsを使用すると、デプロイのスコープを設定できます。 スコープを使用すると、アプリの監視対象または監視から除外する特定のユーザー グループを選択できます。 ユーザー グループを含めたり除外したりできます。 パイロットデプロイのスコープを設定するには、「 [スコープ付きデプロイ](/cloud-app-security/scoped-deployment)」を参照してください。
 
@@ -53,11 +54,11 @@ Microsoft Defender for Cloud Appsを使用すると、デプロイのスコー�
 
 構成できる最も強力な保護の 1 つは、条件付きアクセス アプリ制御です。 この保護には、Azure Active Directory (Azure AD) との統合が必要です。 これにより、条件付きアクセス ポリシー (関連ポリシー (正常なデバイスの要求など) を含む) を、承認されたクラウド アプリに適用できます。 
 
-Microsoft Defender for Cloud Appsを使用して SaaS アプリを管理する最初の手順は、これらのアプリを検出してから、Azure AD テナントに追加することです。 検出に関するヘルプが必要な場合は、 [ネットワーク内の SaaS アプリの検出と管理に関するページを参照してください](/cloud-app-security/tutorial-shadow-it)。 アプリを検出したら、[これらのアプリをAzure AD テナントに追加します](/azure/active-directory/manage-apps/add-application-portal)。
+Microsoft Defender for Cloud Appsを使用して SaaS アプリを管理する最初の手順は、これらのアプリを検出してから Azure AD テナントに追加することです。 検出に関するヘルプが必要な場合は、 [ネットワーク内の SaaS アプリの検出と管理に関するページを参照してください](/cloud-app-security/tutorial-shadow-it)。 アプリを検出したら、 [これらのアプリを Azure AD テナントに追加します](/azure/active-directory/manage-apps/add-application-portal)。
 
 これらのアプリの管理を開始するには、次のタスクを実行します。
 
-- まず、Azure ADで、新しい条件付きアクセス ポリシーを作成し、"条件付きアクセス アプリ制御の使用" に構成します。 この構成は、要求を Defender for Cloud Apps にリダイレクトするのに役立ちます。 1 つのポリシーを作成し、すべての SaaS アプリをこのポリシーに追加できます。
+- まず、Azure AD で新しい条件付きアクセス ポリシーを作成し、"条件付きアクセス アプリ制御を使用する" に構成します。 この構成は、Defender for Cloud Apps に要求をリダイレクトするのに役立ちます。 1 つのポリシーを作成し、すべての SaaS アプリをこのポリシーに追加できます。
 - 次に、Defender for Cloud Apps でセッション ポリシーを作成します。 適用するコントロールごとに 1 つのポリシーを作成します。
 
 サポートされているアプリやクライアントを含む詳細については、「[条件付きアクセス アプリ制御を使用してアプリを保護Microsoft Defender for Cloud Apps」を](/cloud-app-security/proxy-intro-aad)参照してください。 
@@ -68,7 +69,7 @@ Microsoft Defender for Cloud Appsを使用して SaaS アプリを管理する�
 
 Microsoft Defender for Cloud Appsドキュメントには、リスクの検出と環境の保護に役立つ一連のチュートリアルが含まれています。 
 
-Defender for Cloudアプリのチュートリアルを試してください。
+Defender for Cloud Apps のチュートリアルを試す:
 
 - [疑わしいユーザー アクティビティを検出する](/cloud-app-security/tutorial-suspicious-activity)
 - [危険なユーザーを調査する](/cloud-app-security/tutorial-ueba)

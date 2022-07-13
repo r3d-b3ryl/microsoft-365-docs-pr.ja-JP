@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Identityのアーキテクチャ要件と技術フレームワークを確認する
-description: Microsoft 365 DefenderのMicrosoft Defender for Identityの技術図は、試用版ラボまたはパイロット環境を構築する前に、Microsoft 365の ID を理解するのに役立ちます。
+description: Microsoft 365 DefenderのMicrosoft Defender for Identityの技術図は、試用版ラボまたはパイロット環境を構築する前に、Microsoft 365 の ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: de49205fe20cd5685279c0a5f9d138147f24bb8d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e92fa629b49664b6f87c8e72c23a2f9cae74afe6
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754160"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750234"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identityのアーキテクチャ要件と主要な概念を確認する
 
@@ -40,7 +41,7 @@ Microsoft Defender for Identityを有効にする前に、アーキテクチャ�
 
 Microsoft Defender for Identityでは、機械学習と行動分析を使用して、オンプレミス ネットワーク全体の攻撃を特定し、クラウド ID に関連するユーザー サインイン リスクを検出して予防的に防止します。 詳細については、「[Microsoft Defender for Identityとは」](/defender-for-identity/what-is)を参照してください。
 
-Defender for Identity は、Azure Active Directory (Azure AD) に同期されたオンプレミスの Active Directoryユーザーまたはユーザーを保護します。 Azure AD ユーザーのみで構成される環境を保護するには、「[Azure AD Identity Protection」を](/azure/active-directory/identity-protection/overview-identity-protection)参照してください。
+Defender for Identity は、Azure Active Directory (Azure AD) に同期されたオンプレミスの Active Directoryユーザーまたはユーザーを保護します。 Azure AD ユーザーのみで構成される環境を保護するには、Azure [AD Identity Protection に関するページを](/azure/active-directory/identity-protection/overview-identity-protection)参照してください。
 
 ## <a name="understand-the-architecture"></a>アーキテクチャを理解する
 
@@ -51,7 +52,7 @@ Defender for Identity は、Azure Active Directory (Azure AD) に同期された
 この図について:
 
 - AD ドメイン コントローラーにインストールされているセンサーは、ログとネットワーク トラフィックを解析し、分析とレポートのためにMicrosoft Defender for Identityに送信します。
--  また、フェデレーション認証 (図の点線) を使用するようにAzure ADが構成されている場合、センサーはActive Directory フェデレーション サービス (AD FS) (AD FS) を解析することもできます。 
+-  また、フェデレーション認証を使用するように Azure AD が構成されている場合(図の点線)、センサーはActive Directory フェデレーション サービス (AD FS) (AD FS) を解析することもできます。 
 - Microsoft Defender for Identityは、拡張検出と応答 (XDR) のためにMicrosoft 365 Defenderにシグナルを共有します。
 
 Defender for Identity センサーは、次のサーバーに直接インストールできます。
@@ -59,7 +60,7 @@ Defender for Identity センサーは、次のサーバーに直接インスト�
 - ドメイン コントローラー: センサーは、専用サーバーやポート ミラーリングの構成を必要とせずに、ドメイン コントローラーのトラフィックを直接監視します。
 - AD FS: センサーは、ネットワーク トラフィックと認証イベントを直接監視します。
 
-Defender for Cloud アプリとの統合を含む Defender for Identity のアーキテクチャの詳細については、「[Microsoft Defender for Identity アーキテクチャ」を参照してください](/defender-for-identity/architecture)。
+Defender for Cloud Apps との統合を含む Defender for Identity のアーキテクチャの詳細については、「[Microsoft Defender for Identity アーキテクチャ](/defender-for-identity/architecture)」を参照してください。
 
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する

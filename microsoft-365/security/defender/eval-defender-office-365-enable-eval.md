@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: a5a14d507f7cd10ff4f7ab62b552ab256f0e4a5e
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: f3298c67421dea921a014bc32e91be8033733183
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499003"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750102"
 ---
 # <a name="enable-the-evaluation-environment"></a>評価環境を有効にする
 
@@ -72,24 +73,24 @@ ms.locfileid: "64499003"
 
 Microsoft Defender for Office 365を効果的に評価するには、テナントに関連付けられているExchange Online Protection (EOP) インスタンスを介して受信外部メールを中継することが重要です。
 
-1. M365 管理ポータルにログオンし、設定展開して [ドメイン] を選択します。
+1. M365 管理 ポータルにログオンし、[設定] を展開して [ドメイン] を選択します。
 2. 確認済みの電子メール ドメインを選択し、[DNS の管理] をクリックします。
 3. EOP テナントに生成および割り当てられた MX レコードをメモしておきます。
 4. 外部 (パブリック) DNS ゾーンにアクセスし、メール ドメインに関連付けられているプライマリ MX レコードを確認します。
     - *パブリック MX レコードが現在、割り当てられた EOP アドレス (tenant-com.mail.protection.outlook.com など) と一致している場合は、それ以上のルーティング変更は必要ありません*。
     - パブリック MX レコードが現在サード パーティまたはオンプレミスの SMTP ゲートウェイに解決されている場合は、追加のルーティング構成が必要になる場合があります。
-    - パブリック MX レコードが現在オンプレミスのExchangeに解決されている場合でも、一部の受信者メールボックスがまだ EXO に移行されていないハイブリッド モデルになっている可能性があります。
+    - パブリック MX レコードが現在オンプレミスの Exchange に解決されている場合でも、一部の受信者メールボックスがまだ EXO に移行されていないハイブリッド モデルになっている可能性があります。
 
 ## <a name="step-3-audit-accepted-domains"></a>手順 3: 承認済みドメインを監査する
 
-1. Exchange Online管理ポータルにログオンし、[メール Flow] を選択して、[承認済みドメイン] をクリックします。
+1. Exchange Online 管理 ポータルにログオンし、[メール フロー] を選択し、[承認済みドメイン] をクリックします。
 2. テナントで追加および検証された承認済みドメインの一覧から、プライマリ電子メール ドメインの **ドメインの種類** を書き留めておきます。
     - ドメインの種類が ***[権限あり]*** に設定されている場合は、組織のすべての受信者メールボックスが現在Exchange Onlineにあると見なされます。
     - ドメインの種類が ***内部リレー*** に設定されている場合でも、一部の受信者メールボックスがまだオンプレミスに存在するハイブリッド モデルになっている可能性があります。
 
 ## <a name="step-4-audit-inbound-connectors"></a>手順 4: 受信コネクタを監査する
 
-1. Exchange Online管理ポータルにログオンし、[メール Flow] を選択して、[コネクタ] をクリックします。
+1. Exchange Online 管理 ポータルにログオンし、[メール フロー] を選択し、[コネクタ] をクリックします。
 2. 構成済みのコネクタの一覧から、 **パートナー組織** のエントリを書き留め、サード パーティの SMTP ゲートウェイに関連付けることができます。
 3. 構成済みのコネクタの一覧から、 **組織の電子メール サーバーから** というラベルが付いたエントリを書き留めます。これは、まだハイブリッド シナリオに入っていることを示している可能性があります。
 
@@ -100,7 +101,7 @@ Microsoft Defender for Office 365を効果的に評価するには、テナン�
 1. Microsoft 365 Defender ポータルにアクセスできるアカウントを使用してテナントにログオンします。
 2. **Microsoft 365 Defender ポータルをMicrosoft Defender for Office 365** 管理用の既定のインターフェイスにするかどうかを選択します (推奨)。
 
-   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="[設定でオンにする] ボタンを使用すると、管理用の一元的で改善されたMicrosoft 365 Defender ポータルに移動できます" lightbox="../../media/mdo-eval/1_mdo-eval-activate-eval.png":::
+   :::image type="content" source="../../media/mdo-eval/1_mdo-eval-activate-eval.png" alt-text="[設定で有効にする] ボタンを使用すると、管理用の一元化された改善されたMicrosoft 365 Defender ポータルが作成されます。" lightbox="../../media/mdo-eval/1_mdo-eval-activate-eval.png":::
 
 3. ナビゲーション メニューの [*電子メール & コラボレーション*] **で [ポリシー&ルール**] を選択します。
 

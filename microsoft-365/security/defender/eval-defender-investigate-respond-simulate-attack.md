@@ -19,15 +19,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-pilotmtpproject
+- zerotrust-solution
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bf7592055e58f10a3680e6ee712c597780591a47
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 2fd9dc7e8d597890e8d07ce783938bc1d69b6c78
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498585"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748761"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Microsoft 365 Defenderパイロット環境で攻撃シミュレーションを実行する
 
@@ -97,19 +98,19 @@ Microsoft からの Defender for Endpoint シミュレーションを次に示�
 
 ## <a name="simulate-an-attack-with-an-isolated-domain-controller-and-client-device-optional"></a>分離されたドメイン コントローラーとクライアント デバイスを使用して攻撃をシミュレートする (省略可能)
 
-このオプションのインシデント対応演習では、PowerShell スクリプトを使用して分離されたActive Directory Domain Services (AD DS) ドメイン コントローラーとWindows デバイスに対する攻撃をシミュレートし、インシデントを調査、修復、解決します。
+このオプションのインシデント対応演習では、PowerShell スクリプトを使用して分離されたActive Directory Domain Services (AD DS) ドメイン コントローラーと Windows デバイスに対する攻撃をシミュレートし、インシデントを調査、修復、解決します。
 
 まず、パイロット環境にエンドポイントを追加する必要があります。
 
 ### <a name="add-pilot-environment-endpoints"></a>パイロット環境エンドポイントを追加する
 
-まず、分離された AD DS ドメイン コントローラーとWindows デバイスをパイロット環境に追加する必要があります。
+まず、分離された AD DS ドメイン コントローラーと Windows デバイスをパイロット環境に追加する必要があります。
 
 1. パイロット環境テナントで[Microsoft 365 Defenderが有効](m365d-enable.md#confirm-that-the-service-is-on)になっていることを確認します。
 
 2. ドメイン コントローラーを確認します。
 
-   - Server 2008 R2 以降のバージョンWindows実行します。
+   - Windows Server 2008 R2 以降のバージョンを実行します。
    - [レポートをMicrosoft Defender for Identity](/azure/security-center/security-center-wdatp)し、[リモート管理](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)が有効になっています。
    - [Microsoft Defender for IdentityとMicrosoft Defender for Cloud Apps統合](/cloud-app-security/mdi-integration)が有効になっています。
    - テスト ドメインにテスト ユーザーが作成されました。 管理者レベルのアクセス許可は必要ありません。
@@ -123,7 +124,7 @@ Microsoft からの Defender for Endpoint シミュレーションを次に示�
 
 テナントとデバイス グループを使用する場合は、テスト デバイス用の専用デバイス グループを作成し、それを最上位レベルにプッシュします。
 
-1 つの代替手段として、AD DS ドメイン コントローラーをホストし、Microsoft Azure インフラストラクチャ サービスで仮想マシンとしてデバイスをテストします。 [シミュレートされたエンタープライズ テスト ラボ ガイドのフェーズ 1 の手順を](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet)使用できますが、APP1 仮想マシンの作成はスキップしてください。
+1 つの代替手段として、MICROSOFT Azure インフラストラクチャ サービスで AD DS ドメイン コントローラーをホストし、仮想マシンとしてデバイスをテストします。 [シミュレートされたエンタープライズ テスト ラボ ガイドのフェーズ 1 の手順を](/microsoft-365/enterprise/simulated-ent-base-configuration-microsoft-365-enterprise#phase-1-create-a-simulated-intranet)使用できますが、APP1 仮想マシンの作成はスキップしてください。
 
 結果を次に示します。
 
@@ -144,7 +145,7 @@ Microsoft からの Defender for Endpoint シミュレーションを次に示�
 
 攻撃シナリオ シミュレーションを実行するには:
 
-1. パイロット環境に分離された AD DS ドメイン コントローラーとWindowsデバイスが含まれていることを確認します。
+1. パイロット環境に分離された AD DS ドメイン コントローラーと Windows デバイスが含まれていることを確認します。
 
 2. テスト ユーザー アカウントを使用してテスト デバイスにサインインします。
 
@@ -168,7 +169,7 @@ Microsoft からの Defender for Endpoint シミュレーションを次に示�
 > [!NOTE]
 > リモート デスクトップ プロトコル (RDP) を使用して PowerShell を実行している場合は、 **CTRL-V** ホットキーまたは右クリック貼り付けメソッドが機能しない可能性があるため、RDP クライアントで [クリップボードテキストの入力] コマンドを使用します。 最近のバージョンの PowerShell では、そのメソッドが受け入れられません。最初にメモリ内のメモ帳にコピーし、仮想マシンでコピーしてから PowerShell に貼り付ける必要がある場合があります。
 
-数秒後、メモ帳 アプリが開きます。 シミュレートされた攻撃コードがメモ帳に挿入されます。 自動的に生成されたメモ帳 インスタンスを開いたままにして、完全なシナリオを体験します。
+数秒後、メモ帳アプリが開きます。 シミュレートされた攻撃コードがメモ帳に挿入されます。 自動的に生成されたメモ帳インスタンスを開いたままにして、完全なシナリオを体験します。
 
 シミュレートされた攻撃コードは、外部 IP アドレスとの通信 (C2 サーバーのシミュレート) を試み、SMB を介してドメイン コントローラーに対する偵察を試みます。
 
@@ -178,7 +179,7 @@ Microsoft からの Defender for Endpoint シミュレーションを次に示�
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-自動インシデントと応答機能の動作を確認するには、notepad.exe プロセスを開いたままにします。 自動インシデントと応答がメモ帳 プロセスを停止することがわかります。
+自動インシデントと応答機能の動作を確認するには、notepad.exe プロセスを開いたままにします。 メモ帳プロセスを停止する自動インシデントと応答が表示されます。
 
 ### <a name="investigate-the-incident-for-the-simulated-attack"></a>シミュレートされた攻撃のインシデントを調査する
 
@@ -224,7 +225,7 @@ Microsoft 365 Defenderは分析を関連付け、関連するすべてのアラ�
 シミュレートされた攻撃中に生成されたアラートの一部を見てみましょう。
 
 > [!NOTE]
-> シミュレートされた攻撃の間に生成されたアラートのほんの一部について説明します。 テスト デバイスで実行されているWindowsのバージョンとMicrosoft 365 Defender製品によっては、少し異なる順序で表示されるアラートが表示される場合があります。
+> シミュレートされた攻撃の間に生成されたアラートのほんの一部について説明します。 テスト デバイスで実行されている Windows のバージョンとMicrosoft 365 Defender製品によっては、少し異なる順序で表示されるアラートがさらに表示される場合があります。
 
 :::image type="content" source="../../media/mtp/fig6.png" alt-text="生成されたアラートの例" lightbox="../../media/mtp/fig6.png":::
 
@@ -287,7 +288,7 @@ Microsoft Defender for Endpoint検出は、多くの場合、攻撃手法の最�
 
 ユーザー名を選択してユーザーのプロファイル ページを開き、さらに調査を行うことができます。 [リスクの高いユーザーの調査について詳しくは、こちらをご覧ください](/cloud-app-security/tutorial-ueba#identify)。
 
-:::image type="content" source="../../media/mtp/fig13.png" alt-text="Defender for Cloud アプリのユーザー ページ" lightbox="../../media/mtp/fig13.png":::
+:::image type="content" source="../../media/mtp/fig13.png" alt-text="Defender for Cloud Apps ユーザー ページ" lightbox="../../media/mtp/fig13.png":::
 
 #### <a name="automated-investigation-and-remediation"></a>調査と修復の自動化
 
@@ -328,7 +329,7 @@ Microsoft 365 Defender ポータルでインシデントに戻ります。 [**�
 
 これにより、インシデント分析、自動調査、インシデント解決のための攻撃シミュレーションがまとめられます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [:::image type="content" source="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png" alt-text="Microsoft 365 Defenderインシデント対応機能" lightbox="../../media/eval-defender-investigate-respond/eval-defender-eval-investigate-respond-step2.png":::](eval-defender-investigate-respond-additional.md)
 

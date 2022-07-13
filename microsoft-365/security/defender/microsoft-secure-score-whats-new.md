@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8c2472456feb21662e48a5b377a16a1c539569cc
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 25860b27ee5d677f3349f82f63f64983255d2d32
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717186"
+ms.locfileid: "66750212"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -40,7 +40,7 @@ Microsoft Secure Score はhttps://security.microsoft.com/securescore[、Microsof
 
 ## <a name="june-2022"></a>2022 年 6 月
 
-- 新しいMicrosoft Defender for EndpointとMicrosoft Defender 脆弱性の管理の推奨事項は、セキュリティスコア改善アクションとして利用できるようになりました。
+- 新しいMicrosoft Defender for EndpointとMicrosoft Defender 脆弱性の管理の推奨事項は、セキュア スコアの改善アクションとして使用できるようになりました。
 
   - 共有へのオフライン アクセスを禁止する
   - 共有書き込みアクセス許可セットを **すべてのユーザー** に削除する

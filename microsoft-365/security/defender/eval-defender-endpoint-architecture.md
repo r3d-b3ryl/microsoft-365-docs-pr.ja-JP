@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpointアーキテクチャの要件と主要な概念を確認する
-description: Microsoft 365 DefenderのMicrosoft Defender for Endpointの技術図は、試用版ラボまたはパイロット環境を構築する前に、Microsoft 365の ID を理解するのに役立ちます。
+description: Microsoft 365 DefenderのMicrosoft Defender for Endpointの技術図は、試用版ラボまたはパイロット環境を構築する前に、Microsoft 365 の ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b1381e7c2be2224818c72fb8e269ad65ffcacfc8
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 5197acd8ceb3a2dea7c03b0ef076bca5dc9138dd
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755028"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749135"
 ---
 # <a name="review-microsoft-defender-for-endpoint-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Endpointアーキテクチャの要件と主要な概念を確認する
 
@@ -42,7 +43,7 @@ Microsoft Defender for Endpointを有効にする前に、アーキテクチャ�
 
 次の図は、Microsoft Defender for Endpointアーキテクチャと統合を示しています。 
 
-:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Microsoft Defender for Officeを Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
+:::image type="content" source="../../media/defender/m365-defender-endpoint-architecture.png" alt-text="Microsoft Defender for Office を Defender 評価環境に追加する手順" lightbox="../../media/defender/m365-defender-endpoint-architecture.png":::
 
 次の表で、図について説明します。
 
@@ -50,8 +51,8 @@ Microsoft Defender for Endpointを有効にする前に、アーキテクチャ�
 :---|:---|
 1 | デバイスは、サポートされている管理ツールの 1 つを介してオンボードされます。 
 2 | オンボードデバイスは、Microsoft Defender for Endpoint信号データを提供し、応答します。
-3 | マネージド デバイスは、Azure Active Directoryに参加または登録されます。
-4 | ドメインに参加しているWindows デバイスは、Azure Active Directory Connectを使用してAzure Active Directoryに同期されます。
+3 | マネージド デバイスは、Azure Active Directory に参加または登録されます。
+4 | ドメインに参加している Windows デバイスは、Azure Active Directory Connect を使用して Azure Active Directory に同期されます。
 5 | Microsoft Defender for Endpointアラート、調査、および応答は、Microsoft 365 Defenderで管理されます。
 
 ## <a name="understand-key-concepts"></a>主要な概念を理解する
@@ -62,7 +63,7 @@ Microsoft Defender for Endpointを有効にする前に、アーキテクチャ�
 :---|:---|:---|
 管理ポータル | Microsoft 365 Defenderポータルを使用して、潜在的な高度な永続的な脅威アクティビティまたはデータ侵害のアラートを監視し、対応を支援します。 | [Microsoft Defender for Endpoint ポータルの概要](/microsoft-365/security/defender-endpoint/portal-overview)
 攻撃面の縮小 | 組織がサイバー脅威や攻撃に対して脆弱な場所を最小限に抑えることで、攻撃面を減らすことができます。 | [攻撃面の減少の概要](/microsoft-365/security/defender-endpoint/overview-attack-surface-reduction)
-エンドポイントの検出と応答 | エンドポイントの検出と応答機能により、ほぼリアルタイムで実行可能な高度な攻撃検出が提供されます。 | [エンドポイントでの検出と対応機能の概要](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+エンドポイントの検出と応答 | エンドポイントの検出と応答機能により、ほぼリアルタイムで実行可能な高度な攻撃検出が提供されます。 | [エンドポイントの検出機能と応答機能の概要](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 ビヘイビアー ブロックとコンテインメント | 動作ブロック機能とコンテインメント機能は、脅威が実行を開始した場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。 | [動作ブロックと封じ込め](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment)
 自動調査と対応 | 自動調査では、セキュリティ アナリストが使用するプロセスに基づいてさまざまな検査アルゴリズムを使用し、アラートを調べ、侵害を解決するための直ちにアクションを実行するように設計されています。 | [自動調査を使用して脅威を調査および修復する](/microsoft-365/security/defender-endpoint/automated-investigations)
 高度なハンティング | 高度なハンティングは、最大 30 日間の未加工データを探索できるクエリベースの脅威検出ツールです。これにより、ネットワーク内のイベントを事前に検査して脅威のインジケーターとエンティティを見つけることができます。 | [高度なハンティングの概要](/microsoft-365/security/defender-endpoint/advanced-hunting-overview)

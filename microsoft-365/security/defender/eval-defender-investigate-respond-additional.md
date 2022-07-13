@@ -20,15 +20,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 0ad2fc9a1566e7816b3ff806b7d07ac29347cc89
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 01a263569da09807c96160c32fda719bd2575994
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754771"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748477"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロット環境でインシデント対応機能をMicrosoft 365 Defenderしてみてください
 
@@ -152,7 +153,7 @@ Microsoft 365 Defender ポータルのクイック起動時に **、インシデ
 
 3. テスト デバイスを構成します。
 
-    a.  Windows 10 バージョン 1903 以降のバージョンを使用していることを確認します。
+    a. Windows 10 バージョン 1903 以降のバージョンを使用していることを確認します。
 
     b. テスト デバイスをテスト ドメインに参加させます。
 
@@ -162,7 +163,7 @@ Microsoft 365 Defender ポータルのクイック起動時に **、インシデ
 
 ### <a name="run-the-simulation"></a>シミュレーションを実行する
 
-1. 外部メール アカウントから、ハンティング環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含めます。 このファイルは、悪意のあるファイルや実行可能ファイルである必要はありません。 推奨されるファイルの種類は<i>、.pdf</i>、 <i>.exe</i> (許可されている場合)、Word ファイルなどのOfficeドキュメントの種類です。
+1. 外部メール アカウントから、ハンティング環境の要件セクションの手順 2 で識別されたメールボックスに電子メールを送信します。 既存の電子メール フィルター ポリシーで許可される添付ファイルを含めます。 このファイルは、悪意のあるファイルや実行可能ファイルである必要はありません。 推奨されるファイルの種類は <i> 、.pdf</i>、 <i>.exe</i> (許可されている場合)、または Word ファイルなどの Office ドキュメントの種類です。
 
 2. ハンティング環境の要件セクションの手順 3 で定義されているように構成されたデバイスから送信された電子メールを開きます。 添付ファイルを開くか、デバイスにファイルを保存します。
 

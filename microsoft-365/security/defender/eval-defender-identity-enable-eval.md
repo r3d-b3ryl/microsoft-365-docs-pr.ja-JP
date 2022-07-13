@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 1be194035348bb8d414b37f16399fdcffe406063
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 84b893b6689385e4137778d0d787f42428843d26
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755037"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750190"
 ---
 # <a name="enable-the-evaluation-environment-for-microsoft-defender-for-identity"></a>Microsoft Defender for Identityの評価環境を有効にする
 
@@ -44,14 +45,14 @@ Microsoft Defender for Identity環境を設定するには、次の手順に従�
 - [手順 3.センサーを使用してマシンでイベント ログとプロキシ設定を構成する](#step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor)
 - [手順 4.Defender for Identity による他のコンピューター上のローカル管理者の識別を許可する](#step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers)
 
-## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1. Defender for Identity Instance を設定する
+## <a name="step-1-set-up-the-defender-for-identity-instance"></a>手順 1。 Defender for Identity Instance を設定する
 
 Defender for Identity ポータルにサインインしてインスタンスを作成し、このインスタンスを Active Directory 環境に接続します。 
 
 |  手順 | 説明     |詳細情報  |
 |---------|---------|---------|
 |1     | Defender for Identity インスタンスを作成する        | [クイックスタート: Microsoft Defender for Identity インスタンスを作成する](/defender-for-identity/install-step1)        |
-|2     | Defender for Identity インスタンスを Active Directory フォレストにConnectする   | [クイック スタート: Active Directory フォレストにConnectする](/defender-for-identity/install-step2)  |
+|2     | Defender for Identity インスタンスを Active Directory フォレストに接続する   | [クイック スタート: Active Directory フォレストに接続する](/defender-for-identity/install-step2)  |
 
 ## <a name="step-2-install-and-configure-the-sensor"></a>手順 2。 センサーをインストールして構成する
 
@@ -66,18 +67,18 @@ Defender for Identity ポータルにサインインしてインスタンスを�
 
 ## <a name="step-3-configure-event-log-and-proxy-settings-on-machines-with-the-sensor"></a>手順 3. センサーを使用してマシンでイベント ログとプロキシ設定を構成する
 
-センサーをインストールしたコンピューターで、検出機能を有効にして強化するために、Windowsイベント ログ収集とインターネット プロキシ設定を構成します。
+センサーをインストールしたコンピューターで、検出機能を有効にして強化するように、Windows イベント ログ収集とインターネット プロキシ設定を構成します。
 
 |  手順 | 説明     |詳細情報  |
 |---------|---------|---------|
-|1     | イベント ログ収集Windows構成する         | [イベント コレクションWindows構成する](/defender-for-identity/configure-windows-event-collection)        |
+|1     | Windows イベント ログ収集を構成する         | [Windows イベント コレクションを構成する](/defender-for-identity/configure-windows-event-collection)        |
 |2     | インターネット プロキシ設定を構成する        | [Microsoft Defender for Identity センサーのエンドポイント プロキシとインターネット接続の設定を構成する](/defender-for-identity/configure-proxy)        |
 
 ## <a name="step-4-allow-defender-for-identity-to-identify-local-admins-on-other-computers"></a>手順 4. Defender for Identity による他のコンピューター上のローカル管理者の識別を許可する
 
 横移動パスの検出Microsoft Defender for Identityは、特定のマシン上のローカル管理者を識別するクエリに依存します。 これらのクエリは、Defender for Identity Service アカウントを使用して SAM-R プロトコルで実行されます。 
 
-クライアントとサーバー Windows Defender for Identity アカウントで SAM-R の実行を許可するには、ネットワーク アクセス ポリシーに一覧表示されている構成済みアカウントに加えて、Defender for Identity サービス アカウントを追加するグループ ポリシーを変更する必要があります。 **ドメイン コントローラーを除く** すべてのコンピューターにグループ ポリシーを適用してください。
+Windows クライアントとサーバーで Defender for Identity アカウントによる SAM-R の実行を許可するには、ネットワーク アクセス ポリシーに記載されている構成済みアカウントに加えて、Defender for Identity サービス アカウントを追加するグループ ポリシーを変更する必要があります。 **ドメイン コントローラーを除く** すべてのコンピューターにグループ ポリシーを適用してください。
 
 これを行う方法については、「[SAM へのリモート呼び出しを行うMicrosoft Defender for Identityを構成する」を](/defender-for-identity/install-step8-samr)参照してください。 
 

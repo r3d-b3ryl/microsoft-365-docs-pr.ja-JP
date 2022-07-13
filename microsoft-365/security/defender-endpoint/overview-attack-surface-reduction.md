@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 0bcc45907cc5d57b592f96296282f65cc3e3d772
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717152"
+ms.locfileid: "66749003"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃面の縮小機能を理解して使用する
 
@@ -53,21 +53,25 @@ ms.locfileid: "66717152"
 
 1. [Microsoft Edge のハードウェア ベースの分離を有効にします](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard)。
 
-2. アプリケーション制御を有効にします。
+2. [攻撃面の減少ルールを有効にする](attack-surface-reduction-rules-deployment.md)
+
+3. アプリケーション制御を有効にします。
 
    1. Windows で基本ポリシーを確認します。 [基本ポリシーの例を](/windows/security/threat-protection/windows-defender-application-control/example-wdac-base-policies)参照してください。
    2. [Windows Defenderアプリケーション コントロールの設計ガイドを](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-design-guide)参照してください。
    3. [Windows Defenderアプリケーション制御 (WDAC) ポリシーのデプロイ](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-deployment-guide)に関するページを参照してください。
 
-3. [フォルダー アクセスの制御を有効にします](enable-controlled-folders.md)。
+4. [フォルダー アクセスの制御を有効にします](enable-controlled-folders.md)。
 
-4. [ネットワーク保護を有効にします](enable-network-protection.md)。
+5. [リムーバブル記憶域の保護](device-control-removable-storage-protection.md)
 
-5. [エクスプロイト保護を有効にします](enable-exploit-protection.md)。
+6. [ネットワーク保護を有効にします](enable-network-protection.md)。
 
-6. [攻撃対象の縮小ルールをデプロイします](attack-surface-reduction-rules-deployment.md)。
+7. [Web 保護の有効化の概要](web-protection-overview.md)
 
-7. ネットワーク ファイアウォールを設定します。
+8. [エクスプロイト保護を有効にします](enable-exploit-protection.md)。
+
+9. ネットワーク ファイアウォールを設定します。
 
    1. [高度なセキュリティを備えたWindows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)の概要を確認します。
    2. [Windows Defender ファイアウォール設計ガイド](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-design-guide)を使用して、ファイアウォール ポリシーを設計する方法を決定します。
@@ -296,7 +300,7 @@ Windows イベント ビューアーでは、次のイベントにアクセス�
 | [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要です)。 |
 | [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されないように保護します。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
 | [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することで、データ損失から保護します。 |
-| [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件について説明します。 |
+| [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件と、テスト、有効化、および監視に関する詳細なガイダンスを示します。 |
 | [攻撃面の縮小 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md) | 攻撃表面縮小ルールの展開に推奨される手順を一覧表示します。 |
 | [攻撃面の減少 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md) | 監査モードを使用して、攻撃表面の縮小ルールをテストする手順について説明します。 |
 | [攻撃面の減少 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md) | 攻撃表面縮小ルールをテスト (監査) モードからアクティブで有効な (ブロック) モードに移行する手順を示します。 |

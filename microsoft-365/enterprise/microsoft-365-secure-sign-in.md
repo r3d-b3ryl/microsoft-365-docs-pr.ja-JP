@@ -14,14 +14,17 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: ユーザーが多要素認証（MFA）およびその他の機能を使用して安全にサインインすることを要求します。
-ms.openlocfilehash: 4566b2c8c73ce258899e1de6ef621715092e50a5
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 56ccd1df24bbfb09920cb0c7138ed2e5dc9ca3cb
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65090277"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749970"
 ---
 # <a name="step-3-protect-your-microsoft-365-user-accounts"></a>手順 3: あなたの Microsoft 365 ユーザー アカウントを保護する
 

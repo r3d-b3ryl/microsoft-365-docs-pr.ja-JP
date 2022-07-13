@@ -15,20 +15,21 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 description: 監査ポリシーとアラート ポリシーとデータ主体の要求を使用して、個人データ インシデントを監視し、対応します。
-ms.openlocfilehash: 5954fc193f6071dbf94277ff57f599e3bb98f7d2
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2a19154b9b0602eded09e6521dc285c00fd56a10
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013268"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748288"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>組織内のデータ プライバシー インシデントを監視して対応する
 
-Microsoft 365機能は、関連する機能を運用する際に組織内のデータ プライバシー インシデントを監視、調査、および対応するのに役立ちます。 それぞれのプロセス、手順、およびその他のドキュメントを持つことは、規制機関へのコンプライアンスを示すためにも重要な場合があります。
+Microsoft 365 機能は、関連する機能を運用する際に、組織内のデータ プライバシー インシデントを監視、調査、および対応するのに役立ちます。 それぞれのプロセス、手順、およびその他のドキュメントを持つことは、規制機関へのコンプライアンスを示すためにも重要な場合があります。
 
-これには、次のものが含まれます。 
+たとえば、次の環境です。: 
 
 - 監査ポリシーとアラート ポリシー
 - データ主体の要求 (コンテンツ検索と電子情報開示を含む)
@@ -56,7 +57,7 @@ Microsoft 365機能は、関連する機能を運用する際に組織内のデ�
 
 組織では、他のコンプライアンス ニーズやビジネス上の理由など、他の目的で監視と対応アクティビティを実行することもできます。 データプライバシーの監視と対応スキームの確立は、全体的な監視と対応の計画、実装、および管理の一環として行う必要があります。
 
-データプライバシー規制のMicrosoft 365で監視と対応スキームを開始するために、この記事では、次のような質問に答えるMicrosoft 365で役立つ機能を一覧表示します。 
+データプライバシー規制に関する Microsoft 365 の監視と対応スキームの使用を開始するために、この記事では、次のような質問に答えるために、Microsoft 365 の便利な機能を一覧表示します。 
 
 - さまざまなデータの種類とソースに対して、どのような日常的な監視、調査、およびレポート手法を利用できますか?
 - データ主体要求 (DSR) と、匿名化、再実行、削除などの修復アクションを処理するために必要なメカニズム。
@@ -72,12 +73,12 @@ Microsoft 365機能は、関連する機能を運用する際に組織内のデ�
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>GDPR と CCPA のデータ主体要求
 
-Microsoft 365で DSR に応答する方法については、「[GDPR と CCPA のデータ主体](/compliance/regulatory/gdpr-dsr-Office365)要求」を参照してください。
+Microsoft 365 の DSR への対応については、 [GDPR と CCPA のデータ主体](/compliance/regulatory/gdpr-dsr-Office365) 要求に関するページを参照してください。
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Microsoft Streamで削除されたユーザーを管理する
 
-Microsoft Streamの場合、ユーザーが Azure Active Directory (Azure AD) から削除された場合、その名前がそのポイントより前の投稿された Stream ビデオに関連付けられていた場合、そのメール アドレスはビデオに関連付けられたままになります。 削除するには、「[Microsoft Streamから削除されたユーザーを管理](/stream/managing-deleted-users)する」を参照してください。
+Microsoft Streamでは、ユーザーが Azure Active Directory (Azure AD) から削除されたときに、その名前がその時点より前に投稿された Stream ビデオに関連付けられていた場合、そのメール アドレスはビデオに関連付けられたままになります。 削除するには、「[Microsoft Streamから削除されたユーザーを管理](/stream/managing-deleted-users)する」を参照してください。
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>調査ツールとしてのインサイダー リスク管理
 
-[インサイダー リスク管理](../compliance/insider-risk-management.md) は、組織内の危険なアクティビティを検出、調査、および実行できるようにすることで内部リスクを最小限に抑える Microsoft Purview コンプライアンス ポータルの機能です。
+[インサイダー リスク管理](../compliance/insider-risk-management.md)は、組織内の危険なアクティビティを検出、調査、および実行できるようにすることで内部リスクを最小限に抑えるのに役立つ、Microsoft Purview コンプライアンス ポータルの機能です。

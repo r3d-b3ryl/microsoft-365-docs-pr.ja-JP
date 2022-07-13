@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-overview
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f7830bb25f2572c43d665d059e0a36bc1fdaa172
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 5256a578abb515f7d8d2d6e73b5a01fe71404dd0
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500785"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750080"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Microsoft 365 Defender の評価とパイロット
 
@@ -51,9 +52,9 @@ XDR について初めて考える場合は、これらの 7 つのリンクさ�
 
 ## <a name="microsoft-365-defender-is-a-microsoft-xdr-cyber-security-solution"></a>Microsoft 365 Defenderは Microsoft XDR サイバー セキュリティ ソリューションです
 
-Microsoft 365 Defenderは、*エンドポイント、電子メール、アプリケーション、ID* など、Microsoft 365環境 *全体* のシグナル、脅威、アラート データを自動的に収集、関連付け、分析する **eXtended 検出と応答 (XDR) ソリューション** です。 人工知能 (AI) と自動化を利用して、攻撃を *自動的に* 停止し、影響を受ける資産を安全な状態に修復します。
+Microsoft 365 Defenderは、*エンドポイント、電子メール、アプリケーション、ID* など、Microsoft 365 環境 *全体* のシグナル、脅威、アラート データを自動的に収集、関連付け、分析する **eXtended 検出と応答 (XDR) ソリューション** です。 人工知能 (AI) と自動化を利用して、攻撃を *自動的に* 停止し、影響を受ける資産を安全な状態に修復します。
 
-XDR は、セキュリティの次のステップと考え、エンドポイント (エンドポイントでの検出と対応またはEDR)、電子メール、アプリ、ID セキュリティを 1 か所で統合します。
+XDR は、セキュリティの次のステップと考え、エンドポイント (エンドポイントの検出と応答または EDR)、電子メール、アプリ、ID セキュリティを 1 か所で統合します。
 
 ## <a name="microsoft-recommendations-for-evaluating-microsoft-365-defender"></a>Microsoft 365 Defenderを評価するための Microsoft の推奨事項
 
@@ -86,7 +87,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 |Microsoft Defender for Office 365|Microsoft Defender for Office 365は、電子メール メッセージ、リンク (URL)、コラボレーション ツールによってもたらされる悪意のある脅威から組織を保護します。|[Microsoft Defender for Office 365 - Office 365](../office-365-security/overview.md)|
 |Microsoft Defender for Endpoint|Microsoft Defender for Endpointは、デバイス保護、違反後の検出、自動調査、推奨される対応のための統合プラットフォームです。|[Microsoft Defender for Endpoint - Windows セキュリティ](../defender-endpoint/microsoft-defender-endpoint.md)|
 |Microsoft Defender for Cloud Apps|Microsoft Defender for Cloud Appsは包括的なクロス SaaS ソリューションであり、クラウド アプリに対する可視性、強力なデータ制御、強化された脅威保護を実現します。|[Defender for Cloud Apps とは](/cloud-app-security/what-is-cloud-app-security)|
-|Azure AD Identity Protection|Azure AD Identity Protection は、数十億回のサインイン試行のリスク データを評価し、このデータを使用して、環境への各サインインのリスクを評価します。 このデータは、条件付きアクセス ポリシーの構成方法に応じて、アカウントへのアクセスを許可または禁止するためにAzure ADによって使用されます。 Azure AD Identity Protection は、Microsoft 365 Defenderとは別にライセンスされています。 Azure Active Directory Premium P2に含まれています。|[Identity Protection とは](/azure/active-directory/identity-protection/overview-identity-protection)|
+|Azure AD Identity Protection|Azure AD Identity Protection は、数十億回のサインイン試行のリスク データを評価し、このデータを使用して、環境への各サインインのリスクを評価します。 このデータは、条件付きアクセス ポリシーの構成方法に応じて、アカウントへのアクセスを許可または禁止するために Azure AD によって使用されます。 Azure AD Identity Protection は、Microsoft 365 Defenderとは別にライセンスされています。 Azure Active Directory Premium P2に含まれています。|[Identity Protection とは](/azure/active-directory/identity-protection/overview-identity-protection)|
 ||||
 
 ## <a name="microsoft-365-defender-architecture"></a>Microsoft 365 Defender アーキテクチャ
@@ -102,7 +103,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 - Microsoft Defender for Identityは、Active Directory フェデレーション サービス (AD FS) と オンプレミスの Active Directory Domain Services (AD DS) を実行しているサーバーからの信号を収集します。 これらのシグナルを使用して、侵害されたアカウントを使用してオンプレミス環境内のワークステーション間を横方向に移動するハッカーから保護するなど、ハイブリッド ID 環境を保護します。
 - Microsoft Defender for Endpointは、組織で使用されるデバイスからシグナルを収集し、保護します。
 - Microsoft Defender for Cloud Appsは、組織によるクラウド アプリの使用からのシグナルを収集し、承認されたクラウド アプリと承認されていないクラウド アプリの両方を含め、環境とこれらのアプリの間を流れるデータを保護します。
-- Azure AD Identity Protection は、数十億回のサインイン試行のリスク データを評価し、このデータを使用して、環境への各サインインのリスクを評価します。 このデータは、条件付きアクセス ポリシーの構成方法に応じて、アカウントへのアクセスを許可または禁止するためにAzure ADによって使用されます。 Azure AD Identity Protection は、Microsoft 365 Defenderとは別にライセンスされています。 Azure Active Directory Premium P2に含まれています。
+- Azure AD Identity Protection は、数十億回のサインイン試行のリスク データを評価し、このデータを使用して、環境への各サインインのリスクを評価します。 このデータは、条件付きアクセス ポリシーの構成方法に応じて、アカウントへのアクセスを許可または禁止するために Azure AD によって使用されます。 Azure AD Identity Protection は、Microsoft 365 Defenderとは別にライセンスされています。 Azure Active Directory Premium P2に含まれています。
 
 ## <a name="microsoft-siem-and-soar-can-use-data-from-microsoft-365-defender"></a>Microsoft SIEM と SOAR は、Microsoft 365 Defenderからのデータを使用できます
 
@@ -110,11 +111,11 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 - **すべてのMicrosoft 365 Defender コンポーネントからの詳細なシグナル データは、Microsoft Sentinel に統合し**、他のログ ソースと組み合わせて、SIEM と SOAR の完全な機能と分析情報を提供できます。
 - Microsoft 365 Defenderを XDR として **使用する Azure SIEM Microsoft Sentinel の使用の詳細については、** この [概要記事](/azure/sentinel/microsoft-365-defender-sentinel-integration)と Microsoft Sentinel と Microsoft 365 Defender [統合の手順](/azure/sentinel/connect-microsoft-365-defender?tabs=MDE)を参照してください。
-- Microsoft Sentinel の SOAR (Microsoft Sentinel GitHub リポジトリのプレイブックへのリンクを含む) の詳細については、[この記事](/azure/sentinel/automate-responses-with-playbooks)を参照してください。
+- Microsoft Sentinel の SOAR (Microsoft Sentinel GitHub リポジトリのプレイブックへのリンクを含む) の詳細については、 [この記事](/azure/sentinel/automate-responses-with-playbooks)を参照してください。
 
 ## <a name="the-evaluation-process-for-microsoft-365-defender-cyber-security"></a>Microsoft 365 Defenderサイバー セキュリティの評価プロセス
 
-次に示す順序で、Microsoft 365のコンポーネントを有効にすることをお勧めします。
+Microsoft では、次に示す順序で Microsoft 365 のコンポーネントを有効にすることをお勧めします。
 
 :::image type="content" source="../../media/defender/m365-defender-eval-process.png" alt-text="Microsoft 365 Defender ポータルでの高度な評価プロセス" lightbox="../../media/defender/m365-defender-eval-process.png":::
 
@@ -122,7 +123,7 @@ Microsoft 365 Defenderは、これらのセキュリティ テクノロジで構
 
 |  シリアル番号   |手順  |説明  |
 |------|---------|---------|
-|1     | [評価環境を作成する](eval-create-eval-environment.md)       |この手順では、Microsoft 365 Defenderの試用版ライセンスを確実に取得できます。         |
+|1     | [評価環境を構築する](eval-create-eval-environment.md)       |この手順では、Microsoft 365 Defenderの試用版ライセンスを確実に取得できます。         |
 |2     | [Defender for Identity を有効にする](eval-defender-identity-overview.md)        | アーキテクチャ要件を確認し、評価を有効にし、さまざまな攻撃の種類を特定して修復するためのチュートリアルについて説明します。   |
 |3     | [Defender for Office 365を有効にする ](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントにはExchange Online Protectionが含まれているため、ここで両方を実際 *に評価します*。      |
 |4     | [Defender for Endpoint を有効にする ](eval-defender-endpoint-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。         |

@@ -11,6 +11,9 @@ ms.localizationpriority: medium
 ms.collection:
 - Strat_O365_IP
 - m365initiative-coredeploy
+- m365solution-m365-identity
+- m365solution-scenario
+- zerotrust-solution
 search.appverid:
 - MET150
 - MOE150
@@ -22,14 +25,14 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: この記事では、Microsoft 365 テナントへの特権アクセスの保護に関する情報を提供します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da8a6279d122a056a168485145c171f9d3d7f5f
-ms.sourcegitcommit: a5e75d7f7651313818bd2de292d5c38b290d8975
+ms.openlocfilehash: 6aebdd79f2870ca25ab866bccb66c1d1f680f701
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65930199"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749333"
 ---
-# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>手順 2. Microsoft 365 特権アカウントを保護する
+# <a name="step-2-protect-your-microsoft-365-privileged-accounts"></a>手順 2。 Microsoft 365 特権アカウントを保護する
 
 *この記事は、Microsoft 365 Enterprise および Office 365 Enterprise の両方に適用されます。*
 
@@ -45,7 +48,7 @@ Microsoft は組織を保護するのに役立つ機能を提供しますが、�
     
 2. 専用の Microsoft 365 特権アカウントに多要素認証 (MFA) を構成し、最も強力な形式のセカンダリ認証を使用します。
 
-3. ゼロ トラスト ID とデバイス アクセスに関する推奨事項を使用して、特権アカウントを保護します。
+3. ゼロ トラスト ID とデバイス アクセスに関する推奨事項を使用して特権アカウントを保護します。
 
 > [!NOTE]
 > 特権ロールをセキュリティで保護するには、テナントへの特権アクセスをセキュリティで保護するための [Azure AD ロールのベスト プラクティス](/azure/active-directory/roles/best-practices) を確認してください。
@@ -61,7 +64,7 @@ Microsoft は組織を保護するのに役立つ機能を提供しますが、�
 
 また、Azure AD から誤ってロックアウトされないように、 [緊急アクセス アカウント](/azure/active-directory/roles/security-emergency-access) を作成する必要もあります。
 
-Azure AD Privileged Identity Management (PIM) を使用して特権アカウントをさらに保護し、管理者ロールをオンデマンドで Just-In-Time で割り当てることができます。 
+Azure AD Privileged Identity Management (PIM) を使用して特権アカウントをさらに保護し、管理者ロールをオンデマンドでジャストインタイムで割り当てることができます。 
  
 ## <a name="2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-privileged-accounts"></a>2. 専用の Microsoft 365 特権アカウントの多要素認証を構成する
 

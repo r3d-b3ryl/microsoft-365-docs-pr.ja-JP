@@ -1,5 +1,5 @@
 ---
-title: ゲスト ユーザーと外部ユーザー B2B アクセスを許可するための ID ポリシーとデバイス アクセス ポリシー - エンタープライズ |のMicrosoft 365Microsoft Docs
+title: ゲスト ユーザーと外部ユーザー B2B アクセスを許可するための ID ポリシーとデバイス アクセス ポリシー - Microsoft 365 for enterprise |Microsoft Docs
 description: ゲストと外部ユーザーのアクセスを保護するための推奨される条件付きアクセスと関連ポリシーについて説明します。
 ms.prod: m365-security
 ms.topic: article
@@ -18,13 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 28b389292ed733318e5796a1be3ed9c11d2df462
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c6784f73b431826063d94794606b373662446324
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64466611"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750146"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>ゲスト アクセスと B2B 外部ユーザー アクセスを許可するためのポリシー
 
@@ -53,9 +54,9 @@ Azure AD テナントで認証するための B2B アカウントのパスを指
 
 ## <a name="more-information"></a>詳細情報
 
-### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Microsoft Teamsを使用したゲストと外部ユーザー アクセス
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Microsoft Teams を使用したゲストと外部ユーザー アクセス
 
-Microsoft Teamsは、次のユーザーを定義します。
+Microsoft Teams では、次のユーザーが定義されています。
 
 - **ゲスト アクセス** では、チームのメンバーとして追加でき、チームの通信とリソースにアクセスできる Azure AD B2B アカウントが使用されます。
 
@@ -63,7 +64,7 @@ Microsoft Teamsは、次のユーザーを定義します。
 
 詳細については、 [ゲストとチームの外部ユーザー アクセスの比較を](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access)参照してください。
 
-Teamsの ID ポリシーとデバイス アクセス ポリシーのセキュリティ保護の詳細については、「[Teams チャット、グループ、ファイルのセキュリティ保護に関するポリシーに関する推奨事項](teams-access-policies.md)」を参照してください。
+Teams の ID およびデバイス アクセス ポリシーのセキュリティ保護の詳細については、「 [Teams チャット、グループ、ファイルをセキュリティで保護するためのポリシーに関する推奨事項](teams-access-policies.md)」を参照してください。
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>ゲストユーザーと外部ユーザーに対して常に MFA を要求する
 
@@ -71,7 +72,7 @@ Teamsの ID ポリシーとデバイス アクセス ポリシーのセキュリ
 
 ### <a name="excluding-guests-and-external-users-from-risk-based-mfa"></a>ゲストと外部ユーザーをリスクベースの MFA から除外する
 
-組織では、Azure AD Identity Protection を使用して B2B ユーザーにリスクベースのポリシーを適用できますが、ホーム ディレクトリに存在する ID が原因で、リソース ディレクトリに B2B コラボレーション ユーザー向けの Azure AD Identity Protection を実装する際には制限があります。 これらの制限により、Microsoft では、リスクベースの MFA ポリシーからゲストを除外し、これらのユーザーに常に MFA を使用するよう要求することをお勧めします。
+組織では、Azure AD Identity Protection を使用して B2B ユーザーにリスクベースのポリシーを適用できますが、ホーム ディレクトリに存在する ID が原因で、リソース ディレクトリに B2B コラボレーション ユーザー向けの Azure AD Identity Protection の実装に制限があります。 これらの制限により、Microsoft では、リスクベースの MFA ポリシーからゲストを除外し、これらのユーザーに常に MFA を使用するよう要求することをお勧めします。
 
 詳細については、「 [B2B コラボレーション ユーザーの Identity Protection の制限事項](/azure/active-directory/identity-protection/concept-identity-protection-b2b#limitations-of-identity-protection-for-b2b-collaboration-users)」を参照してください。
 
@@ -79,9 +80,9 @@ Teamsの ID ポリシーとデバイス アクセス ポリシーのセキュリ
 
 デバイスを管理できる組織は 1 つだけです。 デバイスコンプライアンスを必要とするポリシーからゲストと外部ユーザーを除外しない場合、これらのポリシーはこれらのユーザーをブロックします。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="クラウド アプリとMicrosoft Defender for Cloud AppsをMicrosoft 365するためのポリシー" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png" alt-text="Microsoft 365 クラウド アプリとMicrosoft Defender for Cloud Appsのポリシー" lightbox="../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png":::
 
 次の条件付きアクセス ポリシーを構成する:
 

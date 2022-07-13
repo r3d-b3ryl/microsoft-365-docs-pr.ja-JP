@@ -18,14 +18,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 47f36d965c9b2b6ef5f106c590e47fe0251163d8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 769a70177ada62b4dbb505a8363fe3bdbfc4a59a
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63323977"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748739"
 ---
 # <a name="step-7-promote-your-microsoft-365-defender-evaluation-environment-to-production"></a>手順 7. Microsoft 365 Defender評価環境を運用環境に昇格させる
 

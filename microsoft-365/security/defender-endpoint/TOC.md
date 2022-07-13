@@ -262,6 +262,12 @@
 ##### [制御されたフォルダー アクセスを評価する](evaluate-controlled-folder-access.md)
 ##### [制御されたフォルダー アクセスを有効にする](enable-controlled-folders.md)
 ##### [制御されたフォルダー アクセスをカスタマイズする](customize-controlled-folders.md)
+#### [デバイス コントロール]()
+##### [リムーバブル記憶域の保護](device-control-removable-storage-protection.md)
+##### [リムーバブル記憶域のアクセス制御](device-control-removable-storage-access-control.md)
+##### [デバイスのインストール](mde-device-control-device-installation.md)
+##### [デバイス制御のプリンター保護](printer-protection.md)
+##### [デバイス コントロールのレポート](device-control-report.md)
 #### [エクスプロイト保護]()
 ##### [エクスプロイトからデバイスを保護する](exploit-protection.md)
 ##### [エクスプロイト保護の評価](evaluate-exploit-protection.md)
@@ -273,6 +279,14 @@
 ##### [ネットワークを保護する](network-protection.md)
 ##### [ネットワーク保護を評価する](evaluate-network-protection.md)
 ##### [ネットワーク保護を有効にする](enable-network-protection.md)
+#### [Web 保護]()
+##### [Web 保護の概要](web-protection-overview.md)
+##### [Web の脅威に対する保護]()
+###### [Web の脅威に対する保護の概要](web-threat-protection.md)
+###### [Web セキュリティの監視](web-protection-monitoring.md)
+###### [Web の脅威への対応](web-protection-response.md)
+##### [Web コンテンツ フィルタリング](web-content-filtering.md)
+
 
 ### 次世代の保護
 #### [次世代保護の概要](next-generation-protection.md)
@@ -353,21 +367,6 @@
 ##### [Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする](troubleshoot-microsoft-defender-antivirus.md)
 ##### [サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
-#### [Web 保護]()
-##### [Web 保護の概要](web-protection-overview.md)
-##### [Web の脅威に対する保護]()
-###### [Web の脅威に対する保護の概要](web-threat-protection.md)
-###### [Web セキュリティの監視](web-protection-monitoring.md)
-###### [Web の脅威への対応](web-protection-response.md)
-##### [Web コンテンツ フィルタリング](web-content-filtering.md)
-
-#### [デバイス コントロール]()
-##### [リムーバブル記憶域の保護](device-control-removable-storage-protection.md)
-##### [リムーバブル記憶域のアクセス制御](device-control-removable-storage-access-control.md)
-##### [デバイスのインストール](mde-device-control-device-installation.md)
-##### [デバイス制御のプリンター保護](printer-protection.md)
-##### [デバイス コントロールのレポート](device-control-report.md)
-
 #### [動作ブロックと封じ込め]()
 ##### [動作ブロックと封じ込め](behavioral-blocking-containment.md)
 ##### [クライアントの動作ブロック](client-behavioral-blocking.md)
@@ -379,9 +378,6 @@
 
 #### [セキュリティ ベースラインへの準拠を強化する](configure-machines-security-baseline.md)
 #### [攻撃面の減少ルールの展開と検出を最適化する](configure-machines-asr.md)
-
-## [アクティブな脅威とキャンペーンの開始ガイダンス]()
-### [Log4Shell の脆弱性を管理する](tvm-manage-log4shell-guidance.md)
 
 ## [脅威の調査と対応]()
 ### [エンドポイントでの検出と対応]()

@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2acde87daaff88ec9ce7458218919342a9f1edd8
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 0e3cd7a16b45a7dfd78011d7753866069d3144dc
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782503"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748871"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Microsoft Defender for Endpoint評価環境を有効にする
 
@@ -47,25 +48,25 @@ ms.locfileid: "64782503"
 
 ## <a name="step-1-check-license-state"></a>手順 1. ライセンスの状態を確認する
 
-まず、ライセンスの状態を確認して、適切にプロビジョニングされたことを確認する必要があります。 これを行うには、管理センターまたは **Microsoft Azure ポータル** を使用します。
+まず、ライセンスの状態を確認して、適切にプロビジョニングされたことを確認する必要があります。 これを行うには、管理センターまたは **Microsoft Azure portal** を使用します。
 
 
-1. ライセンスを表示するには、**Microsoft Azure ポータル** に移動し、[Microsoft Azure ポータルのライセンス セクション](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)に移動します。
+1. ライセンスを表示するには、**Microsoft Azure portal** に移動し、[Microsoft Azure portal ライセンス セクション](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)に移動します。
 
    :::image type="content" source="../../media/defender/atp-licensing-azure-portal.png" alt-text="Microsoft 365 Defender ポータルの [Azure ライセンス] ページ" lightbox="../../media/defender/atp-licensing-azure-portal.png":::
 
-1. または、管理センターで **BillingSubscriptions** >  に移動します。
+1. または、管理センターで **[課金** > **サブスクリプション]** に移動します。
 
     画面に、プロビジョニングされたすべてのライセンスとその現在の **状態** が表示されます。
 
-    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Microsoft Azure ポータルの [課金ライセンス] ページ" lightbox="../../media/defender/atp-billing-subscriptions.png":::
+    :::image type="content" source="../../media/defender/atp-billing-subscriptions.png" alt-text="Microsoft Azure portalの [課金ライセンス] ページ" lightbox="../../media/defender/atp-billing-subscriptions.png":::
     
 
 ## <a name="step-2-onboard-endpoints-using-any-of-the-supported-management-tools"></a>手順 2。 サポートされている管理ツールのいずれかを使用してエンドポイントをオンボードする
 
 ライセンス状態が適切にプロビジョニングされたことを確認したら、サービスへのデバイスのオンボードを開始できます。 
 
-Microsoft Defender for Endpointを評価するために、評価を実施するWindowsデバイスをいくつか選択することをお勧めします。
+Microsoft Defender for Endpointを評価するために、評価を行う Windows デバイスをいくつか選択することをお勧めします。
 
 サポートされている管理ツールのいずれかを使用することもできますが、Intuneは最適な統合を提供します。 詳細については、「[Microsoft IntuneでのMicrosoft Defender for Endpointの構成](/mem/intune/protect/advanced-threat-protection-configure#enable-microsoft-defender-for-endpoint-in-intune)」を参照してください。
 
@@ -81,15 +82,15 @@ Microsoft Defender for Endpointを評価するために、評価を実施するW
 
 エンドポイント | ツール オプション
 :---|:---
-**Windows** | [ローカル スクリプト (最大 10 台のデバイス)](../defender-endpoint/configure-endpoints-script.md)、[グループ ポリシー](../defender-endpoint/configure-endpoints-gp.md)、[Microsoft エンドポイント マネージャー/モバイル デバイス マネージャー](../defender-endpoint/configure-endpoints-mdm.md)、[Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)、[VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md)、[との統合Microsoft Defender for Cloud](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
-**macOS** | [ローカル スクリプト](../defender-endpoint/mac-install-manually.md)、[Microsoft エンドポイント マネージャー](../defender-endpoint/mac-install-with-intune.md)、[JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[モバイル デバイス管理](../defender-endpoint/mac-install-with-other-mdm.md)
+**Windows** | [ローカル スクリプト (最大 10 台)](../defender-endpoint/configure-endpoints-script.md)、[グループ ポリシー](../defender-endpoint/configure-endpoints-gp.md)、[Microsoft エンドポイント マネージャー/モバイル デバイス マネージャー](../defender-endpoint/configure-endpoints-mdm.md)、[Microsoft Endpoint Configuration Manager](../defender-endpoint/configure-endpoints-sccm.md)、[VDI スクリプト](../defender-endpoint/configure-endpoints-vdi.md)、[Microsoft Defender for Cloud との統合](../defender-endpoint/configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)
+**macOS** | [ローカル スクリプト](../defender-endpoint/mac-install-manually.md)、[Microsoft エンドポイント マネージャー](../defender-endpoint/mac-install-with-intune.md)、[JAMF Pro](../defender-endpoint/mac-install-with-jamf.md)、[Mobile デバイス管理](../defender-endpoint/mac-install-with-other-mdm.md)
 **Linux Server** | [ローカル スクリプト](../defender-endpoint/linux-install-manually.md)、  [Puppet](../defender-endpoint/linux-install-with-puppet.md)、  [Ansible](../defender-endpoint/linux-install-with-ansible.md)
 **iOS** | [アプリベース](../defender-endpoint/ios-install.md)
 **Android** | [Microsoft エンドポイント マネージャー](../defender-endpoint/android-intune.md)
 
 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 [Microsoft Defender for Endpointのパイロットをセットアップする](eval-defender-endpoint-pilot.md)
  
 [Microsoft Defender for Endpointの評価](eval-defender-endpoint-overview.md)の概要に戻る

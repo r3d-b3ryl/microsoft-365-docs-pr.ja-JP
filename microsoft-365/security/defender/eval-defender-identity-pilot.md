@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: bba910b46c4b4769e67ae00af0381e129139dfe5
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 4805c97d79d36879a7b5081c347bd81c655c58c4
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754554"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66747903"
 ---
 # <a name="pilot-microsoft-defender-for-identity"></a>パイロット Microsoft Defender for Identity
 
@@ -45,7 +46,7 @@ Microsoft Defender for IDENTITY のパイロットをセットアップして構
 - [手順 1: ID 環境のベンチマーク推奨事項を構成する](#step-1-configure-benchmark-recommendations-for-your-identity-environment)
 - [手順 2: 機能を試す - さまざまな攻撃の種類を特定して修復するためのチュートリアルを見る ](#step-2-try-out-capabilities--walk-through-tutorials-for-identifying-and-remediating-different-attack-types)
 
-## <a name="step-1-configure-benchmark-recommendations-for-your-identity-environment"></a>手順 1. ID 環境のベンチマークの推奨事項を構成する
+## <a name="step-1-configure-benchmark-recommendations-for-your-identity-environment"></a>手順 1。 ID 環境のベンチマークの推奨事項を構成する
 
 Microsoft では、Microsoft Cloud サービスを使用しているお客様に対してセキュリティ ベンチマークに関する推奨事項を提供しています。 [Azure Security Benchmark](/security/benchmark/azure/overview) (ASB) には、Azure 上のワークロード、データ、サービスのセキュリティを向上させるための規範的なベスト プラクティスと推奨事項が用意されています。
 

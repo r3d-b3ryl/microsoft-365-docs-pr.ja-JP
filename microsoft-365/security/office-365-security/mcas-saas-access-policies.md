@@ -14,25 +14,26 @@ ms.custom:
 ms.collection:
 - M365-identity-device-management
 - M365-security-compliance
+- zerotrust-solution
 ms.prod: m365-security
-ms.openlocfilehash: 8386b01da6d0db5703d74d96f4e22de18b1f7d70
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 3a0c5b3cbc34bf24c04a476091e3dc08b0655a74
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873624"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750256"
 ---
 # <a name="recommended-microsoft-defender-for-cloud-apps-policies-for-saas-apps"></a>推奨される SaaS アプリ用 Microsoft Defender for Cloud Apps ポリシー
 
 Microsoft Defender for Cloud Appsは、ダウンロードのブロック、アップロード、コピーと貼り付け、印刷など、SaaS アプリできめ細かなアクションをリアルタイムで監視および制御できるように、Azure AD の条件付きアクセス ポリシーに基づいています。 この機能により、企業リソースにアンマネージド デバイスやゲスト ユーザーからアクセスされる場合など、固有のリスクを伴うセッションにセキュリティが追加されます。
 
-Defender for Cloud アプリは、Microsoft Purview 情報保護とネイティブに統合され、機密情報の種類と秘密度ラベルに基づいて機密データを検索し、適切なアクションを実行するためのリアルタイムコンテンツ検査を提供します。
+Defender for Cloud Apps は、ネイティブにMicrosoft Purview 情報保護と統合され、機密情報の種類と秘密度ラベルに基づいて機密データを検索し、適切なアクションを実行するためのリアルタイムコンテンツ検査を提供します。
 
 このガイダンスには、次のシナリオに関する推奨事項が含まれています。
 
 - SaaS アプリを IT 管理に取り込む
 - 特定の SaaS アプリの保護を調整する
-- データ保護規則に準拠できるようにMicrosoft Purviewデータ損失防止 (DLP) を構成する
+- データ保護規則に準拠できるように Microsoft Purview データ損失防止 (DLP) を構成する
 
 ## <a name="bring-saas-apps-into-it-management"></a>SaaS アプリを IT 管理に取り込む
 
@@ -45,15 +46,15 @@ Defender for Cloud Apps を使用して SaaS アプリを管理する最初の�
 
 通常、SaaS アプリに対するアクセス許可は、アプリへのアクセスに必要なビジネスニーズに基づいています。 これらのアクセス許可は非常に動的な場合があります。 Defender for Cloud Apps ポリシーを使用すると、ユーザーが開始点、エンタープライズ、または特殊なセキュリティ保護に関連付けられている Azure AD グループに割り当てられているかどうかに関係なく、アプリ データの保護が保証されます。
 
-SaaS アプリのコレクション全体でデータを保護するために、次の図は、必要な Azure AD 条件付きアクセス ポリシーと、Defender for Cloud Apps で作成できる推奨ポリシーを示しています。 この例では、Defender for Cloud Apps で作成されたポリシーは、管理しているすべての SaaS アプリに適用されます。 これらは、既にファイルに適用されている機密ラベルだけでなく、デバイスが管理されているかどうかに基づいて適切な制御を適用するように設計されています。
+SaaS アプリのコレクション全体でデータを保護するために、次の図は、Defender for Cloud Apps で作成できる必要な Azure AD 条件付きアクセス ポリシーと推奨されるポリシーを示しています。 この例では、Defender for Cloud Apps で作成されたポリシーは、管理しているすべての SaaS アプリに適用されます。 これらは、既にファイルに適用されている機密ラベルだけでなく、デバイスが管理されているかどうかに基づいて適切な制御を適用するように設計されています。
 
 :::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png" alt-text="Defender for Cloud Apps で SaaS アプリを管理するためのポリシー" lightbox="../../media/microsoft-365-policies-configurations/mcas-manage-saas-apps-2.png":::
 
 次の表に、Azure AD で作成する必要がある新しい条件付きアクセス ポリシーを示します。
 
-|保護レベル|ポリシー|詳細|
+|保護レベル|ポリシー|詳細情報|
 |---|---|---|
-|すべての保護レベル|[Defender for Cloud アプリで条件付きアクセス アプリ制御を使用する](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|これにより、Defender for Cloud Apps を操作するように IdP (Azure AD) が構成されます。|
+|すべての保護レベル|[Defender for Cloud Apps で条件付きアクセス アプリ制御を使用する](/cloud-app-security/proxy-deployment-aad#configure-integration-with-azure-ad)|これにより、Defender for Cloud Apps を使用するように IdP (Azure AD) が構成されます。|
 ||||
 
 次の表に、すべての SaaS アプリを保護するために作成できる上記のポリシーの例を示します。 自分のビジネス、セキュリティ、コンプライアンスの目標を必ず評価し、環境に最も適切な保護を提供するポリシーを作成してください。
@@ -61,7 +62,7 @@ SaaS アプリのコレクション全体でデータを保護するために、
 |保護レベル|ポリシー|
 |---|---|
 |開始点|管理されていないデバイスからのトラフィックを監視する <p> 非管理対象デバイスからのファイルダウンロードに保護を追加する|
-|大企業|非管理対象デバイスから機密または分類されたラベルが付けられたファイルのダウンロードをブロックする (これにより、ブラウザーのみのアクセスが提供されます)|
+|大規模企業|非管理対象デバイスから機密または分類されたラベルが付けられたファイルのダウンロードをブロックする (これにより、ブラウザーのみのアクセスが提供されます)|
 |特殊なセキュリティ|すべてのデバイスから分類されたラベルが付いたファイルのダウンロードをブロックします (これにより、ブラウザーのみのアクセスが提供されます)|
 |||
 
@@ -71,7 +72,7 @@ SaaS アプリのコレクション全体でデータを保護するために、
 
 ## <a name="tune-protection-for-specific-saas-apps"></a>特定の SaaS アプリの保護を調整する
 
-環境内の特定の SaaS アプリに、追加の監視と制御を適用できます。 Defender for Cloud アプリを使用すると、これを実現できます。 たとえば、Box のようなアプリが環境で頻繁に使用されている場合は、追加のコントロールを適用するのが理にかなっています。 または、法務部門または財務部門が機密ビジネス データに特定の SaaS アプリを使用している場合は、これらのアプリに対して追加の保護をターゲットにすることができます。
+環境内の特定の SaaS アプリに、追加の監視と制御を適用できます。 Defender for Cloud Apps を使用すると、これを実現できます。 たとえば、Box のようなアプリが環境で頻繁に使用されている場合は、追加のコントロールを適用するのが理にかなっています。 または、法務部門または財務部門が機密ビジネス データに特定の SaaS アプリを使用している場合は、これらのアプリに対して追加の保護をターゲットにすることができます。
 
 たとえば、次の種類の組み込みの異常検出ポリシー テンプレートを使用して Box 環境を保護できます。
 
@@ -88,23 +89,23 @@ SaaS アプリのコレクション全体でデータを保護するために、
 
 これらは例です。 追加のポリシー テンプレートは定期的に追加されます。 特定のアプリに追加の保護を適用する方法の例については、「 [接続されているアプリの保護](/cloud-app-security/protect-connected-apps)」を参照してください。
 
-[Defender for Cloud アプリを使用して Box 環境を保護する方法](/cloud-app-security/protect-box)は、Box やその他のアプリのビジネス データを機密データで保護するのに役立つコントロールの種類を示しています。
+[Defender for Cloud Apps が Box 環境の保護にどのように役立つか](/cloud-app-security/protect-box) は、Box やその他のアプリのビジネス データを機密データで保護するのに役立つコントロールの種類を示しています。
 
 ## <a name="configure-data-loss-prevention-dlp-to-help-comply-with-data-protection-regulations"></a>データ保護規制に準拠できるようにデータ損失防止 (DLP) を構成する
 
-Defender for Cloud アプリは、コンプライアンス規制の保護を構成するための貴重なツールです。 この場合、規制が適用される特定のデータを検索する特定のポリシーを作成し、適切なアクションを実行するように各ポリシーを構成します。
+Defender for Cloud Apps は、コンプライアンス規制の保護を構成するための貴重なツールです。 この場合、規制が適用される特定のデータを検索する特定のポリシーを作成し、適切なアクションを実行するように各ポリシーを構成します。
 
 次の図と表に、一般データ保護規則 (GDPR) に準拠するように構成できるポリシーの例をいくつか示します。 これらの例では、ポリシーは特定のデータを検索します。 データの機密性に基づいて、各ポリシーは適切なアクションを実行するように構成されます。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="データ損失防止の [Defender for Cloud アプリ ポリシー] ページ" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/mcas-dlp.png" alt-text="データ損失防止ページの Defender for Cloud Apps ポリシー" lightbox="../../media/microsoft-365-policies-configurations/mcas-dlp.png":::
 
 |保護レベル|ポリシーの例|
 |---|---|
 |開始点|この機密情報の種類を含むファイル ("クレジット カード番号") が組織外で共有されたときにアラートを送信する <p> >この機密情報の種類 ("クレジット カード番号") を含むファイルの非管理対象デバイスへのダウンロードをブロックする|
-|大企業|この機密情報の種類 ("クレジット カード番号") を含むファイルのダウンロードをマネージド デバイスに保護する <p> この機密情報の種類 ("クレジット カード番号") を含むファイルの非管理対象デバイスへのダウンロードをブロックする <p> これらのラベルが付いたファイルがOneDrive for Businessまたは Box (顧客データ、人事: 給与データ、人事、従業員データ) にアップロードされたときにアラートを送信する|
+|大規模企業|この機密情報の種類 ("クレジット カード番号") を含むファイルのダウンロードをマネージド デバイスに保護する <p> この機密情報の種類 ("クレジット カード番号") を含むファイルの非管理対象デバイスへのダウンロードをブロックする <p> これらのラベルが付いたファイルがOneDrive for Businessまたは Box (顧客データ、人事: 給与データ、人事、従業員データ) にアップロードされたときにアラートを送信する|
 |特殊なセキュリティ|このラベルを持つファイル ("高度に分類された") が管理対象デバイスにダウンロードされたときにアラートを送信する <p> このラベルを持つファイル ("高度に分類") を含むファイルの非管理対象デバイスへのダウンロードをブロックする|
 |||
 
 ## <a name="next-steps"></a>次の手順
 
-Defender for Cloud アプリの使用の詳細については、[Microsoft Defender for Cloud Appsドキュメントを参照してください](/defender-cloud-apps/)。
+Defender for Cloud Apps の使用の詳細については、[Microsoft Defender for Cloud Appsドキュメントを参照してください](/defender-cloud-apps/)。

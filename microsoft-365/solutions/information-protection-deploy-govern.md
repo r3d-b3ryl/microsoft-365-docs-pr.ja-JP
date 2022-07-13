@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
-description: Microsoft 365保持ラベルとポリシーを使用して、Microsoft 365環境で個人データを管理します。
-ms.openlocfilehash: 05aad5b26f65dc66543afb29834e7cc4514e3366
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+description: Microsoft 365 の保持ラベルとポリシーを使用して、Microsoft 365 環境で個人データを管理します。
+ms.openlocfilehash: 2643e183b9121e7e82a3237bde4d977315667008
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947387"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748783"
 ---
 # <a name="govern-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を管理する
 
@@ -49,12 +50,12 @@ ms.locfileid: "64947387"
 
 情報ガバナンスの場合、データ プライバシー規制では通常、次のものが必要です。
 
-- Microsoft 365に格納されている個人データの保持と削除に関する技術的スキームを採用する必要があります。
+- Microsoft 365 に格納されている個人データの保持と削除に関する技術的スキームを採用する必要があります。
 - 個人データを保存する場合は、データが保存される期間を件名に通知します。これは、フロントエンド Web システムでの標準的なプラクティスです。
 - 個人データは、検証可能な方法を使用して、偶発的な処理、損失、または変更から保護する必要があります。
 - 個人データに対して実行されるすべてのアクションを文書化し、そのドキュメントを指定された期間保持する必要があります。
 
-データの保持と削除に関しては、データプライバシー規制はそれほど具体的ではないため、Microsoft 365 サブスクリプションに格納されている個人情報の情報ガバナンスガイドラインを規定する可能性があるその他の要因を考慮する必要があります。 いくつかの例を示します。
+データの保持と削除に関しては、データプライバシー規制はそれほど具体的ではないため、Microsoft 365 サブスクリプションに格納されている個人情報に関する情報ガバナンスガイドラインを規定するその他の要因を考慮する必要があります。 いくつかの例を示します。
 
 - 非アクティブな状態が 5 年間続いた後にコンシューマー アカウントをエージングアウトするには、その時点以降にアカウント データを削除または匿名化する必要があり、通知とその他の自動化に関連するデータとワークフローを格納するシステム間のオーケストレーションが必要になります。
 - GDPR に関連するポリシーと手順を置き換えてから約 3 年間保持するためのルールを構成します。これは、ポリシーと手順に関する組織の保持スケジュールに合わせて調整されます。
@@ -64,15 +65,15 @@ ms.locfileid: "64947387"
 
 - 個人データを含む情報を、ビジネス上の正当な理由で保持し、"無期限に保持" する必要がある期間はどれくらいですか? これは、ビジネス継続性の保持ニーズとバランスを取る必要があります。
 
-個人情報を保持または削除するための法的およびビジネス上の理由に関係なく、Microsoft はデータ ガバナンススキームをMicrosoft 365に実装するためのさまざまな機能を提供します。
+個人情報を保持または削除するための法的およびビジネス上の理由に関係なく、Microsoft は Microsoft 365 でデータ ガバナンス スキームを実装するためのさまざまな機能を提供します。
 
-## <a name="managing-information-governance-in-microsoft-365"></a>Microsoft 365での情報ガバナンスの管理
+## <a name="managing-information-governance-in-microsoft-365"></a>Microsoft 365 での情報ガバナンスの管理
 
-最初に、「[Microsoft 365の Microsoft Purview](../compliance/manage-data-governance.md) と[データの保持、削除、破棄を使用してデータを](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)管理する」を参照してください。
+まず、 [Microsoft Purview と Microsoft](../compliance/manage-data-governance.md) [365 のデータ保持、削除、破棄を使用してデータを](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview)管理する方法に関するページを参照してください。
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>コンテナー、電子メール、およびコンテンツのデータ保持スケジュールを作成する
 
-以下の点にご注意ください。
+以下の点にご注意ください:
 
 - 定義された情報の種類のデータ保持スケジュールを確立することは、保持または削除スキームを実装するための前提条件と見なす必要があります。
 
@@ -84,10 +85,10 @@ ms.locfileid: "64947387"
 
 ### <a name="retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベル
 
-[保持ポリシーと保持ラベル](../compliance/retention.md)を使用して、個人データを含む、または含まれると予想されるMicrosoft 365内のコンテンツを保持または削除します。
+[保持ポリシーと保持ラベル](../compliance/retention.md)を使用して、個人データを含む、または含まれると予想される Microsoft 365 のコンテンツを保持または削除します。
 
 ### <a name="records-management"></a>レコード管理
 
-コンテンツを宣言する保持ラベルを使用して、Microsoft 365内のデータの[レコード管理ソリューション](../compliance/records-management.md)を実装します。
+Microsoft 365 でデータの [レコード管理ソリューション](../compliance/records-management.md) を実装するには、レコードのコンテンツを宣言する保持ラベルを使用します。
 
 データプライバシーの場合、法務部門が受け取ったデータ主体要求 (DSR) はレコードとして宣言され、規制活動の保持仕様に準拠するために、無期限に保存したり、証拠を使用して破棄したりできます。

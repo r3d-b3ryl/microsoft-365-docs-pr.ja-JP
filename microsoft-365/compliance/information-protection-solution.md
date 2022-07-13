@@ -17,13 +17,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-mip
 - m365initiative-compliance
+- zerotrust-solution
 description: 組織に Microsoft Purview の情報保護を展開するための規範的なガイダンス。
-ms.openlocfilehash: 3b62cf6165447288275a7a8c02a64ab27b41d607
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9cbf7f98cb3a758b06c2060f27b179a0e20d556b
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635263"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748365"
 ---
 # <a name="deploy-an-information-protection-solution-with-microsoft-purview"></a>Microsoft Purview を使用して情報保護ソリューションを展開する
 

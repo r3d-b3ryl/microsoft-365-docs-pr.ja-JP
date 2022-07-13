@@ -15,14 +15,15 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: admindeeplinkCOMPLIANCE
 description: コンプライアンス スコアとコンプライアンス マネージャーを使用して、個人データの保護レベルを向上させる方法について説明します。
-ms.openlocfilehash: 469584abbf784fe6c556aab14a49a5ed44280a69
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: bd0ae7f748a2a3cd5ff52b6363780032033ead44
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64947453"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748695"
 ---
 # <a name="use-compliance-manager-to-manage-improvement-actions"></a>コンプライアンス マネージャーを使用して改善アクションを管理する
 
@@ -31,13 +32,13 @@ Microsoft Purview コンプライアンス マネージャーは、欧州連合 
 この記事では、データプライバシーの目的でこのツールを使用する方法に関するガイダンスを提供します。
 
 > [!NOTE]
-> コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 お客様の規制環境ごとにお客様独自のコントロールの有効性を評価および検証するかどうかは、お客様の判断に委ねられています。 これらのサービスには、[オンライン サービスの条件](https://go.microsoft.com/fwlink/?linkid=2108910)の利用規約が適用されます。 [セキュリティとコンプライアンスに関するMicrosoft 365ライセンスガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)も参照してください
+> コンプライアンス マネージャーの推奨事項は、コンプライアンスの保証と捉えることはできません。 お客様の規制環境ごとにお客様独自のコントロールの有効性を評価および検証するかどうかは、お客様の判断に委ねられています。 これらのサービスには、[オンライン サービスの条件](https://go.microsoft.com/fwlink/?linkid=2108910)の利用規約が適用されます。 [セキュリティとコンプライアンスに関する Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)も参照してください
 
 ## <a name="getting-started-with-compliance-manager"></a>コンプライアンス マネージャーの概要
 
 #### <a name="what-is-compliance-manager"></a>コンプライアンス マネージャーとは
 
-[コンプライアンス マネージャー](../compliance/compliance-manager.md) は、Microsoft Purview コンプライアンス ポータルのワークフロー ベースのリスク評価ツールで、Microsoft クラウド サービスに関連する規制コンプライアンス アクティビティを管理します。 コンプライアンス マネージャーは、Microsoft 365またはAzure Active Directory (Azure AD) サブスクリプションの一部として、Microsoft クラウド サービスの共有責任モデル内で規制コンプライアンスを管理するのに役立ちます。
+[コンプライアンス マネージャー](../compliance/compliance-manager.md)は、Microsoft クラウド サービスに関連する規制コンプライアンス アクティビティを管理するためのMicrosoft Purview コンプライアンス ポータルのワークフロー ベースのリスク評価ツールです。 Microsoft 365 または Azure Active Directory (Azure AD) サブスクリプションの一部として、Compliance Manager を使用すると、Microsoft クラウド サービスの共有責任モデル内で規制コンプライアンスを管理できます。
 
 **評価を使用する準備ができました**
 
@@ -58,14 +59,14 @@ Microsoft Purview コンプライアンス マネージャーは、欧州連合 
 - [最初の訪問: コンプライアンス マネージャーについて理解する](../compliance/compliance-manager-quickstart.md#first-visit-get-to-know-compliance-manager)
     - コンプライアンス マネージャー ダッシュボードの操作
     - コンプライアンス スコアについて
-    - 改善アクションに関するラーニング
+    - 改善アクションについて学習する
     - 評価とテンプレートについて
 - [急増: コンプライアンス アクティビティを管理するようにコンプライアンス マネージャーを構成する](../compliance/compliance-manager-quickstart.md#ramping-up-configure-compliance-manager-to-manage-your-compliance-activities)
     - 最初の評価の構築と管理
     - 改善アクションの実装とテスト作業を実行して、評価の制御を完了する
     - さまざまなアクションがコンプライアンス スコアに与える影響を理解する
 - [スケールアップ: 高度な機能を使用してカスタム ニーズを満たす](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Microsoft 365以外の製品を追跡するためのカスタム評価の作成
+    - Microsoft 365 以外の製品を追跡するためのカスタム評価の作成
     - コントロールを追加または削除するための既存のテンプレートの変更
     - 改善アクションの自動テストを設定する
 
@@ -79,9 +80,9 @@ Microsoft Purview コンプライアンス マネージャーは、欧州連合 
 
 コンプライアンス スコア管理 UI では、これらのパラメーターは一覧表示されず、それらのパラメーターでフィルター処理する機能も提供されません。 ただし、コンプライアンス マネージャーから関連するテンプレートをダウンロードした場合、結果のデータ セットには、ほとんどの規制に対してこれらのパラメーターが一覧表示されます。
 
-技術的な制御の場合、コンプライアンス マネージャーは、アクションが正常に実装およびテストされると、改善アクション スコアを自動的に更新します。 その他の非技術的な制御アクション&mdash;(操作上またはドキュメント&mdash;に関連するものなど)は、ポイントがスコアにカウントされる前に実装されているように手動で記録する必要があります。
+技術的な制御の場合、コンプライアンス マネージャーは、アクションが正常に実装およびテストされると、改善アクション スコアを自動的に更新します。 操作可能な操作やドキュメント&mdash;に関連する操作&mdash;など、技術的ではないその他の操作は、ポイントがスコアにカウントされる前に、実装済みとして手動で記録する必要があります。
 
-また、データプライバシー規制コンプライアンス以外の理由で保持ラベルを使用するなど、他の目的&mdash;に対して特定の改善アクションを実装する場合も多く、意図的なコンプライアンス&mdash; アクションの一部ではなく、他の目的で使用されている場合でも、このような機能を使用したクレジットを得られます。
+また、データ プライバシー規制コンプライアンス以外の理由で保持ラベルを使用するなど、他の目的&mdash;に対して特定の改善アクションを実装する場合もあります。そのため、意図的なコンプライアンス&mdash;アクションの一部ではなく、他の目的で使用されている場合でも、このような機能を使用したクレジットが得られます。
 
 コンプライアンス スコアは、広範囲にわたる改善を追跡するための相対的なメジャーと見なす必要があります。 完璧なスコアを追い求めてはなりません。
 

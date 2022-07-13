@@ -15,18 +15,19 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365solution-infoprotection
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
-description: Microsoft 365の ID、デバイス、脅威保護サービスによる個人データ侵害を防ぎます。
-ms.openlocfilehash: a5aa97637b0d44b762d1a1146effdefb932ab47d
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Microsoft 365 の ID、デバイス、脅威保護サービスを使用して個人データ侵害を防ぎます。
+ms.openlocfilehash: 474980e56ac79a9a24d2271f0a58729731dbc1df
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60204973"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749904"
 ---
 # <a name="use-identity-device-and-threat-protection-for-data-privacy-regulation"></a>データプライバシー規制に ID、デバイス、脅威保護を使用する
 
-Microsoft 365には、組織がデータプライバシー関連のコンプライアンス規制に準拠するために使用できるさまざまな ID、デバイス、脅威保護機能が用意されています。 この記事では、これらの分野でデータプライバシー規制に必要なものについて説明し、実装要件に対処するために役立つ詳細情報へのリンクを含む関連するMicrosoft 365機能とサービスの一覧を提供します。
+Microsoft 365 には、データ プライバシー関連のコンプライアンス規制に準拠するために組織が採用できる ID、デバイス、脅威保護機能が多数用意されています。 この記事では、これらの分野でデータプライバシー規制に必要なものについて説明し、実装要件に対処するために役立つ詳細情報へのリンクを含む関連する Microsoft 365 の機能とサービスの一覧を提供します。
 
 ## <a name="how-identity-device-and-threat-protection-relate-to-data-privacy-regulation"></a>ID、デバイス、脅威の保護がデータ プライバシー規制とどのように関連しているか
 
@@ -34,7 +35,7 @@ Microsoft 365には、組織がデータプライバシー関連のコンプラ�
 
 - 個人データは、個人データの適切なセキュリティを確保する方法で処理されます。これには、不正または違法な処理に対する保護、偶発的な損失、破壊、または損害に対する保護を含め、適切な技術的または組織的手段 ('整合性と機密性') を使用します。
 
-個人データ侵害は、多くの場合、管理アカウントまたはエンド ユーザー アカウントの侵害と悪意のあるシステム アクセスによって引き起こされるためです。 たとえば、管理者アカウントのハッキングにより、顧客のクレジット カード番号やその他の個人情報が流出する可能性があります。 Microsoft 365で使用可能なすべての一般的に推奨される ID、デバイス、脅威の保護を実装する必要があります。これはコンプライアンス マネージャーのコンプライアンス スコアに反映されます。
+個人データ侵害は、多くの場合、管理アカウントまたはエンド ユーザー アカウントの侵害と悪意のあるシステム アクセスによって引き起こされるためです。 たとえば、管理者アカウントのハッキングにより、顧客のクレジット カード番号やその他の個人情報が流出する可能性があります。 Microsoft 365 で使用可能なすべての一般的に推奨される ID、デバイス、脅威の保護を実装する必要があります。これはコンプライアンス マネージャーのコンプライアンス スコアに反映されます。
 
 ## <a name="using-the-results-of-your-assessment-work-and-compliance-manager"></a>評価作業とコンプライアンス マネージャーの結果を使用する
 
@@ -46,7 +47,7 @@ Microsoft 365には、組織がデータプライバシー関連のコンプラ�
  
 これらが 4 つの主要なデータ プライバシー規制のサンプル セットで選択されている場合、コンプライアンス マネージャーは 90 個の改善アクションを指定します。そのほとんどには "27" というスコアが付きます。 このような多数は、これらのカテゴリのコンプライアンス マネージャーによって呼び出されるため、より一般的なものの一部が参照のためにここに一覧表示されます。
 
-ID と **Control Access** カテゴリには [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) を使用します。これにより、次のことができます。
+ID と **コントロール アクセス** カテゴリには [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory/) を使用します。これにより、次のことができます。
 
 - リプレイ耐性認証を実装する ("中間者" 攻撃を防ぐため)
 - レガシ認証をブロックする
@@ -58,13 +59,13 @@ ID と **Control Access** カテゴリには [Azure Active Directory (Azure AD)]
 - ユーザー アカウントと状態の変更を監査します。
 - 役割グループと管理上の変更を確認します。
 
-デバイスと [**デバイスの管理**] カテゴリの [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)を使用すると、次のことができます。
+デバイスと [**デバイスの管理**] カテゴリに [Microsoft エンドポイント マネージャー](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager)を使用すると、次のことができます。
 
 - 脱獄されたモバイル デバイスとルート化されたモバイル デバイスをブロックします。
 - モバイル デバイス管理のIntuneを構成します。
 - Android、iOS、macOS、Windows デバイスのコンプライアンス ポリシーを作成します。
 - Android、iOS、macOS、Windows デバイスのデバイス構成プロファイルを作成します。
-- iOS とWindowsのアプリ保護ポリシーを作成します。
+- iOS と Windows のアプリ保護ポリシーを作成します。
 - ロック画面で情報を隠す。
 - モバイル デバイスのパスワード ポリシーを実装します。
 - 非アクティブ時にモバイル デバイスにロックを要求する。
@@ -74,8 +75,8 @@ ID と **Control Access** カテゴリには [Azure Active Directory (Azure AD)]
 
 - 送信者認証 (SPF、DMARC、DKIM) を有効にします。
 - フィッシング対策ポリシー Microsoft Defender for Office 365設定します。
-- セーフ添付ファイルを実装します。
-- セーフ リンクを実装します。
+- 安全な添付ファイルを実装する。
+- 安全なリンクを実装する。
 - マルウェアの検出と応答ポリシーを実装します。
 - 送信スパム ポリシーと受信スパム ポリシーを実装します。
 

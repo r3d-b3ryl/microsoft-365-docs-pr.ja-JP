@@ -18,13 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-identitydevice
 - m365solution-scenario
+- zerotrust-solution
 ms.technology: mdo
-ms.openlocfilehash: 3a2a8e5be8fb78824e8670f94a2e087da9538329
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: e0ca69eb4a330c4ebb067d657d0fdef8a4d09d8b
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972147"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750015"
 ---
 # <a name="policy-recommendations-for-securing-sharepoint-sites-and-files"></a>SharePoint サイトおよびファイルをセキュリティで保護するためのポリシーの推奨事項
 
@@ -38,7 +39,7 @@ ms.locfileid: "64972147"
 
 次の図は、SharePoin tおよび OneDrive のファイルを保護するために、共通の ID およびデバイス アクセス ポリシーから更新するポリシーを示しています。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="SharePointへのアクセスを保護するためのポリシー更新プログラムの概要" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png" alt-text="SharePoint へのアクセスを保護するためのポリシー更新プログラムの概要" lightbox="../../media/microsoft-365-policies-configurations/identity-access-ruleset-sharepoint.png":::
 
 共通ポリシーの作成時に SharePoint を含めた場合は、新しいポリシーを作成するだけで完了できます。 条件付きアクセスポリシーの場合、SharePoint には OneDrive が含まれています。
 
@@ -60,7 +61,7 @@ ms.locfileid: "64972147"
 
 ## <a name="use-app-enforced-restrictions-in-sharepoint"></a>SharePoint でアプリによって適用される制限を使用する
 
-SharePointにアクセス制御を実装する場合、条件付きアクセス ポリシーはAzure ADに作成され、SharePointで構成したポリシーを適用するようにAzure ADに指示します。 既定では、このポリシーはすべてのユーザーに適用されますが、SharePointでアクセス制御を作成するときに PowerShell を使用して指定したサイトへのアクセスにのみ影響します。 ポリシーは、特定のユーザー、グループ、またはサイトに対してスコープを設定することもできます。
+SharePoint にアクセス制御を実装する場合、条件付きアクセス ポリシーは Azure AD に作成され、SharePoint で構成したポリシーを適用するように Azure AD に指示します。 既定では、このポリシーはすべてのユーザーに適用されますが、SharePoint でアクセス制御を作成するときに PowerShell を使用して指定したサイトへのアクセスにのみ影響します。 ポリシーは、特定のユーザー、グループ、またはサイトに対してスコープを設定することもできます。
 
 このポリシーを構成するには、「[非管理対象デバイスからのアクセスを制御する](/sharepoint/control-access-from-unmanaged-devices)」の「特定の SharePoint サイト コレクションまたは OneDrive アカウントへのアクセスを制限する」を参照してください。
 
@@ -79,7 +80,7 @@ SharePoint サイトのアクセス許可は通常、サイトへのアクセス
 
 次の図は、SharePoint デバイス アクセス ポリシーがユーザーのサイトへのアクセスを保護する方法の例を示しています。
 
-:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="デバイス アクセス ポリシー SharePointサイトを保護する方法の例" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
+:::image type="content" source="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png" alt-text="SharePoint デバイス アクセス ポリシーがサイトを保護する方法の例" lightbox="../../media/microsoft-365-policies-configurations/SharePoint-rules-scenario.png":::
 
 James には開始点の条件付きアクセス ポリシーが割り当てられていますが、エンタープライズまたは特殊なセキュリティ保護を備えた SharePoint サイトへのアクセスを許可できます。
 

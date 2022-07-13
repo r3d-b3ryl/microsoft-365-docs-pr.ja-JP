@@ -16,14 +16,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-managedevices
 - m365solution-scenario
+- zerotrust-solution
 ms.custom: ''
 keywords: ''
-ms.openlocfilehash: fe137e626d5199f1709504d025411586965ae9fd
-ms.sourcegitcommit: 6fefc15dd78139316597083b702286097d45d4dd
+ms.openlocfilehash: 3b8993c02ce6a5c1885997f6c56c40c22ee85321
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64737421"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66749311"
 ---
 # <a name="step-5-deploy-device-profiles-in-microsoft-intune"></a>手順 5。Microsoft Intune でデバイス プロファイルを展開する
 
@@ -48,7 +49,7 @@ Intune の Windows セキュリティ ベースラインを展開するには、
 
 後で、Microsoft Defender for Endpoint がセットアップされ、Intune に接続したら、Defender for Endpoint ベースラインを展開します。 このトピックについては、このシリーズの次の記事で説明します。[手順 6. デバイスのリスクとセキュリティ ベースラインへのコンプライアンスを監視する](manage-devices-with-intune-monitor-risk.md)。
 
-これらのセキュリティ ベースラインは CIS または NIST に準拠していませんが、推奨事項を厳密に反映していることを理解することが重要です。 詳細については、「[Intune セキュリティ ベースラインは CIS または NIST に準拠していますか?](https://docs.microsoft.com/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)」 を参照してください。
+これらのセキュリティ ベースラインは CIS または NIST に準拠していませんが、推奨事項を厳密に反映していることを理解することが重要です。 詳細については、「[Intune セキュリティ ベースラインは CIS または NIST に準拠していますか?](/mem/intune/protect/security-baselines#are-the-intune-security-baselines-cis-or-nist-compliant)」 を参照してください。
 
 ## <a name="customize-configuration-profiles-for-your-organization"></a>組織の構成プロファイルをカスタマイズする
 

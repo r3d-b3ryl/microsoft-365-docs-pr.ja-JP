@@ -19,14 +19,15 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4fff094b06dfa265f9fc44c568216582083ce1d9
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: c12d1bca36884a7b43580b0685f38df99e51ba1d
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755461"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66750409"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>パイロット Microsoft Defender for Endpoint
 
@@ -59,14 +60,14 @@ Microsoft Defender for Endpointをパイロットする場合は、組織全体�
 デバイス インベントリには、ネットワーク内のエンドポイント、ネットワーク デバイス、IoT デバイスの一覧が表示されます。 ネットワーク内のデバイスのビューが提供されるだけでなく、ドメイン、リスク レベル、OS プラットフォームなどの詳細な情報も提供され、最も危険にさらされているデバイスを簡単に識別できます。
 
 ### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボードを表示する 
-脅威と脆弱性の管理は、組織にとって最も緊急かつリスクの高い弱点に焦点を当てるのに役立ちます。 ダッシュボードから、組織の公開スコア、Microsoft Secure Score for Devices、デバイスの公開分布、セキュリティに関する推奨事項、脆弱なソフトウェアの上位、修復アクティビティの上位、および公開された上位デバイス データの概要を確認します。 
+脅威と脆弱性の管理は、組織にとって最も緊急でリスクの高い弱点に焦点を当てるのに役立ちます。 ダッシュボードから、組織の公開スコア、Microsoft Secure Score for Devices、デバイスの公開分布、セキュリティに関する推奨事項、脆弱なソフトウェアの上位、修復アクティビティの上位、および公開された上位デバイス データの概要を確認します。 
 
 ### <a name="run-a-simulation"></a>シミュレーションを実行する
 Microsoft Defender for Endpointには、パイロット デバイスで実行できる ["Do It Yourself" 攻撃シナリオ](https://securitycenter.windows.com/tutorials)が付属しています。  各ドキュメントには、OS とアプリケーションの要件、および攻撃シナリオに固有の詳細な手順が含まれています。 これらのスクリプトは、安全で文書化されており、使いやすいです。 これらのシナリオでは、Defender for Endpoint 機能が反映され、調査エクスペリエンスについて説明します。
 
 指定されたシミュレーションのいずれかを実行するには、少なくとも [1 台のオンボードデバイスが必要です](../defender-endpoint/onboard-configure.md)。
 
-1. **HelpSimulations** >  **&チュートリアル** で、シミュレートする使用可能な攻撃シナリオを選択します。
+1. **ヘルプ** > **シミュレーション&チュートリアル** で、シミュレートする使用可能な攻撃シナリオを選択します。
 
    - **シナリオ 1: ドキュメントがバックドアを削除** する - ソーシャルに設計されたルアー ドキュメントの配信をシミュレートします。 このドキュメントは、攻撃者に制御を与える特別に作成されたバックドアを起動します。
 
@@ -76,7 +77,7 @@ Microsoft Defender for Endpointには、パイロット デバイスで実行で
 
 2. 選択したシナリオで提供されている対応するチュートリアル ドキュメントをダウンロードして読み取ります。
 
-3. **シミュレーション** ファイルをダウンロードするか、**HelpSimulations** >  &チュートリアルに移動してシミュレーション スクリプトをコピーします。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
+3. シミュレーション ファイルをダウンロードするか、ヘルプ **シミュレーション&チュートリアル****に移動** して > シミュレーション スクリプトをコピーします。 テスト デバイスでファイルまたはスクリプトをダウンロードすることもできますが、必須ではありません。
 
 4. チュートリアル ドキュメントの指示に従って、テスト デバイスでシミュレーション ファイルまたはスクリプトを実行します。
 

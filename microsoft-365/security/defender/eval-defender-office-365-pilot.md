@@ -19,14 +19,16 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- zerotrust-solution
+ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
 ms.technology: m365d
-ms.openlocfilehash: d8cd0132c8b02ae29cf49c9a700a868fa3a93554
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: fb246805ebf38cddfda6fe308d19e1dd1419531b
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64501357"
+ms.lasthandoff: 07/12/2022
+ms.locfileid: "66748805"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 
@@ -51,7 +53,7 @@ Microsoft Defender for Office 365を評価する場合は、組織全体のポ�
 
 配布グループは、Exchange Onlineで直接作成および定義することも、オンプレミスの Active Directoryから同期することもできます。
 
-1. 受信者管理者ロールが付与されているか、グループ管理アクセス許可が委任されているアカウントを使用して、Exchange管理センター (EAC) にサインインします。
+1. 受信者管理者ロールが付与されているか、グループ管理アクセス許可が委任されているアカウントを使用して、Exchange 管理 センター (EAC) にサインインします。
 2. ナビゲーション メニューの [ *受信者]* を展開し、[ *グループ*] を選択します。
 
    :::image type="content" source="../../media/mdo-eval/1_mdo-eval-pilot.png" alt-text=" クリックする [グループ] メニュー項目" lightbox="../../media/mdo-eval/1_mdo-eval-pilot.png":::
@@ -76,7 +78,7 @@ Defender for Office 365の一部の機能は既定で構成され、有効にな
 
 - **事前設定されたセキュリティ ポリシーを自動的に割り当てます**。[事前設定されたセキュリティ ポリシー](../office-365-security/preset-security-policies.md) は、すべての機能にわたって一様なレベルの保護をすばやく割り当てる方法として提供されます。 **_standard_*_ または _*_strict_** から選択できます。 適切な方法は、事前設定されたセキュリティ ポリシーから始めてから、機能と独自の脅威環境の詳細を学習するときにポリシーを微調整することです。 ここでの利点は、ユーザーのグループをできるだけ早く保護し、後で保護を調整できることです。 (この方法をお勧めします。)
 - **ベースライン保護を手動で構成** する - 環境を自分で構成する場合は、「[脅威から](../office-365-security/protect-against-threats.md)保護する」のガイダンスに従って、保護の *ベースライン* をすばやく実現できます。 この方法を使用すると、構成可能な設定の詳細を確認できます。 また、後でポリシーを微調整することもできます。
-- ***カスタム* 保護ポリシーを構成** する - 評価の一環として、カスタム保護ポリシーを構築して割り当てることもできます。 ポリシーのカスタマイズを開始する前に、これらの保護ポリシーが適用および適用される優先順位を理解しておくことが重要です。 セーフ リンクと添付ファイルのセキュリティ ポリシーを定義するために、セキュリティ操作では、プリセットが適用されている場合でも、一部のポリシーを作成 セーフする必要があります。
+- ***カスタム* 保護ポリシーを構成** する - 評価の一環として、カスタム保護ポリシーを構築して割り当てることもできます。 ポリシーのカスタマイズを開始する前に、これらの保護ポリシーが適用および適用される優先順位を理解しておくことが重要です。 セキュリティ操作では、安全なリンクと安全な添付ファイルのセキュリティ ポリシーを定義するために、プリセットが適用されている場合でも、特定のポリシーを作成する必要があります。
 > [!IMPORTANT]
 > **カスタム保護ポリシーを構成する必要がある場合** は、**Standard** と **Strict** のセキュリティ定義を構成する値を調べる必要があります。*[EOP とMicrosoft Defender for Office 365セキュリティの推奨設定](../office-365-security/recommended-settings-for-eop-and-office365.md)* です。 構成が行われる前に表示される既定値も一覧表示されます。 カスタム ビルドが逸脱する場所のスプレッドシートを保持します。
 
@@ -88,7 +90,7 @@ MDO を評価する場合は *、推奨されるベースライン ポリシー*
 
 [EOP の事前設定済みセキュリティ ポリシーと、手順の概要を説明するMicrosoft Defender for Office 365](../office-365-security/preset-security-policies.md)記事を次に示します。
 
-1. Microsoft 365 テナントにログオンします。 Microsoft 365 Defender ポータルへのアクセス権を持つアカウント、Office 365の組織管理ロールに追加されたアカウント、Microsoft 365のセキュリティ管理者ロールを使用します。
+1. Microsoft 365 テナントにログオンします。 Microsoft 365 Defender ポータルへのアクセス権を持つアカウント、Office 365の組織管理ロールに追加されたアカウント、または Microsoft 365 のセキュリティ管理者ロールを使用します。
 2. ナビゲーション メニューの [電子メール & コラボレーション] で *[ポリシー&ルール* ] を選択します。
 
    :::image type="content" source="../../media/mdo-eval/5_mdo-eval-pilot-policies.png" alt-text=" クリックする [ポリシー&ルール] メニュー項目" lightbox="../../media/mdo-eval/5_mdo-eval-pilot-policies.png":::
@@ -140,13 +142,13 @@ MDO を評価する場合は *、推奨されるベースライン ポリシー*
 |スプーフィング対策|スプーフィング インテリジェンスとスプーフィング インテリジェンス分析情報を使用して、スプーフィングの試行からユーザーを保護します。|[Defender for Office 365でスプーフィング インテリジェンスを構成する](../office-365-security/learn-about-spoof-intelligence.md)|
 |スパム対策|スパムが検出された場合に実行するアクションなど、電子メールスパムからユーザーを保護します。|[Defender for Office 365でスパム対策ポリシーを構成する](../office-365-security/configure-your-spam-filter-policies.md)|
 |フィッシング対策|フィッシング攻撃からユーザーを保護し、疑わしいメッセージに関する安全に関するヒントを構成する|[詳細については、「Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する」を参照してください。](../office-365-security/configure-mdo-anti-phishing-policies.md)|
-|安全な添付ファイル|SharePoint、OneDrive、Teams内のメールの添付ファイルやファイルの悪意のあるコンテンツからユーザーを保護します。|[Defender for Office 365で安全な添付ファイル ポリシーを設定する](../office-365-security/set-up-safe-attachments-policies.md)|
-|安全なリンク|ユーザーが電子メール メッセージまたはデスクトップ アプリで悪意のあるリンクを開いて共有Officeから保護します。|[Defender for Office 365で安全なリンク ポリシーを設定する](../office-365-security/set-up-safe-links-policies.md)|
+|安全な添付ファイル|SharePoint、OneDrive、Teams の電子メールの添付ファイルとファイル内の悪意のあるコンテンツからユーザーを保護します。|[Defender for Office 365で安全な添付ファイル ポリシーを設定する](../office-365-security/set-up-safe-attachments-policies.md)|
+|安全なリンク|電子メール メッセージまたは Office デスクトップ アプリで悪意のあるリンクを開いたり共有したりできないようにユーザーを保護します。|[Defender for Office 365で安全なリンク ポリシーを設定する](../office-365-security/set-up-safe-links-policies.md)|
 |
 
 ## <a name="step-3-try-out-capabilities-and-get-familiar-with-simulation-monitoring-and-metrics"></a>手順 3: 機能を試し、シミュレーション、監視、メトリックについて理解する
 
-パイロットがセットアップおよび構成されたので、Microsoft Defender for Microsoft 365 に固有のレポート、監視、および攻撃シミュレーション ツールについて理解しておくことが役に立ちます。
+パイロットのセットアップと構成が完了したので、Microsoft Defender for Microsoft 365 に固有のレポート、監視、攻撃シミュレーション ツールについて理解しておくことが役に立ちます。
 
 <br>
 
@@ -156,7 +158,7 @@ MDO を評価する場合は *、推奨されるベースライン ポリシー*
 |---|---|---|
 |脅威エクスプローラー|脅威エクスプローラーは、セキュリティ運用チームが脅威を調査して対応し、Office 365内のメールやファイルのマルウェアやフィッシングの疑いに関する情報だけでなく、組織に対するその他のセキュリティ上の脅威やリスクに関する情報を表示するのに役立つ強力なリアルタイムツールです。|[脅威エクスプローラーとリアルタイムの検出のビュー](../office-365-security/threat-explorer-views.md)|
 |攻撃シミュレーター|Microsoft 365 Defender ポータルで攻撃シミュレーション トレーニングを使用すると、組織内で現実的な攻撃シナリオを実行できます。これにより、実際の攻撃が環境に影響を与える前に脆弱なユーザーを特定して見つけることができます。|[攻撃シミュレーション トレーニングの使用を開始する](../office-365-security/attack-simulation-training-get-started.md)|
-|レポート ダッシュボード|左側のナビゲーション メニューで [レポート] をクリックし、[電子メール & コラボレーション] 見出しを展開します。 電子メール & コラボレーション レポートでは、セキュリティの傾向を特定することについて説明します。その一部では、アクション ([送信に移動] などのボタンを使用)、メールフローの状態の概要、トップ マルウェア、スプーフィング検出、侵害されたユーザー、メールの待機時間、セーフリンク、セーフ添付ファイル レポートなどの傾向を示す他のレポートを実行できます。 これらのメトリックは自動的に生成されます。|[レポートの表示](../office-365-security/view-email-security-reports.md)|
+|レポート ダッシュボード|左側のナビゲーション メニューで [レポート] をクリックし、[電子メール & コラボレーション] 見出しを展開します。 電子メール & コラボレーション レポートは、セキュリティ傾向を特定することです。その一部では、アクション ([送信に移動] などのボタンを使用)、メールフローの状態の概要、トップ マルウェア、スプーフィング検出、侵害されたユーザー、メール待ち時間、安全なリンク、安全な添付ファイルレポートなどの傾向を示す他のレポートを実行できます。 これらのメトリックは自動的に生成されます。|[レポートの表示](../office-365-security/view-email-security-reports.md)|
 |
 
 ## <a name="next-steps"></a>次の手順
