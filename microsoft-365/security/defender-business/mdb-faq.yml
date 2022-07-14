@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: 3b11cd3fa74d822baf0d4662fea43e53c6e5ef3e
-  ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+  ms.openlocfilehash: 405f96858ece26d624ad53db5a49b27bf538dbe4
+  ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/13/2022
-  ms.locfileid: "66772196"
+  ms.lasthandoff: 07/14/2022
+  ms.locfileid: "66795358"
 title: Microsoft Defender for Business - よく寄せられる質問と回答
 summary: >
   この記事を使用して、Defender for Business に関する質問に対する回答を取得します。
@@ -49,10 +49,12 @@ sections:
   - question: Defender for Business を使用してオンボードしてセキュリティで保護できるデバイスの数を教えてください。
     answer: >
       ユーザー ライセンスあたり最大 5 台のクライアント デバイスをオンボードしてセキュリティで保護できます。
-  - question: Defender for Business はサーバーをサポートしていますか?
-    answer: "サーバーのサポートはプレビュー段階です。 [Microsoft Defender for Business サーバー (プレビュー) を取得する方法](get-defender-business-servers.md)に関する説明を参照してください。  \n"
   - question: Defender for Business は Mac、Android、および iOS/iPadOS クライアント デバイスを保護しますか?
     answer: "はい。 Defender for Business では、Mac、Android、および iOS/iPadOS デバイスの保護がサポートされています。 「 [デバイスのオンボード」](mdb-onboard-devices.md)を参照してください。\n\n- Microsoft 365 Defender ポータルでローカル スクリプトを使用して Mac デバイスをオンボードできます。 \n- Android および iOS/iPadOS デバイスをオンボードするには、[Microsoft Intune](/mem/intune/)のライセンスが必要です。 IntuneはMicrosoft 365 Business Premiumに含まれており、Defender for Business (スタンドアロン) で購入できます。\n\nMac、iOS/iPadOS、Android デバイスの簡素化がロードマップに含まれています。 \n"
+  - question: Defender for Business はサーバーをサポートしていますか?
+    answer: "サーバーのサポートはプレビュー段階です。 [Microsoft Defender for Business サーバー (プレビュー) を取得する方法](get-defender-business-servers.md)に関する説明を参照してください。  \n\nMicrosoft Defender for Business サーバー ライセンスが一般公開 (GA) になると、Microsoft 365 Business Premiumと Defender for Business のスタンドアロン バージョンのアドオンとして提供されます。 GA では、Microsoft Defender for Business サーバーの料金は、サーバー インスタンスあたり 3 ドルです。 その時点で、オンボードされた各サーバーのライセンスを購入するか、Defender for Business からオフボード サーバーを選択できます。\n"
+  - question: Microsoft Defender for Business サーバーと Microsoft Defender for Servers プラン 1 とプラン 2 の違いは何ですか?
+    answer: "Defender for Business サーバーは Defender for Business のアドオンであり、Microsoft 365 Business Premiumのみです。 最大 300 人の従業員を持つ企業向けに、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) 内のクライアントとサーバーの両方に単一のエンドポイント セキュリティ エクスペリエンスを提供します。 簡単な構成プロセスとデバイスオンボードオプションにより、Defender for Business を使用すると、必ずしもセキュリティの背景を持たないお客様が Defender for Servers または Defender for Cloud を設定、構成、使用して会社のデバイスを保護できます。 \n\nDefender for Servers プラン 1/プラン 2 は、他の Microsoft クラウド プランで購入できるエンタープライズ重視のオファリングです。 Defender for Servers プラン 1 とプラン 2 は [、Microsoft Defender for Cloud の](/azure/defender-for-cloud/defender-for-cloud-introduction)一部です。 6 か月間のデータリテンション期間とMicrosoft 脅威エキスパート サービスを備えた高度な脅威ハンティングは、Defender for Servers プラン 1 またはプラン 2 で利用できます。\n\nDefender for Cloud は、すべての Azure、オンプレミス、マルチクラウド (Amazon AWS および Google GCP) リソース用のクラウド セキュリティ体制管理 (CSPM) とクラウド ワークロード保護プラットフォーム (CWPP) です。 Defender for Cloud の管理者エクスペリエンスは、Azure portal ([https://portal.azure.com](https://portal.azure.com)) 内に存在します。\n"
   - question: Defender for Business で複数の Web コンテンツ フィルター ポリシーを構成できますか?
     answer: "現在、Defender for Business では、Defender for Business テナントごとに 1 つの統一 Web フィルター ポリシーのみがサポートされています。 \n\n[Web コンテンツ フィルターの設定に関するページを](mdb-configure-security-settings.md#set-up-web-content-filtering)参照してください。\n"
   - question: Defender for Business で Microsoft 以外のウイルス対策/マルウェア対策ソフトウェアを使用できますか?

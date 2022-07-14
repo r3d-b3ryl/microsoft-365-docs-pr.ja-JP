@@ -17,12 +17,12 @@ ms.collection:
 description: Outlook とOutlook on the web、個々のユーザー、または組織全体に対して、レポート メッセージまたはフィッシングレポート アドインを有効にする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636effd1f3d9f0fd824ead4ed59e48fdee26ef20
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f1d51499558780f1b20fa5f6955e7c4a7c2ff5e8
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685703"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795446"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>メッセージのレポートまたはフィッシング アドインのレポートを有効にする
 
@@ -205,3 +205,24 @@ Microsoft はこれらの提出を使用して、電子メール保護テクノ�
     > :::image type="content" source="../../media/microsoft-365-admin-center-report-phishing-edit.png" alt-text="レポート フィッシングポップアップ。" lightbox="../../media/microsoft-365-admin-center-report-phishing-edit.png":::
 
 3. アドインを削除するには、同じポップアップの **[アクション]** で [**アプリの削除**] を選択します。
+
+## <a name="get-the-report-message-or-the-report-phishing-add-ins-for-the-gcc-and-gcch-users"></a>GCC および GCCH ユーザーのレポート メッセージまたはフィッシング報告アドインを取得する
+
+Government Community Cloud High (GCCH) または Government Community Cloud (GCC) 管理者の場合は、次の手順に従って、組織のレポート メッセージまたはフィッシング報告アドインを取得します。 個々のユーザーの場合は、Microsoft AppSource を使用してアドインを取得できないことに注意してください。
+
+> [!NOTE]
+> アドインが組織内に表示されるまでに最大で 24 時間かかる場合があります。 
+
+1. Microsoft 365 管理センターで **、[設定]** \> **アドイン** に移動し、[**アドインの展開**] を選択します。 
+
+2. **[新しいアドインのデプロイ]** ポップアップが開きます。 [ **次へ**] をクリックし、[ **カスタム アプリのアップロード**] を選択します。  
+
+3. **[マニフェスト ファイルの URL を持っている] を選択します**。 次の URL を使用して [、レポート メッセージ](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportMessageAzure.xml) と [レポート フィッシング アドインを](https://ipagave.azurewebsites.net/ReportMessageManifest/ReportPhishingAzure.xml) 取得します。 
+
+4. アドインにアクセスできるユーザーを選択し、展開方法を選択して、[デプロイ] を選択 **します**。 
+
+5. 設定を完全に構成するには、「 [ユーザーが報告したメッセージ設定](user-submission.md)」を参照してください。 
+
+## <a name="use-the-report-message-or-the-report-phishing-add-ins"></a>レポート メッセージまたはレポート フィッシング アドインを使用する
+
+レポート メッセージまたはフィッシングレポート アドインを使用して、Outlook で誤検知 (ブロックまたは迷惑メール フォルダーに送信された適切なメール) と偽のネガ (受信トレイに配信された不要なメールまたはフィッシング) を送信できます。 詳細については、「 [Outlook で誤検知と誤検知を報告する](report-false-positives-and-false-negatives.md)」を参照してください。

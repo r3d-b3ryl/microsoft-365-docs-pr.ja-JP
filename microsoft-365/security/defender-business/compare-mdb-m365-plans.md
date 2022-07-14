@@ -16,12 +16,12 @@ ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 9c3c4cf2914e268abeabc199e72ef28dac81a0f1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: be57910a1f6b2387a1b826e6cff17e418ec3da2b
+ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771998"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66795380"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>中小企業向けの Microsoft 365 プランのセキュリティ機能を比較する
 
@@ -48,7 +48,7 @@ Defender for Business はスタンドアロン サブスクリプションとし
 |Email保護|はい <br/>[Microsoft Defender ウイルス対策を使用したEmailスキャン](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)|はい <ul><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md)</li><li>[Microsoft Defender ウイルス対策を使用したEmailスキャン](../defender-endpoint/configure-advanced-scan-types-microsoft-defender-antivirus.md)</li></ul>|
 |スパム対策保護|はい<br/>デバイスの場合|はい <ul><li>デバイスの場合</li><li>Microsoft 365 メール コンテンツ (メッセージや添付ファイルなど) の場合</li></ul>|
 |マルウェア対策保護|はい<br/>デバイスの場合|はい<ul><li>デバイスの場合</li><li>Microsoft 365 メール コンテンツ (メッセージや添付ファイルなど) の場合</li></ul>|
-|[次世代の保護](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (ウイルス対策とマルウェア対策の保護)|はい<br/>Microsoft Defender ウイルス対策は、Windows 10 以降に含まれています|はい <ul><li>Microsoft Defender ウイルス対策は、Windows 10 以降に含まれています</li><li>オンボードされたデバイスの次世代保護ポリシー</li></ul>|
+|[次世代の保護](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) <br/> (オンボードデバイスのウイルス対策とマルウェア対策の保護)|はい |はい |
 |[攻撃面の減少](../defender-endpoint/overview-attack-surface-reduction.md) <br/>(Windows 10 以降の ASR 規則とファイアウォール保護)|はい|はい|
 |[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md) <br/>(動作ベースの検出アクションと手動応答アクション)|はい|はい|
 |[自動調査および対応](../defender-endpoint/automated-investigations.md)|はい|はい|
