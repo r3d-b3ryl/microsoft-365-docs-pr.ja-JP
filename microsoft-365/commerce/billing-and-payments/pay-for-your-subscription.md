@@ -23,12 +23,12 @@ ms.custom:
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: 113905d76864fecdc4fc38d46e4dc6f3e625348f
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: c8847915fdf9ed587fea410670f5b37194dfa8ae
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663814"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787124"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -47,15 +47,15 @@ ms.locfileid: "66663814"
 - この記事で説明する手順を実行するには、グローバル管理者または課金管理者である必要があります。詳細については、「[管理者ロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - チェックアウト時に選択するお支払い方法は、今後のすべての請求期間に使用されるお支払い方法です。いつでも変更できます。
 
-## <a name="new-regulations-from-the-reserve-bank-of-india"></a>インド準備銀行の新しい規制
+## <a name="directives-from-the-reserve-bank-of-india"></a>インド準備銀行からの規制
 
-2021 年 10 月 1 日以降、インドでの自動支払いでは、一部のクレジット カード取引 (特に 5,000 INR を超えるトランザクション) がブロックされる可能性があります。 この規制のため、Microsoft 365 管理センターで手動で支払いを行う必要がある場合があります。 これらの規制は、使用量に対して請求される合計金額には影響しません。
+現在、インド準備銀行の規制により、一部のクレジット カードト取引 (特に 5,000 INR を超える取引) がブロックされています。 これは自動支払いに影響を与える可能性があります。つまり、Microsoft 365 管理センターで手動で支払いを行う必要がある場合があります。 この指令は、使用料金には影響しません。 
 
 [定期的な支払いに関するインド準備銀行の規制の詳細については、こちらをご覧ください](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11668&Mode=0)。
 
-2022 年 9 月 30 日に、Microsoft およびその他のオンライン マーチャントはクレジット カード情報を保存しなくなります。 この規制に準拠するために、Microsoft は保存されているすべてのカードの詳細をMicrosoft 365 管理センターから削除します。 サービスの中断を回避するには、支払い方法を追加し、すべてのサブスクリプションと課金プロファイルに対して 1 回限りの支払いを行う必要があります。
+2022 年 9 月 30 日に、Microsoft およびその他のオンライン マーチャントはクレジット カード情報を保存しなくなります。 Microsoft は保存されているすべてのカードの詳細をMicrosoft 365 管理センターから削除します。 サービスの中断を回避するには、すべてのサブスクリプションと課金プロファイルに対して、支払い方法を追加して、認証する必要があります。
 
-[カードの保存に関するインド準備銀行の規制について説ついては、こちらをご覧ください](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211)。
+[カードの保存に関するインド準備銀行の規制についての詳細は、こちらをご覧ください](https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12211)。
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>クレジット カード、デビット カード、または銀行口座引き落としでの支払い
 

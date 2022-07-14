@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: m365-security-compliance
-ms.openlocfilehash: defccd8d570ec54cd033dcf7fbe29df8254661c8
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 43cb2c4230bd48260ecd1cf4e4f6f92518a47b43
+ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717760"
+ms.locfileid: "66747925"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>望ましくない可能性のあるアプリケーションを検出してブロックする
 
@@ -44,7 +44,9 @@ ms.locfileid: "66717760"
 > [!TIP]
 > セキュリティ機能から特別な注意を払うアプリケーションにラベルを付けるために使用するその他の例と基準の説明については、「[Microsoft がマルウェアと望ましくない可能性のあるアプリケーションを識別する方法](/windows/security/threat-protection/intelligence/criteria)」を参照してください。
 
-望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高めたり、マルウェア感染の特定を困難にしたり、IT リソースを浪費してそれらをクリーンアップしたりする可能性があります。 PUA 保護は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 および Windows Server 2016 でサポートされています。 Windows 10 (バージョン 2004 以降) では、Microsoft Defender ウイルス対策は、既定で Enterprise (E5) デバイスの PUA と見なされるアプリをブロックします。
+望ましくない可能性のあるアプリケーションは、ネットワークが実際のマルウェアに感染するリスクを高めたり、マルウェア感染の特定を困難にしたり、IT チームとセキュリティ チームがそれらをクリーンアップするための時間と労力を費やしたりする可能性があります。 PUA 保護は、Windows 11、Windows 10、Windows Server 2022、Windows Server 2019 および Windows Server 2016 でサポートされています。 組織のサブスクリプションに [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) が含まれている場合、Microsoft Defender ウイルス対策では、Windows デバイスで既定で PUA と見なされるアプリがブロックされます。 
+
+[Windows Enterprise サブスクリプションの詳細情報](https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise)。
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -76,7 +78,7 @@ Microsoft Defender for Endpoint には、Microsoft が管理するデータ セ�
 Microsoft Defender ウイルス対策の望ましくない可能性のあるアプリケーション (PUA) 保護機能は、ネットワーク内のエンドポイント上の PUA を検出してブロックできます。
 
 > [!NOTE]
-> この機能は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 および Windows Server 2016 で使用できます。
+> この機能は、Windows 11、Windows 10、Windows Server 2022、Windows Server 2019 および Windows Server 2016 で使用できます。
 
 Windows Defender ウイルス対策は、検出された PUA ファイルと、それらのダウンロード、移動、実行、またはインストールの試行をブロックします。 ブロックされた PUA ファイルは、検疫に移動されます。 エンドポイントで PUA ファイルが検出されると、Microsoft Defender ウイルス対策は、([通知が無効になっていない場合](configure-notifications-microsoft-defender-antivirus.md)) 他の脅威の検出と同じ形式でユーザーに通知を送信します。 通知の前には、その内容を示す `PUA:` が付いています。
 
@@ -86,9 +88,7 @@ Windows Defender ウイルス対策は、検出された PUA ファイルと、�
 
 PUA 保護は、[Microsoft Intune](/mem/intune/protect/device-protect)、[Microsoft Endpoint Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-protection)、[グループ ポリシー](/azure/active-directory-domain-services/manage-group-policy)、または [PowerShell コマンドレット](/powershell/module/defender/?preserve-view=true&view=win10-ps)を使用して有効にできます。
 
-監査モードで PUA 保護を使用して、望ましくない可能性のあるアプリケーションをブロックせずに検出することもできます。 検出は、Windows イベント ログに記録されます。
-
-監査モードの PUA 保護は、会社が内部ソフトウェア セキュリティ コンプライアンス チェックを実施していて、誤検知を回避したい場合に役立ちます。
+監査モードで PUA 保護を使用して、望ましくない可能性のあるアプリケーションをブロックせずに検出することもできます。 検出は、Windows イベント ログに記録されます。 監査モードの PUA 保護は、会社が内部ソフトウェア セキュリティ コンプライアンス チェックを実施していて、誤検知を回避したい場合に役立ちます。
 
 ### <a name="use-intune-to-configure-pua-protection"></a>Intune を使用して PUA 保護を構成する
 
