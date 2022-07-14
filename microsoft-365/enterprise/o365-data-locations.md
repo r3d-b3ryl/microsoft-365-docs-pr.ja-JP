@@ -3,7 +3,7 @@ title: Microsoft 365 データの場所
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 06/02/2022
+ms.date: 07/13/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 07d137c6eda243a1ffa33b486d7cdbea5b37f9d9
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 6652d9076a5b2ecd11b0793104924690d14a1f98
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65874071"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787630"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -37,7 +37,7 @@ ms.locfileid: "65874071"
 
 お客様の保存データの保存場所に関する契約上のコミットメントに関する情報は、 [Microsoft 製品およびサービスデータ保護補遺 (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)に記載されています。
 
-Azure Active Directory データの場所については、[AAD データ マップ](https://go.microsoft.com/fwlink/p/?linkid=2092972) にアクセスしてください。 
+Azure Active Directory データの場所については、[Azure でのデータ所在地](https://azure.microsoft.com/global-infrastructure/data-residency/#overview)にアクセスしてください。
 
 お客様の請求先住所がヨーロッパ以外にあり、お客様が Office 365 Education サブスクリプションを所有している場合、OST の「コアオンラインサービスの顧客データの保存場所」セクションにかかわらず、Microsoft はお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。顧客データをヨーロッパまたは北米内のどこにでも保管します。  お客様の請求先住所がヨーロッパにあり、お客様が Office 365 Education サブスクリプションを持っている場合、OST の「コアオンラインサービスの保存されているお客様データの場所」セクションにかかわらず、Microsoft はお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。顧客データを欧州連合内のどこにでも保存します。
 

@@ -13,16 +13,16 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex のライセンスの詳細
-ms.openlocfilehash: 7a7f310cb9c925fdb98a38ee12335abde91ea1db
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839332"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787498"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex のライセンス
 
-SharePoint Syntex を使用するには、組織に SharePoint Syntex のサブスクリプションがあり、各 SharePoint Syntex ユーザーにライセンスが必要です。 将来 SharePoint Syntex サブスクリプションを解約すると (または試用期間が終了すると)、ユーザーはドキュメントの理解またはフォーム処理モデルを作成、公開、または実行できなくなります。 さらに、用語ストア レポート、SKOS 分類インポート、およびコンテンツの種類のプッシュは使用できなくなります。 モデル、コンテンツ、メタデータが削除されたり、サイトのアクセス許可が変更されたりすることはありません。
+SharePoint Syntexを使用するには、各 Syntex ユーザーがそのライセンスを取得している必要があります。 将来 SharePoint Syntex ライセンスを解約すると (または試用期間が終了すると)、ユーザーはドキュメントの理解またはフォーム処理モデルを作成、公開、または実行できなくなります。 さらに、用語ストア レポート、SKOS 分類インポート、およびコンテンツの種類のプッシュは使用できなくなります。 モデル、コンテンツ、メタデータが削除されたり、サイトのアクセス許可が変更されたりすることはありません。
  
 > [!NOTE] 
 > SharePoint Syntex はアドオン ライセンスであり、ユーザーにはMicrosoft 365のライセンスも必要です。
