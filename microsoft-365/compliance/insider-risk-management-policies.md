@@ -13,12 +13,12 @@ manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 22682a801123d4f8c24cbc11e2d0e35d42228bba
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 5eb528db1199ab637634fefb5a31ff1344276051
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627285"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787872"
 ---
 # <a name="insider-risk-management-policies"></a>インサイダー リスクの管理。
 
@@ -340,7 +340,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 2. ポリシー ダッシュボードで、管理するポリシーを選択します。
 3. [ポリシーの詳細] ページで、[**ポリシーの編集**] を選択します。
 4. ポリシー ウィザードでは、次を編集できません。
-    - **ポリシー テンプレート**: ポリシーによって監視されるリスク インジケーターの種類を定義するために使用されるテンプレート。
+    - **ポリシー テンプレート: ポリシー** によって検出されたリスク インジケーターの種類を定義するために使用されるテンプレート。
     - **名前**: ポリシーのフレンドリ名
 5. **[名前と説明]** ページで **[説明]** フィールドでポリシーの説明を更新します。
 6. [**次へ**] を選んで続行します。

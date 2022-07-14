@@ -20,23 +20,20 @@ ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: dbaf395f10eaac7ff508b03f6f079f94bdd6cebd
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: c54bdbb4ee8c3bf068b40df8cd5ca0a58da2392f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475809"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787764"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Defender for Office 365での偽装分析情報
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
-
-> [!NOTE]
-> この記事で説明する機能はプレビュー版であり、変更される可能性があり、一部の組織では使用できません。
 
 偽装とは、電子メール メッセージの送信者が実際または想定される送信者の電子メール アドレスとよく似ている場所です。 攻撃者は、多くの場合、受信者の信頼を得るために、フィッシングやその他の種類の攻撃で送信者の電子メール アドレスを偽装しました。 偽装には、基本的に次の 2 種類があります。
 
@@ -61,17 +58,17 @@ Microsoft 365 Defender ポータルで偽装分析情報を使用すると、偽
 
   詳細については、「[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)」を参照してください。
 
-  **注**: Microsoft 365 管理センターの対応するAzure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  **注**: Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 
-- Microsoft Defender for Office 365では、フィッシング対策ポリシーで偽装保護を有効にして構成します。 偽装保護は既定では有効になっていません。 詳細については、「[Microsoft Defender for Office 365でのフィッシング対策ポリシーの構成](configure-mdo-anti-phishing-policies.md)」を参照してください。
+- Microsoft Defender for Office 365では、フィッシング対策ポリシーで偽装保護を有効にして構成します。 偽装保護は既定では有効になっていません。 詳細情報については、「[Microsoft Defender for Office 365 のフィッシング詐欺対策ポリシーを構成する](configure-mdo-anti-phishing-policies.md)」を参照してください。
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで偽装分析情報を開く
 
-1. Microsoft 365 Defender ポータルの [ポリシー **] セクション** の <https://security.microsoft.com>**[電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **フィッシング対策**] に移動します。 **[フィッシング対策**] ページに直接移動するには、 <https://security.microsoft.com/antiphishing>.
+1. Microsoft 365 Defender ポータルの [ポリシー **] セクション****の** <https://security.microsoft.com>[Email & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **フィッシング対策**] に移動します。 **[フィッシング対策**] ページに直接移動するには、 <https://security.microsoft.com/antiphishing>.
 
 2. [ **フィッシング対策** ] ページで、偽装の分析情報は次のようになります。
 
-   :::image type="content" source="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png" alt-text="フィッシング対策ポリシー ページの偽装分析情報とスプーフィング インテリジェンス" lightbox="../../media/m365-sc-impersonation-and-spoof-intelligence-insight.png":::
+   :::image type="content" source="../../media/m365-sc-impersonation-insight.png" alt-text="Microsoft 365 Defender ポータルのフィッシング対策ポリシー ページの偽装分析情報。" lightbox="../../media/m365-sc-impersonation-insight.png":::
 
    分析情報には、次の 2 つのモードがあります。
 
@@ -79,9 +76,6 @@ Microsoft 365 Defender ポータルで偽装分析情報を使用すると、偽
     - **What if mode**: 偽装保護が有効ではなく、アクティブなフィッシング対策ポリシーで構成されている場合、この分析情報は、過去 7 日間に偽装保護機能によって検出 *されたメッセージの* 数を示します。
 
 偽装検出に関する情報を表示するには、偽装分析情報で **[偽装の表示** ] をクリックします。
-
-   > [!NOTE]
-   > スプーフィング インテリジェンス分析情報の詳細については、「 [EOP でのスプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)」を参照してください。
 
 ## <a name="view-information-about-messages-from-senders-in-impersonated-domains"></a>偽装されたドメイン内の送信者からのメッセージに関する情報を表示する
 

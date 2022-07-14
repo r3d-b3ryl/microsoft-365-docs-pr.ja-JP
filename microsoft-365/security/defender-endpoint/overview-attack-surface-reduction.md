@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
 ms.date: 05/16/2022
-ms.openlocfilehash: 7c09db2138502ee8c1b491028308c56f23687a0d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: bbed1512f5d51860f8f24ea29c2b0f73cbe7d9eb
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749003"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787190"
 ---
 # <a name="understand-and-use-attack-surface-reduction-capabilities"></a>攻撃面の縮小機能を理解して使用する
 
@@ -63,11 +63,11 @@ ms.locfileid: "66749003"
 
 4. [フォルダー アクセスの制御を有効にします](enable-controlled-folders.md)。
 
-5. [リムーバブル記憶域の保護](device-control-removable-storage-protection.md)
+5. [リムーバブル ストレージ保護を](device-control-removable-storage-protection.md)有効にする
 
 6. [ネットワーク保護を有効にします](enable-network-protection.md)。
 
-7. [Web 保護の有効化の概要](web-protection-overview.md)
+7. [Web 保護を](web-protection-overview.md)有効にする
 
 8. [エクスプロイト保護を有効にします](enable-exploit-protection.md)。
 
@@ -91,7 +91,8 @@ ms.locfileid: "66749003"
 - 攻撃面の減少ルール
 - エクスプロイト保護
 - ネットワーク保護
-- フォルダーへのアクセスの制御
+- コントロールされたフォルダー アクセス
+- デバイス制御
 
 監査モードを使用すると、機能を有効にした場合 *に発生した* 結果のレコードを確認できます。
 
@@ -112,9 +113,7 @@ Defender for Endpoint を使用して、各イベントの詳細を取得しま�
 | 監査はすべてのイベントに適用されます | [ネットワーク保護を有効にする](enable-network-protection.md) | [ネットワーク保護イベント](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer) |
 | 監査は個々の軽減策に適用されます | [エクスプロイト保護を有効にする](enable-exploit-protection.md) | [エクスプロイト保護イベント](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer) |
 
-### <a name="attack-surface-reduction-asr-rules"></a>攻撃面の減少 (ASR) ルール
-
-攻撃面の縮小 (ASR) ルールは、一般的な既知の攻撃面を強化するために事前に定義されています。 攻撃表面の縮小ルールを実装するために使用できる方法はいくつかあります。 推奨される方法については、次の攻撃面縮小 (ASR) ルールの展開に関するトピックを参照してください。
+たとえば、(ブロック モード) を有効にする前に、監査モードで攻撃表面縮小ルールをテストできます。 攻撃面の縮小 (ASR) ルールは、一般的な既知の攻撃面を強化するために事前に定義されています。 攻撃表面の縮小ルールを実装するために使用できる方法はいくつかあります。 推奨される方法については、次の攻撃面縮小 (ASR) ルールの展開に関するトピックを参照してください。
 
 - [攻撃面の縮小 (ASR) ルールの展開の概要](attack-surface-reduction-rules-deployment.md)
 - [攻撃面の縮小 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md)
@@ -294,16 +293,13 @@ Windows イベント ビューアーでは、次のイベントにアクセス�
 
 | 記事 | 説明 |
 |:---|:---|
-| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの起動時と実行中に、システムの整合性を保護および維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 悪意のある Web サイトから保護するには、Microsoft Edge のコンテナー分離を使用します。 |
 | [アプリケーション制御](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control) | アプリケーション制御を使用して、アプリケーションを実行するために信頼を得る必要があります。 |
-| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) が、キー システム フォルダー内のファイルに変更を加えないようにするのに役立ちます (Microsoft Defender ウイルス対策が必要です)。 |
-| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要です)。 |
-| [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されないように保護します。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
-| [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することで、データ損失から保護します。 |
-| [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件と、テスト、有効化、および監視に関する詳細なガイダンスを示します。 |
-| [攻撃面の縮小 (ASR) ルールの展開を計画する](attack-surface-reduction-rules-deployment-plan.md) | 攻撃表面縮小ルールの展開に推奨される手順を一覧表示します。 |
-| [攻撃面の減少 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md) | 監査モードを使用して、攻撃表面の縮小ルールをテストする手順について説明します。 |
-| [攻撃面の減少 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md) | 攻撃表面縮小ルールをテスト (監査) モードからアクティブで有効な (ブロック) モードに移行する手順を示します。 |
-| [攻撃面の減少 (ASR) ルールの運用化](attack-surface-reduction-rules-deployment-operationalize.md) | 日常のレビューとメンテナンスアクティビティに関する情報を提供します。 |
 | [攻撃面の減少 (ASR) ルールの参照](attack-surface-reduction-rules-reference.md) | 各攻撃対象領域の縮小ルールの詳細を提供します。 |
-| [攻撃面の減少ルール](attack-surface-reduction.md) | マルウェアの阻止に役立つインテリジェントなルールを使用して、アプリケーションの脆弱性 (攻撃面) を減らします。 (Microsoft Defender ウイルス対策が必要です)。 |
+| [攻撃面の縮小 (ASR) ルールの展開ガイド](attack-surface-reduction-rules-deployment.md) | 攻撃表面の縮小ルールを展開するための概要情報と前提条件と、テスト (監査モード)、有効化 (ブロック モード)、および監視に関する詳細なガイダンスを示します。 |
+| [制御されたフォルダー アクセス](controlled-folders.md) | 悪意のあるアプリや疑わしいアプリ (ファイル暗号化ランサムウェア マルウェアを含む) が、キー システム フォルダー内のファイルに変更を加えないようにするのに役立ちます (Microsoft Defender ウイルス対策が必要です)。 |
+| [デバイス コントロール](device-control-report.md) | 組織内のリムーバブル ストレージや USB ドライブなどのデバイスで使用されるメディアを監視および制御することで、データ損失から保護します。 |
+| [エクスプロイト保護](exploit-protection.md) | 組織が使用するオペレーティング システムとアプリが悪用されないように保護します。 エクスプロイト保護は、サードパーティのウイルス対策ソリューションでも機能します。 |
+| [ハードウェア ベースの分離](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview) | システムの起動時と実行中に、システムの整合性を保護および維持します。 ローカル構成証明とリモート構成証明を使用してシステムの整合性を検証します。 悪意のある Web サイトから保護するには、Microsoft Edge のコンテナー分離を使用します。 |
+| [ネットワーク保護](network-protection.md) | 組織のデバイス上のネットワーク トラフィックと接続に対する保護を拡張します。 (Microsoft Defender ウイルス対策が必要です)。 |
+| [攻撃面の減少 (ASR) ルールをテストする](attack-surface-reduction-rules-deployment-test.md) | 監査モードを使用して、攻撃表面の縮小ルールをテストする手順について説明します。 |
+| [Web 保護](web-protection-overview.md) | Web 保護を使用すると、Web の脅威からデバイスを保護し、不要なコンテンツを規制するのに役立ちます。 |

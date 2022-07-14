@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: トレーニング可能な分類子は、ラベル付けまたはポリシー アプリケーション用のさまざまな種類のコンテンツを認識できます。
-ms.openlocfilehash: 0c47d019b3508bdd8d8fba1f1b4303c7f4c9579d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 8cba27dc3ac3ee16373423fb68acc2d5808de31b
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621207"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787520"
 ---
 # <a name="learn-about-trainable-classifiers"></a>トレーニング可能な分類子の詳細
 
@@ -105,8 +105,6 @@ Microsoft 365 には、事前トレーニング済みの分類子が複数用意
   > ソース コードは、テキストの大部分がソース コードである場合を検出するようにトレーニングされます。 プレーンテキストが混在するソース コード テキストは検出されません。
 
 - **税**: 税計画、税務フォーム、税務書類、税規制などの税関係の内容を検出します。 .docx、.docm、.doc、.dotx、.dotm、.dot、.pdf、 .rtf、.txt、.one、.msg、.eml、.pptx、.pptm、.ppt、.potx、.potm、.ppsx、.ppsm、.ppsm、.ppss、.ppsm、.xlsx、.xlsm、.xlsb、.xls、.csv、.xltx、.xltm、.xlt、.xlam、xla ファイル。
-
-- **脅威**: 人や財産に対する暴行や身体的危害または損害を与える脅威に関連する、攻撃的な言語テキスト項目の特定のカテゴリを検出します。
 
 - **脅威**: 人や財産に対する暴行や身体的危害または損害を与える脅威に関連する、攻撃的な言語テキスト項目の特定のカテゴリを検出します。 .msg、.docx、.pdf、.txt、.rtf、.jpeg、.jpg、.png、.gif、.bmp、.svg ファイル内のコンテンツを検出します。
 

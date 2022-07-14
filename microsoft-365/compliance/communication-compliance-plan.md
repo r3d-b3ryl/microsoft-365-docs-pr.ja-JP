@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 71364ebf68d6167666ec993fd15e0288f7ab30b2
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 71537e949d68d2171d3c3fb0f6dff5d55fe5b3bf
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686187"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787080"
 ---
 # <a name="plan-for-communication-compliance"></a>通信コンプライアンスの計画
 
@@ -62,7 +62,7 @@ Office 365の監督に関する退職情報については、[詳細について
 
 ### <a name="permissions"></a>アクセス許可
 
-Microsoft Purview コンプライアンス ポータルの定期的な周期でアラートとケースを監視および確認する専用の利害関係者を選択[します](https://compliance.microsoft.com/)。 組織内のさまざまなコミュニケーション コンプライアンス ロール グループにユーザーと利害関係者を割り当てる方法を理解していることを確認します。
+Microsoft Purview コンプライアンス ポータルの定期的な周期でアラートとケースを調査して確認するには、専用の利害関係者を選択[します](https://compliance.microsoft.com/)。 組織内のさまざまなコミュニケーション コンプライアンス ロール グループにユーザーと利害関係者を割り当てる方法を理解していることを確認します。
 
 > [!IMPORTANT]
 > ロール グループを構成した後、ロール グループのアクセス許可が組織全体の割り当てられたユーザーに適用されるまでに最大 30 分かかる場合があります。
@@ -111,7 +111,7 @@ Microsoft Purview コンプライアンス ポータルの定期的な周期で�
 
 ### <a name="groups-for-supervised-users-and-reviewers"></a>監視対象ユーザーと校閲者のグループ
 
-セットアップを簡略化するには、コミュニケーションの確認が必要なユーザーのグループと、そのコミュニケーションを確認するユーザーのグループを作成します。 グループを使用している場合は、複数必要になる場合があります。 たとえば、2 つの異なるグループ間の通信を監視する場合や、監督対象ではないグループを指定する場合などです。 ポリシーで配布グループを割り当てると、ポリシーは配布グループ内の各ユーザーからのすべての電子メールを監視します。 ポリシーで Microsoft 365 グループを割り当てると、ポリシーは、各グループ メンバーが受信した個々のメールではなく、そのグループに送信されたすべてのメールを監視します。
+セットアップを簡略化するには、コミュニケーションの確認が必要なユーザーのグループと、そのコミュニケーションを確認するユーザーのグループを作成します。 グループを使用している場合は、複数必要になる場合があります。 たとえば、2 つの異なるグループ間の通信を監視する場合や、監督対象ではないグループを指定する場合などです。 ポリシーで配布グループを割り当てると、ポリシーは配布グループ内の各ユーザーからのすべての電子メールを検出します。 ポリシーで Microsoft 365 グループを割り当てると、各グループ メンバーが受信した個々のメールではなく、そのグループに送信されたすべてのメールがポリシーによって検出されます。
 
 グループと配布リストを通信コンプライアンス ポリシーに追加することは、全体的な条件とルール セットの一部であるため、ポリシーがサポートするグループと配布リストの最大数は、ポリシーに追加される条件の数によっても異なります。 各ポリシーは、ポリシーに存在する追加の条件の数に応じて、約 20 個のグループまたは配布リストをサポートする必要があります。
 
@@ -139,8 +139,8 @@ Microsoft Purview コンプライアンス ポータルの定期的な周期で�
 
 - 組織内のすべてのユーザーを、コミュニケーション コンプライアンス ポリシーのスコープ内として追加することを検討してください。 個々のポリシーのスコープ内として特定のユーザーを特定することは、状況によっては役に立ちますが、ほとんどの組織では、嫌がらせや差別の検出に最適化されたコミュニケーション コンプライアンス ポリシーにすべてのユーザーを含める必要があります。
 - 100% で確認する通信の割合を構成して、ポリシーが組織の通信に関するすべての問題を確実に把握できるようにします。
-- Microsoft 365 組織内のメールボックスにインポートされたデータについては [、サード パーティのソース](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) からの通信をスキャンできます。 これらのプラットフォームに通信のレビューを含めるには、ポリシーの条件を満たすメッセージが通信ポリシーによって監視される前に、これらのサービスへのコネクタを構成する必要があります。
-- ポリシーは、カスタム通信コンプライアンス ポリシーで英語以外の言語の監視をサポートできます。 好みの言語で攻撃的な単語の [カスタム キーワード 辞書](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) を作成するか、Microsoft 365 で [トレーニング可能な分類子](/microsoft-365/compliance/classifier-get-started-with) を使用して独自の機械学習モデルを構築します。
+- Microsoft 365 組織内のメールボックスにインポートされたデータについては [、サード パーティのソース](/microsoft-365/compliance/communication-compliance-channels#third-party-sources) からの通信をスキャンできます。 これらのプラットフォームに通信のレビューを含めるには、ポリシー条件を満たすメッセージが通信ポリシーによって検出される前に、これらのサービスへのコネクタを構成する必要があります。
+- ポリシーは、カスタム通信コンプライアンス ポリシーで英語以外の言語の検出をサポートできます。 好みの言語で攻撃的な単語の [カスタム キーワード 辞書](/microsoft-365/compliance/communication-compliance-policies#custom-keyword-dictionaries) を作成するか、Microsoft 365 で [トレーニング可能な分類子](/microsoft-365/compliance/classifier-get-started-with) を使用して独自の機械学習モデルを構築します。
 - すべての組織には、異なる通信標準とポリシーのニーズがあります。 通信コンプライアンス [ポリシーの条件](/microsoft-365/compliance/communication-compliance-policies#conditional-settings) を使用して特定のキーワードを検出するか、カスタムの機密情報の種類で特定の種類の [情報を検出します](/microsoft-365/compliance/create-a-custom-sensitive-information-type)。
 
 ## <a name="creating-a-communication-compliance-policy-walkthrough"></a>通信コンプライアンス ポリシーのチュートリアルの作成

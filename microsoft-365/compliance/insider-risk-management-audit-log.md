@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 544c31205469bcb810bd3f05d9f686d650df6269
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a671e25dabf5dc9c526e6e3a931a71035b908cc3
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638193"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787828"
 ---
 # <a name="insider-risk-management-audit-log"></a>Insider リスク管理監査ログ
 
@@ -25,9 +25,9 @@ ms.locfileid: "66638193"
 
 ![インサイダー リスク管理監査ログ。](../media/insider-risk-audit-log.png)
 
-監査ログは、監視対象のアクティビティが発生するたびに自動的に更新され、ログはアクティビティに関する情報を 180 日間 (約 6 か月間) 保持します。 180 日後、アクティビティのデータはログから完全に削除されます。
+監査ログは、検出されたアクティビティが発生し、ログによってアクティビティに関する情報が 180 日間 (約 6 か月間) 保持されるたびに、自動的に直ちに更新されます。 180 日後、アクティビティのデータはログから完全に削除されます。
 
-アクティビティの監視に含まれる領域は次のとおりです。
+アクティビティ検出に含まれる領域は次のとおりです。
 
 - ポリシー
 - 場合
@@ -43,7 +43,7 @@ ms.locfileid: "66638193"
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>インサイダー リスク監査ログでアクティビティを表示する
 
-インサイダー リスク管理用に監視されている機能アクティビティを表示するには、インサイダー リスク管理タブの右上領域にある **Insider リスク監査ログ** のリンクに移動して選択します。既定では、インサイダー リスク管理アクティビティに対して次の情報が表示されます。
+インサイダー リスク管理で検出された機能アクティビティを表示するには、インサイダー リスク管理タブの右上領域にある **Insider リスク監査ログ** のリンクに移動して選択します。既定では、インサイダー リスク管理アクティビティに対して次の情報が表示されます。
 
 - **活動：** ユーザーがインサイダー リスク管理ソリューション内で行ったアクティビティの説明。
 - **カテゴリ：** アクティビティが実行された領域または項目。 たとえば、 *ポリシー* 変更アクティビティが実行されたときに、ポリシーがカテゴリとして表示されます。

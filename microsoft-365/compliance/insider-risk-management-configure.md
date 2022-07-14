@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: 8afb59606f4d13e96db5d4f03ffd8126c6ee9ba2
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642571"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787476"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -90,15 +90,15 @@ ms.locfileid: "66642571"
 
 インサイダー リスク管理を使用する場合は、次のロール グループのオプションとソリューション アクションから選択します。
 
-|アクション|インサイダー リスクの管理|Insider Risk Management 管理|インサイダー リスク管理アナリスト。|インサイダー リスク管理調査担当者。|Insider Risk Management Auditors|
+|Actions|インサイダー リスクの管理|Insider Risk Management 管理|インサイダー リスク管理アナリスト。|インサイダー リスク管理調査担当者。|Insider Risk Management Auditors|
 |---|---|---|---|---|---|
-|ポリシーと設定を構成する|はい|はい|不要|不要|不要|
-|分析分析情報にアクセスする|はい|はい|はい|不要|不要|
-|アラートを調査&アクセスする|はい|不要|はい|はい|不要|
-|アクセス&ケースを調査する|はい|不要|はい|はい|いいえ|
-|コンテンツ エクスプローラー&表示する|はい|いいえ|不要|はい|不要|
-|通知テンプレートを構成する|はい|不要|はい|はい|不要|
-|監査ログのエクスポート&表示する|はい|不要|不要|不要|はい|
+|ポリシーと設定を構成する|はい|はい|いいえ|いいえ|いいえ|
+|分析分析情報にアクセスする|はい|はい|はい|いいえ|いいえ|
+|アラートを調査&アクセスする|はい|いいえ|はい|はい|いいえ|
+|アクセス&ケースを調査する|はい|いいえ|はい|はい|いいえ|
+|コンテンツ エクスプローラー&表示する|はい|いいえ|いいえ|はい|いいえ|
+|通知テンプレートを構成する|はい|いいえ|はい|はい|いいえ|
+|監査ログのエクスポート&表示する|はい|いいえ|いいえ|いいえ|はい|
 
 > [!IMPORTANT]
 > Insider *Risk Management* または *Insider Risk Management 管理* ロール グループに少なくとも 1 人のユーザーが常に存在することを確認します (選択したオプションに応じて)。 特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が "ゼロ管理者" シナリオに入らないようにします。
@@ -231,7 +231,7 @@ Defender for Endpoint をインサイダー リスク管理統合用に構成す
 
 ## <a name="step-5-required-configure-insider-risk-settings"></a>手順 5 (必須): インサイダー リスク設定を構成する
 
-[インサイダー リスク設定](insider-risk-management-settings.md) は、ポリシーの作成時に選択したテンプレートに関係なく、すべてのインサイダー リスク管理ポリシーに適用されます。 設定は、すべてのインサイダー リスクの管理タブの 1 番上にある **Insider リスク設定** コントロールを使用して構成します。 これらの設定により、プライバシー、インジケーター、監視ウィンドウ、およびインテリジェントな検出がコントロールされます。
+[インサイダー リスク設定](insider-risk-management-settings.md) は、ポリシーの作成時に選択したテンプレートに関係なく、すべてのインサイダー リスク管理ポリシーに適用されます。 設定は、すべてのインサイダー リスクの管理タブの 1 番上にある **Insider リスク設定** コントロールを使用して構成します。 これらの設定は、プライバシー、インジケーター、インテリジェント検出などを制御します。
 
 ポリシーを構成する前に、次のインサイダー リスク設定を定義します。
 

@@ -1,5 +1,5 @@
 ---
-title: SIEM ソリューションとの通信コンプライアンスを使用する
+title: SIEM ソリューションのコミュニケーション コンプライアンスの使用
 description: SIEM ソリューションとの通信コンプライアンスの統合について説明します。
 keywords: Microsoft 365、Microsoft Purview、コンプライアンス、通信コンプライアンス
 f1.keywords:
@@ -19,18 +19,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 247999954e6ff69fdfbd2ff681bb79c0bf22c8bc
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 2413cee978fa2fe66a2672e307e8cad12a7b803b
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686121"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787037"
 ---
-# <a name="use-communication-compliance-with-siem-solutions"></a>SIEM ソリューションとの通信コンプライアンスを使用する
+# <a name="use-communication-compliance-with-siem-solutions"></a>SIEM ソリューションのコミュニケーション コンプライアンスの使用
 
 [コミュニケーション コンプライアンス](/microsoft-365/compliance/communication-compliance) は Microsoft Purview のインサイダー リスク ソリューションであり、組織内の不適切なメッセージを検出、キャプチャ、および操作できるようにすることで、コミュニケーション リスクを最小限に抑えることができます。 [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel) や [Splunk](https://www.splunk.com/) などのセキュリティ情報とイベント管理 (SIEM) ソリューションは、組織内の脅威の集計と追跡に一般的に使用されます。
 
-組織の一般的なニーズは、通信コンプライアンス アラートとこれらの SIEM ソリューションを統合することです。 この統合により、組織は SIEM ソリューションで通信コンプライアンス アラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内のアラートを修復できます。 たとえば、従業員は別の従業員に不快なメッセージを送信し、そのメッセージは不適切なコンテンツに対するコミュニケーション コンプライアンス ポリシーの監視によって検出されます。 これらのイベントは、通信コンプライアンス ソリューションによって Microsoft 365 監査 ("統合監査ログ" とも呼ばれます) で追跡され、SIEM ソリューションにインポートされます。 その後、通信コンプライアンス アラートに関連付けられている Microsoft 365 監査で監視されるイベントから、組織の SIEM ソリューションでアラートがトリガーされます。 調査担当者には SIEM ソリューションでアラートが通知され、通信コンプライアンス ソリューションでアラートを調査して修復します。
+組織の一般的なニーズは、通信コンプライアンス アラートとこれらの SIEM ソリューションを統合することです。 この統合により、組織は SIEM ソリューションで通信コンプライアンス アラートを表示し、通信コンプライアンス ワークフローとユーザー エクスペリエンス内のアラートを修復できます。 たとえば、従業員は別の従業員に不快なメッセージを送信し、そのメッセージは不適切なコンテンツに対するコミュニケーション コンプライアンス ポリシーによって検出されます。 これらのイベントは、通信コンプライアンス ソリューションによって Microsoft 365 監査 ("統合監査ログ" とも呼ばれます) で追跡され、SIEM ソリューションにインポートされます。 その後、通信コンプライアンス アラートに関連付けられている Microsoft 365 監査に含まれるイベントから、組織の SIEM ソリューションでアラートがトリガーされます。 調査担当者には SIEM ソリューションでアラートが通知され、通信コンプライアンス ソリューションでアラートを調査して修復します。
 
 ## <a name="communication-compliance-alerts-in-microsoft-365-audit"></a>Microsoft 365 監査の通信コンプライアンス アラート
 
@@ -118,7 +118,7 @@ PowerShell を使用する場合は、これらのパラメーターのいずれ
 
 | 監査ログ パラメーター | 通信コンプライアンス パラメーターの値 |
 | :------------------ | :--------------------------------------- |
-| 操作          | SupervisionRuleMatch                     |
+| 業務          | SupervisionRuleMatch                     |
 | RecordType          | ComplianceSupervisionExchange            |
 
 たとえば、 **Operations** パラメーターと *SupervisionRuleMatch* 値を使用したサンプル検索を次に示します。

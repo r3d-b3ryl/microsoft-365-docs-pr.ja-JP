@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 2055d5ce71766a3c1cd1846c6287e5c15c8d621c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: db99267bc7d55e6e069e984dc4b419ed379fd088
+ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622835"
+ms.lasthandoff: 07/14/2022
+ms.locfileid: "66787212"
 ---
 # <a name="learn-about-insider-risk-management"></a>インサイダー リスク管理の詳細
 
@@ -89,7 +89,7 @@ Insider リスク分析では、インサイダー リスク ポリシーを構�
 
 ### <a name="policies"></a>ポリシー
 
-[Insider リスク管理ポリシー](insider-risk-management-policies.md) は、事前に定義されたテンプレートとポリシー条件を使用して作成され、組織でどのようなトリガー イベントとリスク インジケーターが調べられます。 これらの条件には、アラートにリスク インジケーターを使用する方法、ポリシーに含まれるユーザー、どのサービスの優先順位付け、監視期間が含まれます。
+[Insider リスク管理ポリシー](insider-risk-management-policies.md) は、事前に定義されたテンプレートとポリシー条件を使用して作成され、組織でどのようなトリガー イベントとリスク インジケーターが調べられます。 これらの条件には、アラートにリスク インジケーターを使用する方法、ポリシーに含まれるユーザー、優先順位付けされるサービス、検出期間が含まれます。
 
 次のポリシー テンプレートから選択して、インサイダー リスク管理をすばやく開始できます。
 
