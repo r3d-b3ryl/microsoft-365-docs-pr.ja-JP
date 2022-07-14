@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: 69bef8c18398a371f53fc88e17d261790b3ab16f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
+ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696164"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66756675"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由
 
@@ -176,6 +176,7 @@ AIP アドインの次の構成は、組み込みラベル付けではまだサ�
 組み込みラベル付けの新しい機能は常に追加されていますが、AIP Office アドインでサポートされる次の機能は、組み込みラベル付けの今後のリリースで利用可能になる予定はありません。
 
 - .doc ファイルなどの Microsoft Office 97 - 2003 形式へのラベルの適用
+- Windows イベント ログへのローカル使用状況ログの取得
 - 完全に切断されたコンピューター
 - サブスクリプションベースではなくスタンドアロン エディションの Office ("Office パーペチュアル" とも呼ばれる)
 
