@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 電子情報開示ツールが、電子メール メッセージに添付され、SharePoint Online およびOneDrive for Businessに保存された暗号化されたドキュメントを処理する方法について説明します。
-ms.openlocfilehash: 5e94c7b09745d017d5fa91d39a58c9d5351e911a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bec0b4c600f3bb7b08d10f2b32b00edb627a1165
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770857"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798085"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Microsoft 365 電子情報開示ツールでの復号化
 
@@ -35,7 +35,7 @@ ms.locfileid: "66770857"
 
 ## <a name="supported-encryption-technologies"></a>サポートされている暗号化テクノロジ
 
-Exchange の場合、Microsoft 電子情報開示ツールは、Microsoft 暗号化テクノロジで暗号化されたアイテムをサポートします。 これらのテクノロジは、Azure Rights Management (Azure RMS)<sup>3</sup> とMicrosoft Purview 情報保護 (特に秘密度ラベル) です。 Microsoft 暗号化テクノロジの詳細については、「 [暗号化](encryption.md)」を参照してください。 S/MIME またはサード パーティの暗号化テクノロジによって暗号化されたコンテンツはサポートされていません。 たとえば、Microsoft 以外のテクノロジで暗号化されたコンテンツのプレビューまたはエクスポートはサポートされていません。
+Exchange の場合、Microsoft 電子情報開示ツールは、Microsoft 暗号化テクノロジで暗号化されたアイテムをサポートします。 これらのテクノロジは、Azure Rights Management (Azure RMS)<sup>3</sup> とMicrosoft Purview 情報保護 (特に秘密度ラベル) です。 Microsoft 暗号化テクノロジの詳細については、 [暗号化](encryption.md) と使用可能なさまざまな [電子メール暗号化](email-encryption.md#comparing-email-encryption-options-available-in-office-365) オプションに関するページを参照してください。 S/MIME またはサード パーティの暗号化テクノロジによって暗号化されたコンテンツはサポートされていません。 たとえば、Microsoft 以外のテクノロジで暗号化されたコンテンツのプレビューまたはエクスポートはサポートされていません。
 
 > [!NOTE]
 > [Microsoft Purview Message Encryption カスタム ブランド テンプレート](add-your-organization-brand-to-encrypted-messages.md)で送信された電子メール メッセージの暗号化解除は、Microsoft 電子情報開示ツールではサポートされていません。 OME カスタム ブランド テンプレートを使用する場合、電子メール メッセージは受信者のメールボックスの代わりに OME ポータルに配信されます。 そのため、電子情報開示ツールを使用して暗号化されたメッセージを検索することはできません。
@@ -91,7 +91,7 @@ Microsoft 暗号化テクノロジで暗号化されたファイルをプレビ�
 
 ## <a name="notes"></a>メモ
 
-<sup>1</sup> ローカル コンピューター上にある暗号化されたファイルと、電子メール メッセージにコピーされたクラウド添付ファイルは、電子情報開示の暗号化解除およびインデックス付けされません。 
+<sup>1</sup> ローカル コンピューター上にあり、電子メール メッセージにコピーされた暗号化されたファイルは、電子情報開示の暗号化解除およびインデックス付けされません。 電子情報開示 (Premium) の場合、暗号化解除するには、受信者メールボックス内の暗号化された電子メールと添付ファイルに高度なインデックスを作成する必要があります。 高度なインデックス作成の詳細については、「 [カストディアン データの高度なインデックス作成](indexing-custodian-data.md)」を参照してください。
 
 <sup>2</sup> SharePoint Online サービス内でラベル付けされたアイテムのみが暗号化解除されます。アップロード前のクライアントでのラベル付けや暗号化、従来のドキュメント ライブラリ RMS テンプレートまたは設定、SMIME またはその他の標準など、その他はすべてサポートされていません。 [Office ファイルの秘密度ラベルを有効にする方法に関するページを](sensitivity-labels-sharepoint-onedrive-files.md)参照してください。
 

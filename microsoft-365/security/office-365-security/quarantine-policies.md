@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 780d2bade0713bac295cf9597662c5ef2313a093
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490102"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66798171"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -99,6 +99,8 @@ DefaultFullAccessPolicy のアクセス許可を提供するために、検疫�
 ## <a name="step-1-create-quarantine-policies-in-the-microsoft-365-defender-portal"></a>手順 1: Microsoft 365 Defender ポータルで検疫ポリシーを作成する
 
 1. [Microsoft 365 Defender ポータル](https://security.microsoft.com)の [**ルール**] セクションで、[**メールとコラボレーション**] \> [**ポリシーとルール**] \> [**脅威ポリシー**] \> [**検疫ポリシー**] に移動します。 または、[ **検疫ポリシー]** ページに直接移動するには、 <https://security.microsoft.com/quarantinePolicies>.
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-page.png" alt-text="Microsoft 365 Defender ポータルの [検疫ポリシー] ページ。" lightbox="../../media/mdo-quarantine-policy-page.png":::
 
 2. [ **検疫ポリシー] ページで** 、[カスタム ポリシーの追加] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **カスタム ポリシーを追加します**。
 
@@ -530,6 +532,8 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
    - **エンド ユーザーのスパム通知を毎 (日) 送信する**: 検疫通知の頻度を選択します。 既定値は 3 日ですが、1 日から 15 日を選択できます。
 
 4. 完了したら、**[保存]** をクリックします。
+
+   :::image type="content" source="../../media/mdo-quarantine-policy-quarantine-notification-settings.png" alt-text="Microsoft 365 Defender ポータルの検疫通知設定ポップアップ。" lightbox="../../media/mdo-quarantine-policy-quarantine-notification-settings.png":::
 
 ## <a name="view-quarantine-policies-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで検疫ポリシーを表示する
 

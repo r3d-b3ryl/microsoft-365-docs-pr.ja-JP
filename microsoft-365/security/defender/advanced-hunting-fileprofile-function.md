@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 2cd8c91717af8390160bf45a625ae3a3044ee387
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 3e530bd9c1e6af58c83a88fc16b5ac4f9aee60e0
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531485"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797931"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -48,7 +48,7 @@ ms.locfileid: "61531485"
 | `Issuer` | `string` | 発行元証明機関 (CA) に関する情報 |
 | `SignerHash` | `string` | 署名者を識別する一意のハッシュ値 |
 | `IsCertificateValid` | `boolean` | ファイルの署名に使用される証明書が有効かどうか |
-| `IsRootSignerMicrosoft` | `boolean` | ルート証明書の署名者が Microsoft であるかどうかを示します。 |
+| `IsRootSignerMicrosoft` | `boolean` | ルート証明書の署名者が Microsoft で、ファイルが Windows OS に組み込まれているかどうかを示します |
 | `SignatureState` | `string` | ファイル署名の状態: SignedValid - ファイルは有効な署名で署名されています。SignedInvalid - ファイルは署名されていますが、証明書は無効です。Unsigned - ファイルは署名されていません。不明 - ファイルに関する情報を取得できません
 | `IsExecutable` | `boolean` | ファイルがポータブル実行可能ファイル (PE) ファイルであるかどうか |
 | `ThreatName` | `string` | 検出されたマルウェアまたはその他の脅威の検出名 |
@@ -72,7 +72,7 @@ invoke FileProfile(x,y)
 
 ## <a name="examples"></a>例
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>SHA1 列のみをProjectしてエンリッチする
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>SHA1 列のみを投影してエンリッチする
 
 ```kusto
 DeviceFileEvents
