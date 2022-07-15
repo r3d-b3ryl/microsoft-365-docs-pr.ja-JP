@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: 828588491c3efbc696994f6073ca4ce849a64be5
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: a77dcb557901f8a159e0c82a084dd02255193c72
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622131"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797953"
 ---
 # <a name="set-up-message-encryption"></a>Message Encryption を設定する
 
@@ -52,10 +52,9 @@ Azure RMS は、ほとんどの対象プランでも自動的に有効化され�
 
 ### <a name="manually-activating-azure-rights-management"></a>Azure Rights Management を手動で有効化する
 
-Azure RMS を無効にした場合、または何らかの理由で自動的に有効化されなかった場合は、次のように手動で有効化できます:
+Azure RMS を無効にした場合、または何らかの理由で Azure RMS が自動的に有効化されなかった場合は、手動で有効化できます。 
 
-- **Microsoft 365 管理センター**: 手順については、「[管理センターから Azure Rights Management を有効化する方法](/azure/information-protection/activate-office365)」を参照してください。
-- **Azure Portal**: 手順については、「[Azure Portal から Azure Rights Management を有効化する方法](/azure/information-protection/activate-azure)」を参照してください。
+手順については、「[保護サービスの状態をアクティブ化または確認する方法](/azure/information-protection/activate-service#how-to-activate-or-confirm-the-status-of-the-protection-service)」を参照してください。
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Azure Information Protection テナント キーの管理を構成する
 

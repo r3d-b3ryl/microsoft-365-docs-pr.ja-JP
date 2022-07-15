@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0557f53ee50189969f7e2225cabd74354b28055
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f5f404df8d8cbf5d4ac755c17c2a6c07717d8360
+ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640480"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66797975"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -104,7 +104,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中           | レビュー中               | はい |
 |[既定ラベルと必須ラベルのさまざまな設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                   | 4.2111 以上           | 4.2111 以上               | はい |
 |[PDF サポート](#pdf-support) | レビュー中|  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
-|[S/MIME 保護を適用する](#configure-a-label-to-apply-smime-protection-in-outlook)                    | レビュー中 | ロールアウト: 16.61 以上 <sup>\*</sup>                   | ロールアウト: 4.2208以上 | ロールアウト: 4.2203 以上 | レビュー中 |
+|[S/MIME 保護を適用する](#configure-a-label-to-apply-smime-protection-in-outlook)                    | レビュー中 | ロールアウト: 16.61 以上 <sup>\*</sup>                   | ロールアウト: 4.2226 以上 | ロールアウト: 4.2203 以上 | レビュー中 |
 
 **脚注:**
 
