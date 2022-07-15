@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 Business Premium 試用版を最大限に活用しましょう。 生産性とセキュリティに関する主要な機能を試してみてください。
-ms.openlocfilehash: 96bfec80e828ec88866da740622ca252eaabf9e4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ecb341673d3cf9469cbf2814d8c4486a01d4fc3f
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624649"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66772539"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>試用版プレイブック: Microsoft Business Premium
 
@@ -63,6 +63,9 @@ Microsoft 365 Business Premium 体験版取得または購入する際、自分�
 5. ご利用のホスティング プロバイダーが GoDaddy または Domain Connect を有効にした別のホストである場合、プロセスは簡単です。サインインし、お客様に代わって Microsoft が認証するよう自動的に求められます。
 
 ## <a name="onboard-and-protect-devices"></a>デバイスのオンボードと保護
+
+> [!NOTE]
+> Windows Server や Linux Server を実行しているエンドポイントをオンボードする機能はプレビュー段階になりました。 「[デバイスを Microsoft Defender for Business にオンボードするデバイスを Microsoft Defender for Business にオンボードする](../security/defender-business/mdb-onboard-devices.md)」を参照してください。
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 

@@ -15,12 +15,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: b76735130d768edfa9c71b25081040a7f4b6718c
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: f769d79baa2dc17abe179f09af3bdb6f4571440c
+ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686011"
+ms.lasthandoff: 07/13/2022
+ms.locfileid: "66771331"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
@@ -45,12 +45,13 @@ ms.locfileid: "66686011"
 
 ## <a name="guided-setup-process"></a>ガイド付きセットアップ プロセス
 
-Microsoft 365 Business Premium には、ガイド付き手順が含まれています。 次のビデオは、Microsoft 365 Business Standard のガイド付きセットアップ プロセスを示しています。これは、Microsoft 365 Business Premium にも適用されます。<br/><br/>
+Microsoft 365 Business Premium には、ガイド付き手順が含まれています。 次のビデオは、Microsoft 365 Business Standard のガイド付きセットアップ プロセスを示しています。これは、Microsoft 365 Business Premium にも適用されます。 ガイド付きセットアップ プロセスが完了したらすぐに、[セキュリティの強化](m365bp-security-overview.md) に進むようにしてください。<br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
 > ユーザーを追加したら、「[従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md)」 へのリンクをユーザーに提供します。 このガイドでは、サインイン、Office アプリの取得、ファイルの保存、コピー、共有について説明します。
+> [セキュリティの強化](m365bp-security-overview.md) に進むようにしてください。
 
 ## <a name="work-with-a-microsoft-partner"></a>Microsoft パートナーと連携する
 
