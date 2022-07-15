@@ -16,23 +16,23 @@ ms.custom:
 - AdminSurgePortfolio
 - M365-Lighthouse
 search.appverid: MET150
-description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft Defender ウイルス対策による脅威の軽減について説明します。
-ms.openlocfilehash: 3c600c8119ba3d4a252efcf5675ab58138a69b83
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft Defender ウイルス対策を使用して脅威を軽減する方法について説明します。
+ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66016682"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822049"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を使用してMicrosoft 365 Lighthouseの脅威を軽減する
 
-Microsoft 365 Lighthouseでは、パートナーは、すべてのテナントにわたる脅威を調査し、軽減できます。 また、デバイスでウイルス対策スキャンを開始したり、デバイスがMicrosoft Defender ウイルス対策の最新の更新プログラムを取得していることを確認したり、ウイルス対策スキャン後に保留中のアクションを確認したりできます。 Lighthouse では、Windows 10 以降を実行しているデバイスのみがサポートされます。
+Microsoft 365 Lighthouseでは、パートナーは、すべてのテナントにわたる脅威を調査し、軽減できます。 デバイスでウイルス対策スキャンを開始したり、デバイスが Microsoft Defender ウイルス対策の最新の更新プログラムを取得していることを確認したり、ウイルス対策スキャン後の保留中のアクションを確認したりすることもできます。 Lighthouse では、Windows 10 以降を実行しているデバイスのみがサポートされます。
 
 ## <a name="before-you-begin"></a>はじめに
 
 - Microsoft 365 Lighthouseは、顧客テナントではなく、パートナー テナントにのみ展開されますが、お客様と顧客テナントが[、Microsoft 365 Lighthouse要件](m365-lighthouse-requirements.md)に記載されている要件を満たしていることを確認してください。
 
-- ユーザーはMicrosoft Defender ウイルス対策を実行している必要があります (Windowsに含まれています)。 Lighthouse では、Microsoft 以外のウイルス対策ソフトウェアはサポートされていません。 詳細については、「[Microsoft Defender ウイルス対策を有効にする」](/mem/intune/user-help/turn-on-defender-windows)を参照してください。
+- ユーザーは Microsoft Defender ウイルス対策 (Windows に付属) を実行している必要があります。 Lighthouse では、Microsoft 以外のウイルス対策ソフトウェアはサポートされていません。 詳細については、「 [Microsoft Defender ウイルス対策を有効にする」](/mem/intune/user-help/turn-on-defender-windows)を参照してください。
 
 - サインイン先のパートナー テナントのグローバル管理者である必要があります。
 
@@ -40,7 +40,7 @@ Microsoft 365 Lighthouseでは、パートナーは、すべてのテナント�
 
 特定の脅威を調査するには:
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **脅威の管理**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **の脅威管理**] を選択します。
 
 2. [ **脅威** ] タブを選択します。
 
@@ -62,7 +62,7 @@ Microsoft 365 Lighthouseでは、パートナーは、すべてのテナント�
 
 特定のデバイス上の脅威を調査するには:
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **脅威の管理**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **の脅威管理**] を選択します。
 
 2. [ **ウイルス対策の保護** ] タブを選択します。
 
@@ -76,7 +76,7 @@ Lighthouse には、デバイスで検出されたすべての脅威が表示さ
 
 クイック スキャンは、レジストリ キーやスタートアップ フォルダーなど、マルウェアが存在する可能性がある一般的な場所を検索します。 フル スキャンでは、デバイス全体が検索されます。 ほとんどの場合、クイック スキャンで十分であり、スケジュールされたスキャンに推奨されるオプションとなっています。
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **脅威の管理**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **の脅威管理**] を選択します。
 
 2. [ **ウイルス対策の保護** ] タブを選択します。
 
@@ -88,9 +88,9 @@ Lighthouse には、デバイスで検出されたすべての脅威が表示さ
 
 ## <a name="get-updates-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策の更新プログラムを取得する
 
-1 つのデバイスでMicrosoft Defender ウイルス対策を更新するには:
+1 つのデバイスで Microsoft Defender ウイルス対策を更新するには:
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **脅威の管理**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **の脅威管理**] を選択します。
 
 2. [ **ウイルス対策の保護** ] タブを選択します。
 
@@ -100,13 +100,13 @@ Lighthouse には、デバイスで検出されたすべての脅威が表示さ
 
 一覧の各デバイス名の横にあるチェック ボックスをオンにし、[ **ウイルス対策の更新**] を選択すると、複数のデバイスの更新プログラムを取得できます。
 
-新しいポリシーを作成する必要がある場合は、デバイスの詳細ウィンドウで **[ポリシーの更新** ] を選択します。 Lighthouse によってMicrosoft エンドポイント マネージャー (MEM) にリダイレクトされます。 ポリシーの作成の詳細については、「[Microsoft Intuneでのコンプライアンス ポリシーの作成](/mem/intune/protect/create-compliance-policy)」を参照してください。
+新しいポリシーを作成する必要がある場合は、デバイスの詳細ウィンドウで **[ポリシーの更新** ] を選択します。 Lighthouse から Microsoft エンドポイント マネージャー (MEM) にリダイレクトされます。 ポリシーの作成の詳細については、「[Microsoft Intuneでのコンプライアンス ポリシーの作成](/mem/intune/protect/create-compliance-policy)」を参照してください。
 
 ## <a name="check-pending-antivirus-actions-on-a-device"></a>デバイスで保留中のウイルス対策アクションを確認する
 
 連続するアクションがデバイスに適用されると、保留中のアクション メッセージが表示されます。 デバイスで保留中のアクションを確認するには、
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **脅威の管理**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **の脅威管理**] を選択します。
 
 2. [ **ウイルス対策の保護** ] タブを選択します。
 
@@ -118,7 +118,7 @@ Lighthouse には、デバイスで検出されたすべての脅威が表示さ
 
 一部の更新プログラムでは、正しくインストールするためにデバイスの再起動が必要になる場合があります。
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **脅威の管理**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **の脅威管理**] を選択します。
 
 2. [ **ウイルス対策の保護** ] タブを選択します。
 

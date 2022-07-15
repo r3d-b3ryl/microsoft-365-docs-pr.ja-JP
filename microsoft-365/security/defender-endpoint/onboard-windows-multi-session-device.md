@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 91a9cc3e7a9fdc38a05deaf04f2124819f41d1ae
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 63966b84fc2d5a57f9c8b405a97d61ba17450dfb
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607435"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822137"
 ---
 # <a name="onboard-windows-devices-in-azure-virtual-desktop"></a>Azure Virtual Desktop で Windows デバイスをオンボードする
 
@@ -33,7 +33,7 @@ ms.locfileid: "66607435"
 
 Microsoft Defender for Endpointでは、VDI セッションと Azure Virtual Desktop セッションの両方の監視がサポートされます。 組織のニーズによっては、従業員が管理されていないデバイス、リモートの場所、または同様のシナリオから企業データやアプリにアクセスできるように、VDI または Azure Virtual Desktop セッションを実装することが必要になる場合があります。 Microsoft Defender for Endpointを使用すると、これらの仮想マシンで異常なアクティビティを監視できます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 [非永続的 VDI に関する考慮事項](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)について理解します。 [Azure Virtual Desktop](/azure/virtual-desktop/overview) には非永続化オプションは用意されていませんが、新しいホストのプロビジョニングとマシンの再デプロイに使用できるゴールデン Windows イメージを使用する方法が提供されます。 これにより、環境の揮発性が高まり、Microsoft Defender for Endpoint ポータルで作成および管理されるエントリに影響を与え、セキュリティ アナリストの可視性が低下する可能性があります。
 
@@ -70,7 +70,7 @@ AVD ホスト マシンをオンボードするには、いくつかの方法が
 
 このシナリオでは、一元的に配置されたスクリプトを使用し、ドメイン ベースのグループ ポリシーを使用して実行します。 また、ゴールデン イメージにスクリプトを配置し、同じ方法で実行することもできます。
 
-##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-windows-365-defender-portal"></a>Windows 365 Defender ポータルからWindowsDefenderATPOnboardingPackage.zip ファイルをダウンロードする
+##### <a name="download-the-windowsdefenderatponboardingpackagezip-file-from-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルからWindowsDefenderATPOnboardingPackage.zip ファイルをダウンロードする
 
 1. VDI 構成パッケージ .zip ファイルを開く (WindowsDefenderATPOnboardingPackage.zip)
 

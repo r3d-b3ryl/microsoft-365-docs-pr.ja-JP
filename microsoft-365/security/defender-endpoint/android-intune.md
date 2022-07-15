@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c743b54e27bc9caa60bb6b4e24191d626ece6fcf
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 9c00ea16bddb7aa9094b41b30692493b530acbb3
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490511"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823166"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Microsoft Intune を使用した Android 用 Microsoft Defender for Endpoint の展開
 
@@ -54,12 +54,12 @@ Intune ポータル サイト - デバイス管理者が登録したデバイス
 
 2. [ **アプリの追加]** ページと [ *アプリ情報* ] セクションで次のように入力します。
 
-   - **[名前]**
+   - **名前**
    - **説明**
    - **Microsoft としてのパブリッシャー** 。
    - **アプリ ストア URL** as https://play.google.com/store/apps/details?id=com.microsoft.scmx (Defender for Endpoint アプリ Google Play ストア URL)
 
-   その他のフィールドは省略可能です。 **[次へ]** を選択します。
+   その他のフィールドは省略可能です。 次へ] を選択します。
 
    :::image type="content" source="images/mda-addappinfo.png" alt-text="Microsoft エンドポイント マネージャー 管理 センター ポータルでアプリケーションの発行元と URL の情報を表示する [アプリの追加] ページ" lightbox="images/mda-addappinfo.png":::
 
@@ -154,7 +154,14 @@ Intuneでサポートされている登録オプションの詳細について�
         - [プロファイルの種類 **] として [仕事用プロファイルのみ** ] を選択します。
         - [**アプリの選択]** をクリックし、**Microsoft Defender ATP** を選択 **して[OK]、[****次へ**] の順に選択します。
 
-        :::image type="content" source="images/android-create-app.png" alt-text=" [関連付けられているアプリの詳細] ウィンドウ" lightbox="images/android-create-app.png":::
+        :::image type="content" source="images/android-create-app.png" alt-text=" [関連付けられているアプリの詳細] ウィンドウのスクリーンショット。" lightbox="images/android-create-app.png":::
+     
+    1. [ **アクセス許可] > [追加]** を選択します。 一覧から、使用可能なアプリのアクセス許可> **[OK] を選択します**。
+    2. このポリシーで付与するアクセス許可ごとにオプションを選択します。
+
+       - **プロンプト** - ユーザーに同意または拒否を求めます。
+       - **自動付与** - ユーザーに通知することなく自動的に承認されます。
+       - **自動拒否** - ユーザーに通知せずに自動的に拒否されます。 
 
     1. **[設定]** ページの [構成設定] セクションに移動し、**構成設定** 形式で **[構成デザイナーの使用**] を選択します。 
 
@@ -231,7 +238,7 @@ Defender for Endpoint では、Intune経由でマネージド デバイスのデ
 
    [ **割り当て** ] ページで、このアプリ構成ポリシーを割り当てるユーザー グループを選択します。 [含める **グループの選択]** を選択し、該当するグループを選択して、[ **次へ**] を選択します。 ここで選択したグループは、通常、Android アプリMicrosoft Defender for Endpoint割り当てるのと同じグループです。
 
-   :::image type="content" source="images/4autosetupofvpn.png" alt-text="[デバイスの制限] の [デバイス構成プロファイルの割り当て] ウィンドウ" lightbox="images/4autosetupofvpn.png":::
+   :::image type="content" source="images/4autosetupofvpn.png" alt-text="[デバイスの制限] の [デバイス構成プロファイルの割り当て] ウィンドウのスクリーンショット。" lightbox="images/4autosetupofvpn.png":::
 
 5. 次に表示される **[確認と作成]** ページで、すべての情報を確認し、[ **作成**] を選択します。
 これで、デバイス構成プロファイルが選択したユーザー グループに割り当てられます。

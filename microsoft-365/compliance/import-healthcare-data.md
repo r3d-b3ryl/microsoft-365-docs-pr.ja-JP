@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、医療システムから Microsoft 365 に電子医療レコード (EHR) データをインポートするデータ コネクタを設定できます。 これにより、インサイダー リスク管理ポリシーで EHR データを使用して、従業員による患者データへの不正アクセスアクティビティを検出できます。
-ms.openlocfilehash: be5429ea1a5fb4e2e2be6a7029f2401fcbdab94e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641386"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822959"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>医療 EHR 監査データをインポートするコネクタを設定する (プレビュー)
 
@@ -36,6 +36,8 @@ Healthcare コネクタの設定は、次のタスクで構成されます。
 - 医療 EHR 監査データを API エンドポイントにプッシュするスクリプトを実行します。
 
 - 必要に応じて、監査データをインポートするために自動的に実行するスクリプトをスケジュールします。
+
+プレビューに参加する場合は、dcfeedback@microsoft.com のチームにお問い合わせください。
 
 ## <a name="before-you-set-up-the-connector"></a>コネクタを設定する前に
 
@@ -71,7 +73,7 @@ Azure AD でアプリを作成する手順については、「[アプリケー�
 | 作成時刻 *<br/>イベント名*<br/>ワークステーション ID<br/>[イベント] セクション<br/>分類 |これらのフィールドは、医療 EHR システム内のアクセス アクティビティ イベントを識別するために使用されます。|
 | 患者 Reg ID<br/>患者名 *<br/>患者ミドル ネーム <br/>患者姓* <br/>患者アドレス行 1* <br/>患者アドレス行 2<br/>Patient City* <br/>患者郵便番号*  <br/>患者の状態 <br/>患者の国 <br/>患者部              | これらのフィールドは、患者プロファイル情報を識別するために使用されます。|
 | 制限付きアクセスの理由*<br/> アクセス制限付きコメント | これらのフィールドは、制限付きレコードへのアクセスを識別するために使用されます。|
-| 電子メール アドレス (UPN) または SamAccountName*<br/>従業員のユーザー名 <br/> 従業員 ID <br/> 従業員の姓 <sup>1</sup> <br/> 従業員名 <sup>1</sup> | これらのフィールドは、家族/近隣/従業員レコードへのアクセスを決定するために必要な住所と名前の一致に関する従業員プロファイル情報を識別するために使用されます。 |
+| Email アドレス (UPN) または SamAccountName*<br/>従業員のユーザー名 <br/> 従業員 ID <br/> 従業員の姓 <sup>1</sup> <br/> 従業員名 <sup>1</sup> | これらのフィールドは、家族/近隣/従業員レコードへのアクセスを決定するために必要な住所と名前の一致に関する従業員プロファイル情報を識別するために使用されます。 |
 |||
 
 > [!NOTE] 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 LighthouseでWindows 365 クラウド PCを再プロビジョニングする方法について説明します。
-ms.openlocfilehash: 4c292b3feda03045703be03d81006bd274239e6b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 9ce402d1db83b07653c3e93a5e1e1c25406ae3e9
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66017528"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822941"
 ---
 # <a name="reprovision-a-windows-365-cloud-pc-in-microsoft-365-lighthouse"></a>Microsoft 365 LighthouseでWindows 365 クラウド PCを再プロビジョニングする
 
@@ -34,7 +34,7 @@ Microsoft 365 Lighthouseは、プロビジョニング ポリシーを持つク�
 
 ## <a name="reprovision-a-windows-365-cloud-pc"></a>Windows 365 クラウド PCを再プロビジョニングする
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、**Windows 365** を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**デバイス** > **Windows 365** を選択します。
 
 2. [ **すべてのクラウド PC** ] タブを選択します。
 
@@ -51,7 +51,7 @@ Microsoft 365 Lighthouseは、プロビジョニング ポリシーを持つク�
 
 ## <a name="check-the-device-action-status"></a>デバイス アクションの状態を確認する
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、**Windows 365** を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、**デバイス** > **Windows 365** を選択します。
 
 2. [ **すべてのクラウド PC** ] タブを選択します。
 

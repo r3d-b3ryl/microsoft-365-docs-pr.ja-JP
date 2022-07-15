@@ -55,7 +55,6 @@
 #### [ローカル スクリプトを使用した Windows クライアントのオンボード](configure-endpoints-script.md)
 #### [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)
 #### [Windows Virtual Desktop の Windows 10 マルチセッション デバイスのオンボード](onboard-windows-multi-session-device.md)
-#### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
 #### [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 
 
@@ -182,6 +181,7 @@
 ### [Microsoft Defender for Cloudとの統合](azure-server-integration.md) 
 ### [新しくオンボードされたデバイスで検出テストを実行する](run-detection-test.md)
 ### [デバイスに対してシミュレートされた攻撃を実行する](attack-simulations.md)
+### [インターネット アクセスなしでデバイスをオンボードする](onboard-offline-machines.md)
 ### [プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)
 ### [オンボーディングまたはオフボーディングの通知ルールを作成する](onboarding-notification.md)
 

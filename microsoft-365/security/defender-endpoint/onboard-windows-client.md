@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 95fcb9c86b6b733e0597768a1705aca2b971dc8c
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 60b7e78902dff29278e3fe960e016e38c10cf296
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66532748"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822168"
 ---
 # <a name="defender-for-endpoint-onboarding-windows-client"></a>Windows クライアントのオンボードを行う Defender for Endpoint
 
@@ -44,7 +44,7 @@ Defender for Endpoint サービスがセンサー データを取得できるよ
 :::image type="content" source="images/onboarddevices.png" alt-text="デバイスのオンボード" lightbox="images/onboarddevices.png":::
 
 ## <a name="related-topics"></a>関連項目
-- [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
+- [Microsoft Intuneを使用して Windows デバイスをオンボードする](configure-endpoints-mdm.md)
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)
 - [非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](configure-endpoints-vdi.md)

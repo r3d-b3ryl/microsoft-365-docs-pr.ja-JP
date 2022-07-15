@@ -17,16 +17,16 @@ ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b302231d7dbdcc92ee2e8e2e0564cedb27a4218e
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4b2a45a667aa654a8ff3111313b542433e692f1f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621119"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823391"
 ---
 # <a name="learn-about-information-barriers"></a>情報バリアについての詳細情報
 
-Microsoft Purview Information Barriers (IB) は、Microsoft Teams、SharePoint Online、およびOneDrive for Businessのグループとユーザー間の双方向通信とコラボレーションを制限できるコンプライアンス ソリューションです。 規制の厳しい業界でよく使用される IB は、関心の対立を回避し、ユーザーと組織領域間の内部情報を保護するのに役立ちます。
+Microsoft Purview Information Barriers (IB) は、Microsoft Teams、SharePoint、OneDrive のグループとユーザー間の双方向通信とコラボレーションを制限できるコンプライアンス ソリューションです。 規制の厳しい業界でよく使用される IB は、関心の対立を回避し、ユーザーと組織領域間の内部情報を保護するのに役立ちます。
 
 IB ポリシーが適用されている場合、他の特定のユーザーとファイルの通信や共有を行わないユーザーは、それらのユーザーを検索、選択、チャット、または呼び出すことはできません。 IB ポリシーでは、定義されたグループとユーザー間の不正な通信とコラボレーションを検出して防止するためのチェックが自動的に実施されます。 IB ポリシーは、電子情報開示マネージャーが検索できるユーザー コンテンツの場所を制御する電子情報開示調査の [コンプライアンス境界](/microsoft-365/compliance/set-up-compliance-boundaries) から独立しています。
 
@@ -61,7 +61,7 @@ Microsoft Teams でこれらのアクティビティを実行しているユー�
 
 ## <a name="information-barriers-and-sharepoint-and-onedrive"></a>情報バリアと SharePoint と OneDrive
 
-SharePoint Online と OneDrive では、IB ポリシーによって、次の種類の承認されていないコラボレーションが検出され、防止されます。
+SharePoint と OneDrive では、IB ポリシーによって、次の種類の承認されていないコラボレーションが検出され、防止されます。
 
 - サイトへのメンバーの追加
 - ユーザーによるサイトまたはコンテンツへのアクセス

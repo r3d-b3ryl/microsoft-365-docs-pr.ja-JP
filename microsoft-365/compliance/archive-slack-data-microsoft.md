@@ -5,23 +5,25 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance
 description: Microsoft が提供する Slack 電子情報開示データ コネクタを設定して使用して、インスタント メッセージング データをインポートおよびアーカイブする方法について説明します。
-ms.openlocfilehash: 138a93449b4b2a9ce7b57b4c240f2e42c553d818
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9068679ce612f811e899b6f37f6e57e4ac4ac1b4
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631483"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823443"
 ---
 # <a name="set-up-a-connector-to-archive-slack-ediscovery-data-preview"></a>Slack 電子情報開示データをアーカイブするコネクタを設定する (プレビュー)
 
 Microsoft から提供される Slack 電子情報開示データ コネクタは、組織の Slack ワークスペースから Microsoft 365 にインスタント メッセージング データ (メッセージ、添付ファイル、リンク、リビジョンなど) をインポートおよびアーカイブするのに役立ちます。 データ コネクタは Slack API からデータをプルし、それを電子メール メッセージ形式に変換し、それらのアイテムを Microsoft 365 のユーザー メールボックスにインポートします。 Slack データがインポートされたら、訴訟ホールド、Microsoft Purview eDiscovery (Premium)、通信コンプライアンス、保持設定などのコンプライアンス ソリューションを Slack コンテンツに適用できます。 Slack 電子情報開示データ コネクタを使用して Microsoft 365 でデータをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+
+プレビューに参加する場合は、dcfeedback@microsoft.com のチームにお問い合わせください。
 
 ## <a name="overview-of-archiving-slack-ediscovery-data"></a>Slack 電子情報開示データのアーカイブの概要
 

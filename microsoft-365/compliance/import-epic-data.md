@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織のエピック システムから Microsoft 365 に電子医療レコード (EHR) データをインポートするためのデータ コネクタを設定できます。 これにより、インサイダー リスク管理ポリシーでエピック EHR データを使用して、従業員による患者データへの不正アクセス アクティビティを検出できます。
-ms.openlocfilehash: c2caef93a8bb1c5cb272e0420b0c3ab8cfe4499b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624049"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822781"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>エピック EHR 監査データをインポートするコネクタを設定する (プレビュー)
 
@@ -36,6 +36,8 @@ Microsoft Purview コンプライアンス ポータルでデータ コネクタ
 - エピック EHR 監査レコードを API エンドポイントにプッシュするスクリプトを実行します。
 
 - 必要に応じて、監査レコードをインポートするためにスクリプトを自動的に実行するようにスケジュールします。
+
+プレビューに参加する場合は、dcfeedback@microsoft.com のチームにお問い合わせください。
 
 ## <a name="before-you-set-up-the-connector"></a>コネクタを設定する前に
 

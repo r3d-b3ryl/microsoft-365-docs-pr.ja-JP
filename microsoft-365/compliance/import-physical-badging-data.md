@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: admindeeplinkCOMPLIANCE
 description: 管理者は、組織の物理的な不正プログラム システムから Microsoft 365 にデータをインポートするデータ コネクタを設定できます。 これにより、内部リスク管理ポリシーでこのデータを使用して、組織に対する内部脅威の可能性を示す可能性がある特定のユーザーによる物理的な建物へのアクセスを検出するのに役立ちます。
-ms.openlocfilehash: 90e0a421397683fe05161b27b1743354713de516
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e34706e7fc6be5d813d718e0d927859ca91d9ee8
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641430"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823111"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>物理的な不正なデータをインポートするようにコネクタを設定する (プレビュー)
 
@@ -37,6 +37,8 @@ Microsoft Purview コンプライアンス ポータルでデータ コネクタ
 - 物理的な不正なデータを API エンドポイントにプッシュするスクリプトを実行します。
 
 - 必要に応じて、現在物理的な不正なデータをインポートするためにスクリプトを自動的に実行するようにスケジュールします。
+
+プレビューに参加する場合は、dcfeedback@microsoft.com のチームにお問い合わせください。
 
 ## <a name="before-you-set-up-the-connector"></a>コネクタを設定する前に
 
@@ -231,7 +233,7 @@ JSON ファイルは、コネクタに必要なスキーマ定義に準拠して
 
    ![物理的な不適切なコネクタ ログ ファイルには、アップロードされた JSON ファイルのオブジェクトの数が表示されます。](..\media\PhysicalBadgingConnectorLogFile.png)
 
-   **RecordsSaved** フィールドは、アップロードされた JSON ファイル内のレコードの数を示します。 たとえば、JSON ファイルに 4 つのレコードが含まれている場合、スクリプトが JSON ファイル内のすべてのレコードを正常にアップロードした場合、 **RecordsSaved** フィールドの値は 4 になります。 **RecordsSkipped** フィールドは、スキップされた JSON ファイル内のレコードの数を示します。 JSON ファイル内のレコードをアップロードする前に、レコードの電子メール ID が検証されます。 無効な電子メール ID を持つレコードはスキップされ、対応する電子メール ID が **EmailIdsNotSaved** フィールドに表示されます
+   **RecordsSaved** フィールドは、アップロードされた JSON ファイル内のレコードの数を示します。 たとえば、JSON ファイルに 4 つのレコードが含まれている場合、スクリプトが JSON ファイル内のすべてのレコードを正常にアップロードした場合、 **RecordsSaved** フィールドの値は 4 になります。 **RecordsSkipped** フィールドは、スキップされた JSON ファイル内のレコードの数を示します。 JSON ファイル内のレコードをアップロードする前に、レコードのEmail ID が検証されます。 無効なEmail ID を持つレコードはすべてスキップされ、対応するEmail ID が **EmailIdsNotSaved** フィールドに表示されます。
 
 手順 4 でスクリプトを実行していない場合は、[ **最後のインポート**] にスクリプトをダウンロードするためのリンクが表示されます。 スクリプトをダウンロードし、手順 4 の手順に従って実行できます。
 

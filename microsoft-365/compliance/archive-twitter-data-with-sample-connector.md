@@ -15,12 +15,12 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: 管理者がネイティブ コネクタを設定して使用して Twitter データを Microsoft 365 にインポートする方法について説明します。
-ms.openlocfilehash: 1dd5de91484d04411b5216f6801589b32ef381ce
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 83558b4a2f188853b4deac31cf636476480a2557
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625557"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822249"
 ---
 # <a name="set-up-a-microsoft-connector-to-archive-twitter-data-preview"></a>Twitter データをアーカイブする Microsoft コネクタを設定する (プレビュー)
 
@@ -29,6 +29,8 @@ Microsoft Purview コンプライアンス ポータルのコネクタを使用�
 Twitter データがインポートされたら、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、Microsoft 365 アイテム保持ポリシーなどの Microsoft Purview 機能を Twitter データに適用できます。 たとえば、メールボックスを訴訟ホールドに置いたり、アイテム保持ポリシーに割り当てたりすると、Twitter データは保持されます。 コンテンツ検索を使用してサード パーティのデータを検索したり、Twitter データが保存されているメールボックスをMicrosoft Purview eDiscovery (Premium) ケースのカストディアンに関連付けることができます。 コネクタを使用して Microsoft 365 で Twitter データをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
 
 Twitter データをインポートした後は、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、通信コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft Purview 機能をメールボックスに格納されているデータに適用できます。 たとえば、コンテンツ検索を使用して Twitter データを検索したり、データが格納されているメールボックスを電子情報開示 (Premium) ケースのカストディアンに関連付けることができます。 コネクタを使用して Microsoft 365 で Twitter データをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+
+プレビューに参加する場合は、dcfeedback@microsoft.com のチームにお問い合わせください。
 
 ## <a name="before-you-set-up-a-connector"></a>コネクタを設定する前に
 

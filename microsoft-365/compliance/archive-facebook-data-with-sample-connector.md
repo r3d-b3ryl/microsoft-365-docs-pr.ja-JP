@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/15/2022
 audience: Admin
 ms.topic: how-to
 ms.service: O365-seccomp
@@ -15,18 +15,20 @@ search.appverid:
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
 description: Microsoft Purview コンプライアンス ポータルのコネクタを使用&設定して、Facebook Business ページから Microsoft 365 に&アーカイブ データをインポートする方法について説明します。
-ms.openlocfilehash: d8b951e7f0b9733dacca7cfd16eed1042d84c460
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 79238bbbdcea71cf83342894d3b61e8047f5897a
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623355"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822881"
 ---
 # <a name="set-up-a-connector-to-archive-facebook-data-preview"></a>Facebook データをアーカイブするコネクタを設定する (プレビュー)
 
 Microsoft Purview コンプライアンス ポータルのコネクタを使用して、Facebook Business ページから Microsoft 365 にデータをインポートおよびアーカイブします。 コネクタを設定して構成すると、Facebook Business ページ (スケジュールに基づいて) に接続され、Facebook アイテムのコンテンツが電子メール メッセージ形式に変換され、Microsoft 365 のメールボックスにそれらのアイテムがインポートされます。
 
 Facebook データがインポートされたら、訴訟ホールド、コンテンツ検索、In-Placeアーカイブ、監査、コミュニケーション コンプライアンス、Microsoft 365 アイテム保持ポリシーなどの Microsoft Purview 機能を Facebook データに適用できます。 たとえば、メールボックスを訴訟ホールドに置いたり、アイテム保持ポリシーに割り当てたりすると、Facebook データは保持されます。 コンテンツ検索を使用してサード パーティのデータを検索したり、Facebook データが保存されているメールボックスをMicrosoft Purview eDiscovery (Premium) ケースのカストディアンに関連付けることができます。 コネクタを使用して Microsoft 365 で Facebook データをインポートおよびアーカイブすると、組織が政府および規制のポリシーに準拠し続けることができます。
+
+プレビューに参加する場合は、dcfeedback@microsoft.com のチームにお問い合わせください。
 
 ## <a name="prerequisites-for-setting-up-a-connector-for-facebook-business-pages"></a>Facebook Business ページのコネクタを設定するための前提条件
 

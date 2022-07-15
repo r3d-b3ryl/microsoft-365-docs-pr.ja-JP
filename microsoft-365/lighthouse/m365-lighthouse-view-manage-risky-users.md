@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、危険なユーザーを表示および管理する方法について説明します。
-ms.openlocfilehash: 45c91ec0871393f69e7a166cc8582f149479ad1b
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: b4f34ccfafa1a002a9c798924641eaeeebdb04fe
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66011840"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66823421"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでリスクの高いユーザーを表示および管理する
 
 Microsoft では、毎日何兆ものユーザー サインインシグナルを収集し、分析しています。 これらのシグナルは、適切なユーザー サインイン動作パターンを構築し、潜在的な危険なサインイン試行を特定するために使用されます。 Azure Active Directory (Azure AD) Identity Protection では、これらのシグナルを使用してユーザー のサインイン試行を確認し、疑わしいアクティビティがある場合はアクションを実行します。
 
-Microsoft 365 Lighthouseは、すべてのマネージド テナントに危険なユーザーを 1 つのビューで表示することで、Azure AD Identity Protection によって検出されたリスクを管理するのに役立ちます。 パスワードをリセットするか、Microsoft 365 アカウントへのサインインをブロックすることで、危険なユーザーをすばやくセキュリティで保護できます。 分析情報を表示して、ユーザーのリスクをよりよく理解し、次の手順を決定することもできます。
+Microsoft 365 Lighthouseは、すべてのマネージド テナントに危険なユーザーを 1 つのビューで表示することで、Azure AD Identity Protection によって検出されたリスクを管理するのに役立ちます。 パスワードをリセットするか、Microsoft 365 アカウントへのサインインをブロックすることで、危険なユーザーを迅速にセキュリティで保護できます。 分析情報を表示して、ユーザーのリスクをよりよく理解し、次の手順を決定することもできます。
 
 Azure AD Identity Protection は、次のような多くの種類のリスクを識別します。
 
@@ -51,15 +51,13 @@ Azure AD Identity Protection は、次のような多くの種類のリスクを
 
 Azure AD Identity Protection では、リスク検出には、Azure AD のユーザー アカウントに関連する特定された疑わしいアクションが含まれます。
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、**[ユーザー]** を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****リスクの高いユーザー** > ] を選択します。
 
-2. [ **危険なユーザー** ] タブを選択します。
+2. [ **危険なユーザー** ] タブで、リスク状態が **[リスク** あり] の一覧のユーザーを確認します。
 
-3. リスク状態が **[リスク** あり] の一覧のユーザーを確認します。
+3. [ **リスク検出の表示** ] を選択して、各ユーザーについて検出されたリスクに関する詳細情報を取得します。 リスクの種類と検出の詳細については、「 [リスクとは」](/azure/active-directory/identity-protection/concept-identity-protection-risks)を参照してください。
 
-4. [ **リスク検出の表示** ] を選択して、各ユーザーについて検出されたリスクに関する詳細情報を取得します。 リスクの種類と検出の詳細については、「 [リスクとは」](/azure/active-directory/identity-protection/concept-identity-protection-risks)を参照してください。
-
-5. 各ユーザーについて、リスク検出を評価し、必要に応じて次のいずれかのアクションを選択します。
+4. 各ユーザーについて、リスク検出を評価し、必要に応じて次のいずれかのアクションを選択します。
 
     - パスワードのリセット – ユーザー パスワードを変更またはリセットします。
 
@@ -73,9 +71,11 @@ Azure AD Identity Protection では、リスク検出には、Azure AD のユー
 
 影響を受ける複数のユーザーに対して一度にアクションを実行するには:
 
-1. **[危険なユーザー**] タブで、アクションを実行するユーザーのセットを選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****リスクの高いユーザー** > ] を選択します。
 
-2. 実行するアクションを次のいずれかを選択します。
+2. [ **危険なユーザー** ] タブで、アクションを実行するユーザーのセットを選択します。
+
+3. 実行するアクションを次のいずれかを選択します。
 
     - パスワードのリセット
 

@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロック一覧で、許可とブロックを管理する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ad8920ae83b99528c47b00d375affb0fbfa6c330
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 1267c0316150f36562b145b14633d9d6562ad196
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714511"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822227"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>テナントの許可/禁止リストを管理する
 
@@ -72,7 +72,7 @@ Microsoft 365 Defender ポータルのテナント許可/ブロックリスト�
 
 - エントリは 30 分以内にアクティブにする必要があります。
 
-- 既定では、テナント許可/ブロック リストのエントリは 30 日後に期限切れになります。 日付を指定するか、期限切れにならないように設定できます。
+- 既定では、テナント許可/ブロック リストのエントリは 30 日後に期限切れになります。 日付を指定するか、期限切れにならないように設定できます (ブロックの場合のみ)。
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -490,6 +490,6 @@ Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 
 ## <a name="what-to-expect-after-you-add-an-allow-or-block-entry"></a>許可エントリまたはブロック エントリを追加した後に必要なもの
 
-申請ポータルまたはテナント許可/ブロック リストのブロック エントリを使用して許可エントリを追加した後、エントリはすぐに動作を開始する必要があります。
+申請ポータルまたはテナント許可/ブロック リストのブロック エントリを使用して許可エントリを追加した後、エントリがアクティブになると、エントリはすぐに動作を開始する必要があります。 ほとんどの場合、エントリは 30 分以内にアクティブになりますが、最大で 24 時間かかる場合があります。
 
 システムが許可またはブロックについて学習したかどうかを確認するために、エントリの有効期限を 30 日後に自動的に設定することをお勧めします。 そうでない場合は、システムに学習にさらに 30 日間を与えるために、別のエントリを作成する必要があります。
