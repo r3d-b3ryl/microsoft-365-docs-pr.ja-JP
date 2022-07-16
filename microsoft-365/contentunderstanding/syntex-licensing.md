@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 ms.localizationpriority: high
 description: SharePoint Syntex のライセンスの詳細
-ms.openlocfilehash: 31b10c0107bf871f827244889ac7ec77f7958e1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 86776af3184e44cb88f17e0164859f0ba0e2f334
+ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787498"
+ms.lasthandoff: 07/15/2022
+ms.locfileid: "66822271"
 ---
 # <a name="licensing-for-sharepoint-syntex"></a>SharePoint Syntex のライセンス
 
@@ -52,8 +52,8 @@ Ai builder の容量は、[ [AI ビルダー電卓](https://powerapps.microsoft.
 「[Power Platform 管理センター](https://admin.powerplatform.microsoft.com/resources/capacity)」 に移動して、クレジットと使用状況を確認します。
   
 ## <a name="additional-term-store-features"></a>追加の用語ストア機能
- 
-SharePoint Syntex のサブスクリプションには、次の追加の用語ストア機能があります。
+
+組織に 1 つ以上の SharePoint Syntex ライセンスがあると、SharePoint 管理者向けに次の追加の用語ストア機能が有効になります。
  
 - SKOS ベースの用語セットのインポート
 - エンタープライズ コンテンツの種類をハブ サイトにプッシュします。ハブ サイトは、それらを関連サイトや新しく作成されたリストまたはライブラリにも追加します。

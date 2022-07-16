@@ -66,7 +66,7 @@
           href: archive-bloomberg-message-data.md
         - name: Epic EHR 医療データ (プレビュー)
           href: import-epic-data.md
-        - name: Facebook Business
+        - name: Facebook Business (プレビュー)
           href: archive-facebook-data-with-sample-connector.md
         - name: 包括的 EHR 医療データ (プレビュー)
           href: import-healthcare-data.md
@@ -78,11 +78,11 @@
           href: archive-instant-bloomberg-data.md
         - name: LinkedIn
           href: archive-linkedin-data.md
-        - name: 物理的 バッジデータ
+        - name: 物理的 バッジデータ (プレビュー)
           href: import-physical-badging-data.md
         - name: Slack 電子情報開示 (プレビュー)
           href: archive-slack-data-microsoft.md
-        - name: Twitter
+        - name: Twitter (プレビュー)
           href: archive-twitter-data-with-sample-connector.md
     - name: Veritas データ コネクタ
       items:
