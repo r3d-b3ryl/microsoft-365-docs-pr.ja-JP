@@ -1,0 +1,149 @@
+- name: 現場担当者向けの Microsoft 365
+  href: index.yml
+  items:
+    - name: 現場担当者向けの Microsoft 365 の使用を開始する
+      href: flw-overview.md
+    - name: シナリオを選択する
+      href: flw-choose-scenarios.md
+    - name: 現場担当者向けの Microsoft 365 を試す
+      href: flw-trial.md
+    - name: 設定と構成
+      items:
+        - name: 概要
+          href: flw-deploy-overview.md
+        - name: マネージャー - チームを開始する
+          href: get-up-and-running.md
+        - name: パイロット展開から始める
+          href: flw-pilot.md
+        - name: Microsoft 365 と Teams を設定する
+          items:
+            - name: Microsoft 365 と関連サービスを設定する
+              href: flw-setup-microsoft-365.md
+            - name: 現場担当者向けに大規模なチームを展開する
+              href: deploy-teams-at-scale.md
+            - name: オンボーディング ウィザードを使用してユーザーをオンボードする
+              href: flw-onboarding-wizard.md
+        - name: デバイスを管理する
+          items:
+            - name: 共有デバイスと個人用デバイスを管理する
+              href: flw-devices.md
+            - name: Teams にサインインする
+              href: /microsoftteams/sign-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: Teams からサインアウトする
+              href: /microsoftteams/sign-out-of-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: 現場担当者向けの Teams 設定を構成する
+          items:
+            - name: 現場担当者向けに Teams アプリを調整する
+              href: pin-teams-apps-based-on-license.md
+            - name: フロントライン マネージャーと現場担当者用の Teams ポリシー パッケージ
+              href: /microsoftteams/policy-packages-flw?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: セキュリティで保護されたメッセージング
+              href: messaging-policies-hc.md
+            - name: メッセージの委任
+              href: hc-delegates.md
+        - name: エンタープライズから現場担当者に切り替える
+          items:
+            - name: 現場担当者向けのライセンス オプション
+              href: flw-licensing-options.md
+            - name: E から F への切り替えに関する考慮事項
+              href: switch-from-enterprise-to-frontline.md
+    - name: コミュニケーション
+      items:
+        - name: フロントライン チームのコラボレーション
+          href: flw-team-collaboration.md
+        - name: 現場担当者との企業コミュニケーション
+          href: flw-corp-comms.md
+    - name: ウェルビーイング & エンゲージメント
+      items:
+        - name: 従業員を関与させ、ウェルビーイングに集中する
+          href: flw-wellbeing-engagement.md
+    - name: トレーニング & オンボード
+      items:
+        - name: 従業員のオンボードとトレーニング
+          href: flw-onboarding-training.md
+    - name: スケジュール管理
+      items:
+        - name: Teams のシフトの使用を開始する
+          href: shifts-for-teams-landing-page.md
+        - name: シフト管理のためにスケジュール所有者を管理する
+          href: schedule-owner-for-shift-management.md
+        - name: Teams でシフトベースのアクセスを管理する
+          href: manage-shift-based-access-flw.md
+        - name: シフト コネクタ
+          items:
+            - name: 概要
+              href: shifts-connectors.md
+            - name: シフト コネクタ ウィザードを使用して Blue Yonder WFM との接続を設定する
+              href: shifts-connector-wizard.md
+            - name: PowerShell を使用して Blue Yonder WFM との接続を設定する
+              href: shifts-connector-blue-yonder-powershell-setup.md
+            - name: PowerShell を使用して Blue Yonder WFM とのシフトを管理する
+              href: shifts-connector-powershell-manage.md
+    - name: デジタル化されたプロセス
+      items:
+        - name: ビジネス プロセスの簡略化
+          href: simplify-business-processes.md
+    - name: 仮想予定
+      items:
+        - name: 概要
+          href: virtual-appointments.md
+        - name: Teams と Bookings を使用した仮想予定
+          href: bookings-virtual-visits.md
+        - name: Teams および Cerner EHR との仮想予定
+          href: ehr-admin-cerner.md
+        - name: Teams および Epic EHR との仮想予定
+          href: ehr-admin-epic.md
+        - name: EHR コネクタ仮想予定レポート
+          href: ehr-connector-report.md
+        - name: 仮想訪問の使用状況レポート
+          href: virtual-visits-usage-report.md
+        - name: ブラウザーでの参加エクスペリエンスを管理する
+          href: browser-join.md
+        - name: クライアントと顧客が仮想予定を使用できるようにする
+          href: virtual-appointments-toolkit.md
+    - name: 業界固有のソリューション
+      items:
+        - name: 金融サービス
+          href: teams-for-financial-services.md
+        - name: 医療
+          items:
+            - name: 概要
+              href: teams-in-hc.md
+            - name: 医療チーム テンプレート
+              href: /microsoftteams/expand-teams-across-your-org/healthcare/healthcare-templates-admin-console?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+            - name: ヘルスケア向けの Teams ポリシー パッケージ
+              href: /microsoftteams/policy-packages-healthcare?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: 小売
+          items:
+            - name: 概要
+              href: teams-for-retail-landing-page.md
+            - name: 販売店チーム テンプレートを使用する
+              href: /microsoftteams/get-started-with-retail-teams-templates?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: 製造
+          href: teams-for-manufacturing.md
+    - name: 現場担当者向けのアプリ
+      items:
+        - name: Microsoft Teams のアプリについて
+          href: /microsoftteams/deploy-apps-microsoft-teams-landing-page?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Microsoft Teams でのアプリ管理の概要
+          href: /microsoftteams/manage-apps?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: 承認アプリを管理する
+          href: /microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Bookings アプリを管理する
+          href: /microsoftteams/bookings-app-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: 更新プログラム アプリを管理する
+          href: /microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: Teams で組織のリスト アプリを管理する
+          href: /microsoftteams/manage-lists-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: 称賛アプリを管理する
+          href: /microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: RealWear 用 Microsoft Teams
+          href: /microsoftteams/flw-realwear?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: シフト アプリを管理する
+          href: /microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: シフト データに関するよくある質問
+          href: /microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: 組織のタスク アプリを管理する
+          href: /microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
+        - name: トランシーバー アプリを管理する
+          href: /microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json
