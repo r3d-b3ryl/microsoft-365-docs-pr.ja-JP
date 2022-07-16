@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: e485bcf400dbaf36c63e3a0ed8677c9bf7c8f23a
-ms.sourcegitcommit: 852075d8d8a4ca052f69e854396d1565ef713500
+ms.openlocfilehash: 4b8a8e67bc7bd69b9ae20648ad66eb539101441e
+ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65692763"
+ms.lasthandoff: 07/16/2022
+ms.locfileid: "66827182"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高度なハンティング API
 
@@ -62,12 +62,12 @@ ms.locfileid: "65692763"
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 -|-|-
 アプリケーション | AdvancedHunting.Read.All| 高度なクエリを実行する
-委任 (職場または学校アカウント) | AdvancedHunting.Read | 高度なクエリを実行する
+委任 (職場または学校のアカウント) | AdvancedHunting.Read | 高度なクエリを実行する
 
 >[!Note]
 > ユーザー資格情報を使用してトークンを取得する場合:
 >
->- ユーザーが "データの表示" AD ロールを持っている必要がある
+>- ユーザーは、"データの表示" ロールを持っている必要があります。
 >- ユーザーは、デバイス グループの設定に基づいて、デバイスにアクセスできる必要があります。
 
 ## <a name="http-request"></a>HTTP 要求
@@ -87,7 +87,7 @@ Content-Type | application/json
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター | 種類 | 説明
+パラメーター | 型 | 説明
 -|-|-
 Query | テキスト | 実行するクエリ。 **(必須)**
 
