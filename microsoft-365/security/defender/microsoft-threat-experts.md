@@ -18,12 +18,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bf40aa8ede1f65d22bd319b3a2fcfe82c778e754
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 3d60edd7747bddf6afd9d075c051a29a11594edb
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756707"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843437"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365 のMicrosoft 脅威エキスパートの概要
 
@@ -45,8 +45,6 @@ Microsoft 脅威エキスパート – エキスパート オンデマンドを�
 > 申し込む前に、Microsoft Technical Service プロバイダーとアカウント チームとエンドポイント攻撃通知の資格要件について話し合ってください。
 
 Microsoft Defender for EndpointとMicrosoft 365 Defenderが既にある場合は、Microsoft 365 Defender ポータルからエンドポイント攻撃通知を申請できます。 **[エンドポイント>設定] > [全般] > [エンドポイント攻撃通知] > [詳細設定]** に移動し、[**適用**] を選択します。 詳細については、「[Microsoft 脅威エキスパート機能の構成](./configure-microsoft-threat-experts.md)」を参照してください。
-
-:::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Microsoft 365 Defender ポータルの [エンドポイント] ページの左側のナビゲーション ウィンドウにある [高度な機能] オプション" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 アプリケーションが承認されると、脅威エキスパートが環境に対する脅威を検出するたびにエンドポイント攻撃通知の受信を開始します。
 
@@ -74,24 +72,10 @@ Microsoft 365 セキュリティ ポータルから Microsoft 脅威の専門家
 **脅威の専門家に相談する** オプションは、ポータル全体で複数の場所で利用できます。
 
 - <i>**[デバイス ページのアクション] メニュー**</i><BR>
-
-:::image type="content" source="../../media/mte/device-actions-mte-highlighted.png" alt-text="Microsoft 365 Defender ポータルの [デバイス] ページアクション メニューの MTE-EOD メニュー オプション" lightbox="../../media/mte/device-actions-mte-highlighted.png":::
-
 - <i>**[デバイス インベントリ] ページのポップアップ メニュー**</i><BR>
-
-:::image type="content" source="../../media/mte/device-inventory-mte-highlighted.png" alt-text="Microsoft 365 Defender ポータルの [デバイス インベントリ] ページの [MTE-EOD] メニュー オプション" lightbox="../../media/mte/device-inventory-mte-highlighted.png":::
-
 - <i>**[アラート] ページのポップアップ メニュー**</i><BR>
-
-:::image type="content" source="../../media/mte/alerts-actions-mte-highlighted.png" alt-text="Microsoft 365 Defender ポータルの [アラート] ページの [MTE-EOD] メニュー オプション" lightbox="../../media/mte/alerts-actions-mte-highlighted.png":::
-
 - <i>**[インシデント] ページの [アクション] メニュー**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Microsoft 365 Defender ポータルの [インシデント] ページの [MTE-EOD] メニュー オプション" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
-
 - <i>**インシデント インベントリ ページ**</i><BR>
-
-:::image type="content" source="../../media/mte/incidents-inventory-mte-highlighted.png" alt-text="Microsoft 365 Defender ポータルのインシデント インベントリ ページの MTE-EOD メニュー オプション" lightbox="../../media/mte/incidents-inventory-mte-highlighted.png":::
 
 > [!NOTE]
 > Premier Support サブスクリプションがMicrosoft Defender for Office 365 ライセンスにマップされている場合は、Microsoft Services Hub を使用してエキスパート オンデマンド ケースの状態を追跡できます。

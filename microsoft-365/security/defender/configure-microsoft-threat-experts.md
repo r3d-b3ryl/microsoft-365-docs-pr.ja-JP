@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: e61a59e769052d69494d327b2e1770f643375ab9
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: d8938c06e42a546b4cf28bf55fc2b6ba49269492
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772108"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843459"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defenderを使用してMicrosoft 脅威エキスパート機能を構成および管理する
 
@@ -35,7 +35,7 @@ ms.locfileid: "66772108"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!IMPORTANT]
 > 申し込む前に、Microsoft Technical Service プロバイダーとアカウント チームとエンドポイント攻撃通知マネージド脅威ハンティング サービスの資格要件について説明してください。
@@ -51,8 +51,6 @@ Microsoft Defender for EndpointとMicrosoft 365 Defenderが既にある場合は
 1. ナビゲーション ウィンドウで、[ **設定] > [エンドポイント] > [全般] > [詳細設定] > [エンドポイント攻撃通知] に移動します**。
 
 2. **[適用]** を選択します。
-
-    :::image type="content" source="../../media/mte/mte-collaboratewithmte.png" alt-text="Microsoft 365 Defender ポータルの [Microsoft 脅威エキスパート設定] ページ" lightbox="../../media/mte/mte-collaboratewithmte.png":::
 
 3. Microsoft がアプリケーションについて連絡できるように、電子メール アドレスを入力します。
 
@@ -94,7 +92,7 @@ Microsoft Defender for EndpointとMicrosoft 365 Defenderが既にある場合は
 
 ## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>組織内の疑わしいサイバーセキュリティアクティビティについて Microsoft の脅威の専門家に問い合わせてください
 
-Microsoft 365 Defender ポータル内からMicrosoft 脅威エキスパートに連絡できます。 専門家は、複雑な脅威とターゲットを絞った攻撃通知を理解するのに役立ちます。 アラートやインシデントの詳細、または侵害の処理に関するアドバイスについては、エキスパートと協力してください。 ポータル ダッシュボードで説明されている脅威インテリジェンス コンテキストに関する分析情報を取得します。
+Microsoft 365 Defender ポータル内からMicrosoft 脅威エキスパートに連絡できます。 エキスパートは、複雑な脅威とエンドポイント攻撃通知を理解するのに役立ちます。 アラートやインシデントの詳細、または侵害の処理に関するアドバイスについては、エキスパートと協力してください。 ポータル ダッシュボードで説明されている脅威インテリジェンス コンテキストに関する分析情報を取得します。
 
 > [!NOTE]
 >

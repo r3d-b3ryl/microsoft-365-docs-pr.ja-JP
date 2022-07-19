@@ -1,7 +1,7 @@
 ---
-title: Defender for Endpoint プランの比較
-description: Defender for Endpoint プラン 1 とプラン 2 を比較します。 プランの違いについて理解し、組織のニーズに合ったプランを選択します。
-keywords: Defender for Endpoint, Advanced Threat Protection, Endpoint Protection
+title: Microsoft エンドポイント のセキュリティ プランを比較する
+description: Defender for Endpoint Plan 1 などの Microsoft エンドポイント セキュリティ プランを Defender for Endpoint Plan 2 と比較します。 プランの違いについて理解し、組織のニーズに合ったプランを選択します。
+keywords: Defender for Endpoint,高度な脅威保護,エンドポイント保護,エンドポイント セキュリティ,デバイス セキュリティ,サイバーセキュリティ
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: d41c228ceeae0dcd373f98c6dcd89bf88b0feacd
-ms.sourcegitcommit: 5463d4518c269d9c125bb66836a780df292b4854
+ms.openlocfilehash: 1b18bc6ed3f7992a774bfd90fd2913cfe4e9c050
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66795402"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843481"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Microsoft エンドポイント のセキュリティ プランを比較する
 
@@ -68,8 +68,7 @@ Microsoft Defender for EndpointやMicrosoft 365 Defenderなどの Microsoft エ�
 
 Defender for Business、Defender for Endpoint Plan 1 および 2、およびMicrosoft 365 Business Premiumのスタンドアロン バージョンには、サーバー ライセンスは含まれていません。 サーバーをオンボードするには、次のオプションから選択します。
 
-- **Defender for Servers プラン 1 またはプラン 2** は [、Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) オファリングの一部です。 詳細については、こちらを参照してください。 [Microsoft Defender for Servers の概要に関するページを参照してください](/azure/defender-for-cloud/defender-for-servers-introduction)。
-
+- Defender for [Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) オファリングの一環として **、Microsoft Defender for Servers プラン 1 またはプラン 2**。 詳細については、こちらを参照してください。 [Microsoft Defender for Servers の概要に関するページを参照してください](/azure/defender-for-cloud/defender-for-servers-introduction)。
 - 中小企業向けの **Microsoft Defender for Business サーバー (プレビュー)** です。 [Microsoft Defender for Business サーバー (プレビュー) を取得する方法](../defender-business/get-defender-business-servers.md)に関する説明を参照してください。
 
 ## <a name="mixed-licensing-scenarios"></a>混合ライセンスのシナリオ
@@ -94,5 +93,5 @@ Defender for Business、Defender for Endpoint Plan 1 および 2、およびMicr
 ## <a name="see-also"></a>関連項目
 
 - [Microsoft Security の使用を開始する (試用版プラン)](https://www.microsoft.com/security/business/get-started/start-free-trial)
-
+- [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)
 - [Microsoft Defender for Business](../defender-business/mdb-overview.md) (中小企業向けのエンドポイント保護)

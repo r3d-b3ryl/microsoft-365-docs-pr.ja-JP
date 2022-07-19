@@ -17,12 +17,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4f2ab696b728244e495ec04933b83eaafeeb3db0
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
+ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617018"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66843567"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -44,6 +44,9 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Microsoft Defender for Cloud Appsの新機能](/cloud-app-security/release-notes)
 
 メッセージ [センター](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)を通じて、製品の更新と重要な通知を受け取ることもできます。 
+
+## <a name="july-2022"></a>2022 年 7 月
+- (プレビュー)Microsoft Defender Experts for Hunting パブリック プレビュー参加者は、Microsoft 365 Defender製品によって生成されたアラートと共に、ハンティング サービスが環境内で発生した脅威を理解するのに役立つ月次レポートの受信を楽しみにしています。 詳細については、「[Microsoft 365 Defenderの Defender Experts for Hunting レポートについて](defender-experts-report.md)」を参照してください。
 
 ## <a name="june-2022"></a>2022 年 6 月
 - (プレビュー) [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) テーブルと [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) テーブルが、高度なハンティング スキーマで使用できるようになりました。 これらのテーブルを使用して、さまざまな構成の状態やデバイスの攻撃領域の状態など、Defender 脆弱性管理の評価イベントを確認します。
