@@ -3,7 +3,7 @@
 ## [概要]()
 ### [Microsoft Defender for Endpoint とは](microsoft-defender-endpoint.md)
 ### [試用版プレイブック: 試用版を最大限に活用する](defender-endpoint-trial-playbook.md)
-### [Defender for Endpoint プランの比較](defender-endpoint-plan-1-2.md)
+### [Microsoft エンドポイント セキュリティ計画の比較](defender-endpoint-plan-1-2.md)
 ### [最小要件](minimum-requirements.md)
 ### [Microsoft Defender for Endpoint の新機能](whats-new-in-microsoft-defender-endpoint.md)
 ### [プレビュー機能](preview.md)

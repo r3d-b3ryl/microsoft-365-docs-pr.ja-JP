@@ -969,6 +969,8 @@
               href: permissions-filtering-for-content-search.md
             - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
               href: what-is-stored-in-exo-mailbox.md
+            - name: 電子情報開示グラフコネクタ
+              href: ediscovery-graph-connector.md
             - name: 電子情報開示ツールでの復号化
               href: ediscovery-decryption.md
             - name: 会話レビュー セット
