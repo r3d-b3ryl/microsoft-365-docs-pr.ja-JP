@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b301a0bd62e0826a9ae089f51f591f575a918e0f
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 4fe66987f9b8ea5c2f0b27ae9fb594a198da2e9b
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756773"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855045"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -42,7 +42,7 @@ Microsoft 脅威エキスパートは、セキュリティ オペレーション
 このビデオでは、Microsoft 脅威エキスパートセキュリティ オペレーション センター (SOC) に専門家レベルの監視と分析を提供し、重大な脅威を見逃さないようにする方法について説明します。 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4qZ0B]
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!NOTE]
 > マネージド脅威ハンティング サービスに適用する前に、Microsoft Technical Service プロバイダーとアカウント チームと資格要件について話し合ってください。
@@ -58,7 +58,7 @@ Microsoft 脅威エキスパートにサブスクライブするには、アカ�
 
 ## <a name="endpoint-attack-notification"></a>エンドポイント攻撃通知
 
-エンドポイント攻撃通知は、人間の敵対的侵入、ハンズオンキーボード攻撃、サイバースパイなどの高度な攻撃など、ネットワークに対する最も重要な脅威をプロアクティブに捜索します。 これらの通知は、新しいアラートとして表示されます。 マネージド ハンティング サービスには、次のものが含まれます。
+エンドポイント攻撃通知 (以前は Microsoft 脅威エキスパート - ターゲット攻撃通知と呼ばれた) は、人間の敵対的侵入、ハンズオンキーボード攻撃、サイバースパイなどの高度な攻撃など、ネットワークに対する最も重要な脅威をプロアクティブに捜索します。 これらの通知は、新しいアラートとして表示されます。 マネージド ハンティング サービスには、次のものが含まれます。
 
 - 脅威の監視と分析により、出家の時間とビジネスへのリスクを減らす
 - 既知の攻撃と不明な攻撃の両方を検出して優先順位付けするための、訓練を受けた人工知能

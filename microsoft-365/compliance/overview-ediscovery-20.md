@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Microsoft Purview の電子情報開示 (Premium) ソリューションについて説明します。 この記事では、Microsoft Purview の電子情報開示 (Premium) の概要について説明します。これは、内部および外部の調査を管理するのに役立つツールです。 また、電子情報開示 (Premium) を使用して法的調査を管理するビジネス上の理由も取り上げられます。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 95dbeb33ad054845b7d2a7a5bc019ce0cd727093
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 7d534012466300675a7143cdada0b43468027104
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714577"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855089"
 ---
 # <a name="overview-of-microsoft-purview-ediscovery-premium"></a>Microsoft Purview eDiscovery (Premium) の概要
 
@@ -83,7 +83,7 @@ Microsoft 365 の電子情報開示 (Premium) の組み込みのワークフロ�
 
 - **コレクション。** 調査に関連するデータ ソースを特定 (および保持) した後は、電子情報開示 (Premium) の組み込み検索ツールを使用して、ケースに関連する可能性がある保管データ ソース (および非保管データ ソース (該当する場合) からライブ データを検索および収集できます。
 
-- **処理。** ケースに関連するすべてのデータを収集したら、次の手順は、詳細確認と分析用のプロセスです。 電子情報開示 (Premium) では、コレクション フェーズで特定したインプレース データが Azure Storage の場所 ( *レビュー セット* と呼ばれます) にコピーされ、ケース データの静的ビューが提供されます。 
+- **処理。** ケースに関連するすべてのデータを収集したら、次の手順は、詳細確認と分析用のプロセスです。 電子情報開示 (Premium) では、コレクション フェーズで特定したインプレース データが Azure Storage の場所 ( *レビュー セット* と呼ばれます) にコピーされ、ケース データの静的ビューが提供されます。
 
 - **レビュー。** レビュー セットにデータが追加された後、特定のドキュメントを表示し、追加のクエリを実行して、データをケースに最も関連するものに減らすことができます。 また、特定のドキュメントに注釈を付けたり、タグを付けたりすることもできます。
 
@@ -93,9 +93,9 @@ Microsoft 365 の電子情報開示 (Premium) の組み込みのワークフロ�
 
 ## <a name="subscriptions-and-licensing"></a>サブスクリプションとライセンス
 
-ユーザーが電子情報開示 (Premium) の恩恵を受ける権利を提供するライセンスの詳細については、 [セキュリティ &コンプライアンスに関する Microsoft 365 のガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) を参照してください。 [Microsoft 365 の比較表](https://go.microsoft.com/fwlink/?linkid=2139145)の「電子情報開示と監査」セクションを参照してください。 
+ユーザーが電子情報開示 (Premium) の恩恵を受ける権利を提供するライセンスの詳細については、 [セキュリティ &コンプライアンスに関する Microsoft 365 のガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-ediscovery) を参照してください。 [Microsoft 365 の比較表](https://go.microsoft.com/fwlink/?linkid=2139145)の「電子情報開示と監査」セクションを参照してください。
 
-ライセンスを割り当てる方法については、「 [ユーザーにライセンスを割り当てる」を参照してください](/microsoft-365/admin/manage/assign-licenses-to-users)。
+ライセンスを割り当てる方法については、「 [ユーザーにライセンスを割り当てる」を参照してください](/microsoft-365/admin/manage/assign-licenses-to-users)。
 
 ## <a name="get-started-with-ediscovery-premium"></a>電子情報開示 (プレミアム) を開始する
 

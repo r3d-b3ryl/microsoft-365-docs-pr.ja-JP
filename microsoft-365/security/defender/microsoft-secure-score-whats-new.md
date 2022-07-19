@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 25860b27ee5d677f3349f82f63f64983255d2d32
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
+ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750212"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66855023"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -36,7 +36,7 @@ Microsoft Secure Score をセキュリティ体制をより適切に表すため
 
 より多くの改善アクションを実行すればするほど、セキュリティ スコアは高くなります。 詳細については、 [Microsoft セキュリティ スコア](microsoft-secure-score.md)に関するページを参照してください。
 
-Microsoft Secure Score はhttps://security.microsoft.com/securescore[、Microsoft 365 Defender ポータル](microsoft-365-defender-portal.md)にあります。
+Microsoft Secure Score は<https://security.microsoft.com/securescore>[、Microsoft 365 Defender ポータル](microsoft-365-defender-portal.md)にあります。
 
 ## <a name="june-2022"></a>2022 年 6 月
 
@@ -58,8 +58,8 @@ Microsoft Secure Score はhttps://security.microsoft.com/securescore[、Microsof
 
 - 新しい Salesforce と ServiceNow の推奨事項は、Microsoft Defender for Cloud Apps顧客向けのセキュリティスコア改善アクションとして利用できるようになりました。 詳細については、「 [SaaS セキュリティ体制管理の概要」を](https://aka.ms/saas_security_posture_management)参照してください。
 
->[!Note]
->Salesforce コントロールと ServiceNow コントロールがパブリック プレビューで使用できるようになりました。
+> [!NOTE]
+> Salesforce コントロールと ServiceNow コントロールがパブリック プレビューで使用できるようになりました。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
