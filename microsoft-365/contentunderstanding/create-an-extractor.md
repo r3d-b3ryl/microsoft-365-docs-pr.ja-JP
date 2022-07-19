@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntex でエクストラクターを作成する方法について説明します。
-ms.openlocfilehash: 5bfca45442386c15fb8418e306a5631795204c5f
-ms.sourcegitcommit: 872ab0b6a225c20274916e07ed4cc4944be9509a
+ms.openlocfilehash: f1e50b7eaeaaf669c682741c0e02df883523d888
+ms.sourcegitcommit: a0b78895d92cf3b8321b5282b5f4ff8984e95c06
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65679616"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66842124"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntex でエクストラクターを作成する
 
@@ -48,6 +48,8 @@ ms.locfileid: "65679616"
 
     > [!NOTE]
     > 列の種類が **1 行のテキストを** 含む抽出器の場合、最大文字数の上限は 255 です。 制限を超えて選択した文字はすべて切り捨てられます。 255 文字を超える文字を選択するには、抽出器を作成するときに [ **複数行のテキスト** ] 列の種類を選択します。
+    >
+    >既定では、 **複数行のテキスト** 列が作成され、追加できるテキストの量が制限されます。 この場合、抽出されたテキストは切り捨てで表示されることがあります。 これが発生した場合は、[ **ドキュメント ライブラリで無制限の長さを許可する** ] 列設定を使用して制限を削除できます。
 
 3. 完了したら、[ **作成**] を選択します。
 
