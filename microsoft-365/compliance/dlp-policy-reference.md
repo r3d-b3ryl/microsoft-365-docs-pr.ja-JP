@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0d49cb1287453cb815bf1fe1ea01b6312c26d879
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ac809f5a976da1d6c83d36f24e93c3aacd997850
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626581"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882019"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -105,7 +105,7 @@ DLP ポリシーは、複数の場所にわたって機密情報を含むアイ�
 |---------|---------|---------|---------|
 |Exchange 電子メール をオンラインで送信する |配布グループ | data-in-motion| 不要 |
 |SharePoint オンライン サイト   |sites       | data-at-rest </br> data-in-use | 不要|
-|OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|いいえ|
+|OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|不要|
 |Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  いいえ       |
 |Microsoft Defender for Cloud Apps   | クラウド アプリ インスタンス       |data-at-rest         | - [Microsoft 以外のクラウド アプリにデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントのデータ損失防止について学習する](endpoint-dlp-learn-about.md) </br>- [エンドポイントデータ損失防止の概要](endpoint-dlp-getting-started.md) </br>- [Information Protectionのデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
@@ -130,7 +130,7 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
 |Exchange 電子メール をオンラインで送信する|はい| はい| 不要|
 |SharePoint オンライン サイト| はい| はい| はい|
 |OneDrive for Business アカウント| はい| はい| はい|
-|Teams チャットメッセージとチャネル メッセージ | はい| 不要| 不要|
+|Teams チャットメッセージとチャネル メッセージ | はい| いいえ| いいえ|
 |デバイス |はい | はい|  不要|
 |Microsoft Defender for Cloud Apps | はい| はい| はい|
 |オンプレミス リポジトリ| はい| はい| 不要|
@@ -309,6 +309,9 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 ##### <a name="conditions-devices-supports"></a>デバイスがサポートする条件
 
 - コンテンツが含まれている
+- (プレビュー)ユーザーは、Edge から機密性の高い Web サイトにアクセスしました。 詳細については、「 [シナリオ 6 機密サービス ドメイン (プレビュー) でのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 」を参照してください。
+- ファイル拡張子は次の形式です。
+- ファイルの種類は次の形式です。
 - [監視およびアクションを実行できるエンドポイント アクティビティを](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)参照してください。
 
 ##### <a name="conditions-microsoft-defender-for-cloud-apps-supports"></a>Microsoft Defender for Cloud Appsがサポートする条件
@@ -364,7 +367,7 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 
 - コンテンツに含まれる **場合を除く** 
 
-### <a name="actions"></a>アクション 
+### <a name="actions"></a>Actions 
 
 包括的な ***conditions** _ フィルターと排他 _*_例外_*_ フィルターを使用するアイテムには、ルールで定義されているすべての _*_アクション_*_ が適用されます。 アクションをサポートするために必要なオプションを構成する必要があります。 たとえば、_Restrict access を使用して Exchange を選択 *するか、Microsoft 365 locations* アクションのコンテンツを暗号化* する場合は、次のオプションから選択する必要があります。
 
@@ -391,8 +394,8 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 - [Bcc] ボックスに受信者を追加する
 - 送信者のマネージャーを受信者として追加する
 - O365 メッセージの暗号化と権利保護を削除しました
-- メール件名の先頭に追加する
-- 電子メールの件名を変更する
+- 件名Email先頭に追加する
+- 件名Email変更する
 - HTML 免責事項を追加する
 
 #### <a name="sharepoint-sites-location-actions"></a>SharePoint サイトの場所のアクション
@@ -409,9 +412,11 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 
 #### <a name="devices-actions"></a>デバイスのアクション
 
+<!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
+- (プレビュー)ユーザーが Windows デバイス上の Microsoft Edge ブラウザーで機密性の高い Web サイトにアクセスした場合に、アクティビティを監査または制限します。 詳細については、「 [シナリオ 6 機密サービス ドメイン (プレビュー) でのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview) 」を参照してください。
 - Windows デバイス上のアクティビティを監査または制限する
 
-これらの設定を使用するには、 **DLP 設定** と、それらを使用するポリシーでオプションを構成する必要があります。 詳細については、「 [制限付きアプリとアプリ グループ](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 」を参照してください。
+使用 `Audit or restrict activities on Windows devices`するには、 **DLP 設定** と、それらを使用するポリシーでオプションを構成する必要があります。 詳細については、「 [制限付きアプリとアプリ グループ](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 」を参照してください。
 
 デバイスの場所は、多くのサブアクティビティ (条件) とアクションを提供します。 詳細については、「 [監視してアクションを実行できるエンドポイント アクティビティ](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)」を参照してください。
 
@@ -525,11 +530,11 @@ for where they are used/expected behavior-->
 
 > [!IMPORTANT]
 > - 通知メールは保護されていない状態で送信されます。
-> - 電子メール通知は、Microsoft 365 サービスでのみサポートされます。
+> - Email通知は、Microsoft 365 サービスでのみサポートされます。
 
-#### <a name="email-notifications-support-by-selected-location"></a>選択した場所による電子メール通知のサポート
+#### <a name="email-notifications-support-by-selected-location"></a>選択した場所によるEmail通知のサポート
 
-|選択した場所  |サポートされている電子メール通知  |
+|選択した場所  |サポートされているEmail通知  |
 |---------|---------|
 |デバイス     |- サポートされていません         |
 |Exchange + デバイス     |- Exchange でサポートされています </br>- デバイスではサポートされていません  |

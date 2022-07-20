@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Microsoft Purview データ損失防止ポリシーとツールを使用して機密情報を保護し、DLP ライフサイクルをツアーする方法について説明します。
-ms.openlocfilehash: 2bcc82f0609f617219d626f8180e7f4c9df51060
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 46c29b8aa19ce9b70cdb9127ab2c6270c0009a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641912"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66882414"
 ---
 # <a name="learn-about-data-loss-prevention"></a>データ損失防止について
 
@@ -60,8 +60,6 @@ DLP の実装は、通常、これらの主要なフェーズに従います。
 - [DLP の準備](#prepare-for-dlp)
 - [運用環境にポリシーをデプロイする](#deploy-your-policies-in-production)
 
-
-<!--ADD DIAGRAM OF THE DLP LIFECYCLE WORK ON WITH MAS-->
 
 ### <a name="plan-for-dlp"></a>DLP を計画する
 
