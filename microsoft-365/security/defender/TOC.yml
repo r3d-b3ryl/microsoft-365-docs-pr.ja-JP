@@ -348,6 +348,8 @@
           items:
             - name: 概要
               href: defenderexpertsforhuntingprev.md
+            - name: Defender Experts for Hunting レポートを理解する
+              href: defender-experts-report.md
         - name: ランサムウェア プレイブック
           items:
             - name: Microsoft 365 Defender による人間によるランサムウェア攻撃の検出

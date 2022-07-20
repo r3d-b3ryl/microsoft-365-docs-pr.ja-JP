@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4ac6186f3ec8ca7d4888a995b2352ec50529e4f1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: cf2e95a4d129280537f1d7a9d7dcf1b76b492ead
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664900"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893773"
 ---
 # <a name="deploy-supported-services"></a>サポートされているサービスを展開する
 
@@ -73,13 +73,13 @@ Microsoft 365 Defenderの完全な利点を得るには、サポートされて�
 | サービス | データ (相関情報&シグナル) | 修復&応答スコープ |
 | ------ | ------ | ------ |
 | Microsoft Defender for Endpoint |<ul><li>エンドポイントの状態と未加工のイベント</li><li>ウイルス対策、EDR、攻撃面の縮小など、エンドポイントの検出とアラート</li><li>エンドポイントで観察されるファイルとその他のエンティティに関する情報</li></ul> | エンドポイント |
-|Microsoft Defender for Office 365 |<ul><li>メールとメールボックスの状態と未加工のイベント</li><li>電子メール、添付ファイル、リンクの検出</li></ul> | <ul><li>メールボックス</li><li>Microsoft 365 アカウント</li></ul> |
+|Microsoft Defender for Office 365 |<ul><li>メールとメールボックスの状態と未加工のイベント</li><li>Email、添付ファイル、リンクの検出</li></ul> | <ul><li>メールボックス</li><li>Microsoft 365 アカウント</li></ul> |
 | Microsoft Defender for Identity |<ul><li>認証イベントを含む Active Directory シグナル</li><li>ID 関連の動作検出</li></ul> | ID |
 | Microsoft Defender for Cloud Apps |<ul><li>承認されていないクラウド アプリとサービスの検出 (シャドウ IT)</li><li>クラウド アプリへのデータの公開</li><li>クラウド アプリに関連付けられた脅威アクティビティ</li></ul> | クラウド アプリ |
 
 ## <a name="deploy-the-services"></a>サービスの展開
 
-各サービスを展開するには、通常、テナントへの事前設定といくつかの初期構成が必要です。 これらの各サービスのデプロイ方法については、次の表を参照してください。
+各サービスを展開するには、通常、テナントへの事前設定といくつかの初期構成が必要です。 これらのサービスを展開する方法については、次のテーブルを参照してください。
 
 | サービス | 事前設定の手順 | 初期構成 |
 | ------ | ------ | ------ |

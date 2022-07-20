@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c58bc4eb30c819ae0cbc1654173e8d9dc4ecb7a7
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 596966c7c1975ebb8f20b306be5e4ab0a34bd99e
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664922"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893641"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>手順 1. 最初のインシデントをトリアージして分析する
 
@@ -44,7 +44,7 @@ ms.locfileid: "64664922"
 
 Microsoft 365 Defenderは、複数の Microsoft セキュリティ プラットフォームからアラートとイベントを検出ソースとして受信し、悪意のあるアクティビティの全体像とコンテキストを作成します。 考えられる検出ソースは次のとおりです。
 
-- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)は、Microsoft Security Graphを使用して Microsoft Defender ウイルス対策とクラウド対応の高度な脅威保護を使用するエンドポイントでの検出と対応 ソリューション (EDR) です。 Defender for Endpoint は、予防保護、違反後の検出、自動調査、および対応のための統合プラットフォームです。 エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティ体制を向上させます。
+- [Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)は、Microsoft Security Graph を使用して Microsoft Defender ウイルス対策とクラウド対応の高度な脅威保護を使用するエンドポイント検出および応答ソリューション (EDR) です。 Defender for Endpoint は、予防保護、違反後の検出、自動調査、および対応のための統合プラットフォームです。 エンドポイントをサイバー脅威から保護し、高度な攻撃とデータ侵害を検出し、セキュリティ インシデントを自動化し、セキュリティ体制を向上させます。
 - [Microsoft Defender for Identity](/defender-for-identity/what-is)は、オンプレミスの Active Directory Domain Services (AD DS) シグナルを使用して、組織に向けられた高度な脅威、侵害された ID、悪意のあるインサイダー アクションを識別、検出、調査するクラウドベースのセキュリティ ソリューションです。
 - [Microsoft Defender for Cloud Apps](/cloud-app-security/)は、エンタープライズ ユーザーと使用するクラウド リソースの間のアクセスをリアルタイムで仲介するゲートキーパーとして機能します。ユーザーが配置されている場所と、使用しているデバイスに関係なく。
 - [Microsoft Defender for Office 365は、](../office-365-security/overview.md)電子メール メッセージ、リンク (URL)、およびコラボレーション ツールの悪意のある脅威から組織を保護します。
@@ -74,7 +74,7 @@ Microsoft 365 Defenderで優先順位を付けるインシデントを決定す�
 
     この一連のインシデントに対してトリアージを実行する方法の 1 つの例は、より多くのユーザーとデバイスに影響を与えたインシデントに優先順位を付ける方法です。 この例では、インシデント ID 6769 が最も多くのエンティティ (7 つのデバイス、6 人のユーザー、2 つのメールボックス) に影響を与えたため、インシデント ID 6769 に優先順位を付ける場合があります。 さらに、インシデントには、id ベースのアラートと資格情報の盗難の可能性を示すMicrosoft Defender for Identityからのアラートが含まれているようです。
 
-   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Microsoft 365 セキュリティ ポータルでの影響の大きいインシデントの例を示す [インシデント] ** ページ" lightbox="../../media/first-incident-analyze/first-incident-analyze-high-impact.png":::
+   :::image type="content" source="../../media/first-incident-analyze/first-incident-analyze-high-impact.png" alt-text="Microsoft 365 セキュリティ ポータルでの影響の大きいインシデントの例を示すインシデント** ページ" lightbox="../../media/first-incident-analyze/first-incident-analyze-high-impact.png":::
 
 2. インシデント名の横にある円を選択して、詳細を確認します。 右側にサイド ウィンドウが表示されます。このウィンドウには、トリアージをさらに支援する追加情報が含まれています。
 
@@ -100,7 +100,7 @@ Microsoft 365 Defenderで優先順位を付けるインシデントを決定す�
 
 Microsoft 365 Defenderを使用してデータを読み取り、分析する方法は複数ありますが、アナリストの最終目標は、インシデントにできるだけ早く対応することです。 Microsoft 365 Defenderは、業界をリードする[自動調査と対応](m365d-autoir.md)機能を通じて[平均修復時間 (MTTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) を大幅に短縮できますが、常に手動分析が必要な場合があります。
 
-次に例を示します。
+次に例を示します:
 
 1. トリアージの優先順位が決定されると、アナリストはインシデント名を選択して詳細な分析を開始します。 このページには、分析を支援するためにデータがタブに表示される **インシデントの概要** が表示されます。 [ **アラート** ] タブに、アラートの種類が表示されます。 アナリストは、各アラートをクリックして、それぞれの検出ソースにドリルダウンできます。
 

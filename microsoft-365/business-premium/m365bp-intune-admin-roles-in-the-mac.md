@@ -9,20 +9,16 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.collection:
-- M365-subscription-management
-- Adm_O365
-ms.custom:
-- AdminSurgePortfolio
-- AdminTemplateSet
-- admindeeplinkMAC
+ms.date: 07/19/2022
+ms.collection: ''
+ms.custom: ''
 description: Microsoft 365 管理センターを使用すると、一部の Microsoft Intune ロールを管理できます。このロールはビジネス機能にマップされ、特定のタスクを実行するためのアクセス許可を付与します。
-ms.openlocfilehash: ad630e7eac800e3c3c931f7ac6244c1e19e117a8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: ee411f188a5efc996dbd4af622e81b182b1f115b
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631812"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894923"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターにおける Intune 管理者の役割
 

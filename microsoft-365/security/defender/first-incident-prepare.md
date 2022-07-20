@@ -1,6 +1,6 @@
 ---
 title: 初めてのインシデントに備え、セキュリティ体制を整える
-description: Microsoft 365 Defenderでの最初のインシデントに対して、Microsoft 365 テナントのセキュリティ体制を設定します。
+description: Microsoft 365 Defenderでの最初のインシデントに対する Microsoft 365 テナントのセキュリティ体制を設定します。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 0dbff9e88ed00dd8aa08fd64543266c3aef75d79
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664086"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893521"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>初めてのインシデントに備え、セキュリティ体制を整える
 
@@ -55,7 +55,7 @@ Microsoft 365 Defenderのコンポーネントは、Microsoft Defender for Endpo
 
 自動化は、ゼロ トラスト環境の実装と保守の重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数を減らします。 Microsoft 365 Defenderのコンポーネントは、[修復アクション](m365d-autoir.md) (Microsoft 365 Defender ポータルでのインシデントの調査と呼ばれます)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2。 組織のセキュリティ体制を決定する
+## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
 
 次に、組織は、Microsoft 365 Defenderで [Microsoft Secure Score](microsoft-secure-score.md) を使用して、現在のセキュリティ体制を決定し、それを改善する方法に関する推奨事項を検討できます。 スコアが高いほど、組織によって実行されたセキュリティに関する推奨事項と改善アクションが多くなります。 セキュリティスコアに関する推奨事項は、さまざまな製品で取得でき、組織はスコアをさらに高くすることができます。
 
@@ -71,7 +71,7 @@ Microsoft 365 Defenderのコンポーネントは、Microsoft Defender for Endpo
 
 ## <a name="4-understand-emerging-threats"></a>4. 新たな脅威について理解する
 
-Microsoft 365 Defender ポータルで[脅威分析](threat-analytics.md)を使用して、現在のセキュリティ脅威の状況を最新の状態に保ちます。 エキスパートの Microsoft セキュリティ研究者は、最新のサイバー脅威を詳細に説明するレポートを作成し、Microsoft 365サブスクリプション、デバイス、ユーザーにどのような影響を与えるかを理解できるようにします。 これらのレポートには、次のものが含まれます。
+Microsoft 365 Defender ポータルで[脅威分析](threat-analytics.md)を使用して、現在のセキュリティ脅威の状況を最新の状態に保ちます。 エキスパートの Microsoft セキュリティ研究者は、最新のサイバー脅威を詳細に説明するレポートを作成し、Microsoft 365 サブスクリプション、デバイス、ユーザーにどのような影響を与えるかを理解できるようにします。 これらのレポートには、次のものが含まれます。
 
 - アクティブな脅威アクターとそのキャンペーン
 - 一般的な攻撃手法と新しい攻撃手法

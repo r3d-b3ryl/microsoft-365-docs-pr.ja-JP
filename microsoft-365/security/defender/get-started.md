@@ -16,16 +16,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-getstarted
 ms.custom: intro-get-started
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d4b17e0b8a57c5f3778eff15d8961713c642409e
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 7cc3a28062ffa052d42172adabb72443eb5b10bb
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739973"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893499"
 ---
 # <a name="get-started-with-microsoft-365-defender"></a>Microsoft 365 Defender の使用を開始する
 
@@ -36,7 +36,7 @@ ms.locfileid: "65739973"
 
 Microsoft 365 Defenderは、企業全体のセキュリティを監視および管理できる統合エクスペリエンスです。 ID、エンドポイント、データ、アプリ、電子メール、コラボレーション ツール全体にわたる統合アラートにより、脅威の調査と対応が一元的な場所で行われるようになりました。 
 
-この短いビデオでは、Microsoft 365 DefenderがMicrosoft 365全体の脅威を防止、検出、調査、修復する方法について説明します。  
+Microsoft 365 全体の脅威の防止、検出、調査、修復にMicrosoft 365 Defenderが役立つ方法については、この短いビデオをご覧ください。  
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4FTDg]
 
 Microsoft のセキュリティ製品スイートを初めて使用する場合でも、個々のワークフローに精通している場合でも、このトピックでは、Microsoft 365 Defenderの使用を開始するために必要な簡単な手順について説明します。

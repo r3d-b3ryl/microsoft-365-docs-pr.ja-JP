@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6d62e1127eabb401a6af77aa1bbf073e4cfced17
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: 2e0b237ad045b98b2bb013399f344db3f20f1919
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64570109"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893619"
 ---
 # <a name="example-of-an-identity-based-attack"></a>ID ベースの攻撃の例
 
@@ -50,7 +50,7 @@ Microsoft 365 Defenderを使用すると、アナリストはインシデント 
 
 ## <a name="investigating-the-same-attack-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointで同じ攻撃を調査する
 
-または、アナリストは Defender for Endpoint を使用して、エンドポイント上のアクティビティの詳細を確認することもできます。 インシデント キューからインシデントを選択し、[ **アラート** ] タブを選択します。ここから、検出ソースも識別できます。 EDRとしてラベル付けされた検出ソースは、エンドポイントの検出と応答を表します。これは Defender for Endpoint です。 ここから、アナリストはEDRによって検出されたアラートを選択します。
+または、アナリストは Defender for Endpoint を使用して、エンドポイント上のアクティビティの詳細を確認することもできます。 インシデント キューからインシデントを選択し、[ **アラート** ] タブを選択します。ここから、検出ソースも識別できます。 EDR としてラベル付けされた検出ソースは、エンドポイントの検出と応答を表します。これは Defender for Endpoint です。 ここから、アナリストは EDR によって検出されたアラートを選択します。
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Microsoft Defender for Endpoint ポータルでのエンドポイントの検出と応答" lightbox="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png":::
 
@@ -70,13 +70,13 @@ Microsoft Defender for Endpointは、多くの悪意のあるファイルとス�
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="アナリストのアラート検出の開始時刻" lightbox="../../media/first-incident-path-identity/first-incident-identity-start-time.png"::: 
 
-Windows Update接続、信頼されたソフトウェアアクティブ化トラフィックのWindows、Microsoft サイトへのその他の一般的な接続、サード パーティのインターネット アクティビティ、Microsoft Endpoint Configuration Manager アクティビティ、その他の無害なアクティビティなどの一般的なアクティビティを疑わしいアクティビティから理解して区別することが重要です。活動。 区別する方法の 1 つは、タイムライン フィルターを使用する方法です。 アナリストが表示したくないものを除外しながら、特定のアクティビティを強調表示できるフィルターは多数あります。 
+Windows Update接続、Windows Trusted Software アクティブ化トラフィック、Microsoft サイトへのその他の一般的な接続、サード パーティのインターネット アクティビティ、Microsoft Endpoint Configuration Manager アクティビティなどの一般的なアクティビティを、疑わしいアクティビティから理解して区別することが重要です。 区別する方法の 1 つは、タイムライン フィルターを使用する方法です。 アナリストが表示したくないものを除外しながら、特定のアクティビティを強調表示できるフィルターは多数あります。 
 
-次の図では、アナリストがフィルター処理して、ネットワーク イベントとプロセス イベントのみを表示しています。 このフィルター条件を使用すると、アナリストは、プロセス ツリーで見た IP アドレスとの接続メモ帳確立したイベントを取り巻くネットワーク接続とプロセスを確認できます。 
+次の図では、アナリストがフィルター処理して、ネットワーク イベントとプロセス イベントのみを表示しています。 このフィルター条件を使用すると、アナリストは、メモ帳が IP アドレスとの接続を確立したイベントを取り巻くネットワーク接続とプロセスを確認できます。プロセス ツリーでも確認できます。 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="悪意のある送信接続を作成するためにメモ帳を使用した方法" lightbox="../../media/first-incident-path-identity/first-incident-identity-notepad.png"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="メモ帳を使用して悪意のある送信接続を行った方法" lightbox="../../media/first-incident-path-identity/first-incident-identity-notepad.png"::: 
 
-この特定のイベントでは、悪意のある送信接続を行うためにメモ帳が使用されました。 ただし、通常、iexplorer.exe プロセスは通常の Web ブラウザー アクティビティと見なされるため、攻撃者はiexplorer.exeを使用して悪意のあるペイロードをダウンロードするための接続を確立します。
+この特定のイベントでは、メモ帳を使用して悪意のある送信接続を行いました。 ただし、通常、iexplorer.exe プロセスは通常の Web ブラウザー アクティビティと見なされるため、攻撃者はiexplorer.exeを使用して悪意のあるペイロードをダウンロードするための接続を確立します。
 
 タイムラインで探すもう 1 つの項目は、PowerShell が送信接続に使用することです。 アナリストは、悪意のあるファイルをホストしている Web サイトへの送信接続に `IEX (New-Object Net.Webclient)` 続いて、コマンドを使用して PowerShell 接続が正常に行われるかどうかを探します。 
 

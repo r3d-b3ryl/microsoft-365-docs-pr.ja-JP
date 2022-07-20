@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 413c4fadcc6de3527643be712713d37a1e2c346c
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: dcf620cfaeb1d33665538d16d080e72745b96e42
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64501137"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892910"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>フィッシングメール攻撃の例
 

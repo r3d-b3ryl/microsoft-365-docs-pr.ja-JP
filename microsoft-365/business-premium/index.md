@@ -9,6 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -20,16 +21,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを使用して中小企業にサイバーセキュリティを実装する方法について説明します。 サイバーセキュリティの機能と機能は、サイバー攻撃やセキュリティ侵害を防ぐために最適化され、高度なサイバー防御を使用してデータ、デバイス、情報を保護するのに役立ちます。
-ms.openlocfilehash: 0fec3c5117759cc0cdb5d13fe8c04809cfcf8356
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: cd21390c144d6a175edd2091fb531fe881a9b65e
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66685923"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894287"
 ---
 # <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; 中小企業向けサイバーセキュリティ
 
-まず、Microsoft 365 Business Premiumとその世界クラスの生産性ツールを採用する際に賢明な選択をしたとしましょう。 サイバーセキュリティを念頭に置いて設計Microsoft 365 Business Premium、データ、デバイス、および情報を保護します。 あなたは、ランダムな個人、組織犯罪、高度に高度な国家を含む、ハッカーやサイバー攻撃に対する組織の最初かつ最高の防御です。
+まず、Microsoft 365 Business Premiumとその世界クラスの生産性ツールを採用する際に賢明な選択をしたとしましょう。 サイバーセキュリティを念頭に置いて設計Microsoft 365 Business Premium、データ、デバイス、情報を保護します。 あなたは、ランダムな個人、組織犯罪、高度に高度な国家を含む、ハッカーやサイバー攻撃に対する組織の最初かつ最高の防御です。
 
 この作業を行う前に、組織の将来Microsoft 365 Business Premiumセキュリティで保護しましょう。 環境の強化、チームのトレーニング、マネージド デバイスの保護に役立つ次のミッションに取り組んで、このタスクに取り組みます。 ミッションは次のように編成されています。
 

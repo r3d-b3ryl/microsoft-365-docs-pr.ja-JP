@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント データ損失防止の場所を使用するためのデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 9107759e137d7b8dd86253f9c6567b76686d2518
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f58c7aec00a91ebc63b410abdd4c6342eef47a0e
+ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632379"
+ms.lasthandoff: 07/19/2022
+ms.locfileid: "66881997"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -128,7 +128,6 @@ ms.locfileid: "66632379"
 このシナリオでは、**非常に機密性の高い社外秘** の秘密度ラベルを持つファイルの OneDrive への同期がブロックされます。 これは、複数のコンポーネントと手順からなる複雑なシナリオです。 以下が必要です。
 
 - 対象となる AAD ユーザー アカウントと、ローカルの OneDrive フォルダーと OneDrive クラウド ストレージをすでに同期させているオンボード済みの Windows 10 コンピューター。
-- 対象の Windows 10 コンピューターにインストールされた Microsoft Word
 - 秘密度ラベルが構成され、発行されました。「[秘密度ラベルの使用を開始する](get-started-with-sensitivity-labels.md#get-started-with-sensitivity-labels)」および「[秘密度ラベルとそのポリシーを作成して構成する](create-sensitivity-labels.md#create-and-configure-sensitivity-labels-and-their-policies)」を参照してください。
 
 3 つの手順があります。
@@ -234,7 +233,7 @@ ms.locfileid: "66632379"
 
 ## <a name="scenario-5-restrict-unintentional-sharing-to-unallowed-cloud-apps-and-services"></a>シナリオ 5: 意図しない共有を許可されていないクラウド アプリとサービスに制限する
 
-Endpoint DLP と Edge Web ブラウザを使用すると、許可されていないクラウドアプリとサービスで意図しない機密アイテムの共有を制限できます。 Microsoft Edge では、アイテムがエンドポイント DLP ポリシーによって制限される場合を把握して、アクセス制限を適用しています。
+エンドポイント DLP と Microsoft Edge Web ブラウザを使用すると、許可されていないクラウド アプリとサービスへの意図しない機密アイテムの共有を制限できます。 Microsoft Edge では、アイテムがエンドポイント DLP ポリシーによって制限される場合を把握して、アクセス制限を適用しています。
 
 適切に設定された DLP ポリシーで **［デバイス］** を場所として選択し、Microsoft Edge ブラウザを使用すると、これらの設定で定義した許可されていないブラウザは、DLP ポリシーの制御に一致する機密アイテムにアクセスすることができなくなります。 代わりに、ユーザーは Microsoft Edge を使用するためにリダイレクトされます。DLP に課される制限を理解すると、DLP ポリシーの条件が満たされた場合にアクティビティをブロックまたは制限できます。
 
@@ -249,6 +248,58 @@ Endpoint DLP と Edge Web ブラウザを使用すると、許可されていな
 新しいサービス、アプリ、およびポリシーを継続的に追加して、制限を拡張、強化しながら、ビジネスへのニーズを満たし機密データを保護できます。 
 
 この構成により、データが安全に維持でき、ユーザーが機密情報以外のアイテムにアクセスしたり、共有したりすることを禁止または制限する不必要な制約も回避できます。
+
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>シナリオ 6 機密性の高いサービス ドメインでのユーザー アクティビティを監視または制限する (プレビュー)
+
+このシナリオは、Web サイトでこれらのユーザー アクティビティを監査、オーバーライドしてブロック、またはブロックする場合に使用します。
+
+- Web サイトから印刷する
+- Web サイトからデータをコピーする
+- Web サイトをローカル ファイルとして保存する
+
+ユーザーは、Microsoft Edge経由で Web サイトにアクセスしている必要があります。
+
+### <a name="supported-syntax-for-designating-websites-in-a-website-group"></a>Web サイト グループ内の Web サイトを指定するためのサポートされている構文
+
+柔軟な構文を使用して、Web サイト グループにドメイン、サブドメイン、Web サイト、サブサイトを含め、除外できます。
+
+- ワイルドカードとして `*` を使用して、すべてのドメインまたはすべてのサブドメインを指定します
+- URL の末尾にある終端として `/` を使用して、その特定のサイトのみに検索範囲を設定します。
+
+終端の `/` なしで URL を追加すると、その URL はそのサイトとすべてのサブサイトにスコープされます。
+
+この構文は、すべての http/https Web サイトに適用されます。
+
+次に、いくつかの例を示します:
+
+
+|Web サイト グループに追加する URL  |URL が一致します  | URL が一致しません|
+|---------|---------|---------|
+|contoso.com  | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/ </br> //<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2|        //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com.au    |
+|contoso.com/     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/         |//<!--nourl-->contoso.com/allsubsites1 </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/au   |
+|*.contoso.com   | //<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/allsubsites </br> //<!--nourl-->contoso.com/allsubsites1/allsubsites2 </br> //<!--nourl-->allsubdomains.contoso.com </br> //<!--nourl-->allsubdomains.contoso.com/allsubsites </br> //<!--nourl-->allsubdomains1/allsubdomains2/contoso.com/allsubsites1/allsubsites2         | //<!--nourl-->allsubdomains.contoso.com.au|
+|*.contoso.com/xyz     |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->contoso.con/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2         | //<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz/|
+|*.contoso.com/xyz/     |//<!--nourl-->contoso.com/xyz </br> //<!--nourl-->allsubdomains.contoso.com/xyz         |//<!--nourl-->contoso.com </br> //<!--nourl-->contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites/ </br> //<!--nourl-->allsubdomains1.allsubdomains2.contoso.com/xyz/allsubsites1/allsubsites2|
+
+
+### <a name="configure-sensitive-service-domains"></a>機密性の高いサービス ドメインを構成する
+
+1. Microsoft Purview コンプライアンス ポータルで、**データ損失防止** > **エンドポイント DLP 設定** > **機密データに対するブラウザーとドメインの制限** > **機密サービス ドメイン** を開きます。
+1. **[機密性の高いサービス ドメインの新しいグループを追加する]** を選択します。
+1. グループに名前を付けます。
+1. 希望する **[一致の種類]** を選択します。 **[URL]**、**[IP アドレス]**、**[IP アドレス範囲]** から選択できます。
+1. **[このグループに新しいサービス ドメインを追加する]** に適切な値を入力します。 複数の Web サイトをグループに追加し、ワイルドカードを使用してサブドメインをカバーできます。  たとえば、最上位の Web サイトの場合は www.contoso.com に、または corp.contoso.com、hr.contoso.com、fin.contoso.com の場合は *.contoso.com にします。
+1. **[保存]** を選択します。
+1. **[ポリシー]** を選択します。
+1. **デバイス** にのみ適用されるポリシーを作成して検索範囲を設定します。 ポリシーの作成方法の詳細については、「[DLP ポリシーの作成、テスト、チューニングする](create-test-tune-dlp-policy.md)」を参照してください。
+1. "**Edge から機密サイトにアクセスしたユーザー**" を使用したルールと、"**ユーザーが Windows デバイス上の Microsoft Edge ブラウザーで機密サイトにアクセスした場合にアクティビティを監査または制限する**" アクションを作成します。
+1. アクションで、**[機密サイト グループを追加または削除する]** を選択します。
+1. 希望する **[機密サイト グループ]** を選択します。
+1. **[追加]** を選択します。
+1. 監視または制限するユーザー アクティビティと、それらのアクティビティに応答して DLP が実行するアクションを選択します。
+1. ルールとポリシーの構成を完了し、適用します。
+
+
 ## <a name="see-also"></a>関連項目
 
 - [エンドポイント データ損失防止について](endpoint-dlp-learn-about.md)

@@ -9,28 +9,20 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.collection:
-- M365-subscription-management
-- M365-identity-device-management
-- Adm_TOC
+ms.date: 07/19/2022
+ms.collection: ''
 ms.custom:
-- Core_O365Admin_Migration
 - MiniMaven
-- MSB365
-- OKR_SMB_M365
-- seo-marvel-mar
-- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
-ms.assetid: 80bdae57-f8bc-4e40-a58c-956007117ecb
 description: Microsoft 365 for Business を使用して、ユーザーがデバイスまたは Windows PC に持っている会社のデータを削除する方法をご覧ください。
-ms.openlocfilehash: 082dbdc11a06a03962594c247dcd6738118a0667
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: a89aff7c18a8470647c03f391a82dc00a3966b09
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490737"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892839"
 ---
 # <a name="remove-company-data-from-devices"></a>デバイスから会社のデータを削除する
 

@@ -16,18 +16,18 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3034c6020c3d7d04164e37beb1c1186e9aa30958
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 3774d4bbf68196b5253bdfa4d5c55a0bf4014728
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64499113"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895143"
 ---
 # <a name="responding-to-your-first-incident"></a>最初のインシデントに対応する
 
@@ -54,7 +54,7 @@ Microsoft 365 Defenderのインシデントは、分析とインシデント対�
 
 :::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="[最初のインシデントに対応] ページの [修復] オプション" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 
-組織とMicrosoft 365テナントが[インシデント処理用に準備](first-incident-prepare.md)されていることを確認します。
+組織と Microsoft 365 テナントが [インシデント処理用に準備](first-incident-prepare.md)されていることを確認します。
 
 ## <a name="see-also"></a>関連項目
 

@@ -14,18 +14,20 @@ author: dansimp
 ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+- M365-security-compliance
+- m365solution-getstarted
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2a99dbaf50b582df4203fc9c8e1d04e0a3f6d807
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 0fa1a47bb5a4a09c22649866bb6c5c6039dc2850
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64498658"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895033"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender を有効にする
 
@@ -59,7 +61,7 @@ Microsoft 365 Defenderを有効にするには、次のいずれかのロール�
 - アプリケーション管理者
 - クラウド アプリケーション管理者
 
-[Azure ADでロールを表示する](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
+[Azure AD でロールを表示する](/azure/active-directory/users-groups-roles/directory-manage-roles-portal)
 
 ## <a name="supported-services"></a>サポートされているサービス
 
@@ -72,12 +74,12 @@ Microsoft 365 Defenderへのオンボードは簡単です。 ナビゲーショ
 
 ### <a name="data-center-location"></a>データ センターの場所
 
-Microsoft 365 Defenderは、[Microsoft Defender for Endpointが使用するのと同じ場所](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)にデータを格納して処理します。 Microsoft Defender for Endpointがない場合は、アクティブなMicrosoft 365セキュリティ サービスの場所に基づいて、新しいデータ センターの場所が自動的に選択されます。 選択したデータ センターの場所が画面に表示されます。
+Microsoft 365 Defenderは、[Microsoft Defender for Endpointが使用するのと同じ場所](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)にデータを格納して処理します。 Microsoft Defender for Endpointがない場合は、アクティブな Microsoft 365 セキュリティ サービスの場所に基づいて、新しいデータ センターの場所が自動的に選択されます。 選択したデータ センターの場所が画面に表示されます。
 
 Microsoft 365 Defender ポータルで [**ヘルプが必要ですか?**] を選択して、別のデータ センターの場所でのMicrosoft 365 Defenderのプロビジョニングに関する Microsoft サポートにお問い合わせください。
 
 > [!NOTE]
-> 以前は、Microsoft Defender for Endpoint Microsoft Defender for Cloudを介して有効にすると、欧州連合 (EU) データ センターで自動的にプロビジョニングされました。 Microsoft 365 Defenderは、過去にこの方法で Defender for Endpoint をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
+> 以前は、Microsoft Defender for Cloud を使用してオンにすると、Microsoft Defender for Endpoint欧州連合 (EU) データ センターで自動的にプロビジョニングされました。 Microsoft 365 Defenderは、過去にこの方法で Defender for Endpoint をプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
 
 ### <a name="confirm-that-the-service-is-on"></a>サービスが有効になっていることを確認する
 
@@ -93,7 +95,7 @@ Microsoft 365 Defender ポータルで [**ヘルプが必要ですか?**] を選
 *インシデント管理やその他の機能を備えたMicrosoft 365 Defender ポータル*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Microsoft Defender for Identity データの取得 
-Microsoft Defender for Cloud Appsとの統合を有効にするには、少なくとも 1 回はMicrosoft Defender for Cloud Appsにログインする必要があります。
+Microsoft Defender for Cloud Appsとの統合を有効にするには、少なくとも 1 回Microsoft Defender for Cloud Appsにログインする必要があります。
 
 ## <a name="get-assistance"></a>サポートを利用する
 

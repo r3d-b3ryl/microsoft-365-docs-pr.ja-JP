@@ -15,20 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
-- incidentresponse
-- m365solution-incidentresponse
-- m365solution-overview
 ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 8138c07ab871ab1a6a8d89df980c914983bbb58e
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 441f9ce5824c1de82a5629e4c0ba9192ed89a529
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666946"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895077"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defender でインシデントを調査する
 
@@ -82,7 +78,7 @@ Microsoft 365 Defenderは、デバイス、ユーザー、メールボックス�
 
 - 重大 度。
 - アラートに関与したエンティティ。
-- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud アプリ、アプリガバナンス アドオン)。
+- アラートのソース (Microsoft Defender for Identity、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Defender for Cloud Apps、アプリ ガバナンス アドオン)。
 - それらが一緒にリンクされた理由。
 
 次に例を示します。
@@ -177,23 +173,23 @@ Microsoft 365 Defenderは、アラートでサポートされているすべて�
 
 ## <a name="graph-preview"></a>Graph (プレビュー)
 
-**[Graph**] タブには、攻撃の完全な範囲、時間の経過と共にネットワーク経由で攻撃がどのように拡散したか、どこから攻撃が開始されたか、および攻撃者がどれだけ離れたかを示します。 攻撃の一部であるさまざまな疑わしいエンティティと、ユーザー、デバイス、メールボックスなどの関連資産を接続します。 
+**[グラフ**] タブには、攻撃の完全な範囲、時間の経過と共にネットワーク経由で攻撃がどのように拡散したか、開始された場所、攻撃者がどれだけ離れた場所に行ったかを示します。 攻撃の一部であるさまざまな疑わしいエンティティと、ユーザー、デバイス、メールボックスなどの関連資産を接続します。 
 
-**[Graph**] タブでは、次のことができます。
+[ **グラフ** ] タブでは、次のことができます。
 
 1. 時間の経過と共に発生したアラートとグラフ上のノードを再生して、攻撃の時系列を理解します。
 
 
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="Graph ページでのアラートとノードの再生":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-play.gif" alt-text="グラフ ページでのアラートとノードの再生":::
  
 
 2. エンティティ ウィンドウを開くと、エンティティの詳細を確認し、ファイルの削除やデバイスの分離などの修復アクションに対処できます。
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Microsoft 365 Defender ポータルの [Graph] ページのエンティティ ウィンドウ" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-entity-pane.png" alt-text="Microsoft 365 Defender ポータルの [グラフ] ページのエンティティ ウィンドウ" lightbox="../../media/investigate-incidents/incident-graph-entity-pane.png":::
 
 3. 関連するエンティティに基づいてアラートを強調表示します。
  
-   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="Graph ページのアラート 強調表示" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
+   :::image type="content" source="../../media/investigate-incidents/incident-graph-alert.png" alt-text="[グラフ] ページのアラート の強調表示" lightbox="../../media/investigate-incidents/incident-graph-alert.png":::
 
 ## <a name="next-steps"></a>次の手順
 

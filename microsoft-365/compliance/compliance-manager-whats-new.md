@@ -17,16 +17,25 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス マネージャーの新機能と、次の内容を確認します。 更新された評価、新しい評価テンプレート、新しいアクションなどについて説明します。
-ms.openlocfilehash: aab0ccefd6f139212e8e045eacd458e22f498f9b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: be6527822798a518753897b5d104899077264ee3
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638707"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894341"
 ---
 # <a name="whats-new-in-microsoft-purview-compliance-manager"></a>Microsoft Purview コンプライアンス マネージャーの新機能
 
 **この記事では、次の操作を行います。** コンプライアンス マネージャーの最近の更新プログラムについて説明します。
+
+## <a name="july-2022"></a>2022 年 7 月
+
+コンプライアンス マネージャーは、次の新しい評価テンプレートを公開しました。
+
+- 香港 - 銀行業務コードと支払いカード
+
+[評価テンプレートの完全な一覧を表示します](compliance-manager-templates-list.md)。
+
 
 ## <a name="may-2022"></a>2022 年 5 月
 

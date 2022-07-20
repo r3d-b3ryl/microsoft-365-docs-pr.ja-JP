@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーには、国内、地域、および業界の規制、標準、および法律に適合する評価を構築するためのテンプレートが用意されています。
-ms.openlocfilehash: bfac79126f167b6ec8faaacb0134f97aaea0fe4d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2870378d25a66661cdc720c8073e5bbab283790b
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631207"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66895099"
 ---
 # <a name="compliance-manager-templates-list"></a>コンプライアンスマネージャーテンプレートの一覧
 
@@ -295,7 +295,8 @@ ms.locfileid: "66631207"
 - 中朝の保護データ セキュリティ標準 V2.0 (VPDSS 2.0)  
 - オーストラリア政府向け情報管理標準 - オーストラリア国立アーカイブ (NAA)  
 - 中国 - 個人情報セキュリティ仕様  
-- 中華人民共和国のサイバーセキュリティ法  
+- 中華人民共和国のサイバーセキュリティ法
+- 香港 - 銀行業務コードと支払いカード
 - 香港 - 個人データ (プライバシー) の保護  
 - インド情報技術 (妥当なセキュリティプラクティスと手順、機密個人データまたは情報) 規則
 - インド - 情報技術法  

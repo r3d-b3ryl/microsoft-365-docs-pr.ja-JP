@@ -16,20 +16,20 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
-- m365initiative-m365-defender
+- m365solution-firstincident
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b6872fb13ba1a32f081b5fcc82fd590f2c196a6c
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: f55cdc31dbf8a74395a232340cc8d273e9927dc0
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569559"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893543"
 ---
-# <a name="step-2-remediate-your-first-incident"></a>手順 2。 最初のインシデントを修復する
+# <a name="step-2-remediate-your-first-incident"></a>手順 2. 最初のインシデントを修復する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ Microsoft 365 Defenderには、アナリストが手動で開始できる修復�
 
 - **デバイスを分離する** - このアクティビティは、マルウェアの拡散を最小限に抑え、悪意のあるアクターが攻撃を続けることなく分析を継続できるように、すべてのネットワーク トラフィック (インターネットと内部) を直ちにブロックします。 許可される唯一の接続は、Microsoft Defender for Identity サービス クラウドに対して行われるため、Microsoft Defender for Identityは引き続きデバイスを監視できます。 
 - **アプリの実行を制限** する - アプリケーションの実行を制限するために、Microsoft 発行の証明書によって署名されている場合にのみファイルを実行できるようにするコード整合性ポリシーが適用されます。 この制限方法は、攻撃者が侵害されたデバイスを制御し、さらに悪意のあるアクティビティを実行するのを防ぐのに役立ちます。
-- **ウイルス対策スキャンの実行** - Microsoft Defender ウイルス対策 スキャンは、Defender ウイルス対策がアクティブなウイルス対策ソリューションであるかどうかに関係なく、他のウイルス対策ソリューションと共に実行できます。 別のウイルス対策ベンダー製品が主要なエンドポイント保護ソリューションである場合は、パッシブ モードで Defender ウイルス対策を実行できます。
+- **ウイルス対策スキャンの実行** - Microsoft Defender ウイルス対策スキャンは、Defender ウイルス対策がアクティブなウイルス対策ソリューションであるかどうかに関係なく、他のウイルス対策ソリューションと共に実行できます。 別のウイルス対策ベンダー製品が主要なエンドポイント保護ソリューションである場合は、パッシブ モードで Defender ウイルス対策を実行できます。
 - **自動調査を開始** する - デバイスで新しい汎用自動調査を開始できます。 調査の実行中、デバイスから生成されたその他のアラートは、その調査が完了するまで、継続的な自動調査に追加されます。 さらに、他のデバイスで同じ脅威が見られる場合は、それらのデバイスが調査に追加されます。
 - **ライブ応答の開始** - ライブ応答は、リモート シェル接続を使用してデバイスに瞬時にアクセスできる機能です。 これにより、詳細な調査作業を行い、即座に対応アクションを実行して、識別された脅威をリアルタイムで迅速に封じ込めることができます。 ライブ応答は、フォレンジック データの収集、スクリプトの実行、分析のための疑わしいエンティティの送信、脅威の修復、新たな脅威の予防的な捜索を可能にすることで、調査を強化するように設計されています。
 - **調査パッケージを収集** する - 調査または対応プロセスの一環として、デバイスから調査パッケージを収集できます。 調査パッケージを収集することで、デバイスの現在の状態を特定し、攻撃者が使用するツールと手法をさらに理解できます。 
@@ -61,7 +61,7 @@ Microsoft 365 Defenderには、アナリストが手動で開始できる修復�
 
 1. ユーザー アカウントのパスワードをすぐにリセットする
 2. 詳細な分析が完了するまでMicrosoft 365 Defenderでデバイスを分離する
-3. 悪意のあるファイルがSharePointから検疫されたことを確認する
+3. 悪意のあるファイルが SharePoint から検疫されたことを確認する
 4. マルウェアの影響を受けたエンドポイントを確認する
 5. システムをリビルドする
 6. 他のユーザーの同様のMicrosoft Defender for Cloud Appsアラートを確認する
@@ -74,18 +74,18 @@ Microsoft 365 Defenderには、アナリストが手動で開始できる修復�
 
 ## <a name="using-playbooks"></a>Playbooks の使用
 
-さらに、プレイブックを使用して自動修復を作成することもできます。 現在、Microsoft には、次のシナリオに対応するプレイブックを提供する[プレイブック テンプレートがGitHubに](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks)用意されています。
+さらに、プレイブックを使用して自動修復を作成することもできます。 現在、Microsoft は [GitHub に Playbook テンプレートを](https://github.com/microsoft/Microsoft-Cloud-App-Security/tree/master/Playbooks) 用意しており、次のシナリオでプレイブックを提供しています。
 
 - ユーザー検証を要求した後に機密ファイル共有を削除する
 - 頻度の低い国のアラートの自動トリアージ
 - アカウントを無効にする前にマネージャー アクションを要求する
 - 悪意のある受信トレイルールを無効にする
 
-プレイブックでは、Power Automateを使用して、特定の条件がトリガーされたら、特定のアクティビティを自動化するカスタムのロボット プロセス自動化フローを作成します。 組織は、既存のテンプレートから、またはゼロからプレイブックを作成できます。 
+プレイブックでは、Power Automate を使用して、特定の条件がトリガーされたら、特定のアクティビティを自動化するカスタムのロボット プロセス自動化フローを作成します。 組織は、既存のテンプレートから、またはゼロからプレイブックを作成できます。 
 
 次に例を示します。
  
-:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Power Automateカスタムのロボット プロセス自動化フロー" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
+:::image type="content" source="../../media/first-incident-remediate/first-incident-power-automate.png" alt-text="Power Automate のカスタム のロボット プロセス自動化フロー" lightbox="../../media/first-incident-remediate/first-incident-power-automate.png"::: 
  
 また、 [インシデント後のレビュー](first-incident-post.md) 中にプレイブックを作成して、解決されたインシデントから修復アクションを作成することもできます。 
 

@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft Business Premium で電話の多要素認証を設定します。 電話に Microsoft Business Premium の MFA 機能を使用して、セキュリティを強化します。
-ms.openlocfilehash: a01c829d961c1941e1910b5f7068f3cc66732db8
-ms.sourcegitcommit: c216ffa5da8f431e4380bb133a234ae7d94144c7
+ms.openlocfilehash: a0f4c5cf7099f27cade90e8c62aa1072fce3fd66
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/04/2022
-ms.locfileid: "65893265"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894013"
 ---
 # <a name="set-up-mfa"></a>MFA をセットアップする
 
