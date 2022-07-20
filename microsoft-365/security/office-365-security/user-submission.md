@@ -1,11 +1,11 @@
 ---
-title: ユーザーから報告されたメッセージの設定
+title: スパム、フィッシング、悪意のあるメールとしてユーザーが報告した電子メール設定
 f1.keywords:
 - NOCSH
-ms.author: dansimp
-author: dansimp
+ms.author: chrisda
+author: chrisda
 manager: dansimp
-ms.date: ''
+ms.date: 07/19/2022
 audience: ITPro
 ms.topic: how-to
 ms.localizationpriority: medium
@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: 管理者は、ユーザーによって報告されたスパムやフィッシングメールを収集するようにメールボックスを構成する方法について説明します。
+description: ユーザーによって報告されたスパムとフィッシングメールを収集するようにメールボックスを構成する方法。 ユーザーがスパム、フィッシング、悪意のある、または悪意のないものとして報告するメッセージのメールボックスを作成します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c4faa6ce80a885ecea864cc2fa51be29553c4a3d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 40a52e5e3db8a1e11087d4a8beb33b9ba1f3a3aa
+ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636427"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66885534"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーから報告されたメッセージの設定
 
@@ -34,20 +34,22 @@ ms.locfileid: "66636427"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online メールボックスを持つ Microsoft 365 組織では、ユーザーが悪意のある、または悪意のないものとして報告するメッセージを受信するメールボックスを指定できます。 ユーザーがさまざまなレポート オプションを使用してメッセージを報告する場合、このメールボックスを使用してメッセージを傍受 (カスタム メールボックスのみに送信) したり、メッセージのコピー (カスタム メールボックスと Microsoft に送信) を受信したりできます。 この機能は、次のメッセージ レポート オプションで機能します。
+Exchange Online メールボックスを持つ Microsoft 365 組織では、ユーザーがスパム、フィッシング、悪意のあるメッセージとして報告した場合、または悪意のあるメッセージを報告しない場合でも、メールボックスにメールを送信できます。 ユーザーがさまざまなレポート オプションを使用して電子メールを報告する場合、管理者は、このメールボックスを使用して、それらの電子メール メッセージを傍受したり (カスタム メールボックスにのみ送信) メッセージのコピーを受信したり (カスタム メールボックスと Microsoft に送信) できます。
+
+この機能は、次のメッセージ レポート オプションで機能します。
 
 - [レポート メッセージ アドイン](enable-the-report-message-add-in.md)
 - [レポート フィッシング アドイン](enable-the-report-phish-add-in.md)
 - [サード パーティのレポート ツール](#third-party-reporting-tools)
 
-ユーザーから報告されたメッセージを Microsoft に直接配信するのではなく、カスタム メールボックスに配信すると、管理者は、管理送信を使用して選択的かつ手動で Microsoft にメッセージを報告[できます](admin-submission.md)。 これらの設定は、以前はユーザー申請ポリシーと呼ばれていた。
+ユーザーから報告されたメッセージを Microsoft に直接送信するのではなく、カスタム メールボックスに配信すると、管理者は、管理送信を使用して、選択的かつ手動で Microsoft に電子メール メッセージを報告[できます](admin-submission.md)。 *これらの設定は、以前はユーザー申請ポリシーと呼ばれていた*。
 
   > [!NOTE]
-  > [Outlook on the webで](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)レポートが無効になっている場合、ここでユーザーから報告されたメッセージを有効にすると、その設定が上書きされ、ユーザーはOutlook on the webでメッセージを再度報告できるようになります。
+  > [Outlook on the webで](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)レポートが無効になっている場合、ここでユーザーから報告されたメッセージを有効にすると、その設定が上書きされ、ユーザーがOutlook on the webでメッセージを再度報告できるようになります。
 
 ## <a name="custom-mailbox-prerequisites"></a>カスタム メールボックスの前提条件
 
-次の記事を使用して、ユーザーが報告したメッセージをカスタム メールボックスに移動するために必要な前提条件を構成します。
+ユーザーから報告された電子メール メッセージがカスタム メールボックスに移動する前提条件を構成するには、次の記事を使用します。
 
 - [カスタム メールボックスを SecOps メールボックスとして識別します](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)。
 
@@ -55,7 +57,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
   - マルウェアのゼロ時間自動消去 (ZAP) がオフになっている ([**保護設定]** セクション \> [ **マルウェアのゼロ時間自動消去を有効にする** ] は選択されていません)。
   - 共通添付ファイル フィルター オプションがオフになっている (**[保護設定]** セクション \> [ **共通添付ファイル フィルターを有効にする** ] が選択されていません)。
 
-Microsoft Defender for Office 365がある場合は、高度なフィルター処理が報告されたメッセージに影響を与えないように、次の設定も構成する必要があります。
+**Microsoft Defender for Office 365がある場合は**、高度なフィルター処理が報告されたメールに影響を与えないように、次の設定も構成する必要があります。
 
 - カスタム メールボックスが[事前設定されたセキュリティ ポリシー](preset-security-policies.md#use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-standard-and-strict-preset-security-policies)に含まれていないことを確認する
 
@@ -63,7 +65,7 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
 
 - 動的配信を含む [安全な添付ファイル](set-up-safe-attachments-policies.md)のスキャンがオフになっているカスタム メールボックスの安全な添付ファイル ポリシーを作成します (**[安全な添付ファイルの不明なマルウェアの応答**] セクション>**オフ**)。
 
-メールボックスが適用可能なすべての前提条件を満たしていることを確認したら、この記事の手順を使用して、ユーザー提出メールボックスを構成できます。
+メールボックスが前提条件を満たしていることを確認したら、この記事の残りの部分を使用して、ユーザー提出メールボックスを構成できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
@@ -82,7 +84,7 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
   - [Exchange Online PowerShell へのアクセスを有効または無効にする](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Exchange Onlineのクライアント アクセス規則](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
-## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox"></a>Microsoft 365 Defender ポータルを使用して、ユーザー申請メールボックスを構成する
+## <a name="use-the-microsoft-365-defender-portal-to-configure-the-user-submissions-mailbox-for-emails"></a>Microsoft 365 Defender ポータルを使用して、電子メールのユーザー送信メールボックスを構成する
 
 1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**ポリシー] & [ルール** > **] の [脅威ポリシー** > **] [ユーザーが報告したメッセージ設定**] の [**その他]** セクションに移動します。 **[ユーザー申請]** ページに直接移動するには、 <https://security.microsoft.com/userSubmissionsReportMessage>.
 
@@ -130,7 +132,7 @@ Microsoft Defender for Office 365がある場合は、高度なフィルター�
 
 3. 完了したら、[ **確認**] をクリックします。 これらの値をクリアするには、[ **復元**] をクリックします。
 
-## <a name="third-party-reporting-tools"></a>サード パーティのレポート ツール
+## <a name="third-party-email-reporting-tools"></a>サード パーティ製の電子メール レポート ツール
 
 サード パーティのメッセージ レポート ツールを構成して、報告されたメッセージをカスタム メールボックスに送信できます。 これを行うには、**Microsoft Outlook レポート メッセージ ボタン** の設定を **オフ** にし、**自分の組織のメールボックス** を任意のOffice 365メールボックスに設定します。
 
