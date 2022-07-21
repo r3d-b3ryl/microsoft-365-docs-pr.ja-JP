@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: コンプライアンスと、Microsoft Whiteboard でプライバシー設定を構成する方法について説明します。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a2708d3eda92f3d29ea9ad6ee15e518d32d93a22
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 38c7d3fc80b825a8b701f84d729e9bb9a7cc1b63
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882786"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917235"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Microsoft Whiteboard でプライバシー設定を構成する
 
@@ -31,7 +30,7 @@ ms.locfileid: "66882786"
 
 - Whiteboard のオプションの接続エクスペリエンスをユーザーが利用できるかどうか。
 
-診断データのレベルを構成するには、管理者アカウントで[Microsoft 365 管理センター](/microsoft-365/admin/admin-overview/admin-center-overview?view=o365-worldwide)にサインインします。 管理センターのホーム ページで、[ **すべての>設定>組織の設定>ホワイトボードを表示する**] に移動します。
+診断データのレベルを構成するには、管理者アカウントで[Microsoft 365 管理センター](/microsoft-365/admin/admin-overview/admin-center-overview)にサインインします。 管理センターのホーム ページで、[ **すべての>設定>組織の設定>ホワイトボードを表示する**] に移動します。
 
 オプションの接続エクスペリエンスの可用性を構成するには、[Microsoft 365 Apps管理センター](https://config.office.com)で [Office クラウド ポリシー サービス](/deployoffice/admincenter/overview-office-cloud-policy-service)を使用します。 管理者アカウントでサインインし、 **カスタマイズ > ポリシー管理** に移動します。 構成するポリシーには、 **Office で追加のオプションの接続エクスペリエンスを使用できるようにする** という名前が付けられています。
 

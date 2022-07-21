@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,22 +19,22 @@ search.appverid:
 - BCS160
 - MET150
 description: セキュリティ インシデント管理の概要
-ms.openlocfilehash: bf748a87fcdbc3898caf6fb86c68a51823da5ba3
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 9f99dda8b1226e051b17dcd4a7a96c236c222fa7
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892685"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917922"
 ---
 # <a name="security-incident-management"></a>セキュリティ インシデントの管理
 
-組織のセキュリティには継続的な監視が必要であり、脅威が検出されると、修復アクションが実行されます。 特定の脅威とセキュリティ設定の構成方法によっては、アクションが自動的に実行されるか、承認されたときにのみ実行される場合があります。 承認は定期的に行う必要があります。
+Microsoft 365 Business Premium でセキュリティ機能を設定して構成した後、セキュリティ チームは検出された脅威を監視して対処できます。 脅威が検出されると、アラートが生成され、インシデントが作成されます。 脅威の軽減に役立つ修復アクションが実行される可能性があります。 
 
-一般的なインシデント対応に関する短いビデオをご覧ください。
+その仕組みについて知りたい場合は、 一般的なインシデント対応に関するショート ビデオをご覧ください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Zvew]
 
-インシデント対応の詳細を確認するには、次の手順に従います:
+インシデント対応の詳細については、次の記事を参照してください。
 
 1. [セキュリティに関する推奨事項を確認します](../security/defender-business/mdb-view-tvm-dashboard.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json)。
 

@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard を設定および管理する方法に関するリソースを確認します。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 70f1252d8a583fc317af30a6eaaa6ccaf0df7a1e
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 1b76b829d0db173257243b49076bf5938121fb3d
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554119"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917324"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Microsoft Whiteboard の概要
 
@@ -43,10 +42,13 @@ Microsoft 365 の Microsoft Whiteboard は、人、コンテンツ、アイデ�
 
 | この情報をお探しの場合 | 参照先 |
 |:-----|:-----|
-|組織の Whiteboard へのアクセスを設定および管理する方法について説明します|[ホワイトボードへのアクセスを管理する](manage-whiteboard-access-organizations.md)|
+|組織の Whiteboard を設定する方法について説明します|[ホワイトボードを設定して使用する](/surface-hub/whiteboard-collaboration)|
+|Microsoft Intuneまたは Microsoft Configuration Managerを使用してWindows 10以降を実行するデバイスにホワイトボードを展開する|[Windows デバイスに Microsoft Whiteboard を展開する](deploy-on-windows-organizations.md)|
+|組織の Whiteboard へのアクセスを管理する方法について説明します|[ホワイトボードへのアクセスを管理する](manage-whiteboard-access-organizations.md)|
 |Whiteboard のコンテンツとデータが Azure とOneDrive for Businessに格納されている場所を確認する  |[Whiteboard のデータを管理する](manage-data-organizations.md)  |
 |Teams での共有エクスペリエンスと、特定のユーザーへのリンクを共有する方法について説明します  |[ホワイトボードの共有を管理する](manage-sharing-organizations.md)  |
-|Microsoft Intuneまたは Microsoft Configuration Managerを使用してWindows 10以降を実行するデバイスにホワイトボードを展開する  |[Windows にホワイトボードを展開する](deploy-on-windows-organizations.md)  |
+|Whiteboard のプライバシー設定と診断データを構成する方法について説明します |[ホワイトボードでプライバシー設定を構成する](configure-privacy-settings.md)  |
+|ホワイトボードで収集された個人データに対する一般的なデータ保護規則 (GDPR) 要件を管理する方法について説明します |[ホワイトボードで GDPR データ主体の要求を管理する](gdpr-requests.md)  |
 
 ### <a name="for-government"></a>政府機関向け
 

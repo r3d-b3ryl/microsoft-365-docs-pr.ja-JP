@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 07/20/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -17,16 +17,16 @@ ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
-ms.openlocfilehash: ddc55ef097a02c4005e2dcae2ca19fd673cc4c62
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 4a1c7992952e10939aaa1029888455bb05fc4986
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631075"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918048"
 ---
 # <a name="create-a-litigation-hold"></a>訴訟ホールドを作成する
 
-メールボックスを訴訟ホールドに置くと、削除されたアイテムや変更されたアイテムの元のバージョンを含むすべてのメールボックス コンテンツを保持できます。 ユーザー メールボックスを訴訟ホールドに置くと、ユーザーのアーカイブ メールボックス内のコンテンツ (有効になっている場合) も保持されます。 保持を作成するときに、保持期間 (*時間ベースの保持* とも呼ばれます) を指定すると、削除および変更されたアイテムが指定した期間保持され、その後メールボックスから完全に削除されます。 または、コンテンツを無期限に保持する ( *無限保留* と呼ばれる) か、訴訟ホールドが削除されるまで保持することもできます。 保持期間を指定する場合は、メッセージが受信された、またはメールボックス アイテムが作成された日付から計算されます。 
+メールボックスを訴訟ホールドに置くと、削除されたアイテムや変更されたアイテムの元のバージョンを含むすべてのメールボックス コンテンツを保持できます。 ユーザー メールボックスを訴訟ホールドに置くと、ユーザーのアーカイブ メールボックス内のコンテンツ (有効になっている場合) も保持されます。 保持を作成するときに、保持期間 (*時間ベースの保持* とも呼ばれます) を指定すると、削除および変更されたアイテムが指定した期間保持され、その後メールボックスから完全に削除されます。 または、コンテンツを無期限に保持する ( *無限保留* と呼ばれる) か、訴訟ホールドが削除されるまで保持することもできます。 保持期間を指定する場合は、メッセージが受信された、またはメールボックス アイテムが作成された日付から計算されます。
   
 訴訟ホールドを作成するときに発生する処理を次に示します。
   
@@ -43,7 +43,7 @@ ms.locfileid: "66631075"
 訴訟ホールドにExchange Onlineメールボックスを配置するには、Exchange Onlineプラン 2 ライセンスが割り当てられている必要があります。 メールボックスに Exchange Online (プラン 1) ライセンスが割り当てられている場合は、別の Exchange Online Archiving ライセンスをメールボックスに割り当てて、メールボックスを保持の対象にする必要があります。
 
 > [!NOTE]
-> Office 365 Education組織の場合、訴訟ホールドはOffice 365 A1サブスクリプションでサポートされます。これには、補足機能を備えたExchange Onlineプラン 1 ライセンスが含まれます。 詳細については、Office 365 Education[サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)の「Exchange Online機能」セクションを参照してください。
+> Office 365 Education組織の場合、訴訟ホールドはOffice 365 A1サブスクリプションでサポートされます。これには、補足機能を備えたExchange Onlineプラン 2 ライセンスが含まれます。 詳細については、Office 365 Education[サービスの説明](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features)の「Exchange Online機能」セクションを参照してください。
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>訴訟ホールドにメールボックスを配置する
 

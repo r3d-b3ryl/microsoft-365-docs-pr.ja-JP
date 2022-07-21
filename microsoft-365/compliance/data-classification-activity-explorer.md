@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーを使用すると、ラベル付きコンテンツに対してユーザーが実行しているアクションを表示およびフィルター処理できます。
-ms.openlocfilehash: fc74e8c5e11834b14c6aa8a3f80d43e20c43ec11
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642022"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918004"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -36,7 +36,7 @@ ms.locfileid: "66642022"
 - 日付範囲
 - アクティビティの種類
 - 場所
-- User
+- ユーザー
 - 機密ラベル
 - 保持ラベル
 - ファイル パス
@@ -99,7 +99,7 @@ ms.locfileid: "66642022"
 
 アクティビティ エクスプローラーは、アクティビティの複数のソースの監査ログからアクティビティ情報を収集します。 アクティビティ エクスプローラーに表示されるラベル付けアクティビティの詳細については、「アクティビティ エクスプローラー [で使用できるラベル付けイベント」を参照してください](data-classification-activity-explorer-available-events.md)。
 
-Office ネイティブ アプリケーション、Azure Information Protection アドイン、SharePoint Online、Exchange Online (秘密度ラベルのみ)、OneDrive からの機密ラベル **アクティビティ** と **保持ラベル付けアクティビティ**。 次に例を示します。
+Office ネイティブ アプリケーション、Azure Information Protection (AIP) 統合ラベル付けクライアントとスキャナー、SharePoint Online、Exchange Online (秘密度ラベルのみ)、OneDrive からの **機密ラベル アクティビティ** と **保持ラベル付けアクティビティ**。 次に例を示します。
 
 - ラベルが適用されました
 - ラベルが変更されました (アップグレード、ダウングレード、または削除されました)

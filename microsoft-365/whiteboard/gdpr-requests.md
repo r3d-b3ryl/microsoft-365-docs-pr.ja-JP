@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard から個人情報をエクスポート、転送、または削除する方法について説明します。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 7ac0eb5270e377565840ad2d7ff40cab7546d692
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 53498dfc3309ab001bf4e1265f08c050ae464e61
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717742"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917213"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Microsoft Whiteboard で GDPR データ主体の要求を管理する
 

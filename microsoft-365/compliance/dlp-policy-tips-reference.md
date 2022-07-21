@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作していることをユーザーに通知する方法について説明します。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 04743bdabba4089a7cfdbb46fbb25d427927f6c0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638347"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917279"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>データ損失防止ポリシーヒントのリファレンス
 
@@ -404,4 +404,5 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 |**サード パーティのクラウド アプリ**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none|データ損失防止ポリシーのヒントは、サード パーティのクラウド アプリではサポートされていません|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
 |**Word、Excel、PowerPoint Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|サブセット|サブセット|[Outlook 2013 以降とデスクトップ上の Office アプリのサポートに関するページで、サポートされている機密情報の種類の一覧の機密情報の種類についてのみポリシーヒントを示](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)してください</br></br>WXP クライアント アプリのポリシーヒントは、以下または DLP ポリシー内の条件またはアクションのサブセットが正確に含まれるすべての DLP ポリシーの SharePoint Online または OneDrive for Business サイトに保存されているドキュメントで機能します。</br> <ul><li>コンテンツには機密情報の種類が含まれています</li><li>アクセス スコープ (コンテンツは内部または外部で共有されます)</li><li>ユーザーに通知する (ポリシーヒント/ユーザー通知)</li><li>すべてのユーザーをブロックする</li><li>インシデント レポート</li></ul></br> その他の条件またはアクションが存在する場合、そのポリシーの DLP ポリシー ヒントは、Word、Excel、または PowerPoint のデスクトップ アプリには表示されません。</br>詳細については [、Excel、PowerPoint、Word のポリシー](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) に関するヒントを参照してください|
+|**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|サブセット|サブセット|Power BI のデータ損失防止ポリシーはパブリック プレビューにあります。 </br></br> ポリシーのヒントと管理者アラートがサポートされています。 |
 ||||||

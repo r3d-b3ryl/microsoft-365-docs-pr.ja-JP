@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft 365 管理センターで組織の Microsoft Whiteboard を設定する方法について説明します。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1de0cd66a817a3db50b98bf6895be20184c974fc
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: 3c75bbfe6b2babf130f8980fe627ec05a8b431e3
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554583"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917653"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>組織の Microsoft Whiteboard へのアクセスを管理する
 

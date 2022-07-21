@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard で現在サポートされているクライアントについて説明します。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f02be2f581199ee7025425edc8137ce68234e298
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: bdf4edea4891aaed4d0325aca132818ea351c70e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66553929"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917257"
 ---
 # <a name="manage-clients-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High 環境で Microsoft Whiteboard のクライアントを管理する
 

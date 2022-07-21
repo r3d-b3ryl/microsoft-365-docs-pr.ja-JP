@@ -138,6 +138,7 @@
 ###### [RHEL6 のインストールに関する問題のトラブルシューティング](linux-support-rhel.md)
 ###### [パフォーマンスに関する問題のトラブルシューティング](linux-support-perf.md)
 ###### [欠落しているイベントに関する問題のトラブルシューティング](linux-support-events.md)
+###### [AuditD のパフォーマンスに関する問題のトラブルシューティング](troubleshoot-auditd-performance-issues.md)
 
 ##### [プライバシー](linux-privacy.md)
 ##### [リソース](linux-resources.md)

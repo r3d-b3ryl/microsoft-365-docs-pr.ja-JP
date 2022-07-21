@@ -12,13 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard データを有効、無効、管理する方法について説明します。
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3521d1cb7bafcb5f863f3902d2f54f96a30975cd
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: e1a3ccfd08a4dab8115c8bedf7be49a6be34cd92
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554608"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917358"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-gcc-high-environments"></a>GCC High 環境向けの Microsoft Whiteboard へのアクセスを管理する
 

@@ -9,26 +9,26 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: f20f0e918c7bb0d45a7e8319e9883373a112d7c5
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893103"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917982"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
 [Microsoft 365 Business Premium の試用版の使用を開始するか、購入したら](get-microsoft-365-business-premium.md)、次のステップはすべての設定を行うことです。使用できるオプションが複数あります。次のことを実行できます。
 
-- [最初はガイド付きセットアップ エクスペリエンス](m365bp-setup.md#guided-setup-process)を使用して基本的なセットアップと構成を行うか、
-- Microsoft クラウド ソリューション プロバイダー (CSP) などの[パートナーと連携します](m365bp-setup.md#work-with-a-microsoft-partner)。
+- 基本的な設定と構成の[ガイド付き設定エクスペリエンス](m365bp-setup.md#guided-setup-process)から始めて、[セキュリティの強化](m365bp-security-overview.md)に進むか、
+- すべての設定と構成を支援できる [Microsoft パートナーの協力](m365bp-setup.md#work-with-a-microsoft-partner)を得ます。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -41,7 +41,7 @@ ms.locfileid: "66893103"
 | ブラウザー要件 | Microsoft Edge、Safari、Chrome または Firefox。 [ブラウザー要件の詳細を参照してください](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy)。  |
 | オペレーティング システム | **Windows**:  Windows 11、Windows 10、Windows 8.1<br/>**MacOS**: 最新の 3 つのバージョンのいずれか。 <br/>現在、Microsoft 365 Business Premium およびスタンドアロン バージョンの Microsoft Defender for Business は、サーバーをサポートしていません。  |
 
-> [!TIP]
+> [!NOTE]
 > Microsoft 365、Office、システム要件の詳細については、「[Microsoft 365 および Office のリソース](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)」を参照してください。
 
 ## <a name="guided-setup-process"></a>ガイド付きセットアップ プロセス
@@ -51,27 +51,30 @@ Microsoft 365 Business Premium には、ガイド付き手順が含まれてい�
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
 > [!TIP]
-> ユーザーを追加したら、「[従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md)」 へのリンクをユーザーに提供します。 このガイドでは、サインイン、Office アプリの取得、ファイルの保存、コピー、共有について説明します。
-> [セキュリティの強化](m365bp-security-overview.md) に進むようにしてください。
+> - ユーザーを追加したら、「[従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md)」 へのリンクをユーザーに提供します。 このガイドでは、サインイン、Office アプリの取得、ファイルの保存、コピー、共有について説明します。
+> - [セキュリティの強化](m365bp-security-overview.md)に進みます。
 
 ## <a name="work-with-a-microsoft-partner"></a>Microsoft パートナーと連携する
 
 Microsoft 365 の入手と設定に Microsoft パートナーのサポートを受けることを希望する場合は、次の手順に従います。
 
-1. 「**Microsoft ソリューション プロバイダー**」ページ ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)) に移動します。
+1. [[パートナーを参照する](https://appsource.microsoft.com/marketplace/partner-dir)] に移動します。
 
-2. 検索ボックスに、自分の場所と会社の規模を入力します。
+2. [**フィルター**] ウィンドウで、次のような検索条件を指定します。
 
-3. **[製品、サービス、スキル、業界の検索]** ボックスに `Microsoft 365` と入力し、**[Go]** を選択します。
+   - 現在の場所
+   - 組織の規模
+   - **セキュリティ** や **脅威に対する保護** などの **重点領域** 
+   - **ライセンス** や **マネージド サービス (MSP)** などの **サービス**
 
-4. 結果の一覧を確認します。プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。
+   1 つ以上の条件を選択すると、リアルタイムでパートナーのリストが更新されます。
+
+3. 結果の一覧を確認します。プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。
 
 ## <a name="see-also"></a>関連項目
 
-- [パートナーまたは販売店を検索する](../admin/manage/find-your-partner-or-reseller.md)
-
+- [Microsoft のパートナーまたはリセラーを検索する](../admin/manage/find-your-partner-or-reseller.md)
 - [セルフサービス パスワードを設定する](../admin/add-users/let-users-reset-passwords.md)
-
 - [セルフサービスによるグループ管理をセットアップする](/azure/active-directory/enterprise-users/groups-self-service-management)
 
 ### <a name="next-objective"></a>次の目標

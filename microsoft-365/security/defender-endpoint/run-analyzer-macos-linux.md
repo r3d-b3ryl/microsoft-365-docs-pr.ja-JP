@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 37cea2e88afacb14285e10960fba81989ffb387f
-ms.sourcegitcommit: 1734c95ce72d9c8af695cb4b49b1e40d921a1fee
+ms.openlocfilehash: 67c7648238ecc3a46188b36f3ab61525739d53d4
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66686421"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917675"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -30,16 +30,16 @@ ms.locfileid: "66686421"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-## <a name="running-the-analyzer-through-gui-scenario"></a>GUI シナリオを使用してアナライザーを実行する
+## <a name="running-the-analyzer-through-gui-scenario"></a>GUI シナリオを使用したアナライザーの実行
 
 1. 調査する必要がある macOS または Linux コンピューターに [XMDE クライアント アナライザー](https://aka.ms/XMDEClientAnalyzer) ツールをダウンロードします。
 
    > [!NOTE]
    > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8' です。
 
-2. コンピューター上のXMDEClientAnalyzer.zipの内容を抽出します。
+2. コンピューター上の MDEClientAnalyzer.zip の内容を抽出します。
 
-3. ターミナル セッションを開き、ディレクトリを抽出された場所に変更して実行します。
+3. ターミナル セッションを開き、ディレクトリを抽出された場所に変更してから実行します。
 
    `./mde_support_tool.sh -d`
 
@@ -48,7 +48,7 @@ ms.locfileid: "66686421"
    >
    > `chmod a+x mde_support_tool.sh`
 
-## <a name="running-the-analyzer-using-a-terminal-or-ssh-scenario"></a>ターミナルまたは SSH シナリオを使用してアナライザーを実行する
+## <a name="running-the-analyzer-using-a-terminal-or-ssh-scenario"></a>ターミナルまたは SSH シナリオを使用したアナライザーの実行
 
 関連するコンピューターにターミナルまたは SSH を開き、次のコマンドを実行します。
 
@@ -69,7 +69,7 @@ ms.locfileid: "66686421"
 > 
 > - さらに、このツールでは現在、Python バージョン 3 以降をインストールする必要があります。
 >
-> - Python 3 を使用できないコンピューターまたは lxml コンポーネントをフェッチできないマシンで実行している場合は、[XMDE クライアント アナライザー バイナリ](https://aka.ms/XMDEClientAnalyzerBinary)という要件を持たないバイナリ ベースのバージョンのアナライザーをダウンロードできます。
+> - Python 3 を使用できないコンピューターまたは lxml コンポーネントをフェッチできないマシンで実行している場合は、 [XMDE クライアント アナライザー バイナリ](https://aka.ms/XMDEClientAnalyzerBinary)という要件を持たないバイナリ ベースのバージョンのアナライザーをダウンロードできます。 <br> バイナリは現在署名されていません。 MacOS でパッケージを実行できるようにするには、"spctl --add /Path/To/Application.app" という構文を使用する必要があります。
 >
 > - デバイスがプロキシの背後にある場合は、プロキシ サーバーを環境変数としてmde_support_tool.sh スクリプトに渡すだけです。 例: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
@@ -104,7 +104,7 @@ ms.locfileid: "66686421"
 
   説明: いずれかの [macOS](/windows/security/threat-protection/microsoft-defender-atp/mac-resources#collecting-diagnostic-information) で *mdatp 診断の作成* を実行するときに生成されるのと同じ診断出力
 
-  または
+  or
 
   [ Linux ](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information)
 

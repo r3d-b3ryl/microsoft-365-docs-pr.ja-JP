@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 2fd10eb56eec1c35015bff2f63163ee9394f8d42
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5f0c1f63223498995d04814434bbf4000e55d918
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771309"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917887"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Microsoft Defender for Businessを取得する
 
@@ -30,7 +31,7 @@ Microsoft Defender for Businessがない場合は、いくつかのオプショ�
 
 - [Defender for Business のスタンドアロン バージョンを試すか、購入](#try-or-buy-microsoft-defender-for-business)してください。
 - Defender for Business が含まれる[Microsoft 365 Business Premiumを取得](#get-microsoft-365-business-premium)します。
-- すべての設定と構成を支援できる [Microsoft ソリューション プロバイダーと連携](#work-with-a-microsoft-solution-provider)します。
+- すべての設定と構成を支援できる [Microsoft パートナーと連携](#work-with-a-microsoft-partner)します。
 
 試用版にサインアップした場合は、承諾メールを受け取った後、 [試用版をアクティブ化してユーザー ライセンスを割り当てて](#how-to-activate-your-trial)から、 [次の手順](#next-steps)に進むことができます。
 
@@ -56,17 +57,22 @@ Microsoft Defender for Businessがない場合は、いくつかのオプショ�
 
 3. Microsoft 365 Business Premium にサインアップすると、サインインして開始するためのリンクが記載されたメールが届きます。 [[Microsoft 365 Business Premium のセットアップ]](../../business-premium/m365bp-setup.md) に進みます。
 
-## <a name="work-with-a-microsoft-solution-provider"></a>Microsoft ソリューション プロバイダーを使用する
+## <a name="work-with-a-microsoft-partner"></a>Microsoft パートナーと連携する
 
 Microsoft には、Microsoft 365 Business PremiumやMicrosoft Defender for Businessなど、オファリングを販売する権限を持つソリューション プロバイダーの一覧があります。 お使いの地域でソリューション プロバイダーを見つけるには、次の手順に従います。
 
-1. 「**Microsoft ソリューション プロバイダー**」ページ ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)) に移動します。
- 
-2. 検索ボックスに、自分の場所と会社の規模を入力します。 
+1. [参照パートナー](https://appsource.microsoft.com/marketplace/partner-dir)に移動します。
 
-3. **[製品、サービス、スキル、業界の検索]** ボックスに `Microsoft 365` と入力し、**[Go]** を選択します。
+2. [ **フィルター** ] ウィンドウで、次のような検索条件を指定します。
 
-4. 結果の一覧を確認します。 プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。 プロバイダーは、Defender for Business へのサインアップに役立ちます。
+   - 自分の場所
+   - 組織のサイズ
+   - **セキュリティ** や **脅威の保護** などの **重点領域** 
+   - **ライセンス** や **マネージド サービス (MSP) などのサービス** 
+
+   1 つ以上の条件を選択するとすぐに、パートナーの一覧が更新されます。
+
+3. 結果の一覧を確認します。 プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。
 
 ## <a name="how-to-activate-your-trial"></a>試用版をアクティブ化する方法
 
@@ -89,7 +95,7 @@ Microsoft には、Microsoft 365 Business PremiumやMicrosoft Defender for Busin
 
 作業を開始する準備ができたら、Microsoft 365 管理センターとMicrosoft 365 Defender ポータルの 2 つのメイン ポータルを使用します。
 
-|portal  |説明  |
+|ポータル  |説明  |
 |---------|---------|
 | Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Microsoft 365 管理センターを使用して試用版をアクティブ化し、初めてサインインします。<p> また、次のMicrosoft 365 管理センターを使用します。 <ul><li>ユーザーを追加または削除します。</li><li>ユーザー ライセンスを割り当てます。</li><li>製品とサービスを表示します。</li><li>Microsoft 365 サブスクリプションのセットアップ タスクを完了します。</li></ul><p>詳細については、「[Microsoft 365 管理センターの概要](../../admin/admin-overview/admin-center-overview.md)」を参照してください。      |
 | Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))     | Microsoft 365 Defender ポータルを使用して、Defender for Business を設定および構成します。<p>Microsoft 365 Defender ポータルを使用して、次のことを行います。 <ul><li>デバイスとデバイス保護ポリシーを表示します。</li><li>検出された脅威を表示し、アクションを実行します。</li><li>セキュリティに関する推奨事項を表示し、セキュリティ設定を管理します。</li></ul><p>詳細については、「[Microsoft 365 Defender ポータルの使用を開始する](mdb-get-started.md)」を参照してください。        |
@@ -98,7 +104,7 @@ Microsoft には、Microsoft 365 Business PremiumやMicrosoft Defender for Busin
 > Microsoft 365 Business Premiumがある場合は、Microsoft Intuneもあります。 Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) を使用して、デバイスを管理し、セキュリティ設定を構成できます。 Intuneの詳細については、「[デバイスの MDM プロバイダーと MAM プロバイダー Microsoft Intune」を参照してください](/mem/intune/fundamentals/what-is-intune)。
 
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-steps"></a>次のステップ
 
 - [試用版プレイブック:Microsoft Defender for Businessを参照してください](trial-playbook-defender-business.md)。
 - [Microsoft Defender for Businessでセットアップ ウィザードを使用します](mdb-use-wizard.md)。

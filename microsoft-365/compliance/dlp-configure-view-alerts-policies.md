@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: データ損失防止ポリシーのアラートを定義および管理する方法について説明します。
-ms.openlocfilehash: 60d5188b9288b1e131e36e145f7abb98a34d5ead
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: d4e520a236c3658106a8311df0beed7f6c54ac4e
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627649"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66918026"
 ---
 # <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>データ損失防止ポリシーのアラートを構成して表示する
 
@@ -45,7 +45,7 @@ Microsoft Purview データ損失防止 (DLP) ポリシーは、機密アイテ�
     -   デバイス
 -   **高度なアラート構成オプション**: これらのオプションは、DLP ポリシー作成フローの一部です。 これらを使用して、豊富なアラート構成を作成します。 リークされたデータのイベント数やサイズに基づいて、単一イベント アラートまたは集計アラートを作成できます。
 
-## <a name="before-you-begin"></a>はじめに
+## <a name="before-you-begin"></a>始める前に
 
 開始する前に、必要な前提条件があることを確認します。
 
@@ -63,6 +63,7 @@ Teams DLP の対象となる [エンドポイント DLP](endpoint-dlp-learn-abou
 
 - **単一イベント アラート構成**: E1、F1、または G1 サブスクリプションまたは E3 または G3 サブスクリプションを持つ組織は、アクティビティが発生するたびにアラートがトリガーされる場合にのみアラート ポリシーを作成できます。
 - **集計アラート構成**: しきい値に基づいてアラート ポリシーの集計を構成するには、次のいずれかの構成が必要です。
+  - A5 サブスクリプション
   - E5 または G5 サブスクリプション
   - E1、F1、または G1 サブスクリプション、または次のいずれかの機能を含む E3 または G3 サブスクリプション。
     - Office 365 Advanced Threat Protection プラン 2
@@ -129,11 +130,11 @@ DLP アラート管理ダッシュボードを操作するには、
     |                   | 場所                      | イベントが検出されたワークロード                                      | すべてのイベント                               |
     |                   | アクティビティの時刻              | DLP 違反の原因となったユーザー アクティビティの時刻                    | すべてのイベント                               |
     |*影響を受けたエンティティ*||
-    |  | User                          | DLP 違反を引き起こしたユーザー                                          | すべてのイベント                               |
+    |  | ユーザー                          | DLP 違反を引き起こしたユーザー                                          | すべてのイベント                               |
     |                   | ホスト名                      | DLP 違反が検出されたマシンのホスト名              | デバイス イベント                           |
     |                   | IP アドレス                    | マシンの IP アドレス                                                  | デバイス イベント                           |
     |                   | ファイル パス                     | 違反に関係するファイルの絶対パス                        | SharePoint、OneDrive、および Devices イベント |
-    |                   | 電子メール受信者              | DLP ポリシーに違反した電子メールの受信者                       | Exchange イベント                          |
+    |                   | 受信者をEmailする              | DLP ポリシーに違反した電子メールの受信者                       | Exchange イベント                          |
     |                   | メールの件名                 | DLP ポリシーに違反した電子メールの件名                          | Exchange イベント                          |
     |                   | メールの添付ファイル             | DLP ポリシーに違反した電子メール内の添付ファイルの名前         | Exchange イベント                          |
     |                   | サイト所有者                    | サイト所有者の名前                                                     | SharePoint イベントと OneDrive イベント           |
