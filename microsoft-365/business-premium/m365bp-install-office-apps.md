@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium のすべてのデバイスに Office をインストールする方法。
-ms.openlocfilehash: b06edb2ee6e4427e61ba25f1149c3a2ee0fcf034
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 112e83a0473dc9c0e8019c2b0a63a04fb7b72f7c
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637801"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894583"
 ---
 # <a name="install-office-apps-on-all-devices"></a>すべてのデバイスに Office をインストールする
 
@@ -43,10 +39,10 @@ ms.locfileid: "66637801"
 
 次の操作を行ってもらいます:
 
-1. office.com にアクセスします。 仕事用アカウントでサインインする必要があるかもしれません。
+1. [https://office.com](https://office.com) に移動し、職場アカウントを使用してサインインします。
 2. **[Office のインストール]**  >  **[Microsoft 365 Apps]**  >  **[実行]** の順に選択し、**[はい]** を選択します。
-3. Office アプリがインストールされました。 このプロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
-4. Microsoft Teams をインストールするには、office.com ページに移動し、**[Teams]** を選択します。
+3. Office アプリがインストールされました。 プロセスには数分かかる場合があります。 完了したら、**[閉じる]** を選択します。
+4. Microsoft Teams をインストールするには、[office.com ページ](https://office.com) に移動し、**[Teams]** を選択します。
 5. Windows アプリを入手してから、**[実行]** を選択します。 インストールが完了すると、Teams のダイアログが表示されます。
 
 ## <a name="set-up-mobile-devices-for-microsoft-365-business-premium-users"></a>Microsoft 365 Business Premium ユーザーのモバイル デバイスをセットアップする

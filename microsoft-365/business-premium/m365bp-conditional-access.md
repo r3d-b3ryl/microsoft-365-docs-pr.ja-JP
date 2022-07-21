@@ -9,27 +9,23 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium 用に事前構成済みのセキュリティ設定を提供することで、セキュリティの既定値が ID 関連の攻撃から組織を保護する方法について説明します。
-ms.openlocfilehash: 24f4cbc8feda3689a3a6f7ee49a876cd205939f3
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: ec7e132f2f7a8a98f5950682165c05dba83cbc8f
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489170"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66892729"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>セキュリティの既定値と多要素認証
 
@@ -39,8 +35,8 @@ Microsoft 365 Business Premium は、事前構成済みのセキュリティ設�
 
 この記事では、次の操作を行う方法について説明します。
 
-- [セキュリティの既定値](#security-defaults) (ほとんどの企業に適しています)
-- [条件付きアクセス](#conditional-access) (より厳しいセキュリティ要件を持つ企業向け)
+- **[セキュリティの既定値](#security-defaults)** (ほとんどの企業に適しています)
+- **[条件付きアクセス](#conditional-access)** (より厳しいセキュリティ要件を持つ企業向け)
 
 > [!NOTE]
 > 条件付きアクセス ポリシーを使用している場合は、セキュリティの既定値を使用する前に無効にする必要があります。 セキュリティの既定値または条件付きアクセス ポリシーのいずれかを使用できますが、両方を同時に使用することはできません。

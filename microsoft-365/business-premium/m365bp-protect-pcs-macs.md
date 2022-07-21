@@ -9,34 +9,30 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.collection:
-- Adm_O365
-- M365-subscription-management
-- M365-identity-device-management
 - M365-Campaigns
 - m365solution-smb
 ms.custom:
-- Adm_O365
 - MiniMaven
-- MSB365
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium を使用して、管理されていないデバイスまたは持ち込みデバイス (BYOD) をサイバー攻撃から保護します。 Windows PC と Mac のサイバーセキュリティを設定する方法。
-ms.openlocfilehash: 033fdd41c8df09f983e1abc296bd0b33de20a61a
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: c6010661d11be2af064ddd3d5250f1cf9baacc09
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773083"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66894363"
 ---
 # <a name="protect-unmanaged-windows-pcs-and-macs-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium でアンマネージド Windows PC と Mac を保護する
 
 目標として、Microsoft Intune に登録されていないアンマネージド Windows 10 PC および Mac の保護を作成することに重点を置いて説明します。 中小企業やキャンペーンには、各自のデバイス (BYOD) を持ち込むスタッフがいる可能性があり、これらのデバイスは管理されていない可能性があります。 BYOD には、個人所有の電話、タブレット、PC が含まれます。
 
->[!NOTE]
->BYOD ユーザーは、これらのデバイスを登録し、会社のリソースへのアクセスを受け取るには、それぞれポータル サイト アプリをインストールして実行する必要があります。
+> [!NOTE]
+> BYOD ユーザーは、これらのデバイスを登録し、会社のリソースへのアクセスを受け取るには、それぞれポータル サイト アプリをインストールして実行する必要があります。
 
 すべての BYOD デバイスで最小限のセキュリティ機能が構成されるように、現場のユーザーがこれらのガイドラインに従っていることを確認することが重要です。
 
@@ -86,4 +82,4 @@ Microsoft は、信頼性の高いウイルス対策ソフトウェアを Mac �
 
 ## <a name="next-mission"></a>次のミッション
 
-ミッションが完了しました。では、[フィッシングやその他の攻撃に対するメール システムをセキュリティで保護する方法](m365bp-protect-email-overview.md)について説明します。
+ミッションが完了しました。 次に、フィッシング詐欺やその他の攻撃に対して [メールの使用をセキュリティで保護](m365bp-protect-email-overview.md) しましょう。

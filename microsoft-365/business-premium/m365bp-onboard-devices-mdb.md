@@ -9,17 +9,18 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/19/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 044f81ddaa3ddf1cb0ddaf6c96e05f9d186e36ce
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 0578aa2e672a0d485057ac983ed85d10828c952d
+ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772272"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66893977"
 ---
 # <a name="onboard-enrolled-devices-to-microsoft-defender-for-business"></a>デバイスを Microsoft Defender for Endpoint にオンボードする
 
@@ -71,13 +72,9 @@ Intune とモバイル デバイス管理を既に使用していた場合は、
 
 ## <a name="what-about-servers"></a>サーバーについて
 
-Microsoft 365 Business Premium と Defender for Business では、サーバーが既定でサポートされていません。 ただし、Windows Server や Linux Server を実行しているエンドポイントなど、サーバーをオンボードする機能はプレビュー段階になりました。 サーバーをオンボードする前に、必ず要件を確認してください。
+既定では、サーバーは Microsoft 365 Business Premium と Defender for Business のスタンドアロン バージョンではサポートされていません。 ただし、**Windows Server や Linux Server を実行しているエンドポイントなど、サーバーをオンボードする機能はプレビュー段階になりました**。 
 
-- Microsoft 365 Business Premium または Defender for Business (スタンドアロン) のいずれかの各サーバー インスタンス用のサーバー ライセンスがあります。
-- **[プレビュー機能]** 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、**[設定]** > **[エンドポイント]** > **[全般]** > **[高度な機能]****[プレビュー機能]** >  の順に移動します。
-- Windows Server の強制範囲がオンになっています。 **[設定]** > **[エンドポイント]** > **[構成管理]** > **[強制範囲]** の順に移動します。 **[MDE を使用して MEM からセキュリティ構成設定を適用する]** を選択し、  **[Windows Server]** を選択してから、**[保存]** を選択します。
-
-詳細な手順については、「[Microsoft Defender for Business にデバイスをオンボードする](../security/defender-business/mdb-onboard-devices.md)」で **サーバー** タブを参照してください。
+「[Microsoft Defender for Business サーバーの取得方法 (プレビュー)](../security/defender-business/get-defender-business-servers.md)」を参照してください。
 
 ## <a name="run-a-detection-test-on-a-windows-device"></a>新しくオンボードされた Defender for Endpoint デバイスで検出テストを実行する
 
