@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 35358ec572fbb6ed0a7256e9af6be73db04e5f59
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: a38c94ff225c0792a1e6f13d1a57a68a8c322cff
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822071"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944067"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Linux 用 Microsoft Defender for Endpoint を手動で展開する
 
@@ -79,7 +79,6 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
     |---|---|
     |RHEL/Centos/Oracle 8.0-8.5 の場合|<https://packages.microsoft.com/config/rhel/8/prod.repo>|
     |RHEL/Centos/Oracle 7.2-7.9 & Amazon Linux 2 の場合 |<https://packages.microsoft.com/config/rhel/7.2/prod.repo>|
-    <!--|RHEL/Centos 6.7-6.10 の場合|<https://packages.microsoft.com/config/rhel/6/[channel].repo>|-->
     |Fedora 33 の場合|<https://packages.microsoft.com/config/fedora/33/prod.repo>|
     |Fedora 34 の場合|<https://packages.microsoft.com/config/fedora/34/prod.repo>|
 
@@ -197,10 +196,10 @@ Linux 用 Defender for Endpoint は、次のチャネル (以下、*[チャネ�
 - Microsoft GPG 公開キーをインストールします。
 
     ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
+    curl -sSL https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/microsoft.gpg > /dev/null
     ```
 
-- https ドライバーがまだ存在しない場合は、インストールします。
+- まだインストールされていない場合は、HTTPS ドライバーをインストールします。
 
     ```bash
     sudo apt-get install apt-transport-https

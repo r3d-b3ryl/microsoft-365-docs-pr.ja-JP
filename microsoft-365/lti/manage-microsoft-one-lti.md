@@ -12,16 +12,16 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: 表示、削除、編集、トラブルシューティングなど、Microsoft LMS Gateway の主要な管理タスクを実行する方法について説明します。
-ms.openlocfilehash: 769670a710e24d89dd3e201ac433ac8ccbcffd1a
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 77f89927a7beb7cd045c2325bd805efdf45996a0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65414796"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944111"
 ---
 # <a name="manage-microsoft-lms-gateway-for-any-lms"></a>任意の LMS の Microsoft LMS ゲートウェイを管理する
 
-Microsoft LMS Gateway は、Canvas、Blackboard、Moodle を含む複数の LMS と統合されています。
+Microsoft LMS Gateway は、Canvas、Blackboard、Moodle、Brightspace などの複数の LMS と統合されています。
 
 この記事では、IT 管理者が Microsoft LMS Gateway の主要な管理タスクに関する手順を説明します。
 
@@ -36,7 +36,7 @@ Microsoft LMS Gateway は、Canvas、Blackboard、Moodle を含む複数の LMS 
 LTI 登録の詳細を表示する場合は、次の手順に従います。
 
 1. [Microsoft LMS ゲートウェイ](https://lti.microsoft.com/)にアクセスします。
-2. Microsoft 365管理者アカウントでサインインします。
+2. Microsoft 365 管理者アカウントでサインインします。
 3. 登録の一覧で、表示する LTI 登録を見つけます。
 4. リストの横にある **目のアイコン** を選択します。
 5. 登録の詳細パネルが開きます。
@@ -46,7 +46,7 @@ LTI 登録の詳細を表示する場合は、次の手順に従います。
 LTI 登録を削除する場合は、次の手順に従います。
 
 1. [Microsoft LMS ゲートウェイ](https://lti.microsoft.com/)にアクセスします。
-2. Microsoft 365管理者アカウントでサインインします。
+2. Microsoft 365 管理者アカウントでサインインします。
 3. 登録リストで、削除する LTI 登録を見つけます。
 4. リストの横にある **ごみ箱アイコン** を選択します。
 5. 確認ダイアログ ボックスで、[ **削除** ] を選択して削除を確認します。
@@ -126,5 +126,5 @@ LTI 登録ポータルの問題を報告したり、フィードバックを送�
 
 1. LTI 登録ポータルで、ページ ヘッダーの **疑問符アイコン** を選択します。
 2. ドロップダウンで、[ **問題の報告**] を選択します。
-3. Microsoft Education サポート ページが開きます。 Microsoft 365資格情報を使用してサインインします。
+3. Microsoft Education サポート ページが開きます。 Microsoft 365 資格情報でサインインします。
 4. フォームに入力して送信します。
