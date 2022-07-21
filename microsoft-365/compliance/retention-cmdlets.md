@@ -14,13 +14,13 @@ ms.collection:
 - M365-security-compliance
 - SPO_Content
 - m365initiative-compliance
-description: 大規模な構成、自動化、または高度な構成シナリオに必要になる可能性があるリテンション期間用の PowerShell コマンドレットを特定します。
-ms.openlocfilehash: 23dda0c7e5cdc2ce52c2dfca8e5ab575d5653b99
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: 大規模な構成、自動化、または高度な構成シナリオに必要になる可能性がある Microsoft 365 リテンション期間の PowerShell コマンドレットを特定します。
+ms.openlocfilehash: bdbda5de65421fa73f45a278e2346777835062d9
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625987"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66941994"
 ---
 # <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>アイテム保持ポリシーと保持ラベルの PowerShell コマンドレット
 

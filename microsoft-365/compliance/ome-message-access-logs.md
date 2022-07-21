@@ -9,21 +9,21 @@ audience: Admin
 ms.topic: conceptual
 ms.service: O365-seccomp
 ms.localizationpriority: medium
-ms.date: 05/12/2022
+ms.date: 07/21/2022
 ms.collection:
 - Strat_O365_IP
 - M365-security-compliance
 search.appverid:
 - MET150
 description: アクセス ログは、暗号化されたメッセージ ポータルから取得された暗号化されたメッセージに対して使用できます。
-ms.openlocfilehash: 50656d1695d8fc3d6e81de6afc03b3f4e3c5ccee
-ms.sourcegitcommit: 54bc063818779e351ca24f04ba571f762d85751d
+ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/13/2022
-ms.locfileid: "65393226"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942632"
 ---
-# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption-preview"></a>Microsoft Purview高度なメッセージ暗号化による暗号化されたメッセージ ポータルアクティビティ ログ (プレビュー)
+# <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Advanced Message Encryption による暗号化されたメッセージ ポータル アクティビティ ログ
 
 アクセス ログは、暗号化されたメッセージ ポータルを介して暗号化されたメッセージに対して使用できます。これにより、組織は、メッセージがいつ読み取られ、外部の受信者によって転送されたかを判断できます。 外部受信者がログを使用できるようにするには、ポータル エクスペリエンスを適用する外部受信者に組織から送信された保護された電子メールにカスタム ブランド テンプレートを適用する必要があります。 「[暗号化されたメッセージに組織のブランドを追加する](add-your-organization-brand-to-encrypted-messages.md)」を参照してください。
 

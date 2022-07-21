@@ -1,7 +1,7 @@
 ---
 title: 組織の Microsoft Whiteboard へのアクセスを管理する
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft 365 管理センターで組織の Microsoft Whiteboard を設定する方法について説明します。
-ms.openlocfilehash: 3c75bbfe6b2babf130f8980fe627ec05a8b431e3
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: cbffaaf0573ce5763c200b96630af3fbb2f73218
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917653"
+ms.locfileid: "66942938"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>組織の Microsoft Whiteboard へのアクセスを管理する
 

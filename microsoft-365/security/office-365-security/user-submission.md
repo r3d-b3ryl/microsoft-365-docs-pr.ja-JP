@@ -18,12 +18,12 @@ ms.custom: ''
 description: ユーザーによって報告されたスパムとフィッシングメールを収集するようにメールボックスを構成する方法。 ユーザーがスパム、フィッシング、悪意のある、または悪意のないものとして報告するメッセージのメールボックスを作成します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40a52e5e3db8a1e11087d4a8beb33b9ba1f3a3aa
-ms.sourcegitcommit: 08ad8636b029ffd19130e2da0de72f37f67e412e
+ms.openlocfilehash: 02356f03f60e2bfc0c6c7de992fdc0c4331f3a4c
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66885534"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942518"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーから報告されたメッセージの設定
 
@@ -40,7 +40,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、ユ�
 
 - [レポート メッセージ アドイン](enable-the-report-message-add-in.md)
 - [レポート フィッシング アドイン](enable-the-report-phish-add-in.md)
-- [サード パーティのレポート ツール](#third-party-reporting-tools)
+- [サード パーティのレポート ツール](user-submission.md#third-party-email-reporting-tools)
 
 ユーザーから報告されたメッセージを Microsoft に直接送信するのではなく、カスタム メールボックスに配信すると、管理者は、管理送信を使用して、選択的かつ手動で Microsoft に電子メール メッセージを報告[できます](admin-submission.md)。 *これらの設定は、以前はユーザー申請ポリシーと呼ばれていた*。
 

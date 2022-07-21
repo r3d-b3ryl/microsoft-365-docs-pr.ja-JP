@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teamsクラスと会議を Open LMS と統合する
+title: Microsoft Teams のクラスと会議を Open LMS と統合する
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -11,38 +11,38 @@ f1.keywords:
 - CSH
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
-description: Microsoft OneDrive ラーニング Tools 相互運用性 for Open LMS を使用して、Teams クラスと会議を作成および管理します。
-ms.openlocfilehash: 108852bf32e63e7d5b8722ef1ee178abf7ea85c3
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+description: Microsoft Learning Tools 相互運用性 for Open LMS を使用して Teams のクラスと会議を作成および管理します。
+ms.openlocfilehash: 25babbafb4a8640b389fd655ddf63b23665d8c9d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057751"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943246"
 ---
-# <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Open LMS 内でMicrosoft Teamsクラスと会議を統合する
+# <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Open LMS 内で Microsoft Teams のクラスと会議を統合する
 
-このガイドでは、open LMS で Teams クラスと Teams Meetings LTI アプリの両方を登録するための IT 管理者の手順について説明します。
+このガイドでは、Teams クラスと Teams Meetings LTI アプリの両方を Open LMS に登録するための IT 管理者の手順について説明します。
 
 任意の LMS のすべての LTI アプリの管理の詳細については、「Microsoft [LMS Gateway for any LMS の管理」を](manage-microsoft-one-lti.md)参照してください。
 
 ## <a name="prerequisites-before-set-up"></a>セットアップ前の前提条件
 
-Open LMS とTeamsの統合が正しく機能するには、Open LMS とTeamsを設定して相互に通信する必要があります。
+Open LMS と Teams の統合が正しく機能するには、Open LMS と Teams が相互に通信するように設定する必要があります。
 
 [Moodle プラグインをインストールして構成する手順に](open-lms-plugin-configuration.md)従います。
 
-## <a name="register-microsoft-teams-lti-for-use-in-open-lms"></a>Open LMS で使用するために LTI Microsoft Teams登録する
+## <a name="register-microsoft-teams-lti-for-use-in-open-lms"></a>Open LMS で使用するために Microsoft Teams LTI を登録する
 
 > [!IMPORTANT]
-> この統合を実行するユーザーは、Open LMS 管理者とMicrosoft 365テナント管理者である必要があります。
+> この統合を実行するユーザーは、Open LMS 管理者と Microsoft 365 テナント管理者である必要があります。
 
 1. [Microsoft LMS Gateway](https://lti.microsoft.com/) にアクセスし、[**登録ポータルに移動**] ボタンを選択します。
 
-2. Microsoft 365管理者アカウントでサインインします。
+2. Microsoft 365 管理者アカウントでサインインします。
 
 3. サインイン後、[ **新しい登録の追加**] を選択します。
 
-4. Teams **会議 LTI** または **Teams クラス LTI** のいずれかを選択して登録し、[**次へ**] を選択します。
+4. 登録 **する Teams Meetings LTI** または **Teams クラス LTI** のいずれかを選択し、[ **次へ**] を選択します。
 
 5. 簡単に識別できる **登録** 名を入力し、 **LMS プラットフォームとして [OPEN LMS** ] を選択します。 **[次へ]** を選択します。
 
@@ -54,14 +54,14 @@ Open LMS とTeamsの統合が正しく機能するには、Open LMS とTeamsを�
 
 9. [ **ツールの管理** ] ページ **で、手動でツールを構成するを** 選択します。
 
-10. [**ツールの設定]** で、[**Microsoft Teams クラス**] などの **ツール名** を入力します。 **LTI バージョン** の場合は、**LTI 1.3** を選択します。 **[公開キーの種類**] で、[**キーセット URL**] を選択します。
+10. [**ツールの設定]** で、**Microsoft Teams クラス** などの **ツール名** を入力します。 **LTI バージョン** の場合は、**LTI 1.3** を選択します。 **[公開キーの種類**] で、[**キーセット URL**] を選択します。
 
 11. 次に、 **Microsoft LTI キー** から対応するツール入力にキーをコピーします。
     1. Microsoft の **ターゲット リンク URL** キーは Open LMS の **ツール URL** フィールドに入ります。
     1. Microsoft の **Open ID 接続 URL** キーは Open LMS の **[ログイン URL の開始]** フィールドに移動します。
     1. Microsoft の **リダイレクト URL** キーは Open LMS の **リダイレクト URI** フィールドに入ります。
 
-12. [**変更の保存**] を選択します。
+12. **[変更の保存]** を選択します。
 
 13. 新しいツールが、[OPEN LMS の **[ツールの管理**] ページの [**ツール**] セクションに表示されます。 リスト アイコンを選択すると、 **ツールの構成の詳細が** 表示されます。
 
@@ -69,18 +69,18 @@ Open LMS とTeamsの統合が正しく機能するには、Open LMS とTeamsを�
 
 15. Open LMS の **ツール構成の詳細** の値をコピーして、Microsoft の **LMS 提供の登録キー** ステップに貼り付けます。
 
-  次のように値を貼り付けます。
+    次のように値を貼り付けます。
 
-  | Open LMS で | Microsoft LTI 登録ポータルで |
-  | --------- | ------------------------------------ |
-  | プラットフォーム ID | 発行者 ID URL |
-  | クライアント ID | クライアント ID |
-  | デプロイ ID | デプロイ ID |
-  | 公開キーセットの URL | キーセット URL |
-  | アクセス トークン URL | アクセス トークン URL |
-  | 認証要求 URL | プラットフォーム認証 URL |
+    | Open LMS で | Microsoft LTI 登録ポータルで |
+    | --------- | ------------------------------------ |
+    | プラットフォーム ID | 発行者 ID URL |
+    | クライアント ID | クライアント ID |
+    | デプロイ ID | デプロイ ID |
+    | 公開キーセットの URL | キーセット URL |
+    | アクセス トークン URL | アクセス トークン URL |
+    | 認証要求 URL | プラットフォーム認証 URL |
 
-  **[次へ]** を選択します。
+    **[次へ]** を選択します。
 
 16. [ **校閲と追加] ページを確認** します。 エラーがない場合は、[ **保存して終了]** を選択します。 登録が成功したことを示すメッセージが表示されます。
 
@@ -90,9 +90,9 @@ Teams クラスまたは Teams Meetings LTI アプリの登録が完了しまし
 
 ### <a name="add-teams-lti-apps-to-educators-open-lms-courses"></a>Teams LTI アプリを教育者の Open LMS コースに追加する
 
-LTI アプリTeams登録した後、教育者は Teams クラス アプリと Teams Meetings アプリを Open LMS コースに追加できます。
+Teams LTI アプリを登録した後、教師は Teams クラス アプリと Teams Meetings アプリを Open LMS コースに追加できます。
 
-- [Teams クラス アプリの追加に関する教育者の指示](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-ac6a1e34-32f7-45e6-b83e-094185a1e78a)。
+- [Teams クラス アプリの追加に関する教育者の手順](https://support.microsoft.com/topic/use-microsoft-teams-classes-in-your-lms-ac6a1e34-32f7-45e6-b83e-094185a1e78a)。
 - [Teams Meetings アプリの追加に関する教育者の指示](https://support.microsoft.com/topic/use-microsoft-teams-meetings-in-your-lms-11b6095d-f90b-42b9-ab77-4dcff2bb3b76)。
 
 ## <a name="technical-requirements-to-launch-teams-lti-apps"></a>Teams LTI アプリを起動するための技術的要件
@@ -115,9 +115,9 @@ Open LMS 内で Teams LTI アプリを起動するには、いくつかの技術
 - IT 管理者がアプリを登録していない場合は、LTI アプリ登録ポータルにアクセスして LTI アプリを登録します。
   - デスクトップ デバイスで登録が完了している必要があります。
 - Microsoft Edge、Google Chrome、Safari、Mozilla Firefox の最新バージョンをダウンロードします。
-- [Open LMS でクラスと会議用の LTI アプリをTeamsします](#add-teams-lti-apps-to-educators-open-lms-courses)。
+- [Open LMS のクラスと会議用の Teams LTI アプリ](#add-teams-lti-apps-to-educators-open-lms-courses)。
 
 ### <a name="student-technical-requirements"></a>学生の技術要件
 
-- Open LMS でクラスと会議用の LTI アプリをTeamsします。
-  - 学生は、Teams クラスまたは Meetings LTI アプリを追加するためのアクションを実行する必要はありません。
+- Open LMS のクラスと会議用の Teams LTI アプリ。
+  - 学生は、Teams クラスまたは会議 LTI アプリを追加するためのアクションを実行する必要はありません。

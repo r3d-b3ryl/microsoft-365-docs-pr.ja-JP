@@ -1,4 +1,4 @@
-- name: LTI のMicrosoft 365
+- name: Microsoft 365 LTI
   href: index.md
 - name: Microsoft LMS ゲートウェイ管理
   href: manage-microsoft-one-lti.md
@@ -6,27 +6,31 @@
   href: browser-cookies.md
 - name: キャンバスの統合
   items:
-    - name: キャンバスMicrosoft OneDrive LTI を使用する
+    - name: キャンバスで Microsoft OneDrive LTI を使用する
       href: onedrive-lti.md
-    - name: Canvas でMicrosoft Teams クラスを使用する
+    - name: Canvas で Microsoft Teams クラスを使用する
       href: teams-classes-with-canvas.md
-    - name: キャンバスでMicrosoft Teams会議を使用する
+    - name: Canvas で Microsoft Teams 会議を使用する
       href: teams-meetings-with-canvas.md
 - name: Blackboard の統合
   items:
-    - name: Blackboard で LTI Microsoft OneDriveを使用する
+    - name: Blackboard で Microsoft OneDrive LTI を使用する
       href: onedrive-lti-blackboard.md
-    - name: Blackboard Learn Ultra でMicrosoft Teams クラスを使用する
+    - name: Blackboard Learn Ultra で Microsoft Teams クラスを使用する
       href: teams-classes-with-blackboard.md
 - name: Moodle の統合
   items:
     - name: Moodle プラグインを設定して構成する
       href: moodle-plugin-configuration.md
-    - name: Moodle でMicrosoft Teamsクラスと会議を使用する
+    - name: Moodle で Microsoft Teams のクラスと会議を使用する
       href: teams-classes-meetings-with-moodle.md
 - name: LMS 統合を開く
   items:
     - name: Open LMS 用の Moodle プラグインを設定して構成する
       href: open-lms-plugin-configuration.md
-    - name: Open LMS でMicrosoft Teamsクラスと会議を使用する
+    - name: Open LMS で Microsoft Teams のクラスと会議を使用する
       href: open-lms-teams-classes-and-meetings.md
+- name: Desire2Learn Brightspace の統合
+  items:
+    - name: Brightspace で Microsoft Teams のクラスと会議を使用する
+      href: teams-classes-meetings-with-brightspace.md

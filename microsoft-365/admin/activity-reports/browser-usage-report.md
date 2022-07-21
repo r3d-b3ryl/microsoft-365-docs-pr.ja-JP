@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 管理センターの Microsoft 365 レポート ダッシュボードを使用して、Microsoft ブラウザーの使用状況レポートを取得する方法について説明します。
-ms.openlocfilehash: bd247e839c69726039fb80531444eb7b4b650346
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66662159"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942059"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>管理センターの Microsoft 365 レポート - Microsoft ブラウザーの使用状況
 
@@ -51,7 +51,7 @@ Microsoft 365 レポート ダッシュボードには、組織内の製品全�
 |アイテム|説明|
 |:-----|:-----|
 |**Username** | Microsoft Edge を使用して Microsoft 365 サービスに接続したユーザーの電子メール アドレス。|
-| **使用済み Microsoft Edge**| Microsoft 365 サービス ユーザーが Microsoft Edge に接続している場合、DDisplays は目盛りを付けます。|
+| **使用済み Microsoft Edge**| Microsoft 365 サービス ユーザーが Microsoft Edge に接続している場合は、目盛りを表示します。|
 
 [ **列の選択]** アイコンを選択して、レポートの列を追加または削除します。
 

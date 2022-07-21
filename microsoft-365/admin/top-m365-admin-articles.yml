@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
-summary: 最終更新日 2022 年 6 月 9 日。 管理者に最も人気のあるヘルプ記事はどれですか? 毎月更新された 20 件の最も閲覧回数の多いヘルプ記事のこのコレクションを確認してください。
+summary: 最終更新日:2022 年 7 月 21 日。 管理者に最も人気のあるヘルプ記事はどれですか? 毎月更新された 20 件の最も閲覧回数の多いヘルプ記事のこのコレクションを確認してください。
 metadata:
   title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
   description: 毎月更新される、管理者に最も人気のあるヘルプ記事上位 20 件のこのコレクションをご覧ください。
@@ -12,12 +12,12 @@ metadata:
   ms.localizationpriority: high
   ms.custom: AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 5697a2c7e3edbe7669859e4a01c45c99ed4b13b2
-  ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+  ms.openlocfilehash: 542fb6de2c2a56ef112fa135d4dd793095feb5b3
+  ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 06/10/2022
-  ms.locfileid: "66013312"
+  ms.lasthandoff: 07/21/2022
+  ms.locfileid: "66942408"
 landingContent:
 - title: データとサービスを管理する
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
       url: add-users/about-admin-roles.md
     - text: Microsoft 365 管理センターの概要
       url: admin-overview/admin-center-overview.md
-    - text: 使用状況レポートをMicrosoft 365する
+    - text: Microsoft 365 使用状況レポート
       url: activity-reports/activity-reports.md
     - text: ビジネス向け Microsoft 365 のサポートを受ける
       url: get-help-support.md
@@ -57,7 +57,7 @@ landingContent:
       url: ../commerce/billing-and-payments/manage-payment-methods.md
     - text: 課金内容または請求書を表示する
       url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
-    - text: ビジネス向けのMicrosoft 365を試すか購入する
+    - text: Microsoft 365 for Business を試用または購入する
       url: ../commerce/try-or-buy-microsoft-365.md
 - title: メール
   linkLists:
@@ -67,11 +67,11 @@ landingContent:
       url: email/about-shared-mailboxes.md
   - linkListType: how-to-guide
     links:
-    - text: Microsoft 365でメール転送を構成する
+    - text: Microsoft 365 でメール転送を構成する
       url: email/configure-email-forwarding.md
     - text: 共有メールボックスを作成する
       url: email/create-a-shared-mailbox.md
-    - text: 別のMicrosoft 365 ユーザーにメールボックスのアクセス許可を付与する
+    - text: 別の Microsoft 365 ユーザーにメールボックスのアクセス許可を付与する
       url: add-users/give-mailbox-permissions-to-another-user.md
     - text: ユーザー名とメール アドレスを変更する
       url: add-users/change-a-user-name-and-email-address.md
@@ -83,5 +83,5 @@ landingContent:
       url: add-users/add-users.md
     - text: Microsoft 365 ライセンスをユーザーに割り当てる
       url: manage/assign-licenses-to-users.md
-    - text: ユーザーが QR コードを使用してモバイル アプリOutlookにサインインできるようにする
+    - text: ユーザーが QR コードを使用して Outlook モバイル アプリにサインインできるようにする
       url: manage/use-qr-code-download-outlook.md

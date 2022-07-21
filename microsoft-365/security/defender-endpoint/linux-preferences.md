@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 23d216e4fb831ef6425bff93bf3fc0063a263852
-ms.sourcegitcommit: 66228a5506fdceb4cbf0d55b9de3f2943740134f
+ms.openlocfilehash: d810ac3a8a314307d2526397bf34200ef0eeeeda
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66089718"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943576"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する
 
@@ -77,7 +77,7 @@ ms.locfileid: "66089718"
 |**キー**|enforcementLevel|
 |**データ型**|String|
 |**指定可能な値**|real_time (既定) <p> on_demand <p> パッシブ|
-|**Comments**|Defender for Endpoint バージョン 101.10.72 以降で使用できます。|
+|**コメント**|Defender for Endpoint バージョン 101.10.72 以降で使用できます。|
 
 #### <a name="enabledisable-behavior-monitoring"></a>動作監視を有効/無効にする 
 
@@ -92,7 +92,18 @@ ms.locfileid: "66089718"
 |**キー**|behaviorMonitoring|
 |**データ型**|String|
 |**指定可能な値**|無効 (既定値) <p> enabled|
-|**Comments**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
+|**コメント**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
+
+#### <a name="configure-file-hash-computation-feature"></a>ファイル ハッシュ計算機能を構成する
+
+ファイル ハッシュの計算機能を有効または無効にします。 この機能を有効にすると、Defender for Endpoint はスキャンするファイルのハッシュを計算します。 この機能を有効にすると、デバイスのパフォーマンスに影響する可能性があることに注意してください。 詳細については、「 [ファイルのインジケーターを作成する」を](indicator-file.md)参照してください。
+
+|説明|値|
+|---|---|
+|**キー**|enableFileHashComputation|
+|**データ型**|String|
+|**指定可能な値**|無効 (既定値) <p> enabled|
+|**コメント**|Defender for Endpoint バージョン 101.73.77 以降で使用できます。|
   
 #### <a name="run-a-scan-after-definitions-are-updated"></a>定義が更新された後にスキャンを実行する
 
@@ -101,7 +112,7 @@ ms.locfileid: "66089718"
 |説明|値|
 |---|---|
 |**キー**|scanAfterDefinitionUpdate|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 |**コメント**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
 
@@ -136,7 +147,7 @@ ms.locfileid: "66089718"
 |**キー**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定値) <p> admin_only|
-|**Comments**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
+|**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
 
 #### <a name="scan-exclusions"></a>除外をスキャンする
 
@@ -147,7 +158,7 @@ ms.locfileid: "66089718"
 |---|---|
 |**キー**|除外|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
 ##### <a name="type-of-exclusion"></a>除外の種類
 
@@ -165,7 +176,7 @@ ms.locfileid: "66089718"
 
 |説明|値|
 |---|---|
-|**キー**|パス|
+|**キー**|path|
 |**データ型**|String|
 |**指定可能な値**|有効なパス|
 |**コメント**|*$type**が excludedPath* の場合にのみ適用されます|
@@ -179,7 +190,7 @@ ms.locfileid: "66089718"
 |**キー**|isDirectory|
 |**データ型**|Boolean|
 |**指定可能な値**|false (既定) <p> true|
-|**Comments**|*$type**が excludedPath* の場合にのみ適用されます|
+|**コメント**|*$type**が excludedPath* の場合にのみ適用されます|
 
 ##### <a name="file-extension-excluded-from-the-scan"></a>スキャンから除外されたファイル拡張子
 
@@ -190,7 +201,7 @@ ms.locfileid: "66089718"
 |**キー**|拡張子|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
-|**Comments**|*$type**が除外されている場合にのみ適用されるFileExtension*|
+|**コメント**|*$type**が除外されている場合にのみ適用されるFileExtension*|
 
 ##### <a name="process-excluded-from-the-scan"></a>スキャンから除外されたプロセス*
 
@@ -231,7 +242,7 @@ ms.locfileid: "66089718"
 |---|---|
 |**キー**|threatTypeSettings|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
 ##### <a name="threat-type"></a>脅威の種類
 
@@ -277,7 +288,7 @@ ms.locfileid: "66089718"
 |**キー**|scanResultsRetentionDays|
 |**データ型**|String|
 |**指定可能な値**|90 (既定値)。 使用できる値は 1 日から 180 日です。|
-|**Comments**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
+|**コメント**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>ウイルス対策スキャン履歴内のアイテムの最大数
 
@@ -288,7 +299,7 @@ ms.locfileid: "66089718"
 |**キー**|scanHistoryMaximumItems|
 |**データ型**|String|
 |**指定可能な値**|10000 (既定値)。 使用できる値は、5,000 項目から 15,000 項目です。|
-|**Comments**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
+|**コメント**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
 
 ### <a name="cloud-delivered-protection-preferences"></a>クラウド配信の保護の基本設定
 
@@ -298,7 +309,7 @@ ms.locfileid: "66089718"
 |---|---|
 |**キー**|cloudService|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>クラウド配信保護を有効/無効にする
 
@@ -307,7 +318,7 @@ ms.locfileid: "66089718"
 |説明|値|
 |---|---|
 |**キー**|enabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 
 #### <a name="diagnostic-collection-level"></a>診断収集のレベル
@@ -320,13 +331,30 @@ ms.locfileid: "66089718"
 |**データ型**|String|
 |**指定可能な値**|省略可能 <p> 必須 (既定値)|
 |
+
+#### <a name="configure-cloud-block-level"></a>クラウド ブロック レベルを構成する
+
+この設定は、疑わしいファイルをブロックおよびスキャンする Defender for Endpoint の攻撃性を決定します。 この設定がオンの場合、Defender for Endpoint は、ブロックおよびスキャンする疑わしいファイルを識別するときに、より積極的になります。それ以外の場合は、攻撃性が低くなり、より少ない頻度でブロックおよびスキャンされます。 クラウド ブロック レベルを設定する場合は、次の 5 つの値があります。
+
+- 標準 (`normal`): 既定のブロック レベル。
+- 中 (`moderate`): 高信頼度検出に対してのみ判定を行います。
+- 高 (`high`): パフォーマンスを最適化しながら不明なファイルを積極的にブロックします (有害でないファイルをブロックする可能性が高くなります)。
+- High Plus (`high_plus`): 不明なファイルを積極的にブロックし、追加の保護手段を適用します (クライアント デバイスのパフォーマンスに影響を与える可能性があります)。
+- ゼロトレランス (`zero_tolerance`): 不明なプログラムをすべてブロックします。
+
+|説明|値|
+|---|---|
+|**キー**|cloudBlockLevel|
+|**データ型**|String|
+|**指定可能な値**|normal (既定値) <p> 中程 度 <p> 高 <p> high_plus <p> zero_tolerance|
+|**コメント**|Defender for Endpoint バージョン 101.56.62 以降で使用できます。|
   
 #### <a name="enable--disable-automatic-sample-submissions"></a>サンプルの自動送信を有効または無効にする
 
 疑わしいサンプル (脅威を含む可能性が高い) を Microsoft に送信するかどうかを決定します。 サンプルの提出を制御するための 3 つのレベルがあります。
 
 - **なし**: 疑わしいサンプルは Microsoft に送信されません。
-- **セーフ**: 個人を特定できる情報 (PII) を含まない疑わしいサンプルのみが自動的に送信されます。 これは、この設定の既定値です。
+- **安全**: 個人を特定できる情報 (PII) を含まない疑わしいサンプルのみが自動的に送信されます。 これは、この設定の既定値です。
 - **すべて**: 疑わしいサンプルはすべて Microsoft に送信されます。
 
 |説明|値|
@@ -342,7 +370,7 @@ ms.locfileid: "66089718"
 |説明|値|
 |---|---|
 |**キー**|automaticDefinitionUpdateEnabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 
 ## <a name="recommended-configuration-profile"></a>推奨される構成プロファイル

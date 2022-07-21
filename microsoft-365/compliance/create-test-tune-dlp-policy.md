@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: この記事では、組織のニーズに応じて DLP ポリシーを作成、テスト、調整する方法について説明します。
-ms.openlocfilehash: dff47d07a582be807d877471fb7621960b776f24
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 231c055fb9a67b921e3e6796f82e5c1a8161593d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66624733"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943312"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>DLP ポリシーの作成、テスト、調整
 
@@ -204,7 +204,7 @@ DLP ポリシー テンプレートは、すぐには完成しません。 自�
 
 これが誤検知の例です。 このメールは無害です。 ユーザーは自分の携帯電話番号を誰かに提供し、メールに署名を含めています。
 
-![誤検知情報を示す電子メール。](../media/DLP-create-test-tune-false-positive-email.png)
+![誤検知情報を示すEmail。](../media/DLP-create-test-tune-false-positive-email.png)
  
 しかしユーザーには、メールに機密情報、具体的にはオーストラリアの運転免許証番号が含まれていることを警告するポリシー ヒントが表示されます。
 
@@ -225,7 +225,7 @@ DLP ポリシー テンプレートは、すぐには完成しません。 自�
 
 インスタンス数の変更に加えて、一致の精度 (または信頼レベル) を調整することもできます。 機密情報の種類に複数のパターンがある場合、ルールが特定のパターンのみに一致するように、ルールの一致の精度を調整できます。 たとえば、誤検出を減らすためにルールの一致の精度を設定して、最も高い信頼レベルを持つパターンのみと一致するようにできます。 信頼レベルの詳細については、「信頼レベル [を使用してルールを調整する方法」を参照してください](data-loss-prevention-policies.md#match-accuracy)。
 
-最後に、もう少し高度な情報を取得する場合は、任意の機密情報の種類をカスタマイズできます。たとえば、 [オーストラリアの運転免許証番号](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)のキーワードの一覧から "シドニー NSW" を削除して、上記でトリガーされた誤検知を排除できます。 XML と PowerShell を使用してこれを行う方法については、 [組み込みの機密情報の種類のカスタマイズ](customize-a-built-in-sensitive-information-type.md)に関するページを参照してください。
+最後に、もう少し高度な情報を取得する場合は、任意の機密情報の種類をカスタマイズできます。たとえば、 [オーストラリアのドライバー ライセンス番号](sit-defn-australia-drivers-license-number.md)のキーワードの一覧から "シドニー NSW" を削除して、上記でトリガーされた誤検知を排除できます。 XML と PowerShell を使用してこれを行う方法については、 [組み込みの機密情報の種類のカスタマイズ](customize-a-built-in-sensitive-information-type.md)に関するページを参照してください。
 
 ## <a name="turn-on-a-dlp-policy"></a>DLP ポリシーを有効にする
 

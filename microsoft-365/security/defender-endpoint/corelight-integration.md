@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629d475c160d5836d155ca0374630ad64b0928b4
-ms.sourcegitcommit: 3226bdf213b290ec5262670873c3a75f17b66ddd
+ms.openlocfilehash: 1a9e899c1f3292dd0a665c7cbf7ccfd5e561c2aa
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/12/2022
-ms.locfileid: "65372023"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943298"
 ---
 # <a name="enable-corelight-data-integration"></a>Corelight データ統合
 
@@ -40,6 +40,13 @@ Microsoft は、業界をリードするオープン ネットワーク検出お
 
 このデータ ソースを有効にすると、Corelight ネットワーク アプライアンスのすべてのイベントがMicrosoft 365 Defenderに送信されます。 これらのアクティビティは、Microsoft Defender for Endpointデバイス インベントリで利用できるアンマネージド デバイスタイムラインで確認できます。 詳細については、「 [デバイスの検出」を](device-discovery.md)参照してください。
 
+## <a name="prerequisites"></a>前提条件
+
+1. Corelight データ統合を設定するには、ユーザーに次のロールが必要です。
+   - Azure Active Directory のテナント グローバル管理者
+   - Microsoft Defender for IoT 統合に使用される Azure サブスクリプションのセキュリティ管理者
+2. オンボードされた Defender for IoT プラン。 詳細については、「Microsoft Defender for Endpointを[使用した Microsoft Defender for IoT のオンボード](enable-microsoft-defender-for-iot-integration.md)」を参照してください。
+
 ## <a name="enabling-the-corelight-integration"></a>Corelight 統合を有効にする
 
 Corelight 統合を有効にするには、次の手順を実行する必要があります。
@@ -50,9 +57,9 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 
 ### <a name="step-1-turn-on-corelight-as-a-data-source"></a>手順 1: Corelight をデータ ソースとして有効にする
 
-1. ポータルの [https://security.microsoft.com](https://security.microsoft.com/)ナビゲーション ウィンドウで、**デバイス検出** \> **データ ソース****設定**\>選択します。
+1. ポータルの [https://security.microsoft.com](https://security.microsoft.com/)ナビゲーション ウィンドウで、[**デバイス検出** \> **データ ソース** の **設定]** \> を選択します。
 
-   :::image type="content" source="images/enable-corelight.png" alt-text="Microsoft 365 Defender ポータルの [データ ソース] ページ" lightbox="images/enable-corelight.png":::
+   :::image type="content" source="../../media/defender-endpoint/enable-corelight.png" alt-text="Microsoft 365 Defender ポータルの [データ ソース] ページ" lightbox="../../media/defender-endpoint/enable-corelight.png":::
 
 2. [ **Corelight データを M365D に送信** ] を選択し、[ **保存]** を選択します。
 
@@ -62,7 +69,7 @@ Corelight 統合を有効にするには、次の手順を実行する必要が�
 > 組織内のリソースにアクセスするためのアクセス許可を Corelight に付与するには、グローバル管理者である必要があります。
 
 1. テナント グローバル管理者として、この [リンク](<https://login.microsoftonline.com/common/oauth2/authorize?prompt=consent&client_id=d8be544e-9d1a-4825-a5cb-fb447457f692&response_type=code&sso_reload=true>) にアクセスしてアクセス許可を付与します。
-2. ポータルに移動し [https://security.microsoft.com](https://security.microsoft.com/)、**設定 Microsoft 365 Defender**\>を選択し、**テナント ID** をメモします。 Corelight アプライアンスを構成するときは、この情報が必要です。
+2. ポータルに移動し [https://security.microsoft.com](https://security.microsoft.com/)、[**設定]** \> **Microsoft 365 Defender** を選択し、**テナント ID** を書き留めます。 Corelight アプライアンスを構成するときは、この情報が必要です。
 
 ### <a name="step-3-configure-your-corelight-appliance-to-send-data-to-microsoft-365-defender"></a>手順 3: データをMicrosoft 365 Defenderに送信するように Corelight アプライアンスを構成する
 

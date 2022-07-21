@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: e2c90fce172a1b7f9d3cbf9a16b105e56402ec49
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: f49132b67f51872cf9b5f07e6cca4c659d955b80
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882631"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943488"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac でのMicrosoft Defender for Endpointの新機能
 
@@ -35,6 +35,26 @@ ms.locfileid: "66882631"
 他のオペレーティング システムでのMicrosoft Defender for Endpointの詳細については、次の手順を参照してください。 
 - [Linux でのMicrosoft Defender for Endpointの新機能](linux-whatsnew.md) 
 - [iOS でのMicrosoft Defender for Endpointの新機能](ios-whatsnew.md)</br>
+
+<details>
+  <summary>2022 年 7 月 (ビルド: 101.73.77 |リリース バージョン: 20.122062.17377.0)</summary>
+
+&ensp;リリース日: **2022 年 7 月 21** 日<br/>
+&ensp;発行日: **2022 年 7 月 21** 日<br/>
+&ensp;ビルド: **101.73.77**<br/>
+&ensp;リリース バージョン: **20.122062.17377.0**<br/>
+&ensp;エンジンバージョン: **1.1.19200.3**<br/>
+&ensp;署名バージョン: **1.367.1011.0**<br/>
+
+**新機能**
+
+- [ファイル ハッシュの計算を構成](mac-preferences.md#configure-file-hash-computation-feature)するオプションを追加しました
+- このビルド以降、製品には既定で新しいマルウェア対策エンジンが用意されます
+- ファイル コピー操作のパフォーマンスの向上
+- バグ修正
+
+<br/>
+</details>
 
 <details>
   <summary>2022 年 7 月 (ビルド: 101.71.18 |リリース バージョン: 20.122052.17118.0)</summary>

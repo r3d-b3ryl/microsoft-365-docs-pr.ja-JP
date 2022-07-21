@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5c8580e1bc0869f28da1b23a813bba9d2f3c612e
-ms.sourcegitcommit: 6e90baef421ae06fd790b0453d3bdbf624b7f9c0
+ms.openlocfilehash: d7f01e3336fef9382ae6556180deaf14155b6d44
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "62767222"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943620"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpointのリソース
 
@@ -119,6 +119,7 @@ macOS でMicrosoft Defender for Endpointをアンインストールするには�
 |構成|オンデマンド スキャンの並列処理の程度を構成する|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |構成|セキュリティ インテリジェンスの更新後にスキャンをオン/オフにする|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |構成|アーカイブ スキャンのオン/オフを切り替える (オンデマンド スキャンのみ)|`mdatp config scan-archives --value [enabled/disabled]`|
+|構成|ファイル ハッシュの計算のオン/オフを切り替える|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
 |診断|ログ レベルを変更する|`mdatp log level set --level [error/warning/info/verbose]`|
 |診断|診断ログを生成する|`mdatp diagnostic create --path [directory]`|
 |正常性|製品の正常性を確認する|`mdatp health`|
@@ -168,4 +169,4 @@ zsh でオートコンプリートを有効にするには:
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>ポータル情報をMicrosoft Defender for Endpointする
 
-[macOS のEDR機能は](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)、Microsoft Defender for Endpointブログで、Microsoft Defender for Endpoint Security Center で期待される内容に関する詳細なガイダンスを提供しています。
+[macOS の EDR 機能は](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)、Microsoft Defender for Endpoint ブログで、Microsoft Defender for Endpoint Security Center で期待される内容に関する詳細なガイダンスを提供するようになりました。

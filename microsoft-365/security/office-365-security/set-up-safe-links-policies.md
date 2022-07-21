@@ -19,12 +19,12 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365のセーフ リンク ポリシーとグローバルセーフ リンク設定を表示、作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7151099b44947bf71f181802ea57ef732ec26858
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 5b6d69614adcc34f24450e51c3067a13922493c5
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771397"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943847"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 で安全なリンク ポリシーを設定する
 
@@ -123,9 +123,9 @@ Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシ�
    > - 受信者は次のとおりです: romain@contoso.com
    > - 受信者が次のメンバーの場合: Executive
    >
-   > ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
    >
-   > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+   > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -140,8 +140,8 @@ Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシ�
 
        - **[電子メール] セクションで次の URL を書き換えないでください** 。 **[管理 ] (nn) URL を** クリックして、セーフ リンクによってブロックされる特定の URL へのアクセスを許可します。
 
-     > [!NOTE]
-     > "次の URL を書き換えない" 一覧の目的は、それらの URL のセーフ リンクの折り返しをスキップすることです。 この一覧を使用する代わりに、 [テナント許可/ブロック リストに許可 URL エントリを作成](allow-block-urls.md#create-allow-url-entries)できるようになりました。
+         > [!NOTE]
+         > [次の URL を書き換えない] 一覧のエントリは、メール フロー中にセーフ リンクによってスキャンまたはラップされません。 メール _フロー中_ およびクリック時に URL がセーフ リンクによってスキャンまたはラップされないように、[テナント許可/ブロック リストで許可 URL エントリ](allow-block-urls.md#create-allow-url-entries)を使用します。
 
      1. 表示されるポップアップ **を書き換えない URL の管理** で、[URL の追加] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **URL を追加します**。
      2. 表示される **[URL の追加]** ポップアップで、目的の URL または値を入力し、ボックスの下に表示されるエントリを選択して、[ **保存**] をクリックします。 必要な回数だけこの手順を繰り返します。
@@ -162,7 +162,7 @@ Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシ�
 
         すべてのエントリを 1 つで選択するには、 **URL** 列ヘッダーの左側にある空白領域をクリックします。
 
-        1 つ以上のエントリが選択されている状態で、 ![[URL の追加] アイコン。](../../media/m365-cc-sc-create-icon.png) または ![[削除] アイコン。](../../media/m365-cc-sc-delete-icon.png) アイコンが表示されます。
+        1 つ以上のエントリが選択されている状態で、 ![[URL の追加] アイコン。](../../media/m365-cc-sc-create-icon.png) or ![[削除] アイコン。](../../media/m365-cc-sc-delete-icon.png) アイコンが表示されます。
 
         完了したら、[**完了**] をクリックします。
 
@@ -191,7 +191,7 @@ Microsoft 365 Defender ポータルでカスタムセーフ リンク ポリシ�
 
    完了したら、**[次へ]** をクリックします。
 
-6. 表示される **[通知]** ページで、[ **ユーザーに通知する方法**] で次のいずれかの値を選択します。
+6. 表示される **[通知]** ページで、[**ユーザーに通知する方法**] で次のいずれかの値を選択します。
    - **既定の通知テキストを使用する**
    - **カスタム通知テキストを使用** する: この値を選択すると、次の設定が表示されます。
      - **自動ローカライズに Microsoft Translator を使用する**

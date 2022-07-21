@@ -1,7 +1,7 @@
 ---
 title: GCC High 環境で Microsoft Whiteboard のデータを管理する
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Whiteboard へのアクセスを有効、無効、管理する方法について説明します。
-ms.openlocfilehash: 72da71d7d2c57fca9b4f006326e2d4bf506fe8bf
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: aee248c37ce9c65dcf79cfe600e456a17cddbd57
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917301"
+ms.locfileid: "66943422"
 ---
 # <a name="manage-data-for-microsoft-whiteboard-in-gcc-high-environments"></a>GCC High 環境で Microsoft Whiteboard のデータを管理する
 

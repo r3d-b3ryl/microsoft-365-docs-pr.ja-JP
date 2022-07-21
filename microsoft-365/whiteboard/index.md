@@ -1,7 +1,7 @@
 ---
 title: Microsoft Whiteboard の概要
-ms.author: chucked
-author: chuckedmonson
+ms.author: v-jdeweese
+author: johnddeweese
 manager: alexfaulkner
 ms.reviewer: ''
 audience: admin
@@ -12,18 +12,18 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard を設定および管理する方法に関するリソースを確認します。
-ms.openlocfilehash: 1b76b829d0db173257243b49076bf5938121fb3d
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 18c2b56e37d6c683c46b3bfa62e5d859d9813c10
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917324"
+ms.locfileid: "66943444"
 ---
 # <a name="introduction-to-microsoft-whiteboard"></a>Microsoft Whiteboard の概要
 
 Microsoft 365 の Microsoft Whiteboard は、人、コンテンツ、アイデアが集まる自由形式のデジタル キャンバスです。 ホワイトボードを使用すると、チーム メンバーはどこにいてもリアルタイムで共同作業できます。 また、ペン、タッチ、キーボード用に設計された無限のキャンバスを使用して、アイデアを拡張する余地も与えられます。
 
-## <a name="get-started"></a>作業の開始
+## <a name="get-started"></a>概要
 
 このセクションのリソースは、Microsoft Whiteboard の概要と、組織に役立つ方法の詳細を確認するのに役立ちます。
 

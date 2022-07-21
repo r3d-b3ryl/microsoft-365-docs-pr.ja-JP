@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bc9fd823bac4bd3dca3ba9234c3d7fb6c15a6fc4
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787146"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943869"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -65,7 +65,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |セキュリティ機能名|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**迷惑メールのプロパティ&一括メールしきい値**|||||
-|**一括メールのしきい値** <br><br> _BulkThreshold_|7 |6 |4|詳細については、 [EOP の一括苦情レベル (BCL) を](bulk-complaint-level-values.md)参照してください。|
+|**一括メールのしきい値** <br><br> _BulkThreshold_|7 |6|4|詳細については、 [EOP の一括苦情レベル (BCL) を](bulk-complaint-level-values.md)参照してください。|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|この設定は、PowerShell でのみ使用できます。|
 |**スパム スコアの設定を増やす**|オフ|オフ|オフ|これらの設定はすべて、高度なスパム フィルター (ASF) の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
 |**スパム設定としてマークする**|オフ|オフ|オフ|これらの設定のほとんどは ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
@@ -299,20 +299,20 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 |---|:---:|:---:|:---:|:---:|---|
 |**URL &クリック保護設定**||||||
 |**電子メール内の潜在的に悪意のある URL に対するアクション**||||||
-|**オン: セーフ リンクは、ユーザーが電子メール内のリンクをクリックすると、既知の悪意のあるリンクの一覧をチェックします** <br><br> _EnableSafeLinksForEmail_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
-|**組織内で送信された電子メール メッセージに安全なリンクを適用する** <br><br> _EnableForInternalSenders_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
+|**オン: 安全なリンクは、ユーザーがメール内のリンクをクリックしたときに、既知の悪意のあるリンクのリストを確認します** <br><br> _EnableSafeLinksForEmail_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
+|**組織内で送信されるメール メッセージに安全なリンクを適用する** <br><br> _EnableForInternalSenders_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**不審なリンクや、ファイルを指しているリンクに対してリアルタイム URL スキャンを適用します** <br><br> _ScanUrls_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**URL スキャンが完了するまで待ち、その後でメッセージを配信します。** <br><br> _DeliverMessageAfterScan_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
-|**URL を書き換えない、Safe Links API を使用したチェックのみ行う** <br><br> _DisableURLRewrite_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|未選択 <br><br> `$false`|未選択 <br><br> `$false`||
-|**電子メールで次の URL を書き換えないでください** <br><br> _DoNotRewriteUrls_|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|この設定に関する具体的な推奨事項はありません。 <br><br> **注**: [次の URL を書き換えない] 一覧の目的は、指定した URL のセーフ リンクの折り返しをスキップすることです。 この一覧を使用する代わりに、 [テナント許可/ブロック リストに許可 URL エントリを作成](allow-block-urls.md#create-allow-url-entries)できるようになりました。|
+|**URL を書き換えず、SafeLinks API のみを使用してチェックを行います。** <br><br> _DisableURLRewrite_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|未選択 <br><br> `$false`|未選択 <br><br> `$false`||
+|**次の URL を書き換えないでください** <br><br> _DoNotRewriteUrls_|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|この設定に関する具体的な推奨事項はありません。 <br><br> **注**: [次の URL を書き換えない] 一覧のエントリは、メール フロー中にセーフ リンクによってスキャンまたはラップされません。 メール _フロー中_ およびクリック時に URL がセーフ リンクによってスキャンまたはラップされないように、[テナント許可/ブロック リストで許可 URL エントリ](allow-block-urls.md#create-allow-url-entries)を使用します。|
 |**Microsoft Teams の潜在的に悪意のある URL に対するアクション**||||||
 |**オン: 安全なリンクは、ユーザーが Microsoft Teams でリンクをクリックすると、既知の悪意のあるリンクの一覧をチェックします** <br><br> _EnableSafeLinksForTeams_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**Microsoft Office アプリの潜在的に悪意のある URL に対するアクション**||||||
-|**オン: ユーザーが Microsoft Office アプリでリンクをクリックすると、安全なリンクによって既知の悪意のあるリンクの一覧がチェックされます** <br><br> _EnableSafeLinksForO365Clients_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|サポートされているOffice 365デスクトップおよびモバイル (iOS および Android) アプリで安全なリンクを使用します。 詳細については、「 [Office アプリのセーフ リンク設定」を](safe-links.md#safe-links-settings-for-office-apps)参照してください。|
-|**[保護の設定] をクリックする**||||||
+|**オン: 安全なリンクは、ユーザーが Microsoft Office アプリ内のリンクをクリックしたときに、既知の悪意のあるリンクのリストを確認します** <br><br> _EnableSafeLinksForO365Clients_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|サポートされているOffice 365デスクトップおよびモバイル (iOS および Android) アプリで安全なリンクを使用します。 詳細については、「 [Office アプリのセーフ リンク設定」を](safe-links.md#safe-links-settings-for-office-apps)参照してください。|
+|**クリック保護設定**||||||
 |**ユーザーのクリックを追跡する** <br><br> _TrackUserClicks_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
-|**ユーザーが元の URL までクリックできるようにする** <br><br> _AllowClickThrough_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|未選択 <br><br> `$false`|未選択 <br><br> `$false`|この設定をオフにする ( _AllowClickThrough_ を設定する `$false`) と、元の URL へのクリックが防止されます。|
-|**通知ページと警告ページに組織のブランドを表示する** <br><br> _EnableOrganizationBranding_|未選択 <br><br> `$false`|未選択 <br><br> `$false`|未選択 <br><br> `$false`|未選択 <br><br> `$false`|この設定に関する具体的な推奨事項はありません。 <br><br> この設定を有効にする前に、 [組織の Microsoft 365 テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md) して会社のロゴをアップロードする手順に従う必要があります。|
+|**ユーザーが元の URL へクリック スルーするのを許可する** <br><br> _AllowClickThrough_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|未選択 <br><br> `$false`|未選択 <br><br> `$false`|この設定をオフにする ( _AllowClickThrough_ を設定する `$false`) と、元の URL へのクリックが防止されます。|
+|**組織のブランディングを通知と警告のページに表示します** <br><br> _EnableOrganizationBranding_|未選択 <br><br> `$false`|未選択 <br><br> `$false`|未選択 <br><br> `$false`|未選択 <br><br> `$false`|この設定に関する具体的な推奨事項はありません。 <br><br> この設定を有効にする前に、 [組織の Microsoft 365 テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md) して会社のロゴをアップロードする手順に従う必要があります。|
 |**通知**||||||
 |**ユーザーに通知する方法** <br><br> _CustomNotificationText_ <br><br> _UseTranslatedNotificationText_|**既定の通知テキストを使用する** <br><br> 空白 (`$null`) <br><br> `$false`|**既定の通知テキストを使用する** <br><br> 空白 (`$null`) <br><br> `$false`|**既定の通知テキストを使用する** <br><br> 空白 (`$null`) <br><br> `$false`|**既定の通知テキストを使用する** <br><br> 空白 (`$null`) <br><br> `$false`|この設定に関する具体的な推奨事項はありません。 <br><br> カスタム **通知テキストを使用** (`-CustomNotificationText "<Custom text>"`) を選択して、カスタマイズされた通知テキストを入力して使用できます。 カスタム テキストを指定する場合は、[ **自動ローカライズに Microsoft Translator を使用** する ] (`-UseTranslatedNotificationText $true`) を選択して、テキストをユーザーの言語に自動的に翻訳することもできます。|
 

@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密性の高いアイテムを識別するために社会保障、クレジット カード、銀行口座番号などの機密情報を検出する方法について説明します。
-ms.openlocfilehash: 34c40c99cf759341ece1948164a5f7d904996b44
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 2a7f639097203f06795945dbd08fa64db3a1f0df
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639382"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944045"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -44,6 +44,8 @@ Microsoft では、多数の事前構成済み SIT を提供するか、独自�
 - [通信コンプライアンス](communication-compliance.md)
 - [自動ラベル付けポリシー](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 - [Microsoft Priva](/privacy/priva)
+
+
 
 ## <a name="categories-of-sensitive-information-types"></a>機密情報の種類のカテゴリ
 
