@@ -9,6 +9,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -17,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: how-to
 ms.technology: mde
-ms.openlocfilehash: 122b216a07bdd70ab5619903ba049b4fb507179e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 696787189ca14b4609681fb77308c38be206e269
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695618"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912610"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>自動調査後の修復アクションを確認する
 
@@ -126,8 +127,7 @@ ms.locfileid: "66695618"
 
 |デバイス グループの設定|自動調査の結果|操作|
 |---|---|---|
-|**完全 - 脅威を自動的に修復する**<br/>(推奨)|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> 適切な修復アクションが自動的に実行されます。|[完了した処理を確認する](#review-completed-actions)|
-|**完全 - 脅威を自動的に修復する**|証拠の一部については *、疑わしい* という判定に達します。 <p> 適切な修復アクションが自動的に実行されます。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
+|**完全 - 脅威を自動的に修復する**<br/>(推奨)|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> 適切な修復アクションが自動的に実行されます。|[完了した処理を確認する](#review-completed-actions) |
 |**半 - 修復の承認が必要**|一部の証拠に対して *、[悪意]* または *[疑わしい* ] の判定に達します。 <p> 修復アクションは、続行するための承認待ちです。|[保留中のアクションを承認 (または拒否) する](#review-pending-actions)|
 |**Semi - コア フォルダー修復の承認が必要**|一部の証拠に対して *、悪意のある* ユーザーの判定に達します。 <p> アーティファクトがファイルまたは実行可能ファイルであり、Windows フォルダーや Program files フォルダーなどのオペレーティング システム ディレクトリにある場合、修復アクションは承認待ちです。 <p> アーティファクトがオペレーティング システム ディレクトリ *にない* 場合は、修復アクションが自動的に実行されます。|<ol><li>[保留中のアクションを承認 (または拒否) する](#review-pending-actions)</li><li>[完了した処理を確認する](#review-completed-actions)</li></ol>|
 |**Semi - コア フォルダー修復の承認が必要**|証拠の一部については *、疑わしい* という判定に達します。 <p> 修復アクションは承認待ちです。|[保留中のアクションを承認 (または拒否) します](#review-pending-actions)。|

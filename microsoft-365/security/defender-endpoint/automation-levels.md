@@ -10,6 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/20/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -18,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: e36bcdd5851b64ec035eaf8e4e3961c14df5c535
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: fb7c4ee03c5391b12beb3d716b7817a880878af5
+ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535826"
+ms.lasthandoff: 07/20/2022
+ms.locfileid: "66912578"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動調査および修復機能の自動化レベル
 
@@ -46,9 +47,9 @@ Microsoft Defender for Businessの自動調査と修復 (AIR) 機能は構成済
 
 |オートメーション レベル|説明|
 |---|---|
-|**完全 - 脅威を自動的に修復する** <br> ( *完全自動化* とも呼ばれます)|完全自動化では、修復アクションが自動的に実行されます。 実行されたすべての修復アクションは、[**履歴**] タブの [[アクション センター](auto-investigation-action-center.md)] で確認できます。必要に応じて、修復アクションを元に戻すことができます。 <p> **_完全な自動化が推奨_* され、2020 年 8 月 16 日以降に作成され、デバイス グループがまだ定義されていない Defender for Endpoint のテナントでは既定で選択されます。*<p>*Defender for Business では、既定で完全な自動化が設定されます。*|
+|**完全 - 脅威を自動的に修復する** <br> ( *完全自動化* とも呼ばれます)|完全自動化では、悪意があると見なされるエンティティに対して修復アクションが自動的に実行されます。 実行されたすべての修復アクションは、[**履歴**] タブの [[アクション センター](auto-investigation-action-center.md)] で確認できます。必要に応じて、修復アクションを元に戻すことができます。 <p> **_完全な自動化が推奨_* され、2020 年 8 月 16 日以降に作成され、デバイス グループがまだ定義されていない Defender for Endpoint のテナントでは既定で選択されます。*<p>*Defender for Business では、既定で完全な自動化が設定されます。*|
 |**半 - 修復の承認が必要** <br> ( *半自動化* とも呼ばれます)|このレベルの半自動化では、 *修復* アクションに承認が必要です。 このような保留中のアクションは、[**保留中**] タブの [[アクション センター](auto-investigation-action-center.md)] で表示および承認できます。 <p> *このレベルの半自動化は、2020 年 8 月 16 日より前に作成されたテナントに対して既定で選択され、Microsoft Defender for Endpointではデバイス グループが定義されていません。*|
-|**Semi - コア フォルダー修復の承認が必要** <br> ( *また、半自動化の一* 種)|このレベルの半自動化では、コア フォルダー内のファイルまたは実行可能ファイルに必要なすべての修復アクションに対して承認が必要です。 コア フォルダーには、**Windows** (`\windows\*`) などのオペレーティング システム ディレクトリが含まれます。 <p> 修復アクションは、他の (コア以外の) フォルダーにあるファイルまたは実行可能ファイルに対して自動的に実行できます。 <p> コア フォルダー内のファイルまたは実行可能ファイルの保留中のアクションは、 [アクション センター](auto-investigation-action-center.md)の [ **保留中]** タブで表示および承認できます。 <p> 他のフォルダー内のファイルまたは実行可能ファイルに対して実行されたアクションは、 [アクション センター](auto-investigation-action-center.md)の [ **履歴** ] タブで確認できます。|
+|**Semi - コア フォルダー修復の承認が必要** <br> ( *また、半自動化の一* 種)|このレベルの半自動化では、コア フォルダー内のファイルまたは実行可能ファイルに必要なすべての修復アクションに対して承認が必要です。 コア フォルダーには、 **Windows** (`\windows\*`) などのオペレーティング システム ディレクトリが含まれます。 <p> 修復アクションは、他の (コア以外の) フォルダーにあるファイルまたは実行可能ファイルに対して自動的に実行できます。 <p> コア フォルダー内のファイルまたは実行可能ファイルの保留中のアクションは、 [アクション センター](auto-investigation-action-center.md)の [ **保留中]** タブで表示および承認できます。 <p> 他のフォルダー内のファイルまたは実行可能ファイルに対して実行されたアクションは、 [アクション センター](auto-investigation-action-center.md)の [ **履歴** ] タブで確認できます。|
 |**Semi - 一時フォルダー以外の修復の承認が必要** <br> ( *また、半自動化の一* 種)|このレベルの半自動化では、一時フォルダー *にない* ファイルまたは実行可能ファイルに対して必要なすべての修復アクションに対して承認が必要です。 <p> 一時フォルダーには、次の例を含めることができます。 <ul><li>`\users\*\appdata\local\temp\*`</li><li>`\documents and settings\*\local settings\temp\*`</li><li>`\documents and settings\*\local settings\temporary\*`</li><li>`\windows\temp\*`</li><li>`\users\*\downloads\*`</li><li>`\program files\`</li><li>`\program files (x86)\*`</li><li>`\documents and settings\*\users\*`</li></ul> <p> 修復アクションは、一時フォルダー内のファイルまたは実行可能ファイルに対して自動的に実行できます。 <p> 一時フォルダーにないファイルまたは実行可能ファイルの保留中のアクションは、[**保留中]** タブの [[アクション センター](auto-investigation-action-center.md)] で表示および承認できます。 <p> 一時フォルダー内のファイルまたは実行可能ファイルに対して実行されたアクションは、 [アクション センター](auto-investigation-action-center.md)の [ **履歴** ] タブで表示および承認できます。|
 |**自動応答なし** <br> ( *オートメーションなし* とも呼ばれます)|自動化なしでは、組織のデバイスでは自動調査は実行されません。 その結果、自動調査の結果として修復アクションが実行されたり保留中になったりすることはありません。 ただし、ウイルス対策と次世代の保護機能の構成方法によっては、 [望ましくない可能性のあるアプリケーションからの保護](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)など、他の脅威保護機能も有効になる可能性があります。 <p> *組織のデバイスのセキュリティ体制が低下するため、***自動化なし* オプションを使用することはお勧めしません**。 [オートメーション レベルを完全なオートメーション (または少なくとも半自動化) に設定することを検討してください](/microsoft-365/security/defender-endpoint/machine-groups)。|
 
