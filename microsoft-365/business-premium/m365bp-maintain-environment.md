@@ -19,21 +19,23 @@ search.appverid:
 - BCS160
 - MET150
 description: 組織のネットワークとシステムのセキュリティ環境の維持とサイバー攻撃からの防御に関する概要。
-ms.openlocfilehash: 3d1af0c30bdbe3d348f317784793e3235bfa3aa5
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: e25d093322001e01057afaf94b59f276785958a0
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894385"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917960"
 ---
 # <a name="maintain-your-environment"></a>環境を維持する
 
-ネットワーク上のユーザーは時間の経過とともに変化するため、安全な環境を維持する必要があります。 これまでに完了したミッションは、システムを保護することです。 ただし、これに加えて、システムからユーザーを安全かつクリーンに削除して、すべてのデータと情報へのアクセスを削除できるようにする必要もあります。 また、実行する特定のセキュリティ管理タスクもあります。 
+セキュリティ インシデント管理に加えて、会社にはメンテナンスと運用計画が必要です。 セットアップと構成プロセス中に完了したミッションは、システムをセキュリティで保護することでした。 ただし、これに加えて、ユーザーの追加または削除、パスワードのリセット、必要に応じてデバイスの出荷時設定へのリセットなど、特定のタスクを実行できる必要もあります。
+
+詳細については、次の記事を参照してください。 
 
 - [Microsoft 365 Business Premium セキュリティ操作ガイドをご確認ください](m365bp-security-incident-quick-start.md)。
-- [ユーザー アカウントを削除する](m365bp-review-remediation-actions-devices.md)。
 - [新規ユーザーの追加](m365bp-add-users.md)。
 - [(必要に応じて) パスワードをリセットします](m365bp-reset-passwords.md)。
+- [ユーザー アカウントを削除する](m365bp-review-remediation-actions-devices.md)。
 - [(必要に応じて) デバイスから会社のデータを削除します](../admin/devices/remove-company-data.md)。
 - [(必要に応じて) デバイスを工場出荷時の設定にリセットします](../admin/devices/reset-devices-to-factory-settings.md)。
 

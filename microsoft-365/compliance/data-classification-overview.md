@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ分類ダッシュボードを使用すると、組織内で検出、分類された機密データの量を確認できます。
-ms.openlocfilehash: 828a5c5d61c1b662f42e34ae95825dbc5994c816
-ms.sourcegitcommit: 019e8a62ab07a42d4ede4a87ccfaed527914412d
+ms.openlocfilehash: dccc33715b2a3cd489d7fd65fa47773952cf8727
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/08/2022
-ms.locfileid: "66689154"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917587"
 ---
 # <a name="learn-about-data-classification"></a>データ分類について
 

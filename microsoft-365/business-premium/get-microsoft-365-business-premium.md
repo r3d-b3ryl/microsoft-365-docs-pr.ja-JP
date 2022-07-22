@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
+ms.date: 07/20/2022
 ms.collection:
 - Adm_O365
 - M365-subscription-management
@@ -23,19 +24,19 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium を取得して、デバイス、メール、データ、通信に対するサイバー セキュリティの脅威から会社を保護できるようにします。
-ms.openlocfilehash: ad58a0578872cf7fcf38bec09cc383450c76a5ff
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 2307f6476ee2cf9c27b4b3785c29f35991d30d91
+ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493744"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66917931"
 ---
 # <a name="how-to-sign-up-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium にサインアップする方法
 
 Microsoft 365 Business Premium にサインアップする準備ができたら、いくつかのオプションがあります。 次の操作を行うことができます:
 
 - [Microsoft 365 Business Premium を自分で試用するか購入する](#sign-up-for-microsoft-365-business-premium-on-your-own)
-- [ソリューション プロバイダーを操作する](#work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium)
+- [Microsoft パートナーと連携する](#work-with-a-microsoft-partner-to-get-microsoft-365-business-premium)
 
 > [!TIP]
 > Microsoft 365 for Campaigns を探している場合は、「[Microsoft 365 for Campaigns を取得する方法](get-microsoft-365-campaigns.md)」を参照してください。
@@ -48,17 +49,22 @@ Microsoft 365 Business Premium にサインアップする準備ができたら�
 
 3. Microsoft 365 Business Premium にサインアップすると、サインインして開始するためのリンクが記載されたメールが届きます。 [[Microsoft 365 Business Premium のセットアップ]](m365bp-setup.md) に進みます。
 
-## <a name="work-with-a-microsoft-solution-provider-to-get-microsoft-365-business-premium"></a>Microsoft ソリューション プロバイダーと協力して、Microsoft 365 Business Premium を入手する
+## <a name="work-with-a-microsoft-partner-to-get-microsoft-365-business-premium"></a>Microsoft パートナーと協力して、Microsoft 365 Business Premium を入手する
 
 Microsoft には、Microsoft 365 Business Premium を含むオファリングを販売する権限を持つソリューション プロバイダーの一覧があります。 ソリューション プロバイダーをまだ使用していない場合は、次の手順で見つけることができます。 
 
-1. 「**Microsoft ソリューション プロバイダー**」ページ ([https://www.microsoft.com/solution-providers](https://www.microsoft.com/solution-providers)) に移動します。
- 
-2. 検索ボックスに、自分の場所と会社の規模を入力します。 
+1. [[パートナーを参照する](https://appsource.microsoft.com/marketplace/partner-dir)] に移動します。
 
-3. **[製品、サービス、スキル、業界の検索]** ボックスに `Microsoft 365` と入力し、**[Go]** を選択します。
+2. [**フィルター**] ウィンドウで、次のような検索条件を指定します。
 
-4. 結果の一覧を確認します。プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。
+   - 現在の場所
+   - 組織の規模
+   - **セキュリティ** や **脅威に対する保護** などの **重点領域** 
+   - **ライセンス** や **マネージド サービス (MSP)** などの **サービス**
+
+   1 つ以上の条件を選択すると、リアルタイムでパートナーのリストが更新されます。
+
+3. 結果の一覧を確認します。プロバイダーを選択して、専門分野と提供されるサービスの詳細を確認します。
 
 ## <a name="next-steps"></a>次の手順
 
