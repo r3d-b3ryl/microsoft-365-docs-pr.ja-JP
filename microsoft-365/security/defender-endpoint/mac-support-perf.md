@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e83400e444d4c8c733bea5552a31954bb019e358
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 7c60a61ca1a0a1179abd27c0f6d59970a0c09866
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64474049"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969554"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpointのパフォーマンスの問題のトラブルシューティング
 
@@ -61,7 +61,7 @@ ms.locfileid: "64474049"
 
       デバイスが組織によって管理されている場合は、「[macOS でMicrosoft Defender for Endpointの環境設定を設定](mac-preferences.md)する」の手順を使用して、管理者がリアルタイム保護を無効にすることができます。
 
-      リアルタイム保護がオフの間もパフォーマンスの問題が解決しない場合、問題の原因はエンドポイントでの検出と対応 コンポーネントである可能性があります。 この場合は、詳細な手順と軽減策については、カスタマー サポートにお問い合わせください。
+      リアルタイム保護がオフの間もパフォーマンスの問題が解決しない場合、問題の原因はエンドポイントの検出と応答コンポーネントである可能性があります。 この場合は、詳細な手順と軽減策については、カスタマー サポートにお問い合わせください。
 
 2. Finder を開き、 **アプリケーション** \> ユーティリティに移動 **します**。 **アクティビティ モニターを** 開き、システム上のリソースを使用しているアプリケーションを分析します。 一般的な例には、ソフトウェア アップデーターとコンパイラが含まれます。
 
@@ -149,7 +149,7 @@ ms.locfileid: "64474049"
         125  CrashPlanService 164
       ```
 
-      Mac 上の Defender for Endpoint のパフォーマンスを向上させるには、[スキャンされたファイルの合計数] 行の下の数値が最も高いものを見つけ、除外を追加します。 詳細については、「 [Defender for Endpoint on Linux の除外を構成して検証する」を](linux-exclusions.md)参照してください。
+      Mac 上の Defender for Endpoint のパフォーマンスを向上させるには、[スキャンされたファイルの合計数] 行の下の数値が最も高いものを見つけ、除外を追加します。 詳細については、「 [macOS 上の Defender for Endpoint の除外を構成して検証する」を](mac-exclusions.md)参照してください。
 
       > [!NOTE]
       > アプリケーションは、メモリに統計を格納し、ファイルアクティビティが開始され、リアルタイム保護が有効になっているため、ファイル アクティビティのみを追跡します。 リアルタイム保護がオフになっていた期間の前または期間中に起動されたプロセスはカウントされません。 さらに、トリガーされたスキャンのイベントのみがカウントされます。

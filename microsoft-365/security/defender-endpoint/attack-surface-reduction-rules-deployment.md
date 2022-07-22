@@ -18,13 +18,14 @@ ms.technology: mde
 ms.topic: article
 ms.collection:
 - M365-security-compliance
+- m365solution-asr-rules
 ms.date: 1/18/2022
-ms.openlocfilehash: 10ae1829f632492afdfd515d080b6be7c335b898
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: c503af0931b60b6ef54ae070a377c2ffda5a9f50
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601204"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969312"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>攻撃面の縮小 (ASR) ルールの展開の概要
 
@@ -38,7 +39,7 @@ ASR ルールは、次のような特定のソフトウェア動作を対象と�
 
 さまざまな攻撃面を減らすことで、最初に攻撃が発生するのを防ぐのに役立ちます。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 最初の準備では、配置するシステムの機能を理解することが重要です。 この機能を理解すると、組織を保護するために最も重要な ASR 規則を判断するのに役立ちます。 また、ASR デプロイの準備に必要な前提条件がいくつかあります。
 
@@ -55,7 +56,7 @@ ASR ルールは、Microsoft Defender for Endpoint内の攻撃面の縮小機能
 
 <br/>
 
-| 多形の脅威 | 横移動&資格情報の盗難 | 生産性アプリのルール |  電子メール ルール | スクリプト ルール | その他のルール |
+| 多形の脅威 | 横移動&資格情報の盗難 | 生産性アプリのルール |  Emailルール | スクリプト ルール | その他のルール |
 |:---|:---|:---|:---|:---|:---|
 | 有病率 (1000 台のマシン)、年齢 (24 時間)、信頼できるリスト条件を満たしていない限り、実行可能ファイルの実行をブロックする | PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする | Office アプリが実行可能コンテンツを作成できないようにする | 電子メール クライアントと webmail から実行可能コンテンツをブロックする | 難読化された JS/VBS/PS/マクロ コードをブロックする | 悪用された脆弱な署名されたドライバー <sup>の悪用をブロックする [[1](#fn1)]<sup></sup>  |
 | USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする | Windows ローカル セキュリティ機関サブシステムからの資格情報の盗難をブロックする (lsass.exe)<sup>[[2](#fn1)]<sup></sup>   | Office アプリによる子プロセスの作成をブロックする |  Office 通信アプリケーションのみが子プロセスを作成できないようにブロックする | ダウンロードした実行可能コンテンツの起動から JS/VBS をブロックする | |

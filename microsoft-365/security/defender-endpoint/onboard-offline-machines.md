@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 33b539018f479c1b023a656ab056ca892d27e526
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9c3dc16904672d32ab8399e693c2066b8e04c187
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822183"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969816"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointへのインターネット アクセスのないデバイスのオンボード
 
@@ -61,6 +61,19 @@ ms.locfileid: "66822183"
 
 [以前のバージョンの Windows をオンボードする](onboard-downlevel.md)
 
-### <a name="microsoft-defender-for-cloud"></a>Microsoft Defender for Cloud
+### <a name="azure-virtual-machines"></a>Azure 仮想マシン
 
-- [Defender for Cloud の統合 EDR ソリューションでエンドポイントを保護する: Microsoft Defender for Endpoint](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows#prerequisites)
+- 前の MMA ベースのソリューションを実行しているデバイスの場合は、プロキシまたはハブとして機能するように Azure Log Analytics Gateway (旧称 OMS ゲートウェイ) を設定します。
+    - [Azure Log Analytics Gateway](/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
+    - [Microsoft Monitoring Agent (MMA)](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma) ポイントから Defender for Endpoint Workspace キー & ID をインストールして構成する
+- OMS ゲートウェイの同じネットワーク内のオフライン Azure VM
+    - Azure Log Analytics IP をプロキシとして構成する
+    - Azure Log Analytics ワークスペース キー & ID
+- Microsoft Defender for Cloud
+    - [セキュリティ ポリシー \> Log Analytics ワークスペース](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+    - [脅威検出 \> により Defender for Endpoint が自分のデータにアクセスできるようにする](/azure/security-center/security-center-wdatp#enable-windows-defender-atp-integration)
+
+    詳細については、「 [セキュリティ ポリシーの操作](/azure/security-center/tutorial-security-policy)」を参照してください。
+
+> [!NOTE]
+> インターネットにアクセスできないクライアントは、Microsoft Defender エンドポイントにオンボードできません。 クライアントは、必要な URL に直接アクセスできる必要があるか、プロキシ経由でアクセスできる必要があります。

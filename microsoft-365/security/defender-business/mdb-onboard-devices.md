@@ -15,13 +15,13 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-- m365-initiative-defender-business
-ms.openlocfilehash: 9b4228ba31594e8c6893d4bc45e2fc1994139231
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+- m365solution-mdb-setup
+ms.openlocfilehash: 6894b4a936af81cbd51dad34bbf6edf704e910a7
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772218"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969422"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
@@ -252,8 +252,8 @@ Defender for Business にオンボードされているデバイスの一覧を�
 
 > [!IMPORTANT]
 > **Windows Server エンドポイントをオンボードする機能は現在プレビュー段階です**。 Windows Server エンドポイントをオンボードする前に、次の要件を満たしていることを確認してください。
-> - **[プレビュー機能**] 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で **、[Settings** > **Endpoints** > **General** > **Advanced features****Preview]** >  機能に移動します。
-> - Windows Server の適用スコープがオンになっています。 **[設定** > エンドポイント **の構成管理** > **の適用] スコープ** に移動 **します** > 。 [ **MDE を使用して MEM からセキュリティ構成設定を適用する**] を選択し、  **Windows Server** を選択して、[保存] を選択 **します**。
+> - **[プレビュー機能]** 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、**[設定]** > **[エンドポイント]** > **[全般]** > **[高度な機能]****[プレビュー機能]** >  の順に移動します。
+> - Windows Server の強制範囲がオンになっています。 **[設定]** > **[エンドポイント]** > **[構成管理]** > **[強制範囲]** の順に移動します。 **[MDE を使用して MEM からセキュリティ構成設定を適用する]** を選択し、  **[Windows Server]** を選択してから、**[保存]** を選択します。
 
 ローカル スクリプトを使用して、Windows Server のインスタンスを Defender for Business にオンボードできます。
 
@@ -307,7 +307,7 @@ Windows Server エンドポイントを Defender for Business にオンボード
 
 > [!IMPORTANT]
 > **Linux Server エンドポイントをオンボードする機能は現在プレビュー段階です**。 Linux Server エンドポイントをオンボードする前に、次の要件を満たしていることを確認してください。
-> - **[プレビュー機能**] 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で **、[Settings** > **Endpoints** > **General** > **Advanced features****Preview]** >  機能に移動します。
+> - **[プレビュー機能]** 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、**[設定]** > **[エンドポイント]** > **[全般]** > **[高度な機能]****[プレビュー機能]** >  の順に移動します。
 > - [Linux でのMicrosoft Defender for Endpointの前提条件を](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites)満たしています。
 
 ### <a name="onboard-linux-server-endpoints"></a>Linux Server エンドポイントをオンボードする

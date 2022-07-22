@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-- m365initiative-defender-office365
+- m365solution-mdo-migration
 ms.custom: migrationguides
 description: サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365保護に移行する手順を完了します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2358103b3ab6bfee34e88d23f4b3de0d774e34e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492128"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969410"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Microsoft Defender for Office 365に移行する - フェーズ 3: オンボード
 
@@ -52,7 +52,7 @@ ms.locfileid: "66492128"
 
 組織にセキュリティ対応チームがある場合は、チケット発行システムを含む応答プロセスへのMicrosoft Defender for Office 365の統合を開始します。 これはトピック全体ですが、見落とされることがあります。 セキュリティ対応チームを早期に取得することで、MX レコードを切り替える際に組織が脅威に対処する準備が整います。 次のタスクを処理するには、インシデント対応を十分に備える必要があります。
 
-- 新しいツールを学習し、それらを既存のフローに統合します。 次に例を示します。
+- 新しいツールを学習し、それらを既存のフローに統合します。 例:
   - 検疫されたメッセージの管理管理重要です。 手順については、「 [管理者として検疫されたメッセージとファイルを管理する」を参照してください](manage-quarantined-messages-and-files.md)。
   - メッセージ トレースを使用すると、メッセージが Microsoft 365 に出入りするときに何が起こったかを確認できます。 詳細については、[Exchange Onlineの最新の Exchange 管理センターのメッセージ トレースに関する説明を](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)参照してください。
 - 組織に任せられている可能性のあるリスクを特定します。
@@ -79,9 +79,9 @@ SIEM/SOAR との統合の詳細については、次の記事を参照してく�
 Defender for Office 365のアクセス許可はロールベースのアクセス制御 (RBAC) に基づいており、[Microsoft 365 Defender ポータル](permissions-microsoft-365-security-center.md)のアクセス許可で説明されています。 次の点に留意する必要があります。
 
 - Azure AD ロールは、Microsoft 365 **のすべての** ワークロードにアクセス許可を付与します。 たとえば、Azure portalのセキュリティ管理者にユーザーを追加すると、すべての場所でセキュリティ管理者のアクセス許可が付与されます。
-- Microsoft 365 Defender ポータルの電子メール & コラボレーション ロールは、Microsoft 365 Defender ポータル、Microsoft Purview コンプライアンス ポータル、および以前のセキュリティ & コンプライアンス センターにアクセス許可を付与します。 たとえば、Microsoft 365 Defender ポータルでセキュリティ管理者にユーザーを追加すると、Microsoft 365 Defender ポータル、Microsoft Purview コンプライアンス ポータル、セキュリティ & コンプライアンス センター **でのみ** セキュリティ管理者にアクセスできます。
+- Microsoft 365 Defender ポータルのコラボレーション ロールEmail &、Microsoft 365 Defender ポータル、Microsoft Purview コンプライアンス ポータル、および以前のセキュリティ & コンプライアンス センターにアクセス許可を付与します。 たとえば、Microsoft 365 Defender ポータルでセキュリティ管理者にユーザーを追加すると、Microsoft 365 Defender ポータル、Microsoft Purview コンプライアンス ポータル、セキュリティ & コンプライアンス センター **でのみ** セキュリティ管理者にアクセスできます。
 - Microsoft 365 Defender ポータルの多くの機能は、Exchange Online PowerShell コマンドレットに基づいているため、Exchange Onlineの対応するロール (技術的には、役割グループ) のロール グループ メンバーシップが必要です (特に、対応するExchange Online PowerShell コマンドレット)。
-- Microsoft 365 Defender ポータルには、Azure AD ロールに相当しない電子メール & コラボレーション ロールがあり、セキュリティ操作 (プレビュー ロールや検索ロールや消去ロールなど) に重要です。
+- Microsoft 365 Defender ポータルには、Azure AD ロールに相当しないEmail &コラボレーション ロールがあり、セキュリティ操作 (プレビュー ロールや検索ロールや消去ロールなど) に重要です。
 
 通常、セキュリティ担当者のサブセットのみが、ユーザー メールボックスから直接メッセージをダウンロードするための追加の権限を必要とします。 これには、Security Reader に既定で付与されていない追加のアクセス許可が必要です。
 
@@ -110,7 +110,7 @@ Defender for Office 365のアクセス許可はロールベースのアクセス
 
 - ユーザー権限借用保護: Standard と Strict **の両方のメッセージを検疫** します。
 - ドメイン偽装保護: Standard と Strict **の両方のメッセージを検疫** します。
-- メールボックス インテリジェンス保護: **Standard の受信者の迷惑メール フォルダーにメッセージを移動** します。 **Strict のメッセージを検疫** します。
+- メールボックス インテリジェンス保護: **受信者の迷惑メール Email フォルダーにメッセージを移動** します。**Strict のメッセージを検疫** します。
 
 メッセージに作用せずに偽装保護の結果を監視する時間が長いほど、必要な可能性がある許可またはブロックを特定する必要があるデータが増えます。 観察と調整を可能にするために十分に重要な各保護をオンにするまでの遅延を使用することを検討してください。
 
@@ -123,7 +123,7 @@ Defender for Office 365のアクセス許可はロールベースのアクセス
 
 準備ができたら、次の手順を実行して、偽装試行として検出されたメッセージに対してメールボックス インテリジェンスが動作できるようにします。
 
-- Standard Protection 設定のフィッシング対策ポリシーで、偽装 **されたユーザーがメールボックス インテリジェンスによって検出された場合** の値を変更して、メッセージを **受信者の迷惑メール フォルダーに移動します**。
+- Standard Protection 設定のフィッシング対策ポリシーで、[**メールボックス インテリジェンスが偽装されたユーザーを検出した場合**] の値を変更して、**メッセージを受信者の迷惑Email フォルダーに移動します**。
 
 - Strict Protection 設定のフィッシング対策ポリシーで、[ **メールボックス インテリジェンスが検出して偽装されたユーザーの場合** ] の値を **[メッセージの検疫]** に変更します。
 
@@ -159,8 +159,8 @@ Defender for Office 365の保護設定を監視および反復処理するには
 
 - [検疫](manage-quarantined-messages-and-files.md)
 - [脅威エクスプローラー](email-security-in-microsoft-defender.md)
-- [電子メール セキュリティ レポート](view-email-security-reports.md)
-- [レポートのDefender for Office 365](view-reports-for-mdo.md)
+- [Email セキュリティ レポート](view-email-security-reports.md)
+- [Defender for Office 365 レポート](view-reports-for-mdo.md)
 - [メール フローの分析情報](/exchange/monitoring/mail-flow-insights/mail-flow-insights)
 - [メール フロー レポート](/exchange/monitoring/mail-flow-reports/mail-flow-reports)
 
