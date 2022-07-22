@@ -16,15 +16,15 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Exchange の保持のしくみについて説明します。
-ms.openlocfilehash: 1b4c255e2a228801ece0c98d0ac8686b3582ab30
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: アイテム保持ポリシーと保持ラベルを使用して、組織のデータの自動保持または削除を管理して、Microsoft 365 データ保持が Exchange でどのように機能するかについて説明します。
+ms.openlocfilehash: 6337c1e23bf2d78ca1bd2c11ebbe8340e2045b5b
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626009"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942146"
 ---
-# <a name="learn-about-retention-for-exchange"></a>Exchange の保持の詳細
+# <a name="learn-about-retention-for-exchange"></a>Exchange のアイテム保持の詳細
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 

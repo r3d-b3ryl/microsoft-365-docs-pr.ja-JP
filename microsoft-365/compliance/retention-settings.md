@@ -1,5 +1,5 @@
 ---
-title: コンテンツを自動的に保持または削除するように保持設定を構成する
+title: コンテンツを自動的に保持または削除するようにMicrosoft 365 の保持設定を構成する
 f1.keywords:
 - NOCSH
 ms.author: cabailey
@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 保持ポリシーまたは保持ラベル ポリシーで構成できる設定を理解して、必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 34d71c0ae96c09dc2ac4569ae1de5fe386509550
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+description: 組織のデータを保持または削除するために、Microsoft 365 アイテム保持ポリシーと保持ラベルに対して構成できる設定について説明します。
+ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695750"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66943334"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 

@@ -17,13 +17,13 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 法的事項、ビジネス、または規制上の義務を有する価値の高いコンテンツを管理する、Microsoft 365 向けのレコード管理ソリューションが必要であるのに、どこから開始すればいいかわからなくなっていませんか? 開始するのに役立つ実用的なガイダンスをご覧ください。
-ms.openlocfilehash: 1c64559500d2edc0d440f0632a39de616d89c434
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: 管理者向けの規範的な手順、ライセンス要件、法的、ビジネス上、または規制上の義務に対して Microsoft 365 で価値の高いコンテンツを管理する一般的なシナリオ。
+ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629687"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944199"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
