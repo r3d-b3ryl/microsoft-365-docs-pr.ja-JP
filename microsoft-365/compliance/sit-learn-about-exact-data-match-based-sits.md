@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: 正確なデータ一致ベースの機密情報の種類について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5d4a45e7ecdb143187b9d90fdedbaf1f235c7d52
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 25a48a13e66803dec592680c0ad0e9c01b611dc0
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621999"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949285"
 ---
 # <a name="learn-about-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類の詳細
 
@@ -97,7 +97,7 @@ Microsoft Purview には、定義済みのスキーマ、正規表現パター�
 
 ### <a name="primary-and-secondary-support-elements"></a>プライマリとセカンダリのサポート要素
 
-EDM SIT を作成するときは、ルール パッケージに *プライマリ要素* フィールドを定義します。 プライマリ フィールドは、すべてのコンテンツを検索する要素であり、識別するために定義されたパターンに従う必要があります。 スキャンされた項目でプライマリ要素が見つかると、EDM は、パターンに従う必要のない *セカンダリ* 要素またはサポート要素、およびプライマリ要素への近接性を探します。 EDM では、プライマリ要素が既存の SIT を介して最初に検出可能であることが必要です。 使用可能な SIT の完全な一覧については、 [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md) を参照してください。 EDM SIT で検出するクラスを検出するもののいずれかを見つける必要があります。 たとえば、EDM SIT スキーマに主な要素として米国の社会保障番号がある場合、EDM スキーマを作成するときに、それを [米国社会保障番号 (SSN)](sensitive-information-type-entity-definitions.md#us-social-security-number-ssn) SIT に関連付けたとします。
+EDM SIT を作成するときは、ルール パッケージに *プライマリ要素* フィールドを定義します。 プライマリ フィールドは、すべてのコンテンツを検索する要素であり、識別するために定義されたパターンに従う必要があります。 スキャンされた項目でプライマリ要素が見つかると、EDM は、パターンに従う必要のない *セカンダリ* 要素またはサポート要素、およびプライマリ要素への近接性を探します。 EDM では、プライマリ要素が既存の SIT を介して最初に検出可能であることが必要です。 使用可能な SIT の完全な一覧については、 [機密情報の種類のエンティティ定義](sensitive-information-type-entity-definitions.md) を参照してください。 EDM SIT で検出するクラスを検出するもののいずれかを見つける必要があります。 たとえば、EDM SIT スキーマに主な要素として米国の社会保障番号がある場合、EDM スキーマを作成するときに、それを [米国社会保障番号 (SSN)](sit-defn-us-social-security-number.md) SIT に関連付けたとします。
 
 ## <a name="how-matching-works"></a>照合のしくみ
 

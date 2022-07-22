@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターへの新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 今月起こったことついてご覧ください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fc553b60132da31dbcc6e131ddb29bcbfa99548b
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756751"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949153"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview のリスクおよびコンプライアンス ソリューションの新機能
 
@@ -45,7 +45,7 @@ ms.locfileid: "66756751"
 
 ### <a name="compliance-manager"></a>コンプライアンス マネージャー
 
-- [Microsoft Purview Compliance Manager のアラートとアラート ポリシー - アラート ポリシー](compliance-manager-alert-policies.md) を作成または編集するアクセス許可を持つ 3 つの ADD ロールが追加されました。
+- [Microsoft Purview Compliance Manager のアラートとアラート ポリシー - アラート ポリシー](compliance-manager-alert-policies.md) を作成または編集するアクセス許可を持つ 3 つの AAD ロールが追加されました。
 - [Configuration Analyzer for Microsoft Purview](compliance-manager-mcca.md) - 以前は "Microsoft Compliance Configuration Analyzer" という名前の Compliance Manager のこの入門ツールの新しい名前と更新された参照リンク。
 
 ### <a name="data-loss-prevention"></a>データ損失防止
@@ -236,7 +236,7 @@ ms.locfileid: "66756751"
 | Office 365 Message Encryption | Microsoft Purview のメッセージの暗号化 | Message Encryption を使用すると、組織は組織内外のユーザーとの間で暗号化されたメール メッセージを送受信できます。詳細については、「[Microsoft Purview Message Encryption](ome.md)」を参照してください。 |
 | Microsoft 365 での特権アクセス管理 | Microsoft Purview Privileged Access Management | 特権アクセス管理は、機密データへの常時アクセスや重要な構成設定へのアクセスを制限することで、組織を情報漏えいから守り、コンプライアンスのベスト プラクティスに適合させるのに役立ちます。 詳細については、「[Microsoft Purview Privileged Access Management](privileged-access-management-solution-overview.md)」を参照してください。 |
 | Microsoft データ コネクタ | Microsoft Purview データ コネクタ | Microsoft 365 を使用すると、管理者はソーシャル メディア プラットフォーム、インスタント メッセージング プラットフォーム、ドキュメント コラボレーション プラットフォームからのサードパーティ データを、Microsoft 365 組織のメールボックスにインポートしてアーカイブすることができます。 詳細については、「[Microsoft Purview データ コネクタ](compliance-extensibility.md)」を参照してください。 |
-| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview eDiscovery (Premium) <br><br> Microsoft Purview eDiscovery (Standard) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md)」「[Microsoft Purview eDiscovery (Standard)](get-started-core-ediscovery.md)」を参照してください。 |
+| Microsoft 365 Advanced eDiscovery <br><br> Microsoft 365 Core eDiscovery | Microsoft Purview 電子情報開示 (プレミアム) <br><br> Microsoft Purview eDiscovery (Standard) | 電子情報開示 (eDiscovery) とは、訴訟で証拠として使用できる電子的情報を特定および提供するプロセスです。 詳細については、「[Microsoft Purview eDiscovery (Premium)](overview-ediscovery-20.md)」「[Microsoft Purview eDiscovery (Standard)](get-started-core-ediscovery.md)」を参照してください。 |
 | Microsoft 365 コンプライアンス センター | Microsoft Purview コンプライアンス ポータル | Microsoft 365 E5 Compliance スイート内のソリューションとソリューション カタログにアクセスするための管理者ポータル。 詳細については、「[Microsoft Purview コンプライアンス ポータル](microsoft-365-compliance-center.md)」を参照してください。 |
 
 ## <a name="march-2022"></a>2022 年 3 月

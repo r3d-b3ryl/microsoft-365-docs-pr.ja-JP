@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: aa6255289ddffd7edb9025e36c69a49f4a3b855b
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: f927133a99e73af11c29690b1c51e3bda3a6d5a7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603508"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949439"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux でのMicrosoft Defender for Endpointの新機能
 
@@ -34,6 +34,28 @@ ms.locfileid: "66603508"
 
 - [macOS 上の Defender for Endpoint の新機能](mac-whatsnew.md)
 - [iOS 上の Defender for Endpoint の新機能](ios-whatsnew.md)
+
+<details>
+  <summary>2022 年 7 月 (ビルド: 101.73.77 |リリース バージョン: 30.122062.17377.0)</summary>
+
+&ensp;リリース日: **2022 年 7 月 21** 日<br/>
+&ensp;発行日: **2022 年 7 月 21** 日<br/>
+&ensp;ビルド: **101.73.77**<br/>
+&ensp;リリース バージョン: **30.122062.17377.0**<br/>
+&ensp;エンジンバージョン: **1.1.19200.3**<br/>
+&ensp;署名バージョン: **1.367.1011.0**<br/>
+
+
+**新機能**
+
+- [ファイル ハッシュの計算を構成](linux-preferences.md#configure-file-hash-computation-feature)するオプションを追加しました
+- このビルド以降、製品には既定で新しいマルウェア対策エンジンが用意されます
+- ファイル コピー操作のパフォーマンスの向上
+- バグ修正
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>2022 年 6 月 (ビルド: 101.71.18 |リリース バージョン: 30.122052.17118.0)</summary>

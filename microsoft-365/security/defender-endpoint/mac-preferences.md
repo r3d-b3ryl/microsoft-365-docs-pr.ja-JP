@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb3f38b861f85849165be330e03fe1d96a9c708c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: ca619bbc2dd81dfe2f7de09186d748a0abb54e4c
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63326707"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949219"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>macOS 上で Microsoft Defender for Endpoint 用の基本設定を設定する
 
@@ -62,7 +62,7 @@ ms.locfileid: "63326707"
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|antivirusEngine|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 |||
 
 #### <a name="enforcement-level-for-antivirus-engine"></a>ウイルス対策エンジンの適用レベル
@@ -91,6 +91,18 @@ ms.locfileid: "63326707"
 |**指定可能な値**|real_time (既定) <p> on_demand <p> パッシブ|
 |**コメント**|Microsoft Defender for Endpoint バージョン 101.10.72 以降で使用できます。|
 |||
+
+#### <a name="configure-file-hash-computation-feature"></a>ファイル ハッシュ計算機能を構成する
+
+ファイル ハッシュの計算機能を有効または無効にします。 この機能を有効にすると、Defender for Endpoint はスキャンするファイルのハッシュを計算します。 この機能を有効にすると、デバイスのパフォーマンスに影響する可能性があることに注意してください。 詳細については、「 [ファイルのインジケーターを作成する」を](indicator-file.md)参照してください。
+
+|Section|値|
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**キー**|enableFileHashComputation|
+|**データ型**|String|
+|**指定可能な値**|無効 (既定値) <p> enabled|
+|**コメント**|Defender for Endpoint バージョン 101.73.77 以降で使用できます。|
 
 #### <a name="run-a-scan-after-definitions-are-updated"></a>定義が更新された後にスキャンを実行する
 
@@ -204,10 +216,10 @@ ms.locfileid: "63326707"
 |Section|値|
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
-|**キー**|パス|
+|**キー**|path|
 |**データ型**|String|
 |**指定可能な値**|有効なパス|
-|**Comments**|*$type**が excludedPath* の場合にのみ適用されます|
+|**コメント**|*$type**が excludedPath* の場合にのみ適用されます|
 |||
 
 ## <a name="supported-exclusion-types"></a>サポートされている除外の種類
@@ -455,7 +467,7 @@ macOS でMicrosoft Defender for Endpointのクラウド駆動型保護機能を�
 |---|---|
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|enabled|
-|**データ型**|Boolean|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 |||
 
@@ -474,6 +486,24 @@ macOS でMicrosoft Defender for Endpointのクラウド駆動型保護機能を�
 |**データ型**|String|
 |**指定可能な値**|省略可能 (既定値) <p> 必須出席者|
 |||
+
+#### <a name="configure-cloud-block-level"></a>クラウド ブロック レベルを構成する
+
+この設定は、疑わしいファイルをブロックおよびスキャンする Defender for Endpoint の攻撃性を決定します。 この設定がオンの場合、Defender for Endpoint は、ブロックおよびスキャンする疑わしいファイルを識別するときに、より積極的になります。それ以外の場合は、攻撃性が低くなり、より少ない頻度でブロックおよびスキャンされます。 クラウド ブロック レベルを設定する場合は、次の 5 つの値があります。
+
+- 標準 (`normal`): 既定のブロック レベル。
+- 中 (`moderate`): 高信頼度検出に対してのみ判定を行います。
+- 高 (`high`): パフォーマンスを最適化しながら不明なファイルを積極的にブロックします (有害でないファイルをブロックする可能性が高くなります)。
+- High Plus (`high_plus`): 不明なファイルを積極的にブロックし、追加の保護手段を適用します (クライアント デバイスのパフォーマンスに影響を与える可能性があります)。
+- ゼロトレランス (`zero_tolerance`): 不明なプログラムをすべてブロックします。
+
+|Section|値|
+|---|---|
+|**ドメイン**|`com.microsoft.wdav`|
+|**キー**|cloudBlockLevel|
+|**データ型**|String|
+|**指定可能な値**|normal (既定値) <p> 中程 度 <p> 高 <p> high_plus <p> zero_tolerance|
+|**コメント**|Defender for Endpoint バージョン 101.56.62 以降で使用できます。|
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>サンプルの自動送信を有効または無効にする
 
@@ -571,13 +601,13 @@ macOS でMicrosoft Defender for Endpointのユーザー インターフェイス
 |**キー**|consumerExperience|
 |**データ型**|String|
 |**指定可能な値**|有効 (既定) <p> 無効|
-|**Comments**|Microsoft Defender for Endpoint バージョン 101.60.18 以降で使用できます。|
+|**コメント**|Microsoft Defender for Endpoint バージョン 101.60.18 以降で使用できます。|
 |||
 
 
 ### <a name="endpoint-detection-and-response-preferences"></a>エンドポイントの検出と応答の基本設定
 
-macOS でMicrosoft Defender for Endpointのエンドポイントでの検出と対応 (EDR) コンポーネントの基本設定を管理します。
+macOS でMicrosoft Defender for Endpointのエンドポイント検出と応答 (EDR) コンポーネントの基本設定を管理します。
 
 <br>
 
@@ -588,7 +618,7 @@ macOS でMicrosoft Defender for Endpointのエンドポイントでの検出と�
 |**ドメイン**|`com.microsoft.wdav`|
 |**キー**|Edr|
 |**データ型**|ディクショナリ (入れ子になった設定)|
-|**Comments**|ディクショナリの内容の説明については、次のセクションを参照してください。|
+|**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 |||
 
 #### <a name="device-tags"></a>デバイス タグ
@@ -1084,7 +1114,7 @@ com.microsoft.wdav.plist: OK
 
 ### <a name="jamf-deployment"></a>JAMF デプロイ
 
-JAMF コンソールで **[コンピューター** \> **構成プロファイル]** を開き、使用する構成プロファイルに移動し、[**カスタム 設定**] を選択します。 基本設定ドメインとしてエントリ `com.microsoft.wdav` を作成し、前に生成した *.plist を* アップロードします。
+JAMF コンソールで **[コンピューター** \> **構成プロファイル]** を開き、使用する構成プロファイルに移動して、[ **カスタム設定]** を選択します。 基本設定ドメインとしてエントリ `com.microsoft.wdav` を作成し、前に生成した *.plist を* アップロードします。
 
 > [!CAUTION]
 > 適切な基本設定ドメイン (`com.microsoft.wdav`)を入力する必要があります。それ以外の場合、基本設定はMicrosoft Defender for Endpointによって認識されません。
@@ -1101,7 +1131,7 @@ JAMF コンソールで **[コンピューター** \> **構成プロファイル
 
 5. 構成プロファイルを開き、ファイルをアップロードします `com.microsoft.wdav.xml` 。 (このファイルは手順 3 で作成されました。
 
-6. **[OK]** を選択します。
+6. **[OK]** をクリックします。
 
 7. [**割り当ての****管理**\>] を選択します。 [ **インクルード** ] タブで、[ **すべてのユーザーに割り当てる] & [すべてのデバイス**] を選択します。
 

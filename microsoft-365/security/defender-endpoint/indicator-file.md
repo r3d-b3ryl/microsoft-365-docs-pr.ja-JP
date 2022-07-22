@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: da9e030d929f65c7ea5bd83010d2b7f49b1d90d9
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535594"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949505"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -48,16 +48,16 @@ ms.locfileid: "65535594"
 
 ファイルのインジケーターを作成する前に、次の前提条件を理解しておくことが重要です。
 
-- この機能は、組織が **(アクティブ モードで) Microsoft Defender ウイルス対策** を使用し、**クラウドベースの保護が有効になっている場合に** 使用できます。 詳細については、「 [クラウドベースの保護を管理する](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)」を参照してください。
+- この機能は、組織が **Microsoft Defender ウイルス対策 (アクティブ モード) を** 使用し、 **クラウドベースの保護が有効になっている場合に** 使用できます。 詳細については、「 [クラウドベースの保護を管理する](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)」を参照してください。
 
 - マルウェア対策クライアントバージョンは、4.18.1901.x 以降である必要があります。 [毎月のプラットフォームとエンジンのバージョンを確認する](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Windows 10 バージョン 1703 以降、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 のデバイスでサポートされます。
+- Windows 10バージョン 1703 以降、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 を使用するデバイスでサポートされます。
     
    > [!NOTE]
-   > この機能を機能させるには、「オンボード Windows サーバー」の手順に従って[、Windows Server 2016とWindows Server 2012](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) R2 をオンボードする必要があります。 許可、ブロック、および修復アクションを含むカスタム ファイル インジケーターは、[macOSと Linux の強化されたマルウェア対策エンジン機能のパブリック プレビュー](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)でも利用できるようになりました。
+   > この機能を機能させるには、「[Windows サーバーのオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」の手順に従って、Windows Server 2016 R2 と Windows Server 2012 R2 をオンボードする必要があります。 許可、ブロック、および修復アクションを含むカスタム ファイル インジケーターは、 [macOS と Linux の強化されたマルウェア対策エンジン機能のパブリック プレビュー](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)でも利用できるようになりました。
 
-- ファイルのブロックを開始するには、まず、設定で ["ブロックまたは許可" 機能を有効にする](advanced-features.md)必要があります。
+- ファイルのブロックを開始するには、まず[設定] [で [ブロックまたは許可] 機能をオンにする](advanced-features.md) 必要があります。
 
 この機能は、疑わしいマルウェア (または悪意のあるファイル) が Web からダウンロードされないように設計されています。 現在、.exe ファイルや.dll ファイルを含むポータブル実行可能ファイル (PE) ファイルがサポートされています。 カバレッジは時間の経過と共に延長されます。
 
@@ -66,7 +66,7 @@ ms.locfileid: "65535594"
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>設定ページからファイルのインジケーターを作成する
 
-1. ナビゲーション ウィンドウで、([**ルール**] **で) 設定** \> **エンドポイント** \> **インジケーター** を選択します。
+1. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **インジケーター**] ([**ルール****]** \> の下) を選択します。
 
 2. [ **ファイル ハッシュ** ] タブを選択します。
 
@@ -92,7 +92,7 @@ ms.locfileid: "65535594"
 
 ファイル IOC で現在サポートされているアクションは、許可、監査、ブロック、および修復されます。 ファイルをブロックすることを選択した後、アラートのトリガーが必要かどうかを選択できます。 これにより、セキュリティ運用チームに対するアラートの数を制御し、必要なアラートのみが発生することを確認できます。
 
-Microsoft 365 Defenderで、**設定** > **EndpointsIndicatorsAdd** >  >  **新しいファイル ハッシュ** に移動します。
+Microsoft 365 Defenderで、[Settings **Endpoints Indicators** Add New File Hash **]** > \(**新しいファイル ハッシュ****の** >  > 追加\) に移動します。
 
 ファイルをブロックして修復することを選択します。
 
@@ -114,6 +114,8 @@ Microsoft 365 Defenderで、**設定** > **EndpointsIndicatorsAdd** >  >  **新�
 > - EnableFileHashComputation グループ ポリシーが無効になっている場合、ファイル IoC のブロック精度が低下します。 ただし、有効にすると、デバイスのパフォーマンスに影響を `EnableFileHashComputation` 与える可能性があります。 たとえば、ネットワーク共有からローカル デバイス (特に VPN 接続経由) に大きなファイルをコピーすると、デバイスのパフォーマンスに影響を与える可能性があります。
 >
 > EnableFileHashComputation グループ ポリシーの詳細については、「 [Defender CSP](/windows/client-management/mdm/defender-csp)」を参照してください。
+>
+> Linux および macOS 上の Defender for Endpoint でこの機能を構成する方法の詳細については、「 [Linux でファイル ハッシュ計算機能を構成](linux-preferences.md#configure-file-hash-computation-feature) する」と [「macOS でのファイル ハッシュ計算機能の構成](mac-preferences.md#configure-file-hash-computation-feature)」を参照してください。
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>パブリック プレビュー: 高度なハンティング機能
 
@@ -148,21 +150,21 @@ Timestamp > ago(30d)
 証明書と File IoC ポリシー処理の競合は、次の順序に従います。
 
 - アプリケーション制御と AppLocker でファイル Windows Defenderが許可されていない場合は、モード ポリシー/ポリシーを適用します。その後、**ブロック**
-- それ以外の場合は、ファイルがMicrosoft Defender ウイルス対策除外によって許可されている場合は **許可** します。
+- ファイルが Microsoft Defender ウイルス対策の除外によって許可されている場合は 、**許可** する
 - それ以外の場合は、ファイルがブロックによってブロックまたは警告されるか、ファイル IoC に警告されます。その後 **、ブロック/警告**
 - 許可ファイル IoC ポリシーによってファイルが許可されている場合は 、**許可** する
 - ASR 規則、CFA、AV、SmartScreen、**ブロック** によってファイルがブロックされている場合は、それ以外の場合
 - Else **Allow** (AppLocker ポリシー&アプリケーション制御Windows Defender渡します。IoC ルールは適用されません)
 
 >[!NOTE]
-> Microsoft Defender ウイルス対策が **[ブロック]** に設定されているが、[Defender for Endpoint] が **[許可]** に設定されている場合、ポリシーは既定で **[許可]** に設定されます。
+> Microsoft Defender ウイルス対策が **[ブロック**] に設定されているが、[Defender for Endpoint] が **[許可]** に設定されている場合、ポリシーは既定で **[許可]** に設定されます。
 
 同じ適用の種類とターゲットを持つ競合するファイル IoC ポリシーがある場合は、より安全な (つまり長い) ハッシュのポリシーが適用されます。 たとえば、両方のハッシュの種類で同じファイルが定義されている場合、SHA-256 ファイル ハッシュ IoC ポリシーは MD5 ファイル ハッシュ IoC ポリシーに勝ちます。
 
 > [!WARNING]
 > ファイルと証明書のポリシー競合処理は、ドメイン/URL/IP アドレスのポリシー競合処理とは異なります。
 
-脅威と脆弱性の管理のブロックの脆弱なアプリケーション機能は、ファイル IoC を適用に使用し、上記の競合処理順序に従います。
+脅威と脆弱性管理のブロック脆弱なアプリケーション機能は、ファイル IoC を適用に使用し、上記の競合処理順序に従います。
 
 ### <a name="examples"></a>例
 
@@ -176,7 +178,7 @@ Timestamp > ago(30d)
 |攻撃面の縮小ルール|ブロック|許可|許可|
 |Windows Defender Application Control|許可|ブロック|許可|
 |Windows Defender Application Control|ブロック|許可|ブロック|
-|Microsoft Defender ウイルス対策除外|許可|ブロック|許可|
+|Microsoft Defender ウイルス対策の除外|許可|ブロック|許可|
 |
 
 ## <a name="see-also"></a>関連項目

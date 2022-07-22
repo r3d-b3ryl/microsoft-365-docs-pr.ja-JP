@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 description: Exact Data Match アクティビティの通知を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a9c629e5258efd096ce1412a7a42bc7bc672008
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 09bb41de09b6f44a9f556446c5a566322b44ad0d
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641342"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949131"
 ---
 # <a name="create-notifications-for-exact-data-match-activities"></a>Exact Data Match アクティビティの通知を作成する
 
 [Exact Data Match (EDM) を使用してカスタムの機密情報の種類を作成する](sit-learn-about-exact-data-match-based-sits.md#learn-about-exact-data-match-based-sensitive-information-types)と、[監査ログ](search-the-audit-log-in-security-and-compliance.md#before-you-search-the-audit-log)に作成されるアクティビティが多数あります。 [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert) PowerShell コマンドレットを使用して、次のアクティビティが発生したときに知らせる通知を作成できます。
 
-- CreateSchema
-- EditSchema
-- RemoveSchema
-- UploadDataFailed
-- UploadDataCompleted
+- `CreateSchema`
+- `EditSchema`
+- `RemoveSchema`
+- `UploadDataFailed`
+- `UploadDataCompleted`
 
 > [!NOTE]
  EDM アクティビティの通知を作成できるのは、World Wide クラウドと GCC クラウドだけです。
@@ -60,13 +60,13 @@ DLP ライセンスの詳細については、「[セキュリティとコンプ
 
 1. [セキュリティ/コンプライアンス PowerShell](/powershell/exchange/connect-to-scc-powershell) に接続します。
 
-2. 通知を作成するアクティビティを使用して、`New-ProtectionAlert` コマンドレットを実行します。  たとえば、**UploadDataCompleted** 操作が発生したときに通知を受け取りたい場合は、以下を実行します。
+2. 通知を作成するアクティビティを使用して、`New-ProtectionAlert` コマンドレットを実行します。  たとえば、`UploadDataCompleted` 操作が発生したときに通知を受け取りたい場合は、以下を実行します。
 
     ```powershell
     New-ProtectionAlert -Name "EdmUploadCompleteAlertPolicy" -Category Others -NotifyUser <address to send notification to> -ThreatType Activity -Operation UploadDataCompleted -Description "Custom alert policy to track when EDM upload Completed" -AggregationType None
     ```
     
-    **UploadDataFailed** に対して、次のコマンドを実行できます。
+    `UploadDataFailed` に対して、次のコマンドを実行できます。
     
     ```powershell
     New-ProtectionAlert -Name "EdmUploadFailAlertPolicy" -Category Others -NotifyUser <SMTP address to send notification to> -ThreatType Activity -Operation UploadDataFailed -Description "Custom alert policy to track when EDM upload Failed" -AggregationType None -Severity High

@@ -322,7 +322,7 @@
               href: mfi-domain-mail-flow-status-insight.md
         - name: メッセージとファイルを Microsoft に報告する
           items:
-            - name: メッセージとファイルを Microsoft に報告する
+            - name: 疑わしいメールまたはファイルを Microsoft に報告するにはどうすればよいですか
               href: report-junk-email-messages-to-microsoft.md
             - name: 管理者による報告
               href: admin-submission.md

@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a32c8c91350218da619de18e0b1b398a93bf7fda
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 0971933f1099192b1cb8b7a844793f264ef2aa15
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63312657"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949483"
 ---
 # <a name="resources"></a>リソース
 
@@ -128,6 +128,7 @@ Linux 上の Defender for Endpoint をアンインストールするには、い
 |構成|オンデマンド スキャンの並列処理の程度を構成する|`mdatp config maximum-on-demand-scan-threads --value [numerical-value-between-1-and-64]`|
 |構成|セキュリティ インテリジェンスの更新後にスキャンをオン/オフにする|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |構成|アーカイブ スキャンのオン/オフを切り替える (オンデマンド スキャンのみ)|`mdatp config scan-archives --value [enabled/disabled]`|
+|構成|ファイル ハッシュの計算のオン/オフを切り替える|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
 |診断|ログ レベルを変更する|`mdatp log level set --level verbose [error|warning|info|verbose]`|
 |診断|診断ログを生成する|`mdatp diagnostic create --path [directory]`|
 |正常性|製品の正常性を確認する|`mdatp health`|
@@ -143,8 +144,8 @@ Linux 上の Defender for Endpoint をアンインストールするには、い
 |検疫管理|脅威として検出されたファイルを検疫に追加する|`mdatp threat quarantine add --id [threat-id]`|
 |検疫管理|検疫から脅威として検出されたファイルを削除する|`mdatp threat quarantine remove --id [threat-id]`|
 |検疫管理|検疫からファイルを復元する|`mdatp threat quarantine restore --id [threat-id] --path [destination-folder]`|
-|エンドポイントの検出と応答|早期プレビューを設定する (未使用)|`mdatp edr early-preview [enable|disable]`|
-|エンドポイントの検出と応答|group-id を設定する|`mdatp edr group-ids --group-id [group-id]`|
-|エンドポイントの検出と応答|タグを設定/削除する(サポートされているのみ)`GROUP`|`mdatp edr tag set --name GROUP --value [tag]`|
-|エンドポイントの検出と応答|リストの除外 (ルート)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
+|エンドポイントの検出と対応|早期プレビューを設定する (未使用)|`mdatp edr early-preview [enable|disable]`|
+|エンドポイントの検出と対応|group-id を設定する|`mdatp edr group-ids --group-id [group-id]`|
+|エンドポイントの検出と対応|タグを設定/削除する(サポートされているのみ)`GROUP`|`mdatp edr tag set --name GROUP --value [tag]`|
+|エンドポイントの検出と対応|リストの除外 (ルート)|`mdatp edr exclusion list [processes|paths|extensions|all]`|
 |
