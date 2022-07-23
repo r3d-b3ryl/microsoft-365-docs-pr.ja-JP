@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72509f7480d54819fc29f40bab0e2bf65dcd8660
-ms.sourcegitcommit: 349f0f54b0397cdd7d8fbb9ef07f1b6654a32d6e
+ms.openlocfilehash: 4619b24d06af4cdb80916fb9eacbc52b2fa55c21
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/20/2022
-ms.locfileid: "65622033"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66983963"
 ---
 # <a name="manage-indicators"></a>インジケーターの管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "65622033"
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
-1. ナビゲーション ウィンドウで、([**ルール**] **で) 設定** \> **エンドポイント** \> **インジケーター** を選択します。
+1. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **インジケーター**] ([**ルール****]** \> の下) を選択します。
 
 2. 管理するエンティティの種類のタブを選択します。
 
@@ -47,7 +47,7 @@ ms.locfileid: "65622033"
 
 サポートされている列属性を把握するには、サンプル CSV をダウンロードします。
 
-1. ナビゲーション ウィンドウで、([**ルール**] **で) 設定** \> **エンドポイント** \> **インジケーター** を選択します。
+1. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **インジケーター**] ([**ルール****]** \> の下) を選択します。
 
 2. インジケーターをインポートするエンティティの種類のタブを選択します。
 
@@ -72,9 +72,9 @@ description|String| インジケーターの説明。 **必須**
 expirationTime|DateTimeOffset|YYYY-MM-DDTHH:MM:SS.0Z 形式のインジケーターの有効期限。 このインジケーターは、有効期限が経過すると削除され、有効期限の時刻に何が起こるかは秒 (SS) の値で発生します。 **Optional**
 severity|列挙|インジケーターの重大度。 指定できる値は、"Informational"、"Low"、"Medium"、"High" です。 **Optional**
 recommendedActions|String|TI インジケーター アラート推奨アクション。 **Optional**
-rbacGroupNames|String|インジケーターが適用される RBAC グループ名のコンマ区切りリスト。 **Optional**
+rbacGroups|String|インジケーターが適用される RBAC グループのコンマ区切りリスト。 **Optional**
 category|String|アラートのカテゴリ。 例として、実行と資格情報へのアクセスがあります。 **Optional**
-mitretechniques|String|MITRE 手法のコード/ID (コンマ区切り)。 詳細については、[Enterpriseの戦術に関する説明を](https://attack.mitre.org/tactics/enterprise/)参照してください。 **オプション** MITRE 手法の場合は、カテゴリに値を追加することをお勧めします。
+mitretechniques|String|MITRE 手法のコード/ID (コンマ区切り)。 詳細については、「 [エンタープライズ戦略](https://attack.mitre.org/tactics/enterprise/)」を参照してください。 **オプション** MITRE 手法の場合は、カテゴリに値を追加することをお勧めします。
 GenerateAlert|String|アラートを生成する必要があるかどうか。 指定できる値は True または False です。 **Optional**
 
 > [!NOTE]
