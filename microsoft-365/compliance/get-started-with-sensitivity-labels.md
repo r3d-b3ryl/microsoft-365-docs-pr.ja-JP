@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 組織のデータを保護するために秘密度ラベルを展開する準備はできていますが、どこから始めればよいかわかりませんか? ラベル付けの移行に役立つ実用的なガイダンスをお読みください。
-ms.openlocfilehash: 0161071c1dbfb8941c4f89a45ac2de52d58a2236
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: 管理者、ライセンス要件、および機密ラベルを使用して組織のデータを保護する一般的なシナリオの規範的な手順。
+ms.openlocfilehash: 84e111bbcc6b0d12f1f209993b9c9a0404fa7a77
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641518"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949329"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 

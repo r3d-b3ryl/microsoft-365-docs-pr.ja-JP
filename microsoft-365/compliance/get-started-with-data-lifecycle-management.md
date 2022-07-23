@@ -18,19 +18,19 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MOE150
 - MET150
-description: 組織のデータの管理を開始する準備はできましたが、どこから始めればよいかわからないでしょうか。開始するには、いくつかの規範的なガイダンスをお読みください。
-ms.openlocfilehash: 97890f7d873cf19ddc1050cc77f20aa2408c18af
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: 管理者、ライセンス要件、および組織のデータのライフサイクルを管理する一般的なシナリオの規範的な手順。
+ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629675"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66942386"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>データ ライフサイクル管理の使用を開始する
 
 >*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
-保持する必要のあるコンテンツを保持し、その必要のないコンテンツを削除することにより、組織のデータの管理を開始する用意はできていますか? 作業を開始するには、Microsoft Purview データ ライフサイクル管理 (以前の Microsoft Information Governance) に関する次のガイダンスを使用します。
+保持する必要のあるコンテンツを保持し、その必要のないコンテンツを削除することにより、組織のデータのライフサイクルの管理を開始する用意はできていますか? 作業を開始するには、Microsoft Purview データ ライフサイクル管理 (以前の Microsoft Information Governance) に関する次のガイダンスを使用します。
 
 1. Microsoft 365 で **保持と削除がどのように機能するか** を理解し、アイテム保持ポリシーが必要なワークロードを特定し、例外の保持ラベルを作成する必要があるかどうかを確認する: [保持についての説明](retention.md)
     

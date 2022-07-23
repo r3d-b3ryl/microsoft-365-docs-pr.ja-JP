@@ -364,6 +364,8 @@
           href: security-and-compliance/set-up-multi-factor-authentication.md
         - name: 優先アカウントを管理および監視する
           href: setup/priority-accounts.md
+        - name: Microsoft 365 Business の脅威に対する保護を強化する
+          href: security-and-compliance/increase-threat-protection.md
         - name: アイドル セッション タイムアウトをオンにする
           href: manage/idle-session-timeout-web-apps.md
         - name: Office 2013 の先進認証を有効にする

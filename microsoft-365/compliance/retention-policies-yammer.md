@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Yammer に適用されるアイテム保持ポリシーについて説明します。
-ms.openlocfilehash: d2703947d2cebc5818793362e55b8eae9cec2ed8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+description: 組織の Yammer メッセージの自動保持または削除を管理できるように、Yammer に適用される Microsoft 365 保持ポリシーについて説明します。
+ms.openlocfilehash: c449dd7a562d770eea38e955897cb7bf977cd91e
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639624"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66944023"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Yammer の保持の詳細
 
