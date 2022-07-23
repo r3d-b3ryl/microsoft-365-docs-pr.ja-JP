@@ -372,8 +372,614 @@
               href: sit-common-scenarios.md
         - name: 機密情報の種類のリファレンス
           items:
-            - name: 機密情報の種類のエンティティ定義
-              href: sensitive-information-type-entity-definitions.md
+            - name: 全ての機密情報の種類のエンティティ定義
+              items:
+                - name: 機密情報の種類のエンティティ定義
+                  href: sensitive-information-type-entity-definitions.md
+                - name: ABA ルーティング番号
+                  href: sit-defn-aba-routing.md
+                - name: すべての氏名
+                  href: sit-defn-all-full-names.md
+                - name: すべての医療条項
+                  href: sit-defn-all-medical-terms-conditions.md
+                - name: すべての住所
+                  href: sit-defn-all-physical-addresses.md
+                - name: Amazon S3 クライアント シークレット アクセス キー
+                  href: sit-defn-amazon-s3-client-secret-access-key.md
+                - name: アルゼンチンの国民識別 (DNI) 番号
+                  href: sit-defn-argentina-national-identity-numbers.md
+                - name: アルゼンチンの一意の税金識別キー
+                  href: sit-defn-argentina-unique-tax-identification-key.md
+                - name: ASP.NET マシン キー
+                  href: sit-defn-asp-net-machine-key.md
+                - name: オーストラリアの銀行口座番号
+                  href: sit-defn-australia-bank-account-number.md
+                - name: オーストラリアの事業者番号
+                  href: sit-defn-australia-business-number.md
+                - name: オーストラリアの会社番号
+                  href: sit-defn-australia-company-number.md
+                - name: オーストラリアの運転免許証番号
+                  href: sit-defn-australia-drivers-license-number.md
+                - name: オーストラリアの医療口座番号
+                  href: sit-defn-australia-medical-account-number.md
+                - name: オーストラリアのパスポート番号
+                  href: sit-defn-australia-passport-number.md
+                - name: オーストラリアの物理アドレス
+                  href: sit-defn-australia-physical-addresses.md
+                - name: オーストラリアの納税者番号
+                  href: sit-defn-australia-tax-file-number.md
+                - name: オーストリアの運転免許証番号
+                  href: sit-defn-austria-drivers-license-number.md
+                - name: オーストリアの ID カード
+                  href: sit-defn-austria-identity-card.md
+                - name: オーストリアのパスポート番号
+                  href: sit-defn-austria-passport-number.md
+                - name: オーストリアの住所
+                  href: sit-defn-austria-physical-addresses.md
+                - name: オーストリアの社会保障番号
+                  href: sit-defn-austria-social-security-number.md
+                - name: オーストリアの納税者番号
+                  href: sit-defn-austria-tax-identification-number.md
+                - name: オーストリアの付加価値税
+                  href: sit-defn-austria-value-added-tax.md
+                - name: Azure AD クライアント アクセス トークン
+                  href: sit-defn-azure-ad-client-access-token.md
+                - name: Azure AD クライアント シークレット
+                  href: sit-defn-azure-ad-client-secret.md
+                - name: Azure AD のユーザー資格情報
+                  href: sit-defn-azure-ad-user-credentials.md
+                - name: Azure App Service 展開のパスワード
+                  href: sit-defn-azure-app-service-deployment-password.md
+                - name: Azure Batch の共有アクセス キー
+                  href: sit-defn-azure-batch-shared-access-key.md
+                - name: Azure Bot Framework の秘密鍵
+                  href: sit-defn-azure-bot-framework-secret-key.md
+                - name: Azure Bot サービス アプリ シークレット
+                  href: sit-defn-azure-bot-service-app-secret.md
+                - name: Azure Cognitive Search API キー
+                  href: sit-defn-azure-cognitive-search-api-key.md
+                - name: Azure Cognitive Service キー
+                  href: sit-defn-azure-cognitive-service-key.md
+                - name: Azure Container Registry のアクセス キー
+                  href: sit-defn-azure-container-registry-access-key.md
+                - name: Azure COSMOS DB アカウント アクセス キー
+                  href: sit-defn-azure-cosmos-db-account-access-key.md
+                - name: Azure Databricks の個人用アクセス トークン
+                  href: sit-defn-azure-databricks-personal-access-token.md
+                - name: Azure DevOps アプリ シークレット
+                  href: sit-defn-azure-devops-app-secret.md
+                - name: Azure DevOps 個人用アクセス トークン
+                  href: sit-defn-azure-devops-personal-access-token.md
+                - name: Azure DocumentDB の認証キー
+                  href: sit-defn-azure-document-db-auth-key.md
+                - name: Azure EventGrid アクセス キー
+                  href: sit-defn-azure-eventgrid-access-key.md
+                - name: Azure 関数マスター/ API キー
+                  href: sit-defn-azure-function-master-api-key.md
+                - name: Azure の IAAS データベース接続文字列と Azure SQL の接続文字列
+                  href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
+                - name: Azure の IoT 接続文字列
+                  href: sit-defn-azure-iot-connection-string.md
+                - name: Azure IoT の共有アクセス キー
+                  href: sit-defn-azure-iot-shared-access-key.md
+                - name: Azure ロジック アプリの共有アクセス署名
+                  href: sit-defn-azure-logic-app-shared-access-signature.md
+                - name: Azure Machine Learning の Web サービス API キー
+                  href: sit-defn-azure-machine-learning-web-service-api-key.md
+                - name: Azure Maps サブスクリプション キー
+                  href: sit-defn-azure-maps-subscription-key.md
+                - name: Azure の発行設定パスワード
+                  href: sit-defn-azure-publish-setting-password.md
+                - name: Azure Redis Cache の接続文字列
+                  href: sit-defn-azure-redis-cache-connection-string.md
+                - name: Azure Redis Cache の接続文字列パスワード
+                  href: sit-defn-azure-redis-cache-connection-string-password.md
+                - name: Azure の SAS
+                  href: sit-defn-azure-sas.md
+                - name: Azure Service Bus の接続文字列
+                  href: sit-defn-azure-service-bus-connection-string.md
+                - name: Azure Service Bus の共有アクセス署名
+                  href: sit-defn-azure-service-bus-shared-access-signature.md
+                - name: Azure 共有アクセス キー / Web フック トークン
+                  href: sit-defn-azure-shared-access-key-web-hook-token.md
+                - name: Azure SignalR アクセス キー
+                  href: sit-defn-azure-signalr-access-key.md
+                - name: Azure SQL 接続文字列
+                  href: sit-defn-azure-sql-connection-string.md
+                - name: Azure Storage アカウント アクセス キー
+                  href: sit-defn-azure-storage-account-access-key.md
+                - name: Azure Storage のアカウント キー
+                  href: sit-defn-azure-storage-account-key.md
+                - name: Azure Storage のアカウント キー (一般)
+                  href: sit-defn-azure-storage-account-key-generic.md
+                - name: Azure Storage アカウントの共有アクセス署名
+                  href: sit-defn-azure-storage-account-shared-access-signature.md
+                - name: Azure Storage アカウントの高リスク リソースの共有アクセス署名
+                  href: sit-defn-azure-storage-account-shared-access-signature-high-risk-resources.md
+                - name: Azure サブスクリプション管理証明書
+                  href: sit-defn-azure-subscription-management-certificate.md
+                - name: ベルギーの運転免許証番号
+                  href: sit-defn-belgium-drivers-license-number.md
+                - name: ベルギーの国民番号
+                  href: sit-defn-belgium-national-number.md
+                - name: ベルギーのパスポート番号
+                  href: sit-defn-belgium-passport-number.md
+                - name: ベルギーの物理的な住所
+                  href: sit-defn-belgium-physical-addresses.md
+                - name: ベルギーの付加価値税番号
+                  href: sit-defn-belgium-value-added-tax-number.md
+                - name: 血液検査の用語
+                  href: sit-defn-blood-test-terms.md
+                - name: ブランド医薬品名
+                  href: sit-defn-brand-medication-names.md
+                - name: ブラジルの CPF 番号
+                  href: sit-defn-brazil-cpf-number.md
+                - name: ブラジルの法人番号 (CNPJ)
+                  href: sit-defn-brazil-legal-entity-number.md
+                - name: ブラジルの国民識別カード (RG)
+                  href: sit-defn-brazil-national-identification-card.md
+                - name: ブラジルの住所
+                  href: sit-defn-brazil-physical-addresses.md
+                - name: ブルガリアの運転免許証番号
+                  href: sit-defn-bulgaria-drivers-license-number.md
+                - name: ブルガリアのパスポート番号
+                  href: sit-defn-bulgaria-passport-number.md
+                - name: ブルガリアの住所
+                  href: sit-defn-bulgaria-physical-addresses.md
+                - name: ブルガリアの統一市民番号
+                  href: sit-defn-bulgaria-uniform-civil-number.md
+                - name: カナダの銀行口座番号
+                  href: sit-defn-canada-bank-account-number.md
+                - name: カナダの運転免許証番号
+                  href: sit-defn-canada-drivers-license-number.md
+                - name: カナダの健康保険番号
+                  href: sit-defn-canada-health-service-number.md
+                - name: カナダのパスポート番号
+                  href: sit-defn-canada-passport-number.md
+                - name: カナダの個人保健識別番号 (PHIN)
+                  href: sit-defn-canada-personal-health-identification-number.md
+                - name: カナダの住所
+                  href: sit-defn-canada-physical-addresses.md
+                - name: カナダの社会保険番号
+                  href: sit-defn-canada-social-insurance-number.md
+                - name: チリの身分証明書番号
+                  href: sit-defn-chile-identity-card-number.md
+                - name: 中国の居民身分証明書 (PRC) 番号
+                  href: sit-defn-china-resident-identity-card-number.md
+                - name: クライアント シークレット / API キー
+                  href: sit-defn-client-secret-api-key.md
+                - name: URL の資格情報
+                  href: sit-defn-credentials-in-url.md
+                - name: クレジット カード番号
+                  href: sit-defn-credit-card-number.md
+                - name: クロアチアの運転免許証番号
+                  href: sit-defn-croatia-drivers-license-number.md
+                - name: クロアチアの身分証明書番号
+                  href: sit-defn-croatia-identity-card-number.md
+                - name: クロアチアのパスポート番号
+                  href: sit-defn-croatia-passport-number.md
+                - name: クロアチアの個人識別 (OIB) 番号
+                  href: sit-defn-croatia-personal-identification-number.md
+                - name: クロアチアの住所
+                  href: sit-defn-croatia-physical-addresses.md
+                - name: キプロスの運転免許証番号
+                  href: sit-defn-cyprus-drivers-license-number.md
+                - name: キプロスのIDカード
+                  href: sit-defn-cyprus-identity-card.md
+                - name: キプロスのパスポート番号
+                  href: sit-defn-cyprus-passport-number.md
+                - name: キプロスの住所
+                  href: sit-defn-cyprus-physical-addresses.md
+                - name: キプロスの納税者番号
+                  href: sit-defn-cyprus-tax-identification-number.md
+                - name: チェコの運転免許証番号
+                  href: sit-defn-czech-drivers-license-number.md
+                - name: チェコのパスポート番号
+                  href: sit-defn-czech-passport-number.md
+                - name: チェコの個人識別番号
+                  href: sit-defn-czech-personal-identity-number.md
+                - name: チェコ共和国の住所
+                  href: sit-defn-czech-republic-physical-addresses.md
+                - name: デンマークの運転免許証番号
+                  href: sit-defn-denmark-drivers-license-number.md
+                - name: デンマークのパスポート番号
+                  href: sit-defn-denmark-passport-number.md
+                - name: デンマークの個人識別番号
+                  href: sit-defn-denmark-personal-identification-number.md
+                - name: デンマークの住所
+                  href: sit-defn-denmark-physical-addresses.md
+                - name: 病気
+                  href: sit-defn-diseases.md
+                - name: 麻薬取締局 (DEA) 番号
+                  href: sit-defn-drug-enforcement-agency-number.md
+                - name: エストニアの運転免許証番号
+                  href: sit-defn-estonia-drivers-license-number.md
+                - name: エストニアのパスポート番号
+                  href: sit-defn-estonia-passport-number.md
+                - name: エストニアの個人識別コード
+                  href: sit-defn-estonia-personal-identification-code.md
+                - name: エストニアの住所
+                  href: sit-defn-estonia-physical-addresses.md
+                - name: EU のデビット カード番号
+                  href: sit-defn-eu-debit-card-number.md
+                - name: EU の運転免許証番号
+                  href: sit-defn-eu-drivers-license-number.md
+                - name: EU の国民識別番号
+                  href: sit-defn-eu-national-identification-number.md
+                - name: EU のパスポート番号
+                  href: sit-defn-eu-passport-number.md
+                - name: EU の社会保障番号または同等の ID
+                  href: sit-defn-eu-social-security-number-equivalent-identification.md
+                - name: EU の納税者番号
+                  href: sit-defn-eu-tax-identification-number.md
+                - name: フィンランドの運転免許証番号
+                  href: sit-defn-finland-drivers-license-number.md
+                - name: フィンランドの欧州健康保険番号
+                  href: sit-defn-finland-european-health-insurance-number.md
+                - name: フィンランドの国民 ID
+                  href: sit-defn-finland-national-id.md
+                - name: フィンランドのパスポート番号
+                  href: sit-defn-finland-passport-number.md
+                - name: フィンランドの住所
+                  href: sit-defn-finland-physical-addresses.md
+                - name: フランスの運転免許証番号
+                  href: sit-defn-france-drivers-license-number.md
+                - name: フランスの健康保険番号
+                  href: sit-defn-france-health-insurance-number.md
+                - name: フランスの国民識別カード (CNI)
+                  href: sit-defn-france-national-id-card.md
+                - name: フランスのパスポート番号
+                  href: sit-defn-france-passport-number.md
+                - name: フランスの住所
+                  href: sit-defn-france-physical-addresses.md
+                - name: フランスの社会保障番号 (INSEE)
+                  href: sit-defn-france-social-security-number.md
+                - name: フランスの納税者番号
+                  href: sit-defn-france-tax-identification-number.md
+                - name: フランスの付加価値税番号
+                  href: sit-defn-france-value-added-tax-number.md
+                - name: 一般的なパスワード
+                  href: sit-defn-general-password.md
+                - name: 一般的な対称キー
+                  href: sit-defn-general-symmetric-key.md
+                - name: ジェネリック医薬品名
+                  href: sit-defn-generic-medication-names.md
+                - name: ドイツの運転免許証番号
+                  href: sit-defn-germany-drivers-license-number.md
+                - name: ドイツの身分証明書番号
+                  href: sit-defn-germany-identity-card-number.md
+                - name: ドイツのパスポート番号
+                  href: sit-defn-germany-passport-number.md
+                - name: ドイツの住所
+                  href: sit-defn-germany-physical-addresses.md
+                - name: ドイツの納税者番号
+                  href: sit-defn-germany-tax-identification-number.md
+                - name: ドイツの付加価値税番号
+                  href: sit-defn-germany-value-added-tax-number.md
+                - name: GitHub 個人用アクセス トークン
+                  href: sit-defn-github-personal-access-token.md
+                - name: Google API キー
+                  href: sit-defn-google-api-key.md
+                - name: ギリシャの運転免許証番号
+                  href: sit-defn-greece-drivers-license-number.md
+                - name: ギリシャの国民識別カード
+                  href: sit-defn-greece-national-id-card.md
+                - name: ギリシャのパスポート番号
+                  href: sit-defn-greece-passport-number.md
+                - name: ギリシャの住所
+                  href: sit-defn-greece-physical-addresses.md
+                - name: ギリシャの社会保障番号 (AMKA)
+                  href: sit-defn-greece-social-security-number.md
+                - name: ギリシャの納税者番号
+                  href: sit-defn-greece-tax-identification-number.md
+                - name: 香港の ID カード (HKID) 番号
+                  href: sit-defn-hong-kong-identity-card-number.md
+                - name: HTTP 承認ヘッダー
+                  href: sit-defn-http-authorization-header.md
+                - name: ハンガリーの運転免許証番号
+                  href: sit-defn-hungary-drivers-license-number.md
+                - name: ハンガリーのパスポート番号
+                  href: sit-defn-hungary-passport-number.md
+                - name: ハンガリーの個人識別番号
+                  href: sit-defn-hungary-personal-identification-number.md
+                - name: ハンガリーの物理アドレス
+                  href: sit-defn-hungary-physical-addresses.md
+                - name: ハンガリーの社会保障番号 (TAJ)
+                  href: sit-defn-hungary-social-security-number.md
+                - name: ハンガリーの納税者番号
+                  href: sit-defn-hungary-tax-identification-number.md
+                - name: ハンガリーの付加価値税番号
+                  href: sit-defn-hungary-value-added-tax-number.md
+                - name: アイスランドの住所
+                  href: sit-defn-iceland-physical-addresses.md
+                - name: 米国の Disability Evaluation Under Social Security にリストされている障碍
+                  href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
+                - name: インドの運転免許証番号
+                  href: sit-defn-india-drivers-license-number.md
+                - name: インドの GST 番号
+                  href: sit-defn-india-gst-number.md
+                - name: インドの永久口座番号 (PAN)
+                  href: sit-defn-india-permanent-account-number.md
+                - name: インドの固有識別 (Aadhaar) 番号
+                  href: sit-defn-india-unique-identification-number.md
+                - name: インドの投票者 ID カード
+                  href: sit-defn-india-voter-id-card.md
+                - name: インドネシアの身分証明書 (KTP) 番号
+                  href: sit-defn-indonesia-identity-card-number.md
+                - name: 国際銀行口座番号 (IBAN)
+                  href: sit-defn-international-banking-account-number.md
+                - name: 国際疾病分類 (ICD-10-CM)
+                  href: sit-defn-international-classification-of-diseases-icd-10-cm.md
+                - name: 国際疾病分類 (ICD-9-CM)
+                  href: sit-defn-international-classification-of-diseases-icd-9-cm.md
+                - name: IP アドレス
+                  href: sit-defn-ip-address.md
+                - name: IP アドレス (v4)
+                  href: sit-defn-ip-address-v4.md
+                - name: IP アドレス (v6)
+                  href: sit-defn-ip-address-v6.md
+                - name: アイルランドの運転免許証番号
+                  href: sit-defn-ireland-drivers-license-number.md
+                - name: アイルランドのパスポート番号
+                  href: sit-defn-ireland-passport-number.md
+                - name: アイルランドの個人公共サービス (PPS) 番号
+                  href: sit-defn-ireland-personal-public-service-number.md
+                - name: アイルランドの住所
+                  href: sit-defn-ireland-physical-addresses.md
+                - name: イスラエルの銀行口座番号
+                  href: sit-defn-israel-bank-account-number.md
+                - name: イスラエルの国民識別番号
+                  href: sit-defn-israel-national-identification-number.md
+                - name: イタリアの運転免許証番号
+                  href: sit-defn-italy-drivers-license-number.md
+                - name: イタリアの会計コード
+                  href: sit-defn-italy-fiscal-code.md
+                - name: イタリアのパスポート番号
+                  href: sit-defn-italy-passport-number.md
+                - name: イタリアの住所
+                  href: sit-defn-italy-physical-addresses.md
+                - name: イタリアの付加価値税番号
+                  href: sit-defn-italy-value-added-tax-number.md
+                - name: 日本の銀行口座番号
+                  href: sit-defn-japan-bank-account-number.md
+                - name: 日本の運転免許証番号
+                  href: sit-defn-japan-drivers-license-number.md
+                - name: 日本の法人用マイナンバー
+                  href: sit-defn-japan-my-number-corporate.md
+                - name: 日本の個人用マイ ナンバー
+                  href: sit-defn-japan-my-number-personal.md
+                - name: 日本のパスポート番号
+                  href: sit-defn-japan-passport-number.md
+                - name: 日本の在留カード番号
+                  href: sit-defn-japan-residence-card-number.md
+                - name: 日本の住民登録番号
+                  href: sit-defn-japan-resident-registration-number.md
+                - name: 日本の社会保険番号 (SIN)
+                  href: sit-defn-japan-social-insurance-number.md
+                - name: 臨床検査の用語
+                  href: sit-defn-lab-test-terms.md
+                - name: ラトビアの運転免許証番号
+                  href: sit-defn-latvia-drivers-license-number.md
+                - name: ラトビアのパスポート番号
+                  href: sit-defn-latvia-passport-number.md
+                - name: ラトビアの個人コード
+                  href: sit-defn-latvia-personal-code.md
+                - name: ラトビアの住所
+                  href: sit-defn-latvia-physical-addresses.md
+                - name: リヒテンシュタインの住所
+                  href: sit-defn-liechtenstein-physical-addresses.md
+                - name: 病状に関連するライフスタイル
+                  href: sit-defn-lifestyles-relate-to-medical-conditions.md
+                - name: リトアニアの運転免許証番号
+                  href: sit-defn-lithuania-drivers-license-number.md
+                - name: リトアニアパスポート番号
+                  href: sit-defn-lithuania-passport-number.md
+                - name: リトアニアの個人コード
+                  href: sit-defn-lithuania-personal-code.md
+                - name: リトアニアの物理アドレス
+                  href: sit-defn-lithuania-physical-addresses.md
+                - name: ルクセンブルクの運転免許証番号
+                  href: sit-defn-luxemburg-drivers-license-number.md
+                - name: ルクセンブルク国民識別番号 (国民)
+                  href: sit-defn-luxemburg-national-identification-number-natural-persons.md
+                - name: ルクセンブルク国民識別番号 (国民以外の人)
+                  href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
+                - name: ルクセンブルクのパスポート番号
+                  href: sit-defn-luxemburg-passport-number.md
+                - name: ルクセンブルクの住所
+                  href: sit-defn-luxemburg-physical-addresses.md
+                - name: マレーシアの識別カード番号
+                  href: sit-defn-malaysia-identification-card-number.md
+                - name: マルタの運転免許証番号
+                  href: sit-defn-malta-drivers-license-number.md
+                - name: マルタの身分証明書番号
+                  href: sit-defn-malta-identity-card-number.md
+                - name: マルタのパスポート番号
+                  href: sit-defn-malta-passport-number.md
+                - name: マルタの住所
+                  href: sit-defn-malta-physical-addresses.md
+                - name: マルタの納税者番号
+                  href: sit-defn-malta-tax-identification-number.md
+                - name: 専門医
+                  href: sit-defn-medical-specialities.md
+                - name: 医療受取人識別子 (MBI) カード
+                  href: sit-defn-medicare-beneficiary-Identifier-card.md
+                - name: メキシコ固有人口レジストリ コード (CURP)
+                  href: sit-defn-mexico-unique-population-registry-code.md
+                - name: Microsoft Bing マップ キー
+                  href: sit-defn-microsoft-bing-maps-key.md
+                - name: オランダの市民サービス (BSN) 番号
+                  href: sit-defn-netherlands-citizens-service-number.md
+                - name: オランダの運転免許証番号
+                  href: sit-defn-netherlands-drivers-license-number.md
+                - name: オランダのパスポート番号
+                  href: sit-defn-netherlands-passport-number.md
+                - name: オランダの物理アドレス
+                  href: sit-defn-netherlands-physical-addresses.md
+                - name: オランダの納税者番号
+                  href: sit-defn-netherlands-tax-identification-number.md
+                - name: オランダ付加価値税番号
+                  href: sit-defn-netherlands-value-added-tax-number.md
+                - name: ニュージーランド銀行口座番号
+                  href: sit-defn-new-zealand-bank-account-number.md
+                - name: ニュージーランド運転免許証番号
+                  href: sit-defn-new-zealand-drivers-license-number.md
+                - name: ニュージーランドの内国歳入番号
+                  href: sit-defn-new-zealand-inland-revenue-number.md
+                - name: ニュージーランドの保健省番号
+                  href: sit-defn-new-zealand-ministry-of-health-number.md
+                - name: ニュージーランドの住所
+                  href: sit-defn-new-zealand-physical-addresses.md
+                - name: ニュージーランドの社会福祉番号
+                  href: sit-defn-new-zealand-social-welfare-number.md
+                - name: ノルウェーの識別番号
+                  href: sit-defn-norway-identification-number.md
+                - name: ノルウェーの住所
+                  href: sit-defn-norway-physical-addresses.md
+                - name: フィリピンの汎用多目的識別番号
+                  href: sit-defn-philippines-unified-multi-purpose-identification-number.md
+                - name: ポーランドの運転免許証番号
+                  href: sit-defn-poland-drivers-license-number.md
+                - name: ポーランドの ID カード
+                  href: sit-defn-poland-identity-card.md
+                - name: ポーランドの国民 ID (PESEL)
+                  href: sit-defn-poland-national-id.md
+                - name: ポーランドのパスポート番号
+                  href: sit-defn-poland-passport-number.md
+                - name: ポーランドの住所
+                  href: sit-defn-poland-physical-addresses.md
+                - name: ポーランドの REGON 番号
+                  href: sit-defn-poland-regon-number.md
+                - name: ポーランドの納税者番号
+                  href: sit-defn-poland-tax-identification-number.md
+                - name: ポルトガルの市民カード番号
+                  href: sit-defn-portugal-citizen-card-number.md
+                - name: ポルトガルの運転免許証番号
+                  href: sit-defn-portugal-drivers-license-number.md
+                - name: ポルトガルのパスポート番号
+                  href: sit-defn-portugal-passport-number.md
+                - name: ポルトガルの住所
+                  href: sit-defn-portugal-physical-addresses.md
+                - name: ポルトガルの納税者番号
+                  href: sit-defn-portugal-tax-identification-number.md
+                - name: ルーマニアの運転免許証番号
+                  href: sit-defn-romania-drivers-license-number.md
+                - name: ルーマニアのパスポート番号
+                  href: sit-defn-romania-passport-number.md
+                - name: ルーマニアの個人識別数字コード (CNP)
+                  href: sit-defn-romania-personal-numeric-code.md
+                - name: ルーマニアの住所
+                  href: sit-defn-romania-physical-addresses.md
+                - name: ロシアの国内パスポート番号
+                  href: sit-defn-russia-passport-number-domestic.md
+                - name: ロシアの国際パスポート番号
+                  href: sit-defn-russia-passport-number-international.md
+                - name: サウジアラビアの国民 ID
+                  href: sit-defn-saudi-arabia-national-id.md
+                - name: シンガポールの国民登録 ID カード (NRIC) 番号
+                  href: sit-defn-singapore-national-registration-identity-card-number.md
+                - name: Slack アクセス トークン
+                  href: sit-defn-slack-access-token.md
+                - name: スロバキアの運転免許証番号
+                  href: sit-defn-slovakia-drivers-license-number.md
+                - name: スロバキアのパスポート番号
+                  href: sit-defn-slovakia-passport-number.md
+                - name: スロバキアの個人番号
+                  href: sit-defn-slovakia-personal-number.md
+                - name: スロバキアの物理アドレス
+                  href: sit-defn-slovakia-physical-addresses.md
+                - name: スロベニアの運転免許証番号
+                  href: sit-defn-slovenia-drivers-license-number.md
+                - name: スロベニアのパスポート番号
+                  href: sit-defn-slovenia-passport-number.md
+                - name: スロベニアの物理アドレス
+                  href: sit-defn-slovenia-physical-addresses.md
+                - name: スロベニアの納税者番号
+                  href: sit-defn-slovenia-tax-identification-number.md
+                - name: スロベニアの一意のマスター市民番号
+                  href: sit-defn-slovenia-unique-master-citizen-number.md
+                - name: 南アフリカの識別番号
+                  href: sit-defn-south-africa-identification-number.md
+                - name: 韓国の住民登録番号
+                  href: sit-defn-south-korea-resident-registration-number.md
+                - name: スペインの DNI
+                  href: sit-defn-spain-dni.md
+                - name: スペインの運転免許証番号
+                  href: sit-defn-spain-drivers-license-number.md
+                - name: スペインのパスポート番号
+                  href: sit-defn-spain-passport-number.md
+                - name: スペインの物理アドレス
+                  href: sit-defn-spain-physical-addresses.md
+                - name: スペインの社会保障番号 (SSN)
+                  href: sit-defn-spain-social-security-number.md
+                - name: スペインの納税者番号
+                  href: sit-defn-spain-tax-identification-number.md
+                - name: SQL Server の接続文字列
+                  href: sit-defn-sql-server-connection-string.md
+                - name: 外科的処置
+                  href: sit-defn-surgical-procedures.md
+                - name: スウェーデンの運転免許証番号
+                  href: sit-defn-sweden-drivers-license-number.md
+                - name: スウェーデンの国民 ID
+                  href: sit-defn-sweden-national-id.md
+                - name: スウェーデンのパスポート番号
+                  href: sit-defn-sweden-passport-number.md
+                - name: スウェーデンの物理アドレス
+                  href: sit-defn-sweden-physical-addresses.md
+                - name: スウェーデンの納税者番号
+                  href: sit-defn-sweden-tax-identification-number.md
+                - name: SWIFT コード
+                  href: sit-defn-swift-code.md
+                - name: スイスの住所
+                  href: sit-defn-switzerland-physical-addresses.md
+                - name: スイスの SSN AHV 番号
+                  href: sit-defn-switzerland-ssn-ahv-number.md
+                - name: 台湾の国民識別番号
+                  href: sit-defn-taiwan-national-identification-number.md
+                - name: 台湾のパスポート番号
+                  href: sit-defn-taiwan-passport-number.md
+                - name: 台湾の在留証明書 (ARC/TARC) 番号
+                  href: sit-defn-taiwan-resident-certificate-number.md
+                - name: タイの国民識別コード
+                  href: sit-defn-thai-population-identification-code.md
+                - name: トルコの国民識別番号
+                  href: sit-defn-turkey-national-identification-number.md
+                - name: トルコの住所
+                  href: sit-defn-turkey-physical-addresses.md
+                - name: 薬品の種類
+                  href: sit-defn-types-of-medication.md
+                - name: 英国 運転免許証番号
+                  href: sit-defn-uk-drivers-license-number.md
+                - name: 英国 選挙登録番号
+                  href: sit-defn-uk-electoral-roll-number.md
+                - name: 英国 国民保健サービス番号
+                  href: sit-defn-uk-national-health-service-number.md
+                - name: 英国 国民保険番号 (NINO)
+                  href: sit-defn-uk-national-insurance-number.md
+                - name: 英国 住所
+                  href: sit-defn-uk-physical-addresses.md
+                - name: 英国 納税者番号
+                  href: sit-defn-uk-unique-taxpayer-reference-number.md
+                - name: 米国の銀行口座番号
+                  href: sit-defn-us-bank-account-number.md
+                - name: 米国の運転免許証番号
+                  href: sit-defn-us-drivers-license-number.md
+                - name: 米国の個人納税者識別番号 (ITIN)
+                  href: sit-defn-us-individual-taxpayer-identification-number.md
+                - name: 米国の住所
+                  href: sit-defn-us-physical-addresses.md
+                - name: 米国の社会保障番号 (SSN)
+                  href: sit-defn-us-social-security-number.md
+                - name: 米国/英国 passport number
+                  href: sit-defn-us-uk-passport-number.md
+                - name: ウクライナのパスポート国内番号
+                  href: sit-defn-ukraine-passport-domestic.md
+                - name: ウクライナのパスポート国際番号
+                  href: sit-defn-ukraine-passport-international.md
+                - name: ユーザーのログイン資格情報
+                  href: sit-defn-user-login-credentials.md
+                - name: X.509 証明書の非公開キー
+                  href: sit-defn-x-509-certificate-private-key.md
             - name: 機密情報の種類の機能
               href: sit-functions.md
             - name: カスタム機密情報の種類のフィルター リファレンス
@@ -969,7 +1575,7 @@
               href: permissions-filtering-for-content-search.md
             - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
               href: what-is-stored-in-exo-mailbox.md
-            - name: 電子情報開示グラフコネクタ
+            - name: Graph コネクタの電子情報開示
               href: ediscovery-graph-connector.md
             - name: 電子情報開示ツールでの復号化
               href: ediscovery-decryption.md

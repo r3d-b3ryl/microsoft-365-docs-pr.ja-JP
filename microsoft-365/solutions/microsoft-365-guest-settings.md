@@ -20,12 +20,12 @@ ms.custom:
 ms.localizationpriority: high
 recommendations: false
 description: 組織外のユーザーとの共有に影響を与える可能性がある、Microsoft 365 で使用できるゲスト共有設定について説明します。
-ms.openlocfilehash: 4c472fb20a85c0f00f7623cc63c4d33556b511e2
-ms.sourcegitcommit: 2f6a0096038d09f0e43e1231b01c19e0b40fb358
-ms.translationtype: MT
+ms.openlocfilehash: 574e2ab6b3ca01de31d4489b80c5b6aefddd6a9f
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64687272"
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66949461"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Microsoft 365 ゲストの共有設定のリファレンス
 
@@ -55,36 +55,36 @@ Azure Active Directory は、Microsoft 365 により使用されるディレク�
 
 これらの設定は、ユーザーがディレクトリに招待される方法に影響します。 ディレクトリにすでに存在しているゲストとの共有には影響しません。
 
-### <a name="cross-tenant-access-settings"></a>テナント間アクセス設定
+### <a name="cross-tenant-access-settings"></a>テナント間アクセス設定を構成する
 
-**ナビゲーション:** [管理センター Azure Active Directory](https://aad.portal.azure.com)外部 ID >テナント間アクセス設定> Azure Active Directory >既定の設定タブ>
+**ナビゲーション:** [[Azure Active Directory 管理センター]](https://aad.portal.azure.com) > [Azure Active Directory] > [外部 ID] > [テナント間アクセス設定] > [既定の設定] タブ
 
-既定の設定は、組織固有の設定を持つ組織を除くすべての外部Azure AD組織に適用されます。 特定の組織の設定は、[**組織の設定**] タブで構成できます。ゲスト (B2B コラボレーション) と [B2B 直接接続ユーザー Azure AD個別の](/azure/active-directory/external-identities/b2b-direct-connect-overview)設定があります。
+既定の設定は、組織固有の設定を除くすべての外部 Azure AD 組織に適用されます。 特定の組織の設定は、**[組織の設定]** タブで構成できます。ゲスト (B2B コラボレーション) と [Azure AD B2B 直接接続](/azure/active-directory/external-identities/b2b-direct-connect-overview) ユーザーには別の設定があります。
 
-![Azure Active Directoryテナント間アクセス設定ページのスクリーンショット。](../media/azure-ad-cross-tenant-default-settings.png)
+![Azure Active Directory テナント間アクセス設定ページのスクリーンショット。](../media/azure-ad-cross-tenant-default-settings.png)
 
 **受信アクセス設定**
 
-受信アクセス設定は、外部Azure AD組織のユーザーが組織内のリソースにアクセスできるかどうかを制御します。
+[受信アクセス設定] は、外部の Azure AD 組織のユーザーが組織内のリソースにアクセスできるかどうかを制御します。
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
-|B2B コラボレーション - 外部ユーザーとグループ|すべての許可|他のAzure AD組織のユーザーにゲストとして組織内のリソースへのアクセスを許可できるユーザーを決定します。|
-|B2B コラボレーション - アプリケーション|許可されるすべて|組織のゲストにアクセス権を付与できるアプリを決定します。|
-|B2B 直接接続 - 外部ユーザーとグループ|すべてのブロック済み|B2B 直接接続を使用して、組織内のリソースへのアクセスを他のAzure AD組織のユーザーに付与できるかどうかを決定します。|
-|B2B 直接接続 - アプリケーション|すべてのブロック済み|組織内の B2B 直接接続ユーザーにアクセスを許可できるアプリを決定します。|
-|信頼設定|無効|条件付きアクセス ポリシーが、その組織のユーザーがリソースにアクセスするときに、他のAzure AD組織からの要求を受け入れるかどうかを決定します。|
+|B2B コラボレーション - 外部ユーザーとグループ|すべて許可|他の Azure AD 組織のユーザーにゲストとして組織内のリソースへのアクセスを許可できるユーザーを決定します。|
+|B2B コラボレーション - アプリケーション|すべて許可|組織のゲストにアクセス権を付与できるアプリを決定します。|
+|B2B 直接接続 - 外部ユーザーとグループ|すべてブロック済み|B2B 直接接続を使用して、他の Azure AD 組織のユーザーに組織内のリソースへのアクセスを許可できるかどうかを決定します。|
+|B2B 直接接続 - アプリケーション|すべてブロック済み|組織内の B2B 直接接続ユーザーにアクセスを許可できるアプリを決定します。|
+|信頼設定|無効|条件付きアクセス ポリシーが、他の Azure AD 組織のユーザーがリソースにアクセスするときに、それらの組織からの要求を受け入れるかどうかを決定します。 |
 
 **送信アクセス設定**
 
-送信アクセス設定は、ユーザーが外部組織のリソースにアクセスできるかどうかを制御します。
+[送信アクセス設定] は、ユーザーが外部組織のリソースにアクセスできるかどうかを制御します。
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
-|B2B コラボレーション - 外部ユーザーとグループ|すべての許可|他のAzure AD組織のリソースへのアクセスをゲストとして付与できる組織内のユーザーを決定します。|
-|B2B コラボレーション - アプリケーション|許可されるすべて|ユーザーにゲストとしてのアクセスを許可できる他のAzure AD組織のアプリを決定します。|
-|B2B 直接接続 - 外部ユーザーとグループ|すべてのブロック済み|B2B 直接接続を使用して、組織内の他のAzure AD組織のリソースへのアクセスを許可できるユーザーを決定します。|
-|B2B 直接接続 - アプリケーション|すべてのブロック済み|B2B 直接接続を介してユーザーにアクセスを許可できる他のAzure AD組織のアプリを決定します。|
+|B2B コラボレーション - 外部ユーザーとグループ|すべて許可|組織内のどのユーザーに、ゲストとして他の Azure AD 組織のリソースへのアクセスを許可できるかを決定します。|
+|B2B コラボレーション - アプリケーション|すべて許可|ユーザーにゲストとしてのアクセスを許可できる他の Azure AD 組織のアプリを決定します。|
+|B2B 直接接続 - 外部ユーザーとグループ|すべてブロック済み|B2B 直接接続を使用して、組織内のどのユーザーに他の Azure AD 組織のリソースへのアクセスを許可できるかを決定します。|
+|B2B 直接接続 - アプリケーション|すべてブロック済み|B2B 直接接続を介してユーザーにアクセスを許可できる他の Azure AD 組織のアプリを決定します。|
 
 ## <a name="microsoft-365"></a>Microsoft 365
 
@@ -117,7 +117,7 @@ Microsoft 365 管理センターには、共有および Microsoft 365 グルー
 
 ## <a name="teams"></a>Teams
 
-Teams のマスター ゲスト アクセスのスイッチである **[Teams でのゲスト アクセスを許可する]** を **[オン]** にして、他のゲスト設定を選択できるようにする必要があります。
+Teams のゲスト アクセスのスイッチである **[Teams でのゲスト アクセスを許可する]** を **[オン]** にして、他のゲスト設定を選択できるようにする必要があります。
 
 **管理者ロール:** Teams サービス管理者
 
@@ -182,7 +182,7 @@ OneDrive はSharePoint のサイトの階層であるため、組織レベルの
 
 **ナビゲーション:** [SharePoint 管理センター] > **[ポリシー]**  > ><a href="https://go.microsoft.com/fwlink/?linkid=2185222" target="_blank"> **[共有]**</a>
 
-![SharePoint 組織レベルの共有設定のスクリーンショット](../media/external-sharing.png)
+![SharePoint 組織レベルの共有設定のスクリーンショット](../media/sharepoint-organization-external-sharing-controls.png)
 
 | 設定 | 既定値 | 説明 |
 |:-----|:-----|:-----|
