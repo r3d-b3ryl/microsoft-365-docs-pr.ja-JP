@@ -1,5 +1,5 @@
 ---
-title: 日本居住者登録番号エンティティ定義
+title: 日本の住民登録番号エンティティの定義
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,15 +18,15 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 日本居住者登録番号の機密情報の種類エンティティ定義。
+description: 日本の住民登録番号機密情報タイプ エンティティの定義。
 ms.openlocfilehash: 2cdff586ac9fe92e66a5844eae824f7df335eb31
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66950535"
 ---
-# <a name="japan-resident-registration-number"></a>日本居住者登録番号
+# <a name="japan-resident-registration-number"></a>日本の住民登録番号
 
 ## <a name="format"></a>フォーマット
 
@@ -42,10 +42,10 @@ ms.locfileid: "66950535"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという中程度の信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- この関数 `Func_jp_resident_registration_number` は、パターンに一致するコンテンツを検索します。
-- キーワードが `Keyword_jp_resident_registration_number` 見つかりました。
+- 関数 `Func_jp_resident_registration_number` がパターンに一致するコンテンツを検出した。
+- `Keyword_jp_resident_registration_number` のキーワードを検出した。
 
 ```xml
 <!-- Japan Resident Registration Number -->
