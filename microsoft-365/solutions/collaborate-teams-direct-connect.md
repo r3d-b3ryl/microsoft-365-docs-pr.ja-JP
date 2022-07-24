@@ -17,16 +17,16 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: ae076b5bfb653fd1a90d9260d699d454246200a0
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747885"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66969794"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
-ユーザーが[共有チャネル](/MicrosoftTeams/shared-channels)で組織外のユーザーと共同作業を行うことができるようにするには、共同作業を行う組織ごとに B2B 直接接続を構成する必要があります (または、[外部組織すべてとの共有チャネルを有効](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)にできます)。
+ユーザーが[共有チャネル](/MicrosoftTeams/shared-channels)で他の Microsoft 365 組織のユーザーとコラボレーションできるようにする場合は、コラボレーションする組織ごとに B2B 直接接続を構成する必要があります。 (代わりに、[すべての外部組織と共有チャネルを有効にする](/microsoft-365/solutions/allow-direct-connect-with-all-organizations)こともできます)。
 
 Teams で別の組織と共有チャネルを有効にする場合:
 

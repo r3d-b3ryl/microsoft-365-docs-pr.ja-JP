@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef00ca10ca932322e51d71449e42f45842ce4c97
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
+ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663778"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970220"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -288,7 +288,7 @@ Rights Management 発行者には、ドキュメントまたはメールに対�
 
     このオプションは、Azure Information Protection 統合ラベル付けクライアントおよび組み込みラベルを使用一部のアプリでサポートされています。 この機能をサポートしないアプリの場合、ラベルがユーザーに対して表示されないか、一貫性のためにラベルが表示されますが、ユーザーに説明メッセージを使用して適用できません。
     
-    このオプションをサポートする組み込みのラベルを使用するアプリを確認するには、[Word、Excel、PowerPointの機能テーブル](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)と **ユーザーが権限を割り当て可能にする行 : - ユーザーにアクセスを確認します**。
+    組み込みのラベル付けを使用するアプリがこのオプションをサポートしているかどうかを確認するには、[Word、Excel、PowerPoint の機能テーブル](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint)と **[ユーザーにアクセス許可の割り当てを許可する]** の行を使用します。
 
 選択するオプションがサポートされている場合に、秘密度ラベルがユーザーに表示されるどうかについて、次の表で確認できます。
 
@@ -343,6 +343,16 @@ Word、PowerPoint、および Excel では、ドキュメントにアクセス�
 
 > [!TIP]
 > [共同編集](sensitivity-labels-coauthoring.md)がに有効になる前に、ユーザーがAzure Information Protection統合ラベル付けクライアントを使用してカスタム アクセス許可を構成することに慣れている場合は、アクセス許可レベルと個々の使用権限のマッピングを確認すると便利な場合があります。[アクセス許可レベルに含まれる権限](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels)。
+
+#### <a name="support-for-organization-wide-custom-permissions"></a>組織全体のカスタム アクセス許可のサポート
+
+Windows での組み込みラベル付けのプレビュー段階で、ユーザーはドメインを所有し、Azure Active Directory 内にある組織内のすべてのユーザーに適用されるドメイン名を指定できます。 この動作の変更は、[Azure Information Protection の統合ラベル付けクライアントとのパリティ](sensitivity-labels-aip.md#feature-parity-for-built-in-labeling-and-the-aip-add-in-for-office-apps)を提供します。
+
+![組織全体のカスタムアクセス許可をサポートするようにダイアログ ボックスを更新しました。](../media/org-wide-custom-permissions-dialog.png)
+
+たとえば、ユーザーは "@contoso.com" (または "contoso.com") と入力し、読み取りアクセスを許可します。 Contoso Corporation は contoso.com ドメインを所有しているため、そのドメイン内のすべてのユーザーと、組織が Azure Active Directory で所有しているすべての他のすべてのドメインに読み取りアクセス権が付与されます。
+
+指定されたドメイン内のユーザーのみにアクセスが制限されていないことをユーザーに知らせるのが重要です。 たとえば、"@sales.contoso.com" では、販売サブドメイン内のユーザーへのアクセスは制限されませんが、marketing.contoso.com ドメイン内のユーザーや、同じ Azure Active Directory テナント内の不整合な名前空間を持つユーザーへのアクセスも許可されます。
 
 ## <a name="example-configurations-for-the-encryption-settings"></a>暗号化の設定の構成例
 

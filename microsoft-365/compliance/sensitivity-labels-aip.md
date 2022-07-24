@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: 79d4ed4f81c3768ec85c17699257a18678ef82d1
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 01f75905dc5fea76613393828d42f23ea1d3ff79
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756675"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970168"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由
 
@@ -110,7 +110,7 @@ Office アプリ以外のラベル付けを拡張するために AIP クライ�
 
 どちらの方法を選択した場合でも、変更は Office アプリの再起動時に有効になります。
 
-これらの変更を行った後、**[秘密度]** ボタンが Office リボンに表示されない場合は、秘密度ラベルが [オフになっている](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)かどうかを確認してください。  これは既定の構成ではありませんが、管理者がグループ ポリシーを使用するか、レジストリを直接編集して、この構成を明示的に設定している可能性があります。
+これらの変更を行った後、**[秘密度]** ボタンが Office リボンに表示されない場合は、秘密度ラベルが [オフになっている](sensitivity-labels-office-apps.md#if-you-need-to-turn-off-built-in-labeling-in-office-apps-on-windows)かどうかを確認してください。 これは既定の構成ではありませんが、管理者がグループ ポリシーを使用するか、レジストリを直接編集して、この構成を明示的に設定している可能性があります。
 
 > [!NOTE]
 > 組み込みラベルには、Office アプリのサブスクリプション エディションが必要です。Office のスタンドアロン エディション ("Office パーペチュアル" とも呼ばれる) がある場合は、Microsoft 365 Apps for Enterprise にアップグレードして、[最新のラベル付け機能](sensitivity-labels-office-apps.md#support-for-sensitivity-label-capabilities-in-apps)を利用することをお勧めします。
@@ -150,7 +150,7 @@ AIP アドインでサポートされているラベル付け機能の多くは�
 | **カテゴリ: 暗号化** | |
 |管理者が定義したアクセス許可 | ![サポート対象です。](../media/yes-icon.png) <br>[詳細情報](encryption-sensitivity-labels.md#assign-permissions-now) |
 |ユーザーが定義したアクセス許可 <br> - Outlook の転送不可 <br> - Word、Excel、PowerPoint のユーザーおよびグループ カスタムのアクセス許可| ![サポート対象です。](../media/yes-icon.png) <br>[詳細情報](encryption-sensitivity-labels.md#let-users-assign-permissions)|
-|ユーザーが定義したアクセス許可 <br> - Word、Excel、PowerPoint のドメインの指定による組織全体のカスタム アクセス許可 | 計画または開発中 |
+|ユーザーが定義したアクセス許可 <br> - Word、Excel、PowerPoint のドメインの指定による組織全体のカスタム アクセス許可 | [プレビュー](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) |
 |共同編集と自動保存 | ![サポート対象です。](../media/yes-icon.png) <br>[詳細情報](sensitivity-labels-coauthoring.md) |
 |二重キー暗号化 | 計画または開発中 |
 |ユーザーのドキュメント失効 | レビュー中 |

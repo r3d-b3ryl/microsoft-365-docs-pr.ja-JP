@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5f404df8d8cbf5d4ac755c17c2a6c07717d8360
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 3161a26a8b22304e9343e9e16a1dd1e313d47df9
+ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797975"
+ms.lasthandoff: 07/22/2022
+ms.locfileid: "66970102"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -70,13 +70,14 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |[コンテンツをマークする](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[変数を使用した動的マーキング](#dynamic-markings-with-variables)                                              | 現在のチャネル: 2010 以上 <br /><br> 月次エンタープライズ チャネル: 2010 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.42 以上     | 2.42 以上 | 16.0.13328 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[アクセス許可を今すぐ割り当てる](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 現在のチャネル: 1910 以上 <br /><br> 月次エンタープライズ チャネル: 1910 以上 <br /><br> 半期エンタープライズ チャネル: 2002 以上 | 16.21 以上     | 2.21 以上 | 16.0.11231 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[ユーザーに権限の割り当てをさせる: <br /> - ユーザーに求める](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |現在のチャネル: 2004 以上 <br /><br> 月次エンタープライズ チャネル: 2004 以上 <br /><br> 半期エンタープライズ チャネル: 2008 以上 | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
+|[ユーザーにアクセス許可の割り当てを許可する: <br /> - ユーザーにカスタム アクセス許可の入力を求める (ユーザーとグループ)](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |現在のチャネル: 2004 以上 <br /><br> 月次エンタープライズ チャネル: 2004 以上 <br /><br> 半期エンタープライズ チャネル: 2008 以上 | 16.35 以上   | レビュー中   | レビュー中         | レビュー中                                                        |
+|[ユーザーにアクセス許可の割り当てを許可する: <br /> - ユーザーにカスタム アクセス許可 (ユーザー、グループ、および組織) を求める](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |プレビュー: [ベータ チャネル](https://office.com/insider)へのロールアウト  | レビュー中   | レビュー中   | レビュー中         | レビュー中                                                        |
 |[ラベル関連のユーザー アクティビティを監査する](#auditing-labeling-activities)                      | 現在のチャネル: 2011 以上 <br /><br> 月次エンタープライズ チャネル: 2011 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 | 2.46 以上 | 16.0.13628 以上 | はい |
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 現在のチャネル: 2101 以上 <br /><br> 月次エンタープライズ チャネル: 2101 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.45 以上         | 2.47 以上 | 16.0.13628 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上  | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 現在のチャネル: 2107 以上 <br /><br> 月次エンタープライズ チャネル: 2107 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 |  16.51 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 2.58 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 16.0.14931 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[PDF サポート](#pdf-support)| プレビュー: [ベータ チャネル](https://office.com/insider)へのロールアウト |  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
+|[PDF サポート](#pdf-support)| プレビュー: [ベータ チャネル](https://office.com/insider) |  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
 
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook での秘密度ラベル機能
