@@ -18,12 +18,12 @@ description: 管理者は、Exchange Online Protection (EOP) によってメッ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 592a583b572c134dd4ecd33dd18f392f6e9b36ce
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: fa5b107853a67d31e184ca744bcb8d0631d11aea
+ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493067"
+ms.lasthandoff: 07/23/2022
+ms.locfileid: "66983941"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 
@@ -63,7 +63,7 @@ ms.locfileid: "66493067"
 |フィールド|説明|
 |---|---|
 |`ARC`|`ARC` プロトコルには次のフィールドがあります。 <ul><li>`AAR`: DMARC からの **Authentication-results** ヘッダーのコンテンツを記録します。</li><li>`AMS`: メッセージの暗号化署名が含まれます。</li><li>`AS`: メッセージ ヘッダーの暗号化署名が含まれます。このフィールドには、`"cv="` と呼ばれるチェーン検証のタグが含まれます。チェーン検証の結果は、**none**、**pass**、または **fail** として含まれています。</li></ul>|
-|`CAT:`|メッセージに適用される保護ポリシーです。 <ul><li>`BULK`: バルク</li><li>`DIMP`: ドメインの偽装</li><li>`GIMP`: [メールボックス インテリジェンスに基づく偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` または `HPHISH`: 高精度フィッシング</li><li>`HSPM`: 高確度迷惑メール</li><li>`MALW`: マルウェア</li><li>`PHSH`: フィッシング詐欺</li><li>`SPM`: スパム</li><li>`SPOOF`: スプーフィング</li><li>`UIMP`: ユーザーの偽装</li><li>`AMP`: マルウェア対策</li><li>`SAP`: 添付ファイル保護</li><li>`OSPM`: 送信スパム</li></ul> <p> 受信メッセージには、複数の種類の保護と複数の検出スキャンによりフラグが付けられる場合があります。 ポリシーの優先度はそれぞれ異なり、優先度が最も高いポリシーが最初に適用されます。 詳細については、「[複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー](how-policies-and-protections-are-combined.md)」を参照してください。|
+|`CAT:`|メッセージに適用される保護ポリシーです。 <ul><li>`BULK`: バルク</li><li>`DIMP`: ドメインの偽装</li><li>`GIMP`: [メールボックス インテリジェンスに基づく偽装](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>`HPHSH` または `HPHISH`: 高精度フィッシング</li><li>`HSPM`: 高確度迷惑メール</li><li>`MALW`: マルウェア</li><li>`PHSH`: フィッシング詐欺</li><li>`SPM`: スパム</li><li>`SPOOF`: スプーフィング</li><li>`UIMP`: ユーザーの偽装</li><li>`AMP`: マルウェア対策</li><li>`SAP`: 添付ファイル保護</li><li>`FTBP`: マルウェア対策 filetype ポリシー</li><li>`OSPM`: 送信スパム</li></ul> <p> 受信メッセージには、複数の種類の保護と複数の検出スキャンによりフラグが付けられる場合があります。 ポリシーの優先度はそれぞれ異なり、優先度が最も高いポリシーが最初に適用されます。 詳細については、「[複数の保護方法および検出スキャンがメールで実行される場合に適用されるポリシー](how-policies-and-protections-are-combined.md)」を参照してください。|
 |`CIP:[IP address]`|接続 IP アドレス。 この IP アドレスは、IP 許可一覧または IP 禁止一覧で使用できます。 詳細については、「[接続フィルターを構成する](configure-the-connection-filter-policy.md)」を参照してください。|
 |`CTRY`|接続 IP アドレスから特定される発信国ですが、発信元の送信 IP アドレスとは異なる可能性があります。|
 |`H:[helostring]`|接続メール サーバーの HELO または EHLO 文字列。|
@@ -152,7 +152,7 @@ SPF、DKIM、および DMARC のメール認証チェックの結果は、受信
 |`dkim`|メッセージの DKIM チェックの結果についての説明。次の値を指定できます。 <ul><li>**pass**: メッセージの DKIM チェックにパスしたことを示します。</li><li>**fail (理由)**: メッセージの DKIM チェックに失敗したことと、その理由を示します。たとえば、メッセージが署名されていなかったり、署名を確認できない場合です。</li><li>**none**: メッセージが署名されていないことを示します。これは、ドメインに DKIM レコードがあるかどうかや、DKIM レコードが結果を評価しない (このメッセージが署名されていない点のみ) ことを示しますが、これらを示さない場合もあります。</li></ul>|
 |`dmarc`|メッセージの DMARC チェックの結果についての説明。次の値を指定できます。 <ul><li>**pass**: メッセージの DMARC チェックにパスしたことを示します。</li><li>**fail**: メッセージの DMARC チェックに失敗したことを示します。</li><li>**bestguesspass**: ドメインの DMARC TXT レコードが存在しないことを示します。ただし、レコードが存在していた場合、メッセージの DMARC チェックはパスしていたことになります。</li><li>**none**: DNS に送信側ドメインの DMARC TXT レコードが存在していないことを示します。|
 |`header.d`|DKIM 署名で識別されるドメイン (存在する場合)。 これは、公開キーを照会するドメインです。|
-|`header.from`|メール メッセージ ヘッダーの `5322.From` アドレスのドメイン (From アドレスまたは P2 送信者とも呼ばれます)。受信者には、メール クライアントの From アドレスが表示されます。|
+|`header.from`|メール メッセージ ヘッダーの `5322.From` アドレスのドメイン (From アドレスまたは P2 送信者とも呼ばれます)。 受信者には、メール クライアントの From アドレスが表示されます。|
 |`reason`|複合認証にパスした、または失敗した理由。 値は 3 桁のコードです。 以下に例を示します。 <ul><li>**000**: メッセージが明示的な認証をパスしなかったことを意味します (`compauth=fail`)。たとえば、メッセージが DMARC fail を受け取り、検疫または却下のアクションが適用された場合などです。</li><li>**001** は、メッセージが暗黙的な認証をパスしなかったことを示します (`compauth=fail`)。これは、送信側ドメインがメール認証レコードを公開していないか、公開していた場合でも弱い失敗ポリシー (SPF soft fail または neutral、`p=none` の DMARC ポリシー) があったことを意味します。</li><li>**002**: 組織にスプーフィングされたメールの送信を明示的に禁止する送信者/ドメインのペアのポリシーがあります。この設定は、管理者が手動で設定します。</li><li>**010**: メッセージが拒否または検疫のアクションによって DMARC をパスせず、送信側ドメインが組織の承認済みドメインに含まれていることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。</li><li>**1xx** または **7xx**: メッセージが認証をパスしたことを意味します (`compauth=pass`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**2xx**: メッセージが暗黙的な認証を soft-pass したことを意味します (`compauth=softpass`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**3xx**: メッセージに対して複合認証のチェックが実行されなかったことを意味します (`compauth=none`)。</li><li>**4xx** または **9xx**: メッセージに対する複合認証が省略されたことを意味します (`compauth=none`)。 最後の 2 桁の数字は Microsoft 365 で使用される内部コードです。</li><li>**6xx**: メッセージは暗黙的なメール認証をパスしなかったが、送信側ドメインが組織の承認済みドメインのいずれかであることを意味します (これは、自己完結型 (つまり組織内の) スプーフィングの一部です)。</li></ul>|
 |`smtp.mailfrom`|`5321.MailFrom` アドレスのドメイン (MAIL FROM アドレス、P1 送信者、またはエンベロープの差出人とも呼ばれます)。 これは、配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) に使用されるメール アドレスです。|
 |`spf`|メッセージの SPF チェックの結果についての説明。 次の値を指定できます。 <ul><li>`pass (IP address)`: メッセージの SPF チェックにパスしたことを示します。送信者の IP アドレスが含まれます。 送信者のドメインに代わってメールを送信または中継する許可がクライアントに与えられています。</li><li>`fail (IP address)` は、メッセージの SPF チェックに失敗したことを示し、送信者の IP アドレスが含まれています。_ハード フェイル_ ともいいます。</li><li>`softfail (reason)`: SPF レコードにより、ホストには送信する許可がないと指定されたことを示しますが、SPF レコードが展開中であることも示します。</li><li>`neutral`: SPF レコードは、IP アドレスの送信が承認されているかどうかをアサートしないと明示的に示します。</li><li>`none`: ドメインに SPF レコードがないか、SPF レコードが結果に対して評価されないことを示します。</li><li>`temperror`: 一時的なエラーが発生しました。 たとえば、DNS エラーです。 同じチェックが後で成功する場合があります。</li><li>`permerror`: パラメーター エラーが発生しました。 たとえば、ドメインに不正な形式の SPF レコードがある場合などです。</li></ul>|
