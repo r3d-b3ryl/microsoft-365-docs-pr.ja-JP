@@ -1,0 +1,189 @@
+---
+title: フランスのドライバー ライセンス番号エンティティ定義
+f1.keywords:
+- CSH
+ms.author: chrfox
+author: chrfox
+manager: laurawi
+ms.date: ''
+audience: Admin
+search.appverid: MET150
+ms.topic: reference
+f1_keywords:
+- ms.o365.cc.UnifiedDLPRuleContainsSensitiveInformation
+ms.service: O365-seccomp
+ms.localizationpriority: medium
+ms.collection:
+- M365-security-compliance
+hideEdit: true
+feedback_system: None
+recommendations: false
+description: フランスのドライバーのライセンス番号の機密情報の種類エンティティ定義。
+ms.openlocfilehash: 9239b98317e25fa0dcfb73ce0df2baf0b31967ee
+ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.translationtype: MT
+ms.contentlocale: ja-JP
+ms.lasthandoff: 07/21/2022
+ms.locfileid: "66997537"
+---
+# <a name="france-drivers-license-number"></a>フランスの運転免許証番号
+
+このエンティティは、EU ドライバーのライセンス番号の機密情報の種類で使用でき、スタンドアロンの機密情報の種類エンティティとして使用できます。
+
+## <a name="format"></a>フォーマット
+
+12 桁の数字
+
+## <a name="pattern"></a>パターン
+
+フランスの電話番号などの同様のパターンと区別するための検証付きの 12 桁の数字
+
+## <a name="checksum"></a>チェックサム
+
+不要
+
+## <a name="definition"></a>定義
+
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
+
+- この関数 `Func_french_drivers_license` は、パターンに一致するコンテンツを検索します。
+- キーワードが `Keyword_french_drivers_license` 見つかりました。
+
+```xml
+    <!-- France Driver's License Number -->
+    <Entity id="18e55a36-a01b-4b0f-943d-dc10282a1824" patternsProximity="300" recommendedConfidence="75">
+      <Pattern confidenceLevel="75">
+        <IdMatch idRef="Func_french_drivers_license" />
+        <Match idRef="Keyword_french_drivers_license" />
+      </Pattern>
+    </Entity>
+```
+
+## <a name="keywords"></a>キーワード
+
+### <a name="keyword_french_drivers_license"></a>Keyword_french_drivers_license
+
+- driverlic
+- driverlics
+- driverlicense
+- driverlicenses
+- driverlicence
+- driverlicences
+- driver lic
+- driver lics
+- driver license
+- driver licenses
+- ドライバー ライセンス
+- ドライバー ライセンス
+- driverslic
+- driverslics
+- driverslicence
+- driverslicences
+- driverslicense
+- driverslicenses
+- drivers lic
+- drivers lics
+- drivers license
+- drivers licenses
+- drivers licence
+- ドライバー ライセンス
+- driver'lic
+- driver'lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- driver' lic
+- driver' lics
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- ドライバーのライセンス
+- driver'slic
+- driver'slics
+- driver'slicense
+- driver'slicenses
+- driver'slicence
+- driver'slicences
+- driver's lic
+- ドライバーの lics
+- driver's license
+- driver's licenses
+- driver's licence
+- ドライバーのライセンス
+- Dl#
+- Dls#
+- driverlic#
+- driverlics#
+- driverlicense#
+- driverlicenses#
+- driverlicence#
+- driverlicences#
+- driver lic#
+- driver lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- driverslic#
+- driverslics#
+- driverslicense#
+- driverslicenses#
+- driverslicence#
+- driverslicences#
+- drivers lic#
+- drivers lics#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- ドライバー ライセンス#
+- driver'lic#
+- driver'lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driver' lic#
+- driver' lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driver'slic#
+- driver'slics#
+- driver'slicense#
+- driver'slicenses#
+- driver'slicence#
+- driver'slicences#
+- driver's lic#
+- ドライバーの lics#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- ドライバーのライセンス#
+- driving licence
+- driving license
+- dlno#
+- driv lic
+- driv licen
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- driv ライセンス
+- driver licen
+- drivers licen
+- driver's licen
+- lic を駆動する
+- licen を駆動する
+- ライセンスを運転する
+- driving licence
+- driving licences
+- 運転許可
+- dl no
+- dlno
+- dl 番号
+- permis de conduire
+- licence number
+- license number
+- licence numbers
+- license numbers
+- numéros de licence
