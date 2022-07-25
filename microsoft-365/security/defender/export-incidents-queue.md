@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fb771dbb4126cba1a5636e7ad3ad19fa267d7905
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 1ea738bfec4f9779bae87a769b784f399e165a07
+ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714793"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67002452"
 ---
 # <a name="export-incidents-queue-to-csv-files"></a>インシデント キューを CSV ファイルにエクスポートする
 
@@ -49,5 +49,8 @@ ms.locfileid: "66714793"
 たとえば、CSV ファイルのデータにフィルターを適用して、次のデータを表示できます。
 - 過去 30 日間に発生した重大度の高いインシデントの数に関するデータ。
 - 最も生産性の高いアナリストであるユーザーに関するデータ。
+
+> [!NOTE]
+> CSV ファイルにエクスポートできるレコードの最大数は 10,000 です。 
 
 インシデント キューの新しい **エクスポート** 機能 (**[エクスポート**] ボタン) に関する考えや提案がある場合は、Microsoft チームに問い合わせるか、Microsoft 365 Defender ポータルからフィードバックを送信してください。

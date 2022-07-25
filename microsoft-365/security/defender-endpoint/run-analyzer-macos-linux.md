@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 67c7648238ecc3a46188b36f3ab61525739d53d4
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 28d1c3cd9ded0d2a4e0d2bf7444aaa5e0ac2ae37
+ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917675"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67002496"
 ---
 # <a name="run-the-client-analyzer-on-macos-and-linux"></a>macOS または Linux でクライアント アナライザーを実行する
 
@@ -35,7 +35,7 @@ ms.locfileid: "66917675"
 1. 調査する必要がある macOS または Linux コンピューターに [XMDE クライアント アナライザー](https://aka.ms/XMDEClientAnalyzer) ツールをダウンロードします。
 
    > [!NOTE]
-   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'94DBD785249C10F37D7BE9C1E881AA096CF3A9F30E829DBBFD42683717BC5DA8' です。
+   > 上記のリンクからダウンロードされる 'XMDEClientAnalyzer.zip' の現在の SHA256 ハッシュは、'AC086D65202D31EBCF9DC76F7CA29A5B8B355CD6F78D31BBF89289EB7AA2B67D'です。
 
 2. コンピューター上の MDEClientAnalyzer.zip の内容を抽出します。
 
@@ -70,6 +70,7 @@ ms.locfileid: "66917675"
 > - さらに、このツールでは現在、Python バージョン 3 以降をインストールする必要があります。
 >
 > - Python 3 を使用できないコンピューターまたは lxml コンポーネントをフェッチできないマシンで実行している場合は、 [XMDE クライアント アナライザー バイナリ](https://aka.ms/XMDEClientAnalyzerBinary)という要件を持たないバイナリ ベースのバージョンのアナライザーをダウンロードできます。 <br> バイナリは現在署名されていません。 MacOS でパッケージを実行できるようにするには、"spctl --add /Path/To/Application.app" という構文を使用する必要があります。
+> - 上記のリンクからダウンロードされた 'XMDEClientAnalyzerBinary.zip' の現在の SHA256 ハッシュは、'7FE67373CDF493BF2748FD778BD106EE85A71C968D594BCC67C7374620506EF2' です。
 >
 > - デバイスがプロキシの背後にある場合は、プロキシ サーバーを環境変数としてmde_support_tool.sh スクリプトに渡すだけです。 例: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
 
