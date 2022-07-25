@@ -14,7 +14,7 @@ description: お住まいの国または地域のサポートに連絡する方�
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 86b3d2eded39b92ee2375953c4c6af7fa449212a
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61368006"
