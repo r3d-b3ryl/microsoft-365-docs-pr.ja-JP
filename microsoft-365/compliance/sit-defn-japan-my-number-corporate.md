@@ -1,5 +1,5 @@
 ---
-title: Japan My Number - 企業エンティティ定義
+title: 日本の法人用マイナンバー エンティティ定義
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,20 +18,20 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: Japan My Number - 企業の機密情報の種類エンティティ定義。
+description: 日本の法人用マイナンバー機密情報タイプ エンティティの定義。
 ms.openlocfilehash: 25aacfb8275b8567ec9f93fa6cb31288709f9688
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997402"
 ---
 # <a name="japan-my-number---corporate"></a>日本の法人用マイナンバー
 
-この機密情報の種類は、次の場合にのみ使用できます。
+この機密情報タイプは、次の箇所でのみ使用できます:
 
 - データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
+- コミュニケーション コンプライアンス ポリシー
 - データ ライフサイクル管理
 - レコード管理
 - Microsoft Defender for Cloud Apps
@@ -44,7 +44,7 @@ ms.locfileid: "66997402"
 
 13 桁の数字:
 
-- 1 から 9 までの 1 桁
+- 1 から 9 までの 1 桁の数字
 - 12 桁の数字
 
 ## <a name="checksum"></a>チェックサム
@@ -53,7 +53,7 @@ ms.locfileid: "66997402"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_japanese_my_number_corporate` がパターンに一致するコンテンツを検出した。
 - `Keywords_japanese_my_number_corporate` のキーワードを検出した。
@@ -79,7 +79,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
-- 企業番号
+- corporate number
 - マイナンバー
 - 共通番号
 - マイナンバーカード

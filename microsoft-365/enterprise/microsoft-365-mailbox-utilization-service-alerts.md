@@ -19,30 +19,33 @@ ms.custom:
 f1.keywords:
 - NOCSH
 description: メールボックス使用率サービス アドバイザリを使用して、メールボックスクォータに達しているメールボックスを監視します。
-ms.openlocfilehash: 22583cbc6c6495d07caa3f920eeacb6bcd1d7536
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 58cbd5880b32b5297f0faae26a5a3369a2e6b66c
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65810552"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019969"
 ---
 # <a name="service-advisories-for-mailbox-utilization-in-exchange-online-monitoring"></a>Exchange Online監視におけるメールボックス使用率に関するサービス アドバイザリ
 
-クォータに達するか、クォータを超えるリスクがあるメールボックスを通知する新しいExchange Online サービス アドバイザリをリリースしました。 これらのサービス アドバイザリは、管理者の介入を必要とする可能性がある組織内のメールボックスの数を可視化します。
+クォータに達するか超過するリスクがあるメールボックスを通知する新しいExchange Online サービス アドバイザリをリリースしました。 これらのサービス アドバイザリは、管理者の介入を必要とする可能性がある組織内のメールボックスの数を可視化します。
 
 これらのサービス アドバイザリは、Microsoft 365 管理センターに表示されます。 これらのサービス アドバイザリを表示するには <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">**、[**</a>**正常性** > サービス正常性] に移動 **しExchange Online** > [**アクティブな問題**] タブをクリックします。メールボックス使用率サービス アドバイザリの例を次に示します。
 
 :::image type="content" alt-text="メールボックス使用率サービスアラート。" source="../media/MailboxUtilizationServiceAlert.png" lightbox="../media/MailboxUtilizationServiceAlert.png":::
 
-ストレージ クォータに近づいているメールボックスの一覧 ( *メールボックス使用状況レポート* と呼ばれます) を表示するには、次のスクリーンショットで強調表示されているリンクをクリックします。 このリンクは、サービス アドバイザリに表示されます。
+ストレージ クォータに近づいているメールボックスの一覧を表示するには、次のスクリーンショットで強調表示されているリンクを選択して、メールボックスの使用状況レポートにアクセスします。 このリンクは、サービス アドバイザリに表示されます。
 
 :::image type="content" alt-text="メールボックス使用状況レポートへのリンク。" source="../media/LinkToMailboxUsageReport.png" lightbox="../media/LinkToMailboxUsageReport.png":::
 
 または、メールボックス使用状況レポートへの直接 URL は次のようになります <https://admin.microsoft.com/Adminportal/Home?source=applauncher#/reportsUsage/MailboxUsage>。
 
+> [!NOTE]
+> メールボックス使用状況レポートの情報は、メールボックス使用率サービスのアドバイザリ アラートから 24 時間遅れている可能性があります。
+
 ## <a name="what-do-these-service-advisories-indicate"></a>これらのサービス アドバイザリは何を示していますか?
 
-メールボックス使用率に関するサービス アドバイザリは、メールボックスの記憶域クォータに近づいているメールボックスの保留について管理者に通知します。 メールボックスに配置できる保留の種類には、訴訟ホールド、電子情報開示ホールド、Microsoft 365保持ポリシー (データを保持するように構成されている) が含まれます。 メールボックスが保留中の場合、ユーザー (または自動化されたプロセス) は自分のメールボックスからデータを完全に削除できません。 代わりに、管理者は、ユーザーのプライマリ メールボックスからアーカイブ メールボックスにデータを移動するために、Exchange Online (データ保持に関連する組織のコンプライアンス ポリシーとインライン) で MRM アイテム保持ポリシーを構成する必要があります。 保持されているメールボックスが重大または警告状態に達した場合、管理者は [アーカイブ メールボックスを有効に](../compliance/enable-archive-mailboxes.md) し、 [自動拡張アーカイブを有効に](../compliance/enable-autoexpanding-archiving.md) してから、メールボックスに割り当てられたアーカイブ ポリシーの保持期間 (プライマリ メールボックスからアーカイブ メールボックスに電子メールを移動する) が十分に短いことを確認する必要があります。 メールボックス使用率サービス アドバイザリによって識別されるクォータの問題を解決するために何も行わない場合、ユーザーは電子メール メッセージや会議出席依頼を送受信できない可能性があります。
+メールボックス使用率に関するサービス アドバイザリは、メールボックスの記憶域クォータに近づいているメールボックスの保留について管理者に通知します。 メールボックスに配置できる保留の種類には、訴訟ホールド、電子情報開示ホールド、Microsoft 365 アイテム保持ポリシー (データを保持するように構成されている) が含まれます。 メールボックスが保留中の場合、ユーザー (または自動化されたプロセス) は自分のメールボックスからデータを完全に削除できません。 代わりに、管理者は、ユーザーのプライマリ メールボックスからアーカイブ メールボックスにデータを移動するために、Exchange Online (データ保持に関連する組織のコンプライアンス ポリシーとインライン) で MRM アイテム保持ポリシーを構成する必要があります。 保持されているメールボックスが重大または警告状態に達した場合、管理者は [アーカイブ メールボックスを有効に](../compliance/enable-archive-mailboxes.md) し、 [自動拡張アーカイブを有効に](../compliance/enable-autoexpanding-archiving.md) してから、メールボックスに割り当てられたアーカイブ ポリシーの保持期間 (プライマリ メールボックスからアーカイブ メールボックスに電子メールを移動する) が十分に短いことを確認する必要があります。 メールボックス使用率サービス アドバイザリによって識別されるクォータの問題を解決するために何も行わない場合、ユーザーは電子メール メッセージや会議出席依頼を送受信できない可能性があります。
 
 メールボックス使用率に関するサービス アドバイザリには、クォータに近づいているメールボックスの数に関するテーブルが含まれています。 次のセクションでは、これらのテーブルの情報と、管理者がこれらのメールボックスがクォータを超えないようにするために実行できるアクションについて説明します。
 
@@ -68,7 +71,7 @@ ms.locfileid: "65810552"
 
 |# Mailboxes ProhibitSendReceiveQuota (警告) |# Mailboxes ProhibitSendReceiveQuota (Critical) |# Mailboxes RecoverableItemsQuota (警告) |# Mailboxes RecoverableItemsQuota (Critical)** |
 |:--------------|:--------------|:------------------|:--------------- |
-| 1             | 1             | 6                  | 0               |
+| 1             | 1             | 6                 | 0               |
 ||||
 
 管理者がこれらのメールボックスに対して実行できるアクションは、回復可能なアイテム フォルダーのクォータを増やすことです。 詳細については、「 [保留メールボックスの回復可能なアイテムのクォータを増やす」を参照してください](../compliance/increase-the-recoverable-quota-for-mailboxes-on-hold.md)。
@@ -101,7 +104,7 @@ ms.locfileid: "65810552"
    Get-RetentionPolicy <GUID> | FL
    ```
 
-   **Name** プロパティの値は、Exchange <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">管理センター</a>の **[アイテム保持ポリシー]** ページに表示されるアイテム保持ポリシーの名前です。
+   **Name** プロパティの値は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange 管理センター</a>の [アイテム保持ポリシー] ページに表示される **アイテム保持ポリシー** の名前です。
 
 - **MailboxType**: ポリシーが割り当てられているメールボックスの種類を指定します。 値には *、プライマリ* (アーカイブのないメールボックス) または *PrimaryWithArchive* (アーカイブを含むメールボックス) が含まれます。 この列の値が *[プライマリ*] の場合は、ポリシーが割り当てられているメールボックスのアーカイブを有効にする必要があります ( **[メールボックス** ] 列は、これらのメールボックスの数を示します)。 そうしないと、アイテムを移動するアーカイブがないため、アーカイブ ポリシーまたは個人用アーカイブ タグは機能しません。
 
@@ -117,8 +120,8 @@ ms.locfileid: "65810552"
 
 クォータの問題を解決するためのアクションを実行しない場合は、この種類のサービス アドバイザリが 7 日ごとに表示される可能性があります。 後続のサービス アドバイザリには、クォータに近づいている他のメールボックスのメールボックス数が多くなる場合があります。 クォータの問題を解決するアクションを実行した場合、このサービス アドバイザリは、クォータの問題がある別のメールボックスが特定された場合にのみ発生します。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>More information
 
-- アーカイブ メールボックスの問題のトラブルシューティングと解決の詳細については、「[Microsoft Purviewトラブルシューティング」を](/office365/troubleshoot/microsoft-365-compliance-welcome)参照してください。
+- アーカイブ メールボックスの問題のトラブルシューティングと解決については、 [Microsoft Purview のトラブルシューティングに関するページを](/office365/troubleshoot/microsoft-365-compliance-welcome)参照してください。
 
 - メールボックスに配置された保留を特定する方法については、「メールボックス [に配置された保留の種類を特定する方法」を](../compliance/identify-a-hold-on-an-exchange-online-mailbox.md)参照してください。

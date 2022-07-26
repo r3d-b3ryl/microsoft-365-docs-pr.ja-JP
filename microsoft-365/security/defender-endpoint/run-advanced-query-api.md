@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e5898c0227128c099c7f0fe1ca99a6d9c8001ef
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 9f361a404ec3f8893ff4573fdc4db29904a5e766
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283079"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020629"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 
@@ -36,6 +36,9 @@ ms.locfileid: "61283079"
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
+
+> [!NOTE]
+> この API では、Microsoft Defender for Endpointに属するテーブルにのみクエリを実行できます。 他のMicrosoft 365 Defender サービスに属するテーブルでは、[Microsoft 365 Defender Advanced hunting API](/microsoft-365/security/defender/api-advanced-hunting) を使用する必要があります。
 
 ## <a name="limitations"></a>制限事項
 

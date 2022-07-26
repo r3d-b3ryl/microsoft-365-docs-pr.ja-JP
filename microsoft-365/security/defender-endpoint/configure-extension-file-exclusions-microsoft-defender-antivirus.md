@@ -7,19 +7,20 @@ ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 author: denisebmsft
 ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8e9c153f55b38871ebf6af7a4511af2e637fad68
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720481"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020425"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -30,18 +31,19 @@ ms.locfileid: "66720481"
 - Microsoft Defender ウイルス対策
 
 **プラットフォーム**
+
 - Windows
 
-[スケジュールされたスキャン](schedule-antivirus-scans.md)、[オンデマンド](run-scan-microsoft-defender-antivirus.md) スキャン、[および常時オンのリアルタイム保護と監視](configure-real-time-protection-microsoft-defender-antivirus.md)に適用される Microsoft Defender ウイルス対策の除外を定義できます。 **通常、除外を適用する必要はありません**。 除外を適用する必要がある場合は、さまざまな種類から選択できます。
+[スケジュールされたスキャン](schedule-antivirus-scans.md)、[オンデマンド](run-scan-microsoft-defender-antivirus.md) スキャン、[および常時オンのリアルタイム保護と監視](configure-real-time-protection-microsoft-defender-antivirus.md)に適用される Microsoft Defender ウイルス対策の除外を定義できます。 **一般に、除外を適用する必要はありません**。 除外を適用する必要がある場合は、次のいずれかを選択できます。
 
 - ファイル拡張子とフォルダーの場所に基づく除外 (この記事で説明)
 - [プロセスによって開かれるファイルの除外](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策の除外は、[攻撃面縮小 (ASR) ルール](attack-surface-reduction.md)や[フォルダー アクセスの制御](controlled-folders.md)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外するファイルは、エンドポイントの検出と応答 (EDR) アラートやその他の検出を引き続きトリガーできます。
+> Microsoft Defender ウイルス対策の除外は、[攻撃面縮小 (ASR) ルール](attack-surface-reduction.md)や[フォルダー アクセスの制御](controlled-folders.md)など、他のMicrosoft Defender for Endpoint機能には適用されません。 この記事で説明する方法を使用して除外したファイルは、エンドポイント検出と応答 (EDR) アラートやその他の検出を引き続きトリガーできます。
 > ファイルを広範に除外するには、それらをMicrosoft Defender for Endpoint[カスタム インジケーター](manage-indicators.md)に追加します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 [除外リストを定義する前に除外を定義するための推奨事項](configure-exclusions-microsoft-defender-antivirus.md)に関するページを参照してください。
 
@@ -73,9 +75,9 @@ Microsoft Defender ウイルス対策スキャンから特定のファイルを�
 
 - マップされたネットワーク ドライブを除外しないでください。 実際のネットワーク パスを指定します。
 
-- Microsoft Defender ウイルス対策サービスの開始後に作成され、除外リストに追加された再解析ポイントであるフォルダーは含まれません。 新しい再解析ポイントが有効な除外ターゲットとして認識されるようにするには、(Windows を再起動して) サービスを再起動します。
+- 再解析ポイントであるフォルダーは、Microsoft Defender ウイルス対策サービスの開始後に作成され、除外リストに追加されたフォルダーは含まれません。 新しい再解析ポイントが有効な除外ターゲットとして認識されるように Windows を再起動して、サービスを再起動します。
 
-- 除外は、 [スケジュールされたスキャン](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、 [オンデマンド スキャン](run-scan-microsoft-defender-antivirus.md)、 [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されますが、Defender for Endpoint には適用されません。 Defender for Endpoint 全体で除外を定義するには、 [カスタム インジケーターを使用します](manage-indicators.md)。
+- 除外は [、スケジュールされたスキャン](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、 [オンデマンド スキャン](run-scan-microsoft-defender-antivirus.md)、 [リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されますが、Defender for Endpoint の機能によっては適用されません。 Defender for Endpoint 全体で除外を定義するには、 [カスタム インジケーターを使用します](manage-indicators.md)。
 
 - 既定では、リストに対して行われたローカル変更 (管理者特権を持つユーザー(PowerShell と WMI で行われた変更を含む) は、グループ ポリシー、Configuration Manager、またはIntuneによって定義 (および展開) されたリストとマージされます。 競合が発生した場合は、グループ ポリシー リストが優先されます。 さらに、グループ ポリシーで行われた除外リストの変更は[、Windows セキュリティ アプリ](microsoft-defender-security-center-antivirus.md)に表示されます。
 
@@ -99,11 +101,11 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 ### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>グループ ポリシーを使用してフォルダーまたはファイル拡張子の除外を構成する
 
 > [!NOTE]
-> ファイルへの完全修飾パスを指定すると、そのファイルのみが除外されます。 フォルダーが除外で定義されている場合は、そのフォルダーの下にあるすべてのファイルとサブディレクトリが除外されます。
+> ファイルへの完全修飾パスを指定すると、そのファイルのみが除外されます。 除外でフォルダーが定義されている場合、そのフォルダーの下にあるすべてのファイルとサブディレクトリが除外されます。
 
 1. グループ ポリシー管理コンピューターで、[[グループ ポリシー管理コンソール]](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)) を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
 
-2. [**グループ ポリシー管理エディター**] で、[**コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
+2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
 3. ツリーを [**除外]** **Windows Defender ウイルス対策** \> **Windows コンポーネント**\>に展開します。
 
@@ -115,7 +117,7 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
     4. ファイルを指定する場合は、ドライブ文字、フォルダー パス、ファイル名、拡張子など、ファイルへの完全修飾パスを入力してください。
     5. **[値]** 列に **「0**」と入力します。
 
-5. **[OK]** をクリックします。
+5. その後で、**[OK]** を選択します。
 
 6. [ **拡張機能の除外] 設定を** 開いて編集し、除外を追加します。
 
@@ -124,13 +126,13 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
     3. [ **値名** ] 列の下に、各ファイル拡張子を独自の行に入力します。
     4. **[値]** 列に **「0**」と入力します。
 
-7. **[OK]** をクリックします。
+7. その後で、**[OK]** を選択します。
 
 <a id="ps"></a>
 
 ### <a name="use-powershell-cmdlets-to-configure-file-name-folder-or-file-extension-exclusions"></a>PowerShell コマンドレットを使用して、ファイル名、フォルダー、またはファイル拡張子の除外を構成する
 
-PowerShell を使用して、拡張子、場所、またはファイル名に基づいてファイルの除外を追加または削除するには、3 つのコマンドレットと適切な除外リスト パラメーターを組み合わせて使用する必要があります。 コマンドレットはすべて [Defender モジュールに含まれています](/powershell/module/defender/)。
+PowerShell を使用して、拡張子、場所、またはファイル名に基づいてファイルの除外を追加または削除するには、3 つのコマンドレットと適切な除外リスト パラメーターの組み合わせを使用する必要があります。 コマンドレットはすべて [Defender モジュールに含まれています](/powershell/module/defender/)。
 
 コマンドレットの形式は次のとおりです。
 
@@ -202,7 +204,7 @@ ExclusionPath
 
 |ワイルドカード|例|
 |---|---|
-|`*` (アスタリスク) <p> **ファイル名とファイル拡張子を含めると**、アスタリスクは任意の数の文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> **フォルダーの除外** では、アスタリスクは 1 つのフォルダーを置き換えます。 複数の `*` 入れ子になったフォルダーを示すには、フォルダーの `\` スラッシュと共に複数を使用します。 ワイルドカードフォルダーと名前付きフォルダーの数を照合すると、すべてのサブフォルダーも含まれます。|`C:\MyData\*.txt` 含む `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` には、ファイル `C:\somepath\Archives\Data` とそのサブフォルダーとその `C:\somepath\Authorized\Data` サブフォルダーが含まれます。 <p> `C:\Serv\*\*\Backup` には、ファイルとその `C:\Serv\Primary\Denied\Backup` サブフォルダーとその `C:\Serv\Secondary\Allowed\Backup` サブフォルダーが含まれます。|
+|`*` (アスタリスク) <p> **ファイル名とファイル拡張子を含めると**、アスタリスクは任意の数の文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> **フォルダーの除外** では、アスタリスクは 1 つのフォルダーを置き換えます。 複数の `*` 入れ子になったフォルダーを示すには、フォルダーの `\` スラッシュと共に複数を使用します。 ワイルドカードフォルダーと名前付きフォルダーの数を照合すると、すべてのサブフォルダーも含まれます。|`C:\MyData\*.txt` 含む `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` には、ファイル `C:\somepath\Archives\Data` とそのサブフォルダーとその `C:\somepath\Authorized\Data` サブフォルダーが含まれます。 <p> `C:\Serv\*\*\Backup` には、ファイル `C:\Serv\Primary\Denied\Backup` とそのサブフォルダーとその `C:\Serv\Secondary\Allowed\Backup` サブフォルダーが含まれます。|
 |`?` (疑問符)  <p> **ファイル名とファイル拡張子を含めると**、疑問符は 1 文字を置き換え、引数で定義された最後のフォルダー内のファイルにのみ適用されます。 <p> **フォルダーの除外** では、疑問符はフォルダー名の 1 文字を置き換えます。 ワイルドカードフォルダーと名前付きフォルダーの数を照合すると、すべてのサブフォルダーも含まれます。|`C:\MyData\my?.zip` 含む `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` には、すべてのファイル `C:\somepath\P\Data` とそのサブフォルダーが含まれます  <p> `C:\somepath\test0?\Data` には、すべてのファイル `C:\somepath\test01\Data` とそのサブフォルダーが含まれます。|
 |環境変数 <p> 定義された変数は、除外が評価されるときにパスとして設定されます。|`%ALLUSERSPROFILE%\CustomLogFiles` が含まれます。 `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`|
 
@@ -219,7 +221,7 @@ ExclusionPath
 
 |このシステム環境変数...|これにリダイレクトされます|
 |---|---|
-|`%APPDATA%`|`C:\Users\UserName.DomainName\AppData\Roaming`|
+|`%APPDATA%`|`C:\Windows\system32\config\systemprofile\Appdata\Roaming`|
 |`%APPDATA%\Microsoft\Internet Explorer\Quick Launch`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch`|
 |`%APPDATA%\Microsoft\Windows\Start Menu`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu`|
 |`%APPDATA%\Microsoft\Windows\Start Menu\Programs`|`C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Windows\Start Menu\Programs`|
@@ -275,10 +277,10 @@ ExclusionPath
 |`%PUBLIC%\RecordedTV.library-ms`|`C:\Users\Public\RecordedTV.library-ms`|
 |`%PUBLIC%\Videos`|`C:\Users\Public\Videos`|
 |`%PUBLIC%\Videos\Sample Videos`|`C:\Users\Public\Videos\Sample Videos`|
-|`%USERPROFILE%`|`C:\Users\UserName`|
-|`%USERPROFILE%\AppData\Local`|`C:\Users\UserName\AppData\Local`|
-|`%USERPROFILE%\AppData\LocalLow`|`C:\Users\UserName\AppData\LocalLow`|
-|`%USERPROFILE%\AppData\Roaming`|`C:\Users\UserName\AppData\Roaming`|
+|`%USERPROFILE%`|`C:\Windows\system32\config\systemprofile`|
+|`%USERPROFILE%\AppData\Local`|`C:\Windows\system32\config\systemprofile\AppData\Local`|
+|`%USERPROFILE%\AppData\LocalLow`|`C:\Windows\system32\config\systemprofile\AppData\LocalLow`|
+|`%USERPROFILE%\AppData\Roaming`|`C:\Windows\system32\config\systemprofile\AppData\Roaming`|
 
 ## <a name="review-the-list-of-exclusions"></a>除外の一覧を確認する
 
@@ -291,7 +293,7 @@ ExclusionPath
 - [Windows セキュリティ アプリを開きます。](microsoft-defender-security-center-antivirus.md)
 
 > [!IMPORTANT]
-> グループ ポリシーで行われた除外リストの変更 **は、**[Windows セキュリティ アプリ](microsoft-defender-security-center-antivirus.md)の一覧に表示されます。
+> グループ ポリシーで行われた除外リストの変更は、[Windows セキュリティ アプリ](microsoft-defender-security-center-antivirus.md)の一覧に **表示されます**。
 > Windows セキュリティ アプリで行われた変更は、グループ ポリシー リストには **表示されません**。
 
 PowerShell を使用する場合は、次の 2 つの方法で一覧を取得できます。

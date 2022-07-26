@@ -1,5 +1,5 @@
 ---
-title: 日本の居住カード番号エンティティ定義
+title: 日本の在留カード番号エンティティ定義
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 日本の居住カード番号の機密情報の種類のエンティティ定義。
+description: 日本の在留カード番号機密情報タイプ エンティティの定義。
 ms.openlocfilehash: 512a20f00dd2ff77d2f88950d83b227a717c309e
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997387"
@@ -30,15 +30,15 @@ ms.locfileid: "66997387"
 
 ## <a name="format"></a>フォーマット
 
-12 文字と数字
+12 個の文字と数字
 
 ## <a name="pattern"></a>パターン
 
-12 文字と数字:
+12 個の文字と数字:
 
-- 2 文字 (大文字と小文字は区別されません)
-- 8 桁
-- 2 文字 (大文字と小文字は区別されません)
+- 2 つの文字 (大文字小文字を区別しない)
+- 8 桁の数字
+- 2 つの文字 (大文字小文字を区別しない)
 
 ## <a name="checksum"></a>チェックサム
 
@@ -48,7 +48,7 @@ ms.locfileid: "66997387"
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- 正規表現 `Regex_jp_residence_card_number` は、パターンに一致するコンテンツを検索します。
+- 正規表現 `Regex_jp_residence_card_number` がパターンに一致するコンテンツを検出した。
 - `Keyword_jp_residence_card_number` のキーワードを検出した。
 
 ```xml
@@ -65,9 +65,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- 居住カード番号
-- 居住カードなし
-- 居住カード#
+- Residence card number
+- Residence card no
+- Residence card #
 - 在留カード番号
 - 在留カード
 - 在留番号

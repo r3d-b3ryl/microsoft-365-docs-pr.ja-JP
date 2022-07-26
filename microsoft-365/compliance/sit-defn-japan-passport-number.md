@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 日本のパスポート番号の機密情報の種類のエンティティ定義。
+description: 日本のパスポート番号機密情報タイプ エンティティの定義。
 ms.openlocfilehash: 52117216fbfbbf9a4b5f4db4e627e020b892bcb5
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66997392"
@@ -30,11 +30,11 @@ ms.locfileid: "66997392"
 
 ## <a name="format"></a>フォーマット
 
-2 文字の後に 7 桁の数字が続く
+2 桁の文字の後に 7 桁の数字
 
 ## <a name="pattern"></a>パターン
 
-2 文字 (大文字と小文字は区別されません) の後に 7 桁の数字が続く
+2 桁の文字 (大文字小文字の区別なし) の後に 7 桁の数字
 
 ## <a name="checksum"></a>チェックサム
 
@@ -61,7 +61,7 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 
 ### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- パスポート
+- Passport
 - Passport Number
 - Passport No.
 - Passport #

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d679ac0d01a7e922e49b72b574a43e6f684179f9
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 3bdb35b4251725dc4b2e69fc077d0edf29693cef
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664504"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020585"
 ---
 # <a name="integrate-your-siem-tools-with-microsoft-defender-for-endpoint"></a>SIEM ツールとMicrosoft Defender for Endpointを統合する
 
@@ -38,13 +38,13 @@ ms.locfileid: "64664504"
 >
 > [Microsoft Defender for Endpoint アラート](alerts.md)は、デバイスで発生した 1 つ以上の疑わしいイベントまたは悪意のあるイベントとその関連する詳細から構成されます。 Microsoft Defender for Endpointアラート API は、アラートを使用するための最新の API であり、各アラートに関連する証拠の詳細な一覧が含まれています。 詳細については、「 [アラートのメソッドとプロパティ」と](alerts.md) 「 [アラートの一覧表示](get-alerts.md)」を参照してください。
 
-Microsoft Defender for Endpointでは、登録済みAADの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) でエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールがサポートされます 環境にインストールされている特定の SIEM ソリューションまたはコネクタを表すアプリケーション。
+Microsoft Defender for Endpointは、環境にインストールされている特定の SIEM ソリューションまたはコネクタを表す登録済み AAD アプリケーションの OAuth 2.0 認証プロトコルを使用して、Azure Active Directory (AAD) のエンタープライズ テナントから情報を取り込むセキュリティ情報とイベント管理 (SIEM) ツールをサポートします。
 
 詳細については、以下を参照してください。
 
 - [Microsoft Defender for Endpoint API のライセンスと使用条件](api-terms-of-use.md) 
 - [Microsoft Defender for Endpoint API にアクセスする](apis-intro.md)
-- [Hello World例 (Azure Active Directoryにアプリケーションを登録する方法について説明します)](api-hello-world.md)
+- [Hello World例 (Azure Active Directory にアプリケーションを登録する方法について説明します)](api-hello-world.md)
 - [アプリケーション コンテキストでアクセスする](exposed-apis-create-app-webapp.md)
 
 
@@ -73,6 +73,15 @@ Microsoft Defender for Endpoint アラート API の詳細については、「[
 - Splunk 内からMicrosoft Defender for Endpointのアラートを更新する
 
 Splunk 用のMicrosoft 365 Defender アドオンの詳細については、「[splunkbase](https://splunkbase.splunk.com/app/4959/)」を参照してください。
+
+### <a name="datadog"></a>Datadog
+
+Endpoint と Datadog の統合のMicrosoft 365 Defenderは次をサポートします。
+
+- Microsoft Defender for Endpointアラートとインシデントの取り込み
+- エンドポイント、脅威と脆弱性、ソフトウェア全体の監視メトリックを有効にするダッシュボード
+
+統合の詳細については、「 [Datadog Marketplace](https://app.datadoghq.com/marketplace/app/crest-data-systems-microsoft-defender/support)」を参照してください。
 
 ### <a name="micro-focus-arcsight"></a>Micro Focus ArcSight
 

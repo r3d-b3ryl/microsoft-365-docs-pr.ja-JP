@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 74f0d1986cb9b2551c9eabc217b23789ae8e6f6b
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 2540e1d9521771bd9ae4d49b96384fefd8766aec
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839005"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020068"
 ---
 # <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
@@ -32,7 +32,9 @@ ms.locfileid: "65839005"
 - [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
+
+> Microsoft Defender 脆弱性の管理を体験しますか? [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法の詳細については、こちらを参照してください。
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -152,5 +154,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [修復メソッドとプロパティ](get-remediation-methods-properties.md)
 - [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 - [1 つの修復アクティビティの暴露デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
-- [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
+- [リスクベースの脅威&脆弱性管理](next-gen-threat-and-vuln-mgt.md)
 - [組織の脆弱性](tvm-weaknesses.md)

@@ -11,16 +11,19 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Microsoft 365 でユーザーのセッションがタイムアウトするまでの期間を設定します。
-ms.openlocfilehash: 15de72fef4dc45705b78dc83941faff1d835d6ae
-ms.sourcegitcommit: aa9e1bceb661df894f66d5dd5f4ab692c870fc71
+ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66756629"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019925"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Microsoft 365 のアイドル セッション タイムアウト
 
 <!-- Add metadata: localization, AdminSurgePortfolio, admindeeplinkMAC. remove robots nofollow -->
+
+> [!IMPORTANT]
+> アイドル セッション タイムアウトは、21Vianet または Microsoft 365 Germany によって運用されている Microsoft 365 では使用できません。
 
 アイドル セッション タイムアウトを使用して、ユーザーが Microsoft 365 Web アプリからサインアウトするまでの組織で非アクティブな期間に関するポリシーを構成します。 これにより、機密性の高い会社のデータを保護し、会社以外または共有デバイスで作業するエンド ユーザーのセキュリティの別の層が追加されます。
 
@@ -74,10 +77,7 @@ ms.locfileid: "66756629"
 
 - このような場合、ユーザーはサインアウトされません。
     - デバイスに参加しているアカウントから Web アプリにシングル サインオン (SSO) を取得した場合、またはサインイン時 **に [サインインしたまま** にする] を選択した場合。 組織でこのオプションを非表示にする方法の詳細については、「組織 [のサインイン ページにブランドを追加する](/azure/active-directory/fundamentals/customize-branding)」を参照してください。
-    - 管理対象デバイス (準拠しているかドメインに参加しているデバイス) 上にあり、Microsoft Edge や Google Chrome ( [Windows アカウント拡張機能](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)を使用) などのサポートされているブラウザーを使用している場合。 この機能をマネージド デバイスでトリガーしない場合は、対象となるAzure AD Premium P1または P2 サブスクリプション、および特定の条件付きアクセス ポリシーが必要です。 詳細については、以下を参照してください。
-
-> [!IMPORTANT]
-> アイドル セッション タイムアウトは、21Vianet または Microsoft 365 Germany が運用する Microsoft 365 では使用できません。
+    - 管理対象デバイス (準拠しているかドメインに参加しているデバイス) 上にあり、Microsoft Edge や Google Chrome ( [Windows アカウント拡張機能](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)を使用) などのサポートされているブラウザーを使用している場合。 この機能を非管理対象デバイスでトリガーするには、対象となるAzure AD Premium P1または P2 サブスクリプション、および特定の条件付きアクセス ポリシーが必要です。 詳細については、以下を参照してください。
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>非管理対象デバイスでのアイドル セッション タイムアウト  
 

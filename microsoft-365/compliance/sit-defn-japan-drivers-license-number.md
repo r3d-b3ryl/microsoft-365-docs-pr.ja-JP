@@ -1,5 +1,5 @@
 ---
-title: 日本のドライバー ライセンス番号エンティティ定義
+title: 日本の運転免許証番号エンティティ定義
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 日本の運転免許証番号の機密情報の種類エンティティ定義。
+description: 日本の運転免許証番号機密情報タイプ エンティティの定義。
 ms.openlocfilehash: 0c216f31482a0368db6f78e9c7ceb9583b1e8e13
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66996487"
@@ -67,9 +67,9 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driverslicenses
 - driver'slicenses
 - driverlicenses
-- Dl#
-- Dls#
-- Lic#
+- dl#
+- dls#
+- lic#
 - lics#
 - 運転免許証
 - 運転免許
@@ -82,16 +82,16 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - 運転免許証ナンバー
 - 運転免許ナンバー
 - 免許証ナンバー
-- 運転免許証
-- 運転免許
+- 運転免許証no
+- 運転免許no
 - 免許証no
-- 免許
+- 免許no
 - 運転経歴証明書番号
 - 運転経歴証明書
-- 運転免許証を使用します。
-- 運転の場合は、次の方法を使用します。
+- 運転免許証No.
+- 運転免許No.
 - 免許証No.
-- 免許を持つ必要があります。
+- 免許No.
 - 運転免許証#
 - 運転免許#
 - 免許証#

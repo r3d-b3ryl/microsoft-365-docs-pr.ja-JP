@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4184948316e683a59b45b9397aaea74260e290ee
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: e54b3c1c696d05bb0f3815b532a4f0e7e92c6331
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664174"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020651"
 ---
 # <a name="web-protection"></a>Web 保護
 
@@ -42,7 +43,7 @@ Microsoft Defender for Endpointの Web 保護は、[Web 脅威保護](web-threat
 
 :::image type="content" source="images/web-protection.png" alt-text="Web 保護カード" lightbox="images/web-protection.png":::
 
-### <a name="web-threat-protection"></a>Web 脅威の保護
+### <a name="web-threat-protection"></a>Web の脅威に対する保護
 
 Web 脅威保護を構成するカードは、 **時間の経過に伴う Web 脅威の検出** と **Web 脅威の概要です**。
 
@@ -80,7 +81,7 @@ Web コンテンツ フィルターには、次のものが含まれます。
 
 ## <a name="order-of-precedence"></a>優先順位
 
-Web 保護は、次のコンポーネントで構成され、優先順位の順に一覧表示されます。 これらの各コンポーネントは、Microsoft Edgeの SmartScreen クライアントと、他のすべてのブラウザーとプロセスの Network Protection クライアントによって適用されます。
+Web 保護は、次のコンポーネントで構成され、優先順位の順に一覧表示されます。 これらの各コンポーネントは、Microsoft Edge の SmartScreen クライアントと、他のすべてのブラウザーおよびプロセスの Network Protection クライアントによって適用されます。
 
 - カスタム インジケーター (IP/URL、Microsoft Defender for Cloud Apps ポリシー)
   - 許可
@@ -106,18 +107,18 @@ Web 保護は、次のコンポーネントで構成され、優先順位の順�
 
 ****
 
-|カスタム インジケーター ポリシー|Web 脅威ポリシー|WCF ポリシー|Defender for Cloud アプリ ポリシー|結果|
+|カスタム インジケーター ポリシー|Web 脅威ポリシー|WCF ポリシー|Defender for Cloud Apps ポリシー|結果|
 |---|---|---|---|---|
 |許可|ブロック|ブロック|ブロック|許可 (Web 保護のオーバーライド)|
 |許可|許可|ブロック|ブロック|許可 (WCF 例外)|
 |警告|ブロック|ブロック|ブロック|警告 (オーバーライド)|
 |
 
-内部 IP アドレスは、カスタム インジケーターではサポートされていません。 エンド ユーザーによってバイパスされた場合の警告ポリシーの場合、サイトは既定でそのユーザーに対して 24 時間ブロック解除されます。 この期間は管理者が変更でき、SmartScreen クラウド サービスによって渡されます。 警告をバイパスする機能は、web 脅威ブロック (マルウェア/フィッシング) の CSP を使用してMicrosoft Edgeで無効にすることもできます。 詳細については、「[SmartScreen 設定のMicrosoft Edge」を](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)参照してください。
+内部 IP アドレスは、カスタム インジケーターではサポートされていません。 エンド ユーザーによってバイパスされた場合の警告ポリシーの場合、サイトは既定でそのユーザーに対して 24 時間ブロック解除されます。 この期間は、管理によって変更でき、SmartScreen クラウド サービスによって渡されます。 警告をバイパスする機能は、Web 脅威ブロック (マルウェア/フィッシング) 用の CSP を使用して Microsoft Edge で無効にすることもできます。 詳細については、「 [Microsoft Edge SmartScreen の設定」を参照してください](/DeployEdge/microsoft-edge-policies#smartscreen-settings-policies)。
 
 ## <a name="protect-browsers"></a>ブラウザーを保護する
 
-すべての Web 保護シナリオでは、SmartScreen と Network Protection を一緒に使用して、ファースト パーティとサード パーティの両方のブラウザーとプロセス間で保護を確保できます。 SmartScreen はMicrosoft Edgeに直接組み込まれていますが、Network Protection はサードパーティのブラウザーとプロセスでトラフィックを監視します。 次の図は、この概念を示しています。 複数のブラウザー/アプリカバレッジを提供するために連携する 2 つのクライアントのこの図は、Web Protection のすべての機能 (インジケーター、Web 脅威、コンテンツ フィルター) に対して正確です。
+すべての Web 保護シナリオでは、SmartScreen と Network Protection を一緒に使用して、ファースト パーティとサード パーティの両方のブラウザーとプロセス間で保護を確保できます。 SmartScreen は Microsoft Edge に直接組み込まれていますが、Network Protection はサードパーティのブラウザーとプロセスでトラフィックを監視します。 次の図は、この概念を示しています。 複数のブラウザー/アプリカバレッジを提供するために連携する 2 つのクライアントのこの図は、Web Protection のすべての機能 (インジケーター、Web 脅威、コンテンツ フィルター) に対して正確です。
 
 :::image type="content" source="../../media/web-protection-protect-browsers.png" alt-text="smartScreen と Network Protection の併用" lightbox="../../media/web-protection-protect-browsers.png":::
 
@@ -125,7 +126,7 @@ Web 保護は、次のコンポーネントで構成され、優先順位の順�
 
 SmartScreen クラウドからの応答は標準化されています。 Fiddler などのツールを使用してクラウド サービスからの応答を調べることができます。これは、ブロックのソースを特定するのに役立ちます。
 
-SmartScreen クラウド サービスが許可、ブロック、または警告応答で応答すると、応答カテゴリとサーバー コンテキストがクライアントに中継されます。 Microsoft Edgeでは、応答カテゴリは、表示する適切なブロック ページ (悪意のある、フィッシング、組織のポリシー) を決定するために使用されます。
+SmartScreen クラウド サービスが許可、ブロック、または警告応答で応答すると、応答カテゴリとサーバー コンテキストがクライアントに中継されます。 Microsoft Edge では、応答カテゴリは、表示する適切なブロック ページ (悪意のある、フィッシング、組織のポリシー) を決定するために使用されます。
 
 次の表は、応答とその相関特徴を示しています。
 
@@ -144,14 +145,14 @@ SmartScreen クラウド サービスが許可、ブロック、または警告�
 
 ## <a name="advanced-hunting-for-web-protection"></a>Web 保護のための高度なハンティング
 
-高度な捜索のKustoクエリを使用すると、組織内の Web 保護ブロックを最大 30 日間集計できます。 これらのクエリでは、上記の情報を使用して、ブロックのさまざまなソースを区別し、ユーザー フレンドリな方法で集計します。 たとえば、次のクエリでは、Microsoft Edgeから発信されるすべての WCF ブロックが一覧表示されます。
+高度な捜索の Kusto クエリを使用すると、組織内の Web 保護ブロックを最大 30 日間集計できます。 これらのクエリでは、上記の情報を使用して、ブロックのさまざまなソースを区別し、ユーザー フレンドリな方法で集計します。 たとえば、次のクエリでは、Microsoft Edge から発信されたすべての WCF ブロックが一覧表示されます。
 
 ```kusto
 DeviceEvents
 | where ActionType == "SmartScreenUrlWarning"
 | extend ParsedFields=parse_json(AdditionalFields)
 | project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, Experience=tostring(ParsedFields.Experience)
-| where Experience == "CustomBlockList"
+| where Experience == "CustomPolicy"
 ```
 
 同様に、次のクエリを使用して、Network Protection から発信されたすべての WCF ブロック (サードパーティのブラウザーの WCF ブロックなど) を一覧表示できます。 ActionType が更新され、'Experience' が 'ResponseCategory' に変更されていることに注意してください。
@@ -168,12 +169,12 @@ DeviceEvents
 
 ## <a name="user-experience"></a>ユーザー エクスペリエンス
 
-ユーザーがマルウェア、フィッシング、またはその他の Web 脅威のリスクのある Web ページにアクセスした場合、Microsoft Edgeは、脅威に関連する情報と共に "このサイトは安全でないと報告されました" というブロック ページをトリガーします。
+ユーザーがマルウェア、フィッシング、またはその他の Web 脅威のリスクのある Web ページにアクセスした場合、Microsoft Edge は、脅威に関連する情報と共に"このサイトが安全でないと報告されました" というブロック ページをトリガーします。
 
 > [!div class="mx-imgBorder"]
-> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="Microsoft Edgeによってブロックされたページ" lightbox="../../media/web-protection-malicious-block.png":::
+> :::image type="content" source="../../media/web-protection-malicious-block.png" alt-text="Microsoft Edge によってブロックされたページ" lightbox="../../media/web-protection-malicious-block.png":::
 
-WCF またはカスタム インジケーターによってブロックされた場合、このサイトが組織によってブロックされていることをユーザーに伝えるブロック ページがMicrosoft Edgeに表示されます。
+WCF またはカスタム インジケーターによってブロックされた場合、このサイトが組織によってブロックされていることをユーザーに伝えるブロック ページが Microsoft Edge に表示されます。
 
 > [!div class="mx-imgBorder"]
 > :::image type="content" source="../../media/web-protection-indicator-blockpage.png" alt-text="組織によってブロックされたページ" lightbox="../../media/web-protection-indicator-blockpage.png":::
@@ -185,7 +186,7 @@ WCF またはカスタム インジケーターによってブロックされた
 
 ## <a name="report-false-positives"></a>誤検知を報告する
 
-SmartScreen によって危険と見なされたサイトの誤検知を報告するには、(上に示すように) Microsoft Edgeのブロック ページに表示されるリンクを使用します。
+SmartScreen によって危険と見なされたサイトの誤検知を報告するには、(上に示すように) Microsoft Edge のブロック ページに表示されるリンクを使用します。
 
 WCF の場合、ドメインのカテゴリに異議を申し合うことができます。 WCF レポートの **[ドメイン** ] タブに移動し、[ **レポートの不正確さ**] をクリックします。 ポップアップが開きます。 インシデントの優先度を設定し、推奨されるカテゴリなどの追加の詳細を指定します。 WCF を有効にする方法とカテゴリに異議を申し出る方法の詳細については、 [Web コンテンツのフィルター処理](web-content-filtering.md)に関するページを参照してください。
 

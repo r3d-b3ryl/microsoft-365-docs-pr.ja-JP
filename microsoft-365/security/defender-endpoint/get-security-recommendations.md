@@ -1,7 +1,7 @@
 ---
 title: セキュリティ上の推奨事項を取得する
 description: 特定のデバイス ID に関連するセキュリティに関する推奨事項のコレクションを取得します。
-keywords: apis, graph api, サポートされている API, get, list, file, information, security recommendation per device, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, サポートされている API, get, list, file, information, security recommendation per device, threat & Vulnerability management api, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,25 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ebe07abd4e7f87e7abfe4d4a8ccd131e20dc4958
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: e00937145cfff6eb9a0996683eacfb424b68091b
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839714"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020057"
 ---
 # <a name="get-security-recommendations"></a>セキュリティ上の推奨事項を取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**適用対象:** 
+**適用対象:**
 
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> Microsoft Defender 脆弱性の管理を体験しますか? [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法の詳細については、こちらを参照してください。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -58,7 +60,7 @@ GET /api/machines/{machineId}/recommendations
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 

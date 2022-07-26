@@ -1,7 +1,7 @@
 ---
 title: 検出された脆弱性を取得する
 description: 特定のデバイス ID に関連する検出された脆弱性のコレクションを取得します。
-keywords: apis, graph api, サポートされている API, get, list, file, information, discovered vulnerabilities, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, サポートされている API, get, list, file, information, discovered vulnerabilities, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b3271637b1b275fe26d07975d0592bf1e7ae672
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 95e350a6288ecefabe86aaa7b802deae0ffafaa1
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840477"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020013"
 ---
 # <a name="get-discovered-vulnerabilities"></a>検出された脆弱性を取得する
 
@@ -33,6 +33,8 @@ ms.locfileid: "65840477"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> Microsoft Defender 脆弱性の管理を体験しますか? [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法の詳細については、こちらを参照してください。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -61,7 +63,7 @@ GET /api/machines/{machineId}/vulnerabilities
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 

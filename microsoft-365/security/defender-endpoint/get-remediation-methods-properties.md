@@ -1,6 +1,6 @@
 ---
 title: 修復アクティビティのメソッドとプロパティ
-description: API 応答には、テナントで作成された脅威& 脆弱性の管理修復アクティビティが含まれています。 選択した修復タスクに対して、すべての修復アクティビティ、1 つの修復アクティビティ、または公開されたデバイスに関する情報のみを要求できます。
+description: API 応答には、テナントで作成された脅威&脆弱性管理修復アクティビティが含まれています。 選択した修復タスクに対して、すべての修復アクティビティ、1 つの修復アクティビティ、または公開されたデバイスに関する情報のみを要求できます。
 keywords: apis, 修復, 修復 API, get, 修復タスク, 修復方法, 修復プロパティ,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14f57d6590d580e0145abc2da788f184c88a721e
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 86218bb1dc3a30ab38e3df07496aa40a5775e88c
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840257"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020475"
 ---
 # <a name="remediation-activity-methods-and-properties"></a>修復アクティビティのメソッドとプロパティ
 
@@ -34,13 +34,15 @@ ms.locfileid: "65840257"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
+> Microsoft Defender 脆弱性の管理を体験しますか? [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法の詳細については、こちらを参照してください。
+
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
 [!Include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
-API 応答には、テナントに作成された[脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)修復アクティビティが含まれています。
+API 応答には、テナントに作成された [脅威&脆弱性管理](next-gen-threat-and-vuln-mgt.md) 修復アクティビティが含まれています。
 
 ## <a name="methods"></a>メソッド
 
@@ -93,6 +95,6 @@ vendorId|String|関連するベンダー名
 
 - [1 つの修復アクティビティの暴露デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
 
-- [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
+- [リスクベースの脅威&脆弱性管理](next-gen-threat-and-vuln-mgt.md)
 
 - [組織の脆弱性](tvm-weaknesses.md)

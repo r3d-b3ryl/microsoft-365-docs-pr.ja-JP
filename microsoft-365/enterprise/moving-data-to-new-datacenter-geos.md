@@ -1,5 +1,5 @@
 ---
-title: コア データを新しいMicrosoft 365データセンター geo に移動する
+title: 新しい Microsoft 365 データセンター geo へのコア データの移動
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
@@ -15,14 +15,14 @@ f1.keywords:
 - NOCSH
 description: 新しいOffice 365 データセンター geo と、データ常駐オプションを使用してコア データの新しい geo への移動を要求する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c70d59edba9cd35710b315adc8f93d6139fd2595
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: f93ba661f723a3f26473a8a08b81d408fd1b99d0
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873580"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020387"
 ---
-# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>コア データを新しいMicrosoft 365データセンター geo に移動する
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>新しい Microsoft 365 データセンター geo へのコア データの移動
 
 Microsoft 365 サービスの新しいデータセンター geo を引き続き開いています。 こうした新しいデータセンター geo により、現在続いているお客様の需要と使用量の拡大をサポートするための容量と計算リソースが増加されます。 さらに、新しいデータセンター geo では、コア カスタマー データを geo 内に常駐できます。
 
@@ -51,6 +51,7 @@ Microsoft 365 サービスの新しいデータセンター geo を引き続き�
 |**ノルウェー**| 欧州連合 | ノルウェー | 2020 年 4 月 |
 |**ブラジル**| 南北アメリカ | ブラジル | 2020 年 11 月 |
 |**スウェーデン**| 欧州連合 | スウェーデン | 2021 年 11 月 |
+|**カタール**| 欧州連合 | カタール | 2022 年 8 月 |
 
 2020 年 10 月 1 日以降、テナントに含まれるOffice 365 Education サブスクリプションをお持ちのお客様は移行の対象になりません。
 
@@ -58,7 +59,7 @@ Microsoft 365 サービスの新しいデータセンター geo を引き続き�
   
 ## <a name="data-residency-option"></a>データ常駐のオプション
 
-データ常駐オプションは、上記の表に記載されているデータセンターの地域でカバーされている対象となるMicrosoft 365のお客様に提供されます。 このオプションを使用すると、データ常駐要件を持つ対象顧客は、組織のコア顧客データの保存時に新しいデータセンター geo への移行を要求できます。  Microsoft は、登録期間中に移行を要求するすべての対象顧客に対して、コミットされた期限を提供します。  データセンター geo の開いている登録ウィンドウと、プログラムに登録する手順の詳細については、 [データ移動を要求する方法](request-your-data-move.md) ページを参照してください。  データの移行は、要求期間が終了してから最大 24 か月かかる場合があります。
+Microsoft では、上記の表に記載されているデータセンターの地域の対象となる対象となる Microsoft 365 のお客様にデータ常駐オプションを提供しています。 このオプションを使用すると、データ常駐要件を持つ対象顧客は、組織のコア顧客データの保存時に新しいデータセンター geo への移行を要求できます。  Microsoft は、登録期間中に移行を要求するすべての対象顧客に対して、コミットされた期限を提供します。  データセンター geo の開いている登録ウィンドウと、プログラムに登録する手順の詳細については、 [データ移動を要求する方法](request-your-data-move.md) ページを参照してください。  データの移行は、要求期間が終了してから最大 24 か月かかる場合があります。
 
 新しいデータセンター geo では、独自機能や準拠証明書を導入していません。
 
@@ -78,4 +79,4 @@ Microsoft 365 サービスの新しいデータセンター geo を引き続き�
   
 [Azure のリージョン](https://azure.microsoft.com/regions/)
 
-[Microsoft 365 Multi-geo 対応テナントでのTeamsエクスペリエンス](/microsoftteams/teams-experience-o365odb-spo-multi-geo)
+[Microsoft 365 Multi-Geo 対応テナントでの Teams エクスペリエンス](/microsoftteams/teams-experience-o365odb-spo-multi-geo)

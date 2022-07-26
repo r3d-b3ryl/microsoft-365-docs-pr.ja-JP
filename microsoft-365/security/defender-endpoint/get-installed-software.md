@@ -1,7 +1,7 @@
 ---
 title: インストールされたソフトウェアを取得する
 description: 特定のデバイス ID に関連するインストール済みソフトウェアのコレクションを取得します。
-keywords: apis, graph api, サポートされている API, get, list, file, information, software inventory, installed software per device, threat & 脆弱性の管理 api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, サポートされている API, get, list, file, information, software inventory, installed software per device, threat & Vulnerability management api, Microsoft Defender for Endpoint tvm api
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,23 +15,26 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 97aa4a668306c4790dcd42c046ba4bf3a04bcf51
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 215f1e18b22a0dca1aedcfdbe355e4a65e0b8664
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840411"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67020101"
 ---
 # <a name="get-installed-software"></a>インストールされたソフトウェアを取得する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> Microsoft Defender 脆弱性の管理を体験しますか? [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法の詳細については、こちらを参照してください。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -58,7 +61,7 @@ GET /api/machines/{machineId}/software
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 
