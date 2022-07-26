@@ -16,6 +16,7 @@
 #### [メンテナンスと運用](mde-p1-maintenance-operations.md)
 ### [米国政府のお客様向けの Microsoft Defender for Endpoint](gov.md)
 ### [Windows 以外のプラットフォーム上の Microsoft Defender for Endpoint](non-windows.md)
+### [Defender for Endpoint とのウイルス対策ソリューションの互換性](defender-compatibility.md)
 
 
 ## [機能を評価する](evaluation-lab.md)
@@ -203,6 +204,7 @@
 
 #### [アクセス許可]()
 ##### [基本的なアクセス許可を使用してポータルにアクセスする](basic-permissions.md)
+##### [ユーザー アクセスを Microsoft Defender セキュリティ センターに割り当てる](assign-portal-access.md)
 ##### [RBAC を使用してポータル アクセスを管理する](rbac.md)
 ###### [役割の作成と管理](user-roles.md)
 ###### [デバイス グループの作成と管理](machine-groups.md)
@@ -256,8 +258,9 @@
 ###### [攻撃面の減少 (ASR) ルールを有効にする](attack-surface-reduction-rules-deployment-implement.md)
 ###### [攻撃面の減少 (ASR) ルールの運用化](attack-surface-reduction-rules-deployment-operationalize.md)
 ##### [攻撃面の減少 (ASR) ルールの参照](attack-surface-reduction-rules-reference.md)
+##### [攻撃面の減少 (ASR) ルールのトラブルシューティング](troubleshoot-asr-rules.md)
 ##### [ASR ルールの代替構成方法を有効にする](enable-attack-surface-reduction.md)
-##### [攻撃面の減少の FAQ](attack-surface-reduction-faq.yml)
+#### [攻撃面の減少の FAQ](attack-surface-reduction-faq.yml)
 #### [制御されたフォルダー アクセス]()
 ##### [フォルダーの保護](controlled-folders.md)
 ##### [制御されたフォルダー アクセスを評価する](evaluate-controlled-folder-access.md)
@@ -292,6 +295,7 @@
 ### 次世代の保護
 #### [次世代保護の概要](next-generation-protection.md)
 ##### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-windows.md)
+##### [Windows の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)
 ##### [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365](office-365-microsoft-defender-antivirus.md)
 #### [Microsoft Defender ウイルス対策を評価する](evaluate-microsoft-defender-antivirus.md)
@@ -302,6 +306,7 @@
 ##### [クラウド保護レベルを指定する](specify-cloud-protection-level-microsoft-defender-antivirus.md)
 ##### [クラウド保護とサンプルの送信](cloud-protection-microsoft-antivirus-sample-submission.md)
 #### [Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)
+#### [ネットワーク トラフィック検査用の追加の定義セットを指定する](specify-additional-definitions-network-traffic-inspection-mdav.md)
 #### [改ざん防止機能を使用してセキュリティ設定を保護する](prevent-changes-to-security-settings-with-tamper-protection.md)
 #### [事前ブロックを有効にする](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 #### [クラウド ブロックのタイムアウト期間の構成](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md)
@@ -335,6 +340,7 @@
 ##### [エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)
 ##### [ユーザーが Microsoft Defender ウイルス対策のポリシー設定をローカルで変更できるかどうかを指定する](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 ##### [ユーザーが Microsoft Defender ウイルス対策のユーザー インターフェイスを表示できるかどうか、または操作できるかどうかを指定する](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+##### [定義の廃止を有効にする](turn-on-definition-retirement.md)
 
 #### [Microsoft Defender ウイルス対策を展開してレポートする](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Microsoft Defender ウイルス対策を展開して有効にする](deploy-microsoft-defender-antivirus.md)
@@ -362,6 +368,8 @@
 ##### [デバイスの正常性とコンプライアンスのレポート](machine-reports.md)
 ##### [リアルタイム保護に関連するパフォーマンスの問題のトラブルシューティング](troubleshoot-performance-issues.md) 
 ##### [更新プログラムのコンプライアンスでの Microsoft Defender ウイルス対策レポートのトラブルシューティング](troubleshoot-reporting.md)
+##### [Microsoft Defender ウイルス対策の診断データの収集](collect-diagnostic-data.md)
+##### [更新プログラムのコンプライアンスと Microsoft Defender ウイルス対策の診断データを収集する](collect-diagnostic-data-update-compliance.md)
 ##### [Microsoft Defender ウイルス対策のパフォーマンスの調整](tune-performance-defender-antivirus.md)
 
 #### Microsoft Defender ウイルス対策のトラブルシューティング
@@ -454,12 +462,14 @@
 #### [AIR の概要](automated-investigations.md)
 #### [AIR の自動化レベル](automation-levels.md)
 #### [AIR 機能の構成](configure-automated-investigations-remediation.md)
+#### [自動調査の詳細と結果を表示する](autoir-investigation-results.md)
 
 ### [Microsoft 脅威エキスパート]()
 #### [Microsoft 脅威エキスパートの概要](microsoft-threat-experts.md)
 #### [Microsoft 脅威エキスパートの機能を構成および管理する](configure-microsoft-threat-experts.md)
 
-
+### [次世代の保護]()
+#### [スケジュール スキャンとオンデマンド スキャンを実行してカスタマイズする](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 
 ## 参照
 ### [脅威インテリジェンスの概念を理解する](threat-indicator-concepts.md)
@@ -547,11 +557,13 @@
 ####### [ID でマシンを取得する](get-machine-by-id.md)
 ####### [ユーザーのマシン ログオンを取得する](get-machine-log-on-users.md)
 ####### [マシン関連のアラートを取得する](get-machine-related-alerts.md)
+####### [マシンのセキュリティ状態のコレクション API を取得する](get-machinesecuritystates-collection.md)
 ####### [インストールされたソフトウェアを取得する](get-installed-software.md)
 ####### [検出された脆弱性を取得する](get-discovered-vulnerabilities.md)
 ####### [セキュリティ上の推奨事項を取得する](get-security-recommendations.md)
 ####### [マシン タグの追加または削除](add-or-remove-machine-tags.md)
 ####### [IP でマシンを検出する](find-machines-by-ip.md)
+####### [内部 IP によるデバイス情報の検索](find-machine-info-by-ip.md)
 ####### [タグでマシンを検出する](find-machines-by-tag.md)
 ####### [不足している KB を取得する](get-missing-kbs-machine.md)
 ####### [デバイス値の設定](set-device-value.md)
@@ -607,6 +619,7 @@
 ####### [ソフトウェアによるマシンの一覧表示](get-machines-by-software.md)
 ####### [ソフトウェアによる脆弱性の一覧表示](get-vuln-by-software.md)
 ####### [不足している KB を取得する](get-missing-kbs-software.md)
+####### [KB コレクション APIを取得する](get-machinegroups-collection.md)
 
 ###### [ユーザー]()
 ####### [ユーザー メソッド](user.md)
@@ -618,6 +631,8 @@
 ####### [脆弱性の一覧表示](get-all-vulnerabilities.md)
 ####### [マシンとソフトウェアによる脆弱性の一覧表示](get-all-vulnerabilities-by-machines.md)
 ####### [ID による脆弱性の取得](get-vulnerability-by-id.md)
+####### [CVE-KB マップ API の取得](get-cvekbmap-collection.md)
+####### [KB コレクション APIの取得](get-kbinfo-collection.md)
 ####### [脆弱性によるマシンの一覧表示](get-machines-by-vulnerability.md)
 
 ##### [API の使用方法 - サンプル]()
@@ -626,6 +641,7 @@
 ###### [Python を使用した高度な追求](run-advanced-query-sample-python.md)
 ###### [PowerShell を使用した高度な追求](run-advanced-query-sample-powershell.md)
 ###### [OData クエリの使用](exposed-apis-odata-samples.md)
+###### [PowerShell API ガイドを使用した高度な追求](exposed-apis-full-sample-powershell.md)
 
 
 #### [生データ ストリーミング API]()

@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4653ac9212ef20d7baecdbfa11885e25b514a067
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943869"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004369"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -216,7 +216,7 @@ EOP のお客様は、前述のように基本的なフィッシング対策を�
 |**メールボックス インテリジェンスが検出され、偽装されたユーザーの場合** <br><br> _MailboxIntelligenceProtectionAction_|**アクションを適用しない** <br><br> `NoAction`|**受信者の迷惑メール Email フォルダーにメッセージを移動する** <br><br> `MoveToJmf`|**メッセージを検疫する** <br><br> `Quarantine`||
 |**ユーザー偽装の安全性に関するヒントを表示する** <br><br> _EnableSimilarUsersSafetyTips_|オフ <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**ドメイン偽装の安全性に関するヒントを表示する** <br><br> _EnableSimilarDomainsSafetyTips_|オフ <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
-|**ユーザー権限借用の異常な文字の安全性のヒントを表示する** <br><br> _EnableUnusualCharactersSafetyTips_|オフ <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
+|**ユーザー偽装の異常な文字の安全性のヒントを表示する** <br><br> _EnableUnusualCharactersSafetyTips_|オフ <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 
 #### <a name="eop-anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の EOP フィッシング対策ポリシー設定
 
@@ -242,7 +242,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 |セキュリティ機能名|既定値|組み込みの保護|コメント|
 |---|:---:|:---:|---|
 |**SharePoint、OneDrive、Microsoft Teams 用の Microsoft Defender for Office 365 を有効にする** <br><br> _EnableATPForSPOTeamsODB_|オフ <br><br> `$false`|オン <br><br> `$true`|ユーザーが悪意のあるファイルをダウンロードできないようにするには、「 [SharePoint Online PowerShell を使用して、ユーザーが悪意のあるファイルをダウンロードできないようにする」](turn-on-mdo-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)を参照してください。|
-|**Office クライアントの安全なドキュメントを有効にする** <br><br> _EnableSafeDocs_|オフ <br><br> `$false`|オン <br><br> `$true`|この機能は、Defender for Office 365に含まれていないライセンス (Microsoft 365 E5やMicrosoft 365 E5 Securityなど) でのみ使用でき、意味があります。 詳細については、「[Microsoft 365 E5の安全なドキュメント](safe-docs.md)」を参照してください。|
+|**Office クライアントの安全なドキュメントを有効にする** <br><br> _EnableSafeDocs_|オフ <br><br> `$false`|オン <br><br> `$true`|この機能は、Defender for Office 365に含まれていないライセンス (Microsoft 365 A5やMicrosoft 365 E5 Securityなど) でのみ使用でき、意味があります。 詳細については、「[Microsoft 365 A5 または E5 セキュリティの安全なドキュメント](safe-docs.md)」を参照してください。|
 |**セーフ ドキュメントでファイルが悪意のあるものとして識別された場合でも、ユーザーが保護されたビューをクリックできるようにする** <br><br> _AllowSafeDocsOpen_|オフ <br><br> `$false`|オフ <br><br> `$false`|この設定は、安全なドキュメントに関連しています。|
 
 #### <a name="safe-attachments-policy-settings"></a>安全な添付ファイル ポリシー設定
