@@ -26,14 +26,14 @@ ms.custom:
 description: Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールする方法をご確認ください。
 ms.openlocfilehash: 008fc46482df96f93af75b245aa7de94b8affdfb
 ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2022
 ms.locfileid: "66603937"
 ---
 # <a name="install-office-applications"></a>Office アプリケーションをインストールする
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 Microsoft 365 のセットアップが完了しましたので、Mac、PC、モバイル デバイスに個々の Office アプリケーションをインストールできます。
   
