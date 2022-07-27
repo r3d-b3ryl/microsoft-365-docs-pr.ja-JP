@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: b94c52feb88703ac28f9cd72267d7fa8c952a741
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 03538b93115d28ed033097f99f446def673c5cdb
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489971"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050977"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS でのMicrosoft Defender for Endpointの新機能
 
@@ -34,13 +34,25 @@ ms.locfileid: "66489971"
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="network-protection"></a>ネットワーク保護
+
 Microsoft Defender for Endpointの Network Protection はパブリック プレビュー段階になりました。 ネットワーク保護は、悪意のあるWi-Fi関連する脅威、不正なハードウェア (セキュリティデバイスなど) に対する保護を提供し、関連する脅威が検出された場合にユーザーに通知します。 また、セキュリティで保護されたネットワークに接続し、セキュリティで保護されていない接続に接続するときにネットワークを変更するためのガイド付きエクスペリエンスも表示されます。
 
 これには、Microsoft エンドポイント マネージャー 管理 センター内から機能を構成する機能など、柔軟性を提供するための管理コントロールがいくつか含まれています。 管理者は、プライバシー制御を有効にして、Defender for Endpoint によって iOS デバイスから送信されるデータを構成することもできます。 詳細については、「 [Network Protection の構成」を参照してください](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-network-protection)。
 
 iOS のネットワーク保護は、テナントに対して既に有効になっています。 ネットワーク保護機能をテストしているエンド ユーザーは、TestFlight を使用してアプリのプレビュー バージョンをインストールできます。 https://aka.ms/mdeiospp iOS デバイスで参照します。 これにより、TestFlight アプリが既にインストールされている場合は、TestFlight アプリをデバイスにインストールするか、TestFlight を開くかを確認するメッセージが表示されます。 TestFlight アプリで、画面の指示に従って Microsoft Defender エンドポイントをインストールします。 MDE のバージョン番号が 1.1.29270104 であることを確認してください。
 
+## <a name="privacy-controls"></a>プライバシー コントロール
+
+iOS のMicrosoft Defender for Endpointでは、管理者とエンド ユーザーの両方のプライバシー 制御が有効になります。 これには、登録された (MDM) デバイスと登録されていない (MAM) デバイスのコントロールが含まれます。 管理者はフィッシング アラート レポートでプライバシーを構成できますが、エンド ユーザーは組織に共有される情報を構成できます。
+
+## <a name="optional-permissions-and-disable-web-protection"></a>オプションのアクセス許可と Web 保護の無効化
+
+iOS のMicrosoft Defender for Endpointでは、オンボード フローで **オプションのアクセス許可** が有効になります。 現在、MDE で必要なアクセス許可は、オンボード フローで必須です。 この機能を使用すると、管理者は、オンボード中に必須の **VPN アクセス許可** を強制することなく、BYOD デバイスに MDE をデプロイできます。 エンド ユーザーは、必須のアクセス許可なしでアプリをオンボードでき、後でこれらのアクセス許可を確認できます。 この機能は現在、登録済みデバイス (MDM) にのみ存在します。
+
+**Web Protection を無効にすると**、VPN を設定したくないお客様は、**Web Protection** を無効にし、その機能なしで MDE をデプロイするように構成できます。 その他の MDE 機能は引き続き機能します。 この構成は、登録済み (MDM) デバイスと登録されていない (MAM) デバイスの両方で使用できます。
+
 ## <a name="integration-with-tunnel"></a>Tunnel との統合
+
 iOS のMicrosoft Defender for Endpointは、1 つのアプリでセキュリティと接続を有効にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できるようになりました。  Tunnel との統合により、1 つのアプリだけで iOS 上のシンプルで安全な VPN エクスペリエンスが提供されます。 この機能は、以前は Android でのみ使用できます。 詳細については、[こちらにある techcommunity の投稿を参照してください](https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/what-s-new-in-microsoft-endpoint-manager-2204-april-edition/ba-p/3297995)。
 
 ## <a name="improved-experience-on-supervised-ios-devices"></a>監視対象の iOS デバイスでのエクスペリエンスの向上
@@ -59,7 +71,6 @@ Microsoft Defender for Endpointは、アプリ ストアで **Microsoft Defender
 - iOS での Tunnel - Microsoft Defender for Endpoint **との統合** は、1 つのアプリでセキュリティと接続を可能にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できるようになりました。 詳細については、「 [Microsoft Tunnel の概要](/mem/intune/protect/microsoft-tunnel-overview)」を参照してください。
 - Microsoft エンドポイント マネージャー (Intune) を通じて登録 **された登録済み iOS デバイスのゼロタッチ オンボード** は一般公開されています。 詳細については、「[Microsoft Defender for Endpointのゼロ タッチ オンボード](/microsoft-365/security/defender-endpoint/ios-install#zero-touch-onboarding-of-microsoft-defender-for-endpoint)」を参照してください。
 - バグ修正。
-
 
 ## <a name="1124210103"></a>1.1.24210103
 

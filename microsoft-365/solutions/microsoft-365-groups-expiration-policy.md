@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Microsoft 365 グループの有効期限ポリシーについて説明します。
-ms.openlocfilehash: 41a179dc714063a66ba34aeb676321badfc5f947
-ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
+ms.openlocfilehash: 3fd7d5269d755d6b48429b425616d42157e3294c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66720459"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050658"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシー
 
@@ -51,7 +51,7 @@ Microsoft 365 グループと Microsoft Teams の使用が増えるにつれ、�
 
 ## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Microsoft 365 グループの有効期限ポリシーを構成して使用できるユーザー
 
-|役割|可能な操作|
+|ロール|可能な操作|
 |---------|---------|
 |Office 365 グローバル管理者 (Azure では会社の管理者)、ユーザー管理者|Microsoft 365 グループの有効期限ポリシー設定を作成、読み取り、更新、または削除します。|
 |User|自分が所有する Microsoft 365 グループを更新または [復元](/azure/active-directory/users-groups-roles/groups-restore-deleted) する|
@@ -64,7 +64,9 @@ Microsoft 365 グループと Microsoft Teams の使用が増えるにつれ、�
 
 グループに所有者がいない場合、有効期限のメールは指定された管理者に送信されます。
 
-すべてのグループに対してポリシーを設定するか、選択したグループのみ (最大 500) に設定するか、[ **なし**] を選択して完全に無効にすることができます。 現時点では、グループごとに異なるポリシーを設定することはできません。
+すべてのグループに対してポリシーを設定するか、選択したグループのみ (最大 500) に設定するか、[ **なし**] を選択して完全に無効にすることができます。 **[なし]** を選択すると、アクティブで確認のために保留中のすべてのグループに有効期限はありません。 ただし、既に有効期限が切れているグループは影響を受けられません。
+
+現時点では、グループごとに異なるポリシーを設定することはできません。
 
 ![Azure Active Directory のグループの有効期限設定のスクリーンショット。](../media/azure-groups-expiration-settings.png)
 

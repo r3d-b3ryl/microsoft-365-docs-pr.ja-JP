@@ -2,7 +2,7 @@
 title: List Indicators API
 description: List Indicators API を使用して、Microsoft Defender for Endpoint内のすべてのアクティブなインジケーターのコレクションを取得する方法について説明します。
 keywords: apis、public api、サポートされている API、Indicators コレクション
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: adc3cfecba10431a909b72f875442d80b6638f03
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1679f5f1b38ac3857b07625a883e267229eda8c6
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283739"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051054"
 ---
 # <a name="list-indicators-api"></a>List Indicators API
 
@@ -54,7 +54,7 @@ OData の`$filter`クエリは、次 `action``rbacGroupIds``indicatorValue``rbac
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[作業の開始」](apis-intro.md)を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---

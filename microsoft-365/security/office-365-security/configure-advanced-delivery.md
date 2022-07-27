@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきでないメッセージを特定する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fbfa8f79698d053fe60388eec54ebe90f6501ff
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917565"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051186"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信するように構成する
 
@@ -33,15 +33,15 @@ ms.locfileid: "66917565"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[組織を既定でセキュリティで保護](secure-by-default.md)するために、Exchange Online Protection (EOP) では、マルウェアまたは信頼度の高いフィッシングとして識別されるメッセージのセーフ リストまたはフィルター処理のバイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 次に例を示します。
+[組織を既定でセキュリティで保護](secure-by-default.md)するために、Exchange Online Protection (EOP) では、マルウェアまたは信頼度の高いフィッシングとして識別されるメッセージのセーフ リストまたはフィルター処理のバイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 以下に例を示します。
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps) メールボックス**: フィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するためにセキュリティ チームによって使用される専用メールボックス。
 
-Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの特定のシナリオで_ 受信メッセージがフィルター処理されないようにします。<sup>\*</sup> 高度な配信ポリシーを使用すると、これらのシナリオのメッセージで次の結果が得られます。
+Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの特定のシナリオで_ 受信メッセージがフィルター処理 <sup>\*</sup>されないようにします。 高度な配信ポリシーを使用すると、これらのシナリオのメッセージで次の結果が得られます。
 
 - EOP とMicrosoft Defender for Office 365のフィルターは、これらのメッセージに対して何のアクションも実行しません。<sup>\*</sup>
-- スパムとフィッシングの[ゼロ時間消去 (ZAP)](zero-hour-auto-purge.md) では、これらのメッセージに対してアクションは実行されません。<sup>\*\*</sup>
+- スパムとフィッシングの[ゼロ時間消去 (ZAP)](zero-hour-auto-purge.md) では、これらのメッセージ<sup>\*\*</sup>に対してアクションは実行されません。
 - これらのシナリオでは、[既定のシステム アラート](/microsoft-365/compliance/alert-policies#default-alert-policies)はトリガーされません。
 - [Defender for Office 365の AIR とクラスタリングでは](office-365-air.md)、これらのメッセージは無視されます。
 - 特にサード パーティのフィッシング シミュレーションの場合:

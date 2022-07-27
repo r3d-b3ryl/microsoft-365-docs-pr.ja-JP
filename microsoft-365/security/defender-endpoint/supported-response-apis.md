@@ -4,7 +4,7 @@ description: 特定の応答関連のMicrosoft Defender for Endpoint API 呼び�
 keywords: response apis, graph api, サポートされている API, アクター, アラート, デバイス, ユーザー, ドメイン, IP, ファイル
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: dcf73669ab780ec23cbd5551039dc8c74f0502ef
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 8dd36e06b90726a01168ccd3ebf12886c127b101
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61165800"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050966"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-query-apis"></a>サポートされているMicrosoft Defender for Endpointクエリ API
 

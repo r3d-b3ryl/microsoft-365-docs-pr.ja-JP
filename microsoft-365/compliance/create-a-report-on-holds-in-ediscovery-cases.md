@@ -20,12 +20,12 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: 電子情報開示ケースに関連付けられているすべての保留に関する情報を含むレポートを生成する方法について説明します。
-ms.openlocfilehash: 8f3c3d56e59508c061776643e743a1ff5c2fe2db
-ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
+ms.openlocfilehash: 260dc24d0cdc2ef6cb21c1a3e6dada56e37722d2
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "66984049"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051098"
 ---
 # <a name="use-a-script-to-create-a-report-on-holds-in-ediscovery-cases"></a>電子情報開示ケースで保留に関するレポートを作成するスクリプトを使用する
 
@@ -128,7 +128,7 @@ Security & Compliance PowerShell に接続したら、次の手順では、組�
    }
    }
    else{
-   write-host "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
+    "No hold policies found in case:" $cc.name -foregroundColor 'Yellow'
    " "
    [string]$cc.name | out-file -filepath $noholdsfilepath -append
    }

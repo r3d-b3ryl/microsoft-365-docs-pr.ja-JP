@@ -2,7 +2,7 @@
 title: マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスを提供する
 description: Microsoft Defender セキュリティ センターからMicrosoft 365 Defender ポータルへの変更について説明します
 keywords: Microsoft 365 Defender ポータル、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、ガラスの単一ウィンドウ、コンバージド ポータル、セキュリティ ポータル、Defender セキュリティ ポータルの概要
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 4eccd4d6140810bae4caef5e194082aeb3054217
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 3df43fd4de6bd040db0acd13678434c7302aff5d
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102374"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050757"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスを提供する 
 
@@ -123,7 +123,7 @@ ms.locfileid: "66102374"
 
     例: `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`
 
-2. UI の **承認** セクションで要求を承認または拒否します。
+2. UI の **[承認** ] セクションで要求を承認または拒否します。
 
      この時点で、アナリストアクセスがプロビジョニングされ、各アナリストは顧客のMicrosoft 365 Defenderポータルにアクセスできる必要があります。
 

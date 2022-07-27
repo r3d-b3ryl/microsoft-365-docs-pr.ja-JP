@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -23,17 +24,14 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 43c48081a86e33cd918bc4de8f01859bc1107583
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 1dc09357f2b16a0d00dc995ff2a9e10285ccb81b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666836"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050680"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>アクション センターでアクションを表示および管理する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 - Microsoft 365 Defender
@@ -47,7 +45,12 @@ Microsoft 365 Defenderの脅威保護機能により、特定の修復アクシ�
 > [!NOTE]
 > 修復アクションを承認または拒否するには、[適切なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)が必要です。 詳細については、前提条件を参照 [してください](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)。
 
-## <a name="review-pending-actions-in-the-action-center"></a>アクション センターで保留中のアクションを確認する
+アクション センターに移動するには、次のいずれかの手順を実行します。
+
+- に移動するか、[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)
+- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の [自動調査&応答] カード **で、[アクション センターで承認**] を選択します。
+
+## <a name="review-pending-actions-in-the-action-center"></a>保留中のアクションをアクション センターで確認する
 
 自動調査を続行し適時完了できるよう、保留中のアクションはできるだけ早く承認 (または拒否) することが重要です。 
 

@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365保護への移行を開始する手順を実行します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9fc63db0c51c4e8478b426cc37002fbfcb23f6d1
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 69af51bbd39339b07af8f0832a113184afaf725b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969477"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051692"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-2-setup"></a>Microsoft Defender for Office 365に移行する - フェーズ 2: セットアップ
 
@@ -63,7 +63,7 @@ ms.locfileid: "66969477"
 
 テストを開始する準備ができたら、これらのグループを例外として [SCL=-1 メール フロー ルール](#step-3-maintain-or-create-the-scl-1-mail-flow-rule)に追加します。 Defender for Office 365のさまざまな保護機能のポリシーを作成するときに、ポリシーが適用されるユーザーを定義する条件としてこれらのグループを使用します。
 
-**注**:
+**注意**:
 
 - Standard および Strict という用語は、 [推奨されるセキュリティ設定](recommended-settings-for-eop-and-office365.md)に由来します。これは、 [事前設定されたセキュリティ ポリシー](preset-security-policies.md)でも使用されます。 理想的には、Standard および Strict の事前設定済みセキュリティ ポリシーでパイロット ユーザーを定義することをお勧めしますが、これを行うことはできません。 どうしてでしょうか? 事前設定されたセキュリティ ポリシー (特に、メッセージに対して実行されるアクション) の設定をカスタマイズできないためです。 移行テスト中に、メッセージに対して実行するDefender for Office 365を確認し、それが何を行うかを確認し、それらの結果を許可または防止するようにポリシー構成を調整する必要があります。
 
@@ -85,7 +85,7 @@ Exchange Online メールボックスを指定して、ユーザーが悪意の�
 
 - [レポート メッセージ アドイン](enable-the-report-message-add-in.md)
 - [レポート フィッシング アドイン](enable-the-report-phish-add-in.md)
-- サポートされているサード パーティのレポート ツール ([こちら](user-submission.md#third-party-email-reporting-tools))
+- [ここで](user-submission.md#third-party-reporting-tools-options)説明するように、サポートされているサード パーティのレポート ツール。
 
 この手順の重要性を過小評価しないでください。 ユーザー提出のデータにより、移行前と移行後に良好で一貫性のあるエンド ユーザー エクスペリエンスを確認するために必要なフィードバック ループが提供されます。 このフィードバックは、情報に基づいたポリシー構成の決定を行うだけでなく、移行がスムーズに進んだというデータに基づくレポートを管理に提供するのに役立ちます。
 
@@ -106,11 +106,11 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 
 詳細については、「[メール フロー ルールを使用して、Exchange Online内のメッセージでスパム信頼レベル (SCL) を設定](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)する」を参照してください。
 
-**注**:
+**注意**:
 
 - インターネット メールが既存の保護サービスを経由 **し、** 同時に Microsoft 365 に直接送信されるようにする場合は、SCL=-1 メール フロー ルール (スパム フィルターをバイパスするメール) を、既存の保護サービスのみを通過するメールに制限する必要があります。 Microsoft 365 のユーザー メールボックスにフィルター処理されていないインターネット メールのランディングは必要ありません。
 
-  既存の保護サービスによって既にスキャンされているメールを正しく識別するには、SCL=-1 メール フロー ルールに条件を追加します。 例:
+  既存の保護サービスによって既にスキャンされているメールを正しく識別するには、SCL=-1 メール フロー ルールに条件を追加します。 以下に例を示します。
 
   - **クラウドベースの保護サービスの場合**: 組織に固有のヘッダーとヘッダーの値を使用できます。 ヘッダーを含むメッセージは、Microsoft 365 によってスキャンされません。 ヘッダーのないメッセージは、Microsoft 365 によってスキャンされます
   - **オンプレミスの保護サービスまたはデバイスの** 場合: ソース IP アドレスを使用できます。 ソース IP アドレスからのメッセージは、Microsoft 365 によってスキャンされません。 ソース IP アドレスからではないメッセージは、Microsoft 365 によってスキャンされます。
@@ -198,7 +198,7 @@ SCL=-1 メール フロー ルールは、次の理由から移行中に重要�
 - [フィッシング対策ポリシーの偽装設定](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 - [Defender for Office 365でフィッシング対策ポリシーを構成](configure-mdo-anti-phishing-policies.md)します。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-step"></a>次の手順
 
 **おめでとうございます**。 [Microsoft Defender for Office 365への移行](migrate-to-defender-for-office-365.md#the-migration-process)の **セットアップ** フェーズが完了しました。
 

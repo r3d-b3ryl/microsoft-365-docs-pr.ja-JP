@@ -3,7 +3,7 @@ title: 内部 IP API でデバイス情報を検索する
 description: この API を使用して、内部 IP によって特定のタイムスタンプに関するデバイス エントリを検索する場合に関連する呼び出しを作成します。
 keywords: ip, apis, graph api, サポートされている API, デバイスの検索, デバイス情報
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 4c4666f70b27c3bb06f6d486ab8fe1c20c56d53c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: a641784e632574d8b5ba50c59bbc5b987d9375de
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61163916"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051868"
 ---
 # <a name="find-device-information-by-internal-ip-api"></a>内部 IP API でデバイス情報を検索する
 
@@ -76,7 +76,7 @@ Empty
 
 ### <a name="request-example"></a>要求の例
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/machines/find(timestamp=2018-06-19T10:00:00Z,key='10.166.93.61')
@@ -85,7 +85,7 @@ Content-type: application/json
 
 ### <a name="response-example"></a>応答の例
 
-以下は、応答の例です。
+応答の例を下に示します。
 
 応答は、タイムスタンプの前後 16 分以内にこの IP アドレスを報告したすべてのデバイスの一覧を返します。
 

@@ -12,6 +12,7 @@ f1.keywords:
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -22,17 +23,14 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 631849997fffc0e4f90a9aa9d1850646b764a52a
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b82d40a1bc12b480851de3ecaec639717b3c00c7
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493489"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051802"
 ---
 # <a name="the-action-center"></a>アクション センター
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
 
 **適用対象:**
 - Microsoft 365 Defender
@@ -51,7 +49,7 @@ ms.locfileid: "66493489"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender ポータルの統合アクション センター。" lightbox="../../media/m3d-action-center-unified.png":::
 
-次に例を示します。 
+以下に例を示します。 
 
 - 以前に Office 365 セキュリティ & コンプライアンス センター ()[https://protection.office.com](https://protection.office.com) を使用していた場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で統合アクション センターを試してください。
 - Microsoft Defender セキュリティ センター () でアクション センターを使用していた場合は、Microsoft 365 Defender[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>で統合アクション センターを試します。
@@ -68,28 +66,34 @@ ms.locfileid: "66493489"
 > [!TIP]
 > 詳細については、「 [要件](./prerequisites.md)」を参照してください。
 
+承認待ちのアクションの一覧に移動するには、次の 2 つの方法があります。
+
+- に移動するか、[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)
+- Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の [自動調査&応答] カード **で、[アクション センターで承認**] を選択します。
+
 ## <a name="using-the-action-center"></a>アクション センターの使用
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、サインインします。 
-2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 
 
-アクション センターにアクセスすると、 **保留中のアクション** と履歴という 2 つのタブが表示 **されます**。 次の表は、各タブに表示される内容をまとめたものです。
+2. ナビゲーション ウィンドウで、[**アクション センター**] を選択します。 または、[自動調査&応答] カード **で、[アクション センターで承認**] を選択します。
 
-|タブ  |説明  |
-|---------|---------|
-|**Pending**     | 注意が必要なアクションの一覧を表示します。 アクションを 1 つずつ承認または拒否したり、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクションを選択したりできます。 <p>**ヒント**: 自動調査を適時に完了できるように、保留中のアクションをできるだけ早く確認して承認 (または拒否) してください。       |
-|**履歴**     | 実行されたアクションの監査ログとして機能します。次のようになります。 <br/>- 自動調査の結果として実行された修復アクション <br/>- 疑わしい、または悪意のある電子メール メッセージ、ファイル、または URL に対して実行された修復アクション<br/>- セキュリティ運用チームによって承認された修復アクション <br/>- 実行されたコマンドと、ライブ応答セッション中に適用された修復アクション<br/>- ウイルス対策保護によって実行された修復アクション <p>特定のアクションを元に戻す方法を提供します ( [完了したアクションを元に戻すを](m365d-autoir-actions.md#undo-completed-actions)参照)。        |
+3. **[保留中のアクション]** タブと [**履歴]** タブを使用します。 次の表は、各タブに表示される内容をまとめたものです。
 
-アクション センターでは、データのカスタマイズ、並べ替え、フィルター処理、エクスポートを行うことができます。
+   |タブ  |説明  |
+   |---------|---------|
+   |**Pending**     | 注意が必要なアクションの一覧を表示します。 アクションを 1 つずつ承認または拒否したり、同じ種類のアクション (検疫ファイルなど) がある場合は複数のアクションを選択したりできます。 <br/><br/>自動調査を適時に完了できるように、保留中のアクションをできるだけ早く確認して承認 (または拒否) してください。       |
+   |**履歴**     | 実行されたアクションの監査ログとして機能します。次のようになります。 <br/>- 自動調査の結果として実行された修復アクション <br/>- 疑わしい、または悪意のある電子メール メッセージ、ファイル、または URL に対して実行された修復アクション<br/>- セキュリティ運用チームによって承認された修復アクション <br/>- 実行されたコマンドと、ライブ応答セッション中に適用された修復アクション<br/>- ウイルス対策保護によって実行された修復アクション<br/><br/>特定のアクションを元に戻す方法を提供します ( [完了したアクションを元に戻すを](m365d-autoir-actions.md#undo-completed-actions)参照)。        |
 
-:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="アクション センターの並べ替え、フィルター処理、およびカスタマイズ機能" lightbox="../../media/m3d-action-center-columnsfilters.png":::
+4. アクション センターでは、データのカスタマイズ、並べ替え、フィルター処理、エクスポートを行うことができます。
 
-- 昇順または降順で項目を並べ替える列見出しを選択します。
-- 期間フィルターを使用して、過去の日、週、30 日間、または 6 か月間のデータを表示します。
-- 表示する列を選択します。
-- データの各ページに含める項目の数を指定します。
-- フィルターを使用して、表示するアイテムのみを表示します。
-- [ **エクスポート]** を選択して、結果を.csv ファイルにエクスポートします。
+   :::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="アクション センターの並べ替え、フィルター処理、カスタマイズ機能を示すスクリーンショット。" lightbox="../../media/m3d-action-center-columnsfilters.png":::
+
+   - 昇順または降順で項目を並べ替える列見出しを選択します。
+   - 期間フィルターを使用して、過去の日、週、30 日間、または 6 か月間のデータを表示します。
+   - 表示する列を選択します。
+   - データの各ページに含める項目の数を指定します。
+   - フィルターを使用して、表示するアイテムのみを表示します。
+   - [ **エクスポート]** を選択して、結果を.csv ファイルにエクスポートします。
 
 ## <a name="actions-tracked-in-the-action-center"></a>アクション センターで追跡されるアクション
 
@@ -135,6 +139,6 @@ ms.locfileid: "66493489"
 > [!TIP]
 > Azure AD で **グローバル管理者** ロールが割り当てられているユーザーは、アクション センターで保留中のアクションを承認または拒否できます。 ただし、ベスト プラクティスとして、組織は **グローバル管理者** ロールが割り当てられているユーザーの数を制限する必要があります。 アクション センターのアクセス許可については、前の表に記載されている **セキュリティ管理者**、 **アクティブな修復アクション**、 **および検索と消去** のロールを使用することをお勧めします。
 
-## <a name="next-step"></a>次のステップ 
+## <a name="next-step"></a>次の手順 
 
 - [修復アクションを表示および管理する](m365d-autoir-actions.md)

@@ -2,7 +2,7 @@
 title: Microsoft 365 DefenderのMicrosoft Defender for Identity
 description: Microsoft Defender for IdentityからMicrosoft 365 Defenderへの変更について説明します
 keywords: Microsoft 365 Defender、Microsoft Defender for Identity、NDI の概要
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 53c43c3196a22a97b2f11105f5145bd62229b137
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: efcb57a8ecc1b323f35f7b4fde9f4ebcee99e851
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714815"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051121"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft 365 DefenderのMicrosoft Defender for Identity
 
@@ -54,7 +54,7 @@ Microsoft Defender for Identityは、id に焦点を当てた情報を、Microso
 | 検索                     | Microsoft 365 Defender検索                                |
 | ヘルス センター              | 設定 -> ID -> センサー                            |
 | エンティティ アクティビティ          | 高度な追及                                             |
-| Settings                   | 設定 -> ID                                       |
+| 設定                   | 設定 -> ID                                       |
 | ユーザーとアカウント         | 資産 -> ID                                         |
 | ID セキュリティ体制  | [Microsoft Defender for Identityのセキュリティ体制評価](/defender-for-identity/security-assessment) |
 | 新しいワークスペースのオンボード | 設定 -> ID (自動的)                       |

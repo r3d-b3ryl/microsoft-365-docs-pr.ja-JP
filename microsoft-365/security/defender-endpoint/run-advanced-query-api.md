@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9f361a404ec3f8893ff4573fdc4db29904a5e766
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 3a916f3fe15e979f6d432e3a834453b04afe5a63
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020629"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051780"
 ---
 # <a name="advanced-hunting-api"></a>高度なハンティング API
 
@@ -50,11 +50,11 @@ ms.locfileid: "67020629"
    - API 呼び出し: 1 分あたり最大 45 回の呼び出し、1 時間あたり最大 1500 回の呼び出し。
    - 実行時間: 1 時間ごとに実行時間が 10 分、実行時間が 1 日に 3 時間です。
 
-4. 1 つの要求の最大実行時間は 10 分です。
+4. 1 つの要求の最大実行時間は 200 秒です。
 
 5. 429 応答は、要求の数または CPU によってクォータ制限に達することを表します。 応答本文を読み取って、どの制限に達したかを理解します。
 
-6. 1 つの要求のクエリ結果の最大サイズは 124 MB を超えることはできません。 超過した場合は、"クエリの実行が許可された結果サイズを超えました。 結果の量を制限してクエリを最適化し、もう一度やり直してください"と表示されます。
+6. 1 つの要求のクエリ結果の最大サイズは 124 MB を超えることはできません。 超過した場合は、"クエリの実行が許可された結果サイズを超えました。 結果の数を制限してクエリを最適化し、もう一度やり直してください"と表示されます。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -160,7 +160,7 @@ POST https://api.securitycenter.microsoft.com/api/advancedqueries/run
 }
 ```
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [Microsoft Defender for Endpoint API の概要](apis-intro.md)
 - [ポータルからの高度なハンティング](advanced-hunting-query-language.md)

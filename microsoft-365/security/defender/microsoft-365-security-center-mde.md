@@ -2,7 +2,7 @@
 title: Microsoft 365 Defender の Microsoft Defender for Endpoint
 description: Microsoft Defender セキュリティ センターからMicrosoft 365 Defenderへの変更について説明します
 keywords: Microsoft 365 Defender、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、セキュリティ ポータル、Defender セキュリティ ポータルの概要
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: dd8721bd8c62a99180f9e8cf34b05c5ec6c8b4c8
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617196"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051516"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft 365 Defender の Microsoft Defender for Endpoint
 
@@ -55,7 +55,7 @@ ms.locfileid: "66617196"
 | 脅威&脆弱性管理 | 脆弱性管理 |
 | 評価とチュートリアル | 評価&チュートリアル |
 | 構成管理環境 | 構成管理環境 |
-| Settings | Settings | 
+| 設定 | 設定 | 
 
 強化された[Microsoft 365 Defender](microsoft-365-defender-portal.md)<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>は、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能を組み合わせたものです。 これにより、Microsoft Defender セキュリティ センターやOffice 365 セキュリティ & コンプライアンス センターなど、既存の Microsoft セキュリティ ポータルの機能がまとめられます。
 
@@ -66,7 +66,7 @@ Microsoft Defender セキュリティ センターに慣れている場合は、
 Microsoft 365 DefenderのMicrosoft Defender for Endpointでは、Microsoft Defender セキュリティ センターでアクセスが許可されるのと同じ方法で[マネージド セキュリティ サービス プロバイダー (MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) [へのアクセスを許可](mssp-access.md)できます。
 
 > [!IMPORTANT]
-> Microsoft 365 Defenderに表示される内容は、現在のサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365のライセンスがない場合、[電子メール & コラボレーション] セクションは表示されません。
+> Microsoft 365 Defenderに表示される内容は、現在のサブスクリプションによって異なります。 たとえば、Microsoft Defender for Office 365のライセンスがない場合、[Email & コラボレーション] セクションは表示されません。
 
 > [!Note]
 > Microsoft 365 Defenderは次の目的では使用できません。
@@ -90,7 +90,7 @@ Microsoft 365 Defenderを見てみましょう<a href="https://go.microsoft.com/
 | [インシデント&アラート](incidents-overview.md)  | Microsoft 365 Defenderでは、すべてのエンドポイント、電子メール、ID でインシデントとアラートを管理できます。 関連するイベントをより簡単に見つけられるように、エクスペリエンスを集約しました。 詳細については、「 [インシデントの概要](incidents-overview.md)」を参照してください。   |
 | [検索](advanced-hunting-overview.md)  |  id テーブルと電子メール テーブルを含めるためにMicrosoft Defender for Endpointで作成されたカスタム検出ルールを変更すると、自動的にMicrosoft 365 Defenderに移動されます。 対応するアラートは、Microsoft 365 Defenderにも表示されます。 これらの変更の詳細については、「 [カスタム検出規則の移行」](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules)を参照してください。 <br><br>高度なハンティングのテーブルは`DeviceAlertEvents`、Microsoft 365 Defenderでは使用できません。 Microsoft 365 Defenderでデバイス固有のアラート情報にクエリを実行するには、さまざまなソースのセットからさらに多くの情報に対応するために、テーブルと`AlertEvidence`テーブルを使用`AlertInfo`します。 [DeviceAlertEvents を使用せずに書き込みクエリに従って、次のデバイス関連のクエリを作成します](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)。|
 |[アクション センター](m365d-action-center.md)    | 自動調査と修復アクションの後に実行された保留中のアクションと完了したアクションを一覧表示します。 以前は、Microsoft Defender セキュリティ センターのアクション センターには、デバイスでのみ実行された修復アクションの保留中と完了のアクションが一覧表示され、自動調査ではアラートと状態が一覧表示されました。 改善されたMicrosoft 365 Defenderでは、アクション センターは、電子メール、デバイス、ユーザー全体にわたる修復アクションと調査をすべて 1 つの場所にまとめます。  |
-| [脅威の分析](threat-analytics.md) |  ナビゲーション バーの上部に移動し、検出と使用を容易にします。 エンドポイントと電子メールとコラボレーションの両方の脅威情報が含まれるようになりました。    |
+| [脅威分析](threat-analytics.md) |  ナビゲーション バーの上部に移動し、検出と使用を容易にします。 エンドポイントと電子メールとコラボレーションの両方の脅威情報が含まれるようになりました。    |
 
 ### <a name="endpoints"></a>エンドポイント
 
@@ -116,7 +116,7 @@ Microsoft 365 Defenderを見てみましょう<a href="https://go.microsoft.com/
 |---------|---------|
 | レポート  | 脅威の保護、デバイスの正常性とコンプライアンス、脆弱なデバイスなど、エンドポイントと電子メール &コラボレーションのレポートを参照してください。 |
 | 正常性  |  現在、Microsoft 365 管理センターの [サービス正常性] [ページにリンク](https://admin.microsoft.com/)しています。 |
-| Settings |  Microsoft 365 Defender、エンドポイント、電子メール &コラボレーション、ID、デバイス検出の設定を管理します。   |
+| 設定 |  Microsoft 365 Defender、エンドポイント、Email &コラボレーション、ID、デバイス検出の設定を管理します。   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 のセキュリティ ナビゲーションと機能
 
@@ -172,7 +172,7 @@ Microsoft 365 Defenderを見てみましょう<a href="https://go.microsoft.com/
 
 [Defender for Endpoint SIEM API](../defender-endpoint/enable-siem-integration.md) を使用する場合は、引き続き実行できます。 Microsoft 365 セキュリティ ポータルのアラート ページまたはインシデント ページを指す新しいリンクが API ペイロードに追加されました。 新しい API フィールドには、LinkToMTP と IncidentLinkToMTP が含まれます。 詳細については、「[Microsoft Defender for EndpointからMicrosoft 365 Defenderへのアカウントのリダイレクト」を](./microsoft-365-security-mde-redirection.md)参照してください。
 
-### <a name="email-alerts"></a>電子メール アラート
+### <a name="email-alerts"></a>Emailアラート
 
 Defender for Endpoint には引き続き電子メール アラートを使用できます。 アラート ページまたはMicrosoft 365 Defenderのインシデント ページを指す新しいリンクが電子メールに追加されました。 詳細については、「[Microsoft Defender for EndpointからMicrosoft 365 Defenderへのアカウントのリダイレクト」を](./microsoft-365-security-mde-redirection.md)参照してください。
 

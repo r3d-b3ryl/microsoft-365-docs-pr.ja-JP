@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Businessとは
+title: Defender for Business とは?
 description: Microsoft Defender for Businessは、中小企業向けのサイバーセキュリティ ソリューションです。 Defender for Business は、デバイス全体の脅威から保護します。
 search.appverid: MET150
 author: denisebmsft
@@ -17,21 +17,21 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-overview
-ms.openlocfilehash: dd4dfa5bf173f0109eb9da993a18930c5b67f667
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: e4210c2540e3d6d85dae38134148b5564d18fcf4
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771375"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051582"
 ---
-# <a name="what-is-microsoft-defender-for-business"></a>Microsoft Defender for Businessとは
+# <a name="what-is-microsoft-defender-for-business"></a>Defender for Business とは?
 
 Defender for Business は、特に中小規模のビジネス (最大 300 人の従業員) 向けに設計された新しいエンドポイント セキュリティ ソリューションです。 このエンドポイント セキュリティ ソリューションを使用すると、ランサムウェア、マルウェア、フィッシング、その他の脅威から会社のデバイスをより適切に保護できます。 
 
 この記事では、Defender for Business に含まれる内容と、これらの機能の詳細を確認するためのリンクについて説明します。
 
 
-## <a name="video-enterprise-grade-protection-for-small-and-medium-sized-businesses"></a>ビデオ: 中小企業向けのエンタープライズ レベルの保護
+## <a name="video-enterprise-grade-protection-for-small--and-medium-sized-businesses"></a>ビデオ: 中小企業向けのエンタープライズ レベルの保護
 
 Defender for Business の詳細については、次のビデオをご覧ください。 <br/><br/>
 
@@ -39,7 +39,7 @@ Defender for Business の詳細については、次のビデオをご覧くだ�
 
 ## <a name="whats-included-with-defender-for-business"></a>Defender for Business に含まれるもの
 
-:::image type="content" source="media/mdb-offering-overview.png" alt-text="Defender for Business の機能と機能。":::
+:::image type="content" source="media/mdb-offering-overview.png" alt-text="Defender for Business の機能。":::
 
 Defender for Business を使用すると、ビジネスで使用するデバイスとデータを次のように保護できます。
 

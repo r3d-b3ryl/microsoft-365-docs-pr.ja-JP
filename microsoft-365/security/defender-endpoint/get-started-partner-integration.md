@@ -3,7 +3,7 @@ title: Microsoft Defender for Endpoint パートナーになる
 ms.reviewer: ''
 description: ソリューションをMicrosoft Defender for Endpointと統合し、パートナーになる手順と要件について説明します
 keywords: パートナー, 統合, ソリューション検証, 認定, 要件, メンバー, misa, application portal
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: b063d8435817d7dd64c3febf6e3399f3876ef894
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 276f411699f4a9db61850a04da3ff18d3c6bb2a7
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63319827"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051208"
 ---
 # <a name="become-a-microsoft-defender-for-endpoint-partner"></a>Microsoft Defender for Endpoint パートナーになる
 
@@ -53,8 +53,8 @@ Microsoft Defender for Endpointでは、Microsoft Defender for Endpoint管理ポ
 2. 表示する製品の名前。
 3. 15 語の製品説明を入力します。
 4. 顧客に十分な情報を含む統合またはブログ投稿を完了するための顧客のランディング ページにリンクします。 Microsoft Defender for Endpoint製品名を含むすべてのプレス リリースは、マーケティングチームとエンジニアリング チームが確認する必要があります。 確認プロセスが完了するまで少なくとも 10 日間待ちます。
-5. マルチテナント Azure AD アプローチを使用する場合は、アプリケーションの使用状況を追跡するためにAzure ADアプリケーション名が必要です。
-6. パブリック API または Graph セキュリティ API のセットMicrosoft Defender for Endpoint行われる各 API 呼び出しに、User-Agent フィールドを含めます。 これは、統計目的、トラブルシューティング、およびパートナー認識に使用されます。 さらに、この手順は、Microsoft インテリジェント セキュリティ アソシエーション (MISA) のメンバーシップの要件です。
+5. マルチテナント Azure AD アプローチを使用する場合は、アプリケーションの使用状況を追跡するために Azure AD アプリケーション名が必要になります。
+6. パブリック API または Graph Security API のセットMicrosoft Defender for Endpoint行う各 API 呼び出しに、User-Agent フィールドを含めます。 これは、統計目的、トラブルシューティング、およびパートナー認識に使用されます。 さらに、この手順は、Microsoft インテリジェント セキュリティ アソシエーション (MISA) のメンバーシップの要件です。
 
    次の手順を実行します。
 
@@ -78,6 +78,6 @@ Microsoft Defender for Endpointとのパートナーシップは、相互のお�
 マネージド セキュリティ サービス プロバイダー (MSSP) と独立系ソフトウェア ベンダー (ISV) は、Microsoft インテリジェント セキュリティ アソシエーション (MISA) に指定できます。 詳細については、 [MISA 情報ページを](https://www.microsoft.com/security/business/intelligent-security-association)参照してください。
 
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [テクニカル パートナーの機会](partner-integration.md)

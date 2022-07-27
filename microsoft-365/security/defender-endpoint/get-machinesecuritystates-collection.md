@@ -1,10 +1,10 @@
 ---
-title: コンピューターのセキュリティ状態コレクション API を取得する
+title: マシンのセキュリティ状態のコレクション API を取得する
 description: Microsoft Defender for Endpointを使用して、デバイスのセキュリティ状態のコレクションを取得します。
 keywords: apis, graph api, サポートされている API, get, device, security, state
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 91df2aab70b2bb8edb46700feefdae59df4ac68b
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c7750868c557ba4ebb4c37584b69e710ae1a449b
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166904"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051450"
 ---
 # <a name="get-machines-security-states-collection-api"></a>Get Machines security states collection API
 

@@ -3,7 +3,7 @@ title: Microsoft 365 Defenderの脅威分析
 ms.reviewer: ''
 description: 新しい脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復性を評価します。
 keywords: 脅威分析, リスク評価, Microsoft 365 Defender, M365D, 軽減状態, セキュリティで保護された構成, Microsoft Defender for Office 365, Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、統合Microsoft 365 Defender脅威分析
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b034445951a0b8f52e995ff3372a2b0404f8cbfb
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731040"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67050790"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defenderの脅威分析
 
@@ -48,7 +48,7 @@ ms.locfileid: "64731040"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-脅威分析には、Microsoft 365セキュリティ ポータルのナビゲーション バーの左上から、または組織に対する最上位の脅威を示す専用ダッシュボード カードから、影響の観点と露出の観点からアクセスできます。
+脅威分析には、Microsoft 365 セキュリティ ポータルのナビゲーション バーの左上から、または組織に対する最大の脅威を示す専用ダッシュボード カードから、影響の観点と露出の観点からアクセスできます。
 
 :::image type="content" source="../../media/threat-analytics/ta_inlandingpage_mtp.png" alt-text="脅威分析のランディング ページ" lightbox="../../media/threat-analytics/ta_inlandingpage_mtp.png":::
 
@@ -71,7 +71,7 @@ _脅威分析にアクセスする場所_
 脅威分析ダッシュボード ([security.microsoft.com/threatanalytics3](https://security.microsoft.com/threatanalytics3)) では、組織に最も関連するレポートが強調表示されます。 次のセクションの脅威の概要を示します。
 
 - **最新の脅威** - 最近発行または更新された脅威レポートと、アクティブなアラートと解決されたアラートの数を一覧表示します。
-- **影響の大きい脅威** - 組織に最も影響を与える脅威を一覧表示します。 このセクションでは、最初にアクティブなアラートと解決されたアラートの数が最も多い脅威の一覧を示します。
+- **影響の大きい脅威** - 組織に最も影響を与える脅威を一覧表示します。 このセクションでは、最初にアクティブなアラートと解決済みアラートの数が最も多い脅威の一覧を示します。
 - **最も露出が高い** - 最初に最も露出レベルが高い脅威を一覧表示します。 脅威の露出レベルは、脅威に関連する脆弱性の深刻さと、組織内のこれらの脆弱性によって悪用される可能性があるデバイスの数という 2 つの情報を使用して計算されます。
 
 ダッシュボードから脅威を選択して、その脅威のレポートを表示します。
@@ -205,11 +205,11 @@ _脅威分析レポートの[公開&軽減策] セクション_
 
 脅威分析レポートの電子メール通知を設定するには、次の手順に従います。
 
-1. Microsoft 365 Defenderサイドバーで **設定** を選択します。 設定 **の** 一覧からMicrosoft 365 Defenderを選択します。
+1. Microsoft 365 Defenderサイドバーで **[設定] を** 選択します。 設定 **の** 一覧からMicrosoft 365 Defenderを選択します。
  
-!["設定" と "Microsoft 365 Defender" の両方が赤で強調表示されているスクリーンショット](../../media/threat-analytics/ta_create_notification_0.png)
+!["Settings" と "Microsoft 365 Defender" の両方が赤で強調表示されているスクリーンショット](../../media/threat-analytics/ta_create_notification_0.png)
 
-2. [ **電子メール通知** > **Threat analytics**] を選択し、ボタンを選択し、[ **+ 通知ルールの作成**] を選択します。 ポップアップが表示されます。
+2. **Email通知** > **の脅威分析** を選択し、ボタンを選択します。**+ 通知ルールを作成します**。 ポップアップが表示されます。
 
 !["+ 通知ルールの作成" が赤で強調表示されているスクリーンショット](../../media/threat-analytics/ta_create_notification_1.png)
 
@@ -238,19 +238,19 @@ _脅威分析レポートの[公開&軽減策] セクション_
 
 8. これで、新しいルールが脅威分析電子メール通知の一覧に表示されます。
 
-![設定画面内の電子メール通知ルールの一覧のスクリーンショット](../../media/threat-analytics/ta_create_notification_7.png)
+![[設定] 画面内の電子メール通知ルールの一覧のスクリーンショット](../../media/threat-analytics/ta_create_notification_7.png)
 
 ## <a name="additional-report-details-and-limitations"></a>その他のレポートの詳細と制限事項
 
 > [!NOTE]
-> 統合セキュリティ エクスペリエンスの一環として、脅威分析は、Microsoft Defender for Endpointだけでなく、Office E5 ライセンス所有者向けの Microsoft Defender でも利用できるようになりました。
+> 統合セキュリティ エクスペリエンスの一環として、脅威分析はMicrosoft Defender for Endpointだけでなく、Microsoft Defender for Office E5 ライセンス所有者でも利用できるようになりました。
 >
-> Microsoft 365 セキュリティ ポータル (Microsoft 365 Defender) を使用していない場合は、Microsoft Defender セキュリティ センター ポータルにレポートの詳細 (Microsoft Defender for Office データなし) も表示できます (Microsoft Defender for Endpoint)。
+> Microsoft 365 セキュリティ ポータル (Microsoft 365 Defender) を使用していない場合は、Microsoft Defender セキュリティ センター ポータル (Microsoft Defender for Endpoint) にレポートの詳細 (Microsoft Defender for Office データを含まない) も表示されます。
 
 脅威分析レポートにアクセスするには、特定のロールとアクセス許可が必要です。 詳細については、「[Microsoft 365 Defenderのロールベースのアクセス制御のカスタム ロール](custom-roles.md)」を参照してください。
 
-- アラート、インシデント、または影響を受けた資産データを表示するには、アラート データのOfficeまたはMicrosoft Defender for Endpoint、またはその両方に対する Microsoft Defender へのアクセス許可が必要です。
-- 防止された電子メールの試行を表示するには、検出データをOfficeするための Microsoft Defender に対するアクセス許可が必要です。
+- アラート、インシデント、または影響を受けた資産データを表示するには、Microsoft Defender for Office または Microsoft Defender for Endpoint アラート データまたはその両方に対するアクセス許可が必要です。
+- 防止されたメール試行を表示するには、Microsoft Defender for Office ハンティング データに対するアクセス許可が必要です。
 - 軽減策を表示するには、Microsoft Defender for Endpointでデータを脅威と脆弱性の管理するアクセス許可が必要です。
 
 脅威分析データを確認するときは、次の要因を覚えておいてください。
@@ -258,7 +258,7 @@ _脅威分析レポートの[公開&軽減策] セクション_
 - グラフには、追跡される軽減策のみが反映されます。 グラフに表示されないその他の軽減策については、レポートの概要を確認してください。
 - 軽減策では、完全な回復性は保証されません。 提供される軽減策は、回復性を向上させるために必要な最善のアクションを反映しています。
 - デバイスがサービスにデータを送信していない場合、デバイスは "利用不可" としてカウントされます。
-- ウイルス対策関連の統計情報は、Microsoft Defender ウイルス対策設定に基づいています。 サードパーティのウイルス対策ソリューションを備えたデバイスは、"公開済み" として表示される可能性があります。
+- ウイルス対策関連の統計情報は、Microsoft Defender ウイルス対策の設定に基づいています。 サードパーティのウイルス対策ソリューションを備えたデバイスは、"公開済み" として表示される可能性があります。
 
 ## <a name="related-articles"></a>関連記事
 

@@ -11,22 +11,21 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 07/27/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b9689cb0a3470a19e4ceeeb80cd3e77f2d2d8edf
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 5c9adadb46ce040c6c98f2551c14c41fdda333e1
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843567"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051538"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 Microsoft 365 Defenderの新機能を一覧表示します。 
 
@@ -50,6 +49,10 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="june-2022"></a>2022 年 6 月
 - (プレビュー) [DeviceTvmInfoGathering](advanced-hunting-devicetvminfogathering-table.md) テーブルと [DeviceTvmInfoGatheringKB](advanced-hunting-devicetvminfogatheringkb-table.md) テーブルが、高度なハンティング スキーマで使用できるようになりました。 これらのテーブルを使用して、さまざまな構成の状態やデバイスの攻撃領域の状態など、Defender 脆弱性管理の評価イベントを確認します。
+
+- Microsoft 365 Defender ポータルで新しく導入された自動調査&応答カードには、保留中の修復アクションの概要が示されています。
+セキュリティ運用チームは、承認待ちのすべてのアクションと、カード自体でこれらのアクションを承認するための規定された時間を表示できます。 セキュリティ チームは、アクション センターにすばやく移動し、適切な修復アクションを実行できます。 自動調査&応答カードには、[フル オートメーション] ページへのリンクもあります。 これにより、セキュリティ運用チームはアラートを効果的に管理し、タイムリーに修復アクションを完了できます。
+
 
 ## <a name="may-2022"></a>2022 年 5 月
 - (プレビュー)Microsoft [Security Experts](https://aka.ms/MicrosoftSecurityExperts) という新しいサービス カテゴリへの最近発表された拡張に合わせて、Microsoft [Defender Experts for Hunting (Defender Experts for Hunting](defenderexpertsforhuntingprev.md) ) のパブリック プレビューの可用性について紹介します。 Defender Experts for Hunting は、堅牢なセキュリティ運用センターを持ち、エンドポイント、Office 365、クラウド アプリケーション、ID など、Microsoft Defender データ全体の脅威を積極的に検出できるように Microsoft に支援を求めるお客様を対象としています。 

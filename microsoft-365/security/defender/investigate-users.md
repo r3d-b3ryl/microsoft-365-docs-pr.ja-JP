@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 51bb4f451329a74417c21db0a64aadae6dccbce6
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: 75fa4b76017c8fcb1f0ab65b5ed88440c04f47d2
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64500873"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051626"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Microsoft 365 Defenderのユーザーを調査する
 
@@ -55,7 +55,10 @@ ms.locfileid: "64500873"
 
 このページは、[ **ユーザー** ] ページの一覧からユーザー アカウントの名前を選択して表示することもできます。
 
-[グループ] で番号を選択すると、ユーザーの **グループ** メンバーシップを確認できます。
+[グループ] で番号を選択すると、ユーザーの **グループ** メンバーシップを確認できます。 グループを選択すると、[ **グループ** ] ウィンドウが開きます。これには、作成日やグループ メンバーシップなどの追加情報が含まれます。
+
+> [!NOTE]
+> グループ メンバーシップには、最初の 1,000 人のグループ メンバーのみが表示されます。
 
 :::image type="content" source="../../media/investigate-users/user-group-membership.png" alt-text="Microsoft 365 Defender ポータルでのユーザーのグループ メンバーシップに関する情報" lightbox="../../media/investigate-users/user-group-membership.png":::
 
@@ -70,7 +73,7 @@ Microsoft 365 Defender ポータル のユーザー ページは、Microsoft Def
 - ユーザー アカウントを侵害済みとしてマークする
 - ユーザーにもう一度サインインするように要求する
 - ユーザー アカウントを一時停止する
-- Azure ADユーザー アカウントの設定を確認する
+- Azure AD ユーザー アカウントの設定を確認する
 - ユーザー アカウントが所有するファイルを表示する
 - このユーザーと共有されているファイルを表示します。
 

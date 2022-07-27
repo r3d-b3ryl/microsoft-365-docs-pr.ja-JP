@@ -5,7 +5,7 @@ description: 各脅威分析レポートのアナリスト レポート セク�
 keywords: アナリスト レポート, 脅威分析, 検出, 高度な捜索クエリ, 軽減策,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 396be53e4c238a8de21082f025762a1a4243b57c
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
+ms.openlocfilehash: 9f699be27f3ad0bee522a3e9d0f5550428aacc91
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731144"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051494"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defenderの脅威分析のアナリスト レポートを理解する
 
@@ -52,7 +52,7 @@ _脅威分析レポートのアナリスト レポート セクション_
 | エグゼクティブサマリー | 脅威の概要 (初めて見たときなど)、その動機、注目すべきイベント、主要なターゲット、個別のツールと手法。 この情報を使用すると、業界、地理的な場所、ネットワークのコンテキストで脅威に優先順位を付ける方法をさらに評価できます。 |
 | 分析 | 攻撃の詳細や、攻撃者が新しい手法や攻撃面をどのように利用するかなど、脅威に関する技術情報 |
 | MITRE ATT&CK 手法が観察されました | 観察された手法が [MITRE ATT&CK 攻撃フレームワーク](https://attack.mitre.org/)にどのようにマップされるか |
-| [軽減策](#apply-additional-mitigations) | 脅威の影響を停止または軽減できるおすすめ。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。 |
+| [軽減策](#apply-additional-mitigations) | 脅威の影響を停止または軽減するのに役立つ推奨事項。 このセクションには、脅威分析レポートの一部として動的に追跡されない軽減策も含まれています。 |
 | [検出の詳細](#understand-how-each-threat-can-be-detected) | 脅威に関連するアクティビティやコンポーネントを表示できる Microsoft セキュリティ ソリューションによって提供される特定の一般的な検出。 |
 | [高度な追求](#find-subtle-threat-artifacts-using-advanced-hunting) | 可能性のある脅威アクティビティを事前に特定するための[高度なハンティング クエリ](advanced-hunting-overview.md)。 ほとんどのクエリは、検出を補完するために提供されます。特に、悪意のある可能性のあるコンポーネントや、悪意のあると動的に評価できなかった動作を特定するために提供されます。 |
 | 関連情報 | レポートの作成中にアナリストによって参照される Microsoft およびサードパーティのパブリケーション。 脅威分析コンテンツは、Microsoft の研究者によって検証されたデータに基づいています。 公開されているサード パーティのソースからの情報は、そのように明確に識別されます。 |
@@ -73,24 +73,24 @@ _脅威分析レポートのアナリスト レポート セクション_
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>各脅威を検出する方法を理解する
 
-アナリスト レポートでは、Microsoft Defender ウイルス対策および _エンドポイントでの検出と対応 (EDR_) 機能からの検出も提供されます。
+アナリスト レポートでは、Microsoft Defender ウイルス対策と _エンドポイントの検出と応答_ (EDR) 機能からの検出も提供されます。
 
 ### <a name="antivirus-detections"></a>ウイルス対策の検出
 
-これらの検出は、[Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)がオンになっているデバイスで使用できます。 これらの検出は、Microsoft Defender for Endpointにオンボードされたデバイスで発生すると、レポート内のグラフを明るくするアラートもトリガーされます。
+これらの検出は、 [Microsoft Defender ウイルス対策](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) が有効になっているデバイスで使用できます。 これらの検出は、Microsoft Defender for Endpointにオンボードされたデバイスで発生すると、レポート内のグラフを明るくするアラートもトリガーされます。
 
 >[!NOTE]
 >アナリスト レポートには、追跡された脅威に固有のコンポーネントや動作に加えて、広範な脅威を識別できる **一般的な検出** も一覧表示されます。 これらの一般的な検出は、グラフには反映されません。
 
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>エンドポイントの検出と応答 (EDR) アラート
 
-EDRアラートは、[Microsoft Defender for Endpointにオンボードされたデバイスに対して](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)発生します。 これらのアラートは、一般に、Microsoft Defender for Endpoint センサーやその他のエンドポイント機能 (ウイルス対策、ネットワーク保護、改ざん防止など) によって収集されたセキュリティ信号に依存し、強力な信号ソースとして機能します。
+[Microsoft Defender for Endpointにオンボードされたデバイス](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure)に対して EDR アラートが発生します。 これらのアラートは、一般に、Microsoft Defender for Endpoint センサーやその他のエンドポイント機能 (ウイルス対策、ネットワーク保護、改ざん防止など) によって収集されたセキュリティ信号に依存し、強力な信号ソースとして機能します。
 
-ウイルス対策の検出の一覧と同様に、一部のEDR アラートは、追跡された脅威に関連付けられていない可能性がある疑わしい動作に汎用的にフラグを設定するように設計されています。 このような場合、レポートはアラートを "汎用" として明確に識別し、レポート内のどのグラフにも影響を与えません。
+ウイルス対策検出の一覧と同様に、一部の EDR アラートは、追跡された脅威に関連付けられていない可能性がある疑わしい動作に一般的にフラグを設定するように設計されています。 このような場合、レポートはアラートを "汎用" として明確に識別し、レポート内のどのグラフにも影響を与えません。
 
-### <a name="email-related-detections-and-mitigations"></a>電子メール関連の検出と軽減策
+### <a name="email-related-detections-and-mitigations"></a>Email関連の検出と軽減策
 
-Microsoft Defender for Office 365からの電子メール関連の検出と軽減策は、Microsoft Defender for Endpointから既に利用可能なエンドポイント データに加えて、アナリスト レポートに含まれています。
+Microsoft Defender for Office 365からのEmail関連の検出と軽減策は、Microsoft Defender for Endpointから既に利用可能なエンドポイント データに加えて、アナリスト レポートに含まれています。
 
 メール試行の防止情報を使用すると、配信前に攻撃が効果的にブロックされたり、迷惑メール フォルダーに配信されたりした場合でも、組織がアナリスト レポートで取り組まれた脅威のターゲットであったかどうかについての分析情報が得られます。
 
@@ -103,9 +103,9 @@ Microsoft Defender for Office 365からの電子メール関連の検出と軽�
 アナリスト レポートの高度なハンティング クエリは、Microsoft アナリストによって審査され、 [高度なハンティング クエリ エディター](https://security.microsoft.com/advanced-hunting)で実行する準備が整いました。 クエリを使用して、今後の一致に対するアラートをトリガーする [カスタム検出ルール](custom-detection-rules.md) を作成することもできます。
 
 >[!NOTE]
-> 脅威分析は[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)でも利用できます。 ただし、Microsoft Defender for OfficeとMicrosoft Defender for Endpointの間にはデータ統合がありません。
+> 脅威分析は[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)でも利用できます。 ただし、Microsoft Defender for Office とMicrosoft Defender for Endpoint間のデータ統合はありません。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 - [脅威の分析の概要](threat-analytics.md)
 - [高度な捜索で脅威をプロアクティブに見つける](advanced-hunting-overview.md)

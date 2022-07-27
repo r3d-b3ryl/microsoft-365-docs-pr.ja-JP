@@ -2,7 +2,7 @@
 title: インジケーター API のインポート
 description: Microsoft Defender for Endpointで Indicator API のインポート バッチを使用する方法について説明します。
 keywords: apis, サポートされている API, submit, ti, indicator, update
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.custom: api
-ms.openlocfilehash: 7306489e537e583055e037ce9d8ce04add248844
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: c2e53fdf2c8786c8f9e605d822024eeef4ed170e
+ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283703"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67051604"
 ---
 # <a name="import-indicators-api"></a>インジケーター API のインポート
 
@@ -38,7 +38,7 @@ ms.locfileid: "61283703"
 
 ## <a name="api-description"></a>API の説明
 
-[インジケーター](ti-indicator.md) エンティティのバッチを送信または更新します。
+[Indicator](ti-indicator.md) エンティティのバッチを送信または更新します。
 
 IP の CIDR 表記はサポートされていません。
 
@@ -50,7 +50,7 @@ IP の CIDR 表記はサポートされていません。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[作業の開始」](apis-intro.md)を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -66,7 +66,7 @@ POST https://api.securitycenter.microsoft.com/api/indicators/import
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|string|application/json. **必須**。
@@ -75,7 +75,7 @@ Content-Type|string|application/json. **必須**。
 
 要求本文で、次のパラメーターを含む JSON オブジェクトを指定します。
 
-パラメーター|種類|説明
+パラメーター|型|説明
 :---|:---|:---
 インジケーター|リスト<[インジケーター](ti-indicator.md)>|[インジケーター](ti-indicator.md)の一覧。 **必須**
 
