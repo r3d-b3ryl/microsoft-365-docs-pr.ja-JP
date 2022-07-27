@@ -31,7 +31,7 @@ ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストで DNS レコードを追加して、Microsoft 365 管理センターで Microsoft 365 にドメインを追加します。
 ms.openlocfilehash: be72f10727a5d4ed168740d80eb04078584137d9
 ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2022
 ms.locfileid: "66602902"
@@ -40,7 +40,7 @@ ms.locfileid: "66602902"
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](domains-faq.yml)** を参照してください。
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
   
 ## <a name="before-you-begin"></a>はじめに
 
@@ -51,7 +51,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ## <a name="watch-add-a-domain"></a>ウォッチ: ドメインの追加
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198213)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198213)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
@@ -164,7 +164,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 onmicrosoft.com ドメインを追加するには:
 
-1. Microsoft 365 管理センターで **[設定]** を選択し、[**ドメイン**] を選択します。
+1. Microsoft 365 管理センターで **[設定]** を選択し、**[ドメイン]** を選択します。
 
 2. 既存の *.onmicrosoft.com* ドメインを選択します。
 
@@ -175,20 +175,20 @@ onmicrosoft.com ドメインを追加するには:
 
     ![ドメイン プロパティのスクリーンショット。](../../media/add-onmicrosoft-domain-link.png)
 
-4. [ **Add onmicrosoft domain** ] ページの [ **ドメイン名** ] ボックスに、新しい onmicrosoft.com ドメインの名前を入力します。 
+4. **[Add onmicrosoft domain]** (onmicrosoft ドメインの追加) ページの **[ドメイン名]** ボックスに、新しい onmicrosoft.com ドメインの名前を入力します。 
 
-    ![Add onmicrosoft domain のスクリーンショット。](../../media/add-an-onmicrosoftcom-domain-page.png)
+    ![[Add onmicrosoft domain] (onmicrosoft ドメインの追加) のスクリーンショット。](../../media/add-an-onmicrosoftcom-domain-page.png)
 
     > [!NOTE]
     > 入力したドメイン名のスペルと正確性を確認してください。 ドメインは 5 つの onmicrosoft.com に制限されており、現在は作成後は削除できません。     
 
-5. [**ドメインの追加**] を選択します。 正常に追加されると、これを示すメッセージが表示されます。 
+5. [**ドメインの追加**] を選択します。 正常に追加されると、それを示すメッセージが表示されます。 
     
     ![正常に追加されたドメインのスクリーンショット。](../../media/domain-added.png)
 
 所有している任意のドメインを既定のドメインとして設定できます。 
 
-onmicrosoft.com ドメインを追加する方法の詳細については、「onmicrosoft.com ドメイン [を追加または置き換える](add-or-replace-your-onmicrosoftcom-domain.md)」を参照してください。
+onmicrosoft.com ドメインを追加する方法の詳細については、「[onmicrosoft.com ドメインを追加または置き換える](add-or-replace-your-onmicrosoftcom-domain.md)」を参照してください。
 
 ## <a name="related-content"></a>関連コンテンツ
 
