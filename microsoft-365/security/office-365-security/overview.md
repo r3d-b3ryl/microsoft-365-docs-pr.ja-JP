@@ -17,12 +17,12 @@ description: Office 365 におけるセキュリティについて、EOP、Defen
 ms.technology: mdo
 ms.prod: m365-security
 adobe-target: true
-ms.openlocfilehash: a5a7a4e78ae3b160b565e253d315d94fc5b6b53a
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 2b141e50ab3db79dfd0a072c6738d1894e27e0ad
+ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940912"
+ms.lasthandoff: 07/25/2022
+ms.locfileid: "67004541"
 ---
 # <a name="microsoft-defender-for-office-365-security-overview"></a>Microsoft Defender for Office 365 セキュリティの概要
 
@@ -134,7 +134,7 @@ Microsoft Defender for Office 365 P1 および P2 の詳細については、**[
 
 - Microsoft Defender for Office 365 プラン 1 および Microsoft Defender for Office 365 プラン 2 は、それぞれ特定のサブスクリプションのアドオンとして提供されています。 詳細については、「[Microsoft Defender for Office 365 プラン全体での機能の可用性](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)」を参照してください。
 
-- [安全なドキュメント](safe-docs.md)機能は、Microsoft 365 E5 または Microsoft 365 E5 セキュリティ ライセンス (Microsoft Defender for Office 365 プランには含まれません) を持つユーザーのみが利用できます。
+- [安全なドキュメント機能](safe-docs.md) は、Microsoft 365 A5 または Microsoft 365 E5 セキュリティ ライセンス (Microsoft Defender for Office 365 プランには含まれません) を持つユーザーのみが利用できます。
 
 - 現在のサブスクリプションに Microsoft Defender for Office 365 が含まれていない場合に購入を希望する場合は、[営業担当者に問い合わせて試用版の使用を開始](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)し、お客様の組織にとって Microsoft Defender for Office 365 がどのようなメリットになるかを確認してください。
 
