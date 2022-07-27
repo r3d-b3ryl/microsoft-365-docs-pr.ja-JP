@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium がビジネスにどのように役立つか
+title: Microsoft 365 Business Premium - 生産性とセキュリティ
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 07/26/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,20 +19,27 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 Business Premium の生産性とセキュリティを活用してビジネスを支援する方法について説明します。
-ms.openlocfilehash: 9d4faf1f954b750d2710a946ad1632e4913809fe
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+description: Microsoft 365 Business Premium で高い生産性とセキュリティを実現し、ビジネスをより安全に行う方法について説明します。
+ms.openlocfilehash: cffab130bf64220b47a425b25824fbad2d39c540
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892795"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037690"
 ---
-# <a name="how-microsoft-365-business-premium-helps-your-business"></a>Microsoft 365 Business Premium がビジネスにどのように役立つか
+# <a name="productivity-and-security-for-small--and-medium-sized-businesses"></a>中小企業の生産性とセキュリティ 
 
-Microsoft 365 Business Premium は、中小企業が以前よりも効率的かつ安全に作業できるようにする、コスト効率の高いソリューションです。 この記事では、Microsoft 365 Business Premium がビジネスまたはキャンペーンにどのように役立つかについて説明します。 この記事に含まれるセクションは次のとおりです。
+Microsoft 365 Business Premium は、中小企業 (従業員 1 - 300 人) 向けに設計および構築された、生産性とセキュリティのための包括的なクラウド ソリューションです。 Microsoft 365 Business Premium を使用すると、次のことができます:
+
+- Microsoft Teams などのクラス最高のコラボレーション ツールを使用して、現場で作業している場合でもリモートで作業している場合でも、従業員のつながりと生産性を高めることができます。
+- 従業員にビジネス データとアプリへの安全なアクセスを提供し、承認された担当者のみが秘密の作業データにアクセスできるようにします。
+- フィッシング、ランサムウェア、データ損失への対策を施すことで、高度なサイバー脅威からビジネス データを守ります。
+- データに接続するデバイス (Windows、Mac、iOS、Android) を管理して安全を確保し、それらのデバイスを最新の状態に保ちます。
+
+Microsoft 365 Business Premium は、生産性とセキュリティのための包括的なソリューションを提供します。 管理者や IT 担当者による管理、請求、24 時間 365 日のサポートに必要なものがすべて 1 か所にまとまっていて、ビジネス コストを削減できると同時に複雑さが解消されます。 この記事は、Microsoft 365 Business Premium がビジネスまたはキャンペーンにどのように役立つかについて説明し、次のセクションに分かれています。
 
 - [ビデオ: Microsoft 365 Business Premium の 5 つの主な利点。](#video-top-5-benefits-of-microsoft-365-business-premium)
-- [生産性と高度なセキュリティ機能](#productivity-and-security)を使用すると、デバイス間で、またどこからでもビジネスをより安全に実行できます
+- 場所を問わず、さまざまなデバイスでより安全なビジネスを可能にする[生産性と高度なセキュリティ機能](#productivity-and-security)
 - より安全な環境を維持しながら生産的に作業する方法を[チームとスタッフ全員にトレーニングを提供するリソース](#resources-to-train-your-users)
 - さまざまな種類の脅威と、日常的な作業で脅威から保護する方法について説明する[ダウンロード可能なデジタル脅威ガイド](#download-the-digital-threats-guide)
 - [次の手順](#next-steps)
@@ -48,7 +55,7 @@ Microsoft 365 Business Premium は、中小企業が以前よりも効率的か�
 
 ## <a name="productivity-and-security"></a>生産性とセキュリティ
 
-Microsoft 365 Business Premium には、お気に入りの Office 生産性アプリ、Microsoft Teams などのコラボレーション ツール、エンタープライズ レベルのセキュリティ、ID、デバイス管理ソリューションが含まれています。 Microsoft 365 Business Premium を使用すると、ビジネスをより安全に、デバイス間で、どこからでも実行できます。 Microsoft 365 Business Premium には以下が含まれます:
+Microsoft 365 Business Premium には、お気に入りの Office 生産性アプリ、Microsoft Teams などのコラボレーション ツール、エンタープライズ レベルのセキュリティ、ID、デバイス管理ソリューションが含まれています。 Microsoft 365 Business Premium を使用すると、場所を問わず、さまざまなデバイスで安全にビジネスが行えます。 Microsoft 365 Business Premium には以下が含まれます:
 
 - 御社の Windows デバイスに対する **Windows 10 と 11 Pro** のアップグレード
 - コンピューター (Windows と Mac) およびモバイル デバイス (Windows、iOS、Android) にインストールできる **Office アプリ**。 また、Windows デバイスの Publisher と Access も入手できます。
