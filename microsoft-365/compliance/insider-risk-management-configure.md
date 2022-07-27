@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-insiderrisk
 - m365initiative-compliance
 ms.custom: admindeeplinkCOMPLIANCE
-ms.openlocfilehash: fc812b399cb6c80dfd41cc5ff4840a8288daac1f
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: 334e94844c16a386d2b96cd34627877c7584a6bc
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787476"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037712"
 ---
 # <a name="get-started-with-insider-risk-management"></a>インサイダー リスクの管理の概要
 
@@ -92,16 +92,16 @@ ms.locfileid: "66787476"
 
 |Actions|インサイダー リスクの管理|Insider Risk Management 管理|インサイダー リスク管理アナリスト。|インサイダー リスク管理調査担当者。|Insider Risk Management Auditors|
 |---|---|---|---|---|---|
-|ポリシーと設定を構成する|はい|はい|いいえ|いいえ|いいえ|
-|分析分析情報にアクセスする|はい|はい|はい|いいえ|いいえ|
-|アラートを調査&アクセスする|はい|いいえ|はい|はい|いいえ|
-|アクセス&ケースを調査する|はい|いいえ|はい|はい|いいえ|
-|コンテンツ エクスプローラー&表示する|はい|いいえ|いいえ|はい|いいえ|
-|通知テンプレートを構成する|はい|いいえ|はい|はい|いいえ|
-|監査ログのエクスポート&表示する|はい|いいえ|いいえ|いいえ|はい|
+|ポリシーと設定を構成する|はい|はい|不要|不要|不要|
+|分析分析情報にアクセスする|はい|はい|はい|不要|不要|
+|アラートを調査&アクセスする|はい|不要|はい|はい|不要|
+|アクセス&ケースを調査する|はい|不要|はい|はい|不要|
+|コンテンツ エクスプローラー&表示する|はい|不要|不要|はい|不要|
+|通知テンプレートを構成する|はい|不要|はい|はい|不要|
+|監査ログのエクスポート&表示する|はい|不要|不要|いいえ|はい|
 
 > [!IMPORTANT]
-> Insider *Risk Management* または *Insider Risk Management 管理* ロール グループに少なくとも 1 人のユーザーが常に存在することを確認します (選択したオプションに応じて)。 特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が "ゼロ管理者" シナリオに入らないようにします。
+> インサイダー *リスク管理または Insider Risk Management* *管理* ロール グループに少なくとも 1 人のユーザーが常に含まれていることを確認します。特定のユーザーが組織を離れた場合、インサイダー リスク管理の構成が "ゼロ管理者" シナリオに入らないようにします。
 
 次のロールのメンバーは、インサイダー リスク管理ロール グループにユーザーを割り当て、*Insider Risk Management 管理* ロール グループに含まれる同じソリューションアクセス許可を持つことができます。
 

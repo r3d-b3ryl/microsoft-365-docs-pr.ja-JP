@@ -14,24 +14,24 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Microsoft 365 管理センターの統合アプリ ポータルから、組織内のユーザーとグループの Microsoft および Microsoft パートナー アプリを検索、テスト、デプロイします。
-ms.openlocfilehash: 862d70fe57974d2940458cb1fa59d05674d7ff58
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: 3592cea8c7da906376bfd0cd8e08a71d1d298278
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115501"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037591"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>統合アプリ ポータルでパートナーによるMicrosoft 365 Appsのテストとデプロイ
 
 Microsoft 365 管理センターでは、単一のストア アプリ、カスタム ビジネス ラインのアプリ、Microsoft 365 パートナー アプリを 1 つの場所から柔軟に展開できます。 場所には、統合アプリの Microsoft 管理 センターの設定でアクセスできます。 統合アプリ ポータルから Microsoft パートナーが購入したアプリとライセンスを取得したアプリを検索、テスト、および完全にデプロイする機能により、組織がビジネス サービスを定期的に更新し、効率的に実行するために必要な利便性と利点が得られます。
 
-組織のパートナーからのアプリの購入とライセンスMicrosoft 365詳細については、「[Microsoft 365 管理センターからのMicrosoft 365 Appsの管理と展開](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)」を参照してください。
+組織のパートナーから Microsoft 365 アプリを購入してライセンス供与する方法の詳細については、「[Microsoft 365 管理センターからのMicrosoft 365 Appsの管理と展開」を](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)参照してください。
 
 パートナーがこれらのアプリを作成する方法の詳細については、「[商用マーケットプレースの SaaS オファーを計画する方法」を](https://go.microsoft.com/fwlink/?linkid=2158277)参照してください。
 
-統合アプリ ポータルには、グローバル管理者のみがアクセスでき、世界中のお客様のみが利用できます。 この機能は、ソブリン クラウドと政府機関クラウドでは使用できません。
+統合アプリ ポータルは、世界中のお客様のみが利用でき、グローバル管理者、グローバル 閲覧者、および Exchange 管理者がアクセスできます。 この機能は、ソブリン クラウドと政府機関クラウドでは使用できません。
 
-統合アプリ ポータルにはアプリの一覧が表示されます。これには、組織に展開されたパートナーからの 1 つのアプリとMicrosoft 365アプリが含まれます。 Web アプリ、SPFx アプリ、Office アドイン、Teams アプリのみが一覧表示されます。 Web アプリの場合、2 種類のアプリが表示されます。
+統合アプリ ポータルには、組織に展開されたパートナーからの 1 つのアプリと Microsoft 365 アプリを含むアプリの一覧が表示されます。 Web アプリ、SPFx アプリ、Office アドイン、Teams アプリのみが一覧表示されます。 Web アプリの場合、2 種類のアプリが表示されます。
 
 - appsource.microsoft.com で利用でき、組織に代わって同意を与える管理者がデプロイできる SaaS アプリ。
 - Office アドインにリンクされている SAML ギャラリー アプリ。
@@ -40,7 +40,7 @@ Microsoft 365 管理センターでは、単一のストア アプリ、カス�
 
 パートナーからの購入済みおよびライセンスMicrosoft 365 Appsのテストとデプロイを管理できます。
 
-1. 管理センターで **[設定**]、[**統合アプリ**] の順に選択します。
+1. 管理センターで **[設定]** を選択し、[ **統合アプリ**] を選択します。
 
 2. [**管理**] ウィンドウを開くには、[その他のアプリの **状態]** を **使用できるアプリ** を選択します。 **使用可能なアプリ** の数が多いほど、まだデプロイされていない ISV からの統合が増えていることがわかります。
 
@@ -60,11 +60,11 @@ Microsoft 365 管理センターでは、単一のストア アプリ、カス�
 
 [統合アプリ] ページの一覧にまだ表示されていない発行済みアプリを見つけ、テストし、完全にデプロイできます。 管理センターからアプリを購入してライセンスを付与することで、Microsoft と Microsoft のパートナー アプリを 1 つの場所から一覧に追加できます。
 
-1. 管理センターの左側のナビゲーションで、[**設定**] を選択し、[<a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**統合アプリ**</a>] を選択します。
+1. 管理センターの左側のナビゲーションで、[ **設定]** を選択し、[ <a href="https://admin.microsoft.com/adminportal/home?#/Settings/IntegratedApps" target="_blank">**統合アプリ**</a>] を選択します。
 
 2. [ **アプリの取得** ] を選択して、アプリのビューを取得します。
 
-3. [発行済みアプリ **Microsoft 365 Apps**] ページで、[**今すぐ** 入手] を選択して、デプロイするアプリを選択します。 主に表示されるアプリは、Word、PowerPoint、Excel、Outlook アドイン、Teams アプリ、SharePoint アプリです (SharePoint Framework テクノロジに基づいて構築されています)。 アクセス許可を受け入れ、[続行] を選択 **します**。
+3. [発行済みアプリ **Microsoft 365 Apps**] ページで、[**今すぐ** 入手] を選択して、デプロイするアプリを選択します。 主に表示されるアプリは、Word、PowerPoint、Excel、Outlook アドイン、Teams アプリ、SharePoint アプリ (SharePoint Framework テクノロジを基に構築) です。 アクセス許可を受け入れ、[続行] を選択 **します**。
 
 5. **デプロイ** の待機を参照するメッセージの横にあるページの上部にある [デプロイ] を選択します。
 
@@ -86,14 +86,14 @@ Microsoft 365 管理センターでは、単一のストア アプリ、カス�
 次のシナリオでは、統合アプリ ポータルからパートナーが 1 つのストア アプリまたはMicrosoft 365 Appsをデプロイすることはできません。
 
 - 同じアドインが複数の SaaS プランにリンクされています。
-- SaaS オファーはアドインにリンクされていますが、Microsoft Graphと統合されず、AAD アプリ ID は提供されません。
-- SaaS オファーはアドインにリンクされていますが、Microsoft Graph統合用に提供される AAD アプリ ID は、複数の SaaS オファー間で共有されます。
+- SaaS オファーはアドインにリンクされていますが、Microsoft Graph と統合されず、AAD アプリ ID は提供されません。
+- SaaS オファーはアドインにリンクされていますが、Microsoft Graph 統合用に提供される AAD アプリ ID は、複数の SaaS オファー間で共有されます。
 
-## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>テストと完全デプロイのためのカスタム基幹業務アプリのアップロード
+## <a name="upload-custom-line-of-business-apps-for-testing-and-full-deployment"></a>テストと完全デプロイ用にカスタム基幹業務アプリをアップロードする
 
-1. 管理センターの左側のナビゲーションで、**設定**、**統合アプリ** の順に選択します。
+1. 管理センターの左側のナビゲーションで、[ **設定]** を選択し、[ **統合アプリ**] を選択します。
 
-2. **カスタム アプリアップロード選択します**。 Word、PowerPoint、Excel、およびOutlook用のカスタム アプリ行のみがサポートされます。
+2. [ **カスタム アプリのアップロード**] を選択します。 Word、PowerPoint、Excel、および Outlook 用のカスタム アプリ行のみがサポートされています。
 
 3. デバイスからマニフェスト ファイルをアップロードするか、URL リンクを追加します。 一部のアプリでは、展開を選択する前にユーザーを追加する必要があります。
 
@@ -111,19 +111,19 @@ Office アドインは、ドキュメントをカスタマイズし、Web 上の
 
 アドインには、次の利点があります。 
 
-- 関連するOffice アプリケーションが起動すると、アドインが自動的にダウンロードされます。 アドインがアドイン コマンドをサポートしている場合、アドインはOffice アプリケーション内のリボンに自動的に表示されます。 
+- 関連する Office アプリケーションが起動すると、アドインが自動的にダウンロードされます。 アドインがアドイン コマンドをサポートしている場合、アドインは Office アプリケーション内のリボンに自動的に表示されます。 
 
-- 管理者がアドインをオフまたは削除した場合、またはアドインが割り当てられているAzure Active Directoryまたはグループからユーザーが削除された場合、アドインはユーザーに表示されなくなります。 
+- 管理者がアドインをオフまたは削除した場合、またはユーザーが Azure Active Directory またはアドインが割り当てられているグループから削除された場合、アドインはユーザーに表示されなくなります。 
 
-アドインは、Mac アプリと Online Office アプリWindows 3 つのデスクトップ プラットフォームでサポートされています。 iOSとAndroidでもサポートされています (モバイル アドインのみOutlook)。 
+アドインは、Windows、Mac、Online Office の 3 つのデスクトップ プラットフォームでサポートされています。 iOS および Android でもサポートされています (Outlook Mobile アドインのみ)。 
 
 アドインがすべてのユーザーのクライアントに表示されるまでには、最大で 24 時間かかる場合があります。 
 
-現在、Exchange管理者とグローバル管理者の両方が、統合アプリからアドインをデプロイできます。   
+現在、Exchange 管理者とグローバル管理者の両方が、統合アプリからアドインを展開できます。   
 
-### <a name="before-you-begin"></a>はじめに
+### <a name="before-you-begin"></a>始める前に
 
-アドインの展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります。 また、ユーザーは組織 ID を使用してOfficeにサインインする必要があります)、Exchange OnlineメールボックスとアクティブなExchange Online メールボックスが必要です。 サブスクリプション ディレクトリが存在するか、Azure Active Directoryにフェデレーションされている必要があります。 
+アドインの展開では、ユーザーが Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business Premium)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3) を使用している必要があります。 また、ユーザーは組織 ID を使用して Office にサインインする必要があります)、Exchange OnlineメールボックスとアクティブなExchange Online メールボックスが必要です。 サブスクリプション ディレクトリは、Azure Active Directory に存在するか、Azure Active Directory にフェデレーションされている必要があります。 
 
 デプロイでは、次はサポートされません。 
 
@@ -131,24 +131,24 @@ Office アドインは、ドキュメントをカスタマイズし、Web 上の
 - オンプレミスのディレクトリ サービス 
 - Exchange On-prem メールボックスへのアドインの展開 
 - コンポーネント オブジェクト モデル (COM) または Visual Studio Tools for Office (VSTO) アドインのデプロイ。 
-- ビジネス向けのMicrosoft 365 AppsやEnterpriseのMicrosoft 365 Appsなど、Exchange Onlineを含まないMicrosoft 365のデプロイ。  
+- ビジネス向けのMicrosoft 365 Appsやエンタープライズ向けのMicrosoft 365 AppsなどのExchange Onlineを含まない Microsoft 365 の展開。  
 
-### <a name="office-requirements"></a>Office要件 
+### <a name="office-requirements"></a>Office の要件 
 
 Word、Excel、PowerPoint アドインの場合、ユーザーは次のいずれかを使用している必要があります。 
-- Windows デバイスのバージョン 1704 以降の Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3)。 
+- Windows デバイスのバージョン 1704 以降の Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business Premium)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3)。 
 - Mac バージョン 15.34 以降。 
 
-Outlookの場合、ユーザーは次のいずれかを使用している必要があります。 
-- バージョン 1701 以降の Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business プレミアム)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3)。 
+Outlook の場合、ユーザーは次のいずれかを使用している必要があります。 
+- バージョン 1701 以降の Microsoft 365 Business ライセンス (Business Basic、Business Standard、Business Premium)、Office 365 Enterprise ライセンス (E1/E3/E5/F3)、またはMicrosoft 365 Enterprise ライセンス (E3/E5/F3)。 
 - バージョン 1808 以降のOffice Professional Plus 2019または 2019 Office Standard。 
 - Office Professional Plus 2016 (MSI) または Office Standard 2016 (MSI) のバージョン 16.0.4494.1000 以降。
     > [!NOTE]
-    > MSI バージョンのOutlookでは、管理者がインストールしたアドインが適切なOutlookリボンに表示され、[マイ アドイン] セクションは表示されません。  
+    > MSI バージョンの Outlook では、管理者がインストールしたアドインが適切な Outlook リボンに表示され、[マイ アドイン] セクションは表示されません。  
 - バージョン 15.0.4937.1000 以降の Office Professional Plus 2013 (MSI) または Office Standard 2013 (MSI)。
 - バージョン 16.0.9318.1000 以降のOffice 2016 for Mac。 
-- iOS用のモバイルのバージョン 2.75.0 以降Outlook。 
-- Android用のバージョン 2.2.145 以降のモバイルOutlook。 
+- バージョン 2.75.0 以降の Outlook mobile for iOS。 
+- バージョン 2.2.145 以降の Outlook Mobile for Android。 
 
 
 
@@ -158,7 +158,7 @@ Microsoft Exchange は、組織のテナント内にアドイン マニフェス
 組織の Exchange 管理者に、どの構成を使用できるのかを確認してください。ユーザーごとの OAuth 認証接続は、[Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) PowerShell コマンドレットを使用して、検証できます。 
 
 ### <a name="user-and-group-assignments"></a>ユーザーとグループの割り当て
-現在、アドインの展開は、Microsoft 365 グループ、配布リスト、セキュリティ グループなど、Azure Active Directoryでサポートされているほとんどのグループでサポートされています。 展開では、最上位のグループまたは親グループのないグループのユーザーがサポートされますが、入れ子になったグループまたは親グループを持つグループのユーザーはサポートされません。 
+アドインのデプロイは、現在、Microsoft 365 グループ、配布リスト、セキュリティ グループなど、Azure Active Directory でサポートされているほとんどのグループでサポートされています。 展開では、最上位のグループまたは親グループのないグループのユーザーがサポートされますが、入れ子になったグループまたは親グループを持つグループのユーザーはサポートされません。 
 
 > [!NOTE]
 > メールが有効ではないセキュリティ グループは、現段階ではサポートされていません。 
@@ -171,11 +171,11 @@ Microsoft Exchange は、組織のテナント内にアドイン マニフェス
 
 グループにネストされたグループが含まれているかどうかを調べる最も簡単な方法は、Outlook 内のグループの連絡先カードを確認することです。 電子メールの **[To** ] フィールドにグループ名を入力し、解決時にグループ名を選択すると、ユーザーまたは入れ子になったグループが含まれているかどうかが表示されます。 次の例では、「テスト グループ」での Outlook 情報先カードの [ **メンバー**] タブには、ユーザーはなく、2 つのサブ グループのみが表示されています。 
 
-![連絡先カードの [メンバー] タブOutlook表示されます。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Outlook 連絡先カードの [メンバー] タブ。](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
 
 反対のクエリを実行できます。グループを解決して、任意のグループのユーザーがいないかどうかを表示します。次の例では、「サブ グループ 1」が「テスト グループ」のメンバーである Outlook 情報先カードの [ <b>メンバーシップ</b>] タブの下に表示されます。 
 
-![Outlook連絡先カードの [メンバーシップ] タブ。](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Outlook 連絡先カードの [メンバーシップ] タブ。](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
 
 Azure Active Directory Graph APIを使用してクエリを実行し、グループ内のグループの一覧を検索できることに注意してください。 詳細については、「[Operations on groups | Graph API reference (グループに対する操作 | Graph API リファレンス)](/previous-versions/azure/ad/graph/api/groups-operations)」を参照してください。 
 
@@ -189,9 +189,9 @@ Azure Active Directory Graph APIを使用してクエリを実行し、グルー
 
 対象ユーザーのサイズに応じて、ロールアウト手順を追加または削除できます。  
 
-## <a name="deploy-an-office-add-in-using-the-admin-center"></a>管理センターを使用してOffice アドインをデプロイする 
+## <a name="deploy-an-office-add-in-using-the-admin-center"></a>管理センターを使用して Office アドインを展開する 
 
-1. 管理センターで **[設定**]、[**統合アプリ**] の順に選択します。 
+1. 管理センターで **[設定]** を選択し、[ **統合アプリ**] を選択します。 
 
 2. ページの上部にある [ **アプリの取得** ] を選択します。 AppSource は埋め込み形式で読み込まれます。 アドインを検索するか、左側のナビゲーションにある [製品] をクリックして検索します。  アドインが ISV によって SaaS アプリまたはその他のアプリやアドインにリンクされている場合、SaaS アプリが有料アプリの場合は、ライセンスを購入するかデプロイするかを示すダイアログ ボックスが表示されます。 ライセンスを購入したかどうかに関係なく、デプロイを進めることができます。 **[展開]** を選択します。  
 
@@ -199,20 +199,20 @@ Azure Active Directory Graph APIを使用してクエリを実行し、グルー
 
 4. **[すべてのユーザー]**、[**特定のユーザー/グループ**]、または **[Just me**] を選択して、アドインの展開先を指定します。 [検索] ボックスを使用して、特定のユーザーまたはグループを検索します。 アドインをテストする場合は、[ **これはテスト デプロイか**] を選択します。 
 
-5. **[次へ]** を選択します。 アプリに認定がMicrosoft 365されている場合、すべてのアプリの機能とアクセス許可が 1 つのウィンドウに証明書情報と共に表示されます。 認定ロゴを選択すると、ユーザーは認定に関する詳細を表示できます。  
+5. **[次へ]** を選択します。 アプリに Microsoft 365 認定がある場合は、すべてのアプリの機能とアクセス許可が 1 つのウィンドウに表示され、認定情報も表示されます。 認定ロゴを選択すると、ユーザーは認定に関する詳細を表示できます。  
 
 6. 確認し、[ **デプロイの完了**] を選択します。  
 
 7. アドインがデプロイされると、緑色の "ティック" アイコンが表示されます。 ページ上の指示に従って、アドインをテストします。 
 
 > [!NOTE]
-> ユーザーは、アプリ リボンのアドイン アイコンを表示するためにOfficeを再起動する必要がある場合があります。 Outlook アドインがアプリ リボンに表示されるまでに最大 24 時間かかることがあります。 
+> ユーザーが Office を再起動して、アプリ リボンのアドイン アイコンを表示することが必要になる場合があります。 Outlook アドインがアプリ リボンに表示されるまでに最大 24 時間かかることがあります。 
 
 デプロイされたアドインが使用可能であることをユーザーとグループに通知することをお勧めします。 アドインの使用時期と使用方法を説明する電子メールを送信することを検討してください。 ユーザーがアドインに問題がある場合に役立つ可能性があるヘルプ コンテンツや FAQ を含めるか、リンクします。 
 
 ## <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>ユーザーやグループにアドインを割り当てる時期を検討する 
 
-グローバル管理者とExchange管理者は、アドインをすべてのユーザーまたは特定のユーザーとグループに割り当てることができます。 各オプションには、次のような意味があります。 
+グローバル管理者と Exchange 管理者は、アドインをすべてのユーザーまたは特定のユーザーとグループに割り当てることができます。 各オプションには、次のような意味があります。 
 
 - **みんな** このオプションは、組織内のすべてのユーザーにアドインを割り当てます。 対象のアドインが組織全体で汎用な場合にのみ、このオプションを慎重に使用します。 
 
@@ -225,12 +225,12 @@ Azure Active Directory Graph APIを使用してクエリを実行し、グルー
 組織に適したオプションは、構成によって異なります。 ただし、グループを使用して割り当てを行うことをお勧めします。 管理者は、毎回個々のユーザーを割り当てるのではなく、グループを使用してそれらのグループのメンバーシップを制御することで、アドインを管理する方が簡単な場合があります。 場合によっては、ユーザーを手動で割り当てることで特定のユーザーに割り当てることで、少数のユーザー セットへのアクセスを制限することができます。 
 
 ### <a name="more-about-office-add-ins-security"></a>Office アドインのセキュリティの詳細 
-Office アドインは、アドインに関するいくつかのメタデータを含む XML マニフェスト ファイルを結合しますが、最も重要なのは、すべてのコードとロジックを含む Web アプリケーションを指します。 アドインにはさまざまな機能があります。 たとえば、アドインでは次のことができます。
+Office アドインは、アドインに関するいくつかのメタデータを含む XML マニフェスト ファイルを結合しますが、最も重要なのは、すべてのコードとロジックを含む Web アプリケーションを指していることです。 アドインにはさまざまな機能があります。 たとえば、アドインでは次のことができます。
 - データを表示する。 
 - ユーザーのドキュメントを読み取ってコンテキスト サービスを提供する。 
 - ユーザーのドキュメントのデータを読み書きして、そのユーザーに価値を提供する。  
 
-Office アドインの種類と機能の詳細については、アドイン [プラットフォームの概要Office](/office/dev/add-ins/overview/office-add-ins)特に「Office アドインの構造」を参照してください。 
+Office アドインの種類と機能の詳細については、 [Office アドイン プラットフォームの概要](/office/dev/add-ins/overview/office-add-ins)、特に「Office アドインの構造」セクションを参照してください。 
 
 ユーザーのドキュメントを操作するため、アドインはマニフェストで必要なアクセス許可を宣言する必要があります。5 レベルの JavaScript API アクセス許可モデルが、タスク ウィンドウ アドインのユーザーにプライバシーとセキュリティの基礎を提供します。Office ストア 内のアドインの多くは ReadWriteDocument レベルで、ほとんどすべてのアドインは少なくとも ReadDocument レベルをサポートします。アクセス許可レベルの詳細については、「[コンテンツとタスク ウィンドウ アドインでの API 使用のアクセス許可の要求](/office/dev/add-ins/develop/requesting-permissions-for-api-use-in-content-and-task-pane-add-ins)」をご覧ください。 
 
@@ -239,10 +239,10 @@ Office アドインの種類と機能の詳細については、アドイン [�
 アドインの更新は次のように発生します。 
 - **基幹業務** アドイン: この場合、管理者がマニフェストを明示的にアップロードした場合、アドインはメタデータの変更をサポートするために新しいマニフェスト ファイルをアップロードする必要があります。 次に関連する Office アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
 
-- **Office Microsoft Store アドイン**: 管理者がOffice Microsoft Storeからアドインを選択すると、アドインがOffice Microsoft Storeで更新されると、次回関連するOffice アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
+- **Office ストア アドイン**: 管理者が Office ストアからアドインを選択した場合、Office ストアでアドインが更新された場合、次回関連する Office アプリケーションが起動すると、アドインが更新されます。 Web アプリケーションはいつでも変更できます。 
 
 > [!NOTE]
-> Word、Excel、およびPowerPointでは、[SharePoint アプリ カタログ](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins)を使用して、Microsoft 365への接続や必要なSharePoint アドインのサポートがないオンプレミス環境のユーザーにアドインを展開します。 Outlook Exchangeコントロール パネルを使用して、Microsoft 365に接続せずにオンプレミス環境にデプロイします。  
+> Word、Excel、および PowerPoint の場合、 [SharePoint アプリ カタログ](/sharepoint/dev/sp-add-ins/publish-sharepoint-add-ins) を使用して、Microsoft 365 への接続や SharePoint アドインのサポートが必要ないオンプレミス環境のユーザーにアドインを展開します。 Outlook では、Exchange コントロール パネルを使用して、Microsoft 365 に接続せずにオンプレミス環境に展開します。  
 
 ## <a name="add-in-states"></a>アドインの状態
 アドインは **、[オン] または [****オフ]** の状態にすることができます。 
@@ -255,11 +255,11 @@ Office アドインの種類と機能の詳細については、アドイン [�
  
 アドインを使用しなくなった場合は、アドインを削除することを検討してください。 たとえば、アドインを無効にすると、その年の特定の時間帯にのみアドインが使用される場合に意味がある場合があります。 
 
-## <a name="manage-an-office-add-in-using-the-admin-center"></a>管理センターを使用してOffice アドインを管理する
+## <a name="manage-an-office-add-in-using-the-admin-center"></a>管理センターを使用して Office アドインを管理する
 
 展開後、管理者はアドインへのユーザー アクセスを管理することもできます。 
 
-1. 管理センターで **[設定**]、[**統合アプリ**] の順に選択します。 
+1. 管理センターで **[設定]** を選択し、[ **統合アプリ**] を選択します。 
 2. [統合アプリ] ページには、アプリの一覧が、他のアプリとリンクされている 1 つのアドインまたはアドインのいずれかになります。 
 3. **[管理]** ウィンドウを開くには、[その他のアプリの状態] を **使用できるアプリ** を選択します。 **使用可能なアプリ** の数が多いほど、まだデプロイされていない ISV からの統合が増えていることがわかります。 
 4. [ **概要** ] タブで、[ **デプロイ**] を選択します。 一部のアプリでは、展開を選択する前にユーザーを追加する必要があります。 
@@ -270,11 +270,14 @@ Office アドインの種類と機能の詳細については、アドイン [�
 9. アプリの状態が **[更新保留中**] の場合は、アプリをクリックして [ **管理** ] ウィンドウを開き、アプリを更新できます。 
 10. ユーザーを更新するには、[ **ユーザー** ] タブを選択し、適切な変更を行います。 変更を加えてから **[更新]** を選択します。  
 
+> [!NOTE]
+> アドインを展開した管理者またはグローバル管理者のみがそのアドインを管理できます。
+
 ## <a name="delete-an-add-in"></a>アドインを削除する
 
 展開されたアドインを削除できます。
 
-1. 管理センターで **[設定**]、[**統合アプリ**] の順に選択します。
+1. 管理センターで **[設定]** を選択し、[ **統合アプリ** ] を選択します。
 2. 任意の行を選択して、管理ウィンドウを表示します。 
 3. [ **構成** ] タブを選択します。 
 4. 削除するアドインを選択し、[削除] を選択 **します**。  
@@ -282,9 +285,10 @@ Office アドインの種類と機能の詳細については、アドイン [�
 > [!NOTE]
 >  アドインが別の管理者によってデプロイされている場合、[削除] ボタンは無効になります。 アドインを削除できるのは、アプリをデプロイした管理者またはグローバル管理者のみです。
 
-## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>管理者Exchangeアドインをデプロイできないシナリオ 
+## <a name="scenarios-where-exchange-admin-cannot-deploy-an-add-in"></a>Exchange 管理者がアドインを展開できないシナリオ 
 
-Exchange 管理がアドインをデプロイできない場合は、次の 2 つがあります。
+Exchange 管理がアドインを展開できないケースは 2 つあります。
+
 - アドインに MS Graph API へのアクセス許可が必要で、グローバル管理者の同意が必要な場合。
 - アドインが 2 つ以上のアドインと Web アプリにリンクされており、これらのアドインの少なくとも 1 つが別の管理者 (exchange/global) によってデプロイされ、ユーザーの割り当てが均一でない場合。 ユーザーの割り当てが既にデプロイされているすべてのアプリで同じ場合にのみ、アドインのデプロイを許可します。  
 
@@ -293,22 +297,22 @@ Exchange 管理がアドインをデプロイできない場合は、次の 2 �
 
 ### <a name="which-administrator-role-do-i-need-to-access-integrated-apps"></a>統合アプリにアクセスするには、どの管理者ロールが必要ですか?
 
-統合アプリにアクセスできるのは、グローバル管理者のみです。 統合アプリは、他の管理者の左側のナビゲーションには表示されません。
+統合アプリにアクセスできるのは、グローバル管理者と Exchange 管理者のみです。 統合アプリは、他の管理者の左側のナビゲーションには表示されません。
 
 ### <a name="why-do-i-see-add-in-in-the-left-nav-under-setting-but-not-integrated-apps"></a>[設定] の下の左側のナビゲーションにアドインが表示されますが、統合アプリは表示されないのはなぜですか?
 
 いくつかの理由があります。
 
-- ログインした管理者はExchange管理者です。
+- ログインしている管理者は Exchange 管理者です。
 - 顧客はソブリン クラウドにあり、統合アプリエクスペリエンスはまだソブリン クラウドのお客様が利用できます。
 
 ### <a name="what-apps-can-i-deploy-from-integrated-apps"></a>統合アプリからデプロイできるアプリは何ですか?
 
-統合アプリを使用すると、Web Apps、Teams アプリ、Excel、PowerPoint、Word、Outlook アドイン、SPFx アプリを展開できます。 アドインの場合、統合アプリでは、オンプレミスのExchangeメールボックスではなく、オンライン メールボックスをExchangeする展開がサポートされます。
+統合アプリを使用すると、Web Apps、Teams アプリ、Excel、PowerPoint、Word、Outlook アドイン、SPFx アプリを展開できます。 アドインの場合、統合アプリでは、オンプレミスの Exchange メールボックスではなく、Exchange オンライン メールボックスへの展開がサポートされます。
 
 ### <a name="can-administrators-delete-or-remove-apps"></a>管理者はアプリを削除または削除できますか?
 
-はい。 グローバル管理者は、アプリを削除または削除できます。
+アプリまたはアドインをデプロイした管理者、またはグローバル管理者のみが削除または削除できます。
 
 - リスト ビューからアプリを選択します。 [ **構成]** タブで、削除するアプリを選択します。  
 

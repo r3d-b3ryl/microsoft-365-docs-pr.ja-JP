@@ -21,14 +21,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを使用して中小企業にサイバーセキュリティを実装する方法について説明します。 サイバーセキュリティの機能と機能は、サイバー攻撃やセキュリティ侵害を防ぐために最適化され、高度なサイバー防御を使用してデータ、デバイス、情報を保護するのに役立ちます。
-ms.openlocfilehash: cd21390c144d6a175edd2091fb531fe881a9b65e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 798a5f6ee02ff0b949cb57d818cb40e3221e4a35
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894287"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037756"
 ---
-# <a name="microsoft-365-business-premium-mdash-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium &mdash; 中小企業向けサイバーセキュリティ
+# <a name="microsoft-365-business-premium--cybersecurity-for-small-business"></a>Microsoft 365 Business Premium – 小規模ビジネス向けのサイバーセキュリティ
 
 まず、Microsoft 365 Business Premiumとその世界クラスの生産性ツールを採用する際に賢明な選択をしたとしましょう。 サイバーセキュリティを念頭に置いて設計Microsoft 365 Business Premium、データ、デバイス、情報を保護します。 あなたは、ランダムな個人、組織犯罪、高度に高度な国家を含む、ハッカーやサイバー攻撃に対する組織の最初かつ最高の防御です。
 

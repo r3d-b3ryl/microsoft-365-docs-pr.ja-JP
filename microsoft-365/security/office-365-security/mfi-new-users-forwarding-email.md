@@ -13,16 +13,16 @@ description: 管理者は、セキュリティ & コンプライアンス セン
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7e7f97f2f246be609db813f1d42ef6aed6a152a9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 43938a8d6648d5e0ed510ebb6badb1721bacc961
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64470265"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037624"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>セキュリティ & コンプライアンス センターで電子メール分析情報を転送する新しいユーザー
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -31,7 +31,7 @@ ms.locfileid: "64470265"
 
 組織内の新しいユーザー アカウントが突然外部ドメインに電子メール メッセージを転送し始めると、疑わしいです。
 
-[セキュリティ & コンプライアンス センター](https://protection.office.com)で電子メール 分析情報が **転送される新しいドメイン** は、組織内の新しく作成されたユーザーが外部ドメインにメッセージを転送するときに通知します。 この状態は、侵害された管理者アカウントが新しいユーザーの作成に使用されたことを示している可能性があります。 アカウントが侵害されたと思われる場合は、「侵害された [メール アカウントへの対応」を](responding-to-a-compromised-email-account.md)参照してください。
+[セキュリティ & コンプライアンス センター](https://protection.office.com)で電子メール 分析情報を **転送する新しいユーザー** は、組織内の新しく作成されたユーザーが外部ドメインにメッセージを転送するときに通知します。 この状態は、侵害された管理者アカウントが新しいユーザーの作成に使用されたことを示している可能性があります。 アカウントが侵害されたと思われる場合は、「侵害された [メール アカウントへの対応」を](responding-to-a-compromised-email-account.md)参照してください。
 
 この分析情報は、問題が検出された場合にのみ表示され、[ [転送レポート](view-mail-flow-reports.md#forwarding-report) ] ページに表示されます。
 
@@ -113,6 +113,6 @@ ms.locfileid: "64470265"
 
 レポート ビューに戻るには、[レポートの **表示**] をクリックします。
 
-## <a name="related-topics"></a>関連項目
+## <a name="related-topics"></a>関連トピック
 
 メール フロー ダッシュボードのその他の分析情報については、 [セキュリティ & コンプライアンス センターのメール フロー分析情報に関する](mail-flow-insights-v2.md)ページを参照してください。

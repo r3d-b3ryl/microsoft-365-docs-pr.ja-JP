@@ -60,6 +60,8 @@
       href: m365-lighthouse-win365-page-overview.md
     - name: Windows 365 クラウド PCを再プロビジョニングする
       href: m365-lighthouse-reprovision-cloudpc.md
+    - name: クラウド PC アカウントの種類Windows 365 Business変更する
+      href: m365-lighthouse-change-cloud-pc-account-type.md
     - name: エンタープライズ クラウド PC に障害が発生したネットワーク接続を表示する
       href: m365-lighthouse-view-failed-network-connections.md
 - name: 脅威を管理する

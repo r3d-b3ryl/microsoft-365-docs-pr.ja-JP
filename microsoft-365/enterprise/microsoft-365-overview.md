@@ -15,12 +15,12 @@ ms.custom:
 - it-pro
 - intro-overview
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: ccbc91dbaf49b8470f90ca8ea732c6a9580058bf
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 6c79427f48867f5da7cf869e4856ad6b31dc6ed1
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65096746"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037668"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -37,7 +37,6 @@ Microsoft 365 for Enterprise は以下で構成されています。
 |ローカル アプリおよびクラウド ベースのアプリと生産性サービス|Microsoft 365 Apps for enterprise、お使いの PC と Mac 用の最新版の Office アプリ (Word、Excel、PowerPoint、Outlook など)、メール、ファイル ストレージと共同作業、会議、その他の一連のオンライン サービスが含まれています。|
 |Windows 10 Enterprise|大規模と中規模の組織のニーズを満たします。これは、ユーザーにとって最も生産的かつ安全なバージョンの Windows です。IT プロフェッショナルに対しては、包括的な展開、デバイス、アプリの管理も提供します。|
 |デバイス管理と高度なセキュリティ サービス|Microsoft Intune が含まれています。これは、クラウドベースのエンタープライズ モビリティ管理 サービスであり、組織のデータを保護しながら、従業員の生産性を高めるのに役立ちます。|
-|||
 
 ## <a name="plans"></a>プラン
 
@@ -48,7 +47,6 @@ Microsoft 365 for Enterprise には 3 つのプランがあります。
 |E3|Microsoft 365 の主要な製品と機能にアクセスして、安全に職場の生産性を高め、イノベーションを推進します。|
 |E5|Microsoft 365 の最新の製品と機能にアクセスします。 これには、Defender for Office 365、セキュリティ ツール、および共同作業ツールが含まれます。 このプランには、E3 のすべての機能に加えて、高度なセキュリティ、音声、およびデータ分析ツールが含まれています。|
 |F3|現場の最前線で働く従業員が最高の仕事をできるように、彼らが使え役に立つ専用のツールやリソースを通じて従業員とつながります。|
-|||
 
 Microsoft 365 E3 をお持ちの場合は、次のアドオンも入手できます。
 

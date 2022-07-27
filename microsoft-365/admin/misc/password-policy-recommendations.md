@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化し、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にします。
-ms.openlocfilehash: 474dbaf6877c3b4da9cd9d345e53cd95b2f42452
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: e99ca9a878ef6a37b2a50dbf27c565661d52ad0e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695574"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037492"
 ---
 # <a name="password-policy-recommendations-for-microsoft-365-passwords"></a>Microsoft 365 パスワードに関するパスワード ポリシーの推奨事項
 
@@ -61,6 +61,7 @@ Microsoft 365 パスワードの詳細については、以下を参照してく
 
 より安全なパスワード システムの最大の目的は、パスワードの多様性です。パスワードを推測しにくくするためのパスワード ポリシーが必要です。組織を可能な限り安全な状態に保つための推奨事項をいくつか以下に示します。
   
+
 - 8 桁の最小長要件を維持する
 
 - 文字構成の要件を求めない。たとえば、\*&amp;(^%$ などです。

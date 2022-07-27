@@ -2,7 +2,7 @@
   items:
     - name: 概要
       href: index.md
-    - name: Microsoft 365 がビジネスにどのように役立つのか
+    - name: ビジネスをより安全に実行する
       href: m365bp-secure-users.md
     - name: Microsoft 365 Business Premium試用版プレイブック
       href: m365bp-trial-playbook-microsoft-business-premium.md
