@@ -22,17 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Microsoft 365 管理センターの簡略化されたビューを使用して、一般的なタスクを管理するか、より複雑な設定とタスクのダッシュボード ビューを管理します。
+description: 一般的なタスクの管理には Microsoft 365 管理センターの簡易ビューを、より複雑な設定やタスクにはダッシュボード ビューのいずれかを使用します。
 ms.openlocfilehash: c5be4c0d8fdcdbde9b8fcf6be90e616a052f2fb8
 ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2022
 ms.locfileid: "66601654"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの概要
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 - [シンプルなビューの管理センター](#watch-the-admin-center-in-simplified-view)
 - [ダッシュボード ビューの管理センター](#watch-the-admin-center-in-dashboard-view)
@@ -41,7 +41,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ## <a name="watch-the-admin-center-in-simplified-view"></a>ウォッチ: シンプルなビューの管理センター
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197911)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197911)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 

@@ -1,5 +1,5 @@
 ---
-title: 日本の銀行口座番号エンティティ定義
+title: 日本の銀行口座番号エンティティの定義
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 日本の銀行口座番号の機密情報の種類エンティティ定義。
+description: 日本の銀行口座番号機密情報タイプ エンティティの定義。
 ms.openlocfilehash: 1e762a32654e6aa14e0b20d7e09ab5167cc330a5
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66996492"
@@ -30,18 +30,18 @@ ms.locfileid: "66996492"
 
 ## <a name="format"></a>フォーマット
 
-7 桁または 8 桁
+7 桁または 8 桁の数字
 
 ## <a name="pattern"></a>パターン
 
 銀行口座番号:
 
-- 7 桁または 8 桁
-- 銀行口座のブランチ コード:
+- 7 桁または 8 桁の数字
+- 銀行口座支店コード:
 
-- 4 桁
+- 4 桁の数字
 - スペースまたはダッシュ (省略可能)
-- 3 桁
+- 3 桁の数字
 
 チェックサム
 
@@ -49,7 +49,7 @@ ms.locfileid: "66996492"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_jp_bank_account` がパターンに一致するコンテンツを検出した。
 - `Keyword_jp_bank_account` のキーワードを検出した。

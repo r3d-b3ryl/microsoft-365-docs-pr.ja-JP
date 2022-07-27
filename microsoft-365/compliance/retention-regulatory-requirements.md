@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: データ ライフサイクル管理およびレコード管理の規制要件を満たすために役立つリソース。
-ms.openlocfilehash: 1fdae5c765d940c3f1b37cb7cff68fa736fcbd33
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b3fe0a6c22645f67c99053a45e76e6dc9439e513
+ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638149"
+ms.lasthandoff: 07/26/2022
+ms.locfileid: "67019991"
 ---
 # <a name="regulatory-requirements-for-data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理の規制要件
 
@@ -44,11 +44,11 @@ ms.locfileid: "66638149"
 
 ## <a name="sec-17a-4f-finra-4511c-and-cftc-131c-d"></a>SEC 17a-4(f)、FINRA 4511(c)、CFTC 1.31(c)-(d)
 
-**Cohasset アセスメント - Microsoft 365 - SEC ルール 17a-4(f) - SharePoint、OneDrive、Teams、Exchange、Skype 用の不変ストレージ** - [アセスメントのダウンロード](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
+**Cohasset アセスメント - Microsoft 365 - SEC 規則 17a-4(f) - Immutable Storage for SharePoint、OneDrive、Exchange、Teams、および Yammer** - [ ダウンロードアセスメント](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)
 
-適用可能なワークロード: SharePoint、OneDrive、Teams、Exchange、Skype for Business
+適用可能なワークロード: SharePoint、OneDrive、Teams、Exchange および Yammer
 
-2020 年 11 月にリリースされました。このレポートは Cohasset Associates, Inc. (Cohasset) と共同で作成されたもので、Microsoft 365 サービスの機能が、以下によって指定される、電子記録を記録、保存、および管理するための要件に照らして評価されます。  
+2022 年 7 月にリリースされた最新版で、本レポートは、Cohasset Associates、Inc (Cohasset) との提携により、電子記録の要件を記録、保存、管理するための Microsoft 365 サービスの機能を評価するために作成されたものです。  
 
 - 米国証券取引委員会 (SEC) 17 CFR § 240.17a-4(f)。証券取引メンバー、ブローカー、ディーラーを規制します。  
 

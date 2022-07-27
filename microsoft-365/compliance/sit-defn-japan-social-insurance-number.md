@@ -1,5 +1,5 @@
 ---
-title: 日本社会保険番号 (SIN) エンティティ定義
+title: 日本の社会保険番号 (SIN) エンティティの定義
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -18,10 +18,10 @@ ms.collection:
 hideEdit: true
 feedback_system: None
 recommendations: false
-description: 日本の社会保険番号 (SIN) の機密情報の種類エンティティ定義。
+description: 日本の社会保険番号 (SIN) の機密情報の種類のエンティティ定義。
 ms.openlocfilehash: 27f812ec99c1ef7c2e4d3a913c039cab4fda65e7
 ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/21/2022
 ms.locfileid: "66996402"
@@ -36,7 +36,7 @@ ms.locfileid: "66996402"
 
 7 ～ 12 桁の数字:
 
-- 4 桁
+- 4 桁の数字
 - ハイフン (省略可能)
 - 6 桁の OR
 - 7 ～ 12 桁の連続する数字
@@ -47,9 +47,9 @@ ms.locfileid: "66996402"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
-- パターンに一致する関数 `Func_jp_sin finds` の内容。
+- 関数 `Func_jp_sin finds` パターンに一致するコンテンツ。
 - `Keyword_jp_sin` のキーワードを検出した。
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。

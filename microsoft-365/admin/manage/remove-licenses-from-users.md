@@ -25,7 +25,7 @@ description: 製品ライセンスの割り当てを解除する方法は、特�
 ms.date: 07/12/2022
 ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
 ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2022
 ms.locfileid: "66748387"
@@ -120,7 +120,7 @@ ms.locfileid: "66748387"
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>ライセンスを削除すると、ユーザーのデータはどうなりますか?
 
-- ライセンスがユーザーから削除されると、そのアカウントに関連付けられているExchange Onlineデータは 30 日間保持されます。 30 日間の猶予期間後、データは削除され、復元できなくなります。 ただし、アイテム保持ポリシーにリンクされ、保持ラベルに一致するコンテンツは検出のために保持されます。
+- ユーザーからライセンスを削除すると、そのアカウントに関連付けられているデータは 30 日間保持されます。 30 日間の猶予期間後、データは削除され、復元できなくなります。 ただし、アイテム保持ポリシーにリンクされ、保持ラベルに一致するコンテンツは検出のために保持されます。
 - OneDrive for Business に保存されたファイルは、ユーザーが Microsoft 365 管理センターから削除されるか、Active Directory 同期によって削除されない限り、削除されません。詳細については、「[OneDrive の保持と削除](/onedrive/retention-and-deletion)」を参照してください。
 - ライセンスが削除されると、ユーザーのメールボックスは、コンテンツ検索や電子情報開示 (Premium) などの電子情報開示ツールを使用して検索できなくなります。 詳細については、[Microsoft 365 のコンテンツ検索](../../compliance/content-search.md)の「切断された、またはライセンスを解除されたメールボックスを検索する」を参照してください。
 - Office 365 Enterprise E3 などの Enterprise サブスクリプションがある場合、Exchange Online では、[非アクティブなメールボックス](../../compliance/inactive-mailboxes-in-office-365.md)を使用して、削除されたユーザー アカウントのメールボックス データを保存できます。詳細については、「[Exchange Online の非アクティブなメールボックスを作成および管理する](../../compliance/create-and-manage-inactive-mailboxes.md)」をご覧ください。
