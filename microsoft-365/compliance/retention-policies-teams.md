@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織の Teams メッセージの自動保持または削除を管理できるように、Microsoft Teams に適用される Microsoft 365 アイテム保持ポリシーについて説明します。
-ms.openlocfilehash: d3a405735ece7cdfd453a946d2350b15cfab6978
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 00b8932c1d529a236a0d70f15443d1afa74c3213
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943400"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037518"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Microsoft Teams の保持の詳細
 
@@ -44,7 +44,7 @@ ms.locfileid: "66943400"
 ## <a name="whats-included-for-retention-and-deletion"></a>保持と削除の対象となる機能
 
 > [!NOTE]
-> アイテム保持ポリシーは、現在プレビュー段階の[共有チャネル](/MicrosoftTeams/shared-channels)をサポートするようになりました。 共有チャネルは、親チャネルから保持設定を継承します。
+> アイテム保持ポリシーでは、[共有チャネル](/MicrosoftTeams/shared-channels)がサポートされています。 共有チャネルは、親チャネルから保持設定を継承します。
 
 Teams のチャット メッセージ、チャネル メッセージ、およびプライベート チャネル メッセージは、Teams のアイテム保持ポリシーを使用して削除できます。また、メッセージ内のテキストに加えて、コンプライアンス上の理由により、埋め込み画像、表、ハイパーテキスト リンク、他の Teams メッセージやファイルへのリンク、および[カード コンテンツ](/microsoftteams/platform/task-modules-and-cards/what-are-cards)を保持することができます。 チャット メッセージおよびプライベート チャネル メッセージには、会話内のすべてのユーザーの名前が含まれ、チャネル メッセージにはチーム名とメッセージの件名 (提供されている場合) が含まれます。 
 

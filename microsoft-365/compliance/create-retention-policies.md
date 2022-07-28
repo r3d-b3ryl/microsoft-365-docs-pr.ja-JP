@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 0f0fa2da9c41700216b0142827897980870f006d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
+ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627671"
+ms.lasthandoff: 07/27/2022
+ms.locfileid: "67037734"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -74,7 +74,7 @@ ms.locfileid: "66627671"
 ### <a name="retention-policy-for-teams-locations"></a>Teams の場所のアイテム保持ポリシー
 
 > [!NOTE]
-> アイテム保持ポリシーは、現在プレビュー段階の [共有チャネル](/MicrosoftTeams/shared-channels)をサポートするようになりました。**Teams チャネル メッセージ** の場所に対するデータ保持設定を構成すると、チームに共有チャネルがある場合、それらはデータ保持設定を親チームから継承します。
+> アイテム保持ポリシーでは、[共有チャネル](/MicrosoftTeams/shared-channels)がサポートされています。 **Teams チャネル メッセージ** の場所に対するデータ保持設定を構成すると、チームに共有チャネルがある場合、それらはデータ保持設定を親チームから継承します。
 
 1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)から、[**データ ライフサイクル管理**]  >  [**アイテム保持ポリシー**] を選択します。
 
