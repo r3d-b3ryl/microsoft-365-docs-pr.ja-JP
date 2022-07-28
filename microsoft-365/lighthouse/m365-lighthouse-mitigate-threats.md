@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Microsoft Defender ウイルス対策を使用して脅威を軽減する方法について説明します。
-ms.openlocfilehash: 13583b66ab1251ae5cb5db1122813783ff3b861e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 005e1c527b8989b7689740e54229768decaebbc3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822049"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055946"
 ---
 # <a name="mitigate-threats-in-microsoft-365-lighthouse-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策を使用してMicrosoft 365 Lighthouseの脅威を軽減する
 

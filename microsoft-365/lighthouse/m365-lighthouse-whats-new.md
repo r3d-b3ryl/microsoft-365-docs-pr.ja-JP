@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、毎月Microsoft 365 Lighthouseで追加、変更、および修正された内容を確認します。
-ms.openlocfilehash: 927e063abfb806e44c4888ee09d788cfa2bd7f5e
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602918"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056616"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの新機能
 
@@ -43,11 +43,11 @@ Microsoft 365 Lighthouse[に新機能](m365-lighthouse-overview.md)を継続的�
 
 Microsoft 365 LighthouseがMicrosoft Defender for Businessと統合され、Microsoft Defender for Businessを持つすべての顧客テナントに関連する分析情報と管理機能が提供されるようになりました。 Microsoft Defender for Businessにオンボードされた顧客デバイスの一覧を表示するには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで [**デバイス**] を選択します。 顧客テナント全体でフラグが設定されたインシデントとアラートの一覧を表示するには、[ **デバイス** > **デバイス セキュリティ**] に移動し、[ **インシデントとアラート** ] タブを選択します。  
 
-また、顧客テナントのMicrosoft Defender for Businessを設定するのに役立つ手順を既定のベースラインに追加しました。 この手順を表示するには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウから **[基準計画**] を選択するか、いずれかの顧客テナントの展開計画を表示します。
+また、顧客テナントのMicrosoft Defender for Businessを設定するのに役立つ手順を既定のベースラインに追加しました。 この手順を表示するには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで **[基準計画**] を選択するか、いずれかの顧客テナントの展開計画を表示します。
 
 ### <a name="status-of-quarantined-email-messages"></a>検疫された電子メール メッセージの状態
 
-マネージド テナントの電子メール検疫データに関する新機能が追加されました。 この機能は、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウから **[データ保護**] を選択してアクセスできるため、顧客テナント全体で検疫された電子メール メッセージの状態を確認できます。 操作が必要なテナントに優先順位を付ける際に役立つ、検疫量の合計と各マネージド テナントの詳細情報の統合情報を確認できます。
+マネージド テナントの電子メール検疫データに関する新機能が追加されました。 この機能は、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで **[データ保護**] を選択してアクセスできるため、顧客テナント全体で検疫された電子メール メッセージの状態を確認できます。 操作が必要なテナントに優先順位を付ける際に役立つ、検疫量の合計と各マネージド テナントの詳細情報の統合情報を確認できます。
 
 ### <a name="increase-in-maximum-license-limit"></a>ライセンスの上限の引き上げ
 
@@ -63,7 +63,7 @@ Microsoft 365 LighthouseがMicrosoft Defender for Businessと統合され、Micr
 
 ### <a name="enriched-user-details-pane"></a>エンリッチされたユーザーの詳細ウィンドウ
 
-ユーザーの詳細ウィンドウを再設計し、より多くのユーザー情報と、ユーザーをより適切に管理するために実行できるより多くのアクションを含めます。 これで、Microsoft 365 管理センターのユーザーの詳細ウィンドウと同じ外観になりました。 Microsoft 365 Lighthouseの [ユーザーの詳細] ウィンドウにアクセスするには、左側のナビゲーション ウィンドウで [**ユーザー**] を選択し、[**ユーザーの検索**] または [**危険なユーザー**] を選択します。 任意のユーザーを選択して詳細ウィンドウを開きます。
+ユーザーの詳細ウィンドウを再設計し、より多くのユーザー情報と、ユーザーをより適切に管理するために実行できるより多くのアクションを含めます。 これで、Microsoft 365 管理センターのユーザーの詳細ウィンドウと同じ外観になりました。 Microsoft 365 Lighthouseのユーザーの詳細ウィンドウにアクセスするには、左側のナビゲーション ウィンドウで **[ユーザー**] を選択し、[ユーザーの **検索**] または [**危険なユーザー**] を選択します。 任意のユーザーを選択して詳細ウィンドウを開きます。
 
 ## <a name="april-2022"></a>2022 年 4 月
 
@@ -152,7 +152,7 @@ Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで、[
 
 これらの分析情報は、ユーザーが積極的に使用するサービスと、セキュリティや生産性を向上させる機会がある可能性がある場所を理解できるように支援することで、顧客のエンゲージメントを通知し、顧客により多くの価値を提供するのに役立ちます。 
 
-詳細については、「[Microsoft 365 Lighthouse: Microsoft 365 の使用状況カード」の「テナントの概要」ページを参照](m365-lighthouse-tenants-page-overview.md#microsoft-365-usage-card)してください。
+詳細については、「[Microsoft 365 Lighthouse: Microsoft 365 サービスの使用状況」セクションの「テナントの概要」ページを参照](m365-lighthouse-tenants-page-overview.md#microsoft-365-services-usage-section)してください。
 
 ### <a name="exchange-online-protection-and-microsoft-365-defender-for-office-365-default-baseline-step"></a>既定のベースライン ステップのExchange Online ProtectionとMicrosoft 365 Defender Office 365
 
@@ -194,7 +194,7 @@ Microsoft 365 Lighthouse内の任意のページからテナントとタグを�
 
 ### <a name="capability-to-take-action-on-noncompliant-devices"></a>非準拠デバイスでアクションを実行する機能
 
-複数の顧客テナント間で 1 つ以上のデバイスを同期または再起動する機能が導入されました。 この機能は、顧客のデバイスがリスクから保護されるようにするのに役立ちます。 この機能を確認するには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウから [**デバイス**] を選択し、[**デバイス**] タブを選択します。デバイスの一覧の上にある **[同期** と **再起動]** オプションを探します。 これらのオプションには、任意のデバイスのデバイスの詳細ウィンドウからアクセスすることもできます。
+複数の顧客テナント間で 1 つ以上のデバイスを同期または再起動する機能が導入されました。 この機能は、顧客のデバイスがリスクから保護されるようにするのに役立ちます。 この機能を確認するには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで [**デバイス**] を選択し、[**デバイス**] タブを選択します。デバイスの一覧の上にある **[同期** と **再起動]** オプションを探します。 これらのオプションには、任意のデバイスのデバイスの詳細ウィンドウからアクセスすることもできます。
 
 ### <a name="capability-to-monitor-and-manage-windows-365-cloud-pcs"></a>Windows 365クラウド PC を監視および管理する機能
 
@@ -227,7 +227,7 @@ Microsoft 365 Lighthouse内の任意のページからテナントとタグを�
 - Windows デバイス用の Defender AV ポリシーを構成する 
 - Windows デバイスのコンプライアンス ポリシーを構成する 
 
-これらの展開手順を実行するには、Microsoft 365 Lighthouse の左側のナビゲーション ウィンドウから [ **テナント** ] を選択し、テナントの一覧からテナントを選択してから、[ **展開計画** ] タブを選択します。 
+これらの展開手順を実行するには、Microsoft 365 Lighthouse の左側のナビゲーション ウィンドウで [ **テナント** ] を選択し、テナントの一覧からテナントを選択してから、[ **展開計画** ] タブを選択します。 
 
 ## <a name="may-2021"></a>2021 年 5 月
 

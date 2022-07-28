@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、機能領域別の Lighthouse の既知の問題の一覧を参照してください。
-ms.openlocfilehash: 61073729b9589033ab361973c1c87bac2b28959a
-ms.sourcegitcommit: 04a93269fbbbdb5513335422cabdc1b269ead5ac
+ms.openlocfilehash: ce2ad15e6b4863546693175c509c0220f1383406
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/18/2022
-ms.locfileid: "66160822"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056858"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseに関する既知の問題
 
@@ -32,7 +32,7 @@ ms.locfileid: "66160822"
 
 | 問題 | 説明 | 解決方法 |
 | ---------------- | ---------------- | ---------------- |
-| **Helpdesk Agent がユーザー パスワードをリセットできない** | Helpdesk Agent グループのメンバーであるマネージド サービス プロバイダー (MSP) 技術者は、顧客テナント内のユーザーのパスワードをリセットできません。 ユーザーのパスワードをリセットしようとすると、次のエラー メッセージが表示されます。 [詳細については、こちらを参照してください](m365-lighthouse-configure-portal-security.md)。 | アクセス許可の問題を回避するには、ヘルプデスク エージェントはMicrosoft 365 管理センターまたはAzure Active Directoryを使用してパスワードをリセットする必要があります。 |
+| **Helpdesk Agent がユーザー パスワードをリセットできない** | Helpdesk Agent グループのメンバーであるマネージド サービス プロバイダー (MSP) 技術者は、顧客テナント内のユーザーのパスワードをリセットできません。 ユーザーのパスワードをリセットしようとすると、次のエラー メッセージが表示されます。 [詳細については、こちらを参照してください](m365-lighthouse-configure-portal-security.md)。 | アクセス許可の問題を回避するには、ヘルプデスク エージェントは、Microsoft 365 管理センターまたは Azure Active Directory を使用してパスワードをリセットする必要があります。 |
 
 ## <a name="devices"></a>デバイス
 

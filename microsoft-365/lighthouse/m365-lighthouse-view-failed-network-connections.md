@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、エンタープライズ クラウド PC でネットワーク接続に失敗したことを確認する方法について説明します。
-ms.openlocfilehash: 273e0737cbe59d9ecae40fad0c114f58881a5d05
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e557c2cd01851c77d11aadf75e20b394b2944987
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823403"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055858"
 ---
 # <a name="view-an-enterprise-cloud-pc-failed-network-connection-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでエンタープライズ クラウド PC のネットワーク接続に失敗したを表示する
 
@@ -39,7 +39,7 @@ Microsoft 365 Lighthouseは、顧客テナントと Azure Active Directory (Azur
 
 2. [ **Azure ネットワーク接続** ] タブを選択します。
 
-3. [接続の概要] セクションで、[ **失敗した接続**] を選択します。
+3. 色付きのカウント注釈バーで、[ **失敗した接続**] を選択します。
 
 4. フィルター処理された一覧から、調査する **接続の横にある [Microsoft エンドポイント マネージャーで** 接続の詳細を表示する] を選択します。
 

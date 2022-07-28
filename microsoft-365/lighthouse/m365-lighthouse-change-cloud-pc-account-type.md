@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、Windows 365 Business Cloud PC アカウントの種類を設定または変更する方法について説明します。
-ms.openlocfilehash: 398f1fb73e94ccb6a5e599ad1414988bc99284f2
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: c1cb1e8a8e6f850aa73fe05360289d280c4b9eb2
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037780"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056006"
 ---
 # <a name="change-a-windows-365-business-cloud-pc-account-type-in-microsoft-365-lighthouse"></a>Microsoft 365 LighthouseでWindows 365 Business Cloud PC アカウントの種類を変更する
 
@@ -35,7 +35,7 @@ ms.locfileid: "67037780"
 > [!NOTE]
 > アカウントの種類は、Business ライセンスを持つクラウド PC に対してのみ設定または変更できます。 Enterprise ライセンスを使用してクラウド PC のアカウントの種類を変更することはできません。
 
-## <a name="before-you-begin"></a>始める前に 
+## <a name="before-you-begin"></a>はじめに 
 
 パートナー テナントのWindows 365管理者またはグローバル管理者である必要があります。
 
@@ -51,7 +51,7 @@ ms.locfileid: "67037780"
 
 5.  クラウド PC の一覧から、アカウントの種類を変更するクラウド PC を選択します。
 
-6.  **[Cloud PC の詳細**] ウィンドウで、[**アカウントの種類の変更**] を選択します。
+6.  [Cloud PC の詳細] ウィンドウで、[ **アカウントの種類の変更**] を選択します。
 
 7.  [ **クラウド PC アカウントの種類の変更** ] ウィンドウで、Cloud PC のアカウントの種類を選択し、[保存] を選択 **します**。
 

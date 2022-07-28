@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse を使用するマネージド サービス プロバイダー (MSP) 向けに、多要素認証を管理する方法を説明します。
-ms.openlocfilehash: 79690fb052c611fd9d89cf0cdbde8fc8b3f37832
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695640"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056466"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで多要素認証を管理する
 
@@ -44,7 +44,7 @@ Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプ
 
 2. [ **多要素認証** ] タブで、MFA を使用していないテナントを探し、そのテナントを選択してテナントの詳細ウィンドウを開きます。
 
-3. **[MFA 有効化]** タブで、 **[セキュリティの既定値群を伴う MFA]** で、**[セキュリティの既定値群の有効化]** を選択します。
+3. [ **MFA の有効化** ] タブの [ **セキュリティの既定値を使用した MFA] で、[セキュリティの既定値** を **有効にする**] を選択します。
 
 4. **[変更の保存]** を選択します。
 

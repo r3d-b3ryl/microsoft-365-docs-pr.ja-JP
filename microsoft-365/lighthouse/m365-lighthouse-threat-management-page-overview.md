@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、脅威管理ページを参照してください。
-ms.openlocfilehash: 2bf9a778e5a8c9c22ea290356bb5e16d6553b009
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: a9e87d533c3693040bf2bea59f9d45a52863af34
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823487"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056671"
 ---
 # <a name="overview-of-the-threat-management-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [脅威管理] ページの概要 
 
@@ -32,7 +32,7 @@ ms.locfileid: "66823487"
 
 Microsoft Defender ウイルス対策は、テナント、ユーザー、デバイスを、ウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威から保護します。 Windows に組み込まれている堅牢で継続的な保護です。  
   
-Microsoft 365 Lighthouseの [脅威管理] ページにアクセスするには、左側のナビゲーション ウィンドウで [**Devices** > **Threat Management**] を選択して、顧客テナントの脅威に対するセキュリティ体制を表示します。 リスクを軽減するのに役立つ注意と推奨事項を必要とするテナント、ユーザー、デバイスが表示されます。  
+Microsoft 365 Lighthouseの [脅威管理] ページにアクセスするには、左側のナビゲーション ウィンドウで [**デバイス** > **の脅威管理**] を選択して、顧客テナントの脅威に対するセキュリティ体制を表示します。 リスクを軽減するのに役立つ注意と推奨事項を必要とするテナント、ユーザー、デバイスが表示されます。  
   
 ## <a name="overview-tab"></a>[概要] タブ  
   

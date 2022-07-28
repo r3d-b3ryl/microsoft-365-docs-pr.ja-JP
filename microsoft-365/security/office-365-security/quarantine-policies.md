@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9d23083927d50d226692afe19223ed93aceb0b7b
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66798171"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056880"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -516,7 +516,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
      受信者の言語に基づいて検疫通知をカスタマイズするには、次の手順に従います。
 
-     1. [言語の選択] ボックスから **言語を選択** します。 既定値は、英語で、**Default** です。
+     1. [言語の選択] ボックスから **言語を選択** します。 既定値は **既定** です。これは、Microsoft 365 組織の既定の言語を意味します。 詳細については、「 [Microsoft 365 の言語と地域の設定を設定する方法」を](/office365/troubleshoot/access-management/set-language-and-region)参照してください。
      2. **[表示名]** と [**免責事項]** に値を入力します。 値は言語ごとに一意である必要があります。 複数の言語で **表示名** または **免責事項** の値を再利用しようとすると、[ **保存**] をクリックするとエラーが発生します。
      3. [**追加**] ボタンをクリックします。
      4. 前の手順を繰り返して、受信者の言語に基づいてカスタマイズされた検疫通知を最大 3 つ作成します。 ラベルのないボックスには、構成した言語が表示されます。

@@ -18,12 +18,12 @@ ms.custom:
 - intro-get-started
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseにサインアップする方法について説明します。
-ms.openlocfilehash: 19acad120e6796369e5de511b13ad37c4d9e4623
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 03ab19f55d7ab46c798daf0e0b49836739e1e9fd
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489090"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056836"
 ---
 # <a name="sign-up-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseにサインアップする
 
@@ -50,9 +50,9 @@ ms.locfileid: "66489090"
 
     Lighthouse がテナントに正常に追加されたことを確認するには、Microsoft 365 管理センターの [**Billing > Your Products**] でMicrosoft 365 Lighthouseを探します。
 
-1. Lighthouse ポータルにリダイレクトされない場合は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
+5. Lighthouse ポータルにリダイレクトされない場合は、 <a href="https://go.microsoft.com/fwlink/p/?linkid=2168110" target="_blank">https://lighthouse.microsoft.com</a>.
 
-1. [ **同意&続行** ] を選択して、パートナー契約の修正を完了します。
+6. [ **同意&続行** ] を選択して、パートナー契約の修正を完了します。
 
     > [!NOTE]
     > サインアップが完了すると、顧客データが Lighthouse に表示されるまでに最大で 48 時間かかる場合があります。

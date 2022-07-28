@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 0185b214d0b566fd387d753988e76fef0ee675b8
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9184bf848a1bf23bde639767c09a66e681d5553f
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943825"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056572"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -64,7 +64,7 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 |医療と健康| カナダの健康情報法 (HIA) |- [カナダのパスポート番号](sit-defn-canada-passport-number.md) </br> - [カナダの社会保険番号](sit-defn-canada-social-insurance-number.md) </br> - [カナダの正常性サービス番号](sit-defn-canada-health-service-number.md) </br> - [カナダの個人の健康識別番号](sit-defn-canada-personal-health-identification-number.md)|
 |医療と健康| カナダ個人健康情報法 (PHIA) Manitoba|- [カナダの社会保険番号](sit-defn-canada-social-insurance-number.md) </br> - [カナダの正常性サービス番号](sit-defn-canada-health-service-number.md) </br> - [カナダの個人の健康識別番号](sit-defn-canada-personal-health-identification-number.md)|
 |医療と健康| カナダ個人健康法 (PHIPA) Ontario |- [カナダのパスポート番号](sit-defn-canada-passport-number.md) </br> - [カナダの社会保険番号](sit-defn-canada-social-insurance-number.md) </br> - [カナダの正常性サービス番号](sit-defn-canada-health-service-number.md) </br> - [カナダの個人の健康識別番号](sit-defn-canada-personal-health-identification-number.md)|
-|医療と健康| 英国。 医療報告書法へのアクセス|- [英国の国民健康サービス番号](sit-defn-uk-national-health-service-number.md) </br> - [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md)|
+|医療と健康| 英国 医療報告書法へのアクセス|- [英国の国民健康サービス番号](sit-defn-uk-national-health-service-number.md) </br> - [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md)|
 |医療と健康| 米国医療保険法 (HIPAA) の強化|</br> - [病気の国際分類 (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [病気の国際分類 (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md) </br> - [すべてのフル ネーム](sit-defn-all-full-names.md) </br> - [すべての医療契約条件](sit-defn-all-medical-terms-conditions.md) </br> - [米国の物理アドレス](sit-defn-us-physical-addresses.md)|
 |医療と健康| 米国の医療保険法 (HIPAA)| - [病気の国際分類 (ICD-9-CM)](sit-defn-international-classification-of-diseases-icd-9-cm.md) </br> - [病気の国際分類 (ICD-10-CM)](sit-defn-international-classification-of-diseases-icd-10-cm.md)|
 |プライバシー| オーストラリアプライバシー法の強化|- [オーストラリアの運転免許証番号](sit-defn-australia-drivers-license-number.md) </br> - [オーストラリアのパスポート番号](sit-defn-australia-passport-number.md) </br> - [すべてのフル ネーム](sit-defn-all-full-names.md) </br> - [すべての医療契約条件](sit-defn-all-medical-terms-conditions.md) </br> - [オーストラリアの物理アドレス](sit-defn-australia-physical-addresses.md)|
@@ -85,10 +85,10 @@ DLP ポリシー テンプレートは、次の 4 つのカテゴリに事前に
 |プライバシー| 日本の個人情報の保護強化|- [日本社会保険番号 (SIN)](sit-defn-japan-social-insurance-number.md) </br> - [Japan My Number - Personal](sit-defn-japan-my-number-personal.md)</br> - [日本のパスポート番号](sit-defn-japan-passport-number.md) </br> - [日本の運転免許証番号](sit-defn-japan-drivers-license-number.md)</br> - [すべてのフル ネーム](sit-defn-all-full-names.md)</br> - [日本の物理アドレス](sit-defn-all-physical-addresses.md)|
 |プライバシー| 日本の個人情報保護|- [日本居住者登録番号](sit-defn-japan-resident-registration-number.md)</br> - [日本社会保険番号 (SIN)](sit-defn-japan-social-insurance-number.md)|
 |プライバシー| サウジアラビア個人識別可能 (PII) データ|- [サウジアラビアの国民 ID](sit-defn-saudi-arabia-national-id.md)|
-|プライバシー| 英国。 データ保護法|- [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [米国/英国のパスポート番号](sit-defn-us-uk-passport-number.md) </br> - [SWIFT コード](sit-defn-swift-code.md)|
-|プライバシー| 英国。 プライバシーと電子通信に関する規則|- [SWIFT コード](sit-defn-swift-code.md)|
-|プライバシー| 英国。 個人を特定できる情報 (PII) データ|- [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [米国/英国のパスポート番号](sit-defn-us-uk-passport-number.md)|
-|プライバシー| 英国。 個人情報オンライン実践コード (PIOCP)|- [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [英国の国民健康サービス番号](sit-defn-uk-national-health-service-number.md) </br> - [SWIFT コード](sit-defn-swift-code.md)|
+|プライバシー| 英国 データ保護法|- [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [米国/英国のパスポート番号](sit-defn-us-uk-passport-number.md) </br> - [SWIFT コード](sit-defn-swift-code.md)|
+|プライバシー| 英国 プライバシーと電子通信に関する規則|- [SWIFT コード](sit-defn-swift-code.md)|
+|プライバシー| 英国 個人を特定できる情報 (PII) データ|- [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [米国/英国のパスポート番号](sit-defn-us-uk-passport-number.md)|
+|プライバシー| 英国 個人情報オンライン実践コード (PIOCP)|- [英国の国民保険番号 (NINO)](sit-defn-uk-national-insurance-number.md) </br> - [英国の国民健康サービス番号](sit-defn-uk-national-health-service-number.md) </br> - [SWIFT コード](sit-defn-swift-code.md)|
 |プライバシー| 米国愛国者法の強化|- [クレジット カード番号](sit-defn-credit-card-number.md) </br> - [米国の銀行口座番号](sit-defn-us-bank-account-number.md)</br> - [米国の個人納税者識別番号 (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [米国の社会保障番号 (SSN)](sit-defn-us-social-security-number.md)</br> - [すべてのフル ネーム](sit-defn-all-full-names.md)</br> - [米国の物理アドレス](sit-defn-us-physical-addresses.md)|
 |プライバシー| 米国の愛国者法|- [クレジット カード番号](sit-defn-credit-card-number.md) </br> - [米国の銀行口座番号](sit-defn-us-bank-account-number.md)</br> - [米国の個人納税者識別番号 (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [米国の社会保障番号 (SSN)](sit-defn-us-social-security-number.md)|
 |プライバシー| 米国個人を特定できる情報 (PII) データの強化|- [米国の個人納税者識別番号 (ITIN)](sit-defn-us-individual-taxpayer-identification-number.md)  </br> - [米国の社会保障番号 (SSN)](sit-defn-us-social-security-number.md)</br> - [米国/英国のパスポート番号](sit-defn-us-uk-passport-number.md)</br> - [すべてのフル ネーム](sit-defn-all-full-names.md)</br> - [米国の物理アドレス](sit-defn-us-physical-addresses.md)|
@@ -103,14 +103,14 @@ DLP ポリシーは、複数の場所にわたって機密情報を含むアイ�
 
 |場所  |スコープを含める/除外する  |データの状態  |その他の前提条件 |
 |---------|---------|---------|---------|
-|Exchange 電子メール をオンラインで送信する |配布グループ | data-in-motion| 不要 |
+|Exchange 電子メール をオンラインで送信する |配布グループ | data-in-motion| いいえ |
 |SharePoint オンライン サイト   |sites       | data-at-rest </br> data-in-use | 不要|
 |OneDrive for Business アカウント| アカウントまたは配布グループ |data-at-rest </br> data-in-use|不要|
-|Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  いいえ       |
+|Teams チャットおよびチャネル メッセージ     | アカウントまたは配布グループ |data-in-motion </br> data-in-use |  不要       |
 |Microsoft Defender for Cloud Apps   | クラウド アプリ インスタンス       |data-at-rest         | - [Microsoft 以外のクラウド アプリにデータ損失防止ポリシーを使用する](dlp-use-policies-non-microsoft-cloud-apps.md#use-data-loss-prevention-policies-for-non-microsoft-cloud-apps)        |
 |デバイス  |ユーザーまたはグループ         |data-at-rest </br>  data-in-use </br>  data-in-motion         |- [エンドポイントのデータ損失防止について学習する](endpoint-dlp-learn-about.md) </br>- [エンドポイントデータ損失防止の概要](endpoint-dlp-getting-started.md) </br>- [Information Protectionのデバイス プロキシとインターネット接続の設定を構成する](device-onboarding-configure-proxy.md#configure-device-proxy-and-internet-connection-settings-for-information-protection) |
 |オンプレミス リポジトリ (ファイル共有と SharePoint)    |リポジトリ         | data-at-rest         | - [データ損失防止のオンプレミス スキャナーについて説明します](dlp-on-premises-scanner-learn.md) </br> - [データ損失防止のオンプレミス スキャナーの概要](dlp-on-premises-scanner-get-started.md#get-started-with-the-data-loss-prevention-on-premises-scanner)         |
-|PowerBI| ワークスペース | data-in-use | 不要|
+|Power BI| ワークスペース | data-in-use | 不要|
 
 Exchange に特定の配布グループを含めるように選択した場合、DLP ポリシーはそのグループのメンバーにのみ適用されます。 同様に、配布グループを除外すると、その配布グループのすべてのメンバーがポリシー評価から除外されます。 ポリシーを配布リストのメンバー、動的配布グループ、セキュリティ グループの範囲にすることができます。 DLP ポリシーには、このような追加および除外を 50 個まで含めることができます。
 
@@ -127,17 +127,20 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
 
 |場所| コンテンツは SIT で定義できます| コンテンツは秘密度ラベルを定義できます| コンテンツは保持ラベルで定義できます|
 |---------|---------|---------|---------|
-|Exchange 電子メール をオンラインで送信する|はい| はい| 不要|
+|Exchange 電子メール をオンラインで送信する|はい| はい| いいえ|
 |SharePoint オンライン サイト| はい| はい| はい|
 |OneDrive for Business アカウント| はい| はい| はい|
-|Teams チャットメッセージとチャネル メッセージ | はい| いいえ| いいえ|
+|Teams チャットメッセージとチャネル メッセージ | はい| 不要| 不要|
 |デバイス |はい | はい|  不要|
 |Microsoft Defender for Cloud Apps | はい| はい| はい|
-|オンプレミス リポジトリ| はい| はい| 不要|
-|PowerBI|はい | はい| 不要|
+|オンプレミスのリポジトリ| はい| はい| いいえ|
+|Power BI|はい | はい| 不要|
 
 > [!NOTE]
-> DLP は、電子メールと添付ファイルの秘密度ラベルの検出をサポートしています。DLP [ポリシーの条件として秘密度ラベルを使用します](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies)。
+> DLP では、機密性の高いドキュメントを検出する条件としてトレーニング可能な分類子を使用する (プレビュー段階で) サポートされます。 コンテンツは、Exchange Online、Sharepoint Online サイト、OneDrive for Business アカウント、Teams チャットとチャネル、およびデバイスのトレーニング可能な分類子によって定義できます。 詳細については、「 [トレーニング可能な分類子](classifier-learn-about.md)」を参照してください。
+
+> [!NOTE]
+> DLP では、電子メールと添付ファイルの秘密度ラベルの検出がサポートされています。 詳細については、「 [DLP ポリシーの条件として秘密度ラベルを使用する](dlp-sensitivity-label-as-condition.md#use-sensitivity-labels-as-conditions-in-dlp-policies)」を参照してください。
 
 ## <a name="rules"></a>ルール
 
@@ -154,7 +157,7 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
 - 一致した場合にポリシーをトリガーする [**条件**](#conditions)
 - 条件の [**例外**](#exceptions)
 - ポリシーがトリガーされたときに実行する [**アクション**](#actions)
-- ポリシーをトリガーする操作をユーザーに通知し、組織が機密情報の処理方法を教育するのに役立つ [**ユーザー通知**](#user-notifications-and-policy-tips)
+- ポリシーをトリガーする操作を行うときにユーザーに [**通知するユーザー通知**](#user-notifications-and-policy-tips)と、組織が機密情報の扱いを求める方法を教育するのに役立ちます。
 - 管理者が構成した場合 [**のユーザー の上書き**](#user-overrides)、ユーザーがブロックアクションを選択的にオーバーライドできるようにする
 - ルールの一致が発生したときに管理者やその他の主要な利害関係者に通知する [**インシデント レポート**](#incident-reports)
 - ルールの評価の優先度を定義し、さらにルールとポリシーの処理を停止できる [**追加オプション**](#additional-options)。
@@ -165,7 +168,7 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
 
 #### <a name="hosted-service-workloads"></a>ホストされたサービス ワークロード
 
-ホストされるサービス ワークロード (Exchange Online、SharePoint Online、OneDrive for Businessなど) の場合、各ルールには、作成された順序で優先順位が割り当てられます。 つまり、最初に作成されたルールには優先順位が優先され、2 番目に作成されたルールには 2 番目の優先度が設定されます。 
+ホストされるサービス ワークロード (Exchange Online、SharePoint Online、OneDrive for Businessなど) の場合、各ルールには、作成された順序で優先順位が割り当てられます。 つまり、最初に作成されたルールには優先順位が優先され、2 番目に作成されたルールには 2 番目の優先度が設定されます。
   
 ![優先度順のルール](../media/dlp-rules-in-priority-order.png)
 
@@ -173,7 +176,7 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
   
 - ルール 1: ユーザーに通知のみを行う
 - ルール 2: ユーザーに通知する、アクセスを制限する、ユーザーによる上書きを許可する
-- *ルール 3: ユーザーに通知する、アクセスを制限する、ユーザーによる上書きを許可しない*
+- *規則 3: ユーザーに通知し、アクセスを制限し、ユーザーのオーバーライドを許可しない*
 - 規則 4: アクセスを制限する
 
 ルール 1、2、および 4 は評価されますが、適用されません。 この例では、最も制限の厳しい規則のみが適用されている場合でも、すべてのルールの一致が監査ログに記録され、DLP レポートに表示されます。
@@ -190,18 +193,18 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
 
 エンドポイント上のファイルが複数の DLP ポリシーと一致する場合、 [エンドポイント アクティビティ](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on) に対して最も制限の厳しい適用が有効になっている最初のルールは、コンテンツに適用されます。 たとえば、コンテンツが次のすべての規則と一致する場合、ルール 2 は最も制限が厳しいため、他のルールよりも優先されます。
 
-- 規則 1: すべてのアクティビティのみを監査する 
+- 規則 1: すべてのアクティビティのみを監査する
 - *規則 2: すべてのアクティビティをブロックする*
 - ルール 3: エンド ユーザーがオーバーライドするオプションを使用してすべてのアクティビティをブロックする
 
 次の例では、ルール 1 は最も制限が厳しいため、他の一致するルールよりも優先されます。
 
-- *規則 1: アクティビティをブロックし、ユーザーのオーバーライドを許可しない*
+- *ルール 1: アクティビティをブロックし、ユーザーのオーバーライドを許可しない*
 - ルール 2: アクティビティをブロックし、ユーザーのオーバーライドを許可する
 - 規則 3: すべてのアクティビティのみを監査する
 - 規則 4: 適用なし
 
-その他のすべてのルールは評価されますが、それらのアクションは適用されません。 監査ログには、ファイルに適用される最も制限の厳しい規則が表示されます。 一致するルールが複数あり、同じ制限が適用されている場合は、ポリシーとルールの優先順位によって、ファイルに適用されるルールが制御されます。
+他のすべてのルールは評価されますが、そのアクションは適用されません。 監査ログには、ファイルに適用される最も制限の厳しい規則が表示されます。 一致するルールが複数あり、同じように制限が厳しい場合は、ポリシーとルールの優先順位によって、ファイルに適用されるルールが制御されます。
 
 ### <a name="conditions"></a>条件
 
@@ -217,12 +220,13 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
 - [機密情報の種類](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 - [秘密度ラベル](sensitivity-labels.md)
 - [保持ラベル](retention.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+- [トレーニング可能な分類子](classifier-learn-about.md) (プレビュー段階) 
 
-ポリシーを適用する [場所](#location-support-for-how-content-can-be-defined) によって異なります。 
+ポリシーを適用する [場所](#location-support-for-how-content-can-be-defined) によって異なります。
 
-このルールでは、選択した **秘密度ラベル** と **保持ラベル** の存在のみが検索されます。 
+このルールでは、選択した **秘密度ラベル** と **保持ラベル** の存在のみが検索されます。
 
-SIT には事前に定義された [**信頼レベル**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) があり、必要に応じて変更できます。 詳細については、「 [信頼度レベルの詳細」を](sensitive-information-type-learn-about.md#more-on-confidence-levels)参照してください。 
+SIT には事前に定義された [**信頼レベル**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) があり、必要に応じて変更できます。 詳細については、「 [信頼度レベルの詳細」を](sensitive-information-type-learn-about.md#more-on-confidence-levels)参照してください。
 
 > [!IMPORTANT]
 > SIT には、最大一意のインスタンス数パラメーターを定義する 2 つの異なる方法があります。 詳細については、「[SIT のインスタンス数のサポート値](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)」を参照してください。
@@ -413,7 +417,7 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 #### <a name="devices-actions"></a>デバイスのアクション
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (プレビュー)ユーザーが Windows デバイス上の Microsoft Edge ブラウザーで機密性の高い Web サイトにアクセスした場合に、アクティビティを監査または制限します。 詳細については、「[シナリオ 6 機密サービス ドメイン (プレビュー) でのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)」を参照してください。
+- (プレビュー)ユーザーが Windows デバイス上の Microsoft Edge ブラウザーで機密性の高い Web サイトにアクセスする場合に、アクティビティを監査または制限します。 詳細については、「[シナリオ 6 機密サービス ドメイン (プレビュー) でのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)」を参照してください。
 - Windows デバイス上のアクティビティを監査または制限する
 
 使用 `Audit or restrict activities on Windows devices`するには、 **DLP 設定** と、それらを使用するポリシーでオプションを構成する必要があります。 詳細については、「 [制限付きアプリとアプリ グループ](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 」を参照してください。
@@ -650,8 +654,8 @@ Here's what a policy tip looks like in a OneDrive for Business account.
 |---------|---------|---------|---------|---------|
 |- **コンテンツは Microsoft 365 から共有されます** </br>- **組織外のユーザーと**     |アクションが構成されていない         |- **ユーザー通知** が **[オン]** に設定されている </br>- **ポリシー ヒントが選択Office 365サービスのユーザーに通知** する </br>- **コンテンツを送信、共有、または最後に変更したユーザーに通知する**         |- **ルール一致が発生したときに管理者にアラートを送信** する </br>- **アクティビティがルールセットに一致するたびにアラートを送信****する** </br>- **電子メール インシデント レポートを使用して、ポリシー一致が発生したときに [****オン]** に設定されたときに通知する         |- 通知は、ファイルが外部ユーザーと共有され、外部ユーザーがファイルにアクセスした場合にのみ送信されます。  |
 |- **コンテンツは Microsoft 365 から共有されます** </br>- **組織内のユーザーとのみ**        | アクションが構成されていない         |-  **ユーザー通知** が **[オン]** に設定されている   </br>- **ポリシー ヒントが選択Office 365サービスのユーザーに通知** する  </br>- **コンテンツを送信、共有、または最後に変更したユーザーに通知する**    |  - **ルール一致が発生したときに管理者にアラートを送信** する </br>- **アクティビティがルールと一致するたびにアラートを送信する** </br>- **電子メール インシデント レポートを使用して、ポリシー一致が発生したときに [****オン]** に設定されたときに通知する       |- ファイルのアップロード時に通知が送信される |
-|- **コンテンツは Microsoft 365 から共有されます** </br>- **組織外のユーザーと**    | - **Microsoft 365 の場所でコンテンツへのアクセスを制限または暗号化** するが選択されている </br>- **ユーザーが電子メールを受信したり、共有 SharePoint、OndeDrive、Teams ファイルにアクセスしたりできないようにする** </br>- **[組織外のユーザーのみをブロックする** ] が選択されている          |- **ユーザー通知** が **[オン]** に設定されている </br>- **ポリシー ヒントが選択Office 365サービスのユーザーに通知** する </br>- **コンテンツを送信、共有、または最後に変更したユーザーに通知する**  |  - **ルール一致が発生したときに管理者にアラートを送信** する </br>- **アクティビティがルールと一致するたびにアラートを送信する** </br>- **電子メール インシデント レポートを使用して、ポリシー一致が発生したときに [****オン]** に設定されたときに通知する             | - 機密ファイルへのアクセスは、アップロードされるとすぐにブロックされます </br>- コンテンツが Microsoft 365 から組織外のユーザーと共有されたときに送信される通知         |
-|- **コンテンツは Microsoft 365 から共有されます** </br>- **組織外のユーザーと** |  - **Microsoft 365 の場所でコンテンツへのアクセスを制限または暗号化** するが選択されている </br>- **ユーザーが電子メールを受信したり、共有 SharePoint、OndeDrive、Teams ファイルにアクセスしたりできないようにする** </br>- **[すべてのユーザーをブロック]** が選択されている        | - **ユーザー通知** が **[オン]** に設定されている </br>- **ポリシー ヒントが選択Office 365サービスのユーザーに通知** する </br>- **コンテンツを送信、共有、または最後に変更したユーザーに通知する**         | - **ルール一致が発生したときに管理者にアラートを送信** する </br>- **アクティビティがルールと一致するたびにアラートを送信する** </br>- **電子メール インシデント レポートを使用して、ポリシー一致が発生したときに [****オン]** に設定されたときに通知する        |通知は、ファイルが外部ユーザーと共有され、外部ユーザーがそのファイルにアクセスするときに送信されます。         |
+|- **コンテンツは Microsoft 365 から共有されます** </br>- **組織外のユーザーと**    | - **Microsoft 365 の場所でコンテンツへのアクセスを制限または暗号化** するが選択されている </br>- **ユーザーが電子メールを受信したり、共有 SharePoint、OneDrive、Teams ファイルにアクセスしたりできないようにする** </br>- **[組織外のユーザーのみをブロックする** ] が選択されている          |- **ユーザー通知** が **[オン]** に設定されている </br>- **ポリシー ヒントが選択Office 365サービスのユーザーに通知** する </br>- **コンテンツを送信、共有、または最後に変更したユーザーに通知する**  |  - **ルール一致が発生したときに管理者にアラートを送信** する </br>- **アクティビティがルールと一致するたびにアラートを送信する** </br>- **電子メール インシデント レポートを使用して、ポリシー一致が発生したときに [****オン]** に設定されたときに通知する             | - 機密ファイルへのアクセスは、アップロードされるとすぐにブロックされます </br>- コンテンツが Microsoft 365 から組織外のユーザーと共有されたときに送信される通知         |
+|- **コンテンツは Microsoft 365 から共有されます** </br>- **組織外のユーザーと** |  - **Microsoft 365 の場所でコンテンツへのアクセスを制限または暗号化** するが選択されている </br>- **ユーザーが電子メールを受信したり、共有 SharePoint、OneDrive、Teams ファイルにアクセスしたりできないようにする** </br>- **[すべてのユーザーをブロック]** が選択されている        | - **ユーザー通知** が **[オン]** に設定されている </br>- **ポリシー ヒントが選択Office 365サービスのユーザーに通知** する </br>- **コンテンツを送信、共有、または最後に変更したユーザーに通知する**         | - **ルール一致が発生したときに管理者にアラートを送信** する </br>- **アクティビティがルールと一致するたびにアラートを送信する** </br>- **電子メール インシデント レポートを使用して、ポリシー一致が発生したときに [****オン]** に設定されたときに通知する        |通知は、ファイルが外部ユーザーと共有され、外部ユーザーがそのファイルにアクセスするときに送信されます。         |
 |- **コンテンツは Microsoft 365 から共有されます** </br>- **組織外のユーザーと**     |- **Microsoft 365 の場所でコンテンツへのアクセスを制限または暗号化** するが選択されている </br>- **[リンクを持つすべてのユーザー] オプションを使用してコンテンツへのアクセス権を付与されたユーザーのみをブロック** します。         |  - **ユーザー通知** が **[オン]** に設定されている </br>- **ポリシー ヒントが選択Office 365サービスのユーザーに通知** します。  </br>- **コンテンツを送信、共有、または最後に変更したユーザーに通知する**     |- **ルール一致が発生したときに管理者にアラートを送信** する   </br>- **アクティビティがルールと一致するたびにアラートを送信する** </br>- **電子メール インシデント レポートを使用して、ポリシー一致が発生したときに [****オン]** に設定されたときに通知する       |ファイルがアップロードされるとすぐに通知が送信されます         |
 
 

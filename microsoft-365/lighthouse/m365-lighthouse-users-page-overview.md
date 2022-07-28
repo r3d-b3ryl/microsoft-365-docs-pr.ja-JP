@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、[ユーザー] ページについて説明します。
-ms.openlocfilehash: 05c889167cc7359900c0dea3396e657c0aa93fba
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 0c4a0fd7f715fec45cbb359ef21b448941451a0a
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717562"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056715"
 ---
 # <a name="overview-of-the-users-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [ユーザー] ページの概要 
 
-Microsoft 365 Lighthouseでは、左側のナビゲーション ウィンドウの [ユーザー] の下にあるリンクのいずれかを選択して、顧客テナント アカウント間で **ユーザー** を管理できます。 [ユーザー] ページでは、ユーザーを検索し、ユーザー アカウントのセキュリティ状態を評価して操作できます。 リスクの高いユーザーと、多要素認証とセルフサービスパスワードリセットの状態に関する分析情報を表示することもできます。  
+Microsoft 365 Lighthouseでは、左側のナビゲーション ウィンドウの [ユーザー] の下にあるリンクのいずれかを選択して、顧客テナント アカウント間で **ユーザー** を管理できます。 [ユーザー] ページから、ユーザーを検索し、ユーザー アカウントのセキュリティ状態を評価して操作できます。 リスクの高いユーザーと、多要素認証とセルフサービスパスワードリセットの状態に関する分析情報を表示することもできます。  
   
 ## <a name="search-users-tab"></a>[ユーザーの検索] タブ  
   

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、デバイス コンプライアンス ポリシーの設定を比較する方法について説明します。
-ms.openlocfilehash: 0a0c5127a86832637a16449e06c3df70299b49a3
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9640fcb1438de70c6283c177e64c12fb6da57349
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822903"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056594"
 ---
 # <a name="compare-device-compliance-policy-settings-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseのデバイス コンプライアンス ポリシー設定を比較する
 
@@ -34,7 +34,7 @@ Microsoft 365 Lighthouseでは、テナント全体のコンプライアンス �
 
 ## <a name="compare-policy-settings"></a>ポリシー設定を比較する
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **デバイス コンプライアンス**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **デバイスのコンプライアンス**] を選択します。
 
 2. **[ポリシー]** タブを選択します。
 
@@ -51,13 +51,13 @@ Microsoft 365 Lighthouseでは、テナント全体のコンプライアンス �
 
 ## <a name="configure-a-policy-setting"></a>ポリシー設定を構成する
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **デバイス コンプライアンス**] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[ **デバイス** > **デバイスのコンプライアンス**] を選択します。
 
 2. **[ポリシー]** タブを選択します。
 
-3. 一覧からポリシー名を選択します。
+3. ポリシーの一覧から、表示するポリシーを選択します。
 
-4. [ポリシーの詳細] ウィンドウ **で、[Microsoft エンドポイント マネージャーでこのポリシーを表示する**] を選択します。
+4. ポリシーの詳細ウィンドウで、[**Microsoft エンドポイント マネージャーでこのポリシーを表示する**] を選択します。
 
 5. MEM で、必要に応じてポリシー設定を編集します。
 

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ベースラインを使用して標準テナント構成をデプロイする方法について説明します。
-ms.openlocfilehash: 064968cd75804167493e696f08c3bec764598c94
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 9261be531db428c3d081e87c6717dfc8710a5026
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749157"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056638"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Microsoft 365 Lighthouseベースラインを使用して標準テナント構成をデプロイする方法の概要 
 
@@ -32,7 +32,7 @@ Microsoft 365 Lighthouseベースラインは、複数の顧客テナント間�
 
 ## <a name="lighthouse-baseline"></a>ライトハウスベースライン
 
-Lighthouse ベースライン構成は、すべてのマネージド テナントがセキュリティで保護され、準拠していることを確認するように設計されています。 左側のナビゲーション ウィンドウから **[基準計画** ] を選択して、すべてのテナントに適用される既定のベースラインを表示します。  既定のベースラインに含まれるデプロイ手順を表示するには、[ **基準計画の表示** ] を選択して [ **既定のベースライン]** ページを開きます。 デプロイの詳細とユーザーへの影響を表示するには、デプロイ手順のいずれかを選択します。
+Lighthouse ベースライン構成は、すべてのマネージド テナントがセキュリティで保護され、準拠していることを確認するように設計されています。 左側のナビゲーション ウィンドウで [ **基準計画** ] を選択して、すべてのテナントに適用される既定のベースラインを表示します。 既定のベースラインに含まれるデプロイ手順を表示するには、[ **基準計画の表示** ] を選択して [ **既定のベースライン]** ページを開きます。 デプロイの詳細とユーザーへの影響を表示するには、デプロイ手順のいずれかを選択します。
 
 :::image type="content" source="../media/m365-lighthouse-deploy-baselines/default-baseline-page.png" alt-text="[既定のベースライン] ページのスクリーンショット。":::
 

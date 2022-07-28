@@ -14,19 +14,19 @@ search.appverid:
 - MET150
 ms.collection: Strat_O365_Enterprise
 description: '概要: Microsoft Office 365のデータ回復性について理解します。'
-ms.openlocfilehash: 66899a337e9349a78178df67aa83e44b580c7148
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f6967905c97f83fda2f73fc61ddf96a4a02fbec8
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629381"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055990"
 ---
 # <a name="service-encryption"></a>サービス暗号化
 
 ボリューム レベルの暗号化を使用するだけでなく、Exchange Online、Microsoft Teams、SharePoint Online、OneDrive for Businessもサービス暗号化を使用して顧客データを暗号化します。 サービス暗号化では、次の 2 つのキー管理オプションを使用できます。
 
 ## <a name="microsoft-managed-keys"></a>Microsoft が管理するキー
-Microsoft は、サービス暗号化のルート キーを含むすべての暗号化キーを管理します。 現在、このオプションは、Exchange Online、SharePoint Online、OneDrive for Businessで既定で有効になっています。 Microsoft マネージド キーは、カスタマー キーを使用してオンボードすることにした場合を除き、既定のサービス暗号化を提供します。 後日、データ消去パスに従わずにカスタマー キーの使用を停止することにした場合、データは Microsoft マネージド キーを使用して暗号化されたままになります。 データは、少なくともこの既定のレベルで常に暗号化されます。 
+Microsoft は、サービス暗号化のルート キーを含むすべての暗号化キーを管理します。 現在、このオプションは、Exchange Online、SharePoint Online、OneDrive for Businessで既定で有効になっています。 Microsoft マネージド キーは、カスタマー キーを使用してオンボードすることにした場合を除き、既定のサービス暗号化を提供します。 後日、データ消去パスに従わずにカスタマー キーの使用を停止することにした場合、データは Microsoft マネージド キーを使用して暗号化されたままになります。 データは、少なくともこの既定のレベルで常に暗号化されます。
 
 ## <a name="customer-key"></a>顧客キー
 サービス暗号化で使用されるルート キーを指定し、Azure Key Vaultを使用してこれらのキーを管理します。 Microsoft は他のすべてのキーを管理します。 このオプションは Customer Key と呼ばれ、現在はExchange Online、SharePoint Online、およびOneDrive for Businessで使用できます。 (以前は BYOK を使用した高度な暗号化と呼ばれた。 「元のお知らせ[のOffice 365顧客の透明性と制御の強化](https://www.microsoft.com/en-us/microsoft-365/blog/2015/04/21/enhancing-transparency-and-control-for-office-365-customers/)」を参照してください)。

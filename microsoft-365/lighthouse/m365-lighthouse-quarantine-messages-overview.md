@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、検疫されたメッセージを管理する方法について説明します。
-ms.openlocfilehash: 3a295802ba806c48f01f6f64c8b148169fe28102
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: fcf9978ccbc72e1913e9015a8de40aa6da498394
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574365"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67055902"
 ---
 # <a name="overview-of-quarantined-messages-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの検疫済みメッセージの概要
 
 Microsoft 365 Lighthouseでは、すべての顧客テナントで検疫された電子メールに関する分析情報と情報を確認できます。 1 つのビューから、検疫されたメールをトリアージし、適切なアクションを実行できます。 このデータは、テナントが Exchange Online Protection (EOP) と Microsoft Defender for Office365 プラン 1 (MDO) を実装している場合に使用できます。
 
-左側のナビゲーションまたは **ホーム** ページから **[データ保護**] を選択すると、情報にアクセスできます。
+情報にアクセスするには、左側のナビゲーション ウィンドウで **[ホーム** ] を選択するか、左側のナビゲーション ウィンドウで **[データ保護** ] を選択して [検疫済みメッセージ] ページを開きます。
 
 ## <a name="quarantined-messages-page"></a>[検疫済みメッセージ] ページ
 
@@ -44,19 +44,19 @@ Microsoft 365 Lighthouseでは、すべての顧客テナントで検疫され�
 
 データには過去 30 日間が反映されます。ただし、 **時間範囲** フィルターを使用してビューを変更できます。
 
-**検疫****理由** グラフには、Exchange Online Protection (EOP) ポリシーと Microsoft Defender for Office365 プラン 1 (MDO) ポリシーの種類別の検疫カウントの内訳が含まれています。 これらの型には、次のものが含まれます。
+**[検疫の理由]** セクションには、Exchange Online Protection (EOP) ポリシーと Microsoft Defender for Office365 プラン 1 (MDO) ポリシーの種類別の検疫カウントの内訳が含まれています。 これらの型には、次のものが含まれます。
 
 - マルウェア
 - フィッシング詐欺
 - 高信頼フィッシング
 - スパム
-- 一括メール
+- 一括Email
 
 検疫リストは、テナント別の検疫情報の並べ替え可能なビューです。 このビュー内では、次の情報でフィルター処理できます。
 
-- **検疫の理由:** Any、Malware、フィッシング、高信頼フィッシング、スパム、一括メール
+- **検疫の理由:** Any、Malware、フィッシング、高信頼フィッシング、スパム、一括Email
 - **ポリシーの種類:** Any、マルウェア対策、フィッシング詐欺対策、スパム対策、安全な添付ファイル、トランスポート ルール、不明
-- **有効期限が切れる前:** Any, Today, within 2 days, within 7 days
+- **有効期限が切れようとしています。** Any, Today, within 2 days, within 7 days
 
 また、テナント、メッセージの状態、有効期限に基づいて列を調整したり、データを並べ替えたりすることもできます。
 

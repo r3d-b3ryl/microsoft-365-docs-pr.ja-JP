@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、テナント リストを管理する方法について説明します。
-ms.openlocfilehash: deba0800ee422982e7379d7797d23a977602bbb9
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f8d1c47dc5fc349cd78b7a5f364b80244900554b
+ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839779"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67056529"
 ---
 # <a name="manage-your-tenant-list-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでテナント リストを管理する
 
 Microsoft 365 Lighthouseでテナント リストを管理するために、カスタム タグをテナントに適用できます。 これらのタグは、テナントを整理するために使用でき、関連するテナント セットで使用可能な既存のビューと分析情報をフィルター処理するのにも役立ちます。 タグは、[テナント] ページから管理できます。 作成して割り当てると、タグに基づいてテナント、ユーザー、デバイス、脅威管理、およびWindows 365 ページ内のデータをフィルター処理できます。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 テナント タグを管理するには、次の手順を実行する必要があります。
 
@@ -46,7 +46,7 @@ Microsoft 365 Lighthouseでテナント リストを管理するために、カ�
 
 2. [ **タグの管理**] を選択します。
 
-3. [ **タグの管理** ] ウィンドウで、[ **タグの追加**] を選択します。
+3. [ **タグの管理** ] ウィンドウで、[ **タグの作成**] を選択します。
 
 4. 名前と説明を入力します。
 
@@ -87,7 +87,9 @@ Microsoft 365 Lighthouseでテナント リストを管理するために、カ�
 
 3. [ **タグの管理** ] ウィンドウで、削除するタグを選択します。
 
-4. [ **タグの削除] を選択します**。
+4. **[削除]** を選択します。
+
+5. 確認ダイアログで、[ **確認**] を選択します。
 
 ## <a name="remove-a-tag"></a>タグを削除する
 
