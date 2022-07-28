@@ -1,26 +1,24 @@
-- name: Microsoft Purview のリスク & コンプライアンス ソリューション
+- name: Microsoft 365 コンプライアンス
   href: index.yml
-- name: リスク & コンプライアンス ソリューションの詳細
-  href: purview-compliance.md
-- name: リスク & コンプライアンス ソリューションの新機能
+- name: Microsoft 365 コンプライアンス センターの新機能
   href: whats-new.md
 - name: コンプライアンス試用版
   items:
-    - name: Microsoft Purview の無料試用について
+    - name: Microsoft 365 コンプライアンスの無料試用版について
       href: compliance-easy-trials.md
-    - name: Microsoft Purview コンプライアンス マネージャー プレミアム評価の無料試用版について
+    - name: Microsoft コンプライアンス マネージャー プレミアム評価の無料試用版について
       href: compliance-easy-trials-compliance-manager-assessments.md
-- name: 作業の開始
+- name: 概要
   items:
-    - name: Microsoft Purview でコンプライアンスを開始するためのクイック タスク
+    - name: コンプライアンスを開始するためのクイック タスク
       href: compliance-quick-tasks.md
-    - name: Microsoft Purview ソリューション カタログ
+    - name: Microsoft 365 ソリューション カタログ
       href: microsoft-365-solution-catalog.md
-    - name: Microsoft Purview コンプライアンス ポータル
+    - name: Microsoft 365 コンプライアンス センター
       href: microsoft-365-compliance-center.md
-    - name: Microsoft Purview コンプライアンス ポータルのアクセス許可
+    - name: Microsoft 365 コンプライアンス センターでのアクセス許可
       href: microsoft-365-compliance-center-permissions.md
-    - name: Microsoft Purview コンプライアンス ポータルへのユーザーのリダイレクト
+    - name: Microsoft 365 コンプライアンス センターにユーザーをリダイレクトする
       href: microsoft-365-compliance-center-redirection.md
     - name: 無料の Azure Active Directory Domain Services サブスクリプションを使用する
       href: use-your-free-azure-ad-subscription-in-office-365.md
@@ -28,199 +26,9 @@
       href: plan-for-security-and-compliance.md
     - name: コンプライアンス拡張性
       href: compliance-extensibility.md
-- name: クロスソリューション機能
-  items:
-    - name: Windows 10 および Windows 11 デバイスをオンボードする
-      items:
-        - name: Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要
-          href: device-onboarding-overview.md
-        - name: グループ ポリシーを使用した Windows 10 および Windows 11 デバイスのオンボード
-          href: device-onboarding-gp.md
-        - name: モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード
-          href: device-onboarding-mdm.md
-        - name: Configuration Manager を使用した Windows 10 および Windows 11 デバイスのオンボード
-          href: device-onboarding-sccm.md
-        - name: ローカル スクリプトを使用した Windows 10 および Windows 11 デバイスのオンボード
-          href: device-onboarding-script.md
-        - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
-          href: device-onboarding-vdi.md
-    - name: macOS デバイスをオンボードする
-      items:
-        - name: Microsoft 365 への macOS デバイスのオンボードに関する概要
-          href: device-onboarding-macos-overview.md
-        - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
-          href: device-onboarding-offboarding-macos-intune.md
-        - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
-          href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
-          href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
-          href: device-onboarding-offboarding-macos-jamfpro-mde.md
-- name: サード パーティのデータ用のコネクタを管理する
-  items:
-    - name: サード パーティ データのコネクタの詳細
-      href: archiving-third-party-data.md
-    - name: Microsoft データ コネクタ
-      items:
-        - name: Bloomberg メッセージ
-          href: archive-bloomberg-message-data.md
-        - name: Epic EHR 医療データ (プレビュー)
-          href: import-epic-data.md
-        - name: Facebook Business (プレビュー)
-          href: archive-facebook-data-with-sample-connector.md
-        - name: 包括的 EHR 医療データ (プレビュー)
-          href: import-healthcare-data.md
-        - name: 人事データ
-          href: import-hr-data.md
-        - name: IceChat
-          href: archive-icechat-data.md
-        - name: Instant Bloomberg
-          href: archive-instant-bloomberg-data.md
-        - name: LinkedIn
-          href: archive-linkedin-data.md
-        - name: 物理的 バッジデータ (プレビュー)
-          href: import-physical-badging-data.md
-        - name: Slack 電子情報開示 (プレビュー)
-          href: archive-slack-data-microsoft.md
-        - name: Twitter (プレビュー)
-          href: archive-twitter-data-with-sample-connector.md
-    - name: Veritas データ コネクタ
-      items:
-        - name: CellTrust
-          href: archive-celltrust-data.md
-        - name: MS SQL 上の Cisco Jabber
-          href: archive-ciscojabberonmssql-data.md
-        - name: Oracle 上の Cisco Jabber
-          href: archive-ciscojabberonoracle-data.md
-        - name: PostgreSQL 上の Cisco Jabber
-          href: archive-ciscojabberonpostgresql-data.md
-        - name: EML
-          href: archive-eml-data.md
-        - name: FX 接続
-          href: archive-fxconnect-data.md
-        - name: Jive
-          href: archive-jive-data.md
-        - name: MS SQL Database
-          href: archive-mssqldatabaseimporter-data.md
-        - name: ピボット
-          href: archive-pivot-data.md
-        - name: Redtail Speak
-          href: archive-redtailspeak-data.md
-        - name: Reuters Dealing
-          href: archive-reutersdealing-data.md
-        - name: Reuters Eikon
-          href: archive-reuterseikon-data.md
-        - name: Reuters FX
-          href: archive-reutersfx-data.md
-        - name: RingCentral
-          href: archive-ringcentral-data.md
-        - name: Salesforce Chatter
-          href: archive-salesforcechatter-data.md
-        - name: ServiceNow
-          href: archive-servicenow-data.md
-        - name: Skype for Business
-          href: archive-skypeforbusiness-data.md
-        - name: Slack eDiscovery
-          href: archive-slack-data.md
-        - name: Symphony
-          href: archive-symphony-data.md
-        - name: 区切られたテキスト
-          href: archive-text-delimited-data.md
-        - name: Twitter (プレビュー)
-          href: archive-veritas-twitter-data.md
-        - name: Webex チーム
-          href: archive-webexteams-data.md
-        - name: Web ページ
-          href: archive-webpagecapture-data.md
-        - name: Facebookからの職場
-          href: archive-workplacefromfacebook-data.md
-        - name: XIP
-          href: archive-xip-data.md
-        - name: XSLT/XML
-          href: archive-xslt-xml-data.md
-        - name: Yieldbroker
-          href: archive-yieldbroker-data.md
-        - name: YouTube
-          href: archive-youtube-data.md
-        - name: Zoom会議
-          href: archive-zoommeetings-data.md
-    - name: TeleMessage データコネクタ
-      items:
-        - name: Android Archiver
-          href: archive-android-archiver-data.md
-        - name: AT&T SMS/MMS Network Archiver
-          href: archive-att-network-archiver-data.md
-        - name: Bell SMS/MMS Network Archiver
-          href: archive-bell-network-data.md
-        - name: Enterprise Number Archiver
-          href: archive-enterprise-number-data.md
-        - name: O2 Telefonica SMS および Voice Network Archiver
-          href: archive-o2-network-data.md
-        - name: Rogers Network Archiver
-          href: archive-rogers-network-archiver-data.md
-        - name: Signal Archiver
-          href: archive-signal-archiver-data.md
-        - name: Telegram Archiver
-          href: archive-telegram-archiver-data.md
-        - name: TELUS ネットワーク
-          href: archive-telus-network-data.md
-        - name: Verizon SMS/MMS Network Archiver
-          href: archive-verizon-network-data.md
-        - name: WeChat Archiver
-          href: archive-wechat-data.md
-        - name: WhatsApp Archiver
-          href: archive-whatsapp-data.md
-    - name: 17a-4 データ コネクタ
-      items:
-        - name: BlackBerry DataParser
-          href: archive-17a-4-blackberry-data.md
-        - name: Bloomberg DataParser
-          href: archive-17a-4-bloomberg-data.md
-        - name: Cisco Jabber DataParser
-          href: archive-17a-4-cisco-jabber-data.md
-        - name: Cisco Webex DataParser
-          href: archive-17a-4-webex-teams-data.md
-        - name: FactSet DataParser
-          href: archive-17a-4-factset-data.md
-        - name: Fuze DataParser
-          href: archive-17a-4-fuze-data.md
-        - name: FX Connect DataParser
-          href: archive-17a-4-fxconnect-data.md
-        - name: ICE DataParser
-          href: archive-17a-4-ice-im-data.md
-        - name: InvestEdge DataParser
-          href: archive-17a-4-investedge-data.md
-        - name: LivePerson Conversational Cloud DataParser
-          href: archive-17a-4-liveperson-data.md
-        - name: Quip DataParser
-          href: archive-17a-4-quip-data.md
-        - name: Refinitiv Eikon Messenger DataParser
-          href: archive-17a-4-refinitiv-messenger-data.md
-        - name: ServiceNow DataParser
-          href: archive-17a-4-servicenow-data.md
-        - name: Skype for Business Server DataParser
-          href: archive-17a-4-skype-for-business-server-data.md
-        - name: Slack DataParser
-          href: archive-17a-4-slack-data.md
-        - name: SQL DataParser
-          href: archive-17a-4-sql-database-data.md
-        - name: Symphony DataParser
-          href: archive-17a-4-symphony-data.md
-        - name: Zoom DataParser
-          href: archive-17a-4-zoom-data.md
-    - name: CellTrust コネクタ
-      items:
-        - name: CellTrust SL2
-          href: archive-data-from-celltrustsl2.md
-    - name: パートナーと共同作業して、サード パーティのデータをアーカイブする
-      href: work-with-partner-to-archive-third-party-data.md
-    - name: サード パーティ データを検索する
-      href: use-content-search-to-search-third-party-data-that-was-imported.md
-    - name: データ コネクターの管理ログを表示する
-      href: data-connector-admin-logs.md
 - name: インサイダー リスクを管理する
   items:
-    - name: Microsoft Purview インサイダー リスク ソリューション
+    - name: Microsoft 365 インサイダー リスク ソリューション
       href: insider-risk-solution-overview.md
     - name: コミュニケーション コンプライアンス
       items:
@@ -238,11 +46,11 @@
           href: communication-compliance-policies.md
         - name: 通信コンプライアンスのアラートを調査して修復する
           href: communication-compliance-investigate-remediate.md
-        - name: 通信コンプライアンス レポートと監査の使用
+        - name: 通信コンプライアンス レポートと監査の詳細
           href: communication-compliance-reports-audits.md
-        - name: SIEM ソリューションのコミュニケーション コンプライアンスの使用
+        - name: SIEM ソリューションのコミュニケーション コンプライアンス
           href: communication-compliance-siem.md
-        - name: ケース スタディ - Contoso が不適切なテキスト ポリシーをすばやく構成する
+        - name: ケース スタディ - Contoso は不適切なコンテンツ ポリシーをすばやく構成します
           href: communication-compliance-case-study.md
     - name: インサイダー リスクの管理
       items:
@@ -297,7 +105,7 @@
         - name: 概要
           href: privileged-access-management-solution-overview.md
         - name: 特権アクセス管理の詳細
-          href: privileged-access-management.md
+          href: privileged-access-management-overview.md
         - name: 特権アクセス管理の使用を開始する
           href: privileged-access-management-configuration.md
     - name: ユーザーとデバイス アクセスの保護
@@ -308,9 +116,7 @@
   items:
     - name: データの把握、データの保護、データ損失の防止
       href: information-protection.md
-    - name: 情報保護ソリューションの展開
-      href: information-protection-solution.md
-    - name: データを保護するための既定のラベルとポリシー
+    - name: Microsoft Information Protection の既定のラベルとポリシー
       href: mip-easy-trials.md
     - name: 機密情報の種類
       items:
@@ -322,11 +128,11 @@
               href: sit-learn-about-exact-data-match-based-sits.md
             - name: ドキュメント フィンガープリンティング
               href: document-fingerprinting.md
-            - name: 名前付きエンティティの詳細
+            - name: 名前付きエンティティの詳細 (プレビュー)
               href: named-entities-learn.md
         - name: 機密情報の種類を使用開始
           items:
-            - name: カスタムの機密情報の種類を作成する - コンプライアンス センター
+            - name: 機密情報の種類を使用開始 - コンプライアンス センター
               href: create-a-custom-sensitive-information-type.md
             - name: 完全なデータ一致に基づく機密情報の種類の使用を開始する
               href: sit-get-started-exact-data-match-based-sits-overview.md
@@ -346,12 +152,8 @@
               href: customize-a-built-in-sensitive-information-type.md
             - name: 構成可能な一致を使用するために完全一致スキーマを変更する
               href: sit-modify-edm-schema-configurable-match.md
-            - name: Exact Data Match アクティビティの通知を作成する
+            - name: Exact Data Match アクティビティの通知を作成する (プレビュー)
               href: sit-edm-notifications-activities.md
-            - name: コンプライアンス センターでカスタムの機密情報の種類を管理する
-              href: sit-manage-custom-sits-compliance-center.md
-            - name: 機密情報の種類 REGEX バリデーターと追加チェック
-              href: sit-regex-validators-additional-checks.md
             - name: カスタムの機密情報の種類を作成する - PowerShell
               href: create-a-custom-sensitive-information-type-in-scc-powershell.md
             - name: カスタムの機密情報の種類を削除する - PowerShell
@@ -364,624 +166,16 @@
               href: sit-modify-keyword-dictionary.md
             - name: 正確なデータ一致スキーマを管理する
               href: sit-use-exact-data-manage-schema.md
-            - name: EDM 機密情報のソース テーブル ファイルを更新する
+            - name: 機密情報のソース テーブル ファイルを更新する
               href: sit-use-exact-data-refresh-data.md
-            - name: データ損失防止ポリシーで名前付きエンティティを使用する
+            - name: データ損失防止ポリシーで名前付きエンティティを使用する (プレビュー)
               href: named-entities-use.md
-            - name: 機密情報の種類の一般的な使用シナリオ
-              href: sit-common-scenarios.md
         - name: 機密情報の種類のリファレンス
           items:
-            - name: 全ての機密情報の種類のエンティティ定義
-              items:
-                - name: 機密情報の種類のエンティティ定義
-                  href: sensitive-information-type-entity-definitions.md
-                - name: ABA ルーティング番号
-                  href: sit-defn-aba-routing.md
-                - name: すべての氏名
-                  href: sit-defn-all-full-names.md
-                - name: すべての医療条項
-                  href: sit-defn-all-medical-terms-conditions.md
-                - name: すべての住所
-                  href: sit-defn-all-physical-addresses.md
-                - name: Amazon S3 クライアント シークレット アクセス キー
-                  href: sit-defn-amazon-s3-client-secret-access-key.md
-                - name: アルゼンチンの国民識別 (DNI) 番号
-                  href: sit-defn-argentina-national-identity-numbers.md
-                - name: アルゼンチンの一意の税金識別キー
-                  href: sit-defn-argentina-unique-tax-identification-key.md
-                - name: ASP.NET マシン キー
-                  href: sit-defn-asp-net-machine-key.md
-                - name: オーストラリアの銀行口座番号
-                  href: sit-defn-australia-bank-account-number.md
-                - name: オーストラリアの事業者番号
-                  href: sit-defn-australia-business-number.md
-                - name: オーストラリアの会社番号
-                  href: sit-defn-australia-company-number.md
-                - name: オーストラリアの運転免許証番号
-                  href: sit-defn-australia-drivers-license-number.md
-                - name: オーストラリアの医療口座番号
-                  href: sit-defn-australia-medical-account-number.md
-                - name: オーストラリアのパスポート番号
-                  href: sit-defn-australia-passport-number.md
-                - name: オーストラリアの物理アドレス
-                  href: sit-defn-australia-physical-addresses.md
-                - name: オーストラリアの納税者番号
-                  href: sit-defn-australia-tax-file-number.md
-                - name: オーストリアの運転免許証番号
-                  href: sit-defn-austria-drivers-license-number.md
-                - name: オーストリアの ID カード
-                  href: sit-defn-austria-identity-card.md
-                - name: オーストリアのパスポート番号
-                  href: sit-defn-austria-passport-number.md
-                - name: オーストリアの住所
-                  href: sit-defn-austria-physical-addresses.md
-                - name: オーストリアの社会保障番号
-                  href: sit-defn-austria-social-security-number.md
-                - name: オーストリアの納税者番号
-                  href: sit-defn-austria-tax-identification-number.md
-                - name: オーストリアの付加価値税
-                  href: sit-defn-austria-value-added-tax.md
-                - name: Azure AD クライアント アクセス トークン
-                  href: sit-defn-azure-ad-client-access-token.md
-                - name: Azure AD クライアント シークレット
-                  href: sit-defn-azure-ad-client-secret.md
-                - name: Azure AD のユーザー資格情報
-                  href: sit-defn-azure-ad-user-credentials.md
-                - name: Azure App Service 展開のパスワード
-                  href: sit-defn-azure-app-service-deployment-password.md
-                - name: Azure Batch の共有アクセス キー
-                  href: sit-defn-azure-batch-shared-access-key.md
-                - name: Azure Bot Framework の秘密鍵
-                  href: sit-defn-azure-bot-framework-secret-key.md
-                - name: Azure Bot サービス アプリ シークレット
-                  href: sit-defn-azure-bot-service-app-secret.md
-                - name: Azure Cognitive Search API キー
-                  href: sit-defn-azure-cognitive-search-api-key.md
-                - name: Azure Cognitive Service キー
-                  href: sit-defn-azure-cognitive-service-key.md
-                - name: Azure Container Registry のアクセス キー
-                  href: sit-defn-azure-container-registry-access-key.md
-                - name: Azure COSMOS DB アカウント アクセス キー
-                  href: sit-defn-azure-cosmos-db-account-access-key.md
-                - name: Azure Databricks の個人用アクセス トークン
-                  href: sit-defn-azure-databricks-personal-access-token.md
-                - name: Azure DevOps アプリ シークレット
-                  href: sit-defn-azure-devops-app-secret.md
-                - name: Azure DevOps 個人用アクセス トークン
-                  href: sit-defn-azure-devops-personal-access-token.md
-                - name: Azure DocumentDB の認証キー
-                  href: sit-defn-azure-document-db-auth-key.md
-                - name: Azure EventGrid アクセス キー
-                  href: sit-defn-azure-eventgrid-access-key.md
-                - name: Azure 関数マスター/ API キー
-                  href: sit-defn-azure-function-master-api-key.md
-                - name: Azure の IAAS データベース接続文字列と Azure SQL の接続文字列
-                  href: sit-defn-azure-iaas-database-connection-string-azure-sql-connection-string.md
-                - name: Azure の IoT 接続文字列
-                  href: sit-defn-azure-iot-connection-string.md
-                - name: Azure IoT の共有アクセス キー
-                  href: sit-defn-azure-iot-shared-access-key.md
-                - name: Azure ロジック アプリの共有アクセス署名
-                  href: sit-defn-azure-logic-app-shared-access-signature.md
-                - name: Azure Machine Learning の Web サービス API キー
-                  href: sit-defn-azure-machine-learning-web-service-api-key.md
-                - name: Azure Maps サブスクリプション キー
-                  href: sit-defn-azure-maps-subscription-key.md
-                - name: Azure の発行設定パスワード
-                  href: sit-defn-azure-publish-setting-password.md
-                - name: Azure Redis Cache の接続文字列
-                  href: sit-defn-azure-redis-cache-connection-string.md
-                - name: Azure Redis Cache の接続文字列パスワード
-                  href: sit-defn-azure-redis-cache-connection-string-password.md
-                - name: Azure の SAS
-                  href: sit-defn-azure-sas.md
-                - name: Azure Service Bus の接続文字列
-                  href: sit-defn-azure-service-bus-connection-string.md
-                - name: Azure Service Bus の共有アクセス署名
-                  href: sit-defn-azure-service-bus-shared-access-signature.md
-                - name: Azure 共有アクセス キー / Web フック トークン
-                  href: sit-defn-azure-shared-access-key-web-hook-token.md
-                - name: Azure SignalR アクセス キー
-                  href: sit-defn-azure-signalr-access-key.md
-                - name: Azure SQL 接続文字列
-                  href: sit-defn-azure-sql-connection-string.md
-                - name: Azure Storage アカウント アクセス キー
-                  href: sit-defn-azure-storage-account-access-key.md
-                - name: Azure Storage のアカウント キー
-                  href: sit-defn-azure-storage-account-key.md
-                - name: Azure Storage のアカウント キー (一般)
-                  href: sit-defn-azure-storage-account-key-generic.md
-                - name: Azure Storage アカウントの共有アクセス署名
-                  href: sit-defn-azure-storage-account-shared-access-signature.md
-                - name: Azure Storage アカウントの高リスク リソースの共有アクセス署名
-                  href: sit-defn-azure-storage-account-shared-access-signature-high-risk-resources.md
-                - name: Azure サブスクリプション管理証明書
-                  href: sit-defn-azure-subscription-management-certificate.md
-                - name: ベルギーの運転免許証番号
-                  href: sit-defn-belgium-drivers-license-number.md
-                - name: ベルギーの国民番号
-                  href: sit-defn-belgium-national-number.md
-                - name: ベルギーのパスポート番号
-                  href: sit-defn-belgium-passport-number.md
-                - name: ベルギーの物理的な住所
-                  href: sit-defn-belgium-physical-addresses.md
-                - name: ベルギーの付加価値税番号
-                  href: sit-defn-belgium-value-added-tax-number.md
-                - name: 血液検査の用語
-                  href: sit-defn-blood-test-terms.md
-                - name: ブランド医薬品名
-                  href: sit-defn-brand-medication-names.md
-                - name: ブラジルの CPF 番号
-                  href: sit-defn-brazil-cpf-number.md
-                - name: ブラジルの法人番号 (CNPJ)
-                  href: sit-defn-brazil-legal-entity-number.md
-                - name: ブラジルの国民識別カード (RG)
-                  href: sit-defn-brazil-national-identification-card.md
-                - name: ブラジルの住所
-                  href: sit-defn-brazil-physical-addresses.md
-                - name: ブルガリアの運転免許証番号
-                  href: sit-defn-bulgaria-drivers-license-number.md
-                - name: ブルガリアのパスポート番号
-                  href: sit-defn-bulgaria-passport-number.md
-                - name: ブルガリアの住所
-                  href: sit-defn-bulgaria-physical-addresses.md
-                - name: ブルガリアの統一市民番号
-                  href: sit-defn-bulgaria-uniform-civil-number.md
-                - name: カナダの銀行口座番号
-                  href: sit-defn-canada-bank-account-number.md
-                - name: カナダの運転免許証番号
-                  href: sit-defn-canada-drivers-license-number.md
-                - name: カナダの健康保険番号
-                  href: sit-defn-canada-health-service-number.md
-                - name: カナダのパスポート番号
-                  href: sit-defn-canada-passport-number.md
-                - name: カナダの個人保健識別番号 (PHIN)
-                  href: sit-defn-canada-personal-health-identification-number.md
-                - name: カナダの住所
-                  href: sit-defn-canada-physical-addresses.md
-                - name: カナダの社会保険番号
-                  href: sit-defn-canada-social-insurance-number.md
-                - name: チリの身分証明書番号
-                  href: sit-defn-chile-identity-card-number.md
-                - name: 中国の居民身分証明書 (PRC) 番号
-                  href: sit-defn-china-resident-identity-card-number.md
-                - name: クライアント シークレット / API キー
-                  href: sit-defn-client-secret-api-key.md
-                - name: URL の資格情報
-                  href: sit-defn-credentials-in-url.md
-                - name: クレジット カード番号
-                  href: sit-defn-credit-card-number.md
-                - name: クロアチアの運転免許証番号
-                  href: sit-defn-croatia-drivers-license-number.md
-                - name: クロアチアの身分証明書番号
-                  href: sit-defn-croatia-identity-card-number.md
-                - name: クロアチアのパスポート番号
-                  href: sit-defn-croatia-passport-number.md
-                - name: クロアチアの個人識別 (OIB) 番号
-                  href: sit-defn-croatia-personal-identification-number.md
-                - name: クロアチアの住所
-                  href: sit-defn-croatia-physical-addresses.md
-                - name: キプロスの運転免許証番号
-                  href: sit-defn-cyprus-drivers-license-number.md
-                - name: キプロスのIDカード
-                  href: sit-defn-cyprus-identity-card.md
-                - name: キプロスのパスポート番号
-                  href: sit-defn-cyprus-passport-number.md
-                - name: キプロスの住所
-                  href: sit-defn-cyprus-physical-addresses.md
-                - name: キプロスの納税者番号
-                  href: sit-defn-cyprus-tax-identification-number.md
-                - name: チェコの運転免許証番号
-                  href: sit-defn-czech-drivers-license-number.md
-                - name: チェコのパスポート番号
-                  href: sit-defn-czech-passport-number.md
-                - name: チェコの個人識別番号
-                  href: sit-defn-czech-personal-identity-number.md
-                - name: チェコ共和国の住所
-                  href: sit-defn-czech-republic-physical-addresses.md
-                - name: デンマークの運転免許証番号
-                  href: sit-defn-denmark-drivers-license-number.md
-                - name: デンマークのパスポート番号
-                  href: sit-defn-denmark-passport-number.md
-                - name: デンマークの個人識別番号
-                  href: sit-defn-denmark-personal-identification-number.md
-                - name: デンマークの住所
-                  href: sit-defn-denmark-physical-addresses.md
-                - name: 病気
-                  href: sit-defn-diseases.md
-                - name: 麻薬取締局 (DEA) 番号
-                  href: sit-defn-drug-enforcement-agency-number.md
-                - name: エストニアの運転免許証番号
-                  href: sit-defn-estonia-drivers-license-number.md
-                - name: エストニアのパスポート番号
-                  href: sit-defn-estonia-passport-number.md
-                - name: エストニアの個人識別コード
-                  href: sit-defn-estonia-personal-identification-code.md
-                - name: エストニアの住所
-                  href: sit-defn-estonia-physical-addresses.md
-                - name: EU のデビット カード番号
-                  href: sit-defn-eu-debit-card-number.md
-                - name: EU の運転免許証番号
-                  href: sit-defn-eu-drivers-license-number.md
-                - name: EU の国民識別番号
-                  href: sit-defn-eu-national-identification-number.md
-                - name: EU のパスポート番号
-                  href: sit-defn-eu-passport-number.md
-                - name: EU の社会保障番号または同等の ID
-                  href: sit-defn-eu-social-security-number-equivalent-identification.md
-                - name: EU の納税者番号
-                  href: sit-defn-eu-tax-identification-number.md
-                - name: フィンランドの運転免許証番号
-                  href: sit-defn-finland-drivers-license-number.md
-                - name: フィンランドの欧州健康保険番号
-                  href: sit-defn-finland-european-health-insurance-number.md
-                - name: フィンランドの国民 ID
-                  href: sit-defn-finland-national-id.md
-                - name: フィンランドのパスポート番号
-                  href: sit-defn-finland-passport-number.md
-                - name: フィンランドの住所
-                  href: sit-defn-finland-physical-addresses.md
-                - name: フランスの運転免許証番号
-                  href: sit-defn-france-drivers-license-number.md
-                - name: フランスの健康保険番号
-                  href: sit-defn-france-health-insurance-number.md
-                - name: フランスの国民識別カード (CNI)
-                  href: sit-defn-france-national-id-card.md
-                - name: フランスのパスポート番号
-                  href: sit-defn-france-passport-number.md
-                - name: フランスの住所
-                  href: sit-defn-france-physical-addresses.md
-                - name: フランスの社会保障番号 (INSEE)
-                  href: sit-defn-france-social-security-number.md
-                - name: フランスの納税者番号
-                  href: sit-defn-france-tax-identification-number.md
-                - name: フランスの付加価値税番号
-                  href: sit-defn-france-value-added-tax-number.md
-                - name: 一般的なパスワード
-                  href: sit-defn-general-password.md
-                - name: 一般的な対称キー
-                  href: sit-defn-general-symmetric-key.md
-                - name: ジェネリック医薬品名
-                  href: sit-defn-generic-medication-names.md
-                - name: ドイツの運転免許証番号
-                  href: sit-defn-germany-drivers-license-number.md
-                - name: ドイツの身分証明書番号
-                  href: sit-defn-germany-identity-card-number.md
-                - name: ドイツのパスポート番号
-                  href: sit-defn-germany-passport-number.md
-                - name: ドイツの住所
-                  href: sit-defn-germany-physical-addresses.md
-                - name: ドイツの納税者番号
-                  href: sit-defn-germany-tax-identification-number.md
-                - name: ドイツの付加価値税番号
-                  href: sit-defn-germany-value-added-tax-number.md
-                - name: GitHub 個人用アクセス トークン
-                  href: sit-defn-github-personal-access-token.md
-                - name: Google API キー
-                  href: sit-defn-google-api-key.md
-                - name: ギリシャの運転免許証番号
-                  href: sit-defn-greece-drivers-license-number.md
-                - name: ギリシャの国民識別カード
-                  href: sit-defn-greece-national-id-card.md
-                - name: ギリシャのパスポート番号
-                  href: sit-defn-greece-passport-number.md
-                - name: ギリシャの住所
-                  href: sit-defn-greece-physical-addresses.md
-                - name: ギリシャの社会保障番号 (AMKA)
-                  href: sit-defn-greece-social-security-number.md
-                - name: ギリシャの納税者番号
-                  href: sit-defn-greece-tax-identification-number.md
-                - name: 香港の ID カード (HKID) 番号
-                  href: sit-defn-hong-kong-identity-card-number.md
-                - name: HTTP 承認ヘッダー
-                  href: sit-defn-http-authorization-header.md
-                - name: ハンガリーの運転免許証番号
-                  href: sit-defn-hungary-drivers-license-number.md
-                - name: ハンガリーのパスポート番号
-                  href: sit-defn-hungary-passport-number.md
-                - name: ハンガリーの個人識別番号
-                  href: sit-defn-hungary-personal-identification-number.md
-                - name: ハンガリーの物理アドレス
-                  href: sit-defn-hungary-physical-addresses.md
-                - name: ハンガリーの社会保障番号 (TAJ)
-                  href: sit-defn-hungary-social-security-number.md
-                - name: ハンガリーの納税者番号
-                  href: sit-defn-hungary-tax-identification-number.md
-                - name: ハンガリーの付加価値税番号
-                  href: sit-defn-hungary-value-added-tax-number.md
-                - name: アイスランドの住所
-                  href: sit-defn-iceland-physical-addresses.md
-                - name: 米国の Disability Evaluation Under Social Security にリストされている障碍
-                  href: sit-defn-impairments-us-disability-evaluation-under-social-security.md
-                - name: インドの運転免許証番号
-                  href: sit-defn-india-drivers-license-number.md
-                - name: インドの GST 番号
-                  href: sit-defn-india-gst-number.md
-                - name: インドの永久口座番号 (PAN)
-                  href: sit-defn-india-permanent-account-number.md
-                - name: インドの固有識別 (Aadhaar) 番号
-                  href: sit-defn-india-unique-identification-number.md
-                - name: インドの投票者 ID カード
-                  href: sit-defn-india-voter-id-card.md
-                - name: インドネシアの身分証明書 (KTP) 番号
-                  href: sit-defn-indonesia-identity-card-number.md
-                - name: 国際銀行口座番号 (IBAN)
-                  href: sit-defn-international-banking-account-number.md
-                - name: 国際疾病分類 (ICD-10-CM)
-                  href: sit-defn-international-classification-of-diseases-icd-10-cm.md
-                - name: 国際疾病分類 (ICD-9-CM)
-                  href: sit-defn-international-classification-of-diseases-icd-9-cm.md
-                - name: IP アドレス
-                  href: sit-defn-ip-address.md
-                - name: IP アドレス (v4)
-                  href: sit-defn-ip-address-v4.md
-                - name: IP アドレス (v6)
-                  href: sit-defn-ip-address-v6.md
-                - name: アイルランドの運転免許証番号
-                  href: sit-defn-ireland-drivers-license-number.md
-                - name: アイルランドのパスポート番号
-                  href: sit-defn-ireland-passport-number.md
-                - name: アイルランドの個人公共サービス (PPS) 番号
-                  href: sit-defn-ireland-personal-public-service-number.md
-                - name: アイルランドの住所
-                  href: sit-defn-ireland-physical-addresses.md
-                - name: イスラエルの銀行口座番号
-                  href: sit-defn-israel-bank-account-number.md
-                - name: イスラエルの国民識別番号
-                  href: sit-defn-israel-national-identification-number.md
-                - name: イタリアの運転免許証番号
-                  href: sit-defn-italy-drivers-license-number.md
-                - name: イタリアの会計コード
-                  href: sit-defn-italy-fiscal-code.md
-                - name: イタリアのパスポート番号
-                  href: sit-defn-italy-passport-number.md
-                - name: イタリアの住所
-                  href: sit-defn-italy-physical-addresses.md
-                - name: イタリアの付加価値税番号
-                  href: sit-defn-italy-value-added-tax-number.md
-                - name: 日本の銀行口座番号
-                  href: sit-defn-japan-bank-account-number.md
-                - name: 日本の運転免許証番号
-                  href: sit-defn-japan-drivers-license-number.md
-                - name: 日本の法人用マイナンバー
-                  href: sit-defn-japan-my-number-corporate.md
-                - name: 日本の個人用マイ ナンバー
-                  href: sit-defn-japan-my-number-personal.md
-                - name: 日本のパスポート番号
-                  href: sit-defn-japan-passport-number.md
-                - name: 日本の在留カード番号
-                  href: sit-defn-japan-residence-card-number.md
-                - name: 日本の住民登録番号
-                  href: sit-defn-japan-resident-registration-number.md
-                - name: 日本の社会保険番号 (SIN)
-                  href: sit-defn-japan-social-insurance-number.md
-                - name: 臨床検査の用語
-                  href: sit-defn-lab-test-terms.md
-                - name: ラトビアの運転免許証番号
-                  href: sit-defn-latvia-drivers-license-number.md
-                - name: ラトビアのパスポート番号
-                  href: sit-defn-latvia-passport-number.md
-                - name: ラトビアの個人コード
-                  href: sit-defn-latvia-personal-code.md
-                - name: ラトビアの住所
-                  href: sit-defn-latvia-physical-addresses.md
-                - name: リヒテンシュタインの住所
-                  href: sit-defn-liechtenstein-physical-addresses.md
-                - name: 病状に関連するライフスタイル
-                  href: sit-defn-lifestyles-relate-to-medical-conditions.md
-                - name: リトアニアの運転免許証番号
-                  href: sit-defn-lithuania-drivers-license-number.md
-                - name: リトアニアパスポート番号
-                  href: sit-defn-lithuania-passport-number.md
-                - name: リトアニアの個人コード
-                  href: sit-defn-lithuania-personal-code.md
-                - name: リトアニアの物理アドレス
-                  href: sit-defn-lithuania-physical-addresses.md
-                - name: ルクセンブルクの運転免許証番号
-                  href: sit-defn-luxemburg-drivers-license-number.md
-                - name: ルクセンブルク国民識別番号 (国民)
-                  href: sit-defn-luxemburg-national-identification-number-natural-persons.md
-                - name: ルクセンブルク国民識別番号 (国民以外の人)
-                  href: sit-defn-luxemburg-national-identification-number-non-natural-persons.md
-                - name: ルクセンブルクのパスポート番号
-                  href: sit-defn-luxemburg-passport-number.md
-                - name: ルクセンブルクの住所
-                  href: sit-defn-luxemburg-physical-addresses.md
-                - name: マレーシアの識別カード番号
-                  href: sit-defn-malaysia-identification-card-number.md
-                - name: マルタの運転免許証番号
-                  href: sit-defn-malta-drivers-license-number.md
-                - name: マルタの身分証明書番号
-                  href: sit-defn-malta-identity-card-number.md
-                - name: マルタのパスポート番号
-                  href: sit-defn-malta-passport-number.md
-                - name: マルタの住所
-                  href: sit-defn-malta-physical-addresses.md
-                - name: マルタの納税者番号
-                  href: sit-defn-malta-tax-identification-number.md
-                - name: 専門医
-                  href: sit-defn-medical-specialities.md
-                - name: 医療受取人識別子 (MBI) カード
-                  href: sit-defn-medicare-beneficiary-Identifier-card.md
-                - name: メキシコ固有人口レジストリ コード (CURP)
-                  href: sit-defn-mexico-unique-population-registry-code.md
-                - name: Microsoft Bing マップ キー
-                  href: sit-defn-microsoft-bing-maps-key.md
-                - name: オランダの市民サービス (BSN) 番号
-                  href: sit-defn-netherlands-citizens-service-number.md
-                - name: オランダの運転免許証番号
-                  href: sit-defn-netherlands-drivers-license-number.md
-                - name: オランダのパスポート番号
-                  href: sit-defn-netherlands-passport-number.md
-                - name: オランダの物理アドレス
-                  href: sit-defn-netherlands-physical-addresses.md
-                - name: オランダの納税者番号
-                  href: sit-defn-netherlands-tax-identification-number.md
-                - name: オランダ付加価値税番号
-                  href: sit-defn-netherlands-value-added-tax-number.md
-                - name: ニュージーランド銀行口座番号
-                  href: sit-defn-new-zealand-bank-account-number.md
-                - name: ニュージーランド運転免許証番号
-                  href: sit-defn-new-zealand-drivers-license-number.md
-                - name: ニュージーランドの内国歳入番号
-                  href: sit-defn-new-zealand-inland-revenue-number.md
-                - name: ニュージーランドの保健省番号
-                  href: sit-defn-new-zealand-ministry-of-health-number.md
-                - name: ニュージーランドの住所
-                  href: sit-defn-new-zealand-physical-addresses.md
-                - name: ニュージーランドの社会福祉番号
-                  href: sit-defn-new-zealand-social-welfare-number.md
-                - name: ノルウェーの識別番号
-                  href: sit-defn-norway-identification-number.md
-                - name: ノルウェーの住所
-                  href: sit-defn-norway-physical-addresses.md
-                - name: フィリピンの汎用多目的識別番号
-                  href: sit-defn-philippines-unified-multi-purpose-identification-number.md
-                - name: ポーランドの運転免許証番号
-                  href: sit-defn-poland-drivers-license-number.md
-                - name: ポーランドの ID カード
-                  href: sit-defn-poland-identity-card.md
-                - name: ポーランドの国民 ID (PESEL)
-                  href: sit-defn-poland-national-id.md
-                - name: ポーランドのパスポート番号
-                  href: sit-defn-poland-passport-number.md
-                - name: ポーランドの住所
-                  href: sit-defn-poland-physical-addresses.md
-                - name: ポーランドの REGON 番号
-                  href: sit-defn-poland-regon-number.md
-                - name: ポーランドの納税者番号
-                  href: sit-defn-poland-tax-identification-number.md
-                - name: ポルトガルの市民カード番号
-                  href: sit-defn-portugal-citizen-card-number.md
-                - name: ポルトガルの運転免許証番号
-                  href: sit-defn-portugal-drivers-license-number.md
-                - name: ポルトガルのパスポート番号
-                  href: sit-defn-portugal-passport-number.md
-                - name: ポルトガルの住所
-                  href: sit-defn-portugal-physical-addresses.md
-                - name: ポルトガルの納税者番号
-                  href: sit-defn-portugal-tax-identification-number.md
-                - name: ルーマニアの運転免許証番号
-                  href: sit-defn-romania-drivers-license-number.md
-                - name: ルーマニアのパスポート番号
-                  href: sit-defn-romania-passport-number.md
-                - name: ルーマニアの個人識別数字コード (CNP)
-                  href: sit-defn-romania-personal-numeric-code.md
-                - name: ルーマニアの住所
-                  href: sit-defn-romania-physical-addresses.md
-                - name: ロシアの国内パスポート番号
-                  href: sit-defn-russia-passport-number-domestic.md
-                - name: ロシアの国際パスポート番号
-                  href: sit-defn-russia-passport-number-international.md
-                - name: サウジアラビアの国民 ID
-                  href: sit-defn-saudi-arabia-national-id.md
-                - name: シンガポールの国民登録 ID カード (NRIC) 番号
-                  href: sit-defn-singapore-national-registration-identity-card-number.md
-                - name: Slack アクセス トークン
-                  href: sit-defn-slack-access-token.md
-                - name: スロバキアの運転免許証番号
-                  href: sit-defn-slovakia-drivers-license-number.md
-                - name: スロバキアのパスポート番号
-                  href: sit-defn-slovakia-passport-number.md
-                - name: スロバキアの個人番号
-                  href: sit-defn-slovakia-personal-number.md
-                - name: スロバキアの物理アドレス
-                  href: sit-defn-slovakia-physical-addresses.md
-                - name: スロベニアの運転免許証番号
-                  href: sit-defn-slovenia-drivers-license-number.md
-                - name: スロベニアのパスポート番号
-                  href: sit-defn-slovenia-passport-number.md
-                - name: スロベニアの物理アドレス
-                  href: sit-defn-slovenia-physical-addresses.md
-                - name: スロベニアの納税者番号
-                  href: sit-defn-slovenia-tax-identification-number.md
-                - name: スロベニアの一意のマスター市民番号
-                  href: sit-defn-slovenia-unique-master-citizen-number.md
-                - name: 南アフリカの識別番号
-                  href: sit-defn-south-africa-identification-number.md
-                - name: 韓国の住民登録番号
-                  href: sit-defn-south-korea-resident-registration-number.md
-                - name: スペインの DNI
-                  href: sit-defn-spain-dni.md
-                - name: スペインの運転免許証番号
-                  href: sit-defn-spain-drivers-license-number.md
-                - name: スペインのパスポート番号
-                  href: sit-defn-spain-passport-number.md
-                - name: スペインの物理アドレス
-                  href: sit-defn-spain-physical-addresses.md
-                - name: スペインの社会保障番号 (SSN)
-                  href: sit-defn-spain-social-security-number.md
-                - name: スペインの納税者番号
-                  href: sit-defn-spain-tax-identification-number.md
-                - name: SQL Server の接続文字列
-                  href: sit-defn-sql-server-connection-string.md
-                - name: 外科的処置
-                  href: sit-defn-surgical-procedures.md
-                - name: スウェーデンの運転免許証番号
-                  href: sit-defn-sweden-drivers-license-number.md
-                - name: スウェーデンの国民 ID
-                  href: sit-defn-sweden-national-id.md
-                - name: スウェーデンのパスポート番号
-                  href: sit-defn-sweden-passport-number.md
-                - name: スウェーデンの物理アドレス
-                  href: sit-defn-sweden-physical-addresses.md
-                - name: スウェーデンの納税者番号
-                  href: sit-defn-sweden-tax-identification-number.md
-                - name: SWIFT コード
-                  href: sit-defn-swift-code.md
-                - name: スイスの住所
-                  href: sit-defn-switzerland-physical-addresses.md
-                - name: スイスの SSN AHV 番号
-                  href: sit-defn-switzerland-ssn-ahv-number.md
-                - name: 台湾の国民識別番号
-                  href: sit-defn-taiwan-national-identification-number.md
-                - name: 台湾のパスポート番号
-                  href: sit-defn-taiwan-passport-number.md
-                - name: 台湾の在留証明書 (ARC/TARC) 番号
-                  href: sit-defn-taiwan-resident-certificate-number.md
-                - name: タイの国民識別コード
-                  href: sit-defn-thai-population-identification-code.md
-                - name: トルコの国民識別番号
-                  href: sit-defn-turkey-national-identification-number.md
-                - name: トルコの住所
-                  href: sit-defn-turkey-physical-addresses.md
-                - name: 薬品の種類
-                  href: sit-defn-types-of-medication.md
-                - name: 英国 運転免許証番号
-                  href: sit-defn-uk-drivers-license-number.md
-                - name: 英国 選挙登録番号
-                  href: sit-defn-uk-electoral-roll-number.md
-                - name: 英国 国民保健サービス番号
-                  href: sit-defn-uk-national-health-service-number.md
-                - name: 英国 国民保険番号 (NINO)
-                  href: sit-defn-uk-national-insurance-number.md
-                - name: 英国 住所
-                  href: sit-defn-uk-physical-addresses.md
-                - name: 英国 納税者番号
-                  href: sit-defn-uk-unique-taxpayer-reference-number.md
-                - name: 米国の銀行口座番号
-                  href: sit-defn-us-bank-account-number.md
-                - name: 米国の運転免許証番号
-                  href: sit-defn-us-drivers-license-number.md
-                - name: 米国の個人納税者識別番号 (ITIN)
-                  href: sit-defn-us-individual-taxpayer-identification-number.md
-                - name: 米国の住所
-                  href: sit-defn-us-physical-addresses.md
-                - name: 米国の社会保障番号 (SSN)
-                  href: sit-defn-us-social-security-number.md
-                - name: 米国/英国 passport number
-                  href: sit-defn-us-uk-passport-number.md
-                - name: ウクライナのパスポート国内番号
-                  href: sit-defn-ukraine-passport-domestic.md
-                - name: ウクライナのパスポート国際番号
-                  href: sit-defn-ukraine-passport-international.md
-                - name: ユーザーのログイン資格情報
-                  href: sit-defn-user-login-credentials.md
-                - name: X.509 証明書の非公開キー
-                  href: sit-defn-x-509-certificate-private-key.md
-            - name: 機密情報の種類の機能
-              href: sit-functions.md
+            - name: 機密情報の種類のエンティティ定義
+              href: sensitive-information-type-entity-definitions.md
+            - name: DLP 関数の検索対象
+              href: what-the-dlp-functions-look-for.md
             - name: カスタム機密情報の種類のフィルター リファレンス
               href: sit-custom-sit-filters.md
     - name: トレーニング可能な分類子
@@ -994,7 +188,7 @@
           href: classifier-how-to-retrain-content-explorer.md
     - name: データの分類
       items:
-        - name: データ分類について
+        - name: データの分類を理解する
           href: data-classification-overview.md
         - name: コンテンツ エクスプローラーの使用を開始する
           href: data-classification-content-explorer.md
@@ -1006,8 +200,6 @@
       items:
         - name: 秘密度ラベルの詳細
           href: sensitivity-labels.md
-        - name: Office アプリの組み込みラベル付けを選択する理由
-          href: sensitivity-labels-aip.md
         - name: 秘密度ラベルの概要
           href: get-started-with-sensitivity-labels.md
         - name: 秘密度ラベルを作成して発行する
@@ -1022,8 +214,6 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: 秘密度ラベルで暗号化されたドキュメントの共同編集を有効にする
           href: sensitivity-labels-coauthoring.md
-        - name: 秘密度ラベルを使用して、既定の共有リンクの種類を設定する
-          href: sensitivity-labels-default-sharing-link.md
         - name: Office アプリで秘密度ラベルを管理する
           href: sensitivity-labels-office-apps.md
     - name: 暗号化
@@ -1038,7 +228,7 @@
           href: office-365-service-encryption.md
         - name: 顧客キー
           items:
-            - name: Microsoft Purview カスタマー キーを使用したサービスの暗号化
+            - name: Microsoft 365 のカスタマー キー
               href: customer-key-overview.md
             - name: Microsoft 365 のカスタマー キーを設定する
               href: customer-key-set-up.md
@@ -1051,38 +241,32 @@
         - name: メールの暗号化
           href: email-encryption.md
           items:
-            - name: メッセージの暗号化
+            - name: Office 365 Message Encryption (OME)
               href: ome.md
-            - name: Microsoft Purview のメッセージの暗号化を設定する
+            - name: 新しい Office 365 Message Encryption 機能を設定する
               href: set-up-new-message-encryption-capabilities.md
-            - name: メール メッセージを暗号化するためのメール フロー ルールを定義
+            - name: Office 365 でメール メッセージを暗号化するためにメール フロー ルールを定義する
               href: define-mail-flow-rules-to-encrypt-email.md
             - name: 暗号化されたメッセージに組織のブランドを追加する
               href: add-your-organization-brand-to-encrypted-messages.md
-            - name: Microsoft Purview のメッセージの暗号化を使って機密情報の種類のポリシーを作成する
+            - name: Office 365 Message Encryption 機能を使用して、機密情報の種類のポリシーを作成する
               href: ome-sensitive-info-types.md
-            - name: メッセージの暗号化を管理する
+            - name: Office 365 Message Encryption
               href: manage-office-365-message-encryption.md
-            - name: 高度なメッセージの暗号化
+            - name: Office 365 Advanced Message Encryption
               href: ome-advanced-message-encryption.md
-            - name: 暗号化されたメッセージ ポータル アクティビティ ログ
-              href: ome-message-access-logs.md
-            - name: Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールの有効期限を設定する
+            - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールの有効期限を設定する
               href: ome-advanced-expiration.md
-            - name: Microsoft Purview の高度なメッセージの暗号化を使って暗号化されたメールを取り消す
+            - name: Office 365 Advanced Message Encryption 機能を使って暗号化されたメールを無効にする
               href: revoke-ome-encrypted-mail.md
-            - name: メッセージの暗号化のバージョンを比較する
+            - name: OME のバージョンを比較する
               href: ome-version-comparison.md
-            - name: メッセージの暗号化についてよく寄せられる質問
+            - name: Office 365 Message Encryption に関する FAQ
               href: ome-faq.yml
             - name: Exchange Online がメールの機密情報をセキュリティで保護する方法
               href: exchange-online-secures-email-secrets.md
             - name: Office 365 でメール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
               href: exchange-online-uses-tls-to-secure-email-connections.md
-            - name: MTA-STS を使用したメール フローの強化
-              href: enhancing-mail-flow-with-mta-sts.md
-            - name: SMTP DANE のしくみ
-              href: how-smtp-dane-works.md
             - name: BitLocker と Distributed Key Manager (DKM) による暗号化
               href: office-365-bitlocker-and-distributed-key-manager-for-encryption.md
             - name: レガシー OME
@@ -1095,16 +279,12 @@
           href: set-up-irm-in-sp-admin-center.md
         - name: テクニカル リファレンス
           href: technical-reference-details-about-encryption.md
-        - name: Microsoft 365 暗号化チェーン
-          href: encryption-office-365-certificate-chains.md
         - name: Office 365 の TLS 1.0 および1.1の 廃止
           href: tls-1.0-and-1.1-deprecation-for-office-365.md
         - name: Office 365 GCC High および DoD での TLS 1.0 および 1.1 の廃止
           href: tls-1-2-in-office-365-gcc.md
         - name: Office 365 の TLS 1.2
           href: prepare-tls-1.2-in-office-365.md
-        - name: Office TLS 証明書の変更
-          href: encryption-office-365-tls-certificates-changes.md
     - name: データ損失防止 (DLP)
       items:
         - name: データ損失防止 (DLP) について
@@ -1115,9 +295,9 @@
               href: endpoint-dlp-learn-about.md
             - name: Microsoft Teams の既定のデータ損失防止ポリシーについて学ぶ (プレビュー)
               href: dlp-teams-default-policy.md
-            - name: データ損失防止のオンプレミス スキャナーの詳細
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーについての詳細情報
               href: dlp-on-premises-scanner-learn.md
-            - name: Microsoft Purview Extension の詳細
+            - name: Microsoft Compliance Extension の詳細情報
               href: dlp-chrome-learn-about.md
             - name: データ損失防止の警告ダッシュボードについて
               href: dlp-alerts-dashboard-learn.md
@@ -1125,39 +305,57 @@
           items:
             - name: データ損失防止ポリシーのサポート
               href: dlp-overview-plan-for-dlp.md
-            - name: DLP ポリシーを設計する
-              href: dlp-policy-design.md
             - name: データ損失防止ポリシー リファレンス
               href: dlp-policy-reference.md
         - name: DLP の使用を開始する
           items:
-            - name: エンドポイント データ損失防止の設定を構成する
-              href: dlp-configure-endpoint-settings.md
             - name: 既定の DLP ポリシーの使用を開始する
               href: get-started-with-the-default-dlp-policy.md
             - name: テンプレートから DLP ポリシーを作成する
               href: create-a-dlp-policy-from-a-template.md
             - name: DLP ポリシーの作成、テスト、調整
               href: create-test-tune-dlp-policy.md
-            - name: データ損失防止のオンプレミス スキャナーの使用を開始する
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーの使用を開始する
               href: dlp-on-premises-scanner-get-started.md
             - name: エンドポイント データ損失防止を開始する
               href: endpoint-dlp-getting-started.md
-            - name: 情報保護のためにデバイス プロキシとインターネット接続の設定を構成する
-              href: device-onboarding-configure-proxy.md
-            - name: Microsoft Purview Extension の使用を開始する
+            - name: エンドポイント DLP のデバイス プロキシとインターネット接続の構成
+              href: endpoint-dlp-configure-proxy.md
+            - name: Microsoft Compliance Extension を開始する
               href: dlp-chrome-get-started.md
             - name: データ損失防止の警告ダッシュボードを開始する
               href: dlp-alerts-dashboard-get-started.md
-            - name: Power BI (プレビュー) のデータ損失防止ポリシーの使用を開始する
-              href: dlp-powerbi-get-started.md
+            - name: エンドポイント DLP デバイスのオンボード ツールと各種方法
+              items:
+                - name: Windows 10 デバイスのオンボード ツールと各種方法
+                  href: dlp-configure-endpoints.md
+                - name: グループ ポリシーを使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-gp.md
+                - name: モバイル デバイス管理ツールを使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-mdm.md
+                - name: Configuration Manager を使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-sccm.md
+                - name: ローカル スクリプトを使用した Windows 10 デバイスのオンボード
+                  href: dlp-configure-endpoints-script.md
+                - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
+                  href: dlp-configure-endpoints-vdi.md
+            - name: Microsoft 365 への macOS デバイスのオンボードに関する概要 (プレビュー)
+              href: device-onboarding-macos-overview.md
+            - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-intune.md
+            - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-intune-mde.md
+            - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-jamfpro.md
+            - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード (プレビュー)
+              href: device-onboarding-offboarding-macos-jamfpro-mde.md
         - name: DLP を使用する
           items:
             - name: DLP と Microsoft Teams
               href: dlp-microsoft-teams.md
             - name: エンドポイント データ損失防止の使用
               href: endpoint-dlp-using.md
-            - name: データ損失防止のオンプレミス スキャナーを使用する
+            - name: Microsoft 365 のデータ損失防止のオンプレミス スキャナーを使用する
               href: dlp-on-premises-scanner-use.md
             - name: DLP ポリシーで通知とポリシー ヒントを使用する
               href: use-notifications-and-policy-tips.md
@@ -1169,7 +367,7 @@
               href: view-the-dlp-reports.md
             - name: サイトに保存された機密データを検索するクエリの形成
               href: form-a-query-to-find-sensitive-data-stored-on-sites.md
-            - name: Microsoft Purview コンプライアンス ポータルと Exchange 管理センターの間での DLP のしくみ
+            - name: セキュリティ/コンプライアンス センターと Exchange 管理センターでの DLP の動作
               href: how-dlp-works-between-admin-centers.md
             - name: DLP ポリシーの警告を構成および表示する (プレビュー)
               href: dlp-configure-view-alerts-policies.md
@@ -1183,115 +381,257 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: データ損失防止ポリシーヒントのリファレンス
               href: dlp-policy-tips-reference.md
-- name: データ のライフサイクルとレコードの管理
+- name: 情報ガバナンスの管理
   items:
     - name: データを統制する
-      href: manage-data-governance.md
-    - name: データ ガバナンス ソリューションをデプロイする
-      href: data-governance-solution.md
-    - name: 保持と削除について
+      href: manage-information-governance.md
+    - name: データを保持および削除する
       items:
-        - name: 保持ポリシーと保持ラベルの詳細
-          href: retention.md
-        - name: 保持と削除の結果のフローチャート
-          href: retention-flowchart.md
-        - name: Microsoft 365 ワークロードの保持と削除
+        - name: 保持の詳細
           items:
-            - name: SharePoint および OneDrive
+            - name: アイテム保持ポリシーと保持ラベル
+              href: retention.md
+            - name: 保持フローチャート
+              href: retention-flowchart.md
+            - name: SharePoint と OneDrive の保持
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Microsoft Teams の保持
               href: retention-policies-teams.md
-            - name: Yammer
+            - name: Yammer の保持
               href: retention-policies-yammer.md
-            - name: Exchange
+            - name: Exchange の保持
               href: retention-policies-exchange.md
-        - name: 一般的な保持と削除の設定
-          href: retention-settings.md
-        - name: 保持と削除のための PowerShell コマンドレット
-          href: retention-cmdlets.md
-        - name: 保持と削除の制限
-          href: retention-limits.md
-    - name: データ ライフサイクル管理
-      items:
-        - name: データ ライフサイクル管理の詳細
-          href: data-lifecycle-management.md
-        - name: データ ライフサイクル管理の使用を開始する
-          href: get-started-with-data-lifecycle-management.md
+            - name: 一般的な保持の設定
+              href: retention-settings.md
+            - name: 保持の制限
+              href: retention-limits.md
+        - name: 保持の概要
+          href: get-started-with-retention.md
         - name: アイテム保持ポリシーを作成する
           href: create-retention-policies.md
-        - name: 例外に保持ラベルを使用する
-          href: create-retention-labels-data-lifecycle-management.md
-        - name: アーカイブ メールボックスのデータ
-          items:
-            - name: アーカイブ メールボックスの詳細
-              href: archive-mailboxes.md
-            - name: アーカイブ メールボックスの有効化
-              href: enable-archive-mailboxes.md
-            - name: 自動拡張アーカイブに関する詳細情報
-              href: autoexpanding-archiving.md
-            - name: 自動拡張アーカイブを有効にする
-              href: enable-autoexpanding-archiving.md
-            - name: メールボックスのアーカイブと削除ポリシー (MRM) をカスタマイズする
-              href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
-        - name: 非アクティブなメールボックスを管理する
-          items:
-            - name: 非アクティブなメールボックスの詳細情報
-              href: inactive-mailboxes-in-office-365.md
-            - name: 非アクティブなメールボックスを作成および管理する
-              href: create-and-manage-inactive-mailboxes.md
-            - name: 非アクティブなメールボックスの保持期間を変更する
-              href: change-the-hold-duration-for-an-inactive-mailbox.md
-            - name: 非アクティブなメールボックスを回復する
-              href: recover-an-inactive-mailbox.md
-            - name: 非アクティブなメールボックスを復元する
-              href: restore-an-inactive-mailbox.md
-            - name: 非アクティブなメールボックスを削除する
-              href: delete-an-inactive-mailbox.md
-        - name: PST ファイルをインポートする
-          items:
-            - name: PST ファイルのインポートに関する詳細情報
-              href: importing-pst-files-to-office-365.md
-            - name: ネットワーク アップロードを使用して PST ファイルをインポートする
-              href: use-network-upload-to-import-pst-files.md
-            - name: ドライブ送付を使用して PST ファイルをインポートする
-              href: use-drive-shipping-to-import-pst-files-to-office-365.md
-            - name: PST ファイルをインポートするときに、データをフィルター処理する
-              href: filter-data-when-importing-pst-files.md
-            - name: PST ファイルのインポートに関する FAQ
-              href: faqimporting-pst-files-to-office-365.yml
-    - name: レコード管理
-      items:
-        - name: レコード管理について
-          items:
-            - name: レコード管理の詳細
-              href: records-management.md
-            - name: 規制要件の参照資料
-              href: retention-regulatory-requirements.md
-            - name: 保持ラベルを使用してレコードを宣言する
-              href: declare-records.md
-            - name: ファイルにレコードのバージョン管理を使用する
-              href: record-versioning.md
-        - name: レコード管理の使用を開始する
-          href: get-started-with-records-management.md
-        - name: ファイル計画を使用して保持ラベルを作成および管理する
+        - name: ファイル計画を使用する
           href: file-plan-manager.md
-        - name: イベントの発生時に保持を開始する
-          href: event-driven-retention.md
-        - name: アプリで保持ラベルを発行して適用する
+        - name: 保持ラベルを作成してアプリに適用する
           href: create-apply-retention-labels.md
         - name: 保持ラベルをコンテンツに自動的に適用する
           href: apply-retention-labels-automatically.md
         - name: ポリシーをロックして変更を制限する
           href: retention-preservation-lock.md
-        - name: PowerShell を使用して保持ラベルを作成および発行する
+        - name: PowerShell で保持ラベルを作成する
           href: bulk-create-publish-labels-using-powershell.md
-        - name: 保持ラベルを使用して、SharePoint でドキュメントを管理する
+        - name: イベントの発生時に保持を開始する
+          href: event-driven-retention.md
+        - name: 保持ラベルを使用して、ドキュメントのライフサイクルを管理する
           href: auto-apply-retention-labels-scenario.md
         - name: データの廃棄を管理する
           href: disposition.md
+    - name: メールボックス データをインポートする
+      items:
+        - name: PST ファイルのインポートの概要
+          href: importing-pst-files-to-office-365.md
+        - name: ネットワーク アップロードを使用して PST ファイルをインポートする
+          href: use-network-upload-to-import-pst-files.md
+        - name: ドライブ送付を使用して PST ファイルをインポートする
+          href: use-drive-shipping-to-import-pst-files-to-office-365.md
+        - name: PST ファイルをインポートするときに、データをフィルター処理する
+          href: filter-data-when-importing-pst-files.md
+        - name: PST ファイルのインポートに関する FAQ
+          href: faqimporting-pst-files-to-office-365.yml
+    - name: サード パーティのデータをアーカイブする
+      items:
+        - name: サード パーティのデータのアーカイブの概要
+          href: archiving-third-party-data.md
+        - name: Microsoft データ コネクタ
+          items:
+            - name: Bloomberg メッセージ
+              href: archive-bloomberg-message-data.md
+            - name: Epic EHR 医療データ (プレビュー)
+              href: import-epic-data.md
+            - name: Facebook Business
+              href: archive-facebook-data-with-sample-connector.md
+            - name: 包括的 EHR 医療データ (プレビュー)
+              href: import-healthcare-data.md
+            - name: 人事データ
+              href: import-hr-data.md
+            - name: IceChat
+              href: archive-icechat-data.md
+            - name: Instant Bloomberg
+              href: archive-instant-bloomberg-data.md
+            - name: LinkedIn
+              href: archive-linkedin-data.md
+            - name: 物理的 バッジデータ
+              href: import-physical-badging-data.md
+            - name: Twitter
+              href: archive-twitter-data-with-sample-connector.md
+        - name: Veritas データ コネクタ
+          items:
+            - name: CellTrust
+              href: archive-celltrust-data.md
+            - name: MS SQL 上の Cisco Jabber
+              href: archive-ciscojabberonmssql-data.md
+            - name: Oracle 上の Cisco Jabber
+              href: archive-ciscojabberonoracle-data.md
+            - name: PostgreSQL 上の Cisco Jabber
+              href: archive-ciscojabberonpostgresql-data.md
+            - name: EML
+              href: archive-eml-data.md
+            - name: FX 接続
+              href: archive-fxconnect-data.md
+            - name: Jive
+              href: archive-jive-data.md
+            - name: MS SQL Database
+              href: archive-mssqldatabaseimporter-data.md
+            - name: ピボット
+              href: archive-pivot-data.md
+            - name: Redtail Speak
+              href: archive-redtailspeak-data.md
+            - name: Reuters Dealing
+              href: archive-reutersdealing-data.md
+            - name: Reuters Eikon
+              href: archive-reuterseikon-data.md
+            - name: Reuters FX
+              href: archive-reutersfx-data.md
+            - name: RingCentral
+              href: archive-ringcentral-data.md
+            - name: Salesforce Chatter
+              href: archive-salesforcechatter-data.md
+            - name: ServiceNow
+              href: archive-servicenow-data.md
+            - name: Skype for Business
+              href: archive-skypeforbusiness-data.md
+            - name: Slack eDiscovery
+              href: archive-slack-data.md
+            - name: Symphony
+              href: archive-symphony-data.md
+            - name: 区切られたテキスト
+              href: archive-text-delimited-data.md
+            - name: Webex チーム
+              href: archive-webexteams-data.md
+            - name: Web ページ
+              href: archive-webpagecapture-data.md
+            - name: Facebookからの職場
+              href: archive-workplacefromfacebook-data.md
+            - name: XIP
+              href: archive-xip-data.md
+            - name: XSLT/XML
+              href: archive-xslt-xml-data.md
+            - name: Yieldbroker
+              href: archive-yieldbroker-data.md
+            - name: YouTube
+              href: archive-youtube-data.md
+            - name: Zoom会議
+              href: archive-zoommeetings-data.md
+        - name: TeleMessage データコネクタ
+          items:
+            - name: Android Archiver
+              href: archive-android-archiver-data.md
+            - name: AT&T SMS/MMS Network Archiver
+              href: archive-att-network-archiver-data.md
+            - name: Bell SMS/MMS Network Archiver
+              href: archive-bell-network-data.md
+            - name: Enterprise Number Archiver
+              href: archive-enterprise-number-data.md
+            - name: O2 Telefonica SMS および Voice Network Archiver
+              href: archive-o2-network-data.md
+            - name: Rogers Network Archiver
+              href: archive-rogers-network-archiver-data.md
+            - name: Signal Archiver
+              href: archive-signal-archiver-data.md
+            - name: Telegram Archiver
+              href: archive-telegram-archiver-data.md
+            - name: TELUS ネットワーク
+              href: archive-telus-network-data.md
+            - name: Verizon SMS/MMS Network Archiver
+              href: archive-verizon-network-data.md
+            - name: WeChat Archiver
+              href: archive-wechat-data.md
+            - name: WhatsApp Archiver
+              href: archive-whatsapp-data.md
+        - name: 17a-4 データ コネクタ
+          items:
+            - name: BlackBerry DataParser
+              href: archive-17a-4-blackberry-data.md
+            - name: Bloomberg DataParser
+              href: archive-17a-4-bloomberg-data.md
+            - name: Cisco Jabber DataParser
+              href: archive-17a-4-cisco-jabber-data.md
+            - name: Cisco Webex DataParser
+              href: archive-17a-4-webex-teams-data.md
+            - name: FactSet DataParser
+              href: archive-17a-4-factset-data.md
+            - name: Fuze DataParser
+              href: archive-17a-4-fuze-data.md
+            - name: FX Connect DataParser
+              href: archive-17a-4-fxconnect-data.md
+            - name: ICE DataParser
+              href: archive-17a-4-ice-im-data.md
+            - name: InvestEdge DataParser
+              href: archive-17a-4-investedge-data.md
+            - name: LivePerson Conversational Cloud DataParser
+              href: archive-17a-4-liveperson-data.md
+            - name: Quip DataParser
+              href: archive-17a-4-quip-data.md
+            - name: Refinitiv Eikon Messenger DataParser
+              href: archive-17a-4-refinitiv-messenger-data.md
+            - name: ServiceNow DataParser
+              href: archive-17a-4-servicenow-data.md
+            - name: Skype for Business Server DataParser
+              href: archive-17a-4-skype-for-business-server-data.md
+            - name: Slack DataParser
+              href: archive-17a-4-slack-data.md
+            - name: SQL DataParser
+              href: archive-17a-4-sql-database-data.md
+            - name: Symphony DataParser
+              href: archive-17a-4-symphony-data.md
+            - name: Zoom DataParser
+              href: archive-17a-4-zoom-data.md
+        - name: CellTrust コネクタ
+          items:
+            - name: CellTrust SL2
+              href: archive-data-from-celltrustsl2.md
+        - name: パートナーと共同作業して、サード パーティのデータをアーカイブする
+          href: work-with-partner-to-archive-third-party-data.md
+        - name: サード パーティ データを検索する
+          href: use-content-search-to-search-third-party-data-that-was-imported.md
+    - name: メールボックス データの保存
+      items:
+        - name: アーカイブ メールボックスの有効化
+          href: enable-archive-mailboxes.md
+        - name: 自動拡張アーカイブの概要
+          href: autoexpanding-archiving.md
+        - name: 自動拡張アーカイブを有効にする
+          href: enable-autoexpanding-archiving.md
+        - name: メールボックスのアーカイブと削除ポリシーを設定する
+          href: set-up-an-archive-and-deletion-policy-for-mailboxes.md
+    - name: 非アクティブなメールボックスを管理する
+      items:
+        - name: 非アクティブなメールボックスの概要
+          href: inactive-mailboxes-in-office-365.md
+        - name: 非アクティブなメールボックスを作成および管理する
+          href: create-and-manage-inactive-mailboxes.md
+        - name: 非アクティブなメールボックスの保持期間を変更する
+          href: change-the-hold-duration-for-an-inactive-mailbox.md
+        - name: 非アクティブなメールボックスを回復する
+          href: recover-an-inactive-mailbox.md
+        - name: 非アクティブなメールボックスを復元する
+          href: restore-an-inactive-mailbox.md
+        - name: 非アクティブなメールボックスを削除する
+          href: delete-an-inactive-mailbox.md
+    - name: レコード管理
+      items:
+        - name: レコード管理の詳細
+          href: records-management.md
+        - name: レコード管理の使用を開始する
+          href: get-started-with-records-management.md
+        - name: レコードの宣言
+          href: declare-records.md
+        - name: レコードのバージョン管理を使用する
+          href: record-versioning.md
+        - name: 規制要件の参照資料
+          href: retention-regulatory-requirements.md
 - name: eDiscovery の管理
   items:
-    - name: Microsoft Purview の電子情報開示ソリューション
+    - name: Microsoft 365 eDiscovery ソリューション
       href: ediscovery.md
     - name: コンテンツ検索
       items:
@@ -1300,12 +640,12 @@
         - name: コンテンツを検索する
           href: content-search.md
           items:
+            - name: コンテンツ検索の機能のリファレンス
+              href: content-search-reference.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
-            - name: KQL エディターを使用して検索クエリを作成する
+            - name: KQL エディターを使用して検索クエリを作成する (プレビュー)
               href: ediscovery-kql-editor.md
-            - name: オンプレミス ユーザーの Teams チャット データを検索する
-              href: search-cloud-based-mailboxes-for-on-premises-users.md
             - name: 検索アクセス許可のフィルター処理を構成する
               href: permissions-filtering-for-content-search.md
             - name: 電子情報開示検索結果をプレビューする
@@ -1318,14 +658,16 @@
               href: export-a-content-search-report.md
             - name: メール メッセージを検索して削除する
               href: search-for-and-delete-messages-in-your-organization.md
+            - name: オンプレミス ユーザーの Teams チャット データを検索する
+              href: search-cloud-based-mailboxes-for-on-premises-users.md
+            - name: ID リストの検索用の CSV ファイルを準備する
+              href: csv-file-for-an-id-list-content-search.md
             - name: 失敗した検索の再試行
               href: retry-failed-content-search.md
             - name: BCC の受信者を保持する
               href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
         - name: コンテンツ検索の参照
           items:
-            - name: コンテンツ検索の機能のリファレンス
-              href: content-search-reference.md
             - name: 電子情報開示の検索制限
               href: limits-for-content-search.md
             - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
@@ -1360,9 +702,9 @@
               href: create-report-on-and-delete-multiple-content-searches.md
             - name: 検索を複製する
               href: clone-a-content-search.md
-    - name: 電子情報開示 (標準)
+    - name: コア電子情報開示
       items:
-        - name: 電子情報開示 (標準) の使用を開始する
+        - name: コア電子情報開示を開始する
           href: get-started-core-ediscovery.md
         - name: 電子情報開示の保留リストを作成する
           href: create-ediscovery-holds.md
@@ -1372,7 +714,7 @@
           href: export-content-in-core-ediscovery.md
         - name: ケースを閉じ、もう一度開き、削除する
           href: close-reopen-delete-core-ediscovery-cases.md
-        - name: 電子情報開示 (標準) のリファレンス
+        - name: コア電子情報開示 の参照
           items:
             - name: 電子情報開示の検索制限
               href: limits-for-content-search.md
@@ -1380,7 +722,7 @@
               href: assign-ediscovery-permissions.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
-            - name: KQL エディターを使用して検索クエリを作成する
+            - name: KQL エディターを使用して検索クエリを作成する (プレビュー)
               href: ediscovery-kql-editor.md
             - name: コンプライアンスの境界を設定する
               href: set-up-compliance-boundaries.md
@@ -1400,7 +742,7 @@
               href: export-a-content-search-report.md
             - name: スクリプトを使用して電子情報開示の保留リストにユーザーを追加する
               href: use-a-script-to-add-users-to-a-hold-in-ediscovery.md
-            - name: スクリプトを使用して保留レポートを作成する
+            - name: 電子情報開示ケースの保留リストのレポートを作成する
               href: create-a-report-on-holds-in-ediscovery-cases.md
             - name: 検索結果のキーワード統計を表示する
               href: view-keyword-statistics-for-content-search.md
@@ -1418,19 +760,19 @@
               href: configure-edge-to-export-search-results.md
             - name: 監査ログで電子情報開示アクティビティを検索する
               href: search-for-ediscovery-activities-in-the-audit-log.md
-    - name: 電子情報開示 (プレミアム)
+    - name: Advanced eDiscovery
       items:
         - name: 概要
           href: overview-ediscovery-20.md
-        - name: 電子情報開示 (プレミアム) を設定する
+        - name: Advanced eDiscovery を設定する
           href: get-started-with-advanced-ediscovery.md
-        - name: 電子情報開示 (プレミアム) ケースの作成
+        - name: Advanced eDiscovery ケースを作成する
           items:
             - name: ケースの作成と管理
               href: create-and-manage-advanced-ediscoveryv2-case.md
-            - name: 新しいケース形式を使用する
-              href: advanced-ediscovery-new-case-format.md
-        - name: Teams コンテンツの電子情報開示 (プレミアム) のワークフロー
+            - name: 大規模なケースを使用する (プレビュー)
+              href: advanced-ediscovery-large-cases.md
+        - name: Teams コンテンツの Advanced 3Discovery ワークフロー (プレビュー)
           href: teams-workflow-in-advanced-ediscovery.md
         - name: カストディアンおよび非カストディアンのデータ ソースを使用する
           href: managing-custodians.md
@@ -1456,15 +798,8 @@
               href: manage-hold-notification.md
             - name: 保留通知を確認する
               href: acknowledge-hold-notification.md
-            - name: 通知責任者の管理
-              href: advanced-ediscovery-issuing-officers.md
-            - name: カストディアンの通信テンプレートを管理する
-              href: advanced-ediscovery-communications-library.md
         - name: 保留リストを管理する
           href: managing-holds.md
-          items:
-            - name: スクリプトを使用して保留レポートを作成する
-              href: create-a-report-on-holds-in-ediscovery-cases.md
         - name: 処理中のエラーを管理する
           href: processing-data-for-case.md
           items:
@@ -1486,7 +821,7 @@
               href: collection-statistics-reports.md
             - name: コレクションの検索クエリを作成する
               href: building-search-queries.md
-            - name: KQL エディターを使用して検索クエリを作成する
+            - name: KQL エディターを使用して検索クエリを作成する (プレビュー)
               href: ediscovery-kql-editor.md
             - name: キーワード クエリと検索条件
               href: keyword-queries-and-search-conditions.md
@@ -1551,16 +886,14 @@
               href: add-or-remove-members-from-a-case-in-advanced-ediscovery.md
             - name: 検索と分析の設定を構成する
               href: configure-search-and-analytics-settings-in-advanced-ediscovery.md
-        - name: 電子情報開示 (プレミアム) のリファレンス
+        - name: Advanced eDiscovery の参照
           items:
-            - name: 電子情報開示 (プレミアム) の制限
+            - name: Advanced eDiscovery の制限
               href: limits-ediscovery20.md
             - name: サポートされているファイルの種類
               href: supported-filetypes-ediscovery20.md
             - name: ドキュメントのメタデータ フィールド
               href: document-metadata-fields-in-advanced-ediscovery.md
-            - name: Teams チャット メッセージの検索と消去
-              href: search-and-delete-Teams-chat-messages.md
             - name: 履歴バージョンを設定する
               href: advanced-ediscovery-historical-versions.md
             - name: 弁護士/依頼人特権の検出を設定する
@@ -1575,8 +908,6 @@
               href: permissions-filtering-for-content-search.md
             - name: 電子情報開示のためにメールボックスに保存されているコンテンツ
               href: what-is-stored-in-exo-mailbox.md
-            - name: Graph コネクタの電子情報開示
-              href: ediscovery-graph-connector.md
             - name: 電子情報開示ツールでの復号化
               href: ediscovery-decryption.md
             - name: 会話レビュー セット
@@ -1595,32 +926,30 @@
   items:
     - name: メールボックスに適用されている保留の種類を特定する方法
       href: identify-a-hold-on-an-exchange-online-mailbox.md
+    - name: 訴訟ホールドを作成する
+      href: create-a-litigation-hold.md
     - name: 保留中のメールボックスの 回復可能なアイテム フォルダーのアイテムを削除する
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: 保留中のメールボックスの回復可能なアイテムのクォータを拡大する
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
-    - name: 訴訟ホールドを作成する
-      href: create-a-litigation-hold.md
     - name: Bccと拡張配布グループの受信者を保持する
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: 監査と通知ポリシーを管理する
   items:
-    - name: Microsoft Purview 監査ソリューション
+    - name: Microsoft 365 監査ソリューション
       href: auditing-solutions-overview.md
-    - name: 監査 (標準)
+    - name: 基本的な監査
       items:
-        - name: 監査の設定 (標準)
+        - name: 基本的な監査の設定
           href: set-up-basic-audit.md
         - name: 監査ログの検索
           href: search-the-audit-log-in-security-and-compliance.md
-        - name: 新しい検索の監査
-          href: audit-new-search.md
-        - name: 監査ログ レコードをエクスポート、構成、表示する
-          href: export-view-audit-log-records.md
         - name: PowerShell スクリプトを使用して監査ログを検索する
           href: audit-log-search-script.md
         - name: 監査ログの詳細なプロパティ
           href: detailed-properties-in-the-office-365-audit-log.md
+        - name: 監査ログ レコードをエクスポート、構成、表示する
+          href: export-view-audit-log-records.md
         - name: 監査のオンとオフを切り替える
           href: turn-audit-log-search-on-or-off.md
         - name: 監査ログを使用して一般的な問題を調査する
@@ -1635,15 +964,15 @@
               href: /office/office-365-management-api/office-365-management-activity-api-schema
             - name: Office 365 マネージメント アクティビティ API の FAQ とトラブルシューティング
               href: /office/office-365-management-api/troubleshooting-the-office-365-management-activity-api
-    - name: 監査 (プレミアム)
+    - name: 高度な監査
       items:
-        - name: 監査の概要 (プレミアム)
+        - name: 高度な監査の概要
           href: advanced-audit.md
-        - name: 監査の設定 (プレミアム)
+        - name: 高度な監査の設定
           href: set-up-advanced-audit.md
         - name: 監査ログの保持ポリシーを管理する
           href: audit-log-retention-policies.md
-        - name: 監査 (プレミアム) を使用して、侵害されたアカウントを調査する
+        - name: 高度な監査を使用して、侵害されたアカウントを調査する
           href: mailitemsaccessed-forensics-investigations.md
     - name: メールボックスの監査
       href: enable-mailbox-auditing.md
@@ -1675,13 +1004,11 @@
           href: compliance-manager-templates-format-excel.md
         - name: コンプライアンスマネージャーテンプレートの一覧
           href: compliance-manager-templates-list.md
-        - name: 改善のための処置の操作
+        - name: 改善アクションの割り当てと完了
           href: compliance-manager-improvement-actions.md
-        - name: アラート ポリシーを作成および管理する
-          href: compliance-manager-alert-policies.md
         - name: コンプライアンススコアの計算方法
           href: compliance-score-calculation.md
-        - name: Microsoft Purview 用の構成アナライザー
+        - name: コンプライアンス構成アナライザー ツール
           href: compliance-manager-mcca.md
         - name: よく寄せられる質問 (FAQ)
           href: compliance-manager-faq.yml
@@ -1693,6 +1020,10 @@
           href: ../solutions/financial-services-secure-collaboration.md
         - name: エネルギー サービスのセキュリティとコンプライアンス
           href: ../solutions/energy-secure-collaboration.md
+- name: プライバシー管理
+  items:
+    - name: プライバシー管理の詳細
+      href: /privacy/solutions/privacymanagement/privacy-management
 - name: ハイブリッド コンプライアンス機能
   items:
     - name: AD RMS による Exchange Online のメールの暗号化
@@ -1706,7 +1037,5 @@
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
-- name: Microsoft Priva
-  href: /privacy/priva/
 - name: トラブルシューティング
   href: /office365/troubleshoot/microsoft-365-compliance-welcome
