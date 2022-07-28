@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 447a4b5eb3f4eb521e7cc3bd2df23a42f16d2ef1
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: c7350059bdd5006cf57ccf35f71b67e371e75708
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171852"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059746"
 ---
 # <a name="update-incidents-api"></a>インシデント API を更新する
 
@@ -70,7 +70,7 @@ PATCH /api/incidents/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 ---|---|---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|文字列|application/json. **必須**。
@@ -79,7 +79,7 @@ Content-Type|文字列|application/json. **必須**。
 
 要求本文で、更新する必要があるフィールドの値を指定します。 要求本文に含まれていない既存のプロパティは、関連する値の変更が原因で再計算する必要がない限り、その値を保持します。 パフォーマンスを最大限に高めるには、変更されていない既存の値を省略する必要があります。
 
-プロパティ|種類|説明
+プロパティ|型|説明
 ---|---|---
 status|列挙|インシデントの現在の状態を指定します。 指定できる値は、次`Resolved``Redirected`のとおりです。 `Active`
 assignedTo|string|インシデントの所有者。
@@ -87,6 +87,9 @@ classification|列挙|インシデントの仕様。 可能な値は `Unknown`�
 決定|列挙|インシデントの決定を指定します。 可能な値は、`NotAvailable`、`Apt`、`Malware`、`SecurityPersonnel`、`SecurityTesting`、`UnwantedSoftware`、`Other` です。
 tags|string List|インシデント タグの一覧。
 comment|string|インシデントに追加するコメント。
+
+>[!NOTE]
+>2022 年 8 月 29 日頃、以前にサポートされていたアラート決定値 ('Apt' と 'SecurityPersonnel') は非推奨になり、API 経由では使用できなくなります。
 
 ## <a name="response"></a>応答
 

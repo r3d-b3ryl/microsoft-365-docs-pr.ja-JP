@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3344bb13d785739f7957c3b0d000b04ae7fea95b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: e03de336dbbcdad5b9e18730936a507bf1d627bc
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284387"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059834"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -61,11 +61,11 @@ ms.locfileid: "61284387"
 
 ****
 
-|プロパティ|種類|説明|
+|プロパティ|型|説明|
 |---|---|---|
 |id|String|アラート ID。|
 |title|String|警告タイトル。|
-|説明|String|警告の説明。|
+|description|String|警告の説明。|
 |alertCreationTime|Null 許容 DateTimeOffset|アラートが作成された日時 (UTC)。|
 |lastEventTime|Null 許容 DateTimeOffset|同じデバイスでアラートをトリガーしたイベントの最後の発生。|
 |firstEventTime|Null 許容 DateTimeOffset|そのデバイスでアラートをトリガーしたイベントの最初の発生。|
@@ -76,7 +76,7 @@ ms.locfileid: "61284387"
 |investigationState|Null 許容列挙型|[調査](automated-investigations.md)の現在の状態。 指定できる値は、"不明"、"終了済み" です。 'SuccessfullyRemediated'、'Benign'、'Failed'、'PartiallyRemediated'、'Running'、'PendingApproval'、'PendingResource'、'PartiallyInvestigated'、'TerminatedByUser'、'TerminatedBySystem'、'Queued'、'InnerFailure'、'PreexistingAlert'、'UnsupportedAlertType'、'SuppressedAlert'。|
 |assignedTo|String|アラートの所有者。|
 |rbacGroupName|String|RBAC デバイス グループ名。|
-|mitreTechniques|String|Mitre Enterprise手法 ID。|
+|mitreTechniques|String|Mitre Enterprise の手法 ID。|
 |relatedUser|String|特定のアラートに関連するユーザーの詳細。|
 |severity|列挙|アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium'、'High' です。|
 |status|列挙|アラートの現在の状態を指定します。 指定できる値は、"不明"、"新規"、"InProgress"、"解決済み" です。|
@@ -93,6 +93,9 @@ ms.locfileid: "61284387"
 |comments|アラート コメントの一覧|Alert Comment オブジェクトには、コメント文字列、createdBy 文字列、createTime の日付時刻が含まれます。|
 |証拠|アラートの証拠の一覧|アラートに関連する証拠。 次の例を参照してください。|
 |
+
+>[!NOTE]
+>2022 年 8 月 29 日頃、以前にサポートされていたアラート決定値 ('Apt' と 'SecurityPersonnel') は非推奨になり、API 経由では使用できなくなります。
 
 ### <a name="response-example-for-getting-single-alert"></a>1 つのアラートを取得するための応答の例:
 

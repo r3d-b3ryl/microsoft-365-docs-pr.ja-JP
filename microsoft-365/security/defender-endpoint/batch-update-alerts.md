@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a2d695a2b406d4850f0e9896af3ec3b2aede8870
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 4837bde82ad11545e17a7432cc701be7c14a28f7
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283643"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059845"
 ---
 # <a name="batch-update-alerts"></a>アラートのバッチ更新
 
@@ -40,7 +40,7 @@ ms.locfileid: "61283643"
 
 ## <a name="api-description"></a>API の説明
 
-既存のアラートのバッチのプロパティを更新 [します](alerts.md)。
+既存のアラートのバッチのプロパティを更新[します](alerts.md)。
 
 **コメント** の送信は、プロパティの更新の有無にかかわらず使用できます。
 
@@ -74,7 +74,7 @@ POST /api/alerts/batchUpdate
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 Content-Type | 文字列 | application/json. **必須**。
@@ -87,14 +87,17 @@ Content-Type | 文字列 | application/json. **必須**。
 
 最適なパフォーマンスを得るためには、変更されていない既存の値を含めないでください。
 
-プロパティ | 種類 | 説明
+プロパティ | 型 | 説明
 :---|:---|:---
-alertIds | ListString&lt;&gt;| 更新するアラートの ID の一覧。 **必須**
+alertIds | リスト&lt;文字列&gt;| 更新するアラートの ID の一覧。 **必須**
 status | String | 指定したアラートの更新された状態を指定します。 プロパティの値は、"新規"、"InProgress"、"Resolved" です。
 assignedTo | String | 指定したアラートの所有者
-classification | String | 指定したアラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive' です。 
+classification | String | 指定したアラートの仕様を指定します。 プロパティの値は、"True positive"、"Informational、expected activity"、"False positive" です。
 決定 | String | 指定したアラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
 comment | String | 指定したアラートに追加するコメント。
+
+>[!NOTE]
+>2022 年 8 月 29 日頃、以前にサポートされていたアラート決定値 ('Apt' と 'SecurityPersonnel') は非推奨になり、API 経由では使用できなくなります。
 
 ## <a name="response"></a>応答
 

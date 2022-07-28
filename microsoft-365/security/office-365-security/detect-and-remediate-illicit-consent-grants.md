@@ -5,47 +5,47 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyp
 manager: dansimp
-ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
+ms.date: 07/28/2022
 ms.localizationpriority: medium
 search.appverid:
 - MET150
-description: Microsoft 365で不正な同意許可攻撃を認識し、修復する方法について説明します。
+description: Microsoft 365 での不正な同意許可攻撃を認識し、修復する方法について説明します。
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: db401231a2db0bddf1115cbdf14ae14cc9897f57
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 354e32ca01a17be69f0bb144a437fd3e825613ea
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61935452"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059713"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>不正な同意許可を検出して修復する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-**概要** Microsoft 365で不正な同意許可攻撃を認識し、修復する方法について説明します。
+**概要**  Microsoft 365 での不正な同意許可攻撃を認識し、修復する方法について説明します。
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-microsoft-365"></a>Microsoft 365での不正な同意付与攻撃とは何ですか?
+## <a name="what-is-the-illicit-consent-grant-attack-in-microsoft-365"></a>Microsoft 365 での不正な同意付与攻撃とは何ですか?
 
 不正な同意許可攻撃では、攻撃者は、連絡先情報、電子メール、ドキュメントなどのデータへのアクセスを要求する Azure 登録アプリケーションを作成します。 その後、攻撃者は、フィッシング攻撃を通じて、または信頼できる Web サイトに不正なコードを挿入することによって、そのアプリケーションにデータへのアクセスに同意することをエンド ユーザーに許可させます。 不正なアプリケーションに同意が与えられた後、組織のアカウントを必要とせずに、データに対するアカウント レベルのアクセス権を持ちます。 侵害されたアカウントのパスワードのリセットやアカウントでの多要素認証 (MFA) の要求など、通常の修復手順は、サード パーティ製のアプリケーションであり、組織の外部にあるため、この種の攻撃には対して有効ではありません。
 
 これらの攻撃は、情報を呼び出しているエンティティが自動化であり、人間であると推測する相互作用モデルを利用します。
 
 > [!IMPORTANT]
-> 現在、アプリからの不正な同意許可に関する問題が発生していると思われますか? Microsoft Defender for Cloud Appsには、OAuth アプリを検出、調査、修復するためのツールがあります。 このDefender for Cloud アプリの記事には、[危険な OAuth アプリの調査](/cloud-app-security/investigate-risky-oauth)に関する手順を説明するチュートリアルがあります。 [OAuth アプリ ポリシー](/cloud-app-security/app-permission-policy)を設定して、アプリが要求したアクセス許可 (ユーザーがこれらのアプリを承認している) を調査し、これらのアクセス許可要求を広く承認または禁止することもできます。
+> 現在、アプリからの不正な同意許可に関する問題が発生していると思われますか? Microsoft Defender for Cloud Appsには、OAuth アプリを検出、調査、修復するためのツールがあります。 この Defender for Cloud Apps の記事には、 [危険な OAuth アプリの調査](/cloud-app-security/investigate-risky-oauth)に関する手順を説明するチュートリアルがあります。 [OAuth アプリ ポリシー](/cloud-app-security/app-permission-policy)を設定して、アプリが要求したアクセス許可 (ユーザーがこれらのアプリを承認している) を調査し、これらのアクセス許可要求を広く承認または禁止することもできます。
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>不正な同意許可攻撃は、Microsoft 365ではどのようなものですか?
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-microsoft-365"></a>Microsoft 365 では、不正な同意許可攻撃はどのようなものですか?
 
 この攻撃の侵害のインジケーター (IOC) とも呼ばれる兆候を見つけるには、 **監査ログ** を検索する必要があります。 多くの Azure 登録済みアプリケーションと大規模なユーザー ベースを持つ組織の場合、ベスト プラクティスは、組織の同意付与を毎週確認することです。
 
@@ -57,11 +57,11 @@ ms.locfileid: "61935452"
    - **日付と時刻の範囲**
    - **アクティビティ**: **[すべてのアクティビティの結果を表示する** ] が選択されていることを確認します。
 
-   完了したら、[**検索**] をクリックします。
+   完了したら、**[検索]** をクリックします。
 
 3. [ **アクティビティ** ] 列をクリックして結果を並べ替え、[ **アプリケーションへの同意] を** 探します。
 
-4. 一覧からエントリを選択すると、アクティビティの詳細が表示されます。 IsAdminContent が True に設定されているかどうかを確認します。
+4. 一覧からエントリを選択すると、アクティビティの詳細が表示されます。 IsAdminConsent が True に設定されているかどうかを確認します。
 
 > [!NOTE]
 >
@@ -81,15 +81,15 @@ ms.locfileid: "61935452"
 
 ## <a name="inventory-apps-with-access-in-your-organization"></a>組織内のアクセス権を持つアプリをインベントリする
 
-これは、Azure Active Directory ポータルまたは PowerShell を使用してユーザーに対して行うか、ユーザーにアプリケーション アクセスを個別に列挙させることができます。
+これを行うには、Azure Active Directory Portal または PowerShell を使用するか、ユーザーにアプリケーション アクセスを個別に列挙させます。
 
 ### <a name="steps-for-using-the-azure-active-directory-portal"></a>Azure Active Directory ポータルを使用するための手順
 
-Azure Active Directory ポータル<https://portal.azure.com>を使用して、個々のユーザーがアクセス許可を付与しているアプリケーションを検索できます。
+Azure Active Directory Portal <https://portal.azure.com>を使用して、個々のユーザーがアクセス許可を付与したアプリケーションを検索できます。
 
 1. 管理者権限でAzure portalにサインインします。
 2. Azure Active Directory ブレードを選択します。
-3. **[ユーザー]** を選択します。
+3. [**ユーザー**] を選択します。
 4. 確認するユーザーを選択します。
 5. **[アプリケーション]** を選択します。
 
@@ -105,7 +105,7 @@ Azure Active Directory ポータル<https://portal.azure.com>を使用して、�
 
 #### <a name="pre-requisites"></a>前提条件
 
-- インストールされている powerShell ライブラリAzure AD。
+- Azure AD PowerShell ライブラリがインストールされています。
 - スクリプトを実行するテナントに対する権限をグローバル管理者します。
 - スクリプトを実行するコンピューター上のローカル管理者。
 
@@ -114,11 +114,11 @@ Azure Active Directory ポータル<https://portal.azure.com>を使用して、�
 
 1. ローカル管理者権限でスクリプトを実行するコンピューターにサインインします。
 
-2. [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) スクリプトをGitHubからスクリプトを実行するフォルダーにダウンロードまたはコピーします。 これは、出力 "permissions.csv" ファイルが書き込まれるのと同じフォルダーになります。
+2. [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) スクリプトを GitHub からスクリプトを実行するフォルダーにダウンロードまたはコピーします。 これは、出力 "permissions.csv" ファイルが書き込まれるのと同じフォルダーになります。
 
 3. 管理者として PowerShell セッションを開き、スクリプトの保存先フォルダーを開きます。
 
-4. [Connect-AzureAD](/powershell/module/azuread/connect-azuread) コマンドレットを使用してディレクトリにConnectします。
+4. [Connect-AzureAD](/powershell/module/azuread/connect-azuread) コマンドレットを使用してディレクトリに接続します。
 
 5. 次の PowerShell コマンドを実行します。
 
@@ -128,9 +128,9 @@ Azure Active Directory ポータル<https://portal.azure.com>を使用して、�
 
 このスクリプトは、Permissions.csv という名前の 1 つのファイルを生成します。 不正なアプリケーションアクセス許可付与を探すには、次の手順に従います。
 
-1. ConsentType 列 (列 G) で、値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可を使用すると、クライアント アプリケーションはテナント内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブ Microsoft 365 アプリケーションが正しく動作するには、このアクセス許可が必要です。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重に確認する必要があります。
+1. ConsentType 列 (列 G) で、値 "AllPrinciples" を検索します。 AllPrincipals アクセス許可を使用すると、クライアント アプリケーションはテナント内のすべてのユーザーのコンテンツにアクセスできます。 ネイティブ Microsoft 365 アプリケーションでは、正しく動作するには、このアクセス許可が必要です。 このアクセス許可を持つ Microsoft 以外のすべてのアプリケーションは、慎重に確認する必要があります。
 
-2. [アクセス許可] 列 (列 F) で、委任された各アプリケーションがコンテンツに対して持つアクセス許可を確認します。 "読み取り" と "書き込み" アクセス許可または "*" を探します。All" アクセス許可を付与し、適切でない可能性があるため、慎重に確認してください。
+2. [アクセス許可] 列 (列 F) で、委任された各アプリケーションがコンテンツに対して持つアクセス許可を確認します。 "読み取り" アクセス許可と "書き込み" アクセス許可または "すべて" アクセス許可を探し、適切でない可能性があるため、これらを慎重に確認します。
 
 3. 同意が付与されている特定のユーザーを確認します。 高プロファイルまたは影響の大きいユーザーに不適切な同意が付与されている場合は、さらに調査する必要があります。
 
@@ -147,8 +147,8 @@ Azure Active Directory ポータル<https://portal.azure.com>を使用して、�
 
 不正アクセス許可を持つアプリケーションを特定したら、そのアクセスを削除する方法はいくつかあります。
 
-- Azure Active Directory ポータルでは、次の方法でアプリケーションのアクセス許可を取り消すことができます。
-  1. [Azure Active Directory ユーザー] ブレードで、影響を受ける **ユーザー** に移動します。
+- 次の方法で、Azure Active Directory Portal でアプリケーションのアクセス許可を取り消すことができます。
+  1. **[Azure Active Directory** ユーザー] ブレードで、影響を受けるユーザーに移動します。
   2. **[アプリケーション]** を選択します。
   3. 不正なアプリケーションを選択します。
   4. ドリルダウンで **[削除]** をクリックします。
@@ -165,14 +165,14 @@ Azure Active Directory ポータル<https://portal.azure.com>を使用して、�
 
 Microsoft 365 サブスクリプションには、データとユーザーを保護するために使用できる強力なセキュリティ機能のセットが用意されています。 [Microsoft 365 セキュリティ ロードマップ - 最初の 30 日間、90 日間、およびそれ以降の最優先事項](security-roadmap.md)を使用して、Microsoft 365 テナントをセキュリティで保護するために Microsoft が推奨するベスト プラクティスを実装します。
 
-- 最初の 30 日間で完了すべき作業。すぐにユーザーに影響しますが、それほど大きな影響ではありません。
+- 最初の 30 日間に実行するタスク。 これらは即座に影響を与え、ユーザーへの影響が低くなります。
 - 最初の 90 日間で完了すべき作業。作業の計画と実装に少し時間がかかりますが、セキュリティ体制は大幅に向上します。
 - 90 日以降。最初の 90 日間の作業で保護が強化されます。
 
 ## <a name="see-also"></a>関連項目
 
 - [アプリケーションの一覧の予期しないアプリケーション](/azure/active-directory/application-access-unexpected-application) では、データにアクセスできる予期しないアプリケーションがあることに気付いた後に、管理者が実行する必要があるさまざまなアクションについて説明します。
-- [アプリケーションとAzure Active Directoryの統合](/azure/active-directory/active-directory-apps-permissions-consent)は、同意とアクセス許可の概要です。
+- [アプリケーションと Azure Active Directory の統合](/azure/active-directory/active-directory-apps-permissions-consent) は、同意とアクセス許可の概要です。
 - [アプリケーションの開発に関する問題](/azure/active-directory/active-directory-application-dev-development-content-map) は、さまざまな同意に関連する記事へのリンクを提供します。
-- [Azure Active Directory (Azure AD) のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](/azure/active-directory/develop/active-directory-application-objects)は、アプリケーション モデルの中核となるアプリケーション およびサービス プリンシパル オブジェクトの概要を提供します。
+- [Azure Active Directory (Azure AD) のアプリケーション オブジェクトとサービス プリンシパル オブジェクト](/azure/active-directory/develop/active-directory-application-objects) は、アプリケーション モデルの中核となるアプリケーション およびサービス プリンシパル オブジェクトの概要を提供します。
 - [アプリへのアクセスの管理](/azure/active-directory/active-directory-managing-access-to-apps) は、管理者がアプリへのユーザー アクセスを管理するために必要な機能の概要です。

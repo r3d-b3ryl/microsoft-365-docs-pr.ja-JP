@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4efe1460374350d054bbe6d19543c75454d7b5ce
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 141f57f50b8400c0fdf2b40e9d8190be96b0fe1b
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61370322"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059823"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -38,7 +38,7 @@ ms.locfileid: "61370322"
 [!Include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API の説明
-既存のアラートのプロパティを更新 [します](alerts.md)。
+既存の[アラート](alerts.md)のプロパティを更新します。
 
 **コメント** の送信は、プロパティの更新の有無にかかわらず使用できます。
 
@@ -72,7 +72,7 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|種類|説明
+名前|型|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|文字列|application/json. **必須**。
@@ -85,13 +85,16 @@ Content-Type|文字列|application/json. **必須**。
 
 パフォーマンスを最大限に高めるには、変更されていない既存の値を含めてはなりません。
 
-プロパティ|種類|説明
+プロパティ|型|説明
 :---|:---|:---
 状態|String|アラートの現在の状態を指定します。 プロパティの値は、"新規"、"InProgress"、"Resolved" です。
 assignedTo|String|アラートの所有者
 分類|String|アラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive' です。
 決定|String|アラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
 コメント|文字列|アラートに追加するコメント。
+
+>[!NOTE]
+>2022 年 8 月 29 日頃、以前にサポートされていたアラート決定値 ('Apt' と 'SecurityPersonnel') は非推奨になり、API 経由では使用できなくなります。
 
 ## <a name="response"></a>応答
 
