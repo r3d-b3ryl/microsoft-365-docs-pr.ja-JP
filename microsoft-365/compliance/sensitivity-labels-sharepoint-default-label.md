@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 新しいドキュメントとラベルのないドキュメントの SharePoint ドキュメント ライブラリの既定の秘密度ラベルを構成します。
-ms.openlocfilehash: b0a94e3390533f5350f317316a811c17fc34aa28
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: cbe3dab1ff70b55f85727649883beab0d2fdc456
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069804"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071333"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>SharePoint ドキュメント ライブラリの既定の秘密度ラベルを構成する
 
@@ -29,6 +29,8 @@ ms.locfileid: "67069804"
 
 > [!NOTE]
 > この機能はプレビュー段階で段階的に展開され、変更される可能性があります。 また、機能が一般公開 (GA) になったときに提供されるライセンスの詳細を含むプレミアム機能でもあります。
+> 
+> プレビューのお知らせを読むには、 [Yammer の投稿](https://www.yammer.com/askipteam/threads/1846702701985792)を参照してください。
 
 [SharePoint で秘密度ラベルが有効になっている](sensitivity-labels-sharepoint-onedrive-files.md)場合は、ドキュメント ライブラリの既定のラベルを構成できます。 その後、そのライブラリにアップロードされた新しいファイル、またはライブラリで編集された既存のファイルには、秘密度ラベルがない場合、または秘密度ラベルが付いているが [優先度が低い](sensitivity-labels.md#label-priority-order-matters)場合に、そのラベルが適用されます。
 
@@ -52,13 +54,15 @@ Office on the webを使用してファイルを作成または編集する場合
 |:-----|:-----|:-----|
 |任意の優先順位で手動で適用| いいえ |
 |自動的に適用され、優先度が低い | はい |
-|自動的に適用され、優先度が高い | いいえ |
+|自動的に適用され、優先度が高い | 不要 |
 |ポリシーからの既定のラベル、優先度の低い | はい |
 |ポリシーからの既定のラベル、優先度が高い | いいえ |
 
 ## <a name="requirements"></a>要件
 
 - [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にしています](sensitivity-labels-sharepoint-onedrive-files.md)。
+
+- [ライブラリに対して SharePoint Information Rights Management (IRM) が有効になっていません](set-up-irm-in-sp-admin-center.md#irm-enable-sharepoint-document-libraries-and-lists)。 この古いテクノロジは、SharePoint ドキュメント ライブラリの既定の秘密度ラベルの使用と互換性がありません。 ライブラリが IRM に対して有効になっている場合、既定の秘密度ラベルを選択することはできません。
 
 ## <a name="limitations"></a>制限事項
 
