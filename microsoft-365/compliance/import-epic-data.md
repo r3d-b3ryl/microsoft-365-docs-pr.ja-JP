@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、組織のエピック システムから Microsoft 365 に電子医療レコード (EHR) データをインポートするためのデータ コネクタを設定できます。 これにより、インサイダー リスク管理ポリシーでエピック EHR データを使用して、従業員による患者データへの不正アクセス アクティビティを検出できます。
-ms.openlocfilehash: d12dd85fb084813e730c4c1e02e8e440d3acc16f
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 6ff5719e61e754ba907daef36bb927cb2ad71d50
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822781"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071593"
 ---
 # <a name="set-up-a-connector-to-import-epic-ehr-audit-data-preview"></a>エピック EHR 監査データをインポートするコネクタを設定する (プレビュー)
 
-Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定して、組織のエピック電子医療レコード (EHR) システムでユーザー アクティビティの監査レコードをインポートできます。 エピック EHR システムの監査レコードには、患者の健康記録へのアクセスに関連するイベントのレコードが含まれます。 エピック EHR 監査レコードは、Microsoft 365 [インサイダー リスク管理ソリューション](insider-risk-management.md) で使用して、患者情報への不正アクセスから組織を保護するのに役立ちます。
+Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定して、組織のエピック電子医療レコード (EHR) システムでユーザー アクティビティの監査レコードをインポートできます。 エピック EHR システムの監査レコードには、患者の健康記録へのアクセスに関連するイベントのレコードが含まれます。 エピック EHR 監査レコードは、Microsoft Purview [Insider Risk Management ソリューション](insider-risk-management.md) で使用して、患者情報への不正アクセスから組織を保護するのに役立ちます。
 
 エピック コネクタの設定は、次のタスクで構成されます。
 
@@ -100,7 +100,7 @@ Azure AD でアプリを作成する手順については、「[アプリケー�
 
    コネクタが作成されたことを確認する状態ページが表示されます。 このページには、サンプル スクリプトを実行してエピック EHR 監査レコードデータをアップロードするために、次の手順を完了する必要がある 2 つの重要な点が含まれています。
 
-    ジョブ ID を含むページを確認し、サンプル スクリプトの github にリンクする
+    ジョブ ID を使用してページを確認し、サンプル スクリプトの GitHub にリンクする
 
     1. **ジョブ ID。** 次の手順でスクリプトを実行するには、このジョブ ID が必要です。 このページまたはコネクタ ポップアップ ページからコピーできます。
 

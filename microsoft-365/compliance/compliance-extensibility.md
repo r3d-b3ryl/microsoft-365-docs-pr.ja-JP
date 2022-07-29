@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティのデータ コネクタと Microsoft Graph API を使用して Microsoft Purview ソリューションを拡張する方法について説明します。
-ms.openlocfilehash: 8cda9ea3a5ef69af69ab802ca21aa8c4c0e716b9
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66621185"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071549"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Microsoft Purview とMicrosoft Priva機能拡張
 
@@ -41,7 +41,7 @@ Microsoft Purview ソリューションは、組織がコンプライアンス �
 
 Microsoft は、Microsoft Purview コンプライアンス ポータルで構成できるサード パーティのデータ コネクタを提供します。 Microsoft が提供するデータ コネクタの一覧については、「[サードパーティのデータ コネクタ](archiving-third-party-data.md#third-party-data-connectors)」の表を参照してください。 サード パーティのデータ コネクタの表には、Microsoft 365 でデータをインポートおよびアーカイブした後にサード パーティのデータに適用できるコンプライアンス ソリューションと、各コネクタの詳細な手順へのリンクもまとめられています。
 
-Microsoft 365 データ コネクタの詳細については、「 [サード パーティのデータのアーカイブ](archiving-third-party-data.md)」を参照してください。 コンプライアンス ポータルで使用できるデータ コネクタでサード パーティのデータ型がサポートされていない場合は、カスタム コネクタを提供できるパートナーと連携できます。 操作できるパートナーの一覧と、この方法のステップ バイ ステップ プロセスについては、「 [パートナーと連携してサード パーティのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)」を参照してください。
+Microsoft Purview Data Connectors の詳細については、「 [サード パーティのデータのアーカイブ](archiving-third-party-data.md)」を参照してください。 コンプライアンス ポータルで使用できるデータ コネクタでサード パーティのデータ型がサポートされていない場合は、カスタム コネクタを提供できるパートナーと連携できます。 操作できるパートナーの一覧と、この方法のステップ バイ ステップ プロセスについては、「 [パートナーと連携してサード パーティのデータをアーカイブする](work-with-partner-to-archive-third-party-data.md)」を参照してください。
 
 ### <a name="prerequisites-for-data-connectors"></a>データ コネクタの前提条件
 
@@ -105,7 +105,7 @@ Teams Export API の使用に関するライセンス要件については、 [�
 
 [Microsoft Graph コネクタ](/microsoftsearch/connectors-overview)を使用すると、組織はサード パーティのデータにインデックスを付けて、Microsoft Search の結果に表示されるようにすることができます。 この機能は、Microsoft 365 の生産性向上アプリと Microsoft の広範なエコシステムで検索可能な、コンテンツ ソースの種類を拡大しています。 サード パーティのデータは、オンプレミスまたはパブリッククラウドまたはプライベート クラウドでホストできます。 電子情報開示 (Premium) 以降、Microsoft 365 接続アプリの組み込みのコンプライアンス値の開発者プレビューが有効になります。 これにより、Microsoft 365 エコシステムに統合されたアプリのコンプライアンスが可能になり、シームレスなコンプライアンス エクスペリエンスをユーザーに提供できるようになります。 アプリ ビューに Microsoft Graph Connector API を組み込む方法の詳細については、 [Microsoft Graph での接続の作成、更新、および削除に関するページを](/graph/connecting-external-content-connectors-api-overview)参照してください。
 
-### <a name="microsoft-graph-api-for-records-management-preview"></a>Microsoft Graph API for records management (プレビュー)
+### <a name="microsoft-graph-api-for-records-management-preview"></a>レコード管理の Microsoft Graph API (プレビュー)
 
 あらゆる種類の組織では、データ全体で重要なレコードを管理するためのレコード管理ソリューションが必要です。 [Microsoft Purview レコード管理](records-management.md)は、組織が法的義務を管理し、規制への準拠を示す機能を提供し、不要になったアイテムを定期的に処理することで効率を向上させます。
 

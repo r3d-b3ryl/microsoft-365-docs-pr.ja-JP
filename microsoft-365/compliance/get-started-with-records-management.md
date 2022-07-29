@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者向けの規範的な手順、ライセンス要件、法的、ビジネス上、または規制上の義務に対して Microsoft 365 で価値の高いコンテンツを管理する一般的なシナリオ。
-ms.openlocfilehash: f5387ce7ee2094113a12a7074449a05311a79083
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: ed2e3735de6e7689d8abf238a491bac766f4e8f1
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944199"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069531"
 ---
 # <a name="get-started-with-records-management"></a>レコード管理の使用を開始する
 
@@ -43,6 +43,9 @@ Microsoft 365 のレコード管理ソリューションを使用して、組織
 
     - [アイテム保持ラベルを発行してアプリに適用する](create-apply-retention-labels.md)
     - [保持ラベルをコンテンツに自動的に適用する](apply-retention-labels-automatically.md)
+
+> [!TIP]
+> レコードを Microsoft 365 に移行していて、変更されていないことを検証する必要がある場合は、「[移行されたレコードの検証](records-management.md#validating-migrated-records)」を参照してください。
 
 ## <a name="subscription-and-licensing-requirements"></a>サブスクリプションとライセンス要件
 

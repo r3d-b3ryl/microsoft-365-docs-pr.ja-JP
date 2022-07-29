@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者は、SharePoint と OneDrive で Word、Excel、および PowerPoint ファイルの秘密度ラベルのサポートを有効にすることができます。
-ms.openlocfilehash: 15985ea95c3e4a562a4cbc51f84a10af2592d53f
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
+ms.openlocfilehash: b995d1b97676eb3251c33069ed20f9ce382a61bb
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687698"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069671"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にする
 
@@ -246,7 +246,7 @@ SharePoint 管理者が SharePoint に格納されているドキュメントか
 
 代わりに、グローバル管理者または [SharePoint 管理者](/sharepoint/sharepoint-admin-role) は [Unlock-SPOSensitivityLabelEncryptedFile](/powershell/module/sharepoint-online/unlock-sposensitivitylabelencryptedFile) コマンドレットを実行できます。これにより、秘密度ラベルと暗号化の両方が削除されます。 このコマンドレットは、管理者がサイトまたはファイルに対するアクセス許可を持っていない場合や、Azure Rights Management サービスが利用できない場合でも実行されます。
 
-次に例を示します。
+以下に例を示します。
 
 ```powershell
 Unlock-SPOSensitivityLabelEncryptedFile -FileUrl "https://contoso.com/sites/Marketing/Shared Documents/Doc1.docx" -JustificationText "Need to decrypt this file"
@@ -274,6 +274,9 @@ Microsoft 365 Multi-Geo がある場合は、それぞれの地域の場所に�
 
 ## <a name="next-steps"></a>次の手順
 
-SharePoint と OneDrive で Office ファイルの秘密度ラベルを有効にした後は、自動ラベル付けポリシーを使用してこれらのファイルに自動的にラベルを付けてみてください。 詳細については、「[秘密度ラベルを自動でコンテンツに適用する](apply-sensitivity-label-automatically.md)」を参照してください。
+SharePoint と OneDrive で Office ファイルの秘密度ラベルを有効にした後は、次のいずれかのラベル付け方法または両方のラベル付け方法を使用してファイルに自動的にラベルを付ける方法を検討してください。
+
+- SharePoint の新規ファイルと編集済みファイルに対して、ドキュメント ライブラリに既定の秘密度ラベルを適用します。 詳細については、「 [SharePoint ドキュメント ライブラリの既定の秘密度ラベルを構成する](sensitivity-labels-sharepoint-default-label.md)」を参照してください。
+- SharePoint と OneDrive のファイルのコンテンツ検査を使用する自動ラベル付けポリシー。 詳細については、「[秘密度ラベルを自動でコンテンツに適用する](apply-sensitivity-label-automatically.md)」を参照してください。
 
 ラベル付けおよび暗号化されたドキュメントを組織外の人々と共有する必要がありますか?  「[暗号化されたドキュメントを外部ユーザーと共有する](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users)」を参照してください。

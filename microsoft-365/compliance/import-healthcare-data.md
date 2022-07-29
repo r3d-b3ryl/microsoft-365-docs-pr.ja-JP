@@ -14,16 +14,16 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 description: 管理者は、医療システムから Microsoft 365 に電子医療レコード (EHR) データをインポートするデータ コネクタを設定できます。 これにより、インサイダー リスク管理ポリシーで EHR データを使用して、従業員による患者データへの不正アクセスアクティビティを検出できます。
-ms.openlocfilehash: dd34fc1e14680a5189c74443211f50fa51b87132
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 00d0419a2db39642b87797254f89dc1c721b69e2
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822959"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071527"
 ---
 # <a name="set-up-a-connector-to-import-healthcare-ehr-audit-data-preview"></a>医療 EHR 監査データをインポートするコネクタを設定する (プレビュー)
 
-Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定して、組織の電子医療レコード (EHR) システムでユーザー アクティビティの監査データをインポートできます。 医療 EHR システムからの監査データには、患者の健康記録へのアクセスに関連するイベントのデータが含まれます。 医療 EHR 監査データは、Microsoft 365 [インサイダー リスク管理ソリューション](insider-risk-management.md) で使用して、患者情報への不正アクセスから組織を保護するのに役立ちます。
+Microsoft Purview コンプライアンス ポータルでデータ コネクタを設定して、組織の電子医療レコード (EHR) システムでユーザー アクティビティの監査データをインポートできます。 医療 EHR システムからの監査データには、患者の健康記録へのアクセスに関連するイベントのデータが含まれます。 医療 EHR 監査データは、Microsoft Purview [Insider Risk Management ソリューション](insider-risk-management.md) で使用して、患者情報への不正アクセスから組織を保護するのに役立ちます。
 
 Healthcare コネクタの設定は、次のタスクで構成されます。
 

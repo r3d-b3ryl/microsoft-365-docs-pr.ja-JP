@@ -10,22 +10,23 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 07/28/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 6894b4a936af81cbd51dad34bbf6edf704e910a7
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: a692a82af0329c991ca153323552fd2a16c16547
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969422"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071461"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
-Defender for Business では、会社のデバイスのオンボードから選択できるオプションがいくつかあります。 この記事では、これらのオプションについて説明し、オンボードのしくみの概要を説明します。
+Defender for Business では、会社のデバイスをオンボードするうえでいくつかの方法があります。 この記事では、これらのオプションについて説明し、オンボードのしくみの概要を説明します。
 
 ## <a name="what-to-do"></a>操作
 
@@ -152,7 +153,7 @@ Defender for Business にオンボードされているデバイスの一覧を�
 > [!NOTE]
 > Mac をオンボードするには、 [ローカル スクリプトを](#local-script-for-mac)使用することをお勧めします。 [Intuneを使用して Mac の登録を設定](/mem/intune/enrollment/macos-enroll)できますが、ローカル スクリプトは、Mac を Defender for Business にオンボードするための最も簡単な方法です。 
 
-Mac をオンボードするには、次のいずれかのオプションを選択します。
+Mac をオンボードするには、次のいずれかの方法があります。
 
 - [Mac 用のローカル スクリプト](#local-script-for-mac) (*推奨*)
 - [Mac 用Intune](#intune-for-mac)
@@ -338,12 +339,16 @@ Defender for Business にオンボードされているデバイスの一覧を�
 
 Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business/index.yml)がある場合は、Intune。 
 
-これらのデバイスをIntuneに登録する方法については、次のリソースを参照してください。
+これらのデバイスを Intune に登録する方法については、次のリソースを参照してください。
 
 - [Android デバイスを登録する](/mem/intune/enrollment/android-enroll)
 - [iOS または iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)
 
 デバイスがIntuneに登録されたら、デバイス グループに追加できます。 [Defender for Business のデバイス グループの詳細については、こちらを参照してください](mdb-create-edit-device-groups.md)。
+
+## <a name="view-a-list-of-onboarded-devices"></a>オンボードされたデバイスの一覧を表示する
+
+Defender for Business にオンボードされているデバイスの一覧を表示するには、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動します。 ナビゲーション ウィンドウの [ **エンドポイント**] で、[ **デバイス インベントリ**] を選択します。
 
 ## <a name="next-steps"></a>次の手順
 

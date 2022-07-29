@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを作成する場合、ファイルまたはメールにラベルを自動的に割り当てるか、あるいは推奨するラベルを選択するようにユーザーに求めることができます。
-ms.openlocfilehash: bdf45f614434c5097a9c5ce656c94cab01a462b6
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 8c7ffa9ca56806daecb086dc828002eff3ccd663
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66696041"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069605"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>秘密度ラベルをコンテンツに自動的に適用する
 
@@ -317,7 +317,7 @@ Azure Information Protection 統合ラベル付けクライアントに関して
 
     ![自動ラベル付けの新しいポリシー構成。](../media/auto-labeling-wizard.png)
 
-4. [**このラベルを適用する情報を選択する**] ページの場合: [**財務**] または [**プライバシー**] などのテンプレートのいずれかを選択します。 ドロップダウンの **表示オプション** を使用して、検索を絞り込むことができます。 または、テンプレートが要件を満たしていない場合は、[**カスタム ポリシー**] を選択します。 [**次へ**] を選択します。
+4. [**このラベルを適用する情報を選択する**] ページの場合: [**財務**] または [**プライバシー**] などのテンプレートのいずれかを選択します。 ドロップダウンの **表示オプション** を使用して、検索を絞り込むことができます。 または、テンプレートが要件を満たしていない場合は、[**カスタム ポリシー**] を選択します。 **[次へ]** を選択します。
 
 5. [**自動ラベル ポリシーに名前を付ける**] ページの場合: 一意の名前を入力し、必要に応じて説明を入力して、自動的に適用されるラベル、場所、ラベル付けするコンテンツを識別する条件を識別します。
 
@@ -457,7 +457,9 @@ New-AutoSensitivityLabelRule -Policy <AutoLabelingPolicyName> -Name <AutoLabelin
 
 自動ラベル付けは、組織が所有する Office ファイルを分類、ラベル付け、および保護するための最も効率的な方法の 1 つですが、ラベル付けの範囲を拡大するための次の方法のいずれかで補足できるかどうかを確認してください。
 
-- SharePoint Syntex で、[ドキュメント理解モデルに感度ラベルを適用して](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)、SharePoint ライブラリ内で識別されたドキュメントは自動的にラベル付けされます。
+- SharePoint ドキュメント ライブラリの場合は、新規ファイルと編集済みファイルに既定の秘密度ラベルを適用できます。 詳細については、「[SharePoint ドキュメント ライブラリの既定の秘密度ラベルを構成する](sensitivity-labels-sharepoint-default-label.md)」を参照してください。
+
+- SharePoint Syntex で、[ドキュメント理解モデルに感度ラベルを適用する](/microsoft-365/contentunderstanding/apply-a-sensitivity-label-to-a-model)と、SharePoint ドキュメント ライブラリ内で識別されたドキュメントは自動的にラベル付けされます。
 
 - [Azure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)を使用する場合:
 

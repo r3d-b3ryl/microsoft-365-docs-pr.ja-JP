@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-get-started
 ms.localizationpriority: medium
-ms.openlocfilehash: 5e5b0aa9efb5d00602bba39ca18ef582cf34271a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 39af52a0c2b402a007899c0f13e718d4b90eada1
+ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632643"
+ms.lasthandoff: 07/29/2022
+ms.locfileid: "67071505"
 ---
 # <a name="quick-tasks-for-getting-started-with-compliance-in-microsoft-purview"></a>Microsoft Purview でのコンプライアンスの概要に関するクイック タスク
 
@@ -37,7 +37,7 @@ Microsoft Purview を初めて使用し、どこから始めればいいのか�
 
 まず、組織内のユーザーにコンプライアンスアクセス許可を割り当てて、これらのタスクを実行し、承認されていないユーザーが自分の責任の範囲外の領域にアクセスできないようにします。 Microsoft 365 に含まれるコンプライアンス ソリューションの構成と実装を開始する前に、適切なユーザーを **コンプライアンス データ管理者** と **コンプライアンス管理者** の管理者ロールに割り当てる必要があります。 また、コンプライアンス マネージャーでデータを表示するには、Azure Active Directory グローバル リーダー ロールにユーザーを割り当てる必要もあります。
 
-アクセス許可を構成し、管理者ロールにユーザーを割り当てる詳細なガイダンスについては、「 [セキュリティ & コンプライアンス センターのアクセス許可](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center)」を参照してください。
+アクセス許可を構成し、管理者ロールにユーザーを割り当てる詳細なガイダンスについては、[Microsoft Purview コンプライアンス ポータルのアクセス許可に関するページを](/microsoft-365/compliance/microsoft-365-compliance-center-permissions)参照してください。
 
 ## <a name="task-2-know-your-state-of-compliance"></a>タスク 2: コンプライアンスの状態を把握する
 

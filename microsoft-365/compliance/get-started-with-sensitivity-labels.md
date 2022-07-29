@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者、ライセンス要件、および機密ラベルを使用して組織のデータを保護する一般的なシナリオの規範的な手順。
-ms.openlocfilehash: 84e111bbcc6b0d12f1f209993b9c9a0404fa7a77
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2a82a788ae766050c663d3d35332470aa48d9a20
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949329"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069649"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>秘密度ラベルの使用を開始する
 
@@ -94,6 +94,7 @@ Microsoft Purview 機能のメリットを得られるようにユーザーに�
 |Windows 上の Office アプリの追加機能で (必要な場合)、ラベル付けをエクスプローラーと PowerShell に拡張する|[Windows 用のAzure Information Protection 統合ラベル付けクライアント](/azure/information-protection/rms-client/aip-clientv2)|
 |秘密度ラベルを使用してドキュメントやメールを暗号化し、そのコンテンツにアクセスできるユーザーとその使用方法を制限する |[秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する](encryption-sensitivity-labels.md)|
 |ドキュメントが暗号化されている場合でも、共同編集、電子情報開示、データ損失防止、検索をサポートし、Office on the web の秘密度ラベルを有効にする | [SharePoint および OneDrive で Office ファイルの機密度ラベルを有効にする](sensitivity-labels-sharepoint-onedrive-files.md)
+|既定の秘密度ラベルで自動的にラベル付けする SharePoint 内のファイル | [SharePoint ドキュメント ライブラリの既定の秘密度ラベルを構成する](sensitivity-labels-sharepoint-default-label.md)
 |ドキュメントが暗号化されている場合に、Office デスクトップ アプリで共同編集と自動保存を使用する | [機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする](sensitivity-labels-coauthoring.md)
 |秘密度ラベルをドキュメントとメールに自動的に適用する | [機密ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md)|
 |秘密度ラベルを使用して、Teams や SharePoint のコンテンツを保護する |[Microsoft Teams、Microsoft 365 グループ、SharePoint サイトで秘密度ラベルを使用する](sensitivity-labels-teams-groups-sites.md)|

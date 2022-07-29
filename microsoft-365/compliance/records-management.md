@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Microsoft Purview レコード管理が、ビジネス、法律、または規制の記録管理要件に対応する高価値のアイテムをどのようにサポートしているかをご覧ください。
-ms.openlocfilehash: 1a9d37f138647a36fb7440f15fd74851957b542f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 326731a80659b58368c41bff7894567e14e2d000
+ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66642330"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67069532"
 ---
 # <a name="learn-about-records-management"></a>レコード管理の詳細
 
@@ -114,6 +114,21 @@ Microsoft 365 サービスおよびアプリのレコード管理ソリューシ
 > また、SharePoint でチェックアウトされたドキュメントに規制ラベルを適用することはできません。
 >
 > これらの制限があり不可逆的なアクションであるため、保持ラベル用にこのオプションを選択する前に、本当に規制レコードを使用する必要があるかどうかをご確認ください。 誤った構成を防止するために、このオプションは既定では使用できなくなっていますが、PowerShell を使用して最初に有効にする必要があります。 手順は、「[保持ラベルを使用してレコードを宣言する](declare-records.md)」に含まれています。
+
+## <a name="validating-migrated-records"></a>移行されたレコードの検証
+
+SharePoint または OneDrive にレコードを移行する場合は、これらのレコードが変更されておらず、不変性の状態を保持していることを検証することが必要な場合があります。 たとえば、移行ソリューションを使用しており、レコードの保管要件のチェーンを満たす必要がある場合です。 SharePoint では、アップロード時にファイルのメタデータが自動的に更新されるため、ファイル サイズやファイル ハッシュなど、この種の検証によく使用される一般的なファイル プロパティとメソッドでは十分でない場合があります。
+
+代わりに、移行されたレコードを検証するために、`vti_writevalidationtoken` プロパティの値を使用できます。これは、SharePoint によって変更される前のファイルの base64 でエンコードされた XOR ハッシュです。 次の手順を実行します。
+
+1. QuickXorHash アルゴリズムを使用して、元のファイルの XOR ハッシュを生成します。 詳細については、[QuickXorHash アルゴリズムのコード スニペット](/onedrive/developer/code-snippets/quickxorhash)を参照してください。
+
+2. XOR ハッシュを Base64 エンコードします。 詳しくは、[Base64Encode メソッドのドキュメント](/windows/win32/seccrypto/utilities-base64encode)を参照してください。
+
+3. ファイルが移行されたら、アップロードされたファイルから `vti_writevalidationtoken` プロパティの値を取得します。
+
+4. 手順 2 で生成された値と、手順 3 で取得した値を比較します。 これら 2 つの値は一致する必要があります。 一致する場合は、レコードが変更されていないことを検証しました。
+
 
 ## <a name="configuration-guidance"></a>構成ガイダンス
 
