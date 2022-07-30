@@ -15,12 +15,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
 ms.date: 06/24/2022
-ms.openlocfilehash: 508bb081d2f5bfcc83538141d6abb28f857bda6e
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 7b16821f1e4e7b8829615d836bde52dd71a43a96
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912804"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099373"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル ストレージ Access Control
 
@@ -172,7 +172,7 @@ Microsoft エンドポイント マネージャー 管理センター (<https://
        `Disable: 0`
        `Enable: 1`
 
-     - [**保存**] をクリックします。
+     - **[保存]** をクリックします。
 
    :::image type="content" source="images/enable-rsac.png" alt-text="リムーバブル ストレージ Access Control ポリシーを有効にするスクリーンショット" lightbox="images/enable-rsac.png":::
 
@@ -191,7 +191,7 @@ Microsoft エンドポイント マネージャー 管理センター (<https://
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - [**保存**] をクリックします。
+     - **[保存]** をクリックします。
 
    :::image type="content" source="images/default-deny.png" alt-text="既定の適用を拒否として設定するスクリーンショット" lightbox="images/default-deny.png":::
 

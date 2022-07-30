@@ -20,12 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e083a9b0edd4895a2349d6508a30528bd86db5b
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050746"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099924"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Microsoft 365 Defenderの Defender Experts for Hunting レポートを理解する
 
@@ -100,7 +100,7 @@ Defender Experts for Hunting によるMicrosoft 365 Defenderと調査からの�
 - ランサムウェア
 - マルウェア
 - 武器化
-- 悪用
-- 配信
+- 搾り取る
+- 配達
 
 棒グラフに示されているように、最も影響を受けるカテゴリに基づいて修復に優先順位を付けることができます。

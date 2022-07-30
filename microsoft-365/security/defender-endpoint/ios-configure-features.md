@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7712b1b65db62625b853567f2d739d5f16787eb9
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 0e1971ba9b2c65dd02411d237ab3886c58fa7003
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051824"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099285"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-on-ios-features"></a>iOS 機能用 Microsoft Defender for Endpoint を構成する
 
@@ -79,7 +79,7 @@ Web Protection は Defender for Endpoint の主要な機能の 1 つであり、
     - [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、**アプリ** > **アプリ構成ポリシー** >  [**管理対象デバイス** の **追加]** >  に移動します。
     - ポリシーに、 **プラットフォーム > iOS/iPadOS** という名前を付けます。
     - ターゲット アプリとしてMicrosoft Defender for Endpointを選択します。
-    - [設定] ページで、[構成デザイナーの使用] を選択し、キーとして  **WebProtection** を追加し、値の型を **ブール値** として追加します。
+    - [設定] ページで、[構成デザイナーの使用] を選択し、キーとして **WebProtection** を追加し、値の型を **ブール値** として追加します。
         - 既定では、 **WebProtection= true です**。
         - 管理 Web 保護をオフにするには **、WebProtection = false** にする必要があります。
         - Defender は、ユーザーがアプリを開くたびに、Microsoft 365 Defender ポータルにハートビートを送信します。
@@ -90,7 +90,7 @@ Web Protection は Defender for Endpoint の主要な機能の 1 つであり、
     - [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)で、[**アプリ** > **アプリの構成ポリシー** > ]**[管理** アプリの **追加]** >  に移動します。
     - ポリシーに名前を付けます。
     - [パブリック アプリの選択] で、ターゲット アプリとして [Microsoft Defender for Endpoint] を選択します。
-    - [設定] ページの [全般構成設定] で、キーとして  **WebProtection** を追加し、 **値を false** として追加します。
+    - [設定] ページの [全般構成設定] で、キーとして **WebProtection** を追加し、 **値を false** として追加します。
         - 既定では、 **WebProtection= true です**。
         - 管理 Web 保護をオフにするには **、WebProtection = false** にする必要があります。
         - Defender は、ユーザーがアプリを開くたびに、Microsoft 365 Defender ポータルにハートビートを送信します。

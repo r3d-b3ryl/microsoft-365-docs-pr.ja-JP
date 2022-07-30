@@ -17,22 +17,22 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 31aaf297fd3622eede2e1532ad60a20666d1bd07
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
+ms.openlocfilehash: 840961a39f2e298bfc11eecdbb1344fc9c252c3a
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882894"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099065"
 ---
 # <a name="troubleshoot-auditd-performance-issues-with-microsoft-defender-for-endpoint-on-linux"></a>Linux 上のMicrosoft Defender for Endpointに関する AuditD パフォーマンスの問題のトラブルシューティング 
 
 この記事では、Linux 上のMicrosoft Defender for Endpointで発生する可能性がある AuditD 関連のパフォーマンスの問題をトラブルシューティングする方法に関するガイダンスを提供します。 
 
-**背景：** 
+**バックグラウンド：** 
 
 - Linux OS ディストリビューションのMicrosoft Defender for Endpointでは、AuditD フレームワークを使用して特定の種類のテレメトリ イベントを収集します。 
 
-- 追加 `/etc/audit/rules.d/` された規則によってキャプチャされたシステム イベントは audit.log に追加され、ホストの監査とアップストリームの収集に影響を与える可能性があります。  
+- 追加 `/etc/audit/rules.d/` されたルールによってキャプチャされたシステム イベントは、監査.logに追加され、ホストの監査とアップストリームの収集に影響を与える可能性があります。  
 
 - Linux でMicrosoft Defender for Endpointによって追加されたイベントには、キーがタグ付`mdatp`けされます。 
 
@@ -42,7 +42,7 @@ ms.locfileid: "66882894"
 
 - **_mdatp_audisp_plugin_** プロセスからの **高い CPU** リソース消費量。 
 
-- ***/var/log/audit/audit.log*** が大規模になったり、頻繁にローテーションされたりしています。 
+- ***/var/log/audit/audit.log*** 大きいか頻繁にローテーションされます。 
 
 これらの問題は、AuditD が大量に発生するイベントが多いサーバーで発生する可能性があります。  
 

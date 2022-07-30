@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: c7350059bdd5006cf57ccf35f71b67e371e75708
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059746"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100055"
 ---
 # <a name="update-incidents-api"></a>インシデント API を更新する
 
@@ -129,7 +129,7 @@ comment|string|インシデントに追加するコメント。
 }
 ```
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Microsoft 365 Defender API にアクセスする](api-access.md)
 - [API の制限とライセンスについて学習する](api-terms.md)

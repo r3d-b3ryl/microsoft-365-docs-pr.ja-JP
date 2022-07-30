@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 9b2e3e540538c3757d49264d93929b1dc9c836ca
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 6da9ec9f0d59d04d61d4a957f5a914b06b140fac
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059779"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099219"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -272,7 +272,7 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 
 - ユーザーが高リスクとしてタグ付けされていない
 
-両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、アラートが解決された後、Microsoft Teams に投稿されます。
+両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、アラートが解決された後、Microsoft Teamsに投稿されます。
 
 ### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Power Automate をMicrosoft Defender for Cloud Appsに接続する
 

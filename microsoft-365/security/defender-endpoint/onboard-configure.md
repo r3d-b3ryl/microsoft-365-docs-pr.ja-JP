@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 309baa41f217cbac9a865317084f284b3d22961b
-ms.sourcegitcommit: bc35c7826e3403f259725ac72cca5bafd36aa56a
+ms.openlocfilehash: f52dd982c9a418af9184389e8e83e6077326ee80
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/30/2022
-ms.locfileid: "66554227"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100010"
 ---
 # <a name="onboard-devices-and-configure-microsoft-defender-for-endpoint-capabilities"></a>デバイスにオンボードして、Microsoft Defender for Endpoint 機能 を構成します
 
@@ -41,6 +41,18 @@ Microsoft Defender for Endpointのデプロイは、2 段階のプロセスで�
 - サービスの機能を構成する
 
 :::image type="content" source="images/deployment-steps.png" alt-text="オンボードと構成プロセス" lightbox="images/deployment-steps.png":::
+
+## <a name="role-based-access-control"></a>役割ベースのアクセス制御
+
+Privileged Identity Managementを使用してロールを管理し、ディレクトリアクセス許可を持つユーザーに追加の監査、制御、アクセス レビューを提供することをお勧めします。
+
+Defender for Endpoint では、アクセス許可を管理する 2 つの方法がサポートされています。
+
+- **基本的なアクセス許可管理**: アクセス許可をフル アクセスまたは読み取り専用に設定します。 Azure Active Directory (Azure AD) のグローバル管理者ロールまたはセキュリティ管理者ロールを持つユーザーは、フル アクセス権を持ちます。 セキュリティ リーダー ロールには読み取り専用アクセス権があり、マシン/デバイス インベントリを表示するためのアクセス権は付与されません。
+
+- **ロールベースのアクセス制御 (RBAC)**: ロールを定義し、Azure AD ユーザー グループをロールに割り当て、ユーザー グループにデバイス グループへのアクセス権を付与することで、きめ細かなアクセス許可を設定します。 詳細はこちら。 [ロールベースのアクセス制御を使用したポータル アクセスの管理に関する](rbac.md)ページを参照してください。
+
+RBAC を利用して、ビジネス上の正当な理由があるユーザーのみが Defender for Endpoint にアクセスできるようにすることをお勧めします。
 
 ## <a name="onboard-devices-to-the-service"></a>デバイスをサービスにオンボードする
 サポートされているデバイスをオンボードするには、Defender for Endpoint ポータルのオンボード セクションに移動する必要があります。 デバイスに応じて、適切な手順と、デバイスに適した管理および展開ツールのオプションが提供されます。 
@@ -62,7 +74,7 @@ Microsoft Defender for Endpointのデプロイは、2 段階のプロセスで�
 | **Windows クライアント**  |     [モバイル デバイス管理/Microsoft Intune](configure-endpoints-mdm.md) <br> [グループ ポリシー](configure-endpoints-gp.md) <br> [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>[VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)   |
 | **Windows Server**  | [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)   |
 | **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
-| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [人形](linux-install-with-puppet.md) <br> [アンシブル](linux-install-with-ansible.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)      |
+| **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [人形](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md) <br> [Microsoft Defender for Cloudとの統合](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)      |
 | **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)           |
 | **Android**  | [Microsoft エンドポイント マネージャー](android-intune.md)            | 
 
@@ -90,9 +102,9 @@ Microsoft Defender for Endpointのデプロイは、2 段階のプロセスで�
 
 |オペレーティング システム  |Windows 10 & 11  |Windows Server 2012 R2 <sup>[[1](#fn1)]<sup></sup>  |<sup>Windows Server 2016[[1](#fn1)]<sup></sup>   |Windows Server 2019 & 2022|Windows Server 1803 以降|
 |---------|---------|---------|---------|---------|---------|
-|**防止**    |         |         |         |         |         |
+|**予防**    |         |         |         |         |         |
 |攻撃面の縮小ルール     |    Y     |   Y      |    Y     |    Y     |    Y     |
-|デバイス コントロール     |     Y    |    N     |    N     |    N     |    N     |  
+|デバイス制御     |     Y    |    N     |    N     |    N     |    N     |  
 |ファイアウォール     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |ネットワーク保護     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |次世代の保護     |      Y   |    Y     |     Y    |    Y    |    Y   |
@@ -107,7 +119,7 @@ Microsoft Defender for Endpointのデプロイは、2 段階のプロセスで�
 |センス検出センサー     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |エンドポイント&ネットワーク デバイス検出     |      Y   |    N     |     N    |    N    |    N   |
 |||||||
-|**Response**     |         |         |         |||
+|**応答**     |         |         |         |||
 |自動調査&応答 (AIR)    |      Y   |    Y     |     Y    |    Y    |    Y   |
 |デバイス応答機能: 分離、調査パッケージの収集、AV スキャンの実行     |      Y   |    Y     |     Y    |    Y    |    Y   |
 |ファイル応答機能: ファイルの収集、詳細な分析、ファイルのブロック、停止、検疫のプロセス     |      Y   |    Y     |     Y    |    Y    |    Y   |

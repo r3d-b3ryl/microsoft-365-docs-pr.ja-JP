@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4837bde82ad11545e17a7432cc701be7c14a28f7
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 7bda1310178759def39b6ba9baedb25de875fb11
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059845"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099153"
 ---
 # <a name="batch-update-alerts"></a>アラートのバッチ更新
 

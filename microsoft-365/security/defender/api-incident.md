@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: bd8c98d533fd5186285a099b4991d527a6302274
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 45a6e14d6c3514a63869cc9d7229cda8dd511334
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059757"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100077"
 ---
 # <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defenderインシデント API とインシデント リソースの種類
 
@@ -84,7 +84,7 @@ comments | インシデント コメントの一覧 | インシデント コメ�
 >[!NOTE]
 >2022 年 8 月 29 日頃、以前にサポートされていたアラート決定値 ('Apt' と 'SecurityPersonnel') は非推奨になり、API 経由では使用できなくなります。
 
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 - [Microsoft 365 Defender API の概要](api-overview.md)
 - [インシデントの概要](incidents-overview.md)
