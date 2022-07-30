@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 monikerRange: o365-worldwide
@@ -21,20 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: SharePoint Migration Manager を使用して、ビジネス向け Microsoft 365 に Google ファイルを移行する方法について説明します。
-ms.openlocfilehash: 68b3a0455a2bf57e35308c428bf2b5de3e4b5983
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 55dd5740192914b89e7be1da070b97b4f6983c97
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602118"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085564"
 ---
-# <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migration Manager を使用してビジネス向けに Google ファイルを Microsoft 365 に移行する
+# <a name="migrate-google-files-to-microsoft-365-for-business-with-migration-manager"></a>Migration Manager を使用して Google ファイルを一般法人向け Microsoft 365 に移行する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 ## <a name="watch-migrate-google-files-to-microsoft-365-for-business"></a>ウォッチ: Google ファイルをビジネス向け Microsoft 365 に移行する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198217)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198217)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWSx43?autoplay=false]
 

@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - seo-marvel-may2020
@@ -31,16 +32,16 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Gmail や他のメール プロバイダーから連絡先、予定表、メールをインポートし、Microsoft 365 に移行する方法について説明します。
-ms.openlocfilehash: 14f4e1d630c19038f3bf9204d52f62b2f2f18d5d
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 769ac7b2ee1a84767fe71d45ee9214927044213b
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602980"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086915"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Microsoft 365 へのメールと連絡先の移行
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 Gmail やその他のメール プロバイダーから Microsoft 365 にメールをインポートまたは移行します。
   
@@ -53,7 +54,7 @@ Gmail やその他のメール プロバイダーから Microsoft 365 にメー�
   
 ## <a name="watch-import-and-redirect-email"></a>注目 : 電子メールをインポートして再配置しましょう。
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197916)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197916)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
 

@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 search.appverid:
@@ -20,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 メール用に Outlook を設定する方法について説明します。
-ms.openlocfilehash: c7b1aa8890e3824e085bf2a8bc170f8f34010c88
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: da922bd4a82497e5bb5f37e5c2bc35247fe940bf
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602792"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084831"
 ---
 # <a name="set-up-outlook-for-microsoft-365-for-business-email"></a>ビジネス用メールのOutlook for Microsoft 365を設定する 
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 ## <a name="watch-set-up-outlook-for-email"></a>注目 : Outlook を電子メール用にセットアップして下さい。
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198010)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198010)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
 

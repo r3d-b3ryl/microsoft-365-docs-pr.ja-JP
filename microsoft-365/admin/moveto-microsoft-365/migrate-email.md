@@ -1,5 +1,5 @@
 ---
-title: Google ワークスペースからビジネス用メールと予定表を移行する
+title: Google Workspace からビジネス メールと予定表を移行する
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: メール、連絡先、予定表を Google ワークスペースから Microsoft 365 for Business に移行する方法について説明します。
-ms.openlocfilehash: be7637816f80ecba3c56db644114d5ddb00caeb7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: aeb369ce41863fe4556544e314f10b347eaa6b05
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602040"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087377"
 ---
-# <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google ワークスペースからビジネス用メールと予定表を移行する
+# <a name="migrate-business-email-and-calendar-from-google-workspace"></a>Google Workspace からビジネス メールと予定表を移行する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 ## <a name="watch-migrate-business-email-and-calendar-from-google-workspace"></a>ウォッチ: Google ワークスペースからビジネス用メールと予定表を移行する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198034)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198034)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
@@ -61,7 +62,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
      秘密キーは、デバイス上のダウンロード フォルダーに保存されます。
  
-1. **[閉じる]** を選択します。 
+1. [**閉じる**] を選択します。 
 
 ### <a name="enable-api-usage-for-the-project"></a>プロジェクトの API の使用を有効にする
 
@@ -148,6 +149,6 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 1. 状態が **[同期済み**] に変更されたら、[ **この移行バッチを完了** する]、[ **はい**] の順に選択します。 
 1. プロセスが完了すると、状態は **[完了]** に変わります。 
 1. 必要に応じて、[詳細の **表示** ] を選択して移行の詳細を確認できます。 
-1. **[閉じる]** を選択します。 
+1. [**閉じる**] を選択します。 
 1. Outlook を開き、Google ワークスペースからのすべてのメールが正常に移行されたことを確認します。
 予定表アイテムと連絡先についても、これを繰り返すことができます。

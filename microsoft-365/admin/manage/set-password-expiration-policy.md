@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
@@ -26,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
-ms.openlocfilehash: b7f7691d0c1c0e6177d5414bc7802b62bb07a3b3
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+ms.openlocfilehash: 48dfd933cad12d309a6c00ec15a7226ae918e79d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468780"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083997"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>組織のパスワード有効期限ポリシーを設定します。
 

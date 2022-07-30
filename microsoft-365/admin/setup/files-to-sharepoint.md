@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 search.appverid:
@@ -20,26 +21,26 @@ search.appverid:
 - MET150
 - MOE150
 description: 会社のファイルを SharePoint に移動する方法について説明します。
-ms.openlocfilehash: 86fc2585d7bb3e182fcb64fa526ad464fa1b4271
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 2f12283d952ee3b59bf636c836b2310b171eefa7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602074"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083929"
 ---
 # <a name="move-files-to-sharepoint"></a>SharePoint にファイルを移動する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 ## <a name="watch-move-company-files-to-sharepoint"></a>ウォッチ: 会社のファイルを SharePoint に移動する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198210)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198210)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
 
 Microsoft 365 Business Premiumにサインアップすると、会社の仕事用ファイルを SharePoint にコピー&#39;。 SharePoint は、すべてのユーザーがアクセスする必要がある共有会社ファイルを格納するのに適した場所です。 これは通常、ファイル共有またはネットワーク ドライブの使用を置き換えます。
 
-1. Microsoft Teams を開き、ビジネスのすべてのユーザーがアクセスできるチームを開きます。
+1. Microsoft Teamsを開き、ビジネスのすべてのユーザーがアクセスできるチームを開きます。
 2. **[ファイル]** を選択し、[**SharePoint で開く**] を選択します。
 3. **[ドキュメント]** を選択して、サイトにすべてが保存されている場所に移動します。
 4. **[同期**] を選択し、[**はい**] を選択します。 これにより、SharePoint サイトのファイルがコンピューターに同期されます。
