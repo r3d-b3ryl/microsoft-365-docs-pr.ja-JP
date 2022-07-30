@@ -15,6 +15,7 @@ ms.collection:
 - Adm_TOC
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -23,13 +24,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Microsoft 365でドメイン名を購入する方法について説明します。
-ms.openlocfilehash: 8b9c4cea91caf91b5797515314342a7967af96d1
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: Microsoft 365 でドメイン名を購入する方法について説明します。
+ms.openlocfilehash: 2f238698892e1a1d97c7d50fdad281e8973cb515
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316983"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085183"
 ---
 # <a name="buy-a-domain-name"></a>ドメイン名を購入する
 
@@ -40,7 +41,7 @@ ms.locfileid: "63316983"
 
  探している内容が見つからない場合は、**[ドメインに関する FAQ を確認Q](../setup/domains-faq.yml)** を参照してください。 
   
-## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして [設定 Domains Buy a domain]\(\>ドメインを\>購入\) に移動します
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>サインインして [設定ドメイン] \> に移動する ドメインを購入する\>
 
 1. 管理センターで、**[設定]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">[ドメイン]</a> ページの順に移動します。
     
@@ -76,10 +77,10 @@ ms.locfileid: "63316983"
 ドメインを購入すると、無料の Domain Privacy サブスクリプションが提供されます。 これにより、ICANN プライベートを使用してドメインの登録に連絡先情報が添付されます。 [詳細情報](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ## <a name="buy-a-domain-from-another-domain-registrar"></a>別のドメイン レジストラーからドメインを購入する
-[GoDaddy](https://www.godaddy.com) 以外のドメイン レジストラーからドメインを購入する場合は、自動セットアップ (ドメイン Connect) をサポートするドメインレジストラーを使用することをお勧めします。 
+[GoDaddy](https://www.godaddy.com) 以外のドメイン レジストラーからドメインを購入する場合は、自動セットアップ (Domain Connect) をサポートするドメイン レジストラーを使用することをお勧めします。 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
-- [ワードプレス](https://www.wordpress.com) 
+- [WordPress](https://www.wordpress.com) 
 
    
 ## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>ドメインを別のドメイン レジストラーに移行する
@@ -94,17 +95,17 @@ ms.locfileid: "63316983"
 
 専用ドメインをまだ持っていない場合は、ドメイン名レジストラー、ドメイン リセラー、現在のインターネット プロバイダーなどからオンラインで簡単に購入できます。21Vianet が運営する Office 365 にサインアップすると、たとえば、contoso.partner.onmschina.cn のようなドメイン名を与えられますが、fourthcoffee.com のようなカスタム ドメイン名を使うこともできます。
   
-Microsoft 365でドメインを設定するには、ドメインを所有し、ドメインの DNS レコードの一部を変更する必要があります。
+Microsoft 365 でドメインを設定するには、ドメインを所有し、ドメインの DNS レコードの一部を変更する必要があります。
   
 > [!CAUTION]
-> 一部のドメイン レジストラーまたは DNS ホスティング プロバイダーでは、Microsoft 365に必要なすべての DNS レコードの作成が許可されていません。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
+> 一部のドメイン レジストラーまたは DNS ホスティング プロバイダーでは、Microsoft 365 で必要なすべての DNS レコードの作成が許可されていません。 必要なすべてのレコードをサポートしているホスティング プロバイダーの一覧を次に示します。 別のホスティング プロバイダーの使用を考えている場合は、 [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77)してください。 
   
-ドメインを (ドメイン レジストラーで) 登録した後、管理者としてMicrosoft 365にサインインします。次に、電子メール アドレスやその他のサービスで使用できるようにドメインを設定します。
+ドメインを (ドメイン レジストラーで) 登録した後、管理者として Microsoft 365 にサインインします。次に、電子メール アドレスやその他のサービスで使用できるようにドメインを設定します。
   
 > [!NOTE]
-> この記事のSharePoint オンラインパブリック Web サイト情報は、組織が 2015 年 3 月 9 日より前にMicrosoft 365購入した場合にのみ適用されます。 
+> この記事の SharePoint Online パブリック Web サイト情報は、組織が 2015 年 3 月 9 日より前に Microsoft 365 を購入した場合にのみ適用されます。 
 
-### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365に必要なすべての DNS レコードをサポートするドメイン レジストラー
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Microsoft 365 に必要なすべての DNS レコードをサポートするドメイン レジストラー
 
 - [Oray](https://oray.com/)
 
@@ -118,6 +119,6 @@ Microsoft 365でドメインを設定するには、ドメインを所有し、�
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365にドメインを追加する](../setup/add-domain.md) (記事)\
+[Microsoft 365 にドメインを追加する](../setup/add-domain.md) (記事)\
 [ドメインの FAQ](../setup/domains-faq.yml) (記事)\
 [現在のホスティング プロバイダーで Web サイトを維持するように DNS レコードを更新](../dns/update-dns-records-to-retain-current-hosting-provider.md) する (記事)

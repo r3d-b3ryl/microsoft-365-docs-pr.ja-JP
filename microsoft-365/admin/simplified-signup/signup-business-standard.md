@@ -13,13 +13,14 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
+- VSBFY23
 description: Microsoft 365 Business Standard を購入し、組織を設定します。
-ms.openlocfilehash: af69dee6db7300a229d4be7c2a2466d7603e849f
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
-ms.translationtype: HT
+ms.openlocfilehash: 83841af8a538b861b43003c39bfb92a24a4e47aa
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65466242"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085073"
 ---
 # <a name="sign-up-for-a-microsoft-365-business-standard-subscription"></a>Microsoft 365 Business Standard サブスクリプションにサインアップする
 

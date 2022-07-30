@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 search.appverid:
@@ -20,20 +21,20 @@ search.appverid:
 - MET150
 - MOE150
 description: ファイルを OneDrive に移動する方法について説明します。
-ms.openlocfilehash: 589bfc5649cfea9090d8933b31b73184439d8f6a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: e660b8e0bab2a35d8c1bbcc548e1e1d379da3a40
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603838"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084039"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 ## <a name="watch-move-your-files-to-onedrive-for-business"></a>ウォッチ: ファイルをOneDrive for Businessに移動する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198202)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198202)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/d74b083c-1f44-43ea-8a14-2e1fc600b341?autoplay=false]
 

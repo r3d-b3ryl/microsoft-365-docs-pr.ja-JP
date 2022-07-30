@@ -13,19 +13,21 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- VSBFY23
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: '新しいパスワードで元の電子メールを取得しなかった場合は、ユーザーのパスワードをリセットして、Microsoft 365の新しいユーザーに通知メールを再送信します。 '
-ms.openlocfilehash: b6b8aab70cb48bb288485d52efd3a958c4df0888
-ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
+description: '新しいパスワードで元の電子メールを取得しなかった場合は、ユーザーのパスワードをリセットして、Microsoft 365 の新しいユーザーに通知メールを再送信します。 '
+ms.openlocfilehash: a735f02000fade93f0d2824352f48abb01a27f61
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "65636154"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084699"
 ---
 # <a name="resend-a-microsoft-365-users-password---admin-help"></a>Microsoft 365 ユーザーのパスワードを再送信する - 管理 ヘルプ
 

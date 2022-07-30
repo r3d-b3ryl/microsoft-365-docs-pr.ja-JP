@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams のクラスと会議を Open LMS と統合する
+title: Microsoft Teamsクラスと会議を Open LMS と統合する
 ms.author: danismith
 author: DaniEASmith
 manager: serdars
@@ -12,14 +12,14 @@ f1.keywords:
 ms.collection: M365-modern-desktop
 ms.localizationpriority: medium
 description: Microsoft Learning Tools 相互運用性 for Open LMS を使用して Teams のクラスと会議を作成および管理します。
-ms.openlocfilehash: 25babbafb4a8640b389fd655ddf63b23665d8c9d
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 264f9a2129d36b1d6ab3dae2afdb14973f3deac5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943246"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086453"
 ---
-# <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Open LMS 内で Microsoft Teams のクラスと会議を統合する
+# <a name="integrate-microsoft-teams-classes-and-meetings-within-open-lms"></a>Open LMS 内でMicrosoft Teamsクラスと会議を統合する
 
 このガイドでは、Teams クラスと Teams Meetings LTI アプリの両方を Open LMS に登録するための IT 管理者の手順について説明します。
 
@@ -29,9 +29,9 @@ ms.locfileid: "66943246"
 
 Open LMS と Teams の統合が正しく機能するには、Open LMS と Teams が相互に通信するように設定する必要があります。
 
-[Moodle プラグインをインストールして構成する手順に](open-lms-plugin-configuration.md)従います。
+[Moodle LMS プラグインをインストールして構成する手順に](open-lms-plugin-configuration.md)従います。
 
-## <a name="register-microsoft-teams-lti-for-use-in-open-lms"></a>Open LMS で使用するために Microsoft Teams LTI を登録する
+## <a name="register-microsoft-teams-lti-for-use-in-open-lms"></a>Open LMS で使用するために LTI Microsoft Teams登録する
 
 > [!IMPORTANT]
 > この統合を実行するユーザーは、Open LMS 管理者と Microsoft 365 テナント管理者である必要があります。

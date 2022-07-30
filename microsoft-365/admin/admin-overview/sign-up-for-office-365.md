@@ -16,6 +16,7 @@ ms.collection:
 - TRN_SMB
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_signup
 - TRN_M365B
 - OKR_SMB_Videos
@@ -29,18 +30,18 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Office 365のサインアップ プロセスを実行する前に、Office プログラムの最新バージョンについて知っておくべきことを理解します。
 ms.date: 03/17/2021
-ms.openlocfilehash: 400c30fd1b6879097afe510f36582c46879c85a5
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b8bddd621998fcebf319b2d4ed2386a78375fc70
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601182"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084567"
 ---
 # <a name="how-to-sign-up---admin-help"></a>サインアップする方法 - 管理 ヘルプ
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
-チームが最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムの使用を開始できるように、Microsoft 365 for Business にサインアップします。
+一般法人向け Microsoft 365 にサインアップすると、お客様のチームは会社で最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムの使用を開始できます。
 
 ::: moniker range="o365-21vianet"
 
@@ -49,7 +50,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 > [!NOTE]
 > これらのサービスは中国の法律に従います。
   
-チームが最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムの使用を開始できるように、21Vianet が運営するOffice 365にサインアップします。
+チームが最新バージョンの Word、Excel、PowerPoint、およびその他の Office プログラムの使用を開始できるように、21Vianet によって運用されているOffice 365にサインアップします。
   
 サインアップする準備はできましたか? [プランを選択します](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)。
   
@@ -63,7 +64,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ## <a name="watch-choose-a-microsoft-365-subscription"></a>ウォッチ: Microsoft 365 サブスクリプションを選択する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198032)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198032)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -100,7 +101,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
     > [!NOTE]
     > ここで入力するメール アドレスは、Microsoft 365 のメール アドレス (以下のログオン名) とは異なります。 このアドレスには課金情報も送信されるため、ビジネス メールの受信に適したメール アドレスを使用することをお勧めします。
   
-- **サインイン名 (ユーザー ID):** このユーザー ID は、Microsoft 365 の最初のメール アドレスになり、すぐに使い始められます。
+- **サインイン名 (ユーザー ID):** このユーザー ID は、Microsoft 365 の最初のメール アドレスになり、すぐに使用を開始できます。
 
     このユーザー ID は、サインインに使用する電子メール アドレスです。 たとえば会社名が「Fourth Coffee」の場合には、ユーザー ID として rob@fourthcoffee.onmicrosoft.com を選ぶことができます。
 

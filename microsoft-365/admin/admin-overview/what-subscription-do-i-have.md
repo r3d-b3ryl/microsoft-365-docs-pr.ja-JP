@@ -1,5 +1,5 @@
 ---
-title: どのようなMicrosoft 365サブスクリプションがありますか?
+title: Microsoft 365 サブスクリプションは何がありますか?
 f1.keywords:
 - NOCSH
 author: cmcatee-MSFT
@@ -16,25 +16,26 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
-description: '[製品] ページに移動して、組織が持つMicrosoft 365サブスクリプションを確認する方法について説明します。'
+description: '[製品] ページに移動して、組織が所有する Microsoft 365 サブスクリプションを確認する方法について説明します。'
 ms.date: 01/21/2021
-ms.openlocfilehash: fb2b3354bd9d12f50b2b70291b6ecba94dd4c9b3
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: f7242af91fc3e5a5c5f45d0fc3bdfda6f220bc70
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101528"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084523"
 ---
-# <a name="which-microsoft-365-subscription-do-i-have"></a>どのMicrosoft 365サブスクリプションがありますか?
+# <a name="which-microsoft-365-subscription-do-i-have"></a>どの Microsoft 365 サブスクリプションがありますか?
 
 管理者の場合は、管理センターに移動して、組織が持つサブスクリプションを確認できます。
   
-**管理者ではない場合**: [ビジネス向け製品またはライセンスのMicrosoft 365については、以下をご覧ください。](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**管理者ではない場合**: [ビジネス向け製品またはライセンスにはどのような Microsoft 365 がありますか?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
 2. [ **製品** ] タブには、すべてのサブスクリプションが表示されます。 各サブスクリプション行には、ライセンス、サブスクリプションの状態、および課金に関する情報が含まれています。

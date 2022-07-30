@@ -18,12 +18,12 @@ description: 電子メール内の悪意のあるファイルから組織を保�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f93f264ac22be594bfb34601c3f243a2c7c145b4
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: ab34c9945bdf86369a338c1c7390500043798fb9
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773161"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086039"
 ---
 # <a name="set-up-safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365で安全な添付ファイル ポリシーを設定する
 
@@ -70,7 +70,7 @@ Exchange Online PowerShell またはスタンドアロン EOP PowerShell では�
 
   詳細については、[Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)と[Exchange Onlineのアクセス許可に関するページを参照](/exchange/permissions-exo/permissions-exo)してください。
 
-  **注意**:
+  **注**:
 
   - Microsoft 365 管理センターで対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
@@ -109,14 +109,14 @@ Microsoft 365 Defender ポータルでカスタムの安全な添付ファイル
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
    > [!IMPORTANT]
-   > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+   > 複数の異なる種類の条件や例外は加算されません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
    >
    > - 受信者は次のとおりです: romain@contoso.com
    > - 受信者が次のメンバーの場合: Executive
    >
-   > ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+   > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
    >
-   > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+   > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
    完了したら、**[次へ]** をクリックします。
 
@@ -238,7 +238,7 @@ PowerShell での安全な添付ファイル ポリシーの作成は、次の 2
 1. 安全な添付ファイル ポリシーを作成します。
 2. ルールが適用される安全な添付ファイル ポリシーを指定する安全な添付規則を作成します。
 
- **注意**:
+ **注**:
 
 - 新しい安全な添付規則を作成し、関連付けられていない既存の安全な添付ファイル ポリシーを割り当てることができます。 安全な添付ファイルルールを複数の安全な添付ファイル ポリシーに関連付けることはできません。
 

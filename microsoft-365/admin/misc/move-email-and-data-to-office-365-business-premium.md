@@ -14,7 +14,9 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 - SPO_Content
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -22,12 +24,12 @@ search.appverid:
 ms.assetid: 1062115d-e312-482a-bb5a-765235990f41
 ROBOTS: NOINDEX
 description: 新しいビジネス ID にデータを移動する方法について説明します。
-ms.openlocfilehash: 65dd8896d421a27c0519542760bb327d4944c52c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 59835134635c86a8970929fcb01f2d8de6320ca5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327127"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085621"
 ---
 # <a name="move-email-and-data-to-microsoft-365-business-standard"></a>メールとデータをMicrosoft 365 Business Standardに移動する
 
@@ -38,23 +40,23 @@ Microsoft 365 Business Standardにアップグレードすると、まったく�
 ## <a name="onedrive"></a>[OneDrive](#tab/OneDrive)
   
  **OneDrive データをコピーする**
-1. ハード ドライブに一時フォルダーを作成し、ビジネス向けのMicrosoft 365に移行するファイルを一時的に格納します。
+1. ハード ドライブに一時フォルダーを作成し、ビジネス向けに Microsoft 365 に移行するファイルを一時的に格納します。
     
 2. Microsoft 365 Family サブスクリプションへの[https://onedrive.live.com/](https://onedrive.live.com/)アクセスに使用する Microsoft アカウントに移動してサインインします。 
     
-3. Microsoft 365 for business で使用するファイルを、手順 1. で作成したローカル フォルダーにコピーします。
+3. Microsoft 365 for Business で使用するファイルを、手順 1. で作成したローカル フォルダーにコピーします。
     
- **OneDrive ファイルをビジネス向けのMicrosoft 365にインポートする**
+ **ビジネス向け Microsoft 365 に OneDrive ファイルをインポートする**
 1. [admin.microsoft.com](https://go.microsoft.com/fwlink/?LinkId=816877) に移動し、Microsoft 365 Apps for businessユーザー名とパスワードでサインインします。 
     
 2. 左上の **アプリ起動ツール** アイコンを選択し、[ **OneDrive**] を選択します。
   
     > [!TIP]
-    > OneDrive for Business を初めて開いたときに、OneDrive をセットアップする必要があります。 これが発生した場合は、[**OneDrive for Businessへようこそ**] ページで [**次へ**] を選択します。 OneDriveが設定されたら、[**OneDriveの準備完了**] を選択します。 
+    > OneDrive for Business を初めて開いたときに、OneDrive をセットアップする必要があります。 これが発生した場合は、[**OneDrive for Businessへようこそ**] ページで [**次へ**] を選択します。 OneDrive を設定したら、[ **OneDrive の準備完了**] を選択します。 
   
 3. You'll be taken to an empty OneDrive folder. サブフォルダーを作成する場合は、[**新しい**\>フォルダー] を選択 **します**。
 
-4. **アップロード** を選択して、OneDrive ファイルをコピーしたハード ドライブからファイルをコピーします。 
+4. [ **アップロード]** を選択して、OneDrive ファイルをコピーしたハード ドライブからファイルをコピーします。 
   
     > [!NOTE]
     >  個々のファイルとファイルのグループ (特定のフォルダー内のすべてのファイルなど) を同時にアップロードできますが、OneDrive for Business にフォルダーをコピーすることはできません。代わりに、OneDrive for Business に必要なフォルダー構造を作成する必要があります。 >  手順 4 で作成したフォルダーにファイルをコピーする場合は、ファイルをアップロードする前に、そのフォルダーを開きます。そうしないと、ファイルはルート フォルダーにアップロードされます。ファイルのアップロード後、OneDrive for Business のフォルダー間でファイルを移動することもできます。 
@@ -67,14 +69,14 @@ Microsoft 365 Business Standardにアップグレードすると、まったく�
 2. 各ユーザーは、「[メール、連絡先、予定表を Outlook の .pst ファイルにエクスポートまたはバックアップする](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)」の手順を実行する必要があります。
     
  **Outlook で新しいメール アカウントをセットアップする**
-1. 各ユーザーは、ビジネス サブスクリプションのMicrosoft 365に付属する新しい電子メール アカウントを設定する必要があります。 これを行うには、新しいメール アカウントのアドレスが必要です。 各ユーザーの電子メール アカウントは、ビジネス向けのMicrosoft 365にサインインするために使用するユーザー名と同じです。 Sue@contoso.onmicrosoft.com や david@contoso.com のようなものになります。
+1. 各ユーザーは、ビジネス向け Microsoft 365 サブスクリプションに付属する新しいメール アカウントを設定する必要があります。 これを行うには、新しいメール アカウントのアドレスが必要です。 各ユーザーの電子メール アカウントは、ビジネス向け Microsoft 365 へのサインインに使用するユーザー名と同じです。 Sue@contoso.onmicrosoft.com や david@contoso.com のようなものになります。
     
 2. 各ユーザーに、メール アカウントを Outlook に追加するように求めます。この方法については、「[Outlook 2010 または 2013 で Office 365 のメールを設定する](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b)」または「[Outlook for Mac 2011 で電子メールを設定する](https://support.microsoft.com/office/de372dc4-9648-4044-a76c-e8a60e178d54)」を参照してください。
     
  **Outlook データ ファイルから情報をインポートする**
-1. これにより、PST ファイルに保存されているメール、予定表、タスク、連絡先が、ビジネス用メール アカウントのMicrosoft 365にマージされます。
+1. これにより、PST ファイルに保存されている電子メール、予定表、タスク、連絡先が、ビジネス用の Microsoft 365 メール アカウントにマージされます。
     
-2. PST ファイルに格納されている情報をビジネス用メール アカウントのMicrosoft 365にインポートするには、各ユーザーにOutlook [.pst ファイルから電子メール、連絡先、予定表をインポートする手順を](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)完了させます。
+2. PST ファイルに格納されている情報を Microsoft 365 for Business メール アカウントにインポートするには、各ユーザーに [Outlook .pst ファイルから電子メール、連絡先、予定表をインポートする手順を](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)完了させます。
     
 ---
 

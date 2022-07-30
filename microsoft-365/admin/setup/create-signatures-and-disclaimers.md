@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - seo-marvel-may2020
@@ -27,22 +28,22 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: 組織に出入りするすべての電子メール メッセージの法的免責事項や開示声明など、電子メール署名を管理します。
-ms.openlocfilehash: 47e6a862441b5c2725a48cae20669541b8a69f87
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 22cc27b48482bb6deb658a215d40eff2541be0a2
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602814"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087289"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>組織全体の署名と免責事項を作成する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
  電子メール署名を管理するには、電子メール署名、法的免責事項、または開示に関する声明を、組織に出入りする電子メール メッセージに追加します。 以下に示すように、すべての送受信メッセージに適用されるように設定できます。 または、特定の単語やテキスト パターンを含むメッセージなど、特定のメッセージに適用することができます。
 
 ## <a name="watch-create-a-company-wide-email-signature"></a>ウォッチ: 組織全体の電子メール署名を作成する
   
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198031)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198031)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 

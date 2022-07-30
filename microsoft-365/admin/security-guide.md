@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom:
+- VSBFY23
 - SMB_SuccessCenter
 - seo-marvel-mar
 - AdminSurgePortfolio
@@ -17,16 +18,16 @@ search.appverid:
 - MET150
 - MOE150
 description: ビジネスが直面するセキュリティ上の脅威と、自分と従業員がデータ、アカウント、デバイスを保護する簡単な方法について説明します。
-ms.openlocfilehash: 625fe763a8e1d2c6e0d4748fd96185d9bf654ee3
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 7bb3b978841d23f9ac579311be8d6731f687b45d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60191231"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086959"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>小規模企業向けのセキュリティ情報グラフィック
 
-**概要：** ビジネスが直面する脅威に関する基本的な用語と、データ、アカウント、デバイスを保護するためにできることについて説明します。 ビジネス向けのMicrosoft 365の管理者として、ビジネスの安全性を高めるためにアクションを実行し、すべての従業員がビジネス データとデバイスを安全に保つ方法を学習できるようにします。
+**概要：** ビジネスが直面する脅威に関する基本的な用語と、データ、アカウント、デバイスを保護するためにできることについて説明します。 ビジネス向け Microsoft 365 の管理者として、ビジネスの安全性を高めるためにアクションを実行し、すべての従業員がビジネス データとデバイスを安全に保つ方法を学習できるようにします。
 
 以下のPowerPointと PDF のリンクは、タブの形式 (台帳、11 x 17、または A3 とも呼ばれます) でダウンロードして印刷できます。
 

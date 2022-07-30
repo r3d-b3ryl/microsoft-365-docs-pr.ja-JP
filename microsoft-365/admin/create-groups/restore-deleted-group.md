@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: CSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
 description: 削除されたグループは 30 日間保持され、引き続きグループを復元できます。 30 日後、グループとそのコンテンツは完全に削除されます。
-ms.openlocfilehash: 926cfa18972a7ca72009258b02b565bd28a183be
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: f16d8b13ad020aec48d39a61e2429b088cc5f2d1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60165702"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084193"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>削除された Microsoft 365 グループを復元する
 
@@ -35,13 +35,13 @@ ms.locfileid: "60165702"
 
 グループを復元すると、次のコンテンツが復元されます。
   
-- Azure Active Directory (AD) Microsoft 365 グループオブジェクト、プロパティ、およびメンバー。
+- Azure Active Directory (AD) Microsoft 365 グループオブジェクト、プロパティ、およびメンバーです。
     
 - グループの電子メール アドレス。
     
 - 共有受信トレイと予定表をExchange Onlineします。
     
-- オンライン チーム サイトとファイルをSharePointします。
+- SharePoint Online チーム サイトとファイル。
     
 - OneNote ノートブック
     
@@ -49,7 +49,7 @@ ms.locfileid: "60165702"
     
 - Teams
 
-- Yammer グループとグループのコンテンツ (Microsoft 365 グループがYammerから作成された場合)
+- Yammer グループとグループ のコンテンツ (Microsoft 365 グループが Yammer から作成された場合)
 
 - Power BI [クラシック ワークスペース](/power-bi/collaborate-share/service-create-workspaces)
 
@@ -90,4 +90,4 @@ Microsoft 365 グループの所有者である場合は、次の手順に従っ
 [PowerShell を使用してMicrosoft 365 グループを管理](../../enterprise/manage-microsoft-365-groups-with-powershell.md)する (記事)\
 [Remove-UnifiedGroup コマンドレットを使用してグループを削除](/powershell/module/exchange/remove-unifiedgroup) する (article)\
 [グループに接続されたチーム サイトの設定を管理](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) する (記事)\
-[Outlookのグループを削除する](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (記事)
+[Outlook でグループを削除する](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (記事)

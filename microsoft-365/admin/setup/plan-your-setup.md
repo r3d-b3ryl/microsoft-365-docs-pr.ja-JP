@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - okr_smb
 - adminvideo
@@ -23,16 +24,16 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Microsoft 365 for Business への移行に関する要件と考慮事項について説明します。
-ms.openlocfilehash: 356d4cc1f696c871badcdceeb392c74b510cb49c
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 384d0573237104609937ad7627de1784a21a6158
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601160"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086475"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Microsoft 365 for business のセットアップを計画
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 この記事は、ビジネス プラン用の Microsoft 365 をサブスクライブしているユーザーを対象にしています。
   
@@ -40,7 +41,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ## <a name="overview-of-microsoft-365-for-business-setup"></a>ビジネス向け Microsoft 365 のセットアップの概要
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197910)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197910)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Vjso?autoplay=false]
 
@@ -87,7 +88,7 @@ Microsoft 365 を使用してビジネスをクラウドに移行するという
 
     2. コンピューターやデバイスで Word、Excel、および PowerPoint を使用するために、[Office アプリをダウンロードして、インストール](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)します。
 
-    3. 会議に使用するように [Microsoft Teams を設定](#plan-for-teams)します。
+    3. 会議に使用する[Microsoft Teamsを設定](#plan-for-teams)します。
 
     4. [コンテンツを Microsoft 365 クラウド ストレージ](set-up-file-storage-and-sharing.md) (OneDrive または SharePoint チーム サイト) に移動します。
 
@@ -95,7 +96,7 @@ Microsoft 365 を使用してビジネスをクラウドに移行するという
 
 ## <a name="check-that-your-devices-meet-system-requirements"></a>デバイスがシステム要件を満たしていることを確認する
 
-組織内の各ユーザーは、Office 2016 スイートのアプリ (Word、Excel、PowerPoint など) を最大 5 台の PC と Mac にインストールできます。 法人向け [Office 2016 スイート](https://go.microsoft.com/fwlink/?LinkId=534827)をインストールするためのオペレーティング システムおよびコンピューターの要件を参照してください。
+組織内の各ユーザーは、Office 2016 スイートのアプリ (Word、Excel、PowerPointなど) を最大 5 台の PC と Mac にインストールできます。 法人向け [Office 2016 スイート](https://go.microsoft.com/fwlink/?LinkId=534827)をインストールするためのオペレーティング システムおよびコンピューターの要件を参照してください。
   
 モバイル アプリは、iOS、Android、Windows デバイスにインストールできます。 モバイル デバイスとブラウザーのサポートについては、「[Office のシステム要件](https://go.microsoft.com/fwlink/?LinkId=534827)」を参照してください。
   
@@ -132,9 +133,9 @@ Microsoft 365 は、個人、小規模組織、企業向けにクラウド ス�
   
 ## <a name="plan-for-teams"></a>Teams の計画
 
-Microsoft Teams を使用して、サブスクリプションに参加している組織内の他のユーザーに通話を発信できます。 たとえば、組織に 10 人のユーザーがいる場合は、Teams を使用して通話と IM を行うことができます。特別な設定は必要ありません。 詳細については、「 [Microsoft Teams の使用を開始](/MicrosoftTeams/get-started-with-teams-quick-start)する」を参照してください。
+Microsoft Teamsを使用して、サブスクリプションに参加している組織内の他のユーザーに通話を発信できます。 たとえば、組織に 10 人のユーザーがいる場合は、Teams を使用して通話と IM を行うことができます。特別な設定は必要ありません。 詳細については、「 [Microsoft Teamsの概要](/MicrosoftTeams/get-started-with-teams-quick-start)」を参照してください。
 
-大規模な組織の場合、またはSkype for Business、オンプレミス、またはハイブリッドの展開から始める場合は、「[Microsoft Teams をロールアウトする方法」を](/MicrosoftTeams/how-to-roll-out-teams)参照してください。
+大規模な組織、またはSkype for Business、オンプレミス、またはハイブリッドのデプロイから始める場合は、「[Microsoft Teamsをロールアウトする方法」を](/MicrosoftTeams/how-to-roll-out-teams)参照してください。
   
 ## <a name="plan-for-integration-with-active-directory-or-other-software"></a>Active Directory やその他のソフトウェアとの統合の計画
 

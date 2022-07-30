@@ -12,63 +12,64 @@ ms.localizationpriority: medium
 ms.collection:
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
-description: Outlook、OneDrive、Teams データをMicrosoft 365 Business Standardに移行する
-ms.openlocfilehash: 7868212bbd3d96e71d606fb3df0071018ded1c31
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+description: Outlook、OneDrive、Teams のデータをMicrosoft 365 Business Standardに移行する
+ms.openlocfilehash: 2bb4b401266b61832c5d9ae2fcd8dd45314b4418
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783405"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085095"
 ---
 # <a name="migrate-data-to-my-microsoft-365-business-standard-subscription"></a>データを Microsoft 365 Business Standard サブスクリプションに移行する
 
-この記事の手順に従って、OneDrive、Outlook、Teams データをMicrosoft 365 Business Standard サブスクリプションに移動します。
+この記事の手順に従って、OneDrive、Outlook、Teams のデータをMicrosoft 365 Business Standard サブスクリプションに移動します。
 
 > [!IMPORTANT]
 > 個人アカウントにデータを保持することはできます。 新しいビジネス用メール アカウントを作成してデータを移行しても、個人アカウントのデータの有効期限は切れません。 すべてのデータを新しいビジネス アカウントに移動することも、一部のデータを移動することもできます。 たとえば、職場のドキュメントをビジネス アカウントに移動できますが、個人の家族の写真は個人用アカウントに保持できます。
 
-## <a name="move-files-to-onedrive-for-business"></a>ビジネス向けのOneDriveにファイルを移動する
+## <a name="move-files-to-onedrive-for-business"></a>OneDrive for Business にファイルを移動する
 
-このセクションでは、Microsoft 365個人アカウントに格納されているファイルをMicrosoft 365ビジネス アカウントに移動する方法について説明します。 両方のOneDriveアカウントをデバイスに同期すると、2 つのOneDrive フォルダー間でファイルを簡単にドラッグ アンド ドロップできます。
+このセクションでは、Microsoft 365 個人アカウントに格納されているファイルを Microsoft 365 ビジネス アカウントに移動する方法について説明します。 両方の OneDrive アカウントをデバイスに同期すると、2 つの OneDrive フォルダー間でファイルを簡単にドラッグ アンド ドロップできます。
 
-1. Windows通知領域でOneDrive白いクラウド アイコンを選択し、OneDrive個人アカウントがデバイスと同期されていることを確認します。
+1. Windows 通知領域で OneDrive の白いクラウド アイコンを選択し、OneDrive 個人用アカウントがデバイスと同期されていることを確認します。
 
-    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="スクリーンショット: Windows通知領域で白いクラウド アイコンを選択する":::
-
-    > [!NOTE]
-    > 通知領域の横にある **[非表示アイコンの表示**] 矢印を選択して、OneDrive アイコンを表示することが必要になる場合があります。 通知領域にアイコンが表示されない場合は、OneDriveが実行されていない可能性があります。 **[スタート] を** 選択し、検索ボックスに「OneDrive」と入力し、検索結果でOneDriveを選択します。
-
-2. 新しいビジネス アカウントを追加するには、**ヘルプ & 設定** > **設定** を選択します。
-
-    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="スクリーンショット: [ヘルプ & 設定] を選択してアカウントを追加する":::
-
-3. **設定** で、**AccountAdd an account** >  を選択します。
-
-4. OneDriveセットアップが開始されたら、新しいビジネス アカウントを入力し、[**サインイン**] を選択します。
-
-    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="スクリーンショット: OneDriveセットアップ ページにメール アドレスを入力します":::
+    :::image type="content" source="../../media/ssu-onedrive-icons.png" alt-text="スクリーンショット: Windows 通知領域で白いクラウド アイコンを選択する":::
 
     > [!NOTE]
-    > 現在のMicrosoft 365個人用アカウントでOneDriveを設定していない場合は、次の手順に進む前に、上記の手順に従ってデバイスに個人用アカウントを設定し、ファイルを同期します。
+    > OneDrive アイコンを表示するには、通知領域の横にある **[非表示のアイコンの表示** ] 矢印を選択することが必要な場合があります。 通知領域にアイコンが表示されない場合は、OneDrive が実行されていない可能性があります。 **[スタート] を** 選択し、検索ボックスに「OneDrive」と入力し、検索結果で OneDrive を選択します。
 
-### <a name="drag-and-drop-files-in-onedrive"></a>OneDriveでファイルをドラッグ アンド ドロップする
+2. 新しいビジネス アカウントを追加するには、[**ヘルプ &設定]** >  を選択 **します**。
 
-Microsoft 365個人用アカウントとビジネス アカウントの両方をデバイスに同期することで、個人用OneDrive フォルダーから新しいビジネス OneDrive フォルダーにファイルを移動できるようになりました。
+    :::image type="content" source="../../media/ssu-onedrive-help-settings.png" alt-text="スクリーンショット: [ヘルプ &設定] を選択してアカウントを追加する":::
 
-1. エクスプローラーで、ファイルを含む同期されたOneDrive フォルダーを開きます。
+3. **[設定]** で、[**アカウントの** > 追加] を選択 **します**。
 
-2. 目的のファイルを選択して、OneDrive個人用フォルダーから新しいOneDriveビジネス フォルダーにドラッグします。
+4. OneDrive セットアップが開始されたら、新しいビジネス アカウントを入力し、[ **サインイン**] を選択します。
 
-    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="スクリーンショット: ビジネス フォルダーの新しいOneDriveにファイルをドラッグ アンド ドロップする":::
+    :::image type="content" source="../../media/ssu-setup-onedrive.png" alt-text="スクリーンショット: OneDrive のセットアップ ページにメール アドレスを入力します":::
 
-### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>作業のためにファイルを個人用からOneDrive OneDrive移動する場合に関する注意事項
+    > [!NOTE]
+    > 以前に現在の Microsoft 365 個人用アカウントで OneDrive を設定していない場合は、上記の手順に従ってデバイスに個人用アカウントを設定し、ファイルを同期してから、次の手順に進みます。
+
+### <a name="drag-and-drop-files-in-onedrive"></a>OneDrive でファイルをドラッグ アンド ドロップする
+
+Microsoft 365 個人アカウントとビジネス アカウントの両方をデバイスに同期することで、ファイルを個人用 OneDrive フォルダーから新しいビジネス OneDrive フォルダーに移動できるようになりました。
+
+1. エクスプローラーで、ファイルを含む同期済みの OneDrive フォルダーを開きます。
+
+2. OneDrive 個人用フォルダーから目的のファイルを選択し、新しい OneDrive ビジネス フォルダーにドラッグします。
+
+    :::image type="content" source="../../media/ssu-onedrive-files-to-work-folder.png" alt-text="スクリーンショット: 新しい OneDrive for Business フォルダーにファイルをドラッグ アンド ドロップする":::
+
+### <a name="notes-about-moving-files-from-onedrive-personal-to-onedrive-for-work"></a>OneDrive personal から OneDrive へのファイルの移動に関する注意事項
 
 - 多数のファイルを移動する場合は、それぞれ 100 個以下のファイルのバッチでファイルを移動することをお勧めします。
 
-- 個人から仕事用にOneDrive OneDrive移動したファイルは新しいファイルとして認識され、その結果、これらのファイルは変更者や変更者などのメタデータの詳細を保持しません。
+- 作業のために OneDrive 個人用から OneDrive に移動したファイルは新しいファイルとして認識され、その結果、これらのファイルは変更者や変更者などのメタデータの詳細を保持しません。
 
-- 以前にOneDriveでファイルを共有した場合は、移動後に作業のために新しいOneDriveでこれらのファイルをもう一度共有する必要があります。 また、これらのファイルを共有したら、元のファイルをOneDriveから削除することをお勧めします。 これにより、ユーザーは以前に共有したファイルの古いコピーを参照できなくなります。
+- 以前に OneDrive でファイルを共有した場合は、移動後に新しい OneDrive でこれらのファイルをもう一度共有する必要があります。 また、これらのファイルを共有したら、OneDrive から元のファイルを削除することをお勧めします。 これにより、ユーザーは以前に共有したファイルの古いコピーを参照できなくなります。
 
 ## <a name="step-set-up-outlook-for-email"></a>手順: Outlook をメール用にセットアップする
 
@@ -112,27 +113,27 @@ Microsoft 365個人用アカウントとビジネス アカウントの両方を
 
 また、Exchange 管理センターを使用して、すべてのユーザーのメールをインポートすることもできます。 詳細については、「[複数のメール アカウントを移行する](/Exchange/mailbox-migration/mailbox-migration)」を参照してください。
 
-## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>個人用Microsoft Teams アカウントから職場アカウントの新しいTeamsにデータを移動する
+## <a name="move-data-from-your-personal-microsoft-teams-account-to-new-teams-for-work-account"></a>個人用Microsoft Teams アカウントから仕事用アカウントの新しい Teams にデータを移動する
 
 1. Microsoft Teams を開き、プロファイル アイコンを選択して、**[職場または学校アカウントを追加する]** を選択します。
 
-2. 手順に従って、新しいアカウントを職場のTeamsに追加します。 詳細については、「サインイン」を参照[し、Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937)の使用を開始してください。
+2. 手順に従って、新しいアカウントを Teams に追加します。 詳細については、 [サインインを確認し、Teams](https://support.microsoft.com/office/sign-in-and-get-started-with-teams-6723dc43-dbc0-46e6-af49-8a2d1c5cb937) の使用を開始してください。
 
 ### <a name="access-teams-chats"></a>Teams チャットにアクセスする
 
-新しい職場アカウントでTeamsを使用し始めると、データは移行されません。 古いチャットを表示する最善の方法は、古いTeams アカウントと新しい職場アカウントを並べて開く方法です。 これを行うには、Teamsの右上にある ME アイコンを選択し、開くアカウントを選択します。 新しい仕事用アカウントでTeamsを同僚と一緒に使い始めることができます。 仕事用アカウントの新しいTeamsを使用して連絡を開始するように、チャット相手の他のユーザーに必ず伝えてください。
+新しい職場アカウントで Teams の使用を開始すると、データは移行されません。 古いチャットを表示する最善の方法は、古い Teams アカウントと新しい職場アカウントを並べて開く方法です。 これを行うには、Teams の右上にある ME アイコンを選択し、開くアカウントを選択します。 新しい職場アカウントで Teams の使用を同僚と開始できます。 チャット相手の他のユーザーに、新しい Teams for Work アカウントを使用して連絡を開始するように指示してください。
 
-### <a name="microsoft-teams-meetings"></a>会議をMicrosoft Teamsする
+### <a name="microsoft-teams-meetings"></a>Microsoft Teams会議
 
-仕事用の新しいMicrosoft Teams アカウントを設定したら、Teams予定表で会議を再作成できます。 古いTeams アカウントの元の会議は必ず削除してください。 これにより、スケジュール設定時の予定表の可用性、会議を記録する機能など、より充実した機能にアクセスできます。 自分のTeams予定表からしか会議を削除できないため、会議を持つユーザーに会議を再作成することを知らせます。 会議に新しいTeams アカウントを使用するように切り替える際に、会議に参加する必要があるユーザーが見つからない場合は、そのユーザーに連絡して、以前の会議リンクに参加していないことを確認します。
+仕事用の新しいMicrosoft Teams アカウントを設定したら、Teams 予定表で会議を再作成できます。 古い Teams アカウントの元の会議は必ず削除してください。 これにより、スケジュール設定時の予定表の可用性、会議を記録する機能など、より充実した機能にアクセスできます。 自分の Teams 予定表からのみ会議を削除できます。そのため、会議を持つユーザーに会議を再作成することを知らせます。 会議に新しい Teams アカウントを使用するように切り替える際に、会議に参加する必要があるユーザーが見つからない場合は、そのユーザーに連絡して、以前の会議リンクに参加していないことを確認します。
 
 ### <a name="migrating-contacts"></a>連絡先の移行
 
-個人のTeams アカウントから連絡先を移行するには、連絡先のメール アドレスを見つけて、仕事用の新しいTeams アカウントにユーザーを追加します。
+個人の Teams アカウントから連絡先を移行するには、連絡先のメール アドレスを見つけて、仕事用の新しい Teams アカウントにユーザーを追加します。
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Gmail または別のメール プロバイダーからMicrosoft 365にメールをインポートまたは移行する](../setup/migrate-email-and-contacts-admin.md)
+[Gmail または別のメール プロバイダーから Microsoft 365 にメールをインポートまたは移行する](../setup/migrate-email-and-contacts-admin.md)
 
 <!--## Download desktop apps
 

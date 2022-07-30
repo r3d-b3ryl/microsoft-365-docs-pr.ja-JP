@@ -278,6 +278,7 @@
 ##### [エクスプロイト保護を有効にする](enable-exploit-protection.md)
 ##### [エクスプロイト保護をカスタマイズする](customize-exploit-protection.md)
 ##### [エクスプロイト保護構成のインポート、エクスポート、展開](import-export-exploit-protection-emet-xml.md)
+##### [Exploit Protection の軽減策のトラブルシューティング](troubleshoot-exploit-protection-mitigations.md)
 ##### [エクスプロイト保護のリファレンス](exploit-protection-reference.md)
 #### [ネットワーク保護]()
 ##### [ネットワークを保護する](network-protection.md)

@@ -4,7 +4,7 @@ f1.keywords:
 - CSH
 ms.author: deniseb
 author: denisebmsft
-manager: dansimp
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,6 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MSStore_Link
 - AdminSurgePortfolio
 - okr_smb
@@ -28,16 +29,16 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: ランサムウェア、フィッシング、悪意のある添付ファイルなど、サイバー脅威からビジネス メールとデータを保護します。
-ms.openlocfilehash: 347d88a95d8ed55116655980560eb3d9cf925213
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: db9822a87c180577afe4040e7828471b993bd0d5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602936"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087443"
 ---
 # <a name="best-practices-for-securing-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 をセキュリティで保護するためのベスト プラクティス
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 Microsoft のビジネス プランのいずれかを使用している小規模または中規模の組織の場合、この記事のガイダンスは、組織のセキュリティを強化するのに役立ちます。 選択肢の中でも、Microsoft Defender for Businessやその他の[セキュリティ保護](../../business-premium/get-microsoft-365-business-premium.md)が含まれるようになったため、Microsoft 365 Business Premiumが先導します。 ここに含まれる推奨されるアクションは、「強い思い出を持つ人が自分の目標を達成するのに役立 [ちます。これは](https://go.microsoft.com/fwlink/p/?linkid=2015598)、この目標を達成するのに役立ちます。これは、この目標を達成するのに役立ちます。
 
@@ -46,7 +47,7 @@ Microsoft のビジネス プランのいずれかを使用している小規模
 
 ## <a name="watch-a-quick-overview-of-security"></a>ウォッチ: セキュリティの概要
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198012)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198012)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mzxI?autoplay=false]
 
@@ -195,7 +196,7 @@ Microsoft 365 でホストされている電子メールと OneDrive に格納�
 
 6. **[保存]** を選択します。
 
-| 設定 | Office ファイルの添付ファイルを開く前にユーザーに警告する | ランサムウェアやその他の悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
+| Setting | Office ファイルの添付ファイルを開く前にユーザーに警告する | ランサムウェアやその他の悪意のあるコードを含む可能性のあるファイルの種類をブロックする |
 |:-----|:-----|:-----|
 |名前  <br/> |ランサムウェア対策ルール: ユーザーに警告する  <br/> |ランサムウェア対策ルール: ファイルの種類をブロックする  <br/> |
 |次の場合は、この規則を適用します。 . .  <br/> |任意の添付ファイル . . . ファイル拡張子が一致します。 . .  <br/> |任意の添付ファイル . . . ファイル拡張子が一致します。 . .  <br/> |
@@ -229,7 +230,7 @@ Microsoft 365 には、組織内外のユーザー間で暗号化された電子
 1. 新しいメールを開いた状態で、[ **オプション]** メニューを選択します。
 1. **[暗号化**] ドロップダウンから、適切なアクセス許可レベルを選択します。
 
-:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Outlook での電子メール メッセージの暗号化":::
+:::image type="content" source="../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639b.png" alt-text="Outlook でメッセージの暗号化をEmailする":::
 
 ### <a name="receive-encrypted-email"></a>暗号化された電子メールを受信する
 
@@ -251,7 +252,7 @@ Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成し�
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動します。
 
-2. [ポリシー **] セクションの [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **フィッシング対策**] に移動します。
+2. [ポリシー **] セクションの [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **フィッシング対策**] に移動します。
 
 3. [フィッシング対策] ページで、[ **+ 作成**] を選択します。 フィッシング対策ポリシーを定義する手順を示すウィザードが起動します。
 
@@ -275,7 +276,7 @@ Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成し�
 
 ## <a name="protect-against-malicious-attachments-files-and-urls"></a>悪意のある添付ファイル、ファイル、URL から保護する
 
-ユーザーは日常的に、文書、プレゼンテーション、スプレッドシートなどを、添付ファイルとして送受信および共有します。 メール メッセージを参照しただけでは、添付ファイルが安全か悪意があるか判断するのは難しい場合があります。 Microsoft Defender for Office 365には安全な添付ファイル保護が含まれますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、および Microsoft Teams のファイルにまで及びます。
+ユーザーは日常的に、文書、プレゼンテーション、スプレッドシートなどを、添付ファイルとして送受信および共有します。 メール メッセージを参照しただけでは、添付ファイルが安全か悪意があるか判断するのは難しい場合があります。 Microsoft Defender for Office 365には安全な添付ファイル保護が含まれますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、およびMicrosoft Teams内のファイルに拡張されます。
 
 ### <a name="set-up-safe-attachments"></a>安全な添付ファイルを設定する
 
@@ -283,7 +284,7 @@ Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成し�
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、管理者アカウントでサインインします。
 
-2. [ポリシー **] セクション****の [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策**] に移動します。
+2. [ポリシー] セクション **の [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策****]** に移動します。
 
 3. **+ 作成** を選択して新しいポリシーを作成します。
 
@@ -316,7 +317,7 @@ Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成し�
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、管理者アカウントでサインインします。
 
-2. [ポリシー **] セクション****の [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策**] に移動します。
+2. [ポリシー] セクション **の [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策****]** に移動します。
 
 3. **[+ 作成]** を選択して新しいポリシーを作成するか、既定のポリシーを変更します。
 

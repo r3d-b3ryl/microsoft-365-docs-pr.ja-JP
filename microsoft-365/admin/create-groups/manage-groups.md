@@ -4,7 +4,7 @@ ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
-manager: serdars
+manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: グループ メンバーの削除の追加、メール アドレス、グループ名、説明の編集、グループの動作のカスタマイズなど、Microsoft 365 グループを管理する方法について説明します。
-ms.openlocfilehash: e04d91219f1bfd51b609b9be749bd98c2798a52a
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 7dd17072beab3c8b1cf09f6a6263cf6eb9fa089c
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428314"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084237"
 ---
 # <a name="manage-a-group-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでグループを管理する
 
@@ -57,15 +57,15 @@ ms.locfileid: "62428314"
   
 管理センターを使用してグループを作成する場合、既定では、ユーザーは受信トレイに送信されたグループ会議出席依頼のコピーを受信トレイに届けますが、グループメールのコピーは取得されません。 会話を表示するには、グループに移動する必要があります。 この設定は、管理センターで変更できます。
 
-この設定をオンにすると、グループ メンバーには、グループのメールと会議出席依頼のコピーがOutlook受信トレイに送信されます。 各メンバーはメールのコピーを閲覧、削除することができますが、他のメンバーに影響を与えることはありません。 グループの受信トレイに、メールのコピーは引き続き存在します。
+この設定をオンにすると、グループ メンバーは Outlook 受信トレイに送信されたグループメールと会議出席依頼のコピーを取得します。 各メンバーはメールのコピーを閲覧、削除することができますが、他のメンバーに影響を与えることはありません。 グループの受信トレイに、メールのコピーは引き続き存在します。
 
-グループ メンバーは、Outlookでグループのフォローを停止することで、これらのメールの受信をオプトアウトできます。
+グループ メンバーは、Outlook でグループのフォローを停止することで、これらのメールの受信をオプトアウトできます。
 
 1. 管理センターで [ **グループ**] を展開し、[ <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**グループ**</a>] をクリックします。
 
 2. 管理するグループの名前をクリックし、[設定] ウィンドウを開きます。
 
-3. **[設定**] タブで、メンバーが自分の受信トレイでグループ メッセージと予定表アイテム **のコピーを** 受信する場合は、[グループ の会話とイベントのコピーをグループ メンバーに送信する] を選択します。
+3. メンバーが自分の受信トレイでグループ メッセージと予定表アイテムのコピーを受信する場合は、[ **設定]** タブで、[ **グループの会話とイベント** のコピーをグループ メンバーに送信する] を選択します。
 
 4. **[保存]** を選択します。
 
@@ -77,7 +77,7 @@ ms.locfileid: "62428314"
 
 2. 管理するグループの名前をクリックし、[設定] ウィンドウを開きます。
 
-3. 管理センター グループの一覧で、変更するグループの名前を選択し、[**設定**] タブで[**外部送信者にこのグループへのメール送信を許可する**] を選択します。
+3. 管理センター グループの一覧で、変更するグループの名前を選択し、[ **設定]** タブで[ **外部送信者にこのグループへのメール送信を許可** する] を選択します。
     
 4. **[保存]** を選択します。
 
@@ -105,7 +105,7 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 
 グループが正常に削除されたことを確認するには、 *Get AzureADMSDeletedGroup*  コマンドレットをもう一度実行して、グループが論理的に削除されたグループの一覧に表示されなくなったことを確認します。グループとそのすべてのデータが完全に削除されるまで 24 時間ほどかかる場合があります。 
   
-## <a name="related-articles"></a>関連記事
+## <a name="related-articles"></a>関連資料
 
 [Microsoft 365 グループを作成する](create-groups.md)
 
@@ -113,7 +113,7 @@ Remove-AzureADMSDeletedDirectoryObject -Id <objectId>
 
 [Microsoft 365 グループを作成するときに使用するドメインを選択する](../../solutions/choose-domain-to-create-groups.md)
 
-[メンバーがMicrosoft 365 グループに代わって送信または送信できるようにする](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
+[メンバーが Microsoft 365 グループに代わって送信または送信できるようにする](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md)
 
 [配布リストをMicrosoft 365 グループにアップグレードする](../manage/upgrade-distribution-lists.md)
 

@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
@@ -25,18 +26,18 @@ search.appverid:
 - MET150
 - MOE150
 description: web ベースのMicrosoft 365 管理センターのコンパニオンであるMicrosoft 365 管理 アプリを入手して、スマートフォンまたはタブレットからオンライン組織を管理します。
-ms.openlocfilehash: 4a10c38fcaf793c6ccb3666a16d197c95bbc753a
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601698"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084633"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 管理 モバイル アプリについて
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
-あなたは通常外出先にいる管理者ですか? そうでない場合でも、スマートフォンまたはタブレットから Microsoft 365 を管理する必要がある場合があります。 Web ベースのMicrosoft 365 管理センターに最適な無料の[Microsoft 365 管理 アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)を確認してください。 [アプリは、Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)から、Google Play ストアから、および[Microsoft 365 管理センター](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)の右上にあるアプリ リンクから<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理</a>ダウンロードできます。
+あなたは通常外出先にいる管理者ですか? そうでない場合でも、スマートフォンまたはタブレットから Microsoft 365 を管理する必要がある場合があります。 Web ベースのMicrosoft 365 管理センターに最適な無料の[Microsoft 365 管理 アプリ](https://go.microsoft.com/fwlink/?LinkID=627216)を確認してください。 [アプリは、Apple App Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)から、[Google Play ストア](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)から、およびMicrosoft 365 管理センターの右上にあるアプリ リンクからMicrosoft 365 管理ダウンロード<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">できます。</a>
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="スクリーンショット: モバイル アプリのホーム ページを管理し、検索、メッセージ センター、正常性、クイック リンクを表示する":::
 
@@ -45,7 +46,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 - **ユーザーとデバイスを管理する** ユーザーの追加または編集、ユーザーのパスワードのリセット、ロールの割り当て、ユーザーのブロック、ユーザーの削除、エイリアスの管理、ライセンスの割り当て、デバイス データのワイプなどを行います。
 - **グループを管理する** グループの追加、グループへのユーザーの追加または削除を行います。
 - **ライセンス管理と課金** 購入したライセンスと割り当てられたライセンスの一覧の表示、ユーザーへのライセンスの割り当て、ライセンスの購入または削除、請求書の表示とダウンロードを行います。
-- **サポート** 新しいサービス要求を作成し、外出先でサービス要求に関連するすべての更新プログラムを追跡します。
+- **支える** 新しいサービス要求を作成し、外出先でサービス要求に関連するすべての更新プログラムを追跡します。
 - **メッセージ センター** Microsoft 365 に関連するすべての変更、計画メンテナンス、またはその他の重要なお知らせを常に把握する
 - **Service Health** サービスの現在の状態と、サービスの中断と停止に関する詳細を表示して、すべてのサービスの正常性を監視します。
 - **通知** メッセージ センターの投稿、サービスの正常性、プッシュ通知による課金に関連するすべての重要な情報と更新情報を常に確認します。 通知する内容をカスタマイズすることもできます。
@@ -57,14 +58,14 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ## <a name="watch-install-the-admin-mobile-app"></a>ウォッチ: 管理者モバイル アプリをインストールする
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198017)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198017)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/05c1d439-9ec2-415f-9178-250f64dec64c]
 
 1. Microsoft 365 管理モバイル アプリを取得するには、デバイスのアプリ ストアで **Microsoft 365 管理** を検索してインストールします。
 2. グローバル管理者のメール アドレスでサインインし、ダッシュボードを表示してサービスの正常性を確認し、ユーザー ライセンスを監視し、メッセージとサービス要求を表示します。
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 管理者モバイル アプリを使用するには、Microsoft 365 組織の管理者である必要があります。
   
@@ -129,9 +130,9 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>質問の回答がない場合はどうすればよいですか?
 
-アプリ [に](mailto:feedback365@microsoft.com) 関する問題を報告するメール feedback365@microsoft.com。 または、この記事の下部でフィードバックを提供することもできます。
+アプリに関する問題を報告する [feedback365@microsoft.com](mailto:feedback365@microsoft.com) をEmailします。 または、この記事の下部でフィードバックを提供することもできます。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 管理用モバイルをダウンロードしたら、ユーザーを追加して作業を開始できます。
   

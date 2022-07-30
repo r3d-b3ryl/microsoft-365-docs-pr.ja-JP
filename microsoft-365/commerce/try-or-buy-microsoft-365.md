@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - commerce_purchase
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -23,16 +24,16 @@ ms.custom:
 search.appverid: GEA150
 description: Microsoft 365 Business Standard、Microsoft 365 Business Premium、または Microsoft 365 Apps for business の 30 日間無料試用版にサインアップします。
 ms.date: 08/07/2020
-ms.openlocfilehash: b1a02ef1828e1868b83e16ad9bde16605103f851
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a47d956b614c6464a49af33c179609eeb0e42ac9
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602538"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087684"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 一般法人向け Microsoft 365 は、組織をクラウドで実行できるサブスクリプション サービスであり、Microsoft に IT を任せることができます。 Microsoft はデバイスを管理し、現実世界の脅威から保護し、最新のビジネス ソフトウェアを組織に提供します。 Microsoft 365 Business Standard、Microsoft 365 Business Premium、または一般法人向け Microsoft 365 Apps の無料試用版サブスクリプションにサインアップして、30 日間お試しください。
 
@@ -111,7 +112,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ### <a name="watch-move-users-to-a-different-subscription"></a>視聴する: ユーザーを別のサブスクリプションに移動する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198013)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198013)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 

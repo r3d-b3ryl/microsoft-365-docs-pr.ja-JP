@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - adminvideo
 - TopSMBIssues
 - SaRA
@@ -29,12 +30,12 @@ search.appverid:
 - MOE150
 ms.assetid: 6383f56d-3d09-4dcb-9b41-b5f5a5efd611
 description: セットアップ ウィザードを使用して、DNS ホストで DNS レコードを追加して、Microsoft 365 管理センターで Microsoft 365 にドメインを追加します。
-ms.openlocfilehash: be72f10727a5d4ed168740d80eb04078584137d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: HT
+ms.openlocfilehash: 13699b4a565c0762baa6f383330ed2e87517ac6d
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602902"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087355"
 ---
 # <a name="add-a-domain-to-microsoft-365"></a>Microsoft 365 にドメインを追加する
 

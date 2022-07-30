@@ -17,18 +17,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: ドメインの概要と、ドメインを購入する方法、またはビジネスの既定のドメインを使用してOneDriveアプリと Microsoft アプリを使用する方法について説明します。
+description: ドメインの概要と、ドメインを購入する方法、またはビジネスの既定のドメインを使用して OneDrive と Microsoft アプリの使用を開始する方法について説明します。
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: eb7ba8a7f9ddcec9d222921e6e6171ea229e0064
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cc2f2469944e0b0602d27a136c7934687b14c5c5
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316689"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084985"
 ---
 # <a name="what-is-a-domain"></a>ドメインとは
 
@@ -49,14 +50,14 @@ Microsoft 365 を使用して新しいドメインを購入します。すべて
 「*you@yourcompany.<span>com*」などのドメインを既に所有している場合は、そのドメインを追加してすぐに OneDrive と Microsoft アプリを使用できます。 メールと Skype for Business はわずか数分でセットアップできます。 
   
 > [!TIP]
-> ドメインが登録されている場所がはっきりしない場合 - [ドメイン レジストラーを探すためのヘルプ](find-your-domain-registrar.md)
+> ドメインが登録されている場所がわからない場合 - [ドメイン レジストラーの検索に関するヘルプを表示する](find-your-domain-registrar.md)
   
  **現時点では、Microsoft ドメインを使用します。**
   
 *yourcompany.onmicrosoft のような Microsoft ドメインを使用できます。<span>com* でサインインし、後でカスタム ドメインを追加します。 
   
 > [!IMPORTANT]
-> このオプションを選択すると、.onmicrosoft.com ドメインに入力した名前が、すべてのSharePointとOneDrive URL で使用されます。 この名前を変更できない可能性があるため、ブランドの観点から使用する名前が正しくスペルされていることを確認してください。 
+> このオプションを選択すると、.onmicrosoft.com ドメインに入力した名前が、すべての SharePoint URL と OneDrive URL で使用されます。 この名前を変更できない可能性があるため、ブランドの観点から使用する名前が正しくスペルされていることを確認してください。 
   
 ## <a name="feeling-stuck"></a>困ったときは
 
@@ -66,7 +67,7 @@ Microsoft サポートに連絡する - [ドメインの設定についてサポ
 
 [ドメインを購入する](buy-a-domain-name.md) (記事)
 
-[Microsoft 365にドメインを追加する](../setup/add-domain.md) (記事)
+[Microsoft 365 にドメインを追加する](../setup/add-domain.md) (記事)
 
 [カスタム ドメインからのパイロット Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md) (記事)
 

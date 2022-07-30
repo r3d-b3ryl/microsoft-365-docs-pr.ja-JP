@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: ドメインを Microsoft 365 に接続する方法について説明します。
-ms.openlocfilehash: 2b02687e8d62a40272ffa5dad8ccabec4fbde368
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: b03f7fa149ed4abddeecb5ab3b89372a9f0e008f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603882"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085599"
 ---
-# <a name="connect-your-domain-to-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 にドメインを接続する
+# <a name="connect-your-domain-to-microsoft-365-for-business"></a>ドメインを一般法人向け Microsoft 365 に接続する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 ## <a name="watch-connect-your-domain-to-microsoft-365"></a>ウォッチ: ドメインを Microsoft 365 に接続する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198216)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198216)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LFpy?autoplay=false]
 

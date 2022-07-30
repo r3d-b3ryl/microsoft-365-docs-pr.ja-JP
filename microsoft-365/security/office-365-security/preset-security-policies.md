@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365の保護機能全体に Standard および Strict ポリシー設定を適用する方法を学習できます
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce4113b06c27cb288bcecce6a668a7da4bd46615
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: bd5fd696a9e22f0e30d18b3b785761847166a5b3
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772064"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085249"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー
 
@@ -66,16 +66,19 @@ ms.locfileid: "66772064"
   各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
 
   > [!IMPORTANT]
-  > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+  > 複数の異なる種類の条件や例外は加算されません。包括的です。 事前設定されたセキュリティ ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
   >
   > - 受信者は次のとおりです: romain@contoso.com
   > - 受信者が次のメンバーの場合: Executive
   >
-  > ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ 、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+  > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
   >
-  > 同様に、ポリシーの例外として同じ受信者フィルターを使用する場合、ポリシーは、そのユーザーが Executives グループのメンバーである場合 _にのみ_ romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+  > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
 
 - **組み込みの保護** (Defender for Office 365のみ): 安全なリンクと安全な添付ファイルの保護のみを有効にするプロファイル。 このプロファイルは、安全なリンクと安全な添付ファイルの既定のポリシーを効果的に提供します。既定のポリシーは一度もありませんでした。
+
+  > [!NOTE]
+  > 組み込みの保護プリセット セキュリティ ポリシーが展開されており、組織では使用できない可能性があります。
 
   **組み込み保護の** 場合、既定では、すべてのDefender for Office 365ユーザーに対して事前設定されたセキュリティ ポリシーがオンになっています。 お勧めしませんが、特定のユーザーに保護が適用されないように、 **ユーザー**、 **グループ**、 **ドメイン** に基づいて例外を構成することもできます。
 
@@ -119,14 +122,19 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
 ユーザーに複数のポリシーが適用されている場合、優先度が最も高いものから最も低い優先度まで、次の順序が適用されます。
 
-1. **厳格な保護** の事前設定されたセキュリティ ポリシー
-2. **Standard Protection** 事前設定セキュリティ ポリシー
-3. カスタム セキュリティ ポリシー
-4. 安全なリンクと安全な添付ファイルの **組み込みの保護** 事前設定セキュリティ ポリシー、およびマルウェア対策、スパム対策、フィッシング対策の既定のポリシー。
+1. 厳密な事前設定されたセキュリティ ポリシー。
+2. 標準の事前設定済みセキュリティ ポリシー。
+3. カスタム ポリシー。 カスタム ポリシーは、ポリシーの優先度の値に基づいて適用されます。
+4. 安全なリンクと安全な添付ファイルの組み込みの保護プリセットセキュリティ ポリシー。マルウェア対策、スパム対策、フィッシング詐欺対策の既定のポリシー。
 
-言い換えると、 **Strict Protection** ポリシーの設定は **Standard 保護** ポリシーの設定をオーバーライドします。これは、 **組み込みの保護** プリセット セキュリティ ポリシー (安全なリンクと安全な添付ファイル) と既定のポリシー (スパム対策、マルウェア対策、フィッシング対策) の設定をオーバーライドするカスタム ポリシーの設定をオーバーライドします。
+言い換えると、 **Strict** 事前設定セキュリティ ポリシーの設定は **、標準** プリセット セキュリティ ポリシーの設定をオーバーライドします。これは、安全なリンクと安全な添付ファイルの **組み込みの保護** プリセット セキュリティ ポリシーの設定と、スパム対策、マルウェア対策、フィッシング詐欺対策の既定のポリシーをオーバーライドするカスタム ポリシーの設定をオーバーライドします。
 
-たとえば、 **Standard Protection** にセキュリティ設定が存在し、管理者がユーザーの **Standard 保護** を有効にしている場合、カスタム ポリシーまたは既定のポリシー (同じユーザー) でその設定に対して構成されている設定ではなく、 **Standard 保護** 設定が適用されます。 特定のニーズを満たすために、組織内の他のユーザーにカスタム ポリシーを適用するときに **、標準** または **厳格な保護** ポリシーのみを適用する組織の一部が存在する場合があることに注意してください。
+たとえば、 **Standard Protection** にはセキュリティ設定が存在し、管理者は **Standard 保護** のユーザーを指定します。 **Standard 保護** 設定は、カスタム ポリシーまたは同じユーザーの既定のポリシーでその設定に対して構成されたものではなく、ユーザーに適用されます。
+
+**Standard** または **Strict** の事前設定済みセキュリティ ポリシーをユーザーのサブセットに適用し、特定のニーズを満たすために組織内の他のユーザーにカスタム ポリシーを適用することができます。 この要件を満たすために、次の手順を実行します。
+
+- **Standard** プリセット セキュリティ ポリシーとカスタム ポリシーの設定を **、Strict** プリセット セキュリティ ポリシーの例外として取得する必要があるユーザーを構成します。
+- **Standard** プリセット セキュリティ ポリシーの例外としてカスタム ポリシーの設定を取得する必要があるユーザーを構成します。
 
 **組み込みの保護** は、既存の安全なリンクまたは安全な添付ファイル ポリシーの受信者には影響しません。 **Standard Protection**、**Strict Protection**、カスタムセーフ リンク、または安全な添付ファイルポリシーを既に構成している場合、これらのポリシーは **組み込み保護**_の前に__常に_ 適用されるため、既存のプリセットポリシーまたはカスタム ポリシーで既に定義されている受信者には影響しません。
 
@@ -256,3 +264,293 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 たとえば、スパムとして検出された電子メール (信頼度の高いスパムではない) の場合、メッセージが **Standard 保護** ユーザーの迷惑メール Email フォルダーに配信され、**Strict Protection** ユーザー用に検疫されていることを確認します。
 
 または、[一括メール](bulk-complaint-level-values.md)の場合は、BCL 値 6 以上が **Standard 保護** ユーザーの迷惑メール Email フォルダーにメッセージを配信し、BCL 値 4 以上が **Strict Protection** ユーザーのメッセージを検疫することを確認します。
+
+## <a name="preset-security-policies-in-exchange-online-powershell"></a>Exchange Online PowerShell の事前設定済みセキュリティ ポリシー
+
+PowerShell では、事前設定されたセキュリティ ポリシーは次の要素で構成されます。
+
+- **個々のセキュリティ ポリシー**: たとえば、マルウェア対策ポリシー、スパム対策ポリシー、フィッシング対策ポリシー、セーフ リンク ポリシー、安全な添付ファイル ポリシーなどです。
+
+  > [!WARNING]
+  > 事前設定されたセキュリティ ポリシーに関連付けられている個々のセキュリティ ポリシーを作成、変更、または削除しないでください。 Standard または Strict の事前設定済みセキュリティ ポリシーの個々のセキュリティ ポリシーを作成するためにサポートされている唯一の方法は、Microsoft 365 Defender ポータルで初めて事前設定されたセキュリティ ポリシーを有効にすることです。
+
+- **ルール**: Standard プリセット セキュリティ ポリシー、Strict プリセット セキュリティ ポリシー、および組み込み保護プリセット セキュリティ ポリシーの個別のルールは、ポリシーの受信者の条件と例外を定義します (ポリシーの保護が適用される受信者を識別します)。
+
+  Standard および Strict の事前設定済みセキュリティ ポリシーの場合、これらのルールは、Microsoft 365 Defender ポータルで事前設定されたセキュリティ ポリシーを初めて有効にするときに作成されます。 事前設定されたセキュリティ ポリシーを有効にしたことがない場合は、関連付けられているルールは存在しません。 その後、事前設定されたセキュリティ ポリシーをオフにしても、関連付けられているルールは削除されません。
+
+  組み込みの保護プリセット セキュリティ ポリシーには、ポリシーの既定の安全なリンクと安全な添付ファイルの保護に対する例外を制御する 1 つの規則があります。
+
+  Standard および Strict の事前設定済みセキュリティ ポリシーには、次の規則があります。
+
+  - **Exchange Online Protection (EOP) 保護の規則**: Standard Preset セキュリティ ポリシーの規則と、ポリシー内の EOP 保護 (マルウェア対策、スパム対策、フィッシング詐欺対策) が適用されるユーザー (EOP 保護の受信者の条件と例外) を制御する、標準プリセット セキュリティ ポリシーの規則。
+  - **Defender for Office 365保護の規則**: Standard Preset セキュリティ ポリシーの規則と、ポリシーのDefender for Office 365保護 (安全なリンクと安全な添付ファイル) が適用されるユーザー (受信者の条件と例外) を制御する、標準プリセット セキュリティ ポリシーの規則。Defender for Office 365保護)。
+
+  Standard および Strict の事前設定済みセキュリティ ポリシーのルールでは、ポリシーに関連付けられているルールを有効または無効にすることで、事前設定されたセキュリティ ポリシーを有効または無効にすることもできます。
+
+  事前設定されたセキュリティ ポリシーのルールは、個々のセキュリティ ポリシー ( **Get-AntiPhishRule** など) で動作する通常のルール コマンドレットでは使用できません。 代わりに、次のコマンドレットが必要です。
+
+  - 組み込みの保護プリセット セキュリティ ポリシー: **\*-ATPBuiltInProtectionRule** コマンドレット。
+  - 標準および厳密な事前設定済みセキュリティ ポリシー: **\*-EOPProtectionPolicyRule** コマンドレットと **\*-ATPProtectionPolicyRule** コマンドレット。
+
+次のセクションでは、 **サポートされているシナリオ** でこれらのコマンドレットを使用する方法について説明します。
+
+Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
+
+### <a name="use-powershell-to-view-individual-security-policies-for-preset-security-policies"></a>PowerShell を使用して、事前設定されたセキュリティ ポリシーの個々のセキュリティ ポリシーを表示する
+
+Microsoft 365 Defender ポータルで Standard プリセット セキュリティ ポリシーまたは Strict 事前設定セキュリティ ポリシーをオンにしていない場合は、事前設定されたセキュリティ ポリシーに関連付けられているセキュリティ ポリシーが存在しないことを忘れないでください。
+
+> [!WARNING]
+> 事前設定されたセキュリティ ポリシーに関連付けられている個々のセキュリティ ポリシーを作成、変更、または削除しないでください。 Standard または Strict の事前設定済みセキュリティ ポリシーの個々のセキュリティ ポリシーを作成するためにサポートされている唯一の方法は、Microsoft 365 Defender ポータルで初めて事前設定されたセキュリティ ポリシーを有効にすることです。
+
+- **組み込みの保護プリセット セキュリティ ポリシー**: 関連付けられているポリシーには、保護ポリシーBuilt-In名前が付けられます。 IsBuiltInProtection プロパティの値は、これらのポリシーに対して True です。
+
+  組み込みの保護プリセット セキュリティ ポリシーの個々のセキュリティ ポリシーを表示するには、次のコマンドを実行します。
+
+  ```powershell
+  Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy -Identity "Built-In Protection Policy" | Format-List; Write-Output -InputObject ("`r`n"*3),"Built-in protection Safe Links policy",("-"*79);Get-SafeLinksPolicy -Identity "Built-In Protection Policy" | Format-List
+  ```
+
+- **標準の事前設定済みセキュリティ ポリシー**: 関連付けられたポリシーには名前が付けられます `Standard Preset Security Policy<13-digit number>`。 たとえば、「 `Standard Preset Security Policy1622650008019` 」のように入力します。 RecommendPolicyType プロパティの値は Standard です。
+
+  - **Defender for Microsoft 365 を使用していない組織**:
+
+    Defender for Microsoft 365 を使用していない組織の Standard プリセット セキュリティ ポリシーの個々のセキュリティ ポリシーを表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+  - **Defender for Microsoft 365 を使用している組織**:
+
+    Defender for Microsoft 365 を使用している組織の Standard プリセット セキュリティ ポリシーの個々のセキュリティ ポリシーを表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Standard anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"; Write-Output -InputObject ("`r`n"*3),"Standard Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Standard"
+    ```
+
+- **厳密な事前設定済みセキュリティ ポリシー**: 関連付けられているポリシーには名前が付けられます `Strict Preset Security Policy<13-digit number>`。 たとえば、「 `Strict Preset Security Policy1642034872546` 」のように入力します。 RecommendPolicyType プロパティの値は Strict です。
+
+  - **Defender for Microsoft 365 を使用していない組織**:
+
+    - Defender for Microsoft 365 を使用していない組織の Strict プリセット セキュリティ ポリシーの個々のセキュリティ ポリシーを表示するには、次のコマンドを実行します。
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+      ```
+
+  - **Defender for Microsoft 365 を使用している組織**:
+
+    - Defender for Microsoft 365 を使用している組織の Strict プリセット セキュリティ ポリシーの個々のセキュリティ ポリシーを表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"Strict anti-malware policy",("-"*79);Get-MalwareFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-spam policy",("-"*79);Get-HostedContentFilterPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict anti-phishing policy",("-"*79);Get-AntiPhishPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Attachments policy",("-"*79);Get-SafeAttachmentPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"; Write-Output -InputObject ("`r`n"*3),"Strict Safe Links policy",("-"*79);Get-SafeLinksPolicy | Where-Object -Property RecommendedPolicyType -eq -Value "Strict"
+    ```
+
+### <a name="use-powershell-to-view-rules-for-preset-security-policies"></a>PowerShell を使用して、事前設定されたセキュリティ ポリシーのルールを表示する
+
+Microsoft 365 Defender ポータルで Standard プリセット セキュリティ ポリシーまたは Strict 事前設定セキュリティ ポリシーを一度も有効にしていない場合は、それらのポリシーに関連するルールが存在しないことを忘れないでください。
+
+- **組み込みの保護プリセット セキュリティ ポリシー**: 関連付けられたルールは ATP Built-In Protection Rule という名前です。
+
+  組み込みの保護プリセット セキュリティ ポリシーに関連付けられているルールを表示するには、次のコマンドを実行します。
+
+  ```powershell
+  Get-ATPBuiltInProtectionRule
+  ```
+
+  構文とパラメーターの詳細については、「 [Get-ATPBuiltInProtectionRule](/powershell/module/exchange/get-atpbuiltinprotectionrule)」を参照してください。
+
+- **Standard プリセット セキュリティ ポリシー**: 関連付けられたルールには、Standard Preset Security Policy という名前が付けられます。
+
+  次のコマンドを使用して、Standard プリセット セキュリティ ポリシーに関連付けられているルールを表示します。
+
+  - Standard プリセット セキュリティ ポリシーで EOP 保護に関連付けられているルールを表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - Standard プリセット セキュリティ ポリシーでDefender for Office 365保護に関連付けられているルールを表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+  - 両方のルールを同時に表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Standard preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+    ```
+
+- **厳密な事前設定済みセキュリティ ポリシー**: 関連付けられているルールには、Strict Preset Security Policy という名前が付けられます。
+
+  次のコマンドを使用して、Strict プリセット セキュリティ ポリシーに関連付けられているルールを表示します。
+
+  - Strict プリセット セキュリティ ポリシーで EOP 保護に関連付けられているルールを表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - Strict プリセット セキュリティ ポリシーでDefender for Office 365保護に関連付けられているルールを表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+  - 両方のルールを同時に表示するには、次のコマンドを実行します。
+
+    ```powershell
+    Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*79);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Write-Output -InputObject ("`r`n"*3),"Defender for Office 365 rule - Strict preset security policy",("-"*79);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+    ```
+
+構文とパラメーターの詳細については、「 [Get-EOPProtectionPolicyRule](/powershell/module/exchange/get-eopprotectionpolicyrule) 」および「 [Get-ATPProtectionPolicyRule](/powershell/module/exchange/get-atpprotectionpolicyrule)」を参照してください。
+
+### <a name="use-powershell-to-turn-on-or-turn-off-preset-security-policies"></a>PowerShell を使用して、事前設定されたセキュリティ ポリシーを有効または無効にする
+
+前述のように、Standard または Strict の事前設定済みセキュリティ ポリシーを有効または無効にするには、ポリシーに関連付けられているルールを有効または無効にします。 ルールの State プロパティ値は、ルールが有効か無効かを示します。
+
+組織にDefender for Office 365しているかどうかに応じて、1 つのルール (EOP 保護のルール) または 2 つのルール (EOP 保護の 1 つのルールと、Defender for Office 365保護用の 1 つのルール) を有効または無効にして、事前設定されたセキュリティ ポリシーを有効または無効にする必要がある場合があります。
+
+- **標準の事前設定されたセキュリティ ポリシー**:
+
+  - **Defender for Office 365のない組織**:
+
+    - Defender for Office 365のない組織では、次のコマンドを実行して、Standard プリセット ポリシーのルールが現在有効か無効かを判断します。
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - 次のコマンドを実行して、Standard プリセット セキュリティ ポリシーが有効になっている場合はオフにします。
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - 次のコマンドを実行して、Standard プリセット セキュリティ ポリシーがオフになっている場合はオンにします。
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+  - **Defender for Office 365を持つ組織**:
+
+    - Defender for Office 365を使用している組織では、次のコマンドを実行して、Standard プリセット ポリシーのルールが現在有効か無効かを判断します。
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Standard preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Standard preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - 次のコマンドを実行して、Standard プリセット セキュリティ ポリシーが有効になっている場合はオフにします。
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+    - 次のコマンドを実行して、Standard プリセット セキュリティ ポリシーがオフになっている場合はオンにします。
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy"
+      ```
+
+- **厳密な事前設定済みセキュリティ ポリシー**:
+
+  - **Defender for Office 365のない組織**:
+
+    - Defender for Office 365を使用している組織では、次のコマンドを実行して、Strict プリセット ポリシーのルールが現在有効か無効かを判断します。
+
+      ```powershell
+      Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - 次のコマンドを実行して、Strict プリセット セキュリティ ポリシーが有効になっている場合は無効にします。
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - 次のコマンドを実行して、Strict プリセット セキュリティ ポリシーがオフになっている場合に有効にします。
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+  - **Defender for Office 365を持つ組織**:
+
+    - Defender for Office 365を使用している組織では、次のコマンドを実行して、Strict プリセット ポリシーのルールが現在有効か無効かを判断します。
+
+      ```powershell
+      Write-Output -InputObject ("`r`n"*3),"EOP rule - Strict preset security policy",("-"*63);Get-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State; Write-Output -InputObject `r`n,"Defender for Office 365 rule - Strict preset security policy",("-"*63);Get-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy" | Format-Table Name,State
+      ```
+
+    - 次のコマンドを実行して、Strict プリセット セキュリティ ポリシーが有効になっている場合は無効にします。
+
+      ```powershell
+      Disable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Disable-ATPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+    - 次のコマンドを実行して、Strict プリセット セキュリティ ポリシーがオフになっている場合に有効にします。
+
+      ```powershell
+      Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"; Enable-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy"
+      ```
+
+構文とパラメーターの詳細については、「 [Enable-EOPProtectionPolicyRule](/powershell/module/exchange/enable-eopprotectionpolicyrule)、 [Enable-ATPProtectionPolicyRule](/powershell/module/exchange/enable-atpprotectionpolicyrule)、 [Disable-EOPProtectionPolicyRule](/powershell/module/exchange/disable-eopprotectionpolicyrule)、 [Disable-ATPProtectionPolicyRule](/powershell/module/exchange/disable-atpprotectionpolicyrule)」を参照してください。
+
+### <a name="use-powershell-to-specify-recipient-conditions-and-exceptions-for-preset-security-policies"></a>PowerShell を使用して、事前設定されたセキュリティ ポリシーの受信者の条件と例外を指定する
+
+> [!IMPORTANT]
+  > 複数の異なる種類の条件や例外は加算されません。包括的です。 事前設定されたセキュリティ ポリシーは、指定 _されたすべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+  >
+  > - 受信者は次のとおりです: romain@contoso.com
+  > - 受信者が次のメンバーの場合: Executive
+  >
+  > ポリシーは、Executive グループのメンバーである場合 _にのみ_、romain@contoso.com に適用されます。 グループのメンバーでない場合、ポリシーは適用されません。
+  >
+  > 同様に、同じ受信者フィルターをポリシーの例外として使用する場合、受信者が Executive グループのメンバーでもある場合 _にのみ_、ポリシーは romain@contoso.com に適用されません。 グループのメンバーでない場合でも、ポリシーは適用されます。
+
+組み込みの保護プリセット セキュリティ ポリシーでは、受信者の例外のみを指定できます。 すべての例外パラメーター値が空の場合 (`$null`)、ポリシーに例外はありません。
+
+Standard および Strict の事前設定済みセキュリティ ポリシーでは、EOP 保護とDefender for Office 365保護の受信者の条件と例外を指定できます。 すべての条件と例外パラメーターの値が空 (`$null`) の場合、Standard または Strict の事前設定済みセキュリティ ポリシーに対する受信者の条件や例外はありません。
+
+既定のセキュリティ ポリシーに受信者の条件や例外が適用されていない場合でも、ポリシーがすべての受信者に適用されるかどうかは、この記事で前述したように [、ポリシーの優先順位](#order-of-precedence-for-preset-security-policies-and-other-policies) によって異なります。
+
+- **組み込みの保護プリセット セキュリティ ポリシー**:
+
+  次の構文を使用してください。
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null>
+  ```
+
+  この例では、組み込みの保護プリセット セキュリティ ポリシーからすべての受信者例外を削除します。
+
+  ```powershell
+  Set-ATPBuiltInProtectionRule -Identity "ATP Built-In Protection Rule" -ExceptIfRecipientDomainIs $null -ExceptIfSentTo $null -ExceptIfSentToMemberOf $null
+  ```
+
+  構文とパラメーターの詳細については、「 [Set-ATPBuiltInProtectionRule](/powershell/module/exchange/set-atpbuiltinprotectionrule)」を参照してください。
+
+- **Standard または Strict の事前設定済みセキュリティ ポリシー**
+
+  次の構文を使用してください。
+
+  ```powershell
+  <Set-EOPProtectionPolicyRule | SetAtpProtectionPolicyRule> -Identity "<Standard Preset Security Policy | Strict Preset Security Policy>" -SentTo <"user1","user2",... | $null> -ExceptIfSentTo <"user1","user2",... | $null> -SentToMemberOf <"group1","group2",... | $null> -ExceptIfSentToMemberOf <"group1","group2",... | $null> -RecipientDomainIs <"domain1","domain2",... | $null> -ExceptIfRecipientDomainIs <"domain1","domain2",... | $null>
+  ```
+
+  この例では、Executives という名前の配布グループのメンバーに対して、Standard プリセット セキュリティ ポリシーの EOP 保護からの例外を構成します。
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Standard Preset Security Policy" -ExceptIfSentToMemberOf Executives
+  ```
+
+  この例では、指定されたセキュリティ操作 (SecOps) メールボックスの Strict 事前設定済みセキュリティで、Defender for Office 365保護からの例外を構成します。
+
+  ```powershell
+  Set-EOPProtectionPolicyRule -Identity "Strict Preset Security Policy" -ExceptIfSentTo "SecOps1","SecOps2"
+  ```
+
+  構文とパラメーターの詳細については、「 [Set-EOPProtectionPolicyRule](/powershell/module/exchange/set-eopprotectionpolicyrule) 」および [「Set-ATPProtectionPolicyRule](/powershell/module/exchange/Set-atpprotectionpolicyrule)」を参照してください。

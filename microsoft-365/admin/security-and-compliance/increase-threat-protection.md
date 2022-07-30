@@ -1,5 +1,5 @@
 ---
-title: ビジネス向け Microsoft 365 の脅威保護を強化する
+title: Microsoft 365 Business の脅威に対する保護を強化する
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -14,6 +14,7 @@ ms.collection:
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - MiniMaven
 - MSB365
 - OKR_SMB_M365
@@ -24,16 +25,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft Defender for Office 365を設定し、フィッシング、マルウェア、その他の脅威から機密データを保護します。
-ms.openlocfilehash: fe7a70b8418ef4658b173611b0c940a0932736d9
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 3eee2afebdd3ffe2085029388e70b6b45de420e7
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603337"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085533"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>ビジネス向け Microsoft 365 の脅威保護を強化する
+# <a name="increase-threat-protection-for-microsoft-365-for-business"></a>Microsoft 365 Business の脅威に対する保護を強化する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 この記事は、フィッシング、マルウェア、その他の脅威から保護するために、Microsoft 365 サブスクリプションの保護を強化するのに役立ちます。 これらの推奨事項は、法律事務所や医療診療所など、セキュリティの必要性が高まる組織に適しています。
 
@@ -49,7 +50,7 @@ Office 365または Microsoft 365 環境には、マルウェアに対する保�
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>から[**詳細を表示]**、[**管理 センター**]、[**セキュリティ**] の順に選択します。
 
-1. **電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシーに移動します**。
+1. **Email &コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシーに移動します**。
 
 1. 使用可能なポリシーから、[ **マルウェア対策**] を選択します。
 
@@ -73,7 +74,7 @@ Office 365または Microsoft 365 環境には、マルウェアに対する保�
 
 ## <a name="watch-protect-against-ransomware"></a>ウォッチ: ランサムウェアから保護する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198018)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198018)で、このビデオや他のビデオを確認してください。
 
 ランサムウェアは、ファイルを暗号化したり、コンピューター画面をロックしたりすることで、データへのアクセスを制限します。 その後、データへのアクセスと引き換えに、通常はビットコインなどの仮想通貨の形式で"身代金" を要求することで、被害者から金銭を強要しようとします。
 
@@ -105,7 +106,7 @@ Office 365または Microsoft 365 環境には、マルウェアに対する保�
 
 6. **[保存]** を選択します。
 
-|設定|Office ファイルの添付ファイルを開く前にユーザーに警告する|
+|Setting|Office ファイルの添付ファイルを開く前にユーザーに警告する|
 |---|---|
 |名前|ランサムウェア対策ルール: ユーザーに警告する|
 |次の場合は、この規則を適用します。 . .|任意の添付ファイル . . . ファイル拡張子が一致します。 . .|
@@ -137,7 +138,7 @@ Office 365または Microsoft 365 環境には、マルウェアに対する保�
 
 6. **[保存]** を選択します。
 
-|設定|Office ファイルの添付ファイルを開く前にユーザーに警告する|
+|Setting|Office ファイルの添付ファイルを開く前にユーザーに警告する|
 |---|---|
 |名前|外部ドメインへの電子メールの自動転送を防止する|
 |... の場合は、この規則を適用します。|送信者 . . . は外部/内部です。 . . 組織内|
@@ -147,7 +148,7 @@ Office 365または Microsoft 365 環境には、マルウェアに対する保�
 
 ## <a name="watch-protect-your-email-from-phishing-attacks"></a>ウォッチ: フィッシング攻撃からメールを保護する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198014)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198014)で、このビデオや他のビデオを確認してください。
 
 Office 365または Microsoft 365 環境用に 1 つ以上のカスタム ドメインを構成している場合は、対象となるフィッシング対策保護を構成できます。 Microsoft Defender for Office 365の一部であるフィッシング対策保護は、悪意のある偽装ベースのフィッシング攻撃やその他のフィッシング攻撃から組織を保護するのに役立ちます。 カスタム ドメインを構成していない場合は、これを行う必要はありません。
 
@@ -157,7 +158,7 @@ Office 365または Microsoft 365 環境用に 1 つ以上のカスタム ドメ
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動します。
 
-2. [ポリシー **] セクションの [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **フィッシング対策**] に移動します。
+2. [ポリシー **] セクションの [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **フィッシング対策**] に移動します。
 
 3. [ **フィッシング対策** ] ページで、[ **+ 作成**] を選択します。 フィッシング対策ポリシーを定義する手順を示すウィザードが起動します。
 
@@ -178,9 +179,9 @@ Office 365または Microsoft 365 環境用に 1 つ以上のカスタム ドメ
 
 ## <a name="watch-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>ウォッチ: 安全な添付ファイルを使用して悪意のある添付ファイルやファイルから保護する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198019)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198019)で、このビデオや他のビデオを確認してください。
 
-ユーザーは日常的に、文書、プレゼンテーション、スプレッドシートなどを、添付ファイルとして送受信および共有します。 メール メッセージを参照しただけでは、添付ファイルが安全か悪意があるか判断するのは難しい場合があります。 以前は Microsoft 365 ATP または Advanced Threat Protection と呼ばMicrosoft Defender for Office 365には安全な添付ファイル保護が含まれていますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、および Microsoft Teams のファイルにまで及びます。
+ユーザーは日常的に、文書、プレゼンテーション、スプレッドシートなどを、添付ファイルとして送受信および共有します。 メール メッセージを参照しただけでは、添付ファイルが安全か悪意があるか判断するのは難しい場合があります。 以前は Microsoft 365 ATP または Advanced Threat Protection と呼ばMicrosoft Defender for Office 365には安全な添付ファイル保護が含まれていますが、この保護は既定では有効になりません。 この保護の使用を開始する新しいルールを作成することをお勧めします。 この保護は、SharePoint、OneDrive、およびMicrosoft Teams内のファイルに拡張されます。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
@@ -199,7 +200,7 @@ ATP の安全な添付ファイルルールが更新されました。 これで
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、管理者アカウントでサインインします。
 
-2. [ポリシー **] セクション****の [電子メール & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策**] に移動します。
+2. [ポリシー] セクション **の [Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策****]** に移動します。
 
 3. **+ 作成** を選択して新しいポリシーを作成します。
 
@@ -219,7 +220,7 @@ ATP の安全な添付ファイルルールが更新されました。 これで
 
 ## <a name="watch-protect-against-phishing-attacks-with-safe-links"></a>ウォッチ: セーフ リンクを使用してフィッシング攻撃から保護する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198201)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198201)で、このビデオや他のビデオを確認してください。
 
 ハッカーは、電子メールや他のファイル内のリンクに悪意のある Web サイトを非表示にすることがあります。 Microsoft Defender for Office 365の一部であるセーフ リンクは、電子メール メッセージと Office ドキュメントで Web アドレス (URL) をクリックで確認する時間を提供することで、組織を保護するのに役立ちます。 保護は、セーフ リンク ポリシーを使用して定義されます。
 
@@ -243,7 +244,7 @@ ATP の安全な添付ファイルルールが更新されました。 これで
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>に移動し、管理者アカウントでサインインします。
 
-2. o to **Email & collaboration** \> **Policies & rules** \> **Threat policies** \> **Anti-malware** in the **Policies** section.
+2. o Email &**コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **マルウェア対策** の **ポリシー]セクション** で選択します。
 
 3. **[+ 作成]** を選択して新しいポリシーを作成するか、既定のポリシーを変更します。
 

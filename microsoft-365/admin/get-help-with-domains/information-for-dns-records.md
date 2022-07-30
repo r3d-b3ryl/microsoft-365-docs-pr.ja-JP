@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_O365_Setup
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 - admindeeplinkMAC
@@ -23,13 +24,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: ドメインをMicrosoft 365 サブスクリプションに接続するために DNS レコードを作成するために必要な値/情報を収集します。
-ms.openlocfilehash: 672d57babb1b26e42b3fd24da8c9dc841223e41f
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+description: ドメインを Microsoft 365 サブスクリプションに接続するために DNS レコードを作成するために必要な値/情報を収集します。
+ms.openlocfilehash: 653161734a8b0a2f188c8f8a54909ed86bf3fd5f
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63316801"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084010"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>DNS レコードを作成するために必要な情報を収集する
 
@@ -39,7 +40,7 @@ ms.locfileid: "63316801"
 
 ::: moniker range="o365-worldwide"
 
-1. Microsoft 365 管理センターで、[**設定** \> ドメイン] ページ <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">に</a>移動します。
+1. Microsoft 365 管理センターで、[設定 <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>**]** \> ページに移動します。
 
 ::: moniker-end
 
@@ -57,15 +58,15 @@ ms.locfileid: "63316801"
     
 5. [[DNS レコードの追加] に移動してドメインを接続](create-dns-records-at-any-dns-hosting-provider.md)し、DNS ホストの Web サイトでレコードを追加する手順に従います。
     
-6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従って、ドメインをMicrosoft 365で確認します。
+6. DNS ホストで TXT レコード (または MX レコード) を作成する手順に従い、Microsoft 365 でドメインを確認します。
 
-7. ドメインがMicrosoft 365で確認されたら、DNS ホストから TXT レコード (または MX レコード) を削除します。
+7. ドメインが Microsoft 365 で確認されたら、DNS ホストから TXT レコード (または MX レコード) を削除します。
     
 ### <a name="step-2-find-the-mx-record-value-for-email-and-more"></a>手順 2: 電子メールなどの MX レコード値を検索する
 
 ::: moniker range="o365-worldwide"
 
-1. Microsoft 365 管理センターで、[**設定** \> ドメイン] ページ <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">に</a>移動します。
+1. Microsoft 365 管理センターで、[設定 <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">ドメイン</a>**]** \> ページに移動します。
 
 ::: moniker-end
 
@@ -77,7 +78,7 @@ ms.locfileid: "63316801"
     
 2. [ **ドメイン**] ページで、ドメインを選びます。
     
-3. [**DNS の管理**] を選択し、[**その他のオプション** > ] **を選択して独自の DNS を追加** し、[**続行**] を選択して追加する DNS レコードを表示します。
+3. [**DNS の管理**] を選択し、[**その他のオプション** > ] を選択 **して独自の DNS を追加** し、[**続行**] を選択して追加する DNS レコードを表示します。
     
     DNS ホストで変更を行う際もこの情報を使用できるように、値をコピーして貼り付けることができます。
     

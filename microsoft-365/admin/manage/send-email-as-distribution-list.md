@@ -20,23 +20,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a7c98273-067e-4162-b3a1-4ba081796012
-description: Microsoft 365の配布リストとして電子メールを送信し、メンバーがメッセージに返信したときに、配布リストから送信されているように見えるようにします。
-ms.openlocfilehash: dd6e1f906481fe1c04bfa7cd275bd108ab558d59
-ms.sourcegitcommit: da6b3cb3b2ccfcdcd5091efce8290b6c486547db
+description: Microsoft 365 で配布リストとして電子メールを送信し、メンバーがメッセージに返信したときに配布リストから送信されているように見えるようにします。
+ms.openlocfilehash: d2a2edd1b0db8bad29108b9e06555924918048e4
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/18/2022
-ms.locfileid: "65468462"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087553"
 ---
-# <a name="send-microsoft-365-email-as-a-distribution-list"></a>Microsoft 365電子メールを配布リストとして送信する
+# <a name="send-microsoft-365-email-as-a-distribution-list"></a>Microsoft 365 電子メールを配布リストとして送信する
 
-Microsoft 365では、配布リストとして電子メールを送信できます。 配布リストのメンバーであるユーザーが配布リストに送信されたメッセージに返信すると、メールは個別のユーザーからではなく、配布リストからであることが表示されます。 このトピックでは、この操作を行う方法を示します。
+Microsoft 365 では、配布リストとして電子メールを送信できます。 配布リストのメンバーであるユーザーが配布リストに送信されたメッセージに返信すると、メールは個別のユーザーからではなく、配布リストからであることが表示されます。 このトピックでは、この操作を行う方法を示します。
   
 ## <a name="before-you-begin"></a>はじめに
 
-これらの手順を実行する前に、Microsoft 365配布リストに追加され、その配布リストに対するアクセス許可として送信が付与されていることを確認します。
+これらの手順を実行する前に、Microsoft 365 配布リストに追加され、その配布リストに対するアクセス許可として送信が付与されていることを確認してください。
   
- **管理者**: [Microsoft 365 ユーザーまたは連絡先をリストに追加](../email/add-user-or-contact-to-distribution-list.md)するおよびメンバーにMicrosoft 365 [グループとして電子メールを送信することを許可する](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group)トピックの手順に従っていることを確認し、配布リストに正しいユーザーを追加します。
+ **管理者**: [「Microsoft 365 ユーザーまたは連絡先をリストに追加](../email/add-user-or-contact-to-distribution-list.md) する」と「 [メンバーが Microsoft 365 グループとして電子メールを送信することを許可する](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md#allow-members-to-send-email-as-a-group) 」トピックの手順に従っていることを確認し、配布リストに正しいユーザーを追加します。
   
 ## <a name="outlook-on-the-web"></a>Outlook on the web
 
@@ -54,9 +54,9 @@ Microsoft 365では、配布リストとして電子メールを送信できま�
 
 ## <a name="outlook"></a>Outlook
 
-1. デスクトップ クライアントOutlook開きます。
+1. Outlook デスクトップ クライアントを開きます。
 
-2. 新しいメールを作成します。 [ **差出人** ] フィールドをクリックし、[ **その他のメール アドレス**] を選択します。 [From] フィールドが表示されない場合は、[ **オプション]** に移動し、[フィールドの表示] セクションで **[元** ] を選択します。
+2. 新しいEmailを作成します。 [ **差出人** ] フィールドをクリックし、[ **その他のメール アドレス**] を選択します。 [From] フィールドが表示されない場合は、[ **オプション]** に移動し、[フィールドの表示] セクションで **[元** ] を選択します。
 
 3. グローバル アドレス **一覧から配布リスト** のアドレスを選択します。
 
@@ -65,5 +65,5 @@ Microsoft 365では、配布リストとして電子メールを送信できま�
 ## <a name="related-content"></a>関連コンテンツ
 
 [Microsoft 365 管理センターでセキュリティ グループを作成、編集、または削除する](../email/create-edit-or-delete-a-security-group.md) (記事)\
-[電子メール コラボレーション](../email/email-collaboration.md) (記事)\
+[Emailコラボレーション](../email/email-collaboration.md) (記事)\
 [配布グループにユーザーまたは連絡先を追加する](../email/add-user-or-contact-to-distribution-list.md) (記事)

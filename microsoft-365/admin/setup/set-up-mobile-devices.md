@@ -14,6 +14,7 @@ ms.collection:
 - M365-identity-device-management
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - Core_O365Admin_Migration
 - MiniMaven
 - MSB365
@@ -26,17 +27,17 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: iPhoneまたは Android スマートフォンにOfficeをインストールすると、Office アプリ内の作業ファイルはビジネス向けのMicrosoft 365によって保護されます。
-ms.openlocfilehash: f50126363722b5c1b2a988c6ec0707e2e2c6b7ac
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: iPhone または Android スマートフォンに Office をインストールすると、Office アプリ内の作業ファイルはビジネス向けに Microsoft 365 によって保護されます。
+ms.openlocfilehash: ca0f08ec4fd8488e2eaca4acff5cc3c0f1f6dd78
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60188831"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085205"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>ビジネス ユーザー向け Microsoft 365 用のモバイル デバイスをセットアップする
 
-タブの指示に従って、Office を iPhone または Android スマートフォンにインストールします。 これらの手順に従うと、Office アプリで作成された作業ファイルは、ビジネス向けのMicrosoft 365によって保護されます。
+タブの指示に従って、Office を iPhone または Android スマートフォンにインストールします。 これらの手順に従うと、Office アプリで作成された作業ファイルは、ビジネス向けの Microsoft 365 によって保護されます。
 
 この例は Outlook 用ですが、インストールするその他の Office アプリにも適用されます。
   
@@ -86,13 +87,13 @@ Android フォンでセットアップを開始するには、Play ストアに�
   
 ![Android ホーム画面で [Play ストア] をタップします。](../../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   
-Google Play の検索ボックスで「Microsoft Outlook」と入力し、**[インストール]** をタップします。Outlook のインストールが終了したら、**[開く]** をタップします。
+Google Play 検索ボックスに「Microsoft Outlook」と入力し、[ **インストール**] をタップします。 Outlook のインストールが完了したら、[ **開く**] をタップします。
   
 ![[開く] をタップして Outlook を開きます。](../../media/8b4c5937-8875-4b5a-a5b6-b8c6c9cd6240.png)
   
 Outlook アプリで、**[開始]** をタップし、ビジネス メール アカウント \> 用に Microsoft 365 を追加し、**[続行]** をタップして、組織の資格情報でサインインします。
   
-![Outlookで組織のアカウントにサインインします。](../../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
+![Outlook で組織のアカウントにサインインします。](../../media/18f67c66-4bab-4b99-94bd-080839312e29.png)
   
 Intune ポータル サイト アプリをインストールする必要があること示すダイアログで、[ **ストアに移動**] をタップします。
   
@@ -102,9 +103,9 @@ Play ストアで、Intune ポータル サイトをインストールします�
   
 ![Google Play ストアのIntune ポータル サイトのインストール ボタンを示すスクリーンショット。](../../media/5e0408f2-3f37-44dd-80ed-13ca2ac6df0c.png)
   
-Outlook をもう一度開き、PIN を入力して確認します。これで Outlook アプリが使用できるようになりました。
+Outlook をもう一度開き、PIN を入力して確認します。 これで Outlook アプリが使用できるようになりました。
   
-![Android でOutlook アプリの PIN を設定します。](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
+![Android で Outlook アプリの PIN を設定します。](../../media/edb91afb-f1ed-451a-bc6b-8ccba664e055.png)
 
 ## <a name="related-content"></a>関連コンテンツ
 

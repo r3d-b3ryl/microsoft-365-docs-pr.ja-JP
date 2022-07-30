@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 悪意のある URL を使用するフィッシングやその他の攻撃から組織を保護するための Defender for Office 365 の安全なリンク保護について説明します。 Teams の安全なリンクを見つけ、安全なリンク メッセージのグラフィックを表示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 27c9f6c36959394eadea727e81fe0dde35e66993
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: cc393372e5e8dace8ae42a2f748dfb24a7e7a5ed
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943935"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086519"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンク
 
@@ -111,7 +111,7 @@ Microsoft Defender for Office 365 のセーフ リンクを使用して悪意の
 条件または例外は 1 回だけ使用できますが、条件または例外には複数の値を含めることができます。同じ条件または例外に複数の値がある場合、OR ロジック (_\<recipient1\>_ または _\<recipient2\>_ など) が用されます。別の条件や例外がある場合は、AND ロジック (_\<recipient1\>_ や _\<member of group 1\>_ など) が適用されます。
 
 > [!IMPORTANT]
-> 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+> 複数の異なる種類の条件や例外は加算されません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
 >
 > - 受信者は次のとおりです: romain@contoso.com
 > - 受信者が次のメンバーの場合: Executive

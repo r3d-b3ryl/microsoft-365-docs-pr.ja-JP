@@ -10,6 +10,7 @@ ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: medium
 ms.custom:
+- VSBFY23
 - Core_O365Admin_Migration
 - GSTips
 - MiniMaven
@@ -19,17 +20,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e155154-bc66-48cc-8476-ab558c97115a
-description: Windowsと Mac の両方のOutlookで電子メール アカウントを設定する方法と、Office アプリのインストールとオンラインでの電子メールへのアクセスについて説明します。
-ms.openlocfilehash: 4afa2c18346dd83006754e90096a2abec9fc7c35
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+description: Windows と Mac の両方の Outlook で電子メール アカウントを設定する方法と、Office アプリのインストールとオンラインでの電子メールへのアクセスについて説明します。
+ms.openlocfilehash: 6355b34f41e7345bd5668c5ed820db9127ee7d85
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60169337"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084061"
 ---
 # <a name="set-up-outlook-to-read-email"></a>Outlook でメールの閲覧を設定する
 
-Microsoft 365 サブスクリプションには Web ベースのOutlookが付属していますが、サブスクリプションにOfficeクライアント アプリが含まれている場合は、個人用コンピューターまたはデバイスにインストールできるOutlookも取得されます。
+Microsoft 365 サブスクリプションには Web ベースの Outlook が付属していますが、サブスクリプションに Office クライアント アプリが含まれている場合は、個人用コンピューターまたはデバイスに Outlook をインストールすることもできます。
   
 ## <a name="set-up-an-email-account-in-outlook"></a>Outlook でメール アカウントを設定する
 
@@ -51,27 +52,27 @@ Microsoft 365 サブスクリプションには Web ベースのOutlookが付属
     
 ## <a name="set-up-an-email-account-in-outlook-2016-for-mac"></a>Outlook 2016 for Mac でメール アカウントをセットアップする
 
-初めて Outlook アプリを開くと、[受信トレイの設定] ウィザードが開きます。このウィザードで次のように操作します。 
+初めて Outlook アプリを開くと、[受信トレイの設定] ウィザードが開きます。 このウィザードで次のように操作します。 
   
 1. [ **受信トレイのセットアップ** ] ページで、[ **アカウントの追加**] を選択します。
     
-2. [アカウント] ページ **で**、**ExchangeまたはOffice 365** を選択します。
+2. [アカウント] ページ **で**、[**Exchange] または [Office 365**] を選択します。
     
-3. [**Exchange アカウント情報の入力**] ページで、名前、電子メール アドレス、パスワードを入力し、[**アカウントの追加**] を選択します。
+3. [ **Exchange アカウント情報の入力** ] ページで、名前、電子メール アドレス、パスワードを入力し、[ **アカウントの追加**] を選択します。
     
 ファイルをクラウドに保存する必要はありますか? 
   
 ## <a name="how-do-i-access-my-mail-online"></a>メールにオンライン アクセスするには、どうすればよいですか。
 
-Microsoft 365にサインインしたら、**Outlook** を選択します。
+Microsoft 365 にサインインしたら、Outlook を選択 **します**。
   
-![Outlook アプリが強調表示されたMicrosoft 365ホーム ページ。](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
+![Outlook アプリが強調表示された Microsoft 365 ホーム ページ。](../../media/3ceee838-9d85-4af3-95a6-fbcee11036f4.png)
   
-お探しのアプリが見つかりませんか? アプリ起動ツールから [**すべてのアプリ**] を選択すると、使用可能なMicrosoft 365 アプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
+お探しのアプリが見つかりませんか? アプリ起動ツールから [ **すべてのアプリ** ] を選択すると、使用可能な Microsoft 365 アプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
   
 ## <a name="how-do-i-know-if-my-subscription-includes-office-apps"></a>自分のサブスクリプションに Office アプリが含まれていることはどうすれば確認できますか。
 
-Microsoft 365 Business StandardとMicrosoft 365 Apps for businessには、Office アプリが含まれます。 詳細については、[ビジネス プランまたはOffice 365 Enterpriseプランの](https://go.microsoft.com/fwlink/p/?LinkId=723731)[Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=800029)を参照してください。
+Microsoft 365 Business StandardとMicrosoft 365 Apps for businessには Office アプリが含まれます。 詳細については、ビジネス プランまたは[Office 365 Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=800029)[プランの Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=723731) を参照してください。
   
 ## <a name="how-do-i-determine-what-subscription-i-have"></a>サブスクリプションの種類はどのような方法で確認できますか。
 

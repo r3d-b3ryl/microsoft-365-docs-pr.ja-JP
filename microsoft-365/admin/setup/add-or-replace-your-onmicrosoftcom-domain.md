@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365で onmicrosoft.com フォールバック ドメインを追加して置き換える
+title: Microsoft 365 で onmicrosoft.com フォールバック ドメインを追加して置き換える
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -15,6 +15,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - TopSMBIssues
 - SaRA
 - MSStore_Link
@@ -28,27 +29,27 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: 新しい onmicrosoft.com ドメインを作成し、新しいフォールバック ドメインにする方法について説明します。
-ms.openlocfilehash: 967cc1992b33b3a17a853954175adbf050b34f1c
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 66f5562b4a2ba46f662a54ff33d953c4e617ce3a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772134"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087311"
 ---
-# <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Microsoft 365で onmicrosoft.com フォールバック ドメインを追加して置き換える
+# <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Microsoft 365 で onmicrosoft.com フォールバック ドメインを追加して置き換える
 
-Microsoft 365にサインアップすると、Microsoft は *onmicrosoft.com* ドメイン (**フォールバック ドメイン**) を提供します。ドメインを所有していない場合や、Microsoft 365に接続したくない場合 (tailspintoys.onmicrosoft.com など)。 フォールバック ドメインは、次の場合に既定で使用されます。
+Microsoft 365 にサインアップすると、フォールバック ドメイン *である onmicrosoft.com* **ドメイン** が提供されます。ドメインを所有していない場合や、Microsoft 365 に接続したくない場合 (tailspintoys.onmicrosoft.com など)。 フォールバック ドメインは、次の場合に既定で使用されます。
 
 - ユーザー名と電子メール アドレス
-- Microsoft 365 teams & グループの電子メールエイリアス
+- Microsoft 365 チーム&グループのメール エイリアス
 - ドメインの依存関係の自動移動
 
-これは、Microsoft 365環境の既定の電子メール ルーティング アドレスとして機能します。 ユーザーがメールボックスを使用して設定されると、電子メールはフォールバック ドメインにルーティングされます。  カスタム ドメイン (tailspintoys.com など) が使用されている場合でも、そのカスタム ドメインがMicrosoft 365環境から削除された場合、フォールバック ドメインによってユーザーの電子メールが正常にルーティングされます。
+これは、Microsoft 365 環境の既定の電子メール ルーティング アドレスとして機能します。 ユーザーがメールボックスを使用して設定されると、電子メールはフォールバック ドメインにルーティングされます。  カスタム ドメイン (tailspintoys.com など) が使用されている場合でも、そのカスタム ドメインが Microsoft 365 環境から削除された場合、フォールバック ドメインによってユーザーの電子メールが正常にルーティングされます。
 
 フォールバック ドメインは、Microsoft 365 管理センターで変更できます。 フォールバック ドメインを変更する一般的な理由は次のとおりです。
 
-- Microsoft 365に初めてサインアップしたときに使用する会社名がわからない。 会社名がわかったので、ユーザーに適切なログイン アカウント名を設定する必要があります。 
-- 新しいサイトを作成するときに、SharePoint URL がどのように表示されるかを変更したいと考えています。 Microsoft 365環境のSharePoint URL は、フォールバック ドメイン名に基づいて作成されます。 初めてサインアップしたときに正しい会社名を使用しなかった場合、サイトのSharePoint URL は、新しいSharePoint サイトを作成するときに引き続きその名前を使用します。 
+- Microsoft 365 に初めてサインアップしたときに使用する会社名がわからない。 会社名がわかったので、ユーザーに適切なログイン アカウント名を設定する必要があります。 
+- 新しいサイトを作成するときに SharePoint URL がどのように表示されるかを変更したいと考えています。 Microsoft 365 環境の SharePoint URL は、フォールバック ドメイン名に基づいて作成されます。 初めてサインアップしたときに正しい会社名を使用しなかった場合、サイトの SharePoint URL は、新しい SharePoint サイトを作成するときにその名前を引き続き使用します。 
 
 
 追加の onmicrosoft.com ドメインを追加できますが、フォールバック ドメインとして使用できる onmicrosoft.com ドメインは 1 つだけです。 この記事の手順では、次の方法について説明します。
@@ -56,7 +57,7 @@ Microsoft 365にサインアップすると、Microsoft は *onmicrosoft.com* �
 - フォールバック ドメインとして割り当てる
 
 > [!NOTE]
-> Microsoft 365環境では、合計で 5 つの onmicrosoft.com ドメインが制限されています。 一度追加されると、削除できません。 
+> Microsoft 365 環境では、合計で 5 つの onmicrosoft.com ドメインが制限されています。 一度追加されると、削除できません。 
   
 ## <a name="before-you-begin"></a>はじめに
 
@@ -65,7 +66,7 @@ Microsoft 365にサインアップすると、Microsoft は *onmicrosoft.com* �
 
 ## <a name="add-a-new-onmicrosoftcom-domain"></a>新しい onmicrosoft.com ドメインを追加する
 
-1. Microsoft 365 管理センターで **[設定**] を選択し、[**ドメイン**] を選択します。
+1. Microsoft 365 管理センターで **[設定]** を選択し、**[ドメイン]** を選択します。
 2. onmicrosoft.com の既定のドメインを選択します。
 
     ![[ドメイン] ページ。](../../media/onmicrosoft-domains.png)
@@ -81,7 +82,7 @@ Microsoft 365にサインアップすると、Microsoft は *onmicrosoft.com* �
     > [!NOTE]
     > 入力したドメイン名のスペルと正確性を確認してください。 ドメインは 5 つの onmicrosoft.com に制限されており、現在は作成後は削除できません。     
 
-5. [**ドメインの追加**] を選択します。 正常に追加されると、これを示すメッセージが表示されます。 
+5. [**ドメインの追加**] を選択します。 正常に追加されると、それを示すメッセージが表示されます。 
     
     ![正常に追加されたドメインのスクリーンショット。](../../media/domain-added.png)
 
@@ -91,11 +92,11 @@ Microsoft 365にサインアップすると、Microsoft は *onmicrosoft.com* �
 
 
 > [!NOTE]
-> フォールバック ドメインを新しい onmicrosoft.com ドメインに変更する前に、onmicrosoft.com SharePoint ドメインの変更を検討してください。 追加の onmicrosoft ドメインを作成し、フォールバック ドメインとして使用しても、SharePoint Online の名前は変更されません。 既存のSharePointとOneDrive URL は変わりません。  ドメイン[名の変更プレビュー](/sharepoint/change-your-sharepoint-domain-name) (現在、1,000 サイト未満のテナントで利用可能) SharePoint で提供されている PowerShell の手順を使用して、.onmicrosoft SharePoint ドメインを変更できます。
+> フォールバック ドメインを新しい onmicrosoft.com ドメインに変更する前に、onmicrosoft.com SharePoint ドメインの変更を検討してください。 追加の onmicrosoft ドメインを作成し、フォールバック ドメインとして使用しても、SharePoint Online の名前は変更されません。 既存の SharePoint と OneDrive の URL は変わりません。  SharePoint ドメイン [の名前変更プレビュー](/sharepoint/change-your-sharepoint-domain-name) で提供されている PowerShell の手順を使用して、.onmicrosoft SharePoint ドメインを変更できます (現在、サイト数が 1,000 未満の任意のテナントで使用できます)。
 
 新しい onmicrosoft.com ドメインを作成したら、次の手順に従ってフォールバック ドメインに変更します。
 
-1. Microsoft 365 管理センターで **[設定**] を選択し、[**ドメイン**] を選択します。 
+1. Microsoft 365 管理センターで **[設定]** を選択し、**[ドメイン]** を選択します。 
 
 2. 作成した新しい onmicrosoft.com ドメインを選択します。
 

@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - SaRA
 - AdminSurgePortfolio
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 for Business のほとんどのサブスクリプションを更新し、継続請求をオンまたはオフにする方法について説明します。
 ms.date: 05/04/2021
-ms.openlocfilehash: 5a0b9550df77c7482173e378f4d367af8f363887
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 74eb33f058081d4cd7d9bf7cb741324272a6a46a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102244"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084897"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 

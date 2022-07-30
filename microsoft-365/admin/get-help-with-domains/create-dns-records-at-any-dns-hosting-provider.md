@@ -18,17 +18,18 @@ search.appverid:
 - MET150
 description: ドメインを確認して、レジストラーのアカウントの DNS レコードを更新することで、任意の DNS ホスティング プロバイダーでドメインを Microsoft 365 に接続します。
 ms.custom:
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 - business_assist
 - admindeeplinkMAC
-ms.openlocfilehash: 08d28a5586c92d0e439170807f750150d9fbe17c
-ms.sourcegitcommit: 5c9137f98e688ab23c144e75687399e390bb2601
+ms.openlocfilehash: d4175cc9cdf0e0a2b7e58d0b9bc0cf295cc3683c
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "64704781"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67083951"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>DNS レコードを追加して自分のドメインを接続する
 

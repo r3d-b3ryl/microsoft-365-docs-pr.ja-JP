@@ -1,5 +1,5 @@
 ---
-title: Exchange Online で配布リストを Microsoft 365 グループにアップグレードする
+title: Exchange Onlineで配布リストをMicrosoft 365 グループにアップグレードする
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -21,32 +21,32 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: 1 つまたは複数の配布リストを Exchange Online の Microsoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
-ms.openlocfilehash: 6f27c4a7df345a25f4b5ca7d2a9f2979a97e7c6a
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+description: 1 つまたは複数の配布リストをExchange OnlineのMicrosoft 365 グループにアップグレードする方法と、PowerShell を使用して複数の配布リストを同時にアップグレードする方法について説明します。
+ms.openlocfilehash: e1ea8b16f36eee9cfde8eb968be0f1ed388913ab
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65922177"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67085227"
 ---
-# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Exchange Online で配布リストを Microsoft 365 グループにアップグレードする
+# <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-exchange-online"></a>Exchange Onlineで配布リストをMicrosoft 365 グループにアップグレードする
 
 配布リストを Microsoft 365 グループにアップグレードすることは、組織内のグループの機能と機能を向上させる優れた方法です。 詳細については、「[Outlook で配布リストをグループにアップグレードする必要がある理由」を参照してください](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)。
 
-配布リストは、一度に 1 つずつ、または複数の配布リストを同時にアップグレードできます。 Exchange 管理センター (EAC) または Exchange Online PowerShell を使用できます。
+配布リストは、一度に 1 つずつ、または複数の配布リストを同時にアップグレードできます。 Exchange 管理センター (EAC) または PowerShell Exchange Online使用できます。
 
-## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>1 つまたは複数の配布リスト グループを Microsoft 365 グループにアップグレードする
+## <a name="upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups"></a>1 つまたは複数の配布リスト グループをMicrosoft 365 グループにアップグレードする
 
 配布リストをアップグレードするには、グローバル管理者または Exchange 管理者である必要があります。 Microsoft 365 グループにアップグレードするには、配布リストに指定された所有者が必要で、その所有者はメールボックスである必要があります。
 
-### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>クラシック EAC を使用して、Outlook で 1 つまたは複数の配布リスト グループを Microsoft 365 グループにアップグレードする
+### <a name="use-the-classic-eac-to-upgrade-one-or-many-distribution-list-groups-to-microsoft-365-groups-in-outlook"></a>クラシック EAC を使用して、Outlook で 1 つまたは複数の配布リスト グループをMicrosoft 365 グループにアップグレードする
 
 > [!NOTE]
 > このセクションの手順は、新しい EAC では使用できません。
 
 1. Exchange 管理センター>**受信者グループに**\>移動 <a href="https://go.microsoft.com/fwlink/?linkid=2183233" target="_blank">**します**</a>。
 
-   Microsoft 365 グループにアップグレードできる配布リスト ( **配布グループ** とも呼ばれます) があることを示す通知が表示されます。
+   Microsoft 365 グループにアップグレードできる配布リスト (**配布グループ** とも呼ばれます) があることを示す通知が表示されます。
    
    ![[作業の開始] ボタンを選択します。](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
@@ -56,7 +56,7 @@ ms.locfileid: "65922177"
 
 1. アップグレード アイコンを選択します。
 
-   ![Microsoft 365 グループへのアップグレード アイコン。](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
+   ![Microsoft 365 グループ アイコンにアップグレードします。](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
 1. 情報ダイアログで、[ **はい** ] を選択してアップグレードを確認します。 プロセスがすぐに開始されます。 アップグレードする配布ライトのサイズと数によっては、プロセスに数分または数時間かかる場合があります。
 
@@ -82,7 +82,7 @@ ms.locfileid: "65922177"
 
 2. スクリプトが役に立たない場合は、 [サポート チケット](../../business-video/get-help-support.md)を開きます。 この問題は、Groups Engineering チームにエスカレートする必要があります。
 
-## <a name="how-to-use-exchange-online-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>Exchange Online PowerShell を使用して複数の配布リストを同時にアップグレードする方法
+## <a name="how-to-use-exchange-online-powershell-to-upgrade-several-distribution-lists-at-the-same-time"></a>PowerShell Exchange Onlineを使用して複数の配布リストを同時にアップグレードする方法
 
 Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
@@ -113,7 +113,7 @@ Upgrade-DistributionGroup -DLIdentities marketing@contoso.com
 Upgrade-DistributionGroup -DLIdentities <EmailAddress1>,<EmailAddress2>,...
 ```
 
-この例では、指定した配布リストを Microsoft 365 グループにアップグレードします。
+この例では、指定した配布リストをMicrosoft 365 グループにアップグレードします。
 
 ```powershell
 Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.com,hr@contoso.com
@@ -123,7 +123,7 @@ Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.c
 
 ### <a name="upgrade-all-eligible-distribution-lists"></a>対象となる配布リストをすべてアップグレードする
 
-次のいずれかの方法を使用して、対象となるすべての配布リストを Microsoft 365 グループにアップグレードします。
+次のいずれかの方法を使用して、対象となるすべての配布リストをMicrosoft 365 グループにアップグレードします。
 
 - 対象となる配布リストをすべてアップグレードします。
 
@@ -139,7 +139,7 @@ Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.c
    $All | Foreach-Object {Upgrade-DistributionGroup -DLIdentities $_.PrimarySMTPAddress}
    ```
 
-## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook の Microsoft 365 グループへの配布リストのアップグレードに関する FAQ
+## <a name="faq-about-upgrading-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Outlook で配布リストをMicrosoft 365 グループにアップグレードする方法に関する FAQ
 
 ### <a name="which-distribution-lists-cant-be-upgraded"></a>アップグレードできない配布リストはどれですか?
 
@@ -153,9 +153,9 @@ Upgrade-DistributionGroup -DLIdentities marketing@contoso.com,finanace@contoso.c
 |100 人以上の所有者がいる配布リスト。|不要|
 |メンバーのみが含まれ、所有者は含まれない配布リスト。|いいえ|
 |特殊文字を含むエイリアスを持つ配布リスト。|不要|
-|配布リストは、共有メールボックスの転送先アドレスとして構成されます。|不要|
+|配布リストは、共有メールボックスの転送先アドレスとして構成されます。|いいえ|
 |配布リストは、別の配布リストの **送信者制限** の一部です。|いいえ|
-|メールが有効なセキュリティ グループ。|不要|
+|メールが有効なセキュリティ グループ。|いいえ|
 |動的配布グループ。|いいえ|
 |**RoomLists** に変換された配布リスト。|不要|
 
@@ -194,9 +194,9 @@ Get-EligibleDistributionGroupForMigration
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>1 つまたは一部の DL がアップグレードされない場合はどうなりますか?
 
-対象となる配布リストをアップグレードできない場合があります。 次に例を示します。
+対象となる配布リストをアップグレードできない場合があります。 例:
 
-- 管理者が **グループ電子メール アドレス ポリシー** を適用し、配布リストがポリシーの要件を満たしていません。
+- 管理者が **グループ Email アドレス ポリシー** を適用し、配布リストがポリシーの要件を満たしていません。
 
 - 配布リストには、 **MemberJoinRestriction** または **MemberDepartRestriction** が値 Closed に設定 **されています**。
 
@@ -204,7 +204,7 @@ Get-EligibleDistributionGroupForMigration
 
   この特定の問題には、次のいずれかの回避策を使用します。
 
-  - 配布リストのすべての所有者が Microsoft 365 グループの作成を許可されていることを確認します (つまり、所有者は、Microsoft 365 グループの作成が許可されているセキュリティ グループのメンバーです)。
+  - 配布リストのすべての所有者がMicrosoft 365 グループの作成を許可されていることを確認します (つまり、所有者は、Microsoft 365 グループの作成が許可されているセキュリティ グループのメンバーです)。
 
   - 配布リストの所有者を、Microsoft 365 グループの作成を許可されているユーザーに一時的に置き換えます。
 
@@ -219,5 +219,5 @@ Get-EligibleDistributionGroupForMigration
 ## <a name="related-content"></a>関連コンテンツ
 
 [グループの比較](../create-groups/compare-groups.md) (記事)\
-[ユーザーへの Microsoft 365 グループの説明](../create-groups/explain-groups-knowledge-worker.md) (記事)\
+[ユーザーへのMicrosoft 365 グループの説明](../create-groups/explain-groups-knowledge-worker.md) (記事)\
 [管理センターを使用して Microsoft 365 グループのメンバーを追加または削除する](../create-groups/add-or-remove-members-from-groups.md)

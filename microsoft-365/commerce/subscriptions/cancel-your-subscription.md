@@ -14,6 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - commerce_subscriptions
 - AdminSurgePortfolio
 - AdminTemplateSet
@@ -21,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power Platform、および一般法人向け Microsoft 365 の試用版または有料サブスクリプションをキャンセルする方法について説明します。
 ms.date: 07/07/2022
-ms.openlocfilehash: f7d967d14f7f0e23e3d422318bddf25eb6772dcf
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 9acaaff87e649342a073e2395edb41ca07dd1485
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695706"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084809"
 ---
 # <a name="cancel-your-microsoft-subscription"></a>Microsoft サブスクリプションをキャンセルする
 

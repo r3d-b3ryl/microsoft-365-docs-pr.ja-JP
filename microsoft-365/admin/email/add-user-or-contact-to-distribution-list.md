@@ -14,6 +14,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid:
@@ -21,17 +22,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: 従業員、パートナー、ベンダーなどのMicrosoft 365ユーザーまたは連絡先を電子メール配布グループに追加する方法について説明します。
-ms.openlocfilehash: e4054d73707d77297ae4f5e9f6f2fb406a829d55
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+description: Microsoft 365 ユーザーまたは連絡先 (従業員、パートナー、ベンダーなど) を電子メール配布グループに追加する方法について説明します。
+ms.openlocfilehash: 765380e1c8b6bd4aed94df9335d6b1dafe5bd12a
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437219"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084083"
 ---
-# <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Microsoft 365配布グループにユーザーまたは連絡先を追加する
+# <a name="add-a-user-or-contact-to-a-microsoft-365-distribution-group"></a>Microsoft 365 配布グループにユーザーまたは連絡先を追加する
 
-組織の管理者として、いずれかのユーザーまたは連絡先を配布グループに追加する必要がある場合があります ([「Microsoft 365で配布グループを作成](../setup/create-distribution-lists.md)する」を参照してください。 たとえば、従業員、外部パートナー、またはベンダーを電子メール配布グループに追加できます。
+組織の管理者として、いずれかのユーザーまたは連絡先を配布グループに追加する必要がある場合があります ( [「Microsoft 365 で配布グループを作成](../setup/create-distribution-lists.md)する」を参照してください。 たとえば、従業員、外部パートナー、またはベンダーを電子メール配布グループに追加できます。
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>配布グループにユーザーまたは連絡先を追加する
 
@@ -53,7 +54,7 @@ ms.locfileid: "65437219"
   
 ## <a name="next-steps"></a>次の手順
 
-[Microsoft 365で配布グループとして電子メールを送信](../manage/send-email-as-distribution-list.md)する方法について説明します。
+[Microsoft 365 で配布グループとして電子メールを送信](../manage/send-email-as-distribution-list.md)する方法について説明します。
 
 ## <a name="related-content"></a>関連コンテンツ
 

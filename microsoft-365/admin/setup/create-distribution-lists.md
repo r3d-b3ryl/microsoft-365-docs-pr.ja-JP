@@ -18,17 +18,18 @@ search.appverid:
 - MOE150
 ms.assetid: b1ffe755-59e5-4369-826d-825f145a8400
 ms.custom:
+- VSBFY23
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
 - AdminTemplateSet
 description: 各受信者の名前を入力せずにグループに電子メールを送信できるように、Microsoft 365 管理センターに配布グループまたはリストを作成します。
-ms.openlocfilehash: 128f7bb028a115f521f65412e3e8a36c48119a6c
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: c1e640a9294dce11e5e321856c97c9094c407c07
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373958"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086541"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターで配布グループを作成する
   
@@ -50,7 +51,7 @@ ms.locfileid: "61373958"
 
 ::: moniker-end
 
-1. アプリ起動ツールアイコンを選択し、[管理者] を選択 **します**。
+1. アプリ起動ツールアイコンを選択し、**管理** を選択します。
     
     お探しのアプリが見つかりませんか? アプリ起動ツールから [ **すべてのアプリ** ] を選択すると、使用可能なアプリのアルファベット順の一覧が表示されます。 そこから、特定のアプリを検索できます。 
     
@@ -64,7 +65,7 @@ ms.locfileid: "61373958"
     
 6. 配布リストにユーザーを追加するには、「ユーザー [または連絡先を配布グループに追加する](../email/add-user-or-contact-to-distribution-list.md)」を参照してください。
     
-Outlookの連絡先グループ [(旧称配布リスト) のOutlook 2016とOutlook on the webでグループを使用する](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)方法を確認します。 
+Outlook の連絡先グループ [(旧称配布リスト) のOutlook 2016とOutlook on the webでグループを使用する](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39)方法を確認します。 
   
 [配布リストの問題](/office365/troubleshoot/groups/distribution-list-issues)に関するヘルプについては、配布グループの問題を確認してください。 
 

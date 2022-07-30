@@ -13,7 +13,9 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- VSBFY23
+- AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
@@ -21,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c4cf347-b897-45c1-a71f-210bdc8f1061
 description: カスタム ドメインの DNS レコードを管理するように Microsoft を設定している場合は、Microsoft 以外でホストされている既存のパブリック Web サイトにトラフィックをルーティングする方法について説明します。
-ms.openlocfilehash: 9bb12d4f73e8d95717ddd90492fb9cb97c73eec9
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 914c2374bd15d4a94769203142021db86c689427
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314822"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67084149"
 ---
 # <a name="update-dns-records-to-keep-your-website-with-your-current-hosting-provider"></a>DNS レコードを更新して現在のホスティング プロバイダーに Web サイトを維持する
 
@@ -67,4 +69,4 @@ ms.locfileid: "63314822"
   
 [Microsoft を指すようにドメインの NS レコードを更新](../setup/add-domain.md) します。 
   
-NS レコードが Microsoft を指すように更新されると、ドメインがすべて設定されます。 電子メールは Microsoft にルーティングされ、Web サイト アドレスへのトラフィックは引き続き現在の Web サイト ホストに送信されます。
+NS レコードが Microsoft を指すように更新されると、ドメインがすべて設定されます。 Emailは Microsoft にルーティングされ、Web サイト アドレスへのトラフィックは引き続き現在の Web サイト ホストに送信されます。

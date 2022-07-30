@@ -20,12 +20,12 @@ ms.collection:
 description: 管理者は、Microsoft Defender for Office 365の安全な添付ファイル機能について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6ba76616e931810aadaeded61a30386c84e46029
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 4ccbe9073440240fb9d09097958a24e7671081d0
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037536"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67087618"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の安全な添付ファイル
 
@@ -55,7 +55,7 @@ ms.locfileid: "67037536"
 > [!NOTE]
 > 次の機能は、Microsoft 365 Defender ポータルの安全な添付ファイル ポリシーのグローバル設定にあります。 ただし、これらの設定はグローバルに有効または無効になっており、安全な添付ファイル ポリシーは必要ありません。
 >
-> - [SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)。
+> - [SharePoint、OneDrive、およびMicrosoft Teamsの安全な添付ファイル](mdo-for-spo-odb-and-teams.md)。
 > - [Microsoft 365 E5 の安全なドキュメント](safe-docs.md)
 
 ## <a name="safe-attachments-policy-settings"></a>安全な添付ファイル ポリシー設定
@@ -88,7 +88,7 @@ ms.locfileid: "67037536"
   条件または例外は 1 回だけ使用できますが、条件または例外には複数の値を含めることができます。同じ条件または例外に複数の値がある場合、OR ロジック (_\<recipient1\>_ または _\<recipient2\>_ など) が用されます。別の条件や例外がある場合は、AND ロジック (_\<recipient1\>_ や _\<member of group 1\>_ など) が適用されます。
 
   > [!IMPORTANT]
-  > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+  > 複数の異なる種類の条件や例外は加算されません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
   >
   > - 受信者は次のとおりです: romain@contoso.com
   > - 受信者が次のメンバーの場合: Executive

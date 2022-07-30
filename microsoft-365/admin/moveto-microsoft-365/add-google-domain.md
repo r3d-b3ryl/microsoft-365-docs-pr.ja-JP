@@ -13,6 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
+- VSBFY23
 - AdminSurgePortfolio
 - adminvideo
 - admindeeplinkMAC
@@ -22,20 +23,20 @@ search.appverid:
 - MET150
 - MOE150
 description: ドメインを Google ワークスペースから Microsoft 365 for Business に移行する方法について説明します。
-ms.openlocfilehash: 06129811ea1d97b0ffb770843c58373427228559
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 896de05a70d67ce6ad6e5eadcdb4f0e0bfa95a58
+ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601138"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67086805"
 ---
 # <a name="add-your-google-workspace-domain-to-microsoft-365"></a>Google Workspace ドメインを Microsoft 365 に追加します
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 ## <a name="watch-add-google-workspace-domain"></a>ウォッチ: Google ワークスペース ドメインを追加する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198105)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198105)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
 

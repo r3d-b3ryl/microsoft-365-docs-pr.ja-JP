@@ -9,27 +9,33 @@ metadata:
   ms.topic: hub-page
   author: dmaguire
   ms.author: dmaguire
-  manager: serdars
+  manager: scotv
   audience: Admin
   ms.date: 09/04/2020
+  ms.openlocfilehash: f8d05950fbe00dedff8f924893d202ffb9013b33
+  ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+  ms.translationtype: HT
+  ms.contentlocale: ja-JP
+  ms.lasthandoff: 07/30/2022
+  ms.locfileid: "67085490"
 additionalContent:
   sections:
-    - items:
-        - title: Microsoft Bookings とは
-          summary: Web ベースの予約カレンダーとアプリを使用して予約をスケジュールおよび管理します (スタッフと自動通知メールの Outlook 統合を含む)。
-          url: bookings-overview.md
-        - title: 勤務先情報を入力する
-          summary: Microsoft Bookings のビジネス名、住所、電話番号、Web サイトの URL、ロゴ、営業時間などを、会社紹介の作成ページに入力します。
-          url: enter-business-information.md
-        - title: Bookings アプリを取得する
-          summary: 色のテーマを変更し、外部顧客向け予約ページの外観を設定します。
-          url: customize-booking-page.md
-        - title: Bookings にスタッフを追加する
-          summary: スタッフ リストの作成、スタッフ メンバーの詳細情報 (名前、電話番号、メール アドレスなど) の管理を行います。
-          url: add-staff.md
-        - title: 休業、休暇、休暇期間のスケジュール
-          summary: オフィスの休業日や従業員の休暇のスケジュールは、Bookings の予定表から設定でき、その従業員は指定した時間帯は予約できなくなります。
-          url: schedule-closures-time-off-vacation.md
-        - title: Microsoft Bookings での従業員の勤務時間
-          summary: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
-          url: employee-hours.md
+  - items:
+    - title: Microsoft Bookings とは
+      summary: Web ベースの予約カレンダーとアプリを使用して予約をスケジュールおよび管理します (スタッフと自動通知メールの Outlook 統合を含む)。
+      url: bookings-overview.md
+    - title: 勤務先情報を入力する
+      summary: Microsoft Bookings のビジネス名、住所、電話番号、Web サイトの URL、ロゴ、営業時間などを、会社紹介の作成ページに入力します。
+      url: enter-business-information.md
+    - title: Bookings アプリを取得する
+      summary: 色のテーマを変更し、外部顧客向け予約ページの外観を設定します。
+      url: customize-booking-page.md
+    - title: Bookings にスタッフを追加する
+      summary: スタッフ リストの作成、スタッフ メンバーの詳細情報 (名前、電話番号、メール アドレスなど) の管理を行います。
+      url: add-staff.md
+    - title: 休業、休暇、休暇期間のスケジュール
+      summary: オフィスの休業日や従業員の休暇のスケジュールは、Bookings の予定表から設定でき、その従業員は指定した時間帯は予約できなくなります。
+      url: schedule-closures-time-off-vacation.md
+    - title: Microsoft Bookings での従業員の勤務時間
+      summary: Microsoft Bookings で従業員の勤務時間と空き時間を設定します。
+      url: employee-hours.md
