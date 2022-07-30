@@ -477,6 +477,8 @@
                   href: ../intelligence/macro-malware.md
                 - name: フィッシング詐欺
                   href: ../intelligence/phishing.md
+                - name: フィッシングの傾向と手法
+                  href: ../intelligence/phishing-trends.md
                 - name: ランサムウェア
                   href: /security/compass/human-operated-ransomware
                 - name: ルートキット
@@ -487,6 +489,8 @@
                   href: ../intelligence/support-scams.md
                 - name: トロイの木馬
                   href: ../intelligence/trojans-malware.md
+                - name: 管理者のブロックが原因で発生した MSI ポータル エラーのトラブルシューティング
+                  href: ../intelligence/portal-submission-troubleshooting.md
                 - name: 望ましくないソフトウェア
                   href: ../intelligence/unwanted-software.md
                 - name: ワーム
