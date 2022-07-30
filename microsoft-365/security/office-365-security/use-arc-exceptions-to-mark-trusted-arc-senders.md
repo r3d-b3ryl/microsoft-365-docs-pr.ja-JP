@@ -18,12 +18,12 @@ ms.custom:
 description: 認証された受信チェーン (ARC) は、デバイス間の認証結果と、送信者と受信者の間で発生する間接的なメールフローを保持しようとする電子メール認証です。 信頼された ARC 送信者に対して例外を作成する方法を次に示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b3057350f8b1a652a08da8c878a47e191af04d0
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: 30b4f57b89ff8eaa61cf82c45a7d2b0af02d8241
+ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "66994180"
+ms.lasthandoff: 07/28/2022
+ms.locfileid: "67059647"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*正当* な間接メールフローを信頼する信頼された ARC 送信者の一覧を作成する
 
@@ -105,9 +105,9 @@ header.from=contoso.com;compauth=pass reason=130
 
 ## <a name="powershell-steps-to-add-or-remove-a-trusted-arc-sealer"></a>信頼された ARC シーラーを追加または削除する PowerShell の手順
 
-**管理者は、Exchange Online Powershell を使用して ARC 構成を設定することもできます。**
+**管理者は、Exchange Online PowerShell を使用して ARC 構成を設定することもできます。**
 
-1. Exchange Online PowerShell への接続。
+1. Exchange Online PowerShell に接続します。
 2. Connect-ExchangeOnline。
 3. 信頼された ARC シーラーにドメインを追加または更新するには:
 </br>
@@ -140,6 +140,6 @@ Get-ArcConfig - Organization {tenant name}
 
 ## <a name="next-steps-after-you-set-up-arc-for-microsoft-365-defender-for-office"></a>次の手順: Office 用に ARC for Microsoft 365 Defender を設定した後
 
-セットアップ後、 [メッセージ ヘッダー アナライザー](/connectivity-analyzer/message-header-analyzer)を使用して ARC ヘッダーを確認します。
+セットアップ後、 [メッセージ ヘッダー アナライザー](https://mha.azurewebsites.net)を使用して ARC ヘッダーを確認します。
 
 [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)、[DKIM](use-dkim-to-validate-outbound-email.md)、[DMARC](use-dmarc-to-validate-email.md)、構成手順を確認します。
