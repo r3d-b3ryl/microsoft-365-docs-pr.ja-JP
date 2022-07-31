@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 - admindeeplinkEXCHANGE
-ms.openlocfilehash: a77dcb557901f8a159e0c82a084dd02255193c72
-ms.sourcegitcommit: a209c9f86a7b4340a426c4cfed2d36a388c71124
+ms.openlocfilehash: 4b47296ec6e445df20a0694e5cff7ed5b2216852
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66797953"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099461"
 ---
 # <a name="set-up-message-encryption"></a>Message Encryption を設定する
 
@@ -60,7 +60,7 @@ Azure RMS を無効にした場合、または何らかの理由で Azure RMS �
 
 この手順は省略可能です。 Microsoft が Azure Information Protection のルート キーを管理できるようにすることが既定であり、ほとんどの組織に推奨されるベスト プラクティスです。 このような場合は、何もする必要はありません。
 
-コンプライアンス要件など、多くの理由により、独自のルート キー (Bring Your Own Key (BYOK) とも呼ばれる)の生成と管理が必要になる場合があります。 この場合には、Microsoft Purview Message Encryption を設定する前に、必要な手順を完了しておくことをお勧めします。 詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。
+コンプライアンス要件など、独自のルート キー ("Bring Your Own Key" (BYOK) とも呼ばれる) を生成して管理する必要がある理由は多数あります。 この場合には、Microsoft Purview Message Encryption を設定する前に、必要な手順を完了しておくことをお勧めします。 詳細については、「[Azure Information Protection テナント キーを計画して実装する](/information-protection/plan-design/plan-implement-tenant-key)」を参照してください。
 
 ## <a name="verify-microsoft-purview-message-encryption-configuration-in-exchange-online-powershell"></a>Exchange Online PowerShell で Microsoft Purview Message Encryption の構成を確認する
 
@@ -70,7 +70,7 @@ Azure RMS を無効にした場合、または何らかの理由で Azure RMS �
 
 2. Get-IRMConfiguration コマンドレットを実行します。
 
-     AzureRMSLicensingEnabled パラメーターの値として $True が表示されます。これは、テナントで Microsoft Purview Message Encryption が構成されていることを示します。 そのように表示されない場合は、Set-IRMConfiguration で AzureRMSLicensingEnabled の値を $ True に設定して Microsoft Purview Message Encryption を有効にします。
+     AzureRMSLicensingEnabled パラメーターの `$True` の値が表示されます。これは、Microsoft Purview Message Encryption がテナントで構成されていることを示します。 そうでない場合は、Set-IRMConfiguration を使用して AzureRMSLicensingEnabled の値を `$True` に設定し、Microsoft Purview Message Encryption を有効にします。
 
 3. 次の構文を使用して Test-IRMConfiguration コマンドレットを実行します:
 
@@ -106,10 +106,10 @@ Azure RMS を無効にした場合、または何らかの理由で Azure RMS �
 
    - 既定のテンプレート名は、上に表示されているものとは異なる場合があります。 詳細については、「[Azure Information Protection のテンプレートを構成して管理する](/azure/information-protection/configure-policy-templates)」を参照してください。
 
-4. **RMS テンプレートを取得できませんでした** というエラー メッセージが表示されてテストに合格しなかった場合は、次のコマンドを実行し、Test-IRMConfiguration コマンドレットを実行して合格を確認します。
+4. **RMS テンプレートを取得できませんでした** というエラー メッセージが表示されてテストに合格しなかった場合は、次のコマンドを実行し、Test-IRMConfiguration コマンドレットを実行して合格を確認します。 [AIPService モジュール](/powershell/module/aipservice/?view=azureipps) に接続して、コマンドレットを実行します。
 
    ```powershell
-   $RMSConfig = Get-AadrmConfiguration
+   $RMSConfig = Get-AipServiceConfiguration
    $LicenseUri = $RMSConfig.LicensingIntranetDistributionPointUrl
    Set-IRMConfiguration -LicensingLocation $LicenseUri
    Set-IRMConfiguration -InternalLicensingEnabled $true

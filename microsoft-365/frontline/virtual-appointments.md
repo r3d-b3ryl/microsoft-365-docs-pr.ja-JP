@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: f36d79aa4902991e07355fc6bfd3a6add1ae0fe0
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e4047d051a12c34f18cf8d13de2f5827cdc5c426
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66995009"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67100099"
 ---
 # <a name="virtual-appointments-with-microsoft-teams"></a>Microsoft Teams を使用した仮想予定
 
@@ -55,7 +55,7 @@ Teams の [Bookings アプリ](https://support.microsoft.com/office/what-is-book
 
 ## <a name="teams-electronic-health-record-ehr-connector"></a>Teams の電子カルテ (EHR) コネクタ
 
-医療機関で EHR システムを使用している場合は、Teams EHR コネクタを使用して Teams を統合して、よりシームレスな仮想ケア エクスペリエンスを実現できます。 Teams EHR コネクタを使用するのに、医療機関向けの Microsoft Cloud のアクティブなサブスクリプション、または Microsoft Teams EHR コネクタのスタンドアロン プランへのサブスクリプションが必要です。
+医療機関で EHR システムを使用している場合は、Teams EHR コネクタを使用して Teams を統合して、よりシームレスな仮想ケア エクスペリエンスを実現できます。 Teams EHR コネクタには、Microsoft Cloud for Healthcare のアクティブなサブスクリプション、または Microsoft Teams EHR コネクタ スタンドアロン オファー サブスクリプションが必要です。
 
 Teams EHR コネクタを設定した後、臨床医は EHR システムから直接 Teams で他のプロバイダーと患者との訪問や相談を開始できます。
 

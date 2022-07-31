@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Teams EHR コネクタを統合して、組織内の医療プロバイダーが Cerner EHR システムから直接 Teams の患者または他のプロバイダーと仮想予約を行えるようにする方法について説明します。
-ms.openlocfilehash: eeb851e0f040d714dd55c5d1b262507a6b5eaf83
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 9388ec0fef16fb15221044e387c485586acc1a64
+ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822594"
+ms.lasthandoff: 07/30/2022
+ms.locfileid: "67099890"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-cerner-ehr"></a>Teams での仮想予定 - Cerner EHR への統合
 
@@ -53,7 +53,7 @@ Teams のコミュニケーションとコラボレーション プラットフ�
 
 医療組織で Teams EHR コネクタを統合する前に、次のものが必要です。
 
-- Microsoft Cloud for Healthcare のアクティブなサブスクリプション、または Microsoft Teams EHR コネクタのスタンドアロン オファーのサブスクリプション。
+- Microsoft Cloud for Healthcare のアクティブなサブスクリプション、または Microsoft Teams EHR コネクタ スタンドアロン オファー サブスクリプション。
 - ユーザーは、Teams 会議を含む適切な Microsoft 365 またはOffice 365 ライセンスを持っています。
 - Teams が採用され、医療組織で使用されます。
 - システムは、Teams のすべての[ソフトウェアとブラウザーの要件](/microsoftteams/hardware-requirements-for-the-teams-app)を満たしています。
