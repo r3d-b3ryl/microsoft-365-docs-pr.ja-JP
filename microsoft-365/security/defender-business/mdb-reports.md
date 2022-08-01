@@ -1,46 +1,58 @@
 ---
-title: Microsoft Defender for Businessのレポート
-description: Defender for Business のセキュリティ レポートの概要を確認します。 レポートには、検出された脅威、アラート、脆弱性、デバイスの状態が表示されます。
+title: Microsoft Defender for Business のレポート (プレビュー)
+description: Microsoft Defender for Business で利用可能なレポートの概要を取得する (プレビュー)
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp
 audience: Admin
 ms.topic: overview
+ms.date: 01/06/2022
 ms.prod: m365-security
 ms.technology: mdb
-ms.localizationpriority: medium
-ms.reviewer: shlomiakirav
+localization_priority: Normal
+ms.reviewer: inbadian, shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 21a8bcca2e0b4bfb58e1209810bb35a7c25cdc2d
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 9d70984e4bce9cd7724326ca5f823fb9cf7d7440
+ms.sourcegitcommit: 4c207a9bdbb6c8ba372ae37907ccefca031a49f8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772863"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "62464742"
 ---
-# <a name="reports-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのレポート
+# <a name="reports-in-microsoft-defender-for-business-preview"></a>Microsoft Defender for Business のレポート (プレビュー)
 
-複数のレポートが、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で利用できます。 この記事では、これらのレポート、それらを使用する方法、およびそれらを見つける方法について説明します。
+> [!IMPORTANT]
+> Microsoft Defender for Business はプレビュー中で、ここでサインアップして要求する顧客と IT パートナーに徐[](https://aka.ms/mdb-preview)々にロールアウトされます。 今後数週間以内に最初の一連の顧客とパートナーをオンボードし、一般提供に至るプレビューを拡大します。 プレビューは最初の一連 [のシナリオで](mdb-tutorials.md#try-these-preview-scenarios)起動し、定期的に機能を追加します。
+> 
+> この記事の一部の情報は、製品リリース前に大幅に変更される可能性がある、事前リリース済みの製品/サービスに関連しています。 Microsoft は、ここに提供される情報について、明示または黙示を問わず一切の保証を行いません。 Microsoft Defender for Business (プレビュー) には、次の表に示すいくつかのレポートが含まれています。<br/><br/>
+
+いくつかのレポートは、ポータル () Microsoft 365 Defender利用できます[https://security.microsoft.com](https://security.microsoft.com)。 この記事では、これらのレポート、それらを使用する方法、およびそれらを見つける方法について説明します。
+
+>
+> **少し時間ありますか?**
+> <a href="https://microsoft.qualtrics.com/jfe/form/SV_0JPjTPHGEWTQr4y" target="_blank">Microsoft Defender for Business に関する短いアンケートをご覧ください</a>。 ご意見をお寄せください。
+>
+
+<br/><br/>
 
 ## <a name="reports-in-defender-for-business"></a>Defender for Business のレポート
 
 |レポート  |説明  |
 |---------|---------|
-| **セキュリティ レポート**  | セキュリティ レポートには、会社の ID、デバイス、アプリに関する情報が表示されます。 このレポートにアクセスするには、ナビゲーション ウィンドウで [ **レポート** > **全般** > **セキュリティ レポート**] を選択します。 <br/><br/>**ヒント** 同様の情報は、Microsoft 365 Defender ポータル ()[https://security.microsoft.com](https://security.microsoft.com) のホーム ページで確認できます。 |
-| **脅威保護**  | 脅威保護レポートは、アラートとアラートの傾向に関する情報を提供します。 [ **アラートの傾向** ] 列を使用して、過去 30 日間にトリガーされたアラートに関する情報を表示します。 **[アラートの状態**] 列を使用して、未解決のアラートのカテゴリや分類など、アラートに関する現在のスナップショット情報を表示します。 このレポートにアクセスするには、ナビゲーション ウィンドウで [ **Reports** > **Endpoints** > **Threat Protection**] を選択します。 <br/><br/>**ヒント**: [ **インシデント]** リストを使用して、アラートに関する情報を表示することもできます。 ナビゲーション ウィンドウで [インシデント] を選択し、現在 **の** インシデントを表示および管理します。 詳細については、「 [Defender for Business でのインシデントの表示と管理」を](mdb-view-manage-incidents.md)参照してください。 |
-| **デバイスの正常性とコンプライアンス** | デバイスの正常性とコンプライアンス レポートは、デバイスの正常性と傾向に関する情報を提供します。 このレポートを使用して、Defender for Business センサーがデバイスで正しく動作しているかどうか、および Microsoft Defender ウイルス対策の現在の状態を判断できます。 このレポートにアクセスするには、ナビゲーション ウィンドウで [ **レポート** > **エンドポイント デバイスの** > **正常性とコンプライアンス**] を選択します。 <br/><br/>**ヒント**: **デバイス インベントリ** リストを使用して、会社のデバイスに関する情報を表示できます。 ナビゲーション ウィンドウで、[ **デバイス インベントリ**] を選択します。 詳細については、「 [Defender for Business でデバイスを管理する」を](mdb-manage-devices.md)参照してください。 |
-| **脆弱なデバイス** | 脆弱なデバイス レポートには、デバイスと傾向に関する情報が表示されます。 [ **傾向** ] 列を使用して、過去 30 日間にアラートが表示されたデバイスに関する情報を表示します。 **[状態]** 列を使用して、アラートがあるデバイスに関する現在のスナップショット情報を表示します。 このレポートにアクセスするには、ナビゲーション ウィンドウで [ **レポート** > **エンドポイントの** > **脆弱なデバイス**] を選択します。<br/><br/>**ヒント**: **デバイス インベントリ** リストを使用して、会社のデバイスに関する情報を表示できます。 ナビゲーション ウィンドウで、[ **デバイス インベントリ**] を選択します。 詳細については、「 [Defender for Business でデバイスを管理する」を](mdb-manage-devices.md)参照してください。 |
-| **Web 保護** | Web 保護レポートには、フィッシング サイト、マルウェア ベクトル、悪用サイト、信頼されていないサイトまたは低評価のサイト、および明示的にブロックされているサイトへのアクセス試行が表示されます。 ブロックされたサイトのカテゴリには、成人コンテンツ、娯楽サイト、法的責任サイトなどがあります。 このレポートにアクセスするには、ナビゲーション ウィンドウで [ **レポート** > **エンドポイント** > **Web 保護**] を選択します。<br/><br/>会社の Web 保護をまだ構成していない場合は、レポート ビューの **[設定]** ボタンを選択します。 次に、[ **ルール]** で [ **Web コンテンツ フィルター**] を選択します。 Web コンテンツ のフィルター処理の詳細については、「 [Web コンテンツ のフィルター処理](../defender-endpoint/web-content-filtering.md)」を参照してください。 |
-| **ファイアウォール** | ファイアウォール レポートには、受信、送信、およびアプリの接続がブロックされています。 また、このレポートには、複数のデバイスで接続されたリモート IP と、接続試行回数が最も多いリモート IP も表示されます。 <br/><br/>まだファイアウォール保護を構成していない場合は、ナビゲーション ウィンドウで [**Endpoints** >  Configuration management Device configuration] (エンドポイント **構成管理** > **デバイス構成**) を選択します。 詳細については、「 [Defender for Business のファイアウォール」を](mdb-firewall.md)参照してください。 |
-| **デバイス コントロール** | デバイス制御レポートには、組織内のリムーバブル ストレージ デバイスの使用など、メディアの使用状況に関する情報が表示されます。 |
-
+| **セキュリティ レポート**  | セキュリティ レポートには、組織の ID、デバイス、アプリに関する情報が表示されます。 このレポートにアクセスするには、ナビゲーション ウィンドウで [**ReportsGeneralSecurity** >  >  レポート **] を選択します**。 <br/><br/>**ヒント** 同様の情報は、ポータル () のホーム Microsoft 365 Defender表示できます [https://security.microsoft.com](https://security.microsoft.com)。 |
+| **脅威保護**  | 脅威保護レポートは、アラートとアラートの傾向に関する情報を提供します。 [アラート **の傾向] 列** を使用して、過去 30 日間にトリガーされたアラートに関する情報を表示します。 [アラート **の状態]** 列を使用して、未解決のアラートのカテゴリや分類など、アラートに関する現在のスナップショット情報を表示します。 このレポートにアクセスするには、ナビゲーション ウィンドウで [**ReportsEndpointsThreat** >  >  **protection] を選択します**。 <br/><br/>**ヒント**: [インシデント] リストを使用 **して** 、アラートに関する情報を表示することもできます。 ナビゲーション ウィンドウで、[インシデント] **を選択して** 、現在のインシデントを表示および管理します。 詳細については、「Microsoft Defender for Business (プレビュー)でのインシデントの表示と [管理」を参照してください](mdb-view-manage-incidents.md)。 |
+| **デバイスの正常性とコンプライアンス** | デバイスの正常性とコンプライアンス レポートには、デバイスの正常性と傾向に関する情報が表示されます。 このレポートを使用して、Defender for Business (プレビュー) センサーがデバイスで正しく動作し、デバイスの現在の状態をMicrosoft Defender ウイルス対策。 このレポートにアクセスするには、ナビゲーション ウィンドウで [**ReportsEndpointsDevice** >  >  **の正常性とコンプライアンス] を選択します**。 <br/><br/>**ヒント**: デバイス インベントリ リスト **を使用して** 、組織のデバイスに関する情報を表示できます。 ナビゲーション ウィンドウで、[デバイス インベントリ] **を選択します**。 詳細については、「Microsoft Defender for Business (プレビュー)でデバイスを管理 [する」を参照してください](mdb-manage-devices.md)。 |
+| **脆弱なデバイス** | 脆弱なデバイス レポートは、デバイスと傾向に関する情報を提供します。 [傾向 **] 列** を使用して、過去 30 日間にアラートが発生したデバイスに関する情報を表示します。 [状態] **列を** 使用して、アラートがあるデバイスに関する現在のスナップショット情報を表示します。 このレポートにアクセスするには、ナビゲーション ウィンドウで [**ReportsEndpointsVulnerable** >  >  **デバイス] を選択します**。<br/><br/>**ヒント**: デバイス インベントリ リスト **を使用して** 、組織のデバイスに関する情報を表示できます。 ナビゲーション ウィンドウで、[デバイス インベントリ] **を選択します**。 詳細については、「Microsoft Defender for Business (プレビュー)でデバイスを管理 [する」を参照してください](mdb-manage-devices.md)。 |
+| **Web 保護** | Web 保護レポートには、フィッシング サイト、マルウェア ベクター、悪用サイト、信頼されていないサイトまたは低評価サイト、明示的にブロックされているサイトにアクセスする試みが表示されます。 ブロックされたサイトのカテゴリには、アダルト コンテンツ、レジャー サイト、法的責任サイトなどがあります。 このレポートにアクセスするには、ナビゲーション ウィンドウで [**ReportsEndpointsWeb** >  protection] を > **選択します**。<br/><br/>**ヒント**: 組織の Web 保護をまだ構成していない場合は、レポート **ビュー** で [設定] ボタンを選択します。 次に、[ルール **] で** [ **Web コンテンツ フィルター] を選択します**。 Web コンテンツ フィルターの詳細については、「Web コンテンツ フィルター [」を参照してください](../defender-endpoint/web-content-filtering.md)。 |
 
 ## <a name="see-also"></a>関連項目
 
-- [Defender for Business の使用を開始する](mdb-get-started.md)
-- [Defender for Business でインシデントを表示および管理する](mdb-view-manage-incidents.md)
-- [Defender for Business でデバイスを管理する](mdb-manage-devices.md)
+- [Microsoft Defender for Business の使用を開始する (プレビュー)](mdb-get-started.md)
+
+- [Microsoft Defender for Business でのインシデントの表示と管理 (プレビュー)](mdb-view-manage-incidents.md)
+
+- [Microsoft Defender for Business でデバイスを管理する (プレビュー)](mdb-manage-devices.md)

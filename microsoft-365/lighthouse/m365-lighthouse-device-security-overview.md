@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、セキュリティ リスクを表示する方法について説明します。
-ms.openlocfilehash: f4c33552c71ada14d11e309cc2d7328f203e066c
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 52378e088b6b131008efa3bd8c2d480e8a871df7
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055968"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66994420"
 ---
 # <a name="overview-of-the-microsoft-defender-for-endpoint-page-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの [Microsoft Defender for Endpoint] ページの概要
 
 Microsoft Defender for Endpointは、ランサムウェア、マルウェア、フィッシング、その他の脅威から顧客のデバイスを保護するためのエンドポイント セキュリティを提供します。 Microsoft 365 Lighthouseを使用すると、すべての顧客テナントのエンドポイント セキュリティ分析情報と情報を表示できます。
 
-Microsoft 365 Lighthouseの [Microsoft Defender for Endpoint] ページには、ホーム ページの **[セキュリティ インシデント**] カードまたは左側のナビゲーション ウィンドウで [**デバイス** > **デバイス のセキュリティ**] を選択してアクセスできます。 テナントに注意が必要なセキュリティ インシデントとアラート、およびMicrosoft Defender for Endpointにオンボードされたデバイスが表示されます。
+Microsoft 365 Lighthouseの [Microsoft Defender for Endpoint] ページには、[**セキュリティ インシデント**] カードの [**ホーム**] ページ、または左側のナビゲーション ウィンドウの **[デバイス \> デバイス セキュリティ] タブ** からアクセスできます。テナントに注意が必要なセキュリティ インシデントとアラート、およびMicrosoft Defender for Endpointにオンボードされたデバイスが表示されます。
 
 ## <a name="incidents-and-alerts-tab"></a>[インシデントとアラート] タブ
 
@@ -38,7 +38,7 @@ Microsoft 365 Lighthouseの [Microsoft Defender for Endpoint] ページには、
 
 ## <a name="devices-tab"></a>[デバイス] タブ
 
-[デバイス] タブには、Microsoft Defender for Endpointにオンボードされている顧客テナント内のすべてのデバイスが一覧表示されます。 この一覧には、Microsoft エンドポイント マネージャーおよびMicrosoft Defender for Endpointによって管理されているデバイスが含まれます。
+Microsoft Defender for Endpointにオンボードされている顧客テナント内のすべてのデバイスの [デバイス] タブの一覧。 この一覧には、Microsoft エンドポイント マネージャーおよびMicrosoft Defender for Endpointによって管理されているデバイスが含まれます。
 
 [デバイス] タブには、次のオプションも含まれています。
 

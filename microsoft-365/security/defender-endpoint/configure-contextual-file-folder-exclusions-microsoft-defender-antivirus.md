@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6fa5ebe413baef991b412cd44d90239bfb72b0e2
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: a2dfcd6372398f92ba401a109302ef541de88565
+ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099043"
+ms.lasthandoff: 06/29/2022
+ms.locfileid: "66994436"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>コンテキスト ファイルとフォルダーの除外
 
@@ -46,8 +46,8 @@ ms.locfileid: "67099043"
 | Restriction | TypeName | 値 |
 |:---|:---|:---|
 | ファイル/フォルダー  | PathType  | file <br> folder |
-| スキャンの種類 | ScanType | 速い <br> 一杯 |
-| スキャン トリガー | ScanTrigger | OnDemand <br> OnAccess <br> BM |
+| スキャンの種類 | ScanType | クイック <br> 完全 |
+| スキャン トリガー | ScanTrigger | オンデマンド <br> OnAccess <br> BM |
 | プロセス | プロセス | "<image_path>" |
 
 ### <a name="requirements"></a>要件
@@ -73,11 +73,11 @@ _すべての_**型** と **値** では大文字と小文字が区別されま�
 
 次の文字列は、イメージ名 "winword.exe" を持つプロセスによってアクセスされたためにスキャン (オンアクセス) された場合にのみ、"c:\documents\design.doc" を除外します。
 
-`c:\documents\design.doc\:{Process:"winword.exe"}`
+`c:\documents\design.doc\:{Process:”winword.exe”}`
 
 次の例のように、プロセス イメージパスにワイルドカードを含めることがあります。
 
-`c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
+`c:\documents\design.doc\:{Process:”C:\Program Files*\Microsoft Office\root\Office??\winword.exe”}`
 
 ### <a name="filefolder-restriction"></a>ファイル/フォルダーの制限
 
@@ -146,7 +146,7 @@ _すべての_**型** と **値** では大文字と小文字が区別されま�
 
 特定のプロセスによってアクセスされた場合にのみファイルまたはフォルダーを除外するには、通常のファイルまたはフォルダーの除外を作成し、除外を制限するプロセスを次のように追加します。  
 
-`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
+`c:\documents\design.doc\:{Process:”winword.exe”, Process:”msaccess.exe”}`
 
 ### <a name="how-to-configure"></a>構成する方法
 
