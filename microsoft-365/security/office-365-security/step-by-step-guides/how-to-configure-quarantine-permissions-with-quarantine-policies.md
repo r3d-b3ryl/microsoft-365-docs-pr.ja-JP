@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: c8f739a82223a9315e5082377b4951a88b1ea1df
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: 709656cafc15333559ac8abe50e21ccde690d09a
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66994324"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106955"
 ---
 # <a name="how-to-configure-quarantine-permissions-and-policies"></a>検疫のアクセス許可とポリシーを構成する方法
 
@@ -69,6 +69,6 @@ ms.locfileid: "66994324"
 - 検疫ポリシーで使用できる **グローバル ポリシー** を使用して、組織のブランド ロゴ、表示名、免責事項を有効にします。
 - また、検疫通知の **ユーザー頻度を 1 日** に設定します。
 
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>詳細
 
 組織のブランド化と通知の設定の詳細については、[検疫ポリシー - Office 365 |Microsoft Docs](../../office-365-security/quarantine-policies.md)

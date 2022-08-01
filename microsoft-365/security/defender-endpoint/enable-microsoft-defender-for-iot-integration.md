@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f32d521fe83c9e72566228bb10efb37b851b6e05
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 460988f063eb23c53ce76359da6ba7875ab3bc62
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748079"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107131"
 ---
 # <a name="onboard-with-microsoft-defender-for-iot"></a>Microsoft Defender for IoT でオンボードする
 
@@ -67,7 +67,7 @@ Defender for Endpoint 統合の設定を変更するには、ユーザーに次�
 
 ## <a name="set-up-a-network-sensor"></a>ネットワーク センサーを設定する
 
-ネットワーク センサーを設定するには、Azure サブスクリプションに、Enterprise IoT デバイスが追加された Defender for IoT プランが必要です。 詳細については、「 [Defender for IoT の概要」を](/azure/defender-for-iot/organizations/getting-started)参照してください。
+ネットワーク センサーを設定するには、 [前述](#onboard-a-defender-for-iot-plan)のように、Azure サブスクリプションに、Enterprise IoT デバイスが追加された Defender for IoT プランが必要です。
 
 ネットワーク センサーを追加するには、[ **ネットワーク センサーのセットアップ** ] で **Microsoft Defender for IoT** リンクを選択します。 これにより、Azure portalのオンボード センサーのセットアップ プロセスが表示されます。 詳細については、「 [Enterprise IoT の概要](/azure/defender-for-iot/organizations/tutorial-getting-started-eiot-sensor)」を参照してください。
 
@@ -89,7 +89,7 @@ Defender for IoT でデバイスを表示する方法については、「組織
 
 ## <a name="cancel-your-defender-for-iot-plan"></a>Defender for IoT プランをキャンセルする
 
-Defender for IoT プランは、ポータルの Defender for Endpoint 設定ページから取り [https://security.microsoft.com](https://security.microsoft.com/) 消すことができます。 プランを取り消すと、統合が停止し、Defender for Endpoint でセキュリティ評価の値を取得したり、Defender for IoT で新しいデバイスを検出したりできなくなります。
+ポータルの Defender for Endpoint 設定ページから Defender for IoT プランを [https://security.microsoft.com](https://security.microsoft.com/) キャンセルします。 プランを取り消すと、統合が停止し、Defender for Endpoint でセキュリティ評価の値を取得したり、Defender for IoT で新しいデバイスを検出したりできなくなります。
 
 ## <a name="see-also"></a>関連項目
 

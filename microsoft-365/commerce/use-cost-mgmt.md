@@ -3,7 +3,7 @@ title: Microsoft 365 管理センターでコスト管理を使用する
 author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
-ms.reviewer: drjones, jmueller
+ms.reviewer: amberb, vikdesai
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,16 +18,16 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 管理センターのコスト管理機能を使用して、組織のコストを表示、分析、管理する方法について説明します。
 ms.date: 03/09/2022
-ms.openlocfilehash: c0cfcd47e20d34b12af1276995b0c0cfe1dc1ee7
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: e7c0d04aad860ad192222e82ec14e2041d1b5cdb
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63524923"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106889"
 ---
 # <a name="use-cost-management-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターでコスト管理を使用する
 
-Microsoft 顧客契約 (MCA) を持つグローバル管理者または課金管理者の場合は、Microsoft 365 管理センターの **[コスト管理**] ページを使用して、サービス コストを表示、分析、管理できます。 **[コスト管理**] ページに移動するには、管理センターの左側のナビゲーション ウィンドウで **BillingCost** >  管理を選択します。
+Microsoft 顧客契約 (MCA) を持つグローバル管理者または課金管理者の場合は、Microsoft 365 管理センターの **[コスト管理**] ページを使用して、サービス コストを表示、分析、管理できます。 **[コスト管理**] ページに移動するには、管理センターの左側のナビゲーション ウィンドウで [**課金** > **コスト管理**] を選択します。
 
 ## <a name="before-you-begin"></a>はじめに
 
@@ -44,9 +44,9 @@ Microsoft 顧客契約 (MCA) を持つグローバル管理者または課金管
 
 ## <a name="understand-your-costs"></a>コストを把握する
 
-Microsoft 365課金機能を使用して、請求書のコストを確認し、課金情報へのアクセスを管理できます。 大規模な組織では、通常、調達チームと財務チームが課金タスクを実行します。
+Microsoft 365 の課金機能を使用して、請求されたコストを確認し、課金情報へのアクセスを管理できます。 大規模な組織では、通常、調達チームと財務チームが課金タスクを実行します。
 
-Microsoft 365を使用するようにサインアップすると、自動的に課金アカウントが作成されます。 課金アカウントを使用して、請求書と支払いを管理し、コストを追跡します。 複数の課金アカウントを持つことができます。 組織の法人または販売先住所ごとに、個別の請求先アカウントを受け取ります。
+Microsoft 365 を使用するようにサインアップすると、自動的に課金アカウントが作成されます。 課金アカウントを使用して、請求書と支払いを管理し、コストを追跡します。 複数の課金アカウントを持つことができます。 組織の法人または販売先住所ごとに、個別の請求先アカウントを受け取ります。
 
 ## <a name="plan-and-control-costs"></a>コストの計画と管理
 
@@ -65,7 +65,7 @@ Microsoft 365 管理センターのコスト管理は、次のタスクを行う
 
 ## <a name="download-costs"></a>コストのダウンロード
 
-[**ダウンロード**] を選択して、毎日のコスト データを CSV またはExcel ファイルにダウンロードします。 必要に応じて、データを使用して料金をさらに分析したり、他のデータとマージしたりできます。
+[ **ダウンロード** ] を選択して、1 日のコスト データを CSV または Excel ファイルにダウンロードします。 必要に応じて、データを使用して料金をさらに分析したり、他のデータとマージしたりできます。
 
 ## <a name="create-budgets"></a>予算を作成する
 

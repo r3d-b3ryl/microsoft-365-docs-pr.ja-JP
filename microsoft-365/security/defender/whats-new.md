@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 5c9adadb46ce040c6c98f2551c14c41fdda333e1
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 99d11ff6de3a322ec12c51e86bcab1e6f26c6a2d
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051538"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106977"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Microsoft 365 Defender の新機能
 
@@ -42,7 +42,10 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Microsoft Defender for Identityの新機能](/defender-for-identity/whats-new)
 - [Microsoft Defender for Cloud Appsの新機能](/cloud-app-security/release-notes)
 
-メッセージ [センター](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)を通じて、製品の更新と重要な通知を受け取ることもできます。 
+メッセージ [センター](https://admin.microsoft.com/Adminportal/Home#/MessageCenter)を通じて、製品の更新と重要な通知を受け取ることもできます。
+
+## <a name="august-2022"></a>2022 年 8 月
+- (GA) [ハンティング用の Microsoft Defender エキスパート](defender-experts-for-hunting.md) が一般公開されるようになりました。 堅牢なセキュリティ運用センターを持つMicrosoft 365 Defenderのお客様で、Microsoft Defender データを使用してエンドポイント、Office 365、クラウド アプリケーション、ID 全体で脅威を積極的に検出できるように Microsoft に支援を求める場合は、サービスの適用、設定、および使用の詳細を確認してください。 Defender Experts for Hunting は、他のMicrosoft 365 Defender製品とは別に販売されています。
 
 ## <a name="july-2022"></a>2022 年 7 月
 - (プレビュー)Microsoft Defender Experts for Hunting パブリック プレビュー参加者は、Microsoft 365 Defender製品によって生成されたアラートと共に、ハンティング サービスが環境内で発生した脅威を理解するのに役立つ月次レポートの受信を楽しみにしています。 詳細については、「[Microsoft 365 Defenderの Defender Experts for Hunting レポートについて](defender-experts-report.md)」を参照してください。

@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 99bfcd9003d55ced96364f033080992fa4447188
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: de0de8b418036d6b8e73b9cf5ec8deafc24af6a9
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66994289"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106495"
 ---
 # <a name="protect-your-c-suite-with-priority-account-protection"></a>優先度の高いアカウント保護で c スイートを保護する
 

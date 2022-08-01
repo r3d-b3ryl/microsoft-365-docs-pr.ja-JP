@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dca4745b5058ed7b98bf0821e2b715393f7bf77f
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 3fc36623e6de005ba1d9f348d6a70d839acef637
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695968"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106911"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>前の MMA ベースのMicrosoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -49,7 +49,10 @@ ms.locfileid: "66695968"
 
 ## <a name="installer-script"></a>インストーラー スクリプト
 
-自動アップグレードを実行するために Microsoft Endpoint Configuration Managerがまだ利用できない場合や更新されていない場合は、アップグレードを容易にするために、この[アップグレード スクリプト](https://github.com/microsoft/mdefordownlevelserver)を使用できます。 次の必要な手順を自動化するのに役立ちます。
+>[!NOTE]
+>スクリプトを実行するマシンがスクリプトの実行をブロックしていないことを確認します。 PowerShell の推奨実行ポリシー設定は Allsigned です。 スクリプトがエンドポイントで SYSTEM として実行されている場合は、スクリプトの署名証明書をローカル コンピューターの信頼された発行元ストアにインポートする必要があります。
+
+自動アップグレードを実行するために Microsoft Endpoint Configuration Managerがまだ利用できない場合や更新されていない場合は、アップグレードを容易にするために、この[アップグレード スクリプト](https://github.com/microsoft/mdefordownlevelserver)を使用できます。 [コード] ボタンを選択し、.zip ファイルをダウンロードし、install.ps1を抽出してダウンロードします。 次の必要な手順を自動化するのに役立ちます。
 
 1. Microsoft Defender for Endpointの OMS ワークスペースを削除します (省略可能)。
 2. インストールされている場合は、System Center Endpoint Protection (SCEP) クライアントを削除します。
@@ -66,36 +69,17 @@ ms.locfileid: "66695968"
 >[!NOTE]
 >Endpoint Protection ポリシーの構成を実行するには、Microsoft Endpoint Configuration Manager バージョン 2107 以降が必要です。
 
-移行手順: 
+Microsoft Endpoint Configuration Managerバージョン 2207 より前のバージョンを使用して移行する方法については、「[Microsoft Monitoring Agent から統合ソリューションへのサーバーの移行](/microsoft-365/security/defender-endpoint/application-deployment-via-mecm)」を参照してください。
 
-1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新します。
-2. 移行するマシンを含めるメンバーシップ規則を持つ新しいコレクションを作成します。
-3. 次のタスクを実行する[アプリケーションを作成](/mem/configmgr/apps/deploy-use/create-applications)します。 
-   1. SCEP をアンインストールします。
-   2. 該当する場合 [は、前提条件をインストールします](configure-server-endpoints.md#prerequisites) 。
-   3. Microsoft Defender for Endpointをインストールする ([サーバー エンドポイントの構成に関するページを](configure-server-endpoints.md)参照してください。
-   4. Microsoft 365 Defenderからダウンロードした **グループ ポリシーで使用する** オンボード スクリプト [を適用します](https://security.microsoft.com)。 
-   > [!TIP]
-   > [インストーラー スクリプト](server-migration.md#installer-script)をアプリケーションの一部として使用して、上記の手順を自動化できます。
-4. アプリケーションを新しいコレクションにデプロイします。
-5. (既存の) Endpoint Protection ポリシーをコレクションに作成または割り当てます。
-6. 更新プログラムを適用します。
+## <a name="if-you-are-running-a-non-microsoft-antivirus-solution"></a>Microsoft 以外のウイルス対策ソリューションを実行している場合
 
-### <a name="you-are-currently-using-microsoft-endpoint-configuration-manager-to-manage-your-servers-are-running-a-non-microsoft-antivirus-solution-and-the-mma-based-sensor-you-want-to-upgrade-to-the-new-microsoft-defender-for-endpoint"></a>現在、Microsoft Endpoint Configuration Managerを使用してサーバーを管理し、Microsoft 以外のウイルス対策ソリューションと MMA ベースのセンサーを実行しています。 新しいMicrosoft Defender for Endpointにアップグレードする必要があります。
-
-移行手順:
-
-1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新します。
-2. 移行するマシンを含めるメンバーシップ規則を持つ新しいコレクションを作成します。 
-3. サードパーティのウイルス対策管理がこれらのマシンにウイルス対策をプッシュしないようにします。*
-4. MECM の Endpoint Protection ノードでポリシーを作成し、新しく作成されたコレクションをターゲットにします。
-5. 次のタスクを実行するアプリケーションを作成します。
-   1. Microsoft Defender for Endpointの MMA ワークスペース構成を削除します。 [PowerShell を使用したワークスペースの削除に関するページを参照](/azure/azure-monitor/agents/agent-manage)してください。 この手順は省略可能です。以前の EDR センサーは、新しいセンサーがアクティブになった後に実行を停止します。
-   2. 該当する場合 [は、前提条件をインストールします](configure-server-endpoints.md#prerequisites) 。
-   3. Windows Server 2012 R2 および 2016 パッケージのMicrosoft Defender for Endpointをインストールし、**パッシブ モードを有効にします**。 [コマンド ラインを使用した Microsoft Defender ウイルス対策のインストールに関するページを](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)参照してください。
-   4. Microsoft 365 Defenderからダウンロードした **グループ ポリシーで使用する** オンボード スクリプト [を適用します](https://security.microsoft.com)。
-6. 更新プログラムを適用します。
-7. Microsoft 以外のウイルス対策コンソールを使用するか、必要に応じて Microsoft Endpoint Configuration Managerを使用して、Microsoft 以外のウイルス対策ソフトウェアを削除します。 必ずパッシブ モード構成を削除してください。*
+1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新し[、前提条件](configure-server-endpoints.md#prerequisites)が満たされていることを確認します。
+2. サード パーティのウイルス対策管理で、これらのマシンにウイルス対策エージェントがプッシュされなくなったことを確認します。
+3. Microsoft Defender for Endpointの保護機能に対するポリシーを作成し、任意のツールでコンピューターにターゲットを設定します。
+4. Windows Server 2012 R2 および 2016 パッケージのMicrosoft Defender for Endpointをインストールし、**パッシブ モードを有効にします**。 [コマンド ラインを使用した Microsoft Defender ウイルス対策のインストールに関するページを](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)参照してください。
+   a. Microsoft 365 Defenderからダウンロードした **グループ ポリシーで使用する** オンボード スクリプト [を適用します](https://security.microsoft.com)。
+5. 更新プログラムを適用します。
+6. Microsoft 以外のウイルス対策コンソールを使用するか、必要に応じて Microsoft Endpoint Configuration Managerを使用して、Microsoft 以外のウイルス対策ソフトウェアを削除します。 必ずパッシブ モード構成を削除してください。*
 
 > [!TIP]
 > [インストーラー スクリプト](server-migration.md#installer script)をアプリケーションの一部として使用して、上記の手順を自動化できます。 パッシブ モードを有効にするには、-Passive フラグを適用します。 たとえば、.\install.ps1 -RemoveMMA <YOUR_WORKSPACE_ID> -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive
@@ -106,43 +90,17 @@ ms.locfileid: "66695968"
 
 パス: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode 型: REG_DWORD値: 0
 
-MMA から統合ソリューションへのサーバーの移行の詳細については、「 [Microsoft Monitoring Agent から統合ソリューションへのサーバーの移行](application-deployment-via-mecm.md)」を参照してください。
+## <a name="if-you-are-running-system-center-endpoint-protection-but-are-not-managing-the-machine-using-microsoft-endpoint-configuration-manager-mecmconfigmgr"></a>System Center Endpoint Protectionを実行しているが、Microsoft Endpoint Configuration Manager (MECM/ConfigMgr) を使用してコンピューターを管理していない場合
 
-## <a name="other-migration-scenarios"></a>その他の移行シナリオ
-
-### <a name="you-have-a-server-that-has-been-onboarded-using-the-mma-based-microsoft-defender-for-endpoint-it-has-scep-installed-windows-server-2012-r2-or-microsoft-defender-antivirus-windows-server-2016-this-machine-is-not-managed-through-microsoft-defender-for-cloud-microsoft-endpoint-manager-or-microsoft-endpoint-configuration-manager"></a>MMA ベースのMicrosoft Defender for Endpointを使用してオンボードされたサーバーがあります。 SCEP (Windows Server 2012 R2) または Microsoft Defender ウイルス対策 (Windows Server 2016) がインストールされています。 このマシンは、Microsoft Defender for Cloud、Microsoft エンドポイント マネージャー、または Microsoft Endpoint Configuration Managerを介して管理 **されません**。
-
-1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新します。
-2. Microsoft Defender for Endpointの MMA ワークスペース構成を削除します。 [PowerShell を使用したワークスペースの削除に関するページを参照](/azure/azure-monitor/agents/agent-manage)してください。
+1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新し[、前提条件](configure-server-endpoints.md#prerequisites)が満たされていることを確認します。
+2. グループ ポリシー、PowerShell、またはサード パーティの管理ソリューションを使用してポリシーを作成して適用します。
 3. System Center Endpoint Protectionをアンインストールします (R2 Windows Server 2012)。
-4. 該当する場合 [は、前提条件をインストールします](configure-server-endpoints.md#prerequisites) 。 
 5. Microsoft Defender for Endpointをインストールする ([サーバー エンドポイントの構成に関するページを](configure-server-endpoints.md)参照)。
 6. Microsoft 365 Defenderからダウンロードした **グループ ポリシーで使用する** オンボード スクリプト [を適用します](https://security.microsoft.com)。 
 7. 更新プログラムを適用します。
-8. グループ ポリシー、PowerShell、またはサード パーティの管理ソリューションを使用してポリシーを作成して適用します。
 
 > [!TIP]
 > インストーラー スクリプトを使用して、上記の手順を自動化できます。
-
-### <a name="you-have-a-server-on-which-you-want-to-install-microsoft-defender-for-endpoint-it-has-a-non-microsoft-endpoint-protection-or-endpoint-detection-and-response-solution-installed-you-do-not-intend-to-use-microsoft-endpoint-configuration-manager-or-microsoft-defender-for-cloud-you-use-your-own-deployment-mechanism"></a>Microsoft Defender for Endpointをインストールするサーバーがあります。 Microsoft 以外のエンドポイント保護またはエンドポイント検出と応答ソリューションがインストールされています。 Microsoft Endpoint Configuration Managerまたは Microsoft Defender for Cloud を使用する予定はありません。 独自のデプロイ メカニズムを使用します。 
-
-1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新します。
-2. Windows Server 2012 R2 & 2016 パッケージのMicrosoft Defender for Endpointをインストールし、**パッシブ モードを有効にします**。 [コマンド ラインを使用した Microsoft Defender ウイルス対策のインストールに関するページを](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)参照してください。
-3. [Microsoft 365 Defender](https://security.microsoft.com)からダウンロードした環境に適したオンボード スクリプトを適用します。 
-4. Microsoft 以外のエンドポイント保護またはエンドポイント検出と応答ソリューションを削除し、パッシブ モードを削除します。
-5. 更新プログラムを適用します。
-6. グループ ポリシー、PowerShell、またはサード パーティの管理ソリューションを使用してポリシーを作成して適用します。
-
-> [!TIP]
-> [インストーラー スクリプト](server-migration.md#installer-script)を使用すると、手順 1 ~ 4 の自動化に役立ちます。 パッシブ モードを有効にするには、-Passive フラグを適用します。これにより、オンボード前に Defender ウイルス対策がパッシブ モードになり、Microsoft 以外のマルウェア対策ソリューションに干渉することはありません。 次に、EDR ブロックなどの EDR 機能をサポートするためにオンボード後も Defender ウイルス対策がパッシブ モードのままになるようにするには、必ず "ForceDefenderPassiveMode" レジストリ キーを設定してください。 例： `.\install.ps1 -OnboardingScript ".\WindowsDefenderATPOnboardingScript.cmd" -Passive`
-
-
-*この手順は、Microsoft 以外のウイルス対策ソリューションを置き換える場合にのみ適用されます。 Microsoft Defender for Endpointに含まれる Microsoft Defender ウイルス対策を使用して、機能の完全なセットを提供することをお勧めします。 Microsoft [Defender ウイルス対策とMicrosoft Defender for Endpointに関](why-use-microsoft-defender-antivirus.md)するページを参照してください。
-
-パッシブ モードからマシンを移動するには、次のキーを 0 に設定します。
-
-パス: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection Name: ForceDefenderPassiveMode 型: REG_DWORD値: 0
-
 
 ## <a name="microsoft-defender-for-cloud-scenarios"></a>Microsoft Defender for Cloud のシナリオ
 

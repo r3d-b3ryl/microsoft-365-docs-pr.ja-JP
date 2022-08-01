@@ -20,12 +20,12 @@ ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
 description: サード パーティのデータ コネクタと Microsoft Graph API を使用して Microsoft Purview ソリューションを拡張する方法について説明します。
-ms.openlocfilehash: 7082f98cce61dce8130de6de69d2a52f827dcd13
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 7fc3bf0fb177e07011d0e6388109deec7df14c05
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071549"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106429"
 ---
 # <a name="microsoft-purview-and-microsoft-priva-extensibility"></a>Microsoft Purview とMicrosoft Priva機能拡張
 
@@ -79,9 +79,9 @@ MIP SDK、前提条件、その他のシナリオ、サンプルの詳細につ�
 
 ### <a name="microsoft-graph-api-for-teams-dlp"></a>Teams DLP の Microsoft Graph API
 
-[データ損失防止 (DLP)](dlp-microsoft-teams.md) 機能は、特に組織がリモート作業に移行するにつれて、Microsoft Teams で広く使用されています。 最近、Teams のメッセージに対する Microsoft Graph 変更通知 API の [一般公開が発表されました](https://devblogs.microsoft.com/microsoft365dev/change-notifications-for-microsoft-teams-messages-now-generally-available/) 。 この API を使用すると、開発者は Microsoft Teams メッセージをほぼリアルタイムでリッスンできるアプリを構築し、顧客とパートナーの両方に DLP シナリオを実装できます。 さらに、Microsoft Graph Patch API を使用すると、Teams メッセージに DLP アクションを適用できます。
+[データ損失防止 (DLP)](dlp-microsoft-teams.md) 機能は、特に組織がリモート作業に移行するにつれて、Microsoft Teamsで広く使用されています。 最近、Teams のメッセージに対する Microsoft Graph 変更通知 API の [一般公開が発表されました](https://devblogs.microsoft.com/microsoft365dev/change-notifications-for-microsoft-teams-messages-now-generally-available/) 。 この API を使用すると、開発者はMicrosoft Teamsメッセージをほぼリアルタイムでリッスンし、顧客とパートナーの両方に DLP シナリオを実装できるアプリを構築できます。 さらに、Microsoft Graph Patch API を使用すると、Teams メッセージに DLP アクションを適用できます。
 
-これら 2 つの API は、Teams DLP の Microsoft Graph APIを形成します。 [サンプル アプリ](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)を試してみると、作業を開始できます。 Microsoft Teams メッセージング Webhook の詳細については、 [ドキュメントを参照してください](/graph/api/subscription-post-subscriptions)。
+これら 2 つの API は、Teams DLP の Microsoft Graph APIを形成します。 [サンプル アプリ](https://github.com/microsoftgraph/aspnetcore-webhooks-sample)を試してみると、作業を開始できます。 メッセージング webhook のMicrosoft Teamsの詳細については、 [ドキュメントを参照してください](/graph/api/subscription-post-subscriptions)。
 
 Teams DLP のライセンス要件については、 [セキュリティ&コンプライアンスに関する Microsoft 365 ライセンス ガイダンスを](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)参照してください。
 
@@ -97,7 +97,7 @@ Teams DLP のライセンス要件については、 [セキュリティ&コン�
 
 ### <a name="microsoft-graph-api-for-teams-export"></a>Microsoft Graph API for Teams Export
 
-Microsoft Teams のエンタープライズ情報アーカイブ (EIA) は、規制要件を解決できるため、お客様にとって重要なシナリオです。 Microsoft Teams のコンテンツをアーカイブするための組み込みの機能に加えて、お客様とパートナーは Teams Export API を使用して、カスタム アプリケーションと統合のシナリオを解決できるようになりました。 Teams Export API では、Teams メッセージとメッセージ添付ファイルの一括エクスポート (1 秒あたり最大 200 要求/アプリ/テナントあたり) がサポートされます。 削除されたメッセージには、削除後最大 30 日間 API からアクセスできます。 これらの Teams Export API とアプリケーションで使用する方法の詳細については、「 [Microsoft Teams Export API を使用してコンテンツをエクスポートする」を](/microsoftteams/export-teams-content)参照してください。
+Microsoft Teams向けのエンタープライズ情報アーカイブ (EIA) は、規制要件を解決できるため、お客様にとって重要なシナリオです。 Microsoft Teamsのコンテンツをアーカイブするための組み込みの機能に加えて、顧客とパートナーは Teams Export API を使用して、カスタム アプリケーションと統合のシナリオを解決できるようになりました。 Teams Export API では、Teams メッセージとメッセージ添付ファイルの一括エクスポート (1 秒あたり最大 200 要求/アプリ/テナントあたり) がサポートされます。 削除されたメッセージには、削除後最大 30 日間 API からアクセスできます。 これらの Teams Export API とアプリケーションで使用する方法の詳細については、「 [Microsoft Teams Export API を使用してコンテンツをエクスポートする」を](/microsoftteams/export-teams-content)参照してください。
 
 Teams Export API の使用に関するライセンス要件については、 [セキュリティ&コンプライアンスに関する Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)を参照してください。
 
@@ -129,4 +129,4 @@ Teams Export API の使用に関するライセンス要件については、 [�
 
 レコード管理用の Graph API の詳細については、「 [Microsoft Graph Records Management API の使用」を](/graph/api/resources/security-recordsmanagement-overview?view=graph-rest-beta&preserve-view=true)参照してください。
 
-これらの API を使用するためのライセンス要件については、 [セキュリティ&コンプライアンスに関する Microsoft 365 ライセンス ガイダンスの](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)レコード管理セクションを参照してください。
+これらの API を使用するためのライセンス要件については、セキュリティ&コンプライアンスに関する Microsoft 365 ガイダンスのレコード管理情報[Microsoft Purview データ ライフサイクル管理 & Microsoft Purview レコード管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management)セクションを参照してください。

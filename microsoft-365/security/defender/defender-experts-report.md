@@ -20,22 +20,20 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 46130f6534dd08895b317dda826a7f450a21ac45
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 179b13d31091e2c5ec60ba467bb06f2d072f6cdd
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099924"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107246"
 ---
 # <a name="understand-the-defender-experts-for-hunting-report-in-microsoft-365-defender"></a>Microsoft 365 Defenderの Defender Experts for Hunting レポートを理解する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 
-- Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Microsoft Defender Experts for Hunting では、人間のインテリジェンスと専門家がトレーニングしたテクノロジを階層化し、Microsoft 365 Defender顧客が直面する重大な脅威を理解するのに役立ちます。 Defender Expert の脅威検出スキル、脅威の状況の完全な理解、および新たな脅威に関する知識が、環境内のそれらの脅威を特定、優先順位付け、対処するためにどのように役立つかを示します。 
 
@@ -57,13 +55,13 @@ Microsoft 365 Defender ポータルで最新のレポートを表示するには
 
 サンプル レポートの次のスクリーンショットを参照してください。
 
-![Defender エキスパート レポート](../../media/mte/defender-experts-report.png)
+![Microsoft 365 Defender ポータルの Microsoft Defender Experts for Hunting レポートのスクリーンショット。](../../media/mte/defenderexperts/defender-experts-report.png)
 
 ## <a name="view-defender-experts-notifications"></a>Defender エキスパート通知を表示する
 
 Defender Experts Notification は、環境内で観察された Defender Experts for Hunting の重要な脅威アクティビティについて説明し、組織を修復して防御するための推奨事項を提供します。
 
-Defender Experts for Hunting レポートには、選択した時間に Defender エキスパートが送信した Defender エキスパート通知の合計数が表示されます。 これらの通知を表示するには、[**通知**] の横にある **[通知の表示**] をクリックします。
+Defender Experts for Hunting レポートには、選択した時間に Defender エキスパートが送信した Defender エキスパート通知の合計数が表示されます。 これらの通知を表示するには、[**通知**] の横にある **[通知の表示**] を選択します。
 
 このリンクをクリックすると、Microsoft 365 Defenderインシデント ページにリダイレクトされます。 Defender Expert for Hunting アラートまたは Defender エキスパート通知には Defender エキスパートのラベルが付 **けられます**。
 
@@ -77,16 +75,16 @@ MITRE ATT&CK 戦術は、各攻撃フェーズで達成しようとしている�
 1.  偵察
 2.  リソース開発
 3.  初期アクセス
-4.  実行   
-3.  永続性 
-4.  特権エスカレーション    
-5.  防御回避 
+4.  実行
+3.  永続性
+4.  特権エスカレーション
+5.  防御回避
 6.  資格情報へのアクセス
 7.  検出
-8.  横方向の移動    
+8.  横方向の移動
 9.  コレクション
 10. コマンドとコントロール
-11. 流出    
+11. 流出
 12. 影響
 
 Defender Experts for Hunting によるMicrosoft 365 Defenderと調査からのシグナルは、棒グラフに示されているこれらの戦術を特定するのに役立ちます。 このグラフは、急増の場所を視覚化するのに役立ち、対応する包含と修復アクションを計画するために必要な情報を提供します。
@@ -103,4 +101,5 @@ Defender Experts for Hunting によるMicrosoft 365 Defenderと調査からの�
 - 搾り取る
 - 配達
 
-棒グラフに示されているように、最も影響を受けるカテゴリに基づいて修復に優先順位を付けることができます。
+横棒グラフに示されているように、最も影響を受けるカテゴリに基づいて修復に優先順位を付けることができます。
+

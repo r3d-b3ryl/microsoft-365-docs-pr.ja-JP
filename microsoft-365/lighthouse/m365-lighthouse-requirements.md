@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用するための要件の一覧を取得します。
-ms.openlocfilehash: 27d5440b70916ebdb3b761ac4308d3b97ccb27da
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: 4cea971227f13bf5cf7a59cffa08465e9ed63391
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057776"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67105963"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの要件
 
@@ -36,13 +36,13 @@ Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (M
 - 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、Windows 365 Business、またはMicrosoft Defender for Businessライセンス
 - ライセンスを持つユーザーが 2500 人以下である必要があります
 
-顧客を Lighthouse にオンボードするには、詳細な代理管理特権 (GDAP) と間接リセラー関係、または代理管理特権 (DAP) リレーションシップのいずれかが必要です。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。 近日、GDAP のみのリレーションシップ (間接リセラー関係なし) を持つお客様は、Lighthouse にオンボードできるようになります。
+ \*顧客を Lighthouse にオンボードするには、詳細な委任された管理特権 (GDAP または委任された管理特権 (DAP) リレーションシップが必要です。 ライトハウスへのオンボードには、間接リセラー関係は不要になりました。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。
 
 ## <a name="requirements-for-enabling-device-management"></a>デバイス管理を有効にするための要件
 
 デバイス管理ページで顧客テナント デバイスを表示するには、MSP で次の手順を実行する必要があります。
 
-- Microsoft エンドポイント マネージャー (MEM) 内のすべての顧客デバイスを登録します。 詳細については、「[Microsoft Intuneにデバイスを登録する](/mem/intune/enrollment/)」を参照してください。
+- Microsoft エンドポイント マネージャー (MEM) にすべての顧客デバイスを登録します。 詳細については、「[Microsoft Intuneにデバイスを登録する](/mem/intune/enrollment/)」を参照してください。
 - コンプライアンス ポリシーをすべての顧客デバイスに割り当てます。 詳細については、「[Microsoft Intune でコンプライアンス ポリシーを作成する](/mem/intune/protect/create-compliance-policy)」を参照してください。
 
 ## <a name="requirements-for-enabling-user-management"></a>ユーザー管理を有効にするための要件
@@ -55,10 +55,10 @@ Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (M
 
 詳細については、「[Microsoft Intuneにデバイスを登録する](/mem/intune/enrollment/)」を参照してください。
 
-Microsoft Defender ウイルス対策は、Windows オペレーティング システムの一部であり、Windows 10を実行しているデバイスでは既定で有効になっています。
+Microsoft Defender ウイルス対策は Windows オペレーティング システムの一部であり、Windows 10を実行しているデバイスでは既定で有効になっています。
 
 > [!NOTE]
-> microsoft 以外のウイルス対策ソリューションを使用していて、Microsoft Defender ウイルス対策していない場合、Microsoft Defender ウイルス対策は自動的に無効になります。 Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Windows デバイスを脅威から保護するためにMicrosoft Defender ウイルス対策が自動的にアクティブ化されます。
+> Microsoft Defender ウイルス対策ではなく Microsoft 以外のウイルス対策ソリューションを使用している場合、Microsoft Defender ウイルス対策は自動的に無効になります。 Microsoft 以外のウイルス対策ソリューションをアンインストールすると、Windows デバイスを脅威から保護するために、Microsoft Defender ウイルス対策が自動的にアクティブ化されます。
 
 ## <a name="related-content"></a>関連コンテンツ
 

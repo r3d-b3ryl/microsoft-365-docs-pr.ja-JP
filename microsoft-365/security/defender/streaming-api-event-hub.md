@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ec18c23df27329598b6e48446ccf43d062b163ad
-ms.sourcegitcommit: af2b570e76e074bbef98b665b5f9a731350eda58
+ms.openlocfilehash: e08e0543dca5c0e4b19995a92c31f34057de896c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/21/2022
-ms.locfileid: "66185371"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106188"
 ---
 # <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hub"></a>高度なハンティング イベントを Azure Event Hub にストリーミングするようにMicrosoft 365 Defenderを構成する
 
@@ -66,7 +66,7 @@ Event Hubs にデータをストリーミングするようにMicrosoft 365 Defe
 
    :::image type="content" source="../defender-endpoint/images/event-hub-resource-id.png" alt-text="Event Hub リソース ID" lightbox="../defender-endpoint/images/event-hub-resource-id.png":::
 
-8. [イベント ストリーミング API でサポートされているMicrosoft 365 Defender イベントの種類に](supported-event-types.md)移動し、Microsoft 365 Streaming API のイベントの種類のサポート状態を確認します。
+8. [イベント ストリーミング API でサポートされているMicrosoft 365 Defenderイベントの種類に](supported-event-types.md)移動して、Microsoft 365 Streaming API のイベントの種類のサポート状態を確認します。
 
 9. ストリーミングするイベントを選択し、[ **保存]** をクリックします。
 

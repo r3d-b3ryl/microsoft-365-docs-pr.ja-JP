@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、毎月Microsoft 365 Lighthouseで追加、変更、および修正された内容を確認します。
-ms.openlocfilehash: 6eaba1fd4cbffb8121801318bbf8b7ee5b1f7ce2
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: d7538cf55feaf4adc6d0d741f21b13c4a9e19b80
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056616"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106451"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの新機能
 
@@ -30,6 +30,20 @@ Microsoft 365 Lighthouse[に新機能](m365-lighthouse-overview.md)を継続的�
 
 > [!NOTE]
 > 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、すぐに表示されます。
+
+## <a name="july-2022"></a>2022 年 7 月
+
+### <a name="enhanced-baseline-deployment"></a>強化されたベースラインデプロイ
+
+Microsoft 365 Lighthouse、次の方法で、すべてのマネージド テナントへのベースラインのデプロイを迅速かつ簡単にできるようになりました。
+
+- 割り当てられた各タスクの状態を自動的に検出して報告する
+- 状態レポートを統合し、デプロイの状態を決定するロジックを簡略化する
+- どのタスクが完了し、どのタスクに注意が必要かを報告する
+- 該当するタスクのユーザー レベルの展開状態を報告する
+- テナント内から既存の構成を検出し、それらをベースラインと比較する
+- 無視されたタスクに関する詳細を指定する
+- 割り当てられたタスクを完了するために追加のライセンスが必要な場所を特定する
 
 ## <a name="june-2022"></a>2022 年 6 月
 
@@ -109,15 +123,15 @@ Microsoft 365 Lighthouse、条件付きアクセス ポリシーを使用して�
 
 この新機能は、管理する顧客テナント内の既存のポリシーを検出し、展開計画と比較します。 Microsoft 365 Lighthouseは、デプロイ 手順と展開手順プロセスの状態指定を提供し、どの展開プロセスが既に完了しているか、どのプロセスに対処する必要があるか、展開計画で規定されている設定が、既存のポリシーに含まれる設定と等しいか、不足しているか、競合しているかについて理解するのに役立ちます。 この情報を知ることで、ポリシーの競合の特定、優先順位付け、解決が迅速かつ簡単になり、より効果的になります。
 
-### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Microsoft Defender ファイアウォールを構成する展開手順
+### <a name="deployment-step-to-configure-microsoft-defender-firewall"></a>Microsoft Defender ファイアウォールを構成するための展開手順
 
-Microsoft 365 Lighthouse、既定のベースラインに [Microsoft Defender ファイアウォール展開の構成] ステップが追加されました。 この手順は、MSP がWindows 10 (以降) デバイスの既定のファイアウォール構成を使用して顧客テナント デバイスをセキュリティで保護するのに役立ちます。 Microsoft Defender ファイアウォールは、顧客のテナント デバイスに出入りする未承認のネットワーク トラフィックをブロックし、ネットワーク セキュリティの脅威のリスクを軽減します。 Microsoft Defender ファイアウォール ルール機能は現在開発中です。
+Microsoft 365 Lighthouseは、既定のベースラインに Microsoft Defender ファイアウォールの展開の構成手順を追加しました。 この手順は、MSP がWindows 10 (以降) デバイスの既定のファイアウォール構成を使用して顧客テナント デバイスをセキュリティで保護するのに役立ちます。 Microsoft Defender Firewall は、顧客のテナント デバイスに出入りする未承認のネットワーク トラフィックをブロックし、ネットワーク セキュリティの脅威のリスクを軽減します。 Microsoft Defender ファイアウォール規則機能は現在開発中です。
 
-Microsoft Defender ファイアウォールは、Windows 10 (以降) デバイスでは既定でオンになっています。 顧客テナントにこの構成がない場合は、次の手順に従います。
+Microsoft Defender Firewall は、Windows 10 (以降) デバイスで既定で有効になっています。 顧客テナントにこの構成がない場合は、次の手順に従います。
 
 1. Microsoft 365 Lighthouseの **[テナント**] ページで、顧客テナントを選択してテナントの **[概要]** ページを開きます。
 2. [ **展開計画]** タブを選択します。
-3. 展開手順の一覧から、[**Microsoft Defender ファイアウォールの構成**] を選択します。
+3. 展開手順の一覧から、[ **Microsoft Defender ファイアウォールの構成**] を選択します。
 4. [ **確認とデプロイ** ] を選択して、この構成を顧客テナントにデプロイします。 
 
 ### <a name="increase-in-maximum-license-limit"></a>ライセンスの上限の引き上げ

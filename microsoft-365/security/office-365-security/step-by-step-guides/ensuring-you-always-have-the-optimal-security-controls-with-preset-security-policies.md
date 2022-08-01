@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 534e548dbd0950b387e757bfb81ebb446f617086
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 383023ea03e9b1634664b3311e7f698ce946608b
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66994385"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107351"
 ---
 # <a name="ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies"></a>事前設定されたセキュリティ ポリシーを使用して常に最適なセキュリティ制御を実現
 

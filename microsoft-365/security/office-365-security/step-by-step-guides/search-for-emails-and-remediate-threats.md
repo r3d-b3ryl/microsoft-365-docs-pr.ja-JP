@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: acc3f81c789722a460a43df56a3e2794855dad0c
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: c6d887e7b50c3bfeddb967340045f6b2dbf96b0c
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66994305"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107329"
 ---
 # <a name="steps-to-use-manual-email-remediation-in-threat-explorer"></a>Threat Explorer で手動の電子メール修復を使用する手順
 
@@ -72,6 +72,6 @@ Email修復は、管理者が脅威である電子メールに対処するのに
 1. **[履歴**] タブに移動し、待機中の承認リストをクリックします。 サイド ウィンドウが開きます。  
 1. 統合アクション センターでアクションの状態を追跡します。
 
-## <a name="more-information"></a>More information
+## <a name="more-information"></a>詳細
 
 [電子メール修復の詳細を確認する](../../office-365-security/air-review-approve-pending-completed-actions.md)

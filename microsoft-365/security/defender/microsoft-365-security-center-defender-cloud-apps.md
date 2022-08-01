@@ -2,7 +2,7 @@
 title: Microsoft 365 DefenderのMicrosoft Defender for Cloud Apps (プレビュー)
 description: Microsoft Defender for Cloud AppsからMicrosoft 365 Defenderへの変更について説明します
 keywords: Microsoft 365 Defenderの概要、Microsoft Defender for Cloud Apps
-ms.prod: microsoft-365-enterprise
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 9113e3f06ba0f9c8cbec0da6d738cc170a215771
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: d31288d115cf78d54b87d7d01f162caa209c2094
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66994481"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106276"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft 365 DefenderのMicrosoft Defender for Cloud Apps (プレビュー)
 

@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defenderを使用した人間が操作するランサムウェア攻撃の検出
+title: Microsoft 365 Defender による人間によるランサムウェア攻撃の検出
 description: この記事では、Microsoft 365 Defender ポータルを使用して、人間が操作する新しいランサムウェア攻撃または進行中のランサムウェア攻撃を事前に検出する方法について説明します
 search.appverid: MET150
 author: nic-name
@@ -12,14 +12,14 @@ ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance.
 f1.keywords: NOCSH
-ms.openlocfilehash: 3a3a1d48ab9876215e2034279d036705bf4e1972
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 95e916c02bc01a2e3e84d05efe4e5f5e66d3d491
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65811191"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107087"
 ---
-# <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用した人間が操作するランサムウェア攻撃の検出
+# <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Microsoft 365 Defender による人間によるランサムウェア攻撃の検出
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -95,9 +95,9 @@ ms.locfileid: "65811191"
 * Cobalt Strike
 * WMI
 * 管理ツールの悪用
-* Psexec
+* PsExec
 
-永続 化：
+固執：
 
 * 新しいアカウント
 * GPO の変更
@@ -135,11 +135,11 @@ ms.locfileid: "65811191"
 攻撃方法 |シグナル ソース |代替セキュリティ ポータル
 |:---|:---|:---
 RDP ブルート フォース|Defender for Endpoint|Defender for Cloud Apps
-脆弱なインターネットに接続するシステム|Windowsセキュリティ機能、Microsoft Defender for Servers|
-脆弱なアプリケーション設定      |Defender for Cloud アプリ、アプリ ガバナンス アドオンを使用したアプリのDefender for Cloud|Defender for Cloud Apps |
-悪意のあるアプリアクティビティ      |Defender for Cloud アプリ、アプリ ガバナンス アドオンを使用したアプリのDefender for Cloud|Defender for Cloud Apps |
+脆弱なインターネットに接続するシステム|Windows セキュリティ機能、Microsoft Defender for Servers|
+脆弱なアプリケーション設定      |Defender for Cloud Apps、Defender for Cloud Apps とアプリ ガバナンス アドオン|Defender for Cloud Apps |
+悪意のあるアプリアクティビティ      |Defender for Cloud Apps、Defender for Cloud Apps とアプリ ガバナンス アドオン|Defender for Cloud Apps |
 フィッシング詐欺メール        |Defender for Office 365
-Azure AD アカウントに対するパスワード スプレー |Defender for Cloud アプリを使用した Azure AD Identity Protection      |Defender for Cloud Apps
+Azure AD アカウントに対するパスワード スプレー |Defender for Cloud Apps を使用した Azure AD Identity Protection      |Defender for Cloud Apps
 オンプレミス アカウントに対するパスワード スプレー |Microsoft Defender for Identity
 デバイス侵害       |Defender for Endpoint
 資格情報の盗用       |Microsoft Defender for Identity
@@ -151,9 +151,9 @@ Azure AD アカウントに対するパスワード スプレー |Defender for C
 
 スパイク カテゴリ        |シグナル ソース                 |代替セキュリティ ポータル
 |:---                    |:---                              |:---
-サインイン: 失敗した回数が多い、短時間で複数のデバイスにログオンする試み、複数の初回ログオンなど。 |Defender for Cloud Apps、Microsoft Defender for Identityによる Azure AD Identity Protection |Defender for Cloud Apps
-最近アクティブなユーザー アカウント、グループ、コンピューター アカウント、アプリ |Defender for Cloud Apps を使用した Azure AD Identity Protection (Azure AD)、Defender for Identity (Active Directory Domain Services [AD DS]) |Defender for Cloud Apps
-データ アクセスなどの最近のアプリ アクティビティ |アプリ ガバナンス アドオンを使用したアプリDefender for Cloudアプリ |Defender for Cloud Apps
+サインイン: 失敗した回数が多い、短時間で複数のデバイスにログオンする試み、複数の初回ログオンなど。 |Defender for Cloud Apps を使用した Azure AD Identity Protection (Microsoft Defender for Identity) |Defender for Cloud Apps
+最近アクティブなユーザー アカウント、グループ、コンピューター アカウント、アプリ |Defender for Cloud Apps (Azure AD) による Azure AD Identity Protection、Defender for Identity (Active Directory Domain Services [AD DS]) |Defender for Cloud Apps
+データ アクセスなどの最近のアプリ アクティビティ |Defender for Cloud Apps とアプリ ガバナンス アドオンを使用するアプリ |Defender for Cloud Apps
 
 #### <a name="new-activity"></a>新しいアクティビティ
 
@@ -161,11 +161,11 @@ Azure AD アカウントに対するパスワード スプレー |Defender for C
 
 アクティビティ     |シグナル ソース           |代替セキュリティ ポータル
 |:---                |:---                        |:---
-インストールされている新しいアプリ |アプリ ガバナンス アドオンを使用してアプリをDefender for Cloudする |Defender for Cloud Apps
+インストールされている新しいアプリ |アプリ ガバナンス アドオンを使用した Defender for Cloud Apps |Defender for Cloud Apps
 新しいユーザー アカウント    |Azure Identity Protection         |Defender for Cloud Apps
 ロールの変更      |Azure Identity Protection        |Defender for Cloud Apps
 
-#### <a name="suspicious-behavior"></a>疑わしい動作
+#### <a name="suspicious-behavior"></a>挙動不審
 
 攻撃者は機密情報をダウンロードしたり、ファイルを暗号化したり、組織の資産を収集したり、損害を与えたりしています。
 
@@ -206,7 +206,7 @@ Microsoft 365 Defender ポータルは、次のシグナルを一元化します
 クラウド ID: パスワード スプレー、多数の失敗した試行、短時間で複数のデバイスへのログオンの試行、複数の初回ログオン、最近アクティブなユーザー アカウント |Azure AD Identity Protection
 オンプレミス ID (AD DS) の侵害       |Defender for Identity
 フィッシング詐欺              |Defender for Office 365
-悪意のあるアプリ             |アプリ ガバナンス アドオンを使用したアプリまたはDefender for Cloud アプリのDefender for Cloud
+悪意のあるアプリ             |Defender for Cloud Apps または Defender for Cloud Apps with app Governance アドオン
 エンドポイント (デバイス) の侵害         |Defender for Endpoint
 IoT 対応デバイスの侵害          |Defender for IoT
 
@@ -252,7 +252,7 @@ Microsoft Sentinel のMicrosoft 365 Defenderインシデント統合を使用す
 ランサムウェア アクティビティを事前にスキャンするには、ID、エンドポイント、アプリ、データに対して一般的に使用されるランサムウェア攻撃方法に対する高度なハンティング クエリのカタログを組み立てる必要があります。 すぐに使用できる高度なハンティング クエリの主なソースを次に示します。
 
 * [ランサムウェアのハントに関する](/advanced-hunting-find-ransomware.md)記事
-* 高度なハンティング クエリのリポジトリをGitHubします。
+* 高度なハンティング クエリ用の GitHub リポジトリ:
   * [ランサムウェア固有の](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware) クエリ
   * [クエリのすべてのカテゴリ](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/tree/master/Ransomware)
 * 脅威分析レポート
@@ -288,7 +288,7 @@ SecOps チームと組織が集中ランサムウェア攻撃防止の準備を�
 3. 既知のランサムウェア攻撃方法または攻撃フェーズに合わせて調整された高度なハンティング クエリのカタログを組み立てます。
 4. スケジュール、アラートの名前付け、自動アクションなど、既知のランサムウェア攻撃方法のアラートを作成する特定の高度なハンティング クエリのカスタム検出ルールのセットを作成します。
 5. [カスタム タグ](/manage-incidents.md)または標準のセットを決定して、より大規模で調整されたランサムウェア攻撃の一部であることが知られているインシデントを識別する新しいタグまたは標準を作成します。
-6. ランサムウェアインシデントとアラート管理の一連の運用タスクを決定します。 例:
+6. ランサムウェアインシデントとアラート管理の一連の運用タスクを決定します。 以下に例を示します。
 
 * 階層 1 アナリストが受信インシデントとアラートをスキャンし、調査のために階層 2 アナリストに割り当てるためのプロセス。
 * 高度なハンティング クエリとそのスケジュール (毎日、毎週、毎月) を手動で実行します。

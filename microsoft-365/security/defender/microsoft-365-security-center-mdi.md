@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: efcb57a8ecc1b323f35f7b4fde9f4ebcee99e851
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 76044b7451014cc578800b6e1726556688d9db14
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051121"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107285"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft 365 DefenderのMicrosoft Defender for Identity
 
@@ -43,7 +43,7 @@ Microsoft Defender for Identityは、id に焦点を当てた情報を、Microso
 
 次の表に、Microsoft Defender for IdentityとMicrosoft 365 Defender間のナビゲーションの変更を示します。
 
-| **Defender for** Id  | **Microsoft 365 Defender**                                   |
+| **Defender for** 同一性  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | タイムライン                   | Microsoft 365 Defender アラート/インシデント キュー                |
 | レポート                    | [従来の Defender for Identity ポータル](/defender-for-identity/classic-workspace-portal)に残ります。 <br> カスタマイズされたレポートは、[高度な捜索](#advanced-hunting-new)を使用してMicrosoft 365 Defender ポータルで作成できます。               |
@@ -52,7 +52,7 @@ Microsoft Defender for Identityは、id に焦点を当てた情報を、Microso
 | [グループ] ページ                 | Microsoft 365 Defender グループのサイド ウィンドウ                      |
 | [アラート] ページ                 | Microsoft 365 Defender アラート ページ                            |
 | 検索                     | Microsoft 365 Defender検索                                |
-| ヘルス センター              | 設定 -> ID -> センサー                            |
+| 保健所              | 設定 -> ID -> センサー                            |
 | エンティティ アクティビティ          | 高度な追及                                             |
 | 設定                   | 設定 -> ID                                       |
 | ユーザーとアカウント         | 資産 -> ID                                         |

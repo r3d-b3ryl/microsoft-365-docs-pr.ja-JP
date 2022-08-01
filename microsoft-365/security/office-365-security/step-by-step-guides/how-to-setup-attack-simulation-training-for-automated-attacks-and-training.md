@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: ccf4222878777789fb7f89b6382c858eaad9f0c2
-ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
+ms.openlocfilehash: c522c9602874ca8b385a135a64c34ef0643abe82
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66994257"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106845"
 ---
 # <a name="how-to-setup-automated-attacks-and-training-within-attack-simulation-training"></a>攻撃シミュレーション トレーニング内で自動攻撃とトレーニングを設定する方法
 
@@ -53,6 +53,6 @@ ms.locfileid: "66994257"
 1. **[起動の詳細]** で、一意のペイロードの使用や繰り返し違反者のターゲット設定など、必要な最終的なオプションを選択し、[*次へ*] を選択します。
 1. **送信** すると、Simulation オートメーションがセットアップされます。
 
-## <a name="learn-more"></a>さらに詳しくは
+## <a name="learn-more"></a>詳細情報
 
 完全なガイダンスについては、[攻撃シミュレーション トレーニングのシミュレーション自動化 - Office 365 |Microsoft Docs](../../office-365-security/attack-simulation-training-simulation-automations.md)。

@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、機能領域別の Lighthouse の既知の問題の一覧を参照してください。
-ms.openlocfilehash: 8ad247917a8dfdad7362576079edd9bdec7302ba
-ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
+ms.openlocfilehash: 9f3c2bc86d64cbc99f280de3c668e84a402b3619
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67069562"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106100"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseに関する既知の問題
 
@@ -32,15 +32,7 @@ ms.locfileid: "67069562"
 
 | 問題 | 説明 | 解決方法 |
 | ---------------- | ---------------- | ---------------- |
-| **Helpdesk Agent がユーザー パスワードをリセットできない** | Helpdesk Agent グループのメンバーであるマネージド サービス プロバイダー (MSP) 技術者は、顧客テナント内のユーザーのパスワードをリセットできません。 ユーザーのパスワードをリセットしようとすると、次のエラー メッセージが表示されます。 [詳細については、こちらを参照してください](m365-lighthouse-configure-portal-security.md)。 | アクセス許可の問題を回避するには、ヘルプデスク エージェントは、Microsoft 365 管理センターまたは Azure Active Directory を使用してパスワードをリセットする必要があります。 |
 | **[ユーザーの詳細] ウィンドウの [OneDrive] タブにデータが表示されない** | MSP 技術者がユーザーの詳細ウィンドウの [OneDrive] タブで OneDrive データを表示しようとすると、「OneDrive はこのユーザー用に設定されていません。 portal.office.com/onedrive に移動して設定するようにユーザーに依頼します。 しばらく時間がかかる場合があります。 24 時間後にこのメッセージが表示される場合は、サポートにお問い合わせください。 | 現時点では、[OneDrive] タブでは委任された認証はサポートされていません。 この問題を回避するには、MSP 技術者は、顧客の資格情報を使用してサインインすることで、Microsoft 365 管理センターの OneDrive データを表示する必要があります。 |
-
-
-## <a name="devices"></a>デバイス
-
-| 問題 | 説明 | 解決方法 |
-| ---------------- | ---------------- | ---------------- |
-| **削除されたポリシーが表示される** | デバイス コンプライアンス ポリシーがIntuneから削除されると、一時的に Lighthouse に引き続き表示されます。 MSP 技術者が削除されたポリシーを含むポリシー比較を実行しようとすると、技術者は次のエラーを受け取ります。"問題が発生しました。 ページを更新して、もう一度やり直してください。 | エラーを解決するには、ポリシー比較から削除されたポリシーをクリアし、既存のポリシーのみを比較します。 |
 
 ## <a name="threat-management"></a>脅威の管理
 

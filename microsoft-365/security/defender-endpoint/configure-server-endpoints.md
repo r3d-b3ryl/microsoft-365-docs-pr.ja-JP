@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3d742733903faf876257e42a9ea9d15a648f9984
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 7d83a5a3eba765099e58ff0f5086cb985697333d
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827204"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107395"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -140,7 +140,7 @@ Windows Server 2012 R2 および 2016 の新しい統合ソリューション �
 
 影響を受けるシナリオ: -Microsoft Defender for Endpoint Sense バージョン番号 10.8048.22439.1065 以前のプレビュー バージョンが Windows Server 2012 R2 で実行されている -TelemetryProxyServer プロキシ構成を使用している場合、他の方法は影響を受けません
 
-回避 策：
+回避策:
 1. マシンが Sense バージョン 10.8048.22439.1065 以降を実行していることを確認するには、オンボード ページから入手できる最新のパッケージを使用してインストールするか、KB5005292 を適用します。
 2. 証明書をダウンロードして解凍します。 https://github.com/microsoft/mdefordownlevelserver/blob/main/InterCA.zip
 3. 証明書をローカル コンピューターの信頼できる "中間証明機関" ストアにインポートします。
@@ -273,7 +273,11 @@ Windows Server のサポートにより、サーバーアクティビティに�
 
 ##### <a name="install-microsoft-defender-for-endpoint-using-a-script"></a>スクリプトを使用して Microsoft Defender for Endpoint をインストールする
 
-[インストーラー スクリプト](server-migration.md#installer-script) を使用すると、インストール、アンインストール、オンボードを自動化できます。 詳細については、次のセクションの手順を参照して、グループ ポリシーでスクリプトを使用してください。
+[インストーラー スクリプト](server-migration.md#installer-script) を使用すると、インストール、アンインストール、オンボードを自動化できます。 
+> [!NOTE]
+> インストール スクリプトが署名されています。 スクリプトを変更すると、署名が無効になります。 GitHub からスクリプトをダウンロードする場合、誤って変更を加えないようにするには、ソース ファイルを zip アーカイブとしてダウンロードしてから展開し、install.ps1 ファイルを取得することをお勧めします (メインの [コード] ページで、[コード] ドロップダウン メニューをクリックし、[ZIP のダウンロード] を選択します)。
+
+このスクリプトは、[前の MMA ベースのMicrosoft Defender for Endpoint ソリューションのサーバー移行シナリオ](/microsoft-365/security/defender-endpoint/server-migration)で説明したものや、以下で説明するようにグループ ポリシーを使用したデプロイなど、さまざまなシナリオで使用できます。
 
 ##### <a name="apply-the-microsoft-defender-for-endpoint-installation-and-onboarding-packages-using-group-policy"></a>グループ ポリシーを使用して Microsoft Defender for Endpoint のインストールパッケージとオンボード パッケージを適用する
 
