@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンプライアンス要件または規制要件のためにデータを統制するために、組織に Microsoft Purview を展開するための規範的なガイダンス。
-ms.openlocfilehash: fbfc208a860b8f062b424912207718ece2055b3b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 90832541bf202f062b44c1ec375fb20d3db654c3
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623337"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67106013"
 ---
 # <a name="deploy-a-data-governance-solution-with-microsoft-purview"></a>Microsoft Purview を使用してデータ ガバナンス ソリューションをデプロイする
 
@@ -38,11 +38,7 @@ ms.locfileid: "66623337"
 
 ## <a name="licensing"></a>ライセンス
 
-ライセンス要件とオプションを理解するには、[Microsoft 365 ライセンス説明書](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)の以下のセクションを参照してください。 
-- [Microsoft Purview データ ライフサイクル管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)
-- [Microsoft Purview レコード管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-records-management)
-
-追加のライセンス要件は、ドキュメントの手順に含まれます。 たとえば、メールボックスの管理に特化したライセンスでは、Exchange Online からのライセンスが必要です。
+ライセンス要件とオプションを理解するには、セキュリティとコンプライアンスに関する Microsoft 365 ガイダンスの情報を参照してください。機能レベルのライセンス要件については、[Microsoft Purview データ ライフサイクル管理および Microsoft Purview レコード管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management)のセクションを参照してください。
 
 ## <a name="keep-what-you-need-and-delete-what-you-dont"></a>必要なものを保持し、不要なものを削除する
 

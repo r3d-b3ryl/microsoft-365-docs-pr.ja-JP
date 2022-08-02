@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 Defender ポータルでアラート ポリシーを作成して、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: 39ccf62716cae357709ddcd1d44928b40dbe237e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e076aea422346bb9ace26d730897c6d90a234503
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942081"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111781"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -169,7 +169,7 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 |**異常な量のファイル削除**|異常な量のファイルが SharePoint または OneDrive で短い時間枠内に削除されたときにアラートを生成します。 このポリシーの重大度設定は **中** です。|データ ライフサイクル管理|不要|E5/G5、Defender for Office 365 P2 または Microsoft 365 E5 アドオン サブスクリプション|
 |**フィッシングとして報告されたメールの異常な増加**|Outlook の迷惑メール報告アドインを使用してメッセージをフィッシング メールとして報告する組織内の人数が大幅に増加した場合に、アラートを生成します。 このポリシーの重大度設定は **中** です。 このアドインの詳細については、「[迷惑メール報告アドインを使用する](https://support.office.com/article/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)」を参照してください。|脅威の管理|不要|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
 |**受信トレイ/フォルダに配信されたユーザーのなりすましフィッシング**<sup>1、</sup><sup>2</sup>|管理者またはユーザーのオーバー ライドにより、メール ボックスの受信ボックス (または他のユーザーがアクセスできるフォルダー) へのユーザー偽装フィッシング メッセージの配信が許可されたことを Microsoft が検出すると、アラートが生成されます。 オーバーライドの例には、特定の送信者またはドメインからのメッセージを許可する受信ボックスまたはメール フロー ルール、または特定の送信者またはドメインからのメッセージを許可するスパム対策ポリシーが含まれます。 このポリシーの重大度設定は **中** です。|脅威の管理|不要|E5/G5 または Defenderfor Office 365 P2 アドオン サブスクリプション|
-|**ユーザーが検疫済みメッセージの解放を要求しました**|ユーザーが検疫済みメッセージの解放を要求したときにアラートを生成します。 検疫済みメッセージの解放を要求するには、検疫ポリシー (**制限付きアクセス** プリセットのアクセス許可グループなど) で、**受信者が検疫からメッセージを解放要求することを許可** (_PermissionToRequestRelease_) アクセス許可が必要です。 詳細については、「[受信者が検疫アクセス許可からメッセージを解放する要求を許可する](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission)」を参照してください。 このポリシーには、**情報** の重大度設定があります。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
+|**ユーザーが検疫済みメッセージの解放を要求しました**|ユーザーが検疫済みメッセージの解放を要求したときにアラートを生成します。 検疫済みメッセージの解放を要求するには、検疫ポリシー (**制限付きアクセス** プリセットのアクセス許可グループなど) で、**受信者が検疫からメッセージを解放要求することを許可** (_PermissionToRequestRelease_) アクセス許可が必要です。 詳細については、「[受信者が検疫アクセス許可からメッセージを解放する要求を許可する](../security/office-365-security/quarantine-policies.md#allow-recipients-to-request-a-message-to-be-released-from-quarantine-permission)」を参照してください。 このポリシーには、**情報** の重大度設定があります。|脅威の管理|不要| Microsoft Business Basic、Microsoft Business Standard、Microsoft Business Premium、E1/F1/G1、E3/F3/G3、または E5/G5|
 |**ユーザーに対してメールの送信が制限されました**|組織内の誰かが送信メールの送信を制限されたときにアラートを生成します。 これは通常、アカウントが侵害され、ユーザーがコンプライアンス ポータルの **[制限付きユーザー]** ページに表示された場合に発生します。 (このページにアクセスするには、**[脅威の管理] > [レビュー] > [制限付きユーザー]** に移動します)。 このポリシーの重大度設定は **高** です。 制限されたユーザーについての詳細については、「[ユーザー、ドメイン、または IP アドレスをスパム電子メール送信後のブロック一覧から削除する](/office365/securitycompliance/removing-user-from-restricted-users-portal-after-spam)」を参照してください。|脅威の管理|はい|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**フォームの共有と応答の収集について制限されたユーザー**|フィッシング詐欺の繰り返しが検出されたために、組織内の誰かが Microsoft Forms を使用したフォームの共有と応答の収集を制限されたときにアラートを生成します。 このポリシーの重大度設定は **高** です。|脅威の管理|不要|E1、E3/F3、または E5|
 

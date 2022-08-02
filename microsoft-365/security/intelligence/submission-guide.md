@@ -15,24 +15,38 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: df2ab2b2019bb76af49f00d2751cdc76848705d1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 28dfb21cb918ca5f0b99579304f3135664e11533
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663602"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112045"
 ---
 # <a name="submit-files-for-analysis"></a>分析のためにファイルを送信する
 
 マルウェアである可能性がある、または誤って検出されている可能性があるファイルがある場合は、分析のためにファイルを Microsoft に送信できます。 このページでは、分析用のファイルの送信に関するいくつかの一般的な質問に対する回答を示します。
 
-## <a name="how-do-i-send-a-malware-file-to-microsoft"></a>マルウェア ファイルを Microsoft に送信操作方法?
+## <a name="how-do-i-submit-a-file-to-microsoft-for-analysis"></a>操作方法分析のために Microsoft にファイルを送信しますか?
+
+### <a name="send-a-malware-file"></a>マルウェア ファイルを送信する
 
 [サンプル送信ポータル](https://www.microsoft.com/wdsi/filesubmission)を使用して、マルウェアまたは誤って検出されたファイルと思われるファイルを送信できます。
 
-多くのソースから多数のサンプルを受け取ります。 分析は、ファイル検出の数と提出の種類によって優先順位が付けられます。 使用していた製品と、ファイルを見つけたときに実行していた内容に関する詳細情報を提供することで、簡単な分析を完了するのに役立ちます。
+使用していた製品と、ファイルを見つけたときに実行していた内容に関する詳細情報を提供することで、簡単な分析を完了できます。
 
 サインインすると、提出物を追跡できるようになります。
+
+> [!NOTE]
+>
+> プラン 2 または Microsoft Defender for Office プラン 2 をMicrosoft Defender for Endpointしていない場合でも、WDSI 申請機能を使用できます。
+
+### <a name="submit-a-suspected-email-attachment"></a>疑わしい電子メールの添付ファイルを送信する
+
+[Microsoft 365 Defender ポータル](https://security.microsoft.com/)を使用して、疑わしい電子メールの添付ファイルを Microsoft に送信して確認します。 詳細については、「 [疑わしい電子メール添付ファイルを Microsoft に送信する」を参照してください](../office-365-security/admin-submission.md)。
+
+### <a name="submit-a-file-or-file-hash"></a>ファイルまたはファイル ハッシュを送信する
+
+Microsoft Defender for Endpointの統合申請機能を使用して、ファイルとファイル ハッシュを Microsoft に送信して確認します。 詳細については、「[Microsoft Defender for Endpointでファイルを送信する](../defender-endpoint/admin-submissions-mde.md)」を参照してください。
 
 ## <a name="can-i-send-a-sample-by-email"></a>サンプルをメールで送信できますか?
 

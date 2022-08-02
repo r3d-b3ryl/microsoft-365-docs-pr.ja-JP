@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f927133a99e73af11c29690b1c51e3bda3a6d5a7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 577747a28c86cb1b95640a6ae6ebe557d2340a28
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949439"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112221"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-linux"></a>Linux でのMicrosoft Defender for Endpointの新機能
 
@@ -34,6 +34,28 @@ ms.locfileid: "66949439"
 
 - [macOS 上の Defender for Endpoint の新機能](mac-whatsnew.md)
 - [iOS 上の Defender for Endpoint の新機能](ios-whatsnew.md)
+
+<details>
+  <summary>2022 年 8 月 (ビルド: 101.75.43 |リリース バージョン: 30.122071.17543.0)</summary>
+
+&ensp;リリース日: **2022 年 8 月 2** 日<br/>
+&ensp;発行日: **2022 年 8 月 2 日**<br/>
+&ensp;ビルド: **101.75.43**<br/>
+&ensp;リリース バージョン: **30.122071.17543.0**<br/>
+&ensp;エンジンバージョン: **1.1.19300.3**<br/>
+&ensp;署名バージョン: **1.369.395.0**<br/>
+
+**新機能**
+
+- Red Hat Enterprise Linux バージョン 9.0 のサポートを追加しました
+- ネットワーク保護機能の適用レベルを `mdatp health` 照会するために使用できる新しいフィールドを出力に追加しました。 新しいフィールドが呼び出`network_protection_enforcement_level`され、次のいずれかの値を受け取ることができます。 `audit``block``disabled`
+- 同じコンテンツを複数検出すると、脅威履歴にエントリが重複する可能性がある製品バグに対処しました
+- サービスが停止したときに、製品 (`mdatp_audisp_plugin`) によって生成されたプロセスの 1 つが適切に終了しないことがある問題に対処しました
+- その他のバグ修正
+</br>
+
+<br/><br/>
+</details>
 
 <details>
   <summary>2022 年 7 月 (ビルド: 101.73.77 |リリース バージョン: 30.122062.17377.0)</summary>
@@ -218,7 +240,7 @@ ms.locfileid: "66949439"
    
   <p><b> 新機能 </b></p>
 
-   - Java アプリケーションで使用されている脆弱な log4j jar を検出する機能を追加しました。 マシンは、読み込まれた log4j jar で Javaprocesses を実行するために定期的に検査されます。 この情報はMicrosoft Defender for Endpoint バックエンドに報告され、ポータルのVulnerability Management 領域で公開されます。
+   - Java アプリケーションで使用されている脆弱な log4j jar を検出する機能を追加しました。 マシンは、読み込まれた log4j jar を使用して Java プロセスを実行するために定期的に検査されます。 この情報はMicrosoft Defender for Endpoint バックエンドに報告され、ポータルの [脆弱性管理] 領域で公開されます。
    
    </details>
 

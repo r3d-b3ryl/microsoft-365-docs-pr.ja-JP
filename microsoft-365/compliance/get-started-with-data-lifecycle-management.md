@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 管理者、ライセンス要件、および組織のデータのライフサイクルを管理する一般的なシナリオの規範的な手順。
-ms.openlocfilehash: f07d83a26f874fe9f4572ab0656b542beb9b8a91
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9a304a9bbde5bd77a146c3e18246cf5115634f8f
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942386"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67105991"
 ---
 # <a name="get-started-with-data-lifecycle-management"></a>データ ライフサイクル管理の使用を開始する
 
@@ -57,7 +57,7 @@ ms.locfileid: "66942386"
 
 さまざまなサブスクリプションがデータ ライフサイクル管理機能をサポートしています。
 
-Microsoft Purview 機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 このページにリストされている機能については、「[Microsoft Purview データ ライフサイクル管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management)」セクションおよび機能レベルのライセンス要件についての関連する [PDF ダウンロード](https://go.microsoft.com/fwlink/?linkid=2139145)を参照してください。
+Microsoft Purview 機能のメリットを得られるようにユーザーにライセンスを付与するためのオプションを確認するには、「[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)」を参照してください。 このページにリストされている機能については、「[Microsoft Purview データ ライフサイクル管理と Microsoft Purview レコード管理](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management)」の、機能レベルのライセンス要件についてのセクションを参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 

@@ -16,20 +16,20 @@ ms.collection:
 - Adm_O365_Setup
 - Adm_TOC
 ms.custom:
-- VSBFY23
 - commerce_subscriptions
+- VSBFY23
 - okr_smb
 - AdminSurgePortfolio
 - AdminTemplateSet
 search.appverid: MET150
 description: '[製品] ページに移動して、組織が所有する Microsoft 365 サブスクリプションを確認する方法について説明します。'
 ms.date: 01/21/2021
-ms.openlocfilehash: f7242af91fc3e5a5c5f45d0fc3bdfda6f220bc70
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5a6bf93c40ceb15df091cd1e9f7dcb952812e5b2
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084523"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111673"
 ---
 # <a name="which-microsoft-365-subscription-do-i-have"></a>どの Microsoft 365 サブスクリプションがありますか?
 

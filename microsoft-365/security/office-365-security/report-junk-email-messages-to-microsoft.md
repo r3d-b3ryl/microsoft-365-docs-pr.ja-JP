@@ -17,12 +17,12 @@ ms.collection:
 description: 疑わしいメールやファイルを Microsoft に報告操作方法? 分析のために、メッセージ、URL、電子メールの添付ファイル、ファイルを Microsoft に報告します。 スパム メールとフィッシングメールを報告する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3ccb01e63011b48fa341b7ce3198b05505940a01
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: e57460766864ba27cec95e584d28a22c8b2c0229
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717782"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112485"
 ---
 # <a name="how-do-i-report-a-suspicious-email-or-file-to-microsoft"></a>疑わしいメールやファイルを Microsoft に報告操作方法?
 
@@ -48,7 +48,7 @@ ms.locfileid: "66717782"
 |[メッセージのレポートまたはフィッシング アドインのレポートを有効にする](enable-the-report-message-add-in.md)|Outlook とOutlook on the web (以前は Outlook Web App と呼ばられていました) で動作します。 <br/><br/> サブスクリプションに応じて、ユーザーがアドインを使用して報告したメッセージは[、管理申請ポータル](admin-submission.md)、[自動調査と応答 (AIR) の結果](air-view-investigation-results.md)、[ユーザーから報告されたメッセージ レポート](view-email-security-reports.md#user-reported-messages-report)、[エクスプローラーで](threat-explorer-views.md#email--submissions)利用できます。 <br/><br/> 報告されたメッセージを、指定したメールボックスにコピーまたはリダイレクトするように構成できます。 詳細については、「 [ユーザー申請ポリシー](user-submission.md)」を参照してください。
 |[Outlook の誤検出と検出漏れを報告する](report-false-positives-and-false-negatives.md)|メッセージのレポート機能を使用して、誤検知 (ブロックまたは迷惑メール フォルダーに送信された適切なメール) と誤検知 (受信トレイに配信された不要なメールまたはフィッシング) を Exchange Online Protection (EOP) に送信します。|
 |[メール フロー ルールを使用して、ユーザーが Microsoft に報告する内容を確認する](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)|ユーザーが分析のために Microsoft にメッセージを報告したときに通知するメール フロー ルール (トランスポート ルールとも呼ばれます) を作成する方法について説明します。|
-|[分析のために疑わしいファイルを Microsoft に送信する](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Microsoft セキュリティ インテリジェンス サイトを使用して、添付ファイルやその他のファイルを送信します。|
+|[分析のためにファイルを送信する](../intelligence/submission-guide.md)|分析のために、電子メールの添付ファイルとその他の疑わしいファイルを Microsoft に送信します。|
 
 > [!NOTE]
 > Microsoft に電子メール エンティティを報告すると、電子メールに関連付けられているすべてのコピーが作成され、継続的なアルゴリズム レビューに含められます。 このコピーには、電子メール の内容、電子メール ヘッダー、および電子メール ルーティングに関する関連データが含まれます。 メッセージ内の添付ファイルも含まれます。

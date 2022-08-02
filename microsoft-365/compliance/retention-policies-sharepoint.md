@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーと保持ラベルを使用して、組織のデータの自動保持または削除を管理する、SharePoint と OneDrive の Microsoft 365 リテンション期間のしくみについて説明します。
-ms.openlocfilehash: d3648fd7ce86fbf9c3c81a8c0609598dbe2a2067
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 54e1b1493eecd763853e4b3968ce744b21d4eebf
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037164"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112507"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -144,7 +144,7 @@ OneNote コンテンツを含む場所、または OneNote フォルダーに保
 
 バージョン管理は、SharePoint および OneDrive のすべてのドキュメントリストと ライブラリの機能です。規定で、バージョン管理は少なくとも 500 のメジャー バージョンを保持しますが、この制限は増やすことができます。詳細については、「[リストまたはライブラリのバージョン管理を有効にして構成する](https://support.office.com/article/1555d642-23ee-446a-990a-bcab618c7a37)」および「[リストとライブラリでバージョン管理が機能するしくみ](https://support.microsoft.com/office/how-versioning-works-in-lists-and-libraries-0f6cd105-974f-44a4-aadb-43ac5bdfd247)」を参照してください。
   
-2022 年 7 月に、パフォーマンスを向上させるため、複数バージョンがあるドキュメントにそのコンテンツを保持する保持設定が適用される場合に、それぞれのバージョンをアイテム保管ライブラリに保存する方法が変更されました。 現在、ファイルのすべてのバージョンがアイテム保管ライブラリ内の 1 つのファイルに保持されるようになる変更を、テナントにロールアウト中です。 変更前は、各バージョンが個別のファイルとしてアイテム保管ライブラリにコピーされていました。これらのファイルは変更後も別々のファイルのままになります。
+2022 年 7 月に、パフォーマンスを向上させるため、複数バージョンがあるドキュメントにそのコンテンツを保持する保持設定が適用される場合に、それぞれのバージョンをアイテム保管ライブラリに保存する方法が変更されました。 ファイルのすべてのバージョンがアイテム保管ライブラリ内の 1 つのファイルに保持されるようになりました。 変更前は、各バージョンが個別のファイルとしてアイテム保管ライブラリにコピーされていました。これらのファイルは変更後も別々のファイルのままになります。
 
 保持期間の終了時に削除するように設定が構成されている場合:
 

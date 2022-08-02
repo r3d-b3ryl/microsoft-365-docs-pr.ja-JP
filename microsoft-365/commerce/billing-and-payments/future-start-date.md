@@ -18,13 +18,14 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: 請求書に将来の開始日を含むサブスクリプションがある場合の意味について説明します。
 ms.custom:
 - commerce_billing
+- empty
 ms.date: 04/08/2022
-ms.openlocfilehash: 2b8eac7078028b5e27fdeccbea68473b9e16ed5f
-ms.sourcegitcommit: dd5fc139affb4cba4089cbdb2c478968b680699a
+ms.openlocfilehash: a1f11990eb0642dd7d0a9f312a4075f01e7d46e8
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/09/2022
-ms.locfileid: "64747523"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111957"
 ---
 # <a name="understand-invoicing-for-future-start-dates"></a>今後の開始日の請求について理解する
 

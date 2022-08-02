@@ -1,2 +1,33 @@
-- name: インデックス
-  href: index.md
+- name: 概要
+  expanded: true
+  items:
+    - name: Microsoft Defender 脅威インテリジェンス (Defender TI) とは?
+      href: what-is-microsoft-defender-threat-intelligence-defender-tI.md
+    - name: データ セット
+      href: data-sets.md
+    - name: 評判スコアリング
+      href: reputation-scoring.md
+    - name: アナリストの分析情報
+      href: analyst-insights.md
+- name: 概念
+  items:
+    - name: インフラストラクチャ チェーン
+      href: infrastructure-chaining.md
+- name: クイックスタート
+  items:
+    - name: Microsoft Defender 脅威インテリジェンスにアクセスし、ポータルでカスタマイズを行う方法について説明します
+      href: learn-how-to-access-microsoft-defender-threat-intelligence-and-make-customizations-in-your-portal.md
+- name: 使い方に関する情報
+  items:
+    - name: 検索とピボット
+      href: searching-and-pivoting.md
+    - name: データの並べ替え、フィルター処理、ダウンロード
+      href: sorting-filtering-and-downloading-data.md
+    - name: タグの使用
+      href: using-tags.md
+    - name: プロジェクトの使用
+      href: using-projects.md
+- name: チュートリアル
+  items:
+    - name: 脅威インテリジェンスとインフラストラクチャ チェーンの収集
+      href: gathering-threat-intelligence-and-infrastructure-chaining.md

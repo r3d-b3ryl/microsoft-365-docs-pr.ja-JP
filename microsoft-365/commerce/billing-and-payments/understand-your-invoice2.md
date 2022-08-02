@@ -14,8 +14,8 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 for Business の課金内容または請求書についての料金、請求書、支払い情報を解釈する方法について説明します。
 ms.date: 05/24/2022
-ms.openlocfilehash: e0fde94ba3dd2f3d174bac44b3d53df469be9c9d
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 0c863c1398b19c0c3efdf6c8390ad4a0cd16f82c
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084941"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112023"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -91,9 +91,9 @@ ms.locfileid: "67084941"
 
 #### <a name="order-details"></a>ご注文の詳細
 
-請求書の1 ページ目の **製品** が、「オンライン サービス」となっており、 サブスクリプションの説明に使用する一般的な用語です。 2 ページ目には、注文の個々の製品が一覧表示されています。
+請求書の 1 ページ目の **製品** は、サブスクリプションの説明に使用する一般的な用語である "Online Services" です。 2 ページ目には、注文の個々の製品が一覧表示されています。
 
-**顧客発注番号** は、指定した発注書 (PO) 番号です。 既存の請求書に発注書番号を追加することはできません。 発注番号を更新すると、今後の請求書に含まれるようになります。 発注番号を変更するには、「 [発注番号を変更する](#change-your-purchase-order-number)」を参照してください。
+**顧客発注番号** は、指定した発注書 (PO) 番号です。 既存の請求書に発注書番号を追加することはできません。 PO 番号を更新すると、将来の請求書に含まれます。 発注番号を変更するには、「 [発注番号を変更する](#change-your-purchase-order-number)」を参照してください。
 
 **注文番号** は、注文を識別するグローバル一意識別子 (GUID) です。 新しいサブスクリプションを購入するたびに、新しい注文番号を持つ新しい注文が作成されます。 課金期間ごとに、各注文の請求書が届きます。
 
@@ -119,7 +119,7 @@ ms.locfileid: "67084941"
 
 ### <a name="electronic-fund-transfer-eft-and-check"></a>電子資金送金 (EFT) および小切手
 
-サブスクリプションの支払い方法として「請求書」を選択した場合、1 ページ目 には、**電子資金移動** セクションがあり、電子支払い用の Microsoft 銀行口座情報 (電信送金、ACH、SEPA など) 表示されます。 通常、銀行は支払いの送信時に入力される参照フィールドがあります。 そのフィールドに請求書番号を明記してください。
+サブスクリプションの支払い方法として [請求書] を選択した場合、ページ 1 には **電子** 支払い (ワイヤー、ACH、SEPA など) の Microsoft 銀行口座情報を示す電子送金セクションが含まれています。 通常、銀行は支払いの送信時に入力される参照フィールドがあります。 そのフィールドに請求書番号を明記してください。
 
 お住まいの国または地域で小切手による支払いを受け付ける場合は、受取人名と郵送先住所を含む **小切手** セクションも表示されます。 小切手に請求書番号を明記してください。
 

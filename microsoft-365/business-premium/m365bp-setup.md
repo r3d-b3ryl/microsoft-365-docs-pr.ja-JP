@@ -9,19 +9,18 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/20/2022
+ms.date: 08/01/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
-- SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 43d6bfe9ef385f7c9b197af75a25bd2544996840
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917982"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112463"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
@@ -52,13 +51,13 @@ Microsoft 365 Business Premium には、ガイド付き手順が含まれてい�
 
 > [!TIP]
 > - ユーザーを追加したら、「[従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md)」 へのリンクをユーザーに提供します。 このガイドでは、サインイン、Office アプリの取得、ファイルの保存、コピー、共有について説明します。
-> - [セキュリティの強化](m365bp-security-overview.md)に進みます。
+> - [セキュリティの強化](m365bp-security-overview.md) に進むようにしてください。
 
 ## <a name="work-with-a-microsoft-partner"></a>Microsoft パートナーと連携する
 
 Microsoft 365 の入手と設定に Microsoft パートナーのサポートを受けることを希望する場合は、次の手順に従います。
 
-1. [[パートナーを参照する](https://appsource.microsoft.com/marketplace/partner-dir)] に移動します。
+1. [[パートナーを参照する](https://appsource.microsoft.com/marketplace/partner-dir)] ページに移動します。
 
 2. [**フィルター**] ウィンドウで、次のような検索条件を指定します。
 
@@ -79,4 +78,4 @@ Microsoft 365 の入手と設定に Microsoft パートナーのサポートを�
 
 ### <a name="next-objective"></a>次の目標
 
-これらの目標を達成したら、[セキュリティ保護を強化する](m365bp-security-overview.md) に進みます。
+これらの目標を達成したら、[セキュリティの強化](m365bp-security-overview.md) に進みます。

@@ -16,12 +16,12 @@ search.appverid:
 ms.assetid: bed936bc-0969-4a6d-a7a5-66305c14e958
 ms.custom: admindeeplinkEXCHANGE
 description: 管理者が powerShell と CSV ファイルExchange Online使用して、外部連絡先をグローバル アドレス一覧に一括インポートする方法について説明します。
-ms.openlocfilehash: 40e8c44a45e8d8d0c416f3f00df57e24504a4e70
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 249dc6f2f102c4026ab201f8e9d8da6f76e6a253
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66633809"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67111518"
 ---
 # <a name="bulk-import-external-contacts-to-exchange-online"></a>外部連絡先をExchange Onlineに一括インポートする
 
@@ -104,15 +104,10 @@ ms.locfileid: "66633809"
     
 2. 手順 1 で CSV ファイルを保存したデスクトップ フォルダーに移動します。たとえば、. `C:\Users\Administrator\desktop`
     
-3. 次の 2 つのコマンドを実行して、CSV ファイルの他のプロパティを、手順 2. で作成した外部連絡先に追加します。
+3. 次のコマンドを実行して、CSV ファイルの他のプロパティを、手順 2. で作成した外部連絡先に追加します。
     
     ```powershell
-    $Contacts = Import-CSV .\ExternalContacts.csv
-  
-    ```
-
-    ```powershell
-    $contacts | ForEach {Set-Contact $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
+     Import-Csv .\ExternalContacts.csv|%{Set-Contact -Identity $_.Name -StreetAddress $_.StreetAddress -City $_.City -StateorProvince $_.StateorProvince -PostalCode $_.PostalCode -Phone $_.Phone -MobilePhone $_.MobilePhone -Pager $_.Pager -HomePhone $_.HomePhone -Company $_.Company -Title $_.Title -OtherTelephone $_.OtherTelephone -Department $_.Department -Fax $_.Fax -Initials $_.Initials -Notes  $_.Notes -Office $_.Office -Manager $_.Manager}
     ```
 
     > [!NOTE]

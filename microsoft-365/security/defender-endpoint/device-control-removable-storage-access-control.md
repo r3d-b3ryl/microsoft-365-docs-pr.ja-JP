@@ -16,12 +16,12 @@ ms.topic: conceptual
 ms.technology: mde
 ms.date: 08/01/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 7407b6184b700ccacd8258ecce7d7cbcf16587b2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 8c5a0dd3e2eb9f0ebeb20ed6e5ea8f323fbdcceb
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106582"
+ms.locfileid: "67112551"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル ストレージ Access Control
 
@@ -83,7 +83,7 @@ ms.locfileid: "67106582"
 |プロパティ名|説明|オプション|
 |---|---|---|
 |**GroupId**|一意の ID である GUID はグループを表し、ポリシーで使用されます。||
-|**DescriptorIdList**|グループ内でカバーするために使用するデバイス プロパティを一覧表示します。 すべてのプロパティで大文字と小文字が区別されます。 |**PrimaryId**: プライマリ ID には`RemovableMediaDevices`、`CdRomDevices``WpdDevices`および `PrinterDevices`. <p>**InstancePathId**: InstancePathId は、システム内のデバイス (デバイス マネージャーなど`USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0``Device instance path`) を一意に識別する文字列です。 末尾の数値 (&0 など) は使用可能なスロットを表し、デバイスからデバイスに変更される場合があります。 最適な結果を得るには、最後にワイルドカードを使用します。 たとえば、「 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` 」のように入力します。 <p>**DeviceId**: デバイス ID 形式への変換 `Device instance path` ( [USBSTOR](/windows-hardware/drivers/install/standard-usb-identifiers)\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07 など) を参照してください。 <p>**HardwareId**: システム内のデバイス (USBSTOR\DiskGeneric_Flash_Disk___8.07 など) `Hardware Ids` をデバイス マネージャーで識別した文字列。 注: ハードウェア ID は一意ではありません。異なるデバイスが同じ値を共有している可能性があります。<p>**FriendlyNameId**: デバイスにアタッチされた文字列 (たとえば、デバイス マネージャーの汎用フラッシュ ディスク USB デバイス`Friendly name`)。 <p>**BusId**: USB、SCSI などです。 <p>**SerialNumberId**: usbSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 の SerialNumberId など`03003324080520232521`、デバイス マネージャーから SerialNumberId `Device instance path` を見つけることができます。 <p>**VID_PID**: ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。ワイルドカードをサポートし、ベンダー ID と製品 ID 形式に変換 `Device instance path` する方法については、「 [Standard USB 識別子」を](/windows-hardware/drivers/install/standard-usb-identifiers)参照してください。 <p>`0751_55E0`: この正確な VID/PID ペアと一致する<p>`_55E0`: PID=55E0 の任意のメディアと一致する <p>`0751_`: VID=0751 で任意のメディアと一致する <p> **注**: 「デバイス マネージャーで media プロパティを見つける方法」を参照してください。 でプロパティを見つける方法を理解するために次の「Fequently に質問された質問」セクションの下デバイス マネージャー。|
+|**DescriptorIdList**|グループ内でカバーするために使用するデバイス プロパティを一覧表示します。 すべてのプロパティで大文字と小文字が区別されます。 |**PrimaryId**: プライマリ ID に含まれるもの `RemovableMediaDevices`, , `CdRomDevices`, `WpdDevices``PrinterDevices`. <p>**InstancePathId**: InstancePathId は、たとえば、システム `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`内のデバイスを一意に識別する文字列です。 これは`Device instance path`デバイス マネージャー内です。 末尾の数値 (&0 など) は使用可能なスロットを表し、デバイスからデバイスに変更される場合があります。 最適な結果を得るには、最後にワイルドカードを使用します。 たとえば、「 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` 」のように入力します。 <p>**DeviceId**: デバイス ID 形式に変換 `Device instance path` するには、「 [Standard USB 識別子](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。たとえば、 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: システム内のデバイスを識別する文字列 。たとえば、`USBSTOR\DiskGeneric_Flash_Disk___8.07`これは`Hardware Ids`デバイス マネージャーです。 <br>**注**: ハードウェア ID は一意ではありません。異なるデバイスが同じ値を共有している可能性があります。<p>**FriendlyNameId**: これは、デバイスにアタッチされた文字列です 。たとえば、 `Generic Flash Disk USB Device`. これは`Friendly name`デバイス マネージャー内です。 <p>**BusId**: たとえば、USB、SCSI <p>**SerialNumberId**: usbSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 の SerialNumberId など`03003324080520232521`、デバイス マネージャーから SerialNumberId `Device instance path` を見つけることができます。 <p>**VID_PID**: ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。 ワイルドカードをサポートしています。 ベンダー ID と製品 ID 形式に変換 `Device instance path` するには、「 [Standard USB 識別子](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。 以下に例を示します。 <br>`0751_55E0`: この正確な VID/PID ペアと一致する<br>`_55E0`: PID=55E0 の任意のメディアと一致する <br>`0751_`: VID=0751 で任意のメディアと一致する <p> **注**: [デバイス マネージャーでプロパティ操作方法見つける](#how-do-i-find-the-media-property-in-the-device-manager)方法については、以下の「[よく寄せられる質問](#frequently-asked-questions)」セクションの「デバイス マネージャーで media プロパティを見つける」を参照してください。|
 |**MatchType**|複数のデバイス プロパティが使用されている場合は、 `DescriptorIDList`MatchType によってリレーションシップが定義されます。|**MatchAll**: 次の属性`DescriptorIdList`は **And** リレーションシップになります。たとえば、管理者が接続されているすべての USB に対して`InstancePathID`、USB `DeviceID` が両方の値を満たしているかどうかを確認します。 <p> **MatchAny**: DescriptorIdList の下の属性は **Or** リレーションシップになります。たとえば、管理者 `DeviceID` が接続されているすべての USB に対して `InstancePathID`、USB が同じ **DeviceID** または **InstanceID** 値を持っている限り、システムは適用を行います。|
 
 ### <a name="access-control-policy"></a>Access Control ポリシー
@@ -516,9 +516,9 @@ DeviceFileEvents
 
 3. デバイス マネージャーでメディアを見つけて右クリックし、[**プロパティ**] を選択します。
 
-   ![ディスク ドライブで選択されている USB と、強調表示されているプロパティのスクリーンショット。](https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png)
+   :::image type="content" alt-text="デバイス マネージャー内のメディアのスクリーンショット。" source="https://user-images.githubusercontent.com/81826151/181859700-62a6f704-b12e-41e3-a048-7d63432654a4.png":::
 
 4. **[詳細]** を開き、[**プロパティ**] を選択します。
 
-   ![USB デバイスのプロパティのスクリーンショット。](https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png)
+   :::image type="content" alt-text="デバイス マネージャーの device プロパティのスクリーンショット。" source="https://user-images.githubusercontent.com/81826151/181859852-00bc8b11-8ee5-4d46-9770-fa29f894d13f.png":::
     

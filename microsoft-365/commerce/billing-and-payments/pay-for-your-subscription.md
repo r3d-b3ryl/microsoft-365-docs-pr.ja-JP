@@ -16,20 +16,20 @@ ms.collection:
 search.appverid: MET150
 description: Microsoft 365 for business サブスクリプションのお支払いには、クレジット カード、デビット カード、銀行口座をご利用ください。場合によっては、請求書によるお支払いも可能です。
 ms.custom:
-- VSBFY23
 - commerce_billing
+- VSBFY23
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
 ms.date: 05/26/2022
-ms.openlocfilehash: ba6703be593f05c651c76b02e2fb1e8630f59355
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67083907"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67112353"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -73,14 +73,14 @@ ms.locfileid: "67083907"
 - サブスクリプション代金が特定の金額を超えている (この金額はサービスの場所によって異なります)
 - 信用調査に合格する
 
-与信審査が必要な場合、サブスクリプションの購入時に、その必要性がお客様に知らされます。Microsoft からの連絡にご同意いただいた場合、クレジット カードの承認申請に関して詳細な情報が記載されたメールがお客様宛てに送信されます。与信審査は、通常 2 営業日以内で完了します。
+与信審査が必要な場合、サブスクリプション購入の際に通知が送信されます。 Microsoft から連絡することをご了承いただいた場合、メールを受信します。メールには、クレジットの承認を申請するうえで詳細な情報が含まれます。 与信審査は、通常 2 営業日内に完了します。
 
 > [!NOTE]
 > ブラジルにお住まいのお客様は、Boleto Bancario でサブスクリプションの支払いを行うことができます。 このオプションを選択すると、サブスクリプションの購入により、注文日から 10 日以内に支払いについての連絡が指定のメールに送信されます。 期限は、注文日から 30 日です。 Boleto のメールを受信しない場合は、迷惑メール フォルダーを確認するか、サポートにお問い合わせください。
 >
 > もしくは、口座間の電子決済により支払いを行うこともできます。 銀行と口座番号は請求書の下部に記載されています。 振替 ID の欄に請求書番号を入力する必要があります。
 
-サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったとき、通知メールが届きます。このメールには、請求明細書のコピーは含まれません。しかし、[組織の請求書をメールの添付ファイルとして受け取る](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)ことを選択することができます。請求明細書には、支払いに関するオプションとその送付先に関する詳細が記載されています。サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。請求明細書にアクセスする詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
+サブスクリプションを請求書でお支払いになる場合、請求明細書が閲覧できるようになったときにメールを受信します。 このメールには、請求明細書のコピーは含まれません。 ただし[組織の請求書をメールの添付ファイルとして受け取る](manage-billing-notifications.md#receive-your-organizations-invoices-as-email-attachments)こともできます。 請求明細書には、支払いに関するオプションとその送付先の詳細が記載されています。 サブスクリプションを購入するときに発注書番号 (PO) を入力した場合、請求明細書にその番号が表示されます。 請求明細書へのアクセスの詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>未払額がある場合、どうなりますか。
 
