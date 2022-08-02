@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: グローバル管理者ロールやサービス管理者ロールなど、管理者ロールについて説明します。 ロールは特定のビジネス機能にマップされ、Microsoft 365 管理センターで特定のタスクを実行するための権限を付与します。
-ms.openlocfilehash: 644a426caedde06dcc910b527757acb631845655
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: df4f980237a25ee23b9f629f2db92e908797553a
+ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
 ms.translationtype: HT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106298"
+ms.locfileid: "67111629"
 ---
 # <a name="about-admin-roles-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの管理者ロールについて
 
