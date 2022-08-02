@@ -349,7 +349,11 @@
         - name: 追求のために Microsoft Defender エキスパートと共同作業する
           items:
             - name: 概要
-              href: defenderexpertsforhuntingprev.md
+              href: defender-experts-for-hunting.md
+            - name: はじめに
+              href: before-you-begin-defender-experts.md
+            - name: Defender Experts for Hunting の使用を開始する
+              href: onboarding-defender-experts-for-hunting.md
             - name: Defender Experts for Hunting レポートを理解する
               href: defender-experts-report.md
         - name: ランサムウェア プレイブック

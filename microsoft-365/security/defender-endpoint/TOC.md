@@ -34,6 +34,7 @@
 #### [Microsoft エンドポイント マネージャーを使用したオンボーディング](onboarding-endpoint-manager.md)
 
 ## [移行ガイド](migration-guides.md)
+### [Defender for Endpoint サーバーを Defender for Cloud に移行する](migrating-mde-server-to-cloud.md)
 ### [Defender for Endpoint に移動する](switch-to-mde-overview.md)
 #### [フェーズ 1: 準備](switch-to-mde-phase-1.md)
 #### [フェーズ 2: セットアップ](switch-to-mde-phase-2.md)

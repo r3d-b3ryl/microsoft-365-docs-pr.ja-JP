@@ -18,12 +18,12 @@ ms.custom:
 description: 認証された受信チェーン (ARC) は、デバイス間の認証結果と、送信者と受信者の間で発生する間接的なメールフローを保持しようとする電子メール認証です。 信頼された ARC 送信者に対して例外を作成する方法を次に示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 30b4f57b89ff8eaa61cf82c45a7d2b0af02d8241
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: 7523a17eb8440d6b567d0414b63153bfc33338a2
+ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059647"
+ms.lasthandoff: 08/01/2022
+ms.locfileid: "67107307"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*正当* な間接メールフローを信頼する信頼された ARC 送信者の一覧を作成する
 
@@ -46,7 +46,7 @@ ms.locfileid: "67059647"
 
 ## <a name="when-to-use-trusted-arc-sealers"></a>信頼できる ARC シールを使用するタイミング
 
-信頼された ARC シールの一覧は、仲介者が組織の電子メール フローの一部であり、次の場合にのみ必要です。
+信頼できる ARC シールの一覧は、仲介者が組織の電子メール フローの一部であり、次の場合にのみ必要です:
 
 1. 電子メール ヘッダーまたは電子メールの内容を変更できます。
 2. 他の理由 (添付ファイルの削除など) で認証が失敗する可能性があります。
