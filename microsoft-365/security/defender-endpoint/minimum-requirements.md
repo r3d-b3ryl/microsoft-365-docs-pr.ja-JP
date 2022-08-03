@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2b1303fc9ab0841643536ccf5a85470243fe74e
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490577"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174939"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の最小要件
 
@@ -97,7 +97,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 
 > コア: 2 (最小)、4 (推奨) メモリ: 1 GB (最小)、4 GB (推奨)
 
-サポートされているバージョンの Windows 10 の詳細については、(/windows/release-health/release-information) を参照してください。
+サポートされているバージョンのWindows 10の詳細については、[Windows 10リリース情報](/windows/release-health/release-information)を参照してください。
 
 > [!NOTE]
 > - モバイル バージョンの Windows (Windows CEやWindows 10 Mobileなど) を実行しているエンドポイントはサポートされていません。
@@ -106,7 +106,7 @@ Defender for Endpoint へのアクセスはブラウザーを介して行われ�
 >
 > - 仮想環境の場合は、Windows 10 Enterprise LTSC 2019 以降を使用することをお勧めします。
 >
-> - [Defender for Endpoint プラン 1 とプラン 2](defender-endpoint-plan-1-2.md) のスタンドアロン バージョンには、サーバー ライセンスは含まれません。 これらのプランにサーバーをオンボードするには、Defender for Servers プラン 1 またはプラン 2 が [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) オファリングの一部として必要です。 詳細については、こちらを参照してください。 [Microsoft Defender for Servers の概要に関するページを参照してください](/azure/defender-for-cloud/defender-for-servers-introduction)。
+> - [Defender for Endpoint プラン 1 とプラン 2](defender-endpoint-plan-1-2.md) のスタンドアロン バージョンには、サーバー ライセンスは含まれません。 これらのプランにサーバーをオンボードするには、Defender for Servers プラン 1 またはプラン 2 が [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) オファリングの一部として必要です。 詳細情報。 「[Microsoft Defender for Servers の概要](/azure/defender-for-cloud/defender-for-servers-introduction)」を参照してください。
 
 コンポーネントが Microsoft Windows オペレーティング システムで最新の状態にある場合、Microsoft Defender for Endpoint のサポートは、それぞれのオペレーティング システムのライフサイクルに従います。 詳細については、「[ライフサイクルに関する FAQ](/lifecycle/faq/general-lifecycle)」を参照してください。 新機能は、通常、ライフサイクルの終了にまだ達していないオペレーティング システムでのみ提供されます。 セキュリティ インテリジェンスの更新プログラム (定義とエンジンの更新) と検出ロジックは、少なくとも次の時点まで引き続き提供されます。
 

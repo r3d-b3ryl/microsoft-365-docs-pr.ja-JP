@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者は、カスタム メールボックス (ユーザー送信メールボックスとも呼ばれます) を識別して、ユーザーによって報告されるスパムおよびフィッシング メッセージを収集する方法について説明します。 その他の設定では、ユーザーがメッセージを報告するときに、レポート エクスペリエンスが完了します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e578b3c968659448a84d0f85f6b2347fe47a042
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: faba09ceb32232154211a28b283ece79228f0be8
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087245"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175490"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーから報告されたメッセージの設定
 
@@ -112,7 +112,7 @@ Exchange Onlineメールボックスを持つ Microsoft 365 組織では、悪�
 
 - **[報告されたメッセージを送信する** ] セクション: 次のいずれかのオプションを選択します。
 
-  - **Microsoft**: ユーザー提出メールボックスは使用されません (報告されたすべてのメッセージは分析のために Microsoft に送信されます)。
+  - **Microsoft**: ユーザー レポートは、分析のために Microsoft に直接移動します。 Microsoft 365 セキュリティ センターを介してテナント管理者に提供されるのは、送信者、受信者、報告者、ユーザー レポートからのメッセージの詳細などのメタデータのみです。
 
   - **Microsoft と組織のメールボックス**: 表示されるボックスに、ユーザー送信メールボックスとして使用する既存のExchange Online メールボックスの電子メール アドレスを入力します。 配布グループは許可されません。 ユーザー申請は分析のために Microsoft に送信され、管理者またはセキュリティ運用チームが分析するユーザー提出メールボックスに送信されます。
 
@@ -204,7 +204,7 @@ Microsoft 統合レポート エクスペリエンスを無効にして、サー
   - `2|` または `Not junk:`。
   - `3|` または `Phishing:`。
 
-  例:
+  以下に例を示します。
 
   - `3|This text in the Subject line is ignored by the system`
   - `Not Junk:This text in the Subject line is also ignored by the system`

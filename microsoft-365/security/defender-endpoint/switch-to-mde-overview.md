@@ -1,6 +1,6 @@
 ---
 title: Microsoft 以外のエンドポイント保護からMicrosoft Defender for Endpointへの切り替えを行う
-description: エンドポイント保護ソリューションのMicrosoft Defender ウイルス対策を含むMicrosoft Defender for Endpointに切り替えます。
+description: エンドポイント保護ソリューションの Microsoft Defender ウイルス対策を含むMicrosoft Defender for Endpointに切り替えます。
 keywords: 移行, Windows Defender, 高度なエンドポイント保護, ウイルス対策, マルウェア対策, パッシブ モード, アクティブ モード
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -23,23 +23,26 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: e93e762501b942a67cef35a95bb2a9a2b1113e3a
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f922d618ac947646379f9d1022aba67c874e64fd
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64465863"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174962"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護からMicrosoft Defender for Endpointへの切り替えを行う
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804) Microsoft 以外のエンドポイント保護ソリューションから [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) への切り替えを検討している場合、または計画段階にある場合は、この記事をガイドとして使用してください。 この記事では、Defender for Endpoint に移行する全体的なプロセスについて説明します。
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+
+Microsoft 以外のエンドポイント保護ソリューションから [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) への切り替えを検討している場合、または計画段階にある場合は、この記事をガイドとして使用してください。 この記事では、Defender for Endpoint に移行する全体的なプロセスについて説明します。
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="エンドポイント保護ソリューションを Defender for Endpoint に切り替える移行プロセス" lightbox="images/nonms-mde-migration.png":::
 
-Defender for Endpoint に切り替えると、Microsoft 以外のウイルス対策/マルウェア対策保護がアクティブ モードで開始されます。 次に、パッシブ モードでMicrosoft Defender ウイルス対策を構成し、デバイスを Defender for Endpoint にオンボードします。 次に、エンドポイント保護機能を構成し、Microsoft Defender ウイルス対策をアクティブ モードに設定し、すべてが正しく動作していることを確認します。 最後に、Microsoft 以外のソリューションを削除します。
+Defender for Endpoint に切り替えると、Microsoft 以外のウイルス対策/マルウェア対策保護がアクティブ モードで開始されます。 次に、パッシブ モードで Microsoft Defender ウイルス対策を構成し、デバイスを Defender for Endpoint にオンボードします。 次に、エンドポイント保護機能を構成し、Microsoft Defender ウイルス対策をアクティブ モードに設定し、すべてが正しく動作していることを確認します。 最後に、Microsoft 以外のソリューションを削除します。
 
 ## <a name="the-migration-process"></a>移行プロセス
 
@@ -58,15 +61,15 @@ Defender for Endpoint に移行するプロセスは、次の表に示すよう�
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointには何が含まれていますか?
 
-この移行ガイドでは、Defender for Endpoint に移行するための出発点として[、次世代の保護](microsoft-defender-antivirus-in-windows-10.md)と[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)機能に重点を置いています。 ただし、Defender for Endpoint には、ウイルス対策とエンドポイント保護以上のものが含まれています。 Defender for Endpoint は、予防保護、違反後の検出、自動調査、および対応のための統合プラットフォームです。 次の表は、Defender for Endpoint の機能と機能をまとめたものです。
+この移行ガイドでは、Defender for Endpoint に移行するための開始点として、[次世代の保護](microsoft-defender-antivirus-in-windows-10.md)[とエンドポイントの検出と応答](overview-endpoint-detection-response.md)機能に重点を置いています。 ただし、Defender for Endpoint には、ウイルス対策とエンドポイント保護以上のものが含まれています。 Defender for Endpoint は、予防保護、違反後の検出、自動調査、および対応のための統合プラットフォームです。 次の表は、Defender for Endpoint の機能と機能をまとめたものです。
 
 <br/><br/>
 
 |機能/機能|説明|
 |---|---|
-|[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)|脅威& 脆弱性の管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。|
+|[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)|脅威&脆弱性管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。|
 |[攻撃面の減少](overview-attack-surface-reduction.md)|攻撃表面の縮小ルールは、組織のデバイスとアプリケーションをサイバー脅威や攻撃から保護するのに役立ちます。|
-|[次世代の保護](microsoft-defender-antivirus-in-windows-10.md)|次世代の保護には、脅威やマルウェアをブロックするのに役立つMicrosoft Defender ウイルス対策が含まれています。|
+|[次世代の保護](microsoft-defender-antivirus-in-windows-10.md)|次世代の保護には、脅威やマルウェアをブロックするのに役立つ Microsoft Defender ウイルス対策が含まれています。|
 |[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)|エンドポイントの検出機能と応答機能は、侵入の試行とアクティブな侵害を検出、調査、および対応します。|
 |[高度な追求](advanced-hunting-overview.md)|高度なハンティング機能により、セキュリティ運用チームは既知または潜在的な脅威のインジケーターとエンティティを見つけることができます。|
 |[動作ブロックと封じ込め](behavioral-blocking-containment.md)|動作ブロック機能とコンテインメント機能は、脅威が実行を開始した場合でも、その動作とプロセス ツリーに基づいて、脅威を特定して停止するのに役立ちます。|

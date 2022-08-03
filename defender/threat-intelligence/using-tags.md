@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 7dbf52dd3d1f08d9c5321874a54db48b7ef2e835
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: d9e77b52e7f36bb0458a0638c0b0d2ee24e8bbff
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108532"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175512"
 ---
 # <a name="using-tags"></a>タグの使用
 Microsoft Defender 脅威インテリジェンス (Defender TI) タグは、システムによって派生した場合でも、他のユーザーによって生成された場合でも、成果物に関する迅速な分析情報を提供するために使用されます。 タグは、分析を改善するために、アナリストが現在のインシデントと調査とその履歴コンテキストの間のドットを接続する際に役立ちます。
@@ -98,7 +98,7 @@ Defender TI 内のカスタム タグを使用して、侵害のインジケー�
 
 詳細については、以下を参照してください。
 
-- [Microsoft Defender 脅威インテリジェンス (Defender TI)とは何ですか?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [Microsoft Defender 脅威インテリジェンス (Defender TI) とは?](index.md)
 - [データ セット](data-sets.md)
 - [データの並べ替え、フィルター処理、ダウンロード](sorting-filtering-and-downloading-data.md)
 - [評判スコアリング](reputation-scoring.md)

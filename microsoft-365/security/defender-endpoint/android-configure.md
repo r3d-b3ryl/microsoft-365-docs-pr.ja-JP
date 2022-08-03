@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 231bd79e0c825b38d44ca45c078cbe4d7aa432c0
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 596ed2681df34ef288fadd4f28f96b1a8aebee73
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100143"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175556"
 ---
 # <a name="configure-defender-for-endpoint-on-android-features"></a>Android 機能用 Defender for Endpoint を構成する
 
@@ -91,9 +91,6 @@ Microsoft Defender for endpoint のネットワーク保護は、既定で有効
 
 ## <a name="privacy-controls"></a>プライバシー コントロール
 
-> [!IMPORTANT]
-> Android のMicrosoft Defender for Endpointのプライバシー コントロールはプレビュー段階です。 次の情報は、市販される前に大幅に変更される可能性のあるプレリリース済み製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
-
 Android デバイスから Defender for Endpoint によって送信されるデータを構成するには、次のプライバシー制御を使用できます。
 
 |脅威レポート     |詳細      |
@@ -102,6 +99,42 @@ Android デバイスから Defender for Endpoint によって送信されるデ�
 |フィッシング レポート |管理者はフィッシング レポートのプライバシー制御を設定できます。プライバシーが有効になっている場合、Defender for Endpoint はフィッシング アラート レポートの一部として安全でない Web サイトのドメイン名と詳細を送信しません |
 |アプリの脆弱性評価 (Android のみ) |既定では、仕事用プロファイルにインストールされているアプリに関する情報のみが、脆弱性評価のために送信されます。 管理者はプライバシーを無効にして個人用アプリを含めることができます|
 |Network Protection (プレビュー)| 管理者は、ネットワーク保護でプライバシーを有効または無効にすることができます。有効にすると、Defender はネットワークの詳細を送信しません。|
+
+### <a name="configure-privacy-alert-report"></a>プライバシー アラート レポートを構成する
+管理者は、android でMicrosoft Defender for Endpointによって送信されたフィッシング レポート、マルウェア レポート、ネットワーク レポートのプライバシー制御を有効にできるようになりました。 これにより、対応する脅威が検出されるたびに、ドメイン名、アプリの詳細、ネットワークの詳細がそれぞれアラートの一部として送信されなくなります。
+
+管理 プライバシー 制御 (MDM) プライバシーを有効にするには、次の手順に従います。
+
+1. Microsoft エンドポイント マネージャー 管理センターで、[**アプリ> アプリ構成ポリシー] > [管理対象デバイスの追加] >移動します**。
+
+2. ポリシーに名前を付けます **。Platform > Android enterprise、プロファイルの種類を選択します**。
+
+3. ターゲット アプリとして **Microsoft Defender for Endpoint** を選択します。
+
+4. [設定] ページで、[**構成デザイナーの使用**] を選択し、[追加] をクリック **します。** 
+5. 必要なプライバシー設定を選択する -
+    - レポートの URL を非表示にする
+    - 個人用プロファイルのレポートの URL を非表示にする
+    - レポートでアプリの詳細を非表示にする
+    - 個人用プロファイルのレポートでアプリの詳細を非表示にする
+    - Network Protection のプライバシーを有効にする
+
+6. プライバシーを有効にするには、整数値を 1 として入力し、このポリシーをユーザーに割り当てます。 既定では、この値は、仕事用プロファイルの MDE では 0、個人用プロファイルでは MDE の場合は 1 に設定されます。
+
+7. このプロファイルを確認し、対象のデバイス/ユーザーに割り当てます。
+
+**エンド ユーザーのプライバシー制御**
+
+これらのコントロールは、エンド ユーザーが組織と共有する情報を構成するのに役立ちます。
+
+1. **Android Enterprise の仕事用プロファイル** の場合、エンド ユーザー コントロールは表示されません。 管理者はこれらの設定を制御します。
+2. **Android Enterprise 個人用プロファイル** の場合、[**設定]> [プライバシー]** の下にコントロールが表示されます。
+3. ユーザーには、安全でないサイト情報、悪意のあるアプリケーション、およびネットワーク保護の切り替えが表示されます。
+
+これらのトグルは、管理者が有効にした場合にのみ表示されます。ユーザーは、組織に情報を送信するかどうかを決定できます。
+
+上記のプライバシー制御を有効または無効にしても、デバイスコンプライアンスチェックや条件付きアクセスには影響しません。
+
 
 ## <a name="configure-vulnerability-assessment-of-apps-for-byod-devices"></a>BYOD デバイス用アプリの脆弱性評価を構成する
 

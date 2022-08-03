@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ce004100-9e7f-443e-942b-9b04098fcfc3
 description: この記事では、Office 365監査ログ レコードの結果をエクスポートするときに含まれる追加のプロパティについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66928de026e95fbbb02f1a3e7d0efd3da0766afd
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: af20836a6800dedfc1bd04d9b049c28038108875
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623277"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175358"
 ---
 # <a name="detailed-properties-in-the-audit-log"></a>監査ログの詳細なプロパティ
 
@@ -85,9 +85,8 @@ Microsoft Purview コンプライアンス ポータルから監査ログ検索�
 |TeamName|Microsoft Teams のチームの名前。|Microsoft Teams|
 |UserAgent|ユーザーのブラウザーに関する情報。この情報は、ブラウザーによって提供されます。|SharePoint|
 |UserDomain|アクションを実行したユーザー (アクター) のテナント組織に関する情報を示します。|Azure Active Directory|
-|UserId|結果としてログ記録されているレコードが生成されたアクション (**Operation** プロパティで指定された) を実行したユーザー。 システム アカウント (SHAREPOINT\system または NT AUTHORITY\SYSTEM など) によって実行されたアクティビティの監査レコードも監査ログに含まれます。 UserId プロパティのもう 1 つの一般的な値は app@sharepoint です。 これは、アクティビティを実行した "ユーザー" が、ユーザー、管理者、またはサービスの代理として、組織全体のアクション (SharePoint サイトまたは OneDrive アカウント検索など) を実行するために必要な アクセス許可が SharePoint に与えられているアプリケーションであることを示しています。 <br/><br/>詳細については、以下を参照してください。<br/> [監査レコード内のアプリ\@sharepoint ユーザー](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> または <br/>[Exchange メールボックス監査レコードのシステム アカウント](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records)。 |すべて|
+|UserId|結果としてログ記録されているレコードが生成されたアクション (**Operation** プロパティで指定された) を実行したユーザー。 システム アカウント (SHAREPOINT\system または NT AUTHORITY\SYSTEM など) によって実行されたアクティビティの監査レコードも監査ログに含まれます。 UserId プロパティのもう 1 つの一般的な値は app@sharepoint です。 これは、アクティビティを実行した "ユーザー" が、ユーザー、管理者、またはサービスの代理として、組織全体のアクション (SharePoint サイトまたは OneDrive アカウント検索など) を実行するために必要な アクセス許可が SharePoint に与えられているアプリケーションであることを示しています。 <br/><br/>詳細については、以下を参照してください。<br/> [監査レコード内のアプリ\@sharepoint ユーザー](search-the-audit-log-in-security-and-compliance.md#the-appsharepoint-user-in-audit-records)<br/> or <br/>[Exchange メールボックス監査レコードのシステム アカウント](search-the-audit-log-in-security-and-compliance.md#system-accounts-in-exchange-mailbox-audit-records)。 |すべて|
 |UserKey|**UserID** プロパティで識別されたユーザーの別の ID。このプロパティには、たとえば SharePoint でユーザーによって発生したイベントの Passport 固有 ID (PUID) が格納されます。このプロパティは、他のサービスで発生したイベントや、システム アカウントによって発生したイベントの **UserID** プロパティと同じ値を示す場合もあります。|すべて|
-|UserSharedWith|リソースが共有されたユーザー。**Operation** プロパティの値が **SharingSet** の場合は、このプロパティが含まれます。このユーザーは、レポートの **[共有ユーザー]** 列にも表示されます。|SharePoint|
 |UserType|操作を実行したユーザーの種類。次の値によって、ユーザーの種類が示されます。<br/> <br/> **0** - 標準のユーザー。 <br/>**2** - Microsoft 365 組織内の管理者。<sup>1</sup> <br/>**3** - Microsoft データセンター管理者またはデータセンターのシステム アカウント。 <br/>**4** - システム アカウント。 <br/>**5** - アプリケーション。 <br/>**6** - サービス プリンシパル。<br/>**7** - カスタム ポリシー。<br/>**8** - システム ポリシー。|すべて|
 |Version|ログに記録された (**Operation** プロパティで識別された) アクティビティのバージョン番号を示します。|すべて|
 |Workload|アクティビティが発生した Microsoft 365 サービス。|すべて|

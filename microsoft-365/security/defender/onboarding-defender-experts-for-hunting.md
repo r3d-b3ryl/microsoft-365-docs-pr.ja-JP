@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aab1c0661ce039e6a9fb561c2e93f71e2c5847d6
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: bad5e4bbc21eb968a5d856653366eb3967759595
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109430"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175534"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>ハンティングに Microsoft Defender エキスパートの使用を開始する
 
@@ -40,7 +40,7 @@ Microsoft 365 Defenderおよび Defender Experts for Hunting を初めて使用�
 1. ウェルカム メールを受け取ったら、[**Microsoft 365 Defenderにログイン**] を選択します。
 2. Microsoft アカウントを既に持っている場合はサインインします。 存在しない場合は、作成します。
 3. Microsoft 365 Defenderクイック ツアーでは、セキュリティ スイートの機能とその重要性について理解します。 [ **クイック ツアーを行う**] を選択します。  
-4. Microsoft Defender エキスパート サービスの概要と、Microsoft Defender エキスパート サービスが提供する機能に関する簡単な説明を参照してください。 次へ] を選択します。 ウェルカム ページが表示されます。
+4. Microsoft Defender エキスパート サービスの概要と、Microsoft Defender エキスパート サービスが提供する機能に関する簡単な説明を参照してください。 **[次へ]** を選択します。 ウェルカム ページが表示されます。
 
 ![Defender Experts for Hunting サービス用のカードを含むMicrosoft 365 Defenderウェルカム ページのスクリーンショット。](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
 
@@ -110,7 +110,7 @@ Microsoft 365 セキュリティ ポータル内で **Defender エキスパー�
 ### <a name="alert-information"></a>アラート情報
 
 - 新しい種類のアラートが、ライブオフのバイナリに対して見えました。 アラート ID を指定できます。 このアラートの詳細と、インシデントに関連するかどうか、さらに調査する方法を教えてください。
-- 2 つの同様の攻撃が観察されました。どちらも悪意のある PowerShell スクリプトを実行しようとしましたが、異なるアラートを生成します。 1 つは "疑わしい PowerShell コマンド ライン" で、もう 1 つは "O365 によって提供された指示に基づいて悪意のあるファイルが検出されました" です。 違いは何ですか?
+- 2 つの同様の攻撃が観察されました。どちらも悪意のある PowerShell スクリプトを実行しようとしましたが、異なるアラートを生成します。 1 つは "疑わしい PowerShell コマンド ライン" で、もう 1 つは "Office 365 によって提供された指示に基づいて悪意のあるファイルが検出されました" です。 違いは何ですか?
 - 今日、高プロファイル ユーザーのデバイスから、失敗したログインの異常な数に関する奇数のアラートを受け取った。 これらの試みについてそれ以上の証拠を見つけることができません。 これらの試みをMicrosoft 365 Defenderはどのように確認できますか? 監視対象のログインの種類は何ですか?
 - アラートに関するより多くのコンテキストや分析情報、および関連するインシデント ("システム ユーティリティによる疑わしい動作が観察されました") を提供できますか?
 - "転送/リダイレクト ルールの作成" というタイトルのアラートを観察しました。 アクティビティは問題ないと思います。 アラートを受け取った理由を教えてください。
@@ -128,7 +128,7 @@ Microsoft 365 セキュリティ ポータル内で **Defender エキスパー�
 
 ### <a name="microsoft-defender-experts-for-hunting-alert-communications"></a>ハンティングの Microsoft Defender エキスパートのアラート通信
 
-- インシデント対応チームは、ターゲットを絞った攻撃通知に対処するのに役立ちますか?
+- インシデント対応チームは、私たちが受け取った Defender エキスパート通知に対処するのに役立ちますか?
 - Microsoft Defender Experts for Hunting からこの Defender エキスパート通知を受け取っています。 独自のインシデント対応チームはありません。 この時点でできることと、インシデントをどのように含めることができるか。
 - Microsoft Defender Experts for Hunting から Defender エキスパート通知を受け取った。 インシデント対応チームに渡すことができるデータは何ですか?
 

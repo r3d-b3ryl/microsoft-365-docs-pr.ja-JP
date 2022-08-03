@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: conceptual
 ms.date: 08/02/2022
 ms.custom: template-concept
-ms.openlocfilehash: 5b094971d4004cb1c58dcf058af68c1182670f92
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13433c34e6aafe8d08d377876ba53e05324da258
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108898"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67174655"
 ---
 # <a name="infrastructure-chaining"></a>インフラストラクチャ チェーン
 
@@ -33,7 +33,7 @@ ms.locfileid: "67108898"
 
 敵対者の外部の観点から見ると、ファイアウォールの外部で動作する継続的に拡大する Web とモバイルのプレゼンスを利用できます。
 
-実際のユーザーとして Web およびモバイルのプロパティにアプローチして対話することで、Microsoft のクロール、スキャン、機械学習テクノロジは、ユーザー セッション データを収集し、フィッシング、マルウェア、不正なアプリ、不要なコンテンツ、ドメイン侵害を大規模に検出することで、敵対者の回避手法を解除できます。 これにより、敵対者のインフラストラクチャに関連付けられた [脅威インテリジェンス](what-is-microsoft-defender-threat-intelligence-defender-tI.md)、 [システム タグ](using-tags.md)、 [アナリスト分析情報](analyst-insights.md)、 [および評判スコア](reputation-scoring.md) の形式で、実用的なイベントベースの脅威アラートとワークフローを提供できます。
+実際のユーザーとして Web およびモバイルのプロパティにアプローチして対話することで、Microsoft のクロール、スキャン、機械学習テクノロジは、ユーザー セッション データを収集し、フィッシング、マルウェア、不正なアプリ、不要なコンテンツ、ドメイン侵害を大規模に検出することで、敵対者の回避手法を解除できます。 これにより、敵対者のインフラストラクチャに関連付けられた [脅威インテリジェンス](index.md)、 [システム タグ](using-tags.md)、 [アナリスト分析情報](analyst-insights.md)、 [および評判スコア](reputation-scoring.md) の形式で、実用的なイベントベースの脅威アラートとワークフローを提供できます。
 
 より多くの脅威データが利用できるようになると、アナリストがデータセットとそれに対応する脅威を理解するために、より多くのツール、教育、労力が必要になります。 Microsoft Defender 脅威インテリジェンス (Defender TI) は、複数のデータ ソースに 1 つのビューを提供することで、これらの取り組みを統合します。
 

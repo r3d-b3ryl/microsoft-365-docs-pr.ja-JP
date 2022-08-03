@@ -16,12 +16,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 57f0687fce422f26b76fc8b98a06ce0566f90f60
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e35510960818472ccf82ffab0c3cb3016f49907a
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64476073"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175160"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Ansible を使用して Linux にMicrosoft Defender for Endpointをデプロイする
 
@@ -71,7 +71,7 @@ ms.locfileid: "64476073"
 
 Microsoft 365 Defender ポータルからオンボーディング パッケージをダウンロードします。
 
-1. Microsoft 365 Defender ポータルで、**設定 > エンドポイント>デバイス管理>オンボードに** 移動します。
+1. Microsoft 365 Defender ポータルで、[**設定] > [エンドポイント] > [デバイス管理] > [オンボード] に** 移動します。
 2. 最初のドロップダウン メニューで、オペレーティング システムとして **[Linux サーバー]** を選択します。 2 番目のドロップダウン メニューで、展開方法として [ **お好みの Linux 構成管理ツール** ] を選択します。
 3. **[オンボーディング パッケージをダウンロードする]** を選択します。 ファイルを WindowsDefenderATPOnboardingPackage.zip として保存します。
 
@@ -141,7 +141,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
     次のコマンドで *、[distro]* と *[version] を* 特定した情報に置き換えます。
 
     > [!NOTE]
-    > Oracle Linux と Amazon Linux 2 の場合は、[ *distro] を* "rhel" に置き換えます。
+    > Oracle Linux と Amazon Linux 2 の場合は、[ *distro] を* "rhel" に置き換えます。 Amazon Linux 2 の場合は、[ *version] を* "7" に置き換えます。 Oracle が利用する場合は、[ *version] を* Oracle Linux のバージョンに置き換えます。
 
   ```bash
   - name: Add Microsoft APT key
@@ -239,7 +239,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
 
 次に、関連するディレクトリの下または関連するディレクトリで `/etc/ansible/playbooks/` タスク ファイルを実行します。
 
-- インストール：
+- 取り付け：
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
@@ -257,7 +257,7 @@ Microsoft 365 Defender ポータルからオンボーディング パッケー�
     ansible -m shell -a 'mdatp health' all
     ```
 
-- アンインストール：
+- アンインストール:
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts

@@ -7,12 +7,12 @@ ms.service: threat-intelligence
 ms.topic: how-to
 ms.date: 08/02/2022
 ms.custom: template-how-to
-ms.openlocfilehash: 544725fcc359429fdd4d71059dd49719f7c3c601
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 3a7b5a5cba7d289faccef5e1e1c5eb7684357f25
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67108612"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175578"
 ---
 # <a name="searching-and-pivoting"></a>検索とピボット
 
@@ -196,7 +196,7 @@ Analyst Insights セクションでは、調査の次の手順を決定するの
 
 [アーティクル] セクションには、影響を受けるアーティファクトを最適に調査し、最終的に武装解除する方法に関する分析情報を提供する可能性がある記事が表示されます。 これらの記事は、既知の脅威アクターとそのインフラストラクチャの動作を調査し、他のユーザーが組織に対するリスクを軽減するのに役立つ重要な結果を示す研究者によって書かれています。 この例では、検索された IP アドレスは、記事内の結果に関連する IOC として識別されています。
 
-詳細については、「[Microsoft Defender 脅威インテリジェンスとは (Defender TI)」](what-is-microsoft-defender-threat-intelligence-defender-tI.md)を参照してください。
+詳細については、「[Microsoft Defender 脅威インテリジェンスとは (Defender TI)」](index.md)を参照してください。
 
 ![[概要] タブの記事](media/summaryTabArticles.png)
 
@@ -496,7 +496,7 @@ DNS データには、次のものが含まれます。
 
 [アーティクル] セクションには、影響を受けるアーティファクトを最適に調査し、最終的に武装解除する方法に関する分析情報を提供する可能性がある記事が表示されます。 これらの記事は、既知の脅威アクターとそのインフラストラクチャの動作を調査し、他のユーザーが組織に対するリスクを軽減するのに役立つ重要な結果を示す研究者によって書かれています。 この例では、検索された IP アドレスは、記事内の結果に関連する IOC として識別されています。
 
-詳細については、「[Microsoft Defender 脅威インテリジェンスとは (Defender TI)」](what-is-microsoft-defender-threat-intelligence-defender-tI.md)を参照してください。
+詳細については、「[Microsoft Defender 脅威インテリジェンスとは (Defender TI)」](index.md)を参照してください。
 
 ![データ タブ インテリジェンスに関する記事](media/dataTabIntelligenceArticles.png)
 
@@ -522,5 +522,5 @@ Defender TI プラットフォームを使用すると、ユーザーは、関�
 - [データ セット](data-sets.md)
 - [評判スコアリング](reputation-scoring.md)
 - [アナリストの分析情報](analyst-insights.md)
-- [Microsoft Defender 脅威インテリジェンス (Defender TI)とは何ですか?](what-is-microsoft-defender-threat-intelligence-defender-tI.md)
+- [Microsoft Defender 脅威インテリジェンス (Defender TI) とは?](index.md)
 - [プロジェクトの使用](using-projects.md)
