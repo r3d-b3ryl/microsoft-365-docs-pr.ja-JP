@@ -12,12 +12,12 @@ ms.custom: seo-marvel-jun2020
 ms.localizationpriority: high
 description: 金融サービス機関が、Microsoft 365 と Teams を使用して、財務的なセキュリテとコンプライアンスを維持し、効果的に共同作業を行う方法について説明します。
 f1.keywords: NOCSH
-ms.openlocfilehash: ed00d120d00253c1abbb6d0c0109fdce0b7ff863
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 8a9b22edb79de41ec9efe291db0192de888a3644
+ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64948267"
+ms.lasthandoff: 08/02/2022
+ms.locfileid: "67175028"
 ---
 # <a name="key-compliance-and-security-considerations-for-us-banking-and-capital-markets"></a>米国の銀行業および資本市場のための、コンプライアンスとセキュリティの重要な検討事項
 
@@ -258,7 +258,7 @@ Microsoft 365 が提供するセキュリティ サービスは、インテリ�
 
 さらにこれらの機能により、Microsoft 365 は **米商品先物取引委員会** の [CFTC Rule 1.31(c)-(d)](https://www.cftc.gov/sites/default/files/opa/press99/opa4266-99-attch.htm) と、**金融取引業規制機構** の [FINRA Rule Series 4510](https://www.finra.org/rules-guidance/rulebooks/finra-rules/4511) で定められているストレージ要件を満たすことができます。これらの規則は集合として、金融機関による記録の保持に関する世界的な規範的ガイダンスとなっています。
 
-Microsoft 365 による SEC Rule 17a-4 や他の規制の遵守に関する追加の詳細については、[Cohasset Associates による Office 365 Exchange Online SEC 17a-4(f) / CTFC 1.31(c)-(d) の評価](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)に関する資料をご覧ください。
+Microsoft 365 による SEC Rule 17a-4 や他の規制の遵守に関する追加の詳細については、「[Office 365 - Cohasset 評価 - SEC Rule 17a-4(f) - SharePoint、OneDrive、Exchange、Teams、および Yammer の不変ストレージ (2022 年)](https://servicetrust.microsoft.com/ViewPage/TrustDocuments?command=Download&downloadType=Document&downloadId=9fa8349d-a0c9-47d9-93ad-472aa0fa44ec&docTab=6d000410-c9e9-11e7-9a91-892aae8839ad_FAQ_and_White_Papers)」ダウンロード ドキュメントをご覧ください。
 
 ## <a name="establish-ethical-walls-with-information-barriers"></a>情報バリアにより、倫理的境界を確立する
 
