@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -18,23 +18,23 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: 小規模から中規模の企業やキャンペーンのセットアップの概要。 サイバーセキュリティを設定し、サイバー攻撃を防ぐ方法。
-ms.openlocfilehash: 1e715c47c5c440dbbd5cf6d6445695f3352fedb9
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+description: Microsoft 365 Business Premium または Microsoft 365 for Campaigns のセットアップ プロセスを開始します。
+ms.openlocfilehash: 5cca984e691cd52782eb74464b9d89f71628e071
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892707"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276671"
 ---
-# <a name="fortify-your-organization-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium を使用して組織を強化する
+# <a name="fortify-your-environment-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium を使用して環境を強化する
 
 Microsoft 365 Business Premium を入手したので、最初の重要なミッションは、初期セットアップ プロセスをすぐに完了することです。 始めましょう。
+
+:::image type="content" source="media/mission1.png" alt-text="サインインしてセットアップします。":::
 
 目的は次のとおりです。
 
 - [Microsoft 365 Business Premium を設定します](m365bp-setup.md)。または
 - これがサブスクリプションの場合は、[Microsoft 365 Business for Campaigns を設定します](m365-campaigns-setup.md)。
 
-この目的を達成したら、「[セキュリティ保護を強化する](m365bp-security-overview.md)」に進みます。
-
-:::image type="content" source="media/m365bp-signin-setup.jpg" alt-text="Business Premium のセットアップ":::
+この目標を達成したら、[セキュリティ保護の強化](m365bp-security-overview.md) に進みます。

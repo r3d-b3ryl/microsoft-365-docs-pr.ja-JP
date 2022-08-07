@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: キャンペーンや他の企業用の Microsoft 365 Business のセットアップの概要
-ms.openlocfilehash: b22519c023b53a284611e7efe38f078bee70799f
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 90de3294ffb7bfe1ebc2890375433ba432cdca4c
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893037"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276834"
 ---
 # <a name="setup-for-microsoft-365-business-for-campaigns"></a>キャンペーン用の Microsoft 365 Business をセットアップする
 
-[Microsoft 365 for Campaigns にサブスクライブしました](get-microsoft-365-campaigns.md)。次の手順は、すべてを設定することです。
+[Microsoft 365 for Campaigns にサブスクライブした](get-microsoft-365-campaigns.md)後、次の手順はすべてを設定することです。
 
 ## <a name="before-you-begin"></a>開始する前に
 
@@ -40,7 +40,8 @@ ms.locfileid: "66893037"
 | サブスクリプション | Microsoft 365 Business Premium または Microsoft 365 for Campaigns <br/><br/> 試用版を開始する、またはサブスクリプションを購入するには、次の記事を参照してください。 <br/>- [Microsoft 365 Business Premium を入手する](get-microsoft-365-business-premium.md)<br/>- [Microsoft 365 for Campaigns を入手する](get-microsoft-365-campaigns.md) |
 | アクセス許可  | 初期セットアップの手順を完了するには、グローバル管理者である必要があります。[管理者ロールの詳細を参照してください](../admin/add-users/about-admin-roles.md)。 |
 | ブラウザー要件 | Microsoft Edge、Safari、Chrome または Firefox。 [ブラウザー要件の詳細を参照してください](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy)。  |
-| オペレーティング システム | **Windows**: Windows 11、Windows 10、Windows 8.1、Windows Server 2019 以降、または Windows Server 2016<br/><br/>**Mac**: MacOS の 3 つの最新バージョンのいずれか。 |
+| オペレーティング システム (クライアント) | **Windows**:  Windows 11、Windows 10、Windows 8.1<br/>**MacOS**: 最新の 3 つのバージョンのいずれか。 
+| オペレーティング システム (サーバー) | Windows Server または Linux Server <br/>- Microsoft Defender for Business サーバーが必要です (現在プレビュー段階)<br/>- 「[Microsoft Defender for Business サーバーの取得方法 (プレビュー)](../security/defender-business/get-defender-business-servers.md)」を参照してください。  |
 
 > [!TIP]
 > Microsoft 365、Office、システム要件の詳細については、「[Microsoft 365 および Office のリソース](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)」を参照してください。
@@ -99,4 +100,4 @@ Microsoft 365 for Campaigns (または Microsoft 365 Business Premium) サブス
 
 ## <a name="next-objective"></a>次の目標
 
-これらの目標を達成したら、[セキュリティの強化](m365bp-security-overview.md) に進みます。
+[セキュリティの強化](m365bp-security-overview.md)に進みます。

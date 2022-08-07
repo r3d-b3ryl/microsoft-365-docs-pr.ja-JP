@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/05/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,18 +19,20 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理対象デバイスを設定してセキュリティの脅威やサイバー攻撃から保護する方法の概要。 すべてのデバイスを登録してオンボーディングすることにより、サイバーセキュリティの防御とエンドポイント保護を実装します。 デバイス ポリシーを設定し、デバイス グループを管理する方法をご覧ください。
-ms.openlocfilehash: 599ded6105f050cc1bd37c8214277f7a0f5ee091
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 6b359d2029f79c84377f339d13326b3a8266cf1b
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894407"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276715"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>管理対象デバイスの設定と保護
 
-最後の重要なミッションへようこそ。 ここでは、組織内のすべての管理対象デバイスの保護をオンボードして実装します。 デバイスを Defender for Business にオンボードして、ウイルス対策とマルウェア対策の保護を常に最新の状態に保ち、システムのロックダウンに役立つポリシーを設定します。 また、Windows デバイスが保護され、Office 展開の準備ができていることを確認できます。 完了したら、これらの目的を達成したときに、組織を保護するためにできることを行ったことを理解し、安心できます。
+:::image type="content" source="media/mission6.png" alt-text="Defender for Business を使用して管理対象デバイスをセキュリティで保護します。":::
 
-ミッションの目的:
+最後の重要なミッションへようこそ。 ここでは、組織内のすべての管理対象デバイスの保護をオンボードして実装します。 [デバイスを Defender for Business にオンボード](../security/defender-business/mdb-onboard-devices.md) して、デバイスがランサムウェア、マルウェア、フィッシング、その他の脅威から確実に保護されるようにします。 また、Windows デバイスが保護され、Office 展開の準備ができていることを確認できます。 完了したら、これらの目的を達成したときに、組織を保護するためにできることを行ったことを理解し、安心できます。
+
+目的は次のとおりです。
 
 - [管理されたデバイスをセットアップする](m365bp-managed-devices-setup.md)
 - [登録済みデバイスをオンボードし、ポリシーを適用する](m365bp-onboard-devices-mdb.md)
@@ -39,12 +41,8 @@ ms.locfileid: "66894407"
 
 これらの目的が達成されるたら、サイバー攻撃やその他のサイバーセキュリティの脅威から組織を保護するという全体的なミッションは成功です。 ここで、システムの整合性を守りながら発生する可能性のある状況に対処するために、対応チームを設定してください。 次の手順を参照してください。
 
-:::image type="content" source="media/m365bp-secure-managed-devices.jpg" alt-text="管理対象デバイスをセキュリティで保護します。":::
-
 ## <a name="next-steps"></a>次の手順
 
-1. [セキュリティ操作手順を設定します](m365bp-security-incident-quick-start.md)。
-
-2. [セキュリティ インシデント管理について説明します](m365bp-security-incident-management.md)。
-
-3. [環境を維持する方法について説明します](m365bp-maintain-environment.md)。
+- [セキュリティ操作手順を設定します](m365bp-security-incident-quick-start.md)。
+- [セキュリティ インシデント管理について説明します](m365bp-security-incident-management.md)。
+- [環境を維持する方法について説明します](m365bp-maintain-environment.md)。
