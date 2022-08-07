@@ -18,12 +18,12 @@ ms.custom: ''
 description: 管理者は、カスタム メールボックス (ユーザー送信メールボックスとも呼ばれます) を識別して、ユーザーによって報告されるスパムおよびフィッシング メッセージを収集する方法について説明します。 その他の設定では、ユーザーがメッセージを報告するときに、レポート エクスペリエンスが完了します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: faba09ceb32232154211a28b283ece79228f0be8
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: e09b5f7d6f34ac1daa98430f1bc868b4ca644777
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175490"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276308"
 ---
 # <a name="user-reported-message-settings"></a>ユーザーから報告されたメッセージの設定
 
@@ -49,7 +49,7 @@ Exchange Onlineメールボックスを持つ Microsoft 365 組織では、悪�
 
 ## <a name="configuration-requirements-for-the-user-submissions-mailbox"></a>ユーザー申請メールボックスの構成要件
 
-開始する前に、次の手順で説明するように、ユーザーから報告されたメッセージがフィルター処理されずにユーザー送信メールボックスに配信されるように、Exchange Online ProtectionとDefender for Office 365を構成する必要があります。
+開始する前に、次の手順で説明するように、ユーザーが報告したメッセージがフィルター処理されずにユーザー送信メールボックスに配信されるように、Exchange Online ProtectionとDefender for Office 365を構成する必要があります。
 
 - ユーザー提出メールボックスを SecOps メールボックスとして識別します。 手順については、「[Microsoft 365 Defender ポータルを使用して、高度な配信ポリシーで SecOps メールボックスを構成](configure-advanced-delivery.md#use-the-microsoft-365-defender-portal-to-configure-secops-mailboxes-in-the-advanced-delivery-policy)する」を参照してください。
 
@@ -98,7 +98,7 @@ Exchange Onlineメールボックスを持つ Microsoft 365 組織では、悪�
 
 2. [ **ユーザー申請]** ページで表示される内容は、 **Microsoft Outlook の [レポート メッセージ] ボタン** の切り替えによって大きく決まります。
 
-   - **オン** ![トグル オン.](../../media/scc-toggle-on.png): Microsoft 統合レポート エクスペリエンスを使用します。これには、レポート メッセージ アドイン、レポート フィッシング アドイン、またはOutlook on the webの組み込みレポートが含まれます。
+   - **に** ![トグル オン.](../../media/scc-toggle-on.png): Microsoft 統合レポート エクスペリエンスを使用します。これには、レポート メッセージ アドイン、レポート フィッシング アドイン、またはOutlook on the webの組み込みレポートが含まれます。
 
      この設定を使用すると、ユーザーは検疫ポータルから誤検知メッセージを報告することもできます。
 
@@ -112,7 +112,7 @@ Exchange Onlineメールボックスを持つ Microsoft 365 組織では、悪�
 
 - **[報告されたメッセージを送信する** ] セクション: 次のいずれかのオプションを選択します。
 
-  - **Microsoft**: ユーザー レポートは、分析のために Microsoft に直接移動します。 Microsoft 365 セキュリティ センターを介してテナント管理者に提供されるのは、送信者、受信者、報告者、ユーザー レポートからのメッセージの詳細などのメタデータのみです。
+  - **Microsoft**: ユーザー レポートは、分析のために Microsoft に直接移動します。 Microsoft 365 Defender ポータルを使用して、送信者、受信者、報告元、ユーザー レポートからのメッセージの詳細などのメタデータのみがテナント管理者に提供されます。
 
   - **Microsoft と組織のメールボックス**: 表示されるボックスに、ユーザー送信メールボックスとして使用する既存のExchange Online メールボックスの電子メール アドレスを入力します。 配布グループは許可されません。 ユーザー申請は分析のために Microsoft に送信され、管理者またはセキュリティ運用チームが分析するユーザー提出メールボックスに送信されます。
 

@@ -6,50 +6,59 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: dansimp
-author: dansimp
 ms.localizationpriority: medium
-manager: dansimp
 audience: ITPro
+author: jweston-1
+ms.author: v-jweston
+ms.date: 08/13/2022
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 558358cca679d9600f9a95c13c4fac6147764b75
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 90e116511f01f0e2a846ca32bcd21675c4b632fb
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66013356"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275804"
 ---
 # <a name="performance-analyzer-for-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のパフォーマンス アナライザー
 
 **適用対象**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - Microsoft Defender ウイルス対策
 
 **プラットフォーム**
+
 - Windows
 
-## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>パフォーマンス アナライザー Microsoft Defender ウイルス対策とは
+## <a name="what-is-microsoft-defender-antivirus-performance-analyzer"></a>Microsoft Defender ウイルス対策パフォーマンス アナライザーとは
 
-場合によっては、特定のファイルやフォルダーをスキャンするときに、Microsoft Defender ウイルス対策のパフォーマンスを調整する必要がある場合があります。 パフォーマンス アナライザーは、個々のエンドポイントでパフォーマンスの問題を引き起こしている可能性があるファイル、ファイル拡張子、およびプロセスを特定するのに役立つ PowerShell コマンド ライン ツールです。 この情報は、パフォーマンスの問題をより適切に評価し、修復アクションを適用するために使用できます。
+場合によっては、特定のファイルやフォルダーをスキャンするときに、Microsoft Defender ウイルス対策のパフォーマンスを調整することが必要になる場合があります。 パフォーマンス アナライザーは、個々のエンドポイントでパフォーマンスの問題を引き起こしている可能性があるファイル、ファイル拡張子、およびプロセスを特定するのに役立つ PowerShell コマンド ライン ツールです。 この情報は、パフォーマンスの問題をより適切に評価し、修復アクションを適用するために使用できます。
 
 分析するオプションには、次のものがあります。
 
+- スキャン時間に影響する上位パス
 - スキャン時間に影響を与える上位ファイル
 - スキャン時間に影響を与える上位プロセス
 - スキャン時間に影響を与える上位のファイル拡張子
-- 組み合わせ – たとえば、拡張子ごとの上位ファイル、ファイルごとの上位スキャン、プロセスごとのファイルごとの上位スキャンなど
-
+- 組み合わせ – たとえば、
+  - 拡張子あたりの上位ファイル数
+  - 拡張機能ごとの上位パス
+  - パスあたりの上位プロセス数
+  - ファイルあたりのトップ スキャン数
+  - プロセスごとのファイルあたりの上位スキャン数
+  
 ## <a name="running-performance-analyzer"></a>パフォーマンス アナライザーの実行
 
 パフォーマンス アナライザーを実行するための高度なプロセスには、次の手順が含まれます。
 
-1. パフォーマンス アナライザーを実行して、エンドポイント上のMicrosoft Defender ウイルス対策 イベントのパフォーマンス記録を収集します。
+1. パフォーマンス アナライザーを実行して、エンドポイント上の Microsoft Defender ウイルス対策イベントのパフォーマンス記録を収集します。
 
    > [!NOTE]
-   > **Microsoft-Antimalware-Engine** 型のMicrosoft Defender ウイルス対策 イベントのパフォーマンスは、パフォーマンス アナライザーを使用して記録されます。
+   > **Microsoft-Antimalware-Engine** 型の Microsoft Defender ウイルス対策イベントのパフォーマンスは、パフォーマンス アナライザーを介して記録されます。
 
 2. 異なる記録レポートを使用してスキャン結果を分析します。
 
@@ -61,7 +70,7 @@ ms.locfileid: "66013356"
 
    `New-MpPerformanceRecording -RecordTo <recording.etl>`
 
-    ここで `-RecordTo` 、パラメーターはトレース ファイルを保存する完全なパスの場所を指定します。 コマンドレットの詳細については、「[Microsoft Defender ウイルス対策コマンドレット](/powershell/module/defender)」を参照してください。
+    ここで `-RecordTo` 、パラメーターはトレース ファイルを保存する完全なパスの場所を指定します。 コマンドレットの詳細については、 [Microsoft Defender ウイルス対策コマンドレットに関するページを](/powershell/module/defender)参照してください。
 
 2. パフォーマンスに影響を与えると考えられるプロセスまたはサービスがある場合は、関連するタスクを実行して状況を再現します。
 
@@ -72,11 +81,11 @@ ms.locfileid: "66013356"
 コマンド ライン のパラメーターとオプションの詳細については、 [New-MpPerformanceRecording](#new-mpperformancerecording) と [Get-MpPerformanceReport](#get-mpperformancereport) を参照してください。
 
 > [!NOTE]
-> 記録を実行しているときに、"パフォーマンス レコーダーが既に記録されているため、パフォーマンス記録 Windowsを開始できません" というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドを使用して既存のトレースを停止します:**wpr -cancel -instancename MSFT_MpPerformanceRecording**
+> 記録を実行しているときに、「Windows パフォーマンス レコーダーが既に記録されているため、パフォーマンス記録を開始できません」というエラーが表示された場合は、次のコマンドを実行して、新しいコマンドで既存のトレースを停止します: **wpr -cancel -instancename MSFT_MpPerformanceRecording**
 
 ## <a name="performance-tuning-data-and-information"></a>パフォーマンスチューニングのデータと情報
 
-クエリに基づいて、ユーザーはスキャン数、期間 (合計/最小/平均/最大/中央値)、パス、プロセス、およびスキャンの理由のデータを表示できます。 次の図は、スキャンの影響を受けるための上位 10 ファイルの単純なクエリの出力例を示しています。
+クエリに基づいて、ユーザーはスキャン数、期間 (合計/最小/平均/最大/中央値)、パス、プロセス、および **スキャンの理由のデータを表示できます**。 次の図は、スキャンの影響を受けるための上位 10 ファイルの単純なクエリの出力例を示しています。
 
 :::image type="content" source="images/example-output.png" alt-text="基本的な TopFiles クエリの出力例" lightbox="images/example-output.png":::
 
@@ -84,6 +93,12 @@ ms.locfileid: "66013356"
 
 パフォーマンス アナライザーの結果をエクスポートして、CSV または JSON ファイルに変換することもできます。
 サンプル コードを使用して "エクスポート" と "変換" のプロセスを記述する例については、以下を参照してください。
+
+Defender バージョン 4.18.2206.X 以降では、ユーザーは "SkipReason" 列にスキャンスキップ理由情報を表示できます。 値は次のいずれかです。
+
+1. スキップされない
+1. 最適化 (通常はパフォーマンス上の理由により)
+1. ユーザーがスキップされました (通常は、ユーザー セットの除外が原因)
 
 ### <a name="for-csv"></a>CSV の場合
 
@@ -99,22 +114,22 @@ ms.locfileid: "66013356"
 
 ## <a name="requirements"></a>要件
 
-パフォーマンス アナライザー Microsoft Defender ウイルス対策次の前提条件があります。
+Microsoft Defender ウイルス対策パフォーマンス アナライザーには、次の前提条件があります。
 
-- サポートされているWindows バージョン: Windows 10、Windows 11、Windows Server 2016 以降
+- サポートされている Windows バージョン: Windows 10、Windows 11、Windows Server 2016以降
 - プラットフォーム バージョン: 4.18.2108.7 以降
 - PowerShell バージョン: PowerShell バージョン 5.1、PowerShell ISE、リモート PowerShell (4.18.2201.10 以降)、PowerShell 7.x (4.18.2201.10 以降)
 
 ## <a name="powershell-reference"></a>PowerShell リファレンス
 
-Microsoft Defender ウイルス対策のパフォーマンスを調整するために使用される新しい PowerShell コマンドレットは 2 つあります。
+Microsoft Defender ウイルス対策のパフォーマンスを調整するために使用される 2 つの新しい PowerShell コマンドレットがあります。
 
 - [New-MpPerformanceRecording](#new-mpperformancerecording)
 - [Get-MpPerformanceReport](#get-mpperformancereport)
 
 ### <a name="new-mpperformancerecording"></a>New-MpPerformanceRecording
 
-次のセクションでは、新しい PowerShell コマンドレット New-MpPerformanceRecording のリファレンスについて説明します。 このコマンドレットは、Microsoft Defender ウイルス対策 スキャンのパフォーマンス記録を収集します。
+次のセクションでは、新しい PowerShell コマンドレット New-MpPerformanceRecording のリファレンスについて説明します。 このコマンドレットは、Microsoft Defender ウイルス対策スキャンのパフォーマンス記録を収集します。
 
 #### <a name="syntax-new-mpperformancerecording"></a>構文: New-MpPerformanceRecording
 
@@ -124,9 +139,9 @@ New-MpPerformanceRecording -RecordTo <String >
 
 #### <a name="description-new-mpperformancerecording"></a>説明: New-MpPerformanceRecording
 
-このコマンドレットは`New-MpPerformanceRecording`、Microsoft Defender ウイルス対策 スキャンのパフォーマンス記録を収集します。 これらのパフォーマンス記録には、Microsoft-Antimalware-Engine および NT カーネル プロセス イベントが含まれており、 [Get-MpPerformanceReport](#get-mpperformancereport) コマンドレットを使用してコレクション後に分析できます。
+このコマンドレットは `New-MpPerformanceRecording` 、Microsoft Defender ウイルス対策スキャンのパフォーマンス記録を収集します。 これらのパフォーマンス記録には、Microsoft-Antimalware-Engine および NT カーネル プロセス イベントが含まれており、 [Get-MpPerformanceReport](#get-mpperformancereport) コマンドレットを使用してコレクション後に分析できます。
 
-この`New-MpPerformanceRecording`コマンドレットは、Microsoft Defender ウイルス対策のパフォーマンスの低下を引き起こす可能性のある問題のあるファイルに関する分析情報を提供します。 このツールは "AS IS" として提供され、除外に関する提案を提供することを目的としていません。 除外すると、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
+この `New-MpPerformanceRecording` コマンドレットは、Microsoft Defender ウイルス対策のパフォーマンスが低下する可能性がある問題のあるファイルに関する分析情報を提供します。 このツールは "AS IS" として提供され、除外に関する提案を提供することを目的としていません。 除外すると、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
 
 パフォーマンス アナライザーの詳細については、[パフォーマンス アナライザードキュメントを](/windows-hardware/test/wpt/windows-performance-analyzer)参照してください。
 
@@ -183,7 +198,7 @@ Accept wildcard characters: False
 
 ##### <a name="-session"></a>-Session
 
-Microsoft Defender ウイルス対策パフォーマンス記録を作成して保存する PSSession オブジェクトを指定します。 このパラメーターを使用すると、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
+Microsoft Defender ウイルス対策のパフォーマンス記録を作成して保存する PSSession オブジェクトを指定します。 このパラメーターを使用すると、RecordTo パラメーターはリモート コンピューター上のローカル パスを参照します。 Defender プラットフォーム バージョン 4.18.2201.10 で使用できます。
 
 ```yaml
 Type: PSSession[]
@@ -207,45 +222,63 @@ Accept wildcard characters: False
 
 ### <a name="get-mpperformancereport"></a>Get-MpPerformanceReport
 
-次のセクションでは、Get-MpPerformanceReport PowerShell コマンドレットについて説明します。 Microsoft Defender ウイルス対策 (MDAV) パフォーマンス記録に関する分析とレポート。
+次のセクションでは、Get-MpPerformanceReport PowerShell コマンドレットについて説明します。 Microsoft Defender ウイルス対策 (MDAV) のパフォーマンス記録に関する分析とレポート。
 
 #### <a name="syntax-get-mpperformancereport"></a>構文: Get-MpPerformanceReport
 
 ```powershell
 Get-MpPerformanceReport    [-Path] <String>
-[-TopScans <Int32>]
-[-TopFiles  <Int32>
-    [-TopScansPerFile <Int32>]
-    [-TopProcessesPerFile  <Int32>
-        [-TopScansPerProcessPerFile <Int32>]
-    ]
-]
-[-TopExtensions  <Int32>
-    [-TopScansPerExtension <Int32>]
-    [-TopProcessesPerExtension <Int32>
-        [-TopScansPerProcessPerExtension <Int32>]
-        ]
-    [-TopFilesPerExtension  <Int32>
-        [-TopScansPerFilePerExtension <Int32>]
-        ]
-    ]
-]
-[-TopProcesses  <Int32>
-    [-TopScansPerProcess <Int32>]
-    [-TopExtensionsPerProcess <Int32>
-        [-TopScansPerExtensionPerProcess <Int32>]
-    ]
-]
-[-TopFilesPerProcess  <Int32>
-    [-TopScansPerFilePerProcess <Int32>]
-]
-[-MinDuration <String>]
-[-Raw]
+    [-TopScans [<Int32>]]
+    [-TopPaths [<Int32>] [-TopPathsDepth [<Int32>]]]
+            [-TopScansPerPath [<Int32>]]
+            [-TopFilesPerPath [<Int32>]
+                    [-TopScansPerFilePerPath [<Int32>]]
+                    ]
+            [-TopExtensionsPerPath [<Int32>]
+                    [-TopScansPerExtensionPerPath [<Int32>]]
+                    ]
+            [-TopProcessesPerPath [<Int32>]
+                    [-TopScansPerProcessPerPath [<Int32>]]
+                    ]
+            ]
+    [-TopFiles [<Int32>]
+            [-TopScansPerFile [<Int32>]]
+            [-TopProcessesPerFile [<Int32>]
+                    [-TopScansPerProcessPerFile [<Int32>]]
+                    ]
+            ]
+    [-TopExtensions [<Int32>]
+            [-TopScansPerExtension [<Int32>]
+            [-TopPathsPerExtension [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerExtension [<Int32>]]
+                    ]
+            [-TopProcessesPerExtension [<Int32>]
+                    [-TopScansPerProcessPerExtension [<Int32>]]
+                    ]
+            [-TopFilesPerExtension [<Int32>]
+                    [-TopScansPerFilePerExtension [<Int32>]]
+                    ]
+            ]
+    [-TopProcesses [<Int32>]
+            [-TopScansPerProcess [<Int32>]]
+            [-TopExtensionsPerProcess [<Int32>]
+                    [-TopScansPerExtensionPerProcess [<Int32>]]
+                    ]
+            [-TopPathsPerProcess [<Int32>] [-TopPathsDepth [<Int32>]]
+                    [-TopScansPerPathPerProcess [<Int32>]]
+                    ]
+            [-TopFilesPerProcess [<Int32>]
+                    [-TopScansPerFilePerProcess [<Int32>]]
+                    ]
+            ]
+    [-MinDuration <String>]
+    [-Raw]
+
 ```
 
 #### <a name="description-get-mpperformancereport"></a>説明: Get-MpPerformanceReport
 
-このコマンドレットは`Get-MpPerformanceReport`、以前に収集されたMicrosoft Defender ウイルス対策パフォーマンス記録 ([New-MpPerformanceRecording](#new-mpperformancerecording)) を分析し、Microsoft Defender ウイルス対策 スキャンに最も大きな影響を与えるファイル パス、ファイル拡張子、プロセスを報告します。
+このコマンドレットは `Get-MpPerformanceReport` 、以前に収集された Microsoft Defender ウイルス対策のパフォーマンス記録 ([New-MpPerformanceRecording](#new-mpperformancerecording)) を分析し、Microsoft Defender ウイルス対策スキャンに最も大きな影響を与えるファイル パス、ファイル拡張子、プロセスを報告します。
 
 パフォーマンス アナライザーは、Microsoft Defender ウイルス対策のパフォーマンスの低下を引き起こす可能性のある問題のあるファイルに関する分析情報を提供します。 このツールは "AS IS" として提供され、除外に関する提案を提供することを目的としていません。 除外すると、エンドポイントの保護レベルが低下する可能性があります。 除外がある場合は、慎重に定義する必要があります。
 
@@ -290,9 +323,45 @@ Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopScans:100 -MinDuration:10
 Get-MpPerformanceReport -Path:.\Defender-scans.etl -TopFiles:10 -TopExtensions:10 -TopProcesses:10 -TopScans:10 -Raw | ConvertTo-Json
 ```
 
-上記のコマンドで -Raw を使用すると、出力をコンピューターで読み取り可能にし、JSON などのシリアル化形式に簡単に変換できます。
+上記のコマンドで Raw を使用すると \-、出力をコンピューターで読み取り可能にし、JSON などのシリアル化形式に簡単に変換できるように指定します。
 
 #### <a name="parameters-get-mpperformancereport"></a>パラメーター: Get-MpPerformanceReport
+
+##### <a name="-toppaths"></a>-TopPaths
+
+最上位パス レポートを要求し、出力する上位パスの数を "Duration" で並べ替えて指定します。 パスとディレクトリに基づいてスキャンを集計します。 ユーザーは、各レベルに表示するディレクトリの数と選択の深さを指定できます。
+
+- 型: Int32
+- 位置: 名前付き
+- 既定値: なし
+- パイプライン入力を受け入れる: False
+- ワイルドカード文字を受け入れる: False
+
+##### <a name="-toppathsdepth"></a>-TopPathsDepth
+
+集約されたパスの結果をグループ化して表示するために使用する再帰深度を指定します。 たとえば、"C:\" は深度 1 に対応し、"C:\Users\Foo" は深度 3 に対応します。
+
+このフラグは、他のすべての [トップ パス] オプションと一緒に使用できます。 不足している場合は、既定値の 3 が想定されます。 値を 0 にすることはできません。
+
+- 型: Int32
+- 位置: 名前付き
+- 既定値: 3
+- パイプライン入力を受け入れる: False
+- ワイルドカード文字を受け入れる: False
+
+| flag | definition |
+|:---|:---|  
+|  -**TopScansPerPath** | トップ パスごとにトップ スキャンを指定する方法を指定します。 |
+|  -**TopFilesPerPath** | 各トップ パスに対して上位ファイルを指定する方法を指定します。 |
+|  -**TopScansPerFilePerPath** | 上部パスごとに出力する上位スキャンの数を指定し、"Duration" で並べ替えます。 |
+|  -**TopExtensionsPerPath** | 上位パスごとに出力する上位拡張機能の数を指定します。 |
+|  -**TopScansPerExtensionPerPath** | 各トップ パスの上位拡張機能に対して出力するトップ スキャンの数を指定します |
+|  -**TopProcessesPerPath** | 上位パスごとに出力する上位プロセスの数を指定します。 |
+|  -**TopScansPerProcessPerPath** | 各トップ パスの上位プロセスごとに出力するトップ スキャンの数を指定します。 |
+|  -**TopPathsPerExtension** | 上位拡張機能ごとに出力する上位パスの数を指定します。 |
+|  -**TopScansPerPathPerExtension** | 各上位拡張機能の上位パスごとに出力するトップ スキャンの数を指定します。 |
+|  -**TopPathsPerProcess** | 上位プロセスごとに出力する上位パスの数を指定します。 |
+|  -**TopScansPerPathPerProcess** | 各トップ プロセスの上位パスごとに出力するトップ スキャンの数を指定します |
 
 ##### <a name="-minduration"></a>-MinDuration
 
@@ -534,7 +603,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-## <a name="additional-resources"></a>その他のリソース
+## <a name="additional-resources"></a>補足資料
 
 他のプラットフォームのウイルス対策に関連する情報を探している場合は、次を参照してください。
 
@@ -543,4 +612,4 @@ Accept wildcard characters: False
 - [Intune の Microsoft Defender ウイルス対策の macOS ウイルス対策ポリシー設定](/mem/intune/protect/antivirus-microsoft-defender-settings-macos)
 - [Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する](linux-preferences.md)
 - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
-- [Android機能で Defender for Endpoint を構成する iOS機能](android-configure.md)- [にMicrosoft Defender for Endpointを構成する](ios-configure-features.md)
+- [Android の機能で Defender for Endpoint を構成する](android-configure.md)- [iOS 機能でMicrosoft Defender for Endpointを構成する](ios-configure-features.md)

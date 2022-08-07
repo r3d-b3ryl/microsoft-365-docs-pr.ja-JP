@@ -20,12 +20,12 @@ ms.custom:
 - admindeeplinkCOMPLIANCE
 - admindeeplinkDEFENDER
 description: Microsoft Purview コンプライアンス ポータルまたは Microsoft 365 Defender ポータルでアラート ポリシーを作成して、潜在的な脅威、データ損失、およびアクセス許可の問題を監視します。
-ms.openlocfilehash: d52e50726b5fa695a98d517f1b7b2e9be44d2f1d
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 8e100f75712c3228ed58a82c4f066561bfeaa11f
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175226"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276112"
 ---
 # <a name="alert-policies-in-microsoft-365"></a>Microsoft 365 のアラート ポリシー
 
@@ -139,6 +139,7 @@ Microsoft には、Exchange 管理者のアクセス許可の悪用、マルウ�
 |**管理者の提出結果が完了しました**|[管理者送信](../security/office-365-security/admin-submission.md)が送信されたエンティティの再スキャンを完了すると、アラートを生成します。 管理者送信から再スキャン結果がレンダリングされるたびに、アラートがトリガーされます。 これらのアラートは、[以前の送信の結果を確認](https://compliance.microsoft.com/reportsubmission)し、ユーザーから報告されたメッセージを送信して最新のポリシー チェックを取得し、判定を再スキャンすることを通知し、組織のフィルタリング ポリシーが意図した影響を及ぼしているかどうかを判断するのに役立ちます。 このポリシーには、**情報** の重大度設定があります。|脅威の管理|不要|E1/F1、E3/F3、または E5|
 |**管理者がメールの手動調査をトリガーする**|管理者が脅威エクスプローラーからの電子メールの手動調査をトリガーすると、アラートを生成します。 詳細については、「[例: セキュリティ管理者が脅威エクスプローラーから調査を開始する](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)」を参照してください。 このアラートは、調査が開始されたことを組織に通知します。 アラートは、トリガーしたユーザーに関する情報を提供し、調査へのリンクを含めます。 このポリシーには、**情報** の重大度設定があります。|脅威の管理|はい|E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
 |**管理者によってトリガーされたユーザー侵害調査**|管理者が脅威エクスプローラーからの電子メールの送信者または受信者の手動のユーザー侵害調査をトリガーすると、アラートを生成します。 詳細については、「[例: セキュリティ管理者が脅威エクスプローラーから調査を開始する](../security/office-365-security/automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)」を参照してください。ここでは、メールの調査に関連する手動のトリガーが示されています。 このアラートは、ユーザー侵害調査が開始されたことを組織に通知します。 アラートは、トリガーしたユーザーに関する情報を提供し、調査へのリンクを含めます。 このポリシーの重大度設定は **中** です。|脅威の管理|はい|E5/G5 または Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
+|**管理者が送信した管理アクション**|管理者は、さまざまなサーフェスを使用して、電子メール エンティティに対して手動の電子メール アクションを実行できます。 たとえば、脅威エクスプローラー、高度なハンティング、またはカスタム検出などです。 修復が開始されると、アラートが生成されます。 このアラートは、管理者がエンティティを修復するアクションを実行したことを示すために **管理者によって送信された管理アクション** という名前のアラート キューに表示されます。 アラートには、アクションの種類、調査リンクのサポート、時間などの詳細が含まれています。エンティティに対して修復などの機密性の高いアクションがいつ実行されるかを把握しておくと便利です。 このポリシーには、**情報** の重大度設定があります。|脅威の管理|はい|E5/ Microsoft Defender for Office 365 P2 アドオン サブスクリプション|
 |**転送/リダイレクト ルールの作成**|組織内の誰かが、メッセージを別のメール アカウントに転送またはリダイレクトするメール ボックスの受信ボックス ルールを作成すると、アラートを生成します。 このポリシーは、Outlook on the web (旧称 Outlook Web App) または Exchange Online PowerShell を使用して作成された受信トレイ ルールのみを追跡します。 このポリシーには、**情報** の重大度設定があります。 受信トレイ ルールを使用して Outlookon the Web でメールを転送およびリダイレクトする方法の詳細については、「[Outlook on the web でルールを使ってメッセージを別のアカウントに自動的に転送する](https://support.office.com/article/1433e3a0-7fb0-4999-b536-50e05cb67fed)」を参照してください。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**eDiscovery 検索が開始またはエクスポートされました**|Microsoft Purview ポータルで他のユーザーがコンテンツ検索ツールを使用したときにアラートを生成します。 次のコンテンツ検索アクティビティが実行されると、アラートがトリガーされます。 <br><br> <li> コンテンツ検索が開始されました <li> コンテンツ検索の結果がエクスポートされました <li> コンテンツ検索レポートがエクスポートされました <br><br> アラートは、eDiscovery ケースに関連して以前のコンテンツ検索アクティビティが実行されたときにもトリガーされます。 このポリシーには、**情報** の重大度設定があります。 詳細については、「[監査ログで電子情報開示アクティビティを検索する](search-for-ediscovery-activities-in-the-audit-log.md#ediscovery-activities)」を参照してください。|脅威の管理|不要|E1/F1/G1、E3/F3/G3、または E5/G5|
 |**Exchange 管理者権限の昇格**|Exchange Online 組織で誰かに管理者権限が割り当てられたときにアラートを生成します。 たとえば、ユーザーが Exchange Online の組織管理ロール グループに追加された場合です。 このポリシーの重大度設定は **低** です。|アクセス許可|不要|E1/F1/G1、E3/F3/G3、または E5/G5|

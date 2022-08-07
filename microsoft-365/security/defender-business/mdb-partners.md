@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/03/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 92b47e303ec4cdbbceb39c9774c1747ca02726e5
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 52bbe2b5b4c8c595cd98d6ae3fc26e03aded9ed0
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66994633"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276417"
 ---
 # <a name="microsoft-defender-for-business-and-microsoft-partner-resources"></a>Microsoft Defender for Businessと Microsoft パートナー のリソース
 
@@ -31,7 +32,7 @@ Microsoft パートナーは、お客様が成功できるようにパートナ�
 | 関連情報 | 説明 |
 |:---|:---|
 | [Microsoft Partner Network](https://partner.microsoft.com) | Microsoft パートナー ネットワークにアクセスして、Microsoft パートナーになり、Microsoft パートナー ネットワークに参加する方法について説明します。 |
-| [Microsoft 365 Business Premiumと Defender for Business パートナーウェビナー シリーズ](https://aka.ms/M365MDBseries) | このウェビナー シリーズでは、次の内容が提供されます。 <ul><li>セキュリティに関して顧客と会話を行い、Business Premium へのアップセルを促進する方法に関する実用的なガイダンス。 </li><li>Microsoft 365 Lighthouseと Defender for Business のデモと詳細なチュートリアル。 </li><li>質問に答えるのに役立つ専門家のパネル。</li></ul>   |
+| [Microsoft 365 Business Premiumと Defender for Business パートナーウェビナー シリーズ](https://aka.ms/M365MDBseries) | このウェビナー シリーズでは、次の内容が提供されます。 <ul><li>セキュリティに関する顧客との会話を行い、Microsoft 365 Business Premiumにアップセルを推進する方法に関する実用的なガイダンス。 </li><li>Microsoft 365 Lighthouseと Defender for Business のデモと詳細なチュートリアル。 </li><li>質問に答えるのに役立つ専門家のパネル。</li></ul>   |
 | [Microsoft 365 Business Premiumパートナープレイブックと準備シリーズ](https://aka.ms/M365BPPartnerPlaybook) |  収益性の高いマネージド サービスプラクティスの構築に関する実用的なガイダンス: <ul><li>業界の専門家や同僚からのマネージド サービス オファーの成功例。 </li><li>Microsoft の専門家による技術的な有効化とチェックリスト。 </li><li>営業の有効化と顧客の会話支援により、ソリューションのマーケティングに役立ちます。 </li></ul> |
 | [Defender for Business パートナー キット](https://aka.ms/MDBPartnerKit) | Defender for Business パートナー キットでは、Defender for Business を中小企業に販売し、販売するための実用的なガイダンス、技術情報、顧客対応のリソースを提供します。  |
 
@@ -57,4 +58,8 @@ Microsoft MSP で、Microsoft エンドポイント セキュリティ機能を�
 
 Microsoft Cloud Solution Providers (CSP) は、ライセンスの再販を超えて、顧客のビジネスにもっと関与することができます。 たとえば、CSP はMicrosoft 365 Lighthouseを使用して、中小企業のお客様のセキュリティ設定と機能を管理できます。 CSP は、デバイスでウイルス対策スキャンを実行するなど、検出された脅威を表示および管理することもできます。
 
-[Microsoft 365 LighthouseとMicrosoft Defender for Businessの詳細については、こちらを参照してください](mdb-lighthouse-integration.md)。
+| 関連情報 | 説明 |
+|:---|:---|
+| [Microsoft 365 LighthouseとMicrosoft Defender for Business](mdb-lighthouse-integration.md) | Defender for Business とMicrosoft 365 Lighthouseの統合方法について説明し、追加情報へのリンクを含めます。 |
+
+

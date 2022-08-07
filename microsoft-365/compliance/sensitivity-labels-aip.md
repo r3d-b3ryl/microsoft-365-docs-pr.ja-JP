@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Azure Information Protection (AIP) 統合ラベル付けクライアントを使用するとき、AIP アドインではなく Office アプリの組み込みラベル付けを使用する利点を理解してください。
-ms.openlocfilehash: 01f75905dc5fea76613393828d42f23ea1d3ff79
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d7cb00b476e31916139d3cdcf5dd53834bc5025a
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970168"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275936"
 ---
 # <a name="why-choose-built-in-labeling-over-the-aip-add-in-for-office-apps"></a>Office アプリの AIP アドインに対して組み込みラベル付けを選択する理由
 
@@ -121,7 +121,7 @@ Office アプリ以外のラベル付けを拡張するために AIP クライ�
 
 AIP アドインでサポートされているラベル付け機能の多くは、組み込みラベル付けでサポートされるようになりました。 機能のより詳細な一覧、必要な最小バージョン、構成情報については、「[Office アプリで秘密度ラベルを管理する](sensitivity-labels-office-apps.md)」を参照してください。
 
-さらに多くの機能が計画中および開発中です。特定の機能に興味をお持ちの場合は、[Microsoft 365 ロードマップ](https://aka.ms/MIPC/Roadmap)を確認し、[Office プライベート プレビューの Microsoft の情報保護](https://aka.ms/MIP/PreviewRing)に参加することをご検討ください。
+さらに多くの機能が計画中および開発中です。特定の機能に興味をお持ちの場合は、[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity)を確認し、[Office プライベート プレビューの Microsoft の情報保護](https://aka.ms/MIP/PreviewRing)に参加することをご検討ください。
 
 組み込みラベル付けでまだサポートされていない AIP アドインの機能を使用しているかどうかを判断するには、次の情報を使用してください。
 

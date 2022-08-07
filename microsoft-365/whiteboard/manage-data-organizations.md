@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure とOneDrive for Businessでの Microsoft Whiteboard のデータリテンション期間について説明します。
-ms.openlocfilehash: 88ebe6de6983823e6f782f006ac2aa58cfe9af93
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: e79c0250d896d479047ec4465a81643dd2ba26d5
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943048"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276090"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard のデータを管理する
 
@@ -25,7 +25,7 @@ ms.locfileid: "66943048"
 
 ## <a name="azure-storage-overview"></a>Azure Storage の概要
 
-ホワイトボードは現在、Azure にコンテンツを安全に格納しています。 データは、国と、Whiteboard がそれらの場所に新しいコンテンツを格納するように切り替えた時期に応じて、異なる場所に格納される場合があります。 新しいデータが作成される場所を確認するには、「 [Microsoft 365 顧客データの保存場所」を参照してください](/microsoft-365/enterprise/o365-data-locations)。 
+ホワイトボードは現在、Azure にコンテンツを安全に格納しています。 データは、国と、Whiteboard がそれらの場所に新しいコンテンツを格納するように切り替えた時期に応じて、異なる場所に格納される場合があります。 新しいデータが作成される場所を確認するには、「 [Microsoft 365 顧客データの保存場所」を参照してください](/microsoft-365/enterprise/o365-data-locations)。
 
 Azure のコンテンツでは、データ損失防止 (DLP)、電子情報開示、アイテム保持ポリシー、および同様の機能はサポートされていません。 コンテンツは [Whiteboard PowerShell コマンドレット](/powershell/module/whiteboard/)を使用して管理でき、時間の経過と共に、このコンテンツをOneDrive for Businessに移行するか削除する必要があります。
 
@@ -38,13 +38,13 @@ Azure でユーザーのアカウントが削除されたときにホワイト�
 
 **2022 年 6 月 1** 日の時点で、Azure でのホワイトボードの動作が変更されました。 他のユーザーと共有されているホワイトボードはすべて削除されます。
 
-削除されたユーザーのホワイトボードを保持する場合は、アカウントを削除する *前に* 所有権を譲渡できます。 1 つのホワイトボードまたはすべてのホワイトボードを別のユーザーに転送できます。 
+削除されたユーザーのホワイトボードを保持する場合は、アカウントを削除する *前に* 所有権を譲渡できます。 1 つのホワイトボードまたはすべてのホワイトボードを別のユーザーに転送できます。
 
 - [すべてのホワイトボードを転送](/powershell/module/whiteboard/invoke-transferallwhiteboards)するには、次の手順に従います。
 
 - ユーザー アカウントを削除する方法の詳細については、「 [組織からユーザーを削除する](/microsoft-365/admin/add-users/delete-a-user)」を参照してください。
 
-削除プロセスまたはスクリプトがこの変更を処理することを確認します。 ホワイトボードを削除しても問題ない場合は、アクションは必要ありません。 
+削除プロセスまたはスクリプトがこの変更を処理することを確認します。 ホワイトボードを削除しても問題ない場合は、アクションは必要ありません。
 
 ## <a name="onedrive-for-business-storage-overview"></a>OneDrive for Business ストレージの概要
 
@@ -54,7 +54,7 @@ OneDrive for Businessプロビジョニングされていないユーザーは�
 
 平均的なホワイトボードのサイズは 50 KB から 1 MB で、OneDrive for Business コンテンツが存在する場所であればどこでも配置できます。 テナントのデータが格納されている場所を確認するには、「 [Microsoft 365 顧客データの保存場所](/microsoft-365/enterprise/o365-data-locations)」を参照してください。 次に、OneDrive for Businessの場所を確認します。
 
-### <a name="controls-for-onedrive-for-business-storage"></a>OneDrive for Businessストレージのコントロール 
+### <a name="controls-for-onedrive-for-business-storage"></a>OneDrive for Businessストレージのコントロール
 
 既存のOneDrive for Business コントロールを使用してホワイトボード データを管理できます。 詳細については、 [企業向けの OneDrive ガイドを参照してください](/onedrive/plan-onedrive-enterprise)。
 
@@ -83,5 +83,3 @@ OneDrive for Businessプロビジョニングされていないユーザーは�
 [ホワイトボードの共有を管理する](manage-sharing-organizations.md)
 
 [Windows にホワイトボードを展開する](deploy-on-windows-organizations.md)
-
-

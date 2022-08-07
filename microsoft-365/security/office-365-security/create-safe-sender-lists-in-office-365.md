@@ -18,12 +18,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージを許可するための利用可能なオプションと推奨されるオプションについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 016257a6cdc3128ba6753532bb0bed74845355d0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8c2ef3c1ae6485f5ebdd965aee92bafd5f63233e
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493089"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274860"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>EOP で安全な差出人のリストを作成する
 
@@ -110,7 +110,7 @@ Exchange Online およびスタンドアロン EOP のメール フロー ルー
 
 組織の設定の代わりに、ユーザーまたは管理者は、メールボックスの信頼できる差出人リストに送信者のメール アドレスを追加できます。 詳細については、「[Office 365 で Exchange Online のメールボックスの迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。 ほとんどの場合、送信者はフィルター スタックの一部をバイパスするため、このメソッドは望ましくありません。 送信者は信頼できる場合でも、送信者が侵害され、悪意のあるコンテンツを送信する可能性があります。 すべてのメッセージをフィルターでチェックし、間違った場合は [誤検知/否定を Microsoft に報告](report-junk-email-messages-to-microsoft.md) する方がよい場合です。 フィルター 処理スタックをバイパスすると、 [ゼロ時間の自動消去 (ZAP)](zero-hour-auto-purge.md) も妨げられます。
 
-設計上、Exchange Onlineメールボックスのセキュリティを強化するために、安全な送信者、ブロックされた送信者、およびブロックされたドメインの迷惑メール設定のみが認識されます。 セーフ ドメインの設定は無視されます。
+設計上、Exchange Onlineメールボックスのセキュリティを強化するために、安全な送信者と安全なドメイン、ブロックされた送信者、ブロックされたドメインの迷惑メール設定のみが認識されます。 安全なメーリング リストの設定は無視されます。
 
 ユーザーの信頼できる差出人リストが原因でメッセージがスパム フィルター処理をスキップする場合、**X-Forefront-Antispam-Report** ヘッダー フィールドには `SFV:SFE`があるはずです。これは、 スパム、スプーフィング、フィッシングのフィルター処理がバイパスされたことを示す値です。
 

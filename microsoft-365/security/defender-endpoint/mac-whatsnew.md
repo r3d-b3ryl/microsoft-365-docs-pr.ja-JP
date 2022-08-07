@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 3ea2822adabcd0a747d34fbdb8c6d8d2c944afdf
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: f617129218d9ce7f75204c45fba39109bf214680
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969542"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275842"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac でのMicrosoft Defender for Endpointの新機能
 
@@ -35,6 +35,25 @@ ms.locfileid: "66969542"
 他のオペレーティング システムでのMicrosoft Defender for Endpointの詳細については、次の手順を参照してください。 
 - [Linux でのMicrosoft Defender for Endpointの新機能](linux-whatsnew.md) 
 - [iOS でのMicrosoft Defender for Endpointの新機能](ios-whatsnew.md)</br>
+
+<details>
+  <summary>2022 年 8 月 (ビルド: 101.75.90 |リリース バージョン: 20.122071.17590.0)</summary>
+
+&ensp;リリース日: **2022 年 8 月 3** 日<br/>
+&ensp;発行日: **2022 年 8 月 3 日**<br/>
+&ensp;ビルド: **101.75.90**<br/>
+&ensp;リリース バージョン: **20.122071.17590.0**<br/>
+&ensp;エンジンバージョン: **1.1.19300.3**<br/>
+&ensp;署名バージョン: **1.369.395.0**<br/>
+
+**新機能**
+
+- ネットワーク保護機能の適用レベルを `mdatp health` 照会するために使用できる新しいフィールドを出力に追加しました。 新しいフィールドが呼び出`network_protection_enforcement_level`され、次のいずれかの値を受け取ることができます。 `audit``block``disabled`
+- 同じコンテンツを複数検出すると、脅威履歴にエントリが重複する可能性がある製品バグに対処しました。
+- その他のバグ修正。
+
+<br/>
+</details>
 
 <details>
   <summary>2022 年 7 月 (ビルド: 101.73.77 |リリース バージョン: 20.122062.17377.0)</summary>
@@ -677,7 +696,7 @@ ms.locfileid: "66969542"
 
 **新機能**
 > [!CAUTION]
-> macOS デバイスの最も完全な保護を確保し、Apple が [current - 2] より前の OS バージョンへの macOS ネイティブ セキュリティ更新プログラムの配信を停止することに合わせて、MDATP for Mac の展開と更新は、macOS Sierra [10.12] ではサポートされなくなります。 MDATP for Mac の更新と機能強化は、Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。
+> macOS デバイスの最も完全な保護を確保し、Apple が [current - 2] より古い OS バージョンへの macOS ネイティブ セキュリティ更新プログラムの配信を停止することに合わせて、Mac の展開と更新プログラムの MDATP は macOS Sierra [10.12] ではサポートされなくなります。 MDATP for Mac の更新と機能強化は、Catalina [10.15]、Mojave [10.14]、High Sierra [10.13] を実行しているデバイスに配信されます。
 >
 > Sierra [10.12] デバイスに MDATP for Mac が既に展開されている場合は、保護を失うリスクを排除するために、最新の macOS バージョンにアップグレードしてください。
 

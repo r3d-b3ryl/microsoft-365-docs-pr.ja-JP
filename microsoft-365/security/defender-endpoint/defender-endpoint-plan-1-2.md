@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 43d07f2ec10117232e7ac1317bec1f8216bc62ae
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: b937bff6eece4c31861eae36b3691bd632827375
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071615"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274970"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Microsoft エンドポイント セキュリティ計画の比較
 
@@ -59,7 +59,7 @@ Microsoft Defender for Endpoint や Microsoft 365 Defender などの Microsoft �
 - Microsoft 365 E5/A5/G5/F5 Security
 - Microsoft 365 F5 セキュリティ/コンプライアンス
 
-(<a id="fn3">3</a>) Microsoft Defender for Business は、中小企業向けのスタンドアロン サブスクリプションとして使用できます。 また、Microsoft 365 Business Premium の一部としても含まれています。 これらのプランには、簡単なセットアップと構成エクスペリエンスを備えた高度なセキュリティ機能が備わっています。
+(<a id="fn3">3</a>) Microsoft Defender for Business は、中小企業向けのスタンドアロン サブスクリプションとして使用できます。 Microsoft 365 Business Premium[の一](/microsoft-365/business-premium)部としても含まれています。 これらのプランには、簡単なセットアップと構成エクスペリエンスを備えた高度なセキュリティ機能が備わっています。 [「Microsoft Defender for BusinessとMicrosoft 365 Business Premiumを比較する」を参照](/microsoft-365/security/defender-business/compare-mdb-m365-plans#compare-microsoft-defender-for-business-to-microsoft-365-business-premium)してください。
 
 ## <a name="options-for-onboarding-servers"></a>サーバーをオンボードするためのオプション
 

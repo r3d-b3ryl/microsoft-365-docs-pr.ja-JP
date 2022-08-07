@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: この記事では、さまざまなバージョンのメッセージ暗号化の違いについて説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 64a67ac9423463e4fcf1b5a3ff6c2262801933b0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 44eb59a160af9ecbe171e1c9b63f67e6ac608fe0
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629335"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276265"
 ---
 # <a name="compare-versions-of-message-encryption"></a>メッセージの暗号化のバージョンを比較する
 
@@ -105,7 +105,7 @@ GCC High 以外のすべての受信者 (商用 Microsoft 365 ユーザー、Out
 
 ## <a name="migrate-from-legacy-ome-to-microsoft-purview-message-encryption"></a>レガシ OME からMicrosoft Purview Message Encryptionに移行する
 
-両方のバージョンを共存させることができますが、ルール アクション **OME の以前のバージョンを適用** してMicrosoft Purview Message Encryptionを使用する古いメール フロー ルールを編集することを非常に推奨します。 これらのルールを更新して、メール フロー ルールアクション **[メッセージの暗号化と権限の保護Office 365適用** する] を使用します。 手順については、「 [メール メッセージを暗号化するためのメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
+両方のバージョンを共存させることができますが、ルール アクション **OME の以前のバージョンを適用** してMicrosoft Purview Message Encryptionを使用する古いメール フロー ルールを編集することを非常に推奨します。 これらのルールを更新して、メール フロー ルールアクション **[メッセージの暗号化と権限の保護Office 365適用** する] を使用するように更新し、RMS テンプレートの一覧で [暗号化] を選択します。 手順については、「 [メール メッセージを暗号化するためのメール フロー ルールを定義する](define-mail-flow-rules-to-encrypt-email.md)」を参照してください。
 
 ## <a name="get-started-with-ome"></a>OME の使用を開始する
 

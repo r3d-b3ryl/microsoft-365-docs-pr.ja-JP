@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
-summary: 最終更新日:2022 年 7 月 21 日。 管理者に最も人気のあるヘルプ記事はどれですか? 毎月更新された 20 件の最も閲覧回数の多いヘルプ記事のこのコレクションを確認してください。
+summary: 最終更新日 2022 年 8 月 3 日。 管理者に最も人気のあるヘルプ記事はどれですか? 毎月更新された 20 件の最も閲覧回数の多いヘルプ記事のこのコレクションを確認してください。
 metadata:
   title: 今月の最も閲覧された管理者ヘルプ記事の上位 20 件
   description: 毎月更新される、管理者に最も人気のあるヘルプ記事上位 20 件のこのコレクションをご覧ください。
@@ -15,12 +15,12 @@ metadata:
   - VSBFY23
   - AdminSurgePortfolio
   ms.collection: Adm_TOC
-  ms.openlocfilehash: 9529f555ef29427f8da52be5d330ebca0c4d8670
-  ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+  ms.openlocfilehash: 0117f7954b439e4e6dee8b5d74dca8218869edfe
+  ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 07/30/2022
-  ms.locfileid: "67085051"
+  ms.lasthandoff: 08/07/2022
+  ms.locfileid: "67275658"
 landingContent:
 - title: データとサービスを管理する
   linkLists:
@@ -30,8 +30,6 @@ landingContent:
       url: add-users/about-admin-roles.md
     - text: Microsoft 365 管理センターの概要
       url: admin-overview/admin-center-overview.md
-    - text: Microsoft 365 使用状況レポート
-      url: activity-reports/activity-reports.md
     - text: ビジネス向け Microsoft 365 のサポートを受ける
       url: get-help-support.md
 - title: ドメイン
@@ -62,6 +60,8 @@ landingContent:
       url: ../commerce/billing-and-payments/view-your-bill-or-invoice.md
     - text: Microsoft 365 for Business を試用または購入する
       url: ../commerce/try-or-buy-microsoft-365.md
+    - text: 登録番号と確認通知について
+      url: ../commerce/about-registration-numbers.md
 - title: メール
   linkLists:
   - linkListType: overview

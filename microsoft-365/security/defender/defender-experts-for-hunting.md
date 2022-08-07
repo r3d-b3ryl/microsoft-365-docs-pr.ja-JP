@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c3de665a941eb1f1922291b3188a6a7429b5330e
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 899e7052d5091e8ef161dc122b83b6f34532de2c
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109465"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275870"
 ---
 # <a name="microsoft-defender-experts-for-hunting"></a>ハンティングのための Microsoft Defender エキスパート
 
@@ -45,8 +45,8 @@ Defender Experts for Hunting は、堅牢なセキュリティ運用センター
 
 [この短いビデオでは](https://youtu.be/4t1JgE0X0jc) 、Microsoft Defender Experts for Hunting を使用して、環境内の最新の高度な脅威を追跡する方法について詳しく説明します。
 
-Defender Experts for Hunting は、他のMicrosoft 365 Defender製品とは別に販売されています。 Microsoft 365 Defender顧客であり、Defender Experts for Hunting の購入に関心がある場合は、顧客間フォームに入力します。
+Defender Experts for Hunting は、他のMicrosoft 365 Defender製品とは別に販売されています。 Microsoft 365 Defender顧客であり、Defender Experts for Hunting の購入に関心がある場合は、[顧客の関心フォーム](https://aka.ms/DEX4HuntingCustomerInterestForm)に入力します。
 
-### <a name="next-step"></a>次の手順
+### <a name="next-step"></a>次のステップ
 
 - [Defender Experts for Hunting の使用を開始する前に](before-you-begin-defender-experts.md)

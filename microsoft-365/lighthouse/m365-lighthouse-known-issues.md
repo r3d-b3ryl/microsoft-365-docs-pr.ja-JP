@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthous
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) については、機能領域別の Lighthouse の既知の問題の一覧を参照してください。
-ms.openlocfilehash: 9f3c2bc86d64cbc99f280de3c668e84a402b3619
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 9f1d9c7e31c6e3a6949b753a370577f87d903fd1
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106100"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276535"
 ---
 # <a name="known-issues-with-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseに関する既知の問題
 
@@ -51,14 +51,6 @@ ms.locfileid: "67106100"
 | 問題 | 説明 | 解決方法 |
 | ---------------- | ---------------- | ---------------- |
 | **再試行プロビジョニング エラー** | MSP 技術者は、クラウド PC のプロビジョニングを再試行しようとすると、"これを実行するアクセス許可がありません" というエラー メッセージを受け取ります。 | この問題を回避するには、カスタマー テナントにサインインし、Microsoft Endpoint Manger 管理センターからクラウド PC を再プロビジョニングします。 手順については、「 [クラウド PC の再プロビジョニング](/windows-365/enterprise/reprovision-cloud-pc)」を参照してください。 |
-
-## <a name="audit-logs"></a>監査ログ
-
-
-| 問題 | 説明 | 解決方法 |
-|--|--|--|
-| **非アクティブ化と再アクティブ化のアクションが監査ログに一覧表示されない** | 現在、次のアクティビティは Lighthouse の [監査ログ] ページでは報告されません。 <ul><li>名前: offboardTenant \| Action: 顧客を非アクティブ化する</li> <li>名前: resetTenantOnboardingStatus \| Action: Reactive customer</li></ul> | 回避策はありませんが、修正に取り組んでいます。 これらのアクティビティは、修正プログラムがサービスにデプロイされると、監査ログに表示されます。 |
-| **フィルターに一部のユーザーが表示されない** | MSP 技術者が **開始** 者を使用してフィルター処理しようとすると、監査ログを生成するアクションを開始した技術者の電子メール ID に対応するすべてのユーザー プリンシパル名 (UPN) の一覧がフィルターの下に完全に表示されません。<br><br>監査ログ自体が完全に表示されることに注意してください。 **[開始者]** を使用してフィルター処理する機能のみが影響を受けます。 | 回避策はありませんが、修正に取り組んでいます。 修正プログラムがサービスにデプロイされると、フィルターは想定される動作に戻り、フィルター処理する UPN の完全な一覧が表示されます。 |
 
 ## <a name="delegated-admin-privileges-dap"></a>委任された管理特権 (DAP)
 

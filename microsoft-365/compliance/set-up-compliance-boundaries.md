@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: コンプライアンス境界を使用して、電子情報開示マネージャーが Microsoft 365 で検索できるユーザー コンテンツの場所を制御する論理境界を作成する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 903992df71b82a7dc1081bb286871e0b7af72d37
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: f65a1c85a4cadac646fdffee8403fb398e8c0081
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625063"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275980"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>電子情報開示調査のコンプライアンス境界を設定する
 
@@ -125,7 +125,7 @@ New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -
   
 - `FilterName`: フィルターの名前を指定します。 フィルターが使用されている機関を記述または識別する名前を使用します。
 
-- `Users`: このフィルターを実行する検索アクションに適用されるユーザーまたはグループを指定します。 コンプライアンス境界の場合、このパラメーターは、フィルターを作成する機関の役割グループ (手順 3 で作成した) を指定します。 これは複数値パラメーターであるため、コンマで区切って 1 つ以上のロール グループを含めることができます。
+- `Users`: このフィルターを実行する検索アクションに適用されるユーザーまたはグループを指定します。 コンプライアンス境界の場合、このパラメーターは、フィルターを作成する機関の役割グループ (手順 2 で作成した) を指定します。 これは複数値パラメーターであるため、コンマで区切って 1 つ以上のロール グループを含めることができます。
 
 - `Filters`: フィルターの検索条件を指定します。 コンプライアンス境界の場合は、次のフィルターを定義します。 それぞれが異なるコンテンツの場所に適用されます。
 
@@ -221,8 +221,8 @@ New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "C
     |JPN  <br/> |アジア太平洋  <br/> |
     |IND  <br/> |アジア太平洋  <br/> |
     |ラム  <br/> |US  <br/> |
-    |も  <br/> |ヨーロッパ |
-    |ブラジャー  <br/> |北米のデータセンター |
+    |NOR  <br/> |ヨーロッパ |
+    |BRA  <br/> |北米のデータセンター |
     |||
 
    検索アクセス許可フィルターの *[リージョン]* パラメーターを指定しない場合、組織のプライマリ SharePoint リージョンが検索されます。 検索結果は、最も近いデータセンターにエクスポートされます。

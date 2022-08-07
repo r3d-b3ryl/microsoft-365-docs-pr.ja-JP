@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.technology: mde
-ms.openlocfilehash: d6ce0fe6b001c537a6bb801f18920f759a1cce09
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: b32a47ba4ca01c3f6b99cde639063c1fc2373ed2
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109445"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275754"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Microsoft Defender for Endpointから Microsoft Defender for Cloud へのサーバーの移行
 
@@ -45,14 +45,22 @@ Microsoft Defender for Cloud は、Microsoft Azure portalのサブスクリプ�
 Azure [Arc 対応](/azure/azure-arc/servers/overview)サーバーを介して接続されている Azure VM と Azure 以外のマシンに対して Defender for Servers を有効にするには、次のガイドラインに従います。
 
 1. Azure をまだ使用していない場合は、 [Azure Well-Architected Framework](/azure/architecture/framework/) に従って環境を計画します。
+
 2. サブスクリプションで [Microsoft Defender for Cloud](/azure/defender-for-cloud/get-started) を有効にします。
+
 3. [サブスクリプション](/azure/defender-for-cloud/enable-enhanced-security)で Microsoft Defender for Server プランのいずれかを有効にします。 Defender for Servers プラン 2 を使用している場合は、マシンが接続されている Log Analytics ワークスペースでも有効にしてください。ファイル整合性監視、アダプティブ アプリケーション コントロールなどのオプション機能を使用できます。
+
 4. サブスクリプションで [MDE 統合](/azure/defender-for-cloud/integration-defender-for-endpoint?tabs=windows) が有効になっていることを確認します。 既存の Azure サブスクリプションがある場合は、次の図に示す 2 つのオプトイン ボタンのいずれか (またはその両方) が表示される場合があります。
-     :::image type="content" source="images/mde-integration.png" alt-text="MDE 統合を有効にする方法を示すスクリーンショット。":::
-環境にこれらのボタンがある場合は、両方の統合を有効にしてください。 新しいサブスクリプションでは、両方のオプションが既定で有効になります。
+
+     :::image type="content" source="images/mde-integration.png" alt-text="MDE 統合を有効にする方法を示すスクリーンショット。" lightbox="images/mde-integration.png":::
+
+   環境にこれらのボタンがある場合は、両方の統合を有効にしてください。 新しいサブスクリプションでは、両方のオプションが既定で有効になります。
+
 5. Azure Arc の接続要件が満たされていることを確認します。 Microsoft Defender for Cloud では、すべてのオンプレミスマシンと Azure 以外のマシンを Azure Arc エージェント経由で接続する必要があります。 また、Azure Arc では、MDE でサポートされているすべてのオペレーティング システムがサポートされているわけではありません。 そのため、 [ここで Azure Arc デプロイ](/azure/azure-arc/servers/plan-at-scale-deployment)を計画する方法について説明します。
+
 6. *推奨：* Defender for Cloud で脆弱性の結果を確認する場合は、Defender for Cloud の [Microsoft Defender 脆弱性の管理](/azure/defender-for-cloud/enable-data-collection?tabs=autoprovision-va)を有効にしてください。
-   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="脆弱性管理を有効にする方法を示すスクリーンショット。"::: 
+
+   :::image type="content" source="images/enable-threat-and-vulnerability-management.png" alt-text="脆弱性管理を有効にする方法を示すスクリーンショット。" lightbox="images/enable-threat-and-vulnerability-management.png"::: 
 
 ## <a name="how-do-i-migrate-existing-azure-vms-to-microsoft-defender-for-cloud"></a>既存の Azure VM を Microsoft Defender for Cloud に移行操作方法?
 
@@ -65,10 +73,14 @@ Azure Arc [に接続](/azure/defender-for-cloud/quickstart-onboard-machines?pivo
 ## <a name="how-do-i-migrate-vms-from-aws-or-gcp-environments"></a>AWS または GCP 環境から VM を移行操作方法?
 
 1. サブスクリプションに新しいマルチクラウド コネクタを作成します。 (コネクタの詳細については、「 [AWS アカウント](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings) または [GCP プロジェクト](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings)」を参照してください。
+
 2. マルチクラウド コネクタで、 [AWS](/azure/defender-for-cloud/quickstart-onboard-aws?pivots=env-settings#prerequisites) または [GCP](/azure/defender-for-cloud/quickstart-onboard-gcp?pivots=env-settings#configure-the-servers-plan) コネクタで Defender for Servers を有効にします。
+
 3. Azure Arc エージェント、Microsoft Defender for Endpoint拡張機能、脆弱性評価、および必要に応じて Log Analytics 拡張機能のマルチクラウド コネクタで自動プロビジョニングを有効にします。
-     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Azure Arc エージェントの自動プロビジョニングを有効にする方法を示すスクリーンショット。":::
-詳細については、「 [Defender for Cloud のマルチクラウド機能](https://aka.ms/mdcmc)」を参照してください。
+
+     :::image type="content" source="images/select-plans-aws-gcp.png" alt-text="Azure Arc エージェントの自動プロビジョニングを有効にする方法を示すスクリーンショット。" lightbox="images/select-plans-aws-gcp.png":::
+
+   詳細については、「 [Defender for Cloud のマルチクラウド機能](https://aka.ms/mdcmc)」を参照してください。
 
 ## <a name="what-happens-once-all-migration-steps-are-completed"></a>すべての移行手順が完了するとどうなりますか?
 

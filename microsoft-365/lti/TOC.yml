@@ -16,6 +16,8 @@
   items:
     - name: Blackboard で Microsoft OneDrive LTI を使用する
       href: onedrive-lti-blackboard.md
+    - name: Blackboard Learn で Microsoft Teams 会議を使用する
+      href: teams-meetings-with-blackboard-learn.md
     - name: Blackboard Learn Ultra で Microsoft Teams クラスを使用する
       href: teams-classes-with-blackboard.md
 - name: Moodle の統合

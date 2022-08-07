@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9de497a9-2f5c-43d6-ae18-767f2e6fe6e0
 description: Microsoft 365 グループにゲストを追加し、ゲストを表示し、PowerShell を使用してゲスト アクセスを制御する方法について説明します。
-ms.openlocfilehash: 59ec932aea516107f08570f899987c4d619aa66b
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: c2545c4b6e0d87f3f143139887ff50126bf41d06
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084215"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274750"
 ---
 # <a name="manage-guest-access-in-microsoft-365-groups"></a>Microsoft 365 グループでのゲスト アクセスを管理する
 
@@ -60,15 +60,25 @@ ms.locfileid: "67084215"
   
 1. 管理センターで、**グループ** >  グループに移動 <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">**します**</a>。
   
-2. ゲストを追加するグループをクリックし、[**メンバー**] タブで [**すべて表示とメンバーの管理**] を選択します。 
+2. ゲストを追加するグループを選択し、[**メンバー**] タブで [**すべてのメンバーの表示と管理**] を選択します。 
   
-4. [**メンバーを追加**] を選択し、追加するゲストの名前を選択します。
-    
-5. [**保存**] を選択します。
+3. [**メンバーを追加**] を選択し、追加するゲストの名前を選択します。
+
+4. [**保存**] を選択します。
 
 ディレクトリに直接ゲストを追加する場合は、[Azure Portal で Azure Active Directory B2B コラボレーション ユーザーを追加する](/azure/active-directory/b2b/add-users-administrator)ことができます。
 
 ゲストの情報を編集する必要がある場合は、[Azure Active Directory を使用してユーザーのプロファイル情報を追加または更新する](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)ことができます。
+
+## <a name="remove-a-guest"></a>ゲストを削除する
+
+ゲスト ユーザーとの共同作業が完了したら、それらを削除でき、組織にアクセスできなくなります。
+
+1. Microsoft 365 管理センターで [**ユーザー**] を展開し、[<a href="https://go.microsoft.com/fwlink/p/?linkid=2074830" target="_blank">**ゲスト ユーザー**</a>] を選択します。
+1. [ **ゲスト ユーザー** ] ページで、削除するユーザーを選択し、[ **ユーザーの削除**] を選択します。
+
+Azure AD ポータルでユーザーを削除するには、「 [ゲスト ユーザーとリソースを削除する](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources)」を参照してください。
+
 
 ## <a name="related-content"></a>関連コンテンツ
 

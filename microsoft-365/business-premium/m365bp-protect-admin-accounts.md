@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium で管理者アカウントを設定して保護する方法について説明します。
-ms.openlocfilehash: a6a8cfdff722df6b46c9a83dfc73b429806955ea
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 6534cf3285aa08b4b9da4ea65965751a1ac14a6b
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894451"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67277029"
 ---
 # <a name="protect-your-administrator-accounts-in-microsoft-365-business-premium"></a>Microsoft 365 Business Premium で管理者アカウントを保護する
 
@@ -103,5 +103,4 @@ Microsoft 365 にサインアップして情報を入力すると、自動的に
 
 ## <a name="next-objective"></a>次の目標
 
-[セキュリティの既定値を有効にする](m365bp-conditional-access.md)手順を実行します。
-
+[Microsoft 365 Business Premium の脅威に対する保護を強化する](m365bp-increase-protection.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 新しいドキュメントとラベルのないドキュメントの SharePoint ドキュメント ライブラリの既定の秘密度ラベルを構成します。
-ms.openlocfilehash: cbe3dab1ff70b55f85727649883beab0d2fdc456
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 4ffb0dacac36c79593a8cdfbeed0f4360e246f35
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071333"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276439"
 ---
 # <a name="configure-a-default-sensitivity-label-for-a-sharepoint-document-library"></a>SharePoint ドキュメント ライブラリの既定の秘密度ラベルを構成する
 
@@ -30,7 +30,7 @@ ms.locfileid: "67071333"
 > [!NOTE]
 > この機能はプレビュー段階で段階的に展開され、変更される可能性があります。 また、機能が一般公開 (GA) になったときに提供されるライセンスの詳細を含むプレミアム機能でもあります。
 > 
-> プレビューのお知らせを読むには、 [Yammer の投稿](https://www.yammer.com/askipteam/threads/1846702701985792)を参照してください。
+> プレビューのお知らせを読むには、 [ブログ投稿](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/public-preview-default-label-for-a-document-library-in/ba-p/3585136)を参照してください。
 
 [SharePoint で秘密度ラベルが有効になっている](sensitivity-labels-sharepoint-onedrive-files.md)場合は、ドキュメント ライブラリの既定のラベルを構成できます。 その後、そのライブラリにアップロードされた新しいファイル、またはライブラリで編集された既存のファイルには、秘密度ラベルがない場合、または秘密度ラベルが付いているが [優先度が低い](sensitivity-labels.md#label-priority-order-matters)場合に、そのラベルが適用されます。
 
@@ -52,7 +52,7 @@ Office on the webを使用してファイルを作成または編集する場合
 
 |既存のラベル |ライブラリの既定のラベルでオーバーライドする |
 |:-----|:-----|:-----|
-|任意の優先順位で手動で適用| いいえ |
+|任意の優先順位で手動で適用| 不要 |
 |自動的に適用され、優先度が低い | はい |
 |自動的に適用され、優先度が高い | 不要 |
 |ポリシーからの既定のラベル、優先度の低い | はい |
@@ -79,7 +79,7 @@ Office on the webを使用してファイルを作成または編集する場合
 
 既存のドキュメント ライブラリの場合:
 
-1. SharePoint で、ドキュメント ライブラリの **[設定**] >移動します。
+1. SharePoint で、ドキュメント ライブラリの設定ライブラリ\>**の** \> **設定** に移動します。
 
 2. **[ライブラリ設定**] ポップアップ ウィンドウで、[**既定の秘密度ラベル**] を選択し、ドロップダウン ボックスからラベルを選択します。 以下に例を示します。
     

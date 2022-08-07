@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fef1a5a7b8e47c4f97d36d4002ccf00401948d12
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: bf23036c48952991253ea3a211ebdeb571c98e5f
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66994537"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276976"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Microsoft Monitoring Agent から統合ソリューションへのサーバーの移行
 
@@ -37,7 +37,7 @@ ms.locfileid: "66994537"
 - Microsoft Monitoring Agent にオンボードされた環境内の下位レベルの OS デバイス。 確認するには、タスク マネージャーで実行されていることを `MsSenseS.exe` 確認します。
 - MMA エージェントの存在。 正しいワークスペース ID が コントロール パネル> Microsoft Monitoring Agent に存在するかどうかを確認することで確認できます。
 - デバイスがオンボードされたアクティブなMicrosoft 365 Defender ポータル。
-- WINDOWS SERVER 2012 R2 や MMA エージェントを使用したWindows Server 2016などの下位レベルのサーバーを含むデバイス コレクションは、MECM インスタンスに設定されます。
+- WINDOWS SERVER 2012 R2 や MMA エージェントを使用したWindows Server 2016などの下位レベルのサーバーを含む **デバイス コレクション** は、MECM インスタンスに設定されます。
 
 一覧表示されている前提条件のインストールの詳細については、 [関連トピック](#related-topics) のセクションを参照してください。
 
@@ -46,61 +46,74 @@ ms.locfileid: "66994537"
 統合ソリューション パッケージ、オンボード スクリプト、移行スクリプトを、MECM を使用して他のアプリをデプロイするのと同じコンテンツ ソースにコピーします。
 
 1. オンボード スクリプトと統合ソリューションを[Microsoft 365 Defender設定ページ](https://sip.security.microsoft.com/preferences2/onboarding)からダウンロードします。
-      :::image type="content" source="images/onboarding-script.png" alt-text="オンボード スクリプトと統合ソリューションのダウンロードのスクリーンショット。" lightbox="images/onboarding-script.png":::
+
+   :::image type="content" source="images/onboarding-script.png" alt-text="オンボード スクリプトと統合ソリューションのダウンロードのスクリーンショット。" lightbox="images/onboarding-script.png":::
+      
 2. ドキュメントから移行スクリプトをダウンロードします。[前の MMA ベースのMicrosoft Defender for Endpoint ソリューションのサーバー移行シナリオ](server-migration.md)。 このスクリプトは GitHub: [GitHub - microsoft/mdefordownlevelserver でも確認](https://github.com/microsoft/mdefordownlevelserver)できます。
 3. MECM によってソフトウェア ソースとして使用される共有フォルダーに 3 つのファイルをすべて保存します。
-     :::image type="content" source="images/ua-migration.png" alt-text="MECM によって共有フォルダーを保存するスクリーンショット。":::
+
+   :::image type="content" source="images/ua-migration.png" alt-text="MECM によって共有フォルダーを保存するスクリーンショット。":::
 
 ## <a name="create-the-package-as-an-application"></a>アプリケーションとしてパッケージを作成する
 
 1. MECM コンソールで、 **ソフトウェア ライブラリ>アプリケーション>アプリケーションの作成** の手順に従います。
 2. [ **手動でアプリケーション情報を指定する] を選択します**。
-      :::image type="content" source="images/manual-application-information.png" alt-text="アプリケーション情報の選択を手動で指定するスクリーンショット。" lightbox="images/manual-application-information.png":::
-3. ウィザードの [ソフトウェア センター] 画面で [ **次へ** ] をクリックします。
+   
+   :::image type="content" source="images/manual-application-information.png" alt-text="アプリケーション情報の選択を手動で指定するスクリーンショット。" lightbox="images/manual-application-information.png":::
+   
+3. ウィザードの [ソフトウェア センター] 画面で [ **次へ** ] を選択します。
 4. [展開の種類] で、[ **追加**] をクリックします。
-5. [ **手動] を選択して展開の種類情報を指定** し、[ **次へ**] をクリックします。
-6. スクリプトデプロイに名前を付けて、[ **次へ**] をクリックします。
-     :::image type="content" source="images/manual-deployment-information.png" alt-text="スクリプトのデプロイ情報を指定するスクリーンショット。":::
+5. [ **手動] を選択してデプロイの種類情報を指定** し、[ **次へ**] を選択します。
+6. スクリプトデプロイに名前を付けて、[ **次へ**] を選択します。
+
+   :::image type="content" source="images/manual-deployment-information.png" alt-text="スクリプトのデプロイ情報を指定するスクリーンショット。":::
+     
 7. この手順では、コンテンツが配置されている UNC パスをコピーします。 例: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`。
-     :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC パスのコピーを示すスクリーンショット。":::
+
+   :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC パスのコピーを示すスクリーンショット。":::
+  
 8. さらに、インストール プログラムとして次を設定します。
 
      ```powershell
-       Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -Log -Etl -RemoveMMA 48594f03-7e66-4e15-8b60-d9da2f92d564 -OnboardingScript .\WindowsDefenderATP.onboarding
+      Powershell.exe -ExecutionPolicy ByPass -File install.ps1 -RemoveMMA <workspace ID> -OnboardingScript .\WindowsDefenderATPOnboardingScript.cmd 
      ```
 
+      **[次へ**] をクリックし、このセクションに独自のワークスペース ID を追加してください。
 9. [ **次へ** ] をクリックし、[句の追加] をクリックします。
-10. 句はレジストリ内で検索され、次のキーが存在するかどうかを確認します。  `HKEY_LOCAL_MACHINESOFTWARE\Classes\Installer\Products\63FAD065BFFD18F1926692665F704C6D`
+10. 検出方法は、次に示すレジストリ キーに基づいています。
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense\ImagePath`
 
-     次の入力を指定します。
-     - 値: **ProductName**
-     - データ型 : **String**
-     - オプションを確認します。 **このレジストリ設定は、このアプリケーションの存在を示すためにターゲット システムで終了する必要があります。**
+      オプションを確認します。 **このレジストリ設定は、このアプリケーションの存在を示すためにターゲット システムで終了する必要があります。**
 
-     :::image type="content" source="images/detection-rule-wizard.png" alt-text="レジストリ キーの検出を示すスクリーンショット。":::
+    :::image type="content" source="images/detection-wizard.png" alt-text="検出の種類ウィザードを示すスクリーンショット":::
 
-     >[!TIP]
-     >このレジストリ キーの値は、統合ソリューションがインストールされているデバイスで次の PowerShell コマンドを実行することで取得されました。 他のクリエイティブな検出方法も使用できます。 目標は、統合ソリューションが特定のデバイスに既にインストールされているかどうかを識別することです。
+      >[!TIP]
+      >このレジストリ キーの値は、統合ソリューションがインストールされているデバイスで、次に示す Powershell コマンドを実行して取得されました。 他のクリエイティブな検出方法も使用できます。 目標は、統合ソリューションが特定のデバイスに既にインストールされているかどうかを特定することです。
 
      ```powershell
-     PowerShell Cmd:  get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize
+      get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize 
      ```
 
-11. [ **ユーザー エクスペリエンス** ] セクションでは、環境に合った内容を選択し、[ **次へ**] をクリックできます。 **インストール プログラムを表示するには**、フェーズ テスト中に **通常の可視性** を使用してインストールしてから、一般的な展開のために **最小化** に変更することをお勧めします。
+11. [ **ユーザー エクスペリエンス** ] セクションで、スクリーンショットに示されている推奨設定を確認します。 環境に合わせて選択し、[ **次へ**] をクリックできます。 **インストール プログラムを表示するには**、フェーズ テスト中に **Normal** を使用してインストールしてから、一般的な展開のために **最小化** に変更することをお勧めします。
+     
      >[!TIP]
-     > 許可される最大ランタイムは、(既定の) 120 分から 30 分に引き下げることが可能です。
+     >許容される最大ランタイムを、(既定の) 120 分から 60 分に引き下げます。
 
      :::image type="content" source="images/user-experience-in-deployment-type-wizard.png" alt-text="展開の種類ウィザードでのユーザー エクスペリエンスを示すスクリーンショット。":::
 
-12. [要件] で **[次へ** ] をクリックします。
-13. [依存関係] で **[次へ** ] をクリックします。
-14. 完了画面が表示されるまで **[次へ** ] をクリックし、[ **閉じる**] をクリックします。
-15. アプリケーション ウィザードが完了するまで、次をクリックし続けます。 すべてが緑色でチェックされていることを確認します。
-16. ウィザードを閉じて、最近作成したアプリケーションを右クリックし、下位レベルのサーバー コレクションに展開します。
-     :::image type="content" source="images/deploy-application.png" alt-text="作成されたアプリケーションのデプロイを示すスクリーンショット。" lightbox="images/deploy-application.png":::
-17. MECM>監視>デプロイで、この移行の状態を確認します。
+12. その他の要件を追加し、[ **次へ**] を選択します。 
+13. [依存関係] セクションで、[ **次へ**] を選択します。 
+14. 完了画面が表示されるまで **[次へ** ]、[ **閉じる**] の順に選択します。
+15. アプリケーション ウィザードが完了するまで **[次へ** ]を選択し続けます。 すべてが緑色でチェックされていることを確認します。
+16. ウィザードを閉じて、最近作成したアプリケーションを右クリックし、下位レベルのサーバー コレクションに展開します。 ローカルでは、ソフトウェア センターでインストールを確認できます。 詳細については、CM ログの場所を `C:\Windows\CCM\Logs\AppEnforce.log`確認してください。
 
-      :::image type="content" source="images/deployment-status.png" alt-text="デプロイの状態チェックを示すスクリーンショット。" lightbox="images/deployment-status.png":::
+    :::image type="content" source="images/deploy-application.png" alt-text="作成されたアプリケーションのデプロイを示すスクリーンショット。" lightbox="images/deploy-application.png":::
+     
+17. MECM > Monitoring > Deployments で移行の状態を確認します。
+
+    :::image type="content" source="images/deployment-status.png" alt-text="デプロイの状態チェックを示すスクリーンショット。" lightbox="images/deployment-status.png":::
+      
+18. トラブルシューティング。ETL ファイルが作成され、この場所 `C:\Windows\ccmcache\#\`の各サーバーに自動的にローカルに保存されます。 これらのファイルは、オンボードの問題のトラブルシューティングをサポートすることで利用できます。
 
 ## <a name="related-topics"></a>関連項目
 

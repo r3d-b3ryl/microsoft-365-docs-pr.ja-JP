@@ -17,12 +17,12 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: d8938c06e42a546b4cf28bf55fc2b6ba49269492
-ms.sourcegitcommit: 180da7b39cfda7263a89bda0c3b93d9d6e55f3c2
+ms.openlocfilehash: 01a88ff4f31e6a85c9fe6c52ee3968def1cc4ce1
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66843459"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276374"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defenderを使用してMicrosoft 脅威エキスパート機能を構成および管理する
 
@@ -82,9 +82,17 @@ Microsoft Defender for EndpointとMicrosoft 365 Defenderが既にある場合は
 
 電子メール通知を受信するようにシステムを構成した後、電子メールのMicrosoft 脅威エキスパートからエンドポイント攻撃通知の受信を開始します。
 
-1. メール内のリンクを選択して、 **脅威の専門家** がタグ付けされたダッシュボードの対応するアラート コンテキストに移動します。
+1. メール内のリンクを選択して、 **Defender Experts** でタグ付けされたダッシュボード内の対応するアラート コンテキストに移動します。
 
 2. [ **アラート** ] ページで、メールで受信したアラート トピックと同じアラート トピックを選択して、詳細を表示します。
+
+### <a name="filter-to-view-just-the-endpoint-attack-notifications"></a>エンドポイント攻撃通知のみを表示するフィルター
+
+多数のアラートのうち Defender エキスパート通知のみを表示する場合は、インシデントとアラートをフィルター処理できます。 そのためには、次を実行します。
+
+1. ナビゲーション メニューの [**インシデント&アラート** > **インシデント**] に移動>、[フィルター] アイコン](../../media/mte/defenderexperts/filter.png) アイコンを![選択します。
+2. [ **タグ** ] フィールドまで下にスクロール> **、[Defender エキスパート** ] チェック ボックスをオンにします。
+3. **[適用]** を選択します。
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft 脅威エキスパートをサブスクライブする - エキスパート オンデマンド
 
@@ -97,21 +105,11 @@ Microsoft 365 Defender ポータル内からMicrosoft 脅威エキスパート�
 > [!NOTE]
 >
 > - 組織のカスタマイズされた脅威インテリジェンス データに関連するアラートの問い合わせは、現在サポートされていません。 詳細については、セキュリティ運用またはインシデント対応チームにお問い合わせください。
-> - 脅威 **の専門家に相談** するフォームから問い合わせを送信するには、Microsoft 365 Defender ポータルの **セキュリティ センターでセキュリティ設定を管理** するアクセス許可が必要です。
+> - Microsoft 365 Defender ポータル **のセキュリティ センターでセキュリティ設定を管理** する権限を持って **、Defender エキスパートに問** い合わせフォームから問い合わせを送信する必要があります。
 
 1. 調査する情報に関連するポータル ページ ( **デバイス**、 **アラート**、 **インシデント** など) に移動します。 調査要求を送信する前に、お問い合わせに関連するポータル ページが表示されていることを確認してください。
 
-2. 上部のメニューから [ **?脅威の専門家に問い合わせてください**。
-
-    :::image type="content" source="../../media/mte/incidents-action-mte-highlighted.png" alt-text="Microsoft 365 Defender ポータルのメニューからMicrosoft 脅威エキスパートエキスパートオンデマンド" lightbox="../../media/mte/incidents-action-mte-highlighted.png":::
-
-    ポップアップ画面が開きます。
-
-    ヘッダーには、試用版サブスクリプションを使用しているか、または完全なMicrosoft 脅威エキスパート - エキスパート オンデマンド サブスクリプションが表示されます。
-
-    :::image type="content" source="../../media/mte/mte-trial.png" alt-text="Microsoft 365 Defender ポータルの [Microsoft 脅威エキスパート エキスパート オンデマンド試用版サブスクリプション] 画面" lightbox="../../media/mte/mte-trial.png":::
-
-    **[調査] トピック** フィールドには、要求に関連するページへのリンクが既に設定されます。
+2. 上部のメニューから [ **?Defender エキスパートに問い合わせ** ましょう。 ポップアップ画面が開きます。 ヘッダーには、試用版サブスクリプションを使用しているかどうかを示す、または完全なMicrosoft 脅威エキスパート - エキスパート オンデマンド サブスクリプションが表示されます。 **[調査] トピック** フィールドには、要求に関連するページへのリンクが既に設定されます。
 
 3. 次のフィールドで、調査を開始するのに十分なコンテキストをMicrosoft 脅威エキスパートするのに十分な情報を指定します。
 
@@ -148,7 +146,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 ### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 脅威エキスパート' アラート通信
 
 - インシデント対応チームは、ターゲットを絞った攻撃通知に対処するのに役立ちますか?
-- Microsoft 脅威エキスパートからこの標的型攻撃通知を受け取った。 独自のインシデント対応チームはありません。 この時点でできることと、インシデントをどのように含めることができるか。
+- Microsoft 脅威エキスパートからエンドポイント攻撃通知を受信しました。 独自のインシデント対応チームはありません。 この時点でできることと、インシデントをどのように含めることができるか。
 - Microsoft 脅威エキスパートから標的型攻撃通知を受け取った。 インシデント対応チームに渡すことができるデータは何ですか?
 
 > [!NOTE]
@@ -167,6 +165,6 @@ Microsoft 脅威エキスパートからの回答は、お問い合わせによ�
 
 専門家がより多くの情報やファイル サンプルを要求する場合は、調査を継続するために迅速に対応することが重要です。
 
-## <a name="see-also"></a>関連項目
+## <a name="to-proactively-hunt-threats-across-endpoints-office-365-cloud-applications-and-identity-refer-to"></a>エンドポイント、Office 365、クラウド アプリケーション、ID 全体で脅威をプロアクティブに検出するには、次を参照してください。 
 
-- [Microsoft 脅威エキスパートの概要](microsoft-threat-experts.md)
+- [Microsoft Defender Experts for Hunting の概要](defender-experts-for-hunting.md)

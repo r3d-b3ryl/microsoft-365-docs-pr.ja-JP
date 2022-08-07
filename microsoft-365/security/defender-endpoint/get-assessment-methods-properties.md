@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 022c5854c955ed9b0faef16455be1af3a81b0997
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 574a3b1206212b627176b4d85555f6acc15ebda6
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487291"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276942"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>デバイスごとの評価方法とプロパティをエクスポートする
 
@@ -36,7 +36,7 @@ ms.locfileid: "66487291"
 
 ## <a name="api-description"></a>API の説明
 
-デバイスごとに脅威と脆弱性の管理データをプルする API に関するメソッドとプロパティの詳細を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。
+デバイスごとに脆弱性管理データをプルする API に関するメソッドとプロパティの詳細を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。
 
 > [!NOTE]
 > 特に明記されていない限り、一覧表示されているすべてのエクスポート評価方法は **_、完全なエクスポート_** と **_デバイス別_** ( **_デバイスごと_** とも呼ばれます) です。
@@ -46,6 +46,7 @@ ms.locfileid: "66487291"
 - [1. セキュリティで保護された構成の評価をエクスポートする](#1-export-secure-configurations-assessment)
 - [2. ソフトウェア インベントリの評価をエクスポートする](#2-export-software-inventory-assessment)
 - [3. ソフトウェアの脆弱性評価をエクスポートする](#3-export-software-vulnerabilities-assessment)
+- [4. 製品コード以外のソフトウェア インベントリ評価をエクスポートする](#4-export-non-product-code-software-inventory-assessment)
 
 エクスポート情報の種類に対応する API については、セクション 1、2、および 3 で説明します。
 
@@ -65,7 +66,7 @@ ms.locfileid: "66487291"
 
 ### <a name="11-methods"></a>1.1 メソッド
 
-メソッド|データ型|説明
+Method|データ型|説明
 :---|:---|:---
 セキュリティで保護された構成評価 **をエクスポートする (JSON 応答)**|デバイス コレクションによるセキュリティで保護された構成。 参照: [1.2 プロパティ (JSON 応答)](#12-properties-json-response)|DeviceId、ConfigurationId のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答はページ分割されるため、応答の@odata.nextLink フィールドを使用して、次の結果をフェッチできます。
 セキュリティで保護された構成評価 **をエクスポートする (ファイル経由)**|デバイス コレクションによるセキュリティで保護された構成。 参照: [1.3 プロパティ (ファイル経由)](#13-properties-via-files)|DeviceId、ConfigurationId のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からすべてのデータをダウンロードできます。 <ol><li>すべての組織データを含むダウンロード URL の一覧を取得するには、API を呼び出します。</li><li>ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。</li></ol>
@@ -84,7 +85,7 @@ deviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
 isApplicable|ブール|構成またはポリシーが適用可能かどうかを示します。
 isCompliant|ブール|構成またはポリシーが適切に構成されているかどうかを示します。
 isExpectedUserImpact|ブール|構成が適用される場合に、ユーザーが影響を受けるかどうかを示します。
-osPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 Windows 10やWindows 11など、同じファミリ内にバリエーションがある特定のオペレーティング システム。 詳細については、TVM でサポートされているオペレーティング システムとプラットフォームを参照してください。
+osPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。 Windows 10やWindows 11など、同じファミリ内にバリエーションがある特定のオペレーティング システム。 詳細については [、「サポートされているオペレーティング システム、プラットフォーム、および機能](../defender-vulnerability-management/tvm-supported-os.md) 」を参照してください。
 osVersion|String|デバイスで実行されているオペレーティング システムの特定のバージョン。
 rbacGroupName|String|ロールベースのアクセス制御 (RBAC) グループ。 デバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 rbacGroupId|String|ロールベースのアクセス制御 (RBAC) グループ ID。
@@ -104,7 +105,7 @@ GeneratedTime|String|エクスポートが生成された時刻。
 
 ### <a name="21-methods"></a>2.1 メソッド
 
-|メソッド|データ型|説明|
+|Method|データ型|説明|
 |:---|:---|:---|
 |ソフトウェア インベントリ評価 **のエクスポート (JSON 応答)**|デバイス コレクション別のソフトウェア インベントリ。 参照: [2.2 プロパティ (JSON 応答)](#22-properties-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答はページ分割されるため、応答の@odata.nextLink フィールドを使用して、次の結果をフェッチできます。 |
 | ソフトウェア インベントリ評価 **のエクスポート (ファイル経由)**|デバイス ファイル別のソフトウェア インベントリ。 参照: [2.3 プロパティ (ファイル経由)](#23-properties-via-files)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からデータをダウンロードできます。 <ol><li>組織のデータを含むダウンロード URL の一覧を取得するには、API を呼び出します</li><li>ダウンロード URL を使用してファイルをダウンロードし、必要に合ったデータを処理します。</li></ol> |
@@ -119,7 +120,7 @@ DiskPaths|Array[string]|製品がデバイスにインストールされてい�
 EndOfSupportDate|String|このソフトウェアのサポートが終了または終了する日付。
 EndOfSupportStatus|String|サポートの終了状態。 次の値を含めることができます。None、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。
 NumberOfWeaknesses|Int|このデバイス上のこのソフトウェアの弱点の数。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システム。 詳細については、tvm でサポートされているオペレーティング システムとプラットフォームを参照してください。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システム。 詳細については [、「サポートされているオペレーティング システム、プラットフォーム、および機能](../defender-vulnerability-management/tvm-supported-os.md) 」を参照してください。
 RbacGroupName|String|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 rbacGroupId|String|ロールベースのアクセス制御 (RBAC) グループ ID。
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
@@ -141,7 +142,7 @@ GeneratedTime|String|エクスポートが生成された時刻。
 
 ### <a name="31-methods"></a>3.1 メソッド
 
-メソッド|データ型|説明
+Method|データ型|説明
 :---|:---|:---
 ソフトウェアの脆弱性評価 **のエクスポート (JSON 応答)**|調査コレクション See: [3.2 プロパティ (JSON 応答)](#32-properties-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答はページ分割されるため、応答の@odata.nextLink フィールドを使用して、次の結果をフェッチできます。
 ソフトウェア脆弱性評価のエクスポート **(ファイル経由)**|調査エンティティ参照: [3.3 プロパティ (ファイル経由)](#33-properties-via-files)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion、CveId のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からすべてのデータをダウンロードできます。 <ol><li>すべての組織データを含むダウンロード URL の一覧を取得するには、API を呼び出します。</li><li>ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。</li></ol>
@@ -160,14 +161,14 @@ ExploitabilityLevel|String|この脆弱性の悪用可能性レベル (NoExploit
 FirstSeenTimestamp|String|この製品の CVE がデバイスで初めて確認されたとき。
 Id|String|レコードの一意の識別子。
 LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システム。 詳細については、tvm でサポートされているオペレーティング システムとプラットフォームを参照してください。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システム。 詳細については [、「サポートされているオペレーティング システム、プラットフォーム、および機能](../defender-vulnerability-management/tvm-supported-os.md) 」を参照してください。
 RbacGroupName|String|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 rbacGroupId|String|ロールベースのアクセス制御 (RBAC) グループ ID。
 RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
 RecommendedSecurityUpdate|String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
 RecommendedSecurityUpdateId|String|該当するセキュリティ更新プログラムの識別子、または対応するガイダンスまたはサポート情報 (KB) の記事の識別子。
 レジストリ パス|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。
-SecurityUpdateAvailable|ブール値|ソフトウェアでセキュリティ更新プログラムを使用できるかどうかを示します。
+SecurityUpdateAvailable|ブール型|ソフトウェアでセキュリティ更新プログラムを使用できるかどうかを示します。
 SoftwareName|String|ソフトウェア製品の名前。
 SoftwareVendor|String|ソフトウェア ベンダーの名前。
 SoftwareVersion|String|ソフトウェア製品のバージョン番号。
@@ -194,7 +195,7 @@ ExploitabilityLevel|String|脆弱性の悪用可能性レベル (NoExploit、Exp
 FirstSeenTimestamp|String|製品の CVE がデバイスで初めて見られた時。
 Id|String|レコードの一意の識別子。  
 LastSeenTimestamp|String|デバイスで CVE が最後に表示された時刻。
-OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システム。 詳細については、tvm でサポートされているオペレーティング システムとプラットフォームを参照してください。
+OSPlatform|String|デバイスで実行されているオペレーティング システムのプラットフォーム。Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システム。 詳細については [、「サポートされているオペレーティング システム、プラットフォーム、および機能](../defender-vulnerability-management/tvm-supported-os.md) 」を参照してください。
 RbacGroupName|String|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 RecommendationReference|String|このソフトウェアに関連する推奨事項 ID への参照。
 RecommendedSecurityUpdate |String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。
@@ -206,11 +207,44 @@ SoftwareVersion|String|ソフトウェア製品のバージョン番号。
 状態|String|**新規** (デバイスに導入された新しい脆弱性の場合)。 **修正されました** (デバイスに存在しなくなった脆弱性の場合、修復されたことを意味します)。 **更新されました** (変更されたデバイスの脆弱性の場合)。 可能な変更は、CVSS スコア、悪用可能性レベル、重大度レベル、DiskPaths、RegistryPaths、RecommendedSecurityUpdate です。
 VulnerabilitySeverityLevel|String|CVSS スコアと脅威の状況の影響を受ける動的な要因に基づいて、セキュリティの脆弱性に割り当てられた重大度レベル。
 
+## <a name="4-export-non-product-code-software-inventory-assessment"></a>4. 製品コード以外のソフトウェア インベントリ評価をエクスポートする
+
+[共通プラットフォーム列挙 (CPE)](https://nvd.nist.gov/products/cpe) を持たないインストールされているすべてのソフトウェアと、各デバイスの詳細を返します。
+
+### <a name="41-methods"></a>4.1 メソッド
+
+|Method|データ型|説明|
+|:---|:---|:---|
+|製品コード以外のソフトウェア インベントリ評価 **をエクスポートする (JSON 応答)**|デバイス コレクション別の非製品コード ソフトウェア インベントリ。 参照: [4.2 プロパティ (JSON 応答)](#42-properties-json-response)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、100 K 未満のデバイスを持つ小規模な組織に最適です。 応答はページ分割されるため、応答の@odata.nextLink フィールドを使用して、次の結果をフェッチできます。 |
+| (**ファイル経由で)** 製品コード以外のソフトウェア インベントリ評価をエクスポートする|デバイス ファイル別の製品コード以外のソフトウェア インベントリ。 参照: [4.3 プロパティ (ファイル経由)](#43-properties-via-files)|DeviceId、SoftwareVendor、SoftwareName、SoftwareVersion のすべての一意の組み合わせのエントリを含むテーブルを返します。 この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からデータをダウンロードできます。 <ol><li>組織のデータを含むダウンロード URL の一覧を取得するには、API を呼び出します</li><li>ダウンロード URL を使用してファイルをダウンロードし、必要に合ったデータを処理します。</li></ol> |
+
+### <a name="42-properties-json-response"></a>4.2 プロパティ (JSON 応答)
+
+プロパティ (ID)|データ型|説明
+:---|:---|:---
+DeviceId|文字列|サービス内のデバイスの一意の識別子。
+DeviceName|文字列|デバイスの完全修飾ドメイン名 (FQDN)。
+OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これらは、Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システムです。 詳細については [、「サポートされているオペレーティング システム、プラットフォーム、および機能](../defender-vulnerability-management/tvm-supported-os.md) 」を参照してください。
+RbacGroupName|string|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
+RbacGroupId|string|ロールベースのアクセス制御 (RBAC) グループ ID。
+SoftwareLastSeenTimestamp|string|このソフトウェアがデバイスで最後に表示された時刻。
+SoftwareName|文字列|ソフトウェア製品の名前。
+SoftwareVendor|string|ソフトウェア ベンダーの名前。
+SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。
+
+### <a name="43-properties-via-files"></a>4.3 プロパティ (ファイル経由)
+
+プロパティ (ID)|データ型|説明
+:---|:---|:---
+ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
+GeneratedTime|String|エクスポートが生成された時刻。
+
 ## <a name="see-also"></a>関連項目
 
 - [デバイスごとのセキュリティで保護された構成評価をエクスポートする](get-assessment-secure-config.md)
 - [デバイスごとのソフトウェア インベントリ評価をエクスポートする](get-assessment-software-inventory.md)
 - [デバイスごとのソフトウェア脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
+- [デバイスごとの cpe 以外のソフトウェア インベントリ評価をエクスポートする](get-assessment-non-cpe-software-inventory.md)
 
 その他の関連
 

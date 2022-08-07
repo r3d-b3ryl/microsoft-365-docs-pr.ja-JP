@@ -10,17 +10,17 @@ ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 06/02/2022
+ms.date: 08/04/2022
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: eb4551d703258c5fdfa3429b721ef3317e9d2c6d
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: af697062c7ce7a0d5f3fd4879a622970962c1083
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717284"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275856"
 ---
 # <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策ソフトウェアの問題をトラブルシューティングするため、イベント ログとエラー コードをレビューする
 
@@ -2578,7 +2578,7 @@ Microsoft Defender ウイルス対策スキャンが無効になっています�
 説明:
 </td>
 <td >
-改ざん防止が有効になっている場合、Defender の設定を変更しようとするとブロックされ、イベント ID 5013 が生成され、どの設定の変更がブロックされたかが示されます。
+改ざん防止が有効になっている場合、Defender の設定を変更しようとするとブロックされます。 イベント ID 5013 が生成され、どの設定変更がブロックされたかが示されます。
 </td>
 </tr>
 <tr>
@@ -2646,8 +2646,7 @@ Microsoft Defender ウイルス対策の猶予期間の有効期限が切れて�
 </table>
 
 <a id="error-codes"></a>
-## Microsoft Defender ウイルス対策 クライアント エラー コード。Microsoft Defender ウイルス対策でなにか問題が発生した場合は、通常、問題のトラブルシューティングに役立つエラー コードが表示されます。 ほとんどの場合、エラーは更新プログラムのインストールに問題が発生したという意味です。
-このセクションでは、Microsoft Defender ウイルス対策 クライアント エラーに関する次の情報を提供します。
+## Microsoft Defender ウイルス対策 クライアント エラー コード。Microsoft Defender ウイルス対策でなにか問題が発生した場合は、通常、問題のトラブルシューティングに役立つエラー コードが表示されます。 ほとんどの場合、エラーは更新プログラムのインストールに問題が発生したという意味です。 このセクションでは、Microsoft Defender ウイルス対策 クライアント エラーに関する次の情報を提供します。
 - エラー コード - エラーの考えられる理由 - 今すぐ実行する操作に関するアドバイス
 
 これらのテーブルの情報を使用して、Microsoft Defender ウイルス対策のエラー コードのトラブルシューティングに役立てます。

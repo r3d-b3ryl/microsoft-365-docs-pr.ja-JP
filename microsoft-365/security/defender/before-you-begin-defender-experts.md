@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f686777e32aac9bea4a9d45d365ff977bf0fb357
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 51e882c879f9365fbdc5b4a70d2ade106d061d51
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67109390"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276222"
 ---
 # <a name="before-you-begin-using-defender-experts-for-hunting"></a>Defender Experts for Hunting の使用を開始する前に
 
@@ -81,11 +81,11 @@ Defender Experts for Hunting を購入してオンボードすると、高度な
 
 まだ行っていない場合は、Defender Experts for Hunting の顧客の関心フォームに入力できます。
 
-1. 顧客の関心フォームに入力します。 会社の誰でも申請できますが、承諾された場合は、コマーシャル エグゼクティブと協力して SKU を処理する必要があります。
-2. 会社のメール ID を入力します。
+1. [顧客の関心フォームに入力します](https://aka.ms/DEX4HuntingCustomerInterestForm)。 会社の誰でも申請できますが、承諾された場合は、コマーシャル エグゼクティブと協力して SKU を処理する必要があります。
+2. 名前、会社名、会社の電子メール ID を入力します。
 3. **[送信]** を選択します。 営業チームの誰かが 5 営業日以内に連絡を取ります。
 
 
-### <a name="next-step"></a>次の手順
+### <a name="next-step"></a>次のステップ
 
-- [Defender エキスパートのハンティングの使用を開始する](onboarding-defender-experts-for-hunting.md)
+- [Defender Experts for Hunting の使用を開始する](onboarding-defender-experts-for-hunting.md)

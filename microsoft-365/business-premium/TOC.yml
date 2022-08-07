@@ -24,10 +24,10 @@
       items:
         - name: 概要
           href: m365bp-security-overview.md
+        - name: セキュリティの既定値 (MFA) を有効にする
+          href: m365bp-conditional-access.md
         - name: 管理者アカウントを保護する
           href: m365bp-protect-admin-accounts.md
-        - name: セキュリティの既定値を有効にする
-          href: m365bp-conditional-access.md
         - name: マルウェアやその他の脅威から保護する
           href: m365bp-increase-protection.md
 - name: チームをトレーニングする
