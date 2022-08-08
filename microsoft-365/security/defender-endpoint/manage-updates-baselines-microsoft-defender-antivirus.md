@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
+ms.date: 08/04/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -18,12 +19,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1b8cb5b55cc0605df0040bcc6b3a75498ef1ea4a
-ms.sourcegitcommit: 0c87abc17fbfe8aa43d61510101acdad0d491cd2
+ms.openlocfilehash: 1c1921b368ce404d5065854ae9f71fe8713dd9d4
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66612175"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275672"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -157,7 +158,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - [behavior monitoring](configure-protection-features-microsoft-defender-antivirus.md) の短いライブ プロセスに関連するパフォーマンスの問題の修正プログラムを追加しました 
 - [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) 除外の修正プログラムを追加しました 
 - 強化された [改ざん防止](prevent-changes-to-security-settings-with-tamper-protection.md) 機能 
-- [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) が `SharedSignaturesPath` config を使用している場合に無効になる修正プログラムを追加しました (`SharedSignaturesPath` パラメーターの詳細については、「[Set-MpPreference](/powershell/module/defender/set-mppreference)」 を参照してください)
+- [real-time protection](configure-protection-features-microsoft-defender-antivirus.md) が `SharedSignaturesPath` config を使用している場合に無効になる修正プログラムを追加しました。`SharedSignaturesPath` パラメーターの詳細については、[Set-MpPreference](/powershell/module/defender/set-mppreference) を参照してください。
 
 ### <a name="known-issues"></a>既知の問題
 
@@ -748,6 +749,21 @@ Windows 10 リリース情報については、「[Windows ライフサイクル
 詳細については、「[Windows オペレーティング システムのインストール イメージ用の Microsoft Defender 更新プログラム](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)」を参照してください。
 
 <details>
+<summary>20220802.1</summary>
+
+&ensp;パッケージ バージョン: **20220802.1**<br/>
+&ensp;プラットフォームのバージョン: **4.18.2205.7**<br/>
+&ensp;エンジンバージョン: **1.1.19400.3**<br/>
+&ensp;署名バージョン: **1.371.1205.0**<br/>
+
+### <a name="fixes"></a>修正プログラム
+- なし
+
+### <a name="additional-information"></a>その他の情報
+- なし
+
+<br/>
+</details><details>
 <summary>20220629.5</summary>
 
 &ensp;パッケージのバージョン: **20220629.5**<br/>
