@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/01/2022
+ms.date: 08/05/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 8c5e3436c4055b466ab9e17fd5d4a958a5a25edc
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: b123f7e13a8a3fa3c796f3ce2ff02ea2ca125872
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112463"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67275036"
 ---
 # <a name="set-up-microsoft-365-business-premium"></a>Microsoft 365 Business Premium のセットアップ
 
@@ -38,20 +38,23 @@ ms.locfileid: "67112463"
 | サブスクリプション | Microsoft 365 Business Premium または Microsoft 365 for Campaigns <br/><br/> 試用版を開始する、またはサブスクリプションを購入するには、次の記事を参照してください。 <br/>- [Microsoft 365 Business Premium を入手する](get-microsoft-365-business-premium.md)<br/>- [Microsoft 365 for Campaigns を入手する](get-microsoft-365-campaigns.md) |
 | アクセス許可  | 初期セットアップの手順を完了するには、グローバル管理者である必要があります。[管理者ロールの詳細を参照してください](../admin/add-users/about-admin-roles.md)。 |
 | ブラウザー要件 | Microsoft Edge、Safari、Chrome または Firefox。 [ブラウザー要件の詳細を参照してください](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources#coreui-heading-uyetipy)。  |
-| オペレーティング システム | **Windows**:  Windows 11、Windows 10、Windows 8.1<br/>**MacOS**: 最新の 3 つのバージョンのいずれか。 <br/>現在、Microsoft 365 Business Premium およびスタンドアロン バージョンの Microsoft Defender for Business は、サーバーをサポートしていません。  |
+| オペレーティング システム (クライアント) | **Windows**:  Windows 11、Windows 10、Windows 8.1<br/>**MacOS**: 最新の 3 つのバージョンのいずれか。 
+| オペレーティング システム (サーバー) | Windows Server または Linux Server <br/>- Microsoft Defender for Business サーバーが必要です (現在プレビュー段階)<br/>- 「[Microsoft Defender for Business サーバーの取得方法 (プレビュー)](../security/defender-business/get-defender-business-servers.md)」を参照してください。  |
 
 > [!NOTE]
 > Microsoft 365、Office、システム要件の詳細については、「[Microsoft 365 および Office のリソース](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources)」を参照してください。
 
 ## <a name="guided-setup-process"></a>ガイド付きセットアップ プロセス
 
-Microsoft 365 Business Premium には、ガイド付き手順が含まれています。 次のビデオは、Microsoft 365 Business Standard のガイド付きセットアップ プロセスを示しています。これは、Microsoft 365 Business Premium にも適用されます。 ガイド付きセットアップ プロセスが完了したらすぐに、[セキュリティの強化](m365bp-security-overview.md) に進むようにしてください。<br/><br/>
+Microsoft 365 Business Premium には、ガイド付き手順が含まれています。 次のビデオは、Microsoft 365 Business Standard のガイド付きセットアップ プロセスを示しています。これは、Microsoft 365 Business Premium にも適用されます。 <br/><br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
+ガイド付きセットアップ プロセスが完了したらすぐに、[セキュリティの強化](m365bp-security-overview.md) に進むようにしてください。
+
 > [!TIP]
 > - ユーザーを追加したら、「[従業員クイック セットアップ ガイド](../admin/setup/employee-quick-setup.md)」 へのリンクをユーザーに提供します。 このガイドでは、サインイン、Office アプリの取得、ファイルの保存、コピー、共有について説明します。
-> - [セキュリティの強化](m365bp-security-overview.md) に進むようにしてください。
+
 
 ## <a name="work-with-a-microsoft-partner"></a>Microsoft パートナーと連携する
 
@@ -76,6 +79,6 @@ Microsoft 365 の入手と設定に Microsoft パートナーのサポートを�
 - [セルフサービス パスワードを設定する](../admin/add-users/let-users-reset-passwords.md)
 - [セルフサービスによるグループ管理をセットアップする](/azure/active-directory/enterprise-users/groups-self-service-management)
 
-### <a name="next-objective"></a>次の目標
+## <a name="next-objective"></a>次の目標
 
-これらの目標を達成したら、[セキュリティの強化](m365bp-security-overview.md) に進みます。
+[セキュリティの強化](m365bp-security-overview.md)に進みます。

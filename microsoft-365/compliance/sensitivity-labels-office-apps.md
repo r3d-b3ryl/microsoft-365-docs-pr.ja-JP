@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e34679c994ce75b95b5582290d2ed7c4ca726ac3
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d35555f466b1ec201185efd51f37d4111911f16d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175314"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276461"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -39,7 +39,7 @@ Windows コンピューター専用の Office のサブスクリプション バ
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>アプリでの秘密度ラベル機能のサポート
 
-次の表に、Office アプリに組み込まれている秘密度ラベルの特定の機能を導入した Office の最小バージョンを示します。 または、ラベル機能が公開プレビュー中または将来のリリースのためにレビュー中の場合。 将来のリリースで計画されている新機能に関する詳細に[Microsoft 365 ロードマップ](https://aka.ms/MIPC/Roadmap)を使用します。
+次の表に、Office アプリに組み込まれている秘密度ラベルの特定の機能を導入した Office の最小バージョンを示します。 または、ラベル機能が公開プレビュー中または将来のリリースのためにレビュー中の場合。 将来のリリースで計画されている新機能に関する詳細に[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity)を使用します。
 
 Office アプリの新しいバージョンは、さまざまな更新チャネルでさまざまな時間に利用できるようになります。 Windows の場合、半期エンタープライズ チャネルよりも最新チャネルや月次エンタープライズ チャネルである場合に早期に取得できます。 最小バージョン番号も、ある更新チャネルと次の更新のものとで異なる場合があります。 詳細については、「[Microsoft 365 Apps 用更新プログラム チャネルの概要](/deployoffice/overview-update-channels)」および「[Microsoft 365 Apps の更新履歴](/officeupdates/update-history-microsoft365-apps-by-date)」を参照してください。
 
@@ -104,7 +104,7 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上 <sup>\*</sup>                    | レビュー中           | レビュー中               | はい |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中           | レビュー中               | はい |
 |[既定ラベルと必須ラベルのさまざまな設定](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.43 以上 <sup>\*</sup>                   | 4.2111 以上           | 4.2111 以上               | はい |
-|[PDF サポート](#pdf-support) | レビュー中|  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
+|[PDF サポート](#pdf-support) | プレビュー: [ベータ チャネル](https://office.com/insider)へのロールアウト|  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
 |[S/MIME 保護を適用する](#configure-a-label-to-apply-smime-protection-in-outlook)                    | レビュー中 | ロールアウト: 16.61 以上 <sup>\*</sup>                   | ロールアウト: 4.2226 以上 | ロールアウト: 4.2203 以上 | レビュー中 |
 
 **脚注:**
@@ -447,11 +447,13 @@ Word、Excel、および PowerPoint は、Office ドキュメントを PDF ド�
 
 PDF が作成されると、コンテンツのマーキングと暗号化を含むラベルが継承されます。 暗号化された PDF は、Windows または Mac の Microsoft Edge で開くことができます。 詳細および代替リーダーについては、「[保護された PDF をサポートする PDF リーダー](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)」を参照してください。
 
+Outlook では、現在、ラベル付きメッセージから暗号化を継承する PDF 添付ファイルはサポートされていません。 ただし、Outlook では、次に説明するように、ユーザーが PDF に印刷できないように警告またはブロックする機能がサポートされるようになりました。
+
 PDF シナリオはサポートされていません:
 
 - PDF に印刷する
     
-    ユーザーがこのオプションを選択すると、ドキュメントがラベルの保護と暗号化 (適用されている場合) を失うことを警告され、続行するには確認する必要があります。 秘密度ラベル ポリシーでラベルを削除するか、その分類を下げる理由が必要な場合は、このプロンプトが表示されます。
+    ユーザーがこのオプションを選択すると、ドキュメントまたはメールがラベルの保護と暗号化 (適用されている場合) を失うことを警告され、続行するには確認する必要があります。 秘密度ラベル ポリシーでラベルを削除するか、その分類を下げる理由が必要な場合は、このプロンプトが表示されます。
     
     このオプションは秘密度ラベルを削除するため、必須のラベルを使用している場合、ユーザーはこのオプションを使用できません。 この構成は、ユーザーがメールとドキュメントにラベルを適用することを要求する秘密度ラベル ポリシー設定を参照します。
 

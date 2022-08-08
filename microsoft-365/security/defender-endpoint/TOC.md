@@ -513,6 +513,7 @@
 ####### [評価方法とプロパティのエクスポート](get-assessment-methods-properties.md)
 ####### [安全な構成評価のエクスポート](get-assessment-secure-config.md)
 ####### [ソフトウェア在庫評価のエクスポート](get-assessment-software-inventory.md)
+####### [製品コード以外のソフトウェア在庫評価のエクスポート](get-assessment-non-cpe-software-inventory.md)
 ####### [ソフトウェアの脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
 
 ###### [自動調査]()

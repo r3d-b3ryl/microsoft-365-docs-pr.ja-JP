@@ -23,12 +23,12 @@ description: カスタマイズ可能なリソースとインフォグラフィ�
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: cb2ed6e54c4d513db89440549e69e9bacb4bc636
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: e0ac855943bb0cd9ddb7279252b1df6ae9440ffc
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822664"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67277051"
 ---
 # <a name="help-your-clients-and-customers-use-virtual-appointments"></a>クライアントと顧客が仮想予定を使用できるようにする
 
@@ -80,7 +80,7 @@ ms.locfileid: "66822664"
 
 **誰と予定を作成できますか?**
 
-対面で専門のスタッフが対応している場合があれば、誰かを共有し、クライアントが優先したいプロバイダーとの関係性を維持できるようにしてください。
+対面で専門のスタッフ メンバーが対応している場合があれば、誰かを共有し、クライアントが優先したいプロバイダーとの関係性を維持できるようにしてください。
 
 **仮想予定をキャンセルまたはスケジュール変更の方法**
 
@@ -100,10 +100,12 @@ ms.locfileid: "66822664"
 
 スタッフ メンバーが実行方法を知っていることを確認して、仮想予定を最大限に活用します。 これらの記事やビデオをチーム メンバーと共有して、仮想予定への理解を深めることができます。
 
-- [Teams で Bookings アプリを使用する方法について説明します](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)
-- [Bookings の予定に参加する方法について説明します](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0)
-- [予定を実施します](bookings-virtual-visits.md#conduct-an-appointment)
-- [仮想予定に関するビデオを見ます](#help-your-clients-and-customers-use-virtual-appointments)
+- [Teams で Bookings アプリを使用する方法について説明します](https://support.microsoft.com/office/what-is-bookings-42d4e852-8e99-4d8f-9b70-d7fc93973cb5)。
+- [Bookings の予定に参加する方法について説明します](https://support.microsoft.com/office/join-a-bookings-appointment-attendees-3deb7bde-3ea3-4b41-8a06-741ad0db9fc0)。
+- [予定を実施します](bookings-virtual-visits.md#conduct-an-appointment)。
+- [仮想予定に関するビデオを見ます](#help-your-clients-and-customers-use-virtual-appointments)。
+- [仮想予定でキューを管理する方法に関するビデオをご覧ください](https://go.microsoft.com/fwlink/?linkid=2202615)。
+- [仮想予定の待機室機能に関するビデオをご覧ください](https://go.microsoft.com/fwlink/?linkid=2202614)。
 
 ## <a name="resources-for-your-clients"></a>クライアント向けのリソース
 

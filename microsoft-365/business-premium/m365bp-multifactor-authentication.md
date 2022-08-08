@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft Business Premium で電話の多要素認証を設定します。 電話に Microsoft Business Premium の MFA 機能を使用して、セキュリティを強化します。
-ms.openlocfilehash: a0f4c5cf7099f27cade90e8c62aa1072fce3fd66
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 8bf278f3dc91dfe1a9e8d5388e2868e9dddb577d
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894013"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274992"
 ---
 # <a name="set-up-mfa"></a>MFA をセットアップする
 
@@ -37,8 +37,8 @@ ms.locfileid: "66894013"
 
 ## <a name="use-the-outlook-app-on-your-devices"></a>デバイスで Outlook アプリを使用する
 
-管理者が第一線のユーザーに MFA の使用を要求した後、認証アプリは認証の 2 番目の形式として機能します。 Outlook アプリをインストールして使用して、Microsoft 365 メールにアクセスすることをお勧めします。
+MFA が適用されると、認証アプリは 2 番目の認証形式として機能します。 また、すべてのユーザーが Outlook アプリをインストールして使用し、各自のデバイス上の Microsoft 365 メールにアクセスすることをお勧めします。 「[iOS および Android 用の Microsoft Outlook のダウンロード](https://www.microsoft.com/microsoft-365/outlook-mobile-for-android-and-ios)」を参照してください。
 
 ## <a name="next-objective"></a>次の目標
 
-次の目標については、[Office アプリケーションをインストールする](m365bp-install-office-apps.md) ためのガイダンスに従ってください。
+[Office アプリケーションのインストール](m365bp-install-office-apps.md)に進みます。

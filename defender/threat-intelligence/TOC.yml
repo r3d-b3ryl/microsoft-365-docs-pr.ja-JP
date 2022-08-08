@@ -31,3 +31,5 @@
   items:
     - name: 脅威インテリジェンスとインフラストラクチャ チェーンの収集
       href: gathering-threat-intelligence-and-infrastructure-chaining.md
+    - name: 脆弱性インテリジェンスの収集
+      href: gathering-vulnerability-intelligence.md
