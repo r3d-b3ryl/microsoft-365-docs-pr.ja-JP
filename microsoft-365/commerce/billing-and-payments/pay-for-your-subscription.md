@@ -23,13 +23,13 @@ ms.custom:
 - AdminSurgePortfolio
 - business_assist
 - AdminTemplateSet
-ms.date: 05/26/2022
-ms.openlocfilehash: bf1da7f0813a6942241be93e26b397965070f39d
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/04/2022
+ms.openlocfilehash: 74b76a8719d57cfd2caabc02ace1e80583db0821
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112353"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67276593"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>サブスクリプションの支払い方法
 
@@ -69,9 +69,14 @@ ms.locfileid: "67112353"
 
 場合によっては、小切手または EFT を使用した請求書でサブスクリプションの支払いを行うことができます。 請求書で支払う資格を得るには、次のことを行う必要があります。
 
-- 既存の顧客になる
-- サブスクリプション代金が特定の金額を超えている (この金額はサービスの場所によって異なります)
+- 少なくとも 6 か月間確立されたお客様であり、未払い残高がないこと
+- 月に最低 6,000 米国ドルを消費するか、過去 12 か月間のうちいずれかの 3 か月で最低金額を購入する (この金額はサービスの場所によって異なる場合があります)。
 - 信用調査に合格する
+
+支払い方法を変更して小切手/電信送金を要求すると、次の 2 つの結果が発生する可能性があります。
+
+- 自動的に承認され、会社に関する情報を求めるメッセージが表示されます。
+- 自動的には承認されませんが、[サポート要求](../../admin/get-help-support.md)を送信できます。
 
 与信審査が必要な場合、サブスクリプション購入の際に通知が送信されます。 Microsoft から連絡することをご了承いただいた場合、メールを受信します。メールには、クレジットの承認を申請するうえで詳細な情報が含まれます。 与信審査は、通常 2 営業日内に完了します。
 
@@ -102,6 +107,18 @@ ms.locfileid: "67112353"
 > [!NOTE]
 > - 小切手による支払いはいくつかの国のみで利用可能です。
 > - Microsoft Partner Network (MPN) プログラム (Action Pack サブスクリプション、Silver または Gold コンピテンシー) のメンバーシップ料金を支払う必要がある場合は、[コンピテンシー料金の支払い](/partner-center/mpn-pay-fee-silver-gold-competency?tabs=workspaces-view)に関する記事で MPN の料金を支払う方法をご確認ください。
+
+## <a name="check-or-wire-transfer-payment-processing-time"></a>小切手または電信送金による支払い処理時間
+
+小切手による支払いは、小切手が銀行をクリアしてから 3 ~ 5 営業日後に行われます。 銀行に連絡して、小切手の状態を確認できます。
+
+電信送金によって行われる支払は、転送の種類に応じて処理時間が異なります。
+
+- ACH 国内転送 - 5 営業日。 到着までの 2 日から 3 日間、さらに記帳に 2 日間。
+- 電信送金 (国内) - 4 営業日。 到着までの 2 日間、さらに記帳に 2 日間。
+- 電信送金 (国際) - 7 営業日。 到着までの 5 日間、さらに記帳に 2 日間。
+
+小切手または電信送金による支払いがアカウントで承認されている場合、支払いの手順は請求書に記載されています。
 
 ## <a name="can-i-pay-my-invoice-online"></a>請求書をオンラインで支払うことはできますか?
 
