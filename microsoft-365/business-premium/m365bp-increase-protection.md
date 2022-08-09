@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium での保護レベルの向上に関するヘルプを表示する
-ms.openlocfilehash: d0bda85aaa6691a16a34dd70434fb4426ad36a09
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 01ea965f8b290b57c3df60e21c88b403b27b5cfd
+ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892861"
+ms.lasthandoff: 08/07/2022
+ms.locfileid: "67274707"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の脅威に対する保護を強化する
 
@@ -34,7 +34,7 @@ ms.locfileid: "66892861"
 - ビジネス ニーズに合わせて定義できる[カスタム セキュリティ ポリシー](#create-custom-security-policies)。
 - [SharePoint と OneDrive ファイルとフォルダーの共有設定を調整する方法](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)。
 - 特定のファイルとその使用方法を監視する[アラート ポリシー](#review-your-alert-policies)。
-- [次の手順](#next-steps) (非管理対象デバイスのセキュリティ保護など)
+- [次の目標](#next-objective) (非管理対象デバイスのセキュリティ保護)
 
 ## <a name="review-and-apply-preset-security-policies"></a>事前設定されたセキュリティ ポリシーを確認して適用する
 
@@ -207,6 +207,6 @@ ms.locfileid: "66892861"
 
 ユーザーが予定表の共有を許可されている場合は、Outlook on the web から共有する方法について、[次の手順](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)を参照してください。
 
-## <a name="next-steps"></a>次の手順
+## <a name="next-objective"></a>次の目標
 
-それでは、[**これらのアンマネージド BYOD デバイスを設定**](m365bp-devices-overview.md)しましょう。
+それでは、 [**これらの非管理対象 (BYOD) デバイスを設定**](m365bp-devices-overview.md)しましょう。

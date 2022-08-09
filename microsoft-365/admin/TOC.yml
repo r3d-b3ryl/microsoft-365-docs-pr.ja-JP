@@ -121,7 +121,7 @@
               href: manage/remove-licenses-from-users.md
             - name: ゲスト ユーザー
               href: add-users/about-guest-users.md
-            - name: Microsoft 365 グループにゲストユーザーを追加する
+            - name: Microsoft 365 グループのゲスト アクセスを管理する
               href: create-groups/manage-guest-access-in-groups.md
             - name: ユーザー名とメール アドレスを変更する
               href: add-users/change-a-user-name-and-email-address.md
@@ -161,6 +161,8 @@
               href: create-groups/explain-groups-knowledge-worker.md
             - name: グループを管理する
               href: create-groups/manage-groups.md
+            - name: Microsoft 365 グループ メールボックス のサイズ管理
+              href: create-groups/group-mailbox-size-management.md
             - name: グループ メンバーを追加または削除する
               href: create-groups/add-or-remove-members-from-groups.md
             - name: 削除したグループを復元する
