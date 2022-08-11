@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスでの購入のオンまたはオフを切り替える方法をご紹介します。
 ROBOTS: NOINDEX, NOFOLLOW
-ms.date: 4/7/2022
-ms.openlocfilehash: d9be7179ed26a35b2e04af8386f161de935b1ae1
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.date: 08/09/2022
+ms.openlocfilehash: 080b12672607301b9dcc9977c1c93ad9b48d43cd
+ms.sourcegitcommit: f72ea75c6d5c1bca0e0ed8fd228d3a84c6104361
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714708"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301902"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
@@ -34,9 +34,10 @@ ms.locfileid: "66714708"
 
 **MSCommerce** PowerShell モジュールを使用すると以下のことができます。
 
-- **AllowSelfServicePurchase** パラメーター値の既定の状態 (有効または無効) を表示します。
-- 利用可能な製品の一覧およびセルフサービス購入の有効または無効を表示する
+- **AllowSelfServicePurchase** パラメーター値の既定の状態 (有効、無効、または支払い方法のない試用を許可するかどうか) を表示する
+- 該当する製品の一覧と、セルフサービス購入が有効か無効か、または支払い方法なしで試用版を許可するかを表示する
 - 特定の製品の現在の設定を表示または変更し、有効または無効にする
+- 支払い方法のない試用版の設定を表示または変更する
 
 ## <a name="requirements"></a>要件
 
@@ -117,7 +118,17 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 
 ## <a name="view-or-set-the-status-for-allowselfservicepurchase"></a>AllowSelfServicePurchase の状態を表示または設定する
 
-セルフサービスで購入可能な製品の一覧を表示した後、特定の製品の設定を確認したり変更したりすることができます。
+**AllowSelfServicePurchase** の **Value** パラメーターを設定して、ユーザーがセルフサービスでの購入を許可または禁止することができます。 **OnlyTrialsWithoutPaymentMethod** 値を使用して、ユーザーが承認された製品の一覧から製品を試すこともできます。 ユーザーは、 **AllowSelfServicePurchase** が有効になっている場合にのみ、試用版が終了した後に製品を購入できます。
+
+**OnlyRialsWithoutPaymentMethod** 値を使用すると、一時的な試用版を許可しながら、購入をブロックできます。
+
+次の表では、 **Value** パラメーターの設定について説明します。
+
+| **設定** | **影響** |
+|---|---|
+| Enabled | ユーザーは、セルフサービスでの購入を行い、製品の試用版を取得できます。 |
+| OnlyRialsWithoutPaymentMethod | ユーザーはセルフサービスで購入することはできませんが、製品の試用版を取得できます。 試用版の有効期限が切れた後、完全版を購入することはできません。 |
+| 無効 | ユーザーは、セルフサービスで購入したり、製品の試用版を取得したりすることはできません。 |
 
 特定の製品のポリシー設定を取得するには、以下のコマンドを実行します。
 
@@ -128,13 +139,19 @@ Get-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TT
 特定の製品のポリシー設定を有効にするには、以下のコマンドを実行します。
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $True
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Enabled"
 ```
 
 特定の製品のポリシー設定を無効にするには、以下のコマンドを実行します。
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Enabled $False
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "Disabled"
+```
+
+ユーザーが支払い方法なしで特定の製品を試すことができるようにするには、次のコマンドを実行します。
+
+```powershell
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ7TTC0KP0N -Value "OnlyTrialsWithoutPaymentMethod" 
 ```
 
 ## <a name="example-script-to-disable-allowselfservicepurchase"></a>AllowSelfServicePurchase を無効にするスクリプト例
@@ -145,16 +162,15 @@ Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId CFQ
 Import-Module -Name MSCommerce
 Connect-MSCommerce #sign-in with your global or billing administrator account when prompted
 $product = Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase | where {$_.ProductName -match 'Power Automate per user'}
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product.ProductID -Value "Disabled"
 ```
 
 製品に複数の値がある場合は、次の例に示すように、値ごとに個別にコマンドを実行できます。
 
 ```powershell
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Enabled $false
-Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Enabled $false
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[0].ProductID -Value "Disabled"
+Update-MSCommerceProductPolicy -PolicyId AllowSelfServicePurchase -ProductId $product[1].ProductID -Value "Disabled"
 ```
-
 
 ## <a name="troubleshooting"></a>トラブルシューティング
 
@@ -189,6 +205,5 @@ Uninstall-Module -Name MSCommerce
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[セルフサービスによる購入を管理する (管理者)](manage-self-service-purchases-admins.md) (記事)
-
+[セルフサービス購入の管理 (管理)](manage-self-service-purchases-admins.md) (記事)\
 [セルフサービス購入に関するよくあるご質問](self-service-purchase-faq.yml) (記事)

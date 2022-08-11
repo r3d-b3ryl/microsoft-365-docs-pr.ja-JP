@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Azure DevOps アプリシークレット機密情報の種類エンティティ定義。
-ms.openlocfilehash: 03ea2782272b961522c40a1f8e43ebf9da548cd4
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d689cb184cd329d1d5686a5dde486305b5375078
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996007"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309353"
 ---
 # <a name="azure-devops-app-secret-preview"></a>Azure DevOps アプリ シークレット (プレビュー)
 
@@ -41,7 +41,7 @@ ms.locfileid: "66996007"
 
 例:
 
-`ntpi2ch67ci2vjzcohglogyygwo5fuyl365n2zdowwxhsys6jnoa`
+`abcdefghijklmnopqrstuvwxyz234567abcdefghijklmnopqrst`
 
 
 ## <a name="checksum"></a>チェックサム

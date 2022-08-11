@@ -14,14 +14,14 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.date: 08/01/2022
+ms.date: 08/08/2022
 ms.reviewer: tewchen
-ms.openlocfilehash: 8c5a0dd3e2eb9f0ebeb20ed6e5ea8f323fbdcceb
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 021556a1942619be8deeb4724507b1237c0a3f51
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112551"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280699"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control リムーバブル ストレージ Access Control
 
@@ -83,7 +83,7 @@ ms.locfileid: "67112551"
 |プロパティ名|説明|オプション|
 |---|---|---|
 |**GroupId**|一意の ID である GUID はグループを表し、ポリシーで使用されます。||
-|**DescriptorIdList**|グループ内でカバーするために使用するデバイス プロパティを一覧表示します。 すべてのプロパティで大文字と小文字が区別されます。 |**PrimaryId**: プライマリ ID に含まれるもの `RemovableMediaDevices`, , `CdRomDevices`, `WpdDevices``PrinterDevices`. <p>**InstancePathId**: InstancePathId は、たとえば、システム `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`内のデバイスを一意に識別する文字列です。 これは`Device instance path`デバイス マネージャー内です。 末尾の数値 (&0 など) は使用可能なスロットを表し、デバイスからデバイスに変更される場合があります。 最適な結果を得るには、最後にワイルドカードを使用します。 たとえば、「 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` 」のように入力します。 <p>**DeviceId**: デバイス ID 形式に変換 `Device instance path` するには、「 [Standard USB 識別子](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。たとえば、 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: システム内のデバイスを識別する文字列 。たとえば、`USBSTOR\DiskGeneric_Flash_Disk___8.07`これは`Hardware Ids`デバイス マネージャーです。 <br>**注**: ハードウェア ID は一意ではありません。異なるデバイスが同じ値を共有している可能性があります。<p>**FriendlyNameId**: これは、デバイスにアタッチされた文字列です 。たとえば、 `Generic Flash Disk USB Device`. これは`Friendly name`デバイス マネージャー内です。 <p>**BusId**: たとえば、USB、SCSI <p>**SerialNumberId**: usbSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 の SerialNumberId など`03003324080520232521`、デバイス マネージャーから SerialNumberId `Device instance path` を見つけることができます。 <p>**VID_PID**: ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。 ワイルドカードをサポートしています。 ベンダー ID と製品 ID 形式に変換 `Device instance path` するには、「 [Standard USB 識別子](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。 以下に例を示します。 <br>`0751_55E0`: この正確な VID/PID ペアと一致する<br>`_55E0`: PID=55E0 の任意のメディアと一致する <br>`0751_`: VID=0751 で任意のメディアと一致する <p> **注**: [デバイス マネージャーでプロパティ操作方法見つける](#how-do-i-find-the-media-property-in-the-device-manager)方法については、以下の「[よく寄せられる質問](#frequently-asked-questions)」セクションの「デバイス マネージャーで media プロパティを見つける」を参照してください。|
+|**DescriptorIdList**|グループ内でカバーするために使用するデバイス プロパティを一覧表示します。 すべてのプロパティで大文字と小文字が区別されます。 |**PrimaryId**: プライマリ ID に含まれるもの `RemovableMediaDevices`, , `CdRomDevices`, `WpdDevices``PrinterDevices`. <p>**InstancePathId**: InstancePathId は、たとえば、システム `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0`内のデバイスを一意に識別する文字列です。 これは`Device instance path`デバイス マネージャー内です。 末尾の数値 (&0 など) は使用可能なスロットを表し、デバイスからデバイスに変更される場合があります。 最適な結果を得るには、最後にワイルドカードを使用します。 たとえば、「 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*` 」のように入力します。 <p>**DeviceId**: デバイス ID 形式に変換 `Device instance path` するには、「 [Standard USB 識別子](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。たとえば、 `USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07` <p>**HardwareId**: システム内のデバイスを識別する文字列 。たとえば、`USBSTOR\DiskGeneric_Flash_Disk___8.07`これは`Hardware Ids`デバイス マネージャーです。 <br>**注**: ハードウェア ID は一意ではありません。異なるデバイスが同じ値を共有している可能性があります。<p>**FriendlyNameId**: これは、デバイスにアタッチされた文字列です 。たとえば、 `Generic Flash Disk USB Device`. これは`Friendly name`デバイス マネージャー内です。 <p>**BusId**: たとえば、USB、SCSI <p>**SerialNumberId**: usbSTOR\DISK&VEN__USB&PROD__SANDISK_3.2GEN1&REV_1.00\\`03003324080520232521`&0 の SerialNumberId など`03003324080520232521`、デバイス マネージャーから SerialNumberId `Device instance path` を見つけることができます。 <p>**VID_PID**: ベンダー ID は、USB 委員会がベンダーに割り当てる 4 桁のベンダー コードです。 製品 ID は、ベンダーがデバイスに割り当てる 4 桁の製品コードです。 ワイルドカードをサポートしています。 ベンダー ID と製品 ID 形式に変換 `Device instance path` するには、「 [Standard USB 識別子](/windows-hardware/drivers/install/standard-usb-identifiers)」を参照してください。 例: <br>`0751_55E0`: この正確な VID/PID ペアと一致する<br>`_55E0`: PID=55E0 の任意のメディアと一致する <br>`0751_`: VID=0751 で任意のメディアと一致する <p> **注**: [デバイス マネージャーでプロパティ操作方法見つける](#how-do-i-find-the-media-property-in-the-device-manager)方法については、以下の「[よく寄せられる質問](#frequently-asked-questions)」セクションの「デバイス マネージャーで media プロパティを見つける」を参照してください。|
 |**MatchType**|複数のデバイス プロパティが使用されている場合は、 `DescriptorIDList`MatchType によってリレーションシップが定義されます。|**MatchAll**: 次の属性`DescriptorIdList`は **And** リレーションシップになります。たとえば、管理者が接続されているすべての USB に対して`InstancePathID`、USB `DeviceID` が両方の値を満たしているかどうかを確認します。 <p> **MatchAny**: DescriptorIdList の下の属性は **Or** リレーションシップになります。たとえば、管理者 `DeviceID` が接続されているすべての USB に対して `InstancePathID`、USB が同じ **DeviceID** または **InstanceID** 値を持っている限り、システムは適用を行います。|
 
 ### <a name="access-control-policy"></a>Access Control ポリシー
@@ -95,7 +95,7 @@ ms.locfileid: "67112551"
 | **IncludedIdList** | ポリシーが適用されるグループ。 複数のグループが追加されている場合、ポリシーはすべてのグループ内の任意のメディアに適用されます。|このインスタンスでは、グループ ID/GUID を使用する必要があります。 <p> 次の例は、GroupID の使用方法を示しています。 <p> `<IncludedIdList> <GroupId> {EAA4CCE5-F6C9-4760-8BAD-FDCC76A2ACA1}</GroupId> </IncludedIdList>` |
 | **ExcludedIDList** | ポリシーが適用されないグループ。 | このインスタンスでは、グループ ID/GUID を使用する必要があります。 |
 | **エントリ ID** | 1 つの PolicyRule に複数のエントリを含めることができます。一意の GUID を持つ各エントリは、Device Control に 1 つの制限を指示します。| |
-| **種類** | IncludedIDList でリムーバブル ストレージ グループのアクションを定義します。 <p>適用: 許可または拒否 <p>監査: AuditAllowed または AuditDenied<p> | 許可<p>拒否 <p>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します <p>AuditDenied: アクセスが拒否されたときに通知とイベントを定義します。は **Deny エントリと** 連携する必要があります。<p> 同じメディアに競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として **、[許可]** と **[拒否] があります**。 |
+| **型** | IncludedIDList でリムーバブル ストレージ グループのアクションを定義します。 <p>適用: 許可または拒否 <p>監査: AuditAllowed または AuditDenied<p> | 許可<p>拒否 <p>AuditAllowed: アクセスが許可されている場合の通知とイベントを定義します <p>AuditDenied: アクセスが拒否されたときに通知とイベントを定義します。は **Deny エントリと** 連携する必要があります。<p> 同じメディアに競合の種類がある場合、システムはポリシーの最初のメディアを適用します。 競合の種類の例として **、[許可]** と **[拒否] があります**。 |
 | **Sid** | ローカル ユーザー Sid またはユーザー Sid グループ、または AD オブジェクトの Sid は、特定のユーザーまたはユーザー グループに対してこのポリシーを適用するかどうかを定義します。1 つのエントリに最大 1 つの Sid を指定でき、Sid のないエントリは、マシンにポリシーを適用することを意味します。 |  |
 | **ComputerSid** | ローカル コンピューター Sid またはコンピューター Sid グループ、または AD オブジェクトの Sid は、特定のコンピューターまたはマシン グループに対してこのポリシーを適用するかどうかを定義します。1 つのエントリに最大 1 つの ComputerSid を指定でき、ComputerSid のないエントリは、コンピューターにポリシーを適用することを意味します。 特定のユーザーと特定のコンピューターにエントリを適用する場合は、Sid と ComputerSid の両方を同じエントリに追加します。 |  |
 | **オプション** | 通知を表示するかどうかを定義します |**[型の許可] が選択されている場合**: <p>0: 何もない<p>4: このエントリ **に対して AuditAllowed** と **AuditDenied** を無効にします。 **許可** が発生し、AuditAllowed が構成されている場合でも、システムはイベントを送信しません。 <p>8: ファイル情報をキャプチャし、書き込みアクセスの証拠としてファイルのコピーを作成します。 <p>16: 書き込みアクセスのファイル情報をキャプチャします。 <p>**[型拒否] が選択されている場合**: <p>0: 何もない<p>4: このエントリ **の AuditDenied** を無効にします。 **ブロック** が発生し、AuditDenied が構成されている場合でも、システムは通知を表示しません。 <p>**[種類 **AuditAllowed** ] が選択されている場合**: <p>0: 何もない <p>1: 何もない <p>2: イベントを送信する<p> **[種類 **AuditDenied** ] が選択されている場合**: <p>0: 何もない <p>1: 通知を表示する <p>2: イベントを送信する<p>3: 通知を表示し、イベントを送信する |
@@ -173,7 +173,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
        `Disable: 0`
        `Enable: 1`
 
-     - [**保存**] を選択します。
+     - **[保存]** を選択します。
 
    :::image type="content" source="images/enable-rsac.png" alt-text="リムーバブル ストレージ Access Control ポリシーを有効にするスクリーンショット" lightbox="images/enable-rsac.png":::
 
@@ -192,7 +192,7 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
        `DefaultEnforcementAllow = 1`
        `DefaultEnforcementDeny = 2`
 
-     - [**保存**] を選択します。
+     - **[保存]** を選択します。
 
    :::image type="content" source="images/default-deny.png" alt-text="既定の適用を拒否として設定するスクリーンショット" lightbox="images/default-deny.png":::
 
@@ -412,6 +412,8 @@ Microsoft エンドポイント マネージャー管理センター (<https://e
 [Microsoft 365 Defender ポータル](https://security.microsoft.com/advanced-hunting)には、Device Control リムーバブル ストレージ Access Controlによってトリガーされるイベントが表示されます。 Microsoft 365 セキュリティにアクセスするには、次のサブスクリプションが必要です。
 
 - E5 レポート用 Microsoft 365
+
+ポリシーで構成されている場合、または `AuditDenied` **[オプション]** で [**送信] イベント** が選択されている場合`AuditAllowed`、イベントは、システムによって開始されたか、サインインしたユーザーによって開始されたかに関係なく、(エントリ内の) 対象となるすべてのアクセス`AccessMask`について、高度なハンティングまたはデバイス制御レポートに送信されます。
 
 ```kusto
 //RemovableStoragePolicyTriggered: event triggered by Disk level enforcement

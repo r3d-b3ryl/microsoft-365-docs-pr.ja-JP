@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: この記事では、ポータル起動スケジューラを使用してポータルを起動する方法について説明します。
-ms.openlocfilehash: 2eef7a8488db579f4ba946342213b822227229d1
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: b76a61bb06c3f2bab7f92ad97cde0630011e487c
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65941066"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306528"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>SharePoint Portal 起動スケジューラを使用してポータルを起動する
 
@@ -47,8 +47,8 @@ ms.locfileid: "65941066"
 > - 必要なウェーブの数は、予想されるユーザー数によって自動的に決定されます。
 > - ポータルの起動をスケジュールする前に、サイトのホーム ページが正常であることを確認するために [、SharePoint 用ページ診断ツール](https://aka.ms/perftool) を実行する必要があります。
 > - 起動が終了すると、サイトに対するアクセス許可を持つすべてのユーザーが新しいサイトにアクセスできるようになります。
-> - 組織で [Viva 接続](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx)を使用している場合、ユーザーは Microsoft Teams アプリ バーに組織のアイコンが表示されることがありますが、アイコンが選択されている場合、ユーザーはウェーブが起動するまでポータルにアクセスできません。
-> - この機能は、Office 365 Germany、21Vianet (中国) が運用する Office 365、または Microsoft 365 US Government プランでは使用できません。
+> - 組織で[Viva コネクション](https://microsoft.sharepoint.com/teams/MicrosoftViva/SitePages/Viva-Connections.aspx)を使用している場合、Microsoft Teams アプリ バーに組織のアイコンが表示されることがありますが、アイコンが選択されている場合、ユーザーはウェーブが起動するまでポータルにアクセスできません。
+> - この機能は、ドイツOffice 365、Office 365 21Vianet (中国)、または Microsoft 365 米国政府機関の計画では使用できません。
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>ポータル起動スケジューラ のオプションの違いについて理解します。
 
@@ -56,7 +56,7 @@ ms.locfileid: "65941066"
 
 **SharePoint PowerShell のバージョン:**
 
-- [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) を使用するには管理者の資格情報が必要です
+- [SharePoint PowerShell](/powershell/sharepoint/sharepoint-online/introduction-sharepoint-online-management-shell) を使用するには、管理資格情報が必要です
 - 1 つのウェーブの最小要件
 - 協定世界時 (UTC) タイム ゾーンに基づいて起動をスケジュールする
 
@@ -99,7 +99,7 @@ ms.locfileid: "65941066"
    **オプション 1: ユーザーを既存の SharePoint ページに送信する (双方向)** – 新しい最新の SharePoint ポータルを起動するときに、このオプションを使用して既存の SharePoint ポータルを置き換えます。 アクティブなウェーブのユーザーは、古いサイトと新しいサイトのどちらに移動するかに関係なく、新しいサイトにリダイレクトされます。 新しいサイトにアクセスしようとする非起動ウェーブのユーザーは、ウェーブが起動されるまで古いサイトにリダイレクトされます。
 
    > [!NOTE]
-   > 双方向オプションを使用する場合、起動をスケジュールするユーザーには、他の SharePoint ポータルに対するサイト所有者のアクセス許可も必要です。
+   > 双方向オプションを使用する場合、起動をスケジュールするユーザーには、新しい SharePoint ポータルと既存の SharePoint ポータルの両方に対するサイト所有者のアクセス許可が必要です。 さらに、適切なアクセス許可を検証するには、2 つのサイト URL が同じテナント/ドメイン内に存在する必要があります。 
 
    **オプション 2: 自動生成された一時ページにユーザーを送信する (一時ページ リダイレクト)** – 既存の SharePoint ポータルが存在しない場合は、一時ページ リダイレクトを使用する必要があります。 ユーザーは新しい最新の SharePoint ポータルに移動し、ユーザーが起動されていないウェーブにいる場合は、一時的なページにリダイレクトされます。
 

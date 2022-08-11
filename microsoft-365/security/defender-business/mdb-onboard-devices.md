@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: a692a82af0329c991ca153323552fd2a16c16547
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: e7d884e55aa3f55106097354ce3a8acdd3dc5b17
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071461"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300762"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
@@ -81,10 +81,10 @@ Windows クライアント デバイスを Defender for Business にオンボー
 
 Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法を使用することをお勧めします。
 
-- 会社所有または会社が管理するデバイスの [Windows 自動登録を有効にする](/mem/intune/enrollment/windows-enroll)
-- [Intuneに自分のWindows 10/11 デバイスを登録するようにユーザーに依頼する](/mem/intune/user-help/enroll-windows-10-device)
+- [会社所有または会社が管理するデバイスの Windows 自動登録を有効にする](#enable-automatic-enrollment-for-windows-10-and-11)
+- [Intuneに自分のWindows 10/11 デバイスを登録するようにユーザーに依頼する](#ask-users-enroll-their-own-windows-10-and-11-devices)
 
-#### <a name="to-enable-automatic-enrollment-for-windows-10-and-11"></a>Windows 10と 11 の自動登録を有効にするには
+#### <a name="enable-automatic-enrollment-for-windows-10-and-11"></a>Windows 10と 11 の自動登録を有効にする
 
 自動登録を設定すると、ユーザーは自分の職場アカウントをデバイスに追加します。 バックグラウンドでは、デバイスは Azure Active Directory (Azure AD) を登録して参加し、Intuneに登録されます。
 
@@ -110,7 +110,7 @@ Intuneにデバイスを登録するには、いくつかの方法がありま�
 > [!TIP]
 > 詳細については、「 [Windows 自動登録を有効にする」を](/mem/intune/enrollment/windows-enroll)参照してください。
 
-#### <a name="to-have-users-enroll-their-own-windows-10-and-11-devices"></a>ユーザーが自分のWindows 10と 11 台のデバイスを登録するには
+#### <a name="ask-users-enroll-their-own-windows-10-and-11-devices"></a>ユーザーに自分のWindows 10と 11 台のデバイスの登録を依頼する
 
 1. 登録のしくみについては、次のビデオをご覧ください。<br/><br/>
 

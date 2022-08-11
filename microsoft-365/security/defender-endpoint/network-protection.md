@@ -7,6 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
+ms.date: 08/08/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -18,17 +19,14 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.date: ''
-ms.openlocfilehash: 604938426dfd8818647a5fa7b71069b4527ec877
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c59e4a7a7eb3c7fcf6bb623385382c3e453a3790
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66636449"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281687"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
 
@@ -37,6 +35,7 @@ ms.locfileid: "66636449"
 - Microsoft Defender ウイルス対策
 
 **プラットフォーム**
+
 - Windows
 - macOS
 - Linux
@@ -92,7 +91,7 @@ Defender for Endpoint のネットワーク保護コンポーネントは、機�
 
 | 新しいマッピング  | 応答カテゴリ  | ソース |
 | :--- | :--- | :--- |
-| フィッシング詐欺 | フィッシング | Smartscreen |
+| フィッシング詐欺 | フィッシング詐欺 | Smartscreen |
 | 悪意 | 悪意がある | Smartscreen |
 | コマンドと制御 | C2 | Smartscreen |
 | コマンドと制御 | COCO | Smartscreen |
@@ -183,8 +182,7 @@ Microsoft Defender for Endpoint管理者は、次の構成ツールを使用し�
 ```kusto
 
 DeviceEvents
-
-- Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
+|Where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 
 ```
 
@@ -200,21 +198,21 @@ DeviceEvents
 
 DeviceEvents:
 
-- where ActionType contains "ExploitGuardNetworkProtection"
-- extend ParsedFields=parse_json(AdditionalFields)
-- project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
-- sort by Timestamp desc
+|where ActionType contains "ExploitGuardNetworkProtection"
+|extend ParsedFields=parse_json(AdditionalFields)
+|project DeviceName, ActionType, Timestamp, RemoteUrl, InitiatingProcessFileName, IsAudit=tostring(ParsedFields.IsAudit), ResponseCategory=tostring(ParsedFields.ResponseCategory), DisplayName=tostring(ParsedFields.DisplayName)
+|sort by Timestamp desc
 
 ```
 応答カテゴリには、次のようにイベントの原因が示されます。
 
 | ResponseCategory | イベントを担当する機能 |
 |:---|:---|
-| CustomPolicy |  WCF  |
+| CustomPolicy |  Wcf  |
 | CustomBlockList  |   カスタム インジケーター   |
 | CasbPolicy   |   Defender for Cloud Apps   |
 | 悪意がある   |   Web の脅威  |
-| フィッシング  |   Web の脅威  |
+| フィッシング詐欺  |   Web の脅威  |
 
 詳細については、「 [エンドポイント ブロックのトラブルシューティング](web-protection-overview.md#troubleshoot-endpoint-blocks)」を参照してください。
 
@@ -272,7 +270,7 @@ Windows イベント ログを確認して、ネットワーク保護が悪意�
 
 1. [XML を直接コピーします](event-views.md)。
 
-2. **[OK]** を選択します。
+2. **[OK]** をクリックします。
 
 この手順では、ネットワーク保護に関連する次のイベントのみを表示するようにフィルター処理するカスタム ビューを作成します。
 

@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint サイトを複数地域環境内の別の地域の場所に移動し、変更に対する期待をユーザーに伝える方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b388b3fa869e6207c72f62aa2f50b832acab43a
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: a72c98cf2c4f71c9812af5aef01adc93777d5ccf
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940824"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306308"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -75,7 +75,7 @@ SharePoint サイトの地域移動を後でスケジュール設定するには
 
 SharePoint サイトの地域移動は　サイトがあるジオ位置情報でSharePoint の管理 URLから接続し、実行する必要があります。
 
-たとえば、サイト URL が次の `https://contosohealthcare.sharepoint.com/sites/Turbines`場所にある SharePoint 管理者 URL に `https://contosohealthcare-admin.sharepoint.com`接続します。
+たとえば、サイト URL が次の場所にある場合は`https://contosohealthcare.sharepoint.com/sites/Turbines`、SharePoint 管理 URL に`https://contosohealthcare-admin.sharepoint.com`接続します。
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -219,9 +219,9 @@ SharePoint 2013 ワークフローは、サイトの移動後に再発行する�
 
 アプリを使用してサイトを移動する場合は、アプリとその接続が移行先の地域の場所で利用できない可能性があるため、サイトの新しい地域の場所にアプリを再確立する必要があります。
 
-### <a name="flow"></a>Flow
+### <a name="power-automate"></a>Power Automate
 
-ほとんどの場合、フローは、SharePoint サイトの geo 移動後も引き続き機能します。 移動が完了したらテストすることをお勧めします。
+ほとんどの場合、Power Automate フローは、SharePoint サイトの geo 移動後も引き続き機能します。 移動が完了したらテストすることをお勧めします。
 
 ### <a name="power-apps"></a>Power Apps
 

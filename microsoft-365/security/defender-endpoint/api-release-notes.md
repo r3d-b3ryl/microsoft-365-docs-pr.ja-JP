@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2c34add5968021d6a31bffc80ec16e0ebed9baf0
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 3087d5cb22f7cc8ef1afedad73de027caf00771e
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283655"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280445"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Microsoft Defender for Endpoint API リリース ノート
 
@@ -40,6 +40,10 @@ ms.locfileid: "61283655"
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>リリース ノート - 最新から最も古い (dd.mm.yyyy)
+
+### <a name="08082022"></a>08.08.2022
+
+- 新しい Export Device Health API メソッドを追加しました - GET /api/public/avdeviceshealth [Export device health メソッドとプロパティ](device-health-api-methods-properties.md)
 
 ### <a name="06102021"></a>06.10.2021
 

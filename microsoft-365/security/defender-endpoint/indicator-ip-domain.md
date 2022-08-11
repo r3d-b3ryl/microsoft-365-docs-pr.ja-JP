@@ -15,18 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 955f11aa44bd0defb867c25124da7c5a3769c98d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: ab8ff3069a59c59f509396158c747cae35bccfe3
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65840119"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301290"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>IP および URL/ドメインのインジケーターを作成
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+- [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -44,24 +45,24 @@ IP と URL またはドメインのインジケーターを作成することで
 > [!NOTE]
 > IP アドレスのクラスレス Inter-Domain ルーティング (CIDR) 表記はサポートされていません。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 IPS、URL、またはドメインのインジケーターを作成する前に、次の前提条件を理解しておくことが重要です。
 
 - URL/IP の許可とブロックは、Defender for Endpoint コンポーネントの Network Protection をブロック モードで有効にする必要があります。 Network Protection と構成手順の詳細については、「 [ネットワーク保護を有効にする」を](enable-network-protection.md)参照してください。
 - マルウェア対策クライアントバージョンは、4.18.1906.x 以降である必要があります。 
-- Windows 10、バージョン 1709 以降、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019、Windows Server 2022、Android およびデバイスをiOSします。
+- Windows 10、バージョン 1709 以降、Windows 11、Windows Server 2016、Windows Server 2012 R2、Windows Server 2019、Windows Server 2022、Android および iOS デバイス上のマシンでサポートされます。
 
     > [!NOTE]
-    > この機能を機能させるには、「オンボード Windows サーバー」の手順に従って[、Windows Server 2016とWindows Server 2012](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) R2 をオンボードする必要があります。
+    > この機能を機能させるには、「[Windows サーバーのオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」の手順に従って、Windows Server 2016 R2 と Windows Server 2012 R2 をオンボードする必要があります。
 
-- Microsoft 365 Defender **設定** \> **Advanced 機能****で** \> **カスタム ネットワーク インジケーター** が有効になっていることを確認します。 詳細については、「 [高度な機能」を](advanced-features.md)参照してください。
-- iOSに関するインジケーターのサポートについては、[iOSのMicrosoft Defender for Endpointを](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)参照してください。
-- Androidのインジケーターのサポートについては、[AndroidのMicrosoft Defender for Endpointを](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators)参照してください。
+- **Microsoft 365 Defender** \> **設定** \> **の詳細設定機能** で **カスタム ネットワーク インジケーター** が有効になっていることを確認します。 詳細については、「 [高度な機能」を](advanced-features.md)参照してください。
+- iOS でのインジケーターのサポートについては、iOS [のMicrosoft Defender for Endpointを](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)参照してください。
+- Android でのインジケーターのサポートについては、Android の[Microsoft Defender for Endpointを](/microsoft-365/security/defender-endpoint/android-configure#configure-custom-indicators)参照してください。
 
 > [!IMPORTANT]
 > インジケーターの一覧に追加できるのは外部 IP のみです。 内部 IP に対してインジケーターを作成することはできません。
-> Web 保護のシナリオでは、Microsoft Edgeに組み込まれている機能を使用することをお勧めします。 Microsoft Edge[ネットワーク保護](network-protection.md)を利用してネットワーク トラフィックを検査し、TCP、HTTP、HTTPS (TLS) のブロックを許可します。
+> Web 保護のシナリオでは、Microsoft Edge の組み込み機能を使用することをお勧めします。 Microsoft Edge では [、ネットワーク保護](network-protection.md) を利用してネットワーク トラフィックを検査し、TCP、HTTP、HTTPS (TLS) のブロックを許可します。
 > 競合する URL インジケーター ポリシーがある場合は、長いパスが適用されます。 たとえば、URL インジケーター ポリシーは URL インジケーター ポリシー `https://support.microsoft.com/office` `https://support.microsoft.com`よりも優先されます。
 
 > [!NOTE]
@@ -94,7 +95,7 @@ IPS、URL、またはドメインのインジケーターを作成する前に�
 
 ## <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>設定ページから IP、URL、またはドメインのインジケーターを作成する
 
-1. ナビゲーション ウィンドウで、([**ルール**] **で) 設定** \> **エンドポイント** \> **インジケーター** を選択します。
+1. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **インジケーター**] ([**ルール****]** \> の下) を選択します。
 
 2. [ **IP アドレス] タブまたは [URL/ドメイン] タブを** 選択します。
 

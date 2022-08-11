@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
@@ -17,16 +18,16 @@ ms.collection:
 - M365-security-compliance
 - m365-initiative-defender-business
 ms.custom: intro-get-started
-ms.openlocfilehash: 0f37dd86cef388dfe183557ccf269810ef522445
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 1144326c626c565a1bb231ddccd998c2ca7a2195
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772435"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300828"
 ---
 # <a name="use-the-setup-wizard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセットアップ ウィザードを使用する
 
-Defender for Business は、中小企業の時間と労力を節約するように設計されました。 たとえば、セットアップ ウィザードを使用して初期セットアップと構成を行うことができます。 セットアップ ウィザードでは、セキュリティ チームへのアクセス許可の付与、セキュリティ チームの電子メール通知の設定、会社の Windows デバイスのオンボードについて説明します。
+Defender for Business は、中小企業の時間と労力を節約できるよう設計されています。 たとえば、セットアップ ウィザードを使用して初期セットアップと構成を行うことができます。 セットアップ ウィザードでは、セキュリティ チームへのアクセス許可の付与、セキュリティ チームの電子メール通知の設定、会社の Windows デバイスのオンボードについて説明します。
 
 
 > [!TIP]
@@ -51,7 +52,7 @@ Defender for Business は、中小企業の時間と労力を節約するよう�
 
 セットアップ ウィザードは、Defender for Business のセットアップと構成を迅速かつ効率的に行えるように設計されています。 ウィザードでは、次の手順を実行します。
 
-1. **ユーザーのアクセス許可を割り当てます**。 この手順では、セキュリティ チームにMicrosoft 365 Defender ポータル ()[https://security.microsoft.com](https://security.microsoft.com) へのアクセス権を付与します。 このポータルでは、お客様とセキュリティ チームがセキュリティ機能を管理し、アラートを表示し、検出された脅威に対して必要なアクションを実行します。 ポータルへのアクセスは、特定のアクセス許可を意味するロールを通じて付与されます。
+1. **ユーザーにアクセス許可を割り当てる**。 この手順では、セキュリティ チームにMicrosoft 365 Defender ポータル ()[https://security.microsoft.com](https://security.microsoft.com) へのアクセス権を付与します。 このポータルでは、お客様とセキュリティ チームがセキュリティ機能を管理し、アラートを表示し、検出された脅威に対して必要なアクションを実行します。 ポータルへのアクセスは、特定のアクセス許可を意味するロールを通じて付与されます。
 
    Defender for Business では、セキュリティ チームのメンバーに次の 3 つのロールのいずれかを割り当てることができます。<br/>
    
@@ -59,18 +60,20 @@ Defender for Business は、中小企業の時間と労力を節約するよう�
    - **セキュリティ管理者**: セキュリティ管理者は、セキュリティ設定を表示および編集し、脅威が検出されたときにアクションを実行できます。
    - **セキュリティ リーダー**: セキュリティ リーダーはレポート内の情報を表示できますが、セキュリティ設定を変更することはできません。 
 
-   [ロールとアクセス許可の詳細については、こちらを参照してください](mdb-roles-permissions.md)。 
+   [役割とアクセス許可に関する詳細を学ぶ](mdb-roles-permissions.md)。 
 
 2. **電子メール通知を設定します**。 この手順では、セキュリティ チームの電子メール通知を設定できます。 その後、アラートが生成されたとき、または新しい脆弱性が検出された場合、セキュリティ チームは、自分のデスクから離れていても、それを見逃すことはありません。 [電子メール通知の詳細については、こちらを参照してください](mdb-email-notifications.md)。 
 
-3. **Windows デバイスをオンボードして構成します**。 この手順では、会社の Windows デバイスを Defender for Business にすばやくオンボードできます。 デバイスをすぐにオンボードすると、初日からデバイスを保護できます。 
+3. **Windows デバイスをオンボードして構成する**。 この手順では、会社の Windows デバイスを Defender for Business にすばやくオンボードできます。 デバイスをすぐにオンボードすると、初日からデバイスを保護できます。 
 
-   - **Microsoft Intuneを既に使用していて**、会社にデバイスがIntuneに登録されている場合は、登録済みの Windows デバイスの一部またはすべての自動 [オンボードを](#what-is-automatic-onboarding)使用するかどうかを確認するメッセージが表示されます。 自動オンボードでは、Intuneと Defender for Business の間の接続を設定し、Windows デバイスを Defender for Business にシームレスにオンボードします。 
-   - **Intuneをまだ使用していない場合** は、[デバイスを Defender for Business にオンボード](mdb-onboard-devices.md)できます。 
+   - **Microsoft Intuneを既に使用していて**、会社にデバイスがIntuneに登録されている場合は、Intuneを引き続き使用できます。 
+   - **Intuneを使用していない場合は**、Microsoft 365 Defender ポータルでデバイスをオンボードできます。 
    
    [Defender for Business へのデバイスのオンボードの詳細について説明します](mdb-onboard-devices.md)。
    
-4. **セキュリティ ポリシーを構成します**。 Defender for Business には、会社のデバイスに適用できる次世代の保護とファイアウォール保護の既定のセキュリティ ポリシーが含まれています。 これらの既定のポリシーでは、推奨される設定が使用され、デバイスに強力な保護を提供するように設計されています。 独自のセキュリティ ポリシーを作成することもできます。 また、既にIntuneを使用している場合は、引き続き Microsoft エンドポイント マネージャー管理センターを使用してセキュリティ ポリシーを管理できます。
+4. **セキュリティ ポリシーを構成します**。 Defender for Business には、会社のデバイスに適用し、次世代の保護とファイアウォール保護を実現する既定のセキュリティ ポリシーが搭載されています。 これらの既定のポリシーでは、推奨される設定が使用され、デバイスに強力な保護を提供するように設計されています。 独自のセキュリティ ポリシーを作成することもできます。 
+
+   既にIntuneを使用してデバイスとセキュリティ ポリシーを管理している場合は、Microsoft エンドポイント マネージャー管理センターを引き続き使用できます。
 
    [セキュリティ ポリシーと設定を表示および編集します](mdb-configure-security-settings.md)。
 
@@ -78,7 +81,7 @@ Defender for Business は、中小企業の時間と労力を節約するよう�
 
 自動オンボードは、Windows デバイスを Defender for Business にオンボードするための簡単な方法です。 自動オンボードは、Microsoft Intuneに既に登録されている Windows デバイスでのみ使用できます。 
 
-セットアップ ウィザードを使用しているときに、Windows デバイスが既にIntuneに登録されているかどうかをシステムが検出します。 これらのデバイスのすべてまたは一部に対して自動オンボードを使用するかどうかを確認するメッセージが表示されます。 すべての Windows デバイスを一度にオンボードすることも、最初に特定のデバイスを選択してから、後でデバイスを追加することもできます。 
+セットアップ ウィザードを使用しているときに、Windows デバイスが既にIntuneに登録されているかどうかをシステムが検出します。 検出されたデバイスのすべて、または一部に対して自動オンボードを使用するかどうかを確認するメッセージが表示されます。 すべての Windows デバイスを一度にオンボードすることも、最初に特定のデバイスを選択してから、後でデバイスを追加することもできます。 
 
 他のデバイスをオンボードするには、「 [Defender for Business にデバイスをオンボードする」を](mdb-onboard-devices.md)参照してください。
 

@@ -16,12 +16,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 description: この記事では、機密情報の種類の概要と、機密性の高いアイテムを識別するために社会保障、クレジット カード、銀行口座番号などの機密情報を検出する方法について説明します。
-ms.openlocfilehash: 2a7f639097203f06795945dbd08fa64db3a1f0df
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9cc42512109f0e939ac946b39a3cd6c060283347
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944045"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309793"
 ---
 # <a name="learn-about-sensitive-information-types"></a>機密情報の種類に関する詳細情報
 
@@ -87,13 +87,13 @@ Microsoft では、多数の事前構成済み SIT を提供するか、独自�
 
 ![補強証拠と近接ウィンドウの図。](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
-この短いビデオでは、信頼度レベルの詳細について説明します。
+<!--Learn more about confidence levels in this short video.
 
- > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hx60]-->
 
 ### <a name="example-sensitive-information-type"></a>機密情報の種類の例
 
-#### <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民 ID (DNI) 番号
+#### <a name="argentina-national-identity-dni-number"></a>アルゼンチンの国民識別 (DNI) 番号
 
 ### <a name="format"></a>フォーマット
 
@@ -105,9 +105,9 @@ Microsoft では、多数の事前構成済み SIT を提供するか、独自�
 
 - 2 桁の数字
 - 期間
-- 3 桁
+- 3 桁の数字
 - 期間
-- 3 桁
+- 3 桁の数字
 
 ### <a name="checksum"></a>チェックサム
 
@@ -115,7 +115,7 @@ Microsoft では、多数の事前構成済み SIT を提供するか、独自�
 
 ### <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという中程度の信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
 - 正規表現Regex_argentina_national_idは、パターンに一致するコンテンツを検索します。
 - Keyword_argentina_national_idのキーワードが見つかりました。
@@ -137,7 +137,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 - Argentina National Identity number
 - ID
 - ID ナショナル ID カード
-- DNI
+- Dni
 - NIC National Registry of Persons
 - Documento Nacional de Identidad
 - Registro Nacional de las Personas

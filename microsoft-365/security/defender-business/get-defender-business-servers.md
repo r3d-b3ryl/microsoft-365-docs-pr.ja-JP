@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: none
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: c11a32ac4658750e3c5265ae42a91ad076efecd1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 8587b1fe90f003035d02afb7cf34cd9773e0d3ca
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773299"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300347"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>Microsoft Defender for Business サーバーを取得する方法 (プレビュー)
 
@@ -34,7 +35,7 @@ ms.locfileid: "66773299"
 3. Windows Server の適用スコープを有効にします。 
 
    1. **[設定**\>エンドポイント **の構成管理** \> **の適用] スコープ** に移動 **します**\>。 
-   2. [ **MDE を使用して MEM からセキュリティ構成設定を適用する**] を選択し、  **Windows Server** を選択して、[保存] を選択 **します**。
+   2. **[MDE を使用して MEM からセキュリティ構成設定を適用する]** を選択し、  **[Windows Server]** を選択してから、**[保存]** を選択します。
 
 4. オンボード デバイスの Windows Server と Linux Server のガイダンスに従って[、Microsoft Defender for Businessに](mdb-onboard-devices.md)進みます。
 

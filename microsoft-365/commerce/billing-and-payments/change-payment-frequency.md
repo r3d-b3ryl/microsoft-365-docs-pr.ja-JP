@@ -21,16 +21,19 @@ ms.custom:
 search.appverid: MET150
 description: ビジネス サブスクリプションに対して課金される頻度を変更する方法について説明します。
 ms.date: 05/24/2022
-ms.openlocfilehash: 4b5c5e42f33e3ca36a89b694a4249296df6e200c
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: d3d226eea1972daf7bede15b47c87dad1442530c
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493001"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280853"
 ---
 # <a name="change-your-microsoft-365-subscription-billing-frequency"></a>Microsoft 365 サブスクリプションの請求頻度を変更する
 
 サブスクリプションを購入するときは、課金頻度を選択します。 サブスクリプションの請求頻度を変更するには、次の手順を実行します。
+
+> [!NOTE]
+> 課金プロファイルがある場合は、サブスクリプションの購入またはアップグレード時にのみ課金頻度を変更します。 課金プロファイルがあるかどうかを確認するには、「自分の [課金プロファイルを表示する](manage-billing-profiles.md#view-my-billing-profiles)」を参照してください。
 
 1. 管理センターの [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">製品</a>の **課金**\>] ページに移動します。
 2. **[製品]** タブで、変更するサブスクリプションを選択します。

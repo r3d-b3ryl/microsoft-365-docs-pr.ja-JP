@@ -10,6 +10,7 @@ ms.pagetype: security
 ms.author: deniseb
 author: denisebmsft
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 7f22d5d1162e01afe737e6e3f25450cc22e25c76
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
+ms.openlocfilehash: 376bc904fabeee9b9fe2c9c91309427f28f19c5a
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695728"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306352"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Microsoft Defender for Endpoint - フェーズ 2: セットアップに切り替える
 
@@ -55,52 +56,10 @@ Defender for Endpoint への切り替えを行う際に、Microsoft Defender ウ
 |エンドポイントの種類|操作|
 |---|---|
 |Windows クライアント (Windows 10やWindows 11を実行しているエンドポイントなど)|一般に、Windows クライアントに対してアクションを実行する必要はありません (Microsoft Defender ウイルス対策がアンインストールされていない場合)。 一般に、Microsoft Defender ウイルス対策は引き続きインストールする必要がありますが、移行プロセスのこの時点では無効になっている可能性があります。 <br/><br/> Microsoft 以外のウイルス対策/マルウェア対策ソリューションがインストールされていて、クライアントがまだ Defender for Endpoint にオンボードされていない場合、Microsoft Defender ウイルス対策は自動的に無効になります。 その後、クライアント エンドポイントが Defender for Endpoint にオンボードされると、それらのエンドポイントで Microsoft 以外のウイルス対策ソリューションが実行されている場合、Microsoft Defender ウイルス対策はパッシブ モードになります。 <br/><br/> Microsoft 以外のウイルス対策ソリューションがアンインストールされると、Microsoft Defender ウイルス対策は自動的にアクティブ モードになります。|
-|Windows サーバー|Windows Server では、Microsoft Defender ウイルス対策を再インストールし、手動でパッシブ モードに設定する必要があります。 Windows サーバーでは、Microsoft 以外のウイルス対策/マルウェア対策がインストールされている場合、Microsoft Defender ウイルス対策は Microsoft 以外のウイルス対策ソリューションと共に実行できません。 このような場合、Microsoft Defender ウイルス対策は手動で無効またはアンインストールされます。 <br/><br/> Windows Server で Microsoft Defender ウイルス対策を再インストールまたは有効にするには、次のタスクを実行します。 <br/>- [Windows Server 2016に Microsoft Defender ウイルス対策を再インストールする](#re-enable-microsoft-defender-antivirus-on-windows-server-2016)<br/>- [Windows Server バージョン 1803 以降で Microsoft Defender ウイルス対策を再インストールする](#re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later)<br/>- [Windows Server で Microsoft Defender ウイルス対策をパッシブ モードに設定する](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Windows Server での Microsoft Defender ウイルス対策の再インストールまたは再有効化の問題が発生した場合 [は、「トラブルシューティング: Microsoft Defender ウイルス対策が Windows Server でアンインストールされる」を参照してください](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server)。|
+|Windows サーバー|Windows Server では、Microsoft Defender ウイルス対策を再インストールし、手動でパッシブ モードに設定する必要があります。 Windows サーバーでは、Microsoft 以外のウイルス対策/マルウェア対策がインストールされている場合、Microsoft Defender ウイルス対策は Microsoft 以外のウイルス対策ソリューションと共に実行できません。 このような場合、Microsoft Defender ウイルス対策は手動で無効またはアンインストールされます。 <br/><br/> Windows Server で Microsoft Defender ウイルス対策を再インストールまたは有効にするには、次のタスクを実行します。 <br/>- [無効になっている場合は、Windows Server で Defender ウイルス対策を再度有効にする](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled)<br/>- [アンインストールされた場合は、Windows Server で Defender ウイルス対策を再度有効にする](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)<br/>- [Windows Server で Microsoft Defender ウイルス対策をパッシブ モードに設定する](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server) <br/><br/>Windows Server での Microsoft Defender Antivisrus の再インストールまたは再有効化の問題が発生した場合は、「 [トラブルシューティング: Microsoft Defender ウイルス対策が Windows Server でアンインストールされる」を参照してください](switch-to-mde-troubleshooting.md#microsoft-defender-antivirus-is-getting-uninstalled-on-windows-server)。|
 
 > [!TIP]
 > Microsoft Defender ウイルス対策以外の保護を使用した Microsoft Defender ウイルス対策の状態の詳細については、 [Microsoft Defender ウイルス対策の互換性](microsoft-defender-antivirus-compatibility.md)に関するページを参照してください。
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-2016"></a>Windows Server 2016で Microsoft Defender ウイルス対策を再度有効にする
-
-[Malware Protection Command-Line ユーティリティ](command-line-arguments-microsoft-defender-antivirus.md)を使用して、Windows Server 2016で Microsoft Defender ウイルス対策を再度有効にすることができます。
-
-1. サーバー上のローカル管理者として、コマンド プロンプトを開きます。
-
-2. 次のコマンドを実行します。`MpCmdRun.exe -wdenable`
-
-3. デバイスを再起動します。
-
-### <a name="re-enable-microsoft-defender-antivirus-on-windows-server-version-1803-or-later"></a>Windows Server バージョン 1803 以降で Microsoft Defender ウイルス対策を再度有効にする
-
-> [!IMPORTANT]
-> 次の手順は、次のバージョンの Windows を実行しているエンドポイントまたはデバイスにのみ適用されます。
-> - Windows Server 2022
-> - Windows Server 2019
-> - Windows Server バージョン 1803 (コア専用モード)
-
-1. サーバー上のローカル管理者として、Windows PowerShellを開きます。
-
-2. Windows PowerShell コマンドレットを実行します。
-
-   ```powershell
-   # For Windows Server 2016
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Gui
-   
-   # For Windows Server 2019 and Windows Server 2022
-   Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-   PowerShell を実行しているタスク シーケンス内で DISM コマンドを使用する場合は、次のcmd.exeへのパスが必要です。
-   例:
-
-   ```powershell
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender-Features
-   C:\Windows\System32\cmd.exe /c Dism /Online /Enable-Feature /FeatureName:Windows-Defender
-   ```
-
-3. デバイスを再起動します。
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Windows Server で Microsoft Defender ウイルス対策をパッシブ モードに設定する
 
@@ -179,12 +138,12 @@ Defender for Endpoint への切り替えを行う際に、Microsoft Defender ウ
 
 |コレクションの種類|操作|
 |---|---|
-|[デバイス グループ](/microsoft-365/security/defender-endpoint/machine-groups) (以前は *マシン グループ* と呼ばれた) を使用すると、セキュリティ運用チームは、自動調査や修復などのセキュリティ機能を構成できます。 <br/><br/> デバイス グループは、セキュリティ運用チームが必要に応じて修復アクションを実行できるように、それらのデバイスへのアクセスを割り当てる場合にも役立ちます。 <br/><br/> デバイス グループは、攻撃が検出および停止された間に作成され、"初期アクセス アラート" などのアラートがトリガーされ[、Microsoft 365 Defender ポータル](/microsoft-365/security/defender/microsoft-365-defender)に表示されます。|1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動します。<br/><br/>2. 左側のナビゲーション ウィンドウで、[設定 **エンドポイント**\>の **アクセス許可** \> **デバイス グループ****]** \> を選択します。<br/><br/>3. [ **+ デバイス グループの追加]** を選択します。<br/><br/>4. デバイス グループの名前と説明を指定します。<br/><br/>5. **[オートメーション] レベル** の一覧で、オプションを選択します。 ( **完全 - 脅威を自動的に修復** することをお勧めします)。さまざまな自動化レベルの詳細については、「 [脅威を修復する方法](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)」を参照してください。<br/><br/>6. 一致ルールの条件を指定して、デバイス グループに属するデバイスを決定します。 たとえば、ドメイン、OS のバージョンを選択したり、 [デバイス タグ](/microsoft-365/security/defender-endpoint/machine-tags)を使用したりすることもできます。<br/><br/>7. [ **ユーザー アクセス** ] タブで、デバイス グループに含まれるデバイスにアクセスできるロールを指定します。<br/><br/>8. [完了] を選択 **します**。|
+|[デバイス グループ](/microsoft-365/security/defender-endpoint/machine-groups) (以前は *マシン グループ* と呼ばれた) を使用すると、セキュリティ運用チームは、自動調査や修復などのセキュリティ機能を構成できます。 <br/><br/> デバイス グループは、セキュリティ運用チームが必要に応じて修復アクションを実行できるように、それらのデバイスへのアクセスを割り当てる場合にも役立ちます。 <br/><br/> デバイス グループは、攻撃の検出と停止中に作成され、"初期アクセス アラート" などのアラートがトリガーされ[、Microsoft 365 Defender ポータル](/microsoft-365/security/defender/microsoft-365-defender)に表示されます。|1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動します。<br/><br/>2. 左側のナビゲーション ウィンドウで、[設定 **エンドポイント**\>の **アクセス許可** \> **デバイス グループ****]** \> を選択します。<br/><br/>3. [ **+ デバイス グループの追加]** を選択します。<br/><br/>4. デバイス グループの名前と説明を指定します。<br/><br/>5. **[オートメーション] レベル** の一覧で、オプションを選択します。 ( **完全 - 脅威を自動的に修復** することをお勧めします)。さまざまな自動化レベルの詳細については、「 [脅威を修復する方法](/microsoft-365/security/defender-endpoint/automated-investigations#how-threats-are-remediated)」を参照してください。<br/><br/>6. 一致ルールの条件を指定して、デバイス グループに属するデバイスを決定します。 たとえば、ドメイン、OS のバージョンを選択したり、 [デバイス タグ](/microsoft-365/security/defender-endpoint/machine-tags)を使用したりすることもできます。<br/><br/>7. [ **ユーザー アクセス** ] タブで、デバイス グループに含まれるデバイスにアクセスできるロールを指定します。<br/><br/>8. [完了] を選択 **します**。|
 |[デバイス コレクション](/mem/configmgr/core/clients/manage/collections/introduction-to-collections) を使用すると、セキュリティ運用チームは、アプリケーションの管理、コンプライアンス設定の展開、または組織内のデバイスへのソフトウェア更新プログラムのインストールを行うことができます。 <br/><br/> デバイス コレクションは、[Configuration Manager](/mem/configmgr/)を使用して作成されます。|[「コレクションの作成](/mem/configmgr/core/clients/manage/collections/create-collections#bkmk_create)」の手順に従います。|
 |[組織単位](/azure/active-directory-domain-services/create-ou) を使用すると、ユーザー アカウント、サービス アカウント、コンピューター アカウントなどのオブジェクトを論理的にグループ化できます。 <br/><br/> その後、管理者を特定の組織単位に割り当て、グループ ポリシーを適用して、対象となる構成設定を適用できます。 <br/><br/> 組織単位は [Azure Active Directory Domain Services](/azure/active-directory-domain-services)で定義されます。|[Azure Active Directory Domain Servicesマネージド ドメインでの組織単位の作成に関するページの](/azure/active-directory-domain-services/create-ou)手順に従います。|
 
 ## <a name="next-step"></a>次のステップ
 
-**おめでとうございます**。 [Defender for Endpoint への切り替え](switch-to-mde-overview.md#the-migration-process)のセットアップ フェーズが完了しました。
+**おめでとうございます**。 [Defender for Endpoint に切り替える](switch-to-mde-overview.md#the-migration-process)セットアップ フェーズが完了しました。
 
 - [フェーズ 3: Defender for Endpoint へのオンボードに進む](switch-to-mde-phase-3.md)

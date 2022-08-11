@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4fe66987f9b8ea5c2f0b27ae9fb594a198da2e9b
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 9f612e79eaed1403592668feae1144aab7f6fddf
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855045"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280743"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -73,23 +73,12 @@ Microsoft 脅威エキスパートにサブスクライブするには、アカ�
 - 高度な攻撃者に直面した場合に、疑わしいデバイスの動作と次の手順を明確にする
 - 脅威アクター、キャンペーン、または新たな攻撃者手法に関するリスクと保護を決定する
 
-**脅威の専門家に相談** するオプションは、ポータル内のいくつかの場所で利用できるため、調査のコンテキストで専門家と対話できます。
+**Defender エキスパートに質問** するオプションは、ポータル内のいくつかの場所で利用できるため、調査のコンテキストで専門家と対話できます。
 
 - ***[ヘルプとサポート] メニュー***
-
-  :::image type="content" source="images/mte-eod-menu.png" alt-text="MTE-EOD メニュー項目" lightbox="images/mte-eod-menu.png":::
-
 - ***[デバイス ページのアクション] メニュー***
-
-  :::image type="content" source="images/mte-eod-machines.png" alt-text="MTE-EOD デバイス ページのアクション メニュー オプション" lightbox="images/mte-eod-machines.png":::
-
 - ***[アラート ページのアクション] メニュー***
-
-  :::image type="content" source="images/mte-eod-alerts.png" alt-text="MTE-EOD アラート ページのアクション メニュー オプション" lightbox="images/mte-eod-alerts.png":::
-
 - ***[ファイル ページのアクション] メニュー***
-
-  :::image type="content" source="images/mte-eod-file.png" alt-text="MTE-EOD ファイル ページのアクション メニュー オプション" lightbox="images/mte-eod-file.png":::
 
 > [!NOTE]
 > Microsoft Services Hub を通じてエキスパート オンデマンド ケースの状態を追跡する場合は、カスタマー サクセス アカウント マネージャーにお問い合わせください。

@@ -3,7 +3,7 @@
   items:
     - name: 概要
       items:
-        - name: Microsoft Defender for Businessとは
+        - name: Defender for Business とは?
           href: mdb-overview.md
         - name: 簡略化された構成
           href: mdb-simplified-configuration.md
@@ -79,6 +79,8 @@
       items:
         - name: Microsoft Defender for Business サーバーを取得する方法 (プレビュー)
           href: get-defender-business-servers.md
+        - name: 用語集
+          href: ../../business-premium/m365bp-glossary.yml?bc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Fbreadcrumb%2Ftoc.json&toc=%2Fmicrosoft-365%2Fsecurity%2Fdefender-business%2Ftoc.json
         - name: ヘルプを入手する方法またはサポートに問い合わせる方法
           href: mdb-get-help.md
         - name: よく寄せられる質問

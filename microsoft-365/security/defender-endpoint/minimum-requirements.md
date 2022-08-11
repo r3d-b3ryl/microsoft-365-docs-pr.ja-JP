@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4e50346c7ffe6a56950e278092e14fbb2be33da
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: a906a0ddebdfb96552b868587f466108d8f4dec9
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174939"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300872"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の最小要件
 
@@ -43,12 +43,13 @@ ms.locfileid: "67174939"
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
+[Defender for Endpoint プラン 1 とプラン 2](defender-endpoint-plan-1-2.md) のスタンドアロン バージョンには、サーバー ライセンスは含まれません。 これらのプランにサーバーをオンボードするには、Defender for Servers プラン 1 またはプラン 2 が [Defender for Cloud](/azure/defender-for-cloud/defender-for-cloud-introduction) オファリングの一部として必要です。 詳細については、 [Microsoft Defender for Servers](/azure/defender-for-cloud/defender-for-servers-introduction) の概要を参照してください。
+
 Microsoft Defender for Endpoint のライセンス要件の詳細については、[Microsoft Defender for Endpoint のライセンス情報](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-defender-for-endpoint)を参照してください。
 
 詳細なライセンス情報については、[製品条項サイト](https://www.microsoft.com/licensing/terms/)を参照し、アカウント チームと協力して使用条件の詳細を確認してください。
 
 Windows エディションの機能の詳細については、「[Windows エディションの比較](https://www.microsoft.com/windowsforbusiness/compare)」を参照してください。
-
 ## <a name="browser-requirements"></a>ブラウザー要件
 
 Defender for Endpoint へのアクセスはブラウザーを介して行われます。以下のブラウザーがサポートされています。

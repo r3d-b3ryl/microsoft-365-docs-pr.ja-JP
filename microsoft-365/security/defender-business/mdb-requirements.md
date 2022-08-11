@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 1cb133a11bf0c59bcff117721badddc87e44a96c
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 20de14ce0357ecb28a205d1699a8756b78e542aa
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970080"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301274"
 ---
 # <a name="microsoft-defender-for-business-requirements"></a>Microsoft Defender for Business要件
 
@@ -39,12 +40,12 @@ ms.locfileid: "66970080"
 
 | 要件 | 説明 |
 |:---|:---|
-| サブスクリプション | Microsoft 365 Business Premiumまたは Defender for Business (スタンドアロン)。 [Defender for Business を取得する方法に関する説明を](get-defender-business.md)参照してください。<p>複数のサブスクリプションがある場合は、最も高いサブスクリプションが優先されることに注意してください。 たとえば、プラン 2 (購入または試用版サブスクリプション) Microsoft Defender for Endpointしていて、Defender for Business を取得した場合、Defender for Endpoint プラン 2 が優先されます。 この場合、Defender for Business エクスペリエンスは表示されません。 「[Microsoft 365 Defender サブスクリプションが混在している場合はどうなります](mdb-faq.yml#what-happens-if-i-have-a-mix-of-microsoft-endpoint-security-subscriptions)か?」を参照してください。  |
+| サブスクリプション | Microsoft 365 Business Premiumまたは Defender for Business (スタンドアロン)。 [Defender for Business を取得する方法に関する説明を](get-defender-business.md)参照してください。  |
 | Datacenter | 次のいずれかのデータセンターの場所。 <ul><li>欧州連合</li><li>英国</li><li>米国</li></ul> |
 | ユーザー アカウント |<ul><li>ユーザー アカウントは、Microsoft 365 管理センター ([https://admin.microsoft.com](https://admin.microsoft.com)) に作成されます。</li><li>Defender for Business (またはMicrosoft 365 Business Premium) のライセンスは、Microsoft 365 管理センターに割り当てられます。</li></ul>このタスクのヘルプについては、「ユーザーの [追加とライセンスの割り当て](mdb-add-users.md)」を参照してください。 |
-| アクセス許可  | Defender for Business にサインアップするには、グローバル 管理である必要があります。<p>Microsoft 365 Defender ポータルにアクセスするには、[Azure AD で](mdb-roles-permissions.md)次のいずれかのロールが割り当てられている必要があります。<ul><li>セキュリティ閲覧者</li><li>セキュリティ管理者</li><li>グローバル管理者</li></ul>詳細については、「 [Defender for Business のロールとアクセス許可」を](mdb-roles-permissions.md)参照してください。 |
+| アクセス許可  | Defender for Business にサインアップするには、グローバル 管理である必要があります。<br/><br/>Microsoft 365 Defender ポータルにアクセスするには、[Azure AD で](mdb-roles-permissions.md)次のいずれかのロールが割り当てられている必要があります。<ul><li>セキュリティ閲覧者</li><li>セキュリティ管理者</li><li>グローバル管理者</li></ul>詳細については、「 [Defender for Business のロールとアクセス許可」を](mdb-roles-permissions.md)参照してください。 |
 | ブラウザー要件 | Microsoft Edge または Google Chrome |
-| クライアント デバイス オペレーティング システム | Microsoft 365 Defender ポータルでデバイスを管理するには、デバイスが次のいずれかのオペレーティング システムを実行している必要があります。 <ul><li>Windows 10または 11 Business</li><li>Windows 10または 11 Professional</li><li>Windows 10または 11 Enterprise</li><li>Mac (最新の 3 つのリリースがサポートされています)</li></ul><p>WINDOWS デバイスに [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) がインストールされていることを確認します。 <p>Microsoft Intuneでデバイスを既に管理している場合は、Microsoft エンドポイント マネージャー管理センターを引き続き使用できます。 その場合、次の他のオペレーティング システムがサポートされます。 <ul><li>iOS と iPadOS</li><li>Android OS</li></ul> |
+| クライアント デバイス オペレーティング システム | Microsoft 365 Defender ポータルでデバイスを管理するには、デバイスが次のいずれかのオペレーティング システムを実行している必要があります。 <ul><li>Windows 10または 11 Business</li><li>Windows 10または 11 Professional</li><li>Windows 10または 11 Enterprise</li><li>Mac (最新の 3 つのリリースがサポートされています)</li></ul><br/><br/>WINDOWS デバイスに [KB5006738](https://support.microsoft.com/topic/october-26-2021-kb5006738-os-builds-19041-1320-19042-1320-and-19043-1320-preview-ccbce6bf-ae00-4e66-9789-ce8e7ea35541) がインストールされていることを確認します。 <br/><br/>Microsoft Intuneでデバイスを既に管理している場合は、Microsoft エンドポイント マネージャー管理センターを引き続き使用できます。 その場合、次の他のオペレーティング システムがサポートされます。 <ul><li>iOS と iPadOS</li><li>Android OS</li></ul> |
 | サーバーの要件 | Windows Server または Linux Server のインスタンスのオンボードを計画している場合は、次の要件を満たしている必要があります。 <ul><li>**[プレビュー機能]** 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、**[設定]** > **[エンドポイント]** > **[全般]** > **[高度な機能]****[プレビュー機能]** >  の順に移動します。</li><li>Windows Server の適用スコープが有効になっています。 Microsoft 365 Defender ポータルで、[**設定** > **エンドポイント** > **の構成管理** > **の適用] スコープ** に移動します。 **[MDE を使用して MEM からセキュリティ構成設定を適用する]** を選択し、  **[Windows Server]** を選択してから、**[保存]** を選択します。</li><li>Linux Server エンドポイントは、[Linux でのMicrosoft Defender for Endpointの前提条件を](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites)満たしています。</li></ul> |
 
 > [!NOTE]

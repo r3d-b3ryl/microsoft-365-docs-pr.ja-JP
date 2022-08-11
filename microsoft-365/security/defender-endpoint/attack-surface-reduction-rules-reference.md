@@ -16,13 +16,13 @@ ms.custom: asr
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.date: 02/04/2022
-ms.openlocfilehash: 593eb801505275210862d9b776c6e2dca290ef89
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.date: 08/10/2022
+ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493023"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306616"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -46,7 +46,7 @@ ms.locfileid: "66493023"
 - [ASR ルール モード](#asr-rule-modes)
 - [ルールごとの説明](#per-rule-descriptions)
 
-## <a name="supported-operating-systems"></a>サポートされるオペレーティング システム
+## <a name="supported-operating-systems"></a>サポートされているオペレーティング システム 
 
 次の表に、現在一般公開にリリースされているルールでサポートされているオペレーティング システムを示します。 この表には、規則のアルファベット順が一覧表示されます。
 
@@ -172,7 +172,7 @@ _警告モード_ は、危険な可能性があるアクションについて�
 
 [許可] ボタンをクリックすると、ブロックは 24 時間非表示になります。 24 時間後、エンド ユーザーはブロックを再度許可する必要があります。 ASR ルールの警告モードは、RS5+ (1809 以降) デバイスでのみサポートされます。 バイパスが古いバージョンのデバイスの ASR ルールに割り当てられている場合、ルールはブロック モードになります。
 
-また、AttackSurfaceReductionRules_Actionsを "警告" として指定することで、PowerShell を使用して警告モードでルールを設定することもできます。 次に例を示します。
+また、AttackSurfaceReductionRules_Actionsを "警告" として指定することで、PowerShell を使用して警告モードでルールを設定することもできます。 例:
 
 ```powershell
 -command "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Warn"} 
@@ -201,7 +201,7 @@ Intune名:`Block abuse of exploited vulnerable signed drivers`
 
 Configuration Manager名: まだ使用できません
   
-GUID：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
+Guid：  `56a863a9-875e-4185-98a7-b882c64b5ce5`
 
 高度なハンティング アクションの種類:
 
@@ -229,7 +229,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 - AsrAdobeReaderChildProcessAudited
 - AsrAdobeReaderChildProcessBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 ### <a name="block-all-office-applications-from-creating-child-processes"></a>すべての Office アプリケーションによる子プロセスの作成をブロックする
 
@@ -248,7 +248,7 @@ GUID: `d4f940ab-401b-4efc-aadc-ad5f3c50688a`
 - AsrOfficeChildProcessAudited
 - AsrOfficeChildProcessBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 ### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Windows ローカル セキュリティ機関サブシステムからの資格情報の盗用をブロックする
 
@@ -273,7 +273,7 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 - AsrLsassCredentialTheftAudited
 - AsrLsassCredentialTheftBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>電子メール クライアントと webmail から実行可能コンテンツをブロックする
 
@@ -293,7 +293,7 @@ GUID: `be9ba2d9-53ea-4cdc-84e5-9b1eeee46550`
 - AsrExecutableEmailContentAudited
 - AsrExecutableEmailContentBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 > [!NOTE]
 > **ルール[電子メール クライアントと Webmail からの実行可能コンテンツのブロック**] には、使用するアプリケーションに応じて、次の代替説明があります。
@@ -324,7 +324,7 @@ GUID: `01443614-cd74-433a-b99e-2ecdc07bfc25`
 - AsrUntrustedExecutableAudited
 - AsrUntrustedExecutableBlocked
 
-依存関係: MDAV、Cloud Protection
+依存関係: Microsoft Defender ウイルス対策、Cloud Protection
 
 ### <a name="block-execution-of-potentially-obfuscated-scripts"></a>難読化される可能性があるスクリプトの実行をブロックする
 
@@ -349,7 +349,7 @@ GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-依存関係: MDAV、AMSI
+依存関係: Microsoft Defender ウイルス対策、AMSI
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>ダウンロードした実行可能コンテンツの起動から JavaScript または VBScript をブロックする
 
@@ -368,7 +368,7 @@ GUID: `d3e037e1-3eb8-44c8-a917-57927947596d`
 - AsrScriptExecutableDownloadAudited
 - AsrScriptExecutableDownloadBlocked
 
-依存関係: MDAV、AMSI
+依存関係: Microsoft Defender ウイルス対策、AMSI
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Office アプリケーションが実行可能コンテンツを作成できないようにする
 
@@ -387,7 +387,7 @@ GUID: `3b576869-a4ec-4529-8536-b80a7769e899`
 - AsrExecutableOfficeContentAudited
 - AsrExecutableOfficeContentBlocked
 
-依存関係: MDAV、RPC
+依存関係: Microsoft Defender ウイルス対策、RPC
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Office アプリケーションが他のプロセスにコードを挿入できないようにする
 
@@ -410,7 +410,7 @@ GUID: `75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84`
 - AsrOfficeProcessInjectionAudited
 - AsrOfficeProcessInjectionBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Office 通信アプリケーションによる子プロセスの作成をブロックする
 
@@ -432,7 +432,7 @@ GUID: `26190899-1602-49e8-8b27-eb1d0a1ce869`
 - AsrOfficeCommAppChildProcessAudited
 - AsrOfficeCommAppChildProcessBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 ### <a name="block-persistence-through-wmi-event-subscription"></a>WMI イベント サブスクリプションを使用して永続化をブロックする
 
@@ -454,7 +454,7 @@ GUID: `e6db77e5-3df2-4cf1-b95a-636979351e5b`
 - AsrPersistenceThroughWmiAudited
 - AsrPersistenceThroughWmiBlocked
 
-依存関係: MDAV、RPC
+依存関係: Microsoft Defender ウイルス対策、RPC
 
 ### <a name="block-process-creations-originating-from-psexec-and-wmi-commands"></a>PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする
 
@@ -474,7 +474,7 @@ GUID: `d1e49aac-8f56-4280-b9ba-993a6d77406c`
 - AsrPsexecWmiChildProcessAudited
 - AsrPsexecWmiChildProcessBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 ### <a name="block-untrusted-and-unsigned-processes-that-run-from-usb"></a>USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする
 
@@ -494,7 +494,7 @@ GUID: `b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4`
 - AsrUntrustedUsbProcessAudited
 - AsrUntrustedUsbProcessBlocked
 
-依存関係: MDAV
+依存関係: Microsoft Defender ウイルス対策
 
 ### <a name="block-win32-api-calls-from-office-macros"></a>Office マクロからの Win32 API 呼び出しをブロックする
 
@@ -520,7 +520,7 @@ GUID: `92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b`
 - AsrOfficeMacroWin32ApiCallsAudited
 - AsrOfficeMacroWin32ApiCallsBlocked
 
-依存関係: MDAV、AMSI
+依存関係: Microsoft Defender ウイルス対策、AMSI
 
 ### <a name="use-advanced-protection-against-ransomware"></a>ランサムウェアに対する高度な保護を使用する
 
@@ -546,4 +546,4 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 - AsrRansomwareAudited
 - AsrRansomwareBlocked
 
-依存関係: MDAV、Cloud Protection
+依存関係: Microsoft Defender ウイルス対策、Cloud Protection

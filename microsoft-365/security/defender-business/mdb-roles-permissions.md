@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/09/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 0f0065a65595279ab67141f8d4ddf31fc045e305
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: b8e884c207479a7d2781e1ea4e31b9ee91bd25db
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970124"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300894"
 ---
 # <a name="assign-roles-and-permissions-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでロールとアクセス許可を割り当てる
 
@@ -29,8 +30,8 @@ Defender for Business の構成、レポートの表示、検出された脅威�
 
 ## <a name="what-to-do"></a>操作
 
-1. [Defender for Business のロールについて説明します](#roles-in-defender-for-business)。
-2. [セキュリティ チームのロールの割り当てを表示または編集](#view-or-edit-role-assignments)します。
+1. [Defender for Business の役割について学ぶ](#roles-in-defender-for-business)。
+2. [セキュリティ チームの役割の割り当てを表示または編集する](#view-or-edit-role-assignments)。
 3. [次の手順に進みます](#next-steps)。
 
 

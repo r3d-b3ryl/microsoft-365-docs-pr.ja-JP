@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/22/2020
 ms.technology: mde
-ms.openlocfilehash: 32dbff60a37c31cdbfd492eb5d746a10d9b7a185
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1742c674cb982282d8edbe73e43e6ea59fedf8f6
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61934383"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281841"
 ---
 # <a name="devicealertevents"></a>DeviceAlertEvents
 
@@ -29,7 +29,10 @@ ms.locfileid: "61934383"
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-> Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
+> [!IMPORTANT]
+> テーブルとテーブルは`AlertInfo`、`AlertEvidence`Microsoft Defender for Endpoint スキーマ内のテーブルを置き換えます`DeviceAlertEvents`。 詳細については、「 [DeviceAlertEvents テーブルのマップ」を](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)参照してください。
+
+Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
 
 `DeviceAlertEvents` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft 365 Defenderのアラートに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
@@ -48,7 +51,7 @@ ms.locfileid: "61934383"
 |`SHA1`|文字列|記録されたアクションが適用されたファイルの SHA-1|
 |`RemoteUrl`|文字列|に接続されていた URL または完全修飾ドメイン名 (FQDN)|
 |`RemoteIP`|文字列|に接続されていた IP アドレス|
-|`AttackTechniques`|string|MITRE ATT&アラートをトリガーしたアクティビティに関連付けられた CK 手法|
+|`AttackTechniques`|文字列|MITRE ATT&アラートをトリガーしたアクティビティに関連付けられた CK 手法|
 |`ReportId`|long|繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を列と`Timestamp`共に使用する`DeviceName`必要があります。|
 |`Table`|文字列|イベントの詳細を含むテーブル|
 

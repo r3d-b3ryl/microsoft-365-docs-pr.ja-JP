@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: macapara
 author: mjcaparas
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0414f85c9d461a2f676f9bc248a1ce065f7547d7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949505"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306432"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -55,7 +56,7 @@ ms.locfileid: "66949505"
 - Windows 10バージョン 1703 以降、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 を使用するデバイスでサポートされます。
     
    > [!NOTE]
-   > この機能を機能させるには、「[Windows サーバーのオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」の手順に従って、Windows Server 2016 R2 と Windows Server 2012 R2 をオンボードする必要があります。 許可、ブロック、および修復アクションを含むカスタム ファイル インジケーターは、 [macOS と Linux の強化されたマルウェア対策エンジン機能のパブリック プレビュー](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)でも利用できるようになりました。
+   > この機能を機能させるには、「[Windows サーバーのオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」の手順に従って、Windows Server 2016 R2 と Windows Server 2012 R2 をオンボードする必要があります。 許可、ブロック、および修復アクションを含むカスタム ファイル インジケーターは、 [macOS および Linux 用の強化されたマルウェア対策エンジン機能](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/enhanced-antimalware-engine-capabilities-for-linux-and-macos/ba-p/3292003)でも使用できるようになりました。
 
 - ファイルのブロックを開始するには、まず[設定] [で [ブロックまたは許可] 機能をオンにする](advanced-features.md) 必要があります。
 
@@ -90,7 +91,7 @@ ms.locfileid: "66949505"
 > [!IMPORTANT]
 > このセクションの情報 (**自動調査と修復エンジンのパブリック プレビュー**) は、製品が商用リリースされる前に大幅に変更される可能性があるプレリリース製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-ファイル IOC で現在サポートされているアクションは、許可、監査、ブロック、および修復されます。 ファイルをブロックすることを選択した後、アラートのトリガーが必要かどうかを選択できます。 これにより、セキュリティ運用チームに対するアラートの数を制御し、必要なアラートのみが発生することを確認できます。
+ファイル IOC で現在サポートされているアクションは、許可、監査、ブロック、および修復されます。 ファイルをブロックすることを選択した後、アラートのトリガーが必要かどうかを選択できます。 これにより、セキュリティ運用チームに通知されるアラートの数を制御し、必要なアラートのみが発生することを確認できます。
 
 Microsoft 365 Defenderで、[Settings **Endpoints Indicators** Add New File Hash **]** > \(**新しいファイル ハッシュ****の** >  > 追加\) に移動します。
 
@@ -115,7 +116,7 @@ Microsoft 365 Defenderで、[Settings **Endpoints Indicators** Add New File Hash
 >
 > EnableFileHashComputation グループ ポリシーの詳細については、「 [Defender CSP](/windows/client-management/mdm/defender-csp)」を参照してください。
 >
-> Linux および macOS 上の Defender for Endpoint でこの機能を構成する方法の詳細については、「 [Linux でファイル ハッシュ計算機能を構成](linux-preferences.md#configure-file-hash-computation-feature) する」と [「macOS でのファイル ハッシュ計算機能の構成](mac-preferences.md#configure-file-hash-computation-feature)」を参照してください。
+> Linux および macOS 上の Defender for Endpoint でこの機能を構成する方法の詳細については、「 [Linux でファイル ハッシュ計算機能を構成](linux-preferences.md#configure-file-hash-computation-feature) する」と「 [macOS でのファイル ハッシュ計算機能の構成」を](mac-preferences.md#configure-file-hash-computation-feature)参照してください。
 
 ## <a name="public-preview-advanced-hunting-capabilities"></a>パブリック プレビュー: 高度なハンティング機能
 
@@ -132,7 +133,7 @@ Timestamp > ago(30d)
 
 高度な捜索の詳細については、「高度な捜索 [で脅威をプロアクティブに検出する](advanced-hunting-overview.md)」を参照してください。
 
-上記のサンプル クエリで使用できる追加のスレッド名を次に示します。
+上記のサンプル クエリで使用できる他のスレッド名を次に示します。
 
 ファイル:
 
@@ -149,7 +150,7 @@ Timestamp > ago(30d)
 
 証明書と File IoC ポリシー処理の競合は、次の順序に従います。
 
-- アプリケーション制御と AppLocker でファイル Windows Defenderが許可されていない場合は、モード ポリシー/ポリシーを適用します。その後、**ブロック**
+- アプリケーションコントロールと AppLocker でファイル Windows Defenderが許可されていない場合は、モードポリシー/ポリシーを適用します。その後、**ブロック**
 - ファイルが Microsoft Defender ウイルス対策の除外によって許可されている場合は 、**許可** する
 - それ以外の場合は、ファイルがブロックによってブロックまたは警告されるか、ファイル IoC に警告されます。その後 **、ブロック/警告**
 - 許可ファイル IoC ポリシーによってファイルが許可されている場合は 、**許可** する

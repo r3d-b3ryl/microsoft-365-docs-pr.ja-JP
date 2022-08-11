@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 分類子は、見るサンプルを提供することで、さまざまな種類のコンテンツを認識するようにトレーニングできるツールです。 この記事では、カスタム分類子を作成してトレーニングする方法と、それらを再トレーニングして精度を高める方法について説明します。
-ms.openlocfilehash: ff23f24145cee1b694f96e933919dddf779dfd9a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 16ae9e3d3ee7efc6d82be7b89f99b8b57cdb0845
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66631383"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309815"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>トレーニング可能な分類子の使用を開始する
 
@@ -38,7 +38,7 @@ Microsoft 365 トレーニング可能な分類子は、見るサンプルを提
 
 </br>
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+<!-- [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]-->
 
 
 ## <a name="prerequisites"></a>前提条件

@@ -1,5 +1,5 @@
 ---
-title: 所有者のないMicrosoft 365 グループとチームを管理する
+title: 所有者レスの Microsoft 365 グループとチームを管理する
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -20,17 +20,17 @@ ms.custom:
 search.appverid:
 - MET150
 - MOE150
-description: 所有者のないMicrosoft 365 グループまたはMicrosoft Teamsのチームの所有者になるようにメンバーを自動的に招待する方法について説明します。
-ms.openlocfilehash: da332d32bef075c8ca6ecf45fa642ef6d944bea1
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+description: 所有者のない Microsoft 365 グループまたは Microsoft Teams のチームの所有者になるようにメンバーを自動的に招待する方法について説明します。
+ms.openlocfilehash: 0c64aa01784e837be1f57e0ae2ad5b0db6317e9a
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008641"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280875"
 ---
-# <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>所有者のないMicrosoft 365 グループとチームを管理する
+# <a name="manage-ownerless-microsoft-365-groups-and-teams"></a>所有者レスの Microsoft 365 グループとチームを管理する
 
-Microsoft TeamsまたはMicrosoft 365 グループのチームとその関連サービスは、Microsoft 365で所有者のアカウントが削除または無効になっている場合、所有者がいない状態になることがあります。 グループとチームでは、所有者がメンバーを追加または削除し、グループ設定を変更する必要があります。
+Microsoft Teams または Microsoft 365 グループのチームとその関連サービスは、Microsoft 365 で所有者のアカウントが削除または無効になっている場合、所有者を失う可能性があります。 グループとチームでは、所有者がメンバーを追加または削除し、グループ設定を変更する必要があります。
 
 グローバル管理者は、所有者のないグループまたはチームの最もアクティブなメンバーが所有権を受け入れるかどうかを自動的に要求するポリシーを作成できます。 メンバーが招待を受け入れて所有者になると、アクションはコンプライアンス ポータルの監査ログに記録されます。 ゲストは所有者として招待されることはありません。
 
@@ -41,11 +41,11 @@ Microsoft TeamsまたはMicrosoft 365 グループのチームとその関連サ
 - ポリシーの一部であるグループまたはチーム
 
 > [!Note]
-> セキュリティ グループを使用して所有者に招待できるユーザーを制限するには、所有している必要がありますが、組織内の各Microsoft 365 グループ メンバーに対して必ずしもAzure AD Premium ライセンスを割り当てる必要はありません。
+> セキュリティ グループを使用して、所有者として招待できるユーザーを制限するには、組織内の Microsoft 365 グループ メンバーごとに Azure AD Premium ライセンスを所有している必要がありますが、必ずしも割り当てる必要はありません。
 
 所有者のないグループまたはチーム ポリシーを設定するには
 
-1. 管理センターで、[**すべての** \> **設定** \> **組織の設定** を表示する] に移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">、[**サービス**] タブ</a>で **[Microsoft 365 グループ**] を選択します。
+1. 管理センターで、[**すべての**\>設定 **組織の設定** を表示 **する]** \> に移動し <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">、[**サービス**] タブ</a>で **[Microsoft 365 グループ**] を選択します。
 
 1. [ **所有者がいない場合は、電子メールを送信し、アクティブなグループ メンバーに所有者になるように依頼** する] チェック ボックスをオンにします。
 
@@ -55,7 +55,7 @@ Microsoft TeamsまたはMicrosoft 365 グループのチームとその関連サ
 
 1. 通知するアクティブなメンバーの数を入力し、通知を送信する週数を選択します。 (通知リストは最初の通知の間に作成され、変更されません)。 **[次へ**] を選択します。
 
-1. *Whoこの電子メールが [差出人*] ページで、メールの送信者を選択し、[**次へ**] を選択します。
+1. [ *このメール* の送信元ユーザー] ページで、メールの送信者を選択し、[ **次へ**] を選択します。 共有メールボックスはサポートされないことに注意してください。 送信者は、ユーザー メールボックスまたはグループ メールボックスのいずれかである必要があります。
 
 1. [ *件名とメッセージ* ] ページで、電子メールをカスタマイズし、必要に応じて **ポリシー ガイドラインの URL を** 含め、[ **次へ**] を選択します。
 

@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c60a61ca1a0a1179abd27c0f6d59970a0c09866
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: cef25147a57cf7613d22fbf393d41ecc33730955
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969554"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309551"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpointのパフォーマンスの問題のトラブルシューティング
 
@@ -38,9 +38,17 @@ ms.locfileid: "66969554"
 
 このトピックでは、macOS でのMicrosoft Defender for Endpointに関連するパフォーマンスの問題を絞り込むために使用できる一般的な手順について説明します。
 
-リアルタイム保護 (RTP) は、デバイスを脅威から継続的に監視および保護する macOS 上のMicrosoft Defender for Endpointの機能です。 ファイルとプロセスの監視とその他のヒューリスティックで構成されます。
 
 実行しているアプリケーションとデバイスの特性によっては、macOS でMicrosoft Defender for Endpointを実行するときに最適でないパフォーマンスが発生する場合があります。 特に、短時間で多くのリソースにアクセスするアプリケーションまたはシステム プロセスは、macOS 上のMicrosoft Defender for Endpointのパフォーマンスの問題につながる可能性があります。
+
+>[!WARNING]
+>開始する前に、デバイスで他のセキュリティ製品が現在実行されていないことを確認してください。 複数のセキュリティ製品が競合し、ホストのパフォーマンスに影響を与える可能性があります。 
+
+## <a name="troubleshoot-performance-issues-using-real-time-protection-statistics"></a>リアルタイム保護統計を使用したパフォーマンスの問題のトラブルシューティング
+**適用対象:**
+- AV に関連するパフォーマンスの問題のみ
+
+リアルタイム保護 (RTP) は、デバイスを脅威から継続的に監視および保護する、macOS 上の Defender for Endpoint の機能です。 ファイルとプロセスの監視とその他のヒューリスティックで構成されます。
 
 これらの問題のトラブルシューティングと軽減には、次の手順を使用できます。
 
@@ -157,3 +165,25 @@ ms.locfileid: "66969554"
 6. パフォーマンスの問題に影響するプロセスまたはディスクの場所を除外して macOS でMicrosoft Defender for Endpointを構成し、リアルタイム保護を再度有効にします。
 
      詳細については、「[macOS でのMicrosoft Defender for Endpointの除外の構成と検証](mac-exclusions.md)」を参照してください。
+
+
+## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint クライアント アナライザーを使用したパフォーマンスの問題のトラブルシューティング
+
+**適用対象:**
+- AV や EDR など、使用可能なすべての Defender for Endpoint コンポーネントのパフォーマンスの問題  
+
+Microsoft Defender for Endpoint Client Analyzer (MDECA) は、macOS [上のオンボード デバイス](/microsoft-365/security/defender-endpoint/onboard-configure)のパフォーマンスの問題をトラブルシューティングするために、トレース、ログ、診断情報を収集できます。
+
+> [!NOTE]
+>- Microsoft Defender for Endpoint クライアント アナライザー ツールは、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用され、IP アドレス(ただしこれらに限定されません)、Microsoft Defender for Endpointで発生する可能性がある問題のトラブルシューティングに役立つ PC 名などの情報を収集します。 プライバシーに関する声明の詳細については、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
+>- 一般的なベスト プラクティスとして、[Microsoft Defender for Endpoint エージェントを 最新の利用可能なバージョン](linux-whatsnew.md) に更新し、さらに調査する前に問題が解決しないかどうかを確認することをお勧めします。 
+
+パフォーマンスの問題のトラブルシューティングのためにクライアント アナライザーを実行するには、「 [macOS および Linux でクライアント アナライザーを実行する](run-analyzer-macos-linux.md)」を参照してください。
+
+>[!NOTE]
+>上記の手順に従った後、パフォーマンスの問題が解決しない場合は、詳細な手順と軽減策についてカスタマー サポートにお問い合わせください。 
+
+
+## <a name="see-also"></a>関連項目
+
+- [エージェントの正常性に関する問題の調査](health-status.md)

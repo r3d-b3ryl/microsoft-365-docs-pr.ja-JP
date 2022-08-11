@@ -16,12 +16,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3452f36068facc92885047184f7e00828f569cbc
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 4afe94238a98cf168015c43946194205f0e20aa0
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873008"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309375"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Linux でのMicrosoft Defender for Endpointのパフォーマンスの問題のトラブルシューティング
 
@@ -65,7 +65,7 @@ ms.locfileid: "65873008"
     デバイスが組織によって管理されている場合は、「 [Defender for Endpoint on Linux の基本設定を設定](linux-preferences.md)する」の手順を使用して、管理者がリアルタイム保護を無効にすることができます。
 
     > [!NOTE]
-    > リアルタイム保護がオフの間もパフォーマンスの問題が解決しない場合、問題の原因はエンドポイントでの検出と対応 (EDR) コンポーネントである可能性があります。 この場合は、この記事の「**Microsoft Defender for Endpoint Client Analyzer を使用したパフォーマンスの問題のトラブルシューティング**」セクションの手順に従ってください。
+    > リアルタイム保護がオフの間もパフォーマンスの問題が解決しない場合、問題の原因はエンドポイントの検出と応答 (EDR) コンポーネントである可能性があります。 この場合は、この記事の「**Microsoft Defender for Endpoint Client Analyzer を使用したパフォーマンスの問題のトラブルシューティング**」セクションの手順に従ってください。
 
 2. 最もスキャンをトリガーしているアプリケーションを見つけるには、Defender for Endpoint on Linux によって収集されたリアルタイム統計を使用できます。
 
@@ -162,99 +162,20 @@ ms.locfileid: "65873008"
 
 ## <a name="troubleshoot-performance-issues-using-microsoft-defender-for-endpoint-client-analyzer"></a>Microsoft Defender for Endpoint クライアント アナライザーを使用したパフォーマンスの問題のトラブルシューティング
 
+
 **適用対象:**
-- AV やEDRなど、使用可能なすべての Defender for Endpoint コンポーネントのパフォーマンスの問題  
+- AV や EDR など、使用可能なすべての Defender for Endpoint コンポーネントのパフォーマンスの問題  
 
-Microsoft Defender for Endpoint Client Analyzer (MDECA) は、Linux [上のオンボード デバイス](/microsoft-365/security/defender-endpoint/onboard-configure)のパフォーマンスの問題をトラブルシューティングするために、トレース、ログ、診断情報を収集できます。
-
-> [!NOTE]
-> Microsoft Defender for Endpoint クライアント アナライザー ツールは、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用され、IP アドレス(ただしこれらに限定されません)、Microsoft Defender for Endpointで発生する可能性がある問題のトラブルシューティングに役立つ PC 名などの情報を収集します。 プライバシーに関する声明の詳細については、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
-
-### <a name="requirements"></a>要件
-
-- クライアント アナライザーは、Microsoft Defender for Endpointにオンボードする前または後に、[サポートされている Linux](microsoft-defender-endpoint-linux.md#system-requirements) ディストリビューションで実行できます。
-- Linux 用クライアント アナライザーを、ダウンロードできる最新のプレビュー エディションからダウンロードします。 <https://aka.ms/XMDEClientAnalyzer>
-- デバイスがプロキシの背後にある場合は、プロキシ サーバーを環境変数としてmde_support_tool.sh スクリプトに渡すだけです。 例: `https_proxy=https://myproxy.contoso.com:8080 ./mde_support_tool.sh"`
-
-### <a name="run-the-client-analyzer-on-linux"></a>Linux でクライアント アナライザーを実行する
-
-関連するコンピューターにターミナルまたは SSH を開き、次のコマンドを実行します。
-
-1. `wget --quiet -O XMDEClientAnalyzer.zip https://aka.ms/XMDEClientAnalyzer`
-2. `unzip -q XMDEClientAnalyzer.zip`
-3. `cd XMDEClientAnalyzer`
-4. `chmod +x mde_support_tool.sh`
-5. 必要な pip コンポーネントと lxml コンポーネントをインストールするために、ルート以外の使用として実行します。 `./mde_support_tool.sh`
-6. 実際の診断パッケージを収集し、結果アーカイブ ファイルを生成するには、ルートとして再実行します。 `./mde_support_tool.sh -d`
-
-   ![コマンド ラインの例の画像。](images/4ca188f6c457e335abe3c9ad3eddda26.png)
+Microsoft Defender for Endpoint Client Analyzer (MDECA) は、macOS [上のオンボード デバイス](/microsoft-365/security/defender-endpoint/onboard-configure)のパフォーマンスの問題をトラブルシューティングするために、トレース、ログ、診断情報を収集できます。
 
 > [!NOTE]
-> - アナライザーでは、結果出力を生成するために 'lxml' が必要です。 インストールされていない場合、アナライザーは、以下の Python パッケージの公式リポジトリからそれをフェッチしようとします。 <https://pypi.org/search/?q=lxml>
-> 
-> - さらに、このツールでは現在、Python バージョン 3 以降をインストールする必要があります。
->
-> - Python 3 を使用できないコンピューターまたは lxml コンポーネントをフェッチできないマシンで実行している場合は、[XMDE クライアント アナライザー バイナリ](https://aka.ms/XMDEClientAnalyzerBinary)という要件を持たないバイナリ ベースのバージョンのアナライザーをダウンロードできます。
+>- Microsoft Defender for Endpoint クライアント アナライザー ツールは、Microsoft カスタマー サポート サービス (CSS) によって定期的に使用され、IP アドレス(ただしこれらに限定されません)、Microsoft Defender for Endpointで発生する可能性がある問題のトラブルシューティングに役立つ PC 名などの情報を収集します。 プライバシーに関する声明の詳細については、 [Microsoft のプライバシーに関する声明](https://privacy.microsoft.com/privacystatement)を参照してください。
+>- 一般的なベスト プラクティスとして、[Microsoft Defender for Endpoint エージェントを 最新の利用可能なバージョン](mac-whatsnew.md) に更新し、さらに調査する前に問題が解決しないかどうかを確認することをお勧めします。 
 
-### <a name="additional-syntax-help"></a>その他の構文ヘルプ:
+パフォーマンスの問題のトラブルシューティングのためにクライアント アナライザーを実行するには、「 [macOS および Linux でクライアント アナライザーを実行する](run-analyzer-macos-linux.md)」を参照してください。
 
-**-h** \# ヘルプ<br>
-\# ヘルプ メッセージを表示する
-
-**パフォーマンス** \# パフォーマンス<br>
-\# オンデマンドで再現できるパフォーマンスの問題を分析するための広範なトレースを収集します。 ベンチマークの期間を指定するために使用 `--length=<seconds>` します。
-
-**-o** \# 出力<br>
-\# 結果ファイルの宛先パスを指定する
-
-**-nz** \# No-Zip<br>
-\# 設定すると、結果として生成されるアーカイブ ファイルの代わりにディレクトリが作成されます
-
-**-f** \# 力<br>
-\# 出力が宛先パスに既に存在する場合は上書きする
-
-### <a name="result-package-contents"></a>結果パッケージの内容
-
-- report.html
-
-  説明: アナライザー スクリプトがコンピューターで実行できる結果とガイダンスを含むメイン HTML 出力ファイル。
-
-- mde_diagnostic.zip
-
-  説明: [Linux](/windows/security/threat-protection/microsoft-defender-atp/linux-resources#collect-diagnostic-information) で *mdatp 診断作成* を実行するときに生成されるのと同じ診断出力
-
-- mde.xml
-
-  説明: 実行中に生成され、HTML レポート ファイルのビルドに使用される XML 出力。
-
-- Processes_information.txt
-
-  説明: システムで実行中のMicrosoft Defender for Endpoint関連プロセスの詳細が含まれます。
-
-- Log.txt
-
-  説明: データ収集中に画面に書き込まれたのと同じログ メッセージが含まれます。
-
-- Health.txt
-
-  説明: *mdatp* health コマンドの実行時に表示されるのと同じ基本的な正常性出力。
-
-- Events.xml
-
-  説明: HTML レポートを作成するときにアナライザーによって使用される追加の XML ファイル。
-
-- Audited_info.txt
-
-  説明: [Linux](/microsoft-365/security/defender-endpoint/linux-resources) OS の監査済みサービスと関連コンポーネントの詳細
-
-- perf_benchmark.tar.gz
-
-  説明: パフォーマンス テスト レポート。 これは、パフォーマンス パラメーターを使用している場合にのみ表示されます。
-
-> [!NOTE]
-> 上記の手順に従った後、パフォーマンスの問題が解決しない場合は、詳細な手順と軽減策についてカスタマー サポートにお問い合わせください。
-
-
+>[!NOTE]
+>上記の手順に従った後、パフォーマンスの問題が解決しない場合は、詳細な手順と軽減策についてカスタマー サポートにお問い合わせください。 
 
 ## <a name="see-also"></a>関連項目
 

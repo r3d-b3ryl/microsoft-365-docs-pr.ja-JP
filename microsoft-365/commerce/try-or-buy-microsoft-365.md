@@ -24,12 +24,12 @@ ms.custom:
 search.appverid: GEA150
 description: Microsoft 365 Business Standard、Microsoft 365 Business Premium、または Microsoft 365 Apps for business の 30 日間無料試用版にサインアップします。
 ms.date: 08/07/2020
-ms.openlocfilehash: 0d52c85230bb00c82cb924cbfda7ae69114b8bba
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 473e93660d854f953973cbb4590aceabe0e67e36
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111594"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281819"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>一般法人向け Microsoft 365 サブスクリプションを試用する/購入する
 
@@ -61,7 +61,7 @@ YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fw
 1. <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365 製品サイト</a>に移動します。
 2. **Microsoft 365 Business Standard** など、サインアップするプランを選択し、ページを下にスクロールして、**[1 か月間無料で試す]** を選択します。
 3. 次のページで、手順に従ってアカウントをセットアップします。
-4. サインアップのプロセスは、完了まで数分かかることがあります。 それ\'が完了したら、サブスクリプションのセットアップ ウィザードを開始する準備が整います。 サブスクリプションの設定の詳細については、「[次の手順](#next-steps)」を参照してください。
+4. サインアップ プロセスが完了するまでに数分かかる場合があります。 完了したら、サブスクリプションのセットアップ ウィザードを開始する準備が整います。 サブスクリプションの設定の詳細については、「[次の手順](#next-steps)」を参照してください。
 
 ## <a name="buy-a-subscription-from-your-free-trial"></a>無料試用版からサブスクリプションを購入する
 
@@ -72,7 +72,7 @@ YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fw
 1. Microsoft 365 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページに移動します。
 2. **[お使いの製品]** ページで、購入するサブスクリプションを探します。
 3. [**ライセンス**] セクションで、[**サブスクリプションの購入**] を選択します。
-4. サブスクリプションを月単位にするか年間契約にするかを選択し、[**チェックアウト**] を選択します。
+4. サブスクリプションの請求頻度を選択し、[**チェックアウト**] を選択 します。
 5. 次のページで、サブスクリプションを確認し、[**チェックアウト**] を選択します。
 6. 次のページでは、**販売先** 住所、**請求先** 情報、**この注文の品目** を確認します。 変更が必要な場合は、該当するセクションの横にある [**変更**] を選択します。
 7. 入力が\'完了したら、**[契約に同意して注文する]** を選択します。

@@ -16,12 +16,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: da53bc682d759de976283aed6502108cd9cda350
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: b0f422175ae16bf1e3c6fb7138c235b79911e338
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106210"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306374"
 ---
 # <a name="investigate-data-loss-incidents-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用してデータ損失インシデントを調査する
 
@@ -71,7 +71,7 @@ Microsoft 365 Defender ポータルでMicrosoft Purview データ損失防止イ
 
 6. 必要なアクセス許可がある場合は、[ **機密情報の種類** ] タブで一致する機密コンテンツを表示し、[ **ソース]** タブのファイル コンテンツを表示します (詳細 <a href="/microsoft-365/compliance/dlp-alerts-dashboard-get-started#roles" target="_blank">については、こちらを</a>参照してください)。
 
-7. また、Advanced Hunting を使用して、調査のためにユーザー、ファイル、サイトの場所の監査ログを検索することもできます。 **CloudAppEvents** テーブルには、Sharepoint、OneDrive、Exchange、デバイスなどのすべての場所のすべての監査ログが含まれています。
+7. また、Advanced Hunting を使用して、調査のためにユーザー、ファイル、サイトの場所の監査ログを検索することもできます。 **CloudAppEvents** テーブルには、SharePoint、OneDrive、Exchange、デバイスなどのすべての場所のすべての監査ログが含まれています。
 
 8. [**アクション**\>のダウンロード] メールを選択して **、電子メールをダウンロード** することもできます。 
 
@@ -80,7 +80,7 @@ Microsoft 365 Defender ポータルでMicrosoft Purview データ損失防止イ
     - 保持ラベルを適用する
     - 秘密度ラベルを適用する
     - ファイルの共有を解除する
-    - 削除
+    - Delete
 
    修復アクションの場合は、アラート ページの上部にある **ユーザー カード** を選択して、ユーザーの詳細を開きます。
 

@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 4903a5f5560b6997dbca32e2f7183515868f51a5
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 0d541fe3d129f1533c6642a0eb34547245faa489
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106757"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301312"
 ---
 # <a name="host-firewall-reporting-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint でのホスト ファイアウォール レポート
 
@@ -30,11 +30,13 @@ ms.locfileid: "67106757"
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-グローバル管理者またはセキュリティ管理者の場合は、[Microsoft 365 Defender ポータル](https://security.microsoft.com)にファイアウォール レポートをホストできるようになりました。 この機能を使用すると、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022 ファイアウォールレポートを一元的な場所から表示できます。
+グローバル管理者またはセキュリティ管理者の場合は、[Microsoft 365 Defender ポータル](https://security.microsoft.com)にファイアウォール レポートをホストできるようになりました。 この機能を使用すると、一元的な場所から Windows ファイアウォール レポートを表示できます。
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- Windows 10またはWindows 11、Windows Server 2019、または Windows Server 2022 を実行している必要があります。
+- R2 以降Windows Server 2012 Windows 10以降を実行している必要があります。
+     > [!NOTE]
+     > Windows2012 R2 とWindows Server 2016をファイアウォール レポートに表示するには、これらのデバイスを最新の統合ソリューション パッケージを使用してオンボードする必要があります。 詳細については、「[Windows Server 2012 R2 と 2016 の最新の統合ソリューションの新機能」を参照してください](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)。
 - Microsoft Defender for Endpoint サービスにデバイスをオンボードするには、[こちらを参照してください](onboard-configure.md)。
 - <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータルMicrosoft 365 Defender</a>データの受信を開始するには、高度なセキュリティを備えたWindows Defenderファイアウォールの **監査イベント** を有効にする必要があります。
   - [フィルター プラットフォームのパケット ドロップの監査](/windows/security/threat-protection/auditing/audit-filtering-platform-packet-drop)

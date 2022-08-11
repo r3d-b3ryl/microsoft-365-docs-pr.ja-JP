@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkEXCHANGE
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作していることをユーザーに通知する方法について説明します。
-ms.openlocfilehash: 19ec7b5e359b32cc38310c51c6674968aecc666f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6a02cd488b3d7a0341c042c24f58329353b94bb7
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630943"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285310"
 ---
 # <a name="send-email-notifications-and-show-policy-tips-for-dlp-policies"></a>メール通知を送信して、DLP ポリシーのポリシーのヒントを表示する
 
@@ -94,11 +94,11 @@ DLP ポリシーのそれぞれのルールで、次のことを行えます。
 
 > [!NOTE]
 >
-> - 電子メール通知は、グループや配布リストではなく、個々の受信者にのみ送信できます。
+> - Email通知は、グループや配布リストではなく、個々の受信者にのみ送信できます。
 > - 電子メール通知をトリガーするのは新しいコンテンツだけです。 既存のコンテンツを編集すると、ポリシーヒントがトリガーされますが、電子メール通知はトリガーされません。
 > - 外部送信者は通知を受け取りません。 通知は内部ユーザーにのみ送信されます。
 
-![電子メール通知オプション。](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
+![通知オプションをEmailします。](../media/4e7b9500-2a78-44e6-9067-09f4bfd50301.png)
 
 ### <a name="default-email-notification"></a>既定のメール通知
 
@@ -161,16 +161,16 @@ DLP ポリシー内の各ルールに関して、次の事柄を行うポリシ�
 
 - 	最も制限の厳しいルールでユーザーにルールを上書きすることを許可している場合は、このルールを上書きすることで、コンテンツに一致した他のルールもすべて上書きされます。
 
-- NotifyAllowOverride アクションが WithoutJustification または WithJustification または FlasePositives で設定されている場合は、BlockAccess が true に設定され、BlockAccessScope に適切な値が設定されていることを確認します。 それ以外の場合、ポリシー ヒントが表示されますが、ユーザーは正当な理由で電子メールをオーバーライドするオプションを見つけることができません。
+- NotifyAllowOverride アクションが WithoutJustification または WithJustification または FalsePositives で設定されている場合は、BlockAccess が true に設定され、BlockAccessScope に適切な値が設定されていることを確認します。 それ以外の場合、ポリシー ヒントが表示されますが、ユーザーは正当な理由で電子メールをオーバーライドするオプションを見つけることができません。
 
 #### <a name="availability-of-override"></a>オーバーライドの可用性
 
 |通知ルール |通知/ブロック アクション  |使用可能なオーバーライド  |正当な理由を要求する  |
 |---------|---------|---------|---------|
-|通知のみ     |通知         |いいえ         |不要         |
-|通知 + AllowOverride     |通知         |いいえ         |不要         |
-|通知 + AllowOverride + False positive     |通知         |いいえ         |不要         |
-|通知 + AllowOverride + 理由付き     |通知         |いいえ         |いいえ         |
+|通知のみ     |通知         |不要         |不要         |
+|通知 + AllowOverride     |通知         |不要         |不要         |
+|通知 + AllowOverride + False positive     |通知         |不要         |不要         |
+|通知 + AllowOverride + 理由付き     |通知         |不要         |不要         |
 |Notify + AllowOverride + False positive + Justification なし    |通知         |不要         |不要         |
 |通知 + AllowOverride + False positive + 両端揃え     |通知         |不要         |不要         |
 |通知 + ブロック     |ブロック         |不要         |不要         |
@@ -309,7 +309,7 @@ DLP ポリシーのポリシー ヒントにこれらのオプションが設定
 ## <a name="more-information"></a>詳細情報
 
 - [データ損失防止について](dlp-learn-about-dlp.md)
-- [テンプレートからの DLP ポリシーの作成](create-a-dlp-policy-from-a-template.md)
+- [テンプレートから DLP ポリシーを作成する](create-a-dlp-policy-from-a-template.md)
 - [DLP ポリシーの条件、例外、アクション (プレビュー)](./dlp-microsoft-teams.md)
 - [FCI または他のプロパティを含むドキュメントを保護するために DLP ポリシーを作成する](protect-documents-that-have-fci-or-other-properties.md)
 - [DLP ポリシー テンプレートに含まれるもの](what-the-dlp-policy-templates-include.md)

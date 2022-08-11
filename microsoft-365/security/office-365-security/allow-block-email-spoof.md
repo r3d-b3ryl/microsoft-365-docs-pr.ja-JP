@@ -16,12 +16,12 @@ ms.collection:
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロックリストで、電子メールとスプーフィングされた送信者エントリを許可またはブロックする方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 107aef5dd4cc3098d6e77f45e6b95352997ef738
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: b59a59367a047019a9c397c864662bceda06c240
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175006"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281731"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>テナント許可/禁止リストを使用して電子メールを許可またはブロックする
 
@@ -47,7 +47,7 @@ Microsoft 365 Defender ポータルまたは PowerShell を使用して、テナ
    - **期限切れになることはありません**: 次のいずれかの手順を実行します。
      - 設定がオフになっていることを確認します (![オフに](../../media/scc-toggle-off.png)切り替えます)。[ **削除オン** ] ボックスを使用して、エントリの有効期限を指定します。
 
-       or
+       または
 
      - 切り替えを右に移動して、期限切れにならないようにエントリを構成します。 ![オンに切り替えます。](../../media/scc-toggle-on.png).
    - **省略可能な注**: エントリの説明テキストを入力します。
@@ -169,6 +169,9 @@ Remove-TenantAllowBlockListItems -ListType <Sender> -Ids <"Id1","Id2",..."IdN">
 - **インフラストラクチャ**: tms.mx.com
 
 スプーフィングを許可できるのは、そのドメインからのメッセージ _と_ 送信インフラストラクチャ ペアからのメッセージだけです。 gmail.com をスプーフィングしようとしている他の送信者は許可されません。 tms.mx.com から発信された他のドメインの送信者からのメッセージは、スプーフィング インテリジェンスによってチェックされます。
+
+> [!NOTE]
+> 送信インフラストラクチャではワイルドカードを使用できません。
 
 ## <a name="create-blocked-spoofed-sender-entries"></a>ブロックされたスプーフィングされた送信者エントリを作成する
 

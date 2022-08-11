@@ -19,12 +19,12 @@ ms.collection:
 description: Exchange Online Protection (EOP) とDefender for Office 365セキュリティ設定のベスト プラクティスは何ですか? 標準保護に関する現在の推奨事項は何ですか? より厳しくしたい場合は、何を使用する必要がありますか? また、Defender for Office 365も使用すると、どのような追加機能が得られますか?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6d1c7486f3ead422e6daafbedacd59c34b34963b
-ms.sourcegitcommit: af6c13d7ab1fe440dd45ce8cd3940774cdda66ef
+ms.openlocfilehash: e6b0f09b9b8785ef7e471a9c5269348b131b866b
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67004369"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306594"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>EOP および Microsoft Defender for Office 365 セキュリティの推奨設定
 
@@ -65,7 +65,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |セキュリティ機能名|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**迷惑メールのプロパティ&一括メールしきい値**|||||
-|**一括メールのしきい値** <br><br> _BulkThreshold_|7 |6|4|詳細については、 [EOP の一括苦情レベル (BCL) を](bulk-complaint-level-values.md)参照してください。|
+|**一括メールのしきい値** <br><br> _BulkThreshold_|7 |6|5|詳細については、 [EOP の一括苦情レベル (BCL) を](bulk-complaint-level-values.md)参照してください。|
 |_MarkAsSpamBulkMail_|`On`|`On`|`On`|この設定は、PowerShell でのみ使用できます。|
 |**スパム スコアの設定を増やす**|オフ|オフ|オフ|これらの設定はすべて、高度なスパム フィルター (ASF) の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
 |**スパム設定としてマークする**|オフ|オフ|オフ|これらの設定のほとんどは ASF の一部です。 詳細については、この記事の「 [スパム対策ポリシー」セクションの ASF 設定](#asf-settings-in-anti-spam-policies) を参照してください。|
@@ -78,7 +78,7 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**フィッシング検出** アクション <br><br> _PhishSpamAction_|**迷惑メール Email フォルダーにメッセージを移動する**<sup>\*</sup> <br><br> `MoveToJmf`|**検疫メッセージ** <br><br> `Quarantine`|**検疫メッセージ** <br><br> `Quarantine`|<sup>\*</sup>既定値は、既定のスパム対策ポリシーと PowerShell で作成した新しいスパム対策ポリシーの迷惑メール Email **フォルダーにメッセージを移動** することです。 既定値は、Microsoft 365 Defender ポータルで作成した新しいスパム対策ポリシーの **検疫メッセージ** です。|
 |**高信頼フィッシング** 検出アクション <br><br> _HighConfidencePhishAction_|**検疫メッセージ** <br><br> `Quarantine`|**検疫メッセージ** <br><br> `Quarantine`|**検疫メッセージ** <br><br> `Quarantine`||
 |**一括** 検出アクション <br><br> _BulkSpamAction_|**迷惑メール Email フォルダーにメッセージを移動する** <br><br> `MoveToJmf`|**迷惑メール Email フォルダーにメッセージを移動する** <br><br> `MoveToJmf`|**検疫メッセージ** <br><br> `Quarantine`||
-|**この数日間、検疫でスパムを保持する** <br><br> _QuarantineRetentionPeriod_|15 日間<sup>\*</sup>|30 日間|30 日間|<sup>\*</sup> 既定値は、既定のスパム対策ポリシーと PowerShell で作成した新しいスパム対策ポリシーで 15 日間です。 Microsoft 365Defender ポータルで作成する新しいスパム対策ポリシーの規定値は30日です。 <br><br> この値は、フィッシング対策ポリシーによって検疫されたメッセージにも影響します。 詳細については、「 [EOP で検疫された電子メール メッセージ](quarantine-email-messages.md)」を参照してください。|
+|**この数日間、検疫でスパムを保持する** <br><br> _QuarantineRetentionPeriod_|15 日|30 日間|30 日間|  <br><br> この値は、フィッシング対策ポリシーによって検疫されたメッセージにも影響します。 詳細については、「 [EOP で検疫された電子メール メッセージ](quarantine-email-messages.md)」を参照してください。|
 |**スパムの安全性に関するヒントを有効にする** <br><br> _InlineSafetyTipsEnabled_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |フィッシング メッセージに対してゼロ時間の自動消去 (ZAP) を有効にする <br><br> _PhishZapEnabled_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |スパム メッセージの ZAP を有効にする <br><br> _SpamZapEnabled_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
@@ -99,13 +99,13 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |**別のポートに対する URL リダイレクト** <br><br> _IncreaseScoreWithRedirectToOtherPort_|オフ|オフ|オフ||
 |**.biz または .info Web サイトへのリンク** <br><br> _IncreaseScoreWithBizOrInfoUrls_|オフ|オフ|オフ||
 |**空メッセージ** <br><br> _MarkAsSpamEmptyMessages_|オフ|オフ|オフ||
-|**HTML 内の Embed タグ** <br><br> _MarkAsSpamEmbedTagsInHtml_|オフ|オフ|オフ||
-|**HTML 内の JavaScript または VBScript** <br><br> _MarkAsSpamJavaScriptInHtml_|オフ|オフ|オフ||
+|**HTML 内の Embed タグ** <br><br> _MarkAsSpamEmbedTagsInHtml_|オフ|Off|オフ||
+|**HTML 内の JavaScript または VBScript** <br><br> _MarkAsSpamJavaScriptInHtml_|オフ|Off|オフ||
 |**HTML 内の Form タグ** <br><br> _MarkAsSpamFormTagsInHtml_|オフ|オフ|オフ||
-|**HTML のフレーム タグまたは iframe タグ** <br><br> _MarkAsSpamFramesInHtml_|オフ|オフ|オフ||
+|**HTML のフレーム タグまたは iframe タグ** <br><br> _MarkAsSpamFramesInHtml_|オフ|Off|オフ||
 |**HTML 内の Web バグ** <br><br> _MarkAsSpamWebBugsInHtml_|オフ|オフ|オフ||
 |**HTML 内の Object タグ** <br><br> _MarkAsSpamObjectTagsInHtml_|オフ|オフ|オフ||
-|**機密性の高い単語** <br><br> _MarkAsSpamSensitiveWordList_|オフ|オフ|オフ||
+|**機密性の高い単語** <br><br> _MarkAsSpamSensitiveWordList_|オフ|Off|オフ||
 |**SPF レコード:Hard Fail** <br><br> _MarkAsSpamSpfRecordHardFail_|オフ|オフ|オフ||
 |**送信者 ID フィルターのハード 失敗** <br><br> _MarkAsSpamFromAddressAuthFail_|オフ|オフ|オフ||
 |**バックスキャター** <br><br> _MarkAsSpamNdrBackscatter_|オフ|オフ|オフ||
@@ -137,7 +137,8 @@ Standard または Strict の設定をユーザーに自動的に適用するに
 |セキュリティ機能名|既定値|Standard|Strict|コメント|
 |---|:---:|:---:|:---:|---|
 |**保護の設定**|||||
-|**一般的な添付ファイル フィルターを有効にする** <br><br> _EnableFileFilter_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|この設定は、添付ファイルの内容に関係なく、ファイルの種類に基づいて添付ファイルを含むメッセージを検疫します。 ファイルの種類の一覧については、「 [マルウェア対策ポリシー](anti-malware-protection.md#anti-malware-policies)」を参照してください。|
+|**一般的な添付ファイル フィルターを有効にする** <br><br> _EnableFileFilter_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|この設定は、添付ファイルの内容に関係なく、ファイルの種類に基づいて添付ファイルを含むメッセージを検疫します。 ファイルの種類の一覧については、「 [マルウェア対策ポリシー](anti-malware-protection.md#anti-malware-policies)」を参照してください。|
+|一般的な添付ファイル フィルター通知 (**これらのファイルの種類が見つかった場合**) <br><br> _FileTypeAction_|**配信不可のメッセージを拒否する (NDR)** <br><br> `Reject`|**配信不可のメッセージを拒否する (NDR)** <br><br> `Reject`|**配信不可のメッセージを拒否する (NDR)** <br><br> `Reject`||
 |**マルウェアのゼロ時間自動消去を有効にする** <br><br> _ZapEnabled_|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**検疫ポリシー**|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|AdminOnlyAccessPolicy|新しいマルウェア対策ポリシーを作成すると、空白の値は、既定の検疫ポリシーを使用して、マルウェアとして検疫されたメッセージの履歴機能を定義することを意味します (検疫通知のない AdminOnlyAccessPolicy)。 <br><br> Standard および Strict の事前設定済みセキュリティ ポリシーでは、 [次](quarantine-policies.md#step-2-assign-a-quarantine-policy-to-supported-features)の表に示すように、既定の検疫ポリシー (検疫通知のない AdminOnlyAccessPolicy) が使用されます。 <br><br> 管理者は、既定またはカスタムマルウェア対策ポリシーで、ユーザーに対してより多くの機能を定義するカスタム検疫ポリシーを作成して選択できます。 詳細については、「[検疫ポリシー](quarantine-policies.md)」を参照してください。|
 |**管理通知**|||||
@@ -282,7 +283,7 @@ PowerShell では、これらの設定に [Set-AtpPolicyForO365](/powershell/mod
 
 |セキュリティ機能名|既定値|組み込みの保護|コメント|
 |---|:---:|:---:|---|
-|**次の URL をブロックする** <br><br> _ExcludedUrls_|空白 <br><br> `$null`|空白 <br><br> `$null`|この設定に関する具体的な推奨事項はありません。 <br><br> 詳細については、 [セーフ リンクの「次の URL をブロックする」の一覧を参照してください](safe-links.md#block-the-following-urls-list-for-safe-links)。 <br><br> **注**: [テナント許可/ブロック リスト](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list)でブロック URL エントリを管理できるようになりました。 "次の URL をブロックする" 一覧は非推奨のプロセスです。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。|
+|**次の URL をブロックする** <br><br> _ExcludedUrls_|空白 <br><br> `$null`|空白 <br><br> `$null`|この設定に関する具体的な推奨事項はありません。 <br><br> 詳細については、 [セーフ リンクの「次の URL をブロックする」の一覧を参照してください](safe-links.md#block-the-following-urls-list-for-safe-links)。 <br><br> **注**: [テナント許可/ブロック リスト](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list)でブロック URL エントリを管理できるようになりました。 "次の URL をブロックする"リストは非推奨のプロセスです。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。|
 
 #### <a name="safe-links-policy-settings"></a>セーフ リンク ポリシーの設定
 
@@ -304,7 +305,7 @@ PowerShell では、これらの設定に [New-SafeLinksPolicy](/powershell/modu
 |**不審なリンクや、ファイルを指しているリンクに対してリアルタイム URL スキャンを適用します** <br><br> _ScanUrls_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**URL スキャンが完了するまで待ち、その後でメッセージを配信します。** <br><br> _DeliverMessageAfterScan_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**URL を書き換えず、SafeLinks API のみを使用してチェックを行います。** <br><br> _DisableURLRewrite_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|未選択 <br><br> `$false`|未選択 <br><br> `$false`||
-|**次の URL を書き換えないでください** <br><br> _DoNotRewriteUrls_|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|この設定に関する具体的な推奨事項はありません。 <br><br> **注**: [次の URL を書き換えない] 一覧のエントリは、メール フロー中にセーフ リンクによってスキャンまたはラップされません。 メール _フロー中_ およびクリック時に URL がセーフ リンクによってスキャンまたはラップされないように、[テナント許可/ブロック リストで許可 URL エントリ](allow-block-urls.md#create-allow-url-entries)を使用します。|
+|**次の URL を書き換えないでください** <br><br> _DoNotRewriteUrls_|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|空白 <br><br> `$null`|この設定に関する具体的な推奨事項はありません。 <br><br> **注**: [次の URL を書き換えない] 一覧のエントリは、メール フロー中にセーフ リンクによってスキャンまたはラップされません。 [テナント許可/禁止リストで URL エントリを許可する](allow-block-urls.md#create-allow-url-entries) を使用して、メール フロー _および_ クリック時に安全なリンクで URL がスキャンされたり、ラップされないようにします。|
 |**Microsoft Teams の潜在的に悪意のある URL に対するアクション**||||||
 |**オン: 安全なリンクは、ユーザーが Microsoft Teams でリンクをクリックすると、既知の悪意のあるリンクの一覧をチェックします** <br><br> _EnableSafeLinksForTeams_|未選択 <br><br> `$false`|選択済み <br><br> `$true`|選択済み <br><br> `$true`|選択済み <br><br> `$true`||
 |**Microsoft Office アプリの潜在的に悪意のある URL に対するアクション**||||||

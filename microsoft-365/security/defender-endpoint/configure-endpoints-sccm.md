@@ -1,5 +1,5 @@
 ---
-title: Configuration Managerを使用してWindowsデバイスをオンボードする
+title: Configuration Managerを使用して Windows デバイスをオンボードする
 description: Configuration Managerを使用してデバイスに構成パッケージを展開し、Defender for Endpoint サービスにオンボードします。
 keywords: sccm を使用したデバイスのオンボード、デバイス管理、Microsoft Defender for Endpointデバイスの構成
 ms.prod: m365-security
@@ -16,14 +16,14 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 09/22/2021
 ms.technology: mde
-ms.openlocfilehash: d60d01bd2a77d992110f85967196390f3dceae3d
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 6a311d0fb1edeff8e8eb72148ffc08dfb945cbbe
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873712"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280831"
 ---
-# <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Managerを使用してWindowsデバイスをオンボードする
+# <a name="onboard-windows-devices-using-configuration-manager"></a>Configuration Managerを使用して Windows デバイスをオンボードする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +32,7 @@ ms.locfileid: "65873712"
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- 現在のブランチMicrosoft Endpoint Configuration Manager
+- Microsoft Endpoint Configuration Manager現在のブランチ
 - System Center 2012 R2 Configuration Manager
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -49,14 +49,14 @@ Configuration Managerを使用してデバイスをオンボードするため�
 Windows Server 2012 R2 とWindows Server 2016の場合は、オンボード手順を完了したら、[System Center Endpoint Protection クライアントを構成して更新](onboard-downlevel.md#configure-and-update-system-center-endpoint-protection-clients)する必要があります。
 
 > [!NOTE]
-> Defender for Endpoint では、 [Out-Of-Box Experience (OOBE)](/windows-hardware/test/assessments/out-of-box-experience) フェーズ中のオンボードはサポートされません。 インストールまたはアップグレードWindows実行した後、ユーザーが OOBE を完了していることを確認します。
+> Defender for Endpoint では、 [Out-Of-Box Experience (OOBE)](/windows-hardware/test/assessments/out-of-box-experience) フェーズ中のオンボードはサポートされません。 Windows のインストールまたはアップグレードを実行した後、ユーザーが OOBE を完了していることを確認します。
 >
 > デバイスがオンボードされているかどうかを継続的に確認するために、Configuration Manager アプリケーションに検出ルールを作成できます。 アプリケーションは、パッケージやプログラムとは異なる種類のオブジェクトです。
 > デバイスがまだオンボードされていない場合 (保留中の OOBE の完了またはその他の理由により)、Configuration Managerは、ルールが状態変更を検出するまでデバイスのオンボードを再試行します。
 >
 > この動作は、(種類 REG_DWORDの) "OnboardingState" レジストリ値が 1 かどうかを確認する検出規則を作成することによって実現できます。
 > このレジストリ値は、"HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status" の下にあります。
-詳細については、「[System Center 2012 R2 Configuration Managerでの検出方法の構成](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)」を参照してください。
+詳細については、「[System Center 2012 R2 Configuration Managerで検出方法を構成する](/previous-versions/system-center/system-center-2012-R2/gg682159\(v=technet.10\)#step-4-configure-detection-methods-to-indicate-the-presence-of-the-deployment-type)」を参照してください。
 
 ### <a name="configure-sample-collection-settings"></a>サンプル コレクションの設定を構成する
 
@@ -118,6 +118,65 @@ System Center Configuration Managerコンプライアンスの詳細について
 > [!NOTE]
 > これらのアクティビティをブロックすると、正当なビジネス プロセスが中断される可能性があります。 最善の方法は、すべてを監査に設定し、有効にしても安全なものを特定し、誤検知検出がないエンドポイントでこれらの設定を有効にすることです。
 
+Microsoft System Center Configuration Manager (SCCM) を介して AV および ASR ポリシーを展開するには、次の手順に従います。
+
+- Endpoint Protection を有効にし、カスタム クライアント設定を構成します。
+- コマンド プロンプトから Endpoint Protection クライアントをインストールします。
+- Endpoint Protection クライアントのインストールを確認します。
+
+##### <a name="enable-endpoint-protection-and-configure-custom-client-settings"></a>Endpoint Protection を有効にし、カスタム クライアント設定を構成する
+次の手順に従って、カスタム クライアント設定のエンドポイント保護と構成を有効にします。
+
+1. Configuration Manager コンソールで、[管理] をクリックします **。**
+1. **[管理**] ワークスペースで、[**クライアント設定] をクリックします。**
+1. [**ホーム**] タブの [**作成**] グループで、[**カスタム クライアント デバイス設定の作成**] をクリックします。
+1. [**カスタム クライアント デバイス設定の作成]** ダイアログ ボックスで、設定のグループの名前と説明を入力し、**Endpoint Protection** を選択します。
+1. 必要な Endpoint Protection クライアント設定を構成します。 構成できる Endpoint Protection クライアント設定の完全な一覧については、「クライアント設定について」の「Endpoint Protection」セクションを参照してください [。](/mem/configmgr/core/clients/deploy/about-client-settings#endpoint-protection)
+
+    > [!IMPORTANT]
+    > Endpoint Protection のクライアント設定を構成する前に、Endpoint Protection サイト システムの役割をインストールします。
+
+1. [ **OK] を** クリックして、[ **カスタム クライアント デバイス設定の作成]** ダイアログ ボックスを閉じます。 新しいクライアント設定は、[**管理**] ワークスペースの **[クライアント設定]** ノードに表示されます。
+1. 次に、カスタム クライアント設定をコレクションにデプロイします。 展開するカスタム クライアント設定を選択します。 [ **ホーム** ] タブの [ **クライアント設定]** グループで、[展開] をクリック **します。**
+1. [ **コレクションの選択** ] ダイアログ ボックスで、クライアント設定を展開するコレクションを選択し、[OK] をクリック **します。** 新しいデプロイは、詳細ウィンドウの [ **展開]** タブに表示されます。
+
+クライアントは、次にクライアント ポリシーをダウンロードするときに、これらの設定で構成されます。 詳細については、「[Configuration Manager クライアントのポリシーの取得を開始する」を参照してください。](/mem/configmgr/core/clients/manage/manage-clients)
+
+
+##### <a name="installation-of-endpoint-protection-client-from-a-command-prompt"></a>コマンド プロンプトからの Endpoint Protection クライアントのインストール
+コマンド プロンプトからエンドポイント保護クライアントのインストールを完了するには、次の手順に従います。
+
+1. **Configuration Manager** インストール フォルダーのクライアント フォルダーから、Endpoint Protection **クライアント** ソフトウェアをインストールするコンピューターにscepinstall.exeをコピーします。
+1. 管理者としてコマンド プロンプトを開きます。 インストーラーを使用してディレクトリをフォルダーに変更します。 次に、必要な追加のコマンド ライン プロパティを追加して実行 ```scepinstall.exe```します。
+
+     |**プロパティ**  |**説明**  |
+     |---------|---------|
+     |```/s```      |インストーラーをサイレント モードで実行する|
+     |```/q```      |セットアップ ファイルをサイレント モードで展開する|
+     |```/i```      |インストーラーを通常どおりに実行する|
+     |```/policy``` |インストール中にクライアントを構成するマルウェア対策ポリシー ファイルを指定する|
+     |```/sqmoptin```|Microsoft カスタマー エクスペリエンス向上プログラム (CEIP) へのオプトイン|
+
+1. 画面の指示に従って、クライアントのインストールを完了します。
+1. 最新の更新プログラム定義パッケージをダウンロードした場合は、パッケージをクライアント コンピューターにコピーし、定義パッケージをダブルクリックしてインストールします。
+
+     > [!NOTE]
+     > Endpoint Protection クライアントのインストールが完了すると、クライアントは定義の更新チェックを自動的に実行します。 この更新プログラムのチェックが成功した場合は、最新の定義更新プログラム パッケージを手動でインストールする必要はありません。
+
+**例: マルウェア対策ポリシーを使用してクライアントをインストールする**
+
+```scepinstall.exe /policy <full path>\<policy file>```
+
+##### <a name="verify-the-endpoint-protection-client-installation"></a>Endpoint Protection クライアントのインストールを確認する
+
+参照コンピューターに Endpoint Protection クライアントをインストールした後、クライアントが正しく動作していることを確認します。
+
+1. 参照コンピューターで、Windows 通知領域から **System Center Endpoint Protection** を開きます。
+1. **[System Center Endpoint Protection**] ダイアログ ボックスの [**ホーム**] タブで、[**リアルタイム保護**] が **[オン]** に設定されていることを確認します。
+1. **ウイルスとスパイウェアの定義****に対して最新** の状態が表示されていることを確認します。
+1. 参照コンピューターでイメージングの準備が整っていることを確認するには、[**スキャン オプション**] で [**完全**] を選択し、[**今すぐスキャン**] をクリックします。
+
+
 #### <a name="network-protection"></a>ネットワーク保護
 
 監査モードまたはブロック モードでネットワーク保護を有効にする前に、 [サポート ページ](https://support.microsoft.com/help/4560203/windows-defender-anti-malware-platform-binaries-are-missing)から取得できるマルウェア対策プラットフォームの更新プログラムがインストールされていることを確認してください。
@@ -139,21 +198,21 @@ System Center Configuration Managerコンプライアンスの詳細について
 > [!NOTE]
 > オンボード ポリシーとオフボード ポリシーを同じデバイスに同時にデプロイすることはできません。そうしないと、予期しない競合が発生します。
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>現在のブランチを使用Microsoft エンドポイント マネージャーオフボード デバイス
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Microsoft エンドポイント マネージャー現在のブランチを使用するオフボード デバイス
 
-現在のブランチMicrosoft エンドポイント マネージャー使用する場合は、「[オフボード構成ファイルを作成する](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)」を参照してください。
+Microsoft エンドポイント マネージャー現在のブランチを使用する場合は、「[オフボード構成ファイルを作成する](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file)」を参照してください。
 
-### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>System Center 2012 R2 Configuration Managerを使用するオフボード デバイス
+### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>System Center 2012 R2 Configuration Managerを使用したオフボード デバイス
 
 1. ポータルからオフボード パッケージ<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>取得します。
-    1. ナビゲーション ウィンドウで、[**エンドポイント** \> **デバイス管理**\>**オフボード****設定**\>] を選択します。  
+    1. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **デバイス管理**\>**オフボーディング****]** \> を選択します。  
     1. オペレーティング システムとしてWindows 10またはWindows 11を選択します。
     1. **[展開方法]** フィールドで、**System Center Configuration Manager 2012/2012 R2/1511/1602** を選択します。
     1. [ **パッケージのダウンロード**] を選択し、.zip ファイルを保存します。
 
 2. パッケージを展開するネットワーク管理者がアクセスできる読み取り専用の共有場所に、.zip ファイルの内容を抽出します。 *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd* という名前のファイルが必要です。
 
-3. System Center [2012 R2 Configuration Managerの記事の「パッケージとプログラム」の手順に従って、パッケージを](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))展開します。
+3. [System Center 2012 R2 のパッケージとプログラム](/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\))のConfiguration Manager記事の手順に従って、パッケージを展開します。
 
    パッケージをデプロイする定義済みのデバイス コレクションを選択します。
 
@@ -162,7 +221,7 @@ System Center Configuration Managerコンプライアンスの詳細について
 
 ## <a name="monitor-device-configuration"></a>デバイス構成を監視する
 
-現在のブランチMicrosoft エンドポイント マネージャー使用している場合は、Configuration Manager コンソールで組み込みの Defender for Endpoint ダッシュボードを使用します。 詳細については、「 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)」を参照してください。
+Microsoft エンドポイント マネージャー現在のブランチを使用している場合は、Configuration Manager コンソールで組み込みの Defender for Endpoint ダッシュボードを使用します。 詳細については、「 [Defender for Endpoint - Monitor](/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor)」を参照してください。
 
 System Center 2012 R2 Configuration Managerを使用している場合、監視は次の 2 つの部分で構成されます。
 
@@ -186,7 +245,7 @@ System Center 2012 R2 Configuration Managerを使用している場合、監視�
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>デバイスがMicrosoft Defender for Endpoint サービスに準拠していることを確認する
 
-System Center 2012 R2 Configuration Managerで構成項目のコンプライアンス規則を設定して、デプロイを監視できます。
+System Center 2012 R2 Configuration Managerで構成項目のコンプライアンス規則を設定して、展開を監視できます。
 
 この規則は、ターゲット デバイス *上の* レジストリ キーの値を監視する修復しないコンプライアンス規則構成項目である必要があります。
 
@@ -200,7 +259,7 @@ Value: "1"
 
 詳細については、「[System Center 2012 R2 Configuration Managerのコンプライアンス設定の概要](/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\))」を参照してください。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)
 - [モバイル デバイス管理ツールを使用した Windows デバイスのオンボード](configure-endpoints-mdm.md)
 - [ローカル スクリプトを使用した Windows デバイスのオンボード](configure-endpoints-script.md)

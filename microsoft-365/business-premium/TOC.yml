@@ -10,6 +10,8 @@
       href: get-microsoft-365-business-premium.md
     - name: Microsoft 365 for Campaigns を入手する
       href: get-microsoft-365-campaigns.md
+    - name: パートナー向けのリソース
+      href: ../security/defender-business/mdb-partners.md?toc=/microsoft-365/business-premium/toc.json&bc=/microsoft-365/business-premium/breadcrumb/toc.json
 - name: 環境を強化する
   items:
     - name: サインインして設定する

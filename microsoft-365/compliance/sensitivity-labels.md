@@ -22,12 +22,12 @@ description: Microsoft Purview 情報保護の秘密度ラベルが、組織の�
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: b3b0dfb00ca8905812574cd4add6ad4aba91c5a2
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 2f1940c88700a6039bde0af088c161d33df73bdd
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276557"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306726"
 ---
 # <a name="learn-about-sensitivity-labels"></a>秘密度ラベルの詳細
 
@@ -73,7 +73,7 @@ Microsoft Purview Information Protection の秘密度ラベルを使用すると
 
 Microsoft Purview の秘密度ラベルを使用することにより、これらすべてのケースにおいて適切なコンテンツで適切な措置をとることができます。 秘密度ラベルを使用すると、組織全体でデータを分類し、その分類に基づいて保護設定を適用できます。 その保護はコンテンツに残ります。
 
-秘密度ラベルでサポートされているこれらのシナリオの詳細については、「[秘密度ラベルの一般的なシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)」を参照してください。 機密情報のラベルをサポートする新しい機能は、常に開発されています。そのため、[Microsoft 365 の ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity)を確認することをお勧めします。
+秘密度ラベルでサポートされているこれらのシナリオの詳細については、「[秘密度ラベルの一般的なシナリオ](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels)」を参照してください。 機密情報のラベルをサポートする新しい機能は、常に開発されています。そのため、[Microsoft 365 の ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label)を確認することをお勧めします。
 
 ## <a name="what-a-sensitivity-label-is"></a>秘密度ラベルとは
 

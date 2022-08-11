@@ -10,18 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 02/22/2022
+ms.date: 08/09/2022
 ms.reviewer: pauhijbr, ksarens, mkaminska
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c0dac136b740ba9ff1ddccb5b121a2e2abb2334b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: d1ba3633b2a273eefc9ca8d41a7e4ccd45a6a4cd
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419618"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67301128"
 ---
 # <a name="configure-scheduled-quick-or-full-microsoft-defender-antivirus-scans"></a>スケジュールされたクイックまたは完全な Microsoft Defender ウイルス スキャンを構成する
 
@@ -44,15 +44,13 @@ ms.locfileid: "65419618"
 
 ## <a name="keep-the-following-points-in-mind"></a>以下の点にご注意ください。
 
-- 既定では、Microsoft Defender ウイルス対策は、スケジュールされたスキャンの時刻の 15 分前に更新プログラムを確認します。 [保護更新プログラムをダウンロードして適用する必要がある場合のスケジュールを管理](manage-protection-update-schedule-microsoft-defender-antivirus.md)して、この既定値をオーバーライドできます。
+- 既定では、Microsoft Defender ウイルス対策は、スケジュールされたスキャンの時刻の 15 分前に更新プログラムを確認します。 保護 [更新プログラムをダウンロードして適用して、この既定値をオーバーライドする必要がある場合のスケジュールを管理](manage-protection-update-schedule-microsoft-defender-antivirus.md) できます。
 
 - スケジュールされたフル スキャン中にデバイスが取り外され、バッテリで実行されている場合、スケジュールされたスキャンはイベント 1002 で停止します。これは、スキャンが完了する前に停止したことを示します。 Microsoft Defender ウイルス対策は、次回のスケジュールされた時刻にフル スキャンを実行します。
 
 ## <a name="quick-scan-full-scan-and-custom-scan"></a>クイック スキャン、フル スキャン、カスタム スキャン
 
-スケジュールされたスキャンを設定するときに、スキャンをフル スキャンとクイック スキャンのどちらにするかを指定できます。 ほとんどの場合、クイック スキャンをお勧めします。
-
-<br/><br/>
+スケジュールされたスキャンを設定するときに、スキャンをフル スキャンとクイック スキャンのどちらにするかを指定できます。 ほとんどの場合、クイック スキャンをお勧めします。ただし、Defender ウイルス対策をインストールまたは有効にした後は、少なくとも 1 つのフル スキャンを実行することをお勧めします。 このスキャンは、既存の脅威を見つける機会を提供し、将来のスキャンのためにキャッシュを設定するのに役立ちます。
 
 |クイック スキャン|フル スキャン|カスタム スキャン|
 |---|---|---|
@@ -72,6 +70,7 @@ ms.locfileid: "65419618"
 |マルウェアなどの脅威が個々のデバイスで検出される|クイック スキャン <p> ほとんどの場合、クイック スキャンは検出されたマルウェアをキャッチしてクリーンアップします。|
 |[オンデマンド スキャン](run-scan-microsoft-defender-antivirus.md)を実行する場合|クイック スキャン|
 |USB ドライブなどのポータブル デバイスにマルウェアが含まれていないことを確認する必要がある|カスタム スキャン <p> カスタム スキャンを使用すると、特定の場所、フォルダー、またはファイルを選択し、クイック スキャンを実行できます。|
+| Microsoft Defender ウイルス対策をインストールまたは再び有効にした | フル スキャン <p>Microsoft Defender ウイルス対策を有効またはインストールした後にフル スキャンを実行すると、将来のスキャンのためにキャッシュにデータを設定できます。 フル スキャンは、デバイス上の既存の脅威を検出するのにも役立ちます。 |
 
 ## <a name="what-else-do-i-need-to-know-about-quick-and-full-scans"></a>クイック スキャンとフル スキャンについて他にも知る必要のあることがありますか?
 

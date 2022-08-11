@@ -18,12 +18,12 @@ ms.custom:
 description: 認証された受信チェーン (ARC) は、デバイス間の認証結果と、送信者と受信者の間で発生する間接的なメールフローを保持しようとする電子メール認証です。 信頼された ARC 送信者に対して例外を作成する方法を次に示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7523a17eb8440d6b567d0414b63153bfc33338a2
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107307"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306638"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*正当* な間接メールフローを信頼する信頼された ARC 送信者の一覧を作成する
 
@@ -59,9 +59,9 @@ ms.locfileid: "67107307"
 
 Microsoft 365 Defender ポータルの信頼された ARC シーラーには、テナントによって確認され、テナントに追加されたすべての ARC シールが表示されます。
 
-**管理ポータルで新しい信頼された ARC シールを追加するには:**
+**Microsoft 365 Defender ポータルで新しい信頼された ARC シールを追加するには:**
 
-1. [電子メール認証設定](https://security.microsoft.com/authentication?viewid=ARC)ページに移動します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ルール]** セクション \> **[ARC]** の **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[メールの認証の設定]** に移動します。 ARC ページに直接移動するには、[メール認証設定](https://security.microsoft.com/authentication?viewid=ARC)を使用します。
 
 2. 信頼できる ARC シールを初めて追加した場合は、[追加] ボタンをクリックします。
 3. 表示されたテキスト ボックスに信頼できる ARC シールを追加します。

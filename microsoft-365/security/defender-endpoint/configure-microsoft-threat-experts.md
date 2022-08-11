@@ -18,24 +18,25 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5883b5af4101f9227e43009a148344b82fdfb5ef
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 712b8160f07ac51646dda37513c44c5ef128592e
+ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772689"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67294571"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities"></a>Microsoft 脅威エキスパートの機能を構成および管理する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 > [!NOTE]
 > Endpoint Attack Notifications マネージド脅威ハンティング サービスに適用する前に、Microsoft Technical Service プロバイダーとアカウント チームと資格要件について話し合ってください。
@@ -62,7 +63,7 @@ Defender for Endpoint のお客様は、Microsoft 365 Defender ポータルか�
 
    :::image type="content" source="images/mte-applicationconfirmation.png" alt-text="Microsoft 脅威エキスパートアプリケーションの確認メッセージ" lightbox="images/mte-applicationconfirmation.png":::
 
-承諾されると、ウェルカム メールが届き、[ **適用** ] ボタンが "オン" になっているトグルに変更されて表示されます。 エンドポイント攻撃通知サービスから自分を離れたい場合は、トグルを "オフ" にスライドさせて、ページの下部にある [ **保存] を** クリックします。
+承諾されると、ウェルカム メールが届き、[ **適用]** ボタンが "オン" になっているトグルに変更されます。 エンドポイント攻撃通知サービスから自分を離れたい場合は、トグルを "オフ" にスライドさせて、ページの下部にある [ **保存] を** クリックします。
 
 ## <a name="where-youll-see-the-endpoint-attack-notifications-from-microsoft-threat-experts"></a>Microsoft 脅威エキスパートからのエンドポイント攻撃通知が表示される場所
 
@@ -88,34 +89,36 @@ Microsoft 脅威エキスパートから、以下の媒体を通じて、標的�
 
 2. ダッシュボードから、メールから取得したのと同じアラート トピックを選択して、詳細を表示します。
 
+### <a name="filter-to-view-just-the-endpoint-attack-notifications"></a>エンドポイント攻撃通知のみを表示するフィルター
+
+多くのアラートの中でエンドポイント攻撃通知のみを表示する場合は、インシデントとアラートをフィルター処理できます。 そのためには、次を実行します。
+
+1. ナビゲーション メニューの [**インシデント & アラート** > /] に移動>**、[フィルター**] を選択![して Defender エキスパート通知](../../media/mte/defenderexperts/filter.png)アイコンを表示します。
+2. [タグ] フィールドまで下にスクロール> **、[Defender エキスパート** ] チェック ボックスをオンにします。
+3. **[適用]** を選択します。
+
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft 脅威エキスパートをサブスクライブする - エキスパート オンデマンド
 
 これはサブスクリプション サービスとして使用できます。 すでに Defender for Endpoint のお客様である場合は、Microsoft の担当者に連絡して、Microsoft 脅威エキスパート - エキスパート オンデマンドに登録することができます。
 
-## <a name="consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization"></a>組織内の疑わしいサイバーセキュリティアクティビティについて Microsoft の脅威の専門家に問い合わせてください
+## <a name="ask-defender-experts-about-suspicious-cybersecurity-activities-in-your-organization"></a>組織内の不審なサイバーセキュリティアクティビティについて Defender エキスパートに問い合わせてください
 
 Microsoft 365 Defender ポータル内から直接対応できるMicrosoft 脅威エキスパートと提携できます。 専門家は、ポータル ダッシュボードに表示される複雑な脅威、ターゲットを絞った攻撃通知、またはアラート、侵害された可能性のあるデバイス、脅威インテリジェンス コンテキストに関する詳細情報が必要な場合に、より深く理解するための分析情報を提供します。
 
 > [!NOTE]
 >
 > - 組織のカスタマイズされた脅威インテリジェンス データに関連するアラートの問い合わせは、現在サポートされていません。 詳細については、セキュリティ運用またはインシデント対応チームに問い合わせてください。
-> - "脅威の専門家に相談してください" の問い合わせを送信するには、Microsoft 365 Defender ポータルで **セキュリティ設定の管理** アクセス許可が必要です。
+> - Microsoft 365 Defender ポータルで **セキュリティ設定の管理** アクセス許可を持って **Defender エキスパートに問** い合わせを送信できるようにする必要があります。
 
 1. 調査する関連情報を含むポータル ページ ( **インシデント ページなど** ) に移動します。 調査要求を送信する前に、関連するアラートまたはデバイスのページが表示されていることを確認します。
 
-2. 右上のメニューで 、 **?** 選択します。 次に、[ **脅威の専門家に相談** する] を選択します。
+2. 右上のメニューで 、 **?** 選択します。 次に、[**Defender エキスパートに問い合わせ**] を選択します。
 
-    :::image type="content" source="images/mte-eod-menu.png" alt-text="[Microsoft 脅威エキスパートエキスパートオンデマンド] メニュー項目" lightbox="images/mte-eod-menu.png":::
+![Microsoft Ask Defender Experts 試用版サブスクリプション ページ](../../media/mte/flyout-screen-trial-subscription.png)
 
-    ポップアップ画面が開きます。 次の画面は、試用版サブスクリプションの場合を示しています。
+ポップアップ画面が開きます。 次の画面は、試用版サブスクリプションの場合を示しています。 次の画面は、完全なMicrosoft 脅威エキスパート - エキスパート オンデマンド サブスクリプションの場合を示しています。
 
-    :::image type="content" source="images/mte-eod.png" alt-text="Microsoft 脅威エキスパートエキスパート オンデマンド ページ" lightbox="images/mte-eod.png":::
-
-    次の画面は、完全なMicrosoft 脅威エキスパート - エキスパート オンデマンド サブスクリプションの場合を示しています。
-
-    :::image type="content" source="images/mte-eod-fullsubscription.png" alt-text="Microsoft 脅威エキスパート エキスパート オンデマンドの完全なサブスクリプション ページ" lightbox="images/mte-eod-fullsubscription.png":::
-
-    **[お問い合わせ] トピック** フィールドには、調査要求に関連するページへのリンクが事前に設定されています。 たとえば、要求を行ったときのインシデント、アラート、またはデバイスの詳細ページへのリンクなどです。
+**[お問い合わせ] トピック** フィールドには、調査要求に関連するページへのリンクが事前に設定されています。 たとえば、要求を行ったときのインシデント、アラート、またはデバイスの詳細ページへのリンクなどです。
 
 3. 次のフィールドで、調査を開始するのに十分なコンテキストをMicrosoft 脅威エキスパートするのに十分な情報を指定します。
 
@@ -126,7 +129,7 @@ Microsoft 365 Defender ポータル内から直接対応できるMicrosoft 脅�
 
 Microsoft Services Hub の概要については、このビデオをご覧ください。
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f]
+> [!VIDEO <https://www.microsoft.com/videoplayer/embed/RE4pk9f>]
 
 ## <a name="sample-investigation-topics-that-you-can-consult-with-microsoft-threat-experts---experts-on-demand"></a>Microsoft 脅威エキスパートに相談できるサンプル調査トピック - エキスパート オンデマンド
 
@@ -134,7 +137,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 
 - [AlertID] という新しい種類のライブ オフ ランド バイナリに対するアラートが表示されます。 このアラートの詳細と、さらに詳しく調査する方法をお聞かせください。
 - 2 つの同様の攻撃が見られ、悪意のある PowerShell スクリプトを実行しようとしましたが、異なるアラートが生成されます。 1 つは "疑わしい PowerShell コマンド ライン" で、もう 1 つは "O365 によって提供された指示に基づいて悪意のあるファイルが検出されました" です。 違いは何ですか?
-- 今日、高プロファイル ユーザーのデバイスから失敗したログインの異常な数に関する奇数のアラートを受け取ります。 これらのサインイン試行に関するそれ以上の証拠は見つかりません。 Defender for Endpoint では、これらの試行をどのように確認できますか? 監視対象のサインインの種類は何ですか?
+- 今日、高プロファイル ユーザーのデバイスから失敗したログインの異常な数に関する奇数のアラートを受け取ります。 これらのサインイン試行に関してそれ以上の証拠が見つかりません。 Defender for Endpoint では、これらの試行をどのように確認できますか? 監視対象のサインインの種類は何ですか?
 - このアラートに関するより多くのコンテキストや分析情報を提供できますか。"システム ユーティリティによる疑わしい動作が観察されました"。
 
 ### <a name="possible-device-compromise"></a>デバイスの侵害の可能性
@@ -147,7 +150,7 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 - 悪意のある Word 文書をユーザーに配信したフィッシングメールが検出されました。 悪意のある Word 文書により、一連の疑わしいイベントが発生し、[マルウェア名] マルウェアに対する複数のエンドポイント攻撃通知アラートがトリガーされました。 このマルウェアに関する情報はありますか? はいの場合は、リンクを送信できますか?
 - 最近、業界をターゲットにしている脅威に関する [ソーシャル メディア リファレンス (Twitter やブログなど)] の投稿を見ました。 この脅威アクターに対して Defender for Endpoint が提供する保護について理解するのに役立ちますか?
 
-### <a name="microsoft-threat-experts-alert-communications"></a>Microsoft 脅威エキスパート' アラート通信
+### <a name="defender-experts-alert-communications"></a>Defender エキスパートのアラート通信
 
 - インシデント対応チームは、Microsoft が受け取ったエンドポイント攻撃通知に対処するのに役立ちますか?
 - このエンドポイント攻撃通知をMicrosoft 脅威エキスパートから受信しました。 独自のインシデント対応チームはありません。 この時点でできることと、インシデントをどのように含めることができるか。
@@ -160,16 +163,15 @@ Microsoft Services Hub の概要については、このビデオをご覧くだ
 
 ### <a name="receive-a-progress-report-about-your-managed-hunting-inquiry"></a>マネージドハンティングの問い合わせに関する進行状況レポートを受け取る
 
-Microsoft 脅威エキスパートからの応答は、お問い合わせによって異なります。 次のカテゴリから調査の状態を伝えるために、2 日以内に **脅威の専門家に問** い合わせに関する進行状況レポートを電子メールで送信します。
+Microsoft 脅威エキスパートからの応答は、お問い合わせによって異なります。 次のカテゴリから調査の状態を伝えるために、2 日以内に **Defender エキスパートに問** い合わせに関する進行状況レポートを電子メールで送信します。
 
 - 調査を続行するには、より多くの情報が必要です
 - 技術的なコンテキストを決定するには、ファイルまたは複数のファイル サンプルが必要です
 - 調査にはより多くの時間が必要です
 - 調査を完了するのに十分な初期情報
 
-調査を進め続けるためには、迅速に対応することが重要です。
+調査を継続するには、迅速に対応することが重要です。
 
-## <a name="related-topic"></a>関連トピック
+#### <a name="to-proactively-hunt-threats-across-endpoints-office-365-cloud-applications-and-identity-refer-to"></a>エンドポイント、Office 365、クラウド アプリケーション、ID 全体で脅威をプロアクティブに検出するには、次を参照してください。
 
-- [Microsoft 脅威エキスパートの概要](microsoft-threat-experts.md)
-- [Microsoft 365 のMicrosoft 脅威エキスパートの概要](/microsoft-365/security/mtp/microsoft-threat-experts)
+- [Microsoft 365 の Microsoft Defender エキスパートの概要](../defender/defender-experts-for-hunting.md)

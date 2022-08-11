@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについて説明します。
-ms.openlocfilehash: 4de131ea9dc8b1f7df486dd5c6ead7eee677869e
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 75fc048db9ebe0dfb16f772bd899306ce619096a
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714555"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285244"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
@@ -55,8 +55,7 @@ ms.locfileid: "66714555"
 
 |プロパティ|プロパティの説明|例|例で返される検索結果|
 |---|---|---|---|
-|AttachmentNames|メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*` <br/> `attachmentnames:.pptx`|annualreport.ppt という名前の添付ファイルのあるメッセージ。 2 番目の例では、ワイルドカード文字 ( * ) を使用して、添付ファイルのファイル名に "annual" という単語を含むメッセージを返します。 3　番目の例は、ファイルの拡張子が pptx のすべての添付ファイルを返します。|
-|Bcc|メール メッセージの Bcc フィールド。<sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
+|AttachmentNames|メール メッセージに添付されているファイルの名前。|`attachmentnames:annualreport.ppt` <p> `attachmentnames:annual*`|annualreport.ppt という名前の添付ファイルのあるメッセージ。 2 番目の例では、ワイルドカード文字 ( * ) を使用して、添付ファイルのファイル名に "annual" という単語を含むメッセージを返します。<sup>1</sup>|`bcc:pilarp@contoso.com` <p> `bcc:pilarp` <p> `bcc:"Pilar Pinilla"`|どの例も Bcc フィールドに「Pilar Pinilla」が含まれているメッセージを返します。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
 |カテゴリ|検索するカテゴリ。 カテゴリは、ユーザーが Outlook または Outlook on the web (旧称: Outlook Web App) を使用して定義できます。 値は次のいずれかです。 <ul><li>青<li>green<li>orange<li>purple<li>red<li>yellow</li></ul>|`category:"Red Category"`|元のメールボックスで「red」のカテゴリが割り当てられているメッセージ。|
 |Cc|メール メッセージの Cc フィールド。<sup>1</sup>|`cc:pilarp@contoso.com` <p> `cc:"Pilar Pinilla"`|どちらの例も、Cc フィールドに "Pilar Pinilla" が指定されたメッセージ。<br>([受信者の展開を参照](keyword-queries-and-search-conditions.md#recipient-expansion)してください)|
 |Folderid|特定のメールボックス フォルダーのフォルダー ID (GUID)。 このプロパティを使う場合は、必ず指定したフォルダーが存在するメールボックスを検索するようにします。 指定したフォルダーのみが検索されます。 フォルダー内のサブフォルダーは検索されません。 サブフォルダーを検索するには、検索するサブフォルダーの Folderid プロパティを使う必要があります。 <p> Folderid プロパティを検索し、スクリプトを使用して特定のメールボックスのフォルダー ID を取得する方法の詳細については、「 [ターゲット コレクションのコンテンツ検索を使用する」を](use-content-search-for-targeted-collections.md)参照してください。|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000` <p> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|最初の例では、指定したメールボックス フォルダー内のすべてのアイテムが返されます。 2 番目の例では、指定したメールボックス フォルダー内で garthf@contoso.com によって送信または受信されたすべてのアイテムが返されます。|

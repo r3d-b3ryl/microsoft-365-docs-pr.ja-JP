@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d35555f466b1ec201185efd51f37d4111911f16d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 0b8ee8f3d4a5ef1176c482aa6cb54d866fd4dd41
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276461"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306572"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -39,7 +39,7 @@ Windows コンピューター専用の Office のサブスクリプション バ
 
 ## <a name="support-for-sensitivity-label-capabilities-in-apps"></a>アプリでの秘密度ラベル機能のサポート
 
-次の表に、Office アプリに組み込まれている秘密度ラベルの特定の機能を導入した Office の最小バージョンを示します。 または、ラベル機能が公開プレビュー中または将来のリリースのためにレビュー中の場合。 将来のリリースで計画されている新機能に関する詳細に[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=sensitivity)を使用します。
+次の表に、Office アプリに組み込まれている秘密度ラベルの特定の機能を導入した Office の最小バージョンを示します。 または、ラベル機能が公開プレビュー中または将来のリリースのためにレビュー中の場合。 将来のリリースで計画されている新機能に関する詳細に[Microsoft 365 ロードマップ](https://www.microsoft.com/microsoft-365/roadmap?filters=Microsoft%20Information%20Protection&searchterms=label)を使用します。
 
 Office アプリの新しいバージョンは、さまざまな更新チャネルでさまざまな時間に利用できるようになります。 Windows の場合、半期エンタープライズ チャネルよりも最新チャネルや月次エンタープライズ チャネルである場合に早期に取得できます。 最小バージョン番号も、ある更新チャネルと次の更新のものとで異なる場合があります。 詳細については、「[Microsoft 365 Apps 用更新プログラム チャネルの概要](/deployoffice/overview-update-channels)」および「[Microsoft 365 Apps の更新履歴](/officeupdates/update-history-microsoft365-apps-by-date)」を参照してください。
 

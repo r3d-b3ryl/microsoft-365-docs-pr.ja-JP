@@ -20,13 +20,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Microsoft ビジネス製品の課金内容または請求書の内容を読んで理解する方法について説明します。
-ms.date: 05/04/2021
-ms.openlocfilehash: 5d905ec0b5ab9450b40c1e8be885307ce7a65a19
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.date: 08/08/2022
+ms.openlocfilehash: 258c2dc0f2dd6f10330c400f78cfadb1d9f986e5
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67111562"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281292"
 ---
 # <a name="understand-your-bill-or-invoice"></a>課金内容または請求書の内容を理解する
 
@@ -40,6 +40,14 @@ ms.locfileid: "67111562"
 詳細については、「[課金内容または請求書を表示する](view-your-bill-or-invoice.md)」を参照してください。
 
 Microsoft 365 サブスクリプションしかない場合は、「[Microsoft 365 for Business の課金内容または請求書の内容を理解する](understand-your-invoice2.md)」を参照してください。
+
+## <a name="how-often-and-when-am-i-billed"></a>課金の頻度および課金時期は?
+
+サブスクリプションの購入時に選択した請求頻度に応じて、毎月、3 か月ごと、6 か月ごと、または毎年請求書を受け取ります。 最後の請求書の日付以降の時間は請求期間と呼ばれ、請求書の 1 ページ目の [請求の概要] セクションの上に表示されます。 この期間は、現在の請求書の料金が発生する日付範囲を表します。 ライセンスの追加や削除など、この日付範囲外のサブスクリプションを変更した場合は、関連する料金は次の課金期間の請求書に表示されます。
+
+請求書の 2 ページ目から、製品注文別にグループ化された料金が表示されます。 Azure のお客様の場合、料金は請求書セクションごとに整理される場合があります。
+
+各課金期間の終了時に、新しい請求書が Microsoft 365 管理センターで表示またはダウンロードできるようになったことを示すメールが届きます。 複数の課金プロファイルがある場合は、課金プロファイルごとに請求書を受け取ります。 [課金内容または請求書の検索と表示](view-your-bill-or-invoice.md)について説明します。
 
 ## <a name="understand-the-invoice-header"></a>請求書のヘッダーを理解する
 

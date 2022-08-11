@@ -11,17 +11,18 @@ ms.pagetype: security
 author: mjcaparas
 ms.author: macapara
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3fc36623e6de005ba1d9f348d6a70d839acef637
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 1c9eff6831f08a243aad830d258c9d9277a89531
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106911"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306420"
 ---
 # <a name="server-migration-scenarios-from-the-previous-mma-based-microsoft-defender-for-endpoint-solution"></a>前の MMA ベースのMicrosoft Defender for Endpoint ソリューションからのサーバー移行シナリオ
 
@@ -42,7 +43,7 @@ ms.locfileid: "67106911"
 **Microsoft Defender for Cloud を使用してデプロイを実行している場合は、インストールとアップグレードを自動化できます。[Defender for Servers プラン 2 と MDE 統合ソリューションの統合](https://techcommunity.microsoft.com/t5/microsoft-defender-for-cloud/defender-for-servers-plan-2-now-integrates-with-mde-unified/ba-p/3527534)を参照してください**
 
 > [!NOTE]
-> Microsoft Defender for Endpointがインストールされているオペレーティング システムのアップグレードはサポートされていません。 アップグレードを続行する前に、オフボードでアンインストールしてください。
+> Microsoft Defender for Endpointがインストールされているオペレーティング システムのアップグレードはサポートされていません。 オフボードでアンインストールし、オペレーティング システムをアップグレードしてから、インストールを続行してください。
 
 > [!NOTE]
 > 自動化されたアップグレードを実行するための完全な Microsoft Endpoint Configuration Manager自動化と統合は、MECM の後のリリースで利用できます。 最新の修正プログラム ロールアップを使用した 2107 リリースから、構成だけでなく、グループ ポリシー、PowerShell、Microsoft エンドポイント マネージャー テナントのアタッチ、またはローカル構成にも Endpoint Protection ノードを使用できます。 さらに、Microsoft Endpoint Configuration Managerの既存の機能を利用して、手動アップグレード手順を自動化できます。この方法については、以下で説明します。
@@ -73,7 +74,7 @@ Microsoft Endpoint Configuration Managerバージョン 2207 より前のバー�
 
 ## <a name="if-you-are-running-a-non-microsoft-antivirus-solution"></a>Microsoft 以外のウイルス対策ソリューションを実行している場合
 
-1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新し[、前提条件](configure-server-endpoints.md#prerequisites)が満たされていることを確認します。
+1. Microsoft Defender ウイルス対策 (Windows Server 2016) を含むコンピューターを完全に更新し[、前提条件](configure-server-endpoints.md#prerequisites)が満たされていることを確認します。 満たす必要がある前提条件の詳細については、「[Windows Server 2016の前提条件」を参照してください](configure-server-endpoints.md#prerequisites-for-windows-server-2016)。
 2. サード パーティのウイルス対策管理で、これらのマシンにウイルス対策エージェントがプッシュされなくなったことを確認します。
 3. Microsoft Defender for Endpointの保護機能に対するポリシーを作成し、任意のツールでコンピューターにターゲットを設定します。
 4. Windows Server 2012 R2 および 2016 パッケージのMicrosoft Defender for Endpointをインストールし、**パッシブ モードを有効にします**。 [コマンド ラインを使用した Microsoft Defender ウイルス対策のインストールに関するページを](configure-server-endpoints.md#install-microsoft-defender-for-endpoint-using-the-command-line)参照してください。

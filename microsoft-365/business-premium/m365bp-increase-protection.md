@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium の脅威に対する保護を強化する
+title: Microsoft 365 Business Premium を使用してマルウェアやその他の脅威から保護する
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/09/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,14 +19,14 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premium での保護レベルの向上に関するヘルプを表示する
-ms.openlocfilehash: 01ea965f8b290b57c3df60e21c88b403b27b5cfd
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 361ddc713a0616cd595ed2794d02db8c38707477
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274707"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300653"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-business-premium"></a>Microsoft 365 Business Premium の脅威に対する保護を強化する
+# <a name="protect-against-malware-and-other-cyberthreats-with-microsoft-365-business-premium"></a>Microsoft 365 Business Premium を使用してマルウェアやその他のサイバー脅威から保護する
 
 この目的では、Microsoft 365 Business Premium を使用して脅威に対する保護を強化します。 フィッシング、マルウェア、その他の脅威からビジネスを保護することが重要です。 この記事には、次の情報が含まれています。
 
@@ -34,7 +34,7 @@ ms.locfileid: "67274707"
 - ビジネス ニーズに合わせて定義できる[カスタム セキュリティ ポリシー](#create-custom-security-policies)。
 - [SharePoint と OneDrive ファイルとフォルダーの共有設定を調整する方法](#set-sharing-settings-for-sharepoint-and-onedrive-files-and-folders)。
 - 特定のファイルとその使用方法を監視する[アラート ポリシー](#review-your-alert-policies)。
-- [次の目標](#next-objective) (非管理対象デバイスのセキュリティ保護)
+- [次の目標](#next-objectives)。
 
 ## <a name="review-and-apply-preset-security-policies"></a>事前設定されたセキュリティ ポリシーを確認して適用する
 
@@ -174,7 +174,7 @@ ms.locfileid: "67274707"
 
 ### <a name="how-to-view-alerts"></a>アラートを表示する方法
 
-特定のアラートに応じて、Microsoft 365 Defender ポータルまたは Microsoft Purview コンプライアンス ポータルでアラートを表示できます。
+Microsoft 365 Defender ポータルまたは Microsoft Purview コンプライアンス ポータルでアラートを表示できます。
 
 | アラートの種類。  | 操作  |
 |---------|---------|
@@ -207,6 +207,11 @@ ms.locfileid: "67274707"
 
 ユーザーが予定表の共有を許可されている場合は、Outlook on the web から共有する方法について、[次の手順](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5)を参照してください。
 
-## <a name="next-objective"></a>次の目標
+## <a name="next-objectives"></a>次の目標
 
-それでは、 [**これらの非管理対象 (BYOD) デバイスを設定**](m365bp-devices-overview.md)しましょう。
+続行:
+
+- [非管理対象 (BYOD) デバイスを設定する](m365bp-devices-overview.md)
+- [すべてのメールを保護する](m365bp-protect-email-overview.md)
+- [セキュイティで保護された共同作業および共有を行う](m365bp-collaborate-share-securely.md)
+- [管理対象デバイスの設定と保護](m365bp-protect-devices.md)

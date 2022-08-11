@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 52dc38d3675ffe15bd781aefaecede9d1783bac3
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: dba7f3d1512046c0788c72efb5b0ce9ac9ead1b6
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487172"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280590"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>デバイスごとのソフトウェア脆弱性評価のエクスポート
 
@@ -97,8 +97,6 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 
 <br>
 
-****
-
 プロパティ (ID)|データ型|説明|返された値の例
 :---|:---|:---|:---
 CveId|String|共通の脆弱性と公開 (CVE) システムのセキュリティの脆弱性に割り当てられた一意の識別子。|CVE-2020-15992
@@ -116,7 +114,7 @@ RecommendationReference|String|このソフトウェアに関連する推奨事�
 RecommendedSecurityUpdate (省略可能)|String|ソフトウェア ベンダーが脆弱性に対処するために提供するセキュリティ更新プログラムの名前または説明。|2020 年 4 月のセキュリティ 更新
 RecommendedSecurityUpdateId (省略可能)|String|該当するガイダンスまたはサポート情報 (KB) の記事の該当するセキュリティ更新プログラムまたは識別子の識別子|4550961
 RegistryPaths|配列\[文字列\]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-SecurityUpdateAvailable|Boolean|ソフトウェアでセキュリティ更新プログラムを使用できるかどうかを示します。| 指定できる値は true または false です。
+SecurityUpdateAvailable|ブール型|ソフトウェアでセキュリティ更新プログラムを使用できるかどうかを示します。| 指定できる値は true または false です。
 SoftwareName|String|ソフトウェア製品の名前。|Chrome
 SoftwareVendor|String|ソフトウェア ベンダーの名前。|Google
 SoftwareVersion|String|ソフトウェア製品のバージョン番号。|81.0.4044.138
