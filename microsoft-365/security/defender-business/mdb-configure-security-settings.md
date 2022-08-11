@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: f7530cd06f2d41ed4ef3fcc12daa5f89e2903c94
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 336f253e16ab26c227001fd5a71e34c100ae97ea
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300435"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309727"
 ---
 # <a name="view-and-edit-security-policies-and-settings-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでセキュリティ ポリシーと設定を表示および編集する
 
@@ -137,7 +137,7 @@ Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://se
 | **ユーザーの詳細を表示する**<br/>(既定でオンになっています) | 組織内のユーザーが、従業員の写真、名前、役職、部署などの詳細を表示できるようにします。 これらの詳細は、Azure Active Directory (Azure AD) に格納されます。<br/><br/>[Azure AD のユーザー プロファイルの詳細について説明します](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)。  |
 | **Skype for Business統合**<br/>(既定でオンになっています) | Skype for Businessは 2021 年 7 月に廃止されました。 Microsoft Teams にまだ移行していない場合は、「 [小規模ビジネスでの Microsoft Teams のセットアップ](/microsoftteams/deploy-small-business)」を参照してください。 <br/><br/>Microsoft Teams (または以前のSkype for Business) との統合により、ビジネス内のユーザー間のワンクリック通信が可能になります。   |
 | **Web コンテンツ フィルタリング**<br/>(既定でオンになっています) | 不要なコンテンツを含む Web サイトへのアクセスをブロックし、すべてのドメインで Web アクティビティを追跡します。 [Web コンテンツ フィルターの設定に関するページを](#set-up-web-content-filtering)参照してください。 |
-| **Microsoft Intune接続**<br/>(Intuneがある場合は、この設定を有効にすることをお勧めします) | 組織のサブスクリプションに Microsoft Intune ([Microsoft 365 Business Premium](../../business/index.yml)に含まれる) が含まれている場合、Defender for Business はデバイスに関する情報を Intune と共有できます。  |
+| **Microsoft Intune接続**<br/>(Intuneがある場合は、この設定を有効にすることをお勧めします) | 組織のサブスクリプションにMicrosoft Intuneが含まれている場合、この設定により、Defender for Business はデバイスに関する情報をIntuneと共有できます。  |
 | **デバイス検出**<br/>(既定でオンになっています) | セキュリティ チームが、会社のネットワークに接続されているアンマネージド デバイスを検索できるようにします。 不明なデバイスとアンマネージド デバイスは、パッチが適用されていないプリンター、セキュリティ構成が弱いネットワーク デバイス、セキュリティ制御のないサーバーなど、ネットワークに重大なリスクを生じます。<br/><br/>デバイス検出では、オンボードされたデバイスを使用してアンマネージド デバイスを検出するため、セキュリティ チームはアンマネージド デバイスをオンボードし、脆弱性を軽減できます。 <br/><br/>[デバイス検出の詳細については、こちらを参照してください](../defender-endpoint/device-discovery.md)。    |
 | **プレビュー機能** | Microsoft では、Defender for Business などのサービスを継続的に更新し、新機能の機能強化と機能を追加しています。 プレビュー機能を受け取ることを選択した場合は、プレビュー エクスペリエンスで今後の機能を最初に試すことができます。 <br/><br/>[プレビュー機能の詳細については、こちらを参照してください](../defender-endpoint/preview.md)。  |
 

@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: e7d884e55aa3f55106097354ce3a8acdd3dc5b17
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 3f69c82a6a401118d50372adec03b9cdbed0f502
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300762"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309397"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
@@ -46,7 +46,7 @@ Windows クライアント デバイスを Defender for Business にオンボー
 
 - [ローカル スクリプト](#local-script-for-windows-10-and-11) (Microsoft 365 Defender ポータルで手動でデバイスをオンボードする場合)
 - [グループ ポリシー](#group-policy-for-windows-10-and-11) (組織内でグループ ポリシーを既に使用している場合)
-- [Microsoft Intune](#intune-for-windows-10-and-11) ([Microsoft 365 Business Premium](../../business-premium/index.md)に含まれています)
+- [Microsoft Intune](#intune-for-windows-10-and-11)
 
 ### <a name="local-script-for-windows-10-and-11"></a>Windows 10と 11 のローカル スクリプト
 
@@ -77,9 +77,7 @@ Windows クライアント デバイスを Defender for Business にオンボー
 
 ### <a name="intune-for-windows-10-and-11"></a>Windows 10と 11 のIntune
 
-サブスクリプションにIntuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ()[https://endpoint.microsoft.com](https://endpoint.microsoft.com) で Windows クライアントやその他のデバイスをオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部として既にIntuneがあり、Intuneを使用してデバイスをオンボードできます。  
-
-Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法を使用することをお勧めします。
+Microsoft エンドポイント マネージャー 管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) を使用して、Intuneで Windows クライアントやその他のデバイスをオンボードできます。 Intuneにデバイスを登録するには、いくつかの方法があります。 次のいずれかの方法を使用することをお勧めします。
 
 - [会社所有または会社が管理するデバイスの Windows 自動登録を有効にする](#enable-automatic-enrollment-for-windows-10-and-11)
 - [Intuneに自分のWindows 10/11 デバイスを登録するようにユーザーに依頼する](#ask-users-enroll-their-own-windows-10-and-11-devices)
@@ -160,7 +158,7 @@ Mac をオンボードするには、次のいずれかの方法があります�
 
 ### <a name="local-script-for-mac"></a>Mac 用のローカル スクリプト
 
-Mac でローカル スクリプトを実行すると、その信頼がまだ存在しない場合は、Azure Active Directory との信頼が作成されます。Mac がまだ登録されていない場合は、mac をMicrosoft Intuneに登録し、その Mac を Defender for Business にオンボードします。 ローカル スクリプト メソッドは、現在Intuneがない場合でも機能します。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
+Mac でローカル スクリプトを実行すると、その信頼がまだ存在しない場合は、Azure Active Directory との信頼が作成されます。Mac がまだ登録されていない場合は、mac をMicrosoft Intuneに登録し、その Mac を Defender for Business にオンボードします。 この方法を使用して、一度に最大 10 台のデバイスをオンボードすることをお勧めします。
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動し、サインインします。
 
@@ -186,9 +184,7 @@ Mac がIntuneに登録されたら、デバイス グループに追加できま
 
 ### <a name="intune-for-mac"></a>Mac 用Intune
 
-サブスクリプションにMicrosoft Intuneが含まれている場合は、Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で Mac をオンボードできます。 たとえば、[Microsoft 365 Business Premium](../../business/index.yml)がある場合は、サブスクリプションの一部として既にIntuneがあります。  
-
-mac をIntuneに登録するには、いくつかの方法があります。 次のいずれかの方法をお勧めします。
+Microsoft エンドポイント マネージャー管理センター ()[https://endpoint.microsoft.com](https://endpoint.microsoft.com) を使用して、Mac コンピューターをIntuneに登録できます。 mac をIntuneに登録するには、いくつかの方法があります。 次のいずれかの方法をお勧めします。
 
 - [会社所有の Mac のオプションを選択する](#options-for-company-owned-mac)
 - [ユーザーに自分の Mac をIntuneに登録するように依頼する](#ask-users-to-enroll-their-own-mac-in-intune)
@@ -337,9 +333,7 @@ Defender for Business にオンボードされているデバイスの一覧を�
 
 ## <a name="mobile-devices"></a>モバイル デバイス
 
-Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business/index.yml)がある場合は、Intune。 
-
-これらのデバイスを Intune に登録する方法については、次のリソースを参照してください。
+Microsoft Intuneを使用して、Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードできます。 これらのデバイスを Intune に登録する方法については、次のリソースを参照してください。
 
 - [Android デバイスを登録する](/mem/intune/enrollment/android-enroll)
 - [iOS または iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)

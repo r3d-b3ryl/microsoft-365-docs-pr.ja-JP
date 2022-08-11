@@ -11,17 +11,18 @@ metadata:
   ms.prod: m365-security
   ms.technology: mdb
   ms.localizationpriority: medium
+  ms.date: 08/10/2022
   ms.reviewer: shlomiakirav
   f1.keywords: NOCSH
   ms.collection:
   - SMB
   - M365-security-compliance
-  ms.openlocfilehash: abcae0beafdca9aa9d25f5ea69d88bd0d6e5a6d1
-  ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+  ms.openlocfilehash: 21e85d866e9a668253e39a20e3660a34b5465740
+  ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
   ms.translationtype: MT
   ms.contentlocale: ja-JP
-  ms.lasthandoff: 08/10/2022
-  ms.locfileid: "67301159"
+  ms.lasthandoff: 08/11/2022
+  ms.locfileid: "67309441"
 title: Microsoft Defender for Business - よく寄せられる質問と回答
 summary: >
   この記事を使用して、Defender for Business に関する質問に対する回答を取得します。
@@ -50,7 +51,7 @@ sections:
     answer: >
       ユーザー ライセンスあたり最大 5 台のクライアント デバイスをオンボードしてセキュリティで保護できます。
   - question: Defender for Business は Mac、Android、および iOS/iPadOS クライアント デバイスを保護しますか?
-    answer: "はい。 Defender for Business では、Mac、Android、および iOS/iPadOS デバイスの保護がサポートされています。 「 [デバイスのオンボード」](mdb-onboard-devices.md)を参照してください。\n\n- Microsoft 365 Defender ポータルでローカル スクリプトを使用して Mac デバイスをオンボードできます。 \n- Android および iOS/iPadOS デバイスをオンボードするには、[Microsoft Intune](/mem/intune/)のライセンスが必要です。 IntuneはMicrosoft 365 Business Premiumに含まれており、Defender for Business (スタンドアロン) で購入できます。\n\nMac、iOS/iPadOS、Android デバイスの簡素化がロードマップに含まれています。 \n"
+    answer: "はい。 Defender for Business では、Mac、Android、および iOS/iPadOS デバイスの保護がサポートされています。 「 [デバイスのオンボード」](mdb-onboard-devices.md)を参照してください。\n\n- Microsoft 365 Defender ポータルでローカル スクリプトを使用して Mac デバイスをオンボードできます。 \n- Android デバイスと iOS/iPadOS デバイスをオンボードするには、[Microsoft Intune](/mem/intune/)を使用できます。\n\nMac、iOS/iPadOS、Android デバイスの簡素化がロードマップに含まれています。 \n"
   - question: Defender for Business はサーバーをサポートしていますか?
     answer: "サーバーのサポートはプレビュー段階です。 「[Microsoft Defender for Business サーバーの取得方法 (プレビュー)](get-defender-business-servers.md)」を参照してください。  \n\nMicrosoft Defender for Business サーバー ライセンスが一般公開 (GA) になると、Microsoft 365 Business Premiumと Defender for Business のスタンドアロン バージョンのアドオンとして提供されます。 GA では、Microsoft Defender for Business サーバーの料金は、サーバー インスタンスあたり 3 ドルです。 その時点で、オンボードされた各サーバーのライセンスを購入するか、Defender for Business からオフボード サーバーを選択できます。\n"
   - question: Microsoft Defender for Business サーバーと Microsoft Defender for Servers プラン 1 とプラン 2 の違いは何ですか?
@@ -66,9 +67,9 @@ sections:
     answer: "Defender for Business は、単一のコンソール ([https://lighthouse.microsoft.com](https://lighthouse.microsoft.com)) でマルチテナントサポートのためにMicrosoft 365 Lighthouseで有効になっています。 \n\n詳細については、「[Microsoft 365 Lighthouseの概要](/microsoft-365/lighthouse/m365-lighthouse-overview)」を参照してください。\n"
   - question: Defender for Business で攻撃面の縮小ルールと機能を構成操作方法?
     answer: >
-      Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の Defender for Business を使用した攻撃表面の縮小ルールと機能の簡略化された構成はまだサポートされていません。 Microsoft Intuneがある場合は、Microsoft エンドポイント マネージャー管理センターを使用して、攻撃面の縮小ポリシーを構成できます。 [Intuneのエンドポイント セキュリティに関する攻撃面の縮小ポリシーに関する](/mem/intune/protect/endpoint-security-asr-policy)説明を参照してください。
-  - question: 現在Microsoft Intuneがない場合は、Defender for Business と Intuneの両方に含まれる機能を使用するための別のライセンスが必要ですか?
-    answer: "スタンドアロン サブスクリプションとして Defender for Business をお持ちで、Intuneがない場合は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で Windows デバイスと Mac デバイスをオンボードしてセキュリティで保護できます。 \n \nまた、[構成エクスペリエンスを簡素化](mdb-simplified-configuration.md)して、Microsoft 365 Defender ポータルで次世代の保護ポリシーとファイアウォール保護ポリシーを管理することもできます。 \n \n攻撃表面の縮小ポリシーなどの他の設定を管理したり、Android や iOS/iPadOS デバイスなどの他のデバイスをオンボードしたりするには、Intune必要があります。 IntuneはMicrosoft 365 Business Premiumに含まれており、Defender for Business (スタンドアロン) サブスクリプションで購入できます。 \n"
+      Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の Defender for Business を使用した攻撃表面の縮小ルールと機能の簡略化された構成はまだサポートされていません。 Microsoft エンドポイント マネージャー管理センターを使用して、攻撃面の縮小ポリシーを構成できます。 [Intuneのエンドポイント セキュリティに関する攻撃面の縮小ポリシーに関する](/mem/intune/protect/endpoint-security-asr-policy)説明を参照してください。
+  - question: Microsoft Intuneは Defender for Business とどのように連携しますか?
+    answer: "Defender for Business をスタンドアロン サブスクリプションとして使用している場合は、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で Windows デバイスと Mac デバイスをオンボードしてセキュリティで保護できます。 Microsoft Intuneを使用して、Windows コンピューターと Mac コンピューター、およびモバイル デバイスをオンボードできます。\n\nIntuneにデバイスを登録し、それらのデバイスを Defender for Business にオンボードすると、Intuneと Defender for Business の間に接続が作成されます。\n \n[構成エクスペリエンスを簡素化](mdb-simplified-configuration.md)して、Microsoft 365 Defender ポータルで次世代の保護ポリシーとファイアウォール保護ポリシーを管理できます。 これらのポリシーは、Intuneに表示されます。 攻撃面の縮小ポリシーなどの他の設定を管理するには、Intuneを使用します。  \n"
   - question: Microsoft 365 Business Premiumを既に使用している場合、Defender for Business が必要なのはなぜですか?
     answer: "Microsoft 365 Business Premiumがある場合は、Defender for Business がサブスクリプションに含まれます。 詳細については、次の記事を参照してください。\n \n- [Defender for Business の概要](mdb-overview.md)\n- [Defender for Business と Microsoft 365 Business Premiumを比較する](compare-mdb-m365-plans.md)\n\nDefender for Business は、会社のデバイスのエンドポイント保護を使用してMicrosoft 365 Business Premiumのセキュリティ機能を拡張します。\n"
   - question: Defender for Business と Defender for Endpoint Plans 1 と Defender for Endpoint Plans 1 と 2 の違いは何ですか?
