@@ -9,6 +9,7 @@ audience: Admin
 ms.topic: article
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
+ms.date: 08/10/2022
 ms.prod: m365-security
 ms.technology: mdb
 search.appverid:
@@ -16,12 +17,12 @@ search.appverid:
 - MET150
 description: このプレイブックを参考に、Defender for Business の試用版を最大限にご活用ください。 すぐに設定し、新しいセキュリティ機能をご使用いただけます。
 ms.custom: trial-playbook
-ms.openlocfilehash: 16843ef3dcb2efe36f9102001fe5579e920287b4
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 3b588dba1ee1a3df5719ece9c2db50e76acf36b2
+ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66994625"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67309485"
 ---
 # <a name="trial-playbook-microsoft-defender-for-business"></a>試用版プレイブック: Microsoft Defender for Business
 
@@ -109,10 +110,10 @@ Defender for Business は、中小企業の時間と労力を節約できるよ�
 
    | デバイスのタイプ | オンボード方法 |
    |:---|:---|
-   | [Windows クライアント](mdb-onboard-devices.md) | Windows クライアント デバイスを Defender for Business にオンボードするには、次のいずれかのオプションを選択します。<ul><li>ローカル スクリプト (Microsoft 365 Defender ポータルでデバイスを手動でオンボードする場合)</li><li>グループ ポリシー (既に グループ ポリシー を使用していて、この方法を使用する場合)</li><li>Microsoft Intune (*推奨*、[Microsoft 365 Business Premium](../../business-premium/index.md) に含まれています)</li></ul> |
-   | [Mac](mdb-onboard-devices.md) | Mac をオンボードするには、次のいずれかの方法があります。<ul><li>Mac 用ローカル スクリプト (*推奨*)</li><li>Microsoft Intune for Mac (Intune は [Microsoft 365 Business Premium](../../business-premium/index.md) に含まれています)</li></ul><p>Mac をオンボードするには、ローカル スクリプトの使用をお勧めします。 [Intune でも Mac デバイスの登録](/mem/intune/enrollment/macos-enroll)はできますが、ローカル スクリプトが Mac を Defender for Business にオンボードするための最も簡単な方法です。 |
+   | [Windows クライアント](mdb-onboard-devices.md) | Windows クライアント デバイスを Defender for Business にオンボードするには、次のいずれかのオプションを選択します。<ul><li>ローカル スクリプト (Microsoft 365 Defender ポータルでデバイスを手動でオンボードする場合)</li><li>グループ ポリシー (既に グループ ポリシー を使用していて、この方法を使用する場合)</li><li>Microsoft Intune (既に Intune を使用していて、引き続き使用する場合)</li></ul> |
+   | [Mac](mdb-onboard-devices.md) | Mac をオンボードするには、次のいずれかの方法があります。<ul><li>Mac 用ローカル スクリプト (*推奨*)</li><li>Mac 用 Microsoft Intune </li></ul><p>Mac をオンボードするには、ローカル スクリプトの使用をお勧めします。 [Intune でも Mac デバイスの登録](/mem/intune/enrollment/macos-enroll)はできますが、ローカル スクリプトが Mac を Defender for Business にオンボードするための最も簡単な方法です。 |
    | Windows Server および Linux Server | *Windows Server または Linux Server のインスタンスをオンボードする機能は現在プレビュー段階であり、追加のライセンスが必要です*。 詳細については、次の記事を参照してください。 <ul><li>[Defender for Business の要件](mdb-requirements.md)</li><li>[Defender for Business へのデバイスのオンボード](mdb-onboard-devices.md)</li></ul> |
-   | [モバイル デバイス](mdb-onboard-devices.md) | Android や iOS/iPadOS などのモバイル デバイスをオンボードするには、Microsoft Intuneが必要です。 [Microsoft 365 Business Premium](../../business-premium/index.md) をご使用の場合、Intune はサブスクリプションに含まれています。 また、個別に購入することもできます。 これらのデバイスを Intune に登録する方法については、次のリソースを参照してください。<ul><li>[Android デバイスを登録する](/mem/intune/enrollment/android-enroll)</li><li>[iOS または iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)</li></ul> |
+   | [モバイル デバイス](mdb-onboard-devices.md) | Android や iOS/iPadOS デバイスなどのモバイル デバイスをオンボードするには、Microsoft Intune を使用します。 これらのデバイスを Intune に登録する方法については、次のリソースを参照してください。<ul><li>[Android デバイスを登録する](/mem/intune/enrollment/android-enroll)</li><li>[iOS または iPadOS デバイスを登録する](/mem/intune/enrollment/ios-enroll)</li></ul> |
 
 5. **[セキュリティ ポリシーの確認と構成](mdb-configure-security-settings.md)**。 会社のデバイスを Defender for Business にオンボードしたら、次はセキュリティ ポリシーと設定の確認と編集です。 Defender for Business には、推奨設定を使用する事前構成済みのセキュリティ ポリシーが搭載されています。 ただし、設定はビジネス ニーズに合わせて編集できます。
 

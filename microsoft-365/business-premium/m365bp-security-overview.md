@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,12 +19,12 @@ search.appverid:
 - BCS160
 - MET150
 description: サイバー攻撃を防ぐために使用できる多要素認証などのサイバーセキュリティ ツールを提供する Microsoft 365 Business Premium のセキュリティの概要。
-ms.openlocfilehash: a51a49ff57458734a883ac8fa34142bd1c4bf2d3
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: a6302f38b70ed634237a83751d0026d2ef160695
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276495"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285167"
 ---
 # <a name="bump-up-security"></a>セキュリティを強化する
 
@@ -36,7 +36,7 @@ ms.locfileid: "67276495"
 
 目的は次のとおりです。
 
-- [セキュリティの既定値を有効にする](m365bp-conditional-access.md) (MFA)。
+- [セキュリティの既定値 (MFA) を有効にする](m365bp-conditional-access.md)。
 - [管理者アカウントを保護する](m365bp-protect-admin-accounts.md)。
 - [マルウェアやその他の脅威から保護する](m365bp-increase-protection.md)。
 

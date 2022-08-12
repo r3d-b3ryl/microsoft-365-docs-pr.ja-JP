@@ -70,9 +70,6 @@
 
 
 
-
-
-
 ### [他のオペレーティング システム上の Microsoft Defender for Endpoint]()
 #### [Windows 以外のデバイスをオンボードする](configure-endpoints-non-windows.md)
 
@@ -521,6 +518,10 @@
 ####### [調査の一覧表示](get-investigation-collection.md)
 ####### [調査の取得](get-investigation-object.md)
 ####### [調査の開始](initiate-autoir-investigation.md)
+
+###### [デバイスの正常性]()
+####### [デバイスの正常性のメソッドとプロパティをエクスポートする](device-health-api-methods-properties.md)
+####### [デバイス ウイルス対策の正常性レポートをエクスポートする](device-health-export-antivirus-health-report-api.md)
 
 ###### [証明書インベントリ]()
 ####### [証明書インベントリ評価のエクスポート](export-certificate-inventory-assessment.md)

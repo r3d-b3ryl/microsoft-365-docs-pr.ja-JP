@@ -20,12 +20,12 @@ ms.custom:
 description: Microsoft 365 で DomainKeys Identified Mail (DKIM) を使用して、カスタム ドメインから送信されたメッセージが送信先のメール システムから信頼されるようにする方法を説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 87f565d5058edff9ebde5af6e2cf84ca3e8262b4
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: ce6550b442f4a863c87bfa5272e8d5b707b7f096
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65772152"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67281715"
 ---
 # <a name="use-dkim-to-validate-outbound-email-sent-from-your-custom-domain"></a>DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する
 
@@ -235,7 +235,7 @@ DNS に CNAME レコードを発行したら、Microsoft 365 で DKIM 署名を�
 
 #### <a name="to-enable-dkim-signing-for-your-custom-domain-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでカスタム ドメインの DKIM 署名を有効にするには
 
-1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ルール]** セクションの **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[DKIM]** に移動します。 DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2> を使用します。
+1. <https://security.microsoft.com> の Microsoft 365 Defender ポータルで、**[ルール]** セクション \> **[DKIM]** の **[メールとコラボレーション]** \> **[ポリシーとルール]** \> **[脅威ポリシー]** \> **[メールの認証の設定]** に移動します。 DKIM ページに直接移動するには、<https://security.microsoft.com/dkimv2> を使用します。
 
 2. **DKIM** ページで、名前をクリックしてドメインを選択します。
 
@@ -410,6 +410,6 @@ DKIM を設定したら、SPF をまだ設定していない場合は、設定�
 
 PowerShell を介したキー ローテーション: [Rotate-DkimSigningConfig](/powershell/module/exchange/rotate-dkimsigningconfig)
 
-[DMARC を使用してメールを検証する](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide&preserve-view=true)
+[DMARC を使用してメールを検証する](/microsoft-365/security/office-365-security/use-dmarc-to-validate-email)
 
-[正当なメールフローに信頼できる ARC 送信者を使用する](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&branch=tracyp_emailauth)
+[正当なメールフローに信頼できる ARC 送信者を使用する](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders)

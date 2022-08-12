@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: how-to
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/05/2022
+ms.date: 08/08/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,18 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium 用に事前構成済みのセキュリティ設定を提供することで、セキュリティの既定値が ID 関連の攻撃から組織を保護する方法について説明します。
-ms.openlocfilehash: 7c73b40d73ec022b2047ceb3998b7d82ceab56e8
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 2d4dc4af9f003245b25a85c5b18abf593db8fbe8
+ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276002"
+ms.lasthandoff: 08/09/2022
+ms.locfileid: "67285189"
 ---
 # <a name="security-defaults-and-multi-factor-authentication"></a>セキュリティの既定値と多要素認証
 
 Microsoft 365 Business Premium は、事前構成済みのセキュリティ設定により、会社のユーザー アカウントを保護できるように設計されています。 これらの設定には、すべての管理者とユーザー アカウントに対して多要素認証 (MFA) を有効にすることが含まれます。 ほとんどの組織では、セキュリティの既定値によって適切なレベルのサインイン セキュリティが提供されます。
 
-セキュリティの既定値と適用されるポリシーの詳細については、「[セキュリティの既定値とは何か?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
+> [!TIP]
+> セキュリティの既定値と適用されるポリシーの詳細については、「[セキュリティの既定値とは何か?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)」を参照してください。
 
 この記事では、次の操作を行う方法について説明します。
 

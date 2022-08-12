@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アイテム保持ポリシーを使用して、ユーザーがメール、ドキュメント、および会話で生成するコンテンツを効率的に制御します。 必要なものを保持し、不要なものを取り除きます。
-ms.openlocfilehash: 39405a14fcde6ff41821d3b30c933f5ac226019e
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: 127d32073e05da84449e5b80eb6a507b94f9f988
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037734"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300960"
 ---
 # <a name="create-and-configure-retention-policies"></a>アイテム保持ポリシーを作成して構成する
 
@@ -89,7 +89,7 @@ ms.locfileid: "67037734"
     - **"Static"** を選択した場合: **[ポリシーを適用する場所を選択しますの選択]** ページで、Teams の 1 つ以上の場所を選択します。
         - **Teams チャネル メッセージ**: 標準、共有チャネル チャット、および標準、共有チャネル会議からのメッセージであり、独自のポリシーの場所を持つ [プライベート チャネル](/microsoftteams/private-channels)からのメッセージではありません。
         - **Teams チャット**: プライベート 1:1 チャット、グループ チャット、および会議チャットからのメッセージ。
-        - **Teams プライベート チャネル メッセージ**: プライベート チャネル チャットおよびプライベート チャネル 会議からのメッセージ。
+        - **Teams プライベート チャネル メッセージ**: プライベート チャネル チャットおよびプライベート チャネル 会議からのメッセージ。 このオプションを選択した場合、同じアイテム保持ポリシー内の他の Teams の場所を選択することはできません。
         
        既定では、[すべてのチームとすべてのユーザーが選択されています](retention-settings.md#a-policy-that-applies-to-entire-locations)が、[**[選択]** と **[除外]** オプション](retention-settings.md#a-policy-with-specific-inclusions-or-exclusions)を選択することでこれを調整できます。
 

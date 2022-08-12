@@ -190,6 +190,8 @@
                       href: alert-grading-playbook-inbox-forwarding-rules.md
                     - name: 疑わしい受信トレイ操作ルール
                       href: alert-grading-playbook-inbox-manipulation-rules.md
+                    - name: 悪意のある交換コネクタ
+                      href: alert-grading-for-malicious-exchange-connectors.md
                 - name: ユーザー
                   href: investigate-users.md
             - name: インシデント対応プレイブック
