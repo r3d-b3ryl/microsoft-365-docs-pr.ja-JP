@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で高い生産性とセキュリティを実現し、ビジネスをより安全に行う方法について説明します。
-ms.openlocfilehash: cffab130bf64220b47a425b25824fbad2d39c540
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
+ms.openlocfilehash: b70b62790330a6e92d52a8f490eebd0b8b0efccf
+ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037690"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67300631"
 ---
-# <a name="productivity-and-security-for-small--and-medium-sized-businesses"></a>中小企業の生産性とセキュリティ 
+# <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>中小企業の生産性とセキュリティ 
 
 Microsoft 365 Business Premium は、中小企業 (従業員 1 - 300 人) 向けに設計および構築された、生産性とセキュリティのための包括的なクラウド ソリューションです。 Microsoft 365 Business Premium を使用すると、次のことができます:
 

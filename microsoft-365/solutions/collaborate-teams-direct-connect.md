@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords: NOCSH
 recommendations: false
 description: 組織外のユーザーとのコラボレーションのために、Microsoft Teams で共有チャネルを有効にする方法について説明します。
-ms.openlocfilehash: 0e8d4ab09509e801fc54a4bb435dc78d2bdee516
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 61093530faad261059e68e02a496c485a765b99d
+ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969794"
+ms.lasthandoff: 08/10/2022
+ms.locfileid: "67306484"
 ---
 # <a name="collaborate-with-external-participants-in-a-shared-channel"></a>共有チャネルで外部の参加者と共同作業する
 
@@ -33,6 +33,9 @@ Teams で別の組織と共有チャネルを有効にする場合:
 - 組織内のチーム所有者は、共有チャネルに参加するよう他の組織のユーザーを招待できます。
 - 組織のカスタム (基幹業務) アプリを共有チャネルで利用できます。外部の参加者は、それらのアプリにアクセスできるようになります。
 - 組織のアプリ リストを共有チャネルで利用できます。外部の参加者は、それらのアプリにアクセスできるようになります。
+
+> [!NOTE]
+> 外部の参加者と共有チャネルを使用するには、[Microsoft 365 グループのゲスト設定](/microsoft-365/admin/create-groups/manage-guest-access-in-groups)を有効にする必要があります。
 
 ## <a name="video-demonstration"></a>ビデオ デモンストレーション
 

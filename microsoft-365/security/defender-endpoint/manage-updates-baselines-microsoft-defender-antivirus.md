@@ -7,24 +7,24 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/04/2022
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: pahuijbr, mkaminska
+ms.reviewer: pahuijbr, mkaminska, v-vutrieu
 manager: dansimp
 ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: 1c1921b368ce404d5065854ae9f71fe8713dd9d4
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
+ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
 ms.translationtype: HT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275672"
+ms.lasthandoff: 08/08/2022
+ms.locfileid: "67280721"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -91,6 +91,40 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - 統合の改善 (クラウド、[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
+<summary>2022 年 7 月 (プラットフォーム: 4.18.2205.TBD | エンジン: 1.1.19500.2)</summary>
+
+*このセクションには、まだ開発中のプレリリース情報が含まれています。最終的なセキュリティ更新プログラムのバージョン番号を含む更新が行われることを期待してください。*
+
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: *近日公開予定*<br/>
+&ensp;リリース日: **2022 年 8 月 8 日**<br/>
+&ensp;プラットフォーム: *4.18.2205.TBD*<br/>
+&ensp;エンジン: **1.1.19500.2**<br/>
+&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+
+エンジンバージョン: 1.1.19300.2<br/>
+セキュリティ インテリジェンス更新プログラムのバージョン: *近日公開予定*<br/>
+
+### <a name="whats-new"></a>新機能
+
+- Microsoft Defender ウイルス対策がアクティブな場合の[ハイブリッド スリープ](/windows-hardware/customize/power-settings/sleep-settings-hybrid-sleep)遅延のパフォーマンスの向上 
+- [侵害の指標をブロックするカスタム証明書](indicator-certificates.md)に関連するクライアント検出動作を修正しました 
+- [AntiMalware Scan Interface (AMSI)](/windows/win32/amsi/antimalware-scan-interface-portal) キャッシュのパフォーマンスの向上 
+- [Microsoft Visual Basic for Applications](/office/vba/language/concepts/getting-started/64-bit-visual-basic-for-applications-overview) (VBA) 関連のマクロの検出と修復の改善 
+- AMSI 除外の処理の改善 
+- Host Intrusion Prevention System (HIPS) ルール処理でのデッドロック検出が修正されました。 (HIPS および Defender for Endpoint の詳細については、「[サードパーティの HIPS から ASR ルールへの移行](migrating-asr-rules.md)」を参照してください。) 
+- `MsMpEng.exe` がプライベート バイトを消費していたメモリ リークを修正しました。 (高い CPU 使用率も問題である場合は、「[Microsoft Defender ウイルス対策による高い CPU 使用率](troubleshooting-mode-scenarios.md)」を参照してください) 
+- [動作の監視](configure-real-time-protection-microsoft-defender-antivirus.md)によるデッドロックを修正しました 
+- 信頼検証の改善 
+- レガシ オペレーティング プラットフォームでのエンジン クラッシュの問題を修正しました 
+- Performance Analyzer v3 の更新プログラム: トップ パス サポート、スキャン スキップ情報、OnDemand スキャン サポートを追加しました。 「[Microsoft Defender ウイルス対策用のパフォーマンス アナライザー](tune-performance-defender-antivirus.md)」を参照してください。 
+
+
+### <a name="known-issues"></a>既知の問題
+
+既知の問題はありません
+
+<br/><br/>
+</details><details>
 <summary>2022 年 5 月 (プラットフォーム: 4.18.2205.7 | エンジン: 1.1.19300.2)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.369.88.0**<br/>
@@ -165,14 +199,21 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - リソース使用率 (CPU またはメモリ) が高くなる可能性があります。 2022 年 3 月のプラットフォーム 4.18.2203.5 およびエンジン 1.1.19200.5 の更新プログラムを参照してください。
 
 <br/><br/>
-</details><details>
+</details>
+
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: テクニカル アップグレード サポートのみ
+
+新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートのみに縮小されます。 このセクションに記載されているバージョンより古いバージョンは、テクニカル アップグレード サポートのみ提供されます。<br/><br/>
+
+<details>
 <summary>2022 年 2 月 (プラットフォーム: 4.18.2202.4 | エンジン: 1.1.19000.8)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.361.14.0**<br/>
 &ensp;リリース日: **2022 年 3 月 14 日**<br/>
 &ensp;プラットフォーム: **4.18.2202.4**<br/>
 &ensp;エンジン: **1.1.19000.8**<br/>
-&ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
+&ensp;サポート フェーズ: **テクニカル アップグレード サポート (のみ)**<br/>
 
 エンジンのバージョン: 1.1.19000.8 <br/>
 セキュリティ インテリジェンス更新プログラムのバージョン: 1.361.14.0 <br/>
@@ -194,14 +235,7 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 既知の問題はありません
 
 <br/><br/>
-</details>
-
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>以前のバージョンの更新プログラム: テクニカル アップグレード サポートのみ
-
-新しいパッケージ バージョンがリリースされると、以前の 2 つのバージョンのサポートはテクニカル サポートのみに縮小されます。 このセクションに記載されているバージョンより古いバージョンは、テクニカル アップグレード サポートのみ提供されます。<br/><br/>
-
-<details>
+</details><details>
 <summary>2022 年 1 月 (プラットフォーム: 4.18.2201.10 | エンジン: 1.1.18900.2)</summary>
 
 &ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.357.8.0**<br/>
