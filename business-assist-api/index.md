@@ -1,1 +1,0 @@
-# <a name="welcome-to-business-assist-api"></a>business-assist-api へようこそ。
