@@ -338,9 +338,9 @@ Get-MailboxAuditBypassAssociation -Identity <MailboxIdentity> | Format-List Audi
 
 - 既定では、メールボックス監査ログ レコードは、削除される前に 90 日間保持されます。 PowerShell の **Set-Mailbox** コマンドレットの *AuditLogAgeLimit* パラメーターを使用して、監査ログ レコードの有効期間制限Exchange Online変更できます。 ただし、この値を大きくしても、監査ログで 90 日を超えるイベントを検索することはできません。
 
-  年齢制限を引き上げる場合は、Exchange Online PowerShell の [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) コマンドレットを使用して、ユーザーのメールボックス監査ログで 90 日を超えるレコードを検索する必要があります。
+  有効期間を引き上げる場合は、Exchange Online PowerShell の [Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) コマンドレットを使用して、ユーザーのメールボックス監査ログで 90 日を超えるレコードを検索する必要があります。
 
-- 組織のメールボックス監査が既定で有効になっている前にメールボックスの *AuditLogAgeLimit* プロパティを変更した場合、メールボックスの既存の監査ログの有効期間の制限は変更されません。 言い換えると、既定でメールボックス監査は、メールボックス監査レコードの現在の年齢制限には影響しません。
+- 組織のメールボックス監査が既定で有効になっている前にメールボックスの *AuditLogAgeLimit* プロパティを変更した場合、メールボックスの既存の監査ログの有効期間の制限は変更されません。 言い換えると、既定でメールボックス監査は、メールボックス監査レコードの現在の有効期間には影響しません。
 
 - Microsoft 365 グループ メールボックスの *AuditLogAgeLimit* 値を変更するには、**Set-Mailbox** コマンドにスイッチを含める`-GroupMailbox`必要があります。
 
