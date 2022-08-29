@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 ms.localizationpriority: medium
 description: Microsoft SharePoint Syntexでモダン テンプレートを使用してドキュメントやその他のコンテンツを自動的に作成する方法について説明します。
-ms.openlocfilehash: ed0b66ecf495dccd18e24ff5ef4caded17c2b234
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: bce344a5a8daf36c9408a846f2ab289f14695d82
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309837"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420114"
 ---
 # <a name="create-documents-using-content-assembly-in-microsoft-sharepoint-syntex"></a>Microsoft SharePoint Syntexでコンテンツ アセンブリを使用してドキュメントを作成する
 
@@ -65,7 +65,9 @@ SharePoint Syntexを使用すると、コントラクト、作業明細書、サ
    - [管理されたメタデータ用語セットまたは用語から選択する](#associate-a-placeholder-by-selecting-from-managed-metadata-term-set-or-term)
 
    > [!NOTE]
-   > テキスト専用のプレースホルダーを作成できます。 現在、画像、スマート アート、テーブル、箇条書きはサポートされていません。   
+   > テキストのプレースホルダーと、テーブル内のセル内のテキストのプレースホルダーも作成できます。 ただし、現在、画像、スマート アート、完全なテーブル、箇条書きはサポートされていません。   
+
+
 
 ### <a name="associate-a-placeholder-by-entering-text-or-selecting-a-date"></a>テキストを入力するか、日付を選択してプレースホルダーを関連付ける
 
@@ -185,7 +187,7 @@ SharePoint Syntexを使用すると、コントラクト、作業明細書、サ
 >- 現在、テンプレートの作成では、Microsoft Word ドキュメント (.docx拡張機能) のみがサポートされています。 Word 文書をアップロードする前に、コメントが含まれていないか、変更 **履歴が有効** になっていることを確認します。 ドキュメントに画像のテキスト プレースホルダーが含まれている場合は、テキストで折り返されていないことを確認します。 Word のコンテンツ コントロールは現在サポートされていません。 コンテンツ コントロールを使用して Word 文書からテンプレートを作成する場合は、モダン テンプレートを作成する前に削除します。
 >- テンプレートとドキュメントは、1 つのドキュメント ライブラリに関連付けられます。 別のドキュメント ライブラリでテンプレートを使用するには、そのドキュメント ライブラリでテンプレートを再度作成する必要があります。
 >- モダン テンプレートの作成に使用されるアップロードされたドキュメントは、別のコピーとして保存され、ドキュメント ライブラリの /forms ディレクトリに配置されます。 ディスク上の元のファイルは影響を受けません。
->- テキスト専用のプレースホルダーを作成できます。 現在、画像、スマート アート、テーブル、箇条書きはサポートされていません。
+>- テキストのプレースホルダーと、テーブル内のセル内のテキストのプレースホルダーも作成できます。 ただし、現在、画像、スマート アート、完全なテーブル、箇条書きはサポートされていません。
 >- ドキュメントがテンプレートから作成されると、そのドキュメントはテンプレートに関連付けられません。
 
 

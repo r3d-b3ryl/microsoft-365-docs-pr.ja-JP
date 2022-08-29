@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: デスクトップ、モバイル、および Web 用の Office アプリで秘密度ラベルを管理するための IT 管理者向けの情報。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b8ee8f3d4a5ef1176c482aa6cb54d866fd4dd41
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
-ms.translationtype: HT
+ms.openlocfilehash: 18153facee37f52ea0bcc5baa5e5193f63e06360
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306572"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67419953"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Office アプリで秘密度ラベルを管理する
 
@@ -76,9 +76,8 @@ Office for iOS および Office for Android: 秘密度ラベルは [Office ア�
 |[ユーザーがメールとドキュメントにラベルを適用することを必須にする](#require-users-to-apply-a-label-to-their-email-and-documents)   | 現在のチャネル: 2101 以上 <br /><br> 月次エンタープライズ チャネル: 2101 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.45 以上         | 2.47 以上 | 16.0.13628 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md)                                            
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - 機密情報の種類の使用                    | 現在のチャネル: 2009 以上 <br /><br> 月次エンタープライズ チャネル: 2009 以上 <br /><br> 半期エンタープライズ チャネル: 2102 以上 | 16.44 以上  | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[秘密度ラベルをコンテンツに自動的に適用する](apply-sensitivity-label-automatically.md) <br /> - トレーニング可能な分類子の使用                    | 現在のチャネル: 2105 以上 <br /><br> 月次エンタープライズ チャネル: 2105 以上 <br /><br> 半期エンタープライズ チャネル: 2108 以上 | 16.49+ | レビュー中 | レビュー中 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 現在のチャネル: 2107 以上 <br /><br> 月次エンタープライズ チャネル: 2107 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 |  16.51 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 2.58 以上 | プレビュー: [オプトイン](sensitivity-labels-coauthoring.md#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)する場合は 16.0.14931 以上 | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[PDF サポート](#pdf-support)| プレビュー: [ベータ チャネル](https://office.com/insider) |  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
-
+|ラベル付きおよび暗号化されたドキュメントの[共同編集と自動保存をサポート](sensitivity-labels-coauthoring.md) | 現在のチャネル: 2107 以上 <br /><br> 月次エンタープライズ チャネル: 2107 以上 <br /><br> 半期エンタープライズ チャネル: 2202 以上 |  16.51 以上 | 2.58+ | 16.0.14931+  | [はい - オプトイン](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[PDF サポート](#pdf-support)| プレビュー: [最新チャネル (プレビュー版)](https://office.com/insider) |  レビュー中 | レビュー中 | レビュー中 | レビュー中 |
 
 ### <a name="sensitivity-label-capabilities-in-outlook"></a>Outlook での秘密度ラベル機能
 
@@ -231,41 +230,13 @@ SharePoint または OneDrive のドキュメントに対して Office on the we
 
 ### <a name="sharing-encrypted-documents-with-external-users"></a>暗号化されたドキュメントを外部ユーザーと共有する
 
-組織内のユーザーへのアクセスを制限することに加えて、Azure Active Directory にアカウントを持っている他のユーザーにアクセスを拡張できます。 ただし、組織で条件付きアクセス ポリシーを使用している場合は、その他の考慮事項について[次のセクション](#conditional-access-policies)を参照してください。
+自分の組織内のユーザーへのアクセスを制限できますが、Azure Active Directory (Azure AD) にアカウントを持つ他のユーザーにアクセスを拡張することもできます。 既定では、これらの外部ユーザーは追加の構成なしで認証されます。 ただし、Azure AD [外部 ID のクロステナント アクセス設定](/azure/active-directory/external-identities/cross-tenant-access-overview) と [条件付き](/azure/active-directory/conditional-access/overview)アクセスには、追加の構成が必要になる場合があります。 
+
+外部ユーザーが Azure AD にアカウントを持っていない場合は、テナント内のゲスト アカウントを使用して認証できます。 これらのゲスト アカウントは、SharePoint および OneDrive で [Office ファイルの秘密度ラベルを有効にしている場合に、SharePoint または OneDrive の共有ドキュメントに](sensitivity-labels-sharepoint-onedrive-files.md)アクセスするためにも使用できます。
+
+オプションの Azure AD 機能と認証要件にゲスト アカウントを使用する方法の詳細については、 [暗号化コンテンツの Azure AD 構成に関するページを](encryption-azure-ad-configuration.md)参照してください。
 
 すべての Office アプリおよびその他の [RMS 対応アプリケーション](/azure/information-protection/requirements-applications#rms-enlightened-applications)は、ユーザーが正常に認証された後、暗号化されたドキュメントを開くことができます。 
-
-外部ユーザーが Azure Active Directory にアカウントを持っていない場合は、テナントのゲスト アカウントを使用して認証できます。 これらのゲスト アカウントは、[SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にしている](sensitivity-labels-sharepoint-onedrive-files.md)場合に、SharePoint または OneDrive の共有ドキュメントにアクセスするためにも使用できます。
-
-- 1 つのオプションは、これらのゲスト アカウントを自分で作成することです。 これらのユーザーがすでに使用している任意のメール アドレスを指定できます。 たとえば、Gmail アドレスです。
-    
-    このオプションの利点は、暗号化設定でメール アドレスを指定することにより、特定のユーザーへのアクセスと権利を制限できることです。 欠点は、アカウントの作成とラベル構成の調整のための管理オーバーヘッドです。
-
-- もう 1 つのオプションは、[SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration)を使用して、ユーザーがリンクを共有したときにゲスト アカウントが自動的に作成されるようにすることです。
-    
-    このオプションの利点は、アカウントが自動的に作成されるため、管理オーバーヘッドが最小限に抑えられ、ラベルの構成が簡単になることです。 このシナリオでは、事前にメール アドレスがわからないため、暗号化オプション [[認証されたユーザーを追加する]](encryption-sensitivity-labels.md#requirements-and-limitations-for-add-any-authenticated-users) を選択する必要があります。 欠点は、この設定ではアクセス権と使用権を特定のユーザーに制限できないことです。
-
-外部ユーザーは、Windows および Microsoft 365 Apps ([以前の Office 365 アプリ](/deployoffice/name-change)) または Office 2019 のスタンドアロン エディションを使用するときに、Microsoft アカウントを使用して暗号化されたドキュメントを開くこともできます。 最近では他のプラットフォームでもサポートされており、macOS (Microsoft 365 Apps、バージョン 16.42 以降)、Android (バージョン 16.0.13029 以降)、iOS (バージョン 2.42 以降) で暗号化されたドキュメントを開くためにも Microsoft アカウントがサポートされています。 たとえば、組織内のユーザーが暗号化されたドキュメントを組織外のユーザーと共有し、暗号化設定で外部ユーザーの Gmail メール アドレスを指定します。 この外部ユーザーは、Gmail メール アドレスを使用する独自の Microsoft アカウントを作成できます。 次に、このアカウントでサインインした後、指定された使用制限に従って、ドキュメントを開いて編集できます。 このシナリオのチュートリアルの例については、「[保護されたドキュメントを開いて編集する](/azure/information-protection/secure-collaboration-documents#opening-and-editing-the-protected-document)」を参照してください。
-
-> [!NOTE]
-> Microsoft アカウントのメール アドレスは、暗号化設定へのアクセスを制限するために指定されたメール アドレスと一致する必要があります。
-
-Microsoft アカウントを持つユーザーがこの方法で暗号化されたドキュメントを開くと、同じ名前のゲスト アカウントがまだ存在しない場合、テナントのゲスト アカウントが自動的に作成されます。 ゲスト アカウントが存在する場合は、サポートされているデスクトップおよびモバイル Office アプリから暗号化されたドキュメントを開くだけでなく、Office on the web を使用して SharePoint および OneDrive でドキュメントを開くために使用できます。
-
-ただし、このシナリオでは、レプリケーションの待ち時間のため、自動ゲスト アカウントはすぐには作成されません。 ラベル暗号化設定の一部として個人のメール アドレスを指定する場合は、Azure Active Directory に対応するゲスト アカウントを作成することをお勧めします。 次に、これらのユーザーに、組織から暗号化されたドキュメントを開くにはこのアカウントを使用する必要があることを知らせます。
-
-> [!TIP]
-> 外部ユーザーがサポートされている Office クライアント アプリを使用するかどうかを確認できないため、ゲスト アカウントを作成した後 (特定のユーザーの場合)、または [SharePoint および OneDrive の Azure AD B2B との統合](/sharepoint/sharepoint-azureb2b-integration-preview)を使用するとき (認証されたユーザーの場合) は、SharePoint と OneDrive からのリンクを共有する方が外部ユーザーとの安全なコラボレーションをサポートするためのより信頼性の高い方法です。
-
-### <a name="conditional-access-policies"></a>条件付きアクセス ポリシー
-
-組織で [Azure Active Directory 条件付きアクセス ポリシー](/azure/active-directory/conditional-access/overview)を実装している場合は、それらのポリシーの構成を確認してください。ポリシーに **Microsoft Azure Information Protection** が含まれていて、ポリシーが外部ユーザーに拡張されている場合、それらの外部ユーザーは、自分のテナントに Azure AD アカウントを持っている場合でも、テナントにゲスト アカウントを持っている必要があります。
-
-このゲスト アカウントがないと、暗号化されたドキュメントを開いてエラー メッセージを表示することはできません。メッセージ テキストは、アカウントをテナントの外部ユーザーとして追加する必要があることを通知する場合があります。このシナリオでは、「**別の Azure Active Directory ユーザー アカウントでサインアウトして再度サインインする**」という誤った指示があります。
-
-ラベルで暗号化されたドキュメントを開く必要がある外部ユーザー用にテナントでゲスト アカウントを作成および構成できない場合は、条件付きアクセス ポリシーから Azure Information Protection を削除するか、ポリシーから外部ユーザーを除外する必要があります。
-
-秘密度ラベルで使用される暗号化サービスである条件付きアクセスと Azure Information Protection の詳細については、よくあるご質問の「[Azure Information Protection は、条件付きアクセスに使用できるクラウド アプリとしてリストされていますが、これはどのように機能しますか?](/azure/information-protection/faqs#i-see-azure-information-protection-is-listed-as-an-available-cloud-app-for-conditional-accesshow-does-this-work)」を参照してください。
 
 ## <a name="when-office-apps-apply-content-marking-and-encryption"></a>Office アプリがコンテンツ マーキングと暗号化を適用した場合
 

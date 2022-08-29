@@ -18,12 +18,12 @@ ms.custom:
 description: 認証された受信チェーン (ARC) は、デバイス間の認証結果と、送信者と受信者の間で発生する間接的なメールフローを保持しようとする電子メール認証です。 信頼された ARC 送信者に対して例外を作成する方法を次に示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6c27e5913a035c892b7c3a2b2677f5cf3531d04
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
-ms.translationtype: HT
+ms.openlocfilehash: c6845fd9137029ebebd031550e145aef8ffc1440
+ms.sourcegitcommit: ec245c75006e3e5ed2b8e6c1b062fbb31a63aa6c
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306638"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67423721"
 ---
 # <a name="make-a-list-of-trusted-arc-senders-to-trust-legitimate-indirect-mailflows"></a>*正当* な間接メールフローを信頼する信頼された ARC 送信者の一覧を作成する
 
@@ -37,7 +37,7 @@ ms.locfileid: "67306638"
 
 ## <a name="authenticated-received-chain-arc-in-microsoft-365-defender-for-office"></a>Office のMicrosoft 365 Defenderで認証された受信チェーン (ARC)
 
-組織に配信する前にメッセージの転送中にコンテンツを変更するサービスは、DKIM 電子メール署名を無効にし、メッセージの認証に影響を与える可能性があります。 これらの中間サービスでこのようなアクションを実行する場合、ARC を使用して、変更が発生する前に元の認証の詳細を提供できます。これにより、組織は信頼してメッセージの認証を支援できます。  
+組織への配信前に転送中のメッセージ コンテンツを変更するサービスは、DKIM 電子メール署名を無効にし、メッセージの認証に影響を与える可能性があります。 これらの中間サービスがこのようなアクションを実行すると、ARC を使用して、変更が発生する前に元の認証の詳細を提供できます。 その後、組織はこれらの詳細を信頼して、メッセージの認証に役立ちます。  
 
 **信頼された ARC シールを使用すると、管理者は *信頼された* 中継局かの一覧をMicrosoft 365 Defender ポータルに追加できます。** 信頼された ARC シールを使用すると、Microsoft はこれらの信頼された中継局からの ARC 署名を受け入れ、これらの正当なメッセージが認証チェーンを失敗させるのを防ぎます。
 

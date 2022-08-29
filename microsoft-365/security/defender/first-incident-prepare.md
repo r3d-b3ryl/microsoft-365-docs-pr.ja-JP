@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 690e1c48a452cfa00f0ae8d4fd87849b1c2e79dc
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: eeaa5c663d7f35a1a43f883953cd08c5aa1920aa
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893521"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329049"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>初めてのインシデントに備え、セキュリティ体制を整える
 
@@ -42,20 +42,20 @@ Microsoft 365 Defenderは、インシデント防止のいくつかの側面に�
 
 - [ゼロ トラスト](/security/zero-trust/) フレームワークの実装
 - [Microsoft Secure](microsoft-secure-score.md) Score でスコアを割り当ててセキュリティ体制を決定する
-- [脅威と脆弱性管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)の脆弱性評価による脅威の防止
+- [Defender 脆弱性管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)の脆弱性評価による脅威の防止
 - 脅威分析を使用して準備できるように、最新のセキュリティ[の脅威](threat-analytics.md)について理解する
 
-## <a name="step-1-implement-zero-trust"></a>手順 1. ゼロ トラストを実装する
+## <a name="step-1-implement-zero-trust"></a>手順 1。 ゼロ トラストを実装する
 
 [ゼロ トラスト](/security/zero-trust/)は、モバイル従業員やユーザー、デバイス、アプリケーション、データなど、あらゆる最新環境の複雑な性質を考慮した統合セキュリティ哲学とエンド ツー エンド戦略です。 すべての検出を一貫した方法で管理するための単一のウィンドウを提供することで、Microsoft 365 Defenderセキュリティ運用チームがゼロ トラストの[基本原則を](/security/zero-trust/#guiding-principles-of-zero-trust)実装しやすくなります。
 
 Microsoft 365 Defenderのコンポーネントは、Microsoft Defender for Endpointからのデータを統合することで、ゼロ トラストの条件付きアクセス ポリシーを確立するために実装されたルールの違反を表示できます。 またはデバイス コンプライアンス ポリシーの情報ソースとしての他のモバイル セキュリティ ベンダーや、デバイス ベースの条件付きアクセス ポリシーの実装。
 
-デバイス リスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ トラストの主なテーマであり、Microsoft 365 Defenderは信頼レベルの基準を決定するために必要な情報を提供します。 たとえば、Microsoft 365 Defenderは[脅威と脆弱性の管理] ページでデバイスのソフトウェア バージョン レベルを提供できます。条件付きアクセス ポリシーでは、バージョンが古い、または脆弱なデバイスが制限されます。
+デバイス リスクは、そのデバイスのユーザーがアクセスできるリソースに直接影響します。 特定の条件に基づくリソースへのアクセス拒否は、ゼロ トラストの主なテーマであり、Microsoft 365 Defenderは信頼レベルの基準を決定するために必要な情報を提供します。 たとえば、Microsoft 365 Defenderは、以前は脅威&脆弱性管理ページと呼ばMicrosoft Defender 脆弱性の管理を通じてデバイスのソフトウェア バージョン レベルを提供し、条件付きアクセス ポリシーでは、古いバージョンまたは脆弱なバージョンを持つデバイスを制限できます。
 
 自動化は、ゼロ トラスト環境の実装と保守の重要な部分であり、インシデント対応 (IR) イベントにつながる可能性のあるアラートの数を減らします。 Microsoft 365 Defenderのコンポーネントは、[修復アクション](m365d-autoir.md) (Microsoft 365 Defender ポータルでのインシデントの調査と呼ばれます)、通知アクション、[ServiceNow](https://microsoft.service-now.com/sp/) などのサポート チケットの作成など、自動化できます。
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2. 組織のセキュリティ体制を決定する
+## <a name="step-2-determine-your-organizations-security-posture"></a>手順 2。 組織のセキュリティ体制を決定する
 
 次に、組織は、Microsoft 365 Defenderで [Microsoft Secure Score](microsoft-secure-score.md) を使用して、現在のセキュリティ体制を決定し、それを改善する方法に関する推奨事項を検討できます。 スコアが高いほど、組織によって実行されたセキュリティに関する推奨事項と改善アクションが多くなります。 セキュリティスコアに関する推奨事項は、さまざまな製品で取得でき、組織はスコアをさらに高くすることができます。
 
@@ -65,7 +65,7 @@ Microsoft 365 Defenderのコンポーネントは、Microsoft Defender for Endpo
 
 インシデントを防ぐことは、セキュリティ運用の取り組みを効率化し、継続的な重大で重要なセキュリティ インシデントに焦点を当てるのに役立ちます。 多くの場合、ソフトウェアの脆弱性は、データの盗難、データの損失、または業務の中断につながる可能性がある攻撃の予防可能なエントリ ポイントです。 攻撃が進行中でない場合、セキュリティ操作は、組織で許容可能なレベルの [脆弱性にさらされるように](../defender-endpoint/tvm-exposure-score.md) 努める必要があります。
 
-ソフトウェアの修正プログラムの進行状況を確認するには、Defender for Endpoint の [[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)] ページにアクセスします。このページには、Microsoft 365 Defenderから [**その他のリソース**] タブからアクセスできます。
+ソフトウェアの修正プログラムの進行状況を確認するには、Defender for Endpoint の [[Microsoft Defender 脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)] ページにアクセスします。このページには、[**その他のリソース**] タブMicrosoft 365 Defenderからアクセスできます。
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Microsoft 365 Defender ポータル ポータルの [脅威と脆弱性] ページ" lightbox="../../media/first-incident-prepare/first-incident-vulnerability.png":::
 
@@ -85,7 +85,7 @@ Microsoft 365 Defender ポータルで[脅威分析](threat-analytics.md)を使�
 
 スケジュールに時間を取って、Microsoft 365 Defender ポータルの [Threat Analytics](threat-analytics.md) セクションを定期的に確認します。 詳細については、[Microsoft 365 Defenderのセキュリティ操作の例](incidents-overview.md#example-security-operations-for-microsoft-365-defender)を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [インシデントをトリアージして分析する](first-incident-analyze.md)方法について説明します。
 

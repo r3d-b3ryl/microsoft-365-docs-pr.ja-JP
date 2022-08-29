@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a6f53b0723d7f3e9b4761aa83238e618d947e55
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 53c04c70291f20ccb23ed54d1de552efb8a7619e
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783427"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437770"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Android 上の Microsoft Defender for Endpoint の問題のトラブルシューティング
 
@@ -55,7 +55,7 @@ ms.locfileid: "64783427"
 
 **解決方法:**
 
-Google Play ストアから最新バージョンと[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)をインストールし、もう一度お試しください。
+Google Play ストアから最新バージョンと [Microsoft Authenticator を](https://play.google.com/store/apps/details?id=com.azure.authenticator) インストールし、もう一度お試しください。
 
 ## <a name="sign-in-failed---invalid-license"></a>サインインに失敗しました - ライセンスが無効です
 
@@ -67,7 +67,7 @@ Google Play ストアから最新バージョンと[Microsoft Authenticator](htt
 
 **原因:**
 
-Microsoft 365ライセンスが割り当てられていないか、組織にMicrosoft 365 Enterpriseサブスクリプションのライセンスがありません。
+Microsoft 365 ライセンスが割り当てられていないか、組織にMicrosoft 365 Enterpriseサブスクリプションのライセンスがありません。
 
 **解決方法:**
 
@@ -103,9 +103,10 @@ Defender for Endpoint for Android によって検出されたフィッシング�
 
 ## <a name="unable-to-allow-permission-for-permanent-protection-during-onboarding-on-some-oem-devices"></a>一部の OEM デバイスでのオンボード中に "永続的な保護" のアクセス許可を許可できない
 
+
 **適用対象:** 特定の OEM デバイスのみ。
 
-- **Android 11 を使用した小米科技**
+- **小米科技**
 
 Defender アプリは、アプリのオンボードの一環としてデバイスに対するバッテリの最適化/永続的な保護のアクセス許可を要求し、[ **許可]** を選択すると、アクセス許可を設定できなかったというエラーが返されます。 これは、"Permanent Protection" という最後のアクセス許可にのみ影響します。 
 
@@ -115,30 +116,9 @@ Android 11 でバッテリ最適化のアクセス許可が変更されました
 
 **解決方法:**
 
-OEM と協力して、アプリのオンボード画面からこのアクセス許可を有効にするソリューションを見つけます。 これが解決されると、ドキュメントが更新されます。
-ユーザーは、次の手順に従って、デバイス設定から同じアクセス許可を有効にすることができます。 
+>[!IMPORTANT]
+>この問題は解決されました。 オンボード プロセスを完了するには、最新のアプリ バージョンに更新してください。 問題が解決しない場合は、 **[アプリ内フィードバック](/microsoft-365/security/defender-endpoint/android-support-signin#send-in-app-feedback)** を送信してください。
 
-1. デバイスの **設定** に移動します。
-
-2. **バッテリの最適化** を検索して選択します。
-
-   :::image type="content" source="images/search-battery-optimisation.png" alt-text="バッテリ最適化を検索して選択できるページ" lightbox="images/search-battery-optimisation.png":::
-
-3. **特別なアプリ アクセスで**、[**バッテリの最適化**] を選択します。
-
-   :::image type="content" source="images/special-app-access.png" alt-text="バッテリ最適化を選択できる [特別なアプリ アクセス] ウィンドウ" lightbox="images/special-app-access.png":::
-
-4. ドロップダウンを変更して **[すべてのアプリ] を表示します**。
-
-   :::image type="content" source="images/show-all-apps-2.png" alt-text="[バッテリ最適化] ウィンドウで値を [すべてのアプリ] に変更できるドロップダウン" lightbox="images/show-all-apps-2.png":::
-
-   :::image type="content" source="images/show-all-apps-1.png" alt-text="[バッテリ最適化] ウィンドウの下に [すべてのアプリ] オプションを表示するドロップダウン" lightbox="images/show-all-apps-1.png":::
-
-5. [Microsoft Defender for Endpoint] を見つけて、[**最適化しない**] を選択します。
-
-   :::image type="content" source="images/select-dont-optimise.png" alt-text="[最適化しない] のオプションMicrosoft Defender for Endpointと選択の場所を有効にするページ" lightbox="images/select-dont-optimise.png":::
-
-Microsoft Defender for Endpointオンボード画面に戻り、[**許可**] を選択すると、ダッシュボード画面にリダイレクトされます。
 
 ## <a name="send-in-app-feedback"></a>アプリ内フィードバックを送信する
 

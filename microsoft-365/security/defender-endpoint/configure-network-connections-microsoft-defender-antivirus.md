@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c38136aa8d6616613968de5ef352e326c41c4137
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 163929596d826eb1f7a04af4d9baea5d6a975c3e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717826"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386475"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 
@@ -99,7 +99,7 @@ Microsoft Edge を使用している場合は、通知メッセージも表示�
 
 Internet Explorer を使用している場合は、同様のメッセージが発生します。
 
-:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="マルウェアが見つかったという Microsoft Defender AV 通知" lightbox="../../media/wdav-bafs-ie.png":::
+:::image type="content" source="../../media/wdav-bafs-ie.png" alt-text="マルウェアが見つかったという Microsoft Defender ウイルス対策通知" lightbox="../../media/wdav-bafs-ie.png":::
 
 #### <a name="view-the-fake-malware-detection-in-your-windows-security-app"></a>Windows セキュリティ アプリで偽のマルウェア検出を表示する
 

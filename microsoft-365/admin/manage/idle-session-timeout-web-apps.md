@@ -11,12 +11,12 @@ ms.service: o365-administration
 ms.localizationpriority: medium
 ms.collection: Adm_TOC
 description: Microsoft 365 でユーザーのセッションがタイムアウトするまでの期間を設定します。
-ms.openlocfilehash: 527862e77f8fdfba3c418ba13607bc1389875cab
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 7dbc3f7cfeaa0997661849e6f2a36439c9f6973a
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67019925"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420092"
 ---
 # <a name="idle-session-timeout-for-microsoft-365"></a>Microsoft 365 のアイドル セッション タイムアウト
 
@@ -76,12 +76,17 @@ ms.locfileid: "67019925"
 - ユーザーは、構成されている期間、すべての Microsoft 365 Web アプリ タブで非アクティブである必要があります。 別のタブ (SPO など) で非アクティブなユーザーが 1 つのタブ (OWA など) でアクティブになっている場合、ユーザーはアクティブと見なされ、サインアウトされません。  
 
 - このような場合、ユーザーはサインアウトされません。
-    - デバイスに参加しているアカウントから Web アプリにシングル サインオン (SSO) を取得した場合、またはサインイン時 **に [サインインしたまま** にする] を選択した場合。 組織でこのオプションを非表示にする方法の詳細については、「組織 [のサインイン ページにブランドを追加する](/azure/active-directory/fundamentals/customize-branding)」を参照してください。
-    - 管理対象デバイス (準拠しているかドメインに参加しているデバイス) 上にあり、Microsoft Edge や Google Chrome ( [Windows アカウント拡張機能](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)を使用) などのサポートされているブラウザーを使用している場合。 この機能を非管理対象デバイスでトリガーするには、対象となるAzure AD Premium P1または P2 サブスクリプション、および特定の条件付きアクセス ポリシーが必要です。 詳細については、以下を参照してください。
+    - デバイスに参加しているアカウントから Web アプリにシングル サインオン (SSO) を取得した場合。
+    - [サインイン時 **にサインインしたまま** にする] を選択した場合。 組織でこのオプションを非表示にする方法の詳細については、「組織 [のサインイン ページにブランドを追加する](/azure/active-directory/fundamentals/customize-branding)」を参照してください。
+    - 管理対象デバイス (準拠しているかドメインに参加しているデバイス) 上にあり、Microsoft Edge や Google Chrome ( [Windows アカウント拡張機能](https://chrome.google.com/webstore/detail/windows-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji)を使用) などのサポートされているブラウザーを使用している場合。
+
+## <a name="trigger-idle-session-timeout-only-on-unmanaged-devices"></a>非管理対象デバイスでのみアイドル セッション タイムアウトをトリガーする
+
+既定では、アイドル セッション タイムアウト機能は、他の条件が満たされている場合、すべてのデバイスの種類でトリガーされます。 この機能を非管理対象デバイスでのみトリガーするには、対象となるAzure AD Premium P1または P2 サブスクリプションが必要です。 また、Azure AD 管理センターに条件付きアクセス ポリシーを追加する必要もあります。
 
 ## <a name="idle-session-timeout-on-unmanaged-devices"></a>非管理対象デバイスでのアイドル セッション タイムアウト  
 
-非管理対象デバイスでアイドル セッション タイムアウトをトリガーするには、Azure AD 管理センターに条件付きアクセス ポリシーを追加する必要があります。
+アイドル セッション タイムアウトを非管理対象デバイスでのみトリガーするには、Azure AD 管理センターに条件付きアクセス ポリシーを追加する必要があります。
 
 1. **条件付きアクセス |** Azure AD 管理センターの [ポリシー] ページで、[**新しいポリシー**] を選択し、ポリシーの名前を入力します。
 

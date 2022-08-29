@@ -19,12 +19,12 @@ ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: ''
-ms.openlocfilehash: ad8c15ef0b5dc56d2df8455341f8bf5e4e6efd94
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: e46e5f3af06cc94cea4ff2e76208f3ccadc53586
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66530616"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385619"
 ---
 # <a name="try-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365を試す
 
@@ -63,7 +63,7 @@ Defender for Office 365の詳細については、この[対話型ガイド](htt
 
 Defender for Office 365を評価すると、Microsoft 365 の保護機能を制御するポリシーが存在します。
 
-- **Exchange Online Protection (EOP)**: 新しいポリシーや特別なポリシーは作成されません。 既存の EOP ポリシーは、メッセージに対して動作できます (たとえば、迷惑メール フォルダーにメッセージを送信したり、検疫を行ったりします)。
+- **Exchange Online Protection (EOP)**: 新しいポリシーや特別なポリシーは作成されません。 既存の EOP ポリシーは、メッセージに対して動作できます (たとえば、迷惑メール Email フォルダーにメッセージを送信したり、検疫したりできます)。
 
   - [マルウェア対策ポリシー](anti-malware-protection.md)
   - [受信スパム対策保護](anti-spam-protection.md)
@@ -87,7 +87,7 @@ Defender for Office 365を評価すると、Microsoft 365 の保護機能を制�
 
 **注**:
 
-- 安全なリンクは、メール フロー内の URL をデトネーションします。 特定の URL がデトネーションされないようにするには、テナント許可/ブロック リストを使用します。 詳細については、「 [テナント許可/ブロック リストの管理」を参照してください](tenant-allow-block-list.md)。
+- 安全なリンクは、メール フロー内の URL をデトネーションします。 特定の URL がデトネーションされないようにするには、テナント許可/ブロック リストを使用します。 詳細については、「 [テナント許可/ブロック リストの管理」を参照してください](manage-tenant-allow-block-list.md)。
 - 安全なリンクは、メール メッセージ本文で URL リンクをラップしません。
 - 評価ポリシーの設定については、この記事の後半の [「評価ポリシー設定](#evaluation-policy-settings) 」セクションで説明します。
 
@@ -152,7 +152,7 @@ Defender for Office 365を評価すると、Microsoft 365 の保護機能を制�
 
           前の手順で説明したように、コネクタの拡張フィルター処理は、保護サービスからのメールの送信元として指定したコネクタで自動的に構成されます。
 
-          保護サービスからの受信メールに対して SCL=-1 ルールを使用せずにコネクタの拡張フィルター処理をオンにすると、 [スプーフィング インテリジェンス](anti-spoofing-protection.md)などの EOP 保護機能の検出機能が大幅に向上し、新しく検出されたメッセージの配信 (迷惑メール フォルダーへの移動や検疫など) に影響を与える可能性があります。 この影響は EOP ポリシーに限定されます。前述のように、Defender for Office 365 ポリシーは監査モードで作成されます。
+          保護サービスからの受信メールに対して SCL=-1 ルールを使用せずにコネクタの拡張フィルター処理を有効にすると、[スプーフィング インテリジェンス](anti-spoofing-protection.md)などの EOP 保護機能の検出機能が大幅に向上し、新しく検出されたメッセージの配信 (迷惑 Emailメール フォルダーへの移動や検疫など) に影響を与える可能性があります。 この影響は EOP ポリシーに限定されます。前述のように、Defender for Office 365 ポリシーは監査モードで作成されます。
 
           SCL=-1 メール フロー ルールを作成したり、既存のルールを確認したりするには、ページの **[Exchange 管理センターに移動** ] ボタンをクリックします。 詳細については、「[メール フロー ルールを使用して、Exchange Online内のメッセージでスパム信頼レベル (SCL) を設定](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)する」を参照してください。
 
@@ -192,8 +192,8 @@ Defender for Office 365を評価すると、Microsoft 365 の保護機能を制�
 ## <a name="reporting-in-audit-mode"></a>監査モードでのレポート
 
 - [脅威の保護状態レポート](view-email-security-reports.md#threat-protection-status-report)には、次のビューにDefender for Office 365による検出が表示されます。
-  - [電子メール \> マルウェアとグラフの内訳を検出テクノロジ別に表示する](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
-  - [電子メール \> フィッシングとグラフの内訳でデータを検出テクノロジ別に表示する](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
+  - [Email マルウェアとグラフの内訳を\>検出テクノロジ別に表示する](view-email-security-reports.md#view-data-by-email--malware-and-chart-breakdown-by-detection-technology)
+  - [Emailフィッシングとグラフの内訳を\>検出テクノロジ別に表示する](view-email-security-reports.md#view-data-by-email--phish-and-chart-breakdown-by-detection-technology)
 
 - [脅威エクスプローラーでは](threat-explorer.md)、Defender for Office 365評価によって検出されたメッセージに、エントリの詳細に次のバナーが表示されます。
 
@@ -236,22 +236,22 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |AdminDisplayName|評価ポリシー|
 |AuthenticationFailAction|MoveToJmf|
 |Enabled|はい|
-|EnableFirstContactSafetyTips|False|
+|EnableFirstContactSafetyTips|不正解|
 |EnableMailboxIntelligence|はい|
 |EnableMailboxIntelligenceProtection|はい|
-|EnableOrganizationDomainsProtection|False|
-|EnableSimilarDomainsSafetyTips|False|
-|EnableSimilarUsersSafetyTips|False|
+|EnableOrganizationDomainsProtection|不正解|
+|EnableSimilarDomainsSafetyTips|不正解|
+|EnableSimilarUsersSafetyTips|不正解|
 |EnableSpoofIntelligence|はい|
-|EnableSuspiciousSafetyTip|False|
-|EnableTargetedDomainsProtection|False|
-|EnableTargetedUserProtection|False|
+|EnableSuspiciousSafetyTip|不正解|
+|EnableTargetedDomainsProtection|不正解|
+|EnableTargetedUserProtection|不正解|
 |EnableUnauthenticatedSender|はい|
-|EnableUnusualCharactersSafetyTips|False|
+|EnableUnusualCharactersSafetyTips|不正解|
 |EnableViaTag|はい|
 |Guid|GUID 値|
 |ImpersonationProtectionState|Manual|
-|IsDefault|False|
+|IsDefault|不正解|
 |MailboxIntelligenceProtectionAction|NoAction|
 |MailboxIntelligenceProtectionActionRecipients|{}|
 |MailboxIntelligenceQuarantineTag|DefaultFullAccessPolicy|
@@ -270,8 +270,8 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |AntiSpoofEnforcementType|高|
 |AuthenticationSafetyTipText|空白|
 |AuthenticationSoftPassSafetyTipText|空白|
-|EnableAuthenticationSafetyTip|False|
-|EnableAuthenticationSoftPassSafetyTip|False|
+|EnableAuthenticationSafetyTip|不正解|
+|EnableAuthenticationSoftPassSafetyTip|不正解|
 |PolicyTag|空白|
 |SimilarUsersSafetyTipsCustomText|空白|
 |TreatSoftPassAsAuthenticated|はい|
@@ -286,20 +286,20 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 
 |設定|値|
 |---|---|
-|操作|許可|
+|アクション|許可|
 |ActionOnError|はい|
 |AdminDisplayName|評価ポリシー|
 |ConfidenceLevelThreshold|80|
 |有効にする|はい|
-|EnableOrganizationBranding|False|
+|EnableOrganizationBranding|不正解|
 |Guid|GUID 値|
-|IsBuiltInProtection|いいえ|
-|IsDefault|False|
+|IsBuiltInProtection|不正解|
+|IsDefault|不正解|
 |名前|評価ポリシー|
 |OperationMode|Delay|
 |QuarantineTag|AdminOnlyAccessPolicy|
 |RecommendedPolicyType|評価|
-|Redirect|False|
+|Redirect|不正解|
 |RedirectAddress|{}|
 |ScanTimeout|30|
 
@@ -308,17 +308,17 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |設定|値|
 |---|---|
 |AdminDisplayName|評価ポリシー|
-|AllowClickThrough|いいえ|
+|AllowClickThrough|不正解|
 |CustomNotificationText|空白|
 |DeliverMessageAfterScan|はい|
 |DisableUrlRewrite|はい|
 |DoNotRewriteUrls|{}|
-|EnableForInternalSenders|いいえ|
-|EnableOrganizationBranding|False|
+|EnableForInternalSenders|不正解|
+|EnableOrganizationBranding|不正解|
 |EnableSafeLinksForTeams|はい|
 |Guid|GUID 値|
-|IsBuiltInProtection|いいえ|
-|IsDefault|いいえ|
+|IsBuiltInProtection|不正解|
+|IsDefault|不正解|
 |IsEnabled|はい|
 |LocalizedNotificationTextList|{}|
 |名前|"EvaluationPolicy"|
@@ -327,7 +327,7 @@ Microsoft 365 Defender ポータルでの Azure AD のアクセス許可の詳�
 |TrackClicks|はい|
 |||
 |DoNotAllowClickThrough|空白|
-|DoNotTrackUserClicks|False|
+|DoNotTrackUserClicks|不正解|
 |EnableSafeLinksForEmail|はい|
 |EnableSafeLinksForOffice|はい|
 |ExcludedUrls|{}|

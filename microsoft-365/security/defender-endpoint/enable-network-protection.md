@@ -15,25 +15,29 @@ manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 9e94b164dd5c4863b792acdfdd36756ebd94347a
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 8f8f189e3cf340c0056eb6e9cbbbfefe6f4e148d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66574005"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405818"
 ---
 # <a name="turn-on-network-protection"></a>ネットワーク保護を有効にする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **適用対象:**
+
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Microsoft Defender ウイルス対策
 
 **プラットフォーム**
+
 - Windows
+- Linux \(用 [のネットワーク保護に関する記事を参照してください](network-protection-linux.md)\)
+- macOS の macOS \([のネットワーク保護を](network-protection-macos.md)参照してください\)
 
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -96,7 +100,6 @@ ms.locfileid: "66574005"
 
 ネットワーク保護を有効または無効にするか、監査モードを有効にする前に、[Microsoft Defender マルウェア対策プラットフォームを最新バージョンに更新](https://support.microsoft.com/topic/update-for-microsoft-defender-antimalware-platform-92e21611-8cf1-8e0e-56d6-561a07d144cc)します。
 
-
 ### <a name="microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャー
 
 #### <a name="microsoft-defender-for-endpoint-baseline-method"></a>Microsoft Defender for Endpoint 基準計画メソッド
@@ -104,7 +107,7 @@ ms.locfileid: "66574005"
 1. Microsoft エンドポイント マネージャー管理センター (https://endpoint.microsoft.com).
 2. **エンドポイント セキュリティ のセキュリティ** > **ベースライン** > **Microsoft Defender for Endpointベースライン** に移動します。
 3. [ **プロファイルの作成**] を選択し、プロファイルの名前を指定して、[ **次へ**] を選択します。
-4. [**構成設定]** セクションで、[**攻撃面の縮小規則**] > [**ブロック**]、[**有効にする]**、または [**ネットワーク保護を有効** にする **監査**] の順に選択します。 **[次へ]** を選択します。
+4. [**構成設定]** セクションで、[**攻撃面の縮小規則**] > [**ブロック**]、[**有効にする]**、または [**ネットワーク保護を有効** にする **監査**] の順に選択します。 [**次へ**] を選択します。
 5. 組織で必要に応じて、適切な **スコープ タグ** と **割り当てを** 選択します。
 7. すべての情報を確認し、[ **作成**] を選択します。
 
@@ -131,7 +134,7 @@ ms.locfileid: "66574005"
 
 4. **[Endpoint Protection** > **の基本]** に移動し、プロファイルの名前を指定して、[**次へ**] を選択します。
 
-5. [**構成設定]** セクションで、**Microsoft Defender Exploit Guard** > **Network フィルターネットワーク****保護** > **の** > 有効化または監査に移動 **します**。 **[次へ]** を選択します。
+5. [**構成設定]** セクションで、**Microsoft Defender Exploit Guard** > **Network フィルターネットワーク****保護** > **の** > 有効化または監査に移動 **します**。 [**次へ**] を選択します。
 
 6. 組織で必要に応じて、適切な **スコープ タグ**、 **割り当て**、 **適用規則** を選択します。 管理者は、より多くの要件を設定できます。
 
@@ -180,11 +183,10 @@ ms.locfileid: "66574005"
    - **Block**
    - **監査**
    - **Disabled**
-   
-6. 残りの手順を完了し、ポリシーを保存します。 
+
+6. 残りの手順を完了し、ポリシーを保存します。
 
 7. リボンで [ **展開** ] を選択し、ポリシーをコレクションに展開します。
-
 
 > [!IMPORTANT]
 > Configuration Managerから Exploit Guard ポリシーをデプロイすると、展開を削除しても、Exploit Guard の設定はクライアントから削除されません。 `Delete not supported`は、クライアントの Exploit Guard 展開を削除すると、Configuration Manager クライアントの ExploitGuardHandler.log に記録されます。 <!--CMADO8538577-->
@@ -208,6 +210,10 @@ ms.locfileid: "66574005"
 ## <a name="see-also"></a>関連項目
 
 - [ネットワーク保護](network-protection.md)
+
+- [Linux のネットワーク保護](network-protection-linux.md)
+
+- [macOS のネットワーク保護](network-protection-macos.md)
 
 - [ネットワーク保護と TCP の 3 方向ハンドシェイク](network-protection.md#network-protection-and-the-tcp-three-way-handshake)
 

@@ -12,21 +12,19 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft 365 管理センターで組織の Microsoft Whiteboard を設定する方法について説明します。
-ms.openlocfilehash: cbffaaf0573ce5763c200b96630af3fbb2f73218
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 12c16c428d6cd03459d6de4bb4e372d471b1ba36
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942938"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369829"
 ---
 # <a name="manage-access-to-microsoft-whiteboard-for-your-organization"></a>組織の Microsoft Whiteboard へのアクセスを管理する
 
 >[!NOTE]
 > この記事は、Whiteboard を使用するエンタープライズ組織または教育機関に適用されます。 米国政府機関の GCC High 環境については、「 [GCC High 環境用の Microsoft Whiteboard へのアクセスを管理する](manage-whiteboard-access-gcc-high.md)」を参照してください。
 
-Microsoft Whiteboard は、人、コンテンツ、アイデアが集まるビジュアル コラボレーション キャンバスです。 現在、Whiteboard は Azure for Enterprise および Education のお客様で実行されています。 ホワイトボードは、OneDrive for Businessの上で実行されるように切り替え中です。 この移行により、多くの新機能が追加され、任意の Office ドキュメントと同じくらい簡単にホワイトボードを作成、共有、検出、管理できます。
-
-ホワイトボードは、該当する Microsoft 365 テナントに対して自動的に有効になります。 
+Microsoft Whiteboard は、人、コンテンツ、アイデアが集まるビジュアル コラボレーション キャンバスです。 OneDrive for Businessの Microsoft Whiteboard は、該当する Microsoft 365 テナントに対して既定で有効になっています。 テナント全体のレベルで有効または無効にすることができます。 **また、Azure Active Directory 管理センター** > **の Enterprise アプリケーション** で **Microsoft Whiteboard Services** が有効になっていることを確認する必要もあります。
 
 ホワイトボードは、SOC 1、SOC 2、ISO 27001、HIPAA、EU モデル条項などのグローバル標準に準拠しています。 
 
@@ -35,9 +33,6 @@ Whiteboard には、次の管理者設定が必要です。
 - ホワイトボードは、Microsoft 365 管理センターでグローバルに有効にする必要があります。
 
 - このコマンドレットは<code>Set-SPOTenant -IsWBFluidEnabled</code>[、SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) を使用して有効にする必要があります。
-
->[!NOTE]
-> OneDrive for Business ストレージのロールアウトが進行中です。 Microsoft 365 管理センターに移動すると、テナントが既にOneDrive for Businessに移行されている場合、OneDrive for Businessストレージをオプトインまたはオプトアウトするオプションは無効になります。
 
 Whiteboard へのアクセスは、次の方法で制御できます。
 

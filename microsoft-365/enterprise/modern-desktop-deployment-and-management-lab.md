@@ -15,24 +15,24 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 ms.custom: ''
-description: WindowsとOffice展開ラボ キットにアクセスする場所について説明します。
-ms.openlocfilehash: 63ec41e1865647caac60aa6fe91f69ed6c878e74
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+description: Windows および Office 展開ラボ キットにアクセスする場所について説明します。
+ms.openlocfilehash: fcb0b24480c61dcd5d3856aa800d6a30566d3b02
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115919"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433680"
 ---
 # <a name="windows-and-office-365-deployment-lab-kit"></a>Windows と Office 365 展開ラボ キット
 
-WindowsとOffice 365の展開ラボ キットは、Windows 10 EnterpriseまたはWindows 11 Enterpriseを実行するデスクトップの展開と管理を計画、テスト、検証するのに役立ちます。Microsoft 365 Apps for enterprise。 キット内のラボでは、Microsoft Endpoint Configuration Manager、OneDrive、Windows Autopilot などを使用します。 このキットは、デスクトップ アップグレードの準備をしている組織に強くお勧めします。 分離された環境として、ラボは、デプロイ ツールの更新プログラムの探索や、デプロイ関連の自動化のテストにも最適です。
+Windows と Office 365 の展開ラボ キットは、Windows 10 EnterpriseまたはWindows 11 EnterpriseおよびMicrosoft 365 Apps for enterpriseを実行するデスクトップの展開と管理を計画、テスト、検証するのに役立ちます。 このキットのラボでは、Microsoft Endpoint Configuration Manager、OneDrive、Windows Autopilot などを使用しています。 このキットは、デスクトップ アップグレードの準備をしている組織に強くお勧めします。 分離された環境として、ラボは、デプロイ ツールの更新プログラムの探索や、デプロイ関連の自動化のテストにも最適です。
 
 ラボには、次の 2 つのバージョンが無料でダウンロードできます。  
 
 |Windows 10 ラボ|Windows 11 ラボ|
 |---|---|
-|[Win 10 ラボ環境](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Win 11 ラボ環境](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_05.09.zip)|
-|[Win 10 ラボ ガイド](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_guides.zip)|[Win 11 ラボ ガイド](https://download.microsoft.com/download/9/d/9/9d9e278e-a1ea-4704-85e1-cb24f3806f45/Win11_Lab_Guides_05.09.zip)|
+|[Win 10 ラボ環境](https://download.microsoft.com/download/8/5/e/85e007b0-1f3e-460c-bd0a-5a8c6ec490b5/Win10_21H2_lab.zip)|[Win 11 ラボ環境](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Microsoft365DeviceLabKit.zip)|
+|[Win 10 ラボ ガイド](https://download.microsoft.com/download/b/d/4/bd4f430b-8cd1-4a07-97b1-c32100fce7ae/Win_10_21H2_lab_guides.zip)|[Win 11 ラボ ガイド](https://download.microsoft.com/download/5/0/b/50bbe36a-9291-4339-9dcc-2a444fcd1659/Win11_SetUp_Guide_08.05.zip)|
 
 ## <a name="a-complete-lab-environment"></a>完全なラボ環境
 
@@ -41,8 +41,8 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 |Windows 10 ラボ|Windows 11 ラボ|
 |---|---|
 |Windows 10 Enterpriseバージョン 21H2|Windows 11 Enterprise|
-|Microsoft Endpoint Configuration Managerバージョン 2203|Microsoft Endpoint Configuration Managerバージョン 2203|
-|Windows 10 用 Windows アセスメント & デプロイメント キット|Windows 11のWindows評価と展開キット|
+|Microsoft Endpoint Configuration Manager、バージョン 2103|Microsoft Endpoint Configuration Manager バージョン 2203|
+|Windows 10 用 Windows アセスメント & デプロイメント キット|windows Assessment and Deployment Kit for Windows 11|
 |Windows Server 2019|Windows Server 2022|
 
 ラボは、次の目的で試用版に接続するようにも設計されています。
@@ -62,35 +62,35 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 - エンドポイントの分析
 - 更新プログラムの配信を最適化する
 
-### <a name="deploy-windows"></a>Windowsのデプロイ
+### <a name="deploy-windows"></a>Windows を展開する
 
 - Configuration Managerの OS 展開タスク シーケンス
 - Windows Autopilot
 
 ### <a name="service-windows"></a>サービス Windows
 
-- グループ ポリシーを使用したサービス Windows
-- Microsoft Intuneを使用したサービス Windows
-- Configuration Managerを使用したWindowsのサービス
+- グループ ポリシーを使用した Windows のサービス
+- Microsoft Intuneを使用した Windows のサービス
+- Configuration Managerを使用した Windows のサービス
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise を展開する
 
 - クラウドマネージドデプロイ
 - ローカルで管理されたデプロイ
 - AD に参加していないデバイスでのMicrosoft 365 Apps for enterprise展開
-- Configuration Managerを使用したマネージド デプロイのEnterprise
-- Microsoft Intuneを使用したマネージド デプロイのEnterprise
+- Configuration Managerを使用したエンタープライズマネージドデプロイ
+- Microsoft Intuneを使用したエンタープライズマネージドデプロイ
 - Configuration Managerを使用したサービス Microsoft 365 Apps for enterprise
 - Intuneを使用したサービス Microsoft 365 Apps for enterprise
 - Microsoft Intuneを使用した LOB の展開と管理
-- Microsoft Teamsのデプロイ
+- Microsoft Teams を展開する
 - 割り当てフィルター
 
-### <a name="managing-microsoft-edge"></a>Microsoft Edgeの管理
+### <a name="managing-microsoft-edge"></a>Microsoft Edge の管理
 
 - Edge の展開と更新
 - IE モード
-- 新しいタブ ページEnterpriseセットアップする
+- エンタープライズの新しいタブ ページをセットアップする
 
 ### <a name="security-and-compliance"></a>セキュリティとコンプライアンス
 
@@ -105,11 +105,11 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 
 
 > [!NOTE]
-> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 仮想クライアントは、ラボのアクティブ化の 90 日後に期限切れになります。 仮想サーバーの有効期限は 2022 年 9 月 11 日です。 新しいバージョンのラボは、有効期限が切れる前に公開されます。 
+> ブロードバンド インターネット接続を使用してこのコンテンツをダウンロードし、自動プロビジョニングに約 30 分かかります。 ラボ環境では、少なくとも 16 GB の使用可能なメモリと 150 GB の空きディスク領域が必要です。 最適なパフォーマンスを実現するために、32 GB の使用可能なメモリと 300 GB の空き領域が推奨されます。 Windows クライアント仮想マシンの有効期限は、ラボのアクティブ化から 90 日後です。 ラボの新しいバージョンは、2022 年 11 月 5 日以前に公開されます。 
 
 ## <a name="additional-guidance"></a>追加のガイダンス
 
-- [Windows クライアントデプロイリソースとドキュメント](/windows/deployment)
+- [Windows クライアントの展開リソースとドキュメント](/windows/deployment)
 - [Microsoft Mechanics による「デスクトップの展開」シリーズのビデオ](https://www.aka.ms/watchhowtoshift)
 - [Microsoft Endpoint Configuration Manager OS の展開](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 - [Microsoft 365 Apps の展開ガイド](/deployoffice/deployment-guide-microsoft-365-apps)
@@ -120,4 +120,4 @@ WindowsとOffice 365の展開ラボ キットは、Windows 10 Enterpriseまた�
 - [Microsoft 365 の概要](https://www.microsoft.com/microsoft-365/default.aspx)
 - [Microsoft 365 for business](https://products.office.com/business/office)
 - [Enterprise Mobility + Security の概要](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-- [ビジネス向けのWindows](https://www.microsoft.com/windows/business)
+- [Windows for Business](https://www.microsoft.com/windows/business)

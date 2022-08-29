@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d283876f8e68943d45ab2dbca4ef8455a5dce038
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9a8d2e5533afe8d9a7d5dd2effe1646de8dc974d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949073"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328917"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用したインシデント対応
 
@@ -165,7 +165,7 @@ Microsoft 365 Defenderのセキュリティ操作 (SecOps) の例を次に示し
 毎月のタスクには、次のものが含まれます。
 
 - [AIR 設定](m365d-configure-auto-investigation-response.md)の確認
-- [セキュリティ スコア](microsoft-secure-score-improvement-actions.md)と[脅威&脆弱性管理の](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)確認
+- [セキュリティスコア](microsoft-secure-score-improvement-actions.md)と[Microsoft Defender 脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)の確認
 - IT セキュリティ管理チェーンへのレポート
 
 四半期ごとのタスクには、最高情報セキュリティ責任者 (CISO) に対するセキュリティ結果のレポートとブリーフィングを含めることができます。
@@ -222,8 +222,8 @@ Microsoft 製品全体の SecOps の詳細については、次のリソース�
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-email-notification-settings.png" alt-text="Microsoft 365 Defender ポータルのインシデント メール通知の [通知の設定] ページのスクリーンショット。" lightbox="../../media/get-incident-notifications/incidents-email-notification-settings.png":::
 
-5. **[次へ]** を選択します。 [ **受信者]** ページで、インシデント通知を受信する電子メール アドレスを追加します。 新しい各メール アドレスを入力した後、[ **追加]** を選択します。 通知をテストし、受信者が受信トレイで受信することを確認するには、[ **テストメールの送信**] を選択します。
-6. **[次へ]** を選択します。 [ **ルールの確認** ] ページで、ルールの設定を確認し、[ **ルールの作成**] を選択します。 受信者は、設定に基づいて電子メールでインシデント通知の受信を開始します。
+5. [**次へ**] を選択します。 [ **受信者]** ページで、インシデント通知を受信する電子メール アドレスを追加します。 新しい各メール アドレスを入力した後、[ **追加]** を選択します。 通知をテストし、受信者が受信トレイで受信することを確認するには、[ **テストメールの送信**] を選択します。
+6. [**次へ**] を選択します。 [ **ルールの確認** ] ページで、ルールの設定を確認し、[ **ルールの作成**] を選択します。 受信者は、設定に基づいて電子メールでインシデント通知の受信を開始します。
 
 既存のルールを編集するには、ルールの一覧からルールを選択します。 ルール名が表示されたウィンドウで、[ **ルールの編集]** を選択し、[ **基本**]、[ **通知の設定]**、[ **受信者]** ページで変更を行います。
 

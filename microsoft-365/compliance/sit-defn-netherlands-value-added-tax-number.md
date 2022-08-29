@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: オランダの付加価値税番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 478f2086a29e610f098f64b48c3debd9a30e22cd
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: eb1db00d5f34d7591cc7f9ff54cba917781d7884
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996657"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367667"
 ---
 # <a name="netherlands-value-added-tax-number"></a>オランダ付加価値税番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -58,7 +50,7 @@ ms.locfileid: "66996657"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_netherlands_value_added_tax_number` がパターンに一致するコンテンツを検出した。
 - `Keywords_netherlands_value_added_tax_number` のキーワードを検出した。

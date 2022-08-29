@@ -12,23 +12,26 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: コンプライアンスと、Microsoft Whiteboard でプライバシー設定を構成する方法について説明します。
-ms.openlocfilehash: 7f5026115b1d15b05dcf5dbb57293b22bf573c61
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 665586ed6f0e5667252fd7c1b5884aac5a116faf
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942474"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369117"
 ---
 # <a name="configure-privacy-settings-in-microsoft-whiteboard"></a>Microsoft Whiteboard でプライバシー設定を構成する
 
 >[!NOTE]
 > お客様またはユーザーが、既定のプライバシー設定、オプションの接続エクスペリエンス、診断データの収集方法について詳しく知りたい場合は、 [Microsoft Whiteboard のプライバシーとコンプライアンス](https://support.microsoft.com/office/privacy-and-compliance-ed9f0de9-71be-44c2-837d-e0f448660be1)に誘導します。
 
-組織の Microsoft Whiteboard 管理者である場合は、次の操作を制御できます。
+組織の Microsoft Whiteboard 管理者である場合は、次の設定を制御できます。
 
 - ユーザーのデバイスで実行されている Whiteboard クライアント ソフトウェアについて、どのレベルの診断データが収集され、Microsoft に送信されます。
 
 - Whiteboard のオプションの接続エクスペリエンスをユーザーが利用できるかどうか。
+
+プライバシー設定を構成するには、まず、組織で Whiteboard が有効になっていることを確認する必要があります。 詳細については、「 [ホワイトボードへのアクセスの管理](manage-whiteboard-access-organizations.md)」を参照してください。
+
 
 診断データのレベルを構成するには、管理者アカウントで[Microsoft 365 管理センター](/microsoft-365/admin/admin-overview/admin-center-overview)にサインインします。 管理センターのホーム ページで、[ **すべての>設定>組織の設定>ホワイトボードを表示する**] に移動します。
 
@@ -38,17 +41,17 @@ ms.locfileid: "66942474"
 
 組織内のデバイスで実行されている Whiteboard クライアント ソフトウェアについて Microsoft に収集および送信される診断データのレベルを選択できます。 オプションの診断データは、Microsoft 365 管理センターの設定を変更しない限り、Microsoft に送信されます。 オプションの診断データを送信するよう選択した場合は、必須の診断データも含まれています。
 
-**必須** または **省略可能** に加えて、**どちらも選択しません**。 このオプションを選択した場合、ユーザーのデバイスで実行されている Whiteboard クライアント ソフトウェアに関する診断データは Microsoft に送信されません。 ただし、このオプションを使用すると、ユーザーが Whiteboard を使用しているときに発生する可能性がある問題を検出、診断、修復する Microsoft の機能が大幅に制限されます。
+**必須** または **省略可能** に加えて、どちらも選択 **しません**。 このオプションを選択した場合、ユーザーのデバイスで実行されている Whiteboard クライアント ソフトウェアに関する診断データは Microsoft に送信されません。 ただし、このオプションを使用すると、ユーザーが Whiteboard を使用しているときに発生する可能性がある問題を検出、診断、修復する Microsoft の機能が大幅に制限されます。
 
-組織の資格情報 (職場または学校アカウントとも呼ばれる) を使用して Whiteboard にサインインしている場合、ユーザーはデバイスの診断データ レベルを変更できません。 ただし、個人の outlook.com メール アドレスなどの Microsoft アカウントを使用して Whiteboard にサインインしている場合は、[ **設定] > [プライバシーとセキュリティ]** に移動して、デバイスの診断データ レベルを変更できます。
+組織の資格情報 (職場または学校アカウントとも呼ばれる) を使用して Whiteboard にサインインしている場合、ユーザーはデバイスの診断データ レベルを変更できません。 ただし、個人の outlook.com メール アドレスなどの Microsoft アカウントを使用して Whiteboard にサインインしている場合は、[ **設定] > [プライバシーとセキュリティ]** に移動することで、デバイスの診断データ レベルを変更できます。
 
 ## <a name="optional-connected-experiences-setting-for-your-organization"></a>組織のオプションの接続エクスペリエンス設定
 
 Whiteboard でオプションの接続エクスペリエンスをユーザーが利用できるようにするかどうかを選択できます。 これらの接続エクスペリエンスは、Microsoft 365 管理センターで設定を変更しない限り、ユーザーが利用できます。 
 
-この接続エクスペリエンスが違うのは、ユーザーの組織と Microsoft との商業契約の対象ではないためです。 オプションの接続エクスペリエンスは Microsoft がユーザーに直接提供しており、[オンライン サービス使用条件](https://www.microsoft.com/licensing/product-licensing/products)ではなく [Microsoft サービス規約](https://www.microsoft.com/servicesagreement)に準拠しています。
+これらのコネクテッド エクスペリエンスは、組織の Microsoft との商用契約の対象ではないため、異なります。 オプションの接続エクスペリエンスは Microsoft がユーザーに直接提供しており、[オンライン サービス使用条件](https://www.microsoft.com/licensing/product-licensing/products)ではなく [Microsoft サービス規約](https://www.microsoft.com/servicesagreement)に準拠しています。
 
-これらのオプションの接続エクスペリエンスをユーザーが利用できるように選択した場合でも、ユーザーは **[設定] > [プライバシーとセキュリティ]** に移動してグループとして無効にすることができます。 ユーザーは、組織の資格情報 (職場または学校アカウントとも呼ばれます) を使用して Whiteboard にサインインしている場合にのみ選択できます。個人の outlook.com メール アドレスなど、Microsoft アカウントでサインインしている場合は選択できません。
+これらのオプションの接続エクスペリエンスをユーザーが利用できるように選択した場合でも、ユーザーは **[設定] > [プライバシーとセキュリティ]** に移動してグループとして無効にすることができます。 ユーザーは、組織の資格情報 (職場または学校アカウントとも呼ばれます) を使用して Whiteboard にサインインしている場合にのみ、この選択を行うことができます。 個人の outlook.com メール アドレスなどの Microsoft アカウントでサインインしている場合、ユーザーはプライバシー設定を変更できません。
 
 ## <a name="required-diagnostic-data-events-collected-by-whiteboard"></a>Whiteboard によって収集された必要な診断データ イベント
 
@@ -71,7 +74,7 @@ Microsoft Whiteboard が別のアプリケーションまたはプロセスか�
 
 **Intentional.Whiteboard.Init.DisplayWhiteboard**
 
-Microsoft Whiteboard がセッションごとにクライアントに実際に表示されるときに初めて収集されます。 この情報は、起動の問題をキャッチするために重要です。 Microsoft は、Microsoft Whiteboard が想定どおりに動作していることを保証するために、このデータを使用して問題を診断しています。
+セッションごとに Microsoft Whiteboard がクライアントに初めて表示されるときに収集されます。 この情報は、起動の問題をキャッチするために重要です。 Microsoft は、Microsoft Whiteboard が想定どおりに動作していることを保証するために、このデータを使用して問題を診断しています。
 
 - **IsPrelaunched** – 起動前の状態
 - **IsProtocolActivation** – アプリケーション起動の種類
@@ -105,7 +108,7 @@ Microsoft Whiteboard のユーザー/セッション/ホワイトボードごと
 Microsoft Whiteboard が起動するたびに収集されます。 この情報は、ユーザー構成の設定に関連するエラーをキャッチするために重要です。 Microsoft は、Microsoft Whiteboard が想定どおりに動作していることを保証するために、このデータを使用して問題を診断しています。
 
 - **ActivePen** – ペン モードの状態
-- **CollectFullTelemetryWithoutSignIn** – サインインの有効化のない完全なテレメトリ コレクション
+- **CollectFullTelemetryWithoutSignIn** – サインインを有効にしない完全なテレメトリ コレクション
 - **DefaultWhiteboardBackgroundColor** – 既定のボードの背景色
 - **DefaultWhiteboardBackgroundPattern** – 既定のボードの背景パターン
 - **FlightStatus** – フライトの状態

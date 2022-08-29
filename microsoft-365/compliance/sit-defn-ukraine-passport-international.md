@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ウクライナパスポートの国際機密情報の種類エンティティ定義。
-ms.openlocfilehash: 333475ad89f8437c046a572ae5377fb030b173fe
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a383fea21990437199287f3e212debe8530d1521
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996582"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67370191"
 ---
 # <a name="ukraine-passport-international"></a>ウクライナのパスポート国際番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 

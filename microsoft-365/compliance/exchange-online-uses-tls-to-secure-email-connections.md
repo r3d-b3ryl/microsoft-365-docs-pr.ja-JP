@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Exchange Onlineと Microsoft 365 がトランスポート層セキュリティ (TLS) と Forward Secrecy (FS) を使用して電子メール通信をセキュリティで保護する方法について説明します。 Microsoft for Exchange Onlineによって発行された証明書に関する情報も取得します。
-ms.openlocfilehash: 93f71e38e3063aeec0c423dbfea25ac463a3e46f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 127e72fd756754b11cf27316a006fab08fc459fb
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641562"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432333"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>メール接続をセキュリティで保護するために、Exchange Online が TLS を使用する方法
 
@@ -31,9 +31,9 @@ Exchange Onlineと Microsoft 365 がトランスポート層セキュリティ (
   
 ## <a name="tls-basics-for-microsoft-365-and-exchange-online"></a>Microsoft 365 と Exchange Online の TLS の基本
 
-トランスポート層セキュリティ (TLS) と、TLS に先立つ SSL は、セキュリティ証明書を使用してコンピューター間の接続を暗号化することによって、ネットワークを介した通信のセキュリティを確保する暗号化プロトコルです。 TLS は Secure Sockets Layer (SSL) に取って代わるものであり、多くの場合、SSL 3.1 と呼ばれます。 Exchange Online TLS を使用して、Exchange サーバー間の接続と、Exchange サーバーと、オンプレミスの Exchange サーバーや受信者のメール サーバーなどの他のサーバー間の接続を暗号化します。 接続が暗号化されると、その接続を介して送信されたすべてのデータは、暗号化されたチャネルを介して送信されます。 ただし、TLS で暗号化された接続を介して送信されたメッセージを転送する場合、そのメッセージは必ずしも暗号化されるとは限りません。 TLS はメッセージを暗号化せず、接続のみを暗号化します。
+トランスポート層セキュリティ (TLS) と、TLS に先立つ SSL は、セキュリティ証明書を使用してコンピューター間の接続を暗号化することによって、ネットワークを介した通信のセキュリティを確保する暗号化プロトコルです。 TLS は Secure Sockets Layer (SSL) に取って代わるものであり、多くの場合、SSL 3.1 と呼ばれます。 Exchange Online TLS を使用して、Exchange サーバー間の接続と、Exchange サーバーと、オンプレミスの Exchange サーバーや受信者のメール サーバーなどの他のサーバー間の接続を暗号化します。 接続が暗号化されると、その接続を介して送信されたすべてのデータは、暗号化されたチャネルを介して送信されます。 ただし、TLS 暗号化接続を介して送信されたメッセージを TLS 暗号化をサポートしていない受信者組織に転送する場合、そのメッセージは必ずしも暗号化されるとは限りません。 TLS はメッセージを暗号化せず、接続のみを暗号化します。
   
-メッセージを暗号化する場合は、メッセージの内容を暗号化する暗号化テクノロジを使用します。 たとえば、Microsoft Purview Message Encryptionまたは S/MIME を使用できます。 [Office 365でのメッセージの暗号化については、「Office 365の電子メール](email-encryption.md)[暗号化](ome.md)」と「メッセージ暗号化」を参照してください。
+メッセージを暗号化する場合は、メッセージの内容を暗号化する暗号化テクノロジを使用します。 たとえば、Microsoft Purview Message Encryptionまたは S/MIME を使用できます。 [Office 365でのメッセージの暗号化については、「Office 365での暗号化](email-encryption.md)Email」[](ome.md)と「メッセージの暗号化」を参照してください。
   
 Microsoft とオンプレミスの組織、またはパートナーなどの別の組織間の通信のセキュリティで保護されたチャネルを設定する場合は、TLS を使用します。 Exchange Online常に最初に TLS を使用してメールをセキュリティで保護しようとしますが、相手が TLS セキュリティを提供していない場合は使用できません。 *コネクタ* を使用して、オンプレミス サーバーまたは重要なパートナーに対するすべてのメールをセキュリティで保護する方法を確認してください。
 
@@ -67,7 +67,7 @@ Exchange Onlineで使用される証明書情報を次の表に示します。 �
 |:-----|:-----|
 |証明機関のルート発行者|DigiCert CA - 1|
 |証明書名|mail.protection.outlook.com|
-|Organization|Microsoft Corporation|
+|組織|Microsoft Corporation|
 |組織単位|www.digicert.com|
 |証明書キーの強度|2048|
 

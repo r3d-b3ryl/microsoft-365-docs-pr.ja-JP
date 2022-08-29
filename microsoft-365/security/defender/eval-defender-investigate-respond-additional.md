@@ -24,12 +24,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 01a263569da09807c96160c32fda719bd2575994
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 64e200acf8726a69e6f71784334345e5603b9677
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748477"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384538"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロット環境でインシデント対応機能をMicrosoft 365 Defenderしてみてください
 
@@ -157,7 +157,7 @@ Microsoft 365 Defender ポータルのクイック起動時に **、インシデ
 
     b. テスト デバイスをテスト ドメインに参加させます。
 
-    c. [Windows Defender ウイルス対策をオンにします](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 Windows Defender ウイルス対策を有効にできない場合は、[このトラブルシューティング トピックを](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)参照してください。
+    c. [Microsoft Defender ウイルス対策を有効にします](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)。 Microsoft Defender ウイルス対策を有効にできない場合は、 [このトラブルシューティング トピックを](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)参照してください。
 
     d. [Microsoft Defender for Endpointにオンボード](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)します。
 
@@ -177,7 +177,7 @@ Microsoft 365 Defender ポータルのクイック起動時に **、インシデ
 
    1. [ **クエリ] > [新規**] を選択します。
 
-   1. [**高度な検索**] の [**電子メール** グループ] で、[**EmailEvents**] をダブルクリックします。 クエリ ウィンドウにこれが表示されます。
+   1. [**高度な捜索**] **の [Email** グループ] で、[**EmailEvents**] をダブルクリックします。 クエリ ウィンドウにこれが表示されます。
 
       ```console
       EmailEvents

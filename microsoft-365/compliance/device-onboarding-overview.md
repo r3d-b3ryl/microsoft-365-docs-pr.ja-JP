@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする
-ms.openlocfilehash: 630a159327dc5ce177caf819b21e77ec40929866
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 867a3e356592c054dd3badbc960a5ae4b7edc80a
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66635581"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343461"
 ---
 # <a name="onboard-windows-10-and-windows-11-devices-into-microsoft-365-overview"></a>Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要
 
@@ -133,13 +133,13 @@ ms.locfileid: "66635581"
 
 6. 以下の表から、従うべき適切な手順を選択します。
 
-トピック | 説明
-:---|:---
-[グループ ポリシーを使用して Windows 10 または 11 デバイスをオンボードする](device-onboarding-gp.md) | グループ ポリシーを使用して構成パッケージをデバイスに展開します。
-[Microsoft Endpoint Configuration Manager を使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-sccm.md) | Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1606 または Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1602 以前のいずれかを使用して、構成パッケージをデバイスに展開できます。
-[モバイル デバイス管理ツールを使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-mdm.md) | モバイル デバイス管理ツールまたは Microsoft Intune を使用して、構成パッケージをデバイスに展開します。
-[ローカル スクリプトを使用した Windows 10 または 11 デバイスのオンボード](device-onboarding-script.md) | ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
-[非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード](device-onboarding-vdi.md) | 構成パッケージを使用して VDI デバイスを構成する方法について説明します。
+|トピック | 説明|
+|:---|:---|
+[Intune](device-onboarding-mdm.md) | モバイル デバイス管理ツールまたは Microsoft Intune を使用して、構成パッケージをデバイスに展開します。|
+|[Configuration Manager](device-onboarding-sccm.md) | Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1606 または Microsoft Endpoint Configuration Manager (現在のブランチ) バージョン 1602 以前のいずれかを使用して、構成パッケージをデバイスに展開できます。|
+|[グループ ポリシー](device-onboarding-gp.md) | グループ ポリシーを使用して構成パッケージをデバイスに展開します。
+[ローカル スクリプト](device-onboarding-script.md) | ローカル スクリプトを使用してエンドポイントに構成パッケージを展開する方法について説明します。
+[仮想デスクトップ インフラストラクチャ (VDI) デバイス](device-onboarding-vdi.md) | 構成パッケージを使用して VDI デバイスを構成する方法について説明します。
 
 ## <a name="see-also"></a>関連項目
 

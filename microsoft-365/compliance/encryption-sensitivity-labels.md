@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: アクセスと使用を制限してデータを保護する暗号化のための秘密度ラベルを構成します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ab08f733be374710674bfae65f4a0b56e952a199
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
-ms.translationtype: HT
+ms.openlocfilehash: 72cf2196add9e6c1ee58475c492136ca9be7ce37
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66970220"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434375"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>秘密度ラベルを使用して暗号化を適用してコンテンツへのアクセスを制限する
 
@@ -91,7 +91,7 @@ ms.locfileid: "66970220"
 
 4.  **[暗号化]** ページで、次のいずれかのオプションを選択します。
     
-    - **ファイルが暗号化されている場合は暗号を削除します**: このオプションは、Azure Information Protection の統合ラベル付けクライアントでのみでサポートされています。 このオプションを選択して組み込みのラベル付けを使用すると、そのラベルがアプリに表示されないか、表示されても暗号の変更は行われないことがあります。
+    - **ファイルまたは電子メールが暗号化されている場合は暗号化を削除** する: このオプションは、Azure Information Protection統合ラベル付けクライアントでのみサポートされます。 このオプションを選択して組み込みのラベル付けを使用すると、そのラベルがアプリに表示されないか、表示されても暗号の変更は行われないことがあります。
         
         このシナリオの詳細については、[ をご覧ください。ラベルが適用された場合の既存の暗号化への影響については ](#what-happens-to-existing-encryption-when-a-labels-applied) のセクションをご覧ください。 この設定により、ユーザーが十分な権限を持っていない場合に適用できない機密度ラベルが作成される可能性があることを理解することが重要です。
     
@@ -102,6 +102,9 @@ ms.locfileid: "66970220"
         これらの設定の手順は、次の「[暗号化設定の構成](#configure-encryption-settings)」セクションにあります。
 
 ### <a name="what-happens-to-existing-encryption-when-a-labels-applied"></a>ラベルが適用された場合の既存の暗号化への影響
+
+> [!NOTE]
+> **[ファイルまたは電子メールが暗号化されている場合は暗号化を削除する] オプションは**、Azure Information Protection統合ラベル付けクライアントでのみサポートされます。 メール [フロー ルールを構成](define-mail-flow-rules-to-encrypt-email.md#use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-microsoft-purview-message-encryption)することで、メールに対しても同じ効果を実現できます。
 
 暗号化されていないコンテンツに秘密度ラベルを適用する場合、選択可能な暗号化オプションを適用した場合の結果は、オプションの名前通りのものとなります。 たとえば、**[ファイルとメールを暗号化する]** を選択しなかった場合、コンテンツは暗号化されません。
 

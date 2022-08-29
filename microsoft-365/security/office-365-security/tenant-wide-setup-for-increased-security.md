@@ -21,12 +21,12 @@ ms.custom:
 description: このトピックでは、Microsoft 365 環境のセキュリティに影響を与えるテナント全体の設定に推奨される構成について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3b4d0580a8807dd9801b082a8326e4a17b65f5f
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2a48d3c935a5c4afb1006c31c586744fd6964b94
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773139"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385575"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>セキュリティ強化のために、Microsoft 365 テナントを構成する
 
@@ -49,10 +49,10 @@ Microsoft 365 Defender ポータルには、環境を保護する機能が含ま
 
 |分野|既定のポリシー?|推奨事項|
 |---|---|---|
-|**フィッシング詐欺対策**|はい|「[EOP とDefender for Office 365でフィッシング対策の保護設定を構成する」で説明するように、既定のフィッシング対策ポリシーを構成](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)します。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[Microsoft 365 のフィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md)</li><li>[Microsoft Defender for Office 365で推奨されるフィッシング対策ポリシー設定](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [偽装に関する分析情報](impersonation-insight.md)</li><li>詳細については、「[EOP のスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。</li><li>[テナント許可/ブロック リストを管理します](tenant-allow-block-list.md)。</li></ul>|
+|**フィッシング詐欺対策**|はい|「[EOP とDefender for Office 365でフィッシング対策の保護設定を構成する」で説明するように、既定のフィッシング対策ポリシーを構成](protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)します。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[Microsoft 365 のフィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md)</li><li>[Microsoft Defender for Office 365で推奨されるフィッシング対策ポリシー設定](recommended-settings-for-eop-and-office365.md#anti-phishing-policy-settings-in-microsoft-defender-for-office-365)</li><li> [偽装に関する分析情報](impersonation-insight.md)</li><li>詳細については、「[EOP のスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。</li><li>[テナント許可/ブロック リストを管理します](manage-tenant-allow-block-list.md)。</li></ul>|
 |**マルウェア対策エンジン**|はい|「EOP でマルウェア対策の保護設定を構成する」で説明するように [、既定のマルウェア対策ポリシーを構成](protect-against-threats.md#part-1---anti-malware-protection-in-eop)します。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[マルウェア対策保護](anti-malware-protection.md)</li><li>[推奨されるマルウェア対策ポリシー設定](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings)</li><li>[マルウェア対策ポリシーを構成する](configure-anti-malware-policies.md)</li></ul>|
-|**Defender for Office 365 の安全な添付ファイル**|いいえ|安全な添付ファイルのグローバル設定を構成し、安全な添付ファイルポリシーを作成します。「[Microsoft Defender for Office 365で安全な添付ファイルの設定を構成する」を](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)参照してください。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[推奨される安全な添付ファイルの設定](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Microsoft Defender for Office 365の安全な添付ファイル](safe-attachments.md)</li><li>[安全な添付ファイル機能のポリシーを設定する](set-up-safe-attachments-policies.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Microsoft 365 E5 の安全なドキュメント](safe-docs.md)</li></ul>|
-|**Microsoft Defender for Office 365 の安全なリンク**|いいえ|「[Microsoft Defender for Office 365でセーフ リンクの設定を構成する」で説明されているように、安全なリンク ポリシーを](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)作成します。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[推奨されるセーフ リンク設定](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[安全なリンク ポリシーを設定する](set-up-safe-links-policies.md)</li><li>[Microsoft Defender for Office 365 の安全なリンク](safe-links.md)</li></ul>|
+|**Defender for Office 365 の安全な添付ファイル**|不要|安全な添付ファイルのグローバル設定を構成し、安全な添付ファイルポリシーを作成します。「[Microsoft Defender for Office 365で安全な添付ファイルの設定を構成する」を](protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)参照してください。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[推奨される安全な添付ファイルの設定](recommended-settings-for-eop-and-office365.md#safe-attachments-settings)</li><li>[Microsoft Defender for Office 365の安全な添付ファイル](safe-attachments.md)</li><li>[安全な添付ファイル機能のポリシーを設定する](set-up-safe-attachments-policies.md)</li><li>[SharePoint、OneDrive、Microsoft Teams 用の安全な添付ファイル](mdo-for-spo-odb-and-teams.md)</li><li>[Microsoft 365 E5 の安全なドキュメント](safe-docs.md)</li></ul>|
+|**Microsoft Defender for Office 365 の安全なリンク**|不要|「[Microsoft Defender for Office 365でセーフ リンクの設定を構成する」で説明されているように、安全なリンク ポリシーを](protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)作成します。 <p> 詳しくは、以下の資料を参照してください。 <ul><li>[推奨されるセーフ リンク設定](recommended-settings-for-eop-and-office365.md#safe-links-settings)</li><li>[安全なリンク ポリシーを設定する](set-up-safe-links-policies.md)</li><li>[Microsoft Defender for Office 365 の安全なリンク](safe-links.md)</li></ul>|
 |**スパム対策 (メール フィルター)**|はい|「EOP でスパム対策の設定を構成する」で説明するように既定[のスパム対策ポリシーを構成](protect-against-threats.md#part-3---anti-spam-protection-in-eop)する <p> 詳しくは、以下の資料を参照してください。 <ul><li>[推奨されるスパム対策ポリシー設定](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)</li><li>[EOP のスパム対策保護](anti-spam-protection.md)</li><li>[EOP でのスパム対策ポリシーの構成](configure-your-spam-filter-policies.md)</li></ul>|
 |***Email認証***|はい|Email認証では、DNS レコードを使用して、メッセージの送信元と送信者に関する検証可能な情報を電子メール メッセージに追加します。 Microsoft 365 では既定のドメイン (onmicrosoft.com) の電子メール認証が自動的に構成されますが、Microsoft 365 管理者はカスタム ドメインの電子メール認証を構成することもできます。 次の 3 つの認証方法が使用されます。 <ul><li>Sender Policy Framework (または SPF)。</li><ul><li>セットアップについては、「 [スプーフィングを防ぐため、Microsoft 365 で SPF を設定する](set-up-spf-in-office-365-to-help-prevent-spoofing.md)」を参照してください。</li></ul> <li>DomainKeys によって識別されたメール (DKIM)。</li><ul><li>[カスタム ドメインから送信された送信メールを検証するには、DKIM を使用する方法に関するページを参照してください](use-dkim-to-validate-outbound-email.md)。</li><li>DKIM を構成したら、Microsoft 365 Defender ポータルで有効にします。</li></ul><li>ドメイン ベースのメッセージ認証、レポート、および準拠 (DMARC)。</li><ul><li>DMARC セットアップの場合は [、DMARC を使用して Microsoft 365 で電子メールを検証します](use-dmarc-to-validate-email.md)。</li></ul></ul>|
 

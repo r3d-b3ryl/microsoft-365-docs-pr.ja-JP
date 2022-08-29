@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender でアラートを調査する
 description: デバイス、ユーザー、メールボックス間で見られるアラートを調査します。
-keywords: インシデント, アラート, 調査, 分析, 応答, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365
+keywords: インシデント、アラート、調査、分析、応答、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -21,12 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 ms.technology: m365d
-ms.openlocfilehash: 6da9ec9f0d59d04d61d4a957f5a914b06b140fac
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: ecc62eb22f60a13d249374f1d00896ad0e1693ea
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099219"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328719"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Microsoft 365 Defender でアラートを調査する
 
@@ -150,7 +150,7 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
      - **未設定** (既定値)。
      - **脅威** の種類を持つ真の陽性。 この分類は、実際の脅威を正確に示すアラートに使用します。 この脅威の種類を指定すると、セキュリティ チームに脅威パターンが表示され、組織を防御するアクションが警告されます。
      - アクティビティの種類を含む **、情報に関する期待される** アクティビティ。 このオプションは、技術的に正確で、通常の動作またはシミュレートされた脅威アクティビティを表すアラートに使用します。 一般に、これらのアラートは無視しますが、今後、アクティビティが実際の攻撃者またはマルウェアによってトリガーされる同様のアクティビティに対してこれらのアラートが想定されます。 このカテゴリのオプションを使用して、セキュリティ テスト、赤いチーム アクティビティ、信頼できるアプリやユーザーからの予期される異常な動作のアラートを分類します。
-     - **悪意のある** アクティビティがない場合や誤報があった場合でも作成されたアラートの種類に対する誤検知。 このカテゴリのオプションを使用して、通常のイベントまたはアクティビティとして誤って識別されるアラートを悪意のある、または疑わしいものとして分類します。 実際の脅威のキャッチにも役立つ可能性がある"Informational、expected activity" のアラートとは異なり、通常は、これらのアラートを再び表示したくない場合があります。 アラートを偽陽性として分類すると、検出品質を向上Microsoft 365 Defender役立ちます。
+     - **悪意** のあるアクティビティがない場合や誤報があった場合でも作成されたアラートの種類に対する誤検知。 このカテゴリのオプションを使用して、通常のイベントまたはアクティビティとして誤って識別されるアラートを悪意のある、または疑わしいものとして分類します。 実際の脅威のキャッチにも役立つ可能性がある"Informational、expected activity" のアラートとは異なり、通常は、これらのアラートを再び表示したくない場合があります。 アラートを偽陽性として分類すると、検出品質を向上Microsoft 365 Defender役立ちます。
 - アラートに関するコメント。
 
 >[!NOTE]
@@ -201,6 +201,9 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
     ただし、ルールの条件を満たすアラートの種類にルールを適用するには、 **IOC の条件に基づいて [任意のアラートの種類**] を選択します。
  
     IOC は、アラートをトリガーするファイル、プロセス、スケジュールされたタスク、その他の証拠の種類などのインジケーターです。
+    
+    > [!NOTE]
+    > "カスタム検出" ソースによってトリガーされるアラートを抑制することはできなくなりました。 このアラートの抑制ルールを作成することはできません。
      
 3. [ **IOC** ] セクションで、[ **任意の IOC** ] を選択して、アラートの原因となった "証拠" に関係なくアラートを抑制します。 
 
@@ -218,9 +221,9 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 
     3. 要件に従って 、この "証拠" のプロパティを編集または削除できます (サポートされている場合はワイルドカードを使用)。
 
-    4. ファイルとプロセス以外の AMSI スクリプト、WMI イベント、スケジュールされたタスクは、証拠の種類ドロップダウン リストから選択できる新しく追加された証拠の種類の一部です。
+    4. ファイルとプロセス以外に、マルウェア対策スキャン インターフェイス (AMSI) スクリプト、Windows Management Instrumentation (WMI) イベント、スケジュールされたタスクは、証拠の種類ドロップダウン リストから選択できる新しく追加された証拠の種類の一部です。
     :::image type="content" source="../../media/investigate-alerts/other-evidence-types.png" alt-text="他の種類の証拠のスクリーンショット。" lightbox="../../media/investigate-alerts/other-evidence-types.png":::
-
+    
     5. 別の IOC を追加するには、[ **フィルターの追加]** をクリックします。 
     > [!NOTE]
     > アラートの種類を抑制するには、ルール条件に少なくとも 1 つの IOC を追加する必要があります。
@@ -248,8 +251,11 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
     :::image type="content" source="../../media/investigate-alerts/suppression-2-choose-iocs.png" lightbox="../../media/investigate-alerts/suppression-2-choose-iocs.png" alt-text="抑制ルールの作成が成功したスクリーンショット。 ":::
 
 8.  新しい抑制アラート機能は既定で使用できます。 <br> ただし、[**設定] > [エンドポイント] > [アラート抑制]** に移動し、[**新しい抑制ルールの作成が有効]** トグルをオフにすることで、Microsoft 365 Defender ポータルで以前のエクスペリエンスに戻すことができます。 
+
  
     :::image type="content" source="../../media/investigate-alerts/suppression-toggle.png" lightbox="../../media/investigate-alerts/suppression-toggle.png" alt-text="抑制ルール作成機能のオン/オフを切り替えるトグルのスクリーンショット。":::
+    > [!NOTE]
+    > まもなく、新しいアラート抑制エクスペリエンスのみが利用できるようになります。 前のエクスペリエンスに戻ることはできません。
 
 9.  **既存のルールを編集する:** <br> 関連するルールを選択し、[ルールの **編集]** をクリックすると、Microsoft Defender ポータルで常にルールの条件と新しいルールまたは既存のルールの範囲を追加または変更できます。    
     既存のルールを編集するには、[ **新しい抑制ルールの作成が有効]** トグルが有効になっていることを確認します。         
@@ -272,7 +278,7 @@ Microsoft 365 Defenderアラートは、Microsoft Defender for Endpoint、Micros
 
 - ユーザーが高リスクとしてタグ付けされていない
 
-両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、アラートが解決された後、Microsoft Teamsに投稿されます。
+両方が true の場合、SecOps はアラートを正当な移動としてマークし、解決します。 通知は、アラートが解決された後、Microsoft Teams に投稿されます。
 
 ### <a name="connect-power-automate-to-microsoft-defender-for-cloud-apps"></a>Power Automate をMicrosoft Defender for Cloud Appsに接続する
 

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: オーストリアの付加価値税の機密情報の種類エンティティ定義。
-ms.openlocfilehash: b4d6841e857d81c42255eec1184e51623f78059f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9ed66fd971857afad9cf5047643f60e58eb2e7f2
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950684"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368036"
 ---
-# <a name="austria-value-added-tax"></a>オーストリア付加価値税
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
+# <a name="austria-value-added-tax"></a>オーストリアの付加価値税
 
 ## <a name="format"></a>フォーマット
 
@@ -51,7 +43,7 @@ ms.locfileid: "66950684"
 - 省略可能な領域
 - 2 桁または 3 桁
 - 省略可能な領域
-- 4 桁
+- 4 桁の数字
 - 省略可能な領域
 - 1 桁または 2 桁
 
@@ -61,12 +53,12 @@ ms.locfileid: "66950684"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - この関数Func_Austria_Value_Added_Tax、パターンに一致するコンテンツを検索します。
 - Keyword_Austria_Value_Added_Taxのキーワードが見つかりました。
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという中程度の信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
 - この関数Func_Austria_Value_Added_Tax、パターンに一致するコンテンツを検索します。
 

@@ -1,6 +1,6 @@
 ---
-title: レポート メッセージ アドインを展開して構成する
-description: セキュリティ管理者向け Microsoft のフィッシング レポート アドインを展開して構成する手順
+title: レポート メッセージ アドインをデプロイして構成する方法
+description: セキュリティ管理者向け Microsoft のフィッシング レポート アドインを展開して構成する手順。
 search.product: ''
 search.appverid: ''
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: m365-guidance-templates
 ms.topic: how-to
 ms.technology: mdo
-ms.openlocfilehash: 1225f7d3f731ee7791808e4442497511078b150e
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: dfe0050fa65ee1197bfcbd0f848c1fa7a32f9827
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106999"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420964"
 ---
 # <a name="deploy-and-configure-the-report-message-add-in-to-users"></a>レポート メッセージ アドインを展開し、ユーザーに構成します。
 

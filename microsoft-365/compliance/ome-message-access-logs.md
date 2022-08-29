@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: アクセス ログは、暗号化されたメッセージ ポータルから取得された暗号化されたメッセージに対して使用できます。
-ms.openlocfilehash: 0877463ce317f4d38a3251f75b349fb8abb5a027
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: fe45757eb6ca89f55a1b796d3752b1e3bcb1b89b
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942632"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420834"
 ---
 # <a name="encrypted-message-portal-activity-log-by-microsoft-purview-advanced-message-encryption"></a>Microsoft Purview Advanced Message Encryption による暗号化されたメッセージ ポータル アクティビティ ログ
 
@@ -29,7 +29,7 @@ ms.locfileid: "66942632"
 
 ## <a name="enabling-message-access-audit-logs-in-powershell"></a>PowerShell でメッセージ アクセス監査ログを有効にする
 
-PowerShell を使用してアクセス ログExchange Online有効にすることができます。 Set-IrmConfigurationの *-EnablePortalTrackingLogs* パラメーターは、暗号化されたメッセージ ポータルにアクセスする監査ログを有効にするかどうかを指定します。 有効な値は次のとおりです。
+[PowerShell V2 モジュールExchange Online](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)使用して、アクセス ログを有効にすることができます。 Set-IrmConfigurationの *-EnablePortalTrackingLogs* パラメーターは、暗号化されたメッセージ ポータルにアクセスする監査ログを有効にするかどうかを指定します。 有効な値は次のとおりです。
 
 - $true: 監査機能を有効にします。
 - $false: 監査機能を無効にする

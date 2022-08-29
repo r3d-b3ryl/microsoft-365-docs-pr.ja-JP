@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessment テーブル
 description: 高度なハンティング スキーマの DeviceTvmSecureConfigurationassessment テーブルで、セキュリティ評価イベントについて説明します。 これらのイベントは、デバイス情報、セキュリティ構成の詳細、影響、およびコンプライアンス情報を提供します。
-keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, 脅威& 脆弱性の管理, TVM, デバイス管理, セキュリティ構成, DeviceTvmSecureConfigurationassessment
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, 脅威&脆弱性管理, TVM, デバイス管理, セキュリティ構成, DeviceTvmSecureConfigurationassessment
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 43f44458cde7d466d1097034e7bcc9d0e3072745
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: b3d5fdfb79d814855f119abb42593a6066d6019a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530705"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329445"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -34,8 +34,7 @@ ms.locfileid: "61530705"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-
-`DeviceTvmSecureConfigurationAssessment` テーブルの各行には、[脅威および脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) からの特定のセキュリティ構成に対する評価イベントが含まれます。 このリファレンスを使用して最新の評価結果を確認し、デバイスが準拠しているかどうかを確認します。
+テーブル内の`DeviceTvmSecureConfigurationAssessment`各行には、[Microsoft Defender 脆弱性の管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)からの特定のセキュリティ構成の評価イベントが含まれています。 このリファレンスを使用して最新の評価結果を確認し、デバイスが準拠しているかどうかを確認します。
 
 このテーブルを [DeviceTvmSecureConfigurationassessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) テーブル `ConfigurationId` と結合すると、構成評価の結果でテーブルの列から `ConfigurationDescription` 構成のテキストの説明を `DeviceTvmSecureConfigurationAssessmentKB` 表示できます。
 
@@ -77,4 +76,4 @@ DeviceTvmSecureConfigurationAssessment
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
-- [脅威および脆弱性管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender 脆弱性の管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

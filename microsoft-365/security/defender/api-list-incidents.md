@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 03fbcb70588158919b54c9153b5d8d32d416cc75
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 1ec15654bc87645c615e022e0622127efb32a608
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172141"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383944"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Microsoft 365 Defenderでインシデント API を一覧表示する
 
@@ -107,7 +107,7 @@ assignedTo|インシデントの所有者、または所有者が割り当てら
 classification|インシデントの仕様。 プロパティの値は、 *不明*、 *FalsePositive*、 *TruePositive です。*|不明
 決定|インシデントの決定を指定します。 プロパティの値は次のとおりです。 *NotAvailable*、 *Apt*、 *Malware*、 *SecurityPersonnel*、 *SecurityTesting*、 *UnwantedSoftware*、 *Other*|NotAvailable
 detectionSource|検出のソースを指定します。|Defender for Cloud Apps
-status|インシデントを分類する ( *アクティブ* または *解決済み*)。 インシデントに対する対応を整理して管理するのに役立ちます。|アクティブ
+status|インシデントを分類する ( *アクティブ* または *解決済み*)。 インシデントに対する対応を整理して管理するのに役立ちます。|Active
 severity|資産への影響の可能性を示します。 重大度が高いほど、影響は大きくなります。 通常、重大度の高い項目には、最も迅速な注意が必要です。 <p> 次のいずれかの値: *Informational*、*Low*、*Medium *、High。*|中
 tags|インシデントに関連付けられているカスタム タグの配列。たとえば、共通の特性を持つインシデントのグループにフラグを設定します。|\[\]
 comments|インシデントの管理時に secops によって作成されたコメントの配列 (分類の選択に関する追加情報など)。|\[\]
@@ -124,7 +124,7 @@ creationTime|アラートが最初に作成された時刻。|2020-09-06T14:46:5
 lastUpdatedTime|バックエンドでアラートが最後に更新された時刻。|2020-09-06T14:46:57.2433333Z
 resolvedTime|アラートが解決された時刻。|2020-09-10T05:22:59Z
 firstActivity|バックエンドでアクティビティが更新されたことをアラートが最初に報告した時刻。|2020-09-04T05:22:59Z
-タイトル|各アラートで使用できる文字列値を簡単に識別します。|ランサムウェアのアクティビティ
+title|各アラートで使用できる文字列値を簡単に識別します。|ランサムウェアのアクティビティ
 説明|各アラートを記述する文字列値。|ユーザーテスト User2 (testUser2@contoso.com) は、一般的でない拡張子 *herunterladen* で終わる複数の拡張子を持つ 99 ファイルを操作しました。 これは、異常な数のファイル操作であり、ランサムウェア攻撃の可能性を示しています。
 category|攻撃がキル チェーンに沿ってどれだけ進行したかを示す視覚的および数値のビュー。 [MITRE ATT&CK™ フレームワーク](https://attack.mitre.org/)にアラインされます。|影響
 status|アラートを分類します ( *新規*、 *アクティブ*、または *解決済み*)。 アラートに対する応答を整理して管理するのに役立ちます。|新規
@@ -144,13 +144,13 @@ mitreTechniques|[MITRE ATT&CK](https://attack.mitre.org/)™ フレームワー�
 フィールド名|説明|値の例
 ---|---|---
 DeviceId|Microsoft Defender for Endpointで指定されているデバイス ID。|24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId|[Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis)で指定されているデバイス ID。 ドメインに参加しているデバイスでのみ使用できます。|null
+aadDeviceId|[Azure Active Directory](/azure/active-directory/fundamentals/active-directory-whatis) で指定されているデバイス ID。 ドメインに参加しているデバイスでのみ使用できます。|null
 deviceDnsName|デバイスの完全修飾ドメイン名。|user5cx.middleeast.corp.contoso.com
 osPlatform|デバイスが実行されている OS プラットフォーム。|WindowsServer2016
 osBuild|デバイスが実行されている OS のビルド バージョン。|14393
 rbacGroupName|デバイスに関連付けられている [ロールベースのアクセス制御](/azure/role-based-access-control/overview) (RBAC) グループ。|WDATP-Ring0
 firstSeen|デバイスが最初に表示された時刻。|2020-02-06T14:16:01.9330135Z
-healthStatus|デバイスの正常性状態。|アクティブ
+healthStatus|デバイスの正常性状態。|Active
 riskScore|デバイスのリスク スコア。|高
 エンティティ|特定のアラートの一部または関連として識別されたすべてのエンティティ。|\[\] (以下のエンティティ フィールドの詳細を参照してください)
 
@@ -174,19 +174,19 @@ accountName|entityType が *User* の場合に使用できます。|testUser2
 domainName|entityType が *User* の場合に使用できます。|europe.corp.contoso
 userSid|entityType が *User* の場合に使用できます。|S-1-5-21-1721254763-462695806-1538882281-4156657
 aadUserId|entityType が *User* の場合に使用できます。|fc8f7484-f813-4db2-afab-bc1507913fb6
-userPrincipalName|entityType が *UserMailBoxMailMessage*// の場合に使用できます。|testUser2@contoso.com
+userPrincipalName|entityType が *User*/*MailBox*/*MailMessage* の場合に使用できます。|testUser2@contoso.com
 mailboxDisplayName|entityType が *MailBox* の場合に使用できます。|User2 をテストする
-mailboxAddress|entityType が *UserMailBoxMailMessage*// の場合に使用できます。|testUser2@contoso.com
+mailboxAddress|entityType が *User*/*MailBox*/*MailMessage* の場合に使用できます。|testUser2@contoso.com
 clusterBy|entityType が  *MailCluster* の場合に使用できます。|件名;P2SenderDomain;Contenttype
-sender|entityType が *UserMailBoxMailMessage*// の場合に使用できます。|user.abc@mail.contoso.co.in
+sender|entityType が *User*/*MailBox*/*MailMessage* の場合に使用できます。|user.abc@mail.contoso.co.in
 受信者|entityType が *MailMessage* の場合に使用できます。|testUser2@contoso.com
 subject|entityType が *MailMessage* の場合に使用できます。|\[EXTERNAL\] Attention
 deliveryAction|entityType が *MailMessage* の場合に使用できます。|配信
 securityGroupId|entityType が  *SecurityGroup* の場合に使用できます。|301c47c8-e15f-4059-ab09-e2ba9ffd372b
 securityGroupName|entityType が  *SecurityGroup* の場合に使用できます。|ネットワーク構成演算子
-registryHive|entityType が  *Registry* の場合に使用できます。|HKEYLOCALMACHINE\_\_|
+registryHive|entityType が  *Registry* の場合に使用できます。|HKEY\_ローカル\_コンピューター|
 Registrykey|entityType が  *Registry* の場合に使用できます。|SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType|entityType が  *Registry* の場合に使用できます。|String
+registryValueType|entityType が  *Registry* の場合に使用できます。|文字列
 registryValue|entityType が  *Registry* の場合に使用できます。|31-00-00-00
 deviceId|エンティティに関連するデバイスの ID (存在する場合)。|986e5df8b73dacd43c8917d17e523e76b13c75cd
 
@@ -343,7 +343,7 @@ GET https://api.security.microsoft.com/api/incidents
                     "firstActivity": "2020-09-06T12:15:07.7272048Z",
                     "lastActivity": "2020-09-06T12:15:07.7272048Z",
                     "title": "'Mimikatz' hacktool was detected",
-                    "description": "Readily available tools, such as hacking programs, can be used by unauthorized individuals to spy on users. When used by attackers, these tools are often installed without authorization and used to compromise targeted machines.\n\nThese tools are often used to collect personal information from browser records, record key presses, access email and instant messages, record voice and video conversations, and take screenshots.\n\nThis detection might indicate that Windows Defender Antivirus has stopped the tool from being installed and used effectively. However, it is prudent to check the machine for the files and processes associated with the detected tool.",
+                    "description": "Readily available tools, such as hacking programs, can be used by unauthorized individuals to spy on users. When used by attackers, these tools are often installed without authorization and used to compromise targeted machines.\n\nThese tools are often used to collect personal information from browser records, record key presses, access email and instant messages, record voice and video conversations, and take screenshots.\n\nThis detection might indicate that Microsoft Defender Antivirus has stopped the tool from being installed and used effectively. However, it is prudent to check the machine for the files and processes associated with the detected tool.",
                     "category": "Malware",
                     "status": "New",
                     "severity": "Low",

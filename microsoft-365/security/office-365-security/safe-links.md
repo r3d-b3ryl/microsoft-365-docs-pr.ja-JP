@@ -28,12 +28,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: 悪意のある URL を使用するフィッシングやその他の攻撃から組織を保護するための Defender for Office 365 の安全なリンク保護について説明します。 Teams の安全なリンクを見つけ、安全なリンク メッセージのグラフィックを表示します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cc393372e5e8dace8ae42a2f748dfb24a7e7a5ed
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 5507ac8dbedf1bd3adaf8fcebb95d71810940cb2
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086519"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385211"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 の安全なリンク
 
@@ -111,7 +111,7 @@ Microsoft Defender for Office 365 のセーフ リンクを使用して悪意の
 条件または例外は 1 回だけ使用できますが、条件または例外には複数の値を含めることができます。同じ条件または例外に複数の値がある場合、OR ロジック (_\<recipient1\>_ または _\<recipient2\>_ など) が用されます。別の条件や例外がある場合は、AND ロジック (_\<recipient1\>_ や _\<member of group 1\>_ など) が適用されます。
 
 > [!IMPORTANT]
-> 複数の異なる種類の条件や例外は加算されません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+> 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
 >
 > - 受信者は次のとおりです: romain@contoso.com
 > - 受信者が次のメンバーの場合: Executive
@@ -275,7 +275,7 @@ Office アプリの安全なリンク保護には、次のクライアント要�
 ## <a name="block-the-following-urls-list-for-safe-links"></a>安全なリンクの [次の URL をブロックする] リスト
 
 > [!NOTE]
-> [テナント許可/ブロック リスト](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list) で URL エントリのブロックを管理できるようになりました。 "次の URL をブロックする"リストは非推奨のプロセスです。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。
+> [テナント許可/ブロック リスト](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) で URL エントリのブロックを管理できるようになりました。 "次の URL をブロックする"リストは非推奨のプロセスです。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。
 
 **[次の URL をブロックする]** のリストでは、次の場所で安全なリンク スキャンによって常にブロックされるリンクを定義します。
 
@@ -289,7 +289,7 @@ Office アプリの安全なリンク保護には、次のクライアント要�
 
 **注意**:
 
-- すべての場所でブロックされている URL の真のユニバーサル リストについては「[テナントの許可/禁止リストを管理する](tenant-allow-block-list.md)」を参照してください。
+- すべての場所でブロックされている URL の真のユニバーサル リストについては「[テナントの許可/禁止リストを管理する](manage-tenant-allow-block-list.md)」を参照してください。
 - **[次の URL をブロックする]** の制限:
   - エントリの最大数は 500 です。
   - エントリの最大長は 128 文字です。
@@ -313,7 +313,7 @@ Office アプリの安全なリンク保護には、次のクライアント要�
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>安全なリンクポリシーの「次の URL を書き換えない」リスト
 
 > [!NOTE]
-> [次の URL を書き換えない] リストのエントリは、メール フロー中に安全なリンクによってスキャンまたはラップされません。 [テナント許可/禁止リストで URL エントリを許可する](allow-block-urls.md#create-allow-url-entries) を使用して、メール フロー _および_ クリック時に安全なリンクで URL がスキャンされたり、ラップされないようにします。
+> [次の URL を書き換えない] リストのエントリは、メール フロー中に安全なリンクによってスキャンまたはラップされません。 [テナント許可/禁止リストで URL エントリを許可する](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-urls-in-the-submissions-portal) を使用して、メール フロー _および_ クリック時に安全なリンクで URL がスキャンされたり、ラップされないようにします。
 
 各安全なリンク ポリシーには、**[次の URL を書き換えない]** リストが含まれています。このリストを使用して、安全なリンクのスキャンによって書き換えられない URL を指定できます。 つまり、このリストでは、ポリシーに含まれているユーザーは、安全なリンクによってブロックされる指定された URL にアクセスできます。 さまざまな安全なリンク ポリシーで、異なるリストを構成できます。 ポリシーの処理は、最初の (最も優先度が高い) ポリシーがユーザーに適用された後に停止します。 そのため、複数のアクティブな安全なリンク ポリシーに含まれているユーザーには、「**次の URL を書き換えない**」リストが 1 つだけ適用されます。
 
@@ -325,7 +325,7 @@ Office アプリの安全なリンク保護には、次のクライアント要�
   - Microsoft Teams
   - Office Web Apps
 
-  あらゆる場所で許可される URL の真のユニバーサル リストについては「[テナントの許可/禁止リストの管理](tenant-allow-block-list.md)」を参照してください。 ただし、安全なリンク ポリシーで行う必要があるため、そこに追加された URL は安全なリンクの書き換えから除外されないことに注意してください。
+  あらゆる場所で許可される URL の真のユニバーサル リストについては「[テナントの許可/禁止リストの管理](manage-tenant-allow-block-list.md)」を参照してください。 ただし、安全なリンク ポリシーで行う必要があるため、そこに追加された URL は安全なリンクの書き換えから除外されないことに注意してください。
 
 - ユーザー エクスペリエンスを向上させるために、一般的に使用される内部 URL をリストに追加することを検討してください。 たとえば、Skype for Business や SharePoint などのオンプレミス サービスがある場合は、それらの URL を追加してスキャンから除外できます。
 - 既に「**安全なリンク ポリシーの次の URL を書き換えない**」エントリがある場合は、必ずリストを確認し、必要に応じてワイルドカードを追加してください。 たとえば、リストに `https://contoso.com/a` のようなエントリがあり、後で `https://contoso.com/a/b` のようなサブパスを含めることにしたとします。 新しいエントリを追加する代わりに、既存のエントリにワイルドカードを追加して、`https://contoso.com/a/*` になるようにします。

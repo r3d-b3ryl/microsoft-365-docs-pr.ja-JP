@@ -1,7 +1,7 @@
 ---
 title: サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 description: Microsoft Defender ウイルス対策に移行するときの一般的なエラーのトラブルシューティング
-keywords: イベント, エラー コード, ログ記録, トラブルシューティング, Microsoft Defender ウイルス対策, Windows Defender ウイルス対策, 移行
+keywords: イベント, エラー コード, ログ記録, トラブルシューティング, Microsoft Defender ウイルス対策, Windows Defender ウイルス対策, 移行, Microsoft Defender ウイルス対策
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c1fe1713909395c1c30af8089664e70598e91721
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: dff1fedf5f577aa0c0b5e6f3a787c03bf4e6173a
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923170"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384252"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-while-migrating-from-a-third-party-solution"></a>サード パーティのソリューションからの移行中に Microsoft Defender ウイルスのトラブルシューティングを行う
 
@@ -39,7 +39,7 @@ ms.locfileid: "65923170"
 
 1. タスク バーの **[検索** ] アイコンを選択し、イベント ビューアーを検索して、 *イベント ビューアー* アプリを開きます。
 
-    Microsoft Defender ウイルス対策に関する情報は、  **アプリケーションとサービス ログ** \> **の Microsoft** \> **Windows Windows** \> **Defender** にあります。
+    Microsoft Defender ウイルス対策に関する情報は、**アプリケーションとサービス ログ** \> **の Microsoft** \> **Windows** \> **Windows Defender** にあります。
 
 1. そこから、[**操作]** の下にある **[開く**] を選択します。
 
@@ -53,24 +53,24 @@ ms.locfileid: "65923170"
 
 イベント ID|ログ名|説明|ソース
 ---|---|---|---
-15|アプリケーション|Windows Defender の状態が正常にSECURITY_PRODUCT_STATE_OFFに更新されました。|Security Center
-5007|Microsoft-Windows-Windows Defender/Operational|Windows Defender ウイルス対策の構成が変更されました。 これが予期しないイベントの場合は、マルウェアの結果である可能性があるため、設定を確認する必要があります。 <p> **古い値:** Default\IsServiceRunning = 0x0 <p> **新しい値:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
-5010|Microsoft-Windows-Windows Defender/Operational|スパイウェアやその他の望ましくない可能性のあるソフトウェアの Windows Defender ウイルス対策スキャンは無効になっています。|Windows Defender
+15|アプリケーション|Windows Defender状態が正常にSECURITY_PRODUCT_STATE_OFFに更新されました。|Security Center
+5007|Microsoft-Windows-Windows Defender/Operational|Microsoft Defender ウイルス対策の構成が変更されました。 これが予期しないイベントの場合は、マルウェアの結果である可能性があるため、設定を確認する必要があります。 <p> **古い値:** Default\IsServiceRunning = 0x0 <p> **新しい値:** HKLM\SOFTWARE\Microsoft\Windows Defender\IsServiceRunning = 0x1|Windows Defender
+5010|Microsoft-Windows-Windows Defender/Operational|スパイウェアやその他の望ましくない可能性のあるソフトウェアの Microsoft Defender ウイルス対策スキャンは無効になっています。|Windows Defender
 
 ### <a name="how-to-tell-if-microsoft-defender-antivirus-wont-start-because-a-third-party-antivirus-is-installed"></a>サード パーティのウイルス対策がインストールされているため、Microsoft Defender ウイルス対策が開始されないかどうかを確認する方法
 
-Windows 10 または Windows 11 デバイスで、Microsoft Defender for Endpoint を使用せず、サードパーティのウイルス対策がインストールされている場合、Microsoft Defender ウイルス対策は自動的にオフになります。 サード パーティ製のウイルス対策がインストールされた Microsoft Defender for Endpoint を使用している場合、Microsoft Defender ウイルス対策はパッシブ モードで開始され、機能が低下します。
+Windows 10またはWindows 11 デバイスで、Microsoft Defender for Endpointを使用していない場合、サードパーティのウイルス対策がインストールされている場合、Microsoft Defender ウイルス対策は自動的にオフになります。 サード パーティ製のウイルス対策がインストールされたMicrosoft Defender for Endpointを使用している場合、Microsoft Defender ウイルス対策はパッシブ モードで開始され、機能が低下します。
 
 > [!TIP]
-> 前述のシナリオは、Windows 10 と Windows 11 にのみ適用されます。 他のバージョンの Windows では、サード パーティのセキュリティ ソフトウェアと共に実行されている Microsoft Defender ウイルス対策に [対する応答が異なります](microsoft-defender-antivirus-compatibility.md) 。
+> ここで説明したシナリオは、Windows 10とWindows 11にのみ適用されます。 他のバージョンの Windows では、サード パーティのセキュリティ ソフトウェアと共に実行されている Microsoft Defender ウイルス対策に [対する応答が異なります](microsoft-defender-antivirus-compatibility.md) 。
 
 #### <a name="use-services-app-to-check-if-microsoft-defender-antivirus-is-turned-off"></a>サービス アプリを使用して Microsoft Defender ウイルス対策がオフになっているかどうかを確認する
 
 Services アプリを開くには、タスク バーから **[検索** ] アイコンを選択し、サービスを検索 *します*。 services.msc と入力して、コマンド ラインからアプリを開 *く* こともできます。
 
-Microsoft Defender ウイルス対策に関する情報は、 **Windows Defender** \> **運用** の下のサービス アプリに一覧表示されます。 ウイルス対策サービス名は *Windows Defender ウイルス対策サービス* です。
+Microsoft Defender ウイルス対策に関する情報は、サービス アプリの **[運用Windows Defender**\>] に一覧表示されます。 ウイルス対策サービス名は *Microsoft Defender ウイルス対策サービス* です。
 
-アプリのチェック中に、 *Windows Defender ウイルス対策サービス* が手動に設定されていることがわかりますが、このサービスを手動で開始しようとすると、 *ローカル コンピューター上の Windows Defender ウイルス対策サービス サービスが開始され、停止したことを示す警告が表示されます。一部のサービスは、他のサービスまたはプログラムで使用されていない場合、自動的に停止します。*
+アプリのチェック中に、 *Microsoft Defender ウイルス対策サービス* が手動に設定されていることがわかりますが、このサービスを手動で開始しようとすると、 *ローカル コンピューター上の Microsoft Defender ウイルス対策サービス サービスが開始され、停止したことを示す警告が表示されます。一部のサービスは、他のサービスまたはプログラムで使用されていない場合、自動的に停止します。*
 
 これは、サードパーティのウイルス対策との互換性を維持するために、Microsoft Defender ウイルス対策が自動的にオフになっていることを示します。
 
@@ -88,11 +88,11 @@ GPresult.exe /h gpresult.html
 
 ##### <a name="if-security-settings-are-implemented-via-group-policy-gpo-at-the-domain-or-local-level-or-though-system-center-configuration-manager-sccm"></a>セキュリティ設定がドメインまたはローカル レベルでグループ ポリシー (GPO) を使用して実装されている場合、または System center Configuration Manager (SCCM) を使用する場合
 
-GPResults レポートの見出しの下に、 *Windows コンポーネント/Windows Defender ウイルス対策* の下に、Microsoft Defender ウイルス対策がオフになっていることを示す次のエントリのようなものが表示される場合があります。
+GPResults レポートの見出しの下に、 *Windows Components/Microsoft Defender ウイルス対策* の下に、Microsoft Defender ウイルス対策がオフになっていることを示す次のエントリのようなものが表示されることがあります。
 
 ポリシー|Setting|GPO を獲得する
 ---|---|---
-Windows Defender ウイルス対策を無効にする|Enabled|Win10-Workstations
+Microsoft Defender ウイルス対策を無効にする|Enabled|Win10-Workstations
 
 ###### <a name="if-security-settings-are-implemented-via-group-policy-preference-gpp"></a>グループ ポリシー設定 (GPP) を使用してセキュリティ設定を実装する場合
 
@@ -103,7 +103,7 @@ DisableAntiSpyware|-
 GPO を獲得する|Win10-Workstations
 結果: 成功|
 **全般**|
-Action|Update
+アクション|Update
 **Properties**|
 Hive|HKEY_LOCAL_MACHINE
 キー パス|SOFTWARE\Policies\Microsoft\Windows Defender
@@ -128,9 +128,9 @@ Hive|HKEY_LOCAL_MACHINE
 他のウイルス対策が現在アクティブでない場合、Microsoft Defender ウイルス対策は自動的に有効になります。 Microsoft Defender ウイルス対策を完全な機能で実行できるようにするには、サード パーティのウイルス対策を完全にオフにする必要があります。
 
 > [!WARNING]
-> *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Servicesの wdboot*、*wdfilter*、*wdnisdrv、wdnissvc*、*windefend* の *Windows Defender* の開始値を編集することを推奨するソリューションはサポートされておらず、システムのイメージを再作成することが強制される場合があります。 
+> *HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services* で *wdboot*、*wdfilter*、*wdnisdrv*、*wdnissvc*、*および windefend* のWindows Defender開始値を編集することを推奨するソリューションはサポートされておらず、システムのイメージを再作成することが強制される場合があります。
 
-パッシブ モードは、Microsoft Defender for Endpoint とサード パーティのウイルス対策を Microsoft Defender ウイルス対策と共に使用する場合に使用できます。 パッシブ モードでは、Microsoft Defender ウイルス対策はファイルをスキャンしてそれ自体を更新できますが、脅威は修復されません。 さらに、[エンドポイント データ損失防止 (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) がデプロイされていない限り、[リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md)による動作監視はパッシブ モードでは使用できません。
+パッシブ モードは、microsoft Defender ウイルス対策と共にMicrosoft Defender for Endpointおよびサードパーティのウイルス対策の使用を開始する場合に使用できます。 パッシブ モードでは、Microsoft Defender ウイルス対策はファイルをスキャンしてそれ自体を更新できますが、脅威は修復されません。 さらに、[エンドポイント データ損失防止 (DLP)](/microsoft-365/security/defender-endpoint/information-protection-in-windows-overview) がデプロイされていない限り、[リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md)による動作監視はパッシブ モードでは使用できません。
 
 Microsoft Defender ウイルス対策が自動的にオフに設定されている場合は、 [制限付き定期スキャン](limited-periodic-scanning-microsoft-defender-antivirus.md)と呼ばれるもう 1 つの機能をエンド ユーザーが使用できます。 この機能を使用すると、Microsoft Defender ウイルス対策は、限られた数の検出を使用して、サードパーティのウイルス対策と共に定期的にファイルをスキャンできます。
 

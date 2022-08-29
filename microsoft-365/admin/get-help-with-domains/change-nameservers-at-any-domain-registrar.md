@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: メールやSkype for Business Online などのサービスで独自のドメイン名を使用できるように、Microsoft 365 でドメインを追加して設定する方法について説明します。
-ms.openlocfilehash: e33bfad12c3785e95ca328c4f0e82ab640d549d0
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: fecd9a5171586eb61a96be7f8d4f1f6a422d212e
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085951"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67406170"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>ネーム サーバーを変更して任意のドメイン レジストラーで Microsoft 365 セットアップする
 
@@ -183,7 +183,7 @@ Microsoft 365 のドメインセットアップ ウィザードの最後の手�
 1. [ **レコードの追加]** を選択します。
 2. [ **カスタム DNS レコードの追加]** ウィンドウの **[種類** ] ドロップダウン リストから **CNAME (エイリアス)** を選択します。
 3. [ **ホスト名] ボックスまたは [エイリアス** ] ボックスに「www」と入力 **します**。
-4. [ **ポイントのアドレス** ] ボックスに、Web サイトの完全修飾ドメイン名 (FQDN) を入力します。 たとえば、 **contoso.5om** です。
+4. [ **ポイントのアドレス** ] ボックスに、Web サイトの完全修飾ドメイン名 (FQDN) を入力します。 たとえば **contoso.com** です。
 5. レコードの TTL 設定を変更する場合は、 **TTL** ドロップダウン リストから新しい長さの時間を選択します。 それ以外の場合は、手順 6 に進みます。
 6. **[保存]** を選択します。
 

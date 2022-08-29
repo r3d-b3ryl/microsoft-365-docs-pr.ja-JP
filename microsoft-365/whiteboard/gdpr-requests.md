@@ -12,18 +12,20 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard から個人情報をエクスポート、転送、または削除する方法について説明します。
-ms.openlocfilehash: 97b960082621c6a728740d5fd747da73540b2ac7
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 696e21ef3b48a9823554746fa7cc24b11e421af7
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943013"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369751"
 ---
 # <a name="manage-gdpr-data-subject-requests-in-microsoft-whiteboard"></a>Microsoft Whiteboard で GDPR データ主体の要求を管理する
 
 一般データ保護規則 (GDPR) は、組織によって収集された個人データを管理する権限をユーザーに付与します。 これらの権限は、データ主体要求 (DSR) を通じて実行できます。
 
 この記事では、Microsoft Whiteboard から個人情報をエクスポート、転送、または削除する方法について説明します。
+
+個人情報を管理するには、まず組織で Whiteboard が有効になっていることを確認する必要があります。 詳細については、「 [ホワイトボードへのアクセスの管理](manage-whiteboard-access-organizations.md)」を参照してください。
 
 ## <a name="export-a-whiteboard"></a>ホワイトボードをエクスポートする
 
@@ -45,7 +47,7 @@ iOS または Web で、次の手順を実行します。
 
 2. [**設定**] アイコンをクリックします。
 
-3. 次のいずれかの操作を行います。
+3. 次のいずれかの手順を実行します。
 
    - iOS 用ホワイトボードで、[ **イメージのエクスポート (png)]** を選択します。
 

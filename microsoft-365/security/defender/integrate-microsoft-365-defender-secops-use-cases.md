@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a039239545a5442592fe1a07f840cf75bebb0eca
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
+ms.openlocfilehash: 2df6e5a989ff46359d685cca3859aaf759280bef
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66012948"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328807"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  ユース ケースの開発とテスト
 
@@ -76,7 +76,7 @@ Runbook とプレイブックの作成プロセスを容易にするには、ユ
 
 ユース ケースを使用できるもう 1 つのシナリオは、脅威と脆弱性のスキャンです。 この例では、SOC では、資産のスキャンを含む承認されたプロセスを使用して、資産に対する脅威と脆弱性を修復する必要があります。
 
-アセットの脅威と脆弱性の管理の高レベルストーリーボードの例を次に示します。
+アセットのMicrosoft Defender 脆弱性の管理の大まかなストーリーボードの例を次に示します。
 
 :::image type="content" source="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png" alt-text="脅威と脆弱性の管理のユース ケース ワークフロー" lightbox="../../media/integrate-microsoft-365-defender-secops/example-use-case-workflow-storyboard-tvm.png":::
 
@@ -92,19 +92,19 @@ Runbook とプレイブックの作成プロセスを容易にするには、ユ
 
 たとえば、フィッシング対策シナリオの例では、SOC チームがこの表で検出した可能性があります。
 
-|SOC チーム|要件|要件を満たすユーザー|要件を満たすプロセス|関連するテクノロジ|識別されたギャップ|ユース ケース変更ログ|除外 (Y/N)|
+|SOC チーム|要件|要件を満たすPeople|要件を満たすプロセス|関連するテクノロジ|識別されたギャップ|ユース ケース変更ログ|除外 (Y/N)|
 |---|---|---|---|---|---|---|---|
-|脅威インテリジェンスと分析チーム|データ ソースは、脅威インテリジェンス エンジンに適切に供給されています。|脅威インテリジェンス アナリスト/エンジニア|データ フィードの要件が確立され、承認されたソースから脅威インテリジェンスがトリガーされる|Microsoft Defender for Identity、Microsoft Defender for Endpoint|脅威インテリジェンス チームは、自動化スクリプトを使用してMicrosoft 365 Defender API と脅威 Intel エンジンをリンクしませんでした|脅威エンジンにデータ ソースとしてMicrosoft 365 Defenderを追加する <p> ユース ケース実行ブックを更新する|N|
-|監視チーム|データ ソースが監視ダッシュボードに適切にフィードされている|階層 1,2 SOC アナリスト – & アラートの監視|セキュリティ & コンプライアンス センターのセキュリティ スコアを報告するためのワークフロー|[セキュリティ & コンプライアンス センターのアラート](/microsoft-365/security/office-365-security/alerts) <p> セキュア スコアの監視|SOC アナリストが、セキュリティスコアを向上させるための新しいフィッシングバリアント検出の成功を報告するメカニズムがない <p> [Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する](/microsoft-365/security/office-365-security/view-email-security-reports)|Reporting ワークフローにセキュリティスコアの改善を追跡するプロセスを追加する|N|
+|脅威インテリジェンスと分析チーム|データ ソースは、脅威インテリジェンス エンジンに適切に供給されています。|脅威インテリジェンス アナリスト/エンジニア|データ フィードの要件が確立され、承認されたソースから脅威インテリジェンスがトリガーされる|Microsoft Defender for Identity、Microsoft Defender for Endpoint|脅威インテリジェンス チームは、自動化スクリプトを使用してMicrosoft 365 Defender API と脅威 Intel エンジンをリンクしませんでした|脅威エンジンにデータ ソースとしてMicrosoft 365 Defenderを追加する <p> ユース ケース実行ブックを更新する|×|
+|監視チーム|データ ソースが監視ダッシュボードに適切にフィードされている|階層 1,2 SOC アナリスト – & アラートの監視|セキュリティ & コンプライアンス センターのセキュリティ スコアを報告するためのワークフロー|[セキュリティ & コンプライアンス センターのアラート](/microsoft-365/security/office-365-security/alerts) <p> セキュア スコアの監視|SOC アナリストが、セキュリティスコアを向上させるための新しいフィッシングバリアント検出の成功を報告するメカニズムがない <p> [Microsoft 365 Defender ポータルで電子メール セキュリティ レポートを表示する](/microsoft-365/security/office-365-security/view-email-security-reports)|Reporting ワークフローにセキュリティスコアの改善を追跡するプロセスを追加する|×|
 |エンジニアリングチームと SecOps チーム|変更制御の更新は、SOC チーム Runbook で行われます|Tier 2 SOC エンジニア|SOC チーム Runbook の変更制御通知手順|セキュリティ デバイスに対する承認済みの変更|SOC セキュリティ テクノロジへのMicrosoft 365 Defender接続を変更するには、承認が必要です|MICROSOFT DEFENDER FOR CLOUD APPS、Defender for Identity、Defender for Endpoint、Security & Compliance Center を SOC Runbook に追加する|Y|
 
-さらに、SOC チームは、上で説明した脅威と脆弱性の管理シナリオに関して、次の表に示す発見を行った可能性があります。
+さらに、SOC チームは、上で説明した Defender 脆弱性管理シナリオに関して、次の表に示す発見を行う可能性があります。
 
-|SOC チーム|要件|要件を満たすユーザー|要件を満たすプロセス|関連するテクノロジ|識別されたギャップ|ユース ケース変更ログ|除外 (Y/N)|
+|SOC チーム|要件|要件を満たすPeople|要件を満たすプロセス|関連するテクノロジ|識別されたギャップ|ユース ケース変更ログ|除外 (Y/N)|
 |---|---|---|---|---|---|---|---|
-|SOC 監視|承認済みネットワークに接続されているすべての資産が識別され、分類されます|SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など。|リスクに基づいて資産のカテゴリと属性を検出して一覧表示する一元化された資産管理システム。|ServiceNow またはその他の資産。 <br><br>[デバイス インベントリのMicrosoft 365](/microsoft-365/security/defender-endpoint/device-discovery)|検出された資産の割合は 70% のみです。 既知の資産に対してのみ有効な修復追跡Microsoft 365 Defender|Microsoft 365 Defenderに 100% のカバレッジを確保するための成熟した資産ライフサイクル管理サービス|N|
-|エンジニアリング & SecOps Teams|資産の高い影響と重大な脆弱性は、ポリシーに従って修復されます|SecOps エンジニア、SOC アナリスト: 脆弱性&コンプライアンス、セキュリティ エンジニアリング|高リスクおよび重大な脆弱性を分類するための定義済みプロセス|[脅威と脆弱性の管理ダッシュボード](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Defender for Endpoint は、Microsoft 推奨アクティビティの修復計画または実装なしで、影響が大きく、アラートが高いデバイスを特定しました|ポリシーごとに 30 日以内に修復アクティビティが必要な場合に、資産所有者に通知するワークフローを追加します。チケット発行システムを実装して、修復手順を資産所有者に通知します。|N|
-|監視Teams|脅威と脆弱性の状態は、会社のイントラネット ポータルを介して報告されます|階層 2 SOC アナリスト|資産の修復の進行状況を示すMicrosoft 365 Defenderから自動生成されたレポート|[セキュリティ & コンプライアンス センターのアラート](/microsoft-365/security/office-365-security/alerts) <p> セキュア スコアの監視|資産の脅威と脆弱性の状態に関して、ビューまたはダッシュボード レポートが資産所有者に伝達されません。|組織に対するリスクの高い重大な資産の脆弱性修復の状態を設定する自動化スクリプトを作成します。|N|
+|SOC 監視|承認済みネットワークに接続されているすべての資産が識別され、分類されます|SOC 監視、BU 所有者、アプリケーション所有者、IT 資産所有者など。|リスクに基づいて資産のカテゴリと属性を検出して一覧表示する一元化された資産管理システム。|ServiceNow またはその他の資産。 <br><br>[Microsoft 365 デバイス インベントリ](/microsoft-365/security/defender-endpoint/device-discovery)|検出された資産の割合は 70% のみです。 既知の資産に対してのみ有効な修復追跡Microsoft 365 Defender|Microsoft 365 Defenderに 100% のカバレッジを確保するための成熟した資産ライフサイクル管理サービス|×|
+|エンジニアリング & SecOps Teams|資産の高い影響と重大な脆弱性は、ポリシーに従って修復されます|SecOps エンジニア、SOC アナリスト: 脆弱性&コンプライアンス、セキュリティ エンジニアリング|高リスクおよび重大な脆弱性を分類するための定義済みプロセス|[ダッシュボードのMicrosoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)|Defender for Endpoint は、Microsoft 推奨アクティビティの修復計画または実装なしで、影響が大きく、アラートが高いデバイスを特定しました|ポリシーごとに 30 日以内に修復アクティビティが必要な場合に、資産所有者に通知するワークフローを追加します。チケット発行システムを実装して、修復手順を資産所有者に通知します。|×|
+|Teams の監視|脅威と脆弱性の状態は、会社のイントラネット ポータルを介して報告されます|階層 2 SOC アナリスト|資産の修復の進行状況を示すMicrosoft 365 Defenderから自動生成されたレポート|[セキュリティ & コンプライアンス センターのアラート](/microsoft-365/security/office-365-security/alerts) <p> セキュア スコアの監視|資産の脅威と脆弱性の状態に関して、ビューまたはダッシュボード レポートが資産所有者に伝達されません。|組織に対するリスクの高い重大な資産の脆弱性修復の状態を設定する自動化スクリプトを作成します。|×|
 
 これらのユース ケースの例では、テストでは、SOC チームの要件に、各チームの責任のベースラインとして確立されたいくつかのギャップが明らかにされました。 ユース ケースチェックリストは、SOC チームが新しいまたは既存の SOC 要件とのMicrosoft 365 Defender統合に備えるために、必要に応じて包括的にすることができます。 これは反復的なプロセスであるため、ユース ケース開発プロセスとユース ケース出力コンテンツは、学習した教訓を得て SOC の Runbook を自然に更新し、成熟させるのに役立ちます。
 

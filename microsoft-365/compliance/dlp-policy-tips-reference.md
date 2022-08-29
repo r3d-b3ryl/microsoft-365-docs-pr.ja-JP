@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: データ損失防止 (DLP) ポリシーにポリシー ヒントを追加して、DLP ポリシーと競合するコンテンツを操作していることをユーザーに通知する方法について説明します。
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 074283fbdf22d4a7ed645539f706a7b292c20485
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 3d48a51311be9bf3324399a582fbb39bc4c38b8d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66917279"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405774"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>データ損失防止ポリシーヒントのリファレンス
 
@@ -64,7 +64,7 @@ Outlook Web Access の DLP ポリシーのヒントは、DLP ポリシーの Exc
 
 ## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 以降では、一部の条件と例外についてのみポリシーヒントを表示できます
 
-現在、Outlook 2013 以降では、以下の条件と対応する例外を除き、条件や例外を含まないポリシーのポリシーヒントを示すことができます。
+現在、Outlook 2013 以降では、次に示す条件と対応する例外を除き、条件や例外が含まれていないポリシーのポリシーヒントを示すことができます。
 
 - コンテンツに含まれるもの (機密情報の種類に対してのみ機能します。 秘密度ラベルはサポートされていません)
 - コンテンツが共有されている
@@ -73,7 +73,7 @@ Outlook Web Access の DLP ポリシーのヒントは、DLP ポリシーの Exc
 
 ## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 以降およびデスクトップ上の Office アプリでは、一部の機密情報の種類についてのみポリシーヒントを示すサポート
 
-Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプリ (Word、Excel、PowerPoint) で DLP ポリシーのヒントを表示するために検出される、すぐに使用できる機密情報の種類の一覧は次のとおりです。
+Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプリ (Word、Excel、PowerPoint) で DLP ポリシーのヒントを表示するために検出される、すぐに使用できる機密情報の種類の一覧を次に示します。
 
 - ABA ルーティング番号
 - アルゼンチンの国民識別 (DNI) 番号
@@ -86,7 +86,7 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 - Azure IoT 接続文字列  
 - Azure Publish Setting Password  
 - Azure Redis Cache 接続文字列  
-- Azure SAS  
+- Azure の SAS  
 - Azure Service Bus接続文字列  
 - Azure Storage アカウント キー  
 - Azure Storage アカウント キー (汎用)  
@@ -175,11 +175,14 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 - 米国の個人納税者識別番号 (ITIN)
 - 米国の社会保障番号 (SSN)
 
-カスタムの機密情報の種類は、上記のすぐに使用できる機密情報の種類に加えて、DLP ポリシーのヒントでもサポートされることに注意してください。
+一部のカスタムの機密情報の種類は、上記のすぐに使用できる機密情報の種類に加えて、DLP ポリシーのヒントでもサポートされていることに注意してください。
+
+> [!NOTE]
+> カスタムの機密情報の種類のすべての要素が、すべてのバージョンの Office と互換性があるわけではありません。 Functions などのカスタム SIT のエンティティ要素は、非互換性を引き起こす可能性があります。
 
 ## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>エンドポイント デバイスのデータ損失防止では、一部の機密情報の種類についてのみポリシー ヒントがサポートされます
 
-エンドポイント デバイスに存在するドキュメントで検出される、すぐに使用できる機密情報の種類の一覧は次のとおりです。
+エンドポイント デバイスに存在するドキュメントで検出される、すぐに使用できる機密情報の種類の一覧を次に示します。
 
 - ABA ルーティング番号 
 - アルゼンチンの国民識別 (DNI) 番号 
@@ -200,7 +203,7 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 - Azure IoT 接続文字列 
 - Azure Publish Setting Password 
 - Azure Redis Cache 接続文字列 
-- Azure SAS 
+- Azure の SAS 
 - Azure Service Bus接続文字列 
 - Azure Storage アカウント キー 
 - Azure Storage アカウント キー (汎用) 
@@ -269,7 +272,7 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 - ギリシャ の運転免許証番号 
 - ギリシャの国民識別カード 
 - ギリシャパスポート番号 
-- ギリシャ社会保障番号 (AMKA) 
+- ギリシャの社会保障番号 (AMKA) 
 - ギリシャ語税識別番号 
 - 香港の ID カード (HKID) 番号 
 - ハンガリー社会保障番号 (TAJ) 
@@ -322,7 +325,7 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 - オランダのパスポート番号 
 - オランダの税識別番号 
 - オランダ付加価値税番号 
-- ニュージーランドの銀行口座番号 
+- ニュージーランド銀行口座番号 
 - ニュージーランドの運転免許証番号 
 - ニュージーランド内陸部収益番号 
 - ニュージーランドの保健省番号 
@@ -352,10 +355,10 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 - スロベニアの運転免許証番号 
 - スロベニアのパスポート番号 
 - スロベニアの納税者番号 
-- スロベニア 固有のマスター 市民番号 
+- スロベニアの一意のマスター市民番号 
 - 南アフリカの識別番号 
 - 韓国の住民登録番号 
-- スペイン DNI 
+- スペインの DNI 
 - スペインの運転免許証番号 
 - スペインのパスポート番号 
 - スペインの社会保障番号 (SSN) 
@@ -376,7 +379,7 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 - 英国の選挙登録番号 
 - 英国の国民健康保険番号 
 - 英国の国民保険番号 (NINO) 
-- 英国。 一意の納税者番号 
+- 英国 納税者番号 
 - 米国/英国 Passport Number 
 - 米国の銀行口座番号 
 - 米国の運転免許証番号 
@@ -405,4 +408,3 @@ Outlook on Desktop (2013 以降) およびデスクトップ上の Office アプ
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|none|none||
 |**Word、Excel、PowerPoint Win32 クライアント**|:::image type="icon" source="../media/crsmrk.png" border="false":::|サブセット|サブセット|[Outlook 2013 以降とデスクトップ上の Office アプリのサポートに関するページで、サポートされている機密情報の種類の一覧の機密情報の種類についてのみポリシーヒントを示](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types)してください</br></br>WXP クライアント アプリのポリシーヒントは、以下または DLP ポリシー内の条件またはアクションのサブセットが正確に含まれるすべての DLP ポリシーの SharePoint Online または OneDrive for Business サイトに保存されているドキュメントで機能します。</br> <ul><li>コンテンツには機密情報の種類が含まれています</li><li>アクセス スコープ (コンテンツは内部または外部で共有されます)</li><li>ユーザーに通知する (ポリシーヒント/ユーザー通知)</li><li>すべてのユーザーをブロックする</li><li>インシデント レポート</li></ul></br> その他の条件またはアクションが存在する場合、そのポリシーの DLP ポリシー ヒントは、Word、Excel、または PowerPoint のデスクトップ アプリには表示されません。</br>詳細については [、Excel、PowerPoint、Word のポリシー](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) に関するヒントを参照してください|
 |**Power BI**|:::image type="icon" source="../media/crsmrk.png" border="false":::|サブセット|サブセット|Power BI のデータ損失防止ポリシーはパブリック プレビューにあります。 </br></br> ポリシーのヒントと管理者アラートがサポートされています。 |
-||||||

@@ -12,26 +12,31 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Azure とOneDrive for Businessでの Microsoft Whiteboard のデータリテンション期間について説明します。
-ms.openlocfilehash: e79c0250d896d479047ec4465a81643dd2ba26d5
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 49189ff03774d91a855d3339c4a93702b1cbafcc
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276090"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434397"
 ---
 # <a name="manage-data-for-microsoft-whiteboard"></a>Microsoft Whiteboard のデータを管理する
 
-ホワイトボードコンテンツは、Azure とOneDrive for Businessの両方に格納されます。 新しいホワイトボードはOneDrive for Businessに格納されます。唯一の例外は、Surface Hub から開始されたホワイトボードが Azure に格納されます (今後OneDrive for Businessに移動されます)。 詳細については、「 [ホワイトボードでの共有の管理](manage-sharing-organizations.md)」を参照してください。
+ホワイトボードコンテンツは、OneDrive for Businessと Azure に格納されます。 OneDrive for Businessは、すべての新しいホワイトボードの既定のストレージです。 Azure で最初に作成されたホワイトボードと、Surface Hub または Microsoft Teams Room デバイスで開始されたホワイトボードは、Azure に格納されます。
+
+データを管理するには、まず組織で Whiteboard が有効になっていることを確認する必要があります。 詳細については、「 [ホワイトボードへのアクセスの管理](manage-whiteboard-access-organizations.md)」を参照してください。
 
 ## <a name="azure-storage-overview"></a>Azure Storage の概要
 
+>[!NOTE]
+> 次の情報は、Azure に格納されているホワイトボードに適用されます。
+
 ホワイトボードは現在、Azure にコンテンツを安全に格納しています。 データは、国と、Whiteboard がそれらの場所に新しいコンテンツを格納するように切り替えた時期に応じて、異なる場所に格納される場合があります。 新しいデータが作成される場所を確認するには、「 [Microsoft 365 顧客データの保存場所」を参照してください](/microsoft-365/enterprise/o365-data-locations)。
 
-Azure のコンテンツでは、データ損失防止 (DLP)、電子情報開示、アイテム保持ポリシー、および同様の機能はサポートされていません。 コンテンツは [Whiteboard PowerShell コマンドレット](/powershell/module/whiteboard/)を使用して管理でき、時間の経過と共に、このコンテンツをOneDrive for Businessに移行するか削除する必要があります。
+Azure のコンテンツでは、データ損失防止 (DLP)、電子情報開示、アイテム保持ポリシー、および同様の機能はサポートされていません。 このコンテンツは、 [Whiteboard PowerShell コマンドレット](/powershell/module/whiteboard/)を使用して管理できます。 最終的には、Azure に格納されているホワイトボードをOneDrive for Businessに移行するか、削除する必要があります。
 
 ### <a name="if-a-user-account-is-deleted-in-azure"></a>Azure でユーザー アカウントが削除された場合
 
-Azure でユーザーのアカウントが削除されたときにホワイトボードを保存する方法を変更しています。 変更前は、ユーザーのアカウントが削除されたとき、ユーザーが所有していたホワイトボードも削除されましたが、他のユーザーと共有されていたホワイトボードは削除されませんでした。
+Azure でユーザーのアカウントが削除されたときにホワイトボードを保存する方法を変更しています。 変更前は、削除されたユーザーのアカウントが所有していたホワイトボードも削除されました。 ただし、他のユーザーと共有されたホワイトボードは削除されませんでした。
 
 >[!NOTE]
 > OneDrive for Businessに格納されているホワイトボードは、OneDrive for Businessの他のコンテンツと同様に処理されます。 詳細については、「 [削除されたユーザーの OneDrive リテンション期間を設定する」を参照してください](/onedrive/set-retention)。
@@ -48,7 +53,7 @@ Azure でユーザーのアカウントが削除されたときにホワイト�
 
 ## <a name="onedrive-for-business-storage-overview"></a>OneDrive for Business ストレージの概要
 
-ホワイトボードは、ホワイトボードを起動するユーザーのOneDrive for Business フォルダーに作成されます (SharePoint はまだサポートされていません)。 このプロセスは、スタンドアロンのホワイトボード アプリケーション、および Microsoft Teams の会議、チャット、チャネルで作成されたすべてのホワイトボードに適用されます。 唯一の例外は、Surface Hub から開始されたホワイトボードが Azure に格納されます (今後、OneDrive for Businessに移動されます)。
+ホワイトボードは、ホワイトボードを起動するユーザーのOneDrive for Business フォルダーに作成されます。 SharePoint はまだサポートされていません。 このプロセスは、スタンドアロンのホワイトボード アプリケーション、および Microsoft Teams の会議、チャット、チャネルで作成されたすべてのホワイトボードに適用されます。 唯一の例外は、Surface Hub から開始されたホワイトボードは Azure に格納されますが、今後はOneDrive for Businessに移動される予定です。
 
 OneDrive for Businessプロビジョニングされていないユーザーは、この変更が実装されると、新しいホワイトボードを作成できなくなります。 ただし、以前に作成したボードは編集できます。 また、OneDrive for Businessを持つ他のユーザーが共有しているホワイトボードで共同作業を行うこともできます。
 
@@ -68,13 +73,13 @@ OneDrive for Businessプロビジョニングされていないユーザーは�
 - Quota
 - 訴訟ホールド
 - DLP
-- 基本的な電子情報開示 – .whiteboard ファイルは、作成者のOneDrive for Businessにファイルとして保存されます。 キーワードとファイルの種類の検索用にインデックスが作成されますが、プレビューまたは確認することはできません。 エクスポート時に、管理者はファイルをOneDrive for Businessにアップロードしてコンテンツを表示する必要があります。 今後、追加のサポートが予定されています。
+- 基本的な電子情報開示 – .whiteboard ファイルは、作成者のOneDrive for Businessにファイルとして保存されます。 キーワードとファイルの種類の検索用にインデックスが作成されますが、プレビューまたは確認することはできません。 エクスポート時に、管理者はファイルをOneDrive for Businessにアップロードしてコンテンツを表示する必要があります。 今後、さらにサポートが予定されています。
 
 今後のリリースで予定されているデータ コントロール:
 
 - 秘密度ラベル
 - 分析
-- 追加の電子情報開示のサポート
+- その他の電子情報開示のサポート
 
 ## <a name="see-also"></a>関連項目
 

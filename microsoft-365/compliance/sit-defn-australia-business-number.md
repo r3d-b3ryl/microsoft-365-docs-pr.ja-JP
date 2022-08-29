@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: オーストラリアのビジネス番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 5d3b238dc631086be26399e3adf6c4fa2ef0cf99
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 656dbc0315b0b7b09b112bdd7e423bcdec64a165
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995632"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368479"
 ---
 # <a name="australia-business-number"></a>オーストラリアの事業者番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -46,11 +38,11 @@ ms.locfileid: "66995632"
 
 - 2 桁の数字
 - オプションのハイフンまたはスペース
-- 3 桁
+- 3 桁の数字
 - オプションのハイフンまたはスペース
-- 3 桁
+- 3 桁の数字
 - オプションのハイフンまたはスペース
-- 3 桁
+- 3 桁の数字
 
 ## <a name="checksum"></a>チェックサム
 
@@ -58,7 +50,7 @@ ms.locfileid: "66995632"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - この関数Func_australian_business_number、パターンに一致するコンテンツを検索します。
 - Keywords_australian_business_numberのキーワードが見つかりました。

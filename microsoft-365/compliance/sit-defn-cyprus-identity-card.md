@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: キプロス ID カードの機密情報の種類エンティティ定義。
-ms.openlocfilehash: 6f12c519c2c5a96aded26a3591f864590b6f9fb9
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9797776342161365643aa48add071faa5b00f310
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997122"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368536"
 ---
 # <a name="cyprus-identity-card"></a>キプロスのIDカード
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -52,7 +44,7 @@ ms.locfileid: "66997122"
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- 正規表現 `Regex_cyprus_eu_national_id_card` は、パターンに一致するコンテンツを検索します。
+- 正規表現 `Regex_cyprus_eu_national_id_card` がパターンに一致するコンテンツを検出した。
 - `Keywords_cyprus_eu_national_id_card` のキーワードを検出した。
 
 ```xml

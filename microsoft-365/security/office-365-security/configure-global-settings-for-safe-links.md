@@ -19,12 +19,12 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365のセーフ リンクのグローバル設定 ([次の URL をブロックする] の一覧とOffice 365 アプリの保護) を表示および構成する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8914430808a5829732a7ea5ca86081774f7cb121
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: d396157be6e245e81d084d97dfc6446201b28f95
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771265"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385751"
 ---
 # <a name="configure-global-settings-for-safe-links-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365でセーフ リンクのグローバル設定を構成する
 
@@ -75,7 +75,7 @@ ms.locfileid: "66771265"
 ## <a name="configure-the-block-the-following-urls-list-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで [次の URL をブロックする] 一覧を構成する
 
 > [!NOTE]
-> [テナント許可/ブロック リスト](allow-block-urls.md#create-block-url-entries-in-the-tenant-allowblock-list)でブロック URL エントリを管理できるようになりました。 "次の URL をブロックする" 一覧は非推奨のプロセスです。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。
+> [テナント許可/ブロック リスト](allow-block-urls.md#use-the-microsoft-365-defender-portal-to-create-block-entries-for-urls-in-the-tenant-allowblock-list) で URL エントリのブロックを管理できるようになりました。 "次の URL をブロックする"リストは非推奨のプロセスです。 既存のエントリを "次の URL をブロックする" リストから移行し、テナント許可/ブロック リストの URL エントリをブロックします。 ブロックされた URL を含むメッセージは検疫されます。
 
 **[次の URL をブロックする]** の一覧では、サポートされているアプリのセーフ リンク スキャンによって常にブロックする必要があるリンクを識別します。 詳細については、 [セーフ リンクの「次の URL をブロックする」の一覧を参照してください](safe-links.md#block-the-following-urls-list-for-safe-links)。
 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: コンプライアンス センターでカスタムの機密情報の種類を作成、変更、削除、テストする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 733e043ed92e601812046dd5e50405ee28ee33da
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6f421a4bbeda0362d5b64be2cbeae70cf1b93bcf
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66638612"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434332"
 ---
 # <a name="create-custom-sensitive-information-types-in-the-compliance-center"></a>コンプライアンス センターでカスタムの機密情報の種類を作成する
 
@@ -44,6 +44,8 @@ ms.locfileid: "66638612"
   - [キーワード辞書](create-a-keyword-dictionary.md)
   - [機密情報の種類の機能](sit-functions.md)
   - [信頼度レベル](sensitive-information-type-learn-about.md#more-on-confidence-levels)
+
+- 機密情報の種類の [制限](sit-limits.md)について理解します。
 
 - 組織には、Microsoft Purview データ損失防止 (DLP) を含むサブスクリプション (Office 365 Enterpriseなど) が必要です。 [メッセージング ポリシーとコンプライアンス サービスの説明](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc)を参照してください。 
 
@@ -95,11 +97,11 @@ ms.locfileid: "66638612"
 > - カナダの運転免許証番号
 > - EU の運転免許証番号
 > - EU の国民識別番号
-> - EU パスポート番号
-> - EU 社会保障番号または同等の ID
+> - EU のパスポート番号
+> - EU の社会保障番号または同等の ID
 > - EU の税識別番号
-> - 病気の国際分類 (ICD-10-CM)
-> - 病気の国際分類 (ICD-9-CM)
+> - 国際疾病分類 (ICD-10-CM)
+> - 国際疾病分類 (ICD-9-CM)
 > - 米国の運転免許証番号
 
 PowerShell および Exact Data Match の機能を使用して、カスタムの機密情報の種類を作成することもできます。 これらの方法の詳細については、次を参照してください。
@@ -147,47 +149,8 @@ PowerShell および Exact Data Match の機能を使用して、カスタムの
 
 4. **[結果と一致]** ページで、結果を確認して **[完了]** を選択します。
 
-## <a name="custom-sensitive-information-types-limits"></a>カスタムの機密情報の種類の制限
-
-高いパフォーマンスと待機時間を確保するために、カスタム SIT 構成には制限があります。
-
-|極限|値|
-|---|---|
-|コンプライアンス センターを通じて作成されたカスタム SIT の最大数| 500 |
-|正規表現の最大長| 1024 文字|
-|キーワード リスト内の特定の用語の最大長| 50 文字|
-|キーワード リスト内の用語の最大数| 2048|
-|機密情報の種類ごとの個別の正規表現の最大数| 20|
-|キーワード ディクショナリの最大サイズ (圧縮後)| 1 MB (~1,000,000 文字)|
-|テナント内のキーワード ディクショナリ ベースの SID の最大数|50 |
-
 > [!NOTE]
-> ビジネスで 500 を超えるカスタム SIT を作成する必要がある場合は、サポート チケットを発行してください。
-
-### <a name="instance-count-supported-values-for-sit"></a>SIT でサポートされているインスタンス数の値
-
-SIT インスタンス数の制限は、次のソリューションで SIT が使用されている場合に適用されます。
-
-- DLP ポリシー
-- 情報保護
-- データ ライフサイクル管理
-- 通信コンプライアンス
-- レコード管理
-- Microsoft Defender for Cloud Apps
-- Microsoft Priva
-
-スキャンされたアイテムがルールの条件を満たすには、1 つのアイテム内の SIT の一意のインスタンスの数が最小値と最大値の間に収める必要があります。 これは **インスタンス数** と呼ばれます。
-
-- **最小** フィールド: 一致をトリガーするためにアイテム内に存在する必要がある SIT の一意のインスタンスの下限 (最小数)。 min フィールドでは、次の値がサポートされます。
-  - 1 ~ 500
-- **最大** フィールド: アイテム内に存在し、引き続き一致をトリガーできる SIT の一意のインスタンスの数の上限。 max フィールドでは、次の値がサポートされます。
-  - 1 ~ 500 - アイテム内の SIT のインスタンス数に対して 500 以下の特定の上限を設定する場合に使用します。
-  - Any - スキャンされた項目に SIT の一意のインスタンスの未定義数が見つかり、その一意のインスタンスの数が一意のインスタンスの最小数の値を満たすか超えた場合に、一意のインスタンス数の条件を満たす場合に使用 `Any` します。 つまり、最小値が満たされていれば、一意のインスタンス数の条件が満たされます。
-
-たとえば、1 つのアイテムに少なくとも 500 個の SIT の一意のインスタンスが見つかったときにルールで一致をトリガーする場合は、**最小値** を [最大値]  に`Any``500`設定します。
-
-> [!NOTE]
-> Microsoft 365 Information Protection は、次のような場合に 2 バイト文字セットの言語をサポートします。
+> Microsoft Purview 情報保護では、次の 2 バイト文字セット言語がサポートされています。
 >
 > - 中国語 (簡体字)
 > - 中国語 (繁体字)

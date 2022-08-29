@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+MS.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 8861dc3752d2c4cc798bc83475f6a51f8245191a
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: af54daf82ca8f4fbd50c5aaeafd4482f2ce6b0ca
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60159056"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329093"
 ---
 # <a name="get-incident-information-api"></a>インシデント情報 API を取得する
 

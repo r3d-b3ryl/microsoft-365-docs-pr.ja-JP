@@ -21,18 +21,18 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - AdminTemplateSet
-description: 販売店から Microsoft 365 Business Standard 購入した場合は、プロダクト キーを引き換え、サブスクリプションをアクティブ化する方法を説明します。
-ms.date: 11/13/2020
-ms.openlocfilehash: 880a339549a6bde1987aec9200f17476ca518497
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+description: 小売店からMicrosoft 365 Business Standardを購入した場合は、プロダクト キーを引き換えてサブスクリプションをアクティブ化する方法について説明します。
+ms.date: 08/18/2022
+ms.openlocfilehash: 57208bc75a70f423e69065ae72eda6816145601b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112429"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384728"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Microsoft 365 Business Standard のプロダクト キーを入力する
 
-小売店から Microsoft 365 Business Standard を購入した場合、この記事はサブスクリプションのライセンス認証を行うのに役立ちます。
+小売店からMicrosoft 365 Business Standardを購入した場合、この記事はサブスクリプションをアクティブ化するのに役立ちます。
   
  **他にヘルプが必要な場合**、**Microsoft 365 Family または Microsoft 365 Personal のヘルプについては**、「[Office でのプロダクト キーを使用する](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759)」を参照してください。  
  **ボリューム ライセンスをお持ちの場合**、[Microsoft Open ライセンス プログラム](https://go.microsoft.com/fwlink/p/?LinkID=613298)を利用して一般法人向け Microsoft 365 を購入した場合、「[Microsoft Open から購入したプロダクト キーを入力する](purchases-from-microsoft-open.md)」 を参照してください。
@@ -56,7 +56,7 @@ ms.locfileid: "67112429"
 
 ## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>有効期限を延長するか、既存のサブスクリプションにライセンスを追加します
 
-有効期限を延長したり、既存の Microsoft 365 Business Standard サブスクリプションにライセンスを追加したりするには、同じ Microsoft 365 プランの新しい未使用のキーを使用します。 以前使用したキーの再利用はできないため、元の Microsoft 365 プロダクト キーを入力することはできません。 「[プロダクト キーを使用するための有料のサブスクリプションにライセンスを追加するか、サブスクリプションを延長する](licenses/add-licenses-using-product-key.md)」を参照してください。
+有効期限を延長したり、既存のMicrosoft 365 Business Standard サブスクリプションにライセンスを追加したりするには、同じ Microsoft 365 プランの新しい未使用のプロダクト キーを使用します。 以前使用したキーの再利用はできないため、元の Microsoft 365 プロダクト キーを入力することはできません。 詳細については、「[Microsoft 365 プロダクト キーを使用して前払いサブスクリプションの有効期限を延長する」または「Microsoft 365 プロダクト キー](subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key)[を使用して前払いサブスクリプションにライセンスを追加](licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key)する」を参照してください。
 
 ## <a name="next-steps"></a>次の手順
 

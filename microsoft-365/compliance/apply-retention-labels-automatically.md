@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除するのにアイテム保持ポリシーを自動的に適用できるよう、保持ラベルと自動ラベル付けポリシーを作成します。
-ms.openlocfilehash: 7530b50aca1ed50ad5735f12f12b48b06d539b2e
-ms.sourcegitcommit: 2aa5c026cc06ed39a9c1c2bcabd1f563bf5a1859
-ms.translationtype: HT
+ms.openlocfilehash: 8653d60faaa2ae58088c8216b1286f7ff6a0a197
+ms.sourcegitcommit: 60c6ce8cbdf539f8b6ff1c6029eb16f81461a3ad
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/09/2022
-ms.locfileid: "66695990"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67434484"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>保持ラベルを自動的に適用してコンテンツを保持または削除する
 
@@ -77,7 +77,7 @@ ms.locfileid: "66695990"
         - [**ソリューション**] \>[**レコード管理**] \> [**ラベル ポリシー**] タブ\> [**ラベルの自動適用**]
 
     - データ ライフサイクル管理を使用している場合:
-        - [**ソリューション**] \> [**データ ライフサイクル管理**] \> [**ラベル ポリシー**] タブ\> [**ラベルの自動適用**]
+        - **ソリューション** \>**データ ライフサイクル管理** \>**Microsoft 365** \>**[ラベル ポリシー**] タブ\>**でラベルを自動適用する**
 
     ナビゲーション ウィンドウにすぐに解決方法が表示されない場合は、まず、**[すべて表示]** を選択します。
 
@@ -160,7 +160,7 @@ SharePoint と OneDrive
 これらのオプションの詳細については、DLP のドキュメント「[一致の難易度を上下するためにルールを調整する](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match)」にある次のガイダンスを参照してください。
 
 > [!IMPORTANT]
-> 機密情報の種類には、最大固有インスタンス数パラメーターを定義する 2 つの異なる方法があります。 詳細については、「[SIT のインスタンス数のサポート値](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)」を参照してください。
+> 機密情報の種類には、最大固有インスタンス数パラメーターを定義する 2 つの異なる方法があります。 詳細については、「[SIT のインスタンス数のサポート値](sit-limits.md#instance-count-supported-values-for-sit)」を参照してください。
 
 機密情報の種類を使用して保持ラベルの自動適用を検討する場合:
 

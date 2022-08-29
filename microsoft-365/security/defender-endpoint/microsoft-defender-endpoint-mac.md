@@ -17,12 +17,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d6438c7af3d3dbb8f4b2c19fdfdd04640cc8b4d2
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 97f7477c1216bfa25e25f6fc3086cf62a8b4b5a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174959"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384098"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Mac 用 Microsoft Defender for Endpoint
 
@@ -38,7 +38,7 @@ ms.locfileid: "65174959"
 このトピックでは、Mac 上の Defender for Endpoint をインストール、構成、更新、および使用する方法について説明します。
 
 > [!CAUTION]
-> Mac で他のサード パーティ製のエンドポイント保護製品をMicrosoft Defender for Endpointと共に実行すると、パフォーマンスの問題や予期しない副作用が発生する可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、[パッシブ モード](mac-preferences.md#enforcement-level-for-antivirus-engine)で実行するようにウイルス対策機能を構成した後でも、Defender for Endpoint on Mac EDR機能を安全に利用できます。
+> Mac で他のサード パーティ製のエンドポイント保護製品をMicrosoft Defender for Endpointと共に実行すると、パフォーマンスの問題や予期しない副作用が発生する可能性があります。 Microsoft 以外のエンドポイント保護が環境の絶対的な要件である場合でも、 [パッシブ モード](mac-preferences.md#enforcement-level-for-antivirus-engine)で実行するようにウイルス対策機能を構成した後でも、Defender for Endpoint on Mac EDR 機能を安全に利用できます。
 
 ## <a name="whats-new-in-the-latest-release"></a>最新リリースの新機能
 
@@ -49,7 +49,7 @@ ms.locfileid: "65174959"
 > [!TIP]
 > 共有したいフィードバックがある場合は、デバイスで Mac でMicrosoft Defender for Endpointを開き、[フィードバックの送信に **役立つ**\>] に移動して **送信します**。
 
-プレビュー機能 (Mac デバイスのエンドポイントでの検出と対応など) を含む最新の機能を取得するには、Microsoft Defender for Endpointを実行している macOS デバイスを "Insider" デバイスとして構成します。
+プレビュー機能 (Mac デバイスのエンドポイント検出や応答など) を含む最新の機能を取得するには、Microsoft Defender for Endpointを実行している macOS デバイスを "Insider" デバイスとして構成します。
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Mac にMicrosoft Defender for Endpointをインストールする方法
 
@@ -105,7 +105,7 @@ Mac のMicrosoft Defender for Endpointには、次のいずれかの Microsoft �
 
 ### <a name="configuring-exclusions"></a>除外の構成
 
-除外を追加する場合は、Microsoft Defender ウイルス対策の[一般的な除外ミス](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)に注意してください。
+除外を追加する場合は、 [Microsoft Defender ウイルス対策の一般的な除外ミスに](/microsoft-365/security/defender-endpoint/common-exclusion-mistakes-microsoft-defender-antivirus)注意してください。
 
 ### <a name="network-connections"></a>ネットワーク接続
 
@@ -169,3 +169,4 @@ macOS 11 (Big Sur) 以降、Microsoft Defender for Endpointはカーネル拡張
 
 - ログ記録、アンインストール、またはその他のトピックの詳細については、「[Mac でのMicrosoft Defender for Endpointのリソース」を](mac-resources.md)参照してください。
 - [Mac でのMicrosoft Defender for Endpointのプライバシー](mac-privacy.md)。
+- [macOS のネットワーク保護を有効にする](network-protection-macos.md)

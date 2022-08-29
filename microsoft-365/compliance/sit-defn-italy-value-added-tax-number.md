@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: イタリアの付加価値税番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: d370ef3c46cf773791b3b0d599d546ea695a6e97
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9e45fda7fe698e4059ec1f3af79ef7625f8f81a8
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997037"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369877"
 ---
 # <a name="italy-value-added-tax-number"></a>イタリアの付加価値税番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -55,7 +47,7 @@ ms.locfileid: "66997037"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_italy_value_added_tax_number` がパターンに一致するコンテンツを検出した。
 - `Keywords_italy_value_added_tax_number` のキーワードを検出した。

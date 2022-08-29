@@ -26,12 +26,12 @@ appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 0d9a0104e601b31448b586e3958df0c8d17cad7e
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: ce2c8da70b2fa6908518fc2f7d9489a2fdf578cd
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66995060"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405730"
 ---
 # <a name="shifts-for-frontline-workers"></a>現場担当者のシフト
 
@@ -47,7 +47,7 @@ Teams のスケジュール管理ツールであるシフトにより、現場�
 
 |&nbsp;  |&nbsp; |
 |---------|---------|
-|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[シフトを管理する](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** 組織のシフトを管理する方法について説明します。         |
+|<img src="/office/media/icons/calendar-teams.png" alt="Calendar symbol.">   |**[シフトを管理する](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** 組織の Shifts を管理する方法の概要を説明します。 Shifts へのアクセスを制御する方法、Shift を Teams アプリ バーにピン留めして簡単にアクセスできるようにする方法、シフトベースのタグを有効にする方法などについて説明します。 |
 |<img src="/office/media/icons/users-people.png" alt="Users/people symbol.">   |**[シフト管理のスケジュール所有者を管理する](schedule-owner-for-shift-management.md)** この機能を使用すると、従業員をチーム所有者にすることなく、チーム メンバーのアクセス許可をスケジュール所有者に昇格できます。         |
 |<img src="/office/media/icons/help.png" alt="Help symbol.">     | **[Shifts データに関する FAQ](/microsoftteams/expand-teams-across-your-org/shifts/shifts-data-faq?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)** Shifts データの保存場所と、保持、取得、暗号化など、Shifts データに関連するその他のトピックについて説明します。        |
 

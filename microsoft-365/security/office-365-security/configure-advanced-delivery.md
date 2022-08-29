@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきでないメッセージを特定する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b69e143ecae2974db249a64d32d18cb5ead32aa6
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
+ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051186"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420986"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信するように構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "67051186"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[組織を既定でセキュリティで保護](secure-by-default.md)するために、Exchange Online Protection (EOP) では、マルウェアまたは信頼度の高いフィッシングとして識別されるメッセージのセーフ リストまたはフィルター処理のバイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 以下に例を示します。
+[組織を既定でセキュリティで保護](secure-by-default.md)するために、Exchange Online Protection (EOP) では、マルウェアまたは信頼度の高いフィッシングとして識別されるメッセージのセーフ リストまたはフィルター処理のバイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps) メールボックス**: フィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するためにセキュリティ チームによって使用される専用メールボックス。
@@ -46,7 +46,7 @@ Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの
 - [Defender for Office 365の AIR とクラスタリングでは](office-365-air.md)、これらのメッセージは無視されます。
 - 特にサード パーティのフィッシング シミュレーションの場合:
   - [管理送信では、](admin-submission.md)メッセージがフィッシング シミュレーション キャンペーンの一部であり、実際の脅威ではないことを示す自動応答が生成されます。 アラートと AIR はトリガーされません。 管理者の提出エクスペリエンスでは、これらのメッセージがシミュレートされた脅威として表示されます。
-  - ユーザーがレポート メッセージまたはレポート フィッシング アドインを使用してフィッシング シミュレーション [メッセージを報告](enable-the-report-message-add-in.md)すると、システムはアラート、調査、またはインシデントを生成しません。 リンクまたはファイルは起爆されませんが、メッセージは **[送信]** ページの [**ユーザーが報告したメッセージ**] タブにも表示されます。
+  - ユーザーがレポート メッセージまたはレポート フィッシング アドインを使用してフィッシング シミュレーション [メッセージを報告](enable-the-report-message-add-in.md)すると、システムはアラート、調査、またはインシデントを生成しません。 リンクまたはファイルは爆発されませんが、メッセージは **[送信]** ページの [**ユーザー報告メッセージ**] タブに表示されます。
   - [Defender for Office 365のセーフ リンク](safe-links.md)では、クリック時にこれらのメッセージ内の特定の URL がブロックまたは爆発することはありません。 URL は引き続きラップされますが、ブロックされません。
   - [Defender for Office 365の安全な添付ファイル](safe-attachments.md)は、これらのメッセージの添付ファイルを爆発させません。
 
@@ -66,7 +66,7 @@ Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの
 
 - <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[詳細配信**] ページに直接移動するには、を開きます<https://security.microsoft.com/advanceddelivery>。
 
-- セキュリティ & コンプライアンス PowerShell に接続するには、「 [セキュリティ&コンプライアンス PowerShell への接続](/powershell/exchange/connect-to-scc-powershell)」を参照してください。
+- Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。
 
 - この記事の手順を実行するには、アクセス許可を割り当てる必要があります。
   - 高度な配信ポリシーで構成された設定を作成、変更、または削除するには、**Microsoft 365 Defender ポータル** の **セキュリティ管理者** 役割グループのメンバーであり、Exchange Onlineの **組織管理** 役割グループのメンバーである必要 **があります。**
@@ -85,7 +85,7 @@ Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの
    - [編集] アイコンをクリック ![します。](../../media/m365-cc-sc-edit-icon.png) **編集**。
    - 構成済みの SecOps メールボックスがない場合は、[ **追加**] をクリックします。
 
-3. 開いた **[Edit SecOps mailboxes**] ポップアップで、次のいずれかの手順を実行して、SecOps メールボックスとして指定する既存のExchange Online メールボックスを入力します。
+3. 開いた **[SecOps メールボックスの編集]** ポップアップで、次のいずれかの手順を実行して、SecOps メールボックスとして指定する既存のExchange Online メールボックスを入力します。
    - ボックスをクリックし、メールボックスの一覧を解決し、メールボックスを選択します。
    - ボックス内をクリックして、メールボックスの識別子 (名前、表示名、エイリアス、電子メール アドレス、アカウント名など) の入力を開始し、結果からメールボックス (表示名) を選択します。
 
@@ -93,9 +93,23 @@ Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの
 
      既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
-4. 完了したら、**[保存]** をクリックします。
+4. 完了したら、[ **追加**] をクリックし、[ **閉じる**] をクリックします。
 
-構成した SecOps メールボックス エントリは、[ **SecOps メールボックス** ] タブに表示されます。変更を加えるには、[編集] アイコンをクリックします ![。](../../media/m365-cc-sc-edit-icon.png) タブで **編集** します。
+構成した SecOps メールボックス エントリは、[ **SecOps メールボックス** ] タブに表示されます。
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-secops-mailboxes-in-the-advanced-delivery-policy"></a>Microsoft 365 Defender ポータルを使用して、高度な配信ポリシーで SecOps メールボックスを変更または削除する
+
+1. Microsoft 365 Defender ポータルの [ルール **] セクション** の <https://security.microsoft.com>**[Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **の詳細配信**] に移動します。 **[詳細配信**] ページに直接移動するには、 <https://security.microsoft.com/advanceddelivery>.
+
+2. [ **詳細配信** ] ページで、[ **SecOps メールボックス** ] タブが選択されていることを確認し、[編集] アイコンをクリックします ![。](../../media/m365-cc-sc-edit-icon.png) **編集**。
+
+3. 開いた **SecOps メールボックスの編集** ポップアップで、前のセクションで説明したようにメールボックスを追加または削除します。
+
+   すべてのメールボックスを削除するには、[削除] をクリックします。 ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) は、メールボックスが選択されなくなるまで、各値の横に表示されます。
+
+4. 完了したら、**[保存]** をクリックしてから、**[閉じる]** をクリックします。
+
+構成した SecOps メールボックス エントリは、[ **SecOps メールボックス** ] タブに表示されます。すべての SecOps メールボックス エントリを削除した場合、リストは空になります。
 
 ## <a name="use-the-microsoft-365-defender-portal-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Microsoft 365 Defender ポータルを使用して、高度な配信ポリシーでサード パーティのフィッシング シミュレーションを構成する
 
@@ -117,7 +131,7 @@ Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの
      - IP 範囲: たとえば、192.168.0.1-192.168.0.254 です。
      - CIDR IP: たとえば、192.168.0.1/25 です。
 
-   - **許可するシミュレーション URL**: この設定を展開し、必要に応じて、ボックス内をクリックして値を入力し、Enter キーを押すか、ボックスの下に表示される値を選択して、ブロックまたは爆発してはならないフィッシング シミュレーション キャンペーンの一部である特定の URL を入力します。 最大 10 個のエントリを追加できます。 URL 構文の形式については、 [テナント許可/ブロック リストの URL 構文に関するページ](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)を参照してください。 これらの URL はクリック時にラップされますが、ブロックされません。
+   - **許可するシミュレーション URL**: この設定を展開し、必要に応じて、ボックス内をクリックして値を入力し、Enter キーを押すか、ボックスの下に表示される値を選択して、ブロックまたは爆発してはならないフィッシング シミュレーション キャンペーンの一部である特定の URL を入力します。 最大 10 個のエントリを追加できます。 URL 構文の形式については、 [テナント許可/ブロック リストの URL 構文に関するページ](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list)を参照してください。 これらの URL はクリック時にラップされますが、ブロックされません。
 
    既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
@@ -129,15 +143,27 @@ Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの
    >   - DKIM ドメイン。
    > - 少なくとも 1 つの **送信 IP**。
    >
-   > 必要に応じて **シミュレーション URL を含め、シミュレーション** メッセージ内の URL がブロックされないようにすることができます。
+   > 必要に応じて **、シミュレーション URL を** 含め、シミュレーション メッセージ内の URL がブロックされないようにすることができます。
+   >
    > フィールドごとに最大 10 個のエントリを指定できます。
+   >
    > 少なくとも 1 つの **ドメイン** と 1 つの **送信 IP** に一致する必要がありますが、値間の関連付けは維持されません。
 
-4. 完了したら、次のいずれかの手順を実行します。
-   - **初回:** [ **追加]** をクリックし、[ **閉じる**] をクリックします。
-   - **既存のものを編集する**: [ **保存]** をクリックし、[ **閉じる**] をクリックします。
+4. 完了したら、[ **追加**] をクリックし、[ **閉じる**] をクリックします。
 
-構成したサード パーティ製のフィッシング シミュレーション エントリは、[ **フィッシング シミュレーション** ] タブに表示されます。変更を加えるには、[編集] アイコンをクリックします ![。](../../media/m365-cc-sc-edit-icon.png) タブで **編集** します。
+構成したサード パーティ製のフィッシング シミュレーション エントリは、[ **フィッシング シミュレーション** ] タブに表示されます。
+
+## <a name="use-the-microsoft-365-defender-portal-to-modify-or-remove-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Microsoft 365 Defender ポータルを使用して、高度な配信ポリシーでサード パーティのフィッシング シミュレーションを変更または削除する
+
+1. Microsoft 365 Defender ポータルの [ルール **] セクション** の <https://security.microsoft.com>**[Email & コラボレーション** \> **ポリシー&ルール** \> **脅威ポリシー** \> **の詳細配信**] に移動します。 **[詳細配信**] ページに直接移動するには、 <https://security.microsoft.com/advanceddelivery>.
+
+2. [ **詳細配信** ] ページで、[ **フィッシング シミュレーション** ] タブを選択し、[編集] アイコンをクリック ![します。](../../media/m365-cc-sc-edit-icon.png) **編集**。
+
+3. 開いた **サード パーティ製フィッシング シミュレーション** ポップアップの編集で、前のセクションで説明したように、 **ドメイン**、 **送信 IP**、 **およびシミュレーション URL の** エントリを追加または削除します。
+
+   すべてのエントリを削除するには、[削除] をクリックします。 ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) ドメイン、IP、または URL が選択されなくなるまで、各値の横に表示されます。
+
+4. 完了したら、**[保存]** をクリックしてから、**[閉じる]** をクリックします。
 
 ## <a name="additional-scenarios-that-require-filtering-bypass"></a>フィルター処理のバイパスが必要なその他のシナリオ
 
@@ -147,9 +173,9 @@ Microsoft 365 の _高度な配信ポリシー_ を使用して、 _これらの
 
 - **レビュー中の誤検知**: [管理者の提出](admin-submission.md) を通じて Microsoft によって分析されている特定のメッセージを一時的に許可し、不適切とマークされている既知の良好なメッセージを Microsoft に報告することができます (誤検知)。 すべてのオーバーライドと同様に、これらの許容量は一時的な値であることを _**強くお勧めします**_ 。
 
-## <a name="security--compliance-powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信ポリシーの SecOps メールボックスのセキュリティ & コンプライアンス PowerShell の手順
+## <a name="powershell-procedures-for-secops-mailboxes-in-the-advanced-delivery-policy"></a>高度な配信ポリシーでの SecOps メールボックスの PowerShell プロシージャ
 
-Security & Compliance PowerShell では、高度な配信ポリシーの SecOps メールボックスの基本的な要素は次のとおりです。
+PowerShell では、高度な配信ポリシーの SecOps メールボックスの基本的な要素は次のとおりです。
 
 - **SecOps オーバーライド ポリシー**: **-SecOpsOverridePolicy コマンドレットによって\*** 制御されます。
 - **SecOps オーバーライド規則**: **-SecOpsOverrideRule コマンドレットによって\*** 制御されます。
@@ -169,7 +195,7 @@ PowerShell の高度な配信ポリシーで SecOps メールボックスを構�
 
 #### <a name="step-1-use-powershell-to-create-the-secops-override-policy"></a>手順 1: PowerShell を使用して SecOps オーバーライド ポリシーを作成する
 
-SecOps オーバーライド ポリシーを作成するには、次の構文を使用します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>
@@ -188,7 +214,7 @@ New-SecOpsOverridePolicy -Name SecOpsOverridePolicy -SentTo secops@contoso.com
 
 #### <a name="step-2-use-powershell-to-create-the-secops-override-rule"></a>手順 2: PowerShell を使用して SecOps オーバーライド規則を作成する
 
-この例では、指定した設定で SecOps メールボックス規則を作成します。
+[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で、次のコマンドを実行します。
 
 ```powershell
 New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
@@ -201,7 +227,7 @@ New-SecOpsOverrideRule -Name SecOpsOverrideRule -Policy SecOpsOverridePolicy
 
 ### <a name="use-powershell-to-view-the-secops-override-policy"></a>PowerShell を使用して SecOps オーバーライド ポリシーを表示する
 
-この例では、1 つだけの SecOps メールボックス ポリシーに関する詳細情報を返します。
+[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) では、この例では、SecOps メールボックス ポリシーに関する詳細情報のみを返します。
 
 ```powershell
 Get-SecOpsOverridePolicy
@@ -211,7 +237,7 @@ Get-SecOpsOverridePolicy
 
 ### <a name="use-powershell-to-view-secops-override-rules"></a>PowerShell を使用して SecOps オーバーライド規則を表示する
 
-この例では、SecOps オーバーライド 規則に関する詳細情報を返します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)では、この例では SecOps オーバーライド 規則に関する詳細情報を返します。
 
 ```powershell
 Get-SecOpsOverrideRule
@@ -231,7 +257,7 @@ Get-SecOpsOverrideRule | Format-Table Name,Mode
 
 ### <a name="use-powershell-to-modify-the-secops-override-policy"></a>PowerShell を使用して SecOps オーバーライド ポリシーを変更する
 
-SecOps オーバーライド ポリシーを変更するには、次の構文を使用します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy [-AddSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>] [-RemoveSentTo <EmailAddress1>,<EmailAddress2>,...<EmailAddressN>]
@@ -256,7 +282,7 @@ Set-SecOpsOverridePolicy -Identity SecOpsOverridePolicy -AddSentTo secops2@conto
 
 ### <a name="use-powershell-to-remove-the-secops-override-policy"></a>PowerShell を使用して SecOps オーバーライド ポリシーを削除する
 
-この例では、SecOps メールボックス ポリシーと対応するルールを削除します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)では、この例では SecOps メールボックス ポリシーと対応するルールを削除します。
 
 ```powershell
 Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
@@ -266,7 +292,7 @@ Remove-SecOpsOverridePolicy -Identity SecOpsOverridePolicy
 
 ### <a name="use-powershell-to-remove-secops-override-rules"></a>PowerShell を使用して SecOps オーバーライド規則を削除する
 
-SecOps オーバーライド規則を削除するには、次の構文を使用します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 Remove-SecOpsOverrideRule -Identity <RuleIdentity>
@@ -280,9 +306,9 @@ Remove-SecOpsOverrideRule -Identity SecOpsOverrideRule6fed4b63-3563-495d-a481-b2
 
 構文とパラメーターの詳細については、「 [Remove-SecOpsOverrideRule](/powershell/module/exchange/remove-secopsoverriderule)」を参照してください。
 
-## <a name="security--compliance-powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度な配信ポリシーでのサード パーティ製フィッシング シミュレーションのセキュリティ&コンプライアンス PowerShell の手順
+## <a name="powershell-procedures-for-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>高度な配信ポリシーでのサード パーティフィッシング シミュレーションの PowerShell 手順
 
-Security & Compliance PowerShell では、高度な配信ポリシーのサード パーティフィッシング シミュレーションの基本的な要素は次のとおりです。
+PowerShell では、高度な配信ポリシーのサード パーティフィッシング シミュレーションの基本的な要素は次のとおりです。
 
 - **フィッシング シミュレーションオーバーライド ポリシー**: **-PhishSimOverridePolicy コマンドレットによって\*** 制御されます。
 - **フィッシング シミュレーションオーバーライド規則**: **-PhishSimOverrideRule コマンドレットによって\*** 制御されます。
@@ -307,7 +333,7 @@ PowerShell でサード パーティのフィッシング シミュレーショ�
 
 #### <a name="step-1-use-powershell-to-create-the-phishing-simulation-override-policy"></a>手順 1: PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを作成する
 
-この例では、フィッシング シミュレーションオーバーライド ポリシーを作成します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)では、この例ではフィッシング シミュレーションオーバーライド ポリシーを作成します。
 
 ```powershell
 New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
@@ -319,7 +345,7 @@ New-PhishSimOverridePolicy -Name PhishSimOverridePolicy
 
 #### <a name="step-2-use-powershell-to-create-the-phishing-simulation-override-rule"></a>手順 2: PowerShell を使用してフィッシング シミュレーションオーバーライド ルールを作成する
 
-次の構文を使用してください。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePolicy -Domains <Domain1>,<Domain2>,...<Domain10> -SenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntry10>
@@ -343,13 +369,13 @@ New-PhishSimOverrideRule -Name PhishSimOverrideRule -Policy PhishSimOverridePoli
 
 #### <a name="step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow"></a>手順 3: (省略可能) PowerShell を使用して、許可するフィッシング シミュレーション URL を識別する
 
-次の構文を使用してください。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery -Entries "<URL1>","<URL2>",..."<URL10>" <[-NoExpiration] | [-ExpirationDate <DateTime>]>
 ```
 
-URL 構文の詳細については、 [テナント許可/ブロック リストの URL 構文に関するページ](tenant-allow-block-list.md#url-syntax-for-the-tenant-allowblock-list)を参照してください。
+URL 構文の詳細については、[テナント許可/ブロック リストの URL 構文に関するページを](allow-block-urls.md#url-syntax-for-the-tenant-allowblock-list)参照してください。
 
 この例では、指定したサード パーティ製フィッシング シミュレーション URL の URL 許可エントリを有効期限なしで追加します。
 
@@ -361,7 +387,7 @@ New-TenantAllowBlockListItems -Allow -ListType Url -ListSubType AdvancedDelivery
 
 ### <a name="use-powershell-to-view-the-phishing-simulation-override-policy"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを表示する
 
-この例では、フィッシング シミュレーションオーバーライド ポリシーに関する詳細情報のみを返します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)では、この例では、フィッシング シミュレーションオーバーライド ポリシーに関する詳細情報のみを返します。
 
 ```powershell
 Get-PhishSimOverridePolicy
@@ -371,7 +397,7 @@ Get-PhishSimOverridePolicy
 
 ### <a name="use-powershell-to-view-phishing-simulation-override-rules"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ルールを表示する
 
-この例では、フィッシング シミュレーションオーバーライド ルールに関する詳細情報を返します。
+[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) では、この例ではフィッシング シミュレーションオーバーライド ルールに関する詳細情報を返します。
 
 ```powershell
 Get-PhishSimOverrideRule
@@ -391,7 +417,7 @@ Get-PhishSimOverrideRule | Format-Table Name,Mode
 
 ### <a name="use-powershell-to-view-the-allowed-phishing-simulation-url-entries"></a>PowerShell を使用して、許可されたフィッシング シミュレーション URL エントリを表示する
 
-許可されているフィッシング シミュレーション URL を表示するには、次のコマンドを実行します。
+[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で、次のコマンドを実行します。
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
@@ -401,7 +427,7 @@ Get-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery
 
 ### <a name="use-powershell-to-modify-the-phishing-simulation-override-policy"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを変更する
 
-フィッシング シミュレーションオーバーライド ポリシーを変更するには、次の構文を使用します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy [-Comment "<DescriptiveText>"] [-Enabled <$true | $false>]
@@ -417,7 +443,7 @@ Set-PhishSimOverridePolicy -Identity PhishSimOverridePolicy -Enabled $false
 
 ### <a name="use-powershell-to-modify-phishing-simulation-override-rules"></a>PowerShell を使用してフィッシング シミュレーションオーバーライドルールを変更する
 
-フィッシング シミュレーションオーバーライド規則を変更するには、次の構文を使用します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b9c6b55c5011 [-Comment "<DescriptiveText>"] [-AddSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-RemoveSenderDomainIs <DomainEntry1>,<DomainEntry2>,...<DomainEntryN>] [-AddSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>] [-RemoveSenderIpRanges <IPAddressEntry1>,<IPAddressEntry2>,...<IPAddressEntryN>]
@@ -440,7 +466,7 @@ Set-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-9320-b
 
 URL 値を直接変更することはできません。 この記事で説明されているように [、既存の URL エントリを削除](#use-powershell-to-remove-the-allowed-phishing-simulation-url-entries) し [、新しい URL エントリを追加](#step-3-optional-use-powershell-to-identify-the-phishing-simulation-urls-to-allow) できます。
 
-許可されているフィッシング シミュレーション URL エントリの他のプロパティ (有効期限やコメントなど) を変更するには、次の構文を使用します。
+[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) で、許可されたフィッシング シミュレーション URL エントリの他のプロパティ (有効期限やコメントなど) を変更するには、次の構文を使用します。
 
 ```powershell
 Set-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery <[-NoExpiration] | [-ExpirationDate <DateTime>]> [-Notes <String>]
@@ -458,7 +484,7 @@ Set-TenantAllowBlockListItems -ListType Url -ListSubType AdvancedDelivery -Entri
 
 ### <a name="use-powershell-to-remove-a-phishing-simulation-override-policy"></a>PowerShell を使用してフィッシング シミュレーションオーバーライド ポリシーを削除する
 
-この例では、フィッシング シミュレーションオーバーライド ポリシーと対応するルールを削除します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)では、この例ではフィッシング シミュレーションオーバーライド ポリシーと対応するルールを削除します。
 
 ```powershell
 Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
@@ -468,7 +494,7 @@ Remove-PhishSimOverridePolicy -Identity PhishSimOverridePolicy
 
 ### <a name="use-powershell-to-remove-phishing-simulation-override-rules"></a>PowerShell を使用してフィッシング シミュレーションオーバーライドルールを削除する
 
-フィッシング シミュレーションオーバーライド規則を削除するには、次の構文を使用します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 Remove-PhishSimOverrideRule -Identity <RuleIdentity>
@@ -484,7 +510,7 @@ Remove-PhishSimOverrideRule -Identity PhishSimOverrideRulea0eae53e-d755-4a42-932
 
 ### <a name="use-powershell-to-remove-the-allowed-phishing-simulation-url-entries"></a>PowerShell を使用して、許可されたフィッシング シミュレーション URL エントリを削除する
 
-既存のフィッシング シミュレーション URL エントリを削除するには、次の構文を使用します。
+[powerShell Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell)で、次の構文を使用します。
 
 ```powershell
 Remove-TenantAllowBlockListItems <-Entries "<URL1>","<URL2>",..."<URLN>" | -Ids <Identity>> -ListType URL -ListSubType AdvancedDelivery

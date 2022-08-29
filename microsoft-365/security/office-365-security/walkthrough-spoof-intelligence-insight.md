@@ -21,12 +21,12 @@ ms.custom:
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 66253ed6deab0f41cac3a4ff732201e20d100e98
-ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
+ms.openlocfilehash: e9cb7fc02a3e84f7fa0909e509f47c21b63050ab
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/28/2022
-ms.locfileid: "65771999"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384860"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>EOP でスプーフィング インテリジェンス ポリシーとスプーフィング インテリジェンス 分析情報を使用してスプーフィングされた送信者を管理する
 
@@ -35,19 +35,19 @@ ms.locfileid: "65771999"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Microsoft 365 Defender ポータルのスプーフィング送信者管理は、テナント許可/ブロックリストの **[スプーフィング**] タブでのみ使用できるようになりました。 Microsoft 365 Defender ポータルの現在の手順については、「[EOP でのスプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)」を参照してください。
+> Microsoft 365 Defender ポータルでのスプーフィング送信者管理は、テナント許可/ブロック リストの **[スプーフィングされた送信者**] タブでのみ使用できるようになりました。 Microsoft 365 Defender ポータルの現在の手順については、「[EOP でのスプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)」を参照してください。
 >
 > Exchange Online PowerShell またはスタンドアロン EOP PowerShell のスプーフィングされた送信者管理は、関連する **\*-TenantAllowBlockListSpoofItems**、**Get-SpoofIntelligenceInsight**、**Get-SpoofMailReport** コマンドレットにのみ移行中です。 これらのコマンドレットを使用する手順については、次の記事を参照してください。
 >
-> - [PowerShell を使用してスプーフィングされた送信者エントリを表示する](tenant-allow-block-list.md#view-spoofed-sender-entries)
-> - [PowerShell を使用してスプーフィングされた送信者許可エントリを追加する](manage-tenant-allows.md#add-spoofed-sender-allow-entries-using-powershell)
-> - [PowerShell を使用してスプーフィングされた送信者ブロック エントリを追加する](manage-tenant-blocks.md#add-spoofed-sender-block-entries)
-> - [PowerShell を使用してスプーフィングされた送信者エントリを変更する](modify-remove-entries-tenant-allow-block.md#modify-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
-> - [PowerShell を使用してスプーフィングされた送信者エントリを削除する](modify-remove-entries-tenant-allow-block.md#remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list)
+> - [PowerShell を使用して、テナント許可/ブロックリストでスプーフィングされた送信者の許可エントリまたはブロック エントリを表示する](allow-block-email-spoof.md#use-powershell-to-view-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [PowerShell を使用してスプーフィングされた送信者の許可エントリを作成する](allow-block-email-spoof.md#use-powershell-to-create-allow-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [PowerShell を使用してスプーフィングされた送信者のブロック エントリを作成する](allow-block-email-spoof.md#use-powershell-to-create-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [PowerShell を使用して、テナント許可/ブロックリストのスプーフィングされた送信者の許可エントリまたはブロック エントリを変更する](allow-block-email-spoof.md#use-powershell-to-modify-allow-or-block-entries-for-spoofed-senders-in-the-tenant-allowblock-list)
+> - [PowerShell を使用して、テナント許可/ブロック リストからスプーフィングされた送信者の許可エントリまたはブロック エントリを削除する](allow-block-email-spoof.md#use-powershell-to-remove-allow-or-block-entries-for-spoofed-senders-from-the-tenant-allowblock-list)
 >
 > **Get-PhishFilterPolicy** コマンドレットと **Set-PhishFilterPolicy** コマンドレットを使用した古いスプーフィングされた送信者管理エクスペリエンスは非推奨のプロセスにありますが、コマンドレットがすべての場所で削除されるまで、この記事では完全さを示しています。
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>始める前に把握しておくべき情報
+## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 

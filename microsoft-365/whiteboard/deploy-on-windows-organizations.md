@@ -12,16 +12,18 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Windows 10 以降のバージョンを実行しているデバイスに Microsoft Whiteboard を展開する方法について説明します。
-ms.openlocfilehash: 96670b594babd8a2c61723ceab6ef826c1229764
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: bdea83d61a22ecfa3b26feecf7d7711549ace463
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943466"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367711"
 ---
 # <a name="deploy-microsoft-whiteboard-on-windows-10-devices"></a>Windows 10 デバイスに Microsoft Whiteboard を展開する
 
 ホワイトボードは、Microsoft Intuneまたは Microsoft Configuration Manager (以前はSystem Center Configuration Manager) を使用して、Windows 10以降を実行するデバイスに展開できます。 Windows Server ではホワイトボードはサポートされていません。
+
+Whiteboard を展開するには、まず組織で Whiteboard が有効になっていることを確認する必要があります。 詳細については、「 [ホワイトボードへのアクセスの管理](manage-whiteboard-access-organizations.md)」を参照してください。
 
 - **オンライン ライセンス モードを使用するMicrosoft Intune** – このプロセスでは、Whiteboard アプリへのアクセスを受け取るユーザーのグループを指定できます。
 

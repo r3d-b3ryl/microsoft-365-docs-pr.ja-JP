@@ -22,16 +22,16 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) で利用できるスプーフィング対策機能について学ぶことができます。この機能を使用すると、なりすましの送信者とドメインからのフィッシング攻撃を軽減できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 446b82d668041a476d748956008002c42a92a7f3
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
-ms.translationtype: HT
+ms.openlocfilehash: c342dd6a3e33c77b2c6b729ac389b7ea979b0fb7
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65435459"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385817"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>EOP のスプーフィング対策保護
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -52,7 +52,7 @@ EOP では、次のスプーフィング対策テクノロジを使用できま�
 
 - **スプーフィング インテリジェンス分析情報**: 7 日間で内部および外部ドメインの送信者からのスプーフィングされたメッセージを確認し、その送信者を許可またはブロックします。詳細については、「[EOP のスプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)」を参照してください。
 
-- **テナント許可/ブロック リストでなりすましされた送信者を許可またはブロックする**: スプーフィング インテリジェンス分析の判定を上書きすると、なりすましされた送信者は、手動で許可またはブロックするエントリとなり、「テナント許可/ブロックリスト」の **[なりすまし]** タブにのみ表示されます。 また、スプーフィング インテリジェンスで検出される前に、手動でなりすまし送信者の許可またはブロック エントリを作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
+- **テナント許可/ブロック リストでスプーフィングされた送信者を許可またはブロック** する: スプーフィング インテリジェンス 分析情報の判定をオーバーライドすると、スプーフィングされた送信者は、テナント許可/ブロック リストの **[スプーフィングされた送信者** ] タブにのみ表示される手動の許可またはブロックエントリになります。 また、スプーフィング インテリジェンスで検出される前に、手動でなりすまし送信者の許可またはブロック エントリを作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](manage-tenant-allow-block-list.md)」を参照してください。
 
 - **フィッシング詐欺対策ポリシー**: EOP と Microsoft Defender for Office 365 では、フィッシング詐欺対策ポリシーに以下のなりすまし対策の設定が含まれます。
   - スプーフィング インテリジェンスのオン/オフを切り替える。
@@ -166,9 +166,9 @@ DMARC の詳細については、「[DMARC を使用して Microsoft 365 でメ�
 
     ドメインの所有者に対して相当数の送信者が電子メール認証レコードの設定が必要なことを返信することで、ドメインの所有者の行動を促します。 Microsoft は必要なレコードを公開するためにドメインの所有者と協力しますが、個々のユーザーの要求が大きな支援になります。
 
-  - メール クライアントで、メッセージを受信トレイに移動する受信トレイ ルールを作成してください。 また、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」や「[テナントの許可/ブロック リストを管理する](tenant-allow-block-list.md)」で説明しているように、管理者に上書きの構成を依頼することもできます。
+  - メール クライアントで、メッセージを受信トレイに移動する受信トレイ ルールを作成してください。 また、「[EOP でのスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」や「[テナントの許可/ブロック リストを管理する](manage-tenant-allow-block-list.md)」で説明しているように、管理者に上書きの構成を依頼することもできます。
 
-  - ナントの許可/禁止リストを使用して、メーリング リストを正当なものとして扱うためのオーバーライドを作成します。 詳細については、「[テナントの許可/禁止リストの許可リストを追加する](manage-tenant-allows.md)」を参照してください。
+  - ナントの許可/禁止リストを使用して、メーリング リストを正当なものとして扱うためのオーバーライドを作成します。 詳細については、「 [スプーフィングされた送信者の許可エントリを作成する](allow-block-email-spoof.md#create-allow-entries-for-spoofed-senders)」を参照してください。
 
 他のすべてが失敗した場合は、Microsoft に対してメッセージを誤検知として報告できます。 詳細については、「[メッセージとファイルを Microsoft に報告する](report-junk-email-messages-to-microsoft.md)」を参照してください。
 

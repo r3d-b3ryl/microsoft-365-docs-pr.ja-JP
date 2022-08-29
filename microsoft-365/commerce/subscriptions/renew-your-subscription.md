@@ -21,13 +21,13 @@ ms.custom:
 - AdminTemplateSet
 search.appverid: MET150
 description: Microsoft 365 for Business のほとんどのサブスクリプションを更新し、継続請求をオンまたはオフにする方法について説明します。
-ms.date: 05/04/2021
-ms.openlocfilehash: b180b5be5427832070680f00b9cd804a650e603e
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.date: 08/18/2022
+ms.openlocfilehash: 0f7722eda2f7b7fc4f9e24d30be4442c106ff640
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112089"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384560"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Microsoft 365 for business の更新
 
@@ -60,8 +60,11 @@ ms.locfileid: "67112089"
 ::: moniker-end
 
 2. 継続請求を管理するサブスクリプションを選択します。
+
 3. サブスクリプションの詳細情報ページの **[Subscription and payment settings]** (サブスクリプションと支払い設定) の下で、**[Edit recurring billing]** (継続請求の編集) を選択します。
+
 4. **[継続請求の設定の編集]** ウィンドウで、**[オン]**、**[オン、ただし一度更新]**、または **[オフにする]** を選択します。
+
 5. **[保存]** を選択します。
 
     > [!NOTE]
@@ -70,6 +73,34 @@ ms.locfileid: "67112089"
     > - **継続請求** を無効にしても、サブスクリプションはキャンセルされません。 サブスクリプションを有効にし続ける場合には、請求書の支払いを手動で行う必要があります。
     > - **継続請求** をオフにすると、サブスクリプションは有効期限が切れるまで有効になります。 有効期限は、**[サブスクリプションと支払いの設定]** セクションのサブスクリプションの詳細情報ページで確認できます。
     > - サブスクリプションをただちにキャンセルする方法については、「[サブスクリプションをキャンセルする](cancel-your-subscription.md)」を参照してください。
+
+## <a name="extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Microsoft 365 プロダクト キーを使用して前払いサブスクリプションの有効期限を延長する
+
+前払い製品ライセンスは、プロダクト キーと呼ばれる 25 文字の英数字コードとして発行されます。 既に所有している製品の別の前払いサブスクリプションを購入する場合は、プロダクト キーを使用してサブスクリプションの有効期限を延長できます。 プロダクト キーを使用して、サブスクリプションに [ライセンスを追加](../licenses/buy-licenses.md#add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key)することもできます。
+
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+
+::: moniker-end
+
+2. **[製品]** タブで、延長するサブスクリプションを選択します。
+
+3. サブスクリプションの詳細ページの **[サブスクリプションと支払い設定]** セクションで、**[終了日の延長]** を選択します。
+
+4. [**ユーザー ライセンスの更新または追加**] ページで [**新しい未使用プロダクト キーの使用**] を選択し、[**次へ**] を選択します。
+
+5. プロダクト キーを入力し、[**次へ**] を選択します。
+    > [!NOTE]
+    > 複数のプロダクト キーがある場合は、[**別のプロダクト キーを追加する**] を選択してキーを入力できます。
+
+6. 注文の詳細を確認し、[**使用**] を選択します。
 
 ## <a name="related-content"></a>関連コンテンツ
 

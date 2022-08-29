@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00a43da0c6b817c6e53ef93ae27fa8e59d7c5341
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 19b7546f4c1730b4077d29d43d450a0701c5ae62
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300457"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385079"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint のデバイスの正常性とコンプライアンス レポート
 
@@ -42,7 +42,7 @@ ms.locfileid: "67300457"
 デバイスの状態レポートには、組織内のデバイスに関する高度な情報が表示されます。 このレポートには、センサーの正常性状態、ウイルス対策状態、OS プラットフォーム、およびWindows 10バージョンを示す傾向のある情報が含まれています。
 
 > [!IMPORTANT]
-> Windows&nbsp;Server&nbsp;2012&nbsp;R2 と Windows&nbsp;Server 2016 を&nbsp;デバイス正常性レポートに表示するには、これらのデバイスを最新の統合ソリューション パッケージを使用してオンボードする必要があります。 詳細については、「[Windows Server 2012 R2 と 2016 の最新の統合ソリューションの新機能」を参照してください](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)。
+> Windows &nbsp;Server&nbsp; 2012 &nbsp;R2 と Windows &nbsp;Server&nbsp; 2016 がデバイス正常性レポートに表示されるようにするには、これらのデバイスを最新の統合ソリューション パッケージを使用してオンボードする必要があります。 詳細については、「[Windows Server 2012 R2 と 2016 の最新の統合ソリューションの新機能](/microsoft-365/security/defender-endpoint/configure-server-endpoints#new-windows-server-2012-r2-and-2016-functionality-in-the-modern-unified-solution)」を参照してください。
 
 Microsoft 365 セキュリティ ダッシュボードのナビゲーション パネルで [ **レポート**] を選択し、 **デバイスの正常性とコンプライアンスを開きます**。
 デバイスの正常性とコンプライアンスのダッシュボードは、次の 2 つのタブで構成されています。
@@ -61,6 +61,26 @@ Microsoft 365 セキュリティ ダッシュボードのナビゲーション �
   - [ウイルス対策エンジンの更新カード](#antivirus-engine-updates-card)
   - [セキュリティ インテリジェンス更新プログラム カード](#security-intelligence-updates-card)
   - [ウイルス対策プラットフォームの更新カード](#antivirus-platform-updates-card)
+
+### <a name="report-access-permissions"></a>レポート アクセス許可
+
+Microsoft 365 セキュリティ ダッシュボードでデバイスの正常性とウイルス対策のコンプライアンス レポートにアクセスするには、次のアクセス許可が必要です。
+
+| アクセス許可名 | アクセス許可の種類 |
+|:---|:---|
+| データの表示 | 脅威と脆弱性の管理 (TVM) |
+
+これらのアクセス許可を割り当てるには:
+
+1. セキュリティ管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">グローバル管理者</a>ロールが割り当てられているアカウントを使用してMicrosoft 365 Defenderにログインします。
+1. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **ロール****]** \> (**[アクセス許可**] の下) を選択します。
+1. 編集するロールを選択します。
+1. **[編集]** をクリックします。
+1. [ **ロールの編集]** の [ **全般** ] タブの [ **ロール名**] に、ロールの名前を入力します。
+1. [ **説明]** には、ロールの簡単な概要を入力します。
+1. **[アクセス許可]** で [**データの表示**] を選択し、[**データの表示**] で **[脅威と脆弱性管理** (TVM)] を選択します。
+
+ユーザー ロール管理の詳細については、「 [ロールベースのアクセス制御用のロールの作成と管理](user-roles.md)」を参照してください。
 
 ### <a name="sensor-health--os-tab"></a>[センサーの正常性& OS] タブ
 
@@ -172,7 +192,7 @@ _Microsoft Defender ウイルス対策の詳細_ ポップアップ内の **[エ
 
 API を使用したエクスポートの詳細については、次の記事を参照してください。
 
-- [デバイスウイルス対策の正常性レポートをエクスポートする](device-health-export-antivirus-health-report-api.md)
+- [デバイス ウイルス対策の正常性レポートをエクスポートする](device-health-export-antivirus-health-report-api.md)
 - [デバイスウイルス対策の正常性の詳細 API のメソッドとプロパティをエクスポートする](device-health-api-methods-properties.md)
 
 #### <a name="microsoft-defender-antivirus-version-and-update-cards-functionality"></a>Microsoft Defender ウイルス対策のバージョンと更新カードの機能

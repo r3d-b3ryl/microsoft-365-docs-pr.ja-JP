@@ -1,7 +1,7 @@
 ---
 title: 高度なハンティング スキーマの DeviceTvmSoftwareVulnerabilities テーブル
 description: デバイスで見つかったソフトウェアの脆弱性と、高度なハンティング スキーマの DeviceTvmSoftwareVulnerabilities テーブルの各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧について説明します。
-keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, データ型, 説明, 脅威& 脆弱性の管理, TVM, デバイス管理, ソフトウェア, インベントリ, 脆弱性, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, 脅威&脆弱性管理, TVM, デバイス管理, ソフトウェア, インベントリ, 脆弱性, CVE ID, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a6588134ba2cdf166a465998cd0b1a4fd7134dbb
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 6e0d28b0b4f421ba4f5b41bfbfa049787c7cce0a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531525"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329269"
 ---
 # <a name="devicetvmsoftwarevulnerabilities"></a>DeviceTvmSoftwareVulnerabilities
 
@@ -37,10 +37,10 @@ ms.locfileid: "61531525"
 >[!IMPORTANT]
 > 一部の情報は、リリース済みの製品に関連しており、商用リリースされる前に大幅に変更される可能性があります。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
-`DeviceTvmSoftwareVulnerabilities`高度なハンティング スキーマの表には、インストールされているソフトウェア製品の脆弱性の[脅威&脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)の一覧が含まれています。 このテーブルには、オペレーティング システム情報、CVE ID、および脆弱性の重要度の情報も含まれます。 たとえば、この表を使用して、ソフトウェアに重大な脆弱性があるデバイスに関連するイベントを探すことができます。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
+`DeviceTvmSoftwareVulnerabilities`高度なハンティング スキーマの表には、インストールされているソフトウェア製品の脆弱性の[Microsoft Defender 脆弱性の管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)一覧が含まれています。 このテーブルには、オペレーティング システム情報、CVE ID、および脆弱性の重要度の情報も含まれます。 たとえば、この表を使用して、ソフトウェアに重大な脆弱性があるデバイスに関連するイベントを探すことができます。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
 >[!NOTE]
-> テーブルと`DeviceTvmSoftwareVulnerabilities`テーブルが`DeviceTvmSoftwareInventory`置き換えられました`DeviceTvmSoftwareInventoryVulnerabilities`。 最初の 2 つのテーブルには、脆弱性の管理アクティビティに通知したり、脆弱なデバイスを探したりするのに役立つ列が追加されています。
+> テーブルと`DeviceTvmSoftwareVulnerabilities`テーブルが`DeviceTvmSoftwareInventory`置き換えられました`DeviceTvmSoftwareInventoryVulnerabilities`。 最初の 2 つのテーブルには、脆弱性管理アクティビティに通知したり、脆弱なデバイスを探したりする際に役立つ列が追加されています。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -69,4 +69,4 @@ ms.locfileid: "61531525"
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
-- [脅威および脆弱性管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender 脆弱性の管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

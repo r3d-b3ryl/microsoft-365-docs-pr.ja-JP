@@ -271,21 +271,21 @@
       items:
         - name: レポートを使用して Microsoft 365 のアクティビティを監視する
           href: activity-reports/activity-reports.md
-        - name: 'Microsoft 生産性スコア: 概要'
-          href: productivity/productivity-score.md
+        - name: Microsoft 導入スコア - 概要
+          href: adoption/adoption-score.md
           items:
             - name: コンテンツの共同作業
-              href: productivity/content-collaboration.md
+              href: adoption/content-collaboration.md
             - name: コミュニケーション
-              href: productivity/communication.md
+              href: adoption/communication.md
             - name: モビリティ
-              href: productivity/mobility.md
+              href: adoption/mobility.md
             - name: チームワーク
-              href: productivity/teamwork.md
+              href: adoption/teamwork.md
             - name: 会議
-              href: productivity/meetings.md
+              href: adoption/meetings.md
             - name: Microsoft 365 Apps の正常性
-              href: productivity/apps-health.md
+              href: adoption/apps-health.md
             - name: エンドポイントの分析
               href: /mem/analytics/productivity-score
         - name: 組織の連絡先情報を変更する
@@ -320,8 +320,6 @@
           href: /admin/manage/manage-feedback-ms-org.md
         - name: リリース オプションをセットアップする
           href: manage/release-options-in-office-365.md
-        - name: 新機能の表示と非表示を切り替える
-          href: manage/show-hide-new-features.md
         - name: Power BI の利用状況分析
           items:
             - name: 利用状況分析について
@@ -358,7 +356,7 @@
       href: ../commerce/index.yml
     - name: 組織をセキュリティで保護する
       items:
-        - name: データをセキュリティで保護するためのベスト プラクティス
+        - name: データをセキュリティで保護するトップ 10 の方法
           href: security-and-compliance/secure-your-business-data.md
         - name: Microsoft 365 の多要素認証
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
@@ -377,7 +375,7 @@
     - name: デバイスとアプリのデータを管理する
       items:
         - name: デバイスとアプリのデータの保護方法
-          href: devices/choose-device-security.md
+          href: basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md
         - name: 基本的なモビリティとセキュリティ
           items:
             - name: 基本的なモビリティとセキュリティの概要

@@ -17,17 +17,18 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 519b2c025236be49f2f1c96e098c841f789c079b
-ms.sourcegitcommit: 9ba00298cfa9ae293e4a57650965fdb3e8ffe07b
+ms.openlocfilehash: 6e3ed4d56757110834510465b9637a082e358c4d
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "64759669"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405716"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Microsoft 365 の TLS 1.0 と 1.1 を無効にする
 
 > [!IMPORTANT]
-> COVID-19 により、法人のお客様に対する TLS 1.0 および 1.1 の無効化を一時的に停止しました。 サプライ チェーンが調整され、特定の国が復旧したので、2020 年 10 月 15 日に TLS 1.2 の適用ロールアウトを再開しました。 ロールアウトは、今後数週間から数か月にわたって継続されます。
+> Microsoft では、世界中のほとんどの Microsoft 365 サービスで TLS 1.0 と 1.1 を既に無効にしています。 ロールアウトは、今後数週間から数か月にわたって継続されます。
+21 Vianet によって運用されている Microsoft 365 の場合、TLS 1.0/1.1 は 2023 年 6 月 30 日に無効になります。
 
 2018 年 10 月 31 日の時点で、トランスポート層セキュリティ (TLS) 1.0 および 1.1 プロトコルは、Microsoft 365 サービスでは非推奨とされます。 エンドユーザーに対する影響は最小限です。 この変更は 2 年以上前から公開されており、2017 年 12 月に最初に公開されました。 この記事は、Office 365 サービスに関連する Office 365 ローカル クライアントのみを対象としていますが、Office および Office Online Server/Office Web Appsに関するオンプレミスの TLS の問題にも適用できます。
 

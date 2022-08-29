@@ -15,13 +15,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Defender for Office 365 ソリューション試用版のプレイブック。
+ms.technology: mdo
 ms.custom: trial-playbook
-ms.openlocfilehash: 6f19499a3c00fc1520d8bffb64336a789c017d28
-ms.sourcegitcommit: ebaa70d0da4a600efe52b5008eaddb511d36df8c
-ms.translationtype: HT
+ms.openlocfilehash: 942752a8fc13a9644558f20567d7dd32e991867b
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66687762"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408067"
 ---
 # <a name="trial-playbook-microsoft-defender-for-office-365"></a>試用版プレイブック: Microsoft Defender for Office 365
 
@@ -146,7 +147,7 @@ Defender for Office 365 のキャンペーン ビューを使用して、組織�
 
 高度なハンティングを使用して、カスタムの検出ルールを記述し、環境内のイベントを予防的に検査し、脅威の指標を検索します。環境内のRaw データを調査します。
 
-- [カスタム検出ルールを作成します](../defender/advanced-hunting-overview.md#get-started-with-advanced-hunting)。
+- [カスタム検出ルールを作成します](../defender/custom-detections-overview.md)。
 - 他のユーザーが作成した[共有クエリにアクセスします](../defender/advanced-hunting-shared-queries.md)。
 
 詳細については、以下のビデオをご覧ください。[Microsoft 365 Defender を使用した脅威ハンティング - YouTube](https://www.youtube.com/watch?v=l3OmH4U6XAs&list=PL3ZTgFEc7Lyt1O81TZol31YXve4e6lyQu&index=4)。

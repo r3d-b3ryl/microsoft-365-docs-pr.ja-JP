@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 英国 一意の Taxpayer 参照番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 31f963c73e86f0f2bf4d84b9aeac6e1a29524a3b
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6b08147cde297b1264f7384bb66dcfaf0bdd9d27
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997412"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369732"
 ---
 # <a name="uk-unique-taxpayer-reference-number"></a>英国 納税者番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 

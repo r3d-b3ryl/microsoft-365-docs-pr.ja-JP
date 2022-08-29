@@ -19,12 +19,12 @@ ms.localizationpriority: high
 description: 管理者は、Exchange Online Protection (EOP) がメール認証 (SPF、DKIM、および DMARC) を使用してスプーフィング、フィッシング、およびスパムを防ぐ方法を確認できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dca070cb6d6d1b2cb26acb3604e331f27824877
-ms.sourcegitcommit: 133bf9097785309da45df6f374a712a48b33f8e9
-ms.translationtype: HT
+ms.openlocfilehash: 0722e586a19dab70bfe4433bd2909098dd8a3ac1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/10/2022
-ms.locfileid: "66008869"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385729"
 ---
 # <a name="email-authentication-in-eop"></a>EOP のメール認証
 
@@ -164,12 +164,13 @@ Microsoft 365 は、会社のインフラストラクチャからの受信メー
 
 ### <a name="configure-permitted-senders-of-unauthenticated-email"></a>認証されていないメールが許可された送信者を構成する
 
-また、[スプーフィング インテリジェンス](learn-about-spoof-intelligence.md)や[テナントの許可/ブロック リスト](tenant-allow-block-list.md)を使用して、送信者が認証されていないメッセージを組織に送信することを許可することもできます。
+また、[スプーフィング インテリジェンス](learn-about-spoof-intelligence.md)や[テナントの許可/ブロック リスト](manage-tenant-allow-block-list.md)を使用して、送信者が認証されていないメッセージを組織に送信することを許可することもできます。
 
 外部ドメインの場合、なりすましユーザーは From アドレスのドメインとなり、送信インフラストラクチャは以下の値のいずれかとなります。
 
 - ソース IP アドレス (/24 CIDR 範囲に分割)
 - 逆引き DNS (PTR) レコードの組織ドメイン。
+- 検証済みの DKIM ドメイン。
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>送信者/受信者ペアの許可エントリを作成する
 

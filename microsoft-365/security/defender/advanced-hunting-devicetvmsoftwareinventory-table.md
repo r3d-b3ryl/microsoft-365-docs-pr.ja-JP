@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: aaab93748ea3bea8ce5de54f5996f5dbc6373f29
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 64ecf8a3f0d040ce8645d6dde803126efa11060f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099087"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329313"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -38,7 +38,7 @@ ms.locfileid: "67099087"
 > 一部の情報は、市販される前に大幅に変更される可能性があるプレリリース製品に関するものです。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
 
 
-`DeviceTvmSoftwareInventory`高度なハンティング スキーマの表には、サポート情報の終了など、ネットワーク内のデバイスに現在インストールされているソフトウェアの[脅威&脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)インベントリが含まれています。 たとえば、現在脆弱なソフトウェア バージョンでインストールされているデバイスに関連するイベントを探すことができます。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
+`DeviceTvmSoftwareInventory`高度なハンティング スキーマの表には、サポート終了情報など、ネットワーク内のデバイスに現在インストールされているソフトウェアの[Microsoft Defender 脆弱性の管理 インベントリが](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)含まれています。 たとえば、現在脆弱なソフトウェア バージョンでインストールされているデバイスに関連するイベントを探すことができます。 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 
 >[!NOTE]
 > テーブルと`DeviceTvmSoftwareVulnerabilities`テーブルが`DeviceTvmSoftwareInventory`置き換えられました`DeviceTvmSoftwareInventoryVulnerabilities`。 最初の 2 つのテーブルには、脆弱な管理アクティビティに通知したり、脆弱なデバイスを探したりする際に役立つ列が追加されています。
@@ -68,4 +68,4 @@ ms.locfileid: "67099087"
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
-- [脅威および脆弱性管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender 脆弱性の管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

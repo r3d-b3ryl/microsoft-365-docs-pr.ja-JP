@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
-ms.date: 11/17/2021
+ms.date: 08/18/2022
 audience: ITPro
 ms.topic: overview
 ms.collection: M365-security-compliance
@@ -17,12 +17,12 @@ ms.custom:
 description: この記事では、外部メール転送、自動転送、5.7.520 アクセス拒否メッセージ、外部転送の無効化、"管理者が外部転送を無効にしました" メッセージ、送信スパム対策ポリシーなどのトピックについて説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c10433cd858ebe160ac4a38cfee78b57d39b80df
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: e540fc99cb06b18d8a602ffa33f290e8969a7ad5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487150"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385233"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Microsoft 365 で外部メールの自動転送を制御する
 
@@ -33,7 +33,7 @@ ms.locfileid: "66487150"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-管理者として、外部の受信者 (組織外の受信者) に自動的に転送されるメッセージを制限または制御する会社の要件がある場合があります。 電子メール転送は役に立ちますが、情報の漏えいの可能性があるため、セキュリティ 上のリスクを引き起こす可能性もあります。 攻撃者は、この情報を使用して組織またはパートナーを攻撃する可能性があります。
+管理者として、外部の受信者 (組織外の受信者) に自動的に転送されるメッセージを制限または制御する会社の要件がある場合があります。 Email転送は役に立ちますが、情報が漏えいする可能性があるため、セキュリティ 上のリスクを引き起こす可能性もあります。 攻撃者は、この情報を使用して組織またはパートナーを攻撃する可能性があります。
 
 Microsoft 365 では、次の種類の自動転送を使用できます。
 
@@ -58,7 +58,7 @@ Microsoft 365 では、次の種類の自動転送を使用できます。
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>送信スパム フィルター ポリシー設定が他の自動メール転送制御とどのように連携するか
 
-管理者は、自動メール転送を許可またはブロックする他のコントロールを既に構成している可能性があります。 次に例を示します。
+管理者は、自動メール転送を許可またはブロックする他のコントロールを既に構成している可能性があります。 例:
 
 - [一](/exchange/mail-flow-best-practices/remote-domains/remote-domains) 部またはすべての外部ドメインへの自動メール転送を許可またはブロックするリモート ドメイン。
 - 外部の受信者に自動的に転送されたメッセージを検出してブロックする Exchange [メール フロー](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) ルール (トランスポート ルールとも呼ばれます) の条件とアクション。

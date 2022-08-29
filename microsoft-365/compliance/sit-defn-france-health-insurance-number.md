@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: フランスの医療保険番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: c62a50553c985bbe6a4e4f8c640772902f7b4bd0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 34076914498182076196c6335980d9653ba9e1f9
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996417"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369971"
 ---
 # <a name="france-health-insurance-number"></a>フランスの健康保険番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 

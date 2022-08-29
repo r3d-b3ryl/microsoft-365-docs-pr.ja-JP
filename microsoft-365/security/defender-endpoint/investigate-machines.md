@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71755add523b3426d144f748ab3582e3a3975dc6
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: f80f33b76ad5061372351ef0c399adabcc8a8c26
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475237"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384448"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Microsoft Defender for Endpoint デバイスの一覧のデバイスを調査する
 
@@ -51,7 +51,8 @@ ms.locfileid: "64475237"
 - デバイスの詳細
 - 応答アクション
 - タブ (概要、アラート、タイムライン、セキュリティに関する推奨事項、ソフトウェア インベントリ、検出された脆弱性、欠落している KB)
-- カード (アクティブなアラート、ログオンしているユーザー、セキュリティ評価)
+- カード (アクティブなアラート、ログオンしているユーザー、セキュリティ評価、デバイスの正常性状態) 
+ 
 
 :::image type="content" source="images/specific-device.png" alt-text="デバイス ビュー" lightbox="images/specific-device.png":::
 
@@ -150,7 +151,7 @@ ms.locfileid: "64475237"
 
 ### <a name="security-recommendations"></a>セキュリティに関する推奨事項
 
-**セキュリティに関する推奨事項** は、Microsoft Defender for Endpointの [脅威&脆弱性管理機能](tvm-dashboard-insights.md)から生成されます。 推奨事項を選択するとパネルが表示され、推奨事項の説明や、それを適用しないことに関連する潜在的なリスクなどの関連する詳細を表示できます。 詳細については、「 [セキュリティに関する推奨事項](tvm-security-recommendation.md) 」を参照してください。
+**セキュリティに関する推奨事項** は、Microsoft Defender for Endpointの [脆弱性管理機能](tvm-dashboard-insights.md)から生成されます。 推奨事項を選択するとパネルが表示され、推奨事項の説明や、それを適用しないことに関連する潜在的なリスクなどの関連する詳細を表示できます。 詳細については、「 [セキュリティに関する推奨事項](tvm-security-recommendation.md) 」を参照してください。
 
 :::image type="content" source="images/security-recommendations-device.png" alt-text="[セキュリティに関する推奨事項] タブ" lightbox="images/security-recommendations-device.png":::
 
@@ -198,10 +199,35 @@ ms.locfileid: "64475237"
 
 :::image type="content" source="images/security-assessments.png" alt-text="セキュリティ評価カード" lightbox="images/security-assessments.png":::
 
+
+### <a name="device-health-status"></a>デバイスの正常性の状態
+
+**デバイスの正常性状態** カードには、特定のデバイスの正常性レポートの概要が表示されます。 次のいずれかの状態がカードの上部に表示され、デバイスの全体的な状態が示されます。
+
+- デバイスが最新の状態
+- プラットフォームが最新ではありません
+- フル スキャンに失敗しました
+- クイック スキャンに失敗しました
+- エンジンが最新ではない
+- セキュリティ インテリジェンスが最新ではない
+- Defender ウイルス対策がアクティブでない
+- macOS & Linux では使用できない状態
+
+カード内のその他の情報には、最後のフル スキャン、最後のクイック スキャン、セキュリティ インテリジェンス更新プログラムのバージョン、エンジン更新プログラムのバージョン、プラットフォーム更新プログラムのバージョン、Defender ウイルス対策モードなどがあります。 
+
+>[!NOTE]
+>macOS デバイスと Linux デバイスの全体的な状態メッセージは、現在、"MacOS & Linux では使用できない状態" として表示されています。 現時点では、状態の概要は Windows デバイスでのみ使用できます。 テーブル内の他のすべての情報は、サポートされているすべてのプラットフォームの各デバイス正常性信号の個々の状態を示す最新の情報です。 
+
+デバイス正常性レポートの詳細なビューを取得するには、[ **レポート] > [デバイスの正常性]** に移動します。 詳細については、「[Microsoft Defender for Endpointのデバイスの正常性とコンプライアンスレポート](/microsoft-365/security/defender-endpoint/machine-reports)」を参照してください。 
+
+:::image type="content" source="images/device-health-status.png"  alt-text="デバイスの正常性状態カード" lightbox="images/device-health-status.png":::
+
+
+
 ## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint アラート キューを表示して整理する](alerts-queue.md)
-- [Microsoft Defender for Endpointアラートを管理する](manage-alerts.md)
+- [Microsoft Defender for Endpoint アラートを管理する](manage-alerts.md)
 - [Microsoft Defender for Endpointアラートを調査する](investigate-alerts.md)
 - [Defender for Endpoint アラートに関連付けられているファイルを調査する](investigate-files.md)
 - [Defender for Endpoint アラートに関連付けられている IP アドレスを調査する](investigate-ip.md)

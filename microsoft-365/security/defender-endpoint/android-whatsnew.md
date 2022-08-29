@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 93013d8b51eb16290de3b80d3c27ea0e3f07e21c
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 4300aadd6ab57561592621a0d1aeb54887d70320
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174896"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437785"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-android"></a>Android のMicrosoft Defender for Endpointの新機能
 
@@ -31,10 +31,18 @@ ms.locfileid: "67174896"
 
 Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
->[!NOTE]
+>[!IMPORTANT]
 > Microsoft Defender for Endpointの **マルウェア対策エンジン** が一般公開されました。 この新しいマルウェア保護機能を利用するには、すべてのユーザーに **1.0.3815.0000** を超えるMicrosoft Defender for Endpoint バージョンが必要です。 Microsoft Defender for Endpoint バージョン 1.0.3815.0000 より前のユーザーには、Microsoft Defender for Endpoint アプリケーションを更新するための通知とアプリ内オーバーレイ メッセージが送信されます。 ユーザーはオーバーレイ メッセージに表示されているリンクをクリックして、マネージド プレイ ストアに移動し、アプリケーションを更新できます。 
 >
 > ユーザーがプレイ ストアにアクセスできない場合は、ポータル サイトからアプリを更新できます。 
+
+## <a name="privacy-controls"></a>プライバシー コントロール
+
+Android のMicrosoft Defender for Endpointでは、管理者とエンド ユーザーの両方のプライバシー コントロールが有効になります。 これには、登録された (MDM) デバイスと登録されていない (MAM) デバイス (プレビュー段階) のコントロールが含まれます。 管理者はアラート レポートでプライバシーを構成できますが、エンド ユーザーは組織に共有される情報を構成できます。 詳細については、「 [プライバシー制御 (MDM)](/microsoft-365/security/defender-endpoint/android-configure#privacy-controls) と [プライバシー制御 (MAM)」](/microsoft-365/security/defender-endpoint/android-configure-mam#configure-privacy-controls)を参照してください。
+
+## <a name="optional-permissions-and-disable-web-protection"></a>オプションのアクセス許可と Web 保護の無効化
+
+Android のMicrosoft Defender for Endpointでは、オンボード フローで **オプションのアクセス許可** が有効になります。 現在、MDE で必要なアクセス許可は、オンボード フローで必須です。 この機能を使用すると、管理者はオンボード中に必須の **VPN** と **アクセシビリティの** アクセス許可を強制することなく、デバイスに MDE を展開できます。 エンド ユーザーは、必須のアクセス許可なしでアプリをオンボードでき、後でこれらのアクセス許可を確認できます。 この機能は現在、登録されていないデバイス (MAM) にのみ存在します。 詳細については、オプションの [アクセス許可](/microsoft-365/security/defender-endpoint/android-configure-mam#optional-permissions)に関するページを参照してください。
 
 
 ## <a name="microsoft-defender-on-android-enterprise-byod-personal-profile"></a>Android エンタープライズ BYOD 個人プロファイルの Microsoft Defender
@@ -60,9 +68,9 @@ Microsoft Defender for Endpointの Network Protection はパブリック プレ�
 
 Microsoft Defender for Endpointは、Play ストアで **Microsoft Defender** として使用できるようになりました。 この更新プログラムを使用すると、**アプリは米国リージョンのコンシューマー** 向けのプレビューとして利用できるようになります。職場または個人アカウントでアプリにログインする方法に基づいて、Microsoft Defender for Endpointまたは Microsoft Defender for personal の機能にアクセスできます。 詳細については [、このブログ](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals) を参照してください。
 
-## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
+## <a name="vulnerability-management"></a>脆弱性の管理
 
-2022 年 1 月 25 日に、Android と iOS での脅威と脆弱性の管理の一般公開が発表されました。 詳細については、 [こちらにある techcommunity の投稿](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)を参照してください。
+2022 年 1 月 25 日に、Android と iOS での脆弱性管理の一般公開が発表されました。 詳細については、 [こちらにある techcommunity の投稿](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)を参照してください。
 
 ## <a name="upcoming-permission-changes-for-microsoft-defender-for-endpoint-running-android-11-or-later-nov-2021"></a>Android 11 以降を実行するMicrosoft Defender for Endpointの今後のアクセス許可の変更 (2021 年 11 月)
 
@@ -91,4 +99,4 @@ Defender for Endpoint を更新して 1.0.3501.0301 以降のバージョンを�
 4. これで、デバイスが保護されます。
 
   > [!NOTE]
-  > このアクセス許可により、Microsoft Defender for Endpointはユーザーのデバイス上のストレージにアクセスできます。これにより、悪意のあるアプリや不要なアプリの検出と削除に役立ちます。 Microsoft Defender for Endpoint Android アプリ パッケージ ファイル (.apk) のみにアクセス/スキャンします。 仕事用プロファイルを持つデバイスでは、Defender for Endpoint は作業関連のファイルのみをスキャンします。
+  > このアクセス許可により、Microsoft Defender for Endpointはユーザーのデバイス上のストレージにアクセスできます。これにより、悪意のあるアプリや不要なアプリの検出と削除に役立ちます。 Microsoft Defender for Endpointアクセス/スキャン Android アプリ パッケージ ファイル (.apk) のみ。 仕事用プロファイルを持つデバイスでは、Defender for Endpoint は作業関連のファイルのみをスキャンします。

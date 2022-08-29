@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 398fdb8bbfb5bba59fce83e24e7d6cdd496e90bd
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: bd63b74990dd058f6a9158cd85f02f303d7dc4aa
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61168344"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408399"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Web 驚異から組織を保護する
 
@@ -33,14 +34,14 @@ ms.locfileid: "61168344"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Web 脅威保護は、Defender for Endpoint の [Web 保護](web-protection-overview.md) の一部です。 [ネットワーク保護](network-protection.md)を使用して、Web の脅威からデバイスを保護します。 Microsoft Edgeや Chrome や Firefox などの一般的なサード パーティのブラウザーと統合することで、Web 脅威保護は Web プロキシなしで Web の脅威を停止し、離れている間やオンプレミスにいる間にデバイスを保護できます。 Web 脅威保護により、フィッシング サイト、マルウェア ベクトル、悪用サイト、信頼されていないサイトまたは低評価サイト、 [カスタム インジケーター リスト](manage-indicators.md)でブロックしたサイトへのアクセスが停止されます。
+Web 脅威保護は、Defender for Endpoint の [Web 保護](web-protection-overview.md) の一部です。 [ネットワーク保護](network-protection.md)を使用して、Web の脅威からデバイスを保護します。 Microsoft Edge や Chrome や Firefox などの一般的なサードパーティのブラウザーと統合することで、Web 脅威保護は Web プロキシなしで Web の脅威を停止し、離れている間やオンプレミスにいる間にデバイスを保護できます。 Web 脅威保護により、フィッシング サイト、マルウェア ベクトル、悪用サイト、信頼されていないサイトまたは低評価サイト、 [カスタム インジケーター リスト](manage-indicators.md)でブロックしたサイトへのアクセスが停止されます。
 
 > [!NOTE]
-> デバイスが新しいカスタム インジケーターを受信するには、最大で 1 時間かかる場合があります。
+> デバイスが新しいカスタム インジケーターを受信するには、最大で 2 時間かかる場合があります。
 
 ## <a name="prerequisites"></a>前提条件
 
-Web 保護では、ネットワーク保護を使用して、Microsoft Edgeおよびサードパーティの Web ブラウザーで Web 閲覧のセキュリティを提供します。
+Web 保護では、ネットワーク保護を使用して、Microsoft Edge およびサードパーティの Web ブラウザーで Web 閲覧のセキュリティを提供します。
 
 デバイスでネットワーク保護を有効にするには、
 
@@ -48,7 +49,7 @@ Web 保護では、ネットワーク保護を使用して、Microsoft Edgeお�
 - デバイス構成、SCCM、グループ ポリシー、または MDM ソリューションIntune使用してネットワーク保護を有効にします。 [ネットワーク保護を有効にする方法の詳細](enable-network-protection.md)
 
 > [!NOTE]
-> ネットワーク保護を **監査のみに** 設定した場合、ブロックは使用できません。 また、悪意のある Web サイトや不要な Web サイトへのアクセス試行を検出してログに記録できるのは、Microsoft Edgeのみです。
+> ネットワーク保護を **監査のみに** 設定した場合、ブロックは使用できません。 また、Microsoft Edge 上の悪意のある不要な Web サイトへのアクセス試行を検出してログに記録することもできます。
 
 ## <a name="configure-web-threat-protection"></a>Web 脅威保護を構成する
 
@@ -67,7 +68,7 @@ Web 保護では、ネットワーク保護を使用して、Microsoft Edgeお�
    - [ **ネットワーク保護を有効にする]** を **[有効] に** 設定して、Web 保護を有効にします。 または、ネットワーク保護を **監査モード** に設定して、環境内での動作を確認することもできます。 監査モードでは、ネットワーク保護によってユーザーがサイトまたはドメインにアクセスすることは禁止されませんが、検出はイベントとして追跡されます。 
    - 潜在的なフィッシング詐欺や悪意のあるソフトウェアからユーザーを保護するには、[**Microsoft Edge 従来版の SmartScreen を必須** にする] を **[はい**] に切り替えます。
    - ユーザーが悪意のある可能性のあるサイトに関する警告をバイパスできないようにするには、[ **悪意のあるサイトへのアクセスをブロックする]** を **[はい**] に設定します。
-   - ユーザーが警告をバイパスして未検証ファイルをダウンロードできないようにするには、[ **未検証ファイルのダウンロードをブロックする** ] tl **[はい**] を設定します。 
+   - ユーザーが警告をバイパスして未検証ファイルをダウンロードできないようにするには、[ **未検証ファイルのダウンロードをブロックする]** を **[はい**] に設定します。 
 
 6. [ **スコープ タグ** ] タブで、組織でスコープ タグを使用している場合は、[ **+ スコープ タグの選択]** を選択し、[ **次へ**] を選択します。 (スコープ タグを使用していない場合は、[ **次へ**] を選択します)。スコープ タグの詳細については、「 [分散 IT にロールベースのアクセス制御 (RBAC) とスコープ タグを使用する」を](/mem/intune/fundamentals/scope-tags)参照してください。
 

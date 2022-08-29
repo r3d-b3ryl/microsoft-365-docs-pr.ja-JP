@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ニュージーランド内陸部収益番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 26604014771674a2177f3fee6c062e3bfcee4175
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7df444660c59bd12526d979dd93d5313814083f3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950764"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368063"
 ---
-# <a name="new-zealand-inland-revenue-number"></a>ニュージーランド内陸部の収益番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
+# <a name="new-zealand-inland-revenue-number"></a>ニュージーランドの内国歳入番号
 
 ## <a name="format"></a>フォーマット
 
@@ -46,9 +38,9 @@ ms.locfileid: "66950764"
 
 - 2 桁または 3 桁
 - 省略可能なスペースまたはハイフン
-- 3 桁
+- 3 桁の数字
 - 省略可能なスペースまたはハイフン
-- 3 桁
+- 3 桁の数字
 
 ## <a name="checksum"></a>チェックサム
 
@@ -56,14 +48,14 @@ ms.locfileid: "66950764"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
-- この関数 `Func_new_zealand_inland_revenue_number` は、パターンに一致するコンテンツを検索します。
-- キーワードが `Keywords_new_zealand_inland_revenue_number` 見つかりました。
+- 関数 `Func_new_zealand_inland_revenue_number` がパターンに一致するコンテンツを検出した。
+- `Keywords_new_zealand_inland_revenue_number` のキーワードを検出した。
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという中程度の信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- この関数 `Func_new_zealand_inland_revenue_number` は、パターンに一致するコンテンツを検索します。
+- 関数 `Func_new_zealand_inland_revenue_number` がパターンに一致するコンテンツを検出した。
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->

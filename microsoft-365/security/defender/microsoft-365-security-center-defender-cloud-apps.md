@@ -10,7 +10,7 @@ f1.keywords:
 ms.author: dacurwin
 author: dcurwin
 manager: dansimp
-ms.date: 05/03/2022
+ms.date: 08/21/2022
 audience: ITPro
 ms.topic: article
 search.appverid:
@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: d31288d115cf78d54b87d7d01f162caa209c2094
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 13d178f77efa19ed53c93afa454ddaf6e481a8a6
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106276"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408421"
 ---
 # <a name="microsoft-defender-for-cloud-apps-in-microsoft-365-defender-preview"></a>Microsoft 365 DefenderのMicrosoft Defender for Cloud Apps (プレビュー)
 
@@ -65,7 +65,7 @@ Microsoft 365 Defenderを見てみましょう<https://security.microsoft.com>�
 | クラウド アプリ カタログ |  クラウド アプリ -> Cloud アプリ カタログ |
 | Cloud Discovery スナップショット レポートを作成する | [Cloud Discovery] ページの [アクション] |
 | アクティビティ ログ | クラウド アプリ -> アクティビティ ログ |
-| ファイル | Defender for Cloud Apps ポータルの残り |
+| Files | Defender for Cloud Apps ポータルの残り |
 | ユーザーとアカウント | 資産 -> ID |
 | セキュリティ構成 | Defender for Cloud Apps ポータルの残り |
 | ID セキュリティ体制 | [Microsoft Defender for Identityの ID セキュリティ体制の評価](/defender-for-identity/isp-overview) |
@@ -74,8 +74,9 @@ Microsoft 365 Defenderを見てみましょう<https://security.microsoft.com>�
 
 > [!NOTE]
 > Microsoft 365 Defender ポータルの新しい Defender for Cloud Apps エクスペリエンスは、現在、[管理アクセスの管理](/defender-cloud-apps/manage-admins)に関するページで詳しく説明されているすべてのユーザーに対して利用できます。ただし、次を除きます。
-> * [Defender for Cloud Apps の組み込み管理者ロール](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps)で定義されているように、**App/Instance** 管理者、**ユーザー グループ管理者**、**Cloud Discovery グローバル管理者**、および Cloud **Discovery レポート管理者**。
-> * アクティビティのプライバシーで定義されているユーザー [プライバシー](/defender-cloud-apps/activity-privacy) グループ
+>
+> - [Defender for Cloud Apps の組み込み管理者ロール](/defender-cloud-apps/manage-admins#built-in-admin-roles-in-defender-for-cloud-apps)で定義されているように、**App/Instance** 管理者、**ユーザー グループ管理者**、**Cloud Discovery グローバル管理者**、および Cloud **Discovery レポート管理者**。
+> - アクティビティのプライバシーで定義されているユーザー [プライバシー](/defender-cloud-apps/activity-privacy) グループ
 
 ## <a name="whats-changed"></a>変更内容
 

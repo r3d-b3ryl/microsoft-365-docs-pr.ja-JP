@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 日本の個人用マイナンバー機密情報タイプ エンティティの定義。
-ms.openlocfilehash: 4c5899c985813fd930672da6c0bd32196eaa279f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: 343bc26e3310c4c8586a50b635ef3d5b2398967c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997397"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369810"
 ---
 # <a name="japan-my-number---personal"></a>日本の個人用マイ ナンバー
-
-この機密情報タイプは、次の箇所でのみ使用できます:
-
-- データ損失防止ポリシー
-- コミュニケーション コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 

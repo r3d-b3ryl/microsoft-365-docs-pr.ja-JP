@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: e869317a8a88545c058075909a95ead02177ff10
-ms.sourcegitcommit: 75d0403b4114bdd1d228ca05a284b9e514f6f2f3
+ms.openlocfilehash: 6f478959d8e6de84ad64fdc128c4f7a9eea73a62
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66855023"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369139"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 
@@ -37,6 +37,39 @@ Microsoft Secure Score をセキュリティ体制をより適切に表すため
 より多くの改善アクションを実行すればするほど、セキュリティ スコアは高くなります。 詳細については、 [Microsoft セキュリティ スコア](microsoft-secure-score.md)に関するページを参照してください。
 
 Microsoft Secure Score は<https://security.microsoft.com/securescore>[、Microsoft 365 Defender ポータル](microsoft-365-defender-portal.md)にあります。
+
+## <a name="august-2022"></a>2022 年 8 月
+
+新しいMicrosoft Information Protectionの推奨事項は、セキュア スコアの改善アクションとして使用できるようになりました。
+
+- **ラベル付け**
+  - Azure Purview データ マップの資産に M365 秘密度ラベル付けを拡張する
+  - 自動ラベル付けデータ分類ポリシーが設定され、使用されていることを確認する
+  - M365 秘密度ラベル データ分類ポリシーを公開する
+  - データ損失防止 (DLP) ポリシーを作成する
+
+新しいMicrosoft Defender for Office 365の推奨事項は、セキュリティスコア改善アクションとして使用できるようになりました。
+
+- **スパム対策 - 受信ポリシー**
+  - 電子メール一括苦情レベル (BCL) のしきい値を 6 以下に設定する
+  - スパム検出に対して実行するアクションを設定する
+  - 信頼度の高いスパム検出に対して実行するアクションを設定する
+  - フィッシングの検出に対して実行するアクションを設定する
+  - 信頼度の高いフィッシング検出を実行するアクションを設定する
+  - 一括スパム検出で実行するアクションを設定する
+  - 検疫でスパムを 30 日間保持する
+  - スパムの安全性に関するヒントが有効になっていることを確認する
+  - スパム対策ポリシーに対して送信者ドメインが許可されていないことを確認します ("スパム対策ポリシーで許可されている送信者ドメインがないことを確認する" と置き換えて、特定の送信者に対しても機能を拡張します)
+
+- **スパム対策 - 送信ポリシー**
+  - ユーザーが 1 時間あたりに電子メールで送信できる外部受信者の最大数を設定する
+  - ユーザーが 1 時間以内に送信できる内部受信者の最大数を設定する
+  - 1 日のメッセージ制限を設定する
+  - メッセージの制限に達したユーザーをブロックする
+  - 自動メール転送ルールをシステム制御に設定する
+
+- **スパム対策 - 接続フィルター**
+  - 接続フィルター ポリシーに許可された IP アドレスを追加しない
 
 ## <a name="june-2022"></a>2022 年 6 月
 

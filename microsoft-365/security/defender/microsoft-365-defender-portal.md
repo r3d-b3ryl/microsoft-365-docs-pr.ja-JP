@@ -24,12 +24,12 @@ ms.custom:
 ms.topic: conceptual
 ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: c2915adc7b9b49015cdb436886563c4eba74d989
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: f55172bf0a7df4e15e690a5e0847c81b3cc537dc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617354"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328587"
 ---
 # <a name="microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータル
 
@@ -124,7 +124,7 @@ Defender for Endpoint と Defender for Identity では、次のエンティテ�
     >[!NOTE]
     >IP と URL の検索は完全に一致し、検索結果ページには表示されません – これらは、エンティティ ページに直接誘導されます。 
 
-- **TVM** - Defender for Endpoint と同じ機能 (脆弱性、ソフトウェア、推奨事項)。 
+- **MDVM** - Defender for Endpoint (脆弱性、ソフトウェア、推奨事項) と同じ機能。 
 
 ## <a name="threat-analytics"></a>脅威の分析
 

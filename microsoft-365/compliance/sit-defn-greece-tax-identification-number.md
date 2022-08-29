@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ギリシャの税識別番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 13fe64c6cae50526e0e3bd3b631b1ca936c10b71
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 6a9928223a95355157ac1bef14480aa686524c3b
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997292"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369949"
 ---
 # <a name="greece-tax-identification-number"></a>ギリシャの納税者番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -46,13 +38,13 @@ ms.locfileid: "66997292"
 
 ## <a name="checksum"></a>チェックサム
 
-該当なし
+対象外
 
 ## <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- 正規表現 `Regex_greece_eu_tax_file_number` は、パターンに一致するコンテンツを検索します。
+- 正規表現 `Regex_greece_eu_tax_file_number` がパターンに一致するコンテンツを検出した。
 - `Keywords_greece_eu_tax_file_number` のキーワードを検出した。
 
 ```xml

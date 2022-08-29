@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: 組織内外のユーザー間で暗号化された電子メール メッセージを送受信する方法について説明します。
-ms.openlocfilehash: 746a1cbb1d4fa5e98fb3fc3cbba529232178987c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0501aeb833d41048e6e3f8848f20b3e4b0bc217b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640568"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427116"
 ---
 # <a name="message-encryption"></a>メッセージ暗号化
 
@@ -38,7 +38,7 @@ Office 365 Message Encryption を使用すると、組織は組織内外のユ�
 
 Microsoft Purview Message Encryptionは、Azure Information Protectionの一部である Microsoft Azure Rights Management (Azure RMS) 上に構築されたオンライン サービスです。 このサービスには、電子メールのセキュリティ保護に役立つ暗号化、ID、承認ポリシーが含まれています。 メッセージを暗号化するには、アクセス許可管理のテンプレートである[転送不可オプション](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)および[暗号化のみ](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)オプションを使用します。
 
-その後、ユーザーはこれらのオプションを使用して電子メール メッセージとさまざまな添付ファイルを暗号化できます。 サポートされているすべての添付ファイルの種類の一覧については、「[IRM ポリシーの対象となるメッセージ添付ファイルの種類](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)」を参照してください。
+その後、ユーザーはこれらのオプションを使用して電子メール メッセージとさまざまな添付ファイルを暗号化できます。 サポートされている添付ファイルの種類の完全な一覧については、 [電子メール メッセージの IRM の概要に関する記事の「IRM ポリシーがメッセージに添付されたときのファイルの種類」を参照](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)してください。
 
 管理者は、この保護を適用するメール フロー ルールを定義することもできます。 たとえば、特定の受信者宛てのすべてのメッセージや件名行に特定の言葉が含まれるメッセージの暗号化を要求したり、受信者はメッセージのコンテンツのコピーや印刷の禁止を規定したりするルールを作成できます。
 
@@ -48,11 +48,11 @@ Microsoft Purview Message Encryptionは、Azure Information Protectionの一部�
 
 暗号化メール フロー ルールに一致するメール メッセージを誰かが送信すると、メッセージは送信される前に暗号化されます。 Outlook クライアントを使用してメールを読み取るすべての Microsoft 365 エンド ユーザーは、送信者と同じ組織にいない場合でも、暗号化された権限で保護されたメールのネイティブのファースト クラスの読み取りエクスペリエンスを受け取ります。 サポートされている Outlook クライアントには、Outlook デスクトップ、Outlook Mac、iOS および Android の Outlook Mobile、Outlook on the web (旧称: Outlook Web App) が含まれます。
 
-Outlook.com、Gmail、および Yahoo アカウントに送られた暗号化され権限で保護されたメッセージを受信する暗号化されたメッセージの受信者には、Microsoft アカウント、Gmail、または Yahoo の資格情報を使用してすばやく認証を行える OME ポータルにユーザーをリダイレクトするラッパー メールが送信されます。
+暗号化されたメッセージの受信者が、Outlook.com、Gmail、および Yahoo アカウントに送信された暗号化されたメールまたは権限で保護されたメールを受け取る場合は、暗号化されたメッセージ ポータルに送信されるラッパー メールを受け取り、Microsoft アカウント、Gmail、または Yahoo 資格情報を使用して簡単に認証できます。
 
-Outlook 以外のクライアントで暗号化または権限で保護されたメールを読み取るエンド ユーザーは、OME ポータルを使用して、受信した暗号化された権限で保護されたメッセージを表示することもできます。
+Outlook 以外のクライアントで暗号化または権限で保護されたメールを読み取るエンド ユーザーは、暗号化されたメッセージ ポータルを使用して、受信した暗号化された権限で保護されたメッセージを表示することもできます。
 
-保護されたメールの送信者が GCC High にあり、受信者が GCC High の外部にある場合 (商用ユーザー、Outlook.com ユーザー、Gmail などの他のメール プロバイダーのユーザーを含む) は、受信者にラッパー メールを受信します。 ラッパー メッセージは、メッセージの閲覧と返信が行える OME ポータルにリダイレクトします。 上記以外の場合で、送信者と受信者の両方が GCC High の内部にいる場合は、たとえ受信者が同じ組織に存在していない場合でも、Outlook クライアントを使用してメールを読む受信者には暗号化され権限で保護されたメールでネイティブの、ファーストクラスの読み取り操作が提供されます。 GCC High での操作方法の違いの詳細については、「[OME のバージョンを比較する](ome-version-comparison.md)」を参照してください。
+保護されたメールの送信者が GCC High にあり、受信者が GCC High の外部にある場合 (商用ユーザー、Outlook.com ユーザー、Gmail などの他のメール プロバイダーのユーザーを含む) は、受信者にラッパー メールを受信します。 ラッパー メールは、受信者がメッセージを読み取って返信できる暗号化されたメッセージ ポータルに受信者を送信します。 上記以外の場合で、送信者と受信者の両方が GCC High の内部にいる場合は、たとえ受信者が同じ組織に存在していない場合でも、Outlook クライアントを使用してメールを読む受信者には暗号化され権限で保護されたメールでネイティブの、ファーストクラスの読み取り操作が提供されます。 GCC High での操作方法の違いの詳細については、「[OME のバージョンを比較する](ome-version-comparison.md)」を参照してください。
 
 OME を使用して暗号化できるメッセージおよび添付ファイルのサイズ制限の詳細については、 「[Exchange Online の制限](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)」を参照してください。
 
@@ -68,7 +68,7 @@ Microsoft 365 の高度なメッセージ暗号化は、暗号化されたメー
 
 Microsoft Purview Message Encryptionを有効にする 1 つの方法は、Exchange Online管理者とExchange Online Protection管理者がメール フロー ルールを定義することです。 これらのルールにより、メール メッセージの暗号化が求められる条件が規定されます。 暗号化アクションをルールで設定すると、そのルールの条件を満たすすべてのメッセージが送信前に暗号化されます。
 
-メール フロー ルールは柔軟であるため条件を組み合わせることができ、1 つのルールで特定のセキュリティ要件を満たすことができます。 たとえば、指定したキーワードを含み、外部の受信者に宛てられたすべてのメッセージを暗号化するルールを作成できます。 Microsoft Purview Message Encryption暗号化された電子メールの受信者からの返信も暗号化されます。
+メール フロー ルールは柔軟であるため条件を組み合わせることができ、1 つのルールで特定のセキュリティ要件を満たすことができます。 たとえば、指定したキーワードを含み、外部の受信者に宛てられたすべてのメッセージを暗号化するルールを作成できます。 Microsoft Purview Message Encryptionでは、暗号化された電子メールの受信者からの返信も暗号化されます。
 
 Microsoft Purview Message Encryptionを利用するメール フロー ルールを作成する方法の詳細については、「[メール メッセージを暗号化するメール フロー ルールを定義する」を](define-mail-flow-rules-to-encrypt-email.md)参照してください。
 
@@ -80,7 +80,7 @@ Microsoft Purview Message Encryptionを利用するメール フロー ルール
 
 Microsoft Purview Message Encryptionを使用すると、ユーザーは Outlook とOutlook on the webから暗号化された電子メールを送信できます。 さらに、管理者は Microsoft 365 でメール フロー ルールを設定して、キーワード一致やその他の条件に基づいて電子メールを自動的に暗号化できます。
 
-組織にいる暗号化されたメッセージの受信者は、Outlook for PC、Outlook for Mac、Outlook on the web、Outlook for iOS、Android 用 Outlook など、任意のバージョンの Outlook でこれらのメッセージをシームレスに読み取ることができるでしょう。 他のメール クライアントで暗号化されたメッセージを受信するユーザーは、OME ポータルでメッセージを表示できます。
+組織にいる暗号化されたメッセージの受信者は、Outlook for PC、Outlook for Mac、Outlook on the web、Outlook for iOS、Android 用 Outlook など、任意のバージョンの Outlook でこれらのメッセージをシームレスに読み取ることができるでしょう。 他の電子メール クライアントで暗号化されたメッセージを受信するユーザーは、暗号化されたメッセージ ポータルでメッセージを表示できます。
 
 暗号化されたメッセージを送信して表示する方法の詳細については、これらの記事を参照してください。
 

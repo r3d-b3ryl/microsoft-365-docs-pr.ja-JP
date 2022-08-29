@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 07/26/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -20,23 +20,23 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 365 Business Premium で高い生産性とセキュリティを実現し、ビジネスをより安全に行う方法について説明します。
-ms.openlocfilehash: b70b62790330a6e92d52a8f490eebd0b8b0efccf
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
-ms.translationtype: HT
+ms.openlocfilehash: ed739d1fd65925d2d8de71ec78603f811dc7f3b3
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300631"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433534"
 ---
 # <a name="productivity-and-security-for-small-and-medium-sized-businesses"></a>中小企業の生産性とセキュリティ 
 
 Microsoft 365 Business Premium は、中小企業 (従業員 1 - 300 人) 向けに設計および構築された、生産性とセキュリティのための包括的なクラウド ソリューションです。 Microsoft 365 Business Premium を使用すると、次のことができます:
 
-- Microsoft Teams などのクラス最高のコラボレーション ツールを使用して、現場で作業している場合でもリモートで作業している場合でも、従業員のつながりと生産性を高めることができます。
-- 従業員にビジネス データとアプリへの安全なアクセスを提供し、承認された担当者のみが秘密の作業データにアクセスできるようにします。
-- フィッシング、ランサムウェア、データ損失への対策を施すことで、高度なサイバー脅威からビジネス データを守ります。
-- データに接続するデバイス (Windows、Mac、iOS、Android) を管理して安全を確保し、それらのデバイスを最新の状態に保ちます。
+- [Microsoft Teams](create-teams-for-collaboration.md) などのクラス最高のコラボレーション ツールを使用して、従業員がサイト上でもリモートでも **、つながり、生産性** を高めることができます。
+- **従業員にビジネス データとアプリへの安全なアクセスを提供** し、承認された担当者のみが機密作業データにアクセスできるようにします。
+- **高度なサイバー脅威から保護し、** フィッシング、ランサムウェア、データ損失に対する高度な保護を使用してビジネス データを保護します。
+- データに接続するデバイス (Windows、Mac、iOS、Android) を **管理してセキュリティで保護** し、それらのデバイスを最新の状態に保ちます。
 
-Microsoft 365 Business Premium は、生産性とセキュリティのための包括的なソリューションを提供します。 管理者や IT 担当者による管理、請求、24 時間 365 日のサポートに必要なものがすべて 1 か所にまとまっていて、ビジネス コストを削減できると同時に複雑さが解消されます。 この記事は、Microsoft 365 Business Premium がビジネスまたはキャンペーンにどのように役立つかについて説明し、次のセクションに分かれています。
+Microsoft 365 Business Premium は、生産性とセキュリティのための包括的なソリューションを提供します。 管理者や IT 担当者による管理、請求、24 時間 365 日のサポートに必要なものがすべて 1 か所にまとまっていて、ビジネス コストを削減できると同時に複雑さが解消されます。 この記事に含まれるセクションは次のとおりです。
 
 - [ビデオ: Microsoft 365 Business Premium の 5 つの主な利点。](#video-top-5-benefits-of-microsoft-365-business-premium)
 - 場所を問わず、さまざまなデバイスでより安全なビジネスを可能にする[生産性と高度なセキュリティ機能](#productivity-and-security)
@@ -94,4 +94,4 @@ Microsoft 365 Business Premium には、お気に入りの Office 生産性ア�
 
 2. [セットアップ プロセスを再開してください](m365bp-setup-overview.md)。
 
-3. [セキュリティを強化します](m365bp-security-overview.md)。
+3. [セキュリティ機能を設定します](m365bp-security-overview.md)。

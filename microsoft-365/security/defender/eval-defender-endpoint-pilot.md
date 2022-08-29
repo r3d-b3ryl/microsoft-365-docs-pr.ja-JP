@@ -22,12 +22,12 @@ ms.collection:
 - zerotrust-solution
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c12d1bca36884a7b43580b0685f38df99e51ba1d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 44e6e341bd47dfb4d0debe1975c79f00cdb5a1da
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750409"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328961"
 ---
 # <a name="pilot-microsoft-defender-for-endpoint"></a>パイロット Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ Microsoft Defender for Endpointをパイロットする場合は、組織全体�
 
 その後、攻撃シミュレーションの実行、Defender for Endpoint による悪意のあるアクティビティの表示方法、効率的な対応を可能にする方法など、使用可能な機能を試すことができます。 
 
-## <a name="step-1-verify-pilot-group"></a>手順 1. パイロット グループを確認する
+## <a name="step-1-verify-pilot-group"></a>手順 1。 パイロット グループを確認する
 [[評価を有効にする]](eval-defender-endpoint-enable-eval.md) セクションで説明されているオンボード手順を完了すると、約 1 時間後にデバイス インベントリの一覧にデバイスが表示されます。 
 
 オンボードされたデバイスが表示されたら、機能の試用に進むことができます。 
@@ -59,8 +59,8 @@ Microsoft Defender for Endpointをパイロットする場合は、組織全体�
 ### <a name="view-the-device-inventory"></a>デバイス インベントリを表示する
 デバイス インベントリには、ネットワーク内のエンドポイント、ネットワーク デバイス、IoT デバイスの一覧が表示されます。 ネットワーク内のデバイスのビューが提供されるだけでなく、ドメイン、リスク レベル、OS プラットフォームなどの詳細な情報も提供され、最も危険にさらされているデバイスを簡単に識別できます。
 
-### <a name="view-the-threat-and-vulnerability-management-dashboard"></a>脅威と脆弱性の管理ダッシュボードを表示する 
-脅威と脆弱性の管理は、組織にとって最も緊急でリスクの高い弱点に焦点を当てるのに役立ちます。 ダッシュボードから、組織の公開スコア、Microsoft Secure Score for Devices、デバイスの公開分布、セキュリティに関する推奨事項、脆弱なソフトウェアの上位、修復アクティビティの上位、および公開された上位デバイス データの概要を確認します。 
+### <a name="view-the-microsoft-defender-vulnerability-management-dashboard"></a>Microsoft Defender 脆弱性の管理 ダッシュボードを表示する 
+Defender の脆弱性管理は、組織にとって最も緊急でリスクの高い弱点に焦点を当てるのに役立ちます。 ダッシュボードから、組織の公開スコア、Microsoft Secure Score for Devices、デバイスの公開分布、セキュリティに関する推奨事項、脆弱なソフトウェアの上位、修復アクティビティの上位、および公開された上位デバイス データの概要を確認します。 
 
 ### <a name="run-a-simulation"></a>シミュレーションを実行する
 Microsoft Defender for Endpointには、パイロット デバイスで実行できる ["Do It Yourself" 攻撃シナリオ](https://securitycenter.windows.com/tutorials)が付属しています。  各ドキュメントには、OS とアプリケーションの要件、および攻撃シナリオに固有の詳細な手順が含まれています。 これらのスクリプトは、安全で文書化されており、使いやすいです。 これらのシナリオでは、Defender for Endpoint 機能が反映され、調査エクスペリエンスについて説明します。

@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Microsoft 製品に関してユーザーが Microsoft に送信できるフィードバックを管理します。
-ms.openlocfilehash: d32b9f1150443bc4fc4e859004949d6f27b6914d
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 24b421598815c163599932d761908b0765acea1b
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300806"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67406214"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>組織に対する Microsoft フィードバックを管理する
 
-Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する場合に、フィードバックの収集とユーザーのカスタマー エンゲージメント エクスペリエンスを管理するのに役立ついくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active Directory グループを作成して使用できます。 これらのポリシーを使用すると、組織内のさまざまな部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたすべてのフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オン** にしておくと、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているかを確認できます。 ユーザーから収集したフィードバックは、まもなく<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>で利用できるようになります。
+Microsoft 365 組織の管理者として、Microsoft 365 アプリケーションを使用する場合に、フィードバックの収集とユーザーのカスタマー エンゲージメント エクスペリエンスを管理するのに役立ついくつかのポリシーが追加されました。 これらのポリシーごとに、組織内の既存の Azure Active Directory グループを作成して使用できます。 これらのポリシーを使用すると、組織内のさまざまな部署が Microsoft にフィードバックを送信する方法を制御できます。 Microsoft は、お客様から送信されたすべてのフィードバックを確認し、このフィードバックを使用して製品を改善します。 フィードバック エクスペリエンスを **オン** にしておくと、ユーザーが使用している Microsoft 製品についてユーザーが何を言っているかを確認できます。 ユーザーから収集したフィードバックは<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">、Microsoft 365 管理センター</a>で入手できます。
 
 フィードバックの種類と Microsoft によるユーザー フィードバックの使用方法の詳細については、「 [組織の Microsoft フィードバックについて学習する](../misc/feedback-user-control.md)」を参照してください。
 
@@ -40,17 +40,25 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|はい|はい|はい|はい|
 |**Excel**|はい|はい|はい|はい|
+|**Forms**|はい|はい|はい|はい|
+|**Intune ポータル サイト (Android)**|はい|はい|はい|はい|
+|**Microsoft Stream (Android、iOS)**|はい|はい|はい|はい|
+|**Microsoft Whiteboard**|はい|はい|はい|はい|
 |**Office.com**|近日公開|近日公開|近日公開|近日公開|
 |**OneNote**|はい|はい|はい|はい|
 |**OneDrive**|[現在、他のコントロールによって管理されている一部の設定。](/onedrive/disable-contact-support-send-feedback)||||
-|**Outlook**|近日公開|近日公開|近日公開|近日公開|
+|**Outlook (Web、iOS)**|近日公開|近日公開|近日公開|近日公開|
+|**Outlook (デスクトップ、Android、Mac)**|近日公開|近日公開|近日公開|近日公開|
 |**PowerPoint**|はい|はい|はい|はい|
 |**プロジェクト**|近日公開|近日公開|近日公開|近日公開|
 |**発行元**|はい|はい|はい|はい|
 |**SharePoint**|[現在、他のコントロールによって管理されている一部の設定。](/powershell/module/sharepoint-online/set-spotenant)||||
 |**Teams**|[現在、他のコントロールによって管理されている一部の設定。](/microsoftteams/manage-feedback-policies-in-teams)||||
+|**To Do**|はい|はい|はい|はい|
 |**Word**|はい|はい|はい|はい|
 |**Visio**|はい|はい|はい|はい|
+|**Viva ゴール**|はい|はい|はい|はい|
+|**Whiteboard**|はい|はい|はい|はい|
 |**Yammer**|はい|はい|はい|はい|
 
 [製品内のアンケートとフィードバックの例については、こちらを参照してください。](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
@@ -83,7 +91,7 @@ Microsoft 365 組織の管理者として、Microsoft 365 アプリケーショ�
 |ユーザーにフィードバック ポータルへのアクセスを許可する|オン|フィードバック ポータルへのユーザー アクセスを管理する|
 |ユーザーが Microsoft にフィードバックを送信できるようにする|オン|アプリケーション間のフィードバック エントリ ポイントを制御する|
 |ユーザーが Microsoft からの製品内アンケートを受信して回答できるようにする|オン|製品内のアンケート プロンプトを制御する|
-|ユーザーが Microsoft にフィードバックを送信するときに、スクリーンショットや添付ファイルを含めることを許可する|オフ|ユーザーがフィードバック/アンケートで送信することを決定できるメタデータを決定します|
+|ユーザーが Microsoft にフィードバックを送信するときに、スクリーンショットや添付ファイルを含めることを許可する|Off|ユーザーがフィードバック/アンケートで送信することを決定できるメタデータを決定します|
 |ユーザーが提出したフィードバックを Microsoft がフォローアップできるようにする|Off|ユーザーがフィードバック/アンケートで連絡先情報を共有できるかどうかを決定します|
 |フィードバックが Microsoft に送信されるときに、ログ ファイルやコンテンツ サンプルを含めることを許可する|Off|ユーザーがフィードバック/アンケートで送信することを決定できるメタデータを決定します|
 

@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 9d0bff0caec40fa0f4503508643f9aae95a27389
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 9669e0788197f59f6d46c0475a89c67310e32ec9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051516"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328609"
 ---
 # <a name="microsoft-defender-for-endpoint-in-microsoft-365-defender"></a>Microsoft 365 Defender の Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ ms.locfileid: "67051516"
 
 | Microsoft Defender セキュリティ センター | Microsoft 365 Defender |
 |---------|---------|
-| ダッシュボード <ul><li>セキュリティ操作</li><li>脅威の分析</li></ul>  |Home <ul><li>脅威の分析</li></ul>   |
+| ダッシュボード <ul><li>セキュリティ操作</li><li>脅威の分析</li></ul>  |ホーム <ul><li>脅威の分析</li></ul>   |
 | インシデント | インシデントとアラート |
 | デバイス一覧 | デバイス一覧 |
 | アラート キュー | インシデントとアラート |
@@ -52,10 +52,10 @@ ms.locfileid: "67051516"
 | 高度な追及 | 検索 |
 | レポート | レポート |
 | パートナー& API | パートナー& API |
-| 脅威&脆弱性管理 | 脆弱性管理 |
+| Microsoft Defender 脆弱性の管理 | 脆弱性管理 |
 | 評価とチュートリアル | 評価&チュートリアル |
 | 構成管理環境 | 構成管理環境 |
-| 設定 | 設定 | 
+| Settings | Settings | 
 
 強化された[Microsoft 365 Defender](microsoft-365-defender-portal.md)<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">https://security.microsoft.com</a>は、電子メール、コラボレーション、ID、デバイスの脅威を保護、検出、調査、および対応するセキュリティ機能を組み合わせたものです。 これにより、Microsoft Defender セキュリティ センターやOffice 365 セキュリティ & コンプライアンス センターなど、既存の Microsoft セキュリティ ポータルの機能がまとめられます。
 
@@ -96,10 +96,10 @@ Microsoft 365 Defenderを見てみましょう<a href="https://go.microsoft.com/
 
 | 分野 | 変更の説明 |
 |---------|---------|
-|検索   |  検索バーはページの上部にあります。 入力時に提案が提供されます。 Defender for Endpoint と Defender for Identity では、次のエンティティを検索できます。 <br><br> - **デバイス** - Defender for Endpoint と Defender for Identity の両方でサポートされます。 たとえば、"contains" を使用してホスト名の一部を検索するなど、検索演算子を使用することもできます。 <br><br> - **ユーザー** - Defender for Endpoint と Defender for Identity の両方でサポートされています。 <br><br> - **ファイル、IP、URL** - Defender for Endpoint と同じ機能。 <br> 注: *IP と URL の検索は完全に一致し、検索結果ページには表示されません。エンティティ ページに直接移動します。  <br><br> - **TVM** - Defender for Endpoint と同じ機能 (脆弱性、ソフトウェア、推奨事項)。 <br><br>  強化された検索結果ページでは、すべてのエンティティからの結果が一元化されます。  |
+|検索   |  検索バーはページの上部にあります。 入力時に提案が提供されます。 Defender for Endpoint と Defender for Identity では、次のエンティティを検索できます。 <br><br> - **デバイス** - Defender for Endpoint と Defender for Identity の両方でサポートされます。 たとえば、"contains" を使用してホスト名の一部を検索するなど、検索演算子を使用することもできます。 <br><br> - **ユーザー** - Defender for Endpoint と Defender for Identity の両方でサポートされています。 <br><br> - **ファイル、IP、URL** - Defender for Endpoint と同じ機能。 <br> 注: *IP と URL の検索は完全に一致し、検索結果ページには表示されません。エンティティ ページに直接移動します。  <br><br> - **MDVM** - Defender for Endpoint (脆弱性、ソフトウェア、推奨事項) と同じ機能。 <br><br>  強化された検索結果ページでは、すべてのエンティティからの結果が一元化されます。  |
 |[ダッシュボード](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  これはセキュリティ操作ダッシュボードです。 アクティブなアラートの数、どのデバイスが危険にさらされているか、どのユーザーが危険にさらされているか、アラート、デバイス、ユーザーの重大度レベルの概要を確認します。 センサーの問題、サービスの全体的な正常性、未解決のアラートが検出された方法についても確認できます。 |
 |デバイス一覧 | 変更はありません。 |
-|[脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    ナビゲーション ウィンドウに収まるように名前が短くされました。 脅威と脆弱性の管理 セクションと同じで、下のすべてのページが表示されます。     |
+|[脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    ナビゲーション ウィンドウに収まるように名前が短くされました。 Microsoft Defender 脆弱性の管理 セクションと同じで、下のすべてのページが表示されます。     |
 | パートナーと API | 変更はありません。 |
 | 評価&チュートリアル    |     新しいテストと学習機能。     |
 | 構成管理環境   |  変更はありません。  |
@@ -116,7 +116,7 @@ Microsoft 365 Defenderを見てみましょう<a href="https://go.microsoft.com/
 |---------|---------|
 | レポート  | 脅威の保護、デバイスの正常性とコンプライアンス、脆弱なデバイスなど、エンドポイントと電子メール &コラボレーションのレポートを参照してください。 |
 | 正常性  |  現在、Microsoft 365 管理センターの [サービス正常性] [ページにリンク](https://admin.microsoft.com/)しています。 |
-| 設定 |  Microsoft 365 Defender、エンドポイント、Email &コラボレーション、ID、デバイス検出の設定を管理します。   |
+| Settings |  Microsoft 365 Defender、エンドポイント、Email &コラボレーション、ID、デバイス検出の設定を管理します。   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 のセキュリティ ナビゲーションと機能
 

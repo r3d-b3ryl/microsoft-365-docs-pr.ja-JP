@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: f617129218d9ce7f75204c45fba39109bf214680
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: fa357d70fb5493519b55624358a56d8c8dd28f5c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275842"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386453"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Mac でのMicrosoft Defender for Endpointの新機能
 
@@ -35,6 +35,26 @@ ms.locfileid: "67275842"
 他のオペレーティング システムでのMicrosoft Defender for Endpointの詳細については、次の手順を参照してください。 
 - [Linux でのMicrosoft Defender for Endpointの新機能](linux-whatsnew.md) 
 - [iOS でのMicrosoft Defender for Endpointの新機能](ios-whatsnew.md)</br>
+
+<details>
+  <summary>2022 年 8 月 (ビルド: 101.78.13 |リリース バージョン: 20.122072.17813.0)</summary>
+
+&ensp;ビルド: **101.78.13**<br/>
+&ensp;リリース バージョン: **20.122072.17813.0**<br/>
+&ensp;エンジンバージョン: **1.1.19500.2**<br/>
+&ensp;署名バージョン: **1.373.556.0**<br/>
+
+**新機能**
+
+- アプリケーション サポート フォルダーを正しく削除するアンインストーラーを修正しました
+- ファイアウォールまたは iCloud プライベート リレーがオンの場合に Safari をフィルター処理しないネットワーク保護を修正しました
+- osqueryui の不用意なプロセスを修正しました
+- ベントゥラの UI クラッシュを修正しました
+- インストール直後に定義がダウンロードされない問題を修正しました
+- その他のバグ修正
+
+<br/>
+</details>
 
 <details>
   <summary>2022 年 8 月 (ビルド: 101.75.90 |リリース バージョン: 20.122071.17590.0)</summary>
@@ -425,7 +445,7 @@ ms.locfileid: "67275842"
 &ensp;リリース バージョン: **20.121022.12750.0** <br/> 
 
 **新機能**
-- macOS Catalina 以前の Apple 証明書の有効期限に対応するように修正しました。 この修正プログラムは、脅威&脆弱性管理 (TVM) 機能を復元します。  
+- macOS Catalina 以前の Apple 証明書の有効期限に対応するように修正しました。 この修正プログラムは、Microsoft Defender 脆弱性の管理 (MDVM) 機能を復元します。  
 
 <br/>
 </details>

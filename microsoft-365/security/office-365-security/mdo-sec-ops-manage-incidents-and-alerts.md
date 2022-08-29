@@ -18,12 +18,12 @@ ms.custom: ''
 description: SecOps 担当者は、Microsoft 365 Defenderのインシデント キューを使用してMicrosoft Defender for Office 365のインシデントを管理する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8467d77bd3bdd99af0a33f7fc373e61f7e3efb51
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: ef744ec88f8ee81d33e537b5ffc9d128c724f84f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649371"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383834"
 ---
 # <a name="manage-incidents-and-alerts-from-microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 DefenderのMicrosoft Defender for Office 365からインシデントとアラートを管理する
 
@@ -120,7 +120,7 @@ Microsoft Sentinel <https://portal.azure.com/#blade/HubsExtension/BrowseResource
 
 - [脅威エクスプローラー](threat-explorer.md)または[管理者の提出](admin-submission.md)を使用して、誤検知または誤検知の検出を Microsoft に直接報告できます。
 
-- [テナント許可/ブロック リスト](tenant-allow-block-list.md)を使用して、検出されない悪意のあるファイル、URL、または送信者をブロックできます。
+- [テナント許可/ブロック リスト](manage-tenant-allow-block-list.md)を使用して、検出されない悪意のあるファイル、URL、または送信者をブロックできます。
 
 Defender for Office 365アクションはハンティング エクスペリエンスにシームレスに統合され、アクションの履歴は統合 **アクション センター** の [**履歴**] タブに<https://security.microsoft.com/action-center/history>表示されます。
 

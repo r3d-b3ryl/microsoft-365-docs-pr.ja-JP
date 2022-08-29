@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、毎月Microsoft 365 Lighthouseで追加、変更、および修正された内容を確認します。
-ms.openlocfilehash: d7538cf55feaf4adc6d0d741f21b13c4a9e19b80
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: fd5e7d611146237482fd53753c7362ce83639225
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67106451"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432290"
 ---
 # <a name="whats-new-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの新機能
 
@@ -30,6 +30,30 @@ Microsoft 365 Lighthouse[に新機能](m365-lighthouse-overview.md)を継続的�
 
 > [!NOTE]
 > 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、すぐに表示されます。
+
+## <a name="august-2022"></a>2022 年 8 月
+
+### <a name="view-and-manage-inactive-user-accounts"></a>非アクティブなユーザー アカウントを表示および管理する 
+
+Microsoft 365 Lighthouse、マネージド テナント内のすべての非アクティブなユーザー アカウントの一覧が表示されるようになりました。 一覧にアクセスするには、Microsoft 365 Lighthouseの左側のナビゲーション ウィンドウで [**ユーザー** > **非アクティブユーザー**] を選択します。 この一覧を使用して、まだ有効になっているが、過去 6 か月間に使用されていないアカウントを追跡およびクリーンアップすることで、セキュリティ リスクを軽減できます。 
+
+### <a name="microsoft-edge-policy-deployment"></a>Microsoft Edge ポリシーの展開   
+
+Microsoft Edge ポリシーの展開タスクが既定のベースラインに追加されました。 この展開タスクでは、フィッシングやマルウェアに対する組み込みの保護を含む Edge セキュリティ設定を使用して、顧客テナントのブラウザーをセキュリティで保護できます。 Microsoft Edge は、Windows 10 以降を実行しているデバイスを持つ中小企業向けの Google Chromiumよりも安全性が高いことが証明されています。
+
+詳細については、 [ビジネス向けの Microsoft Edge セキュリティに関するページを参照してください](/deployedge/ms-edge-security-for-business)。
+
+### <a name="deployment-status-reporting"></a>デプロイ状態レポート 
+
+Microsoft 365 Lighthouseデプロイ計画ごとにデプロイ状態が提供され、それに応じてデプロイ作業を最適化し、優先順位を付けることができます。
+
+### <a name="enhanced-deployment-insights-for-licensing"></a>ライセンスに関する強化されたデプロイ分析情報
+
+Microsoft 365 Lighthouseでは、ライセンス不足が原因でどのユーザーに対してどのデプロイ タスクを完了できないかについての分析情報が提供されるようになりました。 これらの分析情報は、デプロイ計画を完了するために、ライセンスまたは展開計画を適宜調整するのに役立ちます。
+
+### <a name="enhanced-baseline-deployment-with-direct-links-to-existing-configurations"></a>既存の構成への直接リンクを使用したベースライン展開の強化
+
+ベースライン展開エクスペリエンスが強化され、顧客テナントの正常性とセキュリティが確保され、迅速かつ簡単になりました。 検出された顧客テナント構成へのリンクが追加されました。そのため、該当する管理ポータルでこれらのテナント構成を簡単に見つけ、確認、変更できます。
 
 ## <a name="july-2022"></a>2022 年 7 月
 
@@ -49,7 +73,7 @@ Microsoft 365 Lighthouse、次の方法で、すべてのマネージド テナ�
 
 ### <a name="support-for-microsoft-365-e5-customers"></a>Microsoft 365 E5のお客様のサポート
 
-オンボーディング要件を変更し、Microsoft 365 E5顧客をMicrosoft 365 Lighthouseにオンボードできるようにしました。 オンボードにサポートMicrosoft 365 Lighthouseライセンスの拡張リストには、Microsoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、ビジネス向けのMicrosoft Defender for BusinessとWindows 365。 これらのライセンスのいずれかを少なくとも 1 つ持ち、委任されたアクセス許可の要件を満たしており、ライセンスされたユーザーの最大数を超えないお客様は、Microsoft 365 Lighthouseで管理できます。  
+オンボーディング要件を変更し、Microsoft 365 E5顧客をMicrosoft 365 Lighthouseにオンボードできるようにしました。 オンボードにサポートMicrosoft 365 Lighthouseライセンスの拡張リストには、Microsoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、ビジネス向けのMicrosoft Defender for BusinessとWindows 365。 これらのライセンスのいずれかを少なくとも 1 つ持ち、委任されたアクセス許可の要件を満たし、ライセンスを受けたユーザーの最大数を超えないお客様は、Microsoft 365 Lighthouseで管理できます。  
 
 要件の完全な一覧については、「[Microsoft 365 Lighthouseの要件」を](m365-lighthouse-requirements.md)参照してください。
 
@@ -83,7 +107,7 @@ Microsoft 365 LighthouseがMicrosoft Defender for Businessと統合され、Micr
 
 ### <a name="delegated-access-type-and-roles-on-tenants-page"></a>[テナント] ページの委任されたアクセスの種類とロール
 
-テナント **ページが** 更新され、マネージド サービス プロバイダー (MSP) の委任されたアクセスの種類 (None、DAP、GDAP、または両方の DAP & GDAP) が、お客様ごとに **[委任されたアクセス** ] 列に一覧表示されました。 また、サインインしているユーザーの顧客ごとの DAP ロールと GDAP ロールを一覧表示する [ **ロール** ] というタイトルの新しい列も追加されました。 テナント **ページに** 対するこれら 2 つの機能強化により、パートナー技術者は、各顧客で使用できる委任された管理アクセス許可の種類と、どの委任されたロールが明示的に付与されているかを理解しやすくなります。
+テナント **ページが** 更新され、マネージド サービス プロバイダー (MSP) の委任されたアクセスの種類 (None、DAP、GDAP、または両方の DAP & GDAP) が、お客様ごとに **[委任されたアクセス** ] 列に一覧表示されました。 また、サインインしているユーザーの顧客ごとの DAP ロールと GDAP ロールを一覧表示する [ **ロール** ] というタイトルの新しい列も追加されました。 テナント **ページに** 対するこれら 2 つの機能強化により、MSP 技術者は、各顧客で使用できる委任された管理アクセス許可の種類と、どの委任されたロールが明示的に付与されているかを理解しやすくなります。
 
 詳細については、「[Microsoft 365 Lighthouseのアクセス許可の概要](m365-lighthouse-overview-of-permissions.md)」を参照してください。
 

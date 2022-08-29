@@ -1,7 +1,7 @@
 ---
 title: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブル
-description: 高度な検索スキーマの DeviceTvmSecureConfigurationAssessmentKB テーブルに記載される、脅威および脆弱性管理により評価されるさまざまなセキュリティ構成について説明します。
-keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, 脅威& 脆弱性の管理, TVM, デバイス管理, セキュリティ構成, MITRE ATT&CK フレームワーク, サポート情報, KB, DeviceTvmSecureConfigurationassessmentKB
+description: 高度なハンティング スキーマの DeviceTvmSecureConfigurationassessmentKB テーブルで、Microsoft Defender 脆弱性の管理によって評価されるさまざまなセキュリティで保護された構成について説明します。
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, データ型, 説明, 脅威&脆弱性管理, TVM, デバイス管理, セキュリティ構成, MITRE ATT&CK フレームワーク, サポート情報, KB, DeviceTvmSecureConfigurationassessmentKB, MDVM,Microsoft Defender 脆弱性の管理
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 81f03a665a0c825388335c925cb908f3b931a918
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 881f1b12f85529e4295c6de11b975d69dc617b81
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531557"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67329423"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -34,8 +34,7 @@ ms.locfileid: "61531557"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-
-`DeviceTvmSecureConfigurationAssessmentKB`高度なハンティング スキーマの表には、[脅威&脆弱性管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)によってチェックされたさまざまなセキュリティで保護された構成に関する情報が含まれています。 このテーブルには、リスク情報、関連する業界ベンチマーク、適用される MITRE ATT&CK のテクニックおよび戦術も記載されています。
+`DeviceTvmSecureConfigurationAssessmentKB`高度なハンティング スキーマの表には、[Microsoft Defender 脆弱性の管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)によってチェックされたさまざまなセキュリティで保護された構成に関する情報が含まれています。 このテーブルには、リスク情報、関連する業界ベンチマーク、適用される MITRE ATT&CK のテクニックおよび戦術も記載されています。
 
 このテーブルは、イベントまたはレコードを返しません。 このテーブルを [DeviceTvmSecureConfigurationassessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) テーブル `ConfigurationId` に参加させて、返された評価のセキュリティ構成に関するテキスト情報を表示することをお勧めします。
 
@@ -77,4 +76,4 @@ DeviceTvmSecureConfigurationAssessment
 - [デバイス、メール、アプリ、ID 全体で探す](advanced-hunting-query-emails-devices.md)
 - [スキーマを理解する](advanced-hunting-schema-tables.md)
 - [クエリのベスト プラクティスを適用する](advanced-hunting-best-practices.md)
-- [脅威および脆弱性管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender 脆弱性の管理の概要](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

@@ -17,16 +17,20 @@ search.appverid:
 - MET150
 description: 構成可能な一致を使用するために、完全一致スキーマを変更する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a90f81136bf6aa78aa11d732deca19ecd1d59b9c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 107a910068f3f0dfbae56530c5b589e19e0d2621
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622065"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67405644"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>構成可能な一致を使用するために完全一致スキーマを変更する
 
-完全一致 (EDM) ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照するカスタムの機密情報タイプを作成できます。 正確な文字列のバリアントを許可する必要がある場合は、*構成可能な一致* を使用して、大文字と小文字および一部の区切り文字を無視するように Microsoft Purview に指示できます。
+## <a name="applies-to"></a>適用対象
+
+- PowerShell を使用した厳密なデータ一致 (EDM) 機密情報の種類 (SIT) の作成。
+
+完全一致 (EDM) ベースの分類を使用すると、機密情報のデータベース内の正確な値を参照するカスタムの機密情報タイプを作成できます。 正確な文字列のバリアントを許可する必要がある場合は、 *構成可能な一致* を使用して、大文字と小文字と区切り記号を無視するように Microsoft Purview に指示できます。
 
 > [!IMPORTANT]
 > 既存の EDM スキーマとデータファイルを変更するには、以下の手順を実行します。
@@ -121,7 +125,9 @@ ms.locfileid: "66622065"
     > [!TIP]
     > オプションとして、アップロードする前に、以下を実行して csv ファイルに対して検証を実行することもできます。
     >
-    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] [schema file]`
+    > `EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
+    >
+    > 例: `EdmUploadAgent.exe /ValidateData /DataFile  C:\data\testdelimiters.csv /Schema C:\EDM\patientrecords.xml`
     >
     > すべての EdmUploadAgent.exe のサポートされているパラメータの詳細情報については、以下を実行します
     >

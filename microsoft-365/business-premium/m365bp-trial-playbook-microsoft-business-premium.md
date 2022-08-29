@@ -9,18 +9,18 @@ audience: Admin
 ms.topic: conceptual
 ms.collection: m365-security-compliance
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/24/2022
 ms.prod: m365-security
 search.appverid:
 - MOE150
 - MET150
 description: Microsoft 365 Business Premium 試用版を最大限に活用しましょう。 生産性とセキュリティに関する主要な機能を試してみてください。
-ms.openlocfilehash: fd1871d6902fa7d39a755ea8d7d857baabff2413
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 750772357c5dda926840ba41f879a055e12d5230
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66894901"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433446"
 ---
 # <a name="trial-playbook-microsoft-business-premium"></a>試用版プレイブック: Microsoft Business Premium
 
@@ -35,7 +35,7 @@ Microsoft Business Premium 試用版プレイブックへようこそ。 この�
 
 まず、[試用期間を設定](../business-premium/m365bp-setup.md) します。
 
-お客様が試用版の使用を開始し、セットアップ プロセスを完了した後、変更が有効になるまでに最大 2 時間かかる場合があります。
+試用版を開始してセットアップ プロセスを完了すると、変更が有効になるまで最大で 2 時間かかる場合があります。
 
 Microsoft 365 Business Premium には、環境で使用できる[事前設定済みセキュリティ ポリシー](/security/office-365-security/preset-security-policies.md)が含まれています。 これらのポリシーは、ほとんどのユーザーに適したベースライン保護プロファイルを表します。 標準的な保護は以下のとおりです。
 
@@ -61,12 +61,11 @@ Microsoft 365 Business Premium 体験版取得または購入する際、自分�
 
 4. ウィザードの手順に従って[任意の DNS ホスティング プロバイダーで Office 365 用の DNS レコードを作成](/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)し、ドメインを所持していることを確認します。 ドメイン ホストがわかっている場合は、「[Microsoft 365 にドメインを追加する](/microsoft-365/admin/setup/add-domain)」 を参照してください。
 
-5. ご利用のホスティング プロバイダーが GoDaddy または Domain Connect を有効にした別のホストである場合、プロセスは簡単です。サインインし、お客様に代わって Microsoft が認証するよう自動的に求められます。
+5. ホスティング プロバイダーが GoDaddy またはドメイン接続が有効になっている別のホストである場合は、サインインし、Microsoft が自動的に認証するように求められます。
 
 ## <a name="onboard-and-protect-devices"></a>デバイスのオンボードと保護
 
-> [!NOTE]
-> Windows Server や Linux Server を実行しているエンドポイントをオンボードする機能はプレビュー段階になりました。 「[デバイスを Microsoft Defender for Business にオンボードするデバイスを Microsoft Defender for Business にオンボードする](../security/defender-business/mdb-onboard-devices.md)」を参照してください。
+Microsoft 365 Business Premiumには、デバイスを保護するための新しいセキュリティ ソリューションである Defender for Business が含まれています。 「[デバイスを Microsoft Defender for Business にオンボードするデバイスを Microsoft Defender for Business にオンボードする](../security/defender-business/mdb-onboard-devices.md)」を参照してください。
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
@@ -76,11 +75,11 @@ Microsoft 365 Business Premium 体験版取得または購入する際、自分�
 
 4. [セキュリティ ポリシーのレビュー](../security/defender-business/mdb-configure-security-settings.md)。
 
-## <a name="use-office-apps-on-devices"></a>デバイスで Office アプリを使用する
+## <a name="use-microsoft-365-apps-on-devices"></a>デバイスでMicrosoft 365 Appsを使用する
 
-1. 最初に、[Office をインストール](m365bp-install-office-apps.md) する必要があります。
+1. まず、[Microsoft 365 Appsをインストール](m365bp-install-office-apps.md)する必要があります。
 
-2. Office.com にアクセスして [サインイン](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804) します。
+2. [https://office.com](https://office.com) に移動し、サインインします。 ([Office.com のはじめにを](https://support.microsoft.com/office/get-started-at-office-com-91a4ec74-67fe-4a84-a268-f6bdf3da1804)参照してください)。
 
 3. [Word ドキュメント](https://support.microsoft.com/office/basic-tasks-in-word-87b3243c-b0bf-4a29-82aa-09a681999fdc) などの Office ドキュメントを作成します。
 
@@ -92,12 +91,13 @@ Microsoft 365 Business Premium 体験版取得または購入する際、自分�
 
 2. [ポータルを良く理解する](../security/defender-business/mdb-get-started.md) ため、時間を取って下さい。
 
-3. そして、[セキュリティ体制にアクセス](../security/defender/microsoft-secure-score.md) します。
+3. 次 [に、セキュリティ体制を評価](../security/defender/microsoft-secure-score.md)し、スコアを向上させる方法を確認します。
 
-4. [セキュリティインシデントへの対応方法](../security/defender-business/mdb-respond-mitigate-threats.md) を良く理解するようにします。
+4. [セキュリティ インシデントに対応する](../security/defender-business/mdb-respond-mitigate-threats.md)方法について説明します。
 
 5. 最後に、[修復処理について復習](../security/defender-business/mdb-review-remediation-actions.md) します。
 
 ## <a name="see-also"></a>関連項目
 
-- [Microsoft 365 Business Premium &mdash; 中小企業向けサイバーセキュリティ](index.md)
+- [Microsoft 365 Business Premium - 小規模ビジネス向けのサイバーセキュリティ](index.md)
+- [Defender for Business とは?](../security/defender-business/mdb-overview.md)

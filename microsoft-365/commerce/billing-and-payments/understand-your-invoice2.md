@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Microsoft 365 for Business の課金内容または請求書についての料金、請求書、支払い情報を解釈する方法について説明します。
 ms.date: 05/24/2022
-ms.openlocfilehash: 0c863c1398b19c0c3efdf6c8390ad4a0cd16f82c
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
+ms.openlocfilehash: 041e0636cf5e1797d0716ddceb550e2544085e46
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112023"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384838"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Microsoft 365 for Business の課金内容または請求書を理解する
 
@@ -36,6 +36,12 @@ ms.locfileid: "67112023"
 
 > [!NOTE]
 > Microsoft 365 の代わりに、またはそれに加えて他のサブスクリプションがある場合は、「 [課金内容または請求書を理解する](understand-your-invoice.md)」を参照してください。
+
+## <a name="watch-understand-your-bill-or-invoice"></a>ウォッチ: 請求書または請求書を理解する
+
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2197915)で、このビデオや他のビデオを確認してください。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE53wxS?autoplay=false]
 
 ## <a name="how-often-and-when-am-i-billed"></a>課金の頻度および課金時期は?
 

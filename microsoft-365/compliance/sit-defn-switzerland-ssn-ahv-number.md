@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: スイス SSN AHV 番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: e06ef00d0d8c919f4506d829899b0f6150394854
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d4f5971a1ee2d0dcf96ee023ff609ba70f6ec052
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997047"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368171"
 ---
 # <a name="switzerland-ssn-ahv-number"></a>スイスの SSN AHV 番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -46,9 +38,9 @@ ms.locfileid: "66997047"
 
 - 3 桁の数字 - 756
 - 省略可能なドット
-- 4 桁
+- 4 桁の数字
 - 省略可能なドット
-- 4 桁
+- 4 桁の数字
 - 省略可能なドット
 - 2 桁の数字
 
@@ -58,7 +50,7 @@ ms.locfileid: "66997047"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_swiss_social_security_number_ahv` がパターンに一致するコンテンツを検出した。
 - `Keywords_swiss_social_security_number_ahv` のキーワードを検出した。

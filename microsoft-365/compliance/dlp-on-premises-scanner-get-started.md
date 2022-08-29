@@ -20,12 +20,12 @@ ms.custom: admindeeplinkCOMPLIANCE
 search.appverid:
 - MET150
 description: データ損失防止のオンプレミス スキャナーを設定する
-ms.openlocfilehash: a1bcebfb48a502a9d7c484d266d91fe105603f84
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: fae1b5d2113935e2e3a899a16aafb224297d9912
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66625437"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359167"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner"></a>データ損失防止のオンプレミス スキャナーの使用を開始する
 
@@ -126,7 +126,7 @@ Endpoint DLP からのデータは、[アクティビティ エクスプロー�
 
 1. Microsoft Purview コンプライアンス ポータルの [データ損失防止ページ](https://compliance.microsoft.com/datalossprevention?viewid=policies)を開き、**アラート** を選択します。
 
-2. エンドポイント DLP ポリシーの警告を表示するには、「[DLP ポリシーの警告を構成および表示する方法](dlp-configure-view-alerts-policies.md)」の手順を参照してください。
+2. オンプレミスの [DLP ポリシーのアラートを表示するには、DLP ポリシーのアラートを構成して表示する方法](dlp-configure-view-alerts-policies.md) に関するページの手順を参照してください。
 
 ### <a name="viewing-dlp-on-premises-scanner-in-activity-explorer-and-audit-log"></a>アクティビティ エクスプローラーと監査ログでの DLP オンプレミス スキャナーの表示
 
