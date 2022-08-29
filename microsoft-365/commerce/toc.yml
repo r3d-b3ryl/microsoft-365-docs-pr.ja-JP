@@ -56,6 +56,8 @@
       href: billing-and-payments/pay-for-your-subscription.md
     - name: 支払方法を管理する
       href: billing-and-payments/manage-payment-methods.md
+    - name: 複数のテナント間の課金を管理する
+      href: billing-and-payments/manage-multi-tenant-billing.md
     - name: 請求頻度の変更
       href: billing-and-payments/change-payment-frequency.md
     - name: 請求通知と請求書の添付ファイルを管理する
@@ -64,8 +66,6 @@
       href: billing-and-payments/manage-billing-profiles.md
     - name: 請求先住所を変更する
       href: billing-and-payments/change-your-billing-addresses.md
-    - name: 支払サービス ディレクティブ 2 および強力な顧客認証について
-      href: billing-and-payments/psd2.md
     - name: アカウントに係る源泉徴収税のためのクレジットを要求する
       href: billing-and-payments/withholding-tax-credit-global.md
 - name: 請求アカウント

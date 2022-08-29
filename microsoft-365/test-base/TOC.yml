@@ -26,6 +26,8 @@
       href: contentguideline.md
     - name: 使用コストを理解する
       href: usagecost.md
+    - name: テストをオンデマンドで実行する
+      href: ondemandrun.md
     - name: アプリケーション/テストルール
       href: rules.md
 - name: 使い方ガイド
@@ -44,7 +46,7 @@
       href: accesslevel.md
     - name: SDK & API
       href: sdkapi.md
-- name: 参照
+- name: 関連情報
   items:
     - name: よく寄せられる質問
       href: faq.md
