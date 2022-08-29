@@ -28,33 +28,33 @@
       href: plan-for-security-and-compliance.md
     - name: コンプライアンス拡張性
       href: compliance-extensibility.md
-- name: クロスソリューション機能
+- name: Microsoft Purview 用のデバイスをオンボードする
   items:
-    - name: Windows 10 および Windows 11 デバイスをオンボードする
+    - name: Windows デバイスのオンボード
       items:
-        - name: Windows 10 および Windows 11 デバイスを Microsoft 365 にオンボードする概要
+        - name: 概要
           href: device-onboarding-overview.md
-        - name: グループ ポリシーを使用した Windows 10 および Windows 11 デバイスのオンボード
-          href: device-onboarding-gp.md
-        - name: モバイル デバイス管理ツールを使用した Windows 10 および Windows 11 デバイスのオンボード
+        - name: Intune
           href: device-onboarding-mdm.md
-        - name: Configuration Manager を使用した Windows 10 および Windows 11 デバイスのオンボード
+        - name: Configuration Manager
           href: device-onboarding-sccm.md
-        - name: ローカル スクリプトを使用した Windows 10 および Windows 11 デバイスのオンボード
+        - name: グループ ポリシー
+          href: device-onboarding-gp.md
+        - name: ローカル スクリプト
           href: device-onboarding-script.md
-        - name: 非永続的な仮想デスクトップ インフラストラクチャ (VDI) デバイスのオンボード
+        - name: 非永続的仮想デスクトップ インフラストラクチャ (VDI)
           href: device-onboarding-vdi.md
     - name: macOS デバイスをオンボードする
       items:
-        - name: Microsoft 365 への macOS デバイスのオンボードに関する概要
+        - name: 概要
           href: device-onboarding-macos-overview.md
-        - name: Microsoft Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
+        - name: Intune
           href: device-onboarding-offboarding-macos-intune.md
-        - name: Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
+        - name: Microsoft Defender for EndpointのIntune
           href: device-onboarding-offboarding-macos-intune-mde.md
-        - name: JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
+        - name: JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro.md
-        - name: Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
+        - name: Microsoft Defender for Endpointのお客様向け JAMF Pro
           href: device-onboarding-offboarding-macos-jamfpro-mde.md
 - name: サード パーティのデータ用のコネクタを管理する
   items:
@@ -98,8 +98,6 @@
           href: archive-eml-data.md
         - name: FX 接続
           href: archive-fxconnect-data.md
-        - name: Jive
-          href: archive-jive-data.md
         - name: MS SQL Database
           href: archive-mssqldatabaseimporter-data.md
         - name: ピボット
@@ -328,18 +326,38 @@
           items:
             - name: カスタム機密情報タイプを作成 - コンプライアンス センター
               href: create-a-custom-sensitive-information-type.md
-            - name: 完全なデータ一致に基づく機密情報の種類の使用を開始する
-              href: sit-get-started-exact-data-match-based-sits-overview.md
-            - name: 完全なデータ一致に基づく機密情報の種類のソース データをエクスポートする
-              href: sit-get-started-exact-data-match-export-data.md
-            - name: 完全なデータ一致に基づく機密情報の種類のスキーマを作成する
-              href: sit-get-started-exact-data-match-create-schema.md
-            - name: 機密情報の種類と完全に一致する機密情報のソース テーブルをハッシュしてアップロードする
-              href: sit-get-started-exact-data-match-hash-upload.md
-            - name: 機密情報の種類/ルール パッケージと完全に一致するデータを作成する
-              href: sit-get-started-exact-data-match-create-rule-package.md
-            - name: 機密情報の種類と完全に一致するデータをテストする
-              href: sit-get-started-exact-data-match-test.md
+            - name: EDM SITS の作成
+              items:
+                - name: EDM SITS の使用を開始する
+                  href: sit-get-started-exact-data-match-based-sits-overview.md
+                - name: EDM SIT の新しいエクスペリエンスを作成する
+                  items:
+                    - name: EDM SIT ワークフローの新しいエクスペリエンスを作成する
+                      href: sit-create-edm-sit-unified-ux-workflow.md
+                    - name: ソース データをエクスポートする
+                      href: sit-get-started-exact-data-match-export-data.md
+                    - name: 新しいエクスペリエンス用の EDM SIT サンプル ファイルを作成する
+                      href: sit-create-edm-sit-unified-ux-sample-file.md
+                    - name: EDM SIT スキーマとルール パッケージの新しいエクスペリエンスを作成する
+                      href: sit-create-edm-sit-unified-ux-schema-rule-package.md
+                    - name: EDM クラシック エクスペリエンス用の機密情報ソース テーブルをハッシュしてアップロードする
+                      href: sit-get-started-exact-data-match-hash-upload.md
+                    - name: EDM の機密情報の種類をテストする
+                      href: sit-get-started-exact-data-match-test.md
+                - name: EDM SIT クラシック エクスペリエンスを作成する
+                  items:
+                    - name: 正確な EDM SIT ワークフロー クラシック エクスペリエンスを作成する
+                      href: sit-create-edm-sit-classic-ux-workflow.md
+                    - name: ソース データをエクスポートする
+                      href: sit-get-started-exact-data-match-export-data.md
+                    - name: EDM クラシック エクスペリエンスのスキーマを作成する
+                      href: sit-get-started-exact-data-match-create-schema.md
+                    - name: EDM クラシック エクスペリエンス用の機密情報ソース テーブルをハッシュしてアップロードする
+                      href: sit-get-started-exact-data-match-hash-upload.md
+                    - name: 機密情報の種類/ルール パッケージと完全に一致するデータを作成する
+                      href: sit-get-started-exact-data-match-create-rule-package.md
+                    - name: EDM の機密情報の種類をテストする
+                      href: sit-get-started-exact-data-match-test.md
         - name: 機密情報の種類を使用する
           items:
             - name: 組み込みの機密情報の種類をカスタマイズする
@@ -836,6 +854,8 @@
                   href: sit-defn-norway-identification-number.md
                 - name: ノルウェーの住所
                   href: sit-defn-norway-physical-addresses.md
+                - name: フィリピンのパスポート番号
+                  href: sit-defn-philippines-passport-number.md
                 - name: フィリピンの汎用多目的識別番号
                   href: sit-defn-philippines-unified-multi-purpose-identification-number.md
                 - name: ポーランドの運転免許証番号
@@ -862,6 +882,8 @@
                   href: sit-defn-portugal-physical-addresses.md
                 - name: ポルトガルの納税者番号
                   href: sit-defn-portugal-tax-identification-number.md
+                - name: カタール ID カード番号
+                  href: sit-defn-qatari-id-card-number.md
                 - name: ルーマニアの運転免許証番号
                   href: sit-defn-romania-drivers-license-number.md
                 - name: ルーマニアのパスポート番号
@@ -984,6 +1006,8 @@
               href: sit-functions.md
             - name: カスタム機密情報の種類のフィルター リファレンス
               href: sit-custom-sit-filters.md
+            - name: 機密情報の種類の制限
+              href: sit-limits.md
     - name: トレーニング可能な分類子
       items:
         - name: トレーニング可能な分類子の詳細
@@ -1032,6 +1056,8 @@
       items:
         - name: 暗号化を理解する
           href: encryption.md
+        - name: Azure AD の構成
+          href: encryption-azure-ad-configuration.md
         - name: 二重キー暗号化 (DKE)
           href: double-key-encryption.md
         - name: 二重キー暗号化 FAQ
@@ -1185,6 +1211,8 @@
               href: dlp-migrate-exo-policy-to-unified-dlp.md
             - name: データ損失防止ポリシーヒントのリファレンス
               href: dlp-policy-tips-reference.md
+            - name: DLP アラートの共有 (プレビュー)
+              href: dlp-share-alerts.md
 - name: データ のライフサイクルとレコードの管理
   items:
     - name: データを統制する
@@ -1201,7 +1229,7 @@
           items:
             - name: SharePoint および OneDrive
               href: retention-policies-sharepoint.md
-            - name: Microsoft Teams
+            - name: Teams
               href: retention-policies-teams.md
             - name: Yammer
               href: retention-policies-yammer.md
@@ -1679,6 +1707,8 @@
           href: compliance-manager-templates-list.md
         - name: 改善のための処置の操作
           href: compliance-manager-improvement-actions.md
+        - name: 改善アクションの更新
+          href: compliance-manager-update-actions.md
         - name: アラート ポリシーを作成および管理する
           href: compliance-manager-alert-policies.md
         - name: コンプライアンススコアの計算方法

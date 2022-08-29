@@ -18,16 +18,18 @@ search.appverid:
 - MOE150
 - GEA150
 description: Microsoft 365 管理センターの Microsoft 365 レポート ダッシュボードを使用して、Microsoft ブラウザーの使用状況レポートを取得する方法について説明します。
-ms.openlocfilehash: 3eff031f4f621764a6713c34d3dbe8fc8009aced
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2444a93a1a68cd994da19325a8a00af868b6ba16
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66942059"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386519"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-browser-usage"></a>管理センターの Microsoft 365 レポート - Microsoft ブラウザーの使用状況
 
-Microsoft 365 レポート ダッシュボードには、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個々の製品レベルのレポートをドリルダウンして、各製品内のアクティビティに関するより詳細な分析情報を得ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 Microsoft ブラウザーの使用状況レポートでは、新しい Microsoft Edge の使用状況に関する分析情報を取得できます。 使用状況レポートは、Microsoft 365 アカウントにサインインし、Microsoft Edge ブラウザーを使用して Microsoft 365 サービスにアクセスする組織内のユーザーの集計数に基づいています。
+Microsoft 365 レポート ダッシュボードには、組織内の製品全体のアクティビティの概要が表示されます。 これにより、個々の製品レベルのレポートをドリルダウンして、各製品内のアクティビティに関するより詳細な分析情報を得ることができます。 [レポートの概要に関するトピック](activity-reports.md)を参照してください。 
+
+Microsoft 365 管理 センターの **Microsoft ブラウザー使用状況レポート** では、ユーザーが Microsoft Edge 経由で Microsoft 365 オンライン サービスにアクセスするかどうかを確認できます。 このレポート分析情報は、組織を Microsoft Edge に移行するのに役立ちます。 使用状況レポートは、Microsoft 365 アカウントにサインインし、Microsoft Edge ブラウザーを使用して Microsoft 365 サービスにアクセスする組織内のユーザーの集計数に基づいています。
 
 ## <a name="how-to-get-to-the-microsoft-browser-usage-report"></a>Microsoft ブラウザーの使用状況レポートにアクセスする方法
 
@@ -46,7 +48,11 @@ Microsoft 365 レポート ダッシュボードには、組織内の製品全�
 
 **[アクティブ ユーザー]** グラフには、選択した期間に Microsoft Edge を使用している間に Microsoft 365 サービスにアクセスするユーザーの合計数が表示されます。
 
-テーブルには、ユーザー レベルでのデータの内訳が表示されます。 テーブルの列は追加または削除できます。
+このレポートは、Microsoft 365 管理 センターの利用状況ダッシュボードのアクティビティ レポートへの既存のアクセス権を持つ IT 管理者に限定されたアクセス許可を持つ組織の内部です。
+
+> [!NOTE]
+> Microsoft ブラウザーの使用状況とユーザー レベルのレポートを集計できます。 ユーザー レベルの識別は [組織のポリシーに従って削除](activity-reports.md#show-user-details-in-the-reports) でき、 [ロール ベースのアクセス制御](../../admin/add-users/assign-admin-roles.md) を使用してレポート アクセスを調整できます。
+
 
 |アイテム|説明|
 |:-----|:-----|

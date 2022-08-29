@@ -1,6 +1,6 @@
 ---
 title: Windows での Microsoft Defender オフライン
-description: Windows Defender ウイルス対策 アプリから直接 Microsoft Defender Offline を使用できます。 また、ネットワークへの展開方法を管理することもできます。
+description: Microsoft Defender オフラインは、Microsoft Defender ウイルス対策アプリから直接使用できます。 また、ネットワークへの展開方法を管理することもできます。
 keywords: scan, defender, offline
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: cc01b6d81d272bfd0ee808131804cf59d4502350
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051846"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387443"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -55,10 +55,10 @@ Windows 10要件とWindows 11要件の詳細については、次のトピック
 
 ## <a name="microsoft-defender-offline-updates"></a>Microsoft Defender オフライン更新プログラム
 
-Microsoft Defender Offline では、エンドポイントで使用可能な最新の保護更新プログラムが使用されます。Windows Defender ウイルス対策が更新されるたびに更新されます。
+Microsoft Defender Offline では、エンドポイントで使用可能な最新の保護更新プログラムが使用されます。Microsoft Defender ウイルス対策が更新されるたびに更新されます。
 
 > [!NOTE]
-> オフライン スキャンを実行する前に、Microsoft Defender AV 保護の更新を試みる必要があります。 グループ ポリシーを使用して更新を強制するか、通常はエンドポイントに更新プログラムを展開するか、[Microsoft マルウェア プロテクション センター](https://www.microsoft.com/security/portal/definitions/adl.aspx)から最新の保護更新プログラムを手動でダウンロードしてインストールすることができます。
+> オフライン スキャンを実行する前に、Microsoft Defender ウイルス対策保護の更新を試みる必要があります。 グループ ポリシーを使用して更新を強制するか、通常はエンドポイントに更新プログラムを展開するか、[Microsoft マルウェア プロテクション センター](https://www.microsoft.com/security/portal/definitions/adl.aspx)から最新の保護更新プログラムを手動でダウンロードしてインストールすることができます。
 
 詳細については、 [Microsoft Defender ウイルス対策セキュリティ インテリジェンス更新プログラムの管理](manage-protection-updates-microsoft-defender-antivirus.md) に関するトピックを参照してください。
 
@@ -82,7 +82,7 @@ Microsoft Defender オフライン スキャンは、[**オフライン スキ�
 
 ## <a name="configure-notifications"></a>通知を構成する
 
-Microsoft Defender オフライン通知は、他の Microsoft Defender AV 通知と同じポリシー設定で構成されます。
+Microsoft Defender オフライン通知は、他の Microsoft Defender ウイルス対策通知と同じポリシー設定で構成されます。
 
 Windows Defenderの通知の詳細については、「[エンドポイントに表示される通知を構成する](configure-notifications-microsoft-defender-antivirus.md)」トピックを参照してください。
 

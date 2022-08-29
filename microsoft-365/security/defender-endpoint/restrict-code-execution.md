@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: dee5ad9466793892d09af2f85faa9f3fd2348ca6
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 765f08fe38d8b04d76c191c9e31c7a33c9b56ff7
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302340"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331585"
 ---
 # <a name="restrict-app-execution-api"></a>アプリ実行 API を制限する
 
@@ -52,7 +52,7 @@ ms.locfileid: "61302340"
 > [!IMPORTANT]
 >
 > - このアクションは、Windows 10、バージョン 1709 以降、およびWindows 11のデバイスで使用できます。
-> - この機能は、組織でMicrosoft Defender ウイルス対策を使用している場合に使用できます。
+> - この機能は、組織で Microsoft Defender ウイルス対策を使用している場合に使用できます。
 > - このアクションは、Windows Defenderアプリケーション制御コード整合性ポリシーの形式と署名の要件を満たす必要があります。 詳細については、「 [コード整合性ポリシーの形式と署名](/windows/device-security/device-guard/requirements-and-deployment-planning-guidelines-for-device-guard#code-integrity-policy-formats-and-signing)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可

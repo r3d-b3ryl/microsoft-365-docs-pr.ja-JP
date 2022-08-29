@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: e39306a82aa94116d8f7eab8321704c1ffd30efc
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: 58b6d548697e5604d7a22578bc1544a681559284
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164216"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330721"
 ---
 # <a name="release-device-from-isolation-api"></a>分離 API からデバイスを解放する
 
@@ -52,7 +52,7 @@ ms.locfileid: "61164216"
 >
 > - 完全な分離は、Windows 10 バージョン 1703 のデバイスで使用できます。
 > - 選択的分離は、Windows 10 バージョン 1709 以降のデバイスで使用できます。
-> - デバイスを分離する場合は、特定のプロセスと宛先のみが許可されます。 そのため、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 クラウド ベースの保護関連トラフィックをMicrosoft Defender for EndpointおよびMicrosoft Defender ウイルス対策するために、分割トンネリング VPN を使用することをお勧めします。
+> - デバイスを分離する場合は、特定のプロセスと宛先のみが許可されます。 そのため、完全な VPN トンネルの背後にあるデバイスは、デバイスが分離された後、Microsoft Defender for Endpoint クラウド サービスに到達できません。 Microsoft Defender for Endpointおよび Microsoft Defender ウイルス対策クラウドベースの保護関連トラフィックには、分割トンネリング VPN を使用することをお勧めします。
 
 ## <a name="permissions"></a>アクセス許可
 

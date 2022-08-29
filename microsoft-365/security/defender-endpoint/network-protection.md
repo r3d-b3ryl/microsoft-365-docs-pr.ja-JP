@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 08/08/2022
+ms.date: 08/12/2022
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
@@ -19,12 +19,12 @@ ms.topic: overview
 ms.collection:
 - m365initiative-m365-defender
 - M365-security-compliance
-ms.openlocfilehash: c59e4a7a7eb3c7fcf6bb623385382c3e453a3790
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: bb4b0cb1c38fc394d5dfb2ec0498ba72b23e8754
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281687"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388553"
 ---
 # <a name="protect-your-network"></a>ネットワークを保護する
 
@@ -57,13 +57,11 @@ Microsoft Defender ATP を試してみたいですか? [無料試用版にサイ
 
 | Windows バージョン | Microsoft Defender ウイルス対策 |
 |:---|:---|
-| Windows 10 バージョン 1709 以降 <br> Windows 11 <br> Windows Server 1803 以降 | [Microsoft Defender ウイルス対策リアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md) <br> [クラウド配信保護を](enable-cloud-protection-microsoft-defender-antivirus.md)有効にする必要があります (アクティブ)|
+| Windows 10 バージョン 1709 以降 <br/> Windows 11 <br/> Windows Server 1803 以降 | [Microsoft Defender ウイルス対策のリアルタイム保護](configure-real-time-protection-microsoft-defender-antivirus.md)と[クラウド配信保護](enable-cloud-protection-microsoft-defender-antivirus.md)が有効 (アクティブ) になっていることを確認します。 |
 
 ## <a name="why-network-protection-is-important"></a>ネットワーク保護が重要な理由
 
-ネットワーク保護は、Microsoft Defender for Endpointのソリューションの攻撃面削減グループの一部です。 ネットワーク保護を使用すると、URL と IP アドレスをブロックするネットワーク 層をレイヤー化できます。 ネットワーク保護は、特定のブラウザーと標準ネットワーク接続を使用して URL にアクセスできないようにブロックできます。
-
-既定では、ネットワーク保護は、SmartScreen フィードを使用して既知の悪意のある URL からコンピューターを保護します。これにより、Microsoft Edge ブラウザーの SmartScreen と同様の方法で悪意のある URL がブロックされます。 ネットワーク保護機能は、次のように拡張できます。
+ネットワーク保護は、Microsoft Defender for Endpointのソリューションの攻撃面削減グループの一部です。 ネットワーク保護を使用すると、URL と IP アドレスをブロックするネットワーク 層をレイヤー化できます。 ネットワーク保護は、特定のブラウザーと標準ネットワーク接続を使用して URL にアクセスできないようにブロックできます。 既定では、ネットワーク保護は、SmartScreen フィードを使用して既知の悪意のある URL からコンピューターを保護します。これにより、Microsoft Edge ブラウザーの SmartScreen と同様の方法で悪意のある URL がブロックされます。 ネットワーク保護機能は、次のように拡張できます。
 
 - 独自の脅威インテリジェンスから IP/URL アドレスをブロックする ([インジケーター](indicator-ip-domain.md))
 - 承認されていないサービス[をMicrosoft Defender for Cloud Apps](/defender-cloud-apps/what-is-defender-for-cloud-apps)からブロックする (以前は Microsoft Cloud App Security と呼ばられていました)
@@ -122,10 +120,10 @@ Defender for Endpoint のネットワーク保護コンポーネントは、機�
   - **ブロック解除** - ユーザーは、サイトにアクセスするためにWindows Defenderセキュリティ インテリジェンス (WDSI) ポータルにアクセスする必要はありません。 ユーザーはサイトに 24 時間アクセスできます。その時点で、ブロックはさらに 24 時間再び有効になります。 管理者がサイトを禁止 (ブロック) するまで、ユーザーは引き続き **ブロック解除** を使用してサイトにアクセスでき、ブロック解除のオプションが削除 **されます**。
   - **フィードバック** - トースト通知では、チケットを送信するためのリンクがユーザーに表示されます。これにより、ユーザーはサイトへのアクセスを正当化するために管理者にフィードバックを送信できます。
 
-  > [!div class="mx-imgBorder"]
-  > ![ネットワーク保護フィッシングコンテンツの警告通知を表示する](images/network-protection-phishing-warn-2.png)
+    :::image type="content" source="images/network-protection-phishing-warn-2.png" alt-text="ネットワーク保護フィッシング コンテンツの警告通知を表示します。":::
 
-  > [注!]警告エクスペリエンスとブロック エクスペリエンス (下) に示す画像は、両方ともプレースホルダー テキストの例として **"ブロックされた URL" を** 一覧表示します。機能している環境では、実際の URL またはドメインが一覧表示されます。  
+  > [!NOTE]
+  > 警告エクスペリエンスとブロック エクスペリエンス (下) に示す画像は、両方ともプレースホルダー テキストの例として **"ブロックされた URL" を** 一覧表示します。機能している環境では、実際の URL またはドメインが一覧表示されます。  
 
 #### <a name="block-experience"></a>ブロック エクスペリエンス
 
@@ -134,9 +132,8 @@ Defender for Endpoint のネットワーク保護コンポーネントは、機�
 - URL の評判が悪い場合は、トースト通知によってユーザーに次のオプションが表示されます。
   - **わかりました** トースト通知が解放 (削除) され、サイトへのアクセスの試行は終了します。
   - **フィードバック** トースト通知では、チケットを送信するためのリンクがユーザーに表示されます。これにより、ユーザーはサイトへのアクセスを正当化するために管理者にフィードバックを送信できます。
-  
-  > [!div class="mx-imgBorder"]
-  > ![ ネットワーク保護の既知のフィッシングコンテンツがブロックされた通知を表示します](images/network-protection-phishing-blocked.png)
+
+    :::image type="content" source="images/network-protection-phishing-blocked.png" alt-text="ネットワーク保護既知のフィッシングコンテンツブロック通知を表示します。" lightbox="images/network-protection-phishing-blocked.png":::
 
 ### <a name="network-protection-c2-detection-and-remediation"></a>ネットワーク保護: C2 の検出と修復
 
@@ -148,26 +145,22 @@ Defender for Endpoint のネットワーク保護コンポーネントは、機�
 
 Defender for Endpoint インジケーターの新機能により、管理者はエンド ユーザーが一部の URL と IP に対して生成された警告をバイパスできます。 URL がブロックされた理由によっては、SmartScreen ブロックが検出されると、管理者にサイトのブロックを最大 24 時間ブロック解除できる機能が提供される場合があります。 このような場合は、Windows セキュリティトースト通知が表示され、定義された期間、エンド ユーザーが URL または IP の **ブロックを解除** できるようになります。  
 
- > [!div class="mx-imgBorder"]
- > ![ネットワーク保護のWindows セキュリティ通知](images/network-protection-smart-screen-block-notification.png)
+:::image type="content" source="images/network-protection-smart-screen-block-notification.png" alt-text="ネットワーク保護の通知をWindows セキュリティします。":::
 
 Microsoft Defender for Endpoint管理者は、次の構成ツールを使用して[、Microsoft 365 Defender](https://security.microsoft.com/)で SmartScreen ブロック解除機能を構成できます。 Microsoft 365 Defender ポータルから、ConfigToolName へのパスに移動します。
 
-<!-- Hide {this intro with no subsequent list items}
-[Line 171: Delete the colon and the right angle-brackets. The resulting sentence will be "From the [MS365 Defender] portal, navigate to path to ConfigToolName." Delete "to" and add "the" before path unless a specific description is available. Would a screenshot help? Normally angle brackets or arrows are used in place of certain text rather than in addition.]
--->
-
- > [!div class="mx-imgBorder"]
- > ![ネットワーク保護 SmartScreen ブロック構成 ULR と IP フォーム](images/network-protection-smart-screen-block-configuration.png)
+:::image type="content" source="images/network-protection-smart-screen-block-configuration.png" alt-text="ネットワーク保護 SmartScreen ブロック構成 ULR と IP フォーム。":::
 
 ## <a name="using-network-protection"></a>ネットワーク保護の使用
 
 ネットワーク保護は、通常、管理インフラストラクチャを使用して行われるデバイスごとに有効になります。 サポートされている方法については、「 [ネットワーク保護を有効にする」](enable-network-protection.md)を参照してください。
 
 > [!NOTE]
-> ネットワーク保護を有効にするには、Microsoft Defender ウイルス対策がアクティブになっている必要があります。
+> ネットワーク保護を有効にするには、Microsoft Defender ウイルス対策をアクティブにする必要があります。
 
 **監査** モードまたは **ブロック** モードでネットワーク保護を有効にすることができます。 IP アドレスまたは URL を実際にブロックする前にネットワーク保護を有効にした場合の影響を評価する場合は、一定期間、監査モードでネットワーク保護を有効にして、ブロックされる内容に関するデータを収集できます。 エンド ユーザーがネットワーク保護によってブロックされていたアドレスまたはサイトに接続した場合の監査モード ログ。
+
+Linux および macOS のネットワーク保護については、「 [Linux 用のネットワーク保護](network-protection-linux.md) と [MacOS 用のネットワーク保護](network-protection-macos.md)」を参照してください。
 
 ## <a name="advanced-hunting"></a>高度な追及
 
@@ -186,8 +179,8 @@ DeviceEvents
 
 ```
 
- > [!div class="mx-imgBorder"]
- > ![イベントの監査と識別のための高度な捜索](images/network-protection-advanced-hunting.png)
+
+:::image type="content" source="images/network-protection-advanced-hunting.png" alt-text="イベントの監査と識別のための高度な捜索。" lightbox="images/network-protection-advanced-hunting.png":::
 
 > [!TIP]
 > これらのエントリには、アクションに関する優れた情報を提供する **AdditionalFields** 列にデータが含まれています。 **AdditionalFields** を展開すると、 **IsAudit**、 **ResponseCategory**、 **DisplayName** というフィールドも取得できます。
@@ -308,7 +301,7 @@ Windows 10 Enterpriseのマルチユーザーの性質上、次の点に留意�
 
 ### <a name="alternative-option-for-network-protection"></a>ネットワーク保護の代替オプション
 
-Azure 上の Windows Virtual Desktop で使用されるマルチセッション 1909 以降のWindows 10 Enterpriseでは、次の方法を使用して Microsoft Edge のネットワーク保護を有効にすることができます。
+Windows Server バージョン 1803 以降および Windows Virtual Desktop on Azure で使用されるマルチセッション 1909 以降Windows 10 Enterpriseの場合、Microsoft Edge のネットワーク保護を有効にするには、次の方法を使用します。
 
 1. [[ネットワーク保護を有効にする]](enable-network-protection.md) を使用し、指示に従ってポリシーを適用します。
 
@@ -334,3 +327,5 @@ Azure 上の Windows Virtual Desktop で使用されるマルチセッション 
 - [ネットワーク保護|を評価する](evaluate-network-protection.md) 機能のしくみと、通常作成されるイベントを示す簡単なシナリオを実行します。
 - [ネットワーク保護|を有効にする](enable-network-protection.md)グループ ポリシー、PowerShell、または MDM CSP を使用して、ネットワーク内のネットワーク保護を有効および管理します。
 - [Microsoft Intuneでの攻撃面の縮小機能の構成](/mem/intune/protect/endpoint-security-asr-policy)
+- [Linux |のネットワーク保護](network-protection-linux.md) Microsoft Network Protection for Linux デバイスの使用について説明します。
+- [MacOS |のネットワーク保護](network-protection-macos.md) Microsoft Network Protection for MacOS の詳細については、こちらを参照してください。

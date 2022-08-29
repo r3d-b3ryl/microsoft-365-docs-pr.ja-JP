@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6b08b7c4ebb0a818dec5bdf799c3114d91764259
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 1c51ba215d3140900f17495055b53bc94ae6bc78
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301788"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331359"
 ---
 # <a name="software-resource-type"></a>ソフトウェア リソースの種類
 
@@ -63,12 +63,12 @@ ms.locfileid: "61301788"
 
 |プロパティ|種類|説明|
 |---|---|---|
-|id|String|ソフトウェア ID|
+|id|文字列|ソフトウェア ID|
 |名前|String|ソフトウェア名|
-|ベンダー|String|ソフトウェア発行元名|
-|弱点|Long|検出された脆弱性の数|
-|publicExploit|ブール値|一部の脆弱性に対してパブリック エクスプロイトが存在する|
-|activeAlert|ブール値|アクティブなアラートがこのソフトウェアに関連付けられている|
+|ベンダー|文字列|ソフトウェア発行元名|
+|脆弱性|Long|検出された脆弱性の数|
+|publicExploit|ブール型|一部の脆弱性に対してパブリック エクスプロイトが存在する|
+|activeAlert|ブール型|アクティブなアラートがこのソフトウェアに関連付けられている|
 |exposedMachines|Long|公開されているデバイスの数|
 |impactScore|倍精度浮動小数点数|このソフトウェアの露出スコアの影響|
 |

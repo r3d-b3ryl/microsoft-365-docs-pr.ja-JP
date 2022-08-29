@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: ''
 description: 新しい onmicrosoft.com ドメインを作成し、新しいフォールバック ドメインにする方法について説明します。
-ms.openlocfilehash: 66f5562b4a2ba46f662a54ff33d953c4e617ce3a
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 9382921fcb8d93770c056b11b2c3bb89ceb01a2d
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67087311"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445184"
 ---
 # <a name="add-and-replace-your-onmicrosoftcom-fallback-domain-in-microsoft-365"></a>Microsoft 365 で onmicrosoft.com フォールバック ドメインを追加して置き換える
 
@@ -92,7 +92,7 @@ Microsoft 365 にサインアップすると、フォールバック ドメイ�
 
 
 > [!NOTE]
-> フォールバック ドメインを新しい onmicrosoft.com ドメインに変更する前に、onmicrosoft.com SharePoint ドメインの変更を検討してください。 追加の onmicrosoft ドメインを作成し、フォールバック ドメインとして使用しても、SharePoint Online の名前は変更されません。 既存の SharePoint と OneDrive の URL は変わりません。  SharePoint ドメイン [の名前変更プレビュー](/sharepoint/change-your-sharepoint-domain-name) で提供されている PowerShell の手順を使用して、.onmicrosoft SharePoint ドメインを変更できます (現在、サイト数が 1,000 未満の任意のテナントで使用できます)。
+> フォールバック ドメインを新しい onmicrosoft.com ドメインに変更する前に、onmicrosoft.com SharePoint ドメインの変更を検討してください。 追加の onmicrosoft ドメインを作成し、フォールバック ドメインとして使用しても、SharePoint Online の名前は変更されません。 既存の SharePoint と OneDrive の URL は変わりません。  SharePoint ドメイン [の名前変更プレビュー](/sharepoint/change-your-sharepoint-domain-name) で提供されている PowerShell の手順を使用して、.onmicrosoft SharePoint ドメインを変更できます (現在、サイト数が 10,000 未満の任意のテナントで使用できます)。
 
 新しい onmicrosoft.com ドメインを作成したら、次の手順に従ってフォールバック ドメインに変更します。
 

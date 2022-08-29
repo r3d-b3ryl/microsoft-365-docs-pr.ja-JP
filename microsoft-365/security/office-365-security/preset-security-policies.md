@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) とMicrosoft Defender for Office 365の保護機能全体に Standard および Strict ポリシー設定を適用する方法を学習できます
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ec4a2a1bc858cbf95ad85894f1b27828a18648e
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: ba440b028b1f56f3375e46f57c0b347f63eeed3f
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281621"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439664"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー
 
@@ -61,6 +61,10 @@ ms.locfileid: "67281621"
   - **グループ**: 
     - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
     - 指定した Microsoft 365 グループ。
+
+    > [!NOTE]
+    >  動的配布グループはサポートされていません。
+    
   - **ドメイン**: 組織内で指定された [承認済みドメイン](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)のすべての受信者。
 
   各条件や例外は 1 回しか使用できませんが、条件や例外には複数の値を含めることができます。 同じ条件や例外に複数の値がある場合、OR ロジック (たとえば、_\<recipient1\>_ または _\<recipient2\>_) が適用されます。 a別の条件や例外がある場合は AND ロジック (たとえば、_\<recipient1\>_ かつ _\<member of group 1\>_) が適用されます。
@@ -166,8 +170,13 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
    - **すべての受信者**
    - **特定の受信者**:
      - **Users**
-     - **グループ**
-     - **ドメイン**
+     - **グループ**: 
+       - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+       - 指定した Microsoft 365 グループ。
+
+       動的配布グループはサポートされていません。
+
+   - **ドメイン**
 
      適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![[削除] アイコン](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。
 
@@ -220,7 +229,7 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
    完了したら、**[次へ]** をクリックします。
 
-8. [ **偽装としてフラグを設定しない信頼された電子メール アドレスとドメインを追加** する] ページで、偽装保護から除外する送信者の電子メール アドレスとドメインを入力します。 これらの送信者からのメッセージには偽装攻撃のフラグは設定されませんが、送信者は引き続き EOP とDefender for Office 365の他のフィルターによるスキャンの対象となります。
+8. [ **信頼された電子メール アドレスとドメインを偽装としてフラグを設定しない** ] ページで、偽装保護から除外する送信者の電子メール アドレスとドメインを入力します。 これらの送信者からのメッセージには偽装攻撃のフラグは設定されませんが、送信者は引き続き EOP とDefender for Office 365の他のフィルターによるスキャンの対象となります。
 
    ボックスにメール アドレスまたはドメインを入力し、[ **追加**] をクリックします。 必要な回数だけこの手順を繰り返します。
 
@@ -248,7 +257,12 @@ EOP 保護は、Defender for Office 365保護とは異なるユーザーに適�
 
 3. 表示される [ **組み込みの保護から除外** ] ポップアップで、組み込みの安全なリンクと安全な添付ファイル保護から除外されている内部受信者を特定します。
    - **Users**
-   - **グループ**
+   - **グループ**: 
+       - 指定された配布グループまたはメールが有効なセキュリティ グループのメンバー。
+       - 指定した Microsoft 365 グループ。
+
+     動的配布グループはサポートされていません。
+
    - **ドメイン**
 
    適正なボックスをクリックし、値の入力を開始し、結果で希望する値を選択します。 必要な回数だけこの処理を繰り返します。 既存の値を削除するには、削除をクリックします ![組み込みの保護アイコンから除外を削除します。](../../media/m365-cc-sc-remove-selection-icon.png) 値の隣。

@@ -18,12 +18,12 @@ ms.collection:
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55fd24a033526053e8006c3d70f3abeeef1c94d2
-ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
-ms.translationtype: HT
+ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/07/2022
-ms.locfileid: "66663396"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388421"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -234,7 +234,7 @@ DMARC 拒否ポリシー (p=reject) を発行すると、どの顧客も Microso
 
 - ユーザーが、自分のメール クライアントを使用して、個別に安全な送信者を追加します。
 
-- 管理者は、[スプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)や[テナントの許可/ブロック リスト](tenant-allow-block-list.md)を使用して、なりすまし送信者からのメッセージを許可できます。
+- 管理者は、[スプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)や[テナントの許可/ブロック リスト](manage-tenant-allow-block-list.md)を使用して、なりすまし送信者からのメッセージを許可できます。
 
 - 管理者が、該当する送信者のメッセージを許可するすべてのユーザーに向けて Exchange メール フロー ルール (トランスポート ルールとも呼ばれる) を作成します。
 
@@ -281,4 +281,4 @@ DMARC の詳細情報が必要ですか。以下のリソースが役に立ち�
 
 [**DKIM を使用して、Microsoft 365 のカスタム ドメインから送信される送信電子メールを検証する**](use-dkim-to-validate-outbound-email.md)
 
-[正当なメールフローに信頼された ARC 送信者を使用する](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet)
+[正当なメールフローに信頼された ARC 送信者を使用する](/microsoft-365/security/office-365-security/use-arc-exceptions-to-mark-trusted-arc-senders?view=o365-21vianet&preserve-view=true)

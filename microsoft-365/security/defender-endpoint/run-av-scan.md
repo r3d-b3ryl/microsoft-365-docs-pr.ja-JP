@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3208ff32c2adda051b79fea684af915a909dd062
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 0f72d2d6db4bae754b0cd70d444e2781654a4b40
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428819"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387094"
 ---
 # <a name="run-antivirus-scan-api"></a>ウイルス対策スキャン API を実行する
 
@@ -38,7 +38,7 @@ ms.locfileid: "62428819"
 
 ## <a name="api-description"></a>API の説明
 
-デバイスでMicrosoft Defender ウイルス対策スキャンを開始します。
+デバイスで Microsoft Defender ウイルス対策スキャンを開始します。
 
 ## <a name="limitations"></a>制限事項
 
@@ -49,7 +49,7 @@ ms.locfileid: "62428819"
 > [!IMPORTANT]
 >
 > - このアクションは、Windows 10、バージョン 1709 以降、およびWindows 11のデバイスで使用できます。
-> - Microsoft Defender ウイルス対策 (Microsoft Defender AV) スキャンは、Microsoft Defender ウイルス対策がアクティブなウイルス対策ソリューションであるかどうかに関係なく、他のウイルス対策ソリューションと共に実行できます。 Microsoft Defender ウイルス対策はパッシブ モードにすることができます。 詳細については、「[Microsoft Defender ウイルス対策の互換性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)」を参照してください。
+> - Microsoft Defender ウイルス対策スキャンは、Microsoft Defender ウイルス対策がアクティブなウイルス対策ソリューションであるかどうかに関係なく、他のウイルス対策ソリューションと共に実行できます。 Microsoft Defender ウイルス対策はパッシブ モードにすることができます。 詳細については、「[Microsoft Defender ウイルス対策の互換性](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-compatibility)」を参照してください。
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -86,7 +86,7 @@ Content-Type|string|application/json
 パラメーター|種類|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
-ScanType|String|スキャンの種類を定義します。 **必須**。
+ScanType|文字列|スキャンの種類を定義します。 **必須**。
 
 **ScanType** は実行するスキャンの種類を制御し、次のいずれかを指定できます。
 

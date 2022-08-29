@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender ウイルス対策 インターフェイスを非表示にする
+title: Microsoft Defender ウイルス対策インターフェイスを非表示にする
 description: Windows セキュリティ アプリでは、ウイルスと脅威の保護タイルを非表示にすることができます。
 keywords: UI ロックダウン、ヘッドレス モード、アプリの非表示、設定の非表示、インターフェイスの非表示
 ms.prod: m365-security
@@ -16,14 +16,14 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: b00465fdeecddc803b52d98081689fd56fba7812
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 072207248192d158169e52a8e0ca860678b4f63f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419816"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388531"
 ---
-# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーがMicrosoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする
+# <a name="prevent-users-from-seeing-or-interacting-with-the-microsoft-defender-antivirus-user-interface"></a>ユーザーが Microsoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "65419816"
 **プラットフォーム**
 - Windows
 
-グループ ポリシーを使用すると、エンドポイント上のユーザーがMicrosoft Defender ウイルス対策 インターフェイスを表示できないようにすることができます。 また、スキャンを一時停止しないようにすることもできます。
+グループ ポリシーを使用すると、エンドポイント上のユーザーに Microsoft Defender ウイルス対策インターフェイスが表示されないようにすることができます。 また、スキャンを一時停止しないようにすることもできます。
 
-## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Microsoft Defender ウイルス対策 インターフェイスを非表示にする
+## <a name="hide-the-microsoft-defender-antivirus-interface"></a>Microsoft Defender ウイルス対策インターフェイスを非表示にする
 
 Windows 10バージョン 1703 では、インターフェイスを非表示にすると、Microsoft Defender ウイルス対策通知が非表示になり、ウイルス&脅威保護タイルがWindows セキュリティ アプリに表示されなくなります。
 
@@ -57,7 +57,7 @@ Windows 10バージョン 1703 では、インターフェイスを非表示に�
 
 :::image type="content" source="../../media/wdav-headless-mode-1607.png" alt-text="1703 より前のバージョンのWindows 10でヘッドレス モードが有効になっている場合の警告メッセージ" lightbox="../../media/wdav-headless-mode-1607.png":::
 
-## <a name="use-group-policy-to-hide-the-microsoft-defender-av-interface-from-users"></a>グループ ポリシーを使用して、Microsoft Defender AV インターフェイスをユーザーから非表示にする
+## <a name="use-group-policy-to-hide-the-microsoft-defender-antivirus-interface-from-users"></a>グループ ポリシーを使用して、Microsoft Defender ウイルス対策インターフェイスをユーザーから非表示にする
 
 1. グループ ポリシーの管理マシンで、[グループ ポリシーの管理コンソール](/previous-versions/windows/desktop/gpmc/group-policy-management-console-portal)を開き、構成するグループ ポリシー オブジェクトを右クリックして、**[編集]** をクリックします。
 
@@ -65,9 +65,9 @@ Windows 10バージョン 1703 では、インターフェイスを非表示に�
 
 3. [ **管理用テンプレート]** をクリックします。
 
-4. ツリーを展開して、**クライアント インターフェイス> Microsoft Defender ウイルス対策 >コンポーネントをWindowsします**。
+4. **Microsoft Defender ウイルス対策> クライアント インターフェイス> Windows コンポーネント** にツリーを展開します。
 
-5. **[ヘッドレス UI モードを有効にする]** 設定をダブルクリックし、オプションを **[有効]** に設定します。 **[OK]** をクリックします。
+5. **[ヘッドレス UI モードを有効にする]** 設定をダブルクリックし、オプションを **[有効]** に設定します。 [**OK**] をクリックします。
 
 ユーザーが PC で保護をフォーム変更できないようにする方法の詳細については、「ユーザー [がポリシー設定をローカル](configure-local-policy-overrides-microsoft-defender-antivirus.md) で変更できないようにする」を参照してください。
 
@@ -86,9 +86,9 @@ Windows 10バージョン 1703 では、インターフェイスを非表示に�
 
 3. [ **管理用テンプレート]** をクリックします。
 
-4. ツリーを展開して、**スキャン****Microsoft Defender ウイルス対策コンポーネント** \> **をWindows**\>します。
+4. ツリーを **Windows コンポーネント** \> **Microsoft Defender ウイルス対策**\>スキャンに展開 **します**。
 
-5. [ **ユーザーによるスキャンの一時停止を許可** する] 設定をダブルクリックし、オプションを **[無効]** に設定します。 **[OK]** をクリックします。
+5. [ **ユーザーによるスキャンの一時停止を許可** する] 設定をダブルクリックし、オプションを **[無効]** に設定します。 [**OK**] をクリックします。
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。

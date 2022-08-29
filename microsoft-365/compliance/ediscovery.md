@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: v-tophillips
 author: v-tophillips
 manager: laurawi
-ms.date: ''
+ms.date: 08/25/2022
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview には、Exchange メールボックス、SharePoint サイト、OneDrive for Business サイト、Microsoft 365 グループ、Microsoft Teams、Skype for Business会話など、さまざまな場所にあるコンテンツを検索およびエクスポートするために使用できる 3 つの電子情報開示ツールが用意されています。 電子情報開示 (Standard) と電子情報開示 (Premium) には、調査の管理に役立つ多くの追加機能が用意されています。
-ms.openlocfilehash: a94811c4f8d3ec2d3f15f99375cfee2d3e5a4a0d
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: c35b0c92ce38fecf0aac31b72037d9cbe3e05073
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306550"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445162"
 ---
 # <a name="microsoft-purview-ediscovery-solutions"></a>Microsoft Purview の電子情報開示ソリューション
 
@@ -38,7 +38,13 @@ ms.locfileid: "67306550"
 
 Microsoft Purview には、コンテンツ検索、電子情報開示 (Standard)、電子情報開示 (Premium) の 3 つの電子情報開示ソリューションが用意されています。
 
-![Microsoft Purview eDiscovery ツールの主な機能。](..\media\m365-ediscovery-solution-graphic.png)
+<!--
+![Key capabilities of Microsoft Purview eDiscovery tools.](..\media\m365-ediscovery-solution-graphic.png)
+-->
+
+|コンテンツ検索|電子情報開示 (標準)|電子情報開示 (プレミアム)|
+|---------|---------|---------|
+|コンテンツを検索する </br> キーワード クエリと検索条件 </br> 検索結果をエクスポートする </br> 役割に基づくアクセス許可|検索とエクスポート </br> ケース管理 </br>訴訟ホールド|保管担当者管理 </br> 訴訟ホールド通知 </br> 高度なインデックス作成 </br> セットのフィルター処理を確認する </br> タグ付け </br> 分析 </br> 予測コーディング モデル </br> その他...|
 
 - **コンテンツ検索**。 コンテンツ検索ツールを使用して、Microsoft 365 データ ソース全体でコンテンツを検索し、検索結果をローカル コンピューターにエクスポートします。
 

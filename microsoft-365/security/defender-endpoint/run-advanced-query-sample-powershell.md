@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fc0cae0ff8c45f4c32213130773e3c118d779ed6
-ms.sourcegitcommit: 292de1a7e5ecc2e9e6187126aebba6d3b9416dff
+ms.openlocfilehash: 535f978333d867641ce2e3a8564e3764e59d4333
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "65243142"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331469"
 ---
 # <a name="advanced-hunting-using-powershell"></a>PowerShell を使用した高度な追求
 
@@ -40,7 +40,7 @@ PowerShell を使用して高度なクエリを実行する方法については
 
 このセクションでは、PowerShell サンプルを共有してトークンを取得し、それを使用してクエリを実行します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 最初に [アプリを作成する必要があります](apis-intro.md)。
 
 ## <a name="preparation-instructions"></a>準備手順

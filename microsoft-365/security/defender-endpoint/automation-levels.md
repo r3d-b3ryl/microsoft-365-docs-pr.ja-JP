@@ -10,7 +10,7 @@ ms.pagetype: security
 author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/20/2022
+ms.date: 08/22/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: fb7c4ee03c5391b12beb3d716b7817a880878af5
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 787b636ec3834d258125e724be63aa9487c99081
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912578"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450105"
 ---
 # <a name="automation-levels-in-automated-investigation-and-remediation-capabilities"></a>自動調査および修復機能の自動化レベル
 
@@ -59,7 +59,7 @@ Microsoft Defender for Businessの自動調査と修復 (AIR) 機能は構成済
 
 - Defender for Endpoint を使用した新しいテナント (2020 年 8 月 16 日以降に作成されたテナントを含む) は、既定で完全自動化に設定されます。
 
-- [Defender for Business](../defender-business/compare-mdb-m365-plans.md) では、既定で完全な自動化が使用されます。 Defender for Business では、Defender for Business と同じ方法でデバイス グループが使用されることはありません。 そのため、完全な自動化が有効になり、Defender for Business のすべてのデバイスに適用されます。
+- [Defender for Business](../defender-business/compare-mdb-m365-plans.md) では、既定で完全な自動化が使用されます。 Defender for Business では、Defender for Endpoint と同じ方法でデバイス グループが使用されることはありません。 そのため、完全な自動化が有効になり、Defender for Business のすべてのデバイスに適用されます。
 
 - セキュリティ チームが自動化レベルでデバイス グループを定義している場合、これらの設定は、ロールアウトする新しい既定の設定によって変更されません。
 

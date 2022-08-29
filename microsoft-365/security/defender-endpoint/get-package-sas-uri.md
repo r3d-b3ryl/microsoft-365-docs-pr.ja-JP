@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: d64219ad2a48a64926bf177fb506d6611ece0ca3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: af4d99f552af17f99ea93c940cadadc100905d62
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302412"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331685"
 ---
 # <a name="get-package-sas-uri-api"></a>パッケージ SAS URI API を取得する
 
@@ -81,13 +81,13 @@ Empty
 
 ## <a name="response"></a>応答
 
-成功した場合、このメソッドは、"value" パラメーター内のパッケージへのリンクを保持するオブジェクトを含む 200 OK 応答コードを返します。 このリンクは非常に短時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 コレクションのマシン アクションが存在するが完了していない場合は、404 Not Found が返されます。
+成功した場合、このメソッドは、"value" パラメーター内のパッケージへのリンクを保持するオブジェクトを含む 200 OK 応答コードを返します。 このリンクは短時間有効であり、パッケージをローカル ストレージにダウンロードするためにすぐに使用する必要があります。 コレクションのマシン アクションが存在するが完了していない場合は、404 Not Found が返されます。
 
 ## <a name="example"></a>例
 
 ### <a name="request-example"></a>要求の例
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
@@ -95,7 +95,7 @@ GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525c
 
 ### <a name="response-example"></a>応答の例
 
-以下は、応答の例です。
+応答の例を下に示します。
 
 ```json
 HTTP/1.1 200 Ok

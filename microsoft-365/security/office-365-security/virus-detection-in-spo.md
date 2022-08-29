@@ -20,12 +20,12 @@ description: SharePoint Online が、ユーザーがアップロードしたフ�
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b04e9a1ca2e722a2f581441f44716c22be7a1635
-ms.sourcegitcommit: 1e53bf8208c30d7b60685896207cc1142bebf34a
+ms.openlocfilehash: e57865d0c8ec3993080c822438b7c4037ccab765
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67059691"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450061"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>SharePoint Online、OneDrive、Microsoft Teams の組み込みのウイルス保護
 
@@ -42,7 +42,7 @@ Microsoft 365 では、ユーザーが SharePoint Online、OneDrive、および 
 
 ## <a name="what-happens-if-an-infected-file-is-uploaded-to-sharepoint-online"></a>感染したファイルが SharePoint Online にアップロードされた場合はどうなりますか?
 
-Microsoft 365 ウイルス検出エンジンは、SharePoint Online 内で非同期的に (ファイルのアップロードから独立して) 実行されます。 **すべてのファイルは自動的にスキャンされません**。 ヒューリスティックによって、スキャンするファイルが決定されます。 ファイルにウイルスが含まれていることが検出されると、ファイルにフラグが設定されます。 2018 年 4 月に、スキャンされたファイルの 25 MB の制限を削除しました。
+Microsoft 365 ウイルス検出エンジンは、ファイルを非同期的にスキャンします (アップロード後の場合)。 非同期ウイルス検出プロセスによってファイルがまだスキャンされておらず、ユーザーがブラウザーまたは Teams からファイルをダウンロードしようとすると、ダウンロードが許可される前に SharePoint によってダウンロード時のスキャンがトリガーされます。 **すべてのファイルの種類が自動的にスキャンされるわけではありません**。 ヒューリスティックによって、スキャンするファイルが決定されます。 ファイルにウイルスが含まれていることが検出されると、ファイルにフラグが設定されます。 
 
 動作は次のとおりです。
 

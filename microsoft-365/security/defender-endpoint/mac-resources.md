@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d7f01e3336fef9382ae6556180deaf14155b6d44
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7215beeec25f4d343e574b8e2bcda22a43f0f45e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943620"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386804"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>macOS でのMicrosoft Defender for Endpointのリソース
 
@@ -120,6 +120,7 @@ macOS でMicrosoft Defender for Endpointをアンインストールするには�
 |構成|セキュリティ インテリジェンスの更新後にスキャンをオン/オフにする|`mdatp config scan-after-definition-update --value [enabled/disabled]`|
 |構成|アーカイブ スキャンのオン/オフを切り替える (オンデマンド スキャンのみ)|`mdatp config scan-archives --value [enabled/disabled]`|
 |構成|ファイル ハッシュの計算のオン/オフを切り替える|`mdatp config enable-file-hash-computation --value [enabled/disabled]`|
+|構成|data_loss_preventionのオン/オフを切り替える|`mdatp config data_loss_prevention --value [enabled/disabled]`|
 |診断|ログ レベルを変更する|`mdatp log level set --level [error/warning/info/verbose]`|
 |診断|診断ログを生成する|`mdatp diagnostic create --path [directory]`|
 |正常性|製品の正常性を確認する|`mdatp health`|

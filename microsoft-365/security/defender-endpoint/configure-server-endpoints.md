@@ -19,12 +19,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 83a311676a1b74e551817c4f0b64f024f80738c8
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 4a9cb2e20c2c2b5bfc47ae738d52f248fb464a3e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306408"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387685"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Windows サーバーを Microsoft Defender for Endpoint にオンボードします
 
@@ -174,7 +174,7 @@ Microsoft Defender for Endpoint は、Microsoft Defender for Cloud とシーム�
 
 - 2021 年 9 月 14 日以降のサービス スタック更新プログラム (SSU) をインストールする必要があります。
 - 2018 年 9 月 20 日以降の最新の累積更新プログラム (LCU) をインストールする必要があります。  サーバーに最新の SSU と LCU をインストールすることをお勧めします
-- Microsoft Defender ウイルス対策 (MDAV) 機能を有効にして、最新の状態であることを確認します。 Windows Server で Defender ウイルス対策を有効にする方法の詳細については、「Windows Server で [Defender ウイルス対策が無効になっている場合は Defender ウイルス対策を再度有効に](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) し、 [アンインストールした場合は Windows Server で Defender ウイルス対策を再度有効にする](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)」を参照してください。
+- Microsoft Defender ウイルス対策機能を有効にして、最新の状態であることを確認します。 Windows Server で Defender ウイルス対策を有効にする方法の詳細については、「Windows Server で [Defender ウイルス対策が無効になっている場合は Defender ウイルス対策を再度有効に](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-disabled) し、 [アンインストールした場合は Windows Server で Defender ウイルス対策を再度有効にする](enable-update-mdav-to-latest-ws.md#re-enable-microsoft-defender-antivirus-on-windows-server-if-it-was-uninstalled)」を参照してください。
 - Windows Updateを使用して、最新のプラットフォーム バージョンをダウンロードしてインストールします。 または、[Microsoft Update カタログ](https://www.catalog.update.microsoft.com/Search.aspx?q=KB4052623) もしくは [MMPC](https://go.microsoft.com/fwlink/?linkid=870379&arch=x64) から手動で更新プログラム パッケージをダウンロードします。
 
 #### <a name="prerequisites-for-running-with-third-party-security-solutions"></a>サードパーティのセキュリティ ソリューションを使用して実行するための前提条件

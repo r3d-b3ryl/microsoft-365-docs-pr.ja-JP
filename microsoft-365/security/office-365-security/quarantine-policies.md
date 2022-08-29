@@ -17,12 +17,12 @@ ms.custom: ''
 description: 管理者は、検疫ポリシーを使用して、検疫されたメッセージに対してユーザーが実行できる操作を制御する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5b95ca3b763bafe2689caf4ab77df9eea9df6d8
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 01a4d5acb9edfa0906695329489439d3ce6af298
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056880"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445140"
 ---
 # <a name="quarantine-policies"></a>検疫ポリシー
 
@@ -32,7 +32,7 @@ ms.locfileid: "67056880"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Online Protection (EOP) の検疫ポリシー (以前は _検疫タグ_ と呼ばれていました) とMicrosoft Defender for Office 365 を使うと、管理者はメッセージが検疫された理由に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を制御できます。
+Exchange Online Protection (EOP) の検疫ポリシー (以前は _検疫タグ_ と呼ばれていました) とMicrosoft Defender for Office 365 を使うと、管理者はメッセージが検疫された理由に基づいて、検疫されたメッセージに対してユーザーが実行できる操作を制御できます。 この機能は、Exchange Onlineメールボックスを使用するすべての Microsoft 365 組織で使用できます。
 
 従来、ユーザーは、メッセージが検疫された理由に基づいて、検疫メッセージの対話のレベルを許可または拒否していました。 たとえば、スパム対策フィルターによって検疫されたメッセージをスパムまたはバルクとして表示および解放できますが、高確度のフィッシングやマルウェアとして検疫されたメッセージを表示または解放することはできません。
 
@@ -58,7 +58,7 @@ Exchange Online Protection (EOP) の検疫ポリシー (以前は _検疫タグ_
 
 <sup>\*</sup>**受信者が検疫からメッセージを解放することを許可** するアクセス許可は、マルウェア対策ポリシーやスパム対策ポリシーの高信頼フィッシング判定では受け入れられません。 ユーザーは、独自のマルウェアや信頼度の高いフィッシング メッセージを検疫から解放できません。 [受信者を許可する] を使用 **して、検疫アクセス許可から解放するメッセージを要求** できます。
 
-次の表に、既定の検疫ポリシー、関連するアクセス許可グループ、および検疫通知を有効にするかどうかについてを説明します:
+次の表に、既定の検疫ポリシー、関連するアクセス許可グループ、および検疫通知を有効にするかどうかを示します。
 
 |既定の検疫ポリシー|使用されるアクセス許可グループ|検疫通知が有効になっていますか?|
 |---|:---:|:---:|
@@ -523,7 +523,7 @@ Set-SafeAttachmentPolicy -Identity "Human Resources" -QuarantineTag NoAccess
 
         :::image type="content" source="../../media/quarantine-tags-esn-customization-selected-languages.png" alt-text="検疫ポリシーのグローバル検疫通知設定で選択された言語。" lightbox="../../media/quarantine-tags-esn-customization-selected-languages.png":::
 
-   - **会社のロゴを使用**: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換えるには、このオプションを選択します。 この手順を行う前に、 [組織の Microsoft 365 テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md) してカスタム ロゴをアップロードする手順に従う必要があります。
+   - **会社のロゴを使用**: 検疫通知の上部で使用される既定の Microsoft ロゴを置き換えるには、このオプションを選択します。 この手順を行う前に、 [組織の Microsoft 365 テーマをカスタマイズ](../../admin/setup/customize-your-organization-theme.md) してカスタム ロゴをアップロードする手順に従う必要があります。 アップロードされたカスタム ロゴ ファイルの代わりに URL を指すカスタム ロゴが組織にある場合、このオプションはサポートされません。 
 
      次のスクリーンショットは、検疫通知のカスタム ロゴを示しています:
 

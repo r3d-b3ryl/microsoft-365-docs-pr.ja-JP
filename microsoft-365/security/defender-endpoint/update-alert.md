@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c015372c9f0fcf6cf0e25af1902af970e11156d0
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: f0748ce997c461dc89162aff49eccf509b056f83
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099140"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330661"
 ---
 # <a name="update-alert"></a>アラートを更新する
 
@@ -72,7 +72,7 @@ PATCH /api/alerts/{id}
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization|String|ベアラー {token}。 **必須**。
 Content-Type|文字列|application/json. **必須**。
@@ -85,12 +85,12 @@ Content-Type|文字列|application/json. **必須**。
 
 パフォーマンスを最大限に高めるには、変更されていない既存の値を含めてはなりません。
 
-プロパティ|型|説明
+プロパティ|種類|説明
 :---|:---|:---
-状態|String|アラートの現在の状態を指定します。 プロパティの値は、"新規"、"InProgress"、"Resolved" です。
+状態|文字列|アラートの現在の状態を指定します。 プロパティの値は、"新規"、"InProgress"、"Resolved" です。
 assignedTo|String|アラートの所有者
-分類|String|アラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive' です。
-決定|String|アラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
+分類|文字列|アラートの仕様を指定します。 プロパティの値は、'Unknown'、'FalsePositive'、'TruePositive' です。
+決定|文字列|アラートの決定を指定します。 プロパティの値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。
 コメント|文字列|アラートに追加するコメント。
 
 >[!NOTE]

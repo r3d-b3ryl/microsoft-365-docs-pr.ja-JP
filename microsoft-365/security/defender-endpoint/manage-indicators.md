@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1e68e1e49dd855356840eb732c6050178ae1c147
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 0c0e09bb69cd4b7ad30276a54e002be568b85c5c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669718"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387575"
 ---
 # <a name="create-indicators"></a>インジケーターの作成
 
@@ -48,7 +48,7 @@ Defender for Endpoint のクラウド検出エンジンは、収集されたデ�
 
 ## <a name="endpoint-prevention-engine"></a>エンドポイント防止エンジン
 
-インジケーターの同じリストは、防止エージェントによって適用されます。 つまり、Microsoft Defender AV が主な AV 構成である場合、一致したインジケーターは設定に従って処理されます。 たとえば、アクションが "Alert and Block (警告とブロック)" の場合、Microsoft Defender AV によってファイルの実行 (ブロックおよび修復) が防止され、対応する警告が発生します。 一方、アクションが "許可" に設定されている場合、Microsoft Defender AV ではファイルの検出やファイルの実行がブロックされません。
+インジケーターの同じリストは、防止エージェントによって適用されます。 つまり、Microsoft Defender ウイルス対策がプライマリウイルス対策が構成されている場合、一致するインジケーターは設定に従って処理されます。 たとえば、アクションが "アラートとブロック" の場合、Microsoft Defender ウイルス対策はファイルの実行 (ブロックと修復) を防ぎ、対応するアラートが発生します。 一方、アクションが "許可" に設定されている場合、Microsoft Defender ウイルス対策はファイルの実行を検出またはブロックしません。
 
 ## <a name="automated-investigation-and-remediation-engine"></a>自動調査と修復エンジン
 

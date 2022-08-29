@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 387598581ec52de2089bee2a98a15dcc60a54bd9
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: da4dc661754a94dbdfa25579426edba8356a7497
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64471695"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331647"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスへのオンボード
 
@@ -65,7 +65,7 @@ Defender for Endpoint をデプロイするために必要な手順は次のと�
 
 | エンドポイント     | ツール オプション                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ モバイル デバイス マネージャー](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](azure-server-integration.md)  |
+| **Windows**  |  [ローカル スクリプト (最大 10 台のデバイス)](configure-endpoints-script.md) <br>  [グループ ポリシー](configure-endpoints-gp.md) <br>  [Microsoft エンドポイント マネージャー/ Mobile デバイス マネージャー](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI スクリプト](configure-endpoints-vdi.md) <br> [Microsoft Defender for Cloudとの統合](azure-server-integration.md)  |
 | **macOS**    | [ローカル スクリプト](mac-install-manually.md) <br> [Microsoft エンドポイント マネージャー](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [モバイル デバイス管理](mac-install-with-other-mdm.md) |
 | **Linux Server** | [ローカル スクリプト](linux-install-manually.md) <br> [人形](linux-install-with-puppet.md) <br> [アンシブル](linux-install-with-ansible.md)|
 | **iOS**      | [Microsoft エンドポイント マネージャー](ios-install.md)                                |
@@ -77,14 +77,14 @@ Defender for Endpoint をデプロイするために必要な手順は次のと�
 
 | 機能 | 説明 |
 |-|-|
-| [エンドポイント検出&応答 (EDR)](overview-endpoint-detection-response.md) | Defender for Endpoint エンドポイントでの検出と対応機能は、ほぼリアルタイムで実行可能な高度な攻撃検出を提供します。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 |
-| [脅威&脆弱性管理 (TVM)](next-gen-threat-and-vuln-mgt.md) | 脅威&脆弱性管理は、Microsoft Defender for Endpointのコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、次のような一意の価値を提供します。これには、次のような一意の値が含まれます。リアルタイム エンドポイントでの検出と対応 (EDR) エンドポイントの脆弱性と関連する分析情報 - インシデント調査中の非常に貴重なデバイスの脆弱性コンテキスト - Microsoft Intuneと Microsoft System Center Configuration Managerによる組み込みの修復プロセス。  |
+| [エンドポイント検出&応答 (EDR)](overview-endpoint-detection-response.md) | Defender for Endpoint エンドポイントの検出と応答機能は、ほぼリアルタイムで実用的な高度な攻撃検出を提供します。 セキュリティ アナリストは、効率的にアラートの優先順位を設定し、違反の全容を可視化して、脅威に対処する対応策を講じることができます。 |
+| [Microsoft Defender 脆弱性の管理 (MDVM)](next-gen-threat-and-vuln-mgt.md) | Defender Vulnerability Management は、Microsoft Defender for Endpointのコンポーネントであり、セキュリティ管理者とセキュリティ運用チームの両方に、エンドポイントの脆弱性と関連するリアルタイムのエンドポイント検出と応答 (EDR) 分析情報 - インシデント調査中の貴重なデバイスの脆弱性コンテキスト - 組み込みの修復プロセスなど、一意の価値を提供します。Microsoft Intuneと Microsoft System Center Configuration Manager。  |
 | [次世代保護 (NGP)](microsoft-defender-antivirus-windows.md) | Microsoft Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、およびサーバーに次世代の保護を提供する組み込みのマルウェア対策ソリューションです。 Microsoft Defender ウイルス対策には、次のものが含まれます。<br> <br>-クラウドによって提供される、新しい脅威と新しい脅威のほぼ瞬時の検出とブロックのための保護。 機械学習やインテリジェント セキュリティ グラフに加えて、クラウドによる保護は Microsoft Defender ウイルス対策を強化する次世代テクノロジの一部です。<br> <br> - 高度なファイルとプロセス動作の監視とその他のヒューリスティック ("リアルタイム保護" とも呼ばれます) を使用した常時オンスキャン。<br><br> - 機械学習、人間と自動化されたビッグ データ分析、詳細な脅威対策の研究に基づく専用の保護更新。 |
 | [攻撃面の縮小 (ASR)](overview-attack-surface-reduction.md) | Microsoft Defender for Endpointの攻撃面の縮小機能は、組織内のデバイスとアプリケーションを新しい脅威や新しい脅威から保護するのに役立ちます。 |
 | [自動調査&修復 (AIR)](automated-investigations.md) | Microsoft Defender for Endpointでは、自動調査を使用して、個別に調査する必要があるアラートの量を大幅に減らします。 自動調査機能は、さまざまな検査アルゴリズムと、アナリスト (プレイブックなど) によって使用されるプロセスを利用して、アラートを調べ、侵害を解決するための直ちに修復アクションを実行します。 これにより、アラート量が大幅に削減され、セキュリティ運用の専門家は、より高度な脅威やその他の価値の高い業務に集中できるようになります。 |
 | [Microsoft 脅威エキスパート (MTE)](microsoft-threat-experts.md) | Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) に専門家レベルの監視と分析を提供するマネージド ハンティング サービスであり、固有の環境で重大な脅威が見逃されないように支援します。      |
 
-エンドポイントをオンボードした後、エンドポイントでの検出と対応、次世代の保護、攻撃面の削減など、さまざまな機能を構成します。
+エンドポイントをオンボードした後、エンドポイントの検出と応答、次世代の保護、攻撃面の削減など、さまざまな機能を構成します。
 
 ## <a name="example-deployments"></a>デプロイの例
 

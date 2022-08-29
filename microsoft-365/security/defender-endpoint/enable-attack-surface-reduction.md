@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.date: 1/18/2022
-ms.openlocfilehash: 90244050b9fd8e5714ba28f7ac9850091d368da7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: a34ee4f16bb6bc98e14ede15df98ceedb7f4dec8
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66601226"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388641"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>攻撃面の減少ルールを有効にする
 
@@ -59,7 +59,7 @@ Windows バージョン全体の攻撃面の縮小機能
 
 攻撃表面の縮小ルールの機能セット全体を使用するには、次のものが必要です。
 
-- プライマリ AV としてのWindows Defender ウイルス対策 (リアルタイム保護オン)
+- プライマリ AV としての Microsoft Defender ウイルス対策 (リアルタイム保護オン)
 - [Cloud-Delivery Protection](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) on (一部のルールでは必須)
 - Windows 10 Enterprise E5 または E3 ライセンス
 
@@ -119,7 +119,7 @@ ASR ルールでは、環境変数とワイルドカードがサポートされ�
 このセクションでは、次の構成方法の構成の詳細について説明します。
 
 - [Intune](#intune)
-- [MEM](#mem)
+- [Mem](#mem)
 - [MDM](#mdm)
 - [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 - [グループ ポリシー](#group-policy)
@@ -153,7 +153,7 @@ ASR ルールを有効にする手順には、ファイルとフォルダーを�
 
 4. 3 つの構成ウィンドウで **[次へ** ] を選択し、新しいポリシーを作成する場合は [ **作成** ] を選択し、既存のポリシーを編集している場合は **[保存] を** 選択します。
 
-### <a name="mem"></a>MEM
+### <a name="mem"></a>Mem
 
 Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して、カスタム ASR ルールを構成できます。 次の手順では、この例のルール [「悪用された脆弱な署名されたドライバーの悪用をブロック](attack-surface-reduction-rules-reference.md#block-abuse-of-exploited-vulnerable-signed-drivers) する」を使用します。
 
@@ -224,7 +224,7 @@ Microsoft エンドポイント マネージャー (MEM) OMA-URI を使用して
    > [!div class="mx-imgBorder"]
    > :::image type="content" source="images/mem07-5-applicability-rules.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの適用規則" lightbox="images/mem07-5-applicability-rules.png":::
 
-10. **[次へ]** を選択します。 手順 **6[確認と作成**] で、選択して入力した設定と情報を確認し、[ **作成**] を選択します。
+10. [**次へ**] を選択します。 手順 **6[確認と作成**] で、選択して入力した設定と情報を確認し、[ **作成**] を選択します。
 
     > [!div class="mx-imgBorder"]
     > :::image type="content" source="images/mem08-6-review-create.png" alt-text="Microsoft エンドポイント マネージャー管理センター ポータルの [確認と作成] オプション" lightbox="images/mem08-6-review-create.png":::

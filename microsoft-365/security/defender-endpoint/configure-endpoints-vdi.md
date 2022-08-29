@@ -18,12 +18,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/15/2022
 ms.technology: mde
-ms.openlocfilehash: 7ef410beaacbc899c6f52e688ee38b3b545b8997
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: 8bf3dda061b582adb7b21029022e61bc890aeec7
+ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823089"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67441642"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-in-microsoft-365-defender"></a>Microsoft 365 Defenderで非永続的仮想デスクトップ インフラストラクチャ (VDI) デバイスをオンボードする
 
@@ -59,7 +59,6 @@ VDI 環境では、VDI インスタンスの有効期間が短い場合があり
 
 
 - VDI インスタンスごとに 1 つのポータル エントリ。 VDI インスタンスが既にMicrosoft Defender for Endpointにオンボードされていて、ある時点で削除された後、同じホスト名で再作成された場合、この VDI インスタンスを表す新しいオブジェクトはポータルに作成されません。 
-
 
   > [!NOTE]
   > この場合、無人応答ファイルを使用するなど、セッションの作成時に *同じ* デバイス名を構成する必要があります。
@@ -143,14 +142,14 @@ VDI 環境では、VDI インスタンスの有効期間が短い場合があり
 
 2. サーバーの [オンボード プロセスに](configure-server-endpoints.md)従います。 
 
-## <a name="updating-non-persistent-virtual-desktop-infrastructure-vdi-images"></a>非永続的仮想デスクトップ インフラストラクチャ (VDI) イメージの更新
+## <a name="updating-virtual-desktop-infrastructure-vdi-images-persistent-or-non-persistent"></a>仮想デスクトップ インフラストラクチャ (VDI) イメージの更新 (永続的または非永続的)
 
 VDI で実行されている VM に更新プログラムを簡単にデプロイする機能を使用して、このガイドを短縮し、コンピューターで迅速かつ簡単に更新プログラムを入手する方法に焦点を当てています。 更新プログラムがホスト サーバー上のコンポーネント ビットに展開され、オンになると VM に直接ダウンロードされるため、ゴールデン イメージを定期的に作成してシールする必要はなくなりました。
 
 詳細については、「 [Virtual Desktop インフラストラクチャ (VDI) 環境での Microsoft Defender ウイルス対策の展開ガイド」のガイダンスに](/microsoft-365/security/defender-endpoint/deployment-vdi-microsoft-defender-antivirus)従ってください。
 
    > [!NOTE]
-   > 非永続的 VDI 環境のマスター イメージをオンボードした (SENSE サービスが実行されている) 場合は、イメージを運用環境に戻す前に、一部のデータをオフにしてクリアする必要があります。
+   > VDI 環境のマスター イメージをオンボードした (SENSE サービスが実行されている) 場合は、イメージを運用環境に戻す前に、一部のデータをオフにしてクリアする必要があります。
    > 1. CMD ウィンドウで次のコマンドを実行して、センサーが停止していることを確認します。
    >  ```console
    >  sc query sense
@@ -165,11 +164,9 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
    >  exit
    >  ```
 
-
 ## <a name="other-recommended-configuration-settings"></a>その他の推奨構成設定
 
 デバイスをサービスにオンボードした後は、次の推奨構成設定で有効にすることで、付属の脅威保護機能を利用することが重要です。
-
 
 ### <a name="next-generation-protection-configuration"></a>次世代の保護構成
 
@@ -181,14 +178,12 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
 - クラウドによる保護レベル: 未構成
 - Defender Cloud 延長タイムアウト (秒単位): 20
 
-
 #### <a name="exclusions"></a>除外
 - ローカル管理者マージを無効にする: 未構成
 - 除外する Defender プロセス:
   - `%Programfiles%\FSLogix\Apps\frxccd.exe`
   - `%Programfiles%\FSLogix\Apps\frxccds.exe`
   - `%Programfiles%\FSLogix\Apps\frxsvc.exe`
-
 
 - スキャンとリアルタイム保護から除外するファイル拡張子:
   -  `%Programfiles%\FSLogix\Apps\frxccd.sys`
@@ -201,7 +196,6 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
   - `\\stroageaccount.file.core.windows.net\share**.VHD`
   -  `\\stroageaccount.file.core.windows.net\share**.VHDX`
 
-
 #### <a name="real-time-protection"></a>リアルタイム保護
 
 - すべての設定をオンにし、すべてのファイルを監視するように設定する
@@ -213,8 +207,6 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
 - 検出された脅威に対するアクション:
   - 低脅威: クリーン
   - 中程度の脅威、高い脅威、重大な脅威: 検疫
-
-
 
 #### <a name="scan"></a>スキャン
 
@@ -237,7 +229,6 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
 #### <a name="user-experience"></a>ユーザー エクスペリエンス
 - Microsoft Defender アプリへのユーザー アクセスを許可する: 未構成
 
-
 #### <a name="enable-tamper-protection"></a>改ざん防止を有効にする
 - 改ざん防止を有効にして Microsoft Defender が無効にならないようにする: 有効にする
 
@@ -245,20 +236,14 @@ VDI で実行されている VM に更新プログラムを簡単にデプロイ
 
 - ネットワーク保護を有効にする: 監査モード
 - Microsoft Edge の SmartScreen を必要とする: はい
-- Maclious サイトへのアクセスをブロックする: はい
+- 悪意のあるサイト へのアクセスをブロックする: はい
 - 未検証ファイルのダウンロードをブロックする: はい
 
 #### <a name="attack-surface-reduction-rules"></a>攻撃面の減少ルール
 - 監査に使用できるすべてのルールを構成します。
 
-
 > [!NOTE]
 > これらのアクティビティをブロックすると、正当なビジネス プロセスが中断される可能性があります。 最善の方法は、すべてを監査に設定し、有効にしても安全なものを特定し、誤検知検出がないエンドポイントでこれらの設定を有効にすることです。
-
-
-
-
-
 
 ## <a name="related-topics"></a>関連項目
 - [グループ ポリシーを使用してデバイスをオンボードする](configure-endpoints-gp.md)

@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ハンガリーの税識別番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 33f2c99a4957e462ef4ba69fc195dc2a46d2a1a5
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 2e21c32b4280dcad82a29e7772e01c08ed79f4a5
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996732"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369025"
 ---
 # <a name="hungary-tax-identification-number"></a>ハンガリーの納税者番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -54,7 +46,7 @@ ms.locfileid: "66996732"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_hungary_eu_tax_file_number` がパターンに一致するコンテンツを検出した。
 - `Keywords_hungary_eu_tax_file_number` のキーワードを検出した。

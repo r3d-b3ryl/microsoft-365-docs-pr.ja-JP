@@ -19,12 +19,12 @@ ms.custom: migrationguides
 description: サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365保護に移行する手順を完了します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d9691eb3baebadee70d7467c2073497d04c6e12e
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d30f13e77f0b7da864d266ddb2607afe7de1d451
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969410"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388089"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Microsoft Defender for Office 365に移行する - フェーズ 3: オンボード
 
@@ -175,7 +175,7 @@ Defender for Office 365の保護設定を監視および反復処理するには
   - 脅威エクスプローラーでフィルター処理してメッセージを識別します。
   - Advanced Hunting でフィルター処理してメッセージを識別します。
 
-  管理者の提出を通じてできるだけ早く Microsoft に誤検知を報告し、 [テナント許可/ブロック リスト](tenant-allow-block-list.md) 機能を使用して、これらの誤検知の安全な上書きを構成します。
+  管理者の提出を通じてできるだけ早く Microsoft に誤検知を報告し、 [テナント許可/ブロック リスト](manage-tenant-allow-block-list.md) 機能を使用して、これらの誤検知の安全な上書きを構成します。
 
 - また、不要なオーバーライドを調べることもお勧めします。 言い換えると、Microsoft 365 がメッセージに対して提供した評決を確認します。 Microsoft365 が正しい判定を下した場合、オーバーライドの必要性は大幅に減少または排除されます。
 
@@ -215,7 +215,7 @@ MICROSOFT 365 を指すように MX レコードを切り替える準備がで�
 
 ## <a name="next-steps"></a>次の手順
 
-おめでとうございます! [Microsoft Defender for Office 365への移行](migrate-to-defender-for-office-365.md#the-migration-process)が完了しました。 この移行ガイドの手順に従ったので、メールが Microsoft 365 に直接配信される最初の数日間は、はるかにスムーズである必要があります。
+おめでとうございます。 [Microsoft Defender for Office 365への移行](migrate-to-defender-for-office-365.md#the-migration-process)が完了しました。 この移行ガイドの手順に従ったので、メールが Microsoft 365 に直接配信される最初の数日間は、はるかにスムーズである必要があります。
 
 次に、Defender for Office 365の通常の操作とメンテナンスを開始します。 パイロットの間に発生した問題と似ていますが、大規模な問題を監視して監視します。 [スプーフィング インテリジェンス分析情報](learn-about-spoof-intelligence.md)と[偽装分析情報](impersonation-insight.md)が最も役立ちますが、次のアクティビティを定期的に発生することを検討してください。
 

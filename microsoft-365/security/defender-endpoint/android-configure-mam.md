@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9918763732fa828f17b395a3f96b24e8fbed46f2
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: d6d9561f381771fb322a281f33f840c27ce61f90
+ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174984"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67437800"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-risk-signals-using-app-protection-policies-mam"></a>アプリ保護ポリシー (MAM) を使用してMicrosoft Defender for Endpointリスクシグナルを構成する
 
@@ -133,7 +133,11 @@ Microsoft Defender for Endpointは、アプリ保護ポリシー (MAM とも呼�
 
 6. [ **続行]** を選択して、マネージド アプリケーションにログインします。 
 
-### <a name="configure-privacy-controls"></a>プライバシー制御を構成する 
+## <a name="configure-privacy-controls"></a>プライバシー制御を構成する 
+>[!IMPORTANT]
+>MAM のMicrosoft Defender for Endpointのプライバシー制御はパブリック プレビュー段階にあります。 次の情報は、市販される前に大幅に変更される可能性のあるプレリリース済み製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+>**この機能を試したり、フィードバックを提供したりする場合は、mdatpmobile@microsoft.com にお問い合わせください。**
+
 管理者は、次の手順を使用してプライバシーを有効にし、対応する脅威に対するアラート レポートの一部としてドメイン名、アプリの詳細、ネットワーク情報を収集することはできません。
 
 1. Microsoft エンドポイント マネージャー管理センターで、[**アプリ> アプリ構成ポリシー] > [>管理アプリの追加] に移動します**。
@@ -149,6 +153,9 @@ Microsoft Defender for Endpointは、アプリ保護ポリシー (MAM とも呼�
 6. ポリシーを確認して作成します。
 
 ## <a name="optional-permissions"></a>オプションのアクセス許可 
+>[!IMPORTANT]
+>Microsoft Defender for Endpointに対するオプションのアクセス許可はパブリック プレビュー段階にあります。 次の情報は、市販される前に大幅に変更される可能性のあるプレリリース済み製品に関連しています。 Microsoft は、ここに記載された情報に関して、明示または黙示を問わず、いかなる保証も行いません。
+>**この機能を試したり、フィードバックを提供したりする場合は、mdatpmobile@microsoft.com にお問い合わせください。**
 
 Android のMicrosoft Defender for Endpointでは、オンボード フローでオプションのアクセス許可が有効になります。 現在、MDE で必要なアクセス許可は、オンボード フローで必須です。 この機能を使用すると、管理者は、オンボード中に必須の VPN とアクセシビリティのアクセス許可を強制することなく、MAM ポリシーを使用して Android デバイスに MDE を展開できます。 エンド ユーザーは、必須のアクセス許可なしでアプリをオンボードでき、後でこれらのアクセス許可を確認できます。 
 

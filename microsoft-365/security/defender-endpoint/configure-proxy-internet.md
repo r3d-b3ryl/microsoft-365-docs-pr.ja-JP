@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 049fd7b7bcec0ebdc4690cd666bdb99ced5bf504
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: c579c72ab4918bf7ce0ebb5df80c05d9a4a45518
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873492"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388729"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>デバイス プロキシとインターネット接続の設定を構成する
 
@@ -144,7 +144,6 @@ netsh を使用して、システム全体の静的プロキシを構成しま�
 > [!NOTE]
 >
 > - これは、既定のプロキシで WinHTTP を使用する Windows サービスを含むすべてのアプリケーションに影響します。</br>
-> - トポロジを変更するノート PC (例えば、オフィスから自宅) が netsh で正しく動作しなくなります。 レジストリ ベースの静的プロキシの構成を使用します。
 
 1. 管理者特権でコマンド プロンプトを開きます。
    1. **[スタート]** をクリックし、「**cmd**」と入力します。

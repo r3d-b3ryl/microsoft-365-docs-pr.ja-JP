@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント データ損失防止の場所を使用するためのデータ損失防止 (DLP) ポリシーを構成する方法を説明します。
-ms.openlocfilehash: 2fef9c2d89d741c70f3d2d903f41fa8a354d4a79
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
-ms.translationtype: HT
+ms.openlocfilehash: 0224fefeb5b33bf688dea37b4609408e6d299557
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912632"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450083"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>エンドポイント データ損失防止の使用
 
@@ -256,7 +256,7 @@ ms.locfileid: "66912632"
 
 この構成により、データが安全に維持でき、ユーザーが機密情報以外のアイテムにアクセスしたり、共有したりすることを禁止または制限する不必要な制約も回避できます。
 
-## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview"></a>シナリオ 6 機密性の高いサービス ドメインでのユーザー アクティビティを監視または制限する (プレビュー)
+## <a name="scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains"></a>シナリオ 6 機密性の高いサービス ドメインでのユーザー アクティビティを監視または制限する
 
 このシナリオは、Web サイトでこれらのユーザー アクティビティを監査、オーバーライドしてブロック、またはブロックする場合に使用します。
 

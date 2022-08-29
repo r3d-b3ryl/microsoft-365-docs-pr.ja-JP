@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b85e7e9fc96b447c6e2528249e516c45ea3e66d1
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 940fb1a04bbef5ccc7b05097429bb6b04869e313
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301848"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331315"
 ---
 # <a name="set-device-value-api"></a>デバイス値の設定 API
 

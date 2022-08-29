@@ -15,12 +15,12 @@ ms.date: 07/11/2022
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: c41b463c7262c5be6df43d1c9e808060a75d15c0
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
-ms.translationtype: HT
+ms.openlocfilehash: 945c1c84559b6022790c47890494998d1027ce56
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717670"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387795"
 ---
 # <a name="turn-on-block-at-first-sight"></a>事前ブロックを有効にする
 
@@ -54,7 +54,7 @@ Microsoft Defender ウイルス対策 は、疑わしいが検出されていな
 
 Microsoft Defender ウイルス対策は、複数の検出および防止テクノロジを使用して、正確でインテリジェントなリアルタイムの保護を提供します。
 
-:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Microsoft Defender AV エンジンのリスト" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
+:::image type="content" source="images/microsoft-defender-atp-next-generation-protection-engines.png" alt-text="Microsoft Defender ウイルス対策エンジンの一覧" lightbox="images/microsoft-defender-atp-next-generation-protection-engines.png":::
 
 > [!TIP]
 > 詳細については、ブログ記事「[Microsoft Defender for Endpoint の次世代保護の中核となる高度なテクノロジについて」](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)を参照してください。

@@ -1,7 +1,7 @@
 ---
-title: Windows セキュリティ アプリのMicrosoft Defender ウイルス対策
+title: Windows セキュリティ アプリの Microsoft Defender ウイルス対策
 description: Microsoft Defender ウイルス対策がWindows セキュリティ アプリに含まれるようになったので、一般的なタスクを確認、比較、実行できます。
-keywords: wdav, ウイルス対策, ファイアウォール, セキュリティ, Windows
+keywords: wdav, ウイルス対策, ファイアウォール, セキュリティ, Windows, Microsoft Defender ウイルス対策
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -16,14 +16,14 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.collection: M365-security-compliance
-ms.openlocfilehash: bd045ac36f1685c3bf12cedf04dd074ed6c7fc5e
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: e661667802f5d170261c51bd6bc706eddfdcbf42
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873988"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387421"
 ---
-# <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows セキュリティ アプリのMicrosoft Defender ウイルス対策
+# <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows セキュリティ アプリの Microsoft Defender ウイルス対策
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -31,15 +31,15 @@ ms.locfileid: "65873988"
 
 Windows 10バージョン 1703 以降では、Windows Defender アプリはWindows セキュリティの一部です。
 
-Windows Defender クライアントとメイン Windows 設定の一部であった設定が結合され、Windows 10 バージョン 1703 の一部として既定でインストールされる新しいアプリに移動されました。
+以前はWindows Defender クライアントの一部であった設定とメインの Windows 設定が組み合わされ、新しいアプリに移動されました。これは、Windows 10 バージョン 1703 の一部として既定でインストールされます。
 
 > [!IMPORTANT]
-> Windows セキュリティ アプリ サービスを無効にしても、Microsoft Defender ウイルス対策や[Windows Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)は無効になりません。 サード パーティのウイルス対策またはファイアウォール製品がインストールされ、最新の状態に保たれている場合、これらは自動的に無効になります。
+> Windows セキュリティ アプリ サービスを無効にしても、Microsoft Defender ウイルス対策または[ファイアウォールWindows Defender](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)無効になりません。 サード パーティのウイルス対策またはファイアウォール製品がインストールされ、最新の状態に保たれている場合、これらは自動的に無効になります。
 > Windows セキュリティ アプリ サービスを無効にしたり、関連付けられたグループ ポリシー設定を構成して起動や実行を妨げる場合、Windows セキュリティ アプリには、デバイスにインストールしたウイルス対策製品やファイアウォール製品に関する古い情報や不正確な情報が表示されることがあります。
-> また、古い、または古いサード パーティ製のウイルス対策を使用している場合、または以前にインストールした可能性があるサードパーティのウイルス対策製品をアンインストールした場合、Microsoft Defender ウイルス対策がそれ自体を有効にできない場合もあります。
+> また、古い、または古いサード パーティ製のウイルス対策がある場合、または以前にインストールした可能性のあるサードパーティのウイルス対策製品をアンインストールした場合、Microsoft Defender ウイルス対策がそれ自体を有効にできない場合もあります。
 > これにより、デバイスの保護が大幅に低下し、マルウェア感染につながる可能性があります。
 
-アプリで監視できるその他のWindowsセキュリティ機能の詳細については、Windows セキュリティ[の記事](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)を参照してください。
+アプリで監視できる他の Windows セキュリティ機能の詳細については、[Windows セキュリティ記事](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)を参照してください。
 
 Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降のクライアント インターフェイスです。 Microsoft Defender for Endpointの確認と管理に使用されるのは、[Microsoft 365 Defender](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint) Web ポータルではありません。
 
@@ -51,10 +51,10 @@ Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降
 
 2. **[ウイルス&脅威保護**] タイル (または左側のメニュー バーのシールド アイコン) を選択します。
 
-以降のセクションでは、Windows セキュリティ アプリでMicrosoft Defender ウイルス対策によって提供される脅威保護を確認または操作するときに、最も一般的なタスクの一部を実行する方法について説明します。
+次のセクションでは、Windows セキュリティ アプリで Microsoft Defender ウイルス対策によって提供される脅威保護を確認または操作するときに、最も一般的なタスクの一部を実行する方法について説明します。
 
 > [!NOTE]
-> これらの設定がグループ ポリシーを使用して構成および展開されている場合、このセクションで説明する設定はグレー表示され、個々のエンドポイントで使用できなくなります。 グループ ポリシーを使った変更は、Windows の設定で設定を更新する前に、最初に個別のエンドポイントに展開する必要があります。 「[Microsoft Defender ウイルス対策でのエンド ユーザー操作の構成](configure-end-user-interaction-microsoft-defender-antivirus.md)」トピックでは、ローカル ポリシーオーバーライド設定を構成する方法について説明します。
+> これらの設定がグループ ポリシーを使用して構成および展開されている場合、このセクションで説明する設定はグレー表示され、個々のエンドポイントで使用できなくなります。 グループ ポリシーを使った変更は、Windows の設定で設定を更新する前に、最初に個別のエンドポイントに展開する必要があります。 [Microsoft Defender ウイルス対策を使用したエンド ユーザー操作の構成](configure-end-user-interaction-microsoft-defender-antivirus.md)に関するトピックでは、ローカル ポリシーオーバーライド設定を構成する方法について説明します。
 
 ## <a name="run-a-scan-with-the-windows-security-app"></a>Windows セキュリティ アプリでスキャンを実行する
 
@@ -72,11 +72,11 @@ Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降
 
 2. **[ウイルス&脅威保護**] タイル (または左側のメニュー バーのシールド アイコン) を選択します。
 
-3. **[ウイルス&脅威対策の更新プログラム**] を選択します。 現在インストールされているバージョンが、ダウンロードされた日時に関するいくつかの情報と共に表示されます。 手動でダウンロードできる最新バージョンに対して現在のバージョンを確認したり、そのバージョンの変更ログを確認したりできます。 [Microsoft Defender ウイルス対策およびその他の Microsoft マルウェア対策のセキュリティ インテリジェンス更新プログラムに関](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)するページを参照してください。
+3. **[ウイルス&脅威対策の更新プログラム**] を選択します。 現在インストールされているバージョンが、ダウンロードされた日時に関するいくつかの情報と共に表示されます。 手動でダウンロードできる最新バージョンに対して現在のバージョンを確認したり、そのバージョンの変更ログを確認したりできます。 [Microsoft Defender ウイルス対策およびその他の Microsoft マルウェア対策のセキュリティ インテリジェンス更新プログラム](/microsoft-365/security/defender-endpoint/manage-updates-baselines-microsoft-defender-antivirus)を参照してください。
 
 4. [ **更新プログラムの確認** ] を選択して、新しい保護更新プログラムをダウンロードします (存在する場合)。
 
-## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>Windows セキュリティ アプリでMicrosoft Defender ウイルス対策が有効になっていることを確認する
+## <a name="ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app"></a>Windows セキュリティ アプリで Microsoft Defender ウイルス対策が有効になっていることを確認する
 
 1. [*セキュリティ*] の [スタート] メニューを検索し、Windows セキュリティを選択して、**Windows セキュリティ アプリを開きます**。
 
@@ -88,9 +88,9 @@ Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降
 
     > [!NOTE]
     > **リアルタイム保護** をオフに切り替えると、短い遅延後に自動的にオンに戻ります。 これは、マルウェアや脅威から確実に保護するためです。
-    > 別のウイルス対策製品をインストールすると、Microsoft Defender ウイルス対策自動的に無効になり、Windows セキュリティ アプリでそのように示されます。 一定の [定期的なスキャン](limited-periodic-scanning-microsoft-defender-antivirus.md)を有効にできる設定が表示されます。
+    > 別のウイルス対策製品をインストールすると、Microsoft Defender ウイルス対策は自動的に無効になり、Windows セキュリティ アプリでそのように示されます。 一定の [定期的なスキャン](limited-periodic-scanning-microsoft-defender-antivirus.md)を有効にできる設定が表示されます。
 
-## <a name="add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows セキュリティ アプリでMicrosoft Defender ウイルス対策の除外を追加する
+## <a name="add-exclusions-for-microsoft-defender-antivirus-in-the-windows-security-app"></a>Windows セキュリティ アプリで Microsoft Defender ウイルス対策の除外を追加する
 
 1. [*セキュリティ*] の [スタート] メニューを検索し、Windows セキュリティを選択して、**Windows セキュリティ アプリを開きます**。
 
@@ -106,9 +106,9 @@ Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降
 
 |除外の種類|によって定義される|動作|
 |---|---|---|
-|**ファイル**|場所 <br/>例: `c:\sample\sample.test`|特定のファイルはMicrosoft Defender ウイルス対策によってスキップされます。|
+|**ファイル**|場所 <br/>例: `c:\sample\sample.test`|特定のファイルは、Microsoft Defender ウイルス対策によってスキップされます。|
 |**Folder**|場所 <br/>例: `c:\test\sample`|指定したフォルダー内のすべての項目は、Microsoft Defender ウイルス対策によってスキップされます。|
-|**ファイルの種類**|ファイル拡張子 <br/>例: `.test`|デバイス上の任意の`.test`場所にある拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策によってスキップされます。|
+|**ファイルの種類**|ファイル拡張子 <br/>例: `.test`|デバイス上の任意の `.test` 場所に拡張子を持つすべてのファイルは、Microsoft Defender ウイルス対策によってスキップされます。|
 |**プロセス**|実行可能ファイルのパス <br>例: `c:\test\process.exe`|特定のプロセスとそのプロセスによって開かれたすべてのファイルは、Microsoft Defender ウイルス対策によってスキップされます。|
 
 詳細については、次のリソースを参照してください。
@@ -134,7 +134,7 @@ Windows セキュリティ アプリは、Windows 10 バージョン 1703 以降
 
 4. **フォルダー アクセスの制御** 設定を変更するには、「フォルダー アクセス [の制御を使用して重要なフォルダーを保護する」を](/microsoft-365/security/defender-endpoint/controlled-folders)参照してください。
 
-5. ランサムウェア回復オプションを設定するには、[**ランサムウェア データ復旧**] で **[セットアップ**] を選択し、ランサムウェア攻撃から簡単に回復できるように、OneDrive アカウントをリンクまたは設定する手順に従います。
+5. ランサムウェア回復オプションを設定するには、[**ランサムウェア データ復旧**] で **[セットアップ**] を選択し、OneDrive アカウントをリンクまたは設定する手順に従ってランサムウェア攻撃から簡単に回復できるようにします。
 
 ## <a name="see-also"></a>関連項目
 

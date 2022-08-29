@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: bf23036c48952991253ea3a211ebdeb571c98e5f
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 67d1f15ef79f932ad8515d8c8f6b5339845eb4f4
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276976"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67444941"
 ---
 # <a name="migrating-servers-from-microsoft-monitoring-agent-to-the-unified-solution"></a>Microsoft Monitoring Agent から統合ソリューションへのサーバーの移行
 
@@ -46,9 +46,9 @@ ms.locfileid: "67276976"
 統合ソリューション パッケージ、オンボード スクリプト、移行スクリプトを、MECM を使用して他のアプリをデプロイするのと同じコンテンツ ソースにコピーします。
 
 1. オンボード スクリプトと統合ソリューションを[Microsoft 365 Defender設定ページ](https://sip.security.microsoft.com/preferences2/onboarding)からダウンロードします。
-
-   :::image type="content" source="images/onboarding-script.png" alt-text="オンボード スクリプトと統合ソリューションのダウンロードのスクリーンショット。" lightbox="images/onboarding-script.png":::
-      
+   :::image type="content" source="images/onboarding-script.png" alt-text="オンボード スクリプトと統合ソリューションのダウンロードのスクリーンショット" lightbox="images/onboarding-script.png":::
+   > [!Note]
+   > .cmd ファイルを取得するには、Deployment メソッドのドロップダウンからグループ ポリシーを選択する必要があります。
 2. ドキュメントから移行スクリプトをダウンロードします。[前の MMA ベースのMicrosoft Defender for Endpoint ソリューションのサーバー移行シナリオ](server-migration.md)。 このスクリプトは GitHub: [GitHub - microsoft/mdefordownlevelserver でも確認](https://github.com/microsoft/mdefordownlevelserver)できます。
 3. MECM によってソフトウェア ソースとして使用される共有フォルダーに 3 つのファイルをすべて保存します。
 
@@ -58,17 +58,14 @@ ms.locfileid: "67276976"
 
 1. MECM コンソールで、 **ソフトウェア ライブラリ>アプリケーション>アプリケーションの作成** の手順に従います。
 2. [ **手動でアプリケーション情報を指定する] を選択します**。
-   
    :::image type="content" source="images/manual-application-information.png" alt-text="アプリケーション情報の選択を手動で指定するスクリーンショット。" lightbox="images/manual-application-information.png":::
-   
 3. ウィザードの [ソフトウェア センター] 画面で [ **次へ** ] を選択します。
 4. [展開の種類] で、[ **追加**] をクリックします。
 5. [ **手動] を選択してデプロイの種類情報を指定** し、[ **次へ**] を選択します。
 6. スクリプトデプロイに名前を付けて、[ **次へ**] を選択します。
 
    :::image type="content" source="images/manual-deployment-information.png" alt-text="スクリプトのデプロイ情報を指定するスクリーンショット。":::
-     
-7. この手順では、コンテンツが配置されている UNC パスをコピーします。 例: `\\Cm1\h$\SOFTWARE_SOURCE\UAmigrate`。
+7. この手順では、コンテンツが配置されている UNC パスをコピーします。 例: `\\ServerName\h$\SOFTWARE_SOURCE\path`。
 
    :::image type="content" source="images/deployment-type-wizard.png" alt-text="UNC パスのコピーを示すスクリーンショット。":::
   
@@ -81,21 +78,21 @@ ms.locfileid: "67276976"
       **[次へ**] をクリックし、このセクションに独自のワークスペース ID を追加してください。
 9. [ **次へ** ] をクリックし、[句の追加] をクリックします。
 10. 検出方法は、次に示すレジストリ キーに基づいています。
-      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense\ImagePath`
+      `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Sense`
 
       オプションを確認します。 **このレジストリ設定は、このアプリケーションの存在を示すためにターゲット システムで終了する必要があります。**
 
-    :::image type="content" source="images/detection-wizard.png" alt-text="検出の種類ウィザードを示すスクリーンショット":::
+      :::image type="content" source="images/detection-wizard.png" alt-text="検出の種類ウィザードを示すスクリーンショット":::
 
       >[!TIP]
-      >このレジストリ キーの値は、統合ソリューションがインストールされているデバイスで、次に示す Powershell コマンドを実行して取得されました。 他のクリエイティブな検出方法も使用できます。 目標は、統合ソリューションが特定のデバイスに既にインストールされているかどうかを特定することです。
+      >レジストリ キーの値は、統合ソリューションがインストールされているデバイスで、次に示す Powershell コマンドを実行して取得されました。 他のクリエイティブな検出方法も使用できます。 目標は、統合ソリューションが特定のデバイスに既にインストールされているかどうかを特定することです。 [値] フィールドと [データ型] フィールドは空白のままにできます。
 
      ```powershell
       get-wmiobject Win32_Product | Sort-Object -Property Name |Format-Table IdentifyingNumber, Name, LocalPackage -AutoSize 
      ```
 
 11. [ **ユーザー エクスペリエンス** ] セクションで、スクリーンショットに示されている推奨設定を確認します。 環境に合わせて選択し、[ **次へ**] をクリックできます。 **インストール プログラムを表示するには**、フェーズ テスト中に **Normal** を使用してインストールしてから、一般的な展開のために **最小化** に変更することをお勧めします。
-     
+
      >[!TIP]
      >許容される最大ランタイムを、(既定の) 120 分から 60 分に引き下げます。
 

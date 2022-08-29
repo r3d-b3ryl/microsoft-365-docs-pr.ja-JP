@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7140b5714dd3660fe8dead37c3b6341d026fbb7c
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: be2058e16796bcf55d5dd0a7ed96aa7e325601f9
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61166868"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387641"
 ---
 # <a name="create-indicators-based-on-certificates"></a>証明書に基づいてインジケーターを作成する
 
@@ -38,16 +38,16 @@ ms.locfileid: "61166868"
 - [攻撃面の縮小ルール](attack-surface-reduction.md)や[フォルダー アクセスの制御](controlled-folders.md)など、ブロック テクノロジを展開する必要があるが、許可リストに証明書を追加して署名されたアプリケーションからの動作を許可する必要があるシナリオ。
 - 組織全体で特定の署名済みアプリケーションの使用をブロックする。 アプリケーションの証明書をブロックするインジケーターを作成することで、WINDOWS DEFENDER AV はファイルの実行 (ブロックと修復) を防止し、自動調査と修復は同じように動作します。
 
-## <a name="before-you-begin"></a>開始する前に
+## <a name="before-you-begin"></a>はじめに
 
 証明書のインジケーターを作成する前に、次の要件を理解しておくことが重要です。
 
-- この機能は、組織がWindows Defender ウイルス対策を使用し、クラウドベースの保護が有効になっている場合に使用できます。 詳細については、「 [クラウドベースの保護を管理する](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)」を参照してください。
+- この機能は、組織が Microsoft Defender ウイルス対策を使用し、クラウドベースの保護が有効になっている場合に使用できます。 詳細については、「 [クラウドベースの保護を管理する](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus)」を参照してください。
 - マルウェア対策クライアントバージョンは、4.18.1901.x 以降である必要があります。
 - Windows 10、バージョン 1703 以降、Windows Server 2019、Windows Server 2016、Windows Server 2012 R2、Windows Server 2022 のマシンでサポートされます。
     
     >[!NOTE]
-    >この機能を機能させるには、「オンボード Windows サーバー」の手順に従って[、Windows Server 2016とWindows Server 2012](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016) R2 をオンボードする必要があります。 
+    >この機能を機能させるには、「[Windows サーバーのオンボード](configure-server-endpoints.md#windows-server-2012-r2-and-windows-server-2016)」の手順に従って、Windows Server 2016 R2 と Windows Server 2012 R2 をオンボードする必要があります。 
 
 - ウイルスと脅威の保護の定義は最新の状態である必要があります。
 - この機能は現在、入力をサポートしています。CER または .PEM ファイル拡張子。
@@ -63,7 +63,7 @@ ms.locfileid: "61166868"
 > [!IMPORTANT]
 > 証明書 IoC の作成と削除には、最大で 3 時間かかる場合があります。
 
-1. ナビゲーション ウィンドウで、([**ルール**] **で) 設定** \> **エンドポイント** \> **インジケーター** を選択します。
+1. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **インジケーター**] ([**ルール****]** \> の下) を選択します。
 
 2. [ **インジケーターの追加]** を選択します。
 

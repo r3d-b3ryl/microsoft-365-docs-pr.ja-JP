@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft 365 の電子情報開示検索ツールを使用して検索できる電子メールとドキュメントのプロパティについて説明します。
-ms.openlocfilehash: 75fc048db9ebe0dfb16f772bd899306ce619096a
-ms.sourcegitcommit: 402e0b2095b6cb141b8525a53194d47357bcd612
+ms.openlocfilehash: ca824d0f812690711f8ec78cd21955e14b8cb47f
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67285244"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439642"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>電子情報開示のキーワード クエリと検索条件
 
@@ -293,7 +293,7 @@ SharePoint と OneDrive for Business sites サイトでドキュメントを検�
 
 - キーワード ボックスおよび条件を使用して作成される検索クエリは、[**検索**] ページの、選択した検索の詳細ウィンドウに表示されます。 クエリでは、表記  `(c:c)` の右側のものはすべて、クエリに追加される条件を示します。
 
-- 条件によって検索クエリに追加されるのはプロパティだけであり、演算子は追加されません。 詳細ウィンドウに表示されるクエリの表記  `(c:c)` の右側に演算子が表示されないのはそのためです。 KQL は、クエリの実行時に (前述の規則に従って) 論理演算子を追加します。
+- 条件では、検索クエリにプロパティのみが追加されます。演算子は追加されません。 詳細ウィンドウに表示されるクエリの表記  `(c:c)` の右側に演算子が表示されないのはそのためです。 KQL は、クエリの実行時に (前述の規則に従って) 論理演算子を追加します。
 
 - ドラッグ アンド ドロップを使用して、条件を並び替えることができます。 条件のコントロールをクリックすると、上または下に移動できます。
 

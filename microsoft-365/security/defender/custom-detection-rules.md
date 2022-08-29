@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dac2a68249d90b212e6bbcaacdec84918560deb5
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 0bc0ff6c0ccd9013685ff59e2ce3f12745a7e82e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755813"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387025"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>カスタム検出ルールを作成および管理する
 
@@ -44,14 +44,14 @@ ms.locfileid: "63755813"
 
 - **セキュリティ管理者** - この [Azure Active Directory ロール](/azure/active-directory/roles/permissions-reference#security-administrator)を持つユーザーは、Microsoft 365 Defender ポータルや他のポータルやサービスでセキュリティ設定を管理できます。
 
-- **セキュリティ オペレーター** - この [Azure Active Directory ロールを](/azure/active-directory/roles/permissions-reference#security-operator)持つユーザーは、アラートを管理し、Microsoft 365 Defender ポータルのすべての情報を含む、セキュリティ関連の機能へのグローバルな読み取り専用アクセス権を持つことができます。 このロールは、ロールベースのアクセス制御 (RBAC) がMicrosoft Defender for Endpointでオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC を構成している場合は、Defender for Endpoint の **セキュリティ設定の管理** アクセス許可も必要です。
+- **セキュリティ オペレーター** - この [Azure Active Directory ロール](/azure/active-directory/roles/permissions-reference#security-operator)を持つユーザーは、アラートを管理し、Microsoft 365 Defender ポータル内のすべての情報を含む、セキュリティ関連の機能へのグローバルな読み取り専用アクセス権を持つことができます。 このロールは、ロールベースのアクセス制御 (RBAC) がMicrosoft Defender for Endpointでオフになっている場合にのみ、カスタム検出を管理するのに十分です。 RBAC を構成している場合は、Defender for Endpoint の **セキュリティ設定の管理** アクセス許可も必要です。
 
-また、アクセス許可がある場合は、特定のMicrosoft 365 Defender ソリューションのデータに適用されるカスタム検出を管理することもできます。 たとえば、OfficeのMicrosoft 365 Defenderに対する管理アクセス許可のみを持っている場合は、テーブルを使用してカスタム検出を作成できますが、テーブルを使用`Email`することはできません`Identity`。  
+また、アクセス許可がある場合は、特定のMicrosoft 365 Defender ソリューションのデータに適用されるカスタム検出を管理することもできます。 たとえば、Office のMicrosoft 365 Defenderに対する管理アクセス許可のみを持っている場合は、テーブルではなくテーブル`Identity`を使用してカスタム検出を`Email`作成できます。  
 
 必要なアクセス許可を管理するために、 **グローバル管理者** は次のことができます。
 
-- RolesSecurity 管理者の [下のMicrosoft 365 管理センター](https://admin.microsoft.com/)で、**セキュリティ管理者** または **セキュリティ オペレーター****ロールを** > 割り当てます。
-- 設定 **PermissionsRoles** の下にある [Microsoft 365 Defender](https://security.microsoft.com/)の **Microsoft Defender for Endpoint** > の RBAC 設定を > 確認します。 対応するロールを選択して、 **セキュリティ設定の管理** アクセス許可を割り当てます。
+- [**ロールのセキュリティ管理者]** の下にある [Microsoft 365 管理センター](https://admin.microsoft.com/)で **、セキュリティ管理者またはセキュリティ** **オペレーター****ロールを** > 割り当てます。
+- Microsoft 365 Defenderの [設定 **のアクセス許可** ロール] で [、Microsoft Defender for Endpoint](https://security.microsoft.com/)の RBAC **設定を** >  > 確認 **します**。 対応するロールを選択して、 **セキュリティ設定の管理** アクセス許可を割り当てます。
 
 > [!NOTE]
 > カスタム検出を管理するには、RBAC が有効になっている場合、**セキュリティオペレーター** はMicrosoft Defender for Endpointの **セキュリティ設定の管理** アクセス許可を必要とします。
@@ -131,7 +131,7 @@ DeviceEvents
 - **3 時間ごと** —3 時間ごとに実行され、過去 6 時間のデータを確認します
 - **1 時間ごとに** 実行され、過去 2 時間のデータを確認します
 
-ルールを編集すると、設定した頻度に従ってスケジュールされた次の実行時に、適用する変更と一緒に実行されます。
+ルールを編集すると、設定した頻度に従ってスケジュールされた次の実行時に、適用する変更と一緒に実行されます。 ルールの頻度は、インジェスト時間ではなく、イベント タイムスタンプに基づいています。
 
 
 
@@ -141,7 +141,7 @@ DeviceEvents
 検出を監視する頻度に一致する頻度を選択します。 アラートに応答する組織の能力を検討してください。
 
 ### <a name="3-choose-the-impacted-entities"></a>3. 影響を受けたエンティティを選択します。
-影響を受ける主なエンティティまたは影響を受けるエンティティが見つかると予想されるクエリ結果内の列を特定します。 たとえば、クエリは送信者 (`SenderFromAddress` または `SenderMailFromAddress`) アドレスと受信者 (`RecipientEmailAddress`) アドレスを返す場合があります。 これらの列の中で影響を受ける主なエンティティがある列を特定すると、サービスで関連するアラートの集計、インシデントの関連付け、応答アクションのターゲットができるようになります。
+主な影響、影響を受けたエンティティを見つけるクエリ結果の列を特定します。 たとえば、クエリは送信者 (`SenderFromAddress` または `SenderMailFromAddress`) アドレスと受信者 (`RecipientEmailAddress`) アドレスを返す場合があります。 これらの列の中で影響を受ける主なエンティティがある列を特定すると、サービスで関連するアラートの集計、インシデントの関連付け、応答アクションのターゲットができるようになります。
 
 エンティティの種類 (メールボックス、ユーザー、またはデバイス) ごとに 1 つの列のみを選択できます。 クエリによって返すことができない列は選択できません。
 
@@ -152,7 +152,7 @@ DeviceEvents
 これらのアクションは、クエリ結果の列 `DeviceId` にあるデバイスに適用されます。
 - **デバイスを分離**—Microsoft Defender for Endpointを使用して完全なネットワーク分離を適用し、デバイスがアプリケーションまたはサービスに接続できないようにします。 [コンピューターの分離Microsoft Defender for Endpoint詳細を確認する](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **調査パッケージを収集** する - ZIP ファイル内のデバイス情報を収集します。 [Microsoft Defender for Endpoint調査パッケージの詳細を確認する](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **ウイルス対策スキャンを実行** する—デバイスでフル Windows Defender ウイルス対策 スキャンを実行します
+- **ウイルス対策スキャンを実行** する — デバイスで Microsoft Defender ウイルス対策の完全なスキャンを実行します
 - **調査を開始**—デバイスで [自動調査](m365d-autoir.md) を開始します。
 - **アプリの実行を制限** する - Microsoft 発行の証明書で署名されたファイルのみを実行できるように、デバイスに対する制限を設定します。 [Microsoft Defender for Endpointを使用したアプリの制限の詳細](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -160,13 +160,13 @@ DeviceEvents
 選択すると、クエリ結果の 、または`InitiatingProcessSHA256`列内の **ファイル** に`SHA1``InitiatingProcessSHA1``SHA256`検疫ファイル アクションを適用することを選択できます。 このアクションでは、ファイルが現在ある場所から削除され、コピーが検疫に入ります。
 
 #### <a name="actions-on-users"></a>ユーザーへのアクション
-選択されると、**ユーザーを侵害済みにする** アクションをクエリ結果の `AccountObjectId`、`InitiatingProcessAccountObjectId`、または `RecipientObjectId` 列にあるユーザーに適用することができます。 このアクションは、Azure Active Directoryでユーザーのリスク レベルを "高" に設定し、対応する [ID 保護ポリシー](/azure/active-directory/identity-protection/overview-identity-protection)をトリガーします。
+選択されると、**ユーザーを侵害済みにする** アクションをクエリ結果の `AccountObjectId`、`InitiatingProcessAccountObjectId`、または `RecipientObjectId` 列にあるユーザーに適用することができます。 このアクションにより、Azure Active Directory でユーザーのリスク レベルが "高" に設定され、対応する [ID 保護ポリシー](/azure/active-directory/identity-protection/overview-identity-protection)がトリガーされます。
 
 > [!NOTE]
 > 現在、カスタム検出ルールの許可またはブロックアクションは、Microsoft 365 Defenderではサポートされていません。
 
 ### <a name="5-set-the-rule-scope"></a>5. ルールスコープを設定します。
-スコープを設定して、ルールで対象となるデバイスを指定します。 この範囲で、デバイスをチェックするルールが影響されますが、メールボックスのみをチェックするルールやユーザー アカウントまたは ID のみをチェックするルールには影響はありません。
+範囲を設定してルールの対象となるデバイスを指定します。 この範囲で、デバイスをチェックするルールが影響されますが、メールボックスのみをチェックするルールやユーザー アカウントまたは ID のみをチェックするルールには影響はありません。
 
 範囲を設定する場合は、次の項目を選択できます。
 
@@ -192,7 +192,7 @@ DeviceEvents
 
 ### <a name="view-existing-rules"></a>既存のルールを表示する
 
-既存のすべてのカスタム検出ルールを表示するには、**HuntingCustom** >  検出ルールに移動します。 ページには、次の実行情報を含むすべてのルールが一覧表示されます。
+既存のすべてのカスタム検出ルールを表示するには、 **ハンティング** > **カスタム検出ルール** に移動します。 ページには、次の実行情報を含むすべてのルールが一覧表示されます。
 
 - **最終実行** - ルールが最後に実行され、クエリの一致を確認し、アラートを生成した場合
 - **最終実行状態** -ルールが正常に実行されたかどうか
@@ -201,7 +201,7 @@ DeviceEvents
 
 ### <a name="view-rule-details-modify-rule-and-run-rule"></a>ルールの詳細の表示、ルールの変更、およびルールの実行
 
-カスタム検出ルールに関する包括的な情報を表示するには、**HuntingCustom**  >  検出ルールに移動し、ルールの名前を選択します。 その後、ルールの実行状態と範囲に関する情報など、ルールに関する一般的な情報を確認することができます。 このページには、トリガーされたアラートとアクションの一覧も表示されます。
+カスタム検出ルールに関する包括的な情報を表示するには、カスタム **検出ルール** の **検索** > に移動し、ルールの名前を選択します。 その後、ルールの実行状態と範囲に関する情報など、ルールに関する一般的な情報を確認することができます。 このページには、トリガーされたアラートとアクションの一覧も表示されます。
 
 :::image type="content" source="../../media/custom-detect-rules-view.png" alt-text="Microsoft 365 Defender ポータルの [カスタム検出ルールの詳細] ページ" lightbox="../../media/custom-detect-rules-view.png":::<br>
 *カスタム検出ルールの詳細*
@@ -216,14 +216,14 @@ DeviceEvents
 
 ### <a name="view-and-manage-triggered-alerts"></a>トリガーされたアラートを表示して管理する
 
-ルールの詳細画面 (**HuntingCustom** >  検出 > **[ルール名]) で**、[**トリガーされたアラート**] に移動します。このアラートには、ルールに一致して生成されたアラートが一覧表示されます。 アラートを選択して、アラートに関する詳細情報を表示し、次のアクションを実行します。
+[ルールの詳細] 画面 ([**カスタム検出** > の **検索** > **][ルール名]) で**、[**トリガーされたアラート**] に移動します。このアラートには、ルールに一致して生成されたアラートが一覧表示されます。 アラートを選択して、アラートに関する詳細情報を表示し、次のアクションを実行します。
 
 - 状態と分類 (true または false アラート) を設定してアラートを管理する
 - アラートをインシデントにリンクする
 - 高度な捜索でアラートをトリガーしたクエリを実行する
 
 ### <a name="review-actions"></a>アクションを確認する
-ルールの詳細画面 (**HuntingCustom** >  検出 > **[ルール名]) で**、[**トリガーされたアクション**] に移動します。このアクションには、ルールに一致するアクションに基づいて実行されたアクションが一覧表示されます。
+[ルールの詳細] 画面 ([**カスタム検出** > の **検索** > **][ルール名]) で**、[**トリガーされたアクション**] に移動します。このアクションには、ルールに対する一致に基づいて実行されたアクションが一覧表示されます。
 
 >[!TIP]
 >テーブル内の項目に対して情報をすばやく表示し、アクションを実行するには、テーブルの左側にある選択列 [&#10003;] を使用します。

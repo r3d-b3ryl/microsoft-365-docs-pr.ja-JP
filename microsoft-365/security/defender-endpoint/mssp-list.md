@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9a4ea838092c379ff3d58f78b5622083f7dcbfa7
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: bade400bfd794371f294df28320d3a8a11aa30b4
+ms.sourcegitcommit: ab32c6e19af08837aaa84a058653c3a209d366ba
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67099263"
+ms.lasthandoff: 08/26/2022
+ms.locfileid: "67445060"
 ---
 # <a name="supported-managed-security-service-providers"></a>サポート対象マネージド セキュリティ サービス プロバイダー
 
@@ -46,7 +46,7 @@ ms.locfileid: "67099263"
 ![CyberProof ロゴの画像。](images/cyberproof-logo.png) |[CyberProof マネージド検出&応答 (MDR)](https://go.microsoft.com/fwlink/?linkid=2163964) | Microsoft Sentinel と Defender for Endpoint と完全に統合された 24 時間 365 日のマネージド脅威検出および応答サービス。
 ![Dell Technologies Advanced Threat Protection ロゴの画像。](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | 24 時間 365 日の機能を備えた悪意のある動作と異常に対するプロフェッショナルな監視サービス
 :::image type="content" source="images/dxc-logo.png" alt-text="DXC-Managed Endpoint Threat Detection and Response ロゴの画像":::。.| [DXC マネージド エンドポイントの脅威の検出と応答](https://go.microsoft.com/fwlink/?linkid=2090395) | 従来のセキュリティ防御を回避し、数日ではなく数時間または数分で含めるエンドポイントの脅威を特定します。
-![eSentire ログの画像。](images/esentire-logo.png) | [eSentire マネージド検出と応答](https://go.microsoft.com/fwlink/?linkid=2154970) | Microsoft Defender for Endpointによる 24 時間 365 日の脅威の調査と対応。
+![eSentire ログの画像。](images/esentire-logo.png) | [eSentire マネージド検出と応答](https://go.microsoft.com/fwlink/?linkid=2154970) | 24 時間 365 日の脅威の捜索、調査、および Microsoft エコシステム全体での認定された MDR の専門知識を備えた完全な対応 (Microsoft 365 Defender & Sentinel プラス 15 分の平均包含時間を含む)。
 ![expel ロゴの画像。](images/expel-logo.png)| [Microsoft Defender for Endpointのマネージド検出と応答を削除する](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel は、Microsoft Defender for Endpointのセキュリティ リスクを検出することで、セキュリティを維持するのに役立ちます。
 ![Mandiant ロゴの画像。](images/mandiant-logo.png) | [Microsoft Defender for Endpointの Mandiant マネージド 防御 (MDR)](https://go.microsoft.com/fwlink/?linkid=2164352) | 24 時間 365 日のフロントライン MDR インテリジェンスと Mandiant の専門知識を使用して Defender for Endpoint を強化します。
 ![NTT セキュリティ ロゴの画像。](images/ntt-logo.png)| [NTT セキュリティ](https://go.microsoft.com/fwlink/?linkid=2095320) | NTT の EDR サービスは、エンドポイントとネットワーク全体で 24 時間 365 日のセキュリティ監視&応答を提供します

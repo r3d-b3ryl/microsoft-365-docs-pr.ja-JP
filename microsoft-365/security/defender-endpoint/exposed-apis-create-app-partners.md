@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7ca212cf6cdacdaf374dbe65f4fd88c74712bb34
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: 8a0a191d3e418b189af029f2c459bed93a0e8c54
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66101846"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331909"
 ---
 # <a name="partner-access-through-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API を介したパートナー アクセス
 
@@ -44,7 +44,7 @@ ms.locfileid: "66101846"
 
 このページでは、Azure Active Directory (Azure AD) アプリケーションを作成して、顧客に代わってMicrosoft Defender for Endpointにプログラムでアクセスする方法について説明します。
 
-Microsoft Defender for Endpointは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、作業フローを自動化し、Microsoft Defender for Endpoint機能に基づいてイノベーションを行うのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については、「[OAuth 2.0 Authorization Code Flow」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
+Microsoft Defender for Endpointは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、作業フローを自動化し、Microsoft Defender for Endpoint機能に基づいてイノベーションを行うのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については、「 [OAuth 2.0 承認コード フロー」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 
@@ -59,7 +59,7 @@ Microsoft Defender for Endpointは、一連のプログラム API を通じて�
 
 1. **グローバル管理者** ロールを持つユーザーを使用して [Azure テナント](https://portal.azure.com)にサインインします。
 
-2. **Azure Active Directory アプリの登録** \>  \> **新しい登録** に移動します。
+2. **Azure Active Directory** \> **アプリの登録** \> **新しい登録** に移動します。
 
    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="アプリケーション登録ウィンドウへのナビゲーション" lightbox="images/atp-azure-new-app2.png":::
 
@@ -174,7 +174,7 @@ return $token
 > [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。 アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
 
 - 新しいコンソール アプリケーションを作成する
-- [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGetインストールする
+- NuGet [Microsoft.Identity.Client を](https://www.nuget.org/packages/Microsoft.Identity.Client/)インストールする
 - 以下を使用して追加する
 
     ```console
@@ -206,7 +206,7 @@ Python を[使用したトークンの取得](run-advanced-query-sample-python.m
 ### <a name="using-curl"></a>Curl の使用
 
 > [!NOTE]
-> 次の手順では、Windows用の Curl がコンピューターに既にインストールされていると想定されています
+> 次の手順では、Curl for Windows がコンピューターに既にインストールされていると想定されています
 
 - コマンド ウィンドウを開く
 - CLIENT_IDを Azure アプリケーション ID に設定する

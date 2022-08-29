@@ -23,12 +23,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2fd9dc7e8d597890e8d07ce783938bc1d69b6c78
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: db3a005b80a69695da5936d60cb512b8fc46cfcb
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748761"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387069"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Microsoft 365 Defenderパイロット環境で攻撃シミュレーションを実行する
 
@@ -49,15 +49,15 @@ Microsoft 365 サービスおよびアプリは、疑わしい、または悪意
 
 Microsoft 365 Defender ポータルには、パイロット環境に対するシミュレートされた攻撃を作成するための機能が組み込まれています。
 
-- Office 365のMicrosoft 365 Defenderに対する[https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator)攻撃シミュレーション トレーニング
+- Office 365のMicrosoft 365 Defenderの攻撃シミュレーション トレーニング[https://security.microsoft.com/attacksimulator](https://security.microsoft.com/attacksimulator)
   
-  Microsoft 365 Defender ポータルで、[**電子メール & コラボレーション>攻撃シミュレーション トレーニング**] を選択します。
+  Microsoft 365 Defender ポータルで、**コラボレーション > 攻撃シミュレーション トレーニングEmail &** 選択します。
 
 - 攻撃のチュートリアルでは、エンドポイントのMicrosoft 365 Defenderのシミュレーションを&します[https://security.microsoft.com/tutorials/simulations](https://security.microsoft.com/tutorials/simulations)。
 
   <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、[**Endpoints > Tutorials & simulations**] を選択します。
 
-### <a name="defender-for-office-365-attack-simulation-training"></a>Defender for Office 365攻撃シミュレーション トレーニング
+### <a name="defender-for-office-365-attack-simulation-training"></a>Defender for Office 365 攻撃シミュレーション トレーニング
 
 Microsoft 365 E5またはMicrosoft Defender for Office 365プラン 2 のDefender for Office 365には、フィッシング攻撃に対する攻撃シミュレーション トレーニングが含まれています。 基本的な手順は次のとおりです。
 
@@ -119,7 +119,7 @@ Microsoft からの Defender for Endpoint シミュレーションを次に示�
 
    - バージョン 1903 以降Windows 10実行します。
    - AD DS ドメイン コントローラー ドメインに参加しています。
-   - [Windows Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)有効になっています。 Windows Defender ウイルス対策を有効にできない場合は、この[トラブルシューティング トピックを](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)参照してください。
+   - [Microsoft Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)が有効になっています。 Microsoft Defender ウイルス対策を有効にできない場合は、この [トラブルシューティング トピックを](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)参照してください。
    - [Microsoft Defender for Endpointにオンボードされます](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)。
 
 テナントとデバイス グループを使用する場合は、テスト デバイス用の専用デバイス グループを作成し、それを最上位レベルにプッシュします。

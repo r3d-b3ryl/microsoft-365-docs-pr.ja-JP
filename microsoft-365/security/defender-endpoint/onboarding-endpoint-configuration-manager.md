@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b8847fb9132ee037a3103bf86aabd14d21fb482f
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: e4ddd903047fd3bdb2fb8c77019c83721fbe156f
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469429"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387399"
 ---
 # <a name="onboarding-using-microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager を使用したオンボーディング
 
@@ -49,7 +49,7 @@ Defender for Endpoint ではさまざまなエンドポイントとツールの�
 - 手順 1: Windows デバイスをサービスにオンボードする
 - 手順 2: Defender for Endpoint 機能の構成
 
-このオンボードガイダンスでは、Microsoft Endpoint Configuration Managerを使用する場合に実行する必要がある次の基本的な手順について説明します。
+このオンボード ガイダンスでは、Microsoft Endpoint Configuration Managerを使用する場合に実行する必要がある次の基本的な手順について説明します。
 
 - **Microsoft Endpoint Configuration Managerでのコレクションの作成**
 - **Microsoft Endpoint Configuration Managerを使用したMicrosoft Defender for Endpoint機能の構成**
@@ -57,11 +57,11 @@ Defender for Endpoint ではさまざまなエンドポイントとツールの�
 > [!NOTE]
 > この展開例では、Windows デバイスのみが対象となります。
 
-## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>手順 1: Microsoft Endpoint Configuration Managerを使用してWindows デバイスをオンボードする
+## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>手順 1: Microsoft Endpoint Configuration Managerを使用して Windows デバイスをオンボードする
 
 ### <a name="collection-creation"></a>コレクションの作成
 
-Microsoft Endpoint Configuration Managerを使用してWindowsデバイスをオンボードするには、デプロイで既存のコレクションをターゲットにするか、テスト用に新しいコレクションを作成できます。
+Microsoft Endpoint Configuration Managerを使用して Windows デバイスをオンボードするには、展開で既存のコレクションをターゲットにするか、新しいコレクションをテスト用に作成できます。
 
 グループ ポリシーや手動メソッドなどのツールを使用したオンボードでは、システムにエージェントはインストールされません。
 
@@ -69,7 +69,7 @@ Microsoft Endpoint Configuration Manager コンソール内では、オンボー
 
 この必要な構成を受け取るシステムは、Configuration Manager クライアントが管理ポイントからこのポリシーを受け取り続ける限り、その構成を維持します。
 
-次の手順に従って、Microsoft Endpoint Configuration Managerを使用してエンドポイントをオンボードします。
+Microsoft Endpoint Configuration Managerを使用してエンドポイントをオンボードするには、次の手順に従います。
 
 1. Microsoft Endpoint Configuration Manager コンソールで、[**資産とコンプライアンスの\>概要\>] デバイス コレクション** に移動します。
 
@@ -81,7 +81,7 @@ Microsoft Endpoint Configuration Manager コンソール内では、オンボー
 
 3. **名前** と **制限コレクションを** 指定し、[**次へ**] を選択します。
 
-    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Microsoft Endpoint Configuration Manager ウィザード 3" lightbox="images/configmgr-limiting-collection.png":::
+    :::image type="content" source="images/configmgr-limiting-collection.png" alt-text="Microsoft Endpoint Configuration Manager wizard3" lightbox="images/configmgr-limiting-collection.png":::
 
 4. [ **ルールの追加] を** 選択し、[ **クエリ ルール**] を選択します。
 
@@ -97,21 +97,21 @@ Microsoft Endpoint Configuration Manager コンソール内では、オンボー
 
 7. 条件の種類を **単純な値** のままにし、 **オペレーティング システム - ビルド番号**、演算子の値 **が** **14393** 以上の場所を選択し、[OK] をクリック **します**。
 
-    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Microsoft Endpoint Configuration Manager ウィザード 7" lightbox="images/configmgr-simple-value.png":::
+    :::image type="content" source="images/configmgr-simple-value.png" alt-text="Microsoft Endpoint Configuration Manager wizard7" lightbox="images/configmgr-simple-value.png":::
 
 8. **[次へ**] と **[閉じる**] を選択します。
 
-    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="Microsoft Endpoint Configuration Manager ウィザード8" lightbox="images/configmgr-membership-rules.png":::
+    :::image type="content" source="images/configmgr-membership-rules.png" alt-text="Microsoft エンドポイント Configuration Manager ウィザード8" lightbox="images/configmgr-membership-rules.png":::
 
-9. **[次へ]** を選択します。
+9. [**次へ**] を選択します。
 
-    :::image type="content" source="images/configmgr-confirm.png" alt-text="Microsoft Endpoint Configuration Manager ウィザード9" lightbox="images/configmgr-confirm.png":::
+    :::image type="content" source="images/configmgr-confirm.png" alt-text="Microsoft エンドポイント Configuration Manager ウィザード9" lightbox="images/configmgr-confirm.png":::
 
-このタスクを完了すると、環境内のすべてのWindows エンドポイントを含むデバイス コレクションが作成されます。
+このタスクを完了すると、環境内のすべての Windows エンドポイントを含むデバイス コレクションが作成されます。
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>手順 2: Microsoft Defender for Endpoint機能を構成する
 
-このセクションでは、Windows デバイスでMicrosoft Endpoint Configuration Managerを使用して次の機能を構成する方法について説明します。
+このセクションでは、Windows デバイスで Microsoft Endpoint Configuration Managerを使用して次の機能を構成する方法について説明します。
 
 - [**エンドポイントでの検出と対応**](#endpoint-detection-and-response)
 - [**次世代の保護**](#next-generation-protection)
@@ -123,9 +123,9 @@ Microsoft Endpoint Configuration Manager コンソール内では、オンボー
 
 Microsoft 365 Defender ポータル内から、System Center Configuration Managerでポリシーを作成し、そのポリシーをデバイスのWindows 10およびWindows 11に展開するために使用できるポリシーをダウンロード`.onboarding`できます。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、設定を選択[し、[オンボード] を選択します](https://security.microsoft.com/preferences2/onboarding)。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で[[設定]、[オンボード] の順に選択します](https://security.microsoft.com/preferences2/onboarding)。
 
-2. [展開方法] で、サポートされている **バージョンのMicrosoft Endpoint Configuration Manager** を選択します。
+2. [展開方法] で、サポートされている **Microsoft Endpoint Configuration Manager** のバージョンを選択します。
 
     :::image type="content" source="images/mdatp-onboarding-wizard.png" alt-text="Microsoft Endpoint Configuration Manager ウィザード10" lightbox="images/mdatp-onboarding-wizard.png":::
 
@@ -134,7 +134,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
    :::image type="content" source="images/mdatp-download-package.png" alt-text="Microsoft Endpoint Configuration Manager ウィザード11" lightbox="images/mdatp-download-package.png":::
 
 4. パッケージをアクセス可能な場所に保存します。
-5. Microsoft Endpoint Configuration Managerで、[**資産とコンプライアンス>概要] > Endpoint Protection > [Microsoft Defender ATP ポリシー]** に移動します。
+5. Microsoft Endpoint Configuration Managerで、[**資産とコンプライアンス>概要] > [Endpoint Protection] > [Microsoft Defender ATP ポリシー**] に移動します。
 
 6. **Microsoft Defender ATP ポリシー** を右クリックし、[**Microsoft Defender ATP ポリシーの作成**] を選択します。
 
@@ -142,7 +142,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 7. 名前と説明を入力し、 **オンボード** が選択されていることを確認してから、[ **次へ**] を選択します。
 
-    :::image type="content" source="images/configmgr-policy-name.png" alt-text="Microsoft Endpoint Configuration Manager ウィザード13" lightbox="images/configmgr-policy-name.png":::
+    :::image type="content" source="images/configmgr-policy-name.png" alt-text="Microsoft エンドポイント Configuration Manager ウィザード13" lightbox="images/configmgr-policy-name.png":::
 
 8. [ **参照**] をクリックします。
 
@@ -163,7 +163,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 14. ウィザードが完了したら、[ **閉じる** ] をクリックします。
 
-15. Microsoft Endpoint Configuration Manager コンソールで、先ほど作成した Defender for Endpoint ポリシーを右クリックし、[デプロイ] を選択 **します**。
+15. Microsoft Endpoint Configuration Manager コンソールで、先ほど作成した Defender for Endpoint ポリシーを右クリックし、[展開] を選択 **します**。
 
     :::image type="content" source="images/configmgr-deploy.png" alt-text="構成設定 4" lightbox="images/configmgr-deploy.png":::
 
@@ -173,11 +173,11 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>以前のバージョンの Windows クライアント (Windows 7 およびWindows 8.1)
 
-次の手順に従って、以前のバージョンのWindowsのオンボードに必要な Defender for Endpoint ワークスペース ID とワークスペース キーを特定します。
+次の手順に従って、以前のバージョンの Windows のオンボードに必要な Defender for Endpoint ワークスペース ID とワークスペース キーを特定します。
 
-1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、(デバイス管理 **の下** で) **設定** \> **エンドポイント** \> **オンボードを** 選択します。
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で、(**デバイス管理** の下で) **[設定** \> **エンドポイント** \> **のオンボード**] を選択します。
 
-2. オペレーティング システムで、**Windows 7 SP1 と 8.1** を選択します。
+2. オペレーティング システムで **、Windows 7 SP1 と 8.1** を選択します。
 
 3. **ワークスペース ID** と **ワークスペース キー** をコピーして保存します。 これらはプロセスの後半で使用されます。
 
@@ -185,12 +185,12 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 4. Microsoft Monitoring Agent (MMA) をインストールします。
 
-   MMA は現在 (2019 年 1 月現在)、次のWindowsオペレーティング システムでサポートされています。
+   MMA は現在(2019 年 1 月現在)、次の Windows オペレーティング システムでサポートされています。
 
    - サーバー SKU: Windows Server 2008 SP1 以降
    - クライアント SKU: Windows 7 SP1 以降
 
-   MMA エージェントは、Windows デバイスにインストールする必要があります。 エージェントをインストールするには、MMA でデータを収集するために、一部のシステムで [カスタマー エクスペリエンスと診断テレメトリ用の更新プログラム](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) をダウンロードする必要があります。 これらのシステム バージョンには、次のものが含まれますが、これらに限定されない場合があります。
+   MMA エージェントを Windows デバイスにインストールする必要があります。 エージェントをインストールするには、MMA でデータを収集するために、一部のシステムで [カスタマー エクスペリエンスと診断テレメトリ用の更新プログラム](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) をダウンロードする必要があります。 これらのシステム バージョンには、次のものが含まれますが、これらに限定されない場合があります。
 
    - Windows 8.1
    - Windows 7
@@ -198,7 +198,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
    - Windows Server 2012 R2
    - Windows Server 2008 R2
 
-   具体的には、Windows 7 SP1 では、次のパッチをインストールする必要があります。
+   具体的には、Windows 7 SP1 の場合は、次のパッチをインストールする必要があります。
 
    - [KB4074598](https://support.microsoft.com/help/4074598/windows-7-update-kb4074598) をインストールする
    - [.NET Framework 4.5](https://www.microsoft.com/download/details.aspx?id=30653) (またはそれ以降) **または** [KB3154518](https://support.microsoft.com/help/3154518/support-for-tls-system-default-versions-included-in-the-net-framework) をインストールします。 両方を同じシステムにインストールしないでください。
@@ -211,7 +211,7 @@ Microsoft 365 Defender ポータル内から、System Center Configuration Manag
 
 Windows Defender ウイルス対策は、デスクトップ、ポータブル コンピューター、サーバーを対象に次世代の保護機能を提供する、組み込みのマルウェア対策ソリューションです。
 
-1. Microsoft Endpoint Configuration Manager コンソールで、[**資産とコンプライアンスの\>概要\>] Endpoint Protection [マルウェア対策ポリシー] に\>** 移動し、[**マルウェア対策ポリシーの作成**] を選択します。
+1. Microsoft Endpoint Configuration Manager コンソールで、[**資産とコンプライアンスの\>概要\>] Endpoint Protection \> マルウェア対策ポリシー** に移動し、[**マルウェア対策ポリシーの作成**] を選択します。
 
    :::image type="content" source="images/9736e0358e86bc778ce1bd4c516adb8b.png" alt-text="マルウェア対策ポリシー" lightbox="images/9736e0358e86bc778ce1bd4c516adb8b.png":::
 
@@ -245,11 +245,11 @@ Windows Defender ウイルス対策は、デスクトップ、ポータブル �
 
     :::image type="content" source="images/f5508317cd8c7870627cb4726acd5f3d.png" alt-text="次世代の保護ウィンドウ10" lightbox="images/f5508317cd8c7870627cb4726acd5f3d.png":::
 
-4. 新しいマルウェア対策ポリシーをWindows コレクションにターゲット設定し、[OK] をクリック **します**。
+4. 新しいマルウェア対策ポリシーを Windows コレクションにターゲット設定し、[ **OK**] をクリックします。
 
     :::image type="content" source="images/configmgr-select-collection.png" alt-text="次世代の保護ウィンドウ11" lightbox="images/configmgr-select-collection.png":::
 
-このタスクを完了すると、Windows Defender ウイルス対策が正常に構成されました。
+このタスクを完了すると、Microsoft Defender ウイルス対策が正常に構成されました。
 
 ### <a name="attack-surface-reduction"></a>攻撃面の縮小
 
@@ -259,9 +259,9 @@ Defender for Endpoint の攻撃面削減の柱には、Exploit Guard で使用�
 
 監査モードで ASR ルールを設定するには:
 
-1. Microsoft Endpoint Configuration Manager コンソールで、**資産とコンプライアンス\>の概要 \> Endpoint Protection Windows Defender \> Exploit Guard** に移動し、[**Exploit Guard ポリシーの作成**] を選択します。
+1. Microsoft Endpoint Configuration Manager コンソールで、**資産とコンプライアンスの\>概要 \> Endpoint Protection \> Windows Defender Exploit Guard** に移動し、[**Exploit Guard ポリシーの作成**] を選択します。
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Microsoft Endpoint Configuration Manager コンソール0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Microsoft Endpoint Configuration Manager console0" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
 2. [ **攻撃面の縮小**] を選択します。
 
@@ -271,7 +271,7 @@ Defender for Endpoint の攻撃面削減の柱には、Exploit Guard で使用�
 
 4. **[次へ**] をクリックして、新しい Exploit Guard ポリシーを確認します。
 
-   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Microsoft Endpoint Configuration Manager コンソール 2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
+   :::image type="content" source="images/0a6536f2c4024c08709cac8fcf800060.png" alt-text="Microsoft Endpoint Configuration Manager console2" lightbox="images/0a6536f2c4024c08709cac8fcf800060.png":::
 
 5. ポリシーが作成されたら、[ **閉じる**] をクリックします。
 
@@ -279,11 +279,11 @@ Defender for Endpoint の攻撃面削減の柱には、Exploit Guard で使用�
 
 6. 新しく作成したポリシーを右クリックし、[ **デプロイ**] を選択します。
 
-   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Microsoft Endpoint Configuration Manager コンソール 4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
+   :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Microsoft Endpoint Configuration Manager console4" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. 新しく作成されたWindows コレクションにポリシーをターゲットにして、[**OK]** をクリックします。
+7. 新しく作成した Windows コレクションにポリシーをターゲットにして、[OK] をクリック **します**。
 
-   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Microsoft Endpoint Configuration Manager コンソール 5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
+   :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Microsoft Endpoint Configuration Manager console5" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
 このタスクを完了すると、監査モードで ASR ルールが正常に構成されました。
 
@@ -309,15 +309,15 @@ ASR 規則がエンドポイントに正しく適用されているかどうか�
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>監査モードで Network Protection ルールを設定する
 
-1. Microsoft Endpoint Configuration Manager コンソールで、**資産とコンプライアンス\>の概要 \> Endpoint Protection Windows Defender \> Exploit Guard** に移動し、[**Exploit Guard ポリシーの作成**] を選択します。
+1. Microsoft Endpoint Configuration Manager コンソールで、**資産とコンプライアンスの\>概要 \> Endpoint Protection \> Windows Defender Exploit Guard** に移動し、[**Exploit Guard ポリシーの作成**] を選択します。
 
-   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
+   :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="The System Center Configuration Manager1" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
 2. [ **ネットワーク保護**] を選択します。
 
 3. 設定を **[監査** ] に設定し、[ **次へ**] をクリックします。
 
-   :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
+   :::image type="content" source="images/c039b2e05dba1ade6fb4512456380c9f.png" alt-text="The System Center Configuration Manager2" lightbox="images/c039b2e05dba1ade6fb4512456380c9f.png":::
 
 4. **[次へ**] をクリックして、新しい Exploit Guard ポリシーを確認します。
 
@@ -331,7 +331,7 @@ ASR 規則がエンドポイントに正しく適用されているかどうか�
 
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Microsoft Endpoint Configuration Manager-1" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
-7. 新しく作成したWindows コレクションに対するポリシーを選択し、[**OK] を選択します**。
+7. 新しく作成した Windows コレクションのポリシーを選択し、[OK] を選択 **します**。
 
    :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Microsoft Endpoint Configuration Manager-2" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::
 
@@ -339,7 +339,7 @@ ASR 規則がエンドポイントに正しく適用されているかどうか�
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>監査モードでフォルダー アクセス規則の制御を設定するには
 
-1. Microsoft Endpoint Configuration Manager コンソールで、**Assets and** **ComplianceOverview** >  >  **Endpoint Protection Windows Defender** >  **Exploit Guard** に移動し、**Exploit Guard ポリシーの作成** を選択します。
+1. Microsoft Endpoint Configuration Manager コンソールで、[**資産とコンプライアンスの** > **概要** > **] エンドポイント保護** > **Windows Defender Exploit Guard** に移動し、[**Exploit Guard ポリシーの作成**] を選択します。
 
    :::image type="content" source="images/728c10ef26042bbdbcd270b6343f1a8a.png" alt-text="Microsoft Endpoint Configuration Manager-3" lightbox="images/728c10ef26042bbdbcd270b6343f1a8a.png":::
 
@@ -362,7 +362,7 @@ ASR 規則がエンドポイントに正しく適用されているかどうか�
    :::image type="content" source="images/8999dd697e3b495c04eb911f8b68a1ef.png" alt-text="Microsoft Endpoint Configuration Manager-7" lightbox="images/8999dd697e3b495c04eb911f8b68a1ef.png":::
 
 
-7. 新しく作成されたWindows コレクションにポリシーをターゲットにして、[**OK]** をクリックします。
+7. 新しく作成した Windows コレクションにポリシーをターゲットにして、[OK] をクリック **します**。
 
 
 :::image type="content" source="images/0ccfe3e803be4b56c668b220b51da7f7.png" alt-text="Microsoft Endpoint Configuration Manager-8" lightbox="images/0ccfe3e803be4b56c668b220b51da7f7.png":::

@@ -18,12 +18,12 @@ ms.collection:
 - zerotrust-solution
 ms.custom: ''
 description: Microsoft 365 のセキュリティとコンプライアンス機能を展開し、個人情報を保護します。
-ms.openlocfilehash: ca2f500c5a6f09bf051137de2b637feb5a00f391
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 893e989f0040523645fc5fc91e3acd4176f77eb6
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750278"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368734"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>データプライバシー規制の対象となる情報を保護する
 
@@ -198,7 +198,7 @@ Microsoft Purview 情報保護の秘密度ラベルを使用すると、ユー�
 
 ## <a name="data-loss-prevention"></a>データ損失防止
 
-Microsoft 365 の [データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md) を使用して、個人情報を含むデータの共有など、リスクの高い、不注意、または不適切な共有を検出、警告、ブロックすることができます。
+Microsoft Purview の [データ損失防止 (DLP)](../compliance/dlp-learn-about-dlp.md) を使用すると、内部と外部の両方で、個人情報を含むデータの共有など、危険、不注意、不適切な共有を検出、警告、ブロックできます。
 
 DLP を使用すると、次のことが可能になります。
 
@@ -227,41 +227,57 @@ DLP は、正常性レコードを含むドキュメントまたは電子メー�
 
 ### <a name="planning-for-dlp"></a>DLP の計画
 
-次の目的で DLP ポリシーを計画します。
+DLP 実装 [の計画に関する完全なガイダンスについては、「データ損失防止 (DLP)](../compliance/dlp-overview-plan-for-dlp.md) の計画」を参照してください。
 
-- ビジネス要件。
+<!-- Plan your DLP policies for:
 
-- データプライバシーリスクの評価と機密アイテムの特定に関する記事で説明されている組織 [のリスクベースの評価](information-protection-deploy-assess.md)。
+- Your business requirements.
 
-- その他の情報保護とガバナンス メカニズムは、データプライバシーの実施または計画中です。
+- A risk-based assessment of the organization as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md).
 
-- データ [プライバシーリスクの評価と機密アイテム](information-protection-deploy-assess.md)の特定に関する記事で説明されているように、評価作業に基づいて個人データに対して識別した機密情報の種類。 DLP ポリシー条件は、機密情報の種類と保持ラベルの両方に基づく場合があります。
+- Other information protection and governance mechanisms in place or in planning for data privacy.
 
-- DLP 条件を指定する必要がある保持ラベル。 詳細については、 [組織のデータ プライバシー規制の対象となる管理情報](information-protection-deploy-govern.md) に関する記事を参照してください。
+- The sensitive information types that you’ve identified for personal data based on your assessment work as described in the [assess data privacy risks and identify sensitive items article](information-protection-deploy-assess.md). DLP policy conditions can be based on both sensitive information types and retention labels.
 
-- 継続的な DLP ポリシー管理。 組織内の誰かが、機密情報の種類、保持ラベル、規制、コンプライアンス ポリシーの変更に対するポリシーを運用および調整する必要があります。
+- The retention labels you'll need to specify DLP conditions. See the [govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md) article for more information.
 
-秘密度ラベルは DLP ポリシーの条件では使用できませんが、機密情報の種類に基づいて自動適用できる秘密度ラベルだけで、アクセスを防止する特定の保護シナリオを実現できる場合があります。 堅牢な秘密度ラベルが設定されている場合は、DLP を使用して保護を強化する必要があるかどうかを検討してください。
+- Ongoing DLP policy management, which requires someone in the organization to operate and tune policies for changes in sensitive information types, retention labels, regulations, and compliance policies.
 
-  - DLP は、ファイルの共有を防ぐことができます。 秘密度ラベルは、アクセスを妨げるだけです。
+Although sensitivity labels can’t be used in DLP policy conditions, certain protection scenarios to prevent access may be achievable with just sensitivity labels that can be auto-applied based on sensitive information types. If robust sensitivity labeling is in place, consider whether DLP should be used to augment protection because:
 
-  - DLP には、ルール、条件、およびアクションの観点から、よりきめ細かなレベルの制御があります。
+  - DLP can prevent sharing of files. Sensitivity labels can just prevent access.
 
-  - DLP ポリシーは、Teams チャットおよびチャネル メッセージに適用できます。 機密ラベルは、ドキュメントと電子メールにのみ適用できます。
+  - DLP has more granular levels of control in terms of rules, conditions, and actions.
+
+  - DLP policies can be applied to Teams chat and channel messages. Sensitivity labels can only be applied to documents and email. -->
 
 
 ### <a name="dlp-policies"></a>DLP ポリシー
 
-DLP ポリシーはMicrosoft Purview コンプライアンス ポータルで構成され、保護のレベル、ポリシーが探している機密情報の種類、およびターゲット ワークロードを指定します。 その基本的なコンポーネントは、保護とデータの種類を識別することで構成されます。
+DLP ポリシーはMicrosoft Purview コンプライアンス ポータルで構成され、保護レベル、ポリシーが探している情報、およびターゲット ワークロードを指定します。 すべての DLP ポリシーでは、次のことを行う必要があります。
+
+1. 監視する内容を選択します。
+1. 監視する場所を選択します。
+1. アイテムに適用するポリシーに一致する必要がある条件を選択します。
+1. ポリシー条件が満たされたときに実行するアクションを選択します。
+
+DLP ポリシーとその設計方法の詳細については、次を参照してください。
+
+- [データ損失防止について](../compliance/dlp-learn-about-dlp.md)
+- [データ損失防止ポリシーを設計する](../compliance/dlp-policy-design.md)
+- [データ損失防止ポリシー リファレンス](../compliance/dlp-policy-reference.md)
+
+
+<!--
 
 > [!div class="mx-imgBorder"]
-> ![Microsoft 365 の DLP ポリシー構成。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> ![DLP policy configuration in Microsoft 365.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
-GDPR を認識するための DLP ポリシーの例を次に示します。
+Here is an example DLP policy for awareness of GDPR.
 
-![GDPR を認識するための DLP ポリシーの例。](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
+![Example DLP policy for awareness of GDPR.](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-policy.png)
 
-DLP ポリシーの作成と適用の詳細については、 [この記事](../compliance/create-test-tune-dlp-policy.md) を参照してください。
+See [this article](../compliance/create-test-tune-dlp-policy.md) for more information about creating and applying DLP policies.-->
 
 ### <a name="protection-levels-for-data-privacy"></a>データプライバシーの保護レベル
 
@@ -304,7 +320,7 @@ DLP ポリシーの作成と適用の詳細については、 [この記事](../
 
 ## <a name="office-365-message-encryption-ome-new-capabilities"></a>Office 365 メッセージ暗号化 (OME) の新機能
 
-多くの場合、ユーザーは電子メールを使用して、患者の健康情報や顧客や従業員の情報などの機密アイテムを交換します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
+People多くの場合、電子メールを使用して、患者の健康情報や顧客や従業員の情報などの機密アイテムを交換します。 メール メッセージの暗号化を使用すると、意図した受信者のみがメッセージの内容を表示できるようになります。
 
 [OME](../compliance/ome.md) を使用すると、組織内外のユーザー間で暗号化されたメッセージを送受信できます。 OME は、Outlook.com、Yahoo!、Gmail、およびその他の電子メール サービスと連携します。 OME を使用すると、目的の受信者のみがメッセージ コンテンツを表示できるようになります。
 

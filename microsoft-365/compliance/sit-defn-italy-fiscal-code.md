@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: イタリアの会計コードの機密情報の種類エンティティ定義。
-ms.openlocfilehash: 1a27af7f33aba799a37c64c37e53eef01555ec3c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dd7fae7b927532d9224cc852419f01e31f5dbef4
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997592"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368567"
 ---
 # <a name="italy-fiscal-code"></a>イタリアの会計コード
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -58,7 +50,7 @@ ms.locfileid: "66997592"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_italy_eu_national_id_card` がパターンに一致するコンテンツを検出した。
 - `Keywords_italy_eu_national_id_card` のキーワードを検出した。

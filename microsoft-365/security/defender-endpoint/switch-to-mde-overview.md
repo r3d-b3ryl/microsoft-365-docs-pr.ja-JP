@@ -23,12 +23,12 @@ ms.custom: migrationguides
 ms.date: 11/29/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: f922d618ac947646379f9d1022aba67c874e64fd
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 63b932df7337a757a0358719e32409ab8c6ea117
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67174962"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331299"
 ---
 # <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Microsoft 以外のエンドポイント保護からMicrosoft Defender for Endpointへの切り替えを行う
 
@@ -67,7 +67,7 @@ Defender for Endpoint に移行するプロセスは、次の表に示すよう�
 
 |機能/機能|説明|
 |---|---|
-|[脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)|脅威&脆弱性管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。|
+|[Microsoft Defender 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)|Defender の脆弱性管理機能は、エンドポイント (デバイスなど) 全体の弱点を特定、評価、修復するのに役立ちます。|
 |[攻撃面の減少](overview-attack-surface-reduction.md)|攻撃表面の縮小ルールは、組織のデバイスとアプリケーションをサイバー脅威や攻撃から保護するのに役立ちます。|
 |[次世代の保護](microsoft-defender-antivirus-in-windows-10.md)|次世代の保護には、脅威やマルウェアをブロックするのに役立つ Microsoft Defender ウイルス対策が含まれています。|
 |[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)|エンドポイントの検出機能と応答機能は、侵入の試行とアクティブな侵害を検出、調査、および対応します。|
@@ -78,6 +78,6 @@ Defender for Endpoint に移行するプロセスは、次の表に示すよう�
 
 **詳細については、こちらを参照してください。 [「Defender for Endpoint」を参照してください](microsoft-defender-endpoint.md)。**
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 - [移行の準備](switch-to-mde-phase-1.md)に進みます。

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーを使用すると、ラベル付きコンテンツに対してユーザーが実行しているアクションを表示およびフィルター処理できます。
-ms.openlocfilehash: c33ff2653eef6813caf9b9281903b7248af12359
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918004"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417392"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
@@ -36,7 +36,7 @@ ms.locfileid: "66918004"
 - 日付範囲
 - アクティビティの種類
 - 場所
-- ユーザー
+- User
 - 機密ラベル
 - 保持ラベル
 - ファイル パス
@@ -59,18 +59,18 @@ ms.locfileid: "66918004"
 
 アカウントには、これらのロール グループのいずれかでメンバーシップを明示的に割り当てるか、ロールを明示的に付与する必要があります。
 
-### <a name="roles-and-role-groups-in-preview"></a>プレビュー段階の [役割と役割グループ]
+### <a name="roles-and-role-groups"></a>ロールとロール グループ
 
-プレビューには、アクセス制御を微調整するためにテストできるロールと役割グループがあります。
+アクセス制御を微調整するために使用できるロールと役割グループがあります。
 
-プレビュー段階の該当する役割の一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
+使用できる適用可能なロールの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center)」を参照してください。
 
 - Information Protection 管理者
 - Information Protection アナリスト
 - Information Protection 調査員
 - Information Protection 閲覧者
 
-プレビュー段階の該当する役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
+使用できる該当する役割グループの一覧を次に示します。 詳細については、「[セキュリティとコンプライアンス センターの役割グループ](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#role-groups-in-the-security--compliance-center)」を参照してください。
 
 - 情報保護
 - Information Protection レベル

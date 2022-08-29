@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.service: o365-administration
 ms.collection: ''
 ms.localizationpriority: high
-ms.date: 07/19/2022
+ms.date: 08/18/2022
 ms.custom:
 - MiniMaven
 - OKR_SMB_M365
@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Windows Autopilot を使用して、ビジネス用に新し いWindows 10 デバイスをセットアップし、従業員が使用できるようにする方法を学びます。
-ms.openlocfilehash: 72a35557d3ab70c5e11f91f366b9cbe003b0c4c6
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
-ms.translationtype: HT
+ms.openlocfilehash: 7286d22a92b8d989b8cb00c949f45f25f501a1a3
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893257"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388579"
 ---
 # <a name="use-this-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>ステップ バイ ステップ ガイドを使用して、Autopilot デバイスとプロファイルを追加する
 
@@ -46,11 +46,11 @@ Windows Autopilot を使用して、ビジネス用に **新しい** Windows 10 
 
 2. 左側のナビゲーション ウィンドウで **[デバイス]** \> **[Autopilot]** の順に選びます。
 
-    ![管理センターでデバイスを選択し、Autopilot を選択します。](../media/Autopilot.png)
+    :::image type="content" source="../media/Autopilot.png" alt-text="Microsoft 365 管理センターでデバイスを選択し、Autopilot を選択します。":::
   
 3. **[Autopilot]** ページで、**[スタート ガイド]** をクリックまたはタップします。
 
-    ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
+    :::image type="content" source="../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png" alt-text="Autopilot の詳細な手順については、[スタート ガイド] をクリックします":::
   
 4. **[デバイスの一覧を含む .csv ファイルのアップロード]** ページで、準備した .CSV ファイルがある場所を参照して、**[開く]** \> **[次へ]** の順に選択します。ファイルには次の 3 つのヘッダーがあります。 
 
@@ -87,6 +87,6 @@ Windows Autopilot を使用して、ビジネス用に **新しい** Windows 10 
 
 ## <a name="related-content"></a>関連コンテンツ
 
-- [Autopilot プロファイルの設定について](../business-premium/m365bp-Autopilot-profile-settings.md)
-- [デバイスとアプリ データを保護するためのオプション](../admin/devices/choose-device-security.md) (記事)
-- [ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)
+[Autopilot プロファイルの設定について](../business-premium/m365bp-Autopilot-profile-settings.md)
+[デバイスとアプリ データを保護するためのオプション](../admin/basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md) (記事)\
+[ビジネス プランの Microsoft 365 をセキュリティで保護するためのベスト プラクティス](../admin/security-and-compliance/secure-your-business-data.md)

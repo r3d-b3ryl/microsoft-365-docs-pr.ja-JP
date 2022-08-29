@@ -1,6 +1,6 @@
 ---
 title: コンテキスト ファイルとフォルダーの除外
-description: Windows Defender ウイルス対策のコンテキスト ファイルとフォルダーの除外機能について説明します。 この機能を使用すると、制限を適用して、ファイルまたはフォルダーをスキャンしないコンテキストWindows Defender ウイルス対策定義するときに、より具体的にすることができます
+description: Windows 上の Microsoft Defender ウイルス対策のコンテキスト ファイルとフォルダーの除外機能について説明します。 この機能を使用すると、制限を適用して、Microsoft Defender ウイルス対策がファイルまたはフォルダーをスキャンしないコンテキストを定義するときに、より具体的にすることができます
 keywords: Microsoft Defender ウイルス対策、プロセス、除外、ファイル、スキャン
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -9,25 +9,26 @@ ms.pagetype: security
 author: jweston-1
 ms.author: v-jweston
 ms.localizationpriority: medium
+ms.date: 08/25/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a2dfcd6372398f92ba401a109302ef541de88565
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 8d1516d00a693a56b99ad6eabad59722867f3db0
+ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66994436"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67439566"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>コンテキスト ファイルとフォルダーの除外
 
-この記事/セクションでは、Windows Defender ウイルス対策のコンテキスト ファイルとフォルダーの除外機能について説明します。 この機能を使用すると、制限を適用して、ファイルまたはフォルダーをスキャンしないコンテキストWindows Defender ウイルス対策定義するときに、より具体的にすることができます。
+この記事/セクションでは、Windows 上の Microsoft Defender ウイルス対策のコンテキスト ファイルとフォルダーの除外機能について説明します。 この機能を使用すると、Microsoft Defender ウイルス対策が制限を適用してファイルまたはフォルダーをスキャンしないコンテキストを定義するときに、より具体的にすることができます。
 
 ## <a name="overview"></a>概要
 
-除外は、主にパフォーマンスへの影響を軽減することを目的としています。 保護価値の低下のペナルティが課されます。 これらの制限により、除外が適用される状況を指定することで、この保護の削減を制限できます。 コンテキストの除外は、信頼性の高い方法で誤検知に対処するのに適していません。 誤検知が発生した場合は、[Microsoft 365 Defender](https://security.microsoft.com/) ポータル (サブスクリプションが必要) または[Microsoft セキュリティ インテリジェンス](https://www.microsoft.com/wdsi/filesubmission) Web サイトを使用して、分析のためにファイルを送信できます。 一時的な抑制方法の場合は、カスタム _許可_ インジケーターの作成を検討してください。
+除外は、主にパフォーマンスへの影響を軽減することを目的としています。 保護価値の低下のペナルティが課されます。 これらの制限により、除外が適用される状況を指定することで、この保護の削減を制限できます。 コンテキストの除外は、信頼性の高い方法で誤検知に対処するのに適していません。 誤検知が発生した場合は、[Microsoft 365 Defender](https://security.microsoft.com/) ポータル (サブスクリプションが必要) または[Microsoft セキュリティ インテリジェンス](https://www.microsoft.com/wdsi/filesubmission) Web サイトを通じて分析のためにファイルを送信できます。 一時的な抑制方法の場合は、[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/indicator-file)でカスタム _許可_ インジケーターを作成することを検討してください。
 
 除外の適用可能性を制限するには、次の 4 つの制限を適用できます。
 
@@ -47,12 +48,12 @@ ms.locfileid: "66994436"
 |:---|:---|:---|
 | ファイル/フォルダー  | PathType  | file <br> folder |
 | スキャンの種類 | ScanType | クイック <br> 完全 |
-| スキャン トリガー | ScanTrigger | オンデマンド <br> OnAccess <br> BM |
+| スキャン トリガー | ScanTrigger | オンデマンド <br> OnAccess <br> Bm |
 | プロセス | プロセス | "<image_path>" |
 
 ### <a name="requirements"></a>要件
 
-この機能には、次のWindows Defender ウイルス対策が必要です。
+この機能には、Microsoft Defender ウイルス対策が必要です。
 
 - プラットフォーム: **4.18.2205.7** 以降
 - エンジン: **1.1.19300.2** 以降
@@ -65,6 +66,10 @@ ms.locfileid: "66994436"
 
 _すべての_**型** と **値** では大文字と小文字が区別されます。
 
+> [!NOTE]  
+> 制限が一致するには、内部 `{}` の条件が true である必要があります。 たとえば、2 つのスキャン トリガーを指定した場合、これは true にできず、除外は適用されません。 同じ種類の 2 つの制限を指定するには、2 つの個別の除外を作成します。
+
+
 ### <a name="examples"></a>例
 
 次の文字列は、"c:\documents\design.doc" がファイルの場合にのみ除外され、オンアクセス スキャンでのみ除外されます。
@@ -73,11 +78,11 @@ _すべての_**型** と **値** では大文字と小文字が区別されま�
 
 次の文字列は、イメージ名 "winword.exe" を持つプロセスによってアクセスされたためにスキャン (オンアクセス) された場合にのみ、"c:\documents\design.doc" を除外します。
 
-`c:\documents\design.doc\:{Process:”winword.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe"}`
 
 次の例のように、プロセス イメージパスにワイルドカードを含めることがあります。
 
-`c:\documents\design.doc\:{Process:”C:\Program Files*\Microsoft Office\root\Office??\winword.exe”}`
+`c:\documents\design.doc\:{Process:"C:\Program Files*\Microsoft Office\root\Office??\winword.exe"}`
 
 ### <a name="filefolder-restriction"></a>ファイル/フォルダーの制限
 
@@ -85,7 +90,7 @@ _すべての_**型** と **値** では大文字と小文字が区別されま�
 
 #### <a name="filefolder-exclusions-default-behavior"></a>ファイル/フォルダーの除外の既定の動作
 
-他のオプションを指定しない場合、ファイル/フォルダーはすべての種類のスキャンから除外 _され、_ ターゲットがファイルかフォルダーかに関係なく除外が適用されます。 特定のスキャンの種類にのみ適用されるように除外をカスタマイズする方法の詳細については、「 [スキャンの種類の制限](#scan-type-restriction)」を参照してください。
+他のオプションを指定しない場合、ファイル/フォルダーはすべての種類のスキャンから除外 _され_ 、ターゲットがファイルかフォルダーかに関係なく除外が適用されます。 特定のスキャンの種類にのみ適用されるように除外をカスタマイズする方法の詳細については、「 [スキャンの種類の制限](#scan-type-restriction)」を参照してください。
 
 #### <a name="folders"></a>Folders
 
@@ -93,7 +98,7 @@ _すべての_**型** と **値** では大文字と小文字が区別されま�
 
 `C:\documents\:{PathType:folder}`
 
-#### <a name="files"></a>ファイル
+#### <a name="files"></a>Files
 
 ターゲットがファイルの場合にのみ除外が適用されるようにするには、PathType: ファイルの制限を使用できるフォルダーではありません。
 
@@ -146,7 +151,7 @@ _すべての_**型** と **値** では大文字と小文字が区別されま�
 
 特定のプロセスによってアクセスされた場合にのみファイルまたはフォルダーを除外するには、通常のファイルまたはフォルダーの除外を作成し、除外を制限するプロセスを次のように追加します。  
 
-`c:\documents\design.doc\:{Process:”winword.exe”, Process:”msaccess.exe”}`
+`c:\documents\design.doc\:{Process:"winword.exe", Process:"msaccess.exe"}`
 
 ### <a name="how-to-configure"></a>構成する方法
 

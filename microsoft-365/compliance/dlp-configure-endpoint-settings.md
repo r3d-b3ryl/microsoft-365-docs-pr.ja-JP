@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: エンドポイント データ損失防止 (DLP) の中央設定を構成する方法について説明します。
-ms.openlocfilehash: 91460c63b2286a8c2be4e5fe1aa94ea5ee31fec7
-ms.sourcegitcommit: 49c275f78664740988bbc4ca4b14d3ad758e1468
-ms.translationtype: HT
+ms.openlocfilehash: 454b99ea771f1d3059123534aa57c4a763706c87
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/19/2022
-ms.locfileid: "66882392"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450039"
 ---
 # <a name="configure-endpoint-data-loss-prevention-settings"></a>エンドポイント データ損失防止の設定を構成する
 
@@ -55,7 +55,7 @@ ms.locfileid: "66882392"
 |機密アイテムに対するブラウザーとドメインの制限      |サポート         |サポート         |         |
 |エンドポイント DLP の追加設定     |サポート         |サポート         |macOS デバイスでは、既定の業務上の正当な理由のみがサポートされます         |
 |デバイスのファイル アクティビティを常に監査する     |サポート         |サポート         |         |
-|許可されていないアプリからの自動検疫ファイル | サポート | サポート対象外| |
+|許可されていないアプリからの自動検疫ファイル | サポートされている | サポート対象外| |
 |高度な分類 | サポートされている | サポート対象外| |
 |ポリシー ヒントでの業務上の正当な理由 | サポート | サポート| |
 
@@ -91,7 +91,7 @@ DLP があまりにもうるさい、または関心のあるファイルが含�
 
 - 有効なファイルパスが `\` で終わっている場合は、フォルダーの直下にあるファイルだけになります。 <br/>例: `C:\Temp\`
 
-- 有効なファイルパスが `\*`で終わっている場合は、そのフォルダーの直下のファイルという以外に、サブフォルダーの直下にあるファイルのみということになります。 <br/>例: `C:\Temp\*`
+- で終わる `\*`有効なファイル パス。つまり、サブフォルダーの下にあるファイルのみを意味します。 フォルダーのすぐ下にあるファイルは除外されません。 <br/>例: `C:\Temp\*`
 
 - 有効なファイルパスが `\` または `\*` 以外で終わっている場合は、フォルダーとすべてのサブフォルダーの直下にあるすべてのファイルになります。 <br/>例: `C:\Temp`
 
@@ -258,7 +258,7 @@ macOS デバイスの場合は、完全なファイル パスを追加する必�
 | ***.CONTOSO.COM** |**指定されたドメイン名、任意のサブドメイン、および任意のサイトに一致します**: <p>*://contoso.com <p>*://contoso.com/anysubsite <p>*://contoso.com/anysubsite1/anysubsite2 <p>*://anysubdomain.contoso.com/ <p>*://anysubdomain.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite/ <p>*://anysubdomain1.anysubdomain2.contoso.com/anysubsite1/anysubsite2 (etc) <p>**指定されていないドメインと一致しません** <p>*://anysubdomain.contoso.com.AU/ |
 | **`www.contoso.com`** |**指定されたドメイン名と一致します**: <p>`www.contoso.com` <p>**指定されていないドメインまたはサブドメインと一致しません** <p>*://anysubdomain.contoso.com/、この場合、FQDN ドメイン名自体を配置する必要があります `www.contoso.com`|
 
-#### <a name="sensitive-service-domains-preview"></a>機密サービス ドメイン (プレビュー)
+#### <a name="sensitive-service-domains"></a>機密性の高いサービス ドメイン
 
 機密サービス ドメインに Web サイトを一覧表示する場合は、監査、オーバーライドによるブロック、またはユーザーが次の操作を試行するときにブロックできます。
 
@@ -266,7 +266,7 @@ macOS デバイスの場合は、完全なファイル パスを追加する必�
 - Web サイトからデータをコピーする
 - Web サイトをローカル ファイルとして保存する
 
-各 Web サイトは Web サイト グループに一覧表示され、ユーザーは Microsoft Edge を介して Web サイトにアクセスしている必要があります。 機密サービス ドメイン (プレビュー) は、デバイスの DLP ポリシーと組み合わせて使用されます。 詳細については、「[シナリオ 6 機密サービス ドメイン (プレビュー) でのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)」を参照してください。
+各 Web サイトは Web サイト グループに一覧表示され、ユーザーは Microsoft Edge を介して Web サイトにアクセスしている必要があります。 機密性の高いサービス ドメインは、デバイスの DLP ポリシーと組み合わせて使用されます。 詳細については、「 [シナリオ 6:機密サービス ドメインでのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) 」を参照してください。
 
 
 ### <a name="additional-settings-for-endpoint-dlp"></a>エンドポイント DLP の追加設定

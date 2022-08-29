@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 77876024faa7452ff284e30a587e72855068cc98
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 5674f9b8038bba646d86b02fe775525ad433dcac
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301116"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67330673"
 ---
 # <a name="update-machine"></a>コンピューターの更新 
 
@@ -39,7 +39,7 @@ ms.locfileid: "61301116"
 
 ## <a name="api-description"></a>API の説明
 
-既存のコンピューターのプロパティを更新 [します](machine.md)。
+既存の[コンピューター](machine.md)のプロパティを更新します。
 
 更新可能なプロパティは次のとおりです`machineTags`。`deviceValue`
 

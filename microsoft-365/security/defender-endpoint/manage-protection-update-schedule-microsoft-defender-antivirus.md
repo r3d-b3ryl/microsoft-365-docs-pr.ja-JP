@@ -16,12 +16,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 35f9329756fde82a6ac0762d30041a3d30cd2c8b
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 46deff4933055e4a76fa2e45663243ceca53f6d1
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492471"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388124"
 ---
 # <a name="manage-the-schedule-for-when-protection-updates-should-be-downloaded-and-applied"></a>保護更新プログラムをダウンロードして適用するスケジュールを管理する
 
@@ -72,13 +72,13 @@ Microsoft Defender ウイルス対策を使用すると、更新プログラム�
 
 3. **[ポリシー]** をクリックし、**[管理用テンプレート]** をクリックします。
 
-4. ツリーを **Windows コンポーネント** \> **Windows Defender ウイルス対策** \> **シグネチャ 更新** に展開し、次の設定を構成します。
+4. ツリーを **Windows コンポーネント** \> **Microsoft Defender ウイルス対策** \> **シグネチャ 更新** に展開し、次の設定を構成します。
 
-    1. **[セキュリティ インテリジェンス更新プログラムを確認する曜日を指定する**] 設定をダブルクリックし、オプションを **[有効]** に設定します。 更新プログラムを確認する曜日を入力します。 **[OK]** をクリックします。
+    1. **[セキュリティ インテリジェンス更新プログラムを確認する曜日を指定する**] 設定をダブルクリックし、オプションを **[有効]** に設定します。 更新プログラムを確認する曜日を入力します。 [**OK**] をクリックします。
 
-    2. [ **定義の更新を確認する間隔を指定する** ] 設定をダブルクリックし、オプションを **[有効]** に設定します。 更新までの時間数を入力します。 **[OK]** をクリックします。
+    2. [ **定義の更新を確認する間隔を指定する** ] 設定をダブルクリックし、オプションを **[有効]** に設定します。 更新までの時間数を入力します。 [**OK**] をクリックします。
 
-    3. [ **定義の更新を確認する時間を指定する** ] 設定をダブルクリックし、オプションを **[有効]** に設定します。 更新プログラムを確認する時間を入力します。 時刻は、エンドポイントのローカル時刻に基づいています。 **[OK]** をクリックします。
+    3. [ **定義の更新を確認する時間を指定する** ] 設定をダブルクリックし、オプションを **[有効]** に設定します。 更新プログラムを確認する時間を入力します。 時刻は、エンドポイントのローカル時刻に基づいています。 [**OK**] をクリックします。
 
 ## <a name="use-powershell-cmdlets-to-schedule-protection-updates"></a>PowerShell コマンドレットを使用して保護更新プログラムをスケジュールする
 

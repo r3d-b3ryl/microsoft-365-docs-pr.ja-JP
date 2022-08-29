@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0298b4f83ac748048215af4f5b1f8261a2a8c67c
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 20d9cc76f3da2efea31c0cf430022d8a83897583
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61530789"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388663"
 ---
 # <a name="alertinfo"></a>AlertInfo
 
@@ -34,6 +34,12 @@ ms.locfileid: "61530789"
 - Microsoft 365 Defender
 
 
+## <a name="get-access"></a>アクセスを取得する
+高度なハンティングやその他[のMicrosoft 365 Defender](microsoft-365-defender.md)機能を使用するには、Azure Active Directory で適切なロールが必要です。 [高度な捜索に必要なロールとアクセス許可について説明](custom-roles.md)します。
+
+また、エンドポイント データへのアクセスは、Microsoft Defender for Endpointのロールベースのアクセス制御 (RBAC) 設定によって決まります。 [Microsoft 365 Defenderへのアクセスの管理について説明します](m365d-permissions.md)。
+
+## <a name="alertinfo"></a>AlertInfo
 
 `AlertInfo` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、およびMicrosoft Defender for Identity。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 

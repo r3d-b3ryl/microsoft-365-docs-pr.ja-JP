@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: fe69b42c2d8bf80089b749cd41e59664cc2921e3
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 270ce3b5a2127217c1fb2e7e568b21d5f7b33ecd
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300984"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331447"
 ---
 # <a name="score-resource-type"></a>リソースの種類をスコア付けする
 
@@ -54,5 +54,5 @@ ms.locfileid: "61300984"
 :---|:---|:---
 スコア|倍精度浮動小数点数|現在のスコア。
 Time|DateTime|この API の呼び出しが行われた日時。
-RbacGroupName|String|デバイス グループ名。
-RbacGroupId|String|デバイス グループ ID。
+RbacGroupName|文字列|デバイス グループ名。
+RbacGroupId|文字列|デバイス グループ ID。

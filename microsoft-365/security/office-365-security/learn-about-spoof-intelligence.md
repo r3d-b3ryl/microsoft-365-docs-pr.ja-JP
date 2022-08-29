@@ -20,12 +20,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) でスプーフィング インテリジェンスの分析情報について学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68d0d2e9ae61afcc69c8f297ca88554090838068
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 4bd690b9adae76f6920389ab59fda2210f9fc681
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67281753"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388443"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>詳細については、「EOP のスプーフィング インテリジェンス分析」を参照してください。
 
@@ -60,9 +60,9 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 
 > [!NOTE]
 >
-> - スプーフィング インテリジェンスによって検出されたスプーフィングされた送信者のみが、スプーフィング インテリジェンス分析情報に表示されます。 分析情報の許可またはブロックの判定をオーバーライドすると、スプーフィングされた送信者は、テナント許可/ブロックリストの [ **スプーフィング** ] タブにのみ表示される手動の許可エントリまたはブロック エントリになります。 スプーフィングされた送信者がスプーフィング インテリジェンスによって検出される前に、許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](tenant-allow-block-list.md)」を参照してください。
+> - スプーフィング インテリジェンスによって検出されたスプーフィングされた送信者のみが、スプーフィング インテリジェンス分析情報に表示されます。 分析情報の許可またはブロックの判定をオーバーライドすると、スプーフィングされた送信者は、テナント許可/ブロックリストの [ **スプーフィングされた送信者** ] タブにのみ表示される手動の許可エントリまたはブロック エントリになります。 スプーフィングされた送信者がスプーフィング インテリジェンスによって検出される前に、許可エントリまたはブロック エントリを手動で作成することもできます。 詳細については、「[EOP でテナント許可/ブロック リストを管理する](manage-tenant-allow-block-list.md)」を参照してください。
 >
-> - スプーフィング インテリジェンス分析情報とテナント許可/ブロックの一覧の [ **スプーフィング** ] タブは、セキュリティ & コンプライアンス センターのスパム対策ポリシー ページで使用できたスプーフィング インテリジェンス ポリシーの機能を置き換えます。
+> - テナント許可/ブロックリストのスプーフィング インテリジェンス分析情報と **[スプーフィングされた送信者** ] タブは、セキュリティ & コンプライアンス センターのスパム対策ポリシー ページで使用できるスプーフィング インテリジェンス ポリシーの機能を置き換えます。
 >
 > - スプーフィング インテリジェンス分析情報には、7 日間分のデータが表示されます。 **Get-SpoofIntelligenceInsight** コマンドレットには、30 日分のデータが表示されます。
 >
@@ -70,7 +70,7 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>はじめに把握しておくべき情報
 
-- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **[テナントの許可/ブロック一覧**] ページの [**スプーフィング**] タブに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. **スプーフィング インテリジェンス分析情報** ページに直接移動するには、<https://security.microsoft.com/spoofintelligence>.
+- <https://security.microsoft.com> で Microsoft 365 Defender ポータルを開きます。 **テナント許可/ブロック リスト** ページの **[スプーフィングされた送信者**] タブに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>. **スプーフィング インテリジェンス分析情報** ページに直接移動するには、<https://security.microsoft.com/spoofintelligence>.
 
 - Exchange Online PowerShell へ接続するには、「[Exchange Online PowerShell に接続する](/powershell/exchange/connect-to-exchange-online-powershell)」を参照してください。 スタンドアロンの EOP PowerShell に接続するには、「[Exchange Online Protection PowerShell への接続](/powershell/exchange/connect-to-exchange-online-protection-powershell)」を参照してください。
 
@@ -93,7 +93,7 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 
 ## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルでスプーフィング インテリジェンス分析情報を開く
 
-1. Microsoft 365 Defender ポータルの [ルール **] セクション****の** <https://security.microsoft.com>[Email & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **テナント許可/ブロック リスト**] に移動します。 **[テナントの許可/ブロック一覧**] ページの [**スプーフィング**] タブに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
+1. Microsoft 365 Defender ポータルの [ルール **] セクション****の** <https://security.microsoft.com>[Email & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **テナント許可/ブロック リスト**] に移動します。 **テナント許可/ブロック リスト** ページの **[スプーフィングされた送信者**] タブに直接移動するには、 <https://security.microsoft.com/tenantAllowBlockList?viewid=SpoofItem>.
 
 2. [ **テナントの許可/ブロック リスト]** ページで、スプーフィング インテリジェンスの分析情報は次のようになります。
 
@@ -109,7 +109,7 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 ### <a name="view-information-about-spoofed-messages"></a>スプーフィングされたメッセージに関する情報を表示する
 
 > [!NOTE]
-> このページには、スプーフィング インテリジェンスによって検出されたスプーフィングされた送信者のみが表示されることを忘れないでください。 分析情報の許可またはブロックの判定をオーバーライドすると、スプーフィングされた送信者は、テナント許可/ブロックリストの [ **スプーフィング** ] タブにのみ表示される手動の許可エントリまたはブロック エントリになります。
+> このページには、スプーフィング インテリジェンスによって検出されたスプーフィングされた送信者のみが表示されることを忘れないでください。 分析情報の許可またはブロックの判定をオーバーライドすると、スプーフィングされた送信者は、テナント許可/ブロックリストの [ **スプーフィングされた送信者** ] タブにのみ表示される手動の許可エントリまたはブロック エントリになります。
 
 **スプーフィング インテリジェンス 分析情報** で [**スプーフィング アクティビティの表示**] をクリックした後に表示される [スプーフィング インテリジェンス分析情報] ページには、次の情報が含まれています。
 
@@ -161,7 +161,7 @@ Microsoft 365 Defender ポータルで **スプーフィング インテリジ�
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>PowerShell またはスタンドアロンの EOP PowerShell Exchange Onlineスプーフィング インテリジェンス分析情報を使用する
 
-PowerShell では、 **Get-SpoofIntelligenceInsight** コマンドレットを使用して、スプーフィング インテリジェンスによって検出された、許可されたスプーフィングされた送信者とブロックされたスプーフィングされた送信者を **表示** します。 スプーフィングされた送信者を手動で許可またはブロックするには、 **New-TenantAllowBlockListSpoofItems** コマンドレットを使用する必要があります。 詳細については、「 [PowerShell を使用してテナント許可/ブロック リストにスプーフィングされた送信者エントリを管理する」を参照してください](tenant-allow-block-list.md)。
+PowerShell では、 **Get-SpoofIntelligenceInsight** コマンドレットを使用して、スプーフィング インテリジェンスによって検出された、許可されたスプーフィングされた送信者とブロックされたスプーフィングされた送信者を **表示** します。 スプーフィングされた送信者を手動で許可またはブロックするには、 **New-TenantAllowBlockListSpoofItems** コマンドレットを使用する必要があります。 詳細については、「 [PowerShell を使用してテナント許可/ブロック リストにスプーフィングされた送信者エントリを管理する」を参照してください](manage-tenant-allow-block-list.md)。
 
 スプーフィング インテリジェンス分析情報の情報を表示するには、次のコマンドを実行します。
 

@@ -25,12 +25,12 @@ appliesto:
 - Microsoft 365 for frontline workers
 ms.reviewer: ansantam
 description: Teams EHR コネクタを統合して、組織内の医療プロバイダーが Epic EHR システムから直接 Teams の患者または他のプロバイダーと仮想予約を行えるようにする方法について説明します。
-ms.openlocfilehash: 0d3a4818b327171a03506425d1fbd849eeafdd88
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 6cf48c01e804a6a8a473ae42883c000a9577ea01
+ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66994972"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67333788"
 ---
 # <a name="virtual-appointments-with-teams---integration-into-epic-ehr"></a>Teams での仮想アクセス - Epic EHR への統合
 
@@ -81,6 +81,7 @@ Teams アプリへのアクセスを要求する必要があります。
 - Epic バージョン 2018 年 11 月以降
 - ユーザーは、Teams 会議を含む適切な Microsoft 365 またはOffice 365 ライセンスを持っています。
 - Teams が採用され、医療組織で使用されます。
+- [Teams 管理センター](https://admin.teams.microsoft.com)にアクセスできる Microsoft 365 グローバル管理者である組織内のユーザーを特定しました。
 - システムは、Teams のすべての[ソフトウェアとブラウザーの要件](/microsoftteams/hardware-requirements-for-the-teams-app)を満たしています。
 
 > [!IMPORTANT]

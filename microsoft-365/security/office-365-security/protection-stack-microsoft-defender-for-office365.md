@@ -14,12 +14,12 @@ description: Microsoft Defender for Office 365の脅威フィルター スタッ
 ms.technology: mdo
 ms.prod: m365-security
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d6697652754792b3beb87b7bcafc0846ca51c53d
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 96e7fb9a4e774b51b1d2138cd72ea468bc23ee7b
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66772042"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450149"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365 でのステップ バイ ステップの脅威に対する保護
 
@@ -66,7 +66,7 @@ Microsoft Defender for Office 365保護スタックまたはフィルター ス�
     - **SPF** は、組織に代わってメールを送信できる IP アドレスとサーバーを一覧表示する DNS TXT レコードに基づいてメールを拒否できます。
     - **DKIM** は、送信者を認証する暗号化された署名を提供します。
     - **DMARC** を使用すると、管理者はドメインで必要に応じて SPF と DKIM をマークし、これら 2 つのテクノロジの結果間の調整を強制できます。
-    - **ARC** は顧客構成ではありませんが、DMARC に基づいて作成され、メーリング リストで転送を操作し、認証チェーンを記録します。
+    - **ARC** は DMARC に基づいて構築され、認証チェーンの記録中にメーリング リストの転送を操作します。
 
 3. **スプーフィング インテリジェンス** は、組織または既知の外部ドメインを模倣する悪意のある送信者から、"スプーフィング" が許可されているもの (つまり、別のアカウントに代わってメールを送信するユーザー、またはメーリング リストの転送) をフィルター処理できます。 正当な "代理" メールと、スパムやフィッシング メッセージを配信するスプーフィングを行う送信者を分離します。
 

@@ -19,12 +19,12 @@ ms.collection:
 recommendations: false
 description: DLP ポリシー コンポーネントと構成リファレンス
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 9d0b8489c303b7786cdd7443ebc6f41507e6487e
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 1ddae6821c528d14b603668d943cc70abc069cdd
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306704"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450127"
 ---
 # <a name="data-loss-prevention-policy-reference"></a>データ損失防止ポリシーリファレンス
 
@@ -229,7 +229,7 @@ DLP ポリシーでは、機密情報の種類 (SIT) または秘密度ラベル
 SIT には事前に定義された [**信頼レベル**](https://www.microsoft.com/videoplayer/embed/RE4Hx60) があり、必要に応じて変更できます。 詳細については、「 [信頼度レベルの詳細」を](sensitive-information-type-learn-about.md#more-on-confidence-levels)参照してください。
 
 > [!IMPORTANT]
-> SIT には、最大一意のインスタンス数パラメーターを定義する 2 つの異なる方法があります。 詳細については、「[SIT のインスタンス数のサポート値](create-a-custom-sensitive-information-type.md#instance-count-supported-values-for-sit)」を参照してください。
+> SIT には、最大一意のインスタンス数パラメーターを定義する 2 つの異なる方法があります。 詳細については、「[SIT のインスタンス数のサポート値](sit-limits.md#instance-count-supported-values-for-sit)」を参照してください。
 
 #### <a name="condition-context"></a>条件コンテキスト
 
@@ -313,7 +313,7 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 ##### <a name="conditions-devices-supports"></a>デバイスがサポートする条件
 
 - コンテンツが含まれている
-- (プレビュー)ユーザーは、Edge から機密性の高い Web サイトにアクセスしました。 詳細については、「[シナリオ 6 機密サービス ドメイン (プレビュー) でのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)」を参照してください。
+- ユーザーは、Edge から機密性の高い Web サイトにアクセスしました。 詳細については、「 [シナリオ 6:機密サービス ドメインでのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) 」を参照してください。
 - ファイル拡張子は次の形式です。
 - ファイルの種類は次の形式です。
 - [監視およびアクションを実行できるエンドポイント アクティビティを](endpoint-dlp-learn-about.md#endpoint-activities-you-can-monitor-and-take-action-on)参照してください。
@@ -417,7 +417,7 @@ SIT には事前に定義された [**信頼レベル**](https://www.microsoft.c
 #### <a name="devices-actions"></a>デバイスのアクション
 
 <!-- - Restrict access or encrypt the content in Microsoft 365 locations-->
-- (プレビュー)ユーザーが Windows デバイス上の Microsoft Edge ブラウザーで機密性の高い Web サイトにアクセスする場合に、アクティビティを監査または制限します。 詳細については、「[シナリオ 6 機密サービス ドメイン (プレビュー) でのユーザー アクティビティを監視または制限する](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains-preview)」を参照してください。
+- ユーザーが Windows デバイス上の Microsoft Edge ブラウザーで機密性の高い Web サイトにアクセスする場合に、アクティビティを監査または制限します。 詳細については、「 [シナリオ 6:機密性の高いサービス ドメインでのユーザー アクティビティを監視または制限する」](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) を参照してください。
 - Windows デバイス上のアクティビティを監査または制限する
 
 使用 `Audit or restrict activities on Windows devices`するには、 **DLP 設定** と、それらを使用するポリシーでオプションを構成する必要があります。 詳細については、「 [制限付きアプリとアプリ グループ](dlp-configure-endpoint-settings.md#restricted-apps-and-app-groups) 」を参照してください。

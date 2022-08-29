@@ -15,12 +15,12 @@ ms.collection: m365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: c1f6fa058715f831b1c8ba594bf1604ad92e9ed2
-ms.sourcegitcommit: 6c2ab5e8efe74d0dc2df610e2d9d2fdda8aaf074
+ms.openlocfilehash: 642fc9b8f38b0687a27d73a47324dc3b3f70269e
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/25/2022
-ms.locfileid: "65669366"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388190"
 ---
 # <a name="investigate-a-file-associated-with-a-microsoft-defender-for-endpoint-alert"></a>Microsoft Defender for Endpointアラートに関連付けられているファイルを調査する
 
@@ -68,7 +68,7 @@ ms.locfileid: "65669366"
 
 ファイルの詳細、インシデント、マルウェア検出、ファイルの普及率カードには、ファイルに関するさまざまな属性が表示されます。
 
-ファイルの MD5、ウイルス合計検出率、Microsoft Defender AV 検出 (使用可能な場合)、ファイルの普及率などの詳細が表示されます。
+ファイルの MD5、ウイルス合計検出率、Microsoft Defender ウイルス対策検出 (使用可能な場合)、ファイルの普及率などの詳細が表示されます。
 
 ファイルの普及率カードには、組織内および世界中のデバイスでファイルが表示された場所が表示されます。 ファイルが表示された最初のデバイスと最後のデバイスに簡単にピボットし、デバイスタイムラインで調査を続行できます。 
 
@@ -113,7 +113,7 @@ ms.locfileid: "65669366"
 ## <a name="related-topics"></a>関連項目
 
 - [Microsoft Defender for Endpoint キューを表示および整理する](alerts-queue.md)
-- [Microsoft Defender for Endpointアラートを管理する](manage-alerts.md)
+- [Microsoft Defender for Endpoint アラートを管理する](manage-alerts.md)
 - [Microsoft Defender for Endpointアラートを調査する](investigate-alerts.md)
 - [Microsoft Defender for Endpoint デバイスの一覧のデバイスを調査する](investigate-machines.md)
 - [Microsoft Defender for Endpoint アラートに関連付けられている IP アドレスを調査する](investigate-ip.md)

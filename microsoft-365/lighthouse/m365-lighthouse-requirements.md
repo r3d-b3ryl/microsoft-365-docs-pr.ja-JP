@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: マネージド サービス プロバイダー (MSP) の場合は、Microsoft 365 Lighthouseを使用するための要件の一覧を取得します。
-ms.openlocfilehash: 4cea971227f13bf5cf7a59cffa08465e9ed63391
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 6ed55b436d110c43ce0a87d12049988105c79c48
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67105963"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417436"
 ---
 # <a name="requirements-for-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseの要件
 
@@ -36,7 +36,7 @@ Microsoft 365 Lighthouseは、マネージド サービス プロバイダー (M
 - 少なくとも 1 つのMicrosoft 365 Business Premium、Microsoft 365 E3、Microsoft 365 E5、Windows 365 Business、またはMicrosoft Defender for Businessライセンス
 - ライセンスを持つユーザーが 2500 人以下である必要があります
 
- \*顧客を Lighthouse にオンボードするには、詳細な委任された管理特権 (GDAP または委任された管理特権 (DAP) リレーションシップが必要です。 ライトハウスへのオンボードには、間接リセラー関係は不要になりました。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。
+ \*顧客を Lighthouse にオンボードするには、詳細な委任された管理特権 (GDAP) と間接リセラーリレーションシップ、または委任された管理特権 (DAP) リレーションシップが必要です。 顧客テナントに DAP と GDAP が共存する場合、GDAP 対応のセキュリティ グループの MSP 技術者には、GDAP アクセス許可が優先されます。 近日、GDAP のみのリレーションシップ (間接リセラー関係なし) を持つお客様は、Lighthouse にオンボードできるようになります。
 
 ## <a name="requirements-for-enabling-device-management"></a>デバイス管理を有効にするための要件
 

@@ -16,16 +16,16 @@ ms.custom:
 description: Exchange Online Protection (EOP) が、スタンドアロンおよびハイブリッド環境でオンプレミスのメール組織を保護するのにどのように役立つかを説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 19bf82a530cd61b253047261bb44893266a240d8
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 90d0e4293a08b77347aace9098cc9c65851a4cab
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64941569"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388465"
 ---
 # <a name="exchange-online-protection-overview"></a>Exchange Online Protection の概要
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -90,10 +90,10 @@ EOP はデータセンター間の負荷分散を実行しますが、1 つの�
 |送信スパム対策|[EOP の送信スパム保護](outbound-spam-controls.md) <p> [EOP の送信スパム フィルターを構成する](configure-the-outbound-spam-policy.md) <p> [Microsoft 365 で外部メールの自動転送を制御する](external-email-forwarding.md)|
 |接続フィルター|[接続フィルターの構成](configure-the-connection-filter-policy.md)|
 |フィッシング詐欺対策|[Microsoft 365 のフィッシング詐欺対策ポリシー](set-up-anti-phishing-policies.md) <p> [EOP でのスパム対策ポリシーの構成](configure-anti-phishing-policies-eop.md)|
-|スプーフィング対策保護|詳細については、「[EOP のスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。 <p> [テナントの許可/禁止リストを管理する](tenant-allow-block-list.md)|
+|スプーフィング対策保護|詳細については、「[EOP のスプーフィング インテリジェンス分析](learn-about-spoof-intelligence.md)」を参照してください。 <p> [テナントの許可/禁止リストを管理する](manage-tenant-allow-block-list.md)|
 |配信されたスパム、マルウェア、フィッシング メッセージのゼロアワー自動消去 (ZAP)|[Exchange Online のゼロアワー自動消去](zero-hour-auto-purge.md)|
 |事前設定されたセキュリティ ポリシー|[EOP と Microsoft Defender for Office 365 の事前設定されたセキュリティ ポリシー](preset-security-policies.md) <p> [EOP および Defender for Office 365 の構成アナライザー](configuration-analyzer-for-security-policies.md)|
-|テナントの許可/禁止リスト|[テナントの許可/禁止リストを管理する](tenant-allow-block-list.md)|
+|テナントの許可/禁止リスト|[テナントの許可/禁止リストを管理する](manage-tenant-allow-block-list.md)|
 |メッセージ送信者の受信拒否一覧|[EOP で受信拒否送信者の一覧を作成する](create-block-sender-lists-in-office-365.md)|
 |メッセージ送信者の受信許可一覧|[EOP で安全な差出人のリストを作成する](create-safe-sender-lists-in-office-365.md)|
 |Directory Based Edge Blocking (DBEB)|[ディレクトリ ベースのエッジ ブロックを使用して無効な受信者に送信されたメッセージを拒否する](/exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|

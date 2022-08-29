@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c08f592ac72be10bb4b967521e7e504a9ae70a86
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: aa55d3ab9fe082d00d957cfc404ccf2a6cf35301
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64472641"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331491"
 ---
 # <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender セキュリティ センター セキュリティ操作ダッシュボード
 
@@ -31,12 +31,12 @@ ms.locfileid: "64472641"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-secopsdashboard-abovefoldlink)
 
-**セキュリティ操作ダッシュボード** は、エンドポイントでの検出と対応機能が表示される場所です。 検出が見られた場所の概要と、応答アクションが必要な場所を強調します。
+**セキュリティ操作ダッシュボード** は、エンドポイントの検出機能と応答機能が表示される場所です。 検出が見られた場所の概要と、応答アクションが必要な場所を強調します。
 
 ダッシュボードには、次のスナップショットが表示されます。
 
 - アクティブなアラート
-- 危険なデバイス
+- 危険的状況のデバイス
 - センサーの正常性
 - サービス正常性
 - 毎日のデバイス レポート
@@ -65,7 +65,7 @@ ms.locfileid: "64472641"
 
 各行には、アラートの重大度カテゴリとアラートの簡単な説明が含まれます。 アラートをクリックすると、その詳細ビューを表示できます。 詳細については、「アラートと[アラートの概要Microsoft Defender for Endpoint調査](investigate-alerts.md)する」[を参照してください](alerts-queue.md)。
 
-## <a name="devices-at-risk"></a>危険なデバイス
+## <a name="devices-at-risk"></a>危険的状況のデバイス
 
 このタイルには、アクティブなアラートの数が最も多いデバイスの一覧が表示されます。 各デバイスのアラートの合計数は、デバイス名の横の円に表示され、タイルの左端の重大度レベルでさらに分類されます (各重大度バーにマウス ポインターを合わせると、ラベルが表示されます)。
 
@@ -130,5 +130,5 @@ ms.locfileid: "64472641"
 
 - [Microsoft Defender for Endpoint ポータルについて](use.md)
 - [ポータルの概要](portal-overview.md)
-- [脅威&脆弱性管理ダッシュボードを表示する](tvm-dashboard-insights.md)
+- [Microsoft Defender 脆弱性の管理 ダッシュボードを表示する](tvm-dashboard-insights.md)
 - [脅威分析ダッシュボードを表示し、推奨される軽減策を実行する](threat-analytics.md)

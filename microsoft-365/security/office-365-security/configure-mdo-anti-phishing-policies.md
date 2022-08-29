@@ -16,12 +16,12 @@ ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365を使用している組織で使用できる高度なフィッシング対策ポリシーを作成、変更、削除する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b641fe1fb4de8dcb7d7ec299a0e8b19a064efad
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8311da9d67a9835163ee3eaa34a38a7132977055
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084127"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386584"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>詳細については、「Microsoft Defender for Office 365 のフィッシング対策ポリシーを構成する」を参照してください。
 
@@ -113,7 +113,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
    > [!IMPORTANT]
-   > 複数の異なる種類の条件や例外は加算されません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+   > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
    >
    > - 受信者は次のとおりです: romain@contoso.com
    > - 受信者が次のメンバーの場合: Executive
@@ -188,6 +188,13 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
         表示された [ **信頼されたドメインの追加]** ポップアップで、[ **ドメイン** ] ボックスをクリックし、値を入力して Enter キーを押すか、ボックスの下に表示される値を選択します。 必要な回数だけこの手順を繰り返します。 既存の値を削除するには、値の横にある ![[アイコンの削除]](../../media/m365-cc-sc-remove-selection-icon.png) をクリックします。 値の隣。
 
         完了したら、**[追加]** をクリックします。
+
+     > [!NOTE]
+     > 次の送信者からの Microsoft 365 システム メッセージが偽装試行として識別された場合は、信頼された送信者の一覧に送信者を追加できます。
+     >
+     > - `⁠noreply@email.teams.microsoft.com`
+     > - `noreply@emeaemail.teams.microsoft.com`
+     > - `no-reply@sharepointonline.com`
 
      **偽装ポップアップの [カスタム ドメインの管理**] に戻り、一覧から 1 つ以上のエントリを選択して、[**送信者**] タブと **[ドメイン]** タブからエントリを削除できます。 検索アイコンを使用してエントリを ![検索できます。](../../media/m365-cc-sc-create-icon.png) **検索** ボックス。
 

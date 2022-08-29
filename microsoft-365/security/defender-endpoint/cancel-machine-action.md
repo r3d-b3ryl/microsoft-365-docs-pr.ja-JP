@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 08f302a541e60cb2844dc6ef2b91509556f03330
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: d5736ee3374b182f1b22f1b728ac2378eb66b66d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65873756"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331887"
 ---
 # <a name="cancel-machine-action-api"></a>マシン アクション API を取り消す
 
@@ -51,7 +51,7 @@ ms.locfileid: "65873756"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「 [作業の開始](apis-intro.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|
@@ -66,14 +66,14 @@ POST https://api.securitycenter.microsoft.com/api/machineactions/<machineactioni
 
 ## <a name="request-headers"></a>要求ヘッダー
 
-|名前|型|説明|
+|名前|種類|説明|
 |---|---|---|
-|Authorization|String|ベアラー {トークン}。必須。|
+|Authorization|String|ベアラー {token}。必須。|
 |Content-Type|string|application/json. Required.|
 
 ## <a name="request-body"></a>要求本文
 
-|パラメーター|型|説明|
+|パラメーター|種類|説明|
 |---|---|---|
 |コメント|文字列|取り消しアクションに関連付けるコメント。|
 

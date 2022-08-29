@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ロシアのパスポート番号の国内の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 0e74f6f8f268591cdf69148390e94e287f0e9686
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 186f5fc3e231a311ef8d9de4a87dd18c7b47972b
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996347"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67368853"
 ---
 # <a name="russia-passport-number-domestic"></a>ロシアの国内パスポート番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 

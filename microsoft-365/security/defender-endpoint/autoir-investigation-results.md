@@ -23,12 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 294722f3f79172e06752c5318bfef21dfc640eed
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cd405a02e2148c0a82921b45b66e20d238c12ec4
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327631"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67387971"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>自動調査の詳細と結果を表示する
 
@@ -94,6 +94,58 @@ Microsoft Defender for Endpointでは、自動調査が実行されると、[そ
 |**Entities**|各エンティティの種類 (*悪意のある*、 *疑わしい*、または *脅威が見つかりません*) の判定など、分析された各エンティティの詳細を提供します。|
 |**Log**|アラートがトリガーされた後に実行されたすべての調査アクションの時系列的で詳細なビューを提供します。|
 |**Pending actions (保留中のアクション)**|続けるには承認を必要とするアイテムを一覧表示します。 アクション センター (<https://security.microsoft.com/action-center>) に移動して、保留中のアクションを承認します。|
+
+## <a name="investigation-states"></a>調査の状態
+
+次の表に、調査の状態とそれらが示す内容を示します。
+
+
+|調査の状態  |定義  |
+|---------|---------|
+|良性   | アーティファクトが調査され、脅威が見つからなかったという判断が下されました。|
+|PendingResource     | 修復アクションが承認待ちであるか、アーティファクトが見つかったデバイスが一時的に使用できないため、自動調査は一時停止されます。|
+|UnsupportedAlertType     | この種類のアラートでは、自動調査を利用できません。 詳細な調査は、高度な捜索を使用して手動で行うことができます。 |
+|失敗     | 少なくとも 1 つの調査アナライザーで、調査を完了できない問題が発生しました。 修復アクションが承認された後に調査が失敗した場合でも、修復アクションは成功している可能性があります。|
+|正常に修復されました| 自動調査が完了し、すべての修復アクションが完了または承認されました。|
+
+調査状態の表示方法に関するより詳細なコンテキストを提供するために、次の表にアラートとそれに対応する自動調査の状態を示します。 この表は、セキュリティ運用チームがMicrosoft 365 Defender ポータルに表示する可能性のある内容の例として含まれています。
+
+|アラート名 | 重要度 | 調査の状態 | 状態 | カテゴリ |
+|-----------|----------|---------------------|--------|----------|
+|wim ディスク イメージ ファイルでマルウェアが検出されました|情報|良性|Resolved|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|PendingResource|新規|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|UnsupportedAlertType|新規|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|UnsupportedAlertType|新規|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|UnsupportedAlertType|新規|マルウェア|
+|zip アーカイブ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|zip アーカイブ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|zip アーカイブ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|zip アーカイブ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|Wpakill hacktool が防止されました|低|失敗|新規|マルウェア|
+|GendowsBatch hacktool が禁止されました|低|失敗|新規|マルウェア|
+|Keygen hacktool が防止されました|低|失敗|新規|マルウェア|
+|zip アーカイブ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|PendingResource|新規|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|PendingResource|新規|マルウェア|
+|zip アーカイブ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|PendingResource|新規|マルウェア|
+|マルウェアがrarアーカイブ ファイルで検出されました|情報|PendingResource|新規|マルウェア|
+|iso ディスク イメージ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|iso ディスク イメージ ファイルでマルウェアが検出されました|情報|PendingResource|新規|マルウェア|
+|pst outlook データ ファイルでマルウェアが検出されました|情報|UnsupportedAlertType|新規|マルウェア|
+|pst outlook データ ファイルでマルウェアが検出されました|情報|UnsupportedAlertType|新規|マルウェア|
+|MediaGet が検出されました|中|PartiallyInvestigated|新規|マルウェア|
+|TrojanEmailFile|中|正常に修復されました|Resolved|マルウェア|
+|CustomEnterpriseBlock マルウェアが防止されました|情報|正常に修復されました|Resolved|マルウェア|
+|アクティブな CustomEnterpriseBlock マルウェアがブロックされました|低|正常に修復されました|Resolved|マルウェア|
+|アクティブな CustomEnterpriseBlock マルウェアがブロックされました|低|正常に修復されました|Resolved|マルウェア|
+|アクティブな CustomEnterpriseBlock マルウェアがブロックされました|低|正常に修復されました|Resolved|マルウェア|
+|TrojanEmailFile|中|良性|Resolved|マルウェア|
+|CustomEnterpriseBlock マルウェアが防止されました|情報|UnsupportedAlertType|新規|マルウェア|
+|CustomEnterpriseBlock マルウェアが防止されました|情報|正常に修復されました|Resolved|マルウェア|
+|TrojanEmailFile|中|正常に修復されました|Resolved|マルウェア|
+|TrojanEmailFile|中|良性|Resolved|マルウェア|
+|アクティブな CustomEnterpriseBlock マルウェアがブロックされました|低|PendingResource|新規|マルウェア|
 
 ## <a name="see-also"></a>関連項目
 

@@ -14,8 +14,6 @@
       href: manage-data-organizations.md
     - name: 共有を管理する
       href: manage-sharing-organizations.md
-    - name: Windows デバイスに展開する
-      href: deploy-on-windows-organizations.md
 - name: プライバシーとコンプライアンス
   items:
     - name: プライバシー設定を構成する
@@ -24,13 +22,15 @@
       href: gdpr-requests.md
 - name: 政府機関向けホワイトボード
   items:
-    - name: アクセスの管理 - GCC High
-      href: manage-whiteboard-access-gcc-high.md
-    - name: データの管理 - GCC 高
-      href: manage-data-gcc-high.md
-    - name: 共有の管理 - GCC 高
-      href: manage-sharing-gcc-high.md
-    - name: クライアントの管理 - GCC 高
-      href: manage-clients-gcc-high.md
+    - name: GCC High
+      items:
+        - name: アクセスの管理 - GCC High
+          href: manage-whiteboard-access-gcc-high.md
+        - name: データの管理 - GCC 高
+          href: manage-data-gcc-high.md
+        - name: 共有の管理 - GCC 高
+          href: manage-sharing-gcc-high.md
+        - name: クライアントの管理 - GCC 高
+          href: manage-clients-gcc-high.md
 - name: ホワイトボード PowerShell
   href: /powershell/module/whiteboard/

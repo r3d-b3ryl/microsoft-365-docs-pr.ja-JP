@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1c8635e7037f72830584d09d229891822a2e1f52
-ms.sourcegitcommit: 2716cb48cc6127f6b851d177af23f276fb07bfc9
+ms.openlocfilehash: 9ca2ccb7486131024f6c69c6203944f5b57fd878
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/13/2021
-ms.locfileid: "61426425"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331799"
 ---
 # <a name="get-machine-logon-users-api"></a>コンピューター ログオン ユーザー API を取得する
 

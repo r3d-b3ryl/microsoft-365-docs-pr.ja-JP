@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: コンプライアンス センターへの新しいソリューションの追加、お客様からのフィードバックに基づく既存の機能の更新、新しく更新されたドキュメントの展開など、Microsoft 365 は刻々と変化するコンプライアンスの状況を常に把握できるようサポートします。 今月起こったことついてご覧ください。
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0b2a55b686c310fc8d864229655c6815e7afef38
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7a44fe74c3d0262737d5af52e226a3aa942a412f
+ms.sourcegitcommit: e6595be36bbaba244439bd59dbae935e2b258ded
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66949153"
+ms.lasthandoff: 08/27/2022
+ms.locfileid: "67450171"
 ---
 # <a name="whats-new-in-microsoft-purview-risk-and-compliance-solutions"></a>Microsoft Purview のリスクおよびコンプライアンス ソリューションの新機能
 
@@ -40,6 +40,46 @@ ms.locfileid: "66949153"
 > - [Microsoft 365 Defender の新機能](../security/defender/whats-new.md)
 >
 > [Microsoft 365 のロードマップ](https://www.microsoft.com/microsoft-365/roadmap)では、提供済み、ロールアウト中、開発中、キャンセル済み、以前にリリース済みの Microsoft 365 機能がわかります。
+
+## <a name="july-2022"></a>2022 年 7 月
+
+### <a name="compliance-manager"></a>コンプライアンス マネージャー
+
+- [コンプライアンス マネージャー テンプレートの一覧](compliance-manager-templates-list.md) - "香港 - 銀行業務と支払いカードのコード" のAsia-Pacific国カテゴリに新しいプレミアム テンプレートを追加しました。
+
+### <a name="compliance-offerings--service-assurance"></a>コンプライアンス オファリングとサービス アシュアランス
+
+- [Microsoft 365 の SharePoint と OneDrive のデータ回復性](/compliance/assurance/assurance-sharepoint-onedrive-data-resiliency) - BLOB ストレージの回復性に関するセクションの変更。
+
+### <a name="data-lifecycle-management-and-records-management"></a>データ ライフサイクル管理とレコード管理
+
+- [シナリオの詳細を追加したライセンス セクションを結合](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#microsoft-purview-data-lifecycle-management--microsoft-purview-records-management) しました。
+- SharePoint ドキュメント バージョンの保持では、保持保持ライブラリ内の個別のファイルは使用されなくなりました。 詳細については、更新されたドキュメント「 [ドキュメント バージョンでの保持のしくみ](retention-policies-sharepoint.md#how-retention-works-with-document-versions)」を参照してください。
+- [SharePoint または OneDrive に移行したレコードを検証する](records-management.md#validating-migrated-records)方法について説明します。
+- [SEC 17a-4(f)、FINRA 4511(c)、CFTC 1.31(c)-(d)](retention-regulatory-requirements.md#sec-17a-4f-finra-4511c-and-cftc-131c-d)の Cohasset 評価レポートを更新しました。
+- この機能が GA で展開されるようになった Teams 共有チャネルのアイテム保持ポリシーのプレビュー免責事項を削除しました。
+
+### <a name="data-loss-prevention"></a>データ損失防止
+
+- [DLP ポリシー リファレンス](dlp-policy-reference.md#blocking-and-notifications-in-sharepoint-online-and-onedrive-for-business) - SharePoint Online でのブロックと通知に関する新しいセクションが追加され、顧客のエスカレーションに対応してOneDrive for Businessされました。 機密サービス ドメインのパブリック プレビューをサポートするように更新されました。 Power BI のサポートを更新しました。 トレーニング可能な分類子のサポートを更新しました。
+- [エンドポイント DLP 設定を構成する](dlp-configure-endpoint-settings.md#sensitive-service-domains) - 機密性の高いサービス ドメインパブリック プレビューのパブリック プレビュー リリースをサポートする新しいコンテンツを追加しました。 URL 照合動作を更新しました。
+- [エンドポイント DLP の使用](endpoint-dlp-using.md#scenario-6-monitor-or-restrict-user-activities-on-sensitive-service-domains) - 機密サービス ドメインのパブリック プレビュー リリースをサポートする新しいシナリオ コンテンツ。 サブスクリプション情報を更新しました。
+
+### <a name="ediscovery"></a>電子情報開示
+
+- [電子情報開示のキーワード クエリと検索条件](keyword-queries-and-search-conditions.md) - 置き換えられた情報が削除されました。
+
+### <a name="sensitive-information-types"></a>機密情報の種類
+
+- [機密情報の種類エンティティ定義](sensitive-information-type-entity-definitions.md) - 41 個の新しい資格情報スキャン SIT をサポートするために、41 個の新しい SIT エンティティ定義が追加されました。 SIT エンティティ定義のコンテンツは、単一のモノリシックアーティクルから、より簡単に参照可能でサポート可能な個々の記事に完全にリワークされました。 これで、42 個の新しい資格情報スキャン SIT を含む合計で 303 件の記事が作成されています。
+
+### <a name="sensitivity-labels"></a>秘密度ラベル
+
+- プレビュー段階: [SharePoint ドキュメント ライブラリの既定の秘密度ラベル](sensitivity-labels-sharepoint-default-label.md)。
+- プレビューでは、ユーザーがアクセス許可を割り当てるように秘密度ラベルが構成されている場合の Windows の [組織全体のカスタム](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions) アクセス許可。 詳細については、「  [組織全体のカスタムアクセス許可のサポート](encryption-sensitivity-labels.md#support-for-organization-wide-custom-permissions)」を参照してください。
+- 次に、Windows の現在のチャネル (プレビュー) にロールアウトします。既存のドキュメントの既定のラベル。
+- Semi-Annual エンタープライズ チャネル: [秘密度ラベルで暗号化されたファイルの共同編集で](sensitivity-labels-coauthoring.md)使用できるようになりました。
+- 秘密 [度ラベル](sensitivity-labels.md#label-scopes) を構成するときに表示される "ファイル & 電子メール" のラベル スコープ名が "アイテム" になりました。
 
 ## <a name="june-2022"></a>2022 年 6 月
 
@@ -313,24 +353,3 @@ ms.locfileid: "66949153"
 - 現在プレビュー中です。モバイル デバイス (iOS および Android) には最小限のバージョンがあり、このプレビューにオプトインした場合に[共同編集](sensitivity-labels-coauthoring.md)をサポートします。
 - 既定の共有リンクの種類の設定に対するサポートが、SharePoint と OneDrive の個々のドキュメントに拡張されました。 詳細については、「[秘密度ラベルを使用して、SharePoint と OneDrive のサイトとドキュメントの既定の共有依存タイプを構成する]( sensitivity-labels-default-sharing-link.md)」に関する新しい記事を参照してください。
 - Teams 管理センターがコンテナー ラベル (グループとサイトの範囲を含む秘密度ラベル) をサポートするようになりました。
-
-## <a name="january-2022"></a>2022 年 1 月
-
-### <a name="microsoft-purview-data-lifecycle-management"></a>Microsoft Purview データ ライフサイクル管理
-
-- 旧称 Microsoft 情報ガバナンスのドキュメントが大幅に改訂され、データ コネクタ、データ ライフサイクル管理、レコード管理などの Microsoft Purview コンプライアンス ポータルで構成するソリューションに関連する情報をより簡単に見つけるられるように再構成されました。 この改訂の一環として、データ ライフサイクル管理とレコード管理の保持シナリオをより明確に区別するためのドキュメントが作成されました。
-- [データ ライフサイクル管理の詳細](data-lifecycle-management.md) - 新しく、再構成をサポートします。
-- [データ ライフサイクル管理の使用を開始する](get-started-with-data-lifecycle-management.md) - この記事では、「保持を開始する」代わりに、新しい保持を含むすべてのデータ ライフサイクル管理機能に関する開始手順を説明します。
-- [アイテム保持ポリシーの例外の保持ラベルを作成する](create-retention-labels-data-lifecycle-management.md) - レコード管理ではなく、データ ライフサイクル管理に保持ラベルを使用するための新しい、特定されたシナリオ。
-- [アーカイブ メールボックスの詳細](archive-mailboxes.md) - 新しい、再構築をサポートするために、以前「アーカイブメールボックスの有効化」の記事にあった概念的な情報が含まれます。
-
-### <a name="microsoft-priva"></a>Microsoft Priva
-
-- [プライバシー管理は Microsoft Privaになりました](/privacy/priva/priva-overview) - 製品およびソリューションである Priva プライバシー リスク管理と Priva 主体の権利要求を最ブランド化するために更新されました。
-
-### <a name="sensitivity-labels"></a>秘密度ラベル
-
-- 新しい[役割グループと役割](get-started-with-sensitivity-labels.md#permissions-required-to-create-and-manage-sensitivity-labels)のサポートは、現在プレビュー中です。
-- 自動ラベル付け ポリシー向けの新たな[監視機能](apply-sensitivity-label-automatically.md#monitoring-your-auto-labeling-policy)。
-- 現在、既存のドキュメントの既定のラベル、Office on the web の理由テキストを公開中です。
-- バージョン 2202 以降で 7 月の半期エンタープライズ チャネル向けに発表されました。Outlook の共同編集と監査。

@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f6e8295d83d5ab6fb86726903800d2779f394836
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: d629678e9b03e3abcb0ed88781d4943a137ba7b3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301488"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331597"
 ---
 # <a name="recommendation-resource-type"></a>推奨事項リソースの種類
 
@@ -62,26 +62,26 @@ Defender for Endpoint を試す場合は、 [無料試用版にサインアッ�
 
 |プロパティ|種類|説明|
 |---|---|---|
-|id|String|推奨事項 ID|
+|id|文字列|推奨事項 ID|
 |productName|文字列型 (String)|関連するソフトウェア名|
-|recommendationName|String|推奨事項の名前|
-|弱点|Long|検出された脆弱性の数|
-|ベンダー|String|関連するベンダー名|
-|recommendedVersion|String|推奨されるバージョン|
-|recommendedProgram|String|推奨されるプログラム|
-|recommendedVendor|String|推奨ベンダー|
-|recommendationCategory|String|推奨事項のカテゴリ。 指定できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityControls" です。|
-|サブカテゴリ|String|推奨事項サブカテゴリ|
+|recommendationName|文字列|推奨事項の名前|
+|脆弱性|Long|検出された脆弱性の数|
+|ベンダー|文字列|関連するベンダー名|
+|recommendedVersion|文字列|推奨されるバージョン|
+|recommendedProgram|文字列|推奨されるプログラム|
+|recommendedVendor|文字列|推奨ベンダー|
+|recommendationCategory|文字列|推奨事項のカテゴリ。 指定できる値は、"Accounts"、"Application"、"Network"、"OS"、"SecurityControls" です。|
+|サブカテゴリ|文字列|推奨事項サブカテゴリ|
 |severityScore|倍精度浮動小数点数|組織のデバイスの Microsoft Secure Score (1- 10) に対する構成の潜在的な影響|
-|publicExploit|ブール値|パブリック エクスプロイトを利用できます|
-|activeAlert|ブール値|アクティブなアラートがこの推奨事項に関連付けられている|
+|publicExploit|ブール型|パブリック エクスプロイトを利用できます|
+|activeAlert|ブール型|アクティブなアラートがこの推奨事項に関連付けられている|
 |associatedThreats|String collection|脅威分析レポートは、この推奨事項に関連付けられている|
-|remediationType|String|修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。|
+|remediationType|文字列|修復の種類。 指定できる値は、"ConfigurationChange"、"Update"、"Upgrade"、"Uninstall" です。|
 |状態|列挙|推奨事項の例外の状態。 指定できる値は、"Active" と "Exception" です。|
 |configScoreImpact|倍精度浮動小数点数|デバイスに対する Microsoft Secure Score の影響|
 |exposureImpact|倍精度浮動小数点数|露出スコアの影響|
 |totalMachineCount|Long|インストールされているデバイスの数|
 |exposedMachinesCount|Long|脆弱性にさらされているインストール済みデバイスの数|
 |nonProductivityImpactedAssets|Long|影響を受けないデバイスの数|
-|relatedComponent|String|関連するソフトウェア コンポーネント|
+|relatedComponent|文字列|関連するソフトウェア コンポーネント|
 |

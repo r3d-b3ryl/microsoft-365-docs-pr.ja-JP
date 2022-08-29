@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2c19352d584bedc5acd94f9984242a2c50d2fcf3
-ms.sourcegitcommit: 85799f0efc06037c1ff309fe8e609bbd491f9b68
+ms.openlocfilehash: 1db4f7397eb700d9cee48de27a9b757d8f6a9472
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66573923"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388707"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-configuration-settings-on-devices-with-microsoft-endpoint-manager"></a>Microsoft エンドポイント マネージャーを使用してデバイス上の Microsoft Defender for Endpoint の構成設定を管理する
 
@@ -73,7 +73,7 @@ Microsoft エンドポイント マネージャーを使用してMicrosoft Defen
 Security Management for Microsoft Defender for Endpointを介してオンボードされたオフ[ボード デバイスについては、「Microsoft Defender for Endpoint サービスのオフボード デバイス」を](offboard-machines.md)参照してください。
 
 >[!NOTE]
->オフボードを有効にすると [、改ざん防止が無効](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-365-defender-portal) になります。
+>オフボードを有効にすると [、改ざん防止が無効](manage-tamper-protection-microsoft-365-defender.md) になります。
 
 ## <a name="troubleshooting-security-management"></a>セキュリティ管理のトラブルシューティング 
 Microsoft Defender for Endpoint登録の問題に対する Security Management のトラブルシューティングについては、「[Microsoft Defender for Endpointの Security Management に関連するオンボードの問題のトラブルシューティング」を](troubleshoot-security-config-mgt.md)参照してください。

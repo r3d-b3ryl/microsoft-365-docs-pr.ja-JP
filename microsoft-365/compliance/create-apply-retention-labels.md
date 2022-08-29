@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ラベルを発行し、それをアプリに適用することで、必要なものを保持し、必要でないものを削除する手順。
-ms.openlocfilehash: 54e2a7f5f9776438ad36d51d43b38ed379cb35d0
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: a477157b024d3b58483fe90549ba75e820f34a2f
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66630347"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335740"
 ---
 # <a name="publish-retention-labels-and-apply-them-in-apps"></a>アイテム保持ラベルを発行してアプリに適用する
 
@@ -62,7 +62,7 @@ ms.locfileid: "66630347"
         - [**ソリューション**] > [**レコード管理**] > [**ラベル ポリシー**] タブ > [**ラベルの発行**]
     
     - データ ライフサイクル管理を使用している場合:
-        - [**ソリューション**]  >  [**データ ライフサイクル管理**]  >  [**ラベル ポリシー**] タブ > [**ラベルの発行**]
+        - **ソリューション** > **データ ライフサイクル管理** > **Microsoft 365** > **[ラベル ポリシー** ] タブ> **ラベルの発行**
     
     ナビゲーション ウィンドウにすぐに解決方法が表示されない場合 最初に [**すべて表示**] を選択します。 
 
@@ -102,7 +102,7 @@ Exchange にラベルを発行する場合、ユーザーにこれら保持ラ�
         Set-AppRetentionCompliancePolicy -Identity <policy name> -RetryDistribution
         ```
     
-    - その他のすべての場所 (**Exchange メール**、**SharePoint サイト**、**Teams のチャネル メッセージ** など) の場合:
+    - **Exchange 電子メール**、**SharePoint サイト**、**Teams チャネル メッセージ** など、他のすべてのポリシーの場所の場合:
     
         ```PowerShell
         Set-RetentionCompliancePolicy -Identity <policy name> -RetryDistribution
@@ -273,7 +273,7 @@ Some settings can't be changed after the label or policy is created and saved, w
 
 ### Deleting retention labels
 
-You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or mark items as regulatory records.
+You can delete retention labels that aren't currently included in any retention label policies, that aren't configured for event-based retention, or that mark items as regulatory records.
 
 For retention labels that you can delete, if they have been applied to items, the deletion fails and you see a link to content explorer to identify the labeled items.
 

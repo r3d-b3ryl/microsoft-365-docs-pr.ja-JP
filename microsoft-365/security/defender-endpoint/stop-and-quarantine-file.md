@@ -1,6 +1,6 @@
 ---
 title: ファイル API の停止と検疫
-description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpointでファイルを削除する方法について説明します。 「例」を参照してください。
+description: デバイスでのファイルの実行を停止し、Microsoft Defender for Endpointでファイルを削除する方法について説明します。 例をご覧ください。
 keywords: apis、graph api、サポートされている API、停止ファイルと検疫ファイル
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1f61e238030c5c8c31e514ef76cf90ffc4b5bd92
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 3c259316952118b990b7a0509cbe99949dc73e1b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300948"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331343"
 ---
 # <a name="stop-and-quarantine-file-api"></a>ファイル API の停止と検疫
 
@@ -90,7 +90,7 @@ Content-Type|string|application/json. **必須**。
 パラメーター|種類|説明
 :---|:---|:---
 コメント|文字列|アクションに関連付けるコメント。 **必須**。
-Sha1|String|デバイスで停止して検疫するファイルの Sha1。 **必須**。
+Sha1|文字列|デバイスで停止して検疫するファイルの Sha1。 **必須**。
 
 ## <a name="response"></a>応答
 

@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 99fc848088725f7b28d91eebc78327c688059de8
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: 6751098c58e53c06cf9b62f7b93cd48aa35f5374
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65174770"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67331381"
 ---
 # <a name="advanced-hunting-using-python"></a>Python を使用した高度な追求
 
@@ -44,7 +44,7 @@ Python を使用して高度なクエリを実行する方法については、�
 
 ## <a name="get-token"></a>トークンを取得する
 
-- 以下のコマンドを実行します。
+- 次のコマンドを実行します。
 
 ```python
 import json

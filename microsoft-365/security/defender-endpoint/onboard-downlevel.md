@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4d8665f379683ccc113a10e6308c6fa4026616c6
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: 73330ff3dde5daa8d8ec9b2e3f1500e125135db5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717218"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388146"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>以前のバージョンの Windows をオンボードする
 
@@ -69,7 +69,7 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 
 ## <a name="install-and-configure-microsoft-monitoring-agent-mma"></a>Microsoft Monitoring Agent (MMA) をインストールして構成する
 
-### <a name="before-you-begin"></a>開始する前に
+### <a name="before-you-begin"></a>はじめに
 
 次の詳細を確認して、最小システム要件を確認します。
 
@@ -152,16 +152,16 @@ Defender for Endpoint はSystem Center Endpoint Protectionと統合され、マ�
 
 ## <a name="verify-onboarding"></a>オンボードを確認する
 
-Microsoft Defender AV とMicrosoft Defender for Endpointが実行されていることを確認します。 
+Microsoft Defender ウイルス対策と Microsoft Defender for Endpoint が実行されていることを検証します。 
 
 > [!NOTE]
-> Microsoft Defender AV の実行は必須ではありませんが、推奨されます。 別のウイルス対策ベンダー製品が主要なエンドポイント保護ソリューションである場合は、パッシブ モードで Defender ウイルス対策を実行できます。 パッシブ モードがオンになっていることを確認できるのは、Microsoft Defender for Endpoint センサー (SENSE) が実行されていることを確認した後のみです。 
+> Microsoft Defender ウイルス対策を実行する必要はありませんが、推奨されています。 別のウイルス対策ベンダー製品が主要なエンドポイント保護ソリューションである場合は、パッシブ モードで Defender ウイルス対策を実行できます。 パッシブ モードがオンになっていることを確認できるのは、Microsoft Defender for Endpoint センサー (SENSE) が実行されていることを確認した後のみです。 
 
-1. 次のコマンドを実行して、Microsoft Defender AV がインストールされていることを確認します。
+1. 次のコマンドを実行して、Microsoft Defender ウイルス対策がインストールされていることを検証します。
 
    ```sc.exe query Windefend```
 
-    結果が "指定されたサービスがインストール済みサービスとして存在しない" 場合は、Microsoft Defender AV をインストールする必要があります。 詳細については、「[Windows 10の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)」を参照してください。
+    結果が 「指定されたサービスはインストール済みサービスとして存在しません」 の場合は、Microsoft Defender ウイルス対策をインストールする必要があります。 詳細については、「[Windows 10の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)」を参照してください。
 
     グループ ポリシーを使用して Windows サーバーのMicrosoft Defender ウイルス対策を構成および管理する方法については、「[グループ ポリシー設定を使用してMicrosoft Defender ウイルス対策を構成および管理する方法](use-group-policy-microsoft-defender-antivirus.md)」 を参照してください。
 

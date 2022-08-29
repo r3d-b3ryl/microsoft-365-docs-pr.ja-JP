@@ -22,17 +22,17 @@ ms.custom:
 - adminvideo
 search.appverid: MET150
 description: これらの手順を使用して、より多くのライセンスを購入するか、Microsoft 365 for Business サブスクリプションのライセンス数を減らします。
-ms.date: 06/06/2022
-ms.openlocfilehash: 530a1058b9f6676d6a674041ef8fe69d6cfe77e7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.date: 08/18/2022
+ms.openlocfilehash: 1641b16f7f04b163c31ae1e03de3d0f7631a5efe
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602372"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388058"
 ---
 # <a name="buy-or-remove-microsoft-365-licenses-for-a-subscription"></a>サブスクリプションの Microsoft 365 ライセンスを購入または削除する
 
-YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659) を確認してください。
+YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fwlink/?linkid=2197659)を確認してください。
 
 次の手順を使用して、より多くのライセンスを購入したり、サブスクリプションのライセンス数を減らしたりできます。
 
@@ -41,13 +41,13 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 ## <a name="before-you-begin"></a>開始する前に
 
-- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、[「管理者の役割について」](../../admin/add-users/about-admin-roles.md) を参照してください。
+- この記事で説明するタスクを実行するには、グローバル管理者または課金管理者である必要があります。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
 - 同時に [ユーザーを追加し、ライセンスを割り当てることができます](../../admin/add-users/add-users.md)。
 - ビジネス向け Microsoft 365 またはサード パーティパートナーを通じてOffice 365 Enterpriseプランを購入した場合は、そのパートナーを通じて追加のライセンスを購入する必要があります。
 
 ## <a name="watch-buy-new-licenses"></a>ウォッチ: 新しいライセンスを購入する
 
-[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198206)で、このビデオや他の動画を確認してください。
+[YouTube チャンネル](https://go.microsoft.com/fwlink/?linkid=2198206)で、このビデオや他のビデオを確認してください。
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4KWvE]
 
@@ -64,11 +64,13 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 ::: moniker range="o365-worldwide"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
 1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+
 ::: moniker-end
 
 2. **[製品]** タブで、ライセンスを購入または削除するサブスクリプションを見つけます。 3 つのドット (その他の操作) を選択してから、**[ライセンスの購入]** を選択します。 [[ライセンスの購入] ボタンまたは [ライセンスの削除] ボタンが表示されない場合はどうなりますか?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
@@ -81,6 +83,37 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 
 > [!NOTE]
 > すべてのライセンスが現在ユーザーに割り当てられている場合、サブスクリプションのライセンス数を減らすことはできません。 ライセンスの数を減らすには、まず [ユーザーから 1 つ以上のライセンスの割り当てを解除](../../admin/manage/remove-licenses-from-users.md)してから、サブスクリプションからライセンスを削除します。
+
+## <a name="add-licenses-to-a-prepaid-subscription-by-using-a-microsoft-365-product-key"></a>Microsoft 365 プロダクト キーを使用して前払いサブスクリプションにライセンスを追加する
+
+前払い製品ライセンスは、プロダクト キーと呼ばれる 25 文字の英数字コードとして発行されます。 必要なライセンスを購入したら、次の手順を使用してサブスクリプションに追加できます。 プロダクト キーを使用して、 [サブスクリプションの有効期限を延長](../subscriptions/renew-your-subscription.md#extend-the-expiration-date-of-your-prepaid-subscription-by-using-a-microsoft-365-product-key)することもできます。
+
+> [!NOTE]
+> 新しいプロダクト キーを購入したくない場合は、いつでもクレジット カードまたは銀行口座をサブスクリプションに追加して、より多くのライセンスの支払いを選択できます。 詳細については、「 [サブスクリプションの更新](../subscriptions/renew-your-subscription.md)」を参照してください。
+  
+::: moniker range="o365-worldwide"
+
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">お使いの製品</a>] ページの順に移動します。
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. 管理センターで、[**課金**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">お使いの製品</a>] ページの順に移動します。
+
+::: moniker-end
+
+2. **[製品]** タブで、ライセンスを追加するサブスクリプションを選択します。
+
+3. [サブスクリプションの詳細] ページの **[ライセンス]** セクションで、**[ライセンスを追加する]** を選択します。
+
+4. [ **ライセンスの追加] ウィンドウで**、[ **新しい未使用のプロダクト キーを使用** する] を選択し、[ **次へ**] を選択します。
+
+5. プロダクト キーを入力し、[**次へ**] を選択します。
+    > [!NOTE]
+    > 複数のプロダクト キーがある場合は、[**別のプロダクト キーを追加する**] を選択してキーを入力できます。
+
+6. 注文の詳細を確認し、[**使用**] を選択します。
 
 ## <a name="what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons"></a>[ライセンスの購入] ボタンまたは [ライセンスの削除] ボタンが表示されない場合はどうなりますか?
 
@@ -104,7 +137,7 @@ YouTube の [Microsoft 365 小規模ビジネス ヘルプ](https://go.microsoft
 - 請求期間の途中で追加されたライセンスは、次の請求書に表示されます。 毎年支払う場合は、これらの変更に対して 1 か月以内に請求されます。
 - 次の請求明細書では、元のライセンス数に対する以前の料金が差し引かれます。 ライセンスの元の数で期間の日割り計算された料金を追加し、新しいライセンス数の料金を追加します。 また、請求期間の残りの期間の現在のライセンス数に対する料金も発生します。
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
 サブスクリプションのライセンスを追加購入した場合、次に行う必要があるのは、 [それらのライセンスを組織内のユーザーに割り当てること](../../admin/manage/assign-licenses-to-users.md)です。
 
