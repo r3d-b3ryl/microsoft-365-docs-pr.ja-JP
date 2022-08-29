@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 7b74a58601d5d6463d81d244a7f3cb2119486d15
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 58de1c63995521794fa368f64601221a3c9668ee
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969356"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319891"
 ---
 # <a name="set-up-email-notifications"></a>電子メール通知を設定する
 
@@ -28,11 +28,9 @@ ms.locfileid: "66969356"
 
 ## <a name="what-to-do"></a>操作
 
-1. [電子メール通知の種類について説明します](#types-of-email-notifications)。
-2. [電子メール通知の設定を表示および編集します](#view-and-edit-email-notifications)。
+1. [メール通知の種類について学ぶ](#types-of-email-notifications)。
+2. [メール通知設定の表示と編集](#view-and-edit-email-notifications)。
 3. [次の手順に進みます](#next-steps)。
-
-
 
 ## <a name="types-of-email-notifications"></a>電子メール通知の種類
 
@@ -71,6 +69,6 @@ ms.locfileid: "66969356"
 
 ## <a name="next-steps"></a>次の手順
 
-次の手順に進みます。
+続行:
 
 - [手順 4: Defender for Business にデバイスをオンボードする](mdb-onboard-devices.md)

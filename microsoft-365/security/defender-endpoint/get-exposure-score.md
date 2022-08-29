@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 478f109d1f519e8d931716ce90bdcc979fed4b33
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 2bc2ab5d622b064e22c868b46a39b1fb3c68e1a0
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302112"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345219"
 ---
 # <a name="get-exposure-score"></a>暴露スコアを取得する
 
@@ -96,5 +96,5 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&脆弱性の公開スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender 脆弱性管理の公開スコア](/microsoft-365/security/defender-endpoint/tvm-exposure-score)

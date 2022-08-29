@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cfd0a95e16c07ae000a0f0dad69e44d0864a9a7d
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 62f26f277682d927098b028b6ec2d17e2a5eda16
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61937354"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344543"
 ---
 # <a name="helpful-microsoft-defender-for-endpoint-resources"></a>役に立つMicrosoft Defender for Endpointリソース
 
@@ -47,9 +47,9 @@ ms.locfileid: "61937354"
 
 - [Defender for Endpoint のライブ応答を使用して、すぐにインシデント対応を行う](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/Incident-response-at-your-fingertips-with-Microsoft-Defender-ATP/ba-p/614894)
 
-## <a name="threat-vulnerability-management"></a>脅威の脆弱性の管理
+## <a name="vulnerability-management"></a>脆弱性の管理
 
-- [Defender for Endpoint Threat & Vulnerability Management が一般公開されました。](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
+- [Defender for Endpoint の脆弱性管理が一般公開されました。](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/MDATP-Threat-amp-Vulnerability-Management-now-publicly-available/ba-p/460977)
 
 ## <a name="operational"></a>運用中
 

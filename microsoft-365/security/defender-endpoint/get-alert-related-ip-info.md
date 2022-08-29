@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c2268658223ff0bce0e879e23ea4a5c1ce843aaf
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: e2988e7c4c88e5f7727c132db2c8f5e6e3aba2bb
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61371198"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323203"
 ---
 # <a name="get-alert-related-ips-information-api"></a>アラート関連 IP の情報 API を取得する
 

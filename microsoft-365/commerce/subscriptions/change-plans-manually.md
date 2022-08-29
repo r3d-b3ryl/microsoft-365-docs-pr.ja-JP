@@ -20,12 +20,12 @@ search.appverid: MET150
 description: サブスクリプションを手動で変更するには、新しいサブスクリプションを購入し、両方のサブスクリプションが一覧表示され、アクティブであることを確認します。
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 5e2d9e3da47c8d9c86e3e0b6d3d0b648c6016509
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: f9e1a6eed45da6a125917a3ba6b181537248c9c6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66493555"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322939"
 ---
 # <a name="manually-change-microsoft-plans"></a>Microsoft プランを手動で変更する
 
@@ -42,7 +42,7 @@ ms.locfileid: "66493555"
 手動による変更を続行するには、このトピックの [「手順 2: 新しいサブスクリプションを購入する](#step-2-buy-a-new-subscription) 」を参照してください。
 
 > [!IMPORTANT]
-> 現在のプランよりもデータ関連サービスが少ないプランに変更する (ダウングレード) 場合は、保持するデータを手動でバックアップする必要があります。 詳細については、「 [プランを変更する前にデータをバックアップする](back-up-data-before-switching-plans.md)」を参照してください。
+> 現在のプランよりもデータ関連サービスが少ないプランに変更する (ダウングレード) 場合は、保持するデータを手動でバックアップする必要があります。 詳細については、「 [プランを変更する前にデータをバックアップする](move-users-different-subscription.md)」を参照してください。
 
 ## <a name="step-2-buy-a-new-subscription"></a>手順 2: 新しいサブスクリプションを購入する
 
@@ -84,7 +84,7 @@ Office 365 プランから Microsoft 365 プランにアップグレードする
 
 ### <a name="reassign-a-license-for-one-user"></a>1 人のユーザーのライセンスを再割り当てする
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 2. [ **アクティブなユーザー** ] ページで、ライセンスを割り当てるユーザーを選択します。
 
@@ -92,7 +92,7 @@ Office 365 プランから Microsoft 365 プランにアップグレードする
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>複数のユーザーのライセンスを一度に再割り当てする
 
-1. 管理センターで、[**ユーザー**] \> [<a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">アクティブなユーザー</a>] の順に選択します。
+1. 管理センターで、**[ユーザー]** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">[アクティブなユーザー]</a> の順に選択します。
 
 2. 既存のライセンスを置き換えるユーザーの名前の横にある円を選択します。
 

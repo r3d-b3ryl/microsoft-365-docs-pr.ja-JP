@@ -9,7 +9,7 @@ audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/05/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-smb
@@ -19,23 +19,24 @@ search.appverid:
 - BCS160
 - MET150
 description: 管理対象デバイスを設定してセキュリティの脅威やサイバー攻撃から保護する方法の概要。 すべてのデバイスを登録してオンボーディングすることにより、サイバーセキュリティの防御とエンドポイント保護を実装します。 デバイス ポリシーを設定し、デバイス グループを管理する方法をご覧ください。
-ms.openlocfilehash: 6b359d2029f79c84377f339d13326b3a8266cf1b
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
-ms.translationtype: HT
+ms.openlocfilehash: 32f76d20130a07031266ad001f5ac1ce7b476d14
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276715"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433512"
 ---
 # <a name="set-up-and-secure-managed-devices"></a>管理対象デバイスの設定と保護
 
 :::image type="content" source="media/mission6.png" alt-text="Defender for Business を使用して管理対象デバイスをセキュリティで保護します。":::
 
-最後の重要なミッションへようこそ。 ここでは、組織内のすべての管理対象デバイスの保護をオンボードして実装します。 [デバイスを Defender for Business にオンボード](../security/defender-business/mdb-onboard-devices.md) して、デバイスがランサムウェア、マルウェア、フィッシング、その他の脅威から確実に保護されるようにします。 また、Windows デバイスが保護され、Office 展開の準備ができていることを確認できます。 完了したら、これらの目的を達成したときに、組織を保護するためにできることを行ったことを理解し、安心できます。
+最後の重要なミッションへようこそ。 ここでは、組織内のすべての管理対象デバイスの保護をオンボードして実装します。 [デバイスを Defender for Business にオンボード](../security/defender-business/mdb-onboard-devices.md) して、デバイスがランサムウェア、マルウェア、フィッシング、その他の脅威から確実に保護されるようにします。 また、Windows デバイスが保護され、Office 展開の準備ができていることを確認できます。 完了したら、これらの目標が達成されたときに組織を保護するために自分の一部を行ったことを知って、安心できます。
 
 目的は次のとおりです。
 
 - [管理されたデバイスをセットアップする](m365bp-managed-devices-setup.md)
 - [登録済みデバイスをオンボードし、ポリシーを適用する](m365bp-onboard-devices-mdb.md)
+- [既定の設定で Windows デバイスをセキュリティで保護する](m365bp-secure-windows-devices.md)
 - [デバイス ポリシーを確認および編集する](m365bp-view-edit-create-mdb-policies.md)
 - [デバイス グループを管理する](m365bp-device-groups-mdb.md)
 

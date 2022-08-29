@@ -402,32 +402,46 @@
       items:
         - name: Microsoft Defender for Office 365 のステップ バイ ステップ ガイドとその使用方法
           href: step-by-step-guides/step-by-step-guide-overview.md
-        - name: (偽陰性) Microsoft Defender for Office 365 を使用して、受信者に配信された悪意のあるメールを処理する方法
-          href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
-        - name: (偽陽性) Microsoft Defender for Office 365 を使用して、配信がブロックされる正当なメールを処理する方法
-          href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
-        - name: 検疫のアクセス許可とポリシーを構成する方法
-          href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
-        - name: メッセージ センターを使用して、Microsoft Defender for Office 365 の今後の変更に関する最新情報を入手する
-          href: step-by-step-guides/stay-informed-with-message-center.md
-        - name: 事前設定されたセキュリティ ポリシーを使用して常に最適なセキュリティ制御を実現
-          href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
-        - name: Microsoft 365 Defender のインシデントに優先順位を付け、管理し、調査し、対応する方法
-          href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
-        - name: チームの攻撃シミュレーションを実行する方法
-          href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
-        - name: 攻撃シミュレーション トレーニング内で自動攻撃とトレーニングを設定する方法
-          href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
-        - name: 構成アナライザーを使用してセキュリティ ポリシーを最適化および修正する
-          href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
-        - name: 優先度の高いアカウント保護で c スイートを保護する
-          href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
-        - name: Microsoft 365 Defender で脅威エクスプローラーを使用してメールを検索し、脅威を修復する
-          href: step-by-step-guides/search-for-emails-and-remediate-threats.md
-        - name: Microsoft Defender for Office 365 を Microsoft Sentinel に接続する
-          href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
-        - name: 自動調査と応答 (AIR) の優先順位付けと管理方法
-          href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
+        - name: Configure
+          items:
+            - name: 検疫のアクセス許可とポリシーを構成する方法
+              href: step-by-step-guides/how-to-configure-quarantine-permissions-with-quarantine-policies.md
+            - name: 事前設定されたセキュリティ ポリシーを使用して常に最適なセキュリティ制御を実現
+              href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+            - name: Microsoft Defender for Office 365 を Microsoft Sentinel に接続する
+              href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+            - name: Microsoft Defender for Office 365 を Microsoft Sentinel に接続する
+              href: step-by-step-guides/connect-microsoft-defender-for-office-365-to-microsoft-sentinel.md
+            - name: レポート メッセージ アドインをデプロイして構成する方法
+              href: step-by-step-guides/deploy-and-configure-the-report-message-add-in.md
+            - name: 事前設定されたセキュリティ ポリシーを使用して常に最適なセキュリティ制御を実現
+              href: step-by-step-guides/ensuring-you-always-have-the-optimal-security-controls-with-preset-security-policies.md
+        - name: 使用
+          items:
+            - name: メッセージ センターを使用して、Microsoft Defender for Office 365 の今後の変更に関する最新情報を入手する
+              href: step-by-step-guides/stay-informed-with-message-center.md
+            - name: Microsoft 365 Defender のインシデントに優先順位を付け、管理し、調査し、対応する方法
+              href: step-by-step-guides/how-to-prioritize-manage-investigate-and-respond-to-incidents-in-microsoft-365-defender.md
+            - name: チームの攻撃シミュレーションを実行する方法
+              href: step-by-step-guides/how-to-run-attack-simulations-for-your-team.md
+            - name: 攻撃シミュレーション トレーニング内で自動攻撃とトレーニングを設定する方法
+              href: step-by-step-guides/how-to-setup-attack-simulation-training-for-automated-attacks-and-training.md
+            - name: 構成アナライザーを使用してセキュリティ ポリシーを最適化および修正する
+              href: step-by-step-guides/optimize-and-correct-security-policies-with-configuration-analyzer.md
+            - name: 優先度の高いアカウント保護で c スイートを保護する
+              href: step-by-step-guides/protect-your-c-suite-with-priority-account-protection.md
+            - name: Microsoft 365 Defender で脅威エクスプローラーを使用してメールを検索し、脅威を修復する
+              href: step-by-step-guides/search-for-emails-and-remediate-threats.md
+            - name: 自動調査と応答 (AIR) の優先順位付けと管理方法
+              href: step-by-step-guides/how-to-prioritize-and-manage-automated-investigations-and-response-air.md
+        - name: 診断する
+          items:
+            - name: (偽陰性) Microsoft Defender for Office 365 を使用して、受信者に配信された悪意のあるメールを処理する方法
+              href: step-by-step-guides/how-to-handle-false-negatives-in-microsoft-defender-for-office-365.md
+            - name: (偽陽性) Microsoft Defender for Office 365 を使用して、配信がブロックされる正当なメールを処理する方法
+              href: step-by-step-guides/how-to-handle-false-positives-in-microsoft-defender-for-office-365.md
+            - name: エクスプローラーを使用して、セキュリティ構成の変更の影響を評価する
+              href: step-by-step-guides/assess-the-impact-of-security-configuration-changes-with-explorer.md
     - name: 参照
       items:
         - name: Defender for Office 365 のデータ保持

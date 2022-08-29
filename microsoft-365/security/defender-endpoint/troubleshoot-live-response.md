@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4a3bab27a4e2efd6b196167754303f35d5553de6
-ms.sourcegitcommit: eb8c600d3298dca1940259998de61621e6505e69
+ms.openlocfilehash: c6a2f676839caefc34b9dff03f860d04a260de0c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/24/2021
-ms.locfileid: "61164732"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384940"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>ライブ応答の問題Microsoft Defender for Endpointトラブルシューティングする
 
@@ -62,13 +62,14 @@ ms.locfileid: "61164732"
 
 ## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>ライブ応答セッションが遅い、または初期接続中に遅延が発生する
 
-ライブ応答では、Windowsの WNS サービスに対する Defender for Endpoint センサーの登録が利用されます。 ライブ応答で接続の問題が発生している場合は、次の詳細を確認します。
+ライブ応答では、Windows の WNS サービスに対する Defender for Endpoint センサーの登録が利用されます。 ライブ応答で接続の問題が発生している場合は、次の詳細を確認します。
 
 1. `notify.windows.com` は環境でブロックされません。 詳細については、「 [デバイス プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)」を参照してください。
-2. WpnService (プッシュ通知システム サービスWindows) は無効ではありません。
+2. WpnService (Windows プッシュ通知システム サービス) は無効ではありません。
+3. WNS クラウドとの WpnService 接続は、グループ ポリシーまたは MDM 設定では無効になりません。 ['通知ネットワークの使用状況をオフにする'](/windows/client-management/mdm/policy-csp-notifications) は '1' に設定しないでください。
 
 WpnService サービスの動作と要件を完全に理解するには、以下の記事を参照してください。
 
 - [Windows プッシュ通知サービス (WNS) の概要](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [WNS トラフィックをサポートするためのファイアウォールとプロキシの構成をEnterpriseする](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [WNS トラフィックをサポートするためのエンタープライズ ファイアウォールとプロキシ構成](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Microsoft プッシュ通知サービス (MPNS) パブリック IP 範囲](https://www.microsoft.com/download/details.aspx?id=44535)

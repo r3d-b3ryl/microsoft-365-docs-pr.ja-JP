@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6f853df2d37cc41b2effb55ff10418af67df2bd6
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 91f9f7c48d63b200db28b29530d5c1f398877283
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63324075"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345055"
 ---
 # <a name="create-and-manage-roles-for-role-based-access-control"></a>ロールベースのアクセス制御のロールを作成および管理する
 
@@ -37,19 +37,19 @@ ms.locfileid: "63324075"
 
 ## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>ロールを作成し、Azure Active Directory グループにロールを割り当てる
 
-次の手順では、Microsoft 365 Defenderでロールを作成する方法について説明します。 ユーザー グループAzure Active Directory既に作成済みであることを前提としています。
+次の手順では、Microsoft 365 Defenderでロールを作成する方法について説明します。 Azure Active Directory ユーザー グループが既に作成されていることを前提としています。
 
 1. セキュリティ管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">グローバル管理者</a>ロールが割り当てられているアカウントを使用してMicrosoft 365 Defenderにログインします。
 
-2. ナビゲーション ウィンドウで、(**[アクセス許可**] **で) 設定** \> **エンドポイント** \> **ロール** を選択します。
+2. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **ロール****]** \> (**[アクセス許可**] の下) を選択します。
 
 3. [ **項目の追加]** を選択します。
 
 4. ロールに割り当てるロール名、説明、アクセス許可を入力します。
 
-5. [**次へ**] を選択して、Azure AD セキュリティ グループにロールを割り当てます。
+5. **[次へ**] を選択して、Azure AD セキュリティ グループにロールを割り当てます。
 
-6. フィルターを使用して、このロールに追加するAzure AD グループを選択します。
+6. このフィルターを使用して、このロールに追加する Azure AD グループを選択します。
 
 7. **保存して閉じます**。
 
@@ -62,7 +62,7 @@ ms.locfileid: "63324075"
 
 - **データを表示**
   - **セキュリティ操作** - ポータル内のすべてのセキュリティ操作データを表示する
-  - **脅威と脆弱性の管理** - ポータルで脅威と脆弱性の管理データを表示する
+  - **脅威と脆弱性の管理** - ポータルで Defender の脆弱性管理データを表示する
 
 - **アクティブ修復アクション**
   - **セキュリティ操作** - 応答アクションの実行、保留中の修復アクションの承認または却下、自動化とインジケーターの許可/ブロックリストの管理
@@ -95,7 +95,7 @@ ms.locfileid: "63324075"
 
 1. セキュリティ管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">グローバル管理者</a>ロールが割り当てられているアカウントを使用してMicrosoft 365 Defenderにログインします。
 
-2. ナビゲーション ウィンドウで、(**[アクセス許可**] **で) 設定** \> **エンドポイント** \> **ロール** を選択します。
+2. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **ロール****]** \> (**[アクセス許可**] の下) を選択します。
 
 3. 編集するロールを選択します。
 
@@ -109,7 +109,7 @@ ms.locfileid: "63324075"
 
 1. セキュリティ管理者または<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">グローバル管理者</a>ロールが割り当てられているアカウントを使用してMicrosoft 365 Defenderにログインします。
 
-2. ナビゲーション ウィンドウで、(**[アクセス許可**] **で) 設定** \> **エンドポイント** \> **ロール** を選択します。
+2. ナビゲーション ウィンドウで、[設定 **エンドポイント** \> **ロール****]** \> (**[アクセス許可**] の下) を選択します。
 
 3. 削除するロールを選択します。
 

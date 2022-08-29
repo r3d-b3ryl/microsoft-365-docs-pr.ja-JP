@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2d8200d93b3cab7acff237113a2c98d8571be1a7
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 78d6281f837575740d5fe8ad56a4d95feb5b2ce9
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020123"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343189"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>デバイス ID で不足している KB を取得する
 
@@ -33,7 +33,7 @@ ms.locfileid: "67020123"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Microsoft Defender 脆弱性の管理を体験しますか? [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法の詳細については、こちらを参照してください。
+> Microsoft Defender 脆弱性の管理を体験するには [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法について説明します。
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -56,7 +56,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 ## <a name="request-header"></a>要求ヘッダー
 
-名前|型|説明
+名前|種類|説明
 :---|:---|:---
 Authorization | String | ベアラー {token}。 **必須**。
 
@@ -105,5 +105,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/2339ad14a01bd0299afb93
 
 ## <a name="related-topics"></a>関連項目
 
-- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&脆弱性ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender の脆弱性管理ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

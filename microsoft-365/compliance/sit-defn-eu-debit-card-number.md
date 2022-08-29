@@ -19,22 +19,22 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: EU デビット カード番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 53e7ea3475786032d2871092e3c7e6c39697958c
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: dc5d633255b534fc0da217f42766c2d34d9d6180
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997749"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322803"
 ---
 # <a name="eu-debit-card-number"></a>EU のデビット カード番号
 
 ## <a name="format"></a>フォーマット
 
-16 桁の数字
+16 ~ 19 桁
 
 ## <a name="pattern"></a>パターン
 
-複雑で堅牢なパターン
+16 から 19 の書式設定または書式設定されていない数字
 
 ## <a name="checksum"></a>チェックサム
 
@@ -42,7 +42,7 @@ ms.locfileid: "66997749"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_eu_debit_card` がパターンに一致するコンテンツを検出した。
 - 次の条件のうち 1 つ以上に該当する:
@@ -53,9 +53,14 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
     - 関数 `Func_expiration_date` は、適切な日付形式で日付を検索します。
 - チェックサムが渡される。
 
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、低い信頼度でそれがこの種類の機密情報であると特定します。
+
+- 関数 Func_eu_debit_card がパターンに一致するコンテンツを検出した。
+- チェックサムが渡される。
+
 ```xml
     <!-- EU Debit Card Number -->
-    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85">
+    <Entity id="0e9b3178-9678-47dd-a509-37222ca96b42" patternsProximity="300" recommendedConfidence="85" relaxProximity="true">
       <Pattern confidenceLevel="85">
         <IdMatch idRef="Func_eu_debit_card" />
         <Any minMatches="1">
@@ -65,6 +70,10 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
           <Match idRef="Keyword_card_expiration_terms_dict" />
           <Match idRef="Func_expiration_date" />
         </Any>
+      </Pattern>
+        
+      <Pattern confidenceLevel="65">
+        <IdMatch idRef="Func_eu_debit_card" />
       </Pattern>
     </Entity>
 ```
@@ -127,7 +136,7 @@ DLP ポリシーは、300 文字の近くにある場合に、この種類の機
 - cartão de crédito
 - cartão de debito
 - cartão de débito
-- cb
+- Cb
 - Ccn
 - check card
 - check cards

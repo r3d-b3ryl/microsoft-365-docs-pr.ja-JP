@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ブルガリアの一様な市民番号の機密情報の種類のエンティティ定義。
-ms.openlocfilehash: 95bbe1368ca4d6d91d98d07f5cd1c48029fd8499
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: f9e97c049cf20f3c804e0fbf0f12489e557ad9f1
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66995547"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369676"
 ---
 # <a name="bulgaria-uniform-civil-number"></a>ブルガリアの統一市民番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -55,7 +47,7 @@ ms.locfileid: "66995547"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_bulgaria_eu_national_id_card` がパターンに一致するコンテンツを検出した。
 - `Keywords_bulgaria_eu_national_id_card` のキーワードを検出した。

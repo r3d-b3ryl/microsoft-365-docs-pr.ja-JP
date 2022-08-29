@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: high
-ms.date: 08/08/2022
+ms.date: 08/15/2022
 audience: ITPro
 ms.topic: reference
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.technology: mde
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: ed20fcfe660bcc56a5756d1be0070f7a9610ee65
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
-ms.translationtype: HT
+ms.openlocfilehash: c3856209c510c67bb9054e9567f78ff8ed978b2b
+ms.sourcegitcommit: 57e6a8e42b41376c4f4021754c918502bf52d209
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280721"
+ms.lasthandoff: 08/24/2022
+ms.locfileid: "67427248"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Microsoft Defender ウイルス対策の更新プログラムを管理してベースラインを適用する
 
@@ -91,18 +91,16 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - 統合の改善 (クラウド、[Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender))
 <br/><br/>
 <details>
-<summary>2022 年 7 月 (プラットフォーム: 4.18.2205.TBD | エンジン: 1.1.19500.2)</summary>
+<summary>2022 年 7 月から 2022 年 7 月 (プラットフォーム: 4.18.2207.5 |エンジン: 1.1.19500.2)</summary>
 
-*このセクションには、まだ開発中のプレリリース情報が含まれています。最終的なセキュリティ更新プログラムのバージョン番号を含む更新が行われることを期待してください。*
-
-&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: *近日公開予定*<br/>
-&ensp;リリース日: **2022 年 8 月 8 日**<br/>
-&ensp;プラットフォーム: *4.18.2205.TBD*<br/>
+&ensp;セキュリティ インテリジェンス更新プログラムのバージョン: **1.373.219.0**<br/>
+&ensp;リリース日: **2022 年 8 月 15** 日<br/>
+&ensp;プラットフォーム: **4.18.2207.5**<br/>
 &ensp;エンジン: **1.1.19500.2**<br/>
 &ensp;サポート フェーズ: **セキュリティと重要な更新プログラム**<br/>
 
 エンジンバージョン: 1.1.19300.2<br/>
-セキュリティ インテリジェンス更新プログラムのバージョン: *近日公開予定*<br/>
+セキュリティ インテリジェンス更新プログラムのバージョン: 1.373.219.0 <br/>
 
 ### <a name="whats-new"></a>新機能
 
@@ -117,11 +115,17 @@ Microsoft Defender ウイルス対策には、*プラットフォーム更新プ
 - 信頼検証の改善 
 - レガシ オペレーティング プラットフォームでのエンジン クラッシュの問題を修正しました 
 - Performance Analyzer v3 の更新プログラム: トップ パス サポート、スキャン スキップ情報、OnDemand スキャン サポートを追加しました。 「[Microsoft Defender ウイルス対策用のパフォーマンス アナライザー](tune-performance-defender-antivirus.md)」を参照してください。 
+- ファイル コピー操作中の Defender パフォーマンスの向上
+- [トラブルシューティング モード](enable-troubleshooting-mode.md)の機能強化を追加しました  
+- 更新/再起動間での Defender WINEVT チャネルの修正を追加しました。 (WINEVT の詳細については [、Windows イベント ログ](/windows/win32/api/_wes/) を参照してください)。
+- 起動時/更新中の [Defender WMI 管理](use-wmi-microsoft-defender-antivirus.md) バグの修正を追加しました 
+- [Windows イベント ビューアー操作イベント](troubleshoot-microsoft-defender-antivirus.md)で 2010/2011 を複製する修正プログラムを追加しました 
+- [Defender for Endpoint](microsoft-defender-endpoint.md) Stack プロセストークンのセキュリティ強化のサポートが追加されました 
 
 
 ### <a name="known-issues"></a>既知の問題
 
-既知の問題はありません
+- プラットフォーム更新プログラム 4.18.2207.5 を展開しているお客様は、アプリケーションに影響を与える可能性のあるネットワーク パフォーマンスの低下が発生する可能性があります。
 
 <br/><br/>
 </details><details>

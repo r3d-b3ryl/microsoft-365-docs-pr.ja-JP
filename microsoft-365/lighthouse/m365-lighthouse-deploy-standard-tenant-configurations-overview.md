@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ベースラインを使用して標準テナント構成をデプロイする方法について説明します。
-ms.openlocfilehash: 9261be531db428c3d081e87c6717dfc8710a5026
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 40d146491b45203b9a643b81fa3677bb9ff53a0c
+ms.sourcegitcommit: 9a4b0bc6a3ba076ecc392260efe7d2e1b655cde8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056638"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67420004"
 ---
 # <a name="overview-of-using-microsoft-365-lighthouse-baselines-to-deploy-standard-tenant-configurations"></a>Microsoft 365 Lighthouseベースラインを使用して標準テナント構成をデプロイする方法の概要 
 
@@ -47,8 +47,9 @@ Lighthouse ベースライン構成は、すべてのマネージド テナン�
 | Microsoft Defender for Businessを設定する | Microsoft Defender for Businessのテナントをプロビジョニングし、Microsoft エンドポイント マネージャーに既に登録されているデバイスをMicrosoft Defender for Businessにオンボードします。 詳細については、「[Microsoft Defender for Businessとは」](../security/defender-business/mdb-overview.md)を参照してください。 |
 | Exchange Online ProtectionとMicrosoft Defender for Office 365を設定する | 推奨されるスパム対策、マルウェア対策、フィッシング詐欺対策、安全なリンク、安全な添付ファイル ポリシーをテナントExchange Onlineメールボックスに適用するポリシー。 |
 | Windows 10 以降用に Microsoft Defender ウイルス対策を構成する | 事前に構成された Microsoft Defender ウイルス対策設定を持つ Windows デバイスのデバイス構成プロファイル。 このベースラインの詳細については、「[IntuneでMicrosoft Defender for Endpointを構成する](/mem/intune/protect/advanced-threat-protection-configure)」を参照してください。|
-| Windows 10 以降のMicrosoft Defender ファイアウォールを構成する | 不要で承認されていないネットワーク トラフィックを防ぐことでデバイスをセキュリティで保護するためのファイアウォール ポリシー。 このベースラインの詳細については、「[Windows Defender ファイアウォールを構成するためのベスト プラクティス」](/windows/security/threat-protection/windows-firewall/best-practices-configuring)を参照してください。  |
+| Windows 10 以降用に Microsoft Defender ファイアウォールを構成する | 不要で承認されていないネットワーク トラフィックを防ぐことでデバイスをセキュリティで保護するためのファイアウォール ポリシー。 このベースラインの詳細については、「[ファイアウォールWindows Defender構成するためのベスト プラクティス」](/windows/security/threat-protection/windows-firewall/best-practices-configuring)を参照してください。  |
 | Windows 10 以降のデバイス コンプライアンス ポリシーを構成する | 基本的なコンプライアンス要件を満たすために事前に構成された設定を持つ Windows デバイス ポリシー。 このベースラインの詳細については、「 [条件付きアクセス: 準拠またはハイブリッドの Azure AD 参加済みデバイスを必要とする](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device)」を参照してください。 |
+| Microsoft Edge を構成する  | フィッシング詐欺や悪意のあるソフトウェアから保護され続けるための事前構成済みの設定を備えた、Windows 10以降の Microsoft Edge ブラウザー ポリシー。 また、このポリシーにより、Microsoft Edge はパスワードを安全に保存および監視し、必要に応じて強力なパスワードを提案することもできます。 |
 
 ## <a name="deployment-plans"></a>展開計画
 

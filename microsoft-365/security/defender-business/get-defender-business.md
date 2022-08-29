@@ -10,18 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 1eb0e7a36e170d8e8bd01233b0ee2db42c0ec331
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 42f9766f951f6598008bf2646321829603d75391
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309749"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319913"
 ---
 # <a name="get-microsoft-defender-for-business"></a>Microsoft Defender for Businessを取得する
 
@@ -97,8 +97,8 @@ Microsoft には、Microsoft 365 Business PremiumやMicrosoft Defender for Busin
 
 |portal  |説明  |
 |---------|---------|
-| Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Microsoft 365 管理センターを使用して試用版をアクティブ化し、初めてサインインします。<p> また、次のMicrosoft 365 管理センターを使用します。 <ul><li>ユーザーを追加または削除します。</li><li>ユーザー ライセンスを割り当てます。</li><li>製品とサービスを表示します。</li><li>Microsoft 365 サブスクリプションのセットアップ タスクを完了します。</li></ul><p>詳細については、「[Microsoft 365 管理センターの概要](../../admin/admin-overview/admin-center-overview.md)」を参照してください。      |
-| Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))     | Microsoft 365 Defender ポータルを使用して、Defender for Business を設定および構成します。<p>Microsoft 365 Defender ポータルを使用して、次のことを行います。 <ul><li>デバイスとデバイス保護ポリシーを表示します。</li><li>検出された脅威を表示し、アクションを実行します。</li><li>セキュリティに関する推奨事項を表示し、セキュリティ設定を管理します。</li></ul><p>詳細については、「[Microsoft 365 Defender ポータルの使用を開始する](mdb-get-started.md)」を参照してください。        |
+| Microsoft 365 管理センター ([https://admin.microsoft.com/](https://admin.microsoft.com/))      | Microsoft 365 管理センターを使用して試用版をアクティブ化し、初めてサインインします。<p> また、次のMicrosoft 365 管理センターを使用します。 <ul><li>ユーザーを追加または削除します。</li><li>ユーザー ライセンスを割り当てます。</li><li>製品とサービスを表示します。</li><li>Microsoft 365 サブスクリプションのセットアップ タスクを完了します。</li></ul>詳細については、「[Microsoft 365 管理センターの概要](../../admin/admin-overview/admin-center-overview.md)」を参照してください。      |
+| Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com))     | Microsoft 365 Defender ポータルを使用して、Defender for Business を設定および構成します。<p>Microsoft 365 Defender ポータルを使用して、次のことを行います。 <ul><li>デバイスとデバイス保護ポリシーを表示します。</li><li>検出された脅威を表示し、アクションを実行します。</li><li>セキュリティに関する推奨事項を表示し、セキュリティ設定を管理します。</li></ul>詳細については、「[Microsoft 365 Defender ポータルの使用を開始する](mdb-get-started.md)」を参照してください。        |
 
 > [!TIP]
 > Microsoft エンドポイント マネージャー管理センター ([https://endpoint.microsoft.com/](https://endpoint.microsoft.com/)) を使用して、デバイスをオンボードしたり、セキュリティ設定を構成したりできます。 Intuneの詳細については、「[デバイスの MDM プロバイダーと MAM プロバイダー Microsoft Intune」を参照してください](/mem/intune/fundamentals/what-is-intune)。

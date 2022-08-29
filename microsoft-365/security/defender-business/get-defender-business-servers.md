@@ -10,20 +10,24 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: none
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-security-compliance
-ms.openlocfilehash: 8587b1fe90f003035d02afb7cf34cd9773e0d3ca
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 55e429351a45b461d8a55dfcebe56a17cf6ef35e
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300347"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320326"
 ---
 # <a name="how-to-get-microsoft-defender-for-business-servers-preview"></a>Microsoft Defender for Business サーバーを取得する方法 (プレビュー)
+
+Microsoft Defender for Business サーバー (プレビュー) を使用すると、Windows Server または Linux Server を実行しているデバイスを Defender for Business または Microsoft 365 Business Premiumにオンボードできます。 Microsoft Defender for Business サーバー ライセンスが一般公開されたら、サーバー インスタンスごとに 1 つのライセンスが必要です。
+
+Microsoft Defender for Business サーバー (プレビュー) を取得する方法を次に示します。
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。 
 

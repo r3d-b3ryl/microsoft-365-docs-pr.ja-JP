@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: reference
 ms.technology: mde
-ms.openlocfilehash: 03538b93115d28ed033097f99f446def673c5cdb
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 7c3d61f038198ff331ece29bf17dea14aba12462
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050977"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343801"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>iOS でのMicrosoft Defender for Endpointの新機能
 
@@ -63,9 +63,9 @@ iOS 上のMicrosoft Defender for Endpointでは、このような種類のデバ
 
 Microsoft Defender for Endpointは、アプリ ストアで **Microsoft Defender** として使用できるようになりました。 この更新プログラムを使用すると、 **アプリは米国リージョンのコンシューマー** 向けのプレビューとして利用できるようになります。 職場または個人アカウントでアプリにログインする方法に基づいて、Microsoft Defender for Endpointの機能や個人向けの Microsoft Defender の機能にアクセスできます。 詳細については、[このブログ](https://www.microsoft.com/microsoft-365/microsoft-defender-for-individuals)を参照してください。
 
-## <a name="threat-and-vulnerability-management"></a>脅威と脆弱性の管理
+## <a name="vulnerability-management"></a>脆弱性の管理
 
-2022 年 1 月 25 日に、Android と iOS での脅威と脆弱性の管理の一般公開が発表されました。 詳細については、 [こちらにある techcommunity の投稿](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)を参照してください。
+2022 年 1 月 25 日に、Android と iOS での脆弱性管理の一般公開が発表されました。 詳細については、 [こちらにある techcommunity の投稿](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/announcing-general-availability-of-vulnerability-management/ba-p/3071663)を参照してください。
 
 ## <a name="1128250101"></a>1.1.28250101
 - iOS での Tunnel - Microsoft Defender for Endpoint **との統合** は、1 つのアプリでセキュリティと接続を可能にする VPN ゲートウェイ ソリューションである Microsoft Tunnel と統合できるようになりました。 詳細については、「 [Microsoft Tunnel の概要](/mem/intune/protect/microsoft-tunnel-overview)」を参照してください。

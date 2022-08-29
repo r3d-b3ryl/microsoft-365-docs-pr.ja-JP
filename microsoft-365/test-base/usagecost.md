@@ -1,5 +1,5 @@
 ---
-title: 使用コストを把握する
+title: 使用コストを理解する
 description: ユーザーがテストの使用状況とコストを理解するのに役立つ課金ハブ機能
 search.appverid: MET150
 author: Tinacyt
@@ -8,20 +8,20 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 06/02/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 3cfa8499a17c74bc23fbb9669acf2b09d059ce00
-ms.sourcegitcommit: 8a0de6240facfe26ee391a14076b7fe534ee6598
+ms.openlocfilehash: 630a8bb9488fc524650d063554d460b4ce0a4dcd
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/07/2022
-ms.locfileid: "65923612"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316032"
 ---
-# <a name="understand-your-usage-cost"></a>使用コストを把握する
+# <a name="understand-your-usage-cost"></a>使用コストを理解する
 
 > [!NOTE]
 > Test Base では、ユーザーがテストの使用状況とコストを理解するのに役立つ課金ハブ機能が提供されるようになりました。

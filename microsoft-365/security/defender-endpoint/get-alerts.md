@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7c720e7743fda39f7950a7df44bea0007988b94b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 231894a707b476f3c2ab52ef8198dad5fe1713c5
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283499"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323115"
 ---
 # <a name="list-alerts-api"></a>アラート API の一覧表示
 
@@ -41,7 +41,7 @@ ms.locfileid: "61283499"
 
 ## <a name="api-description"></a>API の説明
 アラートのコレクションを取得します。
-<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+<br>[OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 <br>OData でサポートされている演算子:
 <br>```$filter```on: ```alertCreationTime```, , ```lastUpdateTime```, ```incidentId```, ```InvestigationId```, ```asssignedTo``````id```, ```detectionSource```, ```lastEventTime```, ```status```, ```severity``` and ```category``` properties.
 <br>```$top``` 最大値が 10,000 の場合

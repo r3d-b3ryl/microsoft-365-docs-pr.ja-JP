@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 秘密度ラベルを使用して、SharePoint サイト、Microsoft Teams サイト、Microsoft 365 グループのコンテンツを保護します。
-ms.openlocfilehash: d05c2e5a7dfb1fc0c7da1bcaced640bf7c20d3e7
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
-ms.translationtype: HT
+ms.openlocfilehash: 7417592f4000d344fe6a093de4de02bcecba573e
+ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037646"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67417458"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>秘密度ラベルを使用して、Microsoft Teams、Microsoft 365 グループ、SharePoint サイトのコンテンツを保護する
 
@@ -43,6 +43,8 @@ ms.locfileid: "67037646"
 > 非管理対象デバイスと認証コンテキストの設定は、Azure Active Directory の条件付きアクセスと連動しています。 これらの設定に秘密度ラベルを使用したい場合は、この依存機能を設定する必要があります。 追加情報については、以下の手順を参照してください。
 
 サポートされているコンテナーにこの秘密度ラベルを適用すると、秘密度カテゴリーおよび構成された保護設定がサイトまたはグループに自動的に適用されます。
+
+一部のラベル オプションでは、構成設定をサイト所有者に拡張できます。それ以外の場合は管理者に限定されます。 外部共有オプションと認証コンテキストのラベル設定を構成して公開すると、サイト所有者はチームまたはサイトの秘密度ラベルを適用または変更することで、サイトのこれらのオプションを設定および変更できるようになりました。 サイト所有者がこれらの変更を加えないようにする場合は、これらの特定のラベル設定を構成しないでください。
 
 ただし、これらのコンテナーのコンテンツは、視覚的なマーキング、および暗号化の秘密度カテゴリーまたはファイルとメールの設定のラベルを継承しません。 ユーザーが SharePoint サイトまたはチーム サイトでドキュメントにラベルを付けられるようにするには、[SharePoint および OneDrive で Office ファイルの秘密度ラベルを有効にします](sensitivity-labels-sharepoint-onedrive-files.md)。
 

@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: macOS デバイスをコンプライアンス ソリューションにオンボードする方法について説明します
-ms.openlocfilehash: b697b805b8a4c65a0528054ca301f16d203e5a64
-ms.sourcegitcommit: 979343980f05ceb546ca0df23562504aaca34b88
+ms.openlocfilehash: 6cf9d5233f66f1afd62644f774b3f9301a477e2e
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66912761"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343505"
 ---
 # <a name="onboard-macos-devices-into-microsoft-365-overview"></a>Microsoft 365 への macOS デバイスのオンボードに関する概要
 
@@ -30,7 +30,7 @@ MacOS デバイスは、Intuneまたは JAMF Pro を使用して Microsoft Purvi
 - [エンドポイントのデータ損失防止](./endpoint-dlp-learn-about.md)
 - [インサイダー リスク管理](insider-risk-management.md)
 
-## <a name="before-you-begin"></a>始める前に
+## <a name="before-you-begin"></a>はじめに
 
 macOS デバイス (Catalina 10.15 以降) で Endpoint DLP を使用する前に、次の記事を理解しておく必要があります。
 
@@ -104,10 +104,10 @@ DLP センサー テレメトリを受信し、データ損失防止ポリシー
 
 トピック | 説明
 :---|:---
-|[Intune を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune.md)|Intune を通じて管理される macOS デバイスの場合
-|[Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-intune-mde.md) |Intune を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
-|[JAMF Pro を使用した Microsoft Purview ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro を通じて管理される macOS デバイスの場合
-|[Microsoft Defender for Endpoint のお客様向け JAMF Pro を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
+|[Intune](device-onboarding-offboarding-macos-intune.md)|Intune を通じて管理される macOS デバイスの場合
+|[Microsoft Defender for Endpoint顧客向けのIntune](device-onboarding-offboarding-macos-intune-mde.md) |Intune を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
+|[JAMF Pro](device-onboarding-offboarding-macos-jamfpro.md) | JAMF Pro を通じて管理される macOS デバイスの場合
+|[JAMF Pro for Microsoft Defender for Endpoint](device-onboarding-offboarding-macos-jamfpro-mde.md)|JAMF Pro を通じて管理され、Microsoft Defender for Endpoint (MDE) が展開されている macOS デバイスの場合
 
 
 ## <a name="related-topics"></a>関連項目

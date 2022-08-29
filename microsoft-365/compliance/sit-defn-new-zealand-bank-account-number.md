@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ニュージーランドの銀行口座番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: b33eeb1e83f5efc9dd805c9ea036c6f30de600a0
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3e682641abeee0c6e48fa1df70c767f029d0af4c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996182"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369701"
 ---
 # <a name="new-zealand-bank-account-number"></a>ニュージーランド銀行口座番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -59,7 +51,7 @@ ms.locfileid: "66996182"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_new_zealand_bank_account_number` がパターンに一致するコンテンツを検出した。
 - `Keywords_new_zealand_bank_account_number` のキーワードを検出した。

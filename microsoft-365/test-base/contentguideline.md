@@ -3,23 +3,23 @@ title: テスト パッケージのガイドライン
 description: テスト パッケージに関するガイドラインを確認する
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 02/04/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 0b5e69a245b21f4f6985eb54ca865b602059cba8
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: eea9d04f2a50ce7a9a858a302eeef2c9feef8868
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62428987"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315550"
 ---
 # <a name="test-package-guidelines"></a>テスト パッケージのガイドライン
 
@@ -120,4 +120,4 @@ zip ファイルをアップロードする前に、zip ファイル内のコン
 
 次の記事に進み、**よく寄せられる質問 (FAQ)** を表示します
 > [!div class="nextstepaction"]
-> [次の手順](faq.md)
+> [次のステップ](faq.md)

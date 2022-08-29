@@ -1,6 +1,6 @@
 ---
 title: デバイスごとのセキュリティ ベースライン評価方法とプロパティ
-description: "\"脅威と脆弱性の管理\" データをプルするセキュリティ ベースライン API に関する情報を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。"
+description: "\"Microsoft Defender 脆弱性の管理\" データをプルするセキュリティ ベースライン API に関する情報を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。"
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device Vulnerability Assessment, device vulnerability report, secure configuration Assessment, secure configuration report, secure configuration report, software Vulnerabilities assessment, software Vulnerability report, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5fd673f37dd35a83a714c0f3dd1c6ac3b0a049ca
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: fb7dd6ff2f752fdbd8eff644ba728391d1f1dfa0
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66994212"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343353"
 ---
 # <a name="export-security-baselines-assessment-per-device"></a>デバイスごとのセキュリティ ベースライン評価をエクスポートする
 
@@ -32,15 +32,15 @@ ms.locfileid: "66994212"
 - [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender 脆弱性の管理を体験しますか? [無料試用版にサインアップしてください。- 更新](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Microsoft Defender 脆弱性の管理を体験するには [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法について説明します。
 
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。
 
-- **JSON 応答**  API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の odata.nextLink フィールドを使用 \@して次の結果をフェッチできます。
+- **JSON 応答**  API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の \@odata.nextLink フィールドを使用して次の結果をフェッチできます。
 
-- **ファイル経由** この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 Azure Storage から次のようにデータをダウンロードできます。
+- **ファイル経由** この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織におすすめです。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 Azure Storage から次のようにデータをダウンロードできます。
   - すべての組織データを含むダウンロード URL の一覧を取得するには、API を呼び出します。
-  - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
+  - ダウンロード URL を使用してすべてのファイルをダウンロードし、データを好きなように処理します。
 
 "_JSON 応答_ または _ファイル経由_" を使用して収集されるデータは、現在の状態の現在のスナップショットです。 履歴データは含まれません。 履歴データを収集するには、お客様が独自のデータ ストレージにデータを保存する必要があります。
 
@@ -55,7 +55,7 @@ ms.locfileid: "66994212"
 
 ### <a name="12-permissions"></a>1.2 アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[エンドポイント API に Microsoft Defender を使用する](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -85,25 +85,25 @@ GET /api/machines/baselineComplianceAssessmentByMachine
 >
 > 応答で追加の列が返される場合があります。 これらの列は一時的なものであり、削除される可能性があります。 ドキュメント化された列のみを使用します。
 >
-> 次の表で定義されているプロパティは、プロパティ ID でアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+> 次の表で定義されているプロパティは、プロパティ ID でアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこのテーブルにリストされているのと同じ順序で返されるとは限りません。
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-|configurationId|String|ベースライン ベンチマーク内の特定の構成の一意の識別子。
-|profileId|String|評価されたプロファイルの一意の識別子。
+|configurationId|文字列|ベースライン ベンチマーク内の特定の構成の一意の識別子。
+|profileId|文字列|評価されたプロファイルの一意の識別子。
 |deviceId|String|サービス内のデバイスの一意の識別子。
 |deviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
 |isApplicable|ブール型|構成がこのデバイスに適用できるかどうかを示します。
 |isCompliant|ブール値|デバイスが構成に準拠しているかどうかを示します。
-|id|String|DeviceId、ProfileId、ConfigurationId の組み合わせであるレコードの一意の識別子。
+|id|文字列|DeviceId、ProfileId、ConfigurationId の組み合わせであるレコードの一意の識別子。
 |osVersion|String|デバイスで実行されているオペレーティング システムの特定のバージョン。
-|osPlatform|String|デバイスで実行されているオペレーティング システム プラットフォーム。 Windows 10やWindows 11など、同じファミリ内にバリエーションがある特定のオペレーティング システム。 詳細については、 [TVM でサポートされているオペレーティング システムとプラットフォーム](tvm-supported-os.md) を参照してください。
+|osPlatform|String|デバイスで実行されているオペレーティング システム プラットフォーム。 Windows 10やWindows 11など、同じファミリ内にバリエーションがある特定のオペレーティング システム。 詳細については、 [MDVM でサポートされているオペレーティング システムとプラットフォーム](tvm-supported-os.md) を参照してください。
 |rbacGroupId|Int|ロールベースのアクセス制御 (RBAC) グループ ID。デバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 |rbacGroupName|String|ロールベースのアクセス制御 (RBAC) グループ。 デバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 |DataCollectionTimeOffset|DateTime|デバイスからデータが収集された時刻。 データが収集されなかった場合、このフィールドは表示されない場合があります。
 |ComplianceCalculationTimeOffset|DateTime|評価の計算が行われた時刻。
-|RecommendedValue|String|現在のデバイス設定に予期されるクレーム値のセット。
-|CurrentValue|String|デバイスで検出された一連の検出された値。
+|RecommendedValue|文字列|現在のデバイス設定に予期されるクレーム値のセット。
+|CurrentValue|文字列|デバイスで検出された一連の検出された値。
 |ソース|String|現在のデバイス設定を決定するために使用されるレジストリ パスまたはその他の場所。
 
 ## <a name="17-example"></a>1.7 例
@@ -168,7 +168,7 @@ GET /api/machines/BaselineComplianceAssessmentExport
 ### <a name="25-properties-via-files"></a>2.5 プロパティ (ファイル経由)
 
 > [!NOTE]
-> ファイルは、複数行の Json 形式の gzip 圧縮&です。
+> ファイルは、複数行の JSON 形式の gzip 圧縮されています。
 >
 >ダウンロード URL は 3 時間だけ有効です。それ以外の場合は、パラメーターを使用できます。
 >
@@ -180,7 +180,7 @@ GET /api/machines/BaselineComplianceAssessmentExport
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-|ファイルをエクスポートする|array[string]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
+|ファイルをエクスポートする|array[string]|組織の現在のスナップショットを保持しているファイルのダウンロード URL のリスト。
 |GeneratedTime|String|エクスポートが生成された時刻。
 
 ## <a name="26-example"></a>2.6 例

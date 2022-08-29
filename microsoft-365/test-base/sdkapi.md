@@ -3,27 +3,27 @@ title: Base API & SDK をテストする
 description: Base API & SDK をテストする
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 6ae0fdf9cc49faaaff84eb3f96e076d1efba8a4c
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 5a3959e723dbf78f56de0b33b280de13b1c3b59e
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65077440"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315923"
 ---
 # <a name="manage-your-resource-with-sdk--apis"></a>SDK & API を使用してリソースを管理する
 
-自動化は、DevOpsとアジャイル開発の重要な側面です。 Microsoft 365 リソースの Test Base を管理し、プログラムによってテスト結果を取得し、それらを CI ツールと統合することを探していますか? 基本 API/SDK のテストは、これらすべてを実現するのに役立ちます。
+自動化は DevOps とアジャイル開発の重要な側面です。 Microsoft 365 リソースの Test Base の管理、プログラムによるテスト結果の取得、および CI ツールとの統合をお探しですか? 基本 API/SDK のテストは、これらすべてを実現するのに役立ちます。
 
 これらの API/SDK を使用すると、IT プロフェッショナルとアプリ開発者は次の機能を利用できます。
 
@@ -32,7 +32,7 @@ ms.locfileid: "65077440"
 - テストの概要、詳細なテスト結果、および分析結果を取得します。 分析結果には、CPU 回帰分析、CPU 使用率分析、メモリ回帰分析、およびメモリ使用率分析が含まれます。
 - テスト結果とテスト実行ビデオの記録をダウンロードします。
 
-Test Base for Microsoft 365 サービスでこの新しい機能にアクセスする方法については、以下のステップ バイ ステップの概要をご覧ください。
+Microsoft 365 サービスの Test Base でこの新しい機能にアクセスする方法については、以下のステップ バイ ステップの概要を参照してください。
 
 ## <a name="a-step-by-step-example-of-test-base-account-creation-by-using-python-sdk"></a>Python SDK を使用した Test Base アカウントの作成のステップ バイ ステップの例
 

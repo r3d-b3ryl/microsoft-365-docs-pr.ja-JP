@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a496e0e293e72821016d6efa5fbd9622f669ab0b
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: f84e0e0ad95d45cefabdfb87b824d6afd2385638
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755536"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384230"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>高度な捜索スキーマの概要
 
@@ -54,14 +54,14 @@ ms.locfileid: "63755536"
 :::image type="content" source="../../media/understand-schema-1.png" alt-text="Microsoft 365 Defender ポータルの [高度な検索] ページの [スキーマ参照] ページ" lightbox="../../media/understand-schema-1.png":::
 
 ## <a name="learn-the-schema-tables"></a>スキーマ テーブルについて学習する
-次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度なハンティング画面のスキーマ表現の一部としてDefender for Cloudにも一覧表示されます。
+次の参照は、スキーマ内のすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。 テーブル名と列名は、高度なハンティング画面のスキーマ表現の一部として Defender for Cloud にも一覧表示されます。
 
 | テーブル名 | 説明 |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | アラートに関連付けられているファイル、IP アドレス、URL、ユーザー、またはデバイス |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Microsoft Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identityからのアラート重大度情報と脅威の分類を含む  |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Office 365 およびその他のクラウド アプリとサービスのアカウントとオブジェクトに関連するイベント |
-| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Windows Defender ウイルス対策や Exploit Protection などのセキュリティ制御によりトリガーされたイベントを含むさまざまな種類のイベント |
+| **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Microsoft Defender ウイルス対策やエクスプロイト保護などのセキュリティ制御によってトリガーされるイベントを含む、複数のイベントの種類 |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | エンドポイント上の証明書検証イベントから取得した署名済みファイルの証明書情報 |
 | **[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)** | ファイルの作成、変更、およびその他のファイル システム イベント |
 | **[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)** | DLL の読み込みイベント |
@@ -71,8 +71,8 @@ ms.locfileid: "63755536"
 | **[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)** | 物理アダプタ、IP アドレス、MAC アドレス、および接続されたネットワークとドメインなど、デバイスのネットワーク プロパティ |
 | **[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)** | プロセスの作成と関連イベント |
 | **[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)** | レジストリ エントリの作成と変更 |
-| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | デバイス上のさまざまなセキュリティ構成の状態を示す脅威および脆弱性管理の評価イベント |
-| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | 脅威および脆弱性管理によってデバイスを評価するために使用されるさまざまなセキュリティ構成に関するサポート技術情報 (さまざまな標準およびベンチマークへのマッピングを含む)　  |
+| **[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)** | デバイス上のさまざまなセキュリティ構成の状態を示す評価イベントをMicrosoft Defender 脆弱性の管理する |
+| **[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)** | デバイスを評価するためにMicrosoft Defender 脆弱性の管理によって使用されるさまざまなセキュリティ構成のナレッジ ベース。さまざまな標準とベンチマークへのマッピングが含まれています。  |
 | **[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)** | デバイスにインストールされているソフトウェアのインベントリ (バージョン情報とサポート終了の状態を含む) |
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧 |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | 悪用コードが公開されているかどうかなど、公開されている脆弱性のサポート技術情報 |

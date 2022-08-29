@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender ウイルス対策保護の監視とレポート
-description: Configuration Managerまたはセキュリティ情報とイベント管理 (SIEM) ツールを使用してレポートを使用し、PowerShell と WMI を使用して Microsoft Defender AV を監視します。
-keywords: siem、モニター、レポート、Microsoft Defender AV
+description: Configuration Managerまたはセキュリティ情報とイベント管理 (SIEM) ツールを使用してレポートを使用し、PowerShell と WMI を使用して Microsoft Defender ウイルス対策を監視します。
+keywords: siem、モニター、レポート、Microsoft Defender AV、Microsoft Defender ウイルス対策
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -15,12 +15,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 46abb6a11e1752934218a031993b10286d8ab420
-ms.sourcegitcommit: 35f167725bec5fd4fe131781a53d96b060cf232d
+ms.openlocfilehash: 49f272a613b45746c5c203daf03671f5032c0b59
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65872250"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67386076"
 ---
 # <a name="report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策のレポート
 
@@ -32,19 +32,19 @@ ms.locfileid: "65872250"
 **プラットフォーム**
 - Windows
 
-Microsoft Defender ウイルス対策は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、およびWindows Server 2016に組み込まれています。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpointにおける次世代の保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
+Microsoft Defender ウイルス対策は、Windows 10、Windows 11、Windows Server 2019、Windows Server 2022、Windows Server 2016に組み込まれています。 Microsoft Defender ウイルス対策は、Microsoft Defender for Endpointにおける次世代の保護です。 次世代の保護は、電子メール、アプリ、クラウド、Web 全体のウイルス、マルウェア、スパイウェアなどのソフトウェアの脅威からデバイスを保護するのに役立ちます。
 
 Microsoft Defender ウイルス対策では、保護の状態とアラートを確認するためのいくつかのオプションがあります。 Microsoft エンドポイント マネージャーを使用して[、Microsoft Defender ウイルス対策を監視](/configmgr/protect/deploy-use/monitor-endpoint-protection)したり、[電子メール アラートを作成したりできます](/configmgr/protect/deploy-use/endpoint-configure-alerts)。 または、[Microsoft Intune](/intune/introduction-intune)を使用して保護を監視することもできます。
 
 サード パーティのセキュリティ情報とイベント管理 (SIEM) サーバーがある場合は、[クライアント イベントWindows Defender](/windows/win32/events/windows-events)使用することもできます。
 
-Windows イベントは、Security Account Manager (SAM) イベント ([Windows 10用に強化され](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)、[セキュリティ監査](/windows/security/threat-protection/auditing/security-auditing-overview)のトピックも参照)、[Windows Defender イベント](troubleshoot-microsoft-defender-antivirus.md)など、いくつかのセキュリティ イベント ソースで構成されます。
+Windows イベントは、Security Account Manager (SAM) イベント ([Windows 10用に強化された](/windows/whats-new/whats-new-windows-10-version-1507-and-1511)セキュリティ監査トピックも参照) や[Windows Defenderイベント](troubleshoot-microsoft-defender-antivirus.md)など、いくつかのセキュリティ イベント ソース[で](/windows/security/threat-protection/auditing/security-auditing-overview)構成されます。
 
-これらのイベントは、[Windows イベント コレクター](/windows/win32/wec/windows-event-collector)を使用して一元的に集計できます。 多くの場合、SIEM サーバーにはWindows イベント用のコネクタがあり、SIEM サーバー内のすべてのセキュリティ イベントを関連付けることができます。
+これらのイベントは、 [Windows イベント コレクター](/windows/win32/wec/windows-event-collector)を使用して一元的に集計できます。 多くの場合、SIEM サーバーには Windows イベント用のコネクタがあり、SIEM サーバー内のすべてのセキュリティ イベントを関連付けることができます。
 
 [Log Analytics のマルウェア評価ソリューションを使用して、マルウェア イベントを監視](/security/benchmark/azure/security-control-logging-monitoring)することもできます。
 
-PowerShell、WMI、またはMicrosoft Azureを使用して状態を監視または決定する方法については、[(デプロイ、管理、およびレポートのオプションの表) を](deploy-manage-report-microsoft-defender-antivirus.md#ref2)参照してください。
+PowerShell、WMI、または Microsoft Azure を使用して状態を監視または決定する方法については、 [(デプロイ、管理、およびレポートのオプションの表) を](deploy-manage-report-microsoft-defender-antivirus.md#ref2)参照してください。
 
 > [!TIP]
 > 他のプラットフォームのウイルス対策関連情報を探している場合は、次を参照してください。

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6b1ee22f8176d6f682eb9e9f2134cc27db91affd
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: db30612de836cfac1279dba4aa3563ae71a6e269
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64783625"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343145"
 ---
 # <a name="step-6-identify-soc-maintenance-tasks"></a>手順 6. SOC メンテナンス タスクを特定する
 
@@ -40,12 +40,12 @@ MICROSOFT 365 DEFENDERの SOC を維持するための定期的または必要�
 
 |最新情報|説明|頻度|割り当てられたチーム|
 |---|---|---|---|
-|SOC Teamsとのサービス管理コラボレーション|資産追跡 (CMDB)、アプリケーション ライセンス (新しい SaaS ライセンス)、デバイス購入 (デバイスの展開のアップグレードまたは更新)、その他の Microsoft 365テナント全体の変更 (Intune、Microsoft 365など) の管理Microsoft 365 Defender.|毎週、必要に応じて|エンジニアリング & SecOps|
+|SOC Teams とのサービス管理コラボレーション|資産追跡 (CMDB)、アプリケーション ライセンス (新しい SaaS ライセンス)、デバイス購入 (デバイスの展開のアップグレードまたは更新)、その他の Microsoft 365 テナント全体の変更 (Intune、Microsoft 365 など) などの周辺機器サービスの管理は、Microsoft 365 Defender製品の展開に影響を与える可能性があります。|毎週、必要に応じて|エンジニアリング & SecOps|
 |フィッシング対策とデータ損失防止キャンペーンを更新する|SOC ユース ケースと、拡張組織 (人事、法的、トレーニングなど) で学習した教訓を組み込みます。|月次と必要に応じて|SOC 監視|
 |必要に応じてオートメーション スクリプトとサービスをデプロイする|承認された Microsoft サイトから自動化スクリプトと構成ファイルをダウンロードしてテストし、Microsoft 365 Defender操作を改善します。|毎週、必要に応じて|エンジニアリングと SecOps|
-|ポータルまたはライセンス管理|Microsoft の更新プログラムと新機能に基づいて、Microsoft 365 Defender ポータルまたはライセンスのニーズに関するお知らせとMicrosoft メッセージング センターを確認してください。|週次|SOC 監視|
+|ポータルまたはライセンス管理|Microsoft の更新プログラムと新機能に基づいて、Microsoft 365 Defender ポータルまたはライセンスのニーズに関するお知らせとMicrosoft メッセージング センターを確認してください。|Weekly (週単位)|SOC 監視|
 |SOC エスカレーション チケットを更新する|すべての SOC チームは、それらに割り当てられたエスカレーション チケット (Sentinel、ServiceNow チケットなど) を更新します。|毎日|すべての SOC チーム|
-|Microsoft 365 Defender脅威&脆弱性修復アクティビティを追跡する|TvM Secure Score 修復アクティビティを生成し、イントラネット ポータルを使用して資産所有者に報告します。|毎日|監視|
+|Microsoft Defender 脆弱性の管理 (MDVM) 修復アクティビティを追跡する|MDVM セキュア スコア修復アクティビティを生成し、イントラネット ポータルを使用して資産所有者に報告します。|毎日|監視|
 |セキュア スコア レポートを生成する|監視チームは、セキュリティスコアの改善を追跡し、報告します。|Weekly SOC|監視|
 |IR テーブルトップ演習を実行する|卓上演習で SOC チームプレイブックをテストします。|必要に応じて|すべての SOC チーム|
 

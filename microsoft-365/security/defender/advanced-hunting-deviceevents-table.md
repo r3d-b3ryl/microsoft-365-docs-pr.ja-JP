@@ -18,12 +18,12 @@ audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 54eef2d828f9a236ae457769c8c4ff9ba429dac9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 423e7934702197b97f148ff5285e5f51b4a5da54
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531112"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384882"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -33,10 +33,10 @@ ms.locfileid: "61531112"
 - Microsoft 365 Defender
 - Microsoft Defender for Endpoint
 
-[高度なハンティング](advanced-hunting-overview.md) スキーマのその他のデバイス イベントまたは`DeviceEvents`テーブルには、Windows Defender ウイルス対策や悪用保護などのセキュリティ制御によってトリガーされるイベントなど、さまざまなイベントの種類に関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+[高度なハンティング](advanced-hunting-overview.md) スキーマのその他のデバイス イベントまたは`DeviceEvents`テーブルには、Microsoft Defender ウイルス対策やエクスプロイト保護などのセキュリティ制御によってトリガーされるイベントなど、さまざまなイベントの種類に関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (`ActionType`値) の詳細については、Defender for Cloudで使用できる組み込みのスキーマ参照を使用します。
+> テーブルでサポートされているイベントの種類 (`ActionType` 値) の詳細については、Defender for Cloud で使用できる組み込みのスキーマ参照を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -85,7 +85,7 @@ ms.locfileid: "61531112"
 | `InitiatingProcessAccountName` | `string` | イベントを担当するプロセスを実行したアカウントのユーザー名 |
 | `InitiatingProcessAccountSid` | `string` | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
 | `InitiatingProcessAccountUpn` | `string` | イベントを担当するプロセスを実行したアカウントのユーザー プリンシパル名 (UPN) |
-| `InitiatingProcessAccountObjectId` | `string` | イベントを担当するプロセスを実行したユーザー アカウントのオブジェクト ID をAzure ADする |
+| `InitiatingProcessAccountObjectId` | `string` | イベントを担当するプロセスを実行したユーザー アカウントの Azure AD オブジェクト ID |
 | `InitiatingProcessVersionInfoCompanyName` | `string` | イベントを担当するプロセスのバージョン情報 (イメージ ファイル) の会社名 |
 | `InitiatingProcessVersionInfoProductName` | `string` | イベントを担当するプロセス (イメージ ファイル) のバージョン情報からの製品名 |
 | `InitiatingProcessVersionInfoProductVersion` | `string` | イベントを担当するプロセス (イメージ ファイル) のバージョン情報からの製品バージョン |

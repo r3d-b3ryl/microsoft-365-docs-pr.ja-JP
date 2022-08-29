@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 67d9ca5cbab765f1c195214e89be11f318eca7cd
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: 626b18829594c6cd88421fd183c2403a84bf0a4e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100000"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322389"
 ---
 # <a name="alert-resource-type"></a>アラート リソースの種類
 
@@ -61,9 +61,9 @@ ms.locfileid: "67100000"
 
 ****
 
-|プロパティ|型|説明|
+|プロパティ|種類|説明|
 |---|---|---|
-|id|String|アラート ID。|
+|id|文字列|アラート ID。|
 |title|String|警告タイトル。|
 |説明|String|警告の説明。|
 |alertCreationTime|Null 許容 DateTimeOffset|アラートが作成された日時 (UTC)。|
@@ -76,20 +76,20 @@ ms.locfileid: "67100000"
 |investigationState|Null 許容列挙型|[調査](automated-investigations.md)の現在の状態。 指定できる値は、"不明"、"終了済み" です。 'SuccessfullyRemediated'、'Benign'、'Failed'、'PartiallyRemediated'、'Running'、'PendingApproval'、'PendingResource'、'PartiallyInvestigated'、'TerminatedByUser'、'TerminatedBySystem'、'Queued'、'InnerFailure'、'PreexistingAlert'、'UnsupportedAlertType'、'SuppressedAlert'。|
 |assignedTo|String|アラートの所有者。|
 |rbacGroupName|String|RBAC デバイス グループ名。|
-|mitreTechniques|String|Mitre Enterprise の手法 ID。|
-|relatedUser|String|特定のアラートに関連するユーザーの詳細。|
+|mitreTechniques|文字列|Mitre Enterprise の手法 ID。|
+|relatedUser|文字列|特定のアラートに関連するユーザーの詳細。|
 |severity|列挙|アラートの重大度。 指定できる値は、'UnSpecified'、'Informational'、'Low'、'Medium'、'High' です。|
 |status|列挙|アラートの現在の状態を指定します。 指定できる値は、"不明"、"新規"、"InProgress"、"解決済み" です。|
 |classification|Null 許容列挙型|アラートの仕様。 指定できる値は、"不明"、"FalsePositive"、"TruePositive" です。|
 |決定|Null 許容列挙型|アラートの決定を指定します。 指定できる値は、'NotAvailable'、'Apt'、'Malware'、'SecurityPersonnel'、'SecurityTesting'、'UnwantedSoftware'、'Other' です。|
-|category|String|アラートのカテゴリ。|
-|detectionSource|String|検出ソース。|
-|threatFamilyName|String|脅威ファミリ。|
-|threatName|String|脅威名。|
-|machineId|String|アラートに関連付けられている [コンピューター](machine.md) エンティティの ID。|
+|category|文字列|アラートのカテゴリ。|
+|detectionSource|文字列|検出ソース。|
+|threatFamilyName|文字列|脅威ファミリ。|
+|threatName|文字列|脅威名。|
+|MachineId|String|アラートに関連付けられている [コンピューター](machine.md) エンティティの ID。|
 |computerDnsName|String|[マシン](machine.md) の完全修飾名。|
-|aadTenantId|String|Azure Active Directory ID。|
-|DetectorId|String|アラートをトリガーした検出器の ID。|
+|aadTenantId|文字列|Azure Active Directory ID。|
+|DetectorId|文字列|アラートをトリガーした検出器の ID。|
 |comments|アラート コメントの一覧|Alert Comment オブジェクトには、コメント文字列、createdBy 文字列、createTime の日付時刻が含まれます。|
 |証拠|アラートの証拠の一覧|アラートに関連する証拠。 次の例を参照してください。|
 |

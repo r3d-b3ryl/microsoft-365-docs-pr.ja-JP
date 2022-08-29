@@ -53,6 +53,8 @@
           href: flw-team-collaboration.md
         - name: 現場担当者との企業コミュニケーション
           href: flw-corp-comms.md
+        - name: 従業員がコラボレーション アプリと機能を使用できるように支援する
+          href: collab-features-apps-toolkit.md
     - name: ウェルビーイング & エンゲージメント
       items:
         - name: 従業員を関与させ、ウェルビーイングに集中する
@@ -69,6 +71,8 @@
           href: schedule-owner-for-shift-management.md
         - name: Teams でシフトベースのアクセスを管理する
           href: manage-shift-based-access-flw.md
+        - name: 従業員が時間と出席を追跡できるように支援する
+          href: shifts-toolkit.md
         - name: シフト コネクタ
           items:
             - name: 概要

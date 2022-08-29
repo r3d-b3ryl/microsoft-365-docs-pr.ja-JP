@@ -12,12 +12,12 @@ search.appverid: MET150
 ms.collection: ''
 ms.localizationpriority: medium
 description: Microsoft Whiteboard の共有を管理する方法について説明します。
-ms.openlocfilehash: 61f8a79cd17721d1a383038bd8912d87c625ac4c
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: b5455886067bb343a0a3bbd499f4271bc72971b6
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275958"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67383768"
 ---
 # <a name="manage-sharing-for-microsoft-whiteboard"></a>Microsoft Whiteboard の共有を管理する
 
@@ -60,7 +60,7 @@ OneDrive for Businessの外部共有を制限する場合は、制限を維持�
 
 |シナリオ|ストレージと所有権|共有設定|共有エクスペリエンス|
 |---|---|---|---|
-|デスクトップまたはモバイル デバイスからホワイトボードを起動する|ストレージ: OneDrive for Business<br><br>所有者: ホワイトボードを作成するユーザー|有効|テナント内ユーザー: 作成、表示、および共同作業が可能<br><br>外部ユーザー: 会議中にのみ表示および共同作業できます (ホワイトボードを共有するボタンは外部ユーザーには表示されません)<br><br>共有デバイス アカウント: 会議中にのみ表示および共同作業できます|
+|デスクトップまたはモバイル デバイスからホワイトボードを起動する|ストレージ: OneDrive for Business<br><br>所有者: ホワイトボードを作成するユーザー|Enabled|テナント内ユーザー: 作成、表示、および共同作業が可能<br><br>外部ユーザー: 会議中にのみ表示および共同作業できます (ホワイトボードを共有するボタンは外部ユーザーには表示されません)<br><br>共有デバイス アカウント: 会議中にのみ表示および共同作業できます|
 |デスクトップまたはモバイル デバイスからホワイトボードを起動する|ストレージ: OneDrive for Business<br><br>所有者: ホワイトボードを作成するユーザー|無効|テナント内ユーザー: 開始、表示、および共同作業が可能<br><br>外部ユーザー: 表示または共同作業できない<br><br>共有デバイス アカウント: 表示または共同作業できない|
 |Surface Hub またはMicrosoft Teams Roomsからホワイトボードを起動する|ストレージ: Azure (ホワイトボード ファイルは今後OneDrive for Businessに移動される予定)<br><br>所有者: 会議の参加者|対象外|テナント内ユーザー: 開始、表示、および共同作業が可能<br><br>外部ユーザー: 会議中にのみ表示および共同作業できます<br><br> 共有デバイス アカウント: 会議中にのみ表示および共同作業できます|
 
@@ -70,7 +70,7 @@ Teams チャネルまたはチャットのタブとしてホワイトボード�
 
 |シナリオ|ストレージと所有権|共有設定|共有エクスペリエンス|
 |---|---|---|---|
-|デスクトップまたはモバイル デバイスからホワイトボードをチャネルまたはチャットに追加する|ストレージ: OneDrive for Business<br><br>所有者: ホワイトボードを作成するユーザー|適用されません (会議にのみ適用されます)|テナント内ユーザー: 開始、表示、および共同作業が可能<br><br>外部ユーザー: サポートされていません<br><br>Teams ゲスト: 表示と共同作業が可能<br><br>共有デバイス アカウント: 適用されません|
+|デスクトップまたはモバイル デバイスからホワイトボードをチャネルまたはチャットに追加する|ストレージ: OneDrive for Business<br><br>所有者: ホワイトボードを作成するユーザー|適用されません (会議にのみ適用されます)|テナント内ユーザー: 開始、表示、および共同作業が可能<br><br>外部ユーザー: サポートされていません<br><br>Teams ゲスト: サポートされていません<br><br>共有デバイス アカウント: 適用されません|
 
 ## <a name="create-and-share-in-whiteboard-native-clients"></a>Whiteboard ネイティブ クライアントでの作成と共有
 

@@ -15,12 +15,12 @@ f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 029be738b8c916ec4eb16970ae2d2ff3c460f639
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 2116306529530561fab9e4c8107a7b97e64fb5a1
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771976"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344703"
 ---
 # <a name="tutorials-and-simulations-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessのチュートリアルとシミュレーション
 
@@ -48,7 +48,7 @@ ms.locfileid: "66771976"
 |---------|---------|
 | **ドキュメント ドロップ バックドア**     | テスト デバイスにファイルベースのマルウェアを導入する攻撃をシミュレートします。 このチュートリアルでは、シミュレーション ファイルを使用する方法と、Microsoft 365 Defender ポータルで監視する内容について説明します。 <p>このチュートリアルでは、Microsoft Word をテスト デバイスにインストールする必要があります。   |
 | **ライブ応答**     | Live Response で基本コマンドと高度なコマンドを使用する方法について説明します。 疑わしいファイルを見つけ、ファイルを修復し、デバイス上の情報を収集する方法について説明します。   |
-| **脅威&脆弱性管理 (コア シナリオ)**     | 次の 3 つのシナリオで脅威と脆弱性の管理について説明します。<ol><li>会社の脅威と脆弱性の露出を減らします。</li><li>修復を要求します。</li><li>セキュリティに関する推奨事項の例外を作成します。</li></ol> <p> 脅威&脆弱性管理では、エンドポイントの脆弱性と構成ミスの検出、優先順位付け、修復にリスクベースのアプローチを使用します。      |
+| **Microsoft Defender 脆弱性の管理(コア シナリオ)**     | 次の 3 つのシナリオを通じて Defender の脆弱性管理について説明します。<ol><li>会社の脅威と脆弱性の露出を減らします。</li><li>修復を要求します。</li><li>セキュリティに関する推奨事項の例外を作成します。</li></ol> <p> Defender Vulnerability Management は、エンドポイントの脆弱性と構成ミスの検出、優先順位付け、修復にリスクベースのアプローチを使用します。      |
 
 各チュートリアルには、シナリオ、動作方法、操作を説明するチュートリアル ドキュメントが含まれています。
 
@@ -65,7 +65,7 @@ ms.locfileid: "66771976"
 
    - **ドキュメント ドロップ バックドア**
    - **ライブ応答**
-   - **脅威&脆弱性管理 (コア シナリオ)**
+   - **Microsoft Defender 脆弱性の管理 (コア シナリオ)**
 
 ## <a name="next-steps"></a>次の手順
 

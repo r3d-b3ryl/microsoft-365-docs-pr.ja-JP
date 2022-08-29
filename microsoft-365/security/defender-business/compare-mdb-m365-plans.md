@@ -10,19 +10,18 @@ ms.topic: reference
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/10/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - m365-initiative-defender-business
 - m365-security-compliance
-ms.openlocfilehash: 98a384fe62d11257cab468d32dae8187c6f45ea5
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+ms.openlocfilehash: 4cb0ca9f318041bb209fedf567baa5987e39b61a
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309771"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343070"
 ---
 # <a name="compare-security-features-in-microsoft-365-plans-for-small-and-medium-sized-businesses"></a>中小企業向けの Microsoft 365 プランのセキュリティ機能を比較する
 
@@ -44,11 +43,11 @@ Microsoft では、中小企業向けの計画など、さまざまなクラウ�
 
 | Microsoft Defender for Business (スタンドアロン) | Microsoft 365 Business Premium |
 |:---|:---|
-| デバイスのウイルス対策、マルウェア対策、ランサムウェア保護機能は次のとおりです。 <ul><li>[次世代保護](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) (クラウド保護と共にデバイス上のウイルス対策/マルウェア対策保護)</li><li>[攻撃面の縮小](../defender-endpoint/overview-attack-surface-reduction.md) (ネットワーク保護、ファイアウォール、および攻撃表面の縮小ルール) <sup>[[a](#fna)]</sup></li><li>[エンドポイントの検出と応答](../defender-endpoint/overview-endpoint-detection-response.md) (動作ベースの検出と手動の応答アクション)</li><li>[自動調査と対応](../defender/m365d-autoir.md) (検出された脅威に対する自己修復を使用)</li><li>[脅威と脆弱性の管理](mdb-view-tvm-dashboard.md) (公開されているデバイスと推奨事項を表示する)</li><li>デバイス (Windows、Mac、iOS、Android) の[クロスプラットフォームサポート](mdb-onboard-devices.md) <sup>[[b](#fnb)]</sup></li><li>[一元管理とレポート (](mdb-get-started.md)Microsoft 365 Defender ポータル)</li><li>[統合用 API](../defender-endpoint/management-apis.md) (Microsoft パートナーまたはカスタム ツールとアプリ用)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (エンドポイント セキュリティ)</li></ul><br/><br/><br/><br/><br/><br/> | 生産性とセキュリティの機能は次のとおりです。<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office アプリとサービス、Microsoft Teams)</li><li>[共有コンピューターのアクティブ化](/deployoffice/overview-shared-computer-activation) (Microsoft 365 Appsを展開する場合)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (以前のバージョンの Windows Pro からアップグレード)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (Windows デバイスのセットアップと構成用)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (電子メールの改ざん、スパム対策、マルウェア対策、スプーフィング インテリジェンス)</li><li>[Defender for Business](mdb-overview.md) ("Defender for Business (スタンドアロン)" 列に記載されているすべてのもの) </li><li>[Microsoft Defender for Office 365 計画 1](../office-365-security/overview.md) (高度な改ざん、リアルタイム検出、安全な添付ファイル、安全なリンク)</li><li>[自動拡張アーカイブ](../../compliance/autoexpanding-archiving.md) (電子メールの場合)</li><li>[Azure Active Directory Premium プラン 1](/azure/active-directory/fundamentals/active-directory-whatis) (ID 管理)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (エンドポイント セキュリティ)</li><li>[Azure Information Protection Premium プラン 1](/azure/information-protection/what-is-information-protection) (機密情報の保護)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (クラウド内の一元管理されたセキュリティで保護された仮想マシン)</li></ul> |
+| デバイスのウイルス対策、マルウェア対策、ランサムウェア保護機能は次のとおりです。 <ul><li>[次世代保護](../defender-endpoint/microsoft-defender-antivirus-in-windows-10.md) (クラウド保護と共にデバイス上のウイルス対策/マルウェア対策保護)</li><li>[攻撃面の縮小](../defender-endpoint/overview-attack-surface-reduction.md) (ネットワーク保護、ファイアウォール、および攻撃表面の縮小ルール) <sup>[[a](#fna)]</sup></li><li>[エンドポイントの検出と応答](../defender-endpoint/overview-endpoint-detection-response.md) (動作ベースの検出と手動の応答アクション)</li><li>[自動調査と対応](../defender/m365d-autoir.md) (検出された脅威に対する自己修復を使用)</li><li>[Microsoft Defender 脆弱性の管理](mdb-view-tvm-dashboard.md) (公開されているデバイスと推奨事項を表示する)</li><li>デバイス (Windows、Mac、iOS、Android) の[クロスプラットフォームサポート](mdb-onboard-devices.md) <sup>[[b](#fnb)]</sup></li><li>[一元管理とレポート (](mdb-get-started.md)Microsoft 365 Defender ポータル)</li><li>[統合用 API](../defender-endpoint/management-apis.md) (Microsoft パートナーまたはカスタム ツールとアプリ用)</li></ul><br/><br/><br/><br/><br/><br/><br/> | 生産性とセキュリティの機能は次のとおりです。<ul><li>[Microsoft 365 Business Standard](../../admin/admin-overview/what-is-microsoft-365-for-business.md) (Office アプリとサービス、Microsoft Teams)</li><li>[共有コンピューターのアクティブ化](/deployoffice/overview-shared-computer-activation) (Microsoft 365 Appsを展開する場合)</li><li>[Windows 10/11 Business](../../business-premium/m365bp-upgrade-windows-10-pro.md) (以前のバージョンの Windows Pro からアップグレード)</li><li>[Windows Autopilot](/mem/autopilot/windows-autopilot) (Windows デバイスのセットアップと構成用)</li><li>[Exchange Online Protection](../office-365-security/exchange-online-protection-overview.md) (電子メールの改ざん、スパム対策、マルウェア対策、スプーフィング インテリジェンス)</li><li>[Defender for Business](mdb-overview.md) ("Defender for Business (スタンドアロン)" 列に記載されているすべてのもの) </li><li>[Microsoft Defender for Office 365 計画 1](../office-365-security/overview.md) (高度な改ざん、リアルタイム検出、安全な添付ファイル、安全なリンク)</li><li>[自動拡張アーカイブ](../../compliance/autoexpanding-archiving.md) (電子メールの場合)</li><li>[Azure Active Directory Premium プラン 1](/azure/active-directory/fundamentals/active-directory-whatis) (ID 管理)</li><li>[Microsoft Intune](/mem/intune/fundamentals/what-is-intune) (デバイスのオンボードと管理)</li><li>[Azure Information Protection Premium プラン 1](/azure/information-protection/what-is-information-protection) (機密情報の保護)</li><li>[Azure Virtual Desktop](/azure/virtual-desktop/overview) (クラウド内の一元管理されたセキュリティで保護された仮想マシン)</li></ul> |
 
-(<a id="fna">a</a>) Microsoft Intuneを使用して、攻撃表面の縮小ルールを変更またはカスタマイズします。
+(<a id="fna">a</a>) 攻撃面の縮小ルールを変更またはカスタマイズするには、Microsoft Intuneが必要です。 IntuneはMicrosoft 365 Business Premiumに含まれています。
 
-(<a id="fnb">b</a>) Intuneを使用して iOS、iPadOS、Android デバイスをオンボードします。 「[デバイスを Microsoft Defender for Business にオンボードするデバイスを Microsoft Defender for Business にオンボードする](mdb-onboard-devices.md)」を参照してください。
+(<a id="fnb">b</a>) iOS および Android デバイスのオンボードにはMicrosoft Intuneが必要です。 「[デバイスを Microsoft Defender for Business にオンボードするデバイスを Microsoft Defender for Business にオンボードする](mdb-onboard-devices.md)」を参照してください。
 
 ## <a name="compare-microsoft-defender-for-business-to-microsoft-defender-for-endpoint-plans-1-and-2"></a>Microsoft Defender for Businessを Microsoft Defender for Endpoint プラン 1 および 2 と比較する
 
@@ -58,7 +57,7 @@ Defender for Business は、Defender for Endpoint のエンタープライズ �
 |---|---|---|---|
 |[集中管理](../defender-endpoint/manage-atp-post-migration.md) |はい <sup>[[1](#fn1)]</sup>|はい|はい|
 |[クライアント構成の簡略化](mdb-simplified-configuration.md)|はい|不要|不要|
-|[脅威と脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|はい|不要|はい|
+|[Microsoft Defender 脆弱性の管理](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)|はい|不要|はい|
 |[攻撃面の減少機能](../defender-endpoint/overview-attack-surface-reduction.md)|はい|はい|はい|
 |[次世代の保護](../defender-endpoint/next-generation-protection.md)|はい|はい|はい|
 |[エンドポイントでの検出と対応](../defender-endpoint/overview-endpoint-detection-response.md)|はい <sup>[[2](#fn2)]</sup>|不要|はい|
@@ -70,7 +69,7 @@ Defender for Business は、Defender for Endpoint のエンタープライズ �
 |パートナー API|はい|はい|はい|
 |[Microsoft 365 Lighthouse統合](../../lighthouse/m365-lighthouse-overview.md) <br/>(顧客テナント間のセキュリティ インシデントを表示する場合)|はい |はい <sup>[[7](#fn7)]</sup>|はい <sup>[[7](#fn7)]</sup>|
 
-(<a id="fn1">1</a>) Microsoft 365 Defender ポータル () または Microsoft エンドポイント マネージャー 管理センター ([https://security.microsoft.com](https://security.microsoft.com)[https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で管理されるIntuneを使用して、デバイスのオンボードと管理を行います。
+(<a id="fn1">1</a>) Microsoft 365 Defender ポータル () または Microsoft エンドポイント マネージャー 管理センター ([https://security.microsoft.com](https://security.microsoft.com)[https://endpoint.microsoft.com](https://endpoint.microsoft.com)) で管理されるMicrosoft Intuneを使用して、デバイスのオンボードと管理を行います。
 
 (<a id="fn2">2</a>) Defender for Business のエンドポイント検出と応答 (EDR) 機能には、動作ベースの検出と次の手動応答アクションが含まれます。 
 - ウイルス対策スキャンの実行

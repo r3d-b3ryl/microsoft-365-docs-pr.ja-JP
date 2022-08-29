@@ -3,29 +3,29 @@ title: 機能更新プログラムの検証
 description: 機能更新プログラムの検証のためにアプリケーションをアップロードする方法の詳細
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: f6e7cfffb92f64d92a4ad68d93d1d51dccc0f4bb
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 02693d1dc9637b97d6d567a6bc362eaef24adc5d
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60206387"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315502"
 ---
 # <a name="windows-feature-update-validation"></a>Windows 機能更新プログラムの検証
 
-新しいWindows機能を検証する環境を維持せずに、Windows 10またはWindows 11の次のリリースでアプリケーションがどのように実行されるかについての分析情報が必要ですか? 
+新しい Windows 機能を検証する環境を維持せずに、Windows 10またはWindows 11の次のリリースでアプリケーションがどのように実行されるかについての分析情報が必要ですか? 
 
-Azure 環境でWindows Insider Program ビルドに対して検証テストを実行しますか?
+Azure 環境で Windows Insider Program ビルドに対して検証テストを実行しますか?
 
 M365 の Test Base での **機能更新プログラム** の検証は、これらすべてを達成するのに役立ちます。
 
@@ -39,7 +39,7 @@ Test Base for M365 の使用を開始 ```Feature update validation``` するに�
 
 ![機能更新プログラムの検証 OS の種類。](Media/Feature-update-validation-01.png)
 
-2. アプリケーションを検証するWindows Insider チャネルを選択します。  
+2. アプリケーションを検証する Windows Insider チャネルを選択します。  
 
 ![機能更新プログラムの検証。 Insider ベータ チャネルの選択。](Media/Feature-update-validation-02.png)
 
@@ -56,7 +56,7 @@ Test Base for M365 の使用を開始 ```Feature update validation``` するに�
 
 次の記事に進み、メモリ回帰分析の概要を理解します。
 > [!div class="nextstepaction"]
-> [次の手順](memory.md)
+> [次のステップ](memory.md)
 
 <!---
 Add button for next page

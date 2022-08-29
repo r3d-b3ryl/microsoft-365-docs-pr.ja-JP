@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 02/28/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: db09d1b182965c0a21945b025601c21d5100212b
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 75de203a09b27870287ec1253d2f485575d188ee
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64952910"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315528"
 ---
 # <a name="build-a-package"></a>パッケージをビルドする
 
@@ -165,7 +165,7 @@ zip パッケージをビルドした後、それを Test Base アカウント�
 
 1. VM を準備する (仮想マシン)
 
-   現在、テストごとにクリーンなWindows環境が必要であるため、このローカル テストには仮想マシンを使用することをお勧めします。 Azure 上にWindows VM を簡単に作成できます ([クイック スタート: 仮想マシンWindows](/azure/virtual-machines/windows/quick-create-portal))、テストに適したWindows バージョン (イメージ) (*Windows 10 Pro、バージョン 21H2* など) を選択できます。<br>
+   現在、テストごとにクリーンな Windows 環境が必要であるため、このローカル テストには仮想マシンを使用することをお勧めします。 Azure で Windows VM を簡単に作成できます ([クイック スタート: Windows 仮想マシン](/azure/virtual-machines/windows/quick-create-portal))、テストに適した Windows バージョン (イメージ) を選択できます (*Windows 10 Pro、バージョン 21H2 など)。*<br>
 
 2. パッケージを VM にコピーする
 

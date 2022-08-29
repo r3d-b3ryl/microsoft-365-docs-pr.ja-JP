@@ -21,12 +21,12 @@ search.appverid:
 description: AllowSelfServicePurchase PowerShell コマンドレットを使用して、セルフサービスでの購入のオンまたはオフを切り替える方法をご紹介します。
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 08/09/2022
-ms.openlocfilehash: 080b12672607301b9dcc9977c1c93ad9b48d43cd
-ms.sourcegitcommit: f72ea75c6d5c1bca0e0ed8fd228d3a84c6104361
+ms.openlocfilehash: 253353168cad22f70d63d74f0d539f5e9d8532d2
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301902"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316274"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>MSCommerce PowerShell モジュールに AllowSelfServicePurchase を使用する
 
@@ -109,10 +109,6 @@ Get-MSCommerceProductPolicies -PolicyId AllowSelfServicePurchase
 | Windows 365 Business | CFQ7TTC0J203 |
 | Windows ハイブリッド特典付き Windows 365 Business | CFQ7TTC0HX99 |
 | Microsoft 365 F3 | CFQ7TTC0LH05 |
-| Dynamics 365 Marketing | CFQ7TTC0LH3N |
-| Dynamics 365 Marketing Attach | CFQ7TTC0LHWP | 
-| Dynamics 365 Marketing の追加アプリケーション | CFQ7TTC0LHVK |
-| Dynamics 365 Marketing Additional Non-Prod Application | CFQ7TTC0LHWM |
 
 *これらの ID は変更されています。 以前に古い ID を使用して製品をブロックした場合、新しい ID を使用して製品は自動的にブロックされます。 追加の作業は必要ありません。
 

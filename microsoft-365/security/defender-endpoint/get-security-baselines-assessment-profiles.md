@@ -1,6 +1,6 @@
 ---
 title: セキュリティ ベースライン評価プロファイル
-description: "\"脅威と脆弱性の管理\" データをプルするセキュリティ ベースライン評価プロファイル API に関する情報を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。"
+description: "\"Microsoft Defender 脆弱性の管理\" データをプルするセキュリティ ベースライン評価プロファイル API に関する情報を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。"
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device Vulnerability Assessment, device vulnerability report, secure configuration Assessment, secure configuration report, secure configuration report, software Vulnerabilities assessment, software Vulnerability report, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 69f660fb355d5b93c538b92ed45b37c6cec61b9a
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f619efaa3ef258405a45bd747fa2f3e2850d0a21
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66994217"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345039"
 ---
 # <a name="list-all-security-baselines-assessment-profiles"></a>すべてのセキュリティ ベースライン評価プロファイルを一覧表示する
 
@@ -32,7 +32,7 @@ ms.locfileid: "66994217"
 - [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender 脆弱性の管理を体験しますか? [無料試用版にサインアップしてください。- 更新](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Microsoft Defender 脆弱性の管理を体験するには [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法について説明します。
 
 ## <a name="1-get-security-baselines-assessment-profiles"></a>1. セキュリティ ベースライン評価プロファイルを取得する
 
@@ -62,15 +62,15 @@ Authorization|String|ベアラー {token}。 **必須**。
 
 |プロパティ | 種類 | 説明 |
 |:---|:---|:---|
-|Id | String | 特定のベースライン プロファイルの一意の識別子。
+|ID | String | 特定のベースライン プロファイルの一意の識別子。
 |name | String | プロファイル名。
-|description | String | プロファイルの説明。
-|ベンチマーク | String | プロファイル ベンチマーク。
+|説明 | String | プロファイルの説明。
+|ベンチマーク | 文字列 | プロファイル ベンチマーク。
 |version | String | プロファイルのバージョン。
 |operatingSystem|String|適用可能なオペレーティング システムのプロファイル。
 |operatingSystemVersion|String|該当するオペレーティング システムのバージョンのプロファイル。
 |status|ブール型|プロファイルがアクティブかどうかを示します
-|complianceLevel|String|プロファイルに対して選択されたコンプライアンス レベル。
+|complianceLevel|文字列|プロファイルに対して選択されたコンプライアンス レベル。
 |settingsNumber|Int|プロファイルで選択された構成の数。
 |createdBy|String|このプロファイルを作成したユーザー。
 |lastUpdatedBy|DateTime|このプロファイルを変更する最後のユーザー。

@@ -21,12 +21,12 @@ ms.assetid: ba235f4f-e640-4360-81ea-04507a3a70be
 search.appverid:
 - MET150
 description: この記事では、PowerShell を使用してライセンスのないユーザーに Microsoft 365 ライセンスを割り当てる方法について説明します。
-ms.openlocfilehash: a336c932ca31cc145e50baaaf9c77a992f39ab33
-ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
+ms.openlocfilehash: 94c3c8dd58ed0ac424e027b30a7d83fd6dda1556
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/08/2022
-ms.locfileid: "65940384"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336158"
 ---
 # <a name="assign-microsoft-365-licenses-to-user-accounts-with-powershell"></a>PowerShell を使用してユーザー アカウントに Microsoft 365 ライセンスを割り当てる
 
@@ -34,13 +34,13 @@ ms.locfileid: "65940384"
 
 ユーザーは、アカウントにライセンス プランからライセンスが割り当てられるまで、Microsoft 365 サービスを使用できません。 PowerShell を使用すると、ライセンスのないアカウントにライセンスをすばやく割り当てることができます。 
 
-まず、ユーザー アカウントに場所を割り当てる必要があります。 場所の指定は、 [Microsoft 365 管理センター](../admin/add-users/add-users.md)で新しいユーザー アカウントを作成する際に必要な部分です。 
+まず、ユーザー アカウントに場所を割り当てる必要があります。 場所の指定は、[Microsoft 365 管理センター](../admin/add-users/add-users.md)で新しいユーザー アカウントを作成する際に必要な部分です。 
 
 オンプレミスの Active Directory Domain Services から同期されたアカウントには、既定では場所が指定されていません。 これらのアカウントの場所は、次の場所から構成できます。
 
 - Microsoft 365 管理センター
 - [PowerShell](configure-user-account-properties-with-microsoft-365-powershell.md)
-- [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **Users** > ユーザー アカウント>**プロファイル** > **連絡先情報** > **の国または地域**)。
+- [Azure portal](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal) (**Active Directory** > **ユーザー** > ユーザー アカウント>**プロファイル** > **連絡先情報** > **の国または地域**)。
 
 >[!Note]
 >Microsoft 365 管理センター[を使用してユーザー アカウントにライセンスを割り当てる方法について説明](../admin/manage/assign-licenses-to-users.md)します。 その他のリソースの一覧については、「 [ユーザーとグループの管理](/admin)」を参照してください。
@@ -50,7 +50,7 @@ ms.locfileid: "65940384"
 
 まず、[Microsoft 365 テナントに接続します](/graph/powershell/get-started#authentication)。
 
-ユーザーのライセンスを割り当てて削除するには、User.ReadWrite.All アクセス許可スコープまたは ["ライセンスの割り当て" Graph API リファレンス ページ](/graph/api/user-assignlicense)に一覧表示されている他のアクセス許可のいずれかが必要です。
+ユーザーのライセンスの割り当てと削除には、User.ReadWrite.All アクセス許可スコープまたは[「ライセンスの割り当て」Graph API参照ページ](/graph/api/user-assignlicense)に一覧表示されている他のアクセス許可のいずれかが必要です。
 
 テナントで使用可能なライセンスを読み取るには、Organization.Read.All アクセス許可スコープが必要です。
 
@@ -66,6 +66,11 @@ Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 Get-MgUser -Filter 'assignedLicenses/$count eq 0' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All
 ```
 
+組織内のライセンスのない同期されたユーザーを見つけるには、このコマンドを実行します。
+
+```powershell
+Get-MgUser -Filter 'assignedLicenses/$count eq 0 and OnPremisesSyncEnabled eq true' -ConsistencyLevel eventual -CountVariable unlicensedUserCount -All -Select UserPrincipalName
+```
 **UsageLocation** プロパティが有効な ISO 3166-1 alpha-2 国コードに設定されているユーザー アカウントにのみライセンスを割り当てることができます。 たとえば、米国は US、フランスは FR です。 一部の Microsoft 365 サービスは、特定の国では利用できません。 詳細については、「 [ライセンス制限について](https://go.microsoft.com/fwlink/p/?LinkId=691730)」を参照してください。
 
 **UsageLocation** 値を持たないアカウントを検索するには、このコマンドを実行します。
@@ -99,14 +104,14 @@ Update-MgUser -UserId "belindan@litwareinc.com" -UsageLocation US
 Set-MgUserLicense -UserId $userUPN -AddLicenses @{SkuId = "<SkuId>"} -RemoveLicenses @()
 ```
 
-この例では、 **SPE_E5** (Microsoft 365 E5) ライセンス プランのライセンスをライセンスのないユーザー **の belindan\@litwareinc.com** に割り当てます。
+この例では、**SPE_E5** (Microsoft 365 E5) ライセンス プランのライセンスをライセンスのないユーザー **の belindan\@litwareinc.com** に割り当てます。
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
 Set-MgUserLicense -UserId "belindan@litwareinc.com" -AddLicenses @{SkuId = $e5Sku.SkuId} -RemoveLicenses @()
 ```
 
-この例では、 **SPE_E5** (Microsoft 365 E5) と **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) をユーザー **の belindan\@litwareinc.com** に割り当てます。
+この例では、**SPE_E5** (Microsoft 365 E5) と **EMSPREMIUM** (ENTERPRISE MOBILITY + SECURITY E5) をユーザー **の belindan\@litwareinc.com** に割り当てます。
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
@@ -119,7 +124,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-この例では、**MICROSOFTBOOKINGS (Microsoft Bookings**) サービスと **LOCKBOX_ENTERPRISE** (Customer Lockbox) サービスがオフになっている **SPE_E5** (Microsoft 365 E5) を割り当てます。
+この例 **では、****MICROSOFTBOOKINGS** (Microsoft Bookings) サービスとLOCKBOX_ENTERPRISE (Customer Lockbox) サービスがオフになっている **SPE_E5 (Microsoft 365 E5**) を割り当てます。
   
 ```powershell
 $e5Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E5'
@@ -137,7 +142,7 @@ $addLicenses = @(
 Set-MgUserLicense -UserId "belinda@litwareinc.com" -AddLicenses $addLicenses -RemoveLicenses @()
 ```
 
-この例では **、SPE_E5** (Microsoft 365 E5) を使用してユーザーを更新し、ユーザーの既存の無効なプランを現在の状態のままにしたまま、Sway および Forms サービス プランをオフにします。
+次の使用例は **、SPE_E5** (Microsoft 365 E5) を使用してユーザーを更新し、ユーザーの既存の無効なプランを現在の状態のままにしたまま、Swayと Forms サービス プランをオフにします。
   
 ```powershell
 $userLicense = Get-MgUserLicenseDetail -UserId "belinda@fdoau.onmicrosoft.com"
@@ -173,7 +178,7 @@ Set-MgUserLicense -UserId "jamesp@litwareinc.com" -AddLicenses $mgUser.AssignedL
 
 ### <a name="move-a-user-to-a-different-subscription-license-plan"></a>ユーザーを別のサブスクリプションに移動する (ライセンス プラン)
 
-この例では、 **SPE_E3** (Microsoft 365 E3) ライセンス プランから **SPE_E5** (Microsoft 365 E5) ライセンス プランにユーザーをアップグレードします。
+次の使用例は、**SPE_E3** (Microsoft 365 E3) ライセンス プランから **SPE_E5** (Microsoft 365 E5) ライセンス プランにユーザーをアップグレードします。
 
 ```powershell
 $e3Sku = Get-MgSubscribedSku -All | Where SkuPartNumber -eq 'SPE_E3'
@@ -284,7 +289,7 @@ Set-MsolUser -UserPrincipalName "belindan@litwareinc.com" -UsageLocation US
 Set-MsolUserLicense -UserPrincipalName "<Account>" -AddLicenses "<AccountSkuId>"
 ```
 
-この例では、 **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンス プランからライセンスのないユーザー **の belindan\@litwareinc.com** にライセンスを割り当てます。
+この例では、**litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンス プランからライセンスのないユーザー **belindan\@litwareinc.com** にライセンスを割り当てます。
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName "belindan@litwareinc.com" -AddLicenses "litwareinc:ENTERPRISEPACK"
@@ -300,7 +305,7 @@ Get-MsolUser -All -UnlicensedUsersOnly [<FilterableAttributes>] | Set-MsolUserLi
 >複数のライセンスを同じライセンス プランのユーザーに割り当てることはできません。 十分な数の利用可能なライセンスをお持ちでない場合は、使用可能なライセンスがなくなるまで、ライセンスは **Get-MsolUser** コマンドレットによって返される順序でユーザーに割り当てられます。
 >
 
-この例では、 **litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンス プランのライセンスをライセンスのないすべてのユーザーに割り当てます。
+この例では、**litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) ライセンス プランのライセンスをライセンスのないすべてのユーザーに割り当てます。
   
 ```powershell
 Get-MsolUser -All -UnlicensedUsersOnly | Set-MsolUserLicense -AddLicenses "litwareinc:ENTERPRISEPACK"

@@ -1,7 +1,7 @@
 ---
 title: ID でソフトウェアを取得する
 description: ID でソフトウェアの詳細の一覧を取得します。
-keywords: apis, graph api, サポートされている API, get, software, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, サポートされている API, get, software, Microsoft Defender for Endpoint tvm api, mdvm, Microsoft Defender 脆弱性の管理
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0f5749fcb98253feda4bec1dde08f7765227f676
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 25875a0be2a632ae0d0d02a8633757216a8bcb2f
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301908"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344835"
 ---
 # <a name="get-software-by-id"></a>ID でソフトウェアを取得する
 
@@ -41,7 +41,7 @@ ID でソフトウェアの詳細を取得します。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[エンドポイント API に Microsoft Defender を使用する](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
@@ -98,5 +98,5 @@ GET https://api.securitycenter.microsoft.com/api/Software/microsoft-_-edge
 
 ## <a name="related-topics"></a>関連項目
 
-- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&脆弱性ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender の脆弱性管理ソフトウェア インベントリ](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

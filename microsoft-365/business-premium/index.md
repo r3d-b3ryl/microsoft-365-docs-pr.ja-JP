@@ -9,7 +9,7 @@ ms.audience: Admin
 ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: high
-ms.date: 08/09/2022
+ms.date: 08/24/2022
 ms.collection:
 - M365-Campaigns
 - m365solution-overview
@@ -21,18 +21,18 @@ search.appverid:
 - BCS160
 - MET150
 description: Microsoft 365 Business Premiumを使用して中小企業にサイバーセキュリティを実装する方法について説明します。 サイバーセキュリティの機能と機能は、サイバー攻撃やセキュリティ侵害を防ぐために最適化され、高度なサイバー防御を使用してデータ、デバイス、情報を保護するのに役立ちます。
-ms.openlocfilehash: e046ebbf6e3609f1f5b13c89cad4261dab8da879
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 799f491f99143df2e12d7852bb6e6bf28d3e70b5
+ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300741"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67433578"
 ---
 # <a name="microsoft-365-business-premium--productivity-and-cybersecurity-for-small-business"></a>Microsoft 365 Business Premium – 小規模ビジネスの生産性とサイバーセキュリティ
 
-まず、Microsoft 365 Business Premiumとその世界クラスの生産性ツールを採用する際に賢明な選択をしたとしましょう。 サイバーセキュリティを念頭に置いて設計Microsoft 365 Business Premium、データ、デバイス、情報を保護します。 あなたは、ランダムな個人、組織犯罪、高度な国家を含む、ハッカーやサイバー攻撃に対する組織の最初かつ最高の防御です。
+世界クラスの生産性ツールを使用したMicrosoft 365 Business Premiumは、中小企業にとって賢明な選択肢です。 サイバーセキュリティを念頭に置いて設計Microsoft 365 Business Premium、データ、デバイス、情報を保護します。 あなたは、ランダムな個人、組織犯罪、高度な国家を含む、ハッカーやサイバー攻撃に対する組織の最初かつ最高の防御です。
 
-この作業を行う前に、組織の将来Microsoft 365 Business Premiumセキュリティ保護に役立てましょう。 次のミッションを実行して、このタスクにアプローチします。 
+この作業を行う前に、組織の将来Microsoft 365 Business Premiumセキュリティ保護に役立てましょう。 次の 6 つのミッションを実行して、このタスクに取り組みます。 
 
 :::image type="content" source="media/sixmissions.png" alt-text="6 つのミッションを示す図。":::
 
@@ -49,7 +49,7 @@ ms.locfileid: "67300741"
 
 ## <a name="cybersecurity-playbook"></a>サイバーセキュリティプレイブック
 
-これらのミッションのガイダンスは、信頼ゼロの手法に基づいており、ビジネスが「ザ・ビジネス」で説明されている目標を達成するのに役立[ちます。](https://go.microsoft.com/fwlink/p/?linkid=2015598) 概要をダウンロードできます ([こちらから PDF を入手](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)してください)。
+これらのミッションのガイダンスは、[ゼロ トラストセキュリティ モデル](../security/office-365-security/microsoft-365-policies-configurations.md)に基づいており、ダウンロード可能な[サイバーセキュリティ プレイブック](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)) にまとめられています。
 
 [:::image type="content" source="media/m365bp-cyber-security-playbook.png" alt-text="サイバーセキュリティプレイブック。このガイドをダウンロードします。":::](https://download.microsoft.com/download/9/c/1/9c167271-8209-492e-acc2-38a39d1834c2/m365bp-cybersecurity-playbook.pdf)
 

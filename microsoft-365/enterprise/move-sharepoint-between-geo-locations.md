@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 description: SharePoint サイトを複数地域環境内の別の地域の場所に移動し、変更に対する期待をユーザーに伝える方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a72c98cf2c4f71c9812af5aef01adc93777d5ccf
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: adb80e3c1f08d5f99e593e5592a1065e2829e3e6
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306308"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67369993"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>別の地域の場所に SharePoint サイトを移動する
 
@@ -229,4 +229,6 @@ Power Apps は、移行先の場所に再作成する必要があります。
 
 ### <a name="data-movement-between-geo-locations"></a>ジオ位置情報間のデータ移動
 
-SharePoint にサイトとそのファイルに関連付けられているメタデータが保存されている場合は、コンテンツの Azure Blob ストレージを使用します。 その元のジオ位置情報から移動先のジオ位置情報へ移動後、サービスも関連付けられている Blob ストレージへ移動します。 BLOB ストレージは約40日で移動を完了します。
+SharePoint はコンテンツにAzure Blob Storageを使用しますが、サイトとそのファイルに関連付けられているメタデータは SharePoint 内に格納されます。 その元のジオ位置情報から移動先のジオ位置情報へ移動後、サービスも関連付けられている Blob ストレージへ移動します。 BLOB ストレージは約40日で移動を完了します。 これにより、ユーザーがデータと対話しても影響はありません。 
+
+[Get-SPOCrossGeoMoveReport](/powershell/module/sharepoint-online/get-spocrossgeomovereport) コマンドレットを使用して、Blob Storage の移動状態を確認できます。 

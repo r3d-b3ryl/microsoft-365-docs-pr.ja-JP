@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 0c5dd2cc372ad1d8e37713360561f41be9b05209
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66994708"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432399"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>現場担当者向けの Microsoft 365 のシナリオを選択する
 
@@ -34,7 +34,7 @@ ms.locfileid: "66994708"
 
 ## <a name="communications"></a>コミュニケーション
 
-:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png"::: 
+:::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 コミュニケーション ソリューションは、現場担当者同士を繋ぎ、お互い、組織内の他のユーザー、および顧客と共同作業できるようにします。
 
@@ -47,7 +47,7 @@ ms.locfileid: "66994708"
 
 ## <a name="wellbeing--engagement"></a>ウェルビーイング & エンゲージメント
 
-:::image type="icon" source="/office/media/icons/heart-teams.png"::: 
+:::image type="icon" source="/office/media/icons/heart-teams.png":::
 
 従業員が組織全体と関わるのを支援することで、現場の従業員に属する感覚を養います。
 
@@ -59,18 +59,18 @@ ms.locfileid: "66994708"
 
 ## <a name="training--onboarding"></a>トレーニング & オンボード
 
-:::image type="icon" source="/office/media/icons/files-teams.png"::: 
+:::image type="icon" source="/office/media/icons/files-teams.png":::
 
 従業員の継続的な成長を促進し、知識の共有と交換を促進します。
 
 | シナリオ | 説明 | サービス | Teams アプリ |
 | --- | --- | --- |--- |
 | [新しい従業員のオンボード](flw-onboarding-training.md) | 新入社員が重要なリソースを見つけ、組織内の人々と出会い、新しい職務で成功するための準備をすることができるオールインワンのハイブリッドな職場環境を醸成することにより、新入社員のオンボーディングを素晴らしいエクスペリエンスにします。| SharePoint <br> Viva ラーニング <br> Viva コネクション <br> Yammer | リスト <br>ライブ会議 |
-| [継続的なスタッフ トレーニング](flw-onboarding-training.md#ongoing-training) | オンボーディングが完了したら、Viva ラーニングの継続的なトレーニングで従業員のスキルを最新の状態に保つように支援します。 | SharePoint <br> Viva ラーニング <br> Viva コネクション | |
+| [継続的なスタッフ トレーニング](flw-onboarding-training.md#ongoing-training) | オンボーディングが完了したら、Viva ラーニングの継続的なトレーニングで従業員のスキルを最新の状態に保つように支援します。 | SharePoint <br> Viva ラーニング <br> Viva コネクション <br> Yammer| |
 
 ## <a name="schedule-management"></a>スケジュール管理
 
-:::image type="icon" source="/office/media/icons/calendar-teams.png"::: 
+:::image type="icon" source="/office/media/icons/calendar-teams.png":::
 
 フロントラインの従業員とのスケジュール調整を簡素化し、合理化します。 スケジュールを可視化し、カバーと退出の手配を可能にします。
 
@@ -80,7 +80,7 @@ ms.locfileid: "66994708"
 
 ## <a name="digitized-processes"></a>デジタル化されたプロセス
 
-:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png"::: 
+:::image type="icon" source="/office/media/icons/task-checklist-planning-teams.png":::
 
 紙ベースのプロセスをデジタル化し、ルーチンの繰り返しステップを自動化することで、運用効率を高めます。
 
@@ -91,11 +91,21 @@ ms.locfileid: "66994708"
 
 ## <a name="virtual-appointments"></a>仮想予定
 
-:::image type="icon" source="media/virtual-appointment-teams.png"::: 
+:::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Microsoft Bookings と Microsoft Teams を使用して、クライアントや顧客と仮想予定をスケジュールし、ホストします。 フォームと仮想予定エクスペリエンスを統合して、顧客に関する適切な情報を取得したり、カスタマー サポート エクスペリエンスの一部として顧客が必要としているものを学習したりできます。
 
 詳細情報: [Microsoft Teams と Bookings アプリを使用した仮想予定](bookings-virtual-visits.md)
+
+## <a name="help-your-team-clients-and-customers"></a>チーム、クライアント、および顧客を支援する
+
+Teams アプリと機能を使い慣れるためにチームと共有するリソースを見つけます。 カスタマイズ可能なインフォグラフィックと Web コンテンツを入手して、クライアントと顧客が組織で仮想予定を使用できるようにします。
+
+| シナリオ | 説明 |
+| --- | --- |
+|[クライアントと顧客が仮想予定を使用できるようにする](virtual-appointments-toolkit.md) |カスタマイズ可能なインフォグラフィックと FAQ を Web サイトに追加して、クライアントが組織で仮想予定を簡単に使用できるようにします。 |
+|[現場のワーカーが時間と出席を追跡するのに役立つ](shifts-toolkit.md) |フロントライン マネージャーと従業員が Microsoft Teams で Shifts を使用する方法について学習するのに役立つビデオ。 |
+|[現場のワーカーがコラボレーション アプリと機能を使用できるように支援する](collab-features-apps-toolkit.md) |現場チームが Microsoft Teams のアプリと機能を使用するのに役立つビデオ。 |
 
 ## <a name="more-scenarios-and-solutions-with-the-digital-ecosystem"></a>デジタル エコシステムを使用したその他のシナリオとソリューション
 

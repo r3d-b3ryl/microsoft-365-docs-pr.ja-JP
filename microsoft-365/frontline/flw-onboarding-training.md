@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 2bcffb08fa45d486a091f02c7bd1813c3dad5b57
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: ea44b6f9bddea605cf20254124c634d9a4b8fe3b
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66994697"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67384300"
 ---
 # <a name="provide-initial-and-ongoing-training-to-help-onboard-your-frontline-workers"></a>現場担当者のオンボーディングに役立つ初期トレーニングと継続的なトレーニングを提供する
 
@@ -81,6 +81,8 @@ Viva Suite または Viva ラーニング ライセンスがあり、組織が 1
 フロントライン チームが、Viva ラーニングで利用可能で必要なトレーニングを把握していることを確認します。
 
 マネージャーは、必要なトレーニングが完了していることを確認するために、チームに[学習コンテンツを推奨](https://support.microsoft.com/office/recommend-and-manage-content-in-viva-learning-77f9dcbf-41a8-4b19-b4d1-b99c406f37b8)できます。
+
+![Viva ラーニング カードを含むViva コネクション ダッシュボードのスクリーンショット。](media/viva-learning-card-mobile.png) 
 
 企業コミュニケーション スペシャリストは、[Viva コネクション](/viva/connections/viva-connections-overview)を使用して、新しい学習機会や必要なトレーニングを強調する SharePoint ニュース投稿を配布できます。
 

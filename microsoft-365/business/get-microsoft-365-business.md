@@ -25,22 +25,22 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Microsoft 365 Business Premiumを購入するためのオプションと、Microsoft パートナー センターから購入するための詳細な手順について説明します。
-ms.openlocfilehash: f22fc831cb52e23a61e64950a2b9396d85a15dca
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 98e3253002681721d888363d6ce984bd6eeb2c09
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60175661"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343701"
 ---
 # <a name="get-microsoft-365-business-premium"></a>Microsoft 365 Business Premium を取得する
 
 ## <a name="get-microsoft-365-business-premium-from-microsoft"></a>Microsoft からMicrosoft 365 Business Premiumを取得する
 
-パートナーがいなくて、Microsoft 365 Business Premiumを取得したい場合は、[ここで購入](https://www.microsoft.com/en-US/microsoft-365/business)できます。
+パートナーがいなくて、Microsoft 365 Business Premiumを取得したい場合は、[ここで購入](https://www.microsoft.com/microsoft-365/business)できます。
 
 詳細な手順については、[Microsoft 365 Business Premiumのサインアップ](sign-up.md)に関するページを参照してください。
 
-Microsoft Storeに進んで[Microsoft 365 Business Premium](https://www.microsoft.com/en-us/store/locations/find-a-store?icid=en_US_Store_UH_FAS)を購入し、セットアップのヘルプを受けることもできます。
+[Microsoft Store](https://www.microsoft.com/store/locations/find-a-store?icid=en_US_Store_UH_FAS) に移動して、Microsoft 365 Business Premiumを購入し、セットアップのヘルプを受けることもできます。
   
 ## <a name="get-microsoft-365-business-premium-from-microsoft-partner-center"></a>Microsoft パートナー センターからMicrosoft 365 Business Premiumを取得する
 

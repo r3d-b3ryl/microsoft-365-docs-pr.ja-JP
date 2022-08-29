@@ -22,12 +22,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 07471ac0d253df36f60882bd551769fe2868e195
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: a2c354b575436d93713bb2487c35f2dca6807f19
+ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66994812"
+ms.lasthandoff: 08/25/2022
+ms.locfileid: "67432377"
 ---
 # <a name="frontline-team-collaboration"></a>フロントライン チームのコラボレーション
 
@@ -44,7 +44,7 @@ Teams には、以下のようなコミュニケーションや情報共有の�
 
 |タスク |説明 |この機能の管理 |エンドユーザー トレーニング |
 |-----|------------|-----------------------|------------------|
-|チャット、メッセージの投稿、そしてコミュニケーション |フロントラインの作業者は、個々のチャット メッセージングやチャネル チャット メッセージングを使用して、場所の中、または場所間で区分けなく会話できます。 Teams は組織に対して、優れた導入コラボレーション エクスペリエンスを提供し、ほとんどの組織は既定の設定がお誂え向きであることに気が付きます。 |[チャット、チーム、チャネル、アプリを管理します](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page)。 | [チャットを開始](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) し、[投稿やメッセージと共に仕事をしましょう](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885)。 |
+|チャット、メッセージの投稿、そしてコミュニケーション |フロントラインの作業者は、個々のチャット メッセージングやチャネル チャット メッセージングを使用して、場所の中、または場所間で区分けなく会話できます。 Teams は組織に対して、優れた導入コラボレーション エクスペリエンスを提供し、ほとんどの組織は既定の設定がお誂え向きであることに気が付きます。 |[チャット、チーム、チャネル、アプリを管理します](/microsoftteams/deploy-chat-teams-channels-microsoft-teams-landing-page)。 | [チャットを開始](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5) し、[投稿やメッセージと共に仕事をしましょう](https://support.microsoft.com/office/create-and-format-a-post-e66777da-636b-49eb-9408-b0d88b212885)。 [Microsoft Teams のタグのビデオをご覧ください](https://go.microsoft.com/fwlink/?linkid=2202727)。 |
 |チーム メンバーと通話して会議を行う |マネージャーは、個々の会議を設定したり、チャネル会議を使用して毎日の会議を管理でき、その両方で Teams のオーディオ、ビデオ、画面共有、記録、文字起こし機能を使用できます。 会議とカンファレンスの設定を構成し、音声ソリューションで通話を使用できるようにする必要があります。 |[Teams で通話と会議を管理する](/microsoftteams/deploy-meetings-microsoft-teams-landing-page)、そして [Teams 音声ソリューションを計画する](/microsoftteams/cloud-voice-landing-page) |[通話の発信](https://support.microsoft.com/office/overview-of-teams-calls-425d6970-6e27-47b6-bc61-4c38fff51c4f)と[会議への参加](https://support.microsoft.com/office/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4) |
 |ファイルやドキュメントの保管と共有 |ファイル共有により、店舗のスタッフは、売り場を離れたり、マネージャーのサポートを受けたりすることなく、販売図などの情報に簡単にアクセスできます。 すべてのチームに自動的に [ファイル] タブが用意され、ドキュメントの保存や共有に使用できます。 このタブは実際のところ、SharePoint の既定のチーム サイト ドキュメント ライブラリ内のフォルダーを表し、そのフォルダーは、チームの作成時に自動的に作成されます。 |[Teams と SharePoint の統合の概要](/sharepoint/teams-connected-sites) |[ファイルをアップロードして共有する](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12) |
 
@@ -84,13 +84,19 @@ Teams には、以下のようなコミュニケーションや情報共有の�
 > [!TIP]
 > 金融サービス、医療、非営利団体、小売業界の例が示されていますが、これらのアプリは、どの機関の組織でも使用できます。
 
+Teams でコラボレーション アプリと機能を使用できるように、チームと共有する[ビデオとリソースを表示](collab-features-apps-toolkit.md)します。
+
 ### <a name="create-manage-and-share-schedules-with-shifts"></a>シフトを使用してスケジュールを作成、管理、共有する
 
 シフトを使用して、スケジュールをシームレスに管理および共有します。 マネージャーは、キャッシュ、看護師、住宅ローンスペシャリストなどのカスタム グループを作成し、従業員にシフトを割り当て、カスタム ラベル付けと休憩を追加し、従業員が取得をリクエストできるオープン シフトを追加できます。 従業員はシフトを使用して、空き時間の設定、スケジュールの表示、同僚とのシフトの交換、出勤と退勤を行うことができます。マネージャーは、従業員が希望できるオープン シフトを作成することもできます。 たとえば、非営利団体のボランティア コーディネーターは、ボランティアが取得を希望できるオープン シフトを作成できます。
 
-[あなたの組織のシフトを管理する方法について説明します](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)。
+[組織のシフトを管理する](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)方法について説明します。
+
+[シフトを使用して従業員が時間と出席を追跡するのに役立つ](shifts-toolkit.md)方法について説明します。
 
 この [シフトのビデオ トレーニング](https://support.microsoft.com/office/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821)をユーザーと共有します。
+
+[ビデオやリソースを表示](shifts-toolkit.md) してチームと共有し、Shifts で機能を使用するのに役立ちます。
 
 ### <a name="keep-in-touch-with-walkie-talkie"></a>トランシーバーで連絡を取り合う
 
@@ -103,9 +109,11 @@ Teams には、以下のようなコミュニケーションや情報共有の�
 |金融サービス |顧客とローンの選択について相談に応じている銀行の従業員は、トランシーバーを使用してローンの専門家に相談し、顧客に最適な選択を決定できます。 |
 |製造 |技術者は、機器のメンテナンスや修理を行っている間に、トランシーバーを使用して別の場所の専門家に相談できます。 |
 
-[組織でトランシーバーを管理する方法について説明します](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)。
+[組織の Walkie Talkie を管理する](/microsoftteams/walkie-talkie?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)方法について説明します。
 
 この[トランシーバーのビデオ トレーニング](https://support.microsoft.com/office/use-walkie-talkie-in-teams-884a008a-761e-4b62-99f8-15671d9a2f69)をユーザーと共有します。
+
+[Walkie Talkie featurette ビデオをご覧ください](https://go.microsoft.com/fwlink/?linkid=2202710)。
 
 ### <a name="boost-morale-with-praise"></a>称賛とともにモラルを醸成する
 
@@ -116,15 +124,15 @@ Teams には、以下のようなコミュニケーションや情報共有の�
 |小売 |ストア マネージャーは、売上目標を達成した担当者に **凄い** バッジを送信できます。 |
 |医療 |医療従事者は、患者に献身的なケアを施す同僚に、**優しいハート** バッジを送信できます。 |
 |金融サービス |銀行マネージャーは、重要クライアントとの繋がりを維持するリレーションシップ マネージャーに **達成者** バッジを送信できます。 |
-|製造 |スーパーバイザーは、チームの業績が良い職長に **リーダーシップ** バッジを送信できます。 |
+|製造 |上司は、チームの業績が良い職長に **リーダーシップ** バッジを送信できます。 |
 
-[組織の称賛アプリを管理する方法について説明します](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)。
+[組織の Praise アプリを管理する](/microsoftteams/manage-praise-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)方法について説明します。
 
 この [称賛のビデオ トレーニング](https://support.microsoft.com/office/communication-and-praise-7d37ef80-542b-42e5-aa01-0fabbaa634b6) をユーザーと共有します。
 
 ### <a name="track-and-monitor-work-with-tasks"></a>タスクで、作業を追跡し監視する
 
-Teams のタスクを使用して、リテール チーム全体の To Do アイテムを追跡します。 店舗の経営陣と従業員は、Teams を実行しているどのデバイスからでも、タスクの作成、割り当て、タスクのスケジュール設定、タスクの分類、および状態の更新をいつでも行うことができます。 IT プロフェッショナルと IT 管理者は、組織の特定のチームに対してタスクを発行することもできます。 たとえば、毎日の清掃や新しい展示の設定手順に関する一連のタスクを公開できます。
+Teams のタスクを使用して、フロントライン チーム全体の To Do アイテムを追跡します。 店舗の経営陣と従業員は、Teams を実行しているどのデバイスからでも、タスクの作成、割り当て、タスクのスケジュール設定、タスクの分類、および状態の更新をいつでも行うことができます。 IT プロフェッショナルと IT 管理者は、組織の特定のチームに対してタスクを発行することもできます。 たとえば、毎日の清掃や新しい展示の設定手順に関する一連のタスクを公開できます。
 
 |業界 |例 |
 |:--------|:-------|
@@ -133,9 +141,11 @@ Teams のタスクを使用して、リテール チーム全体の To Do アイ
 |金融サービス |銀行マネージャーは、住宅ローン スペシャリストに、新しい利率やポリシーをレビューして親しみを得るためのタスクを割り当てることができます。 |
 |製造 |スーパーバイザーは、新製品のバッチを検査するタスクを作業員に割り当てることができます。 |
 
-[組織のタスク アプリを管理する方法について説明します](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)。
+[組織のタスク アプリを管理する](/microsoftteams/manage-tasks-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)方法について説明します。
 
 この[タスクのビデオ トレーニング](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070)をユーザーと共有します。
+
+タスク機能のビデオをご覧 [ください](https://go.microsoft.com/fwlink/?linkid=2202616)。
 
 ### <a name="streamline-approvals-with-approvals"></a>承認を使用して手続きを合理化する
 
@@ -148,9 +158,11 @@ Teams のタスクを使用して、リテール チーム全体の To Do アイ
 |金融サービス |融資の専門家は、特別な利益の利率を提供するために、スーパーバイザーに承認リクエストを送信できます。 |
 |製造 |機械オペレーターは、機器の部品の設定を調整するために、承認リクエストを送信できます。 |
 
-[組織における承認アプリを管理する方法について説明します](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)。
+[組織の承認アプリを管理する](/microsoftteams/approval-admin?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)方法について説明します。
 
 この [承認のビデオ トレーニング](https://support.microsoft.com/office/what-is-approvals-a9a01c95-e0bf-4d20-9ada-f7be3fc283d3?wt.mc_id=otc_microsoft_teams)をユーザーと共有します。
+
+[承認機能のビデオをご覧ください](https://go.microsoft.com/fwlink/?linkid=2202800)。
 
 ### <a name="check-in-on-progress-with-updates"></a>更新の進行中にチェックイン
 
@@ -163,9 +175,11 @@ Microsoft Teams アプリの更新プログラムは、組織のメンバーが�
 |金融サービス |銀行マネージャーは、朝点呼者が確認するための毎日のテンプレートを作成して割り当てることができます。 |
 |製造 |スーパーバイザーは、新製品の製造バッチの進捗状況を追跡するために、テンプレートを作成して割り当てることができます。 |
 
-[組織の更新アプリを管理する方法について説明します](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)。
+[組織の更新 アプリを管理する](/microsoftteams/manage-updates-app?bc=/microsoft-365/frontline/breadcrumb/toc.json&toc=/microsoft-365/frontline/toc.json)方法について説明します。
 
 この[更新のビデオ トレーニング](https://support.microsoft.com/office/get-started-in-updates-c03a079e-e660-42dc-817b-ca4cfd602e5a)をユーザーと共有します。
+
+[更新 featurette ビデオ](https://go.microsoft.com/fwlink/?linkid=2202831)をご覧ください。
 
 ## <a name="set-up-your-teams-channels-and-apps"></a>チーム、チャネル、アプリを設定する
 
@@ -187,6 +201,23 @@ Microsoft Teams アプリの更新プログラムは、組織のメンバーが�
 アプリを使用してチームの機能を絞り込みます。 Microsoft Teams 管理センターで、組織のアプリの許可またはブロックを行ったり、アプリの設定を構成したりすることができます。 アプリの管理に関する詳細については、「[Microsoft Teams 管理センターでチームを管理する](/microsoftteams/manage-apps)」を参照してください。
 
 ユーザーは、自分が許可したアプリをチームに追加できます。 このトレーニングをユーザーと共有して、以下の方法を示します: [アプリの検索と利用](https://support.microsoft.com/office/find-and-use-apps-6e22a734-c002-4da0-ba63-681f155b142d)。
+
+
+### <a name="use-viva-connections-to-create-a-personalized-experience"></a>Viva コネクションを使用してパーソナライズされたエクスペリエンスを作成する
+
+Viva コネクションは [Microsoft Viva スイート](/viva/microsoft-viva-overview)の一部であり、Teams でパーソナライズされたランディング エクスペリエンスを作成できます。 
+
+![モバイル デバイス上のViva コネクション ダッシュボードのスクリーンショット。](media/flw-shifts-praise-tasks-approvals.png)
+
+
+Viva コネクション ダッシュボードを使用し、Shifts、Tasks、approvals カードを追加します。 カードは、Teams のシフト、タスク、承認アプリに接続されます。 カード内のコンテンツは動的であり、ユーザーに合わせてカスタマイズされます。 
+
+[Viva コネクションを取得する方法と、Viva コネクション](/viva/connections/viva-connections-overview) [ダッシュボードを作成する方法](/viva/connections/create-dashboard)について説明します。 
+
+
+
+
+
 
 ## <a name="learn-more-about-teams-capabilities-for-specific-industries"></a>特定業界向けの Teams の機能の詳細を確認する
 

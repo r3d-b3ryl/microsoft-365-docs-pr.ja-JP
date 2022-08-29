@@ -19,12 +19,12 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: 国際銀行口座番号 (IBAN) の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 739c0a1fd90da1da817f46019cd1023be8ab27a3
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 016196af1d36c3d246d275848f7339a74d0878a2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996702"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322345"
 ---
 # <a name="international-banking-account-number-iban"></a>国際銀行口座番号 (IBAN)
 
@@ -41,7 +41,7 @@ ms.locfileid: "66996702"
 - 4 文字または数字の 1 ~ 7 グループ (スペースで区切ることができます)
 - 1 ～ 3 個の文字または数字
 
-各国の形式は若干異なります。 IBAN の機密情報の種類は、次の 60 か国を対象とします。
+各国の形式は若干異なります。 IBAN の機密情報の種類は、次の 68 か国を対象とします。
 
 - ad
 - Ae
@@ -52,6 +52,7 @@ ms.locfileid: "66996702"
 - be
 - bg
 - Bh
+- br
 - Ch
 - Cr
 - cy
@@ -69,12 +70,14 @@ ms.locfileid: "66996702"
 - Gi
 - gl
 - Gr
+- gt
 - hr
 - hu
 - Ie
 - イリノイ
 - is
 - it
+- ジョー
 - Kw
 - カザフスタン
 - lb
@@ -90,9 +93,12 @@ ms.locfileid: "66996702"
 - mt
 - Mu
 - nl
-- no
+- いいえ
+- Pk
 - pl
+- ps
 - pt
+- Qa
 - ro
 - Rs
 - Sa
@@ -100,9 +106,12 @@ ms.locfileid: "66996702"
 - si
 - sk
 - Sm
+- tl
 - テネシー
 - tr
 - Vg
+- Xk
+
 
 ## <a name="checksum"></a>チェックサム
 
@@ -110,7 +119,7 @@ ms.locfileid: "66996702"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_iban` がパターンに一致するコンテンツを検出した。
 - チェックサムが渡される。

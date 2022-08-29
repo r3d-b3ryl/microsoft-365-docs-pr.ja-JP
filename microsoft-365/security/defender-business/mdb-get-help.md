@@ -9,26 +9,33 @@ ms.topic: article
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.collection:
 - SMB
 - M365-security-compliance
 search.appverid: MET150
 ms.reviewer: shlomiakirav
 description: Defender for Business に関する問題がある場合は、ヘルプを受けるか、サポートにお問い合わせください。
-ms.openlocfilehash: 69b8dfcf2404e37e031a6899e8a855ee77199788
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 665235243b46f324019813f487f8a883de70f9bf
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66771037"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319543"
 ---
 # <a name="get-help-and-support-for-microsoft-defender-for-business"></a>Microsoft Defender for Businessのヘルプとサポートを受ける
 
 ## <a name="get-help-and-support"></a>ヘルプとサポートを利用する
 
-Defender for Business のヘルプが必要な場合は、画面の右上隅にあるヘルプ アイコン (?) を選択します。 質問または問題を入力します。 クイック 回答やヘルプ記事など、いくつかのオプションが一覧表示されます。
+1. Defender for Business のヘルプが必要な場合は、画面の右上隅にあるヘルプ アイコン (?) を選択します。 
 
-質問に対する回答が表示されない場合は、サポート チケットを開くことができます。 [サポートの取得に関する](../../admin/get-help-support.md)参照
+2. 次のスクリーンショットに示すように、質問または問題を入力し、青い矢印を選択します。 
+
+   :::image type="content" source="media/help-pane.png" alt-text="デバイスを追加する方法に関する質問があるヘルプ ウィンドウのスクリーンショット。":::
+
+   クイック 回答やヘルプ記事など、いくつかのオプションが一覧表示されます。
+
+3. 結果の一覧で項目を選択します。 質問に対する回答が表示されない場合は、ポップアップ ウィンドウの下部にある **[サポートにお問い合わせ** ] を選択します。 詳細については、「[サポートを受ける](../../admin/get-help-support.md)」を参照してください。
 
 
 ## <a name="see-also"></a>関連項目

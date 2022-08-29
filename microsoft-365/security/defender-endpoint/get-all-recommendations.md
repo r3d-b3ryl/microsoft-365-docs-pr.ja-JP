@@ -1,7 +1,7 @@
 ---
 title: すべての推奨事項を一覧表示する
 description: 組織に影響を与えるすべてのセキュリティに関する推奨事項の一覧を取得します。
-keywords: apis, graph api, サポートされている api, get, security recommendations, Microsoft Defender for Endpoint tvm api, 脅威と脆弱性の管理, 脅威と脆弱性の管理 api
+keywords: apis, graph api, サポートされている api, get, security recommendations, Microsoft Defender for Endpoint tvm api, 脅威と脆弱性の管理, 脅威と脆弱性の管理 api, mdvm
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 727b20e6784016aac423a74c6b564fa96d6f5733
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: c420d73326cc9965f0b4a5d57af5adba83c30f1d
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301932"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343089"
 ---
 # <a name="list-all-recommendations"></a>すべての推奨事項を一覧表示する
 
@@ -46,8 +46,8 @@ ms.locfileid: "61301932"
 
 組織に影響を与えるすべてのセキュリティに関する推奨事項に関する情報を返します。
 
-*URL：* GET:/api/recommendations
-<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+*Url：* GET:/api/recommendations
+<br>[OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 <br>OData でサポートされている演算子:
 <br>```$filter```on: ```id```, , ```productName```, ```vendor```, ```recommendedVersion```, ```subCategory``````recommendationCategory```, ```severityScore```, ```remediationType```, ```recommendedProgram```, ```recommendedVendor```, および```status```プロパティ。
 <br>```$top``` 最大値が 10,000 です。
@@ -56,7 +56,7 @@ ms.locfileid: "61301932"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[エンドポイント API に Microsoft Defender を使用する](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -136,5 +136,5 @@ GET https://api.securitycenter.microsoft.com/api/recommendations
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [脅威&脆弱性のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [脆弱性管理のセキュリティに関する推奨事項](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

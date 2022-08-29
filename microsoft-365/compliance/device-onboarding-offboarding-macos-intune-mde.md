@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: MDE のお客様向けのMicrosoft Intuneを使用して、macOS デバイスを Microsoft Purview ソリューションにオンボードおよびオフボードする方法について説明します
-ms.openlocfilehash: 3e6947483a4d3320b61211edeb0f9fdc3e31095d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b14b8c8385bd1a67265b36006c35d35612a32e3c
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66623033"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385509"
 ---
 # <a name="onboard-and-offboard-macos-devices-into-compliance-solutions-using-intune-for-microsoft-defender-for-endpoint-customers"></a>Microsoft Defender for Endpoint のお客様向け Intune を使用したコンプライアンス ソリューションへの macOS デバイスのオンボードとオフボード
 
@@ -72,7 +72,7 @@ MDE が既に展開されている場合は、次の手順に従って macOS デ
 
 1. [**作成**] を選択する
 
-1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 **次へ** を選択します。
+1. この例の *AccessibilityformacOS* のように、プロファイルの名前を選択します。 [**次へ**]を選択します。
 
 1. 手順 1 でダウンロードした **accessibility.mobileconfig** ファイルを構成プロファイル ファイルとして選択します。
 
@@ -86,22 +86,28 @@ MDE が既に展開されている場合は、次の手順に従って macOS デ
 
 1. [ **構成プロファイル]** ページで、先ほど作成したプロファイルを選択し、この例の *[アクセシビリティフォームACOS* ] で [ **デバイスの状態** ] を選択して、デバイスの一覧と構成プロファイルの展開状態を表示します。
 
-### <a name="update-configuration-profiles"></a>構成プロファイルを更新する
+### <a name="update-existing-system-configuration-profiles"></a>既存のシステム構成プロファイルを更新する
 
-1. **fulldisk.mobileconfig** ファイルを使用して、既存のフル ディスク アクセス プロファイルを更新します。
 
-1. これらの値を使用して、EXISITING MDE 基本設定プロファイルを更新する
-   
+1. フル ディスク アクセス構成プロファイルは、MDE 用に以前に作成およびデプロイされている必要があります。  [Mac でのMicrosoft Defender for EndpointのIntuneベースのデプロイを](/microsoft-365/security/defender-endpoint/mac-install-with-intune#full-disk-access)参照してください。 エンドポイント DLP には、新しいアプリケーション `com.microsoft.dlp.daemon`に対する追加のフル ディスク アクセス権限が必要です。 
+    1. fulldisk.mobileconfig ファイルを使用して、既存の Fullfull Disk Access 構成プロファイルを更新します。 
+
+
+1. 既存の MDE 環境設定プロファイルを見つけます。 [macOS でMicrosoft Defender for Endpointの環境設定を設定する](/microsoft-365/security/defender-endpoint/mac-preferences#intune-full-profile)
+    1. 次の値を使用して、プロファイルに新しいキーを追加します。
+
 ```xml
-<key>features</key>
-<dict>
-    <key>systemExtensions</key>
-    <string>enabled</string>
-    <key>dataLossPrevention</key>
-    <string>enabled</string>
-</dict>
-```
+<key>features</key> 
+<dict> 
+    <key>systemExtensions</key> 
+    <string>enabled</string> 
+    <key>dataLossPrevention</key> 
+    <string>enabled</string> 
+</dict> 
+``` 
 
+[mobileconfig の例](https://github.com/microsoft/mdatp-xplat/blob/master/macos/settings/data_loss_prevention/com.microsoft.wdav.mobileconfig)を次に示します。
+ 
 ## <a name="offboard-macos-devices-using-intune"></a>Intuneを使用したオフボード macOS デバイス
 
 > [!IMPORTANT]

@@ -1,7 +1,7 @@
 ---
 title: Microsoft LTI アプリの概要
-ms.author: heidip
-author: MicrosoftHeidi
+ms.author: danismith
+author: DaniEASmith
 manager: serdars
 ms.reviewer: amitman, sovaish
 ms.date: 06/15/2021
@@ -13,12 +13,12 @@ ms.collection:
 - M365-modern-desktop
 ms.localizationpriority: medium
 description: ラーニング ツール相互運用性 (LTI) の Microsoft アプリと、Microsoft アプリを Learning Management System (LMS) に統合する際の教育者に役立つ方法について説明します。
-ms.openlocfilehash: 7431b9a48ae7f0fec7199583592a515a6aadd772
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 0dbaa7d02af0556015e8c531eeb09131cacf0ab5
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943532"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67385036"
 ---
 # <a name="integrating-microsoft-products-with-your-learning-management-system-lms"></a>Microsoft 製品とラーニング 管理システム (LMS) の統合
 
@@ -70,6 +70,7 @@ Microsoft OneDrive LTI アプリを使用すると、次のことが可能にな
 
 - [キャンバスを使用した Microsoft OneDrive LTI](onedrive-lti.md)。
 - [Microsoft OneDrive LTI と Blackboard](onedrive-lti-blackboard.md)。
+- [D2l Brightspace を使用した Microsoft OneDrive LTI](onedrive-lti-brightspace.md)
 
 ## <a name="teams-lti-apps"></a>Teams LTI アプリ
 

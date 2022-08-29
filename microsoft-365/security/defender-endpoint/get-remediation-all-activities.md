@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2540e1d9521771bd9ae4d49b96384fefd8766aec
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: bda1edfd4e5744ab171e86bf01f6b7e30efea22c
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020068"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342903"
 ---
 # <a name="list-all-remediation-activities"></a>すべての修復作業を一覧表示する
 
@@ -34,7 +34,7 @@ ms.locfileid: "67020068"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink).
 
-> Microsoft Defender 脆弱性の管理を体験しますか? [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法の詳細については、こちらを参照してください。
+> Microsoft Defender 脆弱性の管理を体験するには [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法について説明します。
 
 [!Include[Prerelease information](../../includes/prerelease.md)]
 
@@ -48,8 +48,8 @@ ms.locfileid: "67020068"
 
 [修復アクティビティの詳細については、こちらを参照してください](tvm-remediation.md)。
 
-**URL：** GET: /api/remediationTasks
-<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+**Url：** GET: /api/remediationTasks
+<br>[OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 <br>OData でサポートされている演算子:
 <br>```$filter``` on:  ```createdon``` と ```status``` プロパティ。
 <br>```$top``` 最大値が 10,000 です。
@@ -67,36 +67,36 @@ ms.locfileid: "67020068"
 
 ## <a name="properties"></a>プロパティ
 
-プロパティ (ID)|データ型|説明|返された値の例
+プロパティ (ID)|データ型|説明|戻り値の例
 :---|:---|:---|:---
 カテゴリ|文字列|修復アクティビティのカテゴリ (ソフトウェア/セキュリティ構成)|ソフトウェア
-completerEmail|String|修復アクティビティが他のユーザーによって手動で完了した場合、この列には自分のメールが含まれます|Null
-completerId|String|修復アクティビティが他のユーザーによって手動で完了した場合、この列にはオブジェクト ID が含まれます。|Null
-completionMethod|String|修復アクティビティは、"自動的に" (すべてのデバイスに修正プログラムが適用されている場合) 完了するか、"完了としてマーク" を選択したユーザーが "手動" で完了できます。|自動
+completerEmail|文字列|修復アクティビティが他のユーザーによって手動で完了した場合、この列には自分のメールが含まれます|Null
+completerId|文字列|修復アクティビティが他のユーザーによって手動で完了した場合、この列にはオブジェクト ID が含まれます。|Null
+completionMethod|文字列|修復アクティビティは、"自動的に" (すべてのデバイスに修正プログラムが適用されている場合) 完了するか、"完了としてマーク" を選択したユーザーが "手動" で完了できます。|自動
 createdOn|DateTime|この修復アクティビティが作成された時刻|2021-01-12T18:54:11.5499478Z
-説明|String|この修復アクティビティの説明|デバイスに影響を与える既知の脆弱性を軽減するために、Microsoft Silverlight を新しいバージョンに更新します。
+説明|文字列|この修復アクティビティの説明|デバイスに影響を与える既知の脆弱性を軽減するために、Microsoft Silverlight を新しいバージョンに更新します。
 dueOn|DateTime|この修復アクティビティに対して作成者が設定した期限|2021-01-13T00:00:00Z
 fixedDevices|.|修正されたデバイスの数|2
-ID|String|この修復アクティビティの ID|097d9735-5479-4899-b1b7-77398899df92
-Nameid|String|関連する製品名|Microsoft Silverlight
-優先度|String|この修復アクティビティの作成者セットの優先度 (高\中\低)|高い
-Productid|String|関連する製品 ID|microsoft-_-silverlight
-productivityImpactRemediationType|String|いくつかの構成変更は、ユーザーに影響を与えないデバイスに対してのみ要求できます。 この値は、"すべての公開デバイス" または "ユーザーに影響のないデバイスのみ" の選択を示します。|AllExposedAssets
-rbacGroupNames|String|関連するデバイス グループ名|[ "Windows サーバー"、"Windows 11"、"Windows 10" ]
-recommendedProgram|String|にアップグレードするための推奨プログラム|Null
-recommendedVendor|String|アップグレード先として推奨されるベンダー|Null
-recommendedVersion|String|更新/アップグレードに推奨されるバージョン|Null
-relatedComponent|String|この修復アクティビティの関連コンポーネント (セキュリティに関する推奨事項の関連コンポーネントと同様)|Microsoft Silverlight
-requesterEmail|String|作成者の電子メール アドレス|globaladmin@UserName.contoso.com
-requesterId|String|Creator オブジェクト ID|r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes|String|この修復アクティビティに対して作成者が追加したノート (フリー テキスト)|Null
-Scid|String|関連するセキュリティ推奨事項の SCID|Null
-状態|String|修復アクティビティの状態 (アクティブ/完了)|アクティブ
+ID|文字列|この修復アクティビティの ID|097d9735-5479-4899-b1b7-77398899df92
+Nameid|文字列|関連する製品名|Microsoft Silverlight
+優先度|文字列|この修復アクティビティの作成者セットの優先度 (高\中\低)|高
+Productid|文字列|関連する製品 ID|microsoft-_-silverlight
+productivityImpactRemediationType|文字列|いくつかの構成変更は、ユーザーに影響を与えないデバイスに対してのみ要求できます。 この値は、"すべての公開デバイス" または "ユーザーに影響のないデバイスのみ" の選択を示します。|AllExposedAssets
+rbacGroupNames|文字列|関連するデバイス グループ名|[ "Windows サーバー"、"Windows 11"、"Windows 10" ]
+recommendedProgram|文字列|にアップグレードするための推奨プログラム|Null
+recommendedVendor|文字列|アップグレード先として推奨されるベンダー|Null
+recommendedVersion|文字列|更新/アップグレードに推奨されるバージョン|Null
+relatedComponent|文字列|この修復アクティビティの関連コンポーネント (セキュリティに関する推奨事項の関連コンポーネントと同様)|Microsoft Silverlight
+requesterEmail|文字列|作成者の電子メール アドレス|globaladmin@UserName.contoso.com
+requesterId|文字列|Creator オブジェクト ID|r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterNotes|文字列|この修復アクティビティに対して作成者が追加したノート (フリー テキスト)|Null
+Scid|文字列|関連するセキュリティ推奨事項の SCID|Null
+状態|文字列|修復アクティビティの状態 (アクティブ/完了)|Active
 statusLastModifiedOn|DateTime|状態フィールドが更新された日付|2021-01-12T18:54:11.5499487Z
 targetDevices|Long|この修復が適用できる公開デバイスの数|43
 Title|String|この修復アクティビティのタイトル|Microsoft Silverlight を更新する
 型|String|修復の種類|Update
-vendorId|String|関連するベンダー名|Microsoft
+vendorId|文字列|関連するベンダー名|Microsoft
 
 ## <a name="example"></a>例
 
@@ -154,5 +154,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/
 - [修復メソッドとプロパティ](get-remediation-methods-properties.md)
 - [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 - [1 つの修復アクティビティの暴露デバイスを一覧表示する](get-remediation-exposed-devices-activities.md)
-- [リスクベースの脅威&脆弱性管理](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [組織の脆弱性](tvm-weaknesses.md)

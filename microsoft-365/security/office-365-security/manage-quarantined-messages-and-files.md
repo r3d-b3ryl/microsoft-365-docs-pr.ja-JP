@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) 内のすべてのユーザーの検疫済みメッセージを表示および管理する方法について説明します。 Microsoft Defender for Office 365を持つ組織の管理者は、SharePoint Online、OneDrive for Business、Microsoft Teams で検疫済みファイルを管理することもできます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 50fa4eb3895fa9ad35e6182c2bcc7d7875bdae3a
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 392b6d2b8a64908c66a7c84302f893d8f61a4680
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607303"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67343845"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>EOP の管理者として検疫済みメッセージとファイルを管理する
 
@@ -64,7 +64,7 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
 
   - Microsoft 365 管理センターで、対応する Azure Active Directory のロールにユーザーを追加すると、ユーザーには、必要なアクセス許可 _および_ Microsoft 365 のその他の機能に必要なアクセス許可が付与されます。詳しくは、「[管理者のロールについて](../../admin/add-users/about-admin-roles.md)」を参照してください。
   - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
-  - <sup>\*</sup>Microsoft 365 Defender [ポータル](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)の **電子メール & コラボレーション** ロールの **検疫管理者** 役割グループのメンバーも、powerShell で検疫手順を実行するには [、Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **検疫管理** 役割グループのメンバー Exchange Online必要があります。
+  - <sup>\*</sup>Microsoft 365 Defender [ポータル](permissions-microsoft-365-security-center.md#email--collaboration-roles-in-the-microsoft-365-defender-portal)の **Email &コラボレーション** ロールの **検疫管理者** 役割グループのメンバーも、PowerShell で検疫手順を実行するには [、Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **[検疫管理**] 役割グループのメンバーである必要Exchange Online.
 
 - 検疫されたメッセージは、検疫された理由に基づいて既定の期間保持されます。 保持期間が経過すると、メッセージは自動的に削除され、回復できません。 詳細については、「[EOP とDefender for Office 365の検疫済み電子メール メッセージ](quarantine-email-messages.md)」を参照してください。
 
@@ -74,7 +74,7 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
 
 1. Microsoft 365 Defender ポータルの <https://security.microsoft.com> で、**[メールとコラボレーション]** \> **[レビュー]** \> **[検疫]** に移動します。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
 
-2. [ **検疫]** ページで、[ **電子メール** ] タブが選択されていることを確認します。
+2. [**検疫]** ページで、[**Email**] タブが選択されていることを確認します。
 
 3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 表示列を変更するには、[**列のカスタマイズ**] をクリックします。 既定値にはアスタリスク (<sup>\*</sup>) が付いています。
 
@@ -114,7 +114,7 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
      - **[バルク]**
      - **[スパム]**
      - **マルウェア**: EOP のマルウェア対策ポリシーまたはDefender for Office 365の安全な添付ファイル ポリシー。 **ポリシーの種類** の値は、使用された機能を示します。
-     - **フィッシング**: スパム フィルターの判定は **、フィッシング** 詐欺またはフィッシング対策保護によってメッセージが検疫されました ([スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings) または [偽装保護](セットアップ-フィッシング対策ポリシー)。
+     - **フィッシング**: スパム フィルター判定が **フィッシング詐欺** になったか、またはフィッシング対策保護によってメッセージが検疫されました ([スプーフィング設定](set-up-anti-phishing-policies.md#spoof-settings)または [偽装防止](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365))。
      - **高確度のフィッシング**
    - **受信者**: **すべてのユーザー** または **自分のみ**。 エンド ユーザーが管理できるのは、検疫されたメッセージから送信されたメッセージのみです。
    - **リリースの状態**: 次のいずれかの値。
@@ -139,7 +139,7 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
    検索条件を入力したら、Enter キーを押して結果をフィルター処理します。
 
    > [!NOTE]
-   > メインの **[検疫]** ページの [**検索**] ボックスでは、現在のビューの検疫済みアイテムのみが検索され、検疫全体は検索されません。 検疫されたすべてのアイテムを検索するには、 **フィルター** と結果のフィルター ポップアップを使用 **します** 。 
+   > メインの **[検疫]** ページ内の **[検索]** ボックスでは、すべての検疫済みアイテムからではなく、現在のビュー内の検疫済みアイテムのみから検索されます。 すべての検疫済みアイテムを検索するには、**[フィルター]** を使用し、それによって表示される **[フィルター]** ポップアップを使用します。 
 
 特定の検疫済みメッセージを見つけたら、そのメッセージを選択して詳細を表示し、処理を実行します (メッセージの表示、解放、ダウンロード、または削除など)。
 
@@ -219,7 +219,7 @@ Microsoft Defender for Office 365を持つ組織の管理者は、[SharePoint、
 - ![[送信者ブロック] アイコン。](../../media/m365-cc-sc-block-sender-icon.png) **送信者のブロック**: **メールボックス** の [ブロックされた送信者] リストに送信者を追加します。 詳細については、「[メール送信者をブロックする](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)」を参照してください。
 
 - ![[送信のみ] アイコン。](../../media/m365-cc-sc-create-icon.png) **送信のみ**: 分析のためにメッセージを Microsoft に報告します。 表示されるポップアップで、次のオプションを選択します。
-  - **送信の種類 (****電子メール** (既定)、**URL**、またはファイルを選択 **します**。
+  - **申請の種類 (****Email** (既定値)、URL、またはファイル **を** 選択 **します**。
   - **ネットワーク メッセージ ID を追加するか、電子メール ファイルをアップロード** します。次のいずれかのオプションを選択します。
     - **電子メール ネットワーク メッセージ ID を追加します** (既定では、ボックスに対応する値が含まれます)
     - **電子メール ファイル (.msg または eml) をアップロード** する: [ **ファイルの参照** ] をクリックして、送信する .msg または .eml メッセージ ファイルを見つけて選択します。
@@ -289,7 +289,7 @@ Defender for Office 365を持つ組織では、管理者は、SharePoint、OneDr
 
 1. Microsoft 365 Defender ポータルの <https://security.microsoft.com> で、**[メールとコラボレーション]** \> **[レビュー]** \> **[検疫]** に移動します。 **"検疫"** ページに直接移動するには、<https://security.microsoft.com/quarantine> を使用します。
 
-2. [ **検疫]** ページで、[ **ファイル** ] タブを選択します (**[電子メール** ] は既定のタブです)。
+2. [**検疫]** ページで、[**ファイル**] タブを選択します (**既定のタブEmail**)。
 
 3. 使用できる列見出しをクリックすると、結果を並べ替えることができます。 [ **列のカスタマイズ** ] をクリックして、表示される列を変更します。 既定の列にはアスタリスク (<sup>\*</sup>) が付いています。
    - [**User**<sup>\*</sup>]

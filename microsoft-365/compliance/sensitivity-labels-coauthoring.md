@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: デスクトップ アプリで共同編集と自動保存を有効にする設定をオンにして、SharePoint、OneDrive でドキュメントのラベル付けと暗号化が行えます。
-ms.openlocfilehash: 80fbc8b598f07efec761e9222612345601f1994e
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: bc405ee52ba469b342c143ba720e0dc027a0addd
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66944221"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67408377"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>機密度ラベルを使用して暗号化されたファイルの共同編集を有効にする
 
@@ -76,8 +76,8 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - Microsoft 365 Apps for enterprise:
     - **Windows**: 最新チャネル または 月次エンタープライズ チャネル の最小バージョン 2107、または半期エンタープライズ チャネルの最小バージョン 2202
     - **macOS**: 最小バージョン 16.51
-    - **iOS**: 最小バージョン 2.58 で [オプトイン](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)するとプレビューになります
-    - **Android**: 最小バージョン 16.0.14931 で [オプトイン](#opt-in-to-the-preview-of-co-authoring-for-ios-and-android)するとプレビューになります
+    - **iOS**: 最小バージョン 2.58
+    - **Android**: 最小バージョン 16.0.14931
 
 - テナント内のすべてのアプリ、サービス、および運用ツールで、新しい[メタデータのラベル付け](#metadata-changes-for-sensitivity-labels)をサポートしている必要があります。 次のいずれかを使用する場合は、必要な最小バージョンを確認してください。
     
@@ -103,12 +103,6 @@ Office デスクトップ アプリの共同編集をサポートする設定を
 - [秘密度レベルを条件として使用する DLP ポリシー](dlp-sensitivity-label-as-condition.md)
 - [秘密度ラベルを適用するために構成された Microsoft Defender for Cloud Apps ](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
-### <a name="opt-in-to-the-preview-of-co-authoring-for-ios-and-android"></a>iOS と Android の共同編集のプレビューにオプトインする
-
-iOS と Android の共同編集のプレビューを試すには、前のセクションに記載されている最小バージョンが必要です。また、テナントをプレビューに追加するよう要求する必要があります: [モバイルで秘密度ラベルを使用して暗号化されたファイルの共同編集を有効にすることに同意する](https://ncv.microsoft.com/5Oob3oDj1O)
-
-詳細については、次のブログ投稿の発表を参照してください: [Microsoft Information Protection で暗号化されたドキュメントの共同編集が、モバイル デバイスでパブリック プレビューになりました](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/co-authoring-on-microsoft-information-protection-encrypted/ba-p/3081369)
-
 ## <a name="limitations"></a>制限事項
 
 秘密度ラベルで暗号化されたファイル共同編集設定をテナントに対して有効にする前に、この機能の以下の制限事項を必ず把握します。
@@ -116,8 +110,6 @@ iOS と Android の共同編集のプレビューを試すには、前のセク�
 - [メタデータのラベル付けの変更](#metadata-changes-for-sensitivity-labels)により、テナントのすべてのアプリ、サービス、運用ツールで新しいラベル メタデータをサポートして、一貫性のある信頼性の高いラベル付けを行う必要があります。
     
     Excel での仕様: 誰かが秘密度ラベルのメタデータの変更をサポートしない Excel のバージョンを使用してファイルを編集、保存すると、暗号化を適用しない秘密度ラベルのメタデータは、そのファイルから削除されることがあります。
-
-- iOS および Android 用 Office アプリのサポートは現在[プレビュー](https://office.com/insider)中です。
 
 - 共同編集と自動保存は、次の [暗号化用の構成](encryption-sensitivity-labels.md#configure-encryption-settings) のどれかを使用する Office ドキュメントのラベル付けと暗号化へはサポートされず、使用もできません。
     - **[ラベルの適用時にユーザーがアクセス許可を割り当てる]** と、チェックボックス **[Word、PowerPoint、Excel で、ユーザーにアクセス許可の指定を求めるプロンプトを表示する]** が選択されています。この構成は、"ユーザー定義のアクセス許可" と呼ばれることもあります。
@@ -134,8 +126,6 @@ iOS と Android の共同編集のプレビューを試すには、前のセク�
 
 > [!CAUTION]
 > この設定をオンにすることは一方向のアクションです。この機能がプレビュー中は、メタデータの変更、前提条件、制限事項、このページに記載されている既知の問題をすべて確認して理解した上で実行してください。
-
-プレビュー期間中に既にこの設定を有効にしている場合は、それ以上の操作は必要ないので、この手順を省略できます。
 
 1. テナントのグローバル管理者として [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com)にサインインします。
 
