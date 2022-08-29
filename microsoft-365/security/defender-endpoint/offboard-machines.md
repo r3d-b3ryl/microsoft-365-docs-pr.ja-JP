@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fec93e45fbdced0cc6c4106d24a29eb13087d02
-ms.sourcegitcommit: c6f1486617b39565bfd8f662ee6ad65a9cefd3e3
+ms.openlocfilehash: 4cdd61ffaf91f6ddf88825f243abba38ffe78cd9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66531047"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323663"
 ---
 # <a name="offboard-devices-from-the-microsoft-defender-for-endpoint-service"></a>Microsoft Defender for Endpoint サービスのオフボード デバイス
 
@@ -47,7 +47,7 @@ ms.locfileid: "66531047"
 >
 > デバイスのプロファイル (データなし) は、180 日以内に [デバイス一覧](machines-view-overview.md) に残ります。
 >
-> さらに、過去 30 日間にアクティブになっていないデバイスは、組織の脅威と脆弱性の管理[公開スコア](tvm-exposure-score.md)と Microsoft Secure Score for Devices を反映したデータには考慮されません。
+> さらに、過去 30 日間にアクティブになっていないデバイスは、組織の Defender 脆弱性管理 [の公開スコア](tvm-exposure-score.md) と Microsoft Secure Score for Devices を反映したデータには考慮されません。
 >
 > アクティブなデバイスのみを表示するには、 [センサーの正常性状態](machines-view-overview.md#use-filters-to-customize-the-device-inventory-views)、 [デバイス タグ](machine-tags.md) 、または [マシン グループ](machine-groups.md)でフィルター処理できます。
 

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: プランをアップグレードする最も簡単な方法は、管理センターの [アップグレード] タブを使用することです。 ただし、[アップグレード] タブは常にサポートされているわけではありません。
 ms.date: 04/21/2021
-ms.openlocfilehash: 557070177fac2e1ae91d3ddb9e2125221c6b4f3f
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: 18e5da20b67068b2834793a0b7013bb27e6c5adf
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66489148"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324563"
 ---
 # <a name="upgrade-to-a-different-microsoft-plan"></a>別の Microsoft プランにアップグレードする
 
@@ -165,4 +165,4 @@ Exchange メールボックスや SharePoint Online ドキュメント、リス�
 ## <a name="related-content"></a>関連コンテンツ
 
 [手動でプランを変更する](change-plans-manually.md) (記事)\
-[一般法人向け Microsoft 365 をバックアップする前にデータをバックアップする](back-up-data-before-switching-plans.md) (記事)
+[一般法人向け Microsoft 365 をバックアップする前にデータをバックアップする](move-users-different-subscription.md) (記事)

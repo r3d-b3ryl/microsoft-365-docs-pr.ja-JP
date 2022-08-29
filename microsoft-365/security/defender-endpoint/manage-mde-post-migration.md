@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: conceptual
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: d00de67b52f521042d5595320346f875f8c89c9e
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 3158f75d98d1536f54f9c5387c1515fe64be1c25
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607567"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324037"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-after-initial-setup-or-migration"></a>初期セットアップまたは移行後のMicrosoft Defender for Endpointの管理
 
@@ -39,7 +39,7 @@ Microsoft Defender for Endpointを設定して構成したら、次の手順で�
 
 |ツール/メソッド|説明|
 |---|---|
-|[Microsoft 365 Defender](https://security.microsoft.com/) ポータルでの **[脅威と脆弱性管理ダッシュボードの分析情報](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)**|脅威&脆弱性管理ダッシュボードは、セキュリティ運用チームが公開を減らし、組織のセキュリティ体制を改善するために使用できる実用的な情報を提供します。 <br/><br/> [脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)と[Microsoft 365 Defenderの概要に関するページを](/microsoft-365/security/defender-endpoint/use)参照してください。|
+|Microsoft 365 Defender ポータルで **[ダッシュボードの分析情報](/windows/security/threat-protection/microsoft-defender-atp/tvm-dashboard-insights)** を [Microsoft Defender 脆弱性の管理](https://security.microsoft.com/)する|Defender の脆弱性管理ダッシュボードには、セキュリティ運用チームが公開を減らし、組織のセキュリティ体制を改善するために使用できる実用的な情報が提供されます。 <br/><br/> [Defender の脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)と[Microsoft 365 Defenderの概要に関するページ](/microsoft-365/security/defender-endpoint/use)を参照してください。|
 |**[Microsoft Intune](/mem/intune/fundamentals/what-is-intune)** (推奨)|microsoft エンドポイント マネージャーのコンポーネントであるMicrosoft Intune ([Intune](/mem/endpoint-manager-overview)) は、モバイル デバイス管理 (MDM) とモバイル アプリケーション管理 (MAM) に重点を置いています。 Intuneを使用すると、携帯電話、タブレット、ノート PC など、組織のデバイスの使用方法を制御できます。 また、特定のポリシーを構成してアプリケーションを制御することもできます。 <br/><br/> [Intuneを使用したMicrosoft Defender for Endpointの管理に関するページを参照](manage-mde-post-migration-intune.md)してください。|
 |**[Microsoft Endpoint Configuration Manager](/mem/configmgr/core/understand/introduction)**|Microsoft エンドポイント マネージャー (Configuration Manager) は、以前は System Center Configuration Manager と呼ば[エンドポイント マネージャーのコンポーネント](/mem/endpoint-manager-overview)です。 Configuration Managerは、ユーザー、デバイス、ソフトウェアを管理するための強力なツールです。 <br/><br/> Configuration Manager[を使用したMicrosoft Defender for Endpointの管理に関するページを参照](manage-mde-post-migration-configuration-manager.md)してください。|
 |**[Azure Active Directory Domain Servicesのグループ ポリシー オブジェクト](/azure/active-directory-domain-services/manage-group-policy)**|[Azure Active Directory Domain Services](/azure/active-directory-domain-services/overview)には、ユーザーとデバイス用の組み込みのグループ ポリシー オブジェクトが含まれています。 環境に必要に応じて、組み込みのグループ ポリシー オブジェクトをカスタマイズしたり、カスタム グループ ポリシー オブジェクトや組織単位 (OU) を作成したりできます。 <br/><br/> グループ ポリシー [オブジェクトを使用したMicrosoft Defender for Endpointの管理に関するページを参照してください](manage-mde-post-migration-group-policy-objects.md)。|

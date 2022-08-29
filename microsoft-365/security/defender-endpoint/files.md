@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7fef64136e27b8b9a85163fe9e25fdf59ab6d2aa
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 85ce81f3d99aa789c68e9967f6bcafb68ca681f2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283487"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323444"
 ---
 # <a name="file-resource-type"></a>ファイル リソースの種類
 
@@ -53,22 +53,22 @@ Defender for Endpoint のファイル エンティティを表します。
 
 |プロパティ | 種類 | 説明 |
 |:---|:---|:---|
-|sha1 | String | ファイル コンテンツの Sha1 ハッシュ |
-|sha256 | String | ファイル コンテンツの Sha256 ハッシュ |
+|sha1 | 文字列 | ファイル コンテンツの Sha1 ハッシュ |
+|sha256 | 文字列 | ファイル コンテンツの Sha256 ハッシュ |
 |globalPrevalence | Null 許容 long | 組織全体のファイルの普及率 |
 |globalFirstObserved | DateTimeOffset | ファイルが初めて観察されたとき |
 |globalLastObserved | DateTimeOffset | ファイルが最後に観察された時刻 |
-|サイズ | Null 許容 long | ファイルのサイズ |
-|Filetype | String | ファイルの種類 |
-|isPeFile | ブール値 | ファイルがポータブル実行可能ファイルの場合は true (例: "DLL"、"EXE"など) |
-|filePublisher | String | ファイル発行元 |
-|fileProductName | String | 製品名 |
-|署名 | String | ファイル署名者 |
-|発行者 | String | ファイル発行者 |
-|signerHash | String | 署名証明書のハッシュ |
-|isValidCertificate | ブール値 | Microsoft Defender for Endpoint エージェントによる証明書の署名が正常に検証されました |
-|determinationType | String | ファイルの決定の種類 |
-|determinationValue | String | 決定値 |
+|size | Null 許容 long | ファイルのサイズ |
+|Filetype | 文字列 | ファイルの種類 |
+|isPeFile | ブール型 | ファイルがポータブル実行可能ファイルの場合は true (例: "DLL"、"EXE"など) |
+|filePublisher | 文字列 | ファイル発行元 |
+|fileProductName | 文字列 | 製品名 |
+|署名 | 文字列 | ファイル署名者 |
+|発行者 | 文字列 | ファイル発行者 |
+|signerHash | 文字列 | 署名証明書のハッシュ |
+|isValidCertificate | ブール型 | Microsoft Defender for Endpoint エージェントによる証明書の署名が正常に検証されました |
+|determinationType | 文字列 | ファイルの決定の種類 |
+|determinationValue | 文字列 | 決定値 |
 
 ## <a name="json-representation"></a>Json 表現
 

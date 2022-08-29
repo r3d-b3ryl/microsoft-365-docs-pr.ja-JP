@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 9b8009af5bd88c1dfd37dc7e8297e3c7e05f1356
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 7f732b38c108d50b2c8950cdc5e30ba1153944b3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280765"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324388"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>サポート対象 Microsoft Defender for Endpoint API
 
@@ -69,7 +69,7 @@ API 呼び出しを実行できる個々のサポートされるエンティテ�
 [**Alert** メソッドとプロパティ](alerts.md) | アラートの取得、アラートの作成、アラートの更新などの \- API 呼び出しを実行します。
 [デバイスごとの **評価** のメソッドとプロパティをエクスポートする](get-assessment-methods-properties.md) | API 呼び出しを実行して、セキュリティで保護された構成評価のエクスポート、ソフトウェア インベントリ評価のエクスポート、ソフトウェアの脆弱性評価のエクスポート、差分エクスポート ソフトウェアの脆弱性評価など \- 、デバイスごとに脆弱性評価を収集します。
 [**自動調査** の方法とプロパティ](investigation.md) | 調査のコレクションを取得するなど、 \- API 呼び出しを実行します。
-[デバイス正常性のメソッドとプロパティをエクスポートする](device-health-api-methods-properties.md) | GET /api/public/avdeviceshealth などの API 呼び出しを実行します。
+[デバイスの正常性のメソッドとプロパティをエクスポートする](device-health-api-methods-properties.md) | GET /api/public/avdeviceshealth などの API 呼び出しを実行します。
 [**ドメイン** 関連のアラート](get-domain-related-alerts.md) | ドメイン関連デバイスの取得、ドメイン統計などの \- API 呼び出しを実行します。
 [**ファイル** のメソッドとプロパティ](files.md) | ファイル情報の取得、ファイル関連のアラート、ファイル関連デバイス、ファイル統計などの \- API 呼び出しを実行します。
 [**Indicators メソッド** とプロパティ](ti-indicator.md) | インジケーターの取得、インジケーターの作成、インジケーターの削除などの \- API 呼び出しを実行します。

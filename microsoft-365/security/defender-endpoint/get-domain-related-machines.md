@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 179b3bf9ecd1ff7f7045f386d740eff4e83a12c9
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 5f81a9783529a59e240a9ac8c88ae265c409bb9b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61373094"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324278"
 ---
 # <a name="get-domain-related-machines-api"></a>ドメイン関連マシン API を取得する
 
