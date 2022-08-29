@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a24b887edefa21807ca544a68b0721e70b6b512c
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: ee74b1b5af9af8e657329f973855cdee926a61f8
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050790"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328367"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defenderの脅威分析
 
@@ -191,7 +191,7 @@ _脅威分析レポートの [禁止された電子メールの試行] セクシ
   - 望ましくない可能性があるアプリケーション (PUA) 保護
   - リアルタイム保護
 
-このセクションの軽減策情報には[、脅威と脆弱性の管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)からのデータが組み込まれています。また、レポートのさまざまなリンクから詳細なドリルダウン情報も提供されます。
+このセクションの軽減策情報には[、Microsoft Defender 脆弱性の管理](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)からのデータが組み込まれており、レポートのさまざまなリンクから詳細なドリルダウン情報も提供されます。
 
 :::image type="content" source="../../media/threat-analytics/ta_mitigations_mtp.png" alt-text="セキュリティで保護された構成の詳細を示す脅威分析レポートの軽減策セクション" lightbox="../../media/threat-analytics/ta_mitigations_mtp.png":::
 
@@ -232,7 +232,7 @@ _脅威分析レポートの[公開&軽減策] セクション_
 
 ![レビュー画面のスクリーンショット。 編集ボタンが赤で強調表示されている](../../media/threat-analytics/ta_create_notification_5.png)
 
-7. おめでとうございます! 新しいルールが正常に作成されました。 **[完了]** ボタンを選択してプロセスを完了し、ポップアップを閉じます。
+7. おめでとうございます。 新しいルールが正常に作成されました。 **[完了]** ボタンを選択してプロセスを完了し、ポップアップを閉じます。
 
 ![ルールが作成された画面のスクリーンショット。 正常に作成されたルールでは、サイドバーに緑色のチェックマークが表示され、画面のメイン領域に大きな緑色のチェックが表示されます](../../media/threat-analytics/ta_create_notification_6.png)
 
@@ -251,7 +251,7 @@ _脅威分析レポートの[公開&軽減策] セクション_
 
 - アラート、インシデント、または影響を受けた資産データを表示するには、Microsoft Defender for Office または Microsoft Defender for Endpoint アラート データまたはその両方に対するアクセス許可が必要です。
 - 防止されたメール試行を表示するには、Microsoft Defender for Office ハンティング データに対するアクセス許可が必要です。
-- 軽減策を表示するには、Microsoft Defender for Endpointでデータを脅威と脆弱性の管理するアクセス許可が必要です。
+- 軽減策を表示するには、Microsoft Defender for Endpointの Defender 脆弱性管理データに対するアクセス許可が必要です。
 
 脅威分析データを確認するときは、次の要因を覚えておいてください。
 

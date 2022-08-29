@@ -14,12 +14,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 4041d33f3b3cf5f05952c1ce1647012b75cb7a89
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.openlocfilehash: 769fc6c2f67d1e024577f43ce5903a1c7741fb2d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63683559"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328213"
 ---
 # <a name="industry-collaboration-programs"></a>業界コラボレーション プログラム
 
@@ -37,7 +37,7 @@ VIA プログラムは、Microsoft のお客様の保護を向上させるため
 
 MVI は、独自の設計のリアルタイム保護 (RTP) マルウェア対策製品を構築して所有している組織、またはサードパーティのウイルス対策 SDK を使用して開発された組織に開放されています。
 
-メンバーは、Microsoft Defender セキュリティ センター、IOAV、AMSI、Cloud Files の Microsoft クライアント API にアクセスし、正常性データやその他のテレメトリにアクセスして、顧客の保護を維持できるようにします。 マルウェア対策製品は、パフォーマンス テストのために Microsoft に定期的に送信されます。
+メンバーは、Microsoft 365 Defender ポータル、IOfficeAntivirus (IOAV)、マルウェア対策スキャン インターフェイス (AMSI)、クラウド ファイルの[Microsoft 365 Defender API](../defender/api-overview.md) にアクセスし、お客様の保護を維持するために役立つ正常性データやその他のテレメトリにアクセスできます。 マルウェア対策製品は、パフォーマンス テストのために Microsoft に定期的に送信されます。
 
 詳細については、 [MVI プログラム ページ](virus-initiative-criteria.md) に移動します。
 

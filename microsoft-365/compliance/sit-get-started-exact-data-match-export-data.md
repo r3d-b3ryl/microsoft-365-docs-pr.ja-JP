@@ -17,15 +17,19 @@ search.appverid:
 - MET150
 description: 正確なデータ一致ベースの機密情報の種類に対してソース データをエクスポートする方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 644c62dce3069899aba33737dd1e6452c81fee24
-ms.sourcegitcommit: 24827a509b3e78959ce67679646e572a0c996282
+ms.openlocfilehash: 4c79123ab44e9be20a96d19c058df6aecfb6aeeb
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66918070"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359867"
 ---
 # <a name="export-source-data-for-exact-data-match-based-sensitive-information-type"></a>完全なデータ一致に基づく機密情報の種類のソース データをエクスポートする
 
+## <a name="applies-to"></a>適用対象
+
+- [新しいエクスペリエンス](sit-create-edm-sit-unified-ux-workflow.md)
+- [クラシック エクスペリエンス](sit-create-edm-sit-classic-ux-workflow.md)
 
 機密データ テーブルは、機密データを識別するためにドキュメント内のコンテンツを比較する値の行を含むテキスト ファイルです。 これらの値は、コンテンツで検出して保護アクションを実行するテキスト形式の個人識別可能な情報、製品レコード、またはその他の機密データである可能性があります。
 
@@ -55,9 +59,13 @@ EDM 機密型を定義する場合、最も重要な決定事項の 1 つは、�
 
 3. 機密データ フィールドの形式に注意してください。特に、コンテンツにコンマを含む可能性があるフィールド。 たとえば、"Seattle,WA" という値を含む住所は、.csv形式が選択されている場合、解析時に 2 つの別々のフィールドとして解析されます。 これを回避するには、.tsv 形式を使用するか、機密データ テーブルで値を含むコンマを二重引用符で囲みます。 値を含むコンマにスペースも含まれている場合は、対応する形式に一致するカスタム SIT を作成する必要があります。 たとえば、コンマとスペースを含む複数語の文字列を検出する SIT などです。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
-- [完全なデータ一致に基づく機密情報の種類のスキーマを作成する](sit-get-started-exact-data-match-create-schema.md#create-the-schema-for-exact-data-match-based-sensitive-information-types)
+- **新しいエクスペリエンスの場合**: [新しいエクスペリエンス用の EDM SIT サンプル ファイルを作成する](sit-create-edm-sit-unified-ux-sample-file.md)
+
+or
+
+- **クラシック エクスペリエンスの場合**: [厳密なデータ一致ベースの機密情報の種類のスキーマを作成する](sit-get-started-exact-data-match-create-schema.md)
 
 ## <a name="see-also"></a>関連項目
 

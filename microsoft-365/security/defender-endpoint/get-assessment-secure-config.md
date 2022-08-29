@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6d706dc8552490b7705cc23fca4751f810211d47
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: dfc0ad17a142eebb021f11e78bedddf33538c61e
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839296"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342835"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>デバイスごとのセキュリティで保護された構成評価をエクスポートする
 
@@ -38,13 +38,13 @@ ms.locfileid: "65839296"
 
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 データの量は大きくなる可能性があるため、取得する方法は 2 つあります。
 
-- [セキュリティで保護された構成評価 **JSON 応答** をエクスポート](#1-export-secure-configuration-assessment-json-response)する: API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の odata.nextLink フィールドを使用 \@して次の結果をフェッチできます。
+- [セキュリティで保護された構成評価 **JSON 応答** をエクスポート](#1-export-secure-configuration-assessment-json-response)する: API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の \@odata.nextLink フィールドを使用して次の結果をフェッチできます。
 
-- [**ファイルを使用して** セキュリティで保護された構成評価をエクスポート](#2-export-secure-configuration-assessment-via-files)する: この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storageからすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のようにAzure Storageからすべてのデータをダウンロードできます。
+- [**ファイルを使用して** セキュリティで保護された構成評価をエクスポート](#2-export-secure-configuration-assessment-via-files)する: この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からすべてのデータをダウンロードできます:
 
   - すべての組織データを含むダウンロード URL の一覧を取得するには、API を呼び出します。
 
-  - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
+  - ダウンロード URL を使用してすべてのファイルをダウンロードし、データを好きなように処理します。
 
 ( _JSON 応答_ またはファイルを使用 _して_) 収集されるデータは、現在の状態の現在のスナップショットであり、履歴データは含まれません。 履歴データを収集するには、お客様が独自のデータ ストレージにデータを保存する必要があります。
 
@@ -65,7 +65,7 @@ ms.locfileid: "65839296"
 
 ### <a name="12-permissions"></a>1.2 アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[エンドポイント API に Microsoft Defender を使用する](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 ---|---|---
@@ -87,29 +87,29 @@ GET /api/machines/SecureConfigurationsAssessmentByMachine
 
 > [!NOTE]
 >
-> - 次の表で定義されているプロパティは、プロパティ ID でアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+> - 次のテーブルで定義されているプロパティは、プロパティ ID でアルファベット順にリスト表示されます。 この API を実行する場合、結果の出力は必ずしもこのテーブルにリストされているのと同じ順序で返されるとは限りません。
 > - 応答で追加の列が返される場合があります。 これらの列は一時的なものであり、削除される可能性があります。ドキュメント化された列のみを使用してください。
 
 <br>
 
 ****
 
-プロパティ (ID)|データ型|説明|返された値の例
+プロパティ (ID)|データ型|説明|戻り値の例
 ---|---|---|---
-ConfigurationCategory|string|構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|セキュリティ コントロール
-ConfigurationId|string|特定の構成の一意の識別子|scid-10000
-ConfigurationImpact|string|構成が全体の構成スコアに与える影響の評価 (1-10)|9 
+ConfigurationCategory|文字列|構成が属するカテゴリまたはグループ: アプリケーション、OS、ネットワーク、アカウント、セキュリティ制御|セキュリティ コントロール
+ConfigurationId|文字列|特定の構成の一意の識別子|scid-10000
+ConfigurationImpact|文字列|構成が全体の構成スコアに与える影響の評価 (1-10)|9 
 ConfigurationName|string|構成の表示名|デバイスを Microsoft Defender for Endpoint にオンボードする
 ConfigurationSubcategory|string|構成が属するサブカテゴリまたはサブグループ。 多くの場合、これは特定の機能または機能を説明します。|デバイスのオンボード
 DeviceId|string|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
+DeviceName|文字列|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
 IsApplicable|bool|構成またはポリシーが適用可能かどうかを示します|true
 IsCompliant|bool|構成やポリシーが正しく構成されているかどうかを示します|false
 IsExpectedUserImpact|bool|構成が適用される場合にユーザーに影響を与えるかどうかを示します|true
-OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10やWindows 11など、同じファミリ内のバリエーションを含む特定のオペレーティング システムを示します。 詳細については、tvm でサポートされているオペレーティング システムとプラットフォームを参照してください。|Windows10 とWindows 11
-RbacGroupName|string|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。|サーバー
-RecommendationReference|string|このソフトウェアに関連する推奨事項 ID への参照。|sca-_-scid-20000
-Timestamp|string|デバイスで最後に構成が表示された時刻|2020-11-03 10:13:34.8476880
+OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これは、Windows 10やWindows 11など、同じファミリ内のバリエーションを含む特定のオペレーティング システムを示します。 詳細については、「Microsoft Defender 脆弱性の管理 (MDVM) でサポートされているオペレーティング システムとプラットフォーム」を参照してください。|Windows10 とWindows 11
+RbacGroupName|文字列|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。|サーバー
+RecommendationReference|文字列|このソフトウェアに関連する推奨事項 ID への参照。|sca-_-scid-20000
+Timestamp|文字列|デバイスで最後に構成が表示された時刻|2020-11-03 10:13:34.8476880
 |
 
 ### <a name="16-examples"></a>1.6 例
@@ -249,7 +249,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 > [!NOTE]
 >
-> - ファイルは、複数行の Json 形式の gzip 圧縮&です。
+> - ファイルは、複数行の JSON 形式の gzip 圧縮されています。
 > - ダウンロード URL は 3 時間だけ有効です。それ以外の場合は、パラメーターを使用できます。
 > - データの最大ダウンロード速度を確保するために、データが存在するのと同じ Azure リージョンからダウンロードしていることを確認できます。
 
@@ -257,7 +257,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 
 ****
 
-プロパティ (ID)|データ型|説明|返された値の例
+プロパティ (ID)|データ型|説明|戻り値の例
 ---|---|---|---
 ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧|["Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|string|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
@@ -293,5 +293,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SecureConfigurationsAs
 
 その他の関連
 
-- [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [組織の脆弱性](tvm-weaknesses.md)

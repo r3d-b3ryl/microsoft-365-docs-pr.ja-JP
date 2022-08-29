@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 702626d3e147bdd02c4988ffabbd158a44f911c7
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 84db0ee6740e6b6a47090a94ebc032d0176071f9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302268"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323341"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>内部 IP API でデバイスを検索する
 

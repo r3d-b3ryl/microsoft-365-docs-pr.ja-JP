@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 49cc0fca3ae7617b86ab079daace92eb3790db94
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d5a7673ef10e374a830c5410ec96a057d150b36d
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283511"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326521"
 ---
 # <a name="get-machine-related-alerts--api"></a>マシン関連のアラート API を取得する
 

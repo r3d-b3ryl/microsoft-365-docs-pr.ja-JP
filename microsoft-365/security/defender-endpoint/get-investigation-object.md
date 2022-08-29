@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8fc4fea909fcaa2ebfd755d47a7282419c2860b9
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: d086ffb524038ea7a487508d1fbe387c859220b2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282816"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326587"
 ---
 # <a name="get-investigation-api"></a>調査 API を取得する
 

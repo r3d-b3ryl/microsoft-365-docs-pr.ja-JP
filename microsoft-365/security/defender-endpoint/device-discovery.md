@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2e4939eb21a62c99ecf6572060213c87c2c01176
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: b8102e492f7c3d179bf053466d4d49d399a67f10
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617306"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344627"
 ---
 # <a name="device-discovery-overview"></a>デバイス検出の概要
 
@@ -52,7 +52,7 @@ Microsoft Defender for Endpointは、余分なアプライアンスや煩雑な�
 検出されたアンマネージド デバイスを評価してオンボードする方法の概要については、このビデオMicrosoft Defender for Endpoint参照してください。
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4RwQz]
 
-この機能と組み合わせて、デバイスをMicrosoft Defender for Endpointにオンボードするためのセキュリティに関する推奨事項は、既存の脅威と脆弱性の管理 エクスペリエンスの一部として利用できます。
+この機能と組み合わせて、デバイスをMicrosoft Defender for Endpointにオンボードするためのセキュリティに関する推奨事項は、既存のMicrosoft Defender 脆弱性の管理 エクスペリエンスの一部として利用できます。
 
 ## <a name="discovery-methods"></a>検出方法
 
@@ -94,7 +94,7 @@ Microsoft Defender for Endpointは、余分なアプライアンスや煩雑な�
 
 組織に展開されているアンマネージド ネットワーク デバイスの数が多い場合、攻撃領域が大きく、企業全体に大きなリスクが生じます。 Microsoft Defender for Endpointネットワーク検出機能は、ネットワーク デバイスが検出され、正確に分類され、資産インベントリに追加されるようにするのに役立ちます。
 
-Defender for Endpoint にはネットワーク デバイス自体にセンサーが組み込まれていないので、ネットワーク デバイスは標準エンドポイントとして管理されません。 このような種類のデバイスでは、リモート スキャンでデバイスから必要な情報を取得するエージェントレス アプローチが必要です。 これを行うには、構成済みネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで指定されたMicrosoft Defender for Endpoint デバイスが使用されます。 検出されると、Defender for Endpoint の脅威と脆弱性の管理機能により、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイをセキュリティで保護するための統合ワークフローが提供されます。
+Defender for Endpoint にはネットワーク デバイス自体にセンサーが組み込まれていないので、ネットワーク デバイスは標準エンドポイントとして管理されません。 このような種類のデバイスでは、リモート スキャンでデバイスから必要な情報を取得するエージェントレス アプローチが必要です。 これを行うには、構成済みネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで指定されたMicrosoft Defender for Endpoint デバイスが使用されます。 検出されると、Defender for Endpoint の脆弱性管理機能により、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイをセキュリティで保護するための統合ワークフローが提供されます。
 
 詳細については、「 [ネットワーク デバイス](network-devices.md)」を参照してください。
 
@@ -108,7 +108,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>検出されたデバイスの脆弱性評価
 
-デバイスに関する脆弱性とリスク、およびネットワーク内の他の検出されたアンマネージド デバイスは、現在の TVM フローの一部であり、"セキュリティに関する推奨事項" の下にあり、ポータルのエンティティ ページに表示されます。
+デバイス上の脆弱性とリスク、およびネットワーク内の他の検出されたアンマネージド デバイスは、現在の Defender 脆弱性管理フローの一部であり、"セキュリティの推奨事項" の下にあり、ポータルのエンティティ ページに表示されます。
 "SSH" 関連のセキュリティに関する推奨事項を検索して、管理されていないデバイスと管理対象デバイスに関連する SSH の脆弱性を見つけます。
 
 :::image type="content" source="images/1156c82ffadd356ce329d1cf551e806c.png" alt-text="セキュリティに関する推奨事項ダッシュボード" lightbox="images/1156c82ffadd356ce329d1cf551e806c.png":::

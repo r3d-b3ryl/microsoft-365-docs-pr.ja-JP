@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6122c50018bb44f0e5812263339a7644868fd0d2
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1bfb5955a14f8f520ce66139b708f82d27e1f724
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283943"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326125"
 ---
 # <a name="delete-indicator-api"></a>インジケーター API の削除
 
@@ -48,7 +48,7 @@ ms.locfileid: "61283943"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[作業の開始」](apis-intro.md)を参照してください。
 
 アクセス許可の種類 | アクセス許可 | アクセス許可の表示名
 :---|:---|:---
@@ -75,15 +75,15 @@ Empty
 
 ## <a name="response"></a>応答
 
-インジケーターが存在し、正常に削除された場合 - 204 OK (コンテンツなし)。
+インジケーターが存在し、正常に削除された場合 - 204 OK (コンテンツなし)
 
-指定した ID を持つインジケーターが見つからなかった場合は 404 Not Found。
+指定した ID を持つインジケーターが見つからなかった場合 - 404 Not Found
 
 ## <a name="example"></a>例
 
 ### <a name="request"></a>要求
 
-以下は、要求の例です。
+要求の例を次に示します。
 
 ```http
 DELETE https://api.securitycenter.microsoft.com/api/indicators/995

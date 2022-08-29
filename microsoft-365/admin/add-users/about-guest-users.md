@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: ゲストが会議に出席したり、招待された Teams でドキュメントやチャットを表示したりできるように、Microsoft 365 管理センターでゲスト ユーザーリストを設定する方法について説明します。
-ms.openlocfilehash: 56bef3039a0e00cc0f0ae6914eac11dca3b06713
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 724925acbcbbda9cbe1b5d272caac60357c507ce
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274634"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67319563"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Microsoft 365 管理センターのゲスト ユーザー
 
@@ -53,19 +53,19 @@ Microsoft Teams、SharePoint、または Azure Active Directory に追加する�
 ## <a name="understanding-guest-accounts-in-microsoft-365"></a>Microsoft 365 のゲスト アカウントについて
 
 ファイルやドキュメントを適切なユーザーと簡単に共有できる一方で、過剰共有を防ぐには計画が必要です。 次のリソースは、Microsoft 365 でセキュリティで保護されたゲスト共有環境を作成するのに役立つ背景を提供します。
-- 外部コラボレーションを計画する
-- セキュリティで保護されたゲスト共有環境を作成する
-- Microsoft 365 でセキュリティで保護されたファイルとドキュメントの共有と Teams とのコラボレーションを設定する
-- Microsoft Teams でのゲスト アクセス
+- [外部コラボレーションを計画する](../../solutions/plan-external-collaboration.md)
+- [セキュリティで保護されたゲスト共有環境を作成する](../../solutions/create-secure-guest-sharing-environment.md)
+- [Microsoft 365 でセキュリティで保護されたファイルとドキュメントの共有と Teams とのコラボレーションを設定する](../../solutions/setup-secure-collaboration-with-teams.md)
+- [Microsoft Teams でのゲスト アクセス](/microsoftteams/guest-access)
 
 Microsoft Teams と SharePoint に加えて、Microsoft 365 では他のアプリケーションでのゲスト アクセスもサポートされています。 次の Microsoft 365 製品では、ゲスト アクセスがサポートされています。
 
-- Power Apps (キャンバス アプリ) - キャンバス アプリをゲスト ユーザーと共有します。
-- リスト - OneDrive、SharePoint、およびリストでの外部共有またはゲスト共有。
-- OneDrive - OneDrive、SharePoint、およびリストでの外部共有またはゲスト共有。
-- Planner – Web およびモバイル プラットフォームに適用されます。 Microsoft Plannerでのゲスト アクセス。
-- Microsoft 365 グループ - Microsoft 365 グループのゲスト アクセスを管理します。
-- Yammer - Yammer ネットワーク内の外部グループをネイティブ モードに揃えていません。
+- Power Apps (キャンバス アプリ) - [キャンバス アプリをゲスト ユーザーと共有します](/power-apps/maker/canvas-apps/share-app-guests)。
+- リスト - [OneDrive、SharePoint、およびリストでの外部共有またはゲスト共有](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7)。
+- OneDrive - [OneDrive、SharePoint、およびリストでの外部共有またはゲスト共有](https://support.microsoft.com/office/external-or-guest-sharing-in-onedrive-sharepoint-and-lists-7aa070b8-d094-4921-9dd9-86392f2a79e7)。
+- Planner – Web およびモバイル プラットフォームに適用されます。 [Microsoft Plannerでのゲスト アクセス](https://support.microsoft.com/office/guest-access-in-microsoft-planner-cc5d7f96-dced-4da4-ab62-08c72d9759c6)。
+- Microsoft 365 グループ - [Microsoft 365 グループのゲスト アクセスを管理します](../create-groups/manage-guest-access-in-groups.md)。
+- Yammer - [Yammer ネットワーク内の外部グループをネイティブ モードに揃えていません](/yammer/work-with-external-users/create-and-manage-external-groups)。
 
 Microsoft Word や Excel などの Microsoft Office アプリケーションの場合、ゲスト アクセスは、出力ファイルの場所 (Microsoft SharePoint、Teams、OneDrive など) によって制御されます。
 
@@ -79,6 +79,6 @@ Azure Active Directory にゲストを追加するには、「 [ゲスト ユー
 
 ## <a name="related-content"></a>関連コンテンツ
 
-[Microsoft 365 グループのゲスト アクセスを管理する](../create-groups/manage-guest-access-in-groups.md)\
-[ゲストが特定の Microsoft 365 グループまたは Microsoft Teams に追加されないようにする](../../solutions/per-group-guest-access.md)\
+[Microsoft 365 グループのゲスト アクセスを管理](../create-groups/manage-guest-access-in-groups.md) する (記事)\
+[ゲストが特定の Microsoft 365 グループまたは Microsoft Teams に追加されないようにする](../../solutions/per-group-guest-access.md) (記事)\
 [Microsoft 365 管理センターの組織スイッチャー](https://techcommunity.microsoft.com/t5/microsoft-365-blog/new-organization-switcher-in-the-microsoft-365-admin-center/ba-p/1165543) (記事)

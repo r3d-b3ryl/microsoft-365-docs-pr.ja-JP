@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: f5a37d8cbbaeca3dd14c51e1d5c6adcefabf2db8
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 746cf78bce54651cc24dd07a90c5fc11772903d2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284195"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325993"
 ---
 # <a name="list-investigations-api"></a>List Investigations API
 
@@ -41,7 +41,7 @@ ms.locfileid: "61284195"
 
 調査のコレクションを取得 [します](investigation.md)。
 
-[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+[OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 
 OData の`$filter`クエリは、次の`triggeringAlertId``startTime``id``state``machineId`プロパティでサポートされます。
 <br>```$stop``` 最大値が 10,000 の場合
@@ -102,7 +102,7 @@ GET https://api.securitycenter.microsoft.com/api/investigations
 
 ### <a name="response-example"></a>応答の例
 
-応答の例を次に示します。
+以下は、応答の例です。
 
 ```json
 {

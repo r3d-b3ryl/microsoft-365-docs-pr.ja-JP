@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2ac182b9d8e2cc79dfa7d42328ea4fbcacb7f6f9
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 61a85b5e3a52cdf936058a08ad71f08348c4a553
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300888"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327639"
 ---
 # <a name="list-vulnerabilities-by-software"></a>ソフトウェアによる脆弱性の一覧表示
 
@@ -42,7 +42,7 @@ ms.locfileid: "61300888"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[エンドポイント API に Microsoft Defender を使用する](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---

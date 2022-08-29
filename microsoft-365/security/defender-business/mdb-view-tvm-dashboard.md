@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを表示する
-description: 脅威&脆弱性管理ダッシュボードを使用して、Defender for Business で対処する重要な項目を確認します。
+title: Microsoft Defender for BusinessでMicrosoft Defender 脆弱性の管理ダッシュボードを表示する
+description: Microsoft Defender 脆弱性の管理 ダッシュボードを使用して、Defender for Business で対処する重要な項目を確認します。
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -17,16 +17,16 @@ ms.collection:
 - SMB
 - M365-security-compliance
 ms.custom: intro-get-started
-ms.openlocfilehash: 332128566bb117dec10420fff3e7dc0d529071ac
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: dc1fea2a1bcbf05b0f32519221a68686a85e85f6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175398"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326345"
 ---
 # <a name="use-your-vulnerability-management-dashboard-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessで脆弱性管理ダッシュボードを使用する
 
-Defender for Business には、セキュリティ チームの時間と労力を節約するように設計された脆弱性管理ダッシュボードが含まれています。 公開スコアを提供するだけでなく、そのダッシュボードを使用すると、公開されたデバイスに関する情報を表示し、関連するセキュリティに関する推奨事項を確認できます。 脅威&脆弱性管理ダッシュボードを使用すると、次のことができます。
+Defender for Business には、セキュリティ チームの時間と労力を節約するように設計された脆弱性管理ダッシュボードが含まれています。 公開スコアを提供するだけでなく、そのダッシュボードを使用すると、公開されたデバイスに関する情報を表示し、関連するセキュリティに関する推奨事項を確認できます。 Defender 脆弱性管理ダッシュボードを使用すると、次のことができます。
 
 - 会社のデバイスに関連付けられている露出スコアを表示します。
 - デバイスとの通信障害への対処、ファイアウォール保護のオン、Microsoft Defender ウイルス対策定義の更新など、セキュリティに関する推奨事項を確認します。

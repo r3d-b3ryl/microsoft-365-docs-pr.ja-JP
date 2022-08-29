@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 2ec34011d00e77c5e32f58567a0b705cf7c0dc1c
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f5a4a232e7752ae990c1f32ca69653c45baecb8b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301127"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328103"
 ---
 # <a name="add-or-remove-machine-tags-api"></a>マシン タグ API の追加または削除
 

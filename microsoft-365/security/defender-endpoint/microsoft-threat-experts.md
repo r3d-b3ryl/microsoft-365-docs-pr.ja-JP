@@ -2,7 +2,7 @@
 title: Microsoft 脅威エキスパート
 ms.reviewer: ''
 description: Microsoft 脅威エキスパートは、Microsoft Defender for Endpointに対する専門知識の追加レイヤーを提供します。
-keywords: マネージド脅威検出サービス、マネージド脅威ハンティング、マネージド検出と応答 (MDR) サービス、MTE、Microsoft 脅威エキスパート、エンドポイント攻撃通知、エンドポイント攻撃通知
+keywords: マネージド脅威検出サービス、マネージド脅威ハンティング、マネージド検出と応答 (MDR) サービス、MTE、Microsoft 脅威エキスパート、エンドポイント攻撃通知、エンドポイント攻撃通知、Defender エキスパートに問い合わせ
 search.product: Windows 10
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365-initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9f612e79eaed1403592668feae1144aab7f6fddf
-ms.sourcegitcommit: 414682b9bf42dc19a89c893d3c515aee9765b6e4
+ms.openlocfilehash: 907f69bc081033002c45cd37b690e174d0b530ed
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/08/2022
-ms.locfileid: "67280743"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323980"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft 脅威エキスパート
 
@@ -34,6 +34,9 @@ ms.locfileid: "67280743"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+> [!NOTE]
+> 2022 年 8 月の時点で、 **脅威の専門家に相談** するエキスパート オンデマンド オプションは **、Defender エキスパートに問い合わせ** るようにブランド変更されています。
 
 Microsoft 脅威エキスパートは、セキュリティ オペレーション センター (SOC) に専門家レベルの監視と分析を提供するマネージド脅威ハンティング サービスです。これにより、固有の環境内の重大な脅威が見逃されないようにすることができます。
 
@@ -73,12 +76,22 @@ Microsoft 脅威エキスパートにサブスクライブするには、アカ�
 - 高度な攻撃者に直面した場合に、疑わしいデバイスの動作と次の手順を明確にする
 - 脅威アクター、キャンペーン、または新たな攻撃者手法に関するリスクと保護を決定する
 
+> [!NOTE]
+> 2022 年 8 月の時点で、 **脅威の専門家に相談** するエキスパート オンデマンド オプションは **、Defender エキスパートに問い合わせ** るようにブランド変更されています。
+
 **Defender エキスパートに質問** するオプションは、ポータル内のいくつかの場所で利用できるため、調査のコンテキストで専門家と対話できます。
 
-- ***[ヘルプとサポート] メニュー***
 - ***[デバイス ページのアクション] メニュー***
+
+![Microsoft 365 Defender ポータルの [デバイス] ページアクション メニューの [Defender エキスパートに問い合わせ] メニュー オプションのスクリーンショット。](../../media/mte/device-page-actions-menu.png)
+
 - ***[アラート ページのアクション] メニュー***
+
+![Microsoft 365 Defender ポータルの [アラート] ページの [アクション] メニューの [Defender エキスパートに問い合わせ] メニュー オプションのスクリーンショット。](../../media/mte/alerts-page-actions-menu.png)
+
 - ***[ファイル ページのアクション] メニュー***
+
+![Microsoft 365 Defender ポータルの [インシデント] ページアクション メニューの [Defender エキスパートに問い合わせ] メニュー オプションのスクリーンショット。](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > Microsoft Services Hub を通じてエキスパート オンデマンド ケースの状態を追跡する場合は、カスタマー サクセス アカウント マネージャーにお問い合わせください。

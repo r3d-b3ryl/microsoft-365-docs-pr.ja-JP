@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkCOMPLIANCE
 description: PST ファイルを Microsoft 365 にインポートするときに、Microsoft 365 インポート サービスのインテリジェント インポート機能を使用してデータをフィルター処理する方法について説明します。
-ms.openlocfilehash: 1a9483d77ff575b643d4ab9717d286b608bea35d
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b18db6e684df522e863219cac5c7dc5f0ec3179e
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66640074"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360350"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>PST ファイルをインポートするときに、データをフィルター処理する
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 Microsoft 365 Import サービスの新しいインテリジェント インポート機能を使用して、ターゲット メールボックスに実際にインポートされる PST ファイル内のアイテムをフィルター処理します。 次に、動作のしくみを示します。
   
@@ -68,7 +70,7 @@ PST インポート ジョブを作成したら、次の手順に従ってデー
   
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、組織内の管理者アカウントの資格情報を使用してサインインします。
     
-2. コンプライアンス ポータルの左側のウィンドウで、**[データ ライフサイクル管理]** \> **[インポート]** の順にクリックします。
+2. コンプライアンス ポータルの左側のウィンドウで、[ **データ ライフサイクル管理** \> **Microsoft 365** \> **インポート**] をクリックします。
     
     組織のインポート ジョブが [**インポート**] タブに一覧表示されます。**[状態]** 列の [**分析完了**] の値は、Microsoft 365 によって分析され、インポートする準備ができているインポート ジョブを示します。
     
@@ -107,7 +109,7 @@ PST インポート ジョブを作成したら、次の手順に従ってデー
       - **ユーザー** - 特定のユーザーが送受信するメッセージを除外できます。 差出人フィールド、宛先: フィールド、またはメッセージの Cc: フィールドに表示されるユーザーを除外するには、その受信者の種類の横にある [ **ユーザーの除外** ] をクリックします。 ユーザーのメール アドレス (SMTP アドレス) を入力し、[新しい **追加]**![アイコンをクリックします。](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) をクリックして、その受信者の種類の除外されたユーザーの一覧に追加し、[ **保存]** をクリックして除外されたユーザーの一覧を保存します。 
   
         > [!NOTE]
-        > Microsoft 365 では、People フィルターの設定に起因するデータ分析情報 **は** 表示されません。 ただし、特定のユーザーが送受信するメッセージを除外するようにこのフィルターを設定した場合、それらのメッセージは実際のインポート プロセス中に除外されます。 
+        > Microsoft 365 では、**People** フィルターの設定に起因するデータ分析情報は表示されません。 ただし、特定のユーザーが送受信するメッセージを除外するようにこのフィルターを設定した場合、それらのメッセージは実際のインポート プロセス中に除外されます。 
   
     c. [**その他のフィルター オプション**] ポップアップ ページで [**適用]** をクリックして、フィルター設定を保存します。 
   
@@ -139,14 +141,14 @@ PST インポート ジョブを作成したら、次の手順に従ってデー
   
     |**メッセージ クラス ID**|**このメッセージ クラスを使用するメールボックス アイテム**|
     |:-----|:-----|
-    |IPM。活動  <br/> |履歴項目  <br/> |
-    |IPM。ドキュメント  <br/> |ドキュメントとファイル (電子メール メッセージに添付されていません)  <br/> |
-    |IPM。ファイル  <br/> |(IPM と同じ)。ドキュメント)  <br/> |
-    |IPM。注.IMC.Notification  <br/> |インターネットへのExchange Server ゲートウェイである Internet Mail Connect によって送信されたレポート  <br/> |
-    |IPM。注.Microsoft.Fax  <br/> |FAX メッセージ  <br/> |
-    |IPM。Note.Rules.Oof.Template.Microsoft  <br/> |不在時の自動表示メッセージ  <br/> |
-    |IPM。Note.Rules.ReplyTemplate.Microsoft  <br/> |受信トレイ ルールによって送信された返信  <br/> |
-    |IPM。OLE。クラス  <br/> |定期的な系列の例外  <br/> |
-    |IPM。Recall.Report  <br/> |メッセージ取り消しレポート  <br/> |
-    |IPM。リモート  <br/> |リモート メール メッセージ  <br/> |
-    |IPM。レポート  <br/> |アイテムの状態レポート  <br/> |
+    |Ipm。活動  <br/> |履歴項目  <br/> |
+    |Ipm。ドキュメント  <br/> |ドキュメントとファイル (電子メール メッセージに添付されていません)  <br/> |
+    |Ipm。ファイル  <br/> |(IPM と同じ)。ドキュメント)  <br/> |
+    |Ipm。注.IMC.Notification  <br/> |インターネットへのExchange Server ゲートウェイである Internet Mail Connect によって送信されたレポート  <br/> |
+    |Ipm。注.Microsoft.Fax  <br/> |FAX メッセージ  <br/> |
+    |Ipm。Note.Rules.Oof.Template.Microsoft  <br/> |不在時の自動表示メッセージ  <br/> |
+    |Ipm。Note.Rules.ReplyTemplate.Microsoft  <br/> |受信トレイ ルールによって送信された返信  <br/> |
+    |Ipm。Ole。クラス  <br/> |定期的な系列の例外  <br/> |
+    |Ipm。Recall.Report  <br/> |メッセージ取り消しレポート  <br/> |
+    |Ipm。リモート  <br/> |リモート メール メッセージ  <br/> |
+    |Ipm。レポート  <br/> |アイテムの状態レポート  <br/> |

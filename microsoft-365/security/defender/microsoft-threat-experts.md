@@ -15,15 +15,16 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
+ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 7c39e6010015a6b645924aec04119b4e5e9c586b
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: ab8689ffa5b557b77f7c88c7c4cde6f11ac14584
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276200"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328499"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365 のMicrosoft 脅威エキスパートの概要
 
@@ -35,6 +36,9 @@ ms.locfileid: "67276200"
 - [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
+
+> [!NOTE]
+> 2022 年 8 月の時点で、 **脅威の専門家に相談** するエキスパート オンデマンド オプションは **、Defender エキスパートに問い合わせ** るようにブランド変更されています。
 
 エンドポイント攻撃通知 (以前は Microsoft 脅威エキスパート - ターゲット攻撃通知と呼ばれた) は、マネージド脅威ハンティング サービスです。 適用して承諾されると、Microsoft の脅威の専門家からエンドポイント攻撃の通知を受け取ります。そのため、環境に対する重大な脅威を見逃すことはありません。 これらの通知は、組織のエンドポイント、電子メール、ID を保護するのに役立ちます。
 
@@ -70,13 +74,22 @@ Microsoft 365 セキュリティ ポータルで [ **Defender エキスパート
 - 疑わしいデバイス、アラート、インシデントを明確にし、高度な攻撃者に直面した場合は次の手順を実行します
 - 脅威アクター、キャンペーン、または新たな攻撃者手法に関連するリスクと使用可能な保護を決定する
 
+> [!NOTE]
+> 2022 年 8 月の時点で、 **脅威の専門家に相談** するエキスパート オンデマンド オプションは **、Defender エキスパートに問い合わせ** るようにブランド変更されています。
+
 **Defender エキスパートに質問** するオプションは、ポータル全体で複数の場所で使用できます。
 
-- <i>**[デバイス ページのアクション] メニュー**</i><BR>
-- <i>**[デバイス インベントリ] ページのポップアップ メニュー**</i><BR>
-- <i>**[アラート] ページのポップアップ メニュー**</i><BR>
-- <i>**[インシデント] ページの [アクション] メニュー**</i><BR>
-- <i>**インシデント インベントリ ページ**</i><BR>
+- ***[デバイス ページのアクション] メニュー***
+
+![Microsoft 365 Defender ポータルの [デバイス] ページアクション メニューの [Defender エキスパートに問い合わせ] メニュー オプションのスクリーンショット。](../../media/mte/device-page-actions-menu.png)
+
+- ***[アラート ページのアクション] メニュー***
+
+![Microsoft 365 Defender ポータルの [アラート] ページの [アクション] メニューの [Defender エキスパートに問い合わせ] メニュー オプションのスクリーンショット。](../../media/mte/alerts-page-actions-menu.png)
+
+- ***[ファイル ページのアクション] メニュー***
+
+![Microsoft 365 Defender ポータルの [インシデント] ページアクション メニューの [Defender エキスパートに問い合わせ] メニュー オプションのスクリーンショット。](../../media/mte/incidents-page-actions-menu.png)
 
 > [!NOTE]
 > Premier Support サブスクリプションがMicrosoft Defender for Office 365 ライセンスにマップされている場合は、Microsoft Services Hub を使用してエキスパート オンデマンド ケースの状態を追跡できます。

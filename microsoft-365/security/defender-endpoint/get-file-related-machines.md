@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cce211ca79a6e00484174c989ebc6224a1fdc03c
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 9b4382b3ec77ecaa272ddf3e56dd77442fbe4fe6
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284219"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326015"
 ---
 # <a name="get-file-related-machines-api"></a>ファイル関連マシン API を取得する
 

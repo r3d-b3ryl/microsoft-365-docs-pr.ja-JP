@@ -18,12 +18,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: b253fe7dad271684f5c0e927ec162ea4e993df29
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: d8db3816e050d7384070cf31e458921231f0df9b
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607391"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327313"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-configuration-manager"></a>Configuration ManagerでMicrosoft Defender for Endpointを管理する
 
@@ -59,6 +59,6 @@ Microsoft Intune (Intune) と [Microsoft Endpoint Configuration Manager](/mem) (
 
 ## <a name="next-steps"></a>次の手順
 
-- [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender 脆弱性管理の概要を確認する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender ポータルのセキュリティ操作ダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [IntuneでMicrosoft Defender for Endpointを管理する](manage-mde-post-migration-intune.md)

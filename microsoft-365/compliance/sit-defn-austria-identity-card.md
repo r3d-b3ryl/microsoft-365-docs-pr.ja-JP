@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: オーストリア ID カードの機密情報の種類エンティティ定義。
-ms.openlocfilehash: 5a7cae0eabfa179bda83a09dc6a70a3e6e5048a6
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: d180c3e46c3810997bfe54a3521c840f833aff02
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997232"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367623"
 ---
 # <a name="austria-identity-card"></a>オーストリアの ID カード
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -50,13 +42,13 @@ ms.locfileid: "66997232"
 
 ## <a name="checksum"></a>チェックサム
 
-該当なし
+対象外
 
 ## <a name="definition"></a>定義
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- 正規表現 `Regex_austria_eu_national_id_card` は、パターンに一致するコンテンツを検索します。
+- 正規表現 `Regex_austria_eu_national_id_card` がパターンに一致するコンテンツを検出した。
 - `Keywords_austria_eu_national_id_card` のキーワードを検出した。
 
 ```xml

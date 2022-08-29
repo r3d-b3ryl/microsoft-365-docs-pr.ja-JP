@@ -11,13 +11,14 @@ ms.date: 05/30/2022
 ms.prod: m365-security
 ms.localizationpriority: medium
 ms.collection: M365-security-compliance.
+ms.technology: m365d
 f1.keywords: NOCSH
-ms.openlocfilehash: 95e916c02bc01a2e3e84d05efe4e5f5e66d3d491
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: 421e3cfbe3d16d0adc38e3fe1cbbcb7d64867eb9
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107087"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328389"
 ---
 # <a name="detecting-human-operated-ransomware-attacks-with-microsoft-365-defender"></a>Microsoft 365 Defender による人間によるランサムウェア攻撃の検出
 
@@ -95,9 +96,9 @@ ms.locfileid: "67107087"
 * Cobalt Strike
 * WMI
 * 管理ツールの悪用
-* PsExec
+* Psexec
 
-固執：
+永続 化：
 
 * 新しいアカウント
 * GPO の変更
@@ -165,7 +166,7 @@ Azure AD アカウントに対するパスワード スプレー |Defender for C
 新しいユーザー アカウント    |Azure Identity Protection         |Defender for Cloud Apps
 ロールの変更      |Azure Identity Protection        |Defender for Cloud Apps
 
-#### <a name="suspicious-behavior"></a>挙動不審
+#### <a name="suspicious-behavior"></a>疑わしい動作
 
 攻撃者は機密情報をダウンロードしたり、ファイルを暗号化したり、組織の資産を収集したり、損害を与えたりしています。
 
@@ -288,7 +289,7 @@ SecOps チームと組織が集中ランサムウェア攻撃防止の準備を�
 3. 既知のランサムウェア攻撃方法または攻撃フェーズに合わせて調整された高度なハンティング クエリのカタログを組み立てます。
 4. スケジュール、アラートの名前付け、自動アクションなど、既知のランサムウェア攻撃方法のアラートを作成する特定の高度なハンティング クエリのカスタム検出ルールのセットを作成します。
 5. [カスタム タグ](/manage-incidents.md)または標準のセットを決定して、より大規模で調整されたランサムウェア攻撃の一部であることが知られているインシデントを識別する新しいタグまたは標準を作成します。
-6. ランサムウェアインシデントとアラート管理の一連の運用タスクを決定します。 以下に例を示します。
+6. ランサムウェアインシデントとアラート管理の一連の運用タスクを決定します。 例:
 
 * 階層 1 アナリストが受信インシデントとアラートをスキャンし、調査のために階層 2 アナリストに割り当てるためのプロセス。
 * 高度なハンティング クエリとそのスケジュール (毎日、毎週、毎月) を手動で実行します。

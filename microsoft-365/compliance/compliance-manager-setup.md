@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview Compliance Manager ユーザーのアクセス許可とロールを設定し、アクションの自動テストを構成します。 ユーザーの履歴を管理したり、ダッシュボード表示をフィルター処理することができます。
-ms.openlocfilehash: 1053ff60416a80d88e29e8a8f4bc9ac3fdfc133b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 940396ad6334e646a37a359f4ed73345056f51ef
+ms.sourcegitcommit: 06b81b66f13774102bb34556479c1ff890011afb
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634767"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67357458"
 ---
 # <a name="get-started-with-compliance-manager"></a>コンプライアンス マネージャーの使用を開始する
 
@@ -88,8 +88,7 @@ Office 365または Microsoft 365 サブスクリプションを持たない Azu
 | **データの閲覧はできるが編集できない**| コンプライアンス マネージャー リーダー  | Azure AD グローバル閲覧者、セキュリティ閲覧者 |
 | **データの編集**| コンプライアンス マネージャーの投稿 | コンプライアンス管理者 |
 | **テスト結果の編集**| コンプライアンス マネージャー評価者 | コンプライアンス管理者 |
-| **評価、テンプレート、およびテナント データの管理**| コンプライアンス マネージャー管理 | コンプライアンス管理者、コンプライアンス データ管理者、セキュリティ管理者  |
-| **ユーザーを割り当てる**| グローバル管理者 | グローバル管理者 |
+| **評価、テンプレート、テナント データを管理する。改善アクションを割り当てる**| コンプライアンス マネージャー管理 | コンプライアンス管理者、コンプライアンス データ管理者、セキュリティ管理者  |
 
 ## <a name="start-a-premium-assessments-trial"></a>Premium 評価試用版を開始する
 

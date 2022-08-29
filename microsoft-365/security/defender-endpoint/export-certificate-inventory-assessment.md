@@ -1,6 +1,6 @@
 ---
 title: デバイスごとの証明書の評価方法とプロパティ
-description: "\"脅威と脆弱性の管理\" データをプルする証明書 API に関する情報を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。"
+description: "\"Microsoft Defender 脆弱性の管理\" データをプルする証明書 API に関する情報を提供します。 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。"
 keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device Vulnerability Assessment, device vulnerability report, secure configuration Assessment, secure configuration report, secure configuration report, software Vulnerabilities assessment, software Vulnerability report, software vulnerability report, vulnerability report by machine,
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: c5f89d92e754648dcaffb134de70516c7274625d
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: 1b47a3b3c0088dca035fa6c85943e1737935cc51
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "66994196"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344923"
 ---
 # <a name="export-certificate-inventory-per-device"></a>デバイスごとの証明書インベントリのエクスポート
 
@@ -32,15 +32,15 @@ ms.locfileid: "66994196"
 - [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/index.yml)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Microsoft Defender 脆弱性の管理を体験しますか? [無料試用版にサインアップしてください。- 更新](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> Microsoft Defender 脆弱性の管理を体験するには [Microsoft Defender 脆弱性の管理パブリック プレビュー試用版](../defender-vulnerability-management/get-defender-vulnerability-management.md)にサインアップする方法について説明します。
 
 さまざまな種類のデータを取得するために、さまざまな API 呼び出しがあります。 一般に、各 API 呼び出しには、組織内のデバイスに必要なデータが含まれています。
 
-- **JSON 応答**  API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の odata.nextLink フィールドを使用 \@して次の結果をフェッチできます。
+- **JSON 応答**  API は、組織内のすべてのデータを JSON 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の \@odata.nextLink フィールドを使用して次の結果をフェッチできます。
 
-- **ファイル経由** この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 Azure Storage から次のようにデータをダウンロードできます。
+- **ファイル経由** この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織におすすめです。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 Azure Storage から次のようにデータをダウンロードできます。
   - すべての組織データを含むダウンロード URL の一覧を取得するには、API を呼び出します。
-  - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
+  - ダウンロード URL を使用してすべてのファイルをダウンロードし、データを好きなように処理します。
 
 "_JSON 応答_ または _ファイル経由_" を使用して収集されるデータは、現在の状態の現在のスナップショットです。 履歴データは含まれません。 履歴データを収集するには、お客様が独自のデータ ストレージにデータを保存する必要があります。
 
@@ -76,26 +76,26 @@ GET /api/machines/certificateAssessmentByMachine
 >
 > 応答で追加の列が返される場合があります。 これらの列は一時的なものであり、削除される可能性があります。 ドキュメント化された列のみを使用します。
 >
-> 次の表で定義されているプロパティは、プロパティ ID でアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+> 次の表で定義されているプロパティは、プロパティ ID でアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこのテーブルにリストされているのと同じ順序で返されるとは限りません。
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-|DeviceId|String|サービス内のデバイスの一意の識別子。
-|DeviceName|String|デバイスの完全修飾ドメイン名 (FQDN)。
+|DeviceId|文字列|サービス内のデバイスの一意の識別子。
+|DeviceName|文字列|デバイスの完全修飾ドメイン名 (FQDN)。
 |Thumbprint|ブール型|証明書の一意の識別子。
 |Path|String|証明書の場所。
-|SignatureAlgorithm|String|ハッシュ アルゴリズムと暗号化アルゴリズムが使用されます。
-|KeySize|String|署名アルゴリズムで使用されるキーのサイズ。
-|ExpirationDate|String|証明書が無効になった日付と時刻。
-|IssueDate|String|証明書が有効になった最も早い日付と時刻。
-|SubjectType|String|証明書の所有者が CA またはエンド エンティティであるかどうかを示します。
-|シリアル番号|String|証明機関のシステム内の証明書の一意の識別子。
+|SignatureAlgorithm|文字列|ハッシュ アルゴリズムと暗号化アルゴリズムが使用されます。
+|KeySize|文字列|署名アルゴリズムで使用されるキーのサイズ。
+|ExpirationDate|文字列|証明書が無効になった日付と時刻。
+|IssueDate|文字列|証明書が有効になった最も早い日付と時刻。
+|SubjectType|文字列|証明書の所有者が CA またはエンド エンティティであるかどうかを示します。
+|シリアル番号|文字列|証明機関のシステム内の証明書の一意の識別子。
 |IssuedTo|オブジェクト|証明書が属するエンティティ。には、デバイス、個人、または組織を指定できます。
 |IssuedBy|オブジェクト|情報を検証し、証明書に署名したエンティティ。
-|KeyUsage|String|証明書の公開キーの有効な暗号化の使用。
-|ExtendedKeyUsage|String|証明書のその他の有効な用途。
-|RbacGroupId|String|ロールベースのアクセス制御 (RBAC) グループ ID。
-|RbacGroupName|String|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
+|KeyUsage|文字列|証明書の公開キーの有効な暗号化の使用。
+|ExtendedKeyUsage|文字列|証明書のその他の有効な用途。
+|RbacGroupId|文字列|ロールベースのアクセス制御 (RBAC) グループ ID。
+|RbacGroupName|文字列|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 
 ## <a name="16-example"></a>1.6 例
 
@@ -156,7 +156,7 @@ GET /api/machines/certificateAssessmentExport
 ### <a name="25-properties-json-response"></a>2.5 プロパティ (JSON 応答)
 
 > [!NOTE]
-> ファイルは、複数行の Json 形式の gzip 圧縮&です。
+> ファイルは、複数行の JSON 形式の gzip 圧縮されています。
 >
 > ダウンロード URL は 3 時間だけ有効です。それ以外の場合は、パラメーターを使用できます。
 >
@@ -168,7 +168,7 @@ GET /api/machines/certificateAssessmentExport
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-|ファイルをエクスポートする|String[array]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧。
+|ファイルをエクスポートする|String[array]|組織の現在のスナップショットを保持しているファイルのダウンロード URL のリスト。
 |GeneratedTime|DateTime|エクスポートが生成された時刻。
 
 

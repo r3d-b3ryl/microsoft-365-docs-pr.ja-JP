@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
 description: 非アクティブなメールボックスの内容を既存のメールボックスに復元 (またはマージ) する方法について説明します。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7c1a976013f522e45b4e96d6b28653fa860fe16f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: b12df38ff1cf9ed5ffef748ea21a86aca742e3c5
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66629225"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359560"
 ---
 # <a name="restore-an-inactive-mailbox"></a>非アクティブなメールボックスを復元する
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 非アクティブなメールボックス (論理的に削除されたメールボックスの一種) は、組織を離れた後に元従業員のメールを保持するために使用されます。 別の従業員が退職した従業員の職責を引き継ぐ場合、またはその従業員が組織に復帰する場合には、非アクティブなメールボックスのコンテンツをユーザーが使用できるようにする 2 つの方法があります。
 

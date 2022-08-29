@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1749404942b42778ecde99417a8e3501c7c4f4cf
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: f7715c8711bfa479533afe2f0b69c9d3f7ad768f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63327225"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326499"
 ---
 # <a name="investigation-resource-type"></a>調査リソースの種類
 
@@ -53,15 +53,15 @@ Defender for Endpoint の自動調査エンティティを表します。
 
 プロパティ|種類|説明
 :---|:---|:---
-ID|String|調査エンティティの ID。 
+ID|文字列|調査エンティティの ID。 
 startTime|DateTime Nullable|調査が作成された日時。
 endTime|DateTime Nullable|調査が完了した日時。
-cancelledBy|String|その調査を取り消したユーザー/アプリケーションの ID。
-状態|列挙|調査の現在の状態。 指定できる値は、"不明"、"終了済み" です。 'SuccessfullyRemediated'、'Benign'、'Failed'、'PartiallyRemediated'、'Running'、'PendingApproval'、'PendingResource'、'PartiallyInvestigated'、'TerminatedByUser'、'TerminatedBySystem'、'Queued'、'InnerFailure'、'PreexistingAlert'、'UnsupportedAlertType'、'SuppressedAlert'。
-statusDetails|String|調査の状態に関する追加情報。
-machineId|String|調査が実行されるデバイスの ID。
+cancelledBy|文字列|その調査を取り消したユーザー/アプリケーションの ID。
+状態コード|列挙|調査の現在の状態。 指定できる値は、"不明"、"終了済み" です。 'SuccessfullyRemediated'、'Benign'、'Failed'、'PartiallyRemediated'、'Running'、'PendingApproval'、'PendingResource'、'PartiallyInvestigated'、'TerminatedByUser'、'TerminatedBySystem'、'Queued'、'InnerFailure'、'PreexistingAlert'、'UnsupportedAlertType'、'SuppressedAlert'。
+statusDetails|文字列|調査の状態に関する追加情報。
+MachineId|String|調査が実行されるデバイスの ID。
 computerDnsName|String|調査が実行されるデバイスの名前。
-triggeringAlertId|String|調査をトリガーしたアラートの ID。
+triggeringAlertId|文字列|調査をトリガーしたアラートの ID。
 
 ## <a name="json-representation"></a>Json 表現
 

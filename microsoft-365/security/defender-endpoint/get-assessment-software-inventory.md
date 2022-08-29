@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 07535a2dd433bee2b2d92b206efa2b964212d74d
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 365b932de39e558bbe30c84ba793e59b1db447c3
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67276768"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344531"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>デバイスごとのソフトウェア インベントリ評価をエクスポートする
 
@@ -38,11 +38,11 @@ ms.locfileid: "67276768"
 
 異なる API 呼び出しは、さまざまな種類のデータを取得します。 データの量は大きくなる可能性があるため、取得する方法は 2 つあります。
 
-- [ソフトウェア インベントリ評価 **JSON 応答を** エクスポートする](#1-export-software-inventory-assessment-json-response)API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の odata.nextLink フィールドを使用 \@して次の結果をフェッチできます。
+- [ソフトウェア インベントリ評価 **JSON 応答を** エクスポートする](#1-export-software-inventory-assessment-json-response)API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の \@odata.nextLink フィールドを使用して次の結果をフェッチできます。
 
-- [**ファイルを使用して** ソフトウェア インベントリの評価をエクスポートする](#2-export-software-inventory-assessment-via-files) この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からすべてのデータをダウンロードできます。
+- [**ファイルを使用して** ソフトウェア インベントリの評価をエクスポートする](#2-export-software-inventory-assessment-via-files) この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織におすすめです。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からすべてのデータをダウンロードできます:
   - すべての組織データを含むダウンロード URL の一覧を取得するには、API を呼び出します。
-  - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
+  - ダウンロード URL を使用してすべてのファイルをダウンロードし、データを好きなように処理します。
 
 ( _Json 応答_ または _ファイルを使用して_) 収集されるデータは、現在の状態の現在のスナップショットです。 履歴データは含まれません。 履歴データを収集するには、お客様が独自のデータ ストレージにデータを保存する必要があります。
 
@@ -85,29 +85,29 @@ GET /api/machines/SoftwareInventoryByMachine
 > [!NOTE]
 >
 > - 各レコードは約 0.5 KB のデータです。 正しい pageSize パラメーターを選択するときは、これを考慮する必要があります。
-> - 次の表で定義されているプロパティは、プロパティ ID でアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+> - 次のテーブルで定義されているプロパティは、プロパティ ID でアルファベット順にリスト表示されます。 この API を実行する場合、結果の出力は必ずしもこのテーブルにリストされているのと同じ順序で返されるとは限りません。
 > - 応答で追加の列が返される場合があります。 これらの列は一時的なものであり、削除される可能性があります。ドキュメント化された列のみを使用してください。
 
 <br>
 
 ****
 
-プロパティ (ID)|データ型|説明|返された値の例
+プロパティ (ID)|データ型|説明|戻り値の例
 :---|:---|:---|:---
-DeviceId|string|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
+DeviceId|文字列|サービス内のデバイスの一意の識別子。|9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName|文字列|デバイスの完全修飾ドメイン名 (FQDN)。|johnlaptop.europe.contoso.com
 DiskPaths|Array[string]|製品がデバイスにインストールされていることを示すディスク証拠。|[ "C:\\Program Files (x86)\\Microsoft\\Silverlight\\アプリケーション\\silverlight.exe" ]
-EndOfSupportDate|文字列|このソフトウェアのサポートが終了または終了する日付。|2020-12-30
-EndOfSupportStatus|string|サポートの終了状態。 次の値を含めることができます。None、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。|今後の EOS
+EndOfSupportDate|string|このソフトウェアのサポートが終了または終了する日付。|2020-12-30
+EndOfSupportStatus|文字列|サポートの終了状態。 次の値を含めることができます。None、EOS バージョン、今後の EOS バージョン、EOS ソフトウェア、今後の EOS ソフトウェア。|今後の EOS
 ID|string|レコードの一意の識別子。|123ABG55_573AG&mnp!
 NumberOfWeaknesses|int|このデバイス上のこのソフトウェアの弱点の数|3
-OSPlatform|文字列|デバイスで実行されているオペレーティング システムのプラットフォーム。 これらは、Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システムです。 詳細については、tvm でサポートされているオペレーティング システムとプラットフォームを参照してください。|Windows10 とWindows 11
+OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これらは、Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システムです。 詳細については、サポートされているオペレーティング システムとプラットフォームMicrosoft Defender 脆弱性の管理参照してください。|Windows10 とWindows 11
 RbacGroupName|文字列|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。|サーバー
 RegistryPaths|Array[string]|製品がデバイスにインストールされていることを示すレジストリ証拠。|[ "HKEY_LOCAL_MACHINE\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft Silverlight" ]
 SoftwareFirstSeenTimestamp|string|このソフトウェアがデバイスで初めて表示された。|2019-04-07 02:06:47
-SoftwareName|string|ソフトウェア製品の名前。|Silverlight
-SoftwareVendor|string|ソフトウェア ベンダーの名前。|microsoft
-SoftwareVersion|string|ソフトウェア製品のバージョン番号。|81.0.4044.138
+SoftwareName|文字列|ソフトウェア製品の名前。|Silverlight
+SoftwareVendor|文字列|ソフトウェア ベンダーの名前。|microsoft
+SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。|81.0.4044.138
 |
 
 ### <a name="16-examples"></a>1.6 例
@@ -256,10 +256,10 @@ GET /api/machines/SoftwareInventoryExport
 
 ****
 
-プロパティ (ID)|データ型|説明|返された値の例
+プロパティ (ID)|データ型|説明|戻り値の例
 :---|:---|:---|:---
 ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
-GeneratedTime|文字列|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
+GeneratedTime|string|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
 |
 
 ### <a name="26-examples"></a>2.6 例
@@ -289,9 +289,9 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 - [デバイスごとの評価方法とプロパティをエクスポートする](get-assessment-methods-properties.md)
 - [デバイスごとのセキュリティで保護された構成評価をエクスポートする](get-assessment-secure-config.md)
 - [デバイスごとのソフトウェア脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
-- [製品コード以外のソフトウェア インベントリ評価をエクスポートする](get-assessment-non-cpe-software-inventory.md)
+- [製品コード以外のソフトウェア在庫評価のエクスポート](get-assessment-non-cpe-software-inventory.md)
 
 その他の関連
 
-- [リスクベースの脅威&脆弱性管理](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [組織の脆弱性](tvm-weaknesses.md)

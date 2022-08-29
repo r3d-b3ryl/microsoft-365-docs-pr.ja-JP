@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 14b00e936111c54cd100e847a9ec18f921e34880
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 8b9186e37b102b9b27b0231167c119ce1a104048
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283235"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324147"
 ---
 # <a name="get-machine-by-id-api"></a>ID API でコンピューターを取得する
 

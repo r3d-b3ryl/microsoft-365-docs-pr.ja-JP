@@ -1,31 +1,31 @@
 ---
-title: Windows サーバー アプリケーションのテスト
+title: Windows Server アプリケーションのテスト
 description: Windows サーバー アプリケーションのテストを使用して検証する方法
 search.appverid: MET150
 author: mansipatel-usl
-ms.author: mapatel
+ms.author: tinachen
 manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: 99868e53e98bded9139ecedea9c9d62e9d48fd2f
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 5d111b680105628ab1351a2cc45eeba01c41aa68
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60211755"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316010"
 ---
-# <a name="windows-server-application-testing"></a>Windows サーバー アプリケーションテスト
+# <a name="windows-server-application-testing"></a>Windows Server アプリケーション テスト
 
-Microsoft 365用のテスト ベースを使用すると、Server Core を含む、Windows Server 2016と 2019 に対してアプリケーションを検証できるようになりました。
+Microsoft 365 の Test Base を使用すると、Server Core を含むWindows Server 2016と 2019 に対してアプリケーションを検証できるようになりました。
 
-Microsoft 365の Test Base 上のWindows Server 2016および 2019 オペレーティング システムのプレリリース更新プログラムに対するアップロード済みアプリケーションの検証を開始するには、次の手順に従ってください。
+Test Base for Microsoft 365 のWindows Server 2016および 2019 オペレーティング システムのプレリリース更新プログラムに対してアップロードされたアプリケーションの検証を開始するには、次の手順に従ってください。
 
 1. セルフサービスオンボード ポータルにログオンします。 左側のナビゲーション メニューで、テストの詳細の下を`Package catalogue`選択`Upload new package`して入力します。
 
@@ -33,7 +33,7 @@ Microsoft 365の Test Base 上のWindows Server 2016および 2019 オペレー�
 
    ![セキュリティ更新プログラムを選択します。](Media/selecting-security-updates.png)
 
-3. テストする OS バージョンで、該当する OS バージョンを選択します。 Windowsサーバー OS のバージョン、またはサーバーとクライアントの OS バージョンの組み合わせを選択できます。
+3. テストする OS バージョンで、該当する OS バージョンを選択します。 Windows Server OS のバージョンまたはサーバーとクライアントの OS バージョンの組み合わせを選択できます。
 
    ![OS バージョンを選択します。](Media/selecting-OS-versions.png)
 
@@ -45,4 +45,4 @@ Microsoft 365の Test Base 上のWindows Server 2016および 2019 オペレー�
 
 次の記事に進み、 **機能テストを開始する**
 > [!div class="nextstepaction"]
-> [次の手順](functional.md)
+> [次のステップ](functional.md)

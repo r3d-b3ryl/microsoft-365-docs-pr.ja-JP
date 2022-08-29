@@ -16,12 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 3c7c72597416bda80894f8d44fbf5dbba3d58808
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 1dca2fd171641f25e41057414cbaca784aee1007
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603904"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327225"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>グループ ポリシー オブジェクトを使用したMicrosoft Defender for Endpointの管理
 
@@ -54,7 +54,7 @@ Azure Active Directory Domain Servicesの グループ ポリシー オブジェ
 |ランサムウェアから保護するように **フォルダー アクセスの制御を構成** する <br/><br/> *[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソーイウェア保護とも呼ばれます。*|[グループ ポリシーを使用してフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#group-policy)|
 |インターネット上の悪意のあるサイトやファイルから保護するように **Microsoft Defender SmartScreen を構成** します。|[グループ ポリシーを使用して Microsoft Defender SmartScreen グループ ポリシーとモバイル デバイス管理 (MDM) の設定を構成する](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#group-policy-settings)|
 |Windows を実行している組織のデバイスの情報を保護するように **暗号化と BitLocker を構成する**|[BitLocker グループ ポリシー設定](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings)|
-|資格情報盗難攻撃から保護するように **Microsoft Defender Credential Guard を構成する**|[グループ ポリシーを使用してWindows Defender Credential Guardを有効にする](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
+|資格情報盗難攻撃から保護するように **Microsoft Defender Credential Guard を構成する**|[グループ ポリシーを使用してWindows Defender Credential Guard を有効にする](/windows/security/identity-protection/credential-guard/credential-guard-manage#enable-windows-defender-credential-guard-by-using-group-policy)|
 
 ## <a name="configure-your-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルを構成する
 
@@ -63,8 +63,8 @@ Azure Active Directory Domain Servicesの グループ ポリシー オブジェ
 - [Microsoft 365 Defenderの概要](/microsoft-365/security/defender-endpoint/use)
 - [エンドポイント保護: Microsoft 365 Defender](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-security-center)
 
-## <a name="next-steps"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-- [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender 脆弱性管理の概要を確認する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender ポータルのセキュリティ操作ダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [IntuneでMicrosoft Defender for Endpointを管理する](manage-mde-post-migration-intune.md)

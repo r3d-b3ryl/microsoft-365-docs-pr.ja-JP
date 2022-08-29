@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: 一般法人向け Microsoft 365 のサブスクリプションが期限切れになった場合、無効になった場合、または解約された場合に、データがどうなるかについて説明します。
 ms.date: 09/16/2021
-ms.openlocfilehash: a9837a146ff6494ceaa94adeefeeaf6ed7769986
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
-ms.translationtype: HT
+ms.openlocfilehash: 74d2ff2a2df4ed24a0fb13512d1f320bf24d6b42
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128703"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325729"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>一般法人向け Microsoft 365 のサブスクリプションが終了したとき、データとアクセスはどうなりますか?
 
@@ -59,7 +59,7 @@ ms.locfileid: "66128703"
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>サブスクリプションをキャンセルした場合
 
-契約終了日前にサブスクリプションをキャンセルすると、サブスクリプションは期限切れステージをスキップして、直接無効ステージになります。無効状態は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。キャンセルする前に[データをバックアップ](back-up-data-before-switching-plans.md)しておくことをお勧めします。ただし、管理者であれば、無効ステージで、組織のデータにアクセスしてバックアップすることができます。残した顧客データは、90 日後に削除される可能性があり、キャンセルしてから 180 日以内にすべて削除されます。
+契約終了日前にサブスクリプションをキャンセルすると、サブスクリプションは期限切れステージをスキップして、直接無効ステージになります。無効状態は、ほとんどのサブスクリプションおよびほとんどの国と地域で 90 日間です。キャンセルする前に[データをバックアップ](move-users-different-subscription.md)しておくことをお勧めします。ただし、管理者であれば、無効ステージで、組織のデータにアクセスしてバックアップすることができます。残した顧客データは、90 日後に削除される可能性があり、キャンセルしてから 180 日以内にすべて削除されます。
   
 サブスクリプションをキャンセルした場合に想定される動作を説明します。
   
@@ -105,7 +105,7 @@ ms.locfileid: "66128703"
 
 この状態で、ユーザーは、Microsoft 365 ポータル、Office アプリケーション、サービス (メールや SharePoint Online など) に正常にアクセスできます。
   
-管理者は、引き続き管理センターにアクセスできます。期限が切れても心配はいりません。全体管理者または課金管理者は、[サブスクリプションを再アクティブ化し](reactivate-your-subscription.md)、Microsoft 365 を使い続けることができます。それ以外の場合は、[データをバックアップ](back-up-data-before-switching-plans.md)してください。
+管理者は、引き続き管理センターにアクセスできます。期限が切れても心配はいりません。全体管理者または課金管理者は、[サブスクリプションを再アクティブ化し](reactivate-your-subscription.md)、Microsoft 365 を使い続けることができます。それ以外の場合は、[データをバックアップ](move-users-different-subscription.md)してください。
   
 ### <a name="state-disabled"></a>状態: 無効
 
@@ -113,7 +113,7 @@ ms.locfileid: "66128703"
 
 この状態では、アクセスが大幅に縮小されます。ユーザーは、サインインや、サービス (メール、SharePoint Online など) へのアクセスを行うことができなくなり、Office アプリケーションは、最終的に読み取り専用の機能制限モードになり、[ライセンスのない製品通知](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380)が表示されます。管理者は、引き続きサインインして管理センターにアクセスできますが、ライセンスをユーザーに割り当てることはできません。チーム サイトのすべてのユーザー データ、メール、ファイルを含む顧客データには、管理者だけがアクセスできます。
 
-全体管理者または課金管理者は、[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)し、すべての顧客データをそのまま残して Microsoft 365 を引き続き使用することができます。再アクティブ化しない場合は、[データをバックアップ](back-up-data-before-switching-plans.md)してください。
+全体管理者または課金管理者は、[サブスクリプションを再アクティブ化](reactivate-your-subscription.md)し、すべての顧客データをそのまま残して Microsoft 365 を引き続き使用することができます。再アクティブ化しない場合は、[データをバックアップ](move-users-different-subscription.md)してください。
 
 ### <a name="state-deleted"></a>状態: 削除済み
   

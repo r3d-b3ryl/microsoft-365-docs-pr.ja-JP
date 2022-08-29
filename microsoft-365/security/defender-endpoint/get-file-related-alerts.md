@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: b88fc9add77a790c21b3851e3e80f02681308195
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 35b07504d393bca3c36608b841b259914cd5fcd0
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283252"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327005"
 ---
 # <a name="get-file-related-alerts-api"></a>ファイル関連のアラート API を取得する
 

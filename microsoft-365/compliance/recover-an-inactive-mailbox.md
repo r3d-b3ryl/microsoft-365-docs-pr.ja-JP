@@ -17,14 +17,16 @@ search.appverid:
 ms.assetid: 35d0ecdb-7cb0-44be-ad5c-69df2f8f8b25
 ms.custom: seo-marvel-apr2020
 description: 非アクティブなメールボックスの内容を含む新しいメールボックスに変換して、Office 365内の非アクティブなメールボックスの内容を回復する方法について説明します。
-ms.openlocfilehash: f09104703807532770c7ea5b660e1088589883ec
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 6de92c2325d0457c03c4501b0aac6374dff690c8
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639668"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359516"
 ---
 # <a name="recover-an-inactive-mailbox"></a>非アクティブなメールボックスを回復する
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 非アクティブなメールボックス (論理的に削除されたメールボックスの一種) は、組織を離れた後に元従業員のメールを保持するために使用されます。 その従業員が組織に復帰する場合、または別の従業員が元従業員の職責を引き継ぐ場合には、非アクティブなメールボックスのコンテンツをユーザーが使用できるようにする 2 つの方法があります。
 

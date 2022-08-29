@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 2e07b9545ef6bab0c7b93188edf65d43ae0378b2
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 945ca97d9492f9aad96603a7282c326186475613
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61282839"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327071"
 ---
 # <a name="get-domain-statistics-api"></a>ドメイン統計 API を取得する
 
@@ -52,8 +52,8 @@ ms.locfileid: "61282839"
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|URL。Read.All|'読み取り URL'
-委任 (職場または学校のアカウント)|URL。Read.All|'読み取り URL'
+アプリケーション|Url。Read.All|'読み取り URL'
+委任 (職場または学校のアカウント)|Url。Read.All|'読み取り URL'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:

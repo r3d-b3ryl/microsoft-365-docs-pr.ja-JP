@@ -8,18 +8,18 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/09/2022
+ms.date: 08/11/2022
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 750b00bf2418765c780471356ad01208667b4d2c
-ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
+ms.openlocfilehash: 5b336a0650bc30eb1ebf23f8356b6c3c1ebb4e79
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/09/2022
-ms.locfileid: "67294613"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324169"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-device-installation"></a>Microsoft Defender for Endpoint デバイス制御デバイスのインストール
 
@@ -29,7 +29,7 @@ ms.locfileid: "67294613"
 
 
 > [!NOTE]
-> リムーバブル ストレージを管理している場合は、「[Microsoft Defender for Endpointデバイス コントロールリムーバブル ストレージ Access Control](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control)」を参照してください。
+> リムーバブル ストレージを管理する場合は、「[デバイス コントロールリムーバブル ストレージ Access Control Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/device-control-removable-storage-access-control)」を参照してください。
 
 デバイスコントロール デバイスのインストールMicrosoft Defender for Endpoint、次のタスクを実行できます。
 

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 02/01/2021
+ms.date: 08/08/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.custom:
 - it-pro
 - intro-overview
 description: Microsoft 365 for Enterprise のコンポーネント、計画、および展開パスの概要を説明します。
-ms.openlocfilehash: 6c79427f48867f5da7cf869e4856ad6b31dc6ed1
-ms.sourcegitcommit: 13a1199fbfeb329da77ce87b2781d5cc77e4a201
-ms.translationtype: HT
+ms.openlocfilehash: b4ebce35c1f642a6cfa8ee72489c1d8f531e3f67
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67037668"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335762"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Microsoft 365 for Enterprise の概要
 
@@ -120,7 +120,7 @@ Microsoft 365 for Enterprise の製品、機能、コンポーネントの展開
 
 ## <a name="additional-microsoft-365-products"></a>追加の Microsoft 365 製品
 
-- [Microsoft 365 Business Premium](../admin/index.yml)
+- [Microsoft 365 Business Premium](/microsoft-365/business/)
 
   小規模および中規模の企業向けに、優れた生産性やコラボレーション機能と、ビジネス データを保護するためのデバイス管理およびセキュリティ ソリューションを統合します。
 

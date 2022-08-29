@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bad5e4bbc21eb968a5d856653366eb3967759595
-ms.sourcegitcommit: d7193ee954c01c4172e228d25b941026c8d92d30
+ms.openlocfilehash: 5165adfd402415ddd7bd5a0fd6b5acb098fd49f1
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/02/2022
-ms.locfileid: "67175534"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328455"
 ---
 # <a name="start-using-microsoft-defender-experts-for-hunting"></a>ハンティングに Microsoft Defender エキスパートの使用を開始する
 
@@ -40,7 +40,7 @@ Microsoft 365 Defenderおよび Defender Experts for Hunting を初めて使用�
 1. ウェルカム メールを受け取ったら、[**Microsoft 365 Defenderにログイン**] を選択します。
 2. Microsoft アカウントを既に持っている場合はサインインします。 存在しない場合は、作成します。
 3. Microsoft 365 Defenderクイック ツアーでは、セキュリティ スイートの機能とその重要性について理解します。 [ **クイック ツアーを行う**] を選択します。  
-4. Microsoft Defender エキスパート サービスの概要と、Microsoft Defender エキスパート サービスが提供する機能に関する簡単な説明を参照してください。 **[次へ]** を選択します。 ウェルカム ページが表示されます。
+4. Microsoft Defender エキスパート サービスの概要と、Microsoft Defender エキスパート サービスが提供する機能に関する簡単な説明を参照してください。 [**次へ**] を選択します。 ウェルカム ページが表示されます。
 
 ![Defender Experts for Hunting サービス用のカードを含むMicrosoft 365 Defenderウェルカム ページのスクリーンショット。](../../media/mte/defenderexperts/start-using-defender-experts-for-hunting.png)
 
@@ -54,7 +54,7 @@ Defender Experts Notification サービスには、次のものが含まれま�
 
 次のスクリーンショットを参照して、Defender エキスパート通知のサンプルを確認してください。
 
-![Microsoft 365 Defenderの Defender エキスパート通知の Secreenshot。 Defender Expert Notification には、観察された脅威またはアクティビティ、エグゼクティブ サマリー、推奨事項の一覧を説明するタイトルが含まれています。](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
+![Microsoft 365 Defenderの Defender エキスパート通知のスクリーンショット。 Defender Expert Notification には、観察された脅威またはアクティビティ、エグゼクティブ サマリー、推奨事項の一覧を説明するタイトルが含まれています。](../../media/mte/defenderexperts/receive-defender-experts-notification.png)
 
 ### <a name="where-youll-find-defender-experts-notifications"></a>Defender エキスパート通知の場所
 
@@ -132,6 +132,6 @@ Microsoft 365 セキュリティ ポータル内で **Defender エキスパー�
 - Microsoft Defender Experts for Hunting からこの Defender エキスパート通知を受け取っています。 独自のインシデント対応チームはありません。 この時点でできることと、インシデントをどのように含めることができるか。
 - Microsoft Defender Experts for Hunting から Defender エキスパート通知を受け取った。 インシデント対応チームに渡すことができるデータは何ですか?
 
-### <a name="next-step"></a>次の手順
+### <a name="next-step"></a>次のステップ
 
 - [Microsoft 365 Defenderの Defender Experts for Hunting レポートを理解する](defender-experts-report.md)

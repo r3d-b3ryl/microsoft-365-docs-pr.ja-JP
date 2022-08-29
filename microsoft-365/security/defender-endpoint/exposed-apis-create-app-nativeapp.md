@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender for Endpoint API を使用する
 ms.reviewer: ''
-description: ネイティブ Windows アプリを設計して、ユーザーなしでMicrosoft Defender for Endpointにプログラムでアクセスできるようにする方法について説明します。
+description: ユーザーなしでMicrosoft Defender for Endpointにプログラムでアクセスできるようにネイティブ Windows アプリを設計する方法について説明します。
 keywords: apis, graph api, サポートされている API, アクター, アラート, デバイス, ユーザー, ドメイン, IP, ファイル, 高度な捜索, クエリ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: aec4c7bdc0da76a6a52a8b8f19d89b8b54f3df9f
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: c7adaa79ef98b0ccfc1c12e2f84b30c8cd5600fe
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65173482"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327906"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Microsoft Defender for Endpoint API を使用する
 
@@ -48,7 +48,7 @@ ms.locfileid: "65173482"
 
 必要なアクセスが不明な場合は、 [概要ページ](apis-intro.md)を参照してください。
 
-Microsoft Defender for Endpointは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、作業フローを自動化し、Microsoft Defender for Endpoint機能に基づいてイノベーションを行います。 API アクセスには、OAuth2.0 認証が必要です。 詳細については、「[OAuth 2.0 Authorization Code Flow」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
+Microsoft Defender for Endpointは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API を使用すると、作業フローを自動化し、Microsoft Defender for Endpoint機能に基づいてイノベーションを行います。 API アクセスには、OAuth2.0 認証が必要です。 詳細については、「 [OAuth 2.0 承認コード フロー」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 
@@ -69,9 +69,9 @@ Microsoft Defender for Endpointは、一連のプログラム API を通じて�
 
 1. **グローバル管理者** ロールを持つユーザー アカウントを使用して [Azure](https://portal.azure.com) にログオンします。
 
-2. **Azure Active Directory アプリの登録** \>  \> **新しい登録** に移動します。
+2. **Azure Active Directory** \> **アプリの登録** \> **新しい登録** に移動します。
 
-   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Microsoft Azure ポータルの [アプリの登録] ページ" lightbox="images/atp-azure-new-app2.png":::
+   :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Microsoft Azure portalの [アプリの登録] ページ" lightbox="images/atp-azure-new-app2.png":::
 
 3. [**アプリケーションの登録**] ページが表示されたら、以下のアプリケーションの登録情報を入力します。
    - **名前** - アプリのユーザーに表示されるわかりやすいアプリケーション名を入力します。
@@ -132,7 +132,7 @@ Microsoft Defender for Endpointは、一連のプログラム API を通じて�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-AAD トークンの詳細については、[Azure ADチュートリアルを](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)参照してください。
+AAD トークンの詳細については、 [Azure AD のチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
 
 ### <a name="using-c"></a>C の使用\#
 

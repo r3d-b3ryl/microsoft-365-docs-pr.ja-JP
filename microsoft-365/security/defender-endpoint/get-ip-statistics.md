@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: a98b78e85956d49c3b7d7e389882e017dcede3a4
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: df3da83e8f92247429029c8acf7212f164b3ea5a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283257"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325949"
 ---
 # <a name="get-ip-statistics-api"></a>IP 統計 API を取得する
 

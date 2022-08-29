@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cc28ea9082e7afbb6f623e325a48119de393f075
-ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
+ms.openlocfilehash: 9a211034b164381226df0d5d79d0d709db3c2e98
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "61364250"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326741"
 ---
 # <a name="create-alert-api"></a>アラート API を作成する
 
@@ -87,13 +87,13 @@ Content-Type | 文字列 | application/json. **必須**。
 プロパティ | 種類 | 説明
 :---|:---|:---
 eventTime | DateTime(UTC) | 高度なハンティングから取得した、文字列としてのイベントの正確な時刻。 たとえば、  ```2018-08-03T16:45:21.7115183Z``` **必須** です。
-reportId | String | 高度な捜索から取得したイベントの reportId。 **必須**。
-machineId | String | イベントが識別されたデバイスの ID。 **必須**。
-severity | String | アラートの重大度。 プロパティの値は、'Low'、'Medium'、'High' です。 **必須**。
+reportId | 文字列 | 高度な捜索から取得したイベントの reportId。 **必須**。
+MachineId | String | イベントが識別されたデバイスの ID。 **必須**。
+severity | 文字列 | アラートの重大度。 プロパティの値は、'Low'、'Medium'、'High' です。 **必須**。
 title | String | アラートのタイトル。 **必須**。
 説明 | String | アラートの説明。 **必須**。
-recommendedAction| String | セキュリティ担当者は、アラートを分析するときにこのアクションを実行する必要があります。 **必須**。
-category| String | アラートのカテゴリ。 プロパティの値は次のとおりです。"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" **が必要** です。
+recommendedAction| 文字列 | セキュリティ担当者は、アラートを分析するときにこのアクションを実行する必要があります。 **必須**。
+category| 文字列 | アラートのカテゴリ。 プロパティの値は次のとおりです。"General"、"CommandAndControl"、"Collection"、"CredentialAccess"、"DefenseEvasion"、"Discovery"、"Exfiltration"、"Exploit"、"Execution"、"InitialAccess"、"LateralMovement"、"Malware"、"Persistence"、"PrivilegeEscalation"、"Ransomware"、"SuspiciousActivity" **が必要** です。
 
 ## <a name="response"></a>応答
 

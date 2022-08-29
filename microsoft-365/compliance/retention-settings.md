@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 組織のデータを保持または削除するために、Microsoft 365 アイテム保持ポリシーと保持ラベルに対して構成できる設定について説明します。
-ms.openlocfilehash: b329b7f2ebb73e791c4fc2330d66faf35d67a960
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
-ms.translationtype: HT
+ms.openlocfilehash: c0c5003a1e4a8b8aba231a0f3790aa0a82f26e15
+ms.sourcegitcommit: a1c86e51f6fec7517356251c3b99b1a86705c8c5
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943334"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336712"
 ---
 # <a name="common-settings-for-retention-policies-and-retention-label-policies"></a>保持ポリシーと保持ラベルの制限
 
@@ -63,10 +63,10 @@ ms.locfileid: "66943334"
 
 サイトのプロパティ名は、SharePoint サイトで管理されているプロパティに基づいています。 カスタム属性の詳細については、「[カスタム SharePoint サイトプロパティを使用した Adaptive Policy Scope sでの Microsoft 365保持の適用](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/using-custom-sharepoint-site-properties-to-apply-microsoft-365/ba-p/3133970)」を参照してください。
 
-ユーザーとグループの属性名は、Azure AD 属性にマップされる[フィルター可能な受信者プロパティ](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)に基づいています。次に例を示します。
+ユーザーとグループの属性名は、Azure AD 属性にマップされる [フィルター可能な受信者プロパティ](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties) に基づいています。 例:
 
-- **Alias** は LDAP 名 **mailNickname** にマップされ、Azure AD 管理センターで **Email** と表示されます。
-- **Email アドレス** は LDAP 名 **proxyAddresses** にマップされ、Azure AD 管理センターで **Proxy アドレス** として表示されます。
+- **エイリアス** は、Azure AD 管理センターで **Email** として表示される LDAP 名 **mailNickname** にマップされます。
+- **Email アドレスは、** Azure AD 管理センターで **プロキシ アドレス** として表示される LDAP 名 **proxyAddresses** にマップされます。
 
 表にリストされている属性とプロパティは、単純なクエリ ビルダーを使用してアダプティブ スコープを構成するときに簡単に指定できます。 次のセクションで説明するように、追加の属性とプロパティは高度なクエリ ビルダーでサポートされています。
 
@@ -86,10 +86,10 @@ ms.locfileid: "66943334"
 1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)で、次のいずれかの場所に移動します。
     
     - レコード管理ソリューションを使用している場合:
-        - **[ソリューション]** > **「レコード管理]** > **[アダプティブ スコープ]** タブ > + **「スコープの作成]**
+        - **ソリューション** \>**レコード管理** \>**[アダプティブ スコープ**] タブ **[スコープの作成**]\> + 
         
     - データ ライフサイクル管理ソリューションを使用している場合:
-       - [**ソリューション**]  >  [**データ ライフサイクル管理**]  >  [**アダプティブ スコープ**] タブ > + [**スコープの作成**]
+       - **ソリューション** \>**データ ライフサイクル管理** \>**Microsoft 365** \>**[アダプティブ スコープ**] タブ **[スコープの作成**]\> + 
     
     ナビゲーション ウィンドウにすぐに解決方法が表示されない場合は、まず、**[すべて表示]** を選択します。 
 
@@ -127,7 +127,7 @@ ms.locfileid: "66943334"
     
     - **SharePoint sites** スコープの場合は、キーワード クエリ言語 (KQL) を使用します。 KQL を使用してインデックス付きサイト プロパティを使用して SharePoint を検索する方法はすでにご存じかも知れません。 これらの KQL クエリを指定するには「[Keyword Query Language (KQL) 構文リファレンス](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference)」を参照してください。
         
-        たとえば、SharePoint サイト範囲には、Microsoft 365 グループ接続サイトと OneDrive サイトを含むすべての SharePoint サイトの種類が自動的に含まれるため、インデックス付きサイト プロパティ **Site Template** を使用して、特定のサイトの種類を含めたり除外したりできます。指定できるテンプレートは次のとおりです:
+        たとえば、SharePoint サイト スコープには、Microsoft 365 グループ接続サイトと OneDrive サイトを含むすべての SharePoint サイトの種類が自動的に含まれるため、インデックス付きサイト プロパティ **SiteTemplate** を使用して、特定のサイトの種類を含めたり除外したりできます。 指定できるテンプレート:
         - 最新のコミュニケーション サイトの `SITEPAGEPUBLISHING`
         - Microsoft 365 グループ接続サイトの `GROUP`
         - Microsoft Teams プライベート チャネル サイトの `TEAMCHANNEL`
@@ -302,6 +302,10 @@ SharePoint サイトまたは OneDrive アカウントの場所を指定する�
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Microsoft 365 グループの構成情報
 
 Microsoft 365 グループ (以前の Office 365 グループ) のコンテンツを保持または削除するには、**Microsoft 365 グループ** の場所を使用する必要があります。 アイテム保持ポリシーの場合、この場所にはグループ メールボックスと SharePoint チーム サイトが含まれます。 保持ラベルの場合、この場所には SharePoint チーム サイトのみが含まれます。
+
+Microsoft 365 グループに含まれる項目と除外される項目の詳細については、次の情報を参照してください。
+- グループ メールボックスの場合は、「Exchange [リテンション期間の保持と削除に含まれるもの](retention-policies-exchange.md#whats-included-for-retention-and-deletion) 」を参照してください。
+- SharePoint チーム サイトについては、「SharePoint [リテンション期間の保持と削除に含まれるもの](retention-policies-sharepoint.md#whats-included-for-retention-and-deletion) 」を参照してください。
 
 このポリシーの場所を対象とするメールボックスには、保持設定が適用される前に少なくとも 10 MB のデータが必要です。
 

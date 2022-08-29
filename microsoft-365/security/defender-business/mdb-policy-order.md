@@ -10,17 +10,18 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
-ms.openlocfilehash: 361a1a08569f24c83498fddeb0e4c2b9bd8c5d02
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 4d3f2f7a04891fdf3e08f06d6744894e18e944dd
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66770879"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320352"
 ---
 # <a name="understand-policy-order-in-microsoft-defender-for-business"></a>Microsoft Defender for Businessでポリシーの順序を理解する
 
@@ -31,7 +32,6 @@ Defender for Business には、従業員が使用するデバイスが確実に�
 ポリシーが追加されると、優先度の順序が割り当てられていることがわかります。 定義するポリシーの優先度の順序は編集できますが、既定のポリシーの優先度の順序は変更できません。 たとえば、Windows クライアント デバイスには、3 つの次世代保護ポリシーがあるとします。 この場合、既定のポリシーの優先度は 3 です。 1 と 2 の番号が付いたポリシーの順序を変更できますが、既定のポリシーはリスト内の 3 番目の番号のままになります。 
 
 **複数のポリシーについて覚えておく必要がある重要な点は、デバイスが最初に適用されたポリシーのみを受け取るということです。** 3 つの次世代ポリシーの前の例を参照すると、3 つのポリシーすべてで対象となるデバイスがあるとします。 この場合、これらのデバイスはポリシー番号 1 を受け取りますが、2 と 3 という番号のポリシーは受け取りません。 
-
 
 ## <a name="key-points-to-remember-about-policy-order"></a>ポリシーの順序について覚えておく必要がある重要なポイント
 

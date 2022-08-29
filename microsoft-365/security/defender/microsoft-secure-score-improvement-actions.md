@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 8991c2aca277d2a08e5f8924a5e5cb354df6dc1f
-ms.sourcegitcommit: a4729532278de62f80f2160825d446f6ecd36995
+ms.openlocfilehash: d09c64d7986a85bbc90469d7cd8cc20bdf0d367e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "64569456"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328565"
 ---
 # <a name="assess-your-security-posture-with-microsoft-secure-score"></a>Microsoft Secure Score を使用してセキュリティ体制を評価する
 
@@ -37,7 +37,7 @@ Microsoft セキュア スコアは組織のセキュリティ体制を測定す
 
 必要な情報をより迅速に見つけられるように、Microsoft の改善アクションはグループにまとめられています。
 
-- ID (Azure Active Directory アカウント&ロール)
+- ID (Azure Active Directory アカウント & ロール)
 - デバイス (Microsoft Defender for Endpoint、[デバイスの Microsoft Secure Score](/windows/security/threat-protection/microsoft-defender-atp/tvm-microsoft-secure-score-devices) と呼ばれます)
 - アプリ (Office 365とMicrosoft Defender for Cloud Appsを含む電子メール アプリとクラウド アプリ)
 
@@ -95,9 +95,9 @@ Microsoft Secure Score の概要ページで、これらのグループ間でポ
 - **リスクが許容される** - セキュリティは常に使いやすさとバランスを取る必要があり、すべての推奨事項が環境に適しているわけではありません。 このような場合は、リスクまたは残りのリスクを受け入れ、改善アクションを適用しないことを選択できます。 ポイントは与えられませんが、改善アクションの一覧にアクションは表示されなくなります。 このアクションは履歴で表示したり、いつでも元に戻したりできます。
 - **サード パーティを通じて解決** され、 **別の軽減策を通じて解決** された - 改善アクションは、サードパーティのアプリケーションまたはソフトウェア、または内部ツールによって既に対処されています。 アクションの価値があるポイントが得られるので、全体的なセキュリティ体制がスコアに反映されます。 サード パーティまたは内部ツールでコントロールがカバーされなくなった場合は、別の状態を選択できます。 改善アクションがこれらの状態のいずれかとしてマークされている場合、Microsoft は実装の完全性を把握できません。
 
-#### <a name="threat--vulnerability-management-improvement-actions"></a>脅威& 脆弱性の管理改善アクション
+#### <a name="microsoft-defender-vulnerability-management-improvement-actions"></a>Microsoft Defender 脆弱性の管理改善アクション
 
-[デバイス] カテゴリの改善アクションでは、状態を選択できません。 代わりに、アクションを実行するために、Microsoft 365 Defenderに関連付けられている[脅威と脆弱性の管理セキュリティに関する推奨事項](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)に移動します。 選択した例外と書き込む理由は、そのポータルに固有です。 Microsoft Secure Score ポータルには表示されません。
+[デバイス] カテゴリの改善アクションでは、状態を選択できません。 代わりに、アクションを実行するために、Microsoft 365 Defenderに関連付けられている[Microsoft Defender 脆弱性の管理セキュリティに関する推奨事項](/windows/security/threat-protection/microsoft-defender-atp/tvm-security-recommendation)が表示されます。 選択した例外と書き込む理由は、そのポータルに固有です。 Microsoft Secure Score ポータルには表示されません。
 
 #### <a name="completed-improvement-actions"></a>完了した改善アクション
 

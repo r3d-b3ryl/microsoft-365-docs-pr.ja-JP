@@ -21,14 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: Microsoft 365 で削除されたメールボックスの内容を保持する非アクティブなメールボックスを作成および管理します。
-ms.openlocfilehash: 15a9db1099eb687195d5c54b12d5bfca9a8c6f22
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c4a4719d34b7e1097e43152644d3d0bedf53b293
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634623"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360306"
 ---
 # <a name="create-and-manage-inactive-mailboxes"></a>非アクティブなメールボックスを作成および管理する
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 非アクティブなメールボックスを使用すると、組織を離れた後も元従業員のメールを保持でき、コンプライアンスまたは法的理由で [電子情報開示のアクセス許可](assign-ediscovery-permissions.md) を付与された承認されたユーザーがアクセスできます。 たとえば、管理者、コンプライアンス担当者、レコード マネージャーは、コンテンツ検索を使用して非アクティブなメールボックスの内容を検索およびエクスポートできます。 非アクティブなメールボックスはメールを受信できません。また、組織共有のアドレス帳や他の一覧に表示されません。
 
@@ -38,7 +40,7 @@ ms.locfileid: "66634623"
 
 メールボックスを非アクティブ化するには、メールボックスを保留し、メールボックスまたは対応するユーザー アカウントを削除する必要があります。
 
-メールボックスを非アクティブにするには、メールボックスを削除する前にメールボックスに保留を適用できるように、Exchange Onlineプラン 2 ライセンス (またはExchange Online Archiving アドオン ライセンスを持つExchange Onlineプラン 1 ライセンス) を割り当てる必要があります。 ユーザー アカウントが削除されると、ユーザー アカウントに関連付けられているすべてのExchange Online ライセンスを新しいユーザーに割り当てることができます。
+メールボックスを非アクティブにするには、メールボックスが削除される前にメールボックスにホールドを適用できるように、 [メールボックスのライセンスが正しく](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#email-archiving) 付与されている必要があります。 ユーザー アカウントが削除されると、ユーザー アカウントに関連付けられているすべてのExchange Online ライセンスを新しいユーザーに割り当てることができます。
 
 Microsoft 365 リテンション期間を使用して、メールボックスにホールドを適用することをお勧めします。 その他の方法については、「 [非アクティブなメールボックスの詳細」](inactive-mailboxes-in-office-365.md)を参照してください。
 
@@ -64,7 +66,7 @@ Microsoft 365 リテンション期間を使用して、メールボックスに
 
 1. <a href="https://go.microsoft.com/fwlink/p/?linkid=2077149" target="_blank">Microsoft Purview コンプライアンス ポータル</a>に移動し、組織内のグローバル管理者またはコンプライアンス管理者アカウントの資格情報を使用してサインインします。
 
-2. 左側のナビゲーション ウィンドウで[ **すべて表示**]、[ **データ ライフサイクル管理** > **の保持ポリシー**] の順に選択します。
+2. 左側のナビゲーション ウィンドウで、 **データ ライフサイクル管理** > **Microsoft 365** > **アイテム保持ポリシー** を選択します。
 
 3. **非アクティブなメールボックス** オプションを選択します。
 

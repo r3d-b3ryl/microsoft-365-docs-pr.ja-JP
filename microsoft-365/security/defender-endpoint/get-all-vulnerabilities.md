@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0eac4b6add7ef8a666d05b550ae16965f78d1a0d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 25f7e51555bcd4348185eb91fa004ccbb8395419
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61300467"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342939"
 ---
 # <a name="list-vulnerabilities"></a>脆弱性の一覧表示
 
@@ -41,7 +41,7 @@ ms.locfileid: "61300467"
 ## <a name="api-description"></a>API の説明
 
 すべての脆弱性の一覧を取得します。
-<br>[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+<br>[OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 <br>OData でサポートされている演算子:
 <br>```$filter```on: ```id```, , ```name```, ```description```, ```publishedOn``````cvssV3```, ```severity```, and ```updatedOn``` properties.
 <br>```$top``` 最大値が 10,000 です。
@@ -50,7 +50,7 @@ ms.locfileid: "61300467"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[エンドポイント API に Microsoft Defender を使用する](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -118,5 +118,5 @@ GET https://api.securitycenter.microsoft.com/api/Vulnerabilities
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威&脆弱性管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織の脆弱性](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.collection: M365-security-compliance
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6e522f2baac234097ed75d26eb1427719211a7de
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: b7a95843d1102d9bd004a300a754fdd6bc8ecd42
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284651"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326873"
 ---
 # <a name="list-machines-api"></a>マシンの一覧表示 API
 
@@ -40,7 +40,7 @@ ms.locfileid: "61284651"
 
 Microsoft Defender for Endpoint クラウドと通信した [Machines](machine.md) のコレクションを取得します。
 
-[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+[OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 
 OData の`$filter`クエリは、次`riskScore``exposureLevel``lastSeen``onboardingStatus``machineTags``lastIpAddress``aadDeviceId``rbacGroupId``id``osPlatform``version``healthStatus``deviceValue`のようにサポートされています。 `computerDnsName`
 <br>```$stop``` 最大値が 10,000 の場合

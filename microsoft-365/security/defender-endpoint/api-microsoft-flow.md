@@ -1,5 +1,5 @@
 ---
-title: Power Automate コネクタを使用してイベントのFlowを設定する方法
+title: Power Automate Connector を使用してイベントのフローを設定する方法
 ms.reviewer: ''
 description: Microsoft Defender for Endpoint Flow コネクタを使用して、テナントで新しいイベントが発生するたびにトリガーされるフローを作成します。
 keywords: flow, サポートされている API, API, Microsoft フロー, クエリ, オートメーション, power automate
@@ -14,16 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63626978311b679d0f8b520e4b041d92942bd1fd
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2c800b5e36f7c3f19a3ed11e7a33e9040ffffad2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64467997"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328016"
 ---
-# <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Power Automate コネクタを使用してイベントのFlowを設定する方法
+# <a name="how-to-use-power-automate-connector-to-set-up-a-flow-for-events"></a>Power Automate Connector を使用してイベントのフローを設定する方法
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,9 +34,9 @@ ms.locfileid: "64467997"
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-セキュリティ手順の自動化は、すべての最新のセキュリティオペレーション センター (SOC) の標準要件です。 SOC チームが最も効率的な方法で運用するには、自動化が必要です。 Microsoft Power Automateを使用すると、自動化されたワークフローを作成し、数分以内にエンド ツー エンドのプロシージャオートメーションを構築できます。 Microsoft Power Automateでは、その目的に合わせて構築されたさまざまなコネクタがサポートされています。  
+セキュリティ手順の自動化は、すべての最新のセキュリティオペレーション センター (SOC) の標準要件です。 SOC チームが最も効率的な方法で運用するには、自動化が必要です。 Microsoft Power Automate を使用すると、自動化されたワークフローを作成し、数分以内にエンド ツー エンドのプロシージャオートメーションを構築できます。 Microsoft Power Automate では、その目的に合わせて構築されたさまざまなコネクタがサポートされています。  
 
-この記事では、テナントに新しいアラートが作成されたときなど、イベントによってトリガーされる自動化を作成する方法について説明します。 Microsoft Defender API には、多くの機能を備えた公式のPower Automate コネクタがあります。 
+この記事では、テナントに新しいアラートが作成されたときなど、イベントによってトリガーされる自動化を作成する方法について説明します。 Microsoft Defender API には、多くの機能を備えた公式の Power Automate コネクタがあります。 
 
 :::image type="content" source="images/api-flow-0.png" alt-text="Microsoft Defender 365 ポータルの [アクション] ページ" lightbox="images/api-flow-0.png" :::
 
@@ -45,19 +45,19 @@ ms.locfileid: "64467997"
 
 ## <a name="usage-example"></a>使用例
 
-次の例では、テナントで新しいアラートが発生するたびにトリガーされるFlowを作成する方法を示します。 フローを開始するイベントと、そのトリガーが発生したときに実行される次のアクションを定義する方法について説明します。  
+次の例では、テナントで新しいアラートが発生するたびにトリガーされるフローを作成する方法を示します。 フローを開始するイベントと、そのトリガーが発生したときに実行される次のアクションを定義する方法について説明します。  
 
-1. [Microsoft Power Automate](https://flow.microsoft.com)にログインします。
+1. [Microsoft Power Automate](https://flow.microsoft.com) にログインします。
 
 2. **[マイ フロー** \> **] の [New** \> **Automated-from blank]** に移動します。
 
     :::image type="content" source="images/api-flow-1.png" alt-text="Microsoft Defender 365 ポータルの [マイ フロー] メニュー項目の [新しいフロー] ウィンドウ" lightbox="images/api-flow-1.png":::
 
-3. Flowの名前を選択し、トリガーとして "Microsoft Defender ATP トリガー" を検索し、新しいアラート トリガーを選択します。
+3. フローの名前を選択し、トリガーとして "Microsoft Defender ATP トリガー" を検索し、新しいアラート トリガーを選択します。
 
     :::image type="content" source="images/api-flow-2.png" alt-text=" Microsoft Defender 365 ポータルの [フローのトリガーの選択] セクション" lightbox="images/api-flow-2.png" :::
 
-これで、新しいアラートが発生するたびにトリガーされるFlowが作成されました。
+これで、新しいアラートが発生するたびにトリガーされるフローが作成されました。
 
 :::image type="content" source="images/api-flow-3.png" alt-text="トリガーの説明" lightbox="images/api-flow-3.png":::
 
@@ -85,7 +85,7 @@ ms.locfileid: "64467997"
 
     :::image type="content" source="images/api-flow-5.png" alt-text="[操作] ウィンドウ"  lightbox="images/api-flow-5.png":::
 
-3. アラートと分離に関する電子メールを送信するための新しい手順を追加します。 Outlookや Gmail など、非常に使いやすい電子メール コネクタが複数あります。
+3. アラートと分離に関する電子メールを送信するための新しい手順を追加します。 Outlook や Gmail など、非常に使いやすい電子メール コネクタが複数あります。
 
 4. フローを保存します。
 

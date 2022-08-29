@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 808ff3e6cc0dc69d748dabed102c478a27593790
-ms.sourcegitcommit: f30616b90b382409f53a056b7a6c8be078e6866f
+ms.openlocfilehash: b10c54474427002e82a3639578ce2c9192bf735f
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/03/2022
-ms.locfileid: "65172296"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327803"
 ---
 # <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointを使用した OData クエリ
 

@@ -19,28 +19,28 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ポーランドのドライバーのライセンス番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: e0bb04fb1d6e7dc6a56fc0a487bba3dc9cf60b49
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 120e000e5d7666d213062d812b2b5d6b6555c18e
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997207"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325707"
 ---
 # <a name="poland-drivers-license-number"></a>ポーランドの運転免許証番号
 
 ## <a name="format"></a>フォーマット
 
-2 つのスラッシュを含む 14 桁の数字
+2 つのスラッシュを含む 11 または 14 桁の数字
 
 ## <a name="pattern"></a>パターン
 
-14 桁の数字と 2 つのスラッシュ:
+2 つのスラッシュを含む 11 または 14 桁の数字
 
 - 5 桁
 - スラッシュ
 - 2 桁の数字
 - スラッシュ
-- 7 桁
+- 4 桁または 7 桁
 
 ## <a name="checksum"></a>チェックサム
 
@@ -50,7 +50,7 @@ ms.locfileid: "66997207"
 
 DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- 正規表現 `Regex_poland_eu_driver's_license_number` は、パターンに一致するコンテンツを検索します。
+- 正規表現 `Regex_poland_eu_driver's_license_number` がパターンに一致するコンテンツを検出した。
 - キーワードが `Keywords_eu_driver's_license_number` 見つかったか、見 `Keywords_poland_eu_driver's_license_number` つかりました。
 
 ```xml
@@ -118,8 +118,8 @@ DLP ポリシーは、抽出した約 300 文字が次の条件に該当する�
 - driver's licenses
 - driver's licence
 - ドライバーのライセンス
-- Dl#
-- Dls#
+- dl#
+- dls#
 - driverlic#
 - driverlics#
 - driverlicense#

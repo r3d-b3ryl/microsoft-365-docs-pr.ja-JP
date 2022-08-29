@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ロシアパスポート番号の国際機密情報型エンティティ定義。
-ms.openlocfilehash: c4f36f4e8baac5aaf385ebe1a3ae0d9b33fdc365
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 4f8c581dccac25d3c7f402e2d273037918c05868
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996337"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367425"
 ---
 # <a name="russia-passport-number-international"></a>ロシアの国際パスポート番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 

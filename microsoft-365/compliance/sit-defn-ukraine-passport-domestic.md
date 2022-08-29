@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ウクライナパスポート国内の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 6ef59f90149b87a726377100f8dc4bf14f267ccf
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7a941d28dc92f54ceb1c2f00d910b0ba1722bfa0
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996587"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367315"
 ---
 # <a name="ukraine-passport-domestic"></a>ウクライナのパスポート国内番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 

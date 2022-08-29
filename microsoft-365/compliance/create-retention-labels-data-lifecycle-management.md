@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 必要なものを保持し、不要なものを削除できるように、データ ライフサイクル管理のアイテム保持ポリシーに対する例外の保持ラベルを作成する手順。
-ms.openlocfilehash: 0951ce1fea2f9324c19ec0bf17451d458b4914d1
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: ca78c4df6decaf71bfddd899ac13afaa9ada5df6
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632577"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336224"
 ---
 # <a name="create-retention-labels-for-exceptions-to-your-retention-policies"></a>アイテム保持ポリシーの例外の保持ラベルを作成する
 
@@ -51,7 +51,7 @@ ms.locfileid: "66632577"
 
 ## <a name="how-to-create-retention-labels-for-data-lifecycle-management"></a>データ ライフサイクル管理用の保持ラベルを作成する方法
 
-1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)で、**[ソリューション]** > **[データ ライフサイクル管理]** > **[ラベル]** タブ > + **[ラベルを作成]** に移動します
+1. [Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/)で、[**ソリューション** > **データ ライフサイクル管理** > **] [Microsoft 365** > **ラベル**] タブ> + **[ラベルの作成**] に移動します。
     
     **データ ライフサイクル管理** ソリューションをすぐに見ませんか? 最初に [**すべて表示**] を選択します。 
 

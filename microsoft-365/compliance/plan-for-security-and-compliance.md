@@ -17,12 +17,12 @@ ms.assetid: dc4f704c-6fcc-4cab-9a02-95a824e4fb57
 description: このランディング ページには、Office 365のセキュリティとコンプライアンスに関するリンクと計画に関する情報が記載されています。
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ecc9d01f82393aa20f8993abfffd6cca78c656f
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: acc98ae381af6035be46eb6708d26213c4540d22
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66639822"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360021"
 ---
 # <a name="plan-for-security-amp-compliance"></a>セキュリティ &amp; コンプライアンスを計画する
 
@@ -38,7 +38,7 @@ Office 365ポスターのInformation Protectionの情報保護機能を身に付
 
 Microsoft 365 サブスクリプションを設定した後、開始スコアをメモしておきます。 セキュリティスコアは、スコアを上げるために使用できる構成の提案を提供します。 目標は、ユーザーの生産性に悪影響を及ぼさない環境を保護するために利用できる機会を認識することです。
   
-- [Office 365セキュリティスコアの概要](../security/defender/microsoft-secure-score.md)
+- [Microsoft セキュア スコア](../security/defender/microsoft-secure-score.md)
     
 ## <a name="step-3-plan-access-protection-for-identity-and-devices"></a>手順 3: ID とデバイスのアクセス保護を計画する
 

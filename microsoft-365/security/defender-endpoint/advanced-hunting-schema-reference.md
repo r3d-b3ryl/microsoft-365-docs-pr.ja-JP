@@ -1,7 +1,7 @@
 ---
-title: 高度な検索スキーマリファレンス
-description: 高度な検索スキーマのテーブルについて説明し、脅威検出クエリを実行できるデータを理解します。
-keywords: 高度な狩猟、脅威の検出、サイバー脅威の検出、mdatp、microsoft Defender atp、エンドポイント用の microsoft Defender、wdatp 検索、クエリ、テレメトリ、スキーマ参照、kusto、テーブル、データ
+title: 高度なハンティング スキーマリファレンス
+description: 高度なハンティング スキーマのテーブルについて説明し、脅威検出クエリを実行できるデータを理解します。
+keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, mdatp, microsoft defender atp, Microsoft Defender for endpoint, wdatp search, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, データ
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,14 +15,14 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 01/14/2020
 ms.technology: mde
-ms.openlocfilehash: 2e45a4ae78d0beb9bc57b72a59b9cf1376ac7da7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 76c9f55e99ba13417403a6f9ac2d03913f792326
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468349"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326323"
 ---
-# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint の高度なハンティング スキーマを理解する
+# <a name="understand-the-advanced-hunting-schema-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointの高度なハンティング スキーマについて理解する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,28 +33,28 @@ ms.locfileid: "64468349"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-高度 [な検索スキーマ](advanced-hunting-overview.md) は、イベント情報またはデバイスや他のエンティティに関する情報を提供する複数のテーブルで構成されます。 複数のテーブルにまたがるクエリを効果的にビルドするには、高度な追求スキーマのテーブルと列を理解する必要があります。
+[高度なハンティング](advanced-hunting-overview.md) スキーマは、イベント情報またはデバイスやその他のエンティティに関する情報を提供する複数のテーブルで構成されています。 複数のテーブルにまたがるクエリを効果的にビルドするには、高度な追求スキーマのテーブルと列を理解する必要があります。
 
 ## <a name="get-schema-information-in-the-defender-for-cloud"></a>Defender for Cloud でスキーマ情報を取得する
 
-クエリを作成する場合は、組み込みのスキーマ参照を使用して、スキーマ内の各テーブルに関する次の情報をすばやく取得します。
+クエリを作成するときに、組み込みのスキーマ参照を使用して、スキーマ内の各テーブルに関する次の情報をすばやく取得します。
 
-- **テーブルの** 説明: テーブルに含まれるデータの種類と、そのデータのソース。
+- **テーブルの説明: テーブル** に含まれるデータの種類とそのデータのソース。
 - **列**: テーブル内のすべての列。
-- **アクションの種類**: テーブルでサポートされている `ActionType` イベントの種類を表す列の値を指定できます。 これらの値は、イベント情報を含むテーブルにのみ提供されます。
-- **サンプル クエリ**: テーブルの利用方法を備えたクエリの例。
+- **アクションの種類**: テーブルで `ActionType` サポートされているイベントの種類を表す列で使用できる値。 これらの値は、イベント情報を含むテーブルにのみ提供されます。
+- **サンプル クエリ**: テーブルの使用方法を特徴とするクエリの例。
 
-### <a name="access-the-schema-reference"></a>スキーマ参照へのアクセス
+### <a name="access-the-schema-reference"></a>スキーマリファレンスにアクセスする
 
-スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある [参照の表示] アクションを選択します。 [スキーマ参照] **を選択して** テーブルを検索することもできます。
+スキーマ参照にすばやくアクセスするには、スキーマ表現のテーブル名の横にある **[参照の表示** ] アクションを選択します。 [ **スキーマ参照** ] を選択してテーブルを検索することもできます。
 
-:::image type="content" source="images/ah-reference.png" alt-text="[高度な検索] ページ" lightbox="images/ah-reference.png":::
+:::image type="content" source="images/ah-reference.png" alt-text="高度なハンティング ページ" lightbox="images/ah-reference.png":::
 
-## <a name="learn-the-schema-tables"></a>スキーマ テーブルの詳細
+## <a name="learn-the-schema-tables"></a>スキーマ テーブルについて学習する
 
-次の参照では、高度な検索スキーマのすべてのテーブルを一覧表示します。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。
+次のリファレンスは、高度なハンティング スキーマ内のすべてのテーブルの一覧です。 各テーブル名は、そのテーブルの列名を説明するページにリンクします。
 
-テーブル名と列名は、高度なMicrosoft 365 Defenderスキーマ表現のポータル内にも表示されます。
+テーブル名と列名は、高度な検索画面のスキーマ表現のMicrosoft 365 Defender ポータルにも一覧表示されます。
 
 <br>
 
@@ -62,28 +62,28 @@ ms.locfileid: "64468349"
 
 |テーブル名|説明|
 |---|---|
-|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|ユーザーに関するMicrosoft 365 Defender |
+|**[DeviceAlertEvents](advanced-hunting-devicealertevents-table.md)**|Microsoft 365 Defenderに関するアラート |
 |**[DeviceInfo](advanced-hunting-deviceinfo-table.md)**|OS 情報を含むデバイス情報|
-|**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|アダプター、IP アドレス、MAC アドレス、接続されたネットワークおよびドメインを含むデバイスのネットワーク プロパティ|
+|**[DeviceNetworkInfo](advanced-hunting-devicenetworkinfo-table.md)**|アダプター、IP アドレス、MAC アドレス、接続されたネットワークとドメインなど、デバイスのネットワーク プロパティ|
 |**[DeviceProcessEvents](advanced-hunting-deviceprocessevents-table.md)**|プロセスの作成と関連イベント|
 |**[DeviceNetworkEvents](advanced-hunting-devicenetworkevents-table.md)**|ネットワーク接続と関連イベント|
 |**[DeviceFileEvents](advanced-hunting-devicefileevents-table.md)**|ファイルの作成、変更、およびその他のファイル システム イベント|
 |**[DeviceRegistryEvents](advanced-hunting-deviceregistryevents-table.md)**|レジストリ エントリの作成と変更|
 |**[DeviceLogonEvents](advanced-hunting-devicelogonevents-table.md)**|サインインとその他の認証イベント|
 |**[DeviceImageLoadEvents](advanced-hunting-deviceimageloadevents-table.md)**|DLL の読み込みイベント|
-|**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|複数のイベントの種類 (セキュリティ制御によってトリガーされるイベントなど) (Microsoft Defender ウイルス対策悪用防止など)|
+|**[DeviceEvents](advanced-hunting-deviceevents-table.md)**|Microsoft Defender ウイルス対策やエクスプロイト保護などのセキュリティ制御によってトリガーされるイベントを含む、複数のイベントの種類|
 |**[DeviceFileCertificateInfo](advanced-hunting-devicefilecertificateinfo-table.md)**|エンドポイント上の証明書検証イベントから取得した署名済みファイルの証明書情報|
 |**[DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md)**|デバイスにインストールされているソフトウェアのインベントリ (バージョン情報とサポート終了の状態を含む)|
 |**[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)**|デバイスで見つかったソフトウェアの脆弱性と、各脆弱性に対処する利用可能なセキュリティ更新プログラムの一覧|
 |**[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)**|悪用コードが公開されているかどうかなど、公開されている脆弱性のサポート技術情報|
-|**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|デバイス上のさまざまなセキュリティ構成の状態を示す脅威および脆弱性管理の評価イベント|
-|**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|脅威および脆弱性管理によってデバイスを評価するために使用されるさまざまなセキュリティ構成に関するサポート技術情報 (さまざまな標準およびベンチマークへのマッピングを含む)　|
+|**[DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md)**|デバイス上のさまざまなセキュリティ構成の状態を示す評価イベントをMicrosoft Defender 脆弱性の管理する|
+|**[DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md)**|Defender 脆弱性管理がデバイスを評価するために使用するさまざまなセキュリティ構成のナレッジ ベース。には、さまざまな標準とベンチマークへのマッピングが含まれます|
 |
 
 > [!TIP]
-> Microsoft 365 Defender で高度な検索[を](/microsoft-365/security/defender/advanced-hunting-overview)使用して、Defender for Endpoint、microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、Microsoft Defender for Identity のデータを使用して脅威を探します。 [[オンにする] Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable)。
+> [Microsoft 365 Defenderでの高度な捜索](/microsoft-365/security/defender/advanced-hunting-overview)を使用して、Defender for Endpoint、Microsoft Defender for Office 365、Microsoft Defender for Cloud Apps、およびMicrosoft Defender for Identity。 [Microsoft 365 Defenderをオンにします](/microsoft-365/security/defender/m365d-enable)。
 
-高度なハンティング ワークフローを Microsoft Defender for Endpoint から Microsoft 365 Defenderに移動する方法の詳細については、「[Advanced hunting queries from Microsoft Defender for Endpoint」を参照してください](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)。
+高度なハンティング のワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defenderに移行する方法の詳細については、「[高度なハンティング クエリをMicrosoft Defender for Endpointから移行する」を参照](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)してください。
 
 ## <a name="related-topics"></a>関連項目
 

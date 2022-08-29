@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - admindeeplinkMAC
 description: この記事には、Microsoft Purview コンプライアンス ポータルのコンテンツ検索電子情報開示ツールに関するリファレンス情報が含まれていて、コンテンツ検索に関する多くの詳細情報を知ることができます。
-ms.openlocfilehash: a028cfc80dfdba7bea0ddbf89b6f528d5e0726ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 7173e57eaed4f4fcaec9fe240385004419918f8e
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66634811"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67335652"
 ---
 # <a name="feature-reference-for-content-search"></a>コンテンツ検索の機能のリファレンス
 
@@ -142,7 +142,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
   他の Teams のコンテンツと同様に、カードのコンテンツが保存されている場所は、カードが使用された場所に基づいています。 Teams チャネルで使用したカードのコンテンツは、Teams グループのメールボックスに保存されます。 1:1 チャットおよび 1xN チャットのカード コンテンツは、チャット参加者のメールボックスに保存されます。
 
-  カード コンテンツの検索には、検索条件として `kind:microsoftteams` または `itemclass:IPM.SkypeTeams.Message` を使用できます。 検索結果をレビューする場合、Teams チャネルのボットによって生成されたカード コンテンツは `<appname>@teams.microsoft.com` として **送信者/作成者** のメール プロパティを持ち、`appname` はカード コンテンツを生成したアプリの名前です。 カード コンテンツがユーザーによって生成された場合、**送信者/作成者** の値がユーザーを識別します。
+  カード コンテンツの検索には、検索条件として `kind:microsoftteams` または `itemclass:IPM.SkypeTeams.Message` を使用できます。 検索結果を確認する場合、Teams チャネル内のボットによって生成されたカード コンテンツには Sender **/Author** 電子メール プロパティがあります。この`appname`プロパティ`<appname>@teams.microsoft.com`は、カード コンテンツを生成したアプリの名前です。 カード コンテンツがユーザーによって生成された場合、**送信者/作成者** の値がユーザーを識別します。
 
   コンテンツの検索結果でカード コンテンツを表示すると、そのコンテンツはメッセージの添付ファイルとして表示されます。 添付ファイルには `appname.html` と名付けられ、`appname` はカード コンテンツを生成したアプリの名前です。 次のスクリーンショットは、カード コンテンツ (Asana という名前のアプリが対象) が Teams や検索結果でどのように表示されるかを示しています。
 
@@ -190,7 +190,7 @@ Microsoft Teams と Microsoft 365 グループのコンテンツを検索する�
 
 ## <a name="searching-inactive-mailboxes"></a>非アクティブなメールボックスの検索
 
-コンテンツ検索で非アクティブなメールボックスを検索できます。組織内の非アクティブなメールボックスのリストを取得するには、Exchange Online PowerShell でコマンド `Get-Mailbox -InactiveMailboxOnly` を実行します。または、Microsoft Purview コンプライアンスポータルの **[データ ライフサイクル管理** \> **[保持]** に移動し、**[その他]**![[ナビゲーション バー] の省略記号をクリックすることもできます。](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif)\>**非アクティブなメールボックス**。
+コンテンツ検索で非アクティブなメールボックスを検索できます。 組織内の非アクティブなメールボックスのリストを取得するには、Exchange Online PowerShell でコマンド `Get-Mailbox -InactiveMailboxOnly` を実行します。 または、Microsoft Purview コンプライアンス ポータルの **データ ライフサイクル管理** \> **Microsoft 365** \> **リテンション期間** に移動し、[**その他**![のナビゲーション バーの省略記号] をクリックすることもできます。](../media/9723029d-e5cd-4740-b5b1-2806e4f28208.gif) \> **非アクティブなメールボックス**
 
 非アクティブなメールボックスを検索するときの留意点を以下に示します。
 

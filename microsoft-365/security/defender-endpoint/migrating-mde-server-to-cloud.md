@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: migrationguides
 ms.date: 07/19/2022
 ms.technology: mde
-ms.openlocfilehash: b32a47ba4ca01c3f6b99cde639063c1fc2373ed2
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 7906589143e99213795c2e3961e237beb6c813bd
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67275754"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316383"
 ---
 # <a name="migrating-servers-from-microsoft-defender-for-endpoint-to-microsoft-defender-for-cloud"></a>Microsoft Defender for Endpointから Microsoft Defender for Cloud へのサーバーの移行
 
@@ -54,7 +54,7 @@ Azure [Arc 対応](/azure/azure-arc/servers/overview)サーバーを介して接
 
      :::image type="content" source="images/mde-integration.png" alt-text="MDE 統合を有効にする方法を示すスクリーンショット。" lightbox="images/mde-integration.png":::
 
-   環境にこれらのボタンがある場合は、両方の統合を有効にしてください。 新しいサブスクリプションでは、両方のオプションが既定で有効になります。
+   環境にこれらのボタンがある場合は、両方の統合を有効にしてください。 新しいサブスクリプションでは、両方のオプションが既定で有効になります。 この場合、環境にこれらのボタンは表示されません。
 
 5. Azure Arc の接続要件が満たされていることを確認します。 Microsoft Defender for Cloud では、すべてのオンプレミスマシンと Azure 以外のマシンを Azure Arc エージェント経由で接続する必要があります。 また、Azure Arc では、MDE でサポートされているすべてのオペレーティング システムがサポートされているわけではありません。 そのため、 [ここで Azure Arc デプロイ](/azure/azure-arc/servers/plan-at-scale-deployment)を計画する方法について説明します。
 
@@ -68,7 +68,7 @@ Azure VM の場合、追加の手順は必要ありません。Azure プラッ�
 
 ## <a name="how-do-i-migrate-on-premises-machines-to-microsoft-defender-for-servers"></a>オンプレミス マシンを Microsoft Defender for Servers に移行操作方法?
 
-Azure Arc [に接続](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc)されたサーバーを介してオンプレミスのマシンを接続します。
+すべての前提条件が満た [されたら、Azure](/azure/defender-for-cloud/quickstart-onboard-machines?pivots=azure-arc) Arc 接続サーバー経由でオンプレミスのマシンを接続します。
 
 ## <a name="how-do-i-migrate-vms-from-aws-or-gcp-environments"></a>AWS または GCP 環境から VM を移行操作方法?
 

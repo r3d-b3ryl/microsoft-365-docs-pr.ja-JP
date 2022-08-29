@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Microsoft 365 メッセージ センターの概要と、新機能や変更された機能やその他の重要なお知らせを追跡する役割について説明します。
-ms.openlocfilehash: 403b16f0f1624034a1224dfe53841a81ee53d572
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8368e86e0ab4431aeb07c387daf0a57f89ea1827
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67085665"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67322917"
 ---
 # <a name="track-new-and-changed-features-in-the-microsoft-365-message-center"></a>Microsoft 365 メッセージ センターで新機能と変更された機能を追跡する
 
@@ -163,7 +163,7 @@ ms.locfileid: "67085665"
 
 メッセージ センターの投稿を開くと、その Microsoft 365 アプリまたはサービスをサービス & **月間アクティブ ユーザー** セクションで使用しているユーザーの数が表示されます。 数値は過去 28 日間です。 この情報は、作業する必要がある変更に優先順位を付けるのに役立ちます。
 
-:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="スクリーンショット: メッセージ センターの投稿にMicrosoft Teamsチャット密度ページと月間アクティブなユーザー データを表示する":::
+:::image type="content" source="../../media/msgctr-mau-teams.png" alt-text="スクリーンショット: 毎月アクティブなユーザー データを含むメッセージ センター投稿の Microsoft Teams チャット密度ページを表示する":::
 
 月次ユーザーの数は、任意のデバイスでその Microsoft 365 アプリまたはサービスを使用したすべてのユーザーに適用されます。
 
@@ -284,5 +284,4 @@ Microsoft 365 サービスの変更に関する実践的な情報の多くは、
 ## <a name="related-content"></a>関連コンテンツ
 
 [標準または対象指定リリース オプションを設定する](../manage/release-options-in-office-365.md) (article)\
-[新機能に表示される Office 機能を管理する](../manage/show-hide-new-features.md) (記事)\
 [ビジネス サブスクリプションと課金ドキュメント](../../commerce/index.yml) (リンク ページ)

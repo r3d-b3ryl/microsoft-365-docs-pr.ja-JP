@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: ハンガリーの付加価値税番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 3ebc5921e0fd09fb98b1e86699aa3941bd214b96
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 7523bc370177884d058faad4b6313552e8ba3964
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950596"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367403"
 ---
 # <a name="hungary-value-added-tax-number"></a>ハンガリーの付加価値税番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -46,7 +38,7 @@ ms.locfileid: "66950596"
 
 - 2 文字 - HU または hu
 - 省略可能な領域
-- 8 桁
+- 8 桁の数字
 
 ## <a name="checksum"></a>チェックサム
 
@@ -54,14 +46,14 @@ ms.locfileid: "66950596"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
-- この関数 `Func_hungarian_value_added_tax_number` は、パターンに一致するコンテンツを検索します。
-- キーワードが `Keywords_hungarian_value_added_tax_number` 見つかりました。
+- 関数 `Func_hungarian_value_added_tax_number` がパターンに一致するコンテンツを検出した。
+- `Keywords_hungarian_value_added_tax_number` のキーワードを検出した。
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという中程度の信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
-- この関数 `Func_hungarian_value_added_tax_number` は、パターンに一致するコンテンツを検索します。
+- 関数 `Func_hungarian_value_added_tax_number` がパターンに一致するコンテンツを検出した。
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->

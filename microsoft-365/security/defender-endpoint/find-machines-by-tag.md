@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 93363ba9cb6252a32406c0c29dfb7d757d2f411d
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: f7926003a11c5aa27da5bbf4913feb54504a60d1
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61302196"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327819"
 ---
 # <a name="find-devices-by-tag-api"></a>タグ API でデバイスを検索する
 
@@ -81,8 +81,8 @@ Authorization|String|ベアラー {token}。 **必須**。
 
 名前|種類|説明
 :---|:---|:---
-tag|String|タグ名。 **必須**。
-useStartsWithFilter|ブール値|true に設定すると、クエリ内の特定のタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
+tag|文字列|タグ名。 **必須**。
+useStartsWithFilter|ブール型|true に設定すると、クエリ内の特定のタグで始まるタグ名を持つすべてのデバイスが検索されます。 既定は false です。 **オプション**。
 
 ## <a name="request-body"></a>要求本文
 

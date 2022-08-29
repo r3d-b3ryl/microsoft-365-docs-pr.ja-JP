@@ -10,18 +10,19 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
+ms.date: 08/11/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365-initiative-defender-business
-ms.openlocfilehash: bd6ea78daa1a19d84efc23c34bdb58704484c0d1
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 24c6e511b32b88ca72de7a7a0654fbea2761bf78
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66994609"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325641"
 ---
 # <a name="offboard-a-device-from-microsoft-defender-for-business"></a>Microsoft Defender for Businessからデバイスをオフボードにする
 
@@ -57,6 +58,6 @@ ms.locfileid: "66994609"
 
 ## <a name="next-steps"></a>次の手順
 
-- [Microsoft Defender for Businessで脅威&脆弱性管理ダッシュボードを使用する](mdb-view-tvm-dashboard.md)
+- [Microsoft Defender for BusinessでMicrosoft Defender 脆弱性の管理 ダッシュボードを使用する](mdb-view-tvm-dashboard.md)
 - [Microsoft Defender for Businessでポリシーを表示または編集する](mdb-view-edit-create-policies.md)
 - [Microsoft Defender for Businessでデバイスを管理する](mdb-manage-devices.md)

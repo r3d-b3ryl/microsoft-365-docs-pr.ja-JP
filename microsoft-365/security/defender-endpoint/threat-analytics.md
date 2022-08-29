@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 455b80f590edf255362c7bb047c7aa1b23916666
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 4a21b62e7ab8cad349dbcabebdd1e0d6eeceacd7
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128568"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345153"
 ---
 # <a name="track-and-respond-to-emerging-threats-through-threat-analytics"></a>脅威分析を通じて、新たな脅威を追跡し、対応する
 
@@ -57,11 +57,11 @@ ms.locfileid: "65128568"
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bw1f]
 
 ## <a name="required-roles-and-permissions"></a>必要な役割と権限
-次の表に、Threat Analytics にアクセスするために必要なロールとアクセス許可の概要を示します。 次の表で定義されているロールは、個々のポータルのカスタム ロールを参照し、同様に名前が付けられている場合でも、Azure ADのグローバル ロールには接続されません。
+次の表に、Threat Analytics にアクセスするために必要なロールとアクセス許可の概要を示します。 次の表で定義されているロールは、個々のポータルのカスタム ロールを参照し、同様に名前が付けられている場合でも Azure AD のグローバル ロールには接続されません。
 
-| **Microsoft 365 Defenderには、次のいずれかのロールが必要です。**  | **Defender for Endpoint には、次のいずれかのロールが必要です**  | **Defender for Office 365には、次のいずれかのロールが必要です。** | **Defender for Cloud アプリには、次のいずれかのロールが必要です** | 
+| **Microsoft 365 Defenderには、次のいずれかのロールが必要です。**  | **Defender for Endpoint には、次のいずれかのロールが必要です**  | **Defender for Office 365には、次のいずれかのロールが必要です。** | **Defender for Cloud Apps には、次のいずれかのロールが必要です** | 
 |---------|---------|---------|---------|
-| 脅威の分析 | アラートとインシデント データ: <ul><li>データの表示 - セキュリティ操作</li></ul>TVM の軽減策:<ul><li>データの表示 - 脅威と脆弱性の管理</li></ul> | アラートとインシデント データ:<ul> <li>アラートを表示専用で管理する</li> <li>アラートの管理</li> <li>組織の構成</li><li>監査ログ</li> <li>表示専用の監査ログ</li><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li> </ul> 禁止された電子メールの試行: <ul><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li> | Defender for Cloud アプリまたは MDI ユーザーには使用できません |
+| 脅威の分析 | アラートとインシデント データ: <ul><li>データの表示 - セキュリティ操作</li></ul>Defender の脆弱性管理の軽減策:<ul><li>データの表示 - 脅威と脆弱性の管理</li></ul> | アラートとインシデント データ:<ul> <li>アラートを表示専用で管理する</li> <li>アラートの管理</li> <li>組織の構成</li><li>監査ログ</li> <li>表示専用の監査ログ</li><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li> </ul> 禁止された電子メールの試行: <ul><li>セキュリティ閲覧者</li> <li>セキュリティ管理者</li><li>表示専用の受信者</li> | Defender for Cloud Apps または MDI ユーザーには使用できません |
 
 ## <a name="view-the-threat-analytics-dashboard"></a>脅威分析ダッシュボードを表示する
 
@@ -111,13 +111,13 @@ _脅威分析レポートの [概要] セクション_
 [ **軽減策** ] セクションで、脅威に対する組織の回復性を高めるのに役立つ具体的な実用的な推奨事項の一覧を確認します。 追跡対象の軽減策の一覧には、次のものが含まれます。
 
 - **セキュリティ更新プログラム**: セキュリティ更新プログラムまたは脆弱性の修正プログラムの展開
-- **Microsoft Defender ウイルス対策設定**
+- **Microsoft Defender ウイルス対策の設定**
   - セキュリティ インテリジェンスのバージョン
   - クラウドによる保護
   - 望ましくない可能性があるアプリケーション (PUA) 保護
   - リアルタイム保護
 
-このセクションの軽減策情報には[、脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)からのデータが組み込まれています。また、レポートのさまざまなリンクから詳細なドリルダウン情報も提供されます。
+このセクションの軽減策情報には[、Microsoft Defender 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)からのデータが組み込まれており、レポートのさまざまなリンクから詳細なドリルダウン情報も提供されます。
 
 :::image type="content" source="images/ta-mitigations.png" alt-text="脅威分析レポートの [軽減策] セクション" lightbox="images/ta-mitigations.png":::
 
@@ -132,7 +132,7 @@ _脅威分析レポートの [軽減策] セクション_
 - グラフには、追跡される軽減策のみが反映されます。 グラフに表示されないその他の軽減策については、レポートの概要を確認してください。
 - 軽減策では、完全な回復性は保証されません。 提供される軽減策は、回復性を向上させるために必要な最善のアクションを反映しています。
 - デバイスがサービスにデータを送信していない場合、デバイスは "利用不可" としてカウントされます。
-- ウイルス対策関連の統計情報は、Microsoft Defender ウイルス対策設定に基づいています。 サードパーティのウイルス対策ソリューションを備えたデバイスは、"公開済み" として表示される可能性があります。
+- ウイルス対策関連の統計情報は、Microsoft Defender ウイルス対策の設定に基づいています。 サードパーティのウイルス対策ソリューションを備えたデバイスは、"公開済み" として表示される可能性があります。
 
 ## <a name="related-topics"></a>関連項目
 

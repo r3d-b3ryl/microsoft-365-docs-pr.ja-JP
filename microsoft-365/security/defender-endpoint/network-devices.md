@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f5c2f1c7c73f150c02192fa7e275a07b12c64c79
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.openlocfilehash: 1ff2bb5e7381f09d1a6bf448c18096f0f9263fe0
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438380"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67323905"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>ネットワーク デバイスの検出と脆弱性の管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "65438380"
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 2](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [脅威と脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Microsoft Defender ATP を試してみたいですか? [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -40,7 +40,7 @@ ms.locfileid: "65438380"
 
 ネットワーク検出機能は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータルとMicrosoft 365 Defender</a> コンソールの [**デバイス インベントリ**] セクションで利用できます。
 
-指定されたMicrosoft Defender for Endpoint デバイスは、構成済みネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出されると、Defender for Endpoint の脅威と脆弱性の管理機能により、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイをセキュリティで保護するための統合ワークフローが提供されます。
+指定されたMicrosoft Defender for Endpoint デバイスは、構成済みネットワーク デバイスの定期的な認証スキャンを実行するために、各ネットワーク セグメントで使用されます。 検出されると、Defender for Endpoint の脆弱性管理機能により、検出されたスイッチ、ルーター、WLAN コントローラー、ファイアウォール、VPN ゲートウェイをセキュリティで保護するための統合ワークフローが提供されます。
 
 ネットワーク デバイスが検出および分類されると、セキュリティ管理者は最新のセキュリティに関する推奨事項を受け取り、組織全体に展開されたネットワーク デバイスで最近検出された脆弱性を確認できます。
 
@@ -82,7 +82,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 5. スキャンするネットワーク デバイス (またはこれらのデバイスがデプロイされているサブネット) の IP アドレスを取得します。
 
-6. ネットワーク デバイスの SNMP 資格情報を取得します (たとえば、Community String、noAuthNoPriv、authNoPriv、authPriv)。 新しい評価ジョブを構成するときは、資格情報を指定する必要があります。
+6. ネットワーク デバイスの SNMP 資格情報を取得します (コミュニティ文字列、noAuthNoPriv、authNoPriv、authPriv など)。 新しい評価ジョブを構成するときは、資格情報を指定する必要があります。
 
 7. プロキシ クライアント構成: Defender for Endpoint デバイス プロキシの要件以外に追加の構成は必要ありません。
 
@@ -98,12 +98,12 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="permissions"></a>アクセス許可
 
-評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。 **Defender でセキュリティ設定を管理** します。 ロールの **設定**\>に移動すると、アクセス許可を見 **つけることができます。** 詳細については、「[ロールベースのアクセス制御のロールの作成と管理](user-roles.md)」を参照してください。
+評価ジョブを構成するには、次のユーザーアクセス許可オプションが必要です。 **Defender でセキュリティ設定を管理** します。 アクセス許可は **、[設定****ロール**] \> に移動して確認できます。 詳細については、「[ロールベースのアクセス制御のロールの作成と管理](user-roles.md)」を参照してください。
 
 ## <a name="install-the-network-scanner"></a>ネットワーク スキャナーをインストールする
 
-1. **Microsoft 365セキュリティ** \> **設定** \> **Endpoints** \> **Assessment ジョブ** (**[ネットワーク評価**] の下) に移動します。
-    1. Microsoft 365 Defender ポータルで、[評価ジョブ] ページ設定 >移動します。
+1. **Microsoft 365 セキュリティ** \> **設定** \> **エンドポイント** \> **評価ジョブ** (**[ネットワーク評価**] の下) に移動します。
+    1. Microsoft 365 Defender ポータルで、[設定] > [評価ジョブ] ページに移動します。
 
 2. ネットワーク スキャナーをダウンロードし、指定された Defender for Endpoint 評価デバイスにインストールします。
 
@@ -130,7 +130,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 ## <a name="configure-a-new-assessment-job"></a>新しい評価ジョブを構成する
 
-**設定** の [評価ジョブ] ページで、[**ネットワーク評価ジョブの追加**] を選択します。 セットアップ プロセスに従って、定期的にスキャンしてデバイス インベントリに追加するネットワーク デバイスを選択します。
+**[設定**] の [評価ジョブ] ページで、[**ネットワーク評価ジョブの追加**] を選択します。 セットアップ プロセスに従って、定期的にスキャンしてデバイス インベントリに追加するネットワーク デバイスを選択します。
 
 ネットワーク デバイス インベントリ内のデバイスの重複を防ぐために、各 IP アドレスが複数の評価デバイス間で 1 回だけ構成されていることを確認します。
 
@@ -189,7 +189,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 スキャナーが正しく実行されていることを検証します。 次に、スキャン定義に移動し、[テストの実行] を選択します。 関連する IP アドレスから返されるエラー メッセージを確認します。
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>ユーザーアクセス許可脅威と脆弱性の管理必須
+### <a name="required-defender-vulnerability-management-user-permission"></a>Defender の脆弱性管理のユーザーアクセス許可が必要です
 
 "新しいエージェントを追加するための十分なアクセス許可がないようです。 必要なアクセス許可は "Defender でセキュリティ設定を管理する" です。
 
@@ -205,7 +205,7 @@ Defender for Endpoint にはネットワーク デバイス自体にセンサー
 
 デバイスのコマンド ライン設定を変更して、テキスト サイズのコピーと変更を許可します。
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [デバイス一覧](machines-view-overview.md)
 - [高度な機能を構成する](advanced-features.md)

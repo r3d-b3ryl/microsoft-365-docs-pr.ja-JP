@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 0c7f5b1097e7fe59f9ccaa28800da27d943f1176
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 2cabdbc069e1d8a4efdb1bd3e931b12f0fe2f963
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301596"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325392"
 ---
 # <a name="list-machineactions-api"></a>MachineActions API の一覧表示
 
@@ -41,7 +41,7 @@ ms.locfileid: "61301596"
 
 [コンピューター アクション](machineaction.md)のコレクションを取得します。
 
-[OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+[OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 
 OData の`$filter`クエリは、次 `type``creationDateTimeUtc` `id``status``machineId``requestor`のプロパティでサポートされます。
 

@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd8f48e8396225fc03441cfc7c8ed69fa3f378bb
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 2805736c3d612716f3b99ba0f97fc74a0070bc68
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64475611"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328038"
 ---
 # <a name="microsoft-defender-for-endpoint-api---hello-world"></a>Microsoft Defender for Endpoint API - Hello World
 
@@ -51,13 +51,13 @@ ms.locfileid: "64475611"
 
 ### <a name="do-i-need-a-permission-to-connect"></a>接続にアクセス許可が必要ですか?
 
-アプリケーション登録ステージでは、**Azure Active Directory (Azure AD**) テナントにグローバル管理者 ロールが必要です。
+アプリケーション登録ステージでは、Azure Active Directory (Azure AD) テナントに **グローバル管理者** ロールが必要です。
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>手順 1 - Azure Active Directoryでアプリを作成する
+### <a name="step-1---create-an-app-in-azure-active-directory"></a>手順 1 - Azure Active Directory でアプリを作成する
 
 1. **グローバル管理者** ユーザーを使用して [Azure](https://portal.azure.com) にログオンします。
 
-2. **Azure Active Directory アプリの登録** \>  \> **新しい登録** に移動します。
+2. **Azure Active Directory** \> **アプリの登録** \> **新しい登録** に移動します。
 
    :::image type="content" source="images/atp-azure-new-app2.png" alt-text="Azure Active Directory ポータルの [管理] ウィンドウの下にある [アプリの登録] オプション"  lightbox="images/atp-azure-new-app2.png":::
 
@@ -105,7 +105,7 @@ ms.locfileid: "64475611"
 
    アプリケーション ページで、[ **概要]** に移動し、次の内容をコピーします。
 
-   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Azure Active Directory ポータルの [概要] メニュー項目の下にある [アプリケーションの詳細] ウィンドウ" lightbox="images/app-and-tenant-ids.png":::
+   :::image type="content" source="images/app-and-tenant-ids.png" alt-text="Azure Active Directory ポータルの [概要] メニュー項目の下にあるアプリケーションの詳細ウィンドウ" lightbox="images/app-and-tenant-ids.png":::
 
 完了! アプリケーションが正常に登録されました。
 

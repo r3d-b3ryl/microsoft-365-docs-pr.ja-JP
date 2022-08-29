@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: コンテンツ エクスプローラーにより、ラベル付きアイテムをネイティブに表示することができます。
-ms.openlocfilehash: ca3fc3deb542af582f2c38457bbd460c1241b5ee
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: d00d8febe5c30b438d77e3c9b82b6a8bb6011812
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66637353"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360459"
 ---
 # <a name="get-started-with-content-explorer"></a>コンテンツ エクスプローラーの使用を開始する
 
@@ -95,7 +95,7 @@ ms.locfileid: "66637353"
 
 ### <a name="sensitive-information-types"></a>機密情報の種類
 
-[DLP ポリシー](dlp-learn-about-dlp.md)は、機密情報の保護に役立ちます。これは、**機密の種類** として定義されます。Microsoft 365 には、ユーザーが使用できるさまざまなリージョンをまたいだ [多くの一般的な機密の種類の定義](sensitive-information-type-entity-definitions.md)が含まれています。たとえば、クレジット カード番号、銀行口座番号、国民 ID 番号、Windows Live ID サービス番号などです。
+[DLP ポリシー](dlp-learn-about-dlp.md)は、**機密情報の種類** として定義されている機密情報を保護するのに役立ちます。 Microsoft 365 には、さまざまな地域にわたる[多くの一般的な機密情報の種類に対する定義](sensitive-information-type-entity-definitions.md)が含まれていて、すぐに使用できる状態になっています。 たとえば、クレジット カード番号、銀行口座番号、国内 ID 番号などです。
 
 ### <a name="sensitivity-labels"></a>秘密度ラベル
 

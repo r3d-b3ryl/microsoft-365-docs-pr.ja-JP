@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: Luxemburg の国民識別番号 (自然人) の機密情報の種類エンティティ定義。
-ms.openlocfilehash: d70052fdccfae70302a89069b5292c0daf5b8b2f
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 3640f35086c72262013ad3e25b5aec1bfe8b6fa3
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66997712"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367227"
 ---
 # <a name="luxemburg-national-identification-number-natural-persons"></a>ルクセンブルク国民識別番号 (国民)
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -53,7 +45,7 @@ ms.locfileid: "66997712"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_luxemburg_eu_tax_file_number` がパターンに一致するコンテンツを検出した。
 - `Keywords_luxemburg_eu_national_id_card` のキーワードを検出した。

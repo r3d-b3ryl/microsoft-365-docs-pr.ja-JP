@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
 ms.reviewer: chventou
-ms.openlocfilehash: 71b18f5e78301ac144faef9046420e817c65fa6b
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: 4003f2a41674ec6dbaa875235ccc12412d23ddba
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607369"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327181"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-powershell-wmi-and-mpcmdrunexe"></a>PowerShell、WMI、およびMPCmdRun.exeを使用してMicrosoft Defender for Endpointを管理する
 
@@ -55,7 +55,7 @@ PowerShell を使用して、Microsoft Defender ウイルス対策、エクス�
 |PowerShell **を使用して攻撃対象の縮小ルールを構成する** <br/><br/> *PowerShell を使用して、攻撃対象の縮小ルールからファイルとフォルダーを除外できます。*|[攻撃対象の縮小ルールをカスタマイズする: PowerShell を使用してファイル&フォルダーを除外する](/microsoft-365/security/defender-endpoint/enable-attack-surface-reduction) <br/><br/> また、PowerShell を使用して [攻撃面の縮小ルールを設定するための、AntónioVasconcelo のグラフィカル ユーザー インターフェイス ツール](https://github.com/anvascon/MDATP_PoSh_Scripts/tree/master/ASR%20GUI)も参照してください。|
 |PowerShell **で Network Protection を有効にする** <br/><br/> *PowerShell を使用してネットワーク保護を有効にすることができます。*|[PowerShell で Network Protection を有効にする](/microsoft-365/security/defender-endpoint/enable-network-protection#powershell)|
 |ランサムウェアから保護するように **フォルダー アクセスの制御を構成** する <br/><br/> *[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソーイウェア保護とも呼ばれます。*|[PowerShell でフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#powershell)|
-|組織のデバイスに出入りする承認されていないネットワーク トラフィックをブロックするように **Microsoft Defender ファイアウォールを構成** する|[Windows PowerShellを使用した高度なセキュリティ管理のMicrosoft Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
+|組織のデバイスに出入りする未承認のネットワーク トラフィックをブロックするように **Microsoft Defender ファイアウォールを構成** する|[Windows PowerShellを使用した高度なセキュリティ管理を備えた Microsoft Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-administration-with-windows-powershell)|
 |Windows を実行している組織のデバイスの情報を保護するように **暗号化と BitLocker を構成する**|[BitLocker PowerShell リファレンス ガイド](/powershell/module/bitlocker/)|
 
 ## <a name="configure-microsoft-defender-for-endpoint-with-windows-management-instrumentation-wmi"></a>Windows Management Instrumentation (WMI) を使用してMicrosoft Defender for Endpointを構成する
@@ -84,6 +84,6 @@ WMI は、設定を取得、変更、更新できるスクリプト インター
 
 ## <a name="next-steps"></a>次の手順
 
-- [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender 脆弱性管理の概要を確認する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft Defender セキュリティ センターセキュリティ操作ダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)
 - [IntuneでMicrosoft Defender for Endpointを管理する](manage-mde-post-migration-intune.md)

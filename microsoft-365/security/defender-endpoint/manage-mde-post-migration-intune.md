@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 ms.date: 07/01/2022
 ms.reviewer: chventou
-ms.openlocfilehash: 1cbaff007a5ef2839cbcf51babc7a057c7b756c0
-ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
+ms.openlocfilehash: c8a7b949118375fa10ac12a18ce82c4fadebd6f3
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/02/2022
-ms.locfileid: "66607457"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327159"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-intune"></a>IntuneでMicrosoft Defender for Endpointを管理する
 
@@ -70,7 +70,7 @@ Microsoft Intune (Intune) を含む [Microsoft エンドポイント マネー�
 |ランサムウェアから保護するように **フォルダー アクセスの制御を構成** する <br/><br/> *[フォルダー アクセスの制御](/microsoft-365/security/defender-endpoint/controlled-folders) は、アンチランソーイウェア保護とも呼ばれます。*|[エンドポイント保護: フォルダー アクセスの制御](/mem/intune/protect/endpoint-protection-windows-10#controlled-folder-access) <br/><br/> [Intuneでフォルダー アクセスの制御を有効にする](/microsoft-365/security/defender-endpoint/enable-controlled-folders#intune)|
 |**悪用を使用** して他のデバイスを拡散して感染させるマルウェアから組織のデバイスを保護するようにエクスプロイト保護を構成する <br/><br/> *[エクスプロイト保護](/microsoft-365/security/defender-endpoint/exploit-protection) は、Exploit Guard とも呼ばれます。*|[エンドポイント保護: Microsoft Defender Exploit Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-exploit-guard) <br/><br/> [Intuneでエクスプロイト保護を有効にする](/microsoft-365/security/defender-endpoint/enable-exploit-protection#intune)|
 |インターネット上の悪意のあるサイトやファイルから保護するように **Microsoft Defender SmartScreen を構成** します。 <br/><br/> *Microsoft Edge は、組織のデバイスにインストールする必要があります。Google Chrome および FireFox ブラウザーで保護するには、エクスプロイト保護を構成します。*|[Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) <br/><br/> [デバイスの制限: Microsoft Defender SmartScreen](/mem/intune/configuration/device-restrictions-windows-10#microsoft-defender-smartscreen) <br/><br/> [Intuneで SmartScreen を管理するためのポリシー設定](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-available-settings#mdm-settings)|
-|組織のデバイスに出入りする承認されていないネットワーク トラフィックをブロックするように **Microsoft Defender ファイアウォールを構成** する|[エンドポイント保護: Microsoft Defender ファイアウォール](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [高度なセキュリティを使用したMicrosoft Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
+|組織のデバイスに出入りする未承認のネットワーク トラフィックをブロックするように **Microsoft Defender ファイアウォールを構成** する|[エンドポイント保護: Microsoft Defender ファイアウォール](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-firewall) <br/><br/> [高度なセキュリティを備えた Microsoft Defender ファイアウォール](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)|
 |Windows を実行している組織のデバイスの情報を保護するように **暗号化と BitLocker を構成する**|[エンドポイント保護: Windows 暗号化](/mem/intune/protect/endpoint-protection-windows-10#windows-encryption) <br/><br/> [Windows 10およびWindows 11 デバイス用の BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview)|
 |資格情報盗難攻撃から保護するように **Microsoft Defender Credential Guard を構成する**|Windows 10、Windows 11、Windows Server 2016、Windows Server 2019、Windows Server 2022 については、「[Endpoint Protection: Microsoft Defender Credential Guard](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-credential-guard)」を参照してください。 <br/><br/> Windows 7 SP1、Windows Server 2008 R2 SP1、Windows 8.1、Windows Server 2012 R2 の場合は、「[Pass-the-Hash (PtH) 攻撃とその他の資格情報の盗難の軽減、バージョン 1 および 2」を](https://www.microsoft.com/download/details.aspx?id=36036)参照してください。|
 |組織のデバイスでアプリを監査するか信頼するかを選択するように **Microsoft Defender アプリケーション制御を構成** する <br/><br/> *Microsoft Defender アプリケーション制御は、 [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) とも呼ばれます。*|[Microsoft Intuneを使用して Microsoft Defender アプリケーション制御ポリシーを展開する](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) <br/><br/> [エンドポイント保護: Microsoft Defender アプリケーション制御](/mem/intune/protect/endpoint-protection-windows-10#microsoft-defender-application-control) <br/><br/> [AppLocker CSP](/windows/client-management/mdm/applocker-csp)|
@@ -85,5 +85,5 @@ Microsoft Intune (Intune) を含む [Microsoft エンドポイント マネー�
 
 ## <a name="next-steps"></a>次の手順
 
-- [脅威と脆弱性の管理の概要を取得する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Defender 脆弱性管理の概要を確認する](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Microsoft 365 Defender ポータルのセキュリティ操作ダッシュボードにアクセスする](/microsoft-365/security/defender-endpoint/security-operations-dashboard)

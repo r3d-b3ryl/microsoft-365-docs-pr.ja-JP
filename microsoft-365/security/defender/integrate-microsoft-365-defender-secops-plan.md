@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8c69e92390e6ed6515be6f399703124ece99cc39
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 72535a88f6718724a4d87774d393a4ef0c6955a8
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664020"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344461"
 ---
 # <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>手順 1. Microsoft 365 Defender操作の準備を計画する
 
@@ -50,12 +50,12 @@ SOC は、セキュリティ イベントやインシデントに対する防御
 
 ## <a name="centralize-monitoring-and-logging-of-your-organizations-security-sources"></a>組織のセキュリティ ソースの監視とログ記録を一元化する
 
-通常、SOC チームの中核となる機能は、ファイアウォール、侵入防止システム、データ損失防止システム、脅威と脆弱性の管理 システム、ID システムなど、すべてのセキュリティ デバイスが正しく機能し、監視されていることを確認することです。 SOC チームは、ID、DevOps、クラウド、アプリケーション、データ サイエンス、その他のビジネス チームなどの広範なネットワーク操作と連携して、セキュリティ情報の分析が一元化され、セキュリティで保護されるようにします。 さらに、SOC チームは、さまざまな形式の解析と正規化を含む、使用可能で読み取り可能な形式でデータのログを管理する役割を担います。
+通常、SOC チームの中核となる機能は、ファイアウォール、侵入防止システム、データ損失防止システム、脆弱性管理システム、ID システムなどのすべてのセキュリティ デバイスが正しく機能し、監視されていることを確認することです。 SOC チームは、ID、DevOps、クラウド、アプリケーション、データ サイエンス、その他のビジネス チームなどの広範なネットワーク操作と連携して、セキュリティ情報の分析が一元化され、セキュリティが確保されるようにします。 さらに、SOC チームは、さまざまな形式の解析と正規化を含む、使用可能で読み取り可能な形式でデータのログを管理する役割を担います。
 
 ## <a name="establish-red-blue-and-purple-team-operational-readiness"></a>赤、青、紫のチームの運用準備を確立する
 
 すべての SOC チームは、サイバー インシデントに対応する準備をテストする必要があります。 テストは、IT、セキュリティ、ビジネス レベルのさまざまな個人とのテーブルトップや演習実行などのトレーニング演習を通じて行うことができます。 個々のトレーニング演習チームは、代表的な役割に基づいて作成され、防御者 (ブルー チーム)、攻撃者 (赤いチーム) の役割を果たしているか、または練習中に明らかにされた長所と短所を通じて青と赤の両方のチームの方法とテクニックを向上させようとしているオブザーバーとして (Purple Team)。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [手順 2.ゼロ トラスト Framework を使用して SOC 統合準備性評価を実行する](integrate-microsoft-365-defender-secops-readiness.md)

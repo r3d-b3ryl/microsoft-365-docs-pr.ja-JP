@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cafdfad60a3d3f523b731f5e3b83752a64ffdd1a
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: 223ca8ab9eac14b456c62dad3d644ad067092766
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67277288"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344549"
 ---
 # <a name="export-non-product-code-software-inventory-assessment-per-device"></a>デバイスごとの製品コード以外のソフトウェア インベントリ評価をエクスポートする
 
@@ -41,11 +41,11 @@ ms.locfileid: "67277288"
 
 異なる API 呼び出しは、さまざまな種類のデータを取得します。 データの量は大きくなる可能性があるため、取得する方法は 2 つあります。
 
-- [製品コード以外のソフトウェア インベントリ評価 **JSON 応答** をエクスポートする](#1-export-non-product-code-software-inventory-assessment-json-response)API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の odata.nextLink フィールドを使用 \@して次の結果をフェッチできます。
+- [製品コード以外のソフトウェア インベントリ評価 **JSON 応答** をエクスポートする](#1-export-non-product-code-software-inventory-assessment-json-response)API は、組織内のすべてのデータを Json 応答としてプルします。 この方法は、 _100 K 未満のデバイスを持つ小規模な組織_ に最適です。 応答はページ分割されるため、応答の \@odata.nextLink フィールドを使用して次の結果をフェッチできます。
 
-- [**ファイルを使用して** 製品コード以外のソフトウェア インベントリ評価をエクスポート](#2-export-non-product-code-software-inventory-assessment-via-files)する この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織に推奨されます。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からすべてのデータをダウンロードできます。
+- [**ファイルを使用して** 製品コード以外のソフトウェア インベントリ評価をエクスポート](#2-export-non-product-code-software-inventory-assessment-via-files)する この API ソリューションを使用すると、大量のデータをより迅速かつ確実にプルできます。 そのため、100 K を超えるデバイスを持つ大規模な組織におすすめです。 この API は、組織内のすべてのデータをダウンロード ファイルとしてプルします。 応答には、Azure Storage からすべてのデータをダウンロードするための URL が含まれています。 この API を使用すると、次のように Azure Storage からすべてのデータをダウンロードできます:
   - すべての組織データを含むダウンロード URL の一覧を取得するには、API を呼び出します。
-  - ダウンロード URL を使用してすべてのファイルをダウンロードし、必要に合ったデータを処理します。
+  - ダウンロード URL を使用してすべてのファイルをダウンロードし、データを好きなように処理します。
 
 ( _Json 応答_ または _ファイルを使用して_) 収集されるデータは、現在の状態の現在のスナップショットです。 履歴データは含まれません。 履歴データを収集するには、お客様が独自のデータ ストレージにデータを保存する必要があります。
 
@@ -88,22 +88,22 @@ GET /api/machines/SoftwareInventoryNoProductCodeByMachine
 > [!NOTE]
 >
 > - 各レコードは約 0.5 KB のデータです。 正しい pageSize パラメーターを選択するときは、これを考慮する必要があります。
-> - 次の表で定義されているプロパティは、プロパティ ID でアルファベット順に一覧表示されます。 この API を実行する場合、結果の出力は必ずしもこの表に示されているのと同じ順序で返されるとは限りません。
+> - 次のテーブルで定義されているプロパティは、プロパティ ID でアルファベット順にリスト表示されます。 この API を実行する場合、結果の出力は必ずしもこのテーブルにリストされているのと同じ順序で返されるとは限りません。
 > - 応答で追加の列が返される場合があります。 これらの列は一時的なものであり、削除される可能性があります。ドキュメント化された列のみを使用してください。
 
 <br>
 
 プロパティ (ID)|データ型|説明
 :---|:---|:---
-DeviceId|string|サービス内のデバイスの一意の識別子。
+DeviceId|文字列|サービス内のデバイスの一意の識別子。
 DeviceName|string|デバイスの完全修飾ドメイン名 (FQDN)。
 OSPlatform|string|デバイスで実行されているオペレーティング システムのプラットフォーム。 これらは、Windows 10やWindows 11など、同じファミリ内のバリエーションを持つ特定のオペレーティング システムです。 詳細については [、「サポートされているオペレーティング システム、プラットフォーム、および機能](../defender-vulnerability-management/tvm-supported-os.md) 」を参照してください。
 RbacGroupName|string|ロールベースのアクセス制御 (RBAC) グループ。 このデバイスが RBAC グループに割り当てられていない場合、値は "未割り当て" になります。 組織に RBAC グループが含まれていない場合、値は "None" になります。
 RbacGroupId|string|ロールベースのアクセス制御 (RBAC) グループ ID。
 SoftwareLastSeenTimestamp|文字列|このソフトウェアがデバイスで最後に表示された時刻。
 SoftwareName|文字列|ソフトウェア製品の名前。
-SoftwareVendor|文字列|ソフトウェア ベンダーの名前。
-SoftwareVersion|文字列|ソフトウェア製品のバージョン番号。
+SoftwareVendor|string|ソフトウェア ベンダーの名前。
+SoftwareVersion|string|ソフトウェア製品のバージョン番号。
 
 ### <a name="16-examples"></a>1.6 例
 
@@ -199,7 +199,7 @@ GET /api/machines/Api/Machines/SoftwareInventoryNonCpeExport
 
 ****
 
-プロパティ (ID)|データ型|説明|返された値の例
+プロパティ (ID)|データ型|説明|戻り値の例
 :---|:---|:---|:---
 ファイルをエクスポートする|配列\[文字列\]|組織の現在のスナップショットを保持しているファイルのダウンロード URL の一覧|"[Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1", "https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2"]
 GeneratedTime|文字列|エクスポートが生成された時刻。|2021-05-20T08:00:00Z
@@ -237,6 +237,5 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryNonCp
 - [デバイスごとのソフトウェア脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
 
 その他の関連
-
-- [リスクベースの脅威&脆弱性管理](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織の脆弱性](tvm-weaknesses.md)

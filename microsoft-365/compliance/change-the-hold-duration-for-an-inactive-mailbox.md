@@ -20,14 +20,16 @@ ms.assetid: bdee24ed-b8cf-4dd0-92ae-b86ec4661e6b
 ms.custom:
 - seo-marvel-apr2020
 description: Office 365 メールボックスが非アクティブになった後、非アクティブなメールボックスに割り当てられている保持またはOffice 365アイテム保持ポリシーの期間を変更します。
-ms.openlocfilehash: 6fdb3993fd6b6503ab672a0c6465a394f3824c4b
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: c131aabd87b130a72c334ec2399f09e0d9910dab
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628883"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359911"
 ---
 # <a name="change-the-hold-duration-for-an-inactive-mailbox"></a>非アクティブなメールボックスの保持期間を変更する
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 [非アクティブなメールボックス](inactive-mailboxes-in-office-365.md)は、元従業員が組織を離れた後にメールを保持するために使用されるメールボックスの状態です。 Microsoft 365 ユーザー オブジェクトが削除される前に該当するホールドが適用されると、メールボックスは非アクティブになります。  次の種類の保留は、ユーザー アカウントの削除時に非アクティブなメールボックスの作成を開始します。
 

@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: cc73531540222791eb39eeca74570f34ff78a1b7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.openlocfilehash: 493f83c3ba2e607a09d89e3570cbd4b0f65f6bfb
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64469781"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67327247"
 ---
 # <a name="overview-of-management-and-apis"></a>管理と API の概要
 
@@ -41,7 +41,7 @@ Defender for Endpoint では、お客様がプラットフォームを簡単に�
 
 ## <a name="endpoint-onboarding-and-portal-access"></a>エンドポイントのオンボードとポータル へのアクセス
 
-デバイスオンボーディングは、クライアント デバイスと Microsoft Defender for server デバイスのMicrosoft エンドポイント マネージャーとMicrosoft Intuneに完全に統合され、構成、展開、監視の完全なエンド ツー エンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpointでは、デバイス管理に使用されるグループ ポリシーやその他のサードパーティツールがサポートされています。
+デバイスオンボーディングは、クライアント デバイスと Microsoft Defender for server デバイスの Microsoft エンドポイント マネージャーとMicrosoft Intuneに完全に統合され、構成、展開、監視の完全なエンド ツー エンドエクスペリエンスを提供します。 さらに、Microsoft Defender for Endpointでは、デバイス管理に使用されるグループ ポリシーやその他のサードパーティツールがサポートされています。
 
 Defender for Endpoint では、ポータルにアクセスできるユーザーがロールベースのアクセス制御 (RBAC) の柔軟性を通じて表示および実行できる内容をきめ細かく制御できます。 RBAC モデルでは、すべての種類のセキュリティ チーム構造がサポートされます。
 
@@ -88,7 +88,7 @@ Defender for Endpoint イベント情報は、長期的なデータ保持のた�
 
 ## <a name="siem-api"></a>SIEM API
 
-セキュリティ情報とイベント管理 (SIEM) 統合を有効にすると、SIEM ソリューションを使用するか、または検出 REST API に直接接続することで、検出をMicrosoft 365 Defenderからプルできます。 これにより、事前設定された値を含む SIEM コネクタ アクセスの詳細セクションがアクティブ化され、アプリケーションがAzure Active Directory (Azure AD) テナントの下に作成されます。 
+セキュリティ情報とイベント管理 (SIEM) 統合を有効にすると、SIEM ソリューションを使用するか、または検出 REST API に直接接続することで、検出をMicrosoft 365 Defenderからプルできます。 これにより、事前に設定された値を含む SIEM コネクタ アクセスの詳細セクションがアクティブ化され、Azure Active Directory (Azure AD) テナントの下にアプリケーションが作成されます。 
 
 ## <a name="related-topics"></a>関連項目
 

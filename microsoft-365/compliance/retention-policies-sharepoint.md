@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 保持ポリシーと保持ラベルを使用して、組織のデータの自動保持または削除を管理する、SharePoint と OneDrive の Microsoft 365 リテンション期間のしくみについて説明します。
-ms.openlocfilehash: 54e1b1493eecd763853e4b3968ce744b21d4eebf
-ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.openlocfilehash: 3e21d720b2d4afa70a83011b1e2486151f6c3cd2
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67112507"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326433"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>SharePoint と OneDrive の保持の詳細
 
@@ -133,6 +133,8 @@ SharePoint と OneDrive では、保持する必要のあるコンテンツを�
 ![SharePoint と OneDrive に格納されているクラウド添付ファイルの保持のしくみ](../media/retention-diagram-of-retention-flow-cloud-attachments.png)
 
 アイテム保管ライブラリに格納されているコピーは、クラウドの添付ファイルが共有されてから通常1時間以内に作成されます。
+
+コピーを作成してラベル付けする前に、ユーザーが削除した元のファイルを保護するために、自動ラベル付けポリシーに含まれる場所のファイルは、削除されると自動的に保持保持ライブラリにコピーされます。 これらのファイルの一時的な保持期間は 1 日であり、このページで説明されている標準的なクリーンアップ プロセスに従います。 元のファイルが削除されると、クラウド添付ファイルを保持するためのコピーでは、このバージョンのファイルが使用されます。 保持保持ライブラリ内の削除されたファイルの自動保持と一時的な保持は、クラウド添付ファイルの自動ラベル付けポリシーに固有です。
 
 ## <a name="how-retention-works-with-onenote-content"></a>OneNote コンテンツでの保持のしくみ
 

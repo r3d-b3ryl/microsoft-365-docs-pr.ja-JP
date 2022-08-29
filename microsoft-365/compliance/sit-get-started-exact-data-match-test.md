@@ -17,14 +17,19 @@ search.appverid:
 - MET150
 description: サービスを構成する
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 31f51a0bfe3833fb45132d1a9f9093b1dcccf285
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 0c8e43e9d732535bc15b7c231cc7ac91dabe3898
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622087"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359845"
 ---
 # <a name="test-an-exact-data-match-sensitive-information-type"></a>機密情報の種類と完全に一致するデータをテストする
+
+## <a name="applies-to"></a>適用対象
+
+- [新しいエクスペリエンス](sit-create-edm-sit-unified-ux-workflow.md)
+- [クラシック エクスペリエンス](sit-create-edm-sit-classic-ux-workflow.md)
 
 厳密なデータ一致 (EDM) の機密情報の種類 (SIT) が作成され、機密情報テーブルのアップロードとインデックス作成が完了したことを確認してから 1 時間後に、コンプライアンス センターの [機密情報の種類] セクションのテスト関数を使用して、検出する情報が検出されたことをテストできます。
  

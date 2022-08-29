@@ -17,12 +17,12 @@ ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
 ms.date: 08/10/2022
-ms.openlocfilehash: 363ef1fbf760d54e843994347e1e4c1ad3e40146
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 41afd4f726ecef8b63003a1e639f8430a759e5e7
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306616"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325311"
 ---
 # <a name="attack-surface-reduction-rules-reference"></a>攻撃面の縮小ルールリファレンス
 
@@ -69,7 +69,7 @@ ms.locfileid: "67306616"
 | [Office アプリケーションが実行可能コンテンツを作成できないようにする](#block-office-applications-from-creating-executable-content) | Y | Y | Y | Y | Y |
 | [Office アプリケーションが他のプロセスにコードを挿入できないようにする](#block-office-applications-from-injecting-code-into-other-processes)  | Y | Y | Y | Y | Y |
 | [Office 通信アプリケーションによる子プロセスの作成をブロックする](#block-office-communication-application-from-creating-child-processes) | Y | Y | Y | Y | Y |
-| [WMI イベント サブスクリプションを使用して永続化をブロックする](#block-persistence-through-wmi-event-subscription) <br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y <br> バージョン 1903 (ビルド 18362) 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> バージョン 1903 (ビルド 18362) 以降 | N | N |
+| [Windows Management Instrumentation (WMI) イベント サブスクリプションを使用して永続化をブロックする](#block-persistence-through-wmi-event-subscription) <br> \*_ファイルとフォルダーの除外はサポートされていません。_ | Y <br> バージョン 1903 (ビルド 18362) 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y <br> バージョン 1903 (ビルド 18362) 以降 | N | N |
 | [PSExec コマンドと WMI コマンドから生成されたプロセス作成をブロックする](#block-process-creations-originating-from-psexec-and-wmi-commands) | Y <br> バージョン 1803 以降 <sup>[[3](#fn1)]<sup></sup> | Y | Y | Y | Y |
 | [USB から実行される信頼されていないプロセスと署名されていないプロセスをブロックする](#block-untrusted-and-unsigned-processes-that-run-from-usb) | Y | Y | Y | Y | Y |
 | [Office マクロからの Win32 API 呼び出しをブロックする](#block-win32-api-calls-from-office-macros) | Y | Y | Y | N | N |
@@ -349,7 +349,7 @@ GUID: `5beb7efe-fd9a-4556-801d-275e5ffc04cc`
 - AsrObfuscatedScriptAudited
 - AsrObfuscatedScriptBlocked
 
-依存関係: Microsoft Defender ウイルス対策、AMSI
+依存関係: Microsoft Defender ウイルス対策、マルウェア対策スキャン インターフェイス (AMSI)
 
 ### <a name="block-javascript-or-vbscript-from-launching-downloaded-executable-content"></a>ダウンロードした実行可能コンテンツの起動から JavaScript または VBScript をブロックする
 

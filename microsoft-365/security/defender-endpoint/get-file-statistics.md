@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 83901799d6dc5e8f6aa81ad57580e64167bfa134
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 3a7880b9a148ca971be8fb588d4823e85c30db99
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61284207"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325421"
 ---
 # <a name="get-file-statistics-api"></a>ファイル統計 API を取得する
 

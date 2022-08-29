@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f8726c006bac66b18d0e8359fe391a5d6e39ad69
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: d16be2d9a072b43fba591a65b78eaa3111b25f65
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306432"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325779"
 ---
 # <a name="create-indicators-for-files"></a>ファイルのインジケーターを作成 
 
@@ -165,7 +165,7 @@ Timestamp > ago(30d)
 > [!WARNING]
 > ファイルと証明書のポリシー競合処理は、ドメイン/URL/IP アドレスのポリシー競合処理とは異なります。
 
-脅威と脆弱性管理のブロック脆弱なアプリケーション機能は、ファイル IoC を適用に使用し、上記の競合処理順序に従います。
+Microsoft Defender 脆弱性の管理のブロックの脆弱なアプリケーション機能では、ファイル IoC を適用に使用し、上記の競合処理順序に従います。
 
 ### <a name="examples"></a>例
 

@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 04/08/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
 ms.reviewer: Tinacyt
 f1.keywords: NOCSH
-ms.openlocfilehash: 99e2a26294d8e67854387d3c4f3d41c469a97a50
-ms.sourcegitcommit: aff1732dfa21e9283b173d8e5ca5bcbeeaaa26d8
+ms.openlocfilehash: 16d8dd96b9fef1aaa01437f3c1175021a1f9f33d
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/01/2022
-ms.locfileid: "65811096"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315704"
 ---
 # <a name="creating-and-testing-binary-files-on-test-base"></a>テスト ベースでのバイナリ ファイルの作成とテスト
 
@@ -37,7 +37,7 @@ ms.locfileid: "65811096"
 > [!div class="mx-imgBorder"]
 > ![新しいパッケージの作成ウィザード](Media/testapplication01.png)
 
-### <a name="step-1-define-content"></a>手順 1。 コンテンツを定義する
+### <a name="step-1-define-content"></a>手順 1. コンテンツを定義する
 
 1. **[パッケージ ソース**] セクションで、パッケージ ソースの種類で [バイナリ] (.exe、.msiなど) を選択します。
 
@@ -60,7 +60,7 @@ ms.locfileid: "65811096"
 4. 要求されたすべての情報が指定されたら、[次 **へ: 構成テスト** ] ボタンをクリックして、次のフェーズに進むことができます。
 
    > [!div class="mx-imgBorder"]
-   > ![次の手順](Media/testapplication05.png)
+   > ![次のステップ](Media/testapplication05.png)
 
 ### <a name="step-2-configure-test"></a>手順 2。 テストを構成する
 
@@ -132,20 +132,20 @@ ms.locfileid: "65811096"
 ### <a name="step-4-test-matrix"></a>手順 4. テスト マトリックス
 
 1. [テスト マトリックス] タブで、 **OS 更新** プログラムの種類を選択します。 サポートされている OS 更新プログラムの種類は 2 つあります。
-   - **セキュリティ更新プログラム** を使用すると、パッケージを、Windowsプレリリースの毎月のセキュリティ更新プログラムの増分チャーンに対してテストできます。
-   - **機能更新プログラム** を使用すると、Windows Insider Programからリリース前の 2 年間の機能更新プログラムビルドWindowsパッケージをテストできます。
+   - **セキュリティ更新プログラム** を使用すると、パッケージを Windows プレリリースの毎月のセキュリティ更新プログラムの増分チャーンに対してテストできます。
+   - **機能更新プログラム** を使用すると、Windows Insider Program からビルドされた Windows プレリリースの 2 年間の機能更新プログラムに対してパッケージをテストできます。
 
 2. セキュリティ更新プログラムテストの OS バージョンを選択します。
 
-   OS 更新プログラムの種類で **セキュリティ更新プログラム** が選択されている場合は、パッケージがテストされるWindowsの OS バージョンを選択する必要があります。
+   **OS 更新プログラムの種類でセキュリティ更新プログラム** が選択されている場合は、パッケージのテスト対象となる Windows の OS バージョンを選択する必要があります。
 
    > [!NOTE]
    > サーバーとクライアントの両方の OS に対してパッケージをテストすることを選択した場合は、パッケージが互換性があり、両方の OS で実行できることを確認してください。
 
 3. 機能更新テストのオプションを選択します。
    - OS **更新プログラムの** 種類で機能更新プログラムが選択されている場合は、次のオプションを完了する必要があります。
-   - **Insider Channel** の場合は、パッケージをテストするビルドとしてWindows Insider Program チャネルを選択します。 現在、 **Insider Beta Channel** でフライティングされたビルドを使用しています。
-   - **Insight の OS ベースライン** の場合は、テスト結果を比較する際にベースラインとして使用する OS バージョンWindowsを選択します。
+   - **Insider Channel** の場合は、パッケージをテストするビルドとして Windows Insider Program Channel を選択します。 現在、 **Insider Beta Channel** でフライティングされたビルドを使用しています。
+   - **Insight の OS ベースライン** の場合は、テスト結果を比較する際にベースラインとして使用する Windows OS バージョンを選択します。
 
    > [!div class="mx-imgBorder"]
    > ![Windows OS バージョンを選択する](Media/testapplication14.png)

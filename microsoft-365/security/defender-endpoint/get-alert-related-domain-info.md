@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 7c1b11e1e1ed25fb7eb9537322db231198db3b9b
-ms.sourcegitcommit: c11d4a2b9cb891ba22e16a96cb9d6389f6482459
+ms.openlocfilehash: 1371aa1ec6ce53276300883b6e049db9457cfc19
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61283919"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326653"
 ---
 # <a name="get-alert-related-domain-information-api"></a>アラート関連のドメイン情報 API を取得する
 
@@ -49,8 +49,8 @@ ms.locfileid: "61283919"
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
-アプリケーション|URL。Read.All|'読み取り URL'
-委任 (職場または学校のアカウント)|URL。Read.All|'読み取り URL'
+アプリケーション|Url。Read.All|'読み取り URL'
+委任 (職場または学校のアカウント)|Url。Read.All|'読み取り URL'
 
 > [!NOTE]
 > ユーザー資格情報を使用してトークンを取得する場合:

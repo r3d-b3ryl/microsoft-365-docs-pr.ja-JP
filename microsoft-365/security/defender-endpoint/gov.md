@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5c509c046dfb50d8fefd0843535e77dbe49bd58a
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 55517599dabee5ee4304b3347f71bd53d8d9bfcc
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306242"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325751"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>米国政府のお客様向けの Microsoft Defender for Endpoint
 
@@ -101,8 +101,8 @@ Windows 10バージョン 1909 ([KB4586819](https://support.microsoft.com/help/4
 Windows 10バージョン 1903 ([KB4586819](https://support.microsoft.com/help/4586819) <sup>1</sup>)|![はい。](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1903-end-of-servicing)アップグレードしてください|![はい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1903-end-of-servicing)アップグレードしてください|![はい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1903-end-of-servicing)アップグレードしてください
 Windows 10 Version 1809 ([KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![はい。](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing)アップグレードしてください|![はい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing)アップグレードしてください|![はい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing)アップグレードしてください
 Windows 10バージョン 1803 ([KB4598245](https://support.microsoft.com/help/4598245) <sup>1</sup>)|![はい。](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing)アップグレードしてください|![はい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing)アップグレードしてください|![はい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/windows-10-1803-1809-end-of-servicing)アップグレードしてください
-Windows 10バージョン 1709|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![[KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> ではい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![不要](images/svg/check-no.svg) <br /> 注: サポートされません
-Windows 10バージョン 1703 以前|![いいえ。](images/svg/check-no.svg) <br /> 注: サポートされません|![不要](images/svg/check-no.svg) <br /> 注: サポートされません|![不要](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1709|![その必要はありません。](images/svg/check-no.svg) <br /> 注: サポートされません|![[KB4499147](https://support.microsoft.com/help/4499147) <sup>1</sup> ではい](images/svg/check-yes.svg) <br /> 注: [非推奨、](/lifecycle/announcements/revised-end-of-service-windows-10-1709)アップグレードしてください|![不要](images/svg/check-no.svg) <br /> 注: サポートされません
+Windows 10バージョン 1703 以前|![その必要はありません。](images/svg/check-no.svg) <br /> 注: サポートされません|![不要](images/svg/check-no.svg) <br /> 注: サポートされません|![不要](images/svg/check-no.svg) <br /> 注: サポートされません
 Windows Server 2022|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2019 ( [KB4586839](https://support.microsoft.com/help/4586839) <sup>1</sup>)|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
 Windows Server 2016 (モダン) <sup>2</sup>|![はい。](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)
@@ -207,4 +207,4 @@ Windows Server 2008 R2 SP1|![はい。](images/svg/check-yes.svg)|![はい](imag
 |条件付きアクセス/条件付き起動|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |MAM のサポート|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
 |プライバシー コントロール|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
-|脅威と脆弱性の管理 (TVM)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|
+|Microsoft Defender 脆弱性の管理 (MDVM))|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|![はい](images/svg/check-yes.svg)|

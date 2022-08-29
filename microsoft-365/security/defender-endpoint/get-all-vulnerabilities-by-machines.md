@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 45c29a70f97c681e6236f4327fed8e344d9dc8ac
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: a2a5086ddd56df3dee50a849526021a92e9dfc43
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301644"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67342867"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>マシンとソフトウェアによる脆弱性の一覧表示
 
@@ -39,17 +39,17 @@ ms.locfileid: "61301644"
 [コンピューター](machine.md)と[ソフトウェア](software.md)ごとに組織に影響を与えるすべての脆弱性の一覧を取得します。
 
 - この脆弱性に修正 KB がある場合は、応答に表示されます。
-- [OData V4 クエリをサポートします](https://www.odata.org/documentation/)。
+- [OData V4 クエリ](https://www.odata.org/documentation/)をサポートします。
 - OData の`$filter`クエリは、次 `fixingKbId``id``machineId``productVendor` `cveId``productName``productVersion``severity`のプロパティでサポートされます。
 <br>```$stop``` 最大値が 10,000 の場合
 <br>```$skip```
 
 > [!TIP]
-> これは、[Power BI統合](api-power-bi.md)に適した API です。
+> これは [、Power BI 統合](api-power-bi.md)のための優れた API です。
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[Microsoft Defender for Endpoint API を使用](apis-intro.md)する」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[エンドポイント API に Microsoft Defender を使用する](apis-intro.md)」を参照してください。
 
 アクセス許可の種類|アクセス許可|アクセス許可の表示名
 :---|:---|:---
@@ -122,5 +122,5 @@ GET https://api.securitycenter.microsoft.com/api/vulnerabilities/machinesVulnera
 
 ## <a name="see-also"></a>関連項目
 
-- [リスクベースの脅威と脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Microsoft Defender 脆弱性の管理](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [組織の脆弱性](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4a0387eac18152599cfd08ba75893f3eae248431
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: ca448d64b544e7c7a390b243c77a878dd9afc55a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102616"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324497"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>ユーザーなしでMicrosoft Defender for Endpointにアクセスするアプリを作成する
 
@@ -42,9 +42,9 @@ ms.locfileid: "66102616"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-このページでは、ユーザーなしで Defender for Endpoint へのプログラムによるアクセスを取得するアプリケーションを作成する方法について説明します。 ユーザーに代わって Defender for Endpoint にプログラムでアクセスする必要がある場合は、「ユーザー [コンテキストを使用したアクセスの取得](exposed-apis-create-app-nativeapp.md)」を参照してください。 必要なアクセスが不明な場合は、[概要](apis-intro.md)を参照してください。
+このページでは、ユーザーなしで Defender for Endpoint へのプログラムによるアクセスを取得するアプリケーションを作成する方法について説明します。 ユーザーに代わって Defender for Endpoint にプログラムでアクセスする必要がある場合は、「ユーザー [コンテキストを使用したアクセスの取得](exposed-apis-create-app-nativeapp.md)」を参照してください。 必要なアクセス権がわからない場合は、「 [作業の開始](apis-intro.md)」を参照してください。
 
-Microsoft Defender for Endpointは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、Defender for Endpoint 機能に基づいて作業フローを自動化し、イノベーションを行うのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については、「[OAuth 2.0 Authorization Code Flow」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
+Microsoft Defender for Endpointは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、Defender for Endpoint 機能に基づいて作業フローを自動化し、イノベーションを行うのに役立ちます。 API アクセスには、OAuth2.0 認証が必要です。 詳細については、「 [OAuth 2.0 承認コード フロー」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
 
 一般に、API を使用するには、次の手順を実行する必要があります。
 - Azure Active Directory (Azure AD) アプリケーションを作成します。
@@ -57,7 +57,7 @@ Microsoft Defender for Endpointは、一連のプログラム API を通じて�
 
 1. **グローバル管理者** ロールを持つユーザーを使用して [Azure](https://portal.azure.com) にログオンします。
 
-2. **Azure Active Directory アプリの登録** \>  \> **新しい登録** に移動します。 
+2. **Azure Active Directory** \> **アプリの登録** \> **新しい登録** に移動します。 
 
     :::image type="content" source="images/atp-azure-new-app2.png" alt-text="アプリケーションの登録ウィンドウ" lightbox="images/atp-azure-new-app2.png":::
 
@@ -74,7 +74,7 @@ Microsoft Defender for Endpointは、一連のプログラム API を通じて�
 
    :::image type="content" source="images/application-permissions.png" alt-text="アプリケーションのアクセス許可情報ウィンドウ" lightbox="images/application-permissions.png":::
 
-     関連するアクセス許可を選択する必要があります。 "すべてのアラートの読み取り" は例にすぎません。 例として以下のようなものがあります。
+     関連するアクセス許可を選択する必要があります。 "すべてのアラートの読み取り" は例にすぎません。 例:
 
      - [高度なクエリを実行](run-advanced-query-api.md)するには、[高度なクエリの実行] アクセス許可を選択します。
      - [デバイスを分離](isolate-machine.md)するには、[コンピューターの分離] アクセス許可を選択します。
@@ -154,7 +154,7 @@ $token
 > [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory) NuGet パッケージとAzure AD Authentication ライブラリ (ADAL) は非推奨になりました。 2020 年 6 月 30 日以降、新機能は追加されていません。   アップグレードすることを強くお勧めします。詳細については、 [移行ガイド](/azure/active-directory/develop/msal-migration) を参照してください。
 
 1. 新しいコンソール アプリケーションを作成します。
-1. [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGetインストールします。
+1. NuGet [Microsoft.Identity.Client をインストールします](https://www.nuget.org/packages/Microsoft.Identity.Client/)。
 1. 次を追加します。
 
     ```csharp
@@ -185,7 +185,7 @@ $token
 ### <a name="use-curl"></a>Curl を使用する
 
 > [!NOTE]
-> 次の手順では、curl for Windowsがコンピューターに既にインストールされていることを前提としています。
+> 次の手順では、Curl for Windows がコンピューターに既にインストールされていることを前提としています。
 
 1. コマンド プロンプトを開き、CLIENT_IDを Azure アプリケーション ID に設定します。
 1. CLIENT_SECRETを Azure アプリケーション シークレットに設定します。

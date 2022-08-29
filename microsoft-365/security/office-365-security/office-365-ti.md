@@ -21,24 +21,24 @@ ms.custom:
 description: Microsoft Defender for Office 365 プランの脅威の調査と対応の機能について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c972a42730f4d21b73227a8b8a9900223109d590
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.openlocfilehash: f38e5b51e930bde2fb3218864fa0e57c31949e28
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64972037"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67325839"
 ---
 # <a name="threat-investigation-and-response"></a>脅威の調査および対応
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
-[Microsoft Defender for Office 365](defender-for-office-365.md)の脅威の調査と対応機能は、セキュリティ アナリストと管理者が、ビジネス ユーザーに対する組織のMicrosoft 365を次の方法で保護するのに役立ちます。
+[Microsoft Defender for Office 365](defender-for-office-365.md)の脅威の調査と対応機能は、セキュリティ アナリストと管理者が次の方法で組織の Microsoft 365 をビジネス ユーザーに保護するのに役立ちます。
 
 - サイバー攻撃を簡単に識別、監視、理解できるようにします。
-- Exchange Online、SharePoint Online、OneDrive for Business、Microsoft Teamsの脅威に迅速に対処するのに役立ちます。
+- Exchange Online、SharePoint Online、OneDrive for Business、Microsoft Teams の脅威に迅速に対処するのに役立ちます。
 - セキュリティ運用が組織に対するサイバー攻撃を防ぐのに役立つ分析情報と知識を提供する。
 - 重要な電子メール ベースの脅威[に対して、Office 365での自動調査と対応](automated-investigation-response-office.md)を採用しています。
 
@@ -59,13 +59,13 @@ Microsoft 365 Defender ポータル<https://security.microsoft.com>の脅威の�
 
 :::image type="content" source="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png" alt-text="脅威エクスプローラー ページ" lightbox="../../media/7a7cecee-17f0-4134-bcb8-7cee3f3c3890.png":::
 
-Microsoft 365 Defender ポータル<https://security.microsoft.com>でこのレポートを表示して使用するには、**電子メール & コラボレーション** \> エクスプローラーに移動 **します**。 または、 **エクスプローラー** ページに直接移動するには、 <https://security.microsoft.com/threatexplorer>.
+Microsoft 365 Defender ポータルで<https://security.microsoft.com>このレポートを表示して使用するには、**コラボレーション** \> エクスプローラー Email &移動 **します**。 または、 **エクスプローラー** ページに直接移動するには、 <https://security.microsoft.com/threatexplorer>.
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365脅威インテリジェンス接続
 
 この機能は、アクティブなOffice 365 E5 サブスクリプションまたは脅威インテリジェンス アドオンがある場合にのみ使用できます。 詳細については、Office 365 Enterprise E5 製品ページを参照してください。
 
-この機能を有効にすると、Microsoft Defender for Office 365のデータをMicrosoft 365 Defenderに組み込み、Office 365 メールボックスとWindows デバイス全体で包括的なセキュリティ調査を行うことができます。
+この機能を有効にすると、Microsoft Defender for Office 365のデータをMicrosoft 365 Defenderに組み込み、Office 365メールボックスと Windows デバイス全体で包括的なセキュリティ調査を行うことができます。
 
 > [!NOTE]
 > この機能を有効にするには、適切なライセンスが必要です。
@@ -86,7 +86,7 @@ Microsoft 365 Defender ポータル<https://security.microsoft.com>で組織の�
 
 攻撃シミュレーション トレーニングを使用して、組織内で現実的なサイバー攻撃を設定して実行し、実際のサイバー攻撃がビジネスに影響を与える前に脆弱なユーザーを特定します。 詳細については、「 [フィッシング攻撃をシミュレートする](attack-simulation-training.md)」を参照してください。
 
-Microsoft 365 Defender ポータルで<https://security.microsoft.com>この機能を表示して使用するには、**email & collaborationAttack** >  **シミュレーション トレーニング** に移動します。 または、 **攻撃シミュレーションのトレーニング** ページに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=overview>.
+Microsoft 365 Defender ポータルで<https://security.microsoft.com>この機能を表示して使用するには、**Email &コラボレーション** > **攻撃シミュレーション トレーニング** に移動します。 または、**攻撃シミュレーション トレーニング** ページに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=overview>.
 
 ### <a name="automated-investigation-and-response"></a>自動調査および対応
 
@@ -100,24 +100,24 @@ Microsoft Defender for Office 365プラン 2 オファリングの一環とし�
 
 ## <a name="how-do-we-get-these-capabilities"></a>これらの機能を入手するにはどうすればよいですか?
 
-Microsoft 365脅威の調査と対応機能は、Enterprise E5 または特定のサブスクリプションのアドオンとして含まれるMicrosoft Defender for Office 365プラン 2 に含まれています。 詳細については、「[Defender for Office 365 プラン 1 とプラン 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)」を参照してください。
+Microsoft 365 の脅威の調査と対応機能は、エンタープライズ E5 または特定のサブスクリプションのアドオンとして含まれるMicrosoft Defender for Office 365プラン 2 に含まれています。 詳細については、「[Defender for Office 365 プラン 1 とプラン 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)」を参照してください。
 
 ## <a name="required-roles-and-permissions"></a>必要な役割と権限
 
 Microsoft Defender for Office 365では、ロールベースのアクセス制御が使用されます。 アクセス許可は、Azure Active Directory、Microsoft 365 管理センター、またはMicrosoft 365 Defender ポータルの特定のロールを介して割り当てられます。
 
 > [!TIP]
-> セキュリティ管理者などの一部のロールはMicrosoft 365 Defender ポータルで割り当てることができますが、代わりにMicrosoft 365 管理センターまたはAzure Active Directoryのいずれかを使用することを検討してください。 ロール、ロール グループ、アクセス許可の詳細については、次のリソースを参照してください。
+> セキュリティ管理者などの一部のロールはMicrosoft 365 Defender ポータルで割り当てることができますが、代わりにMicrosoft 365 管理センターまたは Azure Active Directory の使用を検討してください。 ロール、ロール グループ、アクセス許可の詳細については、次のリソースを参照してください。
 >
 > - [Microsoft 365 Defender ポータルのアクセス許可](permissions-microsoft-365-security-center.md)
-> - [組み込みロールをAzure ADする](/azure/active-directory/roles/permissions-reference)
+> - [Azure AD 組み込みロール](/azure/active-directory/roles/permissions-reference)
 
 |アクティビティ|ロールと権限|
 |---|---|
-|脅威&脆弱性管理ダッシュボード (または新しい[セキュリティ ダッシュボード](security-dashboard.md)) を使用する <p> 最近の脅威または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
-|[エクスプローラー (およびリアルタイム検出)](threat-explorer.md) を使用して脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
-|インシデントの表示 ("調査" とも呼ばれます) <p> インシデントに電子メール メッセージを追加する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
-|インシデントで電子メール アクションをトリガーする <p> 疑わしい電子メール メッセージを検索して削除する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者** と **検索ロールと消去** ロール</li></ul> <p> **グローバル管理者** ロールと **セキュリティ管理者** ロールは、Azure Active Directory () または Microsoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) で割り当てることができます。 <p> **検索ロールと消去** ロールは、Microsoft 36 Defender ポータル (<https://security.microsoft.com>) の **電子メール & コラボレーション ロール** で割り当てる必要があります。|
+|Microsoft Defender 脆弱性の管理 ダッシュボード (または新しい[セキュリティ ダッシュボード](security-dashboard.md)) を使用する <p> 最近の脅威または現在の脅威に関する情報を表示する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () または Microsoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
+|[エクスプローラー (およびリアルタイム検出)](threat-explorer.md) を使用して脅威を分析する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () または Microsoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
+|インシデントの表示 ("調査" とも呼ばれます) <p> インシデントに電子メール メッセージを追加する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者**</li><li>**セキュリティ閲覧者**</li></ul> <p> これらのロールは、Azure Active Directory () または Microsoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。|
+|インシデントで電子メール アクションをトリガーする <p> 疑わしい電子メール メッセージを検索して削除する|以下のいずれか: <ul><li>**グローバル管理者**</li><li>**セキュリティ管理者** と **検索ロールと消去** ロール</li></ul> <p> **グローバル管理者** ロールと **セキュリティ管理者** ロールは、Azure Active Directory () または Microsoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) のいずれかで割り当てることができます。 <p> **検索ロールと消去** ロールは、Microsoft 36 Defender ポータル (<https://security.microsoft.com>) の **Email & コラボレーション ロール** で割り当てる必要があります。|
 |Microsoft Defender for Office 365プラン 2 とMicrosoft Defender for Endpointを統合する <p> Microsoft Defender for Office 365プラン 2 と SIEM サーバーを統合する|Azure Active Directory () または Microsoft 365 管理センター<https://admin.microsoft.com> (<https://portal.azure.com>) で割り当てられている **グローバル管理者** または **セキュリティ管理者** ロール。 <p> --- **プラス** --- <p> 追加のアプリケーション ([Microsoft Defender セキュリティ センター](/windows/security/threat-protection/microsoft-defender-atp/user-roles)や SIEM サーバーなど) で割り当てられた適切なロール。|
 
 ## <a name="next-steps"></a>次の手順

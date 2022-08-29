@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: フィンランドのヨーロッパの医療保険番号の機密情報の種類エンティティ定義。
-ms.openlocfilehash: 200b580804d60ef3adfaeead21e7c3ab8d51f139
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 799f664f03f91fa35c01cc87701046faddab5dde
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66950627"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367381"
 ---
-# <a name="finland-european-health-insurance-number"></a>フィンランドのヨーロッパの医療保険番号
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
+# <a name="finland-european-health-insurance-number"></a>フィンランドの欧州健康保険番号
 
 ## <a name="format"></a>フォーマット
 
@@ -54,10 +46,10 @@ ms.locfileid: "66950627"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという中程度の信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に中程度の確証を持ってそれがこの種類の機密情報であると特定します。
 
 - 正規表現 `Regex_Finland_European_Health_Insurance_Number` は、パターンに一致するコンテンツを検索します。
-- キーワードが `Keyword_Finland_European_Health_Insurance_Number` 見つかりました。
+- `Keyword_Finland_European_Health_Insurance_Number` のキーワードを検出した。
 
 ```xml
       <!-- Finland European Health Insurance Number -->

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a0b9688cf184a3b35c4780d4fdaf979fca193380
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.openlocfilehash: c42d4603641d36f0bf54f6393471e68ea8b91ddf
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66487623"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359255"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Microsoft 365 の生産性図
 
@@ -38,7 +38,7 @@ Microsoft Teamsをリードする Microsoft 365 での生産性サービスの�
 
 | アイテム | 説明 |
 |:-----|:-----|
-|[![Contoso 企業コミュニケーション シナリオ ポスター。](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/contoso-corporate-communication-poster.vsdx)  <br>更新日:2022 年 1 月   |このポスターは、Contoso が一般的なコミュニケーション シナリオ全体で従業員に情報を提供し、関与し続ける方法を示しています。 Contoso では、新しいオファリングViva コネクションなど、さまざまな Microsoft 365 アプリを使用しています。<br/><br/>**関連するソリューション ガイド** <br/> <ul><li>[組織のコミュニケーション: ガイダンス、メソッド、製品](/sharepoint/corporate-communications-overview)|
+|[![Contoso 企業コミュニケーション シナリオ ポスター。](../media/solutions-architecture-center/contoso-corporate-communication-thumb.png)](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.pdf) <br/> [PDF](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.pdf) \| [Visio](https://download.microsoft.com/download/0/3/4/034fbee5-ecf4-4559-86d3-815e898f21ea/relecloud-corporate-communication-poster.vsdx)  <br>更新日:2022 年 1 月   |このポスターは、Contoso が一般的なコミュニケーション シナリオ全体で従業員に情報を提供し、関与し続ける方法を示しています。 Contoso では、新しいオファリングViva コネクションなど、さまざまな Microsoft 365 アプリを使用しています。<br/><br/>**関連するソリューション ガイド** <br/> <ul><li>[組織のコミュニケーション: ガイダンス、メソッド、製品](/sharepoint/corporate-communications-overview)|
 
 ## <a name="groups-in-microsoft-365-for-it-architects"></a>IT アーキテクト向け Microsoft 365 のグループ
 この図には、Microsoft 365 グループに関する IT アーキテクト向けの情報が含まれています。 組織内での共同作業のためにMicrosoft 365 グループとチームを構成および管理する方法については、「[Microsoft 365 でのセキュリティで保護されたコラボレーションのセットアップ](/microsoft-365/solutions/setup-secure-collaboration-with-teams)」と「[コラボレーション ガバナンスとは」](/microsoft-365/solutions/collaboration-governance-overview)を参照してください。

@@ -16,14 +16,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: bd8b3c997a8efceb2791eca4de0b0e42d47513f8
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: fb001d0212b6eabcbabd0a2f5c3a108e7a1a9c33
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314407"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67324432"
 ---
 # <a name="get-live-response-results"></a>ライブ応答の結果を取得する
 
@@ -73,7 +73,7 @@ ms.locfileid: "63314407"
 
 ## <a name="permissions"></a>アクセス許可
 
-この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「[概要](apis-intro.md)」を参照してください。
+この API を呼び出すには、次のいずれかのアクセス許可が必要です。 アクセス許可の選択方法など、詳細については、「 [作業の開始](apis-intro.md)」を参照してください。
 
 |アクセス許可の種類|アクセス許可|アクセス許可の表示名|
 |---|---|---|

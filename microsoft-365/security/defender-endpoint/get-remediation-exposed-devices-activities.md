@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 1a7dffa064b68b2c1ce0296b66eef663eb471496
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 34a12fbe5d97345a7a0a5a9c491d10489d6ac601
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301992"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67344787"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>1 つの修復アクティビティの暴露デバイスを一覧表示する
 
@@ -47,7 +47,7 @@ ms.locfileid: "61301992"
 
 ## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a>修復タスクに関連付けられている公開されているデバイスを一覧表示する (ID)
 
-**URL：** GET: /api/remediationTasks/\{id\}/machineReferences
+**Url：** GET: /api/remediationTasks/\{id\}/machineReferences
 
 ## <a name="permissions"></a>アクセス許可
 
@@ -62,7 +62,7 @@ ms.locfileid: "61301992"
 
 プロパティ (id)|データ型|説明|例
 :---|:---|:---|:---
-id|String|デバイス ID|w2957837fwda8w9ae7f023dba081059dw8d94503
+id|文字列|デバイス ID|w2957837fwda8w9ae7f023dba081059dw8d94503
 computerDnsName|String|デバイス名|PC-SRV2012R2Foo.UserNameVldNet.local
 osPlatform|String|デバイス オペレーティング システム|WindowsServer2012R2
 rbacGroupName|String|このデバイスが関連付けられているデバイス グループの名前|サーバー
@@ -118,5 +118,5 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 - [修復メソッドとプロパティ](get-remediation-methods-properties.md)
 - [ID による 1 つの修復アクティビティを取得する](get-remediation-one-activity.md)
 - [すべての修復作業を一覧表示する](get-remediation-all-activities.md)
-- [リスクベースの脅威& 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
+- [Microsoft Defender 脆弱性の管理](next-gen-threat-and-vuln-mgt.md)
 - [組織の脆弱性](tvm-weaknesses.md)

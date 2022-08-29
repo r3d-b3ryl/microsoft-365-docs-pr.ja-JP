@@ -17,14 +17,18 @@ search.appverid:
 - MET150
 description: 機密情報の種類/ルール パッケージと完全に一致するデータを作成する
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16da97f249eff856fd1b0e671d71d813b3cbac73
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 1ff8a9d39dec1fe46924dc02f8e05473947fd61f
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66628509"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359123"
 ---
 # <a name="create-exact-data-match-sensitive-information-typerule-package"></a>機密情報の種類/ルール パッケージと完全に一致するデータを作成する
+
+## <a name="applies-to"></a>適用対象
+
+- [クラシック エクスペリエンス](sit-create-edm-sit-classic-ux-workflow.md)
 
 コンプライアンス センターの [EDM スキーマと SIT ウィザード](#use-the-edm-schema-and-sit-wizard) を使用して、厳密なデータ一致 (EDM) 機密情報の種類 (SIT) を作成するか、ルール パッケージ XML ファイルを [手動で](#create-a-rule-package-manually)作成できます。 1 つのメソッドを使用して両方を組み合わせてスキーマを作成し、後でもう一方のメソッドを使用して編集することもできます。
 
@@ -103,7 +107,7 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 
 これは、ドキュメントまたは電子メール内のすべての個々の単語または番号と一致します。 これにより、サービスが一致してオーバーロードされ、真の一致が検出されません。 より正確なパターンを使用すると、この状況を回避できます。 一般的な種類のデータに対して適切な構成を識別するための推奨事項を次に示します。
 
-**電子メール アドレス**: 電子メール アドレスは簡単に識別できますが、コンテンツでは非常に一般的であるため、プライマリ フィールドとして使用すると、システムに大きな負荷がかかる可能性があります。 セカンダリ 証拠としてのみ使用します。 主要な証拠として使用する必要がある場合は、ロジックを使用して電子メールの使用 `From` を除外する `To` カスタムの機密情報の種類を定義し、一致する必要がある不要な文字列の数を減らすために、会社の電子メール アドレスを持つユーザーを除外します。
+**Email アドレス**: Email アドレスは簡単に識別できますが、コンテンツでは非常に一般的であるため、プライマリ フィールドとして使用するとシステムに大きな負荷がかかる可能性があります。 セカンダリ 証拠としてのみ使用します。 主要な証拠として使用する必要がある場合は、ロジックを使用して電子メールの使用 `From` を除外する `To` カスタムの機密情報の種類を定義し、一致する必要がある不要な文字列の数を減らすために、会社の電子メール アドレスを持つユーザーを除外します。
 
 **電話番号**: 電話番号は、国のプレフィックス、市外局番、区切り記号など、さまざまな形式で使用できます。 負荷を最小限に抑えながら誤った負の値を減らすには、セカンダリ要素としてのみ使用し、かっこやダッシュなどの可能性のある区切り記号をすべて除外し、常に電話番号に存在する部分のみを機密データ テーブルに含めます。
 
@@ -215,4 +219,4 @@ EDM 機密情報の種類は、1 つ以上のパターンで構成されます�
 
 ## <a name="next-step"></a>次のステップ
 
-- [機密情報の種類と完全に一致するデータをテストする](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+- **クラシック エクスペリエンスの場合**: [厳密なデータ一致の機密情報の種類をテストする](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)

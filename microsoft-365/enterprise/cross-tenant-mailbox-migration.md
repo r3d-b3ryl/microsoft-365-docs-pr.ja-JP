@@ -16,12 +16,12 @@ ms.custom:
 - admindeeplinkEXCHANGE
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: 60e79a0b4b8aff7785bca24bbd974492b3a1e795
-ms.sourcegitcommit: 61df6377a6185a8b55e668cfb81adbd8462a9cce
+ms.openlocfilehash: 307754dec24549c320a8ea9e2d8064b7e6d44d68
+ms.sourcegitcommit: 702fba4b6e6210bb7933cdbff0ad72426fcb9ef2
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/29/2022
-ms.locfileid: "67071637"
+ms.lasthandoff: 08/13/2022
+ms.locfileid: "67336026"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>テナント間メールボックス移行 (プレビュー)
 
@@ -499,7 +499,7 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
 
 ### <a name="can-the-source-and-target-tenant-utilize-the-same-domain-name"></a>ソース テナントとターゲット テナントで同じドメイン名を使用できますか?
 
-いいえ。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、contoso.com のソース ドメインと、fourthcoffee.com のターゲット ドメインなどです。
+その必要はありません。 ソーステナントとターゲットテナントのドメイン名は一意である必要があります。 たとえば、contoso.com のソース ドメインと、fourthcoffee.com のターゲット ドメインなどです。
 
 ### <a name="will-shared-mailboxes-move-and-still-work"></a>共有メールボックスは移動し、引き続き機能しますか?
 
@@ -658,15 +658,24 @@ x500:/o=First Organization/ou=Exchange Administrative Group (FYDIBOHF23SPDLT)/cn
       | Exchange Online プラン 1                           |
       | Exchange Online POP                              |
       | Exchange Online Protection                       |
+      | インデックスを使用した Graph コネクタの検索                |
       | Information Barriers                             |
       | Information Protection for Office 365 - Premium  |
       | Information Protection for Office 365 - Standard |
       | MyAnalytics による分析情報                          |
+      | Microsoft 情報ガバナンス                 |
       | Microsoft Purview 監査 (Premium)                  |
       | Microsoft Bookings                               |
       | Microsoft Business Center                        |
-      | Microsoft MyAnalytics (フル機能)                     |
+      | Microsoft Data Investigations                    |
+      | Microsoft MyAnalytics (フル機能)       
+      | Microsoft Communications コンプライアンス               |
+      | Microsoft Communications DLP                     |
+      | Microsoft カスタマー キー                           |
+      | Microsoft 365 Advanced Auditing                  |
+      | Microsoft Records Management                     |
       | Office 365電子情報開示 (Premium)                   |
+      | Office 365 Advanced eDiscovery                   |
       | Microsoft Defender for Office 365 (プラン 1)       |
       | Microsoft Defender for Office 365 (プラン 2)       |
       | Office 365 Privileged Access Management          |

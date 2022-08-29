@@ -20,14 +20,16 @@ ms.assetid: 1fbd74e8-7a60-4157-afe8-fe79f05d2038
 ms.custom:
 - seo-marvel-apr2020
 description: メールボックスを非アクティブなメールボックスにすることで、元従業員のメールボックス コンテンツを保持する方法について説明します。
-ms.openlocfilehash: 981675f64015e0320805e2be8e955cbd6d98769a
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 9043c71118b00638d8671063c623ada7dcf25bcd
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66627219"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359189"
 ---
 # <a name="learn-about-inactive-mailboxes"></a>非アクティブなメールボックスの詳細情報
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 組織では、退職後も元従業員の電子メールを保持しなければならないことがあります。 組織が定める保存要件に応じて、メールボックスの内容を、雇用が終了してから数か月、数年、または無期限に保持しなければならないことがあります。 メールを保持する必要がある期間に関係なく、非アクティブなメールボックスを作成して、元従業員のメールボックスを保持できます。 
 

@@ -70,6 +70,8 @@
   items:
     - name: コンテンツア センブリを使用してドキュメントを作成する
       href: content-assembly.md
+    - name: Power Automate を使用してドキュメントを生成する
+      href: automate-document-generation.md
 - name: メタデータ検索
   items:
     - name: ドキュメント ライブラリ内のメタデータを検索する

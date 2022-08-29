@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: troubleshooting
 ms.date: 07/06/2021
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: c7fd01b95d461332baaf4eac90aee4715da3e55e
-ms.sourcegitcommit: e911dd506ea066795e418daf7b84c1e11381a21c
+ms.openlocfilehash: 5d84ea6e803fba5d5f355fecaa4f6ac6776d3f60
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64953032"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67315463"
 ---
 # <a name="test-base-faq"></a>テスト ベースに関する FAQ
 
@@ -84,13 +84,13 @@ Out-Of-Box (OOB) テストでは、アプリケーションで標準化された
 
 ![機能テストを選択する方法。](Media/functionalreboot.png)
 
-**Q: サポートWindowsバージョンは何ですか?**
+**Q: どの Windows バージョンをサポートしていますか?**
 
-**A：** 現在、Windows 10 クライアント、Windows Server 2016、Windows Server 2016 Core バージョン、Windows Server 2019、および Windows Server 2019 Core バージョンがサポートされています。
+**A：** 現在、Windows 10 クライアント、Windows Server 2016、Windows Server 2016 Core バージョン、Windows Server 2019、Windows Server 2019 Core バージョンがサポートされています。
 
 **Q: セキュリティ更新プログラム のテストと機能更新テストの違いは何ですか?**
 
-**A：** セキュリティ更新プログラムのテストでは、Windowsで **<ins>毎月リリース前のセキュリティ更新プログラム</ins>** をテストします。これは、ユーザーのセキュリティを常に保護し、保護することに重点を置いています。 機能更新テストでは、Windowsの新機能と機能を導入する **<ins>、2 年間のプレリリース機能更新プログラム</ins>** に対してテストします。
+**A：** セキュリティ更新プログラムのテストでは、Windows で **<ins>毎月リリース前のセキュリティ更新プログラム</ins>** に対してテストします。これは、ユーザーを常にセキュリティで保護し、保護することに重点を置いています。 機能更新テストでは、Windows の新機能と機能を導入する **<ins>、2 年間のプレリリース機能更新プログラム</ins>** に対してテストします。
 
 ## <a name="debugging-options"></a>デバッグ オプション
 
@@ -116,7 +116,7 @@ Out-Of-Box (OOB) テストでは、アプリケーションで標準化された
 
 **A：** 現在、オンプレミス サーバーのサポートは提供されていません。 ただし、サーバーが HTTP エンドポイントを公開している場合は、インターネット経由で接続できます。
 
-**Q: WHOは VM をホストしますか?**
+**Q: VM をホストするユーザー**
 
 **A：** Microsoft は、このサービスの VM をプロビジョニングし、その負荷を顧客から受け取ります。
 

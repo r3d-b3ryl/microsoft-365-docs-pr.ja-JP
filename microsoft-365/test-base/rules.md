@@ -8,18 +8,18 @@ manager: rshastri
 audience: Software-Vendor
 ms.topic: how-to
 ms.date: 02/04/2022
-ms.service: virtual-desktop
+ms.service: test-base
 ms.localizationpriority: medium
 ms.collection: TestBase-M365
 ms.custom: ''
-ms.reviewer: mapatel
+ms.reviewer: tinachen
 f1.keywords: NOCSH
-ms.openlocfilehash: cebf888d7a17d6d589888d529cea1731b666f562
-ms.sourcegitcommit: 954c8af658adb270fe843991e048c6a30e86e77c
+ms.openlocfilehash: 6a3878e0326fdcfe1ea9d35997e6a605457fcbf7
+ms.sourcegitcommit: eb81b49205cbc66b021326b8e2c00a8336b4a2fa
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/06/2022
-ms.locfileid: "62429023"
+ms.lasthandoff: 08/11/2022
+ms.locfileid: "67316492"
 ---
 # <a name="applicationtest-rules"></a>アプリケーション/テストルール
 
@@ -49,5 +49,5 @@ Test Base インフラストラクチャでは、次のフォルダーが使用�
 ## <a name="test-base-registry-keys"></a>基本レジストリ キーをテストする
 
 アプリケーション/テストでは、次に関連するレジストリ キーを削除または変更しないでください。
-* Windowsテレメトリ レベル
+* Windows テレメトリ レベル
 * TLS 1.2 の削除

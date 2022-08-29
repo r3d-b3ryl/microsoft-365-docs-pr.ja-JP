@@ -10,18 +10,19 @@ ms.pagetype: security
 ms.author: dansimp
 author: dansimp
 ms.localizationpriority: medium
+ms.date: 08/10/2022
 manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d810ac3a8a314307d2526397bf34200ef0eeeeda
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: a6a31317ec95a4767f36cf6db21ec2e146f9eda8
+ms.sourcegitcommit: 9b10e56b9e83f3a80757fa6108bebd1d80cf4178
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66943576"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67320221"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Linux 上で Microsoft Defender for Endpoint 用の基本設定を設定する
 
@@ -55,7 +56,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|antivirusEngine|
+|**Key**|antivirusEngine|
 |**データ型**|ディクショナリ (入れ子になった設定)|
 |**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
@@ -74,7 +75,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|enforcementLevel|
+|**Key**|enforcementLevel|
 |**データ型**|String|
 |**指定可能な値**|real_time (既定) <p> on_demand <p> パッシブ|
 |**コメント**|Defender for Endpoint バージョン 101.10.72 以降で使用できます。|
@@ -89,7 +90,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|behaviorMonitoring|
+|**Key**|behaviorMonitoring|
 |**データ型**|String|
 |**指定可能な値**|無効 (既定値) <p> enabled|
 |**コメント**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
@@ -100,7 +101,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|enableFileHashComputation|
+|**Key**|enableFileHashComputation|
 |**データ型**|String|
 |**指定可能な値**|無効 (既定値) <p> enabled|
 |**コメント**|Defender for Endpoint バージョン 101.73.77 以降で使用できます。|
@@ -111,7 +112,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|scanAfterDefinitionUpdate|
+|**Key**|scanAfterDefinitionUpdate|
 |**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 |**コメント**|Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
@@ -122,8 +123,8 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|scanArchives|
-|**データ型**|Boolean|
+|**Key**|scanArchives|
+|**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 |**コメント**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
 
@@ -133,7 +134,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|maximumOnDemandScanThreads|
+|**Key**|maximumOnDemandScanThreads|
 |**データ型**|整数|
 |**指定可能な値**|2 (既定値)。 使用できる値は、1 から 64 までの整数です。|
 |**コメント**|Microsoft Defender for Endpoint バージョン 101.45.00 以降で使用できます。|
@@ -144,7 +145,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|exclusionsMergePolicy|
+|**Key**|exclusionsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定値) <p> admin_only|
 |**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
@@ -156,7 +157,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|除外|
+|**Key**|除外|
 |**データ型**|ディクショナリ (入れ子になった設定)|
 |**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
@@ -166,7 +167,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|$type|
+|**Key**|$type|
 |**データ型**|String|
 |**指定可能な値**|excludedPath <p> excludedFileExtension <p> excludedFileName|
 
@@ -176,7 +177,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|path|
+|**Key**|path|
 |**データ型**|String|
 |**指定可能な値**|有効なパス|
 |**コメント**|*$type**が excludedPath* の場合にのみ適用されます|
@@ -187,8 +188,8 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|isDirectory|
-|**データ型**|Boolean|
+|**Key**|isDirectory|
+|**データ型**|ブール型|
 |**指定可能な値**|false (既定) <p> true|
 |**コメント**|*$type**が excludedPath* の場合にのみ適用されます|
 
@@ -198,7 +199,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|拡張子|
+|**Key**|拡張子|
 |**データ型**|String|
 |**指定可能な値**|有効なファイル拡張子|
 |**コメント**|*$type**が除外されている場合にのみ適用されるFileExtension*|
@@ -209,7 +210,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|name|
+|**Key**|name|
 |**データ型**|String|
 |**指定可能な値**|任意の文字列|
 |**コメント**|*$type**が excludedFileName* の場合にのみ適用されます|
@@ -220,7 +221,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|allowedThreats|
+|**Key**|allowedThreats|
 |**データ型**|文字列の配列|
 
 #### <a name="disallowed-threat-actions"></a>許可されていない脅威アクション
@@ -229,9 +230,9 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|disallowedThreatActions|
+|**Key**|disallowedThreatActions|
 |**データ型**|文字列の配列|
-|**指定可能な値**|allow (ユーザーによる脅威の許可を制限) <p> restore (ユーザーが検疫からの脅威を復元できないように制限)|
+|**可能な値**|allow (ユーザーによる脅威の許可を制限) <p> restore (ユーザーが検疫からの脅威を復元できないように制限)|
 |**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
 
 #### <a name="threat-type-settings"></a>脅威の種類の設定
@@ -240,7 +241,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|threatTypeSettings|
+|**Key**|threatTypeSettings|
 |**データ型**|ディクショナリ (入れ子になった設定)|
 |**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
@@ -250,7 +251,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|キー|
+|**Key**|キー|
 |**データ型**|String|
 |**指定可能な値**|potentially_unwanted_application <p> archive_bomb|
 
@@ -264,7 +265,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|値|
+|**Key**|値|
 |**データ型**|String|
 |**指定可能な値**|監査 (既定) <p> ブロック <p> オフ|
 
@@ -274,7 +275,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|threatTypeSettingsMergePolicy|
+|**Key**|threatTypeSettingsMergePolicy|
 |**データ型**|String|
 |**指定可能な値**|merge (既定値) <p> admin_only|
 |**コメント**|Defender for Endpoint バージョン 100.83.73 以降で使用できます。|
@@ -285,7 +286,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|scanResultsRetentionDays|
+|**Key**|scanResultsRetentionDays|
 |**データ型**|String|
 |**指定可能な値**|90 (既定値)。 使用できる値は 1 日から 180 日です。|
 |**コメント**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
@@ -296,7 +297,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|scanHistoryMaximumItems|
+|**Key**|scanHistoryMaximumItems|
 |**データ型**|String|
 |**指定可能な値**|10000 (既定値)。 使用できる値は、5,000 項目から 15,000 項目です。|
 |**コメント**|Defender for Endpoint バージョン 101.04.76 以降で使用できます。|
@@ -307,7 +308,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|cloudService|
+|**Key**|cloudService|
 |**データ型**|ディクショナリ (入れ子になった設定)|
 |**コメント**|ディクショナリの内容の説明については、次のセクションを参照してください。|
 
@@ -317,7 +318,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|enabled|
+|**Key**|enabled|
 |**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 
@@ -327,7 +328,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|diagnosticLevel|
+|**Key**|diagnosticLevel|
 |**データ型**|String|
 |**指定可能な値**|省略可能 <p> 必須 (既定値)|
 |
@@ -344,7 +345,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|cloudBlockLevel|
+|**Key**|cloudBlockLevel|
 |**データ型**|String|
 |**指定可能な値**|normal (既定値) <p> 中程 度 <p> 高 <p> high_plus <p> zero_tolerance|
 |**コメント**|Defender for Endpoint バージョン 101.56.62 以降で使用できます。|
@@ -359,7 +360,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|automaticSampleSubmissionConsent|
+|**Key**|automaticSampleSubmissionConsent|
 |**データ型**|String|
 |**指定可能な値**|none <p> safe (既定値) <p> すべて|
 
@@ -369,7 +370,7 @@ ms.locfileid: "66943576"
 
 |説明|値|
 |---|---|
-|**キー**|automaticDefinitionUpdateEnabled|
+|**Key**|automaticDefinitionUpdateEnabled|
 |**データ型**|ブール型|
 |**指定可能な値**|true (既定値) <p> false|
 
@@ -432,25 +433,25 @@ ms.locfileid: "66943576"
          {
             "$type":"excludedPath",
             "isDirectory":false,
-            "path":"/var/log/system.log"
+            "path":"/var/log/system.log<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/run"
+            "path":"/run<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home/*/git"
+            "path":"/home/*/git<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileExtension",
-            "extension":".pdf"
+            "extension":".pdf<EXAMPLE DO NOT USE>"
          },
          {
             "$type":"excludedFileName",
-            "name":"cat"
+            "name":"cat<EXAMPLE DO NOT USE>"
          }
       ],
       "allowedThreats":[

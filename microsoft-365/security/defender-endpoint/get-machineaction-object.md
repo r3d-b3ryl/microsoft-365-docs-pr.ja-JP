@@ -13,14 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-MS.technology: mde
+ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea532b791b15320379655546ca86c798dbfc8674
-ms.sourcegitcommit: 348f3998a029a876a9dcc031f808e9e350804f22
+ms.openlocfilehash: 4fa508be9abdbf0f589b1dd488d905386c42a183
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "61301608"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67326939"
 ---
 # <a name="get-machineaction-api"></a>machineAction API を取得する
 

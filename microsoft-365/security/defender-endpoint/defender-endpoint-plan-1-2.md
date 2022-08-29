@@ -8,7 +8,7 @@ ms.author: deniseb
 manager: dansimp
 audience: ITPro
 ms.topic: overview
-ms.date: 08/09/2022
+ms.date: 07/25/2022
 ms.prod: m365-security
 ms.technology: mdep1
 ms.localizationpriority: medium
@@ -17,12 +17,12 @@ f1.keywords: NOCSH
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-endpoint
-ms.openlocfilehash: f53f86e693a2acc7ac39ec1c7e0b3665df92cb79
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: b16322581b9d57418a7b0f70b5a23add8e00bb95
+ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301181"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67345197"
 ---
 # <a name="compare-microsoft-endpoint-security-plans"></a>Microsoft エンドポイント セキュリティ計画の比較
 
@@ -47,7 +47,7 @@ Microsoft Defender for Endpoint や Microsoft 365 Defender などの Microsoft �
 | [Defender for Endpoint プラン 1](defender-endpoint-plan-1.md) <sup>[[1](#fn1)]</sup> | <ul><li>[次世代保護](defender-endpoint-plan-1.md#next-generation-protection) (マルウェア対策とウイルス対策を含む)</li><li>[攻撃面の減少](defender-endpoint-plan-1.md#attack-surface-reduction)</li><li> [手動応答アクション](defender-endpoint-plan-1.md#manual-response-actions)</li><li>[集中管理](defender-endpoint-plan-1.md#centralized-management)</li><li>[セキュリティ レポート](defender-endpoint-plan-1.md#reporting)</li><li>[API](defender-endpoint-plan-1.md#apis)</li><li>[Windows 10、iOS、Android OS、macOS デバイスのサポート](defender-endpoint-plan-1.md#cross-platform-support)</li></ul>|
 | [Defender for Endpoint プラン 2](microsoft-defender-endpoint.md) <sup>[[2](#fn2)]</sup> | Defender for Endpoint プラン 1 のすべての機能に加えて、次の機能も含まれます:<ul><li>[デバイス検出](device-discovery.md)</li><li>[デバイス一覧](machines-view-overview.md)</li><li>[コア Defender の脆弱性管理機能](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md)</li><li>[脅威の分析](threat-analytics.md)</li><li>[自動調査および対応](automated-investigations.md)</li><li>[高度な追求](advanced-hunting-overview.md)</li><li>[エンドポイントでの検出と対応](overview-endpoint-detection-response.md)</li><li>[Microsoft 脅威エキスパート](microsoft-threat-experts.md)</li><li>[Windows](configure-endpoints.md) (クライアントとサーバー) および [Windows 以外のプラットフォーム](configure-endpoints-non-windows.md) (macOS、iOS、Android、Linux) のサポート</li></ul> |
 | [Microsoft Defender 脆弱性の管理](../defender-vulnerability-management/defender-vulnerability-management-capabilities.md) | その他の Defender for Endpoint プラン 2 の Defender 脅威と脆弱性の管理機能:<ul><li>[セキュリティ ベースラインの評価](../defender-vulnerability-management/tvm-security-baselines.md)</li><li>[脆弱なアプリケーションをブロックする](../defender-vulnerability-management/tvm-block-vuln-apps.md)</li><li>[ブラウザー拡張機能](../defender-vulnerability-management/tvm-browser-extensions.md)</li><li>[デジタル証明書の評価](../defender-vulnerability-management/tvm-certificate-inventory.md)</li><li>[ネットワーク共有分析](../defender-vulnerability-management/tvm-network-share-assessment.md)</li><li>[Windows](configure-endpoints.md) (クライアントとサーバー) および [Windows 以外のプラットフォーム](configure-endpoints-non-windows.md) (macOS、iOS、Android、Linux) のサポート</li></ul> |
-| [Defender for Business](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup>  | [中小企業向けに最適化されたサービス](../defender-business/compare-mdb-m365-plans.md) は次のとおりです: <ul><li>次世代の保護 (マルウェア対策とランサムウェア保護を含む)</li><li>攻撃面の縮小</li><li>エンドポイントの検出および応答</li><li>自動調査および対応 </li><li>脅威と脆弱性の管理</li><li>一元的なレポート</li><li>API (カスタム アプリまたはレポート ソリューションとの統合用)</li><li>[Microsoft 365 Lighthouse との統合](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
+| [Defender for Business](../defender-business/mdb-overview.md) <sup>[[3](#fn3)]</sup>  | [中小企業向けに最適化されたサービス](../defender-business/compare-mdb-m365-plans.md) は次のとおりです: <ul><li>メールの保護</li><li>スパム対策保護</li><li>マルウェア対策保護</li><li>次世代の保護</li><li>攻撃面の縮小</li><li>エンドポイントの検出および応答</li><li>自動調査および対応 </li><li>脆弱性管理</li><li>一元的なレポート</li><li>API (カスタム アプリまたはレポート ソリューションとの統合用)</li><li>[Microsoft 365 Lighthouse との統合](../defender-business/mdb-lighthouse-integration.md)</li></ul> |
 
 (<a id="fn1">1</a>) Microsoft Defender for Endpoint プラン 1 は、商用および教育機関のお客様向けのスタンドアロン サブスクリプションとして利用できます。 また、Microsoft 365 E3/A3 の一部としても含まれています。
 

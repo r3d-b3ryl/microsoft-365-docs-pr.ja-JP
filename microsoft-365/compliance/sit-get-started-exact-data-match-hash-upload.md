@@ -17,16 +17,21 @@ search.appverid:
 - MET150
 description: 機密情報の種類に一致する正確なデータの機密情報ソース テーブルをハッシュしてアップロードします。
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd484f10cf8dad76132ed2a68a34f87b253e76b3
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: e443b583fa3db007d3c2448dca29b5795dd17ad2
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66641298"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67360043"
 ---
 # <a name="hash-and-upload-the-sensitive-information-source-table-for-exact-data-match-sensitive-information-types"></a>機密情報の種類と完全に一致する機密情報のソース テーブルをハッシュしてアップロードする
 
 この記事では、機密情報ソース テーブルをハッシュしてアップロードする方法について説明します。
+
+## <a name="applies-to"></a>適用対象
+
+- [厳密なデータ一致の機密情報の種類の新しいエクスペリエンスを作成する](sit-create-edm-sit-unified-ux-workflow.md)
+- [厳密なデータ一致の機密情報の種類のクラシック エクスペリエンスを作成する](sit-create-edm-sit-classic-ux-workflow.md)
 
 ## <a name="hash-and-upload-the-sensitive-information-source-table"></a>機密情報ソース テーブルをハッシュしてアップロードする
 
@@ -80,6 +85,9 @@ EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]
   - .csv、.tsv、またはパイプ (|) 形式の機密アイテム ファイル( **例PatientRecords.csv)**
   - この手順で作成した出力ハッシュファイルと salt ファイル
   - **edm.xml** ファイルのデータストア名 (このサンプルでは `PatientRecords`)
+
+> [!IMPORTANT]
+管理者のアクセス許可が不要になるように、カスタム フォルダーに [EDM アップロード エージェント](#links-to-edm-upload-agent-by-subscription-type) をインストールします。 既定の (*プログラム ファイル*) にインストールする場合は、管理者のアクセス許可が必要です。
 
 #### <a name="set-up-the-security-group-and-user-account"></a>セキュリティ グループとユーザー アカウントをセットアップする
 
@@ -233,6 +241,10 @@ EdmUploadAgent.exe /SaveSchema /DataStoreName <schema name> /OutputDir <path to 
 > [!NOTE]
 > 初めて作成した後にハッシュとアップロード プロセスを自動化するには、「正確 [なデータ一致の機密情報ソース テーブル ファイルを更新](sit-use-exact-data-refresh-data.md)する」を参照してください。
 
-## <a name="next-step"></a>次のステップ
+## <a name="next-steps"></a>次の手順
 
-- [機密情報の種類/ルール パッケージと完全に一致するデータを作成する](sit-get-started-exact-data-match-create-rule-package.md#create-exact-data-match-sensitive-information-typerule-package)
+- **新しいエクスペリエンスの場合**: [厳密なデータ一致の機密情報の種類をテストする](sit-get-started-exact-data-match-test.md#test-an-exact-data-match-sensitive-information-type)
+
+or
+
+- **クラシック エクスペリエンスの場合**: [厳密なデータ一致の機密情報の種類/規則パッケージを作成](sit-get-started-exact-data-match-create-rule-package.md)する

@@ -17,14 +17,18 @@ search.appverid:
 - MET150
 description: 完全なデータ一致に基づく機密情報の種類のスキーマを作成する
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5c2038dd7f3b4a6a96ad5e320e73254b21519f8
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: 87b90d2aabb3dd23e7f891a740bcaf98a5cb996a
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66622021"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359933"
 ---
 # <a name="create-the-schema-for-exact-data-match-based-sensitive-information-types"></a>完全なデータ一致に基づく機密情報の種類のスキーマを作成する
+
+## <a name="applies-to"></a>適用対象
+
+- クラシック エクスペリエンス
 
 スキーマと EDM SIT は、 [厳密なデータ一致スキーマと機密情報の種類パターンを使用するウィザードを使用](#use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard) するか [、手動で](#create-exact-data-match-schema-manually-and-upload)作成できます。 1 つのメソッドを使用して両方を組み合わせてスキーマを作成し、後でもう一方のメソッドを使用して編集することもできます。
 
@@ -35,7 +39,6 @@ EDM ベースの SITS またはその実装に慣れていない場合は、次�
 - [完全なデータ一致に基づく機密情報の種類の使用を開始する](sit-get-started-exact-data-match-based-sits-overview.md#get-started-with-exact-data-match-based-sensitive-information-types)
 
 1 つの EDM スキーマは、同じ機密データ テーブルを使用する複数の機密情報の種類で使用できます。 Microsoft 365 テナントでは、最大 10 個の異なる EDM スキーマを作成できます。
-
 
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>完全一致スキーマと機密情報の種類ウィザードを使用する
@@ -143,6 +146,28 @@ EDM スキーマ ウィザードで EDM スキーマを作成した場合は、E
 > EDM の機密情報の種類を定義する場合、 *ignoreDelimiters* は、EDM パターンのプライマリ要素に関連付けられた分類機密情報の種類がアイテム内のコンテンツを識別する方法に影響しません。 したがって、検索可能なフィールドに *ignoreDelimiters* を構成する場合は、そのフィールドに基づいて主要素に使用される機密情報の種類が、それらの文字が存在する場合と存在しない文字列の両方を選択するようにする必要があります。
 >
 > 機密情報ソース テーブル内の列の数とスキーマ内のフィールドの数が一致する必要があります。順序は関係ありません。
+
+*トークン区切り記号* として使用される文字の動作は、他の区切り記号とは異なります。 次に、いくつかの例を示します:
+- \ (space)
+- \\T
+- \,
+- \.
+- \;
+- \?
+- \!
+- \\R
+- \\N  
+
+*トークン区切り記号* を含めると、EDM によって区切り記号があるトークンが破損します。 たとえば、EDM には、フィールドの **値 [ミドル 姓]** **と [** 名前 **]** `LastName` が表示されます。 文字 '-' を持つフィールドに *対して ignoredDelimiters* が含まれている `LastName` 場合、そのアクションは値が壊れた後にのみ行われます。 最終的に、EDM には **MiddleLast** と Name の次の値が表示 **されます**。
+
+次の文字を、*トークン区切り記号* ではなく *、ignoredDelimiters* として使用するには、対応する形式に一致する SIT をフィールドに関連付ける必要があります。 たとえば、ダッシュを含む複数単語の文字列を検出する SIT は、フィールドに関連付けられている `LastName` 必要があります。
+- \.
+- \;
+- \!
+- \?
+- \\
+
+PowerShell を使用して、SIT をセカンダリ要素に関連付けることができます。
 
 1. スキーマを XML 形式で定義します (次の例と同様)。 このスキーマ ファイル **edm.xml** に名前を付け、機密情報ソース テーブルの列ごとに構文を使用する行が存在するように構成します。
 

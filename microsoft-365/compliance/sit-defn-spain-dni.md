@@ -19,22 +19,14 @@ hideEdit: true
 feedback_system: None
 recommendations: false
 description: スペインの DNI 機密情報の種類エンティティ定義。
-ms.openlocfilehash: e18fbfdcaad30e94d9f8fbd239026c25bee04d78
-ms.sourcegitcommit: 5aed330d8af523f0dffe5e392f1c79f047e38172
+ms.openlocfilehash: 9128e04b9462b2d3768a62157e3798ddea17e54c
+ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/21/2022
-ms.locfileid: "66996177"
+ms.lasthandoff: 08/17/2022
+ms.locfileid: "67367337"
 ---
 # <a name="spain-dni"></a>スペインの DNI
-
-この機密情報の種類は、次の場合にのみ使用できます。
-
-- データ損失防止ポリシー
-- 通信コンプライアンス ポリシー
-- データ ライフサイクル管理
-- レコード管理
-- Microsoft Defender for Cloud Apps
 
 ## <a name="format"></a>フォーマット
 
@@ -44,7 +36,7 @@ ms.locfileid: "66996177"
 
 7 桁の数字の後に 1 文字が続く
 
-- 8 桁
+- 8 桁の数字
 - 省略可能なスペースまたはハイフン
 - 1 つのチェック文字 (大文字と小文字は区別されません)
 
@@ -54,7 +46,7 @@ ms.locfileid: "66996177"
 
 ## <a name="definition"></a>定義
 
-DLP ポリシーは、300 文字の近くにある場合に、この種類の機密情報が検出されたという高い信頼を持っています。
+DLP ポリシーは、抽出した約 300 文字が次の条件に該当することを検出した場合に、高い信頼度でそれがこの種類の機密情報であると特定します。
 
 - 関数 `Func_spain_eu_DL_and_NI_number_citizen` または `Func_spain_eu_DL_and_NI_number_foreigner` パターンに一致するコンテンツを検索します。
 - `Keywords_spain_eu_national_id_card"` のキーワードを検出した。

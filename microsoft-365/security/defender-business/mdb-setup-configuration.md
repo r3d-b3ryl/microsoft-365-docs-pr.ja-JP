@@ -17,12 +17,12 @@ ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 931dfb257902e17968df2621b5b8c374f4691a25
-ms.sourcegitcommit: 6bff75867764335685f972943170c7db46e33a6f
+ms.openlocfilehash: 4dfd112af96bbb421ace15e3ac4bd9a8e4e2733a
+ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67300784"
+ms.lasthandoff: 08/12/2022
+ms.locfileid: "67328081"
 ---
 # <a name="set-up-and-configure-microsoft-defender-for-business"></a>Microsoft Defender for Businessの設定と構成
 
@@ -32,7 +32,7 @@ Defender for Business は、特に中小企業向けに設計された、合理�
 > [セットアップ ウィザード](mdb-use-wizard.md)を使用した場合は、基本的なセットアップ プロセスのいくつかの手順を既に完了しています。 この場合、次のことができます。
 > - [その他のデバイスをオンボードする](mdb-onboard-devices.md)
 > - [セキュリティ ポリシーと設定を構成する](mdb-configure-security-settings.md)
-> - [脆弱性管理ダッシュボードにアクセスする](mdb-view-tvm-dashboard.md)
+> - [Microsoft Defender 脆弱性の管理 ダッシュボードにアクセスする](mdb-view-tvm-dashboard.md)
 
 
 ## <a name="the-setup-and-configuration-process"></a>セットアップと構成プロセス

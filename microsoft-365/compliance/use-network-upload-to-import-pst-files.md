@@ -19,14 +19,16 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: '管理者向け: ネットワーク アップロードを使用して、複数の PST ファイルを Microsoft 365 のユーザー メールボックスに一括インポートする方法について説明します。'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0b24dc0ddc69c9af7516ee844af3899ff92fe4c4
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.openlocfilehash: 585da60b92e57c0a1835d0d732d7abc8b228053c
+ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66626031"
+ms.lasthandoff: 08/16/2022
+ms.locfileid: "67359713"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>ネットワーク アップロードを使用して、組織の PST ファイルを Microsoft 365 にインポートする
+
+>*[セキュリティとコンプライアンスのための Microsoft 365 ライセンス ガイダンス](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)。*
 
 > [!NOTE]
 > この記事は管理者向けです。自分のメールボックスに PST ファイルをインポートする場合は、「[Outlook .pst ファイルからメール、連絡先、予定表をインポートする](https://go.microsoft.com/fwlink/p/?LinkID=785075)」を参照してください。
@@ -90,7 +92,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
   
 1. <https://compliance.microsoft.com> に移動し、組織の管理者アカウントの資格情報を使用してサインインします。
 
-2. コンプライアンス ポータルの左側のウィンドウで、**[データ ライフサイクル管理]** \> **[インポート]** の順にクリックします。
+2. コンプライアンス ポータルの左側のウィンドウで、[**データ ライフサイクル管理** \> **] Microsoft 365** **[Microsoft 365** \> \> インポート] を選択 **します**。
 
     > [!NOTE]
     > コンプライアンス ポータルの **[インポート]** ページにアクセスするには、適切なアクセス許可が割り当てられている必要があります。詳細については、「**開始する前に**」のセクションを参照してください。 
@@ -138,7 +140,7 @@ PST ファイルを Microsoft 365 メールボックスにインポートする�
 
     次の表は、azcopy.exe のフィールドとそれに必要な値を説明したものです。前の手順で取得した情報は、これらのフィールドの値に使用されます。
 
-    | フィールド | 説明 |
+    | Field | 説明 |
     |:-----|:-----|
     | ソース |最初のフィールドは、Microsoft 365 にアップロードされる PST ファイルを含む組織内のソース ディレクトリを指定します。 または、アップロードする PST ファイルのソースの場所として、Azure Storage の場所を指定することもできます。 <br/> このフィールドの値は必ず二重引用符 (" ") で囲むようにしてください。  <br/> <br/>**例**: <br/>`"\\FILESERVER01\PSTs"` <br/> または  <br/>`"https://storageaccountid.blob.core.windows.net/PSTs?sp=racwdl&st=2021-09-21T07:25:53Z&se=2021-09-21T15:25:53Z&sv=2020-08-04&sr=c&sig=xxxxxx"`|  
     | Destination (転送先) |手順 1 で取得した SAS URL を指定します。  <br/> このパラメーターの値は必ず二重引用符 (" ") で囲むようにしてください。<br/><br/>**注:** スクリプトまたはバッチ ファイルで SAS URL を使用している場合は、エスケープする必要がある特定の文字に注意する必要があります。たとえば、`%` を `%%` に変更し、`&` を `^&` に変更してください。<br/><br/>**ヒント:** (省略可能) PST ファイルをアップロードする Azure Storage の場所にサブフォルダーを指定できます。 SAS URL で ("ingestiondata" の後に) サブフォルダーの場所を追加してこの操作を行います。 最初の例では、サブフォルダーを指定しません。 つまり PST ファイルは Azure Storage ロケーションのルート (名前付き *ingestiondata*) にアップロードされます。 2 つ目の例では、PST ファイルを Azure Storage の場所のルートにある (*PSTFiles* という名前の) サブフォルダーにアップロードします。  <br/><br/>**例**: <br/> `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> または  <br/>  `"https://3c3e5952a2764023ad14984.blob.core.windows.net/ingestiondata/PSTFiles?sv=2012-02-12&amp;se=9999-12-31T23%3A59%3A59Z&amp;sr=c&amp;si=IngestionSasForAzCopy201601121920498117&amp;sig=Vt5S4hVzlzMcBkuH8bH711atBffdrOS72TlV1mNdORg%3D"` <br/> |
@@ -258,7 +260,7 @@ PST ファイルを組織の Azure Storage の場所にアップロードした�
   
 1. <https://compliance.microsoft.com> に移動し、組織の管理者アカウントの資格情報を使用してサインインします。
 
-2. コンプライアンス ポータルの左側のウィンドウで、**[データ ライフサイクル管理] [インポート]** の順にクリックします。
+2. コンプライアンス ポータルの左側のウィンドウで、 **データ ライフサイクル管理** > **Microsoft 365** > Import** を選択します。
 
 3. [**インポート**] タブで、[![追加アイコン](../media/ITPro-EAC-AddIcon.gif)] > [**新規インポート ジョブ**] の順にクリックします。
 
