@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: thdoucet
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 5976d09bfbfd42798dda38d2479ac9535ae3b68b
-ms.sourcegitcommit: 6e570b79944862c86735db455349b685d5b903b6
+ms.openlocfilehash: 26338be73c034c02ed285b7098d49547c4f8b54a
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/26/2022
-ms.locfileid: "67020425"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388773"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>ファイル拡張子とフォルダーの場所に基づいて除外を構成および検証する
 
@@ -107,7 +107,7 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 
 2. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
-3. ツリーを [**除外]** **Windows Defender ウイルス対策** \> **Windows コンポーネント**\>に展開します。
+3. ツリーを **Windows コンポーネント** \> **Microsoft Defender ウイルス対策** \> **の除外** に展開します。
 
 4. 編集用の **[パスの除外]** 設定を開き、除外を追加します。
 

@@ -1,5 +1,5 @@
 ---
-title: 攻撃シミュレーション トレーニングのインサイトとレポート
+title: 分析情報とレポート攻撃シミュレーション トレーニング
 ms.author: chrisda
 author: chrisda
 manager: dansimp
@@ -11,37 +11,37 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
-description: 管理者は、Microsoft 365 Defender ポータルでの攻撃シミュレーション トレーニングがユーザーにどのような影響を与えるかを学習し、シミュレーションとトレーニングの結果から分析情報を得ることができます。
+description: 管理者は、Microsoft 365 Defender ポータルで攻撃シミュレーション トレーニングがユーザーにどのような影響を与えるかを学習し、シミュレーションとトレーニングの結果から分析情報を得ることができます。
 ms.technology: mdo
-ms.openlocfilehash: fb08de05e0a1f31187fc4dd045d0f1ce45db2aea
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+ms.openlocfilehash: f3ec93de3790791bbec7b02faac4d2885edc5759
+ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839369"
+ms.lasthandoff: 08/23/2022
+ms.locfileid: "67409182"
 ---
-# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングのインサイトとレポート
+# <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365の攻撃シミュレーション トレーニングに関する分析情報とレポート
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
-Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シミュレーション トレーニングでは、シミュレーションの結果と対応するトレーニングから分析情報とレポートを提供します。 この情報を使用すると、ユーザーの脅威の準備の進行状況と、今後の攻撃に備えるために推奨される次の手順に関する情報が得られます。
+Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シミュレーション トレーニングでは、Microsoft はシミュレーションの結果と対応するトレーニングの分析情報とレポートを提供します。 この情報を使用すると、ユーザーの脅威の準備の進行状況と、今後の攻撃に備えるために推奨される次の手順に関する情報が得られます。
 
-インサイトとレポートは、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの次の場所で利用できます。
+分析情報とレポートは、Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの次の場所で利用できます。
 
 - [ **概要** ] タブ。
 - [シミュレーション] タブ **のシミュレーションの** 詳細。
 
 この記事の残りの部分では、使用可能な情報について説明します。
 
-攻撃シミュレーション トレーニングの概要については、「攻撃シミュレーション トレーニング[を使用した概要](attack-simulation-training-get-started.md)」を参照してください。
+攻撃シミュレーション トレーニングの概要については、「[攻撃シミュレーション トレーニングの使用を開始](attack-simulation-training-get-started.md)する」を参照してください。
 
-## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>攻撃シミュレーション トレーニングの [概要] タブのインサイトとレポート
+## <a name="insights-and-reports-on-the-overview-tab-of-attack-simulation-training"></a>攻撃シミュレーション トレーニングの [概要] タブの分析情報とレポート
 
-**[概要**] タブに移動するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング**] に移動し、[**概要**] タブが選択されていることを確認します (既定値)。 **攻撃シミュレーション トレーニング** ページの **[概要**] タブに直接移動するには、<https://security.microsoft.com/attacksimulator?viewid=overview>.
+[**概要**] タブに移動するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、**コラボレーション** \> **攻撃シミュレーション トレーニング** Email &移動し、[**概要**] タブが選択されていることを確認します (既定値)。 **攻撃シミュレーション トレーニング** ページの [**概要**] タブに直接移動するには、<https://security.microsoft.com/attacksimulator?viewid=overview>.
 
-このセクションの残りの部分では、攻撃シミュレーション トレーニングの [ **概要** ] タブで使用できる情報について説明します。
+このセクションの残りの部分では、攻撃シミュレーション トレーニングの [**概要**] タブで使用できる情報について説明します。
 
 ### <a name="recent-simulations-card"></a>最近のシミュレーション カード
 
@@ -53,15 +53,15 @@ Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シ�
 
 **[シミュレーションの起動] を選択すると、シミュレーション** 作成ウィザードが開始されます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
 
-:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブにある [最近使ったシミュレーション] カード" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-recent-simulations-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブの [最近のシミュレーション] カード" lightbox="../../media/attack-sim-training-overview-recent-simulations-card.png":::
 
 ### <a name="behavior-impact-on-compromise-rate-card"></a>侵害率カードに対する動作の影響
 
-[**概要**] タブ **の [侵害率] カードに対する動作の影響** は、Microsoft 365の履歴データと比較して、ユーザーがシミュレーションにどのように応答したかを示します。 これらの分析情報を使用すると、同じユーザー グループに対して複数のシミュレーションを実行することで、ユーザーの脅威の準備状況の進行状況を追跡できます。
+[**概要**] タブ **の [侵害率** カードに対する動作の影響] は、Microsoft 365 の履歴データと比較して、ユーザーがシミュレーションにどのように応答したかを示します。 これらの分析情報を使用すると、同じユーザー グループに対して複数のシミュレーションを実行することで、ユーザーの脅威の準備状況の進行状況を追跡できます。
 
 グラフ データ自体には、次の情報が表示されます。
 
-- **予測される侵害率**<sup>\*</sup>: 他のすべてのMicrosoft 365組織で同じ種類のペイロードを使用する攻撃シミュレーション トレーニング シミュレーションの平均侵害率。
+- **予測される侵害率**<sup>\*</sup>: 他のすべての Microsoft 365 組織で同じ種類のペイロードを使用する攻撃シミュレーション トレーニング シミュレーションの平均侵害率。
 - **実際の侵害率**<sup>\*</sup>: シミュレーションのために落ちたユーザーの実際の割合。
 
 グラフ内のデータ ポイントにマウス ポインターを合わせると、実際のパーセンテージ値が表示されます。
@@ -99,7 +99,7 @@ Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シ�
 
 ### <a name="repeat-offenders-card"></a>繰り返し違反者カード
 
-[**概要**] タブの [**繰り返し違反者**] カードには、繰り返し違反者に関する情報が表示されます。 _繰り返し違反者_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニングの **[設定**] タブで<https://security.microsoft.com/attacksimulator?viewid=setting>値を変更できます。
+[**概要**] タブの [**繰り返し違反者**] カードには、繰り返し違反者に関する情報が表示されます。 _繰り返し違反者_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニング の **[設定]** タブで<https://security.microsoft.com/attacksimulator?viewid=setting>値を変更できます。
 
 グラフでは、 [シミュレーションの種類](attack-simulation-training.md#select-a-social-engineering-technique)別に繰り返し違反者データが整理されます。
 
@@ -112,13 +112,13 @@ Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シ�
 
 [ **繰り返し違反者レポートの表示** ] を選択すると、 [攻撃シミュレーション レポートの [繰り返し違反者] タブに移動します](#repeat-offenders-tab-for-the-attack-simulation-report)。
 
-### <a name="recommendations-card"></a>おすすめ カード
+### <a name="recommendations-card"></a>推奨事項カード
 
-[**概要**] タブ **の [おすすめ**] カードには、実行するさまざまな種類のシミュレーションが表示されます。
+[**概要**] タブ **の [推奨事項**] カードには、実行するさまざまな種類のシミュレーションが表示されます。
 
 **[起動]** を選択すると、シミュレーション作成ウィザードが開始され、指定されたシミュレーションの種類が **[手法の選択**] ページで自動的に選択されます。 詳細については、「[Defender for Office 365でのフィッシング攻撃のシミュレート](attack-simulation-training.md)」を参照してください。
 
-:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブの [おすすめ カード]" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
+:::image type="content" source="../../media/attack-sim-training-overview-recommendations-card.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション トレーニングの [概要] タブの [推奨事項] カード" lightbox="../../media/attack-sim-training-overview-recommendations-card.png":::
 
 ### <a name="attack-simulation-report"></a>攻撃シミュレーション レポート
 
@@ -170,7 +170,7 @@ Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シ�
 
 [ **列のカスタマイズ** ] をクリックして、表示される列を削除します。 完了したら、**[適用]** をクリックします。
 
-[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、**ユーザー名** または **メール アドレス** で結果をフィルター処理します。 ワイルドカードはサポートされていません。
+[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、**ユーザー名** または **Emailアドレス** で結果をフィルター処理します。 ワイルドカードはサポートされていません。
 
 [エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート]** ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、.csv ファイルを開き、.csv ファイルを保存し、選択内容を記憶することができます。
 
@@ -201,9 +201,9 @@ Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シ�
 - **処理中**
 - **All**
 
-フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
+フィルターの構成が完了したら、[ **フィルターの適用**]、[ **キャンセル]**、または ![[フィルターのクリア] アイコン](../../media/m365-cc-sc-clear-filters-icon.png)をクリック **します**。
 
-[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、**ユーザー名** または **メール アドレス** で結果をフィルター処理します。 ワイルドカードはサポートされていません。
+[検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、**ユーザー名** または **Emailアドレス** で結果をフィルター処理します。 ワイルドカードはサポートされていません。
 
 [エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート]** ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、.csv ファイルを開き、.csv ファイルを保存し、選択内容を記憶することができます。
 
@@ -211,7 +211,7 @@ Microsoft Defender for Office プラン 2 またはMicrosoft 365 E5の攻撃シ�
 
 :::image type="content" source="../../media/attack-sim-report-repeat-offenders-view.png" alt-text="Microsoft 365 Defender ポータルの攻撃シミュレーション レポートの [繰り返し違反者] タブ" lightbox="../../media/attack-sim-report-repeat-offenders-view.png":::
 
-_繰り返し違反者_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニングの **[設定**] タブで<https://security.microsoft.com/attacksimulator?viewid=setting>値を変更できます。
+_繰り返し違反者_ とは、連続したシミュレーションによって侵害されたユーザーです。 連続するシミュレーションの既定の数は 2 ですが、攻撃シミュレーション トレーニング の **[設定]** タブで<https://security.microsoft.com/attacksimulator?viewid=setting>値を変更できます。
 
 [ **違反者の繰り返し** ] タブで、グラフは [シミュレーションの種類](attack-simulation-training.md#select-a-social-engineering-technique)別に繰り返し違反者データを整理します。
 
@@ -241,17 +241,16 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 - **マルウェアの添付ファイル**
 - **添付ファイル内のリンク**
 - **マルウェアへのリンク**
-- **ドライブバイ URL**
 
-フィルターの構成が完了したら、[ **適用**]、[ **キャンセル]**、または **[フィルターのクリア**] をクリックします。
+フィルターの構成が完了したら、[ **フィルターの適用**]、[ **キャンセル]**、または ![[フィルターのクリア] アイコン](../../media/m365-cc-sc-clear-filters-icon.png)をクリック **します**。
 
 [検索] アイコン](../../media/m365-cc-sc-search-icon.png)**の [検索**] ボックスを使用して![、任意の列値で結果をフィルター処理します。 ワイルドカードはサポートされていません。
 
 [エクスポート] アイコンを ![クリックした場合。](../../media/m365-cc-sc-download-icon.png) **[レポートのエクスポート]** ボタンをクリックすると、レポート生成の進行状況が完了の割合として表示されます。 開いたダイアログで、.csv ファイルを開き、.csv ファイルを保存し、選択内容を記憶することができます。
 
-## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーションの詳細に関するインサイトとレポート
+## <a name="insights-and-reports-in-the-simulation-details-of-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーションの詳細に関する分析情報とレポート
 
-**[シミュレーション**] タブに移動するには、Microsoft 365 Defender ポータルを<https://security.microsoft.com>開き、[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング**] に移動し、[**シミュレーション**] タブを選択します。**[攻撃シミュレーション トレーニング**] ページ **の [シミュレーション**] タブに直接移動するには、.<https://security.microsoft.com/attacksimulator?viewid=simulations>
+**[シミュレーション**] タブに移動するには、Microsoft 365 Defender ポータルを<https://security.microsoft.com>開き、**コラボレーション** \> **攻撃シミュレーション トレーニング** Email &移動して、[**シミュレーション**] タブを選択します。**攻撃シミュレーション トレーニング** ページの **[シミュレーション**] タブに直接移動するには、 <https://security.microsoft.com/attacksimulator?viewid=simulations>.
 
 一覧からシミュレーションを選択すると、詳細ページが開きます。 このページには、予想されるシミュレーションの構成設定 (状態、起動日、使用されたペイロードなど) が含まれています。
 
@@ -259,7 +258,7 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 
 ### <a name="simulation-impact-section"></a>[シミュレーションの影響] セクション
 
-シミュレーションの詳細ページの **[シミュレーションへの影響** ] セクションには、シミュレーションによって完全にだまされたユーザーの数と、シミュレーション内のユーザーの合計数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 次に例を示します。
+シミュレーションの詳細ページの **[シミュレーションへの影響** ] セクションには、シミュレーションによって完全にだまされたユーザーの数と、シミュレーション内のユーザーの合計数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
 
 - リンク: **入力された資格情報** と資格情報 **を入力しませんでした**。
 
@@ -273,7 +272,7 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 
 ### <a name="all-user-activity-section"></a>[すべてのユーザー アクティビティ] セクション
 
-シミュレーションの詳細ページ **の [すべてのユーザー アクティビティ** ] セクションには、シミュレーションの可能な結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 次に例を示します。
+シミュレーションの詳細ページ **の [すべてのユーザー アクティビティ** ] セクションには、シミュレーションの可能な結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
 
 - **SuccessfullyDeliveredEmail**
 - **ReportedEmail**: シミュレーション メッセージを疑わしいと報告したユーザーの数。
@@ -298,7 +297,7 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 
 シミュレーションの詳細ページの **[推奨されるアクション]** セクションには、 [Microsoft Secure Score](../defender/microsoft-secure-score.md) からの推奨事項アクションと、アクションがセキュリティスコアに与える影響が表示されます。 これらの推奨事項は、シミュレーションで使用されたペイロードに基づいており、ユーザーと環境を保護するのに役立ちます。 一覧から **[改善] アクション** を選択すると、推奨されるアクションを実装する場所に移動します。
 
-:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="攻撃シミュレーション トレーニングに関する推奨事項アクション セクション" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
+:::image type="content" source="../../media/attack-sim-training-sim-details-recommended-actions.png" alt-text="攻撃シミュレーション トレーニングの [推奨事項のアクション] セクション" lightbox="../../media/attack-sim-training-sim-details-recommended-actions.png":::
 
 ## <a name="related-links"></a>関連リンク
 

@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 6652d9076a5b2ecd11b0793104924690d14a1f98
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
-ms.translationtype: HT
+ms.openlocfilehash: 8ece0439bafcb6c183cf57cef7648c6bfa3f62ee
+ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787630"
+ms.lasthandoff: 08/20/2022
+ms.locfileid: "67393112"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -161,13 +161,13 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 
 ### <a name="data-center-geographies"></a>データ センターの地域
 
-次のグローバルな地域では、データを保存できます。 顧客データの保存場所は変更される場合があります。
+次の地域地域では、保存データを格納できます。 顧客データの保存場所は変更される場合があります。
 
-| グローバルな地域 | 顧客データを保存できる場所 |
+| 地域地域 | 顧客データを保存できる場所 |
 | --- | --- |
-| グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) | オーストリア、フィンランド、フランス、アイルランド、オランダ |
-| グローバル地域 2 – アジア太平洋 | 香港特別行政区、日本、マレーシア、シンガポール、韓国 |
-| グローバル地域 3 - 米国 | ブラジル、チリ、米国 |
+| 地域地理 1 – EMEA (ヨーロッパ、中東、アフリカ) | オーストリア、フィンランド、フランス、アイルランド、オランダ |
+| 地域地理 2 – アジア太平洋 | 香港特別行政区、日本、マレーシア、シンガポール、韓国 |
+| 地域地理 3 - アメリカ | ブラジル、チリ、米国 |
 
 ## <a name="countryregion-specific-data-center-city-locations"></a>国/地域固有のデータ センターの都市の場所
 
@@ -183,6 +183,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | ドイツ | フランクフルト、ベルリン |
 | インド | チェンナイ、ムンバイ、プネ |
 | 日本 | 大阪、東京 |
+| カタール | ドーハ |
 | 韓国 | 釜山、ソウルl |
 | ノルウェー | オスロ、スタヴァンゲル |
 | 南アフリカ | ケープタウン、ヨハネスブルグ |
@@ -632,7 +633,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -688,7 +689,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3180,7 +3181,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3264,7 +3265,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3404,7 +3405,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3432,7 +3433,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3544,7 +3545,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3572,7 +3573,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3600,7 +3601,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -3684,7 +3685,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4244,7 +4245,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4833,7 +4834,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -4861,7 +4862,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5184,27 +5185,31 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 
 | サービス | 場所 |
 | --- | --- |
-| Exchange Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| OneDrive for Business | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| SharePoint Online | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Microsoft Teams | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Office Online &amp; Mobile | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| EOP | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Intune | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Planner | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Sway | 米国 |
-| Yammer | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Viva インサイト - 個人用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Viva インサイト - 管理者/リーダー AAD 組織データ専用 | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
-| Viva インサイト - サードパーティの人事データのみを使用するマネージャー/リーダー | 米国 |
-| Viva インサイト - 上級 | 米国 |
+| Exchange Online | カタール* |
+| OneDrive for Business | カタール* |
+| SharePoint Online | カタール* |
+| Exchange Online Protection | カタール* |
+| Microsoft Defender for Office P1 | カタール* |
+| Microsoft Teams | カタール* |
+| Office for the Web | カタール* |
+| Office for Mobile | カタール* |
+| OneNote サービス | カタール* |
+| Stream | カタール* |
+| Whiteboard | カタール* |
+| Viva コネクション | カタール* |
+| Viva インサイト - Personal Insights | カタール* |
+| Viva トピック | カタール* |
+| Azure Active Directory | 欧州連合 |
+| Microsoft Dataverse for Teams | 欧州連合 |
+| Intune | 欧州連合 |
+| Planner | 欧州連合 |
+| Power Automate Desktop | 欧州連合 |
+| Teams 用 Power Virtual Agent | 欧州連合 |
+| Viva インサイト - Mgr / Leader / Advanced | 欧州連合 |
+| Viva ラーニング | 欧州連合 |
+| Yammer | 欧州連合 |
+| Forms | 米国 |
+*保存時の顧客データをExchange Online、SharePoint Online、またはOneDrive for Businessに格納するサービス、またはローカルに展開するすべてのサービス。
 </p></details>
 
 ## <a name="republic-of-macedonia"></a>マケドニア共和国
@@ -5225,7 +5230,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -5645,7 +5650,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6513,7 +6518,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6681,7 +6686,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | アラブ首長国連邦 |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | アラブ首長国連邦 |
 | Viva トピック | アラブ首長国連邦 |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6821,7 +6826,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
@@ -6988,7 +6993,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | OneNote サービス | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Stream | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Whiteboard | 米国 |
-| Forms | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
+| Forms | 米国 |
 | Viva コネクション | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva トピック | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |
 | Viva ラーニング | グローバル地域 1 – EMEA (ヨーロッパ、中東、アフリカ) |

@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - admindeeplinkMAC
 description: Microsoft 365 管理センター - 今月追加された機能について説明します。
-ms.openlocfilehash: fe801e913e227239b53eb7f1166a3f802f4217ce
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: 588e5d405bb0a343d95014892d23b62f2e1f28f4
+ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66602582"
+ms.lasthandoff: 08/19/2022
+ms.locfileid: "67388883"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Microsoft 365 管理センターの新機能
 
@@ -38,7 +38,7 @@ ms.locfileid: "66602582"
 
 ::: moniker-end
 
-[Microsoft 365 管理センター](Microsoft 365 管理センターの概要](admin-overview/admin-center-overview.md)、学習した問題の修正、フィードバックに基づく変更を継続的に追加しています。 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、 [対象となるリリースに自分を追加してみてください](manage/release-options-in-office-365.md)。
+Microsoft 365 管理センター[に新機能](admin-overview/admin-center-overview.md)を継続的に追加し、学習した問題を修正し、フィードバックに基づいて変更を加えています。 一部の機能は、お客様に対して異なる速度でロールアウトされます。 まだ機能が表示されていない場合は、 [対象となるリリースに自分を追加してみてください](manage/release-options-in-office-365.md)。
 
 また、他の Microsoft クラウド サービスの新機能を知りたい場合は、次のようにします。
 
