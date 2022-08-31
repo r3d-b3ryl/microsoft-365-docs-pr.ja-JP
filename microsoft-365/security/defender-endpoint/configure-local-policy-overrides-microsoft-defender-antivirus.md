@@ -2,8 +2,8 @@
 title: Microsoft Defender ウイルス対策設定のローカル オーバーライドを構成する
 description: Microsoft Defender ウイルス対策の設定をローカルで変更できないようにユーザーを有効または無効にします。
 keywords: ローカル オーバーライド, ローカル ポリシー, グループ ポリシー, GPO, lockdown,merge, lists
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +16,12 @@ ms.date: 08/02/2022
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 397fb835d73c2e18c3cc044f95d8b294e2ef762d
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 93a949c274928c467e5d3fa65ef8be47ce960d2b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388168"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480934"
 ---
 # <a name="prevent-or-allow-users-to-locally-modify-microsoft-defender-antivirus-policy-settings"></a>ユーザーが Microsoft Defender ウイルス対策ポリシー設定をローカルで変更できないようにするか許可する
 

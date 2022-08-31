@@ -1,9 +1,10 @@
 ---
 title: アラート グレーディング プレイブック
 description: 既知の攻撃のアラートを確認し、推奨されるアクションを実行して攻撃を修復し、ネットワークを保護します。
-keywords: インシデント, アラート, 調査, 分析, 応答, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365
+keywords: インシデント、アラート、調査、分析、応答、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 129a4f2efd9a47c09535be3ba0f56504f3da697c
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 83935f8ad4fda1848a15bfe34599b80683ee95fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63328009"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477409"
 ---
 # <a name="alert-grading-playbooks"></a>アラート グレーディング プレイブック
 

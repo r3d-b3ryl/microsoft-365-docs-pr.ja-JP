@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderのインシデントに優先順位を付ける
 description: Microsoft 365 Defenderのインシデント キューからインシデントをフィルター処理する方法について説明します
 keywords: インシデント, キュー, 概要, デバイス, ID, ユーザー, メールボックス, 電子メール, インシデント, 分析, 応答, トリアージ
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 285da473c8e8035a28ee6e64c4950e2b8fe373f5
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: b5f8968020a08197586caef09273d6b4276ff421
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944417"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480219"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Microsoft 365 Defenderのインシデントに優先順位を付ける
 
@@ -81,9 +81,9 @@ Microsoft 365 Defender ポータルのクイック起動時に **、インシデ
 | サービス ソース  | アプリ ガバナンス、Microsoft 365 Defender、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、Microsoft Defender for Identity、Microsoft Defender for Cloud Apps。 |
 | タグ | 一覧から 1 つまたは複数のタグ名を選択します。 |
 | 複数のカテゴリ  | フィルターが複数のカテゴリに適用されるかどうかを指定します。 |
-| カテゴリ | カテゴリを選択して、特定の戦術、手法、または攻撃コンポーネントに焦点を当てます。 |
+| Categories | カテゴリを選択して、特定の戦術、手法、または攻撃コンポーネントに焦点を当てます。 |
 | Entities | ユーザー、デバイス、メールボックス、アプリケーション名などの資産の名前を指定します。 |
-| データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 特定の秘密度ラベルのフィルターを適用することで、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントに対処する優先順位を付けることができます。 <br><br> このフィルターは、[Microsoft Purview Information Protectionから秘密度ラベル](../../compliance/sensitivity-labels.md)を適用した場合にのみ情報を表示します。 |
+| データの機密性 | 一部の攻撃では、機密データや貴重なデータを排除することを目的としています。 特定の秘密度ラベルのフィルターを適用することで、機密情報が侵害されている可能性があるかどうかを迅速に判断し、それらのインシデントに対処する優先順位を付けることができます。 <br><br> このフィルターは、[Microsoft Purview 情報保護から秘密度ラベル](../../compliance/sensitivity-labels.md)を適用した場合にのみ情報を表示します。 |
 | デバイス グループ | [デバイス グループ](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)名を指定します。 |
 | OS プラットフォーム | デバイス オペレーティング システムを指定します。 |
 | 分類 | 関連するアラートの分類のセットを指定します。 |
@@ -119,7 +119,7 @@ Microsoft 365 Defender ポータルのクイック起動時に **、インシデ
 
 ## <a name="search-for-impacted-assets"></a>影響を受けた資産を検索する
 
-assetsuch&mdash; をユーザー、デバイス、メールボックス、またはアプリケーション名として名前&mdash;付けし、関連するすべてのインシデントを検索できます。 
+ユーザー、デバイス、メールボックス、アプリケーション名などの資産&mdash;に名前&mdash;を付け、関連するすべてのインシデントを検索できます。 
 
 ## <a name="specify-a-time-range"></a>時間範囲を指定する
 

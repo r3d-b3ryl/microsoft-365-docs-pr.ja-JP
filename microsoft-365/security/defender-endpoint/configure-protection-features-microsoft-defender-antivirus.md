@@ -2,8 +2,8 @@
 title: Microsoft Defender ウイルス対策保護機能を有効にして構成する
 description: Microsoft Defender ウイルス対策で、動作ベース、ヒューリスティック、およびリアルタイム保護を有効にします。
 keywords: ヒューリスティック, 機械学習, 動作モニター, リアルタイム保護, 常時オン, Microsoft Defender ウイルス対策, マルウェア対策, セキュリティ, Defender
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 0c67af35776d5fdc55dcc06472b9121ead19a571
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 52ddae872fbb41c9cab6329a9d9ef4ff8381556f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387773"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481506"
 ---
 # <a name="configure-behavioral-heuristic-and-real-time-protection"></a>行動、ヒューリスティック、リアルタイム保護を構成する
 

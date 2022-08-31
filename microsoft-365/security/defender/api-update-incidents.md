@@ -3,7 +3,8 @@ title: インシデント API を更新する
 description: Microsoft 365 Defender API を使用してインシデントを更新する方法について説明します
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: f0d8ec43cc67ab07b2c69104e79730ab522118ad
-ms.sourcegitcommit: e4882e3c66166ea7b834ad2e8fafeab42293e07d
+ms.openlocfilehash: d15f7a580964736ebc81bd0dbeed534c4965426b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67100055"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480978"
 ---
 # <a name="update-incidents-api"></a>インシデント API を更新する
 
@@ -129,7 +129,7 @@ comment|string|インシデントに追加するコメント。
 }
 ```
 
-## <a name="related-articles"></a>関連資料
+## <a name="related-articles"></a>関連記事
 
 - [Microsoft 365 Defender API にアクセスする](api-access.md)
 - [API の制限とライセンスについて学習する](api-terms.md)

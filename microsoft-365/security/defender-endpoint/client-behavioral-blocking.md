@@ -9,19 +9,19 @@ manager: dansimp
 ms.reviewer: shwetaj
 audience: ITPro
 ms.topic: article
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.custom:
 - next-gen
 - edr
 ms.collection: m365-security-compliance
-ms.technology: mde
-ms.openlocfilehash: 95c138b6613d610520a4e6870ae7a59b46159f5d
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.subservice: mde
+ms.openlocfilehash: 3947d29b4115c2f08e57aab26de951b733762c07
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418742"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480627"
 ---
 # <a name="client-behavioral-blocking"></a>クライアントの動作ブロック
 
@@ -45,7 +45,7 @@ ms.locfileid: "65418742"
 
 ## <a name="how-client-behavioral-blocking-works"></a>クライアントの動作ブロックのしくみ
 
-[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)は、デバイス上で疑わしい動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃などを検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策はそれらの不審な動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと良好な動作をミリ秒単位で区別し、各アーティファクトを分類します。 ほぼリアルタイムで、アーティファクトが悪意のあることが検出されるとすぐに、デバイスでブロックされます。
+[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md) では、デバイス上で疑わしい動作、悪意のあるコード、ファイルレス攻撃やメモリ内攻撃などを検出できます。 疑わしい動作が検出されると、Microsoft Defender ウイルス対策は、それらの疑わしい動作とそのプロセス ツリーを監視し、クラウド保護サービスに送信します。 機械学習は、悪意のあるアプリケーションと良好な動作をミリ秒単位で区別し、各アーティファクトを分類します。 ほぼリアルタイムで、アーティファクトが悪意のあることが検出されるとすぐに、デバイスでブロックされます。
 
 疑わしい動作が検出されるたびに、[アラート](alerts-queue.md)が生成され、攻撃が検出および停止された間に表示されます。"初期アクセス アラート" などのアラートがトリガーされ、[Microsoft 365 Defender ポータル](/microsoft-365/security/defender/microsoft-365-defender) (以前はMicrosoft 365 Defender) に表示されます。
 
@@ -53,7 +53,7 @@ ms.locfileid: "65418742"
 
 ## <a name="behavior-based-detections"></a>動作ベースの検出
 
-動作ベースの検出は、[ENTERPRISEの MITRE ATT&CK マトリックス](https://attack.mitre.org/matrices/enterprise)に従って名前が付けられます。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
+動作ベースの検出は、 [MITRE ATT&CK Matrix for Enterprise](https://attack.mitre.org/matrices/enterprise) に従って名前が付けられます。 名前付け規則は、悪意のある動作が観察された攻撃段階を特定するのに役立ちます。
 
 |戦術|検出の脅威名|
 |---|---|

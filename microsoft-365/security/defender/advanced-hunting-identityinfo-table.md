@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの IdentityInfo テーブ�
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, AccountInfo, IdentityInfo, account
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b09d1774ab35dbca9119deb98864d6c6f78051a9
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 587cba0befbed71d1f051858211efce63aa711f6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531437"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476684"
 ---
 # <a name="identityinfo"></a>IdentityInfo
 
@@ -33,7 +33,7 @@ ms.locfileid: "61531437"
 **適用対象:**
 - Microsoft 365 Defender
 
-`IdentityInfo` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Azure Active Directoryを含むさまざまなサービスから取得されたユーザー アカウントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+`IdentityInfo` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Azure Active Directory を含むさまざまなサービスから取得されたユーザー アカウントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!NOTE]
 >このテーブルの名前が .`AccountInfo` 名前の変更中に、ポータルに保存されたすべてのクエリが自動的に更新されます。 他の場所に保存したクエリを確認します。
@@ -42,7 +42,7 @@ ms.locfileid: "61531437"
 
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
-| `AccountObjectId` | `string` | Azure ADのアカウントの一意識別子 |
+| `AccountObjectId` | `string` | Azure AD のアカウントの一意識別子 |
 | `AccountUpn` | `string` | アカウントのユーザー プリンシパル名 (UPN) |
 | `OnPremSid` | `string` | アカウントのオンプレミス セキュリティ識別子 (SID) |
 | `CloudSid` | `string` | アカウントのクラウド セキュリティ識別子 |

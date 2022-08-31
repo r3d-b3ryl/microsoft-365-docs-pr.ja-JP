@@ -15,20 +15,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- highpri
 ms.topic: article
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: c08ab1c96adc2b9d83cc6869573f2f0dbe75ac78
-ms.sourcegitcommit: ac0ae5c2888e2b323e36bad041a4abef196c9c96
+ms.openlocfilehash: 269e9023f18ab028a15f561841b4b46ecb8ce311
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/12/2022
-ms.locfileid: "64782921"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481462"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Microsoft Defender for Endpoint - フェーズ 1: 準備に切り替える
 
@@ -52,7 +51,7 @@ ms.locfileid: "64782921"
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>組織全体のデバイスに更新プログラムを取得して展開する
 
-ベスト プラクティスとして、組織のデバイスとエンドポイントを最新の状態に保ちます。 既存のエンドポイント保護とウイルス対策ソリューションが最新であり、組織のオペレーティング システムとアプリにも最新の更新プログラムがあることを確認します。 これを行うと、後で Defender for Endpoint と Microsoft Defender ウイルス対策に移行するときに問題を防ぐのに役立ちます。
+ベスト プラクティスとして、組織のデバイスとエンドポイントを最新の状態に保ちます。 既存のエンドポイント保護とウイルス対策ソリューションが最新であり、組織のオペレーティング システムとアプリにも最新の更新プログラムがあることを確認します。 これを行うと、Defender for Endpoint と Microsoft Defender ウイルス対策に移行するときに、後で問題を防ぐのに役立ちます。
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>既存のソリューションが最新であることを確認する
 
@@ -64,7 +63,7 @@ ms.locfileid: "64782921"
 
 組織のデバイスの更新に関するヘルプが必要ですか? 以下のリソースを参照してください。
 
-|OS|関連情報|
+|OS|リソース|
 |---|---|
 |Windows|[Microsoft Update](https://www.update.microsoft.com)|
 |macOS|[Mac でソフトウェアを更新する方法](https://support.apple.com/HT201541)|
@@ -116,15 +115,15 @@ Microsoft 365 Defender ポータルへのアクセス許可は、基本的なア
 |機能|オペレーティング システム|リソース|
 |---|---|---|
 |[エンドポイントの検出と応答](overview-endpoint-detection-response.md) (EDR)|[Windows 10](/windows/release-health/release-information) 以降<br/><br/>Windows Server 2022 <br/><br/>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/>[Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803)<br/><br/>[Windows Server 2016*](/windows/release-health/status-windows-10-1607-and-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[マシン プロキシとインターネット接続の設定を構成する](configure-proxy-internet.md)|
-|EDR [Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
+|EDR[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<br/><br/>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<br/><br/>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)|[プロキシとインターネット接続の設定を構成する](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings)|
 |EDR|macOS ([システム要件を](microsoft-defender-endpoint-mac.md)参照してください)|[macOS 上の Defender for Endpoint: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
 |[Microsoft Defender ウイルス対策](microsoft-defender-antivirus-in-windows-10.md)|[Windows 10](/windows/release-health/release-information) <br/><br/> [Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<br/><br/> Windows Server 2022 <br/><br/> [Windows Server 1803 以降](/windows-server/get-started/whats-new-in-windows-server-1803) <br/><br/> [Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016)<br/><br/>[Windows Server 2012 R2*](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)|[Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する](configure-network-connections-microsoft-defender-antivirus.md)|
 |ウイルス対策|macOS ([システム要件を](microsoft-defender-endpoint-mac.md)参照してください)|[macOS 上の Defender for Endpoint: ネットワーク接続](microsoft-defender-endpoint-mac.md#network-connections)|
 |ウイルス対策|Linux ( [システム要件を](microsoft-defender-endpoint-linux.md#system-requirements)参照)|[Linux 上の Defender for Endpoint: ネットワーク接続](microsoft-defender-endpoint-linux.md#network-connections)|
 
-*Windows Server 2012 R2 と 2016 用の最新の統合ソリューションをインストールする必要があります。 詳細については、「[Windows サーバーをMicrosoft Defender for Endpoint サービスにオンボードする](/microsoft-365/security/defender-endpoint/configure-server-endpoints)」を参照してください。
+*Windows Server 2012 R2 と 2016 用の最新の統合ソリューションをインストールする必要があります。 詳細については、「[Windows サーバーを Microsoft Defender for Endpoint サービスにオンボードする](/microsoft-365/security/defender-endpoint/configure-server-endpoints)」を参照してください。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 **おめでとうございます**。 [Defender for Endpoint に切り替える](switch-to-mde-overview.md#the-migration-process)**準備** フェーズが完了しました。
 

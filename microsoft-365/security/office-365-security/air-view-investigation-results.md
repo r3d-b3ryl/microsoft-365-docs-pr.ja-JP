@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365で自動調査の結果を表示する
+title: Microsoft 365 で自動調査の結果を表示する
 keywords: AIR、autoIR、Microsoft Defender for Endpoint、自動、調査、修復、アクション
 f1.keywords:
 - NOCSH
@@ -15,18 +15,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Microsoft 365の自動調査中と自動調査後に、結果と主要な結果を表示できます。
+description: Microsoft 365 での自動調査中と自動調査後に、結果と主要な結果を表示できます。
 ms.date: 01/29/2021
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 6e3234168383a0dad6d8a9de3fb680b27b7ce6cb
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 75700ed2c5eaa197750cf8634ccbdeadf0ee204e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139697"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481550"
 ---
-# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365での自動調査の詳細と結果
+# <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Microsoft 365 での自動調査の詳細と結果
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
@@ -66,7 +66,7 @@ ms.locfileid: "66139697"
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>調査に関連するアラートの詳細を表示する
 
-特定の種類のアラートにより、Microsoft 365での自動調査がトリガーされます。 詳細については、 [自動調査をトリガーするアラート ポリシー](office-365-air.md#which-alert-policies-trigger-automated-investigations)に関するページを参照してください。
+特定の種類のアラートにより、Microsoft 365 での自動調査がトリガーされます。 詳細については、 [自動調査をトリガーするアラート ポリシー](office-365-air.md#which-alert-policies-trigger-automated-investigations)に関するページを参照してください。
 
 1. Microsoft 365 Defender ポータル (<https://security.microsoft.com>) に移動してサインインします。
 2. ナビゲーション ウィンドウで、[ **アクション センター**] を選択します。
@@ -77,11 +77,11 @@ ms.locfileid: "66139697"
 
 ## <a name="keep-the-following-points-in-mind"></a>以下の点にご注意ください。
 
-- 電子メール数は調査時に計算され、調査ポップアップを開くと (基になるクエリに基づいて) 一部のカウントが再計算されます。
+- Emailカウントは調査時に計算され、調査ポップアップを開くと (基になるクエリに基づいて) 一部のカウントが再計算されます。
 
-- **[電子** メール] タブの電子メール クラスターに表示される電子メール数と、クラスター ポップアップに表示される電子メールの数量の値は、調査時に計算され、変更されません。
+- **[Email**] タブの電子メール クラスターに表示される電子メール数と、クラスター ポップアップに表示される電子メールの数量の値は調査時に計算され、変更されません。
 
-- 電子メール クラスター ポップアップの [ **電子メール** ] タブの下部に表示される電子メール数と、エクスプローラーに表示される電子メール メッセージの数は、調査の初期分析後に受信した電子メール メッセージを反映します。
+- 電子メール クラスターポップアップの **[Email**] タブの下部に表示される電子メール数と、エクスプローラーに表示される電子メール メッセージの数は、調査の初期分析後に受信した電子メール メッセージを反映します。
 
   したがって、元の数が 10 の電子メール メッセージを示す電子メール クラスターでは、調査分析フェーズの間にさらに 5 つの電子メール メッセージが到着し、管理者が調査を確認すると、合計 15 の電子メール リストが表示されます。 同様に、古い調査ではエクスプローラーのクエリが示すよりも高い数のデータが表示され始める可能性があります。Microsoft Defender for Office 365 プラン 2 のデータは、試用版では 7 日後、有料ライセンスの場合は 30 日後に期限切れになるためです。
 

@@ -8,17 +8,17 @@ manager: dansimp
 audience: ITPro
 ms.topic: how-to
 ms.date: 07/07/2022
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.localizationpriority: medium
 ms.reviewer: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 2b7a4d47d07fd609fb9dd424f2a8b89af2ed0b9b
-ms.sourcegitcommit: 9fdb5c5b9eaf0c8a8d62b579a5fb5a5dc2d29fa9
+ms.openlocfilehash: 280541647409916f45208b8ddfbb98c03f91383c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/11/2022
-ms.locfileid: "66714802"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476860"
 ---
 # <a name="trial-playbook-microsoft-defender-for-endpoint"></a>試用版プレイブック: Microsoft Defender for Endpoint
 
@@ -58,11 +58,11 @@ Microsoft Defender for Endpointプラン 2 試用版プレイブックへよう�
 
 **では、始めましょう。**
 
-## <a name="set-up-your-trial"></a>試用版を設定する
+## <a name="set-up-your-trial"></a>試用版のセットアップ
 
 1. [ライセンスの状態を確認します](#step-1-confirm-your-license-state)。
 2. [ロールベースのアクセス制御を設定し、セキュリティ チームにアクセス許可を付与します](#step-2-set-up-role-based-access-control-and-grant-permissions-to-your-security-team)。
-3. [Microsoft 365 Defender ポータルにアクセスします](#step-3-visit-the-microsoft-365-defender-portal)。
+3. [Microsoft 365 Defender ポータルにアクセスする](#step-3-visit-the-microsoft-365-defender-portal)。
 4. [サポートされている管理ツールのいずれかを使用してエンドポイントをオンボード](#step-4-onboard-endpoints-using-any-of-the-supported-management-tools)します。
 5. [機能を構成します](#step-5-configure-capabilities)。
 6. [シミュレートされた攻撃を通じてMicrosoft Defender for Endpointを体験します](#step-6-experience-microsoft-defender-for-endpoint-through-simulated-attacks)。

@@ -19,14 +19,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のスパムを防ぐのに役立つスパム対策の設定とフィルターについて学習できます。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 9685ca45859e842ae57d3d451a3de9e16cdc9ba6
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: e5c2ed6ddc31c75baa87b62bbd642ca4fd9cc30f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67385839"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480495"
 ---
 # <a name="anti-spam-protection-in-eop"></a>EOP のスパム対策保護
 

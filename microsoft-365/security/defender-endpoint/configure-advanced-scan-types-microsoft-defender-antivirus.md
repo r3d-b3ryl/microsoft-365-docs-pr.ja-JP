@@ -3,7 +3,7 @@ title: Microsoft Defender ウイルス対策のスキャン オプションを�
 description: 電子メール ストレージ ファイル、バックアップまたは再解析ポイント、ネットワーク ファイル、アーカイブされたファイル (.zip ファイルなど) をスキャンするように Microsoft Defender ウイルス対策を構成できます。
 keywords: 高度なスキャン, スキャン, 電子メール, アーカイブ, zip,rar, アーカイブ, 再解析スキャン
 ms.pagetype: security
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.date: 12/03/2021
 ms.collection: M365-security-compliance
 ms.topic: how-to
-ms.openlocfilehash: 873ea8ee0b8f3f392a312b811b79f9a6e59f9825
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 6668bfc3cd9b8b2494458a1434f3d296f56c8b09
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387883"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479315"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Microsoft Defender ウイルス対策スキャン オプションを構成する
 
@@ -65,10 +65,10 @@ Microsoft エンドポイント マネージャー (現在のブランチ) の�
 |ポリシー 項目と場所|既定の設定 (構成されていない場合)|クラスの `MSFT_MpPreference` PowerShell `Set-MpPreference` パラメーターまたは WMI プロパティ|
 |---|---|---|
 |Emailスキャン <p> **スキャン** \>**電子メール スキャンを有効にする**<p>[Emailスキャンの制限事項を](#email-scanning-limitations)参照してください (この記事では)|無効|`-DisableEmailScanning`|
-| スクリプト スキャン | Enabled  | このポリシー設定を使用すると、スクリプト スキャンを構成できます。 この設定を有効または未構成にすると、スクリプト スキャンが有効になります。 <p>[Defender/AllowScriptScanning を](/windows/client-management/mdm/policy-csp-defender)参照してください  | 
+| スクリプト スキャン | 有効  | このポリシー設定を使用すると、スクリプト スキャンを構成できます。 この設定を有効または未構成にすると、スクリプト スキャンが有効になります。 <p>[Defender/AllowScriptScanning を](/windows/client-management/mdm/policy-csp-defender)参照してください  | 
 |[再解析ポイントをスキャンする](/windows/win32/fileio/reparse-points) <p> **スキャン** \>**再解析ポイントスキャンを有効にする**|無効|使用不可 <p>[Reparse ポイントを](/windows/win32/fileio/reparse-points)参照してください|
 |マップされたネットワーク ドライブをスキャンする <p> **スキャン** \>**マップされたネットワーク ドライブでフル スキャンを実行する**|無効|`-DisableScanningMappedNetworkDrivesForFullScan`|
-|アーカイブ ファイル (.zip ファイルや.rar ファイルなど) をスキャンします。 <p> **スキャン** \>**アーカイブ ファイルをスキャンする**|有効|`-DisableArchiveScanning` <p>[拡張機能の除外リスト](configure-extension-file-exclusions-microsoft-defender-antivirus.md)は、この設定よりも優先されます。|
+|アーカイブ ファイル (.zip ファイルや.rar ファイルなど) をスキャンします。 <p> **スキャン** \>**アーカイブ ファイルをスキャンする**|Enabled|`-DisableArchiveScanning` <p>[拡張機能の除外リスト](configure-extension-file-exclusions-microsoft-defender-antivirus.md)は、この設定よりも優先されます。|
 |ネットワーク上のファイルをスキャンする <p> **スキャン** \>**ネットワーク ファイルをスキャンする**|無効|`-DisableScanningNetworkFiles`|
 |パックされた実行可能ファイルをスキャンする <p> **スキャン** \>**パックされた実行可能ファイルをスキャンする**|有効|使用不可|
 |フル スキャン時にのみリムーバブル ドライブをスキャンする <p> **スキャン** \>**リムーバブル ドライブをスキャンする**|無効|`-DisableRemovableDriveScanning`|

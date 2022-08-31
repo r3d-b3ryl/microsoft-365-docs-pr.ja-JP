@@ -7,7 +7,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-ms.date: 07/28/2022
+ms.date: 08/30/2022
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 33f41114c0647de2987a5ed5abdaec4c885fcbfd
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 350ab278281cc436bb49c6d27827ac73ae2bea43
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387443"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476530"
 ---
 # <a name="run-and-review-the-results-of-a-microsoft-defender-offline-scan"></a>Microsoft Defender オフライン スキャンの結果を実行してレビューする
 
@@ -141,6 +141,14 @@ wmic /namespace:\\root\Microsoft\Windows\Defender path MSFT_MpWDOScan call Start
 > - [Linux 用 Microsoft Defender for Endpoint](microsoft-defender-endpoint-linux.md)
 > - [Android 機能用 Defender for Endpoint を構成する](android-configure.md)
 > - [iOS 機能用 Microsoft Defender for Endpoint を構成する](ios-configure-features.md)
+
+### <a name="where-can-i-find-the-scan-results"></a>スキャン結果はどこで確認できますか?
+
+Microsoft Defender オフライン スキャンの結果を表示するには:
+
+1. **[スタート]** を選択し、[セキュリティ&  >   > 設定  > **の更新** Windows セキュリティ **ウイルス&脅威からの保護**] を選択します。
+
+2. [ **ウイルス&脅威の保護** ] 画面の [ **現在の脅威**] の [ **スキャン オプション**] を選択し、[ **保護の履歴**] を選択します。
 
 ## <a name="related-articles"></a>関連記事
 

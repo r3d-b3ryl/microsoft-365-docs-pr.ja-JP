@@ -3,7 +3,8 @@ title: XDR ソリューションであるMicrosoft 365 Defenderの評価とパ�
 description: XDR セキュリティとは Microsoft 365 Defenderで Microsoft XDR を評価するにはどうすればよいですか? このブログ シリーズを使用して、デバイス、ID、データ、およびアプリケーションを保護するように設計されたセキュリティ ソリューションをテストおよびパイロットするためのMicrosoft 365 Defender試用版ラボまたはパイロット環境を計画します。 ここで XDR のサイバー セキュリティ体験を開始し、そのテストを運用環境に移行します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 5256a578abb515f7d8d2d6e73b5a01fe71404dd0
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 5689dd9f493ce148b02146ddca7ca7c570e005e4
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750080"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481660"
 ---
 # <a name="evaluate-and-pilot-microsoft-365-defender"></a>Microsoft 365 Defender の評価とパイロット
 
@@ -128,7 +129,7 @@ Microsoft では、次に示す順序で Microsoft 365 のコンポーネント�
 |3     | [Defender for Office 365を有効にする ](eval-defender-office-365-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。 このコンポーネントにはExchange Online Protectionが含まれているため、ここで両方を実際 *に評価します*。      |
 |4     | [Defender for Endpoint を有効にする ](eval-defender-endpoint-overview.md)       | アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。         |
 |5     | [Microsoft Defender for Cloud Appsを有効にする](eval-defender-mcas-overview.md)        |  アーキテクチャ要件を満たしていることを確認し、評価を有効にしてから、パイロット環境を作成します。        |
-|6      | [脅威の調査と対応](eval-defender-investigate-respond.md)        |   攻撃をシミュレートし、インシデント対応機能の使用を開始します。      |
+|6     | [脅威の調査と対応](eval-defender-investigate-respond.md)        |   攻撃をシミュレートし、インシデント対応機能の使用を開始します。      |
 |7      | [試用版を製品版に昇格する](eval-defender-promote-to-production.md)        | Microsoft 365 コンポーネントを 1 つずつ運用環境に昇格させます。        |
 
 これは、通常、機能のデプロイと構成に必要な労力に基づいて、機能の価値を迅速に活用するように設計された一般的に推奨される順序です。 たとえば、Defender for Office 365は、Defender for Endpoint にデバイスを登録するのに要する時間よりも短い時間で構成できます。 もちろん、ビジネス ニーズを満たすためにコンポーネントに優先順位を付ける必要があります。また、これらを別の順序で有効にすることもできます。

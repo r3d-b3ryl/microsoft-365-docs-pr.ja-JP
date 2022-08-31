@@ -1,8 +1,8 @@
 ---
 title: 除外を定義する際に避ける必要のある一般的な間違い
-description: Microsoft Defender ウイルス対策 スキャンの除外を定義するときによくある間違いを回避します。
+description: Microsoft Defender ウイルス対策スキャンの除外を定義するときによくある間違いを回避します。
 keywords: 除外、ファイル、拡張子、ファイルの種類、フォルダー名、ファイル名、スキャン
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,16 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.date: 06/16/2022
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 99d59c2027d3b34ad5c9c19444a51dd08cc22276
-ms.sourcegitcommit: 997eb64f80da99b1099daba62994c722bbb25d72
+ms.openlocfilehash: 3c1139ee63bb6b53297d1c13c46b72bf4a41db19
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66128660"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481022"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>除外を定義する際に避ける必要のある一般的な間違い
 
@@ -37,11 +37,11 @@ ms.locfileid: "66128660"
 - Linux
 
 > [!IMPORTANT]
-> **除外を追加する場合は注意してください**。 Microsoft Defender ウイルス対策 スキャンの除外により、デバイスの保護レベルが低下します。
+> **除外を追加する場合は注意してください**。 Microsoft Defender ウイルス対策スキャンの除外により、デバイスの保護レベルが低下します。
 
-スキャンするMicrosoft Defender ウイルス対策しないアイテムの除外リストを定義できます。 ただし、除外されたアイテムには、デバイスを脆弱にする脅威が含まれている可能性があります。 この記事では、除外を定義するときに回避する必要がある一般的な間違いについて説明します。
+Microsoft Defender ウイルス対策でスキャンしないアイテムの除外リストを定義できます。 ただし、除外されたアイテムには、デバイスを脆弱にする脅威が含まれている可能性があります。 この記事では、除外を定義するときに回避する必要がある一般的な間違いについて説明します。
 
-除外リストを定義する前に、除外を[定義するためのおすすめを](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)参照してください。
+除外リストを定義する前に、除外を [定義するための推奨事項に関するページを](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)参照してください。
 
 ## <a name="excluding-certain-trusted-items"></a>特定の信頼済みアイテムを除外する
 
@@ -66,7 +66,7 @@ ms.locfileid: "66128660"
 - `%ProgramFiles%\Contoso\`、 `C:\Program Files\Contoso\`、、 `%ProgramFiles(x86)%\Contoso\`または `C:\Program Files (x86)\Contoso\`
 - `C:\Temp`、`C:\Temp\`、または `C:\Temp\*`
 - `C:\Users\` または `C:\Users\*`
-- `C:\Users\<UserProfileName>\AppData\Local\Temp\` または `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`。 **SharePointの重要な例外に注意** してください:SharePoint [でファイル レベルのウイルス対策保護](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)を使用する場合は **、除外**`C:\Users\ServiceAccount\AppData\Local\Temp`するか、または`C:\Users\Default\AppData\Local\Temp`使用します。
+- `C:\Users\<UserProfileName>\AppData\Local\Temp\` または `C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`。 **SharePoint の次の重要な例外に注意** してください。除外するか`C:\Users\Default\AppData\Local\Temp`、[SharePoint でファイル レベルのウイルス対策保護](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)を使用する場合に行 **います**`C:\Users\ServiceAccount\AppData\Local\Temp`。
 - `%Windir%\Prefetch`、 `C:\Windows\Prefetch`、、 `C:\Windows\Prefetch\`または `C:\Windows\Prefetch\*`
 - `%Windir%\System32\Spool` または `C:\Windows\System32\Spool`
 - `C:\Windows\System32\CatRoot2`
@@ -192,7 +192,7 @@ ms.locfileid: "66128660"
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>ファイル名とフォルダーパスまたは拡張子の除外リストで不適切な環境変数をワイルドカードとして使用する
 
-Microsoft Defender ウイルス対策 サービスは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。つまり、ユーザー環境変数からではなく、システム環境変数から情報を取得します。 除外リストでのワイルドカードとしての環境変数の使用は、システム変数と、NT AUTHORITY\SYSTEM アカウントとして実行されているプロセスに適用される変数に限定されます。 そのため、フォルダーとプロセスの除外を追加するときに、ユーザー環境変数をワイルドカードとして使用Microsoft Defender ウイルス対策しないでください。 システム環境変数の完全な一覧については、 [システム環境変数](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) の下の表を参照してください。
+Microsoft Defender ウイルス対策サービスは、LocalSystem アカウントを使用してシステム コンテキストで実行されます。つまり、ユーザー環境変数からではなく、システム環境変数から情報を取得します。 除外リストでのワイルドカードとしての環境変数の使用は、システム変数と、NT AUTHORITY\SYSTEM アカウントとして実行されているプロセスに適用される変数に限定されます。 そのため、Microsoft Defender ウイルス対策フォルダーとプロセスの除外を追加するときに、ユーザー環境変数をワイルドカードとして使用しないでください。 システム環境変数の完全な一覧については、 [システム環境変数](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) の下の表を参照してください。
 
 除外 [リストでワイルドカードを使用する方法については、「ファイル名とフォルダーパスまたは拡張子の除外リストでワイルドカード](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) を使用する」を参照してください。
 

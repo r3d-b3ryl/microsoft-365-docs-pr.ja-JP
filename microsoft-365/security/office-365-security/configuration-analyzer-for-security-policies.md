@@ -17,18 +17,18 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 管理者は、構成アナライザーを使用して、Standard protection および Strict Protection の設定の下にあるセキュリティ ポリシーを事前設定済みのセキュリティ ポリシーで見つけて修正する方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 459f44f29b89b2bbca6aa0f6847d0b4636647be6
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b5f33bb7b30f63ad5d6705b7a9cbffb38f280a2c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64477063"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479161"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>EOP および Defender for Office 365 の構成アナライザー
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -39,7 +39,7 @@ Microsoft 365 Defender ポータルの構成アナライザーは、[設定が�
 
 次の種類のポリシーは、構成アナライザーによって分析されます。
 
-- **Exchange Online Protection (EOP) ポリシー**: これには、Exchange Online メールボックスを持つMicrosoft 365組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織が含まれます。
+- **Exchange Online Protection (EOP) ポリシー**: これには、Exchange Online メールボックスを持つ Microsoft 365 組織と、Exchange Online メールボックスのないスタンドアロン EOP 組織が含まれます。
   - [スパム対策ポリシー](configure-your-spam-filter-policies.md)。
   - [マルウェア対策ポリシー](configure-anti-malware-policies.md)。
   - [EOP フィッシング対策ポリシー](set-up-anti-phishing-policies.md#spoof-settings)。
@@ -68,12 +68,12 @@ Microsoft 365 Defender ポータルの構成アナライザーは、[設定が�
 
   > [!NOTE]
   >
-  > - 対応するAzure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
-  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups)の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
+  > - 対応する Azure Active Directory ロールにユーザーを追加すると、Microsoft 365 Defender ポータルで必要なアクセス許可 _と_、Microsoft 365 の他の機能に対するアクセス許可がユーザーに付与されます。 詳細については、「[管理者の役割について](../../admin/add-users/about-admin-roles.md)」を参照してください。
+  > - [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) の **閲覧専用の組織管理** の役割グループが この機能への読み取り専用アクセス権も付与します。
 
 ## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Microsoft 365 Defender ポータルで構成アナライザーを使用する
 
-Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セクション **の** <https://security.microsoft.com>[電子メール & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **構成アナライザー**] に移動します。 **[構成アナライザー]** ページに直接移動するには、 <https://security.microsoft.com/configurationAnalyzer>.
+Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セクション **の** <https://security.microsoft.com>[Email & コラボレーション \> **ポリシー&ルール** \> **脅威ポリシー** \> **構成アナライザー**] に移動します。 **[構成アナライザー]** ページに直接移動するには、 <https://security.microsoft.com/configurationAnalyzer>.
 
 **[構成アナライザー]** ページには、次の 3 つのメイン タブがあります。
 
@@ -85,15 +85,15 @@ Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セ
 
 既定では、構成アナライザーは [ **標準の推奨事項** ] タブで開きます。 **[厳密な推奨事項** ] タブに切り替えることができます。設定、レイアウト、アクションは両方のタブで同じです。
 
-:::image type="content" source="../../media/configuration-analyzer-settings-and-recommendations-view.png" alt-text="Configuration アナライザーの設定と推奨事項ビュー" lightbox="../../media/configuration-analyzer-settings-and-recommendations-view.png":::
+:::image type="content" source="../../media/configuration-analyzer-settings-and-recommendations-view.png" alt-text="構成アナライザーの [設定と推奨事項] ビュー" lightbox="../../media/configuration-analyzer-settings-and-recommendations-view.png":::
 
 タブの最初のセクションには、Standard または Strict 保護と比較して改善が必要なポリシーの種類ごとの設定の数が表示されます。 ポリシーの種類は次のとおりです。
 
 - **スパム対策**
 - **フィッシング詐欺対策**
 - **マルウェア対策**
-- **セーフ添付ファイル** (サブスクリプションにMicrosoft Defender for Office 365が含まれている場合)
-- **セーフ リンク** (サブスクリプションにMicrosoft Defender for Office 365が含まれている場合)
+- **安全な添付ファイル** (サブスクリプションにMicrosoft Defender for Office 365が含まれている場合)
+- **安全なリンク** (サブスクリプションにMicrosoft Defender for Office 365が含まれている場合)
 
 ポリシーの種類と番号が表示されない場合は、その種類のすべてのポリシーが Standard または Strict 保護の推奨設定を満たします。
 
@@ -102,7 +102,7 @@ Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セ
 - **推奨事項**: 標準または厳格な保護プロファイルの設定の値。
 - **ポリシー**: 設定を含む影響を受けるポリシーの名前。
 - **ポリシー グループ/設定名**: 注意が必要な設定の名前。
-- **ポリシーの種類**: スパム対策、フィッシング詐欺対策、マルウェア対策、セーフ リンク、セーフ添付ファイル。
+- **ポリシーの種類**: スパム対策、フィッシング詐欺対策、マルウェア対策、安全なリンク、または安全な添付ファイル。
 - **現在の構成**: 設定の現在の値。
 - **最終更新日**: ポリシーが最後に変更された日付。
 - **状態**: 通常、この値は **開始されません**。
@@ -133,7 +133,7 @@ Microsoft 365 Defender ポータルの [**テンプレート** ポリシー] セ
 - **変更者**
 - **名前の設定**
 - **ポリシー**: 影響を受けるポリシーの名前。
-- **種類**: スパム対策、フィッシング詐欺対策、マルウェア対策、セーフ リンク、セーフ添付ファイル。
+- **種類**: スパム対策、フィッシング詐欺対策、マルウェア対策、安全なリンク、または安全な添付ファイル。
 - **構成の変更**: 古い値と設定の新しい値
 - **構成ドリフト**: 推奨される **Standard または Strict** の設定と比較して、設定のセキュリティの増減を示す値 **[増減**] を指定します。
 

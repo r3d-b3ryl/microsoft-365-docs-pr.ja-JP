@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの UrlClickEvents テー�
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, UrlClickEvents, SafeLinks, フィッシング, マルウェア, 悪意のあるクリック, outlook, チーム, 電子メール, office365
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: bb7ee0397c79cc64c6f7396b6c3ca9450c8306f2
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 068e083321b465410df9e734660344c03e6b55ce
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "66993772"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476046"
 ---
 # <a name="urlclickevents"></a>UrlClickEvents
 

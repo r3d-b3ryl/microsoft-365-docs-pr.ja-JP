@@ -2,7 +2,8 @@
 title: Microsoft セキュア スコア
 description: Microsoft 365 Defender ポータルでの Microsoft セキュリティ スコア、セキュリティ体制の改善方法、およびセキュリティ管理者が期待できる内容について説明します。
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal, 改善アクション
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -22,13 +23,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: 33e4ae46c6ec75d615cf64efe93d7b5bd8a77905
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 2e4618644860cf1f5370749e65d2d8bcb5aca8a0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617030"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480276"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft セキュア スコア
 

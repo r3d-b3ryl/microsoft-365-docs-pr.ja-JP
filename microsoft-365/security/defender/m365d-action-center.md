@@ -3,7 +3,8 @@ title: アクション センターに移動して、自動化された調査お
 description: アクション センターを使用して、自動調査に関する詳細を表示し、保留中のアクションを承認する
 keywords: アクション センター, 脅威の保護, 調査, アラート, 保留中, 自動化, 検出
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,17 +20,16 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: how-to
-ms.technology: m365d
 ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 5e12c5b96b5e5ebe9bf162360a74dcaf56b28a81
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 9a44ea87a38228c5ec012f0fe507bb3c9d6f66bb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328543"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475484"
 ---
 # <a name="the-action-center"></a>アクション センター
 
@@ -50,7 +50,7 @@ ms.locfileid: "67328543"
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Microsoft 365 Defender ポータルの統合アクション センター。" lightbox="../../media/m3d-action-center-unified.png":::
 
-例: 
+以下に例を示します。 
 
 - 以前に Office 365 セキュリティ & コンプライアンス センター ()[https://protection.office.com](https://protection.office.com) を使用していた場合は、<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender ポータル</a>で統合アクション センターを試してください。
 - Microsoft Defender セキュリティ センター () でアクション センターを使用していた場合は、Microsoft 365 Defender[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) <a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">ポータル</a>で統合アクション センターを試します。

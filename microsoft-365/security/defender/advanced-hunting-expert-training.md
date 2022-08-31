@@ -4,7 +4,8 @@ description: 高度なハンティングエキスパートによる無料のト�
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, 言語, トレーニング, シナリオ, 基本から高度, ビデオ, ステップ バイ ステップ
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4c83db02acea02b076b84f8b180e4d9ff8460a80
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: ac9e28a51e79eea85a56fea652931d9db38f1907
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603321"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477651"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>高度な捜索に関するエキスパート トレーニングを受ける
 
@@ -98,7 +98,7 @@ CloudAppEvents
 |KQL でテーブルを結合する | テーブルを結合して意味のある結果を作成する機能について説明します。 | [YouTube](https://www.youtube.com/watch?v=8qZx7Pp5XgM) (4:17) |
 | KQL でのテーブルの最適化 | クエリを最適化することで、複雑なクエリを実行するときにタイムアウトを回避する方法について説明します。 | [YouTube](https://www.youtube.com/watch?v=ceYvRuPp5D8) (5:38)  | 
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [高度な追求の概要](advanced-hunting-overview.md)
 - [高度な捜索のクエリ言語について学習する](advanced-hunting-query-language.md)

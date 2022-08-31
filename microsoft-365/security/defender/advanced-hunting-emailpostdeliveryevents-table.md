@@ -1,10 +1,11 @@
 ---
 title: 高度なハンティング スキーマの EmailPostDeliveryEvents テーブル
-description: 高度なハンティング スキーマの EmailPostDeliveryEvents テーブルで、Microsoft 365メールに対して実行される配信後のアクションについて説明します
+description: 高度なハンティング スキーマの EmailPostDeliveryEvents テーブルで、Microsoft 365 メールで実行された配信後のアクションについて説明します
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, EmailPostDeliveryEvents, ネットワーク メッセージ ID, 送信者, 受信者, 添付ファイル ID, 添付ファイル名, マルウェアの判定, フィッシング判定, 添付ファイル数, リンク数, URL カウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 876b240d73613637cc2f564ce6415873b645293c
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 9b33c3cbb976431f87f2e23f12a0743d0b28726e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130585"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480108"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -34,10 +34,10 @@ ms.locfileid: "65130585"
 - Microsoft 365 Defender
 - Microsoft Defender for Office 365
 
-`EmailPostDeliveryEvents` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft 365によって処理された電子メール メッセージに対して実行された配信後のアクションに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
+`EmailPostDeliveryEvents` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft 365 によって処理された電子メール メッセージに対して実行された配信後のアクションに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (`ActionType`値) の詳細については、Defender for Cloudで使用できる組み込みのスキーマ参照を使用します。
+> テーブルでサポートされているイベントの種類 (`ActionType` 値) の詳細については、Defender for Cloud で使用できる組み込みのスキーマ参照を使用します。
 
 個々の電子メール メッセージの詳細を取得するには、テーブル、および[`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md)テーブル[`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md)を使用[`EmailEvents`](advanced-hunting-emailevents-table.md)することもできます。 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -47,7 +47,7 @@ ms.locfileid: "65130585"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | `string` | Microsoft 365によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | `string` | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `InternetMessageId` | `string` | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `Action` | `string` | エンティティに対して実行されるアクション |
 | `ActionType` | `string` | イベントをトリガーしたアクティビティの種類: 手動修復、フィッシング ZAP、マルウェア ZAP |

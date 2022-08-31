@@ -19,13 +19,14 @@ ms.topic: article
 ms.collection:
 - M365-security-compliance
 - m365solution-asr-rules
+- highpri
 ms.date: 1/18/2022
-ms.openlocfilehash: c503af0931b60b6ef54ae070a377c2ffda5a9f50
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d544d109f0b150efc23447ed1aaaaedc03ed6719
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969312"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480042"
 ---
 # <a name="attack-surface-reduction-asr-rules-deployment-overview"></a>攻撃面の縮小 (ASR) ルールの展開の概要
 
@@ -94,7 +95,7 @@ Microsoft Defender ウイルス対策は、次のモードのいずれにも含�
 - パッシブ
 - ブロック モードでのエンドポイント検出と応答 (EDR) を使用したパッシブ モード
 - 限られた定期的なスキャン (LPS)
-- オフ
+- Off
 
 「 [クラウド配信保護」と「Microsoft Defender ウイルス対策](cloud-protection-microsoft-defender-antivirus.md)」を参照してください。
 
@@ -137,7 +138,7 @@ Microsoft Defender ウイルス対策のバージョンを最新の状態に保�
 
 [攻撃面の減少 (ASR) ルールの参照](attack-surface-reduction-rules-reference.md)
 
-## <a name="reference"></a>参照
+## <a name="reference"></a>関連情報
 
 ### <a name="blogs"></a>ブログ
 

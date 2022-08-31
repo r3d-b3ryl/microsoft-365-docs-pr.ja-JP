@@ -2,8 +2,8 @@
 title: Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 description: Microsoft Defender ウイルス対策クラウド保護サービスへの接続を構成してテストします。
 keywords: ウイルス対策, Microsoft Defender ウイルス対策, マルウェア対策, セキュリティ, Defender, クラウド, 攻撃性, 保護レベル
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,12 +16,12 @@ ms.date: 06/28/2022
 ms.reviewer: mkaminska; pahuijbr
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 163929596d826eb1f7a04af4d9baea5d6a975c3e
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: f9b459507fb9c2a3b2b63b5c944dd4dc0a4f4419
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386475"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480583"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Microsoft Defender ウイルス対策 ネットワーク接続を構成および検証する
 

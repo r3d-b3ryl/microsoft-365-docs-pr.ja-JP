@@ -3,7 +3,8 @@ title: 手順 3. 最初のインシデントのインシデント後のレビュ
 description: Microsoft 365 Defenderで最初のインシデントのレビューを実行する方法。
 keywords: インシデント、アラート、調査、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 1856548b8cb3fd1c8b09844d04adaa21f6fd8776
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: 76df56c3d1200e8657f288f0b696e8ace3f8ea28
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66892920"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480846"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>手順 3. 最初のインシデントのインシデント後のレビューを実行する
 
@@ -50,7 +51,7 @@ Microsoft 365 Defenderは、[MITRE ATT&CK Framework](https://attack.mitre.org/) 
 
 インシデント後のレビュー アクティビティでは、組織の対応機能を合理化するために、セキュリティ構成とセキュリティ チームのプロセスを微調整することもできます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 次の追加の調査パスを参照してください。
 

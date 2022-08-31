@@ -362,6 +362,8 @@
   items:
     - name: 金融サービス
       items:
+        - name: 概要
+          href: financial-services-overview.md
         - name: 金融サービスのセキュリティとコンプライアンス
           href: financial-services-secure-collaboration.md
     - name: エネルギーおよび公益サービス
@@ -373,7 +375,7 @@
         - name: 概要
           href: healthcare-overview.md
         - name: 医療関係向けの Teams
-          href: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc
+          href: /frontline/teams-in-hc
     - name: 教育
       items:
         - name: 教育機関用 Teams
@@ -389,7 +391,7 @@
         - name: 概要
           href: retail-overview.md
         - name: 小売店向けの Teams
-          href: /MicrosoftTeams/expand-teams-across-your-org/teams-for-retail-landing-page
+          href: /frontline/teams-for-retail-landing-page
 - name: エンタープライズ アーキテクチャの設計原則
   items:
     - name: 概要

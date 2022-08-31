@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの IdentityLogonEvents テ
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, IdentityLogonEvents, Azure AD, Active Directory, Microsoft Defender for Identity, ID
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: c5f8de4015ed8b031d3f228f29a6a0d63a57bf2a
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 177710ef709d6c9d3f40882a370620f908671114
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531341"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481440"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -36,10 +36,10 @@ ms.locfileid: "61531341"
 `IdentityLogonEvents` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft Defender for Identityによってキャプチャされたオンプレミスの Active Directoryを介して行われた認証アクティビティと、Microsoft オンライン サービスに関連する認証アクティビティによってキャプチャされた認証アクティビティに関する情報が含まれています。Microsoft Defender for Cloud Apps。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (`ActionType`値) の詳細については、Defender for Cloudで使用できる組み込みのスキーマ参照を使用します。
+> テーブルでサポートされているイベントの種類 (`ActionType` 値) の詳細については、Defender for Cloud で使用できる組み込みのスキーマ参照を使用します。
 
 >[!NOTE]
->この表では、Defender for Cloud Apps によって追跡されるAzure Active Directory (Azure AD) ログオン アクティビティ、特に ActiveSync やその他のレガシ プロトコルを使用した対話型サインインと認証アクティビティについて説明します。 このテーブルでは使用できない非対話型ログオンは、Azure AD監査ログに表示できます。 [Defender for Cloud アプリをMicrosoft 365に接続する方法の詳細](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>次の表では、Defender for Cloud Apps によって追跡される Azure Active Directory (Azure AD) ログオン アクティビティ、特に ActiveSync やその他のレガシ プロトコルを使用した対話型サインインと認証アクティビティについて説明します。 この表では使用できない非対話型ログオンは、Azure AD 監査ログに表示できます。 [Defender for Cloud Apps を Microsoft 365 に接続する方法の詳細](/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -55,7 +55,7 @@ ms.locfileid: "61531341"
 | `AccountDomain` | `string` | アカウントのドメイン |
 | `AccountUpn` | `string` | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | `string` | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | `string` | Azure ADのアカウントの一意識別子 |
+| `AccountObjectId` | `string` | Azure AD のアカウントの一意識別子 |
 | `AccountDisplayName` | `string` | アドレス帳に表示されるアカウント ユーザーの名前。 通常、特定の名前または名、中間の開始、姓または姓の組み合わせ。 |
 | `DeviceName` | `string` | デバイスの完全修飾ドメイン名 (FQDN) |
 | `DeviceType` | `string` | デバイスの種類 |

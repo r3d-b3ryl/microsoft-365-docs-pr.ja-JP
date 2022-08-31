@@ -20,18 +20,18 @@ description: Microsoft Defender for Office 365で自動調査と対応の機能�
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 78dc31c055f563f0f9f03bcf12642296459de491
-ms.sourcegitcommit: 45bc65972d4007b2aa7760d4457a0d2699f81926
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 91af37a052eac5bb2b43568fefd5c8e45f93d5bb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/20/2022
-ms.locfileid: "64974237"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480693"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365での自動調査と対応のしくみ
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
@@ -69,7 +69,7 @@ AIR を使用すると、セキュリティ運用チームがより効率的か�
 - 信号は、[Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)などの他のプラットフォームと共有されます。
 - 不審なメール メッセージ内の悪意のあるリンクをユーザーがクリックしたかどうかが判断されます。
 - Exchange Online Protection ([EOP](exchange-online-protection-overview.md) と ([Microsoft Defender for Office 365](defender-for-office-365.md)) 間でチェックが行われ、他の同様のメッセージがユーザーによって報告されているかどうかを確認します。
-- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックでは、Office 365、[Microsoft Defender for Cloud Apps](/cloud-app-security)、Azure Active Directory間のシグナル[が](/azure/active-directory)活用され、関連するユーザー アクティビティの異常が関連付けられます。
+- ユーザーに対する侵害があったかどうかがチェックされます。 このチェックでは、Office 365、[Microsoft Defender for Cloud Apps](/cloud-app-security)、[および Azure Active Directory](/azure/active-directory) 全体のシグナルが活用され、関連するユーザー アクティビティの異常が関連付けられます。
 
 捜索フェーズでは、リスクと脅威がさまざまな捜索手順に割り当てられます。
 
@@ -79,7 +79,7 @@ AIR を使用すると、セキュリティ運用チームがより効率的か�
 
 アラートによってトリガーされる自動調査に加えて、組織のセキュリティ運用チームは [、脅威エクスプローラー](threat-explorer.md)のビューから自動調査をトリガーできます。 この調査によってアラートも作成されるため、Microsoft 365 Defenderインシデントと外部 SIEM ツールは、この調査がトリガーされたことを確認できます。
 
-たとえば、エクスプローラーで **[マルウェア** ] ビューを使用しているとします。 グラフの下にあるタブを使用して、[ **電子メール** ] タブを選択します。一覧で 1 つ以上の項目を選択すると、[ **+ アクション]** ボタンがアクティブ化されます。
+たとえば、エクスプローラーで **[マルウェア** ] ビューを使用しているとします。 グラフの下にあるタブを使用して、**Email** タブを選択します。一覧で 1 つ以上の項目を選択すると、[**+ アクション]** ボタンがアクティブ化されます。
 
 :::image type="content" source="../../media/Explorer-Malware-Email-ActionsInvestigate.png" alt-text="選択したメッセージを含むエクスプローラー" lightbox="../../media/Explorer-Malware-Email-ActionsInvestigate.png":::
 
@@ -97,5 +97,5 @@ Microsoft Defender for Office 365の AIR 機能には、セキュリティ運用
 
 ## <a name="next-steps"></a>次の手順
 
-- [AIR を使用した概要](office-365-air.md)
+- [AIR の使用を開始する](office-365-air.md)
 - [保留中または完了した修復アクションを表示する](air-review-approve-pending-completed-actions.md)

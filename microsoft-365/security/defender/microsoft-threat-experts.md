@@ -5,7 +5,8 @@ description: Microsoft 脅威エキスパートは、Microsoft 365 Defenderに�
 keywords: マネージド脅威検出サービス、マネージド脅威ハンティング、マネージド検出と応答 (MDR) サービス、MTE、Microsoft 脅威エキスパート、エンドポイント攻撃通知、エンドポイント攻撃通知
 search.product: Windows 10
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,16 +16,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: ab8689ffa5b557b77f7c88c7c4cde6f11ac14584
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c7d8363e75df92ecfa0c85e12856678c8e32096c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328499"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476596"
 ---
 # <a name="microsoft-threat-experts-in-microsoft-365-overview"></a>Microsoft 365 のMicrosoft 脅威エキスパートの概要
 
@@ -54,6 +54,8 @@ Microsoft Defender for EndpointとMicrosoft 365 Defenderが既にある場合は
 アプリケーションが承認されると、脅威エキスパートが環境に対する脅威を検出するたびにエンドポイント攻撃通知の受信を開始します。
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft 脅威エキスパートをサブスクライブする - エキスパート オンデマンド
+> [!NOTE]
+> オンデマンドのエキスパートは、セキュリティ インシデント対応サービスではありません。 これは、組織に影響を与える複雑な脅威をより深く理解することを目的としています。 独自のセキュリティ インシデント対応チームと連携して、緊急のセキュリティ インシデント対応の問題に対処します。 独自のセキュリティ インシデント対応チームがなく、Microsoft のサポートを希望する場合は、 [Premier Services Hub](/services-hub/)![イメージでサポート リクエストを作成します](https://user-images.githubusercontent.com/11750124/187275203-87c65c03-d5c5-4fd0-a045-f795f6976336.png)
 
 エキスパート オンデマンドを購読するには、Microsoft 担当者にお問い合わせください。  詳細については、「[Microsoft 脅威エキスパート機能の構成](./configure-microsoft-threat-experts.md)」を参照してください。
 

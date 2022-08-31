@@ -1,9 +1,9 @@
 ---
 title: Microsoft Defender ウイルス対策機能を構成する
-description: Intune、Microsoft Endpoint Configuration Manager、グループ ポリシー、PowerShell を使用して、Microsoft Defender ウイルス対策機能を構成できます。
+description: Intune、Microsoft Endpoint Configuration Manager、グループ ポリシー、PowerShell を使用して Microsoft Defender ウイルス対策機能を構成できます。
 keywords: Microsoft Defender ウイルス対策, マルウェア対策, セキュリティ, Defender, 構成, 構成, Config Manager, Microsoft Endpoint Configuration Manager, SCCM, Intune, MDM, モバイル デバイス管理, GP, グループ ポリシー, PowerShell
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 8271f6d0fcc58ce5a7e1ce08f6034a8a90afab48
-ms.sourcegitcommit: 18bc521a88b7b521bccb0e69d02deac764218087
+ms.openlocfilehash: c0950ead64f39dced48bbdea0e242bdc1d8fe3b6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/16/2022
-ms.locfileid: "66115457"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479534"
 ---
 # <a name="configure-microsoft-defender-antivirus-features"></a>Microsoft Defender ウイルス対策機能を構成する
 
@@ -35,9 +35,9 @@ ms.locfileid: "66115457"
 **プラットフォーム**
 - Windows
 
-次のようなさまざまなツールを使用してMicrosoft Defender ウイルス対策を構成できます。
+Microsoft Defender ウイルス対策は、次のようなさまざまなツールを使用して構成できます。
 
-- Microsoft エンドポイント マネージャー (Microsoft IntuneとMicrosoft Endpoint Configuration Managerを含む)
+- Microsoft エンドポイント マネージャー (Microsoft Intuneと Microsoft Endpoint Configuration Managerを含む)
 - グループ ポリシー
 - PowerShell コマンドレット
 - Windows Management Instrumentation (WMI)
@@ -45,13 +45,13 @@ ms.locfileid: "66115457"
 
 次の広範な機能カテゴリを構成できます。
 
-- クラウド配信の保護。 [クラウド配信の保護とMicrosoft Defender ウイルス対策を](cloud-protection-microsoft-defender-antivirus.md)参照してください
+- クラウド配信の保護。 [クラウド配信保護と Microsoft Defender ウイルス対策を](cloud-protection-microsoft-defender-antivirus.md)参照してください
 
 - 行動、ヒューリスティック、機械学習ベースの保護を含む、常時オンのリアルタイム保護。 [動作、ヒューリスティック、およびリアルタイム保護の構成に関する](configure-protection-features-microsoft-defender-antivirus.md)ページを参照してください。
 
 - エンド ユーザーが個々のエンドポイントでクライアントと対話する方法。 以下のリソースを参照してください。
-  - [ユーザーがMicrosoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする](prevent-end-user-interaction-microsoft-defender-antivirus.md)
-  - [ユーザーがMicrosoft Defender ウイルス対策ポリシー設定をローカルで変更できないようにまたは許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+  - [ユーザーが Microsoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないようにする](prevent-end-user-interaction-microsoft-defender-antivirus.md)
+  - [ユーザーが Microsoft Defender ウイルス対策ポリシー設定をローカルで変更できないようにするか許可する](configure-local-policy-overrides-microsoft-defender-antivirus.md)
 
 > [!TIP]
 > [管理ツールと構成ツールのリファレンス トピックを確認](configuration-management-reference-microsoft-defender-antivirus.md)します。

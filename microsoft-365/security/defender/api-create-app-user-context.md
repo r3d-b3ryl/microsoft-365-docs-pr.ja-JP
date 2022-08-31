@@ -3,7 +3,8 @@ title: ユーザーの代わりにMicrosoft 365 Defender API にアクセスす�
 description: ユーザーの代わりにMicrosoft 365 Defender API にアクセスする方法について説明します。
 keywords: access, ユーザーに代わって, API, アプリケーション, ユーザー, アクセス トークン, トークン,
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 41f2763d73bbb9ed0b7ae32dce431cb2c1a4d71f
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: b7fa369729873b21b3e775b3b3fdb2e26c9130f6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102594"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479446"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>ユーザーの代わりにMicrosoft 365 Defender API にアクセスするアプリを作成する
 
@@ -41,9 +41,9 @@ ms.locfileid: "66102594"
 
 このページでは、1 人のユーザーに代わってMicrosoft 365 Defenderにプログラムでアクセスするアプリケーションを作成する方法について説明します。
 
-ユーザーが定義されていないMicrosoft 365 Defenderにプログラムでアクセスする必要がある場合 (たとえば、バックグラウンド アプリやデーモンを作成している場合)、[ユーザーなしでMicrosoft 365 Defenderにアクセスするアプリの作成に関するページを](api-create-app-web.md)参照してください。 大規模な組織や顧客のグループにサービスを提供している場合など、複数のテナントにアクセス権を提供する必要がある場合は、「[Microsoft 365 Defender API へのパートナー アクセス権を持つアプリを作成する」を](api-partner-access.md)参照してください。必要なアクセスの種類がわからない場合は、[概要](api-access.md)を参照してください。
+ユーザーが定義されていないMicrosoft 365 Defenderにプログラムでアクセスする必要がある場合 (たとえば、バックグラウンド アプリやデーモンを作成している場合)、[ユーザーなしでMicrosoft 365 Defenderにアクセスするアプリの作成に関するページを](api-create-app-web.md)参照してください。 大規模な組織や顧客のグループにサービスを提供している場合など、複数のテナントにアクセス権を提供する必要がある場合は、「[Microsoft 365 Defender API へのパートナー アクセス権を持つアプリを作成する」を](api-partner-access.md)参照してください。必要なアクセスの種類がわからない場合は、「[作業の開始](api-access.md)」を参照してください。
 
-Microsoft 365 Defenderは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、ワークフローを自動化し、Microsoft 365 Defenderの機能を利用するのに役立ちます。 この API アクセスには、OAuth2.0 認証が必要です。 詳細については、「[OAuth 2.0 Authorization Code Flow」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
+Microsoft 365 Defenderは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、ワークフローを自動化し、Microsoft 365 Defenderの機能を利用するのに役立ちます。 この API アクセスには、OAuth2.0 認証が必要です。 詳細については、「 [OAuth 2.0 承認コード フロー」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
 
 一般に、これらの API を使用するには、次の手順を実行する必要があります。
 
@@ -67,7 +67,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
 1. **グローバル管理者** ロールを持つユーザーとして [Azure](https://portal.azure.com) にサインインします。
 
-2. **Azure Active Directory** > **アプリの登録** > **新しい登録** に移動します。
+2. **Azure Active Directory** >  **に移動アプリの登録** > **新しい登録**。
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Azure portalの [管理] ウィンドウの [新しい登録] オプション" lightbox="../../media/atp-azure-new-app2.png":::
 
@@ -105,7 +105,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-Azure Active Directory トークンの詳細については、[Azure AD のチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
+Azure Active Directory トークンの詳細については、 [Azure AD のチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
 
 ### <a name="get-an-access-token-on-behalf-of-a-user-using-powershell"></a>PowerShell を使用してユーザーに代わってアクセス トークンを取得する
 

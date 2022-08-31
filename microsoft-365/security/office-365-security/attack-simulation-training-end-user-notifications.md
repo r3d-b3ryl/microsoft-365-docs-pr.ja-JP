@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理者は、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニング用のエンド ユーザー通知電子メール メッセージを作成する方法について説明します。
-ms.technology: mdo
-ms.openlocfilehash: b26c8060fb869ea9e02ab06396a5a91281bcf3f0
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: 管理者は、Microsoft Defender for Office 365 プラン 2 で攻撃シミュレーション トレーニングのエンド ユーザー通知電子メール メッセージを作成する方法について説明します。
+ms.subservice: mdo
+ms.openlocfilehash: 6297fafeb572c807a49161b1bd3e11a0820b7686
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65839269"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481066"
 ---
 # <a name="end-user-notifications-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのエンドユーザー通知
 
@@ -26,14 +26,14 @@ ms.locfileid: "65839269"
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
-Microsoft 365 E5またはMicrosoft Defender for Office 365プラン 2 の攻撃シミュレーション トレーニングでは、エンドユーザー通知は[、シミュレーション](attack-simulation-training.md)または[シミュレーションの自動化](attack-simulation-training-simulation-automations.md)の結果としてユーザーに送信される電子メール メッセージです。 次の種類のエンド ユーザー通知を使用できます。
+Microsoft 365 E5またはMicrosoft Defender for Office 365プラン 2 の攻撃シミュレーション トレーニングでは、エンドユーザーの通知は[、シミュレーション](attack-simulation-training.md)または[シミュレーションの自動化](attack-simulation-training-simulation-automations.md)の結果としてユーザーに送信される電子メール メッセージです。 次の種類のエンド ユーザー通知を使用できます。
 
 - **肯定的な強化通知**: ユーザーがシミュレートされたフィッシング メッセージを報告したときに送信されます。
 - **シミュレーション通知**: ユーザーがシミュレーションまたはシミュレーションの自動化に含まれているが、トレーニングが選択されていない場合に送信されます。
 - **トレーニングの割り当て通知**: シミュレーションまたはシミュレーションの自動化の結果として、ユーザーに必要なトレーニングが割り当てられたときに送信されます。
 - **トレーニングリマインダー通知**: 必要なトレーニングのリマインダーとして送信されます。
 
-利用可能なエンド ユーザー通知を表示するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、**電子メール &コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ** タブ\>に移動し、**エンド ユーザー通知** を選択します。 [ **シミュレーション コンテンツ ライブラリ** ] タブに直接移動し、 **エンド ユーザー通知** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+利用可能なエンド ユーザー通知を表示するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、**Email &コラボレーション** \> **攻撃シミュレーション トレーニング** \> **Simulation コンテンツ ライブラリ** タブ\>に移動し、**エンド ユーザー通知** を選択します。 [ **シミュレーション コンテンツ ライブラリ** ] タブに直接移動し、 **エンド ユーザー通知** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **エンド ユーザー通知** には、次の 2 つのタブがあります。
 
@@ -79,7 +79,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365プラン 2 の攻撃�
 
 ## <a name="create-end-user-notifications"></a>エンド ユーザー通知を作成する
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ**] タブ\>に移動し、**エンド ユーザー通知** を選択します。 [ **シミュレーション コンテンツ ライブラリ** ] タブに直接移動し、 **エンド ユーザー通知** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**Email & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ**] タブ\>に移動し、[**エンド ユーザー通知**] を選択します。 [ **シミュレーション コンテンツ ライブラリ** ] タブに直接移動し、 **エンド ユーザー通知** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 2. [ **テナント通知** ] タブで、[新規作成] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **新規に作成** して、エンド ユーザー通知ウィザードを開始します。
 
@@ -104,7 +104,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365プラン 2 の攻撃�
    - **これを既定の言語としてマーク** します。通知の最初で唯一の言語であるため、この値は選択され、変更できません。
    - **件名**: 既定値は **フィッシングを報告していただきありがとうございます** が、変更できます。
    - **電子メールのインポート**: 必要に応じてこのボタンをクリックし、[ **ファイルの選択** ] をクリックして、既存のプレーンテキスト メッセージ ファイルをインポートできます。
-   - 電子メール コンテンツ領域: 次の 2 つのタブを使用できます。
+   - Emailコンテンツ領域: 次の 2 つのタブを使用できます。
      - **[テキスト** ] タブ: リッチ テキスト エディターを使用して、通知メールを作成できます。 一般的なフォントと書式設定に加えて、次の設定を使用できます。
        - **動的タグ**: 次のタグから選択します。
          - **名を挿入する**
@@ -191,4 +191,4 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365プラン 2 の攻撃�
 
 [フィッシング攻撃シミュレーションを作成する](attack-simulation-training.md)
 
-[攻撃シミュレーション トレーニングのシミュレーション自動化](attack-simulation-training-simulation-automations.md)
+[攻撃シミュレーション トレーニングのシミュレーションの自動化](attack-simulation-training-simulation-automations.md)

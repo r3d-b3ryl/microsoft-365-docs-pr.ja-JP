@@ -1,9 +1,10 @@
 ---
-title: Microsoft 365 Defenderのプレビュー機能
+title: Microsoft 365 Defender のプレビュー機能
 description: Microsoft 365 セキュリティの新機能について学ぶ
 keywords: プレビュー、新規、m365 セキュリティ、セキュリティ、365、機能
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 6693fc853370e1c5b2cd2f3ae09f54da2af14ca8
-ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
+ms.openlocfilehash: 724ddc1c4958811609e6b442f781f4e3371c0edb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "60162244"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479712"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defenderプレビュー機能
 
@@ -55,7 +55,7 @@ Microsoft 365 Defender プレビュー リリースの新機能について説�
 
 ## <a name="required-permissions"></a>必要なアクセス許可
 
-次のAzure Active Directory (Azure AD) ロールが割り当てられているアカウントは、プレビュー機能Microsoft 365 Defender有効にすることができます。
+次の Azure Active Directory (Azure AD) ロールが割り当てられたアカウントは、プレビュー機能Microsoft 365 Defender有効にすることができます。
 
 - グローバル管理者
 - セキュリティ管理者

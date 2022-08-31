@@ -18,16 +18,16 @@ search.appverid:
 - MOE150
 - MET150
 description: アクティビティ エクスプローラーを使用すると、ラベル付きコンテンツに対してユーザーが実行しているアクションを表示およびフィルター処理できます。
-ms.openlocfilehash: 06e77cf567c34f49da7206dd22f030ddb35e6b3d
-ms.sourcegitcommit: d1f51dbd12ceffe6a6aeebffde0f9a744486f2d4
+ms.openlocfilehash: 0091c1b48544f4e693554901aec5ef645b5a908c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67417392"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478621"
 ---
 # <a name="get-started-with-activity-explorer"></a>アクティビティ エクスプローラーの使用を開始する
 
-[データ分類の概要](data-classification-overview.md)と[コンテンツ エクスプローラー](data-classification-content-explorer.md)のタブを使用すると、検出およびラベル付けされたコンテンツとそのコンテンツの場所を確認できます。 アクティビティ エクスプローラーでは、ラベル付きコンテンツに対して実行される内容を監視できるようにすることで、こうした一連の機能性を完全なものにします。 アクティビティ エクスプローラーは、ラベル付けされたコンテンツに対するアクティビティの履歴ビューを提供します。 アクティビティ情報は、Microsoft 365 統合監査ログから収集され、変換され、アクティビティ エクスプローラー UI で使用できるようになります。 アクティビティ エクスプローラーでは、最大 30 日間分のデータが報告されます。
+[データ分類の概要](data-classification-overview.md)と[コンテンツ エクスプローラー](data-classification-content-explorer.md)のタブを使用すると、検出およびラベル付けされたコンテンツとそのコンテンツの場所を確認できます。 [アクティビティ エクスプローラーは](https://compliance.microsoft.com/dataclassification?viewid=activitiesexplorer) 、ラベル付けされたコンテンツで何が行われているかを監視できるようにすることで、この一連の機能を切り捨てられます。 アクティビティ エクスプローラーは、ラベル付けされたコンテンツに対するアクティビティの履歴ビューを提供します。 アクティビティ情報は、Microsoft 365 統合監査ログから収集され、変換され、アクティビティ エクスプローラー UI で使用できるようになります。 アクティビティ エクスプローラーでは、最大 30 日間分のデータが報告されます。
 
 ![プレースホルダースクリーンショットの概要アクティビティ エクスプローラー。](../media/data-classification-activity-explorer-1.png)
 

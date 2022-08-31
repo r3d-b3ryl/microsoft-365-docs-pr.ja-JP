@@ -2,7 +2,7 @@
 title: コマンドラインを使用して Microsoft Defender ウイルス対策を管理する
 description: Microsoft Defender ウイルス対策スキャンを実行し、専用のコマンドライン ユーティリティを使用して次世代の保護を構成します。
 keywords: windows defender scan を実行、コマンド ラインからウイルス対策スキャンを実行、コマンド ライン、mpcmdrun、defender
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -12,15 +12,15 @@ ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
 ms.date: 05/24/2021
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
-ms.openlocfilehash: d459c87f7d996d70d37e84f4e21bc261c720b443
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
-ms.translationtype: HT
+ms.openlocfilehash: 311f015495dad909451e89e69e93112390710cd5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418678"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479932"
 ---
 # <a name="configure-and-manage-microsoft-defender-antivirus-with-the-mpcmdrunexe-command-line-tool"></a>mpcmdrun.exe コマンドライン ツールを使用して Microsoft Defender Antivirus を構成および管理する
 

@@ -1,10 +1,11 @@
 ---
 title: Microsoft Defender for Office 365の高度なハンティングの例
-description: 高度な捜索を使用して電子メールの脅威を検索する概要
+description: 高度な捜索を使用して電子メールの脅威の検索を開始する
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 04e4fd2267cc3774e9a816539f0de044ae988dfb
-ms.sourcegitcommit: 4af23696ff8b44872330202fe5dbfd2a69d9ddbf
+ms.openlocfilehash: 014802107d564fc24cf5e50a7513c390dcc943d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "61221186"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480064"
 ---
 # <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365の高度なハンティングの例
 
@@ -43,10 +43,10 @@ ms.locfileid: "61221186"
    - マルウェア対策
    - フィッシング詐欺対策
    - スパム対策
-2. 名前に 'セーフ' を含むすべてを設定します。
+2. 名前に "安全" を含むすべてを設定します。
    - 安全なリンク
    - 安全な添付ファイル
-3. ワークロードを保護する (例: SharePoint Online、OneDrive、およびTeams)。
+3. ワークロードを保護する (例: SharePoint Online、OneDrive、Teams)。
 4. ゼロ時間の自動消去で保護します。
 
 [リンク](../office-365-security/protect-against-threats.md)をクリックすると、一気にジャンプして、第 1 日目から使用できる構成を入手できます。
@@ -73,7 +73,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/ah-query-example-new.png" alt-text="クエリ パネルの上部にある [高度な検索] ページ ([ハンティング] の下) でクエリを選択し、Kusto クエリを実行して、過去 7 日間の ZAP アクションをキャプチャします。" lightbox="../../media/ah-query-example-new.png":::
+:::image type="content" source="../../media/ah-query-example-new.png" alt-text="クエリ パネルの上部で [クエリ] が選択され、Kusto クエリを実行して過去 7 日間の ZAP アクションをキャプチャする [高度なハンティング] ページ ([ハンティング] の下)。" lightbox="../../media/ah-query-example-new.png":::
 
 このクエリのデータは、クエリ自体の下の結果パネルに表示されます。 結果には、カスタマイズ可能な結果セットに 'DeviceName', 'AccountDisplayName'、および 'ZapTime' が含まれています。 ユーザーの記録用に、結果をエクスポートすることもできます。 クエリがもう一度必要な場合は、**[保存する]** > **[以下の名前で保存する]** の順に選択し、クエリ、共有クエリ、またはコミュニティ クエリの一覧にそのクエリを追加します。
 

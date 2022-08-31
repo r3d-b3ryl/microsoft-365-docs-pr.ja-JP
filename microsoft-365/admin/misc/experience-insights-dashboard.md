@@ -8,16 +8,17 @@ ms.topic: overview
 ms.service: o365-administration
 ms.localizationpriority: medium
 description: 組織内のユーザーが Microsoft 365 サービスを使用する方法に関する定期的なレポートを取得し、詳細な分析情報を得るために各グラフを詳しく調べてください。
-ms.openlocfilehash: 4894eb931f392d4d760e15e37f33e8a1f8d88a0d
-ms.sourcegitcommit: f1b3ecde15e5cbbeadaf51b2cadb6b1d677fc265
+ms.openlocfilehash: daedfcee251619df1adb1d228b13036150dea35d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67437738"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475444"
 ---
 # <a name="microsoft-365-experience-insights-dashboard"></a>Microsoft 365 Experience insights ダッシュボード
 
-エクスペリエンス分析情報 (プレビュー) ダッシュボードには、使用状況とセンチメントに関するデータが表示され、Microsoft 365 での組織のエクスペリエンスをより詳細に把握できます。 ダッシュボード上のこの情報とデータは、Microsoft 365 でのユーザー エクスペリエンスの理解と向上に役立ちます。 ダッシュボードには、使用状況とユーザーセンチメントに関するデータが表示され、ユーザーの全体的なエクスペリエンスの全体像を把握するのに役立ちます。 特定のアプリの機能の使用状況、正確なフィードバック、NET の推進スコア (NPS) コメント、組織内のユーザーが表示したトップ ヘルプ記事など、特定の情報をドリルダウンできます。 この情報は、組織内のユーザーの Microsoft 365 製品とアプリ エクスペリエンスを向上させる機会を特定するのに役立ちます。
+エクスペリエンス分析情報 (プレビュー) ダッシュボードには、使用状況とセンチメントに関するデータが表示され、Microsoft 365 での組織のエクスペリエンスをより詳細に把握できます。
+エクスペリエンス分析情報は、データ量が多い組織向けに最適化されているため、20,000 以上のシートを持つ組織でのみ使用できます。 今後、小規模な組織にエクスペリエンスを提供することに取り組んでいます。 この情報とダッシュボード上のデータは、Microsoft 365 でのユーザーエクスペリエンスの理解と向上に役立ちます。 ダッシュボードには、使用状況とユーザーセンチメント全体のデータが表示され、ユーザーの全体的なエクスペリエンスの全体像を把握するのに役立ちます。 特定のアプリの機能の使用状況、正確なフィードバック、NET の推進スコア (NPS) コメント、組織内のユーザーが表示したトップ ヘルプ記事など、特定の情報をドリルダウンできます。 この情報は、組織内のユーザーの Microsoft 365 製品とアプリ エクスペリエンスを向上させる機会を特定するのに役立ちます。
 
 <!--To learn more about adoption and training for users in your organization, see [Experience insights help article report](experience-insights-help-articles.md). -->
 

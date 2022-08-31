@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderを使用したインシデント対応
 description: Microsoft 365 Defender ポータルで、デバイス、ユーザー、メールボックス間で発生したインシデントを調査します。
 keywords: インシデント, アラート, 調査, 分析, 応答, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 9a8d2e5533afe8d9a7d5dd2effe1646de8dc974d
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: a797d0c96c708bd69b275cb5f9dfb7bbd669e367
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328917"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478753"
 ---
 # <a name="incident-response-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用したインシデント対応
 

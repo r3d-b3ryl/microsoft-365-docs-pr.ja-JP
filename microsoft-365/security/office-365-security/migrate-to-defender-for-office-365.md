@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365solution-mdo-migration
+- highpri
 ms.custom: ''
 description: サードパーティの保護サービスや Google Postini、Barracuda Spam and Virus Firewall、Cisco IronPort などのデバイスから保護をMicrosoft Defender for Office 365に移行する正しい方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 21194b32b394fec57f8055207ca3a840a2462ac8
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: d833f264fc222a5199f3a2406f85cbe8108aadbd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969444"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479865"
 ---
 # <a name="migrate-from-a-third-party-protection-service-or-device-to-microsoft-defender-for-office-365"></a>サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365に移行する
 
@@ -58,7 +59,7 @@ Defender for Office 365を優先して既存の保護サービスを排除する
 
 ## <a name="why-use-the-steps-in-this-guide"></a>このガイドの手順を使用する理由
 
-IT 業界では、驚きは一般的に悪い。 以前の思慮深いテストを行わずに、MX レコードを反転して Microsoft 365 を指すようにするだけで、多くの驚きが生じます。 例:
+IT 業界では、驚きは一般的に悪い。 以前の思慮深いテストを行わずに、MX レコードを反転して Microsoft 365 を指すようにするだけで、多くの驚きが生じます。 以下に例を示します。
 
 - ユーザーまたは先行ユーザーは、既存の保護サービスをカスタマイズして最適なメール配信を行うために多くの時間と労力を費やしている可能性があります (つまり、ブロックする必要があるものをブロックし、許可する必要がある内容を許可します)。 Defender for Office 365では、現在の保護サービスのすべてのカスタマイズが必要であるとは言えないことがほぼ確実です。 また、Defender for Office 365では、現在の保護サービスで発生しなかった、または必要とされなかった新しい問題 (許可またはブロック) が導入される可能性も非常に高くなります。
 - ヘルプ デスクとセキュリティ担当者は、Defender for Office 365で何をすべきかを知る必要があります。 たとえば、ユーザーが不足しているメッセージについて不平を言った場合、ヘルプ デスクは、そのメッセージの場所や検索方法を知っていますか? 既存の保護サービスのツールに精通している可能性がありますが、Defender for Office 365のツールについてはどうでしょうか?

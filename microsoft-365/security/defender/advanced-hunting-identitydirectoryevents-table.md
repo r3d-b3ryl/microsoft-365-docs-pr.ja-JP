@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの IdentityDirectoryEvents
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, IdentityDirectoryEvents, ドメイン コントローラー, Active Directory, Microsoft Defender for Identity, ID
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b7d880e0865ebeaf09e40fc543abba37566d2081
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 9665ff301396d9b3c4f31ed51f17ffbd45f06113
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531812"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481308"
 ---
 # <a name="identitydirectoryevents"></a>IdentityDirectoryEvents
 
@@ -36,7 +36,7 @@ ms.locfileid: "61531812"
 `IdentityDirectoryEvents` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Active Directory (AD) を実行しているオンプレミス ドメイン コントローラーに関連するイベントが含まれています。 この表では、パスワードの変更、パスワードの有効期限、ユーザー プリンシパル名 (UPN) の変更など、さまざまな ID 関連イベントをキャプチャします。 また、タスクのスケジュール設定や PowerShell アクティビティなど、ドメイン コントローラー上のシステム イベントもキャプチャします。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (`ActionType`値) の詳細については、Defender for Cloudで使用できる組み込みのスキーマ参照を使用します。
+> テーブルでサポートされているイベントの種類 (`ActionType` 値) の詳細については、Defender for Cloud で使用できる組み込みのスキーマ参照を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -56,7 +56,7 @@ ms.locfileid: "61531812"
 | `AccountDomain` | `string` | アカウントのドメイン |
 | `AccountUpn` | `string` | アカウントのユーザー プリンシパル名 (UPN) |
 | `AccountSid` | `string` | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | `string` | Azure Active Directoryのアカウントの一意識別子 |
+| `AccountObjectId` | `string` | Azure Active Directory のアカウントの一意識別子 |
 | `AccountDisplayName` | `string` | アドレス帳に表示されるアカウント ユーザーの名前。 通常、特定の名前または名、中間の開始、姓または姓の組み合わせ。 |
 | `DeviceName` | `string` | デバイスの完全修飾ドメイン名 (FQDN) |
 | `IPAddress` | `string` | 通信中にデバイスに割り当てられた IP アドレス |

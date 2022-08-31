@@ -3,7 +3,8 @@ title: Microsoft Defender for Endpoint評価を有効にする
 description: ライセンス状態の確認やエンドポイントのオンボードなど、Microsoft 365 Defender試用版ラボまたはパイロット環境を有効にする
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 0e3cd7a16b45a7dfd78011d7753866069d3144dc
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: d441c2c5d985ebf19a20af68ce9924106b5259c6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748871"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480385"
 ---
 # <a name="enable-microsoft-defender-for-endpoint-evaluation-environment"></a>Microsoft Defender for Endpoint評価環境を有効にする
 

@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、プラン 2 で指定した条件が満たされたときに起動する特定の手法とペイロードを含む自動シミュレーションMicrosoft Defender for Office 365作成する方法について説明します。
-ms.technology: mdo
-ms.openlocfilehash: 0b2a177947384d456b2e9a93f6252a98c879458f
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.openlocfilehash: 0099373996cee691eacab8b6469d368d711128eb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409138"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476146"
 ---
 # <a name="simulation-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのシミュレーションの自動化
 

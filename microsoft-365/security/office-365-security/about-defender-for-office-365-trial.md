@@ -6,8 +6,8 @@ author: chrisda
 manager: dansimp
 audience: Admin
 ms.topic: overview
-ms.prod: m365-security
-ms.technology: mdo
+ms.service: microsoft-365-security
+ms.subservice: mdo
 ms.localizationpriority: medium
 search.appverid:
 - MET150
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
 description: 管理者は、Microsoft Defender for Office 365の試用版モードについて学習できます
-ms.openlocfilehash: 9cce1e910f5497ce2dfe265923f66e87306fb90e
-ms.sourcegitcommit: fa90763559239c4c46c5e848939126763879d8e4
+ms.openlocfilehash: 883e91227ccf99835d85ea5253f89d765c3693df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/13/2022
-ms.locfileid: "66773259"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481374"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Microsoft Defender for Office 365試用版について
 
@@ -43,7 +43,7 @@ Microsoft Defender for Office 365試用版は、数回クリックするだけ�
 |機能|説明|
 |---|---|
 |[フィッシング対策ポリシーの排他的設定](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|ユーザー偽装保護、ドメイン偽装保護、メールボックス インテリジェンス、高度なフィッシングのしきい値を取得します。|
-|[安全な添付ファイル](safe-attachments.md)|制御された爆発環境内の電子メールの添付ファイルやその他のファイルを調べて、新しいマルウェアや回避するマルウェアをキャッチします。|
+|[添付ファイル保護](safe-attachments.md)|制御された爆発環境内の電子メールの添付ファイルやその他のファイルを調べて、新しいマルウェアや回避するマルウェアをキャッチします。|
 |[リンク保護](safe-links.md)|クリック時間チェックを実行して、初期検査に合格した可能性のある URL が武器化されていないことを確認します。|
 |[脅威トラッカー](threat-trackers.md)<sup>\*</sup>|有益なウィジェットとビューを使用して、組織に影響を与える可能性のあるサイバーセキュリティの問題を特定します。|
 |[脅威エクスプローラー](threat-explorer.md)<sup>\*</sup>|Office 365メール内の脅威に関するほぼリアルタイムの情報を使用してハントします。|

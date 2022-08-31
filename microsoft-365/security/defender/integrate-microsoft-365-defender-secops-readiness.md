@@ -3,7 +3,8 @@ title: 手順 2.  ゼロ トラスト Framework を使用して SOC 統合準備
 description: Microsoft 365 Defenderをセキュリティ操作に統合するときに、ゼロ トラスト Framework を使用して SOC 統合準備評価を実行する基本。
 keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 1197edf14977c0232936531399d726f62ab70889
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 7f67deb65b6add98a4a3a5b6953a4bf9f4a7ca63
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63314309"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481264"
 ---
 # <a name="step-2-perform-a-soc-integration-readiness-assessment-using-the-zero-trust-framework"></a>手順 2。 ゼロ トラスト Framework を使用して SOC 統合準備性評価を実行する
 
@@ -52,6 +52,6 @@ SOC でプロセスを完全に最適化するために修復する必要があ�
 
 導入手順とユース ケースの作成については、手順 3 と 4 で説明します。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 [手順 3.MICROSOFT 365 DEFENDERサービスの SOC カタログとの統合を計画する](integrate-microsoft-365-defender-secops-services.md)

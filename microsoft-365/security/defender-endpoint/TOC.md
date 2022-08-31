@@ -298,7 +298,6 @@
 ### 次世代の保護
 #### [次世代保護の概要](next-generation-protection.md)
 ##### [Microsoft Defender ウイルス対策の概要](microsoft-defender-antivirus-windows.md)
-##### [Windows の Microsoft Defender ウイルス対策](microsoft-defender-antivirus-windows.md)
 ##### [Windows Server で Microsoft Defender ウイルス対策を有効にして更新する](enable-update-mdav-to-latest-ws.md)
 ##### [ベストな組み合わせ: Microsoft Defender Antivirus および Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
 ##### [ベストな組み合わせ: Microsoft Defender ウイルス対策と Office 365](office-365-microsoft-defender-antivirus.md)
@@ -523,6 +522,10 @@
 ####### [ソフトウェア在庫評価のエクスポート](get-assessment-software-inventory.md)
 ####### [製品コード以外のソフトウェア在庫評価のエクスポート](get-assessment-non-cpe-software-inventory.md)
 ####### [ソフトウェアの脆弱性評価のエクスポート](get-assessment-software-vulnerabilities.md)
+
+###### [ブラウザー拡張機能]()
+####### [broswer extenstions 評価をエクスポートする](get-assessment-browser-extensions.md)
+####### [ブラウザーの更新に関するパーミソン情報を取得する](get-browser-extensions-permission-info.md)
 
 ###### [自動調査]()
 ####### [調査メソッドとプロパティ](investigation.md)

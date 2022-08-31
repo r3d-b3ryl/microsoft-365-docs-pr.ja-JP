@@ -4,7 +4,8 @@ description: DeviceFromIP() 関数を使用して、特定の IP アドレスが
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, デバイス, devicefromIP, 関数, エンリッチメント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4a1f1198c247aefbcbb093d1a5f5105704255692
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 62df7a7c7bbf61c176d69b115f88bddae09fa04f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531581"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479402"
 ---
 # <a name="devicefromip"></a>DeviceFromIP()
 

@@ -1,6 +1,6 @@
 ---
-title: 小売業界向けのMicrosoft 365ソリューション
-description: Microsoft 365を使用した小売業界向けのソリューションとアーキテクチャのリソースについて説明します
+title: 小売業界向けの Microsoft 365 ソリューション
+description: Microsoft 365 を使用した小売業界向けのソリューションとアーキテクチャのリソースについて説明します
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -12,16 +12,16 @@ ms.collection:
 - M365-subscription-management
 - M365solutions
 f1.keywords: NOCSH
-ms.openlocfilehash: b91cfa6469a74a4d9c041acfb84c823f7367619c
-ms.sourcegitcommit: bae72428d229827cba4c807d9cd362417afbcccb
+ms.openlocfilehash: 45dd2c1e723d865bcb80107126e4eb4a4f5d42d2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "62321856"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480671"
 ---
-# <a name="microsoft-365-solutions-for-the-retail-industry"></a>小売業界向けのMicrosoft 365ソリューション
+# <a name="microsoft-365-solutions-for-the-retail-industry"></a>小売業界向けの Microsoft 365 ソリューション
 
-Microsoft は、小売組織が顧客にサービスを提供し、注文をフルフィルメントし、サプライ チェーンを管理し、小売チームがタスクのトップを維持し、連携できるように支援する多くの機能を提供しています。 Microsoft は、小売業界向けの包括的なプラットフォームである Microsoft Cloud for Retail も提供しています。これには、Microsoft 365、Dynamics 365、Microsoft Azureのコンポーネントが含まれています。 小売環境の近代化とデジタル変革は、絶えず変化する経済に追いつくために重要です。
+Microsoft は、小売組織が顧客にサービスを提供し、注文をフルフィルメントし、サプライ チェーンを管理し、小売チームがタスクのトップを維持し、連携できるように支援する多くの機能を提供しています。 Microsoft は、Microsoft 365、Dynamics 365、Microsoft Azure のコンポーネントを含む小売業界向けの包括的なプラットフォームMicrosoft Cloud for Retailも提供しています。 小売環境の近代化とデジタル変革は、絶えず変化する経済に追いつくために重要です。
 
 <br>
 
@@ -35,14 +35,13 @@ Microsoft 365、Dynamics 365、Azure を使用して、リテール ソリュー
 
 |関連情報 |説明  |
 |---------|---------|
-|[リテール向けのTeams](/microsoftteams/expand-teams-across-your-org/teams-for-retail-landing-page)    |  Microsoft 365とMicrosoft Teamsには、小売組織の日常業務とデジタル変革に役立ついくつかの機能が用意されています。 <br>- 店内と店舗間の通信 <br>- 仮想の建具とコンサルテーション <br>- ビジネス プロセスを簡略化する <br>- 企業のコミュニケーション <br>- 新入社員のオンボーディング    |
-|[Microsoft Cloud for Retail](/industry/retail/overview)  | Microsoft Cloud for Retail について説明し、小売業者の既存のシステムと統合する信頼できる小売業界ソリューションを提供することで、ビジネスの成長を加速させる方法について説明します。     |
+|[小売店向け Microsoft 365](../frontline/teams-for-retail-landing-page.md)    |  Microsoft 365 と Microsoft Teams では、小売店の組織の日常業務やデジタル変革に役立ついくつもの機能を提供しています。 <br>- 店内と店舗間の通信 <br>- 仮想の建具とコンサルテーション <br>- ビジネス プロセスを簡略化する <br>- 企業のコミュニケーション <br>- 新入社員のオンボーディング    |
+|[Microsoft Cloud for Retail](/industry/retail/overview)  | 小売業者の既存のシステムと統合する信頼できる小売業界ソリューションを提供することで、Microsoft Cloud for Retailとビジネスの成長を加速させる方法について説明します。     |
 |[リテール向けの Azure アーキテクチャとソリューション](/azure/architecture/industries/retail)| Microsoft Azure サービスを使用して、小売業界向け Azure Solutions でリテール ソリューションをデジタル化、最新化、強化する方法について説明します。 |
-| | |
 
 ## <a name="videos-you-can-share-with-your-team"></a>チームと共有できるビデオ
 
-Microsoft Cloud for Retail について説明します。
+Microsoft Cloud for Retailについて説明します。
 
 <br>
 
@@ -50,7 +49,7 @@ Microsoft Cloud for Retail について説明します。
 
 <br>
 
-Microsoft Teamsと Microsoft Cloud for Retail とのリアルタイム ストア通信とコラボレーションを仲間に提供する方法について説明します。
+Microsoft Teams とMicrosoft Cloud for Retailとのリアルタイム ストア通信とコラボレーションを仲間に提供する方法について説明します。
 
 <br>
 

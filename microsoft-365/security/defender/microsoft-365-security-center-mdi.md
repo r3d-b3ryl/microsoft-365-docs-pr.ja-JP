@@ -2,7 +2,8 @@
 title: Microsoft 365 DefenderのMicrosoft Defender for Identity
 description: Microsoft Defender for IdentityからMicrosoft 365 Defenderへの変更について説明します
 keywords: Microsoft 365 Defender、Microsoft Defender for Identity、NDI の概要
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -19,12 +20,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.openlocfilehash: 76044b7451014cc578800b6e1726556688d9db14
-ms.sourcegitcommit: 7e551fa4e9b8b25ed62b5f406143b6b1dae08cbf
+ms.openlocfilehash: a8ec7ceaa052b1f0043004a0109b1e3aba74493f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/01/2022
-ms.locfileid: "67107285"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480175"
 ---
 # <a name="microsoft-defender-for-identity-in-microsoft-365-defender"></a>Microsoft 365 DefenderのMicrosoft Defender for Identity
 
@@ -43,7 +44,7 @@ Microsoft Defender for Identityは、id に焦点を当てた情報を、Microso
 
 次の表に、Microsoft Defender for IdentityとMicrosoft 365 Defender間のナビゲーションの変更を示します。
 
-| **Defender for** 同一性  | **Microsoft 365 Defender**                                   |
+| **Defender for** Id  | **Microsoft 365 Defender**                                   |
 | -------------------------- | ------------------------------------------------------------ |
 | タイムライン                   | Microsoft 365 Defender アラート/インシデント キュー                |
 | レポート                    | [従来の Defender for Identity ポータル](/defender-for-identity/classic-workspace-portal)に残ります。 <br> カスタマイズされたレポートは、[高度な捜索](#advanced-hunting-new)を使用してMicrosoft 365 Defender ポータルで作成できます。               |
@@ -52,9 +53,9 @@ Microsoft Defender for Identityは、id に焦点を当てた情報を、Microso
 | [グループ] ページ                 | Microsoft 365 Defender グループのサイド ウィンドウ                      |
 | [アラート] ページ                 | Microsoft 365 Defender アラート ページ                            |
 | 検索                     | Microsoft 365 Defender検索                                |
-| 保健所              | 設定 -> ID -> センサー                            |
+| ヘルス センター              | 設定 -> ID -> センサー                            |
 | エンティティ アクティビティ          | 高度な追及                                             |
-| 設定                   | 設定 -> ID                                       |
+| Settings                   | 設定 -> ID                                       |
 | ユーザーとアカウント         | 資産 -> ID                                         |
 | ID セキュリティ体制  | [Microsoft Defender for Identityのセキュリティ体制評価](/defender-for-identity/security-assessment) |
 | 新しいワークスペースのオンボード | 設定 -> ID (自動的)                       |

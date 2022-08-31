@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合、ユーザーがサインインできないように侵害されたと思われる場合は、ユーザー アカウントをブロックする方法について説明します。
-ms.openlocfilehash: b9e02ba0696d76ec58ec880e12001cdc6800430c
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 27cfcff4fd3d56a276e1499d8241395f48551003
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056508"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477981"
 ---
 # <a name="block-user-sign-in-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでユーザー サインインをブロックする
 
@@ -30,7 +30,7 @@ ms.locfileid: "67056508"
 
 ## <a name="block-sign-in-for-a-user"></a>ユーザーのサインインをブロックする
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****検索ユーザー** > ] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****アカウント管理** >**検索ユーザー** > ] を選択します。
 
 2. [ **検索ユーザー** ] タブで、検索ボックスにユーザーの名前を入力します。
 
@@ -46,7 +46,7 @@ ms.locfileid: "67056508"
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **リスクの高いユーザー**] を選択します。
 
-2. [ **危険なユーザー** ] タブで、アクションを実行するユーザーのセットを選択します。
+2. [ **危険なユーザー]** ページで、アクションを実行するユーザーのセットを選択します。
 
 3. [ **サインインのブロック**] を選択します。
 

@@ -2,7 +2,7 @@
 title: Android 用 Microsoft Defender for Endpoint - プライバシー情報
 description: プライバシー制御、Android 上のMicrosoft Defender for Endpointで収集された診断データに関するプライバシーと情報に影響を与えるポリシー設定を構成する方法。
 keywords: microsoft, defender, Microsoft Defender for Endpoint, android, privacy, diagnostic
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -13,13 +13,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
-ms.openlocfilehash: 6772539f4ca4ea819a0f8cd2a92a817fcea650f3
-ms.sourcegitcommit: 7fd1bcbd8246501029837e3ea92adea64c3406e1
+ms.subservice: mde
+ms.openlocfilehash: 204d4c4bb2549d78b601e1e91c31ace16edf475a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "62295136"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475506"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Android 用 Microsoft Defender for Endpoint - プライバシー情報
 
@@ -47,7 +47,7 @@ Android および iOS モバイル デバイスのMicrosoft Defender for Endpoin
 デバイス上の **悪意のある** Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
 
 - ソースのインストール
-- APK のStorage場所 (ファイル パス)
+- APK のストレージの場所 (ファイル パス)
 - インストールの時間、APK のサイズ、アクセス許可
 
 Android Enterprise フル マネージド デバイスの場合 - デバイスにインストールされている Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
@@ -56,7 +56,7 @@ Android Enterprise フル マネージド デバイスの場合 - デバイス�
 - アプリのバージョン番号
 - ベンダー名
 
-仕事用プロファイルを持つ Android Enterpriseの場合 - デバイスの Work プロファイルにインストールされている Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
+仕事用プロファイルを持つ Android Enterprise の場合 - デバイスの Work プロファイルにインストールされている Android アプリケーション パッケージ (APK) に関する情報 (以下を含む)
 
 - アプリの名前とパッケージ名
 - アプリのバージョン番号
@@ -80,10 +80,10 @@ Android Enterprise フル マネージド デバイスの場合 - デバイス�
   - ランダムに生成されたグローバル一意識別子 (GUID)。
 
 - テナント、デバイス、ユーザーの情報
-  - Azure Active Directory (AD) デバイス ID と Azure ユーザー ID: デバイスを一意に識別します。Azure Active directory のユーザーはそれぞれです。
-  - Azure テナント ID: Azure Active Directory内の組織を識別する GUID。
+  - Azure Active Directory (AD) デバイス ID と Azure ユーザー ID: デバイスをそれぞれ Azure Active Directory のユーザーとして一意に識別します。
+  - Azure テナント ID: Azure Active Directory 内の組織を識別する GUID。
   - Microsoft Defender for Endpoint組織 ID: デバイスが属する企業に関連付けられている一意の識別子。 Microsoft は、問題が一連の企業に影響を与えているかどうか、および影響を受ける企業の数を特定できます。
-  - ユーザー プリンシパル名: ユーザーの電子メール ID
+  - ユーザー プリンシパル名: ユーザーのEmail ID
 
 ### <a name="product-and-service-usage-data"></a>製品とサービスの使用状況データ
 

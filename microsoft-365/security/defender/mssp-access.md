@@ -2,7 +2,8 @@
 title: マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスを提供する
 description: Microsoft Defender セキュリティ センターからMicrosoft 365 Defender ポータルへの変更について説明します
 keywords: Microsoft 365 Defender ポータル、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、ガラスの単一ウィンドウ、コンバージド ポータル、セキュリティ ポータル、Defender セキュリティ ポータルの概要
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -17,12 +18,12 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 3df43fd4de6bd040db0acd13678434c7302aff5d
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 58f5076cd29383b4eb37231df5704a92176ca6f8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050757"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480868"
 ---
 # <a name="provide-managed-security-service-provider-mssp-access"></a>マネージド セキュリティ サービス プロバイダー (MSSP) へのアクセスを提供する 
 

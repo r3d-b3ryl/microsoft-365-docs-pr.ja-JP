@@ -15,14 +15,14 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: seo-marvel-apr2020
 description: 管理者は、Microsoft 365 Defender ポータルで申請ポータルを使用して、ブロックされた正当なメール、疑わしい電子メール、疑わしいフィッシングメール、スパム、その他の潜在的に有害なメッセージ、URL、電子メールの添付ファイルを再スキャン用に Microsoft に送信する方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 692bef65a37f1411952e3848147913a64daf72a1
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b5b54a0d6d8e760d392578997461be44a19cf92a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67393039"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480539"
 ---
 # <a name="use-the-submissions-portal-to-submit-suspected-spam-phish-urls-legitimate-email-getting-blocked-and-email-attachments-to-microsoft"></a>送信ポータルを使用して、疑わしいスパム、フィッシング、URL、ブロックされる正当なメール、および電子メールの添付ファイルを Microsoft に送信する
 
@@ -124,7 +124,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、管�
 
 2. [**申請] ページで**、[**Email添付ファイル**] タブを選択します。
 
-3. **[Email添付ファイル**] タブで、[分析のために Microsoft に送信] アイコンをクリックします![。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
+3. [**Email添付ファイル**] タブで、[分析のために Microsoft に送信] のアイコンをクリックします![。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
 
 4. 表示される **分析ポップアップの [Microsoft に送信]** で、次の情報を入力します。
 
@@ -166,7 +166,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、管�
 
 2. [ **申請] ページで** 、[ **URL** ] タブを選択します。
 
-3. [ **URL] タブで** 、[分析のために Microsoft に送信] アイコンをクリックします ![。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
+3. [ **URL] タブで** 、[分析の追加] ボタンで [Microsoft に送信] をクリック ![します。](../../media/m365-cc-sc-create-icon.png) **分析のために Microsoft に送信します**。
 
 4. 表示される **分析ポップアップの [Microsoft に送信]** に、次の情報を入力します。
 
@@ -441,7 +441,7 @@ Exchange Online メールボックスを持つ Microsoft 365 組織では、管�
 
 Microsoft にメッセージを送信せずにユーザーから報告されたメッセージをインターセプトするようにカスタム メールボックスを構成した場合は、分析のために特定のメッセージを見つけて Microsoft に送信できます。
 
-[ **ユーザーから報告されたメッセージ** ] タブで、一覧でメッセージを選択し、[分析のために Microsoft に送信] アイコンをクリックします ![。](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **分析のために Microsoft に送信** し、ドロップダウン リストから次のいずれかの値を選択します。
+[ **ユーザーから報告されたメッセージ** ] タブで、一覧からメッセージを選択し、[分析の追加] アイコンで [Microsoft に送信] をクリックします ![。](../../media/m365-cc-sc-submit-user-reported-message-icon.png) **分析のために Microsoft に送信** し、ドロップダウン リストから次のいずれかの値を選択します。
 
 - **クリーンなレポート**
 - **フィッシングを報告する**

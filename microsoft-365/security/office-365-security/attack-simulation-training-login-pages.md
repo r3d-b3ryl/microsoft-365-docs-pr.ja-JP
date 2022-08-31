@@ -5,19 +5,19 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 でシミュレートされたフィッシング攻撃のログイン ページを作成および管理する方法について説明します。
-ms.technology: mdo
-ms.openlocfilehash: 7057f443675cb0715a41f78c80feb69cdc75d22c
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.subservice: mdo
+ms.openlocfilehash: d0a129bfdd43009a854bffea27a18717bf95df7b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66994500"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480153"
 ---
 # <a name="login-pages-in-attack-simulation-training"></a>攻撃シミュレーション トレーニングのログイン ページ
 
@@ -25,7 +25,7 @@ ms.locfileid: "66994500"
 
 Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングでは、ログイン ページは、**添付ファイル**[ソーシャル エンジニアリング手法](attack-simulation-training.md#select-a-social-engineering-technique)で **資格情報の収集** とリンクを使用するシミュレーションでユーザーに表示されます。
 
-使用可能なログイン ページを表示するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、**コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ** タブ\>Email &移動し、**ログイン ページ** を選択します。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動し、**ログイン ページ** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+使用可能なログイン ページを表示するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、**Email & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **Simulation コンテンツ ライブラリ** タブ\>に移動し、**ログイン ページ** を選択します。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動し、**ログイン ページ** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 
 **ログイン ページ** には、次の 2 つのタブがあります。
 
@@ -39,7 +39,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃
 
 ログイン ページごとに次の情報が表示されます。
 
-- **[名前]**
+- **名前**
 - **Language**
 - **ソース**: 組み込みのログイン ページの場合、値は **グローバルです**。 カスタム ログイン ページの場合、値は **テナントです**。
 - **状態**: **準備完了** または **下書き**。
@@ -67,7 +67,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃
 
 ## <a name="create-login-pages"></a>ログイン ページを作成する
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>**[Email & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ**] タブ\>に移動し、[**ログイン ページ**] を選択します。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動し、**ログイン ページ** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**Email & コラボレーション** \> **攻撃シミュレーション トレーニング** \> **シミュレーション コンテンツ ライブラリ**] タブ\>に移動し、[**ログイン ページ**] を選択します。 **[シミュレーション コンテンツ ライブラリ**] タブに直接移動し、**ログイン ページ** を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=simulationcontentlibrary>.
 カスタム ログイン ページは、次の場所に作成できます。
 
    [新規作成] アイコンをクリック ![します。](../../media/m365-cc-sc-create-icon.png) **新規作成** して、エンド ユーザーのログイン ページの作成ウィザードを開始します。
@@ -173,7 +173,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃
 >
 > 既定のログイン ページも一覧にマークされていますが、 **表示するには [名前]** 列を広げる必要がある場合があります。
 >
-> ![攻撃シミュレーション トレーニングのログイン ページの一覧にマークされた既定のログイン ページ。](../../media/attack-sim-training-login-pages-default.png)
+> ![攻撃シミュレーション トレーニングのログイン ページの一覧でマークされた既定のログイン ページ。](../../media/attack-sim-training-login-pages-default.png)
 
 ## <a name="related-links"></a>関連リンク
 
@@ -181,4 +181,4 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365 プラン 2 の攻撃
 
 [フィッシング攻撃シミュレーションを作成する](attack-simulation-training.md)
 
-[攻撃シミュレーション トレーニングのシミュレーション自動化](attack-simulation-training-simulation-automations.md)
+[攻撃シミュレーション トレーニングのシミュレーションの自動化](attack-simulation-training-simulation-automations.md)

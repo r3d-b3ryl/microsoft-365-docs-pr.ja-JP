@@ -13,24 +13,25 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 - m365solution-ransomware
-description: Microsoft 365管理者は、ランサムウェア攻撃から回復する方法を学習できます。
+- highpri
+description: Microsoft 365 管理者は、ランサムウェア攻撃から回復する方法を学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 328457e37ea6ae351abb2c5d5f0089246145b32c
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: 23cc51d34244ebdb0d37141879df25da7e8429df
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648659"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481132"
 ---
-# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365でのランサムウェア攻撃から回復する
+# <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Microsoft 365 でのランサムウェア攻撃から回復する
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-組織を保護するためにあらゆる予防措置を講じても、 [ランサムウェア](/windows/security/threat-protection/intelligence/ransomware-malware) 攻撃の被害を受ける可能性があります。 ランサムウェアは大きなビジネスであり、今日の脅威環境では、高度[な攻撃のターゲット](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)が増え続けていますMicrosoft 365。
+組織を保護するためにあらゆる予防措置を講じても、 [ランサムウェア](/windows/security/threat-protection/intelligence/ransomware-malware) 攻撃の被害を受ける可能性があります。 ランサムウェアは大きなビジネスであり、今日の脅威の状況では、Microsoft 365 は [高度な攻撃の絶](https://i.blackhat.com/USA21/Wednesday-Handouts/us-21-Cloudy-With-A-Chance-Of-APT-Novel-Microsoft-365-Attacks-In-The-Wild.pdf)えず増加するターゲットです。
 
 この記事の手順では、データを回復し、感染の内部拡散を停止する最適な機会を提供します。 開始する前に、次の項目を考慮する必要があります。
 
@@ -44,7 +45,7 @@ ms.locfileid: "65648659"
 
 ## <a name="step-1-verify-your-backups"></a>手順 1: バックアップを確認する
 
-オフライン バックアップがある場合は、環境からランサムウェア ペイロード (マルウェア) を削除し、Microsoft 365環境に不正アクセスがないことを確認した **後** に、暗号化 **されたデータを** 復元できる可能性があります。
+オフライン バックアップがある場合は、環境からランサムウェア ペイロード (マルウェア) を削除した **後** 、および Microsoft 365 環境に不正アクセスがないことを確認した **後** に、暗号化されたデータを復元できる可能性があります。
 
 バックアップがない場合、またはバックアップがランサムウェアの影響を受けた場合は、この手順をスキップできます。
 
@@ -62,7 +63,7 @@ ms.locfileid: "65648659"
 
 - [ユーザーの POP3 または IMAP4 アクセスを有効または無効にする](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
 
-OneDrive 同期を一時停止すると、感染する可能性のあるデバイスによってクラウド データが更新されないように保護できます。 詳細については、「[OneDriveで同期を一時停止および再開する方法](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)」を参照してください。
+OneDrive 同期を一時停止すると、感染する可能性のあるデバイスによってクラウド データが更新されないように保護できます。 詳細については、「 [OneDrive で同期を一時停止および再開する方法](https://support.microsoft.com/office/2152bfa4-a2a5-4d3a-ace8-92912fb4421e)」を参照してください。
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>手順 3: 影響を受けるデバイスからマルウェアを削除する
 
@@ -70,7 +71,7 @@ OneDrive 同期を一時停止すると、感染する可能性のあるデバ�
 
 データを同期しているデバイスや、マップされたネットワーク ドライブのターゲットを必ずスキャンしてください。
 
-[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)または (古いクライアントの場合) [Microsoft Security Essentials](https://www.microsoft.com/download/details.aspx?id=5201)を使用できます。
+[Windows Defender](https://www.microsoft.com/windows/comprehensive-security)または (古いクライアントの場合) [Microsoft Security Essentials を](https://www.microsoft.com/download/details.aspx?id=5201)使用できます。
 
 ランサムウェアやマルウェアの削除にも役立つ代替手段として、 [悪意のあるソフトウェア削除ツール (MSRT) があります](https://www.microsoft.com/download/details.aspx?id=9905)。
 
@@ -78,21 +79,21 @@ OneDrive 同期を一時停止すると、感染する可能性のあるデバ�
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>手順 4: クリーニングされたコンピューターまたはデバイス上のファイルを回復する
 
-環境からランサムウェア ペイロードを削除する前の手順を完了すると (ランサムウェアによるファイルの暗号化または削除が防止されます)、Windows 11、Windows 10、Windows 8.1で[ファイル履歴](https://support.microsoft.com/help/17128)を使用し、Windows 7 の System Protection を使用してローカル ファイルとフォルダーの回復を試みることができます。
+環境からランサムウェア ペイロードを削除する前の手順を完了したら (ランサムウェアによるファイルの暗号化または削除を防ぎます)、Windows 11、Windows 10、Windows 8.1で[ファイル履歴](https://support.microsoft.com/help/17128)を使用し、Windows 7 の System Protection を使用してローカル ファイルとフォルダーの回復を試みることができます。
 
 **注**:
 
-- 一部のランサムウェアではバックアップ バージョンも暗号化または削除されるため、ファイル履歴または System Protection を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアやOneDriveの影響を受けなかった外部ドライブまたはデバイスでバックアップを使用する必要があります。
+- 一部のランサムウェアではバックアップ バージョンも暗号化または削除されるため、ファイル履歴または System Protection を使用してファイルを復元することはできません。 その場合は、次のセクションで説明するように、ランサムウェアや OneDrive の影響を受けなかった外部ドライブまたはデバイスでバックアップを使用する必要があります。
 
-- フォルダーがOneDriveに同期されていて、最新バージョンのWindowsを使用していない場合は、ファイル履歴の使用にいくつかの制限がある可能性があります。
+- フォルダーが OneDrive に同期されていて、最新バージョンの Windows を使用していない場合は、ファイル履歴の使用にいくつかの制限がある可能性があります。
 
 ## <a name="step-5-recover-your-files-in-your-onedrive-for-business"></a>手順 5: OneDrive for Business内のファイルを回復する
 
-OneDrive for Businessファイルの復元では、過去 30 日以内にOneDrive全体を以前の時点に復元できます。 詳細については、「[OneDrive を復元する](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)」を参照してください。
+OneDrive for Businessファイルの復元では、過去 30 日以内に OneDrive 全体を以前の時点に復元できます。 詳細については、「[OneDrive を復元する](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15)」を参照してください。
 
 ## <a name="step-6-recover-deleted-email"></a>手順 6: 削除されたメールを回復する
 
-ランサムウェアによってすべてのメールが削除されたというまれなケースでは、削除されたアイテムを回復できる可能性があります。 詳細については、以下を参照してください。
+ランサムウェアによってすべてのメールが削除されたというまれなケースでは、削除されたアイテムを回復できる可能性があります。 詳細については、以下を参照してください:
 
 - [ユーザーのメールボックス内の削除済みメッセージを復元する](/exchange/recipients-in-exchange-online/manage-user-mailboxes/recover-deleted-messages)
 
@@ -155,7 +156,7 @@ Microsoft 365:
 - [Microsoft 365 テナントにランサムウェア保護を展開する](/microsoft-365/solutions/ransomware-protection-microsoft-365)
 - [Azure と Microsoft 365 を使用してランサムウェアの回復性を最大化する](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [ランサムウェアからWindows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [ランサムウェアから Windows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [SharePoint Online でのランサムウェアの処理](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)ポータルでのランサムウェアの脅威分析レポート
 
@@ -168,7 +169,7 @@ Microsoft Azure
 - [ランサムウェア攻撃に対する Azure 防御](https://azure.microsoft.com/resources/azure-defenses-for-ransomware-attack/)
 - [Azure と Microsoft 365 を使用してランサムウェアの回復性を最大化する](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [ランサムウェアから保護するためのバックアップと復元の計画](/security/compass/backup-plan-to-protect-against-ransomware)
-- [Microsoft Azure Backup を使用したランサムウェアからの保護に役立つ](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 分間のビデオ)
+- [Microsoft Azure Backupによるランサムウェアからの保護に役立つ](https://www.youtube.com/watch?v=VhLOr2_1MCg) (26 分間のビデオ)
 - [体系的な ID 侵害からの回復](/azure/security/fundamentals/recover-from-identity-compromise)
 - [Microsoft Sentinel での高度な多段階攻撃検出](/azure/sentinel/fusion#ransomware)
 - [Microsoft Sentinel でのランサムウェアのフュージョン検出](https://techcommunity.microsoft.com/t5/azure-sentinel/what-s-new-fusion-detection-for-ransomware/ba-p/2621373)

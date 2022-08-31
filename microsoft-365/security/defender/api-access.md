@@ -3,7 +3,8 @@ title: Microsoft 365 Defender API にアクセスする
 description: Microsoft 365 Defender API にアクセスする方法について説明します
 keywords: access, apis, アプリケーション コンテキスト, ユーザー コンテキスト, aad アプリケーション, アクセス トークン
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: a8406c0ec27c238615b25f60b988efbb50a8d7d7
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 0562ff901aa8021973fb1ed36e8caf464f22d672
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172237"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481572"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Microsoft 365 Defender API にアクセスする
 
@@ -48,7 +48,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 - トークンを使用してMicrosoft 365 Defender API にアクセスする
 
 > [!NOTE]
-> API アクセスには、OAuth2.0 認証が必要です。 詳細については、「[OAuth 2.0 Authorization Code Flow」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
+> API アクセスには、OAuth2.0 認証が必要です。 詳細については、「 [OAuth 2.0 承認コード フロー」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
 
 これらの手順を完了したら、特定のコンテキストを使用してMicrosoft 365 Defender API にアクセスする準備が整いました。
 
@@ -68,7 +68,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
 このコンテキストを使用して、1 人のユーザーに代わってアクションを実行します。
 
-1. Azure Active Directoryネイティブ アプリケーションを作成します。
+1. Azure Active Directory ネイティブ アプリケーションを作成します。
 2. 目的のアクセス許可をアプリケーションに割り当てます。
 3. アプリケーションのユーザー資格情報を使用してセキュリティ トークンを取得します。
 4. トークンを使用して、Microsoft 365 Defender API にアクセスします。
@@ -79,7 +79,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
 [複数のテナント](/azure/active-directory/develop/single-and-multi-tenant-apps)にまたがる多くのユーザーにアプリを提供する必要がある場合は、このコンテキストを使用します。
 
-1. Azure Active Directoryマルチテナント アプリケーションを作成します。
+1. Azure Active Directory マルチテナント アプリケーションを作成します。
 2. 目的のアクセス許可をアプリケーションに割り当てます。
 3. 各テナントからアプリの [管理者の同意](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) を取得します。
 4. 顧客のテナント ID に基づいて、ユーザー資格情報を使用してセキュリティ トークンを取得します。

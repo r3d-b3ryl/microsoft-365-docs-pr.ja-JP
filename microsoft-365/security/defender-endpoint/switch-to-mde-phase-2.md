@@ -18,15 +18,16 @@ ms.collection:
 - m365solution-migratetomdatp
 - m365solution-mcafeemigrate
 - m365solution-symantecmigrate
+- highpri
 ms.topic: article
 ms.custom: migrationguides
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 376bc904fabeee9b9fe2c9c91309427f28f19c5a
-ms.sourcegitcommit: 34910ea9318289d78c35b0e7990238467c05384b
+ms.openlocfilehash: 07b8c6f945cbf71a2474d7668884eeede504e2fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67306352"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480020"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Microsoft Defender for Endpoint - フェーズ 2: セットアップに切り替える
 
@@ -90,7 +91,7 @@ Defender for Endpoint への切り替えを行う際に、Microsoft Defender ウ
 |[Intune](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) <br/><br/> **注**: Intuneは Microsoft エンドポイント マネージャーの一部になりました。|1. [Microsoft エンドポイント マネージャー管理センター](https://go.microsoft.com/fwlink/?linkid=2109431)に移動し、サインインします。<br/><br/>2. [ **デバイス** \> **構成プロファイル]** を選択し、構成するプロファイルの種類を選択します。 **デバイス制限** プロファイルの種類をまだ作成していない場合、または新しいデバイス制限の種類を作成する場合は、「[Microsoft Intuneでデバイス制限設定を構成する](/intune/device-restrictions-configure)」を参照してください。<br/><br/>3. **[プロパティ**] を選択し、[**構成設定: 編集]** を選択します。<br/><br/>4. **Microsoft Defender ウイルス対策を** 展開します。<br/><br/>5. **クラウド配信保護を** 有効にします。<br/><br/>6. [ **サンプルの提出前にユーザーにプロンプトを表示** する] ドロップダウンで、[ **すべてのサンプルを自動的に送信する**] を選択します。<br/><br/>7. [ **望ましくない可能性があるアプリケーションの検出** ] ドロップダウンで、[ **有効]** または [ **監査**] を選択します。<br/><br/>8. **[確認と保存**] を選択し、[ **保存]** を選択します。 <br/><br/> **ヒント**: デバイス プロファイルの作成と構成方法など、Intuneデバイス プロファイルの詳細については、「[Microsoft Intune デバイス プロファイルとは」](/intune/device-profiles)を参照してください。|
 |[Microsoft Endpoint Configuration Manager](/mem/configmgr)|[「Configuration Managerで Endpoint Protection のマルウェア対策ポリシーを作成してデプロイ](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies)する」を参照してください。 <br/><br/> マルウェア対策ポリシーを作成して構成するときは、 [リアルタイムの保護設定](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) を確認し、 [ブロックを一目で有効に](configure-block-at-first-sight-microsoft-defender-antivirus.md)してください。
 |Windows でのコントロール パネル|こちらのガイダンスに従ってください。 [Microsoft Defender ウイルス対策を有効にします](/mem/intune/user-help/turn-on-defender-windows)。 (一部のバージョンの Windows では *、Microsoft Defender ウイルス対策* の代わりに *Windows Defender ウイルス対策* が表示される場合があります)。|
-|[高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> または <br/><br/> [グループ ポリシー管理コンソール](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. **コンピューター構成** \> **管理テンプレート** \> **Windows コンポーネント** \> **の Microsoft Defender ウイルス対策** に移動します。<br/><br/>2. **Microsoft Defender ウイルス対策を無効にする** というポリシーを探します。<br/><br/>3. [ **ポリシー設定の編集]** を選択し、ポリシーが無効になっていることを確認します。 このアクションにより、Microsoft Defender ウイルス対策が有効になります。 <br/>(一部のバージョンの Windows では *、Microsoft Defender ウイルス対策* の代わりに *Windows Defender ウイルス対策* が表示される場合があります)。|
+|[高度なグループ ポリシーの管理](/microsoft-desktop-optimization-pack/agpm/) <br/><br/> or <br/><br/> [グループ ポリシー管理コンソール](/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)|1. **コンピューター構成** \> **管理テンプレート** \> **Windows コンポーネント** \> **の Microsoft Defender ウイルス対策** に移動します。<br/><br/>2. **Microsoft Defender ウイルス対策を無効にする** というポリシーを探します。<br/><br/>3. [ **ポリシー設定の編集]** を選択し、ポリシーが無効になっていることを確認します。 このアクションにより、Microsoft Defender ウイルス対策が有効になります。 <br/>(一部のバージョンの Windows では *、Microsoft Defender ウイルス対策* の代わりに *Windows Defender ウイルス対策* が表示される場合があります)。|
 
 > [!TIP]
 > 組織のデバイスがオンボードされる前に、ポリシーを展開できます。

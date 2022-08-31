@@ -3,7 +3,8 @@ title: Microsoft 365 Defender前提条件
 description: Microsoft 365 Defenderのライセンス、ハードウェアとソフトウェアの要件、およびその他の構成設定について説明します
 keywords: 要件, 前提条件, ハードウェア, ソフトウェア, ブラウザー, Microsoft 365 Defender, M365, ライセンス, E5, A5, EMS, 購入
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 5281df5fe500907af6bb54384bb44b5a29534460
-ms.sourcegitcommit: d4797cfc15c732f1a7ef21e4f944e672a7170f9a
+ms.openlocfilehash: f7977ba847036350747347063ab1bba8f8866f53
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 02/08/2022
-ms.locfileid: "62444595"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479734"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Defender前提条件
 
@@ -61,15 +61,15 @@ ms.locfileid: "62444595"
 Microsoft 365 管理センター ([admin.microsoft.com](https://admin.microsoft.com/)) に移動して、既存のライセンスを表示します。 管理センターで、[**課金**]  >  [**ライセンス**] の順に移動します。
 
 >[!NOTE]
-> ライセンス情報を表示するには、[Azure ADで](/azure/active-directory/roles/permissions-reference)**課金管理者** ロールまたは **グローバル リーダー** ロールのいずれかを割り当てる必要があります。 アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
+> ライセンス情報を表示するには、[Azure AD で](/azure/active-directory/roles/permissions-reference)**課金管理者** ロールまたは **グローバル リーダー** ロールのいずれかを割り当てる必要があります。 アクセスの問題が発生した場合は、グローバル管理者に連絡してください。
 
 ## <a name="required-permissions"></a>必要なアクセス許可
-Microsoft 365 Defenderを有効にするには、Azure Active Directoryの **グローバル管理者** または **セキュリティ管理者** である必要があります。 Microsoft 365 Defenderを使用するために必要なロールの一覧と、データへのアクセスの規制方法に関する情報については、[Microsoft 365 Defenderへのアクセスの管理](m365d-permissions.md)に関する記事を参照してください。
+Microsoft 365 Defenderを有効にするには、Azure Active Directory の **グローバル管理者** または **セキュリティ管理者** である必要があります。 Microsoft 365 Defenderを使用するために必要なロールの一覧と、データへのアクセスの規制方法に関する情報については、[Microsoft 365 Defenderへのアクセスの管理](m365d-permissions.md)に関する記事を参照してください。
 
 ## <a name="browser-requirements"></a>ブラウザー要件
 Microsoft Edge、Internet Explorer 11、または HTML 5 準拠の Web ブラウザーを使用して、Microsoft 365 Defender ポータルでMicrosoft 365 Defenderにアクセスします。
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国GCC、GCC High、およびその他の米国政府機関への可用性
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>米国 GCC、GCC High、およびその他の米国政府機関への可用性
 
 米国政府機関のお客様に関連する情報については、「[米国政府機関のお客様向けのMicrosoft 365 Defender」を参照してください](usgov.md)。
 

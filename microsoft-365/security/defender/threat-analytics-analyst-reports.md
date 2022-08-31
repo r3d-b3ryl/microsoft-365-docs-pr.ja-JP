@@ -5,7 +5,8 @@ description: 各脅威分析レポートのアナリスト レポート セク�
 keywords: アナリスト レポート, 脅威分析, 検出, 高度な捜索クエリ, 軽減策,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,12 +21,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9f699be27f3ad0bee522a3e9d0f5550428aacc91
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: 4c90856686e09f06b45b84f1d5eeb33cb8919826
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67051494"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477365"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defenderの脅威分析のアナリスト レポートを理解する
 
@@ -105,7 +106,7 @@ Microsoft Defender for Office 365からのEmail関連の検出と軽減策は、
 >[!NOTE]
 > 脅威分析は[、Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics)でも利用できます。 ただし、Microsoft Defender for Office とMicrosoft Defender for Endpoint間のデータ統合はありません。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 
 - [脅威の分析の概要](threat-analytics.md)
 - [高度な捜索で脅威をプロアクティブに見つける](advanced-hunting-overview.md)

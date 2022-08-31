@@ -1,8 +1,9 @@
 ---
 title: 疑わしい受信トレイ転送ルールのアラート の採点
 description: 疑わしい受信トレイ転送ルールのアラート の採点。アラートを確認し、攻撃を修復してネットワークを保護するための推奨されるアクションを実行します。
-keywords: インシデント, アラート, 調査, 分析, 応答, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365
-ms.prod: m365-security
+keywords: インシデント、アラート、調査、分析、応答、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: dca305b88e6e8db25e0a798c4361086bd7cb1e8b
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: bb99643be9df5a43b65bd0d5d017ff65b4bc0426
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666022"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479468"
 ---
 # <a name="alert-grading-for-suspicious-inbox-forwarding-rules"></a>疑わしい受信トレイ転送ルールのアラート の採点
 
@@ -187,7 +187,7 @@ CloudAppEvents
 ## <a name="recommended-actions"></a>推奨処理
 
 1. 悪意のある受信トレイルールを無効にします。
-2. ユーザーのアカウント資格情報をリセットします。 また、Azure Active Directory (Azure AD) Identity Protection からセキュリティシグナルを取得するMicrosoft Defender for Cloud Appsでユーザー アカウントが侵害されているかどうかを確認することもできます。
+2. ユーザーのアカウント資格情報をリセットします。 また、Azure Active Directory (Azure AD) Identity Protection からセキュリティシグナルを取得するMicrosoft Defender for Cloud Appsでユーザー アカウントが侵害されたかどうかを確認することもできます。
 3. 影響を受けたユーザーによって実行された他の悪意のあるアクティビティを検索します。
 4. テナント内の他の疑わしいアクティビティが、同じ IP または同じ ISP から発信されたことを確認します (ISP が一般的でない場合)。
 

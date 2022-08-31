@@ -16,14 +16,14 @@ ms.collection: m365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、展開に関する考慮事項と、Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 組織での攻撃のシミュレーションとトレーニングに関してよく寄せられる質問について学習できます。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 50f82d975e9dc4f534f9223b85fd9e841a3ad725
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: f0a4bf3f408b48a4feb48ae4fad39cfe1e11420d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66490489"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480605"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>攻撃シミュレーション トレーニングの展開に関する考慮事項と FAQ
 
@@ -32,9 +32,9 @@ ms.locfileid: "66490489"
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 
-攻撃シミュレーション トレーニングを使用すると、Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 組織は、現実世界の非武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 Terranova セキュリティと連携して提供されるハイパーターゲット トレーニングは、知識を向上させ、従業員の行動を変えるのに役立ちます。
+攻撃シミュレーション トレーニングにより、Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 組織は、現実世界の非武器化されたフィッシング ペイロードを利用したフィッシング シミュレーションの作成と管理を可能にすることで、ソーシャル エンジニアリング リスクを測定および管理できます。 Terranova セキュリティと連携して提供されるハイパーターゲット トレーニングは、知識を向上させ、従業員の行動を変えるのに役立ちます。
 
-攻撃シミュレーション トレーニングの使用の詳細については、「攻撃シミュレーション トレーニングの [使用を開始](attack-simulation-training-get-started.md)する」を参照してください。
+攻撃シミュレーション トレーニングの使用の詳細については、「攻撃シミュレーション トレーニング[の使用を開始](attack-simulation-training-get-started.md)する」を参照してください。
 
 シミュレーションの作成とスケジューリングのエクスペリエンス全体が自由に流れ、摩擦を生み出さない設計になっていますが、企業規模でシミュレーションを実行するには、多くの場合、計画が必要です。 この記事は、お客様が独自の環境でシミュレーションを実行する場合に発生する特定の課題に対処するのに役立ちます。
 
@@ -42,7 +42,7 @@ ms.locfileid: "66490489"
 
 ### <a name="phishing-simulation-urls-blocked-by-google-safe-browsing"></a>Google Safe Browsing によってブロックされたフィッシング シミュレーション URL
 
-URL 評価サービスでは、攻撃シミュレーション トレーニングで使用される 1 つ以上の URL が安全でないと識別される場合があります。 Google Chrome の Google Safe Browsing では、シミュレートされたフィッシング URL の一部がブロックされ、偽装 **サイトが事前** に表示されます。 多くの URL 評価ベンダーと連携して、シミュレーション URL を常に許可していますが、完全なカバレッジがあるとは限りません。
+URL 評価サービスでは、攻撃シミュレーション トレーニングによって安全でないものとして使用される 1 つ以上の URL が識別される場合があります。 Google Chrome の Google Safe Browsing では、シミュレートされたフィッシング URL の一部がブロックされ、偽装 **サイトが事前** に表示されます。 多くの URL 評価ベンダーと連携して、シミュレーション URL を常に許可していますが、完全なカバレッジがあるとは限りません。
 
 :::image type="content" source="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png" alt-text="Google Chrome の偽サイト先行警告" lightbox="../../media/attack-sim-training-faq-chrome-deceptive-site-message.png":::
 
@@ -54,7 +54,7 @@ URL 評価サービスでは、攻撃シミュレーション トレーニング
 
 ### <a name="phishing-simulation-and-admin-urls-blocked-by-network-proxy-solutions-and-filter-drivers"></a>ネットワーク プロキシ ソリューションとフィルター ドライバーによってブロックされたフィッシング シミュレーションと管理者の URL
 
-フィッシング シミュレーション URL と管理者 URL の両方が、中間のセキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 次に例を示します。
+フィッシング シミュレーション URL と管理者 URL の両方が、中間のセキュリティ デバイスまたはフィルターによってブロックまたは削除される可能性があります。 以下に例を示します。
 
 - ファイアウォール
 - Web Application Firewall (WAF) ソリューション
@@ -62,7 +62,7 @@ URL 評価サービスでは、攻撃シミュレーション トレーニング
 
 このレイヤーでブロックされているお客様はほとんどいませんが、発生します。 問題が発生した場合は、必要に応じてセキュリティ デバイスまたはフィルターによるスキャンをバイパスするように次の URL を構成することを検討してください。
 
-- [攻撃シミュレーション トレーニングの使用の開始](attack-simulation-training-get-started.md)に関するページで説明されている、シミュレートされたフィッシング URL。
+- 「攻撃シミュレーション トレーニングの使用を開始する」の説明[に従ってシミュレートされた](attack-simulation-training-get-started.md)フィッシング URL。
 - <https://security.microsoft.com/attacksimulator>
 - <https://security.microsoft.com/attacksimulationreport>
 - <https://security.microsoft.com/trainingassignments>
@@ -77,13 +77,13 @@ URL 評価サービスでは、攻撃シミュレーション トレーニング
 
 有効なメールボックスを持つ非ゲスト ユーザーのみがシミュレーションに含まれます。 配布グループまたはメールが有効なセキュリティ グループを使用してユーザーをターゲットにする場合は、[Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) の [Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) コマンドレットを使用して、配布グループ のメンバーを表示および検証できます。
 
-## <a name="issues-with-attack-simulation-training-reporting"></a>攻撃シミュレーション トレーニング レポートに関する問題
+## <a name="issues-with-attack-simulation-training-reporting"></a>攻撃シミュレーション トレーニングレポートに関する問題
 
 ### <a name="attack-simulation-training-reports-do-not-contain-any-activity-details"></a>攻撃シミュレーション トレーニング レポートにアクティビティの詳細が含まれていない
 
-攻撃シミュレーション トレーニングには、従業員の脅威の準備状況の進行状況を常に把握できる、実用的で豊富な分析情報が付属しています。 攻撃シミュレーション トレーニング レポートにデータが入力されていない場合は、組織で監査ログ検索が有効になっていることを確認します (既定ではオンになっています)。
+攻撃シミュレーション トレーニングには、従業員の脅威の準備状況の進行状況を常に把握できる、実用的で豊富な分析情報が付属しています。 攻撃シミュレーション トレーニングレポートにデータが設定されていない場合は、組織で監査ログ検索が有効になっていることを確認します (既定ではオンになっています)。
 
-イベントをキャプチャ、記録、読み取ることができるように、攻撃シミュレーション トレーニングでは監査ログ検索が必要です。 監査ログ検索を無効にすると、攻撃シミュレーション トレーニングに次の結果が生じてしまいます。
+イベントをキャプチャ、記録、および読み戻すことができるように、監査ログ検索は攻撃シミュレーション トレーニングで必要です。 監査ログ検索を無効にすると、攻撃シミュレーション トレーニングに対して次の結果が生まれます。
 
 - レポート データは、すべてのレポートで使用できるわけではありません。 レポートは空で表示されます。
 - データを使用できないため、トレーニングの割り当てはブロックされます。
@@ -121,13 +121,13 @@ URL 評価サービスでは、攻撃シミュレーション トレーニング
 
 ### <a name="messages-reported-as-phishing-by-users-arent-appearing-in-simulation-reports"></a>ユーザーによってフィッシングとして報告されたメッセージがシミュレーション レポートに表示されない
 
-攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザー アクティビティの詳細が提供されます。 次に例を示します。
+攻撃シミュレーター トレーニングのシミュレーション レポートでは、ユーザー アクティビティの詳細が提供されます。 以下に例を示します。
 
 - メッセージ内のリンクをクリックしたユーザー。
 - 資格情報を断ち切ったユーザー。
 - メッセージをフィッシングとして報告したユーザー。
 
-ユーザーがフィッシングとして報告したメッセージが攻撃シミュレーション トレーニング シミュレーション レポートにキャプチャされない場合、報告されたメッセージの Microsoft への配信を妨げている Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) が存在する可能性があります。 メール フロー ルールによって、次のメール アドレスへの配信がブロックされていないことを確認します。
+ユーザーがフィッシングとして報告したメッセージが攻撃シミュレーション トレーニングシミュレーション レポートにキャプチャされない場合は、報告されたメッセージの Microsoft への配信を妨げている Exchange メール フロー ルール (トランスポート ルールとも呼ばれます) が存在する可能性があります。 メール フロー ルールによって、次のメール アドレスへの配信がブロックされていないことを確認します。
 
 - junk@office365.microsoft.com
 - abuse@messaging.microsoft.com
@@ -181,7 +181,7 @@ A: はい、 新しいシミュレーションを作成するためのウィザ�
 
 ### <a name="q-can-i-target-users-that-belong-to-a-different-tenant-as-part-of-the-same-simulation-campaign"></a>Q: 同じシミュレーション キャンペーンの一環として、別のテナントに属するユーザーをターゲットにできますか?
 
-A: いいえ。 現在、テナント間シミュレーションはサポートされていません。 対象となるすべてのユーザーが同じテナント内にあることを確認します。 クロステナント ユーザーまたはゲスト ユーザーは、シミュレーション キャンペーンから除外されます。
+回答: いいえ。 現在、テナント間シミュレーションはサポートされていません。 対象となるすべてのユーザーが同じテナント内にあることを確認します。 クロステナント ユーザーまたはゲスト ユーザーは、シミュレーション キャンペーンから除外されます。
 
 ### <a name="q-how-does-region-aware-delivery-work"></a>Q: リージョン対応の配信のしくみ
 
@@ -198,4 +198,4 @@ A: リージョン対応の配信では、ターゲット ユーザーのメー�
 
 ### <a name="q-does-microsoft-collect-or-store-any-information-that-users-enter-at-the-credential-harvest-sign-in-page-used-in-the-credential-harvest-simulation-technique"></a>Q: Microsoft では、資格情報の収集シミュレーション手法で使用される資格情報の収集サインイン ページでユーザーが入力した情報を収集または保存しますか?
 
-A: いいえ。 資格情報の収集ログイン ページに入力されたすべての情報は、サイレント モードで破棄されます。 侵害イベントをキャプチャするために記録されるのは、"クリック" のみです。 Microsoft は、この手順でユーザーが入力した詳細を収集、記録、または保存しません。
+回答: いいえ。 資格情報の収集ログイン ページに入力されたすべての情報は、サイレント モードで破棄されます。 侵害イベントをキャプチャするために記録されるのは、"クリック" のみです。 Microsoft は、この手順でユーザーが入力した詳細を収集、記録、または保存しません。

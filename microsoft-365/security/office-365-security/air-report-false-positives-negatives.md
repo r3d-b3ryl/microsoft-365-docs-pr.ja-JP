@@ -10,7 +10,7 @@ f1.keywords:
 - NOCSH
 author: dansimp
 ms.author: dansimp
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.date: 01/29/2021
 ms.localizationpriority: medium
 manager: dansimp
@@ -21,17 +21,17 @@ ms.collection:
 ms.topic: how-to
 ms.custom:
 - autoir
-ms.technology: mdo
-ms.openlocfilehash: 4b1de0e19cbf241936aa02f957cdd0920f2a580a
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.subservice: mdo
+ms.openlocfilehash: 0b48a5d954bb77a8982fa09d03d3acc103973430
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63682485"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67478665"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>自動調査と応答機能で誤検知/否定を報告する方法
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
@@ -47,13 +47,13 @@ Office 365の[自動調査と対応 (AIR) 機能で](automated-investigation-res
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>分析のために Microsoft に誤検知/否定を報告する
 
-メール メッセージ、電子メールの添付ファイル、メール メッセージの URL、Office ファイル内の URL が見つからないMicrosoft Defender for Office 365場合は[、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信して、スキャンをOffice 365](admin-submission.md)できます。
+メール メッセージ、電子メールの添付ファイル、電子メール メッセージの URL、Office ファイル内の URL が見つからないMicrosoft Defender for Office 365場合は[、疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信して、スキャンをOffice 365](admin-submission.md)できます。
 
 [マルウェア分析のために Microsoft にファイルを送信](https://www.microsoft.com/wdsi/filesubmission)することもできます。
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>誤検知が繰り返されないようにアラートを調整する
 
-アラートが正当な使用によってトリガーされた場合、またはアラートが不正確な場合は、[Defender for Cloud Apps ポータルでアラートを管理](/cloud-app-security/managing-alerts)できます。
+アラートが正当な使用によってトリガーされた場合、またはアラートが不正確な場合は、 [Defender for Cloud Apps ポータルでアラートを管理](/cloud-app-security/managing-alerts)できます。
 
 組織がOffice 365に加えて[Microsoft Defender for Endpoint](/windows/security/threat-protection)を使用していて、ファイル、IP アドレス、URL、またはドメインがデバイス上のマルウェアとして扱われる場合は、安全であっても、[デバイスに対して "許可" アクションを使用してカスタム インジケーターを作成](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)できます。
 
@@ -70,7 +70,7 @@ Office 365の[自動調査と対応 (AIR) 機能で](automated-investigation-res
 
 |シナリオ|[元に戻す] オプション|詳細情報|
 |---|---|---|
-|電子メール メッセージがユーザーの迷惑メール フォルダーにルーティングされた|<ul><li>メッセージをユーザーの [削除済みアイテム] フォルダーに移動する</li><li>メッセージをユーザーの受信トレイに移動する</li><li>メッセージを削除</li></ul>|[Office 365で配信された悪意のあるメールを検索して調査する](investigate-malicious-email-that-was-delivered.md)|
+|ユーザーの迷惑メール Email フォルダーに電子メール メッセージがルーティングされました|<ul><li>メッセージをユーザーの [削除済みアイテム] フォルダーに移動する</li><li>メッセージをユーザーの受信トレイに移動する</li><li>メッセージを削除</li></ul>|[Office 365で配信された悪意のあるメールを検索して調査する](investigate-malicious-email-that-was-delivered.md)|
 |電子メール メッセージまたはファイルが検疫されました|<ul><li>電子メールまたはファイルを解放する</li><li> 電子メールまたはファイルを削除する</li></ul>|[検疫済みメッセージを管理者として管理する](manage-quarantined-messages-and-files.md)|
 
 ### <a name="undo-an-action-in-the-action-center"></a>アクション センターでアクションを元に戻す

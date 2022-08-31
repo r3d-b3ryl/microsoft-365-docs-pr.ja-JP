@@ -2,7 +2,8 @@
 title: 悪意のある交換コネクタのアラート評価
 description: 悪意のある交換コネクタ アクティビティから評価受信者に警告し、ネットワークを悪意のある攻撃から保護します。
 keywords: インシデント、アラート、調査、分析、応答、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: b815e088152a055b532e748c469c78065421d255
-ms.sourcegitcommit: f72ea75c6d5c1bca0e0ed8fd228d3a84c6104361
-ms.translationtype: HT
+ms.openlocfilehash: 16f168fc772e4b4c9e7f48221dbd14039690ba83
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/10/2022
-ms.locfileid: "67301946"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480235"
 ---
 # <a name="alert-grading-for-malicious-exchange-connectors"></a>悪意のある交換コネクタのアラート評価
 

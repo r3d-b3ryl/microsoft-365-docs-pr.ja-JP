@@ -1,33 +1,33 @@
 ---
-title: 攻撃シミュレーション トレーニングのペイロード自動化
+title: 攻撃シミュレーション トレーニングのペイロードオートメーション
 ms.author: chrisda
 author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: 管理者は、ペイロードの自動化 (ペイロード の収集) を使用して、Microsoft Defender for Office 365プラン 2 で攻撃シミュレーション トレーニングの自動シミュレーションを収集して起動する方法を学習できます。
-ms.technology: mdo
-ms.openlocfilehash: bc7bba0d91e9b2ff1f9baddc52f717450660d070
-ms.sourcegitcommit: a7cd723fd62b4b0aae9c2c2df04ead3c28180084
+description: 管理者は、ペイロードの自動化 (ペイロード の収集) を使用して、Microsoft Defender for Office 365 プラン 2 で攻撃シミュレーション トレーニングの自動シミュレーションを収集して起動する方法を学習できます。
+ms.subservice: mdo
+ms.openlocfilehash: 340ca76086e7696017e1433433a5294a8003b225
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65838915"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480473"
 ---
-# <a name="payload-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのペイロード自動化
+# <a name="payload-automations-for-attack-simulation-training"></a>攻撃シミュレーション トレーニングのペイロードオートメーション
 
 [!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 [Microsoft Defender for Office 365プラン 2](defender-for-office-365.md) **に適用されます**
 
-Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 の攻撃シミュレーション トレーニングでは、ペイロードの自動化 (_ペイロード の収集_ とも呼ばれます) は、組織内のユーザーによって報告された実際のフィッシング攻撃メッセージから情報を収集します。 これらのメッセージの数は組織内では少ない可能性がありますが、フィッシング攻撃で検索する条件 (受信者、ソーシャル エンジニアリング手法、送信者情報など) を指定できます。 その後、攻撃シミュレーション トレーニングは、攻撃で使用されるメッセージとペイロードを模倣して、対象ユーザーに無害なシミュレーションを自動的に起動します。
+Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 の攻撃シミュレーション トレーニングでは、ペイロードの自動化 (_ペイロード の収集_ とも呼ばれます) は、組織内のユーザーによって報告された実際のフィッシング攻撃メッセージから情報を収集します。 これらのメッセージの数は組織内では少ない可能性がありますが、フィッシング攻撃で検索する条件 (受信者、ソーシャル エンジニアリング手法、送信者情報など) を指定できます。 攻撃シミュレーション トレーニングは、攻撃で使用されたメッセージとペイロードを模倣して、対象ユーザーに無害なシミュレーションを自動的に起動します。
 
-使用可能なペイロードの自動化を表示するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、[**電子メール & コラボレーション** \> **攻撃シミュレーショントレーニング** \> **オートメーション**] タブ\>に移動し、[**ペイロードの自動化**] を選択します。 [ **Automations** ] タブに直接移動し、[ **ペイロードの自動化**] を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
+使用可能なペイロードの自動化を表示するには、Microsoft 365 Defender ポータル<https://security.microsoft.com>を開き、**Email &コラボレーション** \> **攻撃シミュレーション トレーニング** \> **[Automations**] タブ\>に移動し、[**ペイロードの自動化**] を選択します。 [ **Automations** ] タブに直接移動し、[ **ペイロードの自動化**] を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
 ペイロードの自動化ごとに、次の情報が表示されます。
 
@@ -46,7 +46,7 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 の攻撃シ�
 
 ペイロードオートメーションを作成するには、次の手順に従います。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com/>[**電子メール & コラボレーション** \> **の攻撃シミュレーション トレーニング** \> **自動化**] タブの **[ペイロードの自動化**] タブに移動します\>。 [ **Automations** ] タブに直接移動し、[ **ペイロードの自動化**] を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com/>[**Automations**] タブ **の [****ペイロードの自動化**] **攻撃シミュレーション トレーニングEmail &**\>コラボレーション\>に移動します\>。 [ **Automations** ] タブに直接移動し、[ **ペイロードの自動化**] を選択するには、 <https://security.microsoft.com/attacksimulator?viewid=automations>.
 
    [オートメーションの作成] アイコンをクリック ![します。](../../media/m365-cc-sc-create-icon.png) **自動化を作成します**。
 
@@ -125,6 +125,6 @@ Microsoft 365 E5またはMicrosoft Defender for Office 365計画 2 の攻撃シ�
 
 [攻撃シミュレーション トレーニングの使用を開始する](attack-simulation-training-get-started.md)
 
-[攻撃シミュレーション トレーニングのシミュレーション自動化](attack-simulation-training-simulation-automations.md)
+[攻撃シミュレーション トレーニングのシミュレーションの自動化](attack-simulation-training-simulation-automations.md)
 
 [攻撃シミュレーション トレーニングを通して洞察を得る](attack-simulation-training-insights.md)

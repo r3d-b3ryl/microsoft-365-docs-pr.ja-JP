@@ -3,7 +3,7 @@ title: 更新プログラムのコンプライアンスと Microsoft Defender �
 description: Microsoft Defender ウイルス対策評価アドインを使用する場合は、ツールを使用してデータを収集し、Update Compliance の問題のトラブルシューティングを行います。
 keywords: トラブルシューティング、エラー、修正、更新プログラムのコンプライアンス、oms、モニター、レポート、Microsoft Defender AV、Microsoft Defender ウイルス対策
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ ms.custom: nextgen
 ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: article
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 84a0d069d2f4f87d2884f3d70b6c6e88a07b4868
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: b21201d5b3a24c570819ac903eb3a38058c362c8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388839"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479822"
 ---
 # <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-antivirus-assessment"></a>Microsoft Defender ウイルス対策評価の更新プログラムコンプライアンス診断データを収集する
 

@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの DeviceProcessEventstabl
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, processcreationevents, DeviceProcessEvents, プロセス ID, コマンド ライン, DeviceProcessEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 9bd0b658141395ac09d530dfecfa29befa892fcc
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 5f250c18a8bacb728143ada220a09525f4f1f6b1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531377"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67476838"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -39,7 +39,7 @@ ms.locfileid: "61531377"
 `DeviceProcessEvents` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、プロセスの作成と関連イベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 >[!TIP]
-> テーブルでサポートされているイベントの種類 (`ActionType`値) の詳細については、Defender for Cloudで使用できる組み込みのスキーマ参照を使用します。
+> テーブルでサポートされているイベントの種類 (`ActionType` 値) の詳細については、Defender for Cloud で使用できる組み込みのスキーマ参照を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -63,22 +63,22 @@ ms.locfileid: "61531377"
 | `ProcessVersionInfoFileDescription` | `string` | 新しく作成されたプロセスのバージョン情報からの説明 |
 | `ProcessId` | `int` | 新しく作成されたプロセスのプロセス ID (PID) |
 | `ProcessCommandLine` | `string` | 新しいプロセスの作成に使用されるコマンド ライン |
-| `ProcessIntegrityLevel` | `string` | 新しく作成されたプロセスの整合性レベル。 Windowsは、ダウンロードしたインターネットから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
+| `ProcessIntegrityLevel` | `string` | 新しく作成されたプロセスの整合性レベル。 Windows では、ダウンロードされたインターネットから起動された場合など、特定の特性に基づいてプロセスに整合性レベルが割り当てられます。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
 | `ProcessTokenElevation` | `string` | 新しく作成されたプロセスに適用されるトークン昇格の種類を示します。 使用可能な値: TokenElevationTypeLimited (restricted)、TokenElevationTypeDefault (standard)、TokenElevationTypeFull (管理者特権) |
 | `ProcessCreationTime` | `datetime` | プロセスが作成された日時 |
 | `AccountDomain` | `string` | アカウントのドメイン |
 | `AccountName` | `string` | アカウントのユーザー名 |
 | `AccountSid` | `string` | アカウントのセキュリティ識別子 (SID) |
 | `AccountUpn` | `string` | アカウントのユーザー プリンシパル名 (UPN) |
-| `AccountObjectId` | `string` | Azure ADのアカウントの一意識別子 |
+| `AccountObjectId` | `string` | Azure AD のアカウントの一意識別子 |
 | `LogonId` | `string` | ログオン セッションの識別子。 この識別子は、再起動間でのみ同じマシンで一意です |
 | `InitiatingProcessAccountDomain` | `string` | イベントを担当するプロセスを実行したアカウントのドメイン |
 | `InitiatingProcessAccountName` | `string` | イベントを担当するプロセスを実行したアカウントのユーザー名 |
 | `InitiatingProcessAccountSid` | `string` | イベントを担当するプロセスを実行したアカウントのセキュリティ識別子 (SID) |
 | `InitiatingProcessAccountUpn` | `string` | イベントを担当するプロセスを実行したアカウントのユーザー プリンシパル名 (UPN) |
-| `InitiatingProcessAccountObjectId` | `string` | イベントを担当するプロセスを実行したユーザー アカウントのオブジェクト ID をAzure ADする |
+| `InitiatingProcessAccountObjectId` | `string` | イベントを担当するプロセスを実行したユーザー アカウントの Azure AD オブジェクト ID |
 | `InitiatingProcessLogonId` | `string` | イベントを開始したプロセスのログオン セッションの識別子。 この識別子は、再起動間でのみ同じコンピューターで一意です。 |
-| `InitiatingProcessIntegrityLevel` | `string` | イベントを開始したプロセスの整合性レベル。 Windowsは、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルを割り当てます。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
+| `InitiatingProcessIntegrityLevel` | `string` | イベントを開始したプロセスの整合性レベル。 Windows では、インターネットダウンロードから起動された場合など、特定の特性に基づいてプロセスに整合性レベルが割り当てられます。 これらの整合性レベルは、リソースへのアクセス許可に影響を与えます |
 | `InitiatingProcessTokenElevation` | `string` | イベントを開始したプロセスに適用されたユーザー Access Control (UAC) 特権昇格の有無を示すトークンの種類 |
 | `InitiatingProcessSHA1` | `string` | イベントを開始したプロセス (イメージ ファイル) の SHA-1 |
 | `InitiatingProcessSHA256` | `string` | イベントを開始したプロセス (イメージ ファイル) の SHA-256。 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |

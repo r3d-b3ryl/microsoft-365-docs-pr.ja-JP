@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、1 人のユーザーまたは異なるテナント間でリスクの高い複数のユーザーのパスワードをリセットする方法について説明します。
-ms.openlocfilehash: c46f7e744e06118eb3a8cf8dc48bf5dcf1b36e31
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 1133b545cc3b817f06b88112fc9670247dd0dd66
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055880"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475650"
 ---
 # <a name="reset-a-user-password-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでユーザー パスワードをリセットする
 
@@ -30,7 +30,7 @@ Microsoft 365 Lighthouseでは、ユーザー パスワードを変更または�
 
 ## <a name="reset-a-password-for-a-user"></a>ユーザーのパスワードをリセットする
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****検索ユーザー** > ] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****アカウント管理** > **検索ユーザー** > ] を選択します。
 
 2. [ **検索ユーザー** ] タブで、検索ボックスにユーザーの名前を入力します。
 
@@ -50,7 +50,7 @@ Microsoft 365 Lighthouseでは、ユーザー パスワードを変更または�
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **リスクの高いユーザー**] を選択します。
 
-2. [ **危険なユーザー** ] タブで、一覧から危険なユーザーを選択します。
+2. [ **危険なユーザー]** ページで、一覧から危険なユーザーを選択します。
 
 3. [**パスワードのリセット**] を選択します。
 

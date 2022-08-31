@@ -2,7 +2,8 @@
 title: Microsoft セキュリティ ポータルと管理センター
 description: Microsoft 365 セキュリティに関連するさまざまなサービスを管理するための適切な Microsoft 管理センターまたはポータルを見つける
 keywords: security, portals, Microsoft 365, M365, セキュリティ センター, 管理センター, URL, リンク, Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender セキュリティ センター,Microsoft Defender for Identity、Microsoft Defender for Office 365、MCAS、WDSI、SCC、Intune、MDM、MEM、ASC、Cloud App Security、Azure AD、セキュリティ & コンプライアンス センター
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
@@ -15,13 +16,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: 837d4fc455c31aee0aac35e7f73f0d19a40d700a
-ms.sourcegitcommit: 2d1302a6165b83cbbc8c2df2c608d43b6b0498b0
+ms.openlocfilehash: f0ca8e03bf89afd148611c0af26c9ad4ca30f269
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67433709"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479756"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Microsoft セキュリティ ポータルと管理センター
 

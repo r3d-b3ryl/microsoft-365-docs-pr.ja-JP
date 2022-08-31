@@ -3,7 +3,8 @@ title: Microsoft Defender for Office 365のアーキテクチャ要件と計画�
 description: Microsoft 365 DefenderのMicrosoft Defender for Office 365の技術図は、試用版ラボまたはパイロット環境を構築する前に、Microsoft 365 の ID を理解するのに役立ちます。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 1002b03a0ebb3940d544343476045d52e8209273
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: c4bf7a3c2449bd330bebcb6e4fa33dd2c2fb4584
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749948"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480517"
 ---
 # <a name="review-microsoft-defender-for-office-365-architecture-requirements-and-key-concepts"></a>Microsoft Defender for Office 365アーキテクチャの要件と主要な概念を確認する
 
@@ -54,7 +55,7 @@ Defender for Office 365を有効にする前に、アーキテクチャを理解
 |3     | Exchange Onlineは、Microsoft Defender for Office 365と統合して、より高度な脅威の保護、軽減、修復を提供します。 |
 |4     | 悪意のあるメッセージ、ブロックされたメッセージ、または検疫されていないメッセージは、迷惑メール、メールボックス ルール、またはその他の設定に関連するユーザー設定が評価およびトリガーされる EXO で受信者に処理および配信されます。 |
 |5     | Azure AD Connect を使用してオンプレミスの Active Directoryとの統合を有効にし、メールが有効なオブジェクトとアカウントを Azure Active Directory と同期してプロビジョニングし、最終的にExchange Onlineできます。 |
-|6      | オンプレミス環境を統合する場合は、Exchange サーバーを使用して、メール関連の属性、設定、構成の管理と管理をサポートすることをお勧めします。 |
+|6     | オンプレミス環境を統合する場合は、Exchange サーバーを使用して、メール関連の属性、設定、構成の管理と管理をサポートすることをお勧めします。 |
 |7      | Microsoft Defender for Office 365は、拡張検出と応答 (XDR) のためにMicrosoft 365 Defenderにシグナルを共有します。|
 
 オンプレミス統合は一般的ですが省略可能です。 環境がクラウド専用の場合は、このガイダンスも役立つでしょう。

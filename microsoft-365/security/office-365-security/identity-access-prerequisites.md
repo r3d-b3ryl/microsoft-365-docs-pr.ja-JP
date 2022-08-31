@@ -19,13 +19,14 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 6883782a942b7fda8e2dedc721756b59a3e7ede6
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 27c6557219db62d17ebb90e3e5b36169fc397874
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66749992"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477343"
 ---
 # <a name="prerequisite-work-for-implementing-zero-trust-identity-and-device-access-policies"></a>ゼロ トラスト ID ポリシーとデバイス アクセス ポリシーを実装するための前提条件
 
@@ -98,8 +99,8 @@ BYOD Windows デバイスの場合、ユーザーは **職場または学校ア�
 |Windows 8.1|サポート|サポートされている|該当なし|該当なし|サポート|
 |Android|サポートされている|サポートされている|サポート|サポート|N/A|
 |iOS|サポートされている|サポート|サポート|サポート|N/A|
-|macOS|サポート|サポート|該当なし|該当なし|サポートされていません|
-|Linux|サポート対象外|サポート対象外|サポート対象外|サポート対象外|サポート対象外|
+|macOS|サポート|サポートされている|該当なし|該当なし|サポートされていません|
+|Linux|非サポート|非サポート|非サポート|非サポート|非サポート|
 
 ### <a name="microsoft-365-client-support"></a>Microsoft 365 のクライアント サポート
 

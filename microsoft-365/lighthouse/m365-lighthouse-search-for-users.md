@@ -17,18 +17,18 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、ユーザーを検索する方法について説明します。
-ms.openlocfilehash: 44e043c144fd35e42f2f5ea937670007ce8b3c62
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
+ms.openlocfilehash: bd0b29393eab77403556640b9fd5294c2357ec76
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66823509"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475694"
 ---
 # <a name="search-for-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouse内のユーザーを検索する
 
 Microsoft 365 Lighthouseでは、すべてのアクティブなテナントで特定のユーザーを検索できます。 これにより、異なるテナント間を移動しなくても、ユーザーをすばやく見つけることができます。
 
-1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****検索ユーザー** > ] を選択します。
+1. Lighthouse の左側のナビゲーション ウィンドウで、[**ユーザー****アカウント管理** > **検索ユーザー** > ] を選択します。
 
 2. 検索ボックスに、表示名またはユーザー プリンシパル名 (UPN) を入力します。
 

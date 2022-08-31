@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender ウイルス対策 スキャンの除外を設定する
-description: ファイル (指定されたプロセスによって変更されたファイルを含む) とフォルダーは、Microsoft Defender ウイルス対策によってスキャンされないように除外できます。 PowerShell を使用して除外を検証します。
+title: Microsoft Defender ウイルス対策スキャンの除外を設定する
+description: ファイル (指定されたプロセスによって変更されたファイルを含む) とフォルダーが Microsoft Defender ウイルス対策によってスキャンされないように除外できます。 PowerShell を使用して除外を検証します。
 keywords: ''
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,18 +11,18 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ksarens
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.audience: ITPro
 ms.topic: how-to
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2b796d2a3a8cdace765c3c0219466a42d9608763
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: 354cb5e08845d275cf6517ec8badf4fb2c3635f8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65419882"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481528"
 ---
-# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Microsoft Defender ウイルス対策 スキャンの除外を構成して検証する
+# <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Microsoft Defender ウイルス対策スキャンの除外を構成して検証する
 
 **適用対象:**
 - [Microsoft Defender for Endpoint Plan 1](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -32,20 +32,20 @@ ms.locfileid: "65419882"
 **プラットフォーム**
 - Windows
 
-Microsoft Defender ウイルス対策 スキャンから、特定のファイル、フォルダー、プロセス、およびプロセスで開かれたファイルを除外できます。 このような除外は、 [スケジュールされたスキャン](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、 [オンデマンド スキャン](run-scan-microsoft-defender-antivirus.md)、 [および常時オンのリアルタイムの保護と監視](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されます。 プロセスで開かれたファイルの除外は、リアルタイム保護にのみ適用されます。
+Microsoft Defender ウイルス対策スキャンから、特定のファイル、フォルダー、プロセス、およびプロセスで開かれたファイルを除外できます。 このような除外は、 [スケジュールされたスキャン](scheduled-catch-up-scans-microsoft-defender-antivirus.md)、 [オンデマンド スキャン](run-scan-microsoft-defender-antivirus.md)、 [および常時オンのリアルタイムの保護と監視](configure-real-time-protection-microsoft-defender-antivirus.md)に適用されます。 プロセスで開かれたファイルの除外は、リアルタイム保護にのみ適用されます。
 
 ## <a name="configure-and-validate-exclusions"></a>除外を構成および検証する
 
 除外を構成して検証するには、次を参照してください。
 
-- [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成して検証します](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 ファイル拡張子、ファイル名、または場所に基づいて、Microsoft Defender ウイルス対策 スキャンからファイルを除外できます。
+- [ファイル名、拡張子、フォルダーの場所に基づいて除外を構成して検証します](configure-extension-file-exclusions-microsoft-defender-antivirus.md)。 ファイル拡張子、ファイル名、または場所に基づいて、Microsoft Defender ウイルス対策スキャンからファイルを除外できます。
 
 - [プロセスによって開かれたファイルの除外を構成して検証します](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)。 特定のプロセスによって開かれたスキャンからファイルを除外できます。
 
-## <a name="recommendations-for-defining-exclusions"></a>除外を定義するためのおすすめ
+## <a name="recommendations-for-defining-exclusions"></a>除外を定義するための推奨事項
 
 > [!IMPORTANT]
-> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるものなど) に基づく多くの自動除外が含まれます。
+> Microsoft Defender ウイルス対策には、既知のオペレーティング システムの動作や一般的な管理ファイル (エンタープライズ管理、データベース管理、その他のエンタープライズ シナリオや状況で使用されるものなど) に基づく多くの自動除外が含まれています。
 >
 > 除外を定義すると、Microsoft Defender ウイルス対策によって提供される保護が低下します。 除外の実装に関連するリスクは常に評価する必要があります。また、悪意のないと確信しているファイルのみを除外する必要があります。
 
@@ -71,5 +71,5 @@ Microsoft Defender ウイルス対策 スキャンから、特定のファイル
 
 ## <a name="see-also"></a>関連項目
 
-- [Windows Server 2016で除外をMicrosoft Defender ウイルス対策する](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Windows Server 2016に対する Microsoft Defender ウイルス対策の除外](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [除外を定義する際に避ける必要のある一般的な間違い](common-exclusion-mistakes-microsoft-defender-antivirus.md)

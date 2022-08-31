@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderを使用したパイロット Microsoft Defender f
 description: デバイス、ID、データ、およびアプリケーションを保護するように設計されたセキュリティ ソリューションをテストして体験するために、Microsoft 365 Defender試用版またはパイロット環境を設定します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 7dbf9154769ab4b97c15dc5fc67593b376ab2f6d
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 68b623bb1e04340e7f112e7e2d0a58210cca0e3b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750344"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67480912"
 ---
 # <a name="pilot-microsoft-defender-for-cloud-apps-with-microsoft-365-defender"></a>Microsoft 365 Defenderを使用したパイロット Microsoft Defender for Cloud Apps
 

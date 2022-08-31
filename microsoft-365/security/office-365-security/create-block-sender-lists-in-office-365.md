@@ -13,29 +13,29 @@ ms.localizationpriority: medium
 search.appverid:
 - MET150s
 description: 管理者は、Exchange Online Protection (EOP) で受信メッセージをブロックするために使用できるオプションと推奨されるオプションについて学習できます。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: bf47fd7723bc1fe9cdef1b57cf16e1948112e749
-ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: a8abd50deb509564acb6646dc0732bf4a61b6cfd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/20/2022
-ms.locfileid: "63675650"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481418"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>EOP で受信拒否送信者の一覧を作成する
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含むMicrosoft 365組織では、Exchange Onlineメールボックスがない場合、EOP は不要な送信者からのメールをブロックする複数の方法を提供します。 これらのオプションには、Outlookブロックされた送信者、ブロックされた送信者リスト、スパム対策ポリシーのブロックされたドメイン リスト、Exchangeメール フロー ルール (トランスポート ルールとも呼ばれます)、IP ブロック リスト (接続フィルター) が含まれます。 まとめると、これらのオプションは _ブロックされた送信者リスト_ と考えることができます。
+Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含む Microsoft 365 組織では、Exchange Onlineメールボックスがない場合、EOP は不要な送信者からのメールをブロックする複数の方法を提供します。 これらのオプションには、Outlook のブロックされた送信者、ブロックされた送信者リスト、スパム対策ポリシーのブロックされたドメイン リスト、Exchange メール フロー ルール (トランスポート ルールとも呼ばれます)、IP ブロック リスト (接続フィルター) が含まれます。 まとめると、これらのオプションは _ブロックされた送信者リスト_ と考えることができます。
 
-送信者をブロックする最適な方法は、影響の範囲によって異なります。 1 人のユーザーの場合、適切なソリューションはブロックされた送信者Outlookできます。 多くのユーザーにとって、他のオプションの 1 つがより適切です。 次のオプションは、影響範囲と幅の両方によってランク付けされます。 一覧は狭い範囲から広範な範囲に移行しますが、完全な推奨事項の _詳細を参照_ してください。
+送信者をブロックする最適な方法は、影響の範囲によって異なります。 1 人のユーザーの場合、適切なソリューションは Outlook の受信拒否送信者である可能性があります。 多くのユーザーにとって、他のオプションの 1 つがより適切です。 次のオプションは、影響範囲と幅の両方によってランク付けされます。 一覧は狭い範囲から広範な範囲に移行しますが、完全な推奨事項の _詳細を参照_ してください。
 
-1. Outlookブロックされた送信者 (各メールボックスに格納されているブロックされた送信者の一覧)
+1. Outlook の受信拒否送信者 (各メールボックスに格納されているブロックされた送信者の一覧)
 
 2. ブロックされた送信者リストまたはブロックされたドメイン リスト (スパム対策ポリシー)
 
@@ -48,7 +48,7 @@ Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) �
 
 これに対し、 _安全な差出人リスト_ を使用して特定のソースからのメールを常に許可するオプションもあります。 詳細については、「[信頼できる差出人リストの作成](create-safe-sender-lists-in-office-365.md)」を参照してください。
 
-## <a name="email-message-basics"></a>電子メール メッセージの基本
+## <a name="email-message-basics"></a>Email メッセージの基本
 
 標準的な SMTP 電子メール メッセージは、_メッセージ エンベロープ_ とメッセージのコンテンツで構成されます。 メッセージ エンベロープには、SMTP サーバー間でのメッセージの送信と配信に必要な情報が含まれています。 メッセージのコンテンツには、総称して "_メッセージ ヘッダー_" と呼ばれるメッセージ ヘッダー フィールドと、メッセージ本文があります。 メッセージ エンベロープは RFC 5321 で定義され、メッセージ ヘッダーは RFC 5322 で定義されます。 メッセージ エンベロープはメッセージ送信プロセスによって生成されるもので、実際にはメッセージの一部ではないため、受信者がメッセージ エンベロープを目にすることはありません。
 
@@ -58,9 +58,9 @@ Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) �
 
 多くの場合、`5321.MailFrom`と`5322.From`のアドレスは同じです (対人通信)。 ただし、他のユーザーに代わってメールが送信される場合は、これらのアドレスが異なるのが普通です。
 
-EOP のスパム対策ポリシーでブロックされた送信者リストとブロックされたドメイン リストは、アドレスと`5322.From`アドレスの両方を`5321.MailFrom`検査します。 ブロックされた送信者Outlookアドレスのみが使用`5322.From`されます。
+EOP のスパム対策ポリシーでブロックされた送信者リストとブロックされたドメイン リストは、アドレスと`5322.From`アドレスの両方を`5321.MailFrom`検査します。 Outlook の受信拒否送信者は、アドレスのみを使用 `5322.From` します。
 
-## <a name="use-outlook-blocked-senders"></a>ブロックされた送信者Outlook使用する
+## <a name="use-outlook-blocked-senders"></a>Outlook ブロックされた送信者を使用する
 
 少数のユーザーのみが不要なメールを受信した場合、ユーザーまたは管理者は、メールボックスの [受信拒否] リストに送信者の電子メール アドレスを追加できます。 手順については、「[Exchange Online メールボックスで迷惑メール設定を構成する](configure-junk-email-settings-on-exo-mailboxes.md)」を参照してください。
 

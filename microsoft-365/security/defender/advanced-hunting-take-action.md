@@ -4,7 +4,8 @@ description: 高度なハンティング クエリの結果で脅威と影響を
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, アクションを実行する
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b7fbe659902bf89023e994f4e1304f25f3934db8
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: c83370c302b10159d4d2325e66224685ab232cad
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65097613"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479512"
 ---
 # <a name="take-action-on-advanced-hunting-query-results"></a>高度なハンティング クエリの結果に対してアクションを実行する
 
@@ -76,14 +76,14 @@ ms.locfileid: "65097613"
 
 説明されているアクションのいずれかを実行するには、クエリ結果で 1 つ以上のレコードを選択し、[ **アクションの実行**] を選択します。 ウィザードでは、優先するアクションを選択して送信するプロセスについて説明します。
 
-:::image type="content" source="../../media/take-action-multiple.png" alt-text="Microsoft 365 Defender ポータルの [アクションの実行] オプション" lightbox="../../media/take-action-multiple.png":::
+:::image type="content" source="../../media/take-action-multiple.png" alt-text="Microsoft 365 Defender ポータルでアクションを実行するオプション" lightbox="../../media/take-action-multiple.png":::
 
 
 ## <a name="take-various-actions-on-emails"></a>メールに対してさまざまなアクションを実行する
 デバイスに重点を置いた修復手順とは別に、クエリ結果から電子メールに対していくつかのアクションを実行することもできます。 アクションを実行するレコードを選択し、[アクションの **実行**] を選択し、[ **アクションの選択]** で次の中から選択します。
 - `Move to mailbox folder` - 電子メール メッセージを [迷惑メール]、[受信トレイ]、または [削除済みアイテム] フォルダーに移動するには、これを選択します
 
-   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="Microsoft 365 Defender ポータルの [アクションの実行] オプション" lightbox="../../media/advanced-hunting-take-actions-email.png":::
+   :::image type="content" source="../../media/advanced-hunting-take-actions-email.png" alt-text="Microsoft 365 Defender ポータルでアクションを実行するオプション" lightbox="../../media/advanced-hunting-take-actions-email.png":::
 
 - `Delete email` - これを選択して、電子メール メッセージを [削除済みアイテム] フォルダーに移動するか (**論理的に削除**) するか、完全に削除します (**ハード削除**)
 
@@ -97,7 +97,7 @@ ms.locfileid: "65097613"
 
 
 ## <a name="review-actions-taken"></a>実行されたアクションを確認する
-各アクションは、Action **centerHistory** ([security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) のアクション **センター** > に個別に記録されます。[](m365d-action-center.md) アクション センターに移動して、各アクションの状態を確認します。
+各アクションは、[[アクション センター](m365d-action-center.md)履歴 **] (**[security.microsoft.com/action-center/history](https://security.microsoft.com/action-center/history)) のアクション **センター** > に個別に記録されます。 アクション センターに移動して、各アクションの状態を確認します。
  
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpointでは使用できない場合があります。 [Microsoft 365 Defenderを有効にして](m365d-enable.md)、より多くのデータ ソースを使用して脅威を検出します。 高度なハンティング クエリをMicrosoft Defender for Endpointから移行するの手順に従って、[高度なハンティング ワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defender](advanced-hunting-migrate-from-mde.md)に移動できます。

@@ -11,6 +11,7 @@ ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
 - m365solution-smb
+- highpri
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
@@ -20,16 +21,16 @@ search.appverid:
 description: Microsoft 365 で利用可能なツールを使用して、侵害された電子メール アカウントを認識して対処する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bdce44bc54c71d03e8064fa10187c06237d38b5b
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
-ms.translationtype: HT
+ms.openlocfilehash: 50819867e5912ee0ae4993cadfe0d5238229c7d3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941422"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479954"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>侵害された電子メール アカウントへの対応
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+[!INCLUDE [MDO Trial banner](../includes/mdo-trial-banner.md)]
 
 **適用対象**
 - [Exchange Online Protection](exchange-online-protection-overview.md)

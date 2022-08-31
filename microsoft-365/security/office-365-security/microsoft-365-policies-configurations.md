@@ -20,13 +20,14 @@ ms.collection:
 - m365solution-overview
 - m365solution-zero-trust
 - zerotrust-solution
+- highpri
 ms.technology: mdo
-ms.openlocfilehash: 97e81f020c18a4f51e8af99f3633c8edb2559a41
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 7480fdcf3d394e152ff3b1de738d48f5723d7b75
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66750366"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481198"
 ---
 # <a name="zero-trust-identity-and-device-access-configurations"></a>ゼロ トラスト ID とデバイスのアクセス構成
 
@@ -34,15 +35,15 @@ ms.locfileid: "66750366"
 
 この新しいコンピューティングの世界に対処するために、Microsoft は、次の原則に基づくゼロ トラストセキュリティ モデルを高くお勧めします。
 
-- 明示的に確認する
+- 明確に確認する
 
   使用可能なすべてのデータ ポイントに基づいて、常に認証と承認を行います。 ここで、サインインと継続的な検証を行うには、ゼロ トラスト ID ポリシーとデバイス アクセス ポリシーが重要です。
 
-- 最小特権アクセスを使用する
+- 最小限の特権アクセスを使用する
 
   Just-In-Time と Just-Enough-Access (JIT/JEA)、リスク ベースのアダプティブ ポリシー、データ保護を使用してユーザー アクセスを制限します。
 
-- 違反を想定する
+- 侵害を想定する
 
   爆発半径とセグメント アクセスを最小限に抑えます。 エンドツーエンドの暗号化を確認し、分析を使用して可視性を高め、脅威検出を推進し、防御を強化します。
 
@@ -193,11 +194,11 @@ Microsoft 365 Apps for enterpriseのWindows 11またはWindows 10は、PC に推
 
 次の表は、3 つの保護レベルでこれらの機能を使用するための推奨事項をまとめたものです。
 
-|保護メカニズム|開始点|大規模企業|特殊なセキュリティ|
+|保護メカニズム|開始点|Enterprise|特殊なセキュリティ|
 |---|---|---|---|
 |**MFA の強制**|中程度以上のサインイン リスクで|低以上のサインイン リスクで|すべての新しいセッションで|
 |**パスワード変更を適用する**|リスクの高いユーザーの場合|リスクの高いユーザーの場合|リスクの高いユーザーの場合|
-|**アプリケーション保護Intune適用する**|はい|はい|必要|
+|**アプリケーション保護Intune適用する**|はい|はい|はい|
 |**組織所有のデバイスのIntune登録を強制する**|準拠またはドメインに参加している PC を必要とするが、持ち込み専用デバイス (BYOD) のスマートフォンとタブレットを許可する|準拠デバイスまたはドメイン参加済みデバイスを要求する|準拠デバイスまたはドメイン参加済みデバイスを要求する|
 
 ## <a name="device-ownership"></a>デバイスの所有権

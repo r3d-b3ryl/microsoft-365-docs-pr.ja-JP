@@ -2,7 +2,7 @@
 title: コンテキスト ファイルとフォルダーの除外
 description: Windows 上の Microsoft Defender ウイルス対策のコンテキスト ファイルとフォルダーの除外機能について説明します。 この機能を使用すると、制限を適用して、Microsoft Defender ウイルス対策がファイルまたはフォルダーをスキャンしないコンテキストを定義するときに、より具体的にすることができます
 keywords: Microsoft Defender ウイルス対策、プロセス、除外、ファイル、スキャン
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,13 +14,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 8d1516d00a693a56b99ad6eabad59722867f3db0
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.subservice: mde
+ms.openlocfilehash: 0868250b04120a4eed0cf254e4a9d3692eb661fa
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439566"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67477959"
 ---
 # <a name="contextual-file-and-folder-exclusions"></a>コンテキスト ファイルとフォルダーの除外
 
@@ -94,7 +94,7 @@ _すべての_**型** と **値** では大文字と小文字が区別されま�
 
 #### <a name="folders"></a>Folders
 
-ターゲットがフォルダーの場合にのみ除外が適用されるようにするには、 **PathType:folder** 制限を使用できるファイルではありません。 例:
+ターゲットがフォルダーの場合にのみ除外が適用されるようにするには、 **PathType:folder** 制限を使用できるファイルではありません。 以下に例を示します。
 
 `C:\documents\:{PathType:folder}`
 

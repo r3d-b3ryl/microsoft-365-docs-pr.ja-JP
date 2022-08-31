@@ -4,7 +4,8 @@ description: 高度な捜索を使用して、ランサムウェアの影響を�
 keywords: 高度な捜索, ランサムウェア, 脅威の捜索, サイバー脅威の捜索, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,14 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 - m365solution-ransomware
+- highpri
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: e90661932880ee146b8b1b81f8412e97d674749d
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: e65655154cb326ddf6d4086b944afeb1a599aa64
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755745"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479039"
 ---
 # <a name="hunt-for-ransomware"></a>ランサムウェアを探す
 
@@ -270,7 +271,7 @@ Microsoft 365:
 - [Azure と Microsoft 365 を使用してランサムウェアの回復性を最大化する](https://azure.microsoft.com/resources/maximize-ransomware-resiliency-with-azure-and-microsoft-365/)
 - [ランサムウェア攻撃から回復する](/microsoft-365/security/office-365-security/recover-from-ransomware)
 - [マルウェアと ランサムウェアからの保護](/compliance/assurance/assurance-malware-and-ransomware-protection)
-- [ランサムウェアからWindows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
+- [ランサムウェアから Windows PC を保護する](https://support.microsoft.com//windows/protect-your-pc-from-ransomware-08ed68a7-939f-726c-7e84-a72ba92c01c3)
 - [SharePoint Online でのランサムウェアの処理](/sharepoint/troubleshoot/security/handling-ransomware-in-sharepoint-online)
 - [Microsoft 365 Defender](https://security.microsoft.com/threatanalytics3?page_size=30&filters=tags%3DRansomware&ordering=-lastUpdatedOn&fields=displayName,alertsCount,impactedEntities,reportType,createdOn,lastUpdatedOn,tags,flag)ポータルでのランサムウェアの脅威分析レポート
 

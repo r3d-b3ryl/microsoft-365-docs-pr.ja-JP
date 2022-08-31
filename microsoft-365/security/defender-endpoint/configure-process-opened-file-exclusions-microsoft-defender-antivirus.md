@@ -2,8 +2,8 @@
 title: 特定のプロセスによって開かれたファイルの除外を構成する
 description: 特定のプロセスによってファイルが開かれている場合は、スキャンからファイルを除外できます。
 keywords: Microsoft Defender ウイルス対策、プロセス、除外、ファイル、スキャン
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 897a443be70afb8248e6a49f24f32b678060b976
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: ba64dd57323433f82d27b48bf844ec4b1fda5e50
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388751"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479490"
 ---
 # <a name="configure-exclusions-for-files-opened-by-processes"></a>プロセスによって開かれたファイルの除外を構成する
 

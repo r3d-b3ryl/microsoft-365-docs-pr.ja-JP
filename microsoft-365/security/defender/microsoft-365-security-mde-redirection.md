@@ -4,7 +4,8 @@ description: Defender for Endpoint から Microsoft 365 Defenderにアカウン�
 keywords: Microsoft 365 Defender、Microsoft 365 Defenderの概要、セキュリティ センターのリダイレクト
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 64a9926253ea699fa6cc62d1ec2d80d07f25fd29
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 90ddf53090f79c3d372aa2119330e71919849bc0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62172280"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67479976"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-microsoft-365-defender"></a>Microsoft Defender for EndpointからMicrosoft 365 Defenderへのアカウントのリダイレクト
 
@@ -62,14 +62,14 @@ SIEM と拡張検出と応答 (XDR) を使用した脅威保護に対する Micr
 | LinkToMTP | security.microsoft.com の [アラート] ページ | security.microsoft.com の [アラート] ページ |
 | IncidentLinkToMTP | security.microsoft.com の [インシデント] ページ | security.microsoft.com の [インシデント] ページ |
 
-## <a name="email-alert-notifications"></a>電子メール アラート通知
+## <a name="email-alert-notifications"></a>アラート通知をEmailする
 
 | プロパティ | リダイレクトが OFF の場合の宛先** | リダイレクトが ON の場合の宛先 |
 |---------|---------|---------|
 | [アラート] ページ | securitycenter.windows.com の [アラート] ページ | security.microsoft.com の [アラート] ページ |
 | [インシデント] ページ |securitycenter.windows.com の [インシデント] ページ | security.microsoft.com の [インシデント] ページ |
 | Defender for Cloud ポータルの [アラート] ページ | security.microsoft.com の [アラート] ページ | security.microsoft.com の [アラート] ページ |
-| Defender for Cloud ポータルの [インシデント] ページ | security.microsoft.com の [インシデント] ページ | security.microsoft.com の [インシデント] ページ |
+| Defender for Cloud portal の [インシデント] ページ | security.microsoft.com の [インシデント] ページ | security.microsoft.com の [インシデント] ページ |
 
 ## <a name="when-does-this-take-effect"></a>これはいつ有効になりますか?
 
@@ -79,11 +79,11 @@ SIEM と拡張検出と応答 (XDR) を使用した脅威保護に対する Micr
 
 Microsoft 365 Defenderへのアカウントのルーティングを開始するには:
 
-1. グローバル管理者であるか、Azure Active Directoryのセキュリティ管理者のアクセス許可があることを確認します。
+1. グローバル管理者であるか、Azure Active Directory のセキュリティ管理者のアクセス許可があることを確認します。
 
 2. Microsoft 365 Defenderにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
 
-3. **設定** > **EndpointsGeneralPortal** >  >  **リダイレクト** に移動するか [、ここをクリックします](https://security.microsoft.com/preferences2/portal_redirection)。  
+3. **[Settings** > **Endpoints** > **General** > **Portal] リダイレクト** に移動するか [、ここをクリックします](https://security.microsoft.com/preferences2/portal_redirection)。  
 
 4. [自動リダイレクト] 設定を **[オン]** に切り替えます。
 
@@ -93,7 +93,7 @@ Microsoft 365 Defenderへのアカウントのルーティングを開始する�
 >この設定を有効にした場合、アクティブなユーザー セッションは終了しません。 この設定が適用されている間にアクティブなセッションに参加しているアカウントは、現在のセッションを終了してもう一度サインインした後にのみMicrosoft 365 Defenderに送信されます。
 
 >[!NOTE]
->この設定を有効または無効にするには、グローバル管理者であるか、Azure Active Directoryのセキュリティ管理者のアクセス許可が必要です。  
+>この設定を有効または無効にするには、グローバル管理者であるか、Azure Active Directory のセキュリティ管理者のアクセス許可が必要です。  
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>以前のポータルの使用に戻ることはできますか?
 
@@ -103,7 +103,7 @@ Microsoft 365 Defenderへのアカウントのルーティングを開始する�
 
 1. グローバル管理者として<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>にサインインするか、Azure Active directory でセキュリティ管理者のアクセス許可を使用してアカウントを使用します。
 
-2. **設定** > **EndpointsGeneralPortal** >  >  **リダイレクト** に移動するか [、ここでページを開きます](https://security.microsoft.com/preferences2/portal_redirection)。  
+2. **[Settings** > **Endpoints** > **General** > **Portal] リダイレクト** に移動するか [、ここでページを開きます](https://security.microsoft.com/preferences2/portal_redirection)。  
 
 3. [自動リダイレクト] 設定を **[オフ]** に切り替えます。
 

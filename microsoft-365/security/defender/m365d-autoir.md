@@ -3,7 +3,8 @@ title: Microsoft 365 Defender での自動調査と応答
 description: 自動調査と応答機能 (セルフヒーリングとも呼ばれる) の概要をMicrosoft 365 Defender
 keywords: 自動, 調査, アラート, トリガー, アクション, 修復, 自己修復
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: deb0a7be8dcf359c901d714006ea3b46862586fb
-ms.sourcegitcommit: e8dd5cd434d17af7096d28d467a2b3b021cbb233
+ms.openlocfilehash: a72e5df2f6e46956d857160da72734b94a3b6a30
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/27/2022
-ms.locfileid: "67050736"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481110"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Microsoft 365 Defender での自動調査と応答
 

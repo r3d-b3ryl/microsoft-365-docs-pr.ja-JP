@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderのセキュリティ スタッフをトレーニ�
 description: セキュリティ スタッフを迅速に立ち上げるための主要なトレーニング リソースにアクセスします。
 keywords: ビデオ, セルフヘルプ, セルフ スタディ, ランプアップ, 命令, コース, ラーニング パス, Microsoft Learn, コース, コース, SecOps, セキュリティ アナリスト
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f500b830a2a12674c53fdf1611c41ae7d59b6916
-ms.sourcegitcommit: 3fb76db6b34e24569417f4c8a41b99f46a780389
+ms.openlocfilehash: 0656ec0d5194ea14deec293a505c5563a74ec939
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/17/2022
-ms.locfileid: "63526950"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481088"
 ---
 # <a name="train-your-security-staff-for-microsoft-365-defender"></a>Microsoft 365 Defenderのセキュリティ スタッフをトレーニングする
 
@@ -41,7 +41,7 @@ ms.locfileid: "63526950"
 
 ## <a name="microsoft-365-defender-ninja-training"></a>Microsoft 365 Defender Ninja トレーニング
 
-[Microsoft 365 Defender Ninja トレーニング](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)は、Microsoft 365 Defenderの機能をステップ実行するための整理されたセクションとモジュールのセットです。 トレーニングは、Microsoft Defender for Endpointなどの脅威信号ソース&mdash;を横断しますが、&mdash;個々のソース自体を対象としていません。 
+[Microsoft 365 Defender Ninja トレーニング](https://techcommunity.microsoft.com/t5/microsoft-365-defender/become-a-microsoft-365-defender-ninja/ba-p/1789376)は、Microsoft 365 Defenderの機能をステップ実行するための整理されたセクションとモジュールのセットです。 トレーニングは、Microsoft Defender for Endpointなどの脅威シグナル ソース&mdash;を対象としています&mdash;が、個々のソース自体は対象としません。 
 
 コンテンツは、基礎、中級、エキスパートという複数のモジュールを使用して、3 つの異なる知識レベルに構成されています。 各レベルには、資料の理解をテストするためのナレッジ チェックが含まれています。
 
@@ -54,7 +54,7 @@ ms.locfileid: "63526950"
  - [Microsoft Defender for Endpoint で組織を保護する](/learn/paths/defender-endpoint-fundamentals/)  
 
 
-## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Microsoft 365 Defender ポータルラーニング ハブでパスをラーニングする
+## <a name="learning-paths-in-the-microsoft-365-defender-portal-learning-hub"></a>Microsoft 365 Defender ポータルラーニング ハブのラーニング パス
 
 [Microsoft 365 Defender ポータルラーニング ハブ](https://security.microsoft.com/learning)には、次のラーニング パスが含まれています。
 
