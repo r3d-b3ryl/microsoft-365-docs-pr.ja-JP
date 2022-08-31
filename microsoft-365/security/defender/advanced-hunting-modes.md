@@ -2,7 +2,8 @@
 title: Microsoft 365 Defenderでの捜索のためのガイド付きモードと高度なモードの間で選択する
 description: 高度な捜索ではクエリを最初から記述できますが、Microsoft 365 Defenderでのガイド付きハンティングには KQL の知識は必要ありません。
 keywords: ガイドモード, 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -18,13 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: seo-marvel-apr2020
-ms.technology: m365d
-ms.openlocfilehash: f94ef320b24fe95d1e08e7deafff85a18d6010b1
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 45bc2edc940c5681302c1d9266b437b0406913af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406791"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471816"
 ---
 # <a name="choose-between-guided-and-advanced-modes-to-hunt-in-microsoft-365-defender"></a>ガイド付きモードと詳細モードの中から選択して、Microsoft 365 Defenderでハントします
 

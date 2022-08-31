@@ -2,8 +2,8 @@
 title: 自動調査と修復機能を構成する
 description: Microsoft Defender for Endpointで自動調査と修復機能を設定します。
 keywords: 構成、セットアップ、自動化、調査、検出、アラート、修復、応答
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 7e94cd14f392eb47a9b747cfb5e5f846f03fdc63
-ms.sourcegitcommit: e624221597480295b799d56568c4f6f56d40b41d
+ms.openlocfilehash: 09d9860119a7c4aeb8949357b277fb395e09a9c2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/19/2022
-ms.locfileid: "65535760"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481902"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpointで自動調査と修復機能を構成する
 
@@ -42,7 +42,7 @@ ms.locfileid: "65535760"
 
 1. グローバル管理者またはセキュリティ管理者として、Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. ナビゲーション ウィンドウで、**設定** を選択します。
+2. ナビゲーション ウィンドウで、[ **設定]** を選択します。
 
 3. **[エンドポイント]** を選択し、[**高度な機能**] を選択します。
 
@@ -53,7 +53,7 @@ ms.locfileid: "65535760"
 > [!NOTE]
 > この手順は、Defender for Business には適用されません。
 
-1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の **[設定**] ページの [**アクセス許可**] で、[**デバイス グループ**] を選択します。
+1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) の **[設定]** ページの [**アクセス許可**] で、[**デバイス グループ**] を選択します。
 
 2. [ **+ デバイス グループの追加]** を選択します。
 
@@ -62,7 +62,7 @@ ms.locfileid: "65535760"
    - デバイス グループの名前と説明を指定します。
    - **[オートメーション] レベルの一覧** で、[**完全な脅威の修復**] などのレベルを自動的に選択します。 自動化レベルでは、修復アクションを自動的に実行するか、承認時にのみ実行するかを決定します。 詳細については、 [自動調査と修復の自動化レベルに](automation-levels.md)関するページを参照してください。
    - [ **メンバー]** セクションで、1 つ以上の条件を使用してデバイスを識別して含めます。
-   - [**ユーザー アクセス**] タブで、作成するデバイス [グループ](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context)にアクセスする必要があるAzure Active Directory グループを選択します。
+   - [ **ユーザー アクセス** ] タブで、作成するデバイス グループにアクセスする必要がある [Azure Active Directory](/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) グループを選択します。
 
 4. デバイス グループの設定が完了したら、[ **完了] を** 選択します。
 

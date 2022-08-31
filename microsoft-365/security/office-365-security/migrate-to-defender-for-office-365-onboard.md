@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365solution-mdo-migration
+- highpri
 ms.custom: migrationguides
 description: サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365保護に移行する手順を完了します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d30f13e77f0b7da864d266ddb2607afe7de1d451
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: e7a4be34a4ee93609a167314c0d822e11cde5586
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388089"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481836"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-3-onboard"></a>Microsoft Defender for Office 365に移行する - フェーズ 3: オンボード
 
@@ -52,7 +53,7 @@ ms.locfileid: "67388089"
 
 組織にセキュリティ対応チームがある場合は、チケット発行システムを含む応答プロセスへのMicrosoft Defender for Office 365の統合を開始します。 これはトピック全体ですが、見落とされることがあります。 セキュリティ対応チームを早期に取得することで、MX レコードを切り替える際に組織が脅威に対処する準備が整います。 次のタスクを処理するには、インシデント対応を十分に備える必要があります。
 
-- 新しいツールを学習し、それらを既存のフローに統合します。 例:
+- 新しいツールを学習し、それらを既存のフローに統合します。 以下に例を示します。
   - 検疫されたメッセージの管理管理重要です。 手順については、「 [管理者として検疫されたメッセージとファイルを管理する」を参照してください](manage-quarantined-messages-and-files.md)。
   - メッセージ トレースを使用すると、メッセージが Microsoft 365 に出入りするときに何が起こったかを確認できます。 詳細については、[Exchange Onlineの最新の Exchange 管理センターのメッセージ トレースに関する説明を](/exchange/monitoring/trace-an-email-message/message-trace-modern-eac)参照してください。
 - 組織に任せられている可能性のあるリスクを特定します。

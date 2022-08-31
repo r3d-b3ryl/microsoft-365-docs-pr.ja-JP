@@ -3,7 +3,8 @@ title: 高度なハンティング API Microsoft 365 Defender
 description: Microsoft 365 Defenderの高度なハンティング API を使用して高度なハンティング クエリを実行する方法について説明します
 keywords: 高度なハンティング、API、API、M365 Defender、Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 4b8a8e67bc7bd69b9ae20648ad66eb539101441e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
+ms.openlocfilehash: 4e0114e2a53a9fd532f49ef5c928e15751a9aa2e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66827182"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482012"
 ---
 # <a name="microsoft-365-defender-advanced-hunting-api"></a>Microsoft 365 Defender 高度なハンティング API
 
@@ -89,7 +89,7 @@ Content-Type | application/json
 
 パラメーター | 型 | 説明
 -|-|-
-Query | テキスト | 実行するクエリ。 **(必須)**
+クエリ | テキスト | 実行するクエリ。 **(必須)**
 
 ## <a name="response"></a>応答
 

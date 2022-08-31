@@ -3,7 +3,7 @@ title: 要求のパフォーマンスを向上させる
 description: 要求のパフォーマンスを向上させる
 keywords: サーバー、要求、パフォーマンス
 search.product: eADQiWindows 10XVcnh
-ms.prod: w10
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: a0f59cd49750dafac230c4aaaa43bf0cf6747c34
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: e18948603b88462d90e6a8ee81f8311504b2c2e2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65650415"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67484040"
 ---
 > [!TIP]
 > パフォーマンスを向上させるために、地理的な場所に近いサーバーを使用できます。

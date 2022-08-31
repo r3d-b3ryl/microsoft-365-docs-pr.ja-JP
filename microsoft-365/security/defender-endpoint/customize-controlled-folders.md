@@ -2,7 +2,7 @@
 title: 制御されたフォルダー アクセスをカスタマイズする
 description: フォルダー アクセスの制御によって保護する必要がある他のフォルダーを追加するか、重要なファイルへの変更を誤ってブロックしているアプリを許可します。
 keywords: フォルダー アクセスの制御、Windows 10、Windows 11、Windows Defender、ランサムウェア、保護、ファイル、フォルダー、カスタマイズ、フォルダーの追加、アプリの追加、許可、実行可能ファイルの追加
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -11,16 +11,16 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: oogunrinde, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.topic: how-to
 ms.collection: M365-security-compliance
 ms.date: ''
-ms.openlocfilehash: 3d6f763bd2ac2c4352f1b200c05c3079bc615aaf
-ms.sourcegitcommit: 7ac54e1952383d5cd5f084c6a9d247eb747d4904
+ms.openlocfilehash: 5b46a2a4f520ea1d7d92366b8e356b895d12563a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/17/2022
-ms.locfileid: "66139343"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471612"
 ---
 # <a name="customize-controlled-folder-access"></a>制御されたフォルダー アクセスをカスタマイズする
 
@@ -35,7 +35,7 @@ ms.locfileid: "66139343"
 > [!TIP]
 > Defender for Endpoint を試す場合は、 [無料試用版にサインアップしてください。](https://signup.microsoft.com/create-account/signup?products=7f379fee-c4f9-4278-b0a1-e4c8c2fcdf7e&ru=https://aka.ms/MDEp2OpenTrial?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
-フォルダー アクセスの制御は、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護するのに役立ちます。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、Windows 11 クライアントでサポートされています。 この記事では、制御されたフォルダー アクセス機能をカスタマイズする方法について説明し、次のセクションを含みます。
+フォルダー アクセスの制御は、ランサムウェアなどの悪意のあるアプリや脅威から貴重なデータを保護するのに役立ちます。 フォルダー アクセスの制御は、Windows Server 2019、Windows Server 2022、Windows 10、およびWindows 11 クライアントでサポートされています。 この記事では、制御されたフォルダー アクセス機能をカスタマイズする方法について説明し、次のセクションを含みます。
 
 - [追加のフォルダーを保護する](#protect-additional-folders)
 - [保護されたフォルダーへのアクセスを許可する必要があるアプリを追加する](#allow-specific-apps-to-make-changes-to-controlled-folders)
@@ -49,7 +49,7 @@ ms.locfileid: "66139343"
 
 フォルダー アクセスの制御は、 **ドキュメント**、 **画像**、ムービーなどのフォルダーを含む、多くのシステム フォルダーと既定の場所に適用 **されます**。 保護する他のフォルダーは追加できますが、既定の一覧で既定のフォルダーを削除することはできません。
 
-既定のWindows ライブラリにファイルを格納しない場合や、ライブラリの既定の場所を変更した場合に、フォルダー アクセスの制御に他のフォルダーを追加すると便利です。
+フォルダー アクセスの制御に他のフォルダーを追加すると、既定の Windows ライブラリにファイルを保存しない場合や、ライブラリの既定の場所を変更した場合に役立ちます。
 
 ネットワーク共有とマップされたドライブを指定することもできます。 環境変数とワイルドカードがサポートされています。 ワイルドカードの使用の詳細については、「 [ファイル名とフォルダーパスまたは拡張子の除外リストでワイルドカードを使用](configure-extension-file-exclusions-microsoft-defender-antivirus.md)する」を参照してください。
 
@@ -57,7 +57,7 @@ Windows セキュリティ アプリ、グループ ポリシー、PowerShell �
 
 ### <a name="use-the-windows-security-app-to-protect-additional-folders"></a>Windows セキュリティ アプリを使用して追加のフォルダーを保護する
 
-1. タスク バーでシールド アイコンを選択するか、スタート メニューで *セキュリティ* を検索して、Windows セキュリティ アプリを開きます。
+1. タスク バーでシールド アイコンを選択するか、[スタート] メニューで *セキュリティ* を検索して、Windows セキュリティ アプリを開きます。
 
 2. [ **ウイルス&脅威の防止**] を選択し、[ **ランサムウェアの保護** ] セクションまで下にスクロールします。
 
@@ -77,7 +77,7 @@ Windows セキュリティ アプリ、グループ ポリシー、PowerShell �
 
 3. **グループ ポリシー管理エディター** で、**コンピューター構成** \> **ポリシー** \> **管理テンプレート** に移動します。
 
-4. ツリーを展開して、**Exploit Guard** \> **によって制御されたフォルダー へのアクセス****Windows Defender Microsoft Defender ウイルス対策** \> **コンポーネント**\>をWindowsします。 <br/>**注**: 以前のバージョンのWindowsでは、**Microsoft Defender ウイルス対策ではなくWindows Defender ウイルス対策** が表示される場合 **があります。**
+4. ツリーを **Windows コンポーネント** \> **に展開します。Microsoft Defender ウイルス対策** \> **Windows Defender Exploit Guard** \> **によって制御されたフォルダー へのアクセスが許可されます**。 <br/>**注**: 以前のバージョンの Windows では、**Microsoft Defender ウイルス対策** の代わりに **Windows Defender ウイルス対策** が表示される場合があります。
 
 5. **[構成済みの保護フォルダー**] をダブルクリックし、オプションを **[有効]** に設定します。 [ **表示]** を選択し、保護する各フォルダーを指定します。
 
@@ -85,7 +85,7 @@ Windows セキュリティ アプリ、グループ ポリシー、PowerShell �
 
 ### <a name="use-powershell-to-protect-additional-folders"></a>PowerShell を使用して追加のフォルダーを保護する
 
-1. スタート メニューに **「PowerShell**」と入力し、**Windows PowerShell** 右クリックして **[管理者として実行**] を選択します
+1. [スタート] メニューに **「PowerShell**」と入力し、**Windows PowerShell** 右クリックして [**管理者として実行**] を選択します
 
 2. 次の PowerShell コマンドレットを入力し `<the folder to be protected>` 、フォルダーのパス (次のように `"c:\apps\"`) に置き換えます。
 
@@ -108,7 +108,7 @@ Windows セキュリティ アプリ、グループ ポリシー、PowerShell �
 特定のアプリが常に安全であると見なされ、保護されたフォルダー内のファイルへの書き込みアクセス権を付与するかどうかを指定できます。 アプリの許可は、特定のアプリがフォルダー アクセスの制御機能によってブロックされている場合に便利です。
 
 > [!IMPORTANT]
-> 既定では、Windowsは許可されたリストに対してフレンドリと見なされるアプリを追加します。 自動的に追加されるこのようなアプリは、Windows セキュリティ アプリに表示される一覧や、関連付けられた PowerShell コマンドレットを使用して記録されません。 ほとんどのアプリを追加する必要はありません。 アプリがブロックされ、その信頼性を確認できる場合にのみ、アプリを追加します。
+> 既定では、Windows では、許可された一覧にわかりやすいと見なされるアプリが追加されます。 自動的に追加されるこのようなアプリは、Windows セキュリティ アプリに表示される一覧や、関連付けられた PowerShell コマンドレットを使用して記録されません。 ほとんどのアプリを追加する必要はありません。 アプリがブロックされ、その信頼性を確認できる場合にのみ、アプリを追加します。
 
 アプリを追加するときは、アプリの場所を指定する必要があります。 その場所にあるアプリのみが、保護されたフォルダーへのアクセスを許可されます。 アプリ (同じ名前) が別の場所にある場合、アプリは許可リストに追加されず、フォルダー アクセスの制御によってブロックされる可能性があります。
 
@@ -132,13 +132,13 @@ Windows セキュリティ アプリ、グループ ポリシー、PowerShell �
 
 2. **[グループ ポリシー管理エディター]** で、**[コンピューターの構成]** に移動し、**[管理用テンプレート]** を選択します。
 
-3. ツリーを展開して、**Exploit Guard** \> **によって制御されたフォルダー へのアクセス****Windows Defender Microsoft Defender ウイルス対策** \> **コンポーネント**\>をWindowsします。
+3. ツリーを **Windows コンポーネント** \> **に展開します。Microsoft Defender ウイルス対策** \> **Windows Defender Exploit Guard** \> **によって制御されたフォルダー へのアクセスが許可されます**。
 
 4. [ **許可されるアプリケーションの構成]** 設定をダブルクリックし、オプションを **[有効]** に設定します。 [ **表示** ] を選択し、各アプリを入力します。
 
 ### <a name="use-powershell-to-allow-specific-apps"></a>PowerShell を使用して特定のアプリを許可する
 
-1. スタート メニューに **「PowerShell**」と入力し、**Windows PowerShell** 右クリックして **[管理者として実行**] を選択します
+1. [スタート] メニューに **「PowerShell**」と入力し、**Windows PowerShell** 右クリックして [**管理者として実行**] を選択します
 2. 次のコマンドレットを入力します。
 
     ```PowerShell

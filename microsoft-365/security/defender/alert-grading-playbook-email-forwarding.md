@@ -1,8 +1,9 @@
 ---
 title: 疑わしいメール転送アクティビティのアラートの採点
 description: アラートを確認し、攻撃を修復し、ネットワークを保護するための推奨されるアクションを実行する、疑わしい電子メール転送アクティビティのアラート の採点。
-keywords: インシデント, アラート, 調査, 分析, 応答, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365
-ms.prod: m365-security
+keywords: インシデント、アラート、調査、分析、応答、相関、攻撃、マシン、デバイス、ユーザー、複数の ID、ID、メールボックス、メール、365、Microsoft、M365
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: dcfb6d01503dd4499ce6431b95a433c4cb598de1
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 088cb74f16fae1155b86b1bfa6b5c72aae287720
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663228"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482100"
 ---
 # <a name="alert-grading-for-suspicious-email-forwarding-activity"></a>疑わしいメール転送アクティビティのアラートの採点
 
@@ -37,9 +37,9 @@ ms.locfileid: "64663228"
 
 脅威アクターは、侵害されたユーザー アカウントを、ユーザーの受信トレイのメールの読み取り、外部受信者へのメールの転送、フィッシングメールの送信など、悪意のある目的で使用できます。 対象ユーザーは、自分のメールが転送されていることを認識していない可能性があります。 これは、攻撃者がユーザー アカウントが侵害されたときに使用する非常に一般的な戦術です。
 
-メールは、手動で転送することも、転送ルールを使用して自動的に転送することもできます。 自動転送は、受信トレイ ルール、Exchangeトランスポート ルール (ETR)、SMTP 転送など、複数の方法で実装できます。 手動転送ではユーザーからの直接操作が必要ですが、自動転送されたすべてのメールに気づいていない可能性があります。 Microsoft 365では、ユーザーが悪意のある可能性のある電子メール アドレスに電子メールを自動転送すると、アラートが発生します。
+メールは、手動で転送することも、転送ルールを使用して自動的に転送することもできます。 自動転送は、受信トレイ ルール、Exchange トランスポート ルール (ETR)、SMTP 転送など、複数の方法で実装できます。 手動転送ではユーザーからの直接操作が必要ですが、自動転送されたすべてのメールに気づいていない可能性があります。 Microsoft 365 では、ユーザーが悪意のある可能性のある電子メール アドレスに電子メールを自動転送すると、アラートが発生します。
 
-このプレイブックは、疑わしいメール転送アクティビティアラートを調査し、それらを真陽性 (TP) または偽陽性 (FP) として迅速に評価するのに役立ちます。 その後、TP アラートに対して推奨されるアクションを実行して、攻撃を修復できます。
+このプレイブックは、疑わしいEmail転送アクティビティ アラートを調査し、それらを真陽性 (TP) または偽陽性 (FP) として迅速に評価するのに役立ちます。 その後、TP アラートに対して推奨されるアクションを実行して、攻撃を修復できます。
 
 Microsoft Defender for Office 365とMicrosoft Defender for Cloud Appsのアラートの評価の概要については、[概要記事](alert-grading-playbooks.md)を参照してください。
 
@@ -51,9 +51,9 @@ Microsoft Defender for Office 365とMicrosoft Defender for Cloud Appsのアラ�
 
 - メールが悪意のあるメール アドレスに転送されている場合は、必要なアクションを実行しました。
 
-## <a name="email-forwarding-rules"></a>電子メール転送ルール
+## <a name="email-forwarding-rules"></a>Email転送ルール
 
-電子メール転送ルールを使用すると、ユーザーは、ユーザーのメールボックスに送信された電子メール メッセージを組織内または外部の別のユーザーのメールボックスに転送するルールを作成できます。 一部のメール ユーザー (特に複数のメールボックスを持つユーザー) は、勤務先のメールを自分のプライベートメール アカウントに移動するように転送ルールを構成します。 電子メール転送は便利な機能ですが、情報が漏えいする可能性があるため、セキュリティ リスクを引き起こす可能性もあります。 攻撃者はこの情報を使用して、組織またはそのパートナーを攻撃する可能性があります。
+Email転送ルールを使用すると、ユーザーは、ユーザーのメールボックスに送信された電子メール メッセージを組織内または外部の別のユーザーのメールボックスに転送するルールを作成できます。 一部のメール ユーザー (特に複数のメールボックスを持つユーザー) は、勤務先のメールを自分のプライベートメール アカウントに移動するように転送ルールを構成します。 Email転送は便利な機能ですが、情報が漏えいする可能性があるため、セキュリティ リスクを引き起こす可能性もあります。 攻撃者はこの情報を使用して、組織またはそのパートナーを攻撃する可能性があります。
 
 ### <a name="suspicious-email-forwarding-activity"></a>疑わしいメール転送アクティビティ
 
@@ -65,12 +65,12 @@ Microsoft Defender for Office 365は、疑わしいメール転送ルールを�
 
 詳細については、次のブログ記事を参照してください。
 
-- [Business Email Compromise](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
+- [ビジネス Email侵害](https://techcommunity.microsoft.com/t5/microsoft-defender-for-office/business-email-uncompromised-part-one/ba-p/2159900)
 - [ビジネス メール侵害の背景: クロスドメインの脅威データを使用して大規模な BEC キャンペーンを中断する](https://www.microsoft.com/security/blog/2021/06/14/behind-the-scenes-of-business-email-compromise-using-cross-domain-threat-data-to-disrupt-a-large-bec-infrastructure/)
 
 ## <a name="alert-details"></a>アラートの詳細
 
-不審な電子メール転送アクティビティ アラートを確認するには、[ **アラート]** ページを開いて [ **アクティビティの一覧** ] セクションを表示します。 次に例を示します。
+不審なEmail転送アクティビティ アラートを確認するには、[**アラート]** ページを開き、[**アクティビティの一覧**] セクションを表示します。 次に例を示します。
 
 :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png" alt-text="アラートに関連するアクティビティの一覧" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-activity-list.png":::
 
@@ -81,7 +81,7 @@ Microsoft Defender for Office 365は、疑わしいメール転送ルールを�
 **[理由**] フィールドには、このアラートに関連する次の情報が含まれています。
 
 - 転送の種類 (FT) は、次のいずれかです。
-  - Exchange トランスポート ルール (ETR): トランスポート ルールを使用して転送Exchange
+  - Exchange トランスポート ルール (ETR): Exchange トランスポート ルールを使用して転送
   - SMTP: メールボックス転送を使用して転送される
   - InboxRule: 受信トレイルールを使用して転送される
 
@@ -107,7 +107,7 @@ Microsoft Defender for Office 365は、疑わしいメール転送ルールを�
   - 送信者から送信された最近送信されたメールの数がフィッシング、スパム、またはマルウェアとして検出されたことを確認します。
   - 送信された電子メールの数に機密情報が含まれているかどうかを確認します。
 
-- Microsoft Azure ポータルで危険なサインイン動作を評価します。
+- Microsoft Azure portalでの危険なサインイン動作を評価します。
 - ユーザーのデバイス上の悪意のあるアクティビティを確認します。
 
 ### <a name="are-the-activities-malicious"></a>アクティビティは悪意がありますか?
@@ -135,7 +135,7 @@ Microsoft 365 Defender ポータルの機能の可用性に基づいて、Threat
 
     :::image type="content" source="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png" alt-text="受信者の一覧の例" lightbox="../../media/alert-grading-playbook-email-forwarding/alert-grading-playbook-email-forwarding-recipients-list.png":::
 
-  - 他Whoこれらの受信者に電子メールを転送しましたか?
+  - 他に誰がこれらの受信者に電子メールを転送しましたか?
   - これらの受信者に転送されたメールの数はどれくらいですか?
   - これらの受信者に電子メールが転送される頻度はどのくらいですか?
 
@@ -236,15 +236,15 @@ IdentityLogonEvents
 
 ### <a name="investigating-forwarding-rules"></a>転送ルールの調査
 
-また、ルールの種類 (アラートの FT 値) に基づいて、Exchange管理センターを使用して疑わしい転送ルールを見つけることもできます。
+また、Exchange 管理センターを使用して、ルールの種類 (アラートの FT 値) に基づいて、疑わしい転送ルールを検索することもできます。
 
 - ETR
 
-  Exchangeトランスポート ルールは、[**ルール]** セクションに一覧表示されます。 すべてのルールが想定どおりに動作することを確認します。
+  Exchange トランスポート ルールは、[ **ルール]** セクションに一覧表示されます。 すべてのルールが想定どおりに動作することを確認します。
 
 - SMTP
 
-  差出人のメールボックス [**メール フローの管理] 設定 \> [電子メール転送の編集] を選択すると、メールボックス\>転送\>** ルールを確認できます。
+  メールボックス転送ルールは、送信者のメールボックス **\> [メール フローの管理] 設定\>Email [転送\>の編集**] を選択して確認できます。
 
 - InboxRule
 

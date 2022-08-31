@@ -15,16 +15,17 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365solution-mdo-migration
+- highpri
 ms.custom: migrationguides
 description: サード パーティの保護サービスまたはデバイスからMicrosoft Defender for Office 365保護に移行するための前提条件の手順。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7134d1e306de99b3af70a934ec9e9880ea98d268
-ms.sourcegitcommit: 00948161a72d8cea8c2baba873743fc4a0e19f90
+ms.openlocfilehash: 1c772067d0c4ec14e20136f60b0c462f15f5c1e5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/22/2022
-ms.locfileid: "66969838"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482166"
 ---
 # <a name="migrate-to-microsoft-defender-for-office-365---phase-1-prepare"></a>Microsoft Defender for Office 365への移行 - フェーズ 1: 準備
 
@@ -61,7 +62,7 @@ Defender for Office 365のネイティブ機能と動作のテストと観察に
 
 ## <a name="check-your-existing-protection-configuration-in-microsoft-365"></a>Microsoft 365 で既存の保護構成を確認する
 
-前述のように、サードパーティの保護サービスを使用している場合でも、Microsoft 365 に配信されるメールのすべての保護機能を完全にオフにすることは不可能です。 そのため、Microsoft 365 組織で少なくとも一部の電子メール保護機能が構成されているのは珍しいことではありません。 例:
+前述のように、サードパーティの保護サービスを使用している場合でも、Microsoft 365 に配信されるメールのすべての保護機能を完全にオフにすることは不可能です。 そのため、Microsoft 365 組織で少なくとも一部の電子メール保護機能が構成されているのは珍しいことではありません。 以下に例を示します。
 
 - 以前は、Microsoft 365 でサード パーティの保護サービスを使用していなかった。 Microsoft 365 で、現在無視されている保護機能を使用して構成した可能性があります。 ただし、Microsoft 365 で保護機能を有効にするために"ダイヤルを回す" と、これらの設定が有効になる場合があります。
 - Microsoft 365 Protection には、既存の保護サービスを通じて誤検知 (不適切とマークされた良いメール) または偽陰性 (不正なメールが許可されている) の宿泊施設が含まれている場合があります。

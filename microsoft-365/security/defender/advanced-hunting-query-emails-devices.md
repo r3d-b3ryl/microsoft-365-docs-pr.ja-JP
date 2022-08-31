@@ -1,10 +1,11 @@
 ---
 title: 高度な捜索を使用して、デバイス、電子メール、アプリ、ID 間で脅威を検出する
 description: 一般的な捜索シナリオと、デバイス、電子メール、アプリ、ID を対象とするサンプル クエリを調査します。
-keywords: 高度な捜索, Office365 データ, Windows デバイス, Office365 電子メールの正規化, 電子メール, アプリ, ID, 脅威の捜索, サイバー脅威の捜索, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
+keywords: 高度な捜索, Office365 データ, Windows デバイス, Office365 電子メール正規化, 電子メール, アプリ, ID, 脅威の捜索, サイバー脅威の捜索, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 0ca9a951ffd561113a806341d25bc1f0661732cc
-ms.sourcegitcommit: a8fbaf4b441b5325004f7a2dacd9429ec9d80534
+ms.openlocfilehash: 740f9c5e683297f2a4d990cad5fdbc8c6295ed57
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/26/2022
-ms.locfileid: "65739951"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481858"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>デバイス、メール、アプリ、ID 全体の脅威を探す
 
@@ -37,7 +37,7 @@ ms.locfileid: "65739951"
 
 Microsoft 365 Defenderでの[高度な捜索](advanced-hunting-overview.md)では、次の複数の脅威をプロアクティブに検出できます。
 - Microsoft Defender for Endpointによって管理されるデバイス
-- Microsoft 365によって処理された電子メール
+- Microsoft 365 によって処理された電子メール
 - Microsoft Defender for Cloud AppsとMicrosoft Defender for Identityによって追跡されるクラウド アプリアクティビティ、認証イベント、ドメイン コントローラーアクティビティ
 
 このレベルの可視性を使用すると、電子メールや Web に届く高度な侵入、ローカル特権の昇格、特権ドメイン資格情報の取得、デバイス間への横移動など、ネットワークのセクションを横断する脅威をすばやく検出できます。 
@@ -50,7 +50,7 @@ Microsoft 365 Defenderでの[高度な捜索](advanced-hunting-overview.md)で�
 ### <a name="obtain-user-accounts-from-email-addresses"></a>メール アドレスからユーザー アカウントを取得する
 [デバイスとメールを対象とする複数のテーブル](advanced-hunting-schema-tables.md)全体に対してクエリを作成する場合、送信者または受信者のメール アドレスからユーザー アカウント名を取得する必要があります。 一般に、電子メール アドレスの *ローカル ホスト* を使用して、受信者または送信者のアドレスに対してこれを行うことができます。
 
-次のスニペットでは、[tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto関数を使用して、列の受信者からの電子メール アドレスの直前に`@`ローカル ホストを抽出します`RecipientEmailAddress`。
+次のスニペットでは、 [tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto 関数を使用して、列の受信者からの電子メール アドレスの直前に `@` ローカル ホストを抽出します `RecipientEmailAddress`。
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -157,7 +157,7 @@ DeviceInfo
 
 ### <a name="example-query-for-macos-devices"></a>macOS デバイスのクエリの例
 
-次のクエリ例を使用して、Catalina より古いバージョンのmacOSを実行しているすべてのデバイスを確認します。
+次のクエリ例を使用して、Catalina より古いバージョンの macOS を実行しているすべてのデバイスを確認します。
 
 ```kusto
 DeviceInfo

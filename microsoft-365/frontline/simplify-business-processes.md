@@ -22,16 +22,19 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 45e476ea1054c8d495c78f8744109d24130706d1
-ms.sourcegitcommit: 5e5c2c1f7c321b5eb1c5b932c03bdd510005de13
-ms.translationtype: HT
+ms.openlocfilehash: 020862c14e02b06718a7816ab6200341969404c8
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/15/2022
-ms.locfileid: "66822633"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472010"
 ---
 # <a name="simplify-business-processes-for-frontline-teams"></a>現場チームのビジネス プロセスを簡略化する
 
 Teams アプリ、Power Apps、Power BI を使用して、現場チームのビジネス プロセスを簡略化できます。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 > [!NOTE]
 > [金融サービス](/industry/financial-services)、[医療](/industry/healthcare)、[非営利団体](/industry/nonprofit)、[小売](/industry/retail) 環境向けのその他の機能は、Dynamics 365 および Microsoft Azure の機能と Microsoft 365 機能を含む Microsoft 業界クラウドで利用できます。

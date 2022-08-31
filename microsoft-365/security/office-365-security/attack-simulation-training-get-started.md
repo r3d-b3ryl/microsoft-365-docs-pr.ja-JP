@@ -18,14 +18,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、攻撃シミュレーション トレーニングを使用して、Microsoft 365 E5または計画 2 組織でシミュレートされたフィッシングとパスワード攻撃を実行Microsoft Defender for Office 365方法を学習できます。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: cee9ca2160a5840860efb4400e9a289cb90fd509
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 4ae78b01a2f3b156f0842f13c03ef296b9dca492
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409160"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481726"
 ---
 # <a name="get-started-using-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365での攻撃シミュレーション トレーニングの使用を開始する
 

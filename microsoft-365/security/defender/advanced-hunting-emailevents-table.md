@@ -1,10 +1,11 @@
 ---
 title: 高度な検索スキーマの EmailEvents テーブル
-description: 高度なハンティング スキーマの EmailEvents テーブルで、Microsoft 365メールに関連付けられているイベントについて説明します
+description: 高度なハンティング スキーマの EmailEvents テーブルで、Microsoft 365 メールに関連付けられているイベントについて説明します
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, EmailEvents, ネットワーク メッセージ ID, 送信者, 受信者, 添付ファイル ID, 添付ファイル名, マルウェアの判定, フィッシング判定, 添付ファイル数, リンク数, URL カウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b34ac5538a2c38261f7da0a0cd3a75452660ef6e
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 5ac64dfbfd42d76e350d27a5d7a1594e6c055cba
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65128807"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482056"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -37,7 +37,7 @@ ms.locfileid: "65128807"
 `EmailEvents` [高度なハンティング](advanced-hunting-overview.md) スキーマの表には、Microsoft Defender for Office 365での電子メールの処理に関連するイベントに関する情報が含まれています。 このテーブルの情報を返すクエリを作成するには、このリファレンスを使用します。
 
 > [!TIP]
-> テーブルでサポートされているイベントの種類 (`ActionType`値) の詳細については、Defender for Cloudで使用できる組み込みのスキーマ参照を使用します。
+> テーブルでサポートされているイベントの種類 (`ActionType` 値) の詳細については、Defender for Cloud で使用できる組み込みのスキーマ参照を使用します。
 
 高度な捜索スキーマのその他のテーブルの詳細については、「[高度な捜索のリファレンス](advanced-hunting-schema-tables.md)」 を参照してください。
 
@@ -47,18 +47,18 @@ ms.locfileid: "65128807"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | `string` | Microsoft 365によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | `string` | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `InternetMessageId` | `string` | 送信メール システムにより設定された、メールの一般向けの識別子 |
 | `SenderMailFromAddress` | `string` | MAIL FROM ヘッダーの送信者メール アドレス (エンベロープ送信者またはリターン パス アドレスとも呼ばれる) |
 | `SenderFromAddress` | `string` | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
 | `SenderDisplayName` | `string` | アドレス帳に表示される送信者の名前(通常は、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ) |
-| `SenderObjectId` | `string` |Azure ADの送信者のアカウントの一意の識別子 |
+| `SenderObjectId` | `string` |Azure AD の送信者のアカウントの一意の識別子 |
 | `SenderMailFromDomain` | `string` | MAIL FROM ヘッダーの送信者ドメイン (エンベロープ送信者またはリターン パス アドレスとも呼ばれる) |
 | `SenderFromDomain` | `string` | 受信者のメール クライアントで受信者に表示される、MAIL FROM ヘッダーの送信者ドメイン |
 | `SenderIPv4` | `string` | 検出された、最後にメッセージをリレーしたメール サーバーの IPv4 アドレス |
 | `SenderIPv6` | `string` | 検出された、最後にメッセージをリレーしたメール サーバーの IPv6 アドレス |
 | `RecipientEmailAddress` | `string` | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
-| `RecipientObjectId` | `string` | Azure ADの電子メール受信者の一意の識別子 |
+| `RecipientObjectId` | `string` | Azure AD の電子メール受信者の一意識別子 |
 | `Subject` | `string` | メールの件名 |
 | `EmailClusterId` | `string` | コンテンツのヒューリスティック分析に基づいてまとめられた、似通ったメールのグループの識別子 |
 | `EmailDirection` | `string` | ネットワークに対するメールの方向: Inbound、Outbound、Intra-org |

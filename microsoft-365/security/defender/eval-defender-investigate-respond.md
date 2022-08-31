@@ -3,7 +3,8 @@ title: パイロット環境でMicrosoft 365 Defenderを使用して調査し、
 description: Microsoft 365 Defender試用版ラボまたはパイロット環境で攻撃シミュレーションを設定し、デバイス、ID、データ、およびアプリケーションを保護するようにユーザーに教えるように設計されたセキュリティ ソリューションを試します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 71ba536b3d93a4bff003e9094a1e6fab83660253
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: b795896521bdf4f7230e2011f753d140a5bbddd3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748013"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481792"
 ---
 # <a name="step-6-investigate-and-respond-using-microsoft-365-defender-in-a-pilot-environment"></a>手順 6. パイロット環境でMicrosoft 365 Defenderを使用して調査し、対応する
 

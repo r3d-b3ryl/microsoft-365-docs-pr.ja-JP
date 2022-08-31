@@ -17,16 +17,16 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouse を使用するマネージド サービス プロバイダー (MSP) 向けに、多要素認証を管理する方法を説明します。
-ms.openlocfilehash: aa9d25ce633088d840a38e1927c4ebf3baef56b3
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: ef658f19aba9530ab4f1cd76e1e32a1733f3594c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67056466"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471778"
 ---
 # <a name="manage-multifactor-authentication-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseで多要素認証を管理する
 
-Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプリケーションへのアクセスを保護するのに役立ち、2 つ目の形式の認証を使用して別のセキュリティ層を提供します。 [多要素認証] タブには、テナント全体での MFA 有効化の状態に関する詳細情報が表示されます。 一覧から任意のテナントを選択すると、MFA を必要とする条件付きアクセス ポリシーが既に構成されていることや、MFA にまだ登録していないユーザーなど、そのテナントの詳細が表示されます。
+Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプリケーションへのアクセスを保護するのに役立ち、2 つ目の形式の認証を使用して別のセキュリティ層を提供します。 [多要素認証] ページには、テナント全体の MFA 有効化の状態に関する詳細な情報が表示されます。 一覧から任意のテナントを選択すると、MFA を必要とする条件付きアクセス ポリシーが既に構成されていることや、MFA にまだ登録していないユーザーなど、そのテナントの詳細が表示されます。
 
 中小企業 (SMB) のお客様の場合は、少なくとも[セキュリティの既定値群](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)を有効にすることをお勧めします。 より複雑なシナリオでは、[条件付きアクセス](/azure/active-directory/conditional-access/overview)を使用して特定のポリシーを構成できます。
 
@@ -42,7 +42,7 @@ Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプ
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **多要素認証**] を選択します。
 
-2. [ **多要素認証** ] タブで、MFA を使用していないテナントを探し、そのテナントを選択してテナントの詳細ウィンドウを開きます。
+2. [ **多要素認証** ] ページで、MFA を使用していないテナントを探し、そのテナントを選択してテナントの詳細ウィンドウを開きます。
 
 3. [ **MFA の有効化** ] タブの [ **セキュリティの既定値を使用した MFA] で、[セキュリティの既定値** を **有効にする**] を選択します。
 
@@ -54,7 +54,7 @@ Azure Active Directory (Azure AD) 多要素認証 (MFA) は、データとアプ
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **多要素認証**] を選択します。
 
-2. [ **多要素認証** ] タブで、MFA に登録されていないユーザーを持つテナントを探し、テナントを選択してテナントの詳細ウィンドウを開きます。
+2. **[多要素認証**] ページで、MFA に登録されていないユーザーを持つテナントを探し、テナントを選択してテナントの詳細ウィンドウを開きます。
 
 3. [ **MFA に登録されていないユーザー** ] タブを選択します。
 

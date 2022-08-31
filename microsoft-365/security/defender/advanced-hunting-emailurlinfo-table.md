@@ -4,7 +4,8 @@ description: 高度な捜索スキーマの EmailUrlInfo テーブルで URL ま
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, EmailUrlInfo, ネットワーク メッセージ ID, URL, リンク
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 9453a5a7ddb48ff09ca217aa23c5e557d57d00e5
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: 7759ac799304e2073b9aee027bf1f71ee0d02ef6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130957"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482122"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -41,7 +41,7 @@ ms.locfileid: "65130957"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | `string` | Microsoft 365によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | `string` | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `Url` | `string` | メールの件名、本文、または添付ファイル内の完全な URL |
 | `UrlDomain` | `string` | URL のドメイン名またはホスト名 |
 | `ReportId` | `long` | 繰り返しカウンターに基づくイベント識別子。 一意のイベントを識別するには、この列を DeviceName 列と Timestamp 列と組み合わせて使用する必要があります。 |

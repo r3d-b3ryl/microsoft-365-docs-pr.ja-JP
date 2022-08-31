@@ -4,7 +4,8 @@ description: 利用可能な米国政府機関のお客様の要件と機能に�
 keywords: government, gcc, high, requirements, capabilities, defender, Microsoft 365 Defender, xdr, dod
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +16,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 53fc78159580a27a8af04009f4e5ecd5b18bc4e8
-ms.sourcegitcommit: f181e110cdb983788a86f30d5bb018e53c83e64d
+ms.openlocfilehash: d1fa56bc797a3f651d79ab87f9ade0a9d753849d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/13/2022
-ms.locfileid: "66057585"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482144"
 ---
 # <a name="microsoft-365-defender-for-us-government-customers"></a>Microsoft 365 Defender for US Government のお客様
 
@@ -30,10 +30,10 @@ ms.locfileid: "66057585"
 
 Azure US Government 環境に組み込まれている米国政府機関のお客様向けのMicrosoft 365 Defenderは、Azure Commercial のMicrosoft 365 Defenderと同じ基盤となるテクノロジを使用します。
 
-このオファリングは、GCC、GCC High、DoD のお客様が利用でき、商用バージョンと同じ防止、検出、調査、修復に基づいています。 ただし、このオファリングの機能の可用性にはいくつかの違いがあります。
+このオファリングは GCC、GCC High、DoD のお客様が利用でき、商用バージョンと同じ防止、検出、調査、修復に基づいています。 ただし、このオファリングの機能の可用性にはいくつかの違いがあります。
 
 > [!NOTE]
-> Defender for Cloud Apps、Defender for Endpoint、または Defender for Identity in Commercial を使用しているGCCのお客様は、Microsoft 365 Defender GCCの対象となるサービスをGCCバージョンに移行する必要があります。
+> Defender for Cloud Apps、Defender for Endpoint、または Defender for Identity を商用で使用している GCC のお客様は、GCC の対象となる GCC バージョンにこれらのサービスを移行する必要Microsoft 365 Defender。
 
 ## <a name="licensing-requirements"></a>ライセンスの要件
 
@@ -47,15 +47,15 @@ Azure US Government 環境に組み込まれている米国政府機関のお客
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft 365 GCC G5|GCC High のMicrosoft 365 E5|MICROSOFT 365 G5 for DOD|
-|Microsoft 365 G5 セキュリティ GCC|Microsoft 365 G5 Security for GCC High|MICROSOFT 365 G5 Security for DOD|
-|Enterprise Mobility + Security G5 GCC|GCC High のEnterprise Mobility + Security E5|DOD の E5 Enterprise Mobility + Security|
+|Microsoft 365 GCC G5|GCC High のMicrosoft 365 E5|DOD 用 Microsoft 365 G5|
+|Microsoft 365 G5 セキュリティ GCC|Microsoft 365 G5 Security for GCC High|Microsoft 365 G5 Security for DOD|
+|Enterprise Mobility + Security G5 GCC|GCC High の E5 Enterprise Mobility + Security|DOD の E5 Enterprise Mobility + Security|
 |Office 365 G5 GCC|GCC High のOffice 365 E5|DOD のOffice 365 E5|
-|Microsoft Defender for Cloud Apps GCC|GCC High のMicrosoft Defender for Cloud Apps|DOD のMicrosoft Defender for Cloud Apps|
+|gcc のMicrosoft Defender for Cloud Apps|GCC High のMicrosoft Defender for Cloud Apps|DOD のMicrosoft Defender for Cloud Apps|
 |Microsoft Defender for Endpoint - GCC|GCC High のMicrosoft Defender for Endpoint|DOD のMicrosoft Defender for Endpoint|
 |Microsoft Defender for Identity - GCC|GCC High のMicrosoft Defender for Identity|DOD のMicrosoft Defender for Identity|
 |Microsoft Defender for Office 365 (プラン 2) GCC|GCC High のMicrosoft Defender for Office 365 (プラン 2)|DOD のMicrosoft Defender for Office 365 (プラン 2)|
-|E5 GCCをWindows 10 Enterpriseする|Windows 10 Enterprise E5 for GCC High|DOD の E5 のWindows 10 Enterprise|
+|Windows 10 Enterprise E5 GCC|WINDOWS 10 ENTERPRISE E5 for GCC High|DOD の E5 のWindows 10 Enterprise|
 |
 
 ### <a name="server-licensing"></a>サーバー ライセンス
@@ -66,7 +66,7 @@ Azure US Government 環境に組み込まれている米国政府機関のお客
 
 |GCC|GCC High|DoD|
 |---|---|---|
-|Microsoft Defender for Endpoint サーバー GCC|GCC High 用Microsoft Defender for Endpoint サーバー|MICROSOFT DEFENDER FOR ENDPOINT サーバー for DOD|
+|Microsoft Defender for Endpoint サーバー GCC|Microsoft Defender for Endpoint サーバー for GCC High|MICROSOFT DEFENDER FOR ENDPOINT サーバー for DOD|
 |Microsoft Defender for servers|Microsoft Defender for servers - Government|Microsoft Defender for servers - Government|
 |
 
@@ -85,7 +85,7 @@ Azure US Government 環境に組み込まれている米国政府機関のお客
 |DoD|ロール アウト|
 |
 > [!NOTE]
-> GCC顧客であり、Microsoft Defender for EndpointコマーシャルからGCCに移行する過程にある場合は、Microsoft Defender for Endpoint商用データにアクセスするために使用https://transition.security.microsoft.comします。
+> GCC の顧客であり、Microsoft Defender for Endpointコマーシャルから GCC に移行する過程にある場合は、Microsoft Defender for Endpoint商用データにアクセスするために使用https://transition.security.microsoft.comします。
 
 ## <a name="api"></a>API
 
@@ -95,7 +95,7 @@ Azure US Government 環境に組み込まれている米国政府機関のお客
 
 ****
 
-|エンドポイントの種類|GCC|GCC 高& DoD|
+|エンドポイントの種類|GCC|GCC High & DoD|
 |---|---|---|
 |ログイン|`https://login.microsoftonline.com`|`https://login.microsoftonline.us`|
 |Microsoft 365 Defender API|`https://api-gcc.security.microsoft.us`|`https://api-gov.security.microsoft.us`|
@@ -114,7 +114,7 @@ Azure US Government 環境に組み込まれている米国政府機関のお客
 |フィーチャー名|GCC|GCC High|DoD|
 |---|:---:|:---:|:---:|
 |統合: Microsoft Sentinel (インシデント&未加工データ)|![はい](../defender-endpoint/images/svg/check-yes.svg) パブリック プレビュー段階|![はい](../defender-endpoint/images/svg/check-yes.svg) パブリック プレビュー段階|![はい](../defender-endpoint/images/svg/check-yes.svg) パブリック プレビュー段階|
-|Microsoft 脅威エキスパート|![いいえ](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|![いいえ](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|
+|Microsoft 脅威エキスパート|![不要](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|![不要](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|![不要](../defender-endpoint/images/svg/check-no.svg) エンジニアリング バックログについて|
 
 Event Streaming API テーブルの詳細な一覧については、Event Streaming API [でサポートされているストリーミング イベントの種類Microsoft 365 Defenderを](supported-event-types.md)参照してください。
 

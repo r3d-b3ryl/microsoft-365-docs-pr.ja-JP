@@ -3,7 +3,8 @@ title: 手順 1. 最初のインシデントをトリアージして分析する
 description: Microsoft 365 Defenderで最初のインシデントの分析をトリアージして開始する方法。
 keywords: インシデント, アラート, 調査, 相関関係, 攻撃, マシン, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, microsoft, m365, インシデント対応, サイバー攻撃
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,19 +18,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 596966c7c1975ebb8f20b306be5e4ab0a34bd99e
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: b930181681d5849af4e99bf41d2b8643329175a5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66893641"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482232"
 ---
-# <a name="step-1-triage-and-analyze-your-first-incident"></a>手順 1. 最初のインシデントをトリアージして分析する
+# <a name="step-1-triage-and-analyze-your-first-incident"></a>手順 1。 最初のインシデントをトリアージして分析する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -128,7 +129,7 @@ Microsoft 365 Defenderを使用してデータを読み取り、分析する方�
 
 6. 他のアラートを選択すると、攻撃の全体像を把握できます。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 :::image type="content" source="../../media/first-incident-overview/first-incident-path-step2.png" alt-text="[最初のインシデントに対応する] ページの [修復] オプション" lightbox="../../media/first-incident-overview/first-incident-path-step2.png":::
 

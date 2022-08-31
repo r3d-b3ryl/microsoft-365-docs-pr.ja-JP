@@ -3,7 +3,8 @@ title: ユーザーなしでMicrosoft 365 Defenderにアクセスするアプリ
 description: ユーザーなしでMicrosoft 365 Defenderにアクセスするアプリを作成する方法について説明します。
 keywords: アプリ、アクセス、API、作成
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 05450912d78e7da774de76e02dfe4d42a1569084
-ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
+ms.openlocfilehash: fbcf081bda20dd470837614c985de77d037673a3
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/15/2022
-ms.locfileid: "66102396"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471392"
 ---
 # <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>ユーザーなしでMicrosoft 365 Defenderにアクセスするアプリを作成する
 
@@ -41,9 +41,9 @@ ms.locfileid: "66102396"
 
 このページでは、デーモンやバックグラウンド サービスを作成する場合など、定義されたユーザーなしでMicrosoft 365 Defenderにプログラムでアクセスするアプリケーションを作成する方法について説明します。
 
-1 人以上のユーザーに代わってMicrosoft 365 Defenderにプログラムでアクセスする必要がある場合は、「[ユーザーの代わりにMicrosoft 365 Defender API にアクセスするアプリを作成](api-create-app-user-context.md)する」および「[Microsoft 365 Defender API へのパートナー アクセスを持つアプリを作成する」を](api-partner-access.md)参照してください。 必要なアクセスの種類がわからない場合は、[概要](api-access.md)を参照してください。
+1 人以上のユーザーに代わってMicrosoft 365 Defenderにプログラムでアクセスする必要がある場合は、「[ユーザーの代わりにMicrosoft 365 Defender API にアクセスするアプリを作成](api-create-app-user-context.md)する」および「[Microsoft 365 Defender API へのパートナー アクセスを持つアプリを作成する」を](api-partner-access.md)参照してください。 必要なアクセスの種類がわからない場合は、「 [作業の開始](api-access.md)」を参照してください。
 
-Microsoft 365 Defenderは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、ワークフローを自動化し、Microsoft 365 Defenderの機能を利用するのに役立ちます。 この API アクセスには、OAuth2.0 認証が必要です。 詳細については、「[OAuth 2.0 Authorization Code Flow」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
+Microsoft 365 Defenderは、一連のプログラム API を通じて、そのデータとアクションの多くを公開します。 これらの API は、ワークフローを自動化し、Microsoft 365 Defenderの機能を利用するのに役立ちます。 この API アクセスには、OAuth2.0 認証が必要です。 詳細については、「 [OAuth 2.0 承認コード フロー」を](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)参照してください。
 
 一般に、これらの API を使用するには、次の手順を実行する必要があります。
 
@@ -61,7 +61,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
 1. **グローバル管理者** ロールを持つユーザーとして [Azure](https://portal.azure.com) にサインインします。
 
-2. **Azure Active Directory** > **アプリの登録** > **新しい登録** に移動します。
+2. **Azure Active Directory** >  **に移動アプリの登録** > **新しい登録**。
 
    :::image type="content" source="../../media/atp-azure-new-app2.png" alt-text="Microsoft 365 Defender ポータルの [新しい登録] タブ" lightbox="../../media/atp-azure-new-app2.png":::
 
@@ -120,7 +120,7 @@ Microsoft 365 Defenderは、一連のプログラム API を通じて、その�
 
 ## <a name="get-an-access-token"></a>アクセス トークンを取得する
 
-Azure Active Directory トークンの詳細については、[Azure AD のチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
+Azure Active Directory トークンの詳細については、 [Azure AD のチュートリアル](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)を参照してください。
 
 > [!IMPORTANT]
 > このセクションの例では、テスト目的でシークレット値を貼り付けすることをお勧めしますが、運用環境で実行されているアプリケーションに **シークレットをハードコーディングしないでください** 。 サード パーティは、シークレットを使用してリソースにアクセスできます。 [Azure Key Vault](/azure/key-vault/general/about-keys-secrets-certificates)を使用すると、アプリのシークレットをセキュリティで保護することができます。 アプリを保護する方法の実用的な例については、「[Azure Key Vaultを使用してサーバー アプリのシークレットを管理する」を参照してください](/learn/modules/manage-secrets-with-azure-key-vault/)。
@@ -162,7 +162,7 @@ return $token
 
 1. 新しいコンソール アプリケーションを作成します。
 
-1. [Microsoft.Identity.Client](https://www.nuget.org/packages/Microsoft.Identity.Client/) NuGetインストールします。
+1. NuGet [Microsoft.Identity.Client をインストールします](https://www.nuget.org/packages/Microsoft.Identity.Client/)。
 
 1. 次の行を追加します。
 
@@ -222,7 +222,7 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>curl を使用してアクセス トークンを取得する
 
 > [!NOTE]
-> Curl は、Windows 10 バージョン 1803 以降にプレインストールされています。 その他のバージョンのWindowsについては、[公式の curl Web サイト](https://curl.haxx.se/windows/)から直接ツールをダウンロードしてインストールします。
+> Curl は、Windows 10 バージョン 1803 以降にプレインストールされています。 他のバージョンの Windows の場合は、 [公式の curl Web サイト](https://curl.haxx.se/windows/)から直接ツールをダウンロードしてインストールします。
 
 1. コマンド プロンプトを開き、CLIENT_IDを Azure アプリケーション ID に設定します。
 

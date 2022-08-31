@@ -23,12 +23,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: c4b176d0da2d6caa9b6126ddfbd1e4d02ab1417e
-ms.sourcegitcommit: 1efb75d033860977239b479f92e7eaf274b5fbf0
-ms.translationtype: HT
+ms.openlocfilehash: db40235a7ef2b278cd532fec06745e58054580ee
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/16/2022
-ms.locfileid: "66995132"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471988"
 ---
 # <a name="get-started-with-microsoft-365-for-retail"></a>小売店向け Microsoft 365 の使用を開始する
 
@@ -48,6 +48,16 @@ Microsoft 365 と Microsoft Teams では、小売店の組織の日常業務や�
 
 > [!NOTE]
 > これらのシナリオは、Microsoft Cloud for Retail の一部でもあります。 Microsoft Dynamics 365 などの Microsoft Cloud for Retail の他の機能も使用すると、これらのシナリオでより多くのことができるようになります。 Azure、Dynamics 365、Microsoft 365 の機能を統合するこのソリューションの使用の詳細については、「[Microsoft Cloud for Retail](/industry/retail)」を参照してください。
+
+次のビデオを見て、ストアのアソシエイトが接続して共同作業を行うのに役立つ方法を確認します。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
+
+小売環境でのビジネス プロセスを簡略化する方法については、次のビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
 
 ### <a name="in-store-communication-and-collaboration"></a>ストア内コミュニケーションおよびコラボレーション
 

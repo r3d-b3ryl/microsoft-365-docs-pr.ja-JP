@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: Azure Disk Encryption など、Azure で使用できる暗号化について説明します
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 66fb4e54c0837534d6943372d84cf3a4864e4739
-ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
+ms.openlocfilehash: de0e98feb54cd2f56ebea35a0f0ec243b8712d86
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/06/2022
-ms.locfileid: "66632181"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472438"
 ---
 # <a name="encryption-in-azure"></a>Azure での暗号化
 
@@ -32,7 +32,7 @@ Azure には、ある場所から別の場所に移動する際にデータを�
 
 [クライアント側の暗号化](/azure/storage/storage-client-side-encryption)、HTTPS、または SMB 3.0 を使用して、アプリケーションと Azure 間の転送中にデータをセキュリティで保護できます。 独自の仮想マシン (VM) とユーザー間のトラフィックの暗号化を有効にすることができます。 [Azure Virtual Networks](https://azure.microsoft.com/services/virtual-network/) では、業界標準の IPsec プロトコルを使用して、企業の VPN ゲートウェイと Azure の間、およびVirtual Networkにある VM 間のトラフィックを暗号化できます。
 
-保存データの場合、Azure には AES-256 のサポートなど、多くの暗号化オプションが用意されています。これにより、ニーズに最も適したデータ ストレージ シナリオを柔軟に選択できます。 [Storage Service](/azure/storage/storage-service-encryption) Encryption を使用して Azure Storage に書き込むと、データを自動的に暗号化でき、VM で使用されるオペレーティング システムとデータ ディスクを暗号化できます。 詳細については、「 [Azure での Windows 仮想マシンのセキュリティに関する推奨事項」を](/azure/security/azure-security-disk-encryption)参照してください。 さらに、 [共有アクセス署名](/azure/storage/storage-dotnet-shared-access-signature-part-1)を使用して、Azure Storage 内のデータ オブジェクトへの委任されたアクセスを許可できます。 Azure では、Azure SQL [データベースとData Warehouse用の Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql) を使用して保存データの暗号化も提供されます。
+保存データの場合、Azure には AES-256 のサポートなど、多くの暗号化オプションが用意されています。これにより、ニーズに最も適したデータ ストレージ シナリオを柔軟に選択できます。 [Storage Service](/azure/storage/storage-service-encryption) Encryption を使用して Azure Storage に書き込むと、データを自動的に暗号化でき、VM で使用されるオペレーティング システムとデータ ディスクを暗号化できます。 詳細については、「 [Azure での Windows 仮想マシンのセキュリティに関する推奨事項」を](/azure/virtual-machines/security-recommendations)参照してください。 さらに、 [共有アクセス署名](/azure/storage/storage-dotnet-shared-access-signature-part-1)を使用して、Azure Storage 内のデータ オブジェクトへの委任されたアクセスを許可できます。 Azure では、Azure SQL [データベースとData Warehouse用の Transparent Data Encryption](/sql/relational-databases/security/encryption/transparent-data-encryption-azure-sql) を使用して保存データの暗号化も提供されます。
 
 Azure での暗号化の詳細については、 [Azure 暗号化の概要](/azure/security/security-azure-encryption-overview) と [Azure Data Encryption-at-Rest](/azure/security/azure-security-encryption-atrest) に関するページを参照してください。
 

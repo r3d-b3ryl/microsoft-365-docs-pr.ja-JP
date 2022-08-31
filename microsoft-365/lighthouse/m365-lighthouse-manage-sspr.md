@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、セルフサービスのパスワード リセットを管理する方法について説明します。
-ms.openlocfilehash: 4760953d3d25c925dbe1bad6e2c67f43c621761b
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 2b530b7f0d2d8707a0876788fd22132a5cb998c5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055924"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471634"
 ---
 # <a name="manage-self-service-password-reset-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでセルフサービスパスワードリセットを管理する
 
@@ -40,13 +40,13 @@ Microsoft 365 Lighthouseでは、パートナーは Azure Active Directory (Azur
 
 - Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **パスワードのリセット**] を選択します。
 
-[パスワード リセット] タブには、推奨設定を使用して SSPR を有効にしたテナントの概要、SSPR に登録していないユーザーの数、管理している組織全体での SSPR 展開の進行状況のテナント別の詳細な内訳が表示されます。
+[パスワード リセット] ページには、推奨設定を使用して SSPR を有効にしたテナントの概要、SSPR に登録していないユーザーの数、管理する組織全体での SSPR 展開の進行状況のテナント別の詳細な内訳が表示されます。
 
 ## <a name="enable-sspr-for-a-tenant"></a>テナントに対して SSPR を有効にする
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **パスワードのリセット**] を選択します。
 
-2. [ **パスワードリセット** ] タブで、一覧からテナントを選択して詳細ウィンドウを開きます。
+2. [ **パスワードリセット** ] ページで、一覧からテナントを選択して詳細ウィンドウを開きます。
 
 3. **Azure Active Directory (Azure AD) に移動するには、Azure Active Directory で [SSPR 設定の編集]** を選択します。
 
@@ -56,7 +56,7 @@ Microsoft 365 Lighthouseでは、パートナーは Azure Active Directory (Azur
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **パスワードのリセット**] を選択します。
 
-2. [ **パスワードリセット** ] タブで、一覧からテナントを選択して詳細ウィンドウを開きます。
+2. [ **パスワードリセット** ] ページで、一覧からテナントを選択して詳細ウィンドウを開きます。
 
 3. 通知するユーザーを選択します。
 

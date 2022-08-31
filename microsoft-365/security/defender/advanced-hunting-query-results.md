@@ -4,7 +4,8 @@ description: Microsoft 365 Defenderの高度な捜索によって返されるク
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto, 視覚化, グラフ, フィルター, ドリルダウン
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: cb17e2a3624471031eb4f72199705d6b8fe06979
-ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
+ms.openlocfilehash: 451e45b60bbb8bc9ea552b616ccd230b5cf7caf6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "65092869"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67481704"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>高度なハンティング クエリの結果を操作する
 
