@@ -27,7 +27,7 @@ ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
 description: Microsoft 365 ユーザーに他のユーザーのメールボックスにアクセスする権利を与え、他のユーザーのメールボックスのメールを読んだり、送信したりすることができるようになります。
 ms.openlocfilehash: 5b770b2967072ab6cc8b8abfec8176a7b6aac2c9
 ms.sourcegitcommit: a7c1acfb3d2cbba913e32493b16ebd8cbfeee456
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/13/2022
 ms.locfileid: "66042376"

@@ -19,7 +19,7 @@ description: この記事では、Microsoft 365 ネットワーク接続を安�
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 76bbad1b392966f9140db36cf4adbbfff7b62b2b
 ms.sourcegitcommit: 61bdfa84f2d6ce0b61ba5df39dcde58df6b3b59d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/08/2022
 ms.locfileid: "65940956"

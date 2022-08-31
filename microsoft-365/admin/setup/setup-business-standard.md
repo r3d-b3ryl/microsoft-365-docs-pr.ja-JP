@@ -30,7 +30,7 @@ search.appverid:
 description: Microsoft 365 Business Standard を購入するときに、所有するドメインを使用するか、サインアップ時に購入するかを選択することができます。
 ms.openlocfilehash: e991118fd645c01e4cc733f80bde7d9424f297c1
 ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2022
 ms.locfileid: "67085139"

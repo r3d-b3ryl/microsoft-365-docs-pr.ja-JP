@@ -20,7 +20,7 @@ search.appverid:
 description: 'すべての Microsoft Purview Information Protection ソリューションの要件: 組織のデータを分類し、保護するための秘密度ラベルを作成、構成、発行します。'
 ms.openlocfilehash: 486cc10888ebb66a657aa21930fe306073ac1868
 ms.sourcegitcommit: 5014666778b2d48912c68c2e06992cdb43cfaee3
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/07/2022
 ms.locfileid: "66663528"

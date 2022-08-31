@@ -21,7 +21,7 @@ search.appverid:
 description: 管理者、ライセンス要件、および機密ラベルを使用して組織のデータを保護する一般的なシナリオの規範的な手順。
 ms.openlocfilehash: 2a82a788ae766050c663d3d35332470aa48d9a20
 ms.sourcegitcommit: 57c2f5ba74e238543d6fd724ed79527547bd0780
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/28/2022
 ms.locfileid: "67069649"

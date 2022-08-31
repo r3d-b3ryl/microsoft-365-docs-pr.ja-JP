@@ -19,7 +19,7 @@ ms.assetid: ''
 description: 監査ログの保持ポリシーは、新しい Microsoft Purview 監査 (プレミアム) 機能の一部です。 監査ログの保持ポリシーでは、組織の監査ログを保持する期間を指定できます。
 ms.openlocfilehash: bf9f06fbce71af479ed089f912d440ba6c840b29
 ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/06/2022
 ms.locfileid: "66639206"

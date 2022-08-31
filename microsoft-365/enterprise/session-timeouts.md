@@ -25,7 +25,7 @@ ms.collection:
 description: セッション タイムアウトを使用して、Microsoft 365 クライアント アプリのセキュリティとアクセスのしやすさのバランスをとる方法を学びます。
 ms.openlocfilehash: f5b7c87cabfd6f80061c2795568cd53955caa10f
 ms.sourcegitcommit: d4b867e37bf741528ded7fb289e4f6847228d2c5
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 10/06/2021
 ms.locfileid: "60213267"

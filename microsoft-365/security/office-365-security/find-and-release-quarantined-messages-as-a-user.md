@@ -23,7 +23,7 @@ ms.prod: m365-security
 adobe-target: true
 ms.openlocfilehash: 845e72f2cf3eeb97d7d5f90224967a4fe5068cf1
 ms.sourcegitcommit: bfbe2574f487ced69e711b48ce140120bd99181b
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/02/2022
 ms.locfileid: "66607677"

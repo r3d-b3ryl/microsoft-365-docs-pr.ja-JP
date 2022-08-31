@@ -21,7 +21,7 @@ ms.custom:
 description: PowerShell スクリプトを使用して、Exchange Online で Search-UnifiedAuditLog コマンドレットを実行し、監査ログを検索します。 このスクリプトは、実行するたびに大規模なセットの監査レコードを返すように最適化されています。 これらのレコードはスクリプトによって CSV ファイルにエクスポートされ、ユーザーは Excel の Power Query を使用して表示および変換することができます。
 ms.openlocfilehash: 0c1d8d6ab8f6a2c8a0dc6a1c858a164c2f4ff494
 ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/06/2022
 ms.locfileid: "66632841"

@@ -26,7 +26,7 @@ ms.technology: m365d
 adobe-target: true
 ms.openlocfilehash: de40589c69aee6c6ab959f360b384707eca3d29a
 ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/05/2022
 ms.locfileid: "66617132"

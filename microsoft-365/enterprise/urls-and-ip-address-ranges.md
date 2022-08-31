@@ -26,7 +26,7 @@ description: '概要: Office 365 には、インターネットへの接続が�
 hideEdit: true
 ms.openlocfilehash: 6a2521ac872eb76a327ceb659814b42d5495ddb3
 ms.sourcegitcommit: 8aa110806572e9b19682c8f97ee4bf3953e1fd3f
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/09/2022
 ms.locfileid: "67294503"

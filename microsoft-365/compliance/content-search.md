@@ -23,7 +23,7 @@ ms.custom:
 description: Microsoft コンプライアンス センターのコンテンツ検索電子情報開示ツールを使用すると、さまざまな Microsoft 365 サービスでコンテンツを検索できます。
 ms.openlocfilehash: 3c5e4191c34db9d31ce54494f2677e75f3cae3bf
 ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/06/2022
 ms.locfileid: "66632621"

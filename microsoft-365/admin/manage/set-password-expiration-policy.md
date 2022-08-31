@@ -29,7 +29,7 @@ ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Microsoft 365 管理センターで、管理者がビジネス、学校、または非営利団体のパスワード有効期限ポリシーを設定する方法について説明します。
 ms.openlocfilehash: 48dfd933cad12d309a6c00ec15a7226ae918e79d
 ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2022
 ms.locfileid: "67083997"

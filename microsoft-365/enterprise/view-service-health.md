@@ -28,7 +28,7 @@ ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: アクティブ サービスが中断していないかどうかを確認するため、サポートに連絡する前に、Microsoft 365 サービスの正常性状態を表示します。
 ms.openlocfilehash: 3155d9a26fd2b34eb4f5bc820e906d35f1f7fdff
 ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/27/2022
 ms.locfileid: "65090211"

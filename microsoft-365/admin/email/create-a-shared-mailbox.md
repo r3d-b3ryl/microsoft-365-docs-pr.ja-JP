@@ -28,7 +28,7 @@ ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: 共有メールボックスを作成すると、社内の複数のユーザーが 1 つのメール アドレスに送付されたメールを閲覧したり、回答したりできます。
 ms.openlocfilehash: 444be08a2083bf184d61ee206dfaa8ab53657b0b
 ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/03/2022
 ms.locfileid: "65864564"

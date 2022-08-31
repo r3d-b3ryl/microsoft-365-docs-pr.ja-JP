@@ -26,7 +26,7 @@ description: Microsoft 365 管理センターでは、既存の支払方法を�
 ms.date: 06/01/2022
 ms.openlocfilehash: e92ceaadd61b90ac2357543eb97f8a16eeb65597
 ms.sourcegitcommit: 3b194dd6f9ce531ae1b33d617ab45990d48bd3d0
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 06/15/2022
 ms.locfileid: "66102528"

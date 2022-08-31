@@ -24,7 +24,7 @@ ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Office 365 の展開を計画するときに使用する外部ドメインネームシステムレコードの参照リスト。
 ms.openlocfilehash: 47a8bfe283041ad0350cfdf1db0b9e97bfa18b60
 ms.sourcegitcommit: 195e4734d9a6e8e72bd355ee9f8bca1f18577615
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/13/2022
 ms.locfileid: "64824830"

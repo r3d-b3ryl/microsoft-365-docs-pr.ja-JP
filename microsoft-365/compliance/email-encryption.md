@@ -21,7 +21,7 @@ ms.collection:
 description: Microsoft Purview Message Encryption、S/MIME、Information Rights Management (IRM) など、Microsoft 365 暗号化のオプションを比較し、トランスポート層セキュリティ (TLS) について紹介します。
 ms.openlocfilehash: a5541c9a1478d1eb1add40a5aecb7439d1442e1b
 ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/06/2022
 ms.locfileid: "66624247"

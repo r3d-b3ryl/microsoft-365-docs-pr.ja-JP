@@ -17,7 +17,7 @@ search.appverid: met150
 ms.technology: m365d
 ms.openlocfilehash: 2f0e3fd84a9df907aa50339a1e3a2108d023db81
 ms.sourcegitcommit: b3530441288b2bc44342e00e9025a49721796903
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/20/2022
 ms.locfileid: "63683527"

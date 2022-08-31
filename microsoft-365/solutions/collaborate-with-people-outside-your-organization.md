@@ -21,7 +21,7 @@ recommendations: false
 description: 組織外のユーザーと共同作業をするために、Teams、OneDrive、SharePoint など、Microsoft 365 アプリを構成する方法について説明します。
 ms.openlocfilehash: 65511cbafdc1f5a666c11e1bef7fefd6e6852ee3
 ms.sourcegitcommit: 46456ca009c9d50622e57e24269be74986184654
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/22/2022
 ms.locfileid: "63712776"

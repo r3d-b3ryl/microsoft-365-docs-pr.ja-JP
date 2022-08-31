@@ -29,7 +29,7 @@ description: 製品ライセンスを特定のユーザーに割り当てるの�
 ms.date: 07/12/2022
 ms.openlocfilehash: c004364050c434666f1d0b2d872bddc9040dc1a7
 ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/01/2022
 ms.locfileid: "67112375"

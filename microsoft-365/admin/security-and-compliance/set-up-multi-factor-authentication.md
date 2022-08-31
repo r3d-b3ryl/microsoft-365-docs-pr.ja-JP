@@ -31,7 +31,7 @@ description: 組織向けに多要素認証を設定する方法について説�
 monikerRange: o365-worldwide
 ms.openlocfilehash: 32e429f2d24c8754603c3ab32b060a9b7656df4e
 ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2022
 ms.locfileid: "67085511"

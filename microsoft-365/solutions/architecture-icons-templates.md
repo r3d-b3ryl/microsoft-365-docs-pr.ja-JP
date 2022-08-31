@@ -12,7 +12,7 @@ ms.custom: ''
 f1.keywords: NOCSH
 ms.openlocfilehash: 8fd6815b94e44094ec01d405c22f33232f101503
 ms.sourcegitcommit: 0ee2dabe402d44fecb6856af98a2ef7720d25189
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 12/09/2021
 ms.locfileid: "61372458"

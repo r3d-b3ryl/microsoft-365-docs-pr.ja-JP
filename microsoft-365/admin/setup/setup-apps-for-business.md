@@ -27,7 +27,7 @@ search.appverid:
 description: Microsoft 365 Apps for business サブスクリプションのセットアップ方法について説明します。
 ms.openlocfilehash: a117bbb6468effe7122c74ff051d90ab9714d89e
 ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2022
 ms.locfileid: "67085643"

@@ -28,7 +28,7 @@ ROBOTS: NOINDEX
 description: ドメイン ネーム システムは、コンピューターのホスト名を IP アドレスにマップします。DNS とドメイン レジストラーの基礎を理解することはドメインを管理するうえで役立ちます。
 ms.openlocfilehash: 308f41c6b1c899ae731d1dcf3e7fc02e5a3cb5ed
 ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2022
 ms.locfileid: "67085929"

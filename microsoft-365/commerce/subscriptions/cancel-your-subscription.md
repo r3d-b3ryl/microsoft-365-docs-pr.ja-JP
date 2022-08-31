@@ -24,7 +24,7 @@ description: Microsoft 365 管理センターで、Dynamics 365、Intune、Power
 ms.date: 07/07/2022
 ms.openlocfilehash: 7918690c20466769129875620e98fb162f3d3be5
 ms.sourcegitcommit: adc4e5707aa074fc4aa0cb9e8c2986fc8b88813c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 08/01/2022
 ms.locfileid: "67112111"

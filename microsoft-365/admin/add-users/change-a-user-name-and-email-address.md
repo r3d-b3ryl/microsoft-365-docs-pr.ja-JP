@@ -28,7 +28,7 @@ ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: Microsoft 365 のグローバル管理者が、ユーザー名が変更されるときにユーザーのメール アドレスと表示名を変更する方法について説明します。
 ms.openlocfilehash: 420a25df1383bccd4fe93b2ea79d0eeb6f91d982
 ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/01/2022
 ms.locfileid: "66601116"

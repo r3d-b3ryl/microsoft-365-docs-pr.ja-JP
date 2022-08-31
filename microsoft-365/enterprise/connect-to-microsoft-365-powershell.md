@@ -18,7 +18,7 @@ ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Microsoft 365 テナントに接続するには、Microsoft 365 用 PowerShell を使用して、コマンド ラインから管理センターのタスクを実行します。
 ms.openlocfilehash: 24596a2781a8b2176908d6e5d3a6c5bd74b0260a
 ms.sourcegitcommit: db1e48af88995193f15bbd5962f5101a6088074b
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/23/2022
 ms.locfileid: "65637431"

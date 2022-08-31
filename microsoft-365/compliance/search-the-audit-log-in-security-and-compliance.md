@@ -23,7 +23,7 @@ ms.custom:
 - admindeeplinkMAC
 ms.openlocfilehash: 90a40127dd1a9efbf6334e8207ad35a6e5bd2231
 ms.sourcegitcommit: c29fc9d7477c3985d02d7a956a9f4b311c4d9c76
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/06/2022
 ms.locfileid: "66628663"

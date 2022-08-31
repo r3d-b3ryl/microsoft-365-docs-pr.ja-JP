@@ -21,7 +21,7 @@ ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 33e4a6d3644f7a3aab8992130b2b92e09dd665af
 ms.sourcegitcommit: 38a18b0195d99222c2c6da0c80838d24b5f66b97
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 05/28/2022
 ms.locfileid: "65772404"
@@ -84,7 +84,7 @@ Office 365 の SPF TXT レコードは、カスタム ドメインまたはサ�
     |3|Exchange Online 専用のみ|共通ではない|`ip4:23.103.224.0/19` <br> `ip4:206.191.224.0/19` <br> `ip4:40.103.0.0/16` <br> `include:spf.protection.outlook.com`|
     |4|Office 365 Germany、Microsoft Cloud Germany のみ|共通ではない|`include:spf.protection.outlook.de`|
     |5|サード パーティ製の電子メール システム|共通ではない|`include:<domain_name>` <p> \<domain_name\> は、他社製の電子メール システムのドメインです。|
-    |6 |オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム|共通ではない|各追加メール システムで次のいずれかを使用します。 <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> と \<domain_name\> は、ドメインの代理としてメールを送信する他のメールシステムの IP アドレスとドメインです。|
+    |6|オンプレミスの電子メール システム。たとえば、Exchange Online Protection と別のメール システム|共通ではない|各追加メール システムで次のいずれかを使用します。 <p> `ip4:<IP_address>` <br> `ip6:<IP_address>` <br> `include:<domain_name>` <p> \<IP_address\> と \<domain_name\> は、ドメインの代理としてメールを送信する他のメールシステムの IP アドレスとドメインです。|
     |7 |いずれかの電子メール システム (必須)|共通。この値で終わるすべての SPF レコード|`<enforcement rule>` <p> 可能な値はいくつかあります。値 `-all` をお勧めします。|
 
 2. まだ行っていない場合は、表の構文を使用して SPF TXT レコードを作成します。

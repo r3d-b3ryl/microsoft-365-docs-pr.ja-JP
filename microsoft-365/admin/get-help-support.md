@@ -25,7 +25,7 @@ search.appverid:
 description: Microsoft 365 for Business サブスクリプションのオンラインまたは電話によるサポートを受ける方法を説明します。 これらのサポート方法を使用するには、一般法人向けサブスクリプションの管理者である必要があります。
 ms.openlocfilehash: 837bd27d0a1f0823397710a6c55ec108ebe8548d
 ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2022
 ms.locfileid: "67084919"

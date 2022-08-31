@@ -21,7 +21,7 @@ ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: 「**のメールボックス見つかりませんでした**」 というエラーは、Outlook on the web への接続に使用したアカウントに Exchange Online のライセンスが存在しないという意味です。
 ms.openlocfilehash: afde59262be1fd0776dd94bafc9c8b0d2e75bebc
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63316409"

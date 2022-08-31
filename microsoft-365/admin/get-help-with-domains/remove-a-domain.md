@@ -27,7 +27,7 @@ ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Microsoft 365 から古いドメインを削除し、ユーザーとグループを別のドメインに移動する方法、またはサブスクリプションをキャンセルする方法を学びます。
 ms.openlocfilehash: 3da47275e090296c9b192b4bd60ad19dd8cf4149
 ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/08/2022
 ms.locfileid: "63316829"
@@ -176,7 +176,7 @@ NSレコードを変更するには、「[ネーム サーバーを変更して�
 > [!NOTE]
 > アカウントから [".onmicrosoft.com"](../setup/domains-faq.yml) ドメインを削除することはできません。 ドメインを削除すると、ユーザー アカウントはプライマリ SMTP/UserprincipalName として ".onmicrosoft.com" アドレスに戻されます。
 
-それでもうまくいかない場合、ドメインを手動で削除する必要があります。[ご連絡いただければ](../../business-video/get-help-support.md)、お手伝いいたします。
+まだ動作していませんか? ドメインを手動で削除する必要がある場合があります。 [お電話をお寄](../../business-video/get-help-support.md) せください。お手伝いします。
 
 ::: moniker-end
 

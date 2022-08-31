@@ -25,7 +25,7 @@ search.appverid:
 description: Office 365 の IP アドレスと URL web サービスを使用して、Office 365 のネットワークトラフィックをより簡単に識別、差別化する方法について説明します。
 ms.openlocfilehash: b13377c6230c869231b7cecda8375f663cbcd33b
 ms.sourcegitcommit: e50c13d9be3ed05ecb156d497551acf2c9da9015
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 04/27/2022
 ms.locfileid: "65100635"

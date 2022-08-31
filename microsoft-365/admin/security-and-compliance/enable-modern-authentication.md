@@ -25,7 +25,7 @@ ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Microsoft Office 2013 がインストールされているデバイスの最新の認証を有効にするレジストリ キーの設定方法を説明します。
 ms.openlocfilehash: 468658c3b346c7923937ff9595699a20306ed6a9
 ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 03/23/2022
 ms.locfileid: "63754175"

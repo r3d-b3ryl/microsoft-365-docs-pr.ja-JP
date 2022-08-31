@@ -19,7 +19,7 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.openlocfilehash: 0efacb67cb3ba6b5126bbe5de327fa0b9f2092cf
 ms.sourcegitcommit: 8101c12df67cfd9c15507b0133c23ce4cca1c6ba
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2022
 ms.locfileid: "66720393"

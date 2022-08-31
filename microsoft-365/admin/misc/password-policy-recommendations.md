@@ -25,7 +25,7 @@ ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: パスワード攻撃に対する組織のセキュリティを強化し、一般的なパスワードを禁止し、リスク ベースの多要素認証を有効にします。
 ms.openlocfilehash: 782d2066fba52a5135c32987d8d32824b8a97be0
 ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/30/2022
 ms.locfileid: "67087091"

@@ -25,7 +25,7 @@ description: 製品ライセンスの割り当てを解除する方法は、特�
 ms.date: 07/12/2022
 ms.openlocfilehash: b6459030c376bb891ea32b9cb096d26449dfa0d1
 ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 07/12/2022
 ms.locfileid: "66748387"

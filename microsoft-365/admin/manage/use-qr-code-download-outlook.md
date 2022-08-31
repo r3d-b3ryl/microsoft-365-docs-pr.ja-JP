@@ -17,7 +17,7 @@ ms.custom:
 description: QR コードを使用して Outlook Mobile を認証し、ダウンロードする方法について学習します。
 ms.openlocfilehash: 736628fb97cf2a6f4f6c6d175384a30c41bf642d
 ms.sourcegitcommit: 7f0c5b55e2966c0c1ce6a153a4e6a7ec035bd818
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: ja-JP
 ms.lasthandoff: 11/22/2021
 ms.locfileid: "61137041"
