@@ -3,7 +3,8 @@ title: ロールベースのアクセス制御のカスタム ロール
 description: Microsoft 365 Defender ポータルでカスタム ロールを管理する方法について説明します
 keywords: アクセス、アクセス許可、Microsoft 365 Defender、M365、セキュリティ、MCAS、Cloud App Security、Microsoft Defender for Endpoint、スコープ、スコープ、RBAC、ロールベースのアクセス、カスタム ロールベースのアクセス、ロールベースの認証、MDO での RBAC、ロール、ロールグループ、アクセス許可の継承、きめ細かいアクセス 許可
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: f36e57af9cf1c593ba157454bdfe90b840094c02
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: db9cd679fd5c8fe49384655b7bb94925252a6be1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344583"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482320"
 ---
 # <a name="custom-roles-in-role-based-access-control-for-microsoft-365-defender"></a>Microsoft 365 Defenderのロールベースのアクセス制御のカスタム ロール
 

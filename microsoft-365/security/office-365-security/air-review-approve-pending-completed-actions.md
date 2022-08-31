@@ -17,15 +17,15 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom: ''
 description: Microsoft Defender for Office 365プラン 2 の自動調査と対応機能の修復アクションについて説明します。
-ms.technology: mdo
-ms.prod: m365-security
+ms.subservice: mdo
+ms.service: microsoft-365-security
 ms.date: 06/10/2021
-ms.openlocfilehash: aaa444a2bada254aeed83540aee361ed806ab0a0
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.openlocfilehash: f7a8c1b4ae7df1d69d48dbcb1f1954e4fae3e51b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65649123"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468705"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Office 365での修復アクションの確認と管理
 
@@ -68,7 +68,7 @@ ms.locfileid: "65649123"
 
 ## <a name="investigation-and-remediation-investigations-queue"></a>調査と修復の調査キュー
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション**\>調査] の **[脅威の調査**] ページに移動 **します**。 **脅威の調査** ページに直接移動するには、<https://security.microsoft.com/airinvestigation>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[Email & **コラボレーション**\>調査] の **[脅威の調査**] ページに移動 **します**。 **脅威の調査** ページに直接移動するには、<https://security.microsoft.com/airinvestigation>.
 2. **[脅威の調査**] ページで、状態が **[保留中] アクション** の一覧からアイテムを検索します。
 3. [新しいウィンドウで開く] アイコンをクリック ![します。](../../media/m365-cc-sc-open-icon.png) リスト時刻 (**ID** と **状態** の間) で **新しいウィンドウで開きます**。
 4. 開いたページで、承認または拒否のアクションを実行します。
@@ -78,7 +78,7 @@ ms.locfileid: "65649123"
 送信されたアクションを再考するには、次の 2 つの方法があります。
 
 - [統合アクション センター](https://security.microsoft.com/action-center)を通じて。
-- ただし、[Office アクション センター](https://security.microsoft.com/threatincidents)。
+- ただし、 [Office アクション センター](https://security.microsoft.com/threatincidents)。
 
 ## <a name="change-or-undo-through-the-unified-action-center"></a>統合アクション センターを変更または元に戻す
 
@@ -88,7 +88,7 @@ ms.locfileid: "65649123"
 
 ## <a name="change-or-undo-through-the-office-action-center"></a>Office アクション センターを変更または元に戻す
 
-1. Microsoft 365 Defender ポータルで<https://security.microsoft.com>、**電子メール & コラボレーション** \> **レビュー** \> アクション センターのOffice **アクション センター** に移動します。 Office アクション センターに直接移動するには、<https://security.microsoft.com/threatincidents>.
+1. Microsoft 365 Defender ポータルで<https://security.microsoft.com>、**コラボレーション** \> **レビュー** \> アクション センターの Office アクション センター Email &移動 **します**。 Office アクション センターに直接移動するには、 <https://security.microsoft.com/threatincidents>.
 2. **[アクション センター]** ページで、適切な修復を選択します。
 3. サイド パネルで、メール送信エントリをクリックし、リストが読み込まれるのを待ちます。
 4. 上部の [アクション] ボタンが有効になるまで待ち、[アクション] ボタンを選択してアクションの種類を変更します。

@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: ccf46df1ecbe2fb2e55e461cc27a5b7af088e7b9
-ms.sourcegitcommit: 221212fff9737e0ea386755deb8fed62ae9c254b
+ms.openlocfilehash: af6b5af33ce6d10b66489f2d49ef5ed4ec1f9310
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/14/2022
-ms.locfileid: "66787454"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469209"
 ---
 # <a name="detect-channel-signals-with-communication-compliance"></a>通信コンプライアンスでチャネル信号を検出する
 
@@ -41,7 +41,7 @@ ms.locfileid: "66787454"
 | **内部チームとチャネルを共有する** | 通信コンプライアンス ポリシーは、スコープ内のユーザーと共有チャネル内のすべてのメッセージに適用されます |
 | **外部チームとチャネルを共有する** | 通信コンプライアンス ポリシーは、内部組織内の共有チャネル内の内部スコープ内のユーザーとメッセージに適用されます |
 
-最新の添付ファイルは、Teams メッセージに含まれる [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) サイトまたは [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) サイトから提供されるファイルです。 テキストはこれらの添付ファイルから自動的に抽出され、自動処理と、アクティブな通信コンプライアンス ポリシーの条件と分類子との一致の可能性があります。 最新の添付ファイルの検出と処理に必要な追加の構成はありません。 テキストは、ポリシー条件に一致する添付ファイルに対してのみ抽出されます。 添付ファイルにポリシーが一致する場合でも、ポリシーが一致するメッセージの添付ファイルのテキストは抽出されません。
+最新の添付ファイルは、Teams メッセージに含まれる [OneDrive](/onedrive/plan-onedrive-enterprise#modern-attachments) サイトまたは [SharePoint](/sharepoint/dev/solution-guidance/modern-experience-customizations) サイトから提供されるファイルです。 テキストはこれらの添付ファイルから自動的に抽出され、自動処理と、アクティブな通信コンプライアンス ポリシーの条件と分類子との一致の可能性があります。 最新の添付ファイルの検出と処理に必要な追加の構成はありません。 テキストは、メッセージが送信された時点のポリシー条件に一致する添付ファイルに対してのみ抽出されます。 添付ファイルにポリシーが一致する場合でも、ポリシーが一致するメッセージの添付ファイルのテキストは抽出されません。
 
 最新の添付ファイル スキャンは、次の種類のファイルでサポートされています。
 

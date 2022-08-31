@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 9a06b695d6e9cffe03ed2a42590c1489f3678056
-ms.sourcegitcommit: 6f565d9e0f91ebc76fd13d7005619531391ab5f9
+ms.openlocfilehash: e833def27e88a9f59c756bd769a09191e9b2dd5c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67439588"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467385"
 ---
 # <a name="deploy-teams-at-scale-for-frontline-workers-in-microsoft-teams"></a>現場担当者向けに大規模なチームをデプロイする
 
@@ -143,7 +143,7 @@ CSV ファイルを作成したので、環境を設定してチームをデプ�
     Get-Command -Module MicrosoftTeams
     ```
 
-    ```New-CsBatchTeamsDeployment``` と ```Get-CsBatchTeamsDeployment``` が一覧表示されていることを確認します。
+    ```New-CsBatchTeamsDeployment``` と ```Get-CsBatchTeamsDeploymentStatus``` が一覧表示されていることを確認します。
 
 1. 次を実行して、チームのバッチをデプロイします。 このコマンドでは、CSV ファイルへのパスと、この展開について通知する最大 5 人の受信者の電子メール アドレスを指定します。
 
@@ -162,7 +162,7 @@ CSV ファイルを作成したので、環境を設定してチームをデプ�
 1. 次を実行して、送信したバッチの状態を確認します。
 
     ```powershell
-    Get-CsBatchTeamsDeployment -OrchestrationId "OrchestrationId"
+    Get-CsBatchTeamsDeploymentStatus -OrchestrationId "OrchestrationId"
     ```
 
 ## <a name="send-us-feedback"></a>フィードバックを送信する

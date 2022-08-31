@@ -26,12 +26,12 @@ search.appverid:
 - MET150
 - MOE150
 description: web ベースのMicrosoft 365 管理センターのコンパニオンであるMicrosoft 365 管理 アプリを入手して、スマートフォンまたはタブレットからオンライン組織を管理します。
-ms.openlocfilehash: 6fcc6ceec6c7dcd7f5af3cb2bf0883b0bd1170a1
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.openlocfilehash: 8766098509a0c7cea22e177907b77199d6e6c690
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67084633"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469121"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Microsoft 365 管理 モバイル アプリについて
 
@@ -46,7 +46,7 @@ YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fw
 - **ユーザーとデバイスを管理する** ユーザーの追加または編集、ユーザーのパスワードのリセット、ロールの割り当て、ユーザーのブロック、ユーザーの削除、エイリアスの管理、ライセンスの割り当て、デバイス データのワイプなどを行います。
 - **グループを管理する** グループの追加、グループへのユーザーの追加または削除を行います。
 - **ライセンス管理と課金** 購入したライセンスと割り当てられたライセンスの一覧の表示、ユーザーへのライセンスの割り当て、ライセンスの購入または削除、請求書の表示とダウンロードを行います。
-- **支える** 新しいサービス要求を作成し、外出先でサービス要求に関連するすべての更新プログラムを追跡します。
+- **サポート** 新しいサービス要求を作成し、外出先でサービス要求に関連するすべての更新プログラムを追跡します。
 - **メッセージ センター** Microsoft 365 に関連するすべての変更、計画メンテナンス、またはその他の重要なお知らせを常に把握する
 - **Service Health** サービスの現在の状態と、サービスの中断と停止に関する詳細を表示して、すべてのサービスの正常性を監視します。
 - **通知** メッセージ センターの投稿、サービスの正常性、プッシュ通知による課金に関連するすべての重要な情報と更新情報を常に確認します。 通知する内容をカスタマイズすることもできます。
@@ -80,6 +80,12 @@ YouTube で [Microsoft 365 Small Business ヘルプ](https://go.microsoft.com/fw
 ## <a name="frequently-asked-questions"></a>よく寄せられる質問
 
 以下は、よく寄せられる質問に対する回答です。
+
+### <a name="does-the-admin-app-support-multi-tenant-billing-features"></a>管理者アプリはマルチテナント課金機能をサポートしていますか? 
+
+管理者モバイル アプリには、承認された管理者が対象のテナントの製品とライセンス、および関連するテナントの製品とライセンスを 1 つのビューで表示できる、いくつかのマルチテナント機能がありません。 
+
+この機能はまだモバイル アプリMicrosoft 365 管理一部ではなく、近日公開予定です。 詳細については、管理者は<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 管理センター</a>に移動できます。  
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>アプリを使うには、何を行う必要がありますか?
 

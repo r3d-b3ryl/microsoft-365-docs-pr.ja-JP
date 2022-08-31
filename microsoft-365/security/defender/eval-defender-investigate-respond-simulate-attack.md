@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderパイロット環境で攻撃シミュレーショ
 description: Microsoft 365 Defenderの攻撃シミュレーションを実行して、アラートとインシデントがどのように表示され、分析情報が得られ、脅威が迅速に修復されるかを確認します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,15 +21,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-pilotmtpproject
 - zerotrust-solution
+- highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: db3a005b80a69695da5936d60cb512b8fc46cfcb
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 59a227cc03a751e73470aff99e3fa04f490f7b7b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67387069"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473900"
 ---
 # <a name="run-an-attack-simulation-in-a-microsoft-365-defender-pilot-environment"></a>Microsoft 365 Defenderパイロット環境で攻撃シミュレーションを実行する
 

@@ -4,7 +4,8 @@ description: 高度なハンティング サービスの応答性を維持する
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ, kusto, CPU 制限, クエリ制限, リソース, 最大結果, クォータ, パラメーター, 割り当て
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: fe0ad42ac0ebfc7f6816e412ab6ffb0ac9291b44
-ms.sourcegitcommit: bf3965b46487f6f8cf900dd9a3af8b213a405989
+ms.openlocfilehash: dc227ef3dfa9f462fba302fda660843e90215a5c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "60643171"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468837"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>高度なハンティング クォータと使用パラメーター
 

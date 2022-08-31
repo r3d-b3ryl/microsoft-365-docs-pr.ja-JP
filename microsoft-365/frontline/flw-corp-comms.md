@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 28273f2445784ea269364f62a49bdc6ba871b960
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: ff0abacf0961bf1df7751ca3e1fca8293902887c
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388273"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474075"
 ---
 # <a name="corporate-communications-with-frontline-workers"></a>現場担当者との企業コミュニケーション
 
@@ -36,11 +36,9 @@ Yammer とViva コネクションを使用して、フロントライン チー�
 
 Viva コネクションを使用して、従業員との関わりや情報交換を行います。 Viva コネクションは、フロントライン チームが組織のカスタマイズされたニュース フィードと、必要なリソースを含むパーソナライズされたダッシュボードを表示できるハブを Teams に作成します。 従業員が Viva コネクションを使用すると、重要な情報をより早く入手できるようになり、マネージャーは最新情報の伝達に貴重な時間を費やす必要がなくなります。 Viva コネクション ダッシュボードでは、重要な情報、個人向けのニュース、タスク、お知らせ、その他のリソースを公開します。 たとえば、小売業者は新しい製品やプロモーションのお知らせをストアの関係者と共有したり、非営利団体の資金調達コーディネーターが四半期ごとの目標をボランティアと共有したりできます。
 
-
 | 小売りワーカーの表示  |リテール マネージャーの表示                  | 
 | :------------------- | :------------------- |
 | ![モバイル デバイス上のViva コネクション ダッシュボードのスクリーンショット。](media/frontline-worker-1.png)  | ![リテール マネージャーの情報を表示するモバイル デバイス上のViva コネクション ダッシュボードのスクリーンショット。](media/frontline-worker-2.png) | 
-
 
 [Viva コネクション](/sharepoint/viva-connections-overview)の詳細を学び、従業員やスタッフが [Microsoft Teams の Viva コネクション](https://support.microsoft.com/office/your-intranet-is-now-in-microsoft-teams-8b4e7f76-f305-49a9-b6d2-09378476f95b)の使用を開始するサポートを行います。
 

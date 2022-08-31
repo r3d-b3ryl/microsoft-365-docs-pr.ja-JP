@@ -7,7 +7,8 @@ author: dansimp
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
@@ -17,13 +18,12 @@ ms.custom:
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
-ms.technology: m365d
-ms.openlocfilehash: 51efeb57c6670f9c798fa254bb0a6242b30c5700
-ms.sourcegitcommit: 52eea2b65c0598ba4a1b930c58b42dbe62cdaadc
+ms.openlocfilehash: 4f0d9fe5057fb1aadf5631bff96bf81401268dd9
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/19/2022
-ms.locfileid: "64944373"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468275"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Microsoft 365 Defender で自動調査と応答機能を構成する
 
@@ -50,9 +50,9 @@ Microsoft 365 Defenderには、セキュリティ運用チームの時間と労�
 |---|---|
 |サブスクリプションの要件|これらのサブスクリプションの 1 つ: <ul><li>Microsoft 365 E5</li><li>Microsoft 365 A5</li><li>Microsoft 365 E5 Security アドオンを使用したMicrosoft 365 E3</li><li>Microsoft 365 A5 セキュリティ アドオンを使用したMicrosoft 365 A3</li><li>Office 365 E5 プラス Enterprise Mobility + Security E5 + Windows E5</li></ul> <p> [Microsoft 365 Defenderライセンス要件に関するページを](./prerequisites.md#licensing-requirements)参照してください。|
 |ネットワーク要件|<ul><li>[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)有効</li><li>[Microsoft Defender for Cloud Apps](/cloud-app-security/what-is-cloud-app-security)構成済み</li><li>[Microsoft Defender for Identity統合](/cloud-app-security/mdi-integration)</li></ul>|
-|Windowsデバイス要件|<ul><li>Windows 11</li><li>Windows 10、バージョン 1709 以降がインストールされている ([リリース情報Windows](/windows/release-information/)参照)</li><li>次の脅威保護サービスが構成されています。<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
-|電子メール コンテンツとOffice ファイルの保護|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)構成済み|
-|アクセス許可|自動調査と対応機能を構成するには、Azure Active Directory () またはMicrosoft 365 管理センター (<https://portal.azure.com><https://admin.microsoft.com>) にグローバル管理者またはセキュリティ管理者ロールが割り当てられている必要があります。 <p> 保留中のアクションの確認、承認、拒否などの自動調査機能と応答機能を操作するために必要なアクセス許可を取得するには、「 [アクション センター タスクに必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)」を参照してください。|
+|Windows デバイスの要件|<ul><li>Windows 11</li><li>Windows 10、バージョン 1709 以降がインストールされている ([Windows リリース情報](/windows/release-information/)を参照)</li><li>次の脅威保護サービスが構成されています。<ul><li>[Microsoft Defender for Endpoint](../defender-endpoint/configure-endpoints.md)</li><li>[Microsoft Defender ウイルス対策](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features)</li></ul></li></ul>|
+|電子メール コンテンツと Office ファイルの保護|[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365#configure-atp-policies)構成済み|
+|アクセス許可|自動調査と対応機能を構成するには、Azure Active Directory () または Microsoft 365 管理センター<https://admin.microsoft.com> (<https://portal.azure.com>) にグローバル管理者またはセキュリティ管理者ロールが割り当てられている必要があります。 <p> 保留中のアクションの確認、承認、拒否などの自動調査機能と応答機能を操作するために必要なアクセス許可を取得するには、「 [アクション センター タスクに必要なアクセス許可](m365d-action-center.md#required-permissions-for-action-center-tasks)」を参照してください。|
 |
 
 ## <a name="review-or-change-the-automation-level-for-device-groups"></a>デバイス グループの自動化レベルを確認または変更する
@@ -61,7 +61,7 @@ Microsoft 365 Defenderには、セキュリティ運用チームの時間と労�
 
 1. Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) に移動してサインインします。
 
-2. **[アクセス許可****] の [設定** > **EndpointsDevice** >  **グループ**] に移動します。
+2. **[アクセス許可**]**の** >  **[設定** エンドポイント **デバイス グループ**]  >  に移動します。
 
 3. デバイス グループ ポリシーを確認します。 特に、 **Automation レベル** の列を確認します。 **脅威を自動的に修復するには、完全な修復** を使用することをお勧めします。  必要な自動化レベルを得るために、デバイス グループを作成または編集することが必要な場合があります。 このタスクのヘルプについては、次の記事を参照してください。
    - [脅威の修復方法](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
@@ -69,7 +69,7 @@ Microsoft 365 Defenderには、セキュリティ運用チームの時間と労�
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Office 365でセキュリティ ポリシーとアラート ポリシーを確認する
 
-Microsoft には、特定のリスクを特定するのに役立つ組み込みの [アラート ポリシー](../../compliance/alert-policies.md) が用意されています。 これらのリスクには、Exchange管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、および情報ガバナンス のリスクが含まれます。 一部のアラートでは、[Office 365で自動調査と応答を](../office-365-security/office-365-air.md)トリガーできます。 [Defender for Office 365](../office-365-security/defender-for-office-365.md)機能が正しく構成されていることを確認します。
+Microsoft には、特定のリスクを特定するのに役立つ組み込みの [アラート ポリシー](../../compliance/alert-policies.md) が用意されています。 これらのリスクには、Exchange 管理者のアクセス許可の悪用、マルウェア アクティビティ、潜在的な外部および内部の脅威、および情報ガバナンス のリスクが含まれます。 一部のアラートでは、[Office 365で自動調査と応答を](../office-365-security/office-365-air.md)トリガーできます。 [Defender for Office 365](../office-365-security/defender-for-office-365.md)機能が正しく構成されていることを確認します。
 
 特定のアラートとセキュリティ ポリシーは自動調査をトリガーできますが、 *電子メールとコンテンツに対して自動的に修復アクションは実行されません*。 代わりに、電子メールおよび電子メール コンテンツに対するすべての修復アクションが [、アクション センター](m365d-action-center.md)のセキュリティ運用チームによる承認を待ちます。
 
@@ -84,11 +84,11 @@ Office 365のセキュリティ設定は、電子メールとコンテンツの�
    - [リンク保護](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [スパム対策](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 
-3. [SharePoint、OneDrive、Microsoft Teamsの添付ファイルのセーフ](../office-365-security/mdo-for-spo-odb-and-teams.md)がオンになっていることを確認します。
+3. [SharePoint、OneDrive、Microsoft Teams の安全な添付ファイル](../office-365-security/mdo-for-spo-odb-and-teams.md)が有効になっていることを確認します。
 
 4. [Exchange Onlineのゼロ時間自動消去 (ZAP)](../office-365-security/zero-hour-auto-purge.md) が有効になっていることを確認します。
 
-5. (この手順は省略可能です)。Microsoft Purview コンプライアンス ポータル ()[https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies) で[Office 365アラート ポリシー](../../compliance/alert-policies.md)を確認します。 脅威管理カテゴリには、いくつかの既定のアラート ポリシーがあります。 これらのアラートの一部は、自動調査と応答をトリガーする可能性があります。 詳細については、「 [既定のアラート ポリシー](../../compliance/alert-policies.md#default-alert-policies)」を参照してください。
+5. (この手順は省略可能です)。Microsoft Purview コンプライアンス ポータル ([https://compliance.microsoft.com/compliancepolicies](https://compliance.microsoft.com/compliancepolicies)) で[Office 365アラート ポリシー](../../compliance/alert-policies.md)を確認します。 脅威管理カテゴリには、いくつかの既定のアラート ポリシーがあります。 これらのアラートの一部は、自動調査と応答をトリガーする可能性があります。 詳細については、「 [既定のアラート ポリシー](../../compliance/alert-policies.md#default-alert-policies)」を参照してください。
 
 ## <a name="make-sure-microsoft-365-defender-is-turned-on"></a>Microsoft 365 Defenderがオンになっていることを確認する
 

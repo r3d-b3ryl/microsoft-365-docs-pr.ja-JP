@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderの誤検知または偽陰性に対処する
 description: Microsoft 365 Defenderで AIR によって何かが見落とされたか、間違って検出されましたか? 分析のために誤検知または偽陰性を Microsoft に送信する方法について説明します。
 keywords: 自動, 調査, アラート, 修復, 偽陽性, 偽陰性
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.custom:
 - autoir
 - admindeeplinkDEFENDER
 ms.reviewer: evaldm, isco
-ms.technology: m365d
-ms.openlocfilehash: 67246d7f7876457e6553818b469987a2b5a59eb0
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: cab16efa7f5118a4b9fce44713536dc043dd6b7b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63321795"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482386"
 ---
 # <a name="address-false-positives-or-false-negatives-in-microsoft-365-defender"></a>Microsoft 365 Defenderの誤検知または偽陰性に対処する
 
@@ -49,14 +49,14 @@ ms.locfileid: "63321795"
 
 |アイテムが見落とされたか、間違って検出されました |サービス  |操作  |
 |---------|---------|---------|
-|- 電子メール メッセージ <br/>- 電子メールの添付ファイル <br/>- 電子メール メッセージ内の URL<br/>- Office ファイル内の URL      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信してスキャンする](../office-365-security/admin-submission.md)         |
+|- Email メッセージ <br/>- 添付ファイルをEmailする <br/>- 電子メール メッセージ内の URL<br/>- Office ファイル内の URL      |[Microsoft Defender for Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[疑わしいスパム、フィッシング、URL、ファイルを Microsoft に送信してスキャンする](../office-365-security/admin-submission.md)         |
 |デバイス上のファイルまたはアプリ    |[Microsoft Defender for Endpoint](/windows/security/threat-protection)         |[マルウェア分析のために Microsoft にファイルを送信する](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>誤検知が繰り返されないようにアラートを調整する
 
 |シナリオ |サービス |操作 |
 |--------|--------|--------|
-|- 正当な使用によってアラートがトリガーされる <br/>- アラートが不正確である    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> または <br/>[Azure の脅威の保護](/azure/security/fundamentals/threat-detection)         |[Defender for Cloud アプリ ポータルでアラートを管理する](/cloud-app-security/managing-alerts)         |
+|- 正当な使用によってアラートがトリガーされる <br/>- アラートが不正確である    |[Microsoft Defender for Cloud Apps](/cloud-app-security)<br/> or <br/>[Azure の脅威の保護](/azure/security/fundamentals/threat-detection)         |[Defender for Cloud Apps ポータルでアラートを管理する](/cloud-app-security/managing-alerts)         |
 |ファイル、IP アドレス、URL、またはドメインは、安全であってもデバイス上のマルウェアとして扱われます|[Microsoft Defender for Endpoint](/windows/security/threat-protection) |["Allow" アクションを使用してカスタム インジケーターを作成する](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>デバイスで実行された修復アクションを元に戻す

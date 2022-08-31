@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Purview コンプライアンス マネージャーで改善アクションを操作して、コントロールを実装してテストする方法について説明します。 作業の割り当て、ドキュメントの保存、レポートのエクスポートを行います。
-ms.openlocfilehash: 4eb75e23825e8e60fc0ea3ecfcbb75e1292ac5e9
-ms.sourcegitcommit: 0c8934129b5ed147fb873fc3f4d201042c313571
+ms.openlocfilehash: 6388a4e1c4ce73e29481e1e1daa0ee27d733ed8b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67333766"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472966"
 ---
 # <a name="working-with-improvement-actions-in-compliance-manager"></a>コンプライアンス マネージャーでの改善アクションの操作
 
@@ -154,7 +154,7 @@ ms.locfileid: "67333766"
 手動テスト用に設定された改善アクションは、手動でテストおよび実装するアクションです。 必要な実装状態とテスト状態を設定し、[ **ドキュメント** ] タブで証拠ファイルをアップロードします。一部のアクションでは、これは改善アクションをテストするために使用できる唯一の方法です。
 
 #### <a name="automatic-testing-source"></a>自動テスト ソース
-特定の改善アクションは、コンプライアンス マネージャーによって自動的にテストできます。 自動的にテストできる改善アクションとテストできない改善アクションの[詳細を取得](compliance-manager-improvement-actions.md#update-testing-source)します。
+特定の改善アクションは、コンプライアンス マネージャーによって自動的にテストできます。 自動的にテストできる改善アクションとテストできない改善アクションの[詳細を取得](compliance-manager-setup.md#set-up-automated-testing)します。
 
 自動的にテストできる改善アクションについては、ソースをテストするための **[自動]** オプションが表示されます。 コンプライアンス マネージャーは、Microsoft 365 環境で設定した他のコンプライアンス ソリューションからのシグナルと、Microsoft Secure Score が監視する補完的なアクションを検出します。 [**テスト**] タブの [**テスト ロジック**] フィールドには、アクションがコンプライアンス スコアに対してポイントを渡して獲得するために、別のソリューションで必要なポリシーまたは構成の種類が表示されます。
 

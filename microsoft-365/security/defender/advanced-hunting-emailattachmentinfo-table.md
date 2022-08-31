@@ -4,7 +4,8 @@ description: 高度な捜索スキーマの EmailAttachmentInfo テーブルで�
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, EmailAttachmentInfo, ネットワーク メッセージ ID, 送信者, 受信者, 添付ファイル ID, 添付ファイル名, マルウェアの判定
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b99daf9fa7597e44dc7ea20b517c2f7ed5aaa354
-ms.sourcegitcommit: fdd0294e6cda916392ee66f5a1d2a235fb7272f8
+ms.openlocfilehash: e2c4ac28a463f2422c096fc4eea6cff8c3b2094d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "65130563"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483324"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -44,12 +44,12 @@ ms.locfileid: "65130563"
 | 列名 | データ型 | 説明 |
 |-------------|-----------|-------------|
 | `Timestamp` | `datetime` | イベントが記録された日付と時刻 |
-| `NetworkMessageId` | `string` | Microsoft 365によって生成された電子メールの一意の識別子 |
+| `NetworkMessageId` | `string` | Microsoft 365 によって生成された電子メールの一意の識別子 |
 | `SenderFromAddress` | `string` | 受信者のメール クライアントで受信者に表示される、FROM ヘッダーの送信者メール アドレス |
 | `SenderDisplayName` | `string` | アドレス帳に表示される送信者の名前(通常は、特定の名前または名、ミドル イニシャル、姓または姓の組み合わせ) |
-| `SenderObjectId` | `string` | Azure ADの送信者のアカウントの一意の識別子 |
+| `SenderObjectId` | `string` | Azure AD の送信者のアカウントの一意の識別子 |
 | `RecipientEmailAddress` | `string` | 受信者のメール アドレス、または配布リストの展開後の受信者のメール アドレス |
-| `RecipientObjectId` | `string` | Azure ADの電子メール受信者の一意の識別子 |
+| `RecipientObjectId` | `string` | Azure AD の電子メール受信者の一意識別子 |
 | `FileName` | `string` | 記録されたアクションが適用されたファイルの名前 |
 | `FileType` | `string` | ファイル拡張子の種類 |
 | `SHA256` | `string` | 記録されたアクションが適用されたファイルの SHA-256 このフィールドは通常は入力されません。使用可能な場合は、SHA1 列を使用します。 |

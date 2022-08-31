@@ -10,19 +10,20 @@ ms.topic: overview
 ms.prod: m365-security
 ms.technology: mdb
 ms.localizationpriority: medium
-ms.date: 08/10/2022
+ms.date: 08/29/2022
 ms.reviewer: shlomiakirav
 f1.keywords: NOCSH
 ms.collection:
 - SMB
 - M365-security-compliance
 - m365solution-mdb-setup
-ms.openlocfilehash: 3f69c82a6a401118d50372adec03b9cdbed0f502
-ms.sourcegitcommit: 771f7bbb241f910b3e16b4d1f9bbd9c0c8c6fa34
+- highpri
+ms.openlocfilehash: 05bfff000929fcc26bd358b1b76bbdd2dd1f250e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/11/2022
-ms.locfileid: "67309397"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472988"
 ---
 # <a name="onboard-devices-to-microsoft-defender-for-business"></a>デバイスをMicrosoft Defender for Businessにオンボードする
 
@@ -248,7 +249,8 @@ Defender for Business にオンボードされているデバイスの一覧を�
 ## <a name="windows-server"></a>Windows Server
 
 > [!IMPORTANT]
-> **Windows Server エンドポイントをオンボードする機能は現在プレビュー段階です**。 Windows Server エンドポイントをオンボードする前に、次の要件を満たしていることを確認してください。
+> **Windows Server エンドポイントをオンボードする機能は現在プレビュー段階です**。 一般提供が発表されたら、オンボードされた各サーバーに対してMicrosoft Defender for Business サーバー ライセンスを購入するか、それらのサーバーをオフボードにすることができます。
+> Windows Server エンドポイントをオンボードする前に、次の要件を満たしていることを確認してください。
 > - **[プレビュー機能]** 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、**[設定]** > **[エンドポイント]** > **[全般]** > **[高度な機能]****[プレビュー機能]** >  の順に移動します。
 > - Windows Server の強制範囲がオンになっています。 **[設定]** > **[エンドポイント]** > **[構成管理]** > **[強制範囲]** の順に移動します。 **[MDE を使用して MEM からセキュリティ構成設定を適用する]** を選択し、  **[Windows Server]** を選択してから、**[保存]** を選択します。
 
@@ -303,7 +305,8 @@ Windows Server エンドポイントを Defender for Business にオンボード
 ## <a name="linux-server"></a>Linux Server
 
 > [!IMPORTANT]
-> **Linux Server エンドポイントをオンボードする機能は現在プレビュー段階です**。 Linux Server エンドポイントをオンボードする前に、次の要件を満たしていることを確認してください。
+> **Linux Server エンドポイントをオンボードする機能は現在プレビュー段階です**。 一般提供が発表されたら、オンボードされた各サーバーに対してMicrosoft Defender for Business サーバー ライセンスを購入するか、それらのサーバーをオフボードにすることができます。
+> Linux Server エンドポイントをオンボードする前に、次の要件を満たしていることを確認してください。
 > - **[プレビュー機能]** 設定がオンになっています。 Microsoft 365 Defender ポータル ([https://security.microsoft.com](https://security.microsoft.com)) で、**[設定]** > **[エンドポイント]** > **[全般]** > **[高度な機能]****[プレビュー機能]** >  の順に移動します。
 > - [Linux でのMicrosoft Defender for Endpointの前提条件を](../defender-endpoint/microsoft-defender-endpoint-linux.md#prerequisites)満たしています。
 

@@ -4,7 +4,8 @@ description: さまざまな使用可能なフィルターと条件を組み合�
 keywords: ガイドモード, 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 583e22a57d591176c0077cc9e6d2656c6802d05e
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.openlocfilehash: 1ec67ba3dd912851425a06066dac0648418bf58e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67406699"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67475366"
 ---
 # <a name="build-hunting-queries-using-guided-mode-in-microsoft-365-defender"></a>Microsoft 365 Defenderでガイド モードを使用してハンティング クエリを構築する
 

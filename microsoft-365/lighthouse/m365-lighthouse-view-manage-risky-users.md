@@ -17,12 +17,12 @@ ms.custom:
 - M365-Lighthouse
 search.appverid: MET150
 description: Microsoft 365 Lighthouseを使用するマネージド サービス プロバイダー (MSP) の場合は、危険なユーザーを表示および管理する方法について説明します。
-ms.openlocfilehash: 6f3fdaca1b89561e623d195faa4804c431e43a69
-ms.sourcegitcommit: 23a53b5c5e372a2a7ad5e175850224d3d464f6dd
+ms.openlocfilehash: 0239dd4c56de9203f01df04cc4f0fce8c73fb27e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/28/2022
-ms.locfileid: "67055836"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474866"
 ---
 # <a name="view-and-manage-risky-users-in-microsoft-365-lighthouse"></a>Microsoft 365 Lighthouseでリスクの高いユーザーを表示および管理する
 
@@ -53,7 +53,7 @@ Azure AD Identity Protection では、リスク検出には、Azure AD のユー
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **リスクの高いユーザー**] を選択します。
 
-2. [ **危険なユーザー** ] タブで、リスク状態が **[リスク** あり] の一覧のユーザーを確認します。
+2. [ **危険なユーザー]** ページで、リスク状態が **[危険**] の一覧のユーザーを確認します。
 
 3. [ **リスク検出の表示** ] を選択して、各ユーザーについて検出されたリスクに関する詳細情報を取得します。 リスクの種類と検出の詳細については、「 [リスクとは」](/azure/active-directory/identity-protection/concept-identity-protection-risks)を参照してください。
 
@@ -73,7 +73,7 @@ Azure AD Identity Protection では、リスク検出には、Azure AD のユー
 
 1. Lighthouse の左側のナビゲーション ウィンドウで、[ **ユーザー** > **リスクの高いユーザー**] を選択します。
 
-2. [ **危険なユーザー** ] タブで、アクションを実行するユーザーのセットを選択します。
+2. [ **危険なユーザー]** ページで、アクションを実行するユーザーのセットを選択します。
 
 3. 実行するアクションを次のいずれかを選択します。
 

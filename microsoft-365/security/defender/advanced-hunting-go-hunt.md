@@ -4,7 +4,8 @@ description: Go hunt ツールを使用して、高度なハンティングを�
 keywords: 高度な捜索, インシデント, ピボット, エンティティ, go hunt, 関連イベント, 脅威の捜索, サイバー脅威の捜索, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 3d1ec22febe0c0072a4eed2a9b8fece3687762d7
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 7c1e4153afb7f279b5d31cce29a86f42bdc93832
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63754283"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483390"
 ---
 # <a name="quickly-hunt-for-entity-or-event-information-with-go-hunt"></a>Go hunt を使用してエンティティまたはイベント情報をすばやく検索する
 
@@ -38,7 +38,7 @@ ms.locfileid: "63754283"
 
 *Go hunt* アクションを使用すると、強力なクエリ ベースの [高度なハンティング](advanced-hunting-overview.md)機能を使用して、イベントやさまざまなエンティティの種類をすばやく調査できます。 このアクションは、選択したイベントまたはエンティティに関する関連情報を検索するために、高度なハンティング クエリを自動的に実行します。
 
-*go hunt* アクションは、Defender for Cloudのさまざまなセクションで使用できます。 このアクションは、イベントまたはエンティティの詳細が表示されたら表示できます。 たとえば、次のセクションの *go hunt* オプションを使用できます。
+*Go hunt* アクションは、Defender for Cloud のさまざまなセクションで使用できます。 このアクションは、イベントまたはエンティティの詳細が表示されたら表示できます。 たとえば、次のセクションの *go hunt* オプションを使用できます。
 
 - [インシデント ページ](investigate-incidents.md#summary)では、インシデントに関連付けられているユーザー、デバイス、およびその他の多くのエンティティに関する詳細を確認できます。 エンティティを選択すると、追加情報と、そのエンティティに対して実行できるさまざまなアクションが表示されます。 次の例では、メールボックスが選択され、メールボックスに関する詳細と、メールボックスの詳細を検索するオプションが表示されます。
 
@@ -78,7 +78,7 @@ and DeviceName == deviceName
 
 - Files
 - メール
-- 電子メール クラスター
+- Email クラスター
 - メールボックス
 - ユーザー
 - デバイス

@@ -18,12 +18,12 @@ ms.collection:
 description: Domain-based Message Authentication, Reporting, and Conformance (DMARC) を構成して、組織から送信されたメッセージを検証する方法について説明します。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f33ea4cfe9323121f928e9a07247167c9d536721
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 7723105d4617937b85a29911122a0e43e2076350
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388421"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470277"
 ---
 # <a name="use-dmarc-to-validate-email"></a>DMARC を使用してメールを検証する
 
@@ -40,6 +40,9 @@ DMARC は、お客様のドメインから送信されたメッセージを、�
 
 > [!TIP]
 > Microsoft 365 用の DMARC レポートを提供しているサードパーティ ベンダーを確認するには、「[Microsoft Intelligent Security Association (MISA)](https://www.microsoft.com/misapartnercatalog)」(Microsoft インテリジェント セキュリティ アソシエーション) カタログを参照してください。
+
+> [!TIP]
+> **ステップ バイ ステップ ガイドをご覧ください。** 急いで管理者向けの構成 1-2-3s とビジラなし。 *[Microsoft Online Email ルーティング アドレス (MOERA) とパークされたドメインの DMARC レポートを有効にする](step-by-step-guides/how-to-enable-dmarc-reporting-for-microsoft-online-email-routing-address-moera-and-parked-domains.md)* 手順については、こちらのページを参照してください。
 
 ## <a name="how-do-spf-and-dmarc-work-together-to-protect-email-in-microsoft-365"></a>SPF と DMARC が連携して Microsoft 365 の電子メールを保護するしくみ
 

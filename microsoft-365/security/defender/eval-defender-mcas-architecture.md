@@ -3,7 +3,8 @@ title: アーキテクチャの要件とMicrosoft Defender for Cloud Appsの構�
 description: Microsoft Defender for Cloud Apps技術図では、パイロット環境の構築に役立つMicrosoft 365 Defenderのアーキテクチャについて説明しています。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,14 +21,14 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 7cc147f60d3ae7ccd7014476de5c6839fa67131f
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: e012ee5c94a37456a67dc5624e2aae0a2a460548
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66747991"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473812"
 ---
 # <a name="review-architecture-requirements-and-key-concepts-for-microsoft-defender-for-cloud-apps"></a>Microsoft Defender for Cloud Appsのアーキテクチャ要件と主要な概念を確認する
 
@@ -60,7 +61,7 @@ Defender for Cloud Apps を使用しない場合、組織で使用されるク�
 
 
 この図では、ネットワーク トラフィックを監視し、組織で使用されているクラウド アプリを検出するために使用できる 2 つの方法があります。
-- 回答。 Cloud App Discovery は、ネイティブにMicrosoft Defender for Endpointと統合されます。 Defender for Endpoint は、IT マネージド Windows 10およびWindows 11 デバイスからアクセスされるクラウド アプリとサービスを報告します。 
+- A. Cloud App Discovery は、ネイティブにMicrosoft Defender for Endpointと統合されます。 Defender for Endpoint は、IT マネージド Windows 10およびWindows 11 デバイスからアクセスされるクラウド アプリとサービスを報告します。 
 - B. ネットワークに接続されているすべてのデバイスのカバレッジについては、Defender for Cloud Apps ログ コレクターがファイアウォールやその他のプロキシにインストールされ、エンドポイントからデータが収集されます。 このデータは、分析のために Defender for Cloud Apps に送信されます。
 
 #### <a name="managing-cloud-apps"></a>クラウド アプリの管理

@@ -4,7 +4,8 @@ description: アカウントとセッションを Defender for Identity から M
 keywords: Microsoft 365 Defender、Microsoft 365 Defenderの概要、セキュリティ センターのリダイレクト
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b5c122f01d37d066e0f20bf817ca45ad5c57480b
-ms.sourcegitcommit: 5fe7f2954a89406245416fc1a218cf4bf19abb85
+ms.openlocfilehash: c66794d8f09d93b2582938d3eda996be7f9b5400
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/03/2022
-ms.locfileid: "65864636"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67471061"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-identity-to-microsoft-365-defender"></a>Microsoft Defender for IdentityからMicrosoft 365 Defenderへのアカウントのリダイレクト
 
@@ -50,11 +50,11 @@ ms.locfileid: "65864636"
 
 Microsoft 365 Defenderへのアカウントのルーティングを開始するには:
 
-1. グローバル管理者であるか、Azure Active Directoryのセキュリティ管理者のアクセス許可があることを確認します。
+1. グローバル管理者であるか、Azure Active Directory のセキュリティ管理者のアクセス許可があることを確認します。
 
 1. Microsoft 365 Defenderにサインイン<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">します</a>。
 
-1. **設定** > **Identities** > **General** > **Portal リダイレクト** に移動するか [、ここをクリックします](https://security.microsoft.com/preferences2/portal_redirection)。
+1. **[Settings** > **IDs** > **General** > **Portal] リダイレクト** に移動するか [、ここをクリックします](https://security.microsoft.com/preferences2/portal_redirection)。
 
     :::image type="content" source="../../media/portal-redirection.png" alt-text="ポータルリダイレクト。"lightbox="../../media/portal-redirection.png":::
 
@@ -64,7 +64,7 @@ Microsoft 365 Defenderへのアカウントのルーティングを開始する�
 >この設定を有効にした場合、アクティブなユーザー セッションは終了しません。 この設定が適用されている間にアクティブなセッションに参加しているアカウントは、現在のセッションを終了してもう一度サインインした後にのみMicrosoft 365 Defenderに送信されます。
 
 >[!NOTE]
->この設定を有効または無効にするには、グローバル管理者であるか、Azure Active Directoryのセキュリティ管理者のアクセス許可が必要です。  
+>この設定を有効または無効にするには、グローバル管理者であるか、Azure Active Directory のセキュリティ管理者のアクセス許可が必要です。  
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>以前のポータルの使用に戻ることはできますか?
 
@@ -74,7 +74,7 @@ Microsoft 365 Defenderへのアカウントのルーティングを開始する�
 
 1. グローバル管理者として<a href="https://go.microsoft.com/fwlink/p/?linkid=2077139" target="_blank">Microsoft 365 Defender</a>にサインインするか、Azure Active directory でセキュリティ管理者のアクセス許可を使用してアカウントを使用します。
 
-2. **設定** > **Identities** > **General** > **Portal リダイレクト** に移動するか [、ここでページを開きます](https://security.microsoft.com/preferences2/portal_redirection)。  
+2. **[Settings** > **IDs** > **General** > **Portal] リダイレクト** に移動するか [、ここでページを開きます](https://security.microsoft.com/preferences2/portal_redirection)。  
 
 3. [自動リダイレクト] 設定を **[オフ]** に切り替えます。
 

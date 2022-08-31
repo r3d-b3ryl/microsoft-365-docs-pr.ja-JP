@@ -1,9 +1,9 @@
 ---
 title: Microsoft Defender ウイルス対策通知を構成する
-description: エンドポイントで標準通知とその他のMicrosoft Defender ウイルス対策通知の両方を構成およびカスタマイズする方法について説明します。
+description: エンドポイントで標準の Microsoft Defender ウイルス対策通知と他の Microsoft Defender ウイルス対策通知の両方を構成およびカスタマイズする方法について説明します。
 keywords: 通知, Defender, ウイルス対策, エンドポイント, 管理, 管理者
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -16,14 +16,14 @@ ms.date: 10/18/2021
 ms.reviewer: ''
 manager: dansimp
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 6c9dfd603a128de4a94c9cf49faa6ba9ca940d9b
-ms.sourcegitcommit: ebbe8713297675db5dcb3e0d9c3ae5e746b99196
+ms.openlocfilehash: af6889be3f64d45f7a7237453e2050664de301bf
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/14/2022
-ms.locfileid: "65418184"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473251"
 ---
-# <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>エンドポイントに表示されるMicrosoft Defender ウイルス対策通知を構成する
+# <a name="configure-microsoft-defender-antivirus-notifications-that-appear-on-endpoints"></a>エンドポイントに表示される Microsoft Defender ウイルス対策通知を構成する
 
 **適用対象:**
 
@@ -34,7 +34,7 @@ ms.locfileid: "65418184"
 **プラットフォーム**
 - Windows
 
-Windows 10とWindows 11では、マルウェアの検出と修復に関するアプリケーション通知は、より堅牢で一貫性があり、簡潔です。 Microsoft Defender ウイルス対策通知は、スキャンが完了し、脅威が検出されたときにエンドポイントに表示されます。 通知は、スケジュールされたスキャンと手動でトリガーされたスキャンの両方に従います。 これらの通知は **通知センター** にも表示され、スキャンと脅威の検出の概要が一定の時間間隔で表示されます。
+Windows 10とWindows 11では、マルウェアの検出と修復に関するアプリケーション通知は、より堅牢で一貫性があり、簡潔です。 Microsoft Defender ウイルス対策の通知は、スキャンが完了し、脅威が検出されるとエンドポイントに表示されます。 通知は、スケジュールされたスキャンと手動でトリガーされたスキャンの両方に従います。 これらの通知は **通知センター** にも表示され、スキャンと脅威の検出の概要が一定の時間間隔で表示されます。
 
 組織のセキュリティ チームの一員である場合は、システムの再起動を求める通知や、脅威が検出されて修復されたことを示す通知など、エンドポイントでの通知の表示方法を構成できます。
 
@@ -43,7 +43,7 @@ Windows 10とWindows 11では、マルウェアの検出と修復に関するア
 Windows セキュリティ [アプリ](microsoft-defender-security-center-antivirus.md)とグループ ポリシーで、最近の脅威検出の概要などの追加通知の表示を構成できます。
 
 > [!NOTE]
-> Windows 10バージョン 1607 では、この機能は **拡張通知** と呼ばれ、**Windows 設定** \> **Update & セキュリティ** \> **Windows Defender** で構成されました。 Windows 10とWindows 11のすべてのバージョンのグループ ポリシー設定では、通知機能は **拡張通知** と呼ばれます。
+> Windows 10バージョン 1607 では、この機能は **拡張通知** と呼ばれ、**Windows 設定** \> **更新プログラム&セキュリティ** \> **Windows Defender** で構成されました。 Windows 10とWindows 11のすべてのバージョンのグループ ポリシー設定では、通知機能は **拡張通知** と呼ばれます。
 
 ### <a name="use-group-policy-to-disable-additional-notifications"></a>グループ ポリシーを使用して追加の通知を無効にする
 
@@ -55,7 +55,7 @@ Windows セキュリティ [アプリ](microsoft-defender-security-center-antivi
 
 4. [ **管理用テンプレート] を選択します**。
 
-5. ツリーを展開して、Microsoft Defender ウイルス対策 **Reporting** **のコンポーネント** \> **をWindows** > します。
+5. ツリーを **Windows コンポーネント** \> **の Microsoft Defender ウイルス対策** > **レポートに展開します**。
 
 6. [ **強化された通知をオフにする**] をダブルクリックし、オプションを **[有効]** に設定します。 次に [**OK**] を選びます。 これにより、追加の通知が表示されなくなります。
 
@@ -83,7 +83,7 @@ Windows セキュリティ [アプリ](microsoft-defender-security-center-antivi
 - エンドポイントのすべての通知を非表示にする
 - エンドポイントでの再起動通知を非表示にする
 
-通知を非表示にすると、Microsoft Defender ウイルス対策 インターフェイス全体を非表示にできない場合に便利です。 詳細については、「[ユーザーがMicrosoft Defender ウイルス対策 ユーザー インターフェイスを表示または操作](prevent-end-user-interaction-microsoft-defender-antivirus.md)できないようにする」を参照してください。 通知の非表示は、ポリシーがデプロイされたエンドポイントでのみ行われます。 実行する必要があるアクション (再起動など) に関連する通知は、[Microsoft エンドポイント マネージャー Endpoint Protection監視ダッシュボードとレポート](/configmgr/protect/deploy-use/monitor-endpoint-protection)に引き続き表示されます。 
+通知を非表示にすると、Microsoft Defender ウイルス対策インターフェイス全体を非表示にできない場合に役立ちます。 詳細については、「 [ユーザーが Microsoft Defender ウイルス対策ユーザー インターフェイスを表示または操作できないように](prevent-end-user-interaction-microsoft-defender-antivirus.md) する」を参照してください。 通知の非表示は、ポリシーがデプロイされたエンドポイントでのみ行われます。 実行する必要があるアクション (再起動など) に関連する通知は、[Microsoft エンドポイント マネージャー Endpoint Protection 監視ダッシュボードとレポート](/configmgr/protect/deploy-use/monitor-endpoint-protection)に引き続き表示されます。 
 
 エンドポイント通知にカスタム連絡先情報を追加するには、「[組織のWindows セキュリティ アプリをカスタマイズする」を参照してください](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center)。
 
@@ -95,7 +95,7 @@ Windows セキュリティ [アプリ](microsoft-defender-security-center-antivi
 
 3. **グループ ポリシー管理エディター** で **[コンピューターの構成**] に移動し、[**管理用テンプレート**] を選択します。
 
-4. ツリーを展開して、**クライアント インターフェイス****Microsoft Defender ウイルス対策コンポーネント** \> **をWindows**\>します。 
+4. ツリーを **Windows コンポーネント** \> **Microsoft Defender ウイルス対策** \> **クライアント インターフェイス** に展開します。 
 
 5. [ **すべての通知を抑制]** をダブルクリックし、オプションを **[有効]** に設定します。 
 
@@ -111,7 +111,7 @@ Windows セキュリティ [アプリ](microsoft-defender-security-center-antivi
 
 3. [ **管理用テンプレート]** をクリックします。
 
-4. ツリーを展開して、**クライアント インターフェイス****Microsoft Defender ウイルス対策コンポーネント** \> **をWindows**\>します。
+4. ツリーを **Windows コンポーネント** \> **Microsoft Defender ウイルス対策** \> **クライアント インターフェイス** に展開します。
 
 5. **[再起動通知を抑制]** をダブルクリックし、オプションを **[有効]** に設定します。 
 

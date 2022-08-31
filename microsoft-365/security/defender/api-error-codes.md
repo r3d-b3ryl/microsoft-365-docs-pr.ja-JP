@@ -3,7 +3,8 @@ title: 一般的なMicrosoft 365 Defender REST API エラー コード
 description: 一般的なMicrosoft 365 Defender REST API エラー コードについて説明します
 keywords: api, error, codes, common errors, Microsoft 365 Defender, api error code
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 499ab1722b2754e893361784f7ff1ce257ceb58b
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 6aeed1afa77779de5d21bb0ecbdd34d5a4c7e0e0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171949"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482474"
 ---
 # <a name="common-microsoft-365-defender-rest-api-error-codes"></a>一般的なMicrosoft 365 Defender REST API エラー コード
 

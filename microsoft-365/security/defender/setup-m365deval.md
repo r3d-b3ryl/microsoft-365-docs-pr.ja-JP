@@ -4,7 +4,8 @@ description: ポータルMicrosoft 365 Defenderアクセスし、Microsoft 365 D
 keywords: 試用版のセットアップMicrosoft 365 Defender、パイロットセットアップMicrosoft 365 Defender、Microsoft 365 Defenderを試す、評価ラボのセットアップをMicrosoft 365 Defenderする
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 - m365solution-evalutatemtp
+- highpri
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 5d516a7062d8c6f617cee2a260f27ee896689f2c
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 116efc949edace902b8e71abb27f5c091407fb14
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64667342"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482276"
 ---
 # <a name="set-up-your-microsoft-365-defender-trial-in-a-lab-environment"></a>ラボ環境でMicrosoft 365 Defender試用版を設定する 
 
@@ -38,7 +39,7 @@ ms.locfileid: "64667342"
 
 ## <a name="create-an-office-365-e5-trial-tenant"></a>Office 365 E5試用版テナントを作成する
 >[!NOTE]
->既存のOffice 365またはAzure Active Directoryサブスクリプションが既にある場合は、Office 365 E5試用版テナントの作成手順をスキップできます。
+>既に既存のOffice 365または Azure Active Directory サブスクリプションがある場合は、試用版テナントの作成手順Office 365 E5スキップできます。
 
 1. [Office 365 E5製品ポータル](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e5-business-software?activetab=pivot%3aoverviewtab)に移動し、[**無料試用版**] を選択します。
 
@@ -71,7 +72,7 @@ ms.locfileid: "64667342"
 
    :::image type="content" source="../../media/mtp-eval-15.png" alt-text="[セットアップに移動] ボタンをクリックするように求めるOffice 365 E5試用版登録のセットアップ ページ" lightbox="../../media/mtp-eval-15.png":::
 
-8. 企業ドメインをOffice 365 テナントにConnectします。 [省略可能]**既に所有しているドメインConnect** 選択し、ドメイン名を入力します。 **[次へ]** をクリックします。
+8. 企業ドメインをOffice 365 テナントに接続します。 [省略可能] **[既に所有しているドメインを接続する** ] を選択し、ドメイン名を入力します。 **[次へ]** をクリックします。
 
    :::image type="content" source="../../media/mtp-eval-16.png" alt-text="サインインと電子メールをカスタマイズする必要がある [Office 365 E5セットアップ] ページ" lightbox="../../media/mtp-eval-16.png":::
  
@@ -83,7 +84,7 @@ ms.locfileid: "64667342"
 
     :::image type="content" source="../../media/mtp-eval-18.png" alt-text="ユーザーを追加できるOffice 365 E5セットアップ ページ" lightbox="../../media/mtp-eval-18.png":::
  
-11. [省略可能]Officeアプリをダウンロードします。 **[次へ**] をクリックして、この手順をスキップします。 
+11. [省略可能]Office アプリをダウンロードします。 **[次へ**] をクリックして、この手順をスキップします。 
 
     :::image type="content" source="../../media/mtp-eval-19.png" alt-text="Office アプリをインストールできるOffice 365 E5 ページ" lightbox="../../media/mtp-eval-19.png":::
 
@@ -91,7 +92,7 @@ ms.locfileid: "64667342"
 
     :::image type="content" source="../../media/mtp-eval-20.png" alt-text="電子メール メッセージを移行するかどうかを設定できるOffice 365 E5" lightbox="../../media/mtp-eval-20.png":::
  
-13. オンライン サービスを選択します。 **Exchange** を選択し、[**次へ**] をクリックします。 
+13. オンライン サービスを選択します。 **[Exchange**] を選択し、[**次へ**] をクリックします。 
 
     :::image type="content" source="../../media/mtp-eval-21.png" alt-text="オンライン サービスを選択できるOffice 365 E5" lightbox="../../media/mtp-eval-21.png":::
 
@@ -104,10 +105,10 @@ ms.locfileid: "64667342"
     :::image type="content" source="../../media/mtp-eval-23.png" alt-text="Office 365 E5セットアップ完了確認ページ" lightbox="../../media/mtp-eval-23.png":::
     
 
-## <a name="enable-microsoft-365-trial-subscription"></a>試用版サブスクリプションMicrosoft 365有効にする
+## <a name="enable-microsoft-365-trial-subscription"></a>Microsoft 365 試用版サブスクリプションを有効にする
 
 >[!NOTE]
->試用版にサインアップすると、1 か月間使用する 25 個のユーザー ライセンスが提供されます。 詳細については、「[Microsoft 365 サブスクリプションを試すか購入](../../commerce/try-or-buy-microsoft-365.md)する」を参照してください。
+>試用版にサインアップすると、1 か月間使用する 25 個のユーザー ライセンスが提供されます。 詳細については、「 [Microsoft 365 サブスクリプションの試用または購入](../../commerce/try-or-buy-microsoft-365.md) 」を参照してください。
 
 1. [Microsoft 365 管理 センター](https://admin.microsoft.com/)で [**課金**] をクリックし、[**サービスの購入]** に移動します。
 
@@ -127,7 +128,7 @@ ms.locfileid: "64667342"
 
    :::image type="content" source="../../media/mtp-eval-27.png" alt-text="Microsoft 365 E5[今すぐ試す] ボタンをクリックして開始する必要がある [無料試用版の開始] ページ" lightbox="../../media/mtp-eval-27.png":::
  
-6. **Microsoft 365 管理** **CenterUsersActive** >  ユーザーに > 移動 **します**。 ユーザー アカウントを選択し、[**製品ライセンスの管理**] を選択し、ライセンスをOffice 365 E5から **Microsoft 365 E5** にスワップします。 [**保存**] をクリックします。
+6. **Microsoft 365 管理 センター** > **ユーザー** > **アクティブ ユーザー** に移動します。 ユーザー アカウントを選択し、[**製品ライセンスの管理**] を選択し、ライセンスをOffice 365 E5から **Microsoft 365 E5** にスワップします。 **[保存]** をクリックします。
 
    :::image type="content" source="../../media/mtp-eval-28.png" alt-text="Microsoft 365 E5 ライセンスを選択できる [Microsoft 365 管理 センター] ページ" lightbox="../../media/mtp-eval-28.png":::
  
@@ -139,6 +140,6 @@ ms.locfileid: "64667342"
 
    :::image type="content" source="../../media/mtp-eval-30.png" alt-text="ドメイン設定を変更できる [Microsoft 365 管理 センター] ページ" lightbox="../../media/mtp-eval-30.png":::
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 |[フェーズ 3: オンボード&構成する](config-m365d-eval.md) | Microsoft 365 Defender試用版ラボまたはパイロット環境の各Microsoft 365 Defenderの柱を構成し、エンドポイントをオンボードします。
 |:-------|:-----|

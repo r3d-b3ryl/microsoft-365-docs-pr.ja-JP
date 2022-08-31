@@ -2,7 +2,7 @@
 title: Microsoft Defender ウイルス対策の展開、管理、レポート
 description: Intune、Microsoft Endpoint Configuration Manager、グループ ポリシー、PowerShell、WMI を使用して Microsoft Defender ウイルス対策を展開および管理できます
 keywords: 展開、管理、更新、保護、Microsoft Defender ウイルス対策
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,15 +14,15 @@ ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
+ms.subservice: mde
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 64a7bc6a95fa9f49da57bf14b6aebcb2e27c6d18
-ms.sourcegitcommit: cd9df1a681265905eef99c039f7036b2fa6e8b6d
+ms.openlocfilehash: f1c013c5104ab49f8ae5a7053b2a4b0d273c5867
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/07/2022
-ms.locfileid: "67274663"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468947"
 ---
 # <a name="deploy-manage-and-report-on-microsoft-defender-antivirus"></a>Microsoft Defender ウイルス対策の展開、管理、レポート
 

@@ -5,20 +5,20 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: conceptual
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: 管理者は、Microsoft 365 Defender ポータルで攻撃シミュレーション トレーニングがユーザーにどのような影響を与えるかを学習し、シミュレーションとトレーニングの結果から分析情報を得ることができます。
-ms.technology: mdo
-ms.openlocfilehash: f3ec93de3790791bbec7b02faac4d2885edc5759
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.openlocfilehash: af3a1e9f7a2b991b7ece6f36595e2f7759eccb9d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67409182"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483126"
 ---
 # <a name="insights-and-reports-for-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365の攻撃シミュレーション トレーニングに関する分析情報とレポート
 
@@ -258,7 +258,7 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 
 ### <a name="simulation-impact-section"></a>[シミュレーションの影響] セクション
 
-シミュレーションの詳細ページの **[シミュレーションへの影響** ] セクションには、シミュレーションによって完全にだまされたユーザーの数と、シミュレーション内のユーザーの合計数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
+シミュレーションの詳細ページの **[シミュレーションへの影響** ] セクションには、シミュレーションによって完全にだまされたユーザーの数と、シミュレーション内のユーザーの合計数が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 以下に例を示します。
 
 - リンク: **入力された資格情報** と資格情報 **を入力しませんでした**。
 
@@ -272,7 +272,7 @@ _繰り返し違反者_ とは、連続したシミュレーションによっ�
 
 ### <a name="all-user-activity-section"></a>[すべてのユーザー アクティビティ] セクション
 
-シミュレーションの詳細ページ **の [すべてのユーザー アクティビティ** ] セクションには、シミュレーションの可能な結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 例:
+シミュレーションの詳細ページ **の [すべてのユーザー アクティビティ** ] セクションには、シミュレーションの可能な結果の数値が表示されます。 表示される情報は、シミュレーションの種類によって異なります。 以下に例を示します。
 
 - **SuccessfullyDeliveredEmail**
 - **ReportedEmail**: シミュレーション メッセージを疑わしいと報告したユーザーの数。

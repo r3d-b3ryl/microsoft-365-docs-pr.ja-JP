@@ -1,9 +1,10 @@
 ---
 title: 高度なハンティング スキーマの AADSpnSignInEventsBeta テーブル
-description: Azure Active Directoryのサービス プリンシパルとマネージド ID のサインイン イベント テーブルに関連付けられている情報について説明します。
+description: Azure Active Directory のサービス プリンシパルとマネージド ID サインイン イベントテーブルに関連付けられている情報について説明します。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,13 +17,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: b1b9d6405abdddea42652cfd4c532df91eeb6b30
-ms.sourcegitcommit: 7ab324551afac4fd82abc015247371ebfe6ccac2
+ms.openlocfilehash: 74e8ff6319799da8e9893a65b447a8e3c693cd8f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/02/2022
-ms.locfileid: "65842216"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472944"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -30,9 +30,9 @@ ms.locfileid: "65842216"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> この`AADSpnSignInEventsBeta`テーブルは現在ベータ版であり、Azure Active Directory (AAD) サインイン イベントを探索できるように、短期的に提供されています。 このテーブルのアクティビティを収集して表示するには、Azure Active Directory Premium P2 ライセンスが必要です。 Microsoft は最終的にすべてのサインイン スキーマ情報をテーブルに `IdentityLogonEvents` 移動します。
+> この `AADSpnSignInEventsBeta` テーブルは現在ベータ版であり、Azure Active Directory (AAD) のサインイン イベントを探索できるように、短期的に提供されています。 このテーブルのアクティビティを収集して表示するには、Azure Active Directory Premium P2 ライセンスが必要です。 Microsoft は最終的にすべてのサインイン スキーマ情報をテーブルに `IdentityLogonEvents` 移動します。
 
-`AADSpnSignInEventsBeta`高度なハンティング スキーマの表には、Azure Active Directoryサービス プリンシパルとマネージド ID サインインに関する情報が含まれています。さまざまな種類のサインインの詳細については、[サインイン アクティビティ レポートのプレビュー Azure Active Directory参照してください](/azure/active-directory/reports-monitoring/concept-all-sign-ins)。
+`AADSpnSignInEventsBeta`高度なハンティング スキーマの表には、Azure Active Directory サービス プリンシパルとマネージド ID サインインに関する情報が含まれています。[Azure Active Directory サインイン アクティビティ レポート - プレビュー](/azure/active-directory/reports-monitoring/concept-all-sign-ins)では、さまざまな種類のサインインの詳細を確認できます。
 
 このテーブルの情報を返すクエリを作成するには、このレファレンスを使用します。
 

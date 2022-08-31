@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 管理者は、Exchange Online Protection (EOP) の高度な配信ポリシーを使用して、サポートされている特定のシナリオ (サード パーティのフィッシング シミュレーションとセキュリティ操作 (SecOps) メールボックスに配信されるメッセージ) でフィルター処理すべきでないメッセージを特定する方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 826eb2d2b860900ed0f73ecd85f3162bb90de2a9
-ms.sourcegitcommit: d7c51ab23de4b43bcc8eebebc5a2962831e9fd55
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 82d1f38430769b00cdb8fc5cc7c9cd02884f66d1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67420986"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482994"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>サードパーティのフィッシング シミュレーションをユーザーに配信し、フィルター処理されていないメッセージを SecOps メールボックスに配信するように構成する
 
@@ -33,7 +33,7 @@ ms.locfileid: "67420986"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[組織を既定でセキュリティで保護](secure-by-default.md)するために、Exchange Online Protection (EOP) では、マルウェアまたは信頼度の高いフィッシングとして識別されるメッセージのセーフ リストまたはフィルター処理のバイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 例:
+[組織を既定でセキュリティで保護](secure-by-default.md)するために、Exchange Online Protection (EOP) では、マルウェアまたは信頼度の高いフィッシングとして識別されるメッセージのセーフ リストまたはフィルター処理のバイパスは許可されません。 ただし、フィルター処理されていないメッセージの配信を必要とする特定のシナリオがあります。 以下に例を示します。
 
 - **サード パーティのフィッシング シミュレーション**: シミュレートされた攻撃は、実際の攻撃が組織に影響を与える前に、脆弱なユーザーを特定するのに役立ちます。
 - **セキュリティ操作 (SecOps) メールボックス**: フィルター処理されていないメッセージ (良いメッセージと悪いメッセージの両方) を収集および分析するためにセキュリティ チームによって使用される専用メールボックス。

@@ -14,14 +14,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 管理者は、Exchange Online メールボックスの有無にかかわらず、Exchange Online Protection (EOP) 組織で使用できるフィッシング対策ポリシーを作成、変更、削除する方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 9a7fe8dbd700024fdeae6d354986c3844a49d4d0
-ms.sourcegitcommit: 2f6a7410e9919f753a759c1ada441141e18f06fd
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: fe66c5acd4c2f9a45ca2e19271a2218f8ee64342
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/30/2022
-ms.locfileid: "67086061"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482972"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>EOP でのスパム対策ポリシーの構成
 
@@ -114,7 +114,7 @@ Microsoft 365 Defender ポータルでカスタムフィッシング対策ポリ
    - **これらのユーザー、グループ、およびドメインを除外する**: ポリシーが適用される内部の受信者に関する例外 (受信者の例外) を追加するには、このオプションを選択して例外を構成します。設定と動作は、条件とまったく同じです。
 
    > [!IMPORTANT]
-   > 複数の異なる種類の条件や例外は加算されません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
+   > 複数の異なる条件または例外は可算的ではありません。包括的です。 ポリシーは、指定された _すべての_ 受信者フィルターに一致する受信者 _にのみ_ 適用されます。 たとえば、次の値を使用してポリシーで受信者フィルター条件を構成します:
    >
    > - 受信者は次のとおりです: romain@contoso.com
    > - 受信者が次のメンバーの場合: Executive

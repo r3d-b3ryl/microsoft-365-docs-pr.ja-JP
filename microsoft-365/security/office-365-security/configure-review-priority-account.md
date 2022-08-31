@@ -15,14 +15,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 組織内の重要なユーザーを識別し、優先度の高いアカウント タグを追加して、追加の保護を提供する方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 466061562ba0ccc1a33a9fe6ca58073196f4f7e0
-ms.sourcegitcommit: d1b60ed9a11f5e6e35fbaf30ecaeb9dfd6dd197d
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: ff8617f84c7e774d2dd119f3706ad08ea7591e31
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 06/29/2022
-ms.locfileid: "66492183"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482562"
 ---
 # <a name="configure-and-review-priority-accounts-in-microsoft-defender-for-office-365"></a>Microsoft Defender for Office 365で優先度アカウントを構成して確認する
 
@@ -40,7 +40,7 @@ ms.locfileid: "66492183"
 
 優先度アカウント保護は、事前に特定された重要なユーザーに対して既定で有効になっています。 ただし、組織のセキュリティ管理者は、次の手順に従って、優先度の高いアカウント保護を有効にすることもできます。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>**[設定** \> **メール] &コラボレーション** \> **の優先度アカウント保護** に移動します。 **[優先度アカウント保護**] ページに直接移動するには、 <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>**[設定]** \> **Email &コラボレーション** \> **の優先度アカウント保護** に移動します。 **[優先度アカウント保護**] ページに直接移動するには、 <https://security.microsoft.com/securitysettings/priorityAccountProtection>.
 
 2. [ **優先度アカウント保護** ] ページで、[ **優先度アカウント保護** ( ):::image type="icon" source="../../media/scc-toggle-on.png" border="false"::: を有効にします。
 
@@ -94,12 +94,12 @@ Microsoft Defender for Office 365は、アラート、レポート、インシ�
 
 レポートを表示するには、次の手順に従います。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート** \> **メール] &コラボレーションメール&コラボレーション** \> **レポート**\>に移動し、[**脅威の保護の状態**] を見つけて、[**詳細の表示**] をクリックします。 レポートに直接移動するには、 <https://security.microsoft.com/reports/TPSAggregateReportATP>.
+1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**レポート** \> **] Email &コラボレーション Email &コラボレーション** \> **レポート**\>に移動し、[**脅威の保護の状態**] を見つけて、[**詳細の表示**] をクリックします。 レポートに直接移動するには、 <https://security.microsoft.com/reports/TPSAggregateReportATP>.
 
 2. 既定のビューは、[ **概要別のデータの表示] です**。 この値をクリックして、次のいずれかの値を選択してビューを変更します。
-   - **メール \> フィッシングでデータを表示する**
-   - **電子メール \> マルウェアでデータを表示する**
-   - **電子メール \> スパムでデータを表示する**
+   - **Emailフィッシングでデータを\>表示する**
+   - **Email マルウェアによるデータの\>表示**
+   - **スパムをEmailしてデータを\>表示する**
 
 3. [フィルター] アイコンをクリック ![します。](../../media/m365-cc-sc-filter-icon.png) **フィルター。**
 
@@ -113,7 +113,7 @@ Microsoft Defender for Office 365は、アラート、レポート、インシ�
 
 脅威エクスプローラーで追加の保護を表示するには、次の手順に従います。
 
-1. Microsoft 365 Defender ポータルの <https://security.microsoft.com>[**電子メール & コラボレーション** \> エクスプローラー] に移動 **します**。 **脅威エクスプローラー** ページに直接移動するには、<https://security.microsoft.com/threatexplorer>.
+1. Microsoft 365 Defender ポータルで<https://security.microsoft.com>、**コラボレーション** \> エクスプローラー Email &移動 **します**。 **脅威エクスプローラー** ページに直接移動するには、<https://security.microsoft.com/threatexplorer>.
 
 2. ドロップダウンから **[コンテキスト** ] を選択し、[ **優先度アカウント保護**] の横にあるチェック ボックスをオンにします。
 
@@ -126,7 +126,7 @@ Microsoft Defender for Office 365は、アラート、レポート、インシ�
 
 エンティティ ページの上部にあるタブを使用すると、電子メールを効率的に調査できます。 [ **分析** ] タブをクリックします。[脅威 **の検出の詳細**] に[優先度のアカウント保護]が表示されるようになりました。
 
-## <a name="more-information"></a>詳細情報
+## <a name="more-information"></a>詳細
 
 - [Microsoft Defender for Office 365のユーザー タグ](user-tags.md)
 - [優先アカウントを管理および監視する](../../admin/setup/priority-accounts.md)

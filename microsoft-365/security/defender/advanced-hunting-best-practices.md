@@ -4,7 +4,8 @@ description: 高度なハンティングを使用して、高速で効率的で�
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ, kusto, avoid timeout, コマンド ライン, プロセス ID, 最適化, ベスト プラクティス, 解析, 結合, 要約
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: c4236edcb2b5ec15b7c66be8f4b74ad0a2bc44c7
-ms.sourcegitcommit: e9692a40dfe1f8c2047699ae3301c114a01b0d3a
+ms.openlocfilehash: da7d8966744d13b05504cecaba7824887c057028
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/01/2022
-ms.locfileid: "66603475"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483082"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>高度な検索クエリのベスト プラクティス
 
@@ -263,7 +263,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>文字列を解析する
 解析または変換が必要な文字列を効率的に処理するために使用できるさまざまな関数があります。
 
-| String | 職務 | 使用例 |
+| 文字列 | 職務 | 使用例 |
 |--|--|--|
 | コマンド ライン | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | コマンドとすべての引数を抽出します。 |
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | ファイルまたはフォルダーパスのセクションを抽出します。 |
@@ -276,7 +276,7 @@ SHA256,ThreatTypes,DetectionMethods
 >[!NOTE]
 >この記事の一部のテーブルは、Microsoft Defender for Endpointでは使用できない場合があります。 [Microsoft 365 Defenderを有効にして](m365d-enable.md)、より多くのデータ ソースを使用して脅威を検出します。 高度なハンティング クエリをMicrosoft Defender for Endpointから移行するの手順に従って、[高度なハンティング ワークフローをMicrosoft Defender for EndpointからMicrosoft 365 Defender](advanced-hunting-migrate-from-mde.md)に移動できます。
 
-## <a name="related-topics"></a>関連トピック
+## <a name="related-topics"></a>関連項目
 - [Kusto クエリ言語のドキュメント](/azure/data-explorer/kusto/query/)
 - [クォータと使用パラメータ](advanced-hunting-limits.md)
 - [高度なハンティング エラーを処理する](advanced-hunting-errors.md)

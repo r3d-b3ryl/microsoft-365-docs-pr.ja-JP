@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの名前付け変更テー
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, データ, 名前変更, 名前変更
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 4e58bb3d8c8cc7c507c4136abcabeb7e42b6827d
-ms.sourcegitcommit: 1ef176c79a0e6dbb51834fe30807409d4e94847c
+ms.openlocfilehash: 12653741e10eaba0e8a658e24d3001e16af4e5d5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 11/19/2021
-ms.locfileid: "64731507"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482518"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>高度なハンティング スキーマ - 名前付けの変更
 
@@ -37,9 +37,9 @@ ms.locfileid: "64731507"
 
 [高度なハンティング スキーマ](advanced-hunting-schema-tables.md)は、新しいテーブルと列を追加するために定期的に更新されます。 場合によっては、ユーザー エクスペリエンスを向上させるために、既存の列名の名前が変更または置き換えられます。 この記事を参照して、クエリに影響を与える可能性のある名前付けの変更を確認してください。
 
-名前付けの変更は、カスタム検出ルールで使用されるクエリを含め、Defender for Cloudに保存されるクエリに自動的に適用されます。 これらのクエリを手動で更新する必要はありません。 ただし、次のクエリを更新する必要があります。
+名前付けの変更は、カスタム検出ルールで使用されるクエリを含め、Defender for Cloud に保存されるクエリに自動的に適用されます。 これらのクエリを手動で更新する必要はありません。 ただし、次のクエリを更新する必要があります。
 - API を使用して実行されるクエリ
-- Defender for Cloudの外部に保存されるクエリ
+- Defender for Cloud の外部の他の場所に保存されるクエリ
 
 ## <a name="december-2020"></a>2020 年 12 月
 
@@ -59,7 +59,7 @@ ms.locfileid: "64731507"
 | `DetectionSource` | WindowsDefenderSmartScreen |  Smartscreen | ブランド |
 | `DetectionSource` | CustomerTI | カスタム TI | ブランド |
 | `DetectionSource` | OfficeATP | Microsoft Defender for Office 365 | ブランド |
-| `DetectionSource` | MTP | Microsoft 365 Defender | ブランド |
+| `DetectionSource` | Mtp | Microsoft 365 Defender | ブランド |
 | `DetectionSource` | AzureATP | Microsoft Defender for Identity | ブランド |
 | `DetectionSource` | CustomDetection | カスタム検出 | ブランド |
 | `DetectionSource` | AutomatedInvestigation |自動調査 | ブランド |
@@ -72,7 +72,7 @@ ms.locfileid: "64731507"
 
 `DetectionSource` は [AlertInfo](advanced-hunting-alertinfo-table.md) テーブルで使用できます。 `ServiceSource` は [、AlertEvidence](advanced-hunting-alertevidence-table.md) テーブルと [AlertInfo テーブルで](advanced-hunting-alertinfo-table.md) 使用できます。 
 
-## <a name="february-2021"></a>2021 年 2 月
+## <a name="february-2021"></a>2021年2月
 
 1. [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) テーブルと [EmailEvents](advanced-hunting-emailevents-table.md) テーブルでは、`MalwareFilterVerdict`列と`PhishFilterVerdict`列は列に`ThreatTypes`置き換えられています。 `MalwareDetectionMethod`列と`PhishDetectionMethod`列も列に`DetectionMethods`置き換えられました。 この合理化により、新しい列の下に詳細情報を提供できます。 マッピングは次のとおりです。
 

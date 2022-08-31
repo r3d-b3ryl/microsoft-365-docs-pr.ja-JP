@@ -19,12 +19,12 @@ ms.custom:
 description: 管理者は、Exchange Online Protection (EOP) の迷惑メール (スパム) と一括メール (灰色のメール) の違いについて学習できます。
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5117954e668c4e64444628078f38dab61b0597cb
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.openlocfilehash: d8fc8bdc3740c5103c33a1e3fdd1d98dc67f8704
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441791"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482408"
 ---
 # <a name="whats-the-difference-between-junk-email-and-bulk-email-in-eop"></a>EOP での迷惑メールと一括メールの違いは何ですか?
 
@@ -52,14 +52,13 @@ Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) �
 スパム対策ポリシーには、バルクメールを迷惑メールとして識別するために使用される既定の BCL しきい値があります。 管理者はしきい値を増減できます。 詳細については、次のトピックをご覧ください。
 
 - [EOP でスパム対策ポリシーを構成します](configure-your-spam-filter-policies.md)。
-
 - 「[EOP のスパム対策ポリシーの設定](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings)」
 
 見落としがちなもう１つの対策オプションとして、ユーザーがバルクメールを受信することについて苦情をしていても、スパムフィルタリングを通過する信頼できる送信者からのメッセージを EOP にしている場合は、ユーザーはバルクメールのメッセージに配信停止オプションがあるかどうかを確認するようにしてください。
 
 ## <a name="how-to-tune-bulk-email"></a>一括メールを調整する方法
 
-2022 年 9 月に、Microsoft Defender for Office 365 プラン 2 のお客様は[高度な捜索](/microsoft-365/security/defender/advanced-hunting-overview)から BCL にアクセスできます。 この機能を使用すると、管理者は、組織にメールを送信したすべての一括送信者と、対応する BCL 値と受信した電子メール 量を確認できます。 一括送信者にドリルダウンするには、**Email & コラボレーション** スキーマの **EmailEvents** テーブルの他の列を使用します。 詳細については、「 [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)」を参照してください。
+2022 年 9 月、Microsoft Defender for Office 365 プラン 2 のお客様は[高度な捜索](/microsoft-365/security/defender/advanced-hunting-overview)から BCL にアクセスできます。 この機能を使用すると、管理者は、組織にメールを送信したすべての一括送信者と、対応する BCL 値と受信した電子メール 量を確認できます。 一括送信者にドリルダウンするには、**Email & コラボレーション** スキーマの **EmailEvents** テーブルの他の列を使用します。 詳細については、「 [EmailEvents](/microsoft-365/security/defender/advanced-hunting-emailevents-table)」を参照してください。
 
 たとえば、Contoso がスパム対策ポリシーで現在の一括しきい値を 7 に設定している場合、Contoso の受信者は受信トレイに BCL \< 7 を持つすべての送信者から電子メールを受信します。 管理者は、次のクエリを実行して、組織内のすべての一括送信者の一覧を取得できます。
 
@@ -71,12 +70,15 @@ EmailEvents
 
 このクエリを使用すると、管理者は必要な送信者と望ましくない送信者を識別できます。 一括送信者の BCL スコアが一括しきい値を満たしていない場合、管理者は [分析のために送信者のメッセージを Microsoft に送信](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal)できます。これにより、送信者が許可エントリとしてテナント許可/ブロック リストに追加されます。
 
-計画 2 Defender for Office 365ない組織では、[脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)を使用して、必要な一括送信者と望ましくない一括送信者を特定できます。
+Defender for Office 365プラン 2 を持たない組織は、Office 365 プラン 2 のMicrosoft 365 Defenderの機能を無料で試すことができます。 で 90 日間のDefender for Office 365評価を<https://security.microsoft.com/atpEvaluation>使用します。 [ここで](try-microsoft-defender-for-office-365.md)サインアップおよび試用版の使用条件を確認するか、[脅威保護の状態レポート](view-email-security-reports.md#threat-protection-status-report)を使用して、必要な不要な一括送信者を特定できます。
 
-1. [脅威の保護の状態] レポートに<https://security.microsoft.com/reports/URLProtectionActionReport>移動し、[スパムEmail **してデータを**\>表示する] でフィルター処理 **します**。
- 
+1. [脅威の保護の状態] レポートで、[**スパムをEmailしてデータを\>表示する**] を選択します。 レポートに直接移動するには、次のいずれかの URL を開きます。
+
+   - Eop： <https://security.microsoft.com/reports/TPSAggregateReport>
+   - Defender for Office 365:<https://security.microsoft.com/reports/TPSAggregateReportATP>
+
 2. 一括メールをフィルター処理し、調査するメールを選択し、電子メール エンティティをクリックして送信者の詳細を確認します。 Email エンティティは、Defender for Office 365プラン 2 のお客様にのみ使用できます。
 
 3. 必要な送信者と望ましくない送信者を特定したら、一括しきい値を目的のレベルに調整します。 BCL スコアが一括しきい値に収まらない一括送信者がある場合は、 [分析のために Microsoft にメッセージを送信](allow-block-email-spoof.md#use-the-microsoft-365-defender-portal-to-create-allow-entries-for-domains-and-email-addresses-in-the-submissions-portal)します。これにより、送信者が許可エントリとしてテナント許可/ブロック リストに追加されます。
 
-管理者は、再コミットされた一括しきい値に従うか、組織のニーズに合った一括しきい値を選択できます。
+管理者は、 [推奨される一括しきい値の一括しきい値](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365.md#anti-spam-anti-malware-and-anti-phishing-protection-in-eop) に従うか、組織のニーズに合った一括しきい値を選択できます。

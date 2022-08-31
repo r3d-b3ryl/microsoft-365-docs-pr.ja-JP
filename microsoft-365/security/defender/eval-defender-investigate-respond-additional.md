@@ -4,7 +4,8 @@ description: Microsoft 365 Defenderのインシデント対応機能を試して
 keywords: 試用版のMicrosoft 365 Defender、Microsoft 365 Defenderの試用、Microsoft 365 Defenderの評価、評価ラボのMicrosoft 365 Defender、Microsoft 365 Defender パイロット、サイバー セキュリティ、高度な永続的な脅威、エンタープライズ セキュリティ、デバイス、デバイス、ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な捜索
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,15 +22,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 64e200acf8726a69e6f71784334345e5603b9677
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 5dbda4df04d47d4069a60fd7925dde2390708aba
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67384538"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473637"
 ---
 # <a name="try-microsoft-365-defender-incident-response-capabilities-in-a-pilot-environment"></a>パイロット環境でインシデント対応機能をMicrosoft 365 Defenderしてみてください
 

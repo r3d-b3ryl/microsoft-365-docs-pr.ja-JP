@@ -4,7 +4,8 @@ description: Microsoft 365 Defender は、デバイス、ID、データ、アプ
 keywords: MMicrosoft 365 Defender の概要、サイバー セキュリティ、高度な永続的な脅威、エンタープライズ セキュリティ、デバイス、デバイス, ID、ユーザー、データ、アプリケーション、インシデント、自動調査と修復、高度な捜索
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,14 +23,13 @@ ms.custom:
 - admindeeplinkDEFENDER
 - intro-overview
 ms.topic: conceptual
-ms.technology: m365d
 adobe-target: true
-ms.openlocfilehash: de40589c69aee6c6ab959f360b384707eca3d29a
-ms.sourcegitcommit: 44ece87e3e0c0c851dfc1e77211ac3e5e4a5b973
+ms.openlocfilehash: 6e255fda40e12855359754920ef07ff2d78f9b5e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/05/2022
-ms.locfileid: "66617132"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483280"
 ---
 # <a name="what-is-microsoft-365-defender"></a>Microsoft 365 Defender とは
 

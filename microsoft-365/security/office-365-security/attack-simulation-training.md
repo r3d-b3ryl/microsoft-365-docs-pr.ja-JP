@@ -5,20 +5,20 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.localizationpriority: medium
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365 プラン 2 の攻撃シミュレーション トレーニングを使用して、フィッシング攻撃をシミュレートし、フィッシング防止に関するユーザーをトレーニングする方法を学習できます。
-ms.technology: mdo
-ms.openlocfilehash: 755b6b514027125f0570469ba3c683422b8d1edf
-ms.sourcegitcommit: 7374c7b013890744d74e5214f7f8d69ca7874466
+ms.subservice: mdo
+ms.openlocfilehash: 7983e1767565870cec1fb3457fc3466e99b0d8db
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/23/2022
-ms.locfileid: "67408089"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474207"
 ---
 # <a name="simulate-a-phishing-attack-with-attack-simulation-training-in-defender-for-office-365"></a>Defender for Office 365の攻撃シミュレーション トレーニングを使用してフィッシング攻撃をシミュレートする
 

@@ -16,14 +16,14 @@ ms.collection:
 - m365initiative-defender-office365
 description: 管理者は、Exchange Online Protection (EOP) によってメッセージに追加されるヘッダー フィールドについて学ぶことができます。これらのヘッダーは、メッセージに関する情報とメッセージが処理された方法に関する情報を提供します。
 ms.custom: seo-marvel-apr2020
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: fa5b107853a67d31e184ca744bcb8d0631d11aea
-ms.sourcegitcommit: 0a67e239549752fcdbcff660189f34b51ec273f5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 89cd21e947923602d2c268a99d2a4a1fc1fba28e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/23/2022
-ms.locfileid: "66983941"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483236"
 ---
 # <a name="anti-spam-message-headers-in-microsoft-365"></a>Microsoft 365 のスパム対策メッセージ ヘッダー
 

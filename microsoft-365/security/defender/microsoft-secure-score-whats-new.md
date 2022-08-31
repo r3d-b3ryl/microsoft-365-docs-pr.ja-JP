@@ -2,11 +2,12 @@
 title: Microsoft Secure Score の新機能
 description: Microsoft 365 Defender ポータルで Microsoft Secure Score に対して行った新しい変更について説明します。
 keywords: microsoft secure score, secure score, office 365 secure score, microsoft security score, Microsoft 365 Defender portal
-ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.author: dansimp
 author: dansimp
 manager: dansimp
@@ -20,13 +21,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.technology: m365d
-ms.openlocfilehash: 6f478959d8e6de84ad64fdc128c4f7a9eea73a62
-ms.sourcegitcommit: 72d10d0bc29ecc8b19c395f1815dc48b549096d9
+ms.openlocfilehash: e5bea982a1cbc776a9529532bbbac4da4199fb4a
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/17/2022
-ms.locfileid: "67369139"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482584"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Microsoft Secure Score の新機能
 

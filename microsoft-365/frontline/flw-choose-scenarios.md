@@ -17,12 +17,12 @@ ms.reviewer: aaglick
 appliesto:
 - Microsoft Teams
 - Microsoft 365 for frontline workers
-ms.openlocfilehash: 5d5c6596d0981ad9787a784c0d189a8e11c07ac6
-ms.sourcegitcommit: f09687dbbc68347bc421d0b686625b80ff3a6b20
+ms.openlocfilehash: 5265c8f4a2135fdeee800ebdd465bc3cbb53a6f5
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/25/2022
-ms.locfileid: "67432399"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470973"
 ---
 # <a name="choose-your-scenarios-for-microsoft-365-for-frontline-workers"></a>現場担当者向けの Microsoft 365 のシナリオを選択する
 
@@ -37,6 +37,11 @@ ms.locfileid: "67432399"
 :::image type="icon" source="/office/media/icons/chat-room-conversation-teams.png":::
 
 コミュニケーション ソリューションは、現場担当者同士を繋ぎ、お互い、組織内の他のユーザー、および顧客と共同作業できるようにします。
+
+次のビデオを参照して、現場の従業員が小売組織で接続して共同作業を行う方法の例を確認します。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRJVw]
+
 
 | シナリオ | 説明 | サービス | Teams アプリ |
 | --- | --- | --- |--- |
@@ -84,6 +89,11 @@ ms.locfileid: "67432399"
 
 紙ベースのプロセスをデジタル化し、ルーチンの繰り返しステップを自動化することで、運用効率を高めます。
 
+小売環境でビジネス プロセスを簡略化する方法の例については、次のビデオをご覧ください。
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWRzfc]
+
+
 | シナリオ | 説明 | サービス | Teams アプリ |
 | --- | --- | --- | --- |
 | [ビジネス プロセスの簡略化](simplify-business-processes.md) | タスク発行を使用して、サイト間で標準プロセスを作成し、リストを使用して情報を管理し、進行中のプロセスを追跡し、承認を使用して要求を効率化します。 自動化されたワークフローでは、データの収集や通知のルーティングなど、アクションを高速化して自動化できます。 | Microsoft Teams<br>Power Platform | タスク<br>リスト<br>承認 |
@@ -94,6 +104,11 @@ ms.locfileid: "67432399"
 :::image type="icon" source="media/virtual-appointment-teams.png":::
 
 Microsoft Bookings と Microsoft Teams を使用して、クライアントや顧客と仮想予定をスケジュールし、ホストします。 フォームと仮想予定エクスペリエンスを統合して、顧客に関する適切な情報を取得したり、カスタマー サポート エクスペリエンスの一部として顧客が必要としているものを学習したりできます。
+
+医療機関での仮想予定の例については、次のビデオをご覧ください。 
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4TQop]
+
 
 詳細情報: [Microsoft Teams と Bookings アプリを使用した仮想予定](bookings-virtual-visits.md)
 

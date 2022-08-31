@@ -1,9 +1,10 @@
 ---
 title: Microsoft 365 Defenderを有効にする際によく寄せられる質問
 description: ライセンス、アクセス許可、初期設定、およびMicrosoft 365 Defenderの有効化に関連するその他の製品やサービスに関してよく寄せられる質問への回答を取得します。
-keywords: よく寄せられる質問, FAQ, GCC, 作業の開始, Microsoft 365 Defenderを有効にする, Microsoft 365 Defender, M365, セキュリティ, データの場所, 必要なアクセス許可, ライセンス資格, 設定ページ
+keywords: よく寄せられる質問, FAQ, GCC, get started, enable Microsoft 365 Defender, Microsoft 365 Defender, M365, security, data location, required permissions, license eligibility, settings page
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 73dddcfc1389eb5bb0b0115f0666c413dc7d2a01
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 55a5dbaf78ff19b9ef70d77493f7ac8568a0039d
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64663206"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483412"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Microsoft 365 Defenderを有効にする際によく寄せられる質問
 
@@ -53,18 +53,18 @@ ms.locfileid: "64663206"
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>Microsoft 365 Defenderの使用を開始するには、何かをインストールまたはデプロイする必要がありますか?
 
-いいえ。Microsoft 365 Defenderは、既にデプロイしたMicrosoft 365セキュリティ サービスのデータを統合します。 これを有効にすると、インシデント、自動化、およびハンティング のエクスペリエンスが、デプロイされた製品の範囲内で動作し始めます。 これらの製品のいずれも適切にデプロイされていない場合、Microsoft 365 Defenderはデータを表示せず、何もアクションを実行できません。
+いいえ。Microsoft 365 Defenderは、既にデプロイした Microsoft 365 セキュリティ サービスのデータを統合します。 これを有効にすると、インシデント、自動化、およびハンティング のエクスペリエンスが、デプロイされた製品の範囲内で動作し始めます。 これらの製品のいずれも適切にデプロイされていない場合、Microsoft 365 Defenderはデータを表示せず、何もアクションを実行できません。
 
-Microsoft 365 Defenderエクスペリエンスを最適化するために、サポート *されているすべての*[Microsoft 365セキュリティ製品とサービス](deploy-supported-services.md)をデプロイすることをお勧めします。
+Microsoft 365 Defenderエクスペリエンスを最適化するには、サポート *されているすべての* [Microsoft 365 セキュリティ製品とサービス](deploy-supported-services.md)を展開することをお勧めします。
 
 ## <a name="where-does-microsoft-365-defender-process-and-store-my-data"></a>データの処理と保存Microsoft 365 Defender場所
 
 Microsoft 365 Defender統合データが処理および格納されるデータ センターに最適な場所が自動的に選択されます。 Microsoft Defender for Endpointがある場合は、Defender for Endpoint で使用されているのと同じ場所が選択されます。
 
 >[!NOTE]
->Microsoft Defender for Endpoint Microsoft Defender for Cloudを有効にすると、欧州連合 (EU) データ センターで自動的にプロビジョニングされます。 Microsoft 365 Defenderは、この方法でMicrosoft Defender for Endpointをプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
+>Microsoft Defender for Endpoint Microsoft Defender for Cloud を使用してオンにすると、欧州連合 (EU) データ センターで自動的にプロビジョニングされます。 Microsoft 365 Defenderは、この方法でMicrosoft Defender for Endpointをプロビジョニングしたお客様に対して、同じ EU データ センターで自動的にプロビジョニングされます。
 
-データ センターの場所は、Microsoft 365 Defender (**設定 > Microsoft 365 Defender**) の設定ページでサービスがプロビジョニングされる前と後に表示されます。 別のデータ センターの場所を使用する場合は、Microsoft 365 Defender ポータルで [**ヘルプが必要ですか?**] を選択して Microsoft サポートにお問い合わせください。
+データ センターの場所は、Microsoft 365 Defenderの設定ページ (**設定> Microsoft 365 Defender**) にサービスがプロビジョニングされる前と後に表示されます。 別のデータ センターの場所を使用する場合は、Microsoft 365 Defender ポータルで [**ヘルプが必要ですか?**] を選択して Microsoft サポートにお問い合わせください。
 
 ## <a name="where-can-i-access-microsoft-365-defender"></a>Microsoft 365 Defenderにアクセスできる場所
 
@@ -72,7 +72,7 @@ Microsoft 365 Defenderは次<a href="https://go.microsoft.com/fwlink/p/?linkid=2
 
 ## <a name="what-permissions-do-i-need-to-access-microsoft-365-defender"></a>Microsoft 365 Defenderにアクセスするには、どのようなアクセス許可が必要ですか?
 
-次のAzure Active Directory (Azure AD) ロールが割り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
+次の Azure Active Directory (Azure AD) ロールが割り当てられたアカウントは、Microsoft 365 Defender機能とデータにアクセスできます。
 
 - グローバル管理者
 - セキュリティ管理者

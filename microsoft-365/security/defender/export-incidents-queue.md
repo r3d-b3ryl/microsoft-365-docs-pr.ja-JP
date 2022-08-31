@@ -3,7 +3,8 @@ title: インシデント キューを CSV ファイルにエクスポートす�
 description: 新しく導入された [エクスポート] ボタンについて説明し、インシデント キュー関連のデータを CSV ファイルに移行する
 keywords: インシデント, キュー, エクスポート, csv
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 1ea738bfec4f9779bae87a769b784f399e165a07
-ms.sourcegitcommit: e852dafda3c0d1dfdde492600093aa17a3dcf5a6
+ms.openlocfilehash: 5c9973674acd577bef44a2ceb73b6996da81b80b
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/25/2022
-ms.locfileid: "67002452"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483346"
 ---
 # <a name="export-incidents-queue-to-csv-files"></a>インシデント キューを CSV ファイルにエクスポートする
 

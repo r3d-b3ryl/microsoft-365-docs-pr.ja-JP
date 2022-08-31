@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Backscatter と Microsoft Exchange Online Protection (EOP) について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: d132ed56c02989987da9e0ce32e7d4593e85e651
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 5cc6bacfa7d66f9fa4f520f7826d8712861e98e2
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65648219"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483258"
 ---
 # <a name="backscatter-in-eop"></a>EOP のバックスキャッター
 
@@ -35,9 +35,9 @@ ms.locfileid: "65648219"
 
 *Backscatter* は、送信しなかったメッセージに対して受信する配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) です。 Backscatter は、スパム送信者がメッセージ内の From アドレス (または P2 アドレスとも呼ばれます `5322.From` ) を偽装 (スプーフィング) することによって発生します。 スパム送信者は、多くの場合、実際の電子メール アドレスを差出人アドレスとして使用して、メッセージに信頼性を提供します。 スパムが存在しない受信者に送信されると、宛先電子メール サーバーは本質的に、NDR の配信不能メッセージを差出人アドレスの偽造された送信者に返すようにだまされます。
 
-Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを持つMicrosoft 365組織では、Exchange Onlineメールボックスがない場合、EOP は NDR を生成することなく、疑わしいソースからメッセージを識別してサイレント ドロップするようあらゆる努力を行います。 しかし、サービスを流れる膨大な量のメールに基づいて、EOP が意図せずにバックスキャッターを送信する可能性は常にあります。
+Exchange Onlineまたはスタンドアロン Exchange Online Protection (EOP) 組織にメールボックスを含む Microsoft 365 組織では、Exchange Onlineメールボックスがない場合、EOP は NDR を生成せずに疑わしいソースからメッセージを識別し、サイレント ドロップするようあらゆる努力を行います。 しかし、サービスを流れる膨大な量のメールに基づいて、EOP が意図せずにバックスキャッターを送信する可能性は常にあります。
 
 Backscatterer.org は、バックスキャッターの送信を担当する電子メール サーバーのブロックリスト (DNS ブロックリストまたは DNSBL とも呼ばれます) を保持し、EOP サーバーがこの一覧に表示される可能性があります。 ただし、Backscatterer.org ブロックリストから自分自身を削除しようとはしません。(自分のアドミッションによって) そのリストはスパム送信者のリストではないためです。
 
 > [!TIP]
-> Backscatterer.org Web サイト (<http://www.backscatterer.org/?target=usage>) では、拒否モードではなくセーフ モードでサービスを使用することをお勧めします。大規模な電子メール サービスでは、ほとんどの場合、バックスキャッターが送信されるためです。
+> Backscatterer.org Web サイト (<http://www.backscatterer.org/?target=usage>) では、ほとんどの場合、大規模な電子メール サービスがバックスキャッターを送信するため、拒否モードではなくセーフ モードでサービスを使用することをお勧めします。

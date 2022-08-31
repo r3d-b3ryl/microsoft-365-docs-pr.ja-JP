@@ -2,7 +2,7 @@
 title: クライアント アナライザー HTML レポートについて
 description: Microsoft Defender for Endpoint Client Analyzer HTML レポートを分析する方法について説明します
 keywords: クライアント アナライザー レポート、HTML レポート、クライアント アナライザー
-ms.prod: m365-security
+ms.service: microsoft-365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,13 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: conceptual
-ms.technology: m365d
-ms.openlocfilehash: 1f843c62d44ed7c25f07568cc0ee92709fb080a7
-ms.sourcegitcommit: b0c3ffd7ddee9b30fab85047a71a31483b5c649b
+ms.subservice: mde
+ms.openlocfilehash: b1b83200b9fd0f67d832b4dbb41352bebfa418bd
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "64468901"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470787"
 ---
 # <a name="understand-the-client-analyzer-html-report"></a>クライアント アナライザー HTML レポートについて
 
@@ -39,9 +39,9 @@ ms.locfileid: "64468901"
 
 - 一番上に、スクリプト バージョンとスクリプト ランタイムが参照用に一覧表示されます
 - [ **デバイス情報]** セクションには、アナライザーが実行されたデバイスを一意に識別するための基本的な OS とデバイス識別子が用意されています。
-- **Endpoint Security Details** は、Microsoft Defender ウイルス対策やセンサー プロセスなど、Microsoft Defender for Endpoint関連のプロセスに関する一般的な情報を提供します。 重要なプロセスが想定どおりにオンラインでない場合、色は赤に変わります。
+- **Endpoint Security Details** には、Microsoft Defender ウイルス対策やセンサー プロセスなど、Microsoft Defender for Endpoint関連のプロセスに関する一般的な情報が提供されます。 重要なプロセスが想定どおりにオンラインでない場合、色は赤に変わります。
   
--   **Endpoint Security Details** は、Microsoft Defender ウイルス対策やセンサー プロセスなど、Microsoft Defender for Endpoint関連のプロセスに関する一般的な情報を提供します。 重要なプロセスが想定どおりにオンラインでない場合、色は赤に変わります。
+-   **Endpoint Security Details** には、Microsoft Defender ウイルス対策やセンサー プロセスなど、Microsoft Defender for Endpoint関連のプロセスに関する一般的な情報が提供されます。 重要なプロセスが想定どおりにオンラインでない場合、色は赤に変わります。
 
     :::image type="content" source="images/85f56004dc6bd1679c3d2c063e36cb80.png" alt-text="[結果の確認の概要] ページ" lightbox="images/85f56004dc6bd1679c3d2c063e36cb80.png":::
 

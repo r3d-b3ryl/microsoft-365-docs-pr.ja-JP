@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの CloudAppEvents テー�
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, CloudAppEvents, Defender for Cloud Apps
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 77b4ebd42a8c105340d6d965380aa42b64ae6734
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 8892a672cb9fc77b4cf606f32581c1928decc45f
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64664966"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470145"
 ---
 # <a name="cloudappevents"></a>CloudAppEvents
 
@@ -45,8 +45,8 @@ ms.locfileid: "64664966"
 | `ActionType` | `string` | イベントをトリガーしたアクティビティの種類 |
 | `Application` | `string` | 記録されたアクションを実行したアプリケーション |
 | `ApplicationId` | `string` | アプリケーションの一意の識別子 |
-| `AccountObjectId` | `string` | Azure Active Directoryのアカウントの一意識別子 |
-| `AccountId` | `string` | Microsoft Defender for Cloud Appsによって検出されたアカウントの識別子。 ID、ユーザー プリンシパル名、またはその他の識別子をAzure Active Directoryできます。 |
+| `AccountObjectId` | `string` | Azure Active Directory のアカウントの一意識別子 |
+| `AccountId` | `string` | Microsoft Defender for Cloud Appsによって検出されたアカウントの識別子。 Azure Active Directory ID、ユーザー プリンシパル名、またはその他の識別子を指定できます。 |
 | `AccountDisplayName` | `string` | アドレス帳に表示されるアカウント ユーザーの名前。 通常、特定の名前または名、中間の開始、姓または姓の組み合わせ。 |
 | `IsAdminOperation` | `string` | アクティビティが管理者によって実行されたかどうかを示します |
 | `DeviceType` | `string` | 目的と機能に基づくデバイスの種類 ("ネットワーク デバイス"、"ワークステーション"、"サーバー"、"モバイル"、"ゲーム コンソール"、"プリンター" など) |
@@ -65,7 +65,7 @@ ms.locfileid: "64664966"
 | `ReportId` | `string` | イベントの一意識別子 |
 | `RawEventData` | `string` | ソース アプリケーションまたはサービスからの生のイベント情報 (JSON 形式) |
 | `AdditionalFields` | `dynamic` | エンティティまたはイベントに関する追加情報 |
-| `AccountType` | `string` | 標準、システム、管理者、DcAdmin、システム、アプリケーションなどの一般的なロールとアクセス レベルを示すユーザー アカウントの種類 |
+| `AccountType` | `string` | 標準、システム、管理、DcAdmin、システム、アプリケーションなどの一般的なロールとアクセス レベルを示すユーザー アカウントの種類 |
 | `IsExternalUser` | `boolean` | ネットワーク内のユーザーが組織のドメインに属していないかどうかを示します |
 | `IsImpersonated` | `boolean` | アクティビティが別のユーザー (偽装された) ユーザーに対して実行されたかどうかを示します。 |
 | `IPTags` | `dynamic` | 特定の IP アドレスと IP アドレス範囲に適用される顧客定義の情報 |

@@ -4,7 +4,8 @@ description: Microsoft 365 Defenderで使用できるように、Microsoft Defen
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, Microsoft Defender for Endpoint, 検索, クエリ, テレメトリ, カスタム検出, スキーマ, kusto, マッピング
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.technology: m365d
-ms.openlocfilehash: 9fd00df5e61d37e5133f23e5f06973ceb99c4636
-ms.sourcegitcommit: 85ce5fd0698b6f00ea1ea189634588d00ea13508
+ms.openlocfilehash: 05e498d7208e9cd72cde4b6899fedc70a70db766
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "64666176"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483522"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>高度なハンティング クエリをMicrosoft Defender for Endpointから移行する
 
@@ -34,7 +34,7 @@ ms.locfileid: "64666176"
 **適用対象:**
 - Microsoft 365 Defender
 
-高度なハンティング ワークフローをMicrosoft Defender for Endpointから移動し、より広範なデータ セットを使用して脅威をプロアクティブに検出します。 Microsoft 365 Defenderでは、次のような他のMicrosoft 365 セキュリティ ソリューションからデータにアクセスできます。
+高度なハンティング ワークフローをMicrosoft Defender for Endpointから移動し、より広範なデータ セットを使用して脅威をプロアクティブに検出します。 Microsoft 365 Defenderでは、次のような他の Microsoft 365 セキュリティ ソリューションからデータにアクセスできます。
 
 - Microsoft Defender for Endpoint
 - Microsoft Defender for Office 365
@@ -48,7 +48,7 @@ ms.locfileid: "64666176"
 
 ## <a name="schema-tables-in-microsoft-365-defender-only"></a>Microsoft 365 Defender内のスキーマ テーブルのみ
 
-[Microsoft 365 Defender高度なハンティング スキーマ](advanced-hunting-schema-tables.md)には、さまざまなMicrosoft 365セキュリティ ソリューションからのデータを含む追加のテーブルが用意されています。 次の表は、Microsoft 365 Defenderでのみ使用できます。
+[Microsoft 365 Defender高度なハンティング スキーマ](advanced-hunting-schema-tables.md)には、さまざまな Microsoft 365 セキュリティ ソリューションからのデータを含む追加のテーブルが用意されています。 次の表は、Microsoft 365 Defenderでのみ使用できます。
 
 | テーブル名 | 説明 |
 |------------|-------------|

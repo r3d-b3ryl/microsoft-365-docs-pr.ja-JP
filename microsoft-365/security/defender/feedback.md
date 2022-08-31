@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderに関するフィードバックを提供する
 description: Microsoft 365 Defenderに関する製品のフィードバックを提供する
 keywords: フィードバック, m365 セキュリティ, セキュリティ, 365, 機能
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 2843406c934ab95587ba07e3f897a3055562d9e1
-ms.sourcegitcommit: 3b8e009ea1ce928505b8fc3b8926021fb91155f3
+ms.openlocfilehash: de30ac89e0bf4f39ba7114adac7ad0a24bbf4a18
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/28/2022
-ms.locfileid: "64501247"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67468749"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>Microsoft 365 Defenderに関するフィードバックを提供する
 

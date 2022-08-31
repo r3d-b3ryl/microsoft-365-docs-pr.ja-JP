@@ -3,7 +3,8 @@ title: 手順 1. Microsoft 365 Defender操作の準備を計画する
 description: Microsoft 365 Defenderをセキュリティ操作に統合する際のMicrosoft 365 Defender操作準備の計画の基本。
 keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,15 +22,14 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 72535a88f6718724a4d87774d393a4ef0c6955a8
-ms.sourcegitcommit: 48a75b40e607542e5fe219b6e75ffc757804a9c6
+ms.openlocfilehash: e4cae3512e9f4d856dd97f04f3678ac113d0ecb6
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67344461"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483148"
 ---
-# <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>手順 1. Microsoft 365 Defender操作の準備を計画する
+# <a name="step-1-plan-for-microsoft-365-defender-operations-readiness"></a>手順 1。 Microsoft 365 Defender操作の準備を計画する
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

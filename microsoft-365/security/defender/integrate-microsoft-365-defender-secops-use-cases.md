@@ -3,7 +3,8 @@ title: 手順 5.  ユース ケースの開発とテスト
 description: Microsoft 365 Defenderをセキュリティ操作に統合する場合のユース ケースの開発とテストの基本。
 keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -21,13 +22,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 2df6e5a989ff46359d685cca3859aaf759280bef
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: c4caee1bd0904cecd941789e891b93a378080eed
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328807"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483302"
 ---
 # <a name="step-5-develop-and-test-use-cases"></a>手順 5.  ユース ケースの開発とテスト
 

@@ -3,7 +3,8 @@ title: 最初のインシデントに対応する
 description: Microsoft 365 Defenderでの最初のインシデントへの対応の基本。
 keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, 自己調査, 立ち上がり, ランプアップ, オンボード, インシデントレスポンダー
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,17 +18,17 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-firstincident
+- highpri
 ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 3774d4bbf68196b5253bdfa4d5c55a0bf4014728
-ms.sourcegitcommit: c1eaea74c8ffce2f9f477c9469342e88e4a70c14
+ms.openlocfilehash: deeda4f3a09c548d8368f65ba0e26289faa88120
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/20/2022
-ms.locfileid: "66895143"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470101"
 ---
 # <a name="responding-to-your-first-incident"></a>最初のインシデントに対応する
 
@@ -50,7 +51,7 @@ ms.locfileid: "66895143"
 
 Microsoft 365 Defenderのインシデントは、分析とインシデント対応の論理的な開始点です。 インシデントの分析と修復は、通常、(SecOps) チームのタスクと時間の大部分を占めています。
 
-## <a name="next-step"></a>次の手順
+## <a name="next-step"></a>次のステップ
 
 :::image type="content" source="../../media/first-incident-overview/first-incident-path.png" alt-text="[最初のインシデントに対応] ページの [修復] オプション" lightbox="../../media/first-incident-overview/first-incident-path.png":::
 

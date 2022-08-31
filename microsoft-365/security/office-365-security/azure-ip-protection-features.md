@@ -17,14 +17,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: この記事では、Azure Information Protectionの保護機能に対する変更について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 38dd1accf4641d6dfe3f66574b1072e2500cb914
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: b4d57227e07695f334a70cd8ad5f28e34f8a3895
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647823"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67472768"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Azure の保護機能Information Protection既存のテナントにロールアウトする
 
@@ -32,7 +32,7 @@ ms.locfileid: "65647823"
 - [Microsoft Defender for Office 365 プラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-情報の保護の最初の手順を支援するために、2018 年 7 月以降、すべての Azure Information Protection対象テナントに対して、既定で Azure Information Protectionの保護機能が有効になります。 Azure Information Protection の保護機能は、以前は Rights Management または Azure RMS としてOffice 365で知られていました。 組織にOffice E3 サービス プラン以上のサービス プランがある場合は、これらの機能をロールアウトするときに、Azure Information Protectionを通じて情報の保護を開始できるようになります。
+情報の保護の最初の手順を支援するために、2018 年 7 月以降、すべての Azure Information Protection対象テナントに対して、既定で Azure Information Protectionの保護機能が有効になります。 Azure Information Protectionの保護機能は、以前は Rights Management または Azure RMS としてOffice 365で知られていました。 組織に Office E3 サービス プラン以上のサービス プランがある場合は、これらの機能をロールアウトするときに、Azure Information Protectionを通じて情報の保護を開始できるようになります。
 
 ## <a name="changes-beginning-july-1-2018"></a>2018 年 7 月 1 日以降の変更
 
@@ -52,30 +52,30 @@ ms.locfileid: "65647823"
 
 ## <a name="why-are-we-making-this-change"></a>この変更を行う理由
 
-Office 365 メッセージ暗号化では、Azure Information Protectionの保護機能が活用されます。 メッセージ暗号化のOffice 365に対する最近の機能強化と、Microsoft 365での情報保護への広範な投資の中心として、従来は暗号化テクノロジの設定が困難であったように、組織が保護機能を有効にして使用しやすくしています。 Azure Information Protectionの保護機能を既定で有効にすると、機密データの保護をすばやく開始できます。
+Office 365 メッセージ暗号化では、Azure Information Protectionの保護機能が活用されます。 メッセージ暗号化のOffice 365に関する最近の機能強化と Microsoft 365 での情報保護への広範な投資の中心として、組織は従来から暗号化テクノロジを設定するのが困難であったように、保護機能を有効にして使用しやすくしています。 Azure Information Protectionの保護機能を既定で有効にすると、機密データの保護をすばやく開始できます。
 
 ## <a name="does-this-impact-me"></a>これは影響を受けますか?
 
 組織が適格なOffice 365ライセンスを購入した場合、テナントはこの変更の影響を受けます。
 
 > [!IMPORTANT]
-> オンプレミス環境で Active Directory Rights Management サービス (AD RMS) を使用している場合は、この変更を直ちにオプトアウトするか、Azure Information Protectionに移行してから、今後 30 日以内にこの変更を展開する必要があります。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
+> オンプレミス環境で Active Directory Rights Management Services (AD RMS) を使用している場合は、この変更を直ちにオプトアウトするか、Azure Information Protectionに移行してから、今後 30 日以内にこの変更を展開する必要があります。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
 
-## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Active Directory Rights Management サービス (AD RMS) で Azure Information Protectionを使用できますか?
+## <a name="can-i-use-azure-information-protection-with-active-directory-rights-management-services-ad-rms"></a>Active Directory Rights Management Services (AD RMS) で Azure Information Protectionを使用できますか?
 
-いいえ。 これは、サポートされているデプロイ シナリオではありません。 追加のオプトアウト手順を実行しないと、一部のコンピューターで Azure Rights Management サービスの使用が自動的に開始され、AD RMS クラスターにも接続されることがあります。 このシナリオはサポートされておらず、信頼性の低い結果が得られないため、これらの新機能をロールアウトする前に、今後 30 日以内にこの変更をオプトアウトすることが重要です。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
+その必要はありません。 これは、サポートされているデプロイ シナリオではありません。 追加のオプトアウト手順を実行しないと、一部のコンピューターで Azure Rights Management サービスの使用が自動的に開始され、AD RMS クラスターにも接続される場合があります。 このシナリオはサポートされておらず、信頼性の低い結果が得られないため、これらの新機能をロールアウトする前に、今後 30 日以内にこの変更をオプトアウトすることが重要です。 オプトアウトする方法については、「AD RMS を使用する方法、オプトアウトする方法」を参照してください。 」で説明する手順に従ってローカライズされたファイルをインストールします。 移行する場合は、「[AD RMS から Azure Information Protectionへの移行](/azure/information-protection/plan-design/migrate-from-ad-rms-to-azure-rms)」を参照してください。
 
 ## <a name="how-do-i-know-if-im-using-ad-rms"></a>AD RMS を使用しているかどうかを確認操作方法。
 
-AD RMS をデプロイしたかどうかを確認[するには、Active Directory Rights Management サービス (AD RMS) がある場合に Azure Rights Management用の環境を準備](/azure/information-protection/deploy-use/prepare-environment-adrms)するに関するページの手順を参照してください。
+[Active Directory Rights Management Services (AD RMS) を使用している場合は、Azure Rights Management の環境を準備する手順に従って、AD RMS](/azure/information-protection/deploy-use/prepare-environment-adrms) をデプロイしたかどうかを確認します。
 
 1. オプションですが、ほとんどの AD RMS 展開では、ドメイン コンピューターが AD RMS クラスターを検出できるように、Active Directory にサービス接続ポイント (SCP) を発行します。
 
    ADSI Edit を使用して、ACTIVE Directory で SCP が発行されているかどうかを確認します。CN=Configuration [サーバー名]、CN=Services、CN=RightsManagementServices、CN=SCP
 
-2. SCP を使用していない場合は、WINDOWS レジストリ`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`を使用して、AD RMS クラスターに接続するWindows コンピューターをクライアント側のサービス検出またはライセンス リダイレクト用に構成する必要があります。
+2. SCP を使用していない場合は、AD RMS クラスターに接続する Windows コンピューターを、Windows レジストリ `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MSIPC\ServiceLocation or HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\MSIPC\ServiceLocation`を使用してクライアント側のサービス検出またはライセンス リダイレクト用に構成する必要があります。
 
-これらのレジストリ構成の詳細については、「[Windows レジストリを使用したクライアント側サービス検出の有効化](/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry)と[ライセンス サーバー トラフィックのリダイレクト」を参照してください](/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)。
+これらのレジストリ構成の詳細については、「 [Windows レジストリを使用したクライアント側サービス検出の有効化](/azure/information-protection/rms-client/client-deployment-notes#enabling-client-side-service-discovery-by-using-the-windows-registry) と [ライセンス サーバー トラフィックのリダイレクト」を参照してください](/azure/information-protection/rms-client/client-deployment-notes#redirecting-licensing-server-traffic)。
 
 ## <a name="i-use-ad-rms-how-do-i-opt-out"></a>AD RMS を使用する場合、オプトアウトする方法を教えてください。
 

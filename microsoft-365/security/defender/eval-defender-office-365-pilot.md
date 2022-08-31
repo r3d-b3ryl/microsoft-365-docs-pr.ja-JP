@@ -3,7 +3,8 @@ title: パイロット Microsoft Defender for Office 365、運用環境で評価
 description: Microsoft Defender for Office 365の機能を適切にテストするために、アクティブユーザーと既存のユーザーのグループで評価をパイロットする手順。
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,15 +21,15 @@ ms.collection:
 - m365solution-scenario
 - m365solution-evalutatemtp
 - zerotrust-solution
+- highpri
 ms.custom: admindeeplinkEXCHANGE
 ms.topic: how-to
-ms.technology: m365d
-ms.openlocfilehash: fb246805ebf38cddfda6fe308d19e1dd1419531b
-ms.sourcegitcommit: 61b22df76e0f81e5ef11c587b129287886151c79
+ms.openlocfilehash: 9202923afc7e86e15a03b03e053e86590f4fae60
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66748805"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482694"
 ---
 # <a name="pilot-microsoft-defender-for-office-365"></a>パイロット Microsoft Defender for Office 365
 
@@ -91,7 +92,7 @@ MDO を評価する場合は *、推奨されるベースライン ポリシー*
 [EOP の事前設定済みセキュリティ ポリシーと、手順の概要を説明するMicrosoft Defender for Office 365](../office-365-security/preset-security-policies.md)記事を次に示します。
 
 1. Microsoft 365 テナントにログオンします。 Microsoft 365 Defender ポータルへのアクセス権を持つアカウント、Office 365の組織管理ロールに追加されたアカウント、または Microsoft 365 のセキュリティ管理者ロールを使用します。
-2. ナビゲーション メニューの [電子メール & コラボレーション] で *[ポリシー&ルール* ] を選択します。
+2. ナビゲーション メニューの [Email & コラボレーション] で [*ポリシー&ルール*] を選択します。
 
    :::image type="content" source="../../media/mdo-eval/5_mdo-eval-pilot-policies.png" alt-text=" クリックする [ポリシー&ルール] メニュー項目" lightbox="../../media/mdo-eval/5_mdo-eval-pilot-policies.png":::
 
@@ -135,7 +136,7 @@ MDO を評価する場合は *、推奨されるベースライン ポリシー*
 
 ****
 
-|ポリシー|説明|参照|
+|ポリシー|説明|関連情報|
 |:---:|---|---|
 |接続フィルター|IP アドレスを使用して、適切または不適切な送信元電子メール サーバーを特定します。|[EOP で既定の接続フィルター ポリシーを構成する](../office-365-security/configure-the-connection-filter-policy.md)|
 |マルウェア対策|実行するアクションやマルウェアが検出された場合に通知するユーザーなど、電子メール マルウェアからユーザーを保護します。|[EOP のマルウェア対策ポリシーを構成する](../office-365-security/configure-anti-malware-policies.md)|
@@ -158,7 +159,7 @@ MDO を評価する場合は *、推奨されるベースライン ポリシー*
 |---|---|---|
 |脅威エクスプローラー|脅威エクスプローラーは、セキュリティ運用チームが脅威を調査して対応し、Office 365内のメールやファイルのマルウェアやフィッシングの疑いに関する情報だけでなく、組織に対するその他のセキュリティ上の脅威やリスクに関する情報を表示するのに役立つ強力なリアルタイムツールです。|[脅威エクスプローラーとリアルタイムの検出のビュー](../office-365-security/threat-explorer-views.md)|
 |攻撃シミュレーター|Microsoft 365 Defender ポータルで攻撃シミュレーション トレーニングを使用すると、組織内で現実的な攻撃シナリオを実行できます。これにより、実際の攻撃が環境に影響を与える前に脆弱なユーザーを特定して見つけることができます。|[攻撃シミュレーション トレーニングの使用を開始する](../office-365-security/attack-simulation-training-get-started.md)|
-|レポート ダッシュボード|左側のナビゲーション メニューで [レポート] をクリックし、[電子メール & コラボレーション] 見出しを展開します。 電子メール & コラボレーション レポートは、セキュリティ傾向を特定することです。その一部では、アクション ([送信に移動] などのボタンを使用)、メールフローの状態の概要、トップ マルウェア、スプーフィング検出、侵害されたユーザー、メール待ち時間、安全なリンク、安全な添付ファイルレポートなどの傾向を示す他のレポートを実行できます。 これらのメトリックは自動的に生成されます。|[レポートの表示](../office-365-security/view-email-security-reports.md)|
+|レポート ダッシュボード|左側のナビゲーション メニューで [レポート] をクリックし、Email &コラボレーション見出しを展開します。 Email &コラボレーション レポートでは、セキュリティの傾向を見つけることに関するものです。その一部では、アクション ([送信に移動] などのボタンを使用)、メールフローの状態の概要、トップ マルウェア、スプーフィング検出、侵害されたユーザー、メール待機時間、安全なリンク、安全な添付ファイルレポートなどの傾向を表示する他のレポートを実行できます。 これらのメトリックは自動的に生成されます。|[レポートの表示](../office-365-security/view-email-security-reports.md)|
 |
 
 ## <a name="next-steps"></a>次の手順

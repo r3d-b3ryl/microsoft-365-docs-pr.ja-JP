@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの AlertEvidence テーブ
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, AlertInfo, アラート, エンティティ, 証拠, ファイル, IP アドレス, デバイス, マシン, ユーザー, アカウント
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 9d7fc7e757b15c3682368cbd6c41b32c18724422
-ms.sourcegitcommit: 6dcc3b039e0f0b9bae17c386f14ed2b577b453a6
+ms.openlocfilehash: 3e1e0dcbf88063dd4338b48e6bb2fe3dd2e87e64
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "61531105"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482849"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -56,7 +56,7 @@ ms.locfileid: "61531105"
 | `AccountName` | `string` | アカウントのユーザー名 |
 | `AccountDomain` | `string` | アカウントのドメイン |
 | `AccountSid` | `string` | アカウントのセキュリティ識別子 (SID) |
-| `AccountObjectId` | `string` | Azure Active Directoryのアカウントの一意識別子 |
+| `AccountObjectId` | `string` | Azure Active Directory のアカウントの一意識別子 |
 | `AccountUpn` | `string` | アカウントのユーザー プリンシパル名 (UPN) |
 | `DeviceId` | `string` | サービス内のデバイスの一意の識別子 |
 | `DeviceName` | `string` | コンピューターの完全修飾ドメイン名 (FQDN) |

@@ -2,7 +2,8 @@
 title: 疑わしいパスワード スプレー関連の IP アドレス アクティビティ アラート
 description: 疑わしいパスワード スプレー関連の IP アドレス アクティビティのアラート の評価を行い、アラートを確認し、攻撃を修復してネットワークを保護するための推奨されるアクションを実行します。
 keywords: インシデント, アラート, 調査, 分析, 応答, 相関関係, 攻撃, デバイス, ユーザー, 365, Microsoft, m365, パスワード, スプレー, アラートの分類, アラートの採点, クラウド アプリ, 疑わしい IP
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -20,13 +21,12 @@ ms.custom: admindeeplinkDEFENDER
 ms.topic: conceptual
 search.appverid:
 - MOE150
-ms.technology: m365d
-ms.openlocfilehash: 621f52f4dc400d8a3afe56d3f6f08005547d7014
-ms.sourcegitcommit: 23c7e96d8ec31c676c458e7c71f1cc8a1e40a0e4
+ms.openlocfilehash: 43b736b88e79091f27baba400819bac92a03cb2e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/16/2022
-ms.locfileid: "67360634"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482954"
 ---
 # <a name="suspicious-password-spray-related-ip-activity"></a>不審なパスワード スプレー関連の IP アクティビティ
 

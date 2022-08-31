@@ -17,16 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: 03083fdf-bc52-409a-b2ac-2a5f5c308fa0
 description: ここでは、ユーザーに対する設定を管理する方法について説明します。
-ms.openlocfilehash: 291d6a0207c8ed0f94bcfa224accc217dfc1d78f
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
-ms.translationtype: HT
+ms.openlocfilehash: ec83579e5a3c4a264f5030db1cdbf1ac6aa915fe
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65437131"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67470255"
 ---
 # <a name="user-email-settings-in-microsoft-365"></a>Microsoft 365 のユーザー電子メール設定
 
 組織の管理者は、ユーザーに対するメールの設定を管理できます。 ここでは、これらの設定を管理する方法について説明します。
+
+## <a name="manage-email-settings"></a>メール設定の管理
+
+1. <https://admin.microsoft.com> で管理センターに移動します。
+2. **[ユーザー****アクティブ ユーザー**]  >  に移動し、電子メール設定を管理するユーザーを選択します。
+3. 新しいウィンドウで、[ **メール** ] を選択して電子メール設定を管理します。
 
 ## <a name="summary-of-email-settings"></a>メール設定の概要
 

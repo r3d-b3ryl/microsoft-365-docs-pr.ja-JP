@@ -14,14 +14,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 description: 管理者は、Microsoft Defender for Office 365を使用している組織で使用できる高度なフィッシング対策ポリシーを作成、変更、削除する方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 8311da9d67a9835163ee3eaa34a38a7132977055
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: ae576e721fd0f2ba392ae5203d2ab31a7fc6bb0e
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67386584"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482606"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>詳細については、「Microsoft Defender for Office 365 のフィッシング対策ポリシーを構成する」を参照してください。
 

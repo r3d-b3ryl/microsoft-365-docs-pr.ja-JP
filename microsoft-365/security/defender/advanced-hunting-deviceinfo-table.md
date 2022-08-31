@@ -4,7 +4,8 @@ description: 高度なハンティング スキーマの DeviceInfo テーブル
 keywords: 高度な捜索, 脅威の捜索, サイバー脅威の捜索, Microsoft 365 Defender, microsoft 365, m365, 検索, クエリ, テレメトリ, スキーマ参照, kusto, テーブル, 列, データ型, 説明, machineinfo, DeviceInfo, デバイス, マシン, OS, プラットフォーム, ユーザー
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -17,13 +18,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: m365-security-compliance
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: 245a9aa11bcaf10ba6f3b8fe0fe429267a355560
-ms.sourcegitcommit: c6a97f2a5b7a41b74ec84f2f62fabfd65d8fd92a
+ms.openlocfilehash: 1808e0fa69f1ea683986b534a88b93e9e4a53af0
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "61941746"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482650"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -48,8 +48,8 @@ ms.locfileid: "61941746"
 | `OSArchitecture` | `string` | コンピューターで実行されているオペレーティング システムのアーキテクチャです。 |
 | `OSPlatform` | `string` | コンピューターで実行されているオペレーティング システムのプラットフォームです。 これは、Windows 11、Windows 10、Windows 7 など、同じファミリ内のバリエーションを含む特定のオペレーティング システムを示します。 |
 | `OSBuild` | `string` | コンピューターで実行されているオペレーティング システムのビルド バージョン |
-| `IsAzureADJoined` | `boolean` | マシンがAzure Active Directoryに結合されているかどうかを示すブールインジケーター |
-| `AadDeviceId` | `string` | Azure AD内のデバイスの一意の識別子 |
+| `IsAzureADJoined` | `boolean` | マシンが Azure Active Directory に参加しているかどうかを示すブールインジケーター |
+| `AadDeviceId` | `string` | Azure AD のデバイスの一意の識別子 |
 | `LoggedOnUsers` | `string` | イベント発生時にマシンにログオンしているすべてのユーザーの一覧 (JSON 配列形式) |
 | `RegistryDeviceTag` | `string` | レジストリを介して追加されたマシン タグ |
 | `OSVersion` | `string` | コンピューターで実行されているオペレーティング システムのバージョンです。 |

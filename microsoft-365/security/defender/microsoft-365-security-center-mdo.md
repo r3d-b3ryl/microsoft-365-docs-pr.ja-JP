@@ -1,7 +1,7 @@
 ---
 title: Microsoft 365 Defender の Microsoft Defender for Office 365
 description: セキュリティ & コンプライアンス センターからMicrosoft 365 Defenderへの変更について説明します。
-keywords: Microsoft 365セキュリティ, Microsoft 365 Defenderの概要, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, 新しい Defender セキュリティ ポータル
+keywords: Microsoft 365 セキュリティ、Microsoft 365 Defenderの概要、Microsoft Defender for Office 365、Microsoft Defender for Endpoint、MDO、MDE、新しい Defender セキュリティ ポータル
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -15,14 +15,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: admindeeplinkDEFENDER
-ms.prod: m365-security
-ms.technology: m365d
-ms.openlocfilehash: 4cd43c5f9e8ecad35ed574d5b60eaf1fa2e635d9
-ms.sourcegitcommit: 9255a7e8b398f92d8dae09886ae95dc8577bf29a
+ms.service: microsoft-365-security
+ms.subservice: m365d
+ms.openlocfilehash: 0a1bf4dd4d46490ed85cbb8631d2581da0a2f7af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/17/2022
-ms.locfileid: "65438316"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482782"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft 365 Defender の Microsoft Defender for Office 365
 
@@ -45,9 +45,9 @@ ms.locfileid: "65438316"
 |データ損失防止||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
 |レコード管理||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
 |情報ガバナンス||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
-|脅威の管理|[電子メール & コラボレーション](https://security.microsoft.com/homepage)|||
+|脅威の管理|[Email &コラボレーション](https://security.microsoft.com/homepage)|||
 |アクセス許可|[ロール&アクセス許可](https://security.microsoft.com/emailandcollabpermissions)|[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
-|メール フロー|||[管理センター Exchange](https://admin.exchange.microsoft.com/#/)参照してください|
+|メール フロー|||[Exchange 管理センター](https://admin.exchange.microsoft.com/#/)を参照してください|
 |データのプライバシー||[Microsoft Purview コンプライアンス ポータル](https://compliance.microsoft.com/homepage)を参照してください||
 |検索|[監査](https://security.microsoft.com/auditlogsearch?viewid=Async%20Search)|検索 (コンテンツ検索)||
 |レポート|[Report](https://security.microsoft.com/emailandcollabreport)|||
@@ -65,7 +65,7 @@ ms.locfileid: "65438316"
 
 ## <a name="new-and-improved-capabilities"></a>新機能と改善された機能
 
-左側のナビゲーションまたはクイック起動バーは見慣れたものに見えます。 ただし、このDefender for Cloudには新しい要素と更新された要素がいくつかあります。
+左側のナビゲーションまたはクイック起動バーは見慣れたものに見えます。 ただし、この Defender for Cloud には、いくつかの新しい要素と更新された要素があります。
 
 統合されたMicrosoft 365 Defender ソリューションを使用すると、脅威シグナルを結合し、脅威の完全な範囲と影響、およびそれが組織にどのような影響を与えているかを判断できます。
 
@@ -114,11 +114,11 @@ Microsoft Defender for Office 365での[高度なハンティングの例](advan
 
 ユーザーのメールへの脅威を追跡および調査し、キャンペーンなどを追跡します。 セキュリティ & コンプライアンス センターを使用したことがある場合、これはよく知られています。
 
-![Microsoft 365 Defender ポータルの左側のナビゲーション ウィンドウにある[電子メール &折りたたみ] のクイック起動メニュー。](../../media/mdo-m365d-nav.png)
+![Microsoft 365 Defender ポータルの左側のナビゲーション ウィンドウにある、Email & collab のクイック起動メニュー。](../../media/mdo-m365d-nav.png)
   
 #### <a name="email-entity-page"></a>[メール エンティティ] ページ
 
-[[電子メール エンティティ] ページ](../office-365-security/mdo-email-entity-page.md)では、過去に異なるページまたはビューに散在していた電子メール情報が *統合* されます。 脅威と傾向に関するメールの調査結果は、*1 か所に集中しています*。 ヘッダー情報とメールプレビューは、他の便利なメール関連情報と共に同じメール ページからアクセスできます。 同様に、悪意のある添付ファイルまたは URL に対するデトネーションの状態は、同じページのタブにあります。 [メール エンティティ] ページは、管理者やセキュリティ運用チームがメールの脅威とその状態をすばやく把握し、処理を迅速に決定するのに役立ちます。
+[Email エンティティ ページ](../office-365-security/mdo-email-entity-page.md)は、過去のさまざまなページまたはビューに散在していた電子メール情報を *統合* します。 脅威と傾向に関するメールの調査結果は、*1 か所に集中しています*。 ヘッダー情報とメールプレビューは、他の便利なメール関連情報と共に同じメール ページからアクセスできます。 同様に、悪意のある添付ファイルまたは URL に対するデトネーションの状態は、同じページのタブにあります。 [メール エンティティ] ページは、管理者やセキュリティ運用チームがメールの脅威とその状態をすばやく把握し、処理を迅速に決定するのに役立ちます。
 
 ### <a name="access-and-reports"></a>アクセスとレポート
 
@@ -130,7 +130,7 @@ Microsoft Defender for Office 365での[高度なハンティングの例](advan
 > DomainKeys によって識別されたメール (DKIM) は、宛先電子メール システムがカスタム ドメインから送信されたメッセージを信頼することを保証します。
 > Defender for Office 365 ユーザーの場合は、Microsoft 365 Defender<https://security.microsoft.com/threatpolicy>を使用して DKIM キーを *管理およびローテーション* できるようになりました。または、[**ポリシー & ルール****脅威ポリシー** \> \> **ルール**\>] セクション \> **DKIM に** 移動できます。
 >
-> 詳細については、「 [DKIM を使用してカスタム ドメインから送信された送信メールを検証する」を参照してください](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)。
+> 詳細については、「[DKIM を使用して、カスタム ドメインから送信される送信電子メールを検証する](/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email)」を参照してください。
 
 ## <a name="whats-changed"></a>変更内容
 
@@ -163,7 +163,7 @@ Microsoft Defender for Office 365での[高度なハンティングの例](advan
 
 ## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Defender ホーム ページ
 
-ポータルのホーム ページには、Microsoft 365環境のセキュリティ状態に関する重要な概要情報が表示されます。
+ポータルのホーム ページには、Microsoft 365 環境のセキュリティ状態に関する重要な概要情報が表示されます。
 
 **ガイド 付 ツアー** を使用して、エンドポイントまたはメールと共同作業のページのクイック ツアーを見ることができます。 ここに表示される内容は、ライセンスが、Defender for Office 365、 Defender for Endpoint のどちらか、または両方をお持ちの場合によって異なる点に注意してください。
 

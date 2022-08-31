@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderをセキュリティ操作に統合する
 description: Microsoft 365 Defenderをセキュリティ操作に統合する基本。
 keywords: インシデント, アラート, 調査, 相関関係, 攻撃, デバイス, ユーザー, ID, ID, メールボックス, 電子メール, 365, Microsoft, m365, インシデント対応, サイバー攻撃, secops, セキュリティ操作, soc
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -22,13 +23,12 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
-ms.openlocfilehash: 6ae973f6483035c450aea78664bf804ea0c67cb3
-ms.sourcegitcommit: bdd6ffc6ebe4e6cb212ab22793d9513dae6d798c
+ms.openlocfilehash: 2761d361c0bf1e4b8f709e668a0aa39c8e25a602
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "63330203"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474800"
 ---
 # <a name="integrating-microsoft-365-defender-into-your-security-operations"></a>Microsoft 365 Defenderをセキュリティ操作に統合する
 
@@ -56,13 +56,13 @@ Microsoft 365 Defenderについてまだ理解していない場合は、次の�
 
 このコンテンツは、次の目的で設計されています。
 
-- DevOpsとセキュリティ運用 (SecOps) チーム
+- DevOps および Security Operations (SecOps) チーム
 - セキュリティ エンジニアリング チーム
 - IT チーム
 - CISO と CTO
-- 赤、青、紫のTeams
+- 赤、青、紫の Teams
 - CSIRT &フォレンジック チーム
-- Microsoft 365管理者
+- Microsoft 365 管理者
 
 ## <a name="next-steps"></a>次の手順
 

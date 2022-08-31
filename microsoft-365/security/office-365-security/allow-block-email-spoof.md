@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロックリストで、電子メールとスプーフィングされた送信者エントリを許可またはブロックする方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 912743015041bc610c3f44607b8ee21f8c715cc9
-ms.sourcegitcommit: 031b3e963478f642a0d23be37a01f23a01cb3d84
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 03dd5247135e3d4d297e73ab166921adc73f3573
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/26/2022
-ms.locfileid: "67441879"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469583"
 ---
 # <a name="allow-or-block-emails-using-the-tenant-allowblock-list"></a>テナント許可/禁止リストを使用して電子メールを許可またはブロックする
 

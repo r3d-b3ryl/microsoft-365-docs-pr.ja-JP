@@ -16,14 +16,14 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: 管理者は、Exchange Online Protection (EOP) のスパム対策ポリシーで使用できる高度なスパム フィルター (ASF) 設定について学習できます。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 75fca937049e71576e1dd599b4cc0f7fba2a2211
-ms.sourcegitcommit: 725a92b0b1555572b306b285a0e7a7614d34e5e5
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 67b35aceb9507683ebe83c7a5bcde2c2bcec4d94
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 05/24/2022
-ms.locfileid: "65647669"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67473615"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>EOP の高度なスパム フィルター (ASF) 設定
 
@@ -32,7 +32,7 @@ ms.locfileid: "65647669"
 - [Microsoft Defender for Office 365 プラン 1 およびプラン 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-すべてのMicrosoft 365組織で、EOP のスパム対策ポリシーの高度なスパム フィルター (ASF) 設定により、管理者は特定のメッセージ プロパティに基づいてメッセージをスパムとしてマークできます。 ASF は、スパムでよく見つかるため、これらのプロパティを具体的に対象とします。 プロパティに応じて、ASF 検出によってメッセージが **スパム** または **高信頼スパム** としてマークされます。
+すべての Microsoft 365 組織で、EOP のスパム対策ポリシーの高度なスパム フィルター (ASF) 設定により、管理者は特定のメッセージ プロパティに基づいてメッセージをスパムとしてマークできます。 ASF は、スパムでよく見つかるため、これらのプロパティを具体的に対象とします。 プロパティに応じて、ASF 検出によってメッセージが **スパム** または **高信頼スパム** としてマークされます。
 
 > [!NOTE]
 > ASF 設定の 1 つ以上を有効にすることは、スパム フィルター処理に対する積極的なアプローチです。 ASF でフィルター処理されたメッセージを誤検知として報告することはできません。 ASF によってフィルター処理されたメッセージは、次の方法で識別できます。
@@ -94,4 +94,4 @@ ASF 設定ごとに、スパム対策ポリシーで次のオプションを使�
 |スパム対策ポリシー設定|説明|X ヘッダーが追加されました|
 |---|---|---|
 |**送信者 ID フィルターのハード 失敗** <p> *MarkAsSpamFromAddressAuthFail*|条件付き送信者 ID チェックにハード 失敗したメッセージは、スパムとしてマークされます。 <p> この設定は、SPF チェックと送信者 ID チェックを組み合わせて、偽造された送信者を含むメッセージ ヘッダーから保護するのに役立ちます。 <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: SPF From Record Fail`|
-|**バックスキャター** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* は、電子メール メッセージ内の偽造された送信者によって引き起こされる、配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) です。 詳細については、「 [Backscatter メッセージと EOP](backscatter-messages-and-eop.md)」を参照してください。 <p> 正当な NDR が配信され、バックスキャッターがスパムとしてマークされるため、次の環境でこの設定を構成する必要はありません。 <ul><li>Exchange Onlineメールボックスを持つ組織をMicrosoft 365します。</li><li>EOP を介して *送信* メールをルーティングするオンプレミスのメール組織。</li></ul> <p> オンプレミスメールボックスへの受信メールを保護するスタンドアロン EOP 環境では、この設定をオンまたはオフにすると、次の結果が得られます。 <ul><li> **オン**: 正当な NDR が配信され、バックスキャッターがスパムとしてマークされます。</li><li>**オフ**: 正当な NDR とバックスキャッターは、通常のスパム フィルター処理を通過します。 ほとんどの正当な NDR は、元のメッセージ送信者に配信されます。 バックスキャッターにはスパムとしてマークされているものもありますが、すべてではありません。 定義上、バックスキャッターはスプーフィングされた送信者にのみ配信でき、元の送信者には配信できません。</li></ul> <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: Backscatter NDR`|
+|**バックスキャター** <p> *MarkAsSpamNdrBackscatter*|*Backscatter* は、電子メール メッセージ内の偽造された送信者によって引き起こされる、配信不能レポート (NDR またはバウンス メッセージとも呼ばれます) です。 詳細については、「 [Backscatter メッセージと EOP](backscatter-messages-and-eop.md)」を参照してください。 <p> 正当な NDR が配信され、バックスキャッターがスパムとしてマークされるため、次の環境でこの設定を構成する必要はありません。 <ul><li>Exchange Onlineメールボックスを持つ Microsoft 365 組織。</li><li>EOP を介して *送信* メールをルーティングするオンプレミスのメール組織。</li></ul> <p> オンプレミスメールボックスへの受信メールを保護するスタンドアロン EOP 環境では、この設定をオンまたはオフにすると、次の結果が得られます。 <ul><li> **オン**: 正当な NDR が配信され、バックスキャッターがスパムとしてマークされます。</li><li>**オフ**: 正当な NDR とバックスキャッターは、通常のスパム フィルター処理を通過します。 ほとんどの正当な NDR は、元のメッセージ送信者に配信されます。 バックスキャッターにはスパムとしてマークされているものもありますが、すべてではありません。 定義上、バックスキャッターはスプーフィングされた送信者にのみ配信でき、元の送信者には配信できません。</li></ul> <p> この設定では、テスト モードを使用できません。|`X-CustomSpam: Backscatter NDR`|

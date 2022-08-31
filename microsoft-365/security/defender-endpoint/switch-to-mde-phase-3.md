@@ -15,20 +15,19 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365solution-migratetomdatp
-- m365solution-mcafeemigrate
-- m365solution-symantecmigrate
+- highpri
 ms.custom:
 - migrationguides
 - admindeeplinkDEFENDER
 ms.topic: article
 ms.date: 04/01/2022
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: d927f1a5972e24c3bae0329bd866a4b56b0a5d95
-ms.sourcegitcommit: c314e989202dc1c9c260fffd459d53bc1f08514e
+ms.openlocfilehash: cc07b9324c8c3e0f1c37e7bd8c4d235945fc1092
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 07/12/2022
-ms.locfileid: "66717252"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482540"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-3-onboard"></a>Microsoft Defender for Endpointに切り替える - フェーズ 3: オンボード
 
@@ -63,7 +62,7 @@ ms.locfileid: "66717252"
 > [!NOTE]
 > オンボード中に問題が発生した場合は、「オンボードの[問題Microsoft Defender for Endpointトラブルシューティング](troubleshoot-onboarding.md)する」を参照してください。 この記事では、オンボードの問題とエンドポイントに関する一般的なエラーを解決する方法について説明します。
 
-### <a name="onboarding-methods"></a>オンボードメソッド
+### <a name="onboarding-methods"></a>オンボード方法
 
 > [!IMPORTANT]
 > Microsoft Defender for Cloud を使用している場合は、「 [Microsoft Defender for Cloud との統合」を](configure-server-endpoints.md#integration-with-microsoft-defender-for-cloud)参照してください。

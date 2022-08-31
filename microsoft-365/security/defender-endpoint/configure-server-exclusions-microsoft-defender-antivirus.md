@@ -4,8 +4,8 @@ ms.reviewer: pahuijbr
 manager: dansimp
 description: Windows Server には、サーバーロールに基づく自動除外が含まれています。 カスタム除外を追加することもできます。
 keywords: 除外, サーバー, 自動除外, 自動, カスタム, スキャン, Microsoft Defender ウイルス対策
-ms.prod: m365-security
-ms.technology: mde
+ms.service: microsoft-365-security
+ms.subservice: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,12 +15,12 @@ ms.author: deniseb
 ms.topic: article
 ms.custom: nextgen
 ms.collection: M365-security-compliance
-ms.openlocfilehash: 7205a612954dfbd283b61ca377c81c5f78243f58
-ms.sourcegitcommit: d09eb780dc41a01796eb8137fbe9267231af6746
+ms.openlocfilehash: 1e8a50ee0aace7b2d668bf7b083eacb74d9d6319
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/19/2022
-ms.locfileid: "67388685"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67469692"
 ---
 # <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Windows Server で Microsoft Defender ウイルス対策の除外を構成する
 

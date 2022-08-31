@@ -3,7 +3,8 @@ title: Microsoft 365 Defenderの脅威分析
 ms.reviewer: ''
 description: 新しい脅威と攻撃の手法と、それらを停止する方法について説明します。 組織への影響を評価し、組織の回復性を評価します。
 keywords: 脅威分析, リスク評価, Microsoft 365 Defender, M365D, 軽減状態, セキュリティで保護された構成, Microsoft Defender for Office 365, Microsoft Defender for Office 365 脅威分析、MDO 脅威分析、統合 MDE および MDO 脅威分析データ、脅威分析データ統合、統合Microsoft 365 Defender脅威分析
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ee74b1b5af9af8e657329f973855cdee926a61f8
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: f9b0fc2035ff1b47c41d928f885c105aef59e9cb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67328367"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467121"
 ---
 # <a name="threat-analytics-in-microsoft-365-defender"></a>Microsoft 365 Defenderの脅威分析
 

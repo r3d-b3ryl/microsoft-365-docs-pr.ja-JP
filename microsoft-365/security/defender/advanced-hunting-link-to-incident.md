@@ -4,7 +4,8 @@ description: クエリ結果をインシデントにリンクする
 keywords: 高度な捜索, インシデント, ピボット, エンティティ, go hunt, 関連イベント, 脅威の捜索, サイバー脅威の捜索, 検索, クエリ, テレメトリ, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,13 +20,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
 ms.topic: article
-ms.technology: m365d
-ms.openlocfilehash: c81b0b0850686242c675629cf99fa2c4b3a18496
-ms.sourcegitcommit: d32654bdfaf08de45715dd362a7d42199bdc1ee7
+ms.openlocfilehash: 3e4682e7c1fb2cc0496bbf4c737b106e7c17fed1
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "63755499"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67483192"
 ---
 # <a name="link-query-results-to-an-incident"></a>クエリ結果をインシデントにリンクする
 
@@ -67,7 +67,7 @@ ms.locfileid: "63755499"
 
      :::image type="content" source="../../media/link-to-incident-4-impacted-entities.png" alt-text="Microsoft 365 Defender ポータルの [インシデントへのリンク] セクションの影響を受けるエンティティ" lightbox="../../media/link-to-incident-4-impacted-entities.png":::
 
-1. **[次へ]** を選択します。
+1. [**次へ**] を選択します。
 1. [ **概要** ] セクションで指定した詳細を確認します。
    :::image type="content" source="../../media/link-to-incident-5-summary.png" alt-text="Microsoft 365 Defender ポータルの [インシデントへのリンク] セクションの結果ページ" lightbox="../../media/link-to-incident-5-summary.png":::
      

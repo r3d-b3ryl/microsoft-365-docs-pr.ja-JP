@@ -3,7 +3,8 @@ title: 業界のテストでトップスコアを記録 - Microsoft 365 Defender
 ms.reviewer: ''
 description: Microsoft 365 Defender の最新のスコアと分析を表示します。 個別の試験 (AV-TEST、AV Comparatives、 SE Labs、MITRE ATT&CK) で高いスコアを一貫して達成しています。 最新のスコアと分析をご覧ください。
 keywords: Microsoft Defender ウイルス対策, Windows Defender ウイルス対策, AV レビュー, ウイルス対策テスト, AV テスト, 最新の AV スコア, 検出スコア, セキュリティ製品テスト, セキュリティ業界テスト, 業界ウイルス対策テスト, 最高のウイルス対策, av-test, AV 比較, SE ラボ, MITRE ATT&CK, エンドポイント保護プラットフォーム, EPP, エンドポイント検出と応答, EDR, Windows 10, Windows 11 Microsoft Defender ウイルス対策, WDAV, Microsoft Defender for Endpoint, Microsoft 365 Defender, セキュリティ, マルウェア, AV, ウイルス対策, スコア付け, スコア付け, 次世代の保護, ランク付け, 成功
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: high
@@ -14,13 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: m365d
-ms.openlocfilehash: a61590b614631b738198001a56e29096d4a7d957
-ms.sourcegitcommit: dd7e5b67ff4ae4e7f74490e437c1795933c74cc7
-ms.translationtype: HT
+ms.openlocfilehash: 02d996e9e2da6083b228a55bb4a173601a378dcb
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
+ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "64731309"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67474690"
 ---
 # <a name="top-scoring-in-industry-tests"></a>業界テストでのトップ スコア
 

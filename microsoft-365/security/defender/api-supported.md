@@ -3,7 +3,8 @@ title: サポートされている Microsoft 365 Defender API
 description: サポートされている Microsoft 365 Defender API
 keywords: Microsoft 365 Defender、API、API
 search.product: eADQiWindows 10XVcnh
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -19,14 +20,13 @@ ms.topic: conceptual
 search.appverid:
 - MOE150
 - MET150
-ms.technology: m365d
 ms.custom: api
-ms.openlocfilehash: 1785186f778c489cb4a254fe39cc41921a4de86e
-ms.sourcegitcommit: 6f3bc00a5cf25c48c61eb3835ac069e9f41dc4db
+ms.openlocfilehash: 71c4586e37f36418320c6baff456f2e9839cb1af
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 01/24/2022
-ms.locfileid: "62171015"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67482827"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>サポートされている Microsoft 365 Defender API 
 

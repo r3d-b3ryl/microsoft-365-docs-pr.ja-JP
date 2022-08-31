@@ -3,7 +3,7 @@ title: Microsoft 365 データの場所
 ms.author: kvice
 author: kelleyvice-msft
 manager: scotv
-ms.date: 07/13/2022
+ms.date: 08/30/2022
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ ms.custom:
 - admindeeplinkMAC
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Microsoft 365 の顧客データの保存場所を世界全体で確認する
-ms.openlocfilehash: 8ece0439bafcb6c183cf57cef7648c6bfa3f62ee
-ms.sourcegitcommit: c81f6c39ed39d017f9d7c5f13148cd8d17b25c3d
+ms.openlocfilehash: b786892b99e2b67114c34006c77f2e394cba6f45
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/20/2022
-ms.locfileid: "67393112"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467923"
 ---
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Microsoft 365 顧客データの保存場所
 
@@ -37,9 +37,9 @@ ms.locfileid: "67393112"
 
 お客様の保存データの保存場所に関する契約上のコミットメントに関する情報は、 [Microsoft 製品およびサービスデータ保護補遺 (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA)に記載されています。
 
-Azure Active Directory データの場所については、[Azure でのデータ所在地](https://azure.microsoft.com/global-infrastructure/data-residency/#overview)にアクセスしてください。
+Azure Active Directory データの場所については、「 [Azure のデータ所在地](https://azure.microsoft.com/global-infrastructure/data-residency/#overview)」を参照してください。
 
-お客様の請求先住所がヨーロッパ以外にあり、お客様が Office 365 Education サブスクリプションを所有している場合、OST の「コアオンラインサービスの顧客データの保存場所」セクションにかかわらず、Microsoft はお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。顧客データをヨーロッパまたは北米内のどこにでも保管します。  お客様の請求先住所がヨーロッパにあり、お客様が Office 365 Education サブスクリプションを持っている場合、OST の「コアオンラインサービスの保存されているお客様データの場所」セクションにかかわらず、Microsoft はお客様の Office 365 テナントをプロビジョニングし、お客様データをに転送する場合があります。顧客データを欧州連合内のどこにでも保存します。
+請求先住所がヨーロッパ以外にあり、Office 365 Educationサブスクリプションをお持ちである場合、OST の 「顧客データの場所」セクションにかかわらず、Microsoft は、Office 365 テナントをプロビジョニングし、データを転送し、データをヨーロッパ内または北米内の任意の場所に保存することができます。  請求先住所がヨーロッパにあり、Office 365 Education サブスクリプションをお持ちである場合、OST の 「Rest for Core Online Services の顧客データの場所」セクションにかかわらず、Microsoft は、お客様のOffice 365テナントをプロビジョニングし、データを転送し、欧州連合内の任意の場所に保存する場合があります。
 
 ## <a name="faq"></a>FAQ
 
@@ -5209,6 +5209,7 @@ Microsoft は、次の場合を除いて、指定された地域外に Intune �
 | Viva ラーニング | 欧州連合 |
 | Yammer | 欧州連合 |
 | Forms | 米国 |
+
 *保存時の顧客データをExchange Online、SharePoint Online、またはOneDrive for Businessに格納するサービス、またはローカルに展開するすべてのサービス。
 </p></details>
 
