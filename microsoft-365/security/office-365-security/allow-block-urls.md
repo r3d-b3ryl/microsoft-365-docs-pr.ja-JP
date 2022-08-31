@@ -14,14 +14,14 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: 管理者は、セキュリティ ポータルのテナント許可/ブロックリストで URL を許可またはブロックする方法について説明します。
-ms.technology: mdo
-ms.prod: m365-security
-ms.openlocfilehash: 417d518832ff56c23a09758613270ebf3e6046e5
-ms.sourcegitcommit: ec245c75006e3e5ed2b8e6c1b062fbb31a63aa6c
+ms.subservice: mdo
+ms.service: microsoft-365-security
+ms.openlocfilehash: 4160bb2351f0096dafb189d63a9b0498c141fdde
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/24/2022
-ms.locfileid: "67423632"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67467033"
 ---
 # <a name="allow-or-block-urls-using-the-tenant-allowblock-list"></a>テナント許可/禁止リストを使用して URL を許可またはブロックする
 

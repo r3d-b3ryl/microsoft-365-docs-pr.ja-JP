@@ -4,7 +4,8 @@ description: Microsoft 365 Defenderを通じて Microsoft 脅威エキスパー�
 keywords: Microsoft 脅威エキスパート、マネージド 脅威ハンティング サービス、MTE、Microsoft マネージド ハンティング サービス
 search.product: Windows 10
 search.appverid: met150
-ms.prod: m365-security
+ms.service: microsoft-365-security
+ms.subservice: m365d
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,16 +15,15 @@ ms.localizationpriority: medium
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.technology: m365d
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 3facbf62dcc6fc572ea46322c8969b4af2dcd68e
-ms.sourcegitcommit: 217108c59be41b01963a393b4f16d137636fe6a8
+ms.openlocfilehash: 352fabf477bd991080a64bfc40ee60a19ec11d77
+ms.sourcegitcommit: 10e6abe740e27000e223378eb17d657a47555fa8
 ms.translationtype: MT
 ms.contentlocale: ja-JP
-ms.lasthandoff: 08/12/2022
-ms.locfileid: "67329005"
+ms.lasthandoff: 08/31/2022
+ms.locfileid: "67466945"
 ---
 # <a name="configure-and-manage-microsoft-threat-experts-capabilities-through-microsoft-365-defender"></a>Microsoft 365 Defenderを使用してMicrosoft 脅威エキスパート機能を構成および管理する
 
@@ -96,6 +96,8 @@ Microsoft Defender for EndpointとMicrosoft 365 Defenderが既にある場合は
 3. **[適用]** を選択します。
 
 ## <a name="subscribe-to-microsoft-threat-experts---experts-on-demand"></a>Microsoft 脅威エキスパートをサブスクライブする - エキスパート オンデマンド
+> [!NOTE]
+> オンデマンドのエキスパートは、セキュリティ インシデント対応サービスではありません。 これは、組織に影響を与える複雑な脅威をより深く理解することを目的としています。 独自のセキュリティ インシデント対応チームと連携して、緊急のセキュリティ インシデント対応の問題に対処します。 独自のセキュリティ インシデント対応チームがなく、Microsoft のサポートを希望する場合は、 [Premier Services Hub](/services-hub/) でサポート リクエストを作成します。![イメージ](https://user-images.githubusercontent.com/11750124/187275455-b62fd01d-ad23-46c8-a11d-e5c0a50e92a8.png)
 
 既にMicrosoft Defender for Endpoint顧客である場合は、Microsoft の担当者に問い合わせて、Microsoft 脅威エキスパート - エキスパート オンデマンドにサブスクライブできます。
 
